@@ -100,10 +100,7 @@ See also <A HREF="#amino_acid">Amino Acid</A>, <A HREF="#central_dogma">Central 
 <DD>A type of <A HREF="#mutation">mutation</A> in which the altered <A HREF="#gene_product">gene product</A> lacks the <A HREF="#molecular_function">molecular function</A> of the <A HREF="#wild_type">wild-type</A> gene</A>. Synonyms: <A HREF="#loss-of-function">Loss-of-function Mutation</A>, <A HREF="#null_mutation">Null Mutation</A>. <BR>See also:<UL><LI><A HREF="#antimorphic">Antimorphic Mutation</A></LI><LI><A HREF="#gain-of-function">Gain-of-function Mutation</A></LI><LI><A HREF="#hypermorphic">Hypermorphic Mutation</A></LI><LI><A HREF="#hypomorphic">Hypomorphic Mutation</A></LI><LI><A HREF="#neomorphic">Neomorphic Mutation</A></LI></UL>
 
 <P><DT><B><A NAME="ancestor">Ancestor</A></B>
-<DD>In <A HREF="#MGI">MGI</A>, this term refers to terms in a <a href="#hierarchical">hierarchical</a> <A HREF="#controlled_vocabulary">controlled vocabulary</A> like ones containing <A HREF="#gene_ontology">Gene Ontology (GO)</A> terms. 
-An "ancestor" of a term is a term any number of levels above it in the <a href="#hierarchy">hierarchy</a> from which it is descended. For example, the GO term
-<A HREF="#enzyme">enzyme</A> [GO:0003824] is an <B>ancestor</B> to the GO term <B>alcohol dehydrogenase</B> [GO:0004022]. See also:
-<A HREF="#children">Children</A>, <A HREF="#parent">Parent</A>, <A HREF="#sibling">Sibling</A>.
+<DD>In <A HREF="#MGI">MGI</A>, this term refers to terms in a <a href="#hierarchical">hierarchical</a> <A HREF="#controlled_vocabulary">controlled vocabulary</A> like ones containing <A HREF="#gene_ontology">Gene Ontology (GO)</A> terms. An "ancestor" of a term is a term any number of levels above it in the <a href="#hierarchy">hierarchy</a> from which it is descended. For example, the GO term <A HREF="#enzyme">enzyme</A> [GO:0003824] is an <B>ancestor</B> to the GO term <B>alcohol dehydrogenase</B> [GO:0004022]. See also: <A HREF="#children">Children</A>, <A HREF="#parent">Parent</A>, <A HREF="#sibling">Sibling</A>.
 
 <P><DT><B><A NAME="aneuploid">Aneuploid</A></B>
 <DD>Not <A HREF="#euploid">euploid</A>. 
@@ -208,8 +205,9 @@ which terminates in a free carboxyl group. See the <A HREF="http://www.nhgri.nih
 <P><DT><B><A NAME="cDNA">cDNA</A></B><DD>Complementary DNA. A <A HREF="#DNA">DNA</A> copy of an 
 <A HREF="#mRNA">mRNA</A> or complex sample of mRNAs, made using <A HREF="#reverse_transcriptase">reverse transcriptase</A>.
 
-<P><DT><B><A NAME="cellcomponent">Cellular Component</A></B><DD>Refers to subcellular structures, locations, and macromolecular complexes.  Some examples are <A HREF="#nucleus">nucleus</A>,
-<A HREF="#telomere">telomere</A> and <B>origin recognition complex</B>.  In the GO Project vocabularies, Cellular Component is a primary class of terms. See the <A HREF="http://www.geneontology.org/">GO Consortium</A> site for further information.
+<P><DT><B><A NAME="cellcomponent">Cellular Component</A></B><DD>Refers to subcellular structures, locations, and macromolecular complexes.  Some examples are <A HREF="#nucleus">nucleus</A>, <A HREF="#telomere">telomere</A> and <B>origin recognition complex</B>.  In the GO Project vocabularies, Cellular Component is a primary class of terms. See the 
+<A HREF="http://www.geneontology.org/">GO Consortium</A> site for further information.
+
 <P><DT><B><A NAME="centimorgan">Centimorgan</A></B><DD>A unit of length in a <A HREF="#genetic_map">genetic map</A>. Two <A HREF="#locus">loci</A> are 1 cM apart if <A HREF="#recombination">recombination</A> is detected between them in 1% of <A HREF="#meiosis">meioses</A>.
 
 <P><DT><B><A NAME="central_dogma">Central Dogma</A></B><DD>The principal statement of the molecular basis of inheritance. In its simplest form:<BR><BR>"<A HREF="#DNA">DNA</A> makes <A HREF="#RNA">RNA</A> makes <A HREF="#protein">protein</A>."<BR><BR>This means that (generally) genetic information is stored in and transmitted as DNA. <A HREF="#gene">Genes</A> are 
@@ -237,83 +235,54 @@ vocabulary</A> like ones containing <A HREF="#gene_ontology">Gene Ontology (GO)<
 <A HREF="#sibling">Sibling</A>.
 
 <P><DT><B><A NAME="chimera">Chimera</A></B>
-<DD>1. An animal formed from two different animals, that is from two 
-different embryonic sources. In mouse genetics,
-targeted mutations</A> produced in
-<A HREF="#embryonic_stem">embryonic stem cells</A> are 
-recovered by breeding chimeric mice resulting from the mixture of ES 
-cells with a genetically-distinct
-<A HREF="#blastocyst">blastocyst</A>.<BR>
-2. A clone containing
-<A HREF="#genome">genomic</A>
-<A HREF="#DNA">DNA</A> from nonadjacent genomic segments or
-<A HREF="#cDNA">cDNA</A> from two different
-<A HREF="#mRNA">mRNAs</A> (see
-<A HREF="#cloning_artifact">Cloning Artifact</A>).
+<DD>1. An animal formed from two different animals, that is from two different embryonic sources. In mouse genetics,
+targeted mutations</A> produced in <A HREF="#embryonic_stem">embryonic stem cells</A> are recovered by breeding chimeric mice resulting from the mixture of ES cells with a genetically-distinct <A HREF="#blastocyst">blastocyst</A>.<BR>
+2. A clone containing <A HREF="#genome">genomic</A> <A HREF="#DNA">DNA</A> from nonadjacent genomic segments or
+<A HREF="#cDNA">cDNA</A> from two different <A HREF="#mRNA">mRNAs</A> (see <A HREF="#cloning_artifact">Cloning Artifact</A>).
 
 <P><DT><B><A NAME="chlorambucil">Chlorambucil</A></B>
-<DD>A chemical
-<A HREF="#mutagen">mutagen</A>, also called nitrogen mustard.
+<DD>A chemical <A HREF="#mutagen">mutagen</A>, also called nitrogen mustard.
 
 <P><DT><B><A NAME="chromatin">Chromatin</A></B>
-<DD>The
-<A HREF="#nucleus">nuclear</A> material that makes up
-<A HREF="#chromosome">chromosomes</A>, consisting of
-<A HREF="#DNA">DNA</A> and
-<A HREF="#protein">protein</A>. See also
-<A HREF="#euchromatin">Euchromatin</A>,
+<DD>The <A HREF="#nucleus">nuclear</A> material that makes up <A HREF="#chromosome">chromosomes</A>, consisting of
+<A HREF="#DNA">DNA</A> and <A HREF="#protein">protein</A>. See also <A HREF="#euchromatin">Euchromatin</A>,
 <A HREF="#heterochromatin">Heterochromatin</A>.
 
 <P><DT><B><A NAME="chromogenic">Chromogenic</A></B>
-<DD>Color-generating. A chromogenic
-<A HREF="#substrate">substrate</A> is colorless until 
-acted upon by an
-<A HREF="#enzyme">enzyme</A>; it then becomes an 
-insoluble pigment.
+<DD>Color-generating. A chromogenic <A HREF="#substrate">substrate</A> is colorless until acted upon by an
+<A HREF="#enzyme">enzyme</A>; it then becomes an insoluble pigment.
 
 <P><DT><B><A NAME="chromosome">Chromosome</A></B>
-<DD>A structural unit within a eukaryotic
-<A HREF="#nucleus">nucleus</A> that carries
-<A HREF="#gene">genes</A>. A chromosome consists of a 
-long, continuous strand of
-<A HREF="#DNA">DNA</A> and associated <A HREF="#protein">proteins</A>. See the
-<A HREF="http://www.nhgri.nih.gov/DIR/VIP/Glossary/Illustration/chromosome.html">Figure</A> at
-<A HREF="#NHGRI">NHGRI</A>.
+<DD>A structural unit within a eukaryotic <A HREF="#nucleus">nucleus</A> that carries <A HREF="#gene">genes</A>. A chromosome consists of a long, continuous strand of <A HREF="#DNA">DNA</A> and associated <A HREF="#protein">proteins</A>. See the
+<A HREF="http://www.nhgri.nih.gov/DIR/VIP/Glossary/Illustration/chromosome.html">Figure</A> at <A HREF="#NHGRI">NHGRI</A>.
 
 <P><DT><B><A NAME="chromosome_aberration">Chromosome Aberration</A></B>
 <DD>1. A <A HREF="#chromosome_rearrangement">chromosome rearrangement</A>.<BR>
 2. Less commonly, a <A HREF="#numerical_aberration">numerical aberration</A>.
 
 <P><DT><B><A NAME="chromosome_rearrangement">Chromosome Rearrangement</A></B>
-<DD>A kind of <A HREF="#mutation">mutation</A> in which there is a 
-change in the arrangement of the <A HREF="#genome">genome</A> into
-<A HREF="#chromosome">chromosomes</A>; this term usually applies to those changes that are visible
-<A HREF="#cytogenetic">cytogenetically</A>.
-<BR>Classes of chromosome rearrangements include:<UL>
+<DD>A kind of <A HREF="#mutation">mutation</A> in which there is a change in the arrangement of the <A HREF="#genome">genome</A> into <A HREF="#chromosome">chromosomes</A>; this term usually applies to those changes that are visible
+<A HREF="#cytogenetic">cytogenetically</A>. <BR>Classes of chromosome rearrangements include:
+<UL>
 <LI><A HREF="#deletion">Deletion</A></LI>
 <LI><A HREF="#duplication">Duplication</A></LI>
 <LI><A HREF="#insertion">Insertion</A></LI>
 <LI><A HREF="#inversion">Inversion</A></LI>
 <LI><A HREF="#translocation">Translocation</A></LI>
-<LI><A HREF="#transposition">Transposition</LI></UL></A>
+<LI><A HREF="#transposition">Transposition</A></LI>
+</UL>
 
 <P><DT><B><A NAME="clone">Clone</A></B>
-<DD>1. A segment of <A HREF="#DNA">DNA</A> contained within a
-<A HREF="#cloning_vector">cloning vector</A>.<BR>
-2. An organism derived from a founding individual by asexual means 
-that is genetically identical to the founding individual.
+<DD>1. A segment of <A HREF="#DNA">DNA</A> contained within a <A HREF="#cloning_vector">cloning vector</A>.<BR>
+2. An organism derived from a founding individual by asexual means that is genetically identical to the founding individual.
 
 <P><DT><B><A NAME="cloning_artifact">Cloning Artifact</A></B>
-<DD>A <A HREF="#DNA">DNA</A> <A HREF="#clone">clone</A> whose structure does not 
-accurately represent <A HREF="#genome">genomic</A> or <A HREF="#mRNA">mRNA</A> sequence, 
-due to errors in the cloning process. For example, two noncontiguous genomic fragments may 
-be joined by <A HREF="#ligate">ligation</A> prior to being 
-incorporated into the <A HREF="#cloning_vector">cloning vector</A>.
+<DD>A <A HREF="#DNA">DNA</A> <A HREF="#clone">clone</A> whose structure does not accurately represent 
+<A HREF="#genome">genomic</A> or <A HREF="#mRNA">mRNA</A> sequence, due to errors in the cloning process. For example, two noncontiguous genomic fragments may be joined by <A HREF="#ligate">ligation</A> prior to being incorporated into the 
+<A HREF="#cloning_vector">cloning vector</A>.
 
 <P><DT><B><A NAME="cloning_vector">Cloning Vector</A></B>
-<DD>A <A HREF="#DNA_construct">DNA construct</A> capable of
-<A HREF="#replication">replication</A> within a bacterial or yeast host that can harbor foreign
-<A HREF="#DNA">DNA</A>, facilitating experimental manipulation of that DNA segment.
+<DD>A <A HREF="#DNA_construct">DNA construct</A> capable of <A HREF="#replication">replication</A> within a bacterial or yeast host that can harbor foreign <A HREF="#DNA">DNA</A>, facilitating experimental manipulation of that DNA segment.
 
 <P><DT><B><A NAME="cM">cM</A></B>
 <DD>See <A HREF="#centimorgan">centimorgan</A>.
@@ -343,8 +312,7 @@ at <A HREF="#NHGRI">NHGRI</A>. See also <A HREF="#central_dogma">Central Dogma</
 <P><DT><B><A NAME="coisogenic">Coisogenic</A></B>
 <DD>A strain that differs from a particular <A HREF="#inbred_strain">inbred strain</A> at only one
 <A HREF="#locus">locus</A>. A coisogenic strain arises when a <A HREF="#mutation">mutation</A> occurs in an inbred 
-strain. The coisogenic strain can be propagated by <A HREF="#intercross">intercrossing</A> <A HREF="#heterozygote">heterozygotes</A> to produce <A HREF="#homozygote">homozygotes</A>; if these are nonviable the strain can be maintained by <A HREF="#backcross">backcrossing</A> heterozygotes to the original <A HREF="#inbred_strain">inbred strain</A>. See also the
-<A HREF="../nomen/strains.shtml#Inbred">Rules for the Nomenclature of Inbred Strains</A>.
+strain. The coisogenic strain can be propagated by <A HREF="#intercross">intercrossing</A> <A HREF="#heterozygote">heterozygotes</A> to produce <A HREF="#homozygote">homozygotes</A>; if these are nonviable the strain can be maintained by <A HREF="#backcross">backcrossing</A> heterozygotes to the original <A HREF="#inbred_strain">inbred strain</A>. See also the <A HREF="../nomen/strains.shtml#Inbred">Rules for the Nomenclature of Inbred Strains</A>.
 
 <P><DT><B><A NAME="colloidal_gold">Colloidal Gold</A></B>
 <DD>Fine particles of gold (on the order of 5-20 nm diameter) that can be coupled to <A HREF="#antibody">antibodies</A> or other
@@ -357,7 +325,8 @@ strain. The coisogenic strain can be propagated by <A HREF="#intercross">intercr
 <P><DT><B><A NAME="complementation">Complementation</A></B>
 <DD>The appearance of a <A HREF="#wild_type">wild-type</A> <A HREF="#phenotype">phenotype</A> in an individual that is the
 <A HREF="#hybrid">hybrid</A> offspring of two <A HREF="#mutant">mutant</A> individuals <A HREF="#homozygous">homozygous</A> for
-<A HREF="#recessive">recessive</A> <A HREF="#mutation">mutations</A>. Complementation shows that the two parental mutant individuals have mutant <A HREF="#allele_name">alleles</A> of different <A HREF="#gene">genes</A>, even if they are phenotypically similar. For example, a cross between two light gray mice (<I>ash/ash</I> and <I>d/d</I>) would produce a black mouse (<I>ash/+ d/+</I>); see the <A HREF="<!--#include file='include/wi_url.html'-->/images/mlc/d_dsu_ash.gif">Image</A> in the <A HREF="#MLC">MLC</A>.
+<A HREF="#recessive">recessive</A> <A HREF="#mutation">mutations</A>. Complementation shows that the two parental mutant individuals have mutant <A HREF="#allele_name">alleles</A> of different <A HREF="#gene">genes</A>, even if they are phenotypically similar. For example, a cross between two light gray mice (<I>ash/ash</I> and <I>d/d</I>) would produce a black mouse (<I>ash/+ d/+</I>); see the <A HREF="<!--#include file='include/wi_url.html'-->/images/mlc/d_dsu_ash.gif">Image</A> in the 
+<A HREF="#MLC">MLC</A>.
 
 <P><DT><B><A NAME="complex">Complex/Cluster/Region</A></B>
 <DD>In <A HREF="#MGI">MGI</A>, the <A HREF="#marker">marker</A> type "Complex/Cluster/Region" is used to refer to any of the following:<P>
@@ -366,7 +335,8 @@ strain. The coisogenic strain can be propagated by <A HREF="#intercross">intercr
 <A HREF="#evolution">evolutionarily</A> or <A HREF="#molecular_function">functionally</A>. Interspersed unrelated genes located within the group are included.
 <LI>A segment of the mouse
 <A HREF="#genome">genome</A> defined by comparison to an <A HREF="#ortholog">orthologous</A> segment in the genome of another species, or by some specific characteristic, such as loss of <A HREF="#heterozygous">heterozygosity</A>.
-<LI>A <A HREF="#marker">marker</A> repository for information pertaining to a specific <A HREF="#gene_family">gene family</A>, where such information lacks precise family member resolution.</OL>
+<LI>A <A HREF="#marker">marker</A> repository for information pertaining to a specific <A HREF="#gene_family">gene family</A>, where such information lacks precise family member resolution.
+</OL>
 
 <P><DT><B><A NAME="congenic">Congenic</A></B>
 <DD> An <A HREF="#inbred_strain">inbred strain</A> of mouse that contains a small genetic region (ideally a single
@@ -394,8 +364,8 @@ for the Nomenclature of Inbred Strains</A>.
 <A HREF="#STS">STS</A>).<BR>2. A contiguous DNA sequence assembled using overlapping DNA sequences.
 
 <P><DT><B><A NAME="controlled_vocabulary">Controlled Vocabulary</A></B>
-<DD>A restricted set of defined terms allowing the representation of 
-complex information in a database. See <A HREF="#gene_ontology">Gene Ontology</A>.
+<DD>A restricted set of defined terms allowing the representation of complex information in a database. See 
+<A HREF="#gene_ontology">Gene Ontology</A>.
 
 <P><DT><B><A NAME="cosmid">Cosmid</A></B>
 <DD>A type of <A HREF="#cloning_vector">cloning vector</A> derived from <A HREF="#bacteriophage">bacteriophage</A> lambda. A 
@@ -406,7 +376,8 @@ cosmid can carry about 40 kb of foreign <A HREF="#DNA">DNA</A>.
 
 <P><DT><B><A NAME="cross">Cross</A></B>
 <DD>An experimental mating of two genetically distinct sexually 
-reproducing organisms. <BR>See also:<UL>
+reproducing organisms. <BR>See also:
+<UL>
 <LI><A HREF="#backcross">Backcross</A></LI>
 <LI><A HREF="#incross">Incross</A></LI>
 <LI><A HREF="#intercross">Intercross</A></LI>
@@ -467,7 +438,6 @@ rearrangement</A> that is visible by microscopic examination.
 <P><DT><B><A NAME="data_dictionary"></A>Data dictionary</B>
 <DD>In computer science, a <A HREF="#table">table</A> in a <A HREF="#database">database</A> that stores the names, <A HREF="#field">field</A> types, length, and other characteristics of the fields in the database tables. 
 
-
 <P><DT><B><A NAME="dbms">DBMS</A></B><DD>Database Management System. 
 A collection of computer programs that allow storage, modification, and extraction of information from a 
 <A HREF="#database">database</A>. There are many different types of DBMSs, ranging from 
@@ -475,9 +445,11 @@ small systems that run on personal computers to huge systems that run on mainfra
 examples of database applications: <UL><LI>computerized library systems <LI>automated teller machines 
 <LI>flight reservation systems <LI>computerized parts inventory systems <LI><A HREF="#MGI">MGI</A></UL>
 
-<P><DT><B><A NAME="default"></A>Default</B><DD>In computer science, a particular setting or value for a variable,
-assigned automatically by a system or program, which remains in effect until cancelled or overridden. In MGI, the default operator for a search is often CONTAINS; so, for example, entering &quot;Mit&quot; in the Symbol/Name field on the Genes and Markers 
-<a href="<!--#include file='include/glossary_url.html'-->#query_form">Query Form</a> and checking <i>No limit</i> next to <b>Max number of items returned:</b> returns a list of 6879 matching items. If you override the default and make it <b>BEGINS</b>, 119 items are listed, each of which begins with &quot;mit&quot;.
+<P><DT><B><A NAME="default">Default</A></B>
+<DD>In computer science, a particular setting or value for a variable, assigned automatically by a system or program which remains in effect until cancelled or overridden. In MGI, the default operator for a search is often <b>contains</b>; so, for example, 
+entering &quot;Mit&quot; in the Symbol/Name field on the Genes and Markers 
+<a href="<!--#include file='include/glossary_url.html'-->#query_form">query form</a> and checking <b>No limit</b> next to 
+<b>Max number of items returned:</b> returns more than 6000 items containing &quot;Mit&quot;. If you override the default, leave the maximum number at <b>No Limit</b> but change the operator to <b>begins</b>, just over 100 items appear, each starting with &quot;mit.&quot;
 
 <P><DT><B><A NAME="degenerate">Degenerate</A></B><DD>A term describing one of the qualities of the 
 <A HREF="#genetic_code">genetic code</A>, specifically, that some amino acids may be specified 
@@ -736,8 +708,7 @@ for the standard genetic code. See also <A HREF="#central_dogma">Central Dogma</
 <A HREF="#cytogenetic_map">Cytogenetic Map</A>.
 
 <P><DT><B><A NAME="genome">Genome</A></B>
-<DD>The total genetic information of a cell or <A HREF="#organelle">organelle</A>. In eukaryotes, "genome" usually refers to nuclear
-<A HREF="#DNA">DNA</A> rather than to <A HREF="#mitochondria">mitochondrial</A> or chloroplast DNA.
+<DD>The total genetic information of a cell or <A HREF="#organelle">organelle</A>. In eukaryotes, "genome" usually refers to nuclear <A HREF="#DNA">DNA</A> rather than to <A HREF="#mitochondria">mitochondrial</A> or chloroplast DNA.
 
 <P><DT><B><A NAME="genomics"></A>Genomics</B>
 <DD>The comprehensive study of whole sets of <A HREF="#gene">genes</A> and their interactions rather than single genes or <A HREF="#protein">proteins</A>.
@@ -1532,8 +1503,7 @@ at NCBI. See also <A HREF="#homolog">Homolog</A>, <A HREF="#ortholog">Ortholog</
 <dd>The relationship of any two homologous characters that arose by a genetic duplication. See also <A HREF="#homology">Homology</A>, <A HREF="#orthology">Orthology</A>, and <A HREF="#paralog">Paralog</A>.
 
 <P><DT><B><A NAME="parent">Parent</A></B>
-<DD>In <A HREF="#MGI">MGI</A>, this term refers to terms in a <a href="#hierarchical">hierarchical</a> <A HREF="#controlled_vocabulary">controlled vocabulary</A> such as those containing <A HREF="#gene_ontology">Gene Ontology (GO)</A> terms. A "parent" of a term is a one any number of levels above it in the <a href="#hierarchy">hierarchy</a> from which it is descended. For example, the GO term <A HREF="#enzyme">enzyme</A> [GO:0003824] is a 
-<B>parent</B> to the GO term <B>alcohol dehydrogenase</B> [GO:0004022]. See also: <A HREF="#children">Children</A>, <A HREF="#ancestor">Ancestor</A>, <A HREF="#sibling">Sibling</A>.
+<DD>In <A HREF="#MGI">MGI</A>, this term refers to terms in a <a href="#hierarchical">hierarchical</a> <A HREF="#controlled_vocabulary">controlled vocabulary</A> such as those containing <A HREF="#gene_ontology">Gene Ontology (GO)</A> terms. A "parent" of a term is a one any number of levels above it in the <a href="#hierarchy">hierarchy</a> from which it is descended. For example, the GO term <A HREF="#enzyme">enzyme</A> [GO:0003824] is a parent to the GO term <B>alcohol dehydrogenase</B> [GO:0004022]. See also: <A HREF="#children">Children</A>, <A HREF="#ancestor">Ancestor</A>, <A HREF="#sibling">Sibling</A>.
 
 <P><DT><B><A NAME="pcr">PCR</A></B>
 <DD>Polymerase Chain Reaction. A method of amplifying specific <A HREF="#DNA">DNA</A> segments based on hybridization to a
@@ -1756,7 +1726,7 @@ whose activity can be detected using a staining reaction, is a commonly used rep
 <DD>An individual carrying an <A HREF="#allele_name">allele</A> of a given <A HREF="#allele_name">gene</A> that at one time produced a <A HREF="#mutant">mutant</A> <A HREF="#phenotype">phenotype</A>, but which since has undergone a subsequent <A HREF="#mutation">mutation</A> that restored a <A HREF="#wild_type">wild-type</A> phenotype. The mutation need not restore the gene to its original <A HREF="#nucleotide">nucleotide</A> sequence to be considered a <A HREF="#reversion">reversion</A> event.
 
 <P><DT><B><A NAME="RFLP">RFLP</A></B>
-<DD>Restriction Fragment Length Polymorphism. A genetic <A HREF="#polymorphism">polymorphism</A> with respect to the observed length of a <A HREF="#restriction_fragment">restriction fragment</A>. RFLPs can result from <A HREF="#SNP">single nucleotide olymorphisms</A> as well as from <A HREF="#insertion">insertions</A>, <A HREF="#deletion">deletions</A>, or <A HREF="#microsatellite">microsatellite</A> expansions.
+<DD>Restriction Fragment Length Polymorphism. A genetic <A HREF="#polymorphism">polymorphism</A> with respect to the observed length of a <A HREF="#restriction_fragment">restriction fragment</A>. RFLPs can result from <A HREF="#SNP">single nucleotide polymorphisms</A> as well as from <A HREF="#insertion">insertions</A>, <A HREF="#deletion">deletions</A>, or <A HREF="#microsatellite">microsatellite</A> expansions.
 
 <P><DT><B><A NAME="ribosome">Ribosome</A></B>
 <DD>A complex of <A HREF="#protein">proteins</A> and <A HREF="#RNA">RNA</A> within which <A HREF="#translation">translation</A> is carried out.
@@ -1830,10 +1800,7 @@ The method works if all positions in the large segment are covered by multiple o
 <A HREF="#wholegenome_shotgun">Whole-genome shotgun sequencing</A>.
 
 <P><DT><B><A NAME="sibling">Sibling</A></B>
-<DD>In <A HREF="#MGI">MGI</A>, this term refers to terms in a <a href="#hierarchical">hierarchical</a> <A HREF="#controlled_vocabulary">controlled 
-vocabulary</A> like ones containing <A HREF="#gene_ontology">Gene Ontology (GO)</A> terms. A "sibling" of a term is a term at the same level of the <a href="#hierarchy">hierarchy</a> sharing at least one <A HREF="#ancestor">ancestor</A>. For example, the GO term <B>alcohol dehydrogenase</B> [GO:0004022] is a <B>sibling</B> to the GO term <B>aldehyde oxidase</B> [GO:0004031]; they share the
-<A HREF="#ancestor">ancestor</A> term <A HREF="#enzyme">enzyme</A> [GO:0003824]. See also:<A HREF="#ancestor">Ancestor</A>,
-<A HREF="#children">Children</A>.
+<DD>In <A HREF="#MGI">MGI</A>, this term refers to terms in a <a href="#hierarchical">hierarchical</a> <A HREF="#controlled_vocabulary">controlled vocabulary</A> such as those containing <A HREF="#gene_ontology">Gene Ontology (GO)</A> terms. A "sibling" of a term is a term at the same level of the <a href="#hierarchy">hierarchy</a> sharing at least one <A HREF="#ancestor">ancestor</A>. For example, the GO term <B>alcohol dehydrogenase</B> [GO:0004022] is a sibling to the GO term <B>aldehyde oxidase</B> [GO:0004031]; they share the <A HREF="#ancestor">ancestor</A> term <A HREF="#enzyme">enzyme</A> [GO:0003824]. See also:<A HREF="#ancestor">Ancestor</A>, <A HREF="#children">Children</A>.
 
 <P><DT><B><A NAME="similarity">Similarity</A></B>
 <DD>1. In comparison of <A HREF="#nucleic_acid">nucleic acid</A> sequences, the extent to which two <A HREF="#nucleic_acid">nucleic acid</A> sequences have identical <A HREF="#base">bases</A> at equivalent positions, usually expressed as a percentage.<BR>2. In comparison of <A HREF="#protein">protein</A> sequences, the extent to which the <A HREF="#amino_acid">amino acid</A> sequences of two <A HREF="#protein">proteins</A> have identical or functionally similar <A HREF="#amino_acid">amino acids</A> at equivalent 
@@ -1864,7 +1831,8 @@ slab gel. A replica of the gel is then made on a membrane by capillary transfer 
 
 <P><DT><B><A NAME="spindle">Spindle</A></B>
 <DD>The cellular apparatus that directs <A HREF="#chromosome">chromosome</A> movement during cell division in
-<A HREF="#mitosis">mitosis</A> or <A HREF="#meiosis">meiosis</A>. The spindle is largely composed of <A HREF="#microtubule">microtubules</A>. See the <A HREF="http://www.nhgri.nih.gov/DIR/VIP/Glossary/Illustration/metaphase.html">Figure</A> at <A HREF="#NHGRI">NHGRI</A>.
+<A HREF="#mitosis">mitosis</A> or <A HREF="#meiosis">meiosis</A>. The spindle is largely composed of <A HREF="#microtubule">microtubules</A>. See the 
+<A HREF="http://www.nhgri.nih.gov/DIR/VIP/Glossary/Illustration/metaphase.html">Figure</A> at <A HREF="#NHGRI">NHGRI</A>.
 
 <P><DT><B><A NAME="splice_acceptor">Splice Acceptor Site</A></B>
 <DD>In the <A HREF="#splicing">splicing</A> of <A HREF="#RNA">RNA</A>, the site at the <A HREF="#3'">3' end</A> of an
@@ -1890,7 +1858,8 @@ slab gel. A replica of the gel is then made on a membrane by capillary transfer 
 <A HREF="#rdbms">relational database management systems</A>. SQL statements are used to perform tasks such as updating data in or retrieving data from a database. Some common relational database management systems that use SQL are: Oracle, Sybase, Microsoft SQL Server, Access, Ingres, etc. Although most database systems use SQL, most of them also have their own additional proprietary extensions that are usually only used on their system. The <A HREF="#query_form">Query Forms</A> at <A HREF="#MGI">MGI</A> extract information from databases by generating instructions in SQL.
 
 <P><DT><B><A NAME="SSR"></A>SSR</B>
-<DD>Simple Sequence Repeat, a <A HREF="#DNA">DNA</A> sequence consisting largely of a tandem repeat of a specific k-mer (such as (CA)<SUB>15</SUB>). Many SSRs are <A HREF="#polymorphism">polymorphic</A> and have been widely used in 
+<DD>Simple Sequence Repeat, a <A HREF="#DNA">DNA</A> sequence consisting largely of a tandem repeat of a specific k-mer 
+(such as (CA)<SUB>15</SUB>). Many SSRs are <A HREF="#polymorphism">polymorphic</A> and have been widely used in 
 <A HREF="#genetic_map">genetic mapping</A>.
 
 <P><DT><B><A NAME="stop_codon">Stop Codon</A></B>
@@ -2090,7 +2059,7 @@ gene activity of X-chromosome genes.
 
 <P><DT><B><A NAME="YAC">YAC</A></B>
 <DD>Yeast Artificial Chromosome. A type of <A HREF="#cloning_vector">cloning vector</A> containing a yeast
-<A HREF="#centromere">centromere</A> and<A HREF="#telomere">telomeres</A> that allows large
+<A HREF="#centromere">centromere</A> and <A HREF="#telomere">telomeres</A>&nbsp; that allow large
 <A HREF="#DNA">DNA</A> segments to be cloned in yeast. A YAC can carry 200 - 1000<A HREF="#kb">kb</A> of foreign
 <A HREF="#DNA">DNA</A>.
 
@@ -2102,8 +2071,6 @@ End of markup -->
 
 <hr>
 <!--#include file="include/footer.html"-->
-</body>
-</html>
 
 </BODY>
 </HTML>
