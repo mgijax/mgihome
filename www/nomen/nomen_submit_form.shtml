@@ -44,7 +44,8 @@ Requesting symbol in: (check all that apply)
 <INPUT TYPE="checkbox" NAME="requestMouse" VALUE="mouse" CHECKED> Mouse
 <INPUT TYPE="checkbox" NAME="requestHuman" VALUE="human"> Human
 <INPUT TYPE="checkbox" NAME="requestRat" VALUE="rat"> Rat
-<BLOCKQUOTE><EM>If you wish to request a symbol in Human only, then go to the <A HREF="http://www.gene.ucl.ac.uk/nomenclature/">Human Nomenclature Page</A></EM></BLOCKQUOTE>
+<BLOCKQUOTE><EM>If you wish to request a symbol in Human only, then go to the <A HREF="http://www.gene.ucl.ac.uk/nomenclature/">
+Human Nomenclature Page</A></EM></BLOCKQUOTE>
 Sources checked:
 <INPUT TYPE="checkbox" NAME="source1" VALUE="MGD" > MGD (<A HREF="<!--#include file="include/wi_url.html"-->">USA</A>)
 <INPUT TYPE="checkbox" NAME="source2" VALUE="HUGO/Human"> HUGO/Human (<A HREF="http://www.gene.ucl.ac.uk/cgi-bin/nomenclature/searchgenes.pl">UK</A>)
@@ -85,9 +86,9 @@ Please report citations that support this locus designation in the following sho
 <P>
 <BLOCKQUOTE><EM>Seldin MF, Cytogenet Cell Genet 1987;45(1):52-4</EM></BLOCKQUOTE>
 <P>
-Citation:<TEXTAREA NAME="cite1" ROWS=2 COLS=55></TEXTAREA><BR>
-Citation:<TEXTAREA NAME="cite2" ROWS=2 COLS=55></TEXTAREA><BR>
-Citation:<TEXTAREA NAME="cite3" ROWS=2 COLS=55></TEXTAREA><BR>
+Citation: <TEXTAREA NAME="cite1" ROWS=2 COLS=55></TEXTAREA><BR>
+Citation: <TEXTAREA NAME="cite2" ROWS=2 COLS=55></TEXTAREA><BR>
+Citation: <TEXTAREA NAME="cite3" ROWS=2 COLS=55></TEXTAREA><BR>
 <HR>
 <H2>Homology Information:</H2>
 If a homologous locus is known in a species other than mouse, please fill in this table:
