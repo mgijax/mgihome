@@ -46,6 +46,8 @@ def main ():
 		'../www/include/java_url.html')
 	stringToFile (config.lookup ('MOUSEBLAST_URL'), \
 		'../www/include/mouseblast_url.html')
+	stringToFile (config.lookup ('WKSILVERS_URL'), \
+		'../www/include/wksilvers_url.html')
 
 	vocab = SimpleVocab.PhenoSlimVocab()
 	listToFile (SimpleVocab.getSelectionList (vocab,
