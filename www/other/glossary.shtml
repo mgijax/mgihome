@@ -150,11 +150,11 @@ The 5' direction is the direction toward the 5' end. Nucleic acid sequences are 
 <A HREF="#NHGRI">NHGRI</A>.
 </DD></P>
 
-<!-- <P><DT><B><A NAME="ma_ontology"></A>Adult Mouse Anatomical Dictionary</B></DT>
+<P><DT><B><A NAME="ma_ontology"></A>Adult Mouse Anatomical Dictionary</B></DT>
 <DD>A 
 <A HREF="#controlled_vocabulary">controlled vocabulary</A> providing standardized nomenclature for anatomical structures in the postnatal mouse (Theiler stage 28). See the 
 <A HREF="http://obo.sourceforge.net/">Open Biological Ontologies (OBO)</A> site for further information about structured, shared vocabularies for use within genomic and proteomic domains.
-</DD></P> -->
+</DD></P>
 
 <P><DT><B><A NAME="agouti"></A>Agouti</B></DT>
 <DD>A characteristic of the coat color of 
@@ -2218,9 +2218,9 @@ See also  <A HREF="#knockin">Knock in</A>.
 
 <P><DT><B><A NAME="interpro"></A>InterPro domain</B></DT>
 <DD>One of a collection of 
-<A HREF="amino_acid">amino acid</A> 
-<A HREF="sequence">sequences</A> of identifiable features in known 
-<A HREF="protein">proteins</A> that can be compared to unknown protein sequences. See <A HREF="http://www.ebi.ac.uk/interpro/">InterPro</A> at EMBL/EBI.
+<A HREF="#amino_acid">amino acid</A> 
+<A HREF="#sequence">sequences</A> of identifiable features in known 
+<A HREF="#protein">proteins</A> that can be compared to unknown protein sequences. See <A HREF="http://www.ebi.ac.uk/interpro/">InterPro</A> at EMBL/EBI.
 </DD></P>
 
 <P><DT><B><A NAME="intron"></A>Intron</B></DT>
@@ -3446,7 +3446,7 @@ Reciprocal recombination events are also called
 <P><DT><B><A NAME="resolved_value"></A>Resolved Value</B></DT>
 <DD>In <A HREF="#MGI">MGI</A>, a value for an attribute (<I>e.g.</I>, strain, species, tissue, library) that can be used as a search parameter on an MGI query form. 
 Resolved values are stored in the MGI database in 
-<A HREF="controlled_vocabulary">controlled vocabularies</A>. See also 
+<A HREF="#controlled_vocabulary">controlled vocabularies</A>. See also 
 <A HREF="#unresolved_value">Unresolved Value</A>.
 </DD></P>
 
@@ -4231,8 +4231,7 @@ See the
 
 <P><DT><B><A NAME="unresolved_value"></A>Unresolved Value</B></DT>
 <DD>In 
-<A HREF="#MGI">MGI</A>, a value or attribute that is not stored in the MGI database.  For example, a sequence provider lists the strain attribute as &quot;wild-caught in Tamil Nadu, South India&quot;. 
-A database query on this attribute would fail because <I>wild-caught</i> strain is not in a standard <A NAME="MGI">MGI</A> 
+<A HREF="#MGI">MGI</A>, a value or attribute that is not stored in the MGI database.  For example, a sequence provider lists the strain attribute as &quot;wild-caught in Tamil Nadu, South India. &quot;A database query on this attribute would fail because <I>wild-caught</i> strain is not in a standard <A NAME="MGI">MGI</A> 
 <A HREF="#controlled_vocabulary">controlled vocabulary</A>.
 See also 
 <A HREF="#resolved_value">Resolved Value</A>.
