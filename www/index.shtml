@@ -26,7 +26,7 @@
 <A HREF="support/support.shtml">o&nbsp;User Support</A><BR>
 <A HREF="lists/lists.shtml">o&nbsp;MGI E-mail List Service</A><BR>
 <A HREF="nomen/short_gene.shtml">o&nbsp;Quick Guide to Nomenclature</A><BR>
-<A HREF="nomen/">o&nbsp;Mouse Nomenclature Home Page</A><BR>
+<A HREF="nomen/index.shtml">o&nbsp;Mouse Nomenclature Home Page</A><BR>
 <A HREF="nomen/allmut_form.shtml">o&nbsp;Submitting Mutant & Allele Data</A><br>
 <A HREF="submissions/submit.shtml">o&nbsp;Submitting Mouse Genome Data</A>&nbsp;
 
@@ -40,6 +40,8 @@
 <!--<A HREF="http://www.informatics.jax.org/rat/index.shtml">o&nbsp;Rat Genome Data</A><br>-->
 <A HREF="nomen/genefamilies/index.shtml">o&nbsp;Gene Family Reports</a><br>
 <A HREF="<!--#include file='include/ftp_url.html'-->">o&nbsp;FTP Site</A><BR>
+<!--<A HREF="http://cadillac.informatics.jax.org">o&nbsp;Mouse Genome Sequence Information Resources</A><BR>-->
+
 </FONT>
 
 <p>
@@ -81,8 +83,11 @@
   <TR ALIGN="left" VALIGN="top">  
    <TD ALIGN="left" VALIGN="top">   
     <TABLE ALIGN="CENTER" BORDER="-2" CELLSPACING="0" CELLPADDING="5" width="60%">
-      <TR><TD ALIGN="left" VALIGN="middle"><B><CENTER><A HREF="news/whatsnew.shtml">What's New - April 22, 2002</a></CENTER></B>
+      <TR><TD ALIGN="left" VALIGN="middle"><B><CENTER><A HREF="news/whatsnew.shtml">What's New - April 29, 2002</a></CENTER></B>
           <UL><font size=-1>
+           <li><a href="news/whatsnew.shtml#apr02">Revised Rules for Nomenclature of Mouse and Rat Strains, April 29, 2002</a>
+<!--<li><A HREF="http://cadillac.informatics.jax.org">Mouse Genome Sequence Resources Available</A><BR>-->
+     <li><A HREF="news/whatsnew.shtml#apr02">Gene Family Addition: Calcium Channel, Voltage-dependent, Gamma Subunit, April 29, 2002</a><br>
     <li><A HREF="news/whatsnew.shtml#apr02">New Public Mouse Assembly Released! Mouse Genome Monthly Newsletter, Issue #4, April 22, 2002</a><br>
       <li><A HREF="news/whatsnew.shtml#apr02">MGI Tutorials and FAQs Available, April 1, 2002</a><br>
    <li><A HREF="news/whatsnew.shtml#apr02">Recent MGI Staff Publications, 2002</a><br>
@@ -125,13 +130,17 @@ A <A HREF="other/mgicron.shtml">brief history </A>of Mouse Genome Informatics is
 
 <table align=center>
   <tr><TD valign=center><form>
-      <TABLE BGCOLOR="#D5F8FE" border=1 CELLSPACING="4" CELLPADDING="4">
-        <TR><TD><small><B><A HREF="MGS/genometally.shtml">% of Mouse Genome Sequenced</A></B></small><BR> <center>
-	  <TABLE border=1 CELLSPACING="0">
-	    <TR><TD bgcolor=#FFFFFF>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<B>2.5% finished</B>&nbsp;&nbsp;&nbsp;</TD></TR>
-		<TR><TD bgcolor=#FFFFFF>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<B>17.1% draft</B>&nbsp;&nbsp;&nbsp;</TD></TR>
+      <TABLE width="100%" BGCOLOR="#D5F8FE" border=1 CELLSPACING="4" CELLPADDING="4">
+        <TR><TD><small><B>Genome Sequence Status from NCBI</A></B></small><BR> <center>
+	  <TABLE border=1 CELLSPACING="2" cellpadding="2">
+	    <TR><TD bgcolor=#FFFFFF>Phase 3 Sequences:</td><th bgcolor=#FFFFFF>503</th></TR>
+		<TR><TD bgcolor=#FFFFFF>Contigs</td><th bgcolor=#FFFFFF>374</th></TR>
+            <tr><td bgcolor=#FFFFFF>Contig Length</td><th bgcolor=#FFFFFF>77.3Mb</th></tr>
+            <tr><td bgcolor=#FFFFFF>STSs on Sequences:</td><th bgcolor=#FFFFFF>1141</th></tr>
+            <tr><td bgcolor=#FFFFFF>SNPs on Sequences:</td><th bgcolor=#FFFFFF>1625</th></tr>
 	  </TABLE></center></td>
-      <tr><TD><small> <B><A HREF="http://www.nhgri.nih.gov/NEWS/mouse_gene_data.html">Press Release on Mouse Sequencing</A></B></small></td>
+ 
+      <!--<tr><TD><small> <B><A HREF="http://www.nhgri.nih.gov/NEWS/mouse_gene_data.html">Press Release on Mouse Sequencing</A></B></small></td>-->
 <tr><td><small><b><A HREF="news/index.shtml">Mouse Genome Monthly Newsletters</a> </TD>
 </form>
 </TR>
