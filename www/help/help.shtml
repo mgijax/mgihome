@@ -4,7 +4,7 @@
 </HEAD>
 <BODY BGCOLOR="#FFFFFF">
 <!--#include file="include/bodyStart.html"-->
-<TABLE WIDTH="100%" BORDER=0 CELLPADDING=2 CELLSPACING=1>
+ <TABLE WIDTH="100%" BORDER=0 CELLPADDING=2 CELLSPACING=1>
  <TR>
   <TD WIDTH="100%" BGCOLOR="#D0E0F0">
    <TABLE WIDTH="100%" BORDER=0 CELLPADDING=0 CELLSPACING=0>
@@ -12,7 +12,7 @@
      <TD WIDTH="20%" VALIGN="center" ALIGN="left">&nbsp;</TD>
      <TD WIDTH="60%" ALIGN="center" VALIGN="center">
       <FONT COLOR="#000000" SIZE=5 FACE="Arial,Helvetica">
-      Help
+    Help
       </FONT>
      </TD>
      <TD WIDTH="20%" VALIGN="center" ALIGN="center">&nbsp;</TD>
@@ -32,66 +32,58 @@ Mouse Genome Informatics offers on-line help and staffs a help desk to answer yo
 E-mail: <A HREF="../support/tjl_inbox.shtml">mgi-help@informatics.jax.org</A></FONT><br>
 Phone: (207) 288-6445<br><br>
 </ul>
-                
-<FONT SIZE=+1><B>On-Line Help</b></font>
-<dt><EM>General topics</EM>
-<dd><A HREF="../overview.shtml">Mouse Genome Database Overview</A>
-<dd><A HREF="<!--#include file='include/wi_url.html'-->userdocs/gen_search_tips.shtml">General Guidelines for Searching MGI</A>
-<dd><A HREF="/tutorials/faq.shtml">Frequently Asked Questions (FAQs)</A><br>
-<dd><A HREF="<!--#include file='include/wi_url.html'-->userdocs/searchtool_help.shtml">Text Search Tool on Home Page</A><br>
-<dt><em>Specific query forms</EM>
-<dd><a href="<!--#include file='include/wi_url.html'-->userdocs/accession_help.shtml">Accession IDs</A><br>
-<dd><A HREF="<!--#include file='include/wi_url.html'-->userdocs/allele_help.shtml">Alleles and Phenotypes</A><br>
-<dd><A HREF="<!--#include file='include/wi_url.html'-->userdocs/anatdict_help.shtml">Mouse Anatomical Dictionary Browser</A><br>
-<dd><A HREF="<!--#include file='include/wi_url.html'-->userdocs/estclone_help.shtml">cDNA Clone</A><BR>
-<dd><A HREF="<!--#include file='include/wi_url.html'-->userdocs/mlc_omim_help.shtml">Combined Mouse/Human Phenotypes</A><br>
-<dd><A HREF="<!--#include file='include/wi_url.html'-->userdocs/textsearch_tips.shtml">Full-text Searching Help</A><BR>
-<dd><A HREF="<!--#include file='include/wi_url.html'-->userdocs/expression_help.shtml">Gene Expression Data</A><BR>
-<dd><A HREF="<!--#include file='include/wi_url.html'-->userdocs/marker_help.shtml">Genes and Markers</A><br>
-<dd><A HREF="<!--#include file='include/wi_url.html'-->userdocs/gxdindex_help.shtml">Gene Expression Literature Index</A><BR>
-<dd><A HREF="<!--#include file='include/wi_url.html'-->userdocs/GO_help.shtml">Gene Ontology Browser</A><BR>
-<dd><A HREF="<!--#include file='include/wi_url.html'-->userdocs/homology_help.shtml">Mammalian Orthology Data</A><br>
-<dd><A HREF="<!--#include file='include/wi_url.html'-->userdocs/mapping_help.shtml">Maps and Mapping Data</A><br>
-<dd><A HREF="<!--#include file='include/wi_url.html'-->userdocs/probe_help.shtml">Molecular Probes and Segments</A><br>
-<dd><A HREF="http://mouseblast.informatics.jax.org/user_docs/mblast_overview.shtml">MouseBLAST</A><br>
-<dd><A HREF="<!--#include file='include/wi_url.html'-->userdocs/anatdict_help.shtml">Mouse Anatomical Dictionary Browser</A><br>
-<dd><A HREF="<!--#include file='include/wi_url.html'-->userdocs/oxfordgrid_help.shtml">Oxford Grid</A><br>
-<dd><A HREF="<!--#include file='include/wi_url.html'-->userdocs/polymorphism_help.shtml">Polymorphisms</A><br>
-<dd><A HREF="<!--#include file='include/wi_url.html'-->userdocs/reference_help.shtml">References</A>
-</TD>
-<td align=left valign=top width=50%>
-<FONT SIZE=+1><B><A HREF="/tutorials/index.shtml">Tutorials</a></B></FONT><BR>
-<!--<dd>Finding a gene in MGI<br>
-<dd>Exploring homology<br>
-<dd>Gene expression<br>
-<dd>Getting around MGI--><br>
+       
+       
+<P><FONT SIZE=+1><B>Educational Resources</b></font><BR>
+<DL>
 
-<dt><FONT SIZE=+1><B><A HREF="../other/glossary.shtml">MGI Glossary</A></B></FONT><BR>
+<P><DD><B><A HREF="/tutorials/faq.shtml">Frequently Asked Questions (FAQs)</a></B><BR>
+<EM>Short answers to common questions about MGI</EM>
+
+<P><DD><B><A HREF="/tutorials/index.shtml">Tutorials</a></B><BR>
+<EM>Learn to use MGI search tools using short tutorials</EM>
+
+<P><DD><B><A HREF="documentation.shtml">Documentation</A></b><BR>
+<EM>Detailed explanations of search strategies and query forms</EM>
+
+<P><DD><B><A HREF="../nomen/allmut_quickhelp.shtml">Quick Guide to Nomenclature</A></B><BR>
+<EM>Basic rules for naming mouse genes and alleles</EM>
+
+<P><DD><B><A HREF="../other/glossary.shtml">MGI Glossary</A></B><BR>
 <EM>Commonly used terms in mouse genetics</EM>
-<br><br>
 
-<FONT SIZE=+1><B><A HREF="../submissions/submissions_menu.shtml">Contributing Your Data</A></B></FONT><BR>
-<dd>Mouse Genome Data<BR>
-<dd>Mutant and Allele Data<BR>
-<dd>Mouse Nomenclature<BR>
-<dd>Gene Expression Data
-<br><br>
-
-<FONT SIZE=+1><B><A HREF="../lists/lists.shtml">Community E-mail Lists</a></B></FONT><BR>
-<EM>Searchable research community E-mail lists moderated by User Support</EM>
-<br><br>
-
-<FONT SIZE=+1><B><A HREF="/silver/">Lee Silver's <EM>Mouse Genetics</EM></A></B></FONT><BR>
+<P><DD><B><A HREF="/silver/">Lee Silver's <EM>Mouse Genetics</EM></A></B><BR>
 <EM>Electronic version of Silver's out-of-print book</EM>
-<br><br>
+</DL></td>
 
-<FONT SIZE=+1><B><A HREF="<!--#include file='include/wi_url.html'-->userdocs/developers_tools.shtml">Software Developer Resources</A></B></FONT><BR>
-<dd>How to create links to MGI<BR>
-<dd>Schema Browser<BR><br>
+<td align=left valign=top width=50%>      
 
+<P><FONT SIZE=+1><B>Community Resources</b></font><BR>
+<DL>
 
-<FONT SIZE=+1><B><A HREF="../other/mouse_facts1.shtml">Mouse Facts</A></B></FONT><BR>
-<em>Information about mouse physiology, genome size estimates, codon usage, clone resources, radiation hybrid panels, ...<BR>
+<P><DD><B><A HREF="../lists/lists.shtml">Research Community E-mail Lists</a></B><BR>
+<EM>Moderated E-mail lists with archives</EM>
+
+<P><DD><B><A HREF="../submissions/submissions_menu.shtml">Contributing Your Data</A></B><BR>
+<EM>Guidelines for contributing data to MGI</EM>
+
+<P><DD><B><A HREF="../other/mouse_facts1.shtml">Mouse Facts</A></B><BR>
+<em>Sources for clones, information about mouse physiology, codon usage, radiation hybrid panels, etc.</em><BR>
+</DL>
+
+<P><FONT SIZE=+1><B>Software Developer Resources</b></font><BR>
+<DL>
+
+<P><DD><B><A HREF="../other/link_instructions.shtml">How to create links to MGI</A></B><BR>
+<EM>Instructions and examples for web designers and programmers</EM>
+
+<P><DD><B><A HREF="ftp://ftp.informatics.jax.org/">FTP Server</A></B><BR>
+<EM>Access to MGI public reports</EM>
+
+<P><DD><B><A HREF="/schema/">Schema Browser</A></B><BR>
+<EM>Search MGI's schema to formulate SQL queries</EM>
+
+</DL>
 
 </TD>
 </TR>
@@ -116,6 +108,6 @@ Warranty Disclaimer and Copyright Notice
  is prohibited without the prior express written permission of the Jackson 
  Laboratory.
 
-Copyright © 1996, 1999, 2002 by The Jackson Laboratory
+Copyright © 1996, 1999, 2002, 2003 by The Jackson Laboratory
 All Rights Reserved
 -->
