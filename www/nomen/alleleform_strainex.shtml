@@ -1,50 +1,37 @@
 <HTML>
-<HEAD>
-<TITLE>Allele and New Mutant Submission Form: example of additional strain background information</TITLE>
-</HEAD>
+<head>
+<TITLE>Mutation Submission Form: example of additional strain background information</TITLE>
+</head>
 <BODY BGCOLOR="#ffffff">
-<TABLE WIDTH="100%" BORDER=0 CELLPADDING=0 CELLSPACING=0>
-  <TR><TD WIDTH="100%">
-    <TABLE WIDTH="100%" BORDER=0 CELLPADDING=0 CELLSPACING=0>
-     <TR><TD WIDTH="20%" VALIGN="center" ALIGN="left"><A HREF="<!--#include file='include/wi_url.html'-->" border=0><IMG SRC="../images/mgi_logo_small.jpg" border=0 ALT="MGI"></A></TD>
-      <TD WIDTH="60%" ALIGN="center" VALIGN="center" BGCOLOR="#ffffff">
-       <FONT COLOR="#000000" SIZE=5 FACE="Arial,Helvetica">
-Allele and New Mutant Submission Form: example of additional strain background information
-       </FONT></TD><TD WIDTH="20%" VALIGN="center" ALIGN="center" BGCOLOR="#ffffff">&nbsp;</TD></TR>
-<TR BGCOLOR="blue"><TD COLSPAN=3><FONT face="Arial,Helvetica" color="#ffffff">
-    <B>&nbsp;Mouse Genome Informatics</B></TD></TR>
-<TR><TD BGCOLOR="#ffffff"><FONT SIZE=-1 FACE="Arial,Helvetica"><CENTER><A HREF="<!--#include file='include/wi_url.html'-->">MGI Home</A>&nbsp;&nbsp;&nbsp;
-<a href="../help/help.shtml">Help
-</A></FONT></CENTER></TD></TR>
-</TABLE></TD></TR>
-</TABLE>
+<!--#include file="include/bodyStart.html"-->
+<TABLE WIDTH="100%" BORDER=0 CELLPADDING=2 CELLSPACING=1>
+ <TR>
+  <TD WIDTH="100%" BGCOLOR="#D0E0F0">
+   <TABLE WIDTH="100%" BORDER=0 CELLPADDING=0 CELLSPACING=0>
+    <TR>
+     <TD WIDTH="20%" VALIGN="center" ALIGN="left">&nbsp;</TD>
+     <TD WIDTH="60%" ALIGN="center" VALIGN="center">
+      <FONT COLOR="#000000" SIZE=5 FACE="Arial,Helvetica">
+       Mutation Submission Form: example of additional strain background information
+      </FONT>
+     </TD>
+     <TD WIDTH="20%" VALIGN="center" ALIGN="center">&nbsp;</TD>
+    </TR>
+   </TABLE>
+  </TD>
+ </TR>
+</TABLE><HTML>
+
 <HR>
 
-
+<p>The following is an example of additional strain background information.
 <p>The original mutation was ENU-induced on a (C3H/HeJ x BALB/c)F1 and backcrossed to C3H/HeJ for linkage testing. The mutation is maintained by continual backcrossing to C3H/HeJ. The phenotypes reported were observed in the N1-N5 generations, with no differences noted among the generations typed.
-<BR><BR>
-<HR>
-</FORM>
-<A HREF="http://www.jax.org/" target="_top">
-<IMG SRC="<!--#include file='include/mgihome_url.html'-->images/jax_logo.gif" ALIGN=right
-                        ALT="The Jackson Laboratory"></A>
-<SMALL>
-<A HREF="<!--#include file='include/mgihome_url.html'-->other/citation.shtml" target="_top">
-                        Citing These Resources</A>
-<BR>
-<A HREF="<!--#include file='include/mgihome_url.html'-->other/mgi_funding.shtml" target="_top">
-                        Funding Information</A>
-<BR>
-<A HREF="<!--#include file='include/mgihome_url.html'-->other/copyright.shtml" target="_top">
-Warranty Disclaimer &amp; Copyright Notice</A>.
-<BR>
-Send questions and comments to
-<A HREF="<!--#include file='include/mgihome_url.html'-->support/tjl_inbox.shtml"
- target="_top">User Support</A>.
-</SMALL>
-
+<p>
+<!--#include file="include/bodyStop.html"-->
 </BODY>
 </HTML>
+
+
 <!--
 Warranty Disclaimer and Copyright Notice
 
@@ -61,6 +48,6 @@ Warranty Disclaimer and Copyright Notice
  is prohibited without the prior express written permission of the Jackson 
  Laboratory.
 
-Copyright © 1996, 1999, 2000 by The Jackson Laboratory
+Copyright © 1996, 1999, 2000, 2002, 2003 by The Jackson Laboratory
 All Rights Reserved
 -->

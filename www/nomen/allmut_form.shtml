@@ -35,7 +35,21 @@ Mutation Submission Form
 <FORM METHOD="POST" ACTION="allmut_submit.cgi">
 <HR>
 <H3>Naming this Mutation:</H3>
+<p>Suggested <B>symbol</B> for this mutation: <INPUT TYPE="text" NAME="allelesymbol" SIZE=20> </p>
 
+<<<<<<< allmut_form.shtml
+<p>Suggested <B>name</B> for this mutation: 
+<INPUT TYPE="text" NAME="genesymbol" SIZE=35> </p>
+
+<p>Is this mutation an allele of a <B>known gene</B>?
+<dl>
+ <dt>&nbsp;</dt>
+<DD>If so, enter the <B>gene symbol</B>: <INPUT TYPE="text" NAME="genesymbol" SIZE=15> (Check the gene symbol by 
+<A HREF="<!--#include file='include/wi_url.html'-->searches/marker_form.shtml
+">searching MGI</A>.)</dd>
+</dl>
+<p>Nicknames, synonyms for this mutant allele  <INPUT TYPE="text" NAME="synonyms" SIZE=55></p>
+=======
 Suggested <B>symbol</B> for this mutation: 
 <INPUT TYPE="text" NAME="allele" SIZE=20> 
 <BR><BR>
@@ -52,56 +66,68 @@ Is this mutation an allele of a <B>known gene</B>?  <BR>
 Nicknames, synonyms for this mutant allele  <INPUT TYPE="text" NAME="synonyms" SIZE=55>
 <BR><BR>
 <BR>
+>>>>>>> 1.22
 <UL>
-<LI>For hints on mutant allele nomenclature, see <A HREF="allmut_quickhelp.shtml">Quick Guide to Nomenclature for Alleles and Mutations</A>.
-<BR><BR>
+<LI>For hints on mutant allele nomenclature, see <A HREF="allmut_quickhelp.shtml">Quick Guide to Nomenclature for Alleles and Mutations</A>.</li>
+<br><br>
 
 <LI><B>If you need assistance with nomenclature:</B><BR>
  <INPUT TYPE="checkbox" NAME="nomenHelp" VALUE="true">&nbsp; Click here and 
 continue to the <B>"About this Mutation"</B> section below.<BR>
-<DD>We will contact you about nomenclature for this mutation.
-</DL>
-
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;We will contact you about nomenclature for this mutation.</li>
+</ul>
 <HR>
 <H3>About this Mutation:</H3> 
 <DL>
-<DT>Method of Allele Generation:
-<DD><INPUT TYPE="radio" NAME="method" VALUE="spontaneous" > spontaneous  
-<INPUT TYPE="radio" NAME="method" VALUE="ENU"> ENU  induced 
-<INPUT TYPE="radio" NAME="method" VALUE="EMS"> EMS  induced 
-<INPUT TYPE="radio" NAME="method" VALUE="irradiation"> irradiation  induced <BR>
-<INPUT TYPE="radio" NAME="method" VALUE="transgenic"> transgenic 
-<INPUT TYPE="radio" NAME="method" VALUE="targeting"> targeted  
-<INPUT TYPE="radio" NAME="method" VALUE="genetrap">gene  trapped  
+<DT>Method of Allele Generation:</dt>
+<DD><INPUT TYPE="radio" NAME="method" VALUE="spontaneous">spontaneous  
+<INPUT TYPE="radio" NAME="method" VALUE="ENU">ENU induced 
+<INPUT TYPE="radio" NAME="method" VALUE="EMS">EMS induced 
+<INPUT TYPE="radio" NAME="method" VALUE="irradiation">irradiation induced <BR>
+<INPUT TYPE="radio" NAME="method" VALUE="transgenic">transgenic 
+<INPUT TYPE="radio" NAME="method" VALUE="targeting">targeted  
+<INPUT TYPE="radio" NAME="method" VALUE="genetrap">gene trapped  
 <INPUT TYPE="radio" NAME="method" VALUE="conditional">conditional/targeted  
 <INPUT TYPE="radio" NAME="method" VALUE="other"> other
-<BR><BR>
+</dd>
 <DD>If you chose "other," please specify:  
-<INPUT TYPE="text" NAME="othermethod" SIZE=25>
-<DD> For transgenes, please specify transgene promoter:
-<INPUT TYPE="text" NAME="promoter" SIZE=25>
-<DD> For targeted mutations, please specify ES cell line used:
-<INPUT TYPE="text" NAME="celline" SIZE=25>
-</DL>
-<DL>
-<DT>Mode of Inheritance: 
+<INPUT TYPE="text" NAME="othermethod" SIZE=25></dd>
+<DD>For transgenes, please specify transgene promoter:<INPUT TYPE="text" NAME="promoter" SIZE=25></dd>
+<DD> For targeted mutations, please specify ES cell line used: <INPUT TYPE="text" NAME="celline" SIZE=25></dd>
+<br><br>
+<DT>Mode of Inheritance: </dt>
 <DD><INPUT TYPE="radio" NAME="mode" VALUE="dominant"> dominant  
 <INPUT TYPE="radio" NAME="mode" VALUE="codominant"> codominant
 <INPUT TYPE="radio" NAME="mode" VALUE="semidominant"> semidominant 
 <INPUT TYPE="radio" NAME="mode" VALUE="recessive"> recessive  
 <INPUT TYPE="radio" NAME="mode" VALUE="Xlink"> X-linked <BR>
 <INPUT TYPE="radio" NAME="mode" VALUE="other"> other, please specify:  
+<<<<<<< allmut_form.shtml
+<INPUT TYPE="text" NAME="other" SIZE=30></dd>
+<br><br>
+<dt>Chromosome assignment  (Enter UN if unknown):   
+=======
 <INPUT TYPE="text" NAME="othermode" SIZE=30><BR>
 </DL>
 
 
 Chromosome assignment  (Enter UN if unknown):    
+>>>>>>> 1.22
 <INPUT TYPE="text" NAME="chromosome" SIZE=10>
-<BR><BR>
+<br><br>
 Other Genome Location Information (cM, cR, or cytogenetic location; molecular location such as "exon 1 deletion," etc.):<BR>
 <TEXTAREA NAME="location" ROWS=4 COLS=65></TEXTAREA>
-<BR><BR>
+</dt>
+</dl>
 <HR>
+<<<<<<< allmut_form.shtml
+<H3>Genetic Background:</H3>
+<p>Strain/Genetic Background on which the mutation arose:&nbsp;<INPUT TYPE="text" NAME="strainMutation" SIZE=50></p>
+<p>Strain/Genetic Background on which the phenotype was analyzed: <INPUT TYPE="text" NAME="strainPhenotype" SIZE=50>
+</p>
+<p> Other Strain/Background Information (e.g. specify crosses)   
+(click here for an <A HREF="alleleform_strainex.shtml">example):</A><br>   
+=======
 <H3> Genetic Background:</H3>
 Strain/Genetic Background on which the mutation arose:
 <INPUT TYPE="text" NAME="strainMutation" SIZE=50>
@@ -111,9 +137,16 @@ Strain/Genetic Background on which the phenotype was analyzed:
 <br><br>
 Other Strain/Background Information (e.g. specify crosses):  
 Click here for an <A HREF="alleleform_strainex.shtml">example.</A><br>   
+>>>>>>> 1.22
 <TEXTAREA NAME="strainInfo" ROWS=4 COLS=65></TEXTAREA>
-<BR>
+</p>
 <DL>
+<<<<<<< allmut_form.shtml
+<DD><B>If you need assistance with the Genetic Background Section</B><BR> 
+<INPUT TYPE="checkbox" NAME="status" VALUE="NomenHelp">&nbsp; click here and 
+continue to the <B>Phenotype</B> section below.</dd>
+<DD>We will contact with you about the genetic background information for this mutation.</dd>
+=======
 <DD><LI><B>If you need assistance with the Genetic Background Section</B><BR> 
 <INPUT TYPE="checkbox" NAME="strainHelp" VALUE="yes">&nbsp; click
 here
@@ -121,50 +154,50 @@ and
 continue to the <B>"Phenotype"</B> section below.<BR>
 <DD>We will contact with you about the genetic background information for this mutation.
 </DL>
+>>>>>>> 1.22
 </DL>
 
-<BR>
 <HR>
 <H3>Phenotype:</H3>
-Phenotypic Description (enter text, describing details of phenotype observed, etc.):<BR>
-Click here for an <A HREF="alleleform_phenoex.shtml">example</A>. You may browse the <a href="http://www.informatics.jax.org/private/pheno/index.html">Phenotype Vocabulary</A> and use these terms to describe the phenotype.<br>   
-<TEXTAREA NAME ="description" ROWS=10 COLS=65></TEXTAREA>
-
-
+<p>Phenotypic Description (enter text, describing details of phenotype observed, etc.) (click here for an <A HREF="alleleform_phenoex.shtml">example</A>). <br> You can browse the <a href="http://www.informatics.jax.org/private/pheno/index.html">Phenotype Vocabulary</A> and use those terms to describe the phenotype.<br>   
+<TEXTAREA NAME ="description" ROWS=10 COLS=65></TEXTAREA></p>
 <BR>
-<BR>
-Other remarks (gene function/pathway, available clones, GenBank numbers, etc.):<BR>
+<p>Other remarks (gene function/pathway, available clones, GenBank numbers, etc.):<BR>
 <TEXTAREA NAME="remarks" ROWS=3 COLS=65></TEXTAREA>
-<BR><BR>
-
+</p>
 <HR>
 
 <H3>Status and References:</H3>
-Is this information published? <BR>
+<p>Is this information published?</p>
 <DL>
 <DT>
 <DD><INPUT TYPE="radio" NAME="published" VALUE="Yes">yes&nbsp;
 <DD><INPUT TYPE="radio" NAME="published" VALUE="No">no&nbsp; 
 </DL>  
-If no, would you prefer:<BR>
+<p>If no, would you prefer that:</p>
 <DL>
 <dt>
+<<<<<<< allmut_form.shtml
+<DD><INPUT TYPE="radio" NAME="Makepublic" VALUE="makepublic">data be made public at the Mouse Genome Informatics Web site now?<BR>
+<INPUT TYPE="radio" NAME="Makepublic" VALUE="private">data be kept private until publication?
+=======
 <DD><INPUT TYPE="radio" NAME="publicize" VALUE="makepublic">data be made
 public at the Mouse Genome Informatics Web site now <BR>
 <INPUT TYPE="radio" NAME="publicize" VALUE="private">data be kept private
 until publication
+>>>>>>> 1.22
 </DL>
-<BR>
-Please provide the references, or authors & descriptive title for unpublished data:<BR>
+<p>
+Please provide the references, or authors and descriptive title for unpublished data:
 <TEXTAREA NAME="citations" ROWS=5 COLS=60></TEXTAREA>
 
-<BR><BR>
+</p><p>
 If these data are available from a Web site, please give URL: <BR>
 <INPUT TYPE="text" NAME="alleleURL" SIZE=60><BR>
-<BR>
+</p>
 <HR>
 <H3>Contact Details:</H3>
- If your contact details are already in MGI you only need to enter your name and e-mail address.  <BR>
+<p>If your contact details are already in MGI, you need only enter your name and e-mail address.  <BR>
 <PRE>
 Last name:                      <INPUT TYPE="text" NAME="lastname" SIZE=30>(required)
 First name (& middle initial):  <INPUT TYPE="text" NAME="firstname" SIZE=30>(required)
@@ -181,16 +214,15 @@ Telephone Number:               <INPUT TYPE="text" NAME="phone" SIZE=30>
 Fax Number:                     <INPUT TYPE="text" NAME="fax" SIZE=30>
 </PRE>
 <BR>
-<H3>Once you submit this completed form, the MGI accession number for this 
-mutant allele will be emailed to you shortly!  Thank you.</H3>
+<H3>Once you submit this completed form, we will e-mail you the MGI accession number for this mutant allele.  Thank you.</H3>
 <HR>
 <INPUT TYPE=submit VALUE="Submit"> <INPUT TYPE=reset VALUE="Reset Form">
-<HR>
 </FORM>
- <P><HR>
+ <P>
 <!--#include file="include/footer.html"-->
-</P></BODY>
+</BODY>
 </HTML>
+
 <!--
 Warranty Disclaimer and Copyright Notice
  THE JACKSON LABORATORY MAKES NO REPRESENTATION ABOUT THE SUITABILITY OR
