@@ -23,7 +23,7 @@
 <A HREF="http://tumor.informatics.jax.org/FMPro?-db=TumorInstance&-format=mtdp.html&-view
 ">Mouse Tumor Biology Database</A><BR>
 <A HREF="http://www.informatics.jax.org/rat/index.shtml">Rat Genome Data</A><br>
-<A HREF="http://www.informatics.jax.org/???genes_tutorial.html">MGI Tutorials</A><br>
+<!--<A HREF="http://www.informatics.jax.org/???genes_tutorial.html">MGI Tutorials</A><br>-->
 <A HREF="nomen/genefamilies/index.shtml">Gene Family Reports</a>
 
 <p>
@@ -57,7 +57,7 @@ MGI Glossary </A><br>
         <TABLE BGCOLOR="#D5F8FE" border=1 CELLSPACING="0" CELLPADDING="2">
         <TR>
         <TD>
-        <small><B><A HREF="MGS/genometally.shtml">% of Mouse Genome Sequenced </A></B>
+        <small><B><A HREF="MGS/genometally.shtml">% of Mouse Genome Sequenced </A></B>  </small>
         <BR> <center>
 	<TABLE border=1 CELLSPACING="0">
 		<TR><TD bgcolor=#FFFFFF>
@@ -68,9 +68,11 @@ MGI Glossary </A><br>
 			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 			<B>9% draft</B>
 			&nbsp;&nbsp;&nbsp;</TD></TR>
-	</TABLE>
-</center>
-</TD></TR></TABLE></FORM>
+	</TABLE></center></td>
+	<tr>
+	<TD><small>
+        <B><A HREF="http://www.nhgri.nih.gov/NEWS/mouse_gene_data.html">Press Release on Mouse Sequencing</A></B><small></TD>
+	</TR></TABLE></FORM>
 </TD></tr></table>
 </TD>
 <br>
