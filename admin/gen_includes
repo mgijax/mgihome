@@ -22,6 +22,7 @@ def main ():
 	listToFile (homelib.banner(), '../www/include/banner.html')
 	listToFile (homelib.footer(), '../www/include/footer.html')
 	stringToFile (config.lookup ('WI_URL'), '../www/include/wi_url.html')
+	stringToFile ('"%s";' % config.lookup ('WI_URL'), '../www/include/wi_url2.html')
 	stringToFile (config.lookup ('GO_URL'), '../www/include/go_url.html')
 	stringToFile (config.lookup ('FTP_URL'), '../www/include/ftp_url.html')
 	stringToFile (config.lookup ('MGIHOME_URL'), \
