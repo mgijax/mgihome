@@ -2,30 +2,23 @@
 <head>
 <title>Quick Guide to Nomenclature</title>   
 </head>
-
-
 <BODY BGCOLOR="#ffffff">
-<!--#include file="include/bodyStart.html"-->
+<TABLE WIDTH="100%" BORDER=0 CELLPADDING=0 CELLSPACING=0>
+  <TR><TD WIDTH="100%">
+    <TABLE WIDTH="100%" BORDER=0 CELLPADDING=0 CELLSPACING=0>
+     <TR><TD WIDTH="20%" VALIGN="center" ALIGN="left"><A HREF="<!--#include file='include/wi_url.html'-->"><IMG SRC="../images/mgi_logo_small.jpg" border=0 ALT="MGI"></A></TD>
 
-
-<TABLE WIDTH="100%" BORDER=0 CELLPADDING=2 CELLSPACING=1>
- <TR>
-  <TD WIDTH="100%" BGCOLOR="#D0E0F0">
-   <TABLE WIDTH="100%" BORDER=0 CELLPADDING=0 CELLSPACING=0>
-    <TR>
-     <TD WIDTH="20%" VALIGN="center" ALIGN="left">&nbsp;</TD>
-     <TD WIDTH="60%" ALIGN="center" VALIGN="center">
-      <FONT COLOR="#000000" SIZE=5 FACE="Arial,Helvetica">
-       Quick Guide to Nomenclature
-      </FONT>
-     </TD>
-     <TD WIDTH="20%" VALIGN="center" ALIGN="center">&nbsp;</TD>
-    </TR>
-   </TABLE>
-  </TD>
- </TR>
+     <TD WIDTH="60%" ALIGN="center" VALIGN="center" BGCOLOR="#ffffff">
+       <FONT COLOR="#000000" SIZE=5 FACE="Arial,Helvetica">
+Quick Guide to Nomenclature
+       </FONT></TD><TD WIDTH="20%" VALIGN="center" ALIGN="center" BGCOLOR="#ffffff">&nbsp;</TD></TR>
+<TR BGCOLOR="blue"><TD COLSPAN=3><FONT face="Arial,Helvetica" color="#ffffff">
+    <B>&nbsp;Mouse Genome Informatics</B></TD></TR>
+<TR><TD BGCOLOR="#ffffff"><FONT SIZE=-1 FACE="Arial,Helvetica"><CENTER><A HREF="<!--#include file='include/wi_url.html'-->">MGI Home</A>&nbsp;&nbsp;&nbsp;
+<a href="../help/help.shtml">Help
+</A></FONT></CENTER></TD></TR>
+</TABLE></TD></TR>
 </TABLE>
-
 <p>When symbolizing and naming novel genes and genomic features, it is important that these symbols and
 names be unique identifiers. The MGD Nomenclature Committee provides advice and assistance in assigning new
 symbols and names. Please contact us at <A HREF="mailto:nomen@informatics.jax.org">nomen@informatics.jax.org</A>.
@@ -103,7 +96,8 @@ specific mouse chromosome (<i><i>e.g.,</i></i> Chromosome 15).
 <P>
 <HR>
 
-<!--#include file="include/bodyStop.html"--></body>
+<!--#include file="include/footer.html"-->
+</body>
 </html>
 <!--<IMG SRC="images/new.gif" ALT="new">
 Warranty Disclaimer and Copyright Notice
