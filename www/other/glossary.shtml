@@ -9,11 +9,30 @@
  <META NAME="bioinformatics, genetics, mouse genome sequencing, glossary, glossaries, gene terminology" CONTENT="">
 </HEAD>
 <!--<P><SMALL>Last updated on ... May xx, 2002</SMALL></P>-->
-
 <BODY BGCOLOR="#ffffff">
 <P>
-<!--#include file="include/banner.html"-->
-<h2>MGI Glossary</h2><P>This glossary provides definitions for some terms found in our help documentation and other terms that are useful in understanding mouse genetics and bioinformatics. 
+<TABLE WIDTH="100%" BORDER=0 CELLPADDING=2 CELLSPACING=1>
+ <TR>
+  <TD WIDTH="100%" BGCOLOR="#D0E0F0">
+   <TABLE WIDTH="100%" BORDER=0 CELLPADDING=0 CELLSPACING=0>
+    <TR>
+     <TD WIDTH="20%" VALIGN="center" ALIGN="left">
+      <IMG SRC="<!--#include file='include/wi_url.html'-->images/shared/mgi_logo.jpg" WIDTH=160 HEIGHT=80>
+     </TD>
+     <TD WIDTH="60%" ALIGN="center" VALIGN="center">
+      <FONT COLOR="#000000" SIZE=5 FACE="Arial,Helvetica">
+       MGI Glossary
+        </FONT>
+     </TD>
+     <TD WIDTH="20%" VALIGN="center" ALIGN="center">
+      &nbsp;
+     </TD>
+    </TR>
+   </TABLE>  </TD>
+ </TR>
+</TABLE>
+<hr>
+This glossary provides definitions for some terms found in our help documentation and other terms that are useful in understanding mouse genetics and bioinformatics. 
 Terms are defined in a general sense as they apply to eukaryotic genetics, particularly mouse genetics; some terms are also defined as they are specifically used in MGI (e.g., 
 <A HREF="#gene">gene</A>). This list will grow as time goes on. If there is a term you think should be included in this list, please contact 
 <A HREF="
@@ -1427,7 +1446,7 @@ This document is written in HTML.<BR>You can view the HTML source code for this 
 <A HREF="#gene_expression">expressed</A> primarily from the maternally-inherited or paternally-inherited 
 <A HREF="#allele">alleles</A> as a consequence of imprinting.
 
-<P><DT><B><A NAME="inbred_strain">Inbred Strain</A></B><DD>A strain that is essentially 
+<P><DT><B><A NAME="#inbred_strain">Inbred Strain</A></B><DD>A strain that is essentially 
 <A HREF="#homozygous">homozygous</A> at all loci. In mice, a strain produced from brother-sister matings for at least 20 sequential generations. C57BL/6J is a widely-used 
 <A HREF="#inbred_strain">inbred strain</A> of mouse. <BR>See also the 
 <A HREF="../nomen/strains.shtml#inbred_strains">Rules for Nomenclature of Mouse and Rat Strains</A>.
