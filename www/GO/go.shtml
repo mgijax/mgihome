@@ -1,6 +1,8 @@
 <HTML>
 <HEAD>
 <TITLE><!--#include file='include/mgiversion.html'--> Gene Ontology Classifications</TITLE>
+<LINK REL="stylesheet" TYPE="text/css" HREF="../stylesheet/mgihome.css">
+
 </HEAD>
 
 <BODY BGCOLOR="#FAFAD2">
@@ -9,30 +11,26 @@
 
 
 <H2 align=center>Browse GO Terms</H2></A>
-<SMALL>
-GO terms are grouped into three broad categories:
-<DL>
-<H4>Molecular Function</H4>
-   <DD>
-   "Molecular function" describes the tasks performed by individual gene products; examples are <B>transcription factor</B> and <B>DNA helicase</B>.
-</DD></DL>
-<DL>
-<H4>Biological Process</H4>
-   <DD>
-   "Biological process" describes broad biological goals, such as <B>mitosis</B> or <B>purine metabolism</B>, that are accomplished by ordered assemblies of molecular functions.
-</DD></DL>
-<DL>
-<H4>Cellular Component</H4>
-   <DD>
-   "Cellular component" encompasses subcellular structures, locations, and macromolecular complexes; examples include <B>nucleus, telomere</B>, and <B>origin recognition complex</B>.
-</DD></DL>
-<P>
-<BR>
-<BR>
-For more details, see <A HREF = "http://www.geneontology.org/doc/GO.doc.html" TARGET="_top">General Documentation</A> at the Gene Ontology Consortium site. <Br><br>
+<p>GO terms are grouped into three broad categories:
 
-<a href="<!--#include file='include/ftp_url.html'-->pub/reports/gene_association.mgi">Tab-delimited file of MGI Marker-GO Associations</a><br>
-<br>
+<H4>Molecular Function</H4>
+   
+<P STYLE="margin-left: 30px;"><I>Molecular function</I> describes the tasks performed by individual gene products; examples are <B>transcription factor</B> and <B>DNA helicase</B>.</P>
+
+
+<H4>Biological Process</H4>
+
+  <P STYLE="margin-left: 30px;"><I>Biological process</I> describes broad biological goals, such as <B>mitosis</B> or <B>purine metabolism</B>, that are accomplished by ordered assemblies of molecular functions.</P>
+
+
+<H4>Cellular Component</H4>
+
+ <P STYLE="margin-left: 30px;"><I>Cellular component</I> encompasses subcellular structures, locations, and macromolecular complexes; examples include <B>nucleus, telomere</B>, and <B>origin recognition complex</B>.</P>
+
+<P>For more details, see <A HREF="http://www.geneontology.org/doc/GO.doc.html" TARGET="_top">General Documentation</A> at the Gene Ontology Consortium site. <BR><BR>
+</P>
+<P><A HREF="<!--#include file='include/ftp_url.html'-->pub/reports/gene_association.mgi">Tab-delimited file of MGI Marker-GO Associations</A><BR>
+</P><br>
 
 <!--
 Warranty Disclaimer and Copyright Notice
