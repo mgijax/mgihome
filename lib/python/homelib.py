@@ -71,3 +71,18 @@ def makepath (
 	for item in items:
 		s = os.path.join (s, item)
 	return s
+
+def valOrNone (
+	key,		# variable type; key to look for in 'dict'
+	dict		# dictionary; where to look up a value for 'key'
+	):
+	# Purpose: return the value in 'dict' which corresponds to 'key', or
+	#	None if 'key' is not in 'dict'
+	# Returns: see Purpose
+	# Assumes: nothing
+	# Effects: nothing
+	# Throws: nothing
+
+	if dict.has_key(key):
+		return dict[key]
+	return None
