@@ -69,7 +69,7 @@ Genome and Nomenclature Committee.</p>
    </ul>
 <a href="#nas">2&nbsp;&nbsp;Names and Symbols of Genes and Loci</a></br>
    <ul>
-    <a href="#labc">2.1&nbsp;&nbsp;Lab Codes</a></br>
+    <a href="#labc">2.1&nbsp;&nbsp;Laboratory Codes</a></br>
     <a href="#ing">2.2&nbsp;&nbsp;Identification of New Genes</a></br>
     <a href="#gnas">2.3&nbsp;&nbsp;Gene Names and Symbols</a></br>
       <ul>
@@ -231,7 +231,7 @@ gene name and symbol should always be used as the primary identifier.</p>
 
 <p>The Mouse Genome Database (MGD) serves as a central repository of gene names and
 symbols to avoid use of the same name for different genes or use of multiple
-names for the same gene (<a href="http://www.informatics.jax.org"</a>http://www.informatics.jax.org). The MGD Nomenclature Committee (nomen@informatics.jax.org)provides advice and assistance in assigning new names and symbols. A web tool for <a href="nomen_submit_form.shtml">proposing a new
+names for the same gene (<a href="http://www.informatics.jax.org">http://www.informatics.jax.org)</a>. The MGD Nomenclature Committee (nomen@informatics.jax.org)provides advice and assistance in assigning new names and symbols. A web tool for <a href="nomen_submit_form.shtml">proposing a new
 locus symbol</a> is located at the MGD site.</p>
 
 
@@ -253,7 +253,7 @@ the Institute for Laboratory Animal Research (ILAR) at <a href="http://dels.nas.
 
 <blockquote>
 <B>Examples:</B>
-<table cellpadding=4 cellspacing=4>
+<table cellpadding=4>
 <tr><td>J</td><td valign="top">The Jackson Laboratory</td></tr>
 <tr><td>Mit</td><td valign="top">Massachusetts
 Institute of Technology</td></tr>
@@ -336,12 +336,12 @@ name]</td></tr>
 <LI>not contain potentially misleading information that may be experiment or assay specific, such as “kidney-specific” or “59 kDa”.</LI>
 </UL>
 
-<h4><a name="genesym"></a>2.3.2. Gene Symbols</h4>
+<h4><a name="genesym"></a>2.3.2 Gene Symbols</h4>
 
 <p>Genes are given short symbols as convenient abbreviations for speaking and writing about the genes.</p>
 
 
-<p>A gene symbol</b> should:</p>
+<p>A <b>gene symbol</b> should:</p>
 
 <UL>
   <LI>be unique within the species and should not match a symbol in another species that
@@ -447,11 +447,11 @@ addition of a comma “variant” and serial number to the name.
 <blockquote>
 <B>Example:</B>
 <table cellpadding=4>
-<tr><td rowspan=5 valign=top><b>Gene <br>Splice variants</b></td><td><i>Slc14a2</i></td><td>solute carrier family 14, member 2</td></tr>
-<tr><td><i>Slc14a2_v1</i></td><td>solute carrier family 14, member 2, variant 1</td></tr>
-<tr><td><i>Slc14a2_v2</i></td><td>solute carrier family 14, member 2, variant 2</td></tr>
-<tr><td><i>Slc14a2_v3</i></td><td>solute carrier family 14, member 2, variant 3</td></tr>
-<tr><td><i>Slc14a2_v4</i></td><td>solute carrier family 14, member 2, variant 4</td></tr>
+<tr><td rowspan=5 valign=top><b>Gene <br>Splice<br> variants</b></td><td valign=top><i>Slc14a2</i></td><td valign=top>solute carrier family 14, member 2</td></tr>
+<tr><td><i>Slc14a2_v1</i></td><td valign=top>solute carrier family 14, member 2, variant 1</td></tr>
+<tr><td><i>Slc14a2_v2</i></td><td valign=top>solute carrier family 14, member 2, variant 2</td></tr>
+<tr><td><i>Slc14a2_v3</i></td><td valign=top>solute carrier family 14, member 2, variant 3</td></tr>
+<tr><td><i>Slc14a2_v4</i></td><td valign=top>solute carrier family 14, member 2, variant 4</td></tr>
 </table>
 </blockquote>
 
@@ -461,10 +461,10 @@ addition of a comma “variant” and serial number to the name.
 <blockquote>
 <B>Example:</B>
 <table cellpadding=4>
-<tr><td rowspan=3 valign=top><b>Gene<br>Promoter variants</b></td><td><i>Slc14a2</i>/i></td><td>
+<tr><td rowspan=3 valign=top><b>Gene<br>Promoter <br>variants</b></td><td valign=top><i>Slc14a2</i></td><td>
 solute carrier family 14, member 2</td></tr>
-<tr><td><i>Slc14a2_pr1</i></td><td>solute carrier family 14, member 2, promoter 1</td></tr>
-<tr><td><i>Slc14a2_pr2</i></td><td>solute carrier family 14, member 2, promoter 2</td></tr>
+<tr><td><i>Slc14a2_pr1</i></td><td valign=top>solute carrier family 14, member 2, promoter 1</td></tr>
+<tr><td><i>Slc14a2_pr2</i></td><td valign=top>solute carrier family 14, member 2, promoter 2</td></tr>
 </table>
 </blockquote>
 
@@ -497,7 +497,7 @@ laboratory of origin (from the Laboratory code).</p>
 
 
 <blockquote>
-<B>Example:</B>
+<B>Examples:</B>
 <table cellpadding=4>
 <tr><td><i>l5H1</i></td><td>First lethal on Chromosome 5 at Harwell</td></tr>
 <tr><td valign=top><i>l4Rn2</i></td><td>Second lethal on Chromosome 4 from laboratory of Gene Rinchik</td></tr>
@@ -597,7 +597,7 @@ between DNA segment and the human segment code (see symbols). The same applies f
 detected by cross-hybridization to mouse segments (or vice versa).</p>
 
 <blockquote>
-<B>Example:</B>
+<B>Examples:</B>
 <table cellpadding=4>
 <tr><td><i>D16H21S56</i></td><td>Mouse
 DNA segment on Chr 16 that cross-hybridizes with a DNA segment <i>D21S56</i> from human Chr 21.</td></tr>
@@ -701,7 +701,7 @@ reserved and private, pending publication.</p>
 <p>Specific circumstances for naming independent QTL include:</p>
 
 <UL>
-  <LI><I>Independent experiments study the same trait and map that trait to the same chromosomal region.</I>
+  <LI><I>Independent experiments study the same trait and map that trait to the same chromosomal region</I>
   <blockquote>
 <P>Because QTL are detected in the context of specific strain combinations in specific crosses and generally in different laboratories using different assays, each experimentally detecting QTL will be given a unique symbol/name even when the trait measured and region defined is
 superficially the same as that of an existing QTL.
@@ -711,7 +711,7 @@ obesity QTL was also mapped to Chromosome 7, but because it involved distinct
 strains (NZO and SM), it was given a different QTL designation, <i>Obq15</i>.</p>
 </P></LI>
 </blockquote>
-  <LI><I>A chromosomal region containing many measured “traits.”</I>
+  <LI><I>A chromosomal region containing many measured &quot;traits&quot;</I>
 <blockquote>
 <P>If multiple traits are measured in a single experiment and mapped to a single chromosomal region,
 there may or may not be evidence that different QTL are involved. If the traits are physiologically
@@ -923,8 +923,9 @@ is used, with the new mutation symbol as superscript.</p>
 
 
 <p>For example<br>
-grey coat is an allele of recessive spotting (<i>rs</i>)
-in the mouse, and hence is symbolized <i>rs<sup>grc</sup></i>.</p>
+<ul>
+<LI>grey coat is an allele of recessive spotting (<i>rs</i>)
+in the mouse, and hence is symbolized <i>rs<sup>grc</sup></i>.</UL>
 
 <H4><A NAME="pdmsg"></A>3.1.2 &nbsp;&nbsp;Phenotypes Due to Mutations in Structural Genes</H4>
 
@@ -969,27 +970,22 @@ revertant to wild type of a mutant phenotype locus should be indicated by the
 symbol + with the mutant symbol as superscript.</p>
 
 
-<ul> <li class=MsoNormal style='color:black;mso-list:l14 level1 lfo10;tab-stops:
-     list 36.0pt'>Revertant to wild
+<ul> <li>Revertant to wild
      type at the hairless mutant locus <i>+<sup>hr</sup></i></li>
 </ul>
 
 
 <p>Additional
-revertants are given a Lab
-Code and preceded by a serial number if more than one revertant is found in a
-lab. Serial numbers are independent for mouse and rat revertants and no
+revertants are given a Laboratory Code and preceded by a serial number if more than one revertant is found in a lab. Serial numbers are independent for mouse and rat revertants and no
 homology is implied. If the revertant is in a gene that has been cloned, then
 the mutant symbol is retained as superscript to the gene symbol, and + is
 appended.</p>
 
 
-<ul> <li class=MsoNormal style='color:black;mso-list:l14 level1 lfo10;tab-stops:
-     list 36.0pt'>Revertant to wild
+<ul> <li>Revertant to wild
      type of the dilute mutation of myosin Va; <i style='mso-bidi-font-style:
      normal'>Myo5a<sup>d+</sup></i></li>
- <li class=MsoNormal style='color:black;mso-list:l14 level1 lfo10;tab-stops:
-     list 36.0pt'>Second such
+ <li>Second such
      revertant identified at The Jackson Laboratory; <i style='mso-bidi-font-style:
      normal'>Myo5a<sup>d+2J</sup></i>.</li>
 </ul>
@@ -1035,7 +1031,7 @@ a protein coding sequence. </p>
 dbSNP_id, followed by a hyphen and the specific nucleotide.</p>
 
 <blockquote>
-<B>Example:</B>
+<B>Examples:</B>
 <table cellpadding=4>
 <tr><TD VALIGN="top"><i>Park2<sup>rs6200232-G</sup></i></td><td>The <i>Park2 </i>rs6200232 SNP allele with the G variant</td></tr>
 <tr><TD VALIGN="top"><i>Park2<sup>rs6200232-A</sup></i></td><TD>The <i>Park2</i> rs6200232 SNP allele with the A variant</td></tr>
@@ -1046,7 +1042,7 @@ dbSNP_id, followed by a hyphen and the specific nucleotide.</p>
 as those used when mutant locus symbols become alleles of known genes. </p>
 
 <blockquote>
-<B>Example:</B>
+<B>Examples:</B>
 <table cellpadding=4>
 <tr><TD VALIGN="top"><i>rs6200616<sup>T</sup></i></td><td>A SNP locus with the T variant</td></tr>
 <tr><TD VALIGN="top"><i>rs6200616<sup>C</sup></i></td><td>A SNP locus with the C variant</td></tr>
@@ -1127,8 +1123,7 @@ examples, and <A HREF="#transg">Section 4</A> for naming transgenes).</p>
 <p>Mutations that are the result of gene targeting by homologous recombination in ES cells
 are given the symbol of the targeted gene, with a superscript consisting of
 three parts: the symbol <i>tm</i> to denote
-a targeted mutation, a serial number from the laboratory of origin and the Lab
-Code where the mutation was produced (see <A HREF="#labc">Section 2.1</A>).</p>
+a targeted mutation, a serial number from the laboratory of origin and the Laboratory code where the mutation was produced (see <A HREF="#labc">Section 2.1</A>).</p>
 
 <ul> 
 <li>For example, <i>Cftr<sup>tm1Unc</sup></i> is the first targeted mutation of the cystic fibrosis transmembrane regulator (<i>Cftr</i>) gene produced at the University of North Carolina.</li>
@@ -1174,8 +1169,7 @@ elsewhere in the gene.</p>
 the symbol will appear identical to a targeted mutation of the same gene
 (which, in fact, is appropriate as they will be indistinguishable at the
 molecular level). If the trapped gene is novel, it should be given a name and a
-symbol, which could include the letters <i>Gt</i> for &quot;gene trap&quot;, the vector in parentheses, a serial number, and Lab
-Code.</p>
+symbol, which could include the letters <i>Gt</i> for &quot;gene trap&quot;, the vector in parentheses, a serial number, and Laboratory code.</p>
 
 <ul>
 <li>For example, a gene trap using vector ROSA, the 26th made in P. Soriano's laboratory, is 
@@ -1222,7 +1216,7 @@ reported by Nathaniel Heintz.</td></tr>
 <tr><td><i>Tg(CD8)1Jwg</i> is a transgene containing the human <i>CD8</i> gene, the first
 transgenic line using this construct described by the lab of Jon W. Gordon.
 </td></tr>
-<tr><td><i>Tg(HLA-B*2705, B2M)33-3Trg</i>is a double transgene in rat containing the human <i>HLA-B*2705</i>and <i>B2M</i> genes, that were co-injected, giving rise to line 33-3 by Joel D. Taurog.
+<tr><td><i>Tg(HLA-B*2705, B2M)33-3Trg</i> is a double transgene in rat containing the human <i>HLA-B*2705</i> and <i>B2M</i> genes, that were co-injected, giving rise to line 33-3 by Joel D. Taurog.
 </td></tr>
 </table>
 </blockquote>
@@ -1254,7 +1248,7 @@ of promoter designations is helpful in such cases.</p>
 construct, a forward slash separates the two genes in parentheses.</p>
 
 <blockquote>
-<B>Example:</B>
+<B>Example:</B><br>
 <i>Tg(TCF3/HLF)1Mlc</i> is a transgene in which the human
 transcription factor 3 gene and the hepatic leukemia factor gene were inserted
 as a fusion chimeric cDNA, the first transgenic mouse line produced by Michael
@@ -1267,10 +1261,8 @@ or rat strain, the strain name should precede the transgene designation.</p>
 <blockquote>
 <B>Examples:</B>
 <table cellpadding=4>
-<tr><td>C57BL/6J-<i>Tg(CD8)1Jwg</i>mouse strain C57BL/6J carrying the <i>Tg(CD8)1Jwg</i>
-transgene</td></tr>
-<tr><td>F344/CrlBR-<i>Tg(HLA-B*2705, B2M)33-3Trg</i>rat strain F344/CrlBR carrying the <i>Tg(HLA-B*2705,
-B2M)33-3Trg</i> double transgene
+<tr><td>C57BL/6J-<i>Tg(CD8)1Jwg</i></td><td valign=top>mouse strain C57BL/6J carrying the <i>Tg(CD8)1Jwg</i> transgene</td></tr>
+<tr><td><nobr>F344/CrlBR-<i>Tg(HLA-B*2705, B2M)33-3Trg</i></nobr></td><td valign=top>rat strain F344/CrlBR carrying the <i>Tg(HLA-B*2705,B2M)33-3Trg</i> double transgene
 </td></tr>
 </table>
 </blockquote>
