@@ -3,11 +3,15 @@
 <TITLE>Allele and New Mutant Submission Form</TITLE>
 </HEAD>
 <BODY BGCOLOR=#FFFFFF>
-<!--#include file="include/banner.html"-->
+<CENTER>
+<IMG SRC="http://www.informatics.jax.org/mgihome/images/mgi_small_banner.gif"
+WIDTH=501   HEIGHT=40   ALT="Mouse Genome Informatics">
+</CENTER>
 
-<H2>New Allele and Mutant Submissions Form</H2>
+
+<H2>Mutant Submissions Form</H2>
 <ul>
-<li>Use this submission form to describe mutant alleles: either mutations whose allelism to known mutations is unknown, or alleles of known genes. 
+<li>Use this submission form to describe mutant alleles: either mutations whose allelism is unknown, or alleles of known genes. 
 <li>Submit only those mutations shown to be heritable.  
 <li>Please fill in appropriate information. 
 <li>Click <b>Submit</b> at the bottom of the form to send this information to the MGD Curator for Mutant Alleles.
@@ -17,54 +21,85 @@
 <P>
 <FORM METHOD="POST" ACTION="allmut_submit.cgi">
 <HR>
-<H3>About the Allele or Mutant:</H3> 
-<B>Please refer to the <A HREF="allmut_quickhelp.shtml">
-Allele and Mutant Quick Nomenclature Guide</A>  before completing this section.</B>
+<H3>About this Mutant:</H3> 
+Please refer to the <A HREF="allmut_quickhelp.shtml">
+Allele and Mutant Quick Nomenclature Guide</A>  for additional hints for completing this section.
 <BR><BR>
-<DT>For an allele of a <B>known gene</B>, enter the official <B>gene symbol</B> 
+<DT>If the mutation is an allele of a <B>known gene</B>, enter the <B>gene symbol</B> 
 <INPUT TYPE="text" NAME="genesymbol" SIZE=15> 
-(check the gene symbol in <A
-HREF="<!--#include file='include/wi_url.html'-->">MGD</A>)<BR>
-For an <B>allele of this gene</B>, enter:<BR>
-<DD>Allele Designation :    <INPUT TYPE="text" NAME="allele" SIZE=15> (superscripted portion of allele symbol)<BR>
+(check the gene symbol in <A href="<!--#include file='include/wi_url.html'-->">MGD</A>)<BR><BR>
+<B>For this mutant, enter its:</B>
+<DD> Allele Designation :    <INPUT TYPE="text" NAME="allele" SIZE=15> (superscripted portion of allele symbol)<BR>
 <DD>Allele Name :     <INPUT TYPE="text" NAME="allelename" SIZE=50><BR>
-<DD><EM> Example: </EM>The leptin gene symbol is 'Lep'. The name of one of its alleles is 'obese'. 
-The full allele symbol is 'Lep<SUP>ob</SUP>'.
-<dd> For this example, 'ob' would be entered 
- in the Allele Designation field and 'obese' in the Allele Name field.
-<DD><EM> Note:</EM> If this is a new allele, the allele designation and name you enter are considered 
-provisional.
-<BR><BR>
-<B>- OR -</B><BR><BR>
-<DT>For a mutation identified through its phenotype, <B>whose allelism to previously described genes is unknown,</B> enter:<BR>
-<DD>Proposed Gene Symbol:    <INPUT TYPE="text" NAME="newgenesymbol" SIZE=15><BR>
-<DD>Proposed Gene Name:     <INPUT TYPE="text" NAME="newgenename" SIZE=50><BR>
-<dd><EM>Note:</EM> In general, gene symbols for mutants become alleles once the gene product 
-	is better understood.  
-<dd><EM>Example: </EM>The first description of the albinism mutation used the gene symbol 'c'.
-Later, 'c' became an allele 
-<dd>of 'Tyr' (tyrosinase), Tyr<SUP>c</SUP>, once its function 
-	was known.<BR><BR>
-<DT>Other names/synonyms:
-<INPUT TYPE="text" NAME="synonyms" SIZE=55><BR>
-</DL>
-<HR>
-Strain Background (where mutation arose):    <INPUT TYPE="text" NAME="strainMutation" SIZE=50>
+</DT>
+<BR>
+
+
+<DD><table cell>
+<tr>
+<TD VALIGN="center">
+       <form>
+        <TABLE BGCOLOR="#D5F8FE" border=1 CELLSPACING="0" CELLPADDING="0" width=90%>
+        <TR>
+        <TD>
+<Table border=1 cellpadding=0 cellspacing=1 width=70%>
+<TR>
+        <small><B><DD><EM> Example:</EM></small>
+</TR>
+<TD></TD><TD><SMALL><B>Mutant allele of a known gene</B></SMALL></TD>
+<TD><SMALL>Mutant allele, 
+gene mutated unknown</B></SMALL></TD>
+</TR>
+
+<TD><SMALL>Gene symbol</TD>
+<TD><SMALL> Lep</TD>
+<DD><TD><SMALL> --- </TD></TR>
+<TR>
+<TD><SMALL>Allele designation</TD>
+<TD><SMALL> ob</TD>
+<TD><SMALL>slpy</TD>
+</TR>
+<TD><SMALL>Allele name</TD>
+<TD> <SMALL>obese</TD>
+<TD><SMALL>sleepy</TD>
+</TR>
+
+</Table>
+</SMALL>
+<SMALL>In the case of a mutation in the known gene <I>Lep</I>, the full allele symbol is <I>Lep<SUP>ob</SUP></I>.<BR>
+In the case where the gene is unknown, the allele and gene symbol are synonymous <BR>(pending
+identification of the gene),  in this example, <I>slpy</I>.<BR>
+</SMALL>
 <br>
-Strain Background (where phenotype analyzed):    <INPUT TYPE="text" NAME="strainPhenotype" SIZE=50>
+</TR></TABLE>
+</TD></tr></table></TR>
+</table cell></DT>
+
+
+
+
+Other names/synonyms:  <INPUT TYPE="text" NAME="synonyms" SIZE=55><BR>
+
+<HR>
+Strain/Genetic Background (where mutation arose):    <INPUT TYPE="text" NAME="strainMutation" SIZE=50>
+<br>
+Strain/Genetic Background (where phenotype analyzed):    <INPUT TYPE="text" NAME="strainPhenotype" SIZE=50>
 <br><br>
-Other Strain Information: <br>   
+Other Strain/Background Information (speed congenic generation, details of complex genetic backgrounds or crosses, etc): <br>   
 <TEXTAREA NAME="strainInfo" ROWS=4 COLS=65></TEXTAREA>
 <!--<INPUT TYPE="text" NAME="strainInfo" SIZE=50-->
 <DL>
 <DT>Method of Allele Generation:
 <DD><INPUT TYPE="radio" NAME="method" VALUE="spontaneous" > spontaneous  
 <INPUT TYPE="radio" NAME="method" VALUE="ENU"> ENU  induced 
+<INPUT TYPE="radio" NAME="method" VALUE="EMS"> EMS  induced 
+<INPUT TYPE="radio" NAME="method" VALUE="irradiation"> irradiation  induced <BR>
 <INPUT TYPE="radio" NAME="method" VALUE="transgenic"> transgenic 
 <INPUT TYPE="radio" NAME="method" VALUE="targeting"> targeted  
 <INPUT TYPE="radio" NAME="method" VALUE="genetrap">gene  trapped  
+<INPUT TYPE="radio" NAME="method" VALUE="conditional">conditional/targeted  
 <INPUT TYPE="radio" NAME="method" VALUE="other"> other
-<BR>
+<BR><BR>
 <DD>If Allele generation method is "other", please specify  
 <INPUT TYPE="text" NAME="othermethod" SIZE=25>
 <DD> For transgenes, please specify transgene promoter 
@@ -78,11 +113,12 @@ Other Strain Information: <br>
 <INPUT TYPE="radio" NAME="mode" VALUE="codominant"> codominant
 <INPUT TYPE="radio" NAME="mode" VALUE="semidominant"> semidominant 
 <INPUT TYPE="radio" NAME="mode" VALUE="recessive"> recessive  
+<INPUT TYPE="radio" NAME="mode" VALUE="other"> unknown/other  <BR>
 </DL>
 Chromosome Location (Enter UN if unknown):    
 <INPUT TYPE="text" NAME="chromosome" SIZE=10>
 <BR><BR>
-Other Genome Location Information:<BR>
+Other Genome Location Information (cM, cR, or cytogenetic location; molecular location such as 'exon 1 deletion', etc.):<BR>
 <TEXTAREA NAME="location" ROWS=4 COLS=65></TEXTAREA>
 <BR>
 <HR>
@@ -135,10 +171,10 @@ Other Genome Location Information:<BR>
 </TABLE>
 </UL>
 
-If an appropriate classification for the allele does not appear above, enter here: 
+If appropriate classification(s) for the allele do not appear above, enter here: 
 <INPUT TYPE="text" NAME="othercategory" SIZE=50><BR>
 <BR><BR>
-Description:<BR><TEXTAREA NAME ="description" ROWS=5 COLS=65></TEXTAREA><BR>
+Description (text, details of phenotype observed, etc.):<BR><TEXTAREA NAME ="description" ROWS=5 COLS=65></TEXTAREA><BR>
 <BR>
 Other remarks (gene function/pathway, available clones, GenBank numbers, etc.)<BR>
 <TEXTAREA NAME="remarks" ROWS=3 COLS=65></TEXTAREA><BR>
@@ -150,11 +186,11 @@ Status requested for these data: <INPUT TYPE="radio" NAME="status" VALUE="Reserv
 <BR><BR>
 <HR>
 <H3>References:</H3>
-Please report publications about this allele. MedLine UIs may be used. If unpublished, include a descriptive title.  For unpublished references a Direct Submission reference will be created in MGD.  
+Please report publications about this allele. PubMed accession _ids may be used. If unpublished, include a descriptive title.  For unpublished references a Direct Submission reference will be created in MGD.  
 <P>
 <BLOCKQUOTE>
-<EM>Example, short citation:</EM> Seldin MF, Cytogenet Cell Genet 1987;45(1):52-4<BR>
-<EM>Example, MedLine UI: </EM>87245590<BR>
+<EM>Example, short citation:</EM> Boyd Y, Genome Res 2000 Mar;10(3):277-92<BR>
+<EM>Example, PubMed: </EM>10720569<BR>
 <EM>Example, unpublished:</EM> Doe JE, Smith H, New allele of the Kit ligand (steel) series, unpublished<BR>
 </BLOCKQUOTE>
 <P>
@@ -189,6 +225,7 @@ allele will be emailed to you shortly!  Thank you.</H3>
 <INPUT TYPE=submit VALUE="Submit"> <INPUT TYPE=reset VALUE="Reset Form">
 <HR>
 </FORM>
+
 <!--#include file="include/footer.html"-->
 </BODY>
 </HTML>
@@ -209,5 +246,44 @@ Warranty Disclaimer and Copyright Notice
  Laboratory.
 
 Copyright © 1996, 1999, 2002 by The Jackson Laboratory
+All Rights Reserved
+-->
+<!--<A HREF="http://www.jax.org/" target="_top">
+<IMG SRC="http://www.informatics.jax.org/mgihome/images/jax_logo.gif" ALIGN=right
+                        ALT="The Jackson Laboratory"></A>
+<SMALL>
+<A HREF="http://www.informatics.jax.org/mgihome/other/citation.shtml" target="_top">
+                        Citing These Resources</A>
+<BR>
+<A HREF="http://www.informatics.jax.org/mgihome/other/mgi_funding.shtml" target="_top">
+                        Funding Information</A>
+<BR>
+<A HREF="http://www.informatics.jax.org/mgihome/other/copyright.shtml" target="_top">
+                        Warranty Disclaimer &amp; Copyright Notice</A>.
+<BR>
+Send questions and comments to
+                        <A HREF="http://www.informatics.jax.org/mgihome/support/tjl_inbox.shtml"
+                        target="_top">User Support</A>.
+</SMALL>
+
+</BODY>
+</HTML>
+
+Warranty Disclaimer and Copyright Notice
+
+ THE JACKSON LABORATORY MAKES NO REPRESENTATION ABOUT THE SUITABILITY OR 
+ ACCURACY OF THIS SOFTWARE OR DATA FOR ANY PURPOSE, AND MAKES NO WARRANTIES, 
+ EITHER EXPRESS OR IMPLIED, INCLUDING MERCHANTABILITY AND FITNESS FOR A 
+ PARTICULAR PURPOSE OR THAT THE USE OF THIS SOFTWARE OR DATA WILL NOT 
+ INFRINGE ANY THIRD PARTY PATENTS, COPYRIGHTS, TRADEMARKS, OR OTHER RIGHTS.  
+ THE SOFTWARE AND DATA ARE PROVIDED "AS IS".
+
+ This software and data are provided to enhance knowledge and encourage 
+ progress in the scientific community and are to be used only for research 
+ and educational purposes.  Any reproduction or use for commercial purpose 
+ is prohibited without the prior express written permission of the Jackson 
+ Laboratory.
+
+Copyright © 1996, 1999, 2000 by The Jackson Laboratory
 All Rights Reserved
 -->
