@@ -45,10 +45,15 @@ Later, 'c' became an allele
 <INPUT TYPE="text" NAME="synonyms" SIZE=55><BR>
 </DL>
 <HR>
-Strain Background:    <INPUT TYPE="text" NAME="strain" SIZE=50>
-<BR><BR>
+Strain Background (where mutation arose):    <INPUT TYPE="text" NAME="strainMutation" SIZE=50>
+<br>
+Strain Background (where phenotype analyzed):    <INPUT TYPE="text" NAME="strainPhenotype" SIZE=50>
+<br><br>
+Other Strain Information: <br>   
+<TEXTAREA NAME="strainInfo" ROWS=4 COLS=65></TEXTAREA>
+<!--<INPUT TYPE="text" NAME="strainInfo" SIZE=50-->
 <DL>
-<DT>Method of allele generation:
+<DT>Method of Allele Generation:
 <DD><INPUT TYPE="radio" NAME="method" VALUE="spontaneous" > spontaneous  
 <INPUT TYPE="radio" NAME="method" VALUE="ENU"> ENU  induced 
 <INPUT TYPE="radio" NAME="method" VALUE="transgenic"> transgenic 
@@ -84,39 +89,47 @@ Other Genome Location Information:<BR>
 
 <TR>
 <TD><INPUT TYPE="checkbox" NAME="category" VALUE="neurological" >neurological/neuromuscular</TD>
-<TD><INPUT TYPE="checkbox" NAME="category" VALUE="tail">tail</TD>
-<TD><INPUT TYPE="checkbox" NAME="category" VALUE="growth">growth</TD>
-<TD><INPUT TYPE="checkbox" NAME="category" VALUE="renal_system">renal system</TD>
-</TR>
-<TR>
-<TD><INPUT TYPE="checkbox" NAME="category" VALUE="behavior">behavioral </TD>
 <TD><INPUT TYPE="checkbox" NAME="category" VALUE="digits_limbs">digits, limbs</TD>
-<TD><INPUT TYPE="checkbox" NAME="category" VALUE="reproduction">reproduction</TD>
-<TD><INPUT TYPE="checkbox" NAME="category" VALUE="other_viscera">other viscera</TD>
-</TR>
-<TR>
-<TD><INPUT TYPE="checkbox" NAME="category" VALUE="circling">circling</TD>
-<TD><INPUT TYPE="checkbox" NAME="category" VALUE="craniofacial">craniofacial</TD>
 <TD><INPUT TYPE="checkbox" NAME="category" VALUE="clinical_chem">clinical chemistry</TD>
 <TD><INPUT TYPE="checkbox" NAME="category" VALUE="immunological">immunological</TD>
 </TR>
 <TR>
-<TD><INPUT TYPE="checkbox" NAME="category" VALUE="pigment">pigment</TD>
+<TD><INPUT TYPE="checkbox" NAME="category" VALUE="behavior">behavioral </TD>
+<TD><INPUT TYPE="checkbox" NAME="category" VALUE="craniofacial">craniofacial</TD>
+<TD><INPUT TYPE="checkbox" NAME="category" VALUE="hemopoietic">hemopoietic system</TD>
+<TD><INPUT TYPE="checkbox" NAME="category" VALUE="body_patterning">developmental body patterning</TD>
+</TR
+<TR>
+<TD><INPUT TYPE="checkbox" NAME="category" VALUE="circling">circling</TD>
 <TD><INPUT TYPE="checkbox" NAME="category" VALUE="teeth">teeth</TD>
 <TD><INPUT TYPE="checkbox" NAME="category" VALUE="circulatory_system">circulatory system</TD>
-<TD><INPUT TYPE="checkbox" NAME="category" VALUE="body_patterning">developmental body patterning</TD>
-<tr>
-<TD><INPUT TYPE="checkbox" NAME="category" VALUE="skin_hair">skin, hair, vibrassae</TD>
+<TD><INPUT TYPE="checkbox" NAME="category" VALUE="embryonic_lethal">embryonic lethal/sublethal</TD>
+</tr>
+<TR>
+<TD><INPUT TYPE="checkbox" NAME="category" VALUE="pigment">pigment</TD>
 <TD><INPUT TYPE="checkbox" NAME="category" VALUE="eyes_sight">eyes, sight</TD>
 <TD><INPUT TYPE="checkbox" NAME="category" VALUE="cardiovascular_system">cardiovascular system</TD>
-<TD><INPUT TYPE="checkbox" NAME="category" VALUE="embryonic">embryonic lethal/sublethal</TD>
+<TD><INPUT TYPE="checkbox" NAME="category" VALUE="perinatal_lethal">perinatal lethal</TD>
+</tr>
+<tr>
+<TD><INPUT TYPE="checkbox" NAME="category" VALUE="skin_hair">skin, hair, vibrassae</TD>
+<TD><INPUT TYPE="checkbox" NAME="category" VALUE="hearing">hearing</TD>
+<TD><INPUT TYPE="checkbox" NAME="category" VALUE="respiratory_system">respiratory system</TD>
+<TD><INPUT TYPE="checkbox" NAME="category" VALUE="post_lethal">postnatal lethal</TD>
 </TR>
 <TR>
 <TD><INPUT TYPE="checkbox" NAME="category" VALUE="skeleton">skeleton (trunk)</TD>
-<TD><INPUT TYPE="checkbox" NAME="category" VALUE="hearing">hearing</TD>
-<TD><INPUT TYPE="checkbox" NAME="category" VALUE="respiratory">respiratory system</TD>
-<TD><INPUT TYPE="checkbox" NAME="category" VALUE="late_onset">late onset</TD></TR>
-</TR></TABLE></UL>
+<TD><INPUT TYPE="checkbox" NAME="category" VALUE="growth">growth</TD>
+<TD><INPUT TYPE="checkbox" NAME="category" VALUE="renal_system">renal system</TD>
+<TD><INPUT TYPE="checkbox" NAME="category" VALUE="late_onset">late onset</TD>
+</TR>
+<tr>
+<TD><INPUT TYPE="checkbox" NAME="category" VALUE="tail">tail</TD>
+<TD><INPUT TYPE="checkbox" NAME="category" VALUE="reproduction">reproduction</TD>
+<TD><INPUT TYPE="checkbox" NAME="category" VALUE="other_viscera">other viscera</TD>
+<TD><INPUT TYPE="checkbox" NAME="category" VALUE="tumors">tumors</TD>
+</TABLE>
+</UL>
 
 If an appropriate classification for the allele does not appear above, enter here: 
 <INPUT TYPE="text" NAME="othercategory" SIZE=50><BR>
@@ -127,8 +140,9 @@ Other remarks (gene function/pathway, available clones, GenBank numbers, etc.)<B
 <TEXTAREA NAME="remarks" ROWS=3 COLS=65></TEXTAREA><BR>
 <HR>
 <H3>Status</H3>
-Status requested for these data: <INPUT TYPE="radio" NAME="status" VALUE="Reserved"> 
-Reserved and Private  <INPUT TYPE="radio" NAME="status" VALUE="Release"> Release to public MGD 
+Status requested for these data: <INPUT TYPE="radio" NAME="status" VALUE="Reserved">Reserved and Private&nbsp;
+<INPUT TYPE="radio" NAME="status" VALUE="Release">Release to public MGD&nbsp; 
+<INPUT TYPE="radio" NAME="status" VALUE="update">Update to public status
 <BR><BR>
 <HR>
 <H3>References:</H3>

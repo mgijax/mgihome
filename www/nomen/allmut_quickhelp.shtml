@@ -52,7 +52,7 @@ For designating mutants that are alleles of <B>known</B> genes, the basic guidel
 <EM> Example:</EM>
 <A HREF="<!--#include file='include/wi_url.html'-->searches/allele.cgi?195">Atp7a<SUP>Mo</SUP></a>
  or <A HREF="<!--#include file='include/wi_url.html'-->searches/allele.cgi?544">Egfr<SUP>tm1Cwr</SUP></a>.<BR><BR>
-<LI>For allele designations for <B>spontaneous</B> alleles of <B>known</B> genes... <BR> 
+<LI>For allele designations for <B>spontaneous</B> and <b>induced</b> alleles of <B>known</B> genes... <BR> 
 <UL><BR>
 <LI>Allele designations begin with a lower case letter if the allele is a recessive 
 and begin with a capital letter otherwise.
@@ -69,10 +69,13 @@ is the allele symbol for the <I>dominant</I> mottled allele of the
 <EM> Example:</EM> 
 <A HREF="<!--#include file='include/wi_url.html'-->searches/allele.cgi?61">Tyr<SUP>c-4J</SUP></a>
  is the 4th albino allele in the series discovered at The Jackson Laboratory (J) for the 
- <A HREF="<!--#include file='include/wi_url.html'-->searches/marker.cgi?14347">Tyr</a> gene.  
+ <A HREF="<!--#include file='include/wi_url.html'-->searches/marker.cgi?14347">Tyr</a> gene; 
+<A HREF="<!--#include file='include/wi_url.html'-->searches/allele.cgi?2715">T<SUP>39H</SUP></a> is the
+ 39th mutation of <A HREF="<!--#include file='include/wi_url.html'-->searches/marker.cgi?13727">T</a>
+ from Harwell (H). This particular T allele was discovered in Harwell's ENU mutagenesis program.
 </UL>
 <P>
-<LI>Allele designations for <B>induced</B> and <B>targeted</B> alleles of <B>known</B> genes... <BR> 
+<LI>Allele designations for <B>transgenic</B> and <B>targeted</B> alleles of <B>known</B> genes... <BR> 
 <UL><BR>
 <LI> Tg(YYY)#Zzz for <B>transgenic alleles</B>, where YYY is the inserted gene, 
 # is the serial number, and Zzz the lab code for the laboratory.  <EM>Example: </EM> 
@@ -93,11 +96,6 @@ Zzz the lab code for the laboratory. <EM> Example:</EM>
  where this is the 1st targeted mutation of 
  <A HREF="<!--#include file='include/wi_url.html'-->searches/marker.cgi?8333">Egfr</a> created at 
  Case Western Reserve University (Cwr).<BR><BR>
-<LI>#Zzz for<B> induced alleles</B>, where # is the serial number and Zzz the lab code for the 
-laboratory. <EM> Example:</EM> 
-<A HREF="<!--#include file='include/wi_url.html'-->searches/allele.cgi?2715">T<SUP>39H</SUP></a> is the 
-39th mutation of <A HREF="<!--#include file='include/wi_url.html'-->searches/marker.cgi?13727">T</a>
- created by ENU mutagenesis at Harwell (H). 
 </UL>
 </OL>
 <HR>
