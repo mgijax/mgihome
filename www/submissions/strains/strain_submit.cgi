@@ -101,13 +101,13 @@ class strainMailer (formMailer.formMailer):
 		# check that the username in the e-mail address matches the
 		# username of the logged-in user
 
-		emailName = self.parms['email'][:atPos]
-		if os.environ.has_key('REMOTE_USER') and \
-				emailName != os.environ['REMOTE_USER']:
-			errors.append ( ('email',
-				'''E-mail address (%s) does not match the ID
-					(%s) of the user logged in''' % \
-				(emailName, os.environ['REMOTE_USER'])) )
+##		emailName = self.parms['email'][:atPos]
+##		if os.environ.has_key('REMOTE_USER') and \
+##				emailName != os.environ['REMOTE_USER']:
+##			errors.append ( ('email',
+##				'''E-mail address (%s) does not match the ID
+##					(%s) of the user logged in''' % \
+##				(emailName, os.environ['REMOTE_USER'])) )
 
 		return errors
 
