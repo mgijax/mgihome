@@ -132,6 +132,12 @@ Terms are defined in a general sense as they apply to eukaryotic genetics, parti
 <A HREF="http://www.nhgri.nih.gov/DIR/VIP/Glossary/Illustration/base_pair.html">Figure</A> at 
 <A HREF="#NHGRI">NHGRI</A>.
 
+
+<!--<P><DT><B><A NAME="ma_ontology">Anatomical Dictionary for the Adult Mouse</A></B><DD>A 
+<A HREF="#controlled_vocabulary">controlled vocabulary</A> providing standardized nomenclature for anatomical structures in the postnatal mouse (Theiler stage 28) . See the 
+<A HREF="http://www.geneontology.org/GOBO">Gene Ontology Biological Ontology (GOBO)</A> site for further information.-->
+
+
 <P><DT><B><A NAME="agouti">Agouti</A></B><DD>A characteristic of the coat color of 
 <A HREF="#wild_type">wild-type</A> mice and other mammals in which an individual hair has black pigment (eumelanin) at the tip and the base, and a band of yellow pigment 
 (phaeomelanin) in the middle. This coloration has the effect of softening the visual outline of a mammal in the wild, making it harder to see than an animal of solid color. See the MLC entry for the 
@@ -213,8 +219,8 @@ The term is also used loosely for any sequence of actions (which may or may not 
 
 <P><DT><B><A NAME="ancestor">Ancestor</A></B><DD>In <A HREF="#MGI">MGI</A>, this term refers to terms in a 
 <A HREF="#hierarchical">hierarchical</a> 
-<A HREF="#controlled_vocabulary">controlled vocabulary</A> like ones containing 
-<A HREF="#gene_ontology">Gene Ontology (GO)</A> terms. An "ancestor" of a term is a term any number of levels above it in the 
+<A HREF="#controlled_vocabulary">controlled vocabulary</A> such as those containing 
+<A HREF="#gene_ontology">Gene Ontology (GO)</A>, <A HREF="#mp_ontology">Mammalian Phenotype Ontology</a>, and <A HREF="#ma_ontology">Adult Mouse Anatomical Dictionary</a> terms.  An "ancestor" of a term is a term any number of levels above it in the 
 <A HREF="#hierarchy">hierarchy</a> from which it is descended. For example, the GO term 
 <A HREF="#enzyme">enzyme</A> [GO:0003824] is an <B>ancestor</B> to the GO term <B>alcohol dehydrogenase</B> [GO:0004022]. <BR>See also: 
 <A HREF="#children">Children</A>, 
@@ -674,7 +680,7 @@ For example, searching for all markers of the type "Gene" on Chromosome 2 is equ
 <A HREF="#STS">STS</A>).</li><li> A contiguous DNA sequence assembled using overlapping DNA sequences.</li></ol></DD>
 
 <P><DT><B><A NAME="controlled_vocabulary">Controlled Vocabulary</A></B><DD>A restricted set of defined terms allowing the representation of complex information in a database. See 
-<A HREF="#gene_ontology">Gene Ontology</A>.
+<A HREF="#gene_ontology">Gene Ontology</A>, <A HREF="#mp_ontology"></A>Mammalian Phenotype Ontology</a>, and <A HREF="#ma_ontology">Adult Mouse Anatomical Dictionary</A> terms. 
 
 <P><DT><B><A NAME="cosmid">Cosmid</A></B><DD>A type of 
 <A HREF="#cloning_vector">cloning vector</A> derived from 
@@ -742,6 +748,7 @@ For example, searching for all markers of the type "Gene" on Chromosome 2 is equ
 <A HREF="#NHGRI">NHGRI</A>.
 
 <!-- DDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDD --><A NAME="d"></A>
+<P><DT><B><A NAME="DAG">DAG</A></B><DD>Directed Acyclic Graph.</dd>
 
 <P><DT><B><A NAME="database"></A>Database</B><DD>A data structure that stores 
 <A HREF="#metadata">metadata</A>, i.e. data about data. More generally, an organized collection of information.
@@ -793,6 +800,9 @@ For example, searching for all markers of the type "Gene" on Chromosome 2 is equ
 <A HREF="#gamete">gamete</A>. Normal mice are diploid, having a chromosome 
 set from the maternal gamete (the egg) and a chromosome set from the paternal gamete (the sperm). <BR>See also 
 <A HREF="#haploid">Haploid</A>.
+
+
+<P><DT><B><A NAME="directed_acyclic">Directed Acyclic Graph (DAG)</A></B><DD>A directed graph where no path starts and ends at the same vertex. See <a href="http://www.nist.gov/dads/HTML/directAcycGraph.html">Dictionary of Algorithms and Data Structures</a>.
 
 <P><DT><B><A NAME="directed_sequencing"></A>Directed Sequencing</B>
 <DD>The 
@@ -1592,6 +1602,13 @@ inbred strain of mouse. <BR>See also the
 <A HREF="#Cre">Cre</A>.
 
 <!-- MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM --><A NAME="m"></A>
+
+<P><DT><B><A NAME="mp_ontology">Mammalian Phenotype Ontology</A></B><DD>A 
+<A HREF="#controlled_vocabulary">controlled vocabulary</A> used to describe biological features within a specified domain of biological knowledge. See the 
+<A HREF="http://www.geneontology.org/">GO Consortium</A> site for further information.
+
+
+
 <P><DT><B><A NAME="marker">Marker</A></B></dt><DD><ol><li> Any biological feature that can be positioned with respect to other features on a chromosome, by genetic, physical or other mapping methods. For example, a gene, anonymous DNA segment, mutation, or phenotype.<li>A feature that distinguishes a particular biological state. For example, an expression profile of natural or engineered genes, or a characteristic morphology.<li>In MGI, a Marker is an object for which unique official nomenclature must be assigned. Markers in MGI can be of type: 
 <A HREF="#gene">Gene</a>, 
 <A HREF="#DNA_segment">DNA Segment</a>, 
