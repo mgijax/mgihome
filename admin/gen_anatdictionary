@@ -55,7 +55,8 @@ if '.' not in sys.path:
 
 import config 		# MGI Python libraries
 import homelib
- 
+import header
+
 ## Anatomical Dictionary utilities/classes
 ## globals 
 
@@ -522,14 +523,13 @@ def doOneStage( stagenum, description, outputFileName ):
 		'Stage %s</TITLE>\n' % stagenum )
 	fd.write( "</HEAD>" + '\n' )
 	fd.write( '<BODY BGCOLOR="#FFFFFF">\n' )
-	fd.write( '<!--#include file="include/banner.html"-->\n')
-	fd.write( '<H3><A HREF="%s">Mouse Anatomical Dictionary</A> - Stage %s (%s)</H3>\n' % \
-		    (homelib.makepath (SERVER_DOC_ROOT, DICTIONARY_SUBDIR, \
-			indexFileRoot), stagenum,description) )
+	fd.write( header.header ('Mouse Anatomical Dictionary',
+		additional = 'Stage %s (%s)' % (stagenum, description) ) )
 	fd.write( "<PRE>" + '\n' )
 	nNodes = print_structure_tree(stree, fd, 0)
 	fd.write( "</PRE>" + '\n' )
-	fd.write( '<HR><!--#include file="include/footer.html"-->\n')
+	fd.write( '<HR><!--#include file="include/bodyStop.html"-->\n')
+	fd.write( '</BODY></HTML>')
 	fd.close()
 
 	return nNodes
