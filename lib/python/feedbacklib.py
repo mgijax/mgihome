@@ -953,12 +953,11 @@ class AssayUserInput (SimpleTextUserInput):
 		#	values.
 
 		SimpleTextUserInput.__init__ (self)
-		self.commentInstructions = '''Use this space to alert us 
-		if you believe we have made an error in the annotation of
-		this assay; your comments will be reviewed and appropriate
-		action taken.  For comments or suggestions regarding the
-		content of the Gene Expression Database, contact 
-		<a href="%ssupport/tjl_inbox.shtml">User Support</a>.<BR>'''\
+		self.commentInstructions = '''Use this space to enter comments
+		    regarding the annotation of this assay; your comments will
+		    be reviewed and appropriate action taken.  For comments or 
+		    suggestions regarding the content of the Gene Expression 
+		    Database, contact <a href="%ssupport/tjl_inbox.shtml">User Support</a>.<BR>'''\
 			% config.lookup ('MGIHOME_URL')
 		self.subject = AssaySubjectField ('subject', 'Subject',
 			REQUIRED, width=45)
@@ -1080,6 +1079,7 @@ def getInputObj (
 			'auto')
 
 	for mgiType in result:
+		print mgiType
 		if mgiType['_MGIType_key'] in ALLOWED_TYPES:
 			# return an object of the appropriate
 			# subclass.  (or fall back on the default if no
