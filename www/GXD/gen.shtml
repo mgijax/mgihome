@@ -132,7 +132,7 @@
 
 <tr><tr><th align=left valign=top>collapse</th><td>An operation done on assay sheets to hide rows containing experimental details in order to save screen space.</td><tr>
 
-<tr><th align=left valign=top>column</th><td>The vertical arrangement of cells in a GEN worksheet. Columns are identified by  alphabetical headings: A, B, C, D, E, and so on. The horizontal arrangement is called a <i>row</i>; rows are identified by numerical headings: 1, 2, 3, 4, 5, and so on.
+<tr><th align=left valign=top>column</th><td>The vertical arrangement of cells on a GEN worksheet or assay sheet. Columns are identified by  alphabetical headings: A, B, C, D, E, and so on. The horizontal arrangement is called a <i>row</i>; rows are identified by numerical headings: 1, 2, 3, 4, 5, and so on.
 
 </td><tr><tr><th align=left valign=top>command button</th><td>Rectangular button that carries out a command. GEN has four on the <b>Main</b> menu: <b>Create New Assay Sheet, Create New Submission, Validate this Workbook</b>, and <b>Copy info to new Workbook.</b></td><tr>
 
@@ -178,9 +178,9 @@ you may leave blank.  A collection of fields is called a <i>record</i>.</td></tr
 <tr><th align=left valign=top>Results menu</th><td>Used on assay sheets.  Allows you to add fields to the results section to help you organize the recording of your expression results.
 </td></tr>
 
-<tr><th align=left valign=top>row</th><td>The horizontal arrangement of cells in a GEN worksheet. Rows are identified by numerical headings: 1, 2, 3, 4, 5, and so on. The vertical arrangement is called a <i>column</i>; columns are identified by alphabetical headings: A, B, C, D, E, and so on. 
+<tr><th align=left valign=top>row</th><td>The horizontal arrangement of cells on a GEN worksheet or assay sheet. Rows are identified by numerical headings: 1, 2, 3, 4, 5, and so on. The vertical arrangement is called a <i>column</i>; columns are identified by alphabetical headings: A, B, C, D, E, and so on. 
 
-<tr><th align=left valign=top>specimens/samples</th><td>Assay sheet results are directly associated with specific specimens or samples.  RNA in situ and immunohistochemistry assays use specimens. Blot assays use samples. You can include multiple specimens or samples in an assay sheet. </td></tr>
+<tr><th align=left valign=top>specimens/samples</th><td>Assay sheet results are directly associated with specific specimens or samples.  RNA in situ and immunohistochemistry assays use specimens. Blot assays use samples. You can include multiple specimens or samples in an assay sheet.</td></tr>
 
 <tr><th align=left valign=top>submission</th><td>This function allows you to select the assay sheets you want to submit to GXD. GEN takes this set of assays and makes a notebook containing the designated experimental data and any worksheet parameters used in these assays.  You can then send this file to GXD for inclusion in the database. </td></tr>
 
@@ -252,7 +252,7 @@ e-mail address, and computer system type. We use this information to keep track 
 <h3><a name="assay_and_worksheets"></a>GEN assay sheets and worksheets</h3>
 <p>In the GEN, you store experimental details in worksheets and experimental results in assay sheets.  The following table indicates which worksheets are used by each type of assay sheet.  
 <p>
-<table border=1 cellpadding=4 width=85%>
+<table border=1 cellspacing=4 cell padding=2 width=85%>
 <tr><th valign=top align=left><font size=-1>Assay Sheet:</th><th><font size=-1>RNA In Situ</th><th><font size=-1>Immunohistochemistry</th><th><font size=-1>Northern</th><th><font size=-1>Western</th><th><font size=-1>RT-PCR</th></tr>
 <tr><th valign=top align=left><font size=-1>Worksheet:</th><td valign=top><font size=-1>Genes</td><td valign=top><font size=-1>Genes</td><td valign=top><font size=-1>Genes</td><td valign=top><font size=-1>Genes</td><td valign=top><font size=-1>PCR Samples</td></tr>
 
@@ -404,7 +404,7 @@ click in the field. If a drop-down list arrow appears, click it to activate the 
  <table cellpadding=4 border=1><tr><th align=left valign=top>Spec Prep Method</th><td>Type a name or other unique identifier for the preparation method.</td></tr>
   <tr><th align=left valign=top>Type</th><td>Use the drop-down menu to specify section, whole mount, optical section taken from a specimen hybridized as a whole mount, or section taken from an embryo hybridized as a whole mount.</td></tr>
   <tr><th align=left valign=top>Fixation</th><td>Use the drop-down menu to specify the method used to fix the specimen.</td></tr>
-  <tr><th align=left valign=top>Embedding</th><td>Use the drop-down menu to specify the method used to embed the specimen if sectioned. For whole mounts, leave this field blank or select Not applicable.</td></tr>
+  <tr><th align=left valign=top>Embedding</th><td>Use the drop-down menu to specify the method used to embed the specimen if sectioned. For whole mounts, leave this field blank or select <b>Not applicable</b>.</td></tr>
   <tr><th align=left valign=top>Notes</th><td>Type any additional information you want stored with this record.</td></tr>
 </table>
 <p><p><b>Note:</b> If you are planning on submitting data to GXD, we require that you specify the specimen type.
@@ -540,7 +540,7 @@ click in the field. If a drop-down list arrow appears, click it to activate the 
 <tr><th align=left valign=top>Age Unit</th><td>Use the drop-down menu to specify the age unit.</td></tr>
 <tr><th align=left valign=top>Age Value</th><td>Type the number that specifies the age along with the Age Unit.  Leave this field blank if you specify either <i>postnatal</i> or <i>adult</i> above.</td></tr>
 <tr><th align=left valign=top>Tissue</th><td>Type the tissue or structure used for the sample. For mouse, use the
-<a href="<!--#include file='include/mgihome_url.html'-->GXD/GEN/AD">Anatomical Dictionary</a> as a reference for appropriate structure names.</td></tr>
+<a href="GEN/AD/">Anatomical Dictionary</a> as a reference for appropriate structure names.</td></tr>
 <tr><th align=left valign=top>Amount Value</th><td>Type the number that specifies the amount of the RNA used. </td></tr>
 <tr><th align=left valign=top>Amount Units</th><td>Use the drop-down menu to specify the unit used to measure the RNA amount. </td></tr>
 <tr><th align=left valign=top>Sample Type</th><td>Use the drop-down menu to specify the type of RNA used.</td></tr>
@@ -566,7 +566,7 @@ click in the field. If a drop-down list arrow appears, click it to activate the 
 <th align=left valign=top>Age Unit</th><td>Use the drop-down menu to specify the age unit.</td></tr>
 <tr><th align=left valign=top>Age Value</th><td>Type the number that specifies the age along with the Age Unit.  Leave this field blank if you specify either <i>postnatal</i> or <i>adult</i> above.</td></tr>
 <tr><th align=left valign=top>Tissue</th><td>Type the tissue or structure used for the sample. For mouse, use the
-<a href="<!--#include file='include/mgihome_url.html'-->GXD/GEN/AD"> as a reference for appropriate structure names.</td></tr>
+<a href="GEN/AD/">Anatomical Dictionary</a> as a reference for appropriate structure names.</td></tr>
 <tr><th align=left valign=top>Notes</th><td>Type any additional information you want stored with this record. </td></tr>
 </table>
 <p><b>Note:</b>&nbsp; If you are planning on submitting data to GXD, we require that you specify the sample age (using either Theiler stages or age units).
@@ -590,7 +590,7 @@ click in the field. If a drop-down list arrow appears, click it to activate the 
 <th align=left valign=top>Age Unit</th><td>Use the drop-down menu to specify the age unit.</td></tr>
 <tr><th align=left valign=top>Age Value</th><td>Type the number that specifies the age along with the Age Unit.  Leave this field blank if you specify either <i>postnatal</i> or <i>adult</i> above.</td></tr>
 <tr><th align=left valign=top>Tissue</th><td>Type the tissue or structure used for the sample. For mouse, use the
-<a href="<!--#include file='include/mgihome_url.html'-->GXD/GEN/AD"> as a reference for appropriate structure names.</td></tr>
+<a href="GEN/AD/">Anatomical Dictionary</a> as a reference for appropriate structure names.</td></tr>
 <tr><th align=left valign=top>Gene</th><td>Use the drop-down menu to specify the name of the gene amplified in the PCR reaction.</td></tr>
 <tr><th align=left valign=top>Primer Pair</th><td>Use the drop-down menu to specify the primers used in the PCR reaction.</td></tr>
 <tr><th align=left valign=top>cDNA Generation Meth</th><td>Use the drop-down menu to specify the method used to generate the cDNA used in the PCR reaction.</td></tr>
@@ -743,7 +743,7 @@ There is no difference in data entered using a <b>Manage</b> window and data ent
 
 <h3><a name="store_results"></a>Storing results</h3>
 <blockquote>
-<p>The results area is for storing the results of expression experiments&#151;recording the structures, stained expression level, pattern of staining, and so on.  You can also store images of these results, with accompanying legends, in this area.
+<p>The results area is for storing the results of expression experiments&#151;recording the structures stained, expression level, pattern of staining, and so on.  You can also store images of these results, with accompanying legends, in this area.
 <p>For optimal results, we recommend organizing fields in the results section in the following order:  images, figure labels and legends, and results.  However, not all of these fields are required.  You can record results as free text in figure legends or in more detail in tabular format using the &lt;Insert Headings&gt; and &lt;Insert Rows/Bands&gt; functions from the Hide/Show Results menu.
 
 <p>The <b>Hide/Show Results menu</b> button opens or closes the Results menu.  Use the Results menu to add the fields to the results section.  <!--Below is a picture of the menu box on an RNA In Situ assay sheet.-->
@@ -797,7 +797,7 @@ There is no difference in data entered using a <b>Manage</b> window and data ent
 <tr><th align=left valign=top>Results heading</th><th align=left>To use...</th><tr>
 <tr><th align=left valign=top>Specimen</th><td>Select the appropriate specimen from the drop-down menu. The drop-down menu includes only specimens added to the Specimens Used section of the assay sheet.</td><tr>
 <tr><th align=left valign=top>Structure</th><td>Type the anatomical structure analyzed.  For mouse, you can use the 
-<a href="<!--#include file='include/mgihome_url.html'-->GXD/GEN/AD">Anatomical Dictionary</a> as a reference for appropriate structure names. It lists the tissues and structures for each developmental stage (Theiler stage) in a hierarchical fashion. You can cut and paste the complete name and the ID for the respective anatomical structure, e.g., "TS15;1st arch;mandibular component [1011]," into the Structure cell. This enables standardization of structure nomenclature between researchers and facilitates entry of results into GXD. If the dictionary does not fit your needs, you can use your own anatomical terms.</td></tr>
+<a href="GEN/AD/">Anatomical Dictionary</a> as a reference for appropriate structure names. It lists the tissues and structures for each developmental stage (Theiler stage) in a hierarchical fashion. You can cut and paste the complete name and the ID for the anatomical structure, e.g., "TS15;1st arch;mandibular component [1011]," into the Structure cell. This enables standardization of structure nomenclature between researchers and facilitates entry of results into GXD. If the dictionary does not fit your needs, you can use your own anatomical terms.</td></tr>
 <tr><th align=left valign=top>Expression Level</th><td>Select the appropriate adjective from the drop-down menu to describe the level of expression in the structure analyzed.</td></tr>
 <tr><th align=left valign=top>Pattern	</th><td>Select the appropriate adjective from the drop-down menu to describe the pattern of staining in the structure analyzed. <b>Regionally restricted</b> is useful when staining is restricted to part of the structure analyzed, and <b>Not applicable</b> (or blank) is appropriate when the staining is Absent.</td></tr>
 <tr><th align=left valign=top>Image Label</th><td>Indicate which image pane illustrates the result, if applicable.</td></tr>
@@ -854,8 +854,8 @@ If you cannot find the gene, include in the Gene worksheet Notes field any infor
 <A HREF="<!--#include file='include/wi_url.html'-->searches/allele_form.shtml">Alleles and Phenotypes Query Form</a> at Mouse Genome Informatics. (For a quick guide to the nomenclature, see the 
 <A HREF="<!--#include file='include/mgihome_url.html'-->nomen/allmut_quickhelp.shtml">Allele and Mutant Quick Nomenclature Guide</a>.  If you cannot find the allele, include in the Specimen or Sample worksheet notes field any information that will be useful to help us identify the allele and assign a new name if necessary.  Types of useful information include:  references, type of mutation, lab generated in, and so on.  <b>Note:</b> At this time GXD does include information from knock-ins and knock-outs but not from other kinds of transgenic animals.
 
-<p>In GXD we use the <a href="<!--#include file='include/mgihome_url.html'-->GXD/GEN/AD">Anatomical Dictionary</a> to describe the structures expression was analyzed in.  We encourage you to do the same.
-<p>Finally, to submit data to GXD, you must make entries in certain fields.  The validation function insures these fields are filled in.  See <a name="validate">Validation in the GEN</a> for further details.
+<p>In GXD we use the <a href="GEN/AD/">Anatomical Dictionary</a> to describe the structures expression was analyzed in.  We encourage you to do the same.
+<p>Finally, to submit data to GXD, you must make entries in certain fields.  The validation function insures these fields are filled in.  See <a a href="#validate">Validation in the GEN</a> for further details.
 
 </blockquote>
 <p><a href="#toc">Back to Table of Contents</a>
@@ -870,16 +870,16 @@ If you cannot find the gene, include in the Gene worksheet Notes field any infor
 <tr><th>Location<th>Purpose<th>To use...</tr>
 <tr><td valign=top><b>Validate</b> [worksheet name] button at the top of some worksheets</td><td valign=top>Validate the worksheet.<td valign=top>This function is available on worksheets that have fields to validate (Immunohistochemistry and In-Situ Specimens; Immunohistochemistry and In-Situ Specimen Prep; Northern Samples; Western Samples; and PCR Samples).
      <ol>
-     <li>Click <b>Validate</b> [worksheet name].  If there are no omissions on this worksheet, nothing will happen.  If there are omissions, GEN goes to the <b>Error Report</b> sheet.  This page lists the worksheet page and describes the omission.
-     <li>Return to the worksheet you are trying to validate by clicking on its tab.  A message asks, &quot;Do you want to clear this page of errors?&quot;.  If you choose Yes, GEN removes the text describing the validation errors from the Error Report.  If you choose No, the listed omission remains on the Error Report until you clear the page, whether or not you correct the omission.  
+     <li>Click <b>Validate</b> [worksheet name].  If there are no omissions on this worksheet, nothing will happen.  If there are omissions, GEN goes to the <b>Error Report</b> sheet.  This page lists the worksheet or assay sheet and describes the omission.
+     <li>Return to the worksheet you are trying to validate by clicking on its tab.  A message asks, &quot;Do you want to clear this page of errors?&quot;  If you choose Yes, GEN removes the text describing the validation errors from the Error Report.  If you choose No, the listed omission remains on the Error Report until you clear the page, whether or not you correct the omission.  
      <li>Correct the omission on the worksheet.
      </ol></td></tr>
 <tr><td valign=top><b>Validate Submission</b> button at the top of every assay sheet<td valign=top>Validate the assay sheet.
     <td valign=top>
       <ol>
-      <li>Click <b>Validate Submission</b>.  If there are no omissions of crucial data associated with this assay, nothing happens.  If there are omissions, GEN goes to the  <b>Error Report</b> sheet.  This page lists the worksheet page and describes the omission.
+      <li>Click <b>Validate Submission</b>.  If there are no omissions of crucial data associated with this assay, nothing happens.  If there are omissions, GEN goes to the  <b>Error Report</b> sheet.  This page lists the worksheet or assay sheet and describes the omission.
      <li>Click the tab of a worksheet or an assay sheet with an omission.  A message asks, &quot;Do you want to clear this page of errors?&quot; If you choose Yes, GEN removes the text describing the validation errors from the Error Report.  If you choose No, the listed omission remains on the Error Report until you clear the page, whether or not you correct the omission.
-     <li>Correct the omission on the worksheet or assay sheet.  If there was more than one omission and you did not clear the text from the Error Report, you can return to the Error Report to review the next omission to correct.  If you do not clear the Error Report, each time you leave that page to go to another page in the workbook, a message asks, "Do you want to clear this page of errors?"</ol></td></tr>
+     <li>Correct the omission on the worksheet or assay sheet.  If there was more than one omission and you did not clear the text from the Error Report, you can return to the Error Report to review the next omission to correct.  If you do not clear the Error Report, each time you leave that page to go to another page in the workbook, a message asks, &quot;Do you want to clear this page of errors?&quot;</ol></td></tr>
 
 <tr><td valign=top><b>Validate this Workbook</b> on the Main menu <td valign=top>Validates every assay and worksheet in the notebook.	
 <td valign=top>
@@ -914,7 +914,7 @@ If you cannot find the gene, include in the Gene worksheet Notes field any infor
 <p>There are two ways to open the submission notebook:
 <ol>
 <li>Double-click the submission notebook icon.
-<li>Click the Excel File menu, select Open (File&#151;&gt;Open), then select the submission file.
+<li>From the Excel File menu, select <b>Open</b> (click <b>File&#151;&gt;Open</b>), then select the submission file.
 </ol>
 <p>The submission notebook is exactly like a normal workbook except:
 <ul>
@@ -956,16 +956,16 @@ Instructions for various modifications appear below. <p><b>Note:</b>&nbsp; If yo
 <li>Type the desired width in the dialog box and click <b>OK</b>.
 </ol>
 </td></tr>
-<tr><td valign=top>How do I add additional fields to worksheets?</th><td>To do this, type a new field heading in the row field after the last field heading.  The heading is saved and copied to new Notebooks or Submissions.  Avoid inserting new columns within the provided columns since this causes the GEN to malfunction.  The new field headings do not appear on the assay sheet or the Manage window.</td></tr>
+<tr><td valign=top>How do I add additional fields to worksheets?</th><td>To do this, type a new field heading in the row after the last field heading.  The heading is saved and copied to new Notebooks or Submissions.  Avoid inserting new columns within the provided columns since this causes the GEN to malfunction.  The new field headings do not appear on the assay sheet or the Manage window.</td></tr>
 
-<tr><td valign=top>How to I add additional headings to the results section?</th><td>To do this, type a new heading in the shaded row after the last heading.  Avoid inserting new columns within the provided columns since this causes GEN to malfunction.  The new results headings appear only on the modified assay sheet. Any new assay sheets do not contain the additional header. Add only additional results headings for In Situ and Immunohistochemistry assays. Additional headings added to samples results are overwritten if you add more samples to the assay.</td></tr>
+<tr><td valign=top>How to I add additional headings to the results section?</th><td>To do this, type a new heading in the shaded row after the last heading.  Avoid inserting new columns within the provided columns since this causes GEN to malfunction.  The new results headings appear only on the modified assay sheet. Any new assay sheets do not contain the additional header. Only add additional results headings for In Situ and Immunohistochemistry assays. Additional headings added to blot assays are overwritten if you add more samples to the assay.</td></tr>
 
 <tr><td valign=top>How do I modify the names of the navigational tabs?</th><td>You can change the name of the assay sheet navigational tabs only partially. You should not change the name of the worksheet navigational tabs.
   The assay sheet tabs list the type of assay followed by a number in parentheses. You can delete the number designation and/or add additional text, but if you alter the assay type designation, the notebook will malfunction. To rename:
 <ol>
 <li>Double-click  on the tab name to highlight it.
 <li>Press the right mouse button (control-click for a single button mouse) to deselect and place the cursor after the current name.  
-<li>Delete the number or add additional text.  [For example, you could change RNA In Situ (2)  to RNA In Situ, E13.5.] 
+<li>Delete the number or add additional text.  [For example, you could change RNA In Situ (2)  to RNA In Situ E13.5.] 
 </ol> </td></tr>
 
 <tr><td valign=top>How do I delete worksheet or results entries?  </th><td>You can delete entries in an assay results section or a worksheet row.  <b>Note</b>: &nbsp; Never delete columns in the Gene Expression Notebook. 
@@ -1009,19 +1009,20 @@ GEN will not open, locks up or shuts down unexpectedly. <td valign=top>The Excel
 
 <tr><td valign=top>The TIFF image I've inserted in my assay is incredibly large.<td>&nbsp;<td valign=top>You can resize a TIFF image by clicking on its corner and dragging.</tr>
 
-<tr><td valign=top>Some of my worksheet columns have disappeared.</td><td valign=top>When resizing a column, you dragged it so that it covers other columns.</td><td valign=top><ul><li>To display hidden columns:
+<tr><td valign=top>Some of my worksheet columns have disappeared.</td><td valign=top>When resizing a column, you dragged it so that it covers other columns.</td><td valign=top><p>To display hidden columns:
 <ol>
-<li>Select cells in the columns to the left and right of the hidden columns. <li>Click <b>Format&#151;&gt;Column&#151;&gt;Unhide</b>. <li>Repeat as necessary for any additional hidden columns. </ol> <b>Note:</b> If your rows should disappear, follow a similar procedure, substituting rows for columns in the instructions. 
+<li>Select cells in the columns to the left and right of the hidden columns. <li>Click <b>Format&#151;&gt;Column&#151;&gt;Unhide</b>. <li>Repeat as necessary for any additional hidden columns. </ol> <b>Note:</b> If your rows should disappear, follow a similar procedure, selecting the rows above and below the hidden ones and clicking <b>Format&#151;&gt;Row&#151;&gt;Unhide</b>. 
+<p>Alternatively:
+<ol>
+<li>Select cells in the columns to the left and right of the hidden columns. 
+<li>When the cursor changes to a vertical line with crosshairs (left and right arrows), move it slightly to the left or right until it changes to a double vertical line with crosshairs. <li>Click and hold the mouse button, then drag the cursor to the right. The covered column appears. <li>Repeat for all covered columns. (This becomes easier with practice.)</ul>
 <p>If the first column (or row) of a worksheet is hidden:
 <ul><li>Click <b>Edit&#151;&gt;Go To</b>.
 <li>Type <b>A1</b> in the Reference box.
 <li>Click <b>OK</b>. 
 <li>Click  <b>Format&#151;&gt;Column&#151;&gt;Unhide</b> (or <b>Format&#151;&gt;Row&#151;&gt;Unhide</b>).
 </ol>
-<p>Alternatively:
-<ol>
-<li>Select cells in the columns to the left and right of the hidden columns. 
-<li>When the cursor changes to a vertical line with crosshairs (left and right arrows), move it slightly to the left or right until it changes to a double vertical line with crosshairs. <li>Click and hold the mouse button, then drag the cursor to the right. The covered column appears. <li>Repeat for all covered columns.</ul>This is somewhat tricky initially but becomes easier with practice.
+
 </td></tr>
 
 <tr><td valign=top>How can I suggest improvements for future versions of the GEN?<td>&nbsp;<td>You can contact us at <A HREF="mailto:GEN@informatics.jax.org">GEN@informatics.jax.org</a>.  We welcome all comments (positive or negative) from users.</tr>
@@ -1039,7 +1040,7 @@ This  documentation is available on the Web at http://www.informatics.jax.org/mg
 
 <h3><a name="tutorial" target="_blank"></a>Getting started using the GEN (tutorial)</h3>
 
-<P>To help you get started using the GEN, the following example shows how to enter data from an RNA in situ assay from start to finish.  For this exercise, let's assume that you have performed nonradioactive RNA in situs on E10.5 tissue from wild-type and Shh mutant mice using a probe for the Bmp4 gene.  In the wild-type embryo, you have staining in the limb&#151;in the margins of the limb and in the apical ectodermal ridge and at high levels in the somites.  In the mutant embryo, the staining is still present in the apical ectodermal ridge but not in the margins of the limb or the somites.</P>	
+<P>To help you get started using the GEN, the following example shows how to enter data from an RNA in situ assay from start to finish.  For this exercise, let's assume that you have performed nonradioactive RNA in situs on E10.5 tissue from wild-type and Shh mutant mice using a probe for the Bmp4 gene.  In the wild-type embryo, you have staining in the limb&#151;in the margins of the limb and in the apical ectodermal ridge&#151;and at high levels in the somites.  In the mutant embryo, the staining is still present in the apical ectodermal ridge but not in the margins of the limb or in the somites.</P>	
 <OL>
 <b><LI>Create an assay sheet for your experiment.</LI></b>
     <UL>
@@ -1062,9 +1063,9 @@ This  documentation is available on the Web at http://www.informatics.jax.org/mg
    <LI>Often the assay sheets open at the bottom of the page.  If this happens, scroll to the top of the page to start your entry.</LI>
   <LI>Click the Manage Genes button in the upper-left corner.  The Editing: Genes dialog box appears.</LI>
   <LI>Type <b>Bone morphogenetic protein 4</b> in the box labeled Name.  Type <b>Bmp4</b> in the box labeled Symbol.  If there is any other information you want to add regarding the gene analyzed, put it in the Notes box.</LI>
-  <LI>Click <B>Save Changes</B> (otherwise the entry will be lost).  Type the data into the Genes worksheet.  (You can view this directly by clicking on the Genes tab at the bottom of the assay sheet page.)</LI>
+  <LI>Click <B>Save Changes</B> (otherwise the entry will be lost).  The data is entered into the Genes worksheet.  (You can view this directly by clicking on the Genes tab at the bottom of the assay sheet page.)</LI>
   <LI>Close the window or click the Cancel button.</LI>
-  <LI>As you did when creating your assay sheet, click the white box to the right of Gene Name.  A a drop-down list arrow appears.</LI>
+  <LI>As you did when creating your assay sheet, click the white box to the right of Gene Name.  A drop-down list arrow appears.</LI>
   <LI>Click the drop-down list arrow and select <B>Bone morphogenetic protein 4</B> from the menu of gene names.  Tab out of the box.  The remaining fields in the Gene section fill in automatically.</LI>
   </UL>
 <br>
@@ -1074,7 +1075,7 @@ This  documentation is available on the Web at http://www.informatics.jax.org/mg
    <LI>Click <B>Manage Probes</B>.  The Editing:  Probes dialog box appears.</LI>
    <LI>In the first box, type something similar to what you'd use in referring to your own probes, such as <b>Bmp4 Probe 1</b>.  Since the entries in this box will appear in the drop-down menus, each probe name must be unique for the GEN to function properly. </LI>
   <LI>In the Gene box, type <b>Bmp4</b>.  This should be the name of the gene the probe was derived from.</LI>
-<LI>Select cDNA from the Sequence Type drop-down menu.  If the option is not on the list,  type it into the box.</LI>
+<LI>Select cDNA from the Sequence Type drop-down menu.  If the option you want is not on the list,  type it into the box.</LI>
    <LI>Type <b>Mouse</b> into the Species box.</LI>
     <LI>The following boxes further define the probe specificity.  Type <b>D14814</b> into the Sequence Acc &#035; box, <b>NA 5600-5724</b> into Subsequence, and <b>Third Exon</b> into Region Covered.  Put any other information you want to add regarding the probe in Notes; for example, <b>synthesized 7&#047;11&#047;02; not hydrolyzed</b>.</LI>
   <LI>Click <b>Save Changes</b>, close the dialog box, and select <b>Bmp4 Probe1</b> from the drop-down menu of probe names on the assay sheet.  Tab out of the box. The remaining fields in the Probe section fill in automatically.</LI>
@@ -1153,7 +1154,7 @@ This  documentation is available on the Web at http://www.informatics.jax.org/mg
    <li>At this point, you should probably close the RNA In Situ: Results list box.  You can reopen it at any time by clicking <b>Hide&#047;Show Results Menu</b>.
    <li>Use the drop-down menu to choose the first specimen whose staining pattern you want to describe.  For this example, choose <b>6&#047;25&#047;02 E10.5 WT &#035;1</b>.
    <li>In the structure box, type the name of a structure you analyzed.  For this example, use <b>limb</b>. You can use 
-<a href="<!--#include file='include/mgihome_url.html'-->GXD/GEN/AD">The Mouse Anatomical Dictionary</a> as a reference for appropriate structure names. You can cut and paste the complete name and ID for the anatomical structure, e.g., <b>TS17;limb[2095]</b> or  <b>TS17;forelimb bud;ectoderm;apical ectodermal ridge [2098](AER)</b> or <b>TS17;hindlimb bud;ectoderm;apical ectodermal ridge [2102](AER)</b>.
+<a href="GEN/AD/">The Mouse Anatomical Dictionary</a> as a reference for appropriate structure names. You can cut and paste the complete name and ID for the anatomical structure, e.g., <b>TS17;limb[2095]</b> or  <b>TS17;forelimb bud;ectoderm;apical ectodermal ridge [2098](AER)</b> or <b>TS17;hindlimb bud;ectoderm;apical ectodermal ridge [2102](AER)</b>.
    <li>To describe the intensity of the staining, use an adjective from the Expression Level drop-down menu.  For this specimen, use <b>strong</b>.
    <li>To describe the Pattern of the staining, use a descriptor from the Pattern drop-down menu.  Since in this specimen, only part of the limb was stained, choose <b>regionally restricted</b>.
    <li>If there is an image of this embryo on the assay sheet, type the label of that image in the next box. 
@@ -1167,9 +1168,8 @@ This  documentation is available on the Web at http://www.informatics.jax.org/mg
 
 <p><a href="#toc">Back to Table of Contents</a><br><br>
 
-
-<!--#include file="include/footer.html"-->
 <hr>
+<!--#include file="include/footer.html"-->
 </BODY>
 </HTML>
 
