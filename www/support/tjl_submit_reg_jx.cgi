@@ -17,11 +17,9 @@ if '.' not in sys.path:
 	sys.path.insert(0, '.')
 import config
 
-import wi_config
 import cgi
 import os
 import string
-import wi_utils
 import mgi_utils 
 import errorlib
 
@@ -50,8 +48,6 @@ def hd():
         <TITLE>TJL HelpDesk User Registration</TITLE>
         </HEAD>
         <BODY BGCOLOR=#FFFFFF>"""
-
-#        wi_utils.small_hd()
 
         print """
         <H1>
@@ -238,7 +234,6 @@ Your registration has been forwarded to the appropriate TJL Support staff.
                 fd.close()
 
         print '<HR>'
-#        wi_utils.ft()
 
 print 'Content-type: text/html'
 print

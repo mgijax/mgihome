@@ -22,7 +22,6 @@ if '.' not in sys.path:
 	sys.path.insert(0, '.')
 import config
 
-import wi_config 
 import cgi
 import os
 import string
