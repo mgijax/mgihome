@@ -1,11 +1,10 @@
 <HTML>
 <HEAD>
-<TITLE>Allele and New Mutant Submission Form</TITLE>
+<TITLE>Mutant Submission Form</TITLE>
 </HEAD>
 <BODY BGCOLOR=#FFFFFF>
 <CENTER>
-<IMG SRC="http://www.informatics.jax.org/mgihome/images/mgi_small_banner.gif"
-WIDTH=501   HEIGHT=40   ALT="Mouse Genome Informatics">
+<!--#include file="include/banner.html"-->
 </CENTER>
 
 
@@ -123,54 +122,118 @@ Other Genome Location Information (cM, cR, or cytogenetic location; molecular lo
 <BR>
 <HR>
 <H3>Phenotype</H3>
-<B>Phenotypic categories </B>(check all that apply, where the allele shows an effect):<BR>
-
-<Table border=0 cellpadding=0 cellspacing=1 width=90%>
-
-<TR>
-<TD><INPUT TYPE="checkbox" NAME="category" VALUE="neurological" >neurological/neuromuscular</TD>
-<TD><INPUT TYPE="checkbox" NAME="category" VALUE="digits_limbs">digits, limbs</TD>
-<TD><INPUT TYPE="checkbox" NAME="category" VALUE="clinical_chem">clinical chemistry</TD>
-<TD><INPUT TYPE="checkbox" NAME="category" VALUE="immunological">immunological</TD>
-</TR>
-<TR>
-<TD><INPUT TYPE="checkbox" NAME="category" VALUE="behavior">behavioral </TD>
-<TD><INPUT TYPE="checkbox" NAME="category" VALUE="craniofacial">craniofacial</TD>
-<TD><INPUT TYPE="checkbox" NAME="category" VALUE="hemopoietic">hemopoietic system</TD>
-<TD><INPUT TYPE="checkbox" NAME="category" VALUE="body_patterning">developmental body patterning</TD>
-</TR
-<TR>
-<TD><INPUT TYPE="checkbox" NAME="category" VALUE="circling">circling</TD>
-<TD><INPUT TYPE="checkbox" NAME="category" VALUE="teeth">teeth</TD>
-<TD><INPUT TYPE="checkbox" NAME="category" VALUE="circulatory_system">circulatory system</TD>
-<TD><INPUT TYPE="checkbox" NAME="category" VALUE="embryonic_lethal">embryonic lethal/sublethal</TD>
-</tr>
-<TR>
-<TD><INPUT TYPE="checkbox" NAME="category" VALUE="pigment">pigment</TD>
-<TD><INPUT TYPE="checkbox" NAME="category" VALUE="eyes_sight">eyes, sight</TD>
-<TD><INPUT TYPE="checkbox" NAME="category" VALUE="cardiovascular_system">cardiovascular system</TD>
-<TD><INPUT TYPE="checkbox" NAME="category" VALUE="perinatal_lethal">perinatal lethal</TD>
-</tr>
-<tr>
-<TD><INPUT TYPE="checkbox" NAME="category" VALUE="skin_hair">skin, hair, vibrassae</TD>
-<TD><INPUT TYPE="checkbox" NAME="category" VALUE="hearing">hearing</TD>
-<TD><INPUT TYPE="checkbox" NAME="category" VALUE="respiratory_system">respiratory system</TD>
-<TD><INPUT TYPE="checkbox" NAME="category" VALUE="post_lethal">postnatal lethal</TD>
-</TR>
-<TR>
-<TD><INPUT TYPE="checkbox" NAME="category" VALUE="skeleton">skeleton (trunk)</TD>
-<TD><INPUT TYPE="checkbox" NAME="category" VALUE="growth">growth</TD>
-<TD><INPUT TYPE="checkbox" NAME="category" VALUE="renal_system">renal system</TD>
-<TD><INPUT TYPE="checkbox" NAME="category" VALUE="late_onset">late onset</TD>
-</TR>
-<tr>
-<TD><INPUT TYPE="checkbox" NAME="category" VALUE="tail">tail</TD>
-<TD><INPUT TYPE="checkbox" NAME="category" VALUE="reproduction">reproduction</TD>
-<TD><INPUT TYPE="checkbox" NAME="category" VALUE="other_viscera">other viscera</TD>
-<TD><INPUT TYPE="checkbox" NAME="category" VALUE="tumors">tumors</TD>
-</TABLE>
-</UL>
-
+<B>Phenotypic categories </B>(select all that apply, where the allele shows an effect):<BR>
+(<I>You can </I><A HREF="phenotypeVOC.shtml">browse the Classification Definitions).</A><BR>
+<! PhenoSlim Criteria Begin --->
+<SELECT NAME="string_list:phenotype" MULTIPLE SIZE=10>
+<OPTION><B>survival: embryonic lethality</B></OPTION>
+<OPTION><B>survival: perinatal lethality</B></OPTION>
+<OPTION><B>survival: postnatal lethality</B></OPTION>
+<OPTION><B>survival: premature death</B></OPTION>
+<OPTION><B>embryogenesis: developmental patterning abnormalities</B></OPTION>
+<OPTION><B>embryogenesis: embryonic tissue dysmorphology</B></OPTION>
+<OPTION><B>embryogenesis: extraembryonic tissue dysmorphology</B></OPTION>
+<OPTION><B>embryogenesis: placental dysmorphology</B></OPTION>
+<OPTION><B>embryogenesis: no defect detected</B></OPTION>
+<OPTION><B>growth/weight abnormality: embryonic</B></OPTION>
+<OPTION><B>growth/weight abnormality: postnatal</B></OPTION>
+<OPTION><B>eye: visual defects</B></OPTION>
+<OPTION><B>eye: dysmorphology</B></OPTION>
+<OPTION><B>eye: corneal or lens defect</B></OPTION>
+<OPTION><B>eye: no defect detected</B></OPTION>
+<OPTION><B>coat: hair growth defects</B></OPTION>
+<OPTION><B>coat: hair texture defects</B></OPTION>
+<OPTION><B>coat: color anomalies</B></OPTION>
+<OPTION><B>coat: hair follicle structure/orientation anomalies</B></OPTION>
+<OPTION><B>coat: no defect detected</B></OPTION>
+<OPTION><B>skin: pigmentation anomalies</B></OPTION>
+<OPTION><B>skin: texture/condition anomalies</B></OPTION>
+<OPTION><B>skin: no defect detected</B></OPTION>
+<OPTION><B>vibrissae: shape/orientation defects</B></OPTION>
+<OPTION><B>vibrissae: no defect detected</B></OPTION>
+<OPTION><B>extremities: limb dysmorphology</B></OPTION>
+<OPTION><B>extremities: digit dysmorphology</B></OPTION>
+<OPTION><B>extremities: tail dysmorphology</B></OPTION>
+<OPTION><B>extremities: no defect detected</B></OPTION>
+<OPTION><B>teeth: tooth dysmorphology</B></OPTION>
+<OPTION><B>teeth: no defect detected</B></OPTION>
+<OPTION><B>ears: auditory defects/deafness</B></OPTION>
+<OPTION><B>ears: dysmorphology</B></OPTION>
+<OPTION><B>ears: no defect detected</B></OPTION>
+<OPTION><B>musculature: muscle dysmorphology</B></OPTION>
+<OPTION><B>musculature: physiological defects</B></OPTION>
+<OPTION><B>musculature: no defect detected</B></OPTION>
+<OPTION><B>skeletal: osteogenesis/developmental anomalies</B></OPTION>
+<OPTION><B>skeletal: axial defects</B></OPTION>
+<OPTION><B>skeletal: extremities defects</B></OPTION>
+<OPTION><B>skeletal: craniofacial defects</B></OPTION>
+<OPTION><B>skeletal: no defect detected</B></OPTION>
+<OPTION><B>neurological/behavioral: aggression</B></OPTION>
+<OPTION><B>neurological/behavioral: conditioning defect</B></OPTION>
+<OPTION><B>neurological/behavioral: learning/memory impairment</B></OPTION>
+<OPTION><B>neurological/behavioral: seizures/epilepsy</B></OPTION>
+<OPTION><B>neurological/behavioral: fear/anxiety</B></OPTION>
+<OPTION><B>neurological/behavioral: motor capabilities/coordination/movement anomalies</B></OPTION>
+<OPTION><B>neurological/behavioral: sensory capabilities/reflexes/nociception abnormalities</B></OPTION>
+<OPTION><B>neurological/behavioral: maternal behavior anomalies</B></OPTION>
+<OPTION><B>neurological/behavioral: feeding/drinking preference anomalies</B></OPTION>
+<OPTION><B>neurological/behavioral: sleep pattern/circadian rhythm anomalies</B></OPTION>
+<OPTION><B>neurological/behavioral: other anomalies</B></OPTION>
+<OPTION><B>neurological/behavioral: no defect detected</B></OPTION>
+<OPTION><B>metabolism: abnormal lipid homeostasis</B></OPTION>
+<OPTION><B>metabolism: abnormal glucose homeostasis</B></OPTION>
+<OPTION><B>metabolism: other metabolic defect measured by clinical chemistry</B></OPTION>
+<OPTION><B>metabolism: other metabolic defect</B></OPTION>
+<OPTION><B>metabolism: no defect detected</B></OPTION>
+<OPTION><B>hematology: hemaotpoetic anomalies</B></OPTION>
+<OPTION><B>hematology: abnormal red blood cell count/anemia</B></OPTION>
+<OPTION><B>hematology: abnormal blood coagulation</B></OPTION>
+<OPTION><B>hematology: no defect detected</B></OPTION>
+<OPTION><B>heart/cardiovascular system: dysmorphology</B></OPTION>
+<OPTION><B>heart/cardiovascular system: blood circulatory defects</B></OPTION>
+<OPTION><B>heart/cardiovascular system: blood pressure anomalies</B></OPTION>
+<OPTION><B>heart/cardiovascular system: other functional anomalies</B></OPTION>
+<OPTION><B>heart/cardiovascular system: no defect detected</B></OPTION>
+<OPTION><B>respiratory system: dysmorphology</B></OPTION>
+<OPTION><B>respiratory system: respiratory distress or failure/functional anomalies</B></OPTION>
+<OPTION><B>respiratory system: no defect detected</B></OPTION>
+<OPTION><B>kidney/renal system: dysmorphology</B></OPTION>
+<OPTION><B>kidney/renal system: functional anomalies</B></OPTION>
+<OPTION><B>kidney/renal system: no defect detected</B></OPTION>
+<OPTION><B>liver/hepatic system: dysmorphology</B></OPTION>
+<OPTION><B>liver/hepatic system: functional anomalies</B></OPTION>
+<OPTION><B>liver/hepatic system: no defect detected</B></OPTION>
+<OPTION><B>digestive system: dysmorphology</B></OPTION>
+<OPTION><B>digestive system: functional anomalies</B></OPTION>
+<OPTION><B>digestive system: no defect detected</B></OPTION>
+<OPTION><B>immune system: lymphoid development/ B lymphocyte defects</B></OPTION>
+<OPTION><B>immune system: lymphoid development/ T lymphocyte defects</B></OPTION>
+<OPTION><B>immune system: other dysmorphology</B></OPTION>
+<OPTION><B>immune system: immunodeficiency</B></OPTION>
+<OPTION><B>immune system: hypersensitivity</B></OPTION>
+<OPTION><B>immune system: other functional anomaly</B></OPTION>
+<OPTION><B>immune system: no defect detected</B></OPTION>
+<OPTION><B>central nervous system: neural tube defects</B></OPTION>
+<OPTION><B>central nervous system: other dysmorphology</B></OPTION>
+<OPTION><B>central nervous system: LTP anomalies</B></OPTION>
+<OPTION><B>central nervous system: other functional anomalies</B></OPTION>
+<OPTION><B>central nervous system: no defect detected</B></OPTION>
+<OPTION><B>peripheral nervous system: dysmorphology</B></OPTION>
+<OPTION><B>peripheral nervous system: functional anomalies</B></OPTION>
+<OPTION><B>peripheral nervous system: no defect detected</B></OPTION>
+<OPTION><B>reproductive system: dysmorphology</B></OPTION>
+<OPTION><B>reproductive system: fertility/fecundity anomalies</B></OPTION>
+<OPTION><B>reproductive system: no defect detected</B></OPTION>
+<OPTION><B>endocrine glands: dysmorphology</B></OPTION>
+<OPTION><B>endocrine glands: functional anomalies</B></OPTION>
+<OPTION><B>endocrine glands: no defect detected</B></OPTION>
+<OPTION><B>tumors: increased incidence</B></OPTION>
+<OPTION><B>tumors: no increased incidence</B></OPTION>
+<OPTION><B>other aberrant phenotype</B></OPTION>
+<OPTION><B>no obvious phenotype: no defect detected</B></OPTION>
+</SELECT>
+<BR><BR>
+<! PhenoSlim Criteria End --->
 If appropriate classification(s) for the allele do not appear above, enter here: 
 <INPUT TYPE="text" NAME="othercategory" SIZE=50><BR>
 <BR><BR>
@@ -248,42 +311,4 @@ Warranty Disclaimer and Copyright Notice
 Copyright © 1996, 1999, 2002 by The Jackson Laboratory
 All Rights Reserved
 -->
-<!--<A HREF="http://www.jax.org/" target="_top">
-<IMG SRC="http://www.informatics.jax.org/mgihome/images/jax_logo.gif" ALIGN=right
-                        ALT="The Jackson Laboratory"></A>
-<SMALL>
-<A HREF="http://www.informatics.jax.org/mgihome/other/citation.shtml" target="_top">
-                        Citing These Resources</A>
-<BR>
-<A HREF="http://www.informatics.jax.org/mgihome/other/mgi_funding.shtml" target="_top">
-                        Funding Information</A>
-<BR>
-<A HREF="http://www.informatics.jax.org/mgihome/other/copyright.shtml" target="_top">
-                        Warranty Disclaimer &amp; Copyright Notice</A>.
-<BR>
-Send questions and comments to
-                        <A HREF="http://www.informatics.jax.org/mgihome/support/tjl_inbox.shtml"
-                        target="_top">User Support</A>.
-</SMALL>
 
-</BODY>
-</HTML>
-
-Warranty Disclaimer and Copyright Notice
-
- THE JACKSON LABORATORY MAKES NO REPRESENTATION ABOUT THE SUITABILITY OR 
- ACCURACY OF THIS SOFTWARE OR DATA FOR ANY PURPOSE, AND MAKES NO WARRANTIES, 
- EITHER EXPRESS OR IMPLIED, INCLUDING MERCHANTABILITY AND FITNESS FOR A 
- PARTICULAR PURPOSE OR THAT THE USE OF THIS SOFTWARE OR DATA WILL NOT 
- INFRINGE ANY THIRD PARTY PATENTS, COPYRIGHTS, TRADEMARKS, OR OTHER RIGHTS.  
- THE SOFTWARE AND DATA ARE PROVIDED "AS IS".
-
- This software and data are provided to enhance knowledge and encourage 
- progress in the scientific community and are to be used only for research 
- and educational purposes.  Any reproduction or use for commercial purpose 
- is prohibited without the prior express written permission of the Jackson 
- Laboratory.
-
-Copyright © 1996, 1999, 2000 by The Jackson Laboratory
-All Rights Reserved
--->
