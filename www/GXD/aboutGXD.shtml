@@ -4,31 +4,68 @@
 <BODY BGCOLOR="#ffffff">
 
 <H2>About GXD</H2>
-The purpose of the Gene Expression Database (GXD) is to store and integrate the many types of 
-gene expression data on the laboratory mouse; make these data freely and widely available in formats
-appropriate for thorough analysis; and provide links to other relevant resources placing
-this expression information within a larger biological and analytical context. 
-<P>
-Currently, the following data are 
-<A HREF="<!--#include file='include/wi_url.html'-->menus/expression_menu.shtml">searchable</A>:
-<P>
-<UL>
-<LI><A HREF="<!--#include file='include/wi_url.html'-->searches/gxdindex_form.shtml">GXD Index</A>, a searchable index of research reports documenting data on endogenous gene expression during mouse development, including references, genes, and embryonic stages analyzed, and expression assays used.<P>
-<LI><A HREF="<!--#include file='include/wi_url.html'-->searches/estclone_form.shtml">Mouse cDNA data</A>, including I.M.A.G.E. clones and ESTs.<P>
-<LI><A HREF="<!--#include file='include/wi_url.html'-->searches/expression_form.shtml">RT-PCR, RNA in situ hybridization, Immunohistochemistry, Northern and Western Blot data</A> 
-</UL>
-<P>GXD includes a large data set of RT-PCR data reporting expression data for 517 genes in <A HREF="<!--#include file='include/wi_url.html'-->userdocs/tissues.shtml">46 tissues</A>
- (provided by <A HREF="<!--#include file='include/wi_url.html'-->searches/reference.cgi?46734">Tom Freeman et al</A>,The Sanger Centre, UK). Additional expression data from the various assay types are now being entered into the database and made publicly
-available on a daily basis.
 
-<P>Currently, these data are acquired from the literature by database editors. In the future, we will acquire data primarily
-via electronic submission from laboratories. Prototypes of an electronic submission system are being tested and refined
-in collaboration with a number of laboratories in North America and Europe with the aim to produce a robust submission system for
-the community at large. (<EM>See</EM> <A HREF="gxdgen.shtml">details</A> about the GXD project.)
-<P>
-Find out <A HREF="../other/mgi_people.shtml#gxd_people">Who's Who</A> in GXD and other MGI projects.
-<P>  
-<HR><BR>
+The Gene Expression Database (GXD) is a community resource for gene expression information from the laboratory mouse.  GXD stores and integrates different types of expression data and makes these data freely available in formats appropriate for comprehensive analysis. There is particular emphasis on endogenous gene expression during mouse development. The project is funded by 
+<a href="http://www.nih.gov/">NIH</a>/<a href="http://www.nichd.nih.gov">NICHD</a> grant <a href="http://commons.cit.nih.gov/crisp3/CRISP_LIB.getdoc?textkey=6363398&p_grant_num=5R01HD033745-05&p_query=&ticket=428206&p_audit_session_id=3166451&p_keywords=">HD33745</a>. 
+
+<p>This page provides information about:
+<p>
+<UL>
+<LI><a href="#key">Key Concepts of GXD</a><br>
+<LI><A HREF="#acquisition">Data Acquisition</a><br>
+<LI><A HREF="#forms">GXD Query Forms</A><BR>
+<LI><A HREF="#whoswho">Who's Who</b> in GXD and other MGI projects</A>
+<li><a href="#pubs">Selected Publications</a>
+</ul>
+
+<h3><a name="key"></a>Key Concepts of GXD:</h3>
+<ul>
+<li>GXD stores primary data from different types of expression assays. By integrating these data, GXD provides, as data accumulate, increasingly complete information about the expression profiles of transcripts and proteins in different mouse strains and mutants. (<EM>See</EM> <A HREF="gxdconcept.shtml">details</A>.)<p>
+
+<li>GXD describes expression patterns using an extensive, hierarchically-structured dictionary of anatomical terms. In this way, expression results from assays with differing spatial resolution are recorded in a standardized and integrated manner and expression patterns can be queried at different levels of detail.  The records are complemented with digitized images of the original expression data. The Anatomical Dictionary for Mouse Development has been developed by our Edinburgh colleagues, as part of the joint <A HREF="gxdgen.shtml">Mouse Gene Expression Information Resource</a> project. <p>
+
+<li>GXD places the gene expression data in the larger biological context by establishing and maintaining interconnections with many other resources. Integration with MGD and MGS enables a combined analysis of genotype, sequence, expression, and phenotype data. Links to PubMed, Online Mendelian Inheritance in Man (OMIM), sequence databases, and databases from other species further enhance the utility of GXD. 
+</ul>
+
+
+<h3><a name="acquisition"></a>Data Acquisition</h3>
+<ul>
+<p>Expression data are acquired from the literature by our curatorial staff and via electronic submission. New data are made available on a daily basis.<br><br>
+
+To facilitate electronic submission of expression data, we have developed the Gene Expression Notebook (GEN). Implemented in Microsoft ExcelTM, the GEN is easy to use and to customize as a laboratory notebook. Data can effortlessly be exported in standardized format for electronic submission to GXD. Researchers interested in obtaining the GEN may contact 
+<a href="mailto:GEN@informatics.jax.org">GEN@informatics.jax.org</a>.
+</ul>
+
+<h3><a name="forms"></a><A HREF="<!--#include file="include/wi_url.html"-->menus/expression_menu.shtml">GXD Query Forms</A></h3>
+<UL>
+<LI>The <A HREF="<!--#include file="include/wi_url.html"-->searches/gxdindex_form.shtml">Gene Expression Literature Index</a>allows you to search for references on endogenous gene expression during development, including genes and ages analyzed and assays used. It covers, to the best of our knowledge, all relevant publications from 1993 to the present for all pertinent journals and 1990 to the present for major developmental journals.<p>
+
+<LI>The <A HREF="<!--#include file="include/wi_url.html"-->searches/expression_form.shtml">Gene Expression Data Query Form</a>  allows you to search for detailed expression results from RNA in situ, immunohistochemistry, Northern blot, Western blot, RT-PCR and RNAase protection experiments using many query parameters. Experimental results are described together with the probes, specimens and experimental conditions used and are complemented by digitized images of the original data.<p>
+
+<LI>The <A HREF="<!--#include file="include/wi_url.html"-->searches/anatdict_form.shtml">Mouse Anatomical Dictionary Browser</a> allows you to navigate through the extensive dictionary hierarchies for the different developmental stages, to locate specific anatomical structures within those hierarchies, and to obtain the expression results associated with those structures.<p>
+
+<li>The <A HREF="<!--#include file="include/wi_url.html"-->searches/estclone_form.shtml">cDNA Clone Query Form</a> allows you to search for expression information derived from cDNA source data using many query parameters. 
+
+</ul>
+
+<h3><a name="whoswho"></a>Find out <A HREF="../other/mgi_people.shtml">Who's Who</a> in GXD and other MGI projects </h3>
+
+
+<h3><a name="pubs"></a>Selected Publications</h3>
+<blockquote>
+
+Begley DA, Ringwald M. 2002. Electronic tools to manage gene expression data. Trends Genet 18:108-110.<br><br>
+
+Ringwald M, Eppig JT, Begley DA, Corradi JP, McCright IJ, Hayamizu TF, Hill DP, Kadin JA, Richardson JE.  2001.  The Mouse Gene Expression Database (GXD).  Nucleic Acids Res 29:98-101.<br><br>
+
+Ringwald M, Mangan ME, Eppig JT, Kadin JA, Richardson JE, and the Gene Expression Database Group.  1999.  GXD:  A Gene Expression Database for the laboratory mouse.  Nucleic Acids Res 27:106-112.<br><br>
+
+Bard JBL, Kaufman MH, Dubreuil C, Brune RM, Burger A, Baldock RA and Davidson DR. 1998. An internet-accessible database of mouse developmental anatomy based on a systematic nomenclature. Mech Dev 74:111-120.<br><br>
+
+Ringwald M, Baldock R, Bard J, Kaufman M, Eppig JT, Richardson JE, Nadeau JH, Davidson D.  1994.  A Database for Mouse Development.  Science 265:2033-2034.
+</blockquote>
+
+<HR>
 <!--#include file="include/footer.html"-->
 </BODY>
 </HTML>
