@@ -8,9 +8,8 @@
 #	to send to a mail alias specified below.
 
 import sys
-sys.path.insert (0, '/usr/local/mgi/lib/python/')
-##sys.path.insert (0, '.')
-sys.path.insert (0, '/home/jsb/work/mgihome/lib/python/')
+if '.' not in sys.path:
+	sys.path.insert (0, '.')
 import string
 import types
 import os
@@ -65,7 +64,7 @@ labels = {
 	'method'	: 'Method of Allele Generation',
 	'othermethod'	: '"Other" Specification',
 	'promoter'	: 'Transgene Promoter',
-	'cellline'	: 'ES Cell Line',
+	'celline'	: 'ES Cell Line',
 	'mode'		: 'Mode of Inheritance',
 	'chromosome'	: 'Chromosome Location',
 	'location'	: 'Other Genome Location Information',
@@ -76,12 +75,12 @@ labels = {
 field_order = [
 	('Contact Details',
 		[ 'lastname', 'firstname', 'email', 'organization',
-			'address1', 'address2', 'city', 'state', 'postalcode',
+			'address1', 'address2', 'city', 'state', 'zip',
 			'country', 'phone', 'fax' ]),
 	('Allele or Mutant',
 		['genesymbol', 'allele', 'allelename',
 		'newgenesymbol', 'newgenename', 'synonyms',
-		'strain', 'method', 'othermethod', 'promoter', 'cellline',
+		'strain', 'method', 'othermethod', 'promoter', 'celline',
 		'mode', 'chromosome', 'location']),
 	('Phenotype',
 		['category', 'othercategory', 'description', 'remarks']),
