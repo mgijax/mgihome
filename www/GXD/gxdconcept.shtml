@@ -1,25 +1,34 @@
 
 <HTML>
-<TITLE>GXD: Integration of expression data</TITLE>
+<TITLE><h2 align=center>The Gene Expression Database (GXD) - Integration of Expression Data
+</TITLE>
 <!--#include file="include/banner.html"-->
 <BODY BGCOLOR="#ffffff">
+<h2 align=center>The Gene Expression Database (GXD)</h2>
+
+<CENTER><font size="-1">| <A HREF="/mgihome">MGI Home</A> 
+| <A HREF="<!--#include file='include/wi_url.html'-->/searches/expression_form.shtml">Search GXD</a>
+| <A HREF="<!--#include file='include/wi_url.html'-->">Search MGI</A> |</center></FONT> 
 
 
-<h3>GXD: Integration of Expression Data</h3>
+<h3>Integration of Expression Data</h3>
 
-
-
-<p>Different expression assays supply different but complementary information about gene products and their patterns of expression. In situ studies at the RNA and protein level provide detailed spatial expression information. Northern and Western blot analysis reveal the number and sizes of transcripts and proteins, respectively. Methods such as RNAase protection and RT-PCR can detect small amounts of and small differences in transcripts. The analysis of cDNA clones gives detailed structural data. Array-based expression methods provide large amounts of relative quantitative expression information. Only by combining the various types of expression data, can we gain comprehensive insights into the expression profiles of transcripts and proteins.
-<p>
+<p>Different types of expression assays supply different but complementary information about gene products and their patterns of expression. In situ studies at the RNA and protein level provide detailed spatial expression information. Northern and Western blot analysis reveal the number and sizes of transcripts and proteins, respectively. Methods such as RNAase protection and RT-PCR can detect small amounts of and small differences in transcripts. The analysis of cDNA clones gives detailed structural data. Array-based expression methods provide large amounts of quantitative expression information. Only by combining the various types of expression data, can we gain comprehensive insights into the expression profiles of transcripts and proteins.
+<P>
 <IMG SRC="gxd_poster.gif" ALIGN=left hspace=12>
-<p>
-The design of GXD follows this paradigm. GXD stores primary expression data rather than derived expression information. The time, tissue, and level of expression, the genetic origin of the sample, the number and sizes of detected bands and, by cross-reference to sequence databases, sequence information is recorded together with the molecular probes and the experimental conditions used. The molecular probes are conceptualized as the driving force determining the results in each assay. This concept also applies to array expression experiments. Here, the cDNAs in the solid phase constitute molecular probes, and complex cDNA probes are analogous to tissues.  
 
-<p>In this format the data can be integrated, new data and new assay types can be readily added, and novel insights resulting from new data can be represented dynamically. Access to primary expression data provides the best basis for proper interpretations. Display and analysis tools that support data interpretation and synthesis of higher order information from the available primary data can be developed as a separate layer of software. As data accumulate, the integration GXD provides yields increasingly complete information about what transcripts and proteins are produced by what genes; where, when and in what amounts these gene products are expressed; and how their expression varies in different mouse strains and mutants. <br><br>
+<p>The design of GXD follows this paradigm, as illustrated on the left. GXD stores primary expression data rather than derived expression information. The time, tissue, and level of expression, the genetic origin of the sample, the number and sizes of detected bands and, by cross-reference to sequence databases, sequence information is recorded together with the molecular probes and the experimental conditions used. The molecular probes are conceptualized as the driving force determining the results in each assay. This concept also applies to array expression experiments. Here, the cDNAs in the solid phase constitute molecular probes, and complex cDNA probes are analogous to tissues.
 
-<p>Back to <a href="aboutGXD.shtml">About GXD</a>
+<P>Access to primary expression data provides the best basis for proper interpretations. Further, this format allows new data and new assay types to be readily added and data to be integrated.  As data accumulate, the integration of GXD yields increasingly complete information about what transcripts and proteins are produced by what genes; where, when and in what amounts these gene products are expressed; and how their expression varies in different mouse strains and mutants.
 
-<br><br><br><br>  
+
+
+<p>Back to <a href="aboutGXD.shtml">About GXD</a>.
+
+<br><br>
+
+<br><br>       
+<br><br>
 
 <br><br>       
 
