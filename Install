@@ -143,18 +143,6 @@ ln -s ${WI_PATH}www/include/bodyStart.html bodyStart.html
 ln -s ${WI_PATH}www/include/bodyStop.html bodyStop.html
 cd $TOP
 
-# make the www/GXD/AD/ directory and fill it
-
-cd www/GXD/
-if [ ! -d AD ]; then
-	echo "Making 'AD' directory in `pwd`"
-	mkdir AD
-fi
-cd $TOP/admin
-echo "Generating anatomical dictionary files..."
-gen_anatdictionary
-cd $TOP
-
 # make sure the www directory is executable by the right group
 
 chmod -R 750 www
