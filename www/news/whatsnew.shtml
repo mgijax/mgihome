@@ -21,8 +21,10 @@
 <H3><dt>New MGI Vocabulary Browsers</h3></dt>
 <!---->
 <dd>You can now view and query the following structured vocabularies: 
+<p>
 <ul>
-	<li><a href="<!--#include file="include/go_url.html"-->GO/go_url.html">Gene Ontology (GO) Browser</a><p>
+<li><a href="<!--#include file="include/go_url.html"-->">Gene Ontology (GO) Browser</a>
+<p>
 The GO Browser associates each ontology term with a precise definition 
 of that term, complete with citations and  synonyms. 
 Each ontology is organized as a Directed Acyclic Graph (DAG). 
@@ -31,23 +33,24 @@ and you can immediately visualize their relationship. Although the structure of 
 is "tree-like," a term may actually have more than one parent and appear several times
 in the browser. A given term may occur in any or all of the following categories:
 <p>
-		<ul>
-		<li><b><a href="<!--#include file="include/go_url.html"-->GO.cgi?id=GO:0003674">
+<ul>
+<li><b><a href="<!--#include file="include/go_url.html"-->GO.cgi?id=GO:0003674">
 Molecular Function</a></b> - Tasks performed by individual gene products. <br>
 Examples: transcription factor; DNA helicase
-		<li><b><a href="<!--#include file="include/go_url.html"-->GO.cgi?id=GO:0008150">
+<li><b><a href="<!--#include file="include/go_url.html"-->GO.cgi?id=GO:0008150">
 Biological Process</b></a> - Broad biological goals accomplished by ordered assemblies 
 of molecular functions. 
 <br>Examples: mitosis; purine metabolism
-		<li><b><a href="<!--#include file="include/go_url.html"-->GO.cgi?id=GO:0005575">
+<li><b><a href="<!--#include file="include/go_url.html"-->GO.cgi?id=GO:0005575">
 Cellular Component</b></a> - Subcellular structures, locations, and macromolecular 
 complexes. 
-		<br>Examples: nucleus; telomere; origin recognition complex
-		</ul>
-		<!--As of September, there are approximately 4800 terms in the GO. In MGD, 
-	approximately 5300 mouse genes are associated with at least one GO term.-->
-		<p>
-<li><a href=anatDictionary/indes.shtml>Mouse Anatomical Dictionary</a><br>
+<br>Examples: nucleus; telomere; origin recognition complex
+</ul>
+<!--As of September, there are approximately 4800 terms in the GO. In MGD, 
+approximately 5300 mouse genes are associated with at least one GO term.-->
+<p>
+<li><a href="<!--#include file="include/wi_url.html"-->searches/anatdict_form.shtml">Mouse Anatomical Dictionary
+</a>
 <p>The Anatomical Dictionary is a vocabulary comprised of 28 Theiler stages. 
 Each Theiler stage is a tree which is a subvocabulary of the Dictionary. 
 There are brief stage descriptions next to each stage name.
@@ -63,7 +66,7 @@ plotted against the mouse genome. Beside each chromosome is a set of histograms,
  the density of known orthologies in a particular mouse chromosomal region. As always, the 
 maps are active. <ul><li>You can click on a mouse chromosome to retrieve a detailed linkage map 
 showing all orthologs.
-<li>You can click on a histogram to retrieve a compact tablular listing of orthologs for 
+<li>You can click on a histogram to retrieve a compact tabular listing of orthologs for 
 that part of a chromosome.
 </ul>
 <p>The following whole genome homology maps are available:
@@ -74,14 +77,11 @@ human on mouse background</a>
 rat on mouse background</a>
 </ul>
 </dd>
-<h3><dt><a href="<!--#include file="include/wi_url.html"-->userdocs/glossary.shtml">Expanded MGI Glossary</a></dt></h3>
+<h3><dt>Expanded MGI Glossary</dt></h3>
 <dd><p>We have expanded the MGI Glossary. The Glossary contains terms useful in understanding mouse genetics.
 You can find terms defined in a general sense as they apply to eukaryotic genetics, 
 particularly mouse genetics. You will also find some terms defined as they apply to MGI
-(for example, <b>gene</b>).  Genetic terms in the
-<A HREF="<!--#include file="include/wi_url.html"-->
-userdocs/helpdocs_menu.shtml">help documents</A> are linked to their 
-definitions in the glossary. The list of terms included in the Glossary will 
+(for example, <b>gene</b>). The list of terms included in the Glossary will 
 grow with each new release.</dd>
 <!----------------->
 
@@ -90,14 +90,7 @@ grow with each new release.</dd>
 <dd>Use the new web interface to MGI-LIST, RAT-LIST, and PHENOME-LIST 
 to read or send messages, subscribe or unsubscribe from a list, 
 or modify your subscriber options.</dd>
-<!----------------->
 
-<h3><dt><A HREF="../other/mgi_jobs.shtml">Professional
-Opportunities</A></dt></h3>
-<!-- this is the link to the job openings. -->
-<dd>Join us!  Live on the coast of Maine and <B>
-<FONT COLOR="#DC143C">walk on the wild side</B></FONT></dd>.
-<!----------------->
 </dl>
 
 <!-- standard footer and disclaimer -->
@@ -140,6 +133,6 @@ Data and Nomenclature Submissions</a> menu.
 <li>You can find general rules for naming alleles at 
 <a href="../submissions/submit.shtml">Submitting New Mutant and Allele Data</a>
 </ul>
-</dd> -->
+</dd>-->
 
 
