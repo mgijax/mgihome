@@ -7,6 +7,7 @@ import sys
 if '.' not in sys.path:
         sys.path.insert(0, '.')
 import config 
+import os
 
 import string
 
@@ -22,7 +23,8 @@ def bodyStart ():
 	# Effects: nothing
 	# Throws: nothing
 
-	fp = open ('include/bodyStart.html', 'r')
+	fp = open (os.path.join (config.lookup('MGIHOME_PATH'),
+		'www/include/bodyStart.html'), 'r')
 	lines = fp.readlines()
 	fp.close()
 	return string.join (lines, '')
