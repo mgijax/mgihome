@@ -1,6 +1,6 @@
 <HTML>
 <HEAD>
-<TITLE>Gene Ontology Information</TITLE>
+<TITLE>Annotating to GO at MGI</TITLE>
 </HEAD>
 
 <BODY BGCOLOR="#FFFFFF">
@@ -24,39 +24,26 @@
 </TABLE>
 
 <P><A NAME="Annotating"></A>
-MGI uses database-mining and other strategies to automate gene annotation.  The electronic annotations are attributed to MGI references J:56000 and J:60000. In addition, scientific curators review the published literature and extract information to manually annotate gene records.  The annotated records include the supporting references.
-</P>
-Automated annotation strategies include:
+MGI uses database-mining and other strategies to automate gene annotation.  The electronic annotations are attributed to MGI references J:56000 and J:60000. In addition, scientific curators review the published literature and extract information to manually annotate gene records.  The annotated records include the supporting references.</P>
+<p>Automated annotation strategies include:</P>
 <UL>
-<LI>
-mapping the Enzyme Commission (EC) number associated with a gene to the EC number attached to GO terms
-</LI>
-<LI>
-translating SWISS-PROT "Keywords" associated with a gene to appropriate GO terms
-</LI>
-<LI>
-associating GO terms to a gene based upon proper gene nomenclature; for example, G-protein coupled receptor genes can be annotated as:
-</LI>
-<UL>
-<LI>
-Molecular Function:</TD><TD> G protein linked receptor</TD>             
-</LI>    
-<LI>
-Cellular Component: integral plasma membrane protein            
-</LI>    
-<LI>
-Biological Process: G protein linked receptor signalling pathway        
-</LI>
-</UL>
+<LI>mapping the Enzyme Commission (EC) number associated with a gene to the EC number attached to GO terms</LI>
+<LI>translating SWISS-PROT "Keywords" associated with a gene to appropriate GO terms</LI>
+<LI>associating GO terms to a gene based upon proper gene nomenclature; for example, G-protein coupled receptor genes can be annotated as:
+    <UL>
+    <LI>Molecular Function: G protein linked receptor</LI>    
+    <LI>Cellular Component: integral plasma membrane protein</LI>    
+    <LI>Biological Process: G protein linked receptor signalling pathway</LI>
+    </UL></li>
 </UL>    
-If you have questions, need assistance, or wish to report a problem with specific annotations, please contact MGI at mgi-help@informatics.jax.org.
+<p>If you have questions, need assistance, or wish to report a problem with specific annotations, please contact MGI at mgi-help@informatics.jax.org.</p>
 
 <BR>
 <BR>
-<HR><BR>
-
-
-<!--#include file="include/bodyStop.html"--></BODY></HTML>
+<HR>
+<!--#include file="include/bodyStop.html"-->
+</BODY>
+</HTML>
 <!--
 Warranty Disclaimer and Copyright Notice
 
