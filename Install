@@ -57,6 +57,8 @@ do
 			LIBDIRS=$value;;
 		MGIHOME_PATH)
 			MGIHOME_PATH=$value;;
+		MGIHOME_URL)
+			MGIHOME_URL=$value;;
 		GEN_PATH)
 			GEN_PATH=$value;;
 		PYTHON)
@@ -97,7 +99,7 @@ cd $TOP
 
 # add links to python and the config file from selected directories
 
-for dir in www/nomen www/lists www/support www/submissions admin www/feedback www/submissions/strains
+for dir in www/nomen www/lists www/support www/submissions admin www/feedback www/submissions/strains www/egul
 do
 	cd $dir
 
@@ -113,6 +115,12 @@ do
 
 	cd $TOP
 done
+
+# process the eGUL links.dat file
+
+cd www/egul/
+./install $MGIHOME_URL
+cd $TOP
 
 # make the www/include directory and generate any include files
 
