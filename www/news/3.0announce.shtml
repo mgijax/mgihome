@@ -3,7 +3,7 @@
 <TITLE><!--#include file='include/mgiversion.html'--> MGI Release 3.0 Announcement - May 24, 2004</TITLE>
 <META NAME ="keywords" CONTENT="Mouse Genome Informatics, Mouse Genome Database, Gene Expression Database, genetics, MGI, genes, gene ontology, mouse anatomical structures, Mouse Anatomical Dictionary, Mouse Anatomical Dictionary Browser, mice, SQL, querying, sequence, sequence searching, sequence queries, database queries, query forms, sequence representation, data translation, controlled vocabulary, sequence attribute, sequence source, complex query, downloaded sequences, FASTA">
 <META NAME="description" CONTENT="This page details the changes in the to MGI 2.98 release at The Jackson Laboratory."> 
-<!--Last updated on May 12, 2004-->
+<!--Last updated on May 13, 2004-->
 </HEAD>
 <!--#include file="include/bodyStart.html"-->
 <BODY BGCOLOR="#ffffff">
@@ -32,13 +32,17 @@
 <P>We now maintain data on all mouse sequences from GenBank, RefSeq, Swiss-Prot,
 DoTS, and the TIGR and NIA mouse gene indices. Using our curated associations
 between mouse genes/markers and sequences, you can search for sequences by
-all of our gene information. This includes gene nomenclature, map position, gene function (GO terms and Interpro domains), expression, and phenotypes.
-</P>
+all of our gene information. This includes gene nomenclature, map position, gene function (GO terms and Interpro domains), expression, and phenotypes. Integration is via source data (such as strain, tissue, library, cell line, sex) and through associations to other MGI objects (such as genes and clones). </P>
 
-<P>We also translate the source information for all the sequences to our controlled vocabularies for library name, strain, tissue, cell line, and
-sex. This means that you can use the <a href="<!--#include file='include/wi_url.html'-->/searches/sequence_form.shtml">Mouse Sequence Query Form</a> to search for sequences by combining source attributes with gene information. For example, you can put <I>C57BL/6J</I> in the Strain/Species field, select <I>6</I> in the Map Position field and get back all the sequences located on chromosome 6 for every synonym of this term from all versions of GenBank.
 
-<P>From your list of matches, you can select specific sequences and download them in tab-delimited or FASTA format. You can also can select type, length, and strain information from the Sequences section of the MGI gene detail pages and download these in FASTA format or forward them to MouseBLAST.</P>
+<P>We translate the source information for all the sequences to our controlled vocabularies for library name, strain, tissue, cell line, and
+sex. This means that you can use the <a href="<!--#include file='include/wi_url.html'-->/searches/sequence_form.shtml">Mouse Sequence Query Form</a> to search for sequences by combining source attributes with gene information. For example, you can enter <I>C57BL/6J</I> in the Strain/Species field, select <I>RNA</I> in the Type field, and <I>6</I> in the Map Position field and get back all RNA sequences located on chromosome 6 for every synonym of this strain. 
+
+<P>Query reports return information about the type, length, mouse strain, and description of the sequences as well as data about any MGI curated clones/probes associated to the sequence such as segment name, clone collection, and clone ID. 
+
+<P>From your list of matches, you can select specific sequences and download them in tab-delimited or FASTA format. </p>
+
+<P>You can also can select type, length, and strain information from the Sequences section of MGI gene detail pages and download these in FASTA format or forward them to MouseBLAST.</P>
 
 <P>MouseBLAST query results for sequences or sequence IDs contain enhanced links to MGI mouse gene records associated with any matches. You can also see the chromosome to which the gene is mapped. And, you can now re-BLAST sequences directly from MouseBLAST output.</p>
 
