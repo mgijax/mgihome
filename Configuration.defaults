@@ -1,5 +1,5 @@
-# path to the web interface from which to import libraries
-WI_PATH		/usr/local/mgi/wi/current/
+# colon-delimited list of directories in which to find Python libraries
+LIBDIRS		/usr/local/mgi/lib/python/
 
 # path to our home installation
 MGIHOME_PATH	/usr/local/mgi/mgihome/current/
@@ -28,3 +28,6 @@ MGIHOME_URL	http://www.informatics.jax.org/mgihome/
 
 # full URL to the associated ftp site
 FTP_URL		ftp://ftp.informatics.jax.org/
+
+# full URL to the GO browser
+GO_URL		http://www.informatics.jax.org/go/
