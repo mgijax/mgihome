@@ -138,6 +138,12 @@ if libdirs is not None:
 		if libdir not in sys.path:
 			sys.path.insert (0, libdir)
 
+# export other variables to the environment as needed
+
+for var in [ 'SYBASE', 'LD_LIBRARY_PATH' ]:
+	if lookup(var) != None:
+		os.environ[var] = lookup(var)
+
 # ********** end of module initialization **********
 #
 # Warranty Disclaimer and Copyright Notice
