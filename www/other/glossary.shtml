@@ -270,10 +270,6 @@ In MGI and other databases, Boolean refers to the kind of logical relationship a
 <P><DT><B><A NAME="cDNA">cDNA</A></B></dt><dd>Complementary DNA. A <A HREF="#DNA">DNA</A> copy of an 
 <A HREF="#mRNA">mRNA</A> or complex sample of mRNAs, made using <A HREF="#reverse_transcriptase">reverse transcriptase</A>.</dd></p>
 
-
-<P><DT><B><A NAME="cdna_sequencing">cDNA sequencing</A></B></dt>
-<DD>High-throughput analysis of <A href="#cDNA">cDNAs</A>, the representatives of the cell's messenger RNAs <A href="#mRNA">(mRNAs)</A> for gene expression, catalogued either (<A href="#est">ESTs</A> or full length.</dd></p>
-
 <P><DT><B><A NAME="cellcomponent">Cellular Component</A></B></dt><dd>Refers to subcellular structures, locations, and macromolecular complexes. Some examples are <A HREF="#nucleus">nucleus</A>, 
 <A HREF="#telomere">telomere</A> and <B>origin recognition complex</B>. In the GO Project vocabularies, Cellular Component is a primary class of terms. See the <A HREF="http://www.geneontology.org/">GO Consortium</A> site for further information.</dd></p>
 
@@ -444,6 +440,8 @@ Figure</A> at <A HREF="#NHGRI">NHGRI</A>. <BR>See also <A HREF="#central_dogma">
 <P><DT><B><A NAME="dbms">DBMS</A></B></dt><dd>Database Management System. A collection of computer programs that allow storage, modification, and extraction of information from a 
 <A HREF="#database">database</A>. There are many different types of DBMSs, ranging from small systems that run on personal computers to huge systems that run on mainframes. The following are examples of database applications: <UL><LI>computerized library systems <LI>automated teller machines <LI>flight reservation systems <LI>computerized parts inventory systems <LI><A HREF="#MGI">MGI</A></UL></dd></p>
 
+<P><DT><B><A NAME="ddbj">DDBJ</A></b></dt><dd><A HREF="#http://www.ddbj.nig.ac.jp/">DNA Data Bank of Japan. The main sources for the sequences are direct submissions from individual researchers, genome sequencing  projects, and patent applications. DDBJ is part of the Sequence Database Consortium and shares information with <A HREF="#embl">EMBL</A> and <A href="#genbank">GenBank</A>. <on a daily basis The three data banks share virtually the same data at any given time.></dd></p>
+
 <P><DT><B><A NAME="default">Default</A></B></dt><dd>In <A HREF="#MGI">MGI</A> and in computer science in general, a setting or action assumed by a computer program when none is specified by the user.</dd></p>
 
 <P><DT><B><A NAME="degenerate">Degenerate</A></B></dt><dd>A term describing one of the qualities of the 
@@ -500,7 +498,7 @@ Figure</A> at <A HREF="#NHGRI">NHGRI</A>. <BR>See also <A HREF="#central_dogma">
 
 
 <P><DT><B><A NAME="dots">DoTS</A></B></dt>
-<DD><A HREF="#http://www.allgenes.org/">Database of Transcribed Sequences</a>. DoTS is a human and mouse transcript index created from all publicly available transcript sequences. Input sequences are clustered and assembled to form the DoTS Consensus Transcripts that comprise the index. These transcripts are assigned identifiers of the form DT.123456 (often referred to as "dots"). The transcripts are in turn clustered to form putative DoTS Genes. These are assigned identifiers of the form DG.1234356.</dd></p>
+<DD><A HREF="#http://www.allgenes.org/">Database of Transcribed Sequences</a>. The DoTS mouse transcript index created from all publicly available transcript sequences. Input sequences are clustered and assembled to form the DoTS Consensus Transcripts that comprise the index.</dd></p>
 
 
 <P><DT><B><A NAME="double_helix"></A>Double Helix</b><dd>The shape that two linear strands of <A HREF="#DNA">DNA</A> assume when bonded together.</dd></p>
@@ -520,7 +518,7 @@ Figure</A> at <A HREF="#NHGRI">NHGRI</A>. <BR>See also <A HREF="#central_dogma">
 
 <P><DT><B><A NAME="electroporation">Electroporation</A></B></dt><dd>The use of strong, brief pulses of electric current to create temporary holes in cell <A HREF="#membrane">membranes</A>, allowing the introduction of <A HREF="#DNA">DNA</A>.</dd></p>
 
-<P><DT><B><A NAME="embl">EMBL</A></b></dt><dd><A HREF="#http://www.ebi.ac.uk/embl/">European Molecular Biology Laboratory Nucleotide Sequence Database</a> (also known as EMBL-Bank) constitutes Europe's primary nucleotide sequence resource. Main sources for DNA and RNA sequences are direct submissions from individual researchers, genome sequencing  projects and patent applications. </dd></p>
+<P><DT><B><A NAME="embl">EMBL</A></b></dt><dd><A HREF="#http://www.ebi.ac.uk/embl/">European Molecular Biology Laboratory Nucleotide Sequence Database</a> (also known as EMBL-Bank) constitutes Europe's primary nucleotide sequence resource. The main sources for DNA and RNA sequences are direct submissions from individual researchers, genome sequencing  projects, and patent applications. EMBL is part of the Sequence Database Consortium and shares information with <A HREF="#ddbj">DDBJ</A> and <A href="#genbank">GenBank</A>.</dd></p>
 
 <P><DT><B><A NAME="embryonic_stem">Embryonic Stem (ES) Cells</A></B></dt><dd>Undifferentiated cells derived from <A HREF="#blastocyst">blastocyst</A>-stage embryos. ES cells can differentiate in culture to a number of different cell types. When incorporated into <A HREF="#chimera">chimeric</A> mouse embryos they are totipotent: they can differentiate into any cell type in the mouse.</dd></p>
 
@@ -579,18 +577,14 @@ Figure</A> at <A HREF="#NHGRI">NHGRI</A>. <BR>See also <A HREF="#central_dogma">
 <A HREF="#penetrance">Penetrance</A>.</dd></p>
 
 <!-- FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF --><A NAME="f"></A>
-<P><DT><B><A NAME="fasta"></A>FASTA format</B><DD>A sequence format beginning with a single-line description followed by lines of sequence data for use when  searching bioinformatic BLAST tools. The description line is distinguished from the sequence data by a greater-than (">") symbol in the first column. All lines of text are 80 (or fewer) characters in length. Blank lines are not allowed in the middle of FASTA input.</p>
+<P><DT><B><A NAME="fasta"></A>FASTA format</B><DD>A common sequence format beginning with a single-line description followed by lines of sequence data for use when searching bioinformatic tools such as BLAST. The description line is distinguished from the sequence data by a greater-than (>) symbol in the first column. All lines of text are 80 (or fewer) characters in length. Blank lines are not allowed in the middle of FASTA input.</p>
 <P>An example of a protein sequence in FASTA format is:
 <PRE>
 &gt;GI|129295|sp|P01013|OVAX_CHICK GENE X PROTEIN (OVALBUMIN-RELATED) <br>QIKDLLVSSSTDLDTTLVLVNAIYFKGMWKTAFNAEDTREMPFHVTKQESKPVQMMCMNNSFNVATLPAE <br>KMKILELPFASGDLSMLVLLPDEVSDLERIEKTINFEKLTEWTNPNTMEKRRVKVYLPQMKIEEKYNLTS <br>VLMALGMTDLFIPSANLTGISSAESLKISQAVHGAFMELSEDGIEMAGSTGVIEDIKHSPESEQFRADHP <br>FLFLIKHNPTNTIVYFGRYWSP
 </PRE>
- <p>See also:
-<UL>
-  <LI><a href="<!--#include file='include/mouseblast_url.html'-->mblast_seq_formats.shtml">MouseBLAST Help - Sequence Formats</A></LI>
-    <LI><A href="#free_text">Free-text format</A></LI>
-
-  <LI><A href="#GCG_format">GCG format</A></LI>
-  <LI><A HREF="http://www.genomatix.de/online_help/help/sequence_formats.html">DNA sequence formats</A></LI></UL></dd></p>
+<P>See 
+<a href="<!--#include file='include/mouseblast_url.html'-->/current/user_docs/mblast_seq_formats.shtml">MouseBLAST Help - Sequence Formats</A> for additional details.</P>
+</dd></p>
 
 
 <P><DT><B><A NAME="field"></A>Field</B><DD>In a <A HREF="#relational_db">relational database</A>, an item of information, such as a <A HREF="#chromosome">chromosome</A> number, or the <A HREF="#centimorgan">centimorgan</A> length on a <A HREF="#genetic_map">genetic map</A>. Some fields are numeric, while others are textual; some are long, while others are short. In addition, every field has a name, called the <i>field name</i>. In <A HREF="#database_management">database management systems</A>, a field can be required, optional, or calculated. A required field is one in which you must enter data, while an optional field is one you may leave blank. A calculated field is one whose value is derived from some formula involving other fields. You do not enter data into a calculated field; the system automatically determines the correct value. A collection of fields is called a 
@@ -613,17 +607,6 @@ Figure</A> at <A HREF="#NHGRI">NHGRI</A>. <BR>See also <A HREF="#central_dogma">
 <P><DT><B><A NAME="frameshift">Frameshift</A></B></dt><dd>A type of <A HREF="#mutation">mutation</A> in which there is an <A HREF="#insertion">insertion</A> or <A HREF="#deletion">deletion</A> that changes the <A HREF="#reading_frame">reading frame</A>.</dd></p>
 
 
-<P><DT><B><A NAME="free_text">Free-text format</A></B></dt>
-<DD>A method of retrieving large volumes of unstructured biological data. The purpose is to retrieve all the relevant information (high recall), while including as little of the non-relevant information as possible (high precision). In the case of sequences, for example, the unstructured data can be a string of characters representing that sequence or it can be in the form of free-text. Free-text format may contain <A HREF="
-http://www.genomatix.de/online_help/help/sequence_formats.html#IUPAC">IUPAC characters</A> plus any other characters. The non-IUPAC characters are filtered out.<br>See also:
-<UL>
-  <LI><a href="<!--#include file='include/mouseblast_url.html'-->mblast_seq_formats.shtml">MouseBLAST Help - Sequence Formats</A></LI>
-    <LI><A href="#fasta">FASTA format</A></LI>
-
-  <LI><A href="#GCG_format">GCG format</A></LI>
-  <LI><A HREF="http://www.genomatix.de/online_help/help/sequence_formats.html">DNA sequence formats</A></LI></UL></dd></p>
-
-
 <!-- GGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGG --><A NAME="g"></A>
 <P><DT><B><A NAME="gain-of-function">Gain-of-function Mutation</A></B></dt><dd>A type of <A HREF="#mutation">mutation</A> in which the altered <A HREF="#gene_product">gene product</A> possesses a new <A HREF="#molecular_function">molecular function</A> or a new pattern of <A HREF="#gene_expression">gene expression</A>. Gain-of-function mutations are almost always <A HREF="#dominant">dominant</A> or <A HREF="#semidominant">semidominant</A>. <BR>See also:<UL> <LI>
 <A HREF="#amorphic">Amorphic Mutation</A></LI><LI><A HREF="#antimorphic">Antimorphic utation</A></LI><LI><A HREF="#hypermorphic">Hypermorphic Mutation</A></LI> <LI><A HREF="#hypomorphic">Hypomorphic Mutation</A></LI><LI><A HREF="#loss-of-function">Loss-of-function Mutation</A></LI><LI><A HREF="#neomorphic">Neomorphic Mutation</A></LI><LI><A HREF="#null_mutation">Null Mutation</A></LI></UL></dd></p>
@@ -631,23 +614,13 @@ http://www.genomatix.de/online_help/help/sequence_formats.html#IUPAC">IUPAC char
 <P><DT><B><A NAME="gamete">Gamete</A></B></dt><dd>One of the differentiated cells that is a product of 
 <A HREF="#meiosis">meiosis</A>. In animals, sperm or egg cells.</dd></p>
 
-
-<P><DT><B><A NAME="GCG_format">GCG format</A></B></dt>
-<DD>A sequence file in GCG format contains exactly one sequence, begins with annotation lines, and marked by a line ending with two dot ("..") characters at the start of the sequence.  <br>
-See also:
-<ull>
- <LI><a href="<!--#include file='include/mouseblast_url.html'-->mblast_seq_formats.shtml">MouseBLAST Help - Sequence Formats</A></LI>
-<LI><A href="#fasta">FASTA format</A></LI>
-<LI><A href="#free_text">Free-text format</A></LI> 
-<LI><A HREF="http://www.genomatix.de/online_help/help/sequence_formats.html">DNA sequence formats</A></LI></dd></p>
-
 <P><DT><B><A NAME="GDB">GDB</A></B></dt><dd>The <A HREF="http://gdb.mirror.edu.cn/">Genome Database</a>, a database of human genes. Links to GDB are returned when human genes are displayed, for example in the results of a query using the <A HREF="http://www.informatics.jax.org/searches/homology_form.shtml">Mammalian Homology Query Form</A>.</dd></p>
 
 <P><DT><B><A NAME="genbank">GenBank</A></B></dt><dd>The database of 
 <A HREF="#nucleic_acid">nucleic acid</A> sequences at 
-<A HREF="#NCBI">NCBI</A>.<BR>
+<A HREF="#NCBI">NCBI</A>. The main sources for the sequences are direct submissions from individual researchers, genome sequencing  projects, and patent applications. GenBank is part of the Sequence Database Consortium and shares information with <A HREF="#ddbj">DDBJ</A> and <A HREF="#embl">EMBL</A>. <on a daily basis The three data banks share virtually the same data at any given time.></dd></p>
 
-</dd></p><P><DT><B><A NAME="gene">Gene</A></B></dt><dd>The basic unit of heredity; a portion of 
+<P><DT><B><A NAME="gene">Gene</A></B></dt><dd>The basic unit of heredity; a portion of 
 <A HREF="#DNA">DNA</A> that (usually) codes for a <A HREF="#protein">protein</A> product. <BR>See also <A HREF="#central_dogma">Central Dogma</A>.<BR> In <A HREF="#MGI">MGI</A>, "gene" may be used to refer to any of the following:<P> <OL><LI> A 
 <A HREF="#locus">locus</A> in the -<A HREF="#cytoplasm">cytoplasmic</A> or 
 <A HREF="#nucleus">nuclear</A> 
@@ -1412,8 +1385,7 @@ the mitochondrial genome uses an alternate
 <A HREF="<!--#include file='include/wi_url.html'-->/searches/mlc.cgi?14506">Xist</A>.</dd></p>
 
 <P><DT><B><A NAME="nia">NIA Mouse Gene Index</A></B></dt>
-<DD>Developmental Genomics and Aging Section
-Laboratory of Genetics,<A href="http://lgsun.grc.nia.nih.gov/cDNA/cDNA.html">National Institute on Aging, National Institutes of Health</a>. An index of of approximately 30,000 total mouse genes that includes 977 previously unidentified genes from sources that include oocytes, blastocysts, and embryonic and adult stem cells. The 249,200 high-quality EST sequences are clustered with public sequences to produce the index.</dd></p>
+<DD>Developmental Genomics and Aging Section Laboratory of Genetics,<A href="http://lgsun.grc.nia.nih.gov/cDNA/cDNA.html">National Institute on Aging, National Institutes of Health</a>. The initial version of this index contained  approximately 30,000 total mouse genes including 977 previously unidentified genes from sources such as oocytes, blastocysts, and embryonic and adult stem cells. The 249,200 high-quality EST sequences were clustered with public sequences to produce the index.</dd></p>
 
 
 <P><DT><B><A NAME="non-mendelian">Non-Mendelian</A></B></dt>
@@ -1717,7 +1689,8 @@ pharmaceuticals for treatments of diseases. Includes screening of multiple drugs
 <A HREF="#base">bases</A> of <A HREF="#nucleic_acid">nucleic acids</A>, either adenine (A) or guanine (G). See the
 <A HREF="http://www.genome.gov/Pages/Hyperion//DIR/VIP/Glossary/Illustration/rna.html">Figure</A> at <A HREF="#NHGRI">NHGRI</A>.</dd></p>
 
-<P><DT><B><A NAME="putative">Putative</b></a></dt><dd>Regions of transcription may be associated by sequence identities, <A HREF="#hybridization">hybridization</A>, or putative relationships. In <A HREF="#MGI">MGI</A>, an <A HREF="#EST">EST</a> may receive a putative assignment to a <A HREF="#marker">marker</a> when it is downloaded into the MGI database from shared sequences in UniGene clusters. When an EST is putatively assigned to a marker, <i>(PUTATIVE)</I> appears after the assigned marker symbol on MGI probe/clone query report pages.  <!--A putative EST-to-marker association is subject to change upon each EST download into the database.  However, our curators can and do make an EST-to-marker association permanent after reviewing the sequence identity between the EST and the marker.  When this occurs, <i>(PUTATIVE)</I> does not appear after the marker symbol; this indicates that a permanent relationship is established.-->
+<P><DT><B><A NAME="putative">Putative</b></a></dt><dd>Regions of transcription may be associated by sequence identities, <A HREF="#hybridization">hybridization</A>, or putative relationships. In <A HREF="#MGI">MGI</A>, an <A HREF="#EST">EST</a> may receive a putative assignment to a <A HREF="#marker">marker</a> when it is downloaded into the MGI database from shared sequences in UniGene clusters. When an EST is putatively assigned to a marker, <i>(PUTATIVE)</I> appears after the assigned marker symbol on MGI probe/clone 
+query report pages.  <!--A putative EST-to-marker association is subject to change upon each EST download into the database.  However, our curators can and do make an EST-to-marker association permanent after reviewing the sequence identity between the EST and the marker.  When this occurs, <i>(PUTATIVE)</I> does not appear after the marker symbol; this indicates that a permanent relationship is established.-->
 </dd>
 
 
@@ -1843,9 +1816,8 @@ Recombination may also be <B>nonreciprocal</B>, in which case the product is equ
 <A HREF="#enhancer_trap">Enhancer Trap</A>, 
 <A HREF="#gene_trap">Gene Trap</A>.</dd></p>
 
-<P><DT><B><A NAME="resolved">Resolved</A></B></dt><DD>Sequence providers such as <A href="#genbank">GenBank</A> and <A href="#refseq">RefSeq</A> describe sequence attributes (strains, species, tissues, libraries, and so on) in their reports. MGI captures the original values and stores them in the MGI database in <A href="#controlled_vocabulary">controlled vocabularies</A>. When this happens, they become <I>resolved</I> values and can be used as search parameters on MGI query forms. <br>
-See also:
-<A href="#unresolved">Unresolved</A>.</dd></p>
+<P><DT><B><A NAME="resolved">Resolved</A></B></dt><DD>Sequence providers such as <A href="#genbank">GenBank</A>/<A NAME="ddbj">DDBJ</A>/<A NAME="embl">EMBL</A> and <A href="#refseq">RefSeq</A> describe sequence attributes (strains, species, tissues, libraries, and so on) in their reports. <A NAME="mgi">MGI</A> captures the original values and stores them in the MGI database in <A href="#controlled_vocabulary">controlled vocabularies</A>. When this happens, they become <I>resolved</I> values and can be used as search parameters on MGI query forms. <br>
+</dd></p>
 
 
 <P><DT><B><A NAME="restriction_enzyme">Restriction Enzyme</A></B></dt><dd>A 
@@ -2156,8 +2128,8 @@ across the panel with the presence of a particular mouse chromosome allows that 
 <P><DT><B><A NAME="substrate">Substrate</A></B></dt><dd>A molecule acted upon by an 
 <A HREF="#enzyme">enzyme</A>.</dd></p>
 
-<P><DT><B><A NAME="swissprot">SWISS-Prot</a></B></dt>
-<DD><A HREF="#http://us.expasy.org/sprot/">SWISS-Prot</a> is a curated protein sequence database providing a high level of annotation (such as the description of the function of a protein, its domains structure, post-translational modifications, variants, etc.), a minimal level of redundancy, and a high level of integration with other databases. This database is developed by the Swiss-Prot groups at the <A HREF="#http://www.isb-sib.ch/">Swiss Institute of Bioinformatics</a> (SIB) and at the <A HREF="#http://www.ebi.ac.uk/">European Bioinformatics Institute</A> (EBI). </dd></p>
+<P><DT><B><A NAME="swissprot">SWISS-PROT</a></B></dt>
+<DD><A HREF="#http://us.expasy.org/sprot/">SWISS-PROT</a> is a curated protein sequence database providing a high level of annotation (such as the description of the function of a protein, its domain structure, post-translational modifications, variants, etc.), a minimal level of redundancy, and a high level of integration with other databases. This database is developed by the SWISS-PROT groups at the <A HREF="#http://www.isb-sib.ch/">Swiss Institute of Bioinformatics</a> (SIB) and at the <A HREF="#http://www.ebi.ac.uk/">European Bioinformatics Institute</A> (EBI). </dd></p>
 
 <P><DT><B><A NAME="symbol">Symbol</A></B></dt><dd>As used in 
 <A HREF="#MGI">MGI</A>, a <A HREF="#gene">gene</A> symbol is a unique abbreviation for the
@@ -2242,8 +2214,12 @@ across the panel with the presence of a particular mouse chromosome allows that 
 <A HREF="#RNA">RNA</A>. See the 
 <A HREF="http://www.genome.gov/Pages/Hyperion//DIR/VIP/Glossary/Illustration/base_pair.html">Figure</A> at <A HREF="#NHGRI">NHGRI</A>.</dd></p>
 
+
+<P><DT><B><A NAME="tigr_mgi">TIGR MGI</A></B></dt><DD><A HREF="http://www.tigr.org/tigr-scripts/tgi/T_index.cgi?species=mouse">The Institute of Genetics Mouse Gene Index</A> Mouse Gene Index contains transcribed sequences from public <A HREF="#est">EST</A> data. Input sequences are clustered and assembled to form the consensus sequences that comprise the index. <br>See also <A HREF="http://www.tigr.org/tdb/tgi/gifaq.shtml">Frequently Asked Questions About the TIGR Gene Indices</A>.</dd></p>
+
 <P><DT><B><A NAME="trait">Trait</A></B></dt><DD>A particular aspect of the 
 <A HREF="#phenotype">phenotype</A> that can be measured or observed directly, e.g., blood pressure or body weight.</dd></p>
+
 
 <P><DT><B><A NAME="transcript">Transcript</A></B></dt><DD>An <A HREF="#RNA">RNA</A> molecule (or species of RNA molecule) that is the product of <A HREF="#transcription">transcription</A>.</dd></p>
 
@@ -2285,7 +2261,7 @@ across the panel with the presence of a particular mouse chromosome allows that 
 <A HREF="#transition">Transition</A>.</dd></p>
 
 <P><DT><B><A NAME="trembl">TrEMBL</A></B></dt>
-<DD><A HREF="#http://us.expasy.org/sprot/">TrEMBL</a> is the computer-annotated supplement of <A NAME="swissprot">Swiss-Prot</A> containing all the translations of <A NAME="embl">EMBL</A> nucleotide sequence entries not yet integrated in <A NAME="swissprot">Swiss-Prot</A>. </dd></p>
+<DD><A HREF="#http://us.expasy.org/sprot/">TrEMBL</a> is a protein sequence database that contains all the <A NAME="translation">translations</A> of <A NAME="embl">EMBL</A> nucleotide sequences with annotated coding sequences. </dd></p>
 
 
 <P><DT><B><A NAME="trisomy">Trisomy</A></B></dt><DD>The condition of having three 
@@ -2317,7 +2293,7 @@ across the panel with the presence of a particular mouse chromosome allows that 
 
 <P><DT><B><A NAME="unresolved">Unresolved</A></B></dt><DD>In 
 <A HREF="#MGI">MGI</A>, a value or attribute that is not stored in our database.  For example, a provider sequence source lists the strain attribute as &quot;wild-caught in Tamil Nadu, South India&quot;. A database query on this attribute would fail because <I>wild-caught</i> strain is not in a standard <A NAME="MGI">MGI</A> 
-<A href="#controlled_vocabularies">controlled vocabulary</A>.<br>  See also <A href="#resolved">resolved</A>.</dd></p>
+<A href="#controlled_vocabulary">controlled vocabulary</A>.<br>  See also <A href="#resolved">resolved</A>.</dd></p>
 
 
 <P><DT><B><A NAME="uracil"></A>Uracil (U)</B><DD>A 
