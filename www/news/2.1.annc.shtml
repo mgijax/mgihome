@@ -1,6 +1,6 @@
 <HTML><HEAD>
 <!--MGI2.1 version 03 11/17/98-->
-<TITLE><!--#include file="include/title.html"--> -  2.1 Release Announcement</TITLE></HEAD>
+<TITLE> 2.1 Release Announcement</TITLE></HEAD>
 <BODY BGCOLOR="#ffffff">
 <!--#include file="include/banner.html"-->
 <CENTER><H2>Mouse Genome Informatics (MGI) Release 2.1 Announcement</H2>
@@ -42,8 +42,8 @@ Project</B>. These data come from two sources:
 </UL><P>
 Query forms provide access to information on rat SSLPs, polymorphisms, and genetic maps. This rat
 information constitutes a data set separate from MGD. The MGI website also provides access to 
-rat homology information through <A HREF="../menus/homology_menu.shtml">MGD homology queries</A> and rat strain descriptions through Michael Festing's listing
-of <A HREF="../external/festing/search_form.cgi">Inbred Strains of Mice and Rats</A>
+rat homology information through <A HREF="<!--#include file='include/wi_url.html'-->/menus/homology_menu.shtml">MGD homology queries</A> and rat strain descriptions through Michael Festing's listing
+of <A HREF="<!--#include file='include/wi_url.html'-->/external/festing/search_form.cgi">Inbred Strains of Mice and Rats</A>
 <P>
 This version of the Rat Data resource is released as a prototype and is not a fully developed 
 database product. Comments and suggestions from the research community are welcome!
@@ -56,7 +56,7 @@ links from MGD homology records to <A HREF="http://www.ri.bbsrc.ac.uk/bioinforma
  databases included in ArkDB at the <A HREF="http://www.ri.bbsrc.ac.uk/">Roslin institute</A>. 
 
 <H3>Link to FlyBase Mouse/Drosophila Homologies</H3>
-The MGI <A HREF="../menus/homology_menu.shtml">Homology menu</A> now provides a link to a display of 
+The MGI <A HREF="<!--#include file='include/wi_url.html'-->/menus/homology_menu.shtml">Homology menu</A> now provides a link to a display of 
 just over 1000 Mouse/Drosophila 
 homologies. The data are from a listing maintained by Michael Ashburner 
 at <A HREF="http://flybase.bio.indiana.edu:82/">FlyBase</A>. The report shows MGI accession ID for the 
@@ -67,13 +67,13 @@ Drosophila gene symbol.
 <H3>Other Enhancements</H3>
 <UL TYPE=DISC>
 
-	<LI>Updates to Michael Seldin's <A HREF="../external/seldin">DNA mapping panel data 
+	<LI>Updates to Michael Seldin's <A HREF="<!--#include file='include/wi_url.html'-->/external/seldin">DNA mapping panel data 
 	set</A> ((C3H/HeJ-Fasl&lt;gld&gt; x M. spretus)F1 x C3H/HeJ-Fasl&lt;gld&gt) have been loaded into MGD.<P>
-	<LI>A new <A HREF="../tools/schema/">schema browser</A> provides access to schemas on all MGI servers
+	<LI>A new <A HREF="<!--#include file='include/wi_url.html'-->/tools/schema/">schema browser</A> provides access to schemas on all MGI servers
 	enhanced searching options.<P>
 	
 	<LI>Updates to Michael Festing's listing of
-	 <A HREF="../external/festing/search_form.cgi">Inbred Strains of Mice and Rats</A> have been loaded into MGD.<P>
+	 <A HREF="<!--#include file='include/wi_url.html'-->/external/festing/search_form.cgi">Inbred Strains of Mice and Rats</A> have been loaded into MGD.<P>
 	 
 	<LI>There have been minor improvements to detailed query results display for marker records and 
 	gene expression records.<P>
