@@ -50,7 +50,7 @@ labels = {
 
 	'status'	: 'Status Requested',		# Status
 
-	'category'	: 'Phenotypic Categories',	# Phenotype
+	'phenotype'	: 'Phenotypic Categories',	# Phenotype
 	'othercategory'	: 'Other Classification',
 	'description'	: 'Description',
 	'remarks'	: 'Other Remarks',
@@ -87,7 +87,7 @@ field_order = [
 		'method', 'othermethod', 'promoter', 'celline',
 		'mode', 'chromosome', 'location']),
 	('Phenotype',
-		['category', 'othercategory', 'description', 'remarks']),
+		['phenotype', 'othercategory', 'description', 'remarks']),
 	('Status',
 		['status']),
 	('References',
