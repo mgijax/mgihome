@@ -195,6 +195,9 @@ The term is also used loosely for any sequence of actions (which may or may not 
 <A HREF="#hypomorphic">Hypomorphic Mutation</A></LI><LI>
 <A HREF="#neomorphic">Neomorphic Mutation</A></LI></UL>
 
+
+<P><DT><B><A NAME="amplification"></A>Amplification</b><dd>An increase in the number of copies of a specific <A HREF="#DNA">DNA</A> fragment; can be  <A HREF="#in_vivo"><i>in vivo</i></a> or <A HREF="#in_vitro"><i>in vitro</i></a>. See also <A HREF="#pcr">PCR (polymerase chain reaction)</a>.
+
 <P><DT><B><A NAME="ancestor">Ancestor</A></B><DD>In <A HREF="#MGI">MGI</A>, this term refers to terms in a 
 <A HREF="#hierarchical">hierarchical</a> 
 <A HREF="#controlled_vocabulary">controlled vocabulary</A> like ones containing 
@@ -267,6 +270,12 @@ digits in the limb bud) or as a means of preserving normal function (e.g., in re
 <A HREF="#allele_symbol">allele symbol</A>, or
 <A HREF="#allele_name">allele name</A> within MGI, an "approved" symbol or name is one that has been assigned by the 
 <A HREF="../nomen/">International Nomenclature Committee</A>.
+
+<P><DT><b><A NAME="arrayed_library"></A>Arrayed Library</b><dd>Individual primary recombinant <A HREF="#clone">clones</a> (hosted in <A HREF="#phage">phage</a>, <A HREF="#cosmid">cosmid</a>, 
+<A HREF="#YAC">YAC</a>, or other <A HREF="#vector">vector</a>) that are placed in two-dimensional arrays in microtiter dishes. Each primary clone can be identified by the identity of the plate and the clone location (row and column) on that plate. Information gathered on individual clones from various experimental techniques is entered into a <A HREF="#relational_db">relational database</a> and used to construct <A HREF="#physical_map">physical</a> and <A HREF="#genetic_map">genetic</a> 
+<A HREF="#linkage_map">linkage maps</a> simultaneously; clone identifiers serve to interrelate the multilevel maps. See also <A HREF="#library">library</a>.
+
+<P><DT><b><A NAME="ascii"></A>ASCII</b><dd>American Standard Code for Information Interchange. The basis of character sets used in almost all present-day computers. 
 
 <P><DT><B><A NAME="assay"></A>Assay</B><DD>In general, the qualitative or quantitative analysis of a substance. In 
 <A HREF="#MGI">MGI</A>, an assay is a type of experiment that is designed to detect the level of 
@@ -351,6 +360,10 @@ digits in the limb bud) or as a means of preserving normal function (e.g., in re
 <A HREF="http://www.nhgri.nih.gov/DIR/VIP/Glossary/Illustration/base_pair.html">Figure</A> at 
 <A HREF="#NHGRI">NHGRI</A>.
 
+<P><DT><B><A NAME="base_sequence"></A>Base Sequence</b><dd>The order of <A HREF="#nucleotide">nucleotide</a> <A HREF="#base">bases</a> in a <A HREF="#DNA">DNA</a> or <A HREF="#RNA">RNA</a> molecule.
+
+<P><DT><B><A NAME="base_sequence_analysis"></A>Base Sequence Analysis</b><dd> A method, sometimes automated, for determining the <A HREF="#base_sequence">base sequence</a>.
+
 <P><DT><B><A NAME="bioinformatics"></A>Bioinformatics</B><DD>The application of computer technology to the management of biological information. Specifically, it is the science of developing computer 
 <A HREF="#database">databases</A> and 
 <A HREF="#algorithm">algorithms</A> to facilitate and expedite biological research, particularly in 
@@ -361,8 +374,12 @@ digits in the limb bud) or as a means of preserving normal function (e.g., in re
 <A HREF="#biosynthesis">biosynthesis</A>. In the GO Project vocabularies, Biological Process is a primary class of terms. See the 
 <A HREF="http://www.geneontology.org/">GO Consortium</A> site for further information.
 
+<P><DT><B><A NAME="biophysics"></A>Biophysics</b><dd>A branch of science concerned with the application of physical principles and methods to biological problems.
+
 <P><DT><B><A NAME="biosynthesis">Biosynthesis</A></B><DD>Synthesis of chemical compounds by 
 <A HREF="#enzyme">enzymatic</A> processes in living organisms.
+
+<P><DT><B><A NAME="biotechnology"></A>Biotechnology</b><dd>A set of biological techniques developed through basic research and now applied to research and product development. In particular, the use by industry of recombinant <A HREF="#DNA">DNA</a>, cell fusion, and new bioprocessing techniques.
 
 <P><DT><B><A NAME="biotin">Biotin</A></B><DD>One of the water-soluble B vitamins. It is useful in molecular biology as a chemical tag on 
 <A HREF="#nucleic_acid">nucleic acid</A> 
@@ -580,6 +597,8 @@ For example, searching for all markers of the type "Gene" on Chromosome 2 is equ
 <A HREF="#antibody">antibodies</A> or other
 <A HREF="#protein">proteins</A>, allowing the detection of the binding of the labeled proteins by electron microscopy.
 
+<P><DT><B><A NAME="complementary_DNA"></A>Complementary DNA</b><dd>See <A HREF="#cDNA">cDNA</a>.
+
 <P><DT><B><A NAME="complementary">Complementary Sequence</A></B><DD>A single-stranded 
 <A HREF="#nucleic_acid">nucleic acid</A> that would bind to a given single-stranded nucleic acid by
 <A HREF="#base_pair">base pairing</A>.
@@ -629,7 +648,9 @@ For example, searching for all markers of the type "Gene" on Chromosome 2 is equ
 <A HREF="#backcross">backcrossing</A> program. The strain designation is NUCLEAR GENOME-mtCYTOPLASMIC GENOME. For example, C57BL/6J-mtBALB/c is a strain with the nuclear genome of C57BL/6J and the cytoplasmic genome of BALB/c. It was developed by crossing male C57BL/6J mice with BALB/c females, followed by repeated backcrossing of female offspring to male C57BL/6J. As with <A HREF="#congenic">congenic</A> strains, a minimum of 10 backcross generations is required, counting the F1 generation as generation 1. <BR>See also the
 <A HREF="../nomen/strains.shtml#conplastic">Rules for Nomenclature of Mouse and Rat Strains</A>.
 
-<P><DT><B><A NAME="conserved_synteny">Conserved synteny</A></B><DD>The occurrence of 
+<P><DT><B><A NAME="conserved sequence"></A>Conserved Sequence</b><dd>A <A href="#base_sequence">base sequence</a> in a <A HREF="#DNA">DNA</a> molecule (or an <A HREF="#amino_acid">amino acid</a> sequence in a <A HREF="#protein">protein</a>) that has remained essentially unchanged throughout evolution.
+
+<P><DT><B><A NAME="conserved_synteny">Conserved Synteny</A></B><DD>The occurrence of 
 <A HREF="#synteny">synteny</A> of 
 <A HREF="#ortholog">orthologous</A> 
 <A HREF="#gene">genes</A> in two different organisms. Conserved synteny between mouse and human does not usually extend over entire 
@@ -761,6 +782,9 @@ For example, searching for all markers of the type "Gene" on Chromosome 2 is equ
 <A HREF="#protein">protein</A> caused by treatments that overcome hydrogen bonding, 
 <A HREF="#hydrophobic">hydrophobic</A> interactions, or other chemical forces that maintain the structure of proteins, e.g., heat.
 
+<P><DT><B><A NAME="deoxyribonucleotide"</A>Deoxyribonucleotide</b><dd>See 
+<A HREF="#nucleic_acid">nucleic acid</a>.
+
 <P><DT><B><A NAME="dimorphic">Dimorphic</A></B><DD>Having two forms.
 
 <P><DT><B><A NAME="diploid">Diploid</A></B><DD>Having twice the 
@@ -803,6 +827,9 @@ set from the maternal gamete (the egg) and a chromosome set from the paternal ga
 <P><DT><B><A NAME="DNA_polymerase">DNA Polymerase</A></B><DD>An 
 <A HREF="#enzyme">enzyme</A> that carries out <A HREF="#replication">replication</A>.
 
+<P><DT><B><A NAME="dna_replication"></A>DNA Replication</b><dd>The use of existing <A HREF="#DNA">DNA</A>  as a template for the synthesis of new DNA strands. In mouse and other 
+<A HREF="#eukaryote">eukaryotes</A>, replication occurs in the cell <A HREF="#nucleus">nucleus</a>.
+
 <P><DT><B><A NAME="DNA_segment">DNA Segment</A></B><DD>1. A length of 
 <A HREF="#DNA">DNA</A>. <BR>2. In 
 <A HREF="#MGI">MGI</A>, a DNA segment is a genomic feature recognized by 
@@ -812,13 +839,15 @@ set from the maternal gamete (the egg) and a chromosome set from the paternal ga
 <A HREF="#marker">markers</A> used in 
 <A HREF="#genetic_map">genetic mapping</A>.
 
+<P><DT><B><A NAME="dna_sequence"></A>DNA Sequence</b><dd>The relative order of <A HREF="#base_pair">base pairs</a>, whether in a fragment of <A HREF="#DNA">DNA</A>, a <A HREF="#gene">gene</a>, a <A HREF="#chromosome">chromosome</a>, or an entire <A HREF="#genome">genome</a>.
+
 <P><DT><B><A NAME="dNTP">dNTP</A></B>
 <DD>Deoxyribonucleotide triphosphate. A generic term referring to the four deoxyribonucleotides: dATP, dCTP, dGTP and dTTP. See the
 <A HREF="http://www.nhgri.nih.gov/DIR/VIP/Glossary/Illustration/rna.html">Figure</A> at 
 <A HREF="#NHGRI">NHGRI</A>.
 
+<P><DT><B><A NAME="domain"></A>Domain</b><dd>A map depicting the relative order of a linked <A HREF="#library">library</a> of small overlapping <A HREF="#clone">clones</a> representing a complete <A HREF="#chromosome">chromosomal</a> segment.
 
-<!--addition of x-refs 1/19 to Dominant -->
 <P><DT><B><A NAME="dominant">Dominant</A></B><DD>One of a series of terms applied to the 
 <A HREF="#phenotype">phenotypic</A> effect of a particular 
 <A HREF="#allele">allele</A> in reference to another allele (usually the standard 
@@ -833,6 +862,8 @@ set from the maternal gamete (the egg) and a chromosome set from the paternal ga
 <A HREF="#codominant">Codominant</A>,
 <A HREF="#recessive">Recessive</A>, 
 <A HREF="#semidominant">Semidominant</A>.
+
+<P><DT><B><A NAME="double_helix"></A>Double Helix</b><dd>The shape that two linear strands of <A HREF="#DNA">DNA</A> assume when bonded together.
 
 <P><DT><B><A NAME="draft_genome"></A>Draft Genome Sequence</B><DD>Sequence of 
 <A HREF="#genome">genomic</A> 
@@ -849,6 +880,8 @@ set from the maternal gamete (the egg) and a chromosome set from the paternal ga
 <A HREF="http://www.nhgri.nih.gov/DIR/VIP/Glossary/Illustration/duplication.html">Figure</A> at NHGRI.
 
 <!-- EEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEE --><A NAME="e"></A>
+<P><DT><B><A NAME="e_coli"></A>E. coli</b><dd>Common bacterium that geneticists have studied intensively because of its small <A HREF="#genome">genome</a> size, normal lack of pathogenicity, and ease of growth in the laboratory.
+
 <P><DT><B><A NAME="EC_number">EC Number</A></B><DD>A number assigned to a type of 
 <A HREF="#enzyme">enzyme</A> according to a scheme of standardized enzyme nomenclature developed by the Enzyme Commission of the Nomenclature Committee of the International Union of Biochemistry and Molecular Biology (IUBMB). EC numbers may be found in ENZYME, the Enzyme nomenclature database, maintained at the 
 <A HREF="http://www.expasy.ch/enzyme/">ExPASy</A> molecular biology server of the Geneva University Hospital and the University of Geneva, Switzerland.
@@ -857,10 +890,8 @@ set from the maternal gamete (the egg) and a chromosome set from the paternal ga
 <A HREF="#membrane">membranes</A>, allowing the introduction of 
 <A HREF="#DNA">DNA</A>.
 
-<P><DT><B><A NAME="electrophoresis">Electrophoresis</A></B><DD>The separation of charged molecules (
-<A HREF="#DNA">DNA</A>, 
-<A HREF="#RNA">RNA</A> or 
-<A HREF="#protein">protein</A>) in an electrical field, usually in a supporting medium such as an agarose or polyacrylamide gel.
+<P><DT><B><A NAME="electrophoresis">Electrophoresis</A></B><DD>The separation of charged molecules 
+(<A HREF="#DNA">DNA</A>, <A HREF="#RNA">RNA</A> or <A HREF="#protein">protein</A>) in an electrical field, usually in a supporting medium such as an agarose or polyacrylamide gel.
 
 <P><DT><B><A NAME="embryonic_stem">Embryonic Stem (ES) Cells</A></B><DD>Undifferentiated cells derived from 
 <A HREF="#blastocyst">blastocyst</A>-stage embryos. ES cells can differentiate in culture to a number of different cell types. When incorporated into 
@@ -943,6 +974,9 @@ set from the maternal gamete (the egg) and a chromosome set from the paternal ga
 <A HREF="#genome">genome</A> characterized by relatively high 
 <A HREF="#gene">gene</A> density and relative absence of highly repetitive sequences. <BR>See also 
 <A HREF="#heterochromatin">Heterochromatin</A>.
+
+<P><DT><B><A NAME="eukaryote"</A>Eukaryote</b><dd>A cell or organism with membrane-bound, structurally discrete <A HREF="#nucleus">nucleus</a> and other well-developed subcellular compartments. Eukaryotes include all organisms except <A HREF="#virus">viruses</a>, bacteria, and blue-green algae. See also <A HREF="#prokaryote">prokaryote</a>.
+
 
 <P><DT><B><A NAME="euploid">Euploid</A></B><DD>Having a 
 <A HREF="#chromosome">chromosome</A> number that is an integral multiple of the 
@@ -1518,7 +1552,7 @@ This document is written in HTML.<BR>You can view the HTML source code for this 
 <A HREF="#knockin">Knock-in</A>.
 
 <!-- LLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLL --><A NAME="l"></A>
-<P><DT><B><A NAME="library">Library</A></B><DD>In molecular biology, a "library" is a complex mixture of recombinantDNA molecules in a suitable
+<P><DT><B><A NAME="library">Library</A></B><DD>In molecular biology, a "library" is a complex mixture of recombinant <a href="#DNA">DNA</a> molecules in a suitable
 <A HREF="#cloning_vector">cloning vector</A> representing either the entire
 <A HREF="#genome">genome</A> of an organism (a genomic library) or the
 <A HREF="#mRNA">messenger RNA</A> populationof a whole organism, cell type, or tissue type (a
@@ -2086,6 +2120,9 @@ The quantity of the target sequence doubles during each cycle, causing the targe
 <A HREF="#in_situ"><I>in situ</I></A> hybridization.<BR>2. In MGI, the term "probe" applies not only to nucleic acid probes detected as described above, but also to 
 <A HREF="#primer">primers</A> for <A HREF="#pcr">PCR</A>. This usage is not common outside of MGI.
 
+<P><DT><B><A NAME="prokaryote"</A>Prokaryote</b><dd>Cell or organism lacking a membrane-bound, structurally discrete <A HREF="#nucleus">nucleus</a> and other subcellular compartments. Bacteria are prokaryotes. See also <A HREF="#eukaryote">eukaryote</a>. 
+
+
 <P><DT><B><A NAME="promoter">Promoter</A></B><DD>One of the necessary 
 <A HREF="#regulatory_element">regulatory elements</A> of a 
 <A HREF="#gene">gene</A>. The promoter is the site on 
@@ -2102,7 +2139,7 @@ The quantity of the target sequence doubles during each cycle, causing the targe
 <P><DT><B><A NAME="protein_domain">Protein Domain</A></B><DD>A region of a 
 <A HREF="#protein">protein</A> responsible for a particular function, as recognized experimentally and by the occurrence of 
 <A HREF="#similarity">similar</A> segments in other proteins sharing that function, e.g., a 
-<A HREF="#DNA">DNA</A> binding domain.
+<A HREF="#DNA">DNA</A> binding <A HREF="#domain">domain</a>.
 
 <P><DT><B><A NAME="protein_histochemistry">Protein Histochemistry</A></B><DD>1. A method of detecting a particular 
 <A HREF="#enzyme">enzyme</A> in a cell or tissue sample. A sample of cells or tissue is fixed, then treated with a 
