@@ -35,16 +35,16 @@
 <P></P>
 <BLOCKQUOTE>
 <UL>
-<LI>MGI version 3.12 provides new information on the Gene Ontology (GO) Annotation Detail pages.  </li><br>
+<LI>MGI version 3.12 provides new information on Gene Ontology (GO) Annotation Detail pages.  </li><br>
 <UL>
-  <li>A paragraph of annotation summary text appears prior to the GO classifications. See <A HREF="http://shire.informatics.jax.org/wts_projects/6600/6620/GO_Final_23MAR05.HTM">Pax6</A> for an example. </LI><br><br>
+  <li>A paragraph of annotation summary text appears prior to the GO classifications. These texts are generated from structured GO annotations appearing in the table below them on these detail pages. See <A HREF="http://shire.informatics.jax.org/wts_projects/6600/6620/GO_Final_23MAR05.HTM">Pax6</A> for an example. </LI><br><br>
    <LI> GO terms are highlighted in the paragraph and linked to relevant MGI marker detail and reference pages as well as to databases containing additional data.</li><br><br>
- <LI>To access this information, enter a gene of interest on either the 
-<A HREF="http://www.informatics.jax.org/searches/marker_form.shtml">Genes and Markers Query Form</A> or the <A HREF="http://www.informatics.jax.org/searches/sequence_form.shtml">Mouse Sequence Query Form</A> and click <B>Search</B>. On the Gene Detail page that appears, click an item in the Gene Ontology (GO) Classifications field.</li>
+ <LI>To access this information, enter a gene of interest on the 
+<A HREF="http://www.informatics.jax.org/searches/marker_form.shtml">Genes and Markers Query Form</A> and click <B>Search</B>. On the summary page that appears, click the gene of interest. On gene detail page, click <B>All GO Classifications</B>.</li>
   </ul><br><br>
 
-<LI>We added the dog to the species list that you can do a two-species orthology comparison on using our 
-<A HREF="http://www.informatics.jax.org/searches/oxfordgrid_form.shtml">Oxford Grid Query Form</A>. Each cell in the resulting grid represents a comparison of two chromosomes, one from each of the selected species. The grid include links to comparative maps.</LI><br><br>
+<LI>The list species that you can do a two-species orthology comparison on using our 
+<A HREF="http://www.informatics.jax.org/searches/oxfordgrid_form.shtml">Oxford Grid Query Form</A> now includes <I>dog</I>. Each cell in the resulting grid represents a comparison of two chromosomes, one from each of the selected species. The grid include links to comparative maps.</LI><br><br>
 
 <LI>The remainder of the MGI 3.12 release consists of performance enhancements and bug fixes.  </LI>
 </UL>
