@@ -57,14 +57,14 @@ databases). (This site requires registration.)
 </UL>
 
 <P><A NAME="pipelines"><H3>Sequence analysis pipeline software</H3></A>
-These are pipeline software applications written in Perl that you can download and install on your UNIX system.
+This is a pipeline software application written in Perl that you can download and install on your UNIX system.
 <UL>
 <LI>CGAT (<A HREF="http://worm-chip.stanford.edu">Stanford</A> or <A HREF="http://inertia.bs.jhmi.edu/CGAT/CGAT.html">Johns Hopkins</A>)
  - The Comprehensive Genome Analysis Tools developed in Roger Reeves' lab at Johns Hopkins by Jim Lund, now at Stanford. Runs RepeatMasker, NCBI BLASTN (vs. nr, dbest, htgs, gss), MZEF, GRAIL, GENSCAN, tRNAscan-SE, GRAIL CpG islands, polyA, polII promoters.  Maps all results onto sequence and generates GIF-formatted graphical display of results.
-<P>
+<P><!--
 <LI><A HREF="http://www-sequence.stanford.edu/~curtis/adapt.html">Adapt</A> 
 (<A HREF="http://www-sequence.stanford.edu">Stanford DNA Sequence & Techology Center</A>) - 
-Developed by Curtis Palm.  Runs GRAIL, FEXA, GENSCAN, MZEF, and AAT (EST and protein similarity).
+Developed by Curtis Palm.  Runs GRAIL, FEXA, GENSCAN, MZEF, and AAT (EST and protein similarity).-->
 </UL>
 
 <P><A NAME="viewers"><H3>Analysis results visualization and curation tools</H3></A>
@@ -72,8 +72,8 @@ Developed by Curtis Palm.  Runs GRAIL, FEXA, GENSCAN, MZEF, and AAT (EST and pro
 </P>
 <UL>
 <li>Apollo (<A HREF="http://www.fruitfly.org/annot/apollo">Berkeley Drosophila Genome Project</A> or <A HREF="http://www.ensembl.org/Docs/wiki/html/EnsemblDocs/ApolloProject.html">Ensembl</A>) - Java-based tool developed by BDGP and Ensembl.
-<P>
-<LI><A HREF="http://www-sequence.stanford.edu/~curtis/adapt.html">WAV</A> (<A HREF="http://www-sequence.stanford.edu">Stanford DNA Sequence & Techology Center</A>) - Web Annotation Viewer developed by Curtis Palm as part of the Adapt system.
+<P><!--
+<LI><A HREF="http://www-sequence.stanford.edu/~curtis/adapt.html">WAV</A> (<A HREF="http://www-sequence.stanford.edu">Stanford DNA Sequence & Techology Center</A>) - Web Annotation Viewer developed by Curtis Palm as part of the Adapt system.-->
 <P>
 <LI>CGAT (<A HREF="http://worm-chip.stanford.edu">Stanford</A> or <A HREF="http://inertia.bs.jhmi.edu/CGAT/CGAT.html">Johns Hopkins</A>) - Perl-based software that draws GIF images of results.  Developed in Roger Reeves' lab at Johns Hopkins by Jim Lund, now at Stanford.
 </UL>
