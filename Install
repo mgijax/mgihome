@@ -86,6 +86,7 @@ cd lib/python
 echo "Compiling libraries in `pwd`"
 rm *pyc
 $PYTHON -c 'import compileall; compileall.compile_dir(".")'
+$PYTHON -c 'import config'
 chgrp www *pyc
 chmod 750 *pyc
 cd $TOP
