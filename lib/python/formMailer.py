@@ -8,6 +8,7 @@ import string
 
 import CGI		# MGI-written Python modules
 import mgi_utils
+import mgi_html
 
 ###--- Global Variables/Constants ---###
 
@@ -315,7 +316,7 @@ class formMailer (CGI.CGI):
 		    print MESSAGE_SENT % (
 		    	self.header,
 			self.form_name,
-			message,
+			mgi_html.escape(message),
 			self.footer)
 		else:				# unsuccessful
 		    print MESSAGE_FAILED % (
