@@ -26,246 +26,257 @@
 <HR>
 <FORM action=survey.cgi method=post><SMALL>
 <P><B>1. How often do you use MGI?</B><BR>
-<INPUT name=format type=radio value=Rarely>Occasionally 
-<INPUT name=format type=radio value=Monthly>Monthly 
-<INPUT name=format type=radio value=Weekly>Weekly
-<INPUT name=format type=radio value=Daily>Daily<BR>
+<INPUT name=use type=radio value=Rarely>Occasionally 
+<INPUT name=use type=radio value=Monthly>Monthly 
+<INPUT name=use type=radio value=Weekly>Weekly
+<INPUT name=use type=radio value=Daily>Daily<BR>
 Comments:
-<INPUT name=comments size=55>
+<INPUT name=useComments size=55>
 </FORM></P>
 
 <P>
 <FORM><B>2. MGI has changed its look recently. Is it:</B><BR>
-<INPUT name=format type=radio value=Better>Better 
-<INPUT name=format type=radio value=Worse>Worse 
-<INPUT name=format type=radio value=Same>Not really different<BR>
-Comments:<TEXTAREA cols=55 name=comments rows=6></TEXTAREA>
+<INPUT name=look type=radio value=Better>Better 
+<INPUT name=look type=radio value=Worse>Worse 
+<INPUT name=look type=radio value=Same>Not really different<BR>
+
+Comments:<TEXTAREA cols=55 name=lookComments rows=6></TEXTAREA>
 </FORM></P>
+
 
 <P>
 <FORM><B>3. What types of information do you search for?</B><BR>
-<INPUT name=Genes      type=checkbox    value=Genes>Genes<BR>
-<INPUT name=Phenotypes type=checkbox    value=Phenotypes>Phenotypes<BR>
-<INPUT name=Mapping    type=checkbox    value=Mapping>Maps and Mapping Data<BR>
-<INPUT name="Homology Data" type=checkbox value=Homology>Homology Data<BR>
-<INPUT name=Expression type=checkbox value=Expression>Expression Data<BR>
-<INPUT name=rflp type=checkbox value=rflp>Polymorphisms<BR>
-<INPUT name=Sequences type=checkbox value=Sequences>Sequences<BR>
-<INPUT name=References type=checkbox value=References>References<BR>
-<INPUT name=Tumor type=checkbox value=Tumor>Tumor Biology<BR>
-<INPUT name=GO type=checkbox value=GO>Gene Ontologies<BR>
-Comments: <TEXTAREA cols=55 name=comments rows=6></TEXTAREA> 
+<INPUT name=info  type=checkbox value=Genes>Genes<BR>
+<INPUT name=info  type=checkbox value=Phenotypes>Phenotypes<BR>
+<INPUT name=info  type=checkbox value=Mapping>Maps and Mapping Data<BR>
+<INPUT name=info  type=checkbox value=Homology>Homology Data<BR>
+<INPUT name=info  type=checkbox value=Expression>Expression Data<BR>
+<INPUT name=info  type=checkbox value=rflp>Polymorphisms<BR>
+<INPUT name=info  type=checkbox value=Sequences>Sequences<BR>
+<INPUT name=info  type=checkbox value=References>References<BR>
+<INPUT name=info  type=checkbox value=Tumor>Tumor Biology<BR>
+<INPUT name=info  type=checkbox value=GO>Gene Ontologies<BR>
+Comments: <TEXTAREA cols=55 name=infoComments rows=6></TEXTAREA> 
 </P>
 
 <P><B>4. How do you access MGI?</B><BR>
-<INPUT name=bookmark type=checkbox value=bookmark>Bookmarks/Favorites</A><BR>
-<INPUT name=google type=checkbox value=google>Search Engine such as Google</A><BR>
-<INPUT name=link type=checkbox value=link>Link from another site</A><BR>
-<INPUT name=url type=checkbox value=url>Type in a URL</A><BR>
-Comments:<INPUT name=comments size=55> </P>
+<INPUT name=access type=checkbox value=bookmark>Bookmarks/Favorites</A><BR>
+<INPUT name=access type=checkbox value=google>Search Engine such as Google</A><BR>
+<INPUT name=access type=checkbox value=link>Link from another site</A><BR>
+<INPUT name=access type=checkbox value=url>Type in a URL</A><BR>
+Comments:<INPUT name=accessComments size=55> </P>
 
 <P><B>5. What query forms and resources do you use?</B> Please check all that apply.<BR>
 <TABLE cols=2>
 <TBODY>
-<TR><TD width=300><INPUT name=searchbox type=checkbox value=searchbox>
+<TR><TD width=300><INPUT name=query type=checkbox value=searchbox>
 <A href="javascript:windowf1 = window.open('searchbox.shtml', 'windowf1', 'width=360,height=250,resizable=yes,scrollbars=yes'); windowf1.focus()">Search 
 Box</A></TD>
-<TD><INPUT name=references type=checkbox value=references>
+<TD><INPUT name=query type=checkbox value=references>
 <A href="<!--#include file='include/wi_url.html'-->searches/reference_form.shtml">References</A>
 </TD>
 </TR>
 
 <TR>
-<TD><INPUT name=markers type=checkbox value=markers>
+<TD><INPUT name=query type=checkbox value=markers>
 <A href="<!--#include file='include/wi_url.html'-->searches/marker_form.shtml">Genes and Markers</A>
 </TD>
-<TD><INPUT name=accid type=checkbox value=accid>
+<TD><INPUT name=query type=checkbox value=accid>
 <A href="<!--#include file='include/wi_url.html'-->searches/accession_form.shtml">Accession IDs</A>
 </TD>
 </TR>
 
 <TR>
-<TD><INPUT name=alleles type=checkbox value=alleles>
+<TD><INPUT name=query type=checkbox value=alleles>
 <A href="<!--#include file='include/wi_url.html'-->searches/allele_form.shtml">Alleles and Phenotypes</A></TD>
-<TD><INPUT name=go type=checkbox value=go>
+<TD><INPUT name=query type=checkbox value=go>
 <A href="<!--#include file='include/wi_url.html'-->searches/GO_form.shtml">Gene 
 Ontology Browser</A>
 </TD>
 </TR>
 
 <TR>
-<TD><INPUT name=mlc_omim type=checkbox value=mlc_omim>
+<TD><INPUT name=query type=checkbox value=mlc_omim>
 <A href="<!--#include file='include/wi_url.html'-->searches/noforms_mlc_omim.cgi">Combined
 Mouse/Human Phenotypes</A></TD>
-<TD><INPUT name=anatomy type=checkbox value=anatomy>
+
+<TD><INPUT name=query type=checkbox value=anatomy>
 <A href="<!--#include file='include/wi_url.html'-->searches/anatdict_form.shtml">Anatomical Dictionary</A></TD>
 </TR>
 
 <TR>
-<TD><INPUT name=strains type=checkbox value=strains>
+<TD><INPUT name=query type=checkbox value=strains>
 <A href="<!--#include file='include/wi_url.html'-->/external/festing/search_form.cgi">Inbred Strain Characteristics</A></TD>
-<TD><INPUT name=phenoslim type=checkbox value=phenoslim>
+
+<TD><INPUT name=query type=checkbox value=phenoslim>
 <A href="<!--#include file='include/wi_url.html'-->/userdocs/phenoslim.shtml">Phenotype Classifications</A></TD>
 </TR>
 
 <TR>
-<TD><INPUT name=mouseblast type=checkbox value=blast>
+<TD><INPUT name=query type=checkbox value=blast>
 <A href="http://mouseblast.informatics.jax.org/">MouseBLAST</A></TD>
-<TD><INPUT name=mtb type=checkbox value=mtb>
-<A href="http://tumor.informatics.jax.org/FMPro?-db=TumorInstance&amp;-format=mtdp.html&amp;-view">Mouse Tumor Biology</A></TD></TR>
+<TD><INPUT name=query type=checkbox value=mtb>
+<A href="http://tumor.informatics.jax.org/FMPro?-db=TumorInstance&amp;-format=mtdp.html&amp;-view">Mouse Tumor Biology</A></TD>
+</TR>
+
 <TR>
-<TD><INPUT name=pcr type=checkbox value=pcr>
+<TD><INPUT name=query type=checkbox value=pcr>
 <A href="<!--#include file='include/wi_url.html'-->searches/polymorphism_form.shtml">Polymorphisms</A></TD>
-<TD><INPUT name=nomen type=checkbox value=nomen>
+<TD><INPUT name=query type=checkbox value=nomen>
 <A href="<!--#include file='include/wi_url.html'-->/mgihome/nomen/index.shtml">Nomenclature</A></TD>
 </TR>
+
 <TR>
-<TD><INPUT name=orthology type=checkbox value=orthology>
+<TD><INPUT name=query type=checkbox value=orthology>
 <A href="<!--#include file='include/wi_url.html'-->searches/homology_form.shtml">Mammalian Orthology</A></TD>
-<TD><INPUT name=family type=checkbox value=family>
+<TD><INPUT name=query type=checkbox value=family>
 <A href="<!--#include file='include/wi_url.html'-->/mgihome/nomen/genefamilies/index.shtml">Gene Family Information</A></TD>
 </TR>
 <TR>
-<TD><INPUT name=grid type=checkbox value=grid>
+<TD><INPUT name=query type=checkbox value=grid>
 <A href="<!--#include file='include/wi_url.html'-->searches/oxfordgrid_form.shtml">Oxford Grid</A></TD>
-<TD><INPUT name=silver type=checkbox value=silver>
+<TD><INPUT name=query type=checkbox value=silver>
 <A href="/silver/">Lee Silver's Mouse Genetics</A></TD></TR>
 
 <TR>
-<TD><INPUT name=mapview type=checkbox value=mapview>
+<TD><INPUT name=query type=checkbox value=mapview>
 <A href="<!--#include file='include/wi_url.html'-->/reports/homologymap/mouse_human.shtml">Orthology Map Views</A></TD>
-<TD><INPUT name=glossary type=checkbox value=glossary>
+<TD><INPUT name=query type=checkbox value=glossary>
 <A href="<!--#include file='include/wi_url.html'-->/mgihome/other/glossary.shtml">MGI Glossary</A></TD>
 </TR>
 <TR>
-<TD><INPUT name=linkage type=checkbox value=linkage>
+<TD><INPUT name=query type=checkbox value=linkage>
 <A href="<!--#include file='include/wi_url.html'-->searches/linkmap_form.shtml">Linkage Maps</A></TD>
-<TD><INPUT name=mgihelp type=checkbox value=mgihelp>
+<TD><INPUT name=query type=checkbox value=mgihelp>
 <A href="../support/tjl_inbox.shtml">MGI Help</A>
 </TD>
 </TR>
 <TR>
-<TD><INPUT name=cytomap type=checkbox value=cytomap>
+<TD><INPUT name=query type=checkbox value=cytomap>
 <A href="<!--#include file='include/wi_url.html'-->searches/cytomap_form.shtml">Cytogenetic Maps</A></TD>
-<TD><INPUT name=tutorials type=checkbox value=tutorials>
+<TD><INPUT name=query type=checkbox value=tutorials>
 <A href="/tutorials/index.shtml">Tutorials</A></TD></TR>
 <TR>
-<TD><INPUT name=physmap type=checkbox value=physmap>
+<TD><INPUT name=queryp type=checkbox value=physmap>
 <A href="http://www.informatics.jax.org/reports/mitmap/">Physical Maps</A></TD>
-<TD><INPUT name=ftp type=checkbox value=ftp>
+<TD><INPUT name=query type=checkbox value=ftp>
 <A href="<!--#include file='include/ftp_url.html'-->pub/reports/index.html">Flat
 files</A></TD></TR>
 <TR>
-<TD><INPUT name=mapdata type=checkbox value=mapdata>
+<TD><INPUT name=query type=checkbox value=mapdata>
 <A href="<!--#include file='include/wi_url.html'-->searches/mapdata_form.shtml">Mapping Data</A></TD>
-<TD><INPUT name=mgilist type=checkbox value=mgilist>
+<TD><INPUT name=query type=checkbox value=mgilist>
 <A href="http://lists.informatics.jax.org/lyris-cgi/lyris.pl?visit=mgi-list">MGI-LIST</A></TD></TR>
 <TR>
-<TD><INPUT name=gxddata type=checkbox value=gxddata>
+<TD><INPUT name=query type=checkbox value=gxddata>
 <A href="<!--#include file='include/wi_url.html'-->searches/expression_form.shtml">Gene Expression Data</A></TD>
-<TD><INPUT name=risdp type=checkbox value=risdp>
+<TD><INPUT name=query type=checkbox value=risdp>
 <A href="<!--#include file='include/wi_url.html'-->searches/riset_form.shtml">RI
  SDP</A></TD>
 </TR>
 <TR>
-<TD><INPUT name=gxdindex type=checkbox value=gxdindex>
+<TD><INPUT name=query type=checkbox value=gxdindex>
 <A href="<!--#include file='include/wi_url.html'-->searches/gxdindex_form.shtml">Gene Expression Literature Index</A></TD>
-<TD><INPUT name=rcsdp type=checkbox value=rcsdp>
+<TD><INPUT name=query type=checkbox value=rcsdp>
 <a href="<!--#include file='include/wi_url.html'-->searches/rcset_form.shtml">RC 
 SDP</A></TD>
 </TR>
 <TR>
-<TD><INPUT name=cdna type=checkbox value=cdna>
+<TD><INPUT name=query type=checkbox value=cdna>
 <A href="<!--#include file='include/wi_url.html'-->searches/estclone_form.shtml">cDNA Clones</A></TD>
-<TD><INPUT name=ccr type=checkbox value=ccr>
+<TD><INPUT name=query type=checkbox value=ccr>
 <A href="<!--#include file='include/wi_url.html'-->/ccrsearches/index.cgi">Chromosome Committee Reports</A>
 </TD>
 </TR>
 
 <TR>
-<TD><INPUT name=probes type=checkbox value=probes>
+<TD><INPUT name=query type=checkbox value=probes>
 <A href="<!--#include file='include/wi_url.html'-->searches/probe_form.shtml">Probes and Clones</A></TD>
-<TD><INPUT name=facts type=checkbox value=facts>
+<TD><INPUT name=query type=checkbox value=facts>
 <A href="mouse_facts1.shtml">Mouse Facts</A></TD>
 </TR>
 </TBODY>
 </TABLE>
+Comments: <TEXTAREA cols=55 name=name=queryComments rows=6></TEXTAREA></P>
 
-Comments: <TEXTAREA cols=55 name=comments rows=6></TEXTAREA></P>
 <P><B>6. What other scientific web sites do you use regularly?</B><BR>
-<INPUT name=ncbi type=checkbox value=ncbi>
+<INPUT name=othersites type=checkbox value=ncbi>
 <A href="http://www.ncbi.nlm.nih.gov/">NCBI/GenBank/PubMed</A><BR>
-<INPUT name=ensembl type=checkbox value=ensembl>
+<INPUT name=othersites type=checkbox value=ensembl>
 <A href="http://www.ensembl.org/">Ensembl</A><BR>
-<INPUT name=swissprot type=checkbox value=swissprot>
+<INPUT name=othersites type=checkbox value=swissprot>
 <A href="http://www.ebi.ac.uk/">SwissProt/EMBL/EBI</A><BR>
-<INPUT name=ucsc type=checkbox value=ucsc>
+<INPUT name=othersites type=checkbox value=ucsc>
 <A href="http://genome.ucsc.edu/">UCSC</A><BR>
-<INPUT name=omim type=checkbox value=omim>
+<INPUT name=othersites type=checkbox value=omim>
 <A href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=OMIM">OMIM</A><BR>
 Others:
-<TEXTAREA cols=55 name=other rows=5></TEXTAREA> </P>
+<TEXTAREA cols=55 name=othersitesComments rows=5></TEXTAREA> </P>
+
 <P><B>7. We are restructuring phenotype data and are adding sequences to MGI. How else can we improve existing resources?</B><BR>
-<TEXTAREA cols=55 name=comments rows=10></TEXTAREA></P>
+<TEXTAREA cols=55 name=improvedComments rows=10></TEXTAREA></P>
+
 
 <P><B>8. What new datasets, features or interface changes would you like to see?</B><BR>
-<TEXTAREA cols=55 name=comments rows=10></TEXTAREA></P>
+<TEXTAREA cols=55 name=newComments rows=10></TEXTAREA></P>
 
 <P><B>9. What is your research area?</B><BR>
-<TEXTAREA cols=55 name=comments rows=5></TEXTAREA></P>
+<TEXTAREA cols=55 name=research rows=5></TEXTAREA></P>
+
 <P><B>With what organisms?</B><BR>
-<INPUT name=mouse type=checkbox value=mouse>Mouse<BR>
-<INPUT name=human type=checkbox value=human>Human<BR>
-<INPUT name=rat type=checkbox value=rat>Rat<BR>
-Others:<INPUT name=comments size=55></P>
+<INPUT name=orgo type=checkbox value=mouse>Mouse<BR>
+<INPUT name=orgotype=checkbox value=human>Human<BR>
+<INPUT name=orgo type=checkbox value=rat>Rat<BR>
+Others:<INPUT name=orgoOther size=55></P>
 
 <P><B>10. We provide online facilities for submitting nomenclature, phenotype and expression data. How can we make data submission easier for you?</B><BR>
-
-Comments: <TEXTAREA cols=55 name=comments rows=6></TEXTAREA></P>
+Comments: <TEXTAREA cols=55 name=dataSub rows=6></TEXTAREA></P>
 
 <P><B>11. What Computer Operating Systems do you use?</B><BR>
-<INPUT name=mac type=checkbox value=mac>Mac<BR>
-<INPUT name=windoze type=checkbox value=windoze>Windows<BR>
-<INPUT name=unix type=checkbox value=unix>UNIX/Linux<BR>
-Others:<INPUT name=comments size=55></P>
+<INPUT name=os type=checkbox value=mac>Mac<BR>
+<INPUT name=os type=checkbox value=windoze>Windows<BR>
+<INPUT name=os type=checkbox value=unix>UNIX/Linux<BR>
+Others:<INPUT name=osOther size=55></P>
 
 <P><B>12. What web browsers do you use?</B><BR>
 <TABLE cols=2>
 <TBODY>
 <TR>
-<TD width=200><INPUT name=netscape type=checkbox value=netscape>
+<TD width=200><INPUT name=browser type=checkbox value=netscape>
 <A href="http://channels.netscape.com/ns/browsers/">Netscape</A></TD>
-<TD><INPUT name=chimera type=checkbox value=chimera>
+<TD><INPUT name=browser type=checkbox value=chimera>
 <A href="http://www.mozilla.org/projects/camino/">Chimera/Camino</A>
 </TD></TR>
 <TR>
-<TD><INPUT name=ie type=checkbox value=ie>
+<TD><INPUT name=browser type=checkbox value=ie>
 <A href="http://www.microsoft.com/downloads/">Internet Explorer</A></TD>
-<TD><INPUT name=icab type=checkbox value=icab>
+<TD><INPUT name=browser type=checkbox value=icab>
 <A href="http://www.icab.de/">iCab</A></TD></TR>
 <TR>
-<TD><INPUT name=mozilla type=checkbox value=mozilla>
+<TD><INPUT name=browser type=checkbox value=mozilla>
 <A href="http://www.mozilla.org/">Mozilla</A>
-<TD><INPUT name=opera type=checkbox value=opera>
+<TD><INPUT name=browser type=checkbox value=opera>
 <A href="http://www.opera.com/">Opera</A></TD></TR>
 <TR>
-<TD><INPUT name=safari type=checkbox value=safari>
+<TD><INPUT name=browser type=checkbox value=safari>
 <A href="http://www.apple.com/safari/">Safari</A>
-<TD><INPUT name=konquerer type=checkbox value=konquerer>
+<TD><INPUT name=browser type=checkbox value=konquerer>
 <A href="http://www.konqueror.org/">Konqueror</A></TD></TR>
 <TR>
-<TD><INPUT name=ow type=checkbox value=ow>
+<TD><INPUT name=browser type=checkbox value=ow>
 <A href="http://www.omnigroup.com/applications/omniweb/">OmniWeb</A>
-<TD><INPUT name=netcaptor type=checkbox value=netcaptor>
+<TD><INPUT name=browser type=checkbox value=netcaptor>
 <A href="http://www.netcaptor.com/">NetCaptor</A></TD>
 </TR>
 </TBODY>
 </TABLE>
-Others:<INPUT name=comments size=55> </P>
-<P><B>13. Any other comments?</B><BR><TEXTAREA cols=55 name=comments rows=10></TEXTAREA> </P>
-      <P><B>Optional:</B><BR><B>Name</B><INPUT name=name size=30>
-      <B>Email</B><INPUT name=email size=40> </P><B>Thank you for your time.</B>
-      </SMALL><INPUT name=domain type=hidden value=MGI>
+Others:<INPUT name=browserOther size=55> </P>
+<P><B>13. Any other comments?</B><BR>
+<TEXTAREA cols=55 name=comments rows=10></TEXTAREA> </P>
+
+<P><B>Optional:</B><BR><B>Name</B><INPUT name=name size=30>
+<B>Email</B><INPUT name=email size=40> </P><B>Thank you for your time.</B>
+ </SMALL>
 <HR>
 <INPUT type=submit value=Submit> <INPUT type=reset value=Reset>
 </FORM>
