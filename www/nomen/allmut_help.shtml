@@ -9,23 +9,22 @@
 <HR>
 <H3> Mutant Phenotypes</H3>
 
-<B>Genes Known Only by Mutant Phenotype</B>
+<h4>Genes Known Only by Mutant Phenotype</h4>
 <p>Where a gene is only known by mutant phenotype, the gene is given the name 
 and symbol of the first identified mutant. 
 <UL>
 <LI>Symbols of mutations conferring a recessive phenotype begin with a lower 
-   case letter, dominant or semidominant phenotype symbols begin with an upper 
+   case letter; dominant or semidominant phenotype symbols begin with an upper 
    case letter. <EM>For example:</EM> fidget, 
    <A HREF="<!--#include file='include/wi_url.html'-->searches/marker.cgi?8808">fi</A>, 
-   coloboma, 
-   <A HREF="<!--#include file='include/wi_url.html'-->searches/marker.cgi?1026">Cm</A>, 
+   coloboma, <A HREF="<!--#include file='include/wi_url.html'-->searches/marker.cgi?1026">Cm</A>;  
    Purkinje cell degeneration, 
    <A HREF="<!--#include file='include/wi_url.html'-->searches/marker.cgi?12199">pcd</A>.<P>
 <LI>Further (allelic) mutations at the same locus, if they have the same 
-   phenotypes, are given the same name with a lab code preceeded by a serial 
+   phenotypes, are given the same name with a lab code preceded by a serial 
    number (if more than one additional allele from the same lab). In the symbol,
     the lab code is added as a superscript. <EM>For example:</EM> new alleles of
-     Purkinje cell degeneration identified at The Jackson Laboratory, 
+     Purkinje cell degeneration identified at The Jackson Laboratory: 
      <A HREF="<!--#include file='include/wi_url.html'-->searches/allele.cgi?682">pcd<SUP>2J</SUP></A>, 
      <A HREF="<!--#include file='include/wi_url.html'-->searches/allele.cgi?1731">pcd<SUP>3J</SUP></A>.<P>
 <LI>If a new allelic mutation of a gene known only by mutant phenotype is 
@@ -37,7 +36,7 @@ and symbol of the first identified mutant.
      pcd<I><sup>Tg(Dhfr)1Jwg</sup></I></a>.
 <P>
 <LI>If the additional allele has a different phenotype, it may be given a different name, 
-but when symbolized. the new mutant symbol is superscripted to the original mutant symbol. 
+but when symbolized, the new mutant symbol is superscripted to the original mutant symbol. 
 <EM> For example</EM>: 
 <A HREF="<!--#include file='include/wi_url.html'-->searches/allele.cgi?1055">rs<SUP>grc</SUP>
 </A>  is the "grey coat" allele of 
@@ -45,16 +44,16 @@ but when symbolized. the new mutant symbol is superscripted to the original muta
 (recessive spotting).
 <P>
 <LI>Also, if a new mutation is described and named but not shown to be an allele of 
-an exisiting until later, the original name of the new mutation can be kept even if the 
+an existing gene until later, the original name of the new mutation can be kept even if the 
 phenotype is apparently identical, but the original symbol is used, with the new mutation 
 symbol as superscript. <EM> For example</EM>:  haze is an allele of ruby-eye 2 
 (<A HREF="<!--#include file='include/wi_url.html'-->searches/marker.cgi?13281">ru2</A>), 
 and hence is <A HREF="<!--#include file='include/wi_url.html'-->searches/allele.cgi?249">ru2<SUP>hz</SUP></A>.
 <P>
 <LI>A mutation caused by insertion of a transgene, but whose molecular nature is nevertheless
- unknown (i.e. it is uncloned) and which has not been shown to be an allele of an already 
- described mutant gene should be given a  transgene symbol (see below).  When the insertion 
- site is cloned and/or molecularly characterised, the gene should be named and the transgene
+ unknown (i.e., it is uncloned) and which has not been shown to be an allele of an already 
+ described mutant gene, should be given a  transgene symbol (see below).  When the insertion 
+ site is cloned and/or molecularly characterized, the gene should be named and the transgene
   symbol becomes superscripted. <EM> For example </EM>: 
   <A HREF="<!--#include file='include/wi_url.html'-->searches/marker.cgi?18569">Tg(AMY1C)1Mm</a> 
   causes a mutation with a phenotype of vestibular and craniofacial abnormalities, maps to 
@@ -137,7 +136,7 @@ The mouse <A HREF="<!--#include file='include/wi_url.html'-->searches/marker.cgi
  locus is irrelevant to the nomenclature. The EXCEPTION is when the disrupted locus is identified.
  A transgene becomes an allele of that locus, as in the next example.
  <p>
-<li><A HREF="<!--#include file='include/wi_url.html'-->searches/marker.cgi?1905">Tg(Hoxa1)1Chm</a>.
+<li>Tg(Hoxa1)1Chm</a>.
 A construct containing the mouse homeobox a1 gene was inserted by methods microinjection as 
 reported in a publication by Corey H. Mjaatvedt (Chm).  This is the first germline transmission
  Mjaatvedt reported using this construct.
@@ -228,9 +227,35 @@ NOTE: The designation of tm1.1 is only utilized when the presence of CRE generat
 <h4>Gene Trap Loci and Alleles</h4>
 <P>Gene trap experiments in embryonic stem (ES) cells produce cell lines in which integration 
 into a putative gene is selected by virtue of its expression in ES cells. The trapped gene is 
-usually (although not necessarily) mutated by the integration.
-<p>Gene Traps are a type of transgene and their nomenclature should follow that of 
-<a href="#ttm">Transgenes</a>. 
+usually (although not necessarily) mutated by the integration. The loci of integration of a 
+series of gene trap lines, once characterized as unique, can be named and symbolized as members of 
+a series, with an appropriate root. The symbol consists of four parts, all in Roman typeface, 
+as follows:
+<P>Gt(YYY)#Zzz
+<UL>
+<LI>Gt is used to indicate a gene trap insertion.
+<P>
+<LI>(YYY) indicates the inserted vector sequence. 
+<P>
+<LI> # is a number from 1 to 99,999 that is uniquely assigned to each germline transmittable 
+event in a series of events generated using the same construct.
+<P>
+<LI>Zzz is the Laboratory registration code.  A Laboratory Registration Code is uniquely 
+assigned to each laboratory originating transgenic animals, DNA loci, or inbred strains. 
+Laboratories that have already been assigned such a code for other genetically defined mice 
+and rats should use the same code. The registry of these codes is maintained by the Institute 
+of Laboratory Animal Research (<A HREF="http://www4.nas.edu/cls/afr.nsf">ILAR</A>), 
+2101 Constitution Avenue, NW, Washington, DC 20418.
+<P>
+<B>Example</B>: 
+<UL>	
+   <A HREF="<!--#include file='include/wi_url.html'-->searches/allele.cgi?2838">Gt(ROSA)26Sor</a> 
+   is a gene "trapped" by the ROSA vector. It is the 26th germline transmissible event using the 
+   ROSA vector from the laboratory of Phillipe Soriano.
+ <p>  
+   As with transgenes identified only through an insertion, gene trap integrations will become 
+   alleles of the gene, once that gene is identified.
+</ul>
 <hr>
 <!--#include file="include/footer.html"-->
 </BODY></HTML>
