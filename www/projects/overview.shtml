@@ -27,15 +27,15 @@ homologies among mammals, sequences, phenotypes, allelic variants and
 mutants, and strain data. (See</I> <A HREF="#aboutMGD">About MGD</A>.)
 
 <li><B>Gene Expression Database (GXD) Project</B><BR>
-GXD integrates different types of gene expression information from the mouse and provides a searchable index of published experiments on endogenous gene expression during development.  For details, see <A HREF="GXD/aboutGXD.shtml">The Gene Expression Database (GXD)</A>.
+GXD integrates different types of gene expression information from the mouse and provides a searchable index of published experiments on endogenous gene expression during development.  For details, see <A HREF="../GXD/aboutGXD.shtml">The Gene Expression Database (GXD)</A>.
 <li>
 <B>Mouse Genome Sequence (MGS) Project</B><BR>
  The goal of the MGS project is to integrate emerging mouse genomic sequence data
-with the genetic and biological data available in MGD and GXD. MGS supports the MouseBLAST server as a sequence-level entry point into the MGI Database. (See</I> <A HREF="MGS/mgs.shtml">The Mouse Genome Sequence Project</A>.)
+with the genetic and biological data available in MGD and GXD. MGS supports the MouseBLAST server as a sequence-level entry point into the MGI Database. (See</I> <A HREF="../MGS/mgs.shtml">The Mouse Genome Sequence Project</A>.)
 <li><b>Gene Ontology (GO) Project</b><br>
 The Mouse Genome Informatics group is a founding member of the Gene Ontology Consortium 
 (www.geneontology.org). MGI fully incorporates the GO in the database and provides a 
-GO browser. (See <a href="GO/project.shtml">The Gene Ontology (GO) Project</a>.)
+GO browser. (See <a href="../GO/project.shtml">The Gene Ontology (GO) Project</a>.)
 
 <li><b>Mouse Tumor Biology (MTB) Database</b><br>
 The goal of the <A HREF="http://tumor.informatics.jax.org/FMPro?-db=TumorInstance&-format=mtdp.html&-view">MTB</a> is to help researchers choose experimental models, review mutation patterns in specific cancers, and identify genes commonly mutated across a spectrum of cancers. The database currently holds over 10,000 tumor records. See <a href="http://tumor.informatics.jax.org/FMPro?-db=TumorInstance&-format=about_mtb.html&-findany">About the Mouse Tumor Biology Database</a>.
@@ -43,15 +43,10 @@ The goal of the <A HREF="http://tumor.informatics.jax.org/FMPro?-db=TumorInstanc
               
 <h3><a name="aboutMGD"></a>About MGD</h3>
                                               
-<p>MGD includes information on mouse genetic markers, molecular clones
-probes,
-primers and
-YACs),
-phenotypes, comparative mapping data, graphical displays of linkage,
-cytogenetic and
-physical maps, experimental mapping data, as well as
- strain distribution patterns for recombinant inbred
-strains (RIs) and cross haplotypes. <!--Sources for
+<p>MGD includes information on mouse genetic markers, molecular clones (probes, primers and
+YACs), phenotypes, sequences, comparative mapping data, graphical displays of linkage,
+cytogenetic and physical maps, experimental mapping data, as well as
+ strain distribution patterns for recombinant inbred strains (RIs) and cross haplotypes. <!--Sources for
 information in the database include the scientific  literature,  DNA  mapping  panel data produced by various researchers, the MIT Whitehead Institute (MIT genetic  and physical mapping data), WashU, and the  IMAGE  consortium.  --> Since it first became available on the web, MGD has continued to  evolve, expanding its data coverage, improving data handling, and providing new data manipulation and display tools. 
 
 <P><A NAME="mlc"></A>Phenotype records in  MGD have their origin in the
@@ -81,9 +76,9 @@ Polymorphic loci  related  to  specified strains
 References supporting  all  data  in MGD <BR> 
 </UL>
 
-<P><b>Data Links to <a href="other/collab_and_acknow.shtml">External Databases</A></b>
+<P><b>Data Links to <a href="../other/collab_and_acknow.shtml">External Databases</A></b>
 
-<P>MGD  provides links  to  relevant  information  in   external databases wherever possible.  Through markers, MGD links to EC, DoTS, UniGene, ENSEMBL, TIGR, LocusLink, InterPro, and PDB. Through orthologies,  MGD links  to GDB, PigBase, SheepBase, BovMap and RATMAP. Through molecular probes and clones,  MGD links to GenBank, EMBL, and DDBJ. Through references, MGD links to PubMed. 
+<P>MGD  provides links  to  relevant  information  in   external databases wherever possible.  Through markers, MGD links to EC, DoTS, UniGene, ENSEMBL, TIGR, LocusLink, InterPro, and PDB. Through orthologies,  MGD links  to GDB, PigBase, SheepBase, BovMap and RATMAP. Through molecular probes and clones,  MGD links to GenBank, EMBL, and DDBJ. Through references, MGD links to PubMed. Through sequences, MGI links to GenBank, RefSeq, SWISS-PROT, TrEMBL, and the TIGR, DoTS, and NIA mouse gene indices.
 
 <h4><A NAME="mkr">Genes and Markers</A></h4>
 MGD contains information on mouse genes, DNA segments,
@@ -209,7 +204,7 @@ Reports</A> were published annually (until 2000) on the MGI web site. The  repor
 <!--#include file="include/footer.html"-->
 </BODY>
  </HTML>
-<!--Warranty Disclaimer and
+<!--Warranty Disclaimer and 
 Copyright Notice THE JACKSON LABORATORY MAKES NO  REPRESENTATION ABOUT THE SUITABILITY OR ACCURACY OF THIS SOFTWARE OR DATA FOR ANY
 PURPOSE,  AND MAKES NO WARRANTIES, EITHER EXPRESS OR IMPLIED,  INCLUDING  MERCHANTABILITY  AND FITNESS FOR A PARTICULAR PURPOSE OR
 THAT THE USE OF THIS SOFTWARE OR  DATA  WILL NOT INFRINGE ANY THIRD PARTY PATENTS, COPYRIGHTS, TRADEMARKS, OR  OTHER  RIGHTS. THE
