@@ -23,7 +23,7 @@
   </TD>
  </TR>
 </TABLE>
-<P>We want to hear from you. Here is your chance to help us improve MGI       resources. All suggestions and criticisms are welcome. Thanks!</P>
+<P>We want to hear from you. Here is your chance to help us improve MGI resources. All suggestions and criticisms are welcome. Thanks!</P>
 <HR>
 <FORM action=survey.cgi method=post><SMALL>
 <P><B>1. How often do you use MGI?</B><BR>
@@ -224,7 +224,7 @@ Others:
 <TEXTAREA cols=55 name=othersitesComments rows=5></TEXTAREA> </P>
 
 <P><B>7. Sequence data have been integrated into MGI and new features have been added to alllow sequences to be searched relative to biological annotation.</B><BR>
-<B>Were you aware of these enhancements?</B><br>
+Were you aware of these enhancements?<br>
 <INPUT type=radio name=awareSeq value="Yes">Yes &nbsp;&nbsp;&nbsp;
 <INPUT type=radio name=awareSeq value="No">No<br>
 <B>Have you used these new features?</B><br>
@@ -232,8 +232,9 @@ Others:
 <INPUT type=radio name=usedSeq value="No">No<br>
 
 
-<P><B>8. The International Mouse Strain Resource (IMSR) recently was released through MGI.</B><BR>
-<B>Were you aware of this IMSR release?</B><br>
+<P><B>8. The <A HREF="http://www.informatics.jax.org/imsr/">International Mouse Strain 
+Resource (IMSR)</a> recently was released through MGI.</B><BR>
+Were you aware of this IMSR release?<br>
 <INPUT type=radio name=awareIMSR value="Yes">Yes &nbsp;&nbsp;&nbsp;
 <INPUT type=radio name=awareIMSR value="No">No<br>
 <B>Have you used the IMSR?</B><br>
@@ -304,8 +305,8 @@ Others:<INPUT name=altBrowse size=55> </P>
 <P><B>15. Any other comments?</B><BR>
 <TEXTAREA cols=55 name=comments rows=10></TEXTAREA> </P>
 
-<P><B>Optional:</B><BR><B>Name</B><INPUT name=name size=30>
-<B>Email</B><INPUT name=email size=40> </P><B>Thank you for your time.</B>
+<P><B>Optional:</B><BR><B>Name</B>&nbsp;<INPUT name=name size=30>
+<B>Email&nbsp;</B><INPUT name=email size=40> </P><B>Thank you for your time.</B>
  </SMALL>
 <HR>
 <INPUT type=submit value=Submit> <INPUT type=reset value=Reset>
