@@ -9,14 +9,9 @@
 </HEAD>
 <!--Created on ... March 09, 2001-->
 <BODY BGCOLOR=#FFFFFF>
-
 <!--#include file="include/banner.html"-->
-
-
 <H2 align=center>Cyclic Nucleotide Phosphodiesterase Gene Superfamily</H2>
-
 <HR width="100%">
-
 <table frame=void cols=2 width=100%> 
  <tr>
   <td width="20%"><b>Family Root Symbol:</b>
@@ -28,200 +23,262 @@
  </tr>
 </table>
 <p><b>Links to cyclic nucleotide phosphodiesterase data:</b>
-<TABLE bgcolor="white" border=1 cols=4 width=70% cellpadding=4> 
- <TR>
-  <TH width="15%">Symbol</TH>
-  <TH width="20%">Sequence</TH>
-  <TH width="30%">Synonyms</th>
-  <TH width="10%">Orthologs</th>
-  <TH width="25%">Chr</th>
+<TABLE bgcolor="white" border=1 width=85% cellpadding=8> 
+<TR bgcolor="E0E0E0">
+  <TH width="8%">Mouse Symbol</th>
+  <TH width="14%">Mouse Seq. ID <sup>1</sup></th>
+  <TH width="10%">Mouse Chromosomal Location</th>
+  <TH width="10%">Human Ortholog</th>
+  <TH width="13%">Human Seq. ID<sup>1</sup></TH>
+  <TH width="10%">Rat Ortholog</th>
+  <TH width="13%">Rat Seq. ID <sup>1</sup></TH>
+  <TH width="10%">Orthology Details</th>
+  <TH>Synonyms</th>
  </TR>
+<!--Pde1a-->
 <TR>
- <TD valign=top><A href="<!--#include file='include/wi_url.html'-->searches/marker.cgi?35691">Pde1a</A></TD>
- <TD valign=top><a href="http://www.ncbi.nlm.nih.gov/htbin-post/Entrez/query?db=n&amp;form=6&amp;uid=AF023529">AF023529</a><br>
- <a href="http://www.ncbi.nlm.nih.gov/htbin-post/Entrez/query?db=n&amp;form=6&amp;uid=AF159298">AF159298</a></td>
- <TD valign=top>&nbsp;</TD>
- <TD valign=top align=center><a href="<!--#include file='include/wi_url.html'-->searches/homology_report.cgi?_Marker_key=35691">yes</a></td>
- <td valign=top>UN</TD> 
+  <TD><A href="<!--#include file='include/wi_url.html'-->searches/accession_report.cgi?id=MGI:1201792">Pde1a</A></TD>
+  <TD><a href="<!--#include file='include/gb_url.html'-->AF023529">AF023529</a><br>
+  <a href="<!--#include file='include/gb_url.html'-->AF159298">AF159298</a></td>
+  <td>UN</TD> 
+  <TD><a href="<!--#include file='include/locuslink_url.html'-->5136">PDE1A</a></TD> 
+  <td><a href="<!--#include file='include/gb_url.html'-->"></a></td> 
+  <TD>*Pde1a*</TD> 
+  <td><a href="http://www3.ncbi.nlm.nih.gov/htbin-post/Entrez/query?db=n&Dopt=g&form=6&uid="></a></td>
+  <TD align=center><a href="<!--#include file='include/wi_url.html'-->searches/homology_report.cgi?id=MGI:1201792">yes</a></td>
+  <TD>&nbsp;</TD>
 </TR>
-
+<!--Pde1b-->
 <tr>
- <TD valign=top><A href="<!--#include file='include/wi_url.html'-->searches/marker.cgi?12233">Pde1b</A></TD>
- <TD valign=top><a href="http://www.ncbi.nlm.nih.gov/htbin-post/Entrez/query?db=n&amp;form=6&amp;uid=AF023340">AF023340</a><br>
- <a href="http://www.ncbi.nlm.nih.gov/htbin-post/Entrez/query?db=n&amp;form=6&amp;uid=AF023341">AF023341</a></td>
- <TD valign=top>&nbsp;</TD>
- <TD valign=top align=center><a href="<!--#include file='include/wi_url.html'-->searches/homology_report.cgi?_Marker_key=12233">yes</a></td>
- <td valign=top>15</TD> 
+  <TD><A href="<!--#include file='include/wi_url.html'-->searches/accession_report.cgi?id=MGI:97523">Pde1b</A></TD>
+  <TD><a href="<!--#include file='include/gb_url.html'-->AF023340">AF023340</a><br>
+  <a href="<!--#include file='include/gb_url.html'-->AF023341">AF023341</a></td>
+  <td>15</TD>
+  <TD><a href="<!--#include file='include/locuslink_url.html'-->5153">PDE1B</a></TD> 
+  <td><a href="<!--#include file='include/gb_url.html'-->"></a></td> 
+  <TD>*Pde1b*</TD> 
+  <td><a href="http://www3.ncbi.nlm.nih.gov/htbin-post/Entrez/query?db=n&Dopt=g&form=6&uid="></a></td>
+  <TD align=center><a href="<!--#include file='include/wi_url.html'-->searches/homology_report.cgi?id=MGI:97523">yes</a></td>
+  <TD>&nbsp;</TD>
 </TR>
-
+<!--Pde1c-->
 <tr>
- <TD valign=top><A href="<!--#include file='include/wi_url.html'-->searches/marker.cgi?30001">Pde1c</A></TD>
- <TD valign=top><a href="http://www.ncbi.nlm.nih.gov/htbin-post/Entrez/query?db=n&amp;form=6&amp;uid=L76944">L76944</a><br>
- <a href="http://www.ncbi.nlm.nih.gov/htbin-post/Entrez/query?db=n&amp;form=6&amp;uid=L76946">L76946</a></td>
- <TD valign=top>&nbsp;</TD>
- <TD valign=top align=center><a href="<!--#include file='include/wi_url.html'-->searches/homology_report.cgi?_Marker_key=30001">yes</a></td>
- <td valign=top>6 (27.0 cM)</TD> 
-</TR> 
-
-<tr>
-<TD valign=top><A href="<!--#include file='include/wi_url.html'-->searches/marker.cgi?47102">Pde3a</A></TD>
- <TD valign=top><a href="http://www.ncbi.nlm.nih.gov/htbin-post/Entrez/query?db=n&amp;form=6&amp;uid=AF099187">AF099187</a></td>
- <TD valign=top>&nbsp;</TD>
- <TD valign=top align=center><a href="<!--#include file='include/wi_url.html'-->searches/homology_report.cgi?_Marker_key=47102">yes</a></td>
- <td valign=top>UN</TD> 
-</TR> 
-
-<tr>
-<TD valign=top><A href="<!--#include file='include/wi_url.html'-->searches/marker.cgi?39910">Pde3b</A></TD>
- <TD valign=top><a href="http://www.ncbi.nlm.nih.gov/htbin-post/Entrez/query?db=n&amp;form=6&amp;uid=X95521">X95521</a></td>
- <TD valign=top>&nbsp;</TD>
- <TD valign=top align=center><a href="<!--#include file='include/wi_url.html'-->searches/homology_report.cgi?_Marker_key=39910">yes</a></td>
- <td valign=top>7 (53.3 cM)</TD> 
-</TR> 
- 
-<tr>
-<TD valign=top><A href="<!--#include file='include/wi_url.html'-->searches/marker.cgi?15380">Pde4a</A></TD>
- <TD valign=top><a href="http://www.ncbi.nlm.nih.gov/htbin-post/Entrez/query?db=n&amp;form=6&amp;uid=AF208021">AF208021</a></td>
- <TD valign=top>dunce,&nbsp; Dped2</TD>
- <TD valign=top align=center><a href="<!--#include file='include/wi_url.html'-->searches/homology_report.cgi?_Marker_key=15380">yes</a></td>
- <td valign=top>9</TD> 
-</TR> 
-
-<tr>
-<TD valign=top><A href="<!--#include file='include/wi_url.html'-->searches/marker.cgi?15379">Pde4b</A></TD>
- <TD valign=top><a href="http://www.ncbi.nlm.nih.gov/htbin-post/Entrez/query?db=n&amp;form=6&amp;uid=AF208023">AF208023</a></td>
- <TD valign=top>dunce,&nbsp; Dped4</TD>
- <TD valign=top align=center><a href="<!--#include file='include/wi_url.html'-->searches/homology_report.cgi?_Marker_key=15379">yes</a></td>
- <td valign=top>4 (46.8 cM)</TD> 
-</TR> 
-
-<tr>
-<TD valign=top><A href="<!--#include file='include/wi_url.html'-->searches/marker.cgi?15378">Pde4c</A></TD>
- <TD valign=top>&nbsp;</a></td>
- <TD valign=top>dunce,&nbsp; Dped1</TD>
- <TD valign=top align=center><a href="<!--#include file='include/wi_url.html'-->searches/homology_report.cgi?_Marker_key=15378">yes</a></td>
- <td valign=top>8 (33.0 cM)</TD> 
-</TR> 
-
-<tr>
-<TD valign=top><A href="<!--#include file='include/wi_url.html'-->searches/marker.cgi?15377">Pde4d</A></TD>
- <TD valign=top><a href="http://www.ncbi.nlm.nih.gov/htbin-post/Entrez/query?db=n&amp;form=6&amp;uid=M94541">M94541</a></td>
- <TD valign=top>dunce,&nbsp; Dped3</TD>
- <TD valign=top align=center><a href="<!--#include file='include/wi_url.html'-->searches/homology_report.cgi?_Marker_key=15377">yes</a></td>
- <td valign=top>13 (52.0 cM)</TD> 
-</TR> 
-
-<tr>
-<TD valign=top><A href="<!--#include file='include/wi_url.html'-->searches/marker.cgi?12234">Pde6a</A></TD>
- <TD valign=top><a href="http://www.ncbi.nlm.nih.gov/htbin-post/Entrez/query?db=n&amp;form=6&amp;uid=X60664">X60664</a></td>
- <TD valign=top>Pdea</TD>
- <TD valign=top align=center><a href="<!--#include file='include/wi_url.html'-->searches/homology_report.cgi?_Marker_key=12234">yes</a></td>
- <td valign=top>18 (31.0 cM)</TD> 
-</TR> 
-
-<TR>
- <TD valign=top><A href="<!--#include file='include/wi_url.html'-->searches/marker.cgi?12235">Pde6b</A></TD>
- <TD valign=top><a href="http://www.ncbi.nlm.nih.gov/htbin-post/Entrez/query?db=n&amp;form=6&amp;uid=L02109">L02109</a><br>
- <a href="http://www.ncbi.nlm.nih.gov/htbin-post/Entrez/query?db=n&amp;form=6&amp;uid=X55968">X55968</a></td>
- <TD valign=top>Pdeb,&nbsp;r,&nbsp; rd,&nbsp; rd1</TD>
- <TD valign=top align=center><a href="<!--#include file='include/wi_url.html'-->searches/homology_report.cgi?_Marker_key=12235">yes</a></td>
- <td valign=top>5 (57.0 cM)</TD> 
-</TR>
-
-<TR>
- <TD valign=top><A href="<!--#include file='include/wi_url.html'-->searches/marker.cgi?26541">Pde6c</A></TD>
- <TD>&nbsp;</td>
+ <TD><A href="<!--#include file='include/wi_url.html'-->searches/accession_report.cgi?id=MGI:108413">Pde1c</A></TD>
+ <TD><a href="<!--#include file='include/gb_url.html'-->L76944">L76944</a><br>
+ <a href="<!--#include file='include/gb_url.html'-->L76946">L76946</a></td>
+ <td>6 (27.0 cM)</TD>
+ <TD><a href="<!--#include file='include/locuslink_url.html'-->5137">PDE1C</a></TD> 
+ <td><a href="<!--#include file='include/gb_url.html'-->"></a></td> 
+  <TD>*Pde1c*</TD> 
+  <td><a href="http://www3.ncbi.nlm.nih.gov/htbin-post/Entrez/query?db=n&Dopt=g&form=6&uid="></a></td>
+ <TD align=center><a href="<!--#include file='include/wi_url.html'-->searches/homology_report.cgi?id=MGI:108413">yes</a></td>
  <TD>&nbsp;</TD>
+</TR> 
+<!--Pde3a-->
+<tr>
+  <TD><A href="<!--#include file='include/wi_url.html'-->searches/accession_report.cgi?id=MGI:1860764">Pde3a</A></TD>
+  <TD><a href="<!--#include file='include/gb_url.html'-->AF099187">AF099187</a></td>
+  <td>UN</TD>
+  <TD><a href="<!--#include file='include/locuslink_url.html'-->5139">PDE3A</a></TD> 
+  <td><a href="<!--#include file='include/gb_url.html'-->"></a></td> 
+  <TD>*Pde3a*</TD> 
+  <td><a href="http://www3.ncbi.nlm.nih.gov/htbin-post/Entrez/query?db=n&Dopt=g&form=6&uid="></a></td>
+  <TD align=center><a href="<!--#include file='include/wi_url.html'-->searches/homology_report.cgi?id=MGI:1860764">yes</a></td>
+  <TD>&nbsp;</TD>
+</TR> 
+<!--Pde3b-->
+<tr>
+ <TD><A href="<!--#include file='include/wi_url.html'-->searches/accession_report.cgi?id=MGI:1333863">Pde3b</A></TD>
+ <TD><a href="<!--#include file='include/gb_url.html'-->X95521">X95521</a></td>
+ <td>7 (53.3 cM)</TD> 
+ <TD><a href="<!--#include file='include/locuslink_url.html'-->5140">PDE3B</a></TD> 
+ <td><a href="<!--#include file='include/gb_url.html'-->"></a></td> 
+ <TD><a href="<!--#include file='include/ratmap_url.html'-->45476">Pde3b</a></TD> 
+ <td><a href="http://www3.ncbi.nlm.nih.gov/htbin-post/Entrez/query?db=n&Dopt=g&form=6&uid="></a></td>
+ <TD align=center><a href="<!--#include file='include/wi_url.html'-->searches/homology_report.cgi?id=MGI:1333863">yes</a></td>
  <TD>&nbsp;</TD>
- <td valign=top>7(68.0 cM)</TD> 
-</TR>
-
+</TR> 
+ <!--Pde4a-->
+<tr>
+  <TD><A href="<!--#include file='include/wi_url.html'-->searches/accession_report.cgi?id=MGI:99558">Pde4a</A></TD>
+  <TD><a href="<!--#include file='include/gb_url.html'-->AF208021">AF208021</a></td>
+  <td>9</TD> 
+  <TD><a href="<!--#include file='include/locuslink_url.html'-->5141">PDE4A</a></TD> 
+  <td><a href="<!--#include file='include/gb_url.html'-->"></a></td> 
+  <TD><a href="<!--#include file='include/ratmap_url.html'-->444375">Pde4a</a></TD> 
+  <td><a href="http://www3.ncbi.nlm.nih.gov/htbin-post/Entrez/query?db=n&Dopt=g&form=6&uid="></a></td>
+  <TD align=center><a href="<!--#include file='include/wi_url.html'-->searches/homology_report.cgi?id=MGI:99558">yes</a></td>
+  <TD>dunce,&nbsp; Dped2</TD>
+</TR> 
+<!--Pde4b-->
+<tr>
+<TD><A href="<!--#include file='include/wi_url.html'-->searches/accession_report.cgi?id=MGI:99557">Pde4b</A></TD>
+  <TD><a href="<!--#include file='include/gb_url.html'-->AF208023">AF208023</a></td>
+  <td>4 (46.8 cM)</TD>
+  <TD><a href="<!--#include file='include/locuslink_url.html'-->5142">PDE4B</a></TD> 
+  <td><a href="<!--#include file='include/gb_url.html'-->"></a></td> 
+  <TD><a href="<!--#include file='include/ratmap_url.html'-->34264">Pde4b</a></TD> 
+  <td><a href="http://www3.ncbi.nlm.nih.gov/htbin-post/Entrez/query?db=n&Dopt=g&form=6&uid="></a></td>
+  <TD align=center><a href="<!--#include file='include/wi_url.html'-->searches/homology_report.cgi?id=MGI:99557">yes</a></td>
+  <TD>dunce,&nbsp; Dped4</TD>
+</TR> 
+<!--Pde4c-->
+<tr>
+  <TD><A href="<!--#include file='include/wi_url.html'-->searches/accession_report.cgi?id=MGI:99556">Pde4c</A></TD>
+  <TD>&nbsp;</a></td>
+  <td>8 (33.0 cM)</TD> 
+  <TD><a href="<!--#include file='include/locuslink_url.html'-->5143">PDE4C</a></TD> 
+  <td><a href="<!--#include file='include/gb_url.html'-->"></a></td> 
+  <TD>&nbsp;</TD>
+  <td><a href="http://www3.ncbi.nlm.nih.gov/htbin-post/Entrez/query?db=n&Dopt=g&form=6&uid="></a></td>
+  <TD align=center><a href="<!--#include file='include/wi_url.html'-->searches/homology_report.cgi?id=MGI:99556">yes</a></td>
+  <TD>dunce,&nbsp; Dped1</TD>
+</TR> 
+<!--Pde4d-->
+<tr>
+<TD><A href="<!--#include file='include/wi_url.html'-->searches/accession_report.cgi?id=MGI:99555">Pde4d</A></TD>
+  <TD><a href="<!--#include file='include/gb_url.html'-->M94541">M94541</a></td>
+  <td>13 (52.0 cM)</TD> 
+  <TD><a href="<!--#include file='include/locuslink_url.html'-->5144">PDE4D</a></TD> 
+  <td><a href="<!--#include file='include/gb_url.html'-->"></a></td> 
+  <TD><a href="<!--#include file='include/ratmap_url.html'-->34265">Pde4d</a></TD> 
+  <td><a href="http://www3.ncbi.nlm.nih.gov/htbin-post/Entrez/query?db=n&Dopt=g&form=6&uid="></a></td>
+  <TD align=center><a href="<!--#include file='include/wi_url.html'-->searches/homology_report.cgi?id=MGI:99555">yes</a></td>
+  <TD>dunce,&nbsp; Dped3</TD>
+</TR> 
+<!--Pde6a-->
+<tr>
+  <TD><A href="<!--#include file='include/wi_url.html'-->searches/accession_report.cgi?id=MGI:97524">Pde6a</A></TD>
+  <TD><a href="<!--#include file='include/gb_url.html'-->X60664">X60664</a></td>
+  <td>18 (31.0 cM)</TD>
+  <TD><a href="<!--#include file='include/locuslink_url.html'-->5145">PDE6A</a></TD> 
+  <td><a href="<!--#include file='include/gb_url.html'-->"></a></td> 
+  <TD>&nbsp;</TD>
+  <td><a href="http://www3.ncbi.nlm.nih.gov/htbin-post/Entrez/query?db=n&Dopt=g&form=6&uid="></a></td>
+  <TD align=center><a href="<!--#include file='include/wi_url.html'-->searches/homology_report.cgi?id=MGI:97524">yes</a></td>
+  <TD>Pdea</TD>
+ </TR> 
+<!--Pde6b-->
 <TR>
- <TD valign=top><A href="<!--#include file='include/wi_url.html'-->searches/marker.cgi?36551">Pde6d</A></TD>
- <TD valign=top><a href="http://www.ncbi.nlm.nih.gov/htbin-post/Entrez/query?db=n&amp;form=6&amp;uid=AF039216">AF039216</a><br>
- <a href="http://www.ncbi.nlm.nih.gov/htbin-post/Entrez/query?db=n&amp;form=6&amp;uid=AF046000">AF046000</a></td>
- <TD>&nbsp;</TD>
- <TD valign=top align=center><a href="<!--#include file='include/wi_url.html'-->searches/homology_report.cgi?_Marker_key=36551">yes</a></td>
- <td valign=top>UN</TD> 
+  <TD><A href="<!--#include file='include/wi_url.html'-->searches/accession_report.cgi?id=MGI:97525">Pde6b</A></TD>
+  <TD><a href="<!--#include file='include/gb_url.html'-->L02109">L02109</a><br>
+  <a href="<!--#include file='include/gb_url.html'-->X55968">X55968</a></td>
+  <td>5 (57.0 cM)</TD> 
+  <TD><a href="<!--#include file='include/locuslink_url.html'-->5158">PDE6B</a></TD> 
+  <td><a href="<!--#include file='include/gb_url.html'-->"></a></td> 
+  <TD>&nbsp;</TD>
+  <td><a href="http://www3.ncbi.nlm.nih.gov/htbin-post/Entrez/query?db=n&Dopt=g&form=6&uid="></a></td>
+  <TD align=center><a href="<!--#include file='include/wi_url.html'-->searches/homology_report.cgi?id=MGI:97525">yes</a></td>
+  <TD>Pdeb,&nbsp;r,&nbsp; rd,&nbsp; rd1</TD>
 </TR>
-
+<!--Pde6c-->
 <TR>
- <TD valign=top><A href="<!--#include file='include/wi_url.html'-->searches/marker.cgi?12236">Pde6g</A></TD>
- <TD valign=top><a href="http://www.ncbi.nlm.nih.gov/htbin-post/Entrez/query?db=n&amp;form=6&amp;uid=Y00746">Y00746</a></td>
- <TD valign=top>Pdeg</TD>
- <TD valign=top align=center><a href="<!--#include file='include/wi_url.html'-->searches/homology_report.cgi?_Marker_key=12236">yes</a></td>
- <td valign=top>11 (75.0 cM)</TD> 
+  <TD><A href="<!--#include file='include/wi_url.html'-->searches/accession_report.cgi?id=MGI:105956">Pde6c</A></TD>
+  <TD>&nbsp;</td>
+  <td>7 (68.0 cM)</TD>
+  <TD>&nbsp;</td>
+   <td><a href="<!--#include file='include/gb_url.html'-->"></a></td> 
+  <TD>&nbsp;</TD>
+  <td><a href="http://www3.ncbi.nlm.nih.gov/htbin-post/Entrez/query?db=n&Dopt=g&form=6&uid="></a></td
+<TD>&nbsp;</td>
+<TD>&nbsp;</td>
 </TR>
-
+<!--Pde6d-->
 <TR>
- <TD valign=top><A href="<!--#include file='include/wi_url.html'-->searches/marker.cgi?35776">Pde7a</A></TD>
- <TD valign=top><a href="http://www.ncbi.nlm.nih.gov/htbin-post/Entrez/query?db=n&amp;form=6&amp;uid=U68171">U68171</a></td>
- <TD valign=top>&nbsp;</TD>
- <TD valign=top align=center><a href="<!--#include file='include/wi_url.html'-->searches/homology_report.cgi?_Marker_key=35776">yes</a></td>
- <td valign=top>3 (7.0 cM)</TD> 
+  <TD><A href="<!--#include file='include/wi_url.html'-->searches/accession_report.cgi?id=MGI:1270843">Pde6d</A></TD>
+  <TD><a href="<!--#include file='include/gb_url.html'-->AF039216">AF039216</a><br>
+  <a href="<!--#include file='include/gb_url.html'-->AF046000">AF046000</a></td>
+  <td>UN</TD> 
+  <TD><a href="<!--#include file='include/locuslink_url.html'-->5147">PDE6D</a></TD> 
+  <td><a href="<!--#include file='include/gb_url.html'-->"></a></td> 
+  <TD>&nbsp;</TD>
+  <td><!--<a href="http://www3.ncbi.nlm.nih.gov/htbin-post/Entrez/query?db=n&Dopt=g&form=6&uid="></a>--></td>
+  <TD align=center><a href="<!--#include file='include/wi_url.html'-->searches/homology_report.cgi?id=MGI:1270843">yes</a></td>
+  <TD>&nbsp;</TD>
 </TR>
-
+<!--Pde6g-->
 <TR>
- <TD valign=top><A href="<!--#include file='include/wi_url.html'-->searches/marker.cgi?45439">Pde7b</a></TD>
- <TD valign=top><a href="http://www.ncbi.nlm.nih.gov/htbin-post/Entrez/query?db=n&amp;form=6&amp;uid=AF190639">AF190639</a><br>
- <a href="http://www.ncbi.nlm.nih.gov/htbin-post/Entrez/query?db=n&amp;form=6&amp;uid=AJ251859">AJ251859</a></td>
- <TD valign=top>&nbsp;</TD>
- <TD valign=top align=center><a href="<!--#include file='include/wi_url.html'-->searches/homology_report.cgi?_Marker_key=45439">yes</a></td>
- <td valign=top>UN</TD> 
+  <TD><A href="<!--#include file='include/wi_url.html'-->searches/accession_report.cgi?id=MGI:97526">Pde6g</A></TD>
+  <TD><a href="<!--#include file='include/gb_url.html'-->Y00746">Y00746</a></td>
+  <td>11 (75.0 cM)</TD> 
+  <TD><a href="<!--#include file='include/locuslink_url.html'-->5148">PDE6G</a></TD> 
+  <td><a href="<!--#include file='include/gb_url.html'-->"></a></td> 
+  <TD>&nbsp;</TD>
+  <td><a href="http://www3.ncbi.nlm.nih.gov/htbin-post/Entrez/query?db=n&Dopt=g&form=6&uid="></a></td>
+  <TD align=center><a href="<!--#include file='include/wi_url.html'-->searches/homology_report.cgi?id=MGI:97526">yes</a></td>
+  <TD>Pdeg</TD>
 </TR>
-
+<!--Pde7a-->
 <TR>
- <TD valign=top><A href="<!--#include file='include/wi_url.html'-->searches/marker.cgi?36972">Pde8a</a></TD>
- <TD valign=top><a href="http://www.ncbi.nlm.nih.gov/htbin-post/Entrez/query?db=n&amp;form=6&amp;uid=AF067806">AF067806</a></td>
- <TD valign=top>Pde8</TD>
- <TD valign=top align=center><a href="<!--#include file='include/wi_url.html'-->searches/homology_report.cgi?_Marker_key=36972">yes</a></td>
- <td valign=top>UN</TD> 
+  <TD><A href="<!--#include file='include/wi_url.html'-->searches/accession_report.cgi?id=MGI:1202402">Pde7a</A></TD>
+  <TD><a href="<!--#include file='include/gb_url.html'-->U68171">U68171</a></td>
+  <td>3 (7.0 cM)</TD>
+  <TD><a href="<!--#include file='include/locuslink_url.html'-->5150">PDE7A</a></TD> 
+  <td><a href="<!--#include file='include/gb_url.html'-->"></a></td> 
+  <TD>*Pde7a*</TD>
+  <td><a href="http://www3.ncbi.nlm.nih.gov/htbin-post/Entrez/query?db=n&Dopt=g&form=6&uid="></a></td>
+  <TD align=center><a href="<!--#include file='include/wi_url.html'-->searches/homology_report.cgi?id=MGI:1202402">yes</a></td>
+  <TD>&nbsp;</TD>
 </TR>
-
+<!--Pde7b-->
 <TR>
- <TD valign=top><A href="<!--#include file='include/wi_url.html'-->searches/marker.cgi?37035">Pde9a</a></TD>
- <TD valign=top><a href="http://www.ncbi.nlm.nih.gov/htbin-post/Entrez/query?db=n&amp;form=6&amp;uid=AF031147">AF031147</a><br>
- <a href="http://www.ncbi.nlm.nih.gov/htbin-post/Entrez/query?db=n&amp;form=6&amp;uid=AF068247">AF068247</a></td>
- <TD valign=top>&nbsp;</TD>
- <TD valign=top align=center><a href="<!--#include file='include/wi_url.html'-->searches/homology_report.cgi?_Marker_key=37035">yes</a></td>
- <td valign=top>UN</TD> 
+ <TD><A href="<!--#include file='include/wi_url.html'-->searches/accession_report.cgi?id=MGI:1352752">Pde7b</a></TD>
+ <TD><a href="<!--#include file='include/gb_url.html'-->AF190639">AF190639</a><br>
+ <a href="<!--#include file='include/gb_url.html'-->AJ251859">AJ251859</a></td>
+  <td>UN</TD> 
+  <TD><a href="<!--#include file='include/locuslink_url.html'-->27115">PDE7B</a></TD> 
+  <td><a href="<!--#include file='include/gb_url.html'-->"></a></td> 
+  <TD>&nbsp;</TD>
+  <td><a href="http://www3.ncbi.nlm.nih.gov/htbin-post/Entrez/query?db=n&Dopt=g&form=6&uid="></a></td>
+  <TD align=center><a href="<!--#include file='include/wi_url.html'-->searches/homology_report.cgi?id=MGI:1352752">yes</a></td>
+  <TD>&nbsp;</TD>
 </TR>
-
+<!--Pde8a-->
 <TR>
- <TD valign=top><A href="<!--#include file='include/wi_url.html'-->searches/marker.cgi?42353">Pde10a</a></TD>
- <TD valign=top><a href="http://www.ncbi.nlm.nih.gov/htbin-post/Entrez/query?db=n&amp;form=6&amp;uid=AF110507">AF110507</a></td>
- <TD valign=top>&nbsp;</TD>
- <TD valign=top align=center><a href="<!--#include file='include/wi_url.html'-->searches/homology_report.cgi?_Marker_key=42353">yes</a></td>
- <td valign=top>UN</TD> 
+  <TD><A href="<!--#include file='include/wi_url.html'-->searches/accession_report.cgi?id=MGI:1277116">Pde8a</a></TD>
+  <TD><a href="<!--#include file='include/gb_url.html'-->AF067806">AF067806</a></td>
+  <td>UN</TD> 
+  <TD><a href="<!--#include file='include/locuslink_url.html'-->5151">PDE8A</a></TD>
+  <td><a href="<!--#include file='include/gb_url.html'-->"></a></td> 
+  <TD>&nbsp;</TD>
+  <td><a href="http://www3.ncbi.nlm.nih.gov/htbin-post/Entrez/query?db=n&Dopt=g&form=6&uid="></a></td>
+  <TD align=center><a href="<!--#include file='include/wi_url.html'-->searches/homology_report.cgi?id=MGI:1277116">yes</a></td>
+  <TD>Pde8</TD>
+</TR>
+<!--Pde9a-->
+<TR>
+  <TD><A href="<!--#include file='include/wi_url.html'-->searches/accession_report.cgi?id=MGI:1277179">Pde9a</a></TD>
+  <TD><a href="<!--#include file='include/gb_url.html'-->AF031147">AF031147</a><br>
+  <a href="<!--#include file='include/gb_url.html'-->AF068247">AF068247</a></td>
+  <td>UN</TD>
+  <TD><a href="<!--#include file='include/locuslink_url.html'-->5152">PDE9A</a></TD> 
+  <td><a href="<!--#include file='include/gb_url.html'-->"></a></td> 
+  <TD>&nbsp;</TD>
+  <td><a href="http://www3.ncbi.nlm.nih.gov/htbin-post/Entrez/query?db=n&Dopt=g&form=6&uid="></a></td>
+  <TD align=center><a href="<!--#include file='include/wi_url.html'-->searches/homology_report.cgi?id=MGI:1277179">yes</a></td>
+  <TD>&nbsp;</TD>
+</TR>
+<!--19=10A-->
+<TR>
+  <TD><A href="<!--#include file='include/wi_url.html'-->searches/accession_report.cgi?id=MGI:1345143">Pde10a</a></TD>
+  <TD><a href="<!--#include file='include/gb_url.html'-->AF110507">AF110507</a></td>
+  <td>UN</TD>
+  <TD><a href="<!--#include file='include/locuslink_url.html'-->5152">PDE9A</a></TD> 
+  <td><a href="<!--#include file='include/gb_url.html'-->"></a></td> 
+  <TD>Pde*10a*</TD>
+  <td><a href="http://www3.ncbi.nlm.nih.gov/htbin-post/Entrez/query?db=n&Dopt=g&form=6&uid="></a></td>
+  <TD align=center><a href="<!--#include file='include/wi_url.html'-->searches/homology_report.cgi?id=MGI:1345143">yes</a></td>
+  <TD>&nbsp;</TD>
 </TR>
 </table>
-
-
+<p><sup>1</sup> Representative example. 
 <p><b>Superfamily Note:</b>&nbsp; Cylic nucleotides (e.g., cGMP; guanosine-3',5'-cyclic monophosphate) 
 mediate cellular responses to external signals as secondary messengers. The 
 concentration of cyclic nucleotides is in turn controlled by the cyclic nucleotide 
 phosphodiesterases (Pde#).  Pde# have been shown to be a large superfamily of diverse 
 enzymes that are highly regulated by multiple signaling pathways.</p> 
 <hr> 
-<h4>Notes About Gene Family Annotations in MGD</h4> 
-<h5>Nomenclature for New Genes</h5>
-<p>
-<small>
-Contact the MGD Nomenclature Committee (<A href="mailto:nomen@informatics.jax.org">nomen@informatics.jax.org</A>)
- for approved gene symbols prior to submission.  This avoids any possible conflicts
-with existing symbols and ensures that the gene symbol and name are reserved in the
-MGD private nomenclature database.  All information is kept confidential until 
-publication.</small></p>
-<h5>Nomenclature for Gene Families</h5>
-<p>
-<small>
-MGD works closely with HUGO and other interested scientists in the establishment of nomenclature 
-for genes that are members of gene families and in representing the relationships between members of
- gene families. In general, a stem symbol is assigned (e.g., Entpd) and members of the family 
- are numbered (e.g., Entpd1, Entpd2, etc.). However, there are exceptions
-  and many special cases.
-</small></p>
-  <hr>
+<!--#include file="include/gf_nomenclature.html"-->
 <!--#include file="include/footer.html"-->
 </BODY>
  </HTML> 

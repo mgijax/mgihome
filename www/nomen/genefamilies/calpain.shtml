@@ -12,126 +12,184 @@
 <BODY>
 <TITLE>Calpain Gene Family</TITLE>
 </HEAD>
-<BODY BGCOLOR=#FFFFFF>
+<BODY BGCOLOR="#FFFFFF">
 
 <!--#include file="include/banner.html"-->
 
-<h2><center>Calpain Gene Family</center></h2>
-<HR width="100%">
+<H2><CENTER>Calpain Gene Family</CENTER></H2>
+<HR WIDTH="100%">
 
-<table frame=void cols=2 width=100%> 
- <tr>
-  <td width=20%><b>Family Root Symbol:</b></td>
-  <td width=80%>Capn#</td>
- </tr> 
- <tr>
-  <td><b>Family Name:</b></td>
-  <td>Calpain#</td>
- </tr>
-</table>
-<p><b>Links to Calpain Family data:</b>
-<TABLE bgcolor="white" border=1 cols=4 width=70% cellpadding=4> 
+<TABLE FRAME="void" COLS="2" WIDTH="100%"> 
  <TR>
-  <TH width=15%>Symbol</TH>
-  <TH width=20%>Sequence</TH>
-  <TH width=30%>Synonyms</th>
-  <TH width=10%>Orthologs</th>
-  <TH width=25%>Chr</th>
+  <TD WIDTH="20%"><B>Family Root Symbol:</B></TD>
+  <TD WIDTH="80%">Capn#</TD>
+ </TR> 
+ <TR>
+  <TD><B>Family Name:</B></TD>
+  <TD>Calpain#</TD>
  </TR>
+</TABLE>
+<P><B>Links to Calpain Family data:</B>
+<TABLE BGCOLOR="white" BORDER="1" WIDTH="80%" CELLPADDING="8"> 
+ <TR BGCOLOR="E0E0E0">
+  <TH "WIDTH="11%">Mouse Symbol</TH>
+  <TH WIDTH="11%">Mouse Seq. ID <SUP>1</SUP></TH>
+  <TH WIDTH="11%">Mouse Chromosomal Location</TH>
+  <TH WIDTH="11%">Human Ortholog</TH>
+  <TH WIDTH="11%">Human Seq. ID <SUP>1</SUP></TH>
+  <TH WIDTH="11%">Rat Ortholog</TH>
+  <TH WIDTH="11%">Rat Seq. ID <SUP>1</SUP></TH>
+  <TH WIDTH="11%">Orthology Details</TH>
+  <TH WIDTH="11%">Mouse Synonyms</TH>
+ </TR>
+<!--Capn1-->
 <TR>
- <TD valign=top><A href="<!--#include file='include/wi_url.html'-->searches/marker.cgi?32578">Capn1</a></td>
- <TD valign=top><a href="http://www.ncbi.nlm.nih.gov/htbin-post/Entrez/query?db=n&amp;form=6&amp;uid=AF021847">AF021847</a><br>
- <a href="http://www.ncbi.nlm.nih.gov/htbin-post/Entrez/query?db=n&amp;form=6&amp;uid=D18416">D18416</a></TD>
- <TD valign=top>Capa-1, &nbsp;Capa1,&nbsp;mu-calpin</td>
- <TD valign=top align=center><a href="<!--#include file='include/wi_url.html'-->searches/homology_report.cgi?_Marker_key=32578">yes</a></td>
- <td valign=top>19 (3.0 cM)</td>
-</TR> 
-<TR>
- <TD valign=top><A href="<!--#include file='include/wi_url.html'-->searches/marker.cgi?32577">Capn2</A></TD>
- <TD valign=top><a href="http://www.ncbi.nlm.nih.gov/htbin-post/Entrez/query?db=n&amp;form=6&amp;uid=AF015038">AF015038</a><br>
- <A HREF="http://www.ncbi.nlm.nih.gov/htbin-post/Entrez/query?db=n&amp;form=6&amp;uid=D38117">D38117</A><br>
- <a href="http://www.ncbi.nlm.nih.gov/htbin-post/Entrez/query?db=n&amp;form=6&amp;uid=Y10139">Y10139</a></td>
- <TD valign=top>Capa-2, &nbsp;Capa2, &nbsp;m-caplin</TD>
- <TD valign=top align=center><a href="<!--#include file='include/wi_url.html'-->searches/homology_report.cgi?_Marker_key=32577">yes</a></td>
- <td valign=top>UN</td>
-</TR> 
-<TR>
- <TD valign=top><A href="<!--#include file='include/wi_url.html'-->searches/marker.cgi?28580">Capn3</a></td>
- <TD valign=top><a href="http://www.ncbi.nlm.nih.gov/htbin-post/Entrez/query?db=n&amp;form=6&amp;uid=X92523">X92523</a></td>
-<TD valign=top>Capa-3,&nbsp; Capa3</TD>
- <TD valign=top align=center><a href="<!--#include file='include/wi_url.html'-->searches/homology_report.cgi?_Marker_key=28580">yes</a></td>
- <td valign=top>2 (67.2 cM)</TD> 
-</TR> 
- <TD valign=top><A href="<!--#include file='include/wi_url.html'-->searches/marker.cgi?32576">Capn4</a></td>
- <TD valign=top><a href="http://www.ncbi.nlm.nih.gov/htbin-post/Entrez/query?db=n&amp;form=6&amp;uid=AF058297">AF058297</a><br>
-<a href="http://www.ncbi.nlm.nih.gov/htbin-post/Entrez/query?db=n&amp;form=6&amp;uid=AF058298">AF058298</a></TD>
- <TD valign=top>Capa-4, &nbsp;Capa4</TD>
- <TD valign=top align=center><a href="<!--#include file='include/wi_url.html'-->searches/homology_report.cgi?_Marker_key=32576">yes</a></td>
- <td valign=top>UN</TD> 
-</TR> 
- <TD valign=top><A href="<!--#include file='include/wi_url.html'-->searches/marker.cgi?34654">Capn5</A></TD>
- <TD valign=top><a href="http://www.ncbi.nlm.nih.gov/htbin-post/Entrez/query?db=n&amp;form=6&amp;uid=U85020">U85020</a><br>
- <a href="http://www.ncbi.nlm.nih.gov/htbin-post/Entrez/query?db=n&amp;form=6&amp;uid=Y10656">Y10656</a></TD>
- <TD valign=top>&nbsp;</TD>
- <TD valign=top align=center><a href="<!--#include file='include/wi_url.html'-->searches/homology_report.cgi?_Marker_key=34654">yes</a></td>
- <td valign=top>7</TD> 
-</TR> 
-<tr>
- <TD valign=top><A href="<!--#include file='include/wi_url.html'-->searches/marker.cgi?34645">Capn6</A></TD>
- <TD valign=top><a href="http://www.ncbi.nlm.nih.gov/htbin-post/Entrez/query?db=n&amp;form=6&amp;uid=Y12582">Y12582</a></TD>
- <TD valign=top>&nbsp;</TD>
- <TD valign=top align=center><a href="<!--#include file='include/wi_url.html'-->searches/homology_report.cgi?_Marker_key=34645">yes</a></td>
- <td valign=top>UN</TD> 
-</TR> 
-<tr>
- <TD valign=top><A href="<!--#include file='include/wi_url.html'-->searches/marker.cgi?40719">Capn7</A></TD>
- <TD valign=top><a href="http://www.ncbi.nlm.nih.gov/htbin-post/Entrez/query?db=n&amp;form=6&amp;uid=AJ012475">AJ012475</a></TD>
- <TD valign=top>&nbsp;</TD>
- <TD valign=top align=center><a href="<!--#include file='include/wi_url.html'-->searches/homology_report.cgi?_Marker_key=40719">yes</a></td>
- <td valign=top>UN</TD> 
+  <TD><A HREF="<!--#include file='include/wi_url.html'-->searches/accession_report.cgi?id=MGI:88263">Capn1</A></TD>
+  <TD><A HREF="<!--#include file='include/gb_url.html'-->AF021847">AF021847</A></TD>
+  <TD>19 (3.0 cM)</TD>
+  <TD><A HREF="<!--#include file='include/locuslink_url.html'-->823">CAPN1</A></TD> 
+  <TD><A HREF="<!--#include file='include/gb_url.html'-->X04366">X04366</A></TD> 
+  <TD>*Capn1*</TD> 
+  <TD><A HREF="http://www3.ncbi.nlm.nih.gov/htbin-post/Entrez/query?db=n&Dopt=g&form=6&uid=U53858">U53858</A></TD>
+  <TD ALIGN="center"><A HREF="<!--#include file='include/wi_url.html'-->searches/homology_report.cgi?id=MGI:88263">yes</A></TD>
+  <TD>Capa-1 <BR>Capa1 <BR>mu-calpin</TD>
 </TR>
-<tr>
- <TD valign=top><A href="<!--#include file='include/wi_url.html'-->searches/marker.cgi?42202">Capn10</A></TD>
- <TD valign=top><a href="http://www.ncbi.nlm.nih.gov/htbin-post/Entrez/query?db=n&amp;form=6&amp;uid=AA733563">AA733563</a><br>
-<a href="http://www.ncbi.nlm.nih.gov/htbin-post/Entrez/query?db=n&amp;form=6&amp;uid=AF089089">AF089089</a><br>
-<a href="http://www.ncbi.nlm.nih.gov/htbin-post/Entrez/query?db=n&amp;form=6&amp;uid=AF126867">AF126867</a></TD>
- <TD valign=top>Capn8</TD>
- <TD valign=top align=center><a href="<!--#include file='include/wi_url.html'-->searches/homology_report.cgi?_Marker_key=42202">yes</a></td>
- <td valign=top>UN</td>
-</TR> 
-
-<tr>
- <TD valign=top><A href="<!--#include file='include/wi_url.html'-->searches/marker.cgi?45377">Capn11</A></TD>
- <TD valign=top>&nbsp;</TD>
- <TD valign=top>&nbsp;</TD>
- <TD valign=top align=center><a href="<!--#include file='include/wi_url.html'-->searches/homology_report.cgi?_Marker_key=45377">yes</a></td>
- <td valign=top>UN</TD> 
+<!--Capn2--> 
+<TR>
+ <TD><A HREF="<!--#include file='include/wi_url.html'-->searches/accession_report.cgi?id=MGI:88264">Capn2</A></TD>
+ <TD><A HREF="<!--#include file='include/gb_url.html'-->D38117">D38117</A></TD>
+ <TD>UN</TD>
+ <TD><A HREF="<!--#include file='include/locuslink_url.html'-->824">CAPN2</A></TD> 
+ <TD><A HREF="<!--#include file='include/gb_url.html'-->AF261089">AF261089</A></TD> 
+ <TD>*Capn2*</TD> 
+ <TD><A HREF="http://www3.ncbi.nlm.nih.gov/htbin-post/Entrez/query?db=n&Dopt=g&form=6&uid=L09120">L09120</A></TD>
+ <TD ALIGN="center"><A HREF="<!--#include file='include/wi_url.html'-->searches/homology_report.cgi?id=MGI:88264">yes</A></TD>
+ <TD>Capa-2<BR>Capa2<BR>m-caplin</TD>
 </TR>
-
-<tr>
- <TD valign=top><A href="<!--#include file='include/wi_url.html'-->searches/marker.cgi?48601">Capn12</A></TD>
- <TD valign=top><a href="http://www.ncbi.nlm.nih.gov/htbin-post/Entrez/query?db=n&amp;form=6&amp;uid=AJ289241">AJ289241</a><br>
-<a href="http://www.ncbi.nlm.nih.gov/htbin-post/Entrez/query?db=n&amp;form=6&amp;uid=AJ289243">AJ289243</a></TD></TD>
- <TD valign=top>&nbsp;</TD>
- <TD valign=top align=center><a href="<!--#include file='include/wi_url.html'-->searches/homology_report.cgi?_Marker_key=48601">yes</a></td>
- <td valign=top>7</TD> 
+<!--Capn3--> 
+<TR>
+ <TD><A HREF="<!--#include file='include/wi_url.html'-->searches/accession_report.cgi?id=MGI:107437">Capn3</A></TD>
+ <TD><A HREF="<!--#include file='include/gb_url.html'-->X92523">X92523</A></TD>
+ <TD>2 (67.2 cM)</TD>
+ <TD><A HREF="<!--#include file='include/locuslink_url.html'-->825">CAPN3</A></TD> 
+ <TD><A HREF="<!--#include file='include/gb_url.html'-->X85030">X85030</A></TD> 
+  <TD>*Capn3*</TD> 
+  <TD><A HREF="http://www3.ncbi.nlm.nih.gov/htbin-post/Entrez/query?db=n&Dopt=g&form=6&uid=J05121">J05121</A></TD>
+ <TD ALIGN="center"><A HREF="<!--#include file='include/wi_url.html'-->searches/homology_report.cgi?id=MGI:107437">yes</A></TD>
+ <TD>Capa-3 <BR>Capa3</TD>
 </TR> 
-
-</TABLE> 
-<p><b>Family Note:</b>&nbsp; Calpains are a family of calcium-dependent, cysteine proteases.</p>
-<hr> 
-<h4>Notes About Gene Family Annotations in MGD</h4> 
-<h5>Nomenclature for New Genes</h5>
-<p><small>Contact the MGD Nomenclature Committee (<A href="mailto:nomen@informatics.jax.org">nomen@informatics.jax.org</A>)
- for approved gene symbols prior to submission.  This avoids any possible conflicts with existing symbols and ensures that the gene symbol and name are reserved in the MGD private nomenclature database.  All information is kept confidential until publication.</small></p>
-<h5>Nomenclature for Gene Families</h5>
-<p>
-<small>MGD works closely with HUGO and other interested scientists in the establishment of nomenclature 
-for genes that are members of gene families and in representing the relationships between members of
- gene families. In general, a stem symbol is assigned (e.g., Entpd) and members of the family 
- are numbered (e.g., Entpd1, Entpd2, etc.). However, there are exceptions
-  and many special cases.</small></p>
-  <hr>
+<!--Capn4--> 
+<TR>
+ <TD><A HREF="<!--#include file='include/wi_url.html'-->searches/accession_report.cgi?id=MGI:88266">Capn4</A></TD>
+ <TD><A HREF="<!--#include file='include/gb_url.html'-->AF058298">AF058298</A></TD>
+ <TD>UN</TD> 
+  <TD><A HREF="<!--#include file='include/locuslink_url.html'-->826">CAPNS1</A></TD> 
+  <TD><A HREF="<!--#include file='include/gb_url.html'-->X04106">X04106</A></TD> 
+  <TD>*Capn4*</TD> 
+  <TD><A HREF="http://www3.ncbi.nlm.nih.gov/htbin-post/Entrez/query?db=n&Dopt=g&form=6&uid=U53859">U53859</A></TD>
+  <TD ALIGN="center"><A HREF="<!--#include file='include/wi_url.html'-->searches/homology_report.cgi?id=MGI:88266">yes</A></TD>
+  <TD>Capa-4<BR>Capa4</TD>
+</TR>
+<!--Capn5--> 
+<TR>
+ <TD><A HREF="<!--#include file='include/wi_url.html'-->searches/accession_report.cgi?id=MGI:1100859">Capn5</A></TD>
+ <TD><A HREF="<!--#include file='include/gb_url.html'-->U85020">U85020</A></TD>
+ <TD>7</TD> 
+  <TD><A HREF="<!--#include file='include/locuslink_url.html'-->726">CAPN5</A></TD> 
+  <TD><A HREF="<!--#include file='include/gb_url.html'-->U94346">U94346</A></TD>
+  <TD>&nbsp;</TD>
+  <TD>&nbsp;</TD>
+  <TD ALIGN="center"><A HREF="<!--#include file='include/wi_url.html'-->searches/homology_report.cgi?id=MGI:34654">yes</A></TD>
+  <TD>&nbsp;</TD>
+</TR>
+<!--Capn6--> 
+<TR>
+  <TD><A HREF="<!--#include file='include/wi_url.html'-->searches/accession_report.cgi?id=MGI:1100850">Capn6</A></TD>
+  <TD><A HREF="<!--#include file='include/gb_url.html'-->Y12582">Y12582</A></TD>
+  <TD>UN</TD>
+  <TD>CAPN6</A></TD> 
+  <TD><A HREF="<!--#include file='include/gb_url.html'-->AJ000388">AJ000388</A></TD> 
+  <TD>*Capn6*</TD>
+  <TD><A HREF="http://www3.ncbi.nlm.nih.gov/htbin-post/Entrez/query?db=n&Dopt=g&form=6&uid=AF067793">AF067793</A></TD>
+  <TD ALIGN="center"><A HREF="<!--#include file='include/wi_url.html'-->searches/homology_report.cgi?id=MGI:1100850">yes</A></TD>
+  <TD>&nbsp;</TD>
+</TR> 
+<!--Capn7--> 
+<TR>
+  <TD><A HREF="<!--#include file='include/wi_url.html'-->searches/accession_report.cgi?id=MGI:1338030">Capn7</A></TD>
+  <TD><A HREF="<!--#include file='include/gb_url.html'-->AJ012475">AJ012475</A></TD>
+  <TD>UN</TD>
+  <TD><A HREF="<!--#include file='include/locuslink_url.html'-->23473">CAPN7</A></TD> 
+  <TD><A HREF="<!--#include file='include/gb_url.html'-->AB028639">AB028639</A></TD> 
+  <TD>&nbsp;</TD>
+<TD>&nbsp;</TD>  <TD ALIGN="center"><A HREF="<!--#include file='include/wi_url.html'-->searches/homology_report.cgi?id=MGI:1338030">yes</A></TD>
+  <TD>&nbsp;</TD>
+</TR>
+<!--Capn8--> 
+<TR>
+  <TD>&nbsp;</TD>
+  <TD>&nbsp;</TD>
+  <TD>&nbsp;</TD>
+  <TD><A HREF="<!--#include file='include/locuslink_url.html'-->10754">CAPN8</A></TD> 
+  <TD>&nbsp;</TD>
+  <TD>&nbsp;</TD>
+   <TD>&nbsp;</TD>
+  <TD>&nbsp;</TD>
+  <TD>&nbsp;</TD>
+</TR>
+<!--Capn9--> 
+<TR>
+  <TD>&nbsp;</TD>
+  <TD>&nbsp;</TD>
+  <TD>&nbsp;</TD>
+  <TD><A HREF="<!--#include file='include/locuslink_url.html'-->10753">CAPN9</A></TD> 
+  <TD><A HREF="<!--#include file='include/gb_url.html'-->AB038463">AB038463</A></TD> 
+  <TD>&nbsp;</TD>
+  <TD>&nbsp;</TD>
+  <TD>&nbsp;</TD>
+  <TD>&nbsp;</TD>
+</TR>
+<!--Capn10--> 
+<TR>
+  <TD><A HREF="<!--#include file='include/wi_url.html'-->searches/accession_report.cgi?id=MGI:1344392">Capn10</A></TD>
+  <TD><A HREF="<!--#include file='include/gb_url.html'-->AF089089">AF089089</A><BR>
+  <TD>UN</TD>
+  <TD><A HREF="<!--#include file='include/locuslink_url.html'-->11132">CAPN10</A></TD> 
+  <TD><A HREF="<!--#include file='include/gb_url.html'-->AF089093">AF089093</A></TD> 
+  <TD>*Capn10*</TD> 
+  <TD><A HREF="http://www3.ncbi.nlm.nih.gov/htbin-post/Entrez/query?db=n&Dopt=g&form=6&uid=AF227909">AF227909</A></TD>
+  <TD ALIGN="center"><A HREF="<!--#include file='include/wi_url.html'-->searches/homology_report.cgi?id=MGI:1344392">yes</A></TD>
+  <TD>Capn8</TD>
+</TR>
+<!--Capn11-->  
+<TR>
+  <TD><A HREF="<!--#include file='include/wi_url.html'-->searches/accession_report.cgi?id=MGI:1352490">Capn11</A></TD>
+  <TD>&nbsp;</TD>
+  <TD>UN</TD>
+  <TD>CAPN11</TD>
+  <TD><A HREF="<!--#include file='include/gb_url.html'-->AJ242832">AJ242832</A></TD> 
+  <TD>&nbsp;</TD>
+  <TD>&nbsp;</TD>
+  <TD>&nbsp;</TD>
+  <TD>&nbsp;</TD>
+</TR>
+<!--12--> 
+<TR>
+  <TD><A HREF="<!--#include file='include/wi_url.html'-->searches/accession_report.cgi?id=MGI:1891369">Capn12</A></TD>
+  <TD><A HREF="<!--#include file='include/gb_url.html'-->AJ289243">AJ289243</A></TD></TD>
+  <TD>7</TD> 
+  <TD>CAPN12</TD>
+  <TD>&nbsp;</TD>
+  <TD>&nbsp;</TD>
+  <TD>&nbsp;</TD>
+  <TD ALIGN="center"><A HREF="<!--#include file='include/wi_url.html'-->searches/homology_report.cgi?id=MGI:1891369">yes</A></TD>
+  <TD>&nbsp;</TD>
+</TR> 
+</TABLE>
+<P><SUP>1</SUP>&nbsp;Representative example. 
+<P><B>Family Note:</B>&nbsp; Calpains are a family of calcium-dependent, cysteine proteases.</P>
+<HR> 
+<!--#include file="include/gf_nomenclature.html"-->
 <!--#include file="include/footer.html"-->
 </BODY>
  </HTML> 

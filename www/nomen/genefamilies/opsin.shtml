@@ -2,7 +2,6 @@
 <HTML>
 <HEAD>
   <TITLE>Opsin Gene Family</TITLE>
-  <LINK REV="made" HREF="mailto:">
   <META NAME="generator" CONTENT="NoteTab Pro 4.84">
   <META NAME="author" CONTENT="Diane Dahmen">
   <META NAME="description" CONTENT="Opsin Gene Family">
@@ -23,75 +22,87 @@
  </tr>
 </table>
 <P><b>Links to Opsin Family data:</b>
-<TABLE border=1 width=70% cellpadding=4> 
+<TABLE bgcolor="white" border=1 width=80% cellpadding=8> 
  <TR>
-  <TH width=15%>Symbol
-  <TH width=20%>Sequence
-  <TH width=30%>Synonyms
-  <TH width=10%>Orthologs 
-  <TH width=25%>Chr
+ <TR bgcolor="E0E0E0">
+  <TH width="11%">Mouse Symbol</th>
+  <TH width="11%">Mouse Seq. ID <sup>1</sup></th>
+  <TH width="11%">Mouse Chromosomal Location</th>
+  <TH width="11%">Human Ortholog</th>
+  <TH width="11%">Human Seq. ID <sup>1</sup></TH>
+  <TH width="11%">Rat Ortholog</th>
+  <TH width="11%">Rat Seq. ID <sup>1</sup></TH>
+  <TH width="11%">Orthology Details</th>
+  <TH width="11%">Synonyms</th>
  </TR>
-<TR>
- <TD valign=top><A href="<!--#include file='include/wi_url.html'-->searches/marker.cgi?33713">Opn1mw</A></TD>
- <TD valign=top><a href="http://www.ncbi.nlm.nih.gov/htbin-post/Entrez/query?db=n&amp;form=6&amp;uid=AF011389">AF011389</a><br>
-  <a href="http://www.ncbi.nlm.nih.gov/htbin-post/Entrez/query?db=n&amp;form=6&amp;uid=AF190672">AF190672</a></TD>
- <TD valign=top>Gcp</TD> 
- <TD valign=top align=center><a href="<!--#include file='include/wi_url.html'-->searches/homology_report.cgi?_Marker_key=33713">yes</a></td>
- <td valign=top>UN</TD> 
+<!--Opn1mw-->
+<tr>
+ <TD><A href="<!--#include file='include/wi_url.html'-->searches/maccession_report.cgi?id=MGI:1097692">Opn1mw</A></TD>
+ <TD><a href="<!--#include file='include/gb_url.html'-->AF011389">AF011389</a><br>
+  <a href="<!--#include file='include/gb_url.html'-->AF190672">AF190672</a></TD>
+  <td>UN</TD> 
+  <td><a href="<!--#include file='include/locuslink_url.html'-->2652">OPN1MW</TD>
+  <td><a href="<!--#include file='include/gb_url.html'-->"></a></td> 
+  <TD>&nbsp;</TD> 
+  <td><a href="http://www3.ncbi.nlm.nih.gov/htbin-post/Entrez/query?db=n&Dopt=g&form=6&uid="></a></td>
+ <TD align=center><a href="<!--#include file='include/wi_url.html'-->searches/homology_report.cgi?id=MGI:1097692">yes</a></td>
+  <TD>Gcp</TD>
 </TR> 
+<!--Opn1mw-->
 <TR>
- <TD valign=top><A href="<!--#include file='include/wi_url.html'-->searches/marker.cgi?15238">Opn1sw</A></TD>
- <TD valign=top><a href="http://www.ncbi.nlm.nih.gov/htbin-post/Entrez/query?db=n&amp;form=6&amp;uid=AF190670">AF190670</a><br>
-  <a href="http://www.ncbi.nlm.nih.gov/htbin-post/Entrez/query?db=n&amp;form=6&amp;uid=AF190671">AF190671</a><br>
-  <a href="http://www.ncbi.nlm.nih.gov/htbin-post/Entrez/query?db=n&amp;form=6&amp;uid=U49720">U49720</a></TD>
- <TD valign=top>Bcp</TD> 
- <TD valign=top align=center><a href="<!--#include file='include/wi_url.html'-->searches/homology_report.cgi?_Marker_key=15238">yes</a></td>
- <td valign=top>UN
+ <TD><A href="<!--#include file='include/wi_url.html'-->searches/accession_report.cgi?id=MGI:99438">Opn1sw</A></TD>
+ <TD><a href="<!--#include file='include/gb_url.html'-->AF190670">AF190670</a><br>
+  <a href="<!--#include file='include/gb_url.html'-->AF190671">AF190671</a><br>
+  <a href="<!--#include file='include/gb_url.html'-->U49720">U49720</a></TD>
+   <td>UN</td>
+ <td><a href="<!--#include file='include/locuslink_url.html'-->611">OPN1SW</TD>
+  <td><a href="<!--#include file='include/gb_url.html'-->"></a></td> 
+  <TD>&nbsp;</TD> 
+  <td><a href="http://www3.ncbi.nlm.nih.gov/htbin-post/Entrez/query?db=n&Dopt=g&form=6&uid="></a></td>
+ <TD align=center><a href="<!--#include file='include/wi_url.html'-->searches/homology_report.cgi?id=MGI:99438">yes</a></td>
+ <TD>Bcp</TD> 
 </TR>
+<!--Rho-->
 <TR>
- <TD valign=top><A href="<!--#include file='include/wi_url.html'-->searches/marker.cgi?12894">Rho</A></TD>
- <TD valign=top><a href="http://www.ncbi.nlm.nih.gov/htbin-post/Entrez/query?db=n&amp;form=6&amp;uid=M55171">M55171</a><br></TD>
- <TD valign=top>Opn2, &nbsp;RP4</TD> 
- <TD valign=top align=center><a href="<!--#include file='include/wi_url.html'-->searches/homology_report.cgi?_Marker_key=12894">yes</a></td>
- <td valign=top>6 (51.5 cM)</td>
+ <TD><A href="<!--#include file='include/wi_url.html'-->searches/accession_report.cgi?id=MGI:97914">Rho</A></TD>
+ <TD><a href="<!--#include file='include/gb_url.html'-->M55171">M55171</a><br></TD>
+ <TD>Opn2, &nbsp;RP4</TD>
+ <td><a href="<!--#include file='include/locuslink_url.html'-->6010">RHO</TD>
+  <td><a href="<!--#include file='include/gb_url.html'-->"></a></td> 
+ <TD><a href="<!--#include file='include/ratmap_url.html'-->34364">Rho</a></TD> 
+  <td><a href="http://www3.ncbi.nlm.nih.gov/htbin-post/Entrez/query?db=n&Dopt=g&form=6&uid="></a></td>
+ <TD align=center><a href="<!--#include file='include/wi_url.html'-->searches/homology_report.cgi?id=MGI:97914">yes</a></td>
+ <td>6 (51.5 cM)</td>
 </TR>
+<!--Opn3-->
 <TR>
- <TD valign=top><A href="<!--#include file='include/wi_url.html'-->searches/marker.cgi?40711">Opn3</A></TD>
- <TD valign=top><a href="http://www.ncbi.nlm.nih.gov/htbin-post/Entrez/query?db=n&amp;form=6&amp;uid=AF140241">AF140241</a><br></TD>
- <TD valign=top>Ero,&nbsp; Ecpn</TD> 
- <TD valign=top align=center><a href="<!--#include file='include/wi_url.html'-->searches/homology_report.cgi?_Marker_key=40711">yes</a></td>
- <td valign=top>UN
+ <TD><A href="<!--#include file='include/wi_url.html'-->searches/accession_report.cgi?id=MGI:1338022">Opn3</A></TD>
+ <TD><a href="<!--#include file='include/gb_url.html'-->AF140241">AF140241</a><br></TD>
+  <td>UN</td>
+  <td><a href="<!--#include file='include/locuslink_url.html'-->23596">OPN3</TD>
+  <td><a href="<!--#include file='include/gb_url.html'-->"></a></td> 
+  <TD>&nbsp;</TD> 
+  <td><a href="http://www3.ncbi.nlm.nih.gov/htbin-post/Entrez/query?db=n&Dopt=g&form=6&uid="></a></td>
+ <TD align=center><a href="<!--#include file='include/wi_url.html'-->searches/homology_report.cgi?id=MGI:1338022">yes</a></td>
+ <TD>Ero,&nbsp; Ecpn</TD> 
 </TR>
-
+<!--Opn4-->
 <TR>
- <TD valign=top><A href="<!--#include file='include/wi_url.html'-->searches/marker.cgi?45535">Opn4</A></TD>
- <TD valign=top><a href="http://www.ncbi.nlm.nih.gov/htbin-post/Entrez/query?db=n&amp;form=6&amp;uid=AF147789">AF147789</a><br></TD>
- <TD valign=top>&nbsp;</TD> 
- <TD valign=top align=center><a href="<!--#include file='include/wi_url.html'-->searches/homology_report.cgi?_Marker_key=45535">yes</a></td>
- <td valign=top>UN
+ <TD><A href="<!--#include file='include/wi_url.html'-->searches/accession_report.cgi?id=MGI:1353425">Opn4</A></TD>
+ <TD><a href="<!--#include file='include/gb_url.html'-->AF147789">AF147789</a></TD>
+ <td>UN</td>
+ <td>OPN4</TD>
+  <td><a href="<!--#include file='include/gb_url.html'-->"></a></td> 
+  <TD>&nbsp;</TD> 
+  <td><a href="http://www3.ncbi.nlm.nih.gov/htbin-post/Entrez/query?db=n&Dopt=g&form=6&uid="></a></td>
+ <TD align=center><a href="<!--#include file='include/wi_url.html'-->searches/homology_report.cgi?id=MGI:1353425">yes</a></td>
+ <TD>&nbsp;</TD> 
 </TR>
 </TABLE>
+<p>*&nbsp;Most representative example. 
 <p><b>Family Note:</b>&nbsp;None.</p> 
 <hr> 
-<h4>Notes About Gene Family Annotations in MGD</h4> 
-<h5>Nomenclature for New Genes</h5>
-<p>
-<small>
-Contact the MGD Nomenclature Committee (<A href="mailto:nomen@informatics.jax.org">nomen@informatics.jax.org</A>)
- for approved gene symbols prior to submission.  This avoids any possible conflicts
-with existing symbols and ensures that the gene symbol and name are reserved in the
-MGD private nomenclature database.  All information is kept confidential until 
-publication.</small>
-<h5>Nomenclature for Gene Families</h5>
-<p>
-<small>
-MGD works closely with HUGO and other interested scientists in the establishment of nomenclature 
-for genes that are members of gene families and in representing the relationships between members of
- gene families. In general, a stem symbol is assigned (e.g., Entpd) and members of the family 
- are numbered (e.g., Entpd1, Entpd2, etc.). However, there are exceptions
-  and many special cases.
-</small></p>
-  <hr>
+<!--#include file="include/gf_nomenclature.html"-->
 <!--#include file="include/footer.html"-->
 </BODY>
  </HTML> 
@@ -114,3 +125,6 @@ for genes that are members of gene families and in representing the relationship
 Copyright © 1996, 1999, 2000 by The Jackson Laboratory
 All Rights Reserved
 -->
+
+
+ 

@@ -2,20 +2,16 @@
 <HTML> 
 <HEAD> 
 <TITLE>Scamp Gene Family</TITLE> 
-<LINK REV="made" HREF="mailto:">
-<META NAME="generator" CONTENT="NoteTab Pro 4.84"> 
-<META NAME="author" CONTENT="Diane Dahmen"> 
-<META NAME="description" CONTENT="Scamp Gene Family">
-<META NAME="keywords" CONTENT=""> 
+ <META NAME="generator" CONTENT="NoteTab Pro 4.84"> 
+ <META NAME="author" CONTENT="Diane Dahmen"> 
+ <META NAME="description" CONTENT="Scamp Gene Family">
+ <META NAME="keywords" CONTENT=""> 
 </HEAD>
-
 <BODY BGCOLOR=#FFFFFF>
-
 <!--#include file="include/banner.html"-->
-
-<h2 align=center>Scamp Gene Family</h2> <HR width="100%">
-
-<table border=0 width="100%"> 
+<h2 align="center">Scamp Gene Family</h2>
+ <HR width="100%">
+<table frame=void cols=2 width="100%"> 
 <tr> 
  <td width="20%"><b>Family Root Symbol:</b> 
  <td width="80%">Scamp#</td>
@@ -25,64 +21,88 @@
  <td>secretory carrier membrane protein#</td> 
 </tr> 
 </table> 
-
-<p><b>Links to Scamp Family data:</b>
-
-<TABLE bgcolor="white" border=1 cols=4 width=70% cellpadding=4> 
- <TR> 
-  <TH width=15%>Symbol</th>
-  <TH width=20%>Sequence</th>
-  <TH width=30%>Synonyms</th>
-  <TH width=10%>Orthologs</th>
-  <TH width=25%>Chr</th>
- </TR> 
-  <TR>
-   <TD valign=top><A href="<!--#include file='include/wi_url.html'-->searches/marker.cgi?43832">Scamp1</A></TD> 
-   <TD valign=top>&nbsp;</TD> <TD>Scamp37</TD> 
-   <TD valign=top align=center><a href="<!--#include file='include/wi_url.html'-->searches/homology_report.cgi?_Marker_key=43832">yes</a></td>
-   <td valign=top>UN</TD> </TR> <TR> <TD valign=top><A href="<!--#include file='include/wi_url.html'-->searches/marker.cgi?43174">Scamp2</A></TD> 
-   <TD valign=top><a href="http://www.ncbi.nlm.nih.gov/htbin-post/Entrez/query?db=n&amp;form=6&amp;uid=AF295402">AF295402</a></TD>
- <TD>Sc2</TD> <TD valign=top align=center><a href="<!--#include file='include/wi_url.html'-->searches/homology_report.cgi?_Marker_key=43174">yes</a></td>
- <td valign=top>UN</td> </TR>
-
-<TR> <TD valign=top><A href="<!--#include
- file='include/wi_url.html'-->searches/marker.cgi?42918">Scamp3</A></TD> 
-<TD valign=top><a href="http://www.ncbi.nlm.nih.gov/htbin-post/Entrez/query?db=n&amp;form=6&amp;uid=AF005036">AF005036</a><br>
- <a href="http://www.ncbi.nlm.nih.gov/htbin-post/Entrez/query?db=n&amp;form=6&amp;uid=AF295403">AF295403</a></TD>
- <TD valign=top>Sc3</TD> <TD valign=top align=center><a href="<!--#include
- file='include/wi_url.html'-->searches/homology_report.cgi?_Marker_key=42918">yes</a></td>
- <td valign=top>UN</td> </TR>
-
-<TR> <TD valign=top><A href="<!--#include file='include/wi_url.html'-->searches/marker.cgi?49373">Scamp4</A></TD> 
-<TD valign=top><a href="http://www.ncbi.nlm.nih.gov/htbin-post/Entrez/query?db=n&amp;form=6&amp;uid=AF224721">AF224721</a><br>
- <a href="http://www.ncbi.nlm.nih.gov/htbin-post/Entrez/query?db=n&amp;form=6&amp;uid=AF295102">AF295102</a></TD>
- <TD valign=top>Sc4</TD> <TD valign=top align=center><a href="<!--#include
- file='include/wi_url.html'-->searches/homology_report.cgi?_Marker_key=49373">yes</a></td>
- <td valign=top>UN </td></TR>
-
-<TR> <TD valign=top><A href="<!--#include
- file='include/wi_url.html'-->searches/marker.cgi?49376">Scamp5</A></TD> <TD
- valign=top><a
- href="http://www.ncbi.nlm.nih.gov/htbin-post/Entrez/query?db=n&amp;form=6&amp;uid=AF241833">AF241833</a></TD>
- <TD valign=top>Sc5</TD> <TD valign=top align=center><a href="<!--#include
- file='include/wi_url.html'-->searches/homology_report.cgi?_Marker_key=49376">yes</a></td>
- <td valign=top>UN</td> </TR>
-</TABLE>
+<p><b>Links to Scamp Family data:</b></p>
+<TABLE bgcolor="white" border=1 width=80% cellpadding=8> 
+ <TR bgcolor="E0E0E0">
+  <TH width="11%">Mouse Symbol</th>
+  <TH width="11%">Mouse Seq. ID <sup>1</sup></th>
+  <TH width="11%">Mouse Chromosomal Location</th>
+  <TH width="11%">Human Ortholog</th>
+  <TH width="11%">Human Seq. ID <sup>1</sup></TH>
+  <TH width="11%">Rat Ortholog</th>
+  <TH width="11%">Rat Seq. ID <sup>1</sup></TH>
+  <TH width="11%">Orthology Details</th>
+  <TH width="11%">Synonyms</th>
+ </TR>
+<!--Scamp1--> 
+<TR>
+   <TD><A href="<!--#include file='include/wi_url.html'-->searches/accession_report.cgi?id=MGI:1349480">Scamp1</A></TD> 
+   <TD>&nbsp;</TD> 
+   <td>UN</TD> 
+   <td><a href="<!--#include file='include/locuslink_url.html'-->9522">SCAMP1</TD>
+   <td><a href="<!--#include file='include/gb_url.html'-->"></a></td> 
+   <TD>*Scamp1*</TD> 
+  <td><a href="http://www3.ncbi.nlm.nih.gov/htbin-post/Entrez/query?db=n&Dopt=g&form=6&uid="></a></td>
+   <TD align="center"><a href="<!--#include file='include/wi_url.html'-->searches/homology_report.cgi?id=MGI:1349480">yes</a></td>
+   <TD>Scamp37</TD>
+</TR> 
+<!--Scamp2--> 
+<TR> 
+  <TD><a href="<!--#include file='include/wi_url.html'-->searches/accession_report.cgi?id=MGI:1346518">Scamp2</a></TD> 
+  <TD><a href="<!--#include file='include/gb_url.html'-->AF295402">AF295402</a></TD>
+  <td>UN</td> 
+  <td><a href="<!--#include file='include/locuslink_url.html'-->10066">SCAMP2</TD>
+  <td><a href="<!--#include file='include/gb_url.html'-->"></a></td> 
+  <TD>*Scamp2*</TD> 
+  <td><a href="http://www3.ncbi.nlm.nih.gov/htbin-post/Entrez/query?db=n&Dopt=g&form=6&uid="></a></td>
+  <TD align="center"><a href="<!--#include file='include/wi_url.html'-->searches/homology_report.cgi?id=MGI:1346518">yes</a></td>
+  <TD>Sc2</TD> 
+</TR>
+<!--Scamp3--> 
+<TR> 
+  <TD><a href="<!--#include file='include/wi_url.html'-->searches/accession_report.cgi?id=MGI:1346346">Scamp3</a></TD> 
+  <TD><a href="<!--#include file='include/gb_url.html'-->AF005036">AF005036</a><br>
+  <a href="<!--#include file='include/gb_url.html'-->AF295403">AF295403</a></TD>
+  <td>UN</td>
+  <td><a href="<!--#include file='include/locuslink_url.html'-->10067">SCAMP3</TD>
+  <td><a href="<!--#include file='include/gb_url.html'-->"></a></td> 
+  <TD>*Scamp3*</TD> 
+  <td><a href="http://www3.ncbi.nlm.nih.gov/htbin-post/Entrez/query?db=n&Dopt=g&form=6&uid="></a></td> <TD align="center"><a href="<!--#include file='include/wi_url.html'-->searches/homology_report.cgi?id=MGI:1346346">yes</a></td>
+ <TD>Sc3</TD>
+</TR>
+<!--Scamp4--> 
+<TR> 
+  <TD><a href="<!--#include file='include/wi_url.html'-->searches/accession_report.cgi?id=MGI:1928948">Scamp4</a></TD> 
+  <TD><a href="<!--#include file='include/gb_url.html'-->AF224721">AF224721</a><br>
+  <a href="<!--#include file='include/gb_url.html'-->AF295102">AF295102</a></TD>
+  <td>UN</td>
+  <td><a href="<!--#include file='include/locuslink_url.html'-->10067">SCAMP3</TD>
+  <td><a href="<!--#include file='include/gb_url.html'-->"></a></td> 
+  <TD>*Scamp4*</TD> 
+  <td><a href="http://www3.ncbi.nlm.nih.gov/htbin-post/Entrez/query?db=n&Dopt=g&form=6&uid="></a></td>
+  <TD align="center"><a href="<!--#include file='include/wi_url.html'-->searches/homology_report.cgi?id=MGI:1928947">yes</a></td>
+  <TD>Sc4</TD> 
+</TR>
+<!--Scamp5--> 
+<TR> 
+  <TD><a href="<!--#include file='include/wi_url.html'-->searches/accession_report.cgi?id=MGI:1928948">Scamp5</a></td>
+  <TD><a href="<!--#include file='include/gb_url.html'-->AF241833">AF241833</a></TD>
+  <td>UN</td>
+  <td>SCAMP5</TD>
+  <td><a href="<!--#include file='include/gb_url.html'-->"></a></td> 
+  <TD>*Scamp5*</TD> 
+  <td><a href="http://www3.ncbi.nlm.nih.gov/htbin-post/Entrez/query?db=n&Dopt=g&form=6&uid="></a></td>
+  <TD align="center"><a href="<!--#include file='include/wi_url.html'-->searches/homology_report.cgi?id=MGI:1928948">yes</a></td>
+  <TD>Sc5</TD> 
+</TR>
+</table>
+<p><sup>1</sup> Representative example. 
 <p><b>Family Note:</b>&nbsp;None.</p> 
 <hr> 
-<h4>Notes About Gene Family Annotations in MGD</h4> 
-<h5>Nomenclature for New Genes</h5> 
-<p><small>Contact the MGD Nomenclature Committee (<A href="mailto:nomen@informatics.jax.org">nomen@informatics.jax.org</A>) for
-approved gene symbols prior to submission.  This avoids any possible conflicts
-with existing symbols and ensures that the gene symbol and name are reserved in
-the MGD private nomenclature database.  All information is kept confidential
-until publication.</small> <h5>Nomenclature for Gene Families</h5> <p> <small>
-MGD works closely with HUGO and other interested scientists in the establishment
-of nomenclature for genes that are members of gene families and in representing
-the relationships between members of gene families.  In general, a stem symbol
-is assigned (e.g., Entpd) and members of the family are numbered (e.g., Entpd1,
-Entpd2, etc.).  However, there are exceptions and many special cases.  </small></p>
-<hr> <!--#include file="include/footer.html"--> </BODY> </HTML>
+<!--#include file="include/gf_nomenclature.html"-->
+<!--#include file="include/footer.html"--> 
+</BODY> 
+</HTML>
 
 <!-- Warranty Disclaimer and Copyright Notice
 

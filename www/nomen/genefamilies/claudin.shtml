@@ -9,174 +9,254 @@
   <META NAME="keywords" CONTENT="">
 <!--timestamp=15:31 2/23/01-->
 </HEAD>
-
 <BODY BGCOLOR=#FFFFFF>
-
 <!--#include file="include/banner.html"-->
-
 <h2><center>Claudin Gene Family</center></h2>
 <HR width="100%">
-
 <table frame=void cols=2 width=100%> 
- <tr>
+<tr>
   <td width=20%><b>Family Root Symbol:</b>
   <td width=80%>Cldn#</td>
- </tr> 
- <tr>
+</tr> 
+<tr>
   <td><b>Family Name:</b></td>
   <td>claudin #</td>
- </tr>
+</tr>
 </table>
 <p><b>Links to Claudin Family data:</b>
-<TABLE bgcolor="white" border=1 cols=4 width=70% cellpadding=4> 
- <TR>
-  <TH width=15%>Symbol</TH>
-  <TH width=20%>Sequence</TH>
-  <TH width=30%>Synonyms</th>
-  <TH width=10%>Orthologs</th>
-  <TH width=25%>Chr</th>
+<TABLE bgcolor="white" border=1 width=95% cellpadding=8> 
+<TR bgcolor="E0E0E0">
+  <TH width="8%">Mouse Symbol</th>
+  <TH width="14%">Mouse Seq. ID <sup>1</sup></th>
+  <TH width="10%">Mouse Chromosomal Location</th>
+  <TH width="10%">Human Ortholog</th>
+  <TH width="13%">Human Seq. ID<sup>1</sup></TH>
+  <TH width="10%">Rat Ortholog</th>
+  <TH width="13%">Rat Seq. ID <sup>1</sup></TH>
+  <TH width="10%">Orthology Details</th>
+  <TH>Synonyms</th>
  </TR>
+<!--Cldn1-->
 <TR>
- <TD valign=top><A href="<!--#include file='include/wi_url.html'-->searches/marker.cgi?36704">Cldn1</A></TD>
- <TD valign=top><a href="http://www.ncbi.nlm.nih.gov/htbin-post/Entrez/query?db=n&amp;form=6&amp;uid=AF072127">AF072127</a></TD>
- <TD valign=top>&nbsp;</TD>
- <TD valign=top align=center><a href="<!--#include file='include/wi_url.html'-->searches/homology_report.cgi?_Marker_key=36704">yes</a></td>
- <td valign=top>UN</TD> 
+  <TD><A href="<!--#include file='include/wi_url.html'-->searches/accession_report.cgi?id=MGI:1276109">Cldn1</A></TD>
+  <TD><a href="<!--#include file='include/gb_url.html'-->AF072127">AF072127</a></TD>
+  <td>UN</TD>
+  <TD><a href="<!--#include file='include/locuslink_url.html'-->9076">CLDN1</a></TD> 
+  <td><a href="<!--#include file='include/gb_url.html'-->AF086514">AF086514</a></td> 
+  <TD>*Cldn1*</TD> 
+  <td><a href="http://www3.ncbi.nlm.nih.gov/htbin-post/Entrez/query?db=n&Dopt=g&form=6&uid=">AF19550</a></td>
+  <TD align=center><a href="<!--#include file='include/wi_url.html'-->searches/homology_report.cgi?id=MGI:1276109">yes</a></td>
+  <TD>&nbsp;</TD>
 </TR> 
+<!--Cldn2-->
 <TR>
- <TD valign=top><A href="<!--#include file='include/wi_url.html'-->searches/marker.cgi?36705">Cldn2</A></TD>
- <TD valign=top><a href="http://www.ncbi.nlm.nih.gov/htbin-post/Entrez/query?db=n&amp;form=6&amp;uid=AF072128">AF072128</a></TD>
- <TD valign=top>&nbsp;</TD>
- <TD valign=top align=center><a href="<!--#include file='include/wi_url.html'-->searches/homology_report.cgi?_Marker_key=36705">yes</a></td>
- <td valign=top>UN</TD> 
+ <TD><A href="<!--#include file='include/wi_url.html'-->searches/accession_report.cgi?id=MGI:1276110">Cldn2</A></TD>
+ <TD><a href="<!--#include file='include/gb_url.html'-->AF072128">AF072128</a></TD>
+  <td>UN</TD>
+ <TD><a href="<!--#include file='include/locuslink_url.html'-->9075">CLDN2</a></TD> 
+  <td><a href="<!--#include file='include/gb_url.html'-->AF250558">AF250558</a></td> 
+  <TD>&nbsp;</TD> 
+ <TD>&nbsp;</TD>
+ <TD align=center><a href="<!--#include file='include/wi_url.html'-->searches/homology_report.cgi?id=MGI:1276110">yes</a></td>
+ <TD>&nbsp;</TD>
 </TR> 
+<!--Cldn3-->
 <TR>
- <TD valign=top><A href="<!--#include file='include/wi_url.html'-->searches/marker.cgi?40428">Cldn3</A></TD>
- <TD valign=top><a href="http://www.ncbi.nlm.nih.gov/htbin-post/Entrez/query?db=n&amp;form=6&amp;uid=AF087821">AF087821</a><br>
- <a href="http://www.ncbi.nlm.nih.gov/htbin-post/Entrez/query?db=n&amp;form=6&amp;uid=AF095905">AF095905</a></TD>
- <TD valign=top>&nbsp;</TD>
- <TD valign=top align=center><a href="<!--#include file='include/wi_url.html'-->searches/homology_report.cgi?_Marker_key=40428">yes</a></td>
- <td valign=top>5 (75.0 cM)</TD> 
+  <TD><A href="<!--#include file='include/wi_url.html'-->searches/accession_report.cgi?id=MGI:1329044">Cldn3</A></TD>
+  <TD><a href="<!--#include file='include/gb_url.html'-->AF095905">AF095905</a></TD>
+  <td>5 (75.0 cM)</TD> 
+  <TD><a href="<!--#include file='include/locuslink_url.html'-->1365">CLDN3</a></TD> 
+  <td><a href="<!--#include file='include/gb_url.html'-->AB000714">AB000714</a></td> 
+  <TD>*Cldn3*</TD> 
+  <td><a href="http://www3.ncbi.nlm.nih.gov/htbin-post/Entrez/query?db=n&Dopt=g&form=6&uid=">AJ011656</a></td>
+  <TD align=center><a href="<!--#include file='include/wi_url.html'-->searches/homology_report.cgi?id=MGI:1329044">yes</a></td>
+  <td>&nbsp;</td>
 </TR> 
-
- <TD valign=top><A href="<!--#include file='include/wi_url.html'-->searches/marker.cgi?40431">Cldn4</A></TD>
- <TD valign=top><a href="http://www.ncbi.nlm.nih.gov/htbin-post/Entrez/query?db=n&amp;form=6&amp;uid=AB000713">AB000713</a><br>
- <a href="http://www.ncbi.nlm.nih.gov/htbin-post/Entrez/query?db=n&amp;form=6&amp;uid=AF087822">AF087822</a></TD>
- <TD valign=top>CEP-R</TD>
- <TD valign=top align=center><a href="<!--#include file='include/wi_url.html'-->searches/homology_report.cgi?_Marker_key=40431">yes</a></td>
- <td valign=top>5 (75.0 cM)</TD> 
-</TR> 
-
- <TD valign=top><A href="<!--#include file='include/wi_url.html'-->searches/marker.cgi?36707">Cldn5</A></TD>
- <TD valign=top><a href="http://www.ncbi.nlm.nih.gov/htbin-post/Entrez/query?db=n&amp;form=6&amp;uid=AF035814">AF035814</a><br>
- <a href="http://www.ncbi.nlm.nih.gov/htbin-post/Entrez/query?db=n&amp;form=6&amp;uid=AF087823">AF087823</a><br>
- <a href="http://www.ncbi.nlm.nih.gov/htbin-post/Entrez/query?db=n&amp;form=6&amp;uid=U82758">U82758</a></TD>
- <TD valign=top>MBEC1, &nbsp; TMVCF</TD>
- <TD valign=top align=center><a href="<!--#include file='include/wi_url.html'-->searches/homology_report.cgi?_Marker_key=36707">yes</a></td>
- <td valign=top>16 (11.7)</TD> 
-</TR> 
+<!--Cldn4-->
 <tr>
- <TD valign=top><A href="<!--#include file='include/wi_url.html'-->searches/marker.cgi?46704">Cldn6</A></TD>
- <TD valign=top><a href="http://www.ncbi.nlm.nih.gov/htbin-post/Entrez/query?db=n&amp;form=6&amp;uid=AF087824">AF087824</a></TD>
- <TD valign=top>&nbsp;</TD>
- <TD valign=top align=center><a href="<!--#include file='include/wi_url.html'-->searches/homology_report.cgi?_Marker_key=46704">yes</a></td>
- <td valign=top>UN</TD> 
+  <TD><A href="<!--#include file='include/wi_url.html'-->searches/accession_report.cgi?id=MGI:1313314">Cldn4</A></TD>
+  <TD><a href="<!--#include file='include/gb_url.html'-->AB000713">AB000713</a></TD>
+  <td>5 (75.0 cM)</TD>
+  <TD><a href="<!--#include file='include/locuslink_url.html'-->1364">CLDN4</a></TD>
+  <td><a href="<!--#include file='include/gb_url.html'-->AB000712">AB000712</a></td> 
+  <TD>&nbsp;</TD> 
+  <TD>&nbsp;</TD> 
+  <TD align=center><a href="<!--#include file='include/wi_url.html'-->searches/homology_report.cgi?id=MGI:1313314">yes</a></td>
+  <TD>CEP-R</TD>
 </TR> 
+<!--Cldn5-->
 <tr>
- <TD valign=top><A href="<!--#include file='include/wi_url.html'-->searches/marker.cgi?46705">Cldn7</A></TD>
- <TD valign=top><a href="http://www.ncbi.nlm.nih.gov/htbin-post/Entrez/query?db=n&amp;form=6&amp;uid=AF087825">AF087825</a></TD>
- <TD valign=top>&nbsp;</TD>
- <TD valign=top align=center><a href="<!--#include file='include/wi_url.html'-->searches/homology_report.cgi?_Marker_key=46705">yes</a></td>
- <td valign=top>UN</TD> 
-</TR> 
-
-<tr>
- <TD valign=top><A href="<!--#include file='include/wi_url.html'-->searches/marker.cgi?46706">Cldn8</A></TD>
- <TD valign=top><a href="http://www.ncbi.nlm.nih.gov/htbin-post/Entrez/query?db=n&amp;form=6&amp;uid=AF087826">AF087826</a></TD>
- <TD valign=top>&nbsp;</TD>
- <TD valign=top align=center><a href="<!--#include file='include/wi_url.html'-->searches/homology_report.cgi?_Marker_key=46706">yes</a></td>
- <td valign=top>UN</TD> 
-</TR> 
-
-<tr>
- <TD valign=top><A href="<!--#include file='include/wi_url.html'-->searches/marker.cgi?48315">Cldn9</A></TD>
- <TD valign=top><a href="http://www.ncbi.nlm.nih.gov/htbin-post/Entrez/query?db=n&amp;form=6&amp;uid=AF124424">AF124424</a></TD>
- <TD valign=top>&nbsp;</TD>
- <TD valign=top align=center><a href="<!--#include file='include/wi_url.html'-->searches/homology_report.cgi?_Marker_key=48315">yes</a></td>
- <td valign=top>UN</TD> 
+  <TD><A href="<!--#include file='include/wi_url.html'-->searches/accession_report.cgi?id=MGI:1276112">Cldn5</A></TD>
+  <TD><a href="<!--#include file='include/gb_url.html'-->AF035814">AF035814</a></TD>
+  <td>16 (11.7)</TD>
+  <TD><a href="<!--#include file='include/locuslink_url.html'-->7122">CLDN5</a></TD> 
+  <td><a href="<!--#include file='include/gb_url.html'-->AF000959">AF000959</a></td> 
+  <TD>*Cldn5*</TD> 
+  <td><a href="http://www3.ncbi.nlm.nih.gov/htbin-post/Entrez/query?db=n&Dopt=g&form=6&uid=">AF241250</a></td> 
+  <TD align=center><a href="<!--#include file='include/wi_url.html'-->searches/homology_report.cgi?id=MGI:1276112">yes</a></td>
+  <TD>MBEC1<br> TMVCF</TD>
 </TR>
-
+<!--Cldn6-->
 <tr>
- <TD valign=top><A href="<!--#include file='include/wi_url.html'-->searches/marker.cgi?48317">Cldn10</A></TD>
- <TD valign=top><a href="http://www.ncbi.nlm.nih.gov/htbin-post/Entrez/query?db=n&amp;form=6&amp;uid=AF124425">AF124425</a></TD>
- <TD valign=top>&nbsp;</TD>
- <TD valign=top align=center><a href="<!--#include file='include/wi_url.html'-->searches/homology_report.cgi?_Marker_key=48317">yes</a></td>
- <td valign=top>UN</TD> 
+  <TD><A href="<!--#include file='include/wi_url.html'-->searches/accession_report.cgi?id=MGI:1859284">Cldn6</A></TD>
+  <TD><a href="<!--#include file='include/gb_url.html'-->AF087824">AF087824</a></TD>
+  <td>UN</TD>
+  <TD><a href="<!--#include file='include/locuslink_url.html'-->9074">CLDN6</a></TD> 
+  <td><a href="<!--#include file='include/gb_url.html'-->AJ249735">AJ249735</a></td>
+  <TD>&nbsp;</TD>
+  <TD>&nbsp;</TD> 
+  <TD align=center><a href="<!--#include file='include/wi_url.html'-->searches/homology_report.cgi?id=MGI:1859284">yes</a></td>
+  <TD>&nbsp;</TD>
 </TR> 
-
+<!--Cldn7-->
 <tr>
- <TD valign=top><A href="<!--#include file='include/wi_url.html'-->searches/marker.cgi?40430">Cldn11</A></TD>
- <TD valign=top><a href="http://www.ncbi.nlm.nih.gov/htbin-post/Entrez/query?db=n&amp;form=6&amp;uid=AF124426">AF124426</a><br>
- <a href="http://www.ncbi.nlm.nih.gov/htbin-post/Entrez/query?db=n&amp;form=6&amp;uid=U19582">U19582</a></TD>
- <TD valign=top>Otm, &nbsp; OSP</TD>
- <TD valign=top align=center><a href="<!--#include file='include/wi_url.html'-->searches/homology_report.cgi?_Marker_key=40430">yes</a></td>
- <td valign=top>3 (12.6 cM)</TD> 
+ <TD><A href="<!--#include file='include/wi_url.html'-->searches/accession_report.cgi?id=MGI:1859285">Cldn7</A></TD>
+ <TD><a href="<!--#include file='include/gb_url.html'-->AF087825">AF087825</a></TD>
+ <td>UN</TD>
+ <TD><a href="<!--#include file='include/locuslink_url.html'-->1366">CLDN7</a></TD> 
+  <td><a href="<!--#include file='include/gb_url.html'-->AJ011497">AJ011497</a></td> 
+  <TD>*Cldn7*</TD> 
+  <td><a href="http://www3.ncbi.nlm.nih.gov/htbin-post/Entrez/query?db=n&Dopt=g&form=6&uid=">AJ011811</a></td> 
+ <TD align=center><a href="<!--#include file='include/wi_url.html'-->searches/homology_report.cgi?id=MGI:1859285">yes</a></td>
+ <TD>&nbsp;</TD>
 </TR> 
-
+<!--Cldn8-->
 <tr>
- <TD valign=top><A href="<!--#include file='include/wi_url.html'-->searches/marker.cgi?49631">Cldn12</A></TD>
- <TD valign=top><a href="http://www.ncbi.nlm.nih.gov/htbin-post/Entrez/query?db=n&amp;form=6&amp;uid=AF247664">AF247664</a></TD>
- <TD valign=top>&nbsp;</TD>
- <TD valign=top align=center><a href="<!--#include file='include/wi_url.html'-->searches/homology_report.cgi?_Marker_key=49631">yes</a></td>
- <td valign=top>UN</TD> 
+ <TD><A href="<!--#include file='include/wi_url.html'-->searches/accession_report.cgi?id=MGI:1859286">Cldn8</A></TD>
+ <TD><a href="<!--#include file='include/gb_url.html'-->AF087826">AF087826</a></TD>
+ <td>UN</TD>
+ <TD><a href="<!--#include file='include/locuslink_url.html'-->9073">CLDN8</a></TD> 
+ <td><a href="<!--#include file='include/gb_url.html'-->AJ250711">AJ250711</a></td>
+ <TD>&nbsp;</TD>
+  <TD>&nbsp;</TD> 
+ <TD align=center><a href="<!--#include file='include/wi_url.html'-->searches/homology_report.cgi?id=MGI:1859286">yes</a></td>
+<TD>&nbsp;</TD>
 </TR> 
-
+<!--Cldn9-->
 <tr>
- <TD valign=top><A href="<!--#include file='include/wi_url.html'-->searches/marker.cgi?48320">Cldn13</A></TD>
- <TD valign=top><a href="http://www.ncbi.nlm.nih.gov/htbin-post/Entrez/query?db=n&amp;form=6&amp;uid=AF124428">AF124428</a></TD>
- <TD valign=top>&nbsp;</TD>
-<TD>&nbsp<!--- valign=top align=center><a href="<!--#include file='include/wi_url.html'-->searches/homology_report.cgi?_Marker_key=48320"--></a></td>
- <td valign=top>UN</TD> 
-</TR> 
-
+ <TD><A href="<!--#include file='include/wi_url.html'-->searches/accession_report.cgi?id=MGI:1913100">Cldn9</A></TD>
+ <TD><a href="<!--#include file='include/gb_url.html'-->AF124424">AF124424</a></TD>
+ <td>UN</TD>
+ <TD><a href="<!--#include file='include/locuslink_url.html'-->9080">CLDN9</a></TD> 
+ <td><a href="<!--#include file='include/gb_url.html'-->AJ130941">AJ130941</a></td>
+ <TD>&nbsp;</TD>
+  <TD>&nbsp;</TD> 
+ <TD align=center><a href="<!--#include file='include/wi_url.html'-->searches/homology_report.cgi?id=MGI:1913100">yes</a></td>
+ <TD>&nbsp;</TD>
+</TR>
+<!--Cldn10-->
 <tr>
- <TD valign=top><A href="<!--#include file='include/wi_url.html'-->searches/marker.cgi?47014">Cldn14</A></TD>
- <TD valign=top><a href="http://www.ncbi.nlm.nih.gov/htbin-post/Entrez/query?db=n&amp;form=6&amp;uid=AF124429">AF124429</a></TD>
- <TD valign=top>&nbsp;</TD>
- <TD valign=top align=center><a href="<!--#include file='include/wi_url.html'-->searches/homology_report.cgi?_Marker_key=47014">yes</a></td>
- <td valign=top>UN</TD> 
+ <TD><A href="<!--#include file='include/wi_url.html'-->searches/accession_report.cgi?id=MGI:1913101">Cldn10</A></TD>
+ <TD><a href="<!--#include file='include/gb_url.html'-->AF124425">AF124425</a></TD>
+ <td>UN</TD>
+ <TD><a href="<!--#include file='include/locuslink_url.html'-->9071">CLDN10</a></TD> 
+ <td><a href="<!--#include file='include/gb_url.html'-->U89916">U89916</a></td>
+ <TD>&nbsp;</TD>
+  <TD>&nbsp;</TD> 
+ <TD align=center><a href="<!--#include file='include/wi_url.html'-->searches/homology_report.cgi?id=MGI:1913101">yes</a></td>
+ <TD>&nbsp;</TD>
 </TR> 
-
+<!--11-->
 <tr>
- <TD valign=top><A href="<!--#include file='include/wi_url.html'-->searches/marker.cgi?48322">Cldn15</A></TD>
- <TD valign=top><a href="http://www.ncbi.nlm.nih.gov/htbin-post/Entrez/query?db=n&amp;form=6&amp;uid=AF124427">AF124427</a></TD>
- <TD valign=top>&nbsp;</TD>
- <TD valign=top align=center><a href="<!--#include file='include/wi_url.html'-->searches/homology_report.cgi?_Marker_key=48322">yes</a></td>
- <td valign=top>UN</TD> 
+ <TD><A href="<!--#include file='include/wi_url.html'-->searches/accession_report.cgi?id=MGI:106925">Cldn11</A></TD>
+ <TD><a href="<!--#include file='include/gb_url.html'-->U19582">U19582</a></TD>
+  <td>3 (12.6 cM)</TD>
+ <TD><a href="<!--#include file='include/locuslink_url.html'-->5010">CLDN11</a></TD> 
+ <td><a href="<!--#include file='include/gb_url.html'-->AF068863">AF068863</a></td>
+ <TD>*Cldn11*</TD>
+  <td><a href="http://www3.ncbi.nlm.nih.gov/htbin-post/Entrez/query?db=n&Dopt=g&form=6&uid=AF324043">AF324043</a></td> 
+ <TD align=center><a href="<!--#include file='include/wi_url.html'-->searches/homology_report.cgi?id=MGI:106925">yes</a></td>
+ <TD>Otm, OSP</TD>
 </TR> 
-
-</TABLE> 
+<!--Cldn12-->
+<tr>
+ <TD><A href="<!--#include file='include/wi_url.html'-->searches/accession_report.cgi?id=MGI:1929288">Cldn12</A></TD>
+ <TD><a href="<!--#include file='include/gb_url.html'-->AF247664">AF247664</a></TD>
+ <td>UN</TD> 
+ <TD><a href="<!--#include file='include/locuslink_url.html'-->9069">CLDN12</a></TD> 
+ <td><a href="<!--#include file='include/gb_url.html'-->AJ250713">AJ250713</a></td>
+ <TD>&nbsp;</TD>
+ <TD>&nbsp;</TD>
+ <TD align=center><a href="<!--#include file='include/wi_url.html'-->searches/homology_report.cgi?id=MGI:1929288">yes</a></td>
+ <TD>&nbsp;</TD>
+</TR>
+<!--Cldn13-->
+<tr>
+ <TD><A href="<!--#include file='include/wi_url.html'-->searches/accession_report.cgi?id=MGI:1913102">Cldn13</A></TD>
+ <TD><a href="<!--#include file='include/gb_url.html'-->AF124428">AF124428</a></TD>
+ <td>UN</TD> 
+ <TD>&nbsp;</TD> 
+ <TD>&nbsp;</td>
+ <TD>&nbsp;</TD>
+ <TD>&nbsp;</td>
+ <TD>&nbsp;</td>
+ <TD>&nbsp;</td>
+</TR> 
+<!--Cldn14-->
+<tr>
+  <TD><A href="<!--#include file='include/wi_url.html'-->searches/accession_report.cgi?id=MGI:1860425">Cldn14</A></TD>
+  <TD><a href="<!--#include file='include/gb_url.html'-->AF124429">AF124429</a></TD>
+  <td>UN</TD>
+  <TD><a href="<!--#include file='include/locuslink_url.html'-->23562">CLDN14</a></TD> 
+  <td><a href="<!--#include file='include/gb_url.html'-->AJ132445">AJ132445</a></td>
+  <TD>&nbsp;</TD>
+  <TD>&nbsp;</TD>
+  <TD align=center><a href="<!--#include file='include/wi_url.html'-->searches/homology_report.cgi?id=MGI:1860425">yes</a></td>
+  <TD>&nbsp;</TD>
+</TR> 
+<!--15-->
+<tr>
+ <TD><A href="<!--#include file='include/wi_url.html'-->searches/accession_report.cgi?id=MGI:1913103">Cldn15</A></TD>
+ <TD><a href="<!--#include file='include/gb_url.html'-->AF124427">AF124427</a></TD>
+ <td>UN</TD> 
+ <TD><a href="<!--#include file='include/locuslink_url.html'-->24146">CLDN15</a></TD> 
+ <td><a href="<!--#include file='include/gb_url.html'-->AJ245738">AJ245738</a></td>
+ <TD>&nbsp;</TD>
+  <TD>&nbsp;</TD>
+ <TD align=center><a href="<!--#include file='include/wi_url.html'-->searches/homology_report.cgi?id=MGI:1913103">yes</a></td>
+ <TD>&nbsp;</TD>
+</TR>
+<!--16-->
+<tr>
+ <TD>&nbsp;<!--<A href="<!--#include file='include/wi_url.html'-->searches/accession_report.cgi?id=MGI:">Cldn16</A>--></TD>
+ <TD><a href="<!--#include file='include/gb_url.html'-->AF323748">AF323748</a></TD>
+ <td>UN</TD> 
+ <TD><a href="<!--#include file='include/locuslink_url.html'-->10686">CLDN16</a></TD> 
+ <td><a href="<!--#include file='include/gb_url.html'-->AF152101">AF152101</a></td>
+ <TD>&nbsp;</TD>
+ <TD>&nbsp;</TD>
+ <TD align=center><a href="<!--#include file='include/wi_url.html'-->searches/homology_report.cgi?id=MGI:nnnnnn">yes</a></td>
+ <TD>&nbsp;</TD>
+</TR> 
+<!--17-->
+<tr>
+ <TD>&nbsp;</TD>
+ <TD>&nbsp;</TD>
+ <TD>&nbsp;</TD>
+ <TD><a href="<!--#include file='include/locuslink_url.html'-->26285">CLDN17</a></TD> 
+ <td><a href="<!--#include file='include/gb_url.html'-->AJ250712">AJ250712</a></td>
+ <TD>&nbsp;</TD>
+ <TD>&nbsp;</TD>
+ <TD>&nbsp;</TD>
+ <TD>&nbsp;</TD>
+</TR> 
+<!--18-->
+<tr>
+ <TD><A href="<!--#include file='include/wi_url.html'-->searches/accession_report.cgi?id=MGI:1929209">Cldn18</A></TD>
+ <TD><a href="<!--#include file='include/gb_url.html'-->AF221068">AF221068</a></TD>
+ <td>UN</TD> 
+ <TD><a href="<!--#include file='include/locuslink_url.html'-->51208">CLDN18</a></TD> 
+ <td><a href="<!--#include file='include/gb_url.html'-->AF221069">AF221069</a></td>
+<TD>&nbsp;</TD>
+ <TD>&nbsp;</TD> 
+<TD align=center><a href="<!--#include file='include/wi_url.html'-->searches/homology_report.cgi?id=MGI:1929209">yes</a></td>
+ <TD>&nbsp;</TD>
+</TR> 
+</TABLE>
+<p><sup>1</sup> Representative example. 
 <p><b>Family Note:</b>&nbsp; Members of the claudin gene family appear to be involved in the formation of tight junction strands.</p> 
 <hr> 
-<h4>Notes About Gene Family Annotations in MGD</h4> 
-<h5>Nomenclature for New Genes</h5>
-<p>
-<small>
-Contact the MGD Nomenclature Committee (<A href="mailto:nomen@informatics.jax.org">nomen@informatics.jax.org</A>)
- for approved gene symbols prior to submission.  This avoids any possible conflicts
-with existing symbols and ensures that the gene symbol and name are reserved in the
-MGD private nomenclature database.  All information is kept confidential until 
-publication.</small></p>
-<h5>Nomenclature for Gene Families</h5>
-<p>
-<small>
-MGD works closely with HUGO and other interested scientists in the establishment of nomenclature 
-for genes that are members of gene families and in representing the relationships between members of
- gene families. In general, a stem symbol is assigned (e.g., Entpd) and members of the family 
- are numbered (e.g., Entpd1, Entpd2, etc.). However, there are exceptions
-  and many special cases.
-</small></p>
-  <hr>
+<!--#include file="include/gf_nomenclature.html"-->
 <!--#include file="include/footer.html"-->
 </BODY>
  </HTML> 
