@@ -1,11 +1,10 @@
-<HTML><HEAD>
-<TITLE>Gene Ontology Information</TITLE></HEAD>
+<HTML>
+<HEAD>
+<TITLE>Gene Ontology Information</TITLE>
+</HEAD>
 
 <BODY BGCOLOR="#FFFFFF">
-<!--#include file="include/bodyStart.html"--><BR>
-<BR>
-
-<A NAME="Annotating"></A>
+<!--#include file="include/bodyStart.html"-->
 <TABLE WIDTH="100%" BORDER=0 CELLPADDING=2 CELLSPACING=1>
  <TR>
   <TD WIDTH="100%" BGCOLOR="#D0E0F0">
@@ -24,12 +23,8 @@
  </TR>
 </TABLE>
 
-<hr>
-<P>
-MGI uses database-mining and other strategies to automate gene annotation.  The electronic annotations are attributed to MGI references J:56000, J:60000.
-</P>
-<P>
-In addition, scientific curators review the published literature and extract information to manually annotate gene records.  The annotated records include the supporting references.
+<P><A NAME="Annotating"></A>
+MGI uses database-mining and other strategies to automate gene annotation.  The electronic annotations are attributed to MGI references J:56000 and J:60000. In addition, scientific curators review the published literature and extract information to manually annotate gene records.  The annotated records include the supporting references.
 </P>
 Automated annotation strategies include:
 <UL>
