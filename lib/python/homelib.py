@@ -8,19 +8,20 @@ def footer ():
 	# Effects: nothing
 	# Throws: None
 
-	return [ '<A HREF="http://www.jax.org/">',
+	return [ '<A HREF="http://www.jax.org/" target="_top">',
 		  '''<IMG SRC="/mgihome/images/jax_logo.gif"
 			ALT="The Jackson Laboratory" ALIGN=right></A>''',
 		  '<SMALL>',
-		  '''<A HREF="/mgihome/other/citation.shtml">Citing These
-			Resources</A>''', '<BR>',
-		  '''<A HREF="/mgihome/other/mgi_funding.shtml">Funding
-			Information</A>''', '<BR>',
-		  '''<A HREF="/mgihome/other/copyright.shtml">Warranty
-			Disclaimer &amp; Copyright Notice</A>.''', '<BR>',
+		  '''<A HREF="/mgihome/other/citation.shtml" target="_top">
+		        Citing These Resources</A>''', '<BR>',
+		  '''<A HREF="/mgihome/other/mgi_funding.shtml" target="_top">
+		        Funding Information</A>''', '<BR>',
+		  '''<A HREF="/mgihome/other/copyright.shtml" target="_top">
+		        Warranty Disclaimer &amp; Copyright Notice</A>.''',
+		        '<BR>',
 		  '''Send questions and comments to
-			<A HREF="/mgihome/support/tjl_inbox.shtml">User
-			Support</A>.''',
+			<A HREF="/mgihome/support/tjl_inbox.shtml"
+			target="_top">User Support</A>.''',
 		  '</SMALL>' ]
 
 def banner ():
