@@ -13,6 +13,7 @@ import sys
 if '.' not in sys.path:
 	sys.path.insert(0, '.')
 import config
+import homelib
 
 import wi_config
 import cgi
@@ -46,7 +47,8 @@ def hd():
 	</HEAD>
 	<BODY BGCOLOR="#FFFFFF">"""
 
-	wi_utils.small_hd()
+	for line in homelib.banner():
+		print line
 
 	print """
 	<H2>
@@ -97,12 +99,15 @@ def main():
 
 		mail_header = 'From: webmaster' + NL \
 			+ 'Subject: List Subscription' + NL
-		fd = os.popen('%s -t %s' % (cfg['SENDMAIL'], RECIPIENT), 'w')
+		fd = os.popen('%s -t %s' % (config.lookup ('SENDMAIL'), \
+			RECIPIENT), 'w')
 		fd.write( mail_header + msg + NL + '.' + NL )
 		fd.close()
 		
 	print '<HR>'
-	wi_utils.ft()
+	for line in homelib.footer():
+		print line
+	print '</BODY></HTML>'
 
 print 'Content-type: text/html'
 print
