@@ -1189,9 +1189,16 @@ for example, data about a) data elements or attributes (name, size, data type, e
 <A HREF="#gene_expression">gene expression</A> by 
 <A HREF="#hybridization">hybridization</A>. Microarrays are used to detect changes in gene expression by comparing radioactively- or chemically-labeled 
 <A HREF="#cDNA">cDNA</A> prepared from the total 
-<A HREF="#mRNA">mRNA</A> of an experimental sample to that of a control sample. The relative intensity of the signal corresponding to each spot in the microarray reveals whether the expression of a particular gene is increased, decreased, or unchanged in the experimental mRNA sample compared to the contol mRNA sample.
+<A HREF="#mRNA">mRNA</A> of an experimental sample to that of a control sample. The relative intensity of the signal corresponding to each spot in the microarray reveals whether the expression of a particular gene is increased, decreased, or unchanged in the experimental mRNA sample compared to the contol mRNA sample.</dd></p>
 
-</dd></p><P><DT><B><A NAME="microsatellite">Microsatellite Marker</A></B></dt><dd>A short (up to several hundred
+<P><DT><B><A NAME="microRNA"></a>MicroRNA</b><dd>MicroRNAs (miRNAs) are a group of 
+<a href="#noncoding_RNA">non-coding RNA</a>  molecules, generally 21 to 24 
+<a href="#nucleotide">nucleotides</a>  in length, which are usually cleaved from a larger hairpin-containing <a href="#RNA">RNA</a> (itself often processed from some portion of  
+<a href="#mRNA">mRNA</a>). miRNAs are <a href="#conserved_sequence">conserved</a> through 
+<a href="#evolution">evolution</a>, and their abundance and <a href=#gene_expression">expression</a> patterns are suggestive of diverse <a href="#regulatory_element">regulatory</a> roles (see Nelson C. Lau et al., An abundant class of tiny RNAs with probable regulatory roles in Caenorhabditis elegans., Science 294 [554]: 858- 862, 26 Oct. 2001). <!--Currently (fall 2003) MGI has curated only the miRNAs; we anticipate that future curation efforts will include the hairpin sequences from which the miRNAs are cleaved as well as the longer <a href="#sequencing">sequences</a> ("miRNA genes") from which these hairpins are generated.--></dd></p>
+
+
+<P><DT><B><A NAME="microsatellite">Microsatellite Marker</A></B></dt><dd>A short (up to several hundred
 <A HREF="#base_pair">base pairs</A>) segment of
 <A HREF="#DNA">DNA</A> that consists of multiple tandem repeats of a two or three base-pair sequence. Microsatellites expand and contract (that is, add or remove repeat units) with a frequency much higher than other types of
 <A HREF="#mutation">mutations</A>, making them useful as
@@ -2082,7 +2089,7 @@ across the panel with the presence of a particular mouse chromosome allows that 
 </dd></p><P><DT><B><A NAME="synteny">Synteny</A></B></dt><dd>The state of being on the same 
 <A HREF="#chromosome">chromosome</A>. A <A HREF="#gene">gene</A> is also said to be syntenic to a particular chromosome if it is known to be located on that chromosome but is otherwise unmapped.<BR>See also <A HREF="#conserved_synteny">Conserved Synteny</A></dd></p>
 
-<P><DT><B><A NAME="synonym">Synonym</A></B></dt><dd>In MGI, a synonym is either an unofficial symbol that has appeared in the scientific literature or in public databases such as Genbank, or a formerly official symbol, withdrawn due to gene family revisions or to conform to the human ortholog symbol. 
+<P><DT><B><A NAME="synonym">Synonym</A></B></dt><dd>In <a href="#MGI">MGI</a>, a synonym is either an unofficial <a href="#symbol">symbol</a> that has appeared in the scientific literature or in public databases such as <a href="#genbank">GenBank</a>, or a formerly official symbol, withdrawn due to gene family revisions or to conform to the human <a href="#ortholog">ortholog</a> symbol. 
 
 </dd></p><P><DT><B><A name="system_catalog">System Catalog</A></B></dt><DD>The 
 <A HREF="#data_dictionary">data dictionary</A> of a <A HREF="#dbms">DBMS</A>. The system catalog stores 
