@@ -34,9 +34,9 @@
  <TR>
   <TH width=15%>Symbol</TH>
   <TH width=20%>Sequence</TH>
-  <TH width=40%>Synonyms</th>
+  <TH width=30%>Synonyms</th>
   <TH width=10%>Homology?</th>
-  <TH width=15%>Chr</th>
+  <TH width=25%>Chr</th>
  </TR>
 <TR>
  <TD valign=top><A href="<!--#include file='include/wi_url.html'-->searches/marker.cgi?36704">Cldn1</A></TD>
@@ -58,7 +58,7 @@
  <a href="http://www.ncbi.nlm.nih.gov/htbin-post/Entrez/query?db=n&amp;form=6&amp;uid=AF095905">AF095905</a></TD>
  <TD valign=top>&nbsp;</TD>
  <TD valign=top align=center><a href="<!--#include file='include/wi_url.html'-->searches/homology_report.cgi?_Marker_key=40428">yes</a></td>
- <td valign=top>5(75.0)</TD> 
+ <td valign=top>5 (75.0 cM)</TD> 
 </TR> 
 
  <TD valign=top><A href="<!--#include file='include/wi_url.html'-->searches/marker.cgi?40431">Cldn4</A></TD>
@@ -66,7 +66,7 @@
  <a href="http://www.ncbi.nlm.nih.gov/htbin-post/Entrez/query?db=n&amp;form=6&amp;uid=AF087822">AF087822</a></TD>
  <TD valign=top>CEP-R</TD>
  <TD valign=top align=center><a href="<!--#include file='include/wi_url.html'-->searches/homology_report.cgi?_Marker_key=40431">yes</a></td>
- <td valign=top>5(75.0)</TD> 
+ <td valign=top>5 (75.0 cM)</TD> 
 </TR> 
 
  <TD valign=top><A href="<!--#include file='include/wi_url.html'-->searches/marker.cgi?36707">Cldn5</A></TD>
@@ -75,7 +75,7 @@
  <a href="http://www.ncbi.nlm.nih.gov/htbin-post/Entrez/query?db=n&amp;form=6&amp;uid=U82758">U82758</a></TD>
  <TD valign=top>MBEC1, &nbsp; TMVCF</TD>
  <TD valign=top align=center><a href="<!--#include file='include/wi_url.html'-->searches/homology_report.cgi?_Marker_key=36707">yes</a></td>
- <td valign=top>16(11.7)</TD> 
+ <td valign=top>16 (11.7)</TD> 
 </TR> 
 <tr>
  <TD valign=top><A href="<!--#include file='include/wi_url.html'-->searches/marker.cgi?46704">Cldn6</A></TD>
@@ -122,7 +122,7 @@
  <a href="http://www.ncbi.nlm.nih.gov/htbin-post/Entrez/query?db=n&amp;form=6&amp;uid=U19582">U19582</a></TD>
  <TD valign=top>Otm, &nbsp; OSP</TD>
  <TD valign=top align=center><a href="<!--#include file='include/wi_url.html'-->searches/homology_report.cgi?_Marker_key=40430">yes</a></td>
- <td valign=top>3(12.6)</TD> 
+ <td valign=top>3 (12.6 cM)</TD> 
 </TR> 
 
 <tr>
@@ -130,7 +130,7 @@
  <TD valign=top><a href="http://www.ncbi.nlm.nih.gov/htbin-post/Entrez/query?db=n&amp;form=6&amp;uid=AF247664">AF247664</a></TD>
  <TD valign=top>&nbsp;</TD>
  <TD valign=top align=center><a href="<!--#include file='include/wi_url.html'-->searches/homology_report.cgi?_Marker_key=49631">yes</a></td>
- <td valign=top>UN</TD> 
+ <td valign=top>7 (syntenic)</TD> 
 </TR> 
 
 <tr>
@@ -158,7 +158,12 @@
 </TR> 
 
 </TABLE> 
-<small>Family Note: &nbsp;Members of the claudin gene family appear to be involved in the formation of tight junction strands.
+<table border=0 width="100%">
+<tr>
+<TH width="15%" align="left">Family Note:</TH>
+<td width="85%">Members of the claudin gene family appear to be involved in the formation of tight junction strands.</td>
+</tr>
+</table> 
 <hr> 
 <h4>Notes About Gene Family Annotations in MGD</h4> 
 <h5>Nomenclature for New Genes</h5>
@@ -168,7 +173,7 @@ Contact the MGD Nomenclature Committee (<A href="mailto:nomen@informatics.jax.or
  for approved gene symbols prior to submission.  This avoids any possible conflicts
 with existing symbols and ensures that the gene symbol and name are reserved in the
 MGD private nomenclature database.  All information is kept confidential until 
-publication.</small>
+publication.</small></p>
 <h5>Nomenclature for Gene Families</h5>
 <p>
 <small>
@@ -177,7 +182,7 @@ for genes that are members of gene families and in representing the relationship
  gene families. In general, a stem symbol is assigned (e.g., Entpd) and members of the family 
  are numbered (e.g., Entpd1, Entpd2, etc.). However, there are exceptions
   and many special cases.
-</small>
+</small></p>
   <br>
   <hr>
 <!--#include file="include/footer.html"-->

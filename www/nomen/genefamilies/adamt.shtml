@@ -25,9 +25,9 @@
  <TR>
    <TH width=15%>Symbol
   <TH width=20%>Sequence
-  <TH width=40%>Synonyms
+  <TH width=30%>Synonyms
   <TH width=10%>Homology? 
-  <TH width=15%>Chr
+  <TH width=25%>Chr
  </TR> 
  <TR>
  <TD valign=top><A href="<!--#include file='include/wi_url.html'-->searches/marker.cgi?31161">Adamts1</A>
@@ -36,7 +36,7 @@
   <A href="http://www.ncbi.nlm.nih.gov/htbin-post/Entrez/query?db=n&amp;form=6&amp;uid=D67076">D67076</A>
  <TD valign=top>ADAMTS, C3-C5, METH1, ADAM-TS1</TD> 
  <TD valign=top align=center><a href="<!--#include file='include/wi_url.html'-->searches/homology_report.cgi?_Marker_key=31161">yes</a></td>
- <td valign=top>16 (53.4) </TR> 
+ <td valign=top>16 (53.4 cM) </TR> 
 <TR>
  <TD valign=top><A href="<!--#include file='include/wi_url.html'-->searches/marker.cgi?43518">Adamts2</A> 
  <TD valign=top><A href="http://www.ncbi.nlm.nih.gov/htbin-post/Entrez/query?db=n&amp;form=6&amp;uid=AA832579">AA832579</A></TD>
@@ -49,14 +49,14 @@
  <A href="http://www.ncbi.nlm.nih.gov/htbin-post/Entrez/query?db=n&amp;form=6&amp;uid=W81870">W81870</A></td>
  <td valign=top>ADAMTS-2, ADAM-TS4, ADMP-1</td>
  <TD valign=top align=center><a href="<!--#include file='include/wi_url.html'-->searches/homology_report.cgi?_Marker_key=41105">yes</a></td>
- <TD valign=top>1 (92.3)</TD> 
+ <TD valign=top>1 (92.3 cM)</TD> 
 </TR><TR> 
  <TD valign=top><a href="<!--#include file='include/wi_url.html'-->searches/marker.cgi?42893">Adamts5</a></td> 
  <TD valign=top><A href="http://www.ncbi.nlm.nih.gov/htbin-post/Entrez/query?db=n&amp;form=6&amp;uid=AA288689">AA288689</A><br>
  <A href="http://www.ncbi.nlm.nih.gov/htbin-post/Entrez/query?db=n&amp;form=6&amp;uid=AF140673">AF140673</A></td><br>
  <TD valign=top>ADAMTS1, ADMP-2, ADAM-TS5</td>
  <TD valign=top align=center><a href="<!--#include file='include/wi_url.html'-->searches/homology_report.cgi?_Marker_key=42893">yes</a></td>
- <td valign=top>16 (62.0)</tr>
+ <td valign=top>16 (62.0 cM)</tr>
  </TR><TR> 
  <TD valign=top><a href="<!--#include file='include/wi_url.html'-->searches/marker.cgi?43510">Adamts6</A></td>
  <TD>&nbsp;</td>
@@ -78,9 +78,13 @@
 <td valign=top>9 (syntenic) </td>
 </TR>  
 </TABLE> 
-<small>Family Note:
-These genes are similar to the ADAM family, but there is no proof that the
-disintegrin is functional, and therefore, the  name has been modified.</small>
+<table border=0 width="100%">
+<tr>
+<TH width="15%" align="left">Family Note:</TH>
+<td width="85%">These genes are similar to the ADAM family, but there is no proof that the
+disintegrin is functional; therefore, the name has been modified.</td>
+</tr>
+</table> 
 <hr> 
 <h4>Notes About Gene Family Annotations in MGD</h4> 
 <h5>Nomenclature for New Genes</h5>

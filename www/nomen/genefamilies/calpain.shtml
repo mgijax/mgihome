@@ -33,9 +33,9 @@
  <TR>
   <TH width=15%>Symbol</TH>
   <TH width=20%>Sequence</TH>
-  <TH width=40%>Synonyms</th>
+  <TH width=30%>Synonyms</th>
   <TH width=10%>Homology?</th>
-  <TH width=15%>Chr</th>
+  <TH width=25%>Chr</th>
  </TR>
 <TR>
  <TD valign=top><A href="<!--#include file='include/wi_url.html'-->searches/marker.cgi?32578">Capn1</a></td>
@@ -43,7 +43,7 @@
  <a href="http://www.ncbi.nlm.nih.gov/htbin-post/Entrez/query?db=n&amp;form=6&amp;uid=D18416">D18416</a></TD>
  <TD valign=top>Capa-1, &nbsp;Capa1,&nbsp;mu-calpin</td>
  <TD valign=top align=center><a href="<!--#include file='include/wi_url.html'-->searches/homology_report.cgi?_Marker_key=32578">yes</a></td>
- <td valign=top>9(3.0)</td>
+ <td valign=top>19 (3.0 cM)</td>
 </TR> 
 <TR>
  <TD valign=top><A href="<!--#include file='include/wi_url.html'-->searches/marker.cgi?32577">Capn2</A></TD>
@@ -59,7 +59,7 @@
  <TD valign=top><a href="http://www.ncbi.nlm.nih.gov/htbin-post/Entrez/query?db=n&amp;form=6&amp;uid=X92523">X92523</a></td>
 <TD valign=top>Capa-3,&nbsp; Capa3</TD>
  <TD valign=top align=center><a href="<!--#include file='include/wi_url.html'-->searches/homology_report.cgi?_Marker_key=28580">yes</a></td>
- <td valign=top>2(67.2)</TD> 
+ <td valign=top>2 (67.2 cM)</TD> 
 </TR> 
  <TD valign=top><A href="<!--#include file='include/wi_url.html'-->searches/marker.cgi?32576">Capn4</a></td>
  <TD valign=top><a href="http://www.ncbi.nlm.nih.gov/htbin-post/Entrez/query?db=n&amp;form=6&amp;uid=AF058297">AF058297</a><br>
@@ -101,42 +101,40 @@
 
 <tr>
  <TD valign=top><A href="<!--#include file='include/wi_url.html'-->searches/marker.cgi?45377">Capn11</A></TD>
- <TD valign=top><a href="http://www.ncbi.nlm.nih.gov/htbin-post/Entrez/query?db=n&amp;form=6&amp;uid=xxxxx">&nbsp;</a></TD>
+ <TD valign=top>&nbsp;</TD>
  <TD valign=top>&nbsp;</TD>
  <TD valign=top align=center><a href="<!--#include file='include/wi_url.html'-->searches/homology_report.cgi?_Marker_key=45377">yes</a></td>
  <td valign=top>UN</TD> 
 </TR>
 
 <tr>
- <TD valign=top><A href="<!--#include file='include/wi_url.html'-->searches/marker.cgi?11258">Capn12</A></TD>
+ <TD valign=top><A href="<!--#include file='include/wi_url.html'-->searches/marker.cgi?48601">Capn12</A></TD>
  <TD valign=top><a href="http://www.ncbi.nlm.nih.gov/htbin-post/Entrez/query?db=n&amp;form=6&amp;uid=AJ289241">AJ289241</a><br>
 <a href="http://www.ncbi.nlm.nih.gov/htbin-post/Entrez/query?db=n&amp;form=6&amp;uid=AJ289243">AJ289243</a></TD></TD>
  <TD valign=top>&nbsp;</TD>
- <TD valign=top align=center><a href="<!--#include file='include/wi_url.html'-->searches/homology_report.cgi?_Marker_key=11257">yes</a></td>
+ <TD valign=top align=center><a href="<!--#include file='include/wi_url.html'-->searches/homology_report.cgi?_Marker_key=48601">yes</a></td>
  <td valign=top>7</TD> 
 </TR> 
 
 </TABLE> 
-<small>Family Note: &nbsp;Family Note: Calpains are a family of calcium-dependent, cysteine proteases.
+<table border=0 width="100%">
+<tr>
+<TH width="15%" align="left">Family Note:</TH>
+<td width="85%">Calpains are a family of calcium-dependent, cysteine proteases.</td>
+</tr>
+</table> 
 <hr> 
 <h4>Notes About Gene Family Annotations in MGD</h4> 
 <h5>Nomenclature for New Genes</h5>
-<p>
-<small>
-Contact the MGD Nomenclature Committee (<A href="mailto:nomen@informatics.jax.org">nomen@informatics.jax.org</A>)
- for approved gene symbols prior to submission.  This avoids any possible conflicts
-with existing symbols and ensures that the gene symbol and name are reserved in the
-MGD private nomenclature database.  All information is kept confidential until 
-publication.</small>
+<p><small>Contact the MGD Nomenclature Committee (<A href="mailto:nomen@informatics.jax.org">nomen@informatics.jax.org</A>)
+ for approved gene symbols prior to submission.  This avoids any possible conflicts with existing symbols and ensures that the gene symbol and name are reserved in the MGD private nomenclature database.  All information is kept confidential until publication.</small></p>
 <h5>Nomenclature for Gene Families</h5>
 <p>
-<small>
-MGD works closely with HUGO and other interested scientists in the establishment of nomenclature 
+<small>MGD works closely with HUGO and other interested scientists in the establishment of nomenclature 
 for genes that are members of gene families and in representing the relationships between members of
  gene families. In general, a stem symbol is assigned (e.g., Entpd) and members of the family 
  are numbered (e.g., Entpd1, Entpd2, etc.). However, there are exceptions
-  and many special cases.
-</small>
+  and many special cases.</small><p>
   <br>
   <hr>
 <!--#include file="include/footer.html"-->

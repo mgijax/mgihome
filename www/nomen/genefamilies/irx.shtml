@@ -8,8 +8,7 @@
   </CENTER>
 <BODY background="">
 
-  <center><h2>Irx Gene Family</h2>
-  </center>
+<h2 align=center>Irx Gene Family</h2>
 
 <HR width="100%">
 
@@ -32,16 +31,16 @@
   <TR>
    <TH width=15%>Symbol </th>
    <TH width=20%>Sequence</th> 
-   <TH width=40%>Synonyms</th> 
-   <TH width="10%">Homology?</th> 
-   <TH width="15%">Chr</th>
+   <TH width=30%>Synonyms</th> 
+   <TH width=10%>Homology?</th> 
+   <TH width=25%>Chr</th>
  </tr>
  <tr>
   <TD valign=top><A href="<!--#include file='include/wi_url.html'-->searches/marker.cgi?35453">Irx1</A></td>
   <TD valign=top><a href="http://www.ncbi.nlm.nih.gov/htbin-post/Entrez/query?db=n&amp;form=6&amp;uid=Y15002">Y15002</a></td>
   <TD valign=top>&nbsp;</td>
   <TD valign=top align=center><a href="<!--#include file='include/wi_url.html'-->searches/homology_report.cgi?_Marker_key=35453">yes</a></td>
-  <TD valign=top>13 (43.0)</td>
+  <TD valign=top>13 (43.0 cM)</td>
 </TR>
 
 <tr>
@@ -57,7 +56,7 @@
  <TD valign=top><a href="http://www.ncbi.nlm.nih.gov/htbin-post/Entrez/query?db=n&amp;form=6&amp;uid=Y15001">Y15001</a></td>
  <TD>&nbsp;</td>
  <TD valign=top align=center><a href="<!--#include file='include/wi_url.html'-->searches/homology_report.cgi?_Marker_key=35460">yes</a></td>
- <TD valign=top>8 (42.1)</td>
+ <TD valign=top>8 (42.1 cM)</td>
 </TR>
 
 <TR>
@@ -75,7 +74,7 @@
  <TD valign=top><a href="http://www.ncbi.nlm.nih.gov/htbin-post/Entrez/query?db=n&amp;form=6&amp;uid=AJ271053">AJ271053</a></td>
  <TD>&nbsp;</td>
  <TD valign=top align=center><a href="<!--#include file='include/wi_url.html'-->searches/homology_report.cgi?_Marker_key=46634">yes</a></td>
- <TD valign=top>8 (43.3)
+ <TD valign=top>8 (43.3 cM)
 </TR>
 
 <TR>
@@ -88,9 +87,12 @@
 </TR>
 
 </TABLE>
-<small>Family Note: None.</small>
-<br>
-<br>
+<table border=0 width="100%">
+<tr>
+<TH width="15%" align="left">Family Note:</TH>
+<td width="85%">None.</td>
+</tr>
+</table> 
 <hr>
 
 <h4>Notes About Gene Family Annotations in MGD</h4> 

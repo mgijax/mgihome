@@ -16,7 +16,7 @@
 <!--#include file="include/banner.html"-->
 
 
-<h2><center>Opsin Gene Family</center></h2>
+<h2 align=center>Opsin Gene Family</h2>
 <HR width="100%">
 
 <table frame=void cols=2 width=100%> 
@@ -34,9 +34,9 @@
  <TR>
   <TH width=15%>Symbol
   <TH width=20%>Sequence
-  <TH width=40%>Synonyms
+  <TH width=30%>Synonyms
   <TH width=10%>Homology? 
-  <TH width=15%>Chr
+  <TH width=25%>Chr
  </TR>
 <TR>
  <TD valign=top><A href="<!--#include file='include/wi_url.html'-->searches/marker.cgi?33713">Opn1mw</A></TD>
@@ -55,7 +55,13 @@
  <TD valign=top align=center><a href="<!--#include file='include/wi_url.html'-->searches/homology_report.cgi?_Marker_key=15238">yes</a></td>
  <td valign=top>UN
 </TR>
-
+<TR>
+ <TD valign=top><A href="<!--#include file='include/wi_url.html'-->searches/marker.cgi?12894">Rho</A></TD>
+ <TD valign=top><a href="http://www.ncbi.nlm.nih.gov/htbin-post/Entrez/query?db=n&amp;form=6&amp;uid=M55171">M55171</a><br></TD>
+ <TD valign=top>Opn2, &nbsp;RP4</TD> 
+ <TD valign=top align=center><a href="<!--#include file='include/wi_url.html'-->searches/homology_report.cgi?_Marker_key=12894">yes</a></td>
+ <td valign=top>6 (51.5 cM)</td>
+</TR>`
 <TR>
  <TD valign=top><A href="<!--#include file='include/wi_url.html'-->searches/marker.cgi?40711">Opn3</A></TD>
  <TD valign=top><a href="http://www.ncbi.nlm.nih.gov/htbin-post/Entrez/query?db=n&amp;form=6&amp;uid=AF140241">AF140241</a><br></TD>
@@ -72,15 +78,14 @@
  <td valign=top>UN
 </TR>
 
-<TR>
- <TD valign=top><A href="<!--#include file='include/wi_url.html'-->searches/marker.cgi?12894">Rho</A></TD>
- <TD valign=top><a href="http://www.ncbi.nlm.nih.gov/htbin-post/Entrez/query?db=n&amp;form=6&amp;uid=M55171">M55171</a><br></TD>
- <TD valign=top>Opn2, &nbsp;RP4</TD> 
- <TD valign=top align=center><a href="<!--#include file='include/wi_url.html'-->searches/homology_report.cgi?_Marker_key=12894">yes</a></td>
- <td valign=top>6(51.5)</td>
-</TR>
+
 </TABLE> 
-<small>Family Note: &nbsp;None.</small>
+<table border=0 width="100%">
+<tr>
+<TH width="15%" align="left">Family Note:</TH>
+<td width="85%">None.</td>
+</tr>
+</table> 
 <hr> 
 <h4>Notes About Gene Family Annotations in MGD</h4> 
 <h5>Nomenclature for New Genes</h5>
