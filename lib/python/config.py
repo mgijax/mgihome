@@ -7,7 +7,7 @@
 #		least as recent as the plain text one
 #	3. if so, loads the pickled version
 #	4. if not, loads the plain text one and save a pickled version
-#	5. adds the WI_PATH/lib/python directory to sys.path
+#	5. adds the directories specified in LIBDIRS to sys.path
 #
 # Notes: As regular expressions are a bit slow, I decided to store a pickled
 #	version of the data structure which contains the configuration info.
@@ -128,10 +128,14 @@ libdir = os.path.join (lookup ('MGIHOME_PATH'), 'lib/python')
 if libdir not in sys.path:
 	sys.path.insert (0, libdir)
 
-# add the WI library directory to the python path
+# add any other specified library directories to the python path
 
-libdir = os.path.join (lookup ('WI_PATH'), 'lib/python')
-if libdir not in sys.path:
-	sys.path.insert (0, libdir)
+libdirs = lookup ('LIBDIRS')
+if libdirs is not None:
+	libdirs = string.split (libdirs, ':')
+	libdirs.reverse()
+	for libdir in libdirs:
+		if libdir not in sys.path:
+			sys.path.insert (0, libdir)
 
 # ********** end of module initialization **********
