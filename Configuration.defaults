@@ -56,6 +56,9 @@ RATMAP_URL	http://ratmap.gen.gu.se/ShowSingleLocus.htm?accno=
 #URL to RGD
 RGD_URL		http://ratmap.gen.gu.se/ShowSingleLocus.htm?accno=
 
+#URL to Entrez where we find human orthologs
+ENTREZ_URL	http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=gene&cmd=Retrieve&dopt=Graphics&list_uids=
+
 # URL to the MGI Glossary
 GLOSSARY_URL	http://www.informatics.jax.org/userdocs/glossary.shtml
 
