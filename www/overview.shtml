@@ -1,0 +1,287 @@
+<HTML>
+<HEAD> 
+<TITLE><!--#include file="include/title.html"--> - Mouse  Genome Informatics Overview</TITLE>
+</HEAD>
+<BODY BGCOLOR="#ffffff"> 
+<!--#include file="include/banner.html"--> 
+<!--#include file="include/topodoc.shtml"-->
+
+<H2>Mouse Genome Informatics Overview</H2> <p>This overview presents a brief description of the features and data content of the
+Mouse Genome Informatics (MGI) resource available on the World Wide Web.
+
+<P>The MGI web site provides integrated access to various sources for information on the genetics and biology of the laboratory
+mouse. MGI projects comprise the Mouse Genome Database (<a href="<!--#include file='include/glossary_url.html'-->#MGD">MGD</A>), the
+Gene Expression Database (<a href="<!--#include file='include/glossary_url.html'-->#GXD">GXD</A>), Mouse Genome Sequence 
+(<a href="<!--#include file='include/glossary_url.html'-->#MGS">MGS</A>) project, and related resources including the Mouse Tumor 
+Biology database, the Rat Data resource, Michael Festing's Listing of Inbred Strains of Mice and  Rats,  and  MouseBLAST.
+
+<P>The goals of the MGI projects are to capture, store and manage high quality data suitable for analysis and integration with other
+biological data; provide efficient access to these data through an easy-to-use, flexible user interface; develop software tools that facilitate
+analysis of data and enable researchers to display data in a variety of graphical and  textual formats;  promote  integration  of
+MGI information with  other scientific information resources by creating links between MGI and other scientific web sites. We aim to
+continually modify and develop our information resources in response to the changing  nformation  needs of the scientific community.
+(See the <A HREF="<!--#include file='include/mgihome_url.html'-->/other/mgicron.shtml">MGI  Chronology</A> for highlights of MGI
+project history.) <H3><A  NAME="mgd">MGD Project</A></H3> <p>MGD includes information on mouse genetic
+<a href="<!--#include file='include/glossary_url.html'-->#marker">markers</A>, molecular segments
+(<a href="<!--#include file='include/glossary_url.html'-->#probe">probes</A>,
+<a href="<!--#include file='include/glossary_url.html'-->#primer">primers</A> and
+<a href="<!--#include file='include/glossary_url.html'-->#YAC">YACs</A>),
+<a href="<!--#include file='include/glossary_url.html'-->#phenotype">phenotypes</A>, comparative mapping data, graphical displays of
+<a href="<!--#include file='include/glossary_url.html'-->#linkage_map">linkage</A>,
+<a href="<!--#include file='include/glossary_url.html'-->#cytogenetic_map">cytogenetic</A>, and
+<a href="<!--#include file='include/glossary_url.html'-->#physical_map">physical maps</A>, experimental mapping data, as well as
+ strain distribution patterns for <a href="<!--#include file='include/glossary_url.html'-->#recombinant_inbred">recombinant inbred
+strains(RIs)</A> and cross <a href="<!--#include file='include/glossary_url.html'-->#haplotype">haplotypes</A>. Sources for
+information in the database include  the scientific  literature,  DNA  mapping  panel  data produced by various researchers, the MIT
+Whitehead Institute (MIT genetic  and physical mapping data), WashU and the  I.M.A.G.E.  consortium.  MGD  is  updated daily. Since
+it first became available on the WWW, MGD has continued to  evolve, expanding its data coverage, improving data handling, and
+providing several  new data manipulation and display tools.
+
+<P>MGD is integrated with the  Encyclopedia of the Mouse  Genome, a  
+<A  HREF="<!--#include file='include/glossary_url.html'-->#genetic_map">genetic map</a> viewing
+application for the Macintosh platform. You can configure Netscape to recognize the <EM>Encyclopedia</EM> as a "helper" application.
+You can then  use the Linkage Maps query form to generate a linkage map in "<EM>Encyclopedia</EM>" format. The <EM>Encyclopedia</EM>
+will automatically start up when  you  execute the search. The  resulting  map  displays  marker  symbols  arranged  along  the
+chromosome. You can click on a marker and Netscape will search MGD and  retrieve the detail record for the selected marker for
+display in a browser  window.  You can build an <EM>Encyclopedia</EM> linkage map using information from MGD marker records,
+Chromosome Committee Reports,  MIT mouse  DNA  marker  maps,  and  DNA mapping panels.
+
+<P>Another format for map display is the "Web Map,"  a  type  of HTML file that provides a graphical display of cytogenetic and
+linkage maps on a WWW browser page. The appearance is similar to that of a "PostScript"  map.  The marker symbols on the map are
+linked to detail  marker  records  in  MGD.
+
+<P><A NAME="mlc">Phenotype</A> records in  MGDhave their origin in the
+<a href="<!--#include file='include/glossary_url.html'-->#MLC">Mouse Locus Catalog (MLC)</A>, formerly an independent database. You
+can search for phenotype records using  the  Genes,  Alleles,  and Phenotypes query form. MLC full-text searching capability relies
+on the  Glimpse search engine. Glimpse is easy-to-use and provides very reliable query  results. In addition, an integrated OMIM/MLC query form is
+available which lets you enter one search string  to  execute  a  query  in  both  MLC  and  On-line  Mendelian Inheritance in Man
+(OMIM), a database maintained  by  the  National  Center  for Biotechnology Information (NCBI). <P>MGD is closely linked with the
+Gene Expression Literature Index. The Gene Expression Literature Index is a collection  of  references  to  the  scientific
+literature reporting data on endogenous gene expression during mouse embryonic development. MGD provides links to Gene Expression
+Literature Index records through genetic marker  detail records. The Gene Expression Literature Index provides links to  MGD
+references  and  genetic  marker  records. <H4>MGD Data</H4>
+<p>MGD is updated on  a  daily  basis  by  biologists  on  the editorial
+staff who scan the current scientific  literature,  extract  relevant data and enter it in MGD. Increasingly, MGD acquires data
+through  large scale electronic transfer. Such data include mouse physical  mapping  data  downloaded from MIT, data generated by the
+collaborative efforts of WashU,  the  I.M.A.G.E. consortium, ATCC, and Mouse Genome Informatics. The data interface  is intended to
+be flexible and comprehensive so that each view of particular records in  MGD provides links to any related data throughout MGD and,
+where possible, to  other databases on the Internet.
+
+<P>MGD contains the following kinds  of information:
+<P>
+<UL>
+<a href="<!--#include file='include/glossary_url.html'-->#gene">Gene</A>,
+DNA <a href="<!--#include file='include/glossary_url.html'-->#marker">marker</a>,
+<a href="<!--#include file='include/glossary_url.html'-->#QTL">QTL</A> and
+<a href="<!--#include file='include/glossary_url.html'-->#cytogenetic_marker">Cytogenetic marker</A> descriptions<BR>
+Mouse genetic <a href="<!--#include file='include/glossary_url.html'-->#phenotype">phenotypes</A>, genetic interrelationships, and
+<a href="<!--#include file='include/glossary_url.html'-->#polymorphism">polymorphic</A> loci <BR> Mammalian
+<a href="<!--#include file='include/glossary_url.html'-->#homology">homology</A>
+data  <BR> Molecular probes and segments(<a href="<!--#include file='include/glossary_url.html'-->#probe">probes</A>,
+<a href="<!--#include file='include/glossary_url.html'-->#clone">clones</A>,
+<a href="<!--#include file='include/glossary_url.html'-->#primer">primers</A> and
+<a href="<!--#include file='include/glossary_url.html'-->#YAC">YACs</A>)<BR>
+<a href="<!--#include file='include/glossary_url.html'-->#genetic_map">Genetic</A> and
+<a href="<!--#include file='include/glossary_url.html'-->#physical_map">physical mapping</A> data<BR>
+<a href="<!--#include file='include/glossary_url.html'-->#polymorphism">Polymorphic</A>
+loci  related  to  specified strains  <BR> Information on
+<a href="<!--#include file='include/glossary_url.html'-->#inbred_strain">inbred strains</A> (M. Festing's listing)<BR>
+References supporting  all  data  in MGD <BR> 
+</UL>
+
+<P>Data Links to <A HREF="<!--#include file='include/mgihome_url.html'-->/other/acknowledge.shtml">External Databases</A>
+
+<P>MGD  provides  links  to  relevant  information  in   external databases wherever possible. Through homologies,  MGD links  to
+GDB,  PigBase, SheepBase, BovMap and RATMAP. Through molecular probes and segments,  MGD  links to Genbank, Entrez, and DDBJ. Through
+references, MGD links to Medline.  Through markers, MGD links to EC and SWISS-PROT.
+
+<P><EM><ANAME="mkr"><B>Genes, Alleles, and  Phenotypes</B></A></EM><BR> MGD contains information on mouse
+<a href="<!--#include file='include/glossary_url.html'-->#gene">genes</A>, 
+<A HREF="<!--#include file='include/glossary_url.html'-->#DNA_segment">DNA segments</A>,
+<a href="<!--#include file='include/glossary_url.html'-->#cytogenetic_marker">cytogenetic markers</A> and
+<a href="<!--#include file='include/glossary_url.html'-->#QTL">QTLs</A>. Each record may include marker
+<a href="<!--#include file='include/glossary_url.html'-->#gene_symbol">symbol</A>,
+<a href="<!--#include file='include/glossary_url.html'-->#gene_name">name</A>,other
+<a href="<!--#include file='include/glossary_url.html'-->#withdrawn">withdrawn</A> names or symbols and
+<a href="<!--#include file='include/glossary_url.html'-->#synonym">synonyms</A>, nomenclaturehistory,
+<a href="<!--#include file='include/glossary_url.html'-->#allele">alleles</A>, 
+<a href="<!--#include file='include/glossary_url.html'-->#STS">STSs</A>, 
+<a href="<!--#include file='include/glossary_url.html'-->#chromosome">chromosomal</A> assignment,
+<a href="<!--#include file='include/glossary_url.html'-->#centimorgan">centimorgan</A> location,
+<a href="<!--#include file='include/glossary_url.html'-->#cytogenetic_band">cytogenetic band</A>,
+<a href="<!--#include file='include/glossary_url.html'-->#EC_number">EC number</A>
+(for <a href="<!--#include file='include/glossary_url.html'-->#enzyme">enzymes</A>),
+<a href="<!--#include file='include/glossary_url.html'--
+>#phenotype">phenotypic</A> classifications, <a href="<!--#include file='include/glossary_url.html'-->#gene_ontology">Gene Ontology
+(GO)</A> terms, MGI  accession IDs and supporting references. (See <A HREF="marker_help.shtml#detail">details</a> on the content of
+the display of a marker record as it appears in the query results.)
+
+<P>Information on <B>alleles</B>, formerly imbedded in phenotype  descriptions, is stored  as  a separate data set. More information
+on alleles will be available and accessible in MGD as time goes on. Links to alleles are provided in gene detail records. In
+addition, there is an <A HREF="../searches/allele_form.shtml">Alleles  query form</A> for  direct  queries  against  the  allele
+data  set. (<I>See</I> <A href="allele_help.shtml#detail">details</A> on the content of an  allele  record as displayed in query
+results.
+
+<P><EM><A  NAME="pro"><B>Molecular  Probes  and Segments</B></A></EM><BR> <P>MGD contains information on 
+<a href="<!--#include file='include/glossary_url.html'-->#probe">probes</A>,
+<a href="<!--#include file='include/glossary_url.html'-->#clone">clones</A>, 
+<a href="<!--#include file='include/glossary_url.html'-->#primer">primers</A>,
+<A  HREF="<!--#include file='include/glossary_url.html'-->#YAC">YACs</A> and 
+<a href="<!--#include file='include/glossary_url.html'-->#STS">STSs</A>. 
+Information may include the origin of the probe/segment, sequence, 
+<a href="<!--#include file='include/glossary_url.html'-->#cloning_vector">vector</A> type, 
+<a href="<!--#include file='include/glossary_url.html'-->#hybridization">hybridizing</A> loci, 
+<a href="<!--#include file='include/glossary_url.html'-->#RFLP">RFLPs</A>, and references. (<EM>See</EM> <A
+href="probe_help.shtml#detail">details</A> on the content of a probe/segment record as it appears in the query results.)
+
+<P>In addition, information on <A NAME="rflp">genetic polymorphisms</A> is extracted from probe/segment records records in MGD. The
+Polymorphisms query form enables you to search directly  for such information and display it. (See 
+<A HREF="polymorphism_help.shtml#res">details</a> on the content of the display in polymorphism query results.)
+
+<P><EM><A NAME="hom"><B>Mammalian Homology</B></A></EM><BR> MGD contains
+<a href="<!--#include file='include/glossary_url.html'-->#homology">homology</A> information for mouse, human and 15 other mammalian species. Most of the information  for  homologies  is
+extracted from the published scientific literature. In general,  these  papers  explicitly report homology relationships  and  MGD
+reflects  that  published information. (<EM>See</EM> information on <A HREF="homology_criteria.shtml">criteria</A> used for
+establishing homology.)
+
+<P>An homology record shows the <a href="<!--#include file='include/glossary_url.html'-->#gene_symbol">symbol</A>, species, <a
+href="<!--#include file='include/glossary_url.html'-->#chromosome">chromosome</A>,
+<a href="<!--#include file='include/glossary_url.html'-->#cM">cM</A> position,
+<a href="<!--#include file='include/glossary_url.html'-->#cytogenetic_band">cytogenetic band</A> and <a href="<!--#include file='include/glossary_url.html'-->#accession_ID">accession ID</A>
+for each <a href="<!--#include file='include/glossary_url.html'-->#gene">gene</A> in the set of homologies. In addition, links to
+other mammalian databases are provided where possible. MGD homology records may link to GDB, BovMap, PiGBASE, RATMAP, SheepBase, or
+ArkDB. In addition, the Homology menu provides a link to mouse/Drosophila homologies extracted from data maintained by Michael
+Ashburner at FlyBase.
+
+<P> Every homology assertion is supported by one or more references.  The display of an homology reference includes the J number of
+the reference, a short format citation, gene symbol and species. (<EM>See</EM> <A href="homology_help.shtml#detail">details</A> on
+the content of a homology record as it appears in the query results.)
+
+<P>  Homology information is presented in three other formats: Oxford  Grid, comparative map and Homology Map View. An Oxford Grid
+display presents an overview  of  homology between two species. Currently, this kind of comparison  is supported  for  the following
+species:  Mouse,  Human,  Cat,  Cattle,  Rat,  Pig,  Sheep. <P>  The comparative map display relies on the Linkage Map application to
+build a graphic display of a map of a mouse chromosome (or chromosomal region)  which  includes homologies from the comparison
+species. See, for example, the comparative map for a 2 cM region around the mouse gene 
+<A HREF="../searches/linkmap.cgi?midpoint=52.3&cmrange=2&format=Web+Map&source=MGD&dsegments=0&syntenics=0&chromosome=1&species=2">Acrg</A> 
+showing human homology.
+
+<P> The Homology Map View displays the mouse genome as  the  consensus genetic map, with either human or rat orthologs labeled by
+chromosome of origin and displayed next to  the  corresponding  segment  of  the  mouse  genome.  The Homology Map View is accessible
+from the <A HREF="http://www.informatics.jax.org/menus/homology_menu.shtml">Homology Menu</A> page.
+
+<p><EM><A NAME="map"><B>Mapping Data</B></A></EM> <BR> MGD contains genetic mapping and linkage data, including haplotype data for
+linkage crosses, recombinant inbred (RI) strain distribution patterns,
+<a href="<!--#include file='include/glossary_url.html'-->#in_situ">in-situ hybridization</A>data, 
+<a href="<!--#include file='include/glossary_url.html'-->#deletion">deletion</A> mapping
+information, <a href="<!--#include file='include/glossary_url.html'-->#translocation">translocation</A> breakpoint mapping, somatic
+cell hybrids, concordance tables, <a href="<!--#include file='include/glossary_url.html'-->#congenic">congenic strains</A>
+information, and physical mapping information.
+
+<H5><A NAME="RIdata">Recombinant Inbred Strain Distribution Patterns Composite Data Set</A></H5> 
+The RI Data portion of  MGD  mapping data records has been collected and organized into composite reports accessible using the 
+Composite Recombinant Inbred Data Sets from MGD query form. The  information is displayed in tabular format with each COLUMN 
+representing a strain  and  each ROW representing the distribution of alleles of a locus  across  these strains.
+
+<H5><A NAME="RCdata">Recombinant Congenic Strain Distribution Patterns Composite Data Set</A></H5> Composite Recombinant Congenic
+Strain Distribution Patterns data can be retrieved using a new query form accessed in the "Maps and  Mapping Data" section of MGD.
+Information on four recombinant congenic  strain  sets  is currently available. Data include the progenitor strains for each  RCS
+set  and tables showing the allelic distribution for each genetic marker that has been typed in each of the recombinant  congenic
+strains.  Each  row  represents  the typing for a genetic marker and each column  represents  alleles  carried  by  a specific
+recombinant congenic strain of the RCS set. Format of the report is very similar to that of the Composite Recombinant  Inbred
+Strains  distribution patterns. <p> <p>For more information regarding the use of congenic  strains  to  analyze  traits controlled by
+multiple genes, see Peter Demant's paper, <BLOCKQUOTE>"Recombinant Congenic Strains - A New Tool for Analyzing Genetic Traits
+Determined  by More Than One Gene, " Immunogenetics 24: 416-422, 1986.</BLOCKQUOTE> 
+<p> 
+<p> <H5><A NAME="DNAdata">DNA Mapping Panel Data Sets </A> </H5> 
+<p> Data  from the  major DNA mapping panels have been downloaded into MGD and are accessible through the DNA
+Mapping Panel Data Sets from MGD query form and from the Linkage Maps  form. The data sets include: <p> <ul> <LI>Copeland-Jenkins:
+(C57BL/6J x M. spretus)F1 x C57BL/6J </li> <LI>EUCIB (BSB):(C57BL/6J x SPR or SEG/Pas)F1 x C57BL/6J</li> <LI>EUCIB (BSS): (C57BL/6J
+x  SPR  or SEG/Pas)F1 x SPR or SEG/Pas </li> <LI>JAX (BSB):(C57BL/6J x M. spretus)F1 x  C57BL/6J</li> <LI>JAX (BSS): (C57BL/6JEi  x
+SPRET/Ei)F1  x  SPRET/Ei</li> <LI>JAX  Mouse  Mutant Resource BCB: (C57BL/6J x CAST/Ei)F1 x C57BL/6J </li> <LI>JAX  Mouse  Mutant
+Resource BSS: (C57BL/6J x SPRET/Ei)F1 x SPRET/Ei <LI>Kozak FvC58: (NFS/N x M. spretus)F1 x C58/J </li> <LI>Kozak FvSpr: (NFS/N x M.
+spretus)F1 x M.  spretus </li> <LI>Kozak  Skive: (NFS/N or C58/J x M.  m. musculus)F1 x M. m. musculus </li> <LI>MIT: (C57BL/6J-
+Lep&lt;ob&gt;/Lep&lt;ob&gt; x CAST)F1 x (C57BL/6J-Lep&lt;ob&gt;/Lep&lt;ob&gt; x CAST)F1</li> <LI>Reeves  (Chr  16):  Sex-averaged
+intersubspecific mapping  panel</li> <LI>Seldin: (C3H/HeJ-Fasl&lt;gld&gt; x M. spretus)F1 x C3H/HeJ-Fasl&lt;gld&gt; </li> <LI>UCLA
+(BSB): (C57BL/6J x M. spretus)F1 x C57BL/6J </li> 
+</ul>
+
+<p> DNA Mapping Panel data may be displayed in tabular format, where each column represents a single offspring of the cross, and each
+row indicates for each locus  which  allele  is present in each of the offspring. The order of rows is determined by linkage  on the
+chromosome and the locus nearest the centromer is at the top of the display. Centimorgan locations for loci in the cross are
+determined by the provider of the cross. <P>
+
+<H5>Mapping Experiment Records</H5> (<EM>See</EM> <A HREF="mapping_data.shtml">details</A> on the content of various mapping
+experiment records as displayed in query results.)
+
+<P><EM><B>Graphical Map Displays</B></EM><BR> <H5>Linkage  Maps</H5> Marker records in MGD include available information on genetic
+mapping locations from several sources (MGD, Chromosome Committees, MIT). MGD provides  mapping  tools  to  generate graphic displays
+of genetic maps.  Using the Linkage Maps  form,  you  can  generate  a graphical map display in either <EM>Encyclopedia</EM>  or  Web
+Map  format  to display  linkage  information  for  a  chromosome  from  a   particular cross. Centimorgan locations are specific to
+the cross and may  differ  from  estimates for the same loci found in MGD marker records. You can use the PostScript format option to
+generate a file for printing.
+
+<H5>Cytogenetic Maps</H5> MGD stores  cytogenetic  band  information  for  mouse markers. The  Cytogenetic  Maps  query  form
+provides  access  to map  images. Relatively few markers have been assigned cytogenetic locations.
+
+<H5>Physical Maps</H5> As of June 1997, MGD stores physical  mapping  data  from MIT's mouse physical mapping project in which MIT
+primers and STSs are mapped against a mouse YAC library to build a contig map of  the  mouse.  MGD  provides query access to the MIT
+primers, STSs  and  YACs.  In  addition,  MGD  provides integrated genetic/physical displays in Web Map  format.  These  map files
+are updated when the MIT mapping physical mapping  data  set  is  updated. <P> <p><EM><A NAME="ref"><B>References</B></A></EM> <BR>
+MGD  contains  references  for all data in the  database.  As  of  February 1998,  MGD  contains  over  44,000 references. MGD
+reference format is similar to that used by  MEDLINE.  Data  for the full MGD reference are extracted from MEDLINE when possible.
+References  are first entered into MGD in an abbreviated format and these  records  are  updated when the MEDLINE records become
+available. If the  journal  is  not  indexed  by MEDLINE, the full reference is manually entered into MGD.  (See  <A
+HREF="reference_help.shtml#sort">details</A> on the content of reference records as displayed in query results.)
+
+<P><EM><B>Chromosome Committee Reports</B></EM> <BR> The  <A  HREF="http://www.informatics.jax.org/ccr/">Chromosome Committee
+Reports</A> are published annually on the MGI web site. The  reports  provide  a consensus view on linkage information for each
+chromosome.  These  reports  are also the source for cM values for markers stored in MGD. <P>
+
+<H3>Gene Expression Database (GXD) Project</H3> GXD is designed as a comprehensive database system that will store and integrate the
+various types of expression data on the laboratory  mouse.  GXD  has  been implemented using the Sybase relational database system.
+GXD is integrated  with MGD and provides comprehensive  links  to  other  resources. <P>Currently,  the following data are <A
+HREF="../menus/expression_menu.shtml">searchable</A>: <P> <UL  TYPE=DISC> <LI><B><A HREF="../searches/gxdindex_form.shtml">Gene
+Expression Literature Index</A></B>, a searchable  index  of research  reports  documenting  data  on endogenous gene expression
+during mouse development, including references, genes and  embryonic  stages  analyzed,  and  expression  assays  used. <P> <LI><B><A
+HREF="../searches/estclone_form.shtml">Mouse cDNA data</A></B>, including I.M.A.G.E. clones. 
+<P> 
+<LI><B><A HREF="../searches/expression_form.shtml"><a href="<!--#include file='include/glossary_url.html'-->#RT-PCR">RT-PCR</A>, 
+RNA <a href="<!--#include file='include/glossary_url.html'-->#in_situ">in situ hybridization</A>, 
+<a href="<!--#include file='include/glossary_url.html'-->#immunohistochemistry">Immunohistochemistry</A>, 
+<a href="<!--#include file='include/glossary_url.html'-->#northern_blot">Northern</A> and
+<a href="<!--#include file='include/glossary_url.html'-->#western_blot">Western Blot</A> data</A></B> </UL>
+
+<P> GXD includes a large data set of RT-PCR data reporting expression data for 517 genes in <A HREF="tissues.shtml">46 tissues</A>
+(provided by <A HREF="../searches/reference.cgi?46734">Tom Freeman et al</A>, The Sanger Centre, UK). Additional expression data from
+the various assay types are now being entered into the database and made publicly available on a daily basis.
+
+<P> Currently, these data are acquired from the literature by database  editors.  In the future, we will  acquire  data primarily
+via  electronic  submission  from laboratories. Prototypes of an electronic submission system are being tested and refined in
+collaboration with a number of  laboratories  in  North  America  and Europe with the aim to produce a robust submission system for
+the  community  at large.  (<EM>See</EM> <A  HREF="<!--#include file='include/mgihome_url.html'-->/GXD/gxdgen.shtml">details</A>
+about the GXD  project.) <P> <H3>Mouse  Genome Sequence (MGS) Project</H3> The overall goal of the Mouse Genome Sequence  (MGS)
+project is to integrate emerging mouse genomic sequence data  with  the  genetic and biological data available in MGD and GXD. MGS is
+part  of  the  informatics infrastructure needed to support mouse-human comparative genomics. The  specific aims of the project
+include: <UL> <LI>Working cooperatively with sequencing centers and genome annotation groups to apply baseline sequence annotation to
+mouse genomic sequence. <P> <LI>Implementing a  data integration process for connecting mouse genome sequence with existing
+biological  knowledge. <P> <LI>Developing a web-based interface for querying and visualizing the results of the mouse genome
+sequence annotation-integration process, including sequence alignments of mouse-human orthologs. </UL>
+
+<P> The first tool released by MGS is a prototypic <A HREF="http://mouseblast.informatics.jax.org/prototype/">MouseBLAST</A> server
+which enables you to compare a sequence of interest to a  database of  either mouse or rodent DNA or protein sequences. <p>
+<H3>Encyclopedia  of the Mouse Genome (<EM>Encyclopedia</EM>)</H3> The <EM>Encyclopedia</EM> is a genetic  map-viewing application
+that runs on a Macintosh computer. The <EM>Encyclopedia</EM> uses information retrieved from MGD to generate a graphic display of a
+linkage map.  (<EM>See</EM> <A  HREF="<!--#include file='include/mgihome_url.html'-->/encyclopedia/encyclo.shtml">details</A> on the
+<EM>Encyclopedia</EM> application.)
+<HR>
+<!--#include file="include/footer.html"-->
+</BODY>
+ </HTML>
+<!--Warranty Disclaimer and
+Copyright Notice THE JACKSON LABORATORY MAKES NO  REPRESENTATION ABOUT THE SUITABILITY OR ACCURACY OF THIS SOFTWARE OR DATA FOR ANY
+PURPOSE,  AND MAKES NO WARRANTIES, EITHER EXPRESS OR IMPLIED,  INCLUDING  MERCHANTABILITY  AND FITNESS FOR A PARTICULAR PURPOSE OR
+THAT THE USE OF THIS SOFTWARE OR  DATA  WILL NOT INFRINGE ANY THIRD PARTY PATENTS, COPYRIGHTS, TRADEMARKS, OR  OTHER  RIGHTS. THE
+SOFTWARE AND DATA ARE PROVIDED "AS IS". This software and data are  provided to enhance knowledge and encourage progress in the
+scientific community and  are to be used only for research and educational purposes. Any reproduction  or  use for commercial
+purpose  is  prohibited  without  the  prior  express   written permission of the Jackson Laboratory. Copyright © 1996, 1999, 2002 by The Jackson Laboratory All Rights
+Reserved -->
