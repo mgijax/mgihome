@@ -38,7 +38,7 @@ In the Mouse Facts pages, you will find information on these topics:<P>
     <TD ALIGN="left" VALIGN="top">
 <!--<A HREF="#SeqProg">Mouse Sequencing Progress</A><BR>-->
 <A HREF="#GenomeLen">Mouse Genome Length Estimates</A><BR>
-<A HREF="#MGDStats">MGD chromosomal length and gene distribution</A><BR>
+<A HREF="#MGDStats">MGD Chromosomal Size</A><BR>
 <A HREF="#CodonUsage">Codon Usage</A><BR>
 <A HREF="#MolecRes">Molecular Resources</A><BR>
 <A HREF="#NIHLinks">NIH links</A><BR>
@@ -50,7 +50,7 @@ In the Mouse Facts pages, you will find information on these topics:<P>
 
 <hr WIDTH="100%">
 <h4><A NAME="GenomeLen">Mouse Genome Length Estimates</A></h4>
-<table BORDER WIDTH="90%" cellpadding=4 cellspacing=1 BGCOLOR="#FAFAD2">
+<table BORDER WIDTH="90%" cellpadding=4 cellspacing=1>
 <tr>
 <td>1360.9 cM</td>
 
@@ -79,137 +79,37 @@ of Genome Sizes (DOGS)</a></td>
 </tr>
 </table>
 <hr>
-<h4><A NAME="MGDStats">MGD chromosomal length and gene distribution (as
-of August 15, 2000)</h4>
+<h4><A NAME="MGDStats">MGD Chromosomal Size (as of January, 2003)</h4>
 *Mapped length represents the estimated cM position
-of the most distally placed locus on that chromosome.
-<table BORDER COLS=4 WIDTH="70%" BGCOLOR="#FAFAD2" >
-<tr><td><B>Chromosome</B></td><td><B>Mapped Length * (cM)</B></td>
-<td><B>#Genes mapped</B></td><td><B>#D Segments</B></td></tr>
-<tr><td>1</td><td>127.0</td><td>695</td><td>1054</td></tr>
-<tr><td>2</td><td>114.0</td><td>779</td><td>962</td></tr>
-<tr><td>3</td><td>119.2</td><td>491</td><td>631</td></tr>
-<tr>
-<td>4</td><td>84.0</td><td>705</td><td>864</td></tr>
-
-<tr>
-<td>5</td>
-<td>92.0</td>
-<td>577</td>
-<td>859</td>
-</tr>
-
-<tr>
-<td>6</td>
-<td>75.0</td>
-<td>702</td>
-<td>764</td>
-</tr>
-
-<tr>
-<td>7</td>
-<td>74.0</td>
-<td>880</td>
-<td>722</td>
-</tr>
-
-<tr>
-<td>8</td>
-<td>82.0</td>
-<td>497</td>
-<td>643</td>
-</tr>
-
-<tr>
-<td>9</td>
-<td>79.0</td>
-<td>535</td>
-<td>628</td>
-</tr>
-
-<tr>
-<td>10</td>
-<td>77.0</td>
-<td>454</td>
-<td>571</td>
-</tr>
-
-<tr>
-<td>11</td>
-<td>80.0</td>
-<td>767</td>
-<td>1013</td>
-</tr>
-
-<tr>
-<td>12</td>
-<td>66.0</td>
-<td>356</td>
-<td>573</td>
-</tr>
-
-<tr>
-<td>13</td>
-<td>80.0</td>
-<td>395</td>
-<td>679</td>
-</tr>
-
-<tr>
-<td>14</td>
-<td>69.0</td>
-<td>449</td>
-<td>468</td>
-</tr>
-
-<tr>
-<td>15</td>
-<td>81.0</td>
-<td>417</td>
-<td>500</td>
-</tr>
-
-<tr>
-<td>16</td>
-<td>72.0</td>
-<td>385</td>
-<td>543</td>
-</tr>
-
-<tr>
-<td>17</td>
-<td>81.6</td>
-<td>981</td>
-<td>747</td>
-</tr>
-
-<tr>
-<td>18</td>
-<td>60.0</td>
-<td>207</td>
-<td>374</td>
-</tr>
-
-<tr>
-<td>19</td>
-<td>55.7</td>
-<td>325</td>
-<td>300</td>
-</tr>
-
-<tr>
-<td>X</td>
-<td>96.5</td>
-<td>498</td>
-<td>734</td>
-</tr>
-
-<tr><td>Y</td><td>3.11</td><td>68</td><td>105</td></tr>
+of the most distally placed locus on that chromosome.<br>
+**Total estimated size omits centromeres and telomeres which would add, on average, ~8 Mb per chromosome or ~160 Mb to the genome. It also omits uncaptured gaps between supercontigs.
+<table WIDTH="50%" border=1 cellpadding=4 cellspacing=1>
+<tr BGCOLOR="#D0E0F0"><th width="20%" align=center valign=top>Chromosome</th><th align=center valign=top>Mapped Length * (cM)</th><th align=center valign=top>Total Estimated Size (Mb)**</th></tr>
+<tr width="20%"><td>1</td><td>127.0</td><td>192</td></tr>
+<tr><td>2</td><td>114.0</td><td>176</td></tr>
+<tr><td>3</td><td>119.2</td><td>157</td></tr>
+<tr><td>4</td><td>84.0</td><td>147</td></tr>
+<tr><td>5</td><td>92.0</td><td>144</td></tr>
+<tr><td>6</td><td>75.0</td><td>146</td></tr>
+<tr><td>7</td><td>74.0</td><td>131</td></tr>
+<tr><td>8</td><td>82.0</td><td>125</td></tr>
+<tr><td>9</td><td>79.0</td><td>121</td></tr>
+<tr><td>10</td><td>77.0</td><td>127</td></tr>
+<tr><td>11</td><td>80.0</td><td>119</td></tr>
+<tr><td>12</td><td>66.0</td><td>110</td></tr>
+<tr><td>13</td><td>80.0</td><td>113</td></tr>
+<tr><td>14</td><td>69.0</td><td>112</td></tr>
+<tr><td>15</td><td>81.0</td><td>100</td></tr>
+<tr><td>16</td><td>72.0</td><td>95</td></tr>
+<tr><td>17</td><td>81.6</td><td>90</td></tr>
+<tr><td>18</td><td>60.0</td><td>87</td></tr>
+<tr><td>19</td><td>55.7</td><td>58</td></tr>
+<tr><td>X</td><td>96.5</td><td>142</td></tr>
+<tr><td>Y</td><td>3.11</td><td>&#151;&nbsp;</td></tr>
 
 <tr><td BGCOLOR="#EEEEEE">Total:</td>
-<td BGCOLOR="#EEEEEE">1665</td>
-<td BGCOLOR="#EEEEEE">11163</td>
-<td BGCOLOR="#EEEEEE">13734</td>
+<td BGCOLOR="#EEEEEE">1,665</td>
+<td BGCOLOR="#EEEEEE">2,493</td>
 </tr>
 </table><BR><BR>
 <p>
