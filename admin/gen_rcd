@@ -1,0 +1,12 @@
+#!./python
+
+import sys
+if '.' not in sys.path:
+	sys.path.insert (0, '.')
+import config
+import webshare_util
+
+
+
+
+webshare_util.saveWebshare("../webshare.rcd", config.lookup('WEBSHARE_URL'))
