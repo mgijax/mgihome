@@ -413,6 +413,15 @@ identity of the plate and the clone location (row and column) on that plate. Inf
 </UL>
 </DD></P>
 
+
+<P><DT><B><A NAME="assembly_sequence"></A>Assembly Sequence</B></DT>
+<DD>The sequence defined by an interval along a chromosome in the mouse genome assembly. In MGI, assembly sequences are define as the interval between the start position of the first exon and the end position of the last exon of a gene as annotated by NCBI Gene or Ensembl. <!--See <A HREF="http://">?</A> for further information.-->
+</DD></P>
+
+
+
+
+
 <P><DT><B><A NAME="ATCC"></A>ATCC</B></DT>
 <DD>American Type Culture Collection. A large collection of microbial stocks, including microbes containing mammalian DNA segments. See the
 <A HREF="http://www.atcc.org/">ATCC Home Page</A> for further information.
@@ -3702,6 +3711,17 @@ are either <I>A<SUP>w</SUP></I>/<I>a</I> (white bellied agouti) or <I>a</I>/<I>a
 <A HREF="#regulatory_element">regulatory elements</A>, note the positions of
 <A HREF="#allele">allelic</A> variation, etc.
 </DD></P>
+
+<P><DT><B><A NAME="seqID"></A>Sequence ID, SeqID</B></DT>
+<DD>Sequence accession identifier. A unique alphanumeric character string that unambiguously identifies a sequence record in a database. Examples of MGI genomic 
+
+sequence providers are NCBI Gene Model and Ensembl Gene Model; examples of sequence IDs from these providers are 16590 and ENSMUSG00000053869, respectively.  See also:
+<ul>
+<LI><A HREF="#sequence">sequence</A></li>
+<LI><A HREF="#sequence_annotation">sequence annotation</A></LI>
+</ul>
+</DD></P>
+
 
 <P><DT><B><A NAME="sequencing"></A>Sequencing</B>
 <DD>Determination of the order of
