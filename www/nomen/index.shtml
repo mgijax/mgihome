@@ -1,9 +1,10 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
 <HTML>
 <HEAD>
-<TITLE><!--#include file='include/mgiversion.html'--> - Mouse Nomenclature Home Page</TITLE>
-</HEAD>
-<BODY BGCOLOR="#ffffff">
-<!--#include file="include/bodyStart.html"-->
+<TITLE><!--#include file='include/mgiversion.html'--> - Gene Family Information</TITLE> 
+</HEAD> 
+<BODY BGCOLOR="#ffffff"> <!--#include file="include/bodyStart.html"-->
+
 <TABLE WIDTH="100%" BORDER=0 CELLPADDING=2 CELLSPACING=1>
  <TR>
   <TD WIDTH="100%" BGCOLOR="#D0E0F0">
@@ -12,7 +13,7 @@
      <TD WIDTH="20%" VALIGN="center" ALIGN="left">&nbsp;</TD>
      <TD WIDTH="60%" ALIGN="center" VALIGN="center">
       <FONT COLOR="#000000" SIZE=5 FACE="Arial,Helvetica">
-       <a name="mginp">Mouse Nomenclature Home Page
+       Gene Family Information
       </FONT>
      </TD>
      <TD WIDTH="20%" VALIGN="center" ALIGN="center">&nbsp;</TD>
@@ -21,83 +22,59 @@
   </TD>
  </TR>
 </TABLE>
-     
- <FONT FACE="Arial,Helvetica">
-<p>The Mouse Genome Informatics Database is the authoritative source of official names for mouse genes, alleles, and strains. Nomenclature follows the rules and guidelines established by the <A HREF="inc.shtml">International Committee on Standardized Genetic Nomenclature for Mice</A> and is implemented through the <a href="#mgnc">Mouse Genomic Nomenclature Committee (MGNC)</a>.</p>
 
-<h4>Mouse Gene, Allele, and Mutation Nomenclature</h4>
-<SMALL>
+<HR> 
+<h4>Gene Family Reports</h4> 
 <UL>
-<LI><A HREF="gene.shtml">Rules for Nomenclature of Genes, Genetic Markers, Alleles, and Mutations in Mouse and Rat</A>&nbsp;(full guide)</li>
-&nbsp;
-<li><a name="bnrg"></a><a href="short_gene.shtml">Quick Guide to Nomenclature for Genes</a></li>
-&nbsp;
-<li><a href="allmut_quickhelp.shtml">Quick Guide to Nomenclature for Alleles and Mutations</a></li>
-&nbsp;
-<li>Search for existing mouse 
-<A HREF="<!--#include file='include/wi_url.html'-->/searches/marker_form.shtml">Genes and Markers</a></li>
-&nbsp;
-<LI><A HREF="checklist.shtml#check">Checklist</A> for Proposing a Locus Symbol</li>
-&nbsp;
-<li><A HREF="nomen_submit_form.shtml">Submit</A> a Proposed Locus
-Symbol</li>
-&nbsp;
-<li><A HREF="allmut_form.shtml">Submit</A> Mutant Allele Information</li>
-</ul></small>
-
-<h4>Mouse Strain Nomenclature</h4>
-<ul><small>
-<!--<li>Search for established <a href="">Strain Names</a><br><br>-->
-<LI><A HREF="strains.shtml">Mouse and Rat Strain Nomenclature Guidelines</a>&nbsp; (full guide)</li><SUB> &nbsp;</sub>
-<li><a href="../submissions/strains/index.shtml">Register</a> a new Mouse Strain Name</li><SUB> &nbsp;</sub>
-<li>Search or apply for a <a href="http://dels.nas.edu/ilar/codes.asp?id=codes">Laboratory Registration Code</a> with the Institute for Laboratory Animal Research (ILAR).</li>
-</small>
-</UL>
-
-<h4>Mouse Chromosome Aberration Nomenclature</h4>
-<ul><small> 
-<li><A HREF="anomalies.shtml">Chromosome Aberration Nomenclature Guidelines</a>
-</ul></small>
-
-<H4>Additional Nomenclature Resources</H4>
-<UL><small>
-
-<LI><A HREF="ftp://ftp/pub/reports/index.html#nomen">MGI Data and Statistical Reports</A>&nbsp; <br><I>Includes recent and archived mouse gene nomenclature updates</I></li>&nbsp;
-
-<LI>Search <A HREF="http://www.gene.ucl.ac.uk/cgi-bin/nomenclature/searchgenes.pl">Genew:  Human Gene Nomenclature Database Search Engine</A></li> &nbsp;
-
-<LI>Search <A HREF="http://rgd.mcw.edu/">RGD, Rat Genome Database</a></li>&nbsp;
-
-<LI><A HREF="http://jaxmice.jax.org/info/nomenclature.html">JAX&reg; Mice Nomenclature Articles and Announcements</a></li><SUB> &nbsp;</sub>
-
-
-<LI> <A HREF="../nomen/strain_129.shtml">Revision to Mouse Strain 129 Substrain Nomenclature</A></li><SUB> &nbsp;</sub>
-
-<LI><a href="genefamilies/index.shtml">MGI Gene Family Reports</a></li>
-
-<!--<LI><A HREF="">Table of former mutant symbols and their corresponding cloned gene symbols</A>  </li>-->
-</small></UL>
-
-<H4><a name="mgnc"></a>Mouse Genomic Nomenclature Committee (MGNC)</h4>
-<P>Standardized Genetic Nomenclature of Mice</a> to implement nomenclature standards for mice.</p>
-<small>
-<blockquote>
-
-
-Lois J. Maltais <br>
-
-Dr. Janan Eppig<br>
-Dr. Judith Blake<br>
-</blockquote>
-<P><A HREF="mailto:nomen@informatics.jax.org">E-mail: nomen@informatics.jax.org</A>&nbsp; &nbsp; &nbsp; Voice: &nbsp; 207-288-6429 &nbsp; &nbsp;&nbsp;Fax: 207-288-6132 </small>
-</P></font>
-<br><br>
-<HR>
-
-
+ <LI>MGI Links </li> 
+   <ul> 
+     <li><A HREF="adamt.shtml">A Disintegrin-like and Metalloprotease with Thrombospondin Type 1 Motif Family</a></li> 
+     <li><A HREF="adenyl_cyclase.shtml">Adenylate Cyclase Family</a></li>
+     <li><A HREF="alpha_actinin.shtml">Alpha Actinin Family</a></li>
+     <li><A HREF="anxa.shtml">Annexin Family</a></li> 
+     <li><A HREF="apoc.shtml">Apolipoprotein C Family</a></li> 
+     <li><A HREF="aquaporin.shtml">Aquaporin Family</a></li> 
+     <li><A HREF="cacng.shtml">Calcium Channel, Voltage-dependent, Gamma Subunit Family</a></li> 
+     <li><A HREF="calpain.shtml">Calpain Family</a></li> 
+     <li><A HREF="claudin.shtml">Claudin Family</a></li> 
+     <li><A HREF="collagen.shtml">Collagen Family</a></li> 
+     <li><A HREF="cyclic_nucleotide_phos.shtml">Cyclic Nucleotide Phosphodiesterase Superfamily</a></li> 
+     <li><A HREF="daam.shtml">Dishevelled Associated Activator of Morphogenesis Family</a></li>
+     <li><A HREF="e2f.shtml">E2f Transcription Factor Family</a></li>
+     <li><A HREF="ehd.shtml">EH-domain Containing Family</a></li>
+     <li><A HREF="fatty_acid.shtml">Fatty Acid Coenzyme A Ligase Family</a></li>
+     <li><A HREF="gabr.shtml">Gamma-Aminobutyric Acid Ionotropic Type A Receptor Family</a></li>
+     <li><A HREF="glutreceptor.shtml">Glutamate Receptor, Ionotropic Superfamily</a></li> 
+     <li><A HREF="glra.shtml">Glycine Receptor, Alpha Family</a></li>
+     <li><A HREF="gpc.shtml">Glypican Family</a></li>
+   <li><A HREF="gga.shtml">Golgi Associated, Gamma Adaptin Ear Containing, ARF Binding Protein Family</a></li>
+     <li><a href="irx.shtml">Iroquois Family</a></li>  
+     <li><a href="lgi.shtml">Leucine-rich Repeat LGI Family</a></li>  
+     <li><A HREF="opsin.shtml">Opsin Family</a></li> 
+    <li><A HREF="pip.shtml">Phosphatidylinositol-4-phosphate 5-Kinase Family</a></li>
+       <li><A HREF="protocadherin.shtml">Protocadherin Gamma Family</a></li>
+     <li><A HREF="scamp.shtml">Secretory Carrier Membrane Protein Family</a></li> 
+     <li><A HREF="syt.shtml">Synaptotagmin Family</a></li> 
+     <!-- <li><a href="septin.shtml">Septin Family</a></li>-->
+     <li><A HREF="trim.shtml">Tripartite Motif Family</a></li>
+   </ul><br>
+ <LI>External Links </li> 
+   <UL>
+    <LI><A HREF="http://www.icgeb.trieste.it/~p450srv/">Cyp 450 Family</A> </li> 
+    <LI><A HREF="http://cytokine.medic.kumamoto-u.ac.jp/CFC/index.html#Welcome">Cytokine Family</A>  </li> 
+    <!--<LI><A HREF="http://cbweb.med.harvard.edu/eph-nomenclature/">Eph Genes and Ligands</A></li> -->
+    <li><a href="hmgfamily.shtml">High Mobility Group (HMG) Chromosomal Proteins</a></li>
+    <!--<LI><A HREF="http://www.iephb.ru/hoxdb.html">Hox Family</A>--></li> 
+    <LI><A HREF="http://www.stanford.edu/~rnusse/wntwindow.html">Wnt Family: FRP/FrzB Genes</A> </li> 
+   </UL>
+ </ul> 
+<br>
+<hr>
 
 <!--#include file="include/bodyStop.html"--></BODY></HTML>
-<!--
+ <!--
+
+
 Warranty Disclaimer and Copyright Notice
 
  THE JACKSON LABORATORY MAKES NO REPRESENTATION ABOUT THE SUITABILITY OR 
