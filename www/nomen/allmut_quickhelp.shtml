@@ -1,6 +1,6 @@
 <HTML>
 <HEAD>
-<TITLE>Allele and Mutant Quick Nomen</TITLE>
+<TITLE>Allele and Mutant Quick Nomenclature Guide</TITLE>
 </HEAD>
 <BODY BGCOLOR=#FFFFFF>
 <!--#include file="include/banner.html"-->
@@ -13,8 +13,8 @@
 A new heritable phenotypic allele may be an allele of a known gene or an allele
 of a previously unknown gene.  
 <UL>
-<LI> if an allele of a known gene, an allele symbol and allele name will be assigned
-<LI> if an allele of an unknown gene, a gene symbol and gene name will be assigned
+<LI> if an allele of a known gene, an allele symbol and allele name will be assigned.
+<LI> if an allele of an unknown gene, a gene symbol and gene name will be assigned.
 </UL>
 <B> Example:</B> You discover a new spontaneous phenotypic allele that looks 'shaker like,' 
 but with a somewhat milder phenotype.  
@@ -23,9 +23,11 @@ but with a somewhat milder phenotype.
 <A HREF="<!--#include file='include/wi_url.html'-->searches/marker.cgi?36272">
 Myo15</A> gene.
  It is assigned the allele symbol Myo15<SUP>sh2m</SUP>, where the 'sh2m' designates
-  it as an allele and the name 'shaker 2 mild' becomes its allele name.<P>
+  it as an allele, and the name 'shaker 2 mild' becomes its allele name.<P>
 <LI> Case 2, above: Upon testing, it is determined to be an allele of a new gene; 
-it is not allelic to other alleles with similar phenotype. It is assigned a new gene symbol 'shl' and named 'shaker like'. Once this gene is cloned or functionally identified, the shl designation will become an allele designation.  
+it is not allelic to other alleles with similar phenotype. It is assigned a new gene symbol 'shl' 
+and named 'shaker like'. Once this gene is cloned or functionally identified, the shl designation 
+will become an allele designation.  
 For instance, if the gene is determined to be Xyz, then this allele becomes Xyz<SUP>shl</SUP>.
 </UL>
 <BR>
@@ -33,13 +35,14 @@ For instance, if the gene is determined to be Xyz, then this allele becomes Xyz<
 <H3>Basic rules for naming alleles </H3>
 <UL>
 <LI>Gene and allele designations are italicized in published articles.<BR><BR>
-<LI>The current list of approved <A HREF="http://www4.nas.edu/cls/afr.nsf">lab codes</A> are 
+<LI>The current list of approved <A HREF="http://www4.nas.edu/cls/afr.nsf">lab codes</A> is 
 available from ILAR (Institute of Laboratory Animal Resources).<BR><BR>
 <LI>For more detail and additional special case rules, see our
 <A HREF="allmut_help.shtml">Names and Symbols for Mutant Alleles</A> page.
 </UL>
 <BR>
-For designating mutants that are alleles of <B>new</B> genes (Case 2 above), see <A HREF="checklist.shtml">guidelines for proposing a locus symbol</A>
+For designating mutants that are alleles of <B>new</B> genes (Case 2 above), 
+see <A HREF="checklist.shtml">guidelines for proposing a locus symbol</A>.
 <P>
 For designating mutants that are alleles of <B>known</B> genes, the basic guidelines are:
 <P>
@@ -72,11 +75,13 @@ is the allele symbol for the <I>dominant</I> mottled allele of the
 <LI>Allele designations for <B>induced</B> and <B>targeted</B> alleles of <B>known</B> genes... <BR> 
 <UL><BR>
 <LI> Tg(YYY)#Zzz for <B>transgenic alleles</B>, where YYY is the inserted gene, 
-# is the serial number, and Zzz the lab code for the laboratory. <EM>Example:</EM> 
+# is the serial number, and Zzz the lab code for the laboratory.  <EM>Example: </EM> 
 <A HREF="<!--#include file='include/wi_url.html'-->searches/allele.cgi?1905">
-Cspg2<SUP>Tg(Hoxa1/Lacz)1Chm</SUP></a>, the Tg(Hoxa1)1Chm allele of Cspg2. A construct containing
-the mouse homeobox a1 
-(Hoxa1) was inserted by microinjection, the first reported by Corey H. Mjaatvedt (Chm).
+Cspg2<SUP>Tg(Hoxa1)1Chm</SUP></a>, the Tg(Hoxa1)1Chm allele of 
+<A HREF="<!--#include file='include/wi_url.html'-->searches/marker.cgi?22783">Cspg2</a>. 
+A construct containing the mouse homeobox a1 
+<A HREF="<!--#include file='include/wi_url.html'-->searches/marker.cgi?9885">(Hoxa1)</a> was 
+inserted by microinjection, the first reported by Corey H. Mjaatvedt (Chm).
 This transgene was found before it was associated with any known gene.  Later, it was identified as an 
 allele of 
 <A HREF="<!--#include file='include/wi_url.html'-->searches/marker.cgi?22783">Cspg2</a>
