@@ -1,7 +1,9 @@
 <HTML><HEAD>
 <TITLE>MGI 2.8 - Gene Ontology Classifications</TITLE>
 </HEAD><BODY BGCOLOR="#FAFAD2">
-<A HREF="<!--#include file='include/go_url.html'-->"TARGET="_top"><H2 align=center>Browse GO Terms</H2></A>
+<A HREF="<!--#include file='include/go_url.html'-->"TARGET="_top">
+
+<H2 align=center>Browse GO Terms</H2></A>
 <SMALL>
 GO terms are grouped into three broad categories:
 <DL>
@@ -24,7 +26,7 @@ GO terms are grouped into three broad categories:
 <BR>
 For more details, see <A HREF = "http://www.geneontology.org/doc/GO.doc.html" TARGET="_top">General Documentation</A> at the Gene Ontology Consortium site. <Br><br>
 
-<a href="ftp://www.informatics.jax.org/pub/informatics/reports/gene_association.mgi" TARGET=_top>Tab-delimited file of MGI Marker-GO Associations</a><br>
+<a href="<!--#include file='include/ftp_url.html'-->pub/reports/gene_association.mgi">Tab-delimited file of MGI Marker-GO Associations</a><br>
 <br>
 
 <!--
