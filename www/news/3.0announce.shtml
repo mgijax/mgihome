@@ -26,25 +26,44 @@
 </TABLE>
 
 <h2>MGI is pleased to announce its 3.0 release.</h2>
- <P>This is a major release integrating vast amounts of sequence data with rest of the biological information already in MGI.
+ <P>This is a major release integrating vast amounts of sequence data with the biological information already in MGI.</p>
+
+<P>All mouse sequences from GenBank, RefSeq, Swiss-Prot, DoTS, and the TIGR and NIA mouse gene indices are integrated into MGI to enable powerful queries from the new <a href="<!--#include file='include/wi_url.html'-->/searches/sequence_form.shtml">Mouse Sequence Query Form</a>. You can query by 
+attributes, such as length, provider, but also 
+by information MGI has about the clones the sequences were derived from, 
+and the genes the sequence have been associated to. </P>
+
+<P>You can query for sequences by attributes, such as length or provider, and also 
+by information MGI has about the clones the sequences were derived from, 
+and the genes the sequences have been associated to.  </p>
+
+<P>Using our curated associations between mouse genes/markers and sequences, 
+you can search for sequences by information about these genes/markers.  
+This includes gene/marker nomenclature, map position, gene function 
+(GO annotations and InterPro domains), expression (tissue and developmental 
+stage), and phenotypes of mutant alleles.</P>
 
 
-<P>We now maintain data on all mouse sequences from GenBank, RefSeq, Swiss-Prot,
-DoTS, and the TIGR and NIA mouse gene indices. Using our curated associations
-between mouse genes/markers and sequences, you can search for sequences by
-all of our gene information. This includes gene nomenclature, map position, gene function (GO terms and Interpro domains), expression, and phenotypes. Integration is via source data (such as strain, tissue, library, cell line, sex) and through associations to other MGI objects (such as genes and clones). </P>
+<P>Source information about the clones that the sequences are derived 
+from, such as strain, tissue, or library, is carefully translated into controlled vocabularies in MGI.  This enables powerful querying, since 
+authors often use multiple terms to specify a strain or tissue.  </P>
+
+<P>An example of the functionality of the new Mouse Sequence 
+Query Form is to report all GenBank RNA sequences derived from 
+embryos associated to genes on Chr. 9 annotated with GO terms 
+containing the words <I>growth factor</I>.  This query returns four sequences 
+that are associated to different genes (<I>Madh3, Bmp5, Tgfbr2,</I> and <I>Nrg4</I>).
+</P>
+
+<P>You can view the sequences returned from a query in a Web browser as a table, written to a tab-delimited text file, or in a file of FASTA-formatted sequences.  From the table, you can download selected sequences in FASTA format, or forward them to MouseBLAST. You can customize either the table display or the tab-delimited text file so that it includes only those you are most interested in.
 
 
-<P>We translate the source information for all the sequences to our controlled vocabularies for library name, strain, tissue, cell line, and
-sex. This means that you can use the <a href="<!--#include file='include/wi_url.html'-->/searches/sequence_form.shtml">Mouse Sequence Query Form</a> to search for sequences by combining source attributes with gene information. For example, you can enter <I>C57BL/6J</I> in the Strain/Species field, select <I>RNA</I> in the Type field, and <I>6</I> in the Map Position field and get back all RNA sequences located on chromosome 6 for every synonym of this strain. 
+<P>We have enhanced the MouseBLAST output so that you can easily download matching sequences in FASTA format or forward them to MouseBLAST. Information about the genes and markers that matching sequences are associated with now include the chromosome they have been mapped to. Additionally, you can now re-BLAST sequences directly from MouseBLAST output.</p>
 
-<P>Query reports return information about the type, length, mouse strain, and description of the sequences as well as data about any MGI curated clones/probes associated to the sequence such as segment name, clone collection, and clone ID. 
 
-<P>From your list of matches, you can select specific sequences and download them in tab-delimited or FASTA format. </p>
 
-<P>You can also can select type, length, and strain information from the Sequences section of MGI gene detail pages and download these in FASTA format or forward them to MouseBLAST.</P>
 
-<P>MouseBLAST query results for sequences or sequence IDs contain enhanced links to MGI mouse gene records associated with any matches. You can also see the chromosome to which the gene is mapped. And, you can now re-BLAST sequences directly from MouseBLAST output.</p>
+
 
 <hr>
 <!--#include file="include/bodyStop.html"-->
