@@ -25,7 +25,7 @@ import formMailer
 
 SimpleVocab.set_sqlFunction (homelib.sql)
 
-submit_addr = 'mutants@informatics.jax.org'	# MGD Allele and Mutant E-mail
+submit_addr = 'jw@informatics.jax.org'	# MGD Allele and Mutant E-mail
 
 # developer override for mailtarget
 dev_email = config.lookup ('CGI_MAILTARGET')
@@ -38,7 +38,7 @@ required_fields = [ 'lastname', 'firstname', 'email' ]
 # maps from actual fieldnames to the corresponding label:
 labels = {
 	'lastname'	: 'Last name',			# Contact Details
-	'firstname'	: 'First name &amp; middle name(s)',
+	'firstname'	: 'First name &amp; middle initial(s)',
 	'email' 	: 'E-mail address',
 	'organization'	: 'Institute/Organization',
 	'address1'	: 'Address',
@@ -50,55 +50,60 @@ labels = {
 	'phone'		: 'Telephone Number',
 	'fax'		: 'Fax Number',
 
-	'citations'	: 'Citations',			# References
+	'published' 	: 'Currently Published',	# References
+	'publicize'	: 'Make Public',
+	'citations'	: 'Citations',			
 	'alleleURL'	: 'Allele URL',
 
-	'status'	: 'Status Requested',		# Status
 
-	'phenoslim'	: 'Phenotypic Categories',	# Phenotype
-	'othercategory'	: 'Other Classification',
-	'description'	: 'Description',
+	'description'	: 'Description',		# Phenotype
 	'remarks'	: 'Other Remarks',
 
-	'genesymbol'	: 'Gene Symbol',		# Allele or Mutant
-	'allele'	: 'Allele Designation',
+	'genesymbol'	: 'Gene Symbol',		# Nomenclature
+	'allele'	: 'Allele Symbol',
 	'allelename'	: 'Allele Name',
-	'newgenesymbol'	: 'Proposed Gene Symbol',
-	'newgenename'	: 'Proposed Gene Name',
 	'synonyms'	: 'Other Names/Synonyms',
+	'nomenHelp'	: 'Nomenclature Help Requested',
+
+							# Strain
 	'strainMutation': 'Strain Background (where mutation arose)',
 	'strainPhenotype': 'Strain Background (where phenotype analyzed)',
 	'strainInfo'	: 'Other Strain Information',
+	'strainHelp'	: 'Genetic Background Help Requested',
+
+							# Mutation
 	'method'	: 'Method of Allele Generation',
 	'othermethod'	: '"Other" Specification',
 	'promoter'	: 'Transgene Promoter',
 	'celline'	: 'ES Cell Line',
 	'mode'		: 'Mode of Inheritance',
-	'chromosome'	: 'Chromosome Location',
+	'othermode'	: '"Other" Mode of Inheritance',
+
+
+	'chromosome'	: 'Chromosome Location',	# Mapping data
 	'location'	: 'Other Genome Location Information',
 	}
 
 # order in which fields should be included in the e-mail.  This is a list of
 # tuples, where each tuple is: (section name, [ fieldnames in order ])
 field_order = [
+	('Nomenclature',
+		['genesymbol', 'allele', 'allelename','synonyms','nomenHelp']),
+	('About this Mutation',
+		['method', 'othermethod', 'promoter', 'celline',
+		'mode', 'othermode','chromosome','location']),
+	('Genetic Background',
+		['strainMutation', 'strainPhenotype', 'strainInfo', 
+		'strainHelp',]),
+	('Phenotype',
+		['description', 'remarks']),
+	('References',
+		[ 'published', 'publicize', 'citations', 'alleleURL' ]),
 	('Contact Details',
 		[ 'lastname', 'firstname', 'email', 'organization',
 			'address1', 'address2', 'city', 'state', 'zip',
 			'country', 'phone', 'fax' ]),
-	('Allele or Mutant',
-		['genesymbol', 'allele', 'allelename',
-		'newgenesymbol', 'newgenename', 'synonyms',
-		'strainMutation', 'strainPhenotype', 'strainInfo',
-		'method', 'othermethod', 'promoter', 'celline',
-		'mode', 'chromosome', 'location']),
-	('Phenotype',
-		['phenoslim', 'othercategory', 'description', 'remarks']),
-	('Status',
-		['status']),
-	('References',
-		[ 'citations', 'alleleURL' ]),
 	]
-
 # error message string for missing required fields
 err_message = '''These required fields are missing: %s<BR>
 	Please go back and try again.<P>'''

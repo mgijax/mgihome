@@ -37,10 +37,10 @@ Mutation Submission Form
 <H3>Naming this Mutation:</H3>
 
 Suggested <B>symbol</B> for this mutation: 
-<INPUT TYPE="text" NAME="allelesymbol" SIZE=20> 
+<INPUT TYPE="text" NAME="allele" SIZE=20> 
 <BR><BR>
 Suggested <B>name</B> for this mutation: 
-<INPUT TYPE="text" NAME="genesymbol" SIZE=35> 
+<INPUT TYPE="text" NAME="allelename" SIZE=35> 
 <BR><BR>
 Is this mutation an allele of a <B>known gene</B>?  <BR>
 <DD>If so, enter the <B>gene symbol</B>: 
@@ -57,7 +57,7 @@ Nicknames, synonyms for this mutant allele  <INPUT TYPE="text" NAME="synonyms" S
 <BR><BR>
 
 <LI><B>If you need assistance with nomenclature:</B><BR>
- <INPUT TYPE="checkbox" NAME="status" VALUE="NomenHelp">&nbsp; Click here and 
+ <INPUT TYPE="checkbox" NAME="nomenHelp" VALUE="true">&nbsp; Click here and 
 continue to the <B>"About this Mutation"</B> section below.<BR>
 <DD>We will contact you about nomenclature for this mutation.
 </DL>
@@ -91,7 +91,7 @@ continue to the <B>"About this Mutation"</B> section below.<BR>
 <INPUT TYPE="radio" NAME="mode" VALUE="recessive"> recessive  
 <INPUT TYPE="radio" NAME="mode" VALUE="Xlink"> X-linked <BR>
 <INPUT TYPE="radio" NAME="mode" VALUE="other"> other, please specify:  
-<INPUT TYPE="text" NAME="other" SIZE=30><BR>
+<INPUT TYPE="text" NAME="othermode" SIZE=30><BR>
 </DL>
 
 
@@ -103,9 +103,11 @@ Other Genome Location Information (cM, cR, or cytogenetic location; molecular lo
 <BR><BR>
 <HR>
 <H3> Genetic Background:</H3>
-Strain/Genetic Background on which the mutation arose:    <INPUT TYPE="text" NAME="strainMutation" SIZE=50>
+Strain/Genetic Background on which the mutation arose:
+<INPUT TYPE="text" NAME="strainMutation" SIZE=50>
 <br>
-Strain/Genetic Background on which the phenotype was analyzed:    <INPUT TYPE="text" NAME="strainPhenotype" SIZE=50>
+Strain/Genetic Background on which the phenotype was analyzed:
+<INPUT TYPE="text" NAME="strainPhenotype" SIZE=50>
 <br><br>
 Other Strain/Background Information (e.g. specify crosses):  
 Click here for an <A HREF="alleleform_strainex.shtml">example.</A><br>   
@@ -113,7 +115,9 @@ Click here for an <A HREF="alleleform_strainex.shtml">example.</A><br>
 <BR>
 <DL>
 <DD><LI><B>If you need assistance with the Genetic Background Section</B><BR> 
-<INPUT TYPE="checkbox" NAME="status" VALUE="NomenHelp">&nbsp; click here and 
+<INPUT TYPE="checkbox" NAME="strainHelp" VALUE="yes">&nbsp; click
+here
+and 
 continue to the <B>"Phenotype"</B> section below.<BR>
 <DD>We will contact with you about the genetic background information for this mutation.
 </DL>
@@ -139,14 +143,16 @@ Other remarks (gene function/pathway, available clones, GenBank numbers, etc.):<
 Is this information published? <BR>
 <DL>
 <DT>
-<DD><INPUT TYPE="radio" NAME="status" VALUE="Yes">yes&nbsp;
-<DD><INPUT TYPE="radio" NAME="status" VALUE="No">no&nbsp; 
+<DD><INPUT TYPE="radio" NAME="published" VALUE="Yes">yes&nbsp;
+<DD><INPUT TYPE="radio" NAME="published" VALUE="No">no&nbsp; 
 </DL>  
 If no, would you prefer:<BR>
 <DL>
 <dt>
-<DD><INPUT TYPE="radio" NAME="Makepublic" VALUE="makepublic">data be made public at the Mouse Genome Informatics Web site now <BR>
-<INPUT TYPE="radio" NAME="Makepublic" VALUE="private">data be kept private until publication
+<DD><INPUT TYPE="radio" NAME="publicize" VALUE="makepublic">data be made
+public at the Mouse Genome Informatics Web site now <BR>
+<INPUT TYPE="radio" NAME="publicize" VALUE="private">data be kept private
+until publication
 </DL>
 <BR>
 Please provide the references, or authors & descriptive title for unpublished data:<BR>
