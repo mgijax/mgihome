@@ -2,6 +2,9 @@
 
 import config
 import homelib
+import SimpleVocab
+
+SimpleVocab.set_sqlFunction (homelib.sql)
 
 def listToFile (str_list, filename):
 	print "writing %s" % filename
@@ -32,6 +35,11 @@ def main ():
 		'../www/include/ratmap_url.html')
 	stringToFile (config.lookup ('GLOSSARY_URL'), \
 		'../www/include/glossary_url.html')
+
+	vocab = SimpleVocab.PhenoSlimVocab()
+	listToFile (SimpleVocab.getSelectionList (vocab,
+		url = config.lookup('WI_URL') + 'userdocs/phenoslim.shtml'),
+		'../www/include/phenoslim_select.html')
 	return
 
 if __name__ == '__main__':
