@@ -24,21 +24,18 @@
   </TD>
  </TR>
 </TABLE>
-<blockquote>
-<p>MGI is pleased to announce its 2.97 release. The primary features of the release are enhancements to our Gene Expression Database (GXD).<br>
-<blockquote>
 
-The major changes for 2.97 are:<br>
+<p>MGI is pleased to announce its 2.97 release. The primary features of the release are enhancements to our Gene Expression Database (GXD). <br>
 
   <ul>
   <LI><A HREF="<!--#include file='include/wi_url.html'-->/searches/expression_form_exp.shtml">Gene Expression Data Expanded Query Form</A><br>
 This new form lets you search for genes expressed in some anatomical structures and/or developmental stages but not in others. </li><br>
 
-<li><A HREF="<!--#include file='include/wi_url.html'-->/searches/expression_form_AD.cgi">Anatomical Dictionary Browser Query Refiner</A><br>
-This new form lets you narrow your searches by entering additional parameters, based upon expression results from the standard <A HREF="<!--#include file='include/wi_url.html'-->/searches/anatdict_form.shtml">Mouse Anatomical Dictionary Browser</a> form.</li><br>
-
 <LI><B>Anatomical Dictionary Browser Term Detail</B><BR>
 This page now provides a link to the full anatomical hierarchy of the Mouse Anatomical Dictionary. You can scroll the resulting display and see immediately where your search term falls by stage and structure in the Dictionary. Click <a href="http://devwww.informatics.jax.org/~jsb/wi/searches/anatdictTree.cgi?structureKey=297&stage=12#TOP">here</a> for a sample search on the term <i>heart</i>.</li><br>
+
+<li>Anatomical Dictionary Browser Query Refiner</A><br>
+This new form lets you narrow your searches by entering additional parameters, based upon expression results from the standard <A HREF="<!--#include file='include/wi_url.html'-->/searches/anatdict_form.shtml">Mouse Anatomical Dictionary Browser</a> form. Access to the Query Refiner is from an Anatomical Browser Term Detail page.<br><br>
 
 <li><B><I>in situ</I> reporter (knock in)</B><br>
 We added this assay type to the <A HREF="<!--#include file='include/wi_url.html'-->/searches/expression_form.shtml">Gene Expression Data Query Form</a> and the 
@@ -51,8 +48,8 @@ We added this assay type to the <A HREF="<!--#include file='include/wi_url.html'
 Most of our query summary reports now feature a new section at the top of the page. A box lists the        query report title, the fields you selected on the form, your sorting and limiting options, and all the values that your search returns. In general, fields are listed in the same order as they appear on the query form. 
 <!--although <b>Max number of items returned</b> appears last. (* Marker, Allele, Polymorphisms, Orthology, Mapping Data, Probes and Clones, Expression, and cDNA Clone summaries).-->
 </UL>
-</blockquote>
-</blockquote>
+
+
 <br><br>
 <hr>
 <!--#include file="include/bodyStop.html"-->
