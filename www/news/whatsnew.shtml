@@ -8,7 +8,7 @@
 <Body Bgcolor="#ffffff">
 <Center>
 <H1><FONT COLOR="#FF0111">What's New?</FONT></H1>
-<H3>Last Updated May 26, 2000</H3>
+<H3>Last Updated July 17, 2000</H3>
 </Center>
 
 <DL>
@@ -80,11 +80,18 @@ You also have the option to return results from this form as
 <b>tab-delimited text</b>.</DD>
 <!----------------->
 
+<h3><dt><A HREF="<!--#include file="include/wi_url.html"-->userdocs/glossary.shtml">MGI Glossary</a></dt></h3>
+<DD>A
+<A HREF="<!--#include file="include/wi_url.html"-->userdocs/glossary.shtml">glossary</a> of genetic terms has been added. Genetic terms in the
+<A HREF="<!--#include file="include/wi_url.html"-->userdocs/helpdocs_menu.shtml">help documents</A> are linked to their definitions in the glossary.</DD>
+
+<!----------------->
+
 <h3><dt>Primary Reference For Sequence IDs</dt></h3>
 <DD>An MGI marker record may include a list of related Sequence IDs. Most often, this association is made via molecular segments whose sequence is known and which have been mapped to the given mouse marker.  This association of marker and sequence is reported in the literature. Now, the reference supporting this association is displayed next to the Sequence ID in the marker detail record.</DD>
 <!----------------->
 
-<h3> <dt><A HREF="http://www.informatics.jax.org/mgihome/lists/lists.shtml">MGI E-Mail List Service</A></dt></h3>
+<h3> <dt><A HREF="../lists/lists.shtml">MGI E-Mail List Service</A></dt></h3>
 <!-- this is the link to the lyris MGI-list page. -->
 <DD>Use the new web interface to MGI-LIST and RAT-LIST to read or send messages, subscribe or unsubscribe from a list, or modify your subscriber options.</DD>
 <!----------------->
