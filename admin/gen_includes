@@ -1,0 +1,20 @@
+#!./python
+
+import config
+import homelib
+
+def listToFile (str_list, filename):
+	print "writing %s" % filename
+	fp = open (filename, 'w')
+	for item in str_list:
+		fp.write ('%s\n' % item)
+	fp.close()
+	return
+
+def main ():
+	listToFile (homelib.banner(), '../www/include/banner.html')
+	listToFile (homelib.footer(), '../www/include/footer.html')
+	return
+
+if __name__ == '__main__':
+	main()
