@@ -40,3 +40,6 @@ DBSERVER	MGD_PUBLIC
 DATABASE	pub_1
 DBUSER		mgd_public
 DBPASSWORD	mgdpub
+
+# URL to NCBI's Entrez for Genbank sequence IDs
+GB_URL		http://www.ncbi.nlm.nih.gov/htbin-post/Entrez/query?db=n&form=6&uid=
