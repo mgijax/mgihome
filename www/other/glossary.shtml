@@ -147,7 +147,7 @@ The term is also used loosely for any sequence of actions (which may or may not 
 <A HREF="#gene_symbol">symbol</A> or 
 <A HREF="#gene_name">name</A> for part of the sequence of a known 
 <A HREF="#gene">gene</A> that resembles names for other 
-<A HREF="#anonymous_DNA">anonymous DNA segments</A>. For example, 
+<A HREF="#anonymous_DNA">anonymous DNA</A> segments. For example, 
 <A HREF="<!--#include file='include/wi_url.html'-->/searches/accession_report.cgi?id=MGI:100358">D6Mit236</A> is an alias for 
 <A HREF="<!--#include file='include/wi_url.html'-->/searches/accession_report.cgi?id=MGI:88388">Cftr</A>.
 
@@ -226,7 +226,7 @@ The term is also used loosely for any sequence of actions (which may or may not 
 <P><DT><B><A NAME="annotation">Annotation</A></B><DD>Note added to a document to provide additional needed information. <BR>See also 
 <A HREF="#sequence_annotation">Sequence Annotation</A>.
 
-<P><DT><B><A NAME="anonymous_DNA">Anonymous DNA segment</A></B><DD>A segment of 
+<P><DT><B><A NAME="anonymous_DNA">Anonymous DNA</A> segment</B><DD>A segment of 
 <A HREF="#DNA">DNA</A> not known to correspond to a named 
 <A HREF="#gene">gene</A> that can be used as a 
 <A HREF="#marker">marker</A> in the construction of 
@@ -285,7 +285,8 @@ digits in the limb bud) or as a means of preserving normal function (e.g., in re
 <A HREF="../nomen/">International Nomenclature Committee</A>.
 
 <P><DT><b><A NAME="arrayed_library"></A>Arrayed Library</b><dd>Individual primary recombinant <A HREF="#clone">clones</a> (hosted in <A HREF="#phage">phage</a>, <A HREF="#cosmid">cosmid</a>, 
-<A HREF="#YAC">YAC</a>, or other <A HREF="#vector">vector</a>) that are placed in two-dimensional arrays in microtiter dishes. Each primary clone can be identified by the identity of the plate and the clone location (row and column) on that plate. Information gathered on individual clones from various experimental techniques is entered into a <A HREF="#relational_db">relational database</a> and used to construct <A HREF="#physical_map">physical</a> and <A HREF="#genetic_map">genetic</a> 
+<A HREF="#YAC">YAC</a>, or other <A HREF="#vector">vector</a>) that are placed in two-dimensional arrays in microtiter dishes. Each primary clone can be identified by the identity of the plate and the clone location (row and column) on that plate. Information gathered on individual clones from various experimental techniques is entered into a <A HREF="#relational_db">relational database</a> and used to construct <A HREF="#physical_map">physical</a> and 
+<A HREF="#genetic_map">genetic</a> 
 <A HREF="#linkage_map">linkage maps</a> simultaneously; clone identifiers serve to interrelate the multilevel maps. See also <A HREF="#library">library</a>.
 
 <P><DT><b><A NAME="ascii"></A>ASCII</b><dd>American Standard Code for Information Interchange. The basis of character sets used in almost all present-day computers. 
@@ -645,8 +646,7 @@ For example, searching for all markers of the type "Gene" on Chromosome 2 is equ
 
 <P><DT><B><A NAME="congenic">Congenic</A></B><DD> An 
 <A HREF="#inbred_strain">inbred strain</A> of mouse that contains a small genetic region (ideally a single
-<A HREF="#gene">gene</A>)from another strain, but which is otherwise identical to the original 
-<A HREF="#inbred_strain">inbred strain</A>. Congenic strains are derived by backcrossing to a parental inbred strain for at least ten generations while selecting for 
+<A HREF="#gene">gene</A>)from another strain, but which is otherwise identical to the original inbred strain. Congenic strains are derived by backcrossing to a parental inbred strain for at least ten generations while selecting for 
 <A HREF="#heterozygous">heterozygosity</A> at a particular 
 <A HREF="#locus">locus</A>.
 <A HREF="http://jaxmice.jax.org/jaxmice-cgi/jaxmicedb.cgi?objtype=pricedetail&stock=000140">A.BY-H2<SUP>b</SUP> H2-T18b/SnJ</A>is a congenic strain. <BR>See also the 
@@ -1442,7 +1442,7 @@ This document is written in HTML.<BR>You can view the HTML source code for this 
 
 <P><DT><B><A NAME="inbred_strain">Inbred Strain</A></B><DD>A strain that is essentially 
 <A HREF="#homozygous">homozygous</A> at all loci. In mice, a strain produced from brother-sister matings for at least 20 sequential generations. C57BL/6J is a widely-used 
-<A HREF="#inbred_strain">inbred strain</A> of mouse. <BR>See also the 
+inbred strain of mouse. <BR>See also the 
 <A HREF="../nomen/strains.shtml#inbred_strains">Rules for Nomenclature of Mouse and Rat Strains</A>.
 
 <P><DT><B><A NAME="incross">Incross</A></B><DD>A 
@@ -1646,7 +1646,7 @@ or a characteristic morphology.<br>3. In MGI, a Marker is an object for which un
 
 <A HREF="#gene">Gene</a>, 
 <A HREF="#DNA_segment">DNA Segment</a>, 
-<A HREF="#cytogenetic_marker">Cytogenetic Marker, 
+<A HREF="#cytogenetic_marker">Cytogenetic Marker</a>, 
 <A HREF="#QTL">QTL</a>, 
 <A HREF="#pseudogene">Pseudogene</a>,
 <A HREF="#bac_end">BAC/YAC end</a>,
