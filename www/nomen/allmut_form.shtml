@@ -1,6 +1,6 @@
 <HTML>
 <HEAD>
-<TITLE>Allele and New Mutant Submission Form</TITLE>
+<TITLE>Mutation Submission Form</TITLE>
 </HEAD>
 <BODY BGCOLOR="#ffffff">
 <TABLE WIDTH="100%" BORDER=0 CELLPADDING=0 CELLSPACING=0>
@@ -9,7 +9,7 @@
      <TR><TD WIDTH="20%" VALIGN="center" ALIGN="left"><A HREF="<!--#include file='include/wi_url.html'-->" border=0><IMG SRC="../images/mgi_logo_small.jpg" border=0 ALT="MGI"></A></TD>
       <TD WIDTH="60%" ALIGN="center" VALIGN="center" BGCOLOR="#ffffff">
        <FONT COLOR="#000000" SIZE=5 FACE="Arial,Helvetica">
-Allele and New Mutant Submission Form
+Mutation Submission Form
        </FONT></TD><TD WIDTH="20%" VALIGN="center" ALIGN="center" BGCOLOR="#ffffff">&nbsp;</TD></TR>
 <TR BGCOLOR="blue"><TD COLSPAN=3><FONT face="Arial,Helvetica" color="#ffffff">
     <B>&nbsp;Mouse Genome Informatics</B></TD></TR>
@@ -21,9 +21,8 @@ Allele and New Mutant Submission Form
 <HR>
 
 
-<H2>Mutation Submission Form</H2>
 <ul>
-<li>Use this submission form to describe spontaneous, induced, or genetically engineered mutations. 
+<li>Use the Mutation Submission Form to describe spontaneous, induced, or genetically engineered mutations. 
 <li>Submit information only about those mutations shown to be heritable.  
 <li>Please fill in appropriate information. 
 <li>Click <b>Submit</b> at the bottom of the form to send this information to MGI for processing.
@@ -37,18 +36,19 @@ Allele and New Mutant Submission Form
 <HR>
 <H3>Naming this Mutation:</H3>
 
-Suggested <B>symbol</B> for this mutation 
+Suggested <B>symbol</B> for this mutation: 
 <INPUT TYPE="text" NAME="allelesymbol" SIZE=20> 
 <BR><BR>
-Suggested <B>name</B> for this mutation 
+Suggested <B>name</B> for this mutation: 
 <INPUT TYPE="text" NAME="genesymbol" SIZE=35> 
 <BR><BR>
 Is this mutation an allele of a <B>known gene</B>?  <BR>
-<DD>If so, enter the <B>gene symbol</B> 
+<DD>If so, enter the <B>gene symbol</B>: 
 <INPUT TYPE="text" NAME="genesymbol" SIZE=15> 
-(check the gene symbol by <A HREF=
+(Check the gene symbol by 
+<A HREF=
 "<!--#include file='include/wi_url.html'-->searches/marker_form.shtml
-">searching MGI</A>)<BR><BR>
+">searching MGI</A>.)<BR><BR>
 Nicknames, synonyms for this mutant allele  <INPUT TYPE="text" NAME="synonyms" SIZE=55>
 <BR><BR>
 <BR>
@@ -56,8 +56,8 @@ Nicknames, synonyms for this mutant allele  <INPUT TYPE="text" NAME="synonyms" S
 <LI>For hints on mutant allele nomenclature, see <A HREF="allmut_quickhelp.shtml">Quick Guide to Nomenclature for Alleles and Mutations</A>.
 <BR><BR>
 
-<LI><B>If you need assistance with nomenclature</B><BR>
- <INPUT TYPE="checkbox" NAME="status" VALUE="NomenHelp">&nbsp;  click here and 
+<LI><B>If you need assistance with nomenclature:</B><BR>
+ <INPUT TYPE="checkbox" NAME="status" VALUE="NomenHelp">&nbsp; Click here and 
 continue to the <B>"About this Mutation"</B> section below.<BR>
 <DD>We will contact you about nomenclature for this mutation.
 </DL>
@@ -76,11 +76,11 @@ continue to the <B>"About this Mutation"</B> section below.<BR>
 <INPUT TYPE="radio" NAME="method" VALUE="conditional">conditional/targeted  
 <INPUT TYPE="radio" NAME="method" VALUE="other"> other
 <BR><BR>
-<DD>If you chose "other," please specify  
+<DD>If you chose "other," please specify:  
 <INPUT TYPE="text" NAME="othermethod" SIZE=25>
-<DD> For transgenes, please specify transgene promoter 
+<DD> For transgenes, please specify transgene promoter:
 <INPUT TYPE="text" NAME="promoter" SIZE=25>
-<DD> For targeted mutations, please specify ES cell line used 
+<DD> For targeted mutations, please specify ES cell line used:
 <INPUT TYPE="text" NAME="celline" SIZE=25>
 </DL>
 <DL>
@@ -90,7 +90,7 @@ continue to the <B>"About this Mutation"</B> section below.<BR>
 <INPUT TYPE="radio" NAME="mode" VALUE="semidominant"> semidominant 
 <INPUT TYPE="radio" NAME="mode" VALUE="recessive"> recessive  
 <INPUT TYPE="radio" NAME="mode" VALUE="Xlink"> X-linked <BR>
-<INPUT TYPE="radio" NAME="mode" VALUE="other"> other, please specify  
+<INPUT TYPE="radio" NAME="mode" VALUE="other"> other, please specify:  
 <INPUT TYPE="text" NAME="other" SIZE=30><BR>
 </DL>
 
@@ -98,7 +98,7 @@ continue to the <B>"About this Mutation"</B> section below.<BR>
 Chromosome assignment  (Enter UN if unknown):    
 <INPUT TYPE="text" NAME="chromosome" SIZE=10>
 <BR><BR>
-Other Genome Location Information (cM, cR, or cytogenetic location; molecular location such as 'exon 1 deletion', etc.):<BR>
+Other Genome Location Information (cM, cR, or cytogenetic location; molecular location such as "exon 1 deletion," etc.):<BR>
 <TEXTAREA NAME="location" ROWS=4 COLS=65></TEXTAREA>
 <BR><BR>
 <HR>
@@ -108,7 +108,7 @@ Strain/Genetic Background on which the mutation arose:    <INPUT TYPE="text" NAM
 Strain/Genetic Background on which the phenotype was analyzed:    <INPUT TYPE="text" NAME="strainPhenotype" SIZE=50>
 <br><br>
 Other Strain/Background Information (e.g. specify crosses):  
-Click here for an <A HREF="alleleform_strainex.html">example</A><br>   
+Click here for an <A HREF="alleleform_strainex.shtml">example.</A><br>   
 <TEXTAREA NAME="strainInfo" ROWS=4 COLS=65></TEXTAREA>
 <BR>
 <DL>
@@ -123,13 +123,13 @@ continue to the <B>"Phenotype"</B> section below.<BR>
 <HR>
 <H3>Phenotype:</H3>
 Phenotypic Description (enter text, describing details of phenotype observed, etc.):<BR>
-Click here for an <A HREF="alleleform_phenoex.html">example</A>. You may browse the <A HREF="http://www.informatics.jax.org/private/pheno/index.html">Phenotype Vocabulary</A> and use these terms to describe the phenotype.<br>   
+Click here for an <A HREF="alleleform_phenoex.shtml">example</A>. You may browse the <a href="http://www.informatics.jax.org/private/pheno/index.html">Phenotype Vocabulary</A> and use these terms to describe the phenotype.<br>   
 <TEXTAREA NAME ="description" ROWS=10 COLS=65></TEXTAREA>
 
 
 <BR>
 <BR>
-Other remarks (gene function/pathway, available clones, GenBank numbers, etc.)<BR>
+Other remarks (gene function/pathway, available clones, GenBank numbers, etc.):<BR>
 <TEXTAREA NAME="remarks" ROWS=3 COLS=65></TEXTAREA>
 <BR><BR>
 
@@ -181,23 +181,6 @@ mutant allele will be emailed to you shortly!  Thank you.</H3>
 <INPUT TYPE=submit VALUE="Submit"> <INPUT TYPE=reset VALUE="Reset Form">
 <HR>
 </FORM>
-<!--<A HREF="http://www.jax.org/" target="_top">
-<IMG SRC="../images/jax_logo.gif" ALIGN=right
-                        ALT="The Jackson Laboratory"></A>
-<SMALL>
-<A HREF="../other/citation.shtml" target="_top">
-                        Citing These Resources</A>
-<BR>
-<A HREF="../other/mgi_funding.shtml" target="_top">
-                        Funding Information</A>
-<BR>
-<A HREF="../other/copyright.shtml" target="_top">
-                        Warranty Disclaimer &amp; Copyright Notice</A>.
-<BR>
-Send questions and comments to
-                        <A HREF="http://www.informatics.jax.org/mgihome/support/tjl_inbox.shtml"
-                        target="_top">User Support</A>.
-</SMALL>-->
  <P><HR>
 <!--#include file="include/footer.html"-->
 </P></BODY>
