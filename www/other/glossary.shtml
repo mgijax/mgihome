@@ -466,13 +466,6 @@ rearrangement</A> that is visible by microscopic examination.
 <P><DT><B><A NAME="data_dictionary"></A>Data dictionary</B>
 <DD>In computer science, a <A HREF="#table">table</A> in a <A HREF="#database">database</A> that stores the names, <A HREF="#filed">field</A> types, length, and other characteristics of the fields in the database tables. 
 
-<P><DT><B><A NAME="dbms">DBMS</A></B>
-<DD>Database Management System. A collection of computer programs that allow storage, modification, and extraction of information from a <A HREF="#database">database</A>. There are many different types of DBMSs, ranging from small systems that run on personal computers to huge systems that run on mainframes. The following are examples of database applications: <UL>
-<LI>computerized library systems 
-<LI>automated teller machines 
-<LI>flight reservation systems 
-<LI>computerized parts inventory systems
-<LI><A HREF="#MGI">MGI</A></UL>
 
 <P><DT><B><A NAME="dbms">DBMS</A></B><DD>Database Management System. 
 A collection of computer programs that allow storage, modification, and extraction of information from a 
@@ -647,7 +640,7 @@ among individuals having the same genotype. See also <A HREF="#penetrance">Penet
 
 <!-- FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF --><A NAME="f"></A>
 <P><DT><B><A NAME="field"></A>Field</B>
-<DD>In a <A HREF="#relational_db">relational database</A>, an item of information, such as a <A HREF="#chromosome">chromosome</A> number, or the <A HREF="#centimorgan">centimorgen</A> length on a <A HREF="#genetic_map">genetic map</A>. Some fields are numeric, while others are textual; some are long, while others are short. In addition, every field has a name, called the <i>field name</i>. In 
+<DD>In a <A HREF="#relational_db">relational database</A>, an item of information, such as a <A HREF="#chromosome">chromosome</A> number, or the <A HREF="#centimorgan">centimorgan</A> length on a <A HREF="#genetic_map">genetic map</A>. Some fields are numeric, while others are textual; some are long, while others are short. In addition, every field has a name, called the <i>field name</i>. In 
 <A HREF="#database_management">database management systems</A>, a field can be required, optional, or calculated. A required field is one in which you must enter data, while an optional field is one you may leave blank. A calculated field is one whose value is derived from some formula involving other fields. You do not enter data into a calculated field; the system automatically determines the correct value. A collection of fields is called a <A HREF="#record">record</A>.
 
 <P><DT><B><A NAME="finished_sequence"></A>Finished sequence</B>
@@ -753,16 +746,18 @@ the information carried at a single <A HREF="#locus">locus</A>, as in A/A, A/a, 
 <P><DT><B><A NAME="germline">Germ Line</A></B>
 <DD>Cells of an animal that give rise to <A HREF="#gamete">gametes</A>.
 
-<P><DT><B><A NAME="GXD">GXD</A></B>
-<DD><A HREF="http://www.informatics.jax.org/mgihome/GXD/aboutGXD.shtml">Gene Expression Database</A>.
-One of several databases integrated into <A HREF="#MGI">MGI</A>, containing data on the patterns of
-<A HREF="#gene_expression">expression</A> of mouse <A HREF="#gene">genes</A>.
 
 <P><DT><B><A NAME="guanine"></A>Guanine (G)</B>
 <DD>A <A HREF="#purine">purine</A> <A HREF="#base">base</A> that is a component of 
 <A HREF="#nucleotide">nucleotides</A> and thus a normal component of <A HREF="#DNA">DNA</A> and 
 <A HREF="#RNA">RNA</A>. See the <A HREF="http://www.nhgri.nih.gov/DIR/VIP/Glossary/Illustration/base_pair.html">Figure</A> 
 at <A HREF="#NHGRI">NHGRI</A>.
+
+<P><DT><B><A NAME="GXD">GXD</A></B>
+<DD><A HREF="http://www.informatics.jax.org/mgihome/GXD/aboutGXD.shtml">Gene Expression Database</A>.
+One of several databases integrated into <A HREF="#MGI">MGI</A>, containing data on the patterns of
+<A HREF="#gene_expression">expression</A> of mouse <A HREF="#gene">genes</A>.
+
 
 <!-- HHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHH --><A NAME="h"></A>
 <P><DT><B><A NAME="haploid">Haploid</A></B>
@@ -910,27 +905,6 @@ proteins and can be evidence of <A HREF="#homology">homology</A>.
 <DD>An <A HREF="#epigenetic">epigenetic</A> modification of <A HREF="#gene">genes</A> that identifies a given gene 
 as having been inherited from the maternal or paternal parent. In mammals, some genes are <A HREF="#gene_expression">expressed</A> primarily from the maternally-inherited or paternally-inherited <A HREF="#allele">alleles</A> as a consequence of imprinting.
 
-<P><DT><B><A NAME="in_silico"><I>In silico</I></A></B>
-<DD>Computationally, as opposed to <A HREF="#in_vitro"><I>in vitro</I></A> or <A HREF="#in_vivo"><I>in vivo</I></A>.
-
-<P><DT><B><A NAME="in_situ"><I>In situ</I> Hybridization</A></B>
-<DD>A method of detecting the presence of specific <A HREF="#nucleic_acid">nucleic acid</A> sequences within a cytological preparation. A <A HREF="#DNA">DNA</A> or <A HREF="#RNA">RNA</A> <A HREF="#probe">probe</A> is labeled radioactively or chemically and <A HREF="#hybridization">hybridized</A> to a cytological preparation to detect RNA or to a <A HREF="#denaturation">denatured</A> cytological preparation to detect DNA. The hybridization is detected by <A HREF="#autoradiography">autoradiography</A> (for 
-radioactive probes) or by <A HREF="#chromogenic">chromogenic</A> reactions or fluorescence (for chemically-labeled probes).
-See one of the <A HREF="../searches/image.cgi?1760">Figures</A> from <A HREF="#GXD">GXD</A> for an example. See also <A HREF="#FISH">FISH</A>.
-
-* <P><DT><B><A NAME="informatics">Informatics</A></B>
-<dd>The study of the application of computer and statistical techniques to the management of information. In <A HREF="#genome">genome</a> projects, informatics includes the development of methods to search 
-<A HREF="#database">databases</a> quickly, to analyze <A HREF="#DNA">DNA</a> <A HREF="#sequencing">sequence</A> information, and to predict <A HREF="#protein">protein</a> sequence and structure from DNA sequence data. 
-<!--*************************************************-->
-<P><DT><B><A NAME="in_utero"><I>In utero</I></A></B>
-<DD>A reaction, process or experiment on an embryo in a living mammal rather than <A HREF="#in_vitro"><I>in vitro</I></A>.
-
-<P><DT><B><A NAME="in_vitro"><I>In vitro</I></A></B>
-<DD>Literally, "in glass", meaning a reaction, process or experiment in a metaphorical test tube rather than in a living organism. In <A HREF="#MGI">MGI</A> this term also applies to <A HREF="#cDNA">cDNA</A> clones originating from tissue culture cells rather than from tissues from whole organisms. See also <A HREF="#in_vivo"><I>In vivo</I></A>, <A HREF="#in_silico"><I>In silico</I></A>.
-
-<P><DT><B><A NAME="in_vivo"><I>In vivo</I></A></B>
-<DD>Literally, "in life", meaning a reaction, process or experiment in a living organism rather than in a metaphorical test tube. See also <A HREF="#in_vitro"><I>In vitro</I></A>, <A HREF="#in_silico"><I>In silico</I></A>.
-
 <P><DT><B><A NAME="inbred_strain">Inbred Strain</A></B>
 <DD>A strain that is essentially <A HREF="#homozygous">homozygous</A> at all loci. In mice, a strain produced from brother-sister
 matings for at least 20 sequential generations. C57BL/6J is a widely-used <A HREF="#inbred_strain">inbred strain</A> of mouse. See also the <A HREF="http://www.informatics.jax.org/mgihome/nomen/strains.shtml#Inbred">Rules for the Nomenclature of Inbred Strains</A>.
@@ -938,6 +912,10 @@ matings for at least 20 sequential generations. C57BL/6J is a widely-used <A HRE
 <P><DT><B><A NAME="incross">Incross</A></B>
 <DD>A <A HREF="#cross">cross</A> between two identically <A HREF="#homozygous">homozygous</A> individuals (A/A X A/A). <BR>See also:<UL><LI><A HREF="#backcross">Backcross</A></LI><LI><A HREF="#intercross">Intercross</A></LI><LI>
 <A HREF="#outcross">Outcross</A></LI><LI><A HREF="#testcross">Testcross</A></LI></UL>
+
+<P><DT><B><A NAME="informatics">Informatics</A></B>
+<dd>The study of the application of computer and statistical techniques to the management of information. In <A HREF="#genome">genome</a> projects, informatics includes the development of methods to search 
+<A HREF="#database">databases</a> quickly, to analyze <A HREF="#DNA">DNA</a> <A HREF="#sequencing">sequence</A> information, and to predict <A HREF="#protein">protein</a> sequence and structure from DNA sequence data. 
 
 <P><DT><B><A NAME="inhibitor">Inhibitor</A></B>
 <DD>A chemical compound that has the effect of blocking or slowing an enzymatic reaction.
@@ -947,6 +925,15 @@ matings for at least 20 sequential generations. C57BL/6J is a widely-used <A HRE
 <A HREF="#DNA">DNA</A> sequence. Small insertions within a <A HREF="#gene">gene</A> can alter the
 <A HREF="#reading_frame">reading frame</A>, and thus the <A HREF="#amino_acid">amino acid</A> sequence of the encoded
 <A HREF="#protein">protein</A>.
+
+
+<P><DT><B><A NAME="in_silico"><I>In silico</I></A></B>
+<DD>Computationally, as opposed to <A HREF="#in_vitro"><I>in vitro</I></A> or <A HREF="#in_vivo"><I>in vivo</I></A>.
+
+<P><DT><B><A NAME="in_situ"><I>In situ</I> Hybridization</A></B>
+<DD>A method of detecting the presence of specific <A HREF="#nucleic_acid">nucleic acid</A> sequences within a cytological preparation. A <A HREF="#DNA">DNA</A> or <A HREF="#RNA">RNA</A> <A HREF="#probe">probe</A> is labeled radioactively or chemically and <A HREF="#hybridization">hybridized</A> to a cytological preparation to detect RNA or to a <A HREF="#denaturation">denatured</A> cytological preparation to detect DNA. The hybridization is detected by <A HREF="#autoradiography">autoradiography</A> (for 
+radioactive probes) or by <A HREF="#chromogenic">chromogenic</A> reactions or fluorescence (for chemically-labeled probes).
+See one of the <A HREF="../searches/image.cgi?1760">Figures</A> from <A HREF="#GXD">GXD</A> for an example. See also <A HREF="#FISH">FISH</A>.
 
 <P><DT><B><A NAME="intercross">Intercross</A></B>
 <DD>A <A HREF="#cross">cross</A> between two identically <A HREF="#hybrid">hybrid</A> individuals (A/a X A/a). 
@@ -960,10 +947,19 @@ matings for at least 20 sequential generations. C57BL/6J is a widely-used <A HRE
 <DD>Part of a <A HREF="#gene">gene</A> whose sequence is <A HREF="#transcription">transcribed</A> but not present in a mature
 <A HREF="#mRNA">mRNA</A> after <A HREF="#splicing">splicing</A>. See also <A HREF="#exon">Exon</A>.
 
+<P><DT><B><A NAME="in_utero"><I>In utero</I></A></B>
+<DD>A reaction, process or experiment on an embryo in a living mammal rather than <A HREF="#in_vitro"><I>in vitro</I></A>.
+
 <P><DT><B><A NAME="inversion">Inversion</A></B>
 <DD>A type of <A HREF="#mutation">mutation</A> in which a length of <A HREF="#DNA">DNA</A> is broken in two positions and
 repaired in such a way that the medial segment is now present in reverse order. Inversions range in size from those
 large enough to be visible <A HREF="#cytogenetic">cytogenetically</A> to those involving only a few base pairs.
+
+<P><DT><B><A NAME="in_vitro"><I>In vitro</I></A></B>
+<DD>Literally, "in glass", meaning a reaction, process or experiment in a metaphorical test tube rather than in a living organism. In <A HREF="#MGI">MGI</A> this term also applies to <A HREF="#cDNA">cDNA</A> clones originating from tissue culture cells rather than from tissues from whole organisms. See also <A HREF="#in_vivo"><I>In vivo</I></A>, <A HREF="#in_silico"><I>In silico</I></A>.
+
+<P><DT><B><A NAME="in_vivo"><I>In vivo</I></A></B>
+<DD>Literally, "in life", meaning a reaction, process or experiment in a living organism rather than in a metaphorical test tube. See also <A HREF="#in_vitro"><I>In vitro</I></A>, <A HREF="#in_silico"><I>In silico</I></A>.
 
 <P><DT><B><A NAME="isogenic">Isogenic</A></B>
 <DD>Characterized by essentially identical <A HREF="#gene">genes</a>. Identical twins are isogenic.
@@ -1834,10 +1830,6 @@ HREF="http://www.nhgri.nih.gov/DIR/VIP/Glossary/Illustration/rna.html">Figure</A
 The method works if all positions in the large segment are covered by multiple overlapping subsegments. See also 
 <A HREF="#wholegenome_shotgun">Whole-genome shotgun sequencing</A>.
 
-<P><DT><B><A NAME="simple_sequence_repeat"></A>Simple Sequence Repeat (SSR)</B>
-<DD>A sequence consisting largely of a tandem repeat of a specific k-mer (such as (CA)<SUB>15</SUB>). Many SSRs are
- <A HREF="#polymorphism">polymorphic</A> and have been widely used in <A HREF="#genetic_map">genetic mapping</A>.
-
 <P><DT><B><A NAME="sibling">Sibling</A></B>
 <DD>In <A HREF="#MGI">MGI</A>, this term refers to terms in a <a href="#hierarchical">hierarchical</a> <A HREF="#controlled_vocabulary">controlled 
 vocabulary</A> like ones containing <A HREF="#gene_ontology">Gene Ontology (GO)</A> terms. A "sibling" of a term is a term at the same level of the <a href="#hierarchy">hierarchy</a> sharing at least one <A HREF="#ancestor">ancestor</A>. For example, the GO term <B>alcohol dehydrogenase</B> [GO:0004022] is a <B>sibling</B> to the GO term <B>aldehyde oxidase</B> [GO:0004031]; they share the
@@ -1847,6 +1839,10 @@ vocabulary</A> like ones containing <A HREF="#gene_ontology">Gene Ontology (GO)<
 <P><DT><B><A NAME="similarity">Similarity</A></B>
 <DD>1. In comparison of <A HREF="#nucleic_acid">nucleic acid</A> sequences, the extent to which two <A HREF="#nucleic_acid">nucleic acid</A> sequences have identical <A HREF="#base">bases</A> at equivalent positions, usually expressed as a percentage.<BR>2. In comparison of <A HREF="#protein">protein</A> sequences, the extent to which the <A HREF="#amino_acid">amino acid</A> sequences of two <A HREF="#protein">proteins</A> have identical or functionally similar <A HREF="#amino_acid">amino acids</A> at equivalent 
 positions, usually expressed as a percentage. See also <A HREF="#identity">Identity</A>.
+
+<P><DT><B><A NAME="simple_sequence_repeat"></A>Simple Sequence Repeat (SSR)</B>
+<DD>A sequence consisting largely of a tandem repeat of a specific k-mer (such as (CA)<SUB>15</SUB>). Many SSRs are
+ <A HREF="#polymorphism">polymorphic</A> and have been widely used in <A HREF="#genetic_map">genetic mapping</A>.
 
 <P><DT><B><A NAME="site-specific_recombination">Site-specific Recombination</A></B>
 <DD>Reciprocal <A HREF="#recombination">recombination</A> between specific target sequences catalyzed by a specific
@@ -1911,7 +1907,7 @@ in contrast to a <A HREF="#regulatory_gene">regulatory gene</A>.
 <P><DT><B><A NAME="structured_query_language"></A>Structured Query Language</B>
 <DD>Structured Query Language (SQL) is used to communicate with a <A HREF="#database">database</A>. 
 According to <A HREF="#ANSI">ANSI (American National Standards Institute)</A>, it is the standard language for 
-<A HREF="#relational_database_management">relational database management systems</A>. SQL statements are used to perform tasks such as updating data in or retrieving data from a database. Some common relational database management systems that use SQL are: Oracle, Sybase, Microsoft SQL Server, Access, Ingres, etc. Although most database systems use SQL, most of them also have their own additional proprietary extensions that are usually only used on their system. 
+<A HREF="#relational_database_management">relational database management systems</A>. SQL statements are used to perform tasks such as updating data in or retrieving data from a database. Some common relational database management systems that use SQL are: Oracle, Sybase, Microsoft SQL Server, Access, Ingres, etc. Although most database systems use SQL, most of them also have their own additional proprietary extensions that are usually only used on their system. The <A HREF="#query_form">Query Forms</A> at <A HREF="#MGI">MGI</A> extract information from databases by generating instructions in SQL.
 
 <P><DT><B><A NAME="STS">STS</A></B>
 <DD>Sequence Tagged Site. A short segment of unique sequence derived from <A HREF="#genome">genomic</A> <A HREF="#DNA">DNA</A>. A large collection of STSs can be used to assemble a <A HREF="#physical_map">physical map</A> of the genome from a collection of genomic clones (e.g., <A HREF="#BAC">BACs</A> or <A HREF="#YAC">YACs</A>) by testing each clone for the presence of each STS. Two clones that contain one or more STSs in common must overlap. For examples, see the <A HREF="../reports/mitmap/">physical maps</A> of the mouse genome at <A HREF="#MGI">MGI</A>.
