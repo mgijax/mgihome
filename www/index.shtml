@@ -44,6 +44,7 @@
 <FONT SIZE="-1">
 <a href="<!--#include file='include/go_url.html'-->">o&nbsp;Gene Ontology (GO) Browser</a><br>
 <a href="<!--#include file='include/wi_url.html'-->searches/anatdict_form.shtml">o&nbsp;Mouse Anatomical Dictionary</a><br>
+<a href="nomen/phenotypeVOC.shtml">o&nbsp;Phenotype Classification Terms</a>
 </FONT>
 <P>
 <B>Related Information</B><BR>
@@ -74,31 +75,28 @@
 <TABLE ALIGN="center" BORDER="0" CELLSPACING="2" CELLPADDING="2" WIDTH="100%">
   <TR ALIGN="left" VALIGN="top">  
    <TD ALIGN="left" VALIGN="top">   
-    <TABLE ALIGN="CENTER" BORDER="-2" CELLSPACING="0" CELLPADDING="5" WIDTH="80%" >
-      <TR>
-        <TD ALIGN="left" VALIGN="middle"><B><CENTER><A HREF="news/whatsnew.shtml">What's New - March 21, 2002</a></CENTER></B>
-          <UL><FONT SIZE="-1">
-           <!--<li><A HREF="news/whatsnew.shtml#feb02">Mouse Genome Monthly Newsletter - Issue #4, February, 2002--></a><br>
+    <TABLE ALIGN="CENTER" BORDER="-2" CELLSPACING="0" CELLPADDING="5" width="50%">
+      <TR><TD ALIGN="left" VALIGN="middle"><B><CENTER><A HREF="news/whatsnew.shtml">What's New - March 21, 2002</a></CENTER></B>
+          <UL><font size=-1>
+           <!--<li><A HREF="news/whatsnew.shtml#feb02">Mouse Genome Monthly Newsletter - Issue #4, February, 2002-->
     <li><A HREF="news/whatsnew.shtml#mar02">New MGI Release Available, March 21, 2002</a><br>
-
-   <li><A HREF="news/whatsnew.shtml#feb02">Mouse Genome Monthly Newsletter - Issue #3, January, 2002</a><br>
- 
-          <li><A HREF="news/whatsnew.shtml#jan02">UCSC Human Genome Browser Adds Links to MGI</a> <br>
+    <li><A HREF="news/whatsnew.shtml#feb02">Mouse Genome Monthly Newsletter - Issue #3, January, 2002</a><br>
+    <li><A HREF="news/whatsnew.shtml#jan02">UCSC Human Genome Browser Adds Links to MGI</a> <br>
    <!--<li><a href="news/whatsnew.shtml#jan02">Glycine Receptor, Alpha Joins the Gene Family Reports</a> <br>
           <li><A HREF="news/whatsnew.shtml#nar1">MGD Article Featured in NAR's January 2002 Database Issue</a> <br> -->       
    <li><a href="other/mgi_jobs.shtml#biologists">Scientific Curation Positions Available at MGI</a> <br>
-       <li><a href="news/news_2001.shtml">Listing of News and Announcements for 2001</a><br>
+    <li><a href="news/news_2001.shtml">Listing of News and Announcements for 2001</a><br>
     <li><a href="news/news_2000.shtml">Listing of News and Announcements for 2000</a><br>
          </FONT>
          </UL>
         </TD>
-      </TR>
+     </TR>
      </TABLE>
    </TD>
   </TR>
  </TABLE></b>
 <br>
-The Mouse Genome Informatics Database provides integrated access to data on
+The <a href="<!--#include file='include/wi_url.html'-->">Mouse Genome Informatics Database</a> provides integrated access to data on
 the genetics, genomics and biology of the
 laboratory mouse. The projects contributing to this resource are:<P>
 <BLOCKQUOTE>
@@ -128,7 +126,7 @@ A <A HREF="other/mgicron.shtml">brief history </A>of Mouse Genome Informatics is
 <br><br>
 <table align=center>
   <tr><TD valign=center><form>
-      <TABLE BGCOLOR="#D5F8FE" border=1 CELLSPACING="0" CELLPADDING="2">
+      <TABLE BGCOLOR="#D5F8FE" border=1 CELLSPACING="4" CELLPADDING="4">
         <TR><TD><small><B><A HREF="MGS/genometally.shtml">% of Mouse Genome Sequenced</A></B></small><BR> <center>
 	  <TABLE border=1 CELLSPACING="0">
 	    <TR><TD bgcolor=#FFFFFF>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<B>2.5% finished</B>&nbsp;&nbsp;&nbsp;</TD></TR>
