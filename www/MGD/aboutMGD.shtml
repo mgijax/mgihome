@@ -84,22 +84,21 @@ through large scale electronic transfer. Such data include mouse physical  mappi
    <a href="../other/glossary.shtml#cytogenetic_marker">Cytogenetic marker</A> descriptions<BR>
 Mouse genetic <a href="../other/glossary.shtml#phenotype">phenotypes</A>, genetic interrelationships, and <a href="../other/glossary.shtml#polymorphism">polymorphic</A> loci <BR> 
 Mammalian <a href="../other/glossary.shtml#orthology">orthology</A>
-data  <BR> Molecular probes and segments(<a href="../other/glossary.shtml#probe">probes</A>,
+data  <BR> Molecular probes and clones(<a href="../other/glossary.shtml#probe">probes</A>,
 <a href="../other/glossary.shtml#clone">clones</A>,
 <a href="../other/glossary.shtml#primer">primers</A> and
 <a href="../other/glossary.shtml#YAC">YACs</A>)<BR>
 <a href="../other/glossary.shtml#genetic_map">Genetic</A> and
 <a href="../other/glossary.shtml#physical_map">physical mapping</A> data<BR>
-<a href="../other/glossary.shtml#polymorphism">Polymorphic</A>
-loci  related  to  specified strains  
-<BR> Information on <a href="../other/glossary.shtml#inbred_strain">inbred strains</A> (M. Festing's listing)<BR>
-References supporting  all  data  in MGD <BR> 
+<a href="../other/glossary.shtml#polymorphism">Polymorphic</A> loci related to specified strains  
+<BR>Information on <a href="../other/glossary.shtml#inbred_strain">inbred strains</A> (M. Festing's listing)<BR>
+References supporting  all  data  in MGD<BR> 
 </UL>
 
 <h3><a name="extdb"></a>Does MGD link to any external databases?</h3> 
 <P>MGD  provides links  to  relevant  information  in   
 <a href="../other/collab_and_acknow.shtml">external databases</A> wherever possible.  Through markers, MGD links to GenBank, SWISS-PROT, EnsEMBL, InterPro, and EC. Through orthologies,  MGD links  to
-GDB, PigBase, SheepBase, BovMap and RATMAP. Through molecular probes and segments,  MGD links to GenBank, EMBL, and DDBJ. Through references, MGD links to PubMed. 
+GDB, PigBase, SheepBase, BovMap and RATMAP. Through molecular probes and clones,  MGD links to GenBank, EMBL, and DDBJ. Through references, MGD links to PubMed. 
 
 <h3><a name="organize"></a>How is MGD organized?</h3> 
 
@@ -127,30 +126,30 @@ MGD contains information on mouse genes,
 <P>Information on <B>alleles</B>, formerly imbedded in phenotype  descriptions, is stored as a separate data set. More information on alleles will be available and accessible in MGD as time goes on. Links to alleles are provided in gene detail records. In
 addition, there is an <A HREF="<!--#include file='include/wi_url.html'-->searches/allele_form.shtml">Alleles and Phenotypes Query Form</A> for  direct  queries against the allele data  set. (<I>See</I> <A HREF="<!--#include file='include/wi_url.html'-->userdocs/allele_help.shtml#detail">Phenotypic Alleles -- Query Results--Details</A> for the content of an allele record as displayed in query results.
 
-<h4><A NAME="pro"></A>Molecular Probes and Segments</h4>
+<h4><A NAME="pro"></A>Molecular Probes and Clones</h4>
  <P>MGD contains information on 
 <a href="../other/glossary.shtml#probe">probes</A>,
 <a href="../other/glossary.shtml#clone">clones</A>, 
 <a href="../other/glossary.shtml#primer">primers</A>,
 <A HREF="../other/glossary.shtml#YAC">YACs</A>, and 
 <a href="../other/glossary.shtml#STS">STSs</A>. 
-Information may include the origin of the probe/segment, sequence, 
+Information may include the origin of the probe/clone, sequence, 
 <a href="../other/glossary.shtml#cloning_vector">vector</A> type, 
 <a href="../other/glossary.shtml#hybridization">hybridizing</A> loci, 
 <a href="../other/glossary.shtml#RFLP">RFLPs</A>, and references. (<EM>See</EM> the Probes Query Form 
-<A HREF="<!--#include file='include/wi_url.html'-->userdocs/probe_help.shtml#summary">Query Results -- Summary</A> and <A HREF="<!--#include file='include/wi_url.html'-->userdocs/probe_help.shtml#detail">Query Results -- Details</A> for more information about the content of a probe/segment record as it appears in the query results.)
+<A HREF="<!--#include file='include/wi_url.html'-->userdocs/probe_help.shtml#summary">Query Results -- Summary</A> and <A HREF="<!--#include file='include/wi_url.html'-->userdocs/probe_help.shtml#detail">Query Results -- Details</A> for more information about the content of a probe/clone record as it appears in the query results.)
 
-<P>In addition, information on <A NAME="rflp">genetic polymorphisms</A> is extracted from probe/segment records in MGD. The
+<P>In addition, information on <A NAME="rflp">genetic polymorphisms</A> is extracted from probe/clone records in MGD. The
 Polymorphisms Query Form enables you to search directly  for such information and display it. (See 
 <A HREF="<!--#include file='include/wi_url.html'-->userdocs/polymorphism_help.shtml#summary">Query Results -- Summary</a> and <A HREF="<!--#include file='include/wi_url.html'-->userdocs/polymorphism_help.shtml#detail">Query Results -- Details</A> for more information.)
 
 <h4><A NAME="homo"></A>Mammalian Orthology</h4> 
-MGD contains <a href="../other/glossary.shtml#orthology">orthology</A> information for mouse, human and 15 other mammalian organisms. Most of the information  for orthologies  is
+MGD contains <a href="../other/glossary.shtml#orthology">orthology</A> information for mouse, human and 15 other mammalian species. Most of the information  for orthologies  is
 extracted from the published scientific literature. In general,  these  papers  explicitly report orthology relationships and MGD
 reflects that published information. (<EM>See</EM> 
 <A HREF="<!--#include file='include/wi_url.html'-->userdocs/homology_criteria.shtml">MGD Mammalian Orthology Criteria</A> for the information used to establish orthology.)
 
-<P>An orthology record shows the <a href="../other/glossary.shtml#gene_symbol">symbol</A>, organism, <a href="../other/glossary.shtml#chromosome">chromosome</A>,
+<P>An orthology record shows the <a href="../other/glossary.shtml#gene_symbol">symbol</A>, species, <a href="../other/glossary.shtml#chromosome">chromosome</A>,
 <a href="../other/glossary.shtml#cM">cM</A> position,
 <a href="../other/glossary.shtml#cytogenetic_band">cytogenetic band</A> and 
 <a href="../other/glossary.shtml#accession_ID">accession ID</A>
@@ -158,7 +157,7 @@ for each gene in the set of orthologies. In addition, links to
 other mammalian databases are provided where possible. MGD orthology records may link to GDB, BovMap, PiGBASE, RATMAP, SheepBase, or ArkDB. 
 
 <P> Every orthology assertion is supported by one or more references.  The display of an orthology reference includes the J number of
-the reference, a short format citation, gene symbol and organism. (<EM>See</EM> 
+the reference, a short format citation, gene symbol and species. (<EM>See</EM> 
 <A HREF="<!--#include file='include/wi_url.html'-->userdocs/homology_help.shtml#detail">Query Results -- Details</A> on
 the content of a orthology record as it appears in the query results.)
 
@@ -170,9 +169,7 @@ build a graphic display of a map of a mouse chromosome (or chromosomal region)  
 species. See, for example, the comparative map for a 2 cM region around the mouse gene 
 <A HREF="<!--#include file='include/wi_url.html'-->searches/linkmap.cgi?midpoint=52.3&cmrange=2&format=Web+Map&source=MGD&dsegments=0&syntenics=0&chromosome=1&species=2">Acrg</A> showing human orthology.
 
-<P> The Orthology Map View displays the mouse genome as  the  consensus genetic map, with either human or rat orthologs labeled by
-chromosome of origin and displayed next to  the  corresponding  segment  of  the  mouse  genome.  The Orthology Map View is accessible
-from the <a href="<!--#include file='include/wi_url.html'-->menus/homology_menu.shtml">Orthology Menu</A> page.
+<P> The Orthology Map View displays the mouse genome as  the  consensus genetic map, with either human or rat orthologs labeled by chromosome of origin and displayed next to the corresponding  segment  of  the  mouse  genome.  The Orthology Map View is accessible from the <a href="<!--#include file='include/wi_url.html'-->menus/homology_menu.shtml">Orthology Menu</A> page.
 
 <h3><A NAME="map"></A>Mapping Data</h3>
  MGD contains genetic mapping and linkage data, including haplotype data for
