@@ -3,6 +3,7 @@
 
 import os
 import config
+import string
 import db
 
 URL = config.lookup ('MGIHOME_URL')
@@ -86,3 +87,47 @@ def valOrNone (
 	if dict.has_key(key):
 		return dict[key]
 	return None
+
+def wrapLines (
+	s,		# the string to wrap.  can contain multiple lines, with
+			# line breaks delimited by LF (defined below)
+        maxlen		# integer; desired maximum line length
+	):
+	# Purpose: wrap lines of text in "s" so that each has length less than
+	#	or equal to "maxlen", where possible
+	# Returns: string containing the wrapped lines.  Individual lines are
+	#	delimited by LF
+	# Assumes: nothing
+	# Effects: nothing
+	# Throws: nothing
+	# Notes: We do not guarantee that all the output lines are <= "maxlen"
+	#	characters.  This is because wrapLines() does intelligent
+	#	wrapping -- it wraps at word boundaries (defined by a space).
+	#	If a line has no spaces before length "maxlen", we do not
+	#	attempt to wrap it.
+	# Example:
+	#	s = "Here is a simple\nexample of a wrapped line.\n"
+	#	wrapLines (s, 10) returns:
+	#	    "Here is a \nsimple\nexample \nof a \nwrapped \nline.\n"
+	# This code was freely pilfered from WTS's wtslib.py file.
+
+	LF = '\n'
+	line_list = []				# list of generated lines
+	lines = string.split (s, LF)		# list of input lines
+
+	for line in lines:
+		done = (len (line) <= maxlen)	# done splitting this line?
+		while not done:
+			# get "p", the position after the final space in the
+			# first maxlen characters of "line".
+
+			p = 1 + string.rfind (line [:maxlen], ' ')
+			if p == 0:
+				done = TRUE	# no spaces in line
+			else:
+				line_list.append (line [:p])
+				line = line [p:]
+				done = (len (line) <= maxlen)
+		line_list.append (line)
+	return string.join (line_list, LF)
+
