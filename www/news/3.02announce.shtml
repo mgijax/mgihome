@@ -1,6 +1,6 @@
 <HTML>
 <HEAD>
-<TITLE><!--#include file='include/mgiversion.html'--> MGI Release 3.02 Announcement - November xx, 2004</TITLE>
+<TITLE><!--#include file='include/mgiversion.html'--> MGI Release 3.02 Announcement - November 23, 2004</TITLE>
 <META NAME ="keywords" CONTENT="Mouse Genome Informatics, Mouse Genome Database, genetics, MGI, genes, mice, SQL, querying, sequence, sequence searching, sequence queries, database queries, query forms, sequence representation, data translation, controlled vocabulary, sequence attribute, sequence source, complex query, downloaded sequences, FASTA">
 <META NAME="description" CONTENT="This page details the changes in the to MGI 3.0 release at The Jackson Laboratory.">
 <!--Last updated on October 13, 2004-->
@@ -15,7 +15,7 @@
      <TD WIDTH="20%" VALIGN="center" ALIGN="left">&nbsp;</TD>
      <TD WIDTH="60%" ALIGN="center" VALIGN="center">
       <FONT COLOR="#000000" SIZE=5 FACE="Arial,Helvetica">
-      MGI Release 3.02 Announcement - November xx, 2004
+      MGI Release 3.02 Announcement - November 23, 2004
       </FONT>
      </TD>
      <TD WIDTH="20%" VALIGN="center" ALIGN="center">&nbsp;</TD>
@@ -26,42 +26,46 @@
 </TABLE>
 
 
-<P>Version 3.02 of MGI provides the scientific community with data for all mouse cDNA clones from the IMAGE consortium and the National Institute on Aging (including the <A HREF="http://lgsun.grc.nia.nih.gov/cDNA/cDNA.html">NIA 15K and NIA 7.4K</A> sets). Clone data, which include EST sequence associations and clone library source information, are mapped  to MGI controlled vocabularies. These additions increase the number of cDNA clones in MGI as follows:</p>
+<P>Version 3.02 of MGI provides the scientific community with data for all mouse cDNA clones from the <A HREF="http://image.llnl.gov/">I.M.A.G.E. Consortium</A> and the National Institute on Aging (including the <A HREF="http://lgsun.grc.nia.nih.gov/cDNA/cDNA.html">NIA, NIA 15K and NIA 7.4K</A> sets). Clone data, which include EST sequence associations and clone library source information, are mapped to MGI <A HREF="../other/glossary.shtml#controlled_vocabulary">controlled vocabularies</A>. These additions increase the number of cDNA clones in MGI as follows:</P>
 
 <BLOCKQUOTE>
-<TABLE BORDER="0" CELLSPACING="4" CELLPADDING="4">
+<TABLE BORDER="0" CELLSPACING="0" CELLPADDING="6">
  <TR>
- <TH align=right VALIGN="top">cDNA</TH>
- <TH align=center VALIGN="top">Previous</TH>
- <TH align=center VALIGN="top">Current </TH>
- </tr>
+ <TH>&nbsp;</TH>
+ <TH ALIGN="RIGHT" VALIGN="Top">cDNA Previous</TH>
+ <TH ALIGN="RIGHT" VALIGN="top">cDNA Current </TH>
+ </TR>
+
  <TR>
- <Td ALIGN="left" VALIGN="top">Molecular clones</Td>
- <TD align=right VALIGN="top">886,330</TD><TD align=right VALIGN="top"><B>2,042,369</B></TD>
+ <TD ALIGN="left" VALIGN="top">Molecular clones</TD>
+ <TD ALIGN="right" VALIGN="top">886,330</TD>
+<TD ALIGN="right" VALIGN="top">2,042,369</TD>
+ </TR>
+<TR>
+ <TD ALIGN="left" VALIGN="top">Sequence/molecular clone associations</TD>
+ <TD ALIGN="right" VALIGN="top">598,269</TD>
+ <TD ALIGN="right" VALIGN="top">2,067,132</TD>
  </TR>
  <TR>
- <Td ALIGN="left" VALIGN="top">Sequence/molecular clone associations</Td>
- <TD align=right VALIGN="top">598,269</TD>
- <TD align=right VALIGN="top"><B>2,067,132</B></TD>
- </TR>
- <TR>
- <Td ALIGN="left" VALIGN="top">Marker/molecular clone associations</td>
- <TD ALIGN="right">220,033</td>
- <TD ALIGN="right"><B>861,087</B></TD></tr>
+ <TD ALIGN="left" VALIGN="top">Marker/molecular clone associations</TD>
+ <TD ALIGN="right">220,033</TD>
+ <TD ALIGN="right">861,087</TD>
 </TABLE>
 
 </BLOCKQUOTE>
-
+<P>MGI also contains data for mouse cDNA clones from the RIKEN (FANTOM) and RPCI-23 and -24) sets. We anticipate adding additional clone collections  over time. Please  contact <A HREF="../support/tjl_inbox.shtml">User Support</A> to request a specific clone collection.</p>
 
 <P>You can select the clone sets using the <B>Clone Collection </B>field on these MGI query forms:
 <UL>
-  <LI><a href="<!--#include file='include/wi_url.html'-->searches/probe_form.shtml">Molecular Probes and Clones Query Form</a></li>
-<LI><a href="<!--#include file='include/wi_url.html'-->searches/sequence_form.shtml">Mouse Sequence Query Form</a></LI>
-  <LI><a href="<!--#include file='include/wi_url.html'-->searches/estclone_form.shtml">cDNA Clone Query Form</a></li>
-<LI><a href="<!--#include file='include/wi_url.html'-->searches/marker_form.shtml">Genes and Markers Query Form</a></LI>
+  <LI><A HREF="<!--#include file='include/wi_url.html'-->searches/probe_form.shtml">Molecular Probes and Clones Query Form</A></LI>
+<LI><A HREF="<!--#include file='include/wi_url.html'-->searches/sequence_form.shtml">Mouse Sequence Query Form</A></LI>
+  <LI><A HREF="<!--#include file='include/wi_url.html'-->searches/estclone_form.shtml">cDNA Clone Query Form</A></LI>
+<LI><A HREF="<!--#include file='include/wi_url.html'-->searches/marker_form.shtml">Genes and Markers Query Form</A></LI>
 
  </UL>
- </p>
+For additional information, see <A HREF="<!--#include file='include/wi_url.html'-->userdocs/clone_collections.shtml">Using the Clone Collection Field on MGI Query Forms</A>.
+ </P>
+
 <hr>
 <!--#include file="include/bodyStop.html"-->
 </body>

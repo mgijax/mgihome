@@ -1,10 +1,7 @@
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" 
-"http://www.w3.org/TR/html4/loose.dtd">
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <HTML>
 <HEAD>
-<TITLE><!--#include file='include/mgiversion.html'--> What's
-New</TITLE> 
-
+<TITLE><!--#include file='include/mgiversion.html'--> What's New</TITLE> 
 <LINK REV="made" HREF="mailto:DJD@INFORMATICS.JAX.ORG">
 <META NAME="generator" CONTENT="NoteTab Pro 4.95">
 <META NAME="author" CONTENT="DJD">
@@ -14,8 +11,7 @@ New</TITLE>
 </head>
 
 <BODY BGCOLOR="#FFFFFF"> 
-<!--#include
-file="include/bodyStart.html"--> 
+<!--#include file="include/bodyStart.html"--> 
 <TABLE WIDTH="100%" BORDER=0 CELLPADDING=2 CELLSPACING=1> 
   <TR><TD WIDTH="100%" BGCOLOR="#D0E0F0"> 
       <TABLE WIDTH="100%" BORDER=0 CELLPADDING=0 CELLSPACING=0> 
@@ -30,9 +26,9 @@ file="include/bodyStart.html"-->
 <TABLE ALIGN="CENTER" BORDER="-2" CELLSPACING="0" CELLPADDING="6" width="85%">
 <TR BGCOLOR="#DFEFFF"><TD ALIGN="left" VALIGN="middle"><CENTER> <FONT
 FACE="Arial, Helvetica, Sans Serif">
-<h4>November 10, 2004</h4></CENTER></font>
+<h4>November 23, 2004</h4></CENTER></font>
 <ul>
-<LI>Update: November 10, 2004</LI>
+<LI><A HREF="#nov04">MGI 3.02 Release: November 23, 2004</A></LI>
 <LI><A href="#oct04">Update: October 18, 2004</a></LI>
 <li><A href="#aug04">MGI 3.01 Release: August 23, 2004</a></li>
 <li><A href="#july04">Update: July 15, 2004</a></li>
@@ -51,11 +47,11 @@ HREF="index.shtml">Mouse Genome Monthly Newsletters</a>
 </UL> </TD> </TR> </TABLE>
 
 <DL>
-<!--<dt><A NAME="nov04"></A><B>November, 2004</b></dt><dd><BLOCKQUOTE>
-Please take the time to respond to our 
-<A HREF="../other/mgi_survey.shtml">survey</A>. We want to hear from you!&nbsp;<IMG SRC="../images/new.gif">
+<dt><A NAME="nov04"></A><B>November, 2004</b></dt><dd><BLOCKQUOTE>
+<A HREF="3.02announce.shtml">Version 3.02</A> of MGI adds mouse cDNA clones from the <A HREF="http://image.llnl.gov/">I.M.A.G.E. Consortium</A> and the National Institute on Aging (<A HREF="http://lgsun.grc.nia.nih.gov/cDNA/cDNA.html">NIA, NIA 15K and NIA 7.4K</A>) sets.
 </BLOCKQUOTE>
-</dd>-->
+
+</dd>
 
 <dt><A NAME="oct04"></A><B>October, 2004</b></dt><dd><BLOCKQUOTE>
 Please take the time to respond to our 
@@ -63,17 +59,20 @@ Please take the time to respond to our
 </BLOCKQUOTE>
 </dd>
 
-<dt><A NAME="aug04"></A><B>August, 2004</b></dt><blockquote>
-<dd><A HREF="3.01announce.shtml">3.01 release announcement</A></dd></blockquote>
+<dt><A NAME="aug04"></A><B>August, 2004</b></dt>
+<dd><blockquote><A HREF="3.01announce.shtml">3.01 release announcement</A></blockquote></dd>
 
 
 <dt><A NAME="july04"></A><B>July, 2004</b></dt>
-<dd><ul><li><a href="http://www.informatics.jax.org/imsr">International Mouse Strain Resource (IMSR)</a> database update.<br>
-The IMSR is a catalog of mouse strain availability at facilities around the world. Currently, IMSR contains strain data from <A HREF="http://jaxmice.jax.org/info/index.html">JAX&reg; Mice (JAX)</A>, the <A HREF="http://www.mmrrc.org/">Mutant Mouse Regional Resource Centers (MMRRC)</a>, <!--the <A HREF="http://www.mgu.har.mrc.ac.uk/">MRC Mammalian Genetics Unit at Harwell</A>,--> the  <A HREF="http://cardb.cc.kumamoto-u.ac.jp/transgenic/index.jsp">Center for Animal Resources and Development (CARD)</A> in Japan, and the <A HREF="http://bio.lsd.ornl.gov/mouse/">Oak Ridge National Laboratory (ORNL) Mutant Mouse Database</A>. Other sites will be added soon.  Users can search for available strains by strain designation, strain status (e.g., live mice, cryopreserved embryos, sperm, etc.), mutations carried by a strain, and chromosome. The database provides strain holder information, links to information on specific strains and alleles, and links to the holder site for inquiries and order placement. We encourage participation of additional institutions and individuals who hold mice or cryopreserved embryos/gametes for distribution to participate by listing their holding in the IMSR. </li><br>
+<dd><br>
+<UL><LI><A HREF="http://www.informatics.jax.org/imsr">International Mouse Strain Resource (IMSR)</A> database update.<BR>
+The IMSR is a catalog of mouse strain availability at facilities around the world. Currently, IMSR contains strain data from <A HREF="http://jaxmice.jax.org/info/index.html">JAX&reg; Mice (JAX)</A>, the <A HREF="http://www.mmrrc.org/">Mutant Mouse Regional Resource Centers (MMRRC)</A>, <!--the <A HREF="http://www.mgu.har.mrc.ac.uk/">MRC Mammalian Genetics Unit at Harwell</A>,--> the  <A HREF="http://cardb.cc.kumamoto-u.ac.jp/transgenic/index.jsp">Center for Animal Resources and Development (CARD)</A> in Japan, and the <A HREF="http://bio.lsd.ornl.gov/mouse/">Oak Ridge National Laboratory (ORNL) Mutant Mouse Database</A>. Other sites will be added soon.  Users can search for available strains by strain designation, strain status (e.g., live mice, cryopreserved embryos, sperm, etc.), mutations carried by a strain, and chromosome. The database provides strain holder information, links to information on specific strains and alleles, and links to the holder site for inquiries and order placement. We encourage participation of additional institutions and individuals who hold mice or cryopreserved embryos/gametes for distribution to participate by listing their holding in the IMSR. </LI><BR>
 
-<li>MGI now links to Entrez Gene.<br>	
-The NCBI has introduced a new web resource, <A HREF="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=gene">Entrez Gene</A>, to replace Locus Link. Until the Locus Link resource is no longer available, MGI will provide links to both Entrez Gene and Locus Link web pages.</li><br>
-</ul></dd>
+<LI>MGI now links to Entrez Gene.<BR>	
+The NCBI has introduced a new web resource, <A HREF="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=gene">Entrez Gene</A>, to replace Locus Link. Until the Locus Link resource is no longer available, MGI will provide links to both Entrez Gene and Locus Link web pages.</LI><BR>
+</UL>
+
+</dd>
 
 <dt><A NAME="jun04"></A><B>June, 2004</b>
 <dd>
@@ -88,7 +87,7 @@ Bioinformatics</i>. A.D. Baxevanis, D.B. Davison, R. Page, G. Stormo and L. Stei
 Wiley & Sons, Inc., New York. </blockquote></dd>
 
 <dt><b><a name="mar04">March, 2004</b>
-<dd><ul>
+<dd><br><ul>
 <LI>New Prototype Tool for <I>in silico</I> Positional Candidate Analysis<br>
 The new <A HREF="http://proto.informatics.jax.org/prototypes/plad/">PositionaL candidate
 Analysis Display (PLAD) </A> tool provides a list of genes and SNPs within a
@@ -128,7 +127,7 @@ href="../nomen/anomalies.shtml">Rules for Nomenclature of Chromosome
 Aberrations</a>.</ul><br>-->
 
 <dt><B><A NAME="general">Other 2004 updates</A></B></dt>
-<dd>
+<dd><br>
 <UL>
  
 <li>We've added a <a href="http://proto.informatics.jax.org">Prototype Tools and
