@@ -1,0 +1,61 @@
+<HTML><HEAD>
+<TITLE>Gene Ontology Information</TITLE></HEAD>
+<!--#include file="include/banner.html"-->
+<BODY BGCOLOR="#FFFFFF">
+<BR>
+<BR>
+<A NAME="Annotating"></A><B><H2>Annotating to GO at MGI</H2></B>
+<P>
+MGI uses database-mining and other strategies to automate gene annotation.  The electronic annotations are attributed to MGI references J:56000, J:60000.
+</P>
+<P>
+In addition, scientific curators review the published literature and extract information to manually annotate gene records.  The annotated records include the supporting references.
+</P>
+Automated annotation strategies include:
+<UL>
+<LI>
+mapping the Enzyme Commission (EC) number associated with a gene to the EC number attached to GO terms
+</LI>
+<LI>
+translating SWISS-PROT "Keywords" associated with a gene to appropriate GO terms
+</LI>
+<LI>
+associating GO terms to a gene based upon proper gene nomenclature; for example, G-protein coupled receptor genes can be annotated as:
+</LI>
+<UL>
+<LI>
+Molecular Function:</TD><TD> G protein linked receptor</TD>             
+</LI>    
+<LI>
+Cellular Component: integral plasma membrane protein            
+</LI>    
+<LI>
+Biological Process: G protein linked receptor signalling pathway        
+</LI>
+</UL>
+</UL>    
+If you have questions, need assistance, or wish to report a problem with specific annotations, please contact MGI at mgi-help@informatics.jax.org.
+
+<BR>
+<BR>
+<HR><BR>
+<!--#include file="include/footer.html"-->
+</BODY></HTML>
+<!--
+WARRANTY DISCLAIMER AND COPYRIGHT NOTICE 
+
+    THE JACKSON LABORATORY MAKES NO REPRESENTATION ABOUT THE 
+    SUITABILITY OR ACCURACY OF THIS SOFTWARE OR DATA FOR ANY 
+    PURPOSE, AND MAKES NO WARRANTIES, EITHER EXPRESS OR IMPLIED, 
+    INCLUDING THE WARRANTIES OF MERCHANTABILITY AND FITNESS FOR 
+    A PARTICULAR PURPOSE OR THAT THE USE OF THIS SOFTWARE OR DATA 
+    WILL NOT INFRINGE ANY THIRD PARTY PATENTS, COPYRIGHTS, 
+    TRADEMARKS OF OTHER RIGHTS. IT IS PROVIDED "AS IS." 
+
+    This software and data are provided as a service to the scientific 
+    community to be used only for research and educational purposes. Any
+    commercial reproduction is prohibited without the prior written 
+    permission of The Jackson Laboratory. 
+
+    Copyright © 1996 The Jackson Laboratory All Rights Reserved 
+-->
