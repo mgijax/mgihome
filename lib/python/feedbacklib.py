@@ -796,8 +796,9 @@ class UserInput:
 		lines = []
 		for fieldname in fields:
 			item = self.__dict__[fieldname]
-			lines.append ('%s: %s' % (item.getLabel(),
-				cgi.escape(item.getValue())))
+			if item.getValue():
+				lines.append ('%s: %s' % (item.getLabel(),
+					cgi.escape(item.getValue())))
 		return string.join (lines, '\n')
 
 class SimpleTextUserInput (UserInput):
