@@ -19,6 +19,9 @@ import table		# for unescape() function only
 import homelib
 import CGI
 import errorlib
+import SimpleVocab
+
+SimpleVocab.set_sqlFunction (homelib.sql)
 
 submit_addr = 'mutants@informatics.jax.org'	# MGD Allele and Mutant E-mail
 
@@ -50,7 +53,7 @@ labels = {
 
 	'status'	: 'Status Requested',		# Status
 
-	'phenotype'	: 'Phenotypic Categories',	# Phenotype
+	'phenoslim'	: 'Phenotypic Categories',	# Phenotype
 	'othercategory'	: 'Other Classification',
 	'description'	: 'Description',
 	'remarks'	: 'Other Remarks',
@@ -87,7 +90,7 @@ field_order = [
 		'method', 'othermethod', 'promoter', 'celline',
 		'mode', 'chromosome', 'location']),
 	('Phenotype',
-		['phenotype', 'othercategory', 'description', 'remarks']),
+		['phenoslim', 'othercategory', 'description', 'remarks']),
 	('Status',
 		['status']),
 	('References',
@@ -105,6 +108,24 @@ Subject: %s
 
 '''
 
+def convertPhenoslim (dict):
+	if not dict.has_key('phenoslim'):
+		return
+
+	ps = SimpleVocab.PhenoSlimVocab()
+	terms = {}
+	for term in ps.getTerms():
+		terms[str(term.getKey())] = term.getTerm()
+
+	if type(dict['phenoslim']) != types.ListType:
+		dict['phenoslim'] = terms[dict['phenoslim']]
+	else:
+		list = []
+		for key in dict['phenoslim']:
+			list.append (terms[key])
+		dict['phenoslim'] = list
+	return
+
 class myCGI (CGI.CGI):
 	def main(self):
 		parms = self.get_parms()
@@ -121,6 +142,7 @@ class myCGI (CGI.CGI):
 				string.join (homelib.footer(), '\n '))
 			sys.exit (0)
 		message = []
+		convertPhenoslim (parms)
 		for (heading, fieldlist) in field_order:
 			section = [
 				'-' * len(heading),
