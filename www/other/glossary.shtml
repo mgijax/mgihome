@@ -18,7 +18,7 @@
 <A HREF="http://www.informatics.jax.org/mgihome/support/tjl_inbox.shtml">MGI User Support</A>.
 <P>There are an number of useful online glossaries in addition to this one:
 <UL>
-<LI>The <A HREF="../searches/anatdict_form.shtml">Mouse Anatomical Dictionary</A> displays anatomical terms of the mouse in a hierarchical manner for a series of developmental stages, using <A HREF="http://genex.hgu.mrc.ac.uk/Databases/Anatomy/">standard anatomical nomenclature</A>.</LI>
+<LI>The <A HREF="<!--#include file='include/wi_url.html'-->/searches/anatdict_form.shtml">Mouse Anatomical Dictionary</A> displays anatomical terms of the mouse in a hierarchical manner for a series of developmental stages, using <A HREF="http://genex.hgu.mrc.ac.uk/Databases/Anatomy/">standard anatomical nomenclature</A>.</LI>
 <LI>The <A HREF="http://genome-www.stanford.edu/GO/GO.defs.txt">GO Term Definitions</A> page provides current definitions of all terms used in the Gene Ontology Project.</LI>
 <LI>The <A HREF="http://www.nhgri.nih.gov/DIR/VIP/Glossary/pub_glossary.cgi">Glossary of Genetic Terms</A> at the National Human Genome Research Institute defines basic genetic terms most relevant to human genetics. This glossary includes audio explanations and illustrations.</LI>
 <LI>The <A HREF="http://www.ornl.gov/TechResources/Human_Genome/publicat/glossary.html">Genome Glossary</A> for the Human Genome Project defines many basic genetic terms.</LI>
@@ -67,17 +67,17 @@ and thus a normal component of <A HREF="#DNA">DNA</A> and <A HREF="#RNA">RNA</A>
 (eumelanin) at the tip and the base, and a band of yellow pigment (phaeomelanin) in the middle. This 
 coloration has the effect of softening the visual outline of a mammal in the wild, making it harder to 
 see than an animal of solid color. See the MLC entry for the 
-<A HREF="../searches/mlc.cgi?3">non-agouti</A> gene for pictures.
+<A HREF="<!--#include file='include/wi_url.html'-->/searches/mlc.cgi?3">non-agouti</A> gene for pictures.
 
 <p><DT><B><A NAME="algorithm"></A>Algorithm</B>
 <DD>A detailed sequence of actions to perform to accomplish some task. Technically, an algorithm must reach a result after a finite number of steps, thus ruling out brute force search methods for certain problems, though some might claim that brute force search was also a valid (generic) algorithm. 
 The term is also used loosely for any sequence of actions (which may or may not terminate).
 
 <P><DT><B><A NAME="alias"></A>Alias</B>
-<DD>In <A HREF="#MGI">MGI</A>, an alternative <A HREF="#gene_symbol">symbol</A> or <A HREF="#gene_name">name</A> for part of the sequence of a known <A HREF="#gene">gene</A> that resembles names for other <A HREF="#anonymous_DNA">anonymous DNA segments</A>. For example, <A HREF="http://www.informatics.jax.org/searches/accession_report.cgi?id=MGI:100358">D6Mit236</A> is an alias for  <A HREF="http://www.informatics.jax.org/searches/accession_report.cgi?id=MGI:88388">Cftr</A>.
+<DD>In <A HREF="#MGI">MGI</A>, an alternative <A HREF="#gene_symbol">symbol</A> or <A HREF="#gene_name">name</A> for part of the sequence of a known <A HREF="#gene">gene</A> that resembles names for other <A HREF="#anonymous_DNA">anonymous DNA segments</A>. For example, <A HREF="http://www.informatics.jax.org/searches/accession_report.cgi?id=MGI:100358">D6Mit236</A> is an alias for  <A HREF="<!--#include file='include/wi_url.html'-->/searches/accession_report.cgi?id=MGI:88388">Cftr</A>.
 
 <P><DT><B><A NAME="allele_name">Allele Name</A></B>
-<DD>In<A HREF="#MGI">MGI</A>, an "allele name" is a word or phrase that uniquely identifies an <A HREF="#allele">allele</A> of a given <A HREF="#gene">gene</A>. The allele name has an abbreviation that is the <A HREF="#allele_symbol">allele symbol</A> added as a superscript to the <A HREF="#gene_symbol">gene symbol</A>. See also <A HREF="#gene_name">Gene Name</A>.
+<DD>In<A HREF="#MGI">MGI</A>, an "allele name" is a word or phrase that uniquely identifies an allele of a given <A HREF="#gene">gene</A>. The allele name has an abbreviation that is the <A HREF="#allele_symbol">allele symbol</A> added as a superscript to the <A HREF="#gene_symbol">gene symbol</A>. See also <A HREF="#gene_name">Gene Name</A>.
 
 <P><DT><B><A NAME="allele_symbol">Allele Symbol</A></B>
 <DD>As used in <A HREF="#MGI">MGI</A>, an "allele symbol" is a unique abbreviation for the <A HREF="#allele_name">allele name</A>. Allele symbols take the form of superscripts added to the <A HREF="#gene_symbol">gene symbol</A>. See also <A HREF="#allele_name">Allele Name</A>, <A HREF="#gene_name">Gene Name</A>, <A HREF="#gene_symbol">Gene Symbol</A>.
@@ -127,7 +127,7 @@ HREF="http://www.nhgri.nih.gov/DIR/VIP/Glossary/Illustration/antibody.html">Figu
 <DD>A <A HREF="#protein">protein</A> or other molecule that can elicit an immune response; the <A HREF="#antibody">antibody</A> protein that is produced binds to the antigen.
 
 <P><DT><B><A NAME="antimorphic">Antimorphic Mutation</A></B>
-<DD>A type of <A HREF="#mutation">mutation</A> in which the altered <A HREF="#gene_product">gene product</A> possesses an altered <A HREF="#molecular_function">molecular function</A> that acts antagonistically to the <A HREF="#wild_type">wild-type</A> <A HREF="#allele">allele</A>. Antimorphic mutations are always <A HREF="#dominant">dominant</A> or <A HREF="#semidominant">semidominant</A>. <BR>See also:<UL>
+<DD>A type of <A HREF="#mutation">mutation</A> in which the altered <A HREF="#gene_product">gene product</A> possesses an altered <A HREF="#molecular_function">molecular function</A> that acts antagonistically to the <A HREF="#wild_type">wild-type</A> <A HREF="#allele_name">allele</A>. Antimorphic mutations are always <A HREF="#dominant">dominant</A> or <A HREF="#semidominant">semidominant</A>. <BR>See also:<UL>
 <LI><A HREF="#amorphic">Amorphic Mutation</A></LI><LI><A HREF="#gain-of-function">Gain-of-function 
 Mutation</A></LI><LI><A HREF="#hypermorphic">Hypermorphic Mutation</A></LI><LI><A HREF="#hypomorphic">Hypomorphic Mutation</A></LI><LI><A HREF="#loss-of-function">Loss-of-function Mutation</A></LI><LI><A HREF="#neomorphic">Neomorphic Mutation</A></LI><LI><A HREF="#null_mutation">Null Mutation</A></LI></UL>
 
@@ -140,7 +140,8 @@ strand represented in <A HREF="#mRNA">mRNA</A>.<BR>2. In molecular biology, an <
 
 <P><DT><B><A NAME="approved">Approved</A></B>
 <DD>With respect to a <A HREF="#gene_symbol">gene symbol</A>, <A HREF="#gene_name">gene name</A>, <A HREF="#allele_symbol">allele symbol</A>, or
-<A HREF="#allele_name">allele name</A> within MGI, an "approved" symbol or name is one that has been assigned by the <A HREF="<!--#include file='include/mgihome_url.html'-->/nomen/">International Nomenclature Committee</A>.
+<A HREF="#allele_name">allele name</A> within MGI, an "approved" symbol or name is one that has been assigned by the 
+<A HREF="../nomen/">International Nomenclature Committee</A>.
 
 <P><DT><B><A NAME="assay"></A>Assay</B>
 <DD>In general, the qualitative or quantitative analysis of a substance. In 
@@ -324,7 +325,7 @@ incorporated into the <A HREF="#cloning_vector">cloning vector</A>.
 
 <P><DT><B><A NAME="codominant">Codominant</A></B>
 <DD>One of a series of terms applied to the <A HREF="#phenotype">phenotypic</A> effect of a particular
-<A HREF="#allele">allele</A> in reference to another allele (usually the standard
+<A HREF="#allele_name">allele</A> in reference to another allele (usually the standard
 <A HREF="#wild_type">wild-type</A> allele) with respect to a given <A HREF="#trait">trait</A>.
 An allele "a" is said to be codominant with respect to the wild-type allele "A" if the A/a
 <A HREF="#heterozygote">heterozygote</A> fully expresses both of the
@@ -342,7 +343,7 @@ at <A HREF="#NHGRI">NHGRI</A>. See also <A HREF="#central_dogma">Central Dogma</
 <DD>A strain that differs from a particular <A HREF="#inbred_strain">inbred strain</A> at only one
 <A HREF="#locus">locus</A>. A coisogenic strain arises when a <A HREF="#mutation">mutation</A> occurs in an inbred 
 strain. The coisogenic strain can be propagated by <A HREF="#intercross">intercrossing</A> <A HREF="#heterozygote">heterozygotes</A> to produce <A HREF="#homozygote">homozygotes</A>; if these are nonviable the strain can be maintained by <A HREF="#backcross">backcrossing</A> heterozygotes to the original <A HREF="#inbred_strain">inbred strain</A>. See also the
-<A HREF="<!--#include file='include/mgihome_url.html'-->/nomen/strains.shtml#Inbred">Rules for the Nomenclature of Inbred Strains</A>.
+<A HREF="../nomen/strains.shtml#Inbred">Rules for the Nomenclature of Inbred Strains</A>.
 
 <P><DT><B><A NAME="colloidal_gold">Colloidal Gold</A></B>
 <DD>Fine particles of gold (on the order of 5-20 nm diameter) that can be coupled to <A HREF="#antibody">antibodies</A> or other
@@ -355,8 +356,7 @@ strain. The coisogenic strain can be propagated by <A HREF="#intercross">intercr
 <P><DT><B><A NAME="complementation">Complementation</A></B>
 <DD>The appearance of a <A HREF="#wild_type">wild-type</A> <A HREF="#phenotype">phenotype</A> in an individual that is the
 <A HREF="#hybrid">hybrid</A> offspring of two <A HREF="#mutant">mutant</A> individuals <A HREF="#homozygous">homozygous</A> for
-<A HREF="#recessive">recessive</A> <A HREF="#mutation">mutations</A>. Complementation shows that the two parental mutant individuals have mutant <A HREF="#allele">alleles</A> of different <A HREF="#gene">genes</A>, even if they are phenotypically similar. For example, a cross between two light gray mice (<I>ash/ash</I> and <I>d/d</I>) would produce a black mouse (<I>ash/+ d/+</I>); see the
-<A HREF="../images/mlc/d_dsu_ash.gif">Image</A> in the <A HREF="#MLC">MLC</A>.
+<A HREF="#recessive">recessive</A> <A HREF="#mutation">mutations</A>. Complementation shows that the two parental mutant individuals have mutant <A HREF="#allele_name">alleles</A> of different <A HREF="#gene">genes</A>, even if they are phenotypically similar. For example, a cross between two light gray mice (<I>ash/ash</I> and <I>d/d</I>) would produce a black mouse (<I>ash/+ d/+</I>); see the <A HREF="<!--#include file='include/wi_url.html'-->/images/mlc/d_dsu_ash.gif">Image</A> in the <A HREF="#MLC">MLC</A>.
 
 <P><DT><B><A NAME="complex">Complex/Cluster/Region</A></B>
 <DD>In <A HREF="#MGI">MGI</A>, the <A HREF="#marker">marker</A> type "Complex/Cluster/Region" is used to refer to any of the following:<P>
@@ -371,21 +371,21 @@ strain. The coisogenic strain can be propagated by <A HREF="#intercross">intercr
 <DD> An <A HREF="#inbred_strain">inbred strain</A> of mouse that contains a small genetic region (ideally a single
 <A HREF="#gene">gene</A>)from another strain, but which is otherwise identical to the original <A HREF="#inbred_strain">inbred strain</A>. Congenic strains are derived by backcrossing to a parental inbred strain for at least ten generations while selecting for <A HREF="#heterozygous">heterozygosity</A> at a particular <A HREF="#locus">locus</A>.
 <A HREF="http://jaxmice.jax.org/jaxmice-cgi/jaxmicedb.cgi?objtype=pricedetail&stock=000140">A.BY-H2<SUP>b</SUP> H2-T18b/SnJ</A>
-is a congenic strain. See also the <A HREF="<!--#include file='include/mgihome_url.html'-->/nomen/strains.shtml#Inbred">Rules 
+is a congenic strain. See also the <A HREF="../nomen/strains.shtml#Inbred">Rules 
 for the Nomenclature of Inbred Strains</A>.
 
 <P><DT><B><A NAME="conplastic">Conplastic</A></B>
 <DD>Conplastic strains are developed by backcrossing the <A HREF="#nucleus">nuclear</A> <A HREF="#genome">genome</A> from one
 <A HREF="#inbred_strain">inbred strain</A> into the <A HREF="#cytoplasm">cytoplasm</A> of another, i.e. the
 <A HREF="#mitochondria">mitochondrial</A> parent is always the female parent during the <A HREF="#backcross">backcrossing</A> program. The strain designation is NUCLEAR GENOME-mtCYTOPLASMIC GENOME. For example, C57BL/6J-mtBALB/c is a strain with the nuclear genome of C57BL/6J and the cytoplasmic genome of BALB/c. It was developed by crossing male C57BL/6J mice with BALB/c females, followed by repeated backcrossing of female offspring to male C57BL/6J. As with <A HREF="#congenic">congenic</A> strains, a minimum of 10 backcross generations is required, counting the F1 generation as generation 1. See also the
-<A HREF="<!--#include file='include/mgihome_url.html'-->/nomen/strains.shtml#Inbred">Rules for the Nomenclature of Inbred Strains</A>.
+<A HREF="../nomen/strains.shtml#Inbred">Rules for the Nomenclature of Inbred Strains</A>.
 
 <P><DT><B><A NAME="conserved_synteny">Conserved synteny</A></B>
 <DD>The occurrence of <A HREF="#synteny">synteny</A> of <A HREF="#ortholog">orthologous</A> <A HREF="#gene">genes</A> in two different organisms. Conserved synteny between mouse and human does not usually extend over entire <A HREF="#chromosome">chromosomes</A>, with the exception of the <A HREF="#X_chromosome">X chromosome</A>. See the
-<A HREF="../searches/oxfordgrid_form.shtml">Oxford Grid</A> for a graphical display of conserved synteny.
+<A HREF="<!--#include file='include/wi_url.html'-->/searches/oxfordgrid_form.shtml">Oxford Grid</A> for a graphical display of conserved synteny.
 
 <P><DT><B><A NAME="consomic">Consomic</A></B>
-<DD>An <A HREF="#inbred_strain">inbred strain</A> of mouse that contains a single entire <A HREF="#chromosome">chromosome</A> from another strain. See also the <A HREF="<!--#include file='include/mgihome_url.html'-->/nomen/strains.shtml#Inbred">Rules 
+<DD>An <A HREF="#inbred_strain">inbred strain</A> of mouse that contains a single entire <A HREF="#chromosome">chromosome</A> from another strain. See also the <A HREF="../nomen/strains.shtml#Inbred">Rules 
 for the Nomenclature of Inbred Strains</A>.
 
 <P><DT><B><A NAME="contig">Contig</A></B>
@@ -518,7 +518,7 @@ at <A HREF="#NHGRI">NHGRI</A>.See also <A HREF="#central_dogma">Central Dogma</A
 <P><DT><B><A NAME="DNA_mapping_panel">DNA Mapping Panel</A></B>
 <DD>A data set obtained by DNA typing of <A HREF="#polymorphism">polymorphic</A> <A HREF="#marker">markers</A> in
 <A HREF="#backcross">backcrosses</A> of <A HREF="#hybrid">hybrid</A> mice. See the DNA Mapping Panel Data Sets
-<A HREF="../searches/crossdata_form.shtml">Query Form</A> at <A HREF="#MGI">MGI</A>.
+<A HREF="<!--#include file='include/wi_url.html'-->/searches/crossdata_form.shtml">Query Form</A> at <A HREF="#MGI">MGI</A>.
 
 <P><DT><B><A NAME="DNA_methylation"></A>DNA Methylation</B>
 <DD>Attachment of methyl groups (-CH<SUB>3</SUB>) to <A HREF="#DNA">DNA</A>, most commonly at the cytosine 
@@ -539,7 +539,8 @@ most commonly represent <A HREF="#intergenic">intergenic</A> <A HREF="#marker">m
 
 <!--addition of x-refs 1/19 to Dominant  -->
 <P><DT><B><A NAME="dominant">Dominant</A></B>
-<DD>One of a series of terms applied to the <A HREF="#phenotype">phenotypic</A> effect of a particular <A HREF="#allele">allele</A> in reference to another allele (usually the standard <A HREF="#wild_type">wild-type</A> allele) with respect to a given <A HREF="#trait">trait</A>. An allele "A" is said to be dominant with respect to the allele "a" if the A/A <A HREF="#homozygote">homozygote</A> and the A/a <A HREF="#heterozygote">heterozygote</A> are phenotypically identical and different from the a/a homozygote. An example is the <A HREF="../searches/mlc.cgi?12398">Pmp22(Tr)</A> <A HREF="#mutation">mutation</A> in mouse, which causes a myelination defect associated with a "trembler" phenotype. Pmp22(Tr)/Pmp22(Tr) and Pmp22(Tr)/Pmp22(+) animals are phenotypically identical, displaying the <A HREF="#mutant">mutant</A> phenotype, while Pmp22(+)/Pmp22(+) animals are
+<DD>One of a series of terms applied to the <A HREF="#phenotype">phenotypic</A> effect of a particular <A HREF="#allele_name">allele</A> in reference to another allele (usually the standard <A HREF="#wild_type">wild-type</A> allele) with respect to a given <A HREF="#trait">trait</A>. An allele "A" is said to be dominant with respect to the allele "a" if the A/A <A HREF="#homozygote">homozygote</A> and the A/a <A HREF="#heterozygote">heterozygote</A> are phenotypically identical and different from the a/a homozygote. An example is the 
+<A HREF="<!--#include file='include/wi_url.html'-->/searches/mlc.cgi?12398">Pmp22(Tr)</A> <A HREF="#mutation">mutation</A> in mouse, which causes a myelination defect associated with a "trembler" phenotype. Pmp22(Tr)/Pmp22(Tr) and Pmp22(Tr)/Pmp22(+) animals are phenotypically identical, displaying the <A HREF="#mutant">mutant</A> phenotype, while Pmp22(+)/Pmp22(+) animals are
 <A HREF="#wild_type">wild-type</A>. See also <A HREF="#codominant">Codominant</A>,
 <A HREF="#recessive">Recessive</A>, <A HREF="#semidominant">Semidominant</A>.
 
@@ -601,7 +602,7 @@ See also <A HREF="#imprinting">Imprinting</A>.
 <DD>A <A HREF="#plasmid">plasmid</a> able to integrate into bacterial <a href="#DNA">DNA</a>.
 
 <P><DT><B><A NAME="epistasis">Epistasis</A></B>
-<DD>Masking of a <A HREF="#phenotype">phenotypic</A> <A HREF="#trait">trait</A> through the action of a <A HREF="#mutation">mutant</A> <A HREF="#allele">allele</A>. For example, albinism (absence of pigment) is epistatic to coat color 
+<DD>Masking of a <A HREF="#phenotype">phenotypic</A> <A HREF="#trait">trait</A> through the action of a <A HREF="#mutation">mutant</A> <A HREF="#allele_name">allele</A>. For example, albinism (absence of pigment) is epistatic to coat color 
 <A HREF="#gene">genes</A> that determine black vs. brown fur. 
 
 <P><DT><B><A NAME="ES_cells">ES Cells</A></B>
@@ -615,7 +616,7 @@ See also <A HREF="#imprinting">Imprinting</A>.
 <DD>A fluorescent dye that intercalates between <A HREF="#base_pair">base pairs</A> in double-stranded 
 <A HREF="#nucleic_acid">nucleic acids</A> or between <A HREF="#base">bases</A> in single-stranded 
 nucleic acids. Ethidium bromide is commonly used to visualize <A HREF="#DNA">DNA</A> on agarose gels. 
-See one of the <A HREF="../searches/image.cgi?1099">Figures</A> in <A HREF="#GXD">GXD</A> for an example.
+See one of the <A HREF="<!--#include file='include/wi_url.html'-->/searches/image.cgi?1099">Figures</A> in <A HREF="#GXD">GXD</A> for an example.
 <P><DT><B><A NAME="euchromatin">Euchromatin</A></B><DD>The part of the <A HREF="#genome">genome</A> 
 characterized by relatively high <A HREF="#gene">gene</A> density and relative absence of highly 
 repetitive sequences. See also <A HREF="#heterochromatin">Heterochromatin</A>.
@@ -692,10 +693,11 @@ the following:<P> <OL><LI> A <A HREF="#locus">locus</A> in the nuclear <A HREF="
 product upon <A HREF="#transcript">transcript</A> <A HREF="#RNA_processing">processing</A> of the host unit. For example, Rnu73a and Rnu73b are contained in introns of Rsp3a.</OL>
 
 <P><DT><B><A NAME="gene_complex">Gene Complex</A></B>
-<DD>A number of apparently functionally or <A HREF="#evolution">evolutionarily</A> related <A HREF="#locus">loci</A> that are genetically closely <A HREF="#linkage">linked</A>. Alternative states of complexes are referred to as <A HREF="#haplotype">haplotypes</A> rather than <A HREF="#allele">alleles</A>. See <A HREF="../searches/mlc.cgi?9503">H2</A> for an example.
+<DD>A number of apparently functionally or <A HREF="#evolution">evolutionarily</A> related <A HREF="#locus">loci</A> that are genetically closely <A HREF="#linkage">linked</A>. Alternative states of complexes are referred to as <A HREF="#haplotype">haplotypes</A> rather than <A HREF="#allele_name">alleles</A>. 
+See <A HREF="<!--#include file='include/wi_url.html'-->/searches/mlc.cgi?9503">H2</A> for an example.
 
 <P><DT><B><A NAME="gene_conversion">Gene Conversion</A></B>
-<DD>A type of <A HREF="#recombination">nonreciprocal recombination</A> event in which a recipient strand of <A HREF="#DNA">DNA</A> receives information from another strand having an <A HREF="#allele">allelic</A> difference. The recipient strand has its original allele "converted" to the new allele as a consequence of the event.
+<DD>A type of <A HREF="#recombination">nonreciprocal recombination</A> event in which a recipient strand of <A HREF="#DNA">DNA</A> receives information from another strand having an <A HREF="#allele_name">allelic</A> difference. The recipient strand has its original allele "converted" to the new allele as a consequence of the event.
 
 <P><DT><B><A NAME="gene_expression">Gene Expression</A></B>
 <DD><A HREF="#transcription">Transcriptional</A> activity of a <A HREF="#gene">gene</A> resulting in one or more
@@ -765,12 +767,12 @@ One of several databases integrated into <A HREF="#MGI">MGI</A>, containing data
 <A HREF="#diploid">Diploid</A>.
 
 <P><DT><B><A NAME="haploinsufficient">Haploinsufficient</A></B>
-<DD>A description applied to a <A HREF="#gene">gene</A> that produces a <A HREF="#mutant">mutant</A> <A HREF="#phenotype">phenotype</A> when present in a <A HREF="#diploid">diploid</A> individual <A HREF="#heterozygous">heterozygous</A> for an <A HREF="#amorphic">amorphic</A> <A HREF="#allele">allele</A>.
+<DD>A description applied to a <A HREF="#gene">gene</A> that produces a <A HREF="#mutant">mutant</A> <A HREF="#phenotype">phenotype</A> when present in a <A HREF="#diploid">diploid</A> individual <A HREF="#heterozygous">heterozygous</A> for an <A HREF="#amorphic">amorphic</A> <A HREF="#allele_name">allele</A>.
 
 <P><DT><B><A NAME="haplotype">Haplotype</A></B>
 <DD>One of the alternative forms of the <A HREF="#genotype">genotype</A> of a <A HREF="#gene_complex">gene complex</A>. This term is 
-applied to gene complexes rather than the term <A HREF="#allele">allele</A>, which refers to one of the forms of a single
-<A HREF="#gene">gene</A>. See <A HREF="../searches/mlc.cgi?9503">H2</A> for an example.
+applied to gene complexes rather than the term <A HREF="#allele_name">allele</A>, which refers to one of the forms of a single
+<A HREF="#gene">gene</A>. See <A HREF="<!--#include file='include/wi_url.html'-->/searches/mlc.cgi?9503">H2</A> for an example.
 
 <P><DT><B><A NAME="hemizygous">Hemizygous</A></B>
 <DD>The state of a <A HREF="#gene">gene</A> present in only one copy in a <A HREF="#diploid">diploid</A> cell, such as a gene on the
@@ -802,7 +804,8 @@ Heteropolymers can also be made experimentally, using subunits derived from diff
 <dd>A description of a structure in which things are organised into a <a href="#hierarchy">hierarchy</a>. 
 
 <P><DT><B><A NAME="hierarchy">Hierarchy</A></B>
-<dd>An organisation with few things, or one thing, at the top and with several things below each other thing. An inverted tree structure. An example in computing is a directory hierarchy where each directory may contain files or other directories. In <A HREF="#MGI">MGI</A>, it refers to terms in a <A HREF="#controlled_vocabulary">controlled vocabulary</A> such as ones containing <A HREF="#gene_ontology">Gene Ontology (GO)</A> terms or to the <A HREF="../searches/anatdict_form.shtml">Mouse Anatomical Dictionary</A> which displays anatomical terms of the mouse in a <a href="#hierarchical">hierarchical</a> manner for a series of developmental stages, using <A HREF="http://genex.hgu.mrc.ac.uk/Databases/Anatomy/">standard anatomical nomenclature</A>. See also: <A HREF="#ancestor">Ancestor</A>, <a HREF="#child">Child</A>, <a HREF="#parent">Parent</A>, <A HREF="#sibling">Sibling</A>.
+<dd>An organisation with few things, or one thing, at the top and with several things below each other thing. An inverted tree structure. An example in computing is a directory hierarchy where each directory may contain files or other directories. In <A HREF="#MGI">MGI</A>, it refers to terms in a <A HREF="#controlled_vocabulary">controlled vocabulary</A> such as ones containing <A HREF="#gene_ontology">Gene Ontology (GO)</A> terms or to the 
+<A HREF="<!--#include file='include/wi_url.html'-->/searches/anatdict_form.shtml">Mouse Anatomical Dictionary</A> which displays anatomical terms of the mouse in a <a href="#hierarchical">hierarchical</a> manner for a series of developmental stages, using <A HREF="http://genex.hgu.mrc.ac.uk/Databases/Anatomy/">standard anatomical nomenclature</A>. See also: <A HREF="#ancestor">Ancestor</A>, <a HREF="#child">Child</A>, <a HREF="#parent">Parent</A>, <A HREF="#sibling">Sibling</A>.
 
 <P><DT><B><A NAME="homogametic">Homogametic</A></B>
 <DD>Producing a single type of <A HREF="#euploid">euploid</A> <A HREF="#gamete">gametes</A> with respect to <A HREF="#chromosome">chromosomal</A> content. This term is applied to one of the sexes in species with chromosomal sex determination; in mammals, females are homogametic. See also <A HREF="#heterogametic">Heterogametic</A>, <A HREF="#X_chromosome">X chromosome</A>,
@@ -818,7 +821,8 @@ degree of similarity and that are located at corresponding positions on <A HREF=
 
 <P><DT><B><A NAME="homology">Homology</A></B>
 <dd><ol><li>The relationship of any two characters that have descended from a common <A HREF="#ancestor">ancestor</A>. This term   can apply to a morphological structure, a <A HREF="#chromosome">chromosome</a> or an individual <A HREF="#gene">gene</a> or 
-<A HREF="#DNA_segment">DNA segment</a>.<li>In MGI, assertions of <a href="../menus/homology_menu.shtml">Mammalian Homology</a> imply   presumed orthology.&nbsp; See the   <A HREF="http://www.ncbi.nlm.nih.gov/Education/BLASTinfo/Orthology.html">Figure</A> at NCBI.   See also: <A HREF="#homolog">Homolog</A>, <A HREF="#orthology">Orthology</A>,   <A HREF="#paralogy">Paralogy</A>.</ol>
+<A HREF="#DNA_segment">DNA segment</a>.<li>In MGI, assertions of 
+<A HREF="<!--#include file='include/wi_url.html'-->/menus/homology_menu.shtml">Mammalian Homology</a> imply presumed orthology.&nbsp; See the   <A HREF="http://www.ncbi.nlm.nih.gov/Education/BLASTinfo/Orthology.html">Figure</A> at NCBI.   See also: <A HREF="#homolog">Homolog</A>, <A HREF="#orthology">Orthology</A>,   <A HREF="#paralogy">Paralogy</A>.</ol>
 
 <P><DT><B><A NAME="homozygote">Homozygote</A></B>
 <DD>An individual that is <A HREF="#homozygous">homozygous</A>.
@@ -893,7 +897,8 @@ Fixed cells or tissue on a microscope slide, made permeable if necessary with a 
 <A HREF="#antibody">antibody</A> to the specific protein to be assayed. The preparation is then treated with a 
 secondary antibody that has been coupled to an <A HREF="#enzyme">enzyme</A> and which is directed 
 against the primary antibody (e.g., goat anti-rabbit antibody). The preparation is then treated with a
-<A HREF="#chromogenic">chromogenic</A><A HREF="#substrate">substrate</A>. Microscopic examination reveals the presence of staining, and hence of the specific protein to be detected. See one of the <A HREF="../searches/image.cgi?1931">Figures</A> from
+<A HREF="#chromogenic">chromogenic</A><A HREF="#substrate">substrate</A>. Microscopic examination reveals the presence of staining, and hence of the specific protein to be detected. See one of the 
+<A HREF="<!--#include file='include/wi_url.html'-->/searches/image.cgi?1931">Figures</A> from
 <A HREF="#GXD">GXD</A> for an example.
 
 <P><DT><B><A NAME="immunological_cross-reaction">Immunological Cross-reaction</A></B>
@@ -903,7 +908,7 @@ proteins and can be evidence of <A HREF="#homology">homology</A>.
 
 <P><DT><B><A NAME="imprinting">Imprinting</A></B>
 <DD>An <A HREF="#epigenetic">epigenetic</A> modification of <A HREF="#gene">genes</A> that identifies a given gene 
-as having been inherited from the maternal or paternal parent. In mammals, some genes are <A HREF="#gene_expression">expressed</A> primarily from the maternally-inherited or paternally-inherited <A HREF="#allele">alleles</A> as a consequence of imprinting.
+as having been inherited from the maternal or paternal parent. In mammals, some genes are <A HREF="#gene_expression">expressed</A> primarily from the maternally-inherited or paternally-inherited <A HREF="#allele_name">alleles</A> as a consequence of imprinting.
 
 <P><DT><B><A NAME="inbred_strain">Inbred Strain</A></B>
 <DD>A strain that is essentially <A HREF="#homozygous">homozygous</A> at all loci. In mice, a strain produced from brother-sister
@@ -933,7 +938,7 @@ matings for at least 20 sequential generations. C57BL/6J is a widely-used <A HRE
 <P><DT><B><A NAME="in_situ"><I>In situ</I> Hybridization</A></B>
 <DD>A method of detecting the presence of specific <A HREF="#nucleic_acid">nucleic acid</A> sequences within a cytological preparation. A <A HREF="#DNA">DNA</A> or <A HREF="#RNA">RNA</A> <A HREF="#probe">probe</A> is labeled radioactively or chemically and <A HREF="#hybridization">hybridized</A> to a cytological preparation to detect RNA or to a <A HREF="#denaturation">denatured</A> cytological preparation to detect DNA. The hybridization is detected by <A HREF="#autoradiography">autoradiography</A> (for 
 radioactive probes) or by <A HREF="#chromogenic">chromogenic</A> reactions or fluorescence (for chemically-labeled probes).
-See one of the <A HREF="../searches/image.cgi?1760">Figures</A> from <A HREF="#GXD">GXD</A> for an example. See also <A HREF="#FISH">FISH</A>.
+See one of the <A HREF="<!--#include file='include/wi_url.html'-->/searches/image.cgi?1760">Figures</A> from <A HREF="#GXD">GXD</A> for an example. See also <A HREF="#FISH">FISH</A>.
 
 <P><DT><B><A NAME="intercross">Intercross</A></B>
 <DD>A <A HREF="#cross">cross</A> between two identically <A HREF="#hybrid">hybrid</A> individuals (A/a X A/a). 
@@ -1097,7 +1102,7 @@ Mutation</A></LI>
 <A HREF="#marker">markers</A>, in which a daughter cell becomes
 <A HREF="#homozygous">homozygous</A> or
 <A HREF="#hemizygous">hemizygous</A> for one or more
-<A HREF="#allele">alleles</A> through mitotic
+<A HREF="#allele_name">alleles</A> through mitotic
 <A HREF="#recombination">recombination</A>,
 <A HREF="#deletion">deletion</A>, or
 <A HREF="#gene_conversion">gene conversion</A>. "Loss 
@@ -1159,7 +1164,7 @@ to create a replica of a gel for
 <P><DT><B><A NAME="mendelian">Mendelian</A></B>
 <DD>1. That type of inheritance in which a specific
 <A HREF="#trait">trait</A> is affected by a set of
-<A HREF="#allele">alleles</A> of a single
+<A HREF="#allele_name">alleles</A> of a single
 <A HREF="#gene">gene</A>.<BR>
 2. That type of inheritance in which genetic information is 
 transmitted by one or more
@@ -1237,12 +1242,9 @@ the mitochondrial genome uses an alternate
 <A HREF="#genetic_code">genetic code</A>.
 
 <P><DT><B><A NAME="mitochondrial">Mitochondrial gene</A></B>
-<DD>A
-<A HREF="#gene">gene</A> contained within the mitochondrial
-<A HREF="#genome">genome</A> of a eukaryote, 
-transmitted independently of the nuclear
-genome. The mitochondrial genome is transmitted maternally (from the 
-female parent).
+<DD>A <A HREF="#gene">gene</A> contained within the mitochondrial <A HREF="#genome">genome</A> of a eukaryote, 
+transmitted independently of the nuclear genome. The mitochondrial genome is transmitted maternally (from the 
+female <a href="parent">parent</a>).
 
 <P><DT><B><A NAME="mitosis">Mitosis</A></B>
 <DD>The division of the replicated
@@ -1262,7 +1264,7 @@ at
 mutations in the mouse. It also contains brief
 summaries of information on some
 <A HREF="#gene">genes</A> for which no mutant
-<A HREF="#allele">alleles</A> are known.
+<A HREF="#allele_name">alleles</A> are known.
 
 <P><DT><B><A NAME="mobile_genetic">Mobile Genetic Element</A></B>
 <DD>A
@@ -1305,7 +1307,7 @@ male mice are monosomic for the
 <A HREF="#genotype">genotypes</A>. One example is that 
 of a normal female mammal
 <A HREF="#heterozygous">heterozygous</A> for different
-<A HREF="#allele">alleles</A> of
+<A HREF="#allele_name">alleles</A> of
 <A HREF="#X_chromosome">X-chromosome</A>
 <A HREF="#gene">genes</A>; because of the process of
 <A HREF="#X_inactivation">X-inactivation</A>, such 
@@ -1317,18 +1319,12 @@ genotype between the two cell types, but rather there is an
 
 <P><DT><B><A NAME="mRNA">mRNA</A></B>
 <DD>Messenger RNA. An
-<A HREF="#RNA">RNA</A> molecule that is the product of
-<A HREF="#transcription">transcription</A> of a
-<A HREF="#gene">gene</A>, after that molecule has been
-<A HREF="#splicing">spliced</A> and
-<A HREF="#polyadenylation">polyadenylated</A>, that can be
-<A HREF="#translation">translated</A> into a
-<A HREF="#protein">protein</A> product. See the
-<A 
-HREF="http://www.nhgri.nih.gov/DIR/VIP/Glossary/Illustration/mrna.html">Figure</A> 
-at
-<A HREF="#NHGRI">NHGRI</A>. See also
-<A HREF="#central_dogma">Central Dogma</A>.
+<A HREF="#RNA">RNA</A> molecule that is the product of <A HREF="#transcription">transcription</A> of a
+<A HREF="#gene">gene</A>, after that molecule has been <A HREF="#splicing">spliced</A> and
+<A HREF="#polyadenylation">polyadenylated</A>, that can be <A HREF="#translation">translated</A> into a
+<A HREF="#protein">protein</A> product. See the 
+<A HREF="http://www.nhgri.nih.gov/DIR/VIP/Glossary/Illustration/mrna.html">Figure</A> 
+at <A HREF="#NHGRI">NHGRI</A>. See also <A HREF="#central_dogma">Central Dogma</A>.
 
 <P><DT><B><A NAME="MTB">MTB</A></B>
 <DD><A 
@@ -1376,7 +1372,7 @@ Substitution</A></LI>
 
 <!-- NNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNN --><A NAME="n"></A>
 <P><DT><B><A NAME="name">Name</A></B><DD>1. As used in <A HREF="#MGI">MGI</A>, a <A HREF="#gene">gene</A> "name" is a word or phrase 
-that uniquely identifies a gene. The gene name has an abbreviation that is the <A HREF="#gene_symbol">gene symbol</A>.<BR>2. As used in MGI, an <A HREF="#allele">allele</A> "name" is a word or phrase that uniquely identifies a particular allele of a gene. The allele 
+that uniquely identifies a gene. The gene name has an abbreviation that is the <A HREF="#gene_symbol">gene symbol</A>.<BR>2. As used in MGI, an <A HREF="#allele_name">allele</A> "name" is a word or phrase that uniquely identifies a particular allele of a gene. The allele 
 name has an abbreviation that is the <A HREF="#allele_symbol">allele symbol</A>.
 <P><DT><B><A NAME="NCBI">NCBI</A></B><DD><A HREF="http://www.ncbi.nlm.nih.gov/">National Center for Biotechnology Information</A>.
 <P><DT><B><A NAME="neomorphic">Neomorphic Mutation</A></B><DD>A type of <A HREF="#mutation">mutation</A> in which the altered <A HREF="#gene_product">gene product</A> possesses a novel <A HREF="#molecular_function">molecular function</A> or a novel pattern of <A HREF="#gene_expression">gene expression</A>. Antimorphic mutations are usually <A HREF="#dominant">dominant</A> or <A HREF="#semidominant">semidominant</A>. <BR>See also:<UL><LI><A HREF="#amorphic">Amorphic Mutation</A></LI><LI><A HREF="#antimorphic">Antimorphic Mutation</A></LI><LI><A HREF="#gain-of-function">Gain-of-function Mutation</A></LI><LI><A REF="#hypermorphic">Hypermorphic Mutation</A></LI><LI><A HREF="#hypomorphic">Hypomorphic Mutation</A></LI><LI><A HREF="#loss-of-function">Loss-of-function Mutation</A></LI><LI><A HREF="#null_mutation">Null Mutation</A></LI></UL>
@@ -1388,12 +1384,12 @@ name has an abbreviation that is the <A HREF="#allele_symbol">allele symbol</A>.
 <DD><A HREF="http://www.nhgri.nih.gov/">National Human Genome Research Institute</A>.
 
 <P><DT><B><A NAME="noncoding_RNA">Noncoding RNA</A></B>
-<DD>An <A HREF="#RNA">RNA</A> molecule that functions structurally or catalytically (see <A HREF="#ribozyme">ribozyme</A>) without being <A HREF="#translation">translated</A>. Noncoding RNAs lack conserved <A HREF="#open_reading_frame">open reading frames</A>. One example is <A HREF="../searches/mlc.cgi?14506">Xist</A>.
+<DD>An <A HREF="#RNA">RNA</A> molecule that functions structurally or catalytically (see <A HREF="#ribozyme">ribozyme</A>) without being <A HREF="#translation">translated</A>. Noncoding RNAs lack conserved <A HREF="#open_reading_frame">open reading frames</A>. One example is <A HREF="<!--#include file='include/wi_url.html'-->/searches/mlc.cgi?14506">Xist</A>.
 
 <P><DT><B><A NAME="non-mendelian">Non-Mendelian</A></B>
-<DD>1. That type of inheritance in which a specific <A HREF="#trait">trait</A> is affected by a set of <A HREF="#allele">alleles</A> of a multiple <A HREF="#gene">genes</A>. Synonym: <A HREF="#polygenic">Polygenic</A><BR>2. That type of inheritance in which genetic information is transmitted other than by 
+<DD>1. That type of inheritance in which a specific <A HREF="#trait">trait</A> is affected by a set of <A HREF="#allele_name">alleles</A> of a multiple <A HREF="#gene">genes</A>. Synonym: <A HREF="#polygenic">Polygenic</A><BR>2. That type of inheritance in which genetic information is transmitted other than by 
 <A HREF="#nucleus">nuclear</A> genes. See <A HREF="#epigenetic">Epigenetic</A>, <A HREF="#mitochondria">Mitochondria</A>.
-<P><DT><B><A NAME="northern_blot">Northern Blot</A></B><DD>An assay that detects specific <A HREF="#RNA">RNA</A> molecules using a <A HREF="#DNA">DNA</A> or RNA <A HREF="#probe">probe</A> with sequence similarity. Samples are subjected to <A HREF="#electrophoresis">electrophoresis</A> on a slab gel. A replica of the gel is then made on a membrane by capillary transfer. Specific RNA sequences are then detected on the membrane with a radioactively- or chemically-labeled probe. See one of the <A HREF="../searches/image.cgi?1785">Figures</A> from <A HREF="#GXD">GXD</A> for an example. See also <A HREF="#southern_blot">Southern blot</A> and <A HREF="#western_blot">Western blot</A>.
+<P><DT><B><A NAME="northern_blot">Northern Blot</A></B><DD>An assay that detects specific <A HREF="#RNA">RNA</A> molecules using a <A HREF="#DNA">DNA</A> or RNA <A HREF="#probe">probe</A> with sequence similarity. Samples are subjected to <A HREF="#electrophoresis">electrophoresis</A> on a slab gel. A replica of the gel is then made on a membrane by capillary transfer. Specific RNA sequences are then detected on the membrane with a radioactively- or chemically-labeled probe. See one of the <A HREF="<!--#include file='include/wi_url.html'-->/searches/image.cgi?1785">Figures</A> from <A HREF="#GXD">GXD</A> for an example. See also <A HREF="#southern_blot">Southern blot</A> and <A HREF="#western_blot">Western blot</A>.
 <P><DT><B><A NAME="nucleic_acid">Nucleic Acid</A></B><DD><A HREF="#DNA">DNA</A> or <A HREF="#RNA">RNA</A>. Each of these compounds 
 consists of a backbone of sugar molecules (ribose for RNA and deoxyribose for DNA) linked by single phosphate groups. Attached to the sugars of the backbone are any of four nitrogenous <A HREF="#base">bases</A>, A, T, C or G for DNA and A, U, C or G for RNA. See the
 <A HREF="http://www.nhgri.nih.gov/DIR/VIP/Glossary/Illustration/rna.html">Figure</A> at <A HREF="#NHGRI">NHGRI</A>.
@@ -1485,8 +1481,7 @@ See also <A HREF="#homolog">Homolog</A>,
 <P><DT><B><A NAME="orthology">Orthology</A></B>
 <DD>The relationship of any two homologous characters whose common ancestor lies in the most recent
 common ancestor of the taxa being considered. In
-MGI, assertions of 
-<a href="../menus/homology_menu.shtml">Mammalian Homology</a> imply presumed orthology.&nbsp; 
+MGI, assertions of <A HREF="<!--#include file='include/wi_url.html'-->/menus/homology_menu.shtml">Mammalian Homology</a> imply presumed orthology.&nbsp; 
 See also: <A HREF="#homology">Homology</A>, 
 <A HREF="#ortholog">Ortholog</A>, <A HREF="#paralogy">Paralogy</A>.
 
@@ -1536,7 +1531,7 @@ at NCBI. See also <A HREF="#homolog">Homolog</A>, <A HREF="#ortholog">Ortholog</
 <dd>The relationship of any two homologous characters that arose by a genetic duplication. See also <A HREF="#homology">Homology</A>, <A HREF="#orthology">Orthology</A>, and <A HREF="#paralog">Paralog</A>.
 
 <P><DT><B><A NAME="parent">Parent</A></B>
-<DD>In A HREF="#MGI">MGI</A>, this term refers to terms in a <a href="#hierarchical">hierarchical</a> <A HREF="#controlled_vocabulary">controlled vocabulary</A> such as those containing <A HREF="#gene_ontology">Gene Ontology (GO)</A> terms. A "parent" of a term is a one any number of levels above it in the <a href="#hierarchy">hierarchy</a> from which it is descended. For example, the GO term <A HREF="#enzyme">enzyme</A> [GO:0003824] is a 
+<DD>In <A HREF="#MGI">MGI</A>, this term refers to terms in a <a href="#hierarchical">hierarchical</a> <A HREF="#controlled_vocabulary">controlled vocabulary</A> such as those containing <A HREF="#gene_ontology">Gene Ontology (GO)</A> terms. A "parent" of a term is a one any number of levels above it in the <a href="#hierarchy">hierarchy</a> from which it is descended. For example, the GO term <A HREF="#enzyme">enzyme</A> [GO:0003824] is a 
 <B>parent</B> to the GO term <B>alcohol dehydrogenase</B> [GO:0004022]. See also: <A HREF="#children">Children</A>, <A HREF="#ancestor">Ancestor</A>, <A HREF="#sibling">Sibling</A>.
 
 <P><DT><B><A NAME="pcr">PCR</A></B>
@@ -1642,7 +1637,7 @@ detected. Microscopic examination reveals the presence of staining, and hence of
 <P><DT><B><A NAME="pseudogene">Pseudogene</A></B>
 <DD>A non-functional <A HREF="#locus">locus</A> derived from a functional locus either by 1) replicative transfer, such as
 <A HREF="#transposition">transposition</A>, <A HREF="#retrotransposon">retrotransposition</A> or <A HREF="#duplication">duplication</A> or by 2)<A HREF="#mutation">mutation</A>, where the non-functional locus is not considered an
-<A HREF="#allele">allele</A> of an existing functional locus in the mouse.
+<A HREF="#allele_name">allele</A> of an existing functional locus in the mouse.
 
 <!-- These two terms may not last very long and shouldn't be included unless there is evidence that they are being widely used:
 <P><DT><B><A NAME="pharmacogenetics"></A>Pharmacogenetics</B>
@@ -1665,7 +1660,7 @@ HREF="http://www.nhgri.nih.gov/DIR/VIP/Glossary/Illustration/rna.html">Figure</A
 <!-- QQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQ --><A NAME="q"></A>
 <P><DT><B><A NAME="QTL">Quantitative Trait Locus (QTL)</A></B>
 <DD>The type of <A HREF="#marker">marker</A> described by statistical association to quantitative variation in a particular
-<A HREF="#phenotype">phenotypic</A> trait that is thought to be controlled by the cumulative action of <A HREF="#allele">alleles</A> at multiple <A HREF="#locus">loci</A>.
+<A HREF="#phenotype">phenotypic</A> trait that is thought to be controlled by the cumulative action of <A HREF="#allele_name">alleles</A> at multiple <A HREF="#locus">loci</A>.
 
 <P><DT><B><A NAME="query">Query</A></B>
 <DD>A request for information submitted to a computerized database. See also <a href="#query_form">Query Form</a> and 
@@ -1686,7 +1681,8 @@ visible light, infrared light, microwaves and radio waves. In mouse genetics, th
 3. Subatomic particles from a particle accelerator, such as protons, neutrons, and electrons.
 
 <P><DT><B><A NAME="radiation hybrid mapping">Radiation Hybrid Mapping</A></B>
-<DD>A type of <A HREF="#genetic_map">genetic mapping</A> providing resolution between relatively low-resolution <A HREF="#linkage_analysis">linkage analysis</A> and high-resolution <A HREF="#physical_map">physical mapping</A> by the assembly of contiguous cloned DNA segments. The method consists of fusing <A HREF="#radiation">irradiated</A> cultured cells of one species with cultured cells of a different species. A panel of hybrid cells is then tested for the occurrence of pairs of <A HREF="#marker">markers</A>. The closer two markers are to each other, the more likely that both are present in an individual hybrid cell. Radiation hybrid mapping data for the mouse are available at <A HREF="http://www.jax.org/resources/documents/cmdata/rhmap/">The Jackson Laboratory Mouse Radiation Hybrid Database</A> and at
+<DD>A type of <A HREF="#genetic_map">genetic mapping</A> providing resolution between relatively low-resolution <A HREF="#linkage_analysis">linkage analysis</A> and high-resolution <A HREF="#physical_map">physical mapping</A> by the assembly of contiguous cloned DNA segments. The method consists of fusing <A HREF="#radiation">irradiated</A> cultured cells of one species with cultured cells of a different species. A panel of hybrid cells is then tested for the occurrence of pairs of <A HREF="#marker">markers</A>. The closer two markers are to each other, the more likely that both are present in an individual hybrid cell. Radiation hybrid mapping data for the mouse are available at 
+<A HREF="http://www.jax.org/resources/documents/cmdata/rhmap/">The Jackson Laboratory Mouse Radiation Hybrid Database</A> and at
 <A HREF="#MGI">MGI</A>.
 
 <P><DT><B><A NAME="rdbms"></A>RDBMS</B>
@@ -1697,15 +1693,17 @@ visible light, infrared light, microwaves and radio waves. In mouse genetics, th
 <DD>One of three ways of reading a single strand of <A HREF="#nucleic_acid">nucleic acid</A> sequence as <A HREF="#codon">codons</A>.
 
 <P><DT><B><A NAME="recessive">Recessive</A></B>
-<DD>One of a series of terms applied to the <A HREF="#phenotype">phenotypic</A> effect of a particular <A HREF="#allele">allele</A> in reference to another allele (usually the standard <A HREF="#wild_type">wild-type</A> allele) with respect to a given
+<DD>One of a series of terms applied to the <A HREF="#phenotype">phenotypic</A> effect of a particular <A HREF="#allele_name">allele</A> in reference to another allele (usually the standard <A HREF="#wild_type">wild-type</A> allele) with respect to a given
 <A HREF="#trait">trait</A>.  An allele "a" is said to be recessive with respect to the allele "A" if the A/A
-<A HREF="#homozygote">homozygote</A> and the A/a <A HREF="#heterozygote">heterozygote</A> are phenotypically identical and different from the a/a homozygote. An example is the <A HREF="../searches/mlc.cgi?3">nonagouti (a)</A> allele of the mouse. A(+)/A(+) and A(+)/a mice have identical <A HREF="#agouti">agouti</A> banding of individual hairs in the coat, while a/a mice have hairs of uniform color. See also <A HREF="#codominant">Codominant</A>, <A HREF="#dominant">Dominant</A>, <A HREF="#semidominant">Semidominant</A>.
+<A HREF="#homozygote">homozygote</A> and the A/a <A HREF="#heterozygote">heterozygote</A> are phenotypically identical and different from the a/a homozygote. An example is the 
+<A HREF="<!--#include file='include/wi_url.html'-->/searches/mlc.cgi?3">nonagouti (a)</A> allele of the mouse. A(+)/A(+) and A(+)/a mice have identical <A HREF="#agouti">agouti</A> banding of individual hairs in the coat, while a/a mice have hairs of uniform color. See also <A HREF="#codominant">Codominant</A>, <A HREF="#dominant">Dominant</A>, <A HREF="#semidominant">Semidominant</A>.
 
 <P><DT><B><A NAME="record"></A>Record</B>
 <DD>In computer science, a collection of <A HREF="#field">fields</A>.
 
 <P><DT><B><A NAME="recombinant_inbred">Recombinant Inbred Strain</A></B>
-<DD>In mouse, an <A HREF="#inbred_strain">inbred strain</A> of animals started from a <A HREF="#cross">cross</A> between two different inbred strains followed by inbreeding for at least 20 generations. A panel of recombinant inbred strains derived from a cross between two parental strains can be used to establish <A HREF="#linkage">linkage</A> between any <A HREF="#marker">marker</A> that is <A HREF="#polymorphism">polymorphic</A> between the parental strains and other polymorphic markers that have been typed in each strain in the panel. See the Recombinant Inbred Strain Distribution Panel <A HREF="../searches/riset_form.shtml">Query Form</A> at <A HREF="#MGI">MGI</A>. See also the <A HREF="http://www.informatics.jax.org/mgihome/nomen/strains.shtml#Inbred">Rules
+<DD>In mouse, an <A HREF="#inbred_strain">inbred strain</A> of animals started from a <A HREF="#cross">cross</A> between two different inbred strains followed by inbreeding for at least 20 generations. A panel of recombinant inbred strains derived from a cross between two parental strains can be used to establish <A HREF="#linkage">linkage</A> between any <A HREF="#marker">marker</A> that is <A HREF="#polymorphism">polymorphic</A> between the parental strains and other polymorphic markers that have been typed in each strain in the panel. See the Recombinant Inbred Strain Distribution Panel 
+<A HREF="<!--#include file='include/wi_url.html'-->/searches/riset_form.shtml">Query Form</A> at <A HREF="#MGI">MGI</A>. See also the <A HREF="http://www.informatics.jax.org/mgihome/nomen/strains.shtml#Inbred">Rules
 for the Nomenclature of Inbred Strains</A>.
 
 <P><DT><B><A NAME="recombination">Recombination</A></B>
@@ -1720,7 +1718,7 @@ for the Nomenclature of Inbred Strains</A>.
 <P><DT><B><A NAME="relational_db"></A>Relational Database</B>
 <DD>A type of <A HREF="#database">database</A> in which information is organized into <A HREF="#table">tables</A>. 
 
-<P><DT><B><A NAME="relational_database_manangement"></A>Relational Database Management System (RDBMS)</B>
+<P><DT><B><A NAME="relational_database_manangement">Relational Database Management System (RDBMS)</A></B>
 <DD>Software for managing a <A HREF="#database">database</A> accessed using <a href="#SQL">Structured Query Language(SQL)</a> . 
 
 <P><DT><B><A NAME="replication">Replication</A></B>
@@ -1750,12 +1748,11 @@ whose activity can be detected using a staining reaction, is a commonly used rep
 <DD>An <A HREF="#enzyme">enzyme</A> that is able to synthesize <A HREF="#DNA">DNA</A> from information in <A HREF="#RNA">RNA</A>. It requires an RNA <A HREF="#template">template</A> and a DNA or RNA <A HREF="#primer">primer</A>. See also <A HREF="#cDNA">cDNA</A>.
 
 <P><DT><B><A NAME="reversion">Reversion</A></B>
-<DD>A <A HREF="#mutation">mutation</A> event that alters an <A HREF="#allele">allele</A> conferring a <A HREF="#mutant">mutant</A>
-<A HREF="#phenotype">phenotype</A> into one conferring a <A HREF="#wild_type">wild-type</A> phenotype. The mutation need not restore the <A HREF="#gene">gene</A> to its original <A HREF="#allele">nucleotide</A> sequence to be considered a reversion event.
+<DD>A <A HREF="#mutation">mutation</A> event that alters an <A HREF="#allele_name">allele</A> conferring a <A HREF="#mutant">mutant</A>
+<A HREF="#phenotype">phenotype</A> into one conferring a <A HREF="#wild_type">wild-type</A> phenotype. The mutation need not restore the <A HREF="#gene">gene</A> to its original <A HREF="#allele_name">nucleotide</A> sequence to be considered a reversion event.
 
 <P><DT><B><A NAME="revertant">Revertant</A></B>
-<DD>An individual carrying an <A HREF="#allele">allele</A> of a given <A HREF="#allele">gene</A> that at one time produced a
-<A HREF="#allele">mutant</A> <A HREF="#allele">phenotype</A>, but which since has undergone a subsequent <A HREF="#allele">mutation</A> that restored a <A HREF="#allele">wild-type</A> phenotype. The mutation need not restore the gene to its original <A HREF="#allele">nucleotide</A> sequence to be considered a <A HREF="#reversion">reversion</A> event.
+<DD>An individual carrying an <A HREF="#allele_name">allele</A> of a given <A HREF="#allele_name">gene</A> that at one time produced a <A HREF="#mutant">mutant</A> <A HREF="#phenotype">phenotype</A>, but which since has undergone a subsequent <A HREF="#mutation">mutation</A> that restored a <A HREF="#wildtype">wild-type</A> phenotype. The mutation need not restore the gene to its original <A HREF="#nucleotide">nucleotide</A> sequence to be considered a <A HREF="#reversion">reversion</A> event.
 
 <P><DT><B><A NAME="RFLP">RFLP</A></B>
 <DD>Restriction Fragment Length Polymorphism. A genetic <A HREF="#polymorphism">polymorphism</A> with respect to the observed length of a <A HREF="#restriction_fragment">restriction fragment</A>. RFLPs can result from <A HREF="#SNP">single nucleotide olymorphisms</A> as well as from <A HREF="#insertion">insertions</A>, <A HREF="#deletion">deletions</A>, or <A HREF="#microsatellite">microsatellite</A> expansions.
@@ -1806,7 +1803,8 @@ HREF="http://www.nhgri.nih.gov/DIR/VIP/Glossary/Illustration/rna.html">Figure</A
 <DD>1. The separation of <A HREF="#homolog">homologous</A> chromosomes during <A HREF="#meiosis">meiosis</A>.<BR>  2. The separation of different <A HREF="#allele">alleles</A> of the same <A HREF="#gene">gene</A> during meiosis.
 
 <P><DT><B><A NAME="semidominant">Semidominant</A></B>
-<DD>One of a series of terms applied to the <A HREF="#phenotype">phenotypic</A> effect of a particular <A HREF="#allele">allele</A> in reference to another allele (usually the standard <A HREF="#wild_type">wild-type</A> allele) with respect to a given <A HREF="#trait">trait</A>. An allele "A" is said to be semidominant with respect to the allele "a" if the A/A <A HREF="#homozygote">homozygote</A> has a mutant phenotype, the A/a <A HREF="#heterozygote">heterozygote</A> has a less severe phenotype, while the a/a <A HREF="#homozygote">homozygote</A> is wild-type. An example is <A HREF="../searches/mlc.cgi?12398">Pmp22(Tr-J)</A> in mouse. Pmp22(Tr-J)/Pmp22(Tr-J) animals display a myelination defect associated with a "trembler" phenotype, while Pmp22(Tr-J)/Pmp22(+) animals are less severely affected, and Pmp22(+)/Pmp22(+) animals are wild-type. See also <A HREF="#codominant">Codominant</A>, <A HREF="#dominant">Dominant</A>, <A HREF="#recessive">Recessive</A>.
+<DD>One of a series of terms applied to the <A HREF="#phenotype">phenotypic</A> effect of a particular <A HREF="#allele">allele</A> in reference to another allele (usually the standard <A HREF="#wild_type">wild-type</A> allele) with respect to a given <A HREF="#trait">trait</A>. An allele "A" is said to be semidominant with respect to the allele "a" if the A/A <A HREF="#homozygote">homozygote</A> has a mutant phenotype, the A/a <A HREF="#heterozygote">heterozygote</A> has a less severe phenotype, while the a/a <A HREF="#homozygote">homozygote</A> is wild-type. 
+An example is <A HREF="<!--#include file='include/wi_url.html'-->/searches/mlc.cgi?12398">Pmp22(Tr-J)</A> in mouse. Pmp22(Tr-J)/Pmp22(Tr-J) animals display a myelination defect associated with a "trembler" phenotype, while Pmp22(Tr-J)/Pmp22(+) animals are less severely affected, and Pmp22(+)/Pmp22(+) animals are wild-type. See also <A HREF="#codominant">Codominant</A>, <A HREF="#dominant">Dominant</A>, <A HREF="#recessive">Recessive</A>.
 
 <P><DT><B><A NAME="sense">Sense</A></B>
 <DD>1. In molecular biology, that strand of a <A HREF="#DNA">DNA</A> molecule whose sequence is represented in <A HREF="#mRNA">mRNA</A>.<BR>2. In molecular biology, an <A HREF="#RNA">RNA</A> molecule normally processed into <A HREF="#mRNA">mRNA</A> and <A HREF="#translation">translated</A> (rather than the <A HREF="#complementary">complementary sequence</A>).
@@ -1910,7 +1908,8 @@ According to <A HREF="#ANSI">ANSI (American National Standards Institute)</A>, i
 <A HREF="#relational_database_management">relational database management systems</A>. SQL statements are used to perform tasks such as updating data in or retrieving data from a database. Some common relational database management systems that use SQL are: Oracle, Sybase, Microsoft SQL Server, Access, Ingres, etc. Although most database systems use SQL, most of them also have their own additional proprietary extensions that are usually only used on their system. The <A HREF="#query_form">Query Forms</A> at <A HREF="#MGI">MGI</A> extract information from databases by generating instructions in SQL.
 
 <P><DT><B><A NAME="STS">STS</A></B>
-<DD>Sequence Tagged Site. A short segment of unique sequence derived from <A HREF="#genome">genomic</A> <A HREF="#DNA">DNA</A>. A large collection of STSs can be used to assemble a <A HREF="#physical_map">physical map</A> of the genome from a collection of genomic clones (e.g., <A HREF="#BAC">BACs</A> or <A HREF="#YAC">YACs</A>) by testing each clone for the presence of each STS. Two clones that contain one or more STSs in common must overlap. For examples, see the <A HREF="../reports/mitmap/">physical maps</A> of the mouse genome at <A HREF="#MGI">MGI</A>.
+<DD>Sequence Tagged Site. A short segment of unique sequence derived from <A HREF="#genome">genomic</A> <A HREF="#DNA">DNA</A>. A large collection of STSs can be used to assemble a <A HREF="#physical_map">physical map</A> of the genome from a collection of genomic clones (e.g., <A HREF="#BAC">BACs</A> or <A HREF="#YAC">YACs</A>) by testing each clone for the presence of each STS. Two clones that contain one or more STSs in common must overlap. For examples, see the 
+<A HREF="<!--#include file='include/wi_url.html'-->/reports/mitmap/">physical maps</A> of the mouse genome at <A HREF="#MGI">MGI</A>.
 
 <P><DT><B><A NAME="substrate">Substrate</A></B>
 <DD>A molecule acted upon by an <A HREF="#enzyme">enzyme</A>.
@@ -1926,7 +1925,7 @@ a particular chromosome if it is known to be located on that chromosome but is o
 <P><DT><B><A NAME="synonym">Synonym</A></B>
 <DD>In <A HREF="#MGI">MGI</A>, a synonym is a <A HREF="#gene_symbol">gene symbol</A> or <A HREF="#gene_name">name</A> that has appeared in the scientific literature, is not pending approval, and has never been an <A HREF="#approved">approved</A> symbol or name.
 
-<P><DT><B><A HREF="system_catalog"></A>System Catalog</B>
+<P><DT><B><A HREF="system_catalog">System Catalog</A></B>
 <DD>The <A HREF="#data_dictionary">data dictionary</A> of a <A HREF="#dbms">DBMS</A>. The system catalog stores 
 <A HREF="#metadata">metadata</A> including the <A HREF="#schema">schemas</A> of the <A HREF="#database">databases</A>. 
 It is a mini-database, and is usually stored using the DBMS itself in special tables called system tables. 
@@ -2061,8 +2060,8 @@ The method works if all positions in the genome are covered by multiple overlapp
 
 <P><DT><B><A NAME="wildcard">Wildcard</A></B>
 <DD>A wildcard is a alphanumeric character or set of characters that can stand for a wide range of characters. For example, the percent ("%") character is a wildcard in the Quick Gene Search box on the <A HREF="..">MGI main page</A>. Entering "Acr%" returns any <A HREF="#marker">markers</A> whose <A HREF="#symbol">symbols</A> begin with "Acr", such as the acetylcholine receptor
-<A HREF="#gene">genes</A> (Acr, Acra, Acra1, Acrb...). There is <A HREF="wildcard_tips.shtml">further information</A> on using
-wildcards in <A HREF="#MGI">MGI</A>.
+<A HREF="#gene">genes</A> (Acr, Acra, Acra1, Acrb...). There is 
+<A HREF="<!--#include file='include/wi_url.html'-->userdocs/wildcard_tips.shtml">further information</A> on using wildcards in <A HREF="#MGI">MGI</A>.
 
 <P><DT><B><A NAME="wild_type">Wild Type</A></B>
 <DD>1. The <A HREF="#phenotype">phenotype</A> with respect to a given inherited characteristic that is considered to be the "normal" type commonly found in natural populations.<BR>2. The <A HREF="#allele">allele</A> of a particular <A HREF="#gene">gene</A> that confers the phenotype considered to be the "normal" type commonly found in natural populations. N.B.: Because some <A HREF="#DNA">DNA</A> sequence <A HREF="#polymorphism">polymorphisms</A> do not produce different phenotypes, there can be multiple "wild-type" alleles of a gene.
