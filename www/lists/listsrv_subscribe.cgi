@@ -83,18 +83,21 @@ def main():
 		elif form['listname'].value=='rat-list':
 			sublists = ['rat-list']
 		
-		msg = 'login xxxxxxxx'
+		msg = ''
 		listname1 = 'mgi-list'
 		if listname1 in sublists:		
-			msg = 'add' + SP + listname1 + SP + emailaddr+ SP + username + NL 
+			msg = 'add' + SP + listname1 + SP + emailaddr+ SP + \
+				username + NL 
 		listname2 = 'rat-list'
 		if listname2 in sublists:
-			msg = msg + NL + 'add' + SP + listname2 + SP + emailaddr + SP + username + NL 
+			msg = msg + NL + 'add' + SP + listname2 + SP + \
+				emailaddr + SP + username + NL 
 
 		print """
 	<H1>Thank you.</H1>
 	Your subscribe request has been received and is being forwarded to our
-	list_manager. You will receive an acknowlegement and instructions via E-mail.
+	list_manager. You will receive an acknowlegement and instructions via
+	E-mail.
 	"""
 
 		mail_header = 'From: webmaster' + NL \
