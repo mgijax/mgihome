@@ -3,24 +3,23 @@
 <TITLE><!--#include file="include/title.html"--> About MGI </TITLE>
 </HEAD>
 <BODY BGCOLOR="#FFFFFF">
-<TABLE WIDTH="100%" BORDER=0 CELLPADDING=2 CELLSPACING=1>
+<BODY BGCOLOR="#FFFFFF">
+<!--#include file="include/bodyStart.html"-->
+ <TABLE WIDTH="100%" BORDER=0 CELLPADDING=2 CELLSPACING=1>
  <TR>
   <TD WIDTH="100%" BGCOLOR="#D0E0F0">
    <TABLE WIDTH="100%" BORDER=0 CELLPADDING=0 CELLSPACING=0>
     <TR>
-     <TD WIDTH="20%" VALIGN="center" ALIGN="left">
-       <IMG SRC="../images/mgi_logo.jpg" WIDTH=160 HEIGHT=80>
-     </TD>
+     <TD WIDTH="20%" VALIGN="center" ALIGN="left">&nbsp;</TD>
      <TD WIDTH="60%" ALIGN="center" VALIGN="center">
       <FONT COLOR="#000000" SIZE=5 FACE="Arial,Helvetica">
-About MGI
+      About MGI
       </FONT>
      </TD>
-     <TD WIDTH="20%" VALIGN="center" ALIGN="center">
-      &nbsp;
-     </TD>
+     <TD WIDTH="20%" VALIGN="center" ALIGN="center">&nbsp;</TD>
     </TR>
-   </TABLE>  </TD>
+   </TABLE>
+  </TD>
  </TR>
 </TABLE>
 
@@ -28,7 +27,7 @@ About MGI
 <TR>
 <TD>
 <H3>Project Information</H3>
-The <a href="http://www.informatics.jax.org/">Mouse Genome Informatics (MGI) Database</a> provides integrated access to data on the genetics, genomics and biology of the laboratory mouse. The projects contributing to this resource are:<P>
+The <A href="<!--#include file='include/wi_url.html'-->">Mouse Genome Informatics (MGI) Database</a> provides integrated access to data on the genetics, genomics and biology of the laboratory mouse. The projects contributing to this resource are:<P>
 <BLOCKQUOTE>
 <B>Mouse Genome Database (MGD) Project</B><BR>
 MGD includes data on gene characterization, nomenclature, mapping, gene
@@ -76,11 +75,8 @@ GO browser. (See <a href="../GO/project.shtml">The Gene Ontology (GO) Project</a
 </TD>
 </TR>
 </TABLE>
-
 <HR>
-
-<!--#include file="include/footer.html"-->
-
+<!--#include file="include/bodyStop.html"-->
 </BODY></HTML>
 <!--
 Warranty Disclaimer and Copyright Notice
@@ -101,3 +97,4 @@ Warranty Disclaimer and Copyright Notice
 Copyright © 1996, 1999, 2002 by The Jackson Laboratory
 All Rights Reserved
 -->
+  
