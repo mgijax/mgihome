@@ -526,7 +526,7 @@ class UserInput:
 		self.accID = HiddenField ('accID', 'MGI Acc ID', OPTIONAL)
 		self.dataDate = HiddenField ('dataDate', 'Data Dump Date',
 			OPTIONAL)
-		self.referer = HiddenField ('referer', 'Refering Page',
+		self.referer = HiddenField ('referer', 'Referring Page',
 			OPTIONAL)
 
 		# If we received any parameters, use them to set the values
