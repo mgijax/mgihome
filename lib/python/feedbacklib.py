@@ -7,6 +7,7 @@ if '.' not in sys.path:
 	sys.path.insert (0, '.')
 import os
 import string
+import cgi
 
 import config			# MGI-written libraries
 import homelib
@@ -254,7 +255,7 @@ class Field:
 
 		if parms.has_key (self.fieldname):
 			self.value = parms[self.fieldname]
-			self.validate()
+		self.validate()
 		return
 
 	def validate (self):
@@ -789,13 +790,14 @@ class UserInput:
 		# Throws: nothing
 		# Notes: We specify the list of fields as a parameter to
 		#	allow for easy overriding in subclasses.  (with no
-		#	extra coding)
+		#	extra coding).  We do need to escape the field values
+		#	so that any < and > characters will appear correctly.
 
 		lines = []
 		for fieldname in fields:
 			item = self.__dict__[fieldname]
 			lines.append ('%s: %s' % (item.getLabel(),
-				item.getValue()))
+				cgi.escape(item.getValue())))
 		return string.join (lines, '\n')
 
 class SimpleTextUserInput (UserInput):
