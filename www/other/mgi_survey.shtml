@@ -1,13 +1,9 @@
 <HTML>
 <head>
-<!--Last updated on April 08, 2003 with version #-->
-<TITLE><!--#include file='include/mgiversion.html'--> - 
-MGI Survey</TITLE>
+<TITLE> <!--#include file='include/mgiversion.html'--> - MGI Survey</TITLE>
 </head>
 <BODY BGCOLOR="#ffffff">
 <!--#include file="include/bodyStart.html"-->
-<!--jte requested that User Support create this & include it in the 2.95 release: 4/1/03.-->
-
 <TABLE WIDTH="100%" BORDER=0 CELLPADDING=2 CELLSPACING=1>
  <TR>
   <TD WIDTH="100%" BGCOLOR="#D0E0F0">
@@ -25,7 +21,6 @@ MGI Survey</TITLE>
   </TD>
  </TR>
 </TABLE>
-
 <P>We want to hear from you. Here is your chance to help us improve MGI       resources. All suggestions and criticisms are welcome. Thanks!</P>
 <HR>
 <FORM action=survey.cgi method=post><SMALL>
@@ -70,8 +65,7 @@ Comments:<INPUT name=accessComments size=55> </P>
 <TABLE cols=2>
 <TBODY>
 <TR><TD width=300><INPUT name=query type=checkbox value="Search Box">
-<A href="javascript:windowf1 = window.open('searchbox.shtml', 'windowf1', 'width=360,height=250,resizable=yes,scrollbars=yes'); windowf1.focus()">Search 
-Box</A></TD>
+<A href="http://www.informatics.jax.org">Search Box</A></TD>
 <TD><INPUT name=query type=checkbox value=References>
 <A href="<!--#include file='include/wi_url.html'-->searches/reference_form.shtml">References</A>
 </TD>
@@ -159,7 +153,7 @@ Mouse/Human Phenotypes</A></TD>
 </TR>
 
 <TR>
-<TD><INPUT name=queryp type=checkbox value="Physical Maps">
+<TD><INPUT name=query type=checkbox value="Physical Maps">
 <A href="http://www.informatics.jax.org/reports/mitmap/">Physical Maps</A></TD>
 <TD><INPUT name=query type=checkbox value="Flat files">
 <A href="<!--#include file='include/ftp_url.html'-->pub/reports/index.html">Flat files</A></TD>
@@ -169,7 +163,7 @@ Mouse/Human Phenotypes</A></TD>
 <TD><INPUT name=query type=checkbox value="Mapping Data">
 <A href="<!--#include file='include/wi_url.html'-->searches/mapdata_form.shtml">Mapping Data</A></TD>
 <TD><INPUT name=query type=checkbox value="MGI-LIST">
-<A href="../lists/list.shtml">MGI-LIST</A></TD>
+<A href="../lists/lists.shtml">MGI-LIST</A></TD>
 </TR>
 
 <TR>
@@ -199,15 +193,15 @@ Mouse/Human Phenotypes</A></TD>
 </TR>
 </TBODY>
 </TABLE>
-Comments: <TEXTAREA cols=55 name=name=queryComments rows=6></TEXTAREA></P>
+Comments: <TEXTAREA cols=55 name=queryComments rows=6></TEXTAREA></P>
 
 <P><B>6. What other scientific web sites do you use regularly?</B><BR>
 <INPUT name=othersites type=checkbox value="NCBI/GenBank/PubMed">
 <A href="http://www.ncbi.nlm.nih.gov/">NCBI/GenBank/PubMed</A><BR>
 <INPUT name=othersites type=checkbox value="Ensembl">
 <A href="http://www.ensembl.org/">Ensembl</A><BR>
-<INPUT name=othersites type=checkbox value="SwissProt/EMBL/EBI">
-<A href="http://www.ebi.ac.uk/services/index.html">SWISS-PROT/EMBL/EBI</A><BR>
+<INPUT name=othersites type=checkbox value="SWISS-PROT/EMBL/EBI">
+<A href="http://www.ebi.ac.uk/">SwissProt/EMBL/EBI</A><BR>
 <INPUT name=othersites type=checkbox value="UCSC">
 <A href="http://genome.ucsc.edu/">UCSC</A><BR>
 <INPUT name=othersites type=checkbox value="OMIM">
@@ -229,10 +223,10 @@ Others:
 <INPUT name=orgo type=checkbox value="Mouse">Mouse<BR>
 <INPUT name=orgo type=checkbox value="Human">Human<BR>
 <INPUT name=orgo type=checkbox value="Rat">Rat<BR>
-Others:<INPUT name=orgoComment size=55></P>
+Others:<INPUT name=orgoComments size=55></P>
 
 <P><B>10. We provide online facilities for submitting nomenclature, phenotype and expression data. How can we make data submission easier for you?</B><BR>
-Comments: <TEXTAREA cols=55 name=dataSub rows=6></TEXTAREA></P>
+Comments: <TEXTAREA cols=55 name=datasub rows=6></TEXTAREA></P>
 
 <P><B>11. What Computer Operating Systems do you use?</B><BR>
 <INPUT name=os type=checkbox value="Mac">Mac<BR>
@@ -250,7 +244,7 @@ Others:<INPUT name=osOther size=55></P>
 <A href="http://www.mozilla.org/projects/camino/">Chimera/Camino</A>
 </TD></TR>
 <TR>
-<TD><INPUT name=browser type=checkbox value=Internet Explorer>
+<TD><INPUT name=browser type=checkbox value="Internet Explorer">
 <A href="http://www.microsoft.com/downloads/">Internet Explorer</A></TD>
 <TD><INPUT name=browser type=checkbox value="iCab">
 <A href="http://www.icab.de/">iCab</A></TD></TR>
@@ -273,7 +267,7 @@ Others:<INPUT name=osOther size=55></P>
 </TR>
 </TBODY>
 </TABLE>
-Others:<INPUT name=browserOther size=55> </P>
+Others:<INPUT name=altBrowse size=55> </P>
 <P><B>13. Any other comments?</B><BR>
 <TEXTAREA cols=55 name=comments rows=10></TEXTAREA> </P>
 
