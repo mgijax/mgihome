@@ -99,10 +99,12 @@ missing_fields = []
 if (fields.has_key('lastname')):
 	username = fields['lastname']
 else:
+	username = ''
 	missing_fields.append('Last Name')
  
 if (fields.has_key('firstname')):
 	username = username + ',' + SP + fields['firstname']
+	message = message + 'Submitter Name:\t\t' + username + NL
 else:
 	missing_fields.append('First Name & Middle Name(s)')
 
@@ -110,8 +112,6 @@ if (fields.has_key('emailaddr')):
 	submitter_addr = fields['emailaddr']
 else:
 	missing_fields.append('E-mail address')
-
-message = message + 'Submitter Name:\t\t' + username + NL
 
 for key in field_sort:
 	if (fields.has_key(key)):
@@ -194,6 +194,10 @@ if fields.has_key ('genbankID'):
 
 if fields.has_key ('sequence'):
 	seqsect = seqsect + NL + 'Sequence:' + NL + fields['sequence'] + NL
+
+if seqsect == '':
+	errorStop ('''You must include either a GenBank ID or Sequence Data.
+		Please go back and try again.''')
 
 message = message + seqsect + NL
 
