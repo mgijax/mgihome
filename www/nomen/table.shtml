@@ -41,13 +41,13 @@ Mouse Nomenclature Rules and Guidelines: Contents
    </ul>
   <A HREF="gene.shtml#nas">2 Names and Symbols of Genes and Loci</a><br>
    <ul>
-    <A HREF="gene.shtml#labc">2.1 Lab Codes</a><br>
+    <A HREF="gene.shtml#labc">2.1 Laboratory Codes</a><br>
     <A HREF="gene.shtml#ing">2.2 Identification of New Genes</a><br>
-    <a href="gene.shtml#glnas">2.3 Gene Names and Symbols</a>
+    <a href="gene.shtml#gnas">2.3 Gene Names and Symbols</a><br>
       <ul>
-        <a href="gene.shtml#genename">2.3.1 Gene Names</a>
-        <a href="gene.shtml#genesym">2.3.2 Gene Symbols</a>
-
+        <a href="gene.shtml#genename">2.3.1 Gene Names</a><br>
+        <a href="gene.shtml#genesym">2.3.2 Gene Symbols</a><br>
+    </ul>
     <a href="gene.shtml#sg">2.4 Structural Genes, Splice Variants, and Promoters</a>
      <ul>
        <A HREF="gene.shtml#ghos">2.4.1 Genes with Homologs in Other Species</a><br>
@@ -80,7 +80,7 @@ Mouse Nomenclature Rules and Guidelines: Contents
       </ul>
 
      </ul>
-   <A HREF="gene.shtml#nasvma">3 Names and Symbols for Variant and Mutant Alleles</a><br>
+   <A HREF="gene.shtml#navsma">3 Names and Symbols for Variant and Mutant Alleles</a><br>
      <ul>
       <A HREF="gene.shtml#mutph">3.1 Mutant Phenotypes</a><br>
         <ul>
@@ -92,6 +92,7 @@ Mouse Nomenclature Rules and Guidelines: Contents
          <ul>
           <A HREF="gene.shtml#biov">3.2.1 Biochemical Variants</a><br>
           <A HREF="gene.shtml#dnasv">3.2.2 DNA Segment Variants</a><br>
+          <A HREF="gene.shtml#snps">3.2.3 Single Nucleotide Polymorphisms (SNPs)</a><br>
         </ul>
        <A HREF="gene.shtml#vqtlrrg">3.3 Variation in Quantitative Trait Loci and in Response and Resistance Genes</a><br>
        <A HREF="gene.shtml#iim">3.4 Insertional and Induced Mutations</a><br>
@@ -105,18 +106,21 @@ Mouse Nomenclature Rules and Guidelines: Contents
     <A HREF="gene.shtml#trdef">5 Definitions</a><br>
       <ul>
        <A HREF="gene.shtml#trge">5.1 Gene</a><br>
-       <A HREF="gene.shtml#trlo">5.2 Locus</a><br>
-       <A HREF="gene.shtml#trma">5.3 Marker</a><br>
-       <A HREF="gene.shtml#tral">5.4 Allele</a><br>
-       <A HREF="gene.shtml#trva">5.5. Variant</a><br>
-       <A HREF="gene.shtml#trmu">5.6 Mutation</a><br>
-       <A HREF="gene.shtml#trdr">5.7 Dominant and Recessive</a>
-       <A HREF="gene.shtml#trgtype">5.8 Genotype</a><br>
-       <A HREF="gene.shtml#trph">5.9 Phenotype</a><br>
-       <A HREF="gene.shtml#trhap">5.10 Haplotype</a><br>
-       <A HREF="gene.shtml#trho">5.11 Homolog</a><br>
-       <A HREF="gene.shtml#tror">5.12 Ortholog</a><br>
-       <A HREF="gene.shtml#trpa">5.13 Paralog</a><br>
+       <A HREF="gene.shtml#trpseudo">5.2 Pseudogenes</a><br> 
+       <A HREF="gene.shtml#trloc">5.3 Locus</a><br>
+       <A HREF="gene.shtml#trma">5.4 Marker</a><br>
+       <A HREF="gene.shtml#tral">5.5 Allele</a><br>
+       <A HREF="gene.shtml#trva">5.6 Allelic Variant</a><br>
+       <A HREF="gene.shtml#trsvas">5.7 Splice Variant or Alternative Splice</a><br> 
+       <A HREF="gene.shtml#trmu">5.8 Mutation</a><br>
+       <A HREF="gene.shtml#trdr">5.9 Dominant and Recessive</a><br>
+       <A HREF="gene.shtml#trgtype">5.10 Genotype</a><br>
+       <A HREF="gene.shtml#trph">5.11 Phenotype</a><br>
+       <A HREF="gene.shtml#trqtl">5.12 Quantitative Trait Loci (QTLs)</a><br>
+       <A HREF="gene.shtml#trhap">5.13 Haplotype</a><br>
+       <A HREF="gene.shtml#trho">5.14 Homolog</a><br>
+       <A HREF="gene.shtml#tror">5.15 Ortholog</a><br>
+       <A HREF="gene.shtml#trpa">5.16 Paralog</a><br>
       </ul>
      <A HREF="gene.shtml#nomenref">6 References<br>
 </a>
@@ -124,12 +128,37 @@ Mouse Nomenclature Rules and Guidelines: Contents
     
 <h3><a name="anomalie"></a><A HREF="anomalies.shtml"><spacer type=horizontal size=15>Rules for Nomenclature of Chromosome Abberations</A></h3>
 
-<UL>
- <A HREF="anomalies.shtml#Symbols">1&nbsp; Symbols for Chromosome Anomalies</A> <br>
- <A HREF="anomalies.shtml#Variations">2 &nbsp;Variations in Heterochromatin and Chromosome Banding</A> <br>
- <A HREF="anomalies.shtml#Use">3  &nbsp;Use of Human Chromosome Nomenclature</A><br>
- <A HREF="anomalies.shtml#References">4 &nbsp;References</A>
-</UL>
+<UL> <A HREF="anomalies.shtml#general">1 &nbsp;General Guidelines for Designating Chromosomes</a><br>
+  <A HREF="anomalies.shtml#symchro">2 &nbsp;Symbols for Chromosome Anomalies</a><br>
+  <ul>
+   <A HREF="anomalies.shtml#prefix">2.1 &nbsp;Prefix</a><br>
+   <A HREF="anomalies.shtml#desigchro">2.2 &nbsp;Designating the chromosomes involved in an anomaly</a><br>
+   <A HREF="anomalies.shtml#uniqueid">2.3 &nbsp;A series number and Laboratory code designation that uniquely identifies the anomaly</a></br>
+   <A HREF="anomalies.shtml#abbrevchrom">2.4 &nbsp;Abbreviating chromosome anomalies</a></br>
+   <A HREF="anomalies.shtml#symultiple">2.5 &nbsp;Symbols for multiple chromosome anomalies</a><br>
+   <A HREF="anomalies.shtml#symcomplex">2.6 &nbsp;Symbols for complex chromosome anomalies</a><br>
+   <A HREF="anomalies.shtml#designatebreak">2.7 &nbsp;Designating chromosomal breakpoints</a><br>
+     <ul>
+     <A HREF="anomalies.shtml#defineband">2.7.1 &nbsp;Defining the chromosomal band</a><br>
+     </ul>
+   <A HREF="anomalies.shtml#ddchrom">2.8 &nbsp;Deficiencies and deletions as chromosomal anomalies</a><br>
+   <A HREF="anomalies.shtml#imprintchrom">2.9 &nbsp;Imprinting and chromosomal anomalies</a><br>
+   <A HREF="anomalies.shtml#deletionid">2.10 &nbsp;Deletions identified through phenotypic change</a><br>
+   <A HREF="anomalies.shtml#chromoaneup">2.11 &nbsp;Chromosomal aneuploidy</a><br>
+  <A HREF="anomalies.shtml#transchrom">2.12 &nbsp;Transchromosomal anomalies</a><br>
+   </ul>
+  <A HREF="anomalies.shtml#variations">3 &nbsp;Variations in Heterochromatin and Chromosome Banding</a><br>
+   <ul>
+    <A HREF="anomalies.shtml#nucleorg">3.1 &nbsp;Nucleolus organizers</a><br>
+    <A HREF="anomalies.shtml#pericentric">3.2 &nbsp;Pericentric heterochromatin</a><br>
+    <A HREF="anomalies.shtml#loci">3.3 &nbsp;Loci within heterochromatin</a><br>
+    <A HREF="anomalies.shtml#centromere">3.4 &nbsp;Centromeres</a><br>
+    <A HREF="anomalies.shtml#telomere">3.5 &nbsp;Telomeres</a><br>
+    <A HREF="anomalies.shtml#gband">3.6 &nbsp;G-band polymorphisms</a><br>
+   </ul>
+  <A HREF="anomalies.shtml#nomenuse">4 &nbsp;Use of Human Chromosome Nomenclature</a><br>
+  <A HREF="anomalies.shtml#references">5 &nbsp;References </a><br>
+</ul>
 
 <h3><a name="strain"></a><A HREF="strains.shtml"><spacer type=horizontal size=15>Rules for Nomenclature of Mouse and Rat Strains</A> </h3>
 
