@@ -8,16 +8,16 @@
 <P>
 Genes in MGI are annotated using GO terms.  Several query forms, "Genes,
 Markers and Phenotypes," "Linkage Map," "Gene Expression Data," and "cDNA
-Clone" provide a "Gene Classifications" search field that enables you to enter
-a GO term or phrase for searching.  A term is entered in the search box and
-the ontologies to be examined are checked.  To improve and refine their
-searches, users should become familiar with the available terms in the
-ontologies (see Molecular Function, Cellular Component, and Biological Process
+Clone" provide a "Gene Classifications" search field that enable you to enter
+a GO term or phrase for searching.  Once you submit the query, the system checks 
+the ontologies to be examined.  To improve and refine your
+searches, you should become familiar with the available terms in the
+ontologies (see the Molecular Function, Cellular Component, and Biological Process
 links in the left frame). 
 
-Please note that the GO vocabularies are hierarchical. Consequently, a search term returns gene
+<p>Please note that the GO vocabularies are hierarchical. Consequently, a search returns gene
 records annotated not only to terms matching your query but also gene records annotated to more 
-detailed terms related to your query term (but not necessarily containing the text you entered). For
+detailed terms related to the query term (but not necessarily containing the text you entered). For
 example, if you enter: <b>carbohydrate metabolism</b>, you will also identify genes with the annotation: 
 <b>glycosaminoglycan biosynthesis</b>.
 <!--Please note that the current implementation is a
