@@ -13,11 +13,12 @@
 <BLOCKQUOTE>
 <INPUT TYPE="radio" NAME="method" VALUE="NEW"> New <BR>        
 <INPUT TYPE="radio" NAME="method" VALUE="REVISED"> Revised<BR>
-If this is a strain name revision, enter the strain's MGI_accession #
-	<INPUT TYPE="text" NAME="MGI_accession" SIZE=30>
 </BLOCKQUOTE>
 
-<BR>
+<B> JR registry number  </B><INPUT TYPE="text" NAME="JR_num" SIZE=15> 
+<P>
+
+
 <B>Proposed Strain Name</B><P>
 Use &lt; &gt; for superscripted alleles.  <I>Example:</I><B>Prkdc<sup>scid</sup></B> should be entered as <B>Prkdc&lt;scid&gt;</B><BR>
 If this is a revision, enter the revised strain name here and "previous name" under synonyms.<BR>
@@ -33,10 +34,6 @@ the gene symbols entered into this box would be <B>Prkdc</B> and <B>B2m</B><BR><
 
 <HR>
 <BR>
-<B> JR registry number  </B><INPUT TYPE="text" NAME="JR_num" SIZE=15> 
-<P>
-<BR>
-
 <DL>
 <DT>
 <B>Is this strain public or private ?</B>

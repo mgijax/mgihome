@@ -20,7 +20,6 @@ import formMailer
 
 labels = {
 	'method'	: 'Strain Name New or Revised',
-	'MGI_accession'	: 'MGI Acc ID',
 	'strain_name'	: 'Strain Name',
 	'gene_symbols'	: 'Gene Symbols',
 	'JR_num'	: 'JR Registry Number',
@@ -43,8 +42,8 @@ required_fields = [ 'name', 'method', 'status' ]
 
 sections = [
 	('Strain Info',
-		[ 'method', 'MGI_accession', 'strain_name', 'gene_symbols',
-		  'JR_num', 'status', 'category' ]),
+		[ 'method', 'JR_num', 'strain_name', 'gene_symbols',
+		  'status', 'category' ]),
 	('Additional Info',
 		[ 'synonyms', 'references', 'notes' ]),
 	('Contact Info',
