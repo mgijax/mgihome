@@ -1,144 +1,129 @@
 #!./python
 
 # Program: strain_submit.cgi
-# Purpose: accept submission from strain_form.shtml, do input validation,
-#	send an e-mail to strain curators, and provide feedback to the user.
+# Purpose: accept submission data from strain_form.shtml, do input validation,
+#       send an e-mail to the strain curators and the submitter, and 
+#       provide appropriate feedback to the user.
 
-import sys				# standard Python libraries
+import sys                              # standard Python libraries
 if '.' not in sys.path:
-	sys.path.insert (0, '.')
+        sys.path.insert (0, '.')
 import os
 import string
 
-import config				# MGI-written Python libraries
+import config                           # MGI-written Python libraries
 import homelib
 import header
 import formMailer
 
 ###--- Global Variables ---###
 
-# mapping from internal fieldname to label for the user:
-
+# mapping from internal fieldnames (passed from the browser) 
+# to labels for the user: passed to strainMailer constructor
 labels = {
-	'method'	: 'Strain Name New or Revised',
-	'strain_name'	: 'Strain Name',
-	'gene_symbols'	: 'Gene Symbols',
-	'Prefix'	: 'Prefix',
-	'instituteID'	: 'Strain Accession ID',
-	'status'	: 'Strain Public or Private',
-	'category'	: 'Categories',
-	'synonyms'	: 'Synonyms',
-	'references'	: 'References',
-	'notes'		: 'Notes',
-	'firstname' 	: 'First Name',
-	'lastname'	: 'Last Name',
-	'email'		: 'E-Mail Address',
-	}
+        'method'        : 'Strain Name New or Revised',
+        'strain_name'   : 'Strain Name',
+        'gene_symbols'  : 'Gene Symbols',
+        'Prefix'        : 'Prefix',
+        'instituteID'   : 'Strain Accession ID',
+        'status'        : 'Strain Public or Private',
+        'category'      : 'Categories',
+        'synonyms'      : 'Synonyms',
+        'references'    : 'References',
+        'notes'         : 'Notes',
+        'firstname'     : 'First Name',
+        'lastname'      : 'Last Name',
+        'email'         : 'E-Mail Address',
+        }
 
-# list of internal fieldnames for required fields:
-
+# list of required internal fieldnames: passed to strainMailer constructor
 required_fields = [ 'firstname','lastname', 'method', 'status','email' ]
 
-# sections for e-mail:
+# sections list containing display order for e-mails:
 # each tuple contains (section heading string, list of internal fieldnames
-#	to include in that section)
-
+#       to include in that section)
+# passed to strainMailer constructor
 sections = [
-	('Strain Info',
-		[ 'method', 'Prefix','instituteID','strain_name', 
-		  'gene_symbols', 'status', 'category' ]),
-	('Additional Info',
-		[ 'synonyms', 'references', 'notes' ]),
-	('Contact Info',
-		[ 'name', 'email' ]),
-	]
+        ('Strain Info',
+                [ 'method', 'Prefix','instituteID','strain_name', 
+                  'gene_symbols', 'status', 'category' ]),
+        ('Additional Info',
+                [ 'synonyms', 'references', 'notes' ]),
+        ('Contact Info',
+                [ 'firstname', 'lastname', 'email' ]),
+        ]
 
 ###--- Classes ---###
 
 class strainMailer (formMailer.formMailer):
-	# IS: a formMailer that deals specifically with the strain_form.shtml
-	#	strain submission form
-	# HAS: see formMailer
-	# DOES: see formMailer
+        # IS:   a formMailer that interacts with strain_form.shtml
+        #       strain submission form
+        # HAS:  see formMailer
+        # DOES: see formMailer
 
-	def doPostValidationProcessing(self):
-		# Purpose: convert any submitted multi-line field to be a list
-		#	of strings (with each string being a single line)
-		# Returns: nothing
-		# Assumes: nothing
-		# Effects: alters self.parms
-		# Throws: nothing
-		# Notes: The four possible multi-line fields are defined in
-		#	the 'fields' variable below.  Even if one of these
-		#	fields contains only a single line, we will convert
-		#	it to a list for consistency.
+        def doPostValidationProcessing(self):
+                # Purpose: Convert any submitted multi-line field to a list
+                #          of strings 
+                # Returns: nothing
+                # Assumes: nothing
+                # Effects: alters self.parms
+                # Throws:  nothing
+                # Notes:   The four possible multi-line fields are defined in
+                #          the 'fields' variable below.  Even if one of these
+                #          fields contains only a single line, we will convert
+                #          it to a list for consistency.
 
-		fields = [ 'notes', 'references', 'synonyms', 'gene_symbols' ]
-		for field in fields:
-			if self.parms.has_key (field):
-				self.parms[field] = string.split (
-					self.parms[field], '\n')
-		return
+                fields = [ 'notes', 'references', 'synonyms', 'gene_symbols' ]
+                for field in fields:
+                        if self.parms.has_key (field):
+                                self.parms[field] = string.split (
+                                        self.parms[field], '\n')
+                return
 
-	def doValidations(self):
-		# Purpose: perform validation of submitted data
-		# Returns: list of tuples; each tuple is (fieldname, error
-		#	string).  An empty list means no errors were found.
-		# Assumes: nothing
-		# Effects: nothing
-		# Throws: nothing
-		# Notes: For now, we do two validations - check that the
-		#	e-mail address contains an '@' sign, and check that
-		#	the username in the e-mail address matches that of
-		#	the person logged in using the htaccess mechanism.
+        def doValidations(self):
+                # Purpose: Perform validation of submitted data
+                # Returns: List of tuples; 
+                #          Each tuple is (fieldname, error string).  
+                #          An empty list means no errors were found.
+                # Assumes: nothing
+                # Effects: nothing
+                # Throws:  nothing
+                # Notes:   For now, we do two validations - check that the
+                #          e-mail address contains an '@' sign, and check that
+                #          the username in the e-mail address matches that of
+                #          the person logged in using the htaccess mechanism.
 
-		errors = []
+                errors = []
 
-		# check that the e-mail address contains a '@'
-
-		if self.parms.has_key ('email'):
-			atPos = string.find (self.parms['email'], '@')
-			if atPos == -1:
-				errors.append ( ('email',
-					'Invalid e-mail address') )
-		return errors
-
-	def getFrom (self):
-		# Purpose: return the e-mail address which should appear in
-		#	the 'From' line for the generated e-mail
-		# Returns: string
-		# Assumes: an 'email' field was submitted, though this would
-		#	have already been confirmed when we check for
-		#	required fields
-		# Effects: nothing
-		# Throws: nothing
-		# Notes: We return the e-mail address submitted by the user,
-		#	so the e-mail appears that it comes from him/her.
-
-		if self.parms.has_key ('email'):
-			return self.parms['email']
-		return self.parms['name']
+                # ensure e-mail address contains a '@'
+                if self.parms.has_key ('email'):
+                        atPos = string.find (self.parms['email'], '@')
+                        if atPos == -1:
+                                errors.append ( ('email',
+                                        'Invalid e-mail address') )
+                return errors
 
 ###--- Main Program ---###
 
 # set up the 'To' address for the submission, and allow it to be over-ridden
 # in the configuration file for testing.
-
-submit_addr = 'strains@informatics.jax.org'
+curator_addr = 'strains@informatics.jax.org'
 
 dev_email = config.lookup ('CGI_MAILTARGET')
 if dev_email is not None:
-	submit_addr = dev_email
+        curator_addr = dev_email
 
 # construct the strainMailer object, and let it run...
+strainMailerCGI = strainMailer ('Strain',
+        curator_addr,
+        header.bodyStart(),
+        header.bodyStop(),
+        labels,
+        required_fields,
+        sections
+        )
 
-myCGI = strainMailer ('Strain',
-	submit_addr,
-	header.bodyStart(),
-	header.bodyStop(),
-	labels,
-	required_fields,
-	sections
-	)
-myCGI.go()
+# the go() method is inherited from the CGI class, in the CGI.py module
+# it simply wraps the formMailer.main() in error handling
+strainMailerCGI.go()
 

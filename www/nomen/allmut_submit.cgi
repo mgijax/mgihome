@@ -2,188 +2,172 @@
 
 # Program: allele_submit.cgi
 # Purpose: to process data submitted on the "New Allele and Mutant Submission
-#	Form" within the MGI Home product.  Basically, we check to see that
-#	some mandatory fields are present.  If not, we give an error message.
-#	If they are, we build all the fields and values into an e-mail message
-#	to send to a mail alias specified below.
+#       Form" within the MGI Home product.  Basically, we check to see that
+#       some mandatory fields are present.  If not, we give an error message.
+#       If they are, we build all the fields and values into an e-mail message
+#       to send to a mail alias specified below.
 
 import sys
 if '.' not in sys.path:
-	sys.path.insert (0, '.')
+        sys.path.insert (0, '.')
 import string
 import types
 import os
 
 import config
-import table		# for unescape() function only
 import homelib
 import header
 import CGI
 import errorlib
-import SimpleVocab
 import formMailer
 
-SimpleVocab.set_sqlFunction (homelib.sql)
+###--- Global Variables ---###
 
-submit_addr = 'mutants@informatics.jax.org'	# MGD Allele and Mutant E-mail
+# mapping from internal fieldnames (passed from the browser) 
+# to labels for the user: Passed to allmutMailer constructor
+labels = {
+        'lastname'      : 'Last name',                  # Contact Details
+        'firstname'     : 'First name & middle initial(s)',
+        'email'         : 'E-mail address',
+        'organization'  : 'Institute/Organization',
+        'address1'      : 'Address',
+        'address2'      : 'Address',
+        'city'          : 'City',
+        'state'         : 'State/Province',
+        'zip'           : 'Postal Code',
+        'country'       : 'Country',
+        'phone'         : 'Telephone Number',
+        'fax'           : 'Fax Number',
 
-# developer override for mailtarget
-dev_email = config.lookup ('CGI_MAILTARGET')
-if dev_email is not None:
-	submit_addr = dev_email
+        'published'     : 'Currently Published',        # References
+        'publicize'     : 'Make Public',
+        'citations'     : 'Citations',                  
+        'alleleURL'     : 'Allele URL',
 
-# maps from actual fieldname to its label, for error reporting
+
+        'description'   : 'Description',                # Phenotype
+        'remarks'       : 'Other Remarks',
+
+        'genesymbol'    : 'Gene Symbol',                # Nomenclature
+        'allele'        : 'Allele Symbol',
+        'allelename'    : 'Allele Name',
+        'synonyms'      : 'Other Names/Synonyms',
+        'nomenHelp'     : 'Nomenclature Help Requested',
+
+                                                        # Strain
+        'strainMutation': 'Strain Background (where mutation arose)',
+        'strainPhenotype': 'Strain Background (where phenotype analyzed)',
+        'strainInfo'    : 'Other Strain Information',
+        'strainHelp'    : 'Genetic Background Help Requested',
+
+                                                        # Mutation
+        'method'        : 'Method of Allele Generation',
+        'othermethod'   : '"Other" Specification',
+        'promoter'      : 'Transgene Promoter',
+        'celline'       : 'ES Cell Line',
+        'mode'          : 'Mode of Inheritance',
+        'othermode'     : '"Other" Mode of Inheritance',
+
+
+        'chromosome'    : 'Chromosome Location',        # Mapping data
+        'location'      : 'Other Genome Location Information',
+        }
+
+# list of required internal fieldnames: Passed to allmutMailer constructor
 required_fields = [ 'lastname', 'firstname', 'email' ]
 
-# maps from actual fieldnames to the corresponding label:
-labels = {
-	'lastname'	: 'Last name',			# Contact Details
-	'firstname'	: 'First name &amp; middle initial(s)',
-	'email' 	: 'E-mail address',
-	'organization'	: 'Institute/Organization',
-	'address1'	: 'Address',
-	'address2'	: 'Address',
-	'city'		: 'City',
-	'state'		: 'State/Province',
-	'zip'		: 'Postal Code',
-	'country'	: 'Country',
-	'phone'		: 'Telephone Number',
-	'fax'		: 'Fax Number',
+# sections list containing display order for e-mails:
+# each tuple contains (section heading string, list of internal fieldnames
+#       to include in that section)
+# Passed to allmutMailer constructor
+sections = [
+        ('Nomenclature',
+                ['genesymbol','allele','allelename','synonyms','nomenHelp']),
+        ('About this Mutation',
+                ['method', 'othermethod', 'promoter', 'celline',
+                'mode', 'othermode','chromosome','location']),
+        ('Genetic Background',
+                ['strainMutation', 'strainPhenotype', 'strainInfo', 
+                'strainHelp',]),
+        ('Phenotype',
+                ['description', 'remarks']),
+        ('References',
+                [ 'published', 'publicize', 'citations', 'alleleURL' ]),
+        ('Contact Details',
+                [ 'firstname', 'lastname', 'email', 'organization',
+                        'address1', 'address2', 'city', 'state', 'zip',
+                        'country', 'phone', 'fax' ]),
+        ]
 
-	'published' 	: 'Currently Published',	# References
-	'publicize'	: 'Make Public',
-	'citations'	: 'Citations',			
-	'alleleURL'	: 'Allele URL',
+###--- Classes ---###
 
+class allmutMailer (formMailer.formMailer):
+        # IS:   a formMailer that deals specifically with the mutant allele
+        #         submission form
+        # HAS:  see formMailer
+        # DOES: see formMailer
 
-	'description'	: 'Description',		# Phenotype
-	'remarks'	: 'Other Remarks',
+        def doPostValidationProcessing(self):
+                # Purpose: convert any submitted multi-line field to be a list
+                #       of strings (with each string being a single line)
+                # Returns: nothing
+                # Assumes: nothing
+                # Effects: alters self.parms
+                # Throws:  nothing
+                # Notes:   The five possible multi-line fields are defined in
+                #          the 'fields' variable below.  Even if one of these
+                #          fields contains only a single line, we will convert
+                #          it to a list for consistency.
 
-	'genesymbol'	: 'Gene Symbol',		# Nomenclature
-	'allele'	: 'Allele Symbol',
-	'allelename'	: 'Allele Name',
-	'synonyms'	: 'Other Names/Synonyms',
-	'nomenHelp'	: 'Nomenclature Help Requested',
+                fields = ['location','strainInfo','description',
+                        'remarks','citations']
+                for field in fields:
+                        if self.parms.has_key (field):
+                                self.parms[field] = string.split (
+                                        self.parms[field], '\n')
+                return
 
-							# Strain
-	'strainMutation': 'Strain Background (where mutation arose)',
-	'strainPhenotype': 'Strain Background (where phenotype analyzed)',
-	'strainInfo'	: 'Other Strain Information',
-	'strainHelp'	: 'Genetic Background Help Requested',
+        def doValidations(self):
+                # Purpose: perform validation of submitted data
+                # Returns: list of tuples; each tuple is (fieldname, error
+                #       string).  An empty list means no errors were found.
+                # Assumes: nothing
+                # Effects: nothing
+                # Throws: nothing
+                # Notes: Check that the e-mail address contains an '@'
 
-							# Mutation
-	'method'	: 'Method of Allele Generation',
-	'othermethod'	: '"Other" Specification',
-	'promoter'	: 'Transgene Promoter',
-	'celline'	: 'ES Cell Line',
-	'mode'		: 'Mode of Inheritance',
-	'othermode'	: '"Other" Mode of Inheritance',
+                errors = []
 
+                # check that the e-mail address contains a '@'
+                if self.parms.has_key ('email'):
+                        atPos = string.find (self.parms['email'], '@')
+                        if atPos == -1:
+                                errors.append ( ('email',
+                                        'Invalid e-mail address') )
+                return errors
 
-	'chromosome'	: 'Chromosome Location',	# Mapping data
-	'location'	: 'Other Genome Location Information',
-	}
+###--- Main Program ---###
 
-# order in which fields should be included in the e-mail.  This is a list of
-# tuples, where each tuple is: (section name, [ fieldnames in order ])
-field_order = [
-	('Nomenclature',
-		['genesymbol', 'allele', 'allelename','synonyms','nomenHelp']),
-	('About this Mutation',
-		['method', 'othermethod', 'promoter', 'celline',
-		'mode', 'othermode','chromosome','location']),
-	('Genetic Background',
-		['strainMutation', 'strainPhenotype', 'strainInfo', 
-		'strainHelp',]),
-	('Phenotype',
-		['description', 'remarks']),
-	('References',
-		[ 'published', 'publicize', 'citations', 'alleleURL' ]),
-	('Contact Details',
-		[ 'lastname', 'firstname', 'email', 'organization',
-			'address1', 'address2', 'city', 'state', 'zip',
-			'country', 'phone', 'fax' ]),
-	]
-# error message string for missing required fields
-err_message = '''These required fields are missing: %s<BR>
-	Please go back and try again.<P>'''
+# set up the 'To' address for the submission, and allow it to be over-ridden
+# in the configuration file for testing.
 
-# header for generated e-mail
-mailheader = '''From: %s
-To: %s
-Subject: %s
+curator_addr = 'mutants@informatics.jax.org'
 
-'''
+dev_email = config.lookup ('CGI_MAILTARGET')
+if dev_email is not None:
+        curator_addr = dev_email
 
-def convertPhenoslim (dict):
-	if not dict.has_key('phenoslim'):
-		return
+# construct the allmutMailer object, and let it run...
+allmutMailerCGI = allmutMailer ('Allele and Mutant',
+        curator_addr,
+        header.bodyStart(),
+        header.bodyStop(),
+        labels,
+        required_fields,
+        sections
+        )
 
-	ps = SimpleVocab.PhenoSlimVocab()
-	terms = {}
-	for term in ps.getTerms():
-		terms[str(term.getKey())] = term.getTerm()
+# the go() method is inherited from the CGI class, in the CGI.py module
+# it simply wraps the formMailer.main() in error handling
+allmutMailerCGI.go()
 
-	if type(dict['phenoslim']) != types.ListType:
-		dict['phenoslim'] = terms[dict['phenoslim']]
-	else:
-		list = []
-		for key in dict['phenoslim']:
-			list.append (terms[key])
-		dict['phenoslim'] = list
-	return
-
-class myCGI (CGI.CGI):
-	def main(self):
-		parms = self.get_parms()
-		missing_fields = []
-		for key in required_fields:
-			if not parms.has_key (key):
-				missing_fields.append (labels[key])
-		if missing_fields:
-			formMailer.handleError (
-				err_message % \
-					string.join (missing_fields, ', '),
-				'MGI Allele and Mutant Form',
-				header.bodyStart(),
-				header.bodyStop())
-			sys.exit (0)
-		message = []
-		convertPhenoslim (parms)
-		for (heading, fieldlist) in field_order:
-			section = [
-				'-' * len(heading),
-				heading,
-				'-' * len(heading),
-				]
-			for field in fieldlist:
-				if parms.has_key(field):
-					section.append (labels[field])
-					if type(parms[field]) == \
-							types.ListType:
-						for item in parms[field]:
-							section.append ( \
-								'\t%s' % item)
-					else:
-						section.append ('\t%s' % \
-							parms[field])
-			if len(section) > 3:
-				message = message + section
-
-		fd = os.popen('%s -t' % config.lookup('SENDMAIL'), 'w')
-		fd.write(mailheader % (parms['email'], submit_addr,
-			'Allele and Mutant Submission'))
-		fd.write(table.unescape(string.join (message, '\n')))
-		fd.close()
-
-		print '<HTML><HEAD><TITLE>Request Sent</TITLE></HEAD>'
-		print '<BODY bgcolor=ffffff>'
-		print header.bodyStart()
-		print header.headerBar('New Allele and Mutant Submission Sent')
-		print 'The following information was successfully submitted:'
-		print '<PRE>\n%s\n</PRE>' % string.join (message, '\n')
-		print '<HR>'
-		print header.bodyStop()
-		return
-
-myCGI().go()
