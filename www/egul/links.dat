@@ -1,0 +1,1693 @@
+####################################################
+# links.dat
+#
+# This is the "database" file for adding arbitrary
+# HTML links to arbitrary objects in MGI.
+#
+# For maintenance procedures, see specific sections.
+# IMPORTANT: Please be sure that EVERY link record
+# begins with "[" on a line by itself.
+#
+# Please do not edit anything between here and the
+# comment "START OF USER SECTION".
+#
+####################################################
+
+#
+# NOTE: The variable MGIHOME is defined externally.
+# It should NOT be defined in this file.
+#
+
+# Path to Gene Family Pages directory.
+#
+GFPDIR=${MGIHOME}/nomen/genefamilies
+
+# Path to the directory holding short papers.
+#
+SPDIR=${MGIHOME}/shortpapers
+
+########## START OF USER SECTION ##########
+
+####################################################
+# Short Paper Links
+# To add a short paper link:
+#	1. Put the document (the short paper) in the
+#	   'shortpapers' directory under mgi home.
+#	2. Create a record with:
+#	     id = the paper's J# 
+#	     type = ${SP}  (defined as the string "Full text")
+#	     url = ${SPDIR}/xxx
+#	   where xxx is the name of the file (generally
+#	   an HTML or PDF file).
+#		
+####################################################
+
+# Define a type for short papers
+#
+SP=Full text
+
+[
+#
+# This record is FAKE!! For testing only!!!
+#
+id = J:5657
+type = ${SP}
+url = ${SPDIR}/J:5657.pdf
+]
+
+[
+#
+# This record is FAKE!! For testing only!!!
+#
+id = J:180
+type = ${SP}
+url = ${SPDIR}/J:180.pdf
+]
+
+# END of Short Paper Links
+
+####################################################
+# Gene Family Page Links
+#
+# To define a new gene family (page):
+#	1. Create a divider comment. Be sure to include
+#	   the name of the gene family in the comment.
+#	2. Immediately following the comment, define
+#	   GFPURL to be the url of the gene family page
+#	   document. E.g.,:
+#		GFPURL = ${GFPDIR}/newFamily.pdf
+#	3. Create a record for each gene in the family.
+#	   Each record should have:
+#		id = the gene's MGI#. The gene's symbol
+#			can be added as a comment, 
+#			if desired.
+#		type = GFP
+#		url = ${GFPURL}
+####################################################
+
+#------------------- Disintegrin-like and Metalloprotease ....
+#
+# set the URL for this family
+GFPURL = ${GFPDIR}/adamt.shtml
+
+[
+id = MGI:109249
+type = GFP
+url = ${GFPURL}
+]
+[
+id = MGI:1347356
+type = GFP
+url = ${GFPURL}
+]
+[
+id = MGI:1339949
+type = GFP
+url = ${GFPURL}
+]
+[
+id = MGI:1346321
+type = GFP
+url = ${GFPURL}
+]
+[
+id = MGI:1347348
+type = GFP
+url = ${GFPURL}
+]
+[
+id = MGI:1347346
+type = GFP
+url = ${GFPURL}
+]
+[
+id = MGI:1353468
+type = GFP
+url = ${GFPURL}
+]
+
+#------------------- Adenylate Cyclase 
+
+#
+# set the URL for this family
+GFPURL = ${GFPDIR}/adenyl_cyclase.shtml
+
+[
+id = MGI:99677       # Adcy1
+type = GFP
+url = ${GFPURL}
+]
+[
+id = MGI:99676       # Adcy2
+type = GFP
+url = ${GFPURL}
+]
+[
+id = MGI:99675       # Adcy3
+type = GFP
+url = ${GFPURL}
+]
+[
+id = MGI:99674       # Adcy4
+type = GFP
+url = ${GFPURL}
+]
+[
+id = MGI:99673       # Adcy5
+type = GFP
+url = ${GFPURL}
+]
+[
+id = MGI:87917       # Adcy6
+type = GFP
+url = ${GFPURL}
+]
+[
+id = MGI:102891      # Adcy7
+type = GFP
+url = ${GFPURL}
+]
+[
+id = MGI:1341110     # Adcy8
+type = GFP
+url = ${GFPURL}
+]
+[
+id = MGI:108450      # Adcy9
+type = GFP
+url = ${GFPURL}
+]
+
+#------------------- Alpha Actinin 
+
+#
+# set the URL for this family
+GFPURL = ${GFPDIR}/alpha_actinin.shtml
+
+[
+id = MGI:2137706     # Actn1
+type = GFP
+url = ${GFPURL}
+]
+[
+id = MGI:109192      # Actn2
+type = GFP
+url = ${GFPURL}
+]
+[
+id = MGI:99678       # Actn3
+type = GFP
+url = ${GFPURL}
+]
+[
+id = MGI:1890773     # Actn4
+type = GFP
+url = ${GFPURL}
+]
+
+#------------------- Annexin 
+
+#
+# set the URL for this family
+GFPURL = ${GFPDIR}/anxa.shtml
+
+[
+id = MGI:96819       # Anxa1
+type = GFP
+url = ${GFPURL}
+]
+[
+id = MGI:1347090     # Anxa10
+type = GFP
+url = ${GFPURL}
+]
+[
+id = MGI:108481      # Anxa11
+type = GFP
+url = ${GFPURL}
+]
+[
+id = MGI:1917037     # Anxa13
+type = GFP
+url = ${GFPURL}
+]
+[
+id = MGI:88246       # Anxa2
+type = GFP
+url = ${GFPURL}
+]
+[
+id = MGI:1201378     # Anxa3
+type = GFP
+url = ${GFPURL}
+]
+[
+id = MGI:88030       # Anxa4
+type = GFP
+url = ${GFPURL}
+]
+[
+id = MGI:106008      # Anxa5
+type = GFP
+url = ${GFPURL}
+]
+[
+id = MGI:895066      # Anxa5-rs
+type = GFP
+url = ${GFPURL}
+]
+[
+id = MGI:88255       # Anxa6
+type = GFP
+url = ${GFPURL}
+]
+[
+id = MGI:88031       # Anxa7
+type = GFP
+url = ${GFPURL}
+]
+[
+id = MGI:88032       # Anxa7-ps1
+type = GFP
+url = ${GFPURL}
+]
+[
+id = MGI:1201374     # Anxa8
+type = GFP
+url = ${GFPURL}
+]
+[
+id = MGI:1923711     # Anxa9
+type = GFP
+url = ${GFPURL}
+]
+
+#------------------- Apolipoprotein C 
+
+#
+# set the URL for this family
+GFPURL = ${GFPDIR}/apoc.shtml
+
+[
+id = MGI:88053       # Apoc1
+type = GFP
+url = ${GFPURL}
+]
+[
+id = MGI:88054       # Apoc2
+type = GFP
+url = ${GFPURL}
+]
+[
+id = MGI:88055       # Apoc3
+type = GFP
+url = ${GFPURL}
+]
+[
+id = MGI:87878       # Apoc4
+type = GFP
+url = ${GFPURL}
+]
+
+#------------------- Aquaporin 
+
+#
+# set the URL for this family
+GFPURL = ${GFPDIR}/aquaporin.shtml
+
+[
+id = MGI:103201      # Aqp1
+type = GFP
+url = ${GFPURL}
+]
+[
+id = MGI:1096865     # Aqp2
+type = GFP
+url = ${GFPURL}
+]
+[
+id = MGI:1333777     # Aqp3
+type = GFP
+url = ${GFPURL}
+]
+[
+id = MGI:107387      # Aqp4
+type = GFP
+url = ${GFPURL}
+]
+[
+id = MGI:106215      # Aqp5
+type = GFP
+url = ${GFPURL}
+]
+[
+id = MGI:1341204     # Aqp6
+type = GFP
+url = ${GFPURL}
+]
+[
+id = MGI:1314647     # Aqp7
+type = GFP
+url = ${GFPURL}
+]
+[
+id = MGI:1195271     # Aqp8
+type = GFP
+url = ${GFPURL}
+]
+[
+id = MGI:1891066     # Aqp9
+type = GFP
+url = ${GFPURL}
+]
+
+#------------------- Calcium Channel, Voltage-dependent, Gamma Subunit 
+
+#
+# set the URL for this family
+GFPURL = ${GFPDIR}/cacng.shtml
+
+[
+id = MGI:1206582     # Cacng1
+type = GFP
+url = ${GFPURL}
+]
+[
+id = MGI:1316660     # Cacng2
+type = GFP
+url = ${GFPURL}
+]
+[
+id = MGI:1859165     # Cacng3
+type = GFP
+url = ${GFPURL}
+]
+[
+id = MGI:1859167     # Cacng4
+type = GFP
+url = ${GFPURL}
+]
+[
+id = MGI:2157946     # Cacng5
+type = GFP
+url = ${GFPURL}
+]
+[
+id = MGI:1859168     # Cacng6
+type = GFP
+url = ${GFPURL}
+]
+[
+id = MGI:1932374     # Cacng7
+type = GFP
+url = ${GFPURL}
+]
+[
+id = MGI:1932376     # Cacng8
+type = GFP
+url = ${GFPURL}
+]
+
+#------------------- Calpain 
+
+#
+# set the URL for this family
+GFPURL = ${GFPDIR}/calpain.shtml
+
+[
+id = MGI:88263       # Capn1
+type = GFP
+url = ${GFPURL}
+]
+[
+id = MGI:88264       # Capn2
+type = GFP
+url = ${GFPURL}
+]
+[
+id = MGI:107437      # Capn3
+type = GFP
+url = ${GFPURL}
+]
+[
+id = MGI:1100859     # Capn5
+type = GFP
+url = ${GFPURL}
+]
+[
+id = MGI:1100850     # Capn6
+type = GFP
+url = ${GFPURL}
+]
+[
+id = MGI:1338030     # Capn7
+type = GFP
+url = ${GFPURL}
+]
+[
+id = MGI:1344392     # Capn10
+type = GFP
+url = ${GFPURL}
+]
+[
+id = MGI:1352490     # Capn11
+type = GFP
+url = ${GFPURL}
+]
+[
+id = MGI:1891369     # Capn12
+type = GFP
+url = ${GFPURL}
+]
+
+#------------------- Claudin 
+
+#
+# set the URL for this family
+GFPURL = ${GFPDIR}/claudin.shtml
+
+[
+id = MGI:1276109     # Cldn1
+type = GFP
+url = ${GFPURL}
+]
+[
+id = MGI:1276110     # Cldn2
+type = GFP
+url = ${GFPURL}
+]
+[
+id = MGI:1329044     # Cldn3
+type = GFP
+url = ${GFPURL}
+]
+[
+id = MGI:1313314     # Cldn4
+type = GFP
+url = ${GFPURL}
+]
+[
+id = MGI:1276112     # Cldn5
+type = GFP
+url = ${GFPURL}
+]
+[
+id = MGI:1859284     # Cldn6
+type = GFP
+url = ${GFPURL}
+]
+[
+id = MGI:1859285     # Cldn7
+type = GFP
+url = ${GFPURL}
+]
+[
+id = MGI:1859286     # Cldn8
+type = GFP
+url = ${GFPURL}
+]
+[
+id = MGI:1913100     # Cldn9
+type = GFP
+url = ${GFPURL}
+]
+[
+id = MGI:1913101     # Cldn10
+type = GFP
+url = ${GFPURL}
+]
+[
+id = MGI:106925      # Cldn11
+type = GFP
+url = ${GFPURL}
+]
+[
+id = MGI:1929288     # Cldn12
+type = GFP
+url = ${GFPURL}
+]
+[
+id = MGI:1913102     # Cldn13
+type = GFP
+url = ${GFPURL}
+]
+[
+id = MGI:1860425     # Cldn14
+type = GFP
+url = ${GFPURL}
+]
+[
+id = MGI:1913103     # Cldn15
+type = GFP
+url = ${GFPURL}
+]
+[
+id = MGI:2148742     # Cldn16
+type = GFP
+url = ${GFPURL}
+]
+[
+id = MGI:1929209     # Cldn18
+type = GFP
+url = ${GFPURL}
+]
+
+#------------------- Collagen 
+
+#
+# set the URL for this family
+GFPURL = ${GFPDIR}/collagen.shtml
+
+[
+id = MGI:88467       # Col1a1
+type = GFP
+url = ${GFPURL}
+]
+[
+id = MGI:88468       # Col1a2
+type = GFP
+url = ${GFPURL}
+]
+[
+id = MGI:88452       # Col2a1
+type = GFP
+url = ${GFPURL}
+]
+[
+id = MGI:88453       # Col3a1
+type = GFP
+url = ${GFPURL}
+]
+[
+id = MGI:88454       # Col4a1
+type = GFP
+url = ${GFPURL}
+]
+[
+id = MGI:88455       # Col4a2
+type = GFP
+url = ${GFPURL}
+]
+[
+id = MGI:104688      # Col4a3
+type = GFP
+url = ${GFPURL}
+]
+[
+id = MGI:104687      # Col4a4
+type = GFP
+url = ${GFPURL}
+]
+[
+id = MGI:88456       # Col4a5
+type = GFP
+url = ${GFPURL}
+]
+[
+id = MGI:2152695     # Col4a6
+type = GFP
+url = ${GFPURL}
+]
+[
+id = MGI:88457       # Col5a1
+type = GFP
+url = ${GFPURL}
+]
+[
+id = MGI:88458       # Col5a2
+type = GFP
+url = ${GFPURL}
+]
+[
+id = MGI:1858212     # Col5a3
+type = GFP
+url = ${GFPURL}
+]
+[
+id = MGI:88459       # Col6a1
+type = GFP
+url = ${GFPURL}
+]
+[
+id = MGI:88460       # Col6a2
+type = GFP
+url = ${GFPURL}
+]
+[
+id = MGI:88461       # Col6a3
+type = GFP
+url = ${GFPURL}
+]
+[
+id = MGI:88462       # Col7a1
+type = GFP
+url = ${GFPURL}
+]
+[
+id = MGI:88463       # Col8a1
+type = GFP
+url = ${GFPURL}
+]
+[
+id = MGI:88464       # Col8a2
+type = GFP
+url = ${GFPURL}
+]
+[
+id = MGI:88465       # Col9a1
+type = GFP
+url = ${GFPURL}
+]
+[
+id = MGI:88466       # Col9a2
+type = GFP
+url = ${GFPURL}
+]
+[
+id = MGI:894686      # Col9a3
+type = GFP
+url = ${GFPURL}
+]
+[
+id = MGI:88445       # Col10a1
+type = GFP
+url = ${GFPURL}
+]
+[
+id = MGI:88446       # Col11a1
+type = GFP
+url = ${GFPURL}
+]
+[
+id = MGI:88447       # Col11a2
+type = GFP
+url = ${GFPURL}
+]
+[
+id = MGI:88448       # Col12a1
+type = GFP
+url = ${GFPURL}
+]
+[
+id = MGI:1277201     # Col13a1
+type = GFP
+url = ${GFPURL}
+]
+[
+id = MGI:1341272     # Col14a1
+type = GFP
+url = ${GFPURL}
+]
+[
+id = MGI:88449       # Col15a1
+type = GFP
+url = ${GFPURL}
+]
+[
+id = MGI:1095396     # Col16a1
+type = GFP
+url = ${GFPURL}
+]
+[
+id = MGI:88450       # Col17a1
+type = GFP
+url = ${GFPURL}
+]
+[
+id = MGI:88451       # Col18a1
+type = GFP
+url = ${GFPURL}
+]
+[
+id = MGI:1095415     # Col19a1
+type = GFP
+url = ${GFPURL}
+]
+
+#------------------- Cyclic Nucleotide Phosphodiesterase Superfamily 
+
+#
+# set the URL for this family
+GFPURL = ${GFPDIR}/cyclic_nucleotide_phos.shtml
+
+[
+id = MGI:1201792     # Pde1a
+type = GFP
+url = ${GFPURL}
+]
+[
+id = MGI:97523       # Pde1b
+type = GFP
+url = ${GFPURL}
+]
+[
+id = MGI:108413      # Pde1c
+type = GFP
+url = ${GFPURL}
+]
+[
+id = MGI:1860764     # Pde3a
+type = GFP
+url = ${GFPURL}
+]
+[
+id = MGI:1333863     # Pde3b
+type = GFP
+url = ${GFPURL}
+]
+[
+id = MGI:99558       # Pde4a
+type = GFP
+url = ${GFPURL}
+]
+[
+id = MGI:99557       # Pde4b
+type = GFP
+url = ${GFPURL}
+]
+[
+id = MGI:99556       # Pde4c
+type = GFP
+url = ${GFPURL}
+]
+[
+id = MGI:99555       # Pde4d
+type = GFP
+url = ${GFPURL}
+]
+[
+id = MGI:97524       # Pde6a
+type = GFP
+url = ${GFPURL}
+]
+[
+id = MGI:97525       # Pde6b
+type = GFP
+url = ${GFPURL}
+]
+[
+id = MGI:105956      # Pde6c
+type = GFP
+url = ${GFPURL}
+]
+[
+id = MGI:1270843     # Pde6d
+type = GFP
+url = ${GFPURL}
+]
+[
+id = MGI:97526       # Pde6g
+type = GFP
+url = ${GFPURL}
+]
+[
+id = MGI:1202402     # Pde7a
+type = GFP
+url = ${GFPURL}
+]
+[
+id = MGI:1352752     # Pde7b
+type = GFP
+url = ${GFPURL}
+]
+[
+id = MGI:1277116     # Pde8a
+type = GFP
+url = ${GFPURL}
+]
+[
+id = MGI:1277179     # Pde9a
+type = GFP
+url = ${GFPURL}
+]
+[
+id = MGI:1345143     # Pde10a
+type = GFP
+url = ${GFPURL}
+]
+
+#------------------- E2f Transcription Factor 
+
+#
+# set the URL for this family
+GFPURL = ${GFPDIR}/e2f.shtml
+
+[
+id = MGI:101941      # E2f1
+type = GFP
+url = ${GFPURL}
+]
+[
+id = MGI:1096341     # E2f2
+type = GFP
+url = ${GFPURL}
+]
+[
+id = MGI:1096340     # E2f3
+type = GFP
+url = ${GFPURL}
+]
+[
+id = MGI:103012      # E2f4
+type = GFP
+url = ${GFPURL}
+]
+[
+id = MGI:105091      # E2f5
+type = GFP
+url = ${GFPURL}
+]
+[
+id = MGI:1354159     # E2f6
+type = GFP
+url = ${GFPURL}
+]
+
+#------------------- EH-domain Containing 
+
+#
+# set the URL for this family
+GFPURL = ${GFPDIR}/ehd.shtml
+
+[
+id = MGI:1341878     # Ehd1
+type = GFP
+url = ${GFPURL}
+]
+[
+id = MGI:1928900     # Ehd3
+type = GFP
+url = ${GFPURL}
+]
+
+#------------------- Fatty Acid Coenzyme A Ligase 
+
+#
+# set the URL for this family
+GFPURL = ${GFPDIR}/fatty_acid.shtml
+
+[
+id = MGI:102797      # Facl2
+type = GFP
+url = ${GFPURL}
+]
+[
+id = MGI:1921455     # Facl3
+type = GFP
+url = ${GFPURL}
+]
+[
+id = MGI:1354713     # Facl4
+type = GFP
+url = ${GFPURL}
+]
+[
+id = MGI:1919129     # Facl5
+type = GFP
+url = ${GFPURL}
+]
+[
+id = MGI:894291      # Facl6
+type = GFP
+url = ${GFPURL}
+]
+
+#------------------- Gamma-Aminobutyric Acid Ionotropic Type A Receptor 
+
+#
+# set the URL for this family
+GFPURL = ${GFPDIR}/gabr.shtml
+
+[
+id = MGI:95613       # Gabra1
+type = GFP
+url = ${GFPURL}
+]
+[
+id = MGI:95614       # Gabra2
+type = GFP
+url = ${GFPURL}
+]
+[
+id = MGI:95615       # Gabra3
+type = GFP
+url = ${GFPURL}
+]
+[
+id = MGI:95616       # Gabra4
+type = GFP
+url = ${GFPURL}
+]
+[
+id = MGI:95617       # Gabra5
+type = GFP
+url = ${GFPURL}
+]
+[
+id = MGI:95618       # Gabra6
+type = GFP
+url = ${GFPURL}
+]
+[
+id = MGI:95619       # Gabrb1
+type = GFP
+url = ${GFPURL}
+]
+[
+id = MGI:95620       # Gabrb2
+type = GFP
+url = ${GFPURL}
+]
+[
+id = MGI:95621       # Gabrb3
+type = GFP
+url = ${GFPURL}
+]
+[
+id = MGI:95622       # Gabrd
+type = GFP
+url = ${GFPURL}
+]
+[
+id = MGI:1330235     # Gabre
+type = GFP
+url = ${GFPURL}
+]
+[
+id = MGI:103156      # Gabrg1
+type = GFP
+url = ${GFPURL}
+]
+[
+id = MGI:95623       # Gabrg2
+type = GFP
+url = ${GFPURL}
+]
+[
+id = MGI:95624       # Gabrg3
+type = GFP
+url = ${GFPURL}
+]
+[
+id = MGI:1888498     # Gabrq
+type = GFP
+url = ${GFPURL}
+]
+[
+id = MGI:95625       # Gabrr1
+type = GFP
+url = ${GFPURL}
+]
+[
+id = MGI:95626       # Gabrr2
+type = GFP
+url = ${GFPURL}
+]
+
+#------------------- Glutamate Receptor, Ionotropic Superfamily 
+
+#
+# set the URL for this family
+GFPURL = ${GFPDIR}/glutreceptor.shtml
+
+[
+id = MGI:95808       # Gria1
+type = GFP
+url = ${GFPURL}
+]
+[
+id = MGI:95809       # Gria2
+type = GFP
+url = ${GFPURL}
+]
+[
+id = MGI:95810       # Gria3
+type = GFP
+url = ${GFPURL}
+]
+[
+id = MGI:95811       # Gria4
+type = GFP
+url = ${GFPURL}
+]
+[
+id = MGI:95812       # Grid1
+type = GFP
+url = ${GFPURL}
+]
+[
+id = MGI:95813       # Grid2
+type = GFP
+url = ${GFPURL}
+]
+[
+id = MGI:95814       # Grik1
+type = GFP
+url = ${GFPURL}
+]
+[
+id = MGI:95815       # Grik2
+type = GFP
+url = ${GFPURL}
+]
+[
+id = MGI:95816       # Grik3
+type = GFP
+url = ${GFPURL}
+]
+[
+id = MGI:95817       # Grik4
+type = GFP
+url = ${GFPURL}
+]
+[
+id = MGI:95818       # Grik5
+type = GFP
+url = ${GFPURL}
+]
+[
+id = MGI:95819       # Grin1
+type = GFP
+url = ${GFPURL}
+]
+[
+id = MGI:95820       # Grin2a
+type = GFP
+url = ${GFPURL}
+]
+[
+id = MGI:95821       # Grin2b
+type = GFP
+url = ${GFPURL}
+]
+[
+id = MGI:95822       # Grin2c
+type = GFP
+url = ${GFPURL}
+]
+[
+id = MGI:95823       # Grin2d
+type = GFP
+url = ${GFPURL}
+]
+
+#------------------- Glycine Receptor, Alpha 
+
+#
+# set the URL for this family
+GFPURL = ${GFPDIR}/glra.shtml
+
+[
+id = MGI:95747       # Glra1
+type = GFP
+url = ${GFPURL}
+]
+[
+id = MGI:95748       # Glra2
+type = GFP
+url = ${GFPURL}
+]
+[
+id = MGI:95749       # Glra3
+type = GFP
+url = ${GFPURL}
+]
+[
+id = MGI:95750       # Glra4
+type = GFP
+url = ${GFPURL}
+]
+
+#------------------- Glypican 
+
+#
+# set the URL for this family
+GFPURL = ${GFPDIR}/gpc.shtml
+
+[
+id = MGI:1194891     # Gpc1
+type = GFP
+url = ${GFPURL}
+]
+[
+id = MGI:104903      # Gpc3
+type = GFP
+url = ${GFPURL}
+]
+[
+id = MGI:104902      # Gpc4
+type = GFP
+url = ${GFPURL}
+]
+[
+id = MGI:1194894     # Gpc5
+type = GFP
+url = ${GFPURL}
+]
+[
+id = MGI:1346322     # Gpc6
+type = GFP
+url = ${GFPURL}
+]
+
+#------------------- Iroquois 
+
+#
+# set the URL for this family
+GFPURL = ${GFPDIR}/irx.shtml
+
+[
+id = MGI:1197515     # Irx1
+type = GFP
+url = ${GFPURL}
+]
+[
+id = MGI:1197526     # Irx2
+type = GFP
+url = ${GFPURL}
+]
+[
+id = MGI:1197522     # Irx3
+type = GFP
+url = ${GFPURL}
+]
+[
+id = MGI:1355275     # Irx4
+type = GFP
+url = ${GFPURL}
+]
+[
+id = MGI:1859086     # Irx5
+type = GFP
+url = ${GFPURL}
+]
+[
+id = MGI:1927642     # Irx6
+type = GFP
+url = ${GFPURL}
+]
+
+#------------------- Leucine-rich Repeat LGI 
+
+#
+# set the URL for this family
+GFPURL = ${GFPDIR}/lgi.shtml
+
+[
+id = MGI:1861691     # Lgi1
+type = GFP
+url = ${GFPURL}
+]
+[
+id = MGI:2180196     # Lgi2
+type = GFP
+url = ${GFPURL}
+]
+[
+id = MGI:2182619     # Lgi3
+type = GFP
+url = ${GFPURL}
+]
+[
+id = MGI:2180197     # Lgi4
+type = GFP
+url = ${GFPURL}
+]
+
+#------------------- Opsin 
+
+#
+# set the URL for this family
+GFPURL = ${GFPDIR}/opsin.shtml
+
+[
+id = MGI:1097692     # Opn1mw
+type = GFP
+url = ${GFPURL}
+]
+[
+id = MGI:99438       # Opn1sw
+type = GFP
+url = ${GFPURL}
+]
+[
+id = MGI:97914       # Rho
+type = GFP
+url = ${GFPURL}
+]
+[
+id = MGI:1338022     # Opn3
+type = GFP
+url = ${GFPURL}
+]
+[
+id = MGI:1353425     # Opn4
+type = GFP
+url = ${GFPURL}
+]
+
+#------------------- Phosphatidylinositol-4-phosphate 5-Kinase 
+
+#
+# set the URL for this family
+GFPURL = ${GFPDIR}/pip.shtml
+
+[
+id = MGI:107930      # Pip5k1a
+type = GFP
+url = ${GFPURL}
+]
+[
+id = MGI:107929      # Pip5k1b
+type = GFP
+url = ${GFPURL}
+]
+[
+id = MGI:1298224     # Pip5k1c
+type = GFP
+url = ${GFPURL}
+]
+[
+id = MGI:1298206     # Pip5k2a
+type = GFP
+url = ${GFPURL}
+]
+[
+id = MGI:1934234     # Pip5k2b
+type = GFP
+url = ${GFPURL}
+]
+[
+id = MGI:2152214     # Pip5k2c
+type = GFP
+url = ${GFPURL}
+]
+[
+id = MGI:1335106     # Pip5k3
+type = GFP
+url = ${GFPURL}
+]
+
+#------------------- Protocadherin Gamma 
+
+#
+# set the URL for this family
+GFPURL = ${GFPDIR}/protocadherin.shtml
+
+[
+id = MGI:1935212     # Pcdhga1
+type = GFP
+url = ${GFPURL}
+]
+[
+id = MGI:1935214     # Pcdhga2
+type = GFP
+url = ${GFPURL}
+]
+[
+id = MGI:1935215     # Pcdhga3
+type = GFP
+url = ${GFPURL}
+]
+[
+id = MGI:1935216     # Pcdhga4
+type = GFP
+url = ${GFPURL}
+]
+[
+id = MGI:1935217     # Pcdhga5
+type = GFP
+url = ${GFPURL}
+]
+[
+id = MGI:1935218     # Pcdhga6
+type = GFP
+url = ${GFPURL}
+]
+[
+id = MGI:1935219     # Pcdhga7
+type = GFP
+url = ${GFPURL}
+]
+[
+id = MGI:1935221     # Pcdhga8
+type = GFP
+url = ${GFPURL}
+]
+[
+id = MGI:1935226     # Pcdhga9
+type = GFP
+url = ${GFPURL}
+]
+[
+id = MGI:1935227     # Pcdhga10
+type = GFP
+url = ${GFPURL}
+]
+[
+id = MGI:1935228     # Pcdhga11
+type = GFP
+url = ${GFPURL}
+]
+[
+id = MGI:1935229     # Pcdhga12
+type = GFP
+url = ${GFPURL}
+]
+[
+id = MGI:1935169     # Pcdhgb1
+type = GFP
+url = ${GFPURL}
+]
+[
+id = MGI:1935170     # Pcdhgb2
+type = GFP
+url = ${GFPURL}
+]
+[
+id = MGI:1935173     # Pcdhgb4
+type = GFP
+url = ${GFPURL}
+]
+[
+id = MGI:1935196     # Pcdhgb5
+type = GFP
+url = ${GFPURL}
+]
+[
+id = MGI:1935197     # Pcdhgb6
+type = GFP
+url = ${GFPURL}
+]
+[
+id = MGI:1935199     # Pcdhgb7
+type = GFP
+url = ${GFPURL}
+]
+[
+id = MGI:1935200     # Pcdhgb8
+type = GFP
+url = ${GFPURL}
+]
+[
+id = MGI:1935201     # Pcdhgc3
+type = GFP
+url = ${GFPURL}
+]
+[
+id = MGI:1935203     # Pcdhgc4
+type = GFP
+url = ${GFPURL}
+]
+[
+id = MGI:1935205     # Pcdhgc5
+type = GFP
+url = ${GFPURL}
+]
+
+#------------------- Secretory Carrier Membrane Protein 
+
+#
+# set the URL for this family
+GFPURL = ${GFPDIR}/scamp.shtml
+
+[
+id = MGI:1349480     # Scamp1
+type = GFP
+url = ${GFPURL}
+]
+[
+id = MGI:1346518     # Scamp2
+type = GFP
+url = ${GFPURL}
+]
+[
+id = MGI:1346346     # Scamp3
+type = GFP
+url = ${GFPURL}
+]
+[
+id = MGI:1928947     # Scamp4
+type = GFP
+url = ${GFPURL}
+]
+[
+id = MGI:1928948     # Scamp5
+type = GFP
+url = ${GFPURL}
+]
+
+#------------------- Synaptotagmin 
+
+#
+# set the URL for this family
+GFPURL = ${GFPDIR}/syt.shtml
+
+[
+id = MGI:99667       # Syt1
+type = GFP
+url = ${GFPURL}
+]
+[
+id = MGI:99666       # Syt2
+type = GFP
+url = ${GFPURL}
+]
+[
+id = MGI:99665       # Syt3
+type = GFP
+url = ${GFPURL}
+]
+[
+id = MGI:101759      # Syt4
+type = GFP
+url = ${GFPURL}
+]
+[
+id = MGI:1926368     # Syt5
+type = GFP
+url = ${GFPURL}
+]
+[
+id = MGI:1859544     # Syt6
+type = GFP
+url = ${GFPURL}
+]
+[
+id = MGI:1859545     # Syt7
+type = GFP
+url = ${GFPURL}
+]
+[
+id = MGI:1859867     # Syt8
+type = GFP
+url = ${GFPURL}
+]
+[
+id = MGI:1926373     # Syt9
+type = GFP
+url = ${GFPURL}
+]
+[
+id = MGI:1859546     # Syt10
+type = GFP
+url = ${GFPURL}
+]
+[
+id = MGI:1859547     # Syt11
+type = GFP
+url = ${GFPURL}
+]
+[
+id = MGI:2159601     # Syt12
+type = GFP
+url = ${GFPURL}
+]
+[
+id = MGI:1933945     # Syt13
+type = GFP
+url = ${GFPURL}
+]
+
+#------------------- Tripartite Motif 
+
+#
+# set the URL for this family
+GFPURL = ${GFPDIR}/trim.shtml
+
+[
+id = MGI:1344333	# Mid2
+type = GFP
+url = ${GFPURL}
+]
+[
+id = MGI:1933163     # Trim2
+type = GFP
+url = ${GFPURL}
+]
+[
+id = MGI:1860040     # Trim3
+type = GFP
+url = ${GFPURL}
+]
+[
+id = MGI:2137352     # Trim6
+type = GFP
+url = ${GFPURL}
+]
+[
+id = MGI:2137353     # Trim7
+type = GFP
+url = ${GFPURL}
+]
+[
+id = MGI:1933302     # Trim8
+type = GFP
+url = ${GFPURL}
+]
+[
+id = MGI:2137354     # Trim9
+type = GFP
+url = ${GFPURL}
+]
+[
+id = MGI:1338757     # Trim10
+type = GFP
+url = ${GFPURL}
+]
+[
+id = MGI:2137355     # Trim11
+type = GFP
+url = ${GFPURL}
+]
+[
+id = MGI:1923931     # Trim12
+type = GFP
+url = ${GFPURL}
+]
+[
+id = MGI:1913847     # Trim13
+type = GFP
+url = ${GFPURL}
+]
+[
+id = MGI:2137356     # Trim16
+type = GFP
+url = ${GFPURL}
+]
+[
+id = MGI:1861440     # Trim17
+type = GFP
+url = ${GFPURL}
+]
+[
+id = MGI:1100537	# Mid1
+type = GFP
+url = ${GFPURL}
+]
+[
+id = MGI:104662	# Pml
+type = GFP
+url = ${GFPURL}
+]
+[
+id = MGI:106657      # Trim21
+type = GFP
+url = ${GFPURL}
+]
+[
+id = MGI:1933161     # Trim23
+type = GFP
+url = ${GFPURL}
+]
+[
+id = MGI:109275      # Trim24
+type = GFP
+url = ${GFPURL}
+]
+[
+id = MGI:102749      # Trim25
+type = GFP
+url = ${GFPURL}
+]
+[
+id = MGI:1337056     # Trim26
+type = GFP
+url = ${GFPURL}
+]
+[
+id = MGI:97904       # Trim27
+type = GFP
+url = ${GFPURL}
+]
+[
+id = MGI:109274      # Trim28
+type = GFP
+url = ${GFPURL}
+]
+[
+id = MGI:1919419     # Trim29
+type = GFP
+url = ${GFPURL}
+]
+[
+id = MGI:98178       # Trim30
+type = GFP
+url = ${GFPURL}
+]
+[
+id = MGI:1917057     # Trim32
+type = GFP
+url = ${GFPURL}
+]
+[
+id = MGI:2137357     # Trim33
+type = GFP
+url = ${GFPURL}
+]
+[
+id = MGI:2137359     # Trim34
+type = GFP
+url = ${GFPURL}
+]
+
+#------------------- Cyp 450 Family
+
+#
+# set the URL for this family
+GFPURL = http://www.icgeb.trieste.it:80/p450/
+
+
+#------------------- Cytokine Family
+
+#
+# set the URL for this family
+GFPURL = http://cytokine.medic.kumamoto-u.ac.jp/CFC/index.html#Welcome
+
+
+#------------------- High Mobility Group (HMG) Chromosomal Proteins
+
+#
+# set the URL for this family
+GFPURL = ${GFPDIR}/hmgfamily.shtml
+
+
+#------------------- Wnt Family: FRP/FrzB Genes
+
+#
+# set the URL for this family
+GFPURL = http://www.stanford.edu/~rnusse/wntwindow.html
+
+
+#--------------------
+# Unused??
+#GFPURL = ${GFPDIR}/daam.shtml
+#GFPURL = ${GFPDIR}/hmgfamily.shtml
+#GFPURL = ${GFPDIR}/septin.shtml
+
+#
+# END of Gene Family Page Links
+
+##################################################
+# END of file.
+##################################################
