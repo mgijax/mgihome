@@ -12,6 +12,7 @@ subscribe request and sends mail to th listserver.
 import sys
 if '.' not in sys.path:
 	sys.path.insert(0, '.')
+import types
 import config
 import homelib
 
@@ -74,27 +75,25 @@ def main():
 	else:
 		username = form['username'].value
 		emailaddr = form['emailaddr'].value
-		listname = form['listname'].value
 
-		if form['listname'].value=='both':
-			sublists = ['mgi-list','rat-list']
-		elif form['listname'].value=='mgi-list':
-			sublists = ['mgi-list']
-		elif form['listname'].value=='rat-list':
-			sublists = ['rat-list']
-		
-		msg = ''
-		listname1 = 'mgi-list'
-		if listname1 in sublists:		
-			msg = 'add' + SP + listname1 + SP + emailaddr+ SP + username + NL 
-		listname2 = 'rat-list'
-		if listname2 in sublists:
-			msg = msg + NL + 'add' + SP + listname2 + SP + emailaddr + SP + username + NL 
+		if type(form['listname']) == types.ListType:
+			sublists = []
+			for item in form['listname']:
+				sublists.append (item.value)
+		else:
+			sublists = [ form['listname'].value ]
+
+		subscribe = 'add %s %s %s\n'
+		cmds = []
+		for item in sublists:
+			cmds.append (subscribe % (item, emailaddr, username))
+		msg = string.join (cmds, '\n')
 
 		print """
 	<H1>Thank you.</H1>
 	Your subscribe request has been received and is being forwarded to our
-	list_manager. You will receive an acknowlegement and instructions via E-mail.
+	list_manager. You will receive an acknowlegement and instructions via
+	E-mail.
 	"""
 
 		mail_header = 'From: webmaster' + NL \
@@ -115,11 +114,6 @@ try:
 	main()
 except:
 	errorlib.handle_error()
-
-
-
-
-
 
 #
 # WARRANTY DISCLAIMER AND COPYRIGHT NOTICE 
