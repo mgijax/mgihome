@@ -18,6 +18,7 @@ The lists currently available are
 <UL>
 <LI><STRONG><A HREF="http://lists.informatics.jax.org/lyris-cgi/lyris.pl?enter=mgi-list&text_mode=0">MGI-LIST</A></STRONG> - Forum for topics in mouse genetics, MGI news updates
 <LI><STRONG><A HREF="http://lists.informatics.jax.org/lyris-cgi/lyris.pl?enter=rat-list&text_mode=0">RAT-LIST</A></STRONG> - Forum for rat genetics
+<LI><STRONG><A HREF="http://lists.informatics.jax.org/lyris-cgi/lyris.pl?enter=phenome-list&text_mode=0">PHENOME-LIST</A></STRONG> - Forum for strain characterization and phenotypic data collection
 <P>
 </UL>
 You can click on a list name above to get to the main menu for the list. You can visit the list as a non-member to see if the discussions interest you and then decide whether you want to subscribe.
@@ -34,9 +35,9 @@ your subscription.  You will receive an acknowledgement and instructions via E-m
 <DT><p>Your E-mail address:<br>
 <DD><INPUT TYPE="text" NAME="emailaddr" SIZE=30><P>
 <DT>Check the list(s) you want to subscribe to:<p>
-<DD><INPUT TYPE="radio" NAME="listname" VALUE="mgi-list"> mgi-list
-<DD><INPUT TYPE="radio" NAME="listname" VALUE="rat-list"> rat-list
-<DD><INPUT TYPE="radio" NAME="listname" VALUE="both"> both
+<DD><INPUT TYPE="checkbox" NAME="listname" VALUE="mgi-list"> mgi-list
+<DD><INPUT TYPE="checkbox" NAME="listname" VALUE="rat-list"> rat-list
+<DD><INPUT TYPE="checkbox" NAME="listname" VALUE="phenome-list"> phenome-list
 </DL>
 <HR>
 <INPUT TYPE=submit VALUE="Submit"> <INPUT TYPE=reset VALUE="Reset Form">
