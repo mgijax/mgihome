@@ -2,7 +2,7 @@
 <HEAD>
 <TITLE>Nomenclature Checklist</TITLE>
 </HEAD>
-<!--#include file="include/banner.html"-->
+<!--#include file='include/banner.html'-->
 <BODY BGCOLOR="#ffffff">
 <H3>8 Basic rules for naming mouse loci</H3>
 <P>
@@ -34,11 +34,12 @@ For more detail and additional special case rules, see <A HREF="index.shtml#mnrg
 <LI>Cloned locus sequence
 </UL>
 <P>
-<LI>Search <A HREF="<!--#include file="include/wi_url.html"-->searches/marker_form.shtml">MGD</A> and <A HREF="http://gdbwww.gdb.org/">GDB</A> to ensure the entry does not already exist. 
+<LI>Search <A HREF="<!--#include file='include/wi_url.html'-->searches/marker_form.shtml">MGD</A> and <A HREF="http://gdbwww.gdb.org/">GDB</A> to ensure the entry does not already exist. 
 <P>
-<LI>Refer to the <A HREF="index#mnrg.shtml">Mouse Nomenclature Rules and Guidelines</A> to formulate possible combinations of letters for the symbol.
+<LI>Refer to the <A HREF="index.shtml#mnrg">Mouse Nomenclature Rules and Guidelines</A> to formulate possible combinations of letters for the symbol.
 <P>
-<LI>Check <A HREF="<!--#include file="include/wi_url.html"-->searches/marker_form.shtml">MGD</A> and <A HREF="http://gdbwww.gdb.org/">GDB</A> to see which combinations from (3) are available.
+<LI>Check <A HREF="<!--#include file='include/wi_url.html'-->searches/marker_form.shtml">MGD</A> and 
+<A HREF="http://gdbwww.gdb.org/">GDB</A> to see which combinations from (3) are available.
 <P>
 <LI>Check ordered <I>lists</I> of mouse and human symbols to ensure that the proposed new symbol will not  interrupt an existing &quot;family&quot; of locus symbols.
 <P>
@@ -47,11 +48,12 @@ For more detail and additional special case rules, see <A HREF="index.shtml#mnrg
 <LI>Searches of <A HREF="http://www.ncbi.nlm.nih.gov/Entrez/">Entrez</A>, <A HREF="http://www.expasy.ch/cgi-bin/sprot-search-ful">SwissProt</A> or Medline can help to identify such problems
 </UL>
 <P>
-<LI>Check similar entries in <A HREF="<!--#include file="include/wi_url.html"-->searches/marker_form.shtml">MGD</A> and <A HREF="http://gdbwww.gdb.org/">GDB</A> to ensure that the proposed symbol is constructed in the same manner as related symbols..
+<LI>Check similar entries in <A HREF="<!--#include file='include/wi_url.html'-->searches/marker_form.shtml">MGD</A> and 
+<A HREF="http://gdbwww.gdb.org/">GDB</A> to ensure that the proposed symbol is constructed in the same manner as related symbols..
 <P>
 </OL>
 <HR>
-<!--#include file="include/footer.html"-->
+<!--#include file='include/footer.html'-->
 </BODY></HTML>
 <!--
 Warranty Disclaimer and Copyright Notice
