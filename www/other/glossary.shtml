@@ -12,7 +12,7 @@
 <BODY BGCOLOR="#ffffff">
 <P>
 <!--#include file="include/banner.html"-->
-<!--<!--#include file="include/topodoc.shtml"-->
+<!--#include file="include/topodoc.shtml"-->
 <h2>MGI Glossary</h2>
 <P>This glossary provides definitions for some terms found in our help documentation and other terms that are useful in understanding mouse genetics and bioinformatics. Terms are defined in a general sense as they apply to eukaryotic genetics, particularly mouse genetics; some terms are also defined as they are specifically used in MGI (e.g., <A HREF="#gene">gene</A>).  This list will grow as time goes on. If there is a term you think should be included in this list, please contact 
 <A HREF="http://www.informatics.jax.org/mgihome/support/tjl_inbox.shtml">MGI User Support</A>.
@@ -1244,7 +1244,7 @@ the mitochondrial genome uses an alternate
 <P><DT><B><A NAME="mitochondrial">Mitochondrial gene</A></B>
 <DD>A <A HREF="#gene">gene</A> contained within the mitochondrial <A HREF="#genome">genome</A> of a eukaryote, 
 transmitted independently of the nuclear genome. The mitochondrial genome is transmitted maternally (from the 
-female <a href="parent">parent</a>).
+female <a href="#parent">parent</a>).
 
 <P><DT><B><A NAME="mitosis">Mitosis</A></B>
 <DD>The division of the replicated
@@ -1925,7 +1925,7 @@ a particular chromosome if it is known to be located on that chromosome but is o
 <P><DT><B><A NAME="synonym">Synonym</A></B>
 <DD>In <A HREF="#MGI">MGI</A>, a synonym is a <A HREF="#gene_symbol">gene symbol</A> or <A HREF="#gene_name">name</A> that has appeared in the scientific literature, is not pending approval, and has never been an <A HREF="#approved">approved</A> symbol or name.
 
-<P><DT><B><A HREF="system_catalog">System Catalog</A></B>
+<P><DT><B><A name="system_catalog">System Catalog</A></B>
 <DD>The <A HREF="#data_dictionary">data dictionary</A> of a <A HREF="#dbms">DBMS</A>. The system catalog stores 
 <A HREF="#metadata">metadata</A> including the <A HREF="#schema">schemas</A> of the <A HREF="#database">databases</A>. 
 It is a mini-database, and is usually stored using the DBMS itself in special tables called system tables. 
@@ -1939,7 +1939,7 @@ It maybe referred to as being "on line", as it is active, and can be queried by 
 <DD>Refers to data arranged in rows and columns. A spreadsheet, for example, is a table. In 
 <A HREF="#relational_db">relational databases</A>, all information is stored in the form of tables.
 
-<P><DT><B><A NAME="targeted_mutation">Targeted Mutation</A></B>
+<P><DT><B><A NAME="targeted_mutation"></A>Targeted Mutation</B>
 <DD>A type of <A HREF="#mutation">mutation</A> in which a chromosomal <A HREF="#gene">gene</A> is altered by the substitution of a
 <A HREF="#DNA_construct">DNA construct</A> assembled <A HREF="#in_vitro">in vitro</A>. In mouse, the constructs are usually designed to eliminate gene function; such targeted mutations are often casually referred to as <A HREF="#knockout">knock-outs</A>. Some DNA constructs are designed to alter gene function; such targeted mutations are often casually referred to as <A HREF="#knockin">knock-ins</A>.
 
