@@ -1,0 +1,132 @@
+
+
+<HTML><HEAD>
+<TITLE>MGI Release 2.5 Announcement</TITLE></HEAD>
+<!--#include file="include/banner.html"-->
+
+<BODY BGCOLOR="#ffffff">
+<h2>
+MGI Release 2.5 Announcement</h2>
+<hr>
+<H3>New MGI Vocabulary Browsers</h3>
+<!--<p>Vocabulary browsers allow you view and navigate large collections of terms, 
+as well as search them for detailed information.-->
+<p>From the MGI Home Page, you can now view and query the following structured vocabularies: 
+<ul>
+<li><a href="<!--#include file="include/go_url.html"-->GO/go_url.html">Gene Ontology (GO) Browser</a><p>
+The GO Browser associates each ontology term with a precise definition 
+of that term, complete with citations and  synonyms. 
+Each ontology is organized as a Directed Acyclic Graph (DAG). 
+Terms in this hierarchy are organized from the general to the specific 
+and you can immediately visualize their relationship. However, even though the structure of the DAG 
+is "tree-like," a term may actually have more than one parent and appear several times
+in the browser. A given term may occur in any or all of the following categories:
+<p>
+<ul>
+<li><b><a href="<!--#include file="include/go_url.html"-->GO.cgi?id=GO:0003674">
+Molecular Function</a></b> - Tasks performed by individual gene products. <br>
+Examples: transcription factor; DNA helicase
+<li><b><a href="<!--#include file="include/go_url.html"-->GO.cgi?id=GO:0008150">
+Biological Process</b></a> - Broad biological goals accomplished by ordered assemblies 
+of molecular functions. 
+<br>Examples: mitosis; purine metabolism
+<li><b><a href="<!--#include file="include/go_url.html"-->GO.cgi?id=GO:0005575">
+Cellular Component</b></a> - Subcellular structures, locations, and macromolecular 
+complexes. 
+<br>Examples: nucleus; telomere; origin recognition complex
+</ul>
+<p>As of September, there are approximately 4800 terms in the GO. In MGD, 
+approximately 5300 mouse genes are associated with at least one GO term.
+You can use the GO Browser to query for MGI genes, gene expression data, or cDNA clones, 
+and focus your searches on genes annotated using these terms. 
+<p>
+<li><a href=anatDictionary/indes.shtml>Mouse Anatomical Dictionary</a><br>
+<p>The Anatomical Dictionary is a vocabulary comprised of 28 Theiler stages. 
+Each Theiler stage is a tree which is a subvocabulary of the Dictionary. 
+There are brief stage descriptions next to each stage name.<p>
+<ul><li>You can select one or more of 
+the Theiler stages to focus a search on a particular stage of embryonic development
+<li>You can use terms from the Dictionary to describe source data for clones, 
+probes and cDNA and genomic libraries, as well as morphological variation caused 
+by mutant alleles.</ul></ul>
+<br>
+<h3><a href="#homology_maps/shtml">Homology Maps</a></h3>
+
+<p>The homology maps are overviews of selected species orthology data plotted against the MGD 
+consensus genetic map for the mouse. The following maps are available:
+<ul>
+<li><a href="<!--#include file="include/wi_url.html"-->reports/homologymap/mouse_human.shtml"> 
+Whole Genome Homology Map: human on mouse background</a>
+ <li><a href="<!--#include file="include/wi_url.html"-->reports/homologymap/mouse_rat.shtml">
+Whole Genome Homology Map: rat on mouse background</a>
+</ul>
+<p>Beside each
+mouse chromosome is a set of histograms, each corresponding to the human or rat chromosome.
+<p>For each species, you can view a detailed homology map of each chromosome and you can  
+retrieve a compact tabular listing of all the 
+orthologies for that pair of chromosomes.
+<!--The chromosome number is displayed immediately above
+the histogram. Each bar in a histogram is positioned at the location of a nonrecombinant bin in the mouse map. The length of the bar indicates
+the number of human/mouse orthologies found in that bin.
+<p>The mouse chromosomes are scaled proportionally, based on 
+the total cM length. Conserved regions are determined by ordering the orthologs according 
+to the corresponding mouse ortholog's MGD cM position. Each unbroken run of orthologs 
+ from the same chromosome is one region.
+<p>Mouse chromosomes appear as vertical lines with the 
+chromosome number at the top. Homologies appear as vertical 
+colored bars.-->
+<br>Each colored bar is a conserved region between a mouse and the selected species. 
+The chromosome number for that species appears beside each bar. 
+<ul>
+<li>You can click on marker symbols to retrieve a detailed marker record from MGD.
+<li>You can click on a contig to retrieve a detailed contig record from MGD.
+<li>You can click on the chromosome numbers or the colored bars to see 
+more detailed linkage maps.
+</ul>
+ 
+ 
+<h3><a href=#"">Mutant Allele Data</a></h3>
+<p>
+The MGD now accepts electronic submissions of mutant allele from the scientific community. 
+Each electronic submission  will receive a permanent database accession ID.
+MGD reference pages provide a link to the addociated data sets.
+<ul>
+<li>You can access the submission form from the
+ <a href="#submissions/submissions_menu.shtml">
+Data and Nomenclature Submissions</a> menu.
+<li>You can find general rules for naming alleles at 
+<a href="#submissions/submit.shtml">Submitting New Mutant and Allele Data</a>
+</ul>
+<h3><a href="#userdocs/glossary.shtml">Expanded Glossary</a></h3>
+<p>We have expanded the MGI Glossary. The Glossary contains definitions for terms found
+in the help documentation as well as other terms useful in understanding mouse genetics.
+You will find terms defined in a general sense as they apply to eukaryotic genetics, 
+particularly  mouse genetics. You will also find some terms defined as they apply to MGI
+(for example, <b>gene</b>). The list of terms included in the Glossary will 
+grow with each new release.
+<h3>Miscellaneous</h3>
+<p>
+
+<!-- Standard footer and disclaimer -->
+<hr>
+<!--#include file="include/footer.html"-->
+</body></html>
+<!--
+Warranty Disclaimer and Copyright Notice
+
+ THE JACKSON LABORATORY MAKES NO REPRESENTATION ABOUT THE SUITABILITY OR 
+ ACCURACY OF THIS SOFTWARE OR DATA FOR ANY PURPOSE, AND MAKES NO WARRANTIES, 
+ EITHER EXPRESS OR IMPLIED, INCLUDING MERCHANTABILITY AND FITNESS FOR A 
+ PARTICULAR PURPOSE OR THAT THE USE OF THIS SOFTWARE OR DATA WILL NOT 
+ INFRINGE ANY THIRD PARTY PATENTS, COPYRIGHTS, TRADEMARKS, OR OTHER RIGHTS.  
+ THE SOFTWARE AND DATA ARE PROVIDED "AS IS".
+
+ This software and data are provided to enhance knowledge and encourage 
+ progress in the scientific community and are to be used only for research 
+ and educational purposes.  Any reproduction or use for commercial purpose 
+ is prohibited without the prior express written permission of the Jackson 
+ Laboratory.
+
+Copyright © 1996, 1999, 2000 by The Jackson Laboratory
+All Rights Reserved
+-->
