@@ -25,7 +25,7 @@ import formMailer
 
 SimpleVocab.set_sqlFunction (homelib.sql)
 
-submit_addr = 'survey@informatics.jax.org'	# Survey E-mail
+submit_addr = 'drs@informatics.jax.org'	# Survey E-mail
 
 # developer override for mailtarget
 dev_email = config.lookup ('CGI_MAILTARGET')
