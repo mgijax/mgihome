@@ -1,195 +1,220 @@
 <HTML>
 <HEAD>
-<TITLE>Mutant Submission Form</TITLE>
+<TITLE>Allele and New Mutant Submission Form</TITLE>
 </HEAD>
-<BODY BGCOLOR=#FFFFFF>
+<BODY BGCOLOR="#ffffff">
 <TABLE WIDTH="100%" BORDER=0 CELLPADDING=0 CELLSPACING=0>
   <TR><TD WIDTH="100%">
     <TABLE WIDTH="100%" BORDER=0 CELLPADDING=0 CELLSPACING=0>
-
-    <TR><TD WIDTH="20%" VALIGN="center" ALIGN="left"><A HREF="<!--#include file='include/wi_url.html'-->" border=0><IMG SRC="../images/mgi_logo_small.jpg" border=0 ALT="MGI"></A></TD>
+     <TR><TD WIDTH="20%" VALIGN="center" ALIGN="left"><A HREF="<!--#include file='include/wi_url.html'-->" border=0><IMG SRC="../images/mgi_logo_small.jpg" border=0 ALT="MGI"></A></TD>
       <TD WIDTH="60%" ALIGN="center" VALIGN="center" BGCOLOR="#ffffff">
        <FONT COLOR="#000000" SIZE=5 FACE="Arial,Helvetica">
-Mutant Submission Form
+Allele and New Mutant Submission Form
        </FONT></TD><TD WIDTH="20%" VALIGN="center" ALIGN="center" BGCOLOR="#ffffff">&nbsp;</TD></TR>
 <TR BGCOLOR="blue"><TD COLSPAN=3><FONT face="Arial,Helvetica" color="#ffffff">
     <B>&nbsp;Mouse Genome Informatics</B></TD></TR>
 <TR><TD BGCOLOR="#ffffff"><FONT SIZE=-1 FACE="Arial,Helvetica"><CENTER><A HREF="<!--#include file='include/wi_url.html'-->">MGI Home</A>&nbsp;&nbsp;&nbsp;
-<a href="../help/help.shtml">Help</A></FONT></CENTER></TD></TR>
+<a href="../help/help.shtml">Help
+</A></FONT></CENTER></TD></TR>
 </TABLE></TD></TR>
 </TABLE>
 <HR>
-<P>
 
+
+<H2>Mutation Submission Form</H2>
 <ul>
-<li>Use this submission form to describe mutant alleles: either mutations whose allelism is unknown, or alleles of known genes. 
-<li>Submit only those mutations shown to be heritable.  
+<li>Use this submission form to describe spontaneous, induced, or genetically engineered mutations. 
+<li>Submit information only about those mutations shown to be heritable.  
 <li>Please fill in appropriate information. 
-<li>Click <b>Submit</b> at the bottom of the form to send this information to the MGD Curator for Mutant Alleles.
+<li>Click <b>Submit</b> at the bottom of the form to send this information to MGI for processing.
 <li>If you wish to search for existing alleles, click here: 
-<a href="<!--#include file='include/wi_url.html'-->searches/allele_form.shtml">Alleles and Phenotypes Query Form</a>
+<A HREF="
+<!--#include file='include/wi_url.html'-->searches/allele_form.shtml">Alleles and Phenotypes Query Form</a>
+<li> Thank you for helping us keep the Mouse Genome Database current.
 </ul>
 <P>
 <FORM METHOD="POST" ACTION="allmut_submit.cgi">
 <HR>
-<H3>About this Mutant:</H3> 
-<p>Please refer to the <A HREF="allmut_quickhelp.shtml">
-Allele and Mutant Quick Nomenclature Guide</A>  for additional hints for completing this section.</p>
+<H3>Naming this Mutation:</H3>
 
-<dl>
-<DT>If the mutation is an allele of a <B>known gene</B>, enter the <B>gene symbol</B> 
+Suggested <B>symbol</B> for this mutation 
+<INPUT TYPE="text" NAME="allelesymbol" SIZE=20> 
+<BR><BR>
+Suggested <B>name</B> for this mutation 
+<INPUT TYPE="text" NAME="genesymbol" SIZE=35> 
+<BR><BR>
+Is this mutation an allele of a <B>known gene</B>?  <BR>
+<DD>If so, enter the <B>gene symbol</B> 
 <INPUT TYPE="text" NAME="genesymbol" SIZE=15> 
-(check the gene symbol in <A href="<!--#include file='include/wi_url.html'-->">MGD</A>)<BR><BR>
-<B>For this mutant, enter its:</B>
-<DD> Allele Designation :    <INPUT TYPE="text" NAME="allele" SIZE=15> (superscripted portion of allele symbol)<BR>
-<DD>Allele Name :     <INPUT TYPE="text" NAME="allelename" SIZE=50><BR>
+(check the gene symbol by <A HREF=
+"<!--#include file='include/wi_url.html'-->searches/marker_form.shtml
+">searching MGI</A>)<BR><BR>
+Nicknames, synonyms for this mutant allele  <INPUT TYPE="text" NAME="synonyms" SIZE=55>
+<BR><BR>
 <BR>
-<DD><table>
-    <tr><TD VALIGN="center">
-      <TABLE BGCOLOR="#D5F8FE" border=1 CELLSPACING="1" CELLPADDING="4" width=90%>
-        <TR><TD>
-          <table border=1 cellpadding=4 cellspacing=1 width=70%>
-          <TR><small><B><dd><EM> Example:</EM></small></TR>
-          <tr><TD></TD><TD><SMALL><B>Mutant allele of a known gene</B></SMALL></TD><TD><SMALL>Mutant allele, gene mutated unknown</B></SMALL></TD></TR>
-          <tr><TD><SMALL>Gene symbol</TD><TD><SMALL> Lep</TD><DD><TD><SMALL> --- </TD></TR>
-          <TR><TD><SMALL>Allele designation</TD><TD><SMALL> ob</TD><TD><SMALL>slpy</TD></TR>
-          <tr><TD><SMALL>Allele name</TD><TD> <SMALL>obese</TD><TD><SMALL>sleepy</TD></TR>
-          </table></SMALL>
-      <SMALL>In the case of a mutation in the known gene <I>Lep</I>, the full allele symbol is <I>Lep<SUP>ob</SUP></I>.<BR>
-In the case where the gene is unknown, the allele and gene symbol are synonymous <BR>(pending identification of the gene), in this example, <I>slpy</I>.<BR></SMALL><br></td></TR></TABLE>
-</TD></tr>
-  </table>
- </dl>
+<UL>
+<LI>For hints on mutant allele nomenclature, see <A HREF="allmut_quickhelp.shtml">Quick Guide to Nomenclature for Alleles and Mutations</A>.
+<BR><BR>
 
-Other names/synonyms:  <INPUT TYPE="text" NAME="synonyms" SIZE=55><BR>
-<HR>
-Strain/Genetic Background (where mutation arose):    <INPUT TYPE="text" NAME="strainMutation" SIZE=50>
-<br>
-Strain/Genetic Background (where phenotype analyzed):    <INPUT TYPE="text" NAME="strainPhenotype" SIZE=50>
-<br><br>
-Other Strain/Background Information (speed congenic generation, details of complex genetic backgrounds or crosses, etc): <br>   
-<TEXTAREA NAME="strainInfo" ROWS=4 COLS=65></TEXTAREA>
-<!--<INPUT TYPE="text" NAME="strainInfo" SIZE=50-->
-
-<DL>
-  <DT>Method of Allele Generation:
-  <DD><INPUT TYPE="radio" NAME="method" VALUE="spontaneous" > spontaneous  
-  <INPUT TYPE="radio" NAME="method" VALUE="ENU"> ENU  induced 
-  <INPUT TYPE="radio" NAME="method" VALUE="EMS"> EMS  induced 
-  <INPUT TYPE="radio" NAME="method" VALUE="irradiation"> irradiation  induced <BR>
-  <INPUT TYPE="radio" NAME="method" VALUE="transgenic"> transgenic 
-  <INPUT TYPE="radio" NAME="method" VALUE="targeting"> targeted  
-  <INPUT TYPE="radio" NAME="method" VALUE="genetrap">gene  trapped  
-  <INPUT TYPE="radio" NAME="method" VALUE="conditional">conditional/targeted  
-  <INPUT TYPE="radio" NAME="method" VALUE="other"> other
-  <BR><BR>
-  <DD>If Allele generation method is "other," please specify  
-  <INPUT TYPE="text" NAME="othermethod" SIZE=25>
-  <DD> For transgenes, please specify transgene promoter 
-  <INPUT TYPE="text" NAME="promoter" SIZE=25>
-  <DD> For targeted mutations, please specify ES cell line used 
-  <INPUT TYPE="text" NAME="celline" SIZE=25>
-
-  <DT>Mode of Inheritance: 
-  <dd><INPUT TYPE="radio" NAME="mode" VALUE="dominant"> dominant  
-  <INPUT TYPE="radio" NAME="mode" VALUE="codominant"> codominant
-  <INPUT TYPE="radio" NAME="mode" VALUE="semidominant"> semidominant 
-  <INPUT TYPE="radio" NAME="mode" VALUE="recessive"> recessive  
-  <INPUT TYPE="radio" NAME="mode" VALUE="other"> unknown/other  <BR>
+<LI><B>If you need assistance with nomenclature</B><BR>
+ <INPUT TYPE="checkbox" NAME="status" VALUE="NomenHelp">&nbsp;  click here and 
+continue to the <B>"About this Mutation"</B> section below.<BR>
+<DD>We will contact you about nomenclature for this mutation.
 </DL>
-Chromosome Location (Enter UN if unknown):    
+
+<HR>
+<H3>About this Mutation:</H3> 
+<DL>
+<DT>Method of Allele Generation:
+<DD><INPUT TYPE="radio" NAME="method" VALUE="spontaneous" > spontaneous  
+<INPUT TYPE="radio" NAME="method" VALUE="ENU"> ENU  induced 
+<INPUT TYPE="radio" NAME="method" VALUE="EMS"> EMS  induced 
+<INPUT TYPE="radio" NAME="method" VALUE="irradiation"> irradiation  induced <BR>
+<INPUT TYPE="radio" NAME="method" VALUE="transgenic"> transgenic 
+<INPUT TYPE="radio" NAME="method" VALUE="targeting"> targeted  
+<INPUT TYPE="radio" NAME="method" VALUE="genetrap">gene  trapped  
+<INPUT TYPE="radio" NAME="method" VALUE="conditional">conditional/targeted  
+<INPUT TYPE="radio" NAME="method" VALUE="other"> other
+<BR><BR>
+<DD>If you chose "other," please specify  
+<INPUT TYPE="text" NAME="othermethod" SIZE=25>
+<DD> For transgenes, please specify transgene promoter 
+<INPUT TYPE="text" NAME="promoter" SIZE=25>
+<DD> For targeted mutations, please specify ES cell line used 
+<INPUT TYPE="text" NAME="celline" SIZE=25>
+</DL>
+<DL>
+<DT>Mode of Inheritance: 
+<DD><INPUT TYPE="radio" NAME="mode" VALUE="dominant"> dominant  
+<INPUT TYPE="radio" NAME="mode" VALUE="codominant"> codominant
+<INPUT TYPE="radio" NAME="mode" VALUE="semidominant"> semidominant 
+<INPUT TYPE="radio" NAME="mode" VALUE="recessive"> recessive  
+<INPUT TYPE="radio" NAME="mode" VALUE="Xlink"> X-linked <BR>
+<INPUT TYPE="radio" NAME="mode" VALUE="other"> other, please specify  
+<INPUT TYPE="text" NAME="other" SIZE=30><BR>
+</DL>
+
+
+Chromosome assignment  (Enter UN if unknown):    
 <INPUT TYPE="text" NAME="chromosome" SIZE=10>
 <BR><BR>
 Other Genome Location Information (cM, cR, or cytogenetic location; molecular location such as 'exon 1 deletion', etc.):<BR>
 <TEXTAREA NAME="location" ROWS=4 COLS=65></TEXTAREA>
-<BR>
-<HR>
-
-<H3>Phenotype</H3>
-<B>Phenotypic categories </B>(select all that apply, where the allele shows an effect):<BR>
-<!--#include file="include/phenoslim_select.html"-->
-<BR><BR>
-
-If appropriate classification(s) for the allele do not appear above, enter here: <br>
-<INPUT TYPE="text" NAME="othercategory" SIZE=50><BR>
-<BR><BR>
-Description (text, details of phenotype observed, etc.):<BR>
-<TEXTAREA NAME="description" ROWS=5 COLS=65></TEXTAREA><BR>
-<BR>
-Other remarks (gene function/pathway, available clones, GenBank numbers, etc.)<BR>
-<TEXTAREA NAME="remarks" ROWS=3 COLS=65></TEXTAREA><BR>
-<HR>
-<H3>Status</H3>
-Status requested for these data: <INPUT TYPE="radio" NAME="status" VALUE="Reserved">Reserved and Private&nbsp;
-<INPUT TYPE="radio" NAME="status" VALUE="Release">Release to public MGD&nbsp; 
-<INPUT TYPE="radio" NAME="status" VALUE="update">Update to public status
 <BR><BR>
 <HR>
-<H3>References:</H3>
-Please report publications about this allele. PubMed accession _ids may be used. If unpublished, include a descriptive title.  For unpublished references a Direct Submission reference will be created in MGD.  
-<P>
-   <BLOCKQUOTE>
-   <EM>Example, short citation:</EM> Boyd Y, Genome Res 2000 Mar;10(3):277-92<BR>
-   <EM>Example, PubMed: </EM>10720569<BR>
-   <EM>Example, unpublished:</EM> Doe JE, Smith H, New allele of the Kit ligand (steel) series, unpublished<BR>
-</BLOCKQUOTE>
-<P>
-
-Citations:
+<H3> Genetic Background:</H3>
+Strain/Genetic Background on which the mutation arose:    <INPUT TYPE="text" NAME="strainMutation" SIZE=50>
 <br>
-<TEXTAREA NAME="citations" ROWS=3 COLS=60></TEXTAREA><BR>
-
+Strain/Genetic Background on which the phenotype was analyzed:    <INPUT TYPE="text" NAME="strainPhenotype" SIZE=50>
+<br><br>
+Other Strain/Background Information (e.g. specify crosses):  
+Click here for an <A HREF="alleleform_strainex.html">example</A><br>   
+<TEXTAREA NAME="strainInfo" ROWS=4 COLS=65></TEXTAREA>
 <BR>
 <DL>
-<dt>If allele data are available from a Web site, please give URL: <BR>
-<DD><INPUT TYPE="text" NAME="alleleURL" SIZE=60><BR>
+<DD><LI><B>If you need assistance with the Genetic Background Section</B><BR> 
+<INPUT TYPE="checkbox" NAME="status" VALUE="NomenHelp">&nbsp; click here and 
+continue to the <B>"Phenotype"</B> section below.<BR>
+<DD>We will contact with you about the genetic background information for this mutation.
 </DL>
+</DL>
+
+<BR>
+<HR>
+<H3>Phenotype:</H3>
+Phenotypic Description (enter text, describing details of phenotype observed, etc.):<BR>
+Click here for an <A HREF="alleleform_phenoex.html">example</A>. You may browse the <A HREF="http://www.informatics.jax.org/private/pheno/index.html">Phenotype Vocabulary</A> and use these terms to describe the phenotype.<br>   
+<TEXTAREA NAME ="description" ROWS=10 COLS=65></TEXTAREA>
+
+
+<BR>
+<BR>
+Other remarks (gene function/pathway, available clones, GenBank numbers, etc.)<BR>
+<TEXTAREA NAME="remarks" ROWS=3 COLS=65></TEXTAREA>
+<BR><BR>
+
+<HR>
+
+<H3>Status and References:</H3>
+Is this information published? <BR>
+<DL>
+<DT>
+<DD><INPUT TYPE="radio" NAME="status" VALUE="Yes">yes&nbsp;
+<DD><INPUT TYPE="radio" NAME="status" VALUE="No">no&nbsp; 
+</DL>  
+If no, would you prefer:<BR>
+<DL>
+<dt>
+<DD><INPUT TYPE="radio" NAME="Makepublic" VALUE="makepublic">data be made public at the Mouse Genome Informatics Web site now <BR>
+<INPUT TYPE="radio" NAME="Makepublic" VALUE="private">data be kept private until publication
+</DL>
+<BR>
+Please provide the references, or authors & descriptive title for unpublished data:<BR>
+<TEXTAREA NAME="citations" ROWS=5 COLS=60></TEXTAREA>
+
+<BR><BR>
+If these data are available from a Web site, please give URL: <BR>
+<INPUT TYPE="text" NAME="alleleURL" SIZE=60><BR>
+<BR>
 <HR>
 <H3>Contact Details:</H3>
- If your contact details are already in MGD, you only need to enter your name and e-mail address.  <BR>
+ If your contact details are already in MGI you only need to enter your name and e-mail address.  <BR>
 <PRE>
-Last name:                    <INPUT TYPE="text" NAME="lastname" SIZE=30>(required)
-First name & middle name(s):  <INPUT TYPE="text" NAME="firstname" SIZE=30>(required)
-E-mail address:               <INPUT TYPE="text" NAME="email" SIZE=30>(required)
+Last name:                      <INPUT TYPE="text" NAME="lastname" SIZE=30>(required)
+First name (& middle initial):  <INPUT TYPE="text" NAME="firstname" SIZE=30>(required)
+E-mail address:                 <INPUT TYPE="text" NAME="email" SIZE=30>(required)
 <P>
-Institute/Organization:       <INPUT TYPE="text" NAME="organization" SIZE=30>
-Address:                      <INPUT TYPE="text" NAME="address1" SIZE=30>
-Address:                      <INPUT TYPE="text" NAME="address2" SIZE=30>
-City:                         <INPUT TYPE="text" NAME="city" SIZE=30>
-State/Province:               <INPUT TYPE="text" NAME="state" SIZE=30>
-Postal Code:                  <INPUT TYPE="text" NAME="zip" SIZE=30>
-Country:                      <INPUT TYPE="text" NAME="country" SIZE=30>
-Telephone Number:             <INPUT TYPE="text" NAME="phone" SIZE=30>
-Fax Number:                   <INPUT TYPE="text" NAME="fax" SIZE=30>
+Institute/Organization:         <INPUT TYPE="text" NAME="organization" SIZE=30>
+Address:                        <INPUT TYPE="text" NAME="address1" SIZE=30>
+Address:                        <INPUT TYPE="text" NAME="address2" SIZE=30>
+City:                           <INPUT TYPE="text" NAME="city" SIZE=30>
+State/Province:                 <INPUT TYPE="text" NAME="state" SIZE=30>
+Postal Code:                    <INPUT TYPE="text" NAME="zip" SIZE=30>
+Country:                        <INPUT TYPE="text" NAME="country" SIZE=30>
+Telephone Number:               <INPUT TYPE="text" NAME="phone" SIZE=30>
+Fax Number:                     <INPUT TYPE="text" NAME="fax" SIZE=30>
 </PRE>
 <BR>
 <H3>Once you submit this completed form, the MGI accession number for this 
-allele will be emailed to you shortly!  Thank you.</H3>
+mutant allele will be emailed to you shortly!  Thank you.</H3>
 <HR>
 <INPUT TYPE=submit VALUE="Submit"> <INPUT TYPE=reset VALUE="Reset Form">
 <HR>
 </FORM>
-
+<!--<A HREF="http://www.jax.org/" target="_top">
+<IMG SRC="../images/jax_logo.gif" ALIGN=right
+                        ALT="The Jackson Laboratory"></A>
+<SMALL>
+<A HREF="../other/citation.shtml" target="_top">
+                        Citing These Resources</A>
+<BR>
+<A HREF="../other/mgi_funding.shtml" target="_top">
+                        Funding Information</A>
+<BR>
+<A HREF="../other/copyright.shtml" target="_top">
+                        Warranty Disclaimer &amp; Copyright Notice</A>.
+<BR>
+Send questions and comments to
+                        <A HREF="http://www.informatics.jax.org/mgihome/support/tjl_inbox.shtml"
+                        target="_top">User Support</A>.
+</SMALL>-->
+ <P><HR>
 <!--#include file="include/footer.html"-->
-</BODY>
+</P></BODY>
 </HTML>
 <!--
 Warranty Disclaimer and Copyright Notice
-
- THE JACKSON LABORATORY MAKES NO REPRESENTATION ABOUT THE SUITABILITY OR 
- ACCURACY OF THIS SOFTWARE OR DATA FOR ANY PURPOSE, AND MAKES NO WARRANTIES, 
- EITHER EXPRESS OR IMPLIED, INCLUDING MERCHANTABILITY AND FITNESS FOR A 
- PARTICULAR PURPOSE OR THAT THE USE OF THIS SOFTWARE OR DATA WILL NOT 
- INFRINGE ANY THIRD PARTY PATENTS, COPYRIGHTS, TRADEMARKS, OR OTHER RIGHTS.  
+ THE JACKSON LABORATORY MAKES NO REPRESENTATION ABOUT THE SUITABILITY OR
+ ACCURACY OF THIS SOFTWARE OR DATA FOR ANY PURPOSE, AND MAKES NO WARRANTIES,
+ EITHER EXPRESS OR IMPLIED, INCLUDING MERCHANTABILITY AND FITNESS FOR A
+ PARTICULAR PURPOSE OR THAT THE USE OF THIS SOFTWARE OR DATA WILL NOT
+ INFRINGE ANY THIRD PARTY PATENTS, COPYRIGHTS, TRADEMARKS, OR OTHER RIGHTS.
  THE SOFTWARE AND DATA ARE PROVIDED "AS IS".
-
- This software and data are provided to enhance knowledge and encourage 
- progress in the scientific community and are to be used only for research 
- and educational purposes.  Any reproduction or use for commercial purpose 
- is prohibited without the prior express written permission of the Jackson 
+ This software and data are provided to enhance knowledge and encourage
+ progress in the scientific community and are to be used only for research
+ and educational purposes.  Any reproduction or use for commercial purpose
+ is prohibited without the prior express written permission of the Jackson
  Laboratory.
-
-Copyright ¨ 1996, 1999, 2002 by The Jackson Laboratory
+Copyright © 1996, 1999, 2002 by The Jackson Laboratory
 All Rights Reserved
 -->
-
