@@ -577,11 +577,11 @@ Figure</A> at <A HREF="#NHGRI">NHGRI</A>. <BR>See also <A HREF="#central_dogma">
 <A HREF="#penetrance">Penetrance</A>.</dd></p>
 
 <!-- FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF --><A NAME="f"></A>
-<P><DT><B><A NAME="fasta"></A>FASTA format</B><DD>A common sequence format beginning with a single-line description followed by lines of sequence data for use when searching bioinformatic tools such as BLAST. The description line is distinguished from the sequence data by a greater-than (>) symbol in the first column. All lines of text are 80 (or fewer) characters in length. Blank lines are not allowed in the middle of FASTA input.</p>
-<P>An example of a protein sequence in FASTA format is:
-<PRE>
-&gt;GI|129295|sp|P01013|OVAX_CHICK GENE X PROTEIN (OVALBUMIN-RELATED) <br>QIKDLLVSSSTDLDTTLVLVNAIYFKGMWKTAFNAEDTREMPFHVTKQESKPVQMMCMNNSFNVATLPAE <br>KMKILELPFASGDLSMLVLLPDEVSDLERIEKTINFEKLTEWTNPNTMEKRRVKVYLPQMKIEEKYNLTS <br>VLMALGMTDLFIPSANLTGISSAESLKISQAVHGAFMELSEDGIEMAGSTGVIEDIKHSPESEQFRADHP <br>FLFLIKHNPTNTIVYFGRYWSP
-</PRE>
+<P><DT><B><A NAME="fasta"></A>FASTA format</B><DD>The FASTA (pronounced "fast A") format is commonly used to capture sequence information, along with some primary annotation of that sequence. It is also called the "Pearson format" after its creator, William Pearson, who developed the format to be used with the FASTA alignment program. The format stipulates that a line beginning with the ">" symbol
+contain the sequence identifier or primary annotation. The sequence
+data then begins on the next line and continues until it concludes with
+another line starting with the ">" symbol. 
+
 <P>See 
 <a href="<!--#include file='include/mouseblast_url.html'-->/current/user_docs/mblast_seq_formats.shtml">MouseBLAST Help - Sequence Formats</A> for additional details.</P>
 </dd></p>
