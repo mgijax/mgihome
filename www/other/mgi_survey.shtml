@@ -139,7 +139,7 @@ Mouse/Human Phenotypes</SMALL></A></TD>
 <TD><INPUT name=query type=checkbox value="Orthology Map Views">
 <A href="<!--#include file='include/wi_url.html'-->reports/homologymap/mouse_human.shtml"><SMALL>Orthology Map Views</SMALL></A></TD>
 <TD><INPUT name=query type=checkbox value="MGI Glossary">
-<A href="../other/glossary.shtml"><SMALL>MGI Glossary</SMALL></A></TD>
+<A HREF="<!--#include file='include/java_url.html'-->WIFetch?page=glossaryIndex&print=no"><SMALL>MGI Glossary</SMALL></A></TD>
 </TR>
 <TR>
 <TD><INPUT name=query type=checkbox value="Linkage Maps">
