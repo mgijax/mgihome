@@ -49,6 +49,11 @@ Format: Short
 #AR-Message-End             Do Not Delete This Line
 ''' % (mgi_utils.date(), '%s')
 
+ALLOWED_TYPES = [2,  # markers
+		 8,  # assays
+		 11  # alleles
+		]
+
 ###--- Remedy-Template Functions ---###
 
 # These two functions are modeled after the formatting embedded in the
@@ -940,7 +945,7 @@ class AssayUserInput (SimpleTextUserInput):
 		#	We first call the superclass constructor to set up
 		#	the standard instance variables.  We then set a new
 		#	value for the commentInstructions, and change the
-		#	subject attribute to be an AlleleSubjectField.  We
+		#	subject attribute to be an AssaySubjectField.  We
 		#	set its value according to any accID which was passed
 		#	in.  Finally, we use the parameters to set the new
 		#	values for all instance variables.  This ensures that
@@ -948,11 +953,12 @@ class AssayUserInput (SimpleTextUserInput):
 		#	values.
 
 		SimpleTextUserInput.__init__ (self)
-		self.commentInstructions = '''Use this space to suggest
-			modifications and additions to the annotations for
-			this assay.  For all other comments and suggestions, contact 
-			<a href="%ssupport/tjl_inbox.shtml">User
-			Support</a>.<BR>''' % config.lookup ('MGIHOME_URL')
+		self.commentInstructions = '''Use this space to enter comments
+		    regarding the annotation of this assay; your comments will
+		    be reviewed and appropriate action taken.  For comments or 
+		    suggestions regarding the content of the Gene Expression 
+		    Database, contact <a href="%ssupport/tjl_inbox.shtml">User Support</a>.<BR>'''\
+			% config.lookup ('MGIHOME_URL')
 		self.subject = AssaySubjectField ('subject', 'Subject',
 			REQUIRED, width=45)
 		self.subject.setByAcc (parms)
@@ -1064,33 +1070,27 @@ def getInputObj (
 	# if we do not have an accession ID, then just fall back on the
 	# SimpleTextUserInput form, containing the basic fields and a big
 	# text box for "Your Comments".
-
-	if not parms.has_key('accID'):
-		inp = SimpleTextUserInput (parms)
-	else:
-		result = homelib.sql ('''select _MGIType_key
-				from ACC_Accession
-				where accID = "%s"''' % parms['accID'],
+	
+	inp = SimpleTextUserInput (parms)
+	
+	result = homelib.sql ('''select _MGIType_key
+			from ACC_Accession
+			where accID = "%s"''' % parms['accID'],
 			'auto')
 
-		# if we didn't find that accession number, then just fall
-		# back on the default user input form
-
-		if len(result) != 1:
-			inp = SimpleTextUserInput (parms)
-		else:
-			# otherwise, return an object of the appropriate
+	for mgiType in result:
+		if mgiType['_MGIType_key'] in ALLOWED_TYPES:
+			# return an object of the appropriate
 			# subclass.  (or fall back on the default if no
 			# special subclass is defined)
 
-			mgiType = result[0]['_MGIType_key']
-			if mgiType == MARKER_TYPE:
+			if mgiType['_MGIType_key'] == MARKER_TYPE:
 				inp = MarkerUserInput (parms)
 
-			elif mgiType == ALLELE_TYPE:
+			elif mgiType['_MGIType_key'] == ALLELE_TYPE:
 				inp = AlleleUserInput (parms)
-			
-			elif mgiType == ASSAY_TYPE:
+
+			elif mgiType['_MGIType_key'] == ASSAY_TYPE:
 				inp = AssayUserInput (parms)
 
 			# add handling here for other MGI Types as needed...
