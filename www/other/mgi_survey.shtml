@@ -109,14 +109,14 @@ Mouse/Human Phenotypes</A></TD>
 </TR>
 
 <TR>
-<TD><INPUT name=query type=checkbox value=MouseBLAST>
+<TD><INPUT name=query type=checkbox value="MouseBLAST">
 <A href="http://mouseblast.informatics.jax.org/">MouseBLAST</A></TD>
 <TD><INPUT name=query type=checkbox value="Mouse Tumor Biology">
 <A href="http://tumor.informatics.jax.org/FMPro?-db=TumorInstance&amp;-format=mtdp.html&amp;-view">Mouse Tumor Biology</A></TD>
 </TR>
 
 <TR>
-<TD><INPUT name=query type=checkbox value=Polmorphisms>
+<TD><INPUT name=query type=checkbox value="Polmorphisms">
 <A href="<!--#include file='include/wi_url.html'-->searches/polymorphism_form.shtml">Polymorphisms</A></TD>
 <TD><INPUT name=query type=checkbox value=Nomenclature>
 <A href="../nomen/index.shtml">Nomenclature</A></TD>
@@ -150,7 +150,7 @@ Mouse/Human Phenotypes</A></TD>
 <TR>
 <TD><INPUT name=query type=checkbox value="Cytogenetic Maps">
 <A href="<!--#include file='include/wi_url.html'-->searches/cytomap_form.shtml">Cytogenetic Maps</A></TD>
-<TD><INPUT name=query type=checkbox value=Tutorials>
+<TD><INPUT name=query type=checkbox value="Tutorials">
 <A href="/tutorials/index.shtml">Tutorials</A></TD>
 </TR>
 
@@ -200,13 +200,13 @@ Comments: <TEXTAREA cols=55 name=name=queryComments rows=6></TEXTAREA></P>
 <P><B>6. What other scientific web sites do you use regularly?</B><BR>
 <INPUT name=othersites type=checkbox value="NCBI/GenBank/PubMed">
 <A href="http://www.ncbi.nlm.nih.gov/">NCBI/GenBank/PubMed</A><BR>
-<INPUT name=othersites type=checkbox value=Ensembl>
+<INPUT name=othersites type=checkbox value="Ensembl">
 <A href="http://www.ensembl.org/">Ensembl</A><BR>
 <INPUT name=othersites type=checkbox value="SwissProt/EMBL/EBI">
 <A href="http://www.ebi.ac.uk/">SwissProt/EMBL/EBI</A><BR>
-<INPUT name=othersites type=checkbox value=UCSC>
+<INPUT name=othersites type=checkbox value="UCSC">
 <A href="http://genome.ucsc.edu/">UCSC</A><BR>
-<INPUT name=othersites type=checkbox value=OMIM>
+<INPUT name=othersites type=checkbox value="OMIM">
 <A href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=OMIM">OMIM</A><BR>
 Others:
 <TEXTAREA cols=55 name=othersitesComments rows=5></TEXTAREA> </P>
@@ -222,17 +222,17 @@ Others:
 <TEXTAREA cols=55 name=research rows=5></TEXTAREA></P>
 
 <P><B>With what organisms?</B><BR>
-<INPUT name=orgo type=checkbox value=Mouse>Mouse<BR>
-<INPUT name=orgo type=checkbox value=Human>Human<BR>
-<INPUT name=orgo type=checkbox value=Rat>Rat<BR>
+<INPUT name=orgo type=checkbox value="Mouse">Mouse<BR>
+<INPUT name=orgo type=checkbox value="Human">Human<BR>
+<INPUT name=orgo type=checkbox value="Rat">Rat<BR>
 Others:<INPUT name=orgoComment size=55></P>
 
 <P><B>10. We provide online facilities for submitting nomenclature, phenotype and expression data. How can we make data submission easier for you?</B><BR>
 Comments: <TEXTAREA cols=55 name=dataSub rows=6></TEXTAREA></P>
 
 <P><B>11. What Computer Operating Systems do you use?</B><BR>
-<INPUT name=os type=checkbox value=Mac>Mac<BR>
-<INPUT name=os type=checkbox value=Windows>Windows<BR>
+<INPUT name=os type=checkbox value="Mac">Mac<BR>
+<INPUT name=os type=checkbox value="Windows">Windows<BR>
 <INPUT name=os type=checkbox value="UNIX/Linux">UNIX/Linux<BR>
 Others:<INPUT name=osOther size=55></P>
 
@@ -246,23 +246,25 @@ Others:<INPUT name=osOther size=55></P>
 <A href="http://www.mozilla.org/projects/camino/">Chimera/Camino</A>
 </TD></TR>
 <TR>
-<TD><INPUT name=browser type=checkbox value="Internet Explorer">
+<TD><INPUT name=browser type=checkbox value=Internet Explorer>
 <A href="http://www.microsoft.com/downloads/">Internet Explorer</A></TD>
-<TD><INPUT name=browser type=checkbox value=iCab>
+<TD><INPUT name=browser type=checkbox value="iCab">
 <A href="http://www.icab.de/">iCab</A></TD></TR>
 <TR>
-<TD><INPUT name=browser type=checkbox value=Mozilla>
+<TD><INPUT name=browser type=checkbox value="Mozilla">
 <A href="http://www.mozilla.org/">Mozilla</A></td>
-<TD><INPUT name=browser type=checkbox value=Opera><A href="http://www.opera.com/">Opera</A></TD></TR>
+<TD>
+<INPUT name=browser type=checkbox value="Opera">&nbsp;<A href="http://www.opera.com/">Opera</A></TD>
+</TR>
 <TR>
-<TD><INPUT name=browser type=checkbox value=Safari>
+<TD><INPUT name=browser type=checkbox value="Safari">
 <A href="http://www.apple.com/safari/">Safari</A></td>
-<TD><INPUT name=browser type=checkbox value=Konquerer>
+<TD><INPUT name=browser type=checkbox value="Konquerer">
 <A href="http://www.konqueror.org/">Konqueror</A></TD></TR>
 <TR>
-<TD><INPUT name=browser type=checkbox value=OmniWeb>
+<TD><INPUT name=browser type=checkbox value="OmniWeb">
 <A href="http://www.omnigroup.com/applications/omniweb/">OmniWeb</A></td>
-<TD><INPUT name=browser type=checkbox value=NetCaptor>
+<TD><INPUT name=browser type=checkbox value="NetCaptor">
 <A href="http://www.netcaptor.com/">NetCaptor</A></TD>
 </TR>
 </TBODY>
