@@ -15,23 +15,26 @@ MGI Release 2.5 Announcement
 <p>The 2.5 release introduces a new  browser for viewing and querying the following vocabularies: 
 <ul>
 <li><a href="<!--#include file="include/go_url.html"-->">Gene Ontology (GO)</a>
-<li><a href=anatDictionary/index.shtml>Mouse Anatomical Dictionary</a><br>
+<li><a href="<!--#include file="include/wi_url.html"-->searches/anatdict_form.shtml">
+Mouse Anatomical Dictionary</a><br>
 </ul>
 <p>The browser links to detail pages for each entry in a vocabulary. 
 The GO terms are grouped into three 
-categories to search singly or in combination: molecular Function, biological process and cellular component.
+categories to search singly or in combination: molecular function, biological process, and cellular component.
 The Anatomy Dictionary links to each of the 28 Theiler stages.
-The Browser query field accepts any text string and searches for all terms and synonyms.
-An entry such as "muscle," for example, returns "muscle development," 
+The Browser query field accepts any text string and searches for all terms containing that string
+and any synonyms. For example, entering "muscle" in the GO Browser and using the option to
+search all categories returns 2 molecular function, 15 biological process, and 3
+cellular component terms including "muscle development," 
 "non-muscle myosin," and "structural protein of muscle."
 
 <h3>Homology Maps</h3>
-<p>Two new maps are available for viewing viewing and accessing homology data. The 
+<p>Two new maps are available for viewing and accessing homology data. The 
 maps display global views of human and rat orthology data 
 plotted against the mouse genome. Beside each chromosome is a set of histograms, 
  each corresponding to a human or rat chromosome. The histogram shows 
  the density of known orthologies in a particular mouse chromosomal region. 
- You can get detailed linkage maps showing all orthologs and you can 
+ From this display, you can get detailed comparative maps showing all orthologs, and you can 
  retrieve a compact tablular listing of orthologs for 
 that part of a chromosome. The whole genome homology maps are:
 <ul>
@@ -41,56 +44,22 @@ human on mouse background</a>
 rat on mouse background</a>
 </ul>
 
-<h3>Allele and Mutant Data<a href="../submissions/submissions_menu.shtml">
-</a></h3>
-<p>There is a new form available for electronic submission of allele and mutant data to MGD. 
-Each submission receives a permanent database accession ID.
-MGD reference pages provide a link to the associated data sets. 
-P>All data sets are associated with
-either an electronic submission reference or a published paper. MGD reference
-pages provide links to associated data sets. <I>Mammalian Genome</I> 
-publishes a list enumerating the data electronically submitted to MGD, including
-accession ID, chromosome, and locus symbols as a cross-referencing service
-for readers.</FONT>
-Rules and guidelines for submissions are at
-<a href="../submissions/submit.shtml">Submitting New Mutant and Allele Data</a>.
+<h3>Allele and Mutant Data</h3>
+<p>The new <a href="../nomen/allmut_form.shtml">Allele and Mutant Submissions Form</a>
+is available for contributing data to MGD. Information can be submitted for new or known 
+alleles where a phenotype has now identified a new gene. Help with nomenclature is provided
+from linked pages. Each new allele or mutant receives a permanent database accession ID.  
+<I>Mammalian Genome</I> periodically  publishes a list enumerating the data electronically 
+submitted to MGD, including accession ID, chromosome, and locus and allele symbols 
+as a cross-referencing servicefor readers. For submission of other types of data to MGD, 
+see the <a href="../submissions/submit.shtml">Data and Nomenclature Submissions</a> page.
 
 
-<h3><a href="<!--#include file="include/wi_url.html"-->userdocs/glossary.shtml">Expanded MGI Glossary</a></dt></h3>
-<dd><p>The MGI Glossary has expanded. Genetic terms in the
-<A HREF="<!--#include file="include/wi_url.html"-->
-userdocs/helpdocs_menu.shtml">help documents</A> are linked to their 
-definitions in the glossary. 
-
-<!-- standard footer and disclaimer -->
-<hr>
-<!--#include file="include/footer.html"-->
-</body></html>
-
-<!--
-warranty disclaimer and copyright notice
-
- the jackson laboratory makes no representation about the suitability or
- accuracy of this software or data for any purpose, and makes no warranties,
- either express or implied, including merchantability and fitness for a
- particular purpose or that the use of this software or data will not
- infringe any third party patents, copyrights, trademarks, or other rights.
- the software and data are provided "as is".
-
- this software and data are provided to enhance knowledge and encourage
- progress in the scientific community and are to be used only for research
- and educational purposes.  any reproduction or use for commercial purpose
- is prohibited without the prior express written permission of the jackson
- laboratory.
-
-copyright © 1996, 1999, 2000 by the jackson laboratory
-all rights reserved
--->
-
-</body>
-</html>
-
-
+<h3>MGI Glossary</a></dt></h3>
+<dd><p>The MGI Glossary has expanded. It provides definitions of terms from our help 
+documentation as well as those usefulfor understanding mouse genetics. 
+If you find any terms that are not defined or have suggestions or requests, please
+contact <a href="support/tjl_inbox.shtml">User Support<a>. 
 
 <!-- Standard footer and disclaimer -->
 <hr>
