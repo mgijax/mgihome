@@ -29,6 +29,7 @@ MGI Home Page
 <A HREF="lists/lists.shtml">MGI E-mail List Service</A><BR>
 <A HREF="<!--#include file='include/ftp_url.html'-->">FTP Site</A><BR>
 <A HREF="nomen/">Nomenclature</A><BR>
+<A HREF="nomen/allmut_form.shtml">Allele and New Mutant Submission Form</A><BR>
 <P>
 <B>Resource Prototypes</B><BR>
 <A HREF="http://mouseblast.informatics.jax.org/prototype/">MouseBLAST</A><BR>
@@ -37,8 +38,9 @@ MGI Home Page
 <A HREF="http://www.informatics.jax.org/rat/index.shtml">Rat Genome Data</A>
 <p>
 <B>Vocabularies</b><br>
-<a href="GO/ontology.shtml">Gene Ontology (GO) Browser</b><br>
-<a href="<!--#include file='include/wi_url.html'-->searches/anatdict_form.shtml">Anatomy Dictionary</a></b><br>
+<a href="<!--#include file="include/go_url.html"-->">Gene Ontology (GO) Browser</a></b><br>
+<a href="<!--#include file="include/wi_url.html"-->
+searches/anatdict_form.shtml">Mouse Anatomical Dictionary</a></b><br>
 
 <P>
 <B>Related Information</B><BR>
