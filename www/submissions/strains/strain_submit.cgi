@@ -22,7 +22,7 @@ labels = {
 	'method'	: 'Strain Name New or Revised',
 	'strain_name'	: 'Strain Name',
 	'gene_symbols'	: 'Gene Symbols',
-	'JR_num'	: 'JR Registry Number',
+	'JR_num'	: 'JR',
 	'status'	: 'Strain Public or Private',
 	'category'	: 'Categories',
 	'synonyms'	: 'Synonyms',
