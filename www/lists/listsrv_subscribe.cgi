@@ -42,7 +42,7 @@ if dev_email is not None:
 def hd():
 	print """<HTML>
 	<HEAD>
-	<TITLE><!--#include file="include/title.html"--> - List Subscription</TITLE>
+	<TITLE>List Subscription</TITLE>
 	</HEAD>
 	<BODY BGCOLOR="#FFFFFF">"""
 

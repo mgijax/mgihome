@@ -57,8 +57,6 @@ do
 			PYTHON=$value;;
 		GROUP)
 			GROUP=$value;;
-		TITLE)
-			TITLE=$value;;
 		[A-z]*)
 			;;	# other parms are not needed by Install
 	esac
@@ -81,10 +79,6 @@ if [ ! -h bin/python ]; then
 	ln -s $PYTHON python
 	cd $TOP
 fi
-
-# output the title as an include file
-
-echo $TITLE > www/include/title.html
 
 # compile python libraries and make sure they're readable
 

@@ -50,7 +50,7 @@ if dev_email is not None:
 def hd():
 	print """<HTML>
 	<HEAD>
-	<TITLE><!--#include file="include/title.html"--> - User Support Express Mail Results</TITLE></HEAD>
+	<TITLE>User Support Express Mail Results</TITLE></HEAD>
 	<BODY BGCOLOR=#FFFFFF>"""
 
 	wi_utils.small_hd()

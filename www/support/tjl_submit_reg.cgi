@@ -44,7 +44,7 @@ if dev_email is not None:
 def hd():
         print """<HTML>
         <HEAD>
-        <TITLE><!--#include file="include/title.html"--> - TJL HelpDesk User Registration</TITLE>
+        <TITLE>TJL HelpDesk User Registration</TITLE>
         </HEAD>
         <BODY BGCOLOR=#FFFFFF>"""
 
