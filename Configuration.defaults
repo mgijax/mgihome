@@ -52,3 +52,11 @@ RATMAP_URL	http://ratmap.gen.gu.se/ShowSingleLocus.htm?accno=
 
 # URL to the MGI Glossary
 GLOSSARY_URL	http://www.informatics.jax.org/userdocs/glossary.shtml
+
+# path to Sybase directory (where we find the interfaces file)
+# /opt/sybase for 11.5
+# /opt/sybase/12.5 for 12.5
+SYBASE		/opt/sybase
+
+# path to library files for doing crons (commented out for now)
+#LD_LIBRARY_PATH	$LD_LIBRARY_PATH:$SYBASE/OCS-12_5/lib
