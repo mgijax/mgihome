@@ -35,8 +35,10 @@ The <A HREF="<!--#include file='include/wi_url.html'-->/searches/polymorphism_fo
 <P>
 You can now search for polymorphism information in a region of a chromosome by specifying the end-points of the region. You can search for polymorphisms in the area between two markers (using marker symbols), between two cM positions, between a marker and a cM position, or within a specified number of cM around a locus. 
 <H3>Mouse Gene Records Now Associated with <A HREF="http://www.ncbi.nlm.nih.gov/UniGene/">Unigene</A> Clusters</H3>
-Previously, MGD showed putative associations between mouse genes and ESTs based on information in dbEST records. Now, MGD shows putative associations between genes and I.M.A.G.E. clones based on information in Unigene clusters. In many cases, a MGD mouse gene detail record will include a link to a Unigene cluster in the "Other Database Links" section of the record. See, for example, detail record for <A HREF="<!--#include file='include/wi_url.html'-->/searches/marker.cgi?12181">Pax3</A>
-<H3><A HREF="http://mouseblast.informatics.jax.org/prototype/">MouseBLAST Prototype</A></H3></A>
+Previously, MGD showed putative associations between mouse genes and ESTs based on information in dbEST records. Now, MGD shows putative associations between genes and I.M.A.G.E. clones based on information in Unigene clusters. In many cases, a MGD mouse gene detail record will include a link to a Unigene cluster in the "Other Database Links" section of the record. See, for example, detail record for <A HREF="<!--#include file='include/wi_url.html'-->/searches/accession_report.cgi?id=MGI:97487">Pax3</A>.
+
+
+<H3>MouseBLAST Prototype</H3></A>
 MouseBLAST enables you to compare a DNA or protein sequence against sequence data in one of several rodent sequence databases (all data representing subsets of either GenBank, TrEMBL, or SwissProt). Matching sequence records may include links to GenBank or SwissProt. If a retrieved sequence is associated with a mouse gene, the sequence record will include a link to the appropriate marker detail record in MGD.<P>
 MouseBLAST provides a simple search form for searching by sequence or Sequence ID (from GenBank, EMBL, SwissProt, TrEMBL, or GenPept). MouseBLAST relies on several WU-BLAST programs for searching DNA or protein sequences. (WU-BLAST is an implementation of BLAST).
 
@@ -49,7 +51,7 @@ Also, a new column has been added to the Strain Results page providing links to 
 <B>
 <LI>MGD phenotype records associated with OMIM records now provide hyper-links to the OMIM records<P>
 <LI><EM>Find out what researchers who use MGI resources have to say about us. </EM> Check out the <A HREF="../other/survey_results.shtml">MGI User Survey results</A><P>
-<LI><EM>Looking for information on rat genetics?</EM> See the <A HREF="http://www.informatics.jax.org/rat/">Rat Pages</A> prototype.
+<LI><EM>Looking for information on rat genetics?</EM> See the Rat Pages prototype.
 </B>
 </UL>
 <HR>
