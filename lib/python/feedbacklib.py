@@ -1079,7 +1079,6 @@ def getInputObj (
 			'auto')
 
 	for mgiType in result:
-		print mgiType
 		if mgiType['_MGIType_key'] in ALLOWED_TYPES:
 			# return an object of the appropriate
 			# subclass.  (or fall back on the default if no
