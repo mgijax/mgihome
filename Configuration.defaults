@@ -16,3 +16,6 @@ SENDMAIL	/usr/lib/sendmail
 # optional e-mail address to use for testing cgi scripts which send e-mail.
 # If commented out, hard-coded addresses are used throughout.
 # CGI_MAILTARGET	pm@informatics.jax.org
+
+# path to the web directory of the GEN (Gene Expression Notebook) product
+GEN_PATH	/usr/local/mgi/gen/www/

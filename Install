@@ -57,6 +57,8 @@ do
 			WI_PATH=$value;;
 		MGIHOME_PATH)
 			MGIHOME_PATH=$value;;
+		GEN_PATH)
+			GEN_PATH=$value;;
 		PYTHON)
 			PYTHON=$value;;
 		GROUP)
@@ -125,4 +127,13 @@ chgrp -R www www
 
 cd www
 includeLinker
+cd $TOP
+
+# add link to the GEN product from within the www/GXD directory
+
+cd www/GXD
+if [ -h GEN ]; then
+	rm GEN
+fi
+ln -s $GEN_PATH GEN
 cd $TOP
