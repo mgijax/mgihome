@@ -26,6 +26,12 @@ def main ():
 	stringToFile (config.lookup ('TUTORIAL_URL'), \
 		'../www/include/tutorial_url.html')
 	stringToFile (config.lookup ('GB_URL'), '../www/include/gb_url.html')
+	stringToFile (config.lookup ('LOCUSLINK_URL'), \
+		'../www/include/locuslink_url.html')
+	stringToFile (config.lookup ('RATMAP_URL'), \
+		'../www/include/ratmap_url.html')
+	stringToFile (config.lookup ('GLOSSARY_URL'), \
+		'../www/include/glossary_url.html')
 	return
 
 if __name__ == '__main__':
