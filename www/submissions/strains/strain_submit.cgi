@@ -35,7 +35,7 @@ labels = {
 
 # list of internal fieldnames for required fields:
 
-required_fields = [ 'name', 'email', 'method', 'status' ]
+required_fields = [ 'name', 'method', 'status' ]
 
 # sections for e-mail:
 # each tuple contains (section heading string, list of internal fieldnames
@@ -97,17 +97,6 @@ class strainMailer (formMailer.formMailer):
 		atPos = string.find (self.parms['email'], '@')
 		if atPos == -1:
 			errors.append ( ('email', 'Invalid e-mail address') )
-
-		# check that the username in the e-mail address matches the
-		# username of the logged-in user
-
-##		emailName = self.parms['email'][:atPos]
-##		if os.environ.has_key('REMOTE_USER') and \
-##				emailName != os.environ['REMOTE_USER']:
-##			errors.append ( ('email',
-##				'''E-mail address (%s) does not match the ID
-##					(%s) of the user logged in''' % \
-##				(emailName, os.environ['REMOTE_USER'])) )
 
 		return errors
 
