@@ -1,9 +1,13 @@
 # Name:		mgihomelib.py
 # Purpose:	provide general routines for use by MGI Home site scripts
 
+import os
 import config
+import db
 
 URL = config.lookup ('MGIHOME_URL')
+db.set_sqlLogin (config.lookup ('DBUSER'), config.lookup ('DBPASSWORD'),
+	config.lookup ('DBSERVER'), config.lookup ('DATABASE'))
 
 def footer ():
 	# Purpose: provide a standard footer for MGI Home-based web pages
@@ -40,3 +44,30 @@ def banner ():
 		 '<IMG SRC="%simages/mgi_small_banner.gif"' % URL,
 	    	 'WIDTH=501   HEIGHT=40   ALT="Mouse Genome Informatics">',
 		 '</CENTER>' ]
+
+def sql (queries, parsers = 'auto'):
+	# Purpose: wrapper over the db.sql routine
+	# Returns: list of dictionaries, or list of lists of dictionaries,
+	#	depending on whether 'queries' is a string or a list or
+	#	strings.
+	# Assumes: nothing
+	# Effects: runs 'queries' against the database specified in the
+	#	Configuration file
+	# Throws: propagates any exceptions raised by db.sql()
+
+	return db.sql (queries, parsers)
+
+def makepath (
+	*items		# strings
+	):
+	# Purpose: join one or more directory levels to create a single
+	#	path
+	# Returns: string pathname
+	# Assumes: nothing
+	# Effects: nothing
+	# Throws: nothing
+
+	s = ''
+	for item in items:
+		s = os.path.join (s, item)
+	return s
