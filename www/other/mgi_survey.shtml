@@ -119,14 +119,14 @@ Mouse/Human Phenotypes</A></TD>
 <TD><INPUT name=query type=checkbox value=Polmorphisms>
 <A href="<!--#include file='include/wi_url.html'-->searches/polymorphism_form.shtml">Polymorphisms</A></TD>
 <TD><INPUT name=query type=checkbox value=Nomenclature>
-<A href="<!--#include file='include/wi_url.html'-->/mgihome/nomen/index.shtml">Nomenclature</A></TD>
+<A href="../nomen/index.shtml">Nomenclature</A></TD>
 </TR>
 
 <TR>
 <TD><INPUT name=query type=checkbox value="Mammalian Orthology">
 <A href="<!--#include file='include/wi_url.html'-->searches/homology_form.shtml">Mammalian Orthology</A></TD>
 <TD><INPUT name=query type=checkbox value="Gene Family Information">
-<A href="<!--#include file='include/wi_url.html'-->/mgihome/nomen/genefamilies/index.shtml">Gene Family Information</A></TD>
+<A href="../nomen/genefamilies/index.shtml">Gene Family Information</A></TD>
 </TR>
 <TR>
 <TD><INPUT name=query type=checkbox value="Oxford Grid">
@@ -138,51 +138,53 @@ Mouse/Human Phenotypes</A></TD>
 <TD><INPUT name=query type=checkbox value="Orthology Map Views">
 <A href="<!--#include file='include/wi_url.html'-->/reports/homologymap/mouse_human.shtml">Orthology Map Views</A></TD>
 <TD><INPUT name=query type=checkbox value="MGI Glossary">
-<A href="<!--#include file='include/wi_url.html'-->/mgihome/other/glossary.shtml">MGI Glossary</A></TD>
+<A href="../other/glossary.shtml">MGI Glossary</A></TD>
 </TR>
 <TR>
 <TD><INPUT name=query type=checkbox value="Linkage Maps">
 <A href="<!--#include file='include/wi_url.html'-->searches/linkmap_form.shtml">Linkage Maps</A></TD>
 <TD><INPUT name=query type=checkbox value="MGI Help">
-<A href="../support/tjl_inbox.shtml">MGI Help</A>
-</TD>
+<A href="../support/tjl_inbox.shtml">MGI Help</A></TD>
 </TR>
+
 <TR>
 <TD><INPUT name=query type=checkbox value="Cytogenetic Maps">
 <A href="<!--#include file='include/wi_url.html'-->searches/cytomap_form.shtml">Cytogenetic Maps</A></TD>
 <TD><INPUT name=query type=checkbox value=Tutorials>
-<A href="/tutorials/index.shtml">Tutorials</A></TD></TR>
+<A href="/tutorials/index.shtml">Tutorials</A></TD>
+</TR>
+
 <TR>
 <TD><INPUT name=queryp type=checkbox value="Physical Maps">
 <A href="http://www.informatics.jax.org/reports/mitmap/">Physical Maps</A></TD>
 <TD><INPUT name=query type=checkbox value="Flat files">
-<A href="<!--#include file='include/ftp_url.html'-->pub/reports/index.html">Flat
-files</A></TD></TR>
+<A href="<!--#include file='include/ftp_url.html'-->pub/reports/index.html">Flat files</A></TD>
+</TR>
+
 <TR>
 <TD><INPUT name=query type=checkbox value="Mapping Data">
 <A href="<!--#include file='include/wi_url.html'-->searches/mapdata_form.shtml">Mapping Data</A></TD>
 <TD><INPUT name=query type=checkbox value="MGI-LIST">
-<A href="http://lists.informatics.jax.org/lyris-cgi/lyris.pl?visit=mgi-list">MGI-LIST</A></TD></TR>
+<A href="../lists/list.shtml">MGI-LIST</A></TD>
+</TR>
+
 <TR>
 <TD><INPUT name=query type=checkbox value="Gene Expression Data">
 <A href="<!--#include file='include/wi_url.html'-->searches/expression_form.shtml">Gene Expression Data</A></TD>
 <TD><INPUT name=query type=checkbox value="RI SDP">
-<A href="<!--#include file='include/wi_url.html'-->searches/riset_form.shtml">RI
- SDP</A></TD>
+<A href="<!--#include file='include/wi_url.html'-->searches/riset_form.shtml">RI SDP</A></TD>
 </TR>
 <TR>
 <TD><INPUT name=query type=checkbox value="Gene Expression Literature Index">
 <A href="<!--#include file='include/wi_url.html'-->searches/gxdindex_form.shtml">Gene Expression Literature Index</A></TD>
 <TD><INPUT name=query type=checkbox value="RC SDP">
-<a href="<!--#include file='include/wi_url.html'-->searches/rcset_form.shtml">RC 
-SDP</A></TD>
+<a href="<!--#include file='include/wi_url.html'-->searches/rcset_form.shtml">RC SDP</A></TD>
 </TR>
 <TR>
 <TD><INPUT name=query type=checkbox value="cDNA Clones">
 <A href="<!--#include file='include/wi_url.html'-->searches/estclone_form.shtml">cDNA Clones</A></TD>
 <TD><INPUT name=query type=checkbox value="Chromosome Committee Reports">
-<A href="<!--#include file='include/wi_url.html'-->/ccrsearches/index.cgi">Chromosome Committee Reports</A>
-</TD>
+<A href="<!--#include file='include/wi_url.html'-->ccrsearches/index.cgi">Chromosome Committee Reports</A></TD>
 </TR>
 
 <TR>
