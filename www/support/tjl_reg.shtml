@@ -379,16 +379,16 @@ If your computer is not in the above list, please specify: <INPUT TYPE="text" NA
 <DT>Please select the operating system version(s) you curently use:<P>
 <SELECT SEVERAL NAME="opsys" MULTIPLE SIZE=3>
 <option value="MacOS 8.0"> MacOS 8.0 or above
-<option value="Windows 3.1"> Windows NT4
-<option value="Windows 3.1"> Windows NT
-<option value="Windows 3.1"> Windows 2000
-<option value="Windows NT"> Windows Me
+<option value="Windows 4.0"> Windows NT 4.0
+<option value="Windows NT"> Windows NT
+<option value="Windows 2000"> Windows 2000
+<option value="Windows Me"> Windows Me
 <option value="Windows 98"> Windows 98
 <option value="Windows 95"> Windows 95
 <option value="Solaris"> Solaris
 <option value="SunOS"> SunOS
-<option value=ounix> Other UNIX
-<option value=ounix> Linux
+<option value="ounix"> Other UNIX
+<option value="linix"> Linux
 
 </SELECT SEVERAL>
 <p>
@@ -401,11 +401,11 @@ Internet Connection:
 World Wide Web Browsers currently used:
 <p>
 <SELECT SEVERAL NAME="list:browser" MULTIPLE SIZE=4>
-         <option value=net> Netscape  
-         <option value=ie> Microsoft Internet Explorer 
-         <option value=lx> Opera
-         <option value=lx> iCab
-         <option value=oth> Other 
+         <option value="net"> Netscape  
+         <option value="ie"> Microsoft Internet Explorer 
+         <option value="ope"> Opera
+         <option value="icab"> iCab
+         <option value="oth"> Other 
 </SELECT SEVERAL>
 <p>
 
