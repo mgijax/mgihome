@@ -1,6 +1,7 @@
 <HTML>
 <HEAD>
-<TITLE>Strain Submission Form</TITLE>
+<TITLE><!--#include file='include/mgiversion.html'--> - Strain Registry Form</TITLE>
+<!-- note: to see the result of any changes to this file, go through public: http://www/~djd/mgihome/submissions/strains/index.shtml-->
 </HEAD>
 <BODY BGCOLOR="#FFFFFF">
 <!--#include file="include/bodyStart.html"-->
@@ -12,8 +13,7 @@
      <TD WIDTH="20%" VALIGN="center" ALIGN="left">&nbsp;</TD>
      <TD WIDTH="60%" ALIGN="center" VALIGN="center">
       <FONT COLOR="#000000" SIZE=5 FACE="Arial,Helvetica">
-Strain Submission Form
-
+Strain Registry Form
       </FONT>
      </TD>
      <TD WIDTH="20%" VALIGN="center" ALIGN="center">&nbsp;</TD>
@@ -23,145 +23,159 @@ Strain Submission Form
  </TR>
 </TABLE>
 
-<FORM METHOD="POST" ACTION="strain_submit.cgi">
+<form METHOD="POST" ACTION="strain_submit.cgi">
+<h3>Strain Name</h3>
+<blockquote>
+<input  TYPE="radio"  NAME="method"  VALUE="NEW">New<br>
+<input TYPE="radio" NAME="method" VALUE="REVISED">Revised<br>
+</blockquote>
+<b>Prefix for your resource, </b>e.g., JR for Jax Resource Systems; MMRRC  for Mouse Mutant  Research Resource  Center;  EMMA for European Mutant   Mouse Archive:
+<input  TYPE="text" NAME="Prefix" SIZE=15> <br><br>
 
-<H3>Strain Name</H3> 
-<BLOCKQUOTE>
-<INPUT TYPE="radio" NAME="method" VALUE="NEW"> New <BR>        
-<INPUT TYPE="radio" NAME="method" VALUE="REVISED"> Revised<BR>
-</BLOCKQUOTE>
-
-<B>JR: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<INPUT TYPE="text" NAME="JR_num" SIZE=15> <br><br>
-
-MMRRC: <INPUT TYPE="text" NAME="MMRRC" SIZE=15></b>
+<b>Strain Accession_id assigned at your site or MGI_id for your strain  </b> (Note: If the  accession_id  includes  a  prefix, include it here)
+<input  TYPE="text" NAME="instituteID" SIZE=15></b>
 <p>
+<br>
 
-<B>Proposed Strain Name</B><P>
-Use &lt; &gt; for superscripted alleles.  <I>Example:</I><B>Prkdc<sup>scid</sup></B> should be entered as <B>Prkdc&lt;scid&gt;</B><BR>
-If this is a revision, enter the revised strain name here and "previous name" under synonyms.<BR>
-<INPUT TYPE="text" NAME="strain_name" SIZE=65> 
+<h3>Proposed Strain Name</h3>
+<b>Note:</b> When mutant alleles are part of the strain name, use &lt; &gt; to indicate the superscripted  alleles.  <i>Example: &nbsp;</i><b>C57BL/6J-Kit<sup>W-39J</sup></b> should be entered as <b>C57BL/6J-Kit&lt;W-39J&gt;</b>
+<br>
+If this is a revision, enter the revised strain name here and "previous  name" under  synonyms.<br>
+<input TYPE="text" NAME="strain_name" SIZE=65>
+<p>
+<br>
+<h4>Gene symbols corresponding to alleles carried on this  strain</h4>
+<p>
+<i>Example:</i>&nbsp;for the strain <b>NOD/LtSz-Prkdc&lt;scid&gt;
+B2m&lt;tm1Unc&gt;</b>  <br>the gene symbols entered into this box would  be
+<b>Prkdc</b> and <b>B2m</b>
+<br>
+<br>
+(one per line)
 
-<P>
+<textarea  NAME="gene_symbols"  ROWS=4  COLS=25></textarea>
+<p>
+<dl>
+<dt><BR><b>For help in naming a strain, consult these  resources:</B>
 <BR>
-<B>Gene symbols corresponding to alleles carried on this strain</B><P>
-<I>Example:</I>for the strain <B>NOD/LtSz-Prkdc&lt;scid&gt; B2m&lt;tm1Unc&gt;</B> <BR>
-the gene symbols entered into this box would be <B>Prkdc</B> and <B>B2m</B><BR><BR>
- (one per line) <TEXTAREA NAME="gene_symbols" ROWS=4 COLS=25></TEXTAREA>
-<P>
-
-<HR>
+<dd><A HREF="../../nomen/strains.shtml">Rules for Nomenclature of Mouse and Rat Strains</A>
+<br>
+<dd><A HREF="http://dels.nas.edu/ilar/codes.asp?id=codes">ILAR Lab Code Registry for obtaining Lab-code</A>
 <BR>
-<DL>
-<DT>
-<B>Is this strain public or private ?</B>
-<I> (<B>IMPORTANT</B>: "public" strain names will be released through MGD)</I>
-<BR>
-<DD><INPUT TYPE="radio" NAME="status" VALUE="PUBLIC"> Public<BR>
-<DD><INPUT TYPE="radio" NAME="status" VALUE="PRIVATE"> Private 
-</DL>
+<!--<dd><A HREF="../xxxxxxx">List of standard mouse strains</A>-->
+<dd><A
+HREF="../../support/tjl_inbox.shtml">MGI Help Desk</A>
+</dl>
 
-<HR>
-<BR>
-<B>Strain categories</B>.  Choose one or more.
-<P>
-<Table border=0 cellpadding=0 cellspacing=2 width=100%>
-<TR valign=top>
+<p>If you have a large number of strains to submit, contact  <A
+HREF="../../support/tjl_inbox.shtml">MGI User Support</a> for help with file formatting.
 
-<TD>
-<INPUT TYPE="checkbox" NAME="category" VALUE="strain_family" >strain family<BR>
-<INPUT TYPE="checkbox" NAME="category" VALUE="inbred_strain">inbred strain <BR>
-<INPUT TYPE="checkbox" NAME="category" VALUE="segregating_inbred">segregating inbred<BR>
-<INPUT TYPE="checkbox" NAME="category" VALUE="mutant_strain">mutant strain<BR>
-<INPUT TYPE="checkbox" NAME="category" VALUE="mutant_stock">mutant stock<BR>
-<INPUT TYPE="checkbox" NAME="category" VALUE="wild_derived">wild-derived<BR>
-<INPUT TYPE="checkbox" NAME="category" VALUE="outbred">outbred<BR>
+<hr>
+<br>
+<dl>
+<dt><b>Is this strain public or private?</b> <i> (<b>IMPORTANT</b>: "public" strain  names  will  be released through MGD immediately)</i>
+<br>
+<dd><input TYPE="radio" NAME="status" VALUE="PUBLIC">Public<br></dd>
+<dd><input TYPE="radio" NAME="status" VALUE="PRIVATE">Private</dd>
+</dl>
+<hr>
+<br>
+<b>Strain categories</b>:  Choose  one  or  more.
+<p>
+<table  border=0 cellpadding=0 cellspacing=2 width=100%>
+<tr valign=top>
+<td>
+<input TYPE="checkbox" NAME="category" VALUE="strain_family">strain family<br>
+<input TYPE="checkbox" NAME="category" VALUE="inbred_strain">inbred strain<br>
+<input TYPE="checkbox" NAME="category" VALUE="segregating_inbred">segregating inbred<br>
+<input TYPE="checkbox" NAME="category" VALUE="mutant_strain">mutant strain<br>
+<input TYPE="checkbox" NAME="category" VALUE="mutant_stock">mutant stock<br>
+<input TYPE="checkbox" NAME="category" VALUE="wild_derived">wild-derived<br>
+<input TYPE="checkbox" NAME="category" VALUE="outbred">outbred
+</td>
 
-<TD>
-<INPUT TYPE="checkbox" NAME="category" VALUE="coisogenic">coisogenic<BR>
-<INPUT TYPE="checkbox" NAME="category" VALUE="congenic">congenic<BR>
-<INPUT TYPE="checkbox" NAME="category" VALUE="consomic">consomic<BR>
-<INPUT TYPE="checkbox" NAME="category" VALUE="RI_strain">recombinant inbred (RI)<BR>
-<INPUT TYPE="checkbox" NAME="category" VALUE="RC_strain">recombinant congenic (RC)<BR>
-<INPUT TYPE="checkbox" NAME="category" VALUE="MHC_congenic">major histocompatibility congenic<BR>
-<INPUT TYPE="checkbox" NAME="category" VALUE="minorH_congenic">minor histocompatibility congenic<BR>
+<td>
+<input TYPE="checkbox" NAME="category" VALUE="coisogenic">coisogenic<br>
+<input TYPE="checkbox" NAME="category" VALUE="congenic">congenic<br>
+<input TYPE="checkbox" NAME="category" VALUE="consomic">consomic<br>
+<input TYPE="checkbox" NAME="category" VALUE="RI_strain">recombinant inbred (RI)<br>
+<input TYPE="checkbox" NAME="category" VALUE="RC_strain">recombinant congenic (RC)<br>
+<input TYPE="checkbox" NAME="category" VALUE="MHC_congenic">major histocompatibility congenic<br>
+<input TYPE="checkbox" NAME="category" VALUE="minorH_congenic">minor histocompatibility congenic
+</td>
 
-<TD>
-<INPUT TYPE="checkbox" NAME="category" VALUE="spontaneous_mutation">spontaneous mutation<BR>
-<INPUT TYPE="checkbox" NAME="category" VALUE="targeted_mutation">targeted mutation<BR>
-<INPUT TYPE="checkbox" NAME="category" VALUE="transgenic">transgenic<BR>
-<INPUT TYPE="checkbox" NAME="category" VALUE="gene_trap">gene trap<BR>
-<INPUT TYPE="checkbox" NAME="category" VALUE="chemical_mutation">chemically induced mutation<BR>
-<INPUT TYPE="checkbox" NAME="category" VALUE="radiation_mutation">radiation induced mutation<BR>
+<td>
+<input TYPE="checkbox" NAME="category" VALUE="spontaneous_mutation">spontaneous mutation<br>            <input TYPE="checkbox" NAME="category" VALUE="targeted_mutation">targeted mutation<br>
+<input TYPE="checkbox" NAME="category" VALUE="transgenic">transgenic<br>
+<input TYPE="checkbox" NAME="category" VALUE="gene_trap">gene trap<br>
+<input TYPE="checkbox" NAME="category" VALUE="chemical_mutation">chemically induced mutation<br>            <input TYPE="checkbox" NAME="category" VALUE="radiation_mutation">radiation induced mutation
+</td>
 
-<TD>
-<INPUT TYPE="checkbox" NAME="category" VALUE="chrom_aberration">chrom. aberration<BR>
-<INPUT TYPE="checkbox" NAME="category" VALUE="Robertsonian">Robertsonian<BR>
-<INPUT TYPE="checkbox" NAME="category" VALUE="translocation">translocation<BR>
-<INPUT TYPE="checkbox" NAME="category" VALUE="transposition">transposition<BR>
-<INPUT TYPE="checkbox" NAME="category" VALUE="inversion">inversion<BR>
-<INPUT TYPE="checkbox" NAME="category" VALUE="insertion">insertion<BR>
-<INPUT TYPE="checkbox" NAME="category" VALUE="deletion">deletion<BR>
-<INPUT TYPE="checkbox" NAME="category" VALUE="duplication">duplication<BR>
-<INPUT TYPE="checkbox" NAME="category" VALUE="other">other
-</TABLE>
-<P>
+<td>
+<input TYPE="checkbox" NAME="category" VALUE="chrom_aberration">chrom. aberration<br>
+<input TYPE="checkbox" NAME="category" VALUE="Robertsonian">Robertsonian<br>
+<input TYPE="checkbox" NAME="category" VALUE="translocation">translocation<br>
+<input TYPE="checkbox" NAME="category" VALUE="transposition">transposition<br>
+<input TYPE="checkbox" NAME="category" VALUE="inversion">inversion<br>
+<input TYPE="checkbox" NAME="category"  VALUE="insertion">insertion<br>
+<input TYPE="checkbox" NAME="category" VALUE="deletion">deletion<br>
+<input TYPE="checkbox" NAME="category" VALUE="duplication">duplication<br>
+<input TYPE="checkbox" NAME="category" VALUE="other">other
+</td>
+<tr>
+</table>
+<p>
+<hr>
+<br>
+<h4>Strain  name   synonyms</h4>
+<textarea   NAME="synonyms" ROWS=4 COLS=55></textarea>
+<p>
+<br>
+<b>References about this  strain</b>.&nbsp;Provide  MEDLINE  or  PubMed  IDs,  short reference format, or, if unpublished, include a descriptive title. URLs may also  be included.
+<blockquote>
+ <em>Example, short citation:</em>&nbsp; Takakura N, Cell 2000;
+102:199-209.<br>
+<em>Example, PubMed ID:</em>&nbsp;20397756<br>
+<em>Example, unpublished:</em> &nbsp;Doe JE, Smith H, New allele of the Kit ligand (steel) series,
+unpublished
+</blockquote>
 
-<HR>
-<BR>
-<B>Strain name synonyms</B><BR>
-<TEXTAREA NAME="synonyms" ROWS=4 COLS=55></TEXTAREA>
+<textarea NAME="references" ROWS=4 COLS=65></textarea>
+<p>
+<b>Any  other  relevant  information  about  this  strain</b><br>
+<textarea NAME="notes" ROWS=4 COLS=65></textarea>
+<p>
+<hr>
+<b>Contact Details:</b> If your contact details are already registered with MGI, you only need to enter your name and E-mail address.<br>
+<pre> 
+Last name:                      <input TYPE="text" NAME="lastname"  SIZE=30>(required) 
+First name (& middle initial):  <input TYPE="text" NAME="firstname" SIZE=30>(required)
+E-mail address:                 <input  TYPE="text" NAME="email"    SIZE=30>(required)
+<p>
+Institute/Organization: 	<input TYPE="text" NAME="organization" SIZE=30>
+Address  line  1:       	<input TYPE="text" NAME="address1"  SIZE=30>
+Address line 2:         	<input TYPE="text" NAME="address2"  SIZE=30>
+City:				<input TYPE="text" NAME="city"      SIZE=30>
+State/Province:			<input TYPE="text" NAME="state"     SIZE=30>
+Postal Code:			<input TYPE="text" NAME="zip"       SIZE=30>
+Country:			<input TYPE="text" NAME="country"   SIZE=30>
+Telephone Number:		<input TYPE="text" NAME="phone"     SIZE=30>
+Fax Number:			<input TYPE="text" NAME="fax" 	    SIZE=30>
+</pre>
+<p>
+<br>
+<b>Once you submit, nomenclature will be reviewed and a MGI accession number for this strain will be E-mailed to you.</b>
 
-<P>
-<BR>
-<B>References about this strain </B>.  
-Provide MedLine or PubMed UIs, short reference format, or, if unpublished, include a descriptive title. 
-<BLOCKQUOTE>
-<EM>Example, short citation:</EM> Seldin MF, Cytogenet Cell Genet 1987; 45 :52-54.<BR>
-<EM>Example, MedLine UI: </EM>87245590<BR>
-<EM>Example, unpublished:</EM> Doe JE, Smith H, New allele of the Kit ligand (steel) series, unpublished
-</BLOCKQUOTE>
-<TEXTAREA NAME="references" ROWS=4 COLS=65></TEXTAREA>
-
-<P>
-<BR>
-<B>Any other relevant notes about this strain</B><BR>
-<TEXTAREA NAME="notes" ROWS=4 COLS=65></TEXTAREA>
-
-<P>
-<HR>
-<B>Contact Details:</B>
-<PRE>
-Your name: <INPUT TYPE="text" NAME="name" SIZE=40>(required)
-E-mail:    <INPUT TYPE="text" NAME="email" SIZE=40>
-</PRE>
-<P>
-<BR>
-<B>Once you submit, nomenclature will be reviewed and a MGI
- accession number for this strain will be emailed to you.</B>
-<HR>
-<INPUT TYPE=submit VALUE="Submit"> <INPUT TYPE=reset VALUE="Reset Form">
-<HR>
+<hr>
+<input TYPE=submit VALUE="Submit">
+<input TYPE=reset VALUE="Reset Form">
+<hr>
 </form>
-<!--#include file="include/bodyStop.html"-->
-</BODY>
-</HTML>
-<!--
-Warranty Disclaimer and Copyright Notice
-
- THE JACKSON LABORATORY MAKES NO REPRESENTATION ABOUT THE SUITABILITY OR 
- ACCURACY OF THIS SOFTWARE OR DATA FOR ANY PURPOSE, AND MAKES NO WARRANTIES, 
- EITHER EXPRESS OR IMPLIED, INCLUDING MERCHANTABILITY AND FITNESS FOR A 
- PARTICULAR PURPOSE OR THAT THE USE OF THIS SOFTWARE OR DATA WILL NOT 
- INFRINGE ANY THIRD PARTY PATENTS, COPYRIGHTS, TRADEMARKS, OR OTHER RIGHTS.  
- THE SOFTWARE AND DATA ARE PROVIDED "AS IS".
-
- This software and data are provided to enhance knowledge and encourage 
- progress in the scientific community and are to be used only for research 
- and educational purposes.  Any reproduction or use for commercial purpose 
- is prohibited without the prior express written permission of the Jackson 
- Laboratory.
-
-Copyright © 1996, 1999, 2002 by The Jackson Laboratory
-All Rights Reserved
--->
-  
+</td>
+</tr>
+</table>
+</body>
+</html>
+<!--Warranty Disclaimer and Copyright Notice
+THE JACKSON LABORATORY MAKES NO REPRESENTATION ABOUT THE SUITABILITY OR  ACCURACY OF THIS SOFTWARE OR DATA FOR ANY PURPOSE, AND MAKES NO WARRANTIES,  EITHER  EXPRESS OR IMPLIED, INCLUDING MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE OR  THAT THE USE OF THIS SOFTWARE OR DATA WILL NOT INFRINGE ANY THIRD PARTY  PATENTS, COPYRIGHTS, TRADEMARKS, OR OTHER RIGHTS. THE SOFTWARE AND DATA ARE PROVIDED "AS IS".
+This software and data are provided to enhance knowledge and  encourage  progress in the scientific community and are  to  be  used  only  for  research and educational purposes. Any reproduction or use for commercial purpose is prohibited  without the prior express written permission of the Jackson Laboratory. Copyright © 1996, 1999, 2002 by The Jackson Laboratory All Rights Reserved -->
