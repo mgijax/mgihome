@@ -1,73 +1,109 @@
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
-<HTML>
-<HEAD>
-  <TITLE>Basic Nomenclature Rules and Guidelines - Short Version</TITLE>
-  <LINK REV="made" HREF="mailto:">
-  <META NAME="generator" CONTENT="NoteTab Pro 4.85">
-  <META NAME="author" CONTENT="Diane Dahmen">
-  <META NAME="description" CONTENT="">
-  <META NAME="keywords" CONTENT="">
-</HEAD>
+<html>
+<head>
+<title>Basic Nomenclature Rules and Guidelines for Naming Genes and Genomic Segments</title>   
+</head>
+<CENTER>
+<IMG SRC="../images/mgi_big_banner.gif" ALT="Mouse Genome Informatics - The Jackson Laboratory">
+</CENTER>
 <BODY BGCOLOR="#ffffff">
-<!--#include file="include/banner.html"-->
 
-
-
-<h2>Basic Nomenclature Rules and Guidelines</h2>
-
-<p>When symbolizing and naming novel genes and genomic features, it is important that these symbols and names be unique identifiers. The MGD Nomenclature Committee (nomen@informatics.jax.org) provides advice and assistance in assigning new symbols and names. Below are some basic rules and guidelines to assist in the symbol and naming process. 
-<h3>Mouse symbols:</h3>
+<h2 align=center>Basic Nomenclature Rules and Guidelines for Naming Genes and Genomic Segments</h2>
+<p>When symbolizing and naming novel genes and genomic features, it is important that these symbols and
+names be unique identifiers. The MGD Nomenclature Committee provides advice and assistance in assigning new
+symbols and names. Please contact us at <A HREF="mailto:nomen@informatics.jax.org">nomen@informatics.jax.org</A>.
+Below are some basic rules and guidelines to assist in the symbol and naming process. </p>
+<h3> Mouse symbols:</h3>
 <ol>
-<li>Should be 3-5 characters; should not exceed 10 characters.
-<li>Should begin with an upper case letter, followed by all lower case letters, except for recessive mutations which should begin with a lower case letter.
-<li>Should not include tissue specificity and molecular weight designations.
-<li>Should be italicized in published articles.
-<li>Should be punctuated only to separate two adjacent numbers (e.g., Lamb1-2) or for related (e.g., Es10-rs1) sequences and pseudogenes 
-(e.g., Adh-ps1).
-<li>For family members: &nbsp;Use common stem symbol (e.g., <a href="genefamilies/claudin.shtml">Cldn#</a>)
-<li>For orthologous genes in other vertebrate species: &nbsp; Use the same symbol whenever possible in human, rat, and mouse.
-<li>For homologous genes in invertebrate or prokaryote species:
+ <li>Symbols are 3-5 characters, not to exceed 10 characters.</li>
+ <li>Symbols begin with uppercase letter followed by all lowercase letters, except for recessive mutations which
+     begin with lowercase letter.</li>
+ <li>Symbols should not include tissue specificity and molecular weight designations.</li>
+ <li>Symbols are italicized in published articles.</li>
+ <li>Use punctuation only to separate two adjacent numbers 
+(<i>e.g.,</i> <A HREF="<!--#include file='include/wi_url.html'-->searches/marker.cgi?10754"><i>Lamb1-2</i></a>) or for designating related 
+(<i>e.g.,</i> <A HREF="<!--#include file='include/wi_url.html'-->searches/marker.cgi?40900"><i>Es10-rs1</i></a>)
+     sequences and pseudogenes (<i>e.g.,</i> <A HREF="<!--#include file='include/wi_url.html'-->searches/marker.cgi?27574"><i>Adh5-ps1</i></a>)</li>
+ <li>Gene Family members: Use common stem (or root) symbol (<i>e.g.,</i> see <a href="genefamilies/claudin.shtml">Cldn# family</a></li>).
+ <li>Orthologous genes in other vertebrate species: &nbsp;Use the same symbol whenever possible in human, rat, and mouse.</li>
+ <li>For homologous genes in invertebrate or prokaryote species:</li>
   <ol type=a>
-  <li>If it is a true homolog, use the approved symbol for that species, but include the word "homolog" at the end of the name followed by the name of the species in parentheses; for example, Cdc20 for cell division cycle 20 homolog (S. cerevisiae).
-  <li>If there is more than one mouse homolog, assign the serial number after the word "homolog;" for example, Atoh1 and Atoh2 for atonal homolog 1 (Drosophila) and atonal homolog 2 (Drosophila), respectively.
-  <li>If the gene in question is not a true homolog, use the letter "l" to denote  "-like" designations; for example, Ash2l for ash2 (absent, small, or homeotic)-like (Drosophila).
-  </ol>
-<li>ESTs and BAC/YAC ends:  &nbsp;Use the assigned sequence accession identification numbers.
-<li>STSs: 
+    <li>If it is the only mouse homolog, use  the approved symbol for that species but include the word
+      “homolog” at the end of the name followed by the name of the  species in parentheses (<i>e.g.,</i> symbol: 
+<A HREF="<!--#include file='include/wi_url.html'-->searches/marker.cgi?46917"><i>Cdc20</i></a>; 
+       name: cell division cycle 20 homolog (S. cerevisiae)).</li>
+    <li>If there is more than one mouse homolog for the invertebrate gene, assign the serial number after the word &quot;homolog&quot;
+      (<i>e.g.,</i> symbols: <A HREF="<!--#include file='include/wi_url.html'-->searches/marker.cgi?24863"><i>Atoh1</i></a> and <A HREF="<!--#include file='include/wi_url.html'-->searches/marker.cgi?27458"><i>Atoh2</i></a>; names: atonal homolog 1 (Drosophila) and atonal homolog 2 (Drosophila) respectively.)</li>
+   </ol>
+<li>If the invert/procaryotic gene is similar to the mouse gene but is not determined to be a homolog, use the
+     letter &quot;l&quot; to denote &quot;-like&quot; designations (<i>e.g.,</i> symbol: 
+<A HREF="<!--#include file='include/wi_url.html'-->searches/marker.cgi?42226"><i>Ash2l</i></a>; name: ash2 (absent, small, or homeotic)-like (Drosophila).</li>
+<li>ESTs and BAC/YAC ends: Use the assigned sequence accession identification numbers.</li>
+ <li>STSs:
   <ol type=a>
-  <li>Use the convention D#Xxx%e, where: 
-<TABLE bgcolor="white" border=0 width=40% cellpadding=8> 
-
-     <tr><td width="6%">#</td> <td width="2%">=</td> <td width="92%">chromosome location</td></tr>
-     <tr><td>Xxx</td> <td>= </td><td>approved lab code</td></tr>
-     <tr><td>%</td>a <TD>=</TD> <TD>serial number in series</TD></TR>
-</table>
-  <LI>Obtain approved lab codes from ILAR (Institute for Laboratory Animal Research:
- <a href="http://www4.nas.edu/cls/ilarhome.nsf">http://www4.nas.edu/cls/ilarhome.nsf</a>
-   <li>Add the trailing "e" only when the DNA segment is expressed.
-  </ol>
-</ol>
+  <li>Use the convention D#Xxx%e, where:<br> <br>
+    <TABLE bgcolor="white" border=0 width=85% cellpadding=0>     
+    <tr><td width="2%"># <td width="2%">= <td width="96%">chromosome location</tr>
+    <tr><td>Xxx   <td>=   <td>approved ILAR lab code</tr>
+    <tr><td>%     <td>=   <td>serial number in series</tr>
+    </table><br>
+    </li>
+  <li>You can obtain approved lab codes from <a href="http://www4.nas.edu/cls/ilarhome.nsf">ILAR</a>
+(Institute for Laboratory Animal Research)</li>.
+  <li>Add a trailing &quot;e&quot; only when the DNA segment is expressed.</li>
+ </ol>
+</ul>
 <h3>Mouse names:</h3>
 <ol>
- <li>Should be brief and specific.
- <li>Should convey the character or function of the gene.
+ <li>Should be brief and specific.</li>
+ <li>Should convey the character or function of the gene.</li>
 </ol>
 
 <h3>Other information when publishing:</h3>
-<ul>
-<li>Chromosome designations:
-  <ol>
-  <li>Use upper case C when referring to a specific mouse chromosome (e.g., Chromosome 15).
-  <li>Do not use a period (.) after the abbreviation of a chromosome (e.g., do not write Chr 15 as Chr.15).
-  </ol>
-<li>Protein designations:
-  <ol>
-  <li>Use all upper case letters.
-  <li>Do not italicize.
-  </ol>
-</ul>
-<p><b>Note:</b> For more detail and additional special case rules, see the
-<a href="gene.shtml">Mouse Nomenclature Rules and Guidelines</a>.
 
-    
+<h4>Chromosome designations:</h4>
 
+<ol>
+<li>Use uppercase &quot;C&quot; when referring to a
+specific mouse chromosome (<i><i>e.g.,</i></i> Chromosome 15).</li>
+
+<li>Do not use period a period (&quot;.&quot;) after abbreviation of chromosome (<i><i>e.g.,</i></i> Chr 15 should not be written Chr.15.)</li>
+</ol>
+
+<h4>Protein designations:</h4>
+<ol>
+<li>Use all uppercase letters.</li>
+<li>Do not italicize.</li>
+</ol>
+
+<h4>Gene symbol to use:</h4>
+<p>To distinguish between mRna, genomic DNA, and cDNA, write the relevant prefix in parentheses; 
+<i><i>e.g.,</i></i> (mRna) <A HREF="<!--#include file='include/wi_url.html'-->searches/marker.cgi?12820"><i>Rbp1</i></a>.
+<h3>Note:</h3>
+<p>For more detail and additional special case rules, see <a href="table.shtml">Mouse Nomenclature Rules and Guidelines</a>.</p>
+
+<P>
+<HR>
+<!--#include file="include/footer.html"-->
+<P>
+<HR>
+</body>
+</html>
+<!--<IMG SRC="images/new.gif" ALT="new">
+Warranty Disclaimer and Copyright Notice
+
+ THE JACKSON LABORATORY MAKES NO REPRESENTATION ABOUT THE SUITABILITY OR 
+ ACCURACY OF THIS SOFTWARE OR DATA FOR ANY PURPOSE, AND MAKES NO WARRANTIES, 
+ EITHER EXPRESS OR IMPLIED, INCLUDING MERCHANTABILITY AND FITNESS FOR A 
+ PARTICULAR PURPOSE OR THAT THE USE OF THIS SOFTWARE OR DATA WILL NOT 
+ INFRINGE ANY THIRD PARTY PATENTS, COPYRIGHTS, TRADEMARKS, OR OTHER RIGHTS.  
+ THE SOFTWARE AND DATA ARE PROVIDED "AS IS".
+
+ This software and data are provided to enhance knowledge and encourage 
+ progress in the scientific community and are to be used only for research 
+ and educational purposes.  Any reproduction or use for commercial purpose 
+ is prohibited without the prior express written permission of the Jackson 
+ Laboratory.
+
+Copyright © 1996, 1999, 2000 by The Jackson Laboratory
+All Rights Reserved
+-->
