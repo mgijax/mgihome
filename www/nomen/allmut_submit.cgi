@@ -15,6 +15,7 @@ import types
 import os
 
 import config
+import table		# for unescape() function only
 import homelib
 import CGI
 import errorlib
@@ -143,7 +144,7 @@ class myCGI (CGI.CGI):
 		fd = os.popen('%s -t' % config.lookup('SENDMAIL'), 'w')
 		fd.write(mailheader % (parms['email'], submit_addr,
 			'Allele and Mutant Submission'))
-		fd.write(string.join (message, '\n'))
+		fd.write(table.unescape(string.join (message, '\n')))
 		fd.close()
 
 		print '<HTML><HEAD><TITLE>Request Sent</TITLE></HEAD>'
