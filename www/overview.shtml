@@ -1,6 +1,6 @@
 <HTML>
 <HEAD>
-<TITLE><!--#include file='include/mgiversion.html'--> - Mouse Genome Database Overview</title>
+<TITLE><!--#include file='include/mgiversion.html'--> Mouse Genome Database Overview</title>
 </head>
 <BODY BGCOLOR="#FFFFFF">
 <TABLE WIDTH="100%" BORDER=0 CELLPADDING=0 CELLSPACING=0>
@@ -43,7 +43,7 @@ The goal of the <A HREF="http://tumor.informatics.jax.org/FMPro?-db=TumorInstanc
               
 <h3><a name="aboutMGD"></a>About MGD</h3>
                                               
-<p>MGD includes information on mouse genetic <a href="other/glossary.shtml#marker">markers</A>, molecular segments
+<p>MGD includes information on mouse genetic <a href="other/glossary.shtml#marker">markers</A>, molecular clones
 (<a href="other/glossary.shtml#probe">probes</A>,
 <a href="other/glossary.shtml#primer">primers</A> and
 <a href="other/glossary.shtml#YAC">YACs</A>),
@@ -74,7 +74,7 @@ DNA <a href="other/glossary.shtml#marker">marker</a>,
 <a href="other/glossary.shtml#cytogenetic_marker">Cytogenetic marker</A> descriptions<BR>
 Mouse genetic <a href="other/glossary.shtml#phenotype">phenotypes</A>, genetic interrelationships, and <a href="other/glossary.shtml#polymorphism">polymorphic</A> loci <BR> 
 Mammalian <a href="other/glossary.shtml#orthology">orthology</A>
-data  <BR> Molecular probes and segments(<a href="other/glossary.shtml#probe">probes</A>,
+data  <BR> Molecular probes and clones(<a href="other/glossary.shtml#probe">probes</A>,
 <a href="other/glossary.shtml#clone">clones</A>,
 <a href="other/glossary.shtml#primer">primers</A> and
 <a href="other/glossary.shtml#YAC">YACs</A>)<BR>
@@ -88,8 +88,7 @@ References supporting  all  data  in MGD <BR>
 
 <P><b>Data Links to <a href="other/collab_and_acknow.shtml">External Databases</A></b>
 
-<P>MGD  provides links  to  relevant  information  in   external databases wherever possible.  Through markers, MGD links to GenBank, SWISS-PROT, EnsEMBL, InterPro, and EC. Through orthologies,  MGD links  to
-GDB, PigBase, SheepBase, BovMap and RATMAP. Through molecular probes and segments,  MGD links to GenBank, EMBL, and DDBJ. Through references, MGD links to PubMed in Medline. 
+<P>MGD  provides links  to  relevant  information  in   external databases wherever possible.  Through markers, MGD links to EC, DoTS, UniGene, ENSEMBL, TIGR, LocusLink, InterPro, and PDB. Through orthologies,  MGD links  to GDB, PigBase, SheepBase, BovMap and RATMAP. Through molecular probes and clones,  MGD links to GenBank, EMBL, and DDBJ. Through references, MGD links to PubMed in Medline. 
 
 <h4><A NAME="mkr">Genes and Markers</A></h4>
 MGD contains information on mouse genes, <A HREF="other/glossary.shtml#DNA_segment">DNA segments</A>,
@@ -114,49 +113,43 @@ MGD contains information on mouse genes, <A HREF="other/glossary.shtml#DNA_segme
 on alleles will be available and accessible in MGD as time goes on. Links to alleles are provided in gene detail records. In
 addition, there is an <A HREF="<!--#include file='include/wi_url.html'-->searches/allele_form.shtml">Alleles and Phenotypes Query Form</A> for  direct  queries against the allele data  set. (<I>See</I> <A HREF="<!--#include file='include/wi_url.html'-->userdocs/allele_help.shtml#detail">Phenotypic Alleles -- Query Results--Details</A> for the content of an allele record as displayed in query results.
 
-<h4><A  NAME="pro">Molecular Probes and Segments</h4></A>
+<h4><A  NAME="pro">Molecular Probes and Clones</h4></A>
  <P>MGD contains information on 
 <a href="other/glossary.shtml#probe">probes</A>,
 <a href="other/glossary.shtml#clone">clones</A>, 
 <a href="other/glossary.shtml#primer">primers</A>,
 <A  HREF="other/glossary.shtml#YAC">YACs</A>, and 
 <a href="other/glossary.shtml#STS">STSs</A>. 
-Information may include the origin of the probe/segment, sequence, 
+Information may include the origin of the probe/clone, sequence, 
 <a href="other/glossary.shtml#cloning_vector">vector</A> type, 
 <a href="other/glossary.shtml#hybridization">hybridizing</A> loci, 
 <a href="other/glossary.shtml#RFLP">RFLPs</A>, and references. (<EM>See</EM> the Probes Query Form 
-<A HREF="<!--#include file='include/wi_url.html'-->userdocs/probe_help.shtml#summary">Query Results -- Summary</A> and <A HREF="<!--#include file='include/wi_url.html'-->userdocs/probe_help.shtml#detail">Query Results -- Details</A> for more information about the content of a probe/segment record as it appears in the query results.)
+<A HREF="<!--#include file='include/wi_url.html'-->userdocs/probe_help.shtml#summary">Query Results -- Summary</A> and <A HREF="<!--#include file='include/wi_url.html'-->userdocs/probe_help.shtml#detail">Query Results -- Details</A> for more information about the content of a probe/clone record as it appears in the query results.)
 
-<P>In addition, information on <A NAME="rflp">genetic polymorphisms</A> is extracted from probe/segment records in MGD. The
+<P>In addition, information on <A NAME="rflp">genetic polymorphisms</A> is extracted from probe/clone records in MGD. The
 Polymorphisms Query Form enables you to search directly  for such information and display it. (See 
 <A HREF="<!--#include file='include/wi_url.html'-->userdocs/polymorphism_help.shtml#summary">Query Results -- Summary</a> and <A HREF="<!--#include file='include/wi_url.html'-->userdocs/polymorphism_help.shtml#detail">Query Results -- Details</A> for more information.)
 
 <h4><A NAME="hom">Mammalian Orthology</A></h4> 
-MGD contains <a href="other/glossary.shtml#orthology">orthology</A> information for mouse, human and 15 other mammalian species. Most of the information  for orthologies  is
-extracted from the published scientific literature. In general,  these  papers  explicitly report orthology relationships and MGD
-reflects that published information. (<EM>See</EM> 
+MGD contains <a href="other/glossary.shtml#orthology">orthology</A> information for mouse, human and 15 other mammalian organism. Most of the information for orthologies  is
+extracted from the published scientific literature. In general, these papers explicitly report orthology relationships and MGD reflects that published information. (<EM>See</EM> 
 <A HREF="<!--#include file='include/wi_url.html'-->userdocs/homology_criteria.shtml">MGD Mammalian Orthology Criteria</A> for the information used to establish orthology.)
 
-<P>An orthology record shows the <a href="other/glossary.shtml#gene_symbol">symbol</A>, species, <a
+<P>An orthology record shows the <a href="other/glossary.shtml#gene_symbol">symbol</A>, organism, <a
 href="other/glossary.shtml#chromosome">chromosome</A>,
 <a href="other/glossary.shtml#cM">cM</A> position,
 <a href="other/glossary.shtml#cytogenetic_band">cytogenetic band</A> and <a href="other/glossary.shtml#accession_ID">accession ID</A>
 for each gene in the set of orthologies. In addition, links to
 other mammalian databases are provided where possible. MGD orthology records may link to GDB, BovMap, PiGBASE, RATMAP, SheepBase, or ArkDB. 
 
-<P> Every orthology assertion is supported by one or more references.  The display of an orthology reference includes the J number of
-the reference, a short format citation, gene symbol and species. (<EM>See</EM> 
-<A HREF="<!--#include file='include/wi_url.html'-->userdocs/homology_help.shtml#detail">Query Results -- Details</A> on
+<P> Every orthology assertion is supported by one or more references.  The display of an orthology reference includes the J number of the reference, a short format citation, gene symbol, and organism. (<EM>See</EM> <A HREF="<!--#include file='include/wi_url.html'-->userdocs/homology_help.shtml#detail">Query Results -- Details</A> on
 the content of a orthology record as it appears in the query results.)
 
-<P>  Orthology information is presented in three other formats: Oxford Grid, comparative map and Orthology Map View. An Oxford Grid
-display presents an overview  of orthology between two species. Currently, this kind of comparison  is supported  for  the following
-species:  Mouse,  Human,  Cat,  Cattle,  Rat,  Pig,  Sheep. <P>  The comparative map display relies on the Linkage Map application to
-build a graphic display of a map of a mouse chromosome (or chromosomal region)  which includes orthologies from the comparison
-species. See, for example, the comparative map for a 2 cM region around the mouse gene <A HREF="<!--#include file='include/wi_url.html'-->searches/linkmap.cgi?midpoint=52.3&cmrange=2&format=Web+Map&source=MGD&dsegments=0&syntenics=0&chromosome=1&species=2">Acrg</A> showing human orthology.
+<P>Orthology information is presented in three other formats: Oxford Grid, comparative map and Orthology Map View. An Oxford Grid display presents an overview of orthology between two organisms. Currently, this kind of comparison  is supported for the following organisms:  Mouse,  Human, Cat, Cattle, Rat, Pig, Sheep. 
 
-<P> The Orthology Map View displays the mouse genome as  the  consensus genetic map, with either human or rat orthologs labeled by
-chromosome of origin and displayed next to  the  corresponding  segment  of  the  mouse  genome.  The Orthology Map View is accessible
+<P>The comparative map display relies on the Linkage Map application to build a graphic display of a map of a mouse chromosome (or chromosomal region) which includes orthologies from the comparison organisms. See, for example, the comparative map for a 2 cM region around the mouse gene \<A HREF="<!--#include file='include/wi_url.html'-->searches/linkmap.cgi?midpoint=52.3&cmrange=2&format=Web+Map&source=MGD&dsegments=0&syntenics=0&chromosome=1&species=2">Acrg</A> showing human orthology.
+
+<P> The Orthology Map View displays the mouse genome as the consensus genetic map, with either human or rat orthologs labeled by chromosome of origin and displayed next to the corresponding  segment of the mouse genome.  The Orthology Map View is accessible
 from the <a href="<!--#include file='include/wi_url.html'-->menus/homology_menu.shtml">Orthology Menu</A> page.
 
 <h4><A NAME="map">Mapping Data</A></h4>
