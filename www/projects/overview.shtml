@@ -60,16 +60,14 @@ through large scale electronic transfer. Such data include mouse physical  mappi
 <P>MGD contains the following kinds  of information:
 <P>
 <UL>
-Gene,
-DNA marker,
-QTL and
-Cytogenetic marker descriptions<BR>
+Gene, DNA marker, QTL and Cytogenetic marker descriptions<BR>
 Mouse genetic phenotypes, genetic interrelationships, and polymorphic loci <BR>
 Mammalian orthology data <br>
-Sequence data <BR> Molecular probes and clones(probes, clones, primers and YACs)<BR>
+Sequence data <BR> 
+Molecular probes and clones(probes, clones, primers and YACs)<BR>
 Genetic and physical mapping data<BR>
-Polymorphic loci  related  to  specified strains
-<BR> Information on inbred strains</A> (M. Festing's listing)<BR>
+Polymorphic loci  related  to  specified strains<BR> 
+Information on inbred strains (M. Festing's listing)<BR>
 References supporting  all  data  in MGD <BR>
 </UL>
 
@@ -108,20 +106,17 @@ Polymorphisms Query Form enables you to search directly  for such information an
 <A HREF="<!--#include file='include/wi_url.html'-->userdocs/polymorphism_help.shtml#summary">Summary</a> and <A HREF="<!--#include file='include/wi_url.html'-->userdocs/polymorphism_help.shtml#detail">Details</A> for more information.)
 
 <h4><A NAME="hom">Mammalian Orthology</A></h4>
-MGD contains orthology information for mouse, human and 15 other mammalian organisms. Most of the information for orthologies  is
+MGD contains orthology information for mouse, human and 15 other mammalian organisms. Most of the information for orthologies is
 extracted from the published scientific literature. In general, these papers explicitly report orthology relationships and MGD reflects that published information. (<EM>See</EM>
 <A HREF="<!--#include file='include/wi_url.html'-->userdocs/homology_criteria.shtml">MGD Mammalian Orthology Criteria</A> for the information used to establish orthology.)
 
-<P>An orthology record shows the symbol, organism, chromosome,
-cM position,
-cytogenetic band and accession ID
-for each gene in the set of orthologies. In addition, links to
-other mammalian databases are provided where possible. MGD orthology records may link to GDB, BovMap, PiGBASE, RATMAP, SheepBase, or ArkDB.
+<P>An orthology record shows the symbol, organism, chromosome, cM position, cytogenetic band, and accession ID for each gene in the set of orthologies. In addition, links to
+other mammalian databases are provided where possible. MGD orthology records may link to GDB, BovMap, PiGBASE, RATMAP, RGD, SheepBase, ArkDB.
 
 <P> Every orthology assertion is supported by one or more references.  The display of an orthology reference includes the J number of the reference, a short format citation, gene symbol, and organism. (<EM>See</EM> <A HREF="<!--#include file='include/wi_url.html'-->userdocs/homology_help.shtml#detail">Details</A> on
 the content of an orthology record as it appears in the query results.)
 
-<P>Orthology information is presented in three other formats: Oxford Grid, comparative map and Orthology Map View. An Oxford Grid display presents an overview of orthology between two organisms. Currently, this kind of comparison  is supported for the following organisms:  Mouse, Human, Cat, Cattle, Rat, Pig, Sheep.
+<P>Orthology information is presented in three other formats: Oxford Grid, comparative map and Orthology Map View. An Oxford Grid display presents an overview of orthology between two organisms. Currently, this kind of comparison is supported for the following organisms:  mouse, human, cat, cattle, rat, pig, sheep, dog.
 
 <P>The comparative map display relies on the Linkage Map application to build a graphic display of a map of a mouse chromosome (or chromosomal region) which includes orthologies from the comparison organisms. See, for example, the comparative map for a 2 cM region around the mouse gene
 <A HREF="<!--#include file='include/wi_url.html'-->searches/accession_report.cgi?id=MGI:87895">Chrng</A> showing human orthology.
