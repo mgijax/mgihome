@@ -523,7 +523,7 @@ def doOneStage( stagenum, description, outputFileName ):
 		'Stage %s</TITLE>\n' % stagenum )
 	fd.write( "</HEAD>" + '\n' )
 	fd.write( '<BODY BGCOLOR="#FFFFFF">\n' )
-	fd.write( header.header ('Mouse Anatomical Dictionary',
+	fd.write( header.header ('<B>Mouse Anatomical Dictionary</B>',
 		additional = 'Stage %s (%s)' % (stagenum, description) ) )
 	fd.write( "<PRE>" + '\n' )
 	nNodes = print_structure_tree(stree, fd, 0)
