@@ -24,30 +24,27 @@
 </TABLE>
 
 <p><A NAME="Query"></A>
-Genes in MGI are annotated using GO terms.  Several query forms, "Genes,
-and Markers," "Linkage Map," "Gene Expression Data," and "cDNA
-Clone" provide a "Gene Classifications" search field that enable you to enter
-a GO term or phrase for searching.  Once you submit the query, the system checks 
-the ontologies to be examined.  To improve and refine your
-searches, you should become familiar with the available terms in the
-ontologies (see the Molecular Function, Cellular Component, and Biological Process
-links in the left frame). 
+Genes in MGI are annotated using GO terms.  Several query forms, <B>Genes,
+and Markers, Linkage Map, Gene Expression Data, </B>and <B>cDNA
+Clone</B>, provide a <B>Gene Ontology Classifications (GO)</B> search field that enables you to enter a GO term or phrase for searching.  Once you submit the query, the system checks the ontologies to be examined.  To improve and refine your searches, you should become familiar with the available terms in the ontologies (see the <B>Molecular Function, Cellular Component,</b> and <B>Biological Process</B> links in the left frame). 
 
 <ul>
-<li>You can search by entering all or a portion of a single GO vocabulary entry. Often, GO entries are phrases containing several words. The default text operator is CONTAINS. If you enter a few characters of a GO term, the search will find any gene records having gene classifications that include the specified characters (and belong to the checked categories).<br><br>
+<li>You can search by entering all or a portion of a single GO vocabulary entry. Often, GO entries are phrases containing several words. The default text operator is CONTAINS. If you enter a few characters of a GO term, the search finds any gene records having gene classifications that include the specified characters (and belong to the checked categories).<br><br>
 
-<li>You can also use the logical operator "AND"  between GO terms within the Gene Classifications search field. A search of term1 AND term2 will return the set of markers that are annotated to <b>both</b> term1 and term2. For example, the search string "nucleus AND kinase" will return all the markers whose products are a kinase AND are found in the nucleus.<br><br>
+<li>You can also use the logical operator AND  between GO terms within the Gene Classifications search field. A search of term1 AND term2 returns the set of markers that are annotated to <b>both</b> term1 and term2. For example, the search string <I>nucleus AND kinase</I> returns all markers whose products are a kinase AND are found in the nucleus.<br><br>
 
-<li>You can browse the GO classifications, copy an entry, and paste it into the Gene Classifications field. <br><br>
-    <li>You can restrict your search to markers with attributes in only one or two of the three categories (the same term can  two or three GO categories).  <br><br>
+<li>You can browse the GO classifications, copy an entry, and paste it into the <B>Gene Ontology Classifications (GO)</B> field. <br><br>
+    <li>You can restrict your search to markers with attributes in only one or two of the three categories (the same term can occur in two or three GO categories).  <br><br>
 
-<li>Please note that the GO vocabularies are hierarchical. Consequently, a search returns gene
-records annotated not only to terms matching your query but also gene records annotated to more 
-detailed terms related to the query term (but not necessarily containing the text you entered). For
-example, if you enter: trypsin, you will get only:
-<blockquote><b>trypsin [GO:0004295] (59 genes, 59 annotations)</b></blockquote>
- But, if you type <b>
-serine-type endopeptidase</b>, the system will return <blockquote><b>serine-type endopeptidase [GO:0004252] (123 genes, 276 annotations)</b></blockquote> because the subterm <b>trypsin</b> is included in the results. 
+<li>Please note that the GO vocabularies are hierarchical. Consequently, a search returns gene records annotated not only to terms matching your query but also gene records annotated to more detailed terms related to the query term (but not necessarily containing the text you entered). For example, if you enter <I>trypsin</I>, you get only:
+<blockquote>
+<b>trypsin [GO:0004295] (59 genes, 59 annotations)</b>
+</blockquote>
+ But, if you enter <I>serine-type endopeptidase</I>, the system returns:
+<blockquote>
+<b>serine-type endopeptidase [GO:0004252] (123 genes, 276 annotations)</b>
+</blockquote> 
+because the subterm <b>trypsin</b> is included in the results. 
 
 </ul>
 

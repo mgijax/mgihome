@@ -32,67 +32,63 @@ This document provides links to external genomic sequence analysis servers and s
 <UL>
 <LI><A HREF="genome_analysis.shtml#servers">Comprehensive sequence analysis servers</A>
 <LI><A HREF="genome_analysis.shtml#pipelines">Sequence analysis pipeline software</A>
-<LI><A HREF="genome_analysis.shtml#viewers">Results visualization and curation tools</A>
+<LI><A HREF="genome_analysis.shtml#viewers">Analysis results visualization and curation tools</A>
 <LI><A HREF="genome_analysis.shtml#comparative">Large-scale comparative methods</A>
 <LI><A HREF="genome_analysis.shtml#programs">Genomic sequence analysis servers</A>
 </UL>
 
-<A NAME="servers"><H3>Comprehensive Sequence Analysis Servers</H3></A>
+<A NAME="servers"><H3>Comprehensive sequence analysis servers</H3></A>
 These are analysis servers that run multiple gene prediction and analysis programs with a given query sequence.
 <UL>
 <LI><A HREF="http://grail.lsd.ornl.gov/GP/">Genome Analysis Pipeline</A> (<A HREF="http://compbio.ornl.gov">ORNL</A>)
-- Predicts exons (GRAIL, GRAIL-EXP), gene-structures (GENSCAN), GRAIL feature tools: CpG islands, BAC end hits, PolyA, Trna, Simple Repeats, Complex Repeats, homology searches (BLAST).
+- Predicts exons (GRAIL, GRAIL-EXP), gene structures (GENSCAN), GRAIL feature tools: CpG islands, BAC end hits, polyA, Trna, Simple Repeats, Complex Repeats, homology searches (BLAST).
 <P>
-<LI><A HREF="http://genomic.sanger.ac.uk/gf/gf.html">CGG Nucleotide Sequence Analysis</A>  launcher
-(<a href="http://www.sanger.ac.uk">Sanger Institute</a>) - Predicts gene structure (FGENESH&#043;, BESTORF, FGENE, FEX, SPL), promoter and transctiption start sites (TSSG, TSSW), polyadenation site (POLYAH), and other features (CDSB, RNASPL, HBR).
+<LI><A HREF="http://www.softberry.com/berry.phtml?topic=index&group=programs&subgroup=gfind">Gene model construction, splice sites, protein-coding exons</A>  
+<A HREF="http://www.softberry.com/">(Softberry)</a> - Predicts gene structure (FGENESH&#043;, BESTORF, FGENE, FEX, SPL), promoter and transctiption start sites (TSSG, TSSW), polyadenylation site (POLYAH), and other features (RNASPL).
 <P>
-<LI><A HREF="http://gen100.imb-jena.de/rummage/index.html">RUMMAGE</A> (<A HREF="http://genome.imb-jena.de/">The Genome Sequencing Center</A> at the Institute of Molecular Biotechnology in Jena, Germany)- A High-Throughput Sequence Annotation Server.  The following functional and organizational elements have been addressed so far: Repetitive elements (RepeatMasker, SST, CENSOR and XNUN), promotors (ProScanII), exons (GRAIL, FEXHB, MZEF, Xpound and GENSCAN), gene-structures (GENSCAN, DPS and ExonSampler), 
-tRNA coding (tRNA), CpG islands (LCP and CPG), GC-profiling (LCP) and homology and motif searches against sequence data base 
+<LI><A HREF="http://gen100.imb-jena.de/rummage/index.html">RUMMAGE</A> (<A HREF="http://genome.imb-jena.de/">The Genome Sequencing Center</A> at the Institute of Molecular Biotechnology in Jena, Germany) - A High-Throughput Sequence Annotation Server.  The following functional and organizational elements have been addressed so far: repetitive elements (RepeatMasker, SST, CENSOR and XNUN), promotors (ProScanII), exons (GRAIL, FEXHB, MZEF, Xpound and GENSCAN), gene structures (GENSCAN, DPS and ExonSampler), 
+tRNA coding (tRNA), CpG islands (LCP and CPG), GC profiling (LCP) and homology and motif searches against sequence data base 
 (BLAST, and FASTA). (This site requires registration.)
 <P>
-<LI><A HREF="http://www.hgmp.mrc.ac.uk/NIX/">NIX</A> (<A HREF="http://www.hgmp.mrc.ac.uk">The UK Human Genome Mapping Project
-Resource Center</A>)- A high-throughput sequence annotation server.  For genomic sequences, the functional and organizational elements addressed include: Repetitive elements (RepeatMasker), exons (GRAIL, GeneFinder, GeneMark, FEX, HEXON, FGENE), tRNA coding (tRNAscan), and sequence similarity (BLAST versus DNA and protein sequence databases).
+<LI><A HREF="http://www.hgmp.mrc.ac.uk/NIX/">NIX</A> (<A HREF="http://www.hgmp.mrc.ac.uk">MRC Rosalind Franklin Centre for Genomics Research (RFCGR)</A>)  - A high-throughput sequence annotation server.  For genomic sequences, the functional and organizational elements addressed include: repetitive elements (RepeatMasker), exons (GRAIL, GeneFinder, GeneMark, FEX, HEXON, FGENE), tRNA coding (tRNAscan), and sequence similarity (BLAST versus DNA and protein sequence databases).
 
-<P>For transcribed sequences, the functional and organizational elements addressed so far include: Repetitive elements    RepeatMasker), exons (GRAIL), and sequence similarity (BLAST versus DNA sequence databases, and TBLASTX versus protein sequence
+<P>For transcribed sequences, the functional and organizational elements addressed so far include: repetitive elements  (RepeatMasker), exons (GRAIL), and sequence similarity (BLAST versus DNA sequence databases, and TBLASTX versus protein sequence
 databases). (This site requires registration.)
 </UL>
 
-<P><A NAME="pipelines"><H3>Sequence Analysis Pipeline Software</H3></A>
+<P><A NAME="pipelines"><H3>Sequence analysis pipeline software</H3></A>
 These are pipeline software applications written in Perl that you can download and install on your UNIX system.
 <UL>
 <LI>CGAT (<A HREF="http://worm-chip.stanford.edu">Stanford</A> or <A HREF="http://inertia.bs.jhmi.edu/CGAT/CGAT.html">Johns Hopkins</A>)
- - The Comprehensive Genome Analysis Tools developed in Roger Reeves' lab at Johns Hopkins by Jim Lund who is now at Stanford.  
-Runs RepeatMasker, NCBI BLASTN (vs. nr, dbest, htgs, gss), MZEF, GRAIL, GENSCAN, tRNAscan-SE,
-GRAIL CpG islands, PolyA, polII promoters.  Maps all results onto sequence, and generates
-GIF-formatted graphical display of results.
+ - The Comprehensive Genome Analysis Tools developed in Roger Reeves' lab at Johns Hopkins by Jim Lund, now at Stanford. Runs RepeatMasker, NCBI BLASTN (vs. nr, dbest, htgs, gss), MZEF, GRAIL, GENSCAN, tRNAscan-SE, GRAIL CpG islands, polyA, polII promoters.  Maps all results onto sequence and generates GIF-formatted graphical display of results.
 <P>
 <LI><A HREF="http://www-sequence.stanford.edu/~curtis/adapt.html">Adapt</A> 
 (<A HREF="http://www-sequence.stanford.edu">Stanford DNA Sequence & Techology Center</A>) - 
-Developed by Curtis Palm.  Runs
-GRAIL, FEXA, GENSCAN, MZEF, and AAT (EST and protein similarity).
+Developed by Curtis Palm.  Runs GRAIL, FEXA, GENSCAN, MZEF, and AAT (EST and protein similarity).
 </UL>
 
-<P><A NAME="viewers"><H3>Analysis Results Visualization and Curation Tools</H3></A>
-These are software applications that display annotated features and analysis results in context with the sequence.
+<P><A NAME="viewers"><H3>Analysis results visualization and curation tools</H3></A>
+<P>These are software applications that display annotated features and analysis results in context with the sequence.
+</P>
 <UL>
-<li>Apollo (<A HREF="http://www.fruitfly.org/annot/apollo">Berkeley Drosophila Genome Project</A> or <A HREF="http://www.ensembl.org/Docs/wiki/html/EnsemblDocs/ApolloProject.html">Ensembl</A>)- Java-based tool developed by BDGP and Ensembl.
+<li>Apollo (<A HREF="http://www.fruitfly.org/annot/apollo">Berkeley Drosophila Genome Project</A> or <A HREF="http://www.ensembl.org/Docs/wiki/html/EnsemblDocs/ApolloProject.html">Ensembl</A>) - Java-based tool developed by BDGP and Ensembl.
 <P>
 <LI><A HREF="http://www-sequence.stanford.edu/~curtis/adapt.html">WAV</A> (<A HREF="http://www-sequence.stanford.edu">Stanford DNA Sequence & Techology Center</A>) - Web Annotation Viewer developed by Curtis Palm as part of the Adapt system.
 <P>
-<LI>CGAT (<A HREF="http://worm-chip.stanford.edu">Stanford</A> or <A HREF="http://inertia.bs.jhmi.edu/CGAT/CGAT.html">Johns Hopkins</A>)- Perl-based software that draws GIF images of results.  Developed in Roger Reeves' lab at Johns Hopkins by Jim Lund who is now at Stanford.
+<LI>CGAT (<A HREF="http://worm-chip.stanford.edu">Stanford</A> or <A HREF="http://inertia.bs.jhmi.edu/CGAT/CGAT.html">Johns Hopkins</A>) - Perl-based software that draws GIF images of results.  Developed in Roger Reeves' lab at Johns Hopkins by Jim Lund, now at Stanford.
 </UL>
 
-<P><A NAME="comparative"><H3>Large-Scale Comparative Methods</H3></A>
+<P><A NAME="comparative"><H3>Large-scale comparative methods</H3></A>
 Using genomic sequences for homologous loci in two organisms, these methods can elucidate genomic features based on the assumption that they are conserved between the two organisms.
-<UL>http://bio.cse.psu.edu/pipmaker
-<LI><A HREF="http://bio.cse.psu.edu/pipmaker">PipMaker</A> (<A HREF="http://bio.cse.psu.edu">Penn State</A>) - Pairwise alignments of genomic sequences displayed as PIPs (Percent Identity Plots).  The software is described in  R.C. Hardison, J. Oeltjen, and W. Miller. Long Human-Mouse Sequence Alignments Reveal Novel Regulatory Elements:  A Reason to Sequence the Mouse Genome.  <EM>Genome Research</EM>, 7:10 (1997), 959-966.
+<UL>
+<LI><A HREF="http://bio.cse.psu.edu/pipmaker">PipMaker</A> (<A HREF="http://bio.cse.psu.edu">Penn State</A>) - Pairwise alignments of genomic sequences displayed as PIPs (Percent Identity Plots).  The software is described in  R.C. Hardison, J. Oeltjen, and W. Miller. Long human-mouse sequence alignments reveal novel regulatory elements:  a reason to sequence the mouse genome.  <EM>Genome Research</EM>, 7:10 (1997), 959-966.
 <P>
 <LI><A HREF="http://www.tigr.org/software/mummer">MUMmer</A> (<A HREF="http://www.tigr.org/softlab">TIGR</A>) - A system for aligning whole genome sequences. Using an efficient data structure called a suffix tree, the system is able rapidly to align sequences containing millions of nucleotides. The software is described in A.L. Delcher, S. Kasif, R.D. Fleischmann, J. Peterson, O. White, and S.L. Salzberg. Alignment of whole genomes. <EM>Nucleic Acids Research</EM>, 27:11 (1999), 2369-2376. 
 </UL>
 
 <P>
 
-<A NAME="programs"><H3>Genomic Sequence Analysis Servers</H3></A>
+<A NAME="programs"><H3>Genomic sequence analysis servers</H3></A>
 <UL>
 <LI><B>Gene Prediction</B>
 <UL>
@@ -100,10 +96,11 @@ Using genomic sequences for homologous loci in two organisms, these methods can 
 <UL>
 <LI><A HREF="http://genes.mit.edu/GENSCAN.html">GENSCAN</A> (<A HREF="http://www.mit.edu">MIT</A>)
 <LI><A HREF="http://compbio.ornl.gov/Grail-1.3">GRAIL</A> (<A HREF="http://compbio.ornl.gov">ORNL</A>)
-<LI><A HREF="http://genomic.sanger.ac.uk/gf/gf.html">FGENESH</A> (<A HREF="http://www.sanger.ac.uk">Sanger Institute)</A>
-<LI><A HREF="http://www.fruitfly.org/seq_tools/genie.html">Genie</A> (<A HREF="http://www.cse.ucsc.edu/research/compbio">UCSC</A> and 
-<A HREF="http://www-hgc.lbl.gov/">LBNL</A>)
-<LI><A HREF="http://argon.cshl.org/genefinder">MZEF</A> (<A HREF="http://www.cshl.org">CSHL</A>)
+<LI><A HREF="http://www.softberry.com/berry.phtml?topic=fgenesh&group=programs&subgroup=gfind">FGENESH</A> <A HREF="http://www.softberry.com">(Softberry)</a>
+<LI><A HREF="http://www.fruitfly.org/seq_tools/genie.html">Genie</A> (<A HREF="
+http://www.soe.ucsc.edu/~dkulp/cgi-bin/genie">UCSC</A> and 
+<A HREF="http://www.jgi.doe.gov/">DOE Joint Genome Institute</A>)
+<LI><A HREF="http://industry.ebi.ac.uk/%7Ethanaraj/MZEF-SPC.html">MZEF</A> (<A HREF="http://rulai.cshl.edu/software/index1.htm">CSHL</A>)
 </UL>
 <LI>Comparative Methods
 <UL>
