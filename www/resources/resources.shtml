@@ -9,95 +9,65 @@
   <TD WIDTH="100%" BGCOLOR="#D0E0F0">
    <TABLE WIDTH="100%" BORDER=0 CELLPADDING=0 CELLSPACING=0>
     <TR>
-     <TD WIDTH="20%" VALIGN="center" ALIGN="left">&nbsp;</TD>
+     <TD WIDTH="20%" VALIGN="center" ALIGN="left">&nbsp;:</TD>
      <TD WIDTH="60%" ALIGN="center" VALIGN="center">
       <FONT COLOR="#000000" SIZE=5 FACE="Arial,Helvetica">
        Additional Resources
       </FONT>
      </TD>
-     <TD WIDTH="20%" VALIGN="center" ALIGN="center">&nbsp;</TD>
+     <TD WIDTH="20%" VALIGN="center" ALIGN="center">&nbsp;:</TD>
     </TR>
    </TABLE>
   </TD>
  </TR>
 </TABLE>
- 
-<!--<dl>
-<dt><b>Contents</b>
-<dd><A HREF="#downloads"><B>Downloads</B></a><br>
-<dd><A HREF="#nomenclature"><B>Nomenclature</B></a><br>
-<dd><A HREF="#genefamily"><B>Gene Family Information</B></a><br>
-<dd><A HREF="#GEN"><B>Gene Expression Notebook</B></a><br>
-<dd><A HREF="#community"><B>Community E-mail Lists</B></a><br>
-<dd><A HREF="#mousegenetics"><B>Lee Silver's <i>Mouse Genetics</i></B></a><br>
-<dd><A HREF="#glossary"><B>MGI Glossary</B></a><br>
-<dd><A HREF="#contributed"><B>Contributed Data Sets</B></a><br>
-<dd><A HREF="#swresources"><B>Software Developer Resources</B></a><br>
-<dd><A HREF="#mirrorsites"><B>Mirror Sites</B></a><br>
-<dd><A HREF="#commlinks"><B>Community Links</B></a><br>
-<dd><A HREF="#mousefacts"><B>Mouse Facts</B></a><br>
-<dd><A HREF="#radiation"><B>Radiation Hybrid Mapping Resources</B></a><br>
-</dl>
-<hr>-->
-<dl>
-<dt><A name="downloads"></a><b>Downloads</B><BR>
-<dd><b><A HREF="<!--#include file='include/ftp_url.html'-->pub/reports/index.html">Database Reports</A> (MGI Data and Statistical Reports)<br>
 
-<dd><A HREF="<!--#include file='include/ftp_url.html'-->">FTP Server</A></b><br><br>
+<dl> <font size=-1 face=Arial, Helvetica>
+<dt></a>Downloads 
+<dd><A HREF="<!--#include file='include/ftp_url.html'-->pub/reports/index.html">Database Reports</A>:&nbsp;<i>MGI Data and Statistical Reports</i>
+<dd><A HREF="<!--#include file='include/ftp_url.html'-->">FTP Server</A>
+<br><br>
+<dt>Nomenclature
+<dd><A HREF="../nomen/index.shtml">Mouse Gene Nomenclature</a>:&nbsp;<EM>MGI is the official site for mouse gene nomenclature and maintains official mouse strain symbols.</EM><br>
+<dd><A HREF="../nomen/allmut_form.shtml">Mutant Submissions Form</A>:&nbsp;<EM>Guidelines for new heritable phenotypic alleles</EM><br>
+<dd><A HREF="../nomen/strains.shtml">Strain Nomenclature Guidelines</a>:&nbsp;
+<i>Rules applicable to both mouse and rat strains</i><br><br>
 
-<dt><a name="nomenclature"></a><B>Nomenclature</B>
+<dt><A HREF="../nomen/genefamilies/index.shtml">Gene Family Information</A>:&nbsp;<EM>Curated gene families with members from mouse, human, and rat</EM><br><br>
 
-<dd><A HREF="../nomen/index.shtml"><b>Mouse Gene Nomenclature</b></a> (Mouse Nomenclature Home Page)<BR><EM>MGI is the official site for mouse gene nomenclature and maintains official mouse strain symbols.</EM><br>
-<dd><A HREF="../nomen/allmut_form.shtml"><b>Mouse Mutant Nomenclature</b></a> (Mutant Submissions Form)</A><BR>
-<EM>Guidelines for new heritable phenotypic alleles</EM><br><br>
+<dt><A HREF="../GXD/GEN/">Gene Expression Notebook</a>:&nbsp;<em>A tool to organize and store your expression data in your laboratory and submit selected data to the Gene Expression Database</em><br><br>
 
-<dt><A name="genefamily"></a><A HREF="../nomen/genefamilies/index.shtml"><B>Gene Family Information</B></A><BR><EM>Curated gene families with members from mouse, human, and rat</EM><br><br>
+<dt><a href="../lists/lists.shtml">Community E-mail Lists</a>:&nbsp;<EM>Searchable research community E-mail lists moderated by User Support</EM><br><br>
 
-<dt><A name="GEN"></a><A HREF="../GXD/GEN/"><B>Gene Expression Notebook</b></a><br>
-<i>A tool to organize and store your expression data in your laboratory and submit selected data to the Gene Expression Database</i><br><br>
+<dt><a href="/silver/">Lee Silver's <I>Mouse Genetics</I></A>:&nbsp;<EM>Electronic version of Silver's out-of-print book</EM><br><br>
 
-<dt><a name="community"></a><a href="../lists/lists.shtml"><b>Community E-mail Lists</b></a> (MGI E-mail List Service)<br>
-<EM>Searchable research community E-mail lists moderated by User Support</EM><br><br>
+<dt><a href="../other/glossary.shtml">MGI Glossary</A>:&nbsp;<EM>Commonly used terms in mouse genetics</EM><br><br>
 
-<dt><a name="mousegenetics"></a><a href="/silver/"><b>Lee Silver's <I>Mouse Genetics</I></b></A><br>
-<EM>Electronic version of Silver's out-of-print book</EM><br><br>
+<dt></a><A HREF="<!--#include file='include/ftp_url.html'-->pub/datasets/index.html">Contributed Data Sets</A>:&nbsp;<EM>Data contributed to MGI but not directly integrated into MGI</em>
+<dt><A HREF="../submissions/submissions_menu.shtml">Data and Nomenclature Submissions</A>:&nbsp;<em>How to contribute your data</EM> <br><br>
 
-<dt><a name="glossary"></a><a href="../other/glossary.shtml"><b>MGI Glossary</b></A><br>
-<EM>Commonly used terms in mouse genetics</EM><br><br>
+<dt><A HREF="<!--#include file='include/wi_url.html'-->userdocs/developers_tools.shtml">Software Developer Resources</A>:&nbsp; 
+<em>How to create links to MGI and the Schema Browser</em><br><br>
 
-<dt><A name="contributed"></a><A HREF="<!--#include file='include/ftp_url.html'-->pub/datasets/index.html"><B>  Contributed Data Sets</B></A> (Mouse Genome Informatics: Other Contributed Data Sets)<BR>
-<EM>Data contributed to MGI that are not directly integrated into MGI</EM>
-<BR>
-<EM><A HREF="../submissions/submissions_menu.shtml">How to contribute</A> your data</EM> (Data and Nomenclature Submissions)<br><br>
+<dt><A HREF="../mirrors/mirrors.shtml">MGI Mirror Sites</A>:&nbsp; <EM>Sites in Australia, Japan, The Netherlands, and Taiwan mirroring MGI</EM><br><br>
 
-<dt><B><a name="swresources"></a><A HREF="<!--#include file='include/wi_url.html'-->userdocs/developers_tools.shtml">Software Developer Resources</A></B> (Tools for Developers):
-<em><font=size=-1>How to create links to MGI, Schema Browser...</em></font><br><br>
+<dt></a>Community Links
+<dd><A HREF="../other/mouse_facts4.shtml">Useful Links</A>:&nbsp;<em>Mouse-related   resources, locus symbols, gene families; mammals and model organisms,...</em><br>
+<A HREF="http://www.nih.gov/science/models/mouse/">Trans-NIH Mouse Initiative</A><br>
+<A HREF="../other/phenoallele_commun_resource.shtml">Phenotypes and Mutants Community Resources</A><br>
+ <A HREF="../other/mouse_facts1.shtml#MolecRes">Sources for clones (Molecular Resources)</A><br> 
+<A HREF="http://www.ncbi.nlm.nih.gov/genome/seq/MmBlast.html">BLAST whole genome mouse assemblies at NCBI (Blast the mouse genome)</A><br><br>
 
-<dt><B><A name="mirrorsites"></a><A HREF="../mirrors/mirrors.shtml">MGI Mirror Sites</A></B><BR>
-<EM>Sites in Australia, Japan, The Netherlands, and Taiwan mirror MGI.</EM><br><br>
+<dt><a href="../other/mouse_facts1.shtml">Mouse Facts</A>:&nbsp;<EM>Physiology, genome size estimates, codon usage, clone resources, radiation hybrid panels, ...</em><BR><br>
 
-<dt><B><A name="commlinks"></a>Community Links</B><BR>
-<dd><A HREF="../other/mouse_facts4.shtml">Useful Links</A><BR>
-<dd><A HREF="http://www.nih.gov/science/models/mouse/">Trans-NIH Mouse Initiative</A>
-<dd><A HREF="../other/phenoallele_commun_resource.shtml">Phenotypes and Mutants Community Resources</A><BR>
-<dd><A HREF="../other/mouse_facts1.shtml#MolecRes">Sources for clones (Molecular Resources)</A><BR>
-<dd><A HREF="http://www.ncbi.nlm.nih.gov/genome/seq/MmBlast.html">BLAST whole genome mouse assemblies at NCBI (Blast the mouse genome)</A><br><br>
-
-<dt><A name="mousefacts"></a>
-<a href="../other/mouse_facts1.shtml"><b>Mouse Facts</A></B><BR>
-<EM>Information about: mouse physiology, genome size estimates, codon usage, clone resources, radiation hybrid panels...</em><BR><br>
-
-<dt><B><A name="radiation"></a>Radiation Hybrid Mapping Resources</B><br>
+<dt>Radiation Hybrid Mapping Resources
 <dd><A HREF="http://www.jax.org/resources/documents/cmdata/rhmap/">The Jackson
-	Laboratory T31 Mouse Radiation Hybrid Database</A><BR>
-<dd><A HREF="http://corba.ebi.ac.uk/RHdb/">European Bioinformatics Institute
-	Radiation Hybrid Database</A><BR>
-<dd><A HREF="http://www-genome.wi.mit.edu/mouse_rh/index.html">Whitehead Mouse
-	RH Database at MIT</A><BR>
-<dd><A HREF="http://www.mgc.har.mrc.ac.uk/physical/est_mapping/est.html">MRC
-	Mouse Genome Centre at Mammalian Genetics Unit, Harwell UK</A><BR>
-<dd><A HREF="http://www.genoscope.cns.fr/externe/English/Projets/Projet_ZZZ/rhmap.html">CNS France (Mouse Radiation Hybrid Mapping Project)</A>
-</dl>
+	Laboratory T31 Mouse Radiation Hybrid Database</A>
+<br> <A HREF="http://corba.ebi.ac.uk/RHdb/">European Bioinformatics Institute
+	Radiation Hybrid Database</A>
+<br><A HREF="http://www-genome.wi.mit.edu/mouse_rh/index.html">Whitehead Mouse RH Database at MIT</A>
+<br> <A HREF="http://www.mgc.har.mrc.ac.uk/physical/est_mapping/est.html">MRC Mouse Genome Centre at Mammalian Genetics Unit, Harwell UK</A>, <A HREF="http://www.genoscope.cns.fr/externe/English/Projets/Projet_ZZZ/rhmap.html">CNS France (Mouse Radiation Hybrid Mapping Project)</A>
+</dl></font>
 
 
 <HR>
