@@ -1,0 +1,45 @@
+h1,h2,h3,h4,h5
+{
+font-family: helvetica, arial, 'sans serif'; 
+}
+h1 {
+font-size:2.5em;
+}
+h2 {
+font-size:1.4em;
+}
+h3 {
+font-size:1.3em;
+}
+h4 {
+font-size:1.2em;
+}
+p,table,li
+{
+font-family: Times New Roman, Times, Serif; 
+margin-left: 10pt;
+}
+ul
+{
+list-style: disc; 
+}
+ol
+{
+list-style: decimal; 
+}
+p,li,th,td
+{
+font-size: 85%;
+}
+body
+{
+background-color: #ffffff;
+}
+h1,h2,h3,hr 
+{
+color:black; 
+}
+a:link    {color:mediumblue}
+a:visited {color:purple}
+a:active  {color:mediumblue}
+a:hover   {color:red}
