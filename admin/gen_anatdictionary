@@ -1,0 +1,623 @@
+#!./python
+#
+# gen_anatdictionary
+#
+# Description:
+#
+#	Generates html pages containing printouts of the anatomical dictionary.
+#	Generates one output file per stage (stage1.shtml, stage2.shtml, ...)
+#	and an index file (index.shtml). The files are written to a
+#	subdirectory of the MGI Home product.
+#
+#	Each stage output file is a hierarchically indented presentation of
+#	the tree.  Each line prints the name of one node, with any aliases
+#	printed in parentheses.  Each line has a name anchor <A NAME="...">,
+#	which the name being the _Structure_key of the node; these anchors
+#	are used for linking from a specific structure, e.g., in an assay
+#	detail.
+#
+#	Here's an example of how the tree would appear to the user:
+#
+#		ANATOMICAL DICTIONARY - Stage 4
+#
+#		embryo
+#		|   compacted morula
+#		|   inner cell mass  (yolk, gooey stuff)
+#		extraembryonic component
+#		|   cavities and their linings
+#		|   |   blastocoelic cavity
+#		|   second polar body
+#		|   trophectoderm
+#		|   |   mural trophectoderm
+#		|   |   polar trophectoderm
+#		|   zona pellucida
+#      
+#
+# Usage: gen_anatdictionary
+#
+# Assumes: umask is set by caller.  configuration parameters are correct.
+#	this script is run in the mgihome/admin/ directory and that it writes
+#	to the mgihome/www/GXD/AD/ directory.
+#
+# Version  SE
+# ------------
+# 1.00 :   jer - I stole the original code from Geoff and hacked it horribly.
+# 1.01 :   jer - Changed code to deal with existence of "Stage nodes"
+#		 in the database (5/25/98)
+# 1.02 :   jsb - Updated to work in MGI Home, rather than in the WI.
+
+import sys		# standard Python libraries
+import os
+import string
+ 
+if '.' not in sys.path:
+	sys.path.insert(0, '.')
+
+import config 		# MGI Python libraries
+import homelib
+ 
+## Anatomical Dictionary utilities/classes
+## globals 
+
+# a list of all the stage records from GXD_TheilerStage
+stages = []
+
+# a dictionary of lists of structures, each list keyed by parent key
+structures = {} 
+
+###########################################################################
+# The full path to the root of the MGI Web document hierarchy. 
+# Change this if MGI is installed somewhere else.
+#
+# (weborg) maintainer note: These variable names are not appropriate 
+# anymore, but we are retaining them and just changing the paths for the time 
+# being.
+
+DOC_ROOT = "../www/GXD"			# mgihome/www/GXD/
+
+# The URL to the GXD section of MGI Home
+SERVER_DOC_ROOT = homelib.makepath (config.lookup ('MGIHOME_URL'), 'GXD')
+
+# The name of the subdirectory under DOC_ROOT where the dictionary files go.
+DICTIONARY_SUBDIR = 'AD'
+
+###############################################
+# Define missing stages. Edit this as we get more stages from Edinburgh.
+missingStages = [23,24,25,26,27]
+
+###############################################
+# Define a global variable for the index file header
+
+INDEX_HEADER = '''
+<HTML><HEAD><TITLE>MGI - Mouse Anatomical Dictionary
+</TITLE></HEAD><BODY BGCOLOR="#FFFFFF">
+ 
+<P>
+
+<CENTER>
+<IMG SRC="%simages/shared/jax_edinburgh_banner.gif" >
+<BR>
+<SMALL>
+<A HREF="%s">MGI Home Page</A>
+&nbsp;&nbsp;&nbsp;&nbsp;<A HREF="http://genex.hgu.mrc.ac.uk">Mouse Atlas Home Page</A>
+</SMALL>
+</CENTER>
+<BR>
+<BIG><B>The Mouse Anatomical Dictionary</B></BIG>
+<p>
+Stages 1 through 26 (embryonic development) of the 
+<A HREF="http://genex.hgu.mrc.ac.uk/Databases/Anatomy">Standard Anatomical 
+Nomenclature Database</A> 
+are being developed at the
+<A HREF="http://www.ana.ed.ac.uk">Department
+of Anatomy</A>, University of Edinburgh, Scotland and the
+<A HREF="http://www.hgu.mrc.ac.uk">MRC Human Genetics Unit</A>, Edinburgh.
+Copyright 1998 University of Edinburgh (UK) and MRC (UK). Questions and comments
+should be sent to <A HREF="mailto:jblb@holyrood.ed.ac.uk">Jonathan Bard</A>.
+Supported by the MRC, the BBSRC, and by the European Science Foundation.
+<p>
+Stages 27 and 28 (newborn and postnatal mouse) are being developed
+by the <A HREF="%s/GXD/gxdgen.shtml">Gene Expression Database Project</A> at 
+<A HREF="http://www.jax.org">The Jackson Laboratory</A>. 
+Stage 28 is currently represented in abridged form; comprehensive 
+versions of stages 27 and 28 are being developed and will be made available later.
+Copyright 1998 The Jackson Laboratory. Questions and comments should be sent to 
+<A HREF="%s/support/tjl_inbox.shtml">User Support</A>.
+Supported by NIH grants HD08435 and HD33745.
+<p>
+<UL>
+''' % (config.lookup('WI_URL'), config.lookup('MGIHOME_URL'), \
+	config.lookup('MGIHOME_URL'), config.lookup('MGIHOME_URL'))
+
+## Class definitions
+
+class Structure:
+	'''
+	# A building block of stage trees
+	'''
+	extent = {}	 # a mapping from structure keys to structures
+
+	def __init__(self,name,stgn,depth):
+		'''
+		# requires:
+		#    name: Name of this structure (string).
+		#    stgn: Stage number (integer). 
+		#    depth: Depth of this node in the hierarchy (integer). Depth 0
+		#           is the depth of a Stage node. 
+		#
+		# effects: constructor
+		# modifies: all instance variables. 
+		# returns: nothing 
+		# exceptions: none
+		'''
+		self.name = name 
+		self.stagenum = stgn
+		self.depth = depth
+		self.parent = None
+		self.edinburghKey = None 
+		self.mgiKey = None
+		self.aliases = []
+		self.children = []
+		self.printStop = 0
+		self.stagenode = 0
+
+
+
+	def setName(self, n):
+		self.name = n
+
+	def getName(self):
+		'''
+		# requires: nothing
+		# effects: returns the name of self. 
+		# modifies: nothing
+		# returns: self.name
+		# exceptions: none
+		'''
+		return self.name
+
+
+	def getStageNum(self):
+		'''
+		# requires: nothing
+		# effects: returns stage number of self.
+		# modifies: nothing
+		# returns: stage number of self (integer)
+		# exceptions: none
+		'''
+		return self.stagenum
+
+
+	def setMgiKey(self,key):
+		'''
+		# requires: 
+		#    key: MGI key assigned to this Structure. 
+		# effects: sets the MGI key for self.
+		#	adds mapping to Structure.extent
+		# modifies: self.mgiKey
+		# returns: nothing
+		# exceptions: none
+		'''
+		if Structure.extent.has_key( self.mgiKey ):
+			del Structure.extent[ self.mgiKey ]
+		self.mgiKey = key 
+		Structure.extent[ self.mgiKey ] = self
+
+
+	def getMgiKey(self):
+		'''
+		# requires: nothing
+		# effects: returns the MGI key for self
+		# modifies: nothing
+		# returns: MGI key for self (integer)
+		# exceptions: none 
+		'''
+		return self.mgiKey
+
+
+	def addAlias(self,alias):
+		'''
+		# requires: 
+		#   alias: a string
+		# effects: add argument as an alias name for the node 
+		# modifies: self.aliases
+		# returns: nothing
+		# exceptions: none
+		'''
+		self.aliases.append(alias)
+
+	def getAliases(self):
+		'''
+		# requires: nothing
+		# effects: returns a list of strings that are aliases for self. 
+		# modifies: nothing
+		# returns: self.aliases
+		# exceptions: none
+		'''
+		return self.aliases
+
+
+	def addChild(self,child):
+		'''
+		# requires: 
+		#   child: A Structure object.
+		# effects: Adds 'child' as a child node of self and sets child's
+		#          parent to be self. 
+		# modifies: self.children
+		# returns: nothing 
+		# exceptions: none
+		'''
+		child.setParent(self)
+		self.children.append(child)
+
+
+	def getChildren(self):	
+		'''
+		# requires: nothing
+		# effects: returns a list of children for self
+		# modifies: nothing
+		# returns: a list of Structures
+		# exceptions: none
+		'''
+		return self.children
+
+
+	def setParent(self,parent):
+		'''
+		# requires: 
+		#   parent: Structure object.
+		# effects: sets parent structure for self
+		# modifies: self.parent
+		# returns: nothing
+		# exceptions: none
+		'''
+		self.parent = parent
+
+
+	def getDepth(self):
+		'''
+		# requires: nothing
+		# effects: returns depth of this structure in the hiearchy.
+		# modifies: nothing
+		# returns: integer depth
+		# exceptions: none
+		'''
+		return self.depth 
+
+
+def print_structure_tree(snode, fd, count):
+	'''
+	# requires: 
+	#   snode: Structure node
+	# effects: recursively prints a text rep of the node snode, and its descendants
+	# modifies: nothing
+	# returns: nothing
+	# exceptions: none
+	#
+	# Note: Doesn't attempt to sort the siblings according to anything but
+	# a straight alpha-numeric sort.  Doesn't need to, at this time, since
+	# this is a presentation issue and this print function is merely for 
+	# debugging purposes (i.e., the bcps don't care one way or the other,
+	'''
+	indent = '|   '  # characters used to indent nodes at greater depth 
+
+	key = snode.getMgiKey()
+	if key != None:
+		name = '<A NAME="%d">%s</A>' % (snode.getMgiKey(), snode.getName())
+	else:
+		name = snode.getName()
+
+	aliases = snode.getAliases()
+	if len(aliases) > 0:
+		aliases = '(%s)' % string.join(snode.getAliases(),',')
+	else:
+		aliases = ''
+
+	depth = snode.getDepth()
+	fd.write( '%s%s %s\n' % (depth * indent,name,aliases) )
+
+	children = {}
+
+	for child in snode.getChildren():
+		children[child.getName()] = child
+
+	childnames = children.keys()
+
+	# note: we need to be more sophistocated about sorting.
+	# - this will do for testing purposes
+	childnames.sort()
+
+	for childname in childnames:
+		count = print_structure_tree(children[childname], fd, count)
+
+	return count + 1
+
+
+## functions
+
+def die(s):
+	'''
+	# requires: s (string) an error message
+	# effects: prints error message, then exits with exit status 1.
+	# modifies: nothing
+	# returns: nothing
+	# exceptions: none
+	'''
+	sys.stderr.write( s + '\n' )
+	sys.exit(1)
+
+
+def alias_parser(t):
+	'''
+	# requires:
+	#	t['_Structure_key']: mgi structure key (integer)
+	#	t['structure']: structure name (string)
+	#	Structure.extent: a dictionary
+	# effects:
+	#	locates structure object and adds an alias name
+	# modifies: structure objects
+	# returns: nothing
+	# exceptions: none
+	'''
+	k = t['_Structure_key']
+	a = t['structure']
+	if Structure.extent.has_key(k):
+		Structure.extent[k].addAlias(a)
+
+def structure_parser(t):
+	'''
+	# requires: 
+	#        t['structure']: structure name (string)
+	#        t['_Structure_key']: mgi structure key (integer)
+	#        t['stage']: stage number (integer)
+	#        t['treeDepth']: depth of structure (integer >= 1)
+	#             (Stage nodes are at depth 0)
+	#        t['edinburghKey']: Edinburgh identifier (integer) or None.
+	#        t['_Parent_key']: Parent key of structure or None.
+	#        (global) structures: a dictionary object
+	#
+	# effects: receives tuples from a Sybase query of the GXD_Structure
+	#          tables. 
+	# modifies: structures 
+	# returns: nothing 
+	# exceptions: none
+	'''
+	global structures
+
+	s = Structure(t['structure'],t['stage'],t['treeDepth'])
+
+	s.setMgiKey(t['_Structure_key'])
+
+	pkey = t['_Parent_key']
+	
+	if not structures.has_key(pkey):
+		structures[pkey] = []
+
+	structures[pkey].append(s)
+
+
+def addChildren(s):
+	'''
+	# requires: 
+	#    s: Structure object
+	#    (global) structures: a dictionary of lists of Structure objects, keyed 
+	#               by _Parent_key. 
+	# effects: adds all children of s to s, then deletes these children from
+	#          'structures'.
+	# modifies: structures 
+	# returns: nothing
+	# exceptions: none
+	'''
+	global structures	
+
+	mgikey = s.getMgiKey()
+
+	if structures.has_key(mgikey):  # i.e., if a node has children
+		children = structures[mgikey]
+
+		del(structures[mgikey])
+
+		for child in children:
+			s.addChild(child)
+			addChildren(child)
+
+
+def build_tree():
+	'''
+	# requires: 
+	#    (global) structures: a dictionary of lists of Structure objects, keyed 
+	#               by _Parent_key. 
+	# effects: builds a structure tree from the Structures held in the
+	#          global 'structures' dictionary.  If no structures exist,
+	#          prints an error message and exits with status code 0.
+	# modifies: structures 
+	# returns: a Structure object that is the root of a structure tree. 
+	# exceptions: none
+	'''
+	global structures
+
+	if len(structures.keys()) == 0:
+		sys.stderr.write('No structures available for this stage\n')
+		sys.exit(0)
+
+	toplevelnodes = structures[None]
+	stageNum = toplevelnodes[0].getStageNum()
+	if len(toplevelnodes) > 1:
+		sys.stderr.write( "ERROR: multiple top level nodes for stage %d\n" % stageNum )
+		sys.exit(-1)
+
+	del(structures[None])
+
+	stagen = toplevelnodes[0]
+	stagen.setName( "Stage %d" % stageNum )
+	addChildren(stagen)
+
+	return stagen
+
+		
+def clear():
+	'''
+	# requires: nothing
+	# effects: clears global index structures so that we can load the next stage
+	# modifies:
+	#	structures
+	#	Structure.extent
+	# returns: nothing
+	# exceptions: none
+	'''
+	global structures
+
+	structures = {}
+	Structure.extent = {}
+
+def doOneStage( stagenum, description, outputFileName ):
+	'''
+	# requires:
+	#	stagenum (string) the stage to load/print
+	#	description (string) a short note describing the morphology of the stage
+	#	outputFileName (string) where to write the output file
+	# effects: 
+	#	Loads the hierarchy for the specified stage and writes it
+	#	to the named file.
+	# modifies:
+	#	structures
+	#	Structure.extent
+	# returns: nothing
+	# exceptions:
+	#	Dies with an error message if the output file cannot 
+	#	be opened for writing
+	'''
+
+	try:
+	    fd = open( outputFileName, 'w' )
+	   # os.chmod(outputFileName,0640)
+	   # os.system("chgrp " + config['GROUP'] + " " + outputFileName)
+	except:
+	    die("%s: could not open output file %s" % (sys.argv[0], outputFileName))
+
+	# query the db for Structure information
+
+	cmd = '''select gs.*, gsn.structure, ts.stage
+		 from GXD_Structure gs, GXD_StructureName gsn, GXD_TheilerStage ts
+		 where gs._Stage_key = ts._Stage_key
+			 and gs._StructureName_key = gsn._StructureName_key
+		 and ts.stage = %s
+	      ''' % stagenum
+
+	homelib.sql(cmd,structure_parser)
+
+	cmd = '''select gsn._Structure_key, gsn.structure
+		 from GXD_Structure gs, GXD_StructureName gsn, GXD_TheilerStage ts
+		 where gs._Stage_key = ts._Stage_key
+			 and gs._Structure_key = gsn._Structure_key
+			 and gs._StructureName_key != gsn._StructureName_key
+		 and ts.stage = %s
+	      ''' % stagenum
+	homelib.sql( cmd, alias_parser )
+
+	stree = build_tree()
+	fd.write( "<HTML>" + '\n' )
+	fd.write( "<HEAD>" + '\n' )
+	fd.write( '<TITLE>MGI - Mouse Anatomical Dictionary - ' + \
+		'Stage %s</TITLE>\n' % stagenum )
+	fd.write( "</HEAD>" + '\n' )
+	fd.write( '<BODY BGCOLOR="#FFFFFF">\n' )
+	fd.write( '<!--#include file="include/banner.html"-->\n')
+	fd.write( '<H3><A HREF="%s">Mouse Anatomical Dictionary</A> - Stage %s (%s)</H3>\n' % \
+		    (homelib.makepath (SERVER_DOC_ROOT, DICTIONARY_SUBDIR, \
+			indexFileRoot), stagenum,description) )
+	fd.write( "<PRE>" + '\n' )
+	nNodes = print_structure_tree(stree, fd, 0)
+	fd.write( "</PRE>" + '\n' )
+	fd.write( '<HR><!--#include file="include/footer.html"-->\n')
+	fd.close()
+
+	return nNodes
+
+
+def getStageDefs():
+	'''
+	# requires: nothing
+	# effects: loads all the records from GXD_TheilerStage
+	# modifies: stages
+	# returns: nothing
+	# exceptions: none
+	'''
+	global stages
+	cmd = '''
+		select _Stage_key, stage, description
+		from GXD_TheilerStage
+		order by stage
+		'''
+	stages = homelib.sql( cmd )
+
+def startIndexFile( fd ):
+	global INDEX_HEADER
+	fd.write( INDEX_HEADER )
+
+def addIndexEntry( fd, stage, description, fileName, nNodes ):
+	if stage in missingStages:
+		footnote = '*'
+	else:
+		footnote = ''
+	fd.write( '<LI><A HREF="%s">Stage %d%s</A> (%s)\n' % (fileName, stage, footnote, description) )
+
+def endIndexFile( fd ):
+	fd.write( "</UL>\n" )
+	if len(missingStages) > 0:
+		fd.write('''* Stages 23 through 26 have been added recently
+			and are still under development. Only limited
+			expression data are currently available for these
+			stages. Stage 27 is not yet available.\n''')
+	fd.write( "<HR>\n" )
+	fd.write('<!--#include file="include/footer.html"-->')
+	fd.close()
+	return
+
+## MAIN ##
+
+
+# parse command-line options
+stagenum = None
+
+indexFileRoot = "index.shtml"
+indexFileName = homelib.makepath (DOC_ROOT, DICTIONARY_SUBDIR, indexFileRoot)
+
+fd_index = open( indexFileName, 'w' )
+# os.chmod(indexFileName,0640)
+# os.system("chgrp " + config['GROUP'] + " " + indexFileName)
+startIndexFile( fd_index )
+
+
+getStageDefs()
+
+for stageRec in stages:
+	stage = stageRec['_Stage_key']
+	description = stageRec['description']
+	froot = 'stage%d.shtml' % stage
+	fname = DOC_ROOT + '/' + DICTIONARY_SUBDIR + '/' + froot
+	nNodes = doOneStage( `stage`, description, fname )
+	addIndexEntry( fd_index, stage, description, froot, nNodes )
+	clear()
+
+endIndexFile( fd_index )
+
+#
+# Warranty Disclaimer and Copyright Notice
+# 
+#  THE JACKSON LABORATORY MAKES NO REPRESENTATION ABOUT THE SUITABILITY OR 
+#  ACCURACY OF THIS SOFTWARE OR DATA FOR ANY PURPOSE, AND MAKES NO WARRANTIES, 
+#  EITHER EXPRESS OR IMPLIED, INCLUDING MERCHANTABILITY AND FITNESS FOR A 
+#  PARTICULAR PURPOSE OR THAT THE USE OF THIS SOFTWARE OR DATA WILL NOT 
+#  INFRINGE ANY THIRD PARTY PATENTS, COPYRIGHTS, TRADEMARKS, OR OTHER RIGHTS.  
+#  THE SOFTWARE AND DATA ARE PROVIDED "AS IS".
+# 
+#  This software and data are provided to enhance knowledge and encourage 
+#  progress in the scientific community and are to be used only for research 
+#  and educational purposes.  Any reproduction or use for commercial purpose 
+#  is prohibited without the prior express written permission of the Jackson 
+#  Laboratory.
+# 
+# Copyright © 1996, 1999, 2000 by The Jackson Laboratory
+# All Rights Reserved
+#
