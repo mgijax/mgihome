@@ -1,0 +1,68 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+         "http://www.w3.org/TR/1999/REC-html401-19991224/loose.dtd">
+<html lang="en">
+<head>
+	<meta http-equiv="content-type" content="text/html; 
+charset=x-mac-roman">
+	<title>Searchbox.shtml</title>
+	<meta name="generator" content="BBEdit 6.5.2">
+</head>
+<body>
+<form method="get" 
+action="http://devwww.informatics.jax.org:8080/javawi/servlet/SearchTool">
+<table border="2" cellspacing="0" cellpadding="0">
+<tbody><tr>
+<td>
+<table border="0" cellspacing="0" cellpadding="2">
+<tbody><tr bgcolor="#D0E0F0">
+<td>
+<font size="-1" face="Arial,Helvetica"><b>Search</b> for </font>
+<br>
+</td>
+<td valign="top" align="right">
+<a 
+href="http://devwww.informatics.jax.org/dev/userdocs/searchtool_help.shtml"><img 
+src="help_small.jpg" height="20" length="21" border="0" 
+alt="Help"></a>
+</td>
+</tr>
+<tr bgcolor="#D0E0F0">
+<td colspan="2">
+<font face="Arial,Helvetica">
+<input name="query" size="13">&nbsp;
+<input type="submit" value="Go">
+</font>
+</td>
+</tr>
+<tr bgcolor="#D0E0F0">
+<td colspan="2">
+<font size="-1" face="Arial,Helvetica">in these sections</font>
+</td>
+</tr>
+<tr bgcolor="#D0E0F0">
+<td colspan="2">
+<select name="selectedQuery" size="5" multiple="multiple"><option 
+value="All Options">All sections
+</option><option value="Genes and Markers" selected="selected">Gene 
+symbols/names
+</option><option value="Accession IDs">Accession IDs
+</option><option value="Phenotypes">Phenotypes
+</option><option value="Gene Expression Data">Gene Expression
+</option><option value="Gene Ontology">Gene Ontology
+</option><option value="Mouse Anatomical Dictionary">Anatomical
+Dictionary
+</option><option value="References">Reference abstracts
+</option><option value="Festing's Strain Characteristics">Strain
+Characteristics
+</option><option value="Mouse Locus Catalog">Mouse Locus Catalog
+</option></select>
+</td>
+</tr>
+</tbody></table>
+</td>
+</tr>
+</tbody></table>
+</form>
+
+</body>
+</html>
