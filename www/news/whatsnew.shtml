@@ -3,24 +3,22 @@
 <TITLE><!--#include file="include/title.html"-->What's New </TITLE>
 </HEAD>
 <BODY BGCOLOR="#FFFFFF">
+<!--#include file="include/bodyStart.html"-->
 <TABLE WIDTH="100%" BORDER=0 CELLPADDING=2 CELLSPACING=1>
  <TR>
   <TD WIDTH="100%" BGCOLOR="#D0E0F0">
    <TABLE WIDTH="100%" BORDER=0 CELLPADDING=0 CELLSPACING=0>
     <TR>
-     <TD WIDTH="20%" VALIGN="center" ALIGN="left">
-      <IMG SRC="../images/mgi_logo.jpg" WIDTH=160 HEIGHT=80>
-     </TD>
+     <TD WIDTH="20%" VALIGN="center" ALIGN="left">&nbsp;</TD>
      <TD WIDTH="60%" ALIGN="center" VALIGN="center">
       <FONT COLOR="#000000" SIZE=5 FACE="Arial,Helvetica">
-What's New
+       What's New
       </FONT>
      </TD>
-     <TD WIDTH="20%" VALIGN="center" ALIGN="center">
-      &nbsp;
-     </TD>
+     <TD WIDTH="20%" VALIGN="center" ALIGN="center">&nbsp;</TD>
     </TR>
-   </TABLE>  </TD>
+   </TABLE>
+  </TD>
  </TR>
 </TABLE>
 <P>
@@ -28,7 +26,7 @@ What's New
   <TR ALIGN="left" VALIGN="top">
    <TD ALIGN="left" VALIGN="top">
     <TABLE ALIGN="CENTER" BORDER="-2" CELLSPACING="0" CELLPADDING="4" width="70%">
-      <TR BGCOLOR="#DFEFFF"><TD ALIGN="left" VALIGN="middle"><B><CENTER>What's New - November 12, 2002</CENTER></B>
+      <TR BGCOLOR="#DFEFFF"><TD ALIGN="left" VALIGN="middle"><B><CENTER>Latest update: November 12, 2002</CENTER></B>
         <font size=-1>
         <ul>
         <li><a href="#nov02">MGI 2.9 Release, November 12, 2002</a></li>
@@ -44,13 +42,13 @@ What's New
 <P>
 What's New Archives<BR>
 &nbsp;&nbsp;&nbsp;&nbsp;<A HREF="news_2001.shtml">2001</A><BR>
-&nbsp;&nbsp;&nbsp;&nbsp;<A HREF="news_2002.shtml">2000</A><BR>
+&nbsp;&nbsp;&nbsp;&nbsp;<A HREF="news_2000.shtml">2000</A><BR>
 </UL>
    </TD>
   </TR>
  </TABLE>
 <P>
-<BLOCKQUOTE>
+
 <dl>
 <dt><b><a name="nov02"></a>November, 2002</b><br><br>
 <dd><a href="2.9announce.shtml">MGI 2.9 Release</a><br><br> 
@@ -126,8 +124,8 @@ There is now a link from human genes represented in the Browser to gene records 
 </dl>
 <hr>
 
-<!--#include file="include/footer.html"-->
-</BLOCKQUOTE>
+<!--#include file="include/bodyStop.html"-->
+
 </BODY></HTML>
 <!--
 Warranty Disclaimer and Copyright Notice
