@@ -6,38 +6,38 @@
 <!--#include file="include/banner.html"-->
    <TABLE WIDTH=100% border=0 cellpadding=2 cellspacing=1>
     <TR>
-    <TD WIDTH=100% BGCOLOR="#D0E0F0">
+     <TD WIDTH=100% BGCOLOR="#D0E0F0">
       <TABLE WIDTH=100% border=0 cellpadding=0 cellspacing=0>
-      <TR>     
- <TD align=center valign=center><FONT COLOR="#000000" SIZE=5 face="Arial,Helvetica"><B>Help</B></FONT>    
- </TD>
-      
-      </TR>
+       <TR>     
+       <TD align=center valign=center><FONT COLOR="#000000" SIZE=5 face="Arial,Helvetica"><B>Help</B></FONT>    
+       </TD>      
+       </TR>
       </TABLE>
      </TD>
     </TR>
    </TABLE>
+<blockquote>
 <P>
 Mouse Genome Informatics offers on-line help and staffs a help desk to answer your questions and comments.
 <P>
-<table align=left valign=top width=100% border=0 cellspacing=4>
-<tr><td width=50%>
-<FONT SIZE=+1><B>Contact User Support Staff</B></FONT>
+<table width=100% border=0 cellspacing=4>
+<tr>
+<td  align=left valign=top width=50%><FONT SIZE=+1><B>Contact User Support Staff</B></FONT>
 <ul>
-E-mail: <A HREF="">mgi-help@informatics.jax.org</A></FONT><br>
+E-mail: <A HREF="../support/tjl_inbox.shtml">mgi-help@informatics.jax.org</A></FONT><br>
 Phone: (207) 288-6445<br><br>
 </ul>
 
-<FONT SIZE=+1><B>On-Line Help</b></font>
-<dl>
-<dt><EM>General topics</EM>
-<dd>
-<A HREF="..overview.shtml">Mouse Genome Database Overview</A><br>
+<FONT SIZE=+1><B>On-Line Help</b></font><br><br>
+<EM>General topics</EM>
+<ul>
+<A HREF="../overview.shtml">Mouse Genome Database Overview</A><br>
 <A HREF="<!--#include file='include/wi_url.html'-->userdocs/gen_search_tips.shtml">General Guidelines for Searching MGI</A><br>
 <A HREF="/tutorials/faq.shtml">Frequently Asked Questions (FAQs)</A><br>
-<br>
-<dt><em>Specific query forms</EM><br>
-<dd><a href="<!--#include file='include/wi_url.html'-->userdocs/accession_help.shtml">Accession IDs</A><br>
+</ul>
+<em>Specific query forms</EM>
+<ul>
+<a href="<!--#include file='include/wi_url.html'-->userdocs/accession_help.shtml">Accession IDs</A><br>
 <A HREF="<!--#include file='include/wi_url.html'-->userdocs/allele_help.shtml">Alleles and Phenotypes</A><br>
 <A HREF="<!--#include file='include/wi_url.html'-->userdocs/anatdict_help.shtml">Mouse Anatomical Dictionary Browser</A><br>
 <A HREF="<!--#include file='include/wi_url.html'-->userdocs/estclone_help.shtml">cDNA Clone</A><BR>
@@ -45,29 +45,27 @@ Phone: (207) 288-6445<br><br>
 <A HREF="<!--#include file='include/wi_url.html'-->userdocs/textsearch_tips.shtml">Full-text Searching Help</A><BR>
 <A HREF="<!--#include file='include/wi_url.html'-->userdocs/expression_help.shtml">Gene Expression Data</A><BR>
 <A HREF="<!--#include file='include/wi_url.html'-->userdocs/marker_help.shtml">Genes and Markers</A><br>
-<A HREF="../other/glossary.shtml">Glossary</A><br>
+<A HREF="../other/glossary.shtml">MGI Glossary</A><br>
 <A HREF="<!--#include file='include/wi_url.html'-->userdocs/gxdindex_help.shtml">Gene Expression Literature Index</A><BR>
-<A HREF="<!--#include file='include/wi_url.html'-->userdocs/gxdindex_help.shtml">Gene Ontology Browser</A><BR>
+<A HREF="<!--#include file='include/wi_url.html'-->userdocs/GO_help.shtml">Gene Ontology Browser</A><BR>
 <A HREF="<!--#include file='include/wi_url.html'-->userdocs/homology_help.shtml">Mammalian Homology Data</A><br>
-<A HREF="mapping_help.shtml">Maps and Mapping Data</A><br>
-<A HREF="probe_help.shtml">Molecular Probes and Segments</A><br>
+<A HREF="<!--#include file='include/wi_url.html'-->userdocs/mapping_help.shtml">Maps and Mapping Data</A><br>
+<A HREF="<!--#include file='include/wi_url.html'-->userdocs/probe_help.shtml">Molecular Probes and Segments</A><br>
 <A HREF="http://mouseblast.informatics.jax.org/user_docs/mblast_overview.shtml">MouseBLAST</A><br>
-<A HREF="../searches/anatdict_help.shtml">Mouse Anatomical Dictionary Browser</A><br>
+<A HREF="<!--#include file='include/wi_url.html'-->userdocs/anatdict_help.shtml">Mouse Anatomical Dictionary Browser</A><br>
 <A HREF="<!--#include file='include/wi_url.html'-->userdocs/oxfordgrid_help.shtml">Oxford Grid</A><br>
 <A HREF="<!--#include file='include/wi_url.html'-->userdocs/polymorphism_help.shtml">Polymorphisms</A><br>
 <A HREF="<!--#include file='include/wi_url.html'-->userdocs/reference_help.shtml">References</A><br>
 <A HREF="<!--#include file='include/wi_url.html'-->userdocs/searchtool_help.shtml">Text Search Tool on Home Page</A><br>
-</dl>
-</TD>
-
-<td width=50% valign=top>
+</ul></TD>
+<td align=left valign=top width=50%>
 <FONT SIZE=+1><B><A HREF="/tutorials/under_construction.shtml">Tutorials</a></B></FONT><BR>
 <dd>Finding a gene in MGI<br>
 <dd>Exploring homology<br>
 <dd>Gene expression<br>
 <dd>Getting around MGI<br><br>
 
-<FONT SIZE=+1><B><A HREF="../other/glossary.shtml">Glossary</A></B></FONT><BR>
+<dt><FONT SIZE=+1><B><A HREF="../other/glossary.shtml">Glossary</A></B></FONT><BR>
 <EM>Commonly used terms in mouse genetics</EM>
 <br><br>
 
@@ -78,19 +76,19 @@ Phone: (207) 288-6445<br><br>
 <dd>Gene Expression Data
 <br><br>
 
-
 <FONT SIZE=+1><B><A HREF="../lists/lists.shtml">Community E-mail Lists</a></B></FONT><BR>
+<ul>
 <EM>Searchable research community E-mail lists moderated by User Support</EM>
 <br><br>
-
+</ul>
 <FONT SIZE=+1><B><A HREF="/silver/">Lee Silver's <EM>Mouse Genetics</EM></A></B></FONT><BR>
 <EM>Electronic version of Silver's out-of-print book</EM>
 <br><br>
 
 <FONT SIZE=+1><B><A HREF="<!--#include file='include/wi_url.html'-->userdocs/developers_tools.shtml">Software Developer Resources</A></B></FONT><BR>
 <dd>How to create links to MGI<BR>
-<dd>Schema Browser<BR>
-</UL>
+<dd>Schema Browser<BR><br>
+
 
 <FONT SIZE=+1><B><A HREF="../other/mouse_facts1.shtml">Mouse Facts</A></B></FONT><BR>
 <em>Information about the following:</EM>
@@ -103,23 +101,29 @@ Phone: (207) 288-6445<br><br>
 </TD>
 </TR>
 </TABLE>
+</blockquote>
+
 <HR>
 
 <!--#include file="include/footer.html"-->
+
 </BODY></HTML>
 <!--
 Warranty Disclaimer and Copyright Notice
- THE JACKSON LABORATORY MAKES NO REPRESENTATION ABOUT THE SUITABILITY OR
- ACCURACY OF THIS SOFTWARE OR DATA FOR ANY PURPOSE, AND MAKES NO WARRANTIES,
- EITHER EXPRESS OR IMPLIED, INCLUDING MERCHANTABILITY AND FITNESS FOR A
- PARTICULAR PURPOSE OR THAT THE USE OF THIS SOFTWARE OR DATA WILL NOT
- INFRINGE ANY THIRD PARTY PATENTS, COPYRIGHTS, TRADEMARKS, OR OTHER RIGHTS.
+
+ THE JACKSON LABORATORY MAKES NO REPRESENTATION ABOUT THE SUITABILITY OR 
+ ACCURACY OF THIS SOFTWARE OR DATA FOR ANY PURPOSE, AND MAKES NO WARRANTIES, 
+ EITHER EXPRESS OR IMPLIED, INCLUDING MERCHANTABILITY AND FITNESS FOR A 
+ PARTICULAR PURPOSE OR THAT THE USE OF THIS SOFTWARE OR DATA WILL NOT 
+ INFRINGE ANY THIRD PARTY PATENTS, COPYRIGHTS, TRADEMARKS, OR OTHER RIGHTS.  
  THE SOFTWARE AND DATA ARE PROVIDED "AS IS".
- This software and data are provided to enhance knowledge and encourage
- progress in the scientific community and are to be used only for research
- and educational purposes.  Any reproduction or use for commercial purpose
- is prohibited without the prior express written permission of the Jackson
+
+ This software and data are provided to enhance knowledge and encourage 
+ progress in the scientific community and are to be used only for research 
+ and educational purposes.  Any reproduction or use for commercial purpose 
+ is prohibited without the prior express written permission of the Jackson 
  Laboratory.
+
 Copyright © 1996, 1999, 2002 by The Jackson Laboratory
 All Rights Reserved
 -->
