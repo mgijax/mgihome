@@ -1,7 +1,7 @@
 
 
 <HTML><HEAD>
-<TITLE><!--#include file="include/title.html"--> - MGI Release 2.4 Announcement</TITLE></HEAD>
+<TITLE>MGI Release 2.4 Announcement</TITLE></HEAD>
 <!--#include file="include/banner.html"-->
 
 <BODY BGCOLOR="#ffffff">
@@ -11,9 +11,9 @@ MGI Release 2.4 Announcement
 
 </h2>
 
-<H3><A HREF="http://genome-www.stanford.edu/GO/">Gene Ontology (GO) Project</A> Vocabularies</H3>
+<H3><A HREF="../GO/ontology.shtml">Gene Ontology (GO) Project</A> Vocabularies</H3>
 The GO project is a collaborative effort to develop controlled vocabularies
-to exhaustively describe biological features of the genome of various species. MGI has taken a first step in using these vocabularies to annotate gene records in the MGI database. In MGI 2.4, you can search for genes, gene expression data, or cDNA clones, and focus these searches on genes annotated using these terms. At present, over ## mouse genes are annotated using GO terms.
+to exhaustively describe biological features of the genome of various species. MGI has taken a first step in using these vocabularies to annotate gene records in the MGI database. In MGI 2.4, you can search for genes, gene expression data, or cDNA clones, and focus these searches on genes annotated using these terms. At present, roughly 5000 mouse genes are annotated using GO terms.
 <p>
 <H3><A HREF="<!--#include file="include/wi_url.html"-->searches/allele_form.shtml">Alleles Query Form</A></H3>
 MGI is changing the way alleles are handled in the database. These changes are part of an overhaul in the way MGI manages phenotypic information. In MGI 2.4, some of the groundwork has been done resulting in a new Alleles query form and a new display of detailed information on alleles. See, for example, the <A HREF="<!--#include file='include/wi_url.html'-->searches/allele.cgi?95"> detail record for Lepr<SUP>dp- ad</A></SUP>, an allele of Lepr.

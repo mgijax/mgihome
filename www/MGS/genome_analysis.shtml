@@ -48,7 +48,21 @@ exons (GRAIL, FEXHB, MZEF, Xpound and GENSCAN),
 gene-structures (GENSCAN, DPS and ExonSampler), 
 tRNA coding (tRNA), CpG islands (LCP and CPG),
 GC-profiling (LCP) and homology and motif searches against sequence data base 
-(BLAST, and FASTA). (<EM>Requires registration.</EM>)
+(BLAST, and FASTA). (This site requires registration.)
+<P>
+<LI><A HREF="http://www.hgmp.mrc.ac.uk/NIX/">NIX</A>
+(<A HREF="http://www.hgmp.mrc.ac.uk">The UK Human Genome Mapping Project
+Resource Center</A>)
+- a high-throughput sequence annotation server.  For genomic sequences, the
+functional and organizational elements addressed include:
+Repetitive elements (RepeatMasker), exons (GRAIL, GeneFinder, GeneMark,
+FEX, HEXON, FGENE), tRNA coding (tRNAscan), and sequence similarity (BLAST
+versus DNA and protein sequence databases).
+<P>For transcribed sequences, the
+functional and organizational elements addressed so far include:
+Repetitive elements (RepeatMasker), exons (GRAIL), and sequence similarity
+(BLAST versus DNA sequence databases, and TBLASTX versus protein sequence
+databases). (This site requires registration.)
 </UL>
 
 <P>
@@ -56,7 +70,7 @@ GC-profiling (LCP) and homology and motif searches against sequence data base
 <A NAME="pipelines"><H3>Sequence Analysis Pipeline Software</H3></A>
 These are pipeline software applications written in Perl that you can download and install on your UNIX system.
 <UL>
-	 <LI>CGAT (<A HREF="http://worm-chip.stanford.edu">Stanford</A> or <A HREF="http://physiology.med.jhu.edu/roger/seq/Tools.html">Johns Hopkins</A>)
+	 <LI>CGAT (<A HREF="http://worm-chip.stanford.edu">Stanford</A> <!-- or <A HREF="http://physiology.med.jhu.edu/roger/seq/Tools.html">Johns Hopkins</A> -->)
  - The Comprehensive Genome Analysis Tools developed in Roger Reeves' lab at Johns Hopkins by Jim Lund who is now at Stanford.  
 Runs RepeatMasker, NCBI BLASTN (vs. nr, dbest, htgs, gss), MZEF, GRAIL, GENSCAN, tRNAscan-SE,
 GRAIL CpG islands, PolyA, polII promoters.  Maps all results onto sequence, and generates

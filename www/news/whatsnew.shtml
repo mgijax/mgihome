@@ -1,13 +1,13 @@
 <!doctype html public "-//w3c//dtd html 3.2 final//en">
 <HTML>
 <HEAD>
-<title><!--#include file="include/title.html"-->what's new?</title>
+<title>What's New?</title>
 	<meta name="generator" content="bbedit 5.1.1"></head>
 <!--#include file="include/banner.html"-->
 
 <Body Bgcolor="#ffffff">
 <Center>
-<H2>What's New?</H2>
+<H1><FONT COLOR="#FF0111">What's New?</FONT></H1>
 <H3>Last Updated May 26, 2000</H3>
 </Center>
 
@@ -21,7 +21,7 @@
 <h3><dt>You can <A HREF="<!--#include file='include/wi_url.html'-->/searches/allele_form.shtml">search for alleles</A></dt></h3>
 <!-- this is the link to the alleles query form -->
 <DD>The way MGI handles allele information is changing radically. In MGI 2.4, some of the groundwork has been done resulting in a new <a
-href="<!--#include file='include/wi_url.html'-->/searches/allele_form.shtml">Alleles query form</A> and changes in the way allele information is displayed. See, for example, a <A HREF="http://<!--#include file='include/wi_url.html'-->/searches/allele.cgi?95">detailed
+href="<!--#include file='include/wi_url.html'-->/searches/allele_form.shtml">Alleles query form</A> and changes in the way allele information is displayed. See, for example, the <A HREF="<!--#include file='include/wi_url.html'-->searches/allele.cgi?95">detailed
 record for Lepr<SUP>dp- ad</A></SUP>, an allele of Lepr.</DD>
 <!----------------->
 
@@ -30,16 +30,17 @@ record for Lepr<SUP>dp- ad</A></SUP>, an allele of Lepr.</DD>
 combined in one field, <b>Symbol/Name</b>. When using this field, your 
 search (by default) spans current nomenclature, withdrawn symbols, and 
 synonyms. You have the option to limit the search to current nomenclature only, or to current and withdrawn.  <p>
-you can enter one or more symbols or names in this field. The search will
+You can enter one or more symbols or names in this field. The search will
 retrieve any records for markers having names or symbols that match the characters entered on the Symbol/Name field. <p>
 
 <DD>The combined Symbol/Name field appears in the following query forms:<p>
 <ul><A HREF="<!--#include file='include/wi_url.html'-->/searches/marker_form.shtml"> Genes, Markers And Phenotypes<br></A>
-<A HREF="<!--#include file='include/wi_url.html'-->/searches/allele_form.shtml"> Alleles<br></A>
-<A HREF="<!--#include file='include/wi_url.html'-->/searches/polymorphism_form.shtml"> Polymorphisms</A><br>
-<A HREF="<!--#include file='include/wi_url.html'-->/searches/probe_form.shtml">Molecular Probes And Segments</A><br>
-<A HREF="<!--#include file='include/wi_url.html'-->/searches/homology_form.shtml">Mammalian Homology</A><br>
-<A HREF="<!--#include file='include/wi_url.html'-->/searches/mapdata_form.shtml">Mapping Data</A><br>
+<A HREF="<!--#include file='include/wi_url.html'-->searches/allele_form.shtml"> Alleles<br></A>
+<A HREF="<!--#include file='include/wi_url.html'-->searches/polymorphism_form.shtml"> Polymorphisms</A><br>
+<A HREF="<!--#include file='include/wi_url.html'-->searches/probe_form.shtml">Molecular Probes And Segments</A><br>
+<A HREF="<!--#include file='include/wi_url.html'-->searches/homology_form.shtml">Mammalian Homology</A><br>
+<A HREF="<!--#include file='include/wi_url.html'-->searches/mapdata_form.shtml">Mapping Data</A><br>
+<A HREF="<!--#include file='include/wi_url.html'-->searches/linkmap_form.shtml">Linkage Maps</A><br>
 <A HREF="<!--#include file='include/wi_url.html'-->searches/gxdindex_form.shtml">GXD Index</A><br>
 <A HREF="<!--#include file='include/wi_url.html'-->searches/expression_form.shtml">GXD Data</A><br>
 <A HREF="<!--#include file='include/wi_url.html'-->searches/estclone_form.shtml">cDNA Clone</A><br>
@@ -59,17 +60,17 @@ The former phenotypic classifications have been removed from MGI query forms.
 GO classification fields have been added to several MGI query forms: 
 
 
-<A HREF="<!--#include file='include/wi_url.html'-->/searches/marker_form.shtml">Genes, Markers And Phenotypes</A>,
-<A HREF="<!--#include file='include/wi_url.html'-->/expression_form.shtml">Gene Expression Data</A>, and
-<A HREF="<!--#include file='include/wi_url.html'-->/searches/estclone_form.shtml">cDNA Clone</A>.<br>
+<A HREF="<!--#include file='include/wi_url.html'-->searches/marker_form.shtml">Genes, Markers And Phenotypes</A>,
+<A HREF="<!--#include file='include/wi_url.html'-->searches/expression_form.shtml">Gene Expression Data</A>, and
+<A HREF="<!--#include file='include/wi_url.html'-->searches/estclone_form.shtml">cDNA Clone</A>.<P>
 Visit the <A HREF="http://www.geneontology.org/">Gene Ontology Home
 Page</A> for more information.</DD>
 <!----------------->
 
-<h3><dt>Search <A HREF="<!--#include file='include/wi_url.html'-->/searches/probe_form.shtml">Molecular Probes And Segments</A>
+<h3><dt>Search <A HREF="<!--#include file='include/wi_url.html'-->searches/probe_form.shtml">Molecular Probes And Segments</A>
 by Chromosome Region</dt></h3>
-<DD>You can now limit your search for <A HREF="<!--#include file='include/wi_url.html'-->/searches/probe_form.shtml">molecular
-probes and segments</A> to a specific chromosomal region.
+<DD>You can now limit your search for molecular
+probes and segments to a specific chromosomal region.
 You also have the option to return results from this form as
 <b>tab-delimited text</b>.</DD>
 <!----------------->
@@ -84,10 +85,10 @@ Service</A></dt></h3>
 <DD>Use the new web interface to MGI-LIST and RAT-LIST to read or send messages, subscribe or unsubscribe from a list, or modify your subscriber options.</DD>
 <!----------------->
 
-<h3><dt><A HREF="../other/MGI_jobs.shtml">Professional
+<h3><dt><A HREF="../other/mgi_jobs.shtml">Professional
 Opportunities</A></dt></h3>
 <!-- this is the link to the job openings. -->
-<DD>Join us!  Live on the coast of Maine and <B>walk on the wild side</B>.</DD>
+<DD>Join us!  Live on the coast of Maine and <B><FONT COLOR="#DC143C">walk on the wild side</B></FONT>.</DD>
 <!----------------->
 </dl>
 
