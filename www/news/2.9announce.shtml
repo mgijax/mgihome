@@ -7,32 +7,34 @@
 
 <BODY BGCOLOR="#ffffff">
 <hr>
-<h2><a name="heres2.8">MGI Release 2.9 Announcement - November 11, 2002</a></h2>
+<h2><a name="heres2.8">MGI Release 2.9 Announcement - November 12, 2002</a></h2>
 <P>
 <p>The MGI 2.9 release features:
 
-<ul>
-<li><a href=""><b>Look and Feel</b></a>
+<p>New design for the web site</a>
 
    <ul>
-   <li>New look for MGI Home: Help page, Resources, About MGI, What's New
   <li>Toolbar
+   <li>Help page, Resources, About MGI, What's New
+ 
    <li>Marker detail page - tase of what's to come <!--common elements of all WI reports: 3364-7)
    <li>New <a href="">Search Tool</a>. 
     You can search the MGI site for a quick gene or the occurrance of any word <!--on our pages-->...<br>
    <li>New summary reports: sequence summary, gene ontology,m 
 
-     <li><!--Increased visibility of MTB-->
+     
 <br><br>
    <li><b><a href=""></b></a><br>
    </ul>
 
- <li><b>Links to <A HREF="http://www.ensembl.org/">Ensembl</A> Database</b><br>
-<p>MGI now provides links to Ensembl mouse gene models from MGI markers that share a common external sequence accession ID with those models. We also obtain chromosome map locations for MGI genes associated with Ensemb gene models. Ensembl is a joint project between the <a href="http://www.ebi.ac.uk/">European Bioinformatics Institute/European Molecular Biology Laboratory (EMBL-EBI)</a> and the <a href="http://www.wellcome.ac.uk/">Wellcome Trust</a> <a href="http://www.sanger.ac.uk/">Sanger Institute</a>. 
-</p>
-
-
-</ul>
+<p>New database links
+<ul>
+ <li><b><A HREF="http://www.ensembl.org/">Ensembl</A></b><br>
+MGI now provides links to Ensembl mouse gene models from MGI markers that share a common external sequence accession ID with those models. We also obtain chromosome map locations for MGI genes associated with Ensembl gene models. Ensembl is a joint project between the <a href="http://www.ebi.ac.uk/">European Bioinformatics Institute/European Molecular Biology Laboratory (EMBL-EBI)</a> and the <a href="http://www.wellcome.ac.uk/">Wellcome Trust</a> <a href="http://www.sanger.ac.uk/">Sanger Institute</a>. 
+<br><br>
+<li><b>DoTS/TIGR Mouse Gene Index</b><br>
+MGI provides links to computationally derived transcript assemblies (DoTS and TIGR Mouse Gene Index) from MGI markers. Associations between MGI markers and assemblies are based on shared GenBank sequence accession identifiers. Only associations between MGI genes and TCs/DTs supported by non-conflicting evidence are accessible from web browsers for these resources. DoTS (Database Of Transcribed Sequences) is developed at CBIL (Computational Biology and Informatics Laboratory) at the University of Pennsylvania and is accessible at <a href="http://www.allgenes.org">Allgenes</a> web. TIGR Mouse Gene Index is developed at <a href="http://www.tigr.org/tdb/tgi/mgi/">TIGR</a>. Links are updated after each build of TIGR's Mouse Gene Index and CBIL's DoTS database or after every major change in MGI databases.
+</ul></p>
 <hr>
 <!--#include file="include/footer.html"-->
 </body>
