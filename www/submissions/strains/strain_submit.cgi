@@ -24,6 +24,7 @@ labels = {
 	'strain_name'	: 'Strain Name',
 	'gene_symbols'	: 'Gene Symbols',
 	'JR_num'	: 'JR',
+	'MMRRC'		: 'MMRRC',
 	'status'	: 'Strain Public or Private',
 	'category'	: 'Categories',
 	'synonyms'	: 'Synonyms',
@@ -43,7 +44,7 @@ required_fields = [ 'name', 'method', 'status' ]
 
 sections = [
 	('Strain Info',
-		[ 'method', 'JR_num', 'strain_name', 'gene_symbols',
+		[ 'method', 'JR_num', 'MMRRC','strain_name', 'gene_symbols',
 		  'status', 'category' ]),
 	('Additional Info',
 		[ 'synonyms', 'references', 'notes' ]),
