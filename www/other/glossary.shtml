@@ -12,7 +12,6 @@
 <BODY BGCOLOR="#ffffff">
 <P>
 <!--#include file="include/banner.html"-->
-<!--#include file="include/topodoc.shtml"-->
 <h2>MGI Glossary</h2>
 <P>This glossary provides definitions for some terms found in our help documentation and other terms that are useful in understanding mouse genetics and bioinformatics. Terms are defined in a general sense as they apply to eukaryotic genetics, particularly mouse genetics; some terms are also defined as they are specifically used in MGI (e.g., <A HREF="#gene">gene</A>).  This list will grow as time goes on. If there is a term you think should be included in this list, please contact 
 <A HREF="http://www.informatics.jax.org/mgihome/support/tjl_inbox.shtml">MGI User Support</A>.
@@ -1343,11 +1342,23 @@ Substitution</A></LI>
 </UL>
 
 <!-- NNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNN --><A NAME="n"></A>
-<P><DT><B><A NAME="name">Name</A></B><DD>1. As used in <A HREF="#MGI">MGI</A>, a <A HREF="#gene">gene</A> "name" is a word or phrase 
-that uniquely identifies a gene. The gene name has an abbreviation that is the <A HREF="#gene_symbol">gene symbol</A>.<BR>2. As used in MGI, an <A HREF="#allele_name">allele</A> "name" is a word or phrase that uniquely identifies a particular allele of a gene. The allele 
-name has an abbreviation that is the <A HREF="#allele_symbol">allele symbol</A>.
-<P><DT><B><A NAME="NCBI">NCBI</A></B><DD><A HREF="http://www.ncbi.nlm.nih.gov/">National Center for Biotechnology Information</A>.
-<P><DT><B><A NAME="neomorphic">Neomorphic Mutation</A></B><DD>A type of <A HREF="#mutation">mutation</A> in which the altered <A HREF="#gene_product">gene product</A> possesses a novel <A HREF="#molecular_function">molecular function</A> or a novel pattern of <A HREF="#gene_expression">gene expression</A>. Antimorphic mutations are usually <A HREF="#dominant">dominant</A> or <A HREF="#semidominant">semidominant</A>. <BR>See also:<UL><LI><A HREF="#amorphic">Amorphic Mutation</A></LI><LI><A HREF="#antimorphic">Antimorphic Mutation</A></LI><LI><A HREF="#gain-of-function">Gain-of-function Mutation</A></LI><LI><A REF="#hypermorphic">Hypermorphic Mutation</A></LI><LI><A HREF="#hypomorphic">Hypomorphic Mutation</A></LI><LI><A HREF="#loss-of-function">Loss-of-function Mutation</A></LI><LI><A HREF="#null_mutation">Null Mutation</A></LI></UL>
+<P><DT><B><A NAME="name">Name</A></B>
+<DD>1. As used in <A HREF="#MGI">MGI</A>, a <A HREF="#gene">gene</A> "name" is a word or phrase 
+that uniquely identifies a gene. The gene name has an abbreviation that is the <A HREF="#gene_symbol">gene symbol</A>.<BR>2. As used in MGI, an <A HREF="#allele_name">allele</A> "name" is a word or phrase that uniquely identifies a particular allele of a gene. The allele name has an abbreviation that is the <A HREF="#allele_symbol">allele symbol</A>.
+
+<P><DT><B><A NAME="NCBI">NCBI</A></B
+><DD><A HREF="http://www.ncbi.nlm.nih.gov/">National Center for Biotechnology Information</A>.
+
+<P><DT><B><A NAME="neomorphic">Neomorphic Mutation</A></B><DD>A type of <A HREF="#mutation">mutation</A> in which the altered 
+<A HREF="#gene_product">gene product</A> possesses a novel <A HREF="#molecular_function">molecular function</A> or a novel pattern of <A HREF="#gene_expression">gene expression</A>. Antimorphic mutations are usually <A HREF="#dominant">dominant</A> or 
+<A HREF="#semidominant">semidominant</A>. <BR>See also:
+<UL>
+<LI><A HREF="#amorphic">Amorphic Mutation</A></LI>
+<LI><A HREF="#antimorphic">Antimorphic Mutation</A></LI><LI><A HREF="#gain-of-function">Gain-of-function Mutation</A></LI>
+<LI><A HREF="#hypermorphic">Hypermorphic Mutation</A></LI><LI><A HREF="#hypomorphic">Hypomorphic Mutation</A></LI>
+<LI><A HREF="#loss-of-function">Loss-of-function Mutation</A></LI>
+<LI><A HREF="#null_mutation">Null Mutation</A></LI>
+</UL>
 
 <P><DT><B><A NAME="neonatal">Neonatal</A></B>
 <DD>Newborn.
@@ -1740,7 +1751,8 @@ HREF="http://www.nhgri.nih.gov/DIR/VIP/Glossary/Illustration/rna.html">Figure</A
 <A HREF="#central_dogma">Central Dogma</A> and DNA.
 
 <P><DT><B><A NAME="RNA_editing">RNA Editing</A></B>
-<DD>The alteration of the sequence of an <A HREF="#RNA">RNA</A> molecule by <A HREF="#enzyme">enyzmatic</A> modification of individual <A HREF="#base">bases</A> without normal <A HREF="#splicing">splicing</A>. See <A HREF="http://www.ncbi.nlm.nih.gov:80/books/mboc/mboc.cgi?action=figure&fig=9-80">Figure 9-80</A> from Alberts et al. for an example of RNA editing that uses a splicing-like mechanism.
+<DD>The alteration of the sequence of an <A HREF="#RNA">RNA</A> molecule by <A HREF="#enzyme">enyzmatic</A> modification of individual <A HREF="#base">bases</A> without normal <A HREF="#splicing">splicing</A>. See 
+<a href="http://www.ncbi.nlm.nih.gov/books/bv.fcgi?call=bv.View..ShowSection&rid=cell.figgrp.d1e37981">Figure 9-80</A> from Alberts et al. for an example of RNA editing that uses a splicing-like mechanism.
 
 <P><DT><B><A NAME="RNA_polymerase">RNA Polymerase</A></B>
 <DD>An <A HREF="#enzyme">enzyme</A> that carries out <A HREF="#transcription">transcription</A>.
@@ -2094,3 +2106,10 @@ All Rights Reserved
 -->
 
 
+
+
+http://www.ri.bbsrc.ac.uk/bovmap/arkbov/
+
+/mboc.cgi?action=figure&fig=9-80
+
+http://www.ncbi.nlm.nih.gov/books/bv.fcgi?call=bv.View..ShowSection&rid=cell.figgrp.d1e37981
