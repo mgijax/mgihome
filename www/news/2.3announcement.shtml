@@ -27,15 +27,15 @@
 
 <H3>Enhanced Display of Homology Information</H3>
 The display of homology query results has been reformatted and now contains information on homology criteria and options for viewing references.<P>
-Homology information in MGD is extracted from the scientific literature. This information includes the type of experimental evidence used to support homology assertions. Now, MGD homology query results indicate the criteria for homology assertions. Some homologies are reported by a number of sources. There can be a number of different criteria shown for the same set of homologs. See, for example, the<A HREF="<!--#include file='include/wi_url.html'-->/searches/homology_report.cgi?id=MGI:88388"> homology report on the <I>Cftr</I></A> gene. You will see a new <B><A HREF="<!--#include file='include/wi_url.html'-->/userdocs/homology_criteria.shtml">Criteria</A></B> column on the right showing, in this example, several values, AA (Amino acid sequence comparison), CL (Conserved map location) and NT (Nucleotide sequence comparison). <P>
-You will also see the <B>Number of References</B> associated with each criterion. The number is linked to the references. Beneath the tabular display of a set of homologies, the <STRONG>References</STRONG> line now provides options to view a list of either all the references for a set of homologies, or, view the references for particular species represented in the set. 
+Homology information in MGD is extracted from the scientific literature. This information includes the type of experimental evidence used to support homology assertions. Now, MGD homology query results indicate the criteria for homology assertions. Some homologies are reported by a number of sources. There can be a number of different criteria shown for the same set of homologs. See, for example, the<A HREF="<!--#include file='include/wi_url.html'-->searches/homology_report.cgi?id=MGI:88388"> homology report on the <I>Cftr</I></A> gene. You will see a new <B><A HREF="<!--#include file='include/wi_url.html'-->userdocs/homology_criteria.shtml">Criteria</A></B> column on the right showing, in this example, several values, AA (Amino acid sequence comparison), CL (Conserved map location) and NT (Nucleotide sequence comparison). <P>
+You will also see the <B>Number of References</B> associated with each criterion. The number is linked to the references. Beneath the tabular display of a set of homologies, the <STRONG>References</STRONG> line now provides options to view a list of either all the references for a set of homologies, or, view the references for particular species represented in the set.
 
 <H3>New Options for Searching Polymorphism Information</H3>
-The <A HREF="<!--#include file='include/wi_url.html'-->/searches/polymorphism_form.shtml">Polymorphisms query form</A> now provides the option to search for differences between mouse strains. You enter one or more strains in the <EM>Primary strains</EM> field, enter one or more strains in the <EM>Comparison strains</EM> field, and then execute the search to find the differences between the primary and comparison strains.
+The <A HREF="<!--#include file='include/wi_url.html'-->searches/polymorphism_form.shtml">Polymorphisms query form</A> now provides the option to search for differences between mouse strains. You enter one or more strains in the <EM>Primary strains</EM> field, enter one or more strains in the <EM>Comparison strains</EM> field, and then execute the search to find the differences between the primary and comparison strains.
 <P>
-You can now search for polymorphism information in a region of a chromosome by specifying the end-points of the region. You can search for polymorphisms in the area between two markers (using marker symbols), between two cM positions, between a marker and a cM position, or within a specified number of cM around a locus. 
+You can now search for polymorphism information in a region of a chromosome by specifying the end-points of the region. You can search for polymorphisms in the area between two markers (using marker symbols), between two cM positions, between a marker and a cM position, or within a specified number of cM around a locus.
 <H3>Mouse Gene Records Now Associated with <A HREF="http://www.ncbi.nlm.nih.gov/UniGene/">Unigene</A> Clusters</H3>
-Previously, MGD showed putative associations between mouse genes and ESTs based on information in dbEST records. Now, MGD shows putative associations between genes and I.M.A.G.E. clones based on information in Unigene clusters. In many cases, a MGD mouse gene detail record will include a link to a Unigene cluster in the "Other Database Links" section of the record. See, for example, detail record for <A HREF="<!--#include file='include/wi_url.html'-->/searches/accession_report.cgi?id=MGI:97487">Pax3</A>.
+Previously, MGD showed putative associations between mouse genes and ESTs based on information in dbEST records. Now, MGD shows putative associations between genes and I.M.A.G.E. clones based on information in Unigene clusters. In many cases, a MGD mouse gene detail record will include a link to a Unigene cluster in the "Other Database Links" section of the record. See, for example, detail record for <A HREF="<!--#include file='include/wi_url.html'-->searches/accession_report.cgi?id=MGI:97487">Pax3</A>.
 
 
 <H3>MouseBLAST Prototype</H3></A>
@@ -59,17 +59,17 @@ Also, a new column has been added to the Strain Results page providing links to 
 <!--
 Warranty Disclaimer and Copyright Notice
 
- THE JACKSON LABORATORY MAKES NO REPRESENTATION ABOUT THE SUITABILITY OR 
- ACCURACY OF THIS SOFTWARE OR DATA FOR ANY PURPOSE, AND MAKES NO WARRANTIES, 
- EITHER EXPRESS OR IMPLIED, INCLUDING MERCHANTABILITY AND FITNESS FOR A 
- PARTICULAR PURPOSE OR THAT THE USE OF THIS SOFTWARE OR DATA WILL NOT 
- INFRINGE ANY THIRD PARTY PATENTS, COPYRIGHTS, TRADEMARKS, OR OTHER RIGHTS.  
+ THE JACKSON LABORATORY MAKES NO REPRESENTATION ABOUT THE SUITABILITY OR
+ ACCURACY OF THIS SOFTWARE OR DATA FOR ANY PURPOSE, AND MAKES NO WARRANTIES,
+ EITHER EXPRESS OR IMPLIED, INCLUDING MERCHANTABILITY AND FITNESS FOR A
+ PARTICULAR PURPOSE OR THAT THE USE OF THIS SOFTWARE OR DATA WILL NOT
+ INFRINGE ANY THIRD PARTY PATENTS, COPYRIGHTS, TRADEMARKS, OR OTHER RIGHTS.
  THE SOFTWARE AND DATA ARE PROVIDED "AS IS".
 
- This software and data are provided to enhance knowledge and encourage 
- progress in the scientific community and are to be used only for research 
- and educational purposes.  Any reproduction or use for commercial purpose 
- is prohibited without the prior express written permission of the Jackson 
+ This software and data are provided to enhance knowledge and encourage
+ progress in the scientific community and are to be used only for research
+ and educational purposes.  Any reproduction or use for commercial purpose
+ is prohibited without the prior express written permission of the Jackson
  Laboratory.
 
 Copyright © 1996, 1999, 2002 by The Jackson Laboratory

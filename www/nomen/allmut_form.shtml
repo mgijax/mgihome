@@ -22,11 +22,11 @@ Mutation Submission Form
 
 
 <ul>
-<li>Use this Mutation Submission Form to describe spontaneous, induced, or genetically engineered mutations. 
-<li>Submit information only about those mutations shown to be heritable.  
-<li>Please fill in appropriate information. 
+<li>Use this Mutation Submission Form to describe spontaneous, induced, or genetically engineered mutations.
+<li>Submit information only about those mutations shown to be heritable.
+<li>Please fill in appropriate information.
 <li>Click <b>Submit</b> at the bottom of the form to send this information to MGI for processing.
-<li>If you wish to search for existing alleles, click here: 
+<li>If you wish to search for existing alleles, click here:
 <A HREF="
 <!--#include file='include/wi_url.html'-->searches/allele_form.shtml">Alleles and Phenotypes Query Form</a>
 <li> Thank you for helping us keep the Mouse Genome Database current.
@@ -36,16 +36,16 @@ Mutation Submission Form
 <HR>
 <H3>Naming this Mutation:</H3>
 
-Suggested <B>symbol</B> for this mutation: 
-<INPUT TYPE="text" NAME="allele" SIZE=20> 
+Suggested <B>symbol</B> for this mutation:
+<INPUT TYPE="text" NAME="allele" SIZE=20>
 <BR><BR>
-Suggested <B>name</B> for this mutation: 
-<INPUT TYPE="text" NAME="allelename" SIZE=35> 
+Suggested <B>name</B> for this mutation:
+<INPUT TYPE="text" NAME="allelename" SIZE=35>
 <BR><BR>
 Is this mutation an allele of a <B>known gene</B>?  <BR>
-<DD>If so, enter the <B>gene symbol</B>: 
-<INPUT TYPE="text" NAME="genesymbol" SIZE=15> 
-(Check the gene symbol by 
+<DD>If so, enter the <B>gene symbol</B>:
+<INPUT TYPE="text" NAME="genesymbol" SIZE=15>
+(Check the gene symbol by
 <A HREF=
 "<!--#include file='include/wi_url.html'-->searches/marker_form.shtml
 ">searching MGI</A>.)<BR><BR>
@@ -57,27 +57,27 @@ Nicknames, synonyms for this mutant allele  <INPUT TYPE="text" NAME="synonyms" S
 <BR><BR>
 
 <LI><B>If you need assistance with nomenclature:</B><BR>
- <INPUT TYPE="checkbox" NAME="nomenHelp" VALUE="true">&nbsp; Click here and 
+ <INPUT TYPE="checkbox" NAME="nomenHelp" VALUE="true">&nbsp; Click here and
 continue to the <B>"About this Mutation"</B> section below.<BR>
 We will contact you about nomenclature for this mutation.
 </UL>
 
 <HR>
-<H3>About this Mutation:</H3> 
+<H3>About this Mutation:</H3>
 
 <p>Method of Allele Generation:
 <UL>
-<INPUT TYPE="radio" NAME="method" VALUE="spontaneous">spontaneous  
-<INPUT TYPE="radio" NAME="method" VALUE="ENU">ENU induced 
-<INPUT TYPE="radio" NAME="method" VALUE="EMS">EMS induced 
+<INPUT TYPE="radio" NAME="method" VALUE="spontaneous">spontaneous
+<INPUT TYPE="radio" NAME="method" VALUE="ENU">ENU induced
+<INPUT TYPE="radio" NAME="method" VALUE="EMS">EMS induced
 <INPUT TYPE="radio" NAME="method" VALUE="irradiation">irradiation induced <BR>
-<INPUT TYPE="radio" NAME="method" VALUE="transgenic">transgenic 
-<INPUT TYPE="radio" NAME="method" VALUE="targeting">targeted  
-<INPUT TYPE="radio" NAME="method" VALUE="genetrap">gene trapped  
-<INPUT TYPE="radio" NAME="method" VALUE="conditional">conditional/targeted  
+<INPUT TYPE="radio" NAME="method" VALUE="transgenic">transgenic
+<INPUT TYPE="radio" NAME="method" VALUE="targeting">targeted
+<INPUT TYPE="radio" NAME="method" VALUE="genetrap">gene trapped
+<INPUT TYPE="radio" NAME="method" VALUE="conditional">conditional/targeted
 <INPUT TYPE="radio" NAME="method" VALUE="other">other
 <BR><BR>
-If you chose "other," please specify:  
+If you chose "other," please specify:
 <INPUT TYPE="text" NAME="othermethod" SIZE=25><br>
 For transgenes, please specify transgene promoter:
 <INPUT TYPE="text" NAME="promoter" SIZE=25><br>
@@ -88,16 +88,16 @@ For targeted mutations, please specify ES cell line used:
 <p>Mode of Inheritance:
 
 <ul>
-<INPUT TYPE="radio" NAME="mode" VALUE="dominant">dominant  
+<INPUT TYPE="radio" NAME="mode" VALUE="dominant">dominant
 <INPUT TYPE="radio" NAME="mode" VALUE="codominant">codominant
-<INPUT TYPE="radio" NAME="mode" VALUE="semidominant">semidominant 
-<INPUT TYPE="radio" NAME="mode" VALUE="recessive">recessive  
+<INPUT TYPE="radio" NAME="mode" VALUE="semidominant">semidominant
+<INPUT TYPE="radio" NAME="mode" VALUE="recessive">recessive
 <INPUT TYPE="radio" NAME="mode" VALUE="Xlink">X-linked <BR>
-<INPUT TYPE="radio" NAME="mode" VALUE="other">other, please specify:  
+<INPUT TYPE="radio" NAME="mode" VALUE="other">other, please specify:
 <INPUT TYPE="text" NAME="othermode" SIZE=30>
 </uL>
 
-<p>Chromosome assignment  (Enter UN if unknown):    
+<p>Chromosome assignment  (Enter UN if unknown):
 <INPUT TYPE="text" NAME="chromosome" SIZE=10>
 <BR><BR>
 Other Genome Location Information (cM, cR, or cytogenetic location; molecular location such as "exon 1 deletion," etc.):<BR>
@@ -111,12 +111,12 @@ Strain/Genetic Background on which the mutation arose:
 Strain/Genetic Background on which the phenotype was analyzed:
 <INPUT TYPE="text" NAME="strainPhenotype" SIZE=50>
 <br><br>
-Other Strain/Background Information (e.g. specify crosses):  
-Click here for an <A HREF="alleleform_strainex.shtml">example.</A><br>   
+Other Strain/Background Information (e.g. specify crosses):
+Click here for an <A HREF="alleleform_strainex.shtml">example.</A><br>
 <TEXTAREA NAME="strainInfo" ROWS=4 COLS=65></TEXTAREA>
 <BR>
 <uL>
-<LI><B>If you need assistance with the Genetic Background Section</B><BR> 
+<LI><B>If you need assistance with the Genetic Background Section</B><BR>
 <INPUT TYPE="checkbox" NAME="strainHelp" VALUE="yes">&nbsp; click
 here and continue to the <B>"Phenotype"</B> section below.<BR>
 We will contact you about the genetic background information for this mutation.
@@ -126,8 +126,8 @@ We will contact you about the genetic background information for this mutation.
 <HR>
 <H3>Phenotype:</H3>
 Phenotypic Description (enter text, describing details of phenotype observed, etc.):<BR>
-Click here for an <A HREF="alleleform_phenoex.shtml">example</A>. You may browse the 
-<A HREF="<!--#include file='include/wi_url.html'-->/searches/MP_form.shtml">Mammalian Phenotype Ontology</A> and use these terms to describe the phenotype.<br> 
+Click here for an <A HREF="alleleform_phenoex.shtml">example</A>. You may browse the
+<A HREF="<!--#include file='include/wi_url.html'-->searches/MP_form.shtml">Mammalian Phenotype Ontology</A> and use these terms to describe the phenotype.<br>
 
 <TEXTAREA NAME ="description" ROWS=10 COLS=65></TEXTAREA>
 
@@ -145,8 +145,8 @@ Is this information published? <BR>
 <DL>
 <DT>
 <DD><INPUT TYPE="radio" NAME="published" VALUE="Yes">yes&nbsp;
-<DD><INPUT TYPE="radio" NAME="published" VALUE="No">no&nbsp; 
-</DL>  
+<DD><INPUT TYPE="radio" NAME="published" VALUE="No">no&nbsp;
+</DL>
 If no, would you prefer:<BR>
 <DL>
 <dt>
@@ -207,4 +207,3 @@ Warranty Disclaimer and Copyright Notice
 Copyright © 1996, 1999, 2002 by The Jackson Laboratory
 All Rights Reserved
 -->
-                        
