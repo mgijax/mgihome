@@ -41,7 +41,7 @@ Adult Mouse Anatomical Dictionary Browser</a> provides standardized nomenclature
 <LI>The <A HREF="http://www.genome.gov/glossary.cfm">Glossary of Genetic Terms</A> at the National Human Genome Research Institute defines basic genetic terms most relevant to human genetics. This glossary includes audio explanations and illustrations.</LI>
 <LI>The <A HREF="http://www.ornl.gov/TechResources/Human_Genome/glossary/">Genome Glossary</A> for the Human Genome Project defines many basic genetic terms.</LI><LI>The 
 <A HREF="http://imsr.har.mrc.ac.uk/glossary.html">International Mouse Strain Resources Glossary</A> at Harwell defines mouse cytogenetic and strain terms.</LI><LI>The 
-<A HREF="http://www.ncbi.nlm.nih.gov/entrez/meshbrowser.cgi">MeSH Browser</A> at <A HREF="#NCBI">NCBI</A> contains useful definitions of many terms, organized as a hierarchical controlled vocabulary.</LI><LI>The 
+<A HREF="http://www.ncbi.nlm.nih.gov/entrez/meshbrowser.cgi">MeSH Browser</A> at <A HREF="#NCBI">NCBI</A> contains useful definitions of many terms, organized as a hierarchical <A HREF="<!--#include file='include/glossary_url.html'-->#controlled_vocabulary">controlled vocabulary</a>.</LI><LI>The 
 <A HREF="http://cancerweb.ncl.ac.uk/omd/">On-line Medical Dictionary</A> provides definitions for hundreds of medical terms used in describing mammalian phenotypes, both human and mouse.</LI><LI>The 
 <A HREF="http://www.ncbi.nlm.nih.gov/Education/BLASTinfo/glossary2.html">BLAST Glossary</A> at NCBI defines terms used in searching sequence databases.</LI><LI>The 
 <A HREF="http://www.weihenstephan.de/~schlind/genglos.html">Hypermedia Glossary of Genetic Terms</A> by Birgid Schlindwein contains over 600 genetic terms.</LI></UL>If you find an online glossary that you think should be included here, please contact 
@@ -270,6 +270,10 @@ In MGI and other databases, Boolean refers to the kind of logical relationship a
 <P><DT><B><A NAME="cDNA">cDNA</A></B></dt><dd>Complementary DNA. A <A HREF="#DNA">DNA</A> copy of an 
 <A HREF="#mRNA">mRNA</A> or complex sample of mRNAs, made using <A HREF="#reverse_transcriptase">reverse transcriptase</A>.</dd></p>
 
+
+<P><DT><B><A NAME="cdna_sequencing">cDNA sequencing</A></B></dt>
+<DD>High-throughput analysis of <A href="#cDNA">cDNAs</A>, the representatives of the cell's messenger RNAs <A href="#mRNA">(mRNAs)</A> for gene expression, catalogued either (<A href="#est">ESTs</A> or full length.</dd></p>
+
 <P><DT><B><A NAME="cellcomponent">Cellular Component</A></B></dt><dd>Refers to subcellular structures, locations, and macromolecular complexes. Some examples are <A HREF="#nucleus">nucleus</A>, 
 <A HREF="#telomere">telomere</A> and <B>origin recognition complex</B>. In the GO Project vocabularies, Cellular Component is a primary class of terms. See the <A HREF="http://www.geneontology.org/">GO Consortium</A> site for further information.</dd></p>
 
@@ -491,7 +495,13 @@ Figure</A> at <A HREF="#NHGRI">NHGRI</A>. <BR>See also <A HREF="#central_dogma">
 <A HREF="<!--#include file='include/wi_url.html'-->/searches/mlc.cgi?12398">Pmp22(Tr)</A> 
 <A HREF="#mutation">mutation</A> in mouse, which causes a myelination defect associated with a "trembler" phenotype. Pmp22(Tr)/Pmp22(Tr) and Pmp22(Tr)/Pmp22(+) animals are phenotypically identical, displaying the <A HREF="#mutant">mutant</A> phenotype, while Pmp22(+)/Pmp22(+) animals are
 <A HREF="#wild_type">wild-type</A>. <BR>See also <A HREF="#codominant">Codominant</A>,
-<A HREF="#recessive">Recessive</A>, <A HREF="#semidominant">Semidominant</A>.</dd></p>
+<A HREF="#recessive">Recessive</A>, <A 
+
+
+
+<P><DT><B><A NAME="dots">DoTS</A></B></dt>
+<DD><A HREF="#http://www.allgenes.org/">Database of Transcribed Sequences</a>. DoTS is a human and mouse transcript index created from all publicly available transcript sequences. Input sequences are clustered and assembled to form the DoTS Consensus Transcripts that comprise the index. These transcripts are assigned identifiers of the form DT.123456 (often referred to as "dots"). The transcripts are in turn clustered to form putative DoTS Genes. These are assigned identifiers of the form DG.1234356.</dd></p>
+
 
 <P><DT><B><A NAME="double_helix"></A>Double Helix</b><dd>The shape that two linear strands of <A HREF="#DNA">DNA</A> assume when bonded together.</dd></p>
 
@@ -509,6 +519,8 @@ Figure</A> at <A HREF="#NHGRI">NHGRI</A>. <BR>See also <A HREF="#central_dogma">
 (<A HREF="#DNA">DNA</A>, <A HREF="#RNA">RNA</A> or <A HREF="#protein">protein</A>) in an electrical field, usually in a supporting medium such as an agarose or polyacrylamide gel.</dd></p>
 
 <P><DT><B><A NAME="electroporation">Electroporation</A></B></dt><dd>The use of strong, brief pulses of electric current to create temporary holes in cell <A HREF="#membrane">membranes</A>, allowing the introduction of <A HREF="#DNA">DNA</A>.</dd></p>
+
+<P><DT><B><A NAME="embl">EMBL</A></b></dt><dd><A HREF="#http://www.ebi.ac.uk/embl/">European Molecular Biology Laboratory Nucleotide Sequence Database</a> (also known as EMBL-Bank) constitutes Europe's primary nucleotide sequence resource. Main sources for DNA and RNA sequences are direct submissions from individual researchers, genome sequencing  projects and patent applications. </dd></p>
 
 <P><DT><B><A NAME="embryonic_stem">Embryonic Stem (ES) Cells</A></B></dt><dd>Undifferentiated cells derived from <A HREF="#blastocyst">blastocyst</A>-stage embryos. ES cells can differentiate in culture to a number of different cell types. When incorporated into <A HREF="#chimera">chimeric</A> mouse embryos they are totipotent: they can differentiate into any cell type in the mouse.</dd></p>
 
@@ -567,15 +579,20 @@ Figure</A> at <A HREF="#NHGRI">NHGRI</A>. <BR>See also <A HREF="#central_dogma">
 <A HREF="#penetrance">Penetrance</A>.</dd></p>
 
 <!-- FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF --><A NAME="f"></A>
-
-
-
-<P><DT><B><A NAME="fasta"></A>FASTA format</B><DD>A sequence format beginning with a single-line description followed by lines of sequence data to use for searching bioinformatic BLAST tools. The description line is distinguished from the sequence data by a greater-than (">") symbol in the first column. All lines of text should be shorter than 80 characters in length. Blank lines are not allowed in the middle of FASTA input.</p>
+<P><DT><B><A NAME="fasta"></A>FASTA format</B><DD>A sequence format beginning with a single-line description followed by lines of sequence data for use when  searching bioinformatic BLAST tools. The description line is distinguished from the sequence data by a greater-than (">") symbol in the first column. All lines of text are 80 (or fewer) characters in length. Blank lines are not allowed in the middle of FASTA input.</p>
 <P>An example of a protein sequence in FASTA format is:
 <PRE>
 &gt;GI|129295|sp|P01013|OVAX_CHICK GENE X PROTEIN (OVALBUMIN-RELATED) <br>QIKDLLVSSSTDLDTTLVLVNAIYFKGMWKTAFNAEDTREMPFHVTKQESKPVQMMCMNNSFNVATLPAE <br>KMKILELPFASGDLSMLVLLPDEVSDLERIEKTINFEKLTEWTNPNTMEKRRVKVYLPQMKIEEKYNLTS <br>VLMALGMTDLFIPSANLTGISSAESLKISQAVHGAFMELSEDGIEMAGSTGVIEDIKHSPESEQFRADHP <br>FLFLIKHNPTNTIVYFGRYWSP
 </PRE>
-</P>
+ <p>See also:
+<UL>
+  <LI><a href="<!--#include file='include/mouseblast_url.html'-->mblast_seq_formats.shtml">MouseBLAST Help - Sequence Formats</A></LI>
+    <LI><A href="#free_text">Free-text format</A></LI>
+
+  <LI><A href="#GCG_format">GCG format</A></LI>
+  <LI><A HREF="http://www.genomatix.de/online_help/help/sequence_formats.html">DNA sequence formats</A></LI></UL></dd></p>
+
+
 <P><DT><B><A NAME="field"></A>Field</B><DD>In a <A HREF="#relational_db">relational database</A>, an item of information, such as a <A HREF="#chromosome">chromosome</A> number, or the <A HREF="#centimorgan">centimorgan</A> length on a <A HREF="#genetic_map">genetic map</A>. Some fields are numeric, while others are textual; some are long, while others are short. In addition, every field has a name, called the <i>field name</i>. In <A HREF="#database_management">database management systems</A>, a field can be required, optional, or calculated. A required field is one in which you must enter data, while an optional field is one you may leave blank. A calculated field is one whose value is derived from some formula involving other fields. You do not enter data into a calculated field; the system automatically determines the correct value. A collection of fields is called a 
 <A HREF="#record">record</A>.<br> See also <a href="#parameter">parameter</a>.</dd></p>
 
@@ -595,12 +612,34 @@ Figure</A> at <A HREF="#NHGRI">NHGRI</A>. <BR>See also <A HREF="#central_dogma">
 
 <P><DT><B><A NAME="frameshift">Frameshift</A></B></dt><dd>A type of <A HREF="#mutation">mutation</A> in which there is an <A HREF="#insertion">insertion</A> or <A HREF="#deletion">deletion</A> that changes the <A HREF="#reading_frame">reading frame</A>.</dd></p>
 
+
+<P><DT><B><A NAME="free_text">Free-text format</A></B></dt>
+<DD>A method of retrieving large volumes of unstructured biological data. The purpose is to retrieve all the relevant information (high recall), while including as little of the non-relevant information as possible (high precision). In the case of sequences, for example, the unstructured data can be a string of characters representing that sequence or it can be in the form of free-text. Free-text format may contain <A HREF="
+http://www.genomatix.de/online_help/help/sequence_formats.html#IUPAC">IUPAC characters</A> plus any other characters. The non-IUPAC characters are filtered out.<br>See also:
+<UL>
+  <LI><a href="<!--#include file='include/mouseblast_url.html'-->mblast_seq_formats.shtml">MouseBLAST Help - Sequence Formats</A></LI>
+    <LI><A href="#fasta">FASTA format</A></LI>
+
+  <LI><A href="#GCG_format">GCG format</A></LI>
+  <LI><A HREF="http://www.genomatix.de/online_help/help/sequence_formats.html">DNA sequence formats</A></LI></UL></dd></p>
+
+
 <!-- GGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGG --><A NAME="g"></A>
 <P><DT><B><A NAME="gain-of-function">Gain-of-function Mutation</A></B></dt><dd>A type of <A HREF="#mutation">mutation</A> in which the altered <A HREF="#gene_product">gene product</A> possesses a new <A HREF="#molecular_function">molecular function</A> or a new pattern of <A HREF="#gene_expression">gene expression</A>. Gain-of-function mutations are almost always <A HREF="#dominant">dominant</A> or <A HREF="#semidominant">semidominant</A>. <BR>See also:<UL> <LI>
 <A HREF="#amorphic">Amorphic Mutation</A></LI><LI><A HREF="#antimorphic">Antimorphic utation</A></LI><LI><A HREF="#hypermorphic">Hypermorphic Mutation</A></LI> <LI><A HREF="#hypomorphic">Hypomorphic Mutation</A></LI><LI><A HREF="#loss-of-function">Loss-of-function Mutation</A></LI><LI><A HREF="#neomorphic">Neomorphic Mutation</A></LI><LI><A HREF="#null_mutation">Null Mutation</A></LI></UL></dd></p>
 
 <P><DT><B><A NAME="gamete">Gamete</A></B></dt><dd>One of the differentiated cells that is a product of 
 <A HREF="#meiosis">meiosis</A>. In animals, sperm or egg cells.</dd></p>
+
+
+<P><DT><B><A NAME="GCG_format">GCG format</A></B></dt>
+<DD>A sequence file in GCG format contains exactly one sequence, begins with annotation lines, and marked by a line ending with two dot ("..") characters at the start of the sequence.  <br>
+See also:
+<ull>
+ <LI><a href="<!--#include file='include/mouseblast_url.html'-->mblast_seq_formats.shtml">MouseBLAST Help - Sequence Formats</A></LI>
+<LI><A href="#fasta">FASTA format</A></LI>
+<LI><A href="#free_text">Free-text format</A></LI> 
+<LI><A HREF="http://www.genomatix.de/online_help/help/sequence_formats.html">DNA sequence formats</A></LI></dd></p>
 
 <P><DT><B><A NAME="GDB">GDB</A></B></dt><dd>The <A HREF="http://gdb.mirror.edu.cn/">Genome Database</a>, a database of human genes. Links to GDB are returned when human genes are displayed, for example in the results of a query using the <A HREF="http://www.informatics.jax.org/searches/homology_form.shtml">Mammalian Homology Query Form</A>.</dd></p>
 
@@ -989,6 +1028,9 @@ See also  <A href="#knockin">Knock in</a>.
 
 <P><DT><B><A NAME="interim">Interim</A></B></dt><dd>In MGI, if the nomenclature is being reviewed, we append the term <i>interim</i> to the gene symbol.</dd></p>
 
+<P><DT><B><A NAME="interpro">InterPro domain</A></B></dt>
+<DD><A HREF="http://www.ebi.ac.uk/interpro/">InterPro</A> at EMBL/EBI is a database of protein families, domains, and functional sites in which identifiable features found in known proteins can be applied to unknown protein sequences.</dd></p>
+
 <P><DT><B><A NAME="intron">Intron</A></B></dt><dd>Part of a 
 <A HREF="#gene">gene</A> whose sequence is 
 <A HREF="#transcription">transcribed</A> but not present in a mature
@@ -1122,23 +1164,21 @@ See also  <A href="#knockin">Knock in</a>.
 <A HREF="#recombination">recombination</A>,
 <A HREF="#deletion">deletion</A>, or
 <A HREF="#gene_conversion">gene conversion</A>. "Loss of heterozygosity (LOH)" events are often important steps in tumor progression. See the
-<A HREF="http://www.people.virginia.edu/~rjh9u/lohanim.html">animation</A> of this concept by Robert J. Huskey at the Univeristy of Virginia.
+<A HREF="http://www.people.virginia.edu/~rjh9u/lohanim.html">animation</A> of this concept by Robert J. Huskey at the Univeristy of Virginia.</dd></p>
 
-</dd></p><P><DT><B><A NAME="loxP">loxP Sequence</A></B></dt><dd>A 34 base pair
+<P><DT><B><A NAME="loxP">loxP Sequence</A></B></dt><dd>A 34 base pair
 <A HREF="#DNA">DNA</A> sequence recognized by the
 <A HREF="#site-specific_recombination">site-specific recombination</A>
 <A HREF="#enzyme">enzyme</A>
-<A HREF="#Cre">Cre</A>.
+<A HREF="#Cre">Cre</A>.</dd></p>
 
 <!-- MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM --><A NAME="m"></A>
 
-</dd></p><P><DT><B><A NAME="mp_ontology">Mammalian Phenotype Ontology</A></B></dt><dd>A 
+<P><DT><B><A NAME="mp_ontology">Mammalian Phenotype Ontology</A></B></dt><dd>A 
 <A HREF="#controlled_vocabulary">controlled vocabulary</A> used to describe biological features within a specified domain of biological knowledge. See the 
-<A HREF="http://www.geneontology.org/">GO Consortium</A> site for further information.
+<A HREF="http://www.geneontology.org/">GO Consortium</A> site for further information.</dd></p>
 
-
-
-</dd></p><P><DT><B><A NAME="marker">Marker</A></B></dt><DD>
+<P><DT><B><A NAME="marker">Marker</A></B></dt><DD>
 <ol>
 <li> Any biological feature that can be positioned with respect to other features on a chromosome, by genetic, physical or other mapping methods. For example, a gene, anonymous DNA segment, mutation, or phenotype.
 <li>A feature that distinguishes a particular biological state. For example, an expression profile of natural or engineered genes, or a characteristic morphology.
@@ -1151,21 +1191,21 @@ See also  <A href="#knockin">Knock in</a>.
 <A HREF="#bac_end">BAC/YAC end</a>,
 <A HREF="#feature"> Other Genome Feature</a>, or 
 <A HREF="#complex">Complex/Cluster/Region</a>.
-</OL></dd>
+</OL></dd></p>
 
-</dd></p><P><DT><B><A NAME="megabase">Megabase</A></B></dt>
+<P><DT><B><A NAME="megabase">Megabase</A></B></dt>
 <DD>Unit of
 <A HREF="#DNA">DNA</A> or
 <A HREF="#RNA">RNA</A> sequence equal to one million
-<A HREF="#nucleotide">nucleotides</A>.
+<A HREF="#nucleotide">nucleotides</A>.</dd></p>
 
-</dd></p><P><DT><B><A NAME="meiosis">Meiosis</A></B></dt>
+<P><DT><B><A NAME="meiosis">Meiosis</A></B></dt>
 <DD>A pair of nuclear divisions forming
 <A HREF="#gamete">gametes</A> wherein the number of
 <A HREF="#chromosome">chromosomes</A> is reduced from the diploid to the haploid number; resulting cells normally contain one member of each pair of
-<A HREF="#homolog">homologous</A> chromosomes.</dd>
+<A HREF="#homolog">homologous</A> chromosomes.</dd></p>
 
-</dd></p><P><DT><B><A NAME="membrane">Membrane</A></B></dt>
+<P><DT><B><A NAME="membrane">Membrane</A></B></dt>
 <DD>
 <ol>
 <li>A phospholipid bilayer that forms a
@@ -1174,43 +1214,41 @@ See also  <A href="#knockin">Knock in</a>.
 <A HREF="#southern_blot">Southern blots</A>, <A HREF="#northern_blot">Northern blots</A>, or
 <A HREF="#western_blot">Western blots</A>.
 </ol>
-</dd>
+</dd></p>
 
-</dd></p><P><DT><B><A NAME="mendelian">Mendelian</A></B></dt>
-<DD>
-<ol>
-<li>That type of inheritance in which a specific <A HREF="#trait">trait</A> is affected by a set of <A HREF="#allele">alleles</A> of a single <A HREF="#gene">gene</A>.
+<P><DT><B><A NAME="mendelian">Mendelian</A></B></dt>
+<DD><ol><li>That type of inheritance in which a specific <A HREF="#trait">trait</A> is affected by a set of <A HREF="#allele">alleles</A> of a single <A HREF="#gene">gene</A>.
 <li>That type of inheritance in which genetic information is transmitted by one or more <A HREF="#nucleus">nuclear</A> genes, as opposed to cytoplasmic or
 <A HREF="#epigenetic">epigenetic</A> mechanisms.
 </ol>
-</dd>
+</dd></p>
 
-</dd></p><P><DT><B><A NAME="metadata"></A>Metadata</B></dt>
+<P><DT><B><A NAME="metadata"></A>Metadata</B></dt>
 <DD>Data about data. In data processing, metadata is definitional data providing information about or documentation of other data managed within an application or environment, 
 for example, data about a) data elements or attributes (name, size, data type, etc.), b) records or data structures (length, 
-<A HREF="#field">fields</A>, columns, etc.) and c) data (where located, how associated, what ownership, and so on). Metadata may include descriptive information about the context, quality and condition, or characteristics of the data.
+<A HREF="#field">fields</A>, columns, etc.) and c) data (where located, how associated, what ownership, and so on). Metadata may include descriptive information about the context, quality and condition, or characteristics of the data.</dd></p>
 
-</dd></p><P><DT><B><A NAME="MGD">MGD</A></B>
+<P><DT><B><A NAME="MGD">MGD</A></B>
 <DD>
 <A HREF="<!--#include file='include/mgihome_url.html'-->MGD/aboutMGD.shtml">Mouse Genome Database</A>. One of several databases integrated into
 <A HREF="#MGI">MGI</A>, containing data on the
-<A HREF="#gene">genes</A> of the mouse.
+<A HREF="#gene">genes</A> of the mouse.</dd></p>
 
-</dd></p><P><DT><B><A NAME="MGI">MGI</A></B></dt><dd>
+<P><DT><B><A NAME="MGI">MGI</A></B></dt><dd>
 <A HREF="<!--#include file='include/wi_url.html'-->">Mouse Genome Informatics</A>. The collection of bioinformatics projects at The Jackson Laboratory including
 <A HREF="<!--#include file='include/mgihome_url.html'-->MGD/aboutMGD.shtml">MGD</A>,
 <A HREF="<!--#include file='include/mgihome_url.html'-->GXD/aboutGXD.shtml">GXD</A>,
 <A HREF="<!--#include file='include/mgihome_url.html'-->MGS/mgs.shtml">MGS</A>, and
-<A HREF="http://tumor.informatics.jax.org/FMPro?-db=TumorInstance&-format=mtdp.html&-view">MTB</A>.
+<A HREF="http://tumor.informatics.jax.org/FMPro?-db=TumorInstance&-format=mtdp.html&-view">MTB</A>.</dd></p>
 
-</dd></p><P><DT><B><A NAME="MGS">MGS</A></B></dt><dd>
+<P><DT><B><A NAME="MGS">MGS</A></B></dt><dd>
 <A HREF="<!--#include file='include/mgihome_url.html'-->MGS/mgs.shtml">Mouse Genome Sequence Project</A>. A specific project at
 <A HREF="#MGI">MGI</A>. The overall goal of the Mouse Genome Sequence (MGS) project is to integrate emerging mouse 
 <A HREF="#genome">genomic</A> sequence data with the genetic and biological data available in 
 <A HREF="#MGD">MGD</A> and
-<A HREF="#GXD">GXD</A>.
+<A HREF="#GXD">GXD</A>.</dd></p>
 
-</dd></p><P><DT><B><A NAME="microarray"></A>Microarray</B><DD>An array of hundreds or thousands of spots containing specific 
+<P><DT><B><A NAME="microarray"></A>Microarray</B><DD>An array of hundreds or thousands of spots containing specific 
 <A HREF="#DNA">DNA</A> sequences for the analysis of 
 <A HREF="#gene_expression">gene expression</A> by 
 <A HREF="#hybridization">hybridization</A>. Microarrays are used to detect changes in gene expression by comparing radioactively- or chemically-labeled 
@@ -1229,74 +1267,73 @@ for example, data about a) data elements or attributes (name, size, data type, e
 <A HREF="#DNA">DNA</A> that consists of multiple tandem repeats of a two or three base-pair sequence. Microsatellites expand and contract (that is, add or remove repeat units) with a frequency much higher than other types of
 <A HREF="#mutation">mutations</A>, making them useful as
 <A HREF="#polymorphism">polymorphic</A>
-<A HREF="#marker">markers</A> in closely related mouse strains.
+<A HREF="#marker">markers</A> in closely related mouse strains.</dd></p>
 
-</dd></p><P><DT><B><A NAME="microtubule">Microtubule</A></B></dt><dd>A cytoskeletal element of eukaryotic cells that is a long, generally straight, hollow tube with an external diameter of 24 nm, consisting of polymerized monomers of tubulin. Microtubules make up the bulk of the
-<A HREF="#spindle">spindle</A>.
+<P><DT><B><A NAME="microtubule">Microtubule</A></B></dt><dd>A cytoskeletal element of eukaryotic cells that is a long, generally straight, hollow tube with an external diameter of 24 nm, consisting of polymerized monomers of tubulin. Microtubules make up the bulk of the
+<A HREF="#spindle">spindle</A>.</dd>
 
-</dd></p><P><DT><B><A NAME="MIT_marker">MIT marker</A></B></dt><dd>One of a large series of
+</p><P><DT><B><A NAME="MIT_marker">MIT marker</A></B></dt><dd>One of a large series of
 <A HREF="#microsatellite">microsatellite</A> markers in the mouse, developed at the Massachusetts Institute of Technology. These markers have been used to align the
 <A HREF="#physical_map">physical</A> and
-<A HREF="#linkage_map">linkage maps</A> in mouse.
+<A HREF="#linkage_map">linkage maps</A> in mouse.</dd></p>
 
-
-</dd></p><P><DT><B><A NAME="mitochondria">Mitochondria</A></B>
+<P><DT><B><A NAME="mitochondria">Mitochondria</A></B>
 <DD>The
 <A HREF="#organelle">organelles</A> that generate 
 energy in eukaryotic cells. Mitochondria have their own
 <A HREF="#genome">genome</A> encoding a subset of the
 <A HREF="#protein">proteins</A> found in mitochondria; 
 the mitochondrial genome uses an alternate
-<A HREF="#genetic_code">genetic code</A>.
+<A HREF="#genetic_code">genetic code</A>.</dd></p>
 
-</dd></p><P><DT><B><A NAME="mitochondrial">Mitochondrial gene</A></B></dt><dd>A 
+<P><DT><B><A NAME="mitochondrial">Mitochondrial gene</A></B></dt><dd>A 
 <A HREF="#gene">gene</A> contained within the mitochondrial 
 <A HREF="#genome">genome</A> of a eukaryote, transmitted independently of the nuclear genome. The mitochondrial genome is transmitted maternally (from the female 
-<A HREF="#parent">parent</a>).
+<A HREF="#parent">parent</a>).</dd></p>
 
-</dd></p><P><DT><B><A NAME="mitosis">Mitosis</A></B></dt><dd>The division of the replicated
+<P><DT><B><A NAME="mitosis">Mitosis</A></B></dt><dd>The division of the replicated
 <A HREF="#chromosome">chromosomes</A> of a eukaryotic cell into two daughter
 <A HREF="#nucleus">nuclei</A> that are genetically identical to that of the original cell. See the
 <A HREF="http://www.genome.gov/Pages/Hyperion//DIR/VIP/Glossary/Illustration/metaphase.html">Figure</A> at
-<A HREF="#NHGRI">NHGRI</A>.
+<A HREF="#NHGRI">NHGRI</A>.</dd></p>
 
-</dd></p><P><DT><B><A NAME="MLC">MLC</A></B></dt><dd>Mouse Locus Catalog at
+<P><DT><B><A NAME="MLC">MLC</A></B></dt><dd>Mouse Locus Catalog at
 <A HREF="#MGI">MGI</A>. A description of
 <A HREF="#phenotype">phenotypic</A> effects of mutations in the mouse. It also contains brief summaries of information on some
 <A HREF="#gene">genes</A> for which no mutant
-<A HREF="#allele">alleles</A> are known.
+<A HREF="#allele">alleles</A> are known.</dd></p>
 
-</dd></p><P><DT><B><A NAME="mobile_genetic">Mobile Genetic Element</A></B></dt><dd>A
+<P><DT><B><A NAME="mobile_genetic">Mobile Genetic Element</A></B></dt><dd>A
 <A HREF="#DNA">DNA</A> segment carried within the
 <A HREF="#chromosome">chromosomes</A> that is capable of moving to new sites in the
 <A HREF="#genome">genome</A> other than by
 <A HREF="#mutation">mutation</A>. <BR>See also
-<A HREF="#retrotransposon">Retrotransposon</A>.
+<A HREF="#retrotransposon">Retrotransposon</A>.</dd></p>
 
-</dd></p><P><DT><B><A NAME="molecular_function">Molecular Function</A></B></dt><dd>Refers to the tasks or activities characteristic of particular
+<P><DT><B><A NAME="molecular_function">Molecular Function</A></B></dt><dd>Refers to the tasks or activities characteristic of particular
 <A HREF="#gene">gene</A> products. For example, <B>transcription factor</B> refers to one of a number of
 <A HREF="#protein">proteins</A> performing similar tasks. In the GO Project vocabularies, Molecular Function is a primary class of terms. See the
-<A HREF="http://www.geneontology.org/">GO Consortium</A> site for further information.
+<A HREF="http://www.geneontology.org/">GO Consortium</A> site for further information.</dd></p>
 
-</dd></p><P><DT><B><A NAME="monoclonal">Monoclonal Antibody</A></B></dt><dd>An
-<A HREF="#antibody">antibody</A> produced by cultured cells that have their origin in a single antibody-producing cell, and which is therefore of a single molecular type, in contrast to the <B>polyclonal</B> antibodies normally found in the serum of an immunized animal.
+<P><DT><B><A NAME="monoclonal">Monoclonal Antibody</A></B></dt><dd>An
+<A HREF="#antibody">antibody</A> produced by cultured cells that have their origin in a single antibody-producing cell, and which is therefore of a single molecular type, in contrast to the <B>polyclonal</B> antibodies normally found in the serum of an immunized animal.</dd></p>
 
-</dd></p><P><DT><B><A NAME="monosomy">Monosomy</A></B></dt><dd>The condition of having a single
+<P><DT><B><A NAME="monosomy">Monosomy</A></B></dt><dd>The condition of having a single
 <A HREF="#chromosome">chromosome</A> of a particular type; lacking a
 <A HREF="#homolog">homologous</A> chromosome. Normal male mice are monosomic for the
 <A HREF="#X_chromosome">X chromosome</A>. <BR>See also
-<A HREF="#trisomy">Trisomy</A>.
+<A HREF="#trisomy">Trisomy</A>.</dd></p>
 
-</dd></p><P><DT><B><A NAME="mosaic">Mosaic</A></B></dt><dd>An individual consisting of cells of two or more
+<P><DT><B><A NAME="mosaic">Mosaic</A></B></dt><dd>An individual consisting of cells of two or more
 <A HREF="#genotype">genotypes</A>. One example is that of a normal female mammal
 <A HREF="#heterozygous">heterozygous</A> for different
 <A HREF="#allele">alleles</A> of
 <A HREF="#X_chromosome">X-chromosome</A>
 <A HREF="#gene">genes</A>; because of the process of
 <A HREF="#X_inactivation">X-inactivation</A>, such females consist of two cell types, each with a different X chromosome inactivated.This is an unusual example because there is no actual difference in genotype between the two cell types, but rather there is an
-<A HREF="#epigenetic">epigenetic</A> difference.
+<A HREF="#epigenetic">epigenetic</A> difference.</dd></p>
 
-</dd></p><P><DT><B><A NAME="mRNA">mRNA</A></B></dt><dd>Messenger RNA. An
+<P><DT><B><A NAME="mRNA">mRNA</A></B></dt><dd>Messenger RNA. An
 <A HREF="#RNA">RNA</A> molecule that is the product of 
 <A HREF="#transcription">transcription</A> of a
 <A HREF="#gene">gene</A>, after that molecule has been 
@@ -1305,25 +1342,28 @@ the mitochondrial genome uses an alternate
 <A HREF="#translation">translated</A> into a
 <A HREF="#protein">protein</A> product. See the 
 <A HREF="http://www.genome.gov/Pages/Hyperion//DIR/VIP/Glossary/Illustration/mrna.html">Figure</A> at 
-<A HREF="#NHGRI">NHGRI</A>. <BR>See also <A HREF="#central_dogma">Central Dogma</A>.
+<A HREF="#NHGRI">NHGRI</A>. <BR>See also <A HREF="#central_dogma">Central Dogma</A>.</dd></p>
 
-</dd></p><P><DT><B><A NAME="MTB">MTB</A></B></dt><dd>
-<A HREF="http://tumor.informatics.jax.org/FMPro?-db=TumorInstance&-format=mtdp.html&-view">Mouse Tumor Biology Database</A>. One of several databases at
-<A HREF="#MGI">MGI</A>, containing data on the mouse tumor biology.
+<P><DT><B><A NAME="MTB">MTB</A></B></dt>
+<dd><A HREF="http://tumor.informatics.jax.org/FMPro?-db=TumorInstance&-format=mtdp.html&-view">Mouse Tumor Biology Database</A>. One of several databases at <A HREF="#MGI">MGI</A>, containing data on the mouse tumor biology.</dd></p>
 
-</dd></p><P><DT><B><A NAME="mutagen">Mutagen</A></B></dt><dd>An agent that causes
-<A HREF="#mutation">mutations</A>.
+<P><DT><B><A NAME="mutagen">Mutagen</A></B></dt>
+<dd>An agent that causes <A HREF="#mutation">mutations</A>.</dd></p>
 
-</dd></p><P><DT><B><A NAME="mutant">Mutant</A></B></dt><dd><ol><li>A term applied to a
-<A HREF="#gene">gene</a> or
-<A HREF="#phenotype">phenotype</A> altered by
-<A HREF="#mutation">mutation</A>.</li><li>An individual carrying a mutation.</li></ol></dd>
+<P><DT><B><A NAME="mutant">Mutant</A></B></dt>
+<dd><ol>
+<li>A term applied to a <A HREF="#gene">gene</a> or <A HREF="#phenotype">phenotype</A> altered by <A HREF="#mutation">mutation</A>.</li>
+<li>An individual carrying a mutation.</li>
+</ol></dd></p>
 
-</dd></p><P><DT><B><A NAME="mutation">Mutation</A></B></dt><DD><ol><li>The process through which 
-<A HREF="#gene">genes</A> undergo a structural change.</li><li>Any permanent change in
-<A HREF="#DNA">DNA</A>, i.e., in its <A HREF="#nucleotide">nucleotide</A> sequence. Examples include <A HREF="#chromosome_rearrangement">chromosome rearrangements</A> and
-<A HREF="#point_mutation">point mutations</A>. <BR>See also:
-<UL><LI><A HREF="#chromosome_rearrangement">Chromosome Rearrangement</A></LI>
+<P><DT><B><A NAME="mutation">Mutation</A></B></dt>
+<DD><ol><li>The process through which <A HREF="#gene">genes</A> undergo a structural change.</li>
+   <li>Any permanent change in <A HREF="#DNA">DNA</A>, i.e., in its 
+<A HREF="#nucleotide">nucleotide</A> sequence. Examples include 
+<A HREF="#chromosome_rearrangement">chromosome rearrangements</A> and 
+<A HREF="#point_mutation">point mutations</A>. </ol><BR>See also:
+<UL>
+<LI><A HREF="#chromosome_rearrangement">Chromosome Rearrangement</A></LI>
 <LI><A HREF="#deletion">Deletion</A></LI>
 <LI><A HREF="#insertion">Insertion</A></LI>
 <LI><A HREF="#inversion">Inversion</A></LI>
@@ -1332,18 +1372,19 @@ the mitochondrial genome uses an alternate
 <LI><A HREF="#transition">Point Mutation (Transition)</A></LI>
 <LI><A HREF="#transversion">Point Mutation (Transversion)</A></LI>
 <LI><A HREF="#translocation">Translocation</A></LI>
-<LI><A HREF="#transposition">Transposition</A></LI>.
-</UL></li></ol></dd>
+<LI><A HREF="#transposition">Transposition</A>.</LI>
+</UL>
+</dd></p>
 
-<!-- NNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNN --><A NAME="n"></A>
-</dd></p><P><DT><B><A NAME="name">Name</A></B></dt><DD><ol><li>As used in <A HREF="#MGI">MGI</A>, a 
-<A HREF="#gene">gene</A> "name" is a word or phrase that uniquely identifies a gene. The gene name has an abbreviation that is the <A HREF="#gene_symbol">gene symbol</A>.<li>As used in MGI, an <A HREF="#allele">allele</A> "name" is a word or phrase that uniquely identifies a particular allele of a gene. The allele name has an abbreviation that is the <A HREF="#allele_symbol">allele symbol</A>.</li></ol></dd>
+<!-----<!-- NNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNN --><A NAME="n"></A>
 
+<P><DT><B><A NAME="name">Name</A></B></dt><DD><ol><li>As used in <A HREF="#MGI">MGI</A>, a 
+<A HREF="#gene">gene</A> "name" is a word or phrase that uniquely identifies a gene. The gene name has an abbreviation that is the <A HREF="#gene_symbol">gene symbol</A>.<li>As used in MGI, an <A HREF="#allele">allele</A> "name" is a word or phrase that uniquely identifies a particular allele of a gene. The allele name has an abbreviation that is the <A HREF="#allele_symbol">allele symbol</A>.</li></ol></dd></p>
 
-</dd></p><P><DT><B><A NAME="NCBI">NCBI</A></B></dt><dd>
-<A HREF="http://www.ncbi.nlm.nih.gov/">National Center for Biotechnology Information</A>.
+<P><DT><B><A NAME="NCBI">NCBI</A></B></dt><dd>
+<A HREF="http://www.ncbi.nlm.nih.gov/">National Center for Biotechnology Information</A>.</dd></p>
 
-</dd></p><P><DT><B><A NAME="neomorphic">Neomorphic Mutation</A></B></dt><dd>A type of 
+<P><DT><B><A NAME="neomorphic">Neomorphic Mutation</A></B></dt><dd>A type of 
 <A HREF="#mutation">mutation</A> in which the altered 
 <A HREF="#gene_product">gene product</A> possesses a novel 
 <A HREF="#molecular_function">molecular function</A> or a novel pattern of 
@@ -1356,29 +1397,33 @@ the mitochondrial genome uses an alternate
 <A HREF="#hypermorphic">Hypermorphic Mutation</A></LI><LI>
 <A HREF="#hypomorphic">Hypomorphic Mutation</A></LI><LI>
 <A HREF="#loss-of-function">Loss-of-function Mutation</A></LI><LI>
-<A HREF="#null_mutation">Null Mutation</A></LI></UL>
+<A HREF="#null_mutation">Null Mutation</A></LI></UL></dd></p>
 
+<P><DT><B><A NAME="neonatal">Neonatal</A></B></dt><dd>Newborn.</dd></p>
 
-</dd></p><P><DT><B><A NAME="neonatal">Neonatal</A></B></dt><dd>Newborn.
+<P><DT><B><A NAME="NHGRI">NHGRI</A></B></dt><dd>
+<A HREF="http://www.nhgri.nih.gov/">National Human Genome Research Institute</A>.</dd></p>
 
-</dd></p><P><DT><B><A NAME="NHGRI">NHGRI</A></B></dt><dd>
-<A HREF="http://www.nhgri.nih.gov/">National Human Genome Research Institute</A>.
-
-</dd></p><P><DT><B><A NAME="noncoding_RNA">Noncoding RNA</A></B></dt><dd>An 
+<P><DT><B><A NAME="noncoding_RNA">Noncoding RNA</A></B></dt><dd>An 
 <A HREF="#RNA">RNA</A> molecule that functions structurally or catalytically (see 
 <A HREF="#ribozyme">ribozyme</A>) without being 
 <A HREF="#translation">translated</A>. Noncoding RNAs lack conserved 
 <A HREF="#open_reading_frame">open reading frames</A>. One example is 
-<A HREF="<!--#include file='include/wi_url.html'-->/searches/mlc.cgi?14506">Xist</A>.
+<A HREF="<!--#include file='include/wi_url.html'-->/searches/mlc.cgi?14506">Xist</A>.</dd></p>
 
-</dd></p><P><DT><B><A NAME="non-mendelian">Non-Mendelian</A></B></dt>
+<P><DT><B><A NAME="nia">NIA Mouse Gene Index</A></B></dt>
+<DD>Developmental Genomics and Aging Section
+Laboratory of Genetics,<A href="http://lgsun.grc.nia.nih.gov/cDNA/cDNA.html">National Institute on Aging, National Institutes of Health</a>. An index of of approximately 30,000 total mouse genes that includes 977 previously unidentified genes from sources that include oocytes, blastocysts, and embryonic and adult stem cells. The 249,200 high-quality EST sequences are clustered with public sequences to produce the index.</dd></p>
+
+
+<P><DT><B><A NAME="non-mendelian">Non-Mendelian</A></B></dt>
 <DD><ol><li>That type of inheritance in which a specific <A HREF="#trait">trait</A> is affected by a set of <A HREF="#allele">alleles</A> of a multiple <A HREF="#gene">genes</A>. Synonym: 
 <A HREF="#polygenic">Polygenic</A></li>
 <li>That type of inheritance in which genetic information is transmitted other than by 
 <A HREF="#nucleus">nuclear</A> genes. See <A HREF="#epigenetic">Epigenetic</A>, 
-<A HREF="#mitochondria">Mitochondria</A>.</li></ol></dd>
+<A HREF="#mitochondria">Mitochondria</A>.</li></ol></dd></p>
 
-</dd></p><P><DT><B><A NAME="northern_blot">Northern Blot</A></B></dt><dd>An assay that detects specific 
+<P><DT><B><A NAME="northern_blot">Northern Blot</A></B></dt><dd>An assay that detects specific 
 <A HREF="#RNA">RNA</A> molecules using a 
 <A HREF="#DNA">DNA</A> or RNA 
 <A HREF="#probe">probe</A> with sequence similarity. Samples are subjected to 
@@ -1387,43 +1432,42 @@ with a radioactively- or chemically-labeled probe. See one of the
 <A HREF="<!--#include file='include/wi_url.html'-->/searches/image.cgi?1785">Figures</A> from 
 <A HREF="#GXD">GXD</A> for an example. <BR>See also 
 <A HREF="#southern_blot">Southern blot</A> and 
-<A HREF="#western_blot">Western blot</A>.
+<A HREF="#western_blot">Western blot</A>.</dd></p>
 
-</dd></p><P><DT><B><A NAME="nucleic_acid">Nucleic Acid</A></B></dt><dd>
+<P><DT><B><A NAME="nucleic_acid">Nucleic Acid</A></B></dt><dd>
 <A HREF="#DNA">DNA</A> or 
 <A HREF="#RNA">RNA</A>. Each of these compounds consists of a backbone of sugar molecules (ribose for RNA and deoxyribose for DNA) linked by single phosphate groups. Attached to the sugars of the backbone are any of four nitrogenous 
 <A HREF="#base">bases</A>, A, T, C or G for DNA and A, U, C or G for RNA. See the
 <A HREF="http://www.genome.gov/Pages/Hyperion//DIR/VIP/Glossary/Illustration/rna.html">Figure</A> at 
-<A HREF="#NHGRI">NHGRI</A>.
+<A HREF="#NHGRI">NHGRI</A>.</dd></p>
 
-</dd></p><P><DT><B><A NAME="nucleotide">Nucleotide</A></B></dt><dd>A monomer unit of 
+<P><DT><B><A NAME="nucleotide">Nucleotide</A></B></dt><dd>A monomer unit of 
 <A HREF="#nucleic_acid">nucleic acid</A>, consisting of a 
 <A HREF="#purine">purine</A> or 
-<A HREF="#pyrimidine">pyrimidine</A> base, a sugar molecule (ribose or deoxyribose), and phosphate group(s).
+<A HREF="#pyrimidine">pyrimidine</A> base, a sugar molecule (ribose or deoxyribose), and phosphate group(s).</dd></p>
 
-</dd></p><P><DT><B><A NAME="nucleotide_repeat">Nucleotide Repeat Expansion</A></B></dt><dd>A type of 
+<P><DT><B><A NAME="nucleotide_repeat">Nucleotide Repeat Expansion</A></B></dt><dd>A type of 
 <A HREF="#mutation">mutation</A> in which a set of tandemly repeated sequences 
 <A HREF="#replication">replicates</A> inaccurately to increase the number of repeats. An example of this kind of mutation in humans is the <A HREF="http://www.ncbi.nlm.nih.gov/entrez/dispomim.cgi?id=309550">FMR1</A></A> gene. <BR>See also 
-<A HREF="#microsatellite">Microsatellite</A>.
+<A HREF="#microsatellite">Microsatellite</A>.</dd></p>
 
-</dd></p><P><DT><B><A NAME="nucleotide_substitution">Nucleotide Substitution</A></B></dt><dd>A 
-<A HREF="#point_mutation">point mutation</A>.
+<P><DT><B><A NAME="nucleotide_substitution">Nucleotide Substitution</A></B></dt><dd>A 
+<A HREF="#point_mutation">point mutation</A>.</dd></p>
 
-</dd></p><P><DT><B><A NAME="nucleus">Nucleus</A></B></dt><dd>The 
+<P><DT><B><A NAME="nucleus">Nucleus</A></B></dt><dd>The 
 <A HREF="#organelle">organelle</A> in a eukaryotic cell that contains the 
 <A HREF="#chromosome">chromosomes</A>. In most types of eukaryotic cells, the nucleus breaks down as chromosomes condense during cell division. See the 
 <A HREF="http://www.genome.gov/Pages/Hyperion//DIR/VIP/Glossary/Illustration/nucleus.html">Figure</A> at 
-<A HREF="#NHGRI">NHGRI</A>.
+<A HREF="#NHGRI">NHGRI</A>.</dd></p>
 
-</dd></p><P><DT><B><A NAME="null"></A>Null</B>
+<P><DT><B><A NAME="null"></A>Null</B>
 <DD>In mathematics, a set with no members or of zero magnitude. If a field has a value of null, it means that the value is unknown. A null value is not the same as a value of zero. 
-(To appreciate the difference, consider the terms "free" and "priceless." If something is free, it has a price of zero. If something is priceless, it has no known price. 
-The difference between null and zero can be crucial; for example, when calculating the average value of a 
+(To appreciate the difference, consider the terms "free" and "priceless." If something is free, it has a price of zero. If something is priceless, it has no known price. The difference between null and zero can be crucial; for example, when calculating the average value of a 
 <A HREF="#field">field</a> among many 
 <A HREF="#record">records</a> where one row contains a zero, the zero gets factored into the average. If the field has a null value, it does not get factored in to the average.) 
-<!--Some fields permit null values. Others can be defined to require a non-null value. For example, if a field must contain a value of Y or N, the column can be defined so that it rejects null values.-->
+<!--Some fields permit null values. Others can be defined to require a non-null value. For example, if a field must contain a value of Y or N, the column can be defined so that it rejects null values.--></dd></p>
 
-</dd></p><P><DT><B><A NAME="null_mutation">Null Mutation</A></B></dt><dd>A type of
+<P><DT><B><A NAME="null_mutation">Null Mutation</A></B></dt><dd>A type of
 <A HREF="#mutation">mutation</A> in which the altered
 <A HREF="#gene_product">gene product</A> lacks the
 <A HREF="#molecular_function">molecular function</A> of the
@@ -1435,230 +1479,230 @@ The difference between null and zero can be crucial; for example, when calculati
 <A HREF="#gain-of-function">Gain-of-function Mutation</A></LI><LI>
 <A HREF="#hypermorphic">Hypermorphic Mutation</A></LI><LI>
 <A HREF="#hypomorphic">Hypomorphic Mutation</A></LI><LI>
-<A HREF="#neomorphic">Neomorphic Mutation</A></LI></UL>
+<A HREF="#neomorphic">Neomorphic Mutation</A></LI></UL></dd></p>
 
-</dd></p><P><DT><B><A NAME="numerical_aberration">Numerical Aberration</A></B></dt><dd>A change in the number of 
+<P><DT><B><A NAME="numerical_aberration">Numerical Aberration</A></B></dt><dd>A change in the number of 
 <A HREF="#chromosome">chromosomes</A> from the
 <A HREF="#wild_type">wild-type</A> number in the absence of any 
 <A HREF="#chromosome_rearrangement">chromosome rearrangement</A>. <BR>See also 
-<A HREF="#monosomy">Monosomy</A>, <A HREF="#trisomy">Trisomy</A>.
+<A HREF="#monosomy">Monosomy</A>, <A HREF="#trisomy">Trisomy</A>.</dd></p>
 
 <!-- OOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOO --><A NAME="o"></A>
-</dd></p><P><DT><B><A NAME="offset">Offset</A></B></dt><dd>In
+<P><DT><B><A NAME="offset">Offset</A></B></dt><dd>In
 <A HREF="#MGI">MGI</A>, the limits of the position of a
 <A HREF="#gene">gene</A> on a
 <A HREF="#chromosome">chromosome</A> on the
 <A HREF="#cytogenetic_map">cytogenetic map</A> or the
-<A HREF="#linkage_map">linkage map</A>.
+<A HREF="#linkage_map">linkage map</A>.</dd></p>
 
-</dd></p><P><DT><B><A NAME="oligonucleotide">Oligonucleotide</A></B></dt><dd>A short length of
-<A HREF="#nucleic_acid">nucleic acid</A>.
+<P><DT><B><A NAME="oligonucleotide">Oligonucleotide</A></B></dt><dd>A short length of
+<A HREF="#nucleic_acid">nucleic acid</A>.</dd></p>
 
-</dd></p><P><DT><B><A NAME="OMIM">OMIM</A></B></dt><dd> Online Mendelian Inheritance in Man</A>.  A  database of human inherited diseases and genes. Click <a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=OMIM">here</a> for access.</dd>
+<P><DT><B><A NAME="OMIM">OMIM</A></B></dt><dd> Online Mendelian Inheritance in Man</A>.  A  database of human inherited diseases and genes. Click <a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=OMIM">here</a> for access.</dd></p>
 
-</dd></p><P><DT><B><A NAME="ontology">Ontology</A></B></dt><dd>As used by researchers interested in the representation of biological knowledge by computer programs and databases, 
-"ontology" refers to a controlled vocabulary, or set of such vocabularies, used to describe biological features within a specified domain of biological knowledge.
+<P><DT><B><A NAME="ontology">Ontology</A></B></dt><dd>As used by researchers interested in the representation of biological knowledge by computer programs and databases, 
+"ontology" refers to a controlled vocabulary, or set of such vocabularies, used to describe biological features within a specified domain of biological knowledge.</dd></p>
 
-</dd></p><P><DT><B><A NAME="open_reading_frame">Open Reading Frame (ORF)</A></B></dt><dd>A length of
+<P><DT><B><A NAME="open_reading_frame">Open Reading Frame (ORF)</A></B></dt><dd>A length of
 <A HREF="#nucleotide">nucleotide</A> sequence that lacks
 <A HREF="#termination_codon">termination codons</A> in a given
-<A HREF="#reading_frame">reading frame</A>.
+<A HREF="#reading_frame">reading frame</A>.</dd></p>
 
-</dd></p><P><DT><B><A NAME="organelle">Organelle</A></B></dt><dd>One of a number of different kinds of
+<P><DT><B><A NAME="organelle">Organelle</A></B></dt><dd>One of a number of different kinds of
 <A HREF="#membrane">membrane</A>-bound substructures within a eukaryotic cell. Examples include the
 <A HREF="#nucleus">nucleus</A>,
-<A HREF="#mitochondria">mitochondria</A>, and <B>chloroplasts</B>.
+<A HREF="#mitochondria">mitochondria</A>, and <B>chloroplasts</B>.</dd></p>
 
-</dd></p><P><DT><B><A NAME="ortholog">Ortholog</A></B></dt><dd>One of a set of homologous 
+<P><DT><B><A NAME="ortholog">Ortholog</A></B></dt><dd>One of a set of homologous 
 <A HREF="#gene">genes</a> that have diverged from each other as a consequence of speciation. For example, the alpha globin genes of mouse and chick are orthologs. See the
 <A HREF="http://www.ncbi.nlm.nih.gov/Education/BLASTinfo/Orthology.html">Figure</A> at NCBI.<BR>See also 
 <A HREF="#homolog">Homolog</A>, 
 <A HREF="#paralog">Paralog</A>, 
-<A HREF="#orthology">Orthology</A>.
+<A HREF="#orthology">Orthology</A>.</dd></p>
 
-</dd></p><P><DT><B><A NAME="orthology">Orthology</A></B></dt><dd>The relationship of any two homologous characters whose common ancestor lies in the most recent common ancestor of the taxa being considered. In MGI, assertions of 
+<P><DT><B><A NAME="orthology">Orthology</A></B></dt><dd>The relationship of any two homologous characters whose common ancestor lies in the most recent common ancestor of the taxa being considered. In MGI, assertions of 
 <A HREF="<!--#include file='include/wi_url.html'-->/menus/homology_menu.shtml">Mammalian Homology</a> imply presumed orthology.<BR>See also: 
 <A HREF="#homology">Homology</A>, 
-<A HREF="#ortholog">Ortholog</A>, <A HREF="#paralogy">Paralogy</A>.
+<A HREF="#ortholog">Ortholog</A>, <A HREF="#paralogy">Paralogy</A>.</dd></p>
 
-</dd></p><P><DT><B><A NAME="feature">Other Genome Feature</A></B></dt><dd>In
+<P><DT><B><A NAME="feature">Other Genome Feature</A></B></dt><dd>In
 <A HREF="#MGI">MGI</A>, "Other Genome Feature" refers to any feature of the
 <A HREF="#genome">genome</A> that is considered to have biological significance but that cannot be classified with defined
 <A HREF="#marker">marker</A> types. Major classes of "other genome features" include
 <A HREF="#endogenous">Endogenous</A>
 <A HREF="#virus">Viruses</A> and
 <A HREF="#retrotransposon">Retrotransposons</A>, Integration Sites, and Repetitive Elements. An additional class of such features includes genomic segments that function or are biologically significant as
-<A HREF="#DNA">DNA</A> elements.
+<A HREF="#DNA">DNA</A> elements.</dd></p>
 
-</dd></p><P><DT><B><A NAME="outcross">Outcross</A></B></dt><dd>A type of genetic
+<P><DT><B><A NAME="outcross">Outcross</A></B></dt><dd>A type of genetic
 <A HREF="#cross">cross</A> in which an organism is crossed to a strain from which it was not recently derived.<BR>See also:<UL><LI>
 <A HREF="#backcross">Backcross</A></LI><LI>
 <A HREF="#incross">Incross</A></LI><LI>
 <A HREF="#intercross">Intercross</A></LI><LI>
-<A HREF="#testcross">Testcross</A></LI></UL>
+<A HREF="#testcross">Testcross</A></LI></UL></dd></p>
 
 <!-- PPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPP --><A NAME="p"></A>
-</dd></p><P><DT><B><A NAME="P1">P1</A></B>
+<P><DT><B><A NAME="P1">P1</A></B>
 <DD>A 
 <A HREF="#bacteriophage">bacteriophage</A> with a genome size of over 100 kb that has been used as a 
-<A HREF="#cloning_vector">cloning vector</A>.
+<A HREF="#cloning_vector">cloning vector</A>.</dd></p>
 
-</dd></p><P><DT><B><A NAME="PAC">PAC</A></B></dt><dd>P1 Artificial Chromosome. A type of 
+<P><DT><B><A NAME="PAC">PAC</A></B></dt><dd>P1 Artificial Chromosome. A type of 
 <A HREF="#cloning_vector">cloning vector</A> derived from 
 <A HREF="#bacteriophage">bacteriophage</A> P1 that allows foreign 
-<A HREF="#DNA">DNA</A> segments to be cloned in bacteria. The capacity of a PAC is up to 100 kb of foreign DNA.
+<A HREF="#DNA">DNA</A> segments to be cloned in bacteria. The capacity of a PAC is up to 100 kb of foreign DNA.</dd></p>
 
-</dd></p><P><DT><B><A NAME="paralog">Paralog</A></B></dt><dd>One of a set of homologous 
+<P><DT><B><A NAME="paralog">Paralog</A></B></dt><dd>One of a set of homologous 
 <A HREF="#gene">genes</a> that have diverged from each other as a consequence of genetic duplication. For example, the mouse alpha globin and beta globin genes are paralogs. 
 The relationship between mouse alpha globin and chick beta globin is also considered paralogous. See the 
 <A HREF="http://www.ncbi.nlm.nih.gov/Education/BLASTinfo/Orthology.html">Figure</A> at NCBI.<BR>See also 
 <A HREF="#homolog">Homolog</A>, 
 <A HREF="#ortholog">Ortholog</A>, and 
-<A HREF="#paralogy">Paralogy</A>.
+<A HREF="#paralogy">Paralogy</A>.</dd></p>
 
-</dd></p><P><DT><B><A NAME="paralogy">Paralogy</A></B></dt><dd>The relationship of any two homologous characters that arose by a genetic duplication.<BR>See also 
+<P><DT><B><A NAME="paralogy">Paralogy</A></B></dt><dd>The relationship of any two homologous characters that arose by a genetic duplication.<BR>See also 
 <A HREF="#homology">Homology</A>, 
 <A HREF="#orthology">Orthology</A>, and 
-<A HREF="#paralog">Paralog</A>.
+<A HREF="#paralog">Paralog</A>.</dd></p>
 
-</dd></p><P><DT><B><A NAME="parameter">Parameter</A></B></dt><dd>An item of information such as a name, a number, or a selected option passed to a program by a user or another program. Parameters affect the operation of the program receiving them. In MGI, parameters are values that you select or enter in the query form <a href="#field">fields</a>.</dd></p>
+<P><DT><B><A NAME="parameter">Parameter</A></B></dt><dd>An item of information such as a name, a number, or a selected option passed to a program by a user or another program. Parameters affect the operation of the program receiving them. In MGI, parameters are values that you select or enter in the query form <a href="#field">fields</a>.</dd></p>
 
-<P><DT><B><A NAME="parent">Parent</A></B></dt><dd>In <A HREF="#MGI">MGI</A>, this term refers to terms in a <A HREF="#hierarchical">hierarchical</a> <A HREF="#controlled_vocabulary">controlled vocabulary</A> such as those containing <A HREF="#gene_ontology">Gene Ontology (GO)</A> terms. A "parent" of a term is a one any number of levels above it in the <A HREF="#hierarchy">hierarchy</a> from which it is descended. For example, the GO term <i>enzyme</i> [GO:0003824] is a parent to the GO term <i>alcohol dehydrogenase</i> [GO:0004022].<BR>See also <A HREF="#children">Children</A>, <A HREF="#ancestor">Ancestor</A>, <A HREF="#sibling">Sibling</A>.
+<P><DT><B><A NAME="parent">Parent</A></B></dt><dd>In <A HREF="#MGI">MGI</A>, this term refers to terms in a <A HREF="#hierarchical">hierarchical</a> <A HREF="#controlled_vocabulary">controlled vocabulary</A> such as those containing <A HREF="#gene_ontology">Gene Ontology (GO)</A> terms. A "parent" of a term is a one any number of levels above it in the <A HREF="#hierarchy">hierarchy</a> from which it is descended. For example, the GO term <i>enzyme</i> [GO:0003824] is a parent to the GO term <i>alcohol dehydrogenase</i> [GO:0004022].<BR>See also <A HREF="#children">Children</A>, <A HREF="#ancestor">Ancestor</A>, <A HREF="#sibling">Sibling</A>.</dd></p>
 
-</dd></p><P><DT><B><A NAME="pcr">PCR</A></B></dt><dd>Polymerase Chain Reaction. A method of amplifying specific <A HREF="#DNA">DNA</A> segments based on hybridization to a <A HREF="#primer">primer</A> pair. A DNA sample is <A HREF="#denaturation">denatured</A> by heating in the presence of a vast molar excess of short single-stranded DNA primers (around 20 <A HREF="#nucleotide">nucleotides</A>) whose sequence is chosen based on the target sequence. The reaction mixture also contains a <A HREF="#thermostable">thermostable</A> <A HREF="#DNA_polymerase">DNA polymerase</A>, <A HREF="#dNTP">dNTPs</A>, and buffer. The primer sequences are selected so that they: 1) are derived from opposite strands of the target sequence, 2) have their <A HREF="#3'">3' ends</A> facing each other, and 3) are separated by a length of DNA that can be reliably synthesized <A HREF="#in_vitro">in vitro</A>. The sample is then cooled to a temperature that allows primer annealing and in vitro <A HREF="#replication">replication</A>. The sample is subjected to multiple cycles of denaturation and cooling to allow multiple rounds of replication. The quantity of the target sequence doubles during each cycle, causing the target sequence to be amplified, while other <A HREF="#DNA">DNA</A> sequences in the sample remain unamplified. See the <A HREF="http://www.accessexcellence.org/AB/GG/polymerase.html">Figure</A> at Access Excellence.</dd></p>
+<P><DT><B><A NAME="pcr">PCR</A></B></dt><dd>Polymerase Chain Reaction. A method of amplifying specific <A HREF="#DNA">DNA</A> segments based on hybridization to a <A HREF="#primer">primer</A> pair. A DNA sample is <A HREF="#denaturation">denatured</A> by heating in the presence of a vast molar excess of short single-stranded DNA primers (around 20 <A HREF="#nucleotide">nucleotides</A>) whose sequence is chosen based on the target sequence. The reaction mixture also contains a <A HREF="#thermostable">thermostable</A> <A HREF="#DNA_polymerase">DNA polymerase</A>, <A HREF="#dNTP">dNTPs</A>, and buffer. The primer sequences are selected so that they: 1) are derived from opposite strands of the target sequence, 2) have their <A HREF="#3'">3' ends</A> facing each other, and 3) are separated by a length of DNA that can be reliably synthesized <A HREF="#in_vitro">in vitro</A>. The sample is then cooled to a temperature that allows primer annealing and in vitro <A HREF="#replication">replication</A>. The sample is subjected to multiple cycles of denaturation and cooling to allow multiple rounds of replication. The quantity of the target sequence doubles during each cycle, causing the target sequence to be amplified, while other <A HREF="#DNA">DNA</A> sequences in the sample remain unamplified. See the <A HREF="http://www.accessexcellence.org/AB/GG/polymerase.html">Figure</A> at Access Excellence.</dd></p>
 
 <P><DT><B><A NAME="penetrance">Penetrance</A></B></dt><dd>The fraction of individuals of a given 
 <A HREF="#genotype">genotype</A> that show a particular 
 <A HREF="#phenotype">phenotype</A>, usually expressed as a percentage.<BR>See also 
-<A HREF="#expressivity">Expressivity</A>.
+<A HREF="#expressivity">Expressivity</A>.</dd></p>
 
-</dd></p><P><DT><B><A NAME="perinatal">Perinatal</A></B></dt><dd>Around the time of birth.
+<P><DT><B><A NAME="perinatal">Perinatal</A></B></dt><dd>Around the time of birth.</dd></p>
 
-</dd></p><P><DT><B><A NAME="phage">Phage</A></B></DT><DD><ol><li>A <A HREF="#bacteriophage">bacteriophage</A>, a virus capable of infecting bacteria.</li><li>A type of 
-<A HREF="#cloning_vector">cloning vector</A> derived from a bacteriophage, usually capable of carrying an amount of foreign <A HREF="#DNA">DNA</A> that is at the upper range of that carried by a <A HREF="#plasmid">plasmid</A>.</li></ol></DD>
+<P><DT><B><A NAME="phage">Phage</A></B></DT><DD><ol><li>A <A HREF="#bacteriophage">bacteriophage</A>, a virus capable of infecting bacteria.</li><li>A type of 
+<A HREF="#cloning_vector">cloning vector</A> derived from a bacteriophage, usually capable of carrying an amount of foreign <A HREF="#DNA">DNA</A> that is at the upper range of that carried by a <A HREF="#plasmid">plasmid</A>.</li></ol></dd></p>
 
-</dd></p><P><DT><B><A NAME="phagemid">Phagemid</A></B></dt><dd>A type of 
+<P><DT><B><A NAME="phagemid">Phagemid</A></B></dt><dd>A type of 
 <A HREF="#cloning_vector">cloning vector</A> derived from a 
 <A HREF="#phage">phage</A> and a 
 <A HREF="#plasmid">plasmid</A>. Phagemids are capable of carrying an amount of foreign 
-<A HREF="#DNA">DNA</A> comparable to a plasmid, but have some special feature such as the ability to produce single-stranded DNA.
+<A HREF="#DNA">DNA</A> comparable to a plasmid, but have some special feature such as the ability to produce single-stranded DNA.</dd></p>
 
-</dd></p><P><DT><B><A NAME="phenocopy">Phenocopy</A></B></dt><dd>The condition of an individual resembling that of a 
+<P><DT><B><A NAME="phenocopy">Phenocopy</A></B></dt><dd>The condition of an individual resembling that of a 
 <A HREF="#phenotype">phenotype</A> produced by a particular 
-<A HREF="#mutation">mutation</A> by some experimental treatment other than the presence of that mutation, e.g., drug treatment.
+<A HREF="#mutation">mutation</A> by some experimental treatment other than the presence of that mutation, e.g., drug treatment.</dd></p>
 
-</dd></p><P><DT><B><A NAME="phenotype">Phenotype</A></B></dt><dd>A description of the observable state of an individual with respect to some inherited characteristic. Often, individuals with different 
+<P><DT><B><A NAME="phenotype">Phenotype</A></B></dt><dd>A description of the observable state of an individual with respect to some inherited characteristic. Often, individuals with different 
 <A HREF="#genotype">genotypes</A> display the same phenotype. See 
 <A HREF="#dominant">dominant</A> and 
-<A HREF="#recessive">recessive</A>.
+<A HREF="#recessive">recessive</A>.</dd></p>
 
-</dd></p><P><DT><B><A NAME="phosphorimaging">Phosphorimaging</A></B></dt><dd>The detection of 
+<P><DT><B><A NAME="phosphorimaging">Phosphorimaging</A></B></dt><dd>The detection of 
 <A HREF="#radiation">radioactivity</A> using "phosphor" compounds that emit visible light when exposed to radiation. Phosphorimaging instruments produce images of, for example, 
 <A HREF="#southern_blot">Southern blots</A> and
 <A HREF="#northern_blot">Northern blots</A>, that are comparable to those produced by 
-<A HREF="#autoradiography">autoradiography</A>, with superior quantitation.
+<A HREF="#autoradiography">autoradiography</A>, with superior quantitation.</dd></p>
 
-</dd></p><P><DT><B><A NAME="phycoerythrin">Phycoerythrin</A></B></dt><dd>A 
+<P><DT><B><A NAME="phycoerythrin">Phycoerythrin</A></B></dt><dd>A 
 <A HREF="#fluorescence">fluorescent</A> dye that can be coupled to 
 <A HREF="#antibody">antibodies</A> for the detection of 
 <A HREF="#protein">proteins</A> on 
 <A HREF="#western_blot">Western blots</A> using 
-<A HREF="#fluorography">fluorography</A>.
+<A HREF="#fluorography">fluorography</A>.</dd></p>
 
-</dd></p><P><DT><B><A NAME="physical_map">Physical Map</A></B></dt><dd>A map of 
+<P><DT><B><A NAME="physical_map">Physical Map</A></B></dt><dd>A map of 
 <A HREF="#DNA">DNA</A> showing distances between and within 
 <A HREF="#gene">genes</A> or specified
 <A HREF="#marker">markers</A> measured in 
-<A HREF="#base_pair">base pairs</A> of DNA. It is based on the direct measurement of DNA.
+<A HREF="#base_pair">base pairs</A> of DNA. It is based on the direct measurement of DNA.</dd></p>
 
-</dd></p><P><DT><B><A NAME="plasmid">Plasmid</A></B></dt><dd>A type of 
+<P><DT><B><A NAME="plasmid">Plasmid</A></B></dt><dd>A type of 
 <A HREF="#cloning_vector">cloning vector</A> derived from autonomously-replicating extrachromosomal circular
 <A HREF="#DNA">DNAs</A> in bacteria. The amount of foreign DNA that can be carried in a plasmid is small, ranging up to about 20
-<A HREF="#kb">kb</A>.
+<A HREF="#kb">kb</A>.</dd></p>
 
-</dd></p><P><DT><B><A NAME="pleiotropy">Pleiotropy</A></B></dt><dd>The production of a 
+<P><DT><B><A NAME="pleiotropy">Pleiotropy</A></B></dt><dd>The production of a 
 <A HREF="#phenotype">phenotype</A> affecting multiple 
 <A HREF="#trait">traits</A> by a single 
-<A HREF="#mutation">mutation</A>.
+<A HREF="#mutation">mutation</A>.</dd></p>
 
-</dd></p><P><DT><B><A NAME="point_mutation">Point Mutation</A></B></dt><dd>A type of 
+<P><DT><B><A NAME="point_mutation">Point Mutation</A></B></dt><dd>A type of 
 <A HREF="#mutation">mutation</A> in which a single 
 <A HREF="#nucleotide">nucleotide</A> is changed to one of the other three possible nucleotides.<BR>See also 
 <A HREF="#nucleotide_substitution">Nucleotide Substitution</A> 
 <A HREF="#transition">Transition</A>, 
-<A HREF="#transversion">Transversion</A>.
+<A HREF="#transversion">Transversion</A>.</dd></p>
 
-</dd></p><P><DT><B><A NAME="polyadenylation">Polyadenylation</A></B></dt><dd>The process by which a series of adenosine (A) ribonucleotides is added to the 
+<P><DT><B><A NAME="polyadenylation">Polyadenylation</A></B></dt><dd>The process by which a series of adenosine (A) ribonucleotides is added to the 
 <A HREF="#3'">3'</A> end of a 
 <A HREF="#splicing">spliced</A> 
 <A HREF="#RNA">RNA</A> to make a mature 
-<A HREF="#mRNA">mRNA</A>. This addition to the RNA is sometimes referred to as a poly-A tail, and commonly contains several hundred bases.
+<A HREF="#mRNA">mRNA</A>. This addition to the RNA is sometimes referred to as a poly-A tail, and commonly contains several hundred bases.</dd></p
 
-</dd></p><P><DT><B><A NAME="polygenic">Polygenic</A></B></dt><dd>A 
-<A HREF="#trait">trait</A> determined by multiple <A HREF="#gene">genes</A>.
+><P><DT><B><A NAME="polygenic">Polygenic</A></B></dt><dd>A 
+<A HREF="#trait">trait</A> determined by multiple <A HREF="#gene">genes</A>.</dd></p>
 
-</dd></p><P><DT><B><A NAME="polymorphism">Polymorphism</A></B></dt><dd>An instance of 
-<A HREF="#genotype">genotypic</A> variation within a population.
+<P><DT><B><A NAME="polymorphism">Polymorphism</A></B></dt><dd>An instance of 
+<A HREF="#genotype">genotypic</A> variation within a population.</dd></p>
 
-</dd></p><P><DT><B><A NAME="postnatal">Postnatal</A></B></dt><dd>After birth.
+<P><DT><B><A NAME="postnatal">Postnatal</A></B></dt><dd>After birth.</dd></p>
 
-</dd></p><P><DT><B><A NAME="primer">Primer</A></B></dt><dd>A single-stranded 
+<P><DT><B><A NAME="primer">Primer</A></B></dt><dd>A single-stranded 
 <A HREF="#nucleic_acid">nucleic acid</A> that can "prime" 
 <A HREF="#replication">replication</A> of a
 <A HREF="#template">template</A>. More specifically, a single-stranded nucleic acid capable of 
 <A HREF="#hybridization">hybridizing</A> to a template single-stranded nucleic acid in such a way as to leave part of the template to the <A HREF="#3'">3' end</A> of the primer single-stranded. 
 <A HREF="#DNA_polymerase">DNA polymerase</A> can then synthesize a new strand starting from the 3' end of the primer and adding 
 <A HREF="#nucleotide">nucleotides</A> to the growing strand by base complementarity to the template.<BR>See also 
-<A HREF="#pcr">PCR</A>.
+<A HREF="#pcr">PCR</A>.</dd></p>
 
-</dd></p><P><DT><B><A NAME="probe">Probe</A></B></DT><DD><ol><li>In molecular biology, a 
+<P><DT><B><A NAME="probe">Probe</A></B></DT><DD><ol><li>In molecular biology, a 
 <A HREF="#nucleic_acid">nucleic acid</A> that has been labeled either radioactively or chemically that allows the detection of nucleic acids with sequence similarity in a sample by hybridization. Probes are used to detect <A HREF="#DNA">DNA</A> on membranes in <A HREF="#southern_blot">Southern blots</A>, to detect <A HREF="#RNA">RNA</A> on membranes in
 <A HREF="#northern_blot">Northern blots</A>, and either DNA or RNA in cytological preparations for <A HREF="#in_situ"><I>in situ</I></A> hybridization.</li><li>In MGI, the term "probe" applies not only to nucleic acid probes detected as described above, but also to 
-<A HREF="#primer">primers</A> for <A HREF="#pcr">PCR</A>. This usage is not common outside of MGI.</li></ol></DD>
+<A HREF="#primer">primers</A> for <A HREF="#pcr">PCR</A>. This usage is not common outside of MGI.</li></ol></dd></p>
 
-</dd></p><P><DT><B><A NAME="prokaryote"</A>Prokaryote</b><dd>Cell or organism lacking a membrane-bound, structurally discrete <A HREF="#nucleus">nucleus</a> and other subcellular compartments. Bacteria are prokaryotes. See also <A HREF="#eukaryote">eukaryote</a>. 
+<P><DT><B><A NAME="prokaryote"</A>Prokaryote</b><dd>Cell or organism lacking a membrane-bound, structurally discrete <A HREF="#nucleus">nucleus</a> and other subcellular compartments. Bacteria are prokaryotes.<br> See also <A HREF="#eukaryote">eukaryote</a>. </dd></p>
 
 
-</dd></p><P><DT><B><A NAME="promoter">Promoter</A></B></dt><dd>One of the necessary 
+<P><DT><B><A NAME="promoter">Promoter</A></B></dt><dd>One of the necessary 
 <A HREF="#regulatory_element">regulatory elements</A> of a 
 <A HREF="#gene">gene</A>. The promoter is the site on 
 <A HREF="#DNA">DNA</A> to which 
 <A HREF="#RNA_polymerase">RNA polymerase</A> binds and initiates 
 <A HREF="#transcription">transcription</A>.<BR>See also 
-<A HREF="#enhancer">Enhancer</A>.
+<A HREF="#enhancer">Enhancer</A>.</dd></p>
 
-</dd></p><P><DT><B><A NAME="protein">Protein</A></B></dt><dd>A polymer of 
+<P><DT><B><A NAME="protein">Protein</A></B></dt><dd>A polymer of 
 <A HREF="#amino_acid">amino acids</A>. See the 
-<A HREF="http://www.genome.gov/Pages/Hyperion//DIR/VIP/Glossary/Illustration/amino_acid.html">Figure</A> at <A HREF="#NHGRI">NHGRI</A>.
+<A HREF="http://www.genome.gov/Pages/Hyperion//DIR/VIP/Glossary/Illustration/amino_acid.html">Figure</A> at <A HREF="#NHGRI">NHGRI</A>.</dd></p>
 
-</dd></p><P><DT><B><A NAME="protein_domain">Protein Domain</A></B></dt><dd>A region of a 
+<P><DT><B><A NAME="protein_domain">Protein Domain</A></B></dt><dd>A region of a 
 <A HREF="#protein">protein</A> responsible for a particular function, as recognized experimentally and by the occurrence of 
 <A HREF="#similarity">similar</A> segments in other proteins sharing that function, e.g., a 
-<A HREF="#DNA">DNA</A> binding <A HREF="#domain">domain</a>.
+<A HREF="#DNA">DNA</A> binding <A HREF="#domain">domain</a>.</dd></p>
 
-</dd></p><P><DT><B><A NAME="protein_histochemistry">Protein Histochemistry</A></B></dt><DD><ol><li>A method of detecting a particular <A HREF="#enzyme">enzyme</A> in a cell or tissue sample. A sample of cells or tissue is fixed, then treated with a <A HREF="#chromogenic">chromogenic</A> 
-<A HREF="#substrate">substrate</A> for the enzyme to be detected. Microscopic examination reveals the presence of staining, and hence of the specific <A HREF="#protein">protein</A> to be detected.<li><A HREF="#immunohistochemistry">Immunohistochemistry</A>.</li></ol></dd>
+<P><DT><B><A NAME="protein_histochemistry">Protein Histochemistry</A></B></dt><DD><ol><li>A method of detecting a particular <A HREF="#enzyme">enzyme</A> in a cell or tissue sample. A sample of cells or tissue is fixed, then treated with a <A HREF="#chromogenic">chromogenic</A> 
+<A HREF="#substrate">substrate</A> for the enzyme to be detected. Microscopic examination reveals the presence of staining, and hence of the specific <A HREF="#protein">protein</A> to be detected.<li><A HREF="#immunohistochemistry">Immunohistochemistry</A>.</li></ol></dd></p>
 
-</dd></p><P><DT><B><A NAME="proteome">Proteome</A></B></dt><dd>The complete collection of all 
+<P><DT><B><A NAME="proteome">Proteome</A></B></dt><dd>The complete collection of all 
 <A HREF="#protein">proteins</A> encoded by the 
-<A HREF="#genome">genome</A> of an organism.
+<A HREF="#genome">genome</A> of an organism.</dd></p>
 
-</dd></p><P><DT><B><A NAME="proteomics">Proteomics</A></B></dt><dd>Systematic analysis of 
-<A HREF="#protein">protein</a> expression of normal and diseased tissues that involves the separation, identification and characterization of all of the proteins in an organism. 
+<P><DT><B><A NAME="proteomics">Proteomics</A></B></dt><dd>Systematic analysis of 
+<A HREF="#protein">protein</a> expression of normal and diseased tissues that involves the separation, identification and characterization of all of the proteins in an organism. </dd></p>
 
 
-</dd></p><P><DT><B><A NAME="pseudoautosomal">Pseudoautosomal</A></B></dt><dd>The small region of 
+<P><DT><B><A NAME="pseudoautosomal">Pseudoautosomal</A></B></dt><dd>The small region of 
 <A HREF="#homolog">homology</A> shared between the 
 <A HREF="#X_chromosome">X chromosome</A> and the
-<A HREF="#Y_chromosome">Y chromosome</A> in mammals. All crossovers between the X and Y chromosomes occur in this region.
+<A HREF="#Y_chromosome">Y chromosome</A> in mammals. All crossovers between the X and Y chromosomes occur in this region.</dd></p>
 
-</dd></p><P><DT><B><A NAME="pseudogene">Pseudogene</A></B></dt><dd>A non-functional 
+<P><DT><B><A NAME="pseudogene">Pseudogene</A></B></dt><dd>A non-functional 
 <A HREF="#locus">locus</A> derived from a functional locus either by 1) replicative transfer, such as
 <A HREF="#transposition">transposition</A>, 
 <A HREF="#retrotransposon">retrotransposition</A> or 
 <A HREF="#duplication">duplication</A> or by 2) 
 <A HREF="#mutation">mutation</A>, where the non-functional locus is not considered an
-<A HREF="#allele">allele</A> of an existing functional locus in the mouse.
+<A HREF="#allele">allele</A> of an existing functional locus in the mouse.</dd></p>
 
 <!-- These two terms may not last very long and shouldn't be included unless there is evidence that they are being widely used:
 </dd></p><P><DT><B><A NAME="pharmacogenetics"></A>Pharmacogenetics</B>
@@ -1666,69 +1710,70 @@ The relationship between mouse alpha globin and chick beta globin is also consid
 with a particular condition.
 </dd></p><P><DT><B><A NAME="pharmacogenomics"></A>Pharmacogenomics</B>
 <DD>Genomic analysis to allow large-scale identification of appropriate 
-pharmaceuticals for treatments of diseases. Includes screening of multiple drugs 
-for a particular condition; usually includes bioinformatics.
+pharmaceuticals for treatments of diseases. Includes screening of multiple drugs for a particular condition; usually includes bioinformatics.
 (end of questionable terms) -->
 
-</dd></p><P><DT><B><A NAME="purine">Purine</A></B></dt><dd>One of the 
-<A HREF="#base">bases</A> of 
-<A HREF="#nucleic_acid">nucleic acids</A>, either adenine (A) or guanine (G). See the
-<A HREF="http://www.genome.gov/Pages/Hyperion//DIR/VIP/Glossary/Illustration/rna.html">Figure</A> at 
-<A HREF="#NHGRI">NHGRI</A>.
+<P><DT><B><A NAME="purine">Purine</A></B></dt><dd>One of the 
+<A HREF="#base">bases</A> of <A HREF="#nucleic_acid">nucleic acids</A>, either adenine (A) or guanine (G). See the
+<A HREF="http://www.genome.gov/Pages/Hyperion//DIR/VIP/Glossary/Illustration/rna.html">Figure</A> at <A HREF="#NHGRI">NHGRI</A>.</dd></p>
 
-</dd></p><P><DT><B><A NAME="pyrimidine">Pyrimidine</A></B></dt><dd>One of the 
+<P><DT><B><A NAME="putative">Putative</b></a></dt><dd>Regions of transcription may be associated by sequence identities, <A HREF="#hybridization">hybridization</A>, or putative relationships. In <A HREF="#MGI">MGI</A>, an <A HREF="#EST">EST</a> may receive a putative assignment to a <A HREF="#marker">marker</a> when it is downloaded into the MGI database from shared sequences in UniGene clusters. When an EST is putatively assigned to a marker, <i>(PUTATIVE)</I> appears after the assigned marker symbol on MGI probe/clone query report pages.  <!--A putative EST-to-marker association is subject to change upon each EST download into the database.  However, our curators can and do make an EST-to-marker association permanent after reviewing the sequence identity between the EST and the marker.  When this occurs, <i>(PUTATIVE)</I> does not appear after the marker symbol; this indicates that a permanent relationship is established.-->
+</dd>
+
+
+<P><DT><B><A NAME="pyrimidine">Pyrimidine</A></B></dt><dd>One of the 
 <A HREF="#base">bases</A> of 
 <A HREF="#nucleic_acid">nucleic acids</A>, cytosine (C), thymine (T) or uracil (U). See the 
 <A HREF="http://www.genome.gov/Pages/Hyperion//DIR/VIP/Glossary/Illustration/rna.html">Figure</A> at 
-<A HREF="#NHGRI">NHGRI</A>.
+<A HREF="#NHGRI">NHGRI</A>.</dd></p>
 
 <!-- QQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQ --><A NAME="q"></A>
-</dd></p><P><DT><B><A NAME="QTL">Quantitative Trait Locus (QTL)</A></B></dt><dd>The type of 
+<P><DT><B><A NAME="QTL">Quantitative Trait Locus (QTL)</A></B></dt><dd>The type of 
 <A HREF="#marker">marker</A> described by statistical association to quantitative variation in a particular
 <A HREF="#phenotype">phenotypic</A> trait that is thought to be controlled by the cumulative action of 
 <A HREF="#allele">alleles</A> at multiple 
-<A HREF="#locus">loci</A>.
+<A HREF="#locus">loci</A>.</dd></p>
 
-</dd></p><P><DT><B><A NAME="query">Query</A></B></dt><dd>A request for information submitted to a computerized database.<BR>See also 
+<P><DT><B><A NAME="query">Query</A></B></dt><dd>A request for information submitted to a computerized database.<BR>See also 
 <A HREF="#query_form">Query Form</a> and 
-<A HREF="#query_sequence">Query Sequence</a>
+<A HREF="#query_sequence">Query Sequence</a></dd></p>
 
-</dd></p><P><DT><B><A NAME="query_form">Query Form</A></B></dt><dd>As used in 
+<P><DT><B><A NAME="query_form">Query Form</A></B></dt><dd>As used in 
 <A HREF="#MGI">MGI</A>, a Query Form is a web page allowing users to retrieve information from the MGI database.<BR>See also 
-<A HREF="#query">Query</a> and <A HREF="#query_sequence">Query Sequence</a>.
+<A HREF="#query">Query</a> and <A HREF="#query_sequence">Query Sequence</a>.</dd></p>
 
-</dd></p><P><DT><B><A NAME="query_sequence">Query Sequence</A></B></dt><dd>A 
+<P><DT><B><A NAME="query_sequence">Query Sequence</A></B></dt><dd>A 
 <A HREF="#DNA">DNA</A> or 
 <A HREF="#protein">protein</A> sequence submitted to a computerized database for comparison, e.g., a 
 <A HREF="#BLAST">BLAST</A> search.<BR>See also 
 <A HREF="#query_form">Query Form</a> and 
-<A HREF="#query_sequence">Query Sequence</a>.
-
+<A HREF="#query_sequence">Query Sequence</a>.</dd></p>
 
 <!-- RRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRR --><A NAME="r"></A>
-</dd></p><P><DT><B><A NAME="radiation">Radiation</A></B></dt><DD><ol><li>Electromagnetic energy: gamma rays, X rays, ultraviolet light, 
+<P><DT><B><A NAME="radiation">Radiation</A></B></dt><DD><ol><li>Electromagnetic energy: gamma rays, X rays, ultraviolet light, 
 visible light, infrared light, microwaves and radio waves. In mouse genetics, this term generally refers to gamma rays and X rays.</li><li>Subatomic particles emitted by the decay of unstable isotopes: electrons (beta particles) and helium nuclei (alpha particles). Common unstable isotopes in molecular biology are tritium (<SUP>3</SUP>H),which emits low-energy beta particles, <SUP>35</SUP>S, which emits beta particles of moderate energy, and 
-<SUP>32</SUP>P, which emits high-energy beta particles.</li><li>Subatomic particles from a particle accelerator, such as protons, neutrons, and electrons.</li></ol></dd>
+<SUP>32</SUP>P, which emits high-energy beta particles.</li><li>Subatomic particles from a particle accelerator, such as protons, neutrons, and electrons.</li></ol></dd></p>
 
-</dd></p><P><DT><B><A NAME="radiation hybrid mapping">Radiation Hybrid Mapping</A></B></dt><dd>A type of 
+<P><DT><B><A NAME="radiation hybrid mapping">Radiation Hybrid Mapping</A></B></dt><dd>A type of 
 <A HREF="#genetic_map">genetic mapping</A> providing resolution between relatively low-resolution 
 <A HREF="#linkage_analysis">linkage analysis</A> and high-resolution 
 <A HREF="#physical_map">physical mapping</A> by the assembly of contiguous cloned DNA segments. The method consists of fusing 
 <A HREF="#radiation">irradiated</A> cultured cells of one species with cultured cells of a different species. A panel of hybrid cells is then tested for the occurrence of pairs of 
 <A HREF="#marker">markers</A>. The closer two markers are to each other, the more likely that both are present in an individual hybrid cell. Radiation hybrid mapping data for the mouse are available at 
 <A HREF="http://www.jax.org/resources/documents/cmdata/rhmap/">The Jackson Laboratory Mouse Radiation Hybrid Database</A> and at
-<A HREF="#MGI">MGI</A>.
+<A HREF="#MGI">MGI</A>.</dd></p>
 
-</dd></p><P><DT><B><A NAME="rdbms"></A>RDBMS</B>
+
+<P><DT><B><A NAME="rdbms"></A>RDBMS</B>
 <DD>Relational Database Management System. Software for managing a 
 <A HREF="#database">database</A> accessed using 
-<A HREF="#SQL">Structured Query Language (SQL)</A>.
+<A HREF="#SQL">Structured Query Language (SQL)</A>.</dd></p>
 
-</dd></p><P><DT><B><A NAME="reading_frame">Reading Frame</A></B></dt><dd>One of three ways of reading a single strand of 
+<P><DT><B><A NAME="reading_frame">Reading Frame</A></B></dt><dd>One of three ways of reading a single strand of 
 <A HREF="#nucleic_acid">nucleic acid</A> sequence as 
-<A HREF="#codon">codons</A>.
+<A HREF="#codon">codons</A>.</dd></p>
 
-</dd></p><P><DT><B><A NAME="recessive">Recessive</A></B></dt><dd>One of a series of terms applied to the 
+<P><DT><B><A NAME="recessive">Recessive</A></B></dt><dd>One of a series of terms applied to the 
 <A HREF="#phenotype">phenotypic</A> effect of a particular 
 <A HREF="#allele">allele</A> in reference to another allele (usually the standard 
 <A HREF="#wild_type">wild-type</A> allele) with respect to a given
@@ -1739,12 +1784,11 @@ visible light, infrared light, microwaves and radio waves. In mouse genetics, th
 <A HREF="#agouti">agouti</A> banding of individual hairs in the coat, while a/a mice have hairs of uniform color.<BR>See also 
 <A HREF="#codominant">Codominant</A>, 
 <A HREF="#dominant">Dominant</A>, 
-<A HREF="#semidominant">Semidominant</A>.
+<A HREF="#semidominant">Semidominant</A>.</dd></p>
 
-</dd></p><P><DT><B><A NAME="record"></A>Record</B><DD>In computer science, a collection of 
-<A HREF="#field">fields</A>.
+<P><DT><B><A NAME="record"></A>Record</B><DD>In computer science, a collection of <A HREF="#field">fields</A>.</dd></p>
 
-</dd></p><P><DT><B><A NAME="recombinant_inbred">Recombinant Inbred Strain</A></B></dt><dd>In mouse, an 
+<P><DT><B><A NAME="recombinant_inbred">Recombinant Inbred Strain</A></B></dt><dd>In mouse, an 
 <A HREF="#inbred_strain">inbred strain</A> of animals started from a 
 <A HREF="#cross">cross</A> between two different inbred strains followed by inbreeding for at least 20 generations. A panel of recombinant inbred strains derived from a cross between two parental strains can be used to establish 
 <A HREF="#linkage">linkage</A> between any 
@@ -1752,65 +1796,71 @@ visible light, infrared light, microwaves and radio waves. In mouse genetics, th
 <A HREF="#polymorphism">polymorphic</A> between the parental strains and other polymorphic markers that have been typed in each strain in the panel. See the Recombinant Inbred Strain Distribution Panel 
 <A HREF="<!--#include file='include/wi_url.html'-->/searches/riset_form.shtml">Query Form</A> at 
 <A HREF="#MGI">MGI</A>.<BR>See also the 
-<A HREF="../nomen/strains.shtml#ris">Rules for Nomenclature of Mouse and Rat Strains</A>.
+<A HREF="../nomen/strains.shtml#ris">Rules for Nomenclature of Mouse and Rat Strains</A>.</dd></p>
 
-</dd></p><P><DT><B><A NAME="recombination">Recombination</A></B></dt><dd>Transfer of information from one 
+<P><DT><B><A NAME="recombination">Recombination</A></B></dt><dd>Transfer of information from one 
 <A HREF="#DNA">DNA</A> molecule to another. Recombination may be <B>reciprocal</B>, in which case the products are equivalent to breakage of the two DNA molecules and rejoining of the broken ends to form new molecules. 
 Recombination may also be <B>nonreciprocal</B>, in which case the product is equivalent to transfer of information from the donor DNA molecule to the recipient DNA molecule, with no change in the donor DNA molecule. Reciprocal recombination events are also called 
-<A HREF="#crossover">crossovers</A>.
+<A HREF="#crossover">crossovers</A>.</dd></p>
 
-</dd></p><P><DT><B><A NAME="regulatory_element">Regulatory Element</A></B></dt><dd>A 
+<P><DT><B><A NAME="refseq">RefSeq</A></B></dt><dd>The collection of integrated, non-redundant sequences including <A HREF="#genomic">genomic</A> <A HREF="#DNA">DNA</A>, <A HREF="#transcript">transcript</A> (<a href="#RNA">(RNA)</a>, and <A HREF="#protein">protein products</a> at <A HREF="http://www.ncbi.nlm.nih.gov/RefSeq/">NCBI</A>.<BR>
+
+
+<P><DT><B><A NAME="regulatory_element">Regulatory Element</A></B></dt><dd>A 
 <A HREF="#DNA">DNA</A> sequence that is required for a 
 <A HREF="#gene">gene</A> on the same DNA molecule to be 
 <A HREF="#transcription">transcribed</A>, or to be transcribed in the proper cell type(s) and developmental stage(s).<BR>See also 
 <A HREF="#enhancer">Enhancer</A>, 
-<A HREF="#promoter">Promoter</A>.
+<A HREF="#promoter">Promoter</A>.</dd></p>
 
-</dd></p><P><DT><B>
+<P><DT><B>
 <A NAME="regulatory_gene">Regulatory Gene</A></B></dt><dd>A 
 <A HREF="#gene">gene</A> whose function is to regulate the 
 <A HREF="#gene_expression">expression</A> of a 
-<A HREF="#structural_gene">structural gene</A>.
+<A HREF="#structural_gene">structural gene</A>.</dd></p>
 
-</dd></p><P><DT><B>
+<P><DT><B>
 <A NAME="relational_db"></A>Relational Database</B><DD>A type of 
 <A HREF="#database">database</A> in which information is organized into 
-<A HREF="#table">tables</A>. 
+<A HREF="#table">tables</A>. </dd></p>
 
-</dd></p><P><DT><B><A NAME="relational_database_manangement">Relational Database Management System (RDBMS)</A></B></dt><dd>Software for managing a 
+<P><DT><B><A NAME="relational_database_manangement">Relational Database Management System (RDBMS)</A></B></dt><dd>Software for managing a 
 <A HREF="#database">database</A> accessed using 
-<A HREF="#SQL">Structured Query Language(SQL)</a> . 
+<A HREF="#SQL">Structured Query Language(SQL)</a>.</dd></p> 
 
-</dd></p><P><DT><B><A NAME="replication">Replication</A></B></dt><dd>The process of synthesizing a copy of a 
+<P><DT><B><A NAME="replication">Replication</A></B></dt><dd>The process of synthesizing a copy of a 
 <A HREF="#DNA">DNA</A> molecule from 
 <A HREF="#nucleotide">nucleotides</A> using information contained within one strand of a 
 <A HREF="#template">template</A> DNA molecule. The new strand of DNA is synthesized from the 
 <A HREF="#5'">5' end</A> to the 
 <A HREF="#3'">3' end</A>. See the 
-<A HREF="http://www.genome.gov/Pages/Hyperion//DIR/VIP/Glossary/Illustration/dna_replication.html">Figure</A> at <A HREF="#NHGRI">NHGRI</A>.
+<A HREF="http://www.genome.gov/Pages/Hyperion//DIR/VIP/Glossary/Illustration/dna_replication.html">Figure</A> at <A HREF="#NHGRI">NHGRI</A>.</dd></p>
 
-</dd></p><P><DT><B><A NAME="reporter_gene">Reporter Gene</A></B></dt><dd>A 
+<P><DT><B><A NAME="reporter_gene">Reporter Gene</A></B></dt><dd>A 
 <A HREF="#gene">gene</A> whose product is easily detected and not ordinarily present in an organism or cell type under study that is expressed as part of a 
 <A HREF="#DNA_construct">DNA construct</A> introduced experimentally. Bacterial beta-galactosidase, whose activity can be detected using a staining reaction, is a commonly used reporter gene, as is green fluorescent protein.
 <BR>See also 
 <A HREF="#enhancer_trap">Enhancer Trap</A>, 
-<A HREF="#gene_trap">Gene Trap</A>.</dd></p><P><DT><B>
+<A HREF="#gene_trap">Gene Trap</A>.</dd></p>
+
+<P><DT><B><A NAME="resolved">Resolved</A></B></dt><DD>Sequence providers such as <A href="#genbank">GenBank</A> and <A href="#refseq">RefSeq</A> describe sequence attributes (strains, species, tissues, libraries, and so on) in their reports. MGI captures the original values and stores them in the MGI database in <A href="#controlled_vocabulary">controlled vocabularies</A>. When this happens, they become <I>resolved</I> values and can be used as search parameters on MGI query forms. <br>
+See also:
+<A href="#unresolved">Unresolved</A>.</dd></p>
 
 
-
-<A NAME="restriction_enzyme">Restriction Enzyme</A></B></dt><dd>A 
+<P><DT><B><A NAME="restriction_enzyme">Restriction Enzyme</A></B></dt><dd>A 
 <A HREF="#protein">protein</A> that recognizes specific, short 
 <A HREF="#nucleotide">nucleotide</A> sequences and cuts
-<A HREF="#DNA">DNA</A> at those sites.
+<A HREF="#DNA">DNA</A> at those sites.</dd></p>
 
-</dd></p><P><DT><B><A NAME="restriction_fragment">Restriction Fragment</A></B></dt><dd>A length of 
+<P><DT><B><A NAME="restriction_fragment">Restriction Fragment</A></B></dt><dd>A length of 
 <A HREF="#DNA">DNA</A> whose ends are the result of cutting by a 
-<A HREF="#restriction_enzyme">restriction enzyme</A>.
+<A HREF="#restriction_enzyme">restriction enzyme</A>.</dd></p>
 
-</dd></p><P><DT><B><A NAME="retrotransposon">Retrotransposon</A></B></dt><dd>A type of 
+<P><DT><B><A NAME="retrotransposon">Retrotransposon</A></B></dt><dd>A type of 
 <A HREF="#mobile_genetic">mobile genetic element</A> that utilizes an 
 <A HREF="#RNA">RNA</A> intermediate and
-<A HREF="#reverse_transcriptase">reverse transcriptase</A> to transpose.
+<A HREF="#reverse_transcriptase">reverse transcriptase</A> to transpose.</dd></p>
 
 </dd></p><P><DT><B><A NAME="retrovirus">Retrovirus</A></B></dt><dd>A 
 <A HREF="#virus">virus</A> whose primary genetic material is 
@@ -1818,26 +1868,26 @@ Recombination may also be <B>nonreciprocal</B>, in which case the product is equ
 <A HREF="#DNA">DNA</A>.
 <A HREF="#replication">Replication</A> of the 
 <A HREF="#genome">genome</A> of such a virus requires the RNA to be copied into DNA using 
-<A HREF="#reverse_transcriptase">reverse transcriptase</A>. This group of viruses includes HIV (AIDS virus). 
+<A HREF="#reverse_transcriptase">reverse transcriptase</A>. This group of viruses includes HIV (AIDS virus). </dd></p>
 
-</dd></p><P><DT><B><A NAME="reverse_transcriptase">Reverse Transcriptase</A></B></dt><dd>An 
+<P><DT><B><A NAME="reverse_transcriptase">Reverse Transcriptase</A></B></dt><dd>An 
 <A HREF="#enzyme">enzyme</A> that is able to synthesize 
 <A HREF="#DNA">DNA</A> from information in 
 <A HREF="#RNA">RNA</A>. It requires an RNA 
 <A HREF="#template">template</A> and a DNA or RNA 
 <A HREF="#primer">primer</A>.<BR>See also 
-<A HREF="#cDNA">cDNA</A>.
+<A HREF="#cDNA">cDNA</A>.</dd></p>
 
-</dd></p><P><DT><B><A NAME="reversion">Reversion</A></B></dt><dd>A 
+<P><DT><B><A NAME="reversion">Reversion</A></B></dt><dd>A 
 <A HREF="#mutation">mutation</A> event that alters an 
 <A HREF="#allele">allele</A> conferring a 
 <A HREF="#mutant">mutant</A>
 <A HREF="#phenotype">phenotype</A> into one conferring a 
 <A HREF="#wild_type">wild-type</A> phenotype. The mutation need not restore the 
 <A HREF="#gene">gene</A> to its original 
-<A HREF="#nucleotide">nucleotide</A> sequence to be considered a reversion event.
+<A HREF="#nucleotide">nucleotide</A> sequence to be considered a reversion event.</dd></p>
 
-</dd></p><P><DT><B><A NAME="revertant">Revertant</A></B></dt><dd>An individual carrying an 
+<P><DT><B><A NAME="revertant">Revertant</A></B></dt><dd>An individual carrying an 
 <A HREF="#allele">allele</A> of a given 
 <A HREF="#gene">gene</A> that at one time produced a 
 <A HREF="#mutant">mutant</A> 
@@ -1845,55 +1895,55 @@ Recombination may also be <B>nonreciprocal</B>, in which case the product is equ
 <A HREF="#mutation">mutation</A> that restored a 
 <A HREF="#wild_type">wild-type</A> phenotype. The mutation need not restore the gene to its original 
 <A HREF="#nucleotide">nucleotide</A> sequence to be considered a 
-<A HREF="#reversion">reversion</A> event.
+<A HREF="#reversion">reversion</A> event.</dd></p>
 
-</dd></p><P><DT><B><A NAME="RFLP">RFLP</A></B></dt><dd>Restriction Fragment Length Polymorphism. A genetic 
+<P><DT><B><A NAME="RFLP">RFLP</A></B></dt><dd>Restriction Fragment Length Polymorphism. A genetic 
 <A HREF="#polymorphism">polymorphism</A> with respect to the observed length of a 
 <A HREF="#restriction_fragment">restriction fragment</A>. RFLPs can result from 
 <A HREF="#SNP">single nucleotide polymorphisms</A> as well as from 
 <A HREF="#insertion">insertions</A>, 
 <A HREF="#deletion">deletions</A>, or 
-<A HREF="#microsatellite">microsatellite</A> expansions.
+<A HREF="#microsatellite">microsatellite</A> expansions.</dd></p>
 
-</dd></p><P><DT><B><A NAME="ribosome">Ribosome</A></B></dt><dd>A complex of 
+<P><DT><B><A NAME="ribosome">Ribosome</A></B></dt><dd>A complex of 
 <A HREF="#protein">proteins</A> and 
 <A HREF="#RNA">RNA</A> within which 
-<A HREF="#translation">translation</A> is carried out.
+<A HREF="#translation">translation</A> is carried out.</dd></p>
 
-</dd></p><P><DT><B><A NAME="ribozyme">Ribozyme</A></B></dt><dd>An 
-<A HREF="#RNA">RNA</A> molecule with catalytic activity.
+<P><DT><B><A NAME="ribozyme">Ribozyme</A></B></dt><dd>An 
+<A HREF="#RNA">RNA</A> molecule with catalytic activity.</dd></p>
 
-</dd></p><P><DT><B><A NAME="RNA">RNA</A></B></dt><dd>Ribonucleic acid. A 
+<P><DT><B><A NAME="RNA">RNA</A></B></dt><dd>Ribonucleic acid. A 
 <A HREF="#nucleic_acid">nucleic acid</A> that is the primary product of 
 <A HREF="#gene_expression">gene expression</A>. Chemically, it differs from 
 <A HREF="#DNA">DNA</A> by the substitution of ribose for deoxyribose in the sugar-phosphate backbone and by the substitution of the base uracil for thymine. See the 
 <A HREF="http://www.genome.gov/Pages/Hyperion//DIR/VIP/Glossary/Illustration/rna.html">Figure</A> at 
 <A HREF="#NHGRI">NHGRI</A>. <BR>See also 
-<A HREF="#central_dogma">Central Dogma</A> and DNA.
+<A HREF="#central_dogma">Central Dogma</A> and DNA.</dd></p>
 
-</dd></p><P><DT><B><A NAME="RNA_editing">RNA Editing</A></B></dt><dd>The alteration of the sequence of an 
+<P><DT><B><A NAME="RNA_editing">RNA Editing</A></B></dt><dd>The alteration of the sequence of an 
 <A HREF="#RNA">RNA</A> molecule by 
 <A HREF="#enzyme">enyzmatic</A> modification of individual 
 <A HREF="#base">bases</A> without normal 
-<A HREF="#splicing">splicing</A>.<!--See <A HREF="http://www.ncbi.nlm.nih.gov/books/bv.fcgi?call=bv.View..ShowSection&rid=cell.figgrp.d1e37981">Figure 9-80</a> from Alberts et al. for an example of RNA editing that uses a splicing-like mechanism.-->
+<A HREF="#splicing">splicing</A>.<!--See <A HREF="http://www.ncbi.nlm.nih.gov/books/bv.fcgi?call=bv.View..ShowSection&rid=cell.figgrp.d1e37981">Figure 9-80</a> from Alberts et al. for an example of RNA editing that uses a splicing-like mechanism.--></dd></p>
 
-</dd></p><P><DT><B><A NAME="RNA_polymerase">RNA Polymerase</A></B></dt><dd>An 
+<P><DT><B><A NAME="RNA_polymerase">RNA Polymerase</A></B></dt><dd>An 
 <A HREF="#enzyme">enzyme</A> that carries out 
-<A HREF="#transcription">transcription</A>.
+<A HREF="#transcription">transcription</A>.</dd></p>
 
-</dd></p><P><DT><B><A NAME="RNA_processing">RNA Processing</A></B></dt><dd>Modifications to an 
+<P><DT><B><A NAME="RNA_processing">RNA Processing</A></B></dt><dd>Modifications to an 
 <A HREF="#RNA">RNA</A> molecule after 
 <A HREF="#transcription">transcription</A>, including
 <A HREF="#splicing">splicing</A>, 
 <A HREF="#polyadenylation">polyadenylation</A>, and 
-<A HREF="#RNA_editing">editing</A>.
+<A HREF="#RNA_editing">editing</A>.</dd></p>
 
-</dd></p><P><DT><B><A NAME="RNAse">RNAse</A></B></dt><dd>Ribonuclease. A 
+<P><DT><B><A NAME="RNAse">RNAse</A></B></dt><dd>Ribonuclease. A 
 <A HREF="#protein">protein</A> that cleaves the phosphodiester backbone of 
 <A HREF="#RNA">RNA</A>
-<A HREF="#enzyme">enzymatically</A>.
+<A HREF="#enzyme">enzymatically</A>.</dd></p>
 
-</dd></p><P><DT><B><A NAME="RNAse_protection">RNAse Protection</A></B></dt><dd>A method of detecting the presence of a specific 
+<P><DT><B><A NAME="RNAse_protection">RNAse Protection</A></B></dt><dd>A method of detecting the presence of a specific 
 <A HREF="#RNA">RNA</A> in a sample. A radioactively-labeled RNA
 <A HREF="#probe">probe</A> is prepared by 
 <A HREF="#transcription">transcribing</A> the 
@@ -1904,36 +1954,35 @@ Recombination may also be <B>nonreciprocal</B>, in which case the product is equ
 <A HREF="#electrophoresis">electrophoresis</A> and 
 <A HREF="#autoradiography">autoradiography</A>. The presence of full-length probe that has not been cleaved by RNAse indicates the presence of the 
 <A HREF="#sense">sense</A> strand, and hence 
-<A HREF="#gene_expression">gene expression</A>, in the sample.
+<A HREF="#gene_expression">gene expression</A>, in the sample.</dd></p>
 
-</dd></p><P><DT><B><A NAME="rRNA">rRNA</A></B></dt><dd>Ribosomal RNA. The 
+<P><DT><B><A NAME="rRNA">rRNA</A></B></dt><dd>Ribosomal RNA. The 
 <A HREF="#RNA">RNA</A> molecules that are a structural and catalytic component of the 
-<A HREF="#ribosome">ribosome</A>.
+<A HREF="#ribosome">ribosome</A>.</dd></p>
 
-</dd></p><P><DT><B><A NAME="RT-PCR">RT-PCR</A></B></dt><dd>Reverse-Transcription PCR. A method of amplifying 
+<P><DT><B><A NAME="RT-PCR">RT-PCR</A></B></dt><dd>Reverse-Transcription PCR. A method of amplifying 
 <A HREF="#mRNA">mRNA</A> by first synthesizing 
 <A HREF="#cDNA">cDNA</A> with
 <A HREF="#reverse_transcriptase">reverse transcriptase</A>, then amplifying the cDNA using 
 <A HREF="#pcr">PCR</A>. A positive result is evidence of a particular mRNA, and hence of 
-<A HREF="#gene_expression">gene expression</A>, in a sample.
+<A HREF="#gene_expression">gene expression</A>, in a sample.</dd></p>
 
 <!-- SSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS --><A NAME="s"></A>
-
-</dd></p><P><DT><B><A NAME="schema"></A>Schema</B><DD><OL><LI>An underlying organizational pattern or structure; conceptual framework.<LI>A collection of items that model part or all of a real world object, particularly in the context of a 
+<P><DT><B><A NAME="schema"></A>Schema</B><DD><OL><LI>An underlying organizational pattern or structure; conceptual framework.<LI>A collection of items that model part or all of a real world object, particularly in the context of a 
 <A HREF="#database">database</A>, i.e., a database schema.<LI>The structure of a database system, described in a formal language supported by the 
 <A HREF="#database_management">database management system (DBMS)</A>. In a 
 <A HREF="#relational_db">relational database</A>, the schema defines the 
 <A HREF="#table">tables</A>, the <A HREF="#field">fields</A> in each table, and the relationships between fields and tables. Schemas are generally stored in a 
 <A HREF="#data_dictionary">data dictionary</A>. Although a schema is defined in text database language, the term is often used to refer to a graphical depiction of the database structure.<LI>In computer science, a description of the logical organization, structure, and content of a 
-<A HREF="#database">database</A>.</OL>
+<A HREF="#database">database</A>.</OL></dd></p>
 
-</dd></p><P><DT><B><A NAME="segregation">Segregation</A></B></dt><DD><ol><li>The separation of 
+<P><DT><B><A NAME="segregation">Segregation</A></B></dt><DD><ol><li>The separation of 
 <A HREF="#homolog">homologous</A> chromosomes during 
 <A HREF="#meiosis">meiosis</A>.</li><li>The separation of different 
 <A HREF="#allele">alleles</A> of the same 
-<A HREF="#gene">gene</A> during meiosis.</li></ol></dd>
+<A HREF="#gene">gene</A> during meiosis.</li></ol></dd></p>
 
-</dd></p><P><DT><B><A NAME="semidominant">Semidominant</A></B></dt><dd>One of a series of terms applied to the 
+<P><DT><B><A NAME="semidominant">Semidominant</A></B></dt><dd>One of a series of terms applied to the 
 <A HREF="#phenotype">phenotypic</A> effect of a particular 
 <A HREF="#allele">allele</A> in reference to another allele (usually the standard 
 <A HREF="#wild_type">wild-type</A> allele) with respect to a given 
@@ -1947,7 +1996,7 @@ Recombination may also be <B>nonreciprocal</B>, in which case the product is equ
 <A HREF="#recessive">Recessive</A>.</dd></p>
 
 <P><DT><B><A NAME="sense">Sense</A></B></dt><DD><ol><li>In molecular biology, that strand of a 
-<A HREF="#DNA">DNA</A> molecule whose sequence is represented in <A HREF="#mRNA">mRNA</A>.</li><li>In molecular biology, an <A HREF="#RNA">RNA</A> molecule normally processed into <A HREF="#mRNA">mRNA</A> and <A HREF="#translation">translated</A> (rather than the <A HREF="#complementary">complementary sequence</A>).</li></ol></dd>
+<A HREF="#DNA">DNA</A> molecule whose sequence is represented in <A HREF="#mRNA">mRNA</A>.</li><li>In molecular biology, an <A HREF="#RNA">RNA</A> molecule normally processed into <A HREF="#mRNA">mRNA</A> and <A HREF="#translation">translated</A> (rather than the <A HREF="#complementary">complementary sequence</A>).</li></ol></dd></p>
 
 <P><DT><B><A NAME="sequence">Sequence</A></B></dt><dd>In MGI, an order of nucleotides (base pair sequences) in mouse RNA or genomic (DNA) molecules or of polypeptides in a protein,  stored in the MGI database. </dd></p>
 
@@ -1958,16 +2007,16 @@ Recombination may also be <B>nonreciprocal</B>, in which case the product is equ
 
 <P><DT><B><A NAME="sex_chromosome">Sex Chromosome</A></B></dt><dd>Either of two <A HREF="#chromosome">chromosomes</A> that are sexually <A HREF="#dimorphic">dimorphic</A> in species with chromosomal (as opposed to genic) sex determination. In mammals, males are the 
 <A HREF="#heterogametic">heterogametic</A> sex, having an <A HREF="#X_chromosome">X chromosome</A> and a <A HREF="#Y_chromosome">Y chromosome</A>, while females are the
-<A HREF="#homogametic">homogametic</A> sex, having two X chromosomes.
+<A HREF="#homogametic">homogametic</A> sex, having two X chromosomes.</dd></p>
 
-</dd></p><P><DT><B><A NAME="sex_linked">Sex Linked</A></B></dt><dd>Located on the 
-<A HREF="#X_chromosome">X chromosome</A> or the <A HREF="#Y_chromosome">Y chromosome</A>.
+<P><DT><B><A NAME="sex_linked">Sex Linked</A></B></dt><dd>Located on the 
+<A HREF="#X_chromosome">X chromosome</A> or the <A HREF="#Y_chromosome">Y chromosome</A>.</dd></p>
 
-</dd></p><P><DT><B><A NAME="shotgun_sequencing"></A>Shotgun Sequencing</B><DD>The sequencing of a large 
+<P><DT><B><A NAME="shotgun_sequencing"></A>Shotgun Sequencing</B><DD>The sequencing of a large 
 <A HREF="#DNA">DNA</A> segment through the sequencing of randomly-derived subsegments whose order and orientation within the large segment is unknown until the assembly of overlapping sequences. The method works if all positions in the large segment are covered by multiple overlapping subsegments.<BR>See also 
-<A HREF="#wholegenome_shotgun">Whole-genome shotgun sequencing</A>.
+<A HREF="#wholegenome_shotgun">Whole-genome shotgun sequencing</A>.</dd></p>
 
-</dd></p><P><DT><B><A NAME="sibling">Sibling</A></B></dt><dd>In 
+<P><DT><B><A NAME="sibling">Sibling</A></B></dt><dd>In 
 <A HREF="#MGI">MGI</A>, this term refers to terms in a 
 <A HREF="#hierarchical">hierarchical</a> 
 <A HREF="#controlled_vocabulary">controlled vocabulary</A> such as those containing 
@@ -1977,31 +2026,31 @@ Recombination may also be <B>nonreciprocal</B>, in which case the product is equ
 <A HREF="#ancestor">ancestor</A> term 
 <A HREF="#enzyme">enzyme</A> [GO:0003824].<BR>See also 
 <A HREF="#ancestor">Ancestor</A>, 
-<A HREF="#children">Children</A>.
+<A HREF="#children">Children</A>.</dd></p>
 
-</dd></p><P><DT><B><A NAME="similarity">Similarity</A></B></dt><DD><ol><li>In comparison of 
+<P><DT><B><A NAME="similarity">Similarity</A></B></dt><DD><ol><li>In comparison of 
 <A HREF="#nucleic_acid">nucleic acid</A> sequences, the extent to which two <A HREF="#nucleic_acid">nucleic acid</A> sequences have identical <A HREF="#base">bases</A> at equivalent positions, usually expressed as a percentage.</li><li>In comparison of 
 <A HREF="#protein">protein</A> sequences, the extent to which the <A HREF="#amino_acid">amino acid</A> sequences of two <A HREF="#protein">proteins</A> have identical or functionally similar 
-<A HREF="#amino_acid">amino acids</A> at equivalent positions, usually expressed as a percentage.</li></ol><BR>See also <A HREF="#identity">Identity</A>.</dd>
+<A HREF="#amino_acid">amino acids</A> at equivalent positions, usually expressed as a percentage.</li></ol><BR>See also <A HREF="#identity">Identity</A>.</dd></p>
 
-</dd></p><P><DT><B><A NAME="simple_sequence_repeat"></A>Simple Sequence Repeat (SSR)</B></dt><DD>A sequence consisting largely of a tandem repeat of a specific k-mer (such as (CA)<SUB>15</SUB>).
+<P><DT><B><A NAME="simple_sequence_repeat"></A>Simple Sequence Repeat (SSR)</B></dt><DD>A sequence consisting largely of a tandem repeat of a specific k-mer (such as (CA)<SUB>15</SUB>).
 Many SSRs are <A HREF="#polymorphism">polymorphic</A>and have been widely used in 
-<A HREF="#genetic_map">genetic mapping</A>.</dd>
+<A HREF="#genetic_map">genetic mapping</A>.</dd></p>
 
-</dd></p><P><DT><B><A NAME="site-specific_recombination">Site-specific Recombination</A></B></dt><dd>Reciprocal 
+<P><DT><B><A NAME="site-specific_recombination">Site-specific Recombination</A></B></dt><dd>Reciprocal 
 <A HREF="#recombination">recombination</A> between specific target sequences catalyzed by a specific
 <A HREF="#recombination">recombination</A> 
 <A HREF="#enzyme">enzyme</A>, as opposed to general 
 <A HREF="#homologous_recombination">homologous recombination</A>. One example is recombination at 
 <A HREF="#loxP">loxP</A> sites catalyzed by 
-<A HREF="#Cre">Cre recombinase</A>.
+<A HREF="#Cre">Cre recombinase</A>.</dd></p>
 
-</dd></p><P><DT><B><A NAME="SNP">SNP</A></B></dt><dd>Single Nucleotide Polymorphism. A type of 
+<P><DT><B><A NAME="SNP">SNP</A></B></dt><dd>Single Nucleotide Polymorphism. A type of 
 <A HREF="#polymorphism">polymorphism</A> in which two 
 <A HREF="#chromosome">chromosomes</A> differ in a given segment by the identity of a single 
-<A HREF="#base_pair">base pair</A>.
+<A HREF="#base_pair">base pair</A>.</dd></p>
 
-</dd></p><P><DT><B><A NAME="southern_blot">Southern Blot</A></B></dt><dd>An assay that detects specific 
+<P><DT><B><A NAME="southern_blot">Southern Blot</A></B></dt><dd>An assay that detects specific 
 <A HREF="#DNA">DNA</A> molecules using a 
 <A HREF="#DNA">DNA</A> or 
 <A HREF="#RNA">RNA</A>
@@ -2012,146 +2061,149 @@ Many SSRs are <A HREF="#polymorphism">polymorphic</A>and have been widely used i
 <A HREF="#probe">probe</A>. See the 
 <A HREF="http://www.accessexcellence.org/AB/GG/southBlotg.html">Figure</A> from Alberts, et al., Molecular Biology of the Cell.<BR>See also 
 <A HREF="#northern_blot">Northern blot</A> and 
-<A HREF="#western_blot">Western blot</A>.
+<A HREF="#western_blot">Western blot</A>.</dd></p>
 
-</dd></p><P><DT><B><A NAME="somatic">Somatic</A></B></dt><dd>Cells an animal other than those that constitute the 
-<A HREF="#germline">germ line</A>.
+<P><DT><B><A NAME="somatic">Somatic</A></B></dt><dd>Cells an animal other than those that constitute the 
+<A HREF="#germline">germ line</A>.</dd></p>
 
-</dd></p><P><DT><B><A NAME="somatic_cell_hybrid">Somatic Cell Hybrid</A></B></dt><dd>A type of mapping experiment permitting the assignment of 
+<P><DT><B><A NAME="somatic_cell_hybrid">Somatic Cell Hybrid</A></B></dt><dd>A type of mapping experiment permitting the assignment of 
 <A HREF="#marker">markers</A> to 
 <A HREF="#chromosome">chromosomes</A>. The method consists of fusing cultured cells of one species with cultured cells of a different species. The hybrid cells are unstable in 
 <A HREF="#karyotype">karyotype</A> during growth, with most chromosomes from one species typically being lost. Among clonal populations of hybrid cells following growth, different chromosomes are retained from one species. 
 A panel of hybrid cell cultures can be assayed for which mouse chromosomes (for example) are retained, and simultaneously assayed for the presence of particular markers. The correlation of the presence of a particular marker 
 across the panel with the presence of a particular mouse chromosome allows that marker to be assigned to that chromosome.<BR>See also 
-<A HREF="#radiation hybrid mapping">Radiation Hybrid Mapping</A>.
+<A HREF="#radiation hybrid mapping">Radiation Hybrid Mapping</A>.</dd></p>
 
-</dd></p><P><DT><B><A NAME="spindle">Spindle</A></B></dt><dd>The cellular apparatus that directs 
+<P><DT><B><A NAME="spindle">Spindle</A></B></dt><dd>The cellular apparatus that directs 
 <A HREF="#chromosome">chromosome</A> movement during cell division in
 <A HREF="#mitosis">mitosis</A> or <A HREF="#meiosis">meiosis</A>. The spindle is largely composed of 
 <A HREF="#microtubule">microtubules</A>. See the 
 <A HREF="http://www.genome.gov/Pages/Hyperion//DIR/VIP/Glossary/Illustration/metaphase.html">Figure</A> at 
-<A HREF="#NHGRI">NHGRI</A>.
+<A HREF="#NHGRI">NHGRI</A>.</dd></p>
 
 </dd></p><P><DT><B><A NAME="splice_acceptor">Splice Acceptor Site</A></B></dt><dd>In the 
 <A HREF="#splicing">splicing</A> of 
 <A HREF="#RNA">RNA</A>, the site at the 
 <A HREF="#3'">3' end</A> of an
 <A HREF="#intron">intron</A>.<BR>See also 
-<A HREF="#splice_donor">Splice Donor Site</A>.
+<A HREF="#splice_donor">Splice Donor Site</A>.</dd></p>
 
-</dd></p><P><DT><B><A NAME="splice_donor">Splice Donor Site</A></B></dt><dd>In the 
+<P><DT><B><A NAME="splice_donor">Splice Donor Site</A></B></dt><dd>In the 
 <A HREF="#splicing">splicing</A> of 
 <A HREF="#RNA">RNA</A>, the site at the 
 <A HREF="#5'">5' end</A> of an
 <A HREF="#intron">intron</A>.<BR>See also 
-<A HREF="#splice_acceptor">Splice Acceptor Site</A>.
+<A HREF="#splice_acceptor">Splice Acceptor Site</A>.</dd></p>
 
-</dd></p><P><DT><B><A NAME="splice_junction">Splice Junction</A></B></dt><dd>In the 
+<P><DT><B><A NAME="splice_junction">Splice Junction</A></B></dt><dd>In the 
 <A HREF="#splicing">splicing</A> of 
 <A HREF="#RNA">RNA</A>, the site of a former 
 <A HREF="#intron">intron</A> in a mature
-<A HREF="#mRNA">mRNA</A>.
+<A HREF="#mRNA">mRNA</A>.</dd></p>
 
-</dd></p><P><DT><B><A NAME="splicing">Splicing</A></B></dt><dd>Part of the processing of an 
+<P><DT><B><A NAME="splicing">Splicing</A></B></dt><dd>Part of the processing of an 
 <A HREF="#RNA">RNA</A> 
 <A HREF="#transcription">transcript</A> into 
 <A HREF="#mRNA">mRNA</A>, in which 
 <A HREF="#intron">introns</A> are removed 
-<A HREF="#enzyme">enzymatically</A>.
+<A HREF="#enzyme">enzymatically</A>.</dd></p>
 
-</dd></p><P><DT><B><A NAME="spontaneous">Spontaneous</A></B></dt><dd>As a type of 
+<P><DT><B><A NAME="spontaneous">Spontaneous</A></B></dt><dd>As a type of 
 <A HREF="#mutation">mutation</A>, a mutation that has occurred in the absence of any experimental 
-<A HREF="#mutagen">mutagenic</A> treatment, such as irradiation or treatment with chemical mutagens.
+<A HREF="#mutagen">mutagenic</A> treatment, such as irradiation or treatment with chemical mutagens.</dd></p>
 
-</dd></p><P><DT><B><A NAME="SQL"></A>SQL</B><DD>Structured Query Language. SQL is used to communicate with a 
+<P><DT><B><A NAME="SQL"></A>SQL</B><DD>Structured Query Language. SQL is used to communicate with a 
 <A HREF="#database">database</A>. According to 
 <A HREF="#ANSI">ANSI (American National Standards Institute)</A>, it is the standard language for 
-<A HREF="#rdbms">relational database management systems</A>. SQL statements are used to perform tasks such as updating data in or retrieving data from a database. Some common relational database management systems that use SQL are: Oracle, Sybase, Microsoft SQL Server, Access, Ingres, etc. Although most database systems use SQL, most of them also have their own additional proprietary extensions that are usually only used on their system. The <A HREF="#query_form">Query Forms</A> at <A HREF="#MGI">MGI</A> extract information from databases by generating instructions in SQL.
+<A HREF="#rdbms">relational database management systems</A>. SQL statements are used to perform tasks such as updating data in or retrieving data from a database. Some common relational database management systems that use SQL are: Oracle, Sybase, Microsoft SQL Server, Access, Ingres, etc. Although most database systems use SQL, most of them also have their own additional proprietary extensions that are usually only used on their system. The <A HREF="#query_form">Query Forms</A> at <A HREF="#MGI">MGI</A> extract information from databases by generating instructions in SQL.</dd></p>
 
-</dd></p><P><DT><B><A NAME="SSLP"></A>SSLP</B><DD>Simple Sequence Length Polymorphism, a type of 
+<P><DT><B><A NAME="SSLP"></A>SSLP</B><DD>Simple Sequence Length Polymorphism, a type of 
 <A HREF="#polymorphism">polymorphism</A> that results from variation in the length of an 
-<A HREF="#SSR">SSR</A>.
+<A HREF="#SSR">SSR</A>.</dd></p>
 
-</dd></p><P><DT><B><A NAME="SSR"></A>SSR</B><DD>Simple Sequence Repeat, a 
-<A HREF="#DNA">DNA</A> sequence consisting largely of a tandem repeat of a specific k-mer (such as (CA)<SUB>15</SUB>). Many SSRs are <A HREF="#polymorphism">polymorphic</A> and have been widely used in <A HREF="#genetic_map">genetic mapping</A>.
+<P><DT><B><A NAME="SSR"></A>SSR</B><DD>Simple Sequence Repeat, a 
+<A HREF="#DNA">DNA</A> sequence consisting largely of a tandem repeat of a specific k-mer (such as (CA)<SUB>15</SUB>). Many SSRs are <A HREF="#polymorphism">polymorphic</A> and have been widely used in <A HREF="#genetic_map">genetic mapping</A>.</dd></p>
 
 </dd></p><P><DT><B><A NAME="stop_codon">Stop Codon</A></B></dt><dd>One of three 
 <A HREF="#codon">codons</A> that signal that 
 <A HREF="#translation">translation</A> of an 
-<A HREF="#RNA">RNA</A> sequence should cease.
+<A HREF="#RNA">RNA</A> sequence should cease.</dd></p>
 
-</dd></p><P><DT><B><A NAME="structural_gene">Structural Gene</A></B></dt><dd>A 
+<P><DT><B><A NAME="structural_gene">Structural Gene</A></B></dt><dd>A 
 <A HREF="#gene">gene</A> that encodes an 
 <A HREF="#enzyme">enzyme</A> or 
 <A HREF="#structural_protein">structural protein</A>, in contrast to a 
-<A HREF="#regulatory_gene">regulatory gene</A>.
+<A HREF="#regulatory_gene">regulatory gene</A>.</dd></p>
 
-</dd></p><P><DT><B><A NAME="structural_protein">Structural Protein</A></B></dt><dd>A 
+<P><DT><B><A NAME="structural_protein">Structural Protein</A></B></dt><dd>A 
 <A HREF="#protein">protein</A> that functions as a structural element of cells rather than as an 
-<A HREF="#enzyme">enzyme</A>, for example, <B>collagen</B>.
+<A HREF="#enzyme">enzyme</A>, for example, <B>collagen</B>.</dd></p>
 
-</dd></p><P><DT><B><A NAME="structured_query_language"></A>Structured Query Language</B><DD>Structured Query Language (SQL) is used to communicate with a 
+<P><DT><B><A NAME="structured_query_language"></A>Structured Query Language</B><DD>Structured Query Language (SQL) is used to communicate with a 
 <A HREF="#database">database</A>. According to 
 <A HREF="#ANSI">ANSI (American National Standards Institute)</A>, it is the standard language for 
-<A HREF="#relational_db">relational database management systems</A>. SQL statements are used to perform tasks such as updating data in or retrieving data from a database. Some common relational database management systems that use SQL are: Oracle, Sybase, Microsoft SQL Server, Access, Ingres, etc. Although most database systems use SQL, most of them also have their own additional proprietary extensions that are usually only used on their system. The <A HREF="#query_form">Query Forms</A> at <A HREF="#MGI">MGI</A> extract information from databases by generating instructions in SQL.
+<A HREF="#relational_db">relational database management systems</A>. SQL statements are used to perform tasks such as updating data in or retrieving data from a database. Some common relational database management systems that use SQL are: Oracle, Sybase, Microsoft SQL Server, Access, Ingres, etc. Although most database systems use SQL, most of them also have their own additional proprietary extensions that are usually only used on their system. The <A HREF="#query_form">Query Forms</A> at <A HREF="#MGI">MGI</A> extract information from databases by generating instructions in SQL.</dd></p>
 
-</dd></p><P><DT><B><A NAME="STS">STS</A></B></dt><dd>Sequence Tagged Site. A short segment of unique sequence derived from 
+<P><DT><B><A NAME="STS">STS</A></B></dt><dd>Sequence Tagged Site. A short segment of unique sequence derived from 
 <A HREF="#genome">genomic</A> 
 <A HREF="#DNA">DNA</A>. A large collection of STSs can be used to assemble a 
 <A HREF="#physical_map">physical map</A> of the genome from a collection of genomic clones (e.g., 
 <A HREF="#BAC">BACs</A> or 
 <A HREF="#YAC">YACs</A>) by testing each clone for the presence of each STS. Two clones that contain one or more STSs in common must overlap. For examples, see the 
 <A HREF="<!--#include file='include/wi_url.html'-->/reports/mitmap/">physical maps</A> of the mouse genome at 
-<A HREF="#MGI">MGI</A>.
+<A HREF="#MGI">MGI</A>.</dd></p>
 
-</dd></p><P><DT><B><A NAME="substrate">Substrate</A></B></dt><dd>A molecule acted upon by an 
-<A HREF="#enzyme">enzyme</A>.
+<P><DT><B><A NAME="substrate">Substrate</A></B></dt><dd>A molecule acted upon by an 
+<A HREF="#enzyme">enzyme</A>.</dd></p>
 
-</dd></p><P><DT><B><A NAME="symbol">Symbol</A></B></dt><dd>As used in 
+<P><DT><B><A NAME="swissprot">SWISS-Prot</a></B></dt>
+<DD><A HREF="#http://us.expasy.org/sprot/">SWISS-Prot</a> is a curated protein sequence database providing a high level of annotation (such as the description of the function of a protein, its domains structure, post-translational modifications, variants, etc.), a minimal level of redundancy, and a high level of integration with other databases. This database is developed by the Swiss-Prot groups at the <A HREF="#http://www.isb-sib.ch/">Swiss Institute of Bioinformatics</a> (SIB) and at the <A HREF="#http://www.ebi.ac.uk/">European Bioinformatics Institute</A> (EBI). </dd></p>
+
+<P><DT><B><A NAME="symbol">Symbol</A></B></dt><dd>As used in 
 <A HREF="#MGI">MGI</A>, a <A HREF="#gene">gene</A> symbol is a unique abbreviation for the
 <A HREF="#gene_name">gene name</A> or the 
-<A HREF="#allele_name">allele name</a>.
+<A HREF="#allele_name">allele name</a>.</dd></p>
 
-</dd></p><P><DT><B><A NAME="synteny">Synteny</A></B></dt><dd>The state of being on the same 
+<P><DT><B><A NAME="synteny">Synteny</A></B></dt><dd>The state of being on the same 
 <A HREF="#chromosome">chromosome</A>. A <A HREF="#gene">gene</A> is also said to be syntenic to a particular chromosome if it is known to be located on that chromosome but is otherwise unmapped.<BR>See also <A HREF="#conserved_synteny">Conserved Synteny</A></dd></p>
 
-<P><DT><B><A NAME="synonym">Synonym</A></B></dt><dd>In <a href="#MGI">MGI</a>, a synonym is either an unofficial <a href="#symbol">symbol</a> that has appeared in the scientific literature or in public databases such as <a href="#genbank">GenBank</a>, or a formerly official symbol, withdrawn due to gene family revisions or to conform to the human <a href="#ortholog">ortholog</a> symbol. 
+<P><DT><B><A NAME="synonym">Synonym</A></B></dt><dd>In <a href="#MGI">MGI</a>, a synonym is either an unofficial <a href="#symbol">symbol</a> that has appeared in the scientific literature or in public databases such as <a href="#genbank">GenBank</a>, or a formerly official symbol, withdrawn due to gene family revisions or to conform to the human <a href="#ortholog">ortholog</a> symbol. </dd></p>
 
-</dd></p><P><DT><B><A name="system_catalog">System Catalog</A></B></dt><DD>The 
+<P><DT><B><A name="system_catalog">System Catalog</A></B></dt><DD>The 
 <A HREF="#data_dictionary">data dictionary</A> of a <A HREF="#dbms">DBMS</A>. The system catalog stores 
-<A HREF="#metadata">metadata</A> including the <A HREF="#schema">schemas</A> of the <A HREF="#database">databases</A>. It is a mini-database, and is usually stored using the DBMS itself in special tables called system tables. It maybe referred to as being "on line", as it is active, and users can query it like any other table. 
+<A HREF="#metadata">metadata</A> including the <A HREF="#schema">schemas</A> of the <A HREF="#database">databases</A>. It is a mini-database, and is usually stored using the DBMS itself in special tables called system tables. It maybe referred to as being "on line", as it is active, and users can query it like any other table. </dd></p>
 
 <!-- TTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTT --><A NAME="t"></A>
-</dd></p><P><DT><B><A NAME="tab-delimited">Tab-delimited</A></B></dt><DD>A text file with data fields separated by "tab" characters. Such files can be converted to spreadsheet files, such as those used by Microsoft Excel.
+<P><DT><B><A NAME="tab-delimited">Tab-delimited file</A></B></dt><DD>A text file that uses tabs to separate adjacent fields. It is a common format for downloading information into a spreadsheet.</dd></p>
 
-</dd></p><P><DT><B><A NAME="table"></A>Table</B><DD>Refers to data arranged in rows and columns. A spreadsheet, for example, is a table. In 
-<A HREF="#relational_db">relational databases</A>, all information is stored in the form of tables.
+<P><DT><B><A NAME="table"></A>Table</B><DD>Refers to data arranged in rows and columns. A spreadsheet, for example, is a table. In 
+<A HREF="#relational_db">relational databases</A>, all information is stored in the form of tables.</dd></p>
 
-</dd></p><P><DT><B><A NAME="targeted_mutation"></A>Targeted Mutation</B><DD>A type of 
+<P><DT><B><A NAME="targeted_mutation"></A>Targeted Mutation</B><DD>A type of 
 <A HREF="#mutation">mutation</A> in which a chromosomal 
 <A HREF="#gene">gene</A> is altered by the substitution of a
 <A HREF="#DNA_construct">DNA construct</A> assembled 
 <A HREF="#in_vitro">in vitro</A>. In mouse, the constructs are usually designed to eliminate gene function; such targeted mutations are often casually referred to as 
 <A HREF="#knockout">knock outs</A>. Some DNA constructs are designed to alter gene function; such targeted mutations are often casually referred to as 
-<A HREF="#knockin">knock ins</A>.
+<A HREF="#knockin">knock ins</A>.</dd></p>
 
-</dd></p><P><DT><B><A NAME="telomere">Telomere</A></B></dt><DD>A specialized structure at the ends of linear 
+<P><DT><B><A NAME="telomere">Telomere</A></B></dt><DD>A specialized structure at the ends of linear 
 <A HREF="#chromosome">chromosomes</A> in eukaryotes. Telomeres confer stability on chromosome ends. Chromosome ends lacking telomeres, such as those generated from interstitial sites by chromosome breaks, are reactive, often fusing with other broken ends to generate 
 <A HREF="#chromosome_rearrangement">chromosome rearrangements</A>. Telomeres also permit the ends of linear chromosomes to 
 <A HREF="#replication">replicate</A> fully. See the 
-<A HREF="http://www.genome.gov/Pages/Hyperion//DIR/VIP/Glossary/Illustration/chromosome.html">Figure</A> at <A HREF="#NHGRI">NHGRI</A>.
+<A HREF="http://www.genome.gov/Pages/Hyperion//DIR/VIP/Glossary/Illustration/chromosome.html">Figure</A> at <A HREF="#NHGRI">NHGRI</A>.</dd></p>
 
-</dd></p><P><DT><B><A NAME="template">Template</A></B></dt><DD>In the process of 
+<P><DT><B><A NAME="template">Template</A></B></dt><DD>In the process of 
 <A HREF="#replication">replication</A> or 
 <A HREF="#transcription">transcription</A>, the strand of
-<A HREF="#DNA">DNA</A> that serves as the source of information.
+<A HREF="#DNA">DNA</A> that serves as the source of information.</dd></p>
 
-</dd></p><P><DT><B><A NAME="termination_codon">Termination Codon</A></B></dt><DD>One of three 
+<P><DT><B><A NAME="termination_codon">Termination Codon</A></B></dt><DD>One of three 
 <A HREF="#codon">codons</A> that signal that 
 <A HREF="#translation">translation</A> of an 
-<A HREF="#RNA">RNA</A> sequence should cease.
+<A HREF="#RNA">RNA</A> sequence should cease.</dd></p>
 
-</dd></p><P><DT><B><A NAME="testcross">Testcross</A></B></dt><DD>A type of 
+<P><DT><B><A NAME="testcross">Testcross</A></B></dt><DD>A type of 
 <A HREF="#cross">cross</A> in which individuals whose 
 <A HREF="#genotype">genotype</A> with respect to one or more
 <A HREF="#gene">genes</A> is unknown are crossed to a test strain 
@@ -2164,33 +2216,33 @@ across the panel with the presence of a particular mouse chromosome allows that 
 <A HREF="#backcross">Backcross</A></LI><LI>
 <A HREF="#incross">Incross</A></LI><LI>
 <A HREF="#intercross">Intercross</A></LI><LI>
-<A HREF="#outcross">Outcross</A></LI></UL>
+<A HREF="#outcross">Outcross</A></LI></UL></dd></p>
 
-</dd></p><P><DT><B><A NAME="texas_red">Texas Red</A></B></dt><DD>A 
+<P><DT><B><A NAME="texas_red">Texas Red</A></B></dt><DD>A 
 <A HREF="#fluorescence">fluorescent</A> dye used to label 
 <A HREF="#antibody">antibodies</A> for 
 <A HREF="#immunofluorescence">immunofluorescence</A> or
-<A HREF="#western_blot">Western blots</A>.
+<A HREF="#western_blot">Western blots</A>.</dd></p>
 
-</dd></p><P><DT><B><A NAME="thermostable">Thermostable</A></B></dt><DD>Used to describe an 
+<P><DT><B><A NAME="thermostable">Thermostable</A></B></dt><DD>Used to describe an 
 <A HREF="#enzyme">enzyme</A> or other 
 <A HREF="#protein">protein</A> that is not 
-<A HREF="#denaturation">denatured</A> at temperatures that denature most other proteins.
+<A HREF="#denaturation">denatured</A> at temperatures that denature most other proteins.</dd></p>
 
-</dd></p><P><DT><B><A NAME="Theiler">Theiler Stage</A></B></dt><DD>One of a standard set of stages describing mouse development. See the 
+<P><DT><B><A NAME="Theiler">Theiler Stage</A></B></dt><DD>One of a standard set of stages describing mouse development. See the 
 <A HREF="http://genex.hgu.mrc.ac.uk/Databases/Anatomy/MAstaging.shtml">Table</A> of Theiler stages and the summary
-<A HREF="http://genex.hgu.mrc.ac.uk/Databases/Anatomy/Diagrams/">Images</A> at Edinburgh.
+<A HREF="http://genex.hgu.mrc.ac.uk/Databases/Anatomy/Diagrams/">Images</A> at Edinburgh.</dd></p>
 
-</dd></p><P><DT><B><A NAME="thymine"></A>Thymine (T)</B><DD>A 
+<P><DT><B><A NAME="thymine"></A>Thymine (T)</B><DD>A 
 <A HREF="#pyrimidine">pyrimidine</A> 
 <A HREF="#base">base</A> that is a component of 
 <A HREF="#nucleotide">nucleotides</A> and thus a normal component of 
 <A HREF="#DNA">DNA</A>. 
 <A HREF="#uracil">Uracil</A> replaces thymine in 
 <A HREF="#RNA">RNA</A>. See the 
-<A HREF="http://www.genome.gov/Pages/Hyperion//DIR/VIP/Glossary/Illustration/base_pair.html">Figure</A> at <A HREF="#NHGRI">NHGRI</A>.
+<A HREF="http://www.genome.gov/Pages/Hyperion//DIR/VIP/Glossary/Illustration/base_pair.html">Figure</A> at <A HREF="#NHGRI">NHGRI</A>.</dd></p>
 
-</dd></p><P><DT><B><A NAME="trait">Trait</A></B></dt><DD>A particular aspect of the 
+<P><DT><B><A NAME="trait">Trait</A></B></dt><DD>A particular aspect of the 
 <A HREF="#phenotype">phenotype</A> that can be measured or observed directly, e.g., blood pressure or body weight.</dd></p>
 
 <P><DT><B><A NAME="transcript">Transcript</A></B></dt><DD>An <A HREF="#RNA">RNA</A> molecule (or species of RNA molecule) that is the product of <A HREF="#transcription">transcription</A>.</dd></p>
@@ -2219,33 +2271,37 @@ across the panel with the presence of a particular mouse chromosome allows that 
 
 <P><DT><B><A NAME="transposition">Transposition</A></B></dt></dt><DD><ol><li>A type of 
 <A HREF="#chromosome_rearrangement">chromosome rearrangement</A> in which a segment of a 
-<A HREF="#chromosome">chromosome</A> is moved to a different location on the same chromosome, resembling an <A HREF="#translocation">insertional translocation</A> involving a single chromosome.</li><li>The movement of a <A HREF="#mobile_genetic">mobile genetic element</A> to a new location.</li></ol></dd>
+<A HREF="#chromosome">chromosome</A> is moved to a different location on the same chromosome, resembling an <A HREF="#translocation">insertional translocation</A> involving a single chromosome.</li><li>The movement of a <A HREF="#mobile_genetic">mobile genetic element</A> to a new location.</li></ol></dd></p>
 
-</dd></p><P><DT><B><A NAME="transposon">Transposon</A></B></dt><DD>A type of 
+<P><DT><B><A NAME="transposon">Transposon</A></B></dt><DD>A type of 
 <A HREF="#mobile_genetic">mobile genetic element</A> consisting of 
 <A HREF="#DNA">DNA</A> that moves to new
-<A HREF="#genome">genomic</A> locations <B>conservatively</B> (without replicating itself) or <B>replicatively</B> (moving a copy of itself).
+<A HREF="#genome">genomic</A> locations <B>conservatively</B> (without replicating itself) or <B>replicatively</B> (moving a copy of itself).</dd></p>
 
-</dd></p><P><DT><B><A NAME="transversion">Transversion</A></B></dt><DD>A type of 
+<P><DT><B><A NAME="transversion">Transversion</A></B></dt><DD>A type of 
 <A HREF="#point_mutation">point mutation</A> in which a 
 <A HREF="#purine">purine</A> is substituted for a
 <A HREF="#pyrimidine">pyrimidine</A> or a pyrimidine for a purine. These substitutions include C or T for A, C or T for G, A or G for C, and A or G for T.<BR>See also 
-<A HREF="#transition">Transition</A>.
+<A HREF="#transition">Transition</A>.</dd></p>
 
-</dd></p><P><DT><B><A NAME="trisomy">Trisomy</A></B></dt><DD>The condition of having three 
+<P><DT><B><A NAME="trembl">TrEMBL</A></B></dt>
+<DD><A HREF="#http://us.expasy.org/sprot/">TrEMBL</a> is the computer-annotated supplement of <A NAME="swissprot">Swiss-Prot</A> containing all the translations of <A NAME="embl">EMBL</A> nucleotide sequence entries not yet integrated in <A NAME="swissprot">Swiss-Prot</A>. </dd></p>
+
+
+<P><DT><B><A NAME="trisomy">Trisomy</A></B></dt><DD>The condition of having three 
 <A HREF="#chromosome">chromosomes</A> of a particular type. Down Syndrome in humans is a trisomy for chromosome 21.<BR>See also 
-<A HREF="#monosomy">Monosomy</A>.
+<A HREF="#monosomy">Monosomy</A>.</dd></p>
 
-</dd></p><P><DT><B><A NAME="tRNA">tRNA</A></B></dt><DD>Transfer RNA. Small 
+<P><DT><B><A NAME="tRNA">tRNA</A></B></dt><DD>Transfer RNA. Small 
 <A HREF="#RNA">RNA</A> molecules that bind to the 
 <A HREF="#codon">codons</A> of 
 <A HREF="#mRNA">mRNA</A> in the 
 <A HREF="#ribosome">ribosome</A> after being "charged" with 
-<A HREF="#amino_acid">amino acids.
+<A HREF="#amino_acid">amino acids.</dd></p>
 
 <!-- UUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUU --><A NAME="u"></A>
 
-</dd></p><P><DT><B><A NAME="uniparental_disomy">Uniparental Disomy</A></B></dt><DD>The inheritance, in a 
+<P><DT><B><A NAME="uniparental_disomy">Uniparental Disomy</A></B></dt><DD>The inheritance, in a 
 <A HREF="#diploid">diploid</A> organism, of both copies of a single 
 <A HREF="#chromosome">chromosome</A> from one parent. This may result from the union of a 
 <A HREF="#gamete">gamete</A> bearing two copies of one chromosome with a gamete bearing no copy of that chromosome, or from the union of a gamete bearing two copies of one chromosome with a normal gamete, followed by the loss of one chromosome through an error in 
@@ -2259,9 +2315,10 @@ across the panel with the presence of a particular mouse chromosome allows that 
 <A HREF="#marker">marker</A> has not yet been assigned to a 
 <A HREF="#chromosome">chromosome</A>.</dd></p>
 
-<P><DT><B><A NAME="unresolved">Unresolved attribute</A></B></dt><DD>In 
-<A HREF="#MGI">MGI</A>, a value that is not stored in our database. For example, a  sequence source listing with the strain attribute &quot;wild-caught in Tamil Nadu, South India&quot; would be considered &quot;raw&quot; or unresolved and a database query on this attribute would fail.
-</dd></p>
+<P><DT><B><A NAME="unresolved">Unresolved</A></B></dt><DD>In 
+<A HREF="#MGI">MGI</A>, a value or attribute that is not stored in our database.  For example, a provider sequence source lists the strain attribute as &quot;wild-caught in Tamil Nadu, South India&quot;. A database query on this attribute would fail because <I>wild-caught</i> strain is not in a standard <A NAME="MGI">MGI</A> 
+<A href="#controlled_vocabularies">controlled vocabulary</A>.<br>  See also <A href="#resolved">resolved</A>.</dd></p>
+
 
 <P><DT><B><A NAME="uracil"></A>Uracil (U)</B><DD>A 
 <A HREF="#pyrimidine">pyrimidine</A> 
@@ -2271,17 +2328,17 @@ across the panel with the presence of a particular mouse chromosome allows that 
 <A HREF="#thymine">Thymine</A> replaces uracil in 
 <A HREF="#DNA">DNA</A>. See the 
 <A HREF="http://www.genome.gov/Pages/Hyperion//DIR/VIP/Glossary/Illustration/base_pair.html">Figure</A> at 
-<A HREF="#NHGRI">NHGRI</A>.
+<A HREF="#NHGRI">NHGRI</A>.</dd></p>
 
-</dd></p><P><DT><B><A NAME="URL">URL</A></B></dt><DD>Uniform Resource Locator. An Internet address giving the protocol to be used for obtaining resources on the Internet such as "ftp:" for an <A HREF="#ftp">FTP</A> site or "http:" for a World Wide Web page. It also includes the server name and sometimes the path to the resource. The URL for <A HREF="#MGI">MGI</A> is "http://www.informatics.jax.org".</dd></p><P>
+<P><DT><B><A NAME="URL">URL</A></B></dt><DD>Uniform Resource Locator. An Internet address giving the protocol to be used for obtaining resources on the Internet such as "ftp:" for an <A HREF="#ftp">FTP</A> site or "http:" for a World Wide Web page. It also includes the server name and sometimes the path to the resource. The URL for <A HREF="#MGI">MGI</A> is "http://www.informatics.jax.org".</dd></p>
 
 <!-- VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV --><A NAME="v"></A>
-<DT><B><A NAME="vector">Vector</A></B></dt><DD>See 
-<A HREF="#cloning_vector">Cloning Vector</A>. 
+<P><DT><B><A NAME="vector">Vector</A></B></dt><DD>See 
+<A HREF="#cloning_vector">Cloning Vector</A>.</dd></P> 
 
-<DT><B><A NAME="version">Version</A></B></dt><DD>The version is a sequence identification number assigned to database sequences. The format is frequently accession.version (e.g., M12345.1). Whenever the author of a particular sequence record changes the sequence data in any way (even if just a single nucleotide is altered), the version number increases by an increment of one, while the accession number base remains constant. For example, M12345.1 would become M12345.2. When you  search a sequence database, only the most recent version of a record is retrieved. </dd></p>
+<P><DT><B><A NAME="version">Version</A></B></dt><DD>The version is a sequence identification number assigned to database sequences. The format is frequently accession.version (e.g., M12345.1). Whenever the author of a particular sequence record changes the sequence data in any way (even if just a single nucleotide is altered), the version number increases by an increment of one, while the accession number base remains constant. For example, M12345.1 would become M12345.2. When you  search a sequence database, only the most recent version of a record is retrieved. </dd></p>
 
-</dd></p><P><DT><B><A NAME="virus">Virus</A></B></dt><DD>A noncellular biological entity that requires a host cell for reproduction. Viruses consist of a 
+<P><DT><B><A NAME="virus">Virus</A></B></dt><DD>A noncellular biological entity that requires a host cell for reproduction. Viruses consist of a 
 <A HREF="#nucleic_acid">nucleic acid</A> 
 <A HREF="#genome">genome</A> that is either 
 <A HREF="#DNA">DNA</A> or, in the case of 
@@ -2296,51 +2353,51 @@ across the panel with the presence of a particular mouse chromosome allows that 
 <A HREF="#electrophoresis">electrophoresis</A> on a slab gel. A replica of the gel is then made on a membrane by electrophorectic transfer. Specific proteins are then detected on the membrane using 
 <A HREF="#antibody">antibody</A> staining. See 
 <A HREF="#southern_blot">Southern blot</A> and 
-<A HREF="#northern_blot">Northern blot</A>.
+<A HREF="#northern_blot">Northern blot</A>.</dd></p>
 
-</dd></p><P><DT><B><A NAME="wholegenome_shotgun"></A>Whole-genome Shotgun Sequencing</B><DD>The 
+<P><DT><B><A NAME="wholegenome_shotgun"></A>Whole-genome Shotgun Sequencing</B><DD>The 
 <A HREF="#sequencing">sequencing</A> of the entire genome of an organism through the sequencing of randomly-derived subsegments whose order and orientation is unknown until the assembly of overlapping sequences is performed computationally. The method works if all positions in the genome are covered by multiple overlapping subsegments.<BR>See also 
 <A HREF="#directed_sequencing">Directed sequencing</A>, 
-<A HREF="#shotgun_sequencing">Shotgun sequencing</A>.
+<A HREF="#shotgun_sequencing">Shotgun sequencing</A>.</dd></p>
 
-</dd></p><P><DT><B><A NAME="wildcard">Wildcard</A></B></dt><DD>A wildcard is a alphanumeric character or set of characters that can stand for a wide range of characters. On most of the MGI Query Forms, you can use the  &#037; (percent sign) as a wildcard to facilitate text field searches. For example, if you 
+<P><DT><B><A NAME="wildcard">Wildcard</A></B></dt><DD>A wildcard is a alphanumeric character or set of characters that can stand for a wide range of characters. On most of the MGI Query Forms, you can use the  &#037; (percent sign) as a wildcard to facilitate text field searches. For example, if you 
 <ul>
 <li>enter <i>Acr%</i> in the Symbol/Name box on the Genes and Markers Query Form
 <li>select <i>begins</i> from the pull-down menu next to the <B>NOT</b> checkbox
 <li>set Search to <i>current symbols</i>
 </ul>
-the display returns any <A HREF="#marker">markers</A> whose symbol</A> begins with <i>Acr</i>, such as Acr, Acrbp, Acrp30, Acrv1). See <A HREF="<!--#include file='include/wi_url.html'-->userdocs/wildcard_tips.shtml">Using Wildcards</A> for further information.
+the display returns any <A HREF="#marker">markers</A> whose symbol</A> begins with <i>Acr</i>, such as Acr, Acrbp, Acrp30, Acrv1). See <A HREF="<!--#include file='include/wi_url.html'-->userdocs/wildcard_tips.shtml">Using Wildcards</A> for further information.</dd></p>
 
-</dd></p><P><DT><B><A NAME="wild_type">Wild Type</A></B></dt></dt><DD><ol><li>The <A HREF="#phenotype">phenotype</A> with respect to a given inherited characteristic that is considered to be the "normal" type commonly found in natural populations.</li><li>The 
+<P><DT><B><A NAME="wild_type">Wild Type</A></B></dt></dt><DD><ol><li>The <A HREF="#phenotype">phenotype</A> with respect to a given inherited characteristic that is considered to be the "normal" type commonly found in natural populations.</li><li>The 
 <A HREF="#allele">allele</A> of a particular <A HREF="#gene">gene</A> that confers the phenotype considered to be the "normal" type commonly found in natural populations. N.B.: Because some 
-<A HREF="#DNA">DNA</A> sequence <A HREF="#polymorphism">polymorphisms</A> do not produce different phenotypes, there can be multiple "wild-type" alleles of a gene.</li></ol></DD>
+<A HREF="#DNA">DNA</A> sequence <A HREF="#polymorphism">polymorphisms</A> do not produce different phenotypes, there can be multiple "wild-type" alleles of a gene.</li></ol></DD></p>
 
-</dd></p><P><DT><B><A NAME="withdrawn">Withdrawn</A></B></dt><DD>With respect to 
+<P><DT><B><A NAME="withdrawn">Withdrawn</A></B></dt><DD>With respect to 
 <A HREF="#gene">gene</A> nomenclature, a withdrawn 
 <A HREF="#gene_symbol">symbol</A> or 
 <A HREF="#gene_name">name</A> was once the 
 <A HREF="#approved">approved</A> symbol or name for a 
-<A HREF="#marker">marker</A>; there is currently a different approved symbol or name for that marker.
+<A HREF="#marker">marker</A>; there is currently a different approved symbol or name for that marker.</dd></p>
 
 <!-- XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX --><A NAME="x"></A>
 
-</dd></p><P><DT><B><A NAME="X_chromosome">X Chromosome</A></B></dt><DD>One of pair of 
+<P><DT><B><A NAME="X_chromosome">X Chromosome</A></B></dt><DD>One of pair of 
 <A HREF="#chromosome">chromosomes</A> that is sexually 
 <A HREF="#dimorphic">dimorphic</A> in mammals. Normal female mammals have two X chromosomes, while normal male mammals have an X chromosome and a Y chromosome.
 
 </dd></p><P><DT><B><A NAME="X_inactivation">X Inactivation</A></B></dt><DD>The condensation of all but one of the 
 <A HREF="#X_chromosome">X chromosomes</A> of a mammal into a
 <A HREF="#heterochromatin">heterochromatic</A> state, eliminating 
-<A HREF="#gene_expression">gene expression</A> from all but the active X chromosome. This process ensures that male and female mammals have the same level of gene activity of X-chromosome genes.
+<A HREF="#gene_expression">gene expression</A> from all but the active X chromosome. This process ensures that male and female mammals have the same level of gene activity of X-chromosome genes.</dd></p>
 
 <!-- YYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYY --><A NAME="y"></A>
 
-</dd></dd></p><P><DT><B><A NAME="Y_chromosome">Y Chromosome</A></B></dt><DD>One of pair of 
+<P><DT><B><A NAME="Y_chromosome">Y Chromosome</A></B></dt><DD>One of pair of 
 <A HREF="#chromosome">chromosomes</A> that is sexually
 <A HREF="#dimorphic">dimorphic</A> in mammals. Normal female mammals have two
-<A HREF="#X_chromosome">X chromosomes</A>, while normal male mammals have an X chromosome and a Y chromosome.
+<A HREF="#X_chromosome">X chromosomes</A>, while normal male mammals have an X chromosome and a Y chromosome.</dd></p>
 
-</dd></dd></p><P><DT><B><A NAME="YAC">YAC</A></B></dt><DD>Yeast Artificial Chromosome. A type of 
+<P><DT><B><A NAME="YAC">YAC</A></B></dt><DD>Yeast Artificial Chromosome. A type of 
 <A HREF="#cloning_vector">cloning vector</A> containing a yeast
 <A HREF="#centromere">centromere</A> and 
 <A HREF="#telomere">telomeres</A>&nbsp; that allow large
@@ -2351,8 +2408,8 @@ the display returns any <A HREF="#marker">markers</A> whose symbol</A> begins wi
 </DL>
 
 <!-- Markup for a definition
-</dd></dd></p><P><DT><B><A NAME=""></A></B>
-<DD>
+<P><DT><B><A NAME=""></A></B></dt>
+<DD></dd></p>
 End of markup -->
 
 <HR>
