@@ -20,6 +20,8 @@ automatically receive news and announcments.
 <DD>Last name:       <INPUT TYPE="text" NAME="lastname" SIZE=30>
 <DD>Middle initial:  <INPUT TYPE="text" NAME="mi" SIZE=3>
 <p>
+<DD>E-mail address:  <INPUT TYPE="text" NAME="emailaddr" SIZE=30>
+
 <DD>Title:           <SELECT NAME="prof-title">
 <OPTION>Dr.
 <OPTION>Professor
@@ -354,7 +356,7 @@ automatically receive news and announcments.
 <option value=ZM> Zambia
 <option value=ZW> Zimbabwe
 </SELECT>
-<DD>E-mail address:  <INPUT TYPE="text" NAME="emailaddr" SIZE=30><P>
+
 <DD>Phone:           <INPUT TYPE="text" NAME="ph" SIZE=20>
 <DD>Fax #:           <INPUT TYPE="text" NAME="fx" SIZE=20>
 <P>
@@ -366,16 +368,9 @@ automatically receive news and announcments.
 <DT>Computer Information:
 <DT>Please check the type(s) of computer you currently use.
 <p>
-<SELECT SEVERAL NAME="damncmptrs" MULTIPLE SIZE=3>
-<option value="mac_ppc"> Macintosh Power PC
-<option value="mac_pb"> Macintosh Power Book
-<option> Macintosh Quadra
-<option> Macintosh II
-<option> PC Pentium
-<option> PC 486
-<option>PC 386
-<option> Sun SPARC workstation
-<option> DEC Alpha workstation
+<SELECT SEVERAL NAME="damncmptrs" MULTIPLE SIZE=2>
+<option value="mac"> Macintosh
+<option value="pc">PC
 </SELECT SEVERAL>
 <p> 
 If your computer is not in the above list, please specify: <INPUT TYPE="text" NAME="spec" SIZE=40> 
@@ -384,14 +379,17 @@ If your computer is not in the above list, please specify: <INPUT TYPE="text" NA
 <DT>Please select the operating system version(s) you curently use:<P>
 <SELECT SEVERAL NAME="opsys" MULTIPLE SIZE=3>
 <option value="MacOS 8.0"> MacOS 8.0 or above
-<option value="MacOS 7.0"> MacOs 7.#
+<option value="Windows 3.1"> Windows NT4
+<option value="Windows 3.1"> Windows NT
+<option value="Windows 3.1"> Windows 2000
+<option value="Windows NT"> Windows Me
 <option value="Windows 98"> Windows 98
 <option value="Windows 95"> Windows 95
-<option value="Windows 3.1"> Windows 3.1
-<option value="Windows NT"> Windows NT
 <option value="Solaris"> Solaris
 <option value="SunOS"> SunOS
 <option value=ounix> Other UNIX
+<option value=ounix> Linux
+
 </SELECT SEVERAL>
 <p>
 Internet Connection:
@@ -405,7 +403,8 @@ World Wide Web Browsers currently used:
 <SELECT SEVERAL NAME="list:browser" MULTIPLE SIZE=4>
          <option value=net> Netscape  
          <option value=ie> Microsoft Internet Explorer 
-         <option value=lx> Lynx
+         <option value=lx> Opera
+         <option value=lx> iCab
          <option value=oth> Other 
 </SELECT SEVERAL>
 <p>
