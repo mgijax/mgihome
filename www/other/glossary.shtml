@@ -1,37 +1,31 @@
 <HTML>
 <HEAD>
-
- <TITLE>Glossary</TITLE>
+ <TITLE>MGI Glossary</TITLE>
  <LINK REV="made" HREF="mailto:djd@informatics.jax.org">
  <META NAME="generator" CONTENT="NoteTab Pro 4.85">
  <META NAME="author" CONTENT="Diane Dahmen">
  <META NAME="description" CONTENT="MGI glossary terms">
  <META NAME="bioinformatics, genetics, mouse genome sequencing, glossary, glossaries, gene terminology" CONTENT="">
 </HEAD>
-<!--<P><SMALL>Last updated on ... May xx, 2002</SMALL></P>-->
 <BODY BGCOLOR="#ffffff">
-<P>
-<TABLE WIDTH="100%" BORDER=0 CELLPADDING=2 CELLSPACING=1>
- <TR>
-  <TD WIDTH="100%" BGCOLOR="#D0E0F0">
-   <TABLE WIDTH="100%" BORDER=0 CELLPADDING=0 CELLSPACING=0>
-    <TR>
-     <TD WIDTH="20%" VALIGN="center" ALIGN="left">
-      <IMG SRC="<!--#include file='include/wi_url.html'-->images/shared/mgi_logo.jpg" WIDTH=160 HEIGHT=80>
-     </TD>
-     <TD WIDTH="60%" ALIGN="center" VALIGN="center">
-      <FONT COLOR="#000000" SIZE=5 FACE="Arial,Helvetica">
-       MGI Glossary
-        </FONT>
-     </TD>
-     <TD WIDTH="20%" VALIGN="center" ALIGN="center">
-      &nbsp;
-     </TD>
-    </TR>
-   </TABLE>  </TD>
- </TR>
+<TABLE WIDTH="100%" BORDER=0 CELLPADDING=0 CELLSPACING=0>
+  <TR><TD WIDTH="100%">
+    <TABLE WIDTH="100%" BORDER=0 CELLPADDING=0 CELLSPACING=0>
+     <TR><TD WIDTH="20%" VALIGN="center" ALIGN="left"><A HREF="<!--#include file='include/wi_url.html'-->"><IMG SRC="../images
+/mgi_logo_small.jpg" border=0 ALT="MGI"></A></TD>
+      <TD WIDTH="60%" ALIGN="center" VALIGN="center" BGCOLOR="#ffffff">
+       <FONT COLOR="#000000" SIZE=5 FACE="Arial,Helvetica">
+MGI Glossary
+       </FONT></TD><TD WIDTH="20%" VALIGN="center" ALIGN="center" BGCOLOR="#ffffff">&nbsp;</TD></TR>
+<TR BGCOLOR="blue"><TD COLSPAN=3><FONT face="Arial,Helvetica" color="#ffffff">
+    <B>&nbsp;Mouse Genome Informatics</B></TD></TR>
+<TR><TD BGCOLOR="#ffffff"><FONT SIZE=-1 FACE="Arial,Helvetica"><CENTER><A HREF="<!--#include file='include/wi_url.html'-->">MGI Home</A>&nbsp;&nbsp;&nbsp;
+<a href="../help/help.shtml">Help
+</A></FONT></CENTER></TD></TR>
+</TABLE></TD></TR>
 </TABLE>
-<hr>
+<HR>
+<p>
 This glossary provides definitions for some terms found in our help documentation and other terms that are useful in understanding mouse genetics and bioinformatics. 
 Terms are defined in a general sense as they apply to eukaryotic genetics, particularly mouse genetics; some terms are also defined as they are specifically used in MGI (e.g., 
 <A HREF="#gene">gene</A>). This list will grow as time goes on. If there is a term you think should be included in this list, please contact 
@@ -1699,7 +1693,7 @@ for example, data about a) data elements or attributes (name, size, data type, e
 <A HREF="#gene">genes</A> of the mouse.
 
 <P><DT><B><A NAME="MGI">MGI</A></B><DD>
-<A HREF="http://www.informatics.jax.org/mgihome">Mouse Genome Informatics</A>. The collection of bioinformatics projects at The Jackson Laboratory including
+<A HREF="<!--#include file='include/wi_url.html'-->">Mouse Genome Informatics</A>. The collection of bioinformatics projects at The Jackson Laboratory including
 <A HREF="<!--#include file='include/mgihome_url.html'-->MGD/aboutMGD.shtml">MGD</A>,
 <A HREF="<!--#include file='include/mgihome_url.html'-->GXD/aboutGXD.shtml">GXD</A>,
 <A HREF="<!--#include file='include/mgihome_url.html'-->MGS/mgs.shtml">MGS</A>, and
@@ -2891,11 +2885,13 @@ across the panel with the presence of a particular mouse chromosome allows that 
 <A HREF="#directed_sequencing">Directed sequencing</A>, 
 <A HREF="#shotgun_sequencing">Shotgun sequencing</A>.
 
-<P><DT><B><A NAME="wildcard">Wildcard</A></B><DD>A wildcard is a alphanumeric character or set of characters that can stand for a wide range of characters. For example, the percent ("%") character is a wildcard in the Quick Gene Search box on the 
-<A HREF="..">MGI main page</A>. Entering "Acr%" returns any <A HREF="#marker">markers</A> whose <A HREF="#symbol">symbols</A> begin with "Acr", such as the acetylcholine receptor
-<A HREF="#gene">genes</A> (Acr, Acra, Acra1, Acrb...). There is 
-<A HREF="<!--#include file='include/wi_url.html'-->userdocs/wildcard_tips.shtml">further information</A> on using wildcards in 
-<A HREF="#MGI">MGI</A>.
+<P><DT><B><A NAME="wildcard">Wildcard</A></B><DD>A wildcard is a alphanumeric character or set of characters that can stand for a wide range of characters. On most of the MGI Query Forms, you can use the  &#037; (percent sign) as a wildcard to facilitate text field searches. For example, if you 
+<ul>
+<li>enter <i>Acr%</i> in the Symbol/Name box on the Genes and Markers Query Form
+<li>select <i>begins</i> from the pull-down menu next to the <B>NOT</b> checkbox
+<li>set Search to <i>current symbols</i>
+</ul>
+the display returns any <A HREF="#marker">markers</A> whose symbol</A> begins with <i>Acr</i>, such as Acr, Acrbp, Acrp30, Acrv1). See <A HREF="<!--#include file='include/wi_url.html'-->userdocs/wildcard_tips.shtml">Using Wildcards</A> for further information.
 
 <P><DT><B><A NAME="wild_type">Wild Type</A></B><DD>1. The 
 <A HREF="#phenotype">phenotype</A> with respect to a given inherited characteristic that is considered to be the "normal" type commonly found in natural populations.<BR>2. The 
