@@ -1,47 +1,62 @@
 <HTML>
 <HEAD>
-<TITLE><!--#include file='include/mgiversion.html'--> - Strain Registry Form</TITLE>
-<!-- note: to see the result of any changes to this file, go through public: http://www/~djd/mgihome/submissions/strains/index.shtml-->
+<TITLE><!--#include file='include/mgiversion.html'--> - Mouse Strain Registry Form</TITLE>
 </HEAD>
-<BODY BGCOLOR="#FFFFFF">
-<!--#include file="include/bodyStart.html"-->
- <TABLE WIDTH="100%" BORDER=0 CELLPADDING=2 CELLSPACING=1>
- <TR>
-  <TD WIDTH="100%" BGCOLOR="#D0E0F0">
-   <TABLE WIDTH="100%" BORDER=0 CELLPADDING=0 CELLSPACING=0>
-    <TR>
-     <TD WIDTH="20%" VALIGN="center" ALIGN="left">&nbsp;</TD>
-     <TD WIDTH="60%" ALIGN="center" VALIGN="center">
-      <FONT COLOR="#000000" SIZE=5 FACE="Arial,Helvetica">
-Strain Registry Form
-      </FONT>
-     </TD>
-     <TD WIDTH="20%" VALIGN="center" ALIGN="center">&nbsp;</TD>
-    </TR>
-   </TABLE>
-  </TD>
- </TR>
+<BODY BGCOLOR="#ffffff">
+<TABLE WIDTH="100%" BORDER=0 CELLPADDING=0 CELLSPACING=0>
+  <TR><TD WIDTH="100%">
+    <TABLE WIDTH="100%" BORDER=0 CELLPADDING=0 CELLSPACING=0>
+     <TR><TD WIDTH="20%" VALIGN="center" ALIGN="left"><A HREF="<!--#include file='include/wi_url.html'-->" border=0><IMG SRC="../images/mgi_logo_small.jpg" border=0 ALT="MGI"></A></TD>
+      <TD WIDTH="60%" ALIGN="center" VALIGN="center" BGCOLOR="#ffffff">
+       <FONT COLOR="#000000" SIZE=5 FACE="Arial,Helvetica">
+Mouse Strain Registry Form
+       </FONT></TD><TD WIDTH="20%" VALIGN="center" ALIGN="center" BGCOLOR="#ffffff">&nbsp;</TD></TR>
+<TR BGCOLOR="blue"><TD COLSPAN=3><FONT face="Arial,Helvetica" color="#ffffff">
+    <B>&nbsp;Mouse Genome Informatics</B></TD></TR>
+<TR><TD BGCOLOR="#ffffff"><FONT SIZE=-1 FACE="Arial,Helvetica"><CENTER><A HREF="<!--#include file='include/wi_url.html'-->">MGI Home</A>&nbsp;&nbsp;&nbsp;
+<a href="../help/help.shtml">Help
+</A></FONT></CENTER></TD></TR>
+</TABLE></TD></TR>
 </TABLE>
+<HR>
+
+<p>
+
+<ul>
+<li>Use this Mouse Strain Registry Form to register a new mouse strain or to revise information about an existing mouse strain.</li>
+<li>Please fill in the appropriate information.</li>
+<li>Click <b>Submit</b> at the bottom of the form to send this information to MGI for processing.</li>
+<li>Thank you for helping us keep the Mouse Genome Database current.</li>
+</ul>
+
+<hr>
 
 <form METHOD="POST" ACTION="strain_submit.cgi">
-<h3>Strain Name</h3>
+<h4>Strain Name</h3>
 <blockquote>
+
 <input  TYPE="radio"  NAME="method"  VALUE="NEW">New<br>
 <input TYPE="radio" NAME="method" VALUE="REVISED">Revised<br>
 </blockquote>
-<b>Prefix for your resource, </b>e.g., JR for Jax Resource Systems; MMRRC  for Mouse Mutant  Research Resource  Center;  EMMA for European Mutant   Mouse Archive:
-<input  TYPE="text" NAME="Prefix" SIZE=15> <br><br>
 
-<b>Strain Accession_id assigned at your site or MGI_id for your strain  </b> (Note: If the  accession_id  includes  a  prefix, include it here)
-<input  TYPE="text" NAME="instituteID" SIZE=15></b>
+<h4>Strain Accession ID</h3>
+<p>If you are revising information about a registered strain, you must include its MGI_ID or repository_ID. If this is a new strain submission and the strain is from a repository, please enter its repository accession_ID information.
+
 <p>
-<br>
+<b>Prefix for your resource, </b>e.g., JR for Jax Resource Systems; MMRRC  for Mouse Mutant  Research Resource  Center;  EMMA for European Mutant   Mouse Archive:
+<input TYPE="text" NAME="Prefix" SIZE=15> <br><br>
 
-<h3>Proposed Strain Name</h3>
-<b>Note:</b> When mutant alleles are part of the strain name, use &lt; &gt; to indicate the superscripted  alleles.  <i>Example: &nbsp;</i><b>C57BL/6J-Kit<sup>W-39J</sup></b> should be entered as <b>C57BL/6J-Kit&lt;W-39J&gt;</b>
+<b>Strain Accession_ID assigned at your site or MGI_ID for your strain  </b> (Note: If the  accession_ID  includes  a  prefix, include it here)
+<input TYPE="text" NAME="instituteID" SIZE=15></b>
+<p>
+<hr>
+
+<h4>Strain Name</h4>
+<p>Enter a propposed strain name. If this is a revision, enter the revised strain name here and "previous  name" under  synonyms.<br>
+<b>Note:</b> When mutant alleles are part of the strain name, use &lt; &gt; to indicate the superscripted  alleles. <br> <i>Example: &nbsp;</i><b>C57BL/6J-Kit<sup>W-39J</sup></b> should be entered as <b>C57BL/6J-Kit&lt;W-39J&gt;</b>
 <br>
-If this is a revision, enter the revised strain name here and "previous  name" under  synonyms.<br>
 <input TYPE="text" NAME="strain_name" SIZE=65>
+
 <p>
 <br>
 <h4>Gene symbols corresponding to alleles carried on this  strain</h4>
@@ -58,33 +73,29 @@ B2m&lt;tm1Unc&gt;</b>  <br>the gene symbols entered into this box would  be
 <dl>
 <dt><BR><b>For help in naming a strain, consult these  resources:</B>
 <BR>
-<dd><A HREF="../../nomen/strains.shtml">Rules for Nomenclature of Mouse and Rat Strains</A>
+<dd><A HREF="../../nomen/strains.shtml">Mouse and Rat Strain Nomenclature Guideline</A>
 <br>
-<dd><A HREF="http://dels.nas.edu/ilar/codes.asp?id=codes">ILAR Lab Code Registry for obtaining Lab-code</A>
+<dd><A HREF="http://dels.nas.edu/ilar/codes.asp?id=codes">ILAR Lab Code Registry</A> for obtaining Lab-code
 <BR>
 <!--<dd><A HREF="../xxxxxxx">List of standard mouse strains</A>-->
-<dd><A
-HREF="../../support/tjl_inbox.shtml">MGI Help Desk</A>
+<dd>For personal assistance, e-mail <A HREF="mailto:strains@informatics.jax.org">strains@informatics.jax.org</A>.
 </dl>
 
 <p>If you have a large number of strains to submit, contact  <A
-HREF="../../support/tjl_inbox.shtml">MGI User Support</a> for help with file formatting.
-
+HREF="../../support/tjl_inbox.shtml">MGI User Support</a> for help with bulk submission and file formatting.</font>
 <hr>
-<br>
-<dl>
+<dl><font size=-1>
 <dt><b>Is this strain public or private?</b> <i> (<b>IMPORTANT</b>: "public" strain  names  will  be released through MGD immediately)</i>
 <br>
 <dd><input TYPE="radio" NAME="status" VALUE="PUBLIC">Public<br></dd>
 <dd><input TYPE="radio" NAME="status" VALUE="PRIVATE">Private</dd>
 </dl>
 <hr>
-<br>
-<b>Strain categories</b>:  Choose  one  or  more.
+<b>Strain categories</b>:  Choose  one  or  more.</font>
 <p>
 <table  border=0 cellpadding=0 cellspacing=2 width=100%>
 <tr valign=top>
-<td>
+<td><font size=-1>
 <input TYPE="checkbox" NAME="category" VALUE="strain_family">strain family<br>
 <input TYPE="checkbox" NAME="category" VALUE="inbred_strain">inbred strain<br>
 <input TYPE="checkbox" NAME="category" VALUE="segregating_inbred">segregating inbred<br>
@@ -92,9 +103,9 @@ HREF="../../support/tjl_inbox.shtml">MGI User Support</a> for help with file for
 <input TYPE="checkbox" NAME="category" VALUE="mutant_stock">mutant stock<br>
 <input TYPE="checkbox" NAME="category" VALUE="wild_derived">wild-derived<br>
 <input TYPE="checkbox" NAME="category" VALUE="outbred">outbred
-</td>
+</td></font>
 
-<td>
+<td><font size=-1>
 <input TYPE="checkbox" NAME="category" VALUE="coisogenic">coisogenic<br>
 <input TYPE="checkbox" NAME="category" VALUE="congenic">congenic<br>
 <input TYPE="checkbox" NAME="category" VALUE="consomic">consomic<br>
@@ -102,16 +113,16 @@ HREF="../../support/tjl_inbox.shtml">MGI User Support</a> for help with file for
 <input TYPE="checkbox" NAME="category" VALUE="RC_strain">recombinant congenic (RC)<br>
 <input TYPE="checkbox" NAME="category" VALUE="MHC_congenic">major histocompatibility congenic<br>
 <input TYPE="checkbox" NAME="category" VALUE="minorH_congenic">minor histocompatibility congenic
-</td>
+</td></font>
 
-<td>
+<td><font size=-1>
 <input TYPE="checkbox" NAME="category" VALUE="spontaneous_mutation">spontaneous mutation<br>            <input TYPE="checkbox" NAME="category" VALUE="targeted_mutation">targeted mutation<br>
 <input TYPE="checkbox" NAME="category" VALUE="transgenic">transgenic<br>
 <input TYPE="checkbox" NAME="category" VALUE="gene_trap">gene trap<br>
 <input TYPE="checkbox" NAME="category" VALUE="chemical_mutation">chemically induced mutation<br>            <input TYPE="checkbox" NAME="category" VALUE="radiation_mutation">radiation induced mutation
-</td>
+</td></font>
 
-<td>
+<td><font size=-1>
 <input TYPE="checkbox" NAME="category" VALUE="chrom_aberration">chrom. aberration<br>
 <input TYPE="checkbox" NAME="category" VALUE="Robertsonian">Robertsonian<br>
 <input TYPE="checkbox" NAME="category" VALUE="translocation">translocation<br>
@@ -121,10 +132,9 @@ HREF="../../support/tjl_inbox.shtml">MGI User Support</a> for help with file for
 <input TYPE="checkbox" NAME="category" VALUE="deletion">deletion<br>
 <input TYPE="checkbox" NAME="category" VALUE="duplication">duplication<br>
 <input TYPE="checkbox" NAME="category" VALUE="other">other
-</td>
-<tr>
+</td></font>
+</tr>
 </table>
-<p>
 <hr>
 <br>
 <h4>Strain  name   synonyms</h4>
@@ -146,8 +156,8 @@ unpublished
 <textarea NAME="notes" ROWS=4 COLS=65></textarea>
 <p>
 <hr>
-<b>Contact Details:</b> If your contact details are already registered with MGI, you only need to enter your name and E-mail address.<br>
-<pre> 
+<b>Contact Details:</b> If your contact details are already registered with MGI, you only need to enter your name and E-mail address.
+<pre>
 Last name:                      <input TYPE="text" NAME="lastname"  SIZE=30>(required) 
 First name (& middle initial):  <input TYPE="text" NAME="firstname" SIZE=30>(required)
 E-mail address:                 <input  TYPE="text" NAME="email"    SIZE=30>(required)
@@ -162,18 +172,15 @@ Country:			<input TYPE="text" NAME="country"   SIZE=30>
 Telephone Number:		<input TYPE="text" NAME="phone"     SIZE=30>
 Fax Number:			<input TYPE="text" NAME="fax" 	    SIZE=30>
 </pre>
-<p>
-<br>
-<b>Once you submit, nomenclature will be reviewed and a MGI accession number for this strain will be E-mailed to you.</b>
+<p><font size=-1>
+<b>Once you submit, nomenclature will be reviewed and a MGI accession number for this strain will be E-mailed to you.</font></b>
 
 <hr>
 <input TYPE=submit VALUE="Submit">
 <input TYPE=reset VALUE="Reset Form">
 <hr>
 </form>
-</td>
-</tr>
-</table>
+
 </body>
 </html>
 <!--Warranty Disclaimer and Copyright Notice

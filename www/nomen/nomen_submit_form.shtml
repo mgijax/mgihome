@@ -23,7 +23,8 @@ Nomenclature Submission Form
 <HR>
 
 <H3>Submit a Proposed Locus Symbol</H3>
-Please fill in all the appropriate information.  If your contact details are already in MGD you only need to enter your name and e-mail address.  Press the submit button at the bottom of the form to send the information to the MGD Nomenclature Committee.
+Please fill in all the appropriate information.  If your contact details are already in MGI, you only need to enter your name and e-mail address.  Press the submit button at the bottom of the form to send the information to the Mouse Genomic Nomenclature Committee (MGNC).
+<p>For assistance with nomenclature, e-mail <A HREF="mailto:nomen@informatics.jax.org">nomen@informatics.jax.org</a>
 <P>
 <FORM METHOD="POST" ACTION="submit_nomen.cgi">
 <H3>Contact Details:</H3>
@@ -44,7 +45,7 @@ Fax Number:                   <INPUT TYPE="text" NAME="fx" SIZE=30>
 </PRE>
 <HR>
 <H2>Locus Details:</H2>
-<B>Please refer to the <A HREF="short_gene.shtml">Nomenclature Checklist</A> before completing this section.</B>
+<B>Please refer to the <A HREF="checklist.shtml">Nomenclature Checklist</A> before completing this section.</B>
 <BR><BR>
 Proposed Locus Symbol:  <INPUT TYPE="text" NAME="symbol" SIZE=25>
 <BR>
@@ -54,7 +55,7 @@ Chromosome Location:    <INPUT TYPE="text" NAME="chromosome" SIZE=10>
 <BR><BR>
 <INPUT TYPE="radio" NAME="pub_status" VALUE="Published" CHECKED> Published  <INPUT TYPE="radio" NAME="pub_status" VALUE="InPress"> In Press  <INPUT TYPE="radio" NAME="pub_status" VALUE="Submitted"> Submitted  <INPUT TYPE="radio" NAME="pub_status" VALUE="InPreparation"> In Preparation  <INPUT TYPE="radio" NAME="pub_status" VALUE="Unpublished"> Unpublished
 <BR><BR>
-Status Request: <INPUT TYPE="radio" NAME="symbol_status" VALUE="Reserved" CHECKED> Reserved and Private  <INPUT TYPE="radio" NAME="symbol_status" VALUE="Release"> Release to public MGD upon approval
+Status Request: <INPUT TYPE="radio" NAME="symbol_status" VALUE="Reserved" CHECKED> Reserved and Private  <INPUT TYPE="radio" NAME="symbol_status" VALUE="Release"> Release to public MGI upon approval
 <BR><BR>
 Requesting symbol in: (check all that apply)
 <INPUT TYPE="checkbox" NAME="requestMouse" VALUE="mouse" CHECKED> Mouse
@@ -64,8 +65,7 @@ Requesting symbol in: (check all that apply)
 <A HREF="http://www.gene.ucl.ac.uk/nomenclature/">
 Human Nomenclature Page</A></EM></BLOCKQUOTE>
 Sources checked:
-<INPUT TYPE="checkbox" NAME="source1" VALUE="MGD" > MGD
-(<A HREF="<!--#include file="include/wi_url.html"-->">USA</A>)
+<INPUT TYPE="checkbox" NAME="source1" VALUE="MGD"> MGI (<A HREF="<!--#include file='include/wi_url.html'-->">USA</A>)
 <INPUT TYPE="checkbox" NAME="source2" VALUE="HUGO/Human"> HUGO/Human
 (<A HREF="http://www.gene.ucl.ac.uk/cgi-bin/nomenclature/searchgenes.pl">UK</A>)
 <INPUT TYPE="checkbox" NAME="source4" VALUE="RGD"> RGD (<A HREF="http://rgd.mcw.edu/">Wisconsin</A>)
@@ -84,9 +84,9 @@ performed, etc. that may help us with the symbol approval process.<BR>
 <p>GenBank ID:<br>
  <INPUT TYPE="text" NAME="genbankID" SIZE=60>
 <br>
-<P>If you have sequence, we strongly recommend that you cut and paste it into the area below.
+<P>If your sequence does not have a GenBank ID, we strongly recommend that you cut and paste it into the area below.
  It will be treated in complete confidence. <br>
- If your sequence is large, please place as much as possible into
+ If your sequence is long, please place as much as possible into
  the box; however, if the sequence is very long, you will need to send it by email to
  <a href="mailto:nomen@informatics.jax.org">nomen@informatics.jax.org</a>.
  <br>

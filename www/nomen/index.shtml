@@ -22,61 +22,62 @@
  </TR>
 </TABLE>
 
-<H4>Mouse Genomic Nomenclature Committee (MGNC)</H4>
-<P>
-<A HREF="mailto:nomen@informatics.jax.org">Lois J. Maltais</A>
-<BR>
-Voice: &nbsp; 207-288-6429 &nbsp;Fax: 207-288-6132 &nbsp; E-mail: nomen@informatics.jax.org<BR>
-<BR>
-Dr. Janan Eppig<BR>
-Dr. Judith Blake<br>
-<H4><A HREF="inc.shtml">International Committee on Standardized Genetic Nomenclature for Mice</A>
-</H4>
-<HR>
-<H4><A HREF="nomen_submit_form.shtml">Submit</A> a Proposed Locus
-Symbol</H4>
+<p><font size=-1>The Mouse Genome Informatics Database is the authoritative source of official names for mouse genes, alleles, and strains. Nomenclature follows the rules and guidelines established by the <A HREF="inc.shtml">International Committee on Standardized Genetic Nomenclature for Mice</A> and implemented through the <a href="#mgnc">Mouse Genomic Nomenclature Committee (MGNC)</a>.</font>
 
-<!--<H4><A HREF="strain_submit_form.shtml">Register</A> a Strain Designation</H4>-->
-
-<HR>
-<H4>Nomenclature Rules and Guidelines</H4>
+<h4>Mouse Gene, Allele, and Mutation Nomenclature</h4>
 <UL>
-<LI><A HREF="gene.shtml">Mouse Gene, Allele, and Mutation Nomenclature Guidelines</A>
-  <ul>
-  <LI><A HREF="checklist.shtml#check">Checklist</A> for Proposing a Locus Symbol
-  <li><a name="bnrg"></a><a href="short_gene.shtml">Quick Guide to Nomenclature for Genes</a><br>
-  <li><a href="allmut_quickhelp.shtml">Quick Guide to Nomenclature for Alleles and Mutations</a>
-   <!--<li><a name="mnrg"></a>Mouse Nomenclature Rules and Guidelines -- <a href="table.shtml">Table of Contents</a>-->
+<li><font size=-1>Search for existing mouse 
+<A HREF="<!--#include file='include/wi_url.html'-->/searches/marker_form.shtml">Genes and Markers</a></li><br><br>
+<LI><A HREF="gene.shtml">Rules and Guidelines for Mouse Gene, Allele, and Mutation Nomenclature</A>&nbsp;(full guide)</li><br><br>
+<li><a name="bnrg"></a><a href="short_gene.shtml">Quick Guide to Nomenclature for Genes</a></li><br><br>
+  <li><a href="allmut_quickhelp.shtml">Quick Guide to Nomenclature for Alleles and Mutations</a></li><br><br>
+ <LI><A HREF="checklist.shtml#check">Checklist for Proposing a Locus Symbol</A></li><br><br>
+ <li><A HREF="nomen_submit_form.shtml">Submit</A> a Proposed Locus
+Symbol</li><br><br>
+<li><A HREF="allmut_form.shtml">Submit</A> Mutant Allele Information</li>
+</ul></font>
 
-  </ul>
-<LI><A HREF="strains.shtml">Mouse and Rat Strain Nomenclature Guidelines</a>
-  <ul>
-  <LI> <A HREF="../nomen/strain_129.shtml">Revision to Mouse Strain 129 Substrain Nomenclature</A>
-<LI><a href="genefamilies/index.shtml">Links to Nomenclature Web Resources for Gene Families</a>
-<!--<LI> <A HREF="old_strain.shtml">Archived Rules for Nomenclature of Inbred Strains</A>-->
+<h4>Mouse Strain Nomenclature</h4>
+<ul>
+<font size=-1>
+<!--<li>Search for established <a href="">Strain Names</a><br><br>-->
+<LI><A HREF="strains.shtml">Mouse and Rat Strain Nomenclature Guidelines</a>&nbsp; (full guide)<br><br>
+<!--<li><a href="">Quick Guide to Nomenclature for Strains</a> <br><br>-->
+<li><a href="../submissions/strains/strain_registry_form">Register</a> a new Mouse Strain Name<br><br>
+<LI> <A HREF="../nomen/strain_129.shtml">Revision to Mouse Strain 129 Substrain Nomenclature</A><br><br></font>
 </UL>
-</a>
 
+<h4>Mouse Chromosome Aberration Nomenclature</h4>
+<ul>
+<font size=-1>
 <li><A HREF="anomalies.shtml">Chromosome Aberration Nomenclature Guidelines</a>
+</font>
 </ul>
 
-<H4>Resources to check for existing Locus symbols and Strain Names</H4>
-<UL>
-<LI><A HREF="<!--#include file='include/wi_url.html'-->">MGD, The Mouse Genome
-	Database</A>
 
-<LI><A HREF="http://www.gene.ucl.ac.uk/cgi-bin/nomenclature/searchgenes.pl">Genew:  Human Gene Nomenclature Database Search Engine</A>
-<LI><A HREF="http://rgd.mcw.edu/">RGD, Rat Genome Database</a>
-<LI><A HREF="http://genome-www.stanford.edu/Saccharomyces">SGD, Saccharomyces
-	Genome Database</A>
-<LI><A HREF="http://flybase.bio.indiana.edu/">FlyBase, Drosophila Database</A>
-</UL>
-<H4>Reports</H4>
-
+<H4>Reports and Other Nomenclature Resources</H4>
 <UL>
-<LI><A HREF="<!--#include file='include/ftp_url.html'-->pub/reports/index.html">MGI Data and Statistical Reports</A><BR>
-<I>Includes recent and archived nomenclature updates</I>
+<font size=-1>
+<LI><A HREF="<!--#include file='include/ftp_url.html'-->pub/reports/index.html">MGI Data and Statistical Reports</A>&nbsp; <br><I>Includes recent and archived mouse gene nomenclature updates</I><br><br>
+<LI><a href="genefamilies/index.shtml">MGI Gene Family Reports</a><br><br>
+<LI>Search <A HREF="http://www.gene.ucl.ac.uk/cgi-bin/nomenclature/searchgenes.pl">Genew:  Human Gene Nomenclature Database Search Engine</A><br><br>
+<LI>Search <A HREF="http://rgd.mcw.edu/">RGD, Rat Genome Database</a><br><br>
+
+<!--<LI><A HREF="">Table of former mutant symbols and their corresponding cloned gene symbols</A>  <br><br>
+<LI><A HREF="http://jaxmice.jax.org/info/nomenclature.html">Archive of JAX Notes nomenclature articles</a> (See <i>Gene Nomenclature Updates</i> and <i>Strain Nomenclature Updates</i>).-->
+</font>
 </UL>
+
+<H4><a name="mgnc"></a>Mouse Genomic Nomenclature Committee (MGNC)</h4>
+<font size=-1>
+The MGNC functions under the auspices of the <a href="http://shire/~djd/mgihome/nomen/inc.shtml"> International Committee on Standardized Genetic Nomenclature of Mice</a> to implement nomenclature standards for mice.<br>
+<blockquote>
+Lois J. Maltais <br>
+Dr. Janan Eppig<br>
+Dr. Judith Blake<br>
+</blockquote>
+<A HREF="mailto:nomen@informatics.jax.org">E-mail: nomen@informatics.jax.org</a>&nbsp; &nbsp; &nbsp; Voice: &nbsp; 207-288-6429 &nbsp; &nbsp;&nbsp;Fax: 207-288-6132 
+</font> 
 <HR>
 
 
