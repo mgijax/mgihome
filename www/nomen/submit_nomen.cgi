@@ -195,11 +195,13 @@ if fields.has_key ('genbankID'):
 if fields.has_key ('sequence'):
 	seqsect = seqsect + NL + 'Sequence:' + NL + fields['sequence'] + NL
 
-if seqsect == '':
-	errorStop ('''You must include either a GenBank ID or Sequence Data.
-		Please go back and try again.''')
+### As of TR 2754, we now do not require sequence information...
+#if seqsect == '':
+#	errorStop ('''You must include either a GenBank ID or Sequence Data.
+#		Please go back and try again.''')
 
-message = message + seqsect + NL
+if seqsect:
+	message = message + seqsect + NL
 
 #
 # Format Reference Information
