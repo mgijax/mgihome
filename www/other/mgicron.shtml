@@ -24,6 +24,11 @@ Chronology of MGI Database Releases
 </TABLE>
 
 
+
+
+<p><em><b>May 24, 2004</b></em><br>
+MGI 3.0 integrates vast amounts of sequence data with the biological information already in MGI. Mouse sequences from GenBank, RefSeq, Swiss-Prot, DoTS, and the TIGR and NIA mouse gene indices now in MGI enable powerful queries from the new Mouse Sequence Query Form. Users can query by sequence attributes (length, provider) and also by information about the clones the sequences were derived from and the genes the sequence have been associated to. Using curated associations between mouse markers and sequences, users can search for sequences by information about these markers such as nomenclature, map position, function (GO annotations and InterPro domains), expression (tissue and developmental stage), and phenotypes of mutant alleles. The source information about the clones that the sequences are derived from (strain, tissue, or library) is carefully translated into controlled vocabularies in MGI and this makes powerful queries possible.  Users can retrieve matching sequences in FASTA format or forward them to MouseBLAST as well as reBLAST sequences directly from MouseBLAST output.
+
 <p><em><b>December 11, 2003</b></em><br>
 MGI 2.98 consists of performance enhancements and bug fixes.
 

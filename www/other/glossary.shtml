@@ -25,8 +25,7 @@ MGI Glossary
 </TABLE></TD></TR>
 </TABLE>
 <HR>
-<p>
-This glossary provides definitions for some terms found in our help documentation and other terms that are useful in understanding mouse genetics and bioinformatics. 
+<p>This glossary provides definitions for some terms found in our help documentation and other terms that are useful in understanding mouse genetics and bioinformatics. 
 Terms are defined in a general sense as they apply to eukaryotic genetics, particularly mouse genetics; some terms are also defined as they are specifically used in MGI (e.g., 
 <A HREF="#gene">gene</A>). This list will grow as time goes on. If there is a term you think should be included in this list, please contact 
 <A HREF="<!--#include file='include/mgihome_url.html'-->support/tjl_inbox.shtml">MGI User Support</A>. There are an number of useful online glossaries in addition to this one:
@@ -39,8 +38,9 @@ Adult Mouse Anatomical Dictionary Browser</a> provides standardized nomenclature
 <LI>The <A HREF="http://www.geneontology.org/ontology/GO.defs">Gene Ontology definitions</A> page provides current definitions of all terms used in the Gene Ontology Project.</LI>
 
 <LI>The <A HREF="http://www.genome.gov/glossary.cfm">Glossary of Genetic Terms</A> at the National Human Genome Research Institute defines basic genetic terms most relevant to human genetics. This glossary includes audio explanations and illustrations.</LI>
-<LI>The <A HREF="http://www.ornl.gov/TechResources/Human_Genome/glossary/">Genome Glossary</A> for the Human Genome Project defines many basic genetic terms.</LI><LI>The 
-<A HREF="http://imsr.har.mrc.ac.uk/glossary.html">International Mouse Strain Resources Glossary</A> at Harwell defines mouse cytogenetic and strain terms.</LI><LI>The 
+<LI>The <A HREF="http://www.ornl.gov/TechResources/Human_Genome/glossary/">Genome Glossary</A> for the Human Genome Project defines many basic genetic terms.</LI>
+<!--<LI>The 
+<A HREF="http://imsr.har.mrc.ac.uk/glossary.html">International Mouse Strain Resources Glossary</A> at Harwell defines mouse cytogenetic and strain terms.</LI>--><LI>The 
 <A HREF="http://www.ncbi.nlm.nih.gov/entrez/meshbrowser.cgi">MeSH Browser</A> at <A HREF="#NCBI">NCBI</A> contains useful definitions of many terms, organized as a hierarchical <A HREF="<!--#include file='include/glossary_url.html'-->#controlled_vocabulary">controlled vocabulary</a>.</LI><LI>The 
 <A HREF="http://cancerweb.ncl.ac.uk/omd/">On-line Medical Dictionary</A> provides definitions for hundreds of medical terms used in describing mammalian phenotypes, both human and mouse.</LI><LI>The 
 <A HREF="http://www.ncbi.nlm.nih.gov/Education/BLASTinfo/glossary2.html">BLAST Glossary</A> at NCBI defines terms used in searching sequence databases.</LI><LI>The 
@@ -285,7 +285,11 @@ In MGI and other databases, Boolean refers to the kind of logical relationship a
 <A HREF="#NHGRI">NHGRI</A>.</dd></p>
 
 <P><DT><B><A NAME="centromere">Centromere</A></B></dt><dd>In mammalian genetics, the primary constriction of a <A HREF="#chromosome">chromosome</A> separating it into the short arm (p) and the long arm (q). The centromere is the chromosomal region over which the <A HREF="#kinetochore">kinetochore</A> is organized. See the <A HREF="http://www.genome.gov/Pages/Hyperion//DIR/VIP/Glossary/Illustration/centromere.shtml">
-Figure</A> at <A HREF="#NHGRI">NHGRI</A>. Mouse chromosomes have centromeres close to one end and have essentially no short arm. See the <A HREF="#idiogram">idiogram</A> of the <A HREF="http://www.pathology.washington.edu:80/Cytogallery/Cytonew/Images/Mouse_idiogram_panel.jpg">mouse karyotype</A> at the Department of Pathology at the University of Washington.</dd></p>
+Figure</A> at <A HREF="#NHGRI">NHGRI</A>. Mouse chromosomes have centromeres close to one end and
+have essentially no short arm. See the <A HREF="#idiogram">idiogram</A> of the 
+<A HREF="http://www.pathology.washington.edu/research/cytopages/spreads/mouse_g_B2.gif
+">mouse karyotype</A> at the Department of Pathology at the University of Washington.</dd></p>
+
 
 <P><DT><B><A NAME="chiasma">Chiasma</A></B></dt><dd>The cytologically visible consequence of a 
 <A HREF="#recombination">reciprocal recombination</A> event in <A HREF="#meiosis">meiosis</A>, observable in the later stage of meiotic prophase. Chiasmata hold <A HREF="#homolog">homologous</A> 
@@ -377,7 +381,7 @@ Figure</A> at <A HREF="#NHGRI">NHGRI</A>. <BR>See also <A HREF="#central_dogma">
 
 <P><DT><B><A NAME="consomic">Consomic</A></B></dt><dd>An <A HREF="#inbred_strain">inbred strain</A> of mouse that contains a single entire <A HREF="#chromosome">chromosome</A> from another strain. <BR>See also the <A HREF="../nomen/strains.shtml#consomic">Rules for Nomenclature of Mouse and Rat Strains</A>.</dd></p>
 
-<P><DT><B><A NAME="contig">Contig</A></B></dt><DD><ol><li> A physical map of contiguous genomic 
+<P><DT><B><A NAME="contig">Contig</A></B></dt><DD><ol><li> A physical map of contiguous <A NAME="genome">genomic</a> 
 <A HREF="#DNA">DNA</A> assembled using overlapping cloned segments (see <A HREF="#STS">STS</A>).</li><li> A contiguous DNA sequence assembled using overlapping DNA sequences.</li></ol></DD></p>
 
 <P><DT><B><A NAME="controlled_vocabulary">Controlled Vocabulary</A></B></dt><dd>A restricted set of defined terms allowing the representation of complex information in a database. See 
@@ -440,7 +444,7 @@ Figure</A> at <A HREF="#NHGRI">NHGRI</A>. <BR>See also <A HREF="#central_dogma">
 <P><DT><B><A NAME="dbms">DBMS</A></B></dt><dd>Database Management System. A collection of computer programs that allow storage, modification, and extraction of information from a 
 <A HREF="#database">database</A>. There are many different types of DBMSs, ranging from small systems that run on personal computers to huge systems that run on mainframes. The following are examples of database applications: <UL><LI>computerized library systems <LI>automated teller machines <LI>flight reservation systems <LI>computerized parts inventory systems <LI><A HREF="#MGI">MGI</A></UL></dd></p>
 
-<P><DT><B><A NAME="ddbj">DDBJ</A></b></dt><dd><A HREF="#http://www.ddbj.nig.ac.jp/">DNA Data Bank of Japan. The main sources for the sequences are direct submissions from individual researchers, genome sequencing  projects, and patent applications. DDBJ is part of the Sequence Database Consortium and shares information with <A HREF="#embl">EMBL</A> and <A href="#genbank">GenBank</A>. <on a daily basis The three data banks share virtually the same data at any given time.></dd></p>
+<P><DT><B><A NAME="ddbj">DDBJ</A></b></dt><dd><A HREF="http://www.ddbj.nig.ac.jp/">DNA Data Bank of Japan. The main sources for the sequences are direct submissions from individual researchers, genome sequencing  projects, and patent applications. DDBJ is part of the Sequence Database Consortium and shares information with <A HREF="#embl">EMBL</A> and <A href="#genbank">GenBank</A>. <on a daily basis The three data banks share virtually the same data at any given time.></dd></p>
 
 <P><DT><B><A NAME="default">Default</A></B></dt><dd>In <A HREF="#MGI">MGI</A> and in computer science in general, a setting or action assumed by a computer program when none is specified by the user.</dd></p>
 
@@ -478,7 +482,7 @@ Figure</A> at <A HREF="#NHGRI">NHGRI</A>. <BR>See also <A HREF="#central_dogma">
 <P><DT><B><A NAME="dna_replication"></A>DNA Replication</b><dd>The use of existing <A HREF="#DNA">DNA</A>  as a template for the synthesis of new DNA strands. In mouse and other 
 <A HREF="#eukaryote">eukaryotes</A>, replication occurs in the cell <A HREF="#nucleus">nucleus</a>.</dd></p>
 
-<P><DT><B><A NAME="DNA_segment">DNA Segment</A></B></dt><DD><ol><li> A length of <A HREF="#DNA">DNA</A>.</li><li>In <A HREF="#MGI">MGI</A>, a DNA segment is a genomic feature recognized by <A HREF="#anonymous_DNA">anonymous DNA</A> probes. <A HREF="#gene_symbol">Symbols</A> for such segments most commonly represent <A HREF="#intergenic">intergenic</A> <A HREF="#marker">markers</A> used in <A HREF="#genetic_map">genetic mapping</A>.</li></ol></dd></p>
+<P><DT><B><A NAME="DNA_segment">DNA Segment</A></B></dt><DD><ol><li> A length of <A HREF="#DNA">DNA</A>.</li><li>In <A HREF="#MGI">MGI</A>, a DNA segment is a <A NAME="genome">genomic</a> feature recognized by <A HREF="#anonymous_DNA">anonymous DNA</A> probes. <A HREF="#gene_symbol">Symbols</A> for such segments most commonly represent <A HREF="#intergenic">intergenic</A> <A HREF="#marker">markers</A> used in <A HREF="#genetic_map">genetic mapping</A>.</li></ol></dd></p>
 
 <P><DT><B><A NAME="dna_sequence"></A>DNA Sequence</b><dd>The relative order of <A HREF="#base_pair">base pairs</a>, whether in a fragment of <A HREF="#DNA">DNA</A>, a <A HREF="#gene">gene</a>, a <A HREF="#chromosome">chromosome</a>, or an entire <A HREF="#genome">genome</a>.</dd></p>
 
@@ -498,7 +502,7 @@ Figure</A> at <A HREF="#NHGRI">NHGRI</A>. <BR>See also <A HREF="#central_dogma">
 
 
 <P><DT><B><A NAME="dots">DoTS</A></B></dt>
-<DD><A HREF="#http://www.allgenes.org/">Database of Transcribed Sequences</a>. The DoTS mouse transcript index created from all publicly available transcript sequences. Input sequences are clustered and assembled to form the DoTS Consensus Transcripts that comprise the index.</dd></p>
+<DD><A HREF="http://www.allgenes.org/">Database of Transcribed Sequences</a>. The DoTS mouse transcript index created from all publicly available transcript sequences. Input sequences are clustered and assembled to form the DoTS Consensus Transcripts that comprise the index.</dd></p>
 
 
 <P><DT><B><A NAME="double_helix"></A>Double Helix</b><dd>The shape that two linear strands of <A HREF="#DNA">DNA</A> assume when bonded together.</dd></p>
@@ -518,7 +522,7 @@ Figure</A> at <A HREF="#NHGRI">NHGRI</A>. <BR>See also <A HREF="#central_dogma">
 
 <P><DT><B><A NAME="electroporation">Electroporation</A></B></dt><dd>The use of strong, brief pulses of electric current to create temporary holes in cell <A HREF="#membrane">membranes</A>, allowing the introduction of <A HREF="#DNA">DNA</A>.</dd></p>
 
-<P><DT><B><A NAME="embl">EMBL</A></b></dt><dd><A HREF="#http://www.ebi.ac.uk/embl/">European Molecular Biology Laboratory Nucleotide Sequence Database</a> (also known as EMBL-Bank) constitutes Europe's primary nucleotide sequence resource. The main sources for DNA and RNA sequences are direct submissions from individual researchers, genome sequencing  projects, and patent applications. EMBL is part of the Sequence Database Consortium and shares information with <A HREF="#ddbj">DDBJ</A> and <A href="#genbank">GenBank</A>.</dd></p>
+<P><DT><B><A NAME="embl">EMBL</A></b></dt><dd><A HREF="http://www.ebi.ac.uk/embl/">European Molecular Biology Laboratory Nucleotide Sequence Database</a> (also known as EMBL-Bank) constitutes Europe's primary nucleotide sequence resource. The main sources for DNA and RNA sequences are direct submissions from individual researchers, genome sequencing  projects, and patent applications. EMBL is part of the Sequence Database Consortium and shares information with <A HREF="#ddbj">DDBJ</A> and <A href="#genbank">GenBank</A>.</dd></p>
 
 <P><DT><B><A NAME="embryonic_stem">Embryonic Stem (ES) Cells</A></B></dt><dd>Undifferentiated cells derived from <A HREF="#blastocyst">blastocyst</A>-stage embryos. ES cells can differentiate in culture to a number of different cell types. When incorporated into <A HREF="#chimera">chimeric</A> mouse embryos they are totipotent: they can differentiate into any cell type in the mouse.</dd></p>
 
@@ -583,7 +587,7 @@ data then begins on the next line and continues until it concludes with
 another line starting with the ">" symbol. 
 
 <P>See 
-<a href="<!--#include file='include/mouseblast_url.html'-->/current/user_docs/mblast_seq_formats.shtml">MouseBLAST Help - Sequence Formats</A> for additional details.</P>
+<a href="<!--#include file='include/mouseblast_url.html'-->current/user_docs/mblast_seq_formats.shtml">MouseBLAST Help - Sequence Formats</A> for additional details.</P>
 </dd></p>
 
 
@@ -905,7 +909,8 @@ This document is written in HTML. You can view the HTML source code for this doc
 <A HREF="#similarity">Similarity</A>.
 
 </dd></p><P><DT><B><A NAME="idiogram">Idiogram</A></B></dt><dd>An idealized drawing. See the idiogram of the 
-<A HREF="http://www.pathology.washington.edu:80/Cytogallery/Cytonew/Images/Mouse_idiogram_panel.jpg">mouse karyotype</A> at the Department of Pathology at the University of Washington.
+<A HREF="http://www.pathology.washington.edu/research/cytopages/spreads/mouse_g_B2.gif
+">mouse karyotype</A> at the Department of Pathology at the University of Washington.
 
 </dd></p><P><DT><B><A NAME="IMAGE">IMAGE Consortium</A></B></dt><dd>Integrated Molecular Analysis of Genome Expression Consortium. A collection of a large number of partially sequenced
 <A HREF="#cDNA">cDNAs</A>. See the homepage of the 
@@ -1042,7 +1047,8 @@ See also  <A href="#knockin">Knock in</a>.
 </dd></p><P><DT><B><A NAME="karyotype">Karyotype</A></B></dt><dd>A description of the condensed
 <A HREF="#chromosome">chromosomes</A> of a eukaryote as they are seen at metaphase. Additional details are revealed by a variety of staining techniques that produce banded chromosomes. See the
 <A HREF="#idiogram">idiogram</A> of the
-<A HREF="http://www.pathology.washington.edu:80/Cytogallery/Cytonew/Images/Mouse_idiogram_panel.jpg">mouse karyotype</A> at the Department of Pathology at the University of Washington.
+<A HREF="http://www.pathology.washington.edu/research/cytopages/spreads/mouse_g_B2.gif
+">mouse karyotype</A> at the Department of Pathology at the University of Washington.
 
 </dd></p><P><DT><B><A NAME="kb">kb</A></B></dt><dd>Kilobase. Unit of
 <A HREF="#DNA">DNA</A> or
@@ -1503,7 +1509,7 @@ with a radioactively- or chemically-labeled probe. See one of the
 <A HREF="#marker">marker</A> types. Major classes of "other genome features" include
 <A HREF="#endogenous">Endogenous</A>
 <A HREF="#virus">Viruses</A> and
-<A HREF="#retrotransposon">Retrotransposons</A>, Integration Sites, and Repetitive Elements. An additional class of such features includes genomic segments that function or are biologically significant as
+<A HREF="#retrotransposon">Retrotransposons</A>, Integration Sites, and Repetitive Elements. An additional class of such features includes <A NAME="genome">genomic</a> segments that function or are biologically significant as
 <A HREF="#DNA">DNA</A> elements.</dd></p>
 
 <P><DT><B><A NAME="outcross">Outcross</A></B></dt><dd>A type of genetic
@@ -1776,7 +1782,7 @@ visible light, infrared light, microwaves and radio waves. In mouse genetics, th
 Recombination may also be <B>nonreciprocal</B>, in which case the product is equivalent to transfer of information from the donor DNA molecule to the recipient DNA molecule, with no change in the donor DNA molecule. Reciprocal recombination events are also called 
 <A HREF="#crossover">crossovers</A>.</dd></p>
 
-<P><DT><B><A NAME="refseq">RefSeq</A></B></dt><dd>The collection of integrated, non-redundant sequences including <A HREF="#genomic">genomic</A> <A HREF="#DNA">DNA</A>, <A HREF="#transcript">transcript</A> (<a href="#RNA">(RNA)</a>, and <A HREF="#protein">protein products</a> at <A HREF="http://www.ncbi.nlm.nih.gov/RefSeq/">NCBI</A>.<BR>
+<P><DT><B><A NAME="refseq">RefSeq</A></B></dt><dd>The collection of integrated, non-redundant sequences including <A HREF="#genome">genomic</A> <A HREF="#DNA">DNA</A>, <A HREF="#transcript">transcript</A> (<a href="#RNA">(RNA)</a>, and <A HREF="#protein">protein products</a> at <A HREF="http://www.ncbi.nlm.nih.gov/RefSeq/">NCBI</A>.<BR>
 
 
 <P><DT><B><A NAME="regulatory_element">Regulatory Element</A></B></dt><dd>A 
@@ -1970,7 +1976,7 @@ Recombination may also be <B>nonreciprocal</B>, in which case the product is equ
 <P><DT><B><A NAME="sense">Sense</A></B></dt><DD><ol><li>In molecular biology, that strand of a 
 <A HREF="#DNA">DNA</A> molecule whose sequence is represented in <A HREF="#mRNA">mRNA</A>.</li><li>In molecular biology, an <A HREF="#RNA">RNA</A> molecule normally processed into <A HREF="#mRNA">mRNA</A> and <A HREF="#translation">translated</A> (rather than the <A HREF="#complementary">complementary sequence</A>).</li></ol></dd></p>
 
-<P><DT><B><A NAME="sequence">Sequence</A></B></dt><dd>In MGI, an order of nucleotides (base pair sequences) in mouse RNA or genomic (DNA) molecules or of polypeptides in a protein,  stored in the MGI database. </dd></p>
+<P><DT><B><A NAME="sequence">Sequence</A></B></dt><dd>In MGI, an order of nucleotides (base pair sequences) in mouse RNA or <A NAME="genome">genomic</a>  (DNA) molecules or of polypeptides in a protein,  stored in the MGI database. </dd></p>
 
 <P><DT><B><A NAME="sequence_annotation">Sequence Annotation</A></B></dt><dd>Additional information added to <A HREF="#genome">genomic</A> sequence to identify <A HREF="#gene">genes</A>, delimit the <A HREF="#intron">intron</A> and <A HREF="#exon">exon</A> structures of those 
 <A HREF="#gene">genes</A>, identify <A HREF="#regulatory_element">regulatory elements</A>, note the positions of <A HREF="#allele">allelic</A> variation, etc.</dd></p>
@@ -2129,7 +2135,7 @@ across the panel with the presence of a particular mouse chromosome allows that 
 <A HREF="#enzyme">enzyme</A>.</dd></p>
 
 <P><DT><B><A NAME="swissprot">SWISS-PROT</a></B></dt>
-<DD><A HREF="#http://us.expasy.org/sprot/">SWISS-PROT</a> is a curated protein sequence database providing a high level of annotation (such as the description of the function of a protein, its domain structure, post-translational modifications, variants, etc.), a minimal level of redundancy, and a high level of integration with other databases. This database is developed by the SWISS-PROT groups at the <A HREF="#http://www.isb-sib.ch/">Swiss Institute of Bioinformatics</a> (SIB) and at the <A HREF="#http://www.ebi.ac.uk/">European Bioinformatics Institute</A> (EBI). </dd></p>
+<DD><A HREF="http://us.expasy.org/sprot/">SWISS-PROT</a> is a curated protein sequence database providing a high level of annotation (such as the description of the function of a protein, its domain structure, post-translational modifications, variants, etc.), a minimal level of redundancy, and a high level of integration with other databases. This database is developed by the SWISS-PROT groups at the <A HREF="http://www.isb-sib.ch/">Swiss Institute of Bioinformatics</a> (SIB) and at the <A HREF="http://www.ebi.ac.uk/">European Bioinformatics Institute</A> (EBI). </dd></p>
 
 <P><DT><B><A NAME="symbol">Symbol</A></B></dt><dd>As used in 
 <A HREF="#MGI">MGI</A>, a <A HREF="#gene">gene</A> symbol is a unique abbreviation for the
@@ -2215,7 +2221,7 @@ across the panel with the presence of a particular mouse chromosome allows that 
 <A HREF="http://www.genome.gov/Pages/Hyperion//DIR/VIP/Glossary/Illustration/base_pair.html">Figure</A> at <A HREF="#NHGRI">NHGRI</A>.</dd></p>
 
 
-<P><DT><B><A NAME="tigr_mgi">TIGR MGI</A></B></dt><DD><A HREF="http://www.tigr.org/tigr-scripts/tgi/T_index.cgi?species=mouse">The Institute of Genetics Mouse Gene Index</A> Mouse Gene Index contains transcribed sequences from public <A HREF="#est">EST</A> data. Input sequences are clustered and assembled to form the consensus sequences that comprise the index. <br>See also <A HREF="http://www.tigr.org/tdb/tgi/gifaq.shtml">Frequently Asked Questions About the TIGR Gene Indices</A>.</dd></p>
+<P><DT><B><A NAME="tigr_mgi">TIGR MGI</A></B></dt><DD><A HREF="http://www.tigr.org/tigr-scripts/tgi/T_index.cgi?species=mouse">The Institute of Genetics Mouse Gene Index</A> Mouse Gene Index contains transcribed sequences from public <A HREF="#EST">EST</A> data. Input sequences are clustered and assembled to form the consensus sequences that comprise the index. <br>See also <A HREF="http://www.tigr.org/tdb/tgi/gifaq.shtml">Frequently Asked Questions About the TIGR Gene Indices</A>.</dd></p>
 
 <P><DT><B><A NAME="trait">Trait</A></B></dt><DD>A particular aspect of the 
 <A HREF="#phenotype">phenotype</A> that can be measured or observed directly, e.g., blood pressure or body weight.</dd></p>
@@ -2261,7 +2267,7 @@ across the panel with the presence of a particular mouse chromosome allows that 
 <A HREF="#transition">Transition</A>.</dd></p>
 
 <P><DT><B><A NAME="trembl">TrEMBL</A></B></dt>
-<DD><A HREF="#http://us.expasy.org/sprot/">TrEMBL</a> is a protein sequence database that contains all the <A NAME="translation">translations</A> of <A NAME="embl">EMBL</A> nucleotide sequences with annotated coding sequences. </dd></p>
+<DD><A HREF="http://us.expasy.org/sprot/">TrEMBL</a> is a protein sequence database that contains all the <A NAME="translation">translations</A> of <A NAME="embl">EMBL</A> nucleotide sequences with annotated coding sequences. </dd></p>
 
 
 <P><DT><B><A NAME="trisomy">Trisomy</A></B></dt><DD>The condition of having three 
