@@ -50,8 +50,11 @@ GB_URL		http://www.ncbi.nlm.nih.gov/htbin-post/Entrez/query?db=n&form=6&uid=
 # URL to NCBI's LocusLink
 LOCUSLINK_URL	http://www.ncbi.nlm.nih.gov/LocusLink/LocRpt.cgi?l=
 
-# URL to Ratmap
-RATMAP_URL	http://ratmap.gen.gu.se/ShowSingleLocus.htm?accno=
+# URL to RGD, kept for backwards compaiblity use RGD_URL instead
+RATMAP_URL	http://rgd.mcw.edu/tools/query/query.cgi?id=RGD:
+
+#URL to RGD
+RGD_URL		http://rgd.mcw.edu/tools/query/query.cgi?id=RGD:
 
 # URL to the MGI Glossary
 GLOSSARY_URL	http://www.informatics.jax.org/userdocs/glossary.shtml
