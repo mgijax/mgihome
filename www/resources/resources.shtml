@@ -22,7 +22,7 @@
  </TR>
 </TABLE>
  
-<dl>
+<!--<dl>
 <dt><b>Contents</b>
 <dd><A HREF="#downloads"><B>Downloads</B></a><br>
 <dd><A HREF="#nomenclature"><B>Nomenclature</B></a><br>
@@ -38,10 +38,10 @@
 <dd><A HREF="#mousefacts"><B>Mouse Facts</B></a><br>
 <dd><A HREF="#radiation"><B>Radiation Hybrid Mapping Resources</B></a><br>
 </dl>
-<hr>
+<hr>-->
 <dl>
 <dt><A name="downloads"></a><b>Downloads</B><BR>
-<dd><b><A HREF="<!--#include file='include/ftp_url.html'-->/pub/reports/index.html">Database Reports</A> (MGI Data and Statistical Reports)<br>
+<dd><b><A HREF="<!--#include file='include/ftp_url.html'-->pub/reports/index.html">Database Reports</A> (MGI Data and Statistical Reports)<br>
 
 <dd><A HREF="<!--#include file='include/ftp_url.html'-->">FTP Server</A></b><br><br>
 
@@ -51,7 +51,7 @@
 <dd><A HREF="../nomen/allmut_form.shtml"><b>Mouse Mutant Nomenclature</b></a> (Mutant Submissions Form)</A><BR>
 <EM>Guidelines for new heritable phenotypic alleles</EM><br><br>
 
-<dt><A name="genefamily"></a><A HREF="../nomen/genefamilies/index.shtml"><B>Gene Family Information</B></A><BR><EM>Curated gene families with members from mouse and human</EM><br><br>
+<dt><A name="genefamily"></a><A HREF="../nomen/genefamilies/index.shtml"><B>Gene Family Information</B></A><BR><EM>Curated gene families with members from mouse, human, and rat</EM><br><br>
 
 <dt><A name="GEN"></a><A HREF="../GXD/GEN/"><B>Gene Expression Notebook</b></a><br>
 <i>A tool to organize and store your expression data in your laboratory and submit selected data to the Gene Expression Database</i><br><br>
@@ -70,9 +70,8 @@
 <BR>
 <EM><A HREF="../submissions/submissions_menu.shtml">How to contribute</A> your data</EM> (Data and Nomenclature Submissions)<br><br>
 
-<dt><B><a name="swresources"></a><A HREF="<!--#include file='include/wi_url.html'-->userdocs/developers_tools.shtml">Software Developer Resources</A></B> (Tools for Developers)<br>
-<dd>How to create links to MGI<BR>
-<dd>Schema Browser<br><br>
+<dt><B><a name="swresources"></a><A HREF="<!--#include file='include/wi_url.html'-->userdocs/developers_tools.shtml">Software Developer Resources</A></B> (Tools for Developers):
+<em><font=size=-1>How to create links to MGI, Schema Browser...</em></font><br><br>
 
 <dt><B><A name="mirrorsites"></a><A HREF="../mirrors/mirrors.shtml">MGI Mirror Sites</A></B><BR>
 <EM>Sites in Australia, Japan, The Netherlands, and Taiwan mirror MGI.</EM><br><br>
@@ -86,12 +85,7 @@
 
 <dt><A name="mousefacts"></a>
 <a href="../other/mouse_facts1.shtml"><b>Mouse Facts</A></B><BR>
-<EM>Information about:</EM><br>
-<dd>mouse physiology<BR>
-<dd>genome size estimates<BR>
-<dd>codon usage<BR>
-<dd>clone resources<BR>
-<dd>radiation hybrid panels<BR><br>
+<EM>Information about: mouse physiology, genome size estimates, codon usage, clone resources, radiation hybrid panels...<BR><br>
 
 <dt><B><A name="radiation"></a>Radiation Hybrid Mapping Resources</B><br>
 <dd><A HREF="http://www.jax.org/resources/documents/cmdata/rhmap/">The Jackson
