@@ -66,19 +66,19 @@ MGI stores objects with accession IDs from many sources.  Some examples of valid
 <STRONG>Examples</STRONG>
 <UL>
 <LI>Reference (MGI Accession ID)<BR>
- <A HREF="<!--#include file='include/wi_url.html'-->/searches/accession_report.cgi?id=MGI:57297">
+ <A HREF="<!--#include file='include/wi_url.html'-->searches/accession_report.cgi?id=MGI:57297">
  <CODE>http://www.informatics.jax.org/searches/accession_report.cgi?id=MGI:57297</CODE>
  </A>
 <LI>Reference (MGI J Number)<BR>
- <A HREF="<!--#include file='include/wi_url.html'-->/searches/accession_report.cgi?id=J:9230">
+ <A HREF="<!--#include file='include/wi_url.html'-->searches/accession_report.cgi?id=J:9230">
  <CODE>http://www.informatics.jax.org/searches/accession_report.cgi?id=J:9230</CODE>
  </A>
 <LI>Reference (PubMed Accession ID)<BR>
- <A HREF="<!--#include file='include/wi_url.html'-->/searches/accession_report.cgi?id=90215200">
+ <A HREF="<!--#include file='include/wi_url.html'-->searches/accession_report.cgi?id=90215200">
  <CODE>http://www.informatics.jax.org/searches/accession_report.cgi?id=90215200</CODE>
  </A>
 <LI>Mouse Marker (MGI Accession ID)<BR>
- <A HREF="<!--#include file='include/wi_url.html'-->/searches/accession_report.cgi?id=MGI:97898">
+ <A HREF="<!--#include file='include/wi_url.html'-->searches/accession_report.cgi?id=MGI:97898">
  <CODE>http://www.informatics.jax.org/searches/accession_report.cgi?id=MGI:97898</CODE>
  </A>
 <LI>Allele (MGI Accession ID)<BR>
@@ -86,31 +86,31 @@ MGI stores objects with accession IDs from many sources.  Some examples of valid
  <CODE>http://www.informatics.jax.org/searches/accession_report.cgi?id=MGI:1860962</CODE>
  </A>
 <LI>Orthology (GDB Accession ID)<BR>
- <A HREF="<!--#include file='include/wi_url.html'-->/searches/accession_report.cgi?id=GDB:120345">
+ <A HREF="<!--#include file='include/wi_url.html'-->searches/accession_report.cgi?id=GDB:120345">
  <CODE>http://www.informatics.jax.org/searches/accession_report.cgi?id=GDB:120345</CODE>
  </A>
 <LI>Probe (MGI Accession ID)<BR>
- <A HREF="<!--#include file='include/wi_url.html'-->/searches/accession_report.cgi?id=MGI:32903">
+ <A HREF="<!--#include file='include/wi_url.html'-->searches/accession_report.cgi?id=MGI:32903">
  <CODE>http://www.informatics.jax.org/searches/accession_report.cgi?id=MGI:32903</CODE>
  </A>
 <LI>Probe (GenBank Accession ID)<BR>
- <A HREF="<!--#include file='include/wi_url.html'-->/searches/accession_report.cgi?id=K02800">
+ <A HREF="<!--#include file='include/wi_url.html'-->searches/accession_report.cgi?id=K02800">
  <CODE>http://www.informatics.jax.org/searches/accession_report.cgi?id=K02800</CODE>
  </A>
 <LI>Multiple Probes (MGI Accession IDs)<BR>
- <A HREF="<!--#include file='include/wi_url.html'-->/searches/accession_report.cgi?id=MGI:36495,MGI:36496,MGI:36501">
+ <A HREF="<!--#include file='include/wi_url.html'-->searches/accession_report.cgi?id=MGI:36495,MGI:36496,MGI:36501">
  <CODE>http://www.informatics.jax.org/searches/accession_report.cgi?id=MGI:36495,MGI:36496,MGI:36501</CODE>
  </A>
 <LI>Expression Assay (MGI Accession ID)<BR>
- <A HREF="<!--#include file='include/wi_url.html'-->/searches/accession_report.cgi?id=MGI:1205940">
+ <A HREF="<!--#include file='include/wi_url.html'-->searches/accession_report.cgi?id=MGI:1205940">
  <CODE>http://www.informatics.jax.org/searches/accession_report.cgi?id=MGI:1205940</CODE>
  </A>
 <LI>Image (MGI Accession ID)<BR>
- <A HREF="<!--#include file='include/wi_url.html'-->/searches/accession_report.cgi?id=MGI:1205939">
+ <A HREF="<!--#include file='include/wi_url.html'-->searches/accession_report.cgi?id=MGI:1205939">
  <CODE>http://www.informatics.jax.org/searches/accession_report.cgi?id=MGI:1205939</CODE>
  </A>
 <LI>GO Term (GO ID)<br>
-<a href="<!--#include file='include/wi_url.html'-->/searches/accession_report.cgi?id=GO:0030264">
+<a href="<!--#include file='include/wi_url.html'-->searches/accession_report.cgi?id=GO:0030264">
 <code>http://www.informatics.jax.org/searches/accession_report.cgi?id=GO:0030264</code></a>
 
 </UL>
@@ -125,8 +125,8 @@ list of homologies appears for that marker.
 If the search expression matches more than one object, a summary report lists the MGI accession ID, external database links, MGI links, record types in MGI associated with the accession ID(s), and a short description.
 <HR>
 <H4>Data Dumps for Obtaining Accession IDs</H4>
-All data dumps are tab-delimited and generated nightly.  In most of the reports, the MGI Accession ID appears in the first column. See  
-<A HREF="<!--#include file='include/ftp_url.html'-->/pub/reports/index.html">MGI Data and Statistical Reports</a> for an index with links to the report categories.
+All data dumps are tab-delimited and generated nightly.  In most of the reports, the MGI Accession ID appears in the first column. See
+<A HREF="<!--#include file='include/ftp_url.html'-->pub/reports/index.html">MGI Data and Statistical Reports</a> for an index with links to the report categories.
 <P>
 <HR>
 <!--#include file="include/bodyStop.html"--></BODY>
@@ -136,17 +136,17 @@ All data dumps are tab-delimited and generated nightly.  In most of the reports,
 <!--
 Warranty Disclaimer and Copyright Notice
 
- THE JACKSON LABORATORY MAKES NO REPRESENTATION ABOUT THE SUITABILITY OR 
- ACCURACY OF THIS SOFTWARE OR DATA FOR ANY PURPOSE, AND MAKES NO WARRANTIES, 
- EITHER EXPRESS OR IMPLIED, INCLUDING MERCHANTABILITY AND FITNESS FOR A 
- PARTICULAR PURPOSE OR THAT THE USE OF THIS SOFTWARE OR DATA WILL NOT 
- INFRINGE ANY THIRD PARTY PATENTS, COPYRIGHTS, TRADEMARKS, OR OTHER RIGHTS.  
+ THE JACKSON LABORATORY MAKES NO REPRESENTATION ABOUT THE SUITABILITY OR
+ ACCURACY OF THIS SOFTWARE OR DATA FOR ANY PURPOSE, AND MAKES NO WARRANTIES,
+ EITHER EXPRESS OR IMPLIED, INCLUDING MERCHANTABILITY AND FITNESS FOR A
+ PARTICULAR PURPOSE OR THAT THE USE OF THIS SOFTWARE OR DATA WILL NOT
+ INFRINGE ANY THIRD PARTY PATENTS, COPYRIGHTS, TRADEMARKS, OR OTHER RIGHTS.
  THE SOFTWARE AND DATA ARE PROVIDED "AS IS".
 
- This software and data are provided to enhance knowledge and encourage 
- progress in the scientific community and are to be used only for research 
- and educational purposes.  Any reproduction or use for commercial purpose 
- is prohibited without the prior express written permission of the Jackson 
+ This software and data are provided to enhance knowledge and encourage
+ progress in the scientific community and are to be used only for research
+ and educational purposes.  Any reproduction or use for commercial purpose
+ is prohibited without the prior express written permission of the Jackson
  Laboratory.
 
 Copyright © 1996, 1999, 2002 by The Jackson Laboratory

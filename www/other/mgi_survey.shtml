@@ -25,8 +25,8 @@
 <HR>
 <FORM action=survey.cgi method=post><SMALL>
 <P><B>1. How often do you use MGI?</B><BR>
-<INPUT name=use type=radio value=Occasionally>Occasionally 
-<INPUT name=use type=radio value=Monthly>Monthly 
+<INPUT name=use type=radio value=Occasionally>Occasionally
+<INPUT name=use type=radio value=Monthly>Monthly
 <INPUT name=use type=radio value=Weekly>Weekly
 <INPUT name=use type=radio value=Daily>Daily<BR>
 Comments:
@@ -34,8 +34,8 @@ Comments:
 
 
 <P><B>2. MGI has changed its look recently. Is it:</B><BR>
-<INPUT name=look type=radio value=Better>Better 
-<INPUT name=look type=radio value=Worse>Worse 
+<INPUT name=look type=radio value=Better>Better
+<INPUT name=look type=radio value=Worse>Worse
 <INPUT name=look type=radio value="Not really different">Not really different<BR>
 Comments:<TEXTAREA cols=55 name=lookComments rows=6></TEXTAREA>
 
@@ -51,7 +51,7 @@ Comments:<TEXTAREA cols=55 name=lookComments rows=6></TEXTAREA>
 <INPUT name=info  type=checkbox value=References>References<BR>
 <INPUT name=info  type=checkbox value="Tumor Biology">Tumor Biology<BR>
 <INPUT name=info  type=checkbox value="Gene Ontologies">Gene Ontologies<BR>
-Comments: <TEXTAREA cols=55 name=infoComments rows=6></TEXTAREA> 
+Comments: <TEXTAREA cols=55 name=infoComments rows=6></TEXTAREA>
 </P>
 
 <P><B>4. How do you access MGI?</B><BR>
@@ -84,7 +84,7 @@ Comments:<INPUT name=accessComments size=55> </P>
 <TD><INPUT name=query type=checkbox value="Alleles and Phenotypes">
 <A href="<!--#include file='include/wi_url.html'-->searches/allele_form.shtml">Alleles and Phenotypes</A></TD>
 <TD><INPUT name=query type=checkbox value="Gene Ontology Browser">
-<A href="<!--#include file='include/wi_url.html'-->searches/GO_form.shtml">Gene 
+<A href="<!--#include file='include/wi_url.html'-->searches/GO_form.shtml">Gene
 Ontology Browser</A>
 </TD>
 </TR>
@@ -100,10 +100,10 @@ Mouse/Human Phenotypes</A></TD>
 
 <TR>
 <TD><INPUT name=query type=checkbox value="Inbred Strain Characteristics">
-<A href="<!--#include file='include/wi_url.html'-->/external/festing/search_form.cgi">Inbred Strain Characteristics</A></TD>
+<A href="<!--#include file='include/wi_url.html'-->external/festing/search_form.cgi">Inbred Strain Characteristics</A></TD>
 
 <TD><INPUT name=query type=checkbox value="Phenotype Classifications">
-<A href="<!--#include file='include/wi_url.html'-->/userdocs/phenoslim.shtml">Phenotype Classifications</A></TD>
+<A href="<!--#include file='include/wi_url.html'-->userdocs/phenoslim.shtml">Phenotype Classifications</A></TD>
 </TR>
 
 <TR>
@@ -134,7 +134,7 @@ Mouse/Human Phenotypes</A></TD>
 
 <TR>
 <TD><INPUT name=query type=checkbox value="Orthology Map Views">
-<A href="<!--#include file='include/wi_url.html'-->/reports/homologymap/mouse_human.shtml">Orthology Map Views</A></TD>
+<A href="<!--#include file='include/wi_url.html'-->reports/homologymap/mouse_human.shtml">Orthology Map Views</A></TD>
 <TD><INPUT name=query type=checkbox value="MGI Glossary">
 <A href="../other/glossary.shtml">MGI Glossary</A></TD>
 </TR>
