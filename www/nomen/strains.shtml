@@ -300,7 +300,7 @@ Mouse strains:<spacer type=horizontal size=15>FL/1Re, FL/2Re
 <p><b>Example:</b></p>
 <blockquote>
 <table width="90%" border=0>
-<tr><td width="15%">B6C3Fe <i>a/a&#150;Dh</i><td>The <i>Dh</i> (dominant hemimelia) mutation is maintained by crossing to a <nobr>(B6C3Fe <i>a/a)</i>F1</nobr> at each generation, but the stock itself is not an F1.</tr>
+<tr><td width="15%" valign=top>B6C3Fe <i>a/a&#150;Dh</i><td>The <i>Dh</i> (dominant hemimelia) mutation is maintained by crossing to a <nobr>(B6C3Fe <i>a/a)</i>F1</nobr> at each generation, but the stock itself is not an F1.</tr>
 </table>
 </BLOCKQUOTE>
 
@@ -337,7 +337,9 @@ Mouse strains:<spacer type=horizontal size=15>FL/1Re, FL/2Re
 
 <p><b>Example:</b></p>
 <blockquote>
-Pri:B6,D2&#150;G# is an AIL stock created at Princeton from the inbred strains C57BL/6 x DBA/2. The G number will increase with each generation.
+<table width="90%" border=0>
+<tr><td width="15%" valign=top>Pri:B6,D2&#150;G# <td>An AIL stock created at Princeton from the inbred strains C57BL/6 x DBA/2. The G number will increase with each generation.</tr>
+</table>
 </blockquote>
 
 <h2><a name="ccasis"></a>5<spacer type=horizontal size=15>Coisogenic, Congenic, and Segregating Inbred Strains</h2>
@@ -352,14 +354,13 @@ Pri:B6,D2&#150;G# is an AIL stock created at Princeton from the inbred strains C
 <p>Coisogenic strains should be designated by the strain symbol (and where appropriate the substrain symbol) followed by a hyphen and the gene symbol of the differential allele, in italics.
 
 
-<p><b>Example:</b></p>
+<p><b>Examples:</b></p>
 <blockquote>
 <table width="100%" border=0>
 <tr><td valign="top" width="30%">129S7/SvEvBrd&#150;<i>Fyn<sup>tm1Sor</sup></i> <td>A targeted mutation of the <i>Fyn</i> gene was produced using the AB1 ES cell line derived from 129S7/SvEvBrd. Chimeric animals were mated to 129S7/SvEvBrd and the allele subsequently maintained on this coisogenic strain.</tr>
 </table>
 </blockquote>
 
-<p><b>Example:</b></p>
 <blockquote>
 <table width="100%" border=0>
 <tr><td width="30%">C3H/HeJ&#150;<i>md<sup>2J</sup></i><td>The mahoganoid 2J mutation in the C3H/HeJ strain.</tr>
@@ -391,38 +392,39 @@ Pri:B6,D2&#150;G# is an AIL stock created at Princeton from the inbred strains C
 
 <p>Congenic strains are designated by a symbol consisting of three parts. The full or abbreviated symbol of the recipient strain is separated by a period from an abbreviated symbol of the donor strain, this being the strain in which the allele or mutation originated, which may or may not be its immediate source in constructing the congenic strain. (In cases where the donor is not inbred or is complex, the symbol Cg should be used to denote congenic. The use of the donor strain symbol or Cg is essential to distinguish congenic from coisogenic strains). A hyphen then separates the strain name from the symbol (in italics) of the differential allele(s) introgressed from the donor strain.
 
-<p><b>Example:</b></p>
-<blockquote>B6.AK&#150;<i>H2<sup>k</sup></i> is a mouse strain with the genetic background of C57BL/6 but which differs from that strain by the introduction of a differential allele (<i>H2<sup>k</sup></i>) derived from strain AKR/J.
+<p><b>Examples:</b></p>
+<blockquote>
+<table width="90%" border=0>
+<tr><td width="15%" valign=top>B6.AK&#150;<i>H2<sup>k</sup></i><td>A mouse strain with the genetic background of C57BL/6 but which differs from that strain by the introduction of a differential allele (<i>H2<sup>k</sup></i>) derived from strain AKR/J.</tr></table>
 </blockquote>
 
-<p><b>Example:</b></p>
 <blockquote>
-LEW.BN&#150;<i>RT1<sup>n</sup></i> is a rat strain with the genetic background of LEW but which differs from that strain by the introduction of a differential segment (<i>RT1<sup>n</sup></i>) derived from strain BN.
+<table width="90%" border=0>
+<tr><td width="15%" valign=top>LEW.BN&#150;<i>RT1<sup>n</sup></i> <td>A rat strain with the genetic background of LEW but which differs from that strain by the introduction of a differential segment (<i>RT1<sup>n</sup></i>) derived from strain BN.</tr></table>
 </blockquote>
 
-<p><b>Example:</b></p>
 <blockquote>
-DA.F344&#150;<i>Cia5</i> is a rat strain with the genetic background of DA onto which a segment from the F344 strain containing the <i>Cia5</i> QTL has been transferred.</blockquote>
+<table width="90%" border=0>
+<tr><td width="15%" valign=top>DA.F344&#150;<i>Cia5</i> <td>A rat strain with the genetic background of DA onto which a segment from the F344 strain containing the <i>Cia5</i> QTL has been transferred.</tr></table>
+</blockquote>
 
 <p>If several lines derived from the same host background and donor strains and carrying the same differential allele(s) are available, the individual lines should be distinguished by adding a forward slash followed by serial numbers and Lab Codes.</p>
 
 <p>If the differential allele has been passed through a third strain, the third strain may be included in parentheses.</p>
 
-<p><b>Example:</b></p>
+<p><b>Examples:</b></p>
 <blockquote>
 <table border=0 width=100%">
-<tr>
-<td width="35%" valign="top">J.129S2(B6)&#150;<i>Cd8a<sup>tm1Mak</sup></i>/2Dcr
-<br>J.129S2(B6)&#150;<i>Cd8a<sup>tm1Mak</sup></i>/3Dcr</td>
-<td>Two different congenic strains, each developed from the same donor and recipient strains and each carrying the same differential alleles.</td></tr>
+<tr><td width="30%" valign=top>J.129S2(B6)&#150;<i>Cd8a<sup>tm1Mak</sup></i>/2Dcr
+<br>J.129S2(B6)&#150;<i>Cd8a<sup>tm1Mak</sup></i>/3Dcr
+<td>Two different congenic strains, each developed from the same donor and recipient strains and each carrying the same differential alleles.</tr>
 </table>
 </blockquote>
 
-<p><b>Example:</b>
 <blockquote>
-<table border=0 width=90%">
+<table border=0 width=100%">
 <tr>
-<td width="20%" valign="top">NOD.129S7(B6)&#150;<I>Rag1<sup>tm1Mom</sup></I><td>In this example and those above, the differential alleles were passed through a third strain, C57BL6, shown designated as (B6) in the strain name.</tr>
+<td width="30%" valign="top">NOD.129S7(B6)&#150;<I>Rag1<sup>tm1Mom</sup></I><td>In this example and those above, the differential alleles were passed through a third strain, C57BL6, shown designated as (B6) in the strain name.</tr>
 </table>
 </blockquote>
 
@@ -431,8 +433,8 @@ DA.F344&#150;<i>Cia5</i> is a rat strain with the genetic background of DA onto 
 <p><b>Examples:</b></p>
 <blockquote>
 <TABLE BORDER=0 WIDTH="90%">
-<tr><td WIDTH="20%" valign=top>B6.Cg&#150;(<I>D4Mit25&#150;D4Mit80</I>)</td><TD> is a congenic strain made by introducing into C57BL/6J a segment of Chromosome 4 from an outbred or mixed strain (=Cg), extending between the two defined markers.</td> </TR>
-<TR><TD valign=top>B6.CB&#150;(<I>D4Mit25&#150;D4Mit80</I>)</td> <TD>is a similar congenic strain in which the donor 
+<tr><td WIDTH="30%" valign=top>B6.Cg&#150;(<I>D4Mit25&#150;D4Mit80)/Lt</I></td><TD>A congenic strain made by introducing into C57BL/6J a segment of Chromosome 4 from an outbred or mixed strain (=Cg), extending between the two defined markers.</td> </TR>
+<TR><TD valign=top>B6.CB&#150;(<I>D4Mit25&#150;D4Mit80)/Lt</I></td> <TD>A  similar congenic strain in which the donor 
 chromosomal segment comes from the CBA/J strain.</TR>
 </TABLE>
 </BLOCKQUOTE>
@@ -449,7 +451,7 @@ chromosomal segment comes from the CBA/J strain.</TR>
 
 <P><B>Examples:</B>
 <blockquote>
-<table>
+<table width=100%>
 <tr><td width="20%">SHR&#150;Y<SUP>BN</SUP> <TD>In this consomic rat strain, the Y chromosome from BN has been backcrossed onto SHR. </TR>
 <TR><TD>C56BL/6J&#150;19<SUP>SPR</SUP><TD>In this consomic mouse strain, a <i>M.spretus</i> Chromosome 19 has been backcrossed onto C57BL/6J. </TR>
 </TABLE>
@@ -489,8 +491,10 @@ NUCLEAR GENOME&#150;mt<sup>CYTOPLASMIC GENOME.</sup>
 
 <p><b>Example:</b></p>
 <BLOCKQUOTE>
+<table border=0 width="100%">
+<tr><td width="20%" valign=top>
+C57BL/6J&#150;mt<sup>BALB/c</sup><td>A strain with the nuclear genome of C57BL/6J and the cytoplasmic (mitochondrial) genome of BALB/c.</td></table>
 
-C57BL/6J&#150;mt<sup>BALB/c</sup>&nbsp;&nbsp; &nbsp;  is a strain with the nuclear genome of C57BL/6J and the cytoplasmic (mitochondrial) genome of BALB/c.
 </BLOCKQUOTE>
 Such a strain is developed by crossing male C57BL/6J mice with BALB/c females, followed by repeated backcrossing of female offspring to male C57BL/6J. As with congenic strains, a minimum of 10 backcross generations is required, counting the F1 generation as generation 1.
 

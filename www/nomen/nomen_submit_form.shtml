@@ -5,8 +5,8 @@
 <BODY BGCOLOR=#FFFFFF>
 <!--#include file="include/banner.html"-->
 <H2>Submit a Proposed Locus Symbol</H2>
-Please fill in all the appropriate information.  If your contact details are already 
-in MGD you only need to enter your name and e-mail address.  Press the submit button 
+Please fill in all the appropriate information.  If your contact details are already
+in MGD you only need to enter your name and e-mail address.  Press the submit button
 at the bottom of the form to send the information to the MGD Nomenclature Committee.
 <P>
 <FORM METHOD="POST" ACTION="submit_nomen.cgi">
@@ -27,7 +27,7 @@ Telephone Number:             <INPUT TYPE="text" NAME="ph" SIZE=30>
 Fax Number:                   <INPUT TYPE="text" NAME="fx" SIZE=30>
 </PRE>
 <HR>
-<H2>Locus Details:</H2> 
+<H2>Locus Details:</H2>
 <B>Please refer to the <A HREF="short_gene.shtml">Nomenclature Checklist</A> before completing this section.</B>
 <BR><BR>
 Proposed Locus Symbol:  <INPUT TYPE="text" NAME="symbol" SIZE=25>
@@ -44,14 +44,16 @@ Requesting symbol in: (check all that apply)
 <INPUT TYPE="checkbox" NAME="requestMouse" VALUE="mouse" CHECKED> Mouse
 <INPUT TYPE="checkbox" NAME="requestHuman" VALUE="human"> Human
 <INPUT TYPE="checkbox" NAME="requestRat" VALUE="rat"> Rat
-<BLOCKQUOTE><EM>If you wish to request a symbol in Human only, then go to the <A HREF="http://www.gene.ucl.ac.uk/nomenclature/">
+<BLOCKQUOTE><EM>If you wish to request a symbol in Human only, then go to the
+<A HREF="http://www.gene.ucl.ac.uk/nomenclature/">
 Human Nomenclature Page</A></EM></BLOCKQUOTE>
 Sources checked:
-<INPUT TYPE="checkbox" NAME="source1" VALUE="MGD" > MGD (<A HREF="<!--#include file="include/wi_url.html"-->">USA</A>)
-<INPUT TYPE="checkbox" NAME="source2" VALUE="HUGO/Human"> HUGO/Human (<A HREF="http://www.gene.ucl.ac.uk/cgi-bin/nomenclature/searchgenes.pl">UK</A>)
+<INPUT TYPE="checkbox" NAME="source1" VALUE="MGD" > MGD
+(<A HREF="<!--#include file="include/wi_url.html"-->">USA</A>)
+<INPUT TYPE="checkbox" NAME="source2" VALUE="HUGO/Human"> HUGO/Human
+(<A HREF="http://www.gene.ucl.ac.uk/cgi-bin/nomenclature/searchgenes.pl">UK</A>)
 <INPUT TYPE="checkbox" NAME="source4" VALUE="RGD"> RGD (<A HREF="http://rgd.mcw.edu/">Wisconsin</A>)
 <INPUT TYPE="checkbox" NAME="source3" VALUE="RatMap"> RatMap (<A HREF="http://ratmap.gen.gu.se/">Sweden</A>)
-
 <P>
 Other names used in the literature (aliases):<BR>
 <TEXTAREA NAME="otherName" ROWS=2 COLS=55></TEXTAREA><BR>
@@ -67,9 +69,9 @@ performed, etc. that may help us with the symbol approval process.<BR>
  <INPUT TYPE="text" NAME="genbankID" SIZE=60>
 <br>
 <P>If you have sequence, we strongly recommend that you cut and paste it into the area below.
- It will be treated in complete confidence. <br> 
+ It will be treated in complete confidence. <br>
  If your sequence is large, please place as much as possible into
- the box; however, if the sequence is very long, you will need to send it by email to 
+ the box; however, if the sequence is very long, you will need to send it by email to
  <a href="mailto:nomen@informatics.jax.org">nomen@informatics.jax.org</a>.
  <br>
  <p>
@@ -110,20 +112,17 @@ If a homologous locus is known in a species other than mouse, please fill in thi
 </HTML>
 <!--
 Warranty Disclaimer and Copyright Notice
-
- THE JACKSON LABORATORY MAKES NO REPRESENTATION ABOUT THE SUITABILITY OR 
- ACCURACY OF THIS SOFTWARE OR DATA FOR ANY PURPOSE, AND MAKES NO WARRANTIES, 
- EITHER EXPRESS OR IMPLIED, INCLUDING MERCHANTABILITY AND FITNESS FOR A 
- PARTICULAR PURPOSE OR THAT THE USE OF THIS SOFTWARE OR DATA WILL NOT 
- INFRINGE ANY THIRD PARTY PATENTS, COPYRIGHTS, TRADEMARKS, OR OTHER RIGHTS.  
+ THE JACKSON LABORATORY MAKES NO REPRESENTATION ABOUT THE SUITABILITY OR
+ ACCURACY OF THIS SOFTWARE OR DATA FOR ANY PURPOSE, AND MAKES NO WARRANTIES,
+ EITHER EXPRESS OR IMPLIED, INCLUDING MERCHANTABILITY AND FITNESS FOR A
+ PARTICULAR PURPOSE OR THAT THE USE OF THIS SOFTWARE OR DATA WILL NOT
+ INFRINGE ANY THIRD PARTY PATENTS, COPYRIGHTS, TRADEMARKS, OR OTHER RIGHTS.
  THE SOFTWARE AND DATA ARE PROVIDED "AS IS".
-
- This software and data are provided to enhance knowledge and encourage 
- progress in the scientific community and are to be used only for research 
- and educational purposes.  Any reproduction or use for commercial purpose 
- is prohibited without the prior express written permission of the Jackson 
+ This software and data are provided to enhance knowledge and encourage
+ progress in the scientific community and are to be used only for research
+ and educational purposes.  Any reproduction or use for commercial purpose
+ is prohibited without the prior express written permission of the Jackson
  Laboratory.
-
 Copyright © 1996, 1999, 2002 by The Jackson Laboratory
 All Rights Reserved
 -->
