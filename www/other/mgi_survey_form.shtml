@@ -1,0 +1,211 @@
+<HTML>
+<HEAD>
+<TITLE>User Survey Form</TITLE>
+
+<BODY BGCOLOR="#ffffff">
+<!--This is the MGI version of the User Registration form.Revised 1/13/1999.-->
+<!--#include file="include/banner.html"-->
+</HEAD>
+<P>
+<H1>MGI - User Survey Form - <I>Display Copy</I></H1>
+<B><BIG>This form is for display only!</BIG></B>
+<P>
+<HR>
+<FORM METHOD="POST" ACTION="mgi_survey.cgi">
+
+<OL>
+
+<LI>Please tell us about yourself. <EM>This information will be kept confidential.</EM><P>
+Name:      <INPUT TYPE="text" NAME="name" SIZE=45>
+<p>
+
+Institution:
+<INPUT TYPE="text" NAME="tute" size=50 rows=2><P>
+Primary research interests:<BR> <INPUT TYPE="text" NAME="research" SIZE=50>
+<P>
+Computers used in your work: (select one or more)<BR>
+<SELECT SEVERAL NAME="cmptrs" MULTIPLE SIZE=3>
+<option> Macintosh 
+<option> Windows PC 
+<option> Windows NT
+<option> UNIX workstation
+</SELECT SEVERAL>
+<P>
+Which web browser do you prefer to use?<BR>
+<INPUT  TYPE="radio" NAME="browser" VALUE="nets">Netscape Navigator  
+<INPUT  TYPE="radio" NAME="browser"VALUE="ie">Internet Explorer  
+<INPUT  TYPE="radio" NAME="browser" VALUE="opera">Opera  
+</INPUT><INPUT  TYPE="radio" NAME="browser" VALUE="other">Other</INPUT>
+<P>
+
+<LI>Which scientific databases do you regularly use?
+<BR>
+<textarea name="scidbs.txt" cols=50 rows=4 wrap=virtual></textarea><P>
+
+<LI>How often do you use the MGI website?<BR>
+<INPUT NAME="frequency" TYPE="radio" VALUE="1">Daily  
+</INPUT><INPUT NAME="frequency" TYPE="radio" VALUE="2">Weekly  
+</INPUT><INPUT NAME="frequency" TYPE="radio" VALUE="3">Monthly  
+</INPUT><INPUT NAME="frequency" TYPE="radio" VALUE="4">Occasionally</INPUT>
+<INPUT NAME="frequency" TYPE="radio" VALUE="5">Never  </INPUT>
+<INPUT NAME="frequency" TYPE="radio" VALUE="6">New user</INPUT>
+<P>
+<LI>How did you find out about our web-site?
+<BR></INPUT><INPUT NAME="findmgi" TYPE="radio" VALUE="bio">link from a biology web-site</INPUT><BR>
+</INPUT><INPUT NAME="findmgi" TYPE="radio" VALUE="db">link within scientific database</INPUT><BR>
+</INPUT><INPUT NAME="findmgi" TYPE="radio" VALUE="pub">Publication</INPUT><BR>
+</INPUT><INPUT NAME="findmgi" TYPE="radio" VALUE="mtg">Meeting</INPUT><BR>
+</INPUT><INPUT NAME="findmgi" TYPE="radio" VALUE="oth">Other</INPUT><BR>
+<P>
+<LI>What are some questions you have submitted to our database (MGD/GXD)?<BR>
+<textarea name="queries" cols=50 rows=4 wrap=virtual> 
+        </textarea><P>
+<LI>Which MGI query forms have you used to get answers? <BR>
+(<EM>Check one or more items on the following list.</EM>)<BR>
+<SMALL>
+<INPUT NAME="mkrform" TYPE="Checkbox" VALUE="1">
+Genes, Markers and Phenotypes</INPUT><BR>
+<INPUT NAME="moleform" TYPE="Checkbox" VALUE="1">
+Molecular Probes and Segments</INPUT><BR>
+<INPUT NAME="polyform" TYPE="Checkbox" VALUE="1">Polymorphisms</INPUT><BR>
+<INPUT NAME="homform" TYPE="Checkbox" VALUE="1">Mammalian Homology</INPUT><BR>
+<INPUT NAME="oxform" TYPE="Checkbox" VALUE="1">Oxford Grid</INPUT><BR>
+<INPUT NAME="gxdform" TYPE="Checkbox" VALUE="1">Gene Expression Data</INPUT><BR>
+<INPUT NAME="gxdndxform" TYPE="Checkbox" VALUE="1">GXD Index</INPUT><BR>
+<INPUT NAME="estform" TYPE="Checkbox" VALUE="1">
+cDNA and EST Clone Expression</INPUT><BR>
+<INPUT NAME="mapdataform" TYPE="Checkbox" VALUE="1">Mapping Data</INPUT><BR>
+<INPUT NAME="mapanelform" TYPE="Checkbox" VALUE="1">Mapping Panel</INPUT><BR>
+<INPUT NAME="mapform" TYPE="Checkbox" VALUE="1">Linkage Maps</INPUT><BR>
+<INPUT NAME="mapform2" TYPE="Checkbox" VALUE="1">
+Cytogenetic or Physical Maps</INPUT><BR>
+<INPUT NAME="riform" TYPE="Checkbox" VALUE="1">
+Recombinant Inbred (or Congenic)Strain Distribution Patterns</INPUT><BR>
+<INPUT NAME="refform" TYPE="Checkbox" VALUE="1">References</INPUT><BR>
+<INPUT NAME="strnform" TYPE="Checkbox" VALUE="1">
+Inbred Strains of Mice and Rats</INPUT><BR>
+<INPUT NAME="accform" TYPE="Checkbox" VALUE="1">Accession IDs</INPUT><BR>
+<INPUT NAME="CCR" TYPE="Checkbox" VALUE="1">Chromosome Committee Reports</INPUT><BR>
+<INPUT NAME="quikform" TYPE="Checkbox" VALUE="1">Quick Forms</INPUT><BR>
+<INPUT NAME="ommlcform" TYPE="Checkbox" VALUE="1">
+Combined Mouse/Human Phenotypes</INPUT><BR>
+</SMALL><P>
+<LI>Do you find the data you are seeking?</INPUT>
+<INPUT NAME="doUfind" TYPE="radio" VALUE="1">USUALLY  </INPUT><INPUT NAME="doUfind" TYPE="radio" VALUE="2">SOMETIMES </INPUT><INPUT NAME="doUfind" TYPE="radio" VALUE="3">NO </INPUT><P>
+Please comment:<BR>
+<textarea name="doUfind.txt" cols=50 rows=4 wrap=virtual></textarea><P>
+<LI>Do you find MGI query forms easy to use? <INPUT NAME="easy2use" TYPE="radio" 
+VALUE="1">USUALLY </INPUT>
+<INPUT NAME="easy2use" TYPE="radio" VALUE="2">SOMETIMES</INPUT>
+<INPUT NAME="easy2use" TYPE="radio" VALUE="3">NO </INPUT><P>
+<P>
+Please comment:<BR>
+<textarea name="easy2use.txt" cols=50 rows=4 wrap=virtual> 
+                        </textarea>
+<P>
+<LI>Are query results presented with content and format you find useful?<BR>
+ <INPUT NAME="qresults" TYPE= "radio" VALUE="1">USUALLY  </INPUT>
+ <INPUT NAME="qresults" TYPE="radio" VALUE="2">SOMETIMES  </INPUT>
+ <INPUT NAME="qresults" TYPE="radio" VALUE="3">NO</INPUT>
+<P>
+Please comment:<BR>
+<textarea name="qresults.txt" cols=50 rows=4 wrap=virtual> 
+                        </textarea>
+<P>
+<LI>Please list any questions you would like to ask of the database 
+but cannot because the query forms do not provide appropriate 
+options or the database does not seem to 
+have the data you are interested in.<BR>
+<textarea name="questns.txt" cols=50 rows=4 wrap=virtual> 
+                        </textarea>
+<P>
+<LI>Have you accessed the Mouse Tumor Biology Database (MTB) prototype? 
+<INPUT NAME="mtb" TYPE="radio" VALUE="y">YES </INPUT><INPUT NAME="mtb" TYPE="radio" VALUE="n">NO</INPUT>
+<P>
+Please comment:<BR>
+<textarea name="mtb.txt" cols=50 rows=4 wrap=virtual> 
+                        </textarea>
+<P>
+<LI>Have you accessed the Rat Data resource prototype? 
+<INPUT NAME="rat" TYPE="radio" VALUE="y">YES </INPUT>
+<INPUT NAME="rat" TYPE="radio" VALUE="n">NO</INPUT>
+<P>
+Please comment:<BR>
+<textarea name="rat.txt" cols=50 rows=4 wrap=virtual> 
+                        </textarea>
+<P>
+<LI>Have you accessed the on-line documentation for MGD or GXD?  
+<INPUT NAME="doc1" TYPE="radio" VALUE="y">YES </INPUT>
+<INPUT NAME="doc1" TYPE="radio" VALUE="n">NO</INPUT>
+<P>
+Please comment:<BR>
+<textarea name="doc1.txt" cols=50 rows=4 wrap=virtual> 
+                        </textarea>
+<P>
+<LI>Have you contacted User Support? 
+<INPUT NAME="support" TYPE="radio" VALUE="y">YES </INPUT>
+<INPUT NAME="support" TYPE="radio" VALUE="n">NO</INPUT>
+<P>
+Please comment:
+<BR>
+<textarea name="support.txt" cols=50 rows=4 wrap=virtual> 
+                        </textarea>
+<P>
+<LI>Have you used the Nomenclature pages to review nomenclature 
+guidelines or submit a new marker symbol? 
+<INPUT NAME="nomen" TYPE="radio" VALUE="y">YES </INPUT>
+<INPUT NAME="nomen" TYPE="radio" VALUE="n">NO</INPUT>
+<P>
+<LI>Have you used the Data Submission pages to find 
+out about electronic data submissions?
+<INPUT NAME="sub1" TYPE="radio" VALUE="y">YES </INPUT>
+<INPUT NAME="sub1" TYPE="radio" VALUE="n">NO</INPUT>
+<P>
+<LI>Have you submitted data to MGD?<INPUT NAME="sub2" TYPE="radio" VALUE="y">YES </INPUT>
+<INPUT NAME="sub2" TYPE="radio" VALUE="n">NO</INPUT>
+<P>
+<LI>Are you a subscriber to the electronic bulletin boards (MGI-LIST or RAT-LIST)? <BR>
+<INPUT NAME="lists" TYPE="radio" VALUE="y">YES </INPUT>
+<INPUT NAME="lists" TYPE="radio" VALUE="n">NO</INPUT>
+
+<P>
+<LI>Have you completed our User Registration form?
+<INPUT NAME="reg" TYPE="radio" VALUE="y">YES </INPUT>
+<INPUT NAME="reg" TYPE="radio" VALUE="n">NO</INPUT>
+<P>
+<LI>What features do you find most useful in the MGI web-site?<BR>
+<textarea name="goodies.txt" cols=50 rows=4 wrap=virtual> 
+                        </textarea>
+<P>
+<LI>How can we improve the MGI web-site and databases?<BR>
+<textarea name="improve.txt" cols=50 rows=4 wrap=virtual> 
+                        </textarea>
+<P>
+</OL>
+<EM><B>Thank you</B> for participating!</EM>
+<BR>
+<HR>
+
+<HR>
+<!--#include file="include/footer.html"-->
+</FORM>
+</BODY>
+</HTML>
+<!--
+WARRANTY DISCLAIMER AND COPYRIGHT NOTICE 
+
+    THE JACKSON LABORATORY MAKES NO REPRESENTATION ABOUT THE 
+    SUITABILITY OR ACCURACY OF THIS SOFTWARE OR DATA FOR ANY 
+    PURPOSE, AND MAKES NO WARRANTIES, EITHER EXPRESS OR IMPLIED, 
+    INCLUDING THE WARRANTIES OF MERCHANTABILITY AND FITNESS FOR 
+    A PARTICULAR PURPOSE OR THAT THE USE OF THIS SOFTWARE OR DATA 
+    WILL NOT INFRINGE ANY THIRD PARTY PATENTS, COPYRIGHTS, 
+    TRADEMARKS OF OTHER RIGHTS. IT IS PROVIDED "AS IS." 
+
+    This software and data are provided as a service to the scientific 
+    community to be used only for research and educational purposes. Any
+    commercial reproduction is prohibited without the prior written 
+    permission of The Jackson Laboratory. 
+
+    Copyright © 1996 The Jackson Laboratory All Rights Reserved 
+-->
