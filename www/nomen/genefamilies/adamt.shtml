@@ -4,10 +4,9 @@
 <TITLE>Adamts Gene Family</TITLE>
 </HEAD>
 <BODY BGCOLOR=#FFFFFF>
-<CENTER>
-<IMG SRC="http://www.informatics.jax.org/mgihome/images/mgi_small_banner.gif"
-WIDTH=501   HEIGHT=40   ALT="Mouse Genome Informatics">
-</CENTER>
+
+<!--#include file="include/banner.html"-->
+
 <BODY background=""><br>
 
 <h2><center>Adamts Gene Family</center></h2>
@@ -32,40 +31,40 @@ WIDTH=501   HEIGHT=40   ALT="Mouse Genome Informatics">
 <TH width=15%>Chr
 </TR> 
 <TR>
-<TD><A href="http://www.informatics.jax.org/searches/marker.cgi?31161">Adamts1</A>
+<TD><A href="<!--#include file="include/wi_url.html"-->searches/marker.cgi?31161">Adamts1</A>
 <TD><a href="http://www.ncbi.nlm.nih.gov/htbin-post/Entrez/query?db=n&amp;form=6&amp;uid=AA475356">AA475356</a><br>
 <A href="http://www.ncbi.nlm.nih.gov/htbin-post/Entrez/query?db=n&amp;form=6&amp;uid=AB001735">AB001735</A><br>
 <A href="http://www.ncbi.nlm.nih.gov/htbin-post/Entrez/query?db=n&amp;form=6&amp;uid=D67076">D67076</A>
 <TD>ADAMTS, C3-C5, METH1, ADAM-TS1</TD> 
 <TD align=center><img src=redball1.gif height=21 width=21></td> <td>16 (53.4) </TR> 
 <TR>
-<TD><A href="http://www.informatics.jax.org/searches/marker.cgi?43518">Adamts2</A> 
+<TD><A href="<!--#include file="include/wi_url.html"-->searches/marker.cgi?43518">Adamts2</A> 
 <TD><A href="http://www.ncbi.nlm.nih.gov/htbin-post/Entrez/query?db=n&amp;form=6&amp;uid=AA832579">AA832579</A></TD>
 <td>ADAMTS-3, hPCPNI, PCINP, ADAM-TS2</TD> <TD  align=center><img src=redball1.gif height=21 width=21> <td>11 (syntenic)</TD> </TR> <TR>
 <td><A
-href="http://www.informatics.jax.org/searches/marker.cgi?41105">Adamts4</A> 
+href="<!--#include file="include/wi_url.html"-->searches/marker.cgi?41105">Adamts4</A> 
 <TD><A href="http://www.ncbi.nlm.nih.gov/htbin-post/Entrez/query?db=n&amp;form=6&amp;uid=AA041973">AA041973</A><br>
-<A href="http://www.ncbi.nlm.nih.gov/htbin-post/Entrez/query?db=n&amp;form=6&amp;uid=W81870">W81879</A>
+<A href="http://www.ncbi.nlm.nih.gov/htbin-post/Entrez/query?db=n&amp;form=6&amp;uid=W81870">W81870</A>
 <td>ADAMTS-2, ADAM-TS4, ADMP-1 
 <TD align=center><img src=redball1.gif height=21 width=21>
 <TD>1 (92.3)</TD> 
 </TR> 
 <TR> 
-<TD><A href="http://www.informatics.jax.org/searches/marker.cgi?42893">Adamts5</A> 
+<TD><a href="<!--#include file="include/wi_url.html"-->searches/marker.cgi?42893">Adamts5</A> 
 <TD><A href="http://www.ncbi.nlm.nih.gov/htbin-post/Entrez/query?db=n&amp;form=6&amp;uid=AA288689">AA288689</A>
 <br><A href="http://www.ncbi.nlm.nih.gov/htbin-post/Entrez/query?db=n&amp;form=6&amp;uid=AF140673">AF140673</A>
 <TD>ADAMTS1, ADMP-2, ADAM-TS5 <TD  align=center><img src=redball1.gif
 height=21 width=21> <td>16 (62.0) </TR> <TR> <td><A
-href="http://www.informatics.jax.org/searches/marker.cgi?43510">Adamts6</A>
+href="http://"<!--#include file="include/wi_url.html"-->searches/marker.cgi?43510">Adamts6</A>
 <TD>&nbsp; 
 <TD>ADAM-TS6 
 <TD>&nbsp;
 <TD>UN </TR>
 <TR>
-<TD><A href="http://www.informatics.jax.org/searches/marker.cgi?43508">Adamts7</A>
+<TD><a href="<!--#include file="include/wi_url.html"-->searches/marker.cgi?43508">Adamts7</A>
 <TD>&nbsp; <td>ADAM-TS7 <td>&nbsp; 
 <TD>UN</TR> <TR> 
-<TD><A href="http://www.informatics.jax.org/searches/marker.cgi?45615">Adamts8</A>
+<TD><A href="<!--#include file="include/wi_url.html"-->searches/marker.cgi?45615">Adamts8</A>
 <TD><A href="http://www.ncbi.nlm.nih.gov/htbin-post/Entrez/query?db=n&amp;form=6&amp;uid=AA855532">AA855532</A>
 <BR><A href="http://www.ncbi.nlm.nih.gov/htbin-post/Entrez/query?db=n&amp;form=6&amp;uid=AF175282">AF175282</A>
 <td>METH2 <TD  align=center><img src=redball1.gif height=21 width=21>
@@ -78,16 +77,23 @@ disintegrin is functional, and therefore, the  name has been modified.</small>
 <hr> 
 <h4>Notes About Gene Family Annotations in MGD</h4> 
 <h5><i>Nomenclature for New Genes</i></h5>
-Contact the MGD Nomenclature Committee (<A href="mailto:nomen@informatics.jax.org">nomen@informatics.jax.org</A>)
+<small>Contact the MGD Nomenclature Committee (<A href="mailto:nomen@informatics.jax.org">nomen@informatics.jax.org</A>)
  for approved gene symbols prior to submission.  This avoids any possible conflicts
 with existing symbols and ensures that the gene symbol and name are reserved in the
-MGD private nomenclature database.  All information is kept confidential until publication.
+MGD private nomenclature database.  All information is kept confidential until 
+publication.</small>
 <h5><i>Nomenclature for Gene Families</i></h5>
-MGD works closely with HUGO and other interested scientists in the establishment of nomenclature 
+<small>MGD works closely with HUGO and other interested scientists in the establishment of nomenclature 
 for genes that are members of gene families and in representing the relationships between members of
  gene families. In general, a stem symbol is assigned (e.g., <i>Entpd</i>) and members of the family 
- are numbered (e.g., <i>Entpd1, Entpd2</i>, etc.). However, there are exceptions and many special cases.
-</BODY> </HTML> 
+ are numbered (e.g., <i>Entpd1, Entpd2</i>, etc.). However, there are exceptions
+  and many special cases.</small>
+  <br>
+  <hr>
+<!--#include file="include/footer.html"-->
+</BODY>
+ </HTML> 
+
 <!-- Warranty Disclaimer and Copyright Notice
 
  THE JACKSON LABORATORY MAKES NO REPRESENTATION ABOUT THE SUITABILITY OR 
