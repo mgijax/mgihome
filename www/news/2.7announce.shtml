@@ -7,13 +7,9 @@
 
 <BODY BGCOLOR="#ffffff">
 <hr>
-<CENTER>
-<h2><a name="heres2.7">MGI Release 2.7 Announcement</a></h2>
-<BIG>May 9, 2001</BIG>
-</CENTER>
+<h2><a name="heres2.7">MGI Release 2.7 Announcement - May 9, 2001</a></h2>
 <P>
-<b><BIG>Allele Enhancements</A></BIG></B><BR>
-<p>MGI 2.7 features enhancements and changes to the Allele query form. 
+<p>MGI 2.7 features enhancements to the Allele query form. 
 <ul>
  <li>There is new query field for Promoter Notes. You can use this field to search for when and where a transgene is expressed. The notes appear on the Allele detail page.<!--Promoter information is crucial for annotating transgenic alleles, and it was previously embedded in the nomenclature. Promoter vocabularies are complicated and variable and have been excluded from the official nomenclature but given representation in the database.-->
 
@@ -34,9 +30,12 @@
    </ul>
 <li><li>Also on the Detail page is <b>Gene Expression in this Mutant</b>; beside it, the number of assays appears with a link to a display on the GXD Expression Summary page of all expression data assayed in mice carrying the allele.
 <li>The Allele detail page no longer displays the Mode of Inheritance if it is not applicable.
-</ul>                           
+
+</ul>                          
 <p>Click here to see the new <a href="<!--#include file='include/wi_url.html'-->searches/allele_form.shtml">Alleles Query Form</a>; read all about the changes in the associated Help document, <a href="<!--#include file='include/wi_url.html'-->/userdocs/allele_help.shtml">Using the Alleles Query Form</a>.
-<!--
+
+
+<!--Probes and markers may be associated by sequence identities, hybridization, or putative relationships. We are exploring ways to make this summary more useful to you for a future release. 
  <dt><h3>Mouse/Drosophila Homologies Count</dt></h3>
  <dd>The <a href="http://prodwww/usrlocalmgi/wi/prod/www/external/ashburner/mfhomo.shtml"> Mouse/Fly Homology</a> page now displays the number of matching items at the end of the introductory material. Previously you needed to save the listing 
 to a file in  order to get the count. 
