@@ -30,21 +30,21 @@ and symbol of the first identified mutant.
    case letter. <EM>For example:</em>
    coloboma, <A HREF="<!--#include file='include/java_url.html'-->Marker?key=1026">Cm</A>;  
    Purkinje cell degeneration, 
-   <A HREF="<!--#include file='include/java_url.html'-->Marker?key=12199">pcd</A>.<P>
+   <A HREF="<!--#include file='include/java_url.html'-->Marker?key=79447">Agtpbp1</A>.<P>
 <LI>Further (allelic) mutations at the same locus, if they have the same 
    phenotypes, are given the same name with a lab code preceded by a serial 
    number (if more than one additional allele from the same lab). In the symbol,
     the lab code is added as a superscript. <EM>For example:</EM> new alleles of
      Purkinje cell degeneration identified at The Jackson Laboratory: 
-     <A HREF="<!--#include file='include/wi_url.html'-->searches/allele.cgi?682">pcd<SUP>2J</SUP></A>, 
-     <A HREF="<!--#include file='include/wi_url.html'-->searches/allele.cgi?1731">pcd<SUP>3J</SUP></A>.<P>
+     <A HREF="<!--#include file='include/wi_url.html'-->searches/allele.cgi?682">Agtpbp1<SUP>pcd-2J</SUP></A>, 
+     <A HREF="<!--#include file='include/wi_url.html'-->searches/allele.cgi?1731">Agtpbp1<SUP>pcd-3J</SUP></A>.<P>
 <LI>If a new allelic mutation of a gene known only by mutant phenotype is 
     caused by a transgenic insertion, the symbol of this mutation should use 
     the symbol of the transgene (see below) as superscript. <EM>For example:</EM>
-     a transgenic mutant allele of the Purkinje cell degeneration (pcd) gene 
+     a transgenic mutant allele of the Purkinje cell degeneration (Agtpbp1) gene 
      created by Jon W. Gordon is symbolized 
      <a href="<!--#include file='include/wi_url.html'-->searches/allele.cgi?231">
-     pcd<sup>Tg(Dhfr)1Jwg</sup></a>.
+     Agtpbp1<sup>pcd-Tg(Dhfr)1Jwg</sup></a>.
 <P>
 <LI>If the additional allele has a different phenotype, it may be given a different name, 
 but when symbolized, the new mutant symbol is superscripted to the original mutant symbol. 
@@ -87,9 +87,8 @@ Even if the identified gene is novel, we recommend that it is nevertheless given
 <H3>Wild Type Alleles and Revertants</H3>
 <p>The wild-type allele of a any gene is indicated by + as superscript to the mutant symbol.
 <EM> For example</EM>: the wild-type allele of the 
-<A HREF="<!--#include file='include/java_url.html'-->Marker?key=12179">Pax1</A> gene is Pax1<SUP>+</SUP>
- or the wild-type allele of the  
- <A HREF="<!--#include file='include/java_url.html'-->Marker?key=12199">pcd</A> gene is pcd<sup>+</sup>.
+<A HREF="<!--#include file='include/java_url.html'-->Marker?key=12179">Pax1</A> gene is Pax1<SUP>+</SUP><!-- or the wild-type allele of the  
+ <A HREF="<!--#include file='include/java_url.html'-->Marker?key=79447">Agtpbp1</A> gene is Agtpbp1<sup>+</sup>-->.
 
 <P>A revertant to wild-type of a mutant phenotype locus should be indicated by the symbol + with the 
 mutant symbol as superscript. Additional revertants are given a Lab Code and preceded by a serial 
