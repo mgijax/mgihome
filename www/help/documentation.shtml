@@ -1,37 +1,8 @@
 <HTML>
 <HEAD>
 <TITLE><!--#include file='include/mgiversion.html'--> Documentation</TITLE>
-<style>
-
-body {background:white;font-family:arial,helvetica;}
-
-
-h1 {font-family:arial,helvetica; font-size:14pt; color:black;font-weight: bold}
-h2 {font-family:arial,helvetica; font-size:12pt; color:black;font-weight: bold}
-h3 {font-family:arial,helvetica; font-size:10pt; color:black; font-weight: bold}
-h4 {font-family:arial,helvetica; font-size:10pt; color:black; font-weight:bold; font-style: italic}
-
-A:link {font-family:arial,helvetica;font-size:10pt;color:#0000FF;text-decoration:underline}
-A:visited {font-family:arial,helvetica;font-size:10pt;color:##4682B4;text-decoration:underline}
-A:active {font-family:arial,helvetica;font-size:10pt;color:#0000FF;text-decoration:underline}
-A:hover {font-family:arial,helvetica;font-size:10pt;color:red;text-decoration:none}
-
-td.header {vertical-align:middle;text-align:center;width:60%;font-size:20pt;text-transform:capitalize}
-
-table.main {width:100%}
-
-.linkHeader {color:black;  font-size:9pt; font-style: italic;}
-.textHeader {color:black;  font-size:10pt; font-style: normal;}
-
-.mainHeader {text-align:center;background:#4682B4;width:100%;text-transform:capitalize;font-size:14pt}
-
-.subHeader {text-align:left;font-size:12pt;font-style:bold}
-
-</style>
-
+<LINK REL="stylesheet" TYPE="text/css" HREF="../stylesheet/mgihome.css">
 </HEAD>
-
-
 <BODY>
 <!--#include file="include/bodyStart.html"-->
  <TABLE WIDTH="100%" BORDER=0 CELLPADDING=2 CELLSPACING=1>
@@ -53,15 +24,12 @@ Documentation
  </TR>
 </TABLE>
 
-<p class="textheader">
-
-Mouse Genome Informatics offers on-line help and staffs a help desk to answer your questions and comments.</p>
+<p>Mouse Genome Informatics offers on-line help and staffs a help desk to answer your questions and comments.</p>
 
 <h2>Contact User Support Staff</h2>
-<P class="textHeader">
+<P>
 E-mail: <A HREF="../support/tjl_inbox.shtml">mgi-help@informatics.jax.org</A><br>
 Phone: (207) 288-6445<br>
-
 </p>
        
        
@@ -75,7 +43,7 @@ Phone: (207) 288-6445<br>
 
 <DD><a href="<!--#include file='include/wi_url.html'-->userdocs/gen_search_tips.shtml">General Guidelines for Searching MGI</A><BR>
 
-<DD><A HREF="<!--#include file='include/tutorial_url.html'-->faq.shtml">Frequently Asked Questions (FAQs)</A><BR>
+<!--<DD>Frequently Asked Questions (FAQs)</A>-->
 
 <DD><a href="<!--#include file='include/wi_url.html'-->userdocs/searchtool_help.shtml">Search box on the Home page</A><BR>
 
