@@ -15,6 +15,7 @@ import sys
 if '.' not in sys.path:
 	sys.path.insert(0, '.')
 import config
+import homelib
 
 import wi_config
 import sys
@@ -44,9 +45,12 @@ htmlheader = \
 MGD: Nomenclature Request\
 </TITLE> \
 </HEAD> \
-<BODY BGCOLOR="#FFFFFF"> \
-<CENTER><IMG SRC="/mgihome/images/mgi_small_banner.gif" ALT="Mouse Genome Informatics"></A></CENTER>\
-<H1>Thank you!</H1> \
+<BODY BGCOLOR="#FFFFFF">'
+
+for line in homelib.banner():
+	htmlheader = htmlheader + line
+
+htmlheader = htmlheader + '<H1>Thank you!</H1> \
 Your Nomenclature request has been sent to the MGD Nomenclature Support Staff.'
 
 field_sort = [ \
@@ -223,7 +227,12 @@ if fields.has_key('hom_symbol_3'):
 		wi_utils.errors('mandatory_field','Species and Short Citation required for each Locus Symbol.')
 
 message = message + homsect
-print htmlheader + '<PRE>' + message + '</PRE>'
+print htmlheader + '<PRE>' + message + '</PRE><HR>'
+
+for line in homelib.footer():
+	print line
+
+print "</BODY></HTML>"
 
 mailheader = 'From: ' + submitter_addr + NL + 'To: ' + nomen_addr + NL 
 mailheader = mailheader + 'Subject: ' + subject + NL + NL
