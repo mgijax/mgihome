@@ -28,10 +28,14 @@ record for Lepr<SUP>dp- ad</A></SUP>, an allele of Lepr.</DD>
 <h3><dt>Combined Name/Symbol Search Field On MGI Query Forms</h3>
 <DD>The marker symbol and marker name fields on MGI query forms have been 
 combined in one field, <b>Symbol/Name</b>. When using this field, your 
-search (by default) spans current nomenclature, withdrawn symbols, and 
-synonyms. You have the option to limit the search to current nomenclature only, or to current and withdrawn.  <p>
+search (by default) spans current symbols or names, withdrawn symbols or
+names, and <A HREF="<!--#include file='include/wi_url.html'-->userdocs/glossary.shtml#synonym">synonyms</A>.
+You have the option to limit the search to current symbols only (no search of
+names), current symbols and names only, or to current and withdrawn symbols or
+names.  <p>
 You can enter one or more symbols or names in this field. The search will
-retrieve any records for markers having names or symbols that match the characters entered on the Symbol/Name field. <p>
+retrieve any records for markers having names or symbols that match the
+characters entered on the Symbol/Name field. <p>
 
 <DD>The combined Symbol/Name field appears in the following query forms:<p>
 <ul><A HREF="<!--#include file='include/wi_url.html'-->/searches/marker_form.shtml"> Genes, Markers and Phenotypes<br></A>
@@ -46,23 +50,26 @@ retrieve any records for markers having names or symbols that match the characte
 <A HREF="<!--#include file='include/wi_url.html'-->searches/estclone_form.shtml">cDNA Clone</A><br>
 </ul>
 <p>
-
-
 </DD>
 <!----------------->
 
 
-<h3><dt><A HREF="http://www.geneontology.org">Gene Ontology Project</A></dt></h3>
+<h3><dt><A HREF="../GO/ontology.shtml">Gene Ontology Project</A></dt></h3>
 <!-- this is the link to the gene ontology project -->
-<DD>The goal of the Gene Ontology (GO) Project</A> is to produce controlled vocabularies that can be applied to all eukaryotes as knowledge of gene and protein roles in cells is accumulating and changing.  MGI is committed to annotating gene records using GO vocabularies. To date, close to 5000 genes in MGI have been annotated. GO classification fields have been added to the following MGI query forms: 
+<DD>The goal of the <A HREF="../GO/ontology.shtml">Gene Ontology (GO)
+Project</A> is to produce controlled vocabularies that can be applied to all
+eukaryotes as knowledge of gene and protein roles in cells is accumulating and
+changing.  MGI is committed to annotating gene records using GO vocabularies.
+To date, close to 5000 genes in MGI have been annotated. GO classification
+fields have been added to the following MGI query forms: 
 
 
 <A HREF="<!--#include file='include/wi_url.html'-->searches/marker_form.shtml">Genes, Markers and Phenotypes</A>,
 <A HREF="<!--#include file='include/wi_url.html'-->searches/expression_form.shtml">Gene Expression Data</A>,
 <A HREF="<!--#include file='include/wi_url.html'-->searches/estclone_form.shtml">cDNA Clone</A> and 
 <A HREF="<!--#include file='include/wi_url.html'-->searches/linkmap_form.shtml">Linkage Maps</A>.<P>
-Visit the <A HREF="http://www.geneontology.org/">Gene Ontology Home
-Page</A> for more information.</DD>
+Visit the Home Page of the <A HREF="http://www.geneontology.org/">Gene Ontology
+	Consortium</A> for more information.</DD>
 <!----------------->
 
 <h3><dt>Search <A HREF="<!--#include file='include/wi_url.html'-->searches/probe_form.shtml">Molecular Probes and Segments</A>
