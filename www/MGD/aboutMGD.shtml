@@ -30,7 +30,7 @@ The Mouse Genome Database (MGD)
    <ul>
    <LI><A HREF="#mkr">Genes and Markers</A>
    <LI><A HREF="#aap">Alleles and Phenotypes</A>
-   <LI><A HREF="#pro">Molecular Probes and Segments</a>
+   <LI><A HREF="#pro">Molecular Probes and Clones</a>
    <LI><A HREF="#homo">Mammalian Orthology</A>
    <LI><A HREF="#map">Mapping Data</A>
      <ul>
@@ -57,7 +57,7 @@ The Mouse Genome Database (MGD)
 <h3><a name="aboutMGD"></a>What is the Mouse Genome Database (MGD)?</h3>
                                               
 <p>The Mouse Genome Database (MGD) includes information on mouse genetic 
-<a href="../other/glossary.shtml#marker">markers</A>, molecular segments
+<a href="../other/glossary.shtml#marker">markers</A>, molecular clones
 (<a href="../other/glossary.shtml#probe">probes</A>,
 <a href="../other/glossary.shtml#primer">primers</A> and
 <a href="../other/glossary.shtml#YAC">YACs</A>),
@@ -145,12 +145,12 @@ Polymorphisms Query Form enables you to search directly  for such information an
 <A HREF="<!--#include file='include/wi_url.html'-->userdocs/polymorphism_help.shtml#summary">Query Results -- Summary</a> and <A HREF="<!--#include file='include/wi_url.html'-->userdocs/polymorphism_help.shtml#detail">Query Results -- Details</A> for more information.)
 
 <h4><A NAME="homo"></A>Mammalian Orthology</h4> 
-MGD contains <a href="../other/glossary.shtml#orthology">orthology</A> information for mouse, human and 15 other mammalian species. Most of the information  for orthologies  is
+MGD contains <a href="../other/glossary.shtml#orthology">orthology</A> information for mouse, human and 15 other mammalian organisms. Most of the information  for orthologies  is
 extracted from the published scientific literature. In general,  these  papers  explicitly report orthology relationships and MGD
 reflects that published information. (<EM>See</EM> 
 <A HREF="<!--#include file='include/wi_url.html'-->userdocs/homology_criteria.shtml">MGD Mammalian Orthology Criteria</A> for the information used to establish orthology.)
 
-<P>An orthology record shows the <a href="../other/glossary.shtml#gene_symbol">symbol</A>, species, <a href="../other/glossary.shtml#chromosome">chromosome</A>,
+<P>An orthology record shows the <a href="../other/glossary.shtml#gene_symbol">symbol</A>, organism, <a href="../other/glossary.shtml#chromosome">chromosome</A>,
 <a href="../other/glossary.shtml#cM">cM</A> position,
 <a href="../other/glossary.shtml#cytogenetic_band">cytogenetic band</A> and 
 <a href="../other/glossary.shtml#accession_ID">accession ID</A>
@@ -158,7 +158,7 @@ for each gene in the set of orthologies. In addition, links to
 other mammalian databases are provided where possible. MGD orthology records may link to GDB, BovMap, PiGBASE, RATMAP, SheepBase, or ArkDB. 
 
 <P> Every orthology assertion is supported by one or more references.  The display of an orthology reference includes the J number of
-the reference, a short format citation, gene symbol and species. (<EM>See</EM> 
+the reference, a short format citation, gene symbol and organism. (<EM>See</EM> 
 <A HREF="<!--#include file='include/wi_url.html'-->userdocs/homology_help.shtml#detail">Query Results -- Details</A> on
 the content of a orthology record as it appears in the query results.)
 
