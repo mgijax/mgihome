@@ -232,7 +232,8 @@ Your registration has been forwarded to the appropriate TJL Support staff.
 
                 mail_header = 'Reply-to: mem@informatics.jax.org' + NL \
                         + 'Subject: Express Mail' + NL
-		fd = os.popen('%s -t %s' % (cfg['SENDMAIL'], RECIPIENT), 'w')
+		fd = os.popen('%s -t %s' % (config.lookup ('SENDMAIL'), \
+			RECIPIENT), 'w')
                 fd.write( mail_header + msg + NL + '.' + NL )
                 fd.close()
 

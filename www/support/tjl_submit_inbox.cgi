@@ -18,6 +18,7 @@ import sys
 if '.' not in sys.path:
 	sys.path.insert(0, '.')
 import config
+import homelib
 
 import wi_config 
 import cgi
@@ -38,8 +39,6 @@ REQUIRED_FIELDS = [ 'lastname',
 	'emailaddr'
 	]
 
-#RECIPIENT = 'mgi-help@informatics.jax.org'
-#RECIPIENT = 'mem@jax.org'
 RECIPIENT = 'arsystem@jax.org'
 
 # developer override for mailtarget 
@@ -53,7 +52,8 @@ def hd():
 	<TITLE>User Support Express Mail Results</TITLE></HEAD>
 	<BODY BGCOLOR=#FFFFFF>"""
 
-	wi_utils.small_hd()
+	for line in homelib.banner():
+		print line
 
 	print """
 	<H1>
@@ -161,12 +161,15 @@ Your message has been received and is being forwarded to our
 
 		mail_header = 'Reply-to: mem@informatics.jax.org' + NL \
 			+ 'Subject: Express Mail' + NL
-		fd = os.popen('%s -t %s' % (cfg['SENDMAIL'], RECIPIENT), 'w')
+		fd = os.popen('%s -t %s' % (config.lookup ('SENDMAIL'), \
+			RECIPIENT), 'w')
 		fd.write( mail_header + msg + NL + '.' + NL )
 		fd.close()
 		
 	print '<HR>'
-	wi_utils.ft()
+	for line in homelib.footer():
+		print line
+	return
 
 print 'Content-type: text/html'
 print

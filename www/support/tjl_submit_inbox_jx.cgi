@@ -40,8 +40,6 @@ REQUIRED_FIELDS = [ 'lastname',
 	'emailaddr'
 	]
 
-#RECIPIENT = 'mgi-help@informatics.jax.org'
-#RECIPIENT = 'mem@jax.org'
 RECIPIENT = 'arsystem@jax.org'
 
 # developer override for mailtarget 
@@ -167,7 +165,8 @@ location.href = "http://jaxmice.jax.org/html/techsupport/tswebform_resp.shtml"
 
 		mail_header = 'Reply-to: micetech@jax.org' + NL \
 			+ 'Subject: Express Mail' + NL
-		fd = os.popen('%s -t %s' % (cfg['SENDMAIL'], RECIPIENT), 'w')
+		fd = os.popen('%s -t %s' % (config.lookup ('SENDMAIL'), \
+			RECIPIENT), 'w')
 		fd.write( mail_header + msg + NL + '.' + NL )
 		fd.close()
 		
