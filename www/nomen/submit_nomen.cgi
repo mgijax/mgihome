@@ -17,16 +17,23 @@ if '.' not in sys.path:
 import config
 import homelib
 
-import wi_config
 import sys
 import string
 import os 
 import mgi_utils
-import wi_utils
+import mgi_html
+import errorlib
 
 SP = ' '
 HT = '\t'
 NL = '\n'
+
+def errorStop (message):
+	print 'Content-type: text/html\n'
+	errorlib.show_error (message, 1, 'MGI Nomen Form',
+		string.join (homelib.banner(), '\n '),
+		string.join (homelib.footer(), '\n '))
+	sys.exit(0)
 
 nomen_addr = 'nomen@informatics.jax.org'  # MGD Nomen Coordinator Email Account
 
@@ -77,32 +84,32 @@ field_trans = { \
 	'ph' : 'Phone:\t\t\t', \
 	'fx' : 'FAX:\t\t\t'}
 
-fields = mgi_utils.get_fields()
+fields = mgi_html.get_fields()
 types = fields[2]
 operators = fields[1]
 fields = fields[0]
-wi_utils.debug(fields)
 
 #
 # Format Contact Information
 #
 
 message = 'Submission Date:' + HT + mgi_utils.date() + 2*NL
+missing_fields = []
 
 if (fields.has_key('lastname')):
 	username = fields['lastname']
 else:
-	wi_utils.errors('mandatory_field','Last Name')
+	missing_fields.append('Last Name')
  
 if (fields.has_key('firstname')):
 	username = username + ',' + SP + fields['firstname']
 else:
-	wi_utils.errors('mandatory_field','First Name & Middle Name(s)')
+	missing_fields.append('First Name & Middle Name(s)')
 
 if (fields.has_key('emailaddr')):
 	submitter_addr = fields['emailaddr']
 else:
-	wi_utils.errors('mandatory_field','E-mail address')
+	missing_fields.append('E-mail address')
 
 message = message + 'Submitter Name:\t\t' + username + NL
 
@@ -143,7 +150,7 @@ for fieldname in [ 'requestMouse', 'requestHuman', 'requestRat' ]:
 		species.append (fields[fieldname])
 if species:
 	if (len (species) == 1) and (species[0] == 'human'):
-		wi_utils.errors ('human_only', '''You requested a symbol only
+		errorStop ('''You requested a symbol only
 			in Human.  We do not process Human-only symbols.  If
 			you wish to request a Human-only symbol, please go to
 			the <A
@@ -206,7 +213,7 @@ if fields.has_key('hom_symbol_1'):
 			  'Species:' + HT + fields['hom_species_1'] + NL + \
 			  'Citation' + HT + fields['hom_citation_1']
 	else:
-		wi_utils.errors('mandatory_field','Species and Short Citation required for each Locus Symbol.')
+		missing_fields.append('Species and Short Citation required for each Locus Symbol.')
 
 if fields.has_key('hom_symbol_2'):
 	if fields.has_key('hom_species_2') and fields.has_key('hom_citation_2'):
@@ -215,7 +222,7 @@ if fields.has_key('hom_symbol_2'):
 			  'Species:' + HT + fields['hom_species_2'] + NL + \
 			  'Citation' + HT + fields['hom_citation_2']
 	else:
-		wi_utils.errors('mandatory_field','Species and Short Citation required for each Locus Symbol.')
+		missing_fields.append('Species and Short Citation required for each Locus Symbol.')
 
 if fields.has_key('hom_symbol_3'):
 	if fields.has_key('hom_species_3') and fields.has_key('hom_citation_3'):
@@ -224,7 +231,12 @@ if fields.has_key('hom_symbol_3'):
 			  'Species:' + HT + fields['hom_species_3'] + NL + \
 			  'Citation' + HT + fields['hom_citation_3']
 	else:
-		wi_utils.errors('mandatory_field','Species and Short Citation required for each Locus Symbol.')
+		missing_fields.append('Species and Short Citation required for each Locus Symbol.')
+
+if missing_fields:
+	errorStop ('''Mandatory field(s) missing...  Please enter
+		field(s) and try again.<BR>Field(s): %s''' % \
+		string.join (missing_fields, ', '))
 
 message = message + homsect
 print htmlheader + '<PRE>' + message + '</PRE><HR>'

@@ -16,12 +16,9 @@ import types
 import config
 import homelib
 
-import wi_config
 import cgi
 import os
 import string
-import wi_utils
-import mgi_utils
 import errorlib
 
 NL = '\n'
