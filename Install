@@ -11,16 +11,24 @@ PYTHON_REL=$TOP/bin/python
 CONFIG_REL=$TOP/lib/python/config.pyc
 
 # includeLinker function - create a ../include symbolic link in the current
-# directory and in each subdirectory
+# directory and in each subdirectory (and now a ../stylesheet symbolic link
+# as well, for MGI 3.1)
 
 includeLinker() {
 	# do this directory
 	if [ -h include ]; then
 		rm include
 	fi
+	if [ -h stylesheet ]; then
+		rm stylesheet
+	fi
 	if [ ! -d include ]; then
-		echo "Linking to include/ in `pwd`"
+		echo "Linking to include/    in `pwd`"
 		ln -s ../include include
+	fi
+	if [ ! -d stylesheet ]; then
+		echo "Linking to stylesheet/ in `pwd`"
+		ln -s ../stylesheet stylesheet
 	fi
 
 	# then do all subdirectories recursively
@@ -28,11 +36,13 @@ includeLinker() {
 	do
 		if [ -d $name ]; then
 			if [ $name != include ]; then
+			    if [ $name != stylesheet ]; then
 				if [ $name != CVS ]; then
 					cd $name
 					(includeLinker)
 					cd ..
 				fi
+			    fi
 			fi
 		fi
 	done
@@ -148,7 +158,8 @@ cd $TOP
 chmod -R 750 www
 chgrp -R www www
 
-# add links to the include file for each directory under www
+# add links to the include file directory and the stylesheet directory
+# for each directory under www
 
 cd www
 includeLinker
