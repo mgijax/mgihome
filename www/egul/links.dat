@@ -12,7 +12,7 @@
 # comment "START OF USER SECTION".
 #
 ####################################################
-
+gdfgdfsgdfsg
 #
 # NOTE: The variable MGIHOME is defined externally.
 # It should NOT be defined in this file.
@@ -85,43 +85,43 @@ url = ${SPDIR}/J:180.pdf
 #		url = ${GFPURL}
 ####################################################
 
-#------------------- Disintegrin-like and Metalloprotease ....
+#-------------------A Disintegrin-like and Metalloprotease ....
 #
 # set the URL for this family
 GFPURL = ${GFPDIR}/adamt.shtml
 
 [
-id = MGI:109249
+id = MGI:109249   #Adamts1
 type = GFP
 url = ${GFPURL}
 ]
 [
-id = MGI:1347356
+id = MGI:1347356   #Adamts2
 type = GFP
 url = ${GFPURL}
 ]
 [
-id = MGI:1339949
+id = MGI:1339949   #Adamts4
 type = GFP
 url = ${GFPURL}
 ]
 [
-id = MGI:1346321
+id = MGI:1346321   #Adamts5
 type = GFP
 url = ${GFPURL}
 ]
 [
-id = MGI:1347348
+id = MGI:1347348   #Adamts6
 type = GFP
 url = ${GFPURL}
 ]
 [
-id = MGI:1347346
+* id = MGI:1347346  #Adamts7
 type = GFP
 url = ${GFPURL}
 ]
 [
-id = MGI:1353468
+id = MGI:1353468   #Adamts8
 type = GFP
 url = ${GFPURL}
 ]
@@ -251,11 +251,12 @@ id = MGI:106008      # Anxa5
 type = GFP
 url = ${GFPURL}
 ]
-[
-id = MGI:895066      # Anxa5-rs
-type = GFP
-url = ${GFPURL}
-]
+#[ 
+# per Louise, please remove this one:
+# id = MGI:895066       Anxa5-rs
+# type = GFP
+#url = ${GFPURL}
+#]
 [
 id = MGI:88255       # Anxa6
 type = GFP
@@ -266,11 +267,12 @@ id = MGI:88031       # Anxa7
 type = GFP
 url = ${GFPURL}
 ]
-[
-id = MGI:88032       # Anxa7-ps1
-type = GFP
-url = ${GFPURL}
-]
+#[
+# per Louise, remove this one too:
+# id = MGI:88032       Anxa7-ps1
+# type = GFP
+# url = ${GFPURL}
+#]
 [
 id = MGI:1201374     # Anxa8
 type = GFP
@@ -361,6 +363,12 @@ type = GFP
 url = ${GFPURL}
 ]
 
+[
+id = MGI:96990     # Mip
+type = GFP
+url = ${GFPURL}
+]
+
 #------------------- Calcium Channel, Voltage-dependent, Gamma Subunit 
 
 #
@@ -426,6 +434,11 @@ url = ${GFPURL}
 ]
 [
 id = MGI:107437      # Capn3
+type = GFP
+url = ${GFPURL}
+]
+[
+id = MGI:88266       # Capn4
 type = GFP
 url = ${GFPURL}
 ]
@@ -826,6 +839,23 @@ type = GFP
 url = ${GFPURL}
 ]
 
+#------------------- Dishevelled Associated Activator of Morphogenesis  
+
+#
+# set the URL for this family
+GFPURL = ${GFPDIR}/daam.shtml
+
+[
+id = MGI:1914596      # Daam1
+type = GFP
+url = ${GFPURL}
+]
+[
+id = MGI:1923691      # Daam2
+type = GFP
+url = ${GFPURL}
+]
+
 #------------------- E2f Transcription Factor 
 
 #
@@ -1146,6 +1176,27 @@ url = ${GFPURL}
 ]
 [
 id = MGI:1346322     # Gpc6
+type = GFP
+url = ${GFPURL}
+]
+#------------- Golgi Associated, Gamma Adaptin Ear Containing, ARF Binding Protein 
+
+#
+# set the URL for this family
+GFPURL = ${GFPDIR}/gga.shtml
+
+[
+id = MGI:2146207     # Gga1
+type = GFP
+url = ${GFPURL}
+]
+[
+id = MGI:1921355     # Gga2
+type = GFP
+url = ${GFPURL}
+]
+[
+id = MGI:2384159     # Gga3
 type = GFP
 url = ${GFPURL}
 ]
@@ -1586,7 +1637,7 @@ type = GFP
 url = ${GFPURL}
 ]
 [
-id = MGI:104662	# Pml
+id = MGI:104662		# Pml
 type = GFP
 url = ${GFPURL}
 ]
