@@ -6,7 +6,7 @@
 <TABLE WIDTH="100%" BORDER=0 CELLPADDING=0 CELLSPACING=0>
   <TR><TD WIDTH="100%">
     <TABLE WIDTH="100%" BORDER=0 CELLPADDING=0 CELLSPACING=0>
-     <TR><TD WIDTH="20%" VALIGN="center" ALIGN="left"><A HREF="<!--#include file='include/wi_url.html'-->"><IMG SRC="../images/mgi_logo_small.jpg" border=0 ALT="MGI"></A></TD>
+     <TR><TD WIDTH="20%" VALIGN="center" ALIGN="left"><A HREF="<!--#include file='include/wi_url.html'-->"><!--#include file="include/mgi_logo_small.html"--></A></TD>
       <TD WIDTH="60%" ALIGN="center" VALIGN="center" BGCOLOR="#ffffff">
        <FONT COLOR="#000000" SIZE=5 FACE="Arial,Helvetica">
 Collaborators and Acknowledgements
@@ -24,14 +24,14 @@ Collaborators and Acknowledgements
 <A HREF="http://www.ensembl.org/">Ensembl</A></B><br>
 <small><p>We collaborate with the Ensembl Genome Database Project to provide provides links
 between Ensembl mouse gene models and MGI markers. Ensembl is a joint project between the
-<a href="http://www.ebi.ac.uk/">European Bioinformatics Institute/European Molecular Biology Laboratory (EMBL-EBI)</a> and the <a href="http://www.wellcome.ac.uk/">Wellcome Trust</a> <a href="http://www.sanger.ac.uk/">Sanger Institute</a>. Independently, we establish associations to LocusLink RefSeq and SWISS-PROT identifiers for gene records. Whenever the MGI and Ensembl gene records unambiguously share RefSeq and/or SWISS-PROT identifiers, we establish an association 
+<a href="http://www.ebi.ac.uk/">European Bioinformatics Institute/European Molecular Biology Laboratory (EMBL-EBI)</a> and the <a href="http://www.wellcome.ac.uk/">Wellcome Trust</a> <a href="http://www.sanger.ac.uk/">Sanger Institute</a>. Independently, we establish associations to LocusLink RefSeq and SWISS-PROT identifiers for gene records. Whenever the MGI and Ensembl gene records unambiguously share RefSeq and/or SWISS-PROT identifiers, we establish an association
 between these records. We provide links from our marker detail page to the <a href="http://www.ensembl.org/Mus_musculus/">Mouse GeneView</a> of the Ensembl Genome Browser.
 We also obtain chromosome map locations for MGI genes associated with Ensembl gene models. </small>
 
 <hr><p>
 <a href="http://www.cbil.upenn.edu/">CBIL/DoTS</a><br>
 <small><p>
-We provide links from MGI markers to computationally derived transcript assemblies from DoTS, the Database Of Transcribed Sequences, developed at the Computational Biology and Informatics Laboratory</a> (CBIL) at the University of Pennsylvania. (See the <a href="http://www.allgenes.org">AllGenes</a> web site for more information about DoTS). Associations between MGI markers and assemblies are based on shared GenBank sequence accession identifiers. Only associations between MGI genes and TCs/DTs that are supported by non-conflicting evidence are accessible for these resources.The links are be updated after every major change in MGI databases. 
+We provide links from MGI markers to computationally derived transcript assemblies from DoTS, the Database Of Transcribed Sequences, developed at the Computational Biology and Informatics Laboratory</a> (CBIL) at the University of Pennsylvania. (See the <a href="http://www.allgenes.org">AllGenes</a> web site for more information about DoTS). Associations between MGI markers and assemblies are based on shared GenBank sequence accession identifiers. Only associations between MGI genes and TCs/DTs that are supported by non-conflicting evidence are accessible for these resources.The links are be updated after every major change in MGI databases.
 </small></p>
 
 <hr>
@@ -45,18 +45,18 @@ We provide links from MGI markers to computationally derived transcript assembli
 <SMALL><p>We are part of the Gene Ontology Consortium that also currently includes <A HREF="http://flybase.bio.indiana.edu/">Flybase</A> and <A HREF="http://genome-www.stanford.edu/Saccharomyces/">SGD</A> (Saccharomyces Genome Database).  We are developing extensive, structured vocabularies for molecular function, biological process, cellular component and annotating genes/gene products within each of our species' databases using these vocabularies. These ontologies and annotations will be accessible from our species' database web sites and from a jointly developed web site.</SMALL></p>
 <HR>
 
-<P><A HREF="http://image.llnl.gov/">IMAGE Consortium</A></B> (Integrated Molecular Analysis of Genomes and their Expression) and 
+<P><A HREF="http://image.llnl.gov/">IMAGE Consortium</A></B> (Integrated Molecular Analysis of Genomes and their Expression) and
 <A HREF="http://genome.wustl.edu/projects/mouse/">WashU</A></B> (Washington University)
 <P><SMALL>We work with the IMAGE consortium to pre-assign MGI accession numbers to IMAGE clones, which are, in turn, sequenced by Washington University.  The IMAGE and MGI accession identifiers travel in pairs and are submitted to <A HREF="http://www.ncbi.nlm.nih.gov/dbEST/index.html">dbEST</A> (database of Expressed Sequence Tags) directly with the sequencing data.  Thus the connection between an EST, the clone it was derived from, and the MGI accession identifier is generated.</SMALL></p>
 <HR>
-<A HREF="../nomen/inc.shtml">International Committee on Standardized Genetic Nomenclature for Mice</A>,  
+<A HREF="../nomen/inc.shtml">International Committee on Standardized Genetic Nomenclature for Mice</A>,
 <A HREF="http://www.gene.ucl.ac.uk/nomenclature/">HUGO Human Gene Nomenclature Committee</A>, </B>and <A HREF="http://rgnc.gen.gu.se/">Rat Genome and Nomenclature Committee</A></B>. <br>
 <SMALL><p>We work closely with the human and rat international nomenclature groups to assign gene symbols wherever feasible, to evaluate gene family nomenclature, and to maintain consistent use of nomenclature for human, mouse and rat species.</SMALL></p>
 <HR>
 <P><A HREF="http://www.ncbi.nlm.nih.gov/LocusLink/">LocusLink at NCBI</A></B>  (National Center for Biotechnology Information)
 <P><SMALL>Working with LocusLink, we provide official nomenclature for mouse genes, our curated links between genes and sequence identifiers in <A HREF="http://www.ncbi.nlm.nih.gov/Genbank/GenbankOverview.html">GenBank</a>, chromosomal, cytogenetic and centimorgan map positions, and MGI accession numbers.  LocusLink uses these curated data to develop reference sequences for mouse and notify us of new GenBank mouse sequences submitted.</SMALL></p>
 <HR>
-<P><A HREF="http://genex.hgu.mrc.ac.uk/">Mouse Atlas and 3D Graphical Gene Expression Database</A></B> 
+<P><A HREF="http://genex.hgu.mrc.ac.uk/">Mouse Atlas and 3D Graphical Gene Expression Database</A></B>
 <P><SMALL>We collaborate with the Edinburgh Mouse Atlas and Gene Expression Database project to develop and extend an anatomical dictionary of mouse development and to build the Mouse Gene Expression Information Resource that will combine the use of controlled vocabularies and image-based methods for the representation and analysis of expression patterns. The standard anatomical terms are, or will be, used throughout our database wherever anatomical data are found (e.g., expression data, clone library information, phenotypic descriptions).</SMALL></p>
 <HR>
 <P><A HREF="http://www.informatics.jax.org/ccr/searches/index.cgi">Mouse Chromosome Committees</A></B>
@@ -78,19 +78,19 @@ We provide links from MGI markers to computationally derived transcript assembli
 <HR>
 <P><a href="http://locus.jouy.inra.fr/cgi-bin/bovmap/intro2.pl">BovMap</a> (Institut National de Recherche Agronomique, Laboratoire de genetique biochimique - Jouy-en-Josas)</p>
 <p><small>The BovMap database offers to the scientific community working on the bovine genome a useful and practical
-tool to follow the rapid progress of the mapping effort. </small></P> 
+tool to follow the rapid progress of the mapping effort. </small></P>
 <HR>
 <P><A HREF="http://www.ncbi.nlm.nih.gov/dbEST/index.html">dbEST</A> (NCBI - Database for Expressed Sequences Tags)</P>
 <p><small>dbEST is a division of <a HREF="http://www.ncbi.nlm.nih.gov/Genbank/GenbankOverview.html">GenBank</a> containing sequence data and other information on "single-pass" cDNA sequences, or Expressed Sequence Tags, from a number of organisms.</small></P>
 <HR>
 <P><A HREF="http://www.ddbj.nig.ac.jp/">DDBJ</a> (DNA Data Bank of Japan (DDBJ), National Institute of Genetics, Mishima, Japan)</p>
-<p><small>DDBJ is the only DNA data bank based in Japan.  Sequence information is received from Japanese 
+<p><small>DDBJ is the only DNA data bank based in Japan.  Sequence information is received from Japanese
 researchers, researchers from other countries, and from other sequence databases, including EMBL and <a HREF="http://www.ncbi.nlm.nih.gov/Genbank/GenbankOverview.html">GenBank</a>.</small></P>
 <HR>
 <P><A HREF="http://www.ebi.ac.uk/Databases/">EMBL-EBI</A> (Databases at the European Bioinformatics Institute Cambridge, United Kingdom)</p>
 <p><small>The European Bioinformatics Institute (EBI) of the European Molecular Biology Laboratory (EMBL) maintains a number of databases including the EMBL Nucleotide Sequence Database and the SWISS-PROT Protein Sequence Database.</small></p>
 <HR>
-<p><A HREF="http://www.expasy.org/enzyme/">ENZYME</A> (Enzyme nomenclature database, maintained at the 
+<p><A HREF="http://www.expasy.org/enzyme/">ENZYME</A> (Enzyme nomenclature database, maintained at the
 <A HREF="http://us.expasy.org/">ExPASy molecular biology server</A> of the Geneva University Hospital and the University of Geneva, Switzerland)</p>
 <p> <small>ENZYME is a repository of information relative to the nomenclature of enzymes.  It is primarily based on the recommendations of the Nomenclature Committee of the International Union of Biochemistry and Molecular Biology (IUBMB) and it describes each type of characterized enzyme for which an EC (Enzyme Commission) number has been provided. </small></p>
 <HR>
@@ -133,17 +133,17 @@ Genome Projects.</small></p>
 <!--
 Warranty Disclaimer and Copyright Notice
 
- THE JACKSON LABORATORY MAKES NO REPRESENTATION ABOUT THE SUITABILITY OR 
- ACCURACY OF THIS SOFTWARE OR DATA FOR ANY PURPOSE, AND MAKES NO WARRANTIES, 
- EITHER EXPRESS OR IMPLIED, INCLUDING MERCHANTABILITY AND FITNESS FOR A 
- PARTICULAR PURPOSE OR THAT THE USE OF THIS SOFTWARE OR DATA WILL NOT 
- INFRINGE ANY THIRD PARTY PATENTS, COPYRIGHTS, TRADEMARKS, OR OTHER RIGHTS.  
+ THE JACKSON LABORATORY MAKES NO REPRESENTATION ABOUT THE SUITABILITY OR
+ ACCURACY OF THIS SOFTWARE OR DATA FOR ANY PURPOSE, AND MAKES NO WARRANTIES,
+ EITHER EXPRESS OR IMPLIED, INCLUDING MERCHANTABILITY AND FITNESS FOR A
+ PARTICULAR PURPOSE OR THAT THE USE OF THIS SOFTWARE OR DATA WILL NOT
+ INFRINGE ANY THIRD PARTY PATENTS, COPYRIGHTS, TRADEMARKS, OR OTHER RIGHTS.
  THE SOFTWARE AND DATA ARE PROVIDED "AS IS".
 
- This software and data are provided to enhance knowledge and encourage 
- progress in the scientific community and are to be used only for research 
- and educational purposes.  Any reproduction or use for commercial purpose 
- is prohibited without the prior express written permission of the Jackson 
+ This software and data are provided to enhance knowledge and encourage
+ progress in the scientific community and are to be used only for research
+ and educational purposes.  Any reproduction or use for commercial purpose
+ is prohibited without the prior express written permission of the Jackson
  Laboratory.
 
 Copyright © 1996, 1999, 2002 by The Jackson Laboratory

@@ -140,6 +140,7 @@ if [ ! -d include ]; then
 	mkdir include
 fi
 cd $TOP/admin
+gen_rcd
 gen_includes
 
 cd $TOP/www/include

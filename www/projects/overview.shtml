@@ -6,7 +6,7 @@
 <TABLE WIDTH="100%" BORDER=0 CELLPADDING=0 CELLSPACING=0>
  <TR><TD WIDTH="100%">
   <TABLE WIDTH="100%" BORDER=0 CELLPADDING=0 CELLSPACING=0>
-   <TR><TD WIDTH="20%" VALIGN="center" ALIGN="left"><A HREF="<!--#include file='include/wi_url.html'-->" border=0><IMG SRC="../images/mgi_logo_small.jpg" border=0 ALT="MGI"></A></TD>
+   <TR><TD WIDTH="20%" VALIGN="center" ALIGN="left"><A HREF="<!--#include file='include/wi_url.html'-->" border=0><!--#include file="include/mgi_logo.html"--></A></TD>
 <TD WIDTH="60%" ALIGN="center" VALIGN="center" BGCOLOR="#ffffff"><FONT COLOR="#000000" SIZE=5 FACE="Arial,Helvetica">Mouse Genome Database Overview</TD>
 <TD WIDTH="20%" VALIGN="center" ALIGN="center" BGCOLOR="#ffffff">&nbsp;</TD></TR>
 <TR BGCOLOR="blue"><TD COLSPAN=3><FONT face="Arial,Helvetica" color="#ffffff"><B>&nbsp;Mouse Genome Informatics</B></TD></TR>
@@ -41,7 +41,7 @@ The goal of the <A HREF="http://tumor.informatics.jax.org/FMPro?-db=TumorInstanc
 <p>MGD includes information on mouse genetic markers, molecular clones (probes, primers and
 YACs), phenotypes, sequences, comparative mapping data, graphical displays of linkage,
 cytogenetic and physical maps, experimental mapping data, as well as
- strain distribution patterns for recombinant inbred strains (RIs) and cross haplotypes. 
+ strain distribution patterns for recombinant inbred strains (RIs) and cross haplotypes.
 Sources for information in the database include the scientific  literature,  DNA  mapping  panel data produced by various researchers, the MIT Whitehead Institute (MIT genetic  and physical mapping data), WashU, and the  IMAGE  consortium. Since it first became available on the web, MGD has continued to  evolve, expanding its data coverage, improving data handling, and providing new data manipulation and display tools.
 
 <P><A NAME="mlc"></A>Phenotype records in  MGD have their origin in the
@@ -80,7 +80,7 @@ MGD contains information on mouse genes, DNA segments,
 cytogenetic markers and QTLs. Each record may include the marker symbol, name,other names or symbols and synonyms, nomenclature history, alleles, STSs,
 chromosomal assignment, centimorgan location,
 cytogenetic band, EC number (for enzymes), phenotypic classifications,
-Gene Ontology (GO) terms, MGI  accession IDs and supporting references. 
+Gene Ontology (GO) terms, MGI  accession IDs and supporting references.
 (See
 <A HREF="<!--#include file='include/wi_url.html'-->userdocs/marker_summary.shtml">Using the Marker Summary Report</a> and <A HREF="<!--#include file='include/wi_url.html'-->userdocs/marker_detail.shtml">Using the Marker Detail Report</a> for more information about the content of the display of a marker record as it appears in the query results.)
 
@@ -120,7 +120,7 @@ the content of an orthology record as it appears in the query results.)
 
 <P>Orthology information is presented in three other formats: Oxford Grid, comparative map and Orthology Map View. An Oxford Grid display presents an overview of orthology between two organisms. Currently, this kind of comparison  is supported for the following organisms:  Mouse, Human, Cat, Cattle, Rat, Pig, Sheep.
 
-<P>The comparative map display relies on the Linkage Map application to build a graphic display of a map of a mouse chromosome (or chromosomal region) which includes orthologies from the comparison organisms. See, for example, the comparative map for a 2 cM region around the mouse gene 
+<P>The comparative map display relies on the Linkage Map application to build a graphic display of a map of a mouse chromosome (or chromosomal region) which includes orthologies from the comparison organisms. See, for example, the comparative map for a 2 cM region around the mouse gene
 <A HREF="<!--#include file='include/wi_url.html'-->searches/accession_report.cgi?id=MGI:87895">Chrng</A> showing human orthology.
 
 <P> The Orthology Map View displays the mouse genome as the consensus genetic map, with either human or rat orthologs labeled by chromosome of origin and displayed next to the corresponding  segment of the mouse genome.  The Orthology Map View is accessible
@@ -128,7 +128,7 @@ from the <a href="<!--#include file='include/wi_url.html'-->menus/homology_menu.
 
 <h4><A NAME="sequence">Sequence Data</h4>
 
-<P>Vast amounts of sequence data are integrated with the biological information in MGD. Mouse sequences from GenBank, RefSeq, Swiss-Prot, DoTS, and the TIGR and NIA mouse gene indices enable powerful queries from the 
+<P>Vast amounts of sequence data are integrated with the biological information in MGD. Mouse sequences from GenBank, RefSeq, Swiss-Prot, DoTS, and the TIGR and NIA mouse gene indices enable powerful queries from the
 <a href="<!--#include file='include/wi_url.html'-->/searches/sequence_form.shtml">Mouse Sequence Query Form</a>. MGI contains sequence attributes, such as length and provider, data about the clones the sequences were derived from, and the genes the sequences have been associated to. Because of our curated associations between mouse markers and sequences, users can search using information such as nomenclature, map position, function (GO annotation, InterPro domain), expression (tissue and developmental stage), and phenotypes of mutant alleles. Source information about the clones that the sequences are derived from, such as strain, tissue, or library, is carefully translated into controlled vocabularies.  This adds enormous power to sequence queries, since authors often use multiple terms to specify a strain or tissue.  </P>
 
 <P>Vast amounts of sequence data are integrated with the biological information in MGD. All mouse sequences from GenBank, RefSeq, Swiss-Prot, DoTS, and the TIGR and NIA mouse gene indices enable powerful queries from the <a href="<!--#include file='include/wi_url.html'-->searches/sequence_form.shtml">Mouse Sequence Query Form</a>. Users can query by attributes, such as sequence length and provider, and also by information MGI has about the clones the sequences were derived from,

@@ -5,6 +5,7 @@ import os
 import config
 import string
 import db
+import webshare_lib
 
 URL = config.lookup ('MGIHOME_URL')
 WI_URL = config.lookup ('WI_URL')
@@ -28,7 +29,7 @@ FOOTER = [
 	  '</FONT></TD>',
         '<TD WIDTH="1%" ALIGN=center><FONT SIZE=2>&nbsp;</FONT></TD>',
         '<TD WIDTH="49%" ALIGN=right>',
-	'<A HREF="http://www.jax.org/" border=0><IMG BORDER=0 SRC="%simages/shared/jax_logo.gif" ALT="The Jackson Laboratory" HEIGHT=48 WIDTH=130></A>' % WI_URL,
+	'<A HREF="http://www.jax.org/" border=0>%s</A>' % webshare_lib.webshareLookup('jax_logo'),
 	'</TD></TR></TABLE>',
 ]
 
@@ -49,8 +50,7 @@ def banner ():
 	# Throws: None
 
 	return [ '<CENTER>',
-		 '<IMG SRC="%simages/mgi_small_banner.gif"' % URL,
-	    	 'WIDTH=557   HEIGHT=64   ALT="Mouse Genome Informatics">',
+		 webshare_lib.webshareLookup('mgi_logo_small'),
 		 '</CENTER>' ]
 
 def sql (queries, parsers = 'auto'):
