@@ -32,20 +32,19 @@
 <INPUT name=use type=radio value=Daily>Daily<BR>
 Comments:
 <INPUT name=useComments size=55>
-</FORM></P>
 
-<P>
-<FORM><B>2. MGI has changed its look recently. Is it:</B><BR>
+
+<P><B>2. MGI has changed its look recently. Is it:</B><BR>
 <INPUT name=look type=radio value=Better>Better 
 <INPUT name=look type=radio value=Worse>Worse 
 <INPUT name=look type=radio value=Same>Not really different<BR>
 
 Comments:<TEXTAREA cols=55 name=lookComments rows=6></TEXTAREA>
-</FORM></P>
+
 
 
 <P>
-<FORM><B>3. What types of information do you search for?</B><BR>
+<B>3. What types of information do you search for?</B><BR>
 <INPUT name=info  type=checkbox value=Genes>Genes<BR>
 <INPUT name=info  type=checkbox value=Phenotypes>Phenotypes<BR>
 <INPUT name=info  type=checkbox value=Mapping>Maps and Mapping Data<BR>
