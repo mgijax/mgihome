@@ -1,0 +1,110 @@
+<HTML>
+<HEAD>
+<TITLE><!--#include file="include/title.html"--> - Nomenclature Submission Form</TITLE>
+</HEAD>
+<BODY BGCOLOR=#FFFFFF>
+<!--#include file="include/banner.html"-->
+<H2>Submit a Proposed Locus Symbol</H2>
+Please fill in all the appropriate information.  If your contact details are already 
+in MGD you only need to enter your name and e-mail address.  Press the submit button 
+at the bottom of the form to send the information to the MGD Nomenclature Committee.
+<P>
+<FORM METHOD="POST" ACTION="submit_nomen.cgi">
+<H2>Contact Details:</H2>
+<PRE>
+Last name:                    <INPUT TYPE="text" NAME="lastname" SIZE=30>(required)
+First name & middle name(s):  <INPUT TYPE="text" NAME="firstname" SIZE=30>(required)
+E-mail address:               <INPUT TYPE="text" NAME="emailaddr" SIZE=30>(required)
+<P>
+Institute/Organization:       <INPUT TYPE="text" NAME="tute" SIZE=30>
+Address:                      <INPUT TYPE="text" NAME="add1" SIZE=30>
+Address:                      <INPUT TYPE="text" NAME="add2" SIZE=30>
+City:                         <INPUT TYPE="text" NAME="cty" SIZE=30>
+State/Province:               <INPUT TYPE="text" NAME="sta" SIZE=30>
+Postal Code:                  <INPUT TYPE="text" NAME="po" SIZE=30>
+Country:                      <INPUT TYPE="text" NAME="cn" SIZE=30>
+Telephone Number:             <INPUT TYPE="text" NAME="ph" SIZE=30>
+Fax Number:                   <INPUT TYPE="text" NAME="fx" SIZE=30>
+</PRE>
+<HR>
+<H2>Locus Details:</H2> 
+<B>Please refer to the <A HREF="checklist.shtml">Nomenclature Checklist</A> before completing this section.</B>
+<BR><BR>
+Proposed Locus Symbol:  <INPUT TYPE="text" NAME="symbol" SIZE=25>
+<BR>
+Proposed Locus Name:    <INPUT TYPE="text" NAME="name" SIZE=50>
+<BR>
+Chromosome Location:    <INPUT TYPE="text" NAME="chromosome" SIZE=10>
+<BR><BR>
+<INPUT TYPE="radio" NAME="pub_status" VALUE="Published" CHECKED> Published  <INPUT TYPE="radio" NAME="pub_status" VALUE="InPress"> In Press  <INPUT TYPE="radio" NAME="pub_status" VALUE="Submitted"> Submitted  <INPUT TYPE="radio" NAME="pub_status" VALUE="InPreparation"> In Preparation  <INPUT TYPE="radio" NAME="pub_status" VALUE="Unpublished"> Unpublished
+<BR><BR>
+Status Request: <INPUT TYPE="radio" NAME="symbol_status" VALUE="Reserved" CHECKED> Reserved and Private  <INPUT TYPE="radio" NAME="symbol_status" VALUE="Release"> Release to public MGD upon approval
+<BR><BR>
+Requesting symbol in: (check all that apply)
+<INPUT TYPE="checkbox" NAME="requestMouse" VALUE="mouse" CHECKED> Mouse
+<INPUT TYPE="checkbox" NAME="requestHuman" VALUE="human"> Human
+<INPUT TYPE="checkbox" NAME="requestRat" VALUE="rat"> Rat
+<BLOCKQUOTE><EM>If you wish to request a symbol in Human only, then go to the <A HREF="http://www.gene.ucl.ac.uk/nomenclature/">Human Nomenclature Page</A></EM></BLOCKQUOTE>
+Sources checked:
+<INPUT TYPE="checkbox" NAME="source1" VALUE="MGD" > MGD (<A HREF="<!--#include file="include/wi_url.html"-->">USA</A> , <A HREF="http://mgd.hgmp.mrc.ac.uk/">UK</A>)
+<INPUT TYPE="checkbox" NAME="source2" VALUE="HUGO/Human"> HUGO/Human (<A HREF="http://www.gene.ucl.ac.uk/cgi-bin/nomenclature/searchgenes.pl">UK</A>)
+<INPUT TYPE="checkbox" NAME="source3" VALUE="RatMap"> RatMap (<A HREF="http://ratmap.gen.gu.se/">Sweden</A>)
+<P>
+Other names used in the literature (aliases):<BR>
+<TEXTAREA NAME="otherName" ROWS=2 COLS=55></TEXTAREA><BR>
+If this locus is part of a gene family, then please specify the family and any other known members:<BR>
+<TEXTAREA NAME="family" ROWS=2 COLS=55></TEXTAREA><BR>
+Please provide any additional information,  such as probe used, Genbank ID, functional assay
+performed, etc. that may help us with the symbol approval process.<BR>
+<TEXTAREA NAME="notes" ROWS=2 COLS=55></TEXTAREA><BR>
+<HR>
+<H2>Locus References:</H2>
+Please report citations that support this locus designation in the following short reference format.  If unpublished, please include title:
+<P>
+<BLOCKQUOTE><EM>Seldin MF, Cytogenet Cell Genet 1987;45(1):52-4</EM></BLOCKQUOTE>
+<P>
+Citation:<TEXTAREA NAME="cite1" ROWS=2 COLS=55></TEXTAREA><BR>
+Citation:<TEXTAREA NAME="cite2" ROWS=2 COLS=55></TEXTAREA><BR>
+Citation:<TEXTAREA NAME="cite3" ROWS=2 COLS=55></TEXTAREA><BR>
+<HR>
+<H2>Homology Information:</H2>
+If a homologous locus is known in a species other than mouse, please fill in this table:
+<BR><BR>
+<TABLE BORDER=1>
+<TR><TH>Locus Symbol</TH><TH>Species</TH><TH>Short Citation</TH>
+<TR><TD><INPUT TYPE="text" NAME="hom_symbol_1" SIZE=15></TD>
+<TD><INPUT TYPE="text" NAME="hom_species_1" SIZE=20></TD>
+<TD><INPUT TYPE="text" NAME="hom_citation_1" SIZE=50></TD>
+<TR><TD><INPUT TYPE="text" NAME="hom_symbol_2" SIZE=15></TD>
+<TD><INPUT TYPE="text" NAME="hom_species_2" SIZE=20></TD>
+<TD><INPUT TYPE="text" NAME="hom_citation_2" SIZE=50></TD>
+<TR><TD><INPUT TYPE="text" NAME="hom_symbol_3" SIZE=15></TD>
+<TD><INPUT TYPE="text" NAME="hom_species_3" SIZE=20></TD>
+<TD><INPUT TYPE="text" NAME="hom_citation_3" SIZE=50></TD>
+</TABLE>
+<BR>
+<INPUT TYPE=submit VALUE="Submit"> <INPUT TYPE=reset VALUE="Reset Form">
+<HR>
+<!--#include file="include/footer.html"-->
+</FORM>
+</BODY>
+</HTML>
+<!--
+Warranty Disclaimer and Copyright Notice
+
+ THE JACKSON LABORATORY MAKES NO REPRESENTATION ABOUT THE SUITABILITY OR 
+ ACCURACY OF THIS SOFTWARE OR DATA FOR ANY PURPOSE, AND MAKES NO WARRANTIES, 
+ EITHER EXPRESS OR IMPLIED, INCLUDING MERCHANTABILITY AND FITNESS FOR A 
+ PARTICULAR PURPOSE OR THAT THE USE OF THIS SOFTWARE OR DATA WILL NOT 
+ INFRINGE ANY THIRD PARTY PATENTS, COPYRIGHTS, TRADEMARKS, OR OTHER RIGHTS.  
+ THE SOFTWARE AND DATA ARE PROVIDED "AS IS".
+
+ This software and data are provided to enhance knowledge and encourage 
+ progress in the scientific community and are to be used only for research 
+ and educational purposes.  Any reproduction or use for commercial purpose 
+ is prohibited without the prior express written permission of the Jackson 
+ Laboratory.
+
+Copyright © 1996, 1999, 2000 by The Jackson Laboratory
+All Rights Reserved
+-->

@@ -1,0 +1,158 @@
+<!-- Published by Quadralay WebWorks HTML Lite 1.5 -->
+<html>
+<head>
+<title>MGD 3.1 Release Notes</title>
+</head>
+
+<body><h1></h1>
+<!--#include file="include/mgi.html"-->
+<hr>
+
+<h2>Mouse Genome Database 3.1 </h2>
+<p>
+<h2>Release Notes</h2>
+
+<strong><em>February 13, 1996</em></strong><p>
+<hr>
+
+<h3>New Features </h3>
+
+
+<h4>Access to the <a href="/gxd.html">Gene Expression Database (GXD) Index</A></h4>
+<br>
+The Gene Expression Database (GXD) Index is the first component of GXD to become available to the public.  The GXD Index consists of a collection of
+references indexed with respect to their gene expression data content.
+<p>
+The GXD query form enables you to search the index by reference, gene, assay type or DPC (days post conception) values. Use the GXD icon (located on the MGD Home Page and on the MGI "banner" at the top of every MGD page) to access
+GXD Index documentation and the GXD Index query form.
+<p>
+<h4>WWW Access to the <a href="/ccr/95">1995 Chromosome Committee Reports</a></h4>
+The 1995 Chromosome Committee reports have been converted to html format
+for easy access. All available reports have been converted although the
+report for Chromosome 17 is not yet available and several figures and
+tables for other Chromosome Committee reports are not included.  As
+these items become available, they will be included in the set of 
+WWW available reports. 
+
+<p>
+<h4><a href="/oxford.html">Oxford Grid</a> format for mammalian homology information</h4>
+The tabular <em>Oxford grid</em> format provides an overview of
+homology between the genomes of two selected species. The chromosomes
+of one species represented by the columns in the grid, the chromosomes
+of the second species by the rows in the grid.  Each box in the grid
+represents a point of comparison of a chromosome from each species.
+A colored box indicates there are known homologies.  You can point and
+click on a colored box to retrieve the MGD Homology records for those
+two chromosomes. This option is accessed from the Mammalian Homology
+query form.<p>
+
+<h4>New <a href="/reports.html">MGI Data and Statistical Reports</a></h4>
+In response to requests from the user community, the MGD Data and 
+Statistical Reports now include a listing of homologies between mouse
+and rat sorted in various ways.<p>
+In addition, the reports now include a listing of mutant alleles that have been
+withdrawn and identified as alleles of other markers   
+sorted in various ways.<p>
+
+<h4><a href="/mgd_schema.html">MGD Schema Query Form</a> available
+</h4>
+MGD is built on the SYBASE relational database management system. MGD data
+is organized and stored in tables.  Now, you can get information about the
+MGD database schema.  This information is primarily useful to those who
+wish to use the public SQL interface to MGD.<p>
+The MGD Schema Query Form is available on the MGD Home Page.<p>
+You can search by <em>Database Object</em> (tables, views, etc), 
+Database Tables</em> (References, Markers, etc), and <em>Substring Term</em>
+ (i.e., some part of the name of a database object).
+<p>
+Query results provide a summary listing, each item linked to the detailed
+schema information for the item.<p>
+
+<h3>New Data Sets</h3>
+
+<h4>1995 Chromosome Committee Reports</h4>
+As mentioned previously, 1995 Chromosome Committee reports</a> are available in hypertext format. In addition, you can download the reports <em>as orginally produced</em> from our <a href="file://ftp.informatics.jax.org/pub/">ftp server</a>.<p>
+Questions or comments regarding the content of the reports should be directed
+to the <a href="/ccr/95/chairs.html">Chromosome Committee Chairs</a>.<p>
+<h3>Enhancements</h3>
+
+<h4>Mouse Genome Informatics Banner Redesigned</h4>
+
+The MGI <cite>banner</cite> now presents eight icons which link
+to 
+<UL>
+<LI>MGD home page
+<LI>GXD (Gene Expression Database) home page
+<LI>Encyclopedia of the Mouse Genome home page
+<LI>MGI News and Announcements
+<LI>User Support home page
+<LI>MGD User Documentation
+<LI>MGD's UK Mirror site
+<LI>WWW directory of other biological sites
+</UL>
+
+<h4>Query by multiple J numbers</h4>
+On MGD query forms having a J number field, you can enter
+multiple J numbers separated by commas.
+<p>
+<h4>Linkage Map tool changes</h4>
+
+The Linkage Map form provides the option to build a custom
+map using genes entered in the <em>Additional Markers</em>
+text entry field exclusively.  To activate this option, select
+the item "Use ONLY mnrkers entered on this form" from the Map Source
+list at the top of the form.<p>
+The map building software has been revised so that Linkage Map tool
+performance is improved.<p>
+<h4>Search for mutant alleles</h4>
+On the Genetic Markers...query form, you can search for mutant alleles.
+Use the <em>Name</em> field with the CONTAINS operator and enter the
+phrase "allele of." Set the Maximum number of records retrieved to
+<em>No limit</em>. <p>
+Note that you cannot limit the search to a Chromosome.<p>
+<h4>Link from detailed marker record to GXD data</h4>
+In the detailed query results for a genetic marker, 
+<em>Expression data</em> will appear in the Additional Information section
+and link to any GXD Index record(s) related to the marker. 
+
+<h4>New fields on the References query form</h4>
+The References query form contains several new fields:
+<ul>
+<li><em>Chromosome</em><br>
+You can search for all the references related to a chromosome.
+<p>
+<li><em>Volume</em> and <em>Pages</em>
+<br>These fields enable you to define a more specific query for
+references in a journal.
+</ul>
+<h4>Homology form changes</h4>
+On the Homology query form, the species lists now begin with the
+two most commonly used species, Mouse and Human.<p>
+When you select two species to compare, the query results will, by
+default, show only homologies between the selected species. Two
+options at the top of the form enable you to specify what to 
+include in the homology query results. The default option is <em>only selected
+species</em>.  You can choose to see <em>all homologous species</em>.
+<p>
+<hr>
+</body>
+<!--#include file="include/footer.html"-->
+</html>
+<!--
+WARRANTY DISCLAIMER AND COPYRIGHT NOTICE 
+
+    THE JACKSON LABORATORY MAKES NO REPRESENTATION ABOUT THE 
+    SUITABILITY OR ACCURACY OF THIS SOFTWARE OR DATA FOR ANY 
+    PURPOSE, AND MAKES NO WARRANTIES, EITHER EXPRESS OR IMPLIED, 
+    INCLUDING THE WARRANTIES OF MERCHANTABILITY AND FITNESS FOR 
+    A PARTICULAR PURPOSE OR THAT THE USE OF THIS SOFTWARE OR DATA 
+    WILL NOT INFRINGE ANY THIRD PARTY PATENTS, COPYRIGHTS, 
+    TRADEMARKS OF OTHER RIGHTS. IT IS PROVIDED "AS IS." 
+
+    This software and data are provided as a service to the scientific 
+    community to be used only for research and educational purposes. Any
+    commercial reproduction is prohibited without the prior written 
+    permission of The Jackson Laboratory. 
+
+    Copyright © 1996 The Jackson Laboratory All Rights Reserved 
+-->

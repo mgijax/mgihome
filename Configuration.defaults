@@ -1,0 +1,21 @@
+# path to the web interface from which to import libraries
+WI_PATH		/usr/local/mgi/wi/dev/
+
+# path to our home installation
+MGIHOME_PATH	/usr/local/mgi/mgihome/current/
+
+# path to the python executable
+PYTHON		/usr/local/bin/python
+
+# path to the unix permissions group to use for web display
+GROUP		www
+
+# title to appear in the titlebar of each page
+TITLE		MGI Home
+
+# path to the sendmail executable
+SENDMAIL	/usr/lib/sendmail
+
+# optional e-mail address to use for testing cgi scripts which send e-mail.
+# If commented out, hard-coded addresses are used throughout.
+# CGI_MAILTARGET	pm@informatics.jax.org

@@ -1,0 +1,184 @@
+<html>
+<body>
+<h2>Encyclopedia of the Mouse Genome 3.0 </h2>
+<h2>Release Announcement </h2>
+
+<h3>November 21, 1994</h3>
+<hr>
+The Encyclopedia of the Mouse Genome (<i>Encyclopedia</i>) provides a 
+clean, sharp graphic display of mouse chromosome maps with a flexible, 
+easy-to-use interface.
+<p>
+The <i>Encyclopedia</i> consists of software and data files that are 
+downloaded from our ftp server onto your computer. The 
+<i>Encyclopedia</i>  also provides links to 'live' data in MGD.
+<p>
+In this release, the <i>Encyclopedia</i> provides access to
+
+- 1994 Chromosome Committee Reports  
+- October1994 MIT Whitehead Institute genetic maps
+- MGD mouse locus mapping and homology information
+<p>
+Note:
+
+You must download the new data files.  You cannot use previous 
+versions of <i>Encyclopedia</i>  data files with this release.
+<p>
+The following versions of the <i>Encyclopedia</i>  are now 
+available from The Jackson Laboratory ftp server:<p>
+
+<strong><i>Alpha Test</i>  Version 1.0a13 for MacOS</strong><br>
+<strong><i>Alpha Test</i>  Version 3.0a2 for UNIX</strong>
+<p>
+"Alpha Test" means that the <i>Encyclopedia</i> software is still 
+under  development and is not a complete and finished software product.  
+This Alpha Test version software is available to you for exploration 
+and testing.  However, you may encounter software bugs.  The user 
+documentation is likewise work-in-progress.
+<p>
+Your comments, questions, problem reports, and suggestions are 
+extremely valuable to the ongoing development of the 
+<i>Encyclopedia</i>.  Please contact User Support with your feedback.
+<p>
+<strong>
+E-mail:  mgi-help@informatics.jax.org<br>
+Phone: 207-288-6445<br>
+</strong>
+<br>
+
+
+<h3>New Features</h3>
+
+<strong><i>Encyclopedia</i> interacts with the Mouse Genome Database(MGD)</strong>
+<p>
+Note: NCSA Mosaic 2.0 must reside on your system to support this 
+interaction. (If you do not have Mosaic, the <i>Encyclopedia</i> 
+will run normally but without interaction with MGD.)  
+<p>
+When you  start the <i>Encyclopedia</i>, it will automatically start 
+a Mosaic session. When you click on a locus displayed on a chromosome map, 
+the <i>Encyclopedia</i> will search MGD for information on that locus 
+and the locus record will be displayed in the Mosaic window.
+<p>
+You can also generate an <i>Encyclopedia</i> linkmap using information 
+from  MGD database tables. This option is available on the MGD home page. 
+You can display all the loci on a chromosome or a region of a chromosome 
+defined by a selected subset of loci.  You can also select one from 
+a list of 40 species to generate a comparative map for the mouse 
+and another mammalian species.  
+<p>
+For now, these integration features are only available with 
+NCSA Mosaic browsers.  
+<p>
+<strong>Common data file format for UNIX and Macintosh versions</strong>
+<p>
+Both UNIX and Macintosh versions  of the software use the same data 
+file format now, so there is a single set of data  files presented 
+in this release.  The new format is much smaller and can be loaded 
+more quickly than the old format files.
+<p>
+<strong>User documentation available on the World Wide Web(WWW)</strong>
+<p>
+Now you can access the <i>Encyclopedia</i> user documentation from the WWW. 
+You can open the documentation using the Help button on the menu bar 
+of the <i>Encyclopedia</I>.
+<p>
+<strong>Features specific to the Macintosh version</strong>
+<ul>
+<li> In the Macintosh version of the <i>Encyclopedia</I> , you can now specify 
+   characteristics of the map display such as font and background color.
+
+<li>You can save a map in PICT file format.
+</ul><p>
+Refer to the README file accompanying the Macintosh version
+software for details.
+<p>
+<strong>Features specific to the UNIX version</strong>
+<p>
+In the UNIX version of the <i>Encyclopedia</I> , you can 
+<br>
+<UL>
+<li> Change "attributes", such as color and font, for a class of loci. 
+<li> Copy and paste from Notes and References panes to text files.
+<li> Print a map file (not just generate a PostScript file)
+</UL><br>
+Refer to the README file accompanying the UNIX version
+software for details.
+
+
+<h3>Installation </h3>
+
+The <i>Encyclopedia</I> software and data files may be downloaded 
+from our Informatics ftp server.  You can install using our WWW 
+interface or by starting an ftp session.  These two approaches 
+are briefly described below.
+<p>
+
+<strong>Using the WWW interface</strong>
+<p>
+You can download the executable and data files using an option 
+available the Jackson Laboratory Bioinformatics WWW server.  The URL is
+<p>
+<strong><!--#include file="include/wi_url.html"--></strong>
+<p>
+From the Home Page, you  select  the following option:
+<p>
+<strong>Download the current version of the <i>Encyclopedia</I> of 
+the Mouse Genome</strong>
+<p>
+Additional configuration steps required to support the integration with 
+MGD and instructions are provided.
+<p>
+
+<strong>Using ftp</strong>
+<p>
+You can connect to the Jackson Laboratory anonymous ftp server using the
+address:
+<br>
+<strong>ftp.informatics.jax.org</strong>
+<br>
+The following directories contain the files you need: 
+<br>
+For the data files for all platforms,
+<br>
+	<strong>/pub/informatics/encyclo/data/3.0 </strong>
+<br>
+For the Macintosh executable, release notes and installation 
+instructions,
+<br>
+	<strong>/pub/informatics/encyclo/mac </strong>
+<br>
+For UNIX executables for all supported UNIX platforms,  
+release notes and installation instructions,
+<br>
+	<strong>/pub/informatics/encyclo/unix/3.0</strong> 
+
+<p>
+<h3>Community Involvement</h3>
+
+
+<h3>How to contact User Support</h3>
+
+<strong>E-mail:  mgi-help@informatics.jax.org<br>
+Phone:   207-288-6445<br>
+Fax:       207-288-6132</strong>
+
+<!--
+Warranty Disclaimer and Copyright Notice
+
+ THE JACKSON LABORATORY MAKES NO REPRESENTATION ABOUT THE SUITABILITY OR 
+ ACCURACY OF THIS SOFTWARE OR DATA FOR ANY PURPOSE, AND MAKES NO WARRANTIES, 
+ EITHER EXPRESS OR IMPLIED, INCLUDING MERCHANTABILITY AND FITNESS FOR A 
+ PARTICULAR PURPOSE OR THAT THE USE OF THIS SOFTWARE OR DATA WILL NOT 
+ INFRINGE ANY THIRD PARTY PATENTS, COPYRIGHTS, TRADEMARKS, OR OTHER RIGHTS.  
+ THE SOFTWARE AND DATA ARE PROVIDED "AS IS".
+
+ This software and data are provided to enhance knowledge and encourage 
+ progress in the scientific community and are to be used only for research 
+ and educational purposes.  Any reproduction or use for commercial purpose 
+ is prohibited without the prior express written permission of the Jackson 
+ Laboratory.
+
+Copyright © 1996, 1999, 2000 by The Jackson Laboratory
+All Rights Reserved
+-->

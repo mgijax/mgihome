@@ -1,0 +1,145 @@
+<HTML>
+<HEAD>
+<TITLE><!--#include file="include/title.html"--> - How to Create WWW Links to MGD</TITLE>
+</HEAD>
+
+<BODY BGCOLOR="#ffffff">
+<!--#include file="include/banner.html"-->
+<HR>
+
+<H3>How to Create WWW Links to MGI</H3>
+<HR>
+
+<blockquote>
+Due to MGI's implementation of accession ID handling, we are providing
+this page of instructions for creating URL links to MGI.
+<P>
+<I>Note:</I> We strongly recommend using the new URL for linking to MGI.  Other
+URLs may not be supported in the future.
+</blockquote>
+
+<HR>
+<H4>New URL and Syntax</H4>
+
+We have provided a new CGI program for linking to MGI via accession ID:
+
+<UL><CODE>http://www.informatics.jax.org/searches/accession_report.cgi?id=xxxx</CODE></UL>
+
+where <CODE>xxxx</CODE> is a comma-separated list of Accession IDs.
+<P>
+The result will be one or more objects from MGI associated with the given IDs.
+<P>
+MGI stores objects with accession IDs from many sources.  Some examples of
+valid Accession IDs are
+
+<UL>
+<LI>MGI:12345 (MGI Accession ID)
+<LI>J:12345 (J Number)
+<LI>GDB:12345 (GDB Accession ID)
+<LI>K02800 (GenBank Sequence ID)
+</UL>
+
+There are nine types of objects supported by this URL:
+
+<UL>
+<LI>References
+<LI>Segments
+<LI>Mouse Markers
+<LI>Non-Mouse Markers (Homologies)
+<LI>Experiments
+<LI>Expressions Assays
+<LI>Images
+<LI>Antibodies
+<LI>Antigens
+</UL>
+
+<STRONG>Examples</STRONG>
+<UL>
+<LI>Mouse Marker (MGI Accession ID)<BR>
+ <A HREF="<!--#include file='include/wi_url.html'-->/searches/accession_report.cgi?id=MGI:97898">
+ <CODE>http://www.informatics.jax.org/searches/accession_report.cgi?id=MGI:97898</CODE>
+ </A>
+<LI>Homology (GDB Accession ID)<BR>
+ <A HREF="<!--#include file='include/wi_url.html'-->/searches/accession_report.cgi?id=GDB:120345">
+ <CODE>http://www.informatics.jax.org/searches/accession_report.cgi?id=GDB:120345</CODE>
+ </A>
+<LI>Reference (MGI Accession ID)<BR>
+ <A HREF="<!--#include file='include/wi_url.html'-->/searches/accession_report.cgi?id=MGI:57297">
+ <CODE>http://www.informatics.jax.org/searches/accession_report.cgi?id=MGI:57297</CODE>
+ </A>
+<LI>Reference (MGI J Number)<BR>
+ <A HREF="<!--#include file='include/wi_url.html'-->/searches/accession_report.cgi?id=J:9230">
+ <CODE>http://www.informatics.jax.org/searches/accession_report.cgi?id=J:9230</CODE>
+ </A>
+<LI>Reference (Medline Accession ID)<BR>
+ <A HREF="<!--#include file='include/wi_url.html'-->/searches/accession_report.cgi?id=90215200">
+ <CODE>http://www.informatics.jax.org/searches/accession_report.cgi?id=90215200</CODE>
+ </A>
+<LI>Probe (MGI Accession ID)<BR>
+ <A HREF="<!--#include file='include/wi_url.html'-->/searches/accession_report.cgi?id=MGI:32903">
+ <CODE>http://www.informatics.jax.org/searches/accession_report.cgi?id=MGI:32903</CODE>
+ </A>
+<LI>Probe (GenBank Accession ID)<BR>
+ <A HREF="<!--#include file='include/wi_url.html'-->/searches/accession_report.cgi?id=K02800">
+ <CODE>http://www.informatics.jax.org/searches/accession_report.cgi?id=K02800</CODE>
+ </A>
+<LI>Multiple Probes (MGI Accession IDs)<BR>
+ <A HREF="<!--#include file='include/wi_url.html'-->/searches/accession_report.cgi?id=MGI:36495,MGI:36496,MGI:36501">
+ <CODE>http://www.informatics.jax.org/searches/accession_report.cgi?id=MGI:36495,MGI:36496,MGI:36501</CODE>
+ </A>
+<LI>Image (MGI Accession ID)<BR>
+ <A HREF="<!--#include file='include/wi_url.html'-->/searches/accession_report.cgi?id=MGI:1205939">
+ <CODE>http://www.informatics.jax.org/searches/accession_report.cgi?id=MGI:1205939</CODE>
+ </A>
+<LI>Expression Assay (MGI Accession ID)<BR>
+ <A HREF="<!--#include file='include/wi_url.html'-->/searches/accession_report.cgi?id=MGI:1205940">
+ <CODE>http://www.informatics.jax.org/searches/accession_report.cgi?id=MGI:1205940</CODE>
+ </A>
+</UL>
+Additional linking options are available upon request.
+
+<HR>
+
+<H4>What the CGI Will Return</H4>
+If the search expression matches a single reference, segment, marker or
+experiment, a detailed description will be displayed.
+If the search expression matches a non-mouse marker (such as a human gene), a
+list of homologies will be displayed for that marker.
+If the search expression matches more than one object, a summary screen
+will be displayed which lists each match along with its MGI accession ID,
+Type, Subtype, and a short description.
+
+<HR>
+
+<H4>Data Dumps for Obtaining Accession IDs</H4>
+All data dumps are tab-delimited and generated nightly.  The MGI Accession ID 
+is the first column in each report. These files are available upon request. If
+interested, please contact <A HREF="../support/tjl_inbox.shtml">MGI User
+Support</A>. <P>
+<HR>
+
+<!--#include file="include/footer.html"-->
+
+</BODY>
+
+</HTML>
+
+<!--
+Warranty Disclaimer and Copyright Notice
+
+ THE JACKSON LABORATORY MAKES NO REPRESENTATION ABOUT THE SUITABILITY OR 
+ ACCURACY OF THIS SOFTWARE OR DATA FOR ANY PURPOSE, AND MAKES NO WARRANTIES, 
+ EITHER EXPRESS OR IMPLIED, INCLUDING MERCHANTABILITY AND FITNESS FOR A 
+ PARTICULAR PURPOSE OR THAT THE USE OF THIS SOFTWARE OR DATA WILL NOT 
+ INFRINGE ANY THIRD PARTY PATENTS, COPYRIGHTS, TRADEMARKS, OR OTHER RIGHTS.  
+ THE SOFTWARE AND DATA ARE PROVIDED "AS IS".
+
+ This software and data are provided to enhance knowledge and encourage 
+ progress in the scientific community and are to be used only for research 
+ and educational purposes.  Any reproduction or use for commercial purpose 
+ is prohibited without the prior express written permission of the Jackson 
+ Laboratory.
+
+Copyright © 1996, 1999, 2000 by The Jackson Laboratory
+All Rights Reserved
+-->

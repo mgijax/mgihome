@@ -1,0 +1,182 @@
+<HTML><HEAD>
+<!-- This document was created from RTF source by rtftohtml version 3.0.1 -->
+<TITLE><!--#include file="include/title.html"--> - MGD 3.3 Release Notes</TITLE></HEAD>
+<!--#include file="include/oldlinks.html"-->
+<!--#include file="include/banner.html"--><HR>
+<H2>
+MGD 3.3 Release Notes</H2>
+
+<b><em>June 12, 1997</b></em><p>
+
+There have been important changes to the structure of the database to enable
+MGD to manage rapidly expanding data content and lay the foundations for more
+efficient access to data. For example, the way Accession IDs are assigned to
+records and stored in the database has changed to facilitate the creation of
+links between MGD and other database as well as to facilitate searching for MGD
+records by Accession ID. Another important structural change has been to merge
+the PCR Primer records with Probes and Clones records and create a new data
+set, "Molecular Probes and Segments." This expanded data set includes records
+for 170,000 ESTs and their source clones. Mouse physical mapping records have
+been downloaded from MIT and are accessible using the Mapping Data query form.
+These and other enhancements to the structure and interface of MGD are
+discussed in the sections that follow.<p>
+
+<H3>Expressed Sequence Tag (EST) Data</H3>
+<b></b>170,000 ESTs and their clones have been entered in MGD. These
+data are generated through the collaborative efforts of the Washington
+University (WashU) EST project, the Integrated Molecular Analysis of Genomes and their
+Expression (I.M.A.G.E) consortium, and the National Center for Biotechnology Information (NCBI).<p>
+
+ESTs are searchable using the <A HREF="/probe.html">Molecular Probes and Segments</A> query form. "EST"
+has been added to the selection list for the "DNA type" field. To search for
+ESTs, you could, for example, select EST for the sequence type, specify a
+marker in the Marker Symbol field and retrieve any EST records associated with
+that marker. The record for each EST includes a link to the MGD record for the
+clone from which it is derived as well as links to the sequence databases
+(Genbank, EMBL, GSDB, DDBJ) and links to WashU and dbEST. The marker symbol
+for the gene (if any) with which the EST has been putatively associated.<p>
+Each EST source clone record includes links to the MGD records for the ESTs
+related to it, and links to clone records in LLNL and ATCC.
+ <p>
+<H3>MIT Mouse Physical Mapping Data</H3>
+An ongoing project at MIT has been to build a CONTIG map of the mouse
+using MIT markers and STSs mapped against a mouse YAC library. This information has been
+loaded into MGD and is accessible using the <A HREF="/mldp.html">Mapping Data</A> (formerly Genetic
+Mapping Data) query form. A new experiment type, CONTIG, has been added to the
+form to enable searching for records of this type. <p>
+<p>
+The query results summary for contig experiment records is the same as for other
+experiment types. The detailed record for a contig shows a list of contigs for
+the chromosome, the centimorgan range for the region of the chromosome covered
+by the contig, and an ordered set of the STSs mapped within the contig. Each
+contig name is linked to another detail record showing the contig segments and
+their association with STSs.<p>
+
+<EM>Mouse Physical Map Graphic Displays</EM><BR>
+
+MGD provides a new map display for the MIT physical mapping data. On this
+display, contigs are set against the backdrop of the MIT genetic map.
+The density of markers dictates a multi-page map of each chromosome. At the
+left of each page is shown a graphic of the whole chromosome with vertical
+lines representing the arrangement of contigs. A grey box on the chromosome
+indicates the region of the chromosome on the page currently displayed. 
+<P>
+To the right of this small graphic is the enlarged view of the chromosomal
+region with centimorgan scale and genetically mapped MIT markers. To the
+right of this genetic map are shown the contigs. Each contig has black or
+red boxes denoting the location of MIT markers in the contig. (Black boxes
+indicate agreement while red boxes indicate conflict between the genetic and 
+physical ordering of the markers.) The MIT marker symbols are hyper-linked 
+to MGD marker records; the contig names are linked to MGD mapping data records for the contigs.
+<p>
+The physical map displays are accessed under <A HREF="/maptools.html">Maps and Mapping Data</A> searches.
+The files are in Web Map format for display in a browser window.<p>
+<p>
+<h3>MGI Accession IDs</h3>
+MGD has a new accession ID format. All records in the database are now assigned
+an ID of the format: <b>MGI:####</b>, where #### can be a number from 1-up. J
+numbers continue to be assigned to all references in MGD and can be used for
+searching the database. The format for J numbers has been changed to
+<b>J:####</b>. If you search using a J number, you must include the "J:"
+prefix. In addition, older format accession IDs (e.g., MGD-MRK-####,
+MGD-CREX-####) assigned to markers and mapping experiment records prior to
+Release 3.3 are retained in the database and can be used for searching. With
+the exception of references, which are assigned both J numbers and MGI
+accession IDs, all new MGD records are assigned only MGI accession IDs. The new
+format goes hand-in-hand with restructuring of the database tables to provide
+more streamlined handling of accession numbers and facilitate the creation of
+links between MGD and other scientific databases.<p>
+
+<EM>Accession ID Query Form</EM><br>
+The <A HREF="/accession.html">Accession ID</A> query form enables you to search for records in MGD by an MGI Accession ID,
+older format MGD accession ID, or by any foreign accession ID stored in MGD.
+You can enter a single ID, multiple IDs, or specify a range of IDs. For
+example, if you search by Genbank ID "M22381", you will see a list of MGD
+probe/segment records, each of which includes this Genbank ID. Each item in the
+list provides a link to the MGD record for the probe/segment as well as a link
+to the related sequence record in Genbank, GSDB, EMBL and DDBJ. Results can be
+displayed either as hypertext tables or pre-formatted text.<p>
+
+<EM>Accession ID Fields on Other MGD Query Forms</EM><br>
+The database supports a generalized concept of accession ID so that you can use
+the accession ID field on a query form to search by any MGI or foreign
+accession ID that might relate to the kind of MGD record represented by the
+query form. For example, on the <A HREF="/mbib.html">References</A> query form, in the <b>Reference
+Accession ID</b> field you can enter either an MGI Accession ID, a J number, or
+a Medline ID to search for an MGD reference record.<p>
+<p>
+You can enter a single accession ID, multiple IDs, or specify a range of IDs.
+The query results for any data retrieved from MGD now include MGI accession
+IDs, old-format MGD IDs, and any foreign accession IDs associated with the
+record. <p>
+<p>
+<H3>Molecular Probes and Segments</H3>
+<b></b>MGD records for primers have been merged with records for probes, clones
+and ESTs. The enlarged data set is named "Molecular Probes and Segments." The
+PCR Primers query form has been removed. The Probes and Clones query form has
+been renamed "<A HREF="/probe.html">Molecular Probes and Segments</A>" query form. <b>Primer</b> has been
+added to the selection list for the Sequence Type field on this form to
+facilitate searching specifically for primer records.(<b>EST</b> has also been
+added to that selection list to facilitate searching for EST records.)<p>
+
+The <b>Primer1, Primer2</b> name fields which appeared on the PCR Primers query
+form do not appear on the Molecular Probes and Segments query form, nor do
+these names appear in query results for primer records.
+<p>
+<H3>Updates to DNA Mapping Panel Data Sets</H3>
+The following DNA mapping panel data sets have been updated in MGD 3.3:<p>
+<UL>
+<LI>JAX (BSB): (C57BL/6J x M. spretus)F1 x C57BL/6J
+<LI>JAX (BSS): (C57BL/6JEi x SPRET/Ei)F1 x SPRET/Ei
+<LI>EUCIB (BSB): (C57BL/6J x SPR or SEG/Pas)F1 x C57BL/6J
+<LI>EUCIB (BSS): (C57BL/6J x SPR or SEG/Pas)F1 x SPR or SEG/Pas
+<LI>Seldin: (C3H/HeJ-Fasl&lt;gld&gt; x M. spretus)F1 x C3H/HeJ-Fasl&lt;gld&gt;
+</UL>
+
+<p>
+<H3>Other Changes to Forms and Query Results</H3>
+
+<EM>New Field on Linkage Map Form</EM><br>
+The <A HREF="/map.html">Linkage Map</A> form now provides an option to "Select markers with name
+containing" some string of characters. For example, suppose you want to see the
+mapping positions for all histocompatibility loci assigned to Chromosome 4. You would select
+Chromosome 4 and type "histo" on the new field and run the query. The resulting
+map would include only markers on Chr 4 whose names contain the letters "histo."
+<p>
+<EM>PCR Primers Query Form Removed</EM><br>
+The PCR Primer query form has been dropped from MGD. You may use the <A HREF="/probe.html">Molecular
+Probes and Segments</A> query form to search for primers.<p>
+<p>
+<p>
+<EM>New Links to External Databases</EM><p>
+<p>
+<A HREF="http://locus.jouy.frlcgi-bin/bovmap/into2.pl">BovMap</A><br>
+MGD links to the bovine genome mapping project database, BovMap, through
+homologies<p>
+<p>
+<A HREF="http://www.ncbi.nlm.nih.gov/dbEST/index.html">dbEST</A>, <A HREF="http://genome.wustl.edu/est/esthmpg.html">WashU</A>, <A HREF=" http://www-bio.llnl.gov/bbrp/bbrp.homepage.html">LLNL</A>, <A HREF="http://www.atcc.org/">ATCC</A><br>
+MGD links to these databases via EST records and related clone records.<br>
+<p>
+<hr>
+<!--#include file="include/footer.html">
+</body></html>
+
+
+<!--
+WARRANTY DISCLAIMER AND COPYRIGHT NOTICE 
+
+    THE JACKSON LABORATORY MAKES NO REPRESENTATION ABOUT THE 
+    SUITABILITY OR ACCURACY OF THIS SOFTWARE OR DATA FOR ANY 
+    PURPOSE, AND MAKES NO WARRANTIES, EITHER EXPRESS OR IMPLIED, 
+    INCLUDING THE WARRANTIES OF MERCHANTABILITY AND FITNESS FOR 
+    A PARTICULAR PURPOSE OR THAT THE USE OF THIS SOFTWARE OR DATA 
+    WILL NOT INFRINGE ANY THIRD PARTY PATENTS, COPYRIGHTS, 
+    TRADEMARKS OF OTHER RIGHTS. IT IS PROVIDED "AS IS." 
+
+    This software and data are provided as a service to the scientific 
+    community to be used only for research and educational purposes. Any
+    commercial reproduction is prohibited without the prior written 
+    permission of The Jackson Laboratory. 
+
+    Copyright © 1996 The Jackson Laboratory All Rights Reserved 
+-->

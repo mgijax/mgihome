@@ -1,0 +1,116 @@
+<html>
+<head>
+<title>MGD 3.1 Announcement</title>
+</head>
+<body>
+<!--#include file="include/banner.html"-->
+<!--#include file="include/oldlinks.html"-->
+<h2>Mouse Genome Database (MGD) 3.1 Release Announcement</h2>
+<p>
+<h2><em>February 13, 1996</em></h2>
+<hr>
+<STRONG>MGD 3.1 is now available from the World Wide Web</STRONG>
+(<a href="http://www.informatics.jax.org">http://www.informatics.jax.org</A>).<p>
+
+See <A HREF="/doc/oldnews/3.1relnotes.html">MGD 3.1 Release Notes</A> for details. <p>
+
+<h3>New Features</h3>
+<p>
+<ul>
+<LI>Access to the <a href="/gxd.html">Gene Expression Database (GXD) Index</A>
+<p>
+Use the GXD icon on the MGI or MGD Home Page. GXD documentation
+and a GXD Index query form are now available.
+<P>
+<LI>WWW access to <a href="/ccr/95">1995 Chromosome Committee Reports</A>
+<P>
+The 1995 Chromosome Committee Reports are now
+available on our WWW site.  Select "Chromosome Committee
+Reports" from the MGD Home Page. <em>Note: Some reports are
+not yet complete.  As updates are received, they will be made available.</em>
+<P>
+<LI>Retrieve homology information in  "Oxford grid" format
+<P>
+An Oxford Grid provides an overview of homologies
+between the genomes of two selected species.  Each colored box
+in the grid indicates known homologies and you can click on the
+box to retrieve the records. This option is available on the <a href=
+"/homology.html">Homology query form</A>.
+<P>
+<LI>New MGD Data and Statistical Reports available<p>
+MGD Data and Statistical Reports now include a listing of homologies between mouse and rat and a listing of mutant markers that
+have been withdrawn and identified as alleles of other markers. These lists may
+be viewed sorted in various ways.
+
+<P>
+See <a href="/reports.html">MGI Data and Statistical Reports</A> on the MGD Home Page.
+<P>
+<LI>MGD Schema Query Form <p>
+MGD is built using SYBASE relational database management system. Now, you
+can get information about the MGD database schema. This is especially useful
+to those interested in the public SQL interface to MGD. See <A HREF="/mgd_schema.html">MGD Schema Query Form</A> on the 
+MGD Home Page.<p>
+</UL>
+
+<H3>Enhancements</H3>
+<UL>
+<LI>Modified MGI banner has new icons and other links.
+<P>
+<LI>On MGD query forms, the J number field can now accept multiple values separated by a comma.
+<P>
+<LI>Linkage Map tool changes<p>
+The Linkage Map form provides an option to build a map using the markers
+entered in the <em>Additional Markers</em> field exclusively. To activate
+this option, select <strong>Use ONLY markers entered on this form</em> from
+the Map Source list.<p>
+In addition, a revised map generation algorithm has improved performance
+of the Linkage Map tool.
+
+<p>
+<LI>On the Genetic Markers... query form, you can now search for mutant alleles
+by using the phrase <em>allele of</em> in the <em>Name</em> field.<br>
+<em>Note: When searching for mutant alleles, you must use the <em>Name</em> 
+alone.</em> 
+<P>
+<LI>The detailed query results for genetic marker queries now contain a link
+to <em>Expression Data</em> retrieved from the GXD Index. This link appears
+under <em>Additional Information</em> if GXD information is available for
+a marker.  
+<P>
+<LI>On the References query form, fields for <em>Chromosome</em>, <em>Volume</em> and <em>Pages</em> have been added. Now, you can search for all the
+references related to a chromosome. 
+<P>
+<LI>On the Homology form, the species lists now start with the two most
+frequently used species: mouse and human. Also, you now have the option
+view query results from two selected species. Previously, the homology
+search always retrieved all the homologies for a given gene including
+the selected species and any other species sharing the homology. Now,
+seeing the homologies for all species is optional.
+</UL>
+<p>
+NOTE: <p>
+<blockquote>Before using MGD 3.1, be sure to clear the Web browser cache
+on your computer to get rid of old MGD forms.</blockquote>
+
+<hr>
+<!--#include file="include/footer.html"-->
+</body>
+</html>
+<!--
+WARRANTY DISCLAIMER AND COPYRIGHT NOTICE 
+
+    THE JACKSON LABORATORY MAKES NO REPRESENTATION ABOUT THE 
+    SUITABILITY OR ACCURACY OF THIS SOFTWARE OR DATA FOR ANY 
+    PURPOSE, AND MAKES NO WARRANTIES, EITHER EXPRESS OR IMPLIED, 
+    INCLUDING THE WARRANTIES OF MERCHANTABILITY AND FITNESS FOR 
+    A PARTICULAR PURPOSE OR THAT THE USE OF THIS SOFTWARE OR DATA 
+    WILL NOT INFRINGE ANY THIRD PARTY PATENTS, COPYRIGHTS, 
+    TRADEMARKS OF OTHER RIGHTS. IT IS PROVIDED "AS IS." 
+
+    This software and data are provided as a service to the scientific 
+    community to be used only for research and educational purposes. Any
+    commercial reproduction is prohibited without the prior written 
+    permission of The Jackson Laboratory. 
+
+    Copyright © 1996 The Jackson Laboratory All Rights Reserved 
+-->

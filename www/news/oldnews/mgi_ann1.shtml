@@ -1,0 +1,149 @@
+
+<HTML>
+<TITLE><!--#include file="include/title.html"--> - 
+Mouse Genome Informatics (MGI) Release 1.0 Announcement
+</TITLE>
+
+<script language="JavaScript">
+ 
+<!--
+ 
+if (( navigator.appName.substring(0,8) == "Netscape" ) && (navigator.appVersion.substring(0,1) != "2"))
+{
+	// Make sure window comes to front.
+	focus()
+}
+
+function QueryMenu()
+{
+        // Name the top-level window so that we can target it.
+        top.name = "main_window";
+ 
+        // open the popup window
+        var popupURL = "/query_menu.html";
+        var popup = window.open(popupURL,"menu_window",'toolbar=0,location=0,directories=0,status=0,menubar=0,scrollbars=0,resizable=1,width=130,height=600');
+        // set the opener if it's not already set.  it's set automatically
+        // in netscape 3.0+ and ie 3.0+.
+        if( navigator.appName.substring(0,8) == "Netscape" )
+        {
+                popup.location = popupURL;
+                popup.opener = self;
+        }
+}
+ 
+// -->
+ 
+</script>
+ 
+<!--End inserted JavaScript code.-->
+<BODY BGCOLOR="#ffffff">
+
+<!--#include file="include/oldlinks.html"-->
+<!--#include file="include/banner.html"-->
+
+
+</HEAD>
+<H2>
+<CENTER><SMALL>Mouse Genome Informatics (MGI) Release 1.0 Announcement
+<BR><EM>February 13, 1998</EM>
+</H2>
+</SMALL>
+</CENTER>
+<HR>
+
+
+The MGI Web site provides integrated access to various information 
+resources on the genetics and biology of the laboratory mouse, 
+including the Mouse Genome Database (MGD), the Gene Expression Database 
+(GXD) and the Encyclopedia of the Mouse Genome (<EM>Encyclopedia</EM>).
+
+<H3>New Features</H3> 
+
+<H4>Reorganization of the Web Interface</H4>
+A new <A HREF="/index.html">MGI home page</A> consolidates access to 
+MGI data resources. A set of menus organizes searching options under 
+various biological topics. A <EM>Query Menu</EM> window, displayed 
+separately from the main browser window, provides direct links to all 
+MGI query forms. 
+
+<p>
+<EM>Searches, Data and Reports</EM><BR>
+The <EM>Searches, Data and Reports</EM> section of the MGI home page 
+includes a list of biological topics which link to a new type of 
+menu.  When you select a topic and open a menu,  all the available 
+options for retrieving information related to the selected biological 
+area are displayed. For example, if you select the link to <EM>
+<A HREF="/mrktools.html">Genetic and Phenotypic Data</A></EM>, you 
+will see a list of the query forms (each with a brief description) that 
+enable you to search for information on markers and phenotypes, 
+a list of relevant database reports available; and a list of related resources.
+
+<p>
+<EM>Query Menu</EM><BR>
+While the new menus described above organize database access with respect 
+to biological topics, a new <EM><A HREF="/query_menu.html" 
+TARGET="menu_window" onClick="QueryMenu()">Query Menu</EM></A> provides direct 
+links to the MGI query forms. When you open the <EM>Query Menu</EM>,  
+a small window is displayed on your desktop separate from the browser 
+window.  This menu shows the list of MGI query forms. When you click on 
+a form title, the form opens in the browser window from which you 
+selected the <EM>Query Menu</EM>. (<B>Note</B>: <EM>This feature works
+best with <B>Java Script</B> enabled</EM>.) 
+
+<H4><A HREF="/estclone.html">cDNA and EST Expression Query Form</A></H4>
+This query form enables you to search for cDNA and EST expression 
+information related to specified genes and origin (tissue, age, cell line).  
+
+<H4>Oxford Grid Query Form</H4>
+A new <EM><A HREF="/oxford.html">Oxford Grid</A></EM> form now 
+provides the option to retrieve an <EM>Oxford Grid</EM> display 
+of homology between the genomes of two selected species. The 
+<EM>Oxford Grid</EM> display also provides links to graphical comparative 
+maps showing either a complete map or a region of a mouse chromosome 
+with homologies from the selected comparison species. (This feature 
+only applies to queries which include mouse as a species for comparison.) 
+
+
+<H3>Enhancements</H3>
+
+<H4>Query Forms Reformatted</H4>
+The form fields have been reformatted to accommodate differences 
+between Netscape and Internet Explorer. In addition, selection 
+lists on several query forms now have a default value of <b>ANY</b> 
+to accommodate Internet Explorer's implementation of selection lists.
+
+<H4>Changes to <A HREF="/homology.html">Mammalian Homology Query Form</A> 
+and Query Results</H4>
+You can now search for homologies using multiple gene symbols. 
+Homology query results have been reorganized to have a more compact, 
+tabular format with a link to <B>References</B> appearing at the 
+bottom of each displayed homology class. In addition, a link to a 
+graphical <b>Comparative map</B> is shown for queries that specify mouse 
+as one of the species to compare.  Each comparative map shows the region 
+of a mouse chromosome within 2 cM of the selected mouse marker and shows 
+any homologies in that region for the comparison species.
+<HR>
+For more details on the content of MGI Release 1.0, refer 
+to the <A HREF="/doc/mgi_relnot1.html">MGI 1.0 Release Notes</A>.
+<HR><BR>
+<!--#include file="include/footer.html"--></html>
+</BODY>
+</HTML>
+<!--
+WARRANTY DISCLAIMER AND COPYRIGHT NOTICE 
+
+    THE JACKSON LABORATORY MAKES NO REPRESENTATION ABOUT THE 
+    SUITABILITY OR ACCURACY OF THIS SOFTWARE OR DATA FOR ANY 
+    PURPOSE, AND MAKES NO WARRANTIES, EITHER EXPRESS OR IMPLIED, 
+    INCLUDING THE WARRANTIES OF MERCHANTABILITY AND FITNESS FOR 
+    A PARTICULAR PURPOSE OR THAT THE USE OF THIS SOFTWARE OR DATA 
+    WILL NOT INFRINGE ANY THIRD PARTY PATENTS, COPYRIGHTS, 
+    TRADEMARKS OF OTHER RIGHTS. IT IS PROVIDED "AS IS." 
+
+    This software and data are provided as a service to the scientific 
+    community to be used only for research and educational purposes. Any
+    commercial reproduction is prohibited without the prior written 
+    permission of The Jackson Laboratory. 
+
+    Copyright © 1996 The Jackson Laboratory All Rights Reserved 
+-->

@@ -1,0 +1,69 @@
+<HTML>
+<HEAD>
+<TITLE><!--#include file="include/title.html"--> - HelpDesk Express Mail </TITLE> 
+</HEAD>
+<BODY BGCOLOR="#ffffff">
+<!--#include file="include/banner.html"-->
+<Hr>
+<H1><a href="support.shtml">MGI HelpDesk</a> <EM>Express</EM> Mail</H1>
+We want to hear from you.  Use this form to enter your comments, questions,
+suggestions, or report problems.  Please include contact information as
+requested in the fields below so that we can respond promptly.  Be as
+detailed in your message as possible.  Thanks!
+<P>
+<P>
+<HR>
+<FORM METHOD="POST" ACTION="tjl_submit_inbox.cgi">
+<DL>
+<DT><B>From:</B><P>
+<DT>First Name:<BR>
+<DD><INPUT TYPE="text" NAME="firstname" SIZE=30>
+<DT>Last Name:<BR>
+<DD><INPUT TYPE="text" NAME="lastname" SIZE=30>
+<DT>Institution:<BR>
+<DD><INPUT TYPE="text" NAME="inst" SIZE=30>
+<DT>E-mail address:<BR>
+<DD><INPUT TYPE="text" NAME="emailaddr" SIZE=30><br>
+<DT>Phone Number:<BR>
+<DD><INPUT TYPE="text" NAME="ph" SIZE=30><br>
+<DT>FAX Number:<BR>
+<DD><INPUT TYPE="text" NAME="fx" SIZE=30><P>
+<DT><B>To:<BR>
+<DD>mgi-help@informatics.jax.org<P></B>
+<DT>Subject:<BR>
+<DD><INPUT TYPE="text" NAME="subject" SIZE=55>
+<DT>Message:<BR>
+<DD><TEXTAREA WRAP=soft NAME="message" ROWS=10 COLS=55></TEXTAREA><P>
+<DT><B>Attn:</B>
+<DD><SELECT NAME="attnto">
+<OPTION> MGI User Support staff
+<OPTION value="drs"> David Shaw 
+<OPTION value="mem"> Marge May 
+</SELECT>
+</DL>
+<input type=hidden name=domain value="MGI">
+<HR>
+<INPUT TYPE=submit VALUE="Submit"> <INPUT TYPE=reset VALUE="Reset Form">
+</FORM>
+<!--#include file="include/footer.html"-->
+</BODY>
+</HTML>
+
+<!--
+WARRANTY DISCLAIMER AND COPYRIGHT NOTICE 
+
+    THE JACKSON LABORATORY MAKES NO REPRESENTATION ABOUT THE 
+    SUITABILITY OR ACCURACY OF THIS SOFTWARE OR DATA FOR ANY 
+    PURPOSE, AND MAKES NO WARRANTIES, EITHER EXPRESS OR IMPLIED, 
+    INCLUDING THE WARRANTIES OF MERCHANTABILITY AND FITNESS FOR 
+    A PARTICULAR PURPOSE OR THAT THE USE OF THIS SOFTWARE OR DATA 
+    WILL NOT INFRINGE ANY THIRD PARTY PATENTS, COPYRIGHTS, 
+    TRADEMARKS OF OTHER RIGHTS. IT IS PROVIDED "AS IS." 
+
+    This software and data are provided as a service to the scientific 
+    community to be used only for research and educational purposes. Any
+    commercial reproduction is prohibited without the prior written 
+    permission of The Jackson Laboratory. 
+
+    Copyright © 1996 The Jackson Laboratory All Rights Reserved 
+-->

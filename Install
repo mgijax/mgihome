@@ -1,0 +1,122 @@
+#!/bin/sh
+
+# variable definitions (edit as needed)
+
+CONFIGURATION=Configuration
+PYTHON_REL=../bin/python
+CONFIG_REL=../lib/python/config.pyc
+
+# includeLinker function - create a ../include symbolic link in the current
+# directory and in each subdirectory
+
+includeLinker() {
+	# do this directory
+	ln -s ../include include
+
+	# then do all subdirectories recursively
+	for name in `ls`
+	do
+		if [ -d $name ]; then
+			cd $name
+			(includeLinker)
+			cd ..
+		fi
+	done
+	}
+
+# ensure that the config file exists
+
+if test ! -r $CONFIGURATION
+then
+	echo "Missing configuration file.  Please create $CONFIGURATION."
+	exit 1
+fi
+
+# read variables from the config file
+
+exec 4<&0
+exec < $CONFIGURATION
+while read name value junk
+do
+	case "$name" in
+		WI_PATH)
+			WI_PATH=$value;;
+		MGIHOME_PATH)
+			MGIHOME_PATH=$value;;
+		PYTHON)
+			PYTHON=$value;;
+		GROUP)
+			GROUP=$value;;
+		TITLE)
+			TITLE=$value;;
+		[A-z]*)
+			;;	# other parms are not needed by Install
+	esac
+done
+exec 0<&4
+
+# remember the top-level directory
+
+TOP=`pwd`
+
+# make bin directory and add the Python link
+
+mkdir bin
+cd bin
+ln -s $PYTHON python
+cd $TOP
+
+# output the title as an include file
+
+echo $TITLE > www/include/title.html
+
+# add links to the include directory under all subdirectories of www
+
+for dir in `ls www`
+do
+	cd www/$dir
+	if [ -d include ]; then
+		rm include
+	fi
+	ln -s ../include include
+	cd $TOP
+done
+
+# compile python libraries and make sure they're readable
+
+cd lib/python
+rm *pyc
+$PYTHON -c 'import compileall; compileall.compile_dir(".")'
+chgrp www lib/python/*pyc
+chmod 750 lib/python/*pyc
+cd $TOP
+
+# make sure the www directory is readable and executable by the right group
+
+chgrp -R www www
+chmod -R 750 www
+
+# add links to python and the config file from selected directories under www/
+
+for dir in nomen lists support submissions
+do
+	cd www/$dir
+
+	if [ -f python ]; then
+		rm python
+	fi
+	ln -s ../$PYTHON_REL python
+
+	if [ -f config.pyc ]; then
+		rm config.pyc
+	fi
+	ln -s ../$CONFIG_REL config.pyc
+
+	cd $TOP
+done
+
+# add links to the include file for each directory under www
+
+cd www
+includeLinker
+cd $TOP

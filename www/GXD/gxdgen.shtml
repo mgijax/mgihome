@@ -1,0 +1,218 @@
+<HTML>
+<TITLE><!--#include file="include/title.html"--> - The Gene Expression Information Resource Project</TITLE>
+<BODY BGCOLOR="#FFFFFF"><CENTER>
+<PRE>
+<IMG SRC="jax_edinburgh_banner.gif"> 
+</PRE>
+<SMALL>
+<A HREF="../index.shtml">MGI Home Page</A>&nbsp;&nbsp;&nbsp;&nbsp;<A HREF="<!--#include file="include/wi_url.html"-->menus/expression_menu.shtml">GXD Searches</A>
+&nbsp;&nbsp;&nbsp;&nbsp;<A HREF="http://genex.hgu.mrc.ac.uk">Mouse Atlas Home Page</A>
+</SMALL>
+</CENTER>
+<P>
+<P>
+<H2> The Gene Expression Information Resource Project</H2>
+This document describes the Gene Expression Information Resource Project, a collaborative
+effort of The Jackson Laboratory, the MRC and University in Edinburgh, and associated
+laboratories in North America and Europe. Topics include
+<UL><EM>
+<LI><A HREF="#intro">Introduction</a>
+<LI><A HREF="#over">The Gene Expression Information Resource - An Overview</a>
+<LI><A HREF="#who">Who Is Doing What?</A>
+<LI><A HREF="#concept">The Gene Expression Database (GXD) - Concept and Current Status</a></EM>
+</UL>
+<H3><A NAME="intro">Introduction</A></H3>
+The process of differential gene expression generates extraordinarily  complex spatio-temporal networks 
+of gene and protein interactions. To understand the molecular mechanisms of health and disease, 
+we need to understand these networks.
+Thus, as the emphasis in biomedical research shifts from 
+identifying genes to characterizing their biological functions, knowledge of gene expression patterns 
+becomes crucial. 
+<P>
+Numerous methods of measuring gene expression have recently been developed and data on gene 
+expression are rapidly accumulating. It is no longer possible to track relevant information without using 
+electronic data storage, retrieval and display tools. It is increasingly likely, moreover, that important 
+relationships are missed because of the density and diversity of information.
+<P>
+The <em>Gene Expression Information Resource for Mouse Development</em> that we are building will combine 3D graphical displays and discrete descriptive information to make gene 
+expression data freely and widely available in formats appropriate for thorough analysis. Integration with 
+the <em>Mouse Genome Database (MGD)</em> and interconnection with other databases containing 
+DNA and protein sequence information, genetic and physical mapping data  and descriptions of disease 
+states and mutant mice will place the gene expression database into the proper biological and analytical 
+context.
+Thus, the <em>Gene Expression Information Resource</em> should provide the scientific 
+community with a tool for examining patterns of gene expression during mouse embryonic development, 
+elucidating biologically important molecular networks, and exploring the genetic programs that underlie 
+normal development and disease.
+<P>
+<H3><A NAME="over">The Gene Expression Information Resource - an Overview</A></H3>
+<IMG SRC="gxd_overview.gif">
+<P>
+The Gene Expression Information Resource will consist of three main components:<P>
+<UL>
+<LI><EM>Gene Expression Database (GXD)</EM><BR>Integrates the many types of expression data and 
+provides links to other relevant resources to place the data into the larger biological and analytical context. The time and space of gene expression is described by a  controlled Dictionary of Anatomical Terms that is part of the Anatomy Database. 
+For in situ expression assays, the textual annotations in GXD are complemented by 2D images of original expression data that are indexed via the terms from the dictionary.<P>
+<LI><EM>Anatomy Database</EM><BR>Provides the standard nomenclature for queries relating gene expression to developmental anatomy. The dictionary names the tissues and structures for each developmental stage.  Fate tables listing the progenitor(s) and derivative(s) for each structure enable analysis of differentiation pathways. A thesaurus of alternative terminology adds flexibility to database queries.
+<P>
+<LI><EM>3D Atlas</EM><BR>Provides a high resolution digital representation of mouse anatomy reconstructed from serial sections of single embryos at each representative developmental stage enabling 3D graphical display and analysis of in situ expression data. The tissues of the 3D atlas are labeled and assigned to the terms from the anatomical dictionary. This assignment provides the link to the Gene Expression Database. 
+In the intermediate term, in situ expression patterns observed can be colored-in into the 3D reconstructions. The ultimate goal is to transfer electronically digitized in situ data from different embryos into the 3D atlas.
+</UL><P>
+To meet both the short term and the long term requirement of the community, the Gene Expression 
+Resource will be developed in steps. The first available resource will be the text + 2D image system provided by GXD and the Anatomy Database. Later, 
+the 3D atlas will be integrated to enable sophisticated three-dimensional storage, display and analysis capabilities.<P>
+<P>
+<B>References</B><P>
+
+<BLOCKQUOTE>
+M. Ringwald, R. Baldock, J. Bard, M. Kaufman, J.T. Eppig, J.E. Richardson,
+J.H. Nadeau, D. Davidson. 1994. A Database for Mouse Development. Science
+265, 2033-2034.
+<P>
+M. Ringwald, G.L. Davis, A.G. Smith, L.E. Trepanier, D.A. Begley, J.E.
+Richardson, J.T. Eppig. 1997. The Mouse Gene Expression Database GXD.
+Seminars in Cell & Developmental Biology 8:489-97.
+<P>
+D. Davidson, J. Bard, R. Brune, A. Burger, C. Dubreil, W. Hill, M. Kaufman,
+J. Quinn, M. Stark, R. Baldock. 1997. The mouse atlas and graphical
+gene-expression database. Seminars in Cell & Developmental Biology
+8:509-517.
+<P>
+J. Bard, M. Kaufman, C. Dubreuil, R. Brune, A. Burger, R. Baldock, D. Davidson. 1998. An internet-accessible
+database of mouse developmental anatomy based on a systematic nomenclature. Mech. Dev. 74:111-120.
+<P>
+M. Ringwald, M.E. Mangan, J.T. Eppig, J.A. Kadin, J.E. Richardson, and the
+Gene Expression Database Group. 1999. GXD: A Gene Expression Database for
+the laboratory mouse.  Nucleic Acids Res. 27:106-112.
+
+</BLOCKQUOTE>
+
+<BR>
+<H3><A NAME="who">Who is Doing What?</A></H3>
+The Gene Expression Database is being developed by the <A HREF="gxdteam.shtml">GXD team</A> at The Jackson Laboratory. 
+Database content and interfaces are refined based on feedback from our Edinburgh collaborators and the test laboratories.<P>
+The GXD Project is supported by <A HREF="http://www.nih.gov/">NIH</A> grant <A HREF="http://commons.cit.nih.gov/crisp/owa/crisp_lib.query?p_grant=%25HD33745%25"><B>HD33745</B></A>.
+<P>
+The <EM><A HREF="http://genex.hgu.mrc.ac.uk">Mouse Atlas / Anatomy  Database</A></EM> is being developed at the <A HREF="http://genex.hgu.mrc.ac.uk/People/">MRC Human Genetics Unit</A> 
+(Edinburgh, UK) and the
+
+<A HREF="http://genex.hgu.mrc.ac.uk/People/">Anatomy
+Department, University of Edinburgh</A>
+
+in collaboration with the <A HREF="http://genex.hgu.mrc.ac.uk/People/">ESF network laboratories</A>. Data content and interfaces will be refined based on feedback from the GXD team and the test laboratories.</em><p>
+Work at Edinburgh is supported by the MRC, the BBSRC, and by the European Science Foundation.
+<p>
+<br>
+
+    
+<h3><A NAME="concept">The Gene Expression Database (GXD)</A> 
+</h3>
+<B>Concept</B><p>
+One gene can encode alternative RNAs and proteins with distinct expression
+patterns and biological activities. The different expression assays
+available give different but complementary insights into these patterns. In
+situ studies at the RNA and protein level provide the most detailed
+information with regard to time and space of expression. Northern and
+Western blot analysis reveal the number and sizes of transcripts. Methods
+such as RNAase protection and RT-PCR can detect small amounts of and small
+differences in transcripts. The analysis of cDNA clones gives detailed
+structural information. Recently developed high throughput expression
+methods will provide large amounts of quantitative expression information.
+Only by combining the various types of expression data, can we gain
+knowledge about what transcripts and proteins are produced by specific
+genes, and where, when, and to what extent these  products are expressed at
+the cellular level.
+ <p>
+<IMG SRC="gxd_poster.gif" ALIGN=LEFT>
+ The design of GXD follows this paradigm. GXD stores primary data from the different expression 
+assays. In this format the data can be integrated, new data and new assay types can be readily added, and 
+novel insights resulting from new data can be represented. The molecular probes used are conceptualized
+to be the driving force for the results reported. For  Northern- and Western blots, RT-PCR, 
+RNAase protection assays, etc., the size and the expression pattern are described separately for each
+detected band because each band represents a distinct molecular species. Sequence data will be included by 
+cross-referencing to other databases. The time and space of gene 
+expression are described by the <em>Dictionary of Anatomical Terms</em>. For in situ expression 
+assays, the text annotations in GXD are complemented by 2D images of original expression data that are 
+indexed using terms from the dictionary. Once those data have been stored in the database, one can ask 
+what probes and assays have been used to study the expression of a given gene and get back all relevant 
+expression information. Access to comprehensive,  raw expression data provides the best basis for 
+proper interpretations. Display and analysis tools are conceptualized as a separate layer of software. They 
+will provide computational support for data interpretation and for synthesizing higher order information 
+from the available primary data.<p>
+
+Integration with MGD will foster a close link to genetic and phenotypic
+data of mouse strains and mouse mutants, and GXD will build a natural
+bridge between these data. Extensive interconnections with other relevant
+databases will extend GXD's utility for analysis of gene expression
+information.<P>
+
+Expression data are and will be annotated from the literature by database
+editors. However, standard publication methods are often inadequate for
+making gene expression data available. For example, most raw data for in
+situ studies are never published but merely referred to in brief text
+summaries, and  data derived from high throughput expression methods, such
+as the analysis of high density cDNA arrays with complex probes, simply
+cannot be made available by standard publication methods. Therefore, the
+GXD project has a strong emphasis on electronic data submission from
+laboratories. Our goal is to develop an electronic framework for the
+research community that enables comprehensive and integrated storage of
+expression data for the laboratory mouse, and permits thorough and gobal
+analysis of these data.<P>
+
+<STRONG>Current Status</STRONG><p>
+
+GXD has been implemented using the Sybase relational database system.
+GXD is integrated with MGD and provides comprehensive links to other
+resources.
+<P>
+Currently, the following data are <A HREF="<!--#include file="include/wi_url.html"-->menus/expression_menu.shtml">searchable</A>:
+<P>
+<UL TYPE=DISC>
+	<LI><B><A HREF="<!--#include file="include/wi_url.html"-->searches/gxdindex_form.shtml">GXD Index</A></B>, a searchable index of research 
+	reports documenting data on endogeneous gene expression during mouse development, 
+	including references,
+	genes and embryonic stages analyzed, and expression assays used.<P>
+
+	<LI><B><A HREF="<!--#include file="include/wi_url.html"-->searches/estclone_form.shtml">Mouse cDNA data</A></B>, including I.M.A.G.E. clones.<P>
+
+	<LI><B><A HREF="<!--#include file="include/wi_url.html"-->searches/expression_form.shtml">RT-PCR, RNA in situ hybridization, Immunohistochemistry, Northern 
+and Western Blot data</A></B> 
+	
+</UL>
+<P>
+
+GXD includes a large data set of RT-PCR data reporting expression data for 517 genes in <A HREF="<!--#include file="include/wi_url.html"-->userdocs/tissues.shtml">46 tissues</A> 
+ (provided by <A HREF="<!--#include file="include/wi_url.html"-->searches/reference.cgi?46734">Tom Freeman et al</A>,The Sanger Centre, UK). 
+Additional expression data from the various assay types are now being entered into the database and made publicly
+available on a daily basis.
+<P>
+Currently, these data are acquired from the literature by database editors. In the future, we will acquire data primarily
+via electronic submission from laboratories. Prototypes of an electronic submission system are being tested and refined
+in collaboration with a number of laboratories in North America and Europe with the aim to produce a robust submission system for
+the community at large.
+
+
+
+<hr>
+<!--#include file="include/footer.html"-->
+</BODY>
+</HTML>
+<!--
+Warranty Disclaimer and Copyright Notice
+
+ THE JACKSON LABORATORY MAKES NO REPRESENTATION ABOUT THE SUITABILITY OR 
+ ACCURACY OF THIS SOFTWARE OR DATA FOR ANY PURPOSE, AND MAKES NO WARRANTIES, 
+ EITHER EXPRESS OR IMPLIED, INCLUDING MERCHANTABILITY AND FITNESS FOR A 
+ PARTICULAR PURPOSE OR THAT THE USE OF THIS SOFTWARE OR DATA WILL NOT 
+ INFRINGE ANY THIRD PARTY PATENTS, COPYRIGHTS, TRADEMARKS, OR OTHER RIGHTS.  
+ THE SOFTWARE AND DATA ARE PROVIDED "AS IS".
+
+ This software and data are provided to enhance knowledge and encourage 
+ progress in the scientific community and are to be used only for research 
+ and educational purposes.  Any reproduction or use for commercial purpose 
+ is prohibited without the prior express written permission of the Jackson 
+ Laboratory.
+
+Copyright © 1996, 1999, 2000 by The Jackson Laboratory
+All Rights Reserved
+-->

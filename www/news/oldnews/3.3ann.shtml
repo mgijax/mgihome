@@ -1,0 +1,94 @@
+
+<HTML><HEAD>
+
+<!-- This document was created from RTF source by rtftohtml version 3.0.1 -->
+<TITLE><!--#include file="include/title.html"--> - 3.3 Release Announcement</TITLE></HEAD>
+<!--#include file="include/oldlinks.html"-->
+<!--#include file="include/banner.html"-->
+<H2>
+MGD 3.3 Release Announcement</H2>
+
+<H3><em>June 12, 1997</em></H3>
+<p>
+<H3>Expressed Sequence Tag (EST) Data</H3>
+Records for 170,000 ESTs and the clones from which they are derived have
+been entered in MGD and are now accessible using the Molecular Probes and
+Segments (formerly Probes and Clones) query form. The information displayed for
+each EST includes EST name; MGI accession ID as well as hyperlinked accession
+IDs to WashU, GenBank and dbEST; link to the record for the clone from which
+the EST is derived; marker symbol for the gene (if any) with which the EST has
+been putatively associated.
+ <p>
+<H3><A HREF="http://www-genome.wi.mit.edu/cgi-bin/mouse/index">MIT</A> Mouse Physical Mapping Data</H3>
+An ongoing project at MIT has been to build a CONTIG map of the mouse
+using MIT markers and STSs mapped against a mouse YAC library. This information
+has been loaded into MGD and is accessible using the <A HREF="/mldp.html">Mapping Data</A> (formerly
+Genetic Mapping Data) query form. A new experiment type, <B>CONTIG</B>, has been added
+to the form to enable searching for records of this type.
+<p>
+<H3>MGI Accession ID</H3>
+All records in MGD have been assigned new MGI Accession IDs. The format is
+<B>MGI:####</B> where #### can be any number from 1-up. Currently, references are
+still assigned J numbers. The older format MGD accession numbers assigned to
+marker and mapping experiment records are retained in the database. So, if you
+see an accession number such as "MGD-MRK-1330" mentioned in a publication, you
+can still use this number to search MGD for the record. The older format MGD
+accession numbers for probes and clones have been replaced by MGI accession IDs.
+<p>
+<H3><A HREF="/accession.html">Accession ID Query Form</A></H3>
+<b></b>This new query form enables you to search for records in MGD by an MGI
+or MGD accession number, or by any foreign accession ID stored in MGD. For
+example, if you search by the GenBank ID "M22381", you will retrieve a listing
+of all probes in MGD related to this sequence. The MGD listing also provides a
+link to the external database from which the foreign accession ID originates.
+<p>
+<H3>Accession ID Fields on Other MGD Query Forms</H3>
+The database supports a generalized concept of accession ID so that you can use
+the Accession ID field on a query form to search by any type of Accession ID
+that might relate to an MGD record. For example, on the <A HREF="/mbib.html">References</A> query form,
+in the <B>Reference Accession ID</B>  field you can enter either an MGI Accession ID, a J number, or a Medline ID to search for an MGD reference record. <p>
+<p>
+<A HREF="/probe.html"><H3>Molecular Probes and Segments</A> Query form</H3>
+The "PCR Primers" query form has been dropped from the MGD interface and the "Probes and Clones" query form has been renamed Molecular Probes and Segments query form. The database tables for primers and probes have been merged and both kinds of records are searchable using this form. <B>Primer</B> has
+been added to the <B>Sequence type</B> selection list on this form to enable
+searching specifically for primers. In addition, the records for ESTs and the
+clones from which they derive are searchable using this form.<p>
+
+<H3>New Field on <A HREF="/map.html">Linkage Map</A> Query Form</H3>
+The Linkage Map query form now provides an option to "Select markers
+with name containing" some string of characters. For example, suppose you want
+to see the mapping positions for all kinases assigned to Chromosome 2. You
+would select Chromosome 2 and type "kinase" on the new field and run the query.
+The resulting map would include only markers whose name contain the letters
+"kinase."<p>
+
+<H3>New Links to External Databases</H3>
+
+<A HREF="http://locus.jouy.inra.fr/cgi-bin/bovmap/intro2.pl">BovMap</A>: MGD provides links to  BovMap through homology records.<br>
+
+<A HREF="http://www.ncbi.nlm.nih.gov/dbEST/index.html">dbEST</A>, <A HREF="http://genome.wustl.edu/est/esthmpg.html">WashU</A>: MGD links to these resources through EST records. <br>
+
+<A HREF=" http://www-bio.llnl.gov/bbrp/bbrp.homepage.html">LLNL</A>, <A HREF="http://www.atcc.org/">ATCC</A>: MGD links to these resources through EST clone records.<br><p>
+
+<EM>See</EM> the <A HREF="3.3relnotes.html">MGD 3.3 Release Notes</A> for details on these changes.<br><HR>
+<!--#include file="include/footer.html">
+
+</body></html>
+<!--
+WARRANTY DISCLAIMER AND COPYRIGHT NOTICE 
+
+    THE JACKSON LABORATORY MAKES NO REPRESENTATION ABOUT THE 
+    SUITABILITY OR ACCURACY OF THIS SOFTWARE OR DATA FOR ANY 
+    PURPOSE, AND MAKES NO WARRANTIES, EITHER EXPRESS OR IMPLIED, 
+    INCLUDING THE WARRANTIES OF MERCHANTABILITY AND FITNESS FOR 
+    A PARTICULAR PURPOSE OR THAT THE USE OF THIS SOFTWARE OR DATA 
+    WILL NOT INFRINGE ANY THIRD PARTY PATENTS, COPYRIGHTS, 
+    TRADEMARKS OF OTHER RIGHTS. IT IS PROVIDED "AS IS." 
+
+    This software and data are provided as a service to the scientific 
+    community to be used only for research and educational purposes. Any
+    commercial reproduction is prohibited without the prior written 
+    permission of The Jackson Laboratory. 
+
+    Copyright © 1996 The Jackson Laboratory All Rights Reserved 
+-->
