@@ -35,7 +35,7 @@ REQUIRED_FIELDS = [ 'lastname',
         ]
 
 #RECIPIENT = 'mgi-help@informatics.jax.org'
-#RECIPIENT = 'mem@jax.org'
+#RECIPIENT = 'ps@jax.org'
 RECIPIENT = 'arsystem@jax.org'
 
 
@@ -230,7 +230,7 @@ def main():
 Your registration has been forwarded to the appropriate TJL Support staff.
 """
 
-                mail_header = 'Reply-to: mem@informatics.jax.org' + NL \
+                mail_header = 'Reply-to: ps@informatics.jax.org' + NL \
                         + 'Subject: Express Mail' + NL
 		fd = os.popen('%s -t %s' % (config.lookup ('SENDMAIL'), \
 			RECIPIENT), 'w')

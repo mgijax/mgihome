@@ -159,7 +159,7 @@ Your message has been received and is being forwarded to our
 <A HREF="support.shtml">User Support Group</A>.
 """
 
-		mail_header = 'Reply-to: mem@informatics.jax.org' + NL \
+		mail_header = 'Reply-to: ps@informatics.jax.org' + NL \
 			+ 'Subject: Express Mail' + NL
 		fd = os.popen('%s -t %s' % (config.lookup ('SENDMAIL'), \
 			RECIPIENT), 'w')
