@@ -7,30 +7,36 @@
 
 <BODY BGCOLOR="#ffffff">
 <hr>
-<h2><a name="heres2.7">MGI Release 2.7 Announcement - May 9, 2001</a></h2>
+<CENTER>
+<h2><a name="heres2.7">MGI Release 2.7 Announcement</a></h2>
+<BIG>May 9, 2001</BIG>
+</CENTER>
+<P>
+<b><BIG>Allele Enhancements</A></BIG></B><BR>
+<p>MGI 2.7 features enhancements and changes to the Allele query form. 
+<ul>
+ <li>There is new query field for Promoter Notes. You can use this field to search for when and where a transgene is expressed. The notes appear on the Allele detail page.<!--Promoter information is crucial for annotating transgenic alleles, and it was previously embedded in the nomenclature. Promoter vocabularies are complicated and variable and have been excluded from the official nomenclature but given representation in the database.-->
 
-<dl>
-
- <dt><h3>Allele Enhancements</h3></dt>
-<dd><ul><li>The Molecular Description section is now Molecular Information.
- <li>There is a section for additional references on the bottom of the Allele detail page. Previously, there were three kinds of references on the detail page:
-  <ul>
- <li>Original reference (one only)- reports the creation or discoveroy of a spontaneous or genetically engineered allele
- <li>Molecular description reference - describes or identifies the molecular nature of the mutaton responsible for a given phenotypic allele
- <li>Synonym references (one per synonym)- those containing an allele synonym
- </ul>
-  <p>The new fourth type of reference is associated with a phenotypic allele. The additional references are those for which an allele is used experimentally or included as a major part of a review article. The obejctive is to associate a particular allele with a set of publications. It may or may not contain information that MGD curates. 
-  <li>ES Cell Lines are now represented in the database. The Strains field populates automatically with the strain listed for that ES cell line. You can use this feature to enter and display ES cell line usage in a gene targeting event and identify the genetic background of the engineered allele.
-  <li> There is new Promoter Note field on the Allele Query Form. You can use this field to query by these notes and search for when and where a transgene is expressed. When present, the notes appear at the bottom of the Allele detail page.<!--Promoter information is crucial for annotating transgenic alleles, and it was previously embedded in the nomenclature. Promoter vocabularies are complicated and variable and have been excluded from the official nomenclature but given representation in the database.-->
- 
-<li>A new link, "Gene Expression in this mutant" takes you from the Allele detail page to the Gene Expression summary results page and a display of all expression data assayed in mice carrying the allele. From the Expression data query results page, the alleles are linked back to the Alleles Query detail page.</dd>
-
+<li>The Molecular Information (previously Molecular Description) section of the Allele Detail page may now includes the following:
+     <ul>
+      <li>Mutation(s)
+      <li>ES Cell Line (if applicable)
+      <li>ES Cell Line Strain (if ES Cell Line appears)
+      <li>Promoter
+      <li>Notes (molecular)
+      <li>Reference (molecular)
+      </ul>
+  <li>There is a new section for additional references on the Allele Detail page. The new reference is associated with a phenotypic allele used experimentally or included as a major part of a review article. The objective is to associate a particular allele with a set of publications. Previously, the page displayed three other kinds of references:
+    <ul>
+     <li>The Original Reference (one only) reports the creation or discoveroy of a spontaneous or genetically-engineered allele.<br>
+     <li>The Molecular Information reference (one only) describes or identifies the molecular nature of the mutaton responsible for a given phenotypic allele.
+     <li>Synonym references (one per synonym) contain an allele synonym.
+   </ul>
+<li><li>Also on the Detail page is <b>Gene Expression in this Mutant</b>; beside it, the number of assays appears with a link to a display on the GXD Expression Summary page of all expression data assayed in mice carrying the allele.
 <li>The Allele detail page no longer displays the Mode of Inheritance if it is not applicable.
-</ul>                            
+</ul>                           
 <p>Click here to see the new <a href="<!--#include file='include/wi_url.html'-->searches/allele_form.shtml">Alleles Query Form</a>; read all about the changes in the associated Help document, <a href="<!--#include file='include/wi_url.html'-->/userdocs/allele_help.shtml">Using the Alleles Query Form</a>.
-
- <br>
-
+<!--
  <dt><h3>Mouse/Drosophila Homologies Count</dt></h3>
  <dd>The <a href="http://prodwww/usrlocalmgi/wi/prod/www/external/ashburner/mfhomo.shtml"> Mouse/Fly Homology</a> page now displays the number of matching items at the end of the introductory material. Previously you needed to save the listing 
 to a file in  order to get the count. 
@@ -53,7 +59,7 @@ to a file in  order to get the count.
 
 <dt><h3></h3></dt>
 <dd></dd>
-</dl>
+</dl>-->
 
   
 
