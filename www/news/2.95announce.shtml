@@ -1,6 +1,6 @@
 <HTML>
 <HEAD>
-<TITLE>MGI Release 2.9 Announcement - December 5, 2002</TITLE>
+<TITLE>MGI Release 2.95 Announcement - December 5, 2002</TITLE>
 </HEAD>
 <!--#include file="include/bodyStart.html"-->
 <BODY BGCOLOR="#ffffff">
@@ -12,7 +12,7 @@
      <TD WIDTH="20%" VALIGN="center" ALIGN="left">&nbsp;</TD>
      <TD WIDTH="60%" ALIGN="center" VALIGN="center">
       <FONT COLOR="#000000" SIZE=5 FACE="Arial,Helvetica">
-      MGI Release 2.9 Announcement - March 27, 2003
+      MGI Release 2.95 Announcement - March 27, 2003
       </FONT>
      </TD>
      <TD WIDTH="20%" VALIGN="center" ALIGN="center">&nbsp;</TD>
@@ -24,18 +24,19 @@
 
 <p>MGI is pleased to announce its 2.95 release.<br>
 <ul>
-<li>The majority of the 2.95 release consists of improvements to our query forms, home pages, as well as a series of bug fixes. <br><br>
-
-<li>A new feature on the 
-<a href="<!--#include file='include/wi_url.html'-->searches/marker.cgi">Genes and Markers Query Form</a> provides an option to search by nomenclature. The summary results present a list of matches on your query term ordered by current symbol,
-current name, allele symbol, allele name, withdrawn symbol, withdrawn name, synonym, human ortholog symbol, human ortholog name, all other orthologs, and symbols but not names. Each item of information is linked to a detail page. If the item you are looking for is not present on the list, you can see at a glance how to narrow your query by altering the search string. </li><br><br>
-
-<li>Our query form help documents are now in the form of frequently asked questions (FAQs. We hope you will find them easier to use. To access help on a query form, click on the question mark at the top.  Click 
-<a href="<!--#include file='include/wi_url.html'-->userdocs/expression_help.shtml">Using the Gene Expression Data Query Form</a> to see an example. </li> <br><br>
-
 <li>We want to hear from you! Please take the time to respond to our 
 <a href="../other/mgi_survey.shtml">survey</a> and help us improve MGI resources. </li> <br><br> 
 
+<li>A new feature on the 
+<a href="<!--#include file='include/wi_url.html'-->searches/marker.cgi">Genes and Markers Query Form</a> provides an option to search by nomenclature. The summary results present a list of matches on your query term ordered by matches on the current symbol, current name, allele symbol, allele name, withdrawn symbol, withdrawn name, synonym, human ortholog symbol, human ortholog name, all other orthologs, and symbols/not names. Each item of information is linked to a detail page. If the item you are looking for is not present on the list, you can see at a glance how to narrow your query by altering the search string. </li><br><br>
+
+<li>Our new <a href="<!--#include file='include/wi_url.html'-->searches/MP_form.shtml">Mammalian Phenotype Browser</a> lets you browse or search for synonyms or structures associated with phenotype categories. You can use the vocabulary to annotate genes and the descriptive terms as search criteria for finding genes.</li><br><br>
+
+<li>Our query form help documents are now in the form of frequently asked questions (FAQs). We hope you will find them easier to use. To access help on a query form, click on the question mark at the top.  Click 
+<a href="<!--#include file='include/wi_url.html'-->userdocs/expression_help.shtml">Using the Gene Expression Data Query Form</a> to see an example. </li> <br><br>
+
+
+<li>The remainder of the 2.95 release consists of improvements to our web pages and several bug fixes.<br><br>
 
 </ul>
   
