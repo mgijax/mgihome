@@ -1,0 +1,88 @@
+<HTML>
+<HEAD>
+<TITLE>MGI Release of FANTOM2 Data - January 24, 2003</TITLE>
+</HEAD>
+<BODY BGCOLOR="#ffffff">
+<!--#include file="include/bodyStart.html"-->
+<TABLE WIDTH="100%" BORDER=0 CELLPADDING=2 CELLSPACING=1>
+ <TR>
+  <TD WIDTH="100%" BGCOLOR="#D0E0F0">
+   <TABLE WIDTH="100%" BORDER=0 CELLPADDING=0 CELLSPACING=0>
+    <TR>
+     <TD WIDTH="20%" VALIGN="center" ALIGN="left">&nbsp;</TD>
+     <TD WIDTH="60%" ALIGN="center" VALIGN="center">
+      <FONT COLOR="#000000" SIZE=5 FACE="Arial,Helvetica">MGI Release of FANTOM2 Data - January 24, 2003
+      </FONT>
+     </TD>
+     <TD WIDTH="20%" VALIGN="center" ALIGN="center">&nbsp;</TD>
+    </TR>
+   </TABLE>
+  </TD>
+ </TR>
+</TABLE>
+<p>
+In collaboration with the Genome Exploration Research Group of the RIKEN Institute of Physical and Chemical Research in Japan and the National Center of Biotechnology Information (NCBI), Mouse Genome Informatics has released integrated information regarding the FANTOM2 mouse cDNA clone set (see 
+<a href="<!--#include file='include/wi_url.html'-->searches/reference.cgi?80961">J:80000</a>). 
+The FANTOM2 set consists of 60,770 mouse cDNA clones isolated from full-length 
+enriched libraries.  This set contains 21,076 cDNAs from the FANTOM1 effort 
+(see 
+<a href="<!--#include file='include/wi_url.html'-->searches/reference.cgi?66006">J:65060)</a>, 
+included for reannotation, and 39,694 novel FANTOM2 clones.  Clone and sequence 
+information for these data are now available via standard MGI queries and MouseBLAST.  All FANTOM2 new clones were issued DDBJ sequence identifiers, and many of the FANTOM1 clones that were not issued sequence identifiers for the FANTOM1 release were resequenced in FANTOM2 and issued sequence identifiers.  However, there remain 801 FANTOM1 clones without DDBJ sequence identifiers.  Composite sequences for these clones, obtained by combining incomplete RIKEN sequence with public EST data, are queriable via MouseBLAST and available in FASTA 
+format at the <a href="http://fantom2.gsc.riken.go.jp/db/">FANTOM2 web site</a>.
+
+Associations between RIKEN clones and existing MGI genes were established by a combination of curatorial and automated methods as part of a effort to annotate function for the FANTOM2 clones by the RIKEN group and the FANTOM2 Consortium.  For this load into MGI, the FANTOM2 data were associated with 19,988 gene records, 3,036 of which are novel to MGI.  As was done for the FANTOM1 data, new mouse genes discovered in the RIKEN clone set have been assigned official nomenclature in MGI following a defined syntax:
+<blockquote>
+Gene Symbol&nbsp;=&nbsp; &lt;Riken Clone Identifier&gt;"Rik"<br>
+Gene Name&nbsp;=&nbsp; "Riken cDNA" &lt;Riken Clone Identifier&gt;&nbsp; "gene"<br>
+e.g. 2610307C23Rik, Riken cDNA 2610307C23 gene
+</blockquote>
+<p>
+For novel genes represented by multiple RIKEN clones that show sequence overlap (clusters), nomenclature was taken from the clone identifiers of representative clones.  The nomenclature for some novel genes was derived from ortholog gene nomenclature.  A total of 18,794 FANTOM2 clones were loaded without associations to MGI gene records; thus, the gene count for this clone set is an underestimate.  These clones will be associated to gene records following the completion of additional redundancy reduction steps.  As the new mouse genes from this clone set become better characterized, revised nomenclature and other biological data will be incorporated regularly.
+
+<p>The FANTOM2 load into MGI is being implemented in two phases.  Phase I, which is the subject of this release announcement, involves the following:
+
+<h3>Phase I</h3>
+<ul>
+<li>Molecular Segment records and source information for the FANTOM2-new clones
+<li>New gene records for FANTOM2 data that were either curated or that show no clustering discrepancies (Note: No new gene records were created for uncurated singletons for this load.)
+<li>FANTOM2-based nomenclature merges
+<li>Data associations (Molecular Segment-Gene, Seqid-Gene) and reassociations (FANTOM1 data reassociated due to FANTOM2 curation)
+<li>Problem sequence annotation 
+<li>MouseBLAST access to FANTOM2 data
+<li>Links to FANTOM2 annotation pages
+</ul>
+
+<p>Phase II of the load will be implemented over the next few weeks, and will involve the following data types:
+
+<h3>Phase II</h3>
+<ul>
+<li>Mapping data (chromosome assignments obtained from mapping the FANTOM2 data to the mouse genome assembly)
+<li>Gene Ontology (GO) associations
+<li>Nomenclature updates
+<li>Orthology data
+</ul>
+
+<p>For more information about the FANTOM2 data in MGI or this load, please contact 
+the staff of <a href="../support/tjl_inbox.shtml">MGI User Support</a> (mgi-help@informatics.jax.org).
+
+<!-- Standard footer and disclaimer -->
+<hr>
+<!--#include file="include/bodyStop.html"--></body></html>
+<!--
+Warranty Disclaimer and Copyright Notice
+ THE JACKSON LABORATORY MAKES NO REPRESENTATION ABOUT THE SUITABILITY OR 
+ ACCURACY OF THIS SOFTWARE OR DATA FOR ANY PURPOSE, AND MAKES NO WARRANTIES, 
+ EITHER EXPRESS OR IMPLIED, INCLUDING MERCHANTABILITY AND FITNESS FOR A 
+ PARTICULAR PURPOSE OR THAT THE USE OF THIS SOFTWARE OR DATA WILL NOT 
+ INFRINGE ANY THIRD PARTY PATENTS, COPYRIGHTS, TRADEMARKS, OR OTHER RIGHTS.  
+ THE SOFTWARE AND DATA ARE PROVIDED "AS IS".
+ This software and data are provided to enhance knowledge and encourage 
+ progress in the scientific community and are to be used only for research 
+ and educational purposes.  Any reproduction or use for commercial purpose 
+ is prohibited without the prior express written permission of the Jackson 
+ Laboratory.
+Copyright © 1996, 1999, 2002 by The Jackson Laboratory
+All Rights Reserved
+-->
+
