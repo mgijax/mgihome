@@ -5,11 +5,15 @@
 <BODY BGCOLOR=#FFFFFF>
 <!--#include file="include/banner.html"-->
 
-<H2>Allele and New Mutant Submission Form</H2>
-Use this submission form to describe mutant alleles: either alleles of known genes or 
-alleles where a phenotype has now identified a new gene.  Submit only those mutations 
-shown to be heritable.  Please fill in appropriate information. Click <b>Submit</b> at the 
-bottom of the form to send this information to the MGD Curator for Mutant Alleles.
+<H2>New Allele and Mutant Submissions Form</H2>
+<ul>
+<li>Use this submission form to describe mutant alleles: either alleles of known genes or alleles where a phenotype has now identified a new gene.  
+<li>Submit only those mutations shown to be heritable.  
+<li>Please fill in appropriate information. 
+<li>Click <b>Submit</b> at the bottom of the form to send this information to the MGD Curator for Mutant Alleles.
+<li>If you wish to search for existing alleles, click here: 
+<a href="<!--#include file='include/wi_url.html'-->searches/allele_form.shtml">Alleles Query Form</a>
+</ul>
 <P>
 <FORM METHOD="POST" ACTION="allmut_submit.cgi">
 <HR>
