@@ -1,3 +1,6 @@
+<!--need section on & link to vocabularies: Gene Ontology, Mouse Anatomical Dictionary, Mammalian Phenotype, Phenotype Classifications)-->
+
+
 <HTML>
 <HEAD>
 <TITLE><!--#include file='include/mgiversion.html'--> - Mouse Genome Database Overview</TITLE>
@@ -22,7 +25,7 @@ homologies among mammals, sequences, phenotypes, allelic variants and
 mutants, and strain data. (See</I> <A HREF="#aboutMGD">About MGD</A>.)
 
 <li><B>Gene Expression Database (GXD) Project</B><BR>
-GXD integrates different types of gene expression information from the mouse and provides a searchable index of published experiments on endogenous gene expression during development.  For details, see <A HREF="../GXD/aboutGXD.shtml">The Gene Expression Database (GXD)</A>.
+GXD integrates different types of gene expression information from the mouse and provides a searchable index of published experiments on endogenous gene expression during development.  (See <A HREF="../GXD/aboutGXD.shtml">The Gene Expression Database (GXD)</A>.
 <li>
 <B>Mouse Genome Sequence (MGS) Project</B><BR>
  The goal of the MGS project is to integrate emerging mouse genomic sequence data
@@ -33,7 +36,7 @@ The Mouse Genome Informatics group is a founding member of the Gene Ontology Con
 GO browser. (See <a href="../GO/project.shtml">The Gene Ontology (GO) Project</a>.)
 
 <li><b>Mouse Tumor Biology (MTB) Database</b><br>
-The goal of the <A HREF="http://tumor.informatics.jax.org/FMPro?-db=TumorInstance&-format=mtdp.html&-view">MTB</a> is to help researchers choose experimental models, review mutation patterns in specific cancers, and identify genes commonly mutated across a spectrum of cancers. The database currently holds over 10,000 tumor records. See <a href="http://tumor.informatics.jax.org/FMPro?-db=TumorInstance&-format=about_mtb.html&-findany">About the Mouse Tumor Biology Database</a>.
+The goal of the <A HREF="http://tumor.informatics.jax.org/FMPro?-db=TumorInstance&-format=mtdp.html&-view">MTB</a> is to help researchers choose experimental models, review mutation patterns in specific cancers, and identify genes commonly mutated across a spectrum of cancers. The database currently holds over 10,000 tumor records. (See <a href="http://tumor.informatics.jax.org/FMPro?-db=TumorInstance&-format=about_mtb.html&-findany">About the Mouse Tumor Biology Database</a>).
 </ul>
 
 <h3><a name="aboutMGD"></a>About MGD</h3>
@@ -81,7 +84,7 @@ cytogenetic markers and QTLs. Each record may include the marker symbol, name,ot
 chromosomal assignment, centimorgan location,
 cytogenetic band, EC number (for enzymes), phenotypic classifications,
 Gene Ontology (GO) terms, MGI  accession IDs and supporting references. (See
-<A HREF="<!--#include file='include/wi_url.html'-->userdocs/marker_help.shtml#summary">Summary</a> and <A HREF="<!--#include file='include/wi_url.html'-->userdocs/marker_help.shtml#detail">Details</a> for more information about the content of the display of a marker record as it appears in the query results.)
+<A HREF="<!--#include file='include/wi_url.html'-->userdocs/marker_summary.shtml">Using the Marker Summary Report</a> and <A HREF="<!--#include file='include/wi_url.html'-->userdocs/marker_detail.shtml">Using the Marker Detail Report</a> for more information about the content of the display of a marker record as it appears in the query results.)
 
 <P>Information on <B>alleles</B>, formerly imbedded in phenotype  descriptions, is stored as a separate data set. More information
 on alleles will be available and accessible in MGD as time goes on. Links to alleles are provided in gene detail records. In
@@ -125,10 +128,14 @@ the content of an orthology record as it appears in the query results.)
 from the <a href="<!--#include file='include/wi_url.html'-->menus/homology_menu.shtml">Orthology Menu</A> page.
 
 <h4><A NAME="sequence">Sequence Data</h4>
+<<<<<<< overview.shtml
+<P>Vast amounts of sequence data are integrated with the biological information in MGD. Mouse sequences from GenBank, RefSeq, Swiss-Prot, DoTS, and the TIGR and NIA mouse gene indices enable powerful queries from the <a href="<!--#include file='include/wi_url.html'-->/searches/sequence_form.shtml">Mouse Sequence Query Form</a>. MGI contains sequence attributes, such as length and provider, data about the clones the sequences were derived from, and the genes the sequences have been associated to. Because of our curated associations between mouse markers and sequences, users can search using information such as nomenclature, map position, function (GO annotation, InterPro domain), expression (tissue and developmental stage), and phenotypes of mutant alleles. Source information about the clones that the sequences are derived from, such as strain, tissue, or library, is carefully translated into controlled vocabularies.  This adds enormous power to sequence queries, since authors often use multiple terms to specify a strain or tissue.  </P>
+=======
 <P>Vast amounts of sequence data are integrated with the biological information in MGD. All mouse sequences from GenBank, RefSeq, Swiss-Prot, DoTS, and the TIGR and NIA mouse gene indices enable powerful queries from the <a href="<!--#include file='include/wi_url.html'-->searches/sequence_form.shtml">Mouse Sequence Query Form</a>. Users can query by attributes, such as sequence length and provider, and also by information MGI has about the clones the sequences were derived from,
 and the genes the sequence have been associated to. Because of the curated associations between mouse markers and sequences, users can search for sequences by information about these markers including nomenclature, map position, function
 (GO annotations and InterPro domains), expression (tissue and developmental
 stage), and phenotypes of mutant alleles. Source information about the clones that the sequences are derived from, such as strain, tissue, or library, is carefully translated into controlled vocabularies.  This adds enormous power to sequence queries, since authors often use multiple terms to specify a strain or tissue.  </P>
+>>>>>>> 1.6
 
 
 <h4><A NAME="map">Mapping Data</A></h4>
