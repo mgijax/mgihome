@@ -25,12 +25,13 @@
           <b><A HREF="<!--#include file='include/ftp_url.html'-->/pub/reports/index.html">Database Reports</A><br>
           <A HREF="<!--#include file='include/ftp_url.html'-->">FTP Server</A></b><br>
           </ul>
-        <FONT SIZE=3><B><a name="nomenclature"></a>Nomenclature</B></FONT><BR>
+        <FONT SIZE=3><a name="nomenclature"></a><B>Nomenclature</B></FONT>
           <UL>
           <B><A HREF="../nomen/">Mouse Gene Nomenclature</A></B><BR><EM>MGI is the official site for mouse gene nomenclature and maintains official mouse strain symbols.</EM><BR>
-          <B><A HREF="../nomen/allmut_form.shtml">Mouse Mutant Nomenclature</A></B><BR><EM>Guidelines for new heritable phenotypic alleles</EM>
+          <B><A HREF="../nomen/allmut_form.shtml">Mouse Mutant Nomenclature</A></B><BR>
+          <EM>Guidelines for new heritable phenotypic alleles</EM>
           </ul>
-          <FONT SIZE=3><A HREF="../nomen/genefamilies"><B><A name="genefamily"></a>Gene Family Information</A></B></FONT><BR><EM>Curated gene families with members from mouse and human</EM>
+          <FONT SIZE=3><B><A name="genefamily"></a><A HREF="../nomen/genefamilies/index.shtml">Gene Family Information</A></B></FONT><BR><EM>Curated gene families with members from mouse and human</EM>
         </td>
         <td align=left valign=top> <FONT SIZE=3><B>Contents</b></font>
           <ul><font size=3>
@@ -40,7 +41,7 @@
 	  <A HREF="#GEN"><B>Gene Expression Notebook</B></a><br>
     	  <A HREF="#community"><B>Community E-mail Lists</B></a><br>
     	  <A HREF="#mousegenetics"><B>Lee Silver's <i>Mouse Genetics</i></B></a><br>
-    	  <A HREF="#glossary"><B>Glossary</B></a><br>
+    	  <A HREF="#glossary"><B>MGI Glossary</B></a><br>
     	  <A HREF="#contributed"><B>Contributed Data Sets</B></a><br>
     	  <A HREF="#swresources"><B>Software Developer Resources</B></a><br>
        
@@ -75,14 +76,14 @@
 
 <tr><td colspan=2 ALIGN=LEFT VALIGN=TOP><br>
 <A name="contributed"></a>
-<A HREF="<!--#include file='include/ftp_url.html'-->/pub/datasets/index.html"><B>  Contributed Data Sets</B></A><BR>
+<A HREF="<!--#include file='include/ftp_url.html'-->pub/datasets/index.html"><B>  Contributed Data Sets</B></A><BR>
 <EM>Data contributed to MGI that are not directly integrated into MGI</EM>
 <BR>
 <EM><A HREF="../submissions/submissions_menu.shtml">How to contribute</A> your data</EM>
 </td></tr>
 
 <tr><td colspan=2 ALIGN=LEFT VALIGN=TOP><br><FONT SIZE=3><B><a name="swresources"></a>
-<A HREF="userdocs/developers_tools.shtml">Software Developer Resources</A></B></FONT><br>
+<A HREF="<!--#include file='include/wi_url.html'-->userdocs/developers_tools.shtml">Software Developer Resources</A></B></FONT><br>
 How to create links to MGI<BR>
 Schema Browser
 </td></tr>
