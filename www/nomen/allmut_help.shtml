@@ -1,4 +1,3 @@
-
 <HTML>
 <HEAD>
 <TITLE>Names and Symbols for Mutant Alleles</TITLE>
@@ -29,9 +28,9 @@ and symbol of the first identified mutant.
 <LI>Symbols of mutations conferring a recessive phenotype begin with a lower 
    case letter; dominant or semidominant phenotype symbols begin with an upper 
    case letter. <EM>For example:</em>
-   coloboma, <A HREF="<!--#include file='include/wi_url.html'-->searches/marker.cgi?1026">Cm</A>;  
+   coloboma, <A HREF="<!--#include file='include/java_url.html'-->Marker?key=1026">Cm</A>;  
    Purkinje cell degeneration, 
-   <A HREF="<!--#include file='include/wi_url.html'-->searches/marker.cgi?12199">pcd</A>.<P>
+   <A HREF="<!--#include file='include/java_url.html'-->Marker?key=12199">pcd</A>.<P>
 <LI>Further (allelic) mutations at the same locus, if they have the same 
    phenotypes, are given the same name with a lab code preceded by a serial 
    number (if more than one additional allele from the same lab). In the symbol,
@@ -52,14 +51,14 @@ but when symbolized, the new mutant symbol is superscripted to the original muta
 <EM> For example</EM>: 
 <A HREF="<!--#include file='include/wi_url.html'-->searches/allele.cgi?1055">rs<SUP>grc</SUP>
 </A>  is the "grey coat" allele of 
-<A HREF="<!--#include file='include/wi_url.html'-->searches/marker.cgi?13248">rs</A> 
+<A HREF="<!--#include file='include/java_url.html'-->Marker?key=13248">rs</A> 
 (recessive spotting).
 <P>
 <LI>Also, if a new mutation is described and named but not shown to be an allele of 
 an existing gene until later, the original name of the new mutation can be kept even if the 
 phenotype is apparently identical, but the original symbol is used, with the new mutation 
 symbol as superscript. <EM> For example</EM>:  haze is an allele of ruby-eye 2 
-(<A HREF="<!--#include file='include/wi_url.html'-->searches/marker.cgi?13281">ru2</A>), 
+(<A HREF="<!--#include file='include/java_url.html'-->Marker?key=13281">ru2</A>), 
 and hence is <A HREF="<!--#include file='include/wi_url.html'-->searches/allele.cgi?249">ru2<SUP>hz</SUP></A>.
 <P>
 <LI>A mutation caused by insertion of a transgene, but whose molecular nature is nevertheless
@@ -67,10 +66,10 @@ and hence is <A HREF="<!--#include file='include/wi_url.html'-->searches/allele.
  described mutant gene, should be given a  transgene symbol (see below).  When the insertion 
  site is cloned and/or molecularly characterized, the gene should be named and the transgene
   symbol becomes superscripted. <EM> For example </EM>: 
-  <A HREF="<!--#include file='include/wi_url.html'-->searches/marker.cgi?18569">Tg(AMY1C)1Mm</a> 
+  <A HREF="<!--#include file='include/java_url.html'-->Marker?key=18569">Tg(AMY1C)1Mm</a> 
   causes a mutation with a phenotype of vestibular and craniofacial abnormalities, maps to 
   Chromosome 18, but the gene in which the insertion site occurred is unknown.  Once identified,
-   <A HREF="<!--#include file='include/wi_url.html'-->searches/marker.cgi?18569">Tg(AMY1C)1Mm</a>
+   <A HREF="<!--#include file='include/java_url.html'-->Marker?key=18569">Tg(AMY1C)1Mm</a>
     will be a superscripted allele symbol.
 </UL>
 <hr>
@@ -88,15 +87,15 @@ Even if the identified gene is novel, we recommend that it is nevertheless given
 <H3>Wild Type Alleles and Revertants</H3>
 <p>The wild-type allele of a any gene is indicated by + as superscript to the mutant symbol.
 <EM> For example</EM>: the wild-type allele of the 
-<A HREF="<!--#include file='include/wi_url.html'-->searches/marker.cgi?12179">Pax1</A> gene is Pax1<SUP>+</SUP>
+<A HREF="<!--#include file='include/java_url.html'-->Marker?key=12179">Pax1</A> gene is Pax1<SUP>+</SUP>
  or the wild-type allele of the  
- <A HREF="<!--#include file='include/wi_url.html'-->searches/marker.cgi?12199">pcd</A> gene is pcd<sup>+</sup>.
+ <A HREF="<!--#include file='include/java_url.html'-->Marker?key=12199">pcd</A> gene is pcd<sup>+</sup>.
 
 <P>A revertant to wild-type of a mutant phenotype locus should be indicated by the symbol + with the 
 mutant symbol as superscript. Additional revertants are given a Lab Code and preceded by a serial 
 number if more than one revertant is found in a lab.  <EM> For example</EM>:  revertants to wild-type 
 of the dilute mutation of myosin 5A 
-(<A HREF="<!--#include file='include/wi_url.html'-->searches/marker.cgi?26578">Myo5a</A>) include 
+(<A HREF="<!--#include file='include/java_url.html'-->Marker?key=26578">Myo5a</A>) include 
 <A HREF="<!--#include file='include/wi_url.html'-->searches/allele.cgi?2855">Myo5a<SUP>d+</SUP></a> and 
 <A HREF="<!--#include file='include/wi_url.html'-->searches/allele.cgi?2856">Myo5a<SUP>d+2J</SUP></a>.
 <BR>
@@ -143,9 +142,9 @@ each allele.
 <LI><B>Examples</B> :
 <UL>
 <LI><A HREF="<!--#include file='include/wi_url.html'-->searches/allele.cgi?2837">Tg(Wnt1)Hev</a>.
-The mouse <A HREF="<!--#include file='include/wi_url.html'-->searches/marker.cgi?14480">Wnt1</a>
+The mouse <A HREF="<!--#include file='include/java_url.html'-->Marker?key=14480">Wnt1</a>
  sequence inserted into the mouse genome. This is the first such transgene reported using 
- <A HREF="<!--#include file='include/wi_url.html'-->searches/marker.cgi?14480">Wnt1</a> 
+ <A HREF="<!--#include file='include/java_url.html'-->Marker?key=14480">Wnt1</a> 
  by the laboratory of Harold E. Varmus (Hev).
  <p>Whether or not the transgene inserted "benignly" into the genome or whether it disrupted a
  locus is irrelevant to the nomenclature. The EXCEPTION is when the disrupted locus is identified.
@@ -157,12 +156,12 @@ reported in a publication by Corey H. Mjaatvedt (Chm).  This is the first germli
  Mjaatvedt reported using this construct.
 <P>Subsequently, the locus disrupted by the transgene insertion was identified as the gene 
 encoding the chondroitin sulfate proteoglycan 2 
-<A HREF="<!--#include file='include/wi_url.html'-->searches/marker.cgi?22783">(Cspg2)</a>. 
+<A HREF="<!--#include file='include/java_url.html'-->Marker?key=22783">(Cspg2)</a>. 
 The nomenclature now becomes 
 <A HREF="<!--#include file='include/wi_url.html'-->searches/allele.cgi?1905">
 Cspg2<sup>Tg(Hoxa1)Chm</sup></a>.
 <p>
-<LI><A HREF="<!--#include file='include/wi_url.html'-->searches/marker.cgi?47895">
+<LI><A HREF="<!--#include file='include/java_url.html'-->Marker?key=47895">
 Tg(TCF3/HLF)1Mlc</a>. The human transcription factor 3 gene and the hepatic leukemia
  factor gene were inserted and expressed as a fusion chimeric cDNA by Michael L Cleary's 
  laboratory (Mlc).  
@@ -196,11 +195,11 @@ nomenclature but will be annotated and searchable in MGD to the fullest degree.
 <UL>	
 <LI><A HREF="<!--#include file='include/wi_url.html'-->searches/allele.cgi?2175">Bmp1<SUP>tm1Blh</SUP></A>
  is a targeted mutation  generated at the bone morphogenetic protein 1 
- (<A HREF="<!--#include file='include/wi_url.html'-->searches/marker.cgi?595">Bmp1</A>) 
+ (<A HREF="<!--#include file='include/java_url.html'-->Marker?key=595">Bmp1</A>) 
  locus in the laboratory of Brigid L. Hogan (Blh).   
 <P>
 <LI><A HREF="<!--#include file='include/wi_url.html'-->searches/allele.cgi?2829">En1<SUP>tm1(Otx2)Wrst</sup></a>, 
- where the <A HREF="<!--#include file='include/wi_url.html'-->searches/marker.cgi?12112">Otx2</A> gene was knocked into the <A HREF="<!--#include file='include/wi_url.html'-->searches/marker.cgi?8510">En1</A>
+ where the <A HREF="<!--#include file='include/java_url.html'-->Marker?key=12112">Otx2</A> gene was knocked into the <A HREF="<!--#include file='include/java_url.html'-->Marker?key=8510">En1</A>
   locus as reported in the originating publication from the laboratory of W. Wurst (Wrst). Note 
   that this nomenclature form is only used when one gene is replacing another. 
 <P>
@@ -218,13 +217,13 @@ is used to designate a Lox P insertion and
 is used to designate the allele generated after mating with a Cre transgenic mouse.
 <P>NOTE: The designation of tm1.1 is only utilized when the presence of CRE generates a germ line
  transmissible event.  For example,  disruption of 
- <A HREF="<!--#include file='include/wi_url.html'-->searches/marker.cgi?29142">
+ <A HREF="<!--#include file='include/java_url.html'-->Marker?key=29142">
  Tfam</a> by Cre-Lox recombination using a 
  ubiquitously expressed beta-actin Cre transgene produces a mouse where the disruption of 
- <A HREF="<!--#include file='include/wi_url.html'-->searches/marker.cgi?29142">Tfam</A> 
+ <A HREF="<!--#include file='include/java_url.html'-->Marker?key=29142">Tfam</A> 
  is heritable.  However, in cases where the presence of Cre-Lox produces a somatic 
  event, no nomenclature is assigned.  For example, when 
- <A HREF="<!--#include file='include/wi_url.html'-->searches/marker.cgi?29142">Tfam</a>
+ <A HREF="<!--#include file='include/java_url.html'-->Marker?key=29142">Tfam</a>
   is selectively 
  disrupted in heart and skeletal muscle using a muscle creatine kinase promoter. 
  This promoter is active from embryonic day 13.  In these cases, it is best to represent the 
@@ -257,7 +256,7 @@ and rats should use the same code. The registry of these codes is maintained by 
 <P>
 <B>Example</B>: 
 <ul>	
-<A HREF="<!--#include file='include/wi_url.html'-->searches/marker.cgi?37270">Gt(ROSA)26Sor</A> 
+<A HREF="<!--#include file='include/java_url.html'-->Marker?key=37270">Gt(ROSA)26Sor</A> 
    is a gene "trapped" by the ROSA vector. It is the 26th germline transmissible event using the 
    ROSA vector from the laboratory of Phillipe Soriano.
  <p>  
