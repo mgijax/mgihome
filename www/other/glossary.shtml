@@ -42,7 +42,7 @@ Adult Mouse Anatomical Dictionary Browser</a> provides standardized nomenclature
 <LI>The <A HREF="http://www.genome.gov/glossary.cfm">Glossary of Genetic Terms</A> at the National Human Genome Research Institute defines basic genetic terms most relevant to human genetics. This glossary includes audio explanations and illustrations.</LI>
 <LI>The <A HREF="http://www.ornl.gov/TechResources/Human_Genome/glossary/">Genome Glossary</A> for the Human Genome Project defines many basic genetic terms.</LI><LI>The 
 <A HREF="http://imsr.har.mrc.ac.uk/glossary.html">International Mouse Strain Resources Glossary</A> at Harwell defines mouse cytogenetic and strain terms.</LI><LI>The 
-<A HREF="http://www.ncbi.nlm.nih.gov:80/entrez/meshbrowser.cgi">MeSH Browser</A> at <A HREF="#NCBI">NCBI</A> contains useful definitions of many terms, organized as a hierarchical controlled vocabulary.</LI><LI>The 
+<A HREF="http://www.ncbi.nlm.nih.gov/entrez/meshbrowser.cgi">MeSH Browser</A> at <A HREF="#NCBI">NCBI</A> contains useful definitions of many terms, organized as a hierarchical controlled vocabulary.</LI><LI>The 
 <A HREF="http://cancerweb.ncl.ac.uk/omd/">On-line Medical Dictionary</A> provides definitions for hundreds of medical terms used in describing mammalian phenotypes, both human and mouse.</LI><LI>The 
 <A HREF="http://www.ncbi.nlm.nih.gov/Education/BLASTinfo/glossary2.html">BLAST Glossary</A> at NCBI defines terms used in searching sequence databases.</LI><LI>The 
 <A HREF="http://www.weihenstephan.de/~schlind/genglos.html">Hypermedia Glossary of Genetic Terms</A> by Birgid Schlindwein contains over 600 genetic terms.</LI></UL>If you find an online glossary that you think should be included here, please contact 
@@ -84,9 +84,9 @@ Adult Mouse Anatomical Dictionary Browser</a> provides standardized nomenclature
 <A HREF="#mRNA">mRNA</A> sequence (from 5' to 3') during 
 <A HREF="#translation">translation</A>. See the 
 <A HREF="http://www.nhgri.nih.gov/DIR/VIP/Glossary/Illustration/base_pair.html">Figure</A> at 
-<A HREF="#NHGRI">NHGRI</A>, or the 
-<A HREF="http://www.ncbi.nlm.nih.gov:80/books/bv.fcgi?call=bv.View..ShowSection&rid=cell.figgrp.d1e2970">Figure</A> at 
-<A HREF="#NCBI">NCBI</A>. <BR>See also 
+<A HREF="#NHGRI">NHGRI</A>. <!-- or the 
+<A HREF="http://www.ncbi.nlm.nih.gov/books/bv.fcgi?call=bv.View..ShowSection&rid=cell.figgrp.d1e2970">Figure</A> at 
+<A HREF="#NCBI">NCBI</A>.--> <BR>See also 
 <A HREF="#5'">5' (5-prime)</A>, 
 <A HREF="#central_dogma">Central Dogma</A>.</dd>
 
@@ -107,9 +107,9 @@ Adult Mouse Anatomical Dictionary Browser</a> provides standardized nomenclature
 <A HREF="#mRNA">mRNA</A> sequence (from 5' to 3') during 
 <A HREF="#translation">translation</A>. See the
 <A HREF="http://www.nhgri.nih.gov/DIR/VIP/Glossary/Illustration/base_pair.html">Figure</A> at 
-<A HREF="#NHGRI">NHGRI</A>, or the 
+<A HREF="#NHGRI">NHGRI</A>.<!-- or the 
 <A HREF="http://www.ncbi.nlm.nih.gov:80/books/bv.fcgi?call=bv.View..ShowSection&rid=cell.figgrp.d1e2970">Figure</A> at 
-<A HREF="#NCBI">NCBI</A>. <BR>See also 
+<A HREF="#NCBI">NCBI</A>.--> <BR>See also 
 <A HREF="#3'">3' (3-prime)</A>, 
 <A HREF="#central_dogma">Central Dogma</A>.
 
@@ -2377,8 +2377,7 @@ Recombination may also be <B>nonreciprocal</B>, in which case the product is equ
 <A HREF="#RNA">RNA</A> molecule by 
 <A HREF="#enzyme">enyzmatic</A> modification of individual 
 <A HREF="#base">bases</A> without normal 
-<A HREF="#splicing">splicing</A>. See 
-<A HREF="http://www.ncbi.nlm.nih.gov/books/bv.fcgi?call=bv.View..ShowSection&rid=cell.figgrp.d1e37981">Figure 9-80</a> from Alberts et al. for an example of RNA editing that uses a splicing-like mechanism.
+<A HREF="#splicing">splicing</A>.<!--See <A HREF="http://www.ncbi.nlm.nih.gov/books/bv.fcgi?call=bv.View..ShowSection&rid=cell.figgrp.d1e37981">Figure 9-80</a> from Alberts et al. for an example of RNA editing that uses a splicing-like mechanism.-->
 
 <P><DT><B><A NAME="RNA_polymerase">RNA Polymerase</A></B><DD>An 
 <A HREF="#enzyme">enzyme</A> that carries out 
