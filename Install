@@ -1,10 +1,14 @@
 #!/bin/sh
 
+# remember the top-level directory
+
+TOP=`pwd`
+
 # variable definitions (edit as needed)
 
 CONFIGURATION=Configuration
-PYTHON_REL=../bin/python
-CONFIG_REL=../lib/python/config.pyc
+PYTHON_REL=$TOP/bin/python
+CONFIG_REL=$TOP/lib/python/config.pyc
 
 # includeLinker function - create a ../include symbolic link in the current
 # directory and in each subdirectory
@@ -63,10 +67,6 @@ do
 done
 exec 0<&4
 
-# remember the top-level directory
-
-TOP=`pwd`
-
 # make bin directory and add the Python link
 
 if [ ! -d bin ]; then
@@ -91,29 +91,35 @@ chgrp www *pyc
 chmod 750 *pyc
 cd $TOP
 
-# make sure the www directory is executable by the right group
+# add links to python and the config file from selected directories
 
-chmod -R 750 www
-chgrp -R www www
-
-# add links to python and the config file from selected directories under www/
-
-for dir in nomen lists support submissions
+for dir in www/nomen www/lists www/support www/submissions admin
 do
-	cd www/$dir
+	cd $dir
 
 	if [ -h python ]; then
 		rm python
 	fi
-	ln -s ../$PYTHON_REL python
+	ln -s $PYTHON_REL python
 
 	if [ -h config.pyc ]; then
 		rm config.pyc
 	fi
-	ln -s ../$CONFIG_REL config.pyc
+	ln -s $CONFIG_REL config.pyc
 
 	cd $TOP
 done
+
+# generate any include files
+
+cd admin
+gen_includes
+cd ..
+
+# make sure the www directory is executable by the right group
+
+chmod -R 750 www
+chgrp -R www www
 
 # add links to the include file for each directory under www
 
