@@ -122,6 +122,12 @@ else:
 	CONFIG = pickle.load (fp)
 	fp.close ()
 
+# add the MGI Home library directory to the python path
+
+libdir = os.path.join (lookup ('MGIHOME_PATH'), 'lib/python')
+if libdir not in sys.path:
+	sys.path.insert (0, libdir)
+
 # add the WI library directory to the python path
 
 libdir = os.path.join (lookup ('WI_PATH'), 'lib/python')
