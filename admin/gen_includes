@@ -25,6 +25,7 @@ def main ():
 		'../www/include/mgihome_url.html')
 	stringToFile (config.lookup ('TUTORIAL_URL'), \
 		'../www/include/tutorial_url.html')
+	stringToFile (config.lookup ('GB_URL'), '../www/include/gb_url.html')
 	return
 
 if __name__ == '__main__':
