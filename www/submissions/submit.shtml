@@ -1,6 +1,8 @@
 <HTML>
 <HEAD>
    <TITLE><!--#include file='include/mgiversion.html'--> - Submitting Data to the Mouse Genome Database (MGD)</TITLE>
+<LINK REL="stylesheet" TYPE="text/css" HREF="../stylesheet/mgihome.css">
+
 </HEAD>
 <BODY BGCOLOR="#FFFFFF">
 <!--#include file="include/bodyStart.html"-->
@@ -22,452 +24,436 @@
  </TR>
 </TABLE>
 
-<p><FONT FACE="Times New Roman,Times">The Mouse Genome Database (MGD) accepts
+<p>The Mouse Genome Database (MGD) accepts
 electronic data submissions from the scientific community. Any type of
 data that MGD maintains can be submitted as an electronic contribution,
 although mapping data, polymorphisms, and mammalian orthologies are currently
 the most common. Each electronic submission receives a permanent database
-accession ID.</FONT>
+accession ID.
 
-<P><FONT FACE="Times New Roman,Times">All data sets are associated with
+<P>All data sets are associated with
 either an electronic submission reference or a published paper. MGD reference
 pages provide links to associated data sets. <I>Mammalian Genome</I> will
 publish a list enumerating the data electronically submitted to MGD, including
 accession ID, chromosome, and locus symbols as a cross-referencing service
-for readers.</FONT>
+for readers.
 <H2>
-<FONT FACE="Times New Roman,Times"><FONT SIZE=+1>General Guidelines</FONT></FONT></H2>
+General Guidelines</H2>
 
 <UL>
 <LI>
-<FONT FACE="Times New Roman,Times">Select the Data Sections relevant to
+Select the Data Sections relevant to
 your electronic submission.&nbsp; Review the detailed examples and additional
 instructions by selecting the appropriate hyper-text links.&nbsp; The data
 contained in the samples is for exemplary purposes only and is not to be
-mistaken for actual data.</FONT></LI>
+mistaken for actual data.</LI>
 
 <LI>
-<FONT FACE="Times New Roman,Times">If you are reporting original data for
+If you are reporting original data for
 more than one chromosome/experiment, please submit individual data sections
-for each.</FONT></LI>
+for each.</LI>
 
 <LI>
-<FONT FACE="Times New Roman,Times">Follow the format and file type guidelines
+Follow the format and file type guidelines
 given in each section.&nbsp; For example, submit mapping data either as
 an Excel file or tab-delimited text attached to an E-mail message.&nbsp;
 Your submission should consist of one E-mail message with data files attached
-as necessary.&nbsp; Be sure to label each data section.</FONT></LI>
+as necessary.&nbsp; Be sure to label each data section.</LI>
 
 <LI>
-<FONT FACE="Times New Roman,Times">All symbols for genes or genetic markers
+All symbols for genes or genetic markers
 must be verified as valid before submitting data.&nbsp; Please check symbols
-against the MGD marker data:</FONT></LI>
+against the MGD marker data:</LI>
 
-<UL><FONT FACE="Times New Roman,Times"><FONT COLOR="#1822CD"><A HREF="<!--#include file="include/wi_url.html"-->searches/marker_form.shtml">http://www.informatics.jax.org/searches/marker_form.shtml</A></FONT></FONT></UL>
-
-<LI>
-<FONT FACE="Times New Roman,Times">For new loci, request symbol approval
-through on-line symbol registry form:</FONT></LI>
-
-<UL><FONT FACE="Times New Roman,Times"><FONT COLOR="#1822CD">
-<A HREF="../nomen">http://www.informatics.jax.org/mgihome/nomen</A></FONT></FONT></UL>
+<UL><FONT COLOR="#1822CD"><A HREF="<!--#include file="include/wi_url.html"-->searches/marker_form.shtml">http://www.informatics.jax.org/searches/marker_form.shtml</A></UL>
 
 <LI>
-<FONT FACE="Times New Roman,Times">Submissions and data questions should
-be E-mailed to:</FONT></LI>
+For new loci, request symbol approval
+through on-line symbol registry form:</LI>
 
-<UL><FONT FACE="Times New Roman,Times"><FONT COLOR="#1822CD"><A HREF="mailto:submissions@informatics.jax.org">submissions@informatics.jax.org</A></FONT></FONT></UL>
-
-<LI>
-<FONT FACE="Times New Roman,Times"><FONT COLOR="#291A10">To speak with
-a member of User Support call:</FONT></FONT></LI>
-
-<UL><FONT FACE="Times New Roman,Times">207-288-6445</FONT></UL>
+<UL><FONT COLOR="#1822CD">
+<A HREF="../nomen">http://www.informatics.jax.org/mgihome/nomen</A></UL>
 
 <LI>
-<FONT FACE="Times New Roman,Times">Send manuscripts (if applicable as an
-adjunct to your electronic submission) to:</FONT></LI>
+Submissions and data questions should
+be E-mailed to:</LI>
 
-<UL><FONT FACE="Times New Roman,Times">MGD Data Submissions</FONT>
-<BR><FONT FACE="Times New Roman,Times">The Jackson Laboratory</FONT>
-<BR><FONT FACE="Times New Roman,Times">600 Main Street</FONT>
-<BR><FONT FACE="Times New Roman,Times">Bar Harbor, ME 04609</FONT>
-<BR><FONT FACE="Times New Roman,Times">fax: 207-288-6132</FONT></UL>
+<UL><FONT COLOR="#1822CD"><A HREF="mailto:submissions@informatics.jax.org">submissions@informatics.jax.org</A></UL>
+
+<LI>
+<FONT COLOR="#291A10">To speak with
+a member of User Support call:</LI>
+
+<UL>207-288-6445</UL>
+
+<LI>
+Send manuscripts (if applicable as an
+adjunct to your electronic submission) to:</LI>
+
+<UL>MGD Data Submissions
+<BR>The Jackson Laboratory
+<BR>600 Main Street
+<BR>Bar Harbor, ME 04609
+<BR>fax: 207-288-6132</UL>
 </UL>
 
 <H3>
-<FONT FACE="Times New Roman,Times"><FONT COLOR="#291A10"><FONT SIZE=+1>Detailed
-Instructions and Links to Examples</FONT></FONT></FONT></H3>
+<FONT COLOR="#291A10">Detailed
+Instructions and Links to Examples</H3>
 
 <H4>
-<FONT FACE="Times New Roman,Times"><FONT COLOR="#EF1F1D">Data Section I&nbsp;</FONT>
-Reference Information&nbsp; <FONT COLOR="#1822CD"><A HREF="submit_sample.shtml#ref" TARGET="ike">Sample</A></FONT></FONT></H4>
-<FONT FACE="Times New Roman,Times">This section must be completed for all
+<FONT COLOR="#EF1F1D">Data Section I&nbsp;
+<P>Reference Information&nbsp; <FONT COLOR="#1822CD"><A HREF="submit_sample.shtml#ref" TARGET="ike">Sample</A></H4>
+This section must be completed for all
 data sets and can be included in the body of an E-mail message.&nbsp; The
 reference information should include the following items as applicable
-to your submission:</FONT>
-<UL>
+to your submission:
+</P><UL>
 <LI>
-<FONT FACE="Times New Roman,Times">Corresponding author</FONT></LI>
+Corresponding author</LI>
 
 <LI>
-<FONT FACE="Times New Roman,Times">Institution</FONT></LI>
+Institution</LI>
 
 <LI>
-<FONT FACE="Times New Roman,Times">Address</FONT></LI>
+Address</LI>
 
 <LI>
-<FONT FACE="Times New Roman,Times">E-mail</FONT></LI>
+E-mail</LI>
 
 <LI>
-<FONT FACE="Times New Roman,Times">Phone</FONT></LI>
+Phone</LI>
 
 <LI>
-<FONT FACE="Times New Roman,Times">Complete author list with institutions</FONT></LI>
+Complete author list with institutions</LI>
 
 <LI>
-<FONT FACE="Times New Roman,Times">Title of submission</FONT></LI>
+Title of submission</LI>
 
 <LI>
-<FONT FACE="Times New Roman,Times">Status:</FONT></LI>
+Status:</LI>
 
-<UL><FONT FACE="Times New Roman,Times">___ submitted as electronic-only
-data set</FONT>
-<BR><FONT FACE="Times New Roman,Times">___ submitted to a journal (journal
-name:___________)</FONT>
-<BR><FONT FACE="Times New Roman,Times">___ accepted for publication&nbsp;
-(journal name: __________)</FONT></UL>
-
-<LI>
-<FONT FACE="Times New Roman,Times">Are you requesting data privacy? (Y
-/ N)</FONT></LI>
+<UL>___ submitted as electronic-only
+data set
+<BR>___ submitted to a journal (journal
+name:___________)
+<BR>___ accepted for publication&nbsp;
+(journal name: __________)</UL>
 
 <LI>
-<FONT FACE="Times New Roman,Times">Abstract&nbsp; (Optional, only for data
-that are electronic-submission)</FONT></LI>
+Are you requesting data privacy? (Y
+/ N)</LI>
+
+<LI>
+Abstract&nbsp; (Optional, only for data
+that are electronic-submission)</LI>
 </UL>
 
-<H4>
-<FONT FACE="Times New Roman,Times"><FONT COLOR="#EF1F1D">Data Section II
-</FONT>Genetic Mapping Information&nbsp; <FONT COLOR="#1822CD"><A HREF="submit_sample.shtml#gmi" TARGET="ike">Sample</A></FONT></FONT></H4>
-<FONT FACE="Times New Roman,Times">For mapping data, provide the following
-on separate lines in the body of an E-mail message:</FONT>
+<H4><FONT COLOR="#EF1F1D">Data Section II
+Genetic Mapping Information&nbsp; <FONT COLOR="#1822CD"><A HREF="submit_sample.shtml#gmi" TARGET="ike">Sample</A></H4>
+For mapping data, provide the following
+on separate lines in the body of an E-mail message:
 <UL>
 <LI>
-<FONT FACE="Times New Roman,Times">Approved symbol of primary locus mapped</FONT></LI>
+Approved symbol of primary locus mapped</LI>
 
 <LI>
-<FONT FACE="Times New Roman,Times">Name of locus mapped</FONT></LI>
+Name of locus mapped</LI>
 
 <LI>
-<FONT FACE="Times New Roman,Times">Chromosome and map position (cytogenetic
-band or cM position)</FONT></LI>
+Chromosome and map position (cytogenetic
+band or cM position)</LI>
 
-<BR><FONT FACE="Times New Roman,Times">&nbsp;</FONT></UL>
+<BR>&nbsp;</UL>
 
-<H4>
-<FONT FACE="Times New Roman,Times"><FONT COLOR="#EF1F1D">Data Section III
-</FONT>Linkage Experiments&nbsp; <FONT COLOR="#1822CD"><A HREF="submit_sample.shtml#lci" TARGET="ike">Sample</A></FONT></FONT></H4>
-<FONT FACE="Times New Roman,Times">For each Linkage Experiment complete
+<H4><FONT COLOR="#EF1F1D">Data Section III
+<P>Linkage Experiments&nbsp; <FONT COLOR="#1822CD"><A HREF="submit_sample.shtml#lci" TARGET="ike">Sample</A></H4>
+For each Linkage Experiment complete
 the following as they apply to your data on separate lines in the body
-of an E-mail message:</FONT>
-<UL>
-<LI>
-<FONT FACE="Times New Roman,Times">DNA mapping panel used</FONT></LI>
+of an E-mail message:
+</P><UL>
+<LI>DNA mapping panel used</LI>
+<LI>Female parent</LI>
+<LI>Male parent</LI>
+<LI>Key to symbols used in typings</LI>
+<LI>Chromosome</LI>
+<LI>Total number of chromosomes typed</LI>
+</UL>
 
-<LI>
-<FONT FACE="Times New Roman,Times">Female parent</FONT></LI>
-
-<LI>
-<FONT FACE="Times New Roman,Times">Male parent</FONT></LI>
-
-<LI>
-<FONT FACE="Times New Roman,Times">Key to symbols used in typings</FONT></LI>
-
-<LI>
-<FONT FACE="Times New Roman,Times">Chromosome</FONT></LI>
-
-<LI>
-<FONT FACE="Times New Roman,Times">Total number of chromosomes typed</FONT></LI>
-
-<BR><FONT FACE="Times New Roman,Times">&nbsp;</FONT></UL>
-
-<H4>
-<FONT FACE="Times New Roman,Times"><FONT COLOR="#EF1F1D">Data Section IV
-</FONT></FONT><FONT FACE="Times
-New Roman,Times"><FONT COLOR="#291A10">Haplotype
-Data</FONT></FONT><FONT FACE="Times New Roman,Times">&nbsp; <FONT COLOR="#1822CD"><A HREF="submit_sample.shtml#sh" TARGET="ike">Sample</A></FONT></FONT></H4>
-<FONT FACE="Times New Roman,Times">Haplotype data should be submitted as
+<H4><FONT COLOR="#EF1F1D">Data Section IV
+<FONT COLOR="#291A10">Haplotype
+Data&nbsp; <FONT COLOR="#1822CD"><A HREF="submit_sample.shtml#sh" TARGET="ike">Sample</A></H4>
+Haplotype data should be submitted as
 a file attached to the E-mail contents above in either Excel or tab-delimited
 text format.&nbsp; If your locus was mapped using the Jax BSS or Jax BSB
 mapping panels, you need not provide haplotype data. For loci mapped using
-other mapping panels, be sure to include the following items:</FONT>
+other mapping panels, be sure to include the following items:
 <UL>
 <LI>
-<FONT FACE="Times New Roman,Times">Approved locus symbols</FONT></LI>
+Approved locus symbols</LI>
 
 <LI>
-<FONT FACE="Times New Roman,Times">Typings (according to your key)</FONT></LI>
+Typings (according to your key)</LI>
 
 <LI>
-<FONT FACE="Times New Roman,Times">Assay type</FONT></LI>
+Assay type</LI>
 
 <LI>
-<FONT FACE="Times New Roman,Times">Probe/Primer pair name</FONT></LI>
+Probe/Primer pair name</LI>
 
 <LI>
-<FONT FACE="Times New Roman,Times">Number of chromosomes typed</FONT></LI>
+Number of chromosomes typed</LI>
 
-<BR><FONT FACE="Times New Roman,Times">&nbsp;</FONT></UL>
+<BR>&nbsp;</UL>
 
 <H4>
-<FONT FACE="Times New Roman,Times"><FONT COLOR="#EF1F1D">Data Section V</FONT><B>
+<FONT COLOR="#EF1F1D">Data Section V<B>
 <FONT COLOR="#000000">Recombinant Inbred/Recombinant Congenic
-Experiments</FONT></B>&nbsp; <FONT COLOR="#1822CD">
-<A HREF="submit_sample.shtml#ri" TARGET="ike">Sample</A></FONT></FONT></H4>
-<FONT FACE="Times New Roman,Times">In the body of an E-mail message, be
-sure to include the following items:</FONT>
+Experiments</B>&nbsp; <FONT COLOR="#1822CD">
+<A HREF="submit_sample.shtml#ri" TARGET="ike">Sample</A></H4>
+In the body of an E-mail message, be
+sure to include the following items:
 <UL>
 <LI>
-<FONT FACE="Times New Roman,Times">RI or RC set designation</FONT></LI>
+RI or RC set designation</LI>
 
 <LI>
-<FONT FACE="Times New Roman,Times">If this is a newly created set, specify
-progenitors</FONT></LI>
+If this is a newly created set, specify
+progenitors</LI>
 
 <LI>
-<FONT FACE="Times New Roman,Times">Key to symbols used in typings</FONT></LI>
+Key to symbols used in typings</LI>
 
 <LI>
-<FONT FACE="Times New Roman,Times">Chromosome</FONT></LI>
+Chromosome</LI>
 </UL>
-<FONT FACE="Times New Roman,Times"><FONT COLOR="#000000">Recombinant Inbred/Recombinant
-Congenic tables </FONT>should be submitted as a file attached to the E-mail
+<FONT COLOR="#000000">Recombinant Inbred/Recombinant
+Congenic tables should be submitted as a file attached to the E-mail
 contents above in either Excel or tab-delimited text format.&nbsp; In your
-table, be sure to include:</FONT>
+table, be sure to include:
 <UL>
 <LI>
-<FONT FACE="Times New Roman,Times">Approved locus symbols</FONT></LI>
+Approved locus symbols</LI>
 
 <LI>
-<FONT FACE="Times New Roman,Times">Individual RI/RC strain designations</FONT></LI>
+Individual RI/RC strain designations</LI>
 
 <LI>
-<FONT FACE="Times New Roman,Times">Typings (according to your key)</FONT></LI>
+Typings (according to your key)</LI>
 
 <LI>
-<FONT FACE="Times New Roman,Times">Assay type</FONT></LI>
+Assay type</LI>
 
 <LI>
-<FONT FACE="Times New Roman,Times">Probe/Primer pair name</FONT></LI>
+Probe/Primer pair name</LI>
 
-<BR><FONT FACE="Times New Roman,Times">&nbsp;</FONT></UL>
+<BR>&nbsp;</UL>
 
 <H4>
-<FONT FACE="Times New Roman,Times"><FONT COLOR="#EF1F1D">Data Section VI
-</FONT><B><FONT COLOR="#000000">FISH Experiments</FONT></B>&nbsp; 
+<FONT COLOR="#EF1F1D">Data Section VI
+<B><FONT COLOR="#000000">FISH Experiments</B>&nbsp; 
 <FONT COLOR="#1822CD">
-<A HREF="submit_sample.shtml#fi" TARGET="ike">Sample</A></FONT></FONT></H4>
-<FONT FACE="Times New Roman,Times">For FISH data, complete the following
-as they apply to your data on separate lines in the body of an E-mail message:</FONT>
+<A HREF="submit_sample.shtml#fi" TARGET="ike">Sample</A></H4>
+For FISH data, complete the following
+as they apply to your data on separate lines in the body of an E-mail message:
 <UL>
 <LI>
-<FONT FACE="Times New Roman,Times">Approved locus symbol</FONT></LI>
+Approved locus symbol</LI>
 
 <LI>
-<FONT FACE="Times New Roman,Times">Chromosome</FONT></LI>
+Chromosome</LI>
 
 <LI>
-<FONT FACE="Times New Roman,Times">Cytogenetic band</FONT></LI>
+Cytogenetic band</LI>
 
 <LI>
-<FONT FACE="Times New Roman,Times">Cell type</FONT></LI>
+Cell type</LI>
 
 <LI>
-<FONT FACE="Times New Roman,Times">Strain</FONT></LI>
+Strain</LI>
 
 <LI>
-<FONT FACE="Times New Roman,Times">Karyotype method</FONT></LI>
+Karyotype method</LI>
 
 <LI>
-<FONT FACE="Times New Roman,Times">Probe name</FONT></LI>
+Probe name</LI>
 
 <LI>
-<FONT FACE="Times New Roman,Times">Label</FONT></LI>
+Label</LI>
 
 <LI>
-<FONT FACE="Times New Roman,Times">Number of metaphases examined</FONT></LI>
+Number of metaphases examined</LI>
 
 <LI>
-<FONT FACE="Times New Roman,Times">Chromosome aberrations involved</FONT></LI>
+Chromosome aberrations involved</LI>
 </UL>
-<FONT FACE="Times New Roman,Times">&nbsp;</FONT>
+&nbsp;
 
-<P><B><U><FONT FACE="Times New Roman,Times">PROBES, CLONES, ESTs AND PCR
-PRIMERS USED IN MAPPING</FONT></U></B>
-<BR><FONT FACE="Times New Roman,Times">&nbsp;</FONT>
+<P><B><U>PROBES, CLONES, ESTs AND PCR
+PRIMERS USED IN MAPPING</U></B>
+<BR>&nbsp;
 <H4>
-<FONT FACE="Times New Roman,Times"><FONT COLOR="#EF1F1D">Data Section VII
-</FONT><B><FONT COLOR="#000000">Probes, Clones, and ESTs</FONT></B>&nbsp;
-<FONT COLOR="#1822CD"><A HREF="submit_sample.shtml#pce" TARGET="ike">Sample</A></FONT></FONT></H4>
-<FONT FACE="Times New Roman,Times">Information on Probes, Clones, and ESTs
+<FONT COLOR="#EF1F1D">Data Section VII
+<B><FONT COLOR="#000000">Probes, Clones, and ESTs</B>&nbsp;
+<FONT COLOR="#1822CD"><A HREF="submit_sample.shtml#pce" TARGET="ike">Sample</A></H4>
+Information on Probes, Clones, and ESTs
 should be submitted on separate lines in the body of an E-mail message.&nbsp;
-Be sure to include the following items as they apply to your data:</FONT>
+Be sure to include the following items as they apply to your data:
 <UL>
 <LI>
-<FONT FACE="Times New Roman,Times">Probe/Clone/EST name</FONT></LI>
+Probe/Clone/EST name</LI>
 
 <LI>
-<FONT FACE="Times New Roman,Times">Corresponding locus symbol</FONT></LI>
+Corresponding locus symbol</LI>
 
 <LI>
-<FONT FACE="Times New Roman,Times">Encodes/Hybridizes</FONT></LI>
+Encodes/Hybridizes</LI>
 
 <LI>
-<FONT FACE="Times New Roman,Times">Probe Sequence Type</FONT></LI>
+Probe Sequence Type</LI>
 
 <LI>
-<FONT FACE="Times New Roman,Times">Corresponding region of gene</FONT></LI>
+Corresponding region of gene</LI>
 
 <LI>
-<FONT FACE="Times New Roman,Times">Vector type</FONT></LI>
+Vector type</LI>
 
 <LI>
-<FONT FACE="Times New Roman,Times">Species of origin</FONT></LI>
+Species of origin</LI>
 
 <LI>
-<FONT FACE="Times New Roman,Times">Strain of origin</FONT></LI>
+Strain of origin</LI>
 
 <LI>
-<FONT FACE="Times New Roman,Times">Tissue</FONT></LI>
+Tissue</LI>
 
 <LI>
-<FONT FACE="Times New Roman,Times">Cell line</FONT></LI>
+Cell line</LI>
 
 <LI>
-<FONT FACE="Times New Roman,Times">Age</FONT></LI>
+Age</LI>
 
 <LI>
-<FONT FACE="Times New Roman,Times">Sex</FONT></LI>
+Sex</LI>
 
 <LI>
-<FONT FACE="Times New Roman,Times">Size of probe/clone insert</FONT></LI>
+Size of probe/clone insert</LI>
 
 <LI>
-<FONT FACE="Times New Roman,Times">DNA sequence accession number</FONT></LI>
+DNA sequence accession number</LI>
 
 <LI>
-<FONT FACE="Times New Roman,Times">Holder</FONT></LI>
+Holder</LI>
 
-<BR><FONT FACE="Times New Roman,Times">&nbsp;</FONT></UL>
+<BR>&nbsp;</UL>
 
 <H4>
-<FONT FACE="Times New Roman,Times"><FONT COLOR="#EF1F1D">Data Section VIII
-</FONT><B><FONT COLOR="#000000">PCR Primers</FONT></B>&nbsp; <FONT COLOR="#1822CD"><A HREF="submit_sample.shtml#pcr" TARGET="ike">Sample</A></FONT></FONT></H4>
-<FONT FACE="Times New Roman,Times">For each PCR primer, be sure to include
-the following items in the body of an E-mail message:</FONT>
+<FONT COLOR="#EF1F1D">Data Section VIII
+<B><FONT COLOR="#000000">PCR Primers</B>&nbsp; <FONT COLOR="#1822CD"><A HREF="submit_sample.shtml#pcr" TARGET="ike">Sample</A></H4>
+For each PCR primer, be sure to include
+the following items in the body of an E-mail message:
 <UL>
 <LI>
-<FONT FACE="Times New Roman,Times">Locus symbol</FONT></LI>
+Locus symbol</LI>
 
 <LI>
-<FONT FACE="Times New Roman,Times">PCR primer names</FONT></LI>
+PCR primer names</LI>
 
 <LI>
-<FONT FACE="Times New Roman,Times">Primer sequences</FONT></LI>
+Primer sequences</LI>
 </UL>
 
 <H4>
-<FONT FACE="Times New Roman,Times"><FONT COLOR="#EF1F1D">Data Section IX
-</FONT>Polymorphisms<B><FONT COLOR="#000000">&nbsp;</FONT></B> <FONT COLOR="#1822CD"><A HREF="submit_sample.shtml#rflp" TARGET="ike">Sample</A></FONT></FONT></H4>
-<FONT FACE="Times New Roman,Times">Polymorphism information should be submitted
+<FONT COLOR="#EF1F1D">Data Section IX
+Polymorphisms<B><FONT COLOR="#000000">&nbsp;</B> <FONT COLOR="#1822CD"><A HREF="submit_sample.shtml#rflp" TARGET="ike">Sample</A></H4>
+Polymorphism information should be submitted
 as a file attached to the E-mail contents above in either Excel or tab-delimited
 text format.&nbsp; Be sure to include the following items as they apply
-to your data:</FONT>
+to your data:
 <UL>
 <LI>
-<FONT FACE="Times New Roman,Times">Assay type</FONT></LI>
+Assay type</LI>
 
 <LI>
-<FONT FACE="Times New Roman,Times">Endonuclease</FONT></LI>
+Endonuclease</LI>
 
 <LI>
-<FONT FACE="Times New Roman,Times">Locus</FONT></LI>
+Locus</LI>
 
 <LI>
-<FONT FACE="Times New Roman,Times">Probe or primer name</FONT></LI>
+Probe or primer name</LI>
 
 <LI>
-<FONT FACE="Times New Roman,Times">Alleles</FONT></LI>
+Alleles</LI>
 
 <LI>
-<FONT FACE="Times New Roman,Times">Fragment size</FONT></LI>
+Fragment size</LI>
 
 <LI>
-<FONT FACE="Times New Roman,Times">Strains</FONT></LI>
+Strains</LI>
 </UL>
 
 <H4>
-<FONT FACE="Times New Roman,Times"><FONT COLOR="#EF1F1D">Data Section X</FONT><B><FONT COLOR="#000000">
-Mammalian Orthology</FONT></B>&nbsp; <FONT COLOR="#1822CD"><A HREF="submit_sample.shtml#pimh" TARGET="ike">Sample</A></FONT></FONT></H4>
-<FONT FACE="Times New Roman,Times">Be sure to include the following items
-on separate lines in the body of an E-mail message:</FONT>
+<FONT COLOR="#EF1F1D">Data Section X<B><FONT COLOR="#000000">
+Mammalian Orthology</B>&nbsp; <FONT COLOR="#1822CD"><A HREF="submit_sample.shtml#pimh" TARGET="ike">Sample</A></H4>
+Be sure to include the following items
+on separate lines in the body of an E-mail message:
 <UL>
 <LI>
-<FONT FACE="Times New Roman,Times">For the primary mammalian species:</FONT></LI>
-
-<UL>
-<LI>
-<FONT FACE="Times New Roman,Times">Species</FONT></LI>
-
-<LI>
-<FONT FACE="Times New Roman,Times">Approved locus symbol</FONT></LI>
-
-<LI>
-<FONT FACE="Times New Roman,Times">Approved locus name</FONT></LI>
-
-<LI>
-<FONT FACE="Times New Roman,Times">Chromosomal location</FONT></LI>
-
-<LI>
-<FONT FACE="Times New Roman,Times">Cytogenetic band or cM position</FONT></LI>
-
-<LI>
-<FONT FACE="Times New Roman,Times">Nucleotide sequence accession number</FONT></LI>
-</UL>
-
-<LI>
-<FONT FACE="Times New Roman,Times">For the comparison mammalian species:</FONT></LI>
+For the primary mammalian species:</LI>
 
 <UL>
 <LI>
-<FONT FACE="Times New Roman,Times">Species</FONT></LI>
+Species</LI>
 
 <LI>
-<FONT FACE="Times New Roman,Times">Approved locus symbol</FONT></LI>
+Approved locus symbol</LI>
 
 <LI>
-<FONT FACE="Times New Roman,Times">Approved locus name</FONT></LI>
+Approved locus name</LI>
 
 <LI>
-<FONT FACE="Times New Roman,Times">Chromosomal location</FONT></LI>
+Chromosomal location</LI>
 
 <LI>
-<FONT FACE="Times New Roman,Times">Cytogenetic band or cM position</FONT></LI>
+Cytogenetic band or cM position</LI>
 
 <LI>
-<FONT FACE="Times New Roman,Times">Nucleotide sequence accession number</FONT></LI>
+Nucleotide sequence accession number</LI>
 </UL>
 
 <LI>
-<FONT FACE="Times New Roman,Times">Published reference supporting orthology
-assertion</FONT></LI>
+For the comparison mammalian species:</LI>
+
+<UL>
+<LI>
+Species</LI>
 
 <LI>
-<FONT FACE="Times New Roman,Times">Assay type(s)</FONT></LI>
+Approved locus symbol</LI>
+
+<LI>
+Approved locus name</LI>
+
+<LI>
+Chromosomal location</LI>
+
+<LI>
+Cytogenetic band or cM position</LI>
+
+<LI>
+Nucleotide sequence accession number</LI>
 </UL>
-<FONT FACE="Times New Roman,Times">&nbsp;</FONT>
-<BR><FONT FACE="Times New Roman,Times"><B>Thanks!</B>&nbsp;
+
+<LI>
+Published reference supporting orthology
+assertion</LI>
+
+<LI>
+Assay type(s)</LI>
+</UL>
+&nbsp;
+<BR><B>Thanks!</B>&nbsp;
 <hr>
 <!--#include file="include/bodyStop.html"-->
 </BODY>
