@@ -377,10 +377,10 @@ If your computer is not in the above list, please specify: <INPUT TYPE="text" NA
 <p>
 <DT>Operating System:
 <DT>Please select the operating system version(s) you curently use:<P>
-<SELECT SEVERAL NAME="opsys" MULTIPLE SIZE=3>
+<SELECT multiple NAME="opsys" MULTIPLE SIZE=3>
 <option value="MacOS 8.0"> MacOS 8.0 or above
-<option value="Windows NT 4.0"> Windows NT 4.0
 <option value="Windows NT"> Windows NT
+<option value="Windows NT4.#"> Windows NT 4.#
 <option value="Windows 2000"> Windows 2000
 <option value="Windows Me"> Windows Me
 <option value="Windows 98"> Windows 98
@@ -390,7 +390,7 @@ If your computer is not in the above list, please specify: <INPUT TYPE="text" NA
 <option value="ounix"> Other UNIX
 <option value="linix"> Linux
 
-</SELECT SEVERAL>
+</SELECT multiple>
 <p>
 Internet Connection:
 <pre>
