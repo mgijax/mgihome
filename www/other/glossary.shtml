@@ -51,7 +51,7 @@ Adult Mouse Anatomical Dictionary Browser</A> provides standardized nomenclature
 
 <LI>The
 <A HREF="http://www.ncbi.nlm.nih.gov/entrez/meshbrowser.cgi">MeSH Browser</A> at
-<A HREF="#NCBI">NCBI</A> contains useful definitions of many terms, organized as a hierarchical
+<A HREF="#ncbi">NCBI</A> contains useful definitions of many terms, organized as a hierarchical
 <A HREF="#controlled_vocabulary">controlled vocabulary</A>.</LI>
 
 <LI>The
@@ -591,9 +591,9 @@ In MGI and other databases, Boolean refers to the kind of logical relationship a
 
 
 <P><DT><B><A NAME="build"></A>Build</B></DT>
-<DD>In <A HREF="#ncbi"></A>NCBI, the end result of processes used to assemble genomic sequence data, annotate features, and  provide a dataset of assembled genomic sequence, RNAs, and proteins. Such  processes are complex; NCBI continues to refine them so that regions not fully represented will improve with subsequent builds. See also:
+<DD>In <A HREF="#NCBI">NCBI</a>, the end result of processes used to assemble genomic sequence data, annotate features, and  provide a dataset of assembled genomic sequence, RNAs, and proteins. Such  processes are complex; NCBI continues to refine them so that regions not fully represented will improve with subsequent builds. See also:
 <UL>
-  <LI><a href=#NCBI">NCBI</a> Mouse Build 33</a></LI>
+  <LI><a href="#ncbi_build">NCBI Mouse Build 33</a></LI>
   <LI><A href="#assembly_sequence">assembly sequence</A>.</li></ul> </dd></p>
 
 <!-- CCCCCCCCCCCCCCCCCCCCCCCCCCCCCC --><A NAME="c"></A>
@@ -1415,9 +1415,7 @@ the cells and developmental stages where the enhancer is active. See also
 </DD></P>
 
 <P><DT><B><A NAME="ensembl"></A>Ensembl Gene Model</B></DT>
-<DD>A description of a gene associated with the mouse genome assembly from the <A HREF="http://www.ensembl.org/Mus_musculus/">Mouse Genome Sequencing Consortium</A> (MGSC). The gene model includes the <A HREF="#assembly_coordinates">coordinates</A> of each <a href="intron">intron</a> and <A HREF="#exon">exon</A>, as well as the beginning and end of the transcript. </DD></P>
-
-
+<DD>A description of a gene associated with the mouse genome assembly from the <A HREF="http://www.ensembl.org/Mus_musculus/">Mouse Genome Sequencing Consortium</A> (MGSC). The gene model includes the <A HREF="#assembly_coordinates">coordinates</A> of each <a href="#intron">intron</a> and <A HREF="#exon">exon</A>, as well as the beginning and end of the transcript. </DD></P>
 
 
 
@@ -2761,12 +2759,12 @@ See also
 <A HREF="http://www.ncbi.nlm.nih.gov/">National Center for Biotechnology Information</A>.
 </DD></P>
 
-<P><DT><B><A NAME="build"></A>NCBI Mouse Assembly Build 33</B></DT>
+<P><DT><B><A NAME="ncbi_build"></A>NCBI Mouse Assembly Build 33</B></DT>
 <DD>Mouse Build 33 represents a third generation composite <A href="#assembly_sequence">assembly</A>. See
 <a href="http://www.ncbi.nlm.nih.gov/genome/seq/NCBIContigInfo.html">Assembling Genomic Sequences</a> for complete details on build 33 and the earlier composite genomic sequence assemblies for mouse.</dd>
 
 <P><DT><B><A NAME="ensembl"></A>NCBI Gene Model</B></DT>
-<DD>A description of a gene associated with the mouse genome assembly from <A HREF="#NCBI">NCBI</A>. The <a href="<A HREF="http://www.ncbi.nlm.nih.gov/genome/guide/mouse/">NCBI gene model</a> includes the <A HREF="#assembly_coordinates">coordinates</A> of each <a href="intron">intron</a> and <A HREF="#exon">exon</A>, as well as the beginning and end of the transcript. </DD></P>
+<DD>A description of a gene associated with the mouse genome assembly from <A HREF="#NCBI">NCBI</A>. The <a href="<A HREF="http://www.ncbi.nlm.nih.gov/genome/guide/mouse/">NCBI gene model</a> includes the <A HREF="#assembly_coordinates">coordinates</A> of each <a href="#intron">intron</a> and <A HREF="#exon">exon</A>, as well as the beginning and end of the transcript. </DD></P>
 
 
 <P><DT><B><A NAME="neomorphic"></A>Neomorphic Mutation</B></DT>
