@@ -2,7 +2,7 @@
 <HTML>
 <HEAD>
 <TITLE><!--#include file='include/mgiversion.html'--> - Help</TITLE>
-<LINK REL="stylesheet" TYPE="text/css" HREF="../stylesheet/mgihome.css">
+<LINK REL="stylesheet" TYPE="text/css" HREF="../../../mgihome/www/stylesheet/mgihome.css">
 
 </HEAD>
 <BODY BGCOLOR="#FFFFFF">
@@ -29,18 +29,19 @@
 
 
 
-<P>Mouse Genome Informatics offers on-line help and staffs a help desk to answer your questions and comments.</p>
-
-
-<dl>
-<dt><B>Contact User Support Staff</B>
-<dd>
+<P>Mouse Genome Informatics offers on-line help and staffs a help desk to answer your questions and comments.
+<P>
+<table width=100% border=0 cellspacing=4>
+<tr>
+<td  align=left valign=top width=50%><B>Contact User Support Staff</B>
+<ul>
 E-mail: <A HREF="../support/tjl_inbox.shtml">mgi-help@informatics.jax.org</A><br>
 Phone: (207) 288-6445<br><br>
-
+</ul>
        
        
-<dt><b>Help with MGI Resources</b>
+<P><B>Help with MGI Resources</b><BR>
+<DL>
 
 <!--<P><DD><B><A HREF="/tutorials/faq.shtml">Frequently Asked Questions (FAQs)</a></B><BR>
 <EM>Short answers to common questions about MGI</EM>
@@ -55,13 +56,15 @@ Phone: (207) 288-6445<br><br>
 <EM>Basic rules for naming mouse genes and alleles</EM>
 
 <P><DD><B><A HREF="<!--#include file='include/java_url.html'-->WIFetch?page=glossaryIndex&print=no">MGI Glossary</A></B><BR>
-<EM>Commonly used terms in mouse genetics</EM><br><br>
+<EM>Commonly used terms in mouse genetics</EM>
 
 
+</DL></td>
 
+<td align=left valign=top width=50%>      
 
-<dt><B>Community Resources</b><BR>
-
+<P><B>Community Resources</b><BR>
+<DL>
 
 <P><DD><B><A HREF="../submissions/submissions_menu.shtml">Contributing Your Data</A></B><BR>
 <EM>Guidelines for contributing data to MGI</EM>
@@ -84,6 +87,9 @@ Phone: (207) 288-6445<br><br>
 
 </DL>
 
+</TD>
+</TR>
+</TABLE>
 
 <HR>
 <!--#include file="include/bodyStop.html"-->
@@ -104,6 +110,6 @@ Warranty Disclaimer and Copyright Notice
  is prohibited without the prior express written permission of the Jackson 
  Laboratory.
 
-Copyright © 1996, 1999, 2002, 2003 by The Jackson Laboratory
+Copyright © 1996, 1999, 2002, 2003, 2004, 2005 by The Jackson Laboratory
 All Rights Reserved
 -->
