@@ -24,7 +24,7 @@
 </tbody></table>
      
  <font face="Arial,Helvetica">
-</font><p><font face="Arial,Helvetica">The Mouse Genome
+</font><p><font face="Arial,Helvetica" SIZE=3>The Mouse Genome
 Informatics Database is the authoritative source of official names for
 mouse genes, alleles, and strains. Nomenclature follows the rules and
 guidelines established by the <a href="inc.shtml">International Committee on Standardized Genetic Nomenclature for Mice</a> and is implemented through the <a href="#mgnc">Mouse Genomic Nomenclature Committee (MGNC)</a>.</font></p>
@@ -40,7 +40,7 @@ guidelines established by the <a href="inc.shtml">International Committee on Sta
 <li><a href="allmut_quickhelp.shtml">Quick Guide to Nomenclature for Alleles and Mutations</a></li>
 &nbsp;
 <li>Search for existing mouse 
-<a href="http://devwww.informatics.jax.org/wi/dev/%0A/searches/marker_form.shtml">Genes and Markers</a></li>
+<A href="<!--#include file='include/wi_url.html'-->searches/marker_form.shtml">Genes and Markers</a></li>
 &nbsp;
 <li><a href="checklist.shtml#check">Checklist</a> for Proposing a Locus Symbol</li>
 &nbsp;
@@ -70,11 +70,12 @@ Symbol</li>
 <h4><font face="Arial,Helvetica">Additional Nomenclature Resources</font></h4>
 
 <ul><font face="Arial,Helvetica"><small>
-<li><a href="ftp://devftp.informatics.jax.org/%0Apub/reports/index.html#nomen">MGI Data and Statistical Reports</a>&nbsp; <br><i>Includes recent and archived mouse gene nomenclature updates</i></li>&nbsp;
+<li>
+<A href="<!--#include file='include/ftp_url.html'-->pub/reports/index.html#nomen">MGI Data and Statistical Reports</a>&nbsp; <br><i>Includes recent and archived mouse gene nomenclature updates</i></li><br>
 
-<li>Search <a href="http://www.gene.ucl.ac.uk/cgi-bin/nomenclature/searchgenes.pl">Genew:  Human Gene Nomenclature Database Search Engine</a></li> &nbsp;
+<li>Search <a href="http://www.gene.ucl.ac.uk/cgi-bin/nomenclature/searchgenes.pl">Genew:  Human Gene Nomenclature Database Search Engine</a></li> <br>
 
-<li>Search <a href="http://rgd.mcw.edu/">RGD, Rat Genome Database</a></li>&nbsp;
+<li>Search <a href="http://rgd.mcw.edu/">RGD, Rat Genome Database</a></li><br>
 
 <li><a href="http://jaxmice.jax.org/info/nomenclature.html">JAX® Mice Nomenclature Articles and Announcements</a></li><sub> &nbsp;</sub>
 
@@ -86,8 +87,9 @@ Symbol</li>
 <!--<LI><A HREF="">Table of former mutant symbols and their corresponding cloned gene symbols</A>  </li>-->
 </small></font></ul>
 
-<h4><font face="Arial,Helvetica"><a name="mgnc"></a>Mouse Genomic Nomenclature Committee (MGNC)</font></h4>
-<p><font face="Arial,Helvetica">Standardized Genetic Nomenclature of Mice to implement nomenclature standards for mice.</font></p>
+<h4><FONT FACE="Arial, Helvetica, Sans Serif"><a name="mgnc"></a>Mouse Genomic Nomenclature Committee (MGNC)</font></h4>
+<p><FONT FACE="Arial, Helvetica, Sans Serif" SIZE="-1" COLOR="#000000">
+Standardized Genetic Nomenclature of Mice to implement nomenclature standards for mice.</font></p>
 
 <font face="Arial,Helvetica"><small>
 </small></font><blockquote>
