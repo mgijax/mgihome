@@ -12,6 +12,7 @@ import string
 import config
 import feedbacklib
 import homelib
+import header
 import CGI
 import errorlib
 
@@ -44,8 +45,8 @@ class InputProcessingCGI (CGI.CGI):
 				'<UL><LI>%s</UL>' % \
 					string.join (errors, '\n<LI>'),
                                 1, 'MGI Your Input Form',
-                                string.join (homelib.banner(), '\n '),
-                                string.join (homelib.footer(), '\n '))
+				header.bodyStart(),
+				header.bodyStop())
                         sys.exit (0)
 		else:
 			inp.sendMail()

@@ -17,6 +17,7 @@ import os
 import config
 import table		# for unescape() function only
 import homelib
+import header
 import CGI
 import errorlib
 import SimpleVocab
@@ -138,8 +139,8 @@ class myCGI (CGI.CGI):
 				err_message % \
 					string.join (missing_fields, ', '),
 				1, 'MGI Allele and Mutant Form',
-				string.join (homelib.banner(), '\n '),
-				string.join (homelib.footer(), '\n '))
+				header.bodyStart(),
+				header.bodyStop())
 			sys.exit (0)
 		message = []
 		convertPhenoslim (parms)
@@ -171,12 +172,12 @@ class myCGI (CGI.CGI):
 
 		print '<HTML><HEAD><TITLE>Request Sent</TITLE></HEAD>'
 		print '<BODY bgcolor=ffffff>'
-		print string.join (homelib.banner(), '\n')
-		print '<H3>New Allele and Mutant Submission Sent</H3>'
+		print header.bodyStart()
+		print header.headerBar('New Allele and Mutant Submission Sent')
 		print 'The following information was successfully submitted:'
 		print '<PRE>\n%s\n</PRE>' % string.join (message, '\n')
 		print '<HR>'
-		print string.join (homelib.footer(), '\n')
+		print header.bodyStop()
 		return
 
 myCGI().go()

@@ -11,6 +11,7 @@ import cgi
 
 import config			# MGI-written libraries
 import homelib
+import header
 import mgi_utils
 
 ###--- Global Constants ---###
@@ -618,9 +619,7 @@ class UserInput:
 		topOfPage = [
 			'<HTML><HEAD><TITLE>Your Input Welcome</TITLE>',
 			'</HEAD><BODY bgcolor=ffffff>',
-			] + \
-			homelib.banner() + \
-			[
+			header.bodyStart(),
 			'<H2>Your Input Welcome</H2>',
 			'''We want to hear from you.  Use this form to submit
 			updates to the information in our
@@ -660,7 +659,8 @@ class UserInput:
 			'<INPUT TYPE=button VALUE="Cancel" ',
 			'	onClick="window.close()">',
 			'</FORM><HR>',
-			] + homelib.footer() + [ '</BODY></HTML>' ]
+			header.bodyStop(),
+			'</BODY></HTML>' ]
 
 		# print the complete page to stdout
 
@@ -681,17 +681,17 @@ class UserInput:
 		pageItems = [
 			'<HTML><HEAD><TITLE>Confirmation</TITLE></HEAD>',
 			'<BODY bgcolor=ffffff>',
-			] + \
-			homelib.banner() + \
-			[
-			'<H2>Confirmation</H2>',
+			header.bodyStart(),
+			header.headerBar('Confirmation'),
+			'<BR>',
 			'Thank you for contacting the Mouse Genome Database.',
 			'We appreciate your input and comments, and will ',
 			'review them promptly.<P>',
 			'<HR><PRE>',
 			self.getPlainText (),
 			'</PRE><HR>',
-			] + homelib.footer() + [ '</BODY></HTML>' ]
+			header.bodyStop(), 
+			'</BODY></HTML>' ]
 		print string.join (pageItems, '\n')
 		return
 

@@ -23,6 +23,7 @@ import os
 import mgi_utils
 import mgi_html
 import errorlib
+import header
 
 SP = ' '
 HT = '\t'
@@ -31,8 +32,8 @@ NL = '\n'
 def errorStop (message):
 	print 'Content-type: text/html\n'
 	errorlib.show_error (message, 1, 'MGI Nomen Form',
-		string.join (homelib.banner(), '\n '),
-		string.join (homelib.footer(), '\n '))
+		header.bodyStart(),
+		header.bodyStop())
 	sys.exit(0)
 
 nomen_addr = 'nomen@informatics.jax.org'  # MGD Nomen Coordinator Email Account
@@ -54,10 +55,9 @@ MGD: Nomenclature Request\
 </HEAD> \
 <BODY BGCOLOR="#FFFFFF">'
 
-for line in homelib.banner():
-	htmlheader = htmlheader + line
+htmlheader = htmlheader + header.bodyStart() + header.headerBar('Thank You')
 
-htmlheader = htmlheader + '<H1>Thank you!</H1> \
+htmlheader = htmlheader + ' <BR>\
 Your Nomenclature request has been sent to the MGD Nomenclature Support Staff.'
 
 field_sort = [ \
@@ -259,8 +259,7 @@ if missing_fields:
 message = message + homsect
 print htmlheader + '<PRE>' + message + '</PRE><HR>'
 
-for line in homelib.footer():
-	print line
+print header.bodyStop()
 
 print "</BODY></HTML>"
 
