@@ -15,6 +15,7 @@ includeLinker() {
 		rm include
 	fi
 	if [ ! -d include ]; then
+		echo "Linking to include/ in `pwd`"
 		ln -s ../include include
 	fi
 
@@ -22,10 +23,12 @@ includeLinker() {
 	for name in `ls`
 	do
 		if [ -d $name ]; then
-			if [ $name -ne include ]; then
-				cd $name
-				(includeLinker)
-				cd ..
+			if [ $name != include ]; then
+				if [ $name != CVS ]; then
+					cd $name
+					(includeLinker)
+					cd ..
+				fi
 			fi
 		fi
 	done
@@ -69,10 +72,12 @@ TOP=`pwd`
 # make bin directory and add the Python link
 
 if [ ! -d bin ]; then
+	echo "Making 'bin' directory in `pwd`"
 	mkdir bin
 fi
 if [ ! -h bin/python ]; then
 	cd bin
+	echo "Linking to python in `pwd`"
 	ln -s $PYTHON python
 	cd $TOP
 fi
@@ -81,24 +86,10 @@ fi
 
 echo $TITLE > www/include/title.html
 
-# add links to the include directory under all subdirectories of www
-
-for dir in `ls www`
-do
-	if [ -d $dir ]; then
-		cd www/$dir
-		if [ -d include ]; then
-			rm include
-		fi
-		ln -s ../include include
-		cd $TOP
-	fi
-done
-
 # compile python libraries and make sure they're readable
 
 cd lib/python
-chmod g+w *pyc
+echo "Compiling libraries in `pwd`"
 rm *pyc
 $PYTHON -c 'import compileall; compileall.compile_dir(".")'
 chgrp www *pyc
