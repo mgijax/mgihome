@@ -217,8 +217,7 @@ def main():
     messageText = string.join(message,'\n')
     fd2.write(messageText)
     fd2.flush()
-    for i in range([1,10000000]) :
-        continue
+    fd2.close()
 
 ################
 # MAIN PROGRAM #
