@@ -25,7 +25,7 @@ import formMailer
 
 SimpleVocab.set_sqlFunction (homelib.sql)
 
-submit_addr = 'jw@informatics.jax.org'	# Survey E-mail
+submit_addr = 'survey@informatics.jax.org'	# Survey E-mail
 
 # developer override for mailtarget
 dev_email = config.lookup ('CGI_MAILTARGET')
@@ -47,18 +47,18 @@ labels = {
 	'accessComments':'Access comments',
 	'query':'Query forms and Resources used',
 	'queryComments':'Query form comments',
-	'otherSites':'Other sites visited',
-	'otherSitesComments':'Comments about other sites',
+	'othersites':'Other sites visited',
+	'othersitesComments':'Comments about other sites',
 	'improvedComments':'Potential improvements',
 	'newComments':'New functionality requested',
 	'research':'Research area',
 	'orgo':'Research organisms',
-	'orgoOther':'Other organisms',
+	'orgoComments':'Other organisms',
 	'datasub':'Data submission improvements',
 	'os':'Operating System',
 	'osOther':'Other operating system',
 	'browser':'Web browser',
-	'otherBrowser':'Other browser',
+	'altBrowse':'Other browser',
 	'comments':'Other comments',
 	'name':'Name',
 	'email':'email address',
@@ -78,18 +78,18 @@ field_order = [
 		 'accessComments',
 		 'query',
 		 'queryComments',
-		 'otherSites',
-		 'otherSitesComments',
+		 'othersites',
+		 'othersitesComments',
 		 'improvedComments',
 		 'newComments',
 		 'research',
 		 'orgo',
-		 'orgoOther',
+		 'orgoComments',
 		 'datasub',
 		 'os',
 		 'osOther',
 		 'browser',
-		 'otherBrowser',
+		 'altBrowse',
 		 'comments',
 		 'name',
 		 'email',]),
@@ -141,13 +141,7 @@ class myCGI (CGI.CGI):
 			if len(section) > 3:
 				message = message + section
 
-		fd = os.popen('%s -t' % config.lookup('SENDMAIL'), 'w')
-		fd.write(mailheader % (submit_addr,
-			'Survey Submission'))
-		fd.write(table.unescape(string.join (message, '\n')))
-		fd.close()
-
-		print '<HTML><HEAD><TITLE>Request Sent</TITLE></HEAD>'
+		print '<HTML><HEAD><TITLE>Survey Results Sent!</TITLE></HEAD>'
 		print '<BODY bgcolor=ffffff>'
 		print header.bodyStart()
 		print header.headerBar('Survey Results Sent!')
@@ -155,6 +149,16 @@ class myCGI (CGI.CGI):
 		print '<PRE>\n%s\n</PRE>' % string.join (message, '\n')
 		print '<HR>'
 		print header.bodyStop()
+
+		ip = []
+		ip.append('IP addr\n'+os.environ['REMOTE_ADDR'])
+		message = message + ip
+		fd = os.popen('%s -t' % config.lookup('SENDMAIL'), 'w')
+		fd.write(mailheader % (submit_addr,
+			'Survey Submission'))
+		fd.write(table.unescape(string.join (message, '\n')))
+		fd.close()
+
 		return
 
 myCGI().go()
