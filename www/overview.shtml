@@ -64,7 +64,7 @@ DNA <a href="other/glossary.shtml#marker">marker</a>,
 <a href="other/glossary.shtml#QTL">QTL</A> and
 <a href="other/glossary.shtml#cytogenetic_marker">Cytogenetic marker</A> descriptions<BR>
 Mouse genetic <a href="other/glossary.shtml#phenotype">phenotypes</A>, genetic interrelationships, and <a href="other/glossary.shtml#polymorphism">polymorphic</A> loci <BR> 
-Mammalian <a href="other/glossary.shtml#homology">homology</A>
+Mammalian <a href="other/glossary.shtml#orthology">orthology</A>
 data  <BR> Molecular probes and segments(<a href="other/glossary.shtml#probe">probes</A>,
 <a href="other/glossary.shtml#clone">clones</A>,
 <a href="other/glossary.shtml#primer">primers</A> and
@@ -79,7 +79,7 @@ References supporting  all  data  in MGD <BR>
 
 <P><b>Data Links to <a href="other/collab_and_acknow.shtml">External Databases</A></b>
 
-<P>MGD  provides links  to  relevant  information  in   external databases wherever possible.  Through markers, MGD links to GenBank, SWISS-PROT, EnsEMBL, InterPro, and EC. Through homologies,  MGD links  to
+<P>MGD  provides links  to  relevant  information  in   external databases wherever possible.  Through markers, MGD links to GenBank, SWISS-PROT, EnsEMBL, InterPro, and EC. Through orthologies,  MGD links  to
 GDB, PigBase, SheepBase, BovMap and RATMAP. Through molecular probes and segments,  MGD links to GenBank, EMBL, and DDBJ. Through references, MGD links to PubMed in Medline. 
 
 <h4><A NAME="mkr">Genes and Markers</A></h4>
@@ -122,34 +122,33 @@ Information may include the origin of the probe/segment, sequence,
 Polymorphisms Query Form enables you to search directly  for such information and display it. (See 
 <A HREF="<!--#include file='include/wi_url.html'-->userdocs/polymorphism_help.shtml#summary">Query Results -- Summary</a> and <A HREF="<!--#include file='include/wi_url.html'-->userdocs/polymorphism_help.shtml#detail">Query Results -- Details</A> for more information.)
 
-<h4><A NAME="hom">Mammalian Homology</A></h4> 
-MGD contains <a href="other/glossary.shtml#homology">homology</A> information for mouse, human and 15 other mammalian species. Most of the information  for homologies  is
-extracted from the published scientific literature. In general,  these  papers  explicitly report homology relationships and MGD
+<h4><A NAME="hom">Mammalian Orthology</A></h4> 
+MGD contains <a href="other/glossary.shtml#orthology">orthology</A> information for mouse, human and 15 other mammalian species. Most of the information  for orthologies  is
+extracted from the published scientific literature. In general,  these  papers  explicitly report orthology relationships and MGD
 reflects that published information. (<EM>See</EM> 
-<A HREF="<!--#include file='include/wi_url.html'-->userdocs/homology_criteria.shtml">MGD Mammalian Homology Criteria</A> for the information used to establish homology.)
+<A HREF="<!--#include file='include/wi_url.html'-->userdocs/homology_criteria.shtml">MGD Mammalian Orthology Criteria</A> for the information used to establish orthology.)
 
-<P>An homology record shows the <a href="other/glossary.shtml#gene_symbol">symbol</A>, species, <a
+<P>An orthology record shows the <a href="other/glossary.shtml#gene_symbol">symbol</A>, species, <a
 href="other/glossary.shtml#chromosome">chromosome</A>,
 <a href="other/glossary.shtml#cM">cM</A> position,
 <a href="other/glossary.shtml#cytogenetic_band">cytogenetic band</A> and <a href="other/glossary.shtml#accession_ID">accession ID</A>
-for each gene in the set of homologies. In addition, links to
-other mammalian databases are provided where possible. MGD homology records may link to GDB, BovMap, PiGBASE, RATMAP, SheepBase, or ArkDB. 
+for each gene in the set of orthologies. In addition, links to
+other mammalian databases are provided where possible. MGD orthology records may link to GDB, BovMap, PiGBASE, RATMAP, SheepBase, or ArkDB. 
 
-<P> Every homology assertion is supported by one or more references.  The display of an homology reference includes the J number of
+<P> Every orthology assertion is supported by one or more references.  The display of an orthology reference includes the J number of
 the reference, a short format citation, gene symbol and species. (<EM>See</EM> 
 <A HREF="<!--#include file='include/wi_url.html'-->userdocs/homology_help.shtml#detail">Query Results -- Details</A> on
-the content of a homology record as it appears in the query results.)
+the content of a orthology record as it appears in the query results.)
 
-<P>  Homology information is presented in three other formats: Oxford Grid, comparative map and Homology Map View. An Oxford Grid
-display presents an overview  of homology between two species. Currently, this kind of comparison  is supported  for  the following
+<P>  Orthology information is presented in three other formats: Oxford Grid, comparative map and Orthology Map View. An Oxford Grid
+display presents an overview  of orthology between two species. Currently, this kind of comparison  is supported  for  the following
 species:  Mouse,  Human,  Cat,  Cattle,  Rat,  Pig,  Sheep. <P>  The comparative map display relies on the Linkage Map application to
-build a graphic display of a map of a mouse chromosome (or chromosomal region)  which includes homologies from the comparison
-species. See, for example, the comparative map for a 2 cM region around the mouse gene <A HREF="<!--#include file='include/wi_url.html'-->searches/linkmap.cgi?midpoint=52.3&cmrange=2&format=Web+Map&source=MGD&dsegments=0&syntenics=0&chromosome=1&species=2">Acrg</A> 
-showing human homology.
+build a graphic display of a map of a mouse chromosome (or chromosomal region)  which includes orthologies from the comparison
+species. See, for example, the comparative map for a 2 cM region around the mouse gene <A HREF="<!--#include file='include/wi_url.html'-->searches/linkmap.cgi?midpoint=52.3&cmrange=2&format=Web+Map&source=MGD&dsegments=0&syntenics=0&chromosome=1&species=2">Acrg</A> showing human orthology.
 
-<P> The Homology Map View displays the mouse genome as  the  consensus genetic map, with either human or rat orthologs labeled by
-chromosome of origin and displayed next to  the  corresponding  segment  of  the  mouse  genome.  The Homology Map View is accessible
-from the <A HREF="http://www.informatics.jax.org/menus/homology_menu.shtml">Homology Menu</A> page.
+<P> The Orthology Map View displays the mouse genome as  the  consensus genetic map, with either human or rat orthologs labeled by
+chromosome of origin and displayed next to  the  corresponding  segment  of  the  mouse  genome.  The Orthology Map View is accessible
+from the <A HREF="http://www.informatics.jax.org/menus/homology_menu.shtml">Orthology Menu</A> page.
 
 <h4><A NAME="map">Mapping Data</A></h4>
  MGD contains genetic mapping and linkage data, including haplotype data for
