@@ -1,13 +1,31 @@
 <HTML><HEAD>
 <body bgcolor="#ffffff">
-<TITLE>Mouse Genome Informatics:  Mouse Genome Sequence Project</TITLE>
+<!--#include file="include/bodyStart.html"--><TITLE>Mouse Genome Informatics:  Mouse Genome Sequence Project</TITLE>
 </HEAD>
 <BODY>
-<!--#include file="include/banner.html"-->
+
 <HR>
 
 <CENTER>
-<H2>Finished C57BL/6J Mouse Genomic Sequence Mapped to Chromosome 18</H2>
+
+<TABLE WIDTH="100%" BORDER=0 CELLPADDING=2 CELLSPACING=1>
+ <TR>
+  <TD WIDTH="100%" BGCOLOR="#D0E0F0">
+   <TABLE WIDTH="100%" BORDER=0 CELLPADDING=0 CELLSPACING=0>
+    <TR>
+     <TD WIDTH="20%" VALIGN="center" ALIGN="left">&nbsp;</TD>
+     <TD WIDTH="60%" ALIGN="center" VALIGN="center">
+      <FONT COLOR="#000000" SIZE=5 FACE="Arial,Helvetica">
+       Finished C57BL/6J Mouse Genomic Sequence Mapped to Chromosome 18
+      </FONT>
+     </TD>
+     <TD WIDTH="20%" VALIGN="center" ALIGN="center">&nbsp;</TD>
+    </TR>
+   </TABLE>
+  </TD>
+ </TR>
+</TABLE>
+
 <font size="-1">| <A HREF="/mgihome">MGI Home</A> |  <A HREF="../../mgs.shtml">MGS Home</A> | <A HREF="../sequence.shtml">Finished C57BL/6J Genomic Sequence</A> | </font>
 </CENTER>
 <HR>
@@ -82,8 +100,8 @@ been mapped to chromosome 18.
 </table>
 <P>
 <HR>
-<!--#include file="include/footer.html"-->
-</BODY>
+
+<!--#include file="include/bodyStop.html"--></BODY>
 </HTML>
 <!--
 Warranty Disclaimer and Copyright Notice

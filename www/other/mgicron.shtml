@@ -1,14 +1,30 @@
 <HTML>
 <BODY BGCOLOR="#ffffff">
-<HEAD><TITLE>MGI Chronology</TITLE>
+<!--#include file="include/bodyStart.html"--><HEAD><TITLE>MGI Chronology</TITLE>
 </HEAD>
-<!--#include file="include/banner.html"-->
+
 <HR>
-<H2>Mouse Genome Informatics Chronology</H2>
+
+<TABLE WIDTH="100%" BORDER=0 CELLPADDING=2 CELLSPACING=1>
+ <TR>
+  <TD WIDTH="100%" BGCOLOR="#D0E0F0">
+   <TABLE WIDTH="100%" BORDER=0 CELLPADDING=0 CELLSPACING=0>
+    <TR>
+     <TD WIDTH="20%" VALIGN="center" ALIGN="left">&nbsp;</TD>
+     <TD WIDTH="60%" ALIGN="center" VALIGN="center">
+      <FONT COLOR="#000000" SIZE=5 FACE="Arial,Helvetica">
+       Mouse Genome Informatics Chronology
+      </FONT>
+     </TD>
+     <TD WIDTH="20%" VALIGN="center" ALIGN="center">&nbsp;</TD>
+    </TR>
+   </TABLE>
+  </TD>
+ </TR>
+</TABLE>
 
 <p><EM><B>November 2002</B></EM><BR>
  MGI 2.9 presents an entirely new look and feel for the interface. 
-
 
 <p><EM><B>March 2002</B></EM><BR>
  MGI 2.8 presented phenotype classification terms for locating alleles that produce a particular phenotype. The GO Browser was enhanced: users can query Gene Ontology terms by structure in MGI and see a hierarchical return of gene records annotated to that structure as well as its substructures. The release also included an electronic version of Lee Silver's <i>Mouse Genetics</i>.
@@ -173,8 +189,8 @@ bibliographic citations, was added to the GBASE on-line system.
  <p>
  <hr>
  
-<!--#include file="include/footer.html"-->
-</BODY>
+
+<!--#include file="include/bodyStop.html"--></BODY>
 </HTML>
 <!--
 Warranty Disclaimer and Copyright Notice

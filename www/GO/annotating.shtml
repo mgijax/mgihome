@@ -1,11 +1,29 @@
 <HTML><HEAD>
 <TITLE>Gene Ontology Information</TITLE></HEAD>
-<!--#include file="include/banner.html"-->
+
 <BODY BGCOLOR="#FFFFFF">
-<BR>
+<!--#include file="include/bodyStart.html"--><BR>
 <BR>
 
-<A NAME="Annotating"></A><H2 align=center>Annotating to GO at MGI</H2>
+<A NAME="Annotating"></A>
+<TABLE WIDTH="100%" BORDER=0 CELLPADDING=2 CELLSPACING=1>
+ <TR>
+  <TD WIDTH="100%" BGCOLOR="#D0E0F0">
+   <TABLE WIDTH="100%" BORDER=0 CELLPADDING=0 CELLSPACING=0>
+    <TR>
+     <TD WIDTH="20%" VALIGN="center" ALIGN="left">&nbsp;</TD>
+     <TD WIDTH="60%" ALIGN="center" VALIGN="center">
+      <FONT COLOR="#000000" SIZE=5 FACE="Arial,Helvetica">
+       Annotating to GO at MGI
+      </FONT>
+     </TD>
+     <TD WIDTH="20%" VALIGN="center" ALIGN="center">&nbsp;</TD>
+    </TR>
+   </TABLE>
+  </TD>
+ </TR>
+</TABLE>
+
 <hr>
 <P>
 MGI uses database-mining and other strategies to automate gene annotation.  The electronic annotations are attributed to MGI references J:56000, J:60000.
@@ -41,9 +59,9 @@ If you have questions, need assistance, or wish to report a problem with specifi
 <BR>
 <BR>
 <HR><BR>
-<!--#include file="include/footer.html"-->
 
-</BODY></HTML>
+
+<!--#include file="include/bodyStop.html"--></BODY></HTML>
 <!--
 Warranty Disclaimer and Copyright Notice
 

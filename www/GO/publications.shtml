@@ -1,10 +1,28 @@
 <HTML><HEAD>
 <TITLE>Gene Ontology Information</TITLE></HEAD>
-<!--#include file="include/banner.html"-->
-<BODY BGCOLOR="#FFFFFF">
-<BR>
 
-<A NAME="Pubs"></A><H2 align=center>Publications about GO</H2>
+<BODY BGCOLOR="#FFFFFF">
+<!--#include file="include/bodyStart.html"--><BR>
+
+<A NAME="Pubs"></A>
+<TABLE WIDTH="100%" BORDER=0 CELLPADDING=2 CELLSPACING=1>
+ <TR>
+  <TD WIDTH="100%" BGCOLOR="#D0E0F0">
+   <TABLE WIDTH="100%" BORDER=0 CELLPADDING=0 CELLSPACING=0>
+    <TR>
+     <TD WIDTH="20%" VALIGN="center" ALIGN="left">&nbsp;</TD>
+     <TD WIDTH="60%" ALIGN="center" VALIGN="center">
+      <FONT COLOR="#000000" SIZE=5 FACE="Arial,Helvetica">
+       Publications about GO
+      </FONT>
+     </TD>
+     <TD WIDTH="20%" VALIGN="center" ALIGN="center">&nbsp;</TD>
+    </TR>
+   </TABLE>
+  </TD>
+ </TR>
+</TABLE>
+
 <hr>
 <ul>
 <li>The Gene Ontology Consortium. 2000. Gene Ontology: tool for the unification of biology. Nat Genet 25:25-29.<br><br>
@@ -14,10 +32,10 @@ Genomics, Vol. 74, No. 1, May 2001, pp. 121-128. &nbsp; For the abstract, see <a
 </ul>
 <HR>
 <BR>
-<!--#include file="include/footer.html"-->
 
 
-</BODY></HTML>
+
+<!--#include file="include/bodyStop.html"--></BODY></HTML>
 <!--
 Warranty Disclaimer and Copyright Notice
 

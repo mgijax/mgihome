@@ -1,10 +1,28 @@
 
 <HTML>
 <TITLE>About MGD</TITLE>
-<!--#include file="include/banner.html"-->
-<BODY BGCOLOR="#ffffff">
 
-<H2>About MGD</H2>
+<BODY BGCOLOR="#ffffff">
+<!--#include file="include/bodyStart.html"-->
+
+<TABLE WIDTH="100%" BORDER=0 CELLPADDING=2 CELLSPACING=1>
+ <TR>
+  <TD WIDTH="100%" BGCOLOR="#D0E0F0">
+   <TABLE WIDTH="100%" BORDER=0 CELLPADDING=0 CELLSPACING=0>
+    <TR>
+     <TD WIDTH="20%" VALIGN="center" ALIGN="left">&nbsp;</TD>
+     <TD WIDTH="60%" ALIGN="center" VALIGN="center">
+      <FONT COLOR="#000000" SIZE=5 FACE="Arial,Helvetica">
+       About MGD
+      </FONT>
+     </TD>
+     <TD WIDTH="20%" VALIGN="center" ALIGN="center">&nbsp;</TD>
+    </TR>
+   </TABLE>
+  </TD>
+ </TR>
+</TABLE>
+
 The Mouse Genome Database  (MGD) contains information on mouse 
 genetic markers, molecular segments, phenotypes, comparative mapping 
 data, experimental mapping data, and graphical displays for genetic, 
@@ -18,8 +36,8 @@ Find out <A HREF="../other/mgi_people.shtml#mgd_people">Who's Who</A> in MGD and
 <P>
 
 <HR><BR>
-<!--#include file="include/footer.html"-->
-</BODY>
+
+<!--#include file="include/bodyStop.html"--></BODY>
 </HTML>
 <!--
 Warranty Disclaimer and Copyright Notice

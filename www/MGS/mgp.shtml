@@ -1,11 +1,29 @@
 <HTML><HEADER>
 <body bgcolor="#ffffff" link="#0033CC" vlink="#CC3300">
-<TITLE>Mouse Genome Informatics:  The Mouse Genome Sequencing Initiative</TITLE>
+<!--#include file="include/bodyStart.html"--><TITLE>Mouse Genome Informatics:  The Mouse Genome Sequencing Initiative</TITLE>
 </HEADER>
 <BODY>
-<!--#include file="include/banner.html"-->
+
 <HR>
-<CENTER><H2>About the Mouse Genome Sequencing Initiative</H2></CENTER>
+<CENTER>
+<TABLE WIDTH="100%" BORDER=0 CELLPADDING=2 CELLSPACING=1>
+ <TR>
+  <TD WIDTH="100%" BGCOLOR="#D0E0F0">
+   <TABLE WIDTH="100%" BORDER=0 CELLPADDING=0 CELLSPACING=0>
+    <TR>
+     <TD WIDTH="20%" VALIGN="center" ALIGN="left">&nbsp;</TD>
+     <TD WIDTH="60%" ALIGN="center" VALIGN="center">
+      <FONT COLOR="#000000" SIZE=5 FACE="Arial,Helvetica">
+       About the Mouse Genome Sequencing Initiative
+      </FONT>
+     </TD>
+     <TD WIDTH="20%" VALIGN="center" ALIGN="center">&nbsp;</TD>
+    </TR>
+   </TABLE>
+  </TD>
+ </TR>
+</TABLE>
+</CENTER>
 <CENTER>
 <font size="-1">| <A HREF="<!--#include file='include/wi_url.html'-->">MGI Home</A> | <A HREF="mgs.shtml">MGS Home</A> | </font>
 </CENTER>
@@ -101,8 +119,8 @@ The NCBI <A HREF="http://www.ncbi.nlm.nih.gov/genome/clone">Clone Registry</A> i
 </UL>
 </UL>
 <HR>
-<!--#include file="include/footer.html"-->
-</BODY>
+
+<!--#include file="include/bodyStop.html"--></BODY>
 </HTML>
 <!--
 Warranty Disclaimer and Copyright Notice

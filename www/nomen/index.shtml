@@ -3,12 +3,30 @@
 <TITLE>Mouse Nomenclature Home Page</TITLE>
 </HEAD>
 <BODY BGCOLOR="#ffffff">
-<CENTER>
+<!--#include file="include/bodyStart.html"--><CENTER>
 
-<!--#include file="include/banner.html"-->
+
 </center>
 
-<H2><a name="mginp">Mouse Nomenclature Home Page</H2>
+
+<TABLE WIDTH="100%" BORDER=0 CELLPADDING=2 CELLSPACING=1>
+ <TR>
+  <TD WIDTH="100%" BGCOLOR="#D0E0F0">
+   <TABLE WIDTH="100%" BORDER=0 CELLPADDING=0 CELLSPACING=0>
+    <TR>
+     <TD WIDTH="20%" VALIGN="center" ALIGN="left">&nbsp;</TD>
+     <TD WIDTH="60%" ALIGN="center" VALIGN="center">
+      <FONT COLOR="#000000" SIZE=5 FACE="Arial,Helvetica">
+       <a name="mginp">Mouse Nomenclature Home Page
+      </FONT>
+     </TD>
+     <TD WIDTH="20%" VALIGN="center" ALIGN="center">&nbsp;</TD>
+    </TR>
+   </TABLE>
+  </TD>
+ </TR>
+</TABLE>
+
 <HR>
 <H4>Mouse Genomic Nomenclature Committee (MGNC)</H4>
 <P>
@@ -61,9 +79,9 @@ Symbol</H4>
 </UL>
 <HR>
 
-<!--#include file="include/footer.html"-->
 
-</BODY></HTML>
+
+<!--#include file="include/bodyStop.html"--></BODY></HTML>
 <!--
 Warranty Disclaimer and Copyright Notice
 

@@ -4,11 +4,29 @@
 <TITLE>Mouse Genome Informatics Team</TITLE>
 </head>
 
-<!--#include file="include/banner.html"-->
+
 
 <BODY BGCOLOR="#ffffff">
+<!--#include file="include/bodyStart.html"-->
 
-<H2>Mouse Genome Informatics Team</H2>
+<TABLE WIDTH="100%" BORDER=0 CELLPADDING=2 CELLSPACING=1>
+ <TR>
+  <TD WIDTH="100%" BGCOLOR="#D0E0F0">
+   <TABLE WIDTH="100%" BORDER=0 CELLPADDING=0 CELLSPACING=0>
+    <TR>
+     <TD WIDTH="20%" VALIGN="center" ALIGN="left">&nbsp;</TD>
+     <TD WIDTH="60%" ALIGN="center" VALIGN="center">
+      <FONT COLOR="#000000" SIZE=5 FACE="Arial,Helvetica">
+       Mouse Genome Informatics Team
+      </FONT>
+     </TD>
+     <TD WIDTH="20%" VALIGN="center" ALIGN="center">&nbsp;</TD>
+    </TR>
+   </TABLE>
+  </TD>
+ </TR>
+</TABLE>
+
 <table border>
 <!--cell1-->
 <tr><td valign=top>
@@ -78,8 +96,8 @@
 <br><br><br><br>
 <p>
 <hr>
-<!--#include file="include/footer.html"-->
-</BODY>
+
+<!--#include file="include/bodyStop.html"--></BODY>
 </HTML>
 
 

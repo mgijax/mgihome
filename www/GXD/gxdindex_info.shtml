@@ -2,9 +2,27 @@
 <HEAD>
 <TITLE>About the GXD Index</TITLE>
 </HEAD>
-<!--#include file="include/banner.html"-->
+
 <BODY BGCOLOR="#FFFFFF">
-<H2>About the GXD Index</H2>
+<!--#include file="include/bodyStart.html"-->
+<TABLE WIDTH="100%" BORDER=0 CELLPADDING=2 CELLSPACING=1>
+ <TR>
+  <TD WIDTH="100%" BGCOLOR="#D0E0F0">
+   <TABLE WIDTH="100%" BORDER=0 CELLPADDING=0 CELLSPACING=0>
+    <TR>
+     <TD WIDTH="20%" VALIGN="center" ALIGN="left">&nbsp;</TD>
+     <TD WIDTH="60%" ALIGN="center" VALIGN="center">
+      <FONT COLOR="#000000" SIZE=5 FACE="Arial,Helvetica">
+       About the GXD Index
+      </FONT>
+     </TD>
+     <TD WIDTH="20%" VALIGN="center" ALIGN="center">&nbsp;</TD>
+    </TR>
+   </TABLE>
+  </TD>
+ </TR>
+</TABLE>
+
 <HR>
 The GXD Index is an index of research reports documenting <strong>data on endogenous 
 gene expression during mouse development</strong> that have been published <strong>from May 1993 to present</strong>. 
@@ -29,8 +47,8 @@ tables.  <B>Please use a WWW browser that can display tables to see these result
 <P>
 MGD also provides access to GXD records by providing links in the detailed query results for marker and references.
 <HR>
-<!--#include file="include/footer.html"-->
-</BODY>
+
+<!--#include file="include/bodyStop.html"--></BODY>
 </HTML>
 <!--
 Warranty Disclaimer and Copyright Notice

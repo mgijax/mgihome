@@ -1,9 +1,27 @@
 <TITLE>MGI News and Announcements </TITLE>
 <BODY BGCOLOR="#ffffff">
+<!--#include file="include/bodyStart.html"-->
 
-<!--#include file="include/banner.html"-->
 <HR>
-<H2>MGI Release 2 - Announcements</H2>
+
+<TABLE WIDTH="100%" BORDER=0 CELLPADDING=2 CELLSPACING=1>
+ <TR>
+  <TD WIDTH="100%" BGCOLOR="#D0E0F0">
+   <TABLE WIDTH="100%" BORDER=0 CELLPADDING=0 CELLSPACING=0>
+    <TR>
+     <TD WIDTH="20%" VALIGN="center" ALIGN="left">&nbsp;</TD>
+     <TD WIDTH="60%" ALIGN="center" VALIGN="center">
+      <FONT COLOR="#000000" SIZE=5 FACE="Arial,Helvetica">
+       MGI Release 2 - Announcements
+      </FONT>
+     </TD>
+     <TD WIDTH="20%" VALIGN="center" ALIGN="center">&nbsp;</TD>
+    </TR>
+   </TABLE>
+  </TD>
+ </TR>
+</TABLE>
+
 <HR>
 <p>MGI data updates occur <EM>daily</EM>. Modifications and enhancements 
 to the architecture, data content and
@@ -49,8 +67,8 @@ user-interface are published in new releases of MGI.
   </tr>
  </table>
  <HR>
-<!--#include file="include/footer.html"-->
-</P></BODY>
+
+</P><!--#include file="include/bodyStop.html"--></BODY>
 </HTML>
 <!--
 Warranty Disclaimer and Copyright Notice

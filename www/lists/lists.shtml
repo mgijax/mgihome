@@ -2,8 +2,26 @@
 <TITLE>MGI E-mail Bulletin Board Service</TITLE>
 </HEADER>
 <BODY BGCOLOR=#FFFFFF>
-<!--#include file="include/banner.html"-->
-<H2>MGI E-mail List Service</H2>
+<!--#include file="include/bodyStart.html"-->
+
+<TABLE WIDTH="100%" BORDER=0 CELLPADDING=2 CELLSPACING=1>
+ <TR>
+  <TD WIDTH="100%" BGCOLOR="#D0E0F0">
+   <TABLE WIDTH="100%" BORDER=0 CELLPADDING=0 CELLSPACING=0>
+    <TR>
+     <TD WIDTH="20%" VALIGN="center" ALIGN="left">&nbsp;</TD>
+     <TD WIDTH="60%" ALIGN="center" VALIGN="center">
+      <FONT COLOR="#000000" SIZE=5 FACE="Arial,Helvetica">
+       MGI E-mail List Service
+      </FONT>
+     </TD>
+     <TD WIDTH="20%" VALIGN="center" ALIGN="center">&nbsp;</TD>
+    </TR>
+   </TABLE>
+  </TD>
+ </TR>
+</TABLE>
+
 <HR>
 
 <p>MGI maintains E-mail lists for the genetics research community. The list service uses the 
@@ -47,9 +65,9 @@ your subscription.  You will receive an acknowledgement and instructions via E-m
 <INPUT TYPE=submit VALUE="Submit"> <INPUT TYPE=reset VALUE="Reset Form">
 <P>
 <HR>
-<!--#include file="include/footer.html"-->
+
 </FORM>
-</BODY>
+<!--#include file="include/bodyStop.html"--></BODY>
 </HTML>
 
  

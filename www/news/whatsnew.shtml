@@ -2,11 +2,29 @@
 <HEAD>
 <title>What's New?</title>
 </head>
-<!--#include file="include/banner.html"-->
+
 <Body Bgcolor="#ffffff">
-<blockquote>
+<!--#include file="include/bodyStart.html"--><blockquote>
 <hr>
-<H2 align=center><FONT COLOR="#FF0111">What's New?</FONT></H2>
+
+<TABLE WIDTH="100%" BORDER=0 CELLPADDING=2 CELLSPACING=1>
+ <TR>
+  <TD WIDTH="100%" BGCOLOR="#D0E0F0">
+   <TABLE WIDTH="100%" BORDER=0 CELLPADDING=0 CELLSPACING=0>
+    <TR>
+     <TD WIDTH="20%" VALIGN="center" ALIGN="left">&nbsp;</TD>
+     <TD WIDTH="60%" ALIGN="center" VALIGN="center">
+      <FONT COLOR="#000000" SIZE=5 FACE="Arial,Helvetica">
+       <FONT COLOR="#FF0111">What's New?</FONT>
+      </FONT>
+     </TD>
+     <TD WIDTH="20%" VALIGN="center" ALIGN="center">&nbsp;</TD>
+    </TR>
+   </TABLE>
+  </TD>
+ </TR>
+</TABLE>
+
 <H3 align=center><FONT COLOR="#FF0111">News and Announcements for 2002</FONT></H3>
 
 <H3>Last Updated November 11, 2002, 2002</H3>
@@ -22,9 +40,6 @@
 <dt><b><a name="oct02"></a>October, 2002</b><br><br>
 
 <dd><li><a href="../nomen/genefamilies/gga.shtml">Gene Family: Golgi Associated, Gamma Adaptin Ear Containing, ARF Protein Binding</a> joins the Gene Family Reports<br><br> 
-
-
-
 
 <dt><b><a name="sept02"></a>September, 2002</b><br><br>
 <dd><li>The <a href="../GXD/GEN/">Gene Expression Notebook (GEN)</a>, a tool to store and organize expression data and images in the laboratory and to submit mouse expression data to the Gene Expression Database (GXD), is available.</li> <br><br> 
@@ -105,9 +120,9 @@ There is now a link from human genes represented in the Browser to gene records 
 <hr>
 <!-- standard footer and disclaimer -->
 
-<!--#include file="include/footer.html"-->
+
 </blockquote>
-</body></html>
+<!--#include file="include/bodyStop.html"--></body></html>
 
 <!--
 Warranty Disclaimer and Copyright Notice

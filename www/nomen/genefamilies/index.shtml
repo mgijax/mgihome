@@ -3,13 +3,31 @@
 <HEAD>
 <TITLE>Gene Family Information</TITLE> 
 </HEAD> 
-<BODY BGCOLOR="#ffffff"> 
+<BODY BGCOLOR="#ffffff"> <!--#include file="include/bodyStart.html"-->
 
-<!--#include file="include/banner.html"-->
+
 
 <blockquote>
 
-<H2 align=center>Gene Family Information</H2>
+
+<TABLE WIDTH="100%" BORDER=0 CELLPADDING=2 CELLSPACING=1>
+ <TR>
+  <TD WIDTH="100%" BGCOLOR="#D0E0F0">
+   <TABLE WIDTH="100%" BORDER=0 CELLPADDING=0 CELLSPACING=0>
+    <TR>
+     <TD WIDTH="20%" VALIGN="center" ALIGN="left">&nbsp;</TD>
+     <TD WIDTH="60%" ALIGN="center" VALIGN="center">
+      <FONT COLOR="#000000" SIZE=5 FACE="Arial,Helvetica">
+       Gene Family Information
+      </FONT>
+     </TD>
+     <TD WIDTH="20%" VALIGN="center" ALIGN="center">&nbsp;</TD>
+    </TR>
+   </TABLE>
+  </TD>
+ </TR>
+</TABLE>
+
 <HR> 
 <h4>Gene Family Reports</h4> 
 <UL>
@@ -57,8 +75,8 @@
  </ul> 
 <br>
 <hr>
-<!--#include file="include/footer.html"-->
-</blockquote></BODY></HTML>
+
+</blockquote><!--#include file="include/bodyStop.html"--></BODY></HTML>
  <!--
 
 

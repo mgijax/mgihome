@@ -4,8 +4,26 @@
 
 
 <BODY BGCOLOR="#ffffff">
-<!--#include file="include/banner.html"-->
-<H2><a name="profopp">MGI Professional Opportunities</H2>
+<!--#include file="include/bodyStart.html"-->
+
+<TABLE WIDTH="100%" BORDER=0 CELLPADDING=2 CELLSPACING=1>
+ <TR>
+  <TD WIDTH="100%" BGCOLOR="#D0E0F0">
+   <TABLE WIDTH="100%" BORDER=0 CELLPADDING=0 CELLSPACING=0>
+    <TR>
+     <TD WIDTH="20%" VALIGN="center" ALIGN="left">&nbsp;</TD>
+     <TD WIDTH="60%" ALIGN="center" VALIGN="center">
+      <FONT COLOR="#000000" SIZE=5 FACE="Arial,Helvetica">
+       <a name="profopp">MGI Professional Opportunities
+      </FONT>
+     </TD>
+     <TD WIDTH="20%" VALIGN="center" ALIGN="center">&nbsp;</TD>
+    </TR>
+   </TABLE>
+  </TD>
+ </TR>
+</TABLE>
+
 
 The Jackson Laboratory is considering applications for the following positions in the Mouse Genome Informatics group:
 <UL>
@@ -64,8 +82,8 @@ e-mail: <A HREF="mailto:jobs@jax.org">jobs@jax.org</B></A><BR></BLOCKQUOTE>
 The Jackson Laboratory is an Equal Opportunity/Affirmative Action Employer. 
 <P>
 <HR>
-<!--#include file="include/footer.html"-->
-</BODY>
+
+<!--#include file="include/bodyStop.html"--></BODY>
 
 </HTML>
 

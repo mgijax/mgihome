@@ -3,9 +3,27 @@
    <TITLE>Mouse Facts</TITLE>
 </head>
 <BODY BGCOLOR="#ffffff">
-<!--#include file="include/banner.html"-->
+<!--#include file="include/bodyStart.html"-->
 <BR><HR>
-<H2 ALIGN=CENTER>Mouse Facts</H2>
+
+<TABLE WIDTH="100%" BORDER=0 CELLPADDING=2 CELLSPACING=1>
+ <TR>
+  <TD WIDTH="100%" BGCOLOR="#D0E0F0">
+   <TABLE WIDTH="100%" BORDER=0 CELLPADDING=0 CELLSPACING=0>
+    <TR>
+     <TD WIDTH="20%" VALIGN="center" ALIGN="left">&nbsp;</TD>
+     <TD WIDTH="60%" ALIGN="center" VALIGN="center">
+      <FONT COLOR="#000000" SIZE=5 FACE="Arial,Helvetica">
+       Mouse Facts
+      </FONT>
+     </TD>
+     <TD WIDTH="20%" VALIGN="center" ALIGN="center">&nbsp;</TD>
+    </TR>
+   </TABLE>
+  </TD>
+ </TR>
+</TABLE>
+
 The "laboratory mouse" originated from a mixture of <i>M. m. domesticus</i>
  and <i>M. m. musculus</i> subspecies. An inbred strain of the laboratory
  mouse is defined as a strain that has been brother/sister mated for 20
@@ -415,8 +433,8 @@ Physiology</a></font></font></u></b>
 <p><a NAME="UsefulLinksLink"></a><b><u><font color="#1822CD"><font size=+1><a href="mouse_facts4.shtml">Useful
 Links</a></font></font></u></b>
 <BR><HR>
-<!--#include file="include/footer.html"-->
-</body>
+
+<!--#include file="include/bodyStop.html"--></body>
 </html>
 
 <!--

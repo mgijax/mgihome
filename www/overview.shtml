@@ -3,10 +3,28 @@
 <HEAD>
 <title>Mouse  Genome Informatics Overview</title>
 </head>
-<!--#include file="include/banner.html"-->
-<Body Bgcolor="#ffffff">
 
-<H2>Mouse Genome Informatics Overview</H2> 
+<Body Bgcolor="#ffffff">
+<!--#include file="include/bodyStart.html"-->
+
+<TABLE WIDTH="100%" BORDER=0 CELLPADDING=2 CELLSPACING=1>
+ <TR>
+  <TD WIDTH="100%" BGCOLOR="#D0E0F0">
+   <TABLE WIDTH="100%" BORDER=0 CELLPADDING=0 CELLSPACING=0>
+    <TR>
+     <TD WIDTH="20%" VALIGN="center" ALIGN="left">&nbsp;</TD>
+     <TD WIDTH="60%" ALIGN="center" VALIGN="center">
+      <FONT COLOR="#000000" SIZE=5 FACE="Arial,Helvetica">
+       Mouse Genome Informatics Overview
+      </FONT>
+     </TD>
+     <TD WIDTH="20%" VALIGN="center" ALIGN="center">&nbsp;</TD>
+    </TR>
+   </TABLE>
+  </TD>
+ </TR>
+</TABLE>
+ 
 <p>This overview presents a brief description of the features and data content of the Mouse Genome Informatics (MGI) resource available on the World Wide Web.
 
 <P>The MGI web site provides integrated access to various sources for information on the genetics and biology of the laboratory
@@ -236,8 +254,8 @@ linkage map.
 (<EM>See</EM> <A  HREF="encyclopedia/encyclo.shtml">details</A> on the
 <EM>Encyclopedia</EM> application.)
 <HR>
-<!--#include file="include/footer.html"-->
-</BODY>
+
+<!--#include file="include/bodyStop.html"--></BODY>
  </HTML>
 <!--Warranty Disclaimer and
 Copyright Notice THE JACKSON LABORATORY MAKES NO  REPRESENTATION ABOUT THE SUITABILITY OR ACCURACY OF THIS SOFTWARE OR DATA FOR ANY

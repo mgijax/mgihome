@@ -5,9 +5,27 @@
 </HEAD>
 
 <BODY BGCOLOR="#ffffff">
-<!--#include file="include/banner.html"-->
+<!--#include file="include/bodyStart.html"-->
 
-<H2>MGI User Survey Results</H2>
+
+<TABLE WIDTH="100%" BORDER=0 CELLPADDING=2 CELLSPACING=1>
+ <TR>
+  <TD WIDTH="100%" BGCOLOR="#D0E0F0">
+   <TABLE WIDTH="100%" BORDER=0 CELLPADDING=0 CELLSPACING=0>
+    <TR>
+     <TD WIDTH="20%" VALIGN="center" ALIGN="left">&nbsp;</TD>
+     <TD WIDTH="60%" ALIGN="center" VALIGN="center">
+      <FONT COLOR="#000000" SIZE=5 FACE="Arial,Helvetica">
+       MGI User Survey Results
+      </FONT>
+     </TD>
+     <TD WIDTH="20%" VALIGN="center" ALIGN="center">&nbsp;</TD>
+    </TR>
+   </TABLE>
+  </TD>
+ </TR>
+</TABLE>
+
 In the Spring of 1999, we asked MGI users to complete an <A HREF="mgi_survey_form.shtml">MGI User Survey</A>. <I><B>Many thanks</B></I> to the nearly 300 researchers who responded. The purpose of this document is to report on the results of the survey. If you did not get a chance to complete a survey, please feel free to give us your <A HREF="../support/tjl_inbox.shtml">comments and suggestions</A> any time. 
 
 <H3>Statistical Results</H3>
@@ -623,9 +641,9 @@ One of the goals of our survey was to encourage feedback on <EM>changes and impr
 
 <P>With regard to data content and presentation of data, users offered a number of suggestions, including: more integration of data, especially physical mapping, RH mapping, and genome sequencing; improved integration of and links between data (e.g., DNA sequence + map position + expression profile + protein structure + biochemical pathway + mutations + phenotypes); improved access to information on transgenic and targeted mutant mice; more options for formatting query results and downloading files; more access to sequence data, more information on inbred strains and more integration with other sources of mouse and rat data.</P>
 <hr>
-<!--#include file="include/footer.html"-->
 
-</BODY>
+
+<!--#include file="include/bodyStop.html"--></BODY>
 </HTML>
 
 

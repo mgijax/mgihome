@@ -63,6 +63,8 @@ do
 			PYTHON=$value;;
 		GROUP)
 			GROUP=$value;;
+		WI_PATH)
+			WI_PATH=$value;;
 		[A-z]*)
 			;;	# other parms are not needed by Install
 	esac
@@ -121,6 +123,16 @@ if [ ! -d include ]; then
 fi
 cd $TOP/admin
 gen_includes
+
+cd $TOP/www/include
+if [ -h bodyStart.html ]; then
+	rm bodyStart.html
+fi
+if [ -h bodyStop.html ]; then
+	rm bodyStop.html
+fi
+ln -s ${WI_PATH}www/include/bodyStart.html bodyStart.html
+ln -s ${WI_PATH}www/include/bodyStop.html bodyStop.html
 cd $TOP
 
 # make the www/GXD/AD/ directory and fill it

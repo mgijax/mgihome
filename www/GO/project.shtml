@@ -1,10 +1,28 @@
 <HTML><HEAD>
 <TITLE>The Gene Ontology (GO) Project</TITLE></HEAD>
-<!--#include file="include/banner.html"-->
-<BODY BGCOLOR="#FFFFFF">
-<BR>
 
-<H2 align=center>The Gene Ontology (GO) Project</H2>
+<BODY BGCOLOR="#FFFFFF">
+<!--#include file="include/bodyStart.html"--><BR>
+
+
+<TABLE WIDTH="100%" BORDER=0 CELLPADDING=2 CELLSPACING=1>
+ <TR>
+  <TD WIDTH="100%" BGCOLOR="#D0E0F0">
+   <TABLE WIDTH="100%" BORDER=0 CELLPADDING=0 CELLSPACING=0>
+    <TR>
+     <TD WIDTH="20%" VALIGN="center" ALIGN="left">&nbsp;</TD>
+     <TD WIDTH="60%" ALIGN="center" VALIGN="center">
+      <FONT COLOR="#000000" SIZE=5 FACE="Arial,Helvetica">
+       The Gene Ontology (GO) Project
+      </FONT>
+     </TD>
+     <TD WIDTH="20%" VALIGN="center" ALIGN="center">&nbsp;</TD>
+    </TR>
+   </TABLE>
+  </TD>
+ </TR>
+</TABLE>
+
 <hr>
 <P>
 We are part of the <A HREF = "http://genome-www.stanford.edu/GO/" target="_top"> Gene Ontology Consortium</A> that also currently includes <A HREF="http://flybase.bio.indiana.edu/" target="_top">Flybase</A> and <A HREF="http://genome-www.stanford.edu/Saccharomyces/" target="_top">SGD</A> (Saccharomyces Genome Database). The objective of the GO project is to provide controlled vocabularies for the description of the molecular function, biological process, and cellular component of gene products. These terms are to be used as attributes of gene products by collaborating databases, facilitating uniform queries across them.
@@ -38,9 +56,9 @@ General Documentation</A> at the Gene Ontology Consortium site.
 <BR>
 <BR>
 <HR><BR>
-<!--#include file="include/footer.html"-->
 
-</BODY></HTML>
+
+<!--#include file="include/bodyStop.html"--></BODY></HTML>
 <!--
 Warranty Disclaimer and Copyright Notice
 

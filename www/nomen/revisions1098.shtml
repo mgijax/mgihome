@@ -7,9 +7,27 @@
 98:Templates:Web Pages:Blank Web Page">
 </HEAD>
 <BODY LINK="#0000ff" VLINK="#800080" BGCOLOR="#ffffff">
+<!--#include file="include/bodyStart.html"-->
+<P></P>
 
-<P><!--#include file="include/banner.html"--></P>
-<H2 ALIGN="CENTER">Nomenclature Rules Revisions - October 1998</H2>
+<TABLE WIDTH="100%" BORDER=0 CELLPADDING=2 CELLSPACING=1>
+ <TR>
+  <TD WIDTH="100%" BGCOLOR="#D0E0F0">
+   <TABLE WIDTH="100%" BORDER=0 CELLPADDING=0 CELLSPACING=0>
+    <TR>
+     <TD WIDTH="20%" VALIGN="center" ALIGN="left">&nbsp;</TD>
+     <TD WIDTH="60%" ALIGN="center" VALIGN="center">
+      <FONT COLOR="#000000" SIZE=5 FACE="Arial,Helvetica">
+       Nomenclature Rules Revisions - October 1998
+      </FONT>
+     </TD>
+     <TD WIDTH="20%" VALIGN="center" ALIGN="center">&nbsp;</TD>
+    </TR>
+   </TABLE>
+  </TD>
+ </TR>
+</TABLE>
+
 <P>The International Committee for Standardised Genetic Nomenclature for
 Mice meeting in Garmisch-Partenkirchen in October 1998.</P>
 <B><P>Revised rules - Gene Nomenclature</P>
@@ -74,7 +92,7 @@ used, these are termed congenic strains if the donor strain contribution
 unlinked to selected locus or chromosomal region is less than 0.1% (i.e.
 NE10)". </P>
 <P><HR></P>
-<P><!--#include file="include/footer.html"--></P></BODY>
+<P></P><!--#include file="include/bodyStop.html"--></BODY>
 </HTML>
 <!--
 Warranty Disclaimer and Copyright Notice

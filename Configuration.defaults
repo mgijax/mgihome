@@ -60,3 +60,6 @@ SYBASE		/opt/sybase
 
 # path to library files for doing crons (commented out for now)
 #LD_LIBRARY_PATH	$LD_LIBRARY_PATH:$SYBASE/OCS-12_5/lib
+
+# full path to associated WI installation (to help find toolbar include files)
+WI_PATH         /usr/local/mgi/wi/current/

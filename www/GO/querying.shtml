@@ -1,10 +1,28 @@
 <HTML><HEAD>
 <TITLE>Gene Ontology Information</TITLE></HEAD>
-<!--#include file="include/banner.html"-->
-<BODY BGCOLOR="#FFFFFF">
-<BR>
 
-<A NAME="Query"></A><H2 align=center>Querying the GO in MGI</H2>
+<BODY BGCOLOR="#FFFFFF">
+<!--#include file="include/bodyStart.html"--><BR>
+
+<A NAME="Query"></A>
+<TABLE WIDTH="100%" BORDER=0 CELLPADDING=2 CELLSPACING=1>
+ <TR>
+  <TD WIDTH="100%" BGCOLOR="#D0E0F0">
+   <TABLE WIDTH="100%" BORDER=0 CELLPADDING=0 CELLSPACING=0>
+    <TR>
+     <TD WIDTH="20%" VALIGN="center" ALIGN="left">&nbsp;</TD>
+     <TD WIDTH="60%" ALIGN="center" VALIGN="center">
+      <FONT COLOR="#000000" SIZE=5 FACE="Arial,Helvetica">
+       Querying the GO in MGI
+      </FONT>
+     </TD>
+     <TD WIDTH="20%" VALIGN="center" ALIGN="center">&nbsp;</TD>
+    </TR>
+   </TABLE>
+  </TD>
+ </TR>
+</TABLE>
+
 <hr>
 Genes in MGI are annotated using GO terms.  Several query forms, "Genes,
 and Markers," "Linkage Map," "Gene Expression Data," and "cDNA
@@ -50,9 +68,9 @@ available (see
 <A HREF = "http://www.fruitfly.org/annot/go" target="_top">Gene Ontology Applet</A>).
 <P>
 <HR><BR>
-<!--#include file="include/footer.html"-->
+
 </blockquote>
-</BODY></HTML>
+<!--#include file="include/bodyStop.html"--></BODY></HTML>
 <!--
 Warranty Disclaimer and Copyright Notice
 

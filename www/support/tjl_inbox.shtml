@@ -3,9 +3,27 @@
 <TITLE>HelpDesk Express Mail </TITLE> 
 </HEAD>
 <BODY BGCOLOR="#ffffff">
-<!--#include file="include/banner.html"-->
+<!--#include file="include/bodyStart.html"-->
 <Hr>
-<H2><a href="support.shtml">MGI HelpDesk</a> <EM>Express</EM> Mail</H2>
+
+<TABLE WIDTH="100%" BORDER=0 CELLPADDING=2 CELLSPACING=1>
+ <TR>
+  <TD WIDTH="100%" BGCOLOR="#D0E0F0">
+   <TABLE WIDTH="100%" BORDER=0 CELLPADDING=0 CELLSPACING=0>
+    <TR>
+     <TD WIDTH="20%" VALIGN="center" ALIGN="left">&nbsp;</TD>
+     <TD WIDTH="60%" ALIGN="center" VALIGN="center">
+      <FONT COLOR="#000000" SIZE=5 FACE="Arial,Helvetica">
+       <a href="support.shtml">MGI HelpDesk</a> <EM>Express</EM> Mail
+      </FONT>
+     </TD>
+     <TD WIDTH="20%" VALIGN="center" ALIGN="center">&nbsp;</TD>
+    </TR>
+   </TABLE>
+  </TD>
+ </TR>
+</TABLE>
+
 We want to hear from you.  Use this form to enter your comments, questions,
 suggestions, or report problems.  Please include contact information as
 requested in the fields below so that we can respond promptly.  Be as
@@ -48,8 +66,8 @@ detailed in your message as possible.  Thanks!
 </FORM>
 <P>
 <HR>
-<!--#include file="include/footer.html"-->
-</BODY>
+
+<!--#include file="include/bodyStop.html"--></BODY>
 </HTML>
 
 <!--
