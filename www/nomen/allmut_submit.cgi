@@ -25,7 +25,7 @@ import formMailer
 
 SimpleVocab.set_sqlFunction (homelib.sql)
 
-submit_addr = 'jw@informatics.jax.org'	# MGD Allele and Mutant E-mail
+submit_addr = 'mutants@informatics.jax.org'	# MGD Allele and Mutant E-mail
 
 # developer override for mailtarget
 dev_email = config.lookup ('CGI_MAILTARGET')
