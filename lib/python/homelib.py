@@ -112,6 +112,7 @@ def wrapLines (
 	# This code was freely pilfered from WTS's wtslib.py file.
 
 	LF = '\n'
+	TRUE = 1
 	line_list = []				# list of generated lines
 	lines = string.split (s, LF)		# list of input lines
 
