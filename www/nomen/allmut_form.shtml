@@ -6,8 +6,7 @@
 <CENTER>
 <!--#include file="include/banner.html"-->
 </CENTER>
-
-
+<blockquote>
 <H2>Mutant Submissions Form</H2>
 <ul>
 <li>Use this submission form to describe mutant alleles: either mutations whose allelism is unknown, or alleles of known genes. 
@@ -24,61 +23,33 @@
 Please refer to the <A HREF="allmut_quickhelp.shtml">
 Allele and Mutant Quick Nomenclature Guide</A>  for additional hints for completing this section.
 <BR><BR>
+<dl>
 <DT>If the mutation is an allele of a <B>known gene</B>, enter the <B>gene symbol</B> 
 <INPUT TYPE="text" NAME="genesymbol" SIZE=15> 
 (check the gene symbol in <A href="<!--#include file='include/wi_url.html'-->">MGD</A>)<BR><BR>
 <B>For this mutant, enter its:</B>
 <DD> Allele Designation :    <INPUT TYPE="text" NAME="allele" SIZE=15> (superscripted portion of allele symbol)<BR>
 <DD>Allele Name :     <INPUT TYPE="text" NAME="allelename" SIZE=50><BR>
-</DT>
 <BR>
-
-
-<DD><table cell>
-<tr>
-<TD VALIGN="center">
-       <form>
-        <TABLE BGCOLOR="#D5F8FE" border=1 CELLSPACING="0" CELLPADDING="0" width=90%>
-        <TR>
-        <TD>
-<Table border=1 cellpadding=0 cellspacing=1 width=70%>
-<TR>
-        <small><B><DD><EM> Example:</EM></small>
-</TR>
-<TD></TD><TD><SMALL><B>Mutant allele of a known gene</B></SMALL></TD>
-<TD><SMALL>Mutant allele, 
-gene mutated unknown</B></SMALL></TD>
-</TR>
-
-<TD><SMALL>Gene symbol</TD>
-<TD><SMALL> Lep</TD>
-<DD><TD><SMALL> --- </TD></TR>
-<TR>
-<TD><SMALL>Allele designation</TD>
-<TD><SMALL> ob</TD>
-<TD><SMALL>slpy</TD>
-</TR>
-<TD><SMALL>Allele name</TD>
-<TD> <SMALL>obese</TD>
-<TD><SMALL>sleepy</TD>
-</TR>
-
-</Table>
-</SMALL>
-<SMALL>In the case of a mutation in the known gene <I>Lep</I>, the full allele symbol is <I>Lep<SUP>ob</SUP></I>.<BR>
-In the case where the gene is unknown, the allele and gene symbol are synonymous <BR>(pending
-identification of the gene),  in this example, <I>slpy</I>.<BR>
-</SMALL>
-<br>
-</TR></TABLE>
-</TD></tr></table></TR>
-</table cell></DT>
-
-
-
-
+<DD><table>
+    <tr>
+    <TD VALIGN="center">
+      <TABLE BGCOLOR="#D5F8FE" border=1 CELLSPACING="0" CELLPADDING="0" width=90%>
+        <TR><TD>
+          <Table border=1 cellpadding=0 cellspacing=1 width=70%>
+          <TR><small><B><dd><EM> Example:</EM></small></TR>
+          <tr><TD></TD><TD><SMALL><B>Mutant allele of a known gene</B></SMALL></TD><TD><SMALL>Mutant allele, gene mutated unknown</B></SMALL></TD></TR>
+          <tr><TD><SMALL>Gene symbol</TD><TD><SMALL> Lep</TD><DD><TD><SMALL> --- </TD></TR>
+          <TR><TD><SMALL>Allele designation</TD><TD><SMALL> ob</TD><TD><SMALL>slpy</TD></TR>
+          <tr><TD><SMALL>Allele name</TD><TD> <SMALL>obese</TD><TD><SMALL>sleepy</TD></TR>
+          </Table></SMALL>
+      <SMALL>In the case of a mutation in the known gene <I>Lep</I>, the full allele symbol is <I>Lep<SUP>ob</SUP></I>.<BR>
+In the case where the gene is unknown, the allele and gene symbol are synonymous <BR>(pending identification of the gene), in this example, <I>slpy</I>.<BR></SMALL><br>
+          </TR></TABLE></TD></tr>
+     </table></TR>
+   </table>
+</DL>
 Other names/synonyms:  <INPUT TYPE="text" NAME="synonyms" SIZE=55><BR>
-
 <HR>
 Strain/Genetic Background (where mutation arose):    <INPUT TYPE="text" NAME="strainMutation" SIZE=50>
 <br>
@@ -87,32 +58,32 @@ Strain/Genetic Background (where phenotype analyzed):    <INPUT TYPE="text" NAME
 Other Strain/Background Information (speed congenic generation, details of complex genetic backgrounds or crosses, etc): <br>   
 <TEXTAREA NAME="strainInfo" ROWS=4 COLS=65></TEXTAREA>
 <!--<INPUT TYPE="text" NAME="strainInfo" SIZE=50-->
-<DL>
-<DT>Method of Allele Generation:
-<DD><INPUT TYPE="radio" NAME="method" VALUE="spontaneous" > spontaneous  
-<INPUT TYPE="radio" NAME="method" VALUE="ENU"> ENU  induced 
-<INPUT TYPE="radio" NAME="method" VALUE="EMS"> EMS  induced 
-<INPUT TYPE="radio" NAME="method" VALUE="irradiation"> irradiation  induced <BR>
-<INPUT TYPE="radio" NAME="method" VALUE="transgenic"> transgenic 
-<INPUT TYPE="radio" NAME="method" VALUE="targeting"> targeted  
-<INPUT TYPE="radio" NAME="method" VALUE="genetrap">gene  trapped  
-<INPUT TYPE="radio" NAME="method" VALUE="conditional">conditional/targeted  
-<INPUT TYPE="radio" NAME="method" VALUE="other"> other
-<BR><BR>
-<DD>If Allele generation method is "other", please specify  
-<INPUT TYPE="text" NAME="othermethod" SIZE=25>
-<DD> For transgenes, please specify transgene promoter 
-<INPUT TYPE="text" NAME="promoter" SIZE=25>
-<DD> For targeted mutations, please specify ES cell line used 
-<INPUT TYPE="text" NAME="celline" SIZE=25>
-</DL>
 
-<DT>Mode of Inheritance: 
-<INPUT TYPE="radio" NAME="mode" VALUE="dominant"> dominant  
-<INPUT TYPE="radio" NAME="mode" VALUE="codominant"> codominant
-<INPUT TYPE="radio" NAME="mode" VALUE="semidominant"> semidominant 
-<INPUT TYPE="radio" NAME="mode" VALUE="recessive"> recessive  
-<INPUT TYPE="radio" NAME="mode" VALUE="other"> unknown/other  <BR>
+<DL>
+  <DT>Method of Allele Generation:
+  <DD><INPUT TYPE="radio" NAME="method" VALUE="spontaneous" > spontaneous  
+  <INPUT TYPE="radio" NAME="method" VALUE="ENU"> ENU  induced 
+  <INPUT TYPE="radio" NAME="method" VALUE="EMS"> EMS  induced 
+  <INPUT TYPE="radio" NAME="method" VALUE="irradiation"> irradiation  induced <BR>
+  <INPUT TYPE="radio" NAME="method" VALUE="transgenic"> transgenic 
+  <INPUT TYPE="radio" NAME="method" VALUE="targeting"> targeted  
+  <INPUT TYPE="radio" NAME="method" VALUE="genetrap">gene  trapped  
+  <INPUT TYPE="radio" NAME="method" VALUE="conditional">conditional/targeted  
+  <INPUT TYPE="radio" NAME="method" VALUE="other"> other
+  <BR><BR>
+  <DD>If Allele generation method is "other," please specify  
+  <INPUT TYPE="text" NAME="othermethod" SIZE=25>
+  <DD> For transgenes, please specify transgene promoter 
+  <INPUT TYPE="text" NAME="promoter" SIZE=25>
+  <DD> For targeted mutations, please specify ES cell line used 
+  <INPUT TYPE="text" NAME="celline" SIZE=25>
+
+  <DT>Mode of Inheritance: 
+  <INPUT TYPE="radio" NAME="mode" VALUE="dominant"> dominant  
+  <INPUT TYPE="radio" NAME="mode" VALUE="codominant"> codominant
+  <INPUT TYPE="radio" NAME="mode" VALUE="semidominant"> semidominant 
+  <INPUT TYPE="radio" NAME="mode" VALUE="recessive"> recessive  
+  <INPUT TYPE="radio" NAME="mode" VALUE="other"> unknown/other  <BR>
 </DL>
 Chromosome Location (Enter UN if unknown):    
 <INPUT TYPE="text" NAME="chromosome" SIZE=10>
@@ -121,14 +92,17 @@ Other Genome Location Information (cM, cR, or cytogenetic location; molecular lo
 <TEXTAREA NAME="location" ROWS=4 COLS=65></TEXTAREA>
 <BR>
 <HR>
+
 <H3>Phenotype</H3>
 <B>Phenotypic categories </B>(select all that apply, where the allele shows an effect):<BR>
 <!--#include file="include/phenoslim_select.html"-->
 <BR><BR>
-If appropriate classification(s) for the allele do not appear above, enter here: 
+
+If appropriate classification(s) for the allele do not appear above, enter here: <br>
 <INPUT TYPE="text" NAME="othercategory" SIZE=50><BR>
 <BR><BR>
-Description (text, details of phenotype observed, etc.):<BR><TEXTAREA NAME ="description" ROWS=5 COLS=65></TEXTAREA><BR>
+Description (text, details of phenotype observed, etc.):<BR>
+<TEXTAREA NAME="description" ROWS=5 COLS=65></TEXTAREA><BR>
 <BR>
 Other remarks (gene function/pathway, available clones, GenBank numbers, etc.)<BR>
 <TEXTAREA NAME="remarks" ROWS=3 COLS=65></TEXTAREA><BR>
@@ -151,12 +125,13 @@ Please report publications about this allele. PubMed accession _ids may be used.
 Citations:<TEXTAREA NAME="citations" ROWS=3 COLS=60></TEXTAREA><BR>
 </TABLE>
 <BR>
-<DL>If allele data are available from a Web site, please give URL: <BR>
+<DL>
+<dt>If allele data are available from a Web site, please give URL: <BR>
 <DD><INPUT TYPE="text" NAME="alleleURL" SIZE=60><BR>
 </DL>
 <HR>
 <H3>Contact Details:</H3>
- If your contact details are already in MGD you only need to enter your name and e-mail address.  <BR>
+ If your contact details are already in MGD, you only need to enter your name and e-mail address.  <BR>
 <PRE>
 Last name:                    <INPUT TYPE="text" NAME="lastname" SIZE=30>(required)
 First name & middle name(s):  <INPUT TYPE="text" NAME="firstname" SIZE=30>(required)
@@ -179,7 +154,7 @@ allele will be emailed to you shortly!  Thank you.</H3>
 <INPUT TYPE=submit VALUE="Submit"> <INPUT TYPE=reset VALUE="Reset Form">
 <HR>
 </FORM>
-
+</blockquote>
 <!--#include file="include/footer.html"-->
 </BODY>
 </HTML>
