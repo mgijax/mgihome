@@ -1,48 +1,54 @@
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
 <HTML>
 <HEAD>
-<TITLE>Irx Family Template</TITLE>
+  <TITLE>Irx Family Template</TITLE>
 </HEAD>
-<BODY BGCOLOR=#FFFFFF>
-<CENTER>
-<IMG SRC="http://www.informatics.jax.org/mgihome/images/mgi_small_banner.gif"
-WIDTH=501   HEIGHT=40   ALT="Mouse Genome Informatics">
-</CENTER>
+  <BODY BGCOLOR=#FFFFFF>
+  <CENTER>
+   <IMG SRC="http://www.informatics.jax.org/mgihome/images/mgi_small_banner.gif" WIDTH=501   HEIGHT=40   ALT="Mouse Genome Informatics">
+  </CENTER>
 <BODY background="">
-<center><h2>Irx Gene Family</h2></center>
+  <center><h2>Irx Gene Family</h2>
+  </center>
+
 <HR width="90%">
 <table frame=void cols=2 width=100%>
-<tr><td width=20%><b>Family Root Symbol:</b><td width=80%>Irx#</tr>
-<tr><td><b>Family Name:</b><td>iroquois related homeobox # (Drosophila)</tr> 
+ <tr><td width=20%><b>Family Root Symbol:</b><td width=80%>Irx#</tr>
+ <tr><td><b>Family Name:</b><td>iroquois related homeobox # (Drosophila)</tr> 
 </table>
 <p>Links to Irx family data
+ 
 <TABLE bgcolor=white border=1 cols=5 width=90% cellpadding=4>
-<TR><TH width=15%>Symbol<TH width=20%>Sequence<TH width=40%>Synonyms<TH width=10%>Orthologs
-<TH width=15%>Chr/cM</TR>
+ <TR>
+ <TH width=15%>Symbol
+ <TH width=20%>Sequence
+ <TH width=40%>Synonyms
+ <TH width=10%>Orthologs
+ <TH width=15%>Chr</TR>
 <tbody align=left>
-<TR>
- <TD><A href="<!--#include file="include/wi_url.html"-->searches/marker.cgi?35453">Irx1</A>
- <TD><a href="http://www.ncbi.nlm.nih.gov/htbin-post/Entrez/query?db=n&amp;form=6&amp;uid=Y15002">Y15002</a><br>
- <TD>&nbsp;
- <TD align=center><img src="redball1.gif" height=21 width=21></td>
- <TD>13 (syntenic)
+ <TR>
+  <TD><A href="<!--#include file="include/wi_url.html"-->searches/marker.cgi?35453">Irx1</A>
+  <TD><a href="http://www.ncbi.nlm.nih.gov/htbin-post/Entrez/query?db=n&amp;form=6&amp;uid=Y15002">Y15002</a><br>
+  <TD>&nbsp;
+  <TD align=center><img src="redball1.gif" height=21 width=21></td>
+  <TD>13 (43.0)
 </TR>
 <tr>
 <TD><A href="<!--#include file="include/wi_url.html"-->searches/marker.cgi?35464">Irx2</A>
  <TD><a href="http://www.ncbi.nlm.nih.gov/htbin-post/Entrez/query?db=n&amp;form=6&amp;uid=Y15000">Y15000</a><br>
  <TD>IRX6
  <TD>&nbsp;</td>
- <TD>13 (syntenic)
+ <TD>13 (43.0)
  </TR>
 <TR>
  <TD><A href="<!--#include file="include/wi_url.html"-->searches/marker.cgi?35460">Irx3</A>
- <TD><a href="http://www.ncbi.nlm.nih.gov/htbin-post/Entrez/query?db=n&amp;form=6&amp;uid=Y15002">Y15002</a><br>
+ <TD><a href="http://www.ncbi.nlm.nih.gov/htbin-post/Entrez/query?db=n&amp;form=6&amp;uid=Y15001">Y15001</a><br>
  <TD>&nbsp;
  <TD align=center><img src="redball1.gif" height=21 width=21></td>
- <TD>8 (syntenic)
+ <TD>8 (42.1)
 </TR>
 <TR>
-<TD><A href="<!--#include file="include/wi_url.html"-->searches/marker.cgi?46130">Irx4</A>
+ <TD><A href="<!--#include file="include/wi_url.html"-->searches/marker.cgi?46130">Irx4</A>
  <TD><a href="http://www.ncbi.nlm.nih.gov/htbin-post/Entrez/query?db=n&amp;form=6&amp;uid=AF124732">AF124732</a><br>
  <TD>&nbsp;
  <TD align=center><img src="redball1.gif" height=21 width=21></td>
@@ -53,7 +59,7 @@ WIDTH=501   HEIGHT=40   ALT="Mouse Genome Informatics">
  <TD><a href="http://www.ncbi.nlm.nih.gov/htbin-post/Entrez/query?db=n&amp;form=6&amp;uid=AJ271053">AJ271053</a><br>
  <TD>&nbsp;
  <TD align=center><img src="redball1.gif" height=21 width=21></td>
- <TD>8 (syntenic)
+ <TD>8 (43.3)
 </TR>
 <TR>
 <TD><!--A href="<!--#include file="include/wi_url.html"-->searches/marker.cgi?nnnnn"-->Irx6</A>
@@ -63,21 +69,23 @@ WIDTH=501   HEIGHT=40   ALT="Mouse Genome Informatics">
  <TD>13 (syntenic)
 </TR>
 </TABLE>
-<small>Family Note:</small>
+<small>Family Note: None.</small>
 <br>
 <br>
 <hr>
-<h3>Notes About Gene Family Annotations in MGD</h3> 
-<h4><i>Nomenclature for New Genes</i></h4>
+<h4>Notes About Gene Family Annotations in MGD</h4> 
+<h5><i>Nomenclature for New Genes</i></h5>
+<p><small>
 Contact the MGD Nomenclature Committee (<A href="mailto:nomen@informatics.jax.org">nomen@informatics.jax.org</A>)
  for approved gene symbols prior to submission.  This avoids any possible conflicts
 with existing symbols and ensures that the gene symbol and name are reserved in the
-MGD private nomenclature database.  All information is kept confidential until publication.
-<h4><i>Nomenclature for Gene Families</i></h4>
+MGD private nomenclature database.  All information is kept confidential until publication.</small>
+<h5><i>Nomenclature for Gene Families</i></h5>
+<p><small>
 MGD works closely with HUGO and other interested scientists in the establishment of nomenclature 
 for genes that are members of gene families and in representing the relationships between members of
  gene families. In general, a stem symbol is assigned (e.g., <i>Entpd</i>) and members of the family 
- are numbered (e.g., <i>Entpd1, Entpd2</i>, etc.). However, there are exceptions and many special cases.
+ are numbered (e.g., <i>Entpd1, Entpd2</i>, etc.). However, there are exceptions and many special cases.</small>
 </BODY> 
 </HTML> 
 <!--
