@@ -413,10 +413,12 @@ identity of the plate and the clone location (row and column) on that plate. Inf
 </UL>
 </DD></P>
 
+<P><DT><B><A NAME="assembly_coordinates"></A>Assembly Coordinates</B></DT>
+<DD>Numerical values defining a sequence interval along a chromosome in the mouse genome <A HREF="#assembly_sequence">assembly</A>. In <A HREF="#MGI">MGI</A>, gene <A HREF="#sequence">sequences</A> are defined as the interval between the start position of the first <A HREF="#exon">exon</A> and the end position of the last exon of a gene as annotated by NCBI Gene or Ensembl. See <A HREF="http://www.ncbi.nlm.nih.gov/genome/guide/mouse/">NCBI Gene Model</A> and <A HREF="http://www.ensembl.org/Mus_musculus/">Ensembl Gene Model</A> for further information.</DD></P>
+
 
 <P><DT><B><A NAME="assembly_sequence"></A>Assembly Sequence</B></DT>
-<DD>The sequence defined by an interval along a chromosome in the mouse genome assembly. In MGI, assembly sequences are defined as the interval between the start position of the first exon and the end position of the last exon of a gene as annotated by the NCBI or Ensembl gene models.<!--See <A HREF="http://">?</A> for further information.-->
-</DD></P>
+<DD>The <A HREF="#sequence">sequence</A> defined by an interval along a chromosome in the mouse genome assembly. In <A HREF="#MGI">MGI</a>, assembly sequences are defined as the interval between the start position of the first <A HREF="#exon">exon</a> and the end position of the last exon of a gene as annotated by the NCBI or Ensembl gene models.See <A HREF="http://www.ncbi.nlm.nih.gov/genome/guide/mouse/">NCBI Gene Model</A> and <A HREF="http://www.ensembl.org/Mus_musculus/">Ensembl Gene Model</A> for further information.</DD></P>
 
 
 
@@ -586,6 +588,13 @@ processes included in this category are cell growth and maintenance, signal tran
 <DD>Refers to an expression that must evaluate to a value of <B>true</B> or <B>false</B>, named for the British mathematician George Boole.
 In MGI and other databases, Boolean refers to the kind of logical relationship among search terms. Boolean operators include AND, OR, and NOT. For example, searching for all markers of the type "Gene" on Chromosome 2 is equivalent to identifying the union of the two sets: 1) all markers of the type "Gene" (Type Gene?=<B>true</B>) AND 2) all markers on Chromosome 2 (Chromosome 2=<B>true</B>).
 </DD></P>
+
+
+<P><DT><B><A NAME="build"></A>Build</B></DT>
+<DD>In <A HREF="#ncbi"></A>NCBI, the end result of processes used to assemble genomic sequence data, annotate features, and  provide a dataset of assembled genomic sequence, RNAs, and proteins. Such  processes are complex; NCBI continues to refine them so that regions not fully represented will improve with subsequent builds. See also:
+<UL>
+  <LI><a href=#NCBI">NCBI</a> Mouse Build 33</a></LI>
+  <LI><A href="#assembly_sequence">assembly sequence</A>.</li></ul> </dd></p>
 
 <!-- CCCCCCCCCCCCCCCCCCCCCCCCCCCCCC --><A NAME="c"></A>
 
@@ -772,6 +781,9 @@ In MGI and other databases, Boolean refers to the kind of logical relationship a
 <A HREF="#cloning_vector">cloning vector</A>.</LI>
 <LI>An organism derived from a founding individual by asexual means that is genetically identical to the founding individual.</LI></OL>
 </DD></P>
+
+<P><DT><B><A NAME="clone_collection"></A>Clone Collection</B></DT>
+<DD>Clone collections in <A HREF="#MGI">MGI</A> refer to designated sets of <a href="#clone">clones</a> from specific clone libraries. In some cases, the designated set of clones includes all clones from the specified libraries (for example, the IMAGE clone collection is the group of clones from all I.M.A.G.E. consortium clone libraries). In other cases, the designated set of clones includes a well-defined subset of clones from the specified libraries (for example, the NIA 15K clone set is a subset of clones derived from NIA libraries). Clone data in MGI include sequence associations and clone library molecular source information. For all MGI clone collections, molecular source information is mapped to MGI <a href="#controlled_vocabulary">controlled vocabularies</A>. </DD></P>
 
 <P><DT><B><A NAME="cloning_artifact"></A>Cloning Artifact</B></DT>
 <DD>A
@@ -1401,6 +1413,13 @@ Input sequences are clustered and assembled to form the DoTS Consensus Transcrip
 the cells and developmental stages where the enhancer is active. See also
 <A HREF="#gene_trap">Gene Trap</A>.
 </DD></P>
+
+<P><DT><B><A NAME="ensembl"></A>Ensembl Gene Model</B></DT>
+<DD>A description of a gene associated with the mouse genome assembly from the <A HREF="http://www.ensembl.org/Mus_musculus/">Mouse Genome Sequencing Consortium</A> (MGSC). The gene model includes the <A HREF="#assembly_coordinates">coordinates</A> of each <a href="intron">intron</a> and <A HREF="#exon">exon</A>, as well as the beginning and end of the transcript. </DD></P>
+
+
+
+
 
 <P><DT><B><A NAME="ENU"></A>ENU</B></DT>
 <DD>Ethylnitrosourea; N-ethyl-N-nitrosourea. A chemical
@@ -2742,6 +2761,14 @@ See also
 <A HREF="http://www.ncbi.nlm.nih.gov/">National Center for Biotechnology Information</A>.
 </DD></P>
 
+<P><DT><B><A NAME="build"></A>NCBI Mouse Assembly Build 33</B></DT>
+<DD>Mouse Build 33 represents a third generation composite <A href="#assembly_sequence">assembly</A>. See
+<a href="http://www.ncbi.nlm.nih.gov/genome/seq/NCBIContigInfo.html">Assembling Genomic Sequences</a> for complete details on build 33 and the earlier composite genomic sequence assemblies for mouse.</dd>
+
+<P><DT><B><A NAME="ensembl"></A>NCBI Gene Model</B></DT>
+<DD>A description of a gene associated with the mouse genome assembly from <A HREF="#NCBI">NCBI</A>. The <a href="<A HREF="http://www.ncbi.nlm.nih.gov/genome/guide/mouse/">NCBI gene model</a> includes the <A HREF="#assembly_coordinates">coordinates</A> of each <a href="intron">intron</a> and <A HREF="#exon">exon</A>, as well as the beginning and end of the transcript. </DD></P>
+
+
 <P><DT><B><A NAME="neomorphic"></A>Neomorphic Mutation</B></DT>
 <DD>A type of
 <A HREF="#mutation">mutation</A> in which the altered
@@ -3710,13 +3737,26 @@ are either <I>A<SUP>w</SUP></I>/<I>a</I> (white bellied agouti) or <I>a</I>/<I>a
 <A HREF="#allele">allelic</A> variation, etc.
 </DD></P>
 
-<P><DT><B><A NAME="seqID"></A>Sequence ID, SeqID</B></DT>
-<DD>Sequence accession identifier. A unique alphanumeric character string that unambiguously identifies a sequence record in a database. Examples of MGI genomic sequence providers are NCBI and Ensembl; examples of sequence IDs from these providers are 16590 and ENSMUSG00000053869, respectively.  See also:
+<P><DT><B><A NAME="seqID"></A>SeqID, Sequence ID</B></DT>
+<DD>Sequence accession identifier. A unique alphanumeric character string that unambiguously identifies a <A HREF="#sequence">sequence</A> record in a database. Examples of MGI genomic sequence providers are <A HREF="#NCBI">NCBI</A> and <A HREF="#ensembl">Ensembl</A>; examples of sequence IDs from these providers are 16590 and ENSMUSG00000053869, respectively.  See also:
 <ul>
-<LI><A HREF="#sequence">sequence</A></li>
+<LI><A HREF="#assembly_sequence">assembly sequence</A></li>
 <LI><A HREF="#sequence_annotation">sequence annotation</A></LI>
+<LI><A HREF="#sequencing">sequencing</A></LI>
 </ul>
 </DD></P>
+
+<P><DT><B><A NAME="sequence_provider"></A>Sequence Provider</B></DT>
+<DD>Whole genome sequencing data from large-scale
+genome projects.  <A HREF="#MGI">MGI</A> genomic sequence providers are <A HREF="#NCBI">NCBI</A> and <A HREF="#ensembl">Ensembl</A>; examples of sequence IDs from these providers are 16590 and ENSMUSG00000053869, respectively.  See also:
+<ul>
+<LI><A HREF="#assembly_sequence">assembly sequence</A></li>
+<LI><A HREF="#sequence_annotation">sequence annotation</A></LI>
+<LI><A HREF="#sequencing">sequencing</A></LI>
+</ul>
+</DD></P>
+
+
 
 
 <P><DT><B><A NAME="sequencing"></A>Sequencing</B>
@@ -4222,6 +4262,9 @@ See also
 </DD></P>
 
 <!-- UUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUU --><A NAME="u"></A>
+<P><DT><B><A NAME="UCSC_genome_browser"></A>UCSC</B></DT>
+<DD>The browser <A HREF="http://genome.ucsc.edu/">The University of California at Santa Cruz</a>. Location of UCSC Browser from the Genome Bioinformatics Group.
+
 
 <P><DT><B><A NAME="unigene"></A>UniGene</B></DT>
 <DD>An experimental system for automatically partitioning
@@ -4253,7 +4296,7 @@ See the
 
 <P><DT><B><A NAME="unresolved_value"></A>Unresolved Value</B></DT>
 <DD>In
-<A HREF="#MGI">MGI</A>, a value or attribute that is not stored in the MGI database.  For example, a sequence provider lists the strain attribute as &quot;wild-caught in Tamil Nadu, South India. &quot;A database query on this attribute would fail because <I>wild-caught</i> strain is not in a standard <A NAME="MGI">MGI</A>
+<A HREF="#MGI">MGI</A>, a value or attribute that is not stored in the MGI <A HREF="#database">database</A>.  For example, a sequence provider lists the strain attribute as &quot;wild-caught in Tamil Nadu, South India. &quot;A database query on this attribute would fail because <I>wild-caught</i> strain is not in a standard <A NAME="MGI">MGI</A>
 <A HREF="#controlled_vocabulary">controlled vocabulary</A>.
 See also
 <A HREF="#resolved_value">Resolved Value</A>.
