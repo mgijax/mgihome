@@ -1,7 +1,7 @@
 <HTML> <HEAD> <TITLE><!--#include file='include/mgiversion.html'--> What's
 New</TITLE> </HEAD> <BODY BGCOLOR="#FFFFFF"> <!--#include
 file="include/bodyStart.html"--> <TABLE WIDTH="100%" BORDER=0 CELLPADDING=2
-CELLSPACING=1> <TR> <TD WIDTH="100%" BGCOLOR="#D0E0F0"> <TABLE WIDTH="100%"
+CELLSPACING=1> <TR><TD WIDTH="100%" BGCOLOR="#D0E0F0"> <TABLE WIDTH="100%"
 BORDER=0 CELLPADDING=0 CELLSPACING=0> <TR> <TD WIDTH="20%" VALIGN="center"
 ALIGN="left">&nbsp;</TD> <TD WIDTH="60%" ALIGN="center" VALIGN="center"> <FONT
 COLOR="#000000" SIZE=5 FACE="Arial,Helvetica"> What's New </FONT> </TD> <TD
@@ -10,11 +10,16 @@ WIDTH="20%" VALIGN="center" ALIGN="center">&nbsp;</TD> </TR> </TABLE> </TD>
 WIDTH="100%"> <TR ALIGN="left" VALIGN="top"> <TD ALIGN="left" VALIGN="top">
 <TABLE ALIGN="CENTER" BORDER="-2" CELLSPACING="0" CELLPADDING="6" width="85%">
 <TR BGCOLOR="#DFEFFF"><TD ALIGN="left" VALIGN="middle"><CENTER> <FONT
-FACE="Arial, Helvetica, Sans Serif"><h4>Latest update: April 5,
-2004</h4></CENTER></font> <font size=-1> <ul> <li><A href="#mar04">Update: March
-29, 2004</a></li> <li><A href="#coatcolor">Update: March 8, 2004</a></li> <li><A
-href="#feb04">Update: February 4, 2004</a></li> <li><A href="#jan04">Update:
-January 19, 2004</a></li> <li><A href="#jan04">Update: January 14, 2004</a></li>
+FACE="Arial, Helvetica, Sans Serif">
+
+<h4>Latest update: April 30, 2004</h4></CENTER></font> <font size=-1> 
+<ul> <!--
+<li><A href="#may04">Update: May xx, 2004</li>--> 
+<li><A href="#apr04">Update: April 30, 2004</a></li>
+ <li><A href="#mar04">Update: March 29, 2004</a></li>
+<li><A href="#coatcolor">Update: March 8, 2004</a></li> 
+<li><A href="#feb04">Update: February 4, 2004</a></li> 
+<li><A href="#jan04">Update: January 19, 2004</a></li> 
 <li><A href="#nar">MGI Staff Publications in NAR 2004 database issue</a> </li>
 </ul></FONT></TD></TR></TABLE> </TD> <TD VALIGN="top"> <A
 HREF="index.shtml">Mouse Genome Monthly</a>
@@ -26,13 +31,25 @@ HREF="index.shtml">Mouse Genome Monthly</a>
 
 <A HREF="news.shtml">Past Release Announcements</A><BR>
 
-</UL> </TD> </TR> </TABLE> <dl>
+</UL> </TD> </TR> </TABLE>
 
-<dt><b><a name="mar04">March, 2004</b>  <img SRC="../images/new.gif"></dt>
-<dd><ul><LI>New Prototype Tool for <I>in silico</I> Positional Candidate
-Analysis<br>The new <A
-HREF="http://proto.informatics.jax.org/prototypes/plad">PositionaL candidate
-gene Analysis Display (PLAD)</a> tool provides a list of genes and SNPs within a
+<dl>
+<dt><A NAME="apr04"></A><B>April, 2004</b>
+<dd><UL> <LI>
+<b>Eppig, JT</b>. 2004. Searching the Mouse Genome Informatics (MGI) Resources for 
+Information on Mouse Biology from Genotype to Phenotype in <i>Current Protocols in 
+Bioinformatics</i>. A.D. Baxevanis, D.B. Davison, R. Page, G. Stormo and L. Stein eds., 
+Wiley & Sons, Inc., New York.   <img SRC="../images/new.gif">
+</LI>
+</UL>
+</dd><br>
+
+<dt><b><a name="mar04">March, 2004</b>
+<dd>
+<ul>
+<LI>New Prototype Tool for <I>in silico</I> Positional Candidate Analysis<br>
+The new <A HREF="http://proto.informatics.jax.org/prototypes/plad/">PositionaL candidate
+Analysis Display (PLAD) </A> tool provides a list of genes and SNPs within a
 chromosomal interval defined by a mapped QTL or by a set of user-defined
 coordinates.  For each gene in a genomic interval, links are provided to the MGI
 Gene Detail Report, a new Gene Ontology (GO) annotation viewer called <A
@@ -41,19 +58,24 @@ Genome Browser, and a gene expression viewer (GEXview) at the Genomics Institute
 of the Novartis Research Institute. Both intergenic and genic SNPs are included
 in the report. For each SNP, links are provided to dbSNP and the UCSC Genome
 Browser.  PLAD currently uses gene and SNP data related to Build 30 of the mouse
-genome sequence. </LI></ul><br> <UL><LI><A NAME="coatcolor"></A><A HREF="<!--
-#include file='include/wksilvers_url.html'-->"><i>The Coat Colors of
+genome sequence.</LI>
+ <br>
+
+<LI><A NAME="coatcolor"></A>
+<A HREF="<!--#include file='include/wksilvers_url.html'-->"><i>The Coat Colors of
 Mice</i></a> by W. K. Silvers is available electronically as of March 8, 2004.
 This book, which has long been out of print, is a valuable resource for a wide
 range of biologists. Examples from coat colors illustrate many central concepts
-of genetics, such as an allelic series, gene interaction, and
-epistasis.</li></ul><br>
+of genetics, such as an allelic series, gene interaction, and epistasis.</li>
+ <br>
 
-<UL><LI>New publication:<br>Nelson DR, Zeldin DC, Hoffman SMG, <B>Maltais
-LJ</b>, Wain HM, Nebert DW. 2004. Comparison of cytochrome P450 (CYP) genes from
-the mouse and human genomes, including nomenclature recommendations for genes,
-pseudogenes and alternative-splice variants. Phamacogenetics 14(1):1-18. </li>
-</ul> </dd><br>
+<LI></A>Nelson DR, Zeldin DC, Hoffman SMG, <B>Maltais LJ</b>, Wain HM, Nebert
+DW. 2004. Comparison of cytochrome P450 (CYP) genes from the mouse and human
+genomes, including nomenclature recommendations for genes, pseudogenes and
+alternative-splice variants. Phamacogenetics 14(1):1-18.
+</li>
+</ul>
+</dd><br>
 
 <dt><b><a name="feb04">February, 2004</b>&nbsp;&nbsp; </dt> <dd><ul><li>Recent
 revision of  <a href="../nomen/strains.shtml">Rules for Nomenclature of Mouse
@@ -61,7 +83,7 @@ and Rat Strains</a>.</ul><br>
 
 <dt><b><a name="jan04">January, 2004</b>&nbsp;&nbsp;</dt> <dd><ul><li>Recent
 revisions of <ul><li><a href="../nomen/gene.shtml">Rules for Nomenclature of
-Genes, Genetic Markers, Alleles, and Mutations in Mouse and Rat</a>.<li><a
+Genes, Genetic Markers, Alleles, and Mutations in Mouse and Rat</a>.<li> <a
 href="../nomen/anomalies.shtml">Rules for Nomenclature of Chromosome
 Aberrations</a>.</ul><br>
 
@@ -76,11 +98,11 @@ from work on Mouse Genome Informatics projects:
 <BLOCKQUOTE> <B>Bult CJ, Blake JA, Richardson JE, Kadin JA, Eppig JT,</b> and
 the members of the <b>Mouse Genome Database Group. </B>  The Mouse Genome
 Database (MGD): integrating biology with the genome. Nucleic Acids Res 2004;
-32:D476-D481.  <a
+32:D476-D481. <a
 href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?cmd=Retrieve&db
 =PubMed&list_uids =14681461&dopt=Abstract">PubMed</a> &nbsp;<a
-href="http://nar.oupjournals.org/cgi/content/full/32/suppl_1/D476">NAR</a>
-&nbsp;<br><br>
+href="http://nar.oupjournals.org/cgi/content/full/32/suppl_1/D476">NAR</a><br
+><br>
 
 Gene Ontology Consortium. The Gene Ontology (GO) database and informatics
 resource. Nucleic Acids Res 2004; 32:D258-D261. <a
@@ -91,10 +113,10 @@ href="http://nar.oupjournals.org/cgi/content/full/32/suppl_1/D258">NAR</a>
 
 <B>Hill DP, Begley DA, Finger JH, Hayamizu TF, McCright IJ, Smith CM, Beal JS,
 Corbani LE, Blake JA, Eppig JT, Kadin JA, Richardson JE, Ringwald M.</B> The
-Mouse Gene Expression Database (GXD): updates and enhancements. Nucleic Acids Res
-2004; 32:D568-D571. <a
+Mouse Gene Expression Database (GXD): updates and enhancements. Nucleic Acids
+Res 2004; 32:D568-D571. <a
 href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?cmd=Retrieve&db
-=PubMed&list_uids =14681482&dopt=Abstract">PubMed</a> &nbsp;<a
+=PubMed&list_uids =14681482&dopt=Abstract">PubMed</a> &nbsp; <a
 href="http://nar.oupjournals.org/cgi/content/full/32/suppl_1/D568">NAR</a>
 </BLOCKQUOTE></li></ul></dd>
 
@@ -109,7 +131,7 @@ FITNESS FOR A PARTICULAR PURPOSE OR THAT THE USE OF THIS SOFTWARE OR DATA WILL
 NOT INFRINGE ANY THIRD PARTY PATENTS, COPYRIGHTS, TRADEMARKS, OR OTHER RIGHTS.
 THE SOFTWARE AND DATA ARE PROVIDED "AS IS". This software and data are provided
 to enhance knowledge and encourage progress in the scientific community and are
-to be used only for research and educational purposes.  Any reproduction or use
+to be used only for research and educational purposes. Any reproduction or use
 for commercial purpose is prohibited without the prior express written
 permission of the Jackson Laboratory. Copyright © 1996, 1999, 2002, 2003 by The
 Jackson Laboratory All Rights Reserved -->
