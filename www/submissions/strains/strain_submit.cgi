@@ -19,12 +19,12 @@ import formMailer
 # mapping from internal fieldname to label for the user:
 
 labels = {
-	'method'	: 'Method',
+	'method'	: 'Strain Name New or Revised',
 	'MGI_accession'	: 'MGI Acc ID',
 	'strain_name'	: 'Strain Name',
 	'gene_symbols'	: 'Gene Symbols',
 	'JR_num'	: 'JR Registry Number',
-	'status'	: 'Status',
+	'status'	: 'Strain Public or Private',
 	'category'	: 'Categories',
 	'synonyms'	: 'Synonyms',
 	'references'	: 'References',
@@ -94,10 +94,11 @@ class strainMailer (formMailer.formMailer):
 
 		# check that the e-mail address contains a '@'
 
-		atPos = string.find (self.parms['email'], '@')
-		if atPos == -1:
-			errors.append ( ('email', 'Invalid e-mail address') )
-
+		if self.parms.has_key ('email'):
+			atPos = string.find (self.parms['email'], '@')
+			if atPos == -1:
+				errors.append ( ('email',
+					'Invalid e-mail address') )
 		return errors
 
 	def getFrom (self):
@@ -112,7 +113,9 @@ class strainMailer (formMailer.formMailer):
 		# Notes: We return the e-mail address submitted by the user,
 		#	so the e-mail appears that it comes from him/her.
 
-		return self.parms['email']
+		if self.parms.has_key ('email'):
+			return self.parms['email']
+		return self.parms['name']
 
 ###--- Main Program ---###
 
