@@ -24,6 +24,7 @@ import mgi_utils
 import mgi_html
 import errorlib
 import header
+import formMailer
 
 SP = ' '
 HT = '\t'
@@ -31,7 +32,7 @@ NL = '\n'
 
 def errorStop (message):
 	print 'Content-type: text/html\n'
-	errorlib.show_error (message, 1, 'MGI Nomen Form',
+	formMailer.handleError (message, 'MGI Nomen Form',
 		header.bodyStart(),
 		header.bodyStop())
 	sys.exit(0)

@@ -9,6 +9,7 @@ import string
 import CGI		# MGI-written Python modules
 import mgi_utils
 import mgi_html
+import header
 
 ###--- Global Variables/Constants ---###
 
@@ -62,12 +63,13 @@ def handleError (
 	# Effects: writes to stdout
 	# Throws: nothing
 
+	heading = header.headerBar ('%s Submission Error' % title)
 	print '''<HTML><HEAD><TITLE>%s Submission Error</TITLE></HEAD>
 		<BODY bgcolor="#FFFFFF">%s
-		<H2>%s Submission Error</H2>
+		%s
 		%s<HR>
 		%s
-		</BODY></HTML>''' % (title, banner, title, message, footer)
+		</BODY></HTML>''' % (title, banner, heading, message, footer)
 	return
 
 ###--- Classes ---###

@@ -21,6 +21,7 @@ import header
 import CGI
 import errorlib
 import SimpleVocab
+import formMailer
 
 SimpleVocab.set_sqlFunction (homelib.sql)
 
@@ -135,10 +136,10 @@ class myCGI (CGI.CGI):
 			if not parms.has_key (key):
 				missing_fields.append (labels[key])
 		if missing_fields:
-			errorlib.show_error (
+			formMailer.handleError (
 				err_message % \
 					string.join (missing_fields, ', '),
-				1, 'MGI Allele and Mutant Form',
+				'MGI Allele and Mutant Form',
 				header.bodyStart(),
 				header.bodyStop())
 			sys.exit (0)

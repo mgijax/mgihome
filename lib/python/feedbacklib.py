@@ -620,7 +620,7 @@ class UserInput:
 			'<HTML><HEAD><TITLE>Your Input Welcome</TITLE>',
 			'</HEAD><BODY bgcolor=ffffff>',
 			header.bodyStart(),
-			'<H2>Your Input Welcome</H2>',
+			header.headerBar('Your Input Welcome'),
 			'''We want to hear from you.  Use this form to submit
 			updates to the information in our
 			database.  Please enter the contact information in the

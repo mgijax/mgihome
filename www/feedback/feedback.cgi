@@ -15,6 +15,7 @@ import homelib
 import header
 import CGI
 import errorlib
+import formMailer
 
 class InputProcessingCGI (CGI.CGI):
 	# Concept:
@@ -41,10 +42,10 @@ class InputProcessingCGI (CGI.CGI):
 		inp = feedbacklib.getInputObj (parms)
 		errors = inp.validate()
 		if errors:
-                        errorlib.show_error (
+                        formMailer.handleError (
 				'<UL><LI>%s</UL>' % \
 					string.join (errors, '\n<LI>'),
-                                1, 'MGI Your Input Form',
+                                'MGI Your Input Form',
 				header.bodyStart(),
 				header.bodyStop())
                         sys.exit (0)
