@@ -22,7 +22,7 @@ MGI is changing the way alleles are handled in the database. These changes are p
 In response to user requests, we have replaced the two fields, marker <B>Name</B> and <B>Symbol</B>, with a single marker <B>Symbol/Name</B> field on most MGI query forms. On any MGI form with this new field, you can enter one or more symbols or names (each separated by a comma) and the search will find records for any markers with symbols or names matching the text entered in the field. Field operators (BEGINS, CONTAINS, ENDS, "=") determine how the comparison is made in a search. See, for example, the <A HREF="<!--#include file="include/wi_url.html"-->searches/marker_form.shtml">Genes, Markers and Phenotypes</A> query form.
 <P>
 <H3>Search for Molecular Segments Mapped to a Chromosomal Region</H3>
-In response to user requests, the option to search for molecular segments mapped to a region of a chromosome has been added to the <A HREF="<!--#include file='include/wi_url.html'-->searches/probe_form.shtml">Molecular Probes and Segments</A> and <A HREF="<!--#include file='include/wi_url.html'-->searches/estclone_form.shtml">cDNA Clones</A> query forms. 
+In response to user requests, the option to search for molecular segments mapped to a region of a chromosome has been added to the <A HREF="<!--#include file='include/wi_url.html'-->searches/probe_form.shtml">Molecular Probes and Segments</A> query form. 
 <P>
 <H3>Additional Enhancements</H3>
 <UL>
