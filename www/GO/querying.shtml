@@ -6,16 +6,28 @@
 <BR>
 <A NAME="Query"></A><H2><B>Querying the GO in MGI</B></H2>
 <P>
-Genes in MGI are annotated using GO terms.  Several query forms, "Genes, Markers and Phenotypes," "Linkage Map," "Gene Expression Data," and "cDNA Clone" provide a "Gene Classifications" search field that enables you to enter a GO term or phrase for searching.  A term is entered in the search box and the ontologies to be examined are checked.  To improve and refine their searches, users should become familiar with the available terms in the ontologies (see Molecular Function, Cellular Component, and Biological Process links in the left frame).
-</P>
+Genes in MGI are annotated using GO terms.  Several query forms, "Genes,
+Markers and Phenotypes," "Linkage Map," "Gene Expression Data," and "cDNA
+Clone" provide a "Gene Classifications" search field that enables you to enter
+a GO term or phrase for searching.  A term is entered in the search box and
+the ontologies to be examined are checked.  To improve and refine their
+searches, users should become familiar with the available terms in the
+ontologies (see Molecular Function, Cellular Component, and Biological Process
+links in the left frame). Please note that the current implementation is a
+text search only, and does not identify genes at lower levels of the
+hierarchical vocabulary if the lower level terms do not contain the text you
+entered. For example, if you entered: <B>carbohydrate metabolism</B> you would
+not identify genes that had the annotation <B>fructose catabolism</B>.
 <P>
-Each gene returned by the query is linked to a marker detail page with the associated ontology, GO term, evidence statement, and publication from which the annotation was discerned.
-</P>
+Each gene returned by the query is linked to a marker detail page with the
+associated ontology, GO term, evidence statement, and publication from which
+the annotation was discerned.
 <P>
-MGI queries return information about mouse genes.  To query the GO simultaneously across multiple species, a prototype query interface is available at the <B>GO</B> web site (see <A HREF = "http://www.fruitfly.org/~suzi/" target="_top">GO Browser</A>).
-</P>
-<BR>
-<BR>
+MGI queries return information about mouse genes.  To query the GO
+simultaneously across multiple species, a prototype query interface is
+available at the <B>GO</B> web site (see
+<A HREF = "http://www.fruitfly.org/~suzi/" target="_top">GO Browser</A>).
+<P>
 <HR><BR>
 <!--#include file="include/footer.html"-->
 </BODY></HTML>
