@@ -379,29 +379,16 @@ numbers or subunit designations should be placed at the end of the gene symbol.<
 or locus symbol:</p>
 
 <ul>
- <li class=MsoNormal style='mso-list:l2 level1 lfo4;tab-stops:list 36.0pt'><span
-     style='font-family:"Times New Roman"'>If the gene (locus) is only
-     identified by a recessive mutant phenotype, then the symbol should begin
-     with a lower case letter. Once the mutant gene product is identified, the
-     gene product is given a name and symbol and the original phenotype-based
-     symbol and name becomes the allele symbol and name. The recessive nature
-     of the allele is still conveyed by an initial lower case letter.</li>
- <li class=MsoNormal style='mso-list:l2 level1 lfo4;tab-stops:list 36.0pt'><span
-     style='font-family:"Times New Roman"'>Within a gene symbol, Laboratory codes have
-     an initial upper case letter.</li>
- <li class=MsoNormal style='mso-list:l2 level1 lfo4;tab-stops:list 36.0pt'><span
-     style='font-family:"Times New Roman"'>When describing cross-hybridizing
-     DNA segments, H (human) or other species code is upper case, for example
-     D2H11S14.</li>
- <li class=MsoNormal style='mso-list:l2 level1 lfo4;tab-stops:list 36.0pt'><span
-     style='font-family:"Times New Roman"'>When no information is available,
-     other than the sequence itself, use the sequence identifier from GenBank
-     or RIKEN (for example AF171077, 0610008A10Rik)</li>
+<li>If the gene (locus) is only identified by a recessive mutant phenotype, then the symbol should
+begin with a lower case letter. Once the mutant gene product is identified, the gene product is
+given a name and symbol and the original phenotype-based symbol and name becomes the allele symbol
+and name. The recessive nature of the allele is still conveyed by an initial lower case letter.</li>
+ <li>Within a gene symbol, Laboratory codes have an initial upper case letter.</li>
+ <li>When describing cross-hybridizing DNA segments, H (human) or other species code is upper case, for example D2H11S14.</li>
+ <li>When no information is available, other than the sequence itself, use the sequence identifier from GenBank or RIKEN (for example AF171077, 0610008A10Rik)</li>
 </ul>
 
-
-<p>Use of hyphens within the symbol should be kept to a minimum. Situations where hyphens may be used
-include:</p>
+<p>Use of hyphens within the symbol should be kept to a minimum. Situations where hyphens may be used include:</p>
 
 <ul>
  <li>to separate related sequence and pseudogene symbols from the root </li>
@@ -425,7 +412,6 @@ include:</p>
 </blockquote>
 
 <h3><a name="sg"></a>2.4&nbsp;&nbsp;Structural Genes, Splice Variants, and Promoters</H3>
-
 <p>Ultimately, the majority of gene names will be for structural
 genes that encode protein. The gene should as far as possible be given the same name as the protein, whenever the protein is identified. If the gene is recognizable by sequence comparison
 as a member of an established gene family, it should
@@ -463,14 +449,14 @@ correspond to relative location in the genome and the numbering series are
 independent among species. For these elements, no attempt is made to develop
 cross-species equivalency.</p>
 
-
 <H4><A name="ghos"></A>2.4.1 &nbsp;&nbsp;Genes with Homologs in Other Species</H4>
-<p>To
-aid interspecific comparison of genetic and other information, genes that is
-identifiable as a homolog of an already named gene in another species can be
-named as  &quot;-like&quot;
-&quot;-homolog&quot; or &quot;-related &quot;. (Note: this is not the same as &quot;related sequence&quot; which applies to related sequences within mouse or within rat.) The gene name or
-symbol should not include the name mouse or the abbreviation &quot;M&quot; for mouse or the name rat or the abbreviation “R” for rat. Where possible, genes that are recognizable orthologs of already-named human genes should be given the same name and symbol as the human gene.</p>
+<p>To aid interspecific comparison of genetic and other information, genes that is identifiable as a
+homolog of an already named gene in another species can be named as  &quot;-like&quot; &quot;-
+homolog&quot; or &quot;-related &quot;. (Note: this is not the same as &quot;related sequence&quot;
+which applies to related sequences within mouse or within rat.) The gene name or symbol should not
+include the name mouse or the abbreviation &quot;M&quot; for mouse or the name rat or the
+abbreviation “R” for rat. Where possible, genes that are recognizable orthologs of already-named
+human genes should be given the same name and symbol as the human gene.</p>
 
 <H3><A name="pns"></A>2.5 &nbsp;&nbsp;Phenotype Names and Symbols</H3> <p>Genes named for phenotypes should aim
 to convey the phenotype briefly and accurately in a few words. It is accepted that the name may not
@@ -543,7 +529,6 @@ mammalian species (orthologs) should, wherever possible, be given the same name 
 Nomenclature schemes and curation of new families benefit from examination of existing models.</p>
 
 <H3><A name="est"></A>2.7 &nbsp;&nbsp;ESTs</H3>
-
 <p>Expressed Sequence Tags (ESTs) differ from other expressed sequences in that they are short,
 single pass sequences that are often convenient for PCR amplification from genomic DNA. ESTs that
 clearly derive from a known gene should be considered simply as an assay (marker) for that known
@@ -551,12 +536,10 @@ gene. When anonymous ESTs are mapped onto genetic or physical maps, their design
 symbolized using their sequence database accession number.
 
 <H3><a name="adnas"></a>2.8 &nbsp;&nbsp;Anonymous DNA Segments</H3>
-
 <p>Only anonymous DNA segments that are mapped should be given systematic names and
 symbols.
 
 <H4><a name="mdnas"></a>2.8.1 &nbsp;&nbsp;Mapped DNA Segments</H4>
-
 <p>Anonymous DNA segments are named and symbolized according to the laboratory identifying or
 mapping the segment as &quot;DNA segment, chromosome N, Lab Name&quot; and a serial number, where N
 is the chromosomal assignment (1-19, X, Y in the mouse and 1-20, X, Y in the rat) and is symbolized
@@ -597,7 +580,6 @@ DNA segment on Chr 1 that cross-hybridizes with a DNA segment <i>D7Mit236 </i>fr
 
 
 <H4><a name="stspm"></a>2.8.2&nbsp;&nbsp; STSs Used in Physical Mapping</H4>
-
 <p>When physical maps are assembled (YAC or BAC contigs, for example) many markers may
 be placed on the map in the form of Sequence Tagged Sites (STSs). These might
 be clone end-fragments, inter-repeat sequence PCR products, or random sequences
@@ -608,7 +590,6 @@ and used them. If the STSs are used more widely, they should be assigned
 anonymous DNA segment names (&quot;D-numbers&quot;).</p>
 
 <H3><a name="gtl"></a>2.9 &nbsp;&nbsp;Gene Trap Loci</H3>
-
 <p>Gene trap experiments in embryonic stem (ES) cells produce cell lines in which
 integration into a putative gene is selected by virtue of its expression in ES
 cells. The trapped gene is usually (though not necessarily) mutated by the
@@ -625,28 +606,21 @@ laboratory of Phillip Soriano (Sor) is symbolized as:</p>
  <li><i>Gt(ROSA)26Sor</i></li>
 </ul>
 
-<p>A gene trap designation becomes an allele of the gene into which it was inserted,
-once that gene is identified. For example, <i>Gt(pGT1.8TM)629Ska</i>
-is now known to disrupt the netrin 1 (Ntn1) gene; thus the full allele
-designation for this gene trap mutation is <i>Ntn<sup>Gt(pGT1.8TM)629Ska</sup></i>
-and its abbreviated form is <i>Ntn<sup>Gt629Ska</sup></i>.
-(Note: Abbreviate gene trap alleles by dropping the vector designation in
-parentheses, if the resulting abbreviation is unique).</p>
-
+<p>A gene trap designation becomes an allele of the gene into which it was inserted, once that gene
+is identified. For example, <i>Gt(pGT1.8TM)629Ska</i> is now known to disrupt the netrin 1 (Ntn1)
+gene; thus the full allele designation for this gene trap mutation is
+<i>Ntn<sup>Gt(pGT1.8TM)629Ska</sup></i> and its abbreviated form is <i>Ntn<sup>Gt629Ska</sup></i>.
+(Note: Abbreviate gene trap alleles by dropping the vector designation in parentheses, if the
+resulting abbreviation is unique).</p>
 
 <H3><a name="qtlrirs"></a>2.10&nbsp;&nbsp; Quantitative Trait Loci, Resistance Genes, and Immune
 Response Genes</H3>
-
-<p>Differences between inbred strains and the phenotype of
-offspring of crosses between strains provide evidence for the existence of
-genes affecting disease resistance, immune response, and many other
-quantitative traits (quantitative trait loci, QTL).
-Evidence for QTL is generally obtained through extensive genetic crossing and
-analysis that may uncover many genetic elements contributing to a phenotypic
-trait. Generally, the number and effects of QTL can only be deduced following
-experiments to map them. QTL should not be named until such mapping experiments
-have been performed. </p>
-
+<p>Differences between inbred strains and the phenotype of offspring of crosses between strains
+provide evidence for the existence of genes affecting disease resistance, immune response, and many
+other quantitative traits (quantitative trait loci, QTL). Evidence for QTL is generally obtained
+through extensive genetic crossing and analysis that may uncover many genetic elements contributing
+to a phenotypic trait. Generally, the number and effects of QTL can only be deduced following
+experiments to map them. QTL should not be named until such mapping experiments have been performed.
 
 <H4><a name="nsqtl"></a>2.10.1&nbsp;&nbsp; Names and Symbols of QTL</H4>
 
@@ -686,19 +660,16 @@ reserved and private, pending publication.</p>
 
 
 <H4><A name="duqtl"></A>2.10.2 &nbsp;&nbsp;Defining uniqueness in QTL</H4>
-
 <p>Specific circumstances for naming independent QTL include:</p>
 
 <UL>
   <LI><I>Independent experiments study the same trait and map that trait to the same chromosomal region</I>
   <blockquote>
-<P>Because QTL are detected in the context of specific strain combinations in specific crosses and generally in different laboratories using different assays, each experimentally detecting QTL will be given a unique symbol/name even when the trait measured and region defined is
+   <P>Because QTL are detected in the context of specific strain combinations in specific crosses and generally in different laboratories using different assays, each experimentally detecting QTL will be given a unique symbol/name even when the trait measured and region defined is
 superficially the same as that of an existing QTL.
-<P><B>Example:</B>   In mouse, <i>Obq1</i> (obesity QTL 1) was identified and
-mapped to Chromosome 7 in a cross between strains 129/Sv and EL/Suz. Another
-obesity QTL was also mapped to Chromosome 7, but because it involved distinct
-strains (NZO and SM), it was given a different QTL designation, <i>Obq15</i>.</p>
-</P></LI>
+
+   <P><B>Example:</B>   In mouse, <i>Obq1</i> (obesity QTL 1) was identified and mapped to Chromosome 7 in a cross between strains 129/Sv and EL/Suz. Another obesity QTL was also mapped to Chromosome 7, but because it involved distinct strains (NZO and SM), it was given a different QTL designation, <i>Obq15</i>.
+</LI>
 </blockquote>
   <LI><I>A chromosomal region containing many measured &quot;traits&quot;</I>
 <blockquote>
@@ -751,33 +722,19 @@ which # is the chromosome on which it is located.</p>
 
 
 <ul>
- <li class=MsoNormal style='color:black;mso-list:l13 level1 lfo7;tab-stops:
-     list 36.0pt'>For example, <i
-     >Hc14</i> is the pericentric
-     heterochromatin on Chromosome 14.</li>
+ <li>For example, <i>Hc14</i> is the pericentric heterochromatin on Chromosome 14.</li>
 </ul>
-
 
 <p>Variation in heterochromatin band size can be denoted by superscripts to the symbol.</p>
 
-
 <ul>
- <li class=MsoNormal style='color:black;mso-list:l13 level1 lfo7;tab-stops:
-     list 36.0pt'>For example, <i
-     >Hc14<sup>n</sup></i> is normal
-     heterochromatin; superscripts <i>l </i>and
-     <i>s</i> would be used to denote long
-     and short heterochromatin, respectively.</li>
+ <li>For example, <i>Hc14<sup>n</sup></i> is normal heterochromatin; superscripts <i>l </i>and
+     <i>s</i> would be used to denote long and short heterochromatin, respectively.</li>
 </ul>
 
-
 <H4><A NAME="nucorg"></A>2.11.3&nbsp;&nbsp; Nucleolus Organizers</H4>
-
-<p>The nucleolus organizer is a cytological structure that
-contains the ribosomal RNA genes. These genes are given the symbols <i
->Rnr</i> and the number of the chromosome on
+<p>The nucleolus organizer is a cytological structure that contains the ribosomal RNA genes. These genes are given the symbols <i>Rnr</i> and the number of the chromosome on
 which they are located.</p>
-
 
 <ul>
  <li>For example, <i>Rnr12</i> is the ribosomal RNA locus on Chromosome 12.</li>
