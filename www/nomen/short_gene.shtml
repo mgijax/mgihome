@@ -1,6 +1,6 @@
 <html>
 <head>
-<title><!--#include file='include/mgiversion.html'--> - Quick Guide to Nomenclature for Genes</title>   
+<title><!--#include file='include/mgiversion.html'--> - Quick Guide to Nomenclature for Genes</title>
 </head>
 <BODY BGCOLOR="#ffffff">
 <TABLE WIDTH="100%" BORDER=0 CELLPADDING=0 CELLSPACING=0>
@@ -22,7 +22,7 @@ Quick Guide to Nomenclature for Genes
 <p>When symbolizing and naming novel genes and genomic features, it is important that these symbols and
 names be unique identifiers. The MGD Nomenclature Committee provides advice and assistance in assigning new
 symbols and names. Please contact us at <A HREF="mailto:nomen@informatics.jax.org">nomen@informatics.jax.org</A>.
-<p>To check the nomenclature of known mouse genes, search the Symbol/Name field on the  
+<p>To check the nomenclature of known mouse genes, search the Symbol/Name field on the
 <a href="<!--#include file='include/wi_url.html'-->/searches/marker_form.shtml"> Genes and Markers Query Form</a>.
 <p>Below are some basic rules and guidelines to assist in the symbol and naming process. </p>
 <h3> Mouse symbols:</h3>
@@ -32,34 +32,34 @@ symbols and names. Please contact us at <A HREF="mailto:nomen@informatics.jax.or
      begin with a lowercase letter.
  <li>Symbols should not include tissue specificity and molecular weight designations.
  <li>Symbols are italicized in published articles.
- <li>Use punctuation only to separate two adjacent numbers 
-(<i>e.g.,</i> 
-<A HREF="<!--#include file='include/java_url.html'-->Marker?key=10754"><i>Lamb1-2</i>)</a> or for designating related 
-(<i>e.g.,</i> <A HREF="<!--#include file='include/java_url.html'-->Marker?key=40900"><i>Es10-rs1</i></a>).
-     sequences and pseudogenes (<i>e.g.,</i> <A HREF="<!--#include file='include/java_url.html'-->Marker?key=27574"><i>Adh5-ps1</i></a>).
+ <li>Use punctuation only to separate two adjacent numbers
+(<i>e.g.,</i>
+<A HREF="<!--#include file='include/java_url.html'-->WIFetch?page=markerDetail&key=10754"><i>Lamb1-2</i>)</a> or for designating related
+(<i>e.g.,</i> <A HREF="<!--#include file='include/java_url.html'-->WIFetch?page=markerDetail&key=40900"><i>Es10-rs1</i></a>).
+     sequences and pseudogenes (<i>e.g.,</i> <A HREF="<!--#include file='include/java_url.html'-->WIFetch?page=markerDetail&key=27574"><i>Adh5-ps1</i></a>).
  <li>Gene Family members: Use common stem (or root) symbol (<i>e.g.,</i> see <a href="genefamilies/claudin.shtml">Cldn#</a>).
  <li>Orthologous genes in other vertebrate species: &nbsp;Use the same symbol whenever possible in human, rat, and mouse.
  <li>For homologous genes in invertebrate or prokaryote species:
   <ol type=a>
-    <li>If it is the only mouse homolog, use  the approved symbol for that species but include the word <i>homolog</i> at the end of the name followed by the name of the  species in parentheses (<i>e.g.,</i> symbol: 
-<A HREF="<!--#include file='include/java_url.html'-->Marker?key=46917"><i>Cdc20</i></a>; 
+    <li>If it is the only mouse homolog, use  the approved symbol for that species but include the word <i>homolog</i> at the end of the name followed by the name of the  species in parentheses (<i>e.g.,</i> symbol:
+<A HREF="<!--#include file='include/java_url.html'-->WIFetch?page=markerDetail&key=46917"><i>Cdc20</i></a>;
        name: cell division cycle 20 homolog (S. cerevisiae)).
     <li>If there is more than one mouse homolog for the invertebrate gene, assign the serial number after the word &quot;homolog&quot;
-      (<i>e.g.,</i> symbols: <A HREF="<!--#include file='include/java_url.html'-->Marker?key=24863"><i>Atoh1</i></a> and <A HREF="<!--#include file='include/java_url.html'-->Marker?key=27458"><i>Atoh2</i></a>; names: atonal homolog 1 (Drosophila) and atonal homolog 2 (Drosophila) respectively.)
+      (<i>e.g.,</i> symbols: <A HREF="<!--#include file='include/java_url.html'-->WIFetch?page=markerDetail&key=24863"><i>Atoh1</i></a> and <A HREF="<!--#include file='include/java_url.html'-->WIFetch?page=markerDetail&key=27458"><i>Atoh2</i></a>; names: atonal homolog 1 (Drosophila) and atonal homolog 2 (Drosophila) respectively.)
    </ol>
 <li>If the invertebrate/prokaryotic gene is similar to the mouse gene but is not determined to be a homolog, use the
-     letter &quot;l&quot; to denote &quot;-like&quot; designations (<i>e.g.,</i> symbol: 
-<A HREF="<!--#include file='include/java_url.html'-->Marker?key=42226"><i>Ash2l</i></a>; name: ash2 (absent, small, or homeotic)-like (Drosophila).
+     letter &quot;l&quot; to denote &quot;-like&quot; designations (<i>e.g.,</i> symbol:
+<A HREF="<!--#include file='include/java_url.html'-->WIFetch?page=markerDetail&key=42226"><i>Ash2l</i></a>; name: ash2 (absent, small, or homeotic)-like (Drosophila).
 <li>ESTs and BAC/YAC ends: Use the assigned sequence accession identification numbers.
  <li>STSs:
   <ol type=a>
   <li>Use the convention D#Xxx%e, where:<br> <br>
-    <TABLE bgcolor="white" border=0 width=85% cellpadding=0>     
+    <TABLE bgcolor="white" border=0 width=85% cellpadding=0>
     <tr><td width="2%"># <td width="2%">= <td width="96%">chromosome location</tr>
     <tr><td>Xxx   <td>=   <td>approved Institute for Laboratory Animal Research <a href="http://dels.nas.edu/ilar/codes.asp?id=codes">(ILAR)</a> lab code</tr>
     <tr><td>%     <td>=   <td>serial number in series</tr>
     </table><br>
-    
+
   <li>You can obtain approved lab codes from ILAR</a>.
   <li>Add a trailing &quot;e&quot; only when the DNA segment is expressed.
 
@@ -91,7 +91,7 @@ specific mouse chromosome (<i><i>e.g.,</i></i> Chromosome 15).
 </ol>
 
 <h4>Gene symbol to use:</h4>
-<p>To distinguish between mRNA, genomic DNA, and cDNA, write the relevant prefix in parentheses; 
+<p>To distinguish between mRNA, genomic DNA, and cDNA, write the relevant prefix in parentheses;
 <i>e.g.,</i> (mRNA) Rbp1</a>.
 <h3>Note:</h3>
 <p>For more detail and additional special case rules, see <a href="gene.shtml">Rules for Nomenclature of Genes, Genetic Markers, Alleles, and Mutations in Mouse and Rat</a>.</p>
@@ -105,17 +105,17 @@ specific mouse chromosome (<i><i>e.g.,</i></i> Chromosome 15).
 <!--<IMG SRC="images/new.gif" ALT="new">
 Warranty Disclaimer and Copyright Notice
 
- THE JACKSON LABORATORY MAKES NO REPRESENTATION ABOUT THE SUITABILITY OR 
- ACCURACY OF THIS SOFTWARE OR DATA FOR ANY PURPOSE, AND MAKES NO WARRANTIES, 
- EITHER EXPRESS OR IMPLIED, INCLUDING MERCHANTABILITY AND FITNESS FOR A 
- PARTICULAR PURPOSE OR THAT THE USE OF THIS SOFTWARE OR DATA WILL NOT 
- INFRINGE ANY THIRD PARTY PATENTS, COPYRIGHTS, TRADEMARKS, OR OTHER RIGHTS.  
+ THE JACKSON LABORATORY MAKES NO REPRESENTATION ABOUT THE SUITABILITY OR
+ ACCURACY OF THIS SOFTWARE OR DATA FOR ANY PURPOSE, AND MAKES NO WARRANTIES,
+ EITHER EXPRESS OR IMPLIED, INCLUDING MERCHANTABILITY AND FITNESS FOR A
+ PARTICULAR PURPOSE OR THAT THE USE OF THIS SOFTWARE OR DATA WILL NOT
+ INFRINGE ANY THIRD PARTY PATENTS, COPYRIGHTS, TRADEMARKS, OR OTHER RIGHTS.
  THE SOFTWARE AND DATA ARE PROVIDED "AS IS".
 
- This software and data are provided to enhance knowledge and encourage 
- progress in the scientific community and are to be used only for research 
- and educational purposes.  Any reproduction or use for commercial purpose 
- is prohibited without the prior express written permission of the Jackson 
+ This software and data are provided to enhance knowledge and encourage
+ progress in the scientific community and are to be used only for research
+ and educational purposes.  Any reproduction or use for commercial purpose
+ is prohibited without the prior express written permission of the Jackson
  Laboratory.
 
 Copyright © 1996, 1999, 2002 by The Jackson Laboratory
