@@ -1,6 +1,6 @@
 <HTML>
 <HEAD>
-<TITLE><!--#include file='include/mgiversion.html'--> MGI Release 3.12 Announcement - April, 2005</TITLE>
+<TITLE><!--#include file='include/mgiversion.html'--> MGI Release 3.12 Announcement - April 8, 2005</TITLE>
 <LINK REL="stylesheet" TYPE="text/css" HREF="stylesheet/mgihome.css">
 
 <META NAME ="keywords" CONTENT="Gene Expression Database, GXD, in situ reporter, knock-in, mutated specimen, Gene Expression Literature Index, genetics, MGI, Mouse Genome Informatics, genes, anatomical structures, Mouse Anatomical Dictionary, Mouse Anatomical Dictionary Browser, mice, SQL, querying,  database queries, query forms">
@@ -17,7 +17,7 @@
      <TD WIDTH="20%" VALIGN="center" ALIGN="left">&nbsp;</TD>
      <TD WIDTH="60%" ALIGN="center" VALIGN="center">
       <FONT COLOR="#000000" SIZE=5 FACE="Arial,Helvetica">
-      MGI Release 3.11 Announcement - April, 2005
+      MGI Release 3.12 Announcement - April 8, 2005
       </FONT>
      </TD>
      <TD WIDTH="20%" VALIGN="center" ALIGN="center">&nbsp;</TD>
@@ -29,16 +29,22 @@
 
 
 
+
+
 <p>MGI is pleased to announce its 3.12 release. 
 <P></P>
 <BLOCKQUOTE>
 <UL>
-<LI>We've incorporated the Gene Ontology (GO) classifications into a new Gene Ontology Annotation Detail page. A paragraph of text about a given gene now precedes the classifications table. See <A HREF="http://shire.informatics.jax.org/wts_projects/6600/6620/GO_Final_23MAR05.HTM">GO annotations</A> for a sample description of Pax6. To access this information, enter your gene of interest on the <A HREF="www.informatics.jax.org/searches/marker_form.shtml">Genes and Markers Query Form</A>/Gene; on the Gene Detail page that appears, click an item in the Gene Ontology (GO) Classifications field.<br><br>
+<LI>MGI version 3.12 provides new information on the Gene Ontology (GO) Annotation Detail pages.  </li><br>
+<UL>
+  <li>A paragraph of annotation summary text appears prior to the GO classifications. See <A HREF="http://shire.informatics.jax.org/wts_projects/6600/6620/GO_Final_23MAR05.HTM">Pax6</A> for an example. </LI><br><br>
+   <LI> GO terms are highlighted in the paragraph and linked to relevant MGI marker detail and reference pages as well as to databases containing additional data.</li><br><br>
+ <LI>To access this information, enter a gene of interest on either the 
+<A HREF="http://www.informatics.jax.org/searches/marker_form.shtml">Genes and Markers Query Form</A> or the <A HREF="http://www.informatics.jax.org/searches/sequence_form.shtml">Mouse Sequence Query Form</A> and click <B>Search</B>. On the Gene Detail page that appears, click an item in the Gene Ontology (GO) Classifications field.</li>
+  </ul><br><br>
 
- <!--
-
-If you have suggestions or requests for further information, please contact <A HREF="../support/tjl_inbox.shtml">User Support</A>. <BR><BR>-->
-
+<LI>We added the dog to the species list that you can do a two-species orthology comparison on using our 
+<A HREF="http://www.informatics.jax.org/searches/oxfordgrid_form.shtml">Oxford Grid Query Form</A>. Each cell in the resulting grid represents a comparison of two chromosomes, one from each of the selected species. The grid include links to comparative maps.</LI><br><br>
 
 <LI>The remainder of the MGI 3.12 release consists of performance enhancements and bug fixes.  </LI>
 </UL>
