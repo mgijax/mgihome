@@ -48,7 +48,9 @@ Requesting symbol in: (check all that apply)
 Sources checked:
 <INPUT TYPE="checkbox" NAME="source1" VALUE="MGD" > MGD (<A HREF="<!--#include file="include/wi_url.html"-->">USA</A>)
 <INPUT TYPE="checkbox" NAME="source2" VALUE="HUGO/Human"> HUGO/Human (<A HREF="http://www.gene.ucl.ac.uk/cgi-bin/nomenclature/searchgenes.pl">UK</A>)
+<INPUT TYPE="checkbox" NAME="source4" VALUE="RGD"> RGD (<A HREF="http://rgd.mcw.edu/">Wisconsin</A>)
 <INPUT TYPE="checkbox" NAME="source3" VALUE="RatMap"> RatMap (<A HREF="http://ratmap.gen.gu.se/">Sweden</A>)
+
 <P>
 Other names used in the literature (aliases):<BR>
 <TEXTAREA NAME="otherName" ROWS=2 COLS=55></TEXTAREA><BR>
@@ -58,6 +60,25 @@ Please provide any additional information,  such as probe used, Genbank ID, func
 performed, etc. that may help us with the symbol approval process.<BR>
 <TEXTAREA NAME="notes" ROWS=2 COLS=55></TEXTAREA><BR>
 <HR>
+<HR>
+<H2>Sequence Details:</H2>
+GenBank IDs:  <INPUT TYPE="text" NAME="genbankID" SIZE=60>
+<br>
+<P>If you have sequence, we strongly recommend that you cut and paste it into the area below.
+ It will be treated in complete confidence. <br> 
+ If your sequence is large, please place as much as possible into
+ the box; however, if the sequence is very long, you will need to send it by email to 
+ <a href="mailto:nomen@informatics.jax.org">nomen@informatics.jax.org</a>.
+ <br>
+ <br>
+ Sequence Data: <br>
+ <textarea name="sequence" rows=10 cols=75></textarea>
+ <br>
+ <hr>
+
+
+
+
 <H2>Locus References:</H2>
 Please report citations that support this locus designation in the following short reference format.  If unpublished, please include title:
 <P>
