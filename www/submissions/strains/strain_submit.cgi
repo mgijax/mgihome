@@ -23,20 +23,21 @@ labels = {
 	'method'	: 'Strain Name New or Revised',
 	'strain_name'	: 'Strain Name',
 	'gene_symbols'	: 'Gene Symbols',
-	'JR_num'	: 'JR',
-	'MMRRC'		: 'MMRRC',
+	'Prefix'	: 'Prefix',
+	'instituteID'	: 'Strain Accession ID',
 	'status'	: 'Strain Public or Private',
 	'category'	: 'Categories',
 	'synonyms'	: 'Synonyms',
 	'references'	: 'References',
 	'notes'		: 'Notes',
-	'name'		: 'User Name',
+	'firstname' 	: 'First Name',
+	'lastname'	: 'Last Name',
 	'email'		: 'E-Mail Address',
 	}
 
 # list of internal fieldnames for required fields:
 
-required_fields = [ 'name', 'method', 'status' ]
+required_fields = [ 'firstname','lastname', 'method', 'status','email' ]
 
 # sections for e-mail:
 # each tuple contains (section heading string, list of internal fieldnames
@@ -44,8 +45,8 @@ required_fields = [ 'name', 'method', 'status' ]
 
 sections = [
 	('Strain Info',
-		[ 'method', 'JR_num', 'MMRRC','strain_name', 'gene_symbols',
-		  'status', 'category' ]),
+		[ 'method', 'Prefix','instituteID','strain_name', 
+		  'gene_symbols', 'status', 'category' ]),
 	('Additional Info',
 		[ 'synonyms', 'references', 'notes' ]),
 	('Contact Info',
