@@ -10,123 +10,228 @@
 <H3> Mutant Phenotypes</H3>
 
 <B>Genes Known Only by Mutant Phenotype</B>
-Where a gene is only known by mutant phenotype, the gene is given the name and symbol of the first identified mutant. 
+<p>Where a gene is only known by mutant phenotype, the gene is given the name 
+and symbol of the first identified mutant. 
 <UL>
-<LI>Symbols of mutations conferring a recessive phenotype begin with a lower case letter, dominant or semidominant phenotype symbols begin with an upper case letter. 
-<EM>For example</EM>: fidget, <A HREF="<!--#include file='include/wi_url.html'-->searches/marker.cgi?8808">fi</A>, coloboma, <A HREF="<!--#include file='include/wi_url.html'-->searches/marker.cgi?1026">Cm</A>, Purkinje cell degeneration, <A HREF="<!--#include file='include/wi_url.html'-->searches/marker.cgi?12199">pcd</A>.<P>
-<LI>
-Further (allelic) mutations at the same locus, if they have the same phenotype are given the same name with a lab code preceeded by a serial number (if more than one additional allele from the same lab). In the symbol the lab code is added as a superscript. <EM> For example</EM>: new alleles of Purkinje cell degeneration identified at The Jackson Laboratory, <A HREF="<!--#include file='include/wi_url.html'-->searches/allele.cgi?682">pcd<SUP>2J</SUP></A>, <A HREF="<!--#include file='include/wi_url.html'-->searches/allele.cgi?1731">pcd<SUP>3J</SUP></A>.<P>
-<LI>If a new allelic mutation of a gene known only by mutant phenotype is caused by a transgenic insertion, the symbol of this mutation should use the symbol of the transgene (see below) as superscript, for example, a transgenic mutant allele of the hairless (<A HREF="<!--#include file='include/wi_url.html'-->searches/marker.cgi?9943">hr</A>) gene created by Miriam Meisler is symbolized <A HREF="<!--#include file='include/wi_url.html'-->searches/allele.cgi?2272">hr<SUP>TgN5053Mm</SUP></A>.
+<LI>Symbols of mutations conferring a recessive phenotype begin with a lower 
+   case letter, dominant or semidominant phenotype symbols begin with an upper 
+   case letter. <EM>For example:</EM> fidget, 
+   <A HREF="<!--#include file='include/wi_url.html'-->searches/marker.cgi?8808">fi</A>, 
+   coloboma, 
+   <A HREF="<!--#include file='include/wi_url.html'-->searches/marker.cgi?1026">Cm</A>, 
+   Purkinje cell degeneration, 
+   <A HREF="<!--#include file='include/wi_url.html'-->searches/marker.cgi?12199">pcd</A>.<P>
+<LI>Further (allelic) mutations at the same locus, if they have the same 
+   phenotypes, are given the same name with a lab code preceeded by a serial 
+   number (if more than one additional allele from the same lab). In the symbol,
+    the lab code is added as a superscript. <EM>For example:</EM> new alleles of
+     Purkinje cell degeneration identified at The Jackson Laboratory, 
+     <A HREF="<!--#include file='include/wi_url.html'-->searches/allele.cgi?682">pcd<SUP>2J</SUP></A>, 
+     <A HREF="<!--#include file='include/wi_url.html'-->searches/allele.cgi?1731">pcd<SUP>3J</SUP></A>.<P>
+<LI>If a new allelic mutation of a gene known only by mutant phenotype is 
+    caused by a transgenic insertion, the symbol of this mutation should use 
+    the symbol of the transgene (see below) as superscript. <EM>For example:</EM>
+     a transgenic mutant allele of the Purkinje cell degeneration (pcd) gene 
+     created by Jon W. Gordon is symbolized 
+     <a href="<!--#include file='include/wi_url.html'-->searches/allele.cgi?231">
+     pcd<I><sup>Tg(Dhfr)1Jwg</sup></I></a>.
 <P>
-<LI>If the additional allele has a different phenotype, it may be given a different name, but when symbolized the new mutant symbol is superscripted to the original mutant symbol. <EM> For example</EM>: <A HREF="<!--#include file='include/wi_url.html'-->searches/allele.cgi?14">a<SUP>t</SUP></A>  is the "black and tan" allele of <A HREF="<!--#include file='include/wi_url.html'-->searches/marker.cgi?3">a</A> (non-agouti).
+<LI>If the additional allele has a different phenotype, it may be given a different name, 
+but when symbolized. the new mutant symbol is superscripted to the original mutant symbol. 
+<EM> For example</EM>: 
+<A HREF="<!--#include file='include/wi_url.html'-->searches/allele.cgi?1055">rs<SUP>grc</SUP>
+</A>  is the "grey coat" allele of 
+<A HREF="<!--#include file='include/wi_url.html'-->searches/marker.cgi?13248">rs</A> 
+(recessive spotting).
 <P>
-<LI>Also, if a new mutation is described and named but not shown to be an allele of an exisiting until later, the original name of the new mutation can be kept even if the phenotype is apparently identical, but the original symbol is used, with the new mutation symbol as superscript. <EM> For example</EM>:  haze is an allele of ruby-eye 2 (<A HREF="<!--#include file='include/wi_url.html'-->searches/marker.cgi?13281">ru2</A>), and hence is <A HREF="<!--#include file='include/wi_url.html'-->searches/allele.cgi?249">ru2<SUP>hz</SUP></A>.
+<LI>Also, if a new mutation is described and named but not shown to be an allele of 
+an exisiting until later, the original name of the new mutation can be kept even if the 
+phenotype is apparently identical, but the original symbol is used, with the new mutation 
+symbol as superscript. <EM> For example</EM>:  haze is an allele of ruby-eye 2 
+(<A HREF="<!--#include file='include/wi_url.html'-->searches/marker.cgi?13281">ru2</A>), 
+and hence is <A HREF="<!--#include file='include/wi_url.html'-->searches/allele.cgi?249">ru2<SUP>hz</SUP></A>.
 <P>
-<LI>A mutation caused by insertion of a transgene, but whose molecular nature is nevertheless unknown (i.e. it is uncloned) and which has not been shown to be an allele of an already described mutant gene should be given a  transgene symbol (see below).  When the insertion site is cloned and/or molecularly characterised the gene should be named and the transgene symbol becomes superscripted. <EM> For example </EM>: TgN(CAMalpha1b)7Wjk causes a mutation that affects cardiac contractility, but its insertion site is unknown.  Once identified, TgN(CAMalpha1b)7Wjk will be a superscripted allele symbol.
+<LI>A mutation caused by insertion of a transgene, but whose molecular nature is nevertheless
+ unknown (i.e. it is uncloned) and which has not been shown to be an allele of an already 
+ described mutant gene should be given a  transgene symbol (see below).  When the insertion 
+ site is cloned and/or molecularly characterised, the gene should be named and the transgene
+  symbol becomes superscripted. <EM> For example </EM>: 
+  <A HREF="<!--#include file='include/wi_url.html'-->searches/marker.cgi?18569">Tg(AMY1C)1Mm</a> 
+  causes a mutation with a phenotype of vestibular and craniofacial abnormalities, maps to 
+  Chromosome 18, but the gene in which the insertion site occurred is unknown.  Once identified,
+   <A HREF="<!--#include file='include/wi_url.html'-->searches/marker.cgi?18569">Tg(AMY1C)1Mm</a>
+    will be a superscripted allele symbol.
 </UL>
-<P><BR><BR>
+<hr>
 <H3> Phenotypes Due to Mutations in Structural Genes</H3>
-When a spontaneous or induced mutant phenotype is subsequently found to be a mutation in a structural gene, or the gene in which the mutation has occurred is cloned, the mutation becomes an allele of that gene and the symbol for the mutant allele is formed by adding the original mutant symbol as a superscript to the new gene symbol. (The mutant symbol should retain its initial upper or lower case letter).
+	<p>When a spontaneous or induced mutant phenotype is subsequently found to be a mutation in a structural gene, or the gene in which the mutation has occurred is cloned, the mutation becomes an allele of that gene and the symbol for the mutant allele is formed by adding the original mutant symbol as a superscript to the new gene symbol. (The mutant symbol should retain its initial upper or lower case letter).
 <EM> For example</EM>: the albino mutation of tyrosinase, <A HREF="<!--#include file='include/wi_url.html'-->searches/allele.cgi?50">Tyr<SUP>c</SUP></A>; the dominant white spotting mutation of Kit, <A HREF="<!--#include file='include/wi_url.html'-->searches/allele.cgi?363">Kit<SUP>W</SUP></A>.
 <P>
 If the original mutation has multiple alleles, when describing these alleles their symbols become part of the superscript to the identified structural gene
 <EM> For example</EM>: viable white spotting, <A HREF="<!--#include file='include/wi_url.html'-->searches/allele.cgi?397">Kit<SUP>W-v</SUP></A>; sash, <A HREF="<!--#include file='include/wi_url.html'-->searches/allele.cgi?396">Kit<SUP>W-Sh</SUP></A>.
 <P>
 Even if the identified gene is novel we recommend that it is nevertheless given a name and symbol different from the mutant name and symbol. This will more readily allow discrimination between mutant and wild type and between gene and phenotype.<P>
-<BR><BR>
+<HR>
 <H3>Wild Type Alleles and Revertants</H3>
-The wild-type allele of a any gene is indicated by +  as superscript to the the mutant symbol.
-<EM> For example</EM>: the wild-type allele of the <A HREF="<!--#include file='include/wi_url.html'-->searches/marker.cgi?12179">Pax1</A> gene is, <A HREF="<!--#include file='include/wi_url.html'-->searches/allele.cgi?1769">Pax1<SUP>+</SUP></A>.
-<P>
-A revertant to wild-type of a mutant phenotype locus should be indicated by the symbol + with the mutant symbol as superscript. Additional revertants are given a Lab Code and preceeded by a serial number if more than one revertant is found in a lab.  <EM> For example</EM>:  revertants to wild-type of the dilute mutation of myosin 5A (<A HREF="<!--#include file='include/wi_url.html'-->searches/marker.cgi?26578">Myo5a</A>) include Myo5a<SUP>d+</SUP> and Myo5a<SUP>d+2J</SUP>.
-<P><BR><BR>
-<H3>Transgenes and Targeted Mutations</H3>
+	<p>The wild-type allele of a any gene is indicated by +  as superscript to the the mutant symbol.
+<EM> For example</EM>: the wild-type allele of the 
+<A HREF="<!--#include file='include/wi_url.html'-->searches/marker.cgi?12179">Pax1</A> gene is
+ <A HREF="<!--#include file='include/wi_url.html'-->searches/allele.cgi?1769">Pax1<SUP>+</SUP></A> 
+ or the wild-type allele of the  
+ <A HREF="<!--#include file='include/wi_url.html'-->searches/marker.cgi?12199">pcd</A> gene is 
+ <A HREF="<!--#include file='include/wi_url.html'-->searches/marker.cgi?2830">pcd<sup>+</sup></a>.
+	<P>A revertant to wild-type of a mutant phenotype locus should be indicated by the 
+	symbol + with the mutant symbol as superscript. Additional revertants are given a Lab 
+	Code and preceded by a serial number if more than one revertant is found in a lab.  
+	<EM> For example</EM>:  revertants to wild-type of the dilute mutation of myosin 5A 
+	(<A HREF="<!--#include file='include/wi_url.html'-->searches/marker.cgi?26578">Myo5a</A>)
+	 include Myo5a<SUP>d+</SUP> and Myo5a<SUP>d+2J</SUP>.
+<hr>
+<H3><a name="ttm">Transgenes and Targeted Mutations</a></H3>
 
 Any DNA that has been introduced stabley into the germline of mice is a transgene. Transgenes can be broken down into two categories; 
 <UL>
 <LI> Those that occur by random insertion into the genome (usually by means of microinjection) and 
 <LI>Those that occur as targeted events by methods involving homologous recombination.
 </UL>
-<B>Transgenics as random Insertional events</B>
-The symbol Tg will be used to designated genetically engineered transgenic events that result from random insertion of DNA into the genome. In most cases, the technology used to generate these mice result from microinjection of the construct into the blastocyst.  The symbol consists of four parts, all in Roman typeface, as follows:<P>
-
-Tg (YYYYY)# Zzz , where
+<h4>Transgenics as Random Insertional Events</h4>
+<p>The symbol Tg will be used to designate genetically engineered transgenic events that result
+ from random insertion of DNA into the genome. In most cases, the technology used to generate 
+ these mice result from microinjection of the construct into the blastocyst.  The symbol 
+ consists of four parts, all in Roman typeface, as follows:
+ <P>Tg (YYY)# Zzz , where
 <UL>
 <LI> "Tg" indicates a transgene insertion by methods of microinjection
 <P>
-<LI> (YYYYYY)  indicates the inserted sequence.  It should contain the official nomenclature for that gene.  In the cases where a construct composed of roughly equal parts of two genes, i.e a fusion gene. the symbols are separated by a forward slash (see examples below).  
+<LI> (YYY) indicates the inserted sequence.  It should contain the official nomenclature for 
+that gene.  In the cases where a construct composed of roughly equal parts of two genes, i.e.,
+ a fusion gene. The symbols are separated by a forward slash (see examples below).  
 <P>
-<LI> # is a number from 1 to 99,999 that is uniquely assigned to each germline transmittable event in a series of events generated using the same construct . 
+<LI> # is a number from 1 to 99,999 that is uniquely assigned to each germline transmittable 
+event in a series of events generated using the same construct . 
 <P>
-<LI> Zzz  is the Laboratory registration code.  A Laboratory Registration Code is uniquely assigned to each laboratory originating transgenic animals, DNA loci or inbred strains. Laboratories that have already been assigned such a code for other genetically defined mice and rats should use the same code.The registry of these codes is maintained by the Institute of Laboratory Animal Research (<A HREF="http://www4.nas.edu/cls/afr.nsr">ILAR</A>), 2101 Constitution Avenue, NW, Washington, DC
-20418.
+<LI> Zzz  is the Laboratory registration code.  A Laboratory Registration Code is uniquely 
+assigned to each laboratory originating transgenic animals, DNA loci or inbred strains. 
+Laboratories that have already been assigned such a code for other genetically defined mice 
+and rats should use the same code. The registry of these codes is maintained by the Institute 
+of Laboratory Animal Research (<A HREF="http://www4.nas.edu/cls/afr.nsf">ILAR</A>), 
+2101 Constitution Avenue, NW, Washington, DC 20418.
 <P>
 <LI> <B>NOTE</B> : 
 <UL>
-<LI>Information regarding the promoter will not be reflected in the nomenclature but will annotated and searchable in MGD to the fullest degree.
-<LI>The strain background is independent of gene and allele nomenclature, but is important in strain and stock designations.  Strain information will be captured in MGD associated with each allele.
+<LI>Information regarding the promoter will not be reflected in the nomenclature but will be 
+annotated and searchable in MGD to the fullest degree.
+<LI>The strain background is independent of gene and allele nomenclature but is important in 
+strain and stock designations.  Strain information will be captured in MGD associated with 
+each allele.
 </UL>
 <P>
-<LI> <B>Examples</B> :
+<LI><B>Examples</B> :
 <UL>
-<LI> Tg(CD8)1Jwg.
-The human CD8 sequence inserted into mouse. This is the first such transgene reported using CD8 by the laboratory of Jon W.Gordon (Jwg).
-(Note: the strain designation for the original transgene is C57BL/6J-Tg(CD8)1Jwg, where C57BL/6J is the strain background.)
-<P>
-Whether or not the transgene inserted "benignly" into the genome or whether it disrupted a locus is irrelevant to the nomenclature.  The EXCEPTION is when the disrupted locus is identified.  The transgene then becomes an allele of that locus, as in the next example.
+<LI><A HREF="<!--#include file='include/wi_url.html'-->searches/marker.cgi?2837">Tg(Wnt1)Hev</a>.
+The mouse <A HREF="<!--#include file='include/wi_url.html'-->searches/marker.cgi?14480">Wnt1</a>
+ sequence inserted into the mouse genome. This is the first such transgene reported using 
+ <A HREF="<!--#include file='include/wi_url.html'-->searches/marker.cgi?14480">Wnt1</a> 
+ by the laboratory of Harold E. Varmus (Hev).
+ <p>Whether or not the transgene inserted "benignly" into the genome or whether it disrupted a
+ locus is irrelevant to the nomenclature. The EXCEPTION is when the disrupted locus is identified.
+ A transgene becomes an allele of that locus, as in the next example.
+ <p>
+<li><A HREF="<!--#include file='include/wi_url.html'-->searches/marker.cgi?1905">Tg(Hoxa1)1Chm</a>.
+A construct containing the mouse homeobox a1 gene was inserted by methods microinjection as 
+reported in a publication by Corey H. Mjaatvedt (Chm).  This is the first germline transmission
+ Mjaatvedt reported using this construct.
+<P>Subsequently, the locus disrupted by the transgene insertion) was identified as the gene 
+encoding the chondroitin sulfate proteoglycan 2 
+<A HREF="<!--#include file='include/wi_url.html'-->searches/marker.cgi?22783">(Cspg2)</a>. 
+The nomenclature now becomes 
+<A HREF="<!--#include file='include/wi_url.html'-->searches/marker.cgi?22783">Cspg2</a>
+<A HREF="<!--#include file='include/wi_url.html'-->searches/marker.cgi?1905">
+<sup>Tg(Hoxa1)Chm</sup></a>.
+<p>
+<LI><A HREF="<!--#include file='include/wi_url.html'-->searches/marker.cgi?18569">
+Tg(TCFE2A/HLF)1Mlc</a>. The human transcription factor E2A alpha gene and the hepatic leukemia
+ factor gene were inserted and expressed as a fusion chimeric cDNA by Michael L Cleary's 
+ laboratory (Mlc).  
+</UL>
+</UL>
 <P>
 
-<LI>Tg(Crya1)2Ove. The mouse alpha 1 crystallin gene was inserted by methods microinjection as reported in a publication by Paul Overbeek (Ove).  This is the second germline transmission Overbeek reported using the same construct.
+<h4>Targeted Mutagenesis</h4>
+<p>The symbol tm (for targeted mutation) will be used to designate genetically engineered 
+transgenic events that result from homologous recombination using embryonic stem cell 
+technology.  The symbol consists of four parts, all in Roman typeface, as follows:
 <P>
-In a subsequent publication Overbeek reports the insertion is alleleic with the downless (dl) mutant mouse  The nomenclature, then becomes  dl<SUP>Tg(Crya1)2Ove</SUP>. 
-<P>
-Still later, the dl locus (and thus the locus disrupted by transgene insertion) are identified as the gene encoding the ectodysplasin-A receptor (<A HREF="<!--#include file='include/wi_url.html'-->searches/marker.cgi?42098">Edar</A>).  The nomenclature now becomes Edar<SUP>dl-Tg(Crya1)2Ove</SUP>.
-<P>
-<LI> Tg(TCFE2A/HLF)1Mlc.  The human transcription factor E2A alpha gene and the hepatic leukemia factor gene were inserted and expressed as a chimeric cDNA by Michael L Cleary's laboratory (Mlc).  
-</UL>
-</UL>
-<P>
-
-<B>Transgenics generated by targeted mutagenesis</B>
-The symbol tm (for targeted mutation) will be used to designated genetically engineered transgenic events that result from homologous recombination using embryonic stem cell technology.  The symbol consists of four parts, all in Roman typeface, as follows:
-<P>
-YYYYYY <SUP>tm # Zzz</SUP> 
-<P>
+YYY<SUP>tm # Zzz</SUP> 
+<P>YYY indicates the official gene symbol of the targeted locus.  In the cases where one gene 
+is replaced by another gene (i.e., a "knock-in"), the replacing gene symbol is inserted in 
+parenthesis after the # (see examples).  
 <UL>
-<LI> (YYYYYY)  indicates the official gene symbol of the targeted locus.  In the cases where one gene is replaced by another gene (i.e., a "knock-in") the replacing gene symbol is inserted in parenthesis after the #.  (see examples).  
-<P>
-<LI>Where "tm" is used to indicate a transgene insertion by methods of homologous recombination
+<LI>"tm" is used to indicate targeted mutation.
 <P>
 <LI>  # is a number from 1 to 99,999 that is uniquely assigned to each targeted mutation of a particular locus generated by that laboratory. 
 <P>
-<LI> Zzz  is the Laboratory registration code.  A Laboratory Registration Code is uniquely assigned to each laboratory originating transgenic animals, DNA loci or inbred strains. Laboratories that have already been assigned such a code for other genetically defined mice and rats should use the same code.  The registry of these codes is maintained by the Institute of Laboratory Animal Research (<A HREF="http:www4.nas.edu/cls/afr.nsr">ILAR</A>), 2101 Constitution Avenue, NW, Washington, DC
+<LI> Zzz  is the Laboratory registration code.  A Laboratory Registration Code is uniquely assigned to each laboratory originating transgenic animals, DNA loci or inbred strains. Laboratories that have already been assigned such a code for other genetically defined mice and rats should use the same code.  The registry of these codes is maintained by the Institute of Laboratory Animal Research 
+(<A HREF="http:www4.nas.edu/cls/afr.nsf">ILAR</A>), 2101 Constitution Avenue, NW, Washington, DC
 20418.
 <P>
-<LI><B>NOTE : </B>
+<LI><B>NOTE: </B>
 <UL>
-<LI>Information regarding the construct and replacement cassette is not  reflected in the nomenclature but will annotated and searchable in MGD to the fullest degree.
+<LI>Information regarding the construct and replacement cassette is not reflected in the 
+nomenclature but will be annotated and searchable in MGD to the fullest degree.
 <LI>The strain background is independent of the nomenclature. 
 </UL>
 <P>
 <B>Examples</B>: 
 <UL>	
-<LI><A HREF="<!--#include file='include/wi_url.html'-->searches/allele.cgi?2175">Bmp1<SUP>tm1Blh</SUP></A> is a targeted mutation  generated at the bone morphogenetic protein 1 (<A HREF="<!--#include file='include/wi_url.html'-->searches/marker.cgi?595">Bmp1</A>) locus in the laboratory of Brigid L. Hogan (Blh).   
+<LI><A HREF="<!--#include file='include/wi_url.html'-->searches/allele.cgi?2175">Bmp1<SUP>tm1Blh</SUP></A>
+ is a targeted mutation  generated at the bone morphogenetic protein 1 
+ (<A HREF="<!--#include file='include/wi_url.html'-->searches/marker.cgi?595">Bmp1</A>) 
+ locus in the laboratory of Brigid L. Hogan (Blh).   
 <P>
-<LI> En1<SUP>tm1(Otx2)Wrst</SUP>,  where the <A HREF="<!--#include file='include/wi_url.html'-->searches/marker.cgi?12112">Otx2</A> gene was knocked into the <A HREF="<!--#include file='include/wi_url.html'-->searches/marker.cgi?8510">En1</A> locus as reported in the originating publication from the laboratory of W. Wurst (Wrst). 
+<LI><A HREF="<!--#include file='include/wi_url.html'-->searches/allele.cgi?2829">En1<SUP>tm1(Otx2)Wrst</sup></a>, 
+ where the <A HREF="<!--#include file='include/wi_url.html'-->searches/marker.cgi?12112">Otx2</A> gene was knocked into the <A HREF="<!--#include file='include/wi_url.html'-->searches/marker.cgi?8510">En1</A>
+  locus as reported in the originating publication from the laboratory of W. Wurst (Wrst). Note 
+  that this nomenclature is only used when one gene is replacing another. 
 <P>
-Often the E.coli beta-galactosidase gene or the Cre recombinase gene are "knocked-in" to a locus. The same symbol convention is used for these:  
-<UL>EXAMPLES:
-<LI> Knock-in using lacZ:
-<LI> Knock-in using Cre:
-</UL>
- <P>
-<LI> <A HREF="<!--#include file='include/wi_url.html'-->searches/allele.cgi?2491">Tfam<SUP>tm1Lrsn</SUP></A>  and <A HREF="<!--#include file='include/wi_url.html'-->searches/allele.cgi?2488">Tfam<SUP>tm1.1Lrsn</SUP> </A> are the types of designations used when one  targeting vector is used to generate multiple germline transmissible alleles, such as with Cre-Lox system for recombination.  Where <A HREF="<!--#include file='include/wi_url.html'-->searches/allele.cgi?2491">Tfam<SUP>tm1Lrsn</SUP></A>  is used to designate a Lox P insertion and <A HREF="<!--#include file='include/wi_url.html'-->searches/allele.cgi?2488">Tfam<SUP>tm1.1Lrsn</SUP> </A> is used to designate the allele generated after mating with a Cre transgenic mouse.
-	<P>
-NOTE:  The designation of tm1.1 is only utilized when the presence of CRE generates a germ line transmissible event.  For example,  disruption of Tfam by Cre-Lox recombination using a ubiquitously expressed beta-actin Cre transgene produces a mouse where the disruption of <A HREF="<!--#include file='include/wi_url.html'-->searches/marker.cgi?29142">Tfam</A> is heritable.  However, in cases where the presence of Cre-Lox does not produce a germline transmissible event no nomenclature is assigned.  For example, when Tfam is selectively disrupted in heart and skeletal muscle using a muscle creatine kinase promoter. This promoter is active from embryonic day 13.  In these cases, it is best to represent the mouse as a product of its genotype: <A HREF="<!--#include file='include/wi_url.html'-->searches/allele.cgi?2491">Tfam<SUP>tm1Lrsn</SUP></A> l/<A HREF="<!--#include file='include/wi_url.html'-->searches/allele.cgi?2491">Tfam<SUP>tm1Lrsn</SUP></A> ; +/Ckmm-cre 
-</UL>
-</UL>
+Often the E.coli beta-galactosidase gene or the Cre recombinase gene are "knocked-in" to a 
+locus. The same symbol convention is used for these.  
 <P>
+<LI><A HREF="<!--#include file='include/wi_url.html'-->searches/allele.cgi?2491">
+Tfam<SUP>tm1Lrsn</SUP></A> and 
+<A HREF="<!--#include file='include/wi_url.html'-->searches/allele.cgi?2488">Tfam<SUP>tm1.1Lrsn</SUP></A> 
+are the types of designations used when one targeting vector is used to generate multiple 
+germline transmissible alleles, such as with Cre-Lox system for recombination.  Here 
+<A HREF="<!--#include file='include/wi_url.html'-->searches/allele.cgi?2491">Tfam<SUP>tm1Lrsn</SUP></A> 
+is used to designate a Lox P insertion and 
+<A HREF="<!--#include file='include/wi_url.html'-->searches/allele.cgi?2488">Tfam<SUP>tm1.1Lrsn</SUP></A> 
+is used to designate the allele generated after mating with a Cre transgenic mouse.
+<P>
+NOTE: The designation of tm1.1 is only utilized when the presence of CRE generates a germ line
+ transmissible event.  For example,  disruption of 
+ <A HREF="<!--#include file='include/wi_url.html'-->searches/allele.cgi?2488">
+ Tfam</a> by Cre-Lox recombination using a 
+ ubiquitously expressed beta-actin Cre transgene produces a mouse where the disruption of 
+ <A HREF="<!--#include file='include/wi_url.html'-->searches/marker.cgi?29142">Tfam</A> 
+ is heritable.  However, in cases where the presence of Cre-Lox produces a somatic 
+ event, no nomenclature is assigned.  For example, when 
+ <A HREF="<!--#include file='include/wi_url.html'-->searches/allele.cgi?2488">Tfam</a>
+  is selectively 
+ disrupted in heart and skeletal muscle using a muscle creatine kinase promoter. 
+ This promoter is active from embryonic day 13.  In these cases, it is best to represent the 
+ mouse as a product of its genotype: 
+ <A HREF="<!--#include file='include/wi_url.html'-->searches/allele.cgi?2491">Tfam<SUP>tm1Lrsn</SUP>
+ </A>l/<A HREF="<!--#include file='include/wi_url.html'-->searches/allele.cgi?2491">Tfam<SUP>tm1Lrsn</SUP></A> ; +/Ckmm-cre 
+</UL>
+</UL>
 <HR>
+<h4>Gene Trap Loci and Alleles</h4>
+<P>Gene trap experiments in embryonic stem (ES) cells produce cell lines in which integration 
+into a putative gene is selected by virtue of its expression in ES cells. The trapped gene is 
+usually (although not necessarily) mutated by the integration.
+<p>Gene Traps are a type of transgene and their nomenclature should follow that of 
+<a href="#ttm">Transgenes</a>. 
+<hr>
 <!--#include file="include/footer.html"-->
 </BODY></HTML>
 <!--

@@ -16,10 +16,13 @@ of a previously unknown gene.
 <LI> if an allele of a known gene, an allele symbol and allele name will be assigned
 <LI> if an allele of an unknown gene, a gene symbol and gene name will be assigned
 </UL>
-<B> Example:</B> You discover a new spontaneous phenotypic allele that looks 'shaker like', but with a somewhat milder phenotype.  
+<B> Example:</B> You discover a new spontaneous phenotypic allele that looks 'shaker like,' 
+but with a somewhat milder phenotype.  
 <UL>
-<LI>Case 1, above: Upon testing, it is determined to be an allele of the Myo15 gene.
- It is assigned the allele symbol Myo15<SUP>sh2-m</SUP>, where the 'sh2-m' designates
+<LI>Case 1, above: Upon testing, it is determined to be an allele of the 
+<A HREF="<!--#include file='include/wi_url.html'-->searches/marker.cgi?36272">
+Myo15</A> gene.
+ It is assigned the allele symbol Myo15<SUP>sh2m</SUP>, where the 'sh2m' designates
   it as an allele and the name 'shaker 2 mild' becomes its allele name.<P>
 <LI> Case 2, above: Upon testing, it is determined to be an allele of a new gene; 
 it is not allelic to other alleles with similar phenotype. It is assigned a new gene symbol 'shl' and named 'shaker like'. Once this gene is cloned or functionally identified, the shl designation will become an allele designation.  
@@ -30,7 +33,8 @@ For instance, if the gene is determined to be Xyz, then this allele becomes Xyz<
 <H3>Basic rules for naming alleles </H3>
 <UL>
 <LI>Gene and allele designations are italicized in published articles.<BR><BR>
-<LI>The current list of approved <A HREF="http://www4.nas.edu/cls/afr.nsf">lab codes</A> are available from ILAR (Institute of Laboratory Animal Resources).<BR><BR>
+<LI>The current list of approved <A HREF="http://www4.nas.edu/cls/afr.nsf">lab codes</A> are 
+available from ILAR (Institute of Laboratory Animal Resources).<BR><BR>
 <LI>For more detail and additional special case rules, see our
 <A HREF="allmut_help.shtml">Names and Symbols for Mutant Alleles</A> page.
 </UL>
@@ -41,24 +45,53 @@ For designating mutants that are alleles of <B>known</B> genes, the basic guidel
 <P>
 <OL>
 <LI>Allele designations begin with a letter and contain alphanumeric characters. Punctuation marks occur in certain cases  where they convey meaning.<BR><BR>
-<LI> Allele designations appear as superscripted short alphanumeric strings following the gene symbol of which they are an allele and serve as an acronym for the allele name. <EM> Example:</EM> Atp7a<SUP>Mo</SUP> or Egfr<SUP>tm1Cwr</SUP>.<BR><BR>
+<LI> Allele designations appear as superscripted short alphanumeric strings following the gene symbol of which they are an allele and serve as an acronym for the allele name. 
+<EM> Example:</EM>
+<A HREF="<!--#include file='include/wi_url.html'-->searches/allele.cgi?195">Atp7a<SUP>Mo</SUP></a>
+ or <A HREF="<!--#include file='include/wi_url.html'-->searches/allele.cgi?544">Egfr<SUP>tm1Cwr</SUP></a>.<BR><BR>
 <LI>For allele designations for <B>spontaneous</B> alleles of <B>known</B> genes... <BR> 
 <UL><BR>
 <LI>Allele designations begin with a lower case letter if the allele is a recessive 
 and begin with a capital letter otherwise.
-<EM> Example:</EM> Wnt3a<SUP>vt</SUP> is the allele symbol for the <I>recessive</I> vestigal tail allele of the Wnt3a gene, while </EM> Atp7a<SUP>Mo</SUP> is the allele symbol for the <I>dominant</I> mottled allele of the Atp7a gene. <BR><BR>
-<LI>If an allele is part of an allelic series, a serial number and lab code are part of its designation. Each laboratory has its own numbering series.
-<EM> Example:</EM> Tyr<SUP>c-5J</SUP> is the 5th albino allele in the series discovered at The Jackson Laboratory (J) for theTyr gene.  
+<EM> Example:</EM> 
+<A HREF="<!--#include file='include/wi_url.html'-->searches/allele.cgi?1259">Wnt3a<SUP>vt</SUP></a>
+  is the allele symbol for the <I>recessive</I> vestigal tail allele of the 
+  <A HREF="<!--#include file='include/wi_url.html'-->searches/marker.cgi?14483">Wnt3a</a> gene, while
+   
+<A HREF="<!--#include file='include/wi_url.html'-->searches/allele.cgi?195">Atp7a<SUP>Mo</SUP></a> 
+is the allele symbol for the <I>dominant</I> mottled allele of the 
+  <A HREF="<!--#include file='include/wi_url.html'-->searches/marker.cgi?15197">Atp7a</a> gene. <BR><BR>
+<LI>If an allele is part of an allelic series, a serial number and lab code are part of its designation.
+ Each laboratory has its own numbering series.
+<EM> Example:</EM> 
+<A HREF="<!--#include file='include/wi_url.html'-->searches/allele.cgi?61">Tyr<SUP>c-4J</SUP></a>
+ is the 4th albino allele in the series discovered at The Jackson Laboratory (J) for the 
+ <A HREF="<!--#include file='include/wi_url.html'-->searches/marker.cgi?14347">Tyr</a> gene.  
 </UL>
 <P>
 <LI>Allele designations for <B>induced</B> and <B>targeted</B> alleles of <B>known</B> genes... <BR> 
 <UL><BR>
 <LI> Tg(YYY)#Zzz for <B>transgenic alleles</B>, where YYY is the inserted gene, 
-# is the serial number, and Zzz the lab code for the laboratory. <EM>Example:</EM>The Edar<SUP>dl-Tg(Crya1)2Ove</SUP>.  The Tg(Crya1)1Ove allele of Edar is the 1st in a series made by Paul Overbeek (Ove), where Crya1 was the microinjected gene.  This transgene was found before it was associated with any known gene.  
-Later, it was identified as an allele of dl (downless), and still later
- downless was cloned and identied as Edar (ectodysplasin-A receptor).<BR><BR>
-<LI> tm#Zzz for <B>targeted alleles</B> by homologous recombination, where # is the serial number and Zzz the lab code for the laboratory. <EM> Example:</EM> Egfr<SUP>tm1Cwr</SUP> where this is the 1st targeted mutation of Egfr created at Case Western Reserve University (Cwr).<BR><BR>
-<LI>#Zzz for<B> induced alleles</B>, where # is the serial number and Zzz the lab code for the laboratory. <EM> Example:</EM> T<SUP>39H</SUP> is the 39th mutation of T created at Harwell (H). 
+# is the serial number, and Zzz the lab code for the laboratory. <EM>Example:</EM> 
+<A HREF="<!--#include file='include/wi_url.html'-->searches/allele.cgi?1905">
+Cspg2<SUP>Tg(Hoxa1/Lacz)1Chm</SUP></a>, the Tg(Hoxa1/Lacz)1Chm allele of Cspg2. The mouse homeobox a1 
+(Hoxa1) was inserted in a construct with the LacZ reporter, the first reported by Corey H. Mjaatvedt (Chm).
+This transgene was found before it was associated with any known gene.  Later, it was identified as an 
+allele of 
+<A HREF="<!--#include file='include/wi_url.html'-->searches/marker.cgi?22783">Cspg2</a>
+ (chondroitin sulfate proteoglycan2).<BR><BR>
+<LI> tm#Zzz for <B>targeted alleles</B> by homologous recombination, where tm indicates targeted mutation, 
+# is the serial number, and 
+Zzz the lab code for the laboratory. <EM> Example:</EM> 
+<A HREF="<!--#include file='include/wi_url.html'-->searches/allele.cgi?544">Egfr<SUP>tm1Cwr</SUP></a>
+ where this is the 1st targeted mutation of 
+ <A HREF="<!--#include file='include/wi_url.html'-->searches/marker.cgi?8333">Egfr</a> created at 
+ Case Western Reserve University (Cwr).<BR><BR>
+<LI>#Zzz for<B> induced alleles</B>, where # is the serial number and Zzz the lab code for the 
+laboratory. <EM> Example:</EM> 
+<A HREF="<!--#include file='include/wi_url.html'-->searches/allele.cgi?2715">T<SUP>39H</SUP></a> is the 
+39th mutation of <A HREF="<!--#include file='include/wi_url.html'-->searches/marker.cgi?13727">T</a>
+ created by ENU mutagenesis at Harwell (H). 
 </UL>
 </OL>
 <HR>

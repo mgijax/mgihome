@@ -24,18 +24,23 @@ HREF="<!--#include file='include/wi_url.html'-->">MGD</A>)<BR>
 For an <B>allele of this gene</B>, enter:<BR>
 <DD>Allele Designation :    <INPUT TYPE="text" NAME="allele" SIZE=15> (superscripted portion of allele symbol)<BR>
 <DD>Allele Name :     <INPUT TYPE="text" NAME="allelename" SIZE=50><BR>
-<DD><EM> Example: </EM>The leptin gene symbol is 'Lep'. The name of one of its alleles is 'obese'.  
-<DD>The full allele symbol is 'Lep<SUP>ob</SUP>'. For this example, enter 'ob' 
- in the Allele Designation field.
-<DD><EM> Note:</EM> If this is a new allele, the allele designation and name you enter are considered provisional.
+<DD><EM> Example: </EM>The leptin gene symbol is 'Lep'. The name of one of its alleles is 'obese'. 
+The full allele symbol is 'Lep<SUP>ob</SUP>'.
+<dd> For this example, 'ob' would be entered 
+ in the Allele Designation field and 'obese' in the Allele Name field.
+<DD><EM> Note:</EM> If this is a new allele, the allele designation and name you enter are considered 
+provisional.
 <BR><BR>
 <B>- OR -</B><BR><BR>
 <DT>For a <B>new gene</B> identified through its mutant phenotype, enter:<BR>
 <DD>Proposed Gene Symbol:    <INPUT TYPE="text" NAME="newgenesymbol" SIZE=15><BR>
 <DD>Proposed Gene Name:     <INPUT TYPE="text" NAME="newgenename" SIZE=50><BR>
-<DD><EM> Note:</EM> In general, gene symbols for mutants become alleles once the gene product is better understood.  
-<DD><EM>Example: </EM>The first description of the albinism mutation used the gene symbol 'c'. 
-Later, 'c' became an allele of 'Tyr' (tyrosinase), Tyr<SUP>c</SUP>, once its function was known.<BR><BR>
+<dd><EM>Note:</EM> In general, gene symbols for mutants become alleles once the gene product 
+	is better understood.  
+<dd><EM>Example: </EM>The first description of the albinism mutation used the gene symbol 'c'.
+Later, 'c' became an allele 
+<dd>of 'Tyr' (tyrosinase), Tyr<SUP>c</SUP>, once its function 
+	was known.<BR><BR>
 <DT>Other names/synonyms:
 <INPUT TYPE="text" NAME="synonyms" SIZE=55><BR>
 </DL>
@@ -78,34 +83,39 @@ Other Genome Location Information:<BR>
 <Table border=0 cellpadding=0 cellspacing=1 width=90%>
 
 <TR>
-<TD><INPUT TYPE="checkbox" NAME="category" VALUE="neurological" >neurological</TD>
-<TD><INPUT TYPE="checkbox" NAME="category" VALUE="behavior">behavior </TD>
-<TD><INPUT TYPE="checkbox" NAME="category" VALUE="convulsion_seizure">convulsions, seizures</TD>
-<TD><INPUT TYPE="checkbox" NAME="category" VALUE="coordination_gait">coordination, gait</TD>
+<TD><INPUT TYPE="checkbox" NAME="category" VALUE="neurological" >neurological/neuromuscular</TD>
+<TD><INPUT TYPE="checkbox" NAME="category" VALUE="tail">tail</TD>
+<TD><INPUT TYPE="checkbox" NAME="category" VALUE="growth">growth</TD>
+<TD><INPUT TYPE="checkbox" NAME="category" VALUE="renal_system">renal system</TD>
 </TR>
 <TR>
-<TD><INPUT TYPE="checkbox" NAME="category" VALUE="coat_pigment">coat, pigment</TD>
-<TD><INPUT TYPE="checkbox" NAME="category" VALUE="hair_skin">hair, skin</TD>
-<TD><INPUT TYPE="checkbox" NAME="category" VALUE="skeleton_teeth">skeleton, teeth</TD>
-<TD><INPUT TYPE="checkbox" NAME="category" VALUE="craniofacial">craniofacial</TD>
-</TR>
-<TR>
+<TD><INPUT TYPE="checkbox" NAME="category" VALUE="behavior">behavioral </TD>
 <TD><INPUT TYPE="checkbox" NAME="category" VALUE="digits_limbs">digits, limbs</TD>
-<TD><INPUT TYPE="checkbox" NAME="category" VALUE="growth_weight">growth, weight</TD>
-<TD><INPUT TYPE="checkbox" NAME="category" VALUE="eyes_sight">eyes, sight</TD>
-<TD><INPUT TYPE="checkbox" NAME="category" VALUE="hearing_balance">hearing,  balance</TD>
-</TR>
-<TR>
 <TD><INPUT TYPE="checkbox" NAME="category" VALUE="reproduction">reproduction</TD>
-<TD><INPUT TYPE="checkbox" NAME="category" VALUE="clinical_chem">clinical chemistry</TD>
-<TD><INPUT TYPE="checkbox" NAME="category" VALUE="cardiovascular_system">cardiovascular system</TD>
-<TD><INPUT TYPE="checkbox" NAME="category" VALUE="respiratory_system">respiratory system</TD>
+<TD><INPUT TYPE="checkbox" NAME="category" VALUE="other_viscera">other viscera</TD>
 </TR>
 <TR>
-<TD><INPUT TYPE="checkbox" NAME="category" VALUE="immunology">immunology</TD>
-<TD><INPUT TYPE="checkbox" NAME="category" VALUE="body_patterning">body patterning</TD>
-<TD><INPUT TYPE="checkbox" NAME="category" VALUE="embryogenesis">embryogenesis</TD>
-<TD><INPUT TYPE="checkbox" NAME="category" VALUE="early_lethal">early lethal</TD></TR>
+<TD><INPUT TYPE="checkbox" NAME="category" VALUE="circling">circling</TD>
+<TD><INPUT TYPE="checkbox" NAME="category" VALUE="craniofacial">craniofacial</TD>
+<TD><INPUT TYPE="checkbox" NAME="category" VALUE="clinical_chem">clinical chemistry</TD>
+<TD><INPUT TYPE="checkbox" NAME="category" VALUE="immunological">immunological</TD>
+</TR>
+<TR>
+<TD><INPUT TYPE="checkbox" NAME="category" VALUE="pigment">pigment</TD>
+<TD><INPUT TYPE="checkbox" NAME="category" VALUE="teeth">teeth</TD>
+<TD><INPUT TYPE="checkbox" NAME="category" VALUE="circulatory_system">circulatory system</TD>
+<TD><INPUT TYPE="checkbox" NAME="category" VALUE="body_patterning">developmental body patterning</TD>
+<tr>
+<TD><INPUT TYPE="checkbox" NAME="category" VALUE="skin_hair">skin, hair, vibrassae</TD>
+<TD><INPUT TYPE="checkbox" NAME="category" VALUE="eyes_sight">eyes, sight</TD>
+<TD><INPUT TYPE="checkbox" NAME="category" VALUE="cardiovascular_system">cardiovascular system</TD>
+<TD><INPUT TYPE="checkbox" NAME="category" VALUE="embryonic">embryonic lethal/sublethal</TD>
+</TR>
+<TR>
+<TD><INPUT TYPE="checkbox" NAME="category" VALUE="skeleton">skeleton (trunk)</TD>
+<TD><INPUT TYPE="checkbox" NAME="category" VALUE="hearing">hearing</TD>
+<TD><INPUT TYPE="checkbox" NAME="category" VALUE="respiratory">respiratory system</TD>
+<TD><INPUT TYPE="checkbox" NAME="category" VALUE="late_onset">late onset</TD></TR>
 </TR></TABLE></UL>
 
 If an appropriate classification for the allele does not appear above, enter here: 
