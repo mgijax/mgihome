@@ -62,7 +62,8 @@ performed, etc. that may help us with the symbol approval process.<BR>
 <HR>
 <HR>
 <H2>Sequence Details:</H2>
-GenBank IDs:  <INPUT TYPE="text" NAME="genbankID" SIZE=60>
+<p>GenBank ID: (required if Sequence Data field is blank)<br>
+ <INPUT TYPE="text" NAME="genbankID" SIZE=60>
 <br>
 <P>If you have sequence, we strongly recommend that you cut and paste it into the area below.
  It will be treated in complete confidence. <br> 
@@ -70,8 +71,8 @@ GenBank IDs:  <INPUT TYPE="text" NAME="genbankID" SIZE=60>
  the box; however, if the sequence is very long, you will need to send it by email to 
  <a href="mailto:nomen@informatics.jax.org">nomen@informatics.jax.org</a>.
  <br>
- <br>
- Sequence Data: <br>
+ <p>
+ Sequence Data: (required if GenBank ID field is blank)<br>
  <textarea name="sequence" rows=10 cols=75></textarea>
  <br>
  <hr>
