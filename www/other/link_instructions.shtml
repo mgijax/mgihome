@@ -1,5 +1,6 @@
 <HTML>
-<HEAD>
+<HEAD><!--last updated: February, 2002 for 2.8 release of GROGS TR 2867: get rid of GO spreadsheet. Added GO to first bulleted list, changed # of objects to eleven, added example for GO-->
+
 <TITLE>How to Create WWW Links to MGD</TITLE>
 </HEAD>
 
@@ -11,11 +12,9 @@
 <HR>
 
 <blockquote>
-Due to MGI's implementation of accession ID handling, we are providing
-this page of instructions for creating URL links to MGI.
+Due to MGI's implementation of accession ID handling, we are providing this page of instructions for creating URL links to MGI.
 <P>
-<I>Note:</I> We strongly recommend using the new URL for linking to MGI.  Other
-URLs may not be supported in the future.
+<I>Note:</I> We strongly recommend using the new URL for linking to MGI.  Other URLs may not be supported in the future.
 </blockquote>
 
 <HR>
@@ -23,23 +22,21 @@ URLs may not be supported in the future.
 
 We have provided a new CGI program for linking to MGI via accession ID:
 
-<UL><CODE>http://www.informatics.jax.org/searches/accession_report.cgi?id=xxxx</CODE></UL>
-
-where <CODE>xxxx</CODE> is a comma-separated list of Accession IDs.
+<UL><CODE>http://www.informatics.jax.org/searches/accession_report.cgi?id=xxxx</CODE></UL> where <CODE>xxxx</CODE> is a comma-separated list of Accession IDs.
 <P>
-The result will be one or more objects from MGI associated with the given IDs.
+The result is one or more objects from MGI associated with the given IDs.
 <P>
-MGI stores objects with accession IDs from many sources.  Some examples of
-valid Accession IDs are
+MGI stores objects with accession IDs from many sources.  Some examples of valid Accession IDs are
 
 <UL>
 <LI>MGI:12345 (MGI Accession ID)
 <LI>J:12345 (J Number)
 <LI>GDB:12345 (GDB Accession ID)
 <LI>K02800 (GenBank Sequence ID)
+<li>GO:0030264 (GO Accession ID)
 </UL>
 
-There are nine types of objects supported by this URL:
+There are eleven types of objects supported by this URL:
 
 <UL>
 <LI>References
@@ -52,22 +49,11 @@ There are nine types of objects supported by this URL:
 <LI>Images
 <LI>Antibodies
 <LI>Antigens
+<li>Gene Ontology (GO) Terms
 </UL>
 
 <STRONG>Examples</STRONG>
 <UL>
-<LI>Mouse Marker (MGI Accession ID)<BR>
- <A HREF="<!--#include file='include/wi_url.html'-->/searches/accession_report.cgi?id=MGI:97898">
- <CODE>http://www.informatics.jax.org/searches/accession_report.cgi?id=MGI:97898</CODE>
- </A>
-<LI>Allele (MGI Accession ID)<BR>
- <A HREF="<!--#include file='include/wi_url.html'-->/searches/allele.cgi?2491">
- <CODE>http://www.informatics.jax.org/searches/allele.cgi?2491</CODE>
- </A>
-<LI>Homology (GDB Accession ID)<BR>
- <A HREF="<!--#include file='include/wi_url.html'-->/searches/accession_report.cgi?id=GDB:120345">
- <CODE>http://www.informatics.jax.org/searches/accession_report.cgi?id=GDB:120345</CODE>
- </A>
 <LI>Reference (MGI Accession ID)<BR>
  <A HREF="<!--#include file='include/wi_url.html'-->/searches/accession_report.cgi?id=MGI:57297">
  <CODE>http://www.informatics.jax.org/searches/accession_report.cgi?id=MGI:57297</CODE>
@@ -79,6 +65,18 @@ There are nine types of objects supported by this URL:
 <LI>Reference (Medline Accession ID)<BR>
  <A HREF="<!--#include file='include/wi_url.html'-->/searches/accession_report.cgi?id=90215200">
  <CODE>http://www.informatics.jax.org/searches/accession_report.cgi?id=90215200</CODE>
+ </A>
+<LI>Mouse Marker (MGI Accession ID)<BR>
+ <A HREF="<!--#include file='include/wi_url.html'-->/searches/accession_report.cgi?id=MGI:97898">
+ <CODE>http://www.informatics.jax.org/searches/accession_report.cgi?id=MGI:97898</CODE>
+ </A>
+<LI>Allele (MGI Accession ID)<BR>
+ <A HREF="<!--#include file='include/wi_url.html'-->/searches/allele.cgi?2491">
+ <CODE>http://www.informatics.jax.org/searches/allele.cgi?2491</CODE>
+ </A>
+<LI>Homology (GDB Accession ID)<BR>
+ <A HREF="<!--#include file='include/wi_url.html'-->/searches/accession_report.cgi?id=GDB:120345">
+ <CODE>http://www.informatics.jax.org/searches/accession_report.cgi?id=GDB:120345</CODE>
  </A>
 <LI>Probe (MGI Accession ID)<BR>
  <A HREF="<!--#include file='include/wi_url.html'-->/searches/accession_report.cgi?id=MGI:32903">
@@ -92,14 +90,18 @@ There are nine types of objects supported by this URL:
  <A HREF="<!--#include file='include/wi_url.html'-->/searches/accession_report.cgi?id=MGI:36495,MGI:36496,MGI:36501">
  <CODE>http://www.informatics.jax.org/searches/accession_report.cgi?id=MGI:36495,MGI:36496,MGI:36501</CODE>
  </A>
-<LI>Image (MGI Accession ID)<BR>
- <A HREF="<!--#include file='include/wi_url.html'-->/searches/accession_report.cgi?id=MGI:1205939">
- <CODE>http://www.informatics.jax.org/searches/accession_report.cgi?id=MGI:1205939</CODE>
- </A>
 <LI>Expression Assay (MGI Accession ID)<BR>
  <A HREF="<!--#include file='include/wi_url.html'-->/searches/accession_report.cgi?id=MGI:1205940">
  <CODE>http://www.informatics.jax.org/searches/accession_report.cgi?id=MGI:1205940</CODE>
  </A>
+<LI>Image (MGI Accession ID)<BR>
+ <A HREF="<!--#include file='include/wi_url.html'-->/searches/accession_report.cgi?id=MGI:1205939">
+ <CODE>http://www.informatics.jax.org/searches/accession_report.cgi?id=MGI:1205939</CODE>
+ </A>
+<LI>GO Term (GO ID)<br>
+<a href="<!--#include file='include/wi_url.html'-->/searches/accession_report.cgi?id=GO:0030264">
+<code>http://www.informatics.jax.org/searches/accession_report.cgi?id=GO:0030264</code></a>
+
 </UL>
 Additional linking options are available upon request.
 
