@@ -164,7 +164,7 @@ if species:
 # We also now handle up to three sources.  (TR 1175)
 
 sources = []
-for fieldname in [ 'source1', 'source2', 'source3' ]:
+for fieldname in [ 'source1', 'source2', 'source3', 'source4' ]:
 	if fields.has_key (fieldname):
 		sources.append (fields[fieldname])
 if sources:
@@ -184,6 +184,18 @@ if fields.has_key('notes'):
 	locussect = locussect + '\nNotes:' + NL + fields['notes'] + NL
 
 message = message + locussect + NL
+
+###--- Format Sequence Information, per TR 2031 ---###
+
+seqsect = ''
+
+if fields.has_key ('genbankID'):
+	seqsect = seqsect + 'GenBank ID:' + 2*HT + fields['genbankID'] + NL
+
+if fields.has_key ('sequence'):
+	seqsect = seqsect + NL + 'Sequence:' + NL + fields['sequence'] + NL
+
+message = message + seqsect + NL
 
 #
 # Format Reference Information
