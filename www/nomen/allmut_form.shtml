@@ -1,0 +1,184 @@
+<HTML>
+<HEAD>
+<TITLE>New Allele and Mutant Submission Form</TITLE>
+</HEAD>
+<BODY BGCOLOR=#FFFFFF>
+<!--#include file="include/banner.html"-->
+
+<H2>Allele and New Mutant Submission Form</H2>
+Use this submission form to describe mutant alleles: either alleles of known genes or 
+alleles where a phenotype has now identified a new gene.  Submit only those mutations 
+shown to be heritable.  Please fill in appropriate information. Click <b>Submit</b> at the 
+bottom of the form to send this information to the MGD Curator for Mutant Alleles.
+<P>
+<FORM METHOD="POST" ACTION="allmut_submit.cgi">
+<HR>
+<H3>About the Allele or Mutant:</H3> 
+<B>Please refer to the <A HREF="allmut_quickhelp.shtml">
+Allele and Mutant Quick Nomenclature Guide</A>  before completing this section.</B>
+<BR><BR>
+<DT>For an allele of a <B>known gene</B>, enter the official <B>gene symbol</B> 
+<INPUT TYPE="text" NAME="genesymbol" SIZE=15> 
+(check the gene symbol in <A
+HREF="<!--#include file='include/wi_url.html'-->">MGD</A>)<BR>
+For an <B>allele of this gene</B>, enter:<BR>
+<DD>Allele Designation :    <INPUT TYPE="text" NAME="allele" SIZE=15> (superscripted portion of allele symbol)<BR>
+<DD>Allele Name :     <INPUT TYPE="text" NAME="allelename" SIZE=50><BR>
+<DD><EM> Example: </EM>The leptin gene symbol is 'Lep'. The name of one of its alleles is 'obese'.  
+<DD>The full allele symbol is 'Lep<SUP>ob</SUP>'. For this example, enter 'ob' 
+ in the Allele Designation field.
+<DD><EM> Note:</EM> If this is a new allele, the allele designation and name you enter are considered provisional.
+<BR><BR>
+<B>- OR -</B><BR><BR>
+<DT>For a <B>new gene</B> identified through its mutant phenotype, enter:<BR>
+<DD>Proposed Gene Symbol:    <INPUT TYPE="text" NAME="newgenesymbol" SIZE=15><BR>
+<DD>Proposed Gene Name:     <INPUT TYPE="text" NAME="newgenename" SIZE=50><BR>
+<DD><EM> Note:</EM> In general, gene symbols for mutants become alleles once the gene product is better understood.  
+<DD><EM>Example: </EM>The first description of the albinism mutation used the gene symbol 'c'. 
+Later, 'c' became an allele of 'Tyr' (tyrosinase), Tyr<SUP>c</SUP>, once its function was known.<BR><BR>
+<DT>Other names/synonyms:
+<INPUT TYPE="text" NAME="synonyms" SIZE=55><BR>
+</DL>
+<HR>
+Strain Background:    <INPUT TYPE="text" NAME="strain" SIZE=50>
+<BR><BR>
+<DL>
+<DT>Method of allele generation:
+<DD><INPUT TYPE="radio" NAME="method" VALUE="spontaneous" > spontaneous  
+<INPUT TYPE="radio" NAME="method" VALUE="ENU"> ENU  induced 
+<INPUT TYPE="radio" NAME="method" VALUE="transgenic"> transgenic 
+<INPUT TYPE="radio" NAME="method" VALUE="targeting"> targeted  
+<INPUT TYPE="radio" NAME="method" VALUE="genetrap">gene  trapped  
+<INPUT TYPE="radio" NAME="method" VALUE="other"> other
+<BR>
+<DD>If Allele generation method is "other", please specify  
+<INPUT TYPE="text" NAME="othermethod" SIZE=25>
+<DD> For transgenes, please specify transgene promoter 
+<INPUT TYPE="text" NAME="promoter" SIZE=25>
+<DD> For targeted mutations, please specify ES cell line used 
+<INPUT TYPE="text" NAME="celline" SIZE=25>
+</DL>
+
+<DT>Mode of Inheritance: 
+<INPUT TYPE="radio" NAME="mode" VALUE="dominant"> dominant  
+<INPUT TYPE="radio" NAME="mode" VALUE="codominant"> codominant
+<INPUT TYPE="radio" NAME="mode" VALUE="semidominant"> semidominant 
+<INPUT TYPE="radio" NAME="mode" VALUE="recessive"> recessive  
+</DL>
+Chromosome Location (Enter UN if unknown):    
+<INPUT TYPE="text" NAME="chromosome" SIZE=10>
+<BR><BR>
+Other Genome Location Information:<BR>
+<TEXTAREA NAME="location" ROWS=4 COLS=65></TEXTAREA>
+<BR>
+<HR>
+<H3>Phenotype</H3>
+<B>Phenotypic categories </B>(check all that apply, where the allele shows an effect):<BR>
+
+<Table border=0 cellpadding=0 cellspacing=1 width=90%>
+
+<TR>
+<TD><INPUT TYPE="checkbox" NAME="category" VALUE="neurological" >neurological</TD>
+<TD><INPUT TYPE="checkbox" NAME="category" VALUE="behavior">behavior </TD>
+<TD><INPUT TYPE="checkbox" NAME="category" VALUE="convulsion_seizure">convulsions, seizures</TD>
+<TD><INPUT TYPE="checkbox" NAME="category" VALUE="coordination_gait">coordination, gait</TD>
+</TR>
+<TR>
+<TD><INPUT TYPE="checkbox" NAME="category" VALUE="coat_pigment">coat, pigment</TD>
+<TD><INPUT TYPE="checkbox" NAME="category" VALUE="hair_skin">hair, skin</TD>
+<TD><INPUT TYPE="checkbox" NAME="category" VALUE="skeleton_teeth">skeleton, teeth</TD>
+<TD><INPUT TYPE="checkbox" NAME="category" VALUE="craniofacial">craniofacial</TD>
+</TR>
+<TR>
+<TD><INPUT TYPE="checkbox" NAME="category" VALUE="digits_limbs">digits, limbs</TD>
+<TD><INPUT TYPE="checkbox" NAME="category" VALUE="growth_weight">growth, weight</TD>
+<TD><INPUT TYPE="checkbox" NAME="category" VALUE="eyes_sight">eyes, sight</TD>
+<TD><INPUT TYPE="checkbox" NAME="category" VALUE="hearing_balance">hearing,  balance</TD>
+</TR>
+<TR>
+<TD><INPUT TYPE="checkbox" NAME="category" VALUE="reproduction">reproduction</TD>
+<TD><INPUT TYPE="checkbox" NAME="category" VALUE="clinical_chem">clinical chemistry</TD>
+<TD><INPUT TYPE="checkbox" NAME="category" VALUE="cardiovascular_system">cardiovascular system</TD>
+<TD><INPUT TYPE="checkbox" NAME="category" VALUE="respiratory_system">respiratory system</TD>
+</TR>
+<TR>
+<TD><INPUT TYPE="checkbox" NAME="category" VALUE="immunology">immunology</TD>
+<TD><INPUT TYPE="checkbox" NAME="category" VALUE="body_patterning">body patterning</TD>
+<TD><INPUT TYPE="checkbox" NAME="category" VALUE="embryogenesis">embryogenesis</TD>
+<TD><INPUT TYPE="checkbox" NAME="category" VALUE="early_lethal">early lethal</TD></TR>
+</TR></TABLE></UL>
+
+If an appropriate classification for the allele does not appear above, enter here: 
+<INPUT TYPE="text" NAME="othercategory" SIZE=50><BR>
+<BR><BR>
+Description:<BR><TEXTAREA NAME ="description" ROWS=5 COLS=65></TEXTAREA><BR>
+<BR>
+Other remarks (gene function/pathway, available clones, GenBank numbers, etc.)<BR>
+<TEXTAREA NAME="remarks" ROWS=3 COLS=65></TEXTAREA><BR>
+<HR>
+<H3>Status</H3>
+Status requested for these data: <INPUT TYPE="radio" NAME="status" VALUE="Reserved"> 
+Reserved and Private  <INPUT TYPE="radio" NAME="status" VALUE="Release"> Release to public MGD 
+<BR><BR>
+<HR>
+<H3>References:</H3>
+Please report publications about this allele. MedLine UIs may be used. If unpublished, include a descriptive title.  For unpublished references a Direct Submission reference will be created in MGD.  
+<P>
+<BLOCKQUOTE>
+<EM>Example, short citation:</EM> Seldin MF, Cytogenet Cell Genet 1987;45(1):52-4<BR>
+<EM>Example, MedLine UI: </EM>87245590<BR>
+<EM>Example, unpublished:</EM> Doe JE, Smith H, New allele of the Kit ligand (steel) series, unpublished<BR>
+</BLOCKQUOTE>
+<P>
+Citations:<TEXTAREA NAME="citations" ROWS=3 COLS=60></TEXTAREA><BR>
+</TABLE>
+<BR>
+<DL>If allele data are available from a Web site, please give URL: <BR>
+<DD><INPUT TYPE="text" NAME="alleleURL" SIZE=60><BR>
+</DL>
+<HR>
+<H3>Contact Details:</H3>
+ If your contact details are already in MGD you only need to enter your name and e-mail address.  <BR>
+<PRE>
+Last name:                    <INPUT TYPE="text" NAME="lastname" SIZE=30>(required)
+First name & middle name(s):  <INPUT TYPE="text" NAME="firstname" SIZE=30>(required)
+E-mail address:               <INPUT TYPE="text" NAME="email" SIZE=30>(required)
+<P>
+Institute/Organization:       <INPUT TYPE="text" NAME="organization" SIZE=30>
+Address:                      <INPUT TYPE="text" NAME="address1" SIZE=30>
+Address:                      <INPUT TYPE="text" NAME="address2" SIZE=30>
+City:                         <INPUT TYPE="text" NAME="city" SIZE=30>
+State/Province:               <INPUT TYPE="text" NAME="state" SIZE=30>
+Postal Code:                  <INPUT TYPE="text" NAME="zip" SIZE=30>
+Country:                      <INPUT TYPE="text" NAME="country" SIZE=30>
+Telephone Number:             <INPUT TYPE="text" NAME="phone" SIZE=30>
+Fax Number:                   <INPUT TYPE="text" NAME="fax" SIZE=30>
+</PRE>
+<BR>
+<H3>Once you submit this completed form, the MGI accession number for this allele will be emailed to your shortly!  Thank you.</H3>
+<HR>
+<INPUT TYPE=submit VALUE="Submit"> <INPUT TYPE=reset VALUE="Reset Form">
+<HR>
+</FORM>
+<!--#include file="include/footer.html"-->
+</BODY>
+</HTML>
+<!--
+Warranty Disclaimer and Copyright Notice
+
+ THE JACKSON LABORATORY MAKES NO REPRESENTATION ABOUT THE SUITABILITY OR 
+ ACCURACY OF THIS SOFTWARE OR DATA FOR ANY PURPOSE, AND MAKES NO WARRANTIES, 
+ EITHER EXPRESS OR IMPLIED, INCLUDING MERCHANTABILITY AND FITNESS FOR A 
+ PARTICULAR PURPOSE OR THAT THE USE OF THIS SOFTWARE OR DATA WILL NOT 
+ INFRINGE ANY THIRD PARTY PATENTS, COPYRIGHTS, TRADEMARKS, OR OTHER RIGHTS.  
+ THE SOFTWARE AND DATA ARE PROVIDED "AS IS".
+
+ This software and data are provided to enhance knowledge and encourage 
+ progress in the scientific community and are to be used only for research 
+ and educational purposes.  Any reproduction or use for commercial purpose 
+ is prohibited without the prior express written permission of the Jackson 
+ Laboratory.
+
+Copyright © 1996, 1999, 2000 by The Jackson Laboratory
+All Rights Reserved
+-->
