@@ -797,8 +797,12 @@ class UserInput:
 		for fieldname in fields:
 			item = self.__dict__[fieldname]
 			if item.getValue():
+				value = cgi.escape (homelib.wrapLines (
+					item.getValue(),  60))
+				if len(value) > 60:
+					value = '\n' + value
 				lines.append ('%s: %s' % (item.getLabel(),
-					cgi.escape(item.getValue())))
+					value))
 		return string.join (lines, '\n')
 
 class SimpleTextUserInput (UserInput):
@@ -915,7 +919,10 @@ class AlleleUserInput (SimpleTextUserInput):
 			sequence identifiers, references, phenotypes).  For
 			new allele submissions, please use the
 			<a href="../nomen/allmut_form.shtml">Allele and New
-			Mutant Submission Form</a>.<BR>'''
+			Mutant Submission Form</a>.
+			For all other comments and suggestions, contact 
+			<a href="%ssupport/tjl_inbox.shtml">User
+			Support</a>.<BR>''' % config.lookup ('MGIHOME_URL')
 		self.subject = AlleleSubjectField ('subject', 'Subject',
 			REQUIRED, width=45)
 		self.subject.setByAcc (parms)
@@ -956,7 +963,10 @@ class MarkerUserInput (SimpleTextUserInput):
 			references, gene ontology terms).  For new allele
 			submissions, please use the
 			<a href="../nomen/allmut_form.shtml">Allele and New
-			Mutant Submission Form</a>.<BR>'''
+			Mutant Submission Form</a>.
+			For all other comments and suggestions, contact 
+			<a href="%ssupport/tjl_inbox.shtml">User
+			Support</a>.<BR>''' % config.lookup ('MGIHOME_URL')
 		self.subject = MarkerSubjectField ('subject', 'Subject',
 			REQUIRED, width=45)
 		self.subject.setByAcc (parms)
