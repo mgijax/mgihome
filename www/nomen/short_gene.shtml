@@ -4,7 +4,8 @@
 </head>
 
 
-<BODY BGCOLOR="#ffffff"><!--#include file="include/bodyStart.html"-->
+<BODY BGCOLOR="#ffffff">
+<!--#include file="include/bodyStart.html"-->
 
 
 <TABLE WIDTH="100%" BORDER=0 CELLPADDING=2 CELLSPACING=1>
@@ -39,23 +40,23 @@ symbols and names. Please contact us at <A HREF="mailto:nomen@informatics.jax.or
  <li>Symbols should not include tissue specificity and molecular weight designations.
  <li>Symbols are italicized in published articles.
  <li>Use punctuation only to separate two adjacent numbers 
-(<i>e.g.,</i> <A HREF="<!--#include file='include/wi_url.html'-->searches/marker.cgi?10754"><i>Lamb1-2</i></a>) or for designating related 
-(<i>e.g.,</i> <A HREF="<!--#include file='include/wi_url.html'-->searches/marker.cgi?40900"><i>Es10-rs1</i></a>).
-     sequences and pseudogenes (<i>e.g.,</i> <A HREF="<!--#include file='include/wi_url.html'-->searches/marker.cgi?27574"><i>Adh5-ps1</i></a>).
+(<i>e.g.,</i> <A HREF="<!--#include file='include/java_url.html'-->Marker?key=10754"><i>Lamb1-2</i></a>) or for designating related 
+(<i>e.g.,</i> <A HREF="<!--#include file='include/java_url.html'-->Marker?key=40900"><i>Es10-rs1</i></a>).
+     sequences and pseudogenes (<i>e.g.,</i> <A HREF="<!--#include file='include/java_url.html'-->Marker?key=27574"><i>Adh5-ps1</i></a>).
  <li>Gene Family members: Use common stem (or root) symbol (<i>e.g.,</i> see <a href="genefamilies/claudin.shtml">Cldn#</a>).
  <li>Orthologous genes in other vertebrate species: &nbsp;Use the same symbol whenever possible in human, rat, and mouse.
  <li>For homologous genes in invertebrate or prokaryote species:
   <ol type=a>
     <li>If it is the only mouse homolog, use  the approved symbol for that species but include the word
       “homolog” at the end of the name followed by the name of the  species in parentheses (<i>e.g.,</i> symbol: 
-<A HREF="<!--#include file='include/wi_url.html'-->searches/marker.cgi?46917"><i>Cdc20</i></a>; 
+<A HREF="<!--#include file='include/java_url.html'-->Marker?key=46917"><i>Cdc20</i></a>; 
        name: cell division cycle 20 homolog (S. cerevisiae)).
     <li>If there is more than one mouse homolog for the invertebrate gene, assign the serial number after the word &quot;homolog&quot;
-      (<i>e.g.,</i> symbols: <A HREF="<!--#include file='include/wi_url.html'-->searches/marker.cgi?24863"><i>Atoh1</i></a> and <A HREF="<!--#include file='include/wi_url.html'-->searches/marker.cgi?27458"><i>Atoh2</i></a>; names: atonal homolog 1 (Drosophila) and atonal homolog 2 (Drosophila) respectively.)
+      (<i>e.g.,</i> symbols: <A HREF="<!--#include file='include/java_url.html'-->Marker?key=24863"><i>Atoh1</i></a> and <A HREF="<!--#include file='include/java_url.html'-->Marker?key=27458"><i>Atoh2</i></a>; names: atonal homolog 1 (Drosophila) and atonal homolog 2 (Drosophila) respectively.)
    </ol>
 <li>If the invert/procaryotic gene is similar to the mouse gene but is not determined to be a homolog, use the
      letter &quot;l&quot; to denote &quot;-like&quot; designations (<i>e.g.,</i> symbol: 
-<A HREF="<!--#include file='include/wi_url.html'-->searches/marker.cgi?42226"><i>Ash2l</i></a>; name: ash2 (absent, small, or homeotic)-like (Drosophila).
+<A HREF="<!--#include file='include/java_url.html'-->Marker?key=42226"><i>Ash2l</i></a>; name: ash2 (absent, small, or homeotic)-like (Drosophila).
 <li>ESTs and BAC/YAC ends: Use the assigned sequence accession identification numbers.
  <li>STSs:
   <ol type=a>
