@@ -23,7 +23,8 @@
   </TD>
  </TR>
 </TABLE>
-
+<hr>
+<p>
 The "laboratory mouse" originated from a mixture of <i>M. m. domesticus</i>
  and <i>M. m. musculus</i> subspecies. An inbred strain of the laboratory
  mouse is defined as a strain that has been brother/sister mated for 20
@@ -38,7 +39,7 @@ In the Mouse Facts pages, you will find information on these topics:<P>
   <TR ALIGN="left" VALIGN="middle">
     <TD ALIGN="left" VALIGN="top">
 <!--<A HREF="#SeqProg">Mouse Sequencing Progress</A><BR>-->
-<A HREF="#GenomeLen">Genome Length Estimates</A><BR>
+<A HREF="#GenomeLen">Mouse Genome Length Estimates</A><BR>
 <A HREF="#MGDStats">MGD chromosomal length and gene distribution</A><BR>
 <A HREF="#CodonUsage">Codon Usage</A><BR>
 <A HREF="#MolecRes">Molecular Resources</A><BR>
@@ -49,92 +50,49 @@ In the Mouse Facts pages, you will find information on these topics:<P>
   </TR>
 </TABLE>
 
-<p>
 <hr WIDTH="100%">
-<p><b><font size=+1><A NAME="GenomeLen">Mouse Genome Length Estimates</A></font></b>
-<table BORDER WIDTH="100%" BGCOLOR="#FAFAD2" >
+<h4><A NAME="GenomeLen">Mouse Genome Length Estimates</A></h4>
+<table BORDER WIDTH="90%" cellpadding=4 cellspacing=1 BGCOLOR="#FAFAD2">
 <tr>
 <td>1360.9 cM</td>
 
 <td>Dietrich, WF et al. 1996. Nature Mar 14:380(6570)149-52(<A HREF="<!--#include file="include/wi_url.html"-->searches/accession_report.cgi?id=J:34212"> J:34212</A>)</td>
 </tr>
-
-<tr>
-<td>1500 cM (autosomal)</td>
-
-<td>Nadeau, JH. 1989, TIG 5(3):82-86 (<A HREF="<!--#include file="include/wi_url.html"-->searches/accession_report.cgi?id=J:18391">J:18391</A>)</td>
+<tr><td>1500 cM (autosomal)</td><td>Nadeau, JH. 1989, TIG 5(3):82-86 
+(<A HREF="<!--#include file="include/wi_url.html"-->searches/accession_report.cgi?id=J:18391">J:18391</A>)</td>
 </tr>
-
 <tr>
 <td>1600 cM (haploid)</td>
-
 <td>Davisson, MT and Roderick, TH (1989) in Genetic Variants and Strains
 of the Laboratory Mouse (Lyon, MF and Searle, AG, eds.), pp.416-427, Oxford
 University Press</td>
 </tr>
-
 <tr>
 <td>1450 cM</td>
-
 <td>Copeland, NG, et al. 1993. Science 62:57-66. (<A HREF="<!--#include file="include/wi_url.html"-->searches/accession_report.cgi?id=J:14384">J:14384</A>)</td>
 </tr>
-
-
 <tr>
 <td>1593.6 cM</td>
-
 <td>mapped length thus far according to MGD (sum of mapped lengths below)</td>
 </tr>
-<tr>
-<td>3 x 10&lt;9> bp (haploid)</td>
-
+<tr><td>3 x 10&lt;9> bp (haploid)</td>
 <td><a href="http://www.cbs.dtu.dk/databases/DOGS/index.html">Database
 of Genome Sizes (DOGS)</a></td>
 </tr>
 </table>
 <hr>
-<BR><font size=+1><A NAME="MGDStats">MGD chromosomal length and gene distribution</A></font></B> (as
-of August 15, 2000)
-<br>*Mapped length represents the estimated cM position
+<h4><A NAME="MGDStats">MGD chromosomal length and gene distribution (as
+of August 15, 2000)</h4>
+*Mapped length represents the estimated cM position
 of the most distally placed locus on that chromosome.
 <table BORDER COLS=4 WIDTH="70%" BGCOLOR="#FAFAD2" >
+<tr><td><B>Chromosome</B></td><td><B>Mapped Length * (cM)</B></td>
+<td><B>#Genes mapped</B></td><td><B>#D Segments</B></td></tr>
+<tr><td>1</td><td>127.0</td><td>695</td><td>1054</td></tr>
+<tr><td>2</td><td>114.0</td><td>779</td><td>962</td></tr>
+<tr><td>3</td><td>119.2</td><td>491</td><td>631</td></tr>
 <tr>
-<td><B>Chromosome</B></td>
-
-<td><B>Mapped Length * (cM)</B></td>
-
-<td><B>#Genes mapped</B></td>
-
-<td><B>#D Segments</B></td>
-</tr>
-
-<tr>
-<td>1</td>
-<td>127.0</td>
-<td>695</td>
-<td>1054</td>
-</tr>
-
-<tr>
-<td>2</td>
-<td>114.0</td>
-<td>779</td>
-<td>962</td>
-</tr>
-
-<tr>
-<td>3</td>
-<td>119.2</td>
-<td>491</td>
-<td>631</td>
-</tr>
-
-<tr>
-<td>4</td>
-<td>84.0</td>
-<td>705</td>
-<td>864</td>
-</tr>
+<td>4</td><td>84.0</td><td>705</td><td>864</td></tr>
 
 <tr>
 <td>5</td>
@@ -248,32 +206,21 @@ of the most distally placed locus on that chromosome.
 <td>734</td>
 </tr>
 
-<tr>
-<td>Y</td>
-<td>3.11</td>
-<td>68</td>
-<td>105</td>
-</tr>
+<tr><td>Y</td><td>3.11</td><td>68</td><td>105</td></tr>
 
-<tr>
-<td BGCOLOR="#EEEEEE">Total:</td>
-
+<tr><td BGCOLOR="#EEEEEE">Total:</td>
 <td BGCOLOR="#EEEEEE">1665</td>
-
 <td BGCOLOR="#EEEEEE">11163</td>
-
 <td BGCOLOR="#EEEEEE">13734</td>
 </tr>
 </table><BR><BR>
 <p>
 <hr WIDTH="100%">
-<br><b><font size=+1><A NAME="CodonUsage">Codon Usage </A></font></b><a href="http://www.kazusa.or.jp/codon/">CUTG:
+<h4><A NAME="CodonUsage">Codon Usage</A></h4><a href="http://www.kazusa.or.jp/codon/">CUTG:
 Codon Usage Tabulated from Genbank</a>
 <p>
 <hr>
-<A NAME="MolecRes"></A>
-<br><b><font size=+1>Molecular Resources</font></b>
-<BR>
+<h4><A NAME="MolecRes"></A>Molecular Resources</h4>
 <br><b>BACs</b>
 <ul>
  <a href="http://www.chori.org/bacpac/">CHORI (BACPAC RESOURCES)</a><br>
@@ -308,10 +255,9 @@ Codon Usage Tabulated from Genbank</a>
 <br><a href="http://www.nhgri.nih.gov:80/index.html">NHGRI: National Human Genome Research Institute</a> 
 <p>
 <hr WIDTH="100%">
-<br><a NAME="MousePhysiologyLink"></a><b><u><font color="#1822CD"><font size=+1><a href="mouse_facts3.shtml">Mouse
-Physiology</a></font></font></u></b>
-<p><a NAME="UsefulLinksLink"></a><b><u><font color="#1822CD"><font size=+1><a href="mouse_facts4.shtml">Useful
-Links</a></font></font></u></b>
+<h4><a NAME="MousePhysiologyLink"></a><b><u><font color="#1822CD"><a href="mouse_facts3.shtml">Mouse Physiology</a></u></font></h4>
+<h4><a NAME="UsefulLinksLink"></a><b><u><font color="#1822CD"><a href="mouse_facts4.shtml">Useful
+Links</a></font></u></b></h4>
 <BR><HR>
 
 <!--#include file="include/bodyStop.html"--></body>
