@@ -1,0 +1,72 @@
+<HTML>
+<HEAD>
+<TITLE>MGI Releases RIKEN Data</TITLE>
+</HEAD>
+
+<!--#include file="include/banner.html"-->
+
+<BODY BGCOLOR="#ffffff">
+<hr>
+<h2><a name="riken">MGI Release of RIKEN Data - February 15, 2001</h2>
+
+<p>In collaboration with the Genome Exploration Research Group of the RIKEN Institute of Physical and Chemical 
+Research in Japan, Mouse Genome Informatics is pleased to announce the release of
+information regarding 21,076 mouse cDNA clones. These clones were isolated and sequenced at the 
+RIKEN Institute as part of their Mouse Genome Encyclopedia, a genomics project centered on the 
+production of full-length mouse cDNAs. 
+
+<p>The RIKEN Institute hosted a meeting for first-pass functional annotation of these cDNAs 
+(Functional Annotation of Mouse, FANTOM), attended by an international assembly of mammalian
+biologists and bioinformaticians. An overview of these clone annotations appears in the 
+summary publication for this meeting. The reference is:
+<blockquote>
+  The RIKEN Genome Exploration Research Group Phase II Team and the FANTOM Consortium. 
+  Functional annotation of a full-length mouse cDNA collection.  Nature 409: 685-690.(8 February 2001)
+  (J:65060).
+</blockquote>
+
+<p>RIKEN clone annotations are fully integrated into MGI and are accessible through standard query 
+forms. Each clone from this data set is represented by a Molecular Probes and Segments record and 
+is associated with a gene in MGD. These cDNAs represent a total of 15,294 genes, 12,905 of which are 
+new genes to MGI. Incorporation of these clones has expanded the representation of 
+mouse genes in the MGI databases significantly. 
+
+<p>New mouse genes discovered in the RIKEN clone set are assigned official nomenclature in MGI 
+following a defined syntax. Gene Symbols are derived from RIKEN clone identifiers followed by 
+"Rik" (for example, 2610307C23Rik). Gene names are of the form "Riken cDNA" (Riken Clone Identifier)
+"gene" (for example, Riken cDNA 2610307C23 gene). For novel genes represented by multiple RIKEN clones that show sequence
+overlap (clusters), nomenclature comes from the clone identifier of the representative clone for each 
+cluster. As these new mouse genes become better characterized, revised nomenclature and other 
+biologicaldata will be incorporated regularly. 
+
+<p>The gene count for this clone set reflects the current state of annotation for these clones and is 
+an overestimate due to some unresolved redundancy. Sequence information for all but approximately 1900 
+of these clones has been released through the DNA DataBank of Japan (DDBJ).
+
+
+<!-- Standard footer and disclaimer -->
+<hr>
+<!--#include file="include/footer.html"-->
+</body></html>
+<!--
+Warranty Disclaimer and Copyright Notice
+
+ THE JACKSON LABORATORY MAKES NO REPRESENTATION ABOUT THE SUITABILITY OR 
+ ACCURACY OF THIS SOFTWARE OR DATA FOR ANY PURPOSE, AND MAKES NO WARRANTIES, 
+ EITHER EXPRESS OR IMPLIED, INCLUDING MERCHANTABILITY AND FITNESS FOR A 
+ PARTICULAR PURPOSE OR THAT THE USE OF THIS SOFTWARE OR DATA WILL NOT 
+ INFRINGE ANY THIRD PARTY PATENTS, COPYRIGHTS, TRADEMARKS, OR OTHER RIGHTS.  
+ THE SOFTWARE AND DATA ARE PROVIDED "AS IS".
+
+ This software and data are provided to enhance knowledge and encourage 
+ progress in the scientific community and are to be used only for research 
+ and educational purposes.  Any reproduction or use for commercial purpose 
+ is prohibited without the prior express written permission of the Jackson 
+ Laboratory.
+
+Copyright © 1996, 1999, 2000 by The Jackson Laboratory
+All Rights Reserved
+-->
+
+
+
