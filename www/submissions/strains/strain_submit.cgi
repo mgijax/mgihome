@@ -12,6 +12,7 @@ import string
 
 import config				# MGI-written Python libraries
 import homelib
+import header
 import formMailer
 
 ###--- Global Variables ---###
@@ -131,8 +132,8 @@ if dev_email is not None:
 
 myCGI = strainMailer ('Strain',
 	submit_addr,
-	homelib.banner(),
-	homelib.footer(),
+	header.bodyStart(),
+	header.bodyStop(),
 	labels,
 	required_fields,
 	sections

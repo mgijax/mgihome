@@ -19,6 +19,8 @@ import homelib
 import CGI
 import errorlib
 import mgi_utils
+import header
+import formMailer
 
 ###--- Aliases ---###
 
@@ -251,16 +253,14 @@ def printConfirmationPage (remedy_dict):
 		'<HTML>',
 		'<HEAD><TITLE>TJL HelpDesk User Registration</TITLE></HEAD>',
 		'<BODY bgcolor=ffffff>',
-		] + \
-		homelib.banner() + \
-		[
-		'<H1>TJL HelpDesk User Registration Report</H1>',
-		'<HR>',
+		header.bodyStart(),
+		header.headerBar('TJL HelpDesk User Registration Report'),
 		'<H1>Thank you.</H1>',
 		'''Your registration has been forwarded to the appropriate TJL
 			support staff.<P><HR>''',
-		] + \
-		homelib.footer() + [ '</BODY></HTML>' ]
+		header.bodyStop(),
+		'</BODY></HTML>'
+		]
 	print string.join (lines, '\n')
 	return
 
@@ -279,12 +279,13 @@ class RegistrationCGI (CGI.CGI):
 	def main (self):
 		remedy_dict, errors = parse_parameters (self.get_parms())
 		if errors:
-			errorlib.show_error (
+			formMailer.handleError (
 				'<UL><LI>%s</UL>' % \
 					string.join (errors, '\n<LI>'),
-				1, 'MGI User Registration Form',
-				string.join (homelib.banner(), '\n '),
-				string.join (homelib.footer(), '\n '))
+				'MGI User Registration Form',
+				header.bodyStart(),
+				header.bodyStop()
+				)
 			sys.exit (0)
 		else:
 			sendRemedyMail (remedy_dict)

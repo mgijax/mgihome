@@ -25,6 +25,8 @@ import os
 import string
 import mgi_utils
 import errorlib
+import header
+import formMailer
 
 NL = '\n'
 SP = ' '
@@ -50,15 +52,9 @@ def hd():
 	<TITLE>User Support Express Mail Results</TITLE></HEAD>
 	<BODY BGCOLOR=#FFFFFF>"""
 
-	for line in homelib.banner():
-		print line
-
-	print """
-	<H1>
-	<A HREF="support.shtml">User Support</A> <I>Express</I> Mail Results
-	</H1>
-	<HR>
-	"""
+	print header.bodyStart()
+	print header.headerBar ('User Support <I>Express</I> Mail Results')
+	return
 
 def main():
 	hd()
@@ -165,8 +161,7 @@ Your message has been received and is being forwarded to our
 		fd.close()
 		
 	print '<HR>'
-	for line in homelib.footer():
-		print line
+	print header.bodyStop()
 	return
 
 print 'Content-type: text/html'

@@ -20,6 +20,8 @@ import cgi
 import os
 import string
 import errorlib
+import header
+import formMailer
 
 NL = '\n'
 SP = ' '
@@ -45,15 +47,9 @@ def hd():
 	</HEAD>
 	<BODY BGCOLOR="#FFFFFF">"""
 
-	for line in homelib.banner():
-		print line
-
-	print """
-	<H2>
-	List Subscription Mail Results
-	</H2>
-	<HR>
-	"""
+	print header.bodyStart()
+	print header.headerBar ('List Subscription Mail Results')
+	return
 
 def main():
 	hd()
@@ -101,9 +97,9 @@ def main():
 		fd.close()
 		
 	print '<HR>'
-	for line in homelib.footer():
-		print line
+	print header.bodyStop()
 	print '</BODY></HTML>'
+	return
 
 print 'Content-type: text/html'
 print
