@@ -10,7 +10,7 @@
 </HEAD>
 <BODY BGCOLOR=#FFFFFF>
 <!--#include file="include/banner.html"-->
-<h1 align=center><font color="red"><a href="help"></a>GEN User Guide</font></h1>
+<h1 align=center><a href="help"></a>GEN User Guide</font></h1>
 <blockquote>
 <h3><a name="toc"></a>Table of Contents</h3>
 <ul>
@@ -198,7 +198,7 @@ you may leave blank.  A collection of fields is called a <i>record</i>.</td></tr
 
 <h3><a name="install"></a>Downloading and installing GEN</h3>
 <blockquote>
-<p>You can access GEN  from the <A HREF="GEN/">Gene Expression Notebook Resource Page</a>.  You can also access The Mouse Anatomical Dictionary here as well as access this Help document.  When you download GEN, you'll have to provide your name, 
+<p>You can access GEN  from the <A HREF="../GEN/">Gene Expression Notebook Resource Page</a>.  You can also access The Mouse Anatomical Dictionary here as well as access this Help document.  When you download GEN, you'll have to provide your name, 
 e-mail address, and computer system type. We use this information to keep track of users so we can let you know about new releases and features.  <p>To download GEN:
   <ol>
   <li>Click on the phrase <b>Gene Expression Notebook</b>, in the line reading <b>Registration and Download of the Gene Expression Notebook</b>.
@@ -540,7 +540,7 @@ click in the field. If a drop-down list arrow appears, click it to activate the 
 <tr><th align=left valign=top>Age Unit</th><td>Use the drop-down menu to specify the age unit.</td></tr>
 <tr><th align=left valign=top>Age Value</th><td>Type the number that specifies the age along with the Age Unit.  Leave this field blank if you specify either <i>postnatal</i> or <i>adult</i> above.</td></tr>
 <tr><th align=left valign=top>Tissue</th><td>Type the tissue or structure used for the sample. For mouse, use the
-<a href="GEN/AD/">Anatomical Dictionary</a> as a reference for appropriate structure names.</td></tr>
+<a href="../GEN/AD/">Anatomical Dictionary</a> as a reference for appropriate structure names.</td></tr>
 <tr><th align=left valign=top>Amount Value</th><td>Type the number that specifies the amount of the RNA used. </td></tr>
 <tr><th align=left valign=top>Amount Units</th><td>Use the drop-down menu to specify the unit used to measure the RNA amount. </td></tr>
 <tr><th align=left valign=top>Sample Type</th><td>Use the drop-down menu to specify the type of RNA used.</td></tr>
@@ -566,7 +566,7 @@ click in the field. If a drop-down list arrow appears, click it to activate the 
 <th align=left valign=top>Age Unit</th><td>Use the drop-down menu to specify the age unit.</td></tr>
 <tr><th align=left valign=top>Age Value</th><td>Type the number that specifies the age along with the Age Unit.  Leave this field blank if you specify either <i>postnatal</i> or <i>adult</i> above.</td></tr>
 <tr><th align=left valign=top>Tissue</th><td>Type the tissue or structure used for the sample. For mouse, use the
-<a href="GEN/AD/">Anatomical Dictionary</a> as a reference for appropriate structure names.</td></tr>
+<a href="../GEN/AD/">Anatomical Dictionary</a> as a reference for appropriate structure names.</td></tr>
 <tr><th align=left valign=top>Notes</th><td>Type any additional information you want stored with this record. </td></tr>
 </table>
 <p><b>Note:</b>&nbsp; If you are planning on submitting data to GXD, we require that you specify the sample age (using either Theiler stages or age units).
@@ -590,7 +590,7 @@ click in the field. If a drop-down list arrow appears, click it to activate the 
 <th align=left valign=top>Age Unit</th><td>Use the drop-down menu to specify the age unit.</td></tr>
 <tr><th align=left valign=top>Age Value</th><td>Type the number that specifies the age along with the Age Unit.  Leave this field blank if you specify either <i>postnatal</i> or <i>adult</i> above.</td></tr>
 <tr><th align=left valign=top>Tissue</th><td>Type the tissue or structure used for the sample. For mouse, use the
-<a href="GEN/AD/">Anatomical Dictionary</a> as a reference for appropriate structure names.</td></tr>
+<a href="../GEN/AD/">Anatomical Dictionary</a> as a reference for appropriate structure names.</td></tr>
 <tr><th align=left valign=top>Gene</th><td>Use the drop-down menu to specify the name of the gene amplified in the PCR reaction.</td></tr>
 <tr><th align=left valign=top>Primer Pair</th><td>Use the drop-down menu to specify the primers used in the PCR reaction.</td></tr>
 <tr><th align=left valign=top>cDNA Generation Meth</th><td>Use the drop-down menu to specify the method used to generate the cDNA used in the PCR reaction.</td></tr>
@@ -797,7 +797,7 @@ There is no difference in data entered using a <b>Manage</b> window and data ent
 <tr><th align=left valign=top>Results heading</th><th align=left>To use...</th><tr>
 <tr><th align=left valign=top>Specimen</th><td>Select the appropriate specimen from the drop-down menu. The drop-down menu includes only specimens added to the Specimens Used section of the assay sheet.</td><tr>
 <tr><th align=left valign=top>Structure</th><td>Type the anatomical structure analyzed.  For mouse, you can use the 
-<a href="GEN/AD/">Anatomical Dictionary</a> as a reference for appropriate structure names. It lists the tissues and structures for each developmental stage (Theiler stage) in a hierarchical fashion. You can cut and paste the complete name and the ID for the anatomical structure, e.g., "TS15;1st arch;mandibular component [1011]," into the Structure cell. This enables standardization of structure nomenclature between researchers and facilitates entry of results into GXD. If the dictionary does not fit your needs, you can use your own anatomical terms.</td></tr>
+<a href="../GEN/AD/">Anatomical Dictionary</a> as a reference for appropriate structure names. It lists the tissues and structures for each developmental stage (Theiler stage) in a hierarchical fashion. You can cut and paste the complete name and the ID for the anatomical structure, e.g., "TS15;1st arch;mandibular component [1011]," into the Structure cell. This enables standardization of structure nomenclature between researchers and facilitates entry of results into GXD. If the dictionary does not fit your needs, you can use your own anatomical terms.</td></tr>
 <tr><th align=left valign=top>Expression Level</th><td>Select the appropriate adjective from the drop-down menu to describe the level of expression in the structure analyzed.</td></tr>
 <tr><th align=left valign=top>Pattern	</th><td>Select the appropriate adjective from the drop-down menu to describe the pattern of staining in the structure analyzed. <b>Regionally restricted</b> is useful when staining is restricted to part of the structure analyzed, and <b>Not applicable</b> (or blank) is appropriate when the staining is Absent.</td></tr>
 <tr><th align=left valign=top>Image Label</th><td>Indicate which image pane illustrates the result, if applicable.</td></tr>
@@ -854,7 +854,7 @@ If you cannot find the gene, include in the Gene worksheet Notes field any infor
 <A HREF="<!--#include file='include/wi_url.html'-->searches/allele_form.shtml">Alleles and Phenotypes Query Form</a> at Mouse Genome Informatics. (For a quick guide to the nomenclature, see the 
 <A HREF="<!--#include file='include/mgihome_url.html'-->nomen/allmut_quickhelp.shtml">Allele and Mutant Quick Nomenclature Guide</a>.  If you cannot find the allele, include in the Specimen or Sample worksheet notes field any information that will be useful to help us identify the allele and assign a new name if necessary.  Types of useful information include:  references, type of mutation, lab generated in, and so on.  <b>Note:</b> At this time GXD does include information from knock-ins and knock-outs but not from other kinds of transgenic animals.
 
-<p>In GXD we use the <a href="GEN/AD/">Anatomical Dictionary</a> to describe the structures expression was analyzed in.  We encourage you to do the same.
+<p>In GXD we use the <a href="../GEN/AD/">Anatomical Dictionary</a> to describe the structures expression was analyzed in.  We encourage you to do the same.
 <p>Finally, to submit data to GXD, you must make entries in certain fields.  The validation function insures these fields are filled in.  See <a a href="#validate">Validation in the GEN</a> for further details.
 
 </blockquote>
@@ -1154,7 +1154,7 @@ This  documentation is available on the Web at http://www.informatics.jax.org/mg
    <li>At this point, you should probably close the RNA In Situ: Results list box.  You can reopen it at any time by clicking <b>Hide&#047;Show Results Menu</b>.
    <li>Use the drop-down menu to choose the first specimen whose staining pattern you want to describe.  For this example, choose <b>6&#047;25&#047;02 E10.5 WT &#035;1</b>.
    <li>In the structure box, type the name of a structure you analyzed.  For this example, use <b>limb</b>. You can use 
-<a href="GEN/AD/">The Mouse Anatomical Dictionary</a> as a reference for appropriate structure names. You can cut and paste the complete name and ID for the anatomical structure, e.g., <b>TS17;limb[2095]</b> or  <b>TS17;forelimb bud;ectoderm;apical ectodermal ridge [2098](AER)</b> or <b>TS17;hindlimb bud;ectoderm;apical ectodermal ridge [2102](AER)</b>.
+<a href="../GEN/AD/">The Mouse Anatomical Dictionary</a> as a reference for appropriate structure names. You can cut and paste the complete name and ID for the anatomical structure, e.g., <b>TS17;limb[2095]</b> or  <b>TS17;forelimb bud;ectoderm;apical ectodermal ridge [2098](AER)</b> or <b>TS17;hindlimb bud;ectoderm;apical ectodermal ridge [2102](AER)</b>.
    <li>To describe the intensity of the staining, use an adjective from the Expression Level drop-down menu.  For this specimen, use <b>strong</b>.
    <li>To describe the Pattern of the staining, use a descriptor from the Pattern drop-down menu.  Since in this specimen, only part of the limb was stained, choose <b>regionally restricted</b>.
    <li>If there is an image of this embryo on the assay sheet, type the label of that image in the next box. 
