@@ -8,102 +8,110 @@
 <Body Bgcolor="#ffffff">
 <Center>
 <H1><FONT COLOR="#FF0111">What's New?</FONT></H1>
-<H3>Last Updated August 21, 2000</H3>
+<H3>Last Updated October, 2000</H3>
 </Center>
 
-<DL>
-<H3><DT><A HREF="http://lists.informatics.jax.org/lyris-cgi/lyris.pl?enter=phenome-list&text_mode=0">Phenome-List</A></DT> <IMG SRC="../images/new.gif" ALT="New"></H3>
-<DD>Join phenome-list, a forum for strain characterization and phenotypic data
-	collection.</DD>
-
-<H3><DT><A HREF="2.4announce.shtml">MGI Release 2.4 Announcement</A></DT></H3>
-<!-- this is the link to the mgi release 2.4 page -->
-<DD>MGI Release 2.4 is now available. Information on other
-<a href="news.shtml">recent MGI releases</A> is also available.</DD>
+<dl>
+<H3><dt><A HREF="2.5announce.shtml">MGI Release 2.5 Announcement</A></DT></H3>
+<!-- this is the link to the mgi release 2.5 page -->
+<dd>MGI Release 2.5 is now available. Information on other
+<a href="news.shtml">recent MGI releases</A> is also available.</dd>
 <!--this is the link to the chronology of MGI releases.-->
 
-<h3><dt>You can <A HREF="<!--#include file='include/wi_url.html'-->/searches/allele_form.shtml">search for alleles</A></dt></h3>
-<!-- this is the link to the alleles query form -->
-<DD>The way MGI handles allele information is changing radically. In MGI 2.4, some of the groundwork has been done resulting in a new <a
-href="<!--#include file='include/wi_url.html'-->/searches/allele_form.shtml">Alleles query form</A> and changes in the way allele information is displayed. See, for example, the <A HREF="<!--#include file='include/wi_url.html'-->searches/allele.cgi?24">detailed
-record for a<SUP>twp</A></SUP>, an allele of a.</DD>
-<!----------------->
-
-<h3><dt>Combined Name/Symbol Search Field On MGI Query Forms</h3>
-<DD>The marker symbol and marker name fields on MGI query forms have been 
-combined in one field, <b>Symbol/Name</b>. When using this field, your 
-search (by default) spans current symbols or names, withdrawn symbols or
-names, and <A HREF="<!--#include file='include/wi_url.html'-->userdocs/glossary.shtml#synonym">synonyms</A>.
-You have the option to limit the search to current symbols only (no search of
-names), current symbols and names only, or to current and withdrawn symbols or
-names.  <p>
-You can enter one or more symbols or names in this field. The search will
-retrieve any records for markers having names or symbols that match the
-characters entered on the Symbol/Name field. <p>
-
-<DD>The combined Symbol/Name field appears in the following query forms:<p>
-<ul><A HREF="<!--#include file='include/wi_url.html'-->/searches/marker_form.shtml"> Genes, Markers and Phenotypes<br></A>
-<A HREF="<!--#include file='include/wi_url.html'-->searches/allele_form.shtml"> Alleles<br></A>
-<A HREF="<!--#include file='include/wi_url.html'-->searches/polymorphism_form.shtml"> Polymorphisms</A><br>
-<A HREF="<!--#include file='include/wi_url.html'-->searches/probe_form.shtml">Molecular Probes and Segments</A><br>
-<A HREF="<!--#include file='include/wi_url.html'-->searches/homology_form.shtml">Mammalian Homology</A><br>
-<A HREF="<!--#include file='include/wi_url.html'-->searches/mapdata_form.shtml">Mapping Data</A><br>
-<A HREF="<!--#include file='include/wi_url.html'-->searches/linkmap_form.shtml">Linkage Maps</A><br>
-<A HREF="<!--#include file='include/wi_url.html'-->searches/gxdindex_form.shtml">GXD Index</A><br>
-<A HREF="<!--#include file='include/wi_url.html'-->searches/expression_form.shtml">GXD Data</A><br>
-<A HREF="<!--#include file='include/wi_url.html'-->searches/estclone_form.shtml">cDNA Clone</A><br>
-</ul>
+<H3><dt>New MGI Vocabulary Browsers</h3></dt>
+<!---->
+<dd>You can now view and query the following structured vocabularies: 
+<ul>
+	<li><a href="<!--#include file="include/go_url.html"-->GO/go_url.html">Gene Ontology (GO) Browser</a><p>
+The GO Browser associates each ontology term with a precise definition 
+of that term, complete with citations and  synonyms. 
+Each ontology is organized as a Directed Acyclic Graph (DAG). 
+Terms in this hierarchy are organized from the general to the specific 
+and you can immediately visualize their relationship. Although the structure of the DAG 
+is "tree-like," a term may actually have more than one parent and appear several times
+in the browser. A given term may occur in any or all of the following categories:
 <p>
-</DD>
+		<ul>
+		<li><b><a href="<!--#include file="include/go_url.html"-->GO.cgi?id=GO:0003674">
+Molecular Function</a></b> - Tasks performed by individual gene products. <br>
+Examples: transcription factor; DNA helicase
+		<li><b><a href="<!--#include file="include/go_url.html"-->GO.cgi?id=GO:0008150">
+Biological Process</b></a> - Broad biological goals accomplished by ordered assemblies 
+of molecular functions. 
+<br>Examples: mitosis; purine metabolism
+		<li><b><a href="<!--#include file="include/go_url.html"-->GO.cgi?id=GO:0005575">
+Cellular Component</b></a> - Subcellular structures, locations, and macromolecular 
+complexes. 
+		<br>Examples: nucleus; telomere; origin recognition complex
+		</ul>
+		<!--As of September, there are approximately 4800 terms in the GO. In MGD, 
+	approximately 5300 mouse genes are associated with at least one GO term.-->
+		<p>
+<li><a href=anatDictionary/indes.shtml>Mouse Anatomical Dictionary</a><br>
+<p>The Anatomical Dictionary is a vocabulary comprised of 28 Theiler stages. 
+Each Theiler stage is a tree which is a subvocabulary of the Dictionary. 
+There are brief stage descriptions next to each stage name.
+You can select one or more of 
+the Theiler stages to focus a search on a particular stage of embryonic development
+</ul>
+</dd>
+<h3><dt>Homology Maps</a></dt></h3>
+<dd>This release includes a new way of viewing and accessing homology data. 
+Two new maps are available showing global views of human and rat orthology data 
+plotted against the mouse genome. Beside each chromosome is a set of histograms, 
+ each corresponding to a human or rat chromosome. The histogram effectively shows 
+ the density of known orthologies in a particular mouse chromosomal region. As always, the 
+maps are active. <ul><li>You can click on a mouse chromosome to retrieve a detailed linkage map 
+showing all orthologs.
+<li>You can click on a histogram to retrieve a compact tablular listing of orthologs for 
+that part of a chromosome.
+</ul>
+<p>The following whole genome homology maps are available:
+<ul>
+<li><a href="<!--#include file="include/wi_url.html"-->reports/homologymap/mouse_human.shtml"> 
+human on mouse background</a>
+ <li><a href="<!--#include file="include/wi_url.html"-->reports/homologymap/mouse_rat.shtml">
+rat on mouse background</a>
+</ul>
+</dd>
+
+ 
+<h3><dt>New Allele and Mutant Data Submission Form</dt></h3>
+<dd>
+You can now send MGD mutant allele and mutant data to MGD online. 
+Each electronic submission receives a permanent database accession ID.
+MGD reference pages provide a link to the associated data sets.
+<ul>
+<li>You can access the submission form from the 
+<a href="../submissions/submissions_menu.shtml">
+Data and Nomenclature Submissions</a> menu.
+<li>You can find general rules for naming alleles at 
+<a href="../submissions/submit.shtml">Submitting New Mutant and Allele Data</a>
+</ul>
+</dd>
+<h3><dt><a href="<!--#include file="include/wi_url.html"-->userdocs/glossary.shtml">Expanded MGI Glossary</a></dt></h3>
+<dd><p>We have expanded the MGI Glossary. The Glossary contains terms useful in understanding mouse genetics.
+You can find terms defined in a general sense as they apply to eukaryotic genetics, 
+particularly mouse genetics. You will also find some terms defined as they apply to MGI
+(for example, <b>gene</b>).  Genetic terms in the
+<A HREF="<!--#include file="include/wi_url.html"-->
+userdocs/helpdocs_menu.shtml">help documents</A> are linked to their 
+definitions in the glossary. The list of terms included in the Glossary will 
+grow with each new release.</dd>
 <!----------------->
 
-
-<h3><dt><A HREF="../GO/ontology.shtml">Gene Ontology Project</A></dt></h3>
-<!-- this is the link to the gene ontology project -->
-<DD>The goal of the <A HREF="../GO/ontology.shtml">Gene Ontology (GO)
-Project</A> is to produce controlled vocabularies that can be applied to all
-eukaryotes as knowledge of gene and protein roles in cells is accumulating and
-changing.  MGI is committed to annotating gene records using GO vocabularies.
-To date, close to 5000 genes in MGI have been annotated. GO classification
-fields have been added to the following MGI query forms: 
-
-
-<A HREF="<!--#include file='include/wi_url.html'-->searches/marker_form.shtml">Genes, Markers and Phenotypes</A>,
-<A HREF="<!--#include file='include/wi_url.html'-->searches/expression_form.shtml">Gene Expression Data</A>,
-<A HREF="<!--#include file='include/wi_url.html'-->searches/estclone_form.shtml">cDNA Clone</A> and 
-<A HREF="<!--#include file='include/wi_url.html'-->searches/linkmap_form.shtml">Linkage Maps</A>.<P>
-Visit the Home Page of the <A HREF="http://www.geneontology.org/">Gene Ontology
-	Consortium</A> for more information.</DD>
-<!----------------->
-
-<h3><dt>Search <A HREF="<!--#include file='include/wi_url.html'-->searches/probe_form.shtml">Molecular Probes and Segments</A>
-by Chromosome Region</dt></h3>
-<DD>You can now limit your search for molecular
-probes and segments to a specified chromosomal region. 
-You also have the option to return results from this form as
-<b>tab-delimited text</b>.</DD>
-<!----------------->
-
-<h3><dt><A HREF="<!--#include file="include/wi_url.html"-->userdocs/glossary.shtml">MGI Glossary</a></dt></h3>
-<DD>A
-<A HREF="<!--#include file="include/wi_url.html"-->userdocs/glossary.shtml">glossary</a> of genetic terms has been added. Genetic terms in the
-<A HREF="<!--#include file="include/wi_url.html"-->userdocs/helpdocs_menu.shtml">help documents</A> are linked to their definitions in the glossary.</DD>
-
-<!----------------->
-
-<h3><dt>Primary Reference For Sequence IDs</dt></h3>
-<DD>An MGI marker record may include a list of related Sequence IDs. Most often, this association is made via molecular segments whose sequence is known and which have been mapped to the given mouse marker.  This association of marker and sequence is reported in the literature. Now, the reference supporting this association is displayed next to the Sequence ID in the marker detail record.</DD>
-<!----------------->
-
-<h3> <dt><A HREF="../lists/lists.shtml">MGI E-Mail List Service</A></dt></h3>
+<h3><dt><A HREF="../lists/lists.shtml">MGI E-Mail List Service</A></dt></h3>
 <!-- this is the link to the lyris MGI-list page. -->
-<DD>Use the new web interface to MGI-LIST, RAT-LIST, and PHENOME-LIST to read or send messages, subscribe or unsubscribe from a list, or modify your subscriber options.</DD>
+<dd>Use the new web interface to MGI-LIST, RAT-LIST, and PHENOME-LIST 
+to read or send messages, subscribe or unsubscribe from a list, 
+or modify your subscriber options.</dd>
 <!----------------->
 
 <h3><dt><A HREF="../other/mgi_jobs.shtml">Professional
 Opportunities</A></dt></h3>
 <!-- this is the link to the job openings. -->
-<DD>Join us!  Live on the coast of Maine and <B><FONT COLOR="#DC143C">walk on the wild side</B></FONT>.</DD>
+<dd>Join us!  Live on the coast of Maine and <B>
+<FONT COLOR="#DC143C">walk on the wild side</B></FONT></dd>.
 <!----------------->
 </dl>
 

@@ -1,111 +1,96 @@
-
-
-<HTML><HEAD>
-<TITLE>MGI Release 2.5 Announcement</TITLE></HEAD>
+<HTML>
+<HEAD>
+<TITLE>MGI Release 2.5 Announcement</TITLE>
+</HEAD>
 <!--#include file="include/banner.html"-->
-
 <BODY BGCOLOR="#ffffff">
 <h2>
-MGI Release 2.5 Announcement</h2>
-<hr>
-<H3>New MGI Vocabulary Browsers</h3>
-<!--<p>Vocabulary browsers allow you view and navigate large collections of terms, 
-as well as search them for detailed information.-->
-<p>From the MGI Home Page, you can now view and query the following structured vocabularies: 
-<ul>
-<li><a href="<!--#include file="include/go_url.html"-->GO/go_url.html">Gene Ontology (GO) Browser</a><p>
-The GO Browser associates each ontology term with a precise definition 
-of that term, complete with citations and  synonyms. 
-Each ontology is organized as a Directed Acyclic Graph (DAG). 
-Terms in this hierarchy are organized from the general to the specific 
-and you can immediately visualize their relationship. However, even though the structure of the DAG 
-is "tree-like," a term may actually have more than one parent and appear several times
-in the browser. A given term may occur in any or all of the following categories:
+MGI Release 2.5 Announcement
+</h2>
+<!doctype html public "-//w3c//dtd html 3.2 final//en">
 <p>
-<ul>
-<li><b><a href="<!--#include file="include/go_url.html"-->GO.cgi?id=GO:0003674">
-Molecular Function</a></b> - Tasks performed by individual gene products. <br>
-Examples: transcription factor; DNA helicase
-<li><b><a href="<!--#include file="include/go_url.html"-->GO.cgi?id=GO:0008150">
-Biological Process</b></a> - Broad biological goals accomplished by ordered assemblies 
-of molecular functions. 
-<br>Examples: mitosis; purine metabolism
-<li><b><a href="<!--#include file="include/go_url.html"-->GO.cgi?id=GO:0005575">
-Cellular Component</b></a> - Subcellular structures, locations, and macromolecular 
-complexes. 
-<br>Examples: nucleus; telomere; origin recognition complex
-</ul>
-<p>As of September, there are approximately 4800 terms in the GO. In MGD, 
-approximately 5300 mouse genes are associated with at least one GO term.
-You can use the GO Browser to query for MGI genes, gene expression data, or cDNA clones, 
-and focus your searches on genes annotated using these terms. 
-<p>
-<li><a href=anatDictionary/indes.shtml>Mouse Anatomical Dictionary</a><br>
-<p>The Anatomical Dictionary is a vocabulary comprised of 28 Theiler stages. 
-Each Theiler stage is a tree which is a subvocabulary of the Dictionary. 
-There are brief stage descriptions next to each stage name.<p>
-<ul><li>You can select one or more of 
-the Theiler stages to focus a search on a particular stage of embryonic development
-<li>You can use terms from the Dictionary to describe source data for clones, 
-probes and cDNA and genomic libraries, as well as morphological variation caused 
-by mutant alleles.</ul></ul>
-<br>
-<h3><a href="#homology_maps/shtml">Homology Maps</a></h3>
 
-<p>The homology maps are overviews of selected species orthology data plotted against the MGD 
-consensus genetic map for the mouse. The following maps are available:
+<H3>New MGI Vocabulary Browsers</h3>
+
+<p>This release introduces a browser for viewing and querying structured vocabularies: 
+<ul>
+<li><a href="<!--#include file="include/go_url.html"-->">Gene Ontology (GO) Browser</a><p>
+<li><a href=anatDictionary/index.shtml>Mouse Anatomical Dictionary</a><br>
+</ul>
+<p>The browser links to detail pages for each entry in the vocabulary. 
+The GO terms are grouped into three 
+categories that can be searched singly or in combination: molecular Function, biological process and cellular component.
+The Anatomy Dictionary links to each of the 28 Theiler stages.
+The query field accepts any text string and searches for all terms and synonyms.
+An entry such as "muscle," for example, returns "muscle development," 
+"non-muscle myosin," and "structural protein of muscle."
+<h3>Homology Maps</h3>
+<p>Two new maps are available for viewing viewing and accessing homology data. The 
+maps display global views of human and rat orthology data 
+plotted against the mouse genome. Beside each chromosome is a set of histograms, 
+ each corresponding to a human or rat chromosome. The histogram shows 
+ the density of known orthologies in a particular mouse chromosomal region. 
+ You can get detailed linkage maps showing all orthologs and you can 
+ retrieve a compact tablular listing of orthologs for 
+that part of a chromosome. The whole genome homology maps are:
 <ul>
 <li><a href="<!--#include file="include/wi_url.html"-->reports/homologymap/mouse_human.shtml"> 
-Whole Genome Homology Map: human on mouse background</a>
+human on mouse background</a>
  <li><a href="<!--#include file="include/wi_url.html"-->reports/homologymap/mouse_rat.shtml">
-Whole Genome Homology Map: rat on mouse background</a>
+rat on mouse background</a>
 </ul>
-<p>Beside each
-mouse chromosome is a set of histograms, each corresponding to the human or rat chromosome.
-<p>For each species, you can view a detailed homology map of each chromosome and you can  
-retrieve a compact tabular listing of all the 
-orthologies for that pair of chromosomes.
-<!--The chromosome number is displayed immediately above
-the histogram. Each bar in a histogram is positioned at the location of a nonrecombinant bin in the mouse map. The length of the bar indicates
-the number of human/mouse orthologies found in that bin.
-<p>The mouse chromosomes are scaled proportionally, based on 
-the total cM length. Conserved regions are determined by ordering the orthologs according 
-to the corresponding mouse ortholog's MGD cM position. Each unbroken run of orthologs 
- from the same chromosome is one region.
-<p>Mouse chromosomes appear as vertical lines with the 
-chromosome number at the top. Homologies appear as vertical 
-colored bars.-->
-<br>Each colored bar is a conserved region between a mouse and the selected species. 
-The chromosome number for that species appears beside each bar. 
-<ul>
-<li>You can click on marker symbols to retrieve a detailed marker record from MGD.
-<li>You can click on a contig to retrieve a detailed contig record from MGD.
-<li>You can click on the chromosome numbers or the colored bars to see 
-more detailed linkage maps.
-</ul>
- 
- 
-<h3><a href=#"">Mutant Allele Data</a></h3>
+
+<h3>Allele and Mutant Data Submission Form<a href="../submissions/submissions_menu.shtml">
+</a></h3>
 <p>
-The MGD now accepts electronic submissions of mutant allele from the scientific community. 
-Each electronic submission  will receive a permanent database accession ID.
-MGD reference pages provide a link to the addociated data sets.
-<ul>
-<li>You can access the submission form from the
- <a href="#submissions/submissions_menu.shtml">
-Data and Nomenclature Submissions</a> menu.
-<li>You can find general rules for naming alleles at 
-<a href="#submissions/submit.shtml">Submitting New Mutant and Allele Data</a>
-</ul>
-<h3><a href="#userdocs/glossary.shtml">Expanded Glossary</a></h3>
-<p>We have expanded the MGI Glossary. The Glossary contains definitions for terms found
-in the help documentation as well as other terms useful in understanding mouse genetics.
-You will find terms defined in a general sense as they apply to eukaryotic genetics, 
-particularly  mouse genetics. You will also find some terms defined as they apply to MGI
-(for example, <b>gene</b>). The list of terms included in the Glossary will 
-grow with each new release.
-<h3>Miscellaneous</h3>
-<p>
+Forms are available for electronic submission of new allele and mutant data to MGD. 
+Each submission receives a permanent database accession ID.
+MGD reference pages provide a link to the associated data sets. 
+P>All data sets are associated with
+either an electronic submission reference or a published paper. MGD reference
+pages provide links to associated data sets. <I>Mammalian Genome</I> will
+publish a list enumerating the data electronically submitted to MGD, including
+accession ID, chromosome, and locus symbols as a cross-referencing service
+for readers.</FONT>
+Rules and guidelines for submissions are at
+<a href="../submissions/submit.shtml">Submitting New Mutant and Allele Data</a>.
+
+
+<h3><a href="<!--#include file="include/wi_url.html"-->userdocs/glossary.shtml">Expanded MGI Glossary</a></dt></h3>
+<dd><p>The MGI Glossary is expanding. Genetic terms in the
+<A HREF="<!--#include file="include/wi_url.html"-->
+userdocs/helpdocs_menu.shtml">help documents</A> are linked to their 
+definitions in the glossary. 
+
+<!-- standard footer and disclaimer -->
+<hr>
+<!--#include file="include/footer.html"-->
+</body></html>
+
+<!--
+warranty disclaimer and copyright notice
+
+ the jackson laboratory makes no representation about the suitability or
+ accuracy of this software or data for any purpose, and makes no warranties,
+ either express or implied, including merchantability and fitness for a
+ particular purpose or that the use of this software or data will not
+ infringe any third party patents, copyrights, trademarks, or other rights.
+ the software and data are provided "as is".
+
+ this software and data are provided to enhance knowledge and encourage
+ progress in the scientific community and are to be used only for research
+ and educational purposes.  any reproduction or use for commercial purpose
+ is prohibited without the prior express written permission of the jackson
+ laboratory.
+
+copyright © 1996, 1999, 2000 by the jackson laboratory
+all rights reserved
+-->
+
+</body>
+</html>
+
+
 
 <!-- Standard footer and disclaimer -->
 <hr>
