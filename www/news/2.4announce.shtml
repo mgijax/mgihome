@@ -1,0 +1,61 @@
+
+
+<HTML><HEAD>
+<TITLE><!--#include file="include/title.html"--> - MGI Release 2.4 Announcement</TITLE></HEAD>
+<!--#include file="include/banner.html"-->
+
+<BODY BGCOLOR="#ffffff">
+<h2>
+MGI Release 2.4 Announcement
+<BR>
+
+</h2>
+
+<H3><A HREF="http://genome-www.stanford.edu/GO/">Gene Ontology (GO) Project</A> Vocabularies</H3>
+The GO project is a collaborative effort to develop controlled vocabularies
+to exhaustively describe biological features of the genome of various species. MGI has taken a first step in using these vocabularies to annotate gene records in the MGI database. In MGI 2.4, you can search for genes, gene expression data, or cDNA clones, and focus these searches on genes annotated using these terms. At present, over ## mouse genes are annotated using GO terms.
+<p>
+<H4><A HREF="<!--#include file="include/wi_url.html"-->searches/alleles_form.shtml">Alleles Query Form</H4>
+MGI is changing the way alleles are handled in the database. These changes are part of an overhaul in the way MGI manages phenotypic information. In MGI 2.4, some of the groundwork has been done resulting in a new Alleles query form and a new display of detailed information on alleles. See, for example, the <A HREF="http://<!--#include file='include/wi_url.html'-->/searches/allele.cgi?95"> detail record for Lepr<SUP>dp- ad</A></SUP>, an allele of Lepr..
+
+<H3>Symbol/Name Combined Field</H3>
+In response to user requests, we have replaced the two fields, marker <B>Name</B> and <B>Symbol</B>, with a single marker <B>Symbol/Name</B> field on most MGI query forms. On any MGI form with this new field, you can enter one or more symbols or names (each separated by a comma) and the search will find records for any markers with symbols or names matching the text entered in the field. Field operators (BEGINS, CONTAINS, ENDS, "=") determine how the comparison is made in a search. See, for example, the Genes, <A HREF="<!--#include file="include/wi_url.html"-->searches/marker_form.shtml">Markers and Phenotypes</A> query form.
+<P>
+<H3>Search for Molecular Segments Mapped to a Chromosomal Region</H3>
+In response to user requesta, the option to search for molecular segments mapped to a region of a chromosome has been added to the <A HREF="<!--#include file="include/wi_url.html"-->searches/probe.shtml">Molecular Probes and Segments</A> and cDNA Clones query forms. 
+<P>
+<H3>Additional Enhancements</H3>
+<UL>
+<LI><B>Map positions for QTL markers</B><BR>
+The linkage positions for QTLs are typically vague. QTLs in MGI no longer include an assigned cM value. Instead, "QTL" appears in the cM position column for QTLS included in a list of mouse markers.
+<P>
+<LI><B>Revised semantics for withdrawn symbols, aliases, alleles, synonyms</B><BR>
+The term "alias" used to apply to segments that were known to overlap other mouse markers. When an MGI search yielded a list of markers, if there were any aliases, these would also be included, even if you had restricted your search to genes only.  This has been changed so that "STP" replaces "alias" and STPs are treated as separate markers. <P>
+"Synonym" replaces the nomenclature category "Other name". A synonym is any symbol or name for a mouse marker that has appeared in the scientific literature but has never been an approved symbol or name for the marker. <P>
+<LI><B>References for Sequence IDs</B><BR>
+A MGI marker detail record may include a list of Sequence IDs. These IDs are usually associated with marker records via molecular segments which have been mapped to the the marker. If sequence information for the segment is available in GenBank, MGI provides the Sequence ID. Now, we also provide an MGI reference ID in parentheses right next to the Sequence ID. This is a link to the supporting reference for the association of marker and segment.
+</UL>
+
+<!-- Standard footer and disclaimer -->
+<hr>
+<!--#include file="include/footer.html"-->
+</body></html>
+<!--
+Warranty Disclaimer and Copyright Notice
+
+ THE JACKSON LABORATORY MAKES NO REPRESENTATION ABOUT THE SUITABILITY OR 
+ ACCURACY OF THIS SOFTWARE OR DATA FOR ANY PURPOSE, AND MAKES NO WARRANTIES, 
+ EITHER EXPRESS OR IMPLIED, INCLUDING MERCHANTABILITY AND FITNESS FOR A 
+ PARTICULAR PURPOSE OR THAT THE USE OF THIS SOFTWARE OR DATA WILL NOT 
+ INFRINGE ANY THIRD PARTY PATENTS, COPYRIGHTS, TRADEMARKS, OR OTHER RIGHTS.  
+ THE SOFTWARE AND DATA ARE PROVIDED "AS IS".
+
+ This software and data are provided to enhance knowledge and encourage 
+ progress in the scientific community and are to be used only for research 
+ and educational purposes.  Any reproduction or use for commercial purpose 
+ is prohibited without the prior express written permission of the Jackson 
+ Laboratory.
+
+Copyright © 1996, 1999, 2000 by The Jackson Laboratory
+All Rights Reserved
+-->

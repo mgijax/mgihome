@@ -1,78 +1,122 @@
+<!doctype html public "-//w3c//dtd html 3.2 final//en">
 <HTML>
 <HEAD>
-<TITLE>What's New?</TITLE>
-</HEAD>
-<BODY BGCOLOR="#ffffff">
+<title><!--#include file="include/title.html"-->what's new?</title>
+	<meta name="generator" content="bbedit 5.1.1"></head>
+<!--#include file="include/banner.html"-->
 
-<CENTER>
-<!--#include file='include/banner.html'-->
+<Body Bgcolor="#ffffff">
+<Center>
 <H2>What's New?</H2>
-<h3>Last Updated April 05, 2000</h3>
-</CENTER>
-<HR>
-<H4><A HREF="2.3.2.announcement.shtml">MGI Release 2.3.2</A> is now available.
-</H4>
-<H4>MGI has a new <A HREF="<!--#include file='include/mgihome_url.html'-->">MGI Home site</A>.</H4>
-We have reorganized our web site a bit so that many files that used to reside 
-on all MGI mirror sites now reside only at the home site. Having the home site also allows us to make available new resources between MGI releases. 
-<P>
-As a result of reorganizing the MGI home site, MGI presents a new main menu accessed through URL: <BR>
-http:www.informatics.jax.org. A similar page will be presented at all up-to-date mirror sites.
-<P>
-<H4>"What's New?" Page</H4>
-The "What's New?" page gives us the option 
-to inform people about new MGI resources and changes that are  
-offered in new releases as well as those that 
-become available at other times. This page will change
-from time to time, so be sure to check it now and then. 
+<H3>Last Updated May 26, 2000</H3>
+</Center>
 
-<H4><A HREF="<!--#include file='include/mgihome_url.html'-->/genealogy/">Genealogy Chart</A> of Inbred Strains</H4>
-The laboratory mouse is the primary model organism for the study of human biology and disease. Inbred strains of mice represent unique fixed genotypes that can be repeatedly accessed as homogeneous experimental individuals, with predictable phenotypes and defined allelic composition. Hundreds of inbred strains of mice have been described and new strains continue to be developed. The Genealogy Chart of Inbred Strains graphically depicts the origins and relationships of inbred mouse strains. The Genealogy Chart is available as a <A HREF="<!--#include file="include/ftp_url.html"-->pub/informatics/datasets/misc/genealogy/genealogy.pdf">downloadable PDF file</A>. (file size: 4398 Kbytes) 
+<DL>
+<H3><DT><A HREF="2.4announce.shtml">MGI Release 2.4 Announcement</A></DT></H3>
+<!-- this is the link to the mgi release 2.4 page -->
+<DD>MGI Release 2.4 is now available. Information on other
+<a href="news.shtml">recent MGI releases</A> is also available.</DD>
+<!--this is the link to the chronology of MGI releases.-->
 
-<H4>The MGI List Service is Now on the Web</H4>
-Now, you can access <A HREF="http://lists.informatics.jax.org/lists">
-mgi-list or rat-list on the Web</A>.
-Several months ago, the MGI list service was switched to a new 
-listserver application, Lyris. Now, you can read list mail, send 
-a message to a list, subscribe or unsubscribe from a list, or 
-modify your subscriber options through this interface. 
+<h3><dt>You can <A HREF="<!--#include file='include/wi_url.html'-->/searches/allele_form.shtml">search for alleles</A></dt></h3>
+<!-- this is the link to the alleles query form -->
+<DD>The way MGI handles allele information is changing radically. In MGI 2.4, some of the groundwork has been done resulting in a new <a
+href="<!--#include file='include/wi_url.html'-->/searches/allele_form.shtml">Alleles query form</A> and changes in the way allele information is displayed. See, for example, a <A HREF="http://<!--#include file='include/wi_url.html'-->/searches/allele.cgi?95">detailed
+record for Lepr<SUP>dp- ad</A></SUP>, an allele of Lepr.</DD>
+<!----------------->
 
-<H4>Access RH Mapping Data</H4>
-You can access several sources for Radiation Hybrid mapping data from the MGI <A HREF="<!--#include file='include/wi_url.html'-->menus/map_menu.shtml">Maps 
-and Mapping Data</A> menu.
+<h3><dt>Combined Name/Symbol Search Field On MGI Query Forms</h3>
+<DD>The marker symbol and marker name fields on MGI query forms have been 
+combined in one field, <b>Symbol/Name</b>. When using this field, your 
+search (by default) spans current nomenclature, withdrawn symbols, and 
+synonyms. You have the option to limit the search to current nomenclature only, or to current and withdrawn.  <p>
+you can enter one or more symbols or names in this field. The search will
+retrieve any records for markers having names or symbols that match the characters entered on the Symbol/Name field. <p>
 
-
-<H4><A HREF="../other/mgi_jobs.shtml">Professional Opportunities</A> in MGI</H4>
-Find out about some exciting opportunities for living on the coast of Maine and working on great bioinformatics projects in MGI. 
-<H4>Not So New...</H4>
-Find out about other <A HREF="news.shtml">recent releases of MGI</A>.
-<P>
-The MGI query interface comes with <A HREF="<!--#include file='include/wi_url.html'-->/userdocs/helpdocs_menu.shtml">instructions</A> and, if you have questions, you
-can always contact <A HREF="/mgihome/support/tjl_inbox.shtml">User Support</A>.
+<DD>The combined Symbol/Name field appears in the following query forms:<p>
+<ul><A HREF="<!--#include file='include/wi_url.html'-->/searches/marker_form.shtml"> Genes, Markers And Phenotypes<br></A>
+<A HREF="<!--#include file='include/wi_url.html'-->/searches/allele_form.shtml"> Alleles<br></A>
+<A HREF="<!--#include file='include/wi_url.html'-->/searches/polymorphism_form.shtml"> Polymorphisms</A><br>
+<A HREF="<!--#include file='include/wi_url.html'-->/searches/probe_form.shtml">Molecular Probes And Segments</A><br>
+<A HREF="<!--#include file='include/wi_url.html'-->/searches/homology_form.shtml">Mammalian Homology</A><br>
+<A HREF="<!--#include file='include/wi_url.html'-->/searches/mapdata_form.shtml">Mapping Data</A><br>
+<A HREF="<!--#include file='include/wi_url.html'-->searches/gxdindex_form.shtml">GXD Index</A><br>
+<A HREF="<!--#include file='include/wi_url.html'-->searches/expression_form.shtml">GXD Data</A><br>
+<A HREF="<!--#include file='include/wi_url.html'-->searches/estclone_form.shtml">cDNA Clone</A><br>
+</ul>
+<p>
 
 
-<P>
-<HR>
+</DD>
+<!----------------->
+
+
+<h3><dt><A HREF="../GO/ontology.shtml">Gene Ontology Project</A></dt></h3>
+<!-- this is the link to the gene ontology project -->
+<DD>The goal of the <A HREF="../GO/ontology.shtml">Gene Ontology (GO) Project</A> is to produce controlled vocabularies that can be applied to all eukaryotes as knowledge of gene and protein roles in cells is accumulating and changing.  MGI is committed to annotating gene records using GO vocabularies. To date, close to 5000 genes in MGI have been so annotated. 
+<p>
+The former phenotypic classifications have been removed from MGI query forms. 
+GO classification fields have been added to several MGI query forms: 
+
+
+<A HREF="<!--#include file='include/wi_url.html'-->/searches/marker_form.shtml">Genes, Markers And Phenotypes</A>,
+<A HREF="<!--#include file='include/wi_url.html'-->/expression_form.shtml">Gene Expression Data</A>, and
+<A HREF="<!--#include file='include/wi_url.html'-->/searches/estclone_form.shtml">cDNA Clone</A>.<br>
+Visit the <A HREF="http://www.geneontology.org/">Gene Ontology Home
+Page</A> for more information.</DD>
+<!----------------->
+
+<h3><dt>Search <A HREF="<!--#include file='include/wi_url.html'-->/searches/probe_form.shtml">Molecular Probes And Segments</A>
+by Chromosome Region</dt></h3>
+<DD>You can now limit your search for <A HREF="<!--#include file='include/wi_url.html'-->/searches/probe_form.shtml">molecular
+probes and segments</A> to a specific chromosomal region.
+You also have the option to return results from this form as
+<b>tab-delimited text</b>.</DD>
+<!----------------->
+
+<h3><dt>Primary Reference For Sequence IDs</dt></h3>
+<DD>MGI marker records include a list of related Sequence IDs. Most often, this association is made via molecular segments whose sequence is known and which have been mapped to mouse markers.  This association of marker and sequence is reported in the literature. Now, the reference supporting this association is displayed next to the Sequence ID in the marker detail record.</DD>
+<!----------------->
+
+<h3> <dt><A HREF="http://lists.informatics.jax.org/lists">MGI E-Mail List
+Service</A></dt></h3>
+<!-- this is the link to the lyris MGI-list page. -->
+<DD>Use the new web interface to MGI-LIST and RAT-LIST to read or send messages, subscribe or unsubscribe from a list, or modify your subscriber options.</DD>
+<!----------------->
+
+<h3><dt><A HREF="../other/MGI_jobs.shtml">Professional
+Opportunities</A></dt></h3>
+<!-- this is the link to the job openings. -->
+<DD>Join us!  Live on the coast of Maine and <B>walk on the wild side</B>.</DD>
+<!----------------->
+</dl>
+
+<!-- standard footer and disclaimer -->
+<hr>
 <!--#include file="include/footer.html"-->
-</BODY>
-</HTML>
+</body></html>
 
 <!--
-Warranty Disclaimer and Copyright Notice
+warranty disclaimer and copyright notice
 
- THE JACKSON LABORATORY MAKES NO REPRESENTATION ABOUT THE SUITABILITY OR 
- ACCURACY OF THIS SOFTWARE OR DATA FOR ANY PURPOSE, AND MAKES NO WARRANTIES, 
- EITHER EXPRESS OR IMPLIED, INCLUDING MERCHANTABILITY AND FITNESS FOR A 
- PARTICULAR PURPOSE OR THAT THE USE OF THIS SOFTWARE OR DATA WILL NOT 
- INFRINGE ANY THIRD PARTY PATENTS, COPYRIGHTS, TRADEMARKS, OR OTHER RIGHTS.  
- THE SOFTWARE AND DATA ARE PROVIDED "AS IS".
+ the jackson laboratory makes no representation about the suitability or
+ accuracy of this software or data for any purpose, and makes no warranties,
+ either express or implied, including merchantability and fitness for a
+ particular purpose or that the use of this software or data will not
+ infringe any third party patents, copyrights, trademarks, or other rights.
+ the software and data are provided "as is".
 
- This software and data are provided to enhance knowledge and encourage 
- progress in the scientific community and are to be used only for research 
- and educational purposes.  Any reproduction or use for commercial purpose 
- is prohibited without the prior express written permission of the Jackson 
- Laboratory.
+ this software and data are provided to enhance knowledge and encourage
+ progress in the scientific community and are to be used only for research
+ and educational purposes.  any reproduction or use for commercial purpose
+ is prohibited without the prior express written permission of the jackson
+ laboratory.
 
-Copyright © 1996, 1999, 2000 by The Jackson Laboratory
-All Rights Reserved
+copyright © 1996, 1999, 2000 by the jackson laboratory
+all rights reserved
 -->
+
+</body>
+</html>
+
+
