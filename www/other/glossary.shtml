@@ -1615,36 +1615,54 @@ inbred strain of mouse. <BR>See also the
 
 
 
-<P><DT><B><A NAME="marker">Marker</A></B></dt><DD><ol><li> Any biological feature that can be positioned with respect to other features on a chromosome, by genetic, physical or other mapping methods. For example, a gene, anonymous DNA segment, mutation, or phenotype.<li>A feature that distinguishes a particular biological state. For example, an expression profile of natural or engineered genes, or a characteristic morphology.<li>In MGI, a Marker is an object for which unique official nomenclature must be assigned. Markers in MGI can be of type: 
+<P><DT><B><A NAME="marker">Marker</A></B></dt><DD>
+<ol>
+<li> Any biological feature that can be positioned with respect to other features on a chromosome, by genetic, physical or other mapping methods. For example, a gene, anonymous DNA segment, mutation, or phenotype.
+<li>A feature that distinguishes a particular biological state. For example, an expression profile of natural or engineered genes, or a characteristic morphology.
+<li>In MGI, a Marker is an object for which unique official nomenclature must be assigned. Markers in MGI can be of type: 
 <A HREF="#gene">Gene</a>, 
 <A HREF="#DNA_segment">DNA Segment</a>, 
 <A HREF="#cytogenetic_marker">Cytogenetic Marker</a>, 
 <A HREF="#QTL">QTL</a>, 
 <A HREF="#pseudogene">Pseudogene</a>,
 <A HREF="#bac_end">BAC/YAC end</a>,
-<A HREF="#feature"> Other Genome Feature</a> , or 
-<A HREF="#complex">Complex/Cluster/Region</a>.</OL></dd>
+<A HREF="#feature"> Other Genome Feature</a>, or 
+<A HREF="#complex">Complex/Cluster/Region</a>.
+</OL></dd>
 
-<P><DT><B><A NAME="megabase">Megabase</A></B>
+<P><DT><B><A NAME="megabase">Megabase</A></B></dt>
 <DD>Unit of
 <A HREF="#DNA">DNA</A> or
 <A HREF="#RNA">RNA</A> sequence equal to one million
 <A HREF="#nucleotide">nucleotides</A>.
 
-<P><DT><B><A NAME="meiosis">Meiosis</A></B><DD>A pair of nuclear divisions forming
+<P><DT><B><A NAME="meiosis">Meiosis</A></B></dt>
+<DD>A pair of nuclear divisions forming
 <A HREF="#gamete">gametes</A> wherein the number of
 <A HREF="#chromosome">chromosomes</A> is reduced from the diploid to the haploid number; resulting cells normally contain one member of each pair of
-<A HREF="#homolog">homologous</A> chromosomes.
+<A HREF="#homolog">homologous</A> chromosomes.</dd>
 
-<P><DT><B><A NAME="membrane">Membrane</A></B></dt><DD><ol><li>A phospholipid bilayer that forms a
-<A HREF="#hydrophobic">hydrophobic</A> barrier around and within cells.<li>A sheet of nylon, nitrocellulose, or similar material that is used to create a replica of a gel for
+<P><DT><B><A NAME="membrane">Membrane</A></B></dt>
+<DD>
+<ol>
+<li>A phospholipid bilayer that forms a
+<A HREF="#hydrophobic">hydrophobic</A> barrier around and within cells.
+<li>A sheet of nylon, nitrocellulose, or similar material that is used to create a replica of a gel for
 <A HREF="#southern_blot">Southern blots</A>, <A HREF="#northern_blot">Northern blots</A>, or
-<A HREF="#western_blot">Western blots</A>.</ol></dd>
+<A HREF="#western_blot">Western blots</A>.
+</ol>
+</dd>
 
-<P><DT><B><A NAME="mendelian">Mendelian</A></B><DD><ol><li>That type of inheritance in which a specific <A HREF="#trait">trait</A> is affected by a set of <A HREF="#allele">alleles</A> of a single <A HREF="#gene">gene</A>.<li>That type of inheritance in which genetic information is transmitted by one or more <A HREF="#nucleus">nuclear</A> genes, as opposed to cytoplasmic or
-<A HREF="#epigenetic">epigenetic</A> mechanisms.</ol></dd>
+<P><DT><B><A NAME="mendelian">Mendelian</A></B></dt>
+<DD>
+<ol>
+<li>That type of inheritance in which a specific <A HREF="#trait">trait</A> is affected by a set of <A HREF="#allele">alleles</A> of a single <A HREF="#gene">gene</A>.
+<li>That type of inheritance in which genetic information is transmitted by one or more <A HREF="#nucleus">nuclear</A> genes, as opposed to cytoplasmic or
+<A HREF="#epigenetic">epigenetic</A> mechanisms.
+</ol>
+</dd>
 
-<P><DT><B><A NAME="metadata"></A>Metadata</B>
+<P><DT><B><A NAME="metadata"></A>Metadata</B></dt>
 <DD>Data about data. In data processing, metadata is definitional data providing information about or documentation of other data managed within an application or environment, 
 for example, data about a) data elements or attributes (name, size, data type, etc.), b) records or data structures (length, 
 <A HREF="#field">fields</A>, columns, etc.) and c) data (where located, how associated, what ownership, and so on). Metadata may include descriptive information about the context, quality and condition, or characteristics of the data.
