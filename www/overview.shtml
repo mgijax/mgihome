@@ -1,30 +1,13 @@
 
 <HTML>
 <HEAD>
-<title>Mouse  Genome Database Overview</title>
+<title>Mouse Genome Database Overview</title>
 </head>
-
+<!--#include file="include/banner.html"-->
 <Body Bgcolor="#ffffff">
-<!--#include file="include/bodyStart.html"-->
 
-<TABLE WIDTH="100%" BORDER=0 CELLPADDING=2 CELLSPACING=1>
- <TR>
-  <TD WIDTH="100%" BGCOLOR="#D0E0F0">
-   <TABLE WIDTH="100%" BORDER=0 CELLPADDING=0 CELLSPACING=0>
-    <TR>
-     <TD WIDTH="20%" VALIGN="center" ALIGN="left">&nbsp;</TD>
-     <TD WIDTH="60%" ALIGN="center" VALIGN="center">
-      <FONT COLOR="#000000" SIZE=5 FACE="Arial,Helvetica">
-       Mouse Genome Database Overview
-      </FONT>
-     </TD>
-     <TD WIDTH="20%" VALIGN="center" ALIGN="center">&nbsp;</TD>
-    </TR>
-   </TABLE>
-  </TD>
- </TR>
-</TABLE>
- <hr>
+<H2>Mouse Genome Database Overview</H2> 
+
 <p>MGD includes information on mouse genetic <a href="other/glossary.shtml#marker">markers</A>, molecular segments
 (<a href="other/glossary.shtml#probe">probes</A>,
 <a href="other/glossary.shtml#primer">primers</A> and
@@ -52,8 +35,8 @@ linked to detail  marker  records  in  MGD.-->
 <P><A NAME="mlc">Phenotype</A> records in  MGD have their origin in the
 <a href="other/glossary.shtml#MLC">Mouse Locus Catalog (MLC)</A>, formerly an independent database. You can search for phenotype records using either the Genes and Markers query form or the Alleles and Phenotypes query form. You can search the MLC using the full-text searching capability of the Search tool which provides very reliable query  results. An integrated OMIM/MLC query form lets you enter one search string  to  execute  a  query  in  both  MLC  and  On-line  Mendelian Inheritance in Man (OMIM), a database maintained  by  the  National  Center  for Biotechnology Information (NCBI). 
 
-<P>MGD is closely linked with the 
-Gene Expression Literature Index. The Gene Expression Literature Index is a collection  of  references  to  the  scientific literature reporting data on endogenous gene expression during mouse embryonic development. MGD provides links to Gene Expression Literature Index records through genetic marker detail records. The Gene Expression Literature Index provides links to MGD references  and  genetic  marker records. (See <A HREF="<!--#include file='include/wi_url.html'-->userdocs/gxdindex_help.shtml">Using the Gene Expression Literature Index Query Form</a> for details).
+<P>MGD is closely linked with the
+Gene Expression Literature Index. The Gene Expression Literature Index is a collection  of  references  to  the  scientific literature reporting data on endogenous gene expression during mouse embryonic development. MGD provides links to Gene Expression Literature Index records through genetic marker detail records. The Gene Expression Literature Index provides links to MGD references  and  genetic  marker  records. 
 
 <H4>MGD Data</H4>
 <p>MGD is updated on  a  daily  basis  by  biologists  on  our curatorial
@@ -155,8 +138,7 @@ showing human homology.
 
 <P> The Homology Map View displays the mouse genome as  the  consensus genetic map, with either human or rat orthologs labeled by
 chromosome of origin and displayed next to  the  corresponding  segment  of  the  mouse  genome.  The Homology Map View is accessible
-from the 
-<A href="<!--#include file='include/wi_url.html'-->menus/homology_menu.shtml">Homology Menu</A> page.
+from the <A HREF="http://www.informatics.jax.org/menus/homology_menu.shtml">Homology Menu</A> page.
 
 <h4><A NAME="map">Mapping Data</A></h4>
  MGD contains genetic mapping and linkage data, including haplotype data for
@@ -218,14 +200,27 @@ primers and STSs are mapped against a mouse YAC library to build a contig map of
 MGD  contains  references  for all data in the  database.  As of November 2002,  there were nearly 75,000 references. MGD reference format is similar to that used by  MEDLINE.  Data  for the full MGD reference are extracted from MEDLINE when possible. References are first entered into MGD in an abbreviated format; these  records  are  updated when the MEDLINE records become available. If the  journal  is  not indexed by MEDLINE, our curators enter the full reference into MGD manually.  (See  the References Query Form 
 <a href="<!--#include file='include/wi_url.html'-->userdocs/reference_help.shtml#detail">Query Results -- Detail</A> for more information about the content of reference records.)
 
-<h4>Chromosome Committee Reports</h4> 
-The  <A  HREF="http://www.informatics.jax.org/ccr/">Chromosome Committee
+<P><EM><B>Chromosome Committee Reports</B></EM> <BR> The  <A  HREF="http://www.informatics.jax.org/ccr/">Chromosome Committee
 Reports</A> were published annually (up to the year 2000) on the MGI web site. The  reports provide  a consensus view on linkage information for each chromosome.  These reports were also the source for cM values for markers stored in MGD. <P>
 
 
-<HR>
+<!--<P> <H3>Mouse  Genome Sequence (MGS) Project</H3> The overall goal of the Mouse Genome Sequence  (MGS) project is to integrate emerging mouse genomic sequence data  with  the  genetic and biological data available in MGD and GXD. MGS is
+part  of  the  informatics infrastructure needed to support mouse-human comparative genomics. The  specific aims of the project
+include: <UL> <LI>Working cooperatively with sequencing centers and genome annotation groups to apply baseline sequence annotation to
+mouse genomic sequence. <P> <LI>Implementing a  data integration process for connecting mouse genome sequence with existing
+biological  knowledge. <P> <LI>Developing a web-based interface for querying and visualizing the results of the mouse genome
+sequence annotation-integration process, including sequence alignments of mouse-human orthologs. </UL>-->
 
-<!--#include file="include/bodyStop.html"--></BODY>
+<!--<P> The first tool released by MGS is a prototypic <A HREF="http://mouseblast.informatics.jax.org/">MouseBLAST</A> server
+which enables you to compare a sequence of interest to a  database of  either mouse or rodent DNA or protein sequences. <p>
+<H3>Encyclopedia  of the Mouse Genome (<EM>Encyclopedia</EM>)</H3> The <EM>Encyclopedia</EM> is a genetic  map-viewing application
+that runs on a Macintosh computer. The <EM>Encyclopedia</EM> uses information retrieved from MGD to generate a graphic display of a
+linkage map. 
+(<EM>See</EM> <A  HREF="encyclopedia/encyclo.shtml">details</A> on the
+<EM>Encyclopedia</EM> application.)-->
+<HR>
+<!--#include file="include/footer.html"-->
+</BODY>
  </HTML>
 <!--Warranty Disclaimer and
 Copyright Notice THE JACKSON LABORATORY MAKES NO  REPRESENTATION ABOUT THE SUITABILITY OR ACCURACY OF THIS SOFTWARE OR DATA FOR ANY
