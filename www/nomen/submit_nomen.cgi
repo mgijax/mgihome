@@ -32,7 +32,7 @@ nomen_addr = 'nomen@informatics.jax.org'  # MGD Nomen Coordinator Email Account
 # developer override for mailtarget 
 dev_email = config.lookup ('CGI_MAILTARGET')
 if dev_email is not None:
-	RECIPIENT = dev_email
+	nomen_addr = dev_email
 
 subject = 'Nomenclature Request'
 
@@ -45,7 +45,7 @@ MGD: Nomenclature Request\
 </TITLE> \
 </HEAD> \
 <BODY BGCOLOR="#FFFFFF"> \
-<CENTER><IMG SRC="../../images/mgi_big_banner.gif" ALT="Mouse Genome Informatics"></A></CENTER>\
+<CENTER><IMG SRC="/mgihome/images/mgi_small_banner.gif" ALT="Mouse Genome Informatics"></A></CENTER>\
 <H1>Thank you!</H1> \
 Your Nomenclature request has been sent to the MGD Nomenclature Support Staff.'
 
@@ -227,7 +227,7 @@ print htmlheader + '<PRE>' + message + '</PRE>'
 
 mailheader = 'From: ' + submitter_addr + NL + 'To: ' + nomen_addr + NL 
 mailheader = mailheader + 'Subject: ' + subject + NL + NL
-fd = os.popen('%s -t' % cfg['SENDMAIL'], 'w')
+fd = os.popen('%s -t' % config.lookup('SENDMAIL'), 'w')
 fd.write( mailheader + message )
 fd.close()
 
