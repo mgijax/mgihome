@@ -76,15 +76,6 @@ The term is also used loosely for any sequence of actions (which may or may not 
 <P><DT><B><A NAME="alias"></A>Alias</B>
 <DD>In <A HREF="#MGI">MGI</A>, an alternative <A HREF="#gene_symbol">symbol</A> or <A HREF="#gene_name">name</A> for part of the sequence of a known <A HREF="#gene">gene</A> that resembles names for other <A HREF="#anonymous_DNA">anonymous DNA segments</A>. For example, <A HREF="http://www.informatics.jax.org/searches/accession_report.cgi?id=MGI:100358">D6Mit236</A> is an alias for  <A HREF="http://www.informatics.jax.org/searches/accession_report.cgi?id=MGI:88388">Cftr</A>.
 
-<P><DT><B><A NAME="ANSI"></A>ANSI</B>
-<DD>American National Standards Institute. ANSI is a private, 
-non-profit organization that administers and coordinates the U.S. voluntary standardization and 
-conformity assessment system. The Institute's mission is to enhance both the global competitiveness of 
-U.S. business and the U.S. quality of life by promoting and facilitating voluntary consensus standards 
-and conformity assessment systems, and safeguarding their integrity. For further information, see the 
-web site for <A HREF="http://www.ansi.org/">ANSI</A>.
-
-
 <P><DT><B><A NAME="allele_name">Allele Name</A></B>
 <DD>In<A HREF="#MGI">MGI</A>, an "allele name" is a word or phrase that uniquely identifies an <A HREF="#allele">allele</A> of a given <A HREF="#gene">gene</A>. The allele name has an abbreviation that is the <A HREF="#allele_symbol">allele symbol</A> added as a superscript to the <A HREF="#gene_symbol">gene symbol</A>. See also <A HREF="#gene_name">Gene Name</A>.
 
@@ -194,9 +185,7 @@ strand represented in <A HREF="#mRNA">mRNA</A>.<BR>2. In molecular biology, an <
 <DD>The application of computer technology to the management of biological information. Specifically, it is the science of developing computer <A HREF="#database">databases</A> and <A HREF="#algorithm">algorithms</A> to facilitate and expedite biological research, particularly in <A HREF="#genomics">genomics</A>.
 
 <P><DT><B><A NAME="biological_process">Biological Process</A></B>
-<DD>Refers to a broad category of biological tasks accomplished via one or more ordered assemblies of <A HREF="#molecular_function">molecular functions</A>. Usually there is some temporal aspect to it, although a process event may be essentially instantaneous. 
-It often involves transformation, in the sense that something goes into a process and something different comes out of it. Examples of 
-biological processes included in this category are cell growth and maintenance, signal transduction, <A HREF="#pyrimidine">pyrimidine</A> metabolism, and <A HREF="#cAMP">cAMP</A> <A HREF="#biosynthesis">biosynthesis</A>. In the GO Project vocabularies, Biological Process is a primary class of terms. See the <A HREF="http://www.geneontology.org/">GO Consortium</A> site for further information.
+<DD>Refers to a broad category of biological tasks accomplished via one or more ordered assemblies of <A HREF="#molecular_function">molecular functions</A>. Usually there is some temporal aspect to it, although a process event may be essentially instantaneous. It often involves transformation, in the sense that something goes into a process and something different comes out of it. Examples of biological processes included in this category are cell growth and maintenance, signal transduction, <A HREF="#pyrimidine">pyrimidine</A> metabolism, and <A HREF="#cAMP">cAMP</A> <A HREF="#biosynthesis">biosynthesis</A>. In the GO Project vocabularies, Biological Process is a primary class of terms. See the <A HREF="http://www.geneontology.org/">GO Consortium</A> site for further information.
 
 <P><DT><B><A NAME="biosynthesis">Biosynthesis</A></B>
 <DD>Synthesis of chemical compounds by <A HREF="#enzyme">enzymatic</A> processes in living organisms.
@@ -960,11 +949,9 @@ matings for at least 20 sequential generations. C57BL/6J is a widely-used <A HRE
 <A HREF="#protein">protein</A>.
 
 <P><DT><B><A NAME="intercross">Intercross</A></B>
-<DD>A
-<A HREF="#cross">cross</A> between two identically <A HREF="#hybrid">hybrid</A> individuals (A/a X A/a). 
+<DD>A <A HREF="#cross">cross</A> between two identically <A HREF="#hybrid">hybrid</A> individuals (A/a X A/a). 
 <BR>See also:<UL><LI><A HREF="#backcross">Backcross</A></LI><LI><A HREF="#incross">Incross</A></LI>
-<LI><A HREF="#outcross">Outcross</A></LI><LI><A HREF="#testcross">Testcross</A></LI>
-</UL>
+<LI><A HREF="#outcross">Outcross</A></LI><LI><A HREF="#testcross">Testcross</A></LI></UL>
 
 <P><DT><B><A NAME="intergenic">Intergenic</A></B>
 <DD>Between <A HREF="#gene">genes</A>.
@@ -981,14 +968,10 @@ large enough to be visible <A HREF="#cytogenetic">cytogenetically</A> to those i
 <P><DT><B><A NAME="isogenic">Isogenic</A></B>
 <DD>Characterized by essentially identical <A HREF="#gene">genes</a>. Identical twins are isogenic.
 
-
 <!-- JJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJ --><A NAME="j"></A>
 <P><DT><B><A NAME="J_number">J Number</A></B>
 <DD>A unique
-<A HREF="#accession_ID">accession ID</A> assigned to a 
-reference within
-<A HREF="#MGI">MGI</A>.
-
+<A HREF="#accession_ID">accession ID</A> assigned to a reference within <A HREF="#MGI">MGI</A>.
 
 <!-- KKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKK --><A NAME="k"></A>
 <P><DT><B><A NAME="karyotype">Karyotype</A></B>
@@ -1141,28 +1124,15 @@ recombination</A>
 <P><DT><B><A NAME="marker">Marker</A></B>
 <DD>
  <ol>
-  <li>Any
-biological feature that can be positioned with respect to other
-features on a chromosome,
-   by genetic, physical or other mapping
-methods. For example, a gene, anonymous DNA segment, 
-   mutation, or
-phenotype.
-   <li>A
-feature that distinguishes a particular biological state. For
-example, an expression 
-   profile of natural or engineered genes, or a
-characteristic morphology.
-   <li>In MGI, a Marker is an object for which unique official
-nomenclature must be assigned.
-   Markers in MGI can be of type:
+  <li>Any biological feature that can be positioned with respect to other features on a chromosome, by genetic, physical or other mapping methods. For example, a gene, anonymous DNA segment, mutation, or phenotype.
+   <li>A feature that distinguishes a particular biological state. For example, an expression profile of natural or engineered genes, or a characteristic morphology.
+   <li>In MGI, a Marker is an object for which unique official nomenclature must be assigned. Markers in MGI can be of type:
 <A HREF="#gene">Gene</a>, 
    <A HREF="#DNA_segment">DNA Segment</a>, 
    <A HREF="#cytogenetic_marker">Cytogenetic Marker, 
    <A HREF="#QTL">QTL</a>, <A HREF="#pseudogene">Pseudogene</a>,
    <A HREF="#bac_end">BAC/YAC end</a>,
- 
-   <A HREF="#feature"> Other Genome Feature</a> , or 
+    <A HREF="#feature"> Other Genome Feature</a> , or 
    <A HREF="#complex">Complex/Cluster/Region</a>.
   </ol>
 
