@@ -3,20 +3,27 @@
 <TITLE><!--#include file="include/title.html"--> Additional MGI Resources</TITLE>
 </HEAD>
 <BODY BGCOLOR="#FFFFFF">
-<!--#include file="include/banner.html"-->
-<TABLE WIDTH=100% border=0 cellpadding=2 cellspacing=1>
+<TABLE WIDTH="100%" BORDER=0 CELLPADDING=2 CELLSPACING=1>
+ <TR>
+  <TD WIDTH="100%" BGCOLOR="#D0E0F0">
+   <TABLE WIDTH="100%" BORDER=0 CELLPADDING=0 CELLSPACING=0>
     <TR>
-     <TD WIDTH=100% BGCOLOR="#D0E0F0">
-      <TABLE WIDTH=100% border=0 cellpadding=0 cellspacing=0>
-        <TR>
-          <TD VALIGN=center ALIGN=center><FONT COLOR="#000000" SIZE=5 face="Arial,Helvetica"><B>Additional Resources</B></FONT></TD>
-          </TR>
-       </TABLE>
-      </TD>
-     </TR>
-   </TABLE>
-<P>
-<blockquote>
+     <TD WIDTH="20%" VALIGN="center" ALIGN="left">
+       <IMG SRC="../images/mgi_logo.jpg" WIDTH=160 HEIGHT=80>
+     </TD>
+     <TD WIDTH="60%" ALIGN="center" VALIGN="center">
+      <FONT COLOR="#000000" SIZE=5 FACE="Arial,Helvetica">
+Help
+      </FONT>
+     </TD>
+     <TD WIDTH="20%" VALIGN="center" ALIGN="center">
+      &nbsp;
+     </TD>
+    </TR>
+   </TABLE>  </TD>
+ </TR>
+</TABLE>
+
    <TABLE border=0 cellpadding=0 cellspacing=1>
      <TR>
        <TD align=left VALIGN=top width=50%>
@@ -110,7 +117,7 @@ Schema Browser
 </td></tr>
 <br>
 <tr><td colspan=2 ALIGN=LEFT VALIGN=TOP><br>
-<FONT SIZE=3><B><A HREF=""><A name="mousefacts"></a>
+<FONT SIZE=3><B><A name="mousefacts"></a>
 <a href="../other/mouse_facts1.shtml">Mouse Facts</A></B></FONT><BR>
 <EM>Information about:</EM><br>
 <dd>mouse physiology<BR>
@@ -118,9 +125,7 @@ Schema Browser
 <dd>codon usage<BR>
 <dd>clone resources<BR>
 <dd>radiation hybrid panels<BR>
-
 </td></tr>
-
 <tr><td colspan=2 ALIGN=LEFT VALIGN=TOP><br>
 <FONT SIZE=3><B><A name="radiation"></a>Radiation Hybrid Mapping Resources</B></FONT><br>
 <A HREF="http://www.jax.org/resources/documents/cmdata/rhmap/">The Jackson
@@ -135,7 +140,7 @@ Schema Browser
 <A HREF="http://www.genoscope.cns.fr/externe/English/Projets/Projet_ZZZ/rhmap.html">CNS France</A>
 </td></tr>
 </table>
-</blockquote>
+
 <br><br><br><br><br><br>
 <HR>
 <!--#include file="include/footer.html"-->

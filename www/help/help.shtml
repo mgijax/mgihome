@@ -1,22 +1,28 @@
 <HTML>
 <HEAD>
-<TITLE><!--#include file="include/title.html"--> MGI Help</TITLE>
+<TITLE><!--#include file="include/title.html"--> Help</TITLE>
 </HEAD>
 <BODY BGCOLOR="#FFFFFF">
-<!--#include file="include/banner.html"-->
-   <TABLE WIDTH=100% border=0 cellpadding=2 cellspacing=1>
+<TABLE WIDTH="100%" BORDER=0 CELLPADDING=2 CELLSPACING=1>
+ <TR>
+  <TD WIDTH="100%" BGCOLOR="#D0E0F0">
+   <TABLE WIDTH="100%" BORDER=0 CELLPADDING=0 CELLSPACING=0>
     <TR>
-     <TD WIDTH=100% BGCOLOR="#D0E0F0">
-      <TABLE WIDTH=100% border=0 cellpadding=0 cellspacing=0>
-       <TR>     
-       <TD align=center valign=center><FONT COLOR="#000000" SIZE=5 face="Arial,Helvetica"><B>Help</B></FONT>    
-       </TD>      
-       </TR>
-      </TABLE>
+     <TD WIDTH="20%" VALIGN="center" ALIGN="left">
+       <IMG SRC="../images/mgi_logo.jpg" WIDTH=160 HEIGHT=80>
+     </TD>
+     <TD WIDTH="60%" ALIGN="center" VALIGN="center">
+      <FONT COLOR="#000000" SIZE=5 FACE="Arial,Helvetica">
+Help
+      </FONT>
+     </TD>
+     <TD WIDTH="20%" VALIGN="center" ALIGN="center">
+      &nbsp;
      </TD>
     </TR>
-   </TABLE>
-<blockquote>
+   </TABLE>  </TD>
+ </TR>
+</TABLE>
 <P>
 Mouse Genome Informatics offers on-line help and staffs a help desk to answer your questions and comments.
 <P>
@@ -101,10 +107,8 @@ Phone: (207) 288-6445<br><br>
 </TD>
 </TR>
 </TABLE>
-</blockquote>
 
 <HR>
-
 <!--#include file="include/footer.html"-->
 
 </BODY></HTML>
