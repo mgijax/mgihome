@@ -43,7 +43,7 @@ def banner ():
 
 	return [ '<CENTER>',
 		 '<IMG SRC="%simages/mgi_small_banner.gif"' % URL,
-	    	 'WIDTH=501   HEIGHT=40   ALT="Mouse Genome Informatics">',
+	    	 'WIDTH=557   HEIGHT=64   ALT="Mouse Genome Informatics">',
 		 '</CENTER>' ]
 
 def sql (queries, parsers = 'auto'):
