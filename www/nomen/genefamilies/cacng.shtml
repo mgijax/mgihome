@@ -12,30 +12,18 @@
 <BODY BGCOLOR="#FFFFFF">
 <!--#include file="include/bodyStart.html"-->
 
-
-
 <TABLE WIDTH="100%" BORDER=0 CELLPADDING=2 CELLSPACING=1>
- <TR>
-  <TD WIDTH="100%" BGCOLOR="#D0E0F0">
-   <TABLE WIDTH="100%" BORDER=0 CELLPADDING=0 CELLSPACING=0>
-    <TR>
-     <TD WIDTH="20%" VALIGN="center" ALIGN="left">&nbsp;</TD>
-     <TD WIDTH="60%" ALIGN="center" VALIGN="center">
-      <FONT COLOR="#000000" SIZE=5 FACE="Arial,Helvetica">
-       <center>Calcium Channel, Voltage-dependent, Gamma Subunit Gene Family</center>
-      </FONT>
-     </TD>
-     <TD WIDTH="20%" VALIGN="center" ALIGN="center">&nbsp;</TD>
-    </TR>
-   </TABLE>
-  </TD>
- </TR>
+<TR><TD WIDTH="100%" BGCOLOR="#D0E0F0">
+  <TABLE WIDTH="100%" BORDER=0 CELLPADDING=0 CELLSPACING=0>
+  <TR><TD WIDTH="20%" VALIGN="center" ALIGN="left">&nbsp;</TD>
+  <TD WIDTH="60%" ALIGN="center" VALIGN="center"><FONT COLOR="#000000" SIZE=5 FACE="Arial,Helvetica"><center>Calcium Channel, Voltage-dependent, Gamma Subunit Gene Family</center></FONT></TD>
+  <TD WIDTH="20%" VALIGN="center" ALIGN="center">&nbsp;</TD></TR>
+  </TABLE></TD></TR>
 </TABLE>
 
-
 <table frame=void cols=2 width="100%">
-  <td valign=top width="20%"><b>Family Root Symbol:
-  <td width="80%">Cacng#</td>
+  <td valign=top width="30%"><b>Family Root Symbol:</b></td>
+  <td width="70%">Cacng#</td>
  </tr>
  <tr>
   <td><b>Family Name:</b></td>
@@ -67,7 +55,7 @@
   <td><a href="<!--#include file='include/gb_url.html'-->L07738">L07738</a>
      </td>
   <TD>*Cacng1*</TD>
-  <td><a href="http://www3.ncbi.nlm.nih.gov/htbin-post/Entrez/query?db=n&Dopt=g&form=6&uid=Y09453">Y09453</a></td>
+  <td><a href="<!--#include file='include/gb_url.html'-->Y09453">Y09453</a></td>
   <TD align=center><a href="<!--#include file='include/wi_url.html'-->searches/homology_report.cgi?id=MGI:1206582">yes</a>
     </td>
 <td>&nbsp;</td>
@@ -84,7 +72,7 @@
   <td><a href="<!--#include file='include/gb_url.html'-->AF096322">AF096322</a>
     </td>
   <TD><a href="http://ratmap.gen.gu.se/ShowSingleLocus.htm?accno=52949">Cacng2</a></TD>
-  <td><a href="http://www3.ncbi.nlm.nih.gov/htbin-post/Entrez/query?db=n&Dopt=g&form=6&uid=AF118818">AF118818</a></td>
+  <td><a href="<!--#include file='include/gb_url.html'-->AF118818">AF118818</a></td>
   <TD align=center>
 <a href="<!--#include file='include/wi_url.html'-->searches/homology_report.cgi?id=MGI:1316660">yes</a>
     </td>
@@ -102,7 +90,7 @@
   <td><a href="<!--#include file='include/gb_url.html'-->AF134640">AF134640</a>
      </td>
   <TD>*Cacng3*</TD>
-  <td><a href="http://www3.ncbi.nlm.nih.gov/htbin-post/Entrez/query?db=n&Dopt=g&form=6&uid=AF361340">AF361340</a></td>
+  <td><a href="<!--#include file='include/gb_url.html'-->AF361340">AF361340</a></td>
   <TD align=center><a href="<!--#include file='include/wi_url.html'-->searches/homology_report.cgi?id=MGI:1859165">yes</a>
     </td>
 <td>&nbsp;</td>
@@ -119,7 +107,7 @@
   <td><a href="<!--#include file='include/gb_url.html'-->AF142625">AF142625</a>
     </td>
   <TD>*Cacng4*</TD>
-  <td><a href="http://www3.ncbi.nlm.nih.gov/htbin-post/Entrez/query?db=n&Dopt=g&form=6&uid=AF361341">AF361341</a></td>
+  <td><a href="<!--#include file='include/gb_url.html'-->AF361341">AF361341</a></td>
  <TD align=center><a href="<!--#include file='include/wi_url.html'-->searches/homology_report.cgi?id=MGI:1859167">yes</a> 
    </td>
 <td>&nbsp;</td>
@@ -136,7 +124,7 @@
   <td><a href="<!--#include file='include/gb_url.html'-->AF361351">AF361351</a> 
      </td>
   <TD>*Cacng5*</TD>
-  <td><a href="http://www3.ncbi.nlm.nih.gov/htbin-post/Entrez/query?db=n&Dopt=g&form=6&uid=AF361342">AF361342</a></td>
+  <td><a href="<!--#include file='include/gb_url.html'-->AF361342">AF361342</a></td>
   <TD align=center><a href="<!--#include file='include/wi_url.html'-->searches/homology_report.cgi?id=MGI:2157946">yes</a>
     </td>
 <td>&nbsp;</td>
@@ -154,7 +142,7 @@
     </td>
   <TD><a href="<!--#include file='include/ratmap_url.html'-->50142">Cacng6</a> 
     </TD>
- <td><a href="http://www3.ncbi.nlm.nih.gov/htbin-post/Entrez/query?db=n&Dopt=g&form=6&uid=AF361343">AF361343</a></td>
+ <td><a href="<!--#include file='include/gb_url.html'-->AF361343">AF361343</a></td>
   <TD align=center><a href="<!--#include file='include/wi_url.html'-->searches/homology_report.cgi?id=MGI:1859168">yes</a>
   </td>
 <td>&nbsp;</td>
@@ -172,7 +160,7 @@
 </td>
   <TD><a href="<!--#include file='include/ratmap_url.html'-->50143">Cacng7</a>
 </TD>
-  <td><a href="http://www3.ncbi.nlm.nih.gov/htbin-post/Entrez/query?db=n&Dopt=g&form=6&uid=AF361345">AF361345</a></td>
+  <td><a href="<!--#include file='include/gb_url.html'-->AF361345">AF361345</a></td>
   <TD align=center><a href="<!--#include file='include/wi_url.html'-->searches/homology_report.cgi?id=MGI:1932374">yes</a>
 </td>
   <td>&nbsp;</td>
@@ -190,7 +178,7 @@
 </td>
   <TD><a href="<!--#include file='include/ratmap_url.html'-->50144">Cacng8</a>
 </TD>
-  <td><a href="http://www3.ncbi.nlm.nih.gov/htbin-post/Entrez/query?db=n&Dopt=g&form=6&uid=AF361346">AF361346</a></td>
+  <td><a href="<!--#include file='include/gb_url.html'-->AF361346">AF361346</a></td>
  <TD align=center><a href="<!--#include file='include/wi_url.html'-->searches/homology_report.cgi?id=MGI:1932376">yes</a>
 </td>
 <td>&nbsp;</td>
