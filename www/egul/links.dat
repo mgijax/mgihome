@@ -23,7 +23,7 @@ GFPDIR=${MGIHOME}/nomen/genefamilies
 
 # Path to the directory holding short papers.
 #
-SPDIR=${MGIHOME}/shortpapers
+SPDIR=${MGIHOME}/egul
 
 ########## START OF USER SECTION ##########
 
@@ -51,9 +51,9 @@ SP=Full text
 	url = http://www.informatics.jax.org/wksilvers/
 	]
 [
-	id = J:93103
+	id = J:93013
 	type = ${SP}
-	url = http://www.informatics.jax.org/mgihome/egul/93013/93013.pdf
+	url = ${MGIHOME}/egul/93013/93013.pdf
 	]
 
 #[
