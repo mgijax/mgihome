@@ -237,30 +237,9 @@ HREF="reference_help.shtml#sort">details</A> on the content of reference records
 Reports</A> are published annually on the MGI web site. The  reports  provide  a consensus view on linkage information for each
 chromosome.  These  reports  are also the source for cM values for markers stored in MGD. <P>
 
-<H3>Gene Expression Database (GXD) Project</H3> GXD is designed as a comprehensive database system that will store and integrate the
-various types of expression data on the laboratory  mouse.  GXD  has  been implemented using the Sybase relational database system.
-GXD is integrated  with MGD and provides comprehensive  links  to  other  resources. <P>Currently,  the following data are <A
-HREF="../menus/expression_menu.shtml">searchable</A>: <P> <UL  TYPE=DISC> <LI><B><A HREF="../searches/gxdindex_form.shtml">Gene
-Expression Literature Index</A></B>, a searchable  index  of research  reports  documenting  data  on endogenous gene expression
-during mouse development, including references, genes and  embryonic  stages  analyzed,  and  expression  assays  used. <P> <LI><B><A
-HREF="../searches/estclone_form.shtml">Mouse cDNA data</A></B>, including I.M.A.G.E. clones. 
-<P> 
-<LI><B><A HREF="../searches/expression_form.shtml"><a href="<!--#include file='include/glossary_url.html'-->#RT-PCR">RT-PCR</A>, 
-RNA <a href="<!--#include file='include/glossary_url.html'-->#in_situ">in situ hybridization</A>, 
-<a href="<!--#include file='include/glossary_url.html'-->#immunohistochemistry">Immunohistochemistry</A>, 
-<a href="<!--#include file='include/glossary_url.html'-->#northern_blot">Northern</A> and
-<a href="<!--#include file='include/glossary_url.html'-->#western_blot">Western Blot</A> data</A></B> </UL>
 
-<P> GXD includes a large data set of RT-PCR data reporting expression data for 517 genes in <A HREF="tissues.shtml">46 tissues</A>
-(provided by <A HREF="../searches/reference.cgi?46734">Tom Freeman et al</A>, The Sanger Centre, UK). Additional expression data from
-the various assay types are now being entered into the database and made publicly available on a daily basis.
 
-<P> Currently, these data are acquired from the literature by database  editors.  In the future, we will  acquire  data primarily
-via  electronic  submission  from laboratories. Prototypes of an electronic submission system are being tested and refined in
-collaboration with a number of  laboratories  in  North  America  and Europe with the aim to produce a robust submission system for
-the  community  at large.  (<EM>See</EM> <A  HREF="<!--#include file='include/mgihome_url.html'-->/GXD/gxdgen.shtml">details</A>
-about the GXD  project.) <P> <H3>Mouse  Genome Sequence (MGS) Project</H3> The overall goal of the Mouse Genome Sequence  (MGS)
-project is to integrate emerging mouse genomic sequence data  with  the  genetic and biological data available in MGD and GXD. MGS is
+<P> <H3>Mouse  Genome Sequence (MGS) Project</H3> The overall goal of the Mouse Genome Sequence  (MGS) project is to integrate emerging mouse genomic sequence data  with  the  genetic and biological data available in MGD and GXD. MGS is
 part  of  the  informatics infrastructure needed to support mouse-human comparative genomics. The  specific aims of the project
 include: <UL> <LI>Working cooperatively with sequencing centers and genome annotation groups to apply baseline sequence annotation to
 mouse genomic sequence. <P> <LI>Implementing a  data integration process for connecting mouse genome sequence with existing
