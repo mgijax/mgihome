@@ -6,7 +6,9 @@
 <TABLE WIDTH="100%" BORDER=0 CELLPADDING=0 CELLSPACING=0>
   <TR><TD WIDTH="100%">
     <TABLE WIDTH="100%" BORDER=0 CELLPADDING=0 CELLSPACING=0>
-     <TR><TD WIDTH="20%" VALIGN="center" ALIGN="left"><A HREF="<!--#include file='include/wi_url.html'-->" border=0><IMG SRC="../images/mgi_logo_small.jpg" border=0 ALT="MGI"></A></TD>
+     <TR><TD WIDTH="20%" VALIGN="center" ALIGN="left">
+<A HREF="<!--#include file='include/wi_url.html'-->" border=0>
+<IMG SRC="../images/mgi_logo_small.jpg" border=0 ALT="MGI"></A></TD>
       <TD WIDTH="60%" ALIGN="center" VALIGN="center" BGCOLOR="#ffffff">
        <FONT COLOR="#000000" SIZE=5 FACE="Arial,Helvetica">
 Mouse Strain Registry Form
@@ -84,7 +86,7 @@ B2m&lt;tm1Unc&gt;</b>  <br>the gene symbols entered into this box would  be
 <p>If you have a large number of strains to submit, contact  <A
 HREF="../../support/tjl_inbox.shtml">MGI User Support</a> for help with bulk submission and file formatting.</font>
 <hr>
-<dl><font size=-1>
+<dl>
 <dt><b>Is this strain public or private?</b> <i> (<b>IMPORTANT</b>: "public" strain  names  will  be released through MGD immediately)</i>
 <br>
 <dd><input TYPE="radio" NAME="status" VALUE="PUBLIC">Public<br></dd>
@@ -95,7 +97,7 @@ HREF="../../support/tjl_inbox.shtml">MGI User Support</a> for help with bulk sub
 <p>
 <table  border=0 cellpadding=0 cellspacing=2 width=100%>
 <tr valign=top>
-<td><font size=-1>
+<td><!--<font size=-1>-->
 <input TYPE="checkbox" NAME="category" VALUE="strain_family">strain family<br>
 <input TYPE="checkbox" NAME="category" VALUE="inbred_strain">inbred strain<br>
 <input TYPE="checkbox" NAME="category" VALUE="segregating_inbred">segregating inbred<br>
@@ -103,9 +105,9 @@ HREF="../../support/tjl_inbox.shtml">MGI User Support</a> for help with bulk sub
 <input TYPE="checkbox" NAME="category" VALUE="mutant_stock">mutant stock<br>
 <input TYPE="checkbox" NAME="category" VALUE="wild_derived">wild-derived<br>
 <input TYPE="checkbox" NAME="category" VALUE="outbred">outbred
-</td></font>
+</td><!--</font>-->
 
-<td><font size=-1>
+<td>
 <input TYPE="checkbox" NAME="category" VALUE="coisogenic">coisogenic<br>
 <input TYPE="checkbox" NAME="category" VALUE="congenic">congenic<br>
 <input TYPE="checkbox" NAME="category" VALUE="consomic">consomic<br>
@@ -113,16 +115,16 @@ HREF="../../support/tjl_inbox.shtml">MGI User Support</a> for help with bulk sub
 <input TYPE="checkbox" NAME="category" VALUE="RC_strain">recombinant congenic (RC)<br>
 <input TYPE="checkbox" NAME="category" VALUE="MHC_congenic">major histocompatibility congenic<br>
 <input TYPE="checkbox" NAME="category" VALUE="minorH_congenic">minor histocompatibility congenic
-</td></font>
+</td>
 
-<td><font size=-1>
+<td>
 <input TYPE="checkbox" NAME="category" VALUE="spontaneous_mutation">spontaneous mutation<br>            <input TYPE="checkbox" NAME="category" VALUE="targeted_mutation">targeted mutation<br>
 <input TYPE="checkbox" NAME="category" VALUE="transgenic">transgenic<br>
 <input TYPE="checkbox" NAME="category" VALUE="gene_trap">gene trap<br>
 <input TYPE="checkbox" NAME="category" VALUE="chemical_mutation">chemically induced mutation<br>            <input TYPE="checkbox" NAME="category" VALUE="radiation_mutation">radiation induced mutation
-</td></font>
+</td>
 
-<td><font size=-1>
+<td>
 <input TYPE="checkbox" NAME="category" VALUE="chrom_aberration">chrom. aberration<br>
 <input TYPE="checkbox" NAME="category" VALUE="Robertsonian">Robertsonian<br>
 <input TYPE="checkbox" NAME="category" VALUE="translocation">translocation<br>
@@ -132,7 +134,7 @@ HREF="../../support/tjl_inbox.shtml">MGI User Support</a> for help with bulk sub
 <input TYPE="checkbox" NAME="category" VALUE="deletion">deletion<br>
 <input TYPE="checkbox" NAME="category" VALUE="duplication">duplication<br>
 <input TYPE="checkbox" NAME="category" VALUE="other">other
-</td></font>
+</td>
 </tr>
 </table>
 <hr>
