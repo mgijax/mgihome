@@ -1,8 +1,38 @@
 <HTML>
 <HEAD>
 <TITLE><!--#include file='include/mgiversion.html'--> Documentation</TITLE>
+<style>
+
+body {background:white;font-family:arial,helvetica;}
+
+
+h1 {font-family:arial,helvetica; font-size:14pt; color:black;font-weight: bold}
+h2 {font-family:arial,helvetica; font-size:12pt; color:black;font-weight: bold}
+h3 {font-family:arial,helvetica; font-size:10pt; color:black; font-weight: bold}
+h4 {font-family:arial,helvetica; font-size:10pt; color:black; font-weight:bold; font-style: italic}
+
+A:link {font-family:arial,helvetica;font-size:10pt;color:#0000FF;text-decoration:underline}
+A:visited {font-family:arial,helvetica;font-size:10pt;color:##4682B4;text-decoration:underline}
+A:active {font-family:arial,helvetica;font-size:10pt;color:#0000FF;text-decoration:underline}
+A:hover {font-family:arial,helvetica;font-size:10pt;color:red;text-decoration:none}
+
+td.header {vertical-align:middle;text-align:center;width:60%;font-size:20pt;text-transform:capitalize}
+
+table.main {width:100%}
+
+.linkHeader {color:black;  font-size:9pt; font-style: italic;}
+.textHeader {color:black;  font-size:10pt; font-style: normal;}
+
+.mainHeader {text-align:center;background:#4682B4;width:100%;text-transform:capitalize;font-size:14pt}
+
+.subHeader {text-align:left;font-size:12pt;font-style:bold}
+
+</style>
+
 </HEAD>
-<BODY BGCOLOR="#FFFFFF">
+
+
+<BODY>
 <!--#include file="include/bodyStart.html"-->
  <TABLE WIDTH="100%" BORDER=0 CELLPADDING=2 CELLSPACING=1>
  <TR>
@@ -11,9 +41,10 @@
     <TR>
      <TD WIDTH="20%" VALIGN="center" ALIGN="left">&nbsp;</TD>
      <TD WIDTH="60%" ALIGN="center" VALIGN="center">
-      <FONT COLOR="#000000" SIZE=5 FACE="Arial,Helvetica">
+      <FONT COLOR="black" SIZE=5 FACE="Arial,helvetica">
 Documentation
       </FONT>
+
      </TD>
      <TD WIDTH="20%" VALIGN="center" ALIGN="center">&nbsp;</TD>
     </TR>
@@ -22,25 +53,25 @@ Documentation
  </TR>
 </TABLE>
 
-<P>
-Mouse Genome Informatics offers on-line help and staffs a help desk to answer your questions and comments.
-<P>
-<table width=100% border=0 cellspacing=4>
-<tr>
-<td  align=left valign=top width=50%><FONT SIZE=+1><B>Contact User Support Staff</B></FONT>
-<ul>
-E-mail: <A HREF="../support/tjl_inbox.shtml">mgi-help@informatics.jax.org</A></FONT><br>
-Phone: (207) 288-6445<br><br>
-</ul>
+<p class="textheader">
+
+Mouse Genome Informatics offers on-line help and staffs a help desk to answer your questions and comments.</p>
+
+<h2>Contact User Support Staff</h2>
+<P class="textHeader">
+E-mail: <A HREF="../support/tjl_inbox.shtml">mgi-help@informatics.jax.org</A><br>
+Phone: (207) 288-6445<br>
+
+</p>
        
        
-<P><FONT SIZE=+1><B>Documentation</b></font><BR>
-<EM>You can access complete documentation on MGI query forms from this page or by clicking numerous links from the query forms themselves.</EM>
+<h2>Documentation</h2>
+<p class="linkheader">You can access complete documentation on MGI query forms from this page or by clicking numerous links from the query forms themselves.</p>
+
+<h4>General topics</h4>
 <DL>
 
-
-<dt><EM>General topics</EM>
-<DD><A HREF="../projects/overview.shtml">Mouse Genome Database Overview</A><BR>
+<DD><A HREF="../projects/overview.shtml">Mouse Genome Database Overview</A><Br>
 
 <DD><a href="<!--#include file='include/wi_url.html'-->userdocs/gen_search_tips.shtml">General Guidelines for Searching MGI</A><BR>
 
@@ -48,53 +79,54 @@ Phone: (207) 288-6445<br><br>
 
 <DD><a href="<!--#include file='include/wi_url.html'-->userdocs/searchtool_help.shtml">Search box on the Home page</A><BR>
 
-<DD><a href="<!--#include file='include/wi_url.html'-->userdocs/textsearch_tips.shtml">Full-text Searching Help</A><BR>
+<DD><a href="<!--#include file='include/wi_url.html'-->userdocs/textsearch_tips.shtml">Full-text Searching Help</A></dd>
+</dl>
 
-<P><dt><em>Help using specific query forms</EM>
+<h4>Help using specific query forms</h4>
+<dl>
+<DD><a href="<!--#include file='include/wi_url.html'-->userdocs/accession_help.shtml">Accession IDs</A></dd>
 
-<DD><a href="<!--#include file='include/wi_url.html'-->userdocs/accession_help.shtml">Accession IDs</A><BR>
-
-<dd><a href="<!--#include file='include/wi_url.html'-->userdocs/ama_browser_help.shtml">Adult Mouse Anatomical Dictionary Browser</a><br>
+<dd><a href="<!--#include file='include/wi_url.html'-->userdocs/ama_browser_help.shtml">Adult Mouse Anatomical Dictionary Browser</a></dd>
 
 <DD><a href="<!--#include file='include/wi_url.html'-->userdocs/allele_help.shtml">Alleles and Phenotypes</A><BR>
 
-<DD><a href="<!--#include file='include/wi_url.html'-->userdocs/estclone_help.shtml">cDNA Clone</A><BR>
+<DD><a href="<!--#include file='include/wi_url.html'-->userdocs/estclone_help.shtml">cDNA Clone</A></dd>
 
-<DD><a href="<!--#include file='include/wi_url.html'-->userdocs/mlc_omim_help.shtml">Combined Mouse/Human Phenotypes</A><BR>
+<DD><a href="<!--#include file='include/wi_url.html'-->userdocs/mlc_omim_help.shtml">Combined Mouse/Human Phenotypes</A></dd>
 
-<DD><a href="<!--#include file='include/wi_url.html'-->userdocs/expression_help.shtml">Gene Expression Data</A><BR>
+<DD><a href="<!--#include file='include/wi_url.html'-->userdocs/expression_help.shtml">Gene Expression Data</A></dd>
 
- <dd><A HREF="<!--#include file='include/wi_url.html'-->userdocs/gxd_expanded_help.shtml">Gene Expression Data Expanded</A><br>
+ <dd><A HREF="<!--#include file='include/wi_url.html'-->userdocs/gxd_expanded_help.shtml">Gene Expression Data Expanded</A></dd>
 
-<DD><a href="<!--#include file='include/wi_url.html'-->userdocs/marker_help.shtml">Genes and Markers</A><BR>
+<DD><a href="<!--#include file='include/wi_url.html'-->userdocs/marker_help.shtml">Genes and Markers</A></dd>
 
-<DD><a href="<!--#include file='include/wi_url.html'-->userdocs/gxdindex_help.shtml">Gene Expression Literature Index</A><BR>
+<DD><a href="<!--#include file='include/wi_url.html'-->userdocs/gxdindex_help.shtml">Gene Expression Literature Index</A></DD>
 
-<DD><a href="<!--#include file='include/wi_url.html'-->userdocs/GO_help.shtml">Gene Ontology Browser</A><BR>
+<DD><a href="<!--#include file='include/wi_url.html'-->userdocs/GO_help.shtml">Gene Ontology Browser</A></dd>
 
-<DD><a href="<!--#include file='include/wi_url.html'-->userdocs/homology_help.shtml">Mammalian Orthology Data</A><BR>
+<DD><a href="<!--#include file='include/wi_url.html'-->userdocs/homology_help.shtml">Mammalian Orthology Data</A></DD>
 
-<DD><a href="<!--#include file='include/wi_url.html'-->userdocs/mapping_help.shtml">Maps and Mapping Data</A><BR>
+<DD><a href="<!--#include file='include/wi_url.html'-->userdocs/mapping_help.shtml">Maps and Mapping Data</A></DD><BR>
 
-<DD><a href="<!--#include file='include/wi_url.html'-->userdocs/probe_help.shtml">Molecular Probes and Segments</A><BR>
+<DD><a href="<!--#include file='include/wi_url.html'-->userdocs/probe_help.shtml">Molecular Probes and Segments</A></dd>
 
-<DD><A HREF="<!--#include file='include/mouseblast_url.html'-->user_docs/mblast_overview.shtml">MouseBLAST</A><BR>
+<DD><A HREF="<!--#include file='include/mouseblast_url.html'-->user_docs/mblast_overview.shtml">MouseBLAST</A></DD>
 
-<DD><A HREF="<!--#include file='include/wi_url.html'-->userdocs/anatdict_help.shtml">Mouse Anatomical Dictionary Browser</A><BR>
+<DD><A HREF="<!--#include file='include/wi_url.html'-->userdocs/anatdict_help.shtml">Mouse Anatomical Dictionary Browser</A></dd>
 
-<a href="<!--#include file='include/wi_url.html'-->userdocs/sequence_help.shtml">Mouse Sequence Query Form</a><br>
+<a href="<!--#include file='include/wi_url.html'-->userdocs/sequence_help.shtml">Mouse Sequence Query Form</a></DD>
 
-<DD><a href="<!--#include file='include/wi_url.html'-->userdocs/oxfordgrid_help.shtml">Oxford Grid</A><BR>
+<DD><a href="<!--#include file='include/wi_url.html'-->userdocs/oxfordgrid_help.shtml">Oxford Grid</A></dd>
 
 <DD><a href="<!--#include file='include/wi_url.html'-->userdocs/polymorphism_help.shtml">Polymorphisms</A><BR>
 
-<DD><a href="<!--#include file='include/wi_url.html'-->userdocs/reference_help.shtml">References</A><BR>
-</TD> 
+<DD><a href="<!--#include file='include/wi_url.html'-->userdocs/reference_help.shtml">References</A></DD></dd>
+
 </DL>
 
-</TD>
-</TR>
-</TABLE>
+
+
+
 
 <HR>
 <!--#include file="include/bodyStop.html"-->
