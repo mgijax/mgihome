@@ -1,201 +1,205 @@
-<HTML> 
-<HEAD> 
-<TITLE><!--#include file='include/mgiversion.html'--> - Rules and Guidelines for Gene, Allele, and Mutation Nomenclature</TITLE> 
-</HEAD> 
-<BODY BGCOLOR="#ffffff"> 
-<TABLE WIDTH="100%" BORDER=0 CELLPADDING=0 CELLSPACING=0> 
- <TR><TD WIDTH="100%"> 
-  <TABLE WIDTH="100%" BORDER=0 CELLPADDING=0 CELLSPACING=0> 
-   <TR><TD WIDTH="20%" VALIGN="center" ALIGN="left"><A HREF="<!--#include file='include/wi_url.html'-->" border=0><IMG SRC="../images/mgi_logo_small.jpg" border=0 ALT="MGI"></A></TD> 
-<TD WIDTH="60%" ALIGN="center" VALIGN="center" BGCOLOR="#ffffff"><FONT COLOR="#000000" SIZE=5 FACE="Arial,Helvetica">Rules and Guidelines for Gene, Allele, and Mutation Nomenclature </FONT></TD>
-<TD WIDTH="20%" VALIGN="center" ALIGN="center" BGCOLOR="#ffffff">&nbsp;</TD></TR> 
-<TR BGCOLOR="blue"><TD COLSPAN=3><FONT face="Arial,Helvetica" color="#ffffff"><B>&nbsp;Mouse Genome Informatics</B></TD></TR> 
-<TR><TD BGCOLOR="#ffffff"><FONT SIZE=-1 FACE="Arial,Helvetica"><CENTER><A HREF="<!--#include file='include/wi_url.html'-->">MGI Home</A>&nbsp;&nbsp;&nbsp; <a href="../help/help.shtml">Help </A></FONT></CENTER></TD></TR> 
-</TABLE></TD></TR> 
-</TABLE> 
+<HTML>
+<HEAD>
+<TITLE><!--#include file='include/mgiversion.html'--> - Rules and Guidelines for Gene, Allele, and Mutation Nomenclature: Revised: May, 2003</TITLE>
+</HEAD>
+<BODY BGCOLOR="#ffffff">
+<TABLE WIDTH="100%" BORDER=0 CELLPADDING=0 CELLSPACING=0>
+ <TR><TD WIDTH="100%">
+  <TABLE WIDTH="100%" BORDER=0 CELLPADDING=0 CELLSPACING=0>
+   <TR><TD WIDTH="20%" VALIGN="center" ALIGN="left"><A HREF="<!--#include file='include/wi_url.html'-->" border=0><IMG SRC="../images/mgi_logo_small.jpg" border=0 ALT="MGI"></A></TD>
+<TD WIDTH="60%" ALIGN="center" VALIGN="center" BGCOLOR="#ffffff"><FONT COLOR="#000000" SIZE=5 FACE="Arial,Helvetica">Rules and Guidelines for Gene, Allele, and Mutation Nomenclature<br><font size=-2>Revised: May, 2003</font> </TD>
+<TD WIDTH="20%" VALIGN="center" ALIGN="center" BGCOLOR="#ffffff">&nbsp;</TD></TR>
+<TR BGCOLOR="blue"><TD COLSPAN=3><FONT face="Arial,Helvetica" color="#ffffff"><B>&nbsp;Mouse Genome Informatics</B></TD></TR>
+<TR><TD BGCOLOR="#ffffff"><FONT SIZE=-1 FACE="Arial,Helvetica"><CENTER><A HREF="<!--#include file='include/wi_url.html'-->">MGI Home</A>&nbsp;&nbsp;&nbsp; <a href="../help/help.shtml">Help </A></FONT></CENTER></TD></TR>
+</TABLE></TD></TR>
+</TABLE>
 <HR>
 
-<h2 ALIGN="CENTER">International Committee on Standardized Genetic Nomenclature for Mice</h2> 
+<h2 ALIGN="CENTER">International Committee on Standardized Genetic Nomenclature for Mice</h2>
 
-<h3><I><P ALIGN="CENTER">Chairperson: </I>Janan T. Eppig</h3> <h4 align=center>(e-mail: jte@informatics.jax.org)</h4> <p> Rules for mouse genetic nomenclature were first published by Dunn, Gruneberg, and Snell (1940) and subsequently revised by the International Committee for Standardized Genetic Nomenclature in Mice (1963, 1973, 1981, 1989, 1993). In 2000 these Guidelines were completely  rewritten in order to more clearly explain the existing rules.  Some existing gene names and symbols may retain names derived from earlier conventions that no longer apply. <p>Nomenclature guidelines are now reviewed and updated annually by the International Committee and documented at the MGD web site. The Guidelines found here include all revisions approved at the November 18, 2002 Committee meeting. <a href="nomenclature_archives.shtml">Archived Guidelines</a> (since 2000) are available.
+<h3><I><P ALIGN="CENTER">Chairperson: </I>Janan T. Eppig</h3>
 
-<h3>&nbsp;&nbsp;&nbsp;Table of Contents</h3> 
-<ul> 
-  <A HREF="#pon">1 &nbsp;Principles of Nomenclature</a><br> 
-    <ul> <A HREF="#kf">1.1&nbsp;Key Features</a><br> 
-         <A HREF="#def">1.2&nbsp; Definitions</a><br> 
-         <A HREF="#son">1.3 &nbsp;Stability of Nomenclature</a><br> 
-         <A HREF="#syn">1.4 &nbsp;Synonyms</a><br> 
-    </ul> 
-<A HREF="#nas">2 &nbsp;Names and Symbols of Genes and Loci</a><br> 
-<ul> 
- <A HREF="#labc">2.1 &nbsp;Lab Codes</a><br> 
- <A HREF="#ing">2.2 &nbsp;Identification of New Genes</a><br> 
- <a href="#glnas">2.3&nbsp; Gene and Locus Names and Symbols</a><br> 
- <a href="#sg">2.4&nbsp;Structural Genes</a> 
-  <ul> 
-   <A HREF="#gwhos">2.4.1&nbsp;Genes with Homologs in Other Species</a><br> 
-  </ul> 
- <A HREF="#pns">2.5&nbsp;Phenotype Names and Symbols</a><br> 
-  <ul> 
-    <A HREF="#lp">2.5.1 &nbsp;Lethal Phenotypes</a><br> 
-  </ul> 
- <A HREF="#gf">2.6 &nbsp;Gene Families</a><br> 
-  <ul> 
-   <A HREF="#fih">2.6.1 &nbsp;Families Identified by Hybridization</a><br> 
-   <A HREF="#fisc">2.6.2 &nbsp;Families Identified by Sequence Comparison</a><br> 
-  </ul> 
- <A HREF="#gilss">2.7 &nbsp;Genes Identified by Large Scale Sequencing</a><br> 
-   <ul> 
-      <A HREF="#mest">2.7.1 &nbsp;Mapped ESTs</a><br> 
-   </ul> 
- <A HREF="#adnas">2.8 &nbsp;Anonymous DNA Segments</a><br> 
-   <ul> 
-     <A HREF="#mdnas">2.8.1 &nbsp;Mapped DNA Segments</a><br> 
-     <A HREF="#stspm">2.8.2&nbsp; STSs Used in Physical Mapping</a><br> 
-   </ul> 
- <A HREF="#gtl">2.9 &nbsp;Gene Trap Loci</a><br> 
- <A HREF="#qtlrirs">2.10 &nbsp;Quantitative Trait Loci, Resistance, and Immune Response Genes</a><br> 
- <A HREF="#chreg">2.11&nbsp; Chromosomal Regions</a><br> 
-  <ul> 
-    <A HREF="#telo">2.11.1 &nbsp;Telomeres</a><br> 
-    <A HREF="#centro">2.11.2 &nbsp;Centromeres and Pericentric Heterochromatin</a><br> 
-    <A HREF="#nucorg">2.11.3 &nbsp;Nucleolus Organizers</a><br> 
-    <A HREF="#hsr">2.11.4 &nbsp;Homogeneously Staining Regions</a><br> 
-    <A HREF="#chrore">2.11.5&nbsp;Chromosomal Rearrangements</a><br> 
-  </ul> 
- </ul> 
-<A HREF="#nasvma">3 &nbsp;Names and Symbols for Variant and Mutant Alleles</a><br> 
-  <ul> 
-   <A HREF="#mutph">3.1 &nbsp;Mutant Phenotypes</a><br> 
-    <ul> 
-     <A HREF="#gkomp">3.1.1 &nbsp;Genes Known Only by Mutant Phenotypes</a><br> 
-     <A HREF="#pdmsg">3.1.2 &nbsp;Phenotypes Due to Mutations in Structural Genes</a><br> 
-     <A HREF="#wtar">3.1.3&nbsp;Wild Type Alleles and Revertants</a><br> 
-    </ul> 
-   <A HREF="#var">3.2 &nbsp;Variants</a><br> 
-  <ul> 
-    <A HREF="#biov">3.2.1&nbsp; Biochemical Variants</a><br> 
-    <A HREF="#dnasv">3.2.2&nbsp;DNA Segment Variants</a><br> 
-  </ul> 
- <A HREF="#vqtlrrg">3.3&nbsp;Variation in Quantitative Trait Loci and in Response and Resistance Genes</a><br> 
- <A HREF="#iim">3.4 &nbsp;Insertional and Induced Mutations</a><br> 
+<h4 align=center>(e-mail: jte@informatics.jax.org)</h4>
+
+<p>Rules for mouse genetic nomenclature were first published by Dunn, Gruneberg, and Snell (1940) and subsequently revised by the International Committee for Standardized Genetic Nomenclature in Mice (1963, 1973, 1981, 1989, 1993). In 2000 these Guidelines were completely  rewritten in order to more clearly explain the existing rules.  Some existing gene names and symbols may retain names derived from earlier conventions that no longer apply. <p>Nomenclature guidelines are now reviewed and updated annually by the International Committee and documented at the MGD web site. The Guidelines found here include all revisions approved at the November 18, 2002 Committee meeting. <a href="nomenclature_archives.shtml">Archived Guidelines</a> (since 2000) are available.
+
+<h3>&nbsp;&nbsp;&nbsp;Table of Contents</h3>
+<ul>
+  <A HREF="#pon">1 &nbsp;Principles of Nomenclature</a><br>
+    <ul> <A HREF="#kf">1.1&nbsp;Key Features</a><br>
+         <A HREF="#def">1.2&nbsp; Definitions</a><br>
+         <A HREF="#son">1.3 &nbsp;Stability of Nomenclature</a><br>
+         <A HREF="#syn">1.4 &nbsp;Synonyms</a><br>
+    </ul>
+<A HREF="#nas">2 &nbsp;Names and Symbols of Genes and Loci</a><br>
+<ul>
+ <A HREF="#labc">2.1 &nbsp;Lab Codes</a><br>
+ <A HREF="#ing">2.2 &nbsp;Identification of New Genes</a><br>
+ <a href="#glnas">2.3&nbsp; Gene and Locus Names and Symbols</a><br>
+ <a href="#sg">2.4&nbsp;Structural Genes</a>
+  <ul>
+   <A HREF="#gwhos">2.4.1&nbsp;Genes with Homologs in Other Species</a><br>
+  </ul>
+ <A HREF="#pns">2.5&nbsp;Phenotype Names and Symbols</a><br>
+  <ul>
+    <A HREF="#lp">2.5.1 &nbsp;Lethal Phenotypes</a><br>
+  </ul>
+ <A HREF="#gf">2.6 &nbsp;Gene Families</a><br>
+  <ul>
+   <A HREF="#fih">2.6.1 &nbsp;Families Identified by Hybridization</a><br>
+   <A HREF="#fisc">2.6.2 &nbsp;Families Identified by Sequence Comparison</a><br>
+  </ul>
+ <A HREF="#gilss">2.7 &nbsp;Genes Identified by Large Scale Sequencing</a><br>
    <ul>
-     <A HREF="#mosg">3.4.1&nbsp;Mutations of Structural Genes</a><br> 
-     <A HREF="#tim">3.4.2&nbsp;Transgenic Insertional Mutations</a><br> 
-   </ul> 
- <A HREF="#tarm">3.5&nbsp; Targeted Mutations</a><br> 
- </ul> 
-<A HREF="#transg">4&nbsp; Transgenes</a><br> 
-<A HREF="#trdef">5 &nbsp;Definitions</a><br> 
-  <ul> 
-  <A HREF="#trge">5.1 &nbsp;Gene</a><br> 
-  <A HREF="#trlo">5.2 &nbsp;Locus</a><br> 
-  <A HREF="#trma">5.3 &nbsp;Marker</a><br> 
-  <A HREF="#tral">5.4 &nbsp;Allele</a><br> 
-  <A HREF="#trva">5.5 &nbsp;Variant</a><br> 
-  <A HREF="#trmu">5.6 &nbsp;Mutation</a><br> 
-  <A HREF="#trdr">5.7 &nbsp;Dominant and Recessive</a><br> 
-  <A HREF="#trgtype">5.8&nbsp; Genotype</a><br> 
-  <A HREF="#trph">5.9 &nbsp;Phenotype</a><br> 
-  <A HREF="#trhap">5.10 &nbsp;Haplotype</a><br> 
-  <A HREF="#trho">5.11 &nbsp;Homolog</a><br> 
-  <A HREF="#tror">5.12 Ortholog</a><br> 
-  <A HREF="#trpa">5.13 Paralog</a><br> 
-  </ul> 
-<A HREF="#nomenref">6&nbsp; References</a><br> 
-</ul> 
-<h2><a name="pon">1&nbsp;&nbsp;&nbsp;Principles of Nomenclature</a></h2> 
+      <A HREF="#mest">2.7.1 &nbsp;Mapped ESTs</a><br>
+   </ul>
+ <A HREF="#adnas">2.8 &nbsp;Anonymous DNA Segments</a><br>
+   <ul>
+     <A HREF="#mdnas">2.8.1 &nbsp;Mapped DNA Segments</a><br>
+     <A HREF="#stspm">2.8.2&nbsp; STSs Used in Physical Mapping</a><br>
+   </ul>
+ <A HREF="#gtl">2.9 &nbsp;Gene Trap Loci</a><br>
+ <A HREF="#qtlrirs">2.10 &nbsp;Quantitative Trait Loci, Resistance, and Immune Response Genes</a><br>
+ <A HREF="#chreg">2.11&nbsp; Chromosomal Regions</a><br>
+  <ul>
+    <A HREF="#telo">2.11.1 &nbsp;Telomeres</a><br>
+    <A HREF="#centro">2.11.2 &nbsp;Centromeres and Pericentric Heterochromatin</a><br>
+    <A HREF="#nucorg">2.11.3 &nbsp;Nucleolus Organizers</a><br>
+    <A HREF="#hsr">2.11.4 &nbsp;Homogeneously Staining Regions</a><br>
+    <A HREF="#chrore">2.11.5&nbsp;Chromosomal Rearrangements</a><br>
+  </ul>
+ </ul>
+<A HREF="#nasvma">3 &nbsp;Names and Symbols for Variant and Mutant Alleles</a><br>
+  <ul>
+   <A HREF="#mutph">3.1 &nbsp;Mutant Phenotypes</a><br>
+    <ul>
+     <A HREF="#gkomp">3.1.1 &nbsp;Genes Known Only by Mutant Phenotypes</a><br>
+     <A HREF="#pdmsg">3.1.2 &nbsp;Phenotypes Due to Mutations in Structural Genes</a><br>
+     <A HREF="#wtar">3.1.3&nbsp;Wild Type Alleles and Revertants</a><br>
+    </ul>
+   <A HREF="#var">3.2 &nbsp;Variants</a><br>
+  <ul>
+    <A HREF="#biov">3.2.1&nbsp; Biochemical Variants</a><br>
+    <A HREF="#dnasv">3.2.2&nbsp;DNA Segment Variants</a><br>
+  </ul>
+ <A HREF="#vqtlrrg">3.3&nbsp;Variation in Quantitative Trait Loci and in Response and Resistance Genes</a><br>
+ <A HREF="#iim">3.4 &nbsp;Insertional and Induced Mutations</a><br>
+   <ul>
+     <A HREF="#mosg">3.4.1&nbsp;Mutations of Structural Genes</a><br>
+     <A HREF="#tim">3.4.2&nbsp;Transgenic Insertional Mutations</a><br>
+   </ul>
+ <A HREF="#tarm">3.5&nbsp; Targeted Mutations</a><br>
+ </ul>
+<A HREF="#transg">4&nbsp; Transgenes</a><br>
+<A HREF="#trdef">5 &nbsp;Definitions</a><br>
+  <ul>
+  <A HREF="#trge">5.1 &nbsp;Gene</a><br>
+  <A HREF="#trlo">5.2 &nbsp;Locus</a><br>
+  <A HREF="#trma">5.3 &nbsp;Marker</a><br>
+  <A HREF="#tral">5.4 &nbsp;Allele</a><br>
+  <A HREF="#trva">5.5 &nbsp;Variant</a><br>
+  <A HREF="#trmu">5.6 &nbsp;Mutation</a><br>
+  <A HREF="#trdr">5.7 &nbsp;Dominant and Recessive</a><br>
+  <A HREF="#trgtype">5.8&nbsp; Genotype</a><br>
+  <A HREF="#trph">5.9 &nbsp;Phenotype</a><br>
+  <A HREF="#trhap">5.10 &nbsp;Haplotype</a><br>
+  <A HREF="#trho">5.11 &nbsp;Homolog</a><br>
+  <A HREF="#tror">5.12 Ortholog</a><br>
+  <A HREF="#trpa">5.13 Paralog</a><br>
+  </ul>
+<A HREF="#nomenref">6&nbsp; References</a><br>
+</ul>
+<h2><a name="pon">1&nbsp;&nbsp;&nbsp;Principles of Nomenclature</a></h2>
 
-<h3><a name="kf">1.1&nbsp;&nbsp;&nbsp;Key Features</a></h3> 
-<p>The key component of nomenclature is the gene or locus name and symbol, which identifies a unit of inheritance. Other features, such as alleles, variants and mutations, are secondary to the gene name and become associated with it. Similarly, probes or assays used to detect a gene are not primary features and should not normally be used as names. 
+<h3><a name="kf">1.1&nbsp;&nbsp;&nbsp;Key Features</a></h3>
+<p>The key component of nomenclature is the gene or locus name and symbol, which identifies a unit of inheritance. Other features, such as alleles, variants and mutations, are secondary to the gene name and become associated with it. Similarly, probes or assays used to detect a gene are not primary features and should not normally be used as names.
 
-<p>The primary purpose of a gene name and symbol is to be a unique identifier so that information about the gene in publications, databases and other forms of communication can be unambiguously associated with the correct gene. These guidelines, therefore, are intended to aid the scientific community as a whole to use genetic information. 
+<p>The primary purpose of a gene name and symbol is to be a unique identifier so that information about the gene in publications, databases and other forms of communication can be unambiguously associated with the correct gene. These guidelines, therefore, are intended to aid the scientific community as a whole to use genetic information.
 
-<p>Other, secondary, functions of genetic nomenclature are to: 
-<ul> 
-<li>identify the gene as a member of a family, which may give further information about the gene by reference to other family members </li> 
-<li>identify the gene as the ortholog of a gene in another mammal (usually human).</li> 
-</ul> 
-<h3><a name="def">1.2&nbsp;&nbsp;&nbsp;Definitions</a></h3> 
+<p>Other, secondary, functions of genetic nomenclature are to:
+<ul>
+<li>identify the gene as a member of a family, which may give further information about the gene by reference to other family members </li>
+<li>identify the gene as the ortholog of a gene in another mammal (usually human).</li>
+</ul>
+<h3><a name="def">1.2&nbsp;&nbsp;&nbsp;Definitions</a></h3>
 
 <p>It is important that the user understands what is being named and the principles underlying these guidelines. <A HREF="#trdef">Section 5</a> presents definitions that will aid the user in distinguishing, for example, genes, loci, markers, and alleles.
 
 <h3><a name="son">1.3&nbsp;&nbsp;&nbsp;Stability of Nomenclature </a></h3>
-<p>On the whole gene names should be stable; that is, they should not be changed over time. However there are certain circumstances where a change is desirable: 
+<p>On the whole gene names should be stable; that is, they should not be changed over time. However there are certain circumstances where a change is desirable:
 
  <ul>
- <li>In cases where a gene has been known only as, and named for, a mutant phenotype: when the mutated gene is identified, then the mutant name becomes the mutant allele name of the identified gene (see  <A HREF="#pdmsg">Section&nbsp; 3.1.2</a>). 
- <li>Where a gene becomes assigned to a gene family (of paralogs), and the nomenclature of the family is established. (see <A HREF="#fisc">Section 2.6.2</a>). 
- </ul> 
+ <li>In cases where a gene has been known only as, and named for, a mutant phenotype: when the mutated gene is identified, then the mutant name becomes the mutant allele name of the identified gene (see  <A HREF="#pdmsg">Section&nbsp; 3.1.2</a>).
+ <li>Where a gene becomes assigned to a gene family (of paralogs), and the nomenclature of the family is established. (see <A HREF="#fisc">Section 2.6.2</a>).
+ </ul>
 
-<h3><a name="syn">1.4&nbsp;&nbsp;&nbsp;Synonyms</a></h3> 
+<h3><a name="syn">1.4&nbsp;&nbsp;&nbsp;Synonyms</a></h3>
 <p>A gene can have several synonyms, which are names or symbols that have been applied to the gene at various times. These synonyms may be associated with the gene in databases and publications, but the established gene name and symbol should always be used as the primary identifier.
 
-<h2><a name="nas">2&nbsp;&nbsp;&nbsp;Names and Symbols of Genes or Loci</a></h2> 
-<p>The prime function of a gene name is to provide a unique identifier. The Mouse Genome Database (MGD) serves as a central repository of gene names and symbols to avoid use of the same name for different genes or use of multiple names for the same gene (<a href="http://www.informatics.jax.org">www.informatics.jax.org</a>). The MGD Nomenclature Committee (nomen@informatics.jax.org) provides advice and assistance in assigning new names and symbols. A web tool for proposing a new locus symbol is located at the MGD site. 
+<h2><a name="nas">2&nbsp;&nbsp;&nbsp;Names and Symbols of Genes or Loci</a></h2>
+<p>The prime function of a gene name is to provide a unique identifier. The Mouse Genome Database (MGD) serves as a central repository of gene names and symbols to avoid use of the same name for different genes or use of multiple names for the same gene (<a href="http://www.informatics.jax.org">www.informatics.jax.org</a>). The MGD Nomenclature Committee (nomen@informatics.jax.org) provides advice and assistance in assigning new names and symbols. A web tool for proposing a new locus symbol is located at the MGD site.
 
-<h3><a name="labc">2.1&nbsp;&nbsp;&nbsp;Lab Codes</A></h3> 
-<p>A key feature of mouse nomenclature is the Laboratory Registration Code or Lab Code, which is a code of three to four letters (first letter uppercase, followed by all lowercase) that identifies  a particular institute, laboratory, or investigator that produced, and may hold stocks of, for example, a DNA marker, a mouse strain, or a mutation. Lab Codes are also used in naming chromosomal aberrations and transgenes. Lab Codes can be assigned by MGD or by the Institute for Laboratory Animal Research (ILAR) at <a href="http://dels.nas.edu/ilar/codes.asp?id=codes">http://dels.nas.edu/ilar/codes.asp?id=codes</a>. 
+<h3><a name="labc">2.1&nbsp;&nbsp;&nbsp;Lab Codes</A></h3>
+<p>A key feature of mouse nomenclature is the Laboratory Registration Code or Lab Code, which is a code of three to four letters (first letter uppercase, followed by all lowercase) that identifies  a particular institute, laboratory, or investigator that produced, and may hold stocks of, for example, a DNA marker, a mouse strain, or a mutation. Lab Codes are also used in naming chromosomal aberrations and transgenes. Lab Codes can be assigned by MGD or by the Institute for Laboratory Animal Research (ILAR) at <a href="http://dels.nas.edu/ilar/codes.asp?id=codes">http://dels.nas.edu/ilar/codes.asp?id=codes</a>.
 
-<p> 
-<ul> 
-<li>Examples of Lab Codes are: 
-<table border=0 cellpadding=4 width=60%> 
-<tr><td width="5%">&nbsp;<td width="10%" valign=top>J</td><td width="85%">The Jackson Laboratory</td></tr> 
-<tr><td>&nbsp;</td><td>Mit</td> <td>Massachusetts Institute of Technology</td></tr><td>&nbsp; </td><td>Leh</td><td>Hans Lehrach</td></tr> 
-</table> 
-</ul> 
+<p>
+<ul>
+<li>Examples of Lab Codes are:
+<table border=0 cellpadding=4 width=60%>
+<tr><td width="5%">&nbsp;<td width="10%" valign=top>J</td><td width="85%">The Jackson Laboratory</td></tr>
+<tr><td>&nbsp;</td><td>Mit</td> <td>Massachusetts Institute of Technology</td></tr><td>&nbsp; </td><td>Leh</td><td>Hans Lehrach</td></tr>
+</table>
+</ul>
 
-<h3><a name="ing">2.2&nbsp;&nbsp;&nbsp;Identification of New Genes</a></h3> 
+<h3><a name="ing">2.2&nbsp;&nbsp;&nbsp;Identification of New Genes</a></h3>
 <p>Identification of new genes in general comes in two ways; identification of a novel protein or DNA sequence or identification of a novel phenotype or trait. In the case of sequences, care should be taken in interpretation of database searches to establish novelty (for example, to distinguish between a new member of a gene family and an allele or alternative transcript of an existing family member). Novel mutant phenotypes or traits should be named according to their primary characteristic, but once the gene responsible for the phenotypic variation is identified, this gives the primary name of the gene and the mutant name becomes the name of the allele (see Section 2.3).
 
-<h3><a name="glnas">2.3&nbsp;&nbsp;&nbsp;Gene and Locus Names and Symbols</a></h3> 
+<h3><a name="glnas">2.3&nbsp;&nbsp;&nbsp;Gene and Locus Names and Symbols</a></h3>
 <p>Names of genes and loci should be brief, and convey accurate information about the gene. The name should not convey detailed information about the gene or assay used; this can be associated with the gene in publications or databases. While the gene name should ideally be informative as to the function or nature of the gene, care should be taken to avoid putting inaccurate information in the name. For example, a "liver-specific protein" may be shown by subsequent studies to be expressed elsewhere. Use of punctuation in gene names is strongly discouraged.
 
 <p>Genes and loci are given short symbols (mixtures of Roman letters and Arabic numbers with no punctuation except hyphens in certain limited circumstances) as abbreviations. Symbols should always be italicized in publications. In many cases, especially for example, with anonymous DNA loci, it is more convenient to use the symbol than the name. Symbols are italicized in this document; however, since italics can be difficult to read, depending on the browser, they are frequently not used in documents posted on the web.
 
-<p>Symbols should always begin with a letter (not a number), and to aid indexing, this letter should ideally be the same as the initial letter of the gene name. However, letter order in a gene symbol need not follow word order in the name. The initial letter should normally be uppercase, and the rest normally lowercase. Exceptions to this are: 
-<ul> 
-<li>If the gene (locus) is only identified by a recessive mutant phenotype, then the symbol should begin with a lower case letter. Once the mutant gene product is identified, that becomes the name and symbol of the gene and the original phenotype-based symbol becomes the allele name. The recessive nature of the allele is still conveyed by an initial lower case letter. 
+<p>Symbols should always begin with a letter (not a number), and to aid indexing, this letter should ideally be the same as the initial letter of the gene name. However, letter order in a gene symbol need not follow word order in the name. The initial letter should normally be uppercase, and the rest normally lowercase. Exceptions to this are:
+<ul>
+<li>If the gene (locus) is only identified by a recessive mutant phenotype, then the symbol should begin with a lower case letter. Once the mutant gene product is identified, that becomes the name and symbol of the gene and the original phenotype-based symbol becomes the allele name. The recessive nature of the allele is still conveyed by an initial lower case letter.
 <li>Within the symbol, Lab Codes have an initial uppercase letter.
 <li>When describing cross-hybridizing DNA segments, H (human) or other species code is uppercase. </ul>
 
-<p>Use of hyphens within the symbol should be kept to a minimum. Situations where hyphens may be used include: 
-<ul> 
-<li>Separating numbers in gene family member symbols (e.g., <i>Lamb1-2</i>). 
-<li>Separating related sequence and pseudogene symbols from the root (e.g., hexose kinase-related sequence 1 <i>Hk1-rs1</i>; hemoglobin alpha pseudogene 3 <i>Hba-ps3</i>). 
-<li>Within superscripted allele symbols (see <A HREF="#pdmsg">Section 3.1.2</a>). 
+<p>Use of hyphens within the symbol should be kept to a minimum. Situations where hyphens may be used include:
+<ul>
+<li>Separating numbers in gene family member symbols (e.g., <i>Lamb1-2</i>).
+<li>Separating related sequence and pseudogene symbols from the root (e.g., hexose kinase-related sequence 1 <i>Hk1-rs1</i>; hemoglobin alpha pseudogene 3 <i>Hba-ps3</i>).
+<li>Within superscripted allele symbols (see <A HREF="#pdmsg">Section 3.1.2</a>).
 </ul>
 
-<h3><a name="sg">2.4&nbsp;&nbsp;&nbsp;Structural Genes</a></h3> 
-<p>Ultimately the majority of gene names will be for structural genes that encode protein.  Where the protein is already named, the gene should as far as possible be given the same name. If the gene is recognizable by sequence comparison as a member of an established gene family, it should be named accordingly (see <A HREF="#gf">Section 2.6</a>). 
+<h3><a name="sg">2.4&nbsp;&nbsp;&nbsp;Structural Genes</a></h3>
+<p>Ultimately the majority of gene names will be for structural genes that encode protein.  Where the protein is already named, the gene should as far as possible be given the same name. If the gene is recognizable by sequence comparison as a member of an established gene family, it should be named accordingly (see <A HREF="#gf">Section 2.6</a>).
 
 <p>Alternative transcripts that originate from the same gene are not normally given different gene names. However, a transcript from the opposite strand that overlaps another gene, or a transcript that is derived principally from the introns of another gene, or one that uses an alternative reading frame to another gene (and does not use the existing frame to a significant extent) should have a different name.
 
-<h4><a name="gwhos">2.4.1&nbsp;&nbsp;&nbsp;Genes with Homologs in Other Species</a></h4> 
+<h4><a name="gwhos">2.4.1&nbsp;&nbsp;&nbsp;Genes with Homologs in Other Species</a></h4>
 <p>To aid interspecific comparison of genetic and other information, genes that are identifiable as a homolog of an already named gene in another species can be named as "-like" "-homolog" or "-related". (Note: this is not the same as "related sequence" which applies to related sequences within mouse.) The gene name or symbol should not include the name mouse or the abbreviation "M" for mouse. Where possible, genes that are recognizable orthologs of already-named human genes should be given the same name and symbol as the human gene.
 
-<h3><a name="pns">2.5&nbsp;&nbsp;&nbsp;Phenotype Names and Symbols</a></h3> 
+<h3><a name="pns">2.5&nbsp;&nbsp;&nbsp;Phenotype Names and Symbols</a></h3>
 <p>Genes named for phenotypes should aim to convey the phenotype briefly and accurately in a few words. It is accepted that the name may not cover all aspects of the phenotype; what is needed is a succinct, memorable and, most importantly, unique, name. Bear in mind that identification of a variant or mutant phenotype is recognition of an allelic form of an as-yet unidentified gene that may already have or will be given a name.
 
-<h4><a name="lp">2.5.1&nbsp;&nbsp;&nbsp;Lethal Phenotypes</a></h4> 
-<p>Genes identified solely by a recessive lethal phenotype with no heterozygous effect are named for the chromosomal assignment, a serial number and the name of the laboratory of origin (from the Lab Code). 
-<ul> 
-<li>For example, 
-<table border=0 cellpadding=4 width=60%> 
+<h4><a name="lp">2.5.1&nbsp;&nbsp;&nbsp;Lethal Phenotypes</a></h4>
+<p>Genes identified solely by a recessive lethal phenotype with no heterozygous effect are named for the chromosomal assignment, a serial number and the name of the laboratory of origin (from the Lab Code).
+<ul>
+<li>For example,
+<table border=0 cellpadding=4 width=60%>
 <tr> <td width="5%">&nbsp;</td><td width="10%" valign=top><i>l5H1</i></td> <td width="85%">First lethal on Chromosome 5 at Harwell</td></tr>
-<tr> <td>&nbsp; <td><i>l4Rn2</i><td>Second lethal on Chromosome 4 from laboratory of Gene Rinchik </tr> 
-</table> 
+<tr> <td>&nbsp; <td><i>l4Rn2</i><td>Second lethal on Chromosome 4 from laboratory of Gene Rinchik </tr>
+</table>
 </ul>
 
-<h3><a name="gf">2.6&nbsp;&nbsp;&nbsp;Gene Families</a></h3> 
+<h3><a name="gf">2.6&nbsp;&nbsp;&nbsp;Gene Families</a></h3>
 <p>Genes that appear to be members of a family should be named as family members. Evidence of gene families comes in a variety of forms, e.g., from a probe detecting multiple bands on a Southern blot, but is principally  based on sequence comparisons.
 
-<h4><a name="fih">2.6.1&nbsp;&nbsp;&nbsp;Families Identified by Hybridization</a></h4> <p>Historically, many gene families have been identified as fragments detected by hybridization to the same probe but which map to different loci. These family members may be functional genes or pseudogenes. The loci can be named "related sequence" of the founder gene with a serial number (symbol <i>-rs1, -rs2,</i> and so on). 
-<ul> 
-<li>For example, ornithine decarboxylase-related sequences 1 to 21. <i>Odc-rs1</i> to <i>Odc-rs21</i> 
-</ul> 
+<h4><a name="fih">2.6.1&nbsp;&nbsp;&nbsp;Families Identified by Hybridization</a></h4> <p>Historically, many gene families have been identified as fragments detected by hybridization to the same probe but which map to different loci. These family members may be functional genes or pseudogenes. The loci can be named "related sequence" of the founder gene with a serial number (symbol <i>-rs1, -rs2,</i> and so on).
+<ul>
+<li>For example, ornithine decarboxylase-related sequences 1 to 21. <i>Odc-rs1</i> to <i>Odc-rs21</i>
+</ul>
 
 <p>If the founder or functional gene can not be identified, initially all the fragments are named "related sequence" until it is identified; then that particular "-rs" is dropped, without renumbering. If there is evidence that any loci are pseudogenes, they should be named as such and given serial numbers as in <a href="#lp">2.5.1.</a>
 
@@ -234,16 +238,16 @@
 
 <p>Detailed guidelines for nomenclature of chromosomes are given in the next section. However, certain cytological features of normal chromosomes (such as telomeres, centromeres, and nucleolar organizers) and abnormal chromosomes (such as homogeneously-staining regions and end-points of deletions, inversions, and translocations) are genetic loci that are given names and symbols.
 
-<h4><a name="telo">2.11.1&nbsp;&nbsp;&nbsp;Telomeres</a></h4> 
-<p>The functional telomere should be denoted by the symbol <i>Tel</i>. A DNA segment that includes the telomere repeat sequence (TTAGGG)n and which maps to a telomeric location is symbolized in four parts: 
-<ol> 
-  <li><i>Tel</i> (for telomere) 
-  <li>The number of the chromosome 
-  <li><i>p</i> or <i>q</i> (for  the short or long arm, respectively) 
-  <li>A serial number, if more than one segment is assigned to the telomere 
+<h4><a name="telo">2.11.1&nbsp;&nbsp;&nbsp;Telomeres</a></h4>
+<p>The functional telomere should be denoted by the symbol <i>Tel</i>. A DNA segment that includes the telomere repeat sequence (TTAGGG)n and which maps to a telomeric location is symbolized in four parts:
+<ol>
+  <li><i>Tel</i> (for telomere)
+  <li>The number of the chromosome
+  <li><i>p</i> or <i>q</i> (for  the short or long arm, respectively)
+  <li>A serial number, if more than one segment is assigned to the telomere
 </ol>
 
-<ul> 
+<ul>
   For example, <i>Tel14q1</i>.
 </ul>
 
@@ -265,93 +269,93 @@
 <h4><a name="chrore">2.11.5&nbsp;&nbsp;&nbsp;Chromosomal Rearrangements </a></h4>
 
 
-<p>Symbols for chromosomal deletions, inversions, and translocations are given in the chromosomal nomenclature section. The end points of each of these rearrangements, however, define a locus. Where there is only a single locus on a chromosome, the chromosome anomaly symbol serves to define it. However, where an anomaly gives two loci on a single chromosome they can be distinguished by the letters p and d for proximal and distal. 
-<ul> 
-<li>For example, In(1)1Rk-p, In(1)1Rk-d are the proximal and distal end points of the chromosomal inversion In(1)1Rk. 
-</ul> 
+<p>Symbols for chromosomal deletions, inversions, and translocations are given in the chromosomal nomenclature section. The end points of each of these rearrangements, however, define a locus. Where there is only a single locus on a chromosome, the chromosome anomaly symbol serves to define it. However, where an anomaly gives two loci on a single chromosome they can be distinguished by the letters p and d for proximal and distal.
+<ul>
+<li>For example, In(1)1Rk-p, In(1)1Rk-d are the proximal and distal end points of the chromosomal inversion In(1)1Rk.
+</ul>
 
 <h2><a name="nasvma">3&nbsp;&nbsp; Names and Symbols for Variant and Mutant Alleles </a></h2>
 
 <p>Different alleles of a gene or locus can be distinguished by a number of methods, including DNA fragment length, protein electrophoretic mobility, or variant physiological or morphological phenotype.
 
-<p>All mutant alleles, whether of spontaneous or induced origin, targeted mutations, gene traps, or transgenics should be <a href="allmut_form.shtml">submitted</a> to MGD for an allele or gene accession identifier. 
+<p>All mutant alleles, whether of spontaneous or induced origin, targeted mutations, gene traps, or transgenics should be <a href="allmut_form.shtml">submitted</a> to MGD for an allele or gene accession identifier.
 
 <h3><a name="mutph">3.1&nbsp;&nbsp;&nbsp;Mutant Phenotypes</a></h3>
 
-<h4><a name="gkomp">3.1.1&nbsp;&nbsp;&nbsp;Genes Known Only by Mutant Phenotypes</a></h4> 
-<p>Where a gene is known only by mutant phenotype, the gene is given the name and symbol of the first identified mutant. Symbols of mutations conferring a recessive phenotype begin with a lower case letter; symbols for dominant or semidominant phenotype genes begin with an upper case letter. 
-<ul> 
+<h4><a name="gkomp">3.1.1&nbsp;&nbsp;&nbsp;Genes Known Only by Mutant Phenotypes</a></h4>
+<p>Where a gene is known only by mutant phenotype, the gene is given the name and symbol of the first identified mutant. Symbols of mutations conferring a recessive phenotype begin with a lower case letter; symbols for dominant or semidominant phenotype genes begin with an upper case letter.
+<ul>
 <li>For example, dancer, <i>Dc</i>; achondroplasia, <i>cn</i>.  </li>
 </ul>
 </p>
 
-<p>Further (allelic) mutations at the same locus, if they have the same phenotype, are given the same name with a Lab Code preceded by a serial number (if more than one additional allele from the same lab). In the symbol the Lab Code is added as a superscript. 
-<ul> 
+<p>Further (allelic) mutations at the same locus, if they have the same phenotype, are given the same name with a Lab Code preceded by a serial number (if more than one additional allele from the same lab). In the symbol the Lab Code is added as a superscript.
+<ul>
 <li>For example, <i>cn<sup>2J</sup></i>, the second new allele of achondroplasia identified at The Jackson Laboratory. </li>
 </ul>
 </p>
 
-<p>If a new allelic mutation of a gene known only by a mutant phenotype is caused by a transgenic insertion, the symbol of this mutation should use the symbol of the transgene as superscript (see <A HREF="#tim">Section 3.4.2</a> and  <A HREF="#transg">Section 4</a>). 
-<ul> 
+<p>If a new allelic mutation of a gene known only by a mutant phenotype is caused by a transgenic insertion, the symbol of this mutation should use the symbol of the transgene as superscript (see <A HREF="#tim">Section 3.4.2</a> and  <A HREF="#transg">Section 4</a>).
+<ul>
 <li><i>hy3<sup>Tg(Bdnf)459Ove</sup></i>; mutation of hydrocephalus 3 caused by a transgene, line 459, produced in the laboratory of Paul Overbeek. (An abbreviated form, <i>hy3<sup>Tg459Ove</sup></i>, can be used if the abbreviated designation is unique). </li>
 </ul>
 </p>
 
-<p>If the additional allele has a different phenotype, it may be given a different name, but when symbolized the new mutant symbol is superscripted to the original mutant symbol. Also, if a new mutation is described and named but not shown to be an allele of an existing gene until later, the original name of the new mutation can be kept. Even if the phenotype is apparently identical, the original symbol is used, with the new mutation symbol as superscript. 
-<ul> 
+<p>If the additional allele has a different phenotype, it may be given a different name, but when symbolized the new mutant symbol is superscripted to the original mutant symbol. Also, if a new mutation is described and named but not shown to be an allele of an existing gene until later, the original name of the new mutation can be kept. Even if the phenotype is apparently identical, the original symbol is used, with the new mutation symbol as superscript.
+<ul>
 <li>For example, grey coat is an allele of recessive spotting (<i>rs</i>), and hence is symbolized <i>rs<sup>grc</sup></i>. </li>
 </ul>
 </p>
 
 <h4><a name="pdmsg">3.1.2&nbsp;&nbsp;&nbsp;Phenotypes Due to Mutations in Structural Genes </a></h4>
 
-<p>When a spontaneous or induced mutant phenotype is subsequently found to be a mutation in a structural gene, or the gene in which the mutation has occurred is cloned, the mutation becomes an allele of that gene and the symbol for the mutant allele is formed by adding the original mutant symbol as a superscript to the new gene symbol. (The mutant symbol should retain its initial upper or lower case letter). 
-<ul> 
+<p>When a spontaneous or induced mutant phenotype is subsequently found to be a mutation in a structural gene, or the gene in which the mutation has occurred is cloned, the mutation becomes an allele of that gene and the symbol for the mutant allele is formed by adding the original mutant symbol as a superscript to the new gene symbol. (The mutant symbol should retain its initial upper or lower case letter).
+<ul>
 <li>The hotfoot (<i>ho</i>) mutation of the glutamate receptor <i>Grid2, Grid2<sup>ho</sup></i>. <li>The dominant white spotting (<i>W</I>) mutation of <i>Kit, Kit<sup>W</sup></i>.</li>
 </ul>
 </p>
 
-<p>If the original mutation has multiple alleles, when describing these alleles, their symbols become part of the superscript to the identified structural gene. 
-<ul> 
-<li>creeper, <i>Grid2<sup>ho-cpr</sup></I>. 
+<p>If the original mutation has multiple alleles, when describing these alleles, their symbols become part of the superscript to the identified structural gene.
+<ul>
+<li>creeper, <i>Grid2<sup>ho-cpr</sup></I>.
 <li>viable white spotting, <i>Kit<sup>W-v</sup></i>; sash, <i>Kit<sup>W-Sh</sup></i>. </li>
 </ul>
 </p>
 
-<p>Even if the identified gene is novel and unnamed, it is recommended that it is nevertheless given a name and symbol different from the mutant name and symbol. This will more readily allow discrimination between mutant and wild type and between gene and phenotype. 
+<p>Even if the identified gene is novel and unnamed, it is recommended that it is nevertheless given a name and symbol different from the mutant name and symbol. This will more readily allow discrimination between mutant and wild type and between gene and phenotype.
 
-<h4><a name="wtar">3.1.3&nbsp;&nbsp;&nbsp;Wild Type Alleles and Revertants</a></h4> 
-<p>The wild type allele of a gene is indicated by + as superscript to the mutant symbol. 
-<ul> 
+<h4><a name="wtar">3.1.3&nbsp;&nbsp;&nbsp;Wild Type Alleles and Revertants</a></h4>
+<p>The wild type allele of a gene is indicated by + as superscript to the mutant symbol.
+<ul>
 <li>The wild type allele of the achondroplasia mutation, <i>cn<sup>+</sup></i>.</li>
 <li>The wild type Kit locus (if necessary to distinguish from mutations), <i>Kit<sup>+</sup></i>.</li>
 </ul>
 </p>
 
-<P>A revertant to wild type of a mutant phenotype locus should be indicated by the symbol + with the mutant symbol as superscript. 
-<ul> 
+<P>A revertant to wild type of a mutant phenotype locus should be indicated by the symbol + with the mutant symbol as superscript.
+<ul>
 <li>Revertant to wild type at the hairless mutant locus <i>+<sup>hr</sup></i></li>
 </ul>
 </p>
 
-<p>Additional revertants are given a Lab Code and preceded by a serial number if more than one revertant is found in a lab. If the revertant is in a gene that has been cloned, then the mutant symbol is retained as superscript to the gene symbol, and + is appended. 
-<ul> 
+<p>Additional revertants are given a Lab Code and preceded by a serial number if more than one revertant is found in a lab. If the revertant is in a gene that has been cloned, then the mutant symbol is retained as superscript to the gene symbol, and + is appended.
+<ul>
 <li>Revertant to wild type of the dilute mutation of myosin Va; <i>Myo5a<sup>d+</sup></i></li> <li>Second such revertant identified at The Jackson Laboratory; <i>Myo5a<sup>d+2J</sup></i>.</li>
 </ul>
 </p>
 
-<h3><a name="var">3.2&nbsp;&nbsp;&nbsp;Variants</a></h3> 
+<h3><a name="var">3.2&nbsp;&nbsp;&nbsp;Variants</a></h3>
 
 <h4><a name="biov">3.2.1&nbsp;&nbsp;&nbsp;Biochemical Variants</a></h4> <P><b>Example:</b>&nbsp;&nbsp;
-Electrophoretic or other biochemical variant alleles of known structural genes are usually given lower case letters to indicate different alleles and in the symbol the letter becomes a superscript to the gene symbol. 
-<ul> 
+Electrophoretic or other biochemical variant alleles of known structural genes are usually given lower case letters to indicate different alleles and in the symbol the letter becomes a superscript to the gene symbol.
+<ul>
 <li>For example, glucose phosphate isomerase 1 alleles a and b; <i>Gpi1<sup>a</sup>, Gpi1<sup>b</sup></i>.</li>
 </ul>
 </p>
 
-<h4><a name="dnasv">3.2.2&nbsp;&nbsp;&nbsp;DNA Segment Variants</a></h4> 
-<p>Variants of DNA segments are indicated by a superscript to the symbol. The symbol is usually an abbreviation for the inbred strain in which the variant is being described. However, a particular allele may be found in several inbred strains, and, furthermore, it may be difficult to establish whether an allele in one strain is identical to one in another. The use of allele symbols for DNA segments is mainly limited to describing inheritance and haplotypes in crosses. As long as the symbols are defined in the description, users are free to use whatever allele symbol best fits their needs. In tables of genotypes, the gene symbol can be omitted and the allele abbreviation used alone. 
-<ul> 
+<h4><a name="dnasv">3.2.2&nbsp;&nbsp;&nbsp;DNA Segment Variants</a></h4>
+<p>Variants of DNA segments are indicated by a superscript to the symbol. The symbol is usually an abbreviation for the inbred strain in which the variant is being described. However, a particular allele may be found in several inbred strains, and, furthermore, it may be difficult to establish whether an allele in one strain is identical to one in another. The use of allele symbols for DNA segments is mainly limited to describing inheritance and haplotypes in crosses. As long as the symbols are defined in the description, users are free to use whatever allele symbol best fits their needs. In tables of genotypes, the gene symbol can be omitted and the allele abbreviation used alone.
+<ul>
 <li><i>D11Mit19<sup>a</sup>,</i> <i>D11Mit19<sup>b</sup></i>, <i>D11Mit19<sup>c</sup></i>.</li>
 </ul>
 </p>
@@ -362,14 +366,14 @@ Electrophoretic or other biochemical variant alleles of known structural genes a
 
 <p>Once the gene underlying a quantitative trait has been cloned or identified, the phenotypic name should be replaced by the name of the identified gene. The allele names and symbols should be the same as those used for the phenotype.
 
-<h3><a name="iim">3.4&nbsp;&nbsp;&nbsp;Insertional and Induced Mutations </a></h3> 
+<h3><a name="iim">3.4&nbsp;&nbsp;&nbsp;Insertional and Induced Mutations </a></h3>
 <p>Mutations that are induced, targeted, or selected in structural genes are named as alleles of the structural gene.
 </p>
 
 <h4><a name="mosg">3.4.1&nbsp;&nbsp;&nbsp;Mutations of Structural Genes</a></h4>
 
-<p>Variants of structural genes that are clearly mutations, whether or not they confer a phenotype, are given the superscript m#LabCode, where # is a serial number and is followed by the Lab Code where the mutation was found or characterized. If the mutation is known to have occurred on a particular allele, that can be specified by preceding the superscript with the allele symbol and a hyphen. 
-<ul> 
+<p>Variants of structural genes that are clearly mutations, whether or not they confer a phenotype, are given the superscript m#LabCode, where # is a serial number and is followed by the Lab Code where the mutation was found or characterized. If the mutation is known to have occurred on a particular allele, that can be specified by preceding the superscript with the allele symbol and a hyphen.
+<ul>
 <li>for example, <i>Mod1<sup>a-m1Lws</sup></i> is a mutation of the <i>Mod1<sup>a</sup></i> allele, the first found in the laboratory of Susan Lewis.</li>
 </ul>
 </p>
@@ -384,20 +388,20 @@ Electrophoretic or other biochemical variant alleles of known structural genes a
 
 <h3><a name="tarm">3.5&nbsp;&nbsp;&nbsp;Targeted Mutations</a></h3>
 
-<p>Mutations that are the result of gene targeting by homologous recombination in ES cells are given the symbol of the targeted gene, with a superscript consisting of three parts: the symbol <i>tm</i> to denote a targeted mutation, a serial number from the laboratory of origin and the Lab Code where the mutation was produced (see <A HREF="#labc">Section 2.1</A>). 
-<ul> 
+<p>Mutations that are the result of gene targeting by homologous recombination in ES cells are given the symbol of the targeted gene, with a superscript consisting of three parts: the symbol <i>tm</i> to denote a targeted mutation, a serial number from the laboratory of origin and the Lab Code where the mutation was produced (see <A HREF="#labc">Section 2.1</A>).
+<ul>
 <li>For example, <i>Cftr<sup>tm1Unc</sup></i> is the first targeted mutation of the cystic fibrosis transmembrane regulator (<i>Cftr</i>) gene produced at the University of North Carolina.</li>
 </ul>
 </p>
 
-<p>So-called "knock in" mutations in which all or part of coding region of one gene is replaced by another should be given a <i>tm</i> symbol and the particular details of the knock-in associated with the name in publications or databases. Where there has been a replacement of the <b>complete</b> coding region, the replacing gene symbol can be used parenthetically as part of the allele symbol of the replaced gene along with a Lab Code and serial number. 
+<p>So-called "knock in" mutations in which all or part of coding region of one gene is replaced by another should be given a <i>tm</i> symbol and the particular details of the knock-in associated with the name in publications or databases. Where there has been a replacement of the <b>complete</b> coding region, the replacing gene symbol can be used parenthetically as part of the allele symbol of the replaced gene along with a Lab Code and serial number.
 <ul>
  <li>For example, <i>En1<sup>tm1(Otx2)Wrst</sup></i> where the coding region of <i>En1</i> was replaced by the <i>Otx2</i> gene, originating from the W. Wurst laboratory.</li>
 </ul>
 </p>
 
-<p>When a targeting vector is used to generate multiple germline transmissible alleles, such as in the Cre-Lox system, the original knock-in of loxP would follow the regular tm designation rules. If a second <b>heritable</b> allele was then generated after mating with a cre transgenic mouse, it would retain the parental designation followed by a decimal point and serial number. 
-<ul> 
+<p>When a targeting vector is used to generate multiple germline transmissible alleles, such as in the Cre-Lox system, the original knock-in of loxP would follow the regular tm designation rules. If a second <b>heritable</b> allele was then generated after mating with a cre transgenic mouse, it would retain the parental designation followed by a decimal point and serial number.
+<ul>
 <li><i>Tfam<sup>tm1Lrsn</sup></i> and <i>Tfam<sup>tm1.1Lrsn</sup></i>. In this example, <i>Tfam<sup>tm1Lrsn</sup></i> designates a targeted mutation where loxP was inserted into the <i>Tfam</i> gene. <i>Tfam<sup>tm1.1Lrsn</sup></i> designates another <b>germline transmissible</b> allele generated after mating with a cre transgenic mouse. Note: <b>somatic events</b> generated in offspring from a <i>Tfam<sup>tm1Lrsn</sup></i> bearing mouse and a cre transgenic that cause disruption of <i>Tfam</i> in selective tissues would not be assigned nomenclature.</li>
 </ul>
 </p>
@@ -416,53 +420,53 @@ Electrophoretic or other biochemical variant alleles of known structural genes a
 
 <h2><a name="transg">4&nbsp;&nbsp;&nbsp;Transgenes</a></h2>
 
-<p>Any DNA that has been stably introduced into the germline of mice is a transgene. Transgenes can be broken down into two categories: 
-<ol> 
+<p>Any DNA that has been stably introduced into the germline of mice is a transgene. Transgenes can be broken down into two categories:
+<ol>
 <li>Those that are produced by homologous recombination as targeted events at particular loci </li> <br>
-<li>Those that occur by random insertion into the genome (usually by means of microinjection).</li>  
-</ol> 
+<li>Those that occur by random insertion into the genome (usually by means of microinjection).</li>
+</ol>
 </p>
 
 <p>Nomenclature for targeted genes is dealt with in <A HREF="#tarm">Section 3.5</a>. Random insertion of a transgene in or near an endogenous gene may produce a new allele of this gene. This new allele should be named as described in <A HREF="#tim">Section 3.4.2</a>. The transgene itself is a new genetic entity for which a name may be required. This section describes the guidelines for naming the inserted transgene.</p>
 
-<p>It is recognized that it is not necessary, or even desirable, to name all transgenes. For example, if a number of transgenic lines are described in a publication but not all are subsequently maintained or archived, then only those that are maintained require standardized names. The following Guidelines were developed by an interspecies committee sponsored by ILAR in 1992 and modified by the Nomenclature Committee in 1999 and 2000.  Transgenic symbols should be submitted to MGD through the usual <a href="nomen_submit_form.shtml">nomenclature submission form</a> for new loci. The transgene symbol is made up of four parts: 
-<ol> 
+<p>It is recognized that it is not necessary, or even desirable, to name all transgenes. For example, if a number of transgenic lines are described in a publication but not all are subsequently maintained or archived, then only those that are maintained require standardized names. The following Guidelines were developed by an interspecies committee sponsored by ILAR in 1992 and modified by the Nomenclature Committee in 1999 and 2000.  Transgenic symbols should be submitted to MGD through the usual <a href="nomen_submit_form.shtml">nomenclature submission form</a> for new loci. The transgene symbol is made up of four parts:
+<ol>
  <li>Tg denoting transgene</li> <br>
  <li>In parentheses, the official gene symbol of the inserted DNA, using nomenclature conventions of the species of origin</li> <br>
  <li>The laboratory's line or founder designation or a serial number </li> <br>
- <li>The Lab Code of the originating lab</li> 
-</ol> 
+ <li>The Lab Code of the originating lab</li>
+</ol>
 </p>
 
 <p>
-<ul> 
-<li><i>Tg(Zfp38)D1Htz</i> is a transgene containing the mouse <i>Zfp38</i> gene, in line D1 reported by Nathaniel Heintz. <li><i>Tg(CD8)1Jwg</i> is a transgene containing the human CD8 gene, the first transgenic line using this construct described by the lab of Jon W. Gordon.</li> 
+<ul>
+<li><i>Tg(Zfp38)D1Htz</i> is a transgene containing the mouse <i>Zfp38</i> gene, in line D1 reported by Nathaniel Heintz. <li><i>Tg(CD8)1Jwg</i> is a transgene containing the human CD8 gene, the first transgenic line using this construct described by the lab of Jon W. Gordon.</li>
  </ul>
 </p>
 
 <p>Different transgenic constructs containing the same gene should not be differentiated in the symbol; they will use the same gene symbol in parentheses and will be distinguished by the serial number/Lab Code. Information about the nature of the transgenic entity should be given in associated publications and database entries.</p>
 
-<p>In many cases, a large number of transgenic lines are made from the same gene construct and only differ by tissue specificity of expression. The most common of these are transgenes that use reporter constructs or recombinases (e.g., GFP, lacZ, cre), where the promoter should be specified as the first part of the gene insertion designation, separated by a hyphen from the reporter or recombinase designation. The SV40 large T antigen is another example. The use of promoter designations is helpful in such cases. 
+<p>In many cases, a large number of transgenic lines are made from the same gene construct and only differ by tissue specificity of expression. The most common of these are transgenes that use reporter constructs or recombinases (e.g., GFP, lacZ, cre), where the promoter should be specified as the first part of the gene insertion designation, separated by a hyphen from the reporter or recombinase designation. The SV40 large T antigen is another example. The use of promoter designations is helpful in such cases.
 <ul>
- <li><i>Tg(Wnt1-LacZ)206Amc</i> designates the LacZ transgene with a <i>Wnt1</i> promoter, from line 206 in the laboratory of Andrew McMahon.</li> 
- <li><i>Tg(Zp3-cre)3Mrt</i> designates the cre transgene with a <i>Zp3</i> promoter, the third transgenic line from the laboratory of Gail Martin.</li> 
+ <li><i>Tg(Wnt1-LacZ)206Amc</i> designates the LacZ transgene with a <i>Wnt1</i> promoter, from line 206 in the laboratory of Andrew McMahon.</li>
+ <li><i>Tg(Zp3-cre)3Mrt</i> designates the cre transgene with a <i>Zp3</i> promoter, the third transgenic line from the laboratory of Gail Martin.</li>
  </ul>
 </p>
 
-<p>In the case of a fusion gene insert, where roughly equal parts of two genes compose the construct, a forward slash separates the two genes in parentheses. 
-<ul> 
-<li>For example, <i>Tg(TCF3/HLF)1Mlc</i> is a transgene in which the human transcription factor 3 gene and the hepatic leukemia factor gene were inserted as a fusion chimeric cDNA, the first transgenic line produced by Michael L. Cleary's laboratory (Mlc). </li> 
+<p>In the case of a fusion gene insert, where roughly equal parts of two genes compose the construct, a forward slash separates the two genes in parentheses.
+<ul>
+<li>For example, <i>Tg(TCF3/HLF)1Mlc</i> is a transgene in which the human transcription factor 3 gene and the hepatic leukemia factor gene were inserted as a fusion chimeric cDNA, the first transgenic line produced by Michael L. Cleary's laboratory (Mlc). </li>
 </ul>
-</p> 
+</p>
 
-<p>This scheme is to name the transgene entity only. The mouse strain on which the transgene is maintained should be named separately as in the Guidelines for Mouse Strain Nomenclature. In describing a transgenic mouse strain, the strain name should precede the transgene designation. <ul> 
-<li>For example, C57BL/6J-<i>Tg(CD8)</i>1Jwg </li> </li> 
+<p>This scheme is to name the transgene entity only. The mouse strain on which the transgene is maintained should be named separately as in the Guidelines for Mouse Strain Nomenclature. In describing a transgenic mouse strain, the strain name should precede the transgene designation. <ul>
+<li>For example, C57BL/6J-<i>Tg(CD8)</i>1Jwg </li> </li>
 </ul>
-</p> 
+</p>
 
-<p>For BAC transgenics, the insert designation is the BAC clone and follows the same naming convention as the <a href="http://www.ncbi.nlm.nih.gov/genome/clone/">Clone Registry at NCBI</a>. <ul> 
-<li>For example, the BAC transgenic <I>Tg(RP22-412K21)15Som</I> is a transgenic insertion of a BAC from the BAC library RP22, plate 412, row K, column 21. It is the 15th from the laboratory of Stefan Somlo (Som). </li> 
-</ul> 
+<p>For BAC transgenics, the insert designation is the BAC clone and follows the same naming convention as the <a href="http://www.ncbi.nlm.nih.gov/genome/clone/">Clone Registry at NCBI</a>. <ul>
+<li>For example, the BAC transgenic <I>Tg(RP22-412K21)15Som</I> is a transgenic insertion of a BAC from the BAC library RP22, plate 412, row K, column 21. It is the 15th from the laboratory of Stefan Somlo (Som). </li>
+</ul>
 </p>
 
 <h2><a name="trdef">5&nbsp;&nbsp;&nbsp;Definitions </a></h2>
@@ -509,17 +513,17 @@ Electrophoretic or other biochemical variant alleles of known structural genes a
 
 <p>A haplotype is the association of genetically linked alleles, as found in a gamete. They may be a combination of any type of markers, and may extend over large, genetically separable distances, or be within a short distance such as within a gene and not normally separated.</p>
 
-<h3><a name="trho">5.11&nbsp;&nbsp;&nbsp;Homolog</a></h3> 
+<h3><a name="trho">5.11&nbsp;&nbsp;&nbsp;Homolog</a></h3>
 <p>Genes are homologous if they recognizably have evolved from a common ancestor. Note that genes are either homologous or not; there are no degrees of homology! For example, all globin genes, and myoglobin, are homologs, even though some are more closely related to each other than others. When a measure of relatedness between sequences is required, percent identity or similarity should be used.</p>
 
-<h3><a name="tror">5.12&nbsp;&nbsp;&nbsp;Ortholog</a></h3> 
+<h3><a name="tror">5.12&nbsp;&nbsp;&nbsp;Ortholog</a></h3>
 <p>Genes in two species are orthologs if they have evolved from a single common ancestral gene. For example, the beta globin genes of mouse and human are orthologs. Note that several genes in the mouse may have a single ortholog in another species and vice versa.</p>
 
-<h3><a name="trpa">5.13&nbsp;&nbsp;&nbsp;Paralog</a></h3> 
+<h3><a name="trpa">5.13&nbsp;&nbsp;&nbsp;Paralog</a></h3>
 <p>Paralogous genes are genes within the same species that have arisen from a common ancestor by duplication and subsequent divergence. For example, the mouse alpha globin and beta globin genes are paralogs.</p>
 
-<h2><a name="nomenref">6&nbsp;&nbsp;&nbsp;References</a></h3> 
-<ul> 
+<h2><a name="nomenref">6&nbsp;&nbsp;&nbsp;References</a></h3>
+<ul>
 Committee on Standardized Genetic Nomenclature for Mice, Chairperson: Davisson, M.T. 1996. Rules and guidelines for gene nomenclature. In: Genetic Variants and Strains of the Laboratory Mouse, Lyon, M.F., Rastan, S., Brown, S.D.M. (eds.), Third Edition, Volume 1, Oxford University Press, Oxford. 1-16.<br><br>
 
 Committee on Standardized Genetic Nomenclature for Mice, Chair: Lyon, M.F. 1981. Rules and guidelines for gene nomenclature. In: Genetic Variants and Strains of the Laboratory Mouse, Green, M.C. (ed.), First Edition, Gustav Fischer Verlag, Stuttgart. 1-7.<br><br>
@@ -537,8 +541,8 @@ International Committee on Standardized Genetic Nomenclature for Mice, Chairpers
 
 <hr>
 <!--#include file="include/footer.html"-->
-</BODY> 
-</HTML> 
+</BODY>
+</HTML>
 <!--Warranty Disclaimer and Copyright Notice THE JACKSON LABORATORY MAKES NO REPRESENTATION ABOUT THE SUITABILITY OR ACCURACY OF THIS SOFTWARE OR DATA FOR ANY PURPOSE, AND MAKES NO WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE OR THAT THE USE OF THIS SOFTWARE OR DATA WILL NOT INFRINGE ANY THIRD PARTY PATENTS, COPYRIGHTS, TRADEMARKS, OR OTHER RIGHTS. THE SOFTWARE AND DATA ARE PROVIDED "AS IS". This software and data are provided to enhance knowledge and encourage progress in the scientific community and are to be used only for research and educational purposes.  Any reproduction or use for commercial purpose is prohibited without the prior express written permission of the Jackson Laboratory. Copyright © 1996, 1999, 2002 by The Jackson Laboratory All Rights Reserved -->
 
 
