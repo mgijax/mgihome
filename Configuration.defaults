@@ -1,5 +1,5 @@
 # path to the web interface from which to import libraries
-WI_PATH		/usr/local/mgi/wi/dev/
+WI_PATH		/usr/local/mgi/wi/current/
 
 # path to our home installation
 MGIHOME_PATH	/usr/local/mgi/mgihome/current/
@@ -19,3 +19,12 @@ SENDMAIL	/usr/lib/sendmail
 
 # path to the web directory of the GEN (Gene Expression Notebook) product
 GEN_PATH	/usr/local/mgi/gen/www/
+
+# full URL to the associated MGI Web Interface installation
+WI_URL		http://www.informatics.jax.org/
+
+# full URL to this MGI Home installation
+MGIHOME_URL	http://www.informatics.jax.org/mgihome/
+
+# full URL to the associated ftp site
+FTP_URL		ftp://ftp.informatics.jax.org/

@@ -112,11 +112,16 @@ do
 	cd $TOP
 done
 
-# generate any include files
+# make the www/include directory and generate any include files
 
-cd admin
+cd www
+if [ ! -d include ]; then
+	echo "Making 'include' directory in `pwd`"
+	mkdir include
+fi
+cd $TOP/admin
 gen_includes
-cd ..
+cd $TOP
 
 # make sure the www directory is executable by the right group
 
