@@ -7,8 +7,30 @@ import string
 import db
 
 URL = config.lookup ('MGIHOME_URL')
+WI_URL = config.lookup ('WI_URL')
 db.set_sqlLogin (config.lookup ('DBUSER'), config.lookup ('DBPASSWORD'),
 	config.lookup ('DBSERVER'), config.lookup ('DATABASE'))
+
+FOOTER = [
+    '<TABLE BORDER=0 BGCOLOR="#FFFFFF" CELLPADDING=0 ',
+    'CELLSPACING=0 WIDTH="100%">',
+      '<TR BGCOLOR="#FFFFFF">',
+        '<TD width="50%" ALIGN=left><FONT SIZE=2>',
+          '<A HREF="%sother/citation.shtml">Citing These Resources</A>' % URL,
+          '<BR>',
+	  '<A HREF="%sother/mgi_funding.shtml">Funding Information</A>' % URL,
+	  '<BR>',
+	  '<A HREF="%sother/copyright.shtml">Warranty Disclaimer ' % URL,
+	  '&amp; Copyright Notice</A>',
+	  '<BR>',
+	  'Send questions and comments to ',
+	  '<A HREF="%ssupport/tjl_inbox.shtml">User Support</A>.' % URL,
+	  '</FONT></TD>',
+        '<TD WIDTH="1%" ALIGN=center><FONT SIZE=2>&nbsp;</FONT></TD>',
+        '<TD WIDTH="49%" ALIGN=right>',
+	'<A HREF="http://www.jax.org/" border=0><IMG BORDER=0 SRC="%simages/shared/jax_logo.gif" ALT="The Jackson Laboratory" HEIGHT=48 WIDTH=130></A>' % WI_URL,
+	'</TD></TR></TABLE>',
+]
 
 def footer ():
 	# Purpose: provide a standard footer for MGI Home-based web pages
@@ -17,22 +39,7 @@ def footer ():
 	# Effects: nothing
 	# Throws: None
 
-	return [ '<A HREF="http://www.jax.org/" target="_top">',
-		  '''<IMG SRC="%simages/jax_logo.gif" ALIGN=right
-			ALT="The Jackson Laboratory"></A>''' % URL,
-		  '<SMALL>',
-		  '''<A HREF="%sother/citation.shtml" target="_top">
-		        Citing These Resources</A>''' % URL, '<BR>',
-		  '''<A HREF="%sother/mgi_funding.shtml" target="_top">
-		        Funding Information</A>''' % URL, '<BR>',
-		  '''<A HREF="%sother/copyright.shtml" target="_top">
-		        Warranty Disclaimer &amp; Copyright Notice</A>.''' \
-			% URL,
-		        '<BR>',
-		  '''Send questions and comments to
-			<A HREF="%ssupport/tjl_inbox.shtml"
-			target="_top">User Support</A>.''' % URL,
-		  '</SMALL>' ]
+	return FOOTER
 
 def banner ():
 	# Purpose: provide a standard banner for MGI Home-based web pages
