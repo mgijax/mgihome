@@ -10,20 +10,21 @@ MGI Release 2.5 Announcement
 <!doctype html public "-//w3c//dtd html 3.2 final//en">
 <p>
 
-<H3>New MGI Vocabulary Browsers</h3>
+<H3>New MGI Vocabulary Browser</h3>
 
-<p>This release introduces a browser for viewing and querying structured vocabularies: 
+<p>The 2.5 release introduces a new  browser for viewing and querying the following vocabularies: 
 <ul>
-<li><a href="<!--#include file="include/go_url.html"-->">Gene Ontology (GO) Browser</a><p>
+<li><a href="<!--#include file="include/go_url.html"-->">Gene Ontology (GO)</a>
 <li><a href=anatDictionary/index.shtml>Mouse Anatomical Dictionary</a><br>
 </ul>
-<p>The browser links to detail pages for each entry in the vocabulary. 
+<p>The browser links to detail pages for each entry in a vocabulary. 
 The GO terms are grouped into three 
-categories that can be searched singly or in combination: molecular Function, biological process and cellular component.
+categories to search singly or in combination: molecular Function, biological process and cellular component.
 The Anatomy Dictionary links to each of the 28 Theiler stages.
-The query field accepts any text string and searches for all terms and synonyms.
+The Browser query field accepts any text string and searches for all terms and synonyms.
 An entry such as "muscle," for example, returns "muscle development," 
 "non-muscle myosin," and "structural protein of muscle."
+
 <h3>Homology Maps</h3>
 <p>Two new maps are available for viewing viewing and accessing homology data. The 
 maps display global views of human and rat orthology data 
@@ -40,16 +41,15 @@ human on mouse background</a>
 rat on mouse background</a>
 </ul>
 
-<h3>Allele and Mutant Data Submission Form<a href="../submissions/submissions_menu.shtml">
+<h3>Allele and Mutant Data<a href="../submissions/submissions_menu.shtml">
 </a></h3>
-<p>
-Forms are available for electronic submission of new allele and mutant data to MGD. 
+<p>There is a new form available for electronic submission of allele and mutant data to MGD. 
 Each submission receives a permanent database accession ID.
 MGD reference pages provide a link to the associated data sets. 
 P>All data sets are associated with
 either an electronic submission reference or a published paper. MGD reference
-pages provide links to associated data sets. <I>Mammalian Genome</I> will
-publish a list enumerating the data electronically submitted to MGD, including
+pages provide links to associated data sets. <I>Mammalian Genome</I> 
+publishes a list enumerating the data electronically submitted to MGD, including
 accession ID, chromosome, and locus symbols as a cross-referencing service
 for readers.</FONT>
 Rules and guidelines for submissions are at
@@ -57,7 +57,7 @@ Rules and guidelines for submissions are at
 
 
 <h3><a href="<!--#include file="include/wi_url.html"-->userdocs/glossary.shtml">Expanded MGI Glossary</a></dt></h3>
-<dd><p>The MGI Glossary is expanding. Genetic terms in the
+<dd><p>The MGI Glossary has expanded. Genetic terms in the
 <A HREF="<!--#include file="include/wi_url.html"-->
 userdocs/helpdocs_menu.shtml">help documents</A> are linked to their 
 definitions in the glossary. 
