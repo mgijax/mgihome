@@ -1601,6 +1601,9 @@ This document is written in HTML.<BR>You can view the HTML source code for this 
 <A HREF="#gene">gene</A> or set of genes on a
 <A HREF="#chromosome">chromosome</A>.
 
+
+<P><DT><B><A NAME="lod">LOD score</A></B><DD>Logarithm of odds score. The LOD score is a measure of genetic linkage, defined as the log<sub>10</sub> ratio of the probability that the data would have arisen if the loci are linked to the probability that the data would have arisen from unlinked loci. The conventional threshold for declaring linkage is a LOD score of 3.0, that is, a 1000:1 ratio (which must be compared with the 50:1 probability that any random pair of loci will be unlinked).
+
 <P><DT><B><A NAME="LOH2">LOH</A></B><DD>
 <A HREF="#LOH">Loss of heterozygosity.</a>
 
