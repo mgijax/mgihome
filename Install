@@ -53,8 +53,8 @@ exec < $CONFIGURATION
 while read name value junk
 do
 	case "$name" in
-		WI_PATH)
-			WI_PATH=$value;;
+		LIBDIRS)
+			LIBDIRS=$value;;
 		MGIHOME_PATH)
 			MGIHOME_PATH=$value;;
 		GEN_PATH)
