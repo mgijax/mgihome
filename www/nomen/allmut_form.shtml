@@ -3,11 +3,28 @@
 <TITLE>Mutant Submission Form</TITLE>
 </HEAD>
 <BODY BGCOLOR=#FFFFFF>
-<CENTER>
-<!--#include file="include/banner.html"-->
-</CENTER>
-<blockquote>
-<H2>Mutant Submissions Form</H2>
+<TABLE WIDTH="100%" BORDER=0 CELLPADDING=2 CELLSPACING=1>
+ <TR>
+  <TD WIDTH="100%" BGCOLOR="#D0E0F0">
+   <TABLE WIDTH="100%" BORDER=0 CELLPADDING=0 CELLSPACING=0>
+    <TR>
+     <TD WIDTH="20%" VALIGN="center" ALIGN="left">
+        <IMG SRC="<!--#include file='include/wi_url.html'-->images/shared/mgi_logo.jpg" WIDTH=160 HEIGHT=80>
+     </TD>
+     <TD WIDTH="60%" ALIGN="center" VALIGN="center">
+      <FONT COLOR="#000000" SIZE=5 FACE="Arial,Helvetica">
+     Mutant Submissions Form
+      </FONT>
+     </TD>
+     <TD WIDTH="20%" VALIGN="center" ALIGN="center">
+      &nbsp;
+     </TD>
+    </TR>
+   </TABLE>  </TD>
+ </TR>
+</TABLE>
+
+
 <ul>
 <li>Use this submission form to describe mutant alleles: either mutations whose allelism is unknown, or alleles of known genes. 
 <li>Submit only those mutations shown to be heritable.  
@@ -156,7 +173,7 @@ allele will be emailed to you shortly!  Thank you.</H3>
 <INPUT TYPE=submit VALUE="Submit"> <INPUT TYPE=reset VALUE="Reset Form">
 <HR>
 </FORM>
-</blockquote>
+
 <!--#include file="include/footer.html"-->
 </BODY>
 </HTML>

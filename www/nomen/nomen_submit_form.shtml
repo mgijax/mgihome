@@ -3,14 +3,32 @@
 <TITLE>Nomenclature Submission Form</TITLE>
 </HEAD>
 <BODY BGCOLOR=#FFFFFF>
-<!--#include file="include/banner.html"-->
-<H2>Submit a Proposed Locus Symbol</H2>
-Please fill in all the appropriate information.  If your contact details are already
-in MGD you only need to enter your name and e-mail address.  Press the submit button
-at the bottom of the form to send the information to the MGD Nomenclature Committee.
+<TABLE WIDTH="100%" BORDER=0 CELLPADDING=2 CELLSPACING=1>
+ <TR>
+  <TD WIDTH="100%" BGCOLOR="#D0E0F0">
+   <TABLE WIDTH="100%" BORDER=0 CELLPADDING=0 CELLSPACING=0>
+    <TR>
+     <TD WIDTH="20%" VALIGN="center" ALIGN="left">
+      <IMG SRC="<!--#include file='include/wi_url.html'-->images/shared/mgi_logo.jpg" WIDTH=160 HEIGHT=80>
+     </TD>
+     <TD WIDTH="60%" ALIGN="center" VALIGN="center">
+      <FONT COLOR="#000000" SIZE=5 FACE="Arial,Helvetica">
+       Nomenclature Submission Form
+      </FONT>
+     </TD>
+     <TD WIDTH="20%" VALIGN="center" ALIGN="center">
+      &nbsp;
+     </TD>
+    </TR>
+   </TABLE>  </TD>
+ </TR>
+</TABLE>
+<hr>
+<H3>Submit a Proposed Locus Symbol</H3>
+Please fill in all the appropriate information.  If your contact details are already in MGD you only need to enter your name and e-mail address.  Press the submit button at the bottom of the form to send the information to the MGD Nomenclature Committee.
 <P>
 <FORM METHOD="POST" ACTION="submit_nomen.cgi">
-<H2>Contact Details:</H2>
+<H3>Contact Details:</H3>
 <PRE>
 Last name:                    <INPUT TYPE="text" NAME="lastname" SIZE=30>(required)
 First name & middle name(s):  <INPUT TYPE="text" NAME="firstname" SIZE=30>(required)
