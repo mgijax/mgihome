@@ -22,27 +22,31 @@
  </TR>
 </TABLE>
 
-<p>Due to MGI's implementation of accession ID handling, we are providing this page of instructions for creating URL links to MGI.<I>Note:</I> We strongly recommend using the new URL for linking to MGI.  Other URLs may not be supported in the future.
+<p>This page provodes instructions for creating URL links to MGI. We recommend strongly that you use these URLs for linking to MGI since alternative URLs may not be supported in the future.
 
-<H4>New URL and Syntax</H4>
+<H4>URL and Syntax</H4>
 
-We have provided a new CGI program for linking to MGI via accession ID:
+A CGI program links to MGI via accession ID. Use the following syntax to access it:
 
 <UL><CODE>http://www.informatics.jax.org/searches/accession_report.cgi?id=xxxx</CODE></UL> where <CODE>xxxx</CODE> is a comma-separated list of Accession IDs.
 <P>
-The result is one or more objects from MGI associated with the given IDs.
+The result is a display of or more MGI objects associated with the given IDs.
 <P>
 MGI stores objects with accession IDs from many sources.  Some examples of valid Accession IDs are
 
 <UL>
-<LI>MGI:12345 (MGI Accession ID)
-<LI>J:12345 (J Number)
-<LI>GDB:12345 (GDB Accession ID)
-<LI>K02800 (GenBank Sequence ID)
-<li>GO:0030264 (GO Accession ID)
+<LI>MGI:12345 (MGI Accession ID)</li>
+<LI>J:12345 (J Number)</li>
+<LI>GDB:12345 (GDB Accession ID)</li>
+<LI>K02800 (GenBank Sequence ID)</li>
+<li>GO:0030264 (GO Accession ID)</li>
+<LI>NM_021099, AF193796, AB005457, U20370, M22115 (GenBank accession IDS)</LI>
+<LI>TC1117791 (TIGR Mouse Gene Index accession ID)</LI>
+<LI>B830009P17 (Riken clone ID)</LI>
 </UL>
 
-There are eleven types of objects supported by this URL:
+<P>For sequences, MGI uses the sequence provider's accession ID. (For more details about sequences and MGI accession IDs, see <A HREF="<!--#include file='include/wi_url.html'-->userdocs/accession_help.shtml">Using the Accession IDs Query Form</A>.</P>
+There are many types of objects supported by this URL:
 
 <UL>
 <LI>References
@@ -114,13 +118,11 @@ Additional linking options are available upon request.
 <HR>
 
 <H4>What the CGI Will Return</H4>
-If the search expression matches a single reference, segment, marker or
-experiment, a detailed description will be displayed.
+If the search expression matches a single reference, segment, marker, sequence, or experiment, a detailed description appears.
 If the search expression matches a non-mouse marker (such as a human gene), a
-list of homologies will be displayed for that marker.
+list of homologies appears for that marker.
 If the search expression matches more than one object, a summary screen
-will be displayed which lists each match along with its MGI accession ID,
-Type, Subtype, and a short description.
+appears, listing record types in MGI that are associated with the accession ID(s) along with the MGI accession ID, external database links, MGI links, type, and a short description.
 <HR>
 <H4>Data Dumps for Obtaining Accession IDs</H4>
 All data dumps are tab-delimited and generated nightly.  The MGI Accession ID 
