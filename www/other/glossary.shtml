@@ -19,7 +19,7 @@
 <P>There are an number of useful online glossaries in addition to this one:
 <UL>
 <LI>The <A HREF="<!--#include file='include/wi_url.html'-->/searches/anatdict_form.shtml">Mouse Anatomical Dictionary</A> displays anatomical terms of the mouse in a hierarchical manner for a series of developmental stages, using <A HREF="http://genex.hgu.mrc.ac.uk/Databases/Anatomy/">standard anatomical nomenclature</A>.</LI>
-<LI>The <A HREF="http://genome-www.stanford.edu/GO/GO.defs.txt">GO Term Definitions</A> page provides current definitions of all terms used in the Gene Ontology Project.</LI>
+<!--<LI>The <A HREF="http://www.geneontology.org/doc/GO.usage.html#term">GO Term Definitions</A> page provides current definitions of all terms used in the Gene Ontology Project.</LI>-->
 <LI>The <A HREF="http://www.nhgri.nih.gov/DIR/VIP/Glossary/pub_glossary.cgi">Glossary of Genetic Terms</A> at the National Human Genome Research Institute defines basic genetic terms most relevant to human genetics. This glossary includes audio explanations and illustrations.</LI>
 <li>The <a href="http://www.ornl.gov/TechResources/Human_Genome/glossary/">Genome Glossary</A> for the Human Genome Project defines many basic genetic terms.</LI>
 <LI>The <A HREF="http://imsr.har.mrc.ac.uk/glossary.html">International Mouse Strain Resources Glossary</A> at Harwell defines mouse cytogenetic and strain terms.</LI>
@@ -312,7 +312,7 @@ at <A HREF="#NHGRI">NHGRI</A>. See also <A HREF="#central_dogma">Central Dogma</
 <P><DT><B><A NAME="coisogenic">Coisogenic</A></B>
 <DD>A strain that differs from a particular <A HREF="#inbred_strain">inbred strain</A> at only one
 <A HREF="#locus">locus</A>. A coisogenic strain arises when a <A HREF="#mutation">mutation</A> occurs in an inbred 
-strain. The coisogenic strain can be propagated by <A HREF="#intercross">intercrossing</A> <A HREF="#heterozygote">heterozygotes</A> to produce <A HREF="#homozygote">homozygotes</A>; if these are nonviable the strain can be maintained by <A HREF="#backcross">backcrossing</A> heterozygotes to the original <A HREF="#inbred_strain">inbred strain</A>. See also the <A HREF="../nomen/strains.shtml#Inbred">Rules for the Nomenclature of Inbred Strains</A>.
+strain. The coisogenic strain can be propagated by <A HREF="#intercross">intercrossing</A> <A HREF="#heterozygote">heterozygotes</A> to produce <A HREF="#homozygote">homozygotes</A>; if these are nonviable the strain can be maintained by <A HREF="#backcross">backcrossing</A> heterozygotes to the original <A HREF="#inbred_strain">inbred strain</A>. See also the <A HREF="../nomen/strains.shtml#coisogenic">Rules for Nomenclature of Mouse and Rat Strains</A>.
 
 <P><DT><B><A NAME="colloidal_gold">Colloidal Gold</A></B>
 <DD>Fine particles of gold (on the order of 5-20 nm diameter) that can be coupled to <A HREF="#antibody">antibodies</A> or other
@@ -342,22 +342,21 @@ strain. The coisogenic strain can be propagated by <A HREF="#intercross">intercr
 <DD> An <A HREF="#inbred_strain">inbred strain</A> of mouse that contains a small genetic region (ideally a single
 <A HREF="#gene">gene</A>)from another strain, but which is otherwise identical to the original <A HREF="#inbred_strain">inbred strain</A>. Congenic strains are derived by backcrossing to a parental inbred strain for at least ten generations while selecting for <A HREF="#heterozygous">heterozygosity</A> at a particular <A HREF="#locus">locus</A>.
 <A HREF="http://jaxmice.jax.org/jaxmice-cgi/jaxmicedb.cgi?objtype=pricedetail&stock=000140">A.BY-H2<SUP>b</SUP> H2-T18b/SnJ</A>
-is a congenic strain. See also the <A HREF="../nomen/strains.shtml#Inbred">Rules 
-for the Nomenclature of Inbred Strains</A>.
+is a congenic strain. See also the <A HREF="../nomen/strains.shtml#congenic">Rules 
+for Nomenclature of Mouse and Rat Strains</A>.
 
 <P><DT><B><A NAME="conplastic">Conplastic</A></B>
 <DD>Conplastic strains are developed by backcrossing the <A HREF="#nucleus">nuclear</A> <A HREF="#genome">genome</A> from one
 <A HREF="#inbred_strain">inbred strain</A> into the <A HREF="#cytoplasm">cytoplasm</A> of another, i.e. the
 <A HREF="#mitochondria">mitochondrial</A> parent is always the female parent during the <A HREF="#backcross">backcrossing</A> program. The strain designation is NUCLEAR GENOME-mtCYTOPLASMIC GENOME. For example, C57BL/6J-mtBALB/c is a strain with the nuclear genome of C57BL/6J and the cytoplasmic genome of BALB/c. It was developed by crossing male C57BL/6J mice with BALB/c females, followed by repeated backcrossing of female offspring to male C57BL/6J. As with <A HREF="#congenic">congenic</A> strains, a minimum of 10 backcross generations is required, counting the F1 generation as generation 1. See also the
-<A HREF="../nomen/strains.shtml#Inbred">Rules for the Nomenclature of Inbred Strains</A>.
+<A HREF="../nomen/strains.shtml#conplastic">Rules for Nomenclature of Mouse and Rat Strains</A>.
 
 <P><DT><B><A NAME="conserved_synteny">Conserved synteny</A></B>
 <DD>The occurrence of <A HREF="#synteny">synteny</A> of <A HREF="#ortholog">orthologous</A> <A HREF="#gene">genes</A> in two different organisms. Conserved synteny between mouse and human does not usually extend over entire <A HREF="#chromosome">chromosomes</A>, with the exception of the <A HREF="#X_chromosome">X chromosome</A>. See the
 <A HREF="<!--#include file='include/wi_url.html'-->/searches/oxfordgrid_form.shtml">Oxford Grid</A> for a graphical display of conserved synteny.
 
 <P><DT><B><A NAME="consomic">Consomic</A></B>
-<DD>An <A HREF="#inbred_strain">inbred strain</A> of mouse that contains a single entire <A HREF="#chromosome">chromosome</A> from another strain. See also the <A HREF="../nomen/strains.shtml#Inbred">Rules 
-for the Nomenclature of Inbred Strains</A>.
+<DD>An <A HREF="#inbred_strain">inbred strain</A> of mouse that contains a single entire <A HREF="#chromosome">chromosome</A> from another strain. See also the <A HREF="../nomen/strains.shtml#consomic">Rules for Nomenclature of Mouse and Rat Strains</A>.
 
 <P><DT><B><A NAME="contig">Contig</A></B>
 <DD>1. A physical map of contiguous genomic <A HREF="#DNA">DNA</A> assembled using overlapping cloned segments (see
@@ -881,7 +880,7 @@ as having been inherited from the maternal or paternal parent. In mammals, some 
 
 <P><DT><B><A NAME="inbred_strain">Inbred Strain</A></B>
 <DD>A strain that is essentially <A HREF="#homozygous">homozygous</A> at all loci. In mice, a strain produced from brother-sister
-matings for at least 20 sequential generations. C57BL/6J is a widely-used <A HREF="#inbred_strain">inbred strain</A> of mouse. See also the <A HREF="http://www.informatics.jax.org/mgihome/nomen/strains.shtml#Inbred">Rules for the Nomenclature of Inbred Strains</A>.
+matings for at least 20 sequential generations. C57BL/6J is a widely-used <A HREF="#inbred_strain">inbred strain</A> of mouse. See also the <A HREF="../nomen/strains.shtml#inbred_strains">Rules for Nomenclature of Mouse and Rat Strains</A>.
 
 <P><DT><B><A NAME="incross">Incross</A></B>
 <DD>A <A HREF="#cross">cross</A> between two identically <A HREF="#homozygous">homozygous</A> individuals (A/A X A/A). <BR>See also:<UL><LI><A HREF="#backcross">Backcross</A></LI><LI><A HREF="#intercross">Intercross</A></LI><LI>
@@ -1683,8 +1682,7 @@ visible light, infrared light, microwaves and radio waves. In mouse genetics, th
 
 <P><DT><B><A NAME="recombinant_inbred">Recombinant Inbred Strain</A></B>
 <DD>In mouse, an <A HREF="#inbred_strain">inbred strain</A> of animals started from a <A HREF="#cross">cross</A> between two different inbred strains followed by inbreeding for at least 20 generations. A panel of recombinant inbred strains derived from a cross between two parental strains can be used to establish <A HREF="#linkage">linkage</A> between any <A HREF="#marker">marker</A> that is <A HREF="#polymorphism">polymorphic</A> between the parental strains and other polymorphic markers that have been typed in each strain in the panel. See the Recombinant Inbred Strain Distribution Panel 
-<A HREF="<!--#include file='include/wi_url.html'-->/searches/riset_form.shtml">Query Form</A> at <A HREF="#MGI">MGI</A>. See also the <A HREF="http://www.informatics.jax.org/mgihome/nomen/strains.shtml#Inbred">Rules
-for the Nomenclature of Inbred Strains</A>.
+<A HREF="<!--#include file='include/wi_url.html'-->/searches/riset_form.shtml">Query Form</A> at <A HREF="#MGI">MGI</A>. See also the <A HREF="../nomen/strains.shtml#ris">Rules for Nomenclature of Mouse and Rat Strains</A>.
 
 <P><DT><B><A NAME="recombination">Recombination</A></B>
 <DD>Transfer of information from one <A HREF="#DNA">DNA</A> molecule to another. Recombination may be <B>reciprocal</B>, in which case the products are equivalent to breakage of the two DNA molecules and rejoining of the broken ends to form new molecules. Recombination may also be <B>nonreciprocal</B>, in which case the product is equivalent to transfer of information from the donor DNA molecule to the recipient DNA molecule, with no change in the donor DNA molecule. Reciprocal recombination events are also called <A HREF="#crossover">crossovers</A>.

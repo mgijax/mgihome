@@ -10,8 +10,8 @@
 </HEAD>
 <BODY BGCOLOR="#ffffff">
 <!--#include file="include/banner.html"-->
-
-<h1 ALIGN="CENTER"><a name="rfnomars">3.<spacer type=horizontal size=15>Rules for Nomenclature of Mouse and Rat Strains</a></h1>
+<hr>
+<h1 ALIGN="CENTER"><a name="rfnomars"><spacer type=horizontal size=15>Rules for Nomenclature of Mouse and Rat Strains</a></h1>
 
 <blockquote>
 <pre>
@@ -32,33 +32,74 @@ This document is currently under review by the international nomenclature commit
 <blockquote>
 <p>In 2001, the International Committee on Standardized Nomenclature for Mice and the Rat Genome and Nomenclature Committee agreed to establish a joint set of rules for strain nomenclature, applicable to strains of both species. These rewritten guidelines reflect this collaboration in addition to documenting new and revised rules for the naming of strains.
 
-<p>Reference to former versions of the rules for mouse strain nomenclature can be found in Snell (1941), Committee for Standardized Genetic Nomenclature in Mice (1952, 1960, 1976, 1981, 1989, 1996), Festing (1979, 1993), Staats (1986), Maltais et al (1997), and in the archived online <a href="strains.shtml">Rules for Nomenclature of Inbred Strains</a>  in the Mouse Genome Database (MGD). 
+<p>Reference to former versions of the rules for mouse strain nomenclature can be found in Snell (1941), Committee for Standardized Genetic Nomenclature in Mice (1952, 1960, 1976, 1981, 1989, 1996), Festing (1979, 1993), Staats (1986), Maltais et al (1997), and in the archived online Rules for Nomenclature of Inbred Strains in the Mouse Genome Database (MGD)
+<a href="old_strain.shtml">http://www.informatics.jax.org/mgihome/nomen/old_strain.shtml</a>.
 
 <p>Current nomenclature rules for naming genes are available online:<br><br>
 <blockquote>
-For <a href="gene.shtml#genenom">mouse</a><br>
-For <a href="http://rgnc.gen.gu.se/Brief.html">rat</a>
+For mouse: <a href="gene.shtml#genenom">http://www.informatics.jax.org/mgihome/nomen/gene.shtml#genenom</a><br>
+For rat: <a href="http://rgnc.gen.gu.se/Brief.html">http://rgnc.gen.gu.se/Brief.html</a>
+</blockquote>
 </blockquote>
 </blockquote>
 <blockquote>
-<h2><a name="introduction"></a>3.1<spacer type=horizontal size=15>Introduction</h2>
+<h3>Table of Contents</h3>
+</blockquote>
+ <UL>
+  <A HREF="strains.shtml#introduction">1 Introduction</A><br>
+    <ul>
+    <A HREF="strains.shtml#mice">1.1 Mice</A><br>
+    <A HREF="strains.shtml#rats">1.2 Rats</A><br>
+     </ul>
+   <A HREF="strains.shtml#labcodes">2 Lab Codes</A><br>
+   <A HREF="strains.shtml#inbred_strains">3 Inbred Strains</A><br>
+     <ul>
+     <A HREF="strains.shtml#definition">3.1 Definition</A> <br>
+     <A HREF="strains.shtml#nois">3.2 Nomenclature of Inbred Strains</A><br>
+     <A HREF="strains.shtml#ioi">3.3 Indication of Inbreeding</A> <br>
+     <A HREF="strains.shtml#substrains">3.4 Substrains</A><br>
+     </UL>
+   <A HREF="strains.shtml#hasmfmis">4 Hybrids and Strains Made from Multiple Inbred Strains</A><br>
+     <ul>
+      <A HREF="strains.shtml#hybrids">4.1 Hybrids</A><br>
+      <A HREF="strains.shtml#ris">4.2 Recombinant Inbred Strains</A><br>
+      <A HREF="strains.shtml#mis">4.3 Mixed Inbred Strains</A><br>
+      <A HREF="strains.shtml#rcs">4.4 Recombinant Congenic Strains</A><br>
+      <A HREF="strains.shtml#ail">4.5 Advanced Intercross Lines</A><br>
+     </ul>
+    <A HREF="strains.shtml#ccasis">5 Coisogenic, Congenic, and Segregating Inbred Strains</A><br>
+      <ul>
+      <A HREF="strains.shtml#definitions">5.1 Definitions</A><br>
+      <A HREF="strains.shtml#coisogenic">5.2 Coisogenic Strains</A><br>
+      <A HREF="strains.shtml#congenic">5.3 Congenic Strains</A><br>
+      <A HREF="strains.shtml#consomic">5.4 Consomic Strains</A><br>
+      <A HREF="strains.shtml#sis">5.5 Segregating Inbred Strains</A><br>
+      <A HREF="strains.shtml#conplastic">5.6 Conplastic Strains</A><br>
+  </ul>
+  <A HREF="strains.shtml#references">6 References</A>
+ </UL>
+<blockquote>
+<h2><a name="introduction"></a>1<spacer type=horizontal size=15>Introduction</h2>
 
 <p>Mice and rats used in the laboratory derive from a variety of sources. Production of inbred strains means that these backgrounds can be defined and thus require nomenclature conventions. It should be borne in mind that genetic drift means that there may still be unknown genetic differences between individuals within strains.
 
-<h3><a name="mice"></a>3.1.1<spacer type=horizontal size=15>Mice</h3>
+<h3><a name="mice"></a>1.1<spacer type=horizontal size=15>Mice</h3>
 <p>
 Most laboratory mice have contributions from both <I>Mus musculus musculus</I> and <I>Mus musculus domesticus</I>. There is evidence that smaller contributions also may have come from <I>Mus musculus molossinus</I> and <I>Mus musculus castaneus.</I> Therefore, they should not be referred to by species name, but rather as laboratory mice or by use of a specific strain or stock name. (In addition, some recently developed laboratory mouse strains are derived wholly from other <I>Mus</I> species or other subspecies, such as <I>M. spretus</I>).
 <p>
-Mouse strain names should be registered through the <a href="../submissions/submission_menu.shtml">Mouse Genome Database (MGD)</a>. 
+Mouse strain names should be registered through the Mouse Genome Database (MGD) at 
+<a href="../submissions/submissions_menu.shtml">http://www.informatics.jax.org/mgihome/submissions/submissions_menu.shtml</a>. 
 
-<h3><a name="rats"></a>3.1.2<spacer type=horizontal size=15>Rats</h3>
+<h3><a name="rats"></a>1.2<spacer type=horizontal size=15>Rats</h3>
 <p>Most laboratory rat strains derive from the <I>Rattus norvegicus species</I>. Another species, <I>Rattus rattus</I>, also is used as an experimental model, but has not contributed to the common laboratory rat strains.
 
-<p>Rat strain names should be registered through the <a href="http://rgd.mcw.edu">Rat Genome Database (RGD)</a>.
+<p>Rat strain names should be registered through the Rat Genome Database (RGD) at 
+<a href="http://rgd.mcw.edu">http://rgd.mcw.edu</a>.
 
-<h2><a name="labcodes"></a>3.2<spacer type=horizontal size=15>Lab Codes</h2>
+<h2><a name="labcodes"></a>2<spacer type=horizontal size=15>Lab Codes</h2>
 
-A key feature of mouse and rat nomenclature is the Laboratory Registration Code or Lab Code, which is a code of usually up to three letters (first letter upper case, followed by all lower case) that identifies a particular institute, laboratory, or investigator that produced, and may hold stocks of, a mouse or rat strain. Substrains should be identified by Lab Codes, as should congenic and other strains where several different forms exist that are not otherwise distinguishable. Lab Codes are assigned by the <a href="http://www4.nas.edu/cls/afr.nsf">Institute of Laboratory Animal Research (ILAR)</a>.
+A key feature of mouse and rat nomenclature is the Laboratory Registration Code or Lab Code, which is a code of usually up to three letters (first letter upper case, followed by all lower case) that identifies a particular institute, laboratory, or investigator that produced, and may hold stocks of, a mouse or rat strain. Substrains should be identified by Lab Codes, as should congenic and other strains where several different forms exist that are not otherwise distinguishable. Lab Codes are assigned by the Institute of Laboratory Animal Research (ILAR) 
+<a href="http://www4.nas.edu/cls/afr.nsf">(http://www4.nas.edu/cls/afr.nsf)</a>.
 <p>
 <b>Examples</b> of Lab Codes are:<br><br>
 <blockquote>
@@ -70,15 +111,15 @@ A key feature of mouse and rat nomenclature is the Laboratory Registration Code 
 <tr><td>Ola<td>Harlan UK, Ltd</tr>
 </table>
 </blockquote>
-<h2><a name="inbred_strains"></a>3.3<spacer type=horizontal size=15>Inbred Strains</h2>
+<h2><a name="inbred_strains"></a>3<spacer type=horizontal size=15>Inbred Strains</h2>
 
-<h3><a name="definition"></a>3.3.1<spacer type=horizontal size=15>Definition</h3>
+<h3><a name="definition"></a>3.1<spacer type=horizontal size=15>Definition</h3>
 <p>
 Strains can be termed inbred if they have been mated brother x sister for 20 or more consecutive generations, and individuals of the strain can be traced to a single ancestral pair at the 20th or subsequent generation. At this point the individuals' genomes will on average have only 0.01 residual heterozygosity (excluding any genetic drift) and can be regarded for most purposes as genetically identical.
 <p>
 Other breeding schemes can be used to produce inbred strains; consecutive parent x offspring mating may be used, provided that the younger of the parents is always used (i.e., the offspring that is mated to parent is subsequently mated to its offspring). Other breeding schemes are acceptable provided that the inbreeding is equivalent to 20 successive generations of sib mating (Green 1981).
 
-<h3><a name="nois"></a>3.3.2<spacer type=horizontal size=15>Nomenclature of Inbred Strains</h3>
+<h3><a name="nois"></a>3.2<spacer type=horizontal size=15>Nomenclature of Inbred Strains</h3>
 <p>
 An inbred strain should be designated by a unique brief symbol made up of upper case, Roman, letters, or a combination of letters and numbers beginning with a letter. (Note that some pre-existing strains do not follow this convention; e.g., mouse strain 129P1/J).
 <p>
@@ -88,13 +129,13 @@ Inbred strains that have a common origin, but are separated before F20 are relat
 <p>
 <b>Example:</b><br><br>
 <blockquote>
-<table border=0 width=95%>
-<tr><td width=10%>Mouse strains:<td>NZB, NZC, NZO</tr>
+<table border=0 width="95%">
+<tr><td width="15%">Mouse strains:<td>NZB, NZC, NZO</tr>
 <tr><td>Rat strains:<td>SR, SS</tr>
 </table>
 </blockquote>
 
-<h3><a name="ioi"></a>3.3.3<spacer type=horizontal size=15>Indication of Inbreeding</h3>
+<h3><a name="ioi"></a>3.3<spacer type=horizontal size=15>Indication of Inbreeding</h3>
 <p>
 The number of brother x sister inbreeding generations can be indicated, if necessary, by addition in parentheses of F followed by the number of generations.
 <p>
@@ -110,12 +151,12 @@ If there is no information as to the total number of generations, but a minimum 
 Mouse strain:<spacer type=horizontal size=15>C3H/HeJ-<I>ruf</I> (F?+25)
 </blockquote>
 
-<h3><a name="substrains"></a>3.3.4<spacer type=horizontal size=15>Substrains</h3>
+<h3><a name="substrains"></a>3.4<spacer type=horizontal size=15>Substrains</h3>
 <p>
 Established inbred strains may genetically diverge with time into substrains due to a number of circumstances:
 <ul>
 <li>If two branches are separated after 20 but before 40 generations of inbreeding, there will be residual heterozygosity resulting in two genetically different substrains.
-<li>If branches are separated for more than 100 generations from a common ancestor, it is likely that genetic variation between the branches will have occurred by mutation and genetic drift.
+<li>If branches are separated for more than 20 generations from a common ancestor, it is likely that genetic variation between the branches will have occurred by mutation and genetic drift.
 <li>If genetic differences are proven by genetic analysis to have occurred between branches.
 </ul>
 <p>Substrains are given the root symbol of the original strain, followed by a forward slash and a substrain designation. The designation is usually the abode of the individual or laboratory originating the strain.
@@ -147,11 +188,11 @@ Substrains may give rise to further substrains by continued maintenance by a dif
 <p>
 Lab Codes should be accumulated because genetic differences will accumulate with time, the rate depending to some extent on varying levels of quality control at the facilities that have housed and bred the strain or substrain. Organizations distributing mice should include the number of generations the strain has been separated from the parent strain in the information they provide regarding the strain. Strain names can be abbreviated in publications after the first mention of the full proper designation.
 
-<h2><a name="hasmfmis"></a>3.4<spacer type=horizontal size=15>Hybrids and Strains Made from Multiple Inbred Strains</h2>
+<h2><a name="hasmfmis"></a>4<spacer type=horizontal size=15>Hybrids and Strains Made from Multiple Inbred Strains</h2>
 
 Mice or rats can be produced that have a defined genetic background, derived from two or more inbred strains, and that may or may not be genetically identical. Such animals should be designated appropriately, according to the breeding scheme that produced them.
 
-<h3><a name="hybrids"></a>3.4.1<spacer type=horizontal size=15>Hybrids</h3>
+<h3><a name="hybrids"></a>4.1<spacer type=horizontal size=15>Hybrids</h3>
 <p>
 Mice or rats that are the progeny of two inbred strains, crossed in the same direction, are genetically identical, and can be designated using upper case abbreviations of the two parents (maternal strain listed first), followed by F1.
 <p>
@@ -207,7 +248,7 @@ Approved abbreviations for common rat strains are listed below:<br><br>
 </table>
 </blockquote>
 
-<h3><a name="ris"></a>3.4.2<spacer type=horizontal size=15>Recombinant Inbred Strains</h3>
+<h3><a name="ris"></a>4.2<spacer type=horizontal size=15>Recombinant Inbred Strains</h3>
 
 <p>
 Recombinant inbred (RI) strains are formed by crossing two inbred strains, followed by 20 or more consecutive generations of brother x sister mating (Bailey 1971, Taylor 1978). These strains should be designated by upper case one- or two-letter abbreviations of both parental strain names, with the female strain written first, and separated by an upper case letter X with no intervening spaces.
@@ -224,8 +265,8 @@ Multiple RI are given serial numbers.
 <b>Example:</b><br><br>
 <blockquote>
 <table width="90%">
-<tr><td width="20%">BXD1, BXD2, BXD3</td><td>Members of the BXD set of mouse RI strains derived from a cross of C57BL/6 x DBA/2.</td></tr>
-<tr><td>HXB1, HXB2, HXB3</td> <td>Members of the HXB set of rat RI strains derived from a cross of SHR/OlaIpcv x BN-Lx/Cub.</td></tr>
+<tr><td width="25%">BXD1, BXD2, BXD3</td><td>Members of the BXD set of mouse RI strains derived from a cross of C57BL/6 x DBA/2.</td></tr>
+<tr><td>HXB1, HXB2, HXB3</td> <td>Members of the HXB set of rat RI strains derived from a cross of SHR/OlaIpcv x BN-<i>Lx</i>/Cub.</td></tr>
 </table>
 </blockquote>
 <p>
@@ -239,18 +280,18 @@ the same as F1s between other inbred strains.
 <b>Example:</b><br><br>
 <blockquote>
 <table border=0 width="90%">
-<tr> <td width="20%">(BXD1/Ty X AXB19/Pgn)F1<td>an F1 between a female BXD1/Ty and a male AXB19/Pgn.</tr>
+<tr> <td width="25%">(BXD1/Ty x AXB19/Pgn)F1<td>An F1 between a female BXD1/Ty and a male AXB19/Pgn.</tr>
 </table>
 </blockquote>
 
 
-<h3><a name="mis"></a>3.4.3<spacer type=horizontal size=15>Mixed Inbred Strains</h3>
+<h3><a name="mis"></a>4.3<spacer type=horizontal size=15>Mixed Inbred Strains</h3>
 <p>
 Incipient inbred stocks or inbred strains that are derived from only two parental strains (one of which could be a gene-targeted ES cell line) can be designated using upper case abbreviations for the two strains, separated by a semicolon. Lab codes and serial numbers should be used to distinguish strains produced in different laboratories, or multiple strains from the same laboratory. Because these designations may be used for a mixed stock before it is fully inbred, these stocks should not be assumed to be inbred unless accompanied by an inbreeding generation number (e.g. > F20). 
 <p>
 <b>Example:</b><br><br>
 <blockquote>
-B6;129-Acvr2<sup>tm1Zuk</sup>
+B6;129-<i>Acvr2<sup>tm1Zuk</sup></i>
 </blockquote>
 
 <p>
@@ -266,7 +307,7 @@ Once such a mutant stock achieves inbred status, it should be given the appropri
 <p><b>Example:</b><br><br>
 <blockquote>
 <table width="90%" border=0>
-<tr><td width="10%">JIGR/Dn<td>An inbred strain developed from a mixed background stock carrying the mutations gr (grizzled) and ji (jittery).</tr>
+<tr><td width="15%">JIGR/Dn<td>An inbred strain developed from a mixed background stock carrying the mutations gr (grizzled) and ji (jittery).</tr>
 </table>
 </BLOCKQUOTE>
 
@@ -276,11 +317,11 @@ When a mutant allele or chromosomal aberration is maintained by crossing animals
 <p><b>Example:</b><br><br>
 <blockquote>
 <table width="90%" border=0>
-<tr><td width="10%">B6C3Fe a/a-Dh<td>the Dh (dominant hemimelia) mutation is maintained by crossing to a (B6C3F3 a/a)F1 at each generation, but the stock itself is not an F1.</tr>
+<tr><td width="15%">B6C3Fe <i>a/a-Dh</i><td>The <i>Dh</i> (dominant hemimelia) mutation is maintained by crossing to a (B6C3F3 <i>a/a</i>) F1 at each generation, but the stock itself is not an F1.</tr>
 </table>
 </BLOCKQUOTE>
 
-<h3><a name="rcs"></a>3.4.4<spacer type=horizontal size=15>Recombinant Congenic Strains</h3>
+<h3><a name="rcs"></a>4.4<spacer type=horizontal size=15>Recombinant Congenic Strains</h3>
 <p>
 Recombinant Congenic (RC) Strains are formed by crossing two inbred strains, followed by a few (usually two) backcrosses of the hybrids to one of the parental strains (the "recipient" strain), with subsequent inbreeding without selection for any specific markers (Demant and Hart, 1986). Such inbred strains will consist of the background recipient strain genome interspersed with homozygous segments of the donor (the amount of donor strain genome depending on the number of original backcrosses, 2 backcrosses will give on average 12.5%).
 <p>
@@ -306,7 +347,7 @@ Multiple RC are given serial numbers.
 <p>
 If the second strain abbreviation ends in a number (e.g. 129P2), a hyphen should be used to separate it from the serial number.
 
-<h3><a name="ail"></a>3.4.5<spacer type=horizontal size=15>Advanced Intercross Lines</h3>
+<h3><a name="ail"></a>4.5<spacer type=horizontal size=15>Advanced Intercross Lines</h3>
 <p>
 Advanced intercross lines (AIL) are made by producing an F2 generation between two inbred strains and then intercrossing in each subsequent generation, but avoiding sibling matings (Darvasi and Soller, 1995). The purpose is to increase the possibility of tightly linked genes recombining. 
 <p>
@@ -317,12 +358,12 @@ The symbols should contain the Lab Code of the laboratory that has produced the 
 Pri:B6,D2-G# is an AIL stock created at Princeton from the inbred strains C57BL/6 x DBA/2. The G number will increase with each generation.
 </blockquote>
 
-<h2><a name="ccasis"></a>3.5<spacer type=horizontal size=15>Coisogenic, Congenic and Segregating Inbred Strains</h2>
-<h3><a name="definitions"></a>3.5.1<spacer type=horizontal size=15>Definitions</h3>
+<h2><a name="ccasis"></a>5<spacer type=horizontal size=15>Coisogenic, Congenic and Segregating Inbred Strains</h2>
+<h3><a name="definitions"></a>5.1<spacer type=horizontal size=15>Definitions</h3>
 <p>
 There several ways in which inbred strains may differ at only a small part of the genome. 
 
-<h3><a name="coisogenic"></a>3.5.2<spacer type=horizontal size=15>Coisogenic Strains</h3>
+<h3><a name="coisogenic"></a>5.2<spacer type=horizontal size=15>Coisogenic Strains</h3>
 <p>
 Coisogenic strains are inbred strains that differ at only a single locus through mutation occurring in that strain. Strains containing targeted mutations in ES cells that are then crossed to, and maintained, on the same inbred substrain from which the ES cells were derived can be regarded as coisogenic, but the possibility of mutations elsewhere should be considered. Similarly, chemically or radiation induced mutants on an inbred background can be considered coisogenic, although other genomic alterations could be present. A coisogenic strain may accumulate genetic differences over time by genetic drift unless periodically backcrossed to the parental strain.
 <p>
@@ -331,7 +372,7 @@ Coisogenic strains should be designated by the strain symbol (and where appropri
 <p><b>Example:</b><br><br>
 <blockquote>
 <table width="90%" border=0>
-<tr><td width="10%">C3H/HeJ-md<sup>2J</sup><td>the mahoganoid 2J mutation in the C3H/HeJ strain.</tr>
+<tr><td width="10%">C3H/HeJ-<i>md<sup>2J</sup></i><td>The mahoganoid 2J mutation in the C3H/HeJ strain.</tr>
 </table>
 </blockquote>
 <p>
@@ -350,7 +391,7 @@ If the number of generations of inbreeding since the mutation arose in a coisoge
 <blockquote>F110 + F23 indicates 23 generations of brother x sister matings since the occurrence of a mutation at F110 in an inbred strain.
 </blockquote>
 
-<h3><a name="congenic"></a>3.5.3<spacer type=horizontal size=15>Congenic Strains</h3>
+<h3><a name="congenic"></a>5.3<spacer type=horizontal size=15>Congenic Strains</h3>
 <p>
 Congenic strains are produced by repeated backcrosses to an inbred (background) strain, with selection for a particular marker from the donor strain (Snell 1978, Flaherty 1981). Congenic lines that differ at a histocompatibility locus and therefore resist each other's grafts are called congenic resistant (CR) lines.
 <p>
@@ -361,7 +402,7 @@ Marker assisted breeding or marker assisted selection breeding, also known as "s
 Congenic strains are designated by a symbol consisting of three parts. The full or abbreviated symbol of the recipient strain is separated by a period from an abbreviated symbol of the donor strain, this being the strain in which the allele or mutation originated, which may or may not be its immediate source in constructing the congenic strain. (In cases where the donor is not inbred or is complex, the symbol Cg should be used to denote congenic. The use of the donor strain symbol or Cg is essential to distinguish congenic from coisogenic strains). A hyphen then separates the strain name from the symbol (in italics) of the differential allele(s) introgressed from the donor strain.
 <p>
 <b>Example:</b><br><br>
-<blockquote>B6.AKR-H2<sup>k</sup> is a strain with the genetic background of C57BL/6 but which differs from that strain by the introduction of a differential allele (H12<sup>k</sup>) derived from strain AKR/J.
+<blockquote>B6.AKR-<i>H2<sup>k</sup></i> is a strain with the genetic background of C57BL/6 but which differs from that strain by the introduction of a differential allele (<i>H2<sup>k</sup></i>) derived from strain AKR/J.
 </blockquote>
 <p>If several lines derived from the same host background and donor strains and carrying the same differential allele(s) are available, the individual lines should be distinguished by adding a forward slash followed by serial numbers and lab codes.
 
@@ -370,7 +411,8 @@ Congenic strains are designated by a symbol consisting of three parts. The full 
 <blockquote>
 <table border=0 width=80%">
 <tr>
-<td width="30%" valign="top">SJL.129S2(B6)-Cd8a &lt;tm1Mak&gt;/2Dcr<br>SJL.129S2(B6)-CD8a&lt;tm1Mak&gt;/3Dcr</td>
+<td width="35%" valign="top">SJL.129S2(B6)-<i>Cd8a<sup>tm1Mak</sup></i>/2Dcr
+<br>SJL.129S2(B6)-<i>Cd8a<sup>tm1Mak</sup></i>/3Dcr</td>
 <td>Two different congenic strains, each developed from the same donor and recipient strains and each carrying the same differential alleles.</td></tr>
 </table>
 </blockquote>
@@ -401,7 +443,7 @@ Note that the markers defining the segment only describe the most proximal and d
 
 When generating speed congenics, N will be less than 10 initially; nevertheless the actual number should be given (e.g., N6) and the details of breeding system and markers used detailed elsewhere in a publication or database.
 
-<h3><a name="consomic"></a>3.5.4<spacer type=horizontal size=15>Consomic Strains</h3>
+<h3><a name="consomic"></a>5.4<spacer type=horizontal size=15>Consomic Strains</h3>
 
 <p>Consomic strains (also called chromosome substitution strains, Nadeau et al., 2000) are produced by repeated backcrossing of a whole chromosome onto an inbred strain. As with congenic strains, a minimum of 10 backcross generations is required, counting the F1 generation as generation 1. For autosomes, it is necessary to genotype progeny to ensure that the selected donor chromosome has not recombined with the corresponding recipient chromosome. The generic designation for consomic strains is HOST STRAIN-CHROMOSOME<SUP>DONOR STRAIN</SUP>.
 <P>
@@ -415,14 +457,14 @@ When generating speed congenics, N will be less than 10 initially; nevertheless 
 <P>
 Although consomic strains are similar in concept and development to congenic strains, in consomic nomenclature the name of the host strain is not abbreviated, and no period followed by the donor strain is required because the strain of origin is shown in the superscript. Capitalization of all letters in the superscript and non-italicization of the chromosome letter/number and of the superscript distinguish a chromosome identifier from an allele symbol.
 
-<h3><a name="sis"></a>3.5.5<spacer type=horizontal size=15>Segregating Inbred Strains</h3>
+<h3><a name="sis"></a>5.5<spacer type=horizontal size=15>Segregating Inbred Strains</h3>
 <p>
 Segregating inbred strains are inbred stains in which a particular allele or mutation is maintained in heterozygous state. They are developed by inbreeding (usually brother x sister mating) but with heterozygosity selected at each generation. They are designated like other inbred strains since the segregating locus is part of the standard genotype of the strain. Details of inbred strain genotypes are available in publications and databases.
 <p>
 <b>Examples:</b><br><br>
 <blockquote>
 <table width="90%">
-<tr><td width="10%">129P3/J<td>This mouse strain segregates for the tyrosinase alleles albino (Tyr<sup>c</sup>) and chinchilla (Tyr <SUP>c-ch</SUP>).</tr>
+<tr><td width="10%">129P3/J<td>This mouse strain segregates for the tyrosinase alleles albino (<i>Tyr<sup>c</sup></i>) and chinchilla (<i>Tyr<SUP>c-ch</SUP></i>).</tr>
 <tr><td>WB<td>This mouse strain segregates for the dominant white spotting allele of the kit oncogene (<I>Kit<SUP>W</SUP></I>).</tr>
 </table>
 </blockquote>
@@ -432,14 +474,14 @@ Strains that carry linked alleles in coupling or repulsion should be designated 
 <P>Examples:<BR><BR>
 <BLOCKQUOTE>
 <table border=0 width="90%">
-<tr><td width="15%">B6.Cg-<I>m Lepr<SUP>db</SUP></I>/+ +<td>In this strain the <I>m</I> and <I>Leprdb</I> alleles are 
+<tr><td width="15%">B6.Cg-<I>m Lepr<SUP>db</SUP></I>/+ +<td>In this strain the <I>m</I> and <I>Lepr<sup>db</sup></I> alleles are 
 carried on one chromosome (in coupling) and the wild type alleles on the other.</tr>
-<tr><td>B6.Cg-<I>m</i> +//+ <i>Lepr<sup>db</sup></i><td>In this strain the <I>m</I> and <I>Leprdb</I> alleles are 
+<tr><td>B6.Cg-<I>m</i> +//+ <i>Lepr<sup>db</sup></i><td>In this strain the <I>m</I> and <I>Lepr<sup>db</sup></I> alleles are 
 carried on different homologs of the chromosome (in repulsion); this is also called a balanced strain.</tr>
 </table>
 </BLOCKQUOTE>
 
-<H3><a name="conplastic"></a>3.5.6<spacer type=horizontal size=15>Conplastic Strains</H3>
+<H3><a name="conplastic"></a>5.6<spacer type=horizontal size=15>Conplastic Strains</H3>
 <P>Conplastic strains are strains in which the nuclear genome from one strain has been crossed onto the cytoplasm of another, i.e., the mitochondrial donor is always the female parent during the backcrossing program. The designation is 
 NUCLEAR GENOME-mt<sup>CYTOPLASMIC GENOME.</sup>
 
@@ -450,7 +492,7 @@ C57BL/6J-mt<sup>BALB/c</sup> is a strain with the nuclear genome of C57BL/6J and
 </BLOCKQUOTE>
 Such a strain is developed by crossing male C57BL/6J mice with BALB/c females, followed by repeated backcrossing of female offspring to male C57BL/6J. As with congenic strains, a minimum of 10 backcross generations is required, counting the F1 generation as generation 1.
 </BLOCKQUOTE>
-<H2><a name="references"></a>3.6<spacer type=horizontal size=15>References</H2>
+<H2><a name="references"></a>6<spacer type=horizontal size=15>References</H2>
 <ul>
 Bailey, D.W. 1971. Recombinant inbred strains, an aid to finding identity, linkage, and
 function of histocompatibility and other genes. Transplantation 11:325-327.<br><br>
@@ -464,7 +506,7 @@ Committee on Standardized Genetic Nomenclature for Mice. 1976. Nomenclature for 
 
 Committee on Standardized Genetic Nomenclature for Mice, Chair: Lyon, M.F. Rules for nomenclature of inbred strains, pp. 368-372. In: Genetic Variants and Strains of the Laboratory Mouse, Green, M.C. (ed.), First Edition, Gustav Fischer Verlag, Stuttgart, 1981.<br><br> 
 
-* * Committee on Standardized Genetic Nomenclature for Mice, Chair: Lyon, M.F. Rules for nomenclature of inbred strains, pp. 632-635. In: Genetic Variants and Strains of the Laboratory Mouse, Lyon, M.F., A.G. Searle (eds.), Second Edition, Oxford University Press, Oxford, 1989. <br><br>
+Committee on Standardized Genetic Nomenclature for Mice, Chair: Lyon, M.F. Rules for nomenclature of inbred strains, pp. 632-635. In: Genetic Variants and Strains of the Laboratory Mouse, Lyon, M.F., A.G. Searle (eds.), Second Edition, Oxford University Press, Oxford, 1989. <br><br>
 
 Committee on Standardized Genetic Nomenclature for Mice, Chair: Davisson, M.T. Rules for nomenclature of inbred strains, pp. 1532-1536. In: Genetic Variants and Strains of the Laboratory  Mouse, Lyon MF, Rastan S, Brown SDM (eds.), Third Edition, Oxford University Press, Oxford, 1996.<br><br>
 
