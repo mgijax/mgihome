@@ -36,9 +36,9 @@ Comments:
 
 
 <P><B>2. MGI has changed its look recently. Is it:</B><BR>
-<INPUT name=look type=radio value=Better>More often
-<INPUT name=look type=radio value=Worse>Less often
-<INPUT name=look type=radio value="Not really different">About as often<BR>
+<INPUT name=look type=radio value=Better>Better
+<INPUT name=look type=radio value=Worse>Worse
+<INPUT name=look type=radio value="Not really different">Not really different<BR>
 Comments:<TEXTAREA cols=55 name=lookComments rows=6></TEXTAREA>
 
 <P>
@@ -225,20 +225,20 @@ Others:
 
 <P><B>7. Sequence data have been integrated into MGI and new features have been added to alllow sequences to be searched relative to biological annotation.</B><BR>
 <B>Were you aware of these enhancements?</B><br>
-<INPUT type=radio name="yes" value="Yes">Yes &nbsp;&nbsp;&nbsp;
-<INPUT type=radio name="yes" value="No">No<br>
+<INPUT type=radio name=awareSeq value="Yes">Yes &nbsp;&nbsp;&nbsp;
+<INPUT type=radio name=awareSeq value="No">No<br>
 <B>Have you used these new features?</B><br>
-<INPUT type=radio name="no" value="Yes">Yes &nbsp;&nbsp;&nbsp;
-<INPUT type=radio name="no" value="No">No<br>
+<INPUT type=radio name=usedSeq value="Yes">Yes &nbsp;&nbsp;&nbsp;
+<INPUT type=radio name=usedSeq value="No">No<br>
 
 
 <P><B>8. The International Mouse Strain Resource (IMSR) recently was released through MGI.</B><BR>
 <B>Were you aware of this IMSR release?</B><br>
-<INPUT type=radio name="yes" value="Yes">Yes &nbsp;&nbsp;&nbsp;
-<INPUT type=radio name="yes" value="No">No<br>
+<INPUT type=radio name=awareIMSR value="Yes">Yes &nbsp;&nbsp;&nbsp;
+<INPUT type=radio name=awareIMSR value="No">No<br>
 <B>Have you used the IMSR?</B><br>
-<INPUT type=radio name="no" value="Yes">Yes &nbsp;&nbsp;&nbsp;
-<INPUT type=radio name="no" value="No">No<br>
+<INPUT type=radio name=usedIMSR value="Yes">Yes &nbsp;&nbsp;&nbsp;
+<INPUT type=radio name=usedIMSR value="No">No<br>
 
 
 
