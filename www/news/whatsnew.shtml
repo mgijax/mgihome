@@ -12,124 +12,62 @@
 </Center>
 
 <dl>
-<dt><h4>February, 2001: <A HREF="2.6announce.shtml">MGI Release 2.6 Announcement</A></h4>
-<!-- this is the link to the mgi release 2.5 page -->
-<dd>MGI Release 2.6 is now available. Information on other
-<a href="news.shtml">recent MGI releases</A> is also available.
-<!--this is the link to the chronology of MGI releases.-->
+  <dt><b>February, 2001</b><br><br>
+  <dd>
+    <li><A HREF="2.6announce.shtml">MGI Release 2.6</A> is now available.
+    <li>See <a href="../other/mgicron.shtml">Mouse Genome Informatics Chronology</A> for information about 
+    other recent releases and a history of MGI.
+   <br><br>
+  <dt><b>January, 2001</b><br><br>
+  <dd><li><A NAME="nar"></a>Three articles describing resources available through the Mouse 
+  Genome Informatics web site were published in NAR's 2001 database issue.  
+  Check them out at the <A HREF=http://nar.oupjournals.org/>NAR web site</A>.
+  <BLOCKQUOTE>
+  Blake JA, Eppig JT, Richardson JE, Bult CJ, Kadin JA, and the Mouse Genome Database Group.  2001.  
+  The Mouse Genome Database (MGD):  Integration Nexus for the Laboratory Mouse. Nucleic Acids Res 
+  29: 91-94.<P>
+  Bult CJ, Krupke DM, Naf D, Sundberg JP, Eppig JT. 2001.Web-based access to mouse models of human 
+  cancers: the mouse tumor biology (MTB) database.  Nucleic Acids Res 29:95-97.<p>
+  Ringwald M, Eppig JT, Begley DA, Corradi JP, McCright IJ, Hayamizu TF, Hill DP, Kadin JA, 
+  Richardson JE. 2001.The mouse gene expression database.Nucleic Acids Res 29:98-101.
+  </BLOCKQUOTE>
+  
+  <dt><dt><b>December, 2000</b><br><br>
+  <dd><li><a name="hmg">The nomenclature for the <a href="../nomen/genefamilies/hmgfamily.shtml">High 
+  Mobility Group (HMG)</a> chromosomal proteins has been revised.<br><br>
+  
+  <dt><a name="genefamily"></a><b>November, 2000</b><br><br>
+  <dd><li>New members of <a href="../nomen/genefamilies/index.shtml">gene families</a> are being added 
+  rapidly. Mouse Genome Informatics Nomenclature Committee and HUGO are working with researchers to 
+  organize and update nomenclature on important gene family groups.<br><br>
 
-<dt><h4><a name="hmg"><a href="../nomen/genefamilies/hmgfamily.shtml">December, 2002: HMG Family 
-Nomenclature Revised</a></h4>
-<dd>The nomenclature for the High Mobility Group (HMG) chromosomal proteins has been revised. 
- 
-<dt><h4><a name="genefamily"></a>November, 2000: 
- <a href="../nomen/genefamilies/index.shtml">Gene Families</h4></a>
-<dd>New members of gene families are being added rapidly. Mouse Genome Informatics 
-Nomenclature Committee and HUGO are working with 
-researchers to organize and update nomenclature on important gene family groups.
-
-<dt><a name="allandmut"></a><h4>October, 2000: Allele and Mutant Data</h4>
-<dd>The new <a href="../nomen/allmut_form.shtml">Allele and New Mutant Submissions 
-Form</a> is available for contributing data to MGD. 
-Information can be submitted for new or known alleles of existing genes or alleles 
-where a phenotype has now identified a new gene. 
-Help with nomenclature is provided from linked pages. 
-Each new allele or mutant receives a permanent database accession ID.  
-<I>Mammalian Genome</I> periodically  publishes a list enumerating the data electronically 
-submitted to MGD, including accession ID, chromosome, and locus and allele symbols as a 
-cross-referencing service for readers. For submission of other types of data to MGD, see the 
- <a href="../submissions/submissions_menu.shtml">Data and Nomenclature Submissions</a> page.
-
-<!--
-<dt><h4>Mid-October: <A HREF="2.5announce.shtml">MGI Release 2.5 Announcement</A></h4>
-
-<dd>MGI Release 2.5 is now available. Information on other
-<a href="news.shtml">recent MGI releases</A> is also available.
-
-
-<h4><dt>New MGI Vocabulary Browsers</h4>
-
-<dd>You can now view and query the following structured vocabularies: 
-<p>
+  <dt><a name="allandmut"></a><b>October, 2000</b><br><br>
+  <dd><li>A new <a href="../nomen/allmut_form.shtml">Allele and New Mutant Submissions Form</a> 
+  is available for contributing data to MGD. Information can be submitted for new or known alleles of 
+  existing genes or alleles where a phenotype has now identified a new gene. Help with nomenclature 
+  is provided from linked pages. Each new allele or mutant receives a permanent database accession ID. 
+  <I>Mammalian Genome</I> periodically  publishes a list enumerating the data electronically submitted 
+  to MGD, including accession ID, chromosome, and locus and allele symbols as a cross-referencing 
+  service for readers. For submission of other types of data to MGD, see the
+   <a href="../submissions/submissions_menu.shtml">Data and Nomenclature Submissions</a> page.
+  
+  <!--<h4><dt>New Allele and Mutant Data Submission Form</h4>
+<dd>
+You can now send MGD mutant allele and mutant data to MGD online. 
+Each electronic submission receives a permanent database accession ID.
+MGD reference pages provide a link to the associated data sets.
 <ul>
-<li><a href="<!--#include file="include/go_url.html"-->">Gene Ontology (GO) Browser</a>
-<p>
-The GO Browser associates each ontology term with a precise definition 
-of that term, complete with citations and  synonyms. 
-Each ontology is organized as a Directed Acyclic Graph (DAG). 
-Terms in this hierarchy are organized from the general to the specific 
-and you can immediately visualize their relationship. Although the structure of the DAG 
-is "tree-like," a term may actually have more than one parent and appear several times
-in the browser. A given term may occur in any or all of the following categories:
-<p>
-<ul>
-<b><a href="<!--#include file="include/go_url.html"-->GO.cgi?id=GO:0003674">
-Molecular Function</a></b> - Tasks performed by individual gene products. 
-Examples: transcription factor; DNA helicase.<br>
-<b><a href="<!--#include file="include/go_url.html"-->GO.cgi?id=GO:0008150">
-Biological Process</b></a> - Broad biological goals accomplished by ordered assemblies 
-of molecular functions. Examples: mitosis; purine metabolism.<br>
-<b><a href="<!--#include file="include/go_url.html"-->GO.cgi?id=GO:0005575">
-Cellular Component</b></a> - Subcellular structures, locations, and macromolecular 
-complexes. Examples: nucleus; telomere; origin recognition complex.<br>
-</ul>
+<li>You can access the submission form from the 
+<a href="../submissions/submissions_menu.shtml">
+Data and Nomenclature Submissions</a> menu.
+<li>You can find general rules for naming alleles at 
+<a href="../submissions/submit.shtml">Submitting New Mutant and Allele Data</a>
+</ul>-->
 
-<p>
-<li><a href="<!--#include file="include/wi_url.html"-->searches/anatdict_form.shtml">Mouse Anatomical Dictionary
-</a>
-<p>The Anatomical Dictionary is a vocabulary comprised of 28 Theiler stages. 
-Each Theiler stage is a tree which is a subvocabulary of the Dictionary. 
-There are brief stage descriptions next to each stage name.
-You can select one or more of 
-the Theiler stages to focus a search on a particular stage of embryonic development
-</ul>
-<h4><dt>Homology Maps</a></h4>
-<dd>This release includes a new way of viewing and accessing homology data. 
-Two new maps are available showing global views of human and rat orthology data 
-plotted against the mouse genome. Beside each chromosome is a set of histograms, 
- each corresponding to a human or rat chromosome. The histogram effectively shows 
- the density of known orthologies in a particular mouse chromosomal region. As always, the 
-maps are active. <ul><li>You can click on a mouse chromosome to retrieve a detailed linkage map 
-showing all orthologs.
-<li>You can click on a histogram to retrieve a compact tabular listing of orthologs for 
-that part of a chromosome.
-</ul>
-<p>The following whole genome homology maps are available:
-<ul>
-<li><a href="<!--#include file="include/wi_url.html"-->
-reports/homologymap/mouse_human.shtml"> 
-human on mouse background</a>
- <li><a href="<!--#include file="include/wi_url.html"-->reports/homologymap/mouse_rat.shtml">
-rat on mouse background</a>
-</ul>
-
-<h4><dt>Expanded MGI Glossary</h4>
-<dd><p>We are continually expanding the 
-<a href="<!--#include file="include/wi_url.html"-->userdocs/glossary.shtml">
-MGI Glossary</a>. 
-The Glossary contains terms useful in understanding mouse genetics.
-You can find terms defined in a general sense as they apply to eukaryotic genetics, 
-particularly mouse genetics. You will also find some terms defined as they apply to MGI
-(for example, <b>gene</b>). The list of terms included in the Glossary has expanded
-grow with this release.
-
-
-<H4><dt>Mouse/Drosophila Homology Report</H4>
-
-<dd>The list of 
-<a href="<!--#include file="include/wi_url.html"-->/external/ashburner/mfhomo.shtml">
-similarity associations</a> between mouse and <I>Drosophila</I> genes has greatly 
-expanded. There are now 3,017 associations between mouse and <I>Drosophila</I> genes.
-<h4><dt><A HREF="../lists/lists.shtml">MGI E-Mail List Service</A></h4>
-
-<dd>Use the new web interface to MGI-LIST, RAT-LIST, and PHENOME-LIST 
-to read or send messages, subscribe or unsubscribe from a list, 
-or modify your subscriber options.
--->
 </dl>
-
-<!-- standard footer and disclaimer -->
 <hr>
+<!-- standard footer and disclaimer -->
+
 <!--#include file="include/footer.html"-->
 </body></html>
 
@@ -152,23 +90,6 @@ warranty disclaimer and copyright notice
 copyright © 1996, 1999, 2000 by the jackson laboratory
 all rights reserved
 -->
-
-</body>
-</html>
-
-<!--<h4><dt>New Allele and Mutant Data Submission Form</h4>
-<dd>
-You can now send MGD mutant allele and mutant data to MGD online. 
-Each electronic submission receives a permanent database accession ID.
-MGD reference pages provide a link to the associated data sets.
-<ul>
-<li>You can access the submission form from the 
-<a href="../submissions/submissions_menu.shtml">
-Data and Nomenclature Submissions</a> menu.
-<li>You can find general rules for naming alleles at 
-<a href="../submissions/submit.shtml">Submitting New Mutant and Allele Data</a>
-</ul>-->
-
 
 
 
