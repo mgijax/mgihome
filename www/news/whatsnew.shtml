@@ -34,10 +34,10 @@ You can enter one or more symbols or names in this field. The search will
 retrieve any records for markers having names or symbols that match the characters entered on the Symbol/Name field. <p>
 
 <DD>The combined Symbol/Name field appears in the following query forms:<p>
-<ul><A HREF="<!--#include file='include/wi_url.html'-->/searches/marker_form.shtml"> Genes, Markers And Phenotypes<br></A>
+<ul><A HREF="<!--#include file='include/wi_url.html'-->/searches/marker_form.shtml"> Genes, Markers and Phenotypes<br></A>
 <A HREF="<!--#include file='include/wi_url.html'-->searches/allele_form.shtml"> Alleles<br></A>
 <A HREF="<!--#include file='include/wi_url.html'-->searches/polymorphism_form.shtml"> Polymorphisms</A><br>
-<A HREF="<!--#include file='include/wi_url.html'-->searches/probe_form.shtml">Molecular Probes And Segments</A><br>
+<A HREF="<!--#include file='include/wi_url.html'-->searches/probe_form.shtml">Molecular Probes and Segments</A><br>
 <A HREF="<!--#include file='include/wi_url.html'-->searches/homology_form.shtml">Mammalian Homology</A><br>
 <A HREF="<!--#include file='include/wi_url.html'-->searches/mapdata_form.shtml">Mapping Data</A><br>
 <A HREF="<!--#include file='include/wi_url.html'-->searches/linkmap_form.shtml">Linkage Maps</A><br>
@@ -52,15 +52,12 @@ retrieve any records for markers having names or symbols that match the characte
 <!----------------->
 
 
-<h3><dt><A HREF="../GO/ontology.shtml">Gene Ontology Project</A></dt></h3>
+<h3><dt><A HREF="http://www.geneontology.org">Gene Ontology Project</A></dt></h3>
 <!-- this is the link to the gene ontology project -->
-<DD>The goal of the <A HREF="../GO/ontology.shtml">Gene Ontology (GO) Project</A> is to produce controlled vocabularies that can be applied to all eukaryotes as knowledge of gene and protein roles in cells is accumulating and changing.  MGI is committed to annotating gene records using GO vocabularies. To date, close to 5000 genes in MGI have been so annotated. 
-<p>
-The former phenotypic classifications have been removed from MGI query forms. 
-GO classification fields have been added to several MGI query forms: 
+<DD>The goal of the Gene Ontology (GO) Project</A> is to produce controlled vocabularies that can be applied to all eukaryotes as knowledge of gene and protein roles in cells is accumulating and changing.  MGI is committed to annotating gene records using GO vocabularies. To date, close to 5000 genes in MGI have been annotated. GO classification fields have been added to the following MGI query forms: 
 
 
-<A HREF="<!--#include file='include/wi_url.html'-->searches/marker_form.shtml">Genes, Markers And Phenotypes</A>,
+<A HREF="<!--#include file='include/wi_url.html'-->searches/marker_form.shtml">Genes, Markers and Phenotypes</A>,
 <A HREF="<!--#include file='include/wi_url.html'-->searches/expression_form.shtml">Gene Expression Data</A>,
 <A HREF="<!--#include file='include/wi_url.html'-->searches/estclone_form.shtml">cDNA Clone</A> and 
 <A HREF="<!--#include file='include/wi_url.html'-->searches/linkmap_form.shtml">Linkage Maps</A>.<P>
@@ -68,19 +65,19 @@ Visit the <A HREF="http://www.geneontology.org/">Gene Ontology Home
 Page</A> for more information.</DD>
 <!----------------->
 
-<h3><dt>Search <A HREF="<!--#include file='include/wi_url.html'-->searches/probe_form.shtml">Molecular Probes And Segments</A>
+<h3><dt>Search <A HREF="<!--#include file='include/wi_url.html'-->searches/probe_form.shtml">Molecular Probes and Segments</A>
 by Chromosome Region</dt></h3>
 <DD>You can now limit your search for molecular
-probes and segments to a specific chromosomal region.
+probes and segments to a specified chromosomal region. The option to retrieve query results in tab-delimited text
 You also have the option to return results from this form as
 <b>tab-delimited text</b>.</DD>
 <!----------------->
 
 <h3><dt>Primary Reference For Sequence IDs</dt></h3>
-<DD>MGI marker records include a list of related Sequence IDs. Most often, this association is made via molecular segments whose sequence is known and which have been mapped to mouse markers.  This association of marker and sequence is reported in the literature. Now, the reference supporting this association is displayed next to the Sequence ID in the marker detail record.</DD>
+<DD>An MGI marker record may include a list of related Sequence IDs. Most often, this association is made via molecular segments whose sequence is known and which have been mapped to the given mouse marker.  This association of marker and sequence is reported in the literature. Now, the reference supporting this association is displayed next to the Sequence ID in the marker detail record.</DD>
 <!----------------->
 
-<h3> <dt><A HREF="http://lists.informatics.jax.org/lists">MGI E-Mail List
+<h3> <dt><A HREF="http://www.informatics.jax.org/mgihome/lists/lists.shtml">MGI E-Mail List
 Service</A></dt></h3>
 <!-- this is the link to the lyris MGI-list page. -->
 <DD>Use the new web interface to MGI-LIST and RAT-LIST to read or send messages, subscribe or unsubscribe from a list, or modify your subscriber options.</DD>
