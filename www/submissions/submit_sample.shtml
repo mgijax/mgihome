@@ -3,12 +3,27 @@
 <title>Information Samples</title>
 </HEAD>
 <BODY BGCOLOR="#FFFFFF">
-<!--#include file="include/banner.html"-->
+<!--#include file="include/bodyStart.html"-->
+ <TABLE WIDTH="100%" BORDER=0 CELLPADDING=2 CELLSPACING=1>
+ <TR>
+  <TD WIDTH="100%" BGCOLOR="#D0E0F0">
+   <TABLE WIDTH="100%" BORDER=0 CELLPADDING=0 CELLSPACING=0>
+    <TR>
+     <TD WIDTH="20%" VALIGN="center" ALIGN="left">&nbsp;</TD>
+     <TD WIDTH="60%" ALIGN="center" VALIGN="center">
+      <FONT COLOR="#000000" SIZE=5 FACE="Arial,Helvetica">
+Information Samples
+      </FONT>
+     </TD>
+     <TD WIDTH="20%" VALIGN="center" ALIGN="center">&nbsp;</TD>
+    </TR>
+   </TABLE>
+  </TD>
+ </TR>
+</TABLE>
 
-<h2>Information Samples</h2>
-
-<H3>
-<FONT COLOR="#EF1F1D">Section I&nbsp;<A NAME="ref"></A></FONT><FONT FACE="Times New Roman,Times"><FONT COLOR="#291A10">Sample
+<h3>
+<FONT COLOR="#EF1F1D">Section I&nbsp;&nbsp;<A NAME="ref"></A></FONT><FONT FACE="Times New Roman,Times"><FONT COLOR="#291A10">Sample
 Reference Information</FONT></FONT></H3>
 
 <UL>
@@ -78,7 +93,7 @@ an abstract may be optionally included as part of the electronic reference.</FON
 <UL>&nbsp;</UL>
 
 <H3>
-<FONT COLOR="#EF1F1D">Section II&nbsp;<A NAME="gmi"></A></FONT><FONT COLOR="#291A10">Sample
+<FONT COLOR="#EF1F1D">Section II&nbsp;&nbsp;<A NAME="gmi"></A></FONT><FONT COLOR="#291A10">Sample
 Genetic Mapping Information</FONT></H3>
 
 <UL>
@@ -95,8 +110,7 @@ new symbol approval through on-line symbol registry form:</FONT></I>
 <BR><I><FONT FACE="Times New Roman,Times">&nbsp;&nbsp;&nbsp; <FONT COLOR="#187534"><A HREF="../nomen/">http://www.informatics.jax.org/mgihome/nomen/</A></FONT></FONT></I></UL>
 
 <LI>
-<FONT FACE="T
-imes New Roman,Times">Name of locus mapped: renin 1 structural</FONT></LI>
+<FONT FACE="Times New Roman,Times">Name of locus mapped: renin 1 structural</FONT></LI>
 
 <LI>
 <FONT FACE="Times New Roman,Times">Chromosome and map position (cytogenetic
@@ -104,7 +118,7 @@ band or cM position):&nbsp; Chr 1, 69.9 cM</FONT></LI>
 </UL>
 &nbsp;
 <H3>
-<FONT COLOR="#EF1F1D">Section III&nbsp;<A NAME="lci"></A></FONT><FONT COLOR="#291A10">Sample
+<FONT COLOR="#EF1F1D">Section III&nbsp;&nbsp;<A NAME="lci"></A></FONT><FONT COLOR="#291A10">Sample
 Linkage Experiments</FONT></H3>
 
 <UL>
@@ -141,7 +155,7 @@ Key to symbols used in typings<FONT FACE="Times New Roman,Times">:</FONT></LI>
 <BR>&nbsp;
 <H3>
 <B><FONT FACE="Times New Roman,Times"><FONT COLOR="#ED181E">&nbsp;</FONT></FONT></B><FONT COLOR="#EF1F1D">Section
-IV&nbsp;<A NAME="sh"></A></FONT><B><FONT FACE="Times
+IV&nbsp;&nbsp;<A NAME="sh"></A></FONT><B><FONT FACE="Times
 New Roman,Times"><FONT COLOR="#291A10">Haplotype</FONT></FONT></B>
 Sample Data</H3>
 &nbsp;
@@ -899,7 +913,7 @@ For example, Ren1-pA1.
 &nbsp;
 <H3>
 <FONT FACE="Times New Roman,Times"><B><FONT COLOR="#ED181E">Sample Data
-Section IX&nbsp;</FONT></B>&nbsp;<A NAME="rflp"></A></FONT>Polymorphism
+Section IX&nbsp;&nbsp;</FONT></B>&nbsp;<A NAME="rflp"></A></FONT>Polymorphism
 Sample Data</H3>
 <FONT FACE="Times New Roman,Times">For each polymorphism, provide the following
 information:</FONT>
@@ -1164,7 +1178,7 @@ Similar subunit structure                     <B>SU</B>
 </UL>
 
 
-<!--#include file="include/footer.html"-->
+<!--#include file="include/bodyStop.html"-->
 
 </BODY>
 </HTML>
