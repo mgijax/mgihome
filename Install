@@ -11,15 +11,22 @@ CONFIG_REL=../lib/python/config.pyc
 
 includeLinker() {
 	# do this directory
-	ln -s ../include include
+	if [ -h include ]; then
+		rm include
+	fi
+	if [ ! -d include ]; then
+		ln -s ../include include
+	fi
 
 	# then do all subdirectories recursively
 	for name in `ls`
 	do
 		if [ -d $name ]; then
-			cd $name
-			(includeLinker)
-			cd ..
+			if [ $name -ne include ]; then
+				cd $name
+				(includeLinker)
+				cd ..
+			fi
 		fi
 	done
 	}
@@ -61,10 +68,14 @@ TOP=`pwd`
 
 # make bin directory and add the Python link
 
-mkdir bin
-cd bin
-ln -s $PYTHON python
-cd $TOP
+if [ ! -d bin ]; then
+	mkdir bin
+fi
+if [ ! -h bin/python ]; then
+	cd bin
+	ln -s $PYTHON python
+	cd $TOP
+fi
 
 # output the title as an include file
 
@@ -74,27 +85,30 @@ echo $TITLE > www/include/title.html
 
 for dir in `ls www`
 do
-	cd www/$dir
-	if [ -d include ]; then
-		rm include
+	if [ -d $dir ]; then
+		cd www/$dir
+		if [ -d include ]; then
+			rm include
+		fi
+		ln -s ../include include
+		cd $TOP
 	fi
-	ln -s ../include include
-	cd $TOP
 done
 
 # compile python libraries and make sure they're readable
 
 cd lib/python
+chmod g+w *pyc
 rm *pyc
 $PYTHON -c 'import compileall; compileall.compile_dir(".")'
-chgrp www lib/python/*pyc
-chmod 750 lib/python/*pyc
+chgrp www *pyc
+chmod 750 *pyc
 cd $TOP
 
-# make sure the www directory is readable and executable by the right group
+# make sure the www directory is executable by the right group
 
-chgrp -R www www
 chmod -R 750 www
+chgrp -R www www
 
 # add links to python and the config file from selected directories under www/
 
@@ -102,12 +116,12 @@ for dir in nomen lists support submissions
 do
 	cd www/$dir
 
-	if [ -f python ]; then
+	if [ -h python ]; then
 		rm python
 	fi
 	ln -s ../$PYTHON_REL python
 
-	if [ -f config.pyc ]; then
+	if [ -h config.pyc ]; then
 		rm config.pyc
 	fi
 	ln -s ../$CONFIG_REL config.pyc
