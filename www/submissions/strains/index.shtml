@@ -8,7 +8,7 @@
     <TABLE WIDTH="100%" BORDER=0 CELLPADDING=0 CELLSPACING=0>
      <TR><TD WIDTH="20%" VALIGN="center" ALIGN="left">
 <A HREF="<!--#include file='include/wi_url.html'-->" border=0>
-<IMG SRC="../../images/mgi_logo_small.jpg" border=0 ALT="MGI"></A></TD>
+<!--#include file="include/mgi_logo_small.html"--></A></TD>
       <TD WIDTH="60%" ALIGN="center" VALIGN="center" BGCOLOR="#ffffff">
        <FONT COLOR="#000000" SIZE=5 FACE="Arial,Helvetica">
 Mouse Strain Registry Form
@@ -160,7 +160,7 @@ unpublished
 <hr>
 <b>Contact Details:</b> If your contact details are already registered with MGI, you only need to enter your name and E-mail address.
 <pre>
-Last name:                      <input TYPE="text" NAME="lastname"  SIZE=30>(required) 
+Last name:                      <input TYPE="text" NAME="lastname"  SIZE=30>(required)
 First name (& middle initial):  <input TYPE="text" NAME="firstname" SIZE=30>(required)
 E-mail address:                 <input  TYPE="text" NAME="email"    SIZE=30>(required)
 <p>

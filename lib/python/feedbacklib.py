@@ -20,6 +20,7 @@ OPTIONAL = 0			# values to indicate whether a Field is
 REQUIRED = 1			# required or optional
 
 MARKER_TYPE = 2			# list all needed MGI Type keys here
+ASSAY_TYPE = 8
 ALLELE_TYPE = 11
 
 RECIPIENT = 'arsystem@jax.org'	# Remedy's e-mail account
@@ -387,6 +388,40 @@ class MultiLineTextField (Field):
 		else:
 			s = '<%s></TEXTAREA>' % s
 		return s
+
+
+class AssaySubjectField (OneLineTextField):
+	# Concept:
+	#	IS: a OneLineTextField which represents the subject for
+	#		an Assay page
+	#	HAS: see Field
+	#	DOES: see Field; also provides a new method whereby we can
+	#		set the field's value given an assay's accession ID
+
+	def setByAcc (self,
+		parms		# dictionary; parms[fieldname] = fieldvalue
+		):
+		# Purpose: set the value of this AssaySubjectField based on
+		#	an accession number ('accID') which may be contained
+		#	in 'parms'
+		# Returns: nothing
+		# Assumes: nothing
+		# Effects: updates self.value and calls the validate() method
+		#	which updates self.error
+		# Throws: nothing
+		# Notes: We set the value of this field to be as detailed
+		#	as possible, depending on whether 'parms' includes an
+		#	'accID' parameter and whether we can find an allele
+		#	subject value corresponding to a specified
+		#	accession number.
+
+		subj = 'RE: Assay'
+		if parms.has_key ('accID'):
+			subj = '%s (%s)' % (subj, parms['accID'])
+		self.value = subj
+		self.validate()
+		return
+
 
 class AlleleSubjectField (OneLineTextField):
 	# Concept:
@@ -885,6 +920,46 @@ class SimpleTextUserInput (UserInput):
 			'firstName', 'lastName', 'institution', 'email', 
 			'comments' ])
 
+class AssayUserInput (SimpleTextUserInput):
+	# Concept:
+	#	IS: a SimpleTextUserInput object which has a set of "Your
+	#		Comment" instructions particular to assays, and
+	#		a subject field which is assays-specific
+	#	HAS: see SimpleTextUserInput (and IS)
+	#	DOES: see SimpleTextUserInput
+
+	def __init__ (self,
+		parms = {}	# dictionary; parms[fieldname] = fieldvalue
+		):
+		# Purpose: constructor
+		# Returns: nothing
+		# Assumes: nothing
+		# Effects: initializes instance variables
+		# Throws: nothing
+		# Notes: Take note of the order in which we do things here.
+		#	We first call the superclass constructor to set up
+		#	the standard instance variables.  We then set a new
+		#	value for the commentInstructions, and change the
+		#	subject attribute to be an AlleleSubjectField.  We
+		#	set its value according to any accID which was passed
+		#	in.  Finally, we use the parameters to set the new
+		#	values for all instance variables.  This ensures that
+		#	any values submitted by the user override the default
+		#	values.
+
+		SimpleTextUserInput.__init__ (self)
+		self.commentInstructions = '''Use this space to suggest
+			modifications and additions to the annotations for
+			this assay.  For all other comments and suggestions, contact 
+			<a href="%ssupport/tjl_inbox.shtml">User
+			Support</a>.<BR>''' % config.lookup ('MGIHOME_URL')
+		self.subject = AssaySubjectField ('subject', 'Subject',
+			REQUIRED, width=45)
+		self.subject.setByAcc (parms)
+		self.setFields (parms)
+		return
+
+
 class AlleleUserInput (SimpleTextUserInput):
 	# Concept:
 	#	IS: a SimpleTextUserInput object which has a set of "Your
@@ -1014,6 +1089,9 @@ def getInputObj (
 
 			elif mgiType == ALLELE_TYPE:
 				inp = AlleleUserInput (parms)
+			
+			elif mgiType == ASSAY_TYPE:
+				inp = AssayUserInput (parms)
 
 			# add handling here for other MGI Types as needed...
 

@@ -10,6 +10,7 @@ import config
 import os
 
 import string
+import webshare_lib
 
 # Functions
 ###########
@@ -78,11 +79,9 @@ HEADER = string.join (
 # help section -- fill in Help Url
 HELP = string.join (
 	[
-	'      <A HREF="%%s"><IMG SRC="%simages/shared/help_large.jpg" ',
-	'	 BORDER=0 ',
-	'        WIDTH=32 HEIGHT=30></A>',
+	'      <A HREF="%%s">%s</A>',
 	],
-	'\n') % config.lookup('WI_URL')
+	'\n') % webshare_lib.webshareLookup('help')
 
 def helpSection (
 	helpUrl		# string; URL to the help page for this web page
@@ -124,9 +123,8 @@ def headerBar (
 
 	if do_logo:
 		left_column = ('<A HREF="%s" BORDER=0>' + \
-			'<IMG SRC="%simages/shared/mgi_logo.jpg" ' + \
-			'WIDTH=160 HEIGHT=80></A>') % \
-			(config.lookup('WI_URL'), config.lookup('WI_URL'))
+			webshare_lib.webshareLookup('mgi_logo')+'</A>') % \
+			config.lookup('WI_URL')
 	else:
 		left_column = helpSection (helpUrl)
 
