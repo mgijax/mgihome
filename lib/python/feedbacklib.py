@@ -622,7 +622,7 @@ class UserInput:
 			[
 			'<H2>Your Input Welcome</H2>',
 			'''We want to hear from you.  Use this form to submit
-			corrections or updates to the information in our
+			updates to the information in our
 			database.  Please enter the contact information in the
 			fields below so we can respond to you.  Be as detailed
 			in your message as possible, and please include
