@@ -1,0 +1,82 @@
+<HTML><HEAD>
+<!--MGI2.0 version 03 5/28/98-->
+<TITLE>MGI 2.0 Release Announcement</TITLE></HEAD>
+<BODY BGCOLOR="#ffffff">
+<!--#include file="include/banner.html"-->
+<CENTER><H2>Mouse Genome Informatics (MGI) Release 2.0 Announcement</H2>
+ <H3><EM>June 8, 1998</EM></H3></CENTER>
+
+<EM>The MGI Web site provides integrated access to various information resources on the 
+genetics and biology of the laboratory mouse, including the Mouse Genome Database (MGD), 
+the Gene Expression Database (GXD) and the Encyclopedia of the Mouse Genome (Encyclopedia).
+</EM>
+
+<H3>New Gene Expression Data and Query Form Now Available</H3>
+A data set of RT-PCR assays produced by Dr.Tom Freeman's laboratory 
+(<A HREF="../../searches/reference.cgi?46734">J:46439</A>) is 
+available from the database. This data set represents the analysis of 517 genes 
+in 46 mouse tissues from animals 6 to 8 weeks old. In addition, the data set includes 
+studies of tissue from 15 day old mouse embryo. 
+
+<H3><A HREF="../../searches/expression_form.shtml">Gene Expression Data Query Form</A></H3>
+<UL><EM>
+<LI>Where are specified genes expressed and/or at what developmental stages?<p>
+<LI>What genes are expressed in specified anatomical structures and/or during 
+specified developmental stages?
+</EM>
+</UL><BR> 
+These are the basic kinds of questions you can ask using this new query form. 
+You can search for expression data related to specified genes, anatomical 
+structures, or developmental stages.  Query results can be returned as a listing 
+of assays or assay results. See the <A HREF="../expression_help.shtml">user documentation</A> for 
+details. Initially, you can only search for RT-PCR assays. In the near 
+future, more data will become available.
+
+<H3>Revised <A HREF="../../searches/linkmap_form.shtml">Linkage Maps Form</A></H3>
+This form has been reorganized and simplified. You can generate a linkage map using 
+information retrieved from the database. The view of the chromosome is determined by 
+the criteria used to search the database. You can specify chromosome, a region of 
+chromosome, include markers from selected phenotypic classes,
+include DNA segments or syntenic markers, or add your own markers. You can also 
+select a mammalian species for comparison to generate a  map showing homologies 
+with mouse. A new option allows you to choose to display only those mouse markers 
+that have homlogies in the selected species.
+
+<H3><A HREF="ftp://ftp.informatics.jax.org/pub/informatics/datasets/RI/Paigen">AXB/BXA Mapping Data Sets Available Via FTP</A></H3>
+These data sets were produced by Dr. Beverly Paigen's laboratory at The Jackson Laboratory.  
+In MGI 2.0, these data files are available in EXCEL format and can be downloaded from 
+our ftp server.(<EM>See</EM> <A HREF="../../searches/reference.cgi?46614">reference</A>). These data 
+present new and revised typings in the AXB and BXA RI mapping data sets. 
+This information will be incorporated into MGD's composite RI data sets for AXB and BXA and
+is represented in the RI mapping experimental data records.
+
+<H3><A HREF="../../support/submissions/submissions_menu.shtml">Revised Data Submission Guidelines</A></H3>
+The guidelines for data submissions have been updated to 
+facilitate E-mail submission of MGD data. 
+
+<H3><A HREF="http://www.informatics.jax.org/ccr">1998 Chromosome Committee Reports</A> Available On-line</H3>
+The 1998 Chromosome Committee reports are complete and available on-line.<P>
+<EM><B>Refer to the <A HREF="2.0relnotes.shtml">MGI 2.0 Release Notes</A> for more 
+detailed information about this release.</B></EM>
+<p><hr>
+<!--#include file="include/footer.html"-->
+</BODY>
+</HTML>
+<!--
+WARRANTY DISCLAIMER AND COPYRIGHT NOTICE 
+
+    THE JACKSON LABORATORY MAKES NO REPRESENTATION ABOUT THE 
+    SUITABILITY OR ACCURACY OF THIS SOFTWARE OR DATA FOR ANY 
+    PURPOSE, AND MAKES NO WARRANTIES, EITHER EXPRESS OR IMPLIED, 
+    INCLUDING THE WARRANTIES OF MERCHANTABILITY AND FITNESS FOR 
+    A PARTICULAR PURPOSE OR THAT THE USE OF THIS SOFTWARE OR DATA 
+    WILL NOT INFRINGE ANY THIRD PARTY PATENTS, COPYRIGHTS, 
+    TRADEMARKS OF OTHER RIGHTS. IT IS PROVIDED "AS IS." 
+
+    This software and data are provided as a service to the scientific 
+    community to be used only for research and educational purposes. Any
+    commercial reproduction is prohibited without the prior written 
+    permission of The Jackson Laboratory. 
+
+    Copyright © 1996 The Jackson Laboratory All Rights Reserved 
+-->
