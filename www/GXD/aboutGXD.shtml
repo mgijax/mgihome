@@ -25,12 +25,12 @@
 
 
 <CENTER><font size="-1">| <A HREF="<!--#include file='include/wi_url.html'-->menus/expression_menu.shtml">Search GXD</a>
-| <A HREF="<!--#include file='include/wi_url.html'-->">Search MGI</A> | </center></FONT> 
+| <A HREF="<!--#include file='include/wi_url.html'-->">Search MGI</A> | </center></FONT>
 
 <H3>About GXD</H3>
 
-The Gene Expression Database (GXD) is a community resource for gene expression information from the laboratory mouse.  GXD stores and integrates different types of expression data and makes these data freely available in formats appropriate for comprehensive analysis. There is particular emphasis on endogenous gene expression during mouse development. The project is funded by 
-<a href="http://www.nih.gov/">NIH</a>/<a href="http://www.nichd.nih.gov">NICHD</a> grant <a href="http://commons.cit.nih.gov/crisp3/CRISP_LIB.getdoc?textkey=6363398&p_grant_num=5R01HD033745-05&p_query=&ticket=428206&p_audit_session_id=3166451&p_keywords=">HD33745</a>. 
+The Gene Expression Database (GXD) is a community resource for gene expression information from the laboratory mouse.  GXD stores and integrates different types of expression data and makes these data freely available in formats appropriate for comprehensive analysis. There is particular emphasis on endogenous gene expression during mouse development. The project is funded by
+<a href="http://www.nih.gov/">NIH</a>/<a href="http://www.nichd.nih.gov">NICHD</a> grant <a href="http://commons.cit.nih.gov/crisp3/CRISP_LIB.getdoc?textkey=6363398&p_grant_num=5R01HD033745-05&p_query=&ticket=428206&p_audit_session_id=3166451&p_keywords=">HD33745</a>.
 
 <p>This page provides information about:
 <p>
@@ -38,6 +38,7 @@ The Gene Expression Database (GXD) is a community resource for gene expression i
 <LI><a href="#key">Key Concepts of GXD</a><br>
 <LI><A HREF="#acquisition">Data Acquisition</a><br>
 <LI><A HREF="#forms">GXD Query Forms</A><BR>
+<LI><A HREF="#adult_dict">Anatomical Dictionary for the Adult Mouse</A><BR>
 <LI><A HREF="#whoswho">Who's Who</b> in GXD and other MGI projects</A>
 <li><a href="#pubs">Selected Publications</a>
 </ul>
@@ -48,7 +49,7 @@ The Gene Expression Database (GXD) is a community resource for gene expression i
 
 <li>GXD describes expression patterns using an extensive, hierarchically-structured dictionary of anatomical terms. In this way, expression results from assays with differing spatial resolution are recorded in a standardized and integrated manner and expression patterns can be queried at different levels of detail.  The records are complemented with digitized images of the original expression data. The Anatomical Dictionary for Mouse Development has been developed by our Edinburgh colleagues, as part of the joint <A HREF="gxdgen.shtml">Mouse Gene Expression Information Resource</a> project. <p>
 
-<li>GXD places the gene expression data in the larger biological context by establishing and maintaining interconnections with many other resources. Integration with MGD and MGS enables a combined analysis of genotype, sequence, expression, and phenotype data. Links to PubMed, Online Mendelian Inheritance in Man (OMIM), sequence databases, and databases from other species further enhance the utility of GXD. 
+<li>GXD places the gene expression data in the larger biological context by establishing and maintaining interconnections with many other resources. Integration with MGD and MGS enables a combined analysis of genotype, sequence, expression, and phenotype data. Links to PubMed, Online Mendelian Inheritance in Man (OMIM), sequence databases, and databases from other species further enhance the utility of GXD.
 </ul>
 
 
@@ -59,18 +60,24 @@ The Gene Expression Database (GXD) is a community resource for gene expression i
 To facilitate electronic submission of expression data, we have developed the <b>Gene Expression Notebook (GEN)</b>. Implemented in Microsoft&#174; Excel&#153;, the GEN is easy to use and to customize as a laboratory notebook for storing and organizing expression data. Data can then be effortlessly exported for electronic submission to GXD. Researchers interested in obtaining the GEN and its user guide may <a href="../GXD/GEN/">download them here</a>.
 </ul>
 
-<h3><a name="forms"></a><A HREF="<!--#include file='include/wi_url.html'-->menus/expression_menu.shtml">GXD Query Forms</A></h3>
+<h3><a name="forms"></a><A HREF="<!--#include file='include/wi_url.html'-->/menus/expression_menu.shtml">GXD Query Forms</A></h3>
 <UL>
-<LI>The <A HREF="<!--#include file='include/wi_url.html'-->searches/gxdindex_form.shtml">Gene Expression Literature Index</a> allows you to search for references on endogenous gene expression during development, including genes and ages analyzed and assays used. It covers, to the best of our knowledge, all relevant publications from 1993 to the present for all pertinent journals and 1990 to the present for major developmental journals.<p>
+<LI>The <A HREF="<!--#include file='include/wi_url.html'-->/searches/gxdindex_form.shtml">Gene Expression Literature Index Query Form</a> allows you to search for references on endogenous gene expression during development, including genes and ages analyzed and assays used. It covers, to the best of our knowledge, all relevant publications from 1993 to the present for all pertinent journals and from 1990 to the present for major developmental journals.<p>
 
-<LI>The <A HREF="<!--#include file='include/wi_url.html'-->searches/expression_form.shtml">Gene Expression Data Query Form</a>  allows you to search for detailed expression results from RNA in situ, immunohistochemistry, Northern blot, Western blot, RT-PCR and RNAase protection experiments using many query parameters. Experimental results are described together with the probes, specimens and experimental conditions used and are complemented by digitized images of the original data.<p>
+<LI>The <A HREF="<!--#include file='include/wi_url.html'-->/searches/expression_form.shtml">Gene Expression Data Query Form</a>  allows you to search for detailed expression results from RNA in situ, immunohistochemistry, Northern blot, Western blot, RT-PCR and RNAase protection experiments using many query parameters. Experimental results are described together with the probes, specimens and experimental conditions used and are complemented by digitized images of the original data.<p>
 
-<LI>The <A HREF="<!--#include file='include/wi_url.html'-->searches/anatdict_form.shtml">Mouse Anatomical Dictionary Browser</a> allows you to navigate through the extensive dictionary hierarchies for the different developmental stages, to locate specific anatomical structures within those hierarchies, and to obtain the expression results associated with those structures.<p>
+<LI>The <A HREF="<!--#include file='include/wi_url.html'-->/searches/anatdict_form.shtml">Mouse Anatomical Dictionary Browser</a> allows you to navigate through the extensive dictionary hierarchies for the different developmental stages, to locate specific anatomical structures within those hierarchies, and to obtain the expression results associated with those structures.<p>
 
-<li>The <A HREF="<!--#include file='include/wi_url.html'-->searches/estclone_form.shtml">cDNA Clone Query Form</a> allows you to search for expression information derived from cDNA source data using many query parameters. 
-
+<li>The <A HREF="<!--#include file='include/wi_url.html'-->/searches/estclone_form.shtml">cDNA Clone Query Form</a> allows you to search for expression information derived from cDNA source data using many query parameters.
 </ul>
 
+
+<h3><a name="adult_dict"></a>Anatomical Dictionary for the Adult Mouse</h3>
+<ul>
+<P>The
+<A HREF="<!--#include file='include/wi_url.html'-->/searches/AMA_form.shtml">Anatomical Dictionary for the Adult Mouse</a> has been developed and continues to be refined to provide standardized nomenclature for annotating expression and phenotype  data for the adult mouse. The Dictionary organizes anatomical structures for the postnatal mouse spatially and functionally.  You can use the browser to view anatomical terms and their relationships in a hierarchical display.  We welcome your input. Please <A HREF="mailto:anatomy@informatics.jax.org">contact</a> us with suggestions, additions, or questions about the Anatomical Dictionary for the Adult Mouse. 
+</ul>
+ 
 <h3><a name="whoswho"></a>Find out <A HREF='../other/mgi_people.shtml'>Who's Who</a> in GXD and other MGI projects </h3>
 
 
@@ -95,17 +102,17 @@ Ringwald M, Baldock R, Bard J, Kaufman M, Eppig JT, Richardson JE, Nadeau JH, Da
 <!--
 Warranty Disclaimer and Copyright Notice
 
- THE JACKSON LABORATORY MAKES NO REPRESENTATION ABOUT THE SUITABILITY OR 
- ACCURACY OF THIS SOFTWARE OR DATA FOR ANY PURPOSE, AND MAKES NO WARRANTIES, 
- EITHER EXPRESS OR IMPLIED, INCLUDING MERCHANTABILITY AND FITNESS FOR A 
- PARTICULAR PURPOSE OR THAT THE USE OF THIS SOFTWARE OR DATA WILL NOT 
- INFRINGE ANY THIRD PARTY PATENTS, COPYRIGHTS, TRADEMARKS, OR OTHER RIGHTS.  
+ THE JACKSON LABORATORY MAKES NO REPRESENTATION ABOUT THE SUITABILITY OR
+ ACCURACY OF THIS SOFTWARE OR DATA FOR ANY PURPOSE, AND MAKES NO WARRANTIES,
+ EITHER EXPRESS OR IMPLIED, INCLUDING MERCHANTABILITY AND FITNESS FOR A
+ PARTICULAR PURPOSE OR THAT THE USE OF THIS SOFTWARE OR DATA WILL NOT
+ INFRINGE ANY THIRD PARTY PATENTS, COPYRIGHTS, TRADEMARKS, OR OTHER RIGHTS.
  THE SOFTWARE AND DATA ARE PROVIDED "AS IS".
 
- This software and data are provided to enhance knowledge and encourage 
- progress in the scientific community and are to be used only for research 
- and educational purposes.  Any reproduction or use for commercial purpose 
- is prohibited without the prior express written permission of the Jackson 
+ This software and data are provided to enhance knowledge and encourage
+ progress in the scientific community and are to be used only for research
+ and educational purposes.  Any reproduction or use for commercial purpose
+ is prohibited without the prior express written permission of the Jackson
  Laboratory.
 
 Copyright © 1996, 1999, 2002 by The Jackson Laboratory
