@@ -36,6 +36,8 @@ def main ():
 		'../www/include/ratmap_url.html')
 	stringToFile (config.lookup ('GLOSSARY_URL'), \
 		'../www/include/glossary_url.html')
+        stringToFile (config.lookup ('SCHEMA'),\
+                '../www/include/schema_url.html')
 	stringToFile (config.lookup ('JAVAWI_URL'), \
 		'../www/include/java_url.html')
 	stringToFile (config.lookup ('MOUSEBLAST_URL'), \

@@ -59,7 +59,7 @@ GLOSSARY_URL	http://www.informatics.jax.org/userdocs/glossary.shtml
 # path to Sybase directory (where we find the interfaces file)
 # /opt/sybase for 11.5
 # /opt/sybase/12.5 for 12.5
-SYBASE		/opt/sybase
+SYBASE		/opt/sybase/12.5
 
 # path to library files for doing crons (commented out for now)
 #LD_LIBRARY_PATH	$LD_LIBRARY_PATH:$SYBASE/OCS-12_5/lib
@@ -69,3 +69,5 @@ WI_PATH         /usr/local/mgi/wi/current/
 
 # full URL to the associated MouseBLAST installation
 MOUSEBLAST_URL	http://mouseblast.informatics.jax.org/
+
+SCHEMA          http://rohan.informatics.jax.org/2.95/schema/
