@@ -23,6 +23,9 @@ GEN_PATH	/usr/local/mgi/gen/www/
 # full URL to the associated MGI Web Interface installation
 WI_URL		http://www.informatics.jax.org/
 
+# full URL to the servlets in the Java side of the MGI WI
+JAVAWI_URL	http://www.informatics.jax.org:8080/javawi/servlet/
+
 # full URL to this MGI Home installation
 MGIHOME_URL	http://www.informatics.jax.org/mgihome/
 
@@ -63,3 +66,6 @@ SYBASE		/opt/sybase
 
 # full path to associated WI installation (to help find toolbar include files)
 WI_PATH         /usr/local/mgi/wi/current/
+
+# full URL to the associated MouseBLAST installation
+MOUSEBLAST_URL	http://mouseblast.informatics.jax.org/

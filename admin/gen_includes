@@ -35,6 +35,10 @@ def main ():
 		'../www/include/ratmap_url.html')
 	stringToFile (config.lookup ('GLOSSARY_URL'), \
 		'../www/include/glossary_url.html')
+	stringToFile (config.lookup ('JAVAWI_URL'), \
+		'../www/include/java_url.html')
+	stringToFile (config.lookup ('MOUSEBLAST_URL'), \
+		'../www/include/mouseblast_url.html')
 
 	vocab = SimpleVocab.PhenoSlimVocab()
 	listToFile (SimpleVocab.getSelectionList (vocab,
