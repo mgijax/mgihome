@@ -1,147 +1,99 @@
  <HTML>
 <HEAD>
-<TITLE><!--#include file="include/title.html"--> Additional MGI Resources</TITLE>
+<TITLE><!--#include file="include/title.html"--> Additional Resources</TITLE>
 </HEAD>
 <BODY BGCOLOR="#FFFFFF">
 <TABLE WIDTH="100%" BORDER=0 CELLPADDING=2 CELLSPACING=1>
- <TR>
-  <TD WIDTH="100%" BGCOLOR="#D0E0F0">
+ <TR><TD WIDTH="100%" BGCOLOR="#D0E0F0">
    <TABLE WIDTH="100%" BORDER=0 CELLPADDING=0 CELLSPACING=0>
-    <TR>
-     <TD WIDTH="20%" VALIGN="center" ALIGN="left">
-       <IMG SRC="../images/mgi_logo.jpg" WIDTH=160 HEIGHT=80>
-     </TD>
-     <TD WIDTH="60%" ALIGN="center" VALIGN="center">
-      <FONT COLOR="#000000" SIZE=5 FACE="Arial,Helvetica">
-Help
-      </FONT>
-     </TD>
-     <TD WIDTH="20%" VALIGN="center" ALIGN="center">
-      &nbsp;
-     </TD>
-    </TR>
-   </TABLE>  </TD>
- </TR>
+    <TR><TD WIDTH="20%" VALIGN="center" ALIGN="left"><IMG SRC="../images/mgi_logo.jpg" WIDTH=160 HEIGHT=80></TD>
+     <TD WIDTH="60%" ALIGN="center" VALIGN="center"><FONT COLOR="#000000" SIZE=5 FACE="Arial,Helvetica">Additional Resources</FONT></TD><TD WIDTH="20%" VALIGN="center" ALIGN="center">&nbsp;</TD></TR></TABLE></TD></TR>
 </TABLE>
+  
+<dl>
+<dt><b>Contents</b>
+<dd><A HREF="#downloads"><B>Downloads</B></a><br>
+<dd><A HREF="#nomenclature"><B>Nomenclature</B></a><br>
+<dd><A HREF="#genefamily"><B>Gene Family Information</B></a><br>
+<dd><A HREF="#GEN"><B>Gene Expression Notebook</B></a><br>
+<dd><A HREF="#community"><B>Community E-mail Lists</B></a><br>
+<dd><A HREF="#mousegenetics"><B>Lee Silver's <i>Mouse Genetics</i></B></a><br>
+<dd><A HREF="#glossary"><B>MGI Glossary</B></a><br>
+<dd><A HREF="#contributed"><B>Contributed Data Sets</B></a><br>
+<dd><A HREF="#swresources"><B>Software Developer Resources</B></a><br>
+<dd><A HREF="#mirrorsites"><B>Mirror Sites</B></a><br>
+<dd><A HREF="#commlinks"><B>Community Links</B></a><br>
+<dd><A HREF="#mousefacts"><B>Mouse Facts</B></a><br>
+<dd><A HREF="#radiation"><B>Radiation Hybrid Mapping Resources</B></a><br>
+</dl>
+<hr>
+<dl>
+<dt><A name="downloads"></a><b>Downloads</B><BR>
+<dd><b><A HREF="<!--#include file='include/ftp_url.html'-->/pub/reports/index.html">Database Reports</A> (MGI Data and Statistical Reports)<br>
 
-   <TABLE border=0 cellpadding=0 cellspacing=1>
-     <TR>
-       <TD align=left VALIGN=top width=50%>
-        <FONT SIZE=3><B><A name="downloads"></a>Downloads</B></FONT><BR>
-          <ul>
-          <b><A HREF="<!--#include file='include/ftp_url.html'-->/pub/reports/index.html">Database Reports</A><br>
-          <A HREF="<!--#include file='include/ftp_url.html'-->">FTP Server</A></b><br>
-          </ul>
-        <FONT SIZE=3><a name="nomenclature"></a><B>Nomenclature</B></FONT>
-          <UL>
-          <B><A HREF="../nomen/">Mouse Gene Nomenclature</A></B><BR><EM>MGI is the official site for mouse gene nomenclature and maintains official mouse strain symbols.</EM><BR>
-          <B><A HREF="../nomen/allmut_form.shtml">Mouse Mutant Nomenclature</A></B><BR>
-          <EM>Guidelines for new heritable phenotypic alleles</EM>
-          </ul>
-          <FONT SIZE=3><B><A name="genefamily"></a><A HREF="../nomen/genefamilies/index.shtml">Gene Family Information</A></B></FONT><BR><EM>Curated gene families with members from mouse and human</EM>
-        </td>
-        <td align=left valign=top> <FONT SIZE=3><B>Contents</b></font>
-          <ul><font size=3>
-          <A HREF="#downloads"><B>Downloads</B></a><br>
-    	  <A HREF="#nomenclature"><B>Nomenclature</B></a><br>
-    	  <A HREF="#genefamily"><B>Gene Family Information</B></a><br>
-	  <A HREF="#GEN"><B>Gene Expression Notebook</B></a><br>
-    	  <A HREF="#community"><B>Community E-mail Lists</B></a><br>
-    	  <A HREF="#mousegenetics"><B>Lee Silver's <i>Mouse Genetics</i></B></a><br>
-    	  <A HREF="#glossary"><B>MGI Glossary</B></a><br>
-    	  <A HREF="#contributed"><B>Contributed Data Sets</B></a><br>
-    	  <A HREF="#swresources"><B>Software Developer Resources</B></a><br>
-       
-   	  <A HREF="#mirrorsites"><B>Mirror Sites</B></a><br>
-    	  <A HREF="#commlinks"><B>Community Links</B></a><br>
-   	  <A HREF="#mousefacts"><B>Mouse Facts</B></a><br>
-    	  <A HREF="#radiation"><B>Radiation Hybrid Mapping Resources</B></a><br>
-    	  </UL></font></B>
-	</td>
-	</tr><br><br>
+<dd><A HREF="<!--#include file='include/ftp_url.html'-->">FTP Server</A></b><br><br>
 
-<tr><td colspan=2 ALIGN=LEFT VALIGN=TOP><br>
-<FONT SIZE=3><B><A name="GEN"></a>
-<A HREF="../GXD/GEN">Gene Expression Notebook</a></b></font><br>
-<i>A tool to organize and store your expression data in your laboratory and submit selected data to the Gene Expression Database</i>
-</td></tr>
+<dt><a name="nomenclature"></a><B>Nomenclature</B>
 
-<tr><th colspan=2 ALIGN=LEFT VALIGN=TOP><br>
-<FONT SIZE=3><a name="community"></a><a href="../lists/lists.shtml"><b>Community E-mail Lists</b></a></font><br>
-<EM>Searchable research community E-mail lists moderated by User Support</EM>
-</TD></TR>
+<dd><B><A HREF="../nomen/">Mouse Gene Nomenclature</B></A> (Mouse Nomenclature Home Page)<BR><EM>MGI is the official site for mouse gene nomenclature and maintains official mouse strain symbols.</EM><br>
+<dd><B><A HREF="../nomen/allmut_form.shtml">Mouse Mutant Nomenclature</B> (Mutant Submissions Form)</A><BR>
+<EM>Guidelines for new heritable phenotypic alleles</EM><br><br>
 
-<tr><td colspan=2 ALIGN=LEFT VALIGN=TOP><br>
-<a name="mousegenetics"></a><a href="/silver/"><b>Lee Silver's <I>Mouse Genetics</I></b></A><br>
-<EM>Electronic version of Silver's out-of-print book</EM></td></tr>
+<dt><B><A name="genefamily"></a><A HREF="../nomen/genefamilies/index.shtml">Gene Family Information</A></B><BR><EM>Curated gene families with members from mouse and human</EM><br><br>
 
-<tr><td colspan=2 ALIGN=LEFT VALIGN=TOP><br>
-<a name="glossary"></a>
-<a href="../other/glossary.shtml"><b>MGI Glossary</b></A><br>
-<EM>Commonly used terms in mouse genetics</EM></td></tr>
+<dt><A name="GEN"></a><A HREF="../GXD/GEN/"><B>Gene Expression Notebook</b></a><br>
+<i>A tool to organize and store your expression data in your laboratory and submit selected data to the Gene Expression Database</i><br><br>
 
+<dt><a name="community"></a><a href="../lists/lists.shtml"><b>Community E-mail Lists</b></a> (MGI E-mail List Service)<br>
+<EM>Searchable research community E-mail lists moderated by User Support</EM><br><br>
 
-<tr><td colspan=2 ALIGN=LEFT VALIGN=TOP><br>
-<A name="contributed"></a>
-<A HREF="<!--#include file='include/ftp_url.html'-->pub/datasets/index.html"><B>  Contributed Data Sets</B></A><BR>
+<dt><a name="mousegenetics"></a><a href="/silver/"><b>Lee Silver's <I>Mouse Genetics</I></b></A><br>
+<EM>Electronic version of Silver's out-of-print book</EM><br><br>
+
+<dt><a name="glossary"></a><a href="../other/glossary.shtml"><b>MGI Glossary</b></A><br>
+<EM>Commonly used terms in mouse genetics</EM><br><br>
+
+<dt><A name="contributed"></a><A HREF="<!--#include file='include/ftp_url.html'-->pub/datasets/index.html"><B>  Contributed Data Sets</B></A> (Mouse Genome Informatics: Other Contributed Data Sets)<BR>
 <EM>Data contributed to MGI that are not directly integrated into MGI</EM>
 <BR>
-<EM><A HREF="../submissions/submissions_menu.shtml">How to contribute</A> your data</EM>
-</td></tr>
+<EM><A HREF="../submissions/submissions_menu.shtml">How to contribute</A> your data</EM> (Data and Nomenclature Submissions)<br><br>
 
-<tr><td colspan=2 ALIGN=LEFT VALIGN=TOP><br><FONT SIZE=3><B><a name="swresources"></a>
-<A HREF="<!--#include file='include/wi_url.html'-->userdocs/developers_tools.shtml">Software Developer Resources</A></B></FONT><br>
-How to create links to MGI<BR>
-Schema Browser
-</td></tr>
+<dt><B><a name="swresources"></a><A HREF="<!--#include file='include/wi_url.html'-->userdocs/developers_tools.shtml">Software Developer Resources</A></B> (Tools for Developers)<br>
+<dd>How to create links to MGI<BR>
+<dd>Schema Browser<br><br>
 
+<dt><B><A name="mirrorsites"></a><A HREF="../mirrors/mirrors.shtml">MGI Mirror Sites</A></B><BR>
+<EM>Sites in Australia, Japan, The Netherlands, and Taiwan mirror MGI.</EM><br><br>
 
-<tr><td colspan=2 ALIGN=LEFT VALIGN=TOP><br>
-<FONT SIZE=3><B><A name="mirrorsites"></a>
-<A HREF="../mirrors/mirrors.shtml">Mirror Sites</A></B></FONT><BR>
-<EM>Sites in Australia, Japan, The Netherlands, and Taiwan mirror MGI.</EM>
-</td></tr>
+<dt><B><A name="commlinks"></a>Community Links</B><BR>
+<dd><A HREF="../other/mouse_facts4.shtml">Useful Links</A><BR>
+<dd><A HREF="http://www.nih.gov/science/models/mouse/">Trans-NIH Mouse Initiative</A>
+<dd><A HREF="../other/phenoallele_commun_resource.shtml">Phenotypes and Mutants Community Resources</A><BR>
+<dd><A HREF="../other/mouse_facts1.shtml#MolecRes">Sources for clones (Molecular Resources)</A><BR>
+<dd><A HREF="http://www.ncbi.nlm.nih.gov/genome/seq/MmBlast.html">BLAST whole genome mouse assemblies at NCBI (Blast the mouse genome)</A><br><br>
 
-<tr><td colspan=2 ALIGN=LEFT VALIGN=TOP><br>
-<FONT SIZE=3><B><A name="commlinks"></a>Community Links</B></FONT><BR>
-<A HREF="../other/mouse_facts4.shtml">Useful web sites</A><BR>
-<A HREF="http://www.nih.gov/science/models/mouse/">Trans-NIH Mouse Initiative</A>
-</td></tr>
-
-<tr><td colspan=2 ALIGN=LEFT VALIGN=TOP><br>
-<FONT SIZE=3><B><a name=""></a>
-<A HREF="../other/phenoallele_commun_resource.shtml">Phenotypes and Mutants Community Resources</A><BR><br>
-<A HREF="../other/mouse_facts1.shtml#MolecRes">Sources for clones</A><BR><br>
-<A HREF="http://www.ncbi.nlm.nih.gov/genome/seq/MmBlast.html">BLAST whole genome mouse assemblies at NCBI</A>
-</ul>
-</td></tr>
-<br>
-<tr><td colspan=2 ALIGN=LEFT VALIGN=TOP><br>
-<FONT SIZE=3><B><A name="mousefacts"></a>
-<a href="../other/mouse_facts1.shtml">Mouse Facts</A></B></FONT><BR>
+<dt><A name="mousefacts"></a>
+<a href="../other/mouse_facts1.shtml"><b>Mouse Facts</A></B><BR>
 <EM>Information about:</EM><br>
 <dd>mouse physiology<BR>
 <dd>genome size estimates<BR>
 <dd>codon usage<BR>
 <dd>clone resources<BR>
-<dd>radiation hybrid panels<BR>
-</td></tr>
-<tr><td colspan=2 ALIGN=LEFT VALIGN=TOP><br>
-<FONT SIZE=3><B><A name="radiation"></a>Radiation Hybrid Mapping Resources</B></FONT><br>
-<A HREF="http://www.jax.org/resources/documents/cmdata/rhmap/">The Jackson
-	Laboratory Mouse Radiation Hybrid Database</A><BR>
-<A HREF="http://corba.ebi.ac.uk/RHdb/">European Bioinformatics Institute
-	Radiation Hybrid Database</A><BR>
-	
-<A HREF="http://www-genome.wi.mit.edu/mouse_rh/index.html">Whitehead Mouse
-	RH Database at MIT</A><BR>
-<A HREF="http://www.mgc.har.mrc.ac.uk/physical/est_mapping/est.html">MRC
-	Mouse Genome Center</A><BR>
-<A HREF="http://www.genoscope.cns.fr/externe/English/Projets/Projet_ZZZ/rhmap.html">CNS France</A>
-</td></tr>
-</table>
+<dd>radiation hybrid panels<BR><br>
 
-<br><br><br><br><br><br>
+<dt><B><A name="radiation"></a>Radiation Hybrid Mapping Resources</B><br>
+<dd><A HREF="http://www.jax.org/resources/documents/cmdata/rhmap/">The Jackson
+	Laboratory T31 Mouse Radiation Hybrid Database</A><BR>
+<dd><A HREF="http://corba.ebi.ac.uk/RHdb/">European Bioinformatics Institute
+	Radiation Hybrid Database</A><BR>
+<dd><A HREF="http://www-genome.wi.mit.edu/mouse_rh/index.html">Whitehead Mouse
+	RH Database at MIT</A><BR>
+<dd><A HREF="http://www.mgc.har.mrc.ac.uk/physical/est_mapping/est.html">MRC
+	Mouse Genome Centre at Mammalian Genetics Unit, Harwell UK</A><BR>
+<dd><A HREF="http://www.genoscope.cns.fr/externe/English/Projets/Projet_ZZZ/rhmap.html">CNS France (Mouse Radiation Hybrid Mapping Project)</A>
+</dl>
+
+
 <HR>
 <!--#include file="include/footer.html"-->
 </BODY></HTML>
