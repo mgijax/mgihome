@@ -30,13 +30,13 @@ MGI Glossary
 This glossary provides definitions for some terms found in our help documentation and other terms that are useful in understanding mouse genetics and bioinformatics. 
 Terms are defined in a general sense as they apply to eukaryotic genetics, particularly mouse genetics; some terms are also defined as they are specifically used in MGI (e.g., 
 <A HREF="#gene">gene</A>). This list will grow as time goes on. If there is a term you think should be included in this list, please contact 
-<A HREF="<!--#include file='include/mgihome_url.html'-->support/tjl_inbox.shtml">MGI User Support</A>.<P>There are an number of useful online glossaries in addition to this one:
+<A HREF="<!--#include file='include/mgihome_url.html'-->support/tjl_inbox.shtml">MGI User Support</A>. There are an number of useful online glossaries in addition to this one:
 <UL>
 <LI>The 
 <A HREF="<!--#include file='include/wi_url.html'-->/searches/anatdict_form.shtml">Mouse Anatomical Dictionary Browser</A> displays anatomical terms of the mouse in a hierarchical manner for a series of developmental stages, using 
-<A HREF="http://genex.hgu.mrc.ac.uk/Databases/Anatomy/">standard anatomical nomenclature</A>.</LI>
+<A HREF="http://genex.hgu.mrc.ac.uk/Databases/Anatomy/">standard anatomical nomenclature</A>.
 <li>The <a href="<!--#include file='include/wi_url.html'-->/searches/AMA_form.shtml">
-Adult Mouse Anatomical Dictionary Browser</a> provides standardized nomenclature for anatomical structures in the postnatal mouse (Theiler stage 28).</LI>
+Adult Mouse Anatomical Dictionary Browser</a> provides standardized nomenclature for anatomical structures in the postnatal mouse (Theiler stage 28).
 <LI>The <A HREF="http://www.geneontology.org/doc/GO.defs">GO Term Definitions</A> page provides current definitions of all terms used in the Gene Ontology Project.</LI>
 <LI>The <A HREF="http://www.genome.gov/glossary.cfm">Glossary of Genetic Terms</A> at the National Human Genome Research Institute defines basic genetic terms most relevant to human genetics. This glossary includes audio explanations and illustrations.</LI>
 <LI>The <A HREF="http://www.ornl.gov/TechResources/Human_Genome/glossary/">Genome Glossary</A> for the Human Genome Project defines many basic genetic terms.</LI><LI>The 
@@ -49,7 +49,7 @@ Adult Mouse Anatomical Dictionary Browser</a> provides standardized nomenclature
 <A HREF="#c">C</A>&nbsp;&nbsp;<A HREF="#d">D</A>&nbsp;&nbsp;<A HREF="#e">E</A>&nbsp;&nbsp;<A HREF="#f">F</A>&nbsp;&nbsp;<A HREF="#g">G</A>&nbsp;&nbsp;<A HREF="#h">H</A>&nbsp;&nbsp;<A HREF="#i">I</A>&nbsp;&nbsp;<A HREF="#j">J</A>&nbsp;&nbsp;<A HREF="#k">K</A>&nbsp;&nbsp;<A HREF="#l">L</A>&nbsp;&nbsp;<A HREF="#m">M</A>&nbsp;&nbsp;<A HREF="#n">N</A>&nbsp;&nbsp;<A HREF="#o">O</A>&nbsp;&nbsp;<A HREF="#p">P</A>&nbsp;&nbsp;<A HREF="#q">Q</A>&nbsp;&nbsp;<A HREF="#r">R</A>&nbsp;&nbsp;<A HREF="#s">S</A>&nbsp;&nbsp;<A HREF="#t">T</A>&nbsp;&nbsp;
 <A HREF="#u">U</A>&nbsp;&nbsp;<A HREF="#v">V</A>&nbsp;&nbsp;<A HREF="#w">W</A>&nbsp;&nbsp;
 <A HREF="#x">X</A>&nbsp;&nbsp;<A HREF="#y">Y</A>&nbsp;&nbsp;</H3>
-<BR><p align=center>Click on a letter above to jump to that section of the MGI Glossary.<HR>
+<p align=center>Click on a letter above to jump to that section of the MGI Glossary.<HR>
 
 <P><DT><B><A NAME="3'">3' (3-prime)</A></B></dt><DD>A term that identifies one end of a single-stranded 
 <A HREF="#nucleic_acid">nucleic acid</A> molecule. The 3' end is that end of the molecule which terminates in a 3' hydroxyl group. The 3' direction is the direction toward the 3' end. Nucleic acid sequences are written with the <A HREF="#5'">5' end</A> to the left and the 3' end to the right, in reference to the direction of <A HREF="#DNA">DNA</A> synthesis during <A HREF="#replication">replication</A> (from 5' to 3'), <A HREF="#RNA">RNA</A> synthesis during 
@@ -557,7 +557,7 @@ In MGI and other databases, Boolean refers to the kind of logical relationship a
 
 <!-- FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF --><A NAME="f"></A>
 <P><DT><B><A NAME="field"></A>Field</B><DD>In a <A HREF="#relational_db">relational database</A>, an item of information, such as a <A HREF="#chromosome">chromosome</A> number, or the <A HREF="#centimorgan">centimorgan</A> length on a <A HREF="#genetic_map">genetic map</A>. Some fields are numeric, while others are textual; some are long, while others are short. In addition, every field has a name, called the <i>field name</i>. In <A HREF="#database_management">database management systems</A>, a field can be required, optional, or calculated. A required field is one in which you must enter data, while an optional field is one you may leave blank. A calculated field is one whose value is derived from some formula involving other fields. You do not enter data into a calculated field; the system automatically determines the correct value. A collection of fields is called a 
-<A HREF="#record">record</A>.</dd></p>
+<A HREF="#record">record</A>.<br> See also <a href="#parameter">parameter</a>.</dd></p>
 
 <P><DT><B><A NAME="finished_sequence"></A>Finished sequence</B><DD>Sequence of <A HREF="#genome">genomic</A> <A HREF="#DNA">DNA</A> in which: a) bases are identified to an accuracy of no more than one error in 10,000 bases, b) there is no ambiguity about the order or orientation of any segment, and c) there are few if any gaps. <BR>See also <A HREF="#draft_genome">Draft Genome Sequence</A>.</dd></p>
 
@@ -1492,36 +1492,13 @@ The relationship between mouse alpha globin and chick beta globin is also consid
 <A HREF="#orthology">Orthology</A>, and 
 <A HREF="#paralog">Paralog</A>.
 
-<!--</dd></p><P><DT><B><A NAME="parameter">Parameter</A></B></dt><dd>In MGI, a value that a user selects from a query form. For example,--> 
+</dd></p><P><DT><B><A NAME="parameter">Parameter</A></B></dt><dd>An item of information such as a name, a number, or a selected option passed to a program by a user or another program. Parameters affect the operation of the program receiving them. In MGI, parameters are values that you select or enter in the query form <a href="#field">fields</a>.</dd></p>
 
+<P><DT><B><A NAME="parent">Parent</A></B></dt><dd>In <A HREF="#MGI">MGI</A>, this term refers to terms in a <A HREF="#hierarchical">hierarchical</a> <A HREF="#controlled_vocabulary">controlled vocabulary</A> such as those containing <A HREF="#gene_ontology">Gene Ontology (GO)</A> terms. A "parent" of a term is a one any number of levels above it in the <A HREF="#hierarchy">hierarchy</a> from which it is descended. For example, the GO term <i>enzyme</i> [GO:0003824] is a parent to the GO term <i>alcohol dehydrogenase</i> [GO:0004022].<BR>See also <A HREF="#children">Children</A>, <A HREF="#ancestor">Ancestor</A>, <A HREF="#sibling">Sibling</A>.
 
-</dd></p><P><DT><B><A NAME="parent">Parent</A></B></dt><dd>In 
-<A HREF="#MGI">MGI</A>, this term refers to terms in a 
-<A HREF="#hierarchical">hierarchical</a> 
-<A HREF="#controlled_vocabulary">controlled vocabulary</A> such as those containing 
-<A HREF="#gene_ontology">Gene Ontology (GO)</A> terms. A "parent" of a term is a one any number of levels above it in the 
-<A HREF="#hierarchy">hierarchy</a> from which it is descended. For example, the GO term 
-<A HREF="#enzyme">enzyme</A> [GO:0003824] is a parent to the GO term <B>alcohol dehydrogenase</B> [GO:0004022].<BR>See also 
-<A HREF="#children">Children</A>, 
-<A HREF="#ancestor">Ancestor</A>, 
-<A HREF="#sibling">Sibling</A>.
+</dd></p><P><DT><B><A NAME="pcr">PCR</A></B></dt><dd>Polymerase Chain Reaction. A method of amplifying specific <A HREF="#DNA">DNA</A> segments based on hybridization to a <A HREF="#primer">primer</A> pair. A DNA sample is <A HREF="#denaturation">denatured</A> by heating in the presence of a vast molar excess of short single-stranded DNA primers (around 20 <A HREF="#nucleotide">nucleotides</A>) whose sequence is chosen based on the target sequence. The reaction mixture also contains a <A HREF="#thermostable">thermostable</A> <A HREF="#DNA_polymerase">DNA polymerase</A>, <A HREF="#dNTP">dNTPs</A>, and buffer. The primer sequences are selected so that they: 1) are derived from opposite strands of the target sequence, 2) have their <A HREF="#3'">3' ends</A> facing each other, and 3) are separated by a length of DNA that can be reliably synthesized <A HREF="#in_vitro">in vitro</A>. The sample is then cooled to a temperature that allows primer annealing and in vitro <A HREF="#replication">replication</A>. The sample is subjected to multiple cycles of denaturation and cooling to allow multiple rounds of replication. The quantity of the target sequence doubles during each cycle, causing the target sequence to be amplified, while other <A HREF="#DNA">DNA</A> sequences in the sample remain unamplified. See the <A HREF="http://www.accessexcellence.org/AB/GG/polymerase.html">Figure</A> at Access Excellence.</dd></p>
 
-</dd></p><P><DT><B><A NAME="pcr">PCR</A></B></dt><dd>Polymerase Chain Reaction. A method of amplifying specific 
-<A HREF="#DNA">DNA</A> segments based on hybridization to a
-<A HREF="#primer">primer</A> pair. A DNA sample is 
-<A HREF="#denaturation">denatured</A> by heating in the presence of a vast molar excess of short single-stranded DNA primers (around 20 
-<A HREF="#nucleotide">nucleotides</A>) whose sequence is chosen based on the target sequence. The reaction mixture also contains a 
-<A HREF="#thermostable">thermostable</A> 
-<A HREF="#DNA_polymerase">DNA polymerase</A>, 
-<A HREF="#dNTP">dNTPs</A>, and buffer. The primer sequences are selected so that they: 1) are derived from opposite strands of the target sequence, 2) have their 
-<A HREF="#3'">3' ends</A> facing each other, and 3) are separated by a length of DNA that can be reliably synthesized 
-<A HREF="#in_vitro">in vitro</A>. The sample is then cooled to a temperature that allows primer annealing and in vitro 
-<A HREF="#replication">replication</A>. The sample is subjected to multiple cycles of denaturation and cooling to allow multiple rounds of replication. 
-The quantity of the target sequence doubles during each cycle, causing the target sequence to be amplified, while other 
-<A HREF="#DNA">DNA</A> sequences in the sample remain unamplified. See the 
-<A HREF="http://www.accessexcellence.org/AB/GG/polymerase.html">Figure</A> at Access Excellence.
-
-</dd></p><P><DT><B><A NAME="penetrance">Penetrance</A></B></dt><dd>The fraction of individuals of a given 
+<P><DT><B><A NAME="penetrance">Penetrance</A></B></dt><dd>The fraction of individuals of a given 
 <A HREF="#genotype">genotype</A> that show a particular 
 <A HREF="#phenotype">phenotype</A>, usually expressed as a percentage.<BR>See also 
 <A HREF="#expressivity">Expressivity</A>.
@@ -2189,53 +2166,30 @@ across the panel with the presence of a particular mouse chromosome allows that 
 <A HREF="http://www.nhgri.nih.gov/DIR/VIP/Glossary/Illustration/base_pair.html">Figure</A> at <A HREF="#NHGRI">NHGRI</A>.
 
 </dd></p><P><DT><B><A NAME="trait">Trait</A></B></dt><DD>A particular aspect of the 
-<A HREF="#phenotype">phenotype</A> that can be measured or observed directly, e.g., blood pressure or body weight.
+<A HREF="#phenotype">phenotype</A> that can be measured or observed directly, e.g., blood pressure or body weight.</dd></p>
 
-</dd></p><P><DT><B><A NAME="transcript">Transcript</A></B></dt><DD>An 
-<A HREF="#RNA">RNA</A> molecule (or species of RNA molecule) that is the product of 
-<A HREF="#transcription">transcription</A>.
+<P><DT><B><A NAME="transcript">Transcript</A></B></dt><DD>An <A HREF="#RNA">RNA</A> molecule (or species of RNA molecule) that is the product of <A HREF="#transcription">transcription</A>.</dd></p>
 
-</dd></p><P><DT><B><A NAME="transcription">Transcription</A></B></dt><DD>The <A HREF="#enzyme">enzymatic</A> synthesis of an <A HREF="#RNA">RNA</A> molecule directed by information in a <A HREF="#DNA">DNA</A> molecule. See the <A HREF="http://www.nhgri.nih.gov/DIR/VIP/Glossary/Illustration/mrna.html">Figure</A> at 
+<P><DT><B><A NAME="transcription">Transcription</A></B></dt><DD>The <A HREF="#enzyme">enzymatic</A> synthesis of an <A HREF="#RNA">RNA</A> molecule directed by information in a <A HREF="#DNA">DNA</A> molecule. See the <A HREF="http://www.nhgri.nih.gov/DIR/VIP/Glossary/Illustration/mrna.html">Figure</A> at <A HREF="#NHGRI">NHGRI</A>.<BR>See also <A HREF="#central_dogma">Central Dogma</A>.</dd></p>
+
+<P><DT><B><A NAME="transgene">Transgene</A></B></dt><DD>Any 
+<A HREF="#DNA">DNA</A> sequence or combination of sequences that has been introduced via a construct into the germline of the animal by random integration.</dd></p>
+
+<P><DT><B><A NAME="transgenic_mouse">Transgenic mouse</A></B></dt><DD>A mouse that contains a stably inherited <A HREF="#DNA">DNA</A> which has been inserted randomly into the genome. The inserted gene sequence (the transgene) may or may not be derived from mouse sequence. Since the creation of <A HREF="#knockin">knock-in</a>/<A HREF="#knockout">knock-out</a> mice involves directed <A HREF="#homologous_recombination">homologous recombination</a>, at <A HREF="#MGI">MGI</a>, they are not considered to be transgenic.</dd></p>
+
+<P><DT><B><A NAME="transition">Transition</A></B></dt><DD>A type of <A HREF="#point_mutation">point mutation</A> in which a <A HREF="#purine">purine</A> is substituted for another purine or a 
+<A HREF="#pyrimidine">pyrimidine</A> for another pyrimidine. These substitutions include A for G, G for A, C for T, or T for C.<BR>See also <A HREF="#transversion">Transversion</A>.</dd></p>
+
+<P><DT><B><A NAME="translation">Translation</A></B></dt><DD>The <A HREF="#enzyme">enzymatic</A> synthesis of a <A HREF="#protein">protein</A> molecule directed by the information in an <A HREF="#mRNA">mRNA</A> molecule. The <A HREF="#mRNA">mRNA</A> is read from the <A HREF="#5'">5' end</A> to the <A HREF="#3'">3' end</A>, with the <A HREF="#protein">protein</A> being synthesized from the 
+<A HREF="#amino_terminus">amino terminus</A> to the <A HREF="#carboxyl_terminus">carboxyl terminus</A>. See the <A HREF="http://www.nhgri.nih.gov/DIR/VIP/Glossary/Illustration/mrna.html">Figure</A> at 
 <A HREF="#NHGRI">NHGRI</A>.<BR>See also <A HREF="#central_dogma">Central Dogma</A>.</dd></p>
 
-<P><DT><B><A NAME="transgene">Transgene</A></B></dt><DD>A stably inherited 
-<A HREF="#gene">gene</A> inserted randomly into the genome. The transgene may or may not be derived from mouse.</dd></p>
-
-<P><DT><B><A NAME="transgene">Transgenic mouse</A></B></dt><DD>A mouse that contains a stably inherited 
-<A HREF="#gene">gene</A> or genes which have been inserted randomly into the genome. The inserted gene sequence (the transgene) may or may not be derived from mouse.</dd></p>
-
-<P><DT><B><A NAME="transition">Transition</A></B></dt><DD>A type of 
-<A HREF="#point_mutation">point mutation</A> in which a 
-<A HREF="#purine">purine</A> is substituted for another purine or a 
-<A HREF="#pyrimidine">pyrimidine</A> for another pyrimidine. These substitutions include A for G, G for A, C for T, or T for C.<BR>See also 
-<A HREF="#transversion">Transversion</A>.
-
-</dd></p><P><DT><B><A NAME="translation">Translation</A></B></dt>
-<DD>The <A HREF="#enzyme">enzymatic</A> synthesis of a 
-<A HREF="#protein">protein</A> molecule directed by the information in an
-<A HREF="#mRNA">mRNA</A> molecule. The 
-<A HREF="#mRNA">mRNA</A> is read from the 
-<A HREF="#5'">5' end</A> to the 
-<A HREF="#3'">3' end</A>, with the 
-<A HREF="#protein">protein</A> being synthesized from the 
-<A HREF="#amino_terminus">amino terminus</A> to the
-<A HREF="#carboxyl_terminus">carboxyl terminus</A>. See the 
-<A HREF="http://www.nhgri.nih.gov/DIR/VIP/Glossary/Illustration/mrna.html">Figure</A> at 
-<A HREF="#NHGRI">NHGRI</A>.<BR>See also
-<A HREF="#central_dogma">Central Dogma</A>.
-
-</dd></p><P><DT><B><A NAME="translocation">Translocation</A></B></dt><DD>A type of <A HREF="#mutation">mutation</A> in which two 
-<A HREF="#homolog">nonhomologous</A> chromosomes are each broken and then repaired in such a way that: <OL><LI>the resulting 
-<A HREF="#chromosome">chromosomes</A> each contain material from the other chromosome (a <B>reciprocal</B> translocation; see the 
-<A HREF="http://www.nhgri.nih.gov/DIR/VIP/Glossary/Illustration/translocation.html">Figure</A> at 
-<A HREF="#NHGRI">NHGRI</A>),</LI><LI>one of the chromosomes contains an 
-<A HREF="#insertion">insertion</A> of material from the other chromosome, with the other chromosome containing a 
-<A HREF="#deletion">deletion</A> (an <B>insertional</B> translocation; see the 
+<P><DT><B><A NAME="translocation">Translocation</A></B></dt><DD>A type of <A HREF="#mutation">mutation</A> in which two <A HREF="#homolog">nonhomologous</A> chromosomes are each broken and then repaired in such a way that: <OL><LI>the resulting <A HREF="#chromosome">chromosomes</A> each contain material from the other chromosome (a <B>reciprocal</B> translocation; see the <A HREF="http://www.nhgri.nih.gov/DIR/VIP/Glossary/Illustration/translocation.html">Figure</A> at 
+<A HREF="#NHGRI">NHGRI</A>),</LI><LI>one of the chromosomes contains an <A HREF="#insertion">insertion</A> of material from the other chromosome, with the other chromosome containing a <A HREF="#deletion">deletion</A> (an <B>insertional</B> translocation; see the 
 <A HREF="http://www.nhgri.nih.gov/DIR/VIP/Glossary/Illustration/insertion.html">Figure</A> at 
-<A HREF="#NHGRI">NHGRI</A>), or<LI>the two chromosomes, each with breaks near the 
-<A HREF="#centromere">centromere</A>, fuse to form a single chromosome with a single centromere (a <B>Robertsonian</B> translocation).</OL>
+<A HREF="#NHGRI">NHGRI</A>), or<LI>the two chromosomes, each with breaks near the <A HREF="#centromere">centromere</A>, fuse to form a single chromosome with a single centromere (a <B>Robertsonian</B> translocation).</OL></dd></p>
 
-</dd></p><P><DT><B><A NAME="transposition">Transposition</A></B></dt></dt><DD><ol><li>A type of 
+<P><DT><B><A NAME="transposition">Transposition</A></B></dt></dt><DD><ol><li>A type of 
 <A HREF="#chromosome_rearrangement">chromosome rearrangement</A> in which a segment of a 
 <A HREF="#chromosome">chromosome</A> is moved to a different location on the same chromosome, resembling an <A HREF="#translocation">insertional translocation</A> involving a single chromosome.</li><li>The movement of a <A HREF="#mobile_genetic">mobile genetic element</A> to a new location.</li></ol></dd>
 
