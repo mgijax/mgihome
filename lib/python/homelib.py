@@ -1,6 +1,10 @@
 # Name:		mgihomelib.py
 # Purpose:	provide general routines for use by MGI Home site scripts
 
+import config
+
+URL = config.lookup ('MGIHOME_URL')
+
 def footer ():
 	# Purpose: provide a standard footer for MGI Home-based web pages
 	# Returns: list of strings
@@ -9,19 +13,20 @@ def footer ():
 	# Throws: None
 
 	return [ '<A HREF="http://www.jax.org/" target="_top">',
-		  '''<IMG SRC="/mgihome/images/jax_logo.gif"
-			ALT="The Jackson Laboratory" ALIGN=right></A>''',
+		  '''<IMG SRC="%simages/jax_logo.gif" ALIGN=right
+			ALT="The Jackson Laboratory"></A>''' % URL,
 		  '<SMALL>',
-		  '''<A HREF="/mgihome/other/citation.shtml" target="_top">
-		        Citing These Resources</A>''', '<BR>',
-		  '''<A HREF="/mgihome/other/mgi_funding.shtml" target="_top">
-		        Funding Information</A>''', '<BR>',
-		  '''<A HREF="/mgihome/other/copyright.shtml" target="_top">
-		        Warranty Disclaimer &amp; Copyright Notice</A>.''',
+		  '''<A HREF="%sother/citation.shtml" target="_top">
+		        Citing These Resources</A>''' % URL, '<BR>',
+		  '''<A HREF="%sother/mgi_funding.shtml" target="_top">
+		        Funding Information</A>''' % URL, '<BR>',
+		  '''<A HREF="%sother/copyright.shtml" target="_top">
+		        Warranty Disclaimer &amp; Copyright Notice</A>.''' \
+			% URL,
 		        '<BR>',
 		  '''Send questions and comments to
-			<A HREF="/mgihome/support/tjl_inbox.shtml"
-			target="_top">User Support</A>.''',
+			<A HREF="%ssupport/tjl_inbox.shtml"
+			target="_top">User Support</A>.''' % URL,
 		  '</SMALL>' ]
 
 def banner ():
@@ -32,6 +37,6 @@ def banner ():
 	# Throws: None
 
 	return [ '<CENTER>',
-		 '<IMG SRC="/mgihome/images/mgi_small_banner.gif"',
+		 '<IMG SRC="%simages/mgi_small_banner.gif"' % URL,
 	    	 'WIDTH=501   HEIGHT=40   ALT="Mouse Genome Informatics">',
 		 '</CENTER>' ]
