@@ -1,0 +1,8 @@
+AuthUserFile /usr/local/mgi/mgihome/htaccess/strain.user
+AuthGroupFile /usr/local/mgi/mgihome/htaccess/strain.group
+AuthName MGI-Strains
+AuthType Basic 
+
+<Limit GET POST PUT> 
+require group mgi jax
+</Limit>
