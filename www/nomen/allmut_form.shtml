@@ -20,9 +20,9 @@
 <FORM METHOD="POST" ACTION="allmut_submit.cgi">
 <HR>
 <H3>About this Mutant:</H3> 
-Please refer to the <A HREF="allmut_quickhelp.shtml">
-Allele and Mutant Quick Nomenclature Guide</A>  for additional hints for completing this section.
-<BR><BR>
+<p>Please refer to the <A HREF="allmut_quickhelp.shtml">
+Allele and Mutant Quick Nomenclature Guide</A>  for additional hints for completing this section.</p>
+
 <dl>
 <DT>If the mutation is an allele of a <B>known gene</B>, enter the <B>gene symbol</B> 
 <INPUT TYPE="text" NAME="genesymbol" SIZE=15> 
@@ -32,23 +32,22 @@ Allele and Mutant Quick Nomenclature Guide</A>  for additional hints for complet
 <DD>Allele Name :     <INPUT TYPE="text" NAME="allelename" SIZE=50><BR>
 <BR>
 <DD><table>
-    <tr>
-    <TD VALIGN="center">
-      <TABLE BGCOLOR="#D5F8FE" border=1 CELLSPACING="0" CELLPADDING="0" width=90%>
+    <tr><TD VALIGN="center">
+      <TABLE BGCOLOR="#D5F8FE" border=1 CELLSPACING="1" CELLPADDING="4" width=90%>
         <TR><TD>
-          <Table border=1 cellpadding=0 cellspacing=1 width=70%>
+          <table border=1 cellpadding=4 cellspacing=1 width=70%>
           <TR><small><B><dd><EM> Example:</EM></small></TR>
           <tr><TD></TD><TD><SMALL><B>Mutant allele of a known gene</B></SMALL></TD><TD><SMALL>Mutant allele, gene mutated unknown</B></SMALL></TD></TR>
           <tr><TD><SMALL>Gene symbol</TD><TD><SMALL> Lep</TD><DD><TD><SMALL> --- </TD></TR>
           <TR><TD><SMALL>Allele designation</TD><TD><SMALL> ob</TD><TD><SMALL>slpy</TD></TR>
           <tr><TD><SMALL>Allele name</TD><TD> <SMALL>obese</TD><TD><SMALL>sleepy</TD></TR>
-          </Table></SMALL>
+          </table></SMALL>
       <SMALL>In the case of a mutation in the known gene <I>Lep</I>, the full allele symbol is <I>Lep<SUP>ob</SUP></I>.<BR>
-In the case where the gene is unknown, the allele and gene symbol are synonymous <BR>(pending identification of the gene), in this example, <I>slpy</I>.<BR></SMALL><br>
-          </TR></TABLE></TD></tr>
-     </table></TR>
-   </table>
-</DL>
+In the case where the gene is unknown, the allele and gene symbol are synonymous <BR>(pending identification of the gene), in this example, <I>slpy</I>.<BR></SMALL><br></td></TR></TABLE>
+</TD></tr>
+  </table>
+ </dl>
+
 Other names/synonyms:  <INPUT TYPE="text" NAME="synonyms" SIZE=55><BR>
 <HR>
 Strain/Genetic Background (where mutation arose):    <INPUT TYPE="text" NAME="strainMutation" SIZE=50>
@@ -79,7 +78,7 @@ Other Strain/Background Information (speed congenic generation, details of compl
   <INPUT TYPE="text" NAME="celline" SIZE=25>
 
   <DT>Mode of Inheritance: 
-  <INPUT TYPE="radio" NAME="mode" VALUE="dominant"> dominant  
+  <dd><INPUT TYPE="radio" NAME="mode" VALUE="dominant"> dominant  
   <INPUT TYPE="radio" NAME="mode" VALUE="codominant"> codominant
   <INPUT TYPE="radio" NAME="mode" VALUE="semidominant"> semidominant 
   <INPUT TYPE="radio" NAME="mode" VALUE="recessive"> recessive  
@@ -116,14 +115,17 @@ Status requested for these data: <INPUT TYPE="radio" NAME="status" VALUE="Reserv
 <H3>References:</H3>
 Please report publications about this allele. PubMed accession _ids may be used. If unpublished, include a descriptive title.  For unpublished references a Direct Submission reference will be created in MGD.  
 <P>
-<BLOCKQUOTE>
-<EM>Example, short citation:</EM> Boyd Y, Genome Res 2000 Mar;10(3):277-92<BR>
-<EM>Example, PubMed: </EM>10720569<BR>
-<EM>Example, unpublished:</EM> Doe JE, Smith H, New allele of the Kit ligand (steel) series, unpublished<BR>
+   <BLOCKQUOTE>
+   <EM>Example, short citation:</EM> Boyd Y, Genome Res 2000 Mar;10(3):277-92<BR>
+   <EM>Example, PubMed: </EM>10720569<BR>
+   <EM>Example, unpublished:</EM> Doe JE, Smith H, New allele of the Kit ligand (steel) series, unpublished<BR>
 </BLOCKQUOTE>
 <P>
-Citations:<TEXTAREA NAME="citations" ROWS=3 COLS=60></TEXTAREA><BR>
-</TABLE>
+
+Citations:
+<br>
+<TEXTAREA NAME="citations" ROWS=3 COLS=60></TEXTAREA><BR>
+
 <BR>
 <DL>
 <dt>If allele data are available from a Web site, please give URL: <BR>
