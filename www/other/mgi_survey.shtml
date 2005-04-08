@@ -86,7 +86,7 @@ Comments:<INPUT name=accessComments size=55> </P>
 
 <TR>
 <TD><INPUT name=query type=checkbox value="Alleles and Phenotypes">
-<A href="<!--#include file='include/wi_url.html'-->searches/allele_form.shtml"><SMALL>Alleles and Phenotypes</SMALL></A></TD>
+<A href="<!--#include file='include/wi_url.html'-->searches/allele_form.shtml"><SMALL>Phenotypes and Alleles</SMALL></A></TD>
 <TD><INPUT name=query type=checkbox value="Gene Ontology Browser">
 <A href="<!--#include file='include/wi_url.html'-->searches/GO_form.shtml"><SMALL>Gene
 Ontology Browser</SMALL></A>
@@ -234,7 +234,7 @@ Were you aware of these enhancements?<br>
 <INPUT type=radio name=usedSeq value="No">No<br>
 
 
-<P><B>8. The <A HREF="http://www.informatics.jax.org/imsr/">International Mouse Strain 
+<P><B>8. The <A HREF="http://www.informatics.jax.org/imsr/">International Mouse Strain
 Resource (IMSR)</a> recently was released through MGI.</B><BR>
 Were you aware of this IMSR release?<br>
 <INPUT type=radio name=awareIMSR value="Yes">Yes &nbsp;&nbsp;&nbsp;
