@@ -2,10 +2,10 @@
 
 import config
 import homelib
-import SimpleVocab
+#import SimpleVocab
 import webshare_lib
 
-SimpleVocab.set_sqlFunction (homelib.sql)
+#SimpleVocab.set_sqlFunction (homelib.sql)
 
 def listToFile (str_list, filename):
 	print "writing %s" % filename
@@ -59,10 +59,10 @@ def main ():
 		'../www/include/mgi_logo_small.html')
 	stringToFile (webshare_lib.webshareLookup('new'), \
 		'../www/include/new.html')
-	vocab = SimpleVocab.PhenoSlimVocab()
-	listToFile (SimpleVocab.getSelectionList (vocab,
-		url = config.lookup('WI_URL') + 'userdocs/phenoslim.shtml'),
-		'../www/include/phenoslim_select.html')
+#	vocab = SimpleVocab.PhenoSlimVocab()
+#	listToFile (SimpleVocab.getSelectionList (vocab,
+#		url = config.lookup('WI_URL') + 'userdocs/phenoslim.shtml'),
+#		'../www/include/phenoslim_select.html')
 	return
 
 if __name__ == '__main__':
