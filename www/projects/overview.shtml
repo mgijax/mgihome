@@ -47,7 +47,7 @@ cytogenetic and physical maps, experimental mapping data, as well as
 Sources for information in the database include the scientific  literature,  DNA  mapping  panel data produced by various researchers, the MIT Whitehead Institute (MIT genetic  and physical mapping data), WashU, and the  IMAGE  consortium. Since it first became available on the web, MGD has continued to  evolve, expanding its data coverage, improving data handling, and providing new data manipulation and display tools.
 
 <P><A NAME="mlc"></A>Phenotype records in  MGD have their origin in the
-Mouse Locus Catalog (MLC), formerly an independent database. You can search for phenotype records using either the Genes and Markers query form or the Alleles and Phenotypes query form. You can search the MLC using the full-text searching capability of the Search tool which provides very reliable query  results. An integrated OMIM/MLC query form lets you enter one search string  to  execute  a  query  in  both  MLC  and  On-line  Mendelian Inheritance in Man (OMIM), a database maintained  by  the  National  Center  for Biotechnology Information (NCBI).
+Mouse Locus Catalog (MLC), formerly an independent database. You can search for phenotype records using either the Genes and Markers query form or the Phenotypes and Alleles query form. You can search the MLC using the full-text searching capability of the Search tool which provides very reliable query  results. An integrated OMIM/MLC query form lets you enter one search string  to  execute  a  query  in  both  MLC  and  On-line  Mendelian Inheritance in Man (OMIM), a database maintained  by  the  National  Center  for Biotechnology Information (NCBI).
 
 <P>MGD is closely linked with the
 Gene Expression Literature Index. The Gene Expression Literature Index is a collection  of  references  to  the  scientific literature reporting data on endogenous gene expression during mouse embryonic development. MGD provides links to Gene Expression Literature Index records through genetic marker detail records. The Gene Expression Literature Index provides links to MGD references  and  genetic  marker  records.
@@ -63,17 +63,17 @@ through large scale electronic transfer. Such data include mouse physical  mappi
 Gene, DNA marker, QTL and Cytogenetic marker descriptions<BR>
 Mouse genetic phenotypes, genetic interrelationships, and polymorphic loci <BR>
 Mammalian orthology data <br>
-Sequence data <BR> 
+Sequence data <BR>
 Molecular probes and clones(probes, clones, primers and YACs)<BR>
 Genetic and physical mapping data<BR>
-Polymorphic loci  related  to  specified strains<BR> 
+Polymorphic loci  related  to  specified strains<BR>
 Information on inbred strains (M. Festing's listing)<BR>
 References supporting  all  data  in MGD <BR>
 </UL>
 
 <P><b>Data Links to <a href="../other/collab_and_acknow.shtml">External Databases</A></b>
 
-<P>MGD  provides links  to  relevant  information  in   external databases wherever possible.  Through markers, MGD links to EC, DoTS, UniGene, ENSEMBL, TIGR, Entrez, InterPro, and PDB. Through orthologies,  MGD links  to 
+<P>MGD  provides links  to  relevant  information  in   external databases wherever possible.  Through markers, MGD links to EC, DoTS, UniGene, ENSEMBL, TIGR, Entrez, InterPro, and PDB. Through orthologies,  MGD links  to
 Entrez, GDB, PigBase, SheepBase, BovMap and RATMAP. Through molecular probes and clones,  MGD links to GenBank, EMBL, and DDBJ. Through references, MGD links to PubMed. Through sequences, MGI links to GenBank, RefSeq, SWISS-PROT, TrEMBL, and the TIGR, DoTS, and NIA mouse gene indices.
 
 <h4><A NAME="mkr">Genes and Markers</A></h4>
@@ -87,7 +87,7 @@ Gene Ontology (GO) terms, MGI  accession IDs and supporting references.
 
 <P>Information on <B>alleles</B>, formerly imbedded in phenotype  descriptions, is stored as a separate data set. More information
 on alleles will be available and accessible in MGD as time goes on. Links to alleles are provided in gene detail records. In
-addition, there is an <A HREF="<!--#include file='include/wi_url.html'-->searches/allele_form.shtml">Alleles and Phenotypes Query Form</A> for  direct  queries against the allele data  set. (See <A HREF="<!--#include file='include/wi_url.html'-->userdocs/allele_help.shtml#detail">Details</A> for the content of an allele record as displayed in query results.
+addition, there is an <A HREF="<!--#include file='include/wi_url.html'-->searches/allele_form.shtml">Phenotypes and Alleles Query Form</A> for  direct  queries against the allele data  set. (See <A HREF="<!--#include file='include/wi_url.html'-->userdocs/allele_help.shtml#detail">Details</A> for the content of an allele record as displayed in query results.
 
 <h4><A NAME="pro"></A>Molecular Probes and Clones</h4>
  <P>MGD contains information on probes,
