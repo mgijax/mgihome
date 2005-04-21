@@ -42,7 +42,7 @@ This document provides links to external genomic sequence analysis servers and s
 <A NAME="servers"><H3>Comprehensive sequence analysis servers</H3></A>
 These are analysis servers that run multiple gene prediction and analysis programs with a given query sequence.
 <UL>
-<LI><A HREF="http://grail.lsd.ornl.gov/GP/">Genome Analysis Pipeline</A> (<A HREF="http://compbio.ornl.gov">ORNL</A>)
+<LI><A HREF="http://compbio.ornl.gov/GP3/euk.html">Genome Analysis Pipeline</A> (<A HREF="http://compbio.ornl.gov">ORNL</A>)
 - Predicts exons (GRAIL, GRAIL-EXP), gene structures (GENSCAN), GRAIL feature tools: CpG islands, BAC end hits, polyA, Trna, Simple Repeats, Complex Repeats, homology searches (BLAST).
 <P>
 <LI><A HREF="http://www.softberry.com/berry.phtml?topic=index&group=programs&subgroup=gfind">Gene model construction, splice sites, protein-coding exons</A>  
@@ -61,7 +61,7 @@ databases). (This site requires registration.)
 <A NAME="pipelines"><H3>Sequence analysis pipeline software</H3></A>
 <P>You can download and install (on UNIX) the following software application, written in Perl: 
 <UL>
-<LI>CGAT (<A HREF="http://worm-chip.stanford.edu">Stanford</A> or <A HREF="http://inertia.bs.jhmi.edu/CGAT/CGAT.html">Johns Hopkins</A>)
+<LI>CGAT (<A HREF="http://worm-chip.stanford.edu">Stanford</A>)
  - The Comprehensive Genome Analysis Tools developed in Roger Reeves' lab at Johns Hopkins by Jim Lund, now at Stanford. Runs RepeatMasker, NCBI BLASTN (vs. nr, dbest, htgs, gss), MZEF, GRAIL, GENSCAN, tRNAscan-SE, GRAIL CpG islands, polyA, polII promoters.  Maps all results onto sequence and generates GIF-formatted graphical display of results.</p>
 <!--
 <LI><A HREF="http://www-sequence.stanford.edu/~curtis/adapt.html">Adapt</A> 
@@ -77,7 +77,7 @@ Developed by Curtis Palm.  Runs GRAIL, FEXA, GENSCAN, MZEF, and AAT (EST and pro
 <P><!--
 <LI><A HREF="http://www-sequence.stanford.edu/~curtis/adapt.html">WAV</A> (<A HREF="http://www-sequence.stanford.edu">Stanford DNA Sequence & Techology Center</A>) - Web Annotation Viewer developed by Curtis Palm as part of the Adapt system.-->
 <P>
-<LI>CGAT (<A HREF="http://worm-chip.stanford.edu">Stanford</A> or <A HREF="http://inertia.bs.jhmi.edu/CGAT/CGAT.html">Johns Hopkins</A>) - Perl-based software that draws GIF images of results.  Developed in Roger Reeves' lab at Johns Hopkins by Jim Lund, now at Stanford.
+<LI>CGAT (<A HREF="http://worm-chip.stanford.edu">Stanford</A>) - Perl-based software that draws GIF images of results.  Developed in Roger Reeves' lab at Johns Hopkins by Jim Lund, now at Stanford.
 </UL>
 
 <P><A NAME="comparative"><H3>Large-scale comparative methods</H3></A>
