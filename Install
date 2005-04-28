@@ -166,10 +166,15 @@ cd $TOP
 # ln -s ${WI_PATH}www/userdocs/stylesheet/mgi.css mgihome.css
 # cd $TOP
 
-# make sure the www directory is executable by the right group
+# make sure the www directory is executable by the right group;
+# use 'find' to avoid doing a recursive chmod and chgrp, which
+# also follow the symbolic links to the python interpreter...
 
-chmod -R 750 www
-chgrp -R www www
+echo "setting permissions in www/ directory..."
+find www -type f -print | xargs chmod 750
+find www -type f -print | xargs chgrp www
+find www -type d -print | xargs chmod 750
+find www -type d -print | xargs chgrp www
 
 # add links to the include file directory and the stylesheet directory
 # for each directory under www
