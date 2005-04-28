@@ -154,6 +154,18 @@ ln -s ${WI_PATH}www/include/bodyStart.html bodyStart.html
 ln -s ${WI_PATH}www/include/bodyStop.html bodyStop.html
 cd $TOP
 
+# link to the stylesheet downloaded by the WI for its userdocs
+# (temporarily disabled until needed)
+# cd $TOP/www/stylesheet
+# if [ -h mgihome.css ]; then
+# 	rm mgihome.css
+# fi
+# if [ -r mgihome.css ]; then
+# 	mv mgihome.css mgihome.css.old
+# fi
+# ln -s ${WI_PATH}www/userdocs/stylesheet/mgi.css mgihome.css
+# cd $TOP
+
 # make sure the www directory is executable by the right group
 
 chmod -R 750 www
