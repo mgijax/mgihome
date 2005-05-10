@@ -8,65 +8,67 @@ import webshare_lib
 #SimpleVocab.set_sqlFunction (homelib.sql)
 
 def listToFile (str_list, filename):
-	print "writing %s" % filename
-	fp = open (filename, 'w')
-	for item in str_list:
-		fp.write ('%s\n' % item)
-	fp.close()
-	return
+    print "writing %s" % filename
+    fp = open (filename, 'w')
+    for item in str_list:
+        fp.write ('%s\n' % item)
+    fp.close()
+    return
 
 def stringToFile (s, filename):
-	listToFile ( [s], filename)
-	return
+    listToFile ( [s], filename)
+    return
 
 def main ():
-	listToFile (homelib.banner(), '../www/include/banner.html')
-	listToFile (homelib.footer(), '../www/include/footer.html')
-	stringToFile (config.lookup ('WI_URL'), '../www/include/wi_url.html')
-	stringToFile ('"%s";' % config.lookup ('WI_URL'), '../www/include/wi_url2.html')
-	stringToFile (config.lookup ('GO_URL'), '../www/include/go_url.html')
-	stringToFile (config.lookup ('FTP_URL'), '../www/include/ftp_url.html')
-	stringToFile (config.lookup ('MGIHOME_URL'), \
-		'../www/include/mgihome_url.html')
-	stringToFile (config.lookup ('TUTORIAL_URL'), \
-		'../www/include/tutorial_url.html')
-	stringToFile (config.lookup ('GB_URL'), '../www/include/gb_url.html')
-	stringToFile (config.lookup ('LOCUSLINK_URL'), \
-		'../www/include/locuslink_url.html')
-	stringToFile (config.lookup ('RATMAP_URL'), \
-		'../www/include/ratmap_url.html')
-	stringToFile (config.lookup ('RGD_URL'), \
-		'../www/include/rgd_url.html')
-	stringToFile (config.lookup ('GLOSSARY_URL'), \
-		'../www/include/glossary_url.html')
-        stringToFile (config.lookup ('SCHEMA'),\
-                '../www/include/schema_url.html')
-	stringToFile (config.lookup ('MGI_VER'),\
-		'../www/include/mgiversion.html')
-	stringToFile (config.lookup ('JAVAWI_URL'), \
-		'../www/include/java_url.html')
-	stringToFile (config.lookup ('MOUSEBLAST_URL'), \
-		'../www/include/mouseblast_url.html')
-	stringToFile (config.lookup ('WKSILVERS_URL'), \
-	        '../www/include/wksilvers_url.html')		
-	stringToFile (webshare_lib.webshareLookup('mgi_logo'), \
-		'../www/include/mgi_logo.html')
-	stringToFile (webshare_lib.webshareLookup('help'), \
-		'../www/include/help_large.html')
-	stringToFile (webshare_lib.webshareLookup('jax_logo'), \
-		'../www/include/jax_logo.html')
-	stringToFile (webshare_lib.webshareLookup('mgi_logo_small'), \
-		'../www/include/mgi_logo_small.html')
-	stringToFile (webshare_lib.webshareLookup('new'), \
-		'../www/include/new.html')
-#	vocab = SimpleVocab.PhenoSlimVocab()
-#	listToFile (SimpleVocab.getSelectionList (vocab,
-#		url = config.lookup('WI_URL') + 'userdocs/phenoslim.shtml'),
-#		'../www/include/phenoslim_select.html')
-	return
+    listToFile (homelib.banner(), '../www/include/banner.html')
+    listToFile (homelib.footer(), '../www/include/footer.html')
+    stringToFile (config.lookup ('WI_URL'), '../www/include/wi_url.html')
+    stringToFile ('"%s";' % config.lookup ('WI_URL'), '../www/include/wi_url2.html')
+    stringToFile (config.lookup ('GO_URL'), '../www/include/go_url.html')
+    stringToFile (config.lookup ('FTP_URL'), '../www/include/ftp_url.html')
+    stringToFile (config.lookup ('MGIHOME_URL'), \
+        '../www/include/mgihome_url.html')
+    stringToFile (config.lookup ('TUTORIAL_URL'), \
+        '../www/include/tutorial_url.html')
+    stringToFile (config.lookup ('GB_URL'), '../www/include/gb_url.html')
+    stringToFile (config.lookup ('LOCUSLINK_URL'), \
+        '../www/include/locuslink_url.html')
+    stringToFile (config.lookup ('RATMAP_URL'), \
+        '../www/include/ratmap_url.html')
+    stringToFile (config.lookup ('RGD_URL'), \
+        '../www/include/rgd_url.html')
+    stringToFile (config.lookup ('GLOSSARY_URL'), \
+        '../www/include/glossary_url.html')
+    stringToFile (config.lookup ('SCHEMA'),\
+        '../www/include/schema_url.html')
+    stringToFile (config.lookup ('MGI_VER'),\
+        '../www/include/mgiversion.html')
+    stringToFile (config.lookup ('JAVAWI_URL'), \
+        '../www/include/java_url.html')
+    stringToFile (config.lookup ('MOUSEBLAST_URL'), \
+        '../www/include/mouseblast_url.html')
+    stringToFile (config.lookup ('WKSILVERS_URL'), \
+            '../www/include/wksilvers_url.html')        
+    stringToFile (config.lookup ('COOKBOOK_URL'), \
+            '../www/include/cookbook_url.html')        
+    stringToFile (webshare_lib.webshareLookup('mgi_logo'), \
+        '../www/include/mgi_logo.html')
+    stringToFile (webshare_lib.webshareLookup('help'), \
+        '../www/include/help_large.html')
+    stringToFile (webshare_lib.webshareLookup('jax_logo'), \
+        '../www/include/jax_logo.html')
+    stringToFile (webshare_lib.webshareLookup('mgi_logo_small'), \
+        '../www/include/mgi_logo_small.html')
+    stringToFile (webshare_lib.webshareLookup('new'), \
+        '../www/include/new.html')
+#   vocab = SimpleVocab.PhenoSlimVocab()
+#   listToFile (SimpleVocab.getSelectionList (vocab,
+#       url = config.lookup('WI_URL') + 'userdocs/phenoslim.shtml'),
+#       '../www/include/phenoslim_select.html')
+    return
 
 if __name__ == '__main__':
-	main()
+    main()
 #
 # Warranty Disclaimer and Copyright Notice
 # 
