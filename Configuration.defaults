@@ -1,86 +1,89 @@
 # colon-delimited list of directories in which to find Python libraries
-LIBDIRS		/usr/local/mgi/lib/python/
+LIBDIRS     /usr/local/mgi/lib/python/
 
 # path to our home installation
-MGIHOME_PATH	/usr/local/mgi/mgihome/current/
+MGIHOME_PATH    /usr/local/mgi/mgihome/current/
 
 # path to the python executable
-PYTHON		/usr/local/bin/python
+PYTHON      /usr/local/bin/python
 
 # path to the unix permissions group to use for web display
-GROUP		www
+GROUP       www
 
 # path to the sendmail executable
-SENDMAIL	/usr/lib/sendmail
+SENDMAIL    /usr/lib/sendmail
 
 # optional e-mail address to use for testing cgi scripts which send e-mail.
 # If commented out, hard-coded addresses are used throughout.
-# CGI_MAILTARGET	pm@informatics.jax.org
+# CGI_MAILTARGET    pm@informatics.jax.org
 
 # path to the web directory of the GEN (Gene Expression Notebook) product
-GEN_PATH	/usr/local/mgi/gen/www/
+GEN_PATH    /usr/local/mgi/gen/www/
 
 # full URL to the associated MGI Web Interface installation
-WI_URL		http://www.informatics.jax.org/
+WI_URL      http://www.informatics.jax.org/
 
 # full URL to the servlets in the Java side of the MGI WI
-JAVAWI_URL	http://www.informatics.jax.org:8080/javawi/servlet/
+JAVAWI_URL  http://www.informatics.jax.org:8080/javawi/servlet/
 
 # full URL to this MGI Home installation
-MGIHOME_URL	http://www.informatics.jax.org/mgihome/
+MGIHOME_URL http://www.informatics.jax.org/mgihome/
 
 # full URL to the associated ftp site
-FTP_URL		ftp://ftp.informatics.jax.org/
+FTP_URL     ftp://ftp.informatics.jax.org/
 
 # full URL to the GO browser
-GO_URL		http://www.informatics.jax.org/go/
+GO_URL      http://www.informatics.jax.org/go/
 
 # full URL to the MGI tutorials
-TUTORIAL_URL	http://www.informatics.jax.org/tutorials/
+TUTORIAL_URL    http://www.informatics.jax.org/tutorials/
 
 # parameters for database access
-DBSERVER	MGD_PUBLIC
-DATABASE	pub_1
-DBUSER		mgd_public
-DBPASSWORD	mgdpub
+DBSERVER    MGD_PUBLIC
+DATABASE    pub_1
+DBUSER      mgd_public
+DBPASSWORD  mgdpub
 
 # URL to NCBI's Entrez for Genbank sequence IDs
-GB_URL		http://www.ncbi.nlm.nih.gov/htbin-post/Entrez/query?db=n&form=6&uid=
+GB_URL      http://www.ncbi.nlm.nih.gov/htbin-post/Entrez/query?db=n&form=6&uid=
 
 # URL to NCBI's LocusLink
-LOCUSLINK_URL	http://www.ncbi.nlm.nih.gov/LocusLink/LocRpt.cgi?l=
+LOCUSLINK_URL   http://www.ncbi.nlm.nih.gov/LocusLink/LocRpt.cgi?l=
 
 # URL to RGD, kept for backwards compaiblity use RGD_URL instead
-RATMAP_URL	http://ratmap.gen.gu.se/ShowSingleLocus.htm?accno=
+RATMAP_URL  http://ratmap.gen.gu.se/ShowSingleLocus.htm?accno=
 
 #URL to RGD
-RGD_URL		http://ratmap.gen.gu.se/ShowSingleLocus.htm?accno=
+RGD_URL     http://ratmap.gen.gu.se/ShowSingleLocus.htm?accno=
 
 #URL to Entrez where we find human orthologs
-ENTREZ_URL	http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=gene&cmd=Retrieve&dopt=Graphics&list_uids=
+ENTREZ_URL  http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=gene&cmd=Retrieve&dopt=Graphics&list_uids=
 
 # URL to the MGI Glossary
-GLOSSARY_URL	http://www.informatics.jax.org/userdocs/glossary.shtml
+GLOSSARY_URL    http://www.informatics.jax.org/userdocs/glossary.shtml
 
 # path to Sybase directory (where we find the interfaces file)
 # /opt/sybase for 11.5
 # /opt/sybase/12.5 for 12.5
-SYBASE		/opt/sybase/12.5
+SYBASE      /opt/sybase/12.5
 
 # path to library files for doing crons (commented out for now)
-#LD_LIBRARY_PATH	$LD_LIBRARY_PATH:$SYBASE/OCS-12_5/lib
+#LD_LIBRARY_PATH    $LD_LIBRARY_PATH:$SYBASE/OCS-12_5/lib
 
 # full path to associated WI installation (to help find toolbar include files)
 WI_PATH         /usr/local/mgi/wi/current/
 
 # full URL to the associated MouseBLAST installation
-MOUSEBLAST_URL	http://mouseblast.informatics.jax.org/
+MOUSEBLAST_URL  http://mouseblast.informatics.jax.org/
 
 # full URL to the WK Silvers book
-WKSILVERS_URL  http://devwww.informatics.jax.org/usrlocalmgi/2.98/wksilvers/www/
+WKSILVERS_URL  http://devwww.informatics.jax.org/usrlocalmgi/live/wksilvers/www/
+
+# full URL to the Cook book
+COOKBOOK_URL  http://devwww.informatics.jax.org/usrlocalmgi/live/cookbook/
 
 SCHEMA          http://rohan.informatics.jax.org/2.95/schema/
 
-MGI_VER 	MGI_2.95
+MGI_VER     MGI_2.95
 
 WEBSHARE_URL    http://www.informatics.jax.org/webshare/
