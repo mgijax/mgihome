@@ -1,6 +1,6 @@
 <HTML>
 <HEAD>
-<TITLE><!--#include file='include/mgiversion.html'--> MGI Release 3.21 Announcement - May 24, 2005</TITLE>
+<TITLE><!--#include file='include/mgiversion.html'--> MGI Release 3.21 Announcement - May 26, 2005</TITLE>
 <LINK REL="stylesheet" TYPE="text/css" HREF="stylesheet/mgihome.css">
 
 <META NAME ="keywords" CONTENT="Gene Expression Database, GXD, in situ reporter, knock-in, mutated specimen, Gene Expression Literature Index, genetics, MGI, Mouse Genome Informatics, genes, anatomical structures, Mouse Anatomical Dictionary, Mouse Anatomical Dictionary Browser, mice, SQL, querying,  database queries, query forms">
@@ -17,7 +17,7 @@
      <TD WIDTH="20%" VALIGN="center" ALIGN="left">&nbsp;</TD>
      <TD WIDTH="60%" ALIGN="center" VALIGN="center">
       <FONT COLOR="#000000" SIZE=5 FACE="Arial,Helvetica">
-      MGI Release 3.21 Announcement - May 24, 2005
+      MGI Release 3.21 Announcement - May 26, 2005
       </FONT>
      </TD>
      <TD WIDTH="20%" VALIGN="center" ALIGN="center">&nbsp;</TD>
@@ -29,20 +29,21 @@
 
 
 
-<p>MGI is pleased to announce the following new features in its 3.21 release. 
+<p>MGI is pleased to announce the following new features in its 3.21 release: 
 <BLOCKQUOTE>
 
 <UL>
-<li>We implemented a version of Lincoln Stein's Generic Genome Browser (GBrowse) that supports interactive browsing and display of mouse genome annotations. Access to the Mouse GBrowse is from the MGI home page (<a href="www.informatics.jax.org">www.informatics.jax.org</a>) and from the new sequence map section on MGI gene detail pages. Current tracks for the Mouse GBrowse include MGI representative transcripts, Ensembl gene models, NCBI gene models, SNPs, QTL, and STS markers linked to UniSTS at NCBI. </li>
-
+<li>A customized version of Lincoln Stein's Generic Genome Browser (GBrowse) that supports interactive browsing and display of mouse genome annotations. Access to the <B>Mouse GBrowse</B> is from the MGI home page (<a href="www.informatics.jax.org">www.informatics.jax.org</a>) and from the new sequence map section on MGI gene detail pages. Current tracks for the Mouse GBrowse include MGI representative transcripts, Ensembl gene models, NCBI gene models, SNPs, QTL, and STS markers linked to UniSTS at NCBI. </li>
 <br>
-<LI>You can now access an electronic version of <I>The Anatomy of the Laboratory Mouse</I> by Margaret J. Cook. This book, originally published in 1965 and long out of print, is a valued resource in mouse research laboratories. The book's 125 figures illustrate the external, skeletal, visceral, and circulatory anatomy of the mouse. It is thoroughly indexed and many anatomical terms in the Subject Index link to the appropriate term in the Adult Mouse Anatomy browser at MGI. <I>The Anatomy of the Laboratory Mouse</I> joins the electronic versions of two other out-of-print books, <I>Mouse Genetics</I> by Lee Silver and <I>The Coat Colors of Mice</I> by Willys K. Silvers. Links to all three appear on   <a href="../resources/resources.shtml">Additional MGI Tools and Links</a>. We hope that you find this book useful.  Please send questions and comments to  <A HREF="../support/tjl_inbox.shtml">User Support</A>.</li><br>
+<LI>An electronic version of <I>The Anatomy of the Laboratory Mouse</I> by Margaret J. Cook. This book, originally published in 1965 and long out of print, is a valued resource in mouse research laboratories. The book's 125 figures illustrate the external, skeletal, visceral, and circulatory anatomy of the mouse. It is thoroughly indexed and many anatomical terms in the subject index link to the appropriate term in the Adult Mouse Anatomy browser at MGI. <I>The Anatomy of the Laboratory Mouse</I> joins the electronic versions of two other out-of-print books, <I>Mouse Genetics</I> by Lee Silver and <I>The Coat Colors of Mice</I> by Willys K. Silvers. Links to all three appear on   <a href="../resources/resources.shtml">Additional MGI Tools and Links</a>. We hope that you find this book useful.  Please send questions and comments to  <A HREF="../support/tjl_inbox.shtml">User Support</A>.</li><br>
 
 
 <!--<LI>The remainder of the MGI 3.21 release consists of performance enhancements and bug fixes.  </LI>-->
 </UL>
-
 </BLOCKQUOTE>
+
+<p>In addition, a mouse SNPs query/report prototype is now available. The prototype data includes over 500,000 SNPs for 125 strains of mice mapped to Build 33 of the mouse genome sequence. The SNP data comes from the Mouse Phenome Database at The Jackson Laboratory and dbSNP at NCBI.  The <A HREF="http://proto.informatics.jax.org/snp/SNPForm.jsp">SNP Query Form</A> lets you select one or more strains and refine your searches by genome location, SNP functional class, SNP polymorphism type, and gene name. You can view query results in web format or save them as tab-delimited files.
+</P>
 
 
 <hr>
