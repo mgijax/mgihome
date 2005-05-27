@@ -2,8 +2,7 @@
 <HTML>
 <HEAD>
 <TITLE><!--#include file='include/mgiversion.html'--> - Dishevelled Associated Activator of Morphogenesis Gene Family</TITLE>
-<LINK REL="stylesheet" TYPE="text/css" HREF="../../stylesheet/mgihome.css">
-
+<!--#include file="include/stylesheet.html"-->
 </HEAD>
 <BODY BGCOLOR=#FFFFFF>
 <!--#include file="include/bodyStart.html"-->
@@ -38,43 +37,53 @@
  </tr>
 </table>
 <p>Links to dishevelled associated activator of morphogenesis family data:
-<TABLE bgcolor="white" border=1 width="95%" cellpadding=8>
- <TR bgcolor="E0E0E0">
-  <TH width="11%">Mouse Symbol</th>
-  <TH width="11%">Mouse Seq. ID <sup>1</sup></th>
-  <TH width="11%">Mouse Chromosomal Location</th>
-  <TH width="11%">Human Ortholog</th>
-  <TH width="11%">Human Seq. ID <sup>1</sup></TH>
-   <TH width="11%">Orthology Details</th>
- </TR>
-<!--1=Daam1-->
-<TR>
-<TD><a href="<!--#include file='include/wi_url.html'-->searches/accession_report.cgi?id=MGI:1914596">Daam1</A></TD>
-<TD><a href="<!--#include file='include/gb_url.html'-->AK006902">AK006902</a></TD>
-<TD>12 (C3)</TD>
-<TD><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=gene&cmd=Retrieve&dopt=Graphics&list_uids=23002">DAAM1</a></TD>
-<td><a href="<!--#include file='include/gb_url.html'-->AB014566">AB014566</a></td>
-<TD align=center><a href="<!--#include file='include/wi_url.html'-->searches/homology_report.cgi?id=MGI:1914596">
-yes</a></td>
-</TR>
-<!--2=Daam2-->
-<TR>
-  <TD><A href="<!--#include file='include/wi_url.html'-->searches/accession_report.cgi?id=MGI:1923691
-">Daam2</A></TD>
-  <TD><a href="<!--#include file='include/gb_url.html'-->AK009382">AK009382</a></TD>
-  <td>17 (syntenic)</TD>
-  <TD><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=gene&cmd=Retrieve&dopt=Graphics&list_uids=23500">DAAM2</a></TD>
-  <td><a href="<!--#include file='include/gb_url.html'-->AB002379">AB002379</a></td>
-  <TD align=center><a href="<!--#include file='include/wi_url.html'-->searches/homology_report.cgi?id=MGI:1923691
-">yes</a></td>
-</TR>
+<table bgcolor="white" border="1" cellpadding="8">
+<tbody>
+<tr bgcolor="#e0e0e0">
+<th valign="top">Mouse Symbol</th>
+<th valign="top"><nobr>Mouse Seq. ID <sup>1</sup></th>
+<th valign="top">Mouse <br>Chromosomal<br> Location</th>
+<th valign="top">Human Ortholog</th>
+<th valign="top"><nobr>Human Seq. ID <sup>1</sup></th>
+<th valign="top">Rat Ortholog</th>
+<th valign="top"><nobr>Rat Seq. ID <sup>1</sup></th>
+<th valign="top">Mouse Synonyms</th>
+</tr>
+<!--1=Daam1--> 
+<tr>
+<td valign="top"><a href="http://www.informatics.jax.org/javawi2/servlet/WIFetch?page=markerDetail&amp;key=51326">Daam1</a></td>
+<td valign="top"><a href="http://www.informatics.jax.org/javawi2/servlet/WIFetch?page=sequenceDetail&amp;id=NM_026102">NM_026102</a></td>
+<td valign="top">12 (C3)</td>
+<td valign="top"><a
+href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=gene&amp;cmd=Retrieve&amp;dopt=Graphics&amp;list_uids=23002">DAAM1</a></td>
+<td valign="top"><a
+href="http://www.ncbi.nlm.nih.gov/entrez/viewer.fcgi?db=Nucleotide&amp;dopt=GenBank&amp;val=21071076">NM_014992</a></td>
+<td valign="top"><a href="http://rgd.mcw.edu/tools/genes/genes_view.cgi?id=1305119">Daam1</a></td>
+<td valign="top"><a href="http://www.ncbi.nlm.nih.gov/entrez/viewer.fcgi?db=Nucleotide&amp;dopt=GenBank&amp;val=62650798">XM_234275</a></td>
+<td valign="top">1700066F09Rik<br>2310028E21Rik</td>
+</tr>
+<!--2=Daam2--> 
+<tr>
+<td valign="top"><a href="http://www.informatics.jax.org/javawi2/servlet/WIFetch?page=markerDetail&amp;key=60421">Daam2</a></td>
+<td valign="top"><a
+href="http://www.informatics.jax.org/javawi2/servlet/WIFetch?page=sequenceDetail&amp;id=NM_001008231">NM_001008231</a></td>
+<td valign="top">17 (syntenic)</td>
+<td valign="top"><a
+href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=gene&amp;cmd=Retrieve&amp;dopt=Graphics&amp;list_uids=23500">DAAM2</a></td>
+<td valign="top"><a href="http://www.ncbi.nlm.nih.gov/entrez/viewer.fcgi?db=Nucleotide&amp;dopt=GenBank&amp;val=40548414">NM_015345</a></td>
+<td valign="top"><a href="http://rgd.mcw.edu/tools/genes/genes_view.cgi?id=1306128">Daam2</a></td>
+<td valign="top"><a
+href="http://www.ncbi.nlm.nih.gov/entrez/viewer.fcgi?db=Nucleotide&amp;dopt=GenBank&amp;val=62654645">XM_236909</a></td>
+<td valign="top">2310016D11Rik</td>
+</tr>
+
+</tbody>                     
 </table>
 <sup>1</sup>&nbsp;&nbsp;&nbsp;Representative example; in general, this sequence is a long or full-length cDNA sequence.<br>
 
 <!--#include file="include/gf_nomenclature.html"-->
-
-
-<!--#include file="include/bodyStop.html"--></BODY>
+<!--#include file="include/bodyStop.html"-->
+</BODY>
 </HTML> 
 
 <!-- Warranty Disclaimer and Copyright Notice
