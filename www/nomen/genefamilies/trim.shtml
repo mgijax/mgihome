@@ -2,7 +2,7 @@
 <HTML>
 <HEAD>
   <TITLE><!--#include file='include/mgiversion.html'--> - Tripartite Motif Gene Family</TITLE>
-<LINK REL="stylesheet" TYPE="text/css" HREF="../../stylesheet/mgihome.css">
+<!--#include file="include/stylesheet.html"-->
 
   <LINK REV="made" HREF="mailto:">
   <META NAME="generator" CONTENT="NoteTab Pro 4.84">
@@ -15,10 +15,7 @@
 <!--#include file="include/bodyStart.html"-->
 
 
-
-<TABLE WIDTH="100%" BORDER=0 CELLPADDING=2 CELLSPACING=1>
- <TR>
-  <TD WIDTH="100%" BGCOLOR="#D0E0F0">
+<TABLE WIDTH="100%" BORDER=0 CELLPADDING=2 CELLSPACING=1> <TR><TD WIDTH="100%" BGCOLOR="#D0E0F0">
    <TABLE WIDTH="100%" BORDER=0 CELLPADDING=0 CELLSPACING=0>
     <TR>
      <TD WIDTH="20%" VALIGN="center" ALIGN="left">&nbsp;</TD>
@@ -35,7 +32,7 @@
 </TABLE>
 
 
-<table frame=void cols=2 width="100%"> 
+<table frame=void cellpadding=4> 
 <tr>
   <td valign=top width="20%"><b>Family Root Symbol:</td>
   <td width="80%">Trim#</td>
@@ -45,17 +42,17 @@
   </tr>
 </table>
 <p>Links to tripartite motif family data:                      
-<TABLE bgcolor="white" border=1 cellpadding=4> 
+<TABLE bgcolor="white" border=1 cellpadding=6> 
  <TR bgcolor="E0E0E0">
-  <TH width="11%">Mouse Symbol</th>
-  <TH width="11%">Mouse Seq. ID <sup>1</sup></th>
-  <TH width="13%">Mouse Chromosomal Location</th>
-  <TH width="11%">Human Ortholog</th>
-  <TH width="11%">Human Seq. ID <sup>1</sup></TH>
-  <TH width="9%">Rat Ortholog</th>
-  <TH width="11%">Rat Seq. ID <sup>1</sup></TH>
-  <TH width="11%">Orthology Details</th>
-  <TH width="11%">Mouse Synonyms</th>
+  <th valign="top">Mouse Symbol</th>
+  <th valign="top"><nobr>Mouse Seq. ID <sup>1</sup></th>
+  <th valign="top">Mouse <br>Chromosomal <br>Location</th>
+  <th valign="top">Human Ortholog</th>
+  <th valign="top"><nobr>Human Seq. ID <sup>1</sup></TH>
+  <th valign="top">Rat Ortholog</th>
+  <th valign="top"><nobr>Rat Seq. ID <sup>1</sup></TH>
+  <th valign="top">Orthology Details</th>
+  <th valign="top">Mouse Synonyms</th>
  </TR>
 <!--1=Mid2-->
 <TR> 

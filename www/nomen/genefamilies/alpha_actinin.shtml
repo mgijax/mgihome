@@ -2,8 +2,7 @@
 <HTML>
 <HEAD>
 <TITLE><!--#include file='include/mgiversion.html'--> - Alpha Actinin Gene Family</TITLE>
-<LINK REL="stylesheet" TYPE="text/css" HREF="../../stylesheet/mgihome.css">
-
+<!--#include file="include/stylesheet.html"-->
 </HEAD>
 <BODY BGCOLOR=#FFFFFF>
 <!--#include file="include/bodyStart.html"-->
@@ -27,10 +26,10 @@
  </TR>
 </TABLE>
 
-<table frame=void cols=2 width=100%> 
+<table frame=void cellpadding=6> 
  <tr>
-  <td width="20%"><b>Family Root Symbol:</b></td>
-  <td width="80%">Actn#</td>
+  <td valign="top"><b>Family Root Symbol:</b></td>
+  <td valign="top">Actn#</td>
  </tr> 
  <tr>
   <td><b>Family Name:</b></td>
@@ -38,11 +37,11 @@
  </tr>
 </table>
 <p>Links to alpha actinin family data:
-<TABLE bgcolor="white" border=1 width="95%" cellpadding=8> 
+<TABLE bgcolor="white" border=1 cellpadding=8> 
  <TR bgcolor="E0E0E0">
   <TH valign="top">Mouse Symbol</th>
  <TH valign="top">Mouse Seq. ID <sup>1</sup></th>
-   <TH valign="top">Mouse Chromosomal Location</th>
+   <TH valign="top">Mouse <br>Chromosomal <br>Location</th>
    <TH valign="top">Human Ortholog</th>
   <TH valign="top">Human Seq. ID<sup>1</sup></TH>
   <TH valign="top">Rat Ortholog</th>

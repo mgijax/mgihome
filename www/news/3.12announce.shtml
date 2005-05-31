@@ -1,8 +1,7 @@
 <HTML>
 <HEAD>
 <TITLE><!--#include file='include/mgiversion.html'--> MGI Release 3.12 Announcement - April 8, 2005</TITLE>
-<LINK REL="stylesheet" TYPE="text/css" HREF="stylesheet/mgihome.css">
-
+<!--#include file="include/stylesheet.html"-->
 <META NAME ="keywords" CONTENT="Gene Expression Database, GXD, in situ reporter, knock-in, mutated specimen, Gene Expression Literature Index, genetics, MGI, Mouse Genome Informatics, genes, anatomical structures, Mouse Anatomical Dictionary, Mouse Anatomical Dictionary Browser, mice, SQL, querying,  database queries, query forms">
 <META NAME="description" CONTENT="This page details the changes in the to MGI 2.98 release at The Jackson Laboratory."> 
 <!--Last updated on 3/25/05-->
@@ -43,8 +42,8 @@
 <A HREF="http://www.informatics.jax.org/searches/marker_form.shtml">Genes and Markers Query Form</A> (use the <I>is</I> operator rather than the default, <I>begins</I>) and click <B>Search</B>. On the summary page that appears, click the gene of interest. On gene detail page, click <B>All GO Classifications</B>. The Gene Ontology Classifications page with annotation summary text about your gene appears.</li>
   </ul><br>
 
-<LI>The list species that you can do a two-species orthology comparison on using our 
-<A HREF="http://www.informatics.jax.org/searches/oxfordgrid_form.shtml">Oxford Grid Query Form</A> now includes <I>dog</I>. Each cell in the resulting grid represents a comparison of two chromosomes, one from each of the selected species. The grid include links to comparative maps.</LI><br>
+<LI>You can now include <I>dog</I> when performing a two-species orthology comparison using the
+<A HREF="http://www.informatics.jax.org/searches/oxfordgrid_form.shtml">Oxford Grid Query Form</A>. Cells in the resulting grid represent a comparison of two chromosomes, one from each of the selected species. The grid includes links to comparative maps.</LI><br>
 
 <LI>The remainder of the MGI 3.12 release consists of performance enhancements and bug fixes.  </LI>
 </UL>

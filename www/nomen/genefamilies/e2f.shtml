@@ -42,94 +42,117 @@
  </tr>
 </table>
 <p>Links to E2f transcription factor family data:
-<TABLE bgcolor="white" border=1 width="95%" cellpadding=8> 
- <TR bgcolor="E0E0E0">
-  <TH width="15%">Mouse Symbol</th>
-  <TH width="15%">Mouse Seq. ID <sup>1</sup></th>
-  <TH width="15%">Mouse Chromosomal Location</th>
-  <TH width="15%">Human Ortholog</th>
-  <TH width="15%">Human Seq. ID <sup>1</sup></TH>
-  <TH width="7%">Rat Ortholog</th>
-  <TH width="11%">Rat Seq. ID <sup>1</sup></TH>
-  <TH width="15%">Orthology Details</th>
-  <TH width="10%">Mouse Synonyms</th>
- </TR>
-<!--E2f1-->
-<TR>
- <td><A href="<!--#include file='include/wi_url.html'-->searches/accession_report.cgi?id=MGI:101941">E2f1</A></TD>
- <td><a href="<!--#include file='include/gb_url.html'-->L21973">L21973</a></TD>
- <td>2 (84.0)</TD> 
- <TD><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=gene&cmd=Retrieve&dopt=Graphics&list_uids=1869">E2F1</a></td>
- <td><a href="<!--#include file='include/gb_url.html'-->NM_005225">NM_005225</a></td>
-<td>&nbsp;</td>
-<td>&nbsp;</td>
- <TD align=center><a href="<!--#include file='include/wi_url.html'-->searches/homology_report.cgi?id=MGI:101941">yes</a></td>
-<td>E2F1</td>
-</TR>
-<!--E2f2-->
-<TR>
- <td><A href="<!--#include file='include/wi_url.html'-->searches/accession_report.cgi?id=MGI:1096341">E2f2</a></TD>
 
+<table bgcolor="white" border="1" width="95%" cellpadding="8">
+<tbody>
+<tr bgcolor="#e0e0e0">
+<th valign="top">Mouse Symbol</th>
+<th valign="top">Mouse Seq. ID <sup>1</sup></th>
+<th valign="top">Mouse <br>Chromosomal <br>Location</th>
+<th valign="top">Human Ortholog</th>
+<th valign="top">Human Seq. ID <sup>1</sup></th>
+<th valign="top">Rat Ortholog</th>
+<th valign="top">Rat Seq. ID <sup>1</sup></th>
+<th valign="top">Mouse Synonyms</th>
+</tr>
 
- <td>&nbsp;</td>
- <td>4 (D3)</TD> 
- <TD><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=gene&cmd=Retrieve&dopt=Graphics&list_uids=1870">E2F2</a></TD>
- <td><a href="<!--#include file='include/gb_url.html'-->NM_004091">NM_004091</a></td>
-<td>&nbsp;</td>
-<td>&nbsp;</td>
- <TD align=center><a href="<!--#include file='include/wi_url.html'-->searches/homology_report.cgi?id=MGI:1096341">yes</a></td>
- <td>&nbsp;</td>
-</TR>
-<!--E2f3-->
-<TR>
- <td><A href="<!--#include file='include/wi_url.html'-->searches/accession_report.cgi?id=MGI:1096340">E2f3</A></TD>
- <td><a href="<!--#include file='include/gb_url.html'-->AF015948">AF015948</a></TD>
- <td>13 (A3.3)</td>
- <TD><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=gene&cmd=Retrieve&dopt=Graphics&list_uids=1871">E2F3</a></td>
- <td><a href="<!--#include file='include/gb_url.html'-->NM_001949">NM_001949</a></td>
-<td>&nbsp;</td>
-<td>&nbsp;</td>
- <TD align=center><a href="<!--#include file='include/wi_url.html'-->searches/homology_report.cgi?id=MGI:1096340">yes</a></td>
- <TD>E2F3b<br>mKIAA0075</td>
- </tr>
-<!--E2f4-->
+<!--E2f1--> 
 <tr>
- <td><A href="<!--#include file='include/wi_url.html'-->searches/accession_report.cgi?id=MGI:103012">E2f4</A></TD>
- <TD>&nbsp;</td>
- <td>8 (syntenic)</td>
- <TD><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=gene&cmd=Retrieve&dopt=Graphics&list_uids=1874">E2F4</a></td>
-  <td><a href="<!--#include file='include/gb_url.html'-->NM_001950">NM_001950</a></td>
-<td>&nbsp;</td>
-<td>&nbsp;</td>
- <td align=center><A href="<!--#include file='include/wi_url.html'-->searches/homology_report.cgi?id=MGI:103012">yes</A></TD>
- <TD>&nbsp;</td>
-</TR>
-<!--E2f5-->
-<tr>
- <td><A href="<!--#include file='include/wi_url.html'-->searches/accession_report.cgi?id=MGI:105091">E2f5</A></TD>
- <td><a href="<!--#include file='include/gb_url.html'-->X86925">X86925</a><br></TD>
- <td>3 (syntenic)</td>
- <TD><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=gene&cmd=Retrieve&dopt=Graphics&list_uids=1875">E2F5</a></TD>
-  <td><a href="<!--#include file='include/gb_url.html'-->NM_001951">NM_001951</a></td>
-<td>&nbsp;</td>
-<td>&nbsp;</td>
- <TD align=center><a href="<!--#include file='include/wi_url.html'-->searches/homology_report.cgi?id=MGI:105091">yes</a></td>
- <TD>E2F-5</td>
-</TR>
-<!--E2f6-->
-<tr>
- <td><A href="<!--#include file='include/wi_url.html'-->searches/accession_report.cgi?id=MGI:1354159">E2f6</A></TD>
- <td><a href="<!--#include file='include/gb_url.html'-->AF032131">AF032131</a><br></TD>
- <td>12 (6.0)</td>
- <TD><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=gene&cmd=Retrieve&dopt=Graphics&list_uids=1876">E2F6</a></TD>
-  <td><a href="<!--#include file='include/gb_url.html'-->NM_001952">NM_001952</a></td>
- <td valign=top><a href="<!--#include file='include/rgd_url.html'-->631412">E2f6</a>
-<td>&nbsp;</td>
- <TD align=center><a href="<!--#include file='include/wi_url.html'-->searches/homology_report.cgi?id=MGI:1354159">yes</a></td>
- <TD>EMA</td>
-</TR>
+<td valign="top"><a href="http://www.informatics.jax.org/javawi2/servlet/WIFetch?page=markerDetail&amp;key=17821">E2f1</a></td>
+<td valign="top"><a href="http://www.informatics.jax.org/javawi2/servlet/WIFetch?page=sequenceDetail&amp;id=NM_007891">NM_007891</a></td>
+<td valign="top">2 (84.0 cM)</td>
+<td valign="top"><a
+href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=gene&amp;cmd=Retrieve&amp;dopt=Graphics&amp;list_uids=1869">E2F1</a></td>
+<td valign="top"><a href="http://www.ncbi.nlm.nih.gov/entrez/viewer.fcgi?db=Nucleotide&amp;dopt=GenBank&amp;val=12669910">NM_005225</a></td>
+<td valign="top"><a href="http://rgd.mcw.edu/tools/genes/genes_view.cgi?id=1311726">E2f1</a>&nbsp;</td>
+<td valign="top"><a href="http://www.ncbi.nlm.nih.gov/entrez/viewer.fcgi?db=Nucleotide&amp;dopt=GenBank&amp;val=34859068">XM_230765</a></td>
+<td valign="top">E2F-1</td>
+</tr>
+<!--E2f2--> <tr>
+<td valign="top"><a href="http://www.informatics.jax.org/javawi2/servlet/WIFetch?page=markerDetail&amp;key=33385">E2f2</a></td>
+<td valign="top"><a href="http://www.informatics.jax.org/javawi2/servlet/WIFetch?page=sequenceDetail&amp;id=NM_177733">NM_177733</a></td>
+<td valign="top">4 (D3)</td>
+<td valign="top"><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=gene&amp;cmd=Retrieve&amp;dopt=Graphics&amp;list_uids=1870">E2F2</a></td>
+<td valign="top"><a href="http://www.ncbi.nlm.nih.gov/entrez/viewer.fcgi?db=Nucleotide&amp;dopt=GenBank&amp;val=34485718">NM_004091</a></td>
+<td valign="top">&nbsp;</td>
+<td valign="top">&nbsp;</td>
+<td valign="top">&nbsp;</td>
+</tr>
 
-</TABLE>
+<!--E2f3--> 
+<tr>
+<td valign="top"><a
+href="http://www.informatics.jax.org/javawi2/servlet/WIFetch?page=markerDetail&amp;key=33384">E2f3</a></td>
+<td valign="top"><a href="http://www.informatics.jax.org/javawi2/servlet/WIFetch?page=sequenceDetail&amp;id=AF015948">AF015948</a></td>
+<td valign="top">13 (A3.3)</td>
+<td valign="top"><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=gene&amp;cmd=Retrieve&amp;dopt=Graphics&amp;list_uids=1871">E2F3</a></td>
+<td valign="top"><a href="http://www.ncbi.nlm.nih.gov/entrez/viewer.fcgi?db=Nucleotide&amp;dopt=GenBank&amp;val=12669913">NM_001949</a></td>
+<td valign="top"><a href="http://rgd.mcw.edu/tools/genes/genes_view.cgi?id=1309662">E2f3</a></td>
+<td valign="top">&nbsp;</td>
+
+<!--<td valign="top"><a href="http://www.ncbi.nlm.nih.gov/entrez/viewer.fcgi?db=Nucleotide&amp;dopt=GenBank&amp;val=34875522">XM_344593</a>--></td>
+<td valign="top">E2F3a<br>E2F3b<br>mKIAA0075</td>
+</tr>
+
+<!--E2f4--> <tr>
+<td valign="top"><a
+href="http://www.informatics.jax.org/javawi2/servlet/WIFetch?page=markerDetail&amp;key=22914">E2f4</a></td>
+<td valign="top"><a href="http://www.informatics.jax.org/javawi2/servlet/WIFetch?page=sequenceDetail&amp;id=NM_148952">NM_148952</a></td>
+<td valign="top">8 (syntenic)</td>
+<td valign="top"><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=gene&amp;cmd=Retrieve&amp;dopt=Graphics&amp;list_uids=1874">E2F4</a></td>
+<td valign="top"><a
+href="http://www.ncbi.nlm.nih.gov/entrez/viewer.fcgi?db=Nucleotide&amp;dopt=GenBank&amp;val=44829053">NM_001950</a></td>
+<td valign="top"><a
+href="http://rgd.mcw.edu/tools/genes/genes_view.cgi?id=1311579">E2f4</a></td>
+<td valign="top"><a
+href="http://www.ncbi.nlm.nih.gov/entrez/viewer.fcgi?db=nucleotide&val=62665148">XM_226441</a></td>
+<td valign="top">2010111M04Rik</td>
+</tr>
+
+<!--E2f5--> 
+<tr>
+<td valign="top"><a href="http://www.informatics.jax.org/javawi2/servlet/WIFetch?page=markerDetail&amp;key=25510">E2f5</a></td>
+<td valign="top"><a
+href="http://www.informatics.jax.org/javawi2/servlet/WIFetch?page=sequenceDetail&amp;id=NM_007892">NM_007892</a></td>
+<td valign="top">3 (syntenic)</td>
+<td valign="top"><a
+href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=gene&amp;cmd=Retrieve&amp;dopt=Graphics&amp;list_uids=1875">E2F5</a></td>
+<td valign="top"><a
+href="http://www.ncbi.nlm.nih.gov/entrez/viewer.fcgi?db=Nucleotide&amp;dopt=GenBank&amp;val=12669916">NM_001951</a></td>
+<td valign="top"><a
+href="http://rgd.mcw.edu/tools/genes/genes_view.cgi?id=621357">E2f5</a></td>
+<td valign="top"><a
+href="http://www.ncbi.nlm.nih.gov/entrez/viewer.fcgi?db=nucleotide&val=62643199">XM_342209</a></td>
+<td valign="top">E2F-5</td>
+</tr>
+
+<!--E2f6--> 
+<tr>
+<td valign="top"><a href="http://www.informatics.jax.org/javawi2/servlet/WIFetch?page=markerDetail&amp;key=45840">E2f6</a></td>
+<td valign="top"><a href="http://www.informatics.jax.org/javawi2/servlet/WIFetch?page=sequenceDetail&amp;id=NM_033270">NM_03327</a></td>
+<td valign="top">12 (6.0 cM)</td>
+<td valign="top"><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=gene&amp;cmd=Retrieve&amp;dopt=Graphics&amp;list_uids=1876">E2F6</a></td>
+<td valign="top"><a href="http://www.ncbi.nlm.nih.gov/entrez/viewer.fcgi?db=Nucleotide&amp;dopt=GenBank&amp;val=38201650">NM_198258</a></td>
+<td valign="top"><a href="http://rgd.mcw.edu/tools/genes/genes_view.cgi?id=631412">E2f6</a> 
+</td>
+<td valign="top"><a href="http://www.ncbi.nlm.nih.gov/entrez/viewer.fcgi?db=nucleotide&val=62650504">XM_233986</a></td>
+<td valign="top">EMA</td>
+</tr>
+
+<!--E2f7--> 
+<tr>
+<td valign="top"><a href="http://www.informatics.jax.org/javawi2/servlet/WIFetch?page=markerDetail&amp;key=37415">E2f7</a></td>
+<td valign="top"><a href="http://www.informatics.jax.org/javawi2/servlet/WIFetch?page=sequenceDetail&amp;id=NM_178609">NM_178609</a></td>
+<td valign="top">10 (59.0 cM)</td>
+<td valign="top"><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=gene&amp;cmd=Retrieve&amp;dopt=Graphics&amp;list_uids=144455">E2F7</a></td>
+<td valign="top"><a href="http://www.ncbi.nlm.nih.gov/entrez/viewer.fcgi?db=Nucleotide&amp;dopt=GenBank&amp;val=44955909">NM_203394</a></td>
+<td valign="top"><a href="http://rgd.mcw.edu/tools/genes/genes_view.cgi?id=1310258">Ef27</a></td>
+<td valign="top"><a href="http://www.ncbi.nlm.nih.gov/entrez/viewer.fcgi?db=nucleotide&val=62652095">XM_235118</a></td>
+<td valign="top">A630014C11Rik <br>D10Ertd739e<br>E2F7</td>
+</tr>
+
+</tbody>                           
+</table>
 <sup>1</sup>&nbsp;&nbsp;&nbsp;Representative example; in general, this sequence is a long or full-length cDNA sequence.<br>
 <p><b>Family Note:</b>&nbsp;The E2f family of transcription factors plays a crucial role in the control of cell cycle progression and the action of tumor suppressor proteins.</p> 
 <hr> 

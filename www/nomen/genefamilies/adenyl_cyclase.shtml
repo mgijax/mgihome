@@ -6,7 +6,7 @@
   <META NAME="author" CONTENT="Diane Dahmen">
   <META NAME="description" CONTENT="Adenylate Cyclase Gene Family">
   <META NAME="keywords" CONTENT="">
-<LINK REL="stylesheet" TYPE="text/css" HREF="../../stylesheet/mgihome.css">
+<!--#include file="include/stylesheet.html"-->
 </HEAD>
 
 <BODY BGCOLOR=#FFFFFF>
@@ -30,10 +30,10 @@
  </TR>
 </TABLE>
 
-<table frame=void cols=2 width=100%>
+<table frame=void cellpadding=6>
  <tr>
-  <td width="20%"><b>Family Root Symbol:</b></td>
-  <td width="80%">Adcy#</td>
+  <td valign="top"><b>Family Root Symbol:</b></td>
+  <td valign="top">Adcy#</td>
  </tr>
  <tr>
   <td><b>Family Name:</b></td>
@@ -41,17 +41,17 @@
  </tr>
 </table>
 <P>Links to adenylate cyclase family data:
-<TABLE bgcolor="white" border=1 width="95%" cellpadding=8>
+<TABLE bgcolor="white" border=1 cellpadding=8>
  <TR>
  <TR bgcolor="E0E0E0">
-  <TH valign=top>Mouse Symbol</th>
-  <TH valign=top><nobr>Mouse Seq. ID <sup>1</sup></th>
-   <TH valign=top>Mouse Chromosomal Location</th>
-  <TH valign=top>Human Ortholog</th>
- <TH valign=top><nobr>Human Seq. ID <sup>1</sup></TH>
-  <TH valign=top>Rat Ortholog</th>
-  <TH valign=top><nobr>Rat Seq. ID  <sup>1</sup></TH>
- <TH valign=top>Mouse Synonyms</th>
+  <TH valign="top">Mouse Symbol</th>
+  <TH valign="top"><nobr>Mouse Seq. ID <sup>1</sup></th>
+   <TH valign="top">Mouse <br>Chromosomal <br>Location</th>
+  <TH valign="top">Human Ortholog</th>
+ <TH valign="top"><nobr>Human Seq. ID <sup>1</sup></TH>
+  <TH valign="top">Rat Ortholog</th>
+  <TH valign="top"><nobr>Rat Seq. ID  <sup>1</sup></TH>
+ <TH valign="top">Mouse Synonyms</th>
  </TR>
 <!--Adcy1-->
 <tr>
