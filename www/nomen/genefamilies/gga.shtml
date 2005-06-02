@@ -30,10 +30,10 @@
 </TABLE>
 
 
-<table frame=void cols=2 width=100%>
+<table frame=void cellpadding=4>
 <tr>
-  <td valign=top width=30%><b>Family Root Symbol:</b></td>
-  <td width="70%">Gga#</td>
+  <td valign=top><b>Family Root Symbol:</b></td>
+  <td valign=top>Gga#</td>
  </tr>
  <tr>
   <td><b>Family Name:</b></td>
@@ -41,14 +41,14 @@
  </tr>
 </table>
 <p>Links to golgi associated, gamma adaptin ear containing, ARF binding protein family data:
-<TABLE bgcolor="white" border=1 width="95%" cellpadding=8>
+<TABLE bgcolor="white" border=1 cellpadding=6>
  <TR bgcolor="E0E0E0">
-  <TH width="11%">Mouse Symbol</th>
-  <TH width="11%">Mouse Seq. ID <sup>1</sup></th>
-  <TH width="11%">Mouse Chromosomal Location</th>
-  <TH width="11%">Human Ortholog</th>
-  <TH width="11%">Human Seq. ID <sup>1</sup></TH>
-  <TH width="11%">Orthology Details</th>
+  <TH valign="bottom">Mouse Symbol</th>
+  <TH valign="bottom">Mouse Seq. ID <sup>1</sup></th>
+  <TH valign="bottom">Mouse Chromosomal Location</th>
+  <TH valign="bottom">Human Ortholog</th>
+  <TH valign="bottom">Human Seq. ID <sup>1</sup></TH>
+  <TH valign="bottom">Mouse Synonyms</th>
  </TR>
 <!--1=Gga1-->
 <TR>
@@ -57,9 +57,8 @@
   <TD>15 (E2)</TD>
   <TD><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=gene&cmd=Retrieve&dopt=Graphics&list_uids=26088">GGA1</a></TD>
   <td><a href="<!--#include file='include/gb_url.html'-->AF190862">AF190862</a></td>
-  <TD align=center><a href="<!--#include file='include/wi_url.html'-->searches/homology_report.cgi?id=MGI:2146207">yes</a></td>
- 
-</TR>
+  <TD>&nbsp;</td>
+ </TR>
 <!--2=Gga2-->
 <TR><TD><A href="<!--#include file='include/wi_url.html'-->searches/accession_report.cgi?id=MGI:1921355">Gga2</A></TD>
   <TD><a href="<!--#include file='include/gb_url.html'-->AK004632">AK004632</a></TD>
@@ -67,8 +66,7 @@
   <TD><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=gene&cmd=Retrieve&dopt=Graphics&list_uids=23062">GGA2</a></TD>
   <td><a href="<!--#include file='include/gb_url.html'-->AB029003">AB029003</a></td>
  
-  <TD align=center><a href="<!--#include file='include/wi_url.html'-->searches/homology_report.cgi?id=MGI:1921355
-">yes</a></td>
+  <TD>&nbsp;</td>
 </TR>
  
  <!--3=Gga3-->
@@ -78,8 +76,7 @@
   <td>11 (syntenic)</TD>
   <TD><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=gene&cmd=Retrieve&dopt=Graphics&list_uids=23163">GGA3</a></TD>
   <td><a href="<!--#include file='include/gb_url.html'-->AF190864">AF190864</a></td>
-<TD align=center><a href="<!--#include file='include/wi_url.html'-->searches/homology_report.cgi?id=MGI:2384159
-">yes</a></td>
+  <TD>&nbsp;</td>
 </TR>
 </TABLE>
 <sup>1</sup>&nbsp;&nbsp;&nbsp;Representative example; in general, this sequence is a long or full-length cDNA sequence.<br>

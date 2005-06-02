@@ -15,16 +15,14 @@
 <!--#include file="include/bodyStart.html"-->
 
 
-
 <TABLE WIDTH="100%" BORDER=0 CELLPADDING=2 CELLSPACING=1>
- <TR>
-  <TD WIDTH="100%" BGCOLOR="#D0E0F0">
-   <TABLE WIDTH="100%" BORDER=0 CELLPADDING=0 CELLSPACING=0>
+ <TR>  <TD WIDTH="100%" BGCOLOR="#D0E0F0">   <TABLE WIDTH="100%" BORDER=0 CELLPADDING=0 CELLSPACING=0>
     <TR>
      <TD WIDTH="20%" VALIGN="center" ALIGN="left">&nbsp;</TD>
      <TD WIDTH="60%" ALIGN="center" VALIGN="center">
       <FONT COLOR="#000000" SIZE=5 FACE="Arial,Helvetica">
-       <center>Gamma-Aminobutyric Acid Ionotropic Type A (GABA-A) Receptor Gene Family</center>
+       
+<center>Gamma-Aminobutyric Acid Ionotropic Type A (GABA-A) Receptor Gene Family</center>
       </FONT>
      </TD>
      <TD WIDTH="20%" VALIGN="center" ALIGN="center">&nbsp;</TD>
@@ -35,10 +33,10 @@
 </TABLE>
 
 
-<table frame=void cols=2 width=100%> 
+<table frame=void cellpadding="4"> 
 <tr>
-  <td valign=top width=30%><b>Family Root Symbol:</b></td>
-  <td width="70%">Gabr##</td>
+  <td valign=top><b>Family Root Symbol:</b></td>
+  <td valign=top>Gabr##</td>
  </tr> 
  <tr>
   <td><b>Family Name:</b></td>
@@ -46,235 +44,300 @@
  </tr>
 </table>
 <p>Links to gamma-aminobutyric acid type A (GABA-A) receptor family data:
-<TABLE bgcolor="white" border=1 width="95%" cellpadding=8> 
- <TR bgcolor="E0E0E0">
-  <TH width="11%">Mouse Symbol</th>
-  <TH width="11%">Mouse Seq. ID <sup>1</sup></th>
-  <TH width="11%">Mouse Chromosomal Location</th>
-  <TH width="11%">Human Ortholog</th>
-  <TH width="11%">Human Seq. ID <sup>1</sup></TH>
-  <TH width="11%">Rat Ortholog</th>
-  <TH width="11%">Rat Seq. ID <sup>1</sup></TH>
-  <TH width="11%">Orthology Details</th>
-  <TH width="11%">Mouse Synonyms</th>
- </TR>
-<!--1=Gabra1-->
-<TR> 
-  <TD valign=top><a href="<!--#include file='include/wi_url.html'-->searches/accession_report.cgi?id=MGI:95613">Gabra1</A></TD>
-  <TD valign=top><a href="<!--#include file='include/gb_url.html'-->M86566">M86566</a></TD>
-  <TD valign=top>11 (19.0 cM)</TD>
-  <TD><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=gene&cmd=Retrieve&dopt=Graphics&list_uids=2554">GABRA1</a></TD>
-  <td valign=top><a href="<!--#include file='include/gb_url.html'-->X14766">X14766</a></td> 
- <td valign=top><a href="<!--#include file='include/rgd_url.html'-->61855">Gabra1</a></TD> 
-  <td valign=top><a href="<!--#include file='include/gb_url.html'-->L08490">L08490</a></td>
-  <TD align=center valign=top><a href="<!--#include file='include/wi_url.html'-->searches/homology_report.cgi?id=MGI:95613">yes</a></td>
-  <TD>Gabra-1</TD>
-</TR>
-<!--2=Gabra2-->
-<TR>
-  <TD><A href="<!--#include file='include/wi_url.html'-->searches/accession_report.cgi?id=MGI:95614">Gabra2</A></TD>
-  <TD><a href="<!--#include file='include/gb_url.html'-->M86567">M86567</a></TD>
-  <td>5 (40.0 cM)</TD>
-  <TD><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=gene&cmd=Retrieve&dopt=Graphics&list_uids=2555">GABRA2</a></TD>
-  <td><a href="<!--#include file='include/gb_url.html'-->S62907">S62907</a></td> 
- <td valign=top><a href="<!--#include file='include/rgd_url.html'-->61856">Gabra2</a></TD> 
-  <td><a href="<!--#include file='include/gb_url.html'-->L08491">L08491</a></td>
-  <TD align=center><a href="<!--#include file='include/wi_url.html'-->searches/homology_report.cgi?id=MGI:95614">yes</a></td>
-  <TD>Gabra-2</TD>
-</TR> 
-<!--3=Gabra3-->
-<TR>
-  <TD><A href="<!--#include file='include/wi_url.html'-->searches/accession_report.cgi?id=MGI:95615">Gabra3</A></TD>
-  <TD><a href="<!--#include file='include/gb_url.html'-->M86568">M86568</a></td>
-  <td>X (28.5 cM)</TD>
-  <TD><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=gene&cmd=Retrieve&dopt=Graphics&list_uids=2556">GABRA3</a></TD>
-  <td><a href="<!--#include file='include/gb_url.html'-->S62908">S62908</a></td> 
-  <td valign=top><a href="<!--#include file='include/rgd_url.html'-->2648">Gabra3</a></a></TD> 
-  <td><a href="<!--#include file='include/gb_url.html'-->L08492">L08492</a></td>
-  <TD align=center><a href="<!--#include file='include/wi_url.html'-->searches/homology_report.cgi?id=MGI:95615">yes</a></td>
-  <TD>Gabra-3</TD>
-</TR> 
-<!--4=Gabra4-->				
+<table bgcolor="white" border="1"  cellpadding="6">
+<tbody>
+<tr bgcolor="#e0e0e0">
+ <TH valign="bottom">Mouse Symbol</th>
+ <TH valign="bottom">Mouse Seq. ID <sup>1</sup></th>
+ <TH valign="bottom">Mouse Chromosomal Location</th>
+ <TH valign="bottom">Human Ortholog</th>
+ <TH valign="bottom">Human Seq. ID <sup>1</sup></th>
+ <TH valign="bottom">Rat Ortholog</th>
+ <TH valign="bottom">Rat Seq. ID <sup>1</sup></th>
+ <TH valign="bottom">Mouse Synonyms</th>
+</tr>
+<!--1=Gabra1--> <tr>
+<td valign="top"><a
+href="http://www.informatics.jax.org/javawi2/servlet/WIFetch?page=markerDetail&amp;key=8941">Gabra1</a></td>
+<td valign="top"><a
+href="http://www.informatics.jax.org/javawi2/servlet/WIFetch?page=sequenceDetail&amp;id=NM_010250">NM_010250</a></td>
+<td valign="top">11 (19.0 cM)</td>
+<td valign="top"><a
+href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=gene&amp;cmd=Retrieve&amp;dopt=Graphics&amp;list_uids=2554">GABRA1</a></td>
+<td valign="top"><a
+href="http://www.ncbi.nlm.nih.gov/entrez/viewer.fcgi?db=Nucleotide&amp;dopt=GenBank&amp;val=38327553">NM_000806</a></td>
+<td valign="top"><a
+href="http://rgd.mcw.edu/tools/genes/genes_view.cgi?id=61855">Gabra1</a></td>
+<td valign="top"><a
+href="http://www.ncbi.nlm.nih.gov/entrez/viewer.fcgi?db=Nucleotide&amp;dopt=GenBank&amp;val=34328531">NM_183326</a></td>
+<td valign="top">Gabra-1</td>
+</tr>
+<!--2=Gabra2--> <tr>
+<td valign="top"><a
+href="http://www.informatics.jax.org/javawi2/servlet/WIFetch?page=markerDetail&amp;key=8942">Gabra2</a></td>
+<td valign="top"><a
+href="http://www.informatics.jax.org/javawi2/servlet/WIFetch?page=sequenceDetail&amp;id=NM_008066">NM_008066</a></td>
+<td valign="top">5 (40.0 cM)</td>
+<td valign="top"><a
+href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=gene&amp;cmd=Retrieve&amp;dopt=Graphics&amp;list_uids=2555">GABRA2</a></td>
+<td valign="top"><a
+href="http://www.ncbi.nlm.nih.gov/entrez/viewer.fcgi?db=Nucleotide&amp;dopt=GenBank&amp;val=4557600">NM_000807</a></td>
+<td valign="top"><a
+href="http://rgd.mcw.edu/tools/genes/genes_view.cgi?id=61856">Gabra2</a></td>
+<td valign="top"><a
+href="http://www.ncbi.nlm.nih.gov/entrez/viewer.fcgi?db=Nucleotide&amp;dopt=GenBank&amp;val=23307610">AF334587</a></td>
+<td valign="top">C630048P16Rik<br>Gabra-2</td>
+</tr>
+<!--3=Gabra3--> <tr>
+<td valign="top"><a
+href="http://www.informatics.jax.org/javawi2/servlet/WIFetch?page=markerDetail&amp;key=8943">Gabra3</a></td>
+<td valign="top"><a
+href="http://www.informatics.jax.org/javawi2/servlet/WIFetch?page=sequenceDetail&amp;id=NM_008067">NM_008067</a></td>
+<td valign="top">X (28.5 cM)</td>
+<td valign="top"><a
+href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=gene&amp;cmd=Retrieve&amp;dopt=Graphics&amp;list_uids=2556">GABRA3</a></td>
+<td valign="top"><a
+href="http://www.ncbi.nlm.nih.gov/entrez/viewer.fcgi?db=Nucleotide&amp;dopt=GenBank&amp;val=34734069">NM_000808</a></td>
+<td valign="top"><a
+href="http://rgd.mcw.edu/tools/genes/genes_view.cgi?id=2648">Gabra3</a></td>
+<td valign="top"><a
+href="http://www.ncbi.nlm.nih.gov/entrez/viewer.fcgi?db=Nucleotide&amp;dopt=GenBank&amp;val=8393386">NM_017069</a></td>
+<td valign="top">Gabra-3</td>
+</tr>
+<!--4=Gabra4-->				 <tr>
+<td valign="top"><a
+href="http://www.informatics.jax.org/javawi2/servlet/WIFetch?page=markerDetail&amp;key=8944">Gabra4</a></td>
+<td valign="top"><a
+href="http://www.informatics.jax.org/javawi2/servlet/WIFetch?page=sequenceDetail&amp;id=NM_010251">NM_010251</a></td>
+<td valign="top">5 (syntenic)</td>
+<td valign="top"><a
+href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=gene&amp;cmd=Retrieve&amp;dopt=Graphics&amp;list_uids=2557">GABRA4</a></td>
+<td valign="top"><a
+href="http://www.ncbi.nlm.nih.gov/entrez/viewer.fcgi?db=Nucleotide&amp;dopt=GenBank&amp;val=34452722">NM_000809</a></td>
+<td valign="top"><a
+href="http://rgd.mcw.edu/tools/genes/genes_view.cgi?id=621670">Gabra4</a></td>
+<td valign="top"><a
+href="http://www.ncbi.nlm.nih.gov/entrez/viewer.fcgi?db=Nucleotide&amp;dopt=GenBank&amp;val=18034794">NM_080587</a></td>
+<td valign="top">Gabra-4</td>
+</tr>
+<!--5=Gabra5--> <tr>
+<td valign="top"><a
+href="http://www.informatics.jax.org/javawi2/servlet/WIFetch?page=markerDetail&amp;key=8945">Gabra5</a></td>
+<td valign="top"><a
+href="http://www.informatics.jax.org/javawi2/servlet/WIFetch?page=sequenceDetail&amp;id=NM_176942">NM_176942</a></td>
+<td valign="top">7 (28.5 cM)</td>
+<td valign="top"><a
+href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=gene&amp;cmd=Retrieve&amp;dopt=Graphics&amp;list_uids=2558">GABRA5</a></td>
+<td valign="top"><a
+href="http://www.ncbi.nlm.nih.gov/entrez/viewer.fcgi?db=Nucleotide&amp;dopt=GenBank&amp;val=6031207">NM_000810</a></td>
+<td valign="top"><a
+href="http://rgd.mcw.edu/tools/genes/genes_view.cgi?id=61859">Gabra5</a></td>
+<td valign="top"><a
+href="http://www.ncbi.nlm.nih.gov/entrez/viewer.fcgi?db=Nucleotide&amp;dopt=GenBank&amp;val=25742786">NM_017295</a></td>
+<td valign="top">A230018I05Rik</td>
+</tr>
+<!--6=Gabra6--> <tr>
+<td valign="top"><a
+href="http://www.informatics.jax.org/javawi2/servlet/WIFetch?page=markerDetail&amp;key=8946">Gabra6</a></td>
+<td valign="top"><a
+href="http://www.informatics.jax.org/javawi2/servlet/WIFetch?page=sequenceDetail&amp;id=NM_008068">NM_008068</a></td>
+<td valign="top">11 (23.0 cM)</td>
+<td valign="top"><a
+href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=gene&amp;cmd=Retrieve&amp;dopt=Graphics&amp;list_uids=2559">GABRA6</a></td>
+<td valign="top"><a
+href="http://www.ncbi.nlm.nih.gov/entrez/viewer.fcgi?db=Nucleotide&amp;dopt=GenBank&amp;val=4557606">NM_000811</a></td>
+<td valign="top"><a
+href="http://rgd.mcw.edu/tools/genes/genes_view.cgi?id=61861">Gabra6</a></td>
+<td valign="top"><a
+href="http://www.ncbi.nlm.nih.gov/entrez/viewer.fcgi?db=Nucleotide&amp;dopt=GenBank&amp;val=11177871">NM_021841</a></td>
+<td valign="top">alpha6<br>Gabra-6</td>
+</tr>
+<!--7=Gabrb1--> <tr>
+<td valign="top"><a
+href="http://www.informatics.jax.org/javawi2/servlet/WIFetch?page=markerDetail&amp;key=8950">Gabrb1</a></td>
+<td valign="top"> <a
+href="http://www.informatics.jax.org/javawi2/servlet/WIFetch?page=sequenceDetail&amp;id=NM_008069">NM_008069</a></td>
+<td valign="top">5 (40.0 cM)</td>
+<td valign="top"><a
+href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=gene&amp;cmd=Retrieve&amp;dopt=Graphics&amp;list_uids=2560">GABRB1</a></td>
+<td valign="top"><a
+href="http://www.ncbi.nlm.nih.gov/entrez/viewer.fcgi?db=Nucleotide&amp;dopt=GenBank&amp;val=12548775">NM_000812</a></td>
+<td valign="top"><a
+href="http://rgd.mcw.edu/tools/genes/genes_view.cgi?id=2649">Gabrb1</a></td>
+<td valign="top"><a
+href="http://www.ncbi.nlm.nih.gov/entrez/viewer.fcgi?db=Nucleotide&amp;dopt=GenBank&amp;val=6978866">NM_012956</a></td>
+<td valign="top">Gabrb-1</td>
+</tr>
+<!--8=Gabrb2--> <tr>
+<td valign="top"><a
+href="http://www.informatics.jax.org/javawi2/servlet/WIFetch?page=markerDetail&amp;key=8951">Gabrb2</a></td>
+<td valign="top"><a
+href="http://www.informatics.jax.org/javawi2/servlet/WIFetch?page=sequenceDetail&id=NM_008070">NM_008070</a></td>
+<td valign="top">11 (28.6)</td>
+<td valign="top"><a
+href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=gene&amp;cmd=Retrieve&amp;dopt=Graphics&amp;list_uids=2561">GABRB2</a></td>
+<td valign="top"><a
+href="http://www.ncbi.nlm.nih.gov/entrez/viewer.fcgi?db=Nucleotide&amp;dopt=GenBank&amp;val=12548784">NM_021911</a></td>
+<td valign="top"><a
+href="http://rgd.mcw.edu/tools/genes/genes_view.cgi?id=2650">Gabrb2</a></td>
+<td valign="top"><a
+href="http://www.ncbi.nlm.nih.gov/entrez/viewer.fcgi?db=Nucleotide&amp;dopt=GenBank&amp;val=6978868">NM_012957</a></td>
+<td valign="top">Gabrb-2</td>
+</tr>
+<!--9=Gabrb3--> <tr>
+<td valign="top"><a
+href="http://www.informatics.jax.org/javawi2/servlet/WIFetch?page=markerDetail&amp;key=8952">Gabrb3</a></td>
+<td valign="top"><a
+href="http://www.informatics.jax.org/javawi2/servlet/WIFetch?page=sequenceDetail&amp;id=NM_008071">NM_008071</a></td>
+<td valign="top">7 (28.6 cM)</td>
+<td valign="top"><a
+href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=gene&amp;cmd=Retrieve&amp;dopt=Graphics&amp;list_uids=2562">GABRB3</a></td>
+<td valign="top"><a
+href="http://www.ncbi.nlm.nih.gov/entrez/viewer.fcgi?db=Nucleotide&amp;dopt=GenBank&amp;val=30061562">NM_000814</a></td>
+<td valign="top"><a
+href="http://rgd.mcw.edu/tools/genes/genes_view.cgi?id=2651">Gabrb3</a></td>
+<td valign="top"><a
+href="http://www.ncbi.nlm.nih.gov/entrez/viewer.fcgi?db=Nucleotide&amp;dopt=GenBank&amp;val=8393389">NM_017065</a></td>
+<td valign="top">A230092K12Rik<br> Gabrb-3</td>
+<!--10=Gabrd--> </tr>
 <tr>
-  <TD><A href="<!--#include file='include/wi_url.html'-->searches/accession_report.cgi?id=MGI:95616">Gabra4</A></TD>
-  <TD><a href="<!--#include file='include/gb_url.html'-->AK013727">AK013727</a></td>
-  <td>5 (syntenic)</TD>
-  <TD><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=gene&cmd=Retrieve&dopt=Graphics&list_uids=2557">GABRA4</a></TD>
-  <td><a href="<!--#include file='include/gb_url.html'-->U30461">U30461</a></td> 
- <td valign=top><a href="<!--#include file='include/rgd_url.html'-->621670">Gabra4</a></TD> 
-  <td><a href="<!--#include file='include/gb_url.html'-->L08493">L08493</a></td>
- <TD align=center><a href="<!--#include file='include/wi_url.html'-->searches/homology_report.cgi?id=MGI:95616">yes</a></td>
- <TD>Gabra-4</TD>
-</TR> 
-<!--5=Gabra5-->
+<td valign="top"><a
+href="http://www.informatics.jax.org/javawi2/servlet/WIFetch?page=markerDetail&amp;key=8953">Gabrd</a></td>
+<td valign="top"><a
+href="http://www.informatics.jax.org/javawi2/servlet/WIFetch?page=sequenceDetail&amp;id=NM_008072">NM_008072</a></td>
+<td valign="top">4 (syntenic)</td>
+<td valign="top"><a
+href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=gene&amp;cmd=Retrieve&amp;dopt=Graphics&amp;list_uids=2563">GABRD</a></td>
+<td valign="top"><a
+href="http://www.ncbi.nlm.nih.gov/entrez/viewer.fcgi?db=Nucleotide&amp;dopt=GenBank&amp;val=34734070">NM_000815</a></td>
+<td valign="top"><a
+href="http://rgd.mcw.edu/tools/genes/genes_view.cgi?id=61901">Gabrd</a></td>
+<td valign="top"><a
+href="http://www.ncbi.nlm.nih.gov/entrez/viewer.fcgi?db=Nucleotide&amp;dopt=GenBank&amp;val=8393392">NM_017289</a></td>
+<td valign="top">&nbsp;</td>
+</tr>
+<!--11=Gabre--> <tr>
+<td valign="top"><a
+href="http://www.informatics.jax.org/javawi2/servlet/WIFetch?page=markerDetail&amp;key=39221">Gabre</a></td>
+<td valign="top"><a
+href="http://www.informatics.jax.org/javawi2/servlet/WIFetch?page=sequenceDetail&amp;id=NM_017369">NM_017369</a></td>
+<td valign="top">X (syntenic)</td>
+<td valign="top"><a
+href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=gene&amp;cmd=Retrieve&amp;dopt=Graphics&amp;list_uids=2564">GABRE</a></td>
+<td valign="top"><a
+href="http://www.ncbi.nlm.nih.gov/entrez/viewer.fcgi?db=Nucleotide&amp;dopt=GenBank&amp;val=52426765">NM_021990</a></td>
+<td valign="top"><a
+href="http://rgd.mcw.edu/tools/genes/genes_view.cgi?id=68320">Gabre</a></td>
+<td valign="top"><a
+href="http://www.ncbi.nlm.nih.gov/entrez/viewer.fcgi?db=Nucleotide&amp;dopt=GenBank&amp;val=12831206">NM_023091</a></td>
+<td valign="top">&nbsp;</td>
+</tr>
+<!--12=Gabrg1--> <tr>
+<td align="left" valign="top"><a
+href="http://www.informatics.jax.org/javawi2/servlet/WIFetch?page=markerDetail&amp;key=23109">Gabrg1</a></td>
+<td align="left" valign="top"><a
+href="http://www.informatics.jax.org/javawi2/servlet/WIFetch?page=sequenceDetail&id=NM_010252">NM_010252</a></td>
+<td align="left" valign="top">5 (40.0 cM)</td>
+<td align="left" valign="top"><a
+href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=gene&amp;cmd=Retrieve&amp;dopt=Graphics&amp;list_uids=2565">GABRG1</a></td>
+<td valign="top"><a
+href="http://www.ncbi.nlm.nih.gov/entrez/viewer.fcgi?db=Nucleotide&amp;dopt=GenBank&amp;val=59889570">NM_173536</a></td>
+<td valign="top"><a
+href="http://rgd.mcw.edu/tools/genes/genes_view.cgi?id=621732">Gabrg1</a></td>
+<td align="left" valign="top"><a
+href="http://www.ncbi.nlm.nih.gov/entrez/viewer.fcgi?db=Nucleotide&amp;dopt=GenBank&amp;val=18034792">NM_080586</a></td>
+<td align="left" valign="top">GabaA<br>
+</td>
+</tr>
+<!--13=Gabrg2--> <tr>
+<td valign="top"><a
+href="http://www.informatics.jax.org/javawi2/servlet/WIFetch?page=markerDetail&amp;key=8956">Gabrg2</a></td>
+<td valign="top"><a
+href="http://www.informatics.jax.org/javawi2/servlet/WIFetch?page=sequenceDetail&amp;id=NM_177408">NM_177408</a></td>
+<td valign="top">11 (19.0 cM)</td>
+<td valign="top"><a
+href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=gene&amp;cmd=Retrieve&amp;dopt=Graphics&amp;list_uids=2566">GABRG2</a></td>
+<td valign="top"><a
+href="http://www.ncbi.nlm.nih.gov/entrez/viewer.fcgi?db=Nucleotide&amp;dopt=GenBank&amp;val=38788154">NM_198904</a></td>
+<td valign="top"><a
+href="http://rgd.mcw.edu/tools/genes/genes_view.cgi?id=61966">Gabrg2</a></td>
+<td valign="top"><a
+href="http://www.ncbi.nlm.nih.gov/entrez/viewer.fcgi?db=Nucleotide&amp;dopt=GenBank&amp;val=34328526">NM_183327</a></td>
+<td valign="top">Gabrg-2<br>
+gamma2<br>
+</td>
+</tr>
+<!--14=Gabrg3--> 
 <tr>
-  <TD><A href="<!--#include file='include/wi_url.html'-->searches/accession_report.cgi?id=MGI:95617">Gabra5</TD>
-  <TD><a href="<!--#include file='include/gb_url.html'-->AF090374">AF090374</a></td>
-  <td>7 (28.5 cM)</TD>
-  <TD><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=gene&cmd=Retrieve&dopt=Graphics&list_uids=2558">GABRA5</a></TD>
-  <td><a href="<!--#include file='include/gb_url.html'-->L08485">L08485</a></td> 
-  <td valign=top><a href="<!--#include file='include/rgd_url.html'-->61859">Gabra5</a></TD> 
-  <td><a href="<!--#include file='include/gb_url.html'-->X51992">X51992</a></td>
-  <TD align=center><a href="<!--#include file='include/wi_url.html'-->searches/homology_report.cgi?id=MGI:95617">yes</a></td>
-  <TD>&nbsp;</TD>
-</TR> 
-<!--6=Gabra6-->
+<td valign="top"><a
+href="http://www.informatics.jax.org/javawi2/servlet/WIFetch?page=markerDetail&amp;key=8957">Gabrg3</a></td>
+<td valign="top"><a
+href="http://www.informatics.jax.org/javawi2/servlet/WIFetch?page=sequenceDetail&amp;id=NM_008074">NM_008074</a></td>
+<td valign="top">7 (28.2 cM)</td>
+<td valign="top"><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=gene&amp;cmd=Retrieve&amp;dopt=Graphics&amp;list_uids=2567">GABRG3</a></td>
+<td valign="top"><a
+href="http://www.ncbi.nlm.nih.gov/entrez/viewer.fcgi?db=Nucleotide&amp;dopt=GenBank&amp;val=15193297">NM_033223</a></td>
+<td valign="top"><a
+href="http://rgd.mcw.edu/tools/genes/genes_view.cgi?id=621735">Gabrg3</a></td>
+<td valign="top"><a
+href="http://www.ncbi.nlm.nih.gov/entrez/viewer.fcgi?db=Nucleotide&amp;dopt=GenBank&amp;val=40288194">NM_024370</a></td>
+<td valign="top">Gabrg-3</td>
+</tr>
+<!--15=GABRP-->
 <tr>
-  <TD><A href="<!--#include file='include/wi_url.html'-->searches/accession_report.cgi?id=MGI:95618">Gabra6</A></TD>
-  <TD><a href="<!--#include file='include/gb_url.html'-->X51986">X51986</a></TD>
-  <td>11 (23.0 cM)</TD>
-  <TD><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=gene&cmd=Retrieve&dopt=Graphics&list_uids=2559">GABRA6</a></TD>
-  <td><a href="<!--#include file='include/gb_url.html'-->S81944">S81944</a></td> 
- <td valign=top><a href="<!--#include file='include/rgd_url.html'-->61861">Gabra6</a></TD> 
-  <td><a href="<!--#include file='include/gb_url.html'-->X55742">X55742</a></td>
-  <TD align=center><a href="<!--#include file='include/wi_url.html'-->searches/homology_report.cgi?id=MGI:95618">yes</a></td>
-  <TD>Gabra-6</TD>
-</TR>
-<!--7=Gabrb1-->
+<td valign="top"><a href="http://www.informatics.jax.org/javawi2/servlet/WIFetch?page=markerDetail&amp;key=82634">Gabrp</a></td>
+<td valign="top"><a href="http://www.informatics.jax.org/javawi2/servlet/WIFetch?page=sequenceDetail&id=NM_146017">NM_146017</a></td>
+<td valign="top">11 (syntenic)</td>
+<td valign="top"><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=gene&amp;cmd=Retrieve&amp;dopt=Graphics&amp;list_uids=2568">GABRP</a></td>
+<td valign="top"><a
+href="http://www.ncbi.nlm.nih.gov/entrez/viewer.fcgi?db=Nucleotide&amp;dopt=GenBank&amp;val=7657105">NM_014211</a></td>
+<td valign="top"><a
+href="http://rgd.mcw.edu/tools/genes/genes_view.cgi?id=620532">Gabrp</a></td>
+<td valign="top"><a
+href="http://www.ncbi.nlm.nih.gov/entrez/viewer.fcgi?db=Nucleotide&amp;dopt=GenBank&amp;val=13591944">NM_031029</a></td>
+<td valign="top">&nbsp;</td>
+</tr>
+<!--16=Gabrq-->				 
 <tr>
-  <TD><A href="<!--#include file='include/wi_url.html'-->searches/accession_report.cgi?id=MGI:95619">Gabrb1</A></TD>
-  <TD> <a href="<!--#include file='include/gb_url.html'-->X55273">X55273</a></TD>
-  <td>5 (40.0 cM)</TD>
-  <TD><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=gene&cmd=Retrieve&dopt=Graphics&list_uids=2560">GABRB1</a></TD>
-  <td><a href="<!--#include file='include/gb_url.html'-->X14767">X14767</a></td> 
-  <td valign=top><a href="<!--#include file='include/rgd_url.html'-->2649">Gabrb1</a></TD> 
-  <td><a href="<!--#include file='include/gb_url.html'-->X15466">X15466</a></td>
-  <TD align=center><a href="<!--#include file='include/wi_url.html'-->searches/homology_report.cgi?id=MGI:95619">yes</a></td>
-  <TD>Gabrb-1</TD>
-</TR>
-<!--8=Gabrb2-->
+<td valign="top"><a href="http://www.informatics.jax.org/javawi2/servlet/WIFetch?page=markerDetail&amp;key=47481">Gabrq</a></td>
+<td valign="top"><a href="http://www.informatics.jax.org/javawi2/servlet/WIFetch?page=sequenceDetail&id=NM_020488">NM_020488</a></td>
+<td valign="top">X (A6)</td>
+<td valign="top"><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=gene&amp;cmd=Retrieve&amp;dopt=Graphics&amp;list_uids=55879">GABRQ</a></td>
+<td valign="top"><a href="http://www.ncbi.nlm.nih.gov/entrez/viewer.fcgi?db=Nucleotide&amp;dopt=GenBank&amp;val=8924257">NM_018558</a></td>
+<td valign="top"><a href="http://rgd.mcw.edu/tools/genes/genes_view.cgi?id=68331">Gabrq</a></td>
+<td valign="top"><a href="http://www.ncbi.nlm.nih.gov/entrez/viewer.fcgi?db=Nucleotide&amp;dopt=GenBank&amp;val=39930466">NM_031733</a></td>
+<td valign="top">&nbsp;</td>
+</tr>
+
+<!--17=Gabrr1-->		 
 <tr>
- <TD><a href="<!--#include file='include/wi_url.html'-->searches/accession_report.cgi?id=MGI:95620">Gabrb2</A></TD>
- <TD><a href="<!--#include file='include/gb_url.html'-->U14419">U14419</a></TD>
- <td>11 (syntenic)</TD> 
- <TD><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=gene&cmd=Retrieve&dopt=Graphics&list_uids=2561">GABRB2</a></TD>
- <td><a href="<!--#include file='include/gb_url.html'-->S77554">S77554</a></td> 
- <td valign=top><a href="<!--#include file='include/rgd_url.html'-->2650">Gabrb2</a></TD> 
- <td><a href="<!--#include file='include/gb_url.html'-->X15467">X15467</a></td>
- <TD align=center><a href="<!--#include file='include/wi_url.html'-->searches/homology_report.cgi?id=MGI:95620">yes</a></td>
- <TD>Gabrb-2</TD>
-</TR>
-<!--9=Gabrb3-->
-<tr>
-  <TD valign=top><A href="<!--#include file='include/wi_url.html'-->searches/accession_report.cgi?id=MGI:95621">Gabrb3</A></TD>
- <TD valign=top><a href="<!--#include file='include/gb_url.html'-->U14420">U14420</a></TD>
-  <td valign=top>7 (28.6 cM)</TD>
-  <TD valign=top><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=gene&cmd=Retrieve&dopt=Graphics&list_uids=2562">GABRB3</a></TD>
-  <td valign=top><a href="<!--#include file='include/gb_url.html'-->M82919">M82919</a></td> 
- <td valign=top><a href="<!--#include file='include/rgd_url.html'-->2651">Gabrb3</a></TD> 
-   <td valign=top><a href="<!--#include file='include/gb_url.html'-->X15468">X15468</a></td>
- <TD align=center valign=top><a href="<!--#include file='include/wi_url.html'-->searches/homology_report.cgi?id=MGI:95621">yes</a></td>
-  <TD valign=top>Gabrb-3<br> Cp1</TD
-</TR>
-<!--10=Gabrd-->
-<tr>
-  <TD><A href="<!--#include file='include/wi_url.html'-->searches/accession_report.cgi?id=MGI:95622">Gabrd</A></TD>
- <TD><a href="<!--#include file='include/gb_url.html'-->S42882">S42882</a></TD>
-  <td>4 (syntenic)</TD>
-<TD><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=gene&cmd=Retrieve&dopt=Graphics&list_uids=2563">GABRD</a></TD>
-  <td><a href="<!--#include file='include/gb_url.html'-->AF016917">AF016917</a></td> 
- <td valign=top><a href="<!--#include file='include/rgd_url.html'-->61901">Gabrd</a></TD> 
-  <td><a href="<!--#include file='include/gb_url.html'-->L08496">L08496</a></td>
- <TD align=center><a href="<!--#include file='include/wi_url.html'-->searches/homology_report.cgi?id=MGI:95622">yes</a></td>
- <TD>&nbsp;</TD>
-</TR> 
-<!--11=Gabre-->
-<tr>
- <TD><A href="<!--#include file='include/wi_url.html'-->searches/accession_report.cgi?id=MGI:1330235">Gabre</A></TD>
- <TD><a href="<!--#include file='include/gb_url.html'-->AH009304">AH009304</a></td>
-  <td>X (syntenic)</TD> 
-  <TD><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=gene&cmd=Retrieve&dopt=Graphics&list_uids=2564">GABRE</a></TD>
-  <td><a href="<!--#include file='include/gb_url.html'-->U66661">U66661</a></td> 
- <td valign=top><a href="<!--#include file='include/rgd_url.html'-->68320">Gabre</a></TD> 
-  <td><a href="<!--#include file='include/gb_url.html'-->AF189262">AF189262</a></td>
-  <TD align=center><a href="<!--#include file='include/wi_url.html'-->searches/homology_report.cgi?id=MGI:1330235">yes</a></td>
- <TD>&nbsp;</TD>
-</TR> 
-<!--12=Gabrg1-->
-<tr>
-  <TD align=left valign=top><A href="<!--#include file='include/wi_url.html'-->searches/accession_report.cgi?id=MGI:103156">Gabrg1</A></TD>
-  <TD align=left valign=top><a href="<!--#include file='include/gb_url.html'-->X55272">X55272</a></td>
-  <td align=left valign=top>5 (40.0 cM)</TD>
-  <TD align=left valign=top><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=gene&cmd=Retrieve&dopt=Graphics&list_uids=2565">GABRG1</a></TD>
- <TD>&nbsp;</TD>
- <td valign=top><a href="<!--#include file='include/rgd_url.html'-->621732">Gabrg1</a></TD> 
-  <td align=left valign=top><a href="<!--#include file='include/gb_url.html'-->X57514">X57514</a></td>
-  <TD align=center><a href="<!--#include file='include/wi_url.html'-->searches/homology_report.cgi?id=MGI:103156">yes</a></td>
-  <TD align=left valign=top>GabaA<br>BZ</TD>
-</TR> 
-<!--13=Gabrg2-->
-<tr>
-  <TD valign=top><A href="<!--#include file='include/wi_url.html'-->searches/accession_report.cgi?id=MGI:95623">Gabrg2</A></TD>
-  <TD valign=top><a href="<!--#include file='include/gb_url.html'-->M62374">M62374</a></TD>
-  <td valign=top>11 (19.0 cM)</TD>
- <TD valign=top><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=gene&cmd=Retrieve&dopt=Graphics&list_uids=2566">GABRG2</a></TD>
-  <td valign=top><a href="<!--#include file='include/gb_url.html'-->X15376">X15376</a></td> 
- <td valign=top><a href="<!--#include file='include/rgd_url.html'-->61966">Gabrg2</a></TD> 
-  <td valign=top><a href="<!--#include file='include/gb_url.html'-->L08497">L08497</a></td>
-  <TD align=center><a href="<!--#include file='include/wi_url.html'-->searches/homology_report.cgi?id=MGI:95623">yes</a></td>
-  <TD valign=top>Gabrg-2</TD>
-</TR>
-<!--14=Gabrg3-->
-<tr>
-  <TD><A href="<!--#include file='include/wi_url.html'-->searches/accession_report.cgi?id=MGI:95624">Gabrg3</A></TD>
-  <TD><a href="<!--#include file='include/gb_url.html'-->X59300">X59300</a></TD>
-  <td>7 (28.2 cM)</TD>
-  <TD><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=gene&cmd=Retrieve&dopt=Graphics&list_uids=2567">GABRG3</a></TD>
-  <td><a href="<!--#include file='include/gb_url.html'-->S82769">S82769</a></td> 
- <td valign=top><a href="<!--#include file='include/rgd_url.html'-->621735">Gabrg3</a></TD> 
-  <td><a href="<!--#include file='include/gb_url.html'-->M81142">M81142</a></td>
-  <TD align=center><a href="<!--#include file='include/wi_url.html'-->searches/homology_report.cgi?id=MGI:95624">yes</a></td>
-  <TD>Gabrg-3</TD>
-</TR> 
-<!--15=GABRP-->			
-<tr>
-  <TD><A href="<!--#include file='include/wi_url.html'-->searches/accession_report.cgi?id=MGI:2387597">Gabrp</a></TD>
-  <TD>&nbsp;</TD>
-  <TD>11 (syntenic)</TD>
-  <TD><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=gene&cmd=Retrieve&dopt=Graphics&list_uids=2568">GABRP</a></TD>
-  <td><a href="<!--#include file='include/gb_url.html'-->U95367">U95367</a></td> 
- <td valign=top><a href="<!--#include file='include/rgd_url.html'-->620532">Gabrp</a></TD> 
-  <td><a href="<!--#include file='include/gb_url.html'-->U95368">U95368</a></td> 
-  <TD align=center><a href="<!--#include file='include/wi_url.html'-->searches/homology_report.cgi?id=MGI:2387597">yes</a></td>
-  <TD>&nbsp;</TD>
-</TR> 
-<!--16=Gabrq-->				
-<tr>
-  <TD><A href="<!--#include file='include/wi_url.html'-->searches/accession_report.cgi?id=MGI:1888498">Gabrq</A></TD>
-  <TD><a href="<!--#include file='include/gb_url.html'-->AF189260">AF189260</a></TD>
-  <td>X (A6)</TD>
-  <TD><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=gene&cmd=Retrieve&dopt=Graphics&list_uids=55879">GABRQ</a></TD>
-  <td><a href="<!--#include file='include/gb_url.html'-->AF189259">AF189259</a></td> 
- <td valign=top><a href="<!--#include file='include/rgd_url.html'-->68331">Gabrq</a></TD> 
-  <td><a href="<!--#include file='include/gb_url.html'-->AF189261">AF189261</a></td>
- <TD align=center><a href="<!--#include file='include/wi_url.html'-->searches/homology_report.cgi?id=MGI:1888498">yes</a></td>
- <TD>&nbsp;</TD>
-</TR> 
-<!--17=Gabrr1-->		
-<tr>
-  <TD><A href="<!--#include file='include/wi_url.html'-->searches/accession_report.cgi?id=MGI:95625">Gabrr1</A></TD>
- <TD><a href="<!--#include file='include/gb_url.html'-->AF024620">AF024620</a></TD>
- <td>4 (10.5 cM)</TD>
- <TD><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=gene&cmd=Retrieve&dopt=Graphics&list_uids=2569">GABRR1</a></TD>
-  <td><a href="<!--#include file='include/gb_url.html'-->M62400">M62400</a></td> 
-    <td valign=top><a href="<!--#include file='include/rgd_url.html'-->61900">Gabrr1</a></TD> 
-  <td><a href="<!--#include file='include/gb_url.html'-->S79783">S79783</a></td>
- <TD align=center><a href="<!--#include file='include/wi_url.html'-->searches/homology_report.cgi?id=MGI:95625">yes</a></td>
- <TD>GABA-C</TD>
-</TR> 
+<td valign="top"><a
+href="http://www.informatics.jax.org/javawi2/servlet/WIFetch?page=markerDetail&amp;key=8958">Gabrr1</a></td>
+<td valign="top"><a
+href="http://www.informatics.jax.org/javawi2/servlet/WIFetch?page=sequenceDetail&amp;id=NM_008075">NM_008075</a></td>
+<td valign="top">4 (10.5 cM)</td>
+<td valign="top"><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=gene&amp;cmd=Retrieve&amp;dopt=Graphics&amp;list_uids=2569">GABRR1</a></td>
+<td valign="top"><a
+href="http://www.ncbi.nlm.nih.gov/entrez/viewer.fcgi?db=Nucleotide&amp;dopt=GenBank&amp;val=21614517">NM_002042</a></td>
+<td valign="top"><a href="http://rgd.mcw.edu/tools/genes/genes_view.cgi?id=61900">Gabrr1</a></td>
+<td valign="top"><a
+href="http://www.ncbi.nlm.nih.gov/entrez/viewer.fcgi?db=Nucleotide&amp;dopt=GenBank&amp;val=8393398">NM_017291</a></td>
+<td valign="top">GABA-C</td>
+</tr>
+
 <!--18=Gabrr2-->
 <tr>
- <TD><A href="<!--#include file='include/wi_url.html'-->searches/accession_report.cgi?id=MGI:95626">Gabrr2</A></TD>
- <TD><a href="<!--#include file='include/gb_url.html'-->AF024621">AF024621</a></TD>
- <td>4 (10.5 cM)</TD>
- <TD><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=gene&cmd=Retrieve&dopt=Graphics&list_uids=2570">GABRR2</a></TD>
- <td><a href="<!--#include file='include/gb_url.html'-->M86868">M86868</a></td> 
- <td valign=top><a href="<!--#include file='include/rgd_url.html'-->61902">Gabrr2</a></TD> 
- <td><a href="<!--#include file='include/gb_url.html'-->S79784">S79784</a></td>
- <TD align=center><a href="<!--#include file='include/wi_url.html'-->searches/homology_report.cgi?id=MGI:95626">yes</a></td>
- <TD>&nbsp;</TD>
-</TR> 
-</TABLE>
+<td valign="top"><a href="http://www.informatics.jax.org/javawi2/servlet/WIFetch?page=markerDetail&amp;key=8959">Gabrr2</a></td>
+<td valign="top"><a href="http://www.informatics.jax.org/javawi2/servlet/WIFetch?page=sequenceDetail&amp;id=NM_008076">NM_008076</a></td>
+<td valign="top">4 (10.5 cM)</td>
+<td valign="top"><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=gene&amp;cmd=Retrieve&amp;dopt=Graphics&amp;list_uids=2570">GABRR2</a></td>
+<td valign="top"><a href="http://www.ncbi.nlm.nih.gov/entrez/viewer.fcgi?db=Nucleotide&amp;dopt=GenBank&amp;val=4503870">NM_002043</a></td>
+<td valign="top"><a href="http://rgd.mcw.edu/tools/genes/genes_view.cgi?id=61902">Gabrr2</a></td>
+<td valign="top"><a href="http://www.ncbi.nlm.nih.gov/entrez/viewer.fcgi?db=Nucleotide&amp;dopt=GenBank&amp;val=8393402">NM_017292</a></td>
+<td valign="top">&nbsp;</td>
+</tr>
+</tbody>             
+</table>
 <sup>1</sup>&nbsp;&nbsp;&nbsp;Representative example; in general, this sequence is a long or full-length cDNA sequence.<br>
 <p><b>Family Note:</b>&nbsp; The gamma-aminobutyric acid ionotropic type A (GABA-A) receptors are ligand-gated chloride ion channels that mediate inhibitory synaptic transmission in the vertebrate central nervous system. These receptors are heterogenous pentamers of five types of subunits, alpha through delta and pi.
 

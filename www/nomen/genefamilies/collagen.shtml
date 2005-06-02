@@ -33,10 +33,10 @@
 </TABLE>
 
 
-<table frame=void cols=2 width=100%> 
+<table frame=void cellpadding=4> 
  <tr>
-  <td width="30%"><b>Family Root Symbol:</b></td>
-  <td width="70%">Col#</td>
+  <td valign="top"><b>Family Root Symbol:</b></td>
+  <td valign="top">Col#</td>
  </tr> 
  <tr>
   <td><b>Family Name:</b></td>
@@ -44,17 +44,17 @@
  </tr>
 </table>
 <p>Links to collagen family data:
-<TABLE bgcolor="white" border=1 width="95%" cellpadding=8> 
+<TABLE bgcolor="white" border=1 cellpadding=6> 
 <TR bgcolor="E0E0E0">
-  <TH width="7%">Mouse Symbol</th>
-  <TH width="11%">Mouse Seq. ID <sup>1</sup></th>
-  <TH width="15%">Mouse Chromosomal Location</th>
-  <TH width="11%">Human Ortholog</th>
-  <TH width="11%">Human Seq. ID<sup>1</sup></TH>
-  <TH width="7%">Rat Ortholog</th>
-  <TH width="11%">Rat Seq. ID <sup>1</sup></TH>
-  <TH width="11%">Orthology Details</th>
-  <TH width="9%">Mouse Synonyms</th>
+   <TH valign="bottom"><nobr>Mouse Symbol</th>
+   <TH valign="bottom"><nobr>Mouse Seq. ID <sup>1</sup></th>
+   <TH valign="bottom">Mouse Chromosomal Location</th>
+   <TH valign="bottom">Human Ortholog</th>
+   <TH valign="bottom"><nobr>Human Seq. ID<sup>1</sup></TH>
+   <TH valign="bottom">Rat Ortholog</th>
+   <TH valign="bottom"><nobr>Rat Seq. ID <sup>1</sup></TH>
+   <TH valign="bottom">Orthology Details</th>
+   <TH valign="bottom">Mouse Synonyms</th>
  </TR>
 <!--Col1a1-->
 <TR VALIGN="top">
@@ -181,7 +181,7 @@
 <tr valign="top">
   <TD><A href="<!--#include file='include/wi_url.html'-->searches/accession_report.cgi?id=MGI:88457">Col5a1</A></TD>
   <TD><a href="<!--#include file='include/gb_url.html'-->AB009993">AB009993</a></td>
-  <td><nobr>2 (18.0 cM)(A2-B)</nobr> </TD> 
+  <td><nobr>2 (18.0 cM)&nbsp;(A2-B)</nobr> </TD> 
   <TD><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=gene&cmd=Retrieve&dopt=Graphics&list_uids=1289">COL5A1</a></TD> 
   <td><a href="<!--#include file='include/gb_url.html'-->D90279">D90279</a></td> 
   <td><a href="<!--#include file='include/rgd_url.html'-->70920">Col5a1</a></TD> 
@@ -217,7 +217,7 @@
 <tr valign="top">
 <TD><A href="<!--#include file='include/wi_url.html'-->searches/accession_report.cgi?id=MGI:88459">Col6a1</A></TD>
   <TD><a href="<!--#include file='include/gb_url.html'-->X66405">X66405</a></td>
-  <td><nobr>10 (41.1 cM)(B5-C1)</nobr></TD> 
+  <td><nobr>10 (41.1 cM)&nbsp;(B5-C1)</nobr></TD> 
   <TD><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=gene&cmd=Retrieve&dopt=Graphics&list_uids=1291">COL6A1</a></TD> 
   <td><a href="<!--#include file='include/gb_url.html'-->M20776">M20776</a></td> 
  <td><a href="<!--#include file='include/rgd_url.html'-->2376">Col6a</a></TD> 
@@ -229,7 +229,7 @@
 <tr>
 <TD><A href="<!--#include file='include/wi_url.html'-->searches/accession_report.cgi?id=MGI:88460">Col6a2</A></TD>
   <TD><a href="<!--#include file='include/gb_url.html'-->Z18272">Z18272</a></td>
-  <td><nobr>10 (41.1 cM)(B5-C1)</nobr></TD> 
+  <td><nobr>10 (41.1 cM)&nbsp;(B5-C1)</nobr></TD> 
  <TD><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=gene&cmd=Retrieve&dopt=Graphics&list_uids=1292">COL6A2</a></TD> 
  <td><a href="<!--#include file='include/gb_url.html'-->AY029208">AY029208</a></td> 
   <TD>&nbsp;</TD>
@@ -325,7 +325,7 @@
 <TR>
  <TD><A href="<!--#include file='include/wi_url.html'-->searches/accession_report.cgi?id=MGI:88445">Col10a1</a></TD>
  <TD><a href="<!--#include file='include/gb_url.html'-->X63013">X63013</a></td>
-  <td>10 (22.0 cM) (B1-B3)</TD> 
+  <td>10 (22.0 cM)&nbsp; (B1-B3)</TD> 
   <TD><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=gene&cmd=Retrieve&dopt=Graphics&list_uids=1300">COL10A1</a></TD> 
   <td><a href="<!--#include file='include/gb_url.html'-->X60382">X60382</a></td> 
  <td><a href="<!--#include file='include/rgd_url.html'-->2371">Col10a1</a></TD> 
@@ -432,7 +432,7 @@
 <TR VALIGN="top">
  <TD><A href="<!--#include file='include/wi_url.html'-->searches/accession_report.cgi?id=MGI:88451">Col18a1</A></TD>
  <TD><a href="<!--#include file='include/gb_url.html'-->AK014292">AK014292</a></td>
- <td>10 (41.3 cM)(B5-C1)</TD>
+ <td>10 (41.3 cM)&nbsp;(B5-C1)</TD>
  <TD><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=gene&cmd=Retrieve&dopt=Graphics&list_uids=80781">COL18A1</a></TD> 
  <td><a href="<!--#include file='include/gb_url.html'-->AF018081">AF018081</a></td> 
  <td><a href="<!--#include file='include/rgd_url.html'-->70936">Col18a1</a></TD> 
