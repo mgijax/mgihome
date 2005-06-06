@@ -61,6 +61,9 @@ def main ():
         '../www/include/mgi_logo_small.html')
     stringToFile (webshare_lib.webshareLookup('new'), \
         '../www/include/new.html')
+    stringToFile (webshare_lib.webshareLookup('mgicss'), \
+        '../www/include/stylesheet.html')
+
 #   vocab = SimpleVocab.PhenoSlimVocab()
 #   listToFile (SimpleVocab.getSelectionList (vocab,
 #       url = config.lookup('WI_URL') + 'userdocs/phenoslim.shtml'),
