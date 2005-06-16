@@ -40,38 +40,38 @@
  </tr>
 </table>
 <p>Links to phosphatidylinositol-4-phosphate 5-kinase family data:
-<TABLE bgcolor="white" border=1 cellpadding=6>
+<TABLE bgcolor="white" border=1 cellspacing=10 cellpadding=6>
  <TR bgcolor="E0E0E0">
   <TH valign="bottom">Mouse Symbol</th>
-  <TH valign="bottom">Mouse Seq. ID <sup>1</sup></th>
+  <TH valign="bottom"><nobr>Mouse Seq. ID <sup>1</sup></th>
   <TH valign="bottom">Mouse Chromosomal Location</th>
   <TH valign="bottom">Human Ortholog</th>
-  <TH valign="bottom">Human Seq. ID <sup>1</sup></TH>
+  <TH valign="bottom"><nobr>Human Seq. ID <sup>1</sup></TH>
   <TH valign="bottom">Rat Ortholog</th>
-  <TH valign="bottom">Rat Seq. ID <sup>1</sup></TH>
+  <TH valign="bottom"><nobr>Rat Seq. ID <sup>1</sup></TH>
   <TH valign="bottom">Mouse Synonyms</th>
  </TR>
 <!--1=Pipk1a-->
 <TR>
-  <TD><A href="<!--#include file='include/wi_url.html'-->searches/accession_report.cgi?id=MGI:107930">Pip5k1a</A></TD>
-  <TD><A href="<!--#include file='include/gb_url.html'-->D86176">D86176</a></TD>
+  <TD><A href="http://www.informatics.jax.org/javawi2/servlet/WIFetch?page=markerDetail&key=29265">Pip5k1a</A></TD>
+  <TD><A href="http://www.informatics.jax.org/javawi2/servlet/WIFetch?page=sequenceDetail&id=NM_008846">NM_008846</a></TD>
   <TD>19 (C1)</TD>
   <TD><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=gene&cmd=Retrieve&dopt=Graphics&list_uids=8395">PIP5K1B</a></TD>
-  <td><A href="<!--#include file='include/gb_url.html'-->X92493">X92493</a></td>
- <td>&nbsp;</td>
- <td>&nbsp;</td>
-  <TD>PI4P5K-I[a], Pipk5a</TD>
+  <td><A href="http://www.ncbi.nlm.nih.gov/entrez/viewer.fcgi?db=nucleotide&val=4505816">NM_003558</a></td>
+ <td><A HREF="http://rgd.mcw.edu/tools/genes/genes_view.cgi?id=1310914">Pip5k1a</A></td>
+ <td><A HREF="http://www.ncbi.nlm.nih.gov/entrez/viewer.fcgi?db=nucleotide&val=60678263">NM_001012743</A>&nbsp;</td>
+  <TD>PI4P5K-I[a]<br>Pipk5a<br>STM7</TD>
 </TR>
 <!--2=Pip5k1b-->
 <TR>
-  <TD><A href="<!--#include file='include/wi_url.html'-->searches/accession_report.cgi?id=MGI:107929">Pip5k1b</A></TD>
-  <TD><A href="<!--#include file='include/gb_url.html'-->D86177">D86177</a></TD>
+  <TD><A href="http://www.informatics.jax.org/javawi2/servlet/WIFetch?page=markerDetail&key=29264">Pip5k1b</A></TD>
+  <TD><A href="http://www.informatics.jax.org/javawi2/servlet/WIFetch?page=sequenceDetail&id=NM_008847">NM_008847</a></TD>
   <td>3 (syntenic)</TD>
   <TD><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=gene&cmd=Retrieve&dopt=Graphics&list_uids=8394">PIP5K1A</a></TD>
-  <td><A href="<!--#include file='include/gb_url.html'-->U78575">U78575</a></td>
- <td>&nbsp;</td>
- <td>&nbsp;</td>
-  <td>PI4P5K-I[b], Pipk5b</td>
+  <td><A href="http://www.ncbi.nlm.nih.gov/entrez/viewer.fcgi?db=nucleotide&val=4505814">NM_003557</a></td>
+ <td><A HREF="http://rgd.mcw.edu/tools/genes/genes_view.cgi?id=1306127">Pip5l1b</A></td>
+ <td><A HREF="http://www.ncbi.nlm.nih.gov/entrez/viewer.fcgi?db=nucleotide&val=34858227">XM_34525</A></td>
+  <td>PI4P5K-I[b]<br> Pipk5b</td>
 </TR>
 <!--3=Pip5k1c-->
 <TR>
@@ -84,6 +84,31 @@
  <td>&nbsp;</td>
   <td>&nbsp;</td>
 </TR>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 <!--4=Pip5k2a-->
 <tr>
   <TD><A href="<!--#include file='include/wi_url.html'-->searches/accession_report.cgi?id=MGI:1298206">Pip5k2a</A></TD>
@@ -118,16 +143,26 @@
   <td>&nbsp;</td>
 </TR>
 <!--7=Pip5k3-->
-<tr>
+<TR BGCOLOR="#FF0000">
   <TD><A href="<!--#include file='include/wi_url.html'-->searches/accession_report.cgi?id=MGI:1335106">Pip5k3</A></TD>
   <TD>  <A href="<!--#include file='include/gb_url.html'-->AF102777">AF102777</a></TD>
   <td>1 (C3)</TD>
-  <td>&nbsp;</td>
-  <td>&nbsp;</td>
-  <td>&nbsp;</td>
-  <td>&nbsp;</td>
+  <TD COLSPAN="4">Remove this one? (It is a -3- phosphate, not a -4-)</TD></td>
   <td>Pikfyve</td>
 </TR>
+
+<!--6=Pip5kl1-->
+<TR BGCOLOR="#FF0000">
+  <TD><A href="<!--#include file='include/wi_url.html'-->searches/accession_report.cgi?id=MGI:2152214">Pip5kl1</A></TD>
+  <TD><A href="<!--#include file='include/gb_url.html'-->AB054591">AB054591</a></TD>
+  <td>10 (D3)</TD>
+  <TD><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=gene&cmd=Retrieve&dopt=Graphics&list_uids=79837">PIP5KL1</a></TD>
+  <td><A href="<!--#include file='include/gb_url.html'-->AK025708">AK025708</a></td>
+  <td valign=top><a href="<!--#include file='include/rgd_url.html'-->621711">Pip5kl1</a></TD>
+  <td><a href="<!--#include file='include/gb_url.html'-->AF030558">AF030558</a></td>
+  <td>&nbsp;</td>
+</TR>
+
 </TABLE>
 <sup>1</sup>&nbsp;&nbsp;&nbsp;Representative example; in general, this sequence is a long or full-length cDNA sequence.<br>
 
