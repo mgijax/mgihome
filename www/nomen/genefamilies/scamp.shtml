@@ -41,7 +41,7 @@
 </tr> 
 </table> 
 <p>Links to secretory carrier membrane protein family data:
-<TABLE bgcolor="white" border=1  cellpadding=6> 
+<TABLE bgcolor="white" border=1 cellpadding=6> 
  <TR bgcolor="E0E0E0">
     <TH valign="bottom">Mouse Symbol</th>
     <TH valign="bottom"><nobr>Mouse Seq. ID <sup>1</sup></th>
@@ -50,69 +50,90 @@
     <TH valign="bottom"><nobr>Human Seq. ID <sup>1</sup></TH>
     <TH valign="bottom">Rat Ortholog</th>
     <TH valign="bottom"><nobr>Rat Seq. ID <sup>1</sup></TH>
-    <TH valign="bottom">Orthology Details</th>
     <TH valign="bottom">Mouse Synonyms</th>
  </TR>
-<!--Scamp1--> 
-<TR>
-   <TD><A href="<!--#include file='include/wi_url.html'-->searches/accession_report.cgi?id=MGI:1349480">Scamp1</A></TD> 
-   <TD><a href="<!--#include file='include/gb_url.html'-->AK015706">AK015706</a></TD>
-   <td>13 (D1)</TD> 
-   <td><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=gene&cmd=Retrieve&dopt=Graphics&list_uids=9522">SCAMP1</TD>
-   <td><a href="<!--#include file='include/gb_url.html'-->AF038966">AF038966</a></td> 
- <td valign=top><a href="<!--#include file='include/rgd_url.html'-->3625">Scamp1</a></TD> 
-  <td><a href="<!--#include file='include/gb_url.html'-->L22079">L22079</a></td>
-   <TD align="center"><a href="<!--#include file='include/wi_url.html'-->searches/homology_report.cgi?id=MGI:1349480">yes</a></td>
-   <TD>Scamp37</TD>
-</TR> 
-<!--Scamp2--> 
-<TR> 
-  <TD><a href="<!--#include file='include/wi_url.html'-->searches/accession_report.cgi?id=MGI:1346518">Scamp2</a></TD> 
-  <TD><a href="<!--#include file='include/gb_url.html'-->AF295402">AF295402</a></TD>
-  <td>9 (syntenic)</td> 
-  <td><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=gene&cmd=Retrieve&dopt=Graphics&list_uids=10066">SCAMP2</TD>
-  <td><a href="<!--#include file='include/gb_url.html'-->AF005038">AF005038</a></td> 
- <td valign=top><a href="<!--#include file='include/rgd_url.html'-->68348">Scamp2</a></TD> 
-  <td><a href="<!--#include file='include/gb_url.html'-->AF295405">AF295405</a></td>
-  <TD align="center"><a href="<!--#include file='include/wi_url.html'-->searches/homology_report.cgi?id=MGI:1346518">yes</a></td>
-  <TD>Sc2</TD> 
-</TR>
-<!--Scamp3--> 
-<TR> 
-  <TD><a href="<!--#include file='include/wi_url.html'-->searches/accession_report.cgi?id=MGI:1346346">Scamp3</a></TD> 
-  <TD><a href="<!--#include file='include/gb_url.html'-->AF005036">AF005036</a></TD>
-  <td>3 (F2)</td>
-  <td><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=gene&cmd=Retrieve&dopt=Graphics&list_uids=10067">SCAMP3</TD>
-  <td><a href="<!--#include file='include/gb_url.html'-->AF005039">AF005039</a></td> 
- <td valign=top><a href="<!--#include file='include/rgd_url.html'-->68351">Scamp3</a></TD> 
-  <td><a href="<!--#include file='include/gb_url.html'-->AF295404">AF295404</a></td> 
-<TD align="center"><a href="<!--#include file='include/wi_url.html'-->searches/homology_report.cgi?id=MGI:1346346">yes</a></td>
- <TD>Sc3</TD>
-</TR>
-<!--Scamp4--> 
-<TR> 
-  <TD><a href="<!--#include file='include/wi_url.html'-->searches/accession_report.cgi?id=MGI:1928947">Scamp4</a></TD> 
-  <TD><a href="<!--#include file='include/gb_url.html'-->AF224721">AF224721</a></TD>
-  <td>10 (syntenic)</td>
-  <td>&nbsp;</td>
-  <td>&nbsp;</td>
- <td valign=top><a href="<!--#include file='include/rgd_url.html'-->68354">Scamp4</a></TD> 
-  <td><a href="<!--#include file='include/gb_url.html'-->AF285631">AF285631</a></td>
-  <TD align="center"><a href="<!--#include file='include/wi_url.html'-->searches/homology_report.cgi?id=MGI:1928947">yes</a></td>
-  <TD>Sc4</TD> 
-</TR>
-<!--Scamp5--> 
-<TR> 
-  <TD><a href="<!--#include file='include/wi_url.html'-->searches/accession_report.cgi?id=MGI:1928948">Scamp5</a></td>
-  <TD><a href="<!--#include file='include/gb_url.html'-->AF241833">AF241833</a></TD>
-  <td>9 (syntenic)</td>
-   <td>&nbsp;</td>
-  <td>&nbsp;</td>
- <td valign=top><a href="<!--#include file='include/rgd_url.html'-->68356">Scamp5</a></TD> 
-  <td><a href="<!--#include file='include/gb_url.html'-->AF240784">AF240784</a></td>
-  <TD align="center"><a href="<!--#include file='include/wi_url.html'-->searches/homology_report.cgi?id=MGI:1928948">yes</a></td>
-  <TD>Sc5</TD> 
-</TR>
+<!--Scamp1-->  <tr>
+<TD VALIGN="TOP"><a
+href="http://www.informatics.jax.org/javawi2/servlet/WIFetch?page=markerDetail&amp;key=43832">Scamp1</a></td>
+<TD VALIGN="TOP"><a
+href="http://www.informatics.jax.org/javawi2/servlet/WIFetch?page=sequenceDetail&amp;id=NM_029153">NM_029153</a></td>
+<TD VALIGN="TOP">13 (D1)</td>
+<TD VALIGN="TOP"><a
+href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=gene&amp;cmd=Retrieve&amp;dopt=Graphics&amp;list_uids=9522">SCAMP1</a></td>
+<TD VALIGN="TOP"><a
+href="http://www.ncbi.nlm.nih.gov/entrez/viewer.fcgi?db=Nucleotide&amp;dopt=GenBank&amp;val=33598919">NM_004866</a></td>
+<td valign="top"><a
+href="http://rgd.mcw.edu/tools/genes/genes_view.cgi?id=3625">Scamp1</a></td>
+<TD VALIGN="TOP"><a
+href="http://www.ncbi.nlm.nih.gov/entrez/viewer.fcgi?db=Nucleotide&amp;dopt=GenBank&amp;val=62642744">XM_342174</a></td>
+<TD VALIGN="TOP">4930505M11Rik</td>
+</tr>
+<!--Scamp2-->  <tr>
+<TD VALIGN="TOP"><a
+href="http://www.informatics.jax.org/javawi2/servlet/WIFetch?page=markerDetail&amp;key=43174">Scamp2</a></td>
+<TD VALIGN="TOP"><a
+href="http://www.informatics.jax.org/javawi2/servlet/WIFetch?page=sequenceDetail&amp;id=NM_022813">NM_022813</a></td>
+<TD VALIGN="TOP">9 (syntenic)</td>
+<TD VALIGN="TOP"><a
+href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=gene&amp;cmd=Retrieve&amp;dopt=Graphics&amp;list_uids=10066">SCAMP2</a></td>
+<TD VALIGN="TOP"><a
+href="http://www.ncbi.nlm.nih.gov/entrez/viewer.fcgi?db=Nucleotide&amp;dopt=GenBank&amp;val=16445417">NM_005697</a></td>
+<td valign="top"><a
+href="http://rgd.mcw.edu/tools/genes/genes_view.cgi?id=68348">Scamp2</a></td>
+<TD VALIGN="TOP"><a
+href="http://www.ncbi.nlm.nih.gov/entrez/viewer.fcgi?db=Nucleotide&amp;dopt=GenBank&amp;val=55741767">NM_023955</a></td>
+<TD VALIGN="TOP">Sc2</td>
+</tr>
+<!--Scamp3-->  <tr>
+<TD VALIGN="TOP"><a
+href="http://www.informatics.jax.org/javawi2/servlet/WIFetch?page=markerDetail&amp;key=42918">Scamp3</a></td>
+<TD VALIGN="TOP"><a
+href="http://www.informatics.jax.org/javawi2/servlet/WIFetch?page=sequenceDetail&amp;id=NM_011886">NM_011886</a></td>
+<TD VALIGN="TOP">3 (F2)</td>
+<TD VALIGN="TOP"><a
+href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=gene&amp;cmd=Retrieve&amp;dopt=Graphics&amp;list_uids=10067">SCAMP3</a></td>
+<TD VALIGN="TOP"><a
+href="http://www.ncbi.nlm.nih.gov/entrez/viewer.fcgi?db=Nucleotide&amp;dopt=GenBank&amp;val=16445418">NM_005698</a></td>
+<td valign="top"><a
+href="http://rgd.mcw.edu/tools/genes/genes_view.cgi?id=68351">Scamp3</a></td>
+<TD VALIGN="TOP"><a
+href="http://www.ncbi.nlm.nih.gov/entrez/viewer.fcgi?db=Nucleotide&amp;dopt=GenBank&amp;val=62643773">XM_342279</a></td>
+<TD VALIGN="TOP">Sc3</td>
+</tr>
+<!--Scamp4-->  <tr>
+<TD VALIGN="TOP"><a
+href="http://www.informatics.jax.org/javawi2/servlet/WIFetch?page=markerDetail&amp;key=49373">Scamp4</a></td>
+<TD VALIGN="TOP"><a
+href="http://www.informatics.jax.org/javawi2/servlet/WIFetch?page=sequenceDetail&amp;id=NM_019575">NM_019575</a></td>
+<TD VALIGN="TOP">10 (syntenic)</td>
+<TD VALIGN="TOP">&nbsp;<a
+href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=gene&amp;cmd=Retrieve&amp;dopt=Graphics&amp;list_uids=113178">SCAMP4</a></td>
+<TD VALIGN="TOP">&nbsp;<a
+href="http://www.ncbi.nlm.nih.gov/entrez/viewer.fcgi?db=Nucleotide&amp;dopt=GenBank&amp;val=50593003">NM_079834</a></td>
+<td valign="top"><a
+href="http://rgd.mcw.edu/tools/genes/genes_view.cgi?id=%68354">Scamp4</a></td>
+<TD VALIGN="TOP"><a
+href="http://www.ncbi.nlm.nih.gov/entrez/viewer.fcgi?db=Nucleotide&amp;dopt=GenBank&amp;val=13929017">NM_031725</a></td>
+<TD VALIGN="TOP">A430024H01Rik<br>2410022D05Rik<br>Sc4</td>
+</tr>
+<!--Scamp5-->  <tr>
+<TD VALIGN="TOP"><a
+href="http://www.informatics.jax.org/javawi2/servlet/WIFetch?page=markerDetail&amp;key=49376">Scamp5</a></td>
+<TD VALIGN="TOP"><a
+href="http://www.informatics.jax.org/javawi2/servlet/WIFetch?page=sequenceDetail&amp;id=NM_020270">NM_020270</a></td>
+<TD VALIGN="TOP">9 (syntenic)</td>
+<TD VALIGN="TOP"><a
+href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=gene&amp;cmd=Retrieve&amp;dopt=Graphics&amp;list_uids=192683">SCAMP5</a>&nbsp;</td>
+<TD VALIGN="TOP">&nbsp;<a
+href="http://www.ncbi.nlm.nih.gov/entrez/viewer.fcgi?db=Nucleotide&amp;dopt=GenBank&amp;val=42544128">NM_138967</a></td>
+<td valign="top"><a
+href="http://rgd.mcw.edu/tools/genes/genes_view.cgi?id=68356">Scamp5</a></td>
+<TD VALIGN="TOP"><a
+href="http://www.ncbi.nlm.nih.gov/entrez/viewer.fcgi?db=Nucleotide&amp;dopt=GenBank&amp;val=13929019">NM_031726</a></td>
+<TD VALIGN="TOP">Sc5</td>
+</tr>
+
+</tbody>                                         
 </table>
 <sup>1</sup>&nbsp;&nbsp;&nbsp;Representative example; in general, this sequence is a long or full-length cDNA sequence.<br>
 <p><b>Family Note:</b>&nbsp;None.</p> 
