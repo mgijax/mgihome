@@ -78,6 +78,7 @@ class strainMailer (formMailer.formMailer):
                         if self.parms.has_key (field):
                                 self.parms[field] = string.split (
                                         self.parms[field], '\n')
+
                 return
 
         def doValidations(self):
@@ -95,7 +96,11 @@ class strainMailer (formMailer.formMailer):
 
                 errors = []
 
-                # ensure e-mail address contains a '@'
+		if self.parms["method"] == 'REVISED' and\
+		   (not self.parms.has_key("synonyms") or len(self.parms["synonyms"]) == 0):
+			errors.append( ('synonyms', "If this is a revised strain name, you must list the old strain name in the synoynms section."))
+
+                # ensure e-mail address contains a '@'                
                 if self.parms.has_key ('email'):
                         atPos = string.find (self.parms['email'], '@')
                         if atPos == -1:
