@@ -44,17 +44,16 @@ These are analysis servers that run multiple gene prediction and analysis progra
 <LI><A HREF="http://compbio.ornl.gov/GP3/euk.html">Genome Analysis Pipeline</A> (<A HREF="http://compbio.ornl.gov">ORNL</A>)
 - Predicts exons (GRAIL, GRAIL-EXP), gene structures (GENSCAN), GRAIL feature tools: CpG islands, BAC end hits, polyA, Trna, Simple Repeats, Complex Repeats, homology searches (BLAST).
 <P>
-<LI><A HREF="http://www.softberry.com/berry.phtml?topic=index&group=programs&subgroup=gfind">Gene model construction, splice sites, protein-coding exons</A>  
-<A HREF="http://www.softberry.com/">(Softberry)</a> - Predicts gene structure (FGENESH&#043;, BESTORF, FGENE, FEX, SPL), promoter and transctiption start sites (TSSG, TSSW), polyadenylation site (POLYAH), and other features (RNASPL).
-<P>
-<LI><A HREF="http://gen100.imb-jena.de/rummage/index.html">RUMMAGE</A> (<A HREF="http://genome.imb-jena.de/">The Genome Sequencing Center</A> at the Institute of Molecular Biotechnology in Jena, Germany) - A High-Throughput Sequence Annotation Server.  The following functional and organizational elements have been addressed so far: repetitive elements (RepeatMasker, SST, CENSOR and XNUN), promotors (ProScanII), exons (GRAIL, FEXHB, MZEF, Xpound and GENSCAN), gene structures (GENSCAN, DPS and ExonSampler), 
-tRNA coding (tRNA), CpG islands (LCP and CPG), GC profiling (LCP) and homology and motif searches against sequence data base 
-(BLAST, and FASTA). (This site requires registration.)
-<P>
-<LI><A HREF="http://www.hgmp.mrc.ac.uk/NIX/">NIX</A> (<A HREF="http://www.hgmp.mrc.ac.uk">MRC Rosalind Franklin Centre for Genomics Research (RFCGR)</A>)  - A high-throughput sequence annotation server.  For genomic sequences, the functional and organizational elements addressed include: repetitive elements (RepeatMasker), exons (GRAIL, GeneFinder, GeneMark, FEX, HEXON, FGENE), tRNA coding (tRNAscan), and sequence similarity (BLAST versus DNA and protein sequence databases).
+<LI><A HREF="http://www.softberry.com/berry.phtml?topic=index&group=programs&subgroup=gfind">Gene model construction, splice sites, protein-coding exons</A>  Predicts gene structure (FGENESH+, BESTORF, FGENE, FEX, SPL), promoter and transctiption start sites (TSSG, TSSW), polyadenylation site (POLYAH), and other features (RNASPL).
 
-<P>For transcribed sequences, the functional and organizational elements addressed so far include: repetitive elements  (RepeatMasker), exons (GRAIL), and sequence similarity (BLAST versus DNA sequence databases, and TBLASTX versus protein sequence
-databases). (This site requires registration.)
+<!--<LI><A HREF="http://genome.imb-jena.de/">The Genome Sequencing Center</A> at the Institute of Molecular Biotechnology in Jena, Germany).  
+-->
+<P>
+<!--
+<LI><A HREF="http://www.hgmp.mrc.ac.uk/NIX/">NIX</A> (<A HREF="http://www.hgmp.mrc.ac.uk">MRC Rosalind Franklin Centre for Genomics Research (RFCGR)</A>)  - A high-throughput sequence annotation server.  For genomic sequences, the functional and organizational elements addressed include: repetitive elements (RepeatMasker), exons (GRAIL, GeneFinder, GeneMark, FEX, HEXON, FGENE), tRNA coding (tRNAscan), and sequence similarity (BLAST versus DNA and protein sequence databases).-->
+
+<!--<P>For transcribed sequences, the functional and organizational elements addressed so far include: repetitive elements  (RepeatMasker), exons (GRAIL), and sequence similarity (BLAST versus DNA sequence databases, and TBLASTX versus protein sequence
+databases). (This site requires registration.)-->
 </UL>
 
 <A NAME="pipelines"><H3>Sequence analysis pipeline software</H3></A>
@@ -72,7 +71,7 @@ Developed by Curtis Palm.  Runs GRAIL, FEXA, GENSCAN, MZEF, and AAT (EST and pro
 <P>The following are software applications that display annotated features and analysis results in context with the sequence.
 </P>
 <UL>
-<li>Apollo (<A HREF="http://www.fruitfly.org/annot/apollo">Berkeley Drosophila Genome Project</A> or <A HREF="http://www.ensembl.org/Docs/wiki/html/EnsemblDocs/ApolloProject.html">Ensembl</A>) - Java-based tool developed by BDGP and Ensembl.
+<li>Apollo (<A HREF="http://www.fruitfly.org/annot/apollo">Berkeley Drosophila Genome Project</A> <!--or <A HREF="http://www.ensembl.org/info/data/index.html">Ensembl</A>)--> - Java-based tool developed by BDGP and Ensembl.
 <P><!--
 <LI><A HREF="http://www-sequence.stanford.edu/~curtis/adapt.html">WAV</A> (<A HREF="http://www-sequence.stanford.edu">Stanford DNA Sequence & Techology Center</A>) - Web Annotation Viewer developed by Curtis Palm as part of the Adapt system.-->
 <P>
@@ -101,7 +100,7 @@ Using genomic sequences for homologous loci in two organisms, these methods can 
 <LI><A HREF="http://www.fruitfly.org/seq_tools/genie.html">Genie</A> (<A HREF="
 http://www.soe.ucsc.edu/~dkulp/cgi-bin/genie">UCSC</A> and 
 <A HREF="http://www.jgi.doe.gov/">DOE Joint Genome Institute</A>)
-<LI><A HREF="http://industry.ebi.ac.uk/%7Ethanaraj/MZEF-SPC.html">MZEF</A> (<A HREF="http://rulai.cshl.edu/software/index1.htm">CSHL</A>)
+<LI><!--<A HREF="http://industry.ebi.ac.uk/%7Ethanaraj/MZEF-SPC.html">MZEF</A>--> (<A HREF="http://rulai.cshl.edu/software/index1.htm">CSHL</A>)
 </UL>
 <LI>Comparative Methods
 <UL>
