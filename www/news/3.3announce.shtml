@@ -1,0 +1,82 @@
+<HTML>
+<HEAD>
+<TITLE><!--#include file='include/mgiversion.html'--> MGI Release 3.3 Announcement - September 14, 2005</TITLE>
+<!--#include file="include/stylesheet.html"-->
+
+<META NAME ="keywords" CONTENT="Mouse Genome Informatics, Mouse Genome Database, genetics, MGI, genes, mice, SQL, querying, sequence, sequence searching, sequence queries, database queries, query forms, sequence representation, data translation, controlled vocabulary, sequence attribute, sequence source, complex query, downloaded sequences, FASTA">
+<META NAME="description" CONTENT="This page details the changes in the to MGI 3.2 release at The Jackson Laboratory.">
+<!--Last updated on August 18, 2005-->
+</HEAD>
+<!--#include file="include/bodyStart.html"-->
+<BODY BGCOLOR="#ffffff">
+<TABLE WIDTH="100%" BORDER=0 CELLPADDING=2 CELLSPACING=1>
+ <TR>
+  <TD WIDTH="100%" BGCOLOR="#D0E0F0">
+   <TABLE WIDTH="100%" BORDER=0 CELLPADDING=0 CELLSPACING=0>
+    <TR>
+     <TD WIDTH="20%" VALIGN="center" ALIGN="left">&nbsp;</TD>
+     <TD WIDTH="60%" ALIGN="center" VALIGN="center">
+      <FONT COLOR="#000000" SIZE=5 FACE="Arial,Helvetica">
+      MGI Release 3.3 Announcement - September 14, 2005
+      </FONT>
+     </TD>
+     <TD WIDTH="20%" VALIGN="center" ALIGN="center">&nbsp;</TD>
+    </TR>
+   </TABLE>
+  </TD>
+ </TR>
+</TABLE>
+
+
+<P>Version 3.3 of MGI provides the scientific community with significant new information about potential mouse models of human diseases. The database contains Online Mendelian Inheritance in Man (OMIM) descriptions of human diseases, syndromes, and conditions, and information about genes thought to be associated with the diseases. Based on orthologies between mouse and human genes and data from researchers about mouse phenotypes resembling human diseases and the genotypes of those mice, MGI can establishes relationship between mouse and human disease phenotypes.  The new data are integrated with the rich biological knowledge represented for mouse genes and strains in MGI, allowing exploration of sequence, expression, orthology, and other related data.</P>
+
+<P>The <a href="http://olorin.informatics.jax.org:12310/javawi2/servlet/WIFetch?page=omimVocab&subset=A">Human Disease Vocabulary Browser</a>, <!--where the terms link to all genotypes annotated either to that term or to a more specific term.  For example, the MP term <I>abnormal gastrulation</I> and its more specific terms, <I>abnormal embryo turning</I>, <I>abnormal gastrulation movements</I>, and <I>failure to gastrulate</I>, annotate 83 distinct genotypes to date. A link from the MP browser accesses a table delineating the genotype and gastrulation specific annotations; there are further links to the phenotype detail pages for all phenotypes for a given genotype.-->
+</P>
+<P>The <a href="<!--#include file='include/wi_url.html'-->searches/allele_form.shtml">Phenotypes and Alleles Query Form</a> allows you great flexibility in searching for diseases and genotypes using terms from the Human Disease Vocabulary Browser (a list of disease terms) or by creating your own text phrases. <!-- You also can focus your search on specific mutant allele parameters, such as allele or gene symbols/names, genome location, and phenotypic allele category (spontaneous, chemically induced, transgenic, gene trapped, gene targeted, and so on). &nbsp;  Additional specifications can limit your search to QTL data or to genotypes that are conditionally targeted.  You can perform complex queries, such as, "Show me all the genotypes where there is a gene-trapped allele or targeted knock-in allele on Chromosome 11 annotated to a behavioral phenotype."-->
+</P>
+<P>Searches produce <!--a summary table of results including mutant alleles, chromosomal location, category (spontaneous, chemically induced, transgenic, gene trapped, gene targeted, and so on), observed phenotypic classes, and genotype and strain background on which the phenotypes were observed.  You can view each record in full on the linked detail pages, which also include a description of the molecular mutation, ES cell line used (if relevant), full phenotype details,  relationship to human disease/syndromes, references, and a link to the International Mouse Strain Resource (IMSR) for available mouse strains.-->
+<br>
+GXD is pleased to announce the inclusion of data from two major in situ hybridization studies.
+"	Gray PA; Fu H; Luo P; Zhao Q; Yu J; Ferrari A; Tenzen T; Yuk DI; Tsung EF; Cai Z; Alberta JA; Cheng LP; Liu Y; Stenman JM; Valerious MT; Billings N; Kim HA; Greenberg ME; McMahon AP; Rowitch DH; Stiles CD; Ma Q. Mouse Brain Organization Revealed Through Direct Genome Scale TF Expression Analysis. 2004. Science 306:2255-2257.
+Dr. Paul Gray and colleagues examined the expression of putative transcription factors in the developing mouse nervous system.
+You can view the data set at accession number J:91257.
+It includes:
+"	1332 genes
+"	1505 probes
+"	2766 assays (in situ hybridizations at E10.5, E13.5 and P0 stages)
+
+"	Blackshaw S; Harpavat S; Trimarchi J; Cai L; Huang H; Kuo WP; Weber G; Lee K; Fraioli RE; Cho SH; Yung R; Asch E; Ohno-Machado L; Wong WH; Cepko CL.  Genomic Analysis of Mouse Retinal Development. 2004. PloS Biol 2:E247.
+
+Dr. Seth Blackshaw and colleagues examined the expression of genes in the developing retina.
+
+You can view the data set at accession number J:93300. 
+It includes:
+"	1013 genes
+"	1025 probes
+"	1028 assays (in situ hybridizations at E12.5, E14.5, E16.5, E18.5, P0-1, P2-3, P4-5, P6-7, P8-10 and Adult stages)
+
+
+<hr>
+<!--#include file="include/bodyStop.html"-->
+</body>
+</html>
+<!--
+Warranty Disclaimer and Copyright Notice
+
+ THE JACKSON LABORATORY MAKES NO REPRESENTATION ABOUT THE SUITABILITY OR
+ ACCURACY OF THIS SOFTWARE OR DATA FOR ANY PURPOSE, AND MAKES NO WARRANTIES,
+ EITHER EXPRESS OR IMPLIED, INCLUDING MERCHANTABILITY AND FITNESS FOR A
+ PARTICULAR PURPOSE OR THAT THE USE OF THIS SOFTWARE OR DATA WILL NOT
+ INFRINGE ANY THIRD PARTY PATENTS, COPYRIGHTS, TRADEMARKS, OR OTHER RIGHTS.
+ THE SOFTWARE AND DATA ARE PROVIDED "AS IS".
+
+ This software and data are provided to enhance knowledge and encourage
+ progress in the scientific community and are to be used only for research
+ and educational purposes.  Any reproduction or use for commercial purpose
+ is prohibited without the prior express written permission of the Jackson
+ Laboratory.
+
+Copyright © 1996, 1999, 2002 by The Jackson Laboratory
+All Rights Reserved
+-->
+
