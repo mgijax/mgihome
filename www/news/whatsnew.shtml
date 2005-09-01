@@ -3,6 +3,13 @@
 <HEAD>
 <TITLE><!--#include file='include/mgiversion.html'--> What's New</TITLE> 
 <!--#include file="include/stylesheet.html"-->
+  
+<style type="text/css">
+<!--
+  ul.lj { padding-left: 12px; }
+-->
+</style>
+
 </head>
 <!--#include file="include/bodyStart.html"-->
 <BODY BGCOLOR="#ffffff">
@@ -31,8 +38,10 @@
 <TABLE ALIGN="CENTER" BORDER="0" CELLSPACING="0" CELLPADDING="6" width="85%">
 <TR BGCOLOR="#DFEFFF"><TD ALIGN="left" VALIGN="top"><CENTER>
 
-<h4>August 12, 2005</h4></CENTER>
+<h4>September 14, 2005</h4></CENTER>
 <ul>
+<LI><a href="#sept14_05">MGI 3.3, GXD <i>in situ</i> data, Fantom3 releases: September 14, 2005</a></LI>
+
 <LI><a href="#aug12_05">MGI Build 34 Update: August 12, 2005</a></LI>
 
 <LI>Update: July 28, 2005</LI>
@@ -65,6 +74,18 @@ HREF="index.shtml">Mouse Genome Monthly Newsletters</a>
 
 
 <P><DL>
+
+<dt><a name="sept14_05"><b>September 14, 2005</b></a></dt><BLOCKQUOTE>
+<dd><ul class=lj>
+  <li>MGI Version <A HREF="3.3announce.shtml">3.3</a> features the MGI Human Disease Vocabulary Browser, providing access to OMIM human disease terms for which Mendelian inheritance is suspected or known.</li>
+  <li><A HREF="3.3announce.shtml#gxd_data">GXD</a> adds data from two large-scale <i>in situ</i> hybridization screens.</li>
+  <li>MGI Releases <A HREF="3.3announce.shtml#fantom3">FANTOM3 Data</a>.</li>
+</ul>
+</dd>
+
+
+</BLOCKQUOTE>
+
 <dt><a name="aug12_05"><b>August 12, 2005</b></a></dt><BLOCKQUOTE>
 <dd>The MGI genome coordinates for mouse genes are updated to Build 34. These coordinates come from computational annotations provided by Ensembl and NCBI. MGI's interactive sequence map, 
 Mouse GBrowse, is also updated to Build 34 and now contains tracks indicating mouse genes associated with specific phenotypes. Access to Mouse GBrowse is from the MGI home page (<a href="http://www.informatics.jax.org">www.informatics.jax.org</a>) and from the sequence map section on MGI gene detail pages. </dd>
@@ -73,7 +94,7 @@ Mouse GBrowse, is also updated to Build 34 and now contains tracks indicating mo
 
 <dt><A NAME="jun30_05"></A><B>June 30, 2005</B></dt>
 <BLOCKQUOTE>
-<dd><p>MGI is pleased to announce its <A HREF="3.22announce.shtml">3.22 release</a>. <!--The release consists of performance enhancements, bug fixes, and additional updates on the 
+<dd><p>MGI is pleased to announce its <A HREF="3.22announce.shtml">3.22 release</a>.<!--The release consists of performance enhancements, bug fixes, and additional updates on the 
 <A HREF="../nomen/genefamilies/index.shtml">Gene Family</A> pages.-->
 </BLOCKQUOTE>
 
