@@ -45,9 +45,6 @@ cytogenetic and physical maps, experimental mapping data, as well as
  strain distribution patterns for recombinant inbred strains (RIs) and cross haplotypes.
 Sources for information in the database include the scientific  literature,  DNA  mapping  panel data produced by various researchers, the MIT Whitehead Institute (MIT genetic  and physical mapping data), WashU, and the  IMAGE  consortium. Since it first became available on the web, MGD has continued to  evolve, expanding its data coverage, improving data handling, and providing new data manipulation and display tools.
 
-<P><A NAME="mlc"></A> You can search for phenotype records using the following query forms: Phenotypes and Alleles, Genes and Markers, or Sequences. You also can use these forms to search for mouse models involved in human diseases. Phenotype records in MGD had their origin in the
-Mouse Locus Catalog (MLC), formerly an independent database. <!--You can search the MLC using the full-text searching capability of the Search tool which provides very reliable query  results. An integrated OMIM/MLC query form lets you enter one search string  to  execute  a  query  in  both  MLC  and  On-line  Mendelian Inheritance in Man (OMIM), a database maintained  by  the  National  Center  for Biotechnology Information (NCBI).-->
-
 <P>MGD is closely linked with the
 Gene Expression Literature Index. The Gene Expression Literature Index is a collection  of  references  to  the  scientific literature reporting data on endogenous gene expression during mouse embryonic development. MGD provides links to Gene Expression Literature Index records through genetic marker detail records. The Gene Expression Literature Index provides links to MGD references  and  genetic  marker  records.
 
@@ -65,7 +62,7 @@ Mammalian orthology data <br>
 Sequence data <BR>
 Molecular probes and clones(probes, clones, primers and YACs)<BR>
 Genetic and physical mapping data<BR>
-Human disease data<br>
+Human disease data (OMIM)<br>
 Polymorphic loci  related  to  specified strains<BR>
 Information on inbred strains (M. Festing's listing)<BR>
 References supporting  all  data  in MGD <BR>
@@ -89,16 +86,15 @@ Gene Ontology (GO) terms, MGI  accession IDs and supporting references.
 on alleles will be available and accessible in MGD as time goes on. Links to alleles are provided in gene detail records. In
 addition, there is an <A HREF="<!--#include file='include/wi_url.html'-->searches/allele_form.shtml">Phenotypes and Alleles Query Form</A> for  direct  queries against the allele data  set. (See <A HREF="<!--#include file='include/wi_url.html'-->userdocs/allele_help.shtml#detail">Details</A> for the content of an allele record as displayed in query results.
 
+<h4><A NAME="pheno"></A>Phenotypic Alleles</h4>
+ <P>MGD contains information on mutant alleles, transgenes, QTLs, strain characteristics, phenotype vocuabularies, (human) disease models, and comparative phenotypes. Integrated access to phenotype and disease model data is accessible via <!--semantically consistent search methods,--> three query forms (<a href="../../../wi/searches/marker_form.shtml">Genes and Markers</a>, <a href="www.informatics.jax.org/searches/allele_form.shtml">Phenotypes and Alleles</a>,  and <a href="www.informatics.jax.org/searches/sequence_form.shtml">Mouse Sequences</a>). These forms provide genetic, phenotypic, and computational approaches to displaying phenotypic variation sources (single-gene, genetic mutations, QTLs, strains), as well as data on human disease correlation, and mouse models. The  <a href="http://firien.informatics.jax.org:8080/javawi2/servlet/WIFetch?page=omimVocab&subset=A">Human Disease Vocabulary Browser</a> enables you to browse and search diseases, conditions, and syndromes directly. 
+Phenotypic allele <A HREF="<!--#include file='include/wi_url.html'-->userdocs/allele_summary_report.shtml">summary</A> and <A HREF="<!--#include file='include/wi_url.html'-->userdocs/allele_detail_report.shtml">detail</A> reports provide detailed  information about the content of phenotype records including observed phenotypes in mouse and genetic background. The Human Disease and Mouse Model Detail page lists orthologous mouse and human markers where mutations in one or both species have been associated with phenotypes characteristic of this disease as well as any mouse models.
+
+
 <h4><A NAME="pro"></A>Molecular Probes and Clones</h4>
- <P>MGD contains information on probes,
-clones,
-primers,
-YACs, and
-STSs.
+ <P>MGD contains information on probes, clones, primers, YACs, and STSs.
 Information may include the origin of the probe/clone, sequence,
-vector type,
-hybridizing loci,
-RFLPs, and references. (<EM>See</EM> the Probes Query Form
+vector type, hybridizing loci, RFLPs, and references. (<EM>See</EM> the Probes Query Form
 <A HREF="<!--#include file='include/wi_url.html'-->userdocs/probe_help.shtml#summary">Summary</A> and <A HREF="<!--#include file='include/wi_url.html'-->userdocs/probe_help.shtml#detail">Details</A> for more information about the content of a probe/clone record as it appears in the query results.)
 
 <P>In addition, information on <A NAME="rflp">genetic polymorphisms</A> is extracted from probe/clone records in MGD. The
