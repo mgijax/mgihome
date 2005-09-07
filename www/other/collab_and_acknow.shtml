@@ -22,31 +22,34 @@ Collaborators and Acknowledgements
 <hr>
 <a name="Top"></a>
 <H3><a name="collab"></a>Collaborators</a></H3>
-<A HREF="http://www.ensembl.org/">Ensembl</A></B><br>
+<p>
+<a href="http://www.cbil.upenn.edu/">CBIL/DoTS</a><br>
+<p>
+We provide links from MGI markers to computationally derived transcript assemblies from DoTS, the Database Of Transcribed Sequences, developed at the Computational Biology and Informatics Laboratory</a> (CBIL) at the University of Pennsylvania. (See the <a href="http://www.allgenes.org">AllGenes</a> web site for more information about DoTS). Associations between MGI markers and assemblies are based on shared GenBank sequence accession identifiers. Only associations between MGI genes and TCs/DTs that are supported by non-conflicting evidence are accessible for these resources.The links are be updated after every major change in MGI databases.
+</p>
+<hr>
+<A HREF="http://www.ensembl.org/">Ensembl</A><br>
 <p>We collaborate with the Ensembl Genome Database Project to provide provides links
 between Ensembl mouse gene models and MGI markers. Ensembl is a joint project between the
 <a href="http://www.ebi.ac.uk/">European Bioinformatics Institute/European Molecular Biology Laboratory (EMBL-EBI)</a> and the <a href="http://www.wellcome.ac.uk/">Wellcome Trust</a> <a href="http://www.sanger.ac.uk/">Sanger Institute</a>. Independently, we establish associations to Entrez and SWISS-PROT identifiers for gene records. Whenever the MGI and Ensembl gene records unambiguously share Entrez and/or SWISS-PROT identifiers, we establish an association
 between these records. We provide links from our marker detail page to the <a href="http://www.ensembl.org/Mus_musculus/">Mouse GeneView</a> of the Ensembl Genome Browser.
 We also obtain chromosome map locations for MGI genes associated with Ensembl gene models. 
 
-<hr><p>
-<a href="http://www.cbil.upenn.edu/">CBIL/DoTS</a><br>
-<p>
-We provide links from MGI markers to computationally derived transcript assemblies from DoTS, the Database Of Transcribed Sequences, developed at the Computational Biology and Informatics Laboratory</a> (CBIL) at the University of Pennsylvania. (See the <a href="http://www.allgenes.org">AllGenes</a> web site for more information about DoTS). Associations between MGI markers and assemblies are based on shared GenBank sequence accession identifiers. Only associations between MGI genes and TCs/DTs that are supported by non-conflicting evidence are accessible for these resources.The links are be updated after every major change in MGI databases.
-</p>
+<hr>
+<a href="http://www.gmod.org/">Generic Model Organism Project</a><br>
+<p>We collaborate with the Generic Model Organism Project (GMOD), a joint effort by the model organism system databases WormBase, FlyBase, MGI, SGD, Gramene, Rat Genome Database, EcoCyc, and TAIR to develop reusable components suitable for creating new community databases of biology.</p>
+<hr>
+<a href="http://www.gmod.org/ggb/">GBrowse</a>
+<p>We collaborate with to produce MGI GBrowse, a generic genome browser for manipulating and displaying annotations on genomes. </p>
 
 <hr>
-<A HREF="http://www.tigr.org/tdb/tgi/mgi/">TIGR</A></B>&nbsp;<br>
 
-<p>We provide links from MGI markers to computationally derived transcript assemblies from the TIGR Mouse Gene Index developed at TIGR. Associations between MGI markers and assemblies are based on shared GenBank sequence accession identifiers. Only associations between MGI genes and TCs/DTs that are supported by non-conflicting evidence are accessible for these resources.and is accessible at the TIGR Mouse Gene Index web site. The links are be updated after each build of TIGR's Mouse Gene Index and after every major change in MGI databases.
-</p>
 
-<HR>
-<A HREF="http://genome-www.stanford.edu/GO/">Gene Ontology Consortium</A></B>&nbsp;(GO)<br>
+<A HREF="http://genome-www.stanford.edu/GO/">Gene Ontology Consortium</A>&nbsp;(GO)<br>
 <p>We are part of the Gene Ontology Consortium that also currently includes <A HREF="http://flybase.bio.indiana.edu/">Flybase</A> and <A HREF="http://genome-www.stanford.edu/Saccharomyces/">SGD</A> (Saccharomyces Genome Database).  We are developing extensive, structured vocabularies for molecular function, biological process, cellular component and annotating genes/gene products within each of our species' databases using these vocabularies. These ontologies and annotations will be accessible from our species' database web sites and from a jointly developed web site.</p>
 <HR>
 
-<P><A HREF="http://image.llnl.gov/">IMAGE Consortium</A></B> (Integrated Molecular Analysis of Genomes and their Expression) and
+<P><A HREF="http://image.llnl.gov/">IMAGE Consortium</A> (Integrated Molecular Analysis of Genomes and their Expression) and
 <A HREF="http://genome.wustl.edu/">WashU</A></B> (Washington University)
 <P>We work with the IMAGE consortium to pre-assign MGI accession numbers to IMAGE clones, which are, in turn, sequenced by Washington University.  The IMAGE and MGI accession identifiers travel in pairs and are submitted to <A HREF="http://www.ncbi.nlm.nih.gov/dbEST/index.html">dbEST</A> (database of Expressed Sequence Tags) directly with the sequencing data.  Thus the connection between an EST, the clone it was derived from, and the MGI accession identifier is generated.</p>
 <HR>
@@ -54,21 +57,41 @@ We provide links from MGI markers to computationally derived transcript assembli
 <A HREF="http://www.gene.ucl.ac.uk/nomenclature/">HUGO Human Gene Nomenclature Committee</A>, </B>and <A HREF="http://rgnc.gen.gu.se/">Rat Genome and Nomenclature Committee</A></B>. <br>
 <p>We work closely with the human and rat international nomenclature groups to assign gene symbols wherever feasible, to evaluate gene family nomenclature, and to maintain consistent use of nomenclature for human, mouse and rat species.</p>
 <HR>
-<P><A HREF="http://www.ncbi.nlm.nih.gov/gquery/gquery.fcgi/">Entrez at NCBI</A></B>  (National Center for Biotechnology Information)
+<P><A HREF="http://www.ncbi.nlm.nih.gov/gquery/gquery.fcgi/">NCBI</A>  (National Center for Biotechnology Information)
 <P>Working with Entrez, we provide official nomenclature for mouse genes, our curated links between genes and sequence identifiers in <A HREF="http://www.ncbi.nlm.nih.gov/Genbank/GenbankOverview.html">GenBank</a>, chromosomal, cytogenetic and centimorgan map positions, and MGI accession numbers.  Entrez uses these curated data to develop reference sequences for mouse and notifies us of new GenBank mouse sequences submitted.</p>
+<p>Working with UniGene, we provide  gene-oriented clusters of transcript sequences.</p>
 <HR>
 <P><A HREF="http://genex.hgu.mrc.ac.uk/">Mouse Atlas and 3D Graphical Gene Expression Database</A></B>
 <P>We collaborate with the Edinburgh Mouse Atlas and Gene Expression Database project to develop and extend an anatomical dictionary of mouse development and to build the Mouse Gene Expression Information Resource that will combine the use of controlled vocabularies and image-based methods for the representation and analysis of expression patterns. The standard anatomical terms are, or will be, used throughout our database wherever anatomical data are found (e.g., expression data, clone library information, phenotypic descriptions).</p>
 <HR>
-<P><A HREF="http://www.informatics.jax.org/ccr/searches/index.cgi">Mouse Chromosome Committees</A></B>
-<P>We host the Chromosome Committee Reports on our web site and have developed tools for the Committee Chairs to submit and update reports and files.  The Committees provide MGD with centimorgan positions from their evaluations of all available mapping data for their chromosome.  In addition, their reports present information on mapping methods, mutations,  human gene orthologs, a narrative of new developments, and other files and graphics of interest.</P>
+
+<p><b>Mouse Genome Sequencing Consortium</b></p>
+<p></p>We collaborate with members of the MGSC, a public-private partnership of insitutes involved in sequencing and genomics. The MGSC aims to accelerate, facilitate and coordinate global mouse genomic sequencing efforts. Funding for is provided by the National Institutes of Health, the Wellcome Trust, GlaxoSmithKline, the Merck Genome Research Institute and Affymetrix Inc. Sequencing partners are the Sanger Institute, the Whitehead Institute for Biomedical Research and Washington University School of Medicine.</p>
+<hr>
+
+
+<p><A HREF="http://www.ncbi.nlm.nih.gov/Omim/">OMIM</a> (Online Mendelian Inheritance in Man at NCBI, NIH, Bethesda, Maryland)</p>
+<p>The Online Mendelian Inheritance in Man (OMIM) database is a catalog of human genes and genetic disorders authored and edited by Dr. Victor A. McKusick and colleagues at Johns Hopkins and elsewhere. The database contains textual information, pictures, and reference information. It also contains copious links to NCBI's data resources.</p>
 <HR>
+
+<p>We collaborate with phenotyping/mutagenesis/targeting programs such as the International Mouse Mutagenesis Consortium, the Complex Trait Consortium, the Phenome Proect, the <a href="http://www.igtc.ca/">Gene Trap Consortium</a>, and the Knockout Mouse Project (KOMP) </p>
+<hr>
+<!--removed 9/7/05 per jte: <P><A HREF="http://www.informatics.jax.org/ccr/searches/index.cgi">Mouse Chromosome Committees</A></B>
+<P>We host the Chromosome Committee Reports on our web site and have developed tools for the Committee Chairs to submit and update reports and files.  The Committees provide MGD with centimorgan positions from their evaluations of all available mapping data for their chromosome.  In addition, their reports present information on mapping methods, mutations,  human gene orthologs, a narrative of new developments, and other files and graphics of interest.</P>
+<HR>-->
 <P><a href="http://www.rarf.riken.go.jp/">RIKEN Institute of Physical and Chemical Research</a></b>
 <p>We collaborate with the <a href="http://genome.rtc.riken.go.jp/index.html">Genome Exploration Research Group</a> of the RIKEN Institute in Japan to provide public access to RIKEN cDNAclone information through MGI. These clones were isolated and sequenced at the RIKEN Institute as part of a series of public cDNA clone releases that constitute the Mouse Genome Encyclopedia, a genomics project centered on the production of full-length mouse cDNAs. The RIKEN Institute hosted a meeting for first-pass functional annotation of the first set of 21,076 cDNAs (Functional Annotation of Mouse, FANTOM), attended by an international assembly of mammalian biologists and bioinformaticians. Links are provided to DNA Database of Japan (DDBJ) records and to analysis results and summary annotations from the FANTOM meeting for these RIKEN cDNA clones.</p>
 <HR>
 <P><A HREF="http://www.expasy.org/sprot/">SWISS-PROT</A></B>  (The SWISS-PROT Protein Sequence Data Bank)
 <P>Our curation staff works closely with SWISS-PROT staff to co-curate links between genes and proteins.  We provide nomenclature data and primary gene-to-<A HREF="http://www.ncbi.nlm.nih.gov/Genbank/GenbankOverview.html">GenBank</a> accession id information; we receive gene-to-protein links and expanded gene-to-sequence associations.</p>
 <HR>
+<A HREF="http://www.tigr.org/tdb/tgi/mgi/">TIGR</A></B>&nbsp;<br>
+
+<p>We provide links from MGI markers to computationally derived transcript assemblies from the TIGR Mouse Gene Index developed at TIGR. Associations between MGI markers and assemblies are based on shared GenBank sequence accession identifiers. Only associations between MGI genes and TCs/DTs that are supported by non-conflicting evidence are accessible for these resources.and is accessible at the TIGR Mouse Gene Index web site. The links are be updated after each build of TIGR's Mouse Gene Index and after every major change in MGI databases.
+</p>
+
+<HR>
+
 <h3><A name="acknow">Acknowledgements</A></h3>
 <P>MGI provides links to an increasing number of databases on the WWW and many of these sites provide links to MGI as well.  We wish to acknowledge these valuable scientific information resources.</P>
 <P><a href="http://www.thearkdb.org/">ArkDB</A> (Roslin Institute, Edinburgh, Scotland)
@@ -111,9 +134,6 @@ Genome Projects.</p>
 <HR>-->
 <p><A HREF="http://www.ncbi.nlm.nih.gov/">NCBI</A> (National Center for Biotechnology Information)</p>
 <p>NCBI is a division of the National Library of Medicine (NLM) and is located on the campus of the National Institutes of Health (NIH) in Bethesda, Maryland. NCBI is responsible for building, maintaining, and distributing <a HREF="http://www.ncbi.nlm.nih.gov/Genbank/GenbankOverview.html">GenBank</a>, the NIH genetic sequence database for all known DNA sequences from scientists worldwide; Entrez, a database of information on official nomenclature, aliases, sequence accessions, phenotypes, EC numbers, MIM numbers, Unigene clusters, orthology, and map locations; and PubMed, a bibliographic database.</p>
-<HR>
-<p><A HREF="http://www.ncbi.nlm.nih.gov/Omim/">OMIM</a> (Online Mendelian Inheritance in Man at NCBI, NIH, Bethesda, Maryland)</p>
-<p>The Online Mendelian Inheritance in Man (OMIM) database is a catalog of human genes and genetic disorders authored and edited by Dr. Victor A. McKusick and colleagues at Johns Hopkins and elsewhere. The database contains textual information, pictures, and reference information. It also contains copious links to NCBI's data resources.</p>
 <HR>
 <p><A HREF="http://www.thearkdb.org/browser?species=pig">PiGBASE</a>&nbsp;(Genome database of the pig maintained at The Roslin Institute, Edinburgh, Scotland)(1995)</p>
 <p>A North American node of PiGBASE is maintained at the Iowa State University.</p>
