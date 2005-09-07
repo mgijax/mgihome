@@ -26,19 +26,31 @@
   </TD>
  </TR>
 </TABLE>
+<ul>
+  <li><a href="#33">MGI announces 3.3 release</a> </li>
+  <li><a href="#gxd_data">GXD adds data from two large-scale <i>in situ</i> hybridization screens</a></li>
+  <li><a href="#fantom3">Update to RIKEN clone information</a></li>
+</ul>
 
+<h3><a name="33">MGI announces 3.3 release</a></h3>
+<P>MGI is pleased to announce the release of Version 3.3 of the database. 
+Version 3.3 integrates the data on mouse models of human disease and human disease etiology from OMIM with existing data for mouse genes and strains in MGI thus enhancing the exploration of phenotypes, sequence, expression, orthology, and other related data.
+<p>You can now use MGI query forms (<a href="../../../wi/www/searches/allele_form.shtml">Phenotypes and Alleles</a>,  <a href="../../../wi/www/searches/marker_form.shtml">Genes and Markers</a>, <a href="../../../wi/www/searches/sequence_form.shtml">Mouse Sequence</a>) to search for
+       <ul>
+         <li>existing or potential mouse models of a particular disease</li>
+         <li>all diseases that a particular mouse (genotype plus strain background) can be used to model.</li>
+              </ul>
 
-<P>Version 3.3 of MGI provides the scientific community with significant new information about potential mouse models of human diseases. The database contains Online Mendelian Inheritance in Man (OMIM) descriptions of human diseases, syndromes, and conditions, and information about genes thought to be associated with the diseases. Based on orthologies between mouse and human genes and data from researchers about mouse phenotypes resembling human diseases and the genotypes of those mice, MGI can establishes relationship between mouse and human disease phenotypes.  The new data are integrated with the rich biological knowledge represented for mouse genes and strains in MGI, allowing exploration of sequence, expression, orthology, and other related data.</P>
+       </p>  
+  <p>Version 3.3 also incorporates data on mouse models sought without success, as well as models free from particular confounding diseases or phenotypic traits.</p>
 
-<P>The <a href="http://olorin.informatics.jax.org:12310/javawi2/servlet/WIFetch?page=omimVocab&subset=A">Human Disease Vocabulary Browser</a>, <!--where the terms link to all genotypes annotated either to that term or to a more specific term.  For example, the MP term <I>abnormal gastrulation</I> and its more specific terms, <I>abnormal embryo turning</I>, <I>abnormal gastrulation movements</I>, and <I>failure to gastrulate</I>, annotate 83 distinct genotypes to date. A link from the MP browser accesses a table delineating the genotype and gastrulation specific annotations; there are further links to the phenotype detail pages for all phenotypes for a given genotype.-->
-</P>
-<P>The <a href="<!--#include file='include/wi_url.html'-->searches/allele_form.shtml">Phenotypes and Alleles Query Form</a> allows you great flexibility in searching for diseases and genotypes using terms from the Human Disease Vocabulary Browser (a list of disease terms) or by creating your own text phrases. <!-- You also can focus your search on specific mutant allele parameters, such as allele or gene symbols/names, genome location, and phenotypic allele category (spontaneous, chemically induced, transgenic, gene trapped, gene targeted, and so on). &nbsp;  Additional specifications can limit your search to QTL data or to genotypes that are conditionally targeted.  You can perform complex queries, such as, "Show me all the genotypes where there is a gene-trapped allele or targeted knock-in allele on Chromosome 11 annotated to a behavioral phenotype."-->
-</P>
-<P>Searches produce <!--a summary table of results including mutant alleles, chromosomal location, category (spontaneous, chemically induced, transgenic, gene trapped, gene targeted, and so on), observed phenotypic classes, and genotype and strain background on which the phenotypes were observed.  You can view each record in full on the linked detail pages, which also include a description of the molecular mutation, ES cell line used (if relevant), full phenotype details,  relationship to human disease/syndromes, references, and a link to the International Mouse Strain Resource (IMSR) for available mouse strains.-->
-<br>
-GXD adds data from two large-scale in situ hybridization screens
+<p>The database now includes Online Mendelian Inheritance in Man (OMIM) descriptions of human diseases, syndromes, and conditions. You can use the <a href="http://olorin.informatics.jax.org:12310/javawi2/servlet/WIFetch?page=omimVocab&subset=A">Human Disease Vocabulary Browser</a> to browse the complete OMIM disease vocabulary and to search by disease name, abbreviation, or synonym.  If MGI has data associating a disease with a mouse model, that information appears in the browser and query results.</p>
 
-<h3>GXD adds data from two large-scale <i>in situ</i> hybridization screens</h3>
+<!--
+<P>Searches produce a summary page of phenotypic categories for each genotype of each allele; the information includes observed phenotypes in mouse, affected anatomical systems, similar human diseases, and  allelic composition (genetic background). Detail pages are organized by specific genotype and then by Mammalian Phenotype Ontology terms; the information includes background sensitive annotations and any mouse models of human diseases involving the gene,  models with phenotypic similarity to human diseases associated with the human gene, and models with phenotypic similarity to human diseases not associated with human gene. These are in turn linked to a Human Disease and Mouse Model Detail page where you can find a list of any similar human diseases.-->
+<hr>
+
+<h3><a name="gxd_data"></a>GXD adds data from two large-scale in situ hybridization screens</h3>
 
 <p>Gene Expression Database (GXD) is pleased to announce the inclusion of data from two major in situ hybridization studies.
 </p>
@@ -72,7 +84,7 @@ GXD adds data from two large-scale in situ hybridization screens
 <ul>
   <li>1013 genes</li>
   <li>1025 probes</li>
-  <li>1028 assays (in situ hybridizations at E12.5, E14.5, E16.5, E18.5, P0-1, P2-3, P4-5, P6-7, P8-10 and Adult stages)</li>
+  <li>1028 assays (in situ hybridizations at E12, E14, E16, E18, P0-1, P2-3, P4-5, P6-7, P8-10 and Adult stages)</li>
 </ul>
 </blockquote>
 
@@ -90,6 +102,26 @@ If you are interested in submitting your data to GXD, please contact
 <a href="mailto:GXD@informatics.jax.org">GXD@informatics.jax.org</a> for further information. 
 
 <hr>
+<h3><a name="fantom3">Update to RIKEN clone data</a></h3>
+
+
+<p>The latest update to clone information in the MGI database includes all 102,801 large-insert cDNA clones generated by the RIKEN group in Japan. Details appear in a manuscript published in  <i>Science</i>:
+
+<p><b>
+Carninci et al., <i>The Transcriptional Landscape of the Mammalian Genome</i>. 2005.
+Science 309:1559-1563</b>
+
+</p>
+<p>You can access the RIKEN clone information in MGI  RIKEN or MGI clone identifiers, GenBank/DDBJ/EMBL accession identifiers (for the sequences associated with the clones), gene symbol or name, and MGI gene accession id.  For a tab-delimited report of the RIKEN clone sequences and their current relationships to genes in MGI, see <a href="ftp://ftp.informatics.jax.org/pub/reports/MGI_RIKEN.rpt">ftp://ftp.informa.tics.jax.org/pub/reports/MGI_RIKEN.rpt.</a>
+</p>
+MGI is the community model organism database for the laboratory mouse. 
+<!--The database can be accessed at http://www.informatics.jax.org.-->
+
+
+
+
+</p>
+
 <!--#include file="include/bodyStop.html"-->
 </body>
 </html>
