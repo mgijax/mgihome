@@ -93,6 +93,41 @@ SP=Full text
 #		type = GFP
 #		url = ${GFPURL}
 ####################################################
+#-------------------Acyl-CoA Synthetase Long-Chain ....
+#
+# set the URL for this family
+GFPURL = ${GFPDIR}/acls.shtml
+
+#-------------------Acyl-CoA Synthetase Long-Chain (was Fatty Acid Coenzyme A Ligase)
+#
+# set the URL for this family
+GFPURL = ${GFPDIR}/fatty_acid.shtml
+
+[
+id = MGI:102797      # Acls1
+type = GFP
+url = ${GFPURL}
+]
+[
+id = MGI:1921455     # Acls3
+type = GFP
+url = ${GFPURL}
+]
+[
+id = MGI:1354713     # Acls4
+type = GFP
+url = ${GFPURL}
+]
+[
+id = MGI:1919129     # Acls5
+type = GFP
+url = ${GFPURL}
+]
+[
+id = MGI:894291      # Acls6
+type = GFP
+url = ${GFPURL}
+]
 
 #-------------------A Disintegrin-like and Metalloprotease ....
 #
@@ -134,6 +169,59 @@ id = MGI:1353468   #Adamts8
 type = GFP
 url = ${GFPURL}
 ]
+[
+id = MGI:1916320   #Adamts9
+type = GFP
+url = ${GFPURL}
+]
+[
+id = MGI:2449112   #Adamts10
+type = GFP
+url = ${GFPURL}
+]
+[
+id = MGI:2146046   #Adamts12
+type = GFP
+url = ${GFPURL}
+]
+[
+id = MGI:2685556   #Adamts13
+type = GFP
+url = ${GFPURL}
+]
+[
+id = MGI:2179942   #Adamts14
+type = GFP
+url = ${GFPURL}
+]
+[
+id = MGI:2449569   #Adamts15
+type = GFP
+url = ${GFPURL}
+]
+[
+id = MGI:2429637   #Adamts16
+type = GFP
+url = ${GFPURL}
+]
+[
+id = MGI:2442600   #Adamts18
+type = GFP
+url = ${GFPURL}
+]
+[
+id = MGI:2442875   #Adamts19
+type = GFP
+url = ${GFPURL}
+]
+[
+id = MGI:2660628   #Adamts20
+type = GFP
+url = ${GFPURL}
+]
+
+
+
 
 #------------------- Adenylate Cyclase 
 
@@ -260,12 +348,6 @@ id = MGI:106008      # Anxa5
 type = GFP
 url = ${GFPURL}
 ]
-#[ 
-# per Louise, please remove this one:
-# id = MGI:895066       Anxa5-rs
-# type = GFP
-#url = ${GFPURL}
-#]
 [
 id = MGI:88255       # Anxa6
 type = GFP
@@ -276,12 +358,6 @@ id = MGI:88031       # Anxa7
 type = GFP
 url = ${GFPURL}
 ]
-#[
-# per Louise, remove this one too:
-# id = MGI:88032       Anxa7-ps1
-# type = GFP
-# url = ${GFPURL}
-#]
 [
 id = MGI:1201374     # Anxa8
 type = GFP
@@ -327,6 +403,11 @@ url = ${GFPURL}
 GFPURL = ${GFPDIR}/aquaporin.shtml
 
 [
+id = MGI:96990     # Mip
+type = GFP
+url = ${GFPURL}
+]
+[
 id = MGI:103201      # Aqp1
 type = GFP
 url = ${GFPURL}
@@ -371,9 +452,13 @@ id = MGI:1891066     # Aqp9
 type = GFP
 url = ${GFPURL}
 ]
-
 [
-id = MGI:96990     # Mip
+id = MGI:1913583     # Aqp11
+type = GFP
+url = ${GFPURL}
+]
+[
+id = MGI:2664636    # Aqp12
 type = GFP
 url = ${GFPURL}
 ]
@@ -447,7 +532,7 @@ type = GFP
 url = ${GFPURL}
 ]
 [
-id = MGI:88266       # Capn4
+id = MGI:88266       # Capns1
 type = GFP
 url = ${GFPURL}
 ]
@@ -467,6 +552,16 @@ type = GFP
 url = ${GFPURL}
 ]
 [
+id = MGI:2181366     # Capn8
+type = GFP
+url = ${GFPURL}
+]
+[
+id = MGI:1920897    # Capn9
+type = GFP
+url = ${GFPURL}
+]
+[
 id = MGI:1344392     # Capn10
 type = GFP
 url = ${GFPURL}
@@ -478,6 +573,11 @@ url = ${GFPURL}
 ]
 [
 id = MGI:1891369     # Capn12
+type = GFP
+url = ${GFPURL}
+]
+[
+id = MGI:1916793     # Capns2
 type = GFP
 url = ${GFPURL}
 ]
@@ -570,6 +670,21 @@ url = ${GFPURL}
 ]
 [
 id = MGI:1929209     # Cldn18
+type = GFP
+url = ${GFPURL}
+]
+[
+id = MGI:3033992     # Cldn19
+type = GFP
+url = ${GFPURL}
+]
+[
+id = MGI:1922927     # Cldn22
+type = GFP
+url = ${GFPURL}
+]
+[
+id = MGI:1919158     # Cldn23
 type = GFP
 url = ${GFPURL}
 ]
@@ -745,6 +860,27 @@ id = MGI:1095415     # Col19a1
 type = GFP
 url = ${GFPURL}
 ]
+[
+id = MGI:2653243     # Col23a1
+type = GFP
+url = ${GFPURL}
+]
+[
+id = MGI:1918605    # Col24a1
+type = GFP
+url = ${GFPURL}
+]
+[
+id = MGI:1924268     # Col25a1
+type = GFP
+url = ${GFPURL}
+]
+[
+id = MGI:2672118    # Col27a1
+type = GFP
+url = ${GFPURL}
+]
+
 
 #------------------- Cyclic Nucleotide Phosphodiesterase Superfamily 
 
@@ -767,6 +903,12 @@ id = MGI:108413      # Pde1c
 type = GFP
 url = ${GFPURL}
 ]
+[
+id = MGI:2446107      # Pde2a
+type = GFP
+url = ${GFPURL}
+]
+
 [
 id = MGI:1860764     # Pde3a
 type = GFP
@@ -798,6 +940,12 @@ type = GFP
 url = ${GFPURL}
 ]
 [
+id = MGI:2651499      # Pde5a
+type = GFP
+url = ${GFPURL}
+]
+
+[
 id = MGI:97524       # Pde6a
 type = GFP
 url = ${GFPURL}
@@ -818,10 +966,16 @@ type = GFP
 url = ${GFPURL}
 ]
 [
+id = MGI:1925850       # Pde6h
+type = GFP
+url = ${GFPURL}
+]
+[
 id = MGI:97526       # Pde6g
 type = GFP
 url = ${GFPURL}
 ]
+
 [
 id = MGI:1202402     # Pde7a
 type = GFP
@@ -838,12 +992,23 @@ type = GFP
 url = ${GFPURL}
 ]
 [
+id = MGI:2443999     # Pde8b
+type = GFP
+url = ${GFPURL}
+]
+
+[
 id = MGI:1277179     # Pde9a
 type = GFP
 url = ${GFPURL}
 ]
 [
 id = MGI:1345143     # Pde10a
+type = GFP
+url = ${GFPURL}
+]
+[
+id = MGI:3036251     # Pde11a
 type = GFP
 url = ${GFPURL}
 ]
@@ -901,6 +1066,11 @@ id = MGI:1354159     # E2f6
 type = GFP
 url = ${GFPURL}
 ]
+[
+id = MGI:1289147     # E2f7
+type = GFP
+url = ${GFPURL}
+]
 
 #------------------- EH-domain Containing 
 
@@ -914,42 +1084,22 @@ type = GFP
 url = ${GFPURL}
 ]
 [
+id = MGI:2154274    # Ehd2
+type = GFP
+url = ${GFPURL}
+]
+
+[
 id = MGI:1928900     # Ehd3
 type = GFP
 url = ${GFPURL}
 ]
+[
+id = MGI:1919619   # Ehd4
+type = GFP
+url = ${GFPURL}
+]
 
-#------------------- Fatty Acid Coenzyme A Ligase 
-
-#
-# set the URL for this family
-GFPURL = ${GFPDIR}/fatty_acid.shtml
-
-[
-id = MGI:102797      # Facl2
-type = GFP
-url = ${GFPURL}
-]
-[
-id = MGI:1921455     # Facl3
-type = GFP
-url = ${GFPURL}
-]
-[
-id = MGI:1354713     # Facl4
-type = GFP
-url = ${GFPURL}
-]
-[
-id = MGI:1919129     # Facl5
-type = GFP
-url = ${GFPURL}
-]
-[
-id = MGI:894291      # Facl6
-type = GFP
-url = ${GFPURL}
-]
 
 #------------------- Gamma-Aminobutyric Acid Ionotropic Type A Receptor 
 
@@ -1027,6 +1177,12 @@ id = MGI:95624       # Gabrg3
 type = GFP
 url = ${GFPURL}
 ]
+[
+id = MGI:2387597     # Gabrp
+type = GFP
+url = ${GFPURL}
+]
+
 [
 id = MGI:1888498     # Gabrq
 type = GFP
@@ -1129,6 +1285,16 @@ id = MGI:95823       # Grin2d
 type = GFP
 url = ${GFPURL}
 ]
+[
+id = MGI:1933206       # Grin3a
+type = GFP
+url = ${GFPURL}
+]
+[
+id = MGI:2150393       # Grin3b
+type = GFP
+url = ${GFPURL}
+]
 
 #------------------- Glycine Receptor, Alpha 
 
@@ -1168,6 +1334,12 @@ id = MGI:1194891     # Gpc1
 type = GFP
 url = ${GFPURL}
 ]
+[
+id = MGI:1919201     # Gpc2
+type = GFP
+url = ${GFPURL}
+]
+
 [
 id = MGI:104903      # Gpc3
 type = GFP
@@ -1281,6 +1453,11 @@ url = ${GFPURL}
 GFPURL = ${GFPDIR}/opsin.shtml
 
 [
+id = MGI:98202     # Opn1lw
+type = GFP
+url = ${GFPURL}
+]
+[
 id = MGI:1097692     # Opn1mw
 type = GFP
 url = ${GFPURL}
@@ -1305,6 +1482,12 @@ id = MGI:1353425     # Opn4
 type = GFP
 url = ${GFPURL}
 ]
+[
+id = MGI:2662912     # Opn5
+type = GFP
+url = ${GFPURL}
+]
+
 
 #------------------- Phosphatidylinositol-4-phosphate 5-Kinase 
 
@@ -1339,11 +1522,6 @@ url = ${GFPURL}
 ]
 [
 id = MGI:2152214     # Pip5k2c
-type = GFP
-url = ${GFPURL}
-]
-[
-id = MGI:1335106     # Pip5k3
 type = GFP
 url = ${GFPURL}
 ]
@@ -1497,6 +1675,58 @@ type = GFP
 url = ${GFPURL}
 ]
 
+#------------------- Septin
+
+#
+# set the URL for this family
+GFPURL = ${GFPDIR}/septin.shtml
+
+[
+id = MGI:1858916    # Sept1
+type = GFP
+url = ${GFPURL}
+]
+[
+id = MGI:97298     # Sept2
+type = GFP
+url = ${GFPURL}
+]
+[
+id = MGI:1345148     # Sept3
+type = GFP
+url = ${GFPURL}
+]
+[
+id = MGI: 1270156    # Sept4
+type = GFP
+url = ${GFPURL}
+]
+[
+id = MGI:1195461     # Sept5
+type = GFP
+url = ${GFPURL}
+]
+[
+id = MGI:1888939     # Sept6
+type = GFP
+url = ${GFPURL}
+]
+[
+id = MGI:1335094    # Sept7
+type = GFP
+url = ${GFPURL}
+]
+[
+id = MGI:894310     # Sept8
+type = GFP
+url = ${GFPURL}
+]
+[
+id = MGI:1858222     # Sept9
+type = GFP
+url = ${GFPURL}
+]
+
 #------------------- Synaptotagmin 
 
 #
@@ -1568,6 +1798,16 @@ id = MGI:1933945     # Syt13
 type = GFP
 url = ${GFPURL}
 ]
+[
+id = MGI:2444490     # Syt14
+type = GFP
+url = ${GFPURL}
+]
+[
+id = MGI:2442166     # Syt15
+type = GFP
+url = ${GFPURL}
+]
 
 #------------------- Tripartite Motif 
 
@@ -1631,10 +1871,21 @@ type = GFP
 url = ${GFPURL}
 ]
 [
+id = MGI:1921985    # Trim14
+type = GFP
+url = ${GFPURL}
+]
+[
+id = MGI:1916347    # Trim15
+type = GFP
+url = ${GFPURL}
+]
+[
 id = MGI:2137356     # Trim16
 type = GFP
 url = ${GFPURL}
 ]
+
 [
 id = MGI:1861440     # Trim17
 type = GFP
@@ -1650,6 +1901,12 @@ id = MGI:104662		# Pml
 type = GFP
 url = ${GFPURL}
 ]
+[
+id = MGI:1859396	# Mefv
+type = GFP
+url = ${GFPURL}
+]
+
 [
 id = MGI:106657      # Trim21
 type = GFP
@@ -1696,6 +1953,11 @@ type = GFP
 url = ${GFPURL}
 ]
 [
+id = MGI:2385051    # Trim31
+type = GFP
+url = ${GFPURL}
+]
+[
 id = MGI:1917057     # Trim32
 type = GFP
 url = ${GFPURL}
@@ -1707,6 +1969,121 @@ url = ${GFPURL}
 ]
 [
 id = MGI:2137359     # Trim34
+type = GFP
+url = ${GFPURL}
+]
+[
+id = MGI:1914104    # Trim35
+type = GFP
+url = ${GFPURL}
+]
+[
+id = MGI:106264    # Trim36
+type = GFP
+url = ${GFPURL}
+]
+[
+id = MGI:2153072    # Trim37
+type = GFP
+url = ${GFPURL}
+]
+[
+id = MGI:2684869    # Trim38
+type = GFP
+url = ${GFPURL}
+]
+[
+id = MGI:1890659    # Trim39
+type = GFP
+url = ${GFPURL}
+]
+[
+id = MGI:268488    # Trim40
+type = GFP
+url = ${GFPURL}
+]
+[
+id = MGI:2384814   # Trim41
+type = GFP
+url = ${GFPURL}
+]
+[
+id = MGI:1926161    # Trim42
+type = GFP
+url = ${GFPURL}
+]
+[
+id = MGI:1931835    # Trim44
+type = GFP
+url = ${GFPURL}
+]
+[
+id = MGI:1918187   # Trim45
+type = GFP
+url = ${GFPURL}
+]
+[
+id = MGI:2673000    # Trim46
+type = GFP
+url = ${GFPURL}
+]
+[
+id = MGI:1917374    # Trim47
+type = GFP
+url = ${GFPURL}
+]
+[
+id = MGI:2664992    # Trim50
+type = GFP
+url = ${GFPURL}
+]
+[
+id = MGI:1889623    # Trim54
+type = GFP
+url = ${GFPURL}
+]
+[
+id = MGI:2685298    # Trim56
+type = GFP
+url = ${GFPURL}
+]
+[
+id = MGI:1914199    # Trim59
+type = GFP
+url = ${GFPURL}
+]
+[
+id = MGI:2387430   # Trim60
+type = GFP
+url = ${GFPURL}
+]
+[
+id = MGI:2387432    # Trim61
+type = GFP
+url = ${GFPURL}
+]
+[
+id = MGI:1914775    # Trim62
+type = GFP
+url = ${GFPURL}
+]
+[
+id = MGI:2447992    # Trim63
+type = GFP
+url = ${GFPURL}
+]
+[
+id = MGI:2442815    # Trim65
+type = GFP
+url = ${GFPURL}
+]
+[
+id = MGI:2152406    # Trim66
+type = GFP
+url = ${GFPURL}
+]
+[
+id = MGI:2142077    # Trim68
 type = GFP
 url = ${GFPURL}
 ]
