@@ -63,6 +63,7 @@ Sequence data <BR>
 Molecular probes and clones(probes, clones, primers and YACs)<BR>
 Genetic and physical mapping data<BR>
 Human disease data (OMIM)<br>
+SNPs and other sequence polymorphisms (from dbSNP)
 Polymorphic loci  related  to  specified strains<BR>
 Information on inbred strains (M. Festing's listing)<BR>
 References supporting  all  data  in MGD <BR>
@@ -100,9 +101,9 @@ Information may include the origin of the probe/clone, sequence,
 vector type, hybridizing loci, RFLPs, and references. (<EM>See</EM> the Probes Query Form
 <A HREF="<!--#include file='include/wi_url.html'-->userdocs/probe_help.shtml#summary">Summary</A> and <A HREF="<!--#include file='include/wi_url.html'-->userdocs/probe_help.shtml#detail">Details</A> for more information about the content of a probe/clone record as it appears in the query results.)
 
-<P>In addition, information on <A NAME="rflp">genetic polymorphisms</A> is extracted from probe/clone records in MGD. The
-Polymorphisms Query Form enables you to search directly  for such information and display it. (See
+<P>Information on <A NAME="rflp">genetic polymorphisms</A> is extracted from probe/clone records in MGD. The Polymorphisms Query Form enables you to search directly  for such information and display it. (See
 <A HREF="<!--#include file='include/wi_url.html'-->userdocs/polymorphism_help.shtml#summary">Summary</a> and <A HREF="<!--#include file='include/wi_url.html'-->userdocs/polymorphism_help.shtml#detail">Details</A> for more information.)
+<p>The <a href="http://boromir.informatics.jax.org:8080/javawi2/servlet/WIFetch?page=snpQF">Mouse SNP Query Form</a> lets you search for RefSNPs by strains, strain comparisons, RefSNP attributes, map position, marker range, or associated genes.</p>
 
 <h4><A NAME="hom">Mammalian Orthology</A></h4>
 MGD contains orthology information for mouse, human and 15 other mammalian organisms. Most of the information for orthologies is
@@ -196,8 +197,8 @@ primers and STSs are mapped against a mouse YAC library to build a contig map of
 MGD  contains  references  for all data in the  database.  As of June 2004,  there were nearly 90,000 references. MGD reference format is similar to that used by  PubMed.  Data  for the full MGD reference are extracted from PubMed when possible. References are first entered into MGD in an abbreviated format; these  records  are  updated when the PubMed records become available. If the  journal  is  not indexed by PubMed, our curators enter the full reference into MGD manually.  (See  the References Query Form
 <a href="<!--#include file='include/wi_url.html'-->userdocs/reference_help.shtml#detail">Detail</A> for more information about the content of reference records.)
 
-<P><EM><B>Chromosome Committee Reports</B></EM> <BR> The  <A  HREF="http://www.informatics.jax.org/ccr/">Chromosome Committee
-Reports</A> were published annually (until 2000) on the MGI web site. The  reports provide  a consensus view on linkage information for each chromosome.  These reports were also the source for cM values for markers stored in MGD. <P>
+<!--<P><EM><B>Chromosome Committee Reports</B></EM> <BR> The  <A  HREF="http://www.informatics.jax.org/ccr/">Chromosome Committee
+Reports</A> were published annually (until 2000) on the MGI web site. The  reports provide  a consensus view on linkage information for each chromosome.  These reports were also the source for cM values for markers stored in MGD. --><P>
 
 <HR>
 <!--#include file="include/footer.html"-->
