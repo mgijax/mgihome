@@ -30,7 +30,7 @@
 <h3><a name="34">MGI 3.4 release</a></h3>
 <P>MGI is pleased to announce Version 3.4 of the database. 
 <ul>
-  <li>This release incorporates SNPs data from dbSNP at NCBI to include over <font size="+1" color="#FF0000">n,nnn,nnn: need number?</font> SNPs for <font size="+1" color="#FF0000">nnn:  need number?</font> strains of mice mapped to Build <font size="+1" color="#FF0000">33: which build?</font> of the mouse genome sequence.   The <a href="<!--#include file='include/wi_url.html'-->searches/snp_form.shtml">Mouse RefSNPs Query Form</A> lets you search for RefSNPs by strains, strain comparisons, RefSNP attributes, map position, marker range, or associated genes. </p>
+  <li>This release incorporates SNPs data from dbSNP at NCBI to include over <font size="+1" color="#FF0000">n,nnn,nnn: need number?</font> SNPs for <font size="+1" color="#FF0000">nnn:  need number?</font> strains of mice mapped to Build <font size="+1" color="#FF0000">33: which build?</font> of the mouse genome sequence.   The <a href="http://boromir.informatics.jax.org:8080/javawi2/servlet/WIFetch?page=snpQF">Mouse SNP Query Form</A> lets you search for RefSNPs by strains, strain comparisons, RefSNP attributes, map position, marker range, or associated genes. </p>
 <p>You can perform a query such as "Show me all refSNPs on Chromosome 1 between D1Mit30 and DMit37 that are different between  C57BL/6J and DBA/2 mice."  <font size="+1" color="#FF0000">Is there an example you prefer?</font> You can view your results in web format or save them as tab-delimited files.
 </p>
   <li> The release also incorporates UniProt PIRSF protein classifications into a <a href="http://olorin.informatics.jax.org:12310/javawi2/servlet/WIFetch?page=pirsfVocab&subset=A
