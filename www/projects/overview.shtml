@@ -197,6 +197,16 @@ primers and STSs are mapped against a mouse YAC library to build a contig map of
 MGD  contains  references  for all data in the  database.  As of June 2004,  there were nearly 90,000 references. MGD reference format is similar to that used by  PubMed.  Data  for the full MGD reference are extracted from PubMed when possible. References are first entered into MGD in an abbreviated format; these  records  are  updated when the PubMed records become available. If the  journal  is  not indexed by PubMed, our curators enter the full reference into MGD manually.  (See  the References Query Form
 <a href="<!--#include file='include/wi_url.html'-->userdocs/reference_help.shtml#detail">Detail</A> for more information about the content of reference records.)
 
+<h3><A NAME="vocabularies"></a>Vocabularies</h3>
+<p>MGI Vocabulary browsers provide the access to restricted set of defined terms representing complex information. Some controlled vocabularies (such as the Human Disease Vocabulary Browser), have a flat structure:  terms are organized alphanumerically. Other vocabularies (known as <i>DAGs</i> or <i>directed acyclic graphs</i>), such as the GO Browser, have a tree (or hierarchical) structure: terms are organized according to their relationship to one another. The following MGI browsers let users search or browse for:
+  <li><a href="<!--#include file='include/wi_url.html'-->searches/GO_form.shtml">Gene Ontology (GO) Browser</a> (GO term details and relationships; includes links to genes associated with term or any sub terms)</li>
+  <li><a href="http://www.informatics.jax.org/searches/anatdict_form.shtml">Mouse Anatomical Dictionary Browser</a> (anatomical structures; includes links to associated expression results)</li>
+  <li><a href="http://www.informatics.jax.org/javawi2/servlet/WIFetch?page=omimVocab&subset=A">Human Disease Vocabulary Browser</a> (human disease terms; includes links to detail pages with genotypes annotated with each term plus links to Online Mendelian Inheritance in Man (OMIM) web pages)</li>
+  <li><a href="http://www.informatics.jax.org/searches/MP_form.shtml">Mammalian Phenotype Browser</a> (mammalian phenotype terms; view term details and relationships among terms; includes links to genotypes annotated with each term or any sub terms)</li>
+  <li><a href="http://www.informatics.jax.org:12310/javawi2/servlet/WIFetch?page=pirsfVocab&subset=A">Protein Superfamily Browser</a> (PIRSF superfamilues and all mapped genes for mouse, human, and rat).</a></li>
+  
+</ul>
+
 <!--<P><EM><B>Chromosome Committee Reports</B></EM> <BR> The  <A  HREF="http://www.informatics.jax.org/ccr/">Chromosome Committee
 Reports</A> were published annually (until 2000) on the MGI web site. The  reports provide  a consensus view on linkage information for each chromosome.  These reports were also the source for cM values for markers stored in MGD. --><P>
 
