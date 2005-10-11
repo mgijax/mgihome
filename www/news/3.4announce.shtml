@@ -29,19 +29,30 @@
 
 <h3><a name="34">MGI 3.4 release</a></h3>
 <P>MGI is pleased to announce Version 3.4 of the database. 
-
-  <p>This release incorporates SNPs data from dbSNP at NCBI to include over <font size="+1" color="#FF0000">n,nnn,nnn: need number?</font> SNPs for <font size="+1" color="#FF0000">nnn:  need number?</font> strains of mice mapped to Build <font size="+1" color="#FF0000">33: which build?</font> of the mouse genome sequence.  
+<h4>Mouse SNP Query Form</h4>
+  <p>This release incorporates SNPs data from dbSNP at NCBI to include over [500,000? 1,500,000?] SNPs for [40? 50?] strains of mice mapped to Build 34?? of the mouse genome sequence.   You can:
 <ul>
-  <li> The <a href="http://boromir.informatics.jax.org:8080/javawi2/servlet/WIFetch?page=snpQF">Mouse SNP Query Form</A> lets you search for dbSNP for RefSNPs by strains, strain comparisons, RefSNP attributes, map position, marker range, or associated genes. 
-  <li>Query results include a summary of each returned RefSNP, including consensus strain strain allele calls derived from SNP assays. </li>
-  <li>You can choose a sort order for your strains and you can replace strain allele calls with <i>Same</i> or <i>Different</i> relative to a reference strain. </li>
-  <li>You can search for RefSNPs within specified distances from an entered gene and use the tab-delimited option to output to a spreadsheet, convenient for graphical displays of SNP query results and for visualizing presumptive haplotype blocks. </li>
-<li>You can perform a query such as "Show me all refSNPs on Chromosome 1 between D1Mit30 and DMit37 that are different between  C57BL/6J and DBA/2 mice." </li>
+  <li>use the new  <a href="http://boromir.informatics.jax.org:8080/javawi2/servlet/WIFetch?page=snpQF">Mouse SNP Query Form</A> to search dbSNP for refSNPs by strains, strain comparisons, SNP attributes (variation type, functional class, accession ID), map position, marker range, or by association to MGI genes and genetic markers.</li>
+  <li>search for RefSNPs within specified distances from a gene of interest.</li>
 </ul>
+<p>Query results include a summary of each returned RefSNP, including consensus strain strain allele calls derived from SNP assays. You can: <ul>
+ <li>choose an output sort order for your strains.
+<li>elect to see strain allele calls marked as <i>Same</i> or <i>Different</i> relative to a reference strain. </li>
+  <li>use a spreadsheet compatible tab-limited option, convenient for graphical displays of SNP query results and for visualizing presumptive haplotype blocks. </li>
+</ul>
+<p>You can perform a query such as "Show me all refSNPs on Chromosome 1 between D1Mit30 and DMit37 that are different between  C57BL/6J and DBA/2 mice." </p>
+
 <!--<p>The Mouse RefSNPs Detail page provides comprehensive information about each RefSNP including the reference flanking sequence, assays that comprise the SNP, gene/marker associations with their corresponding function class annotations, and links to popular gene browsers including MGI Mouse Browse, with MGI-curated phenotype and allele tracks in addition to transcript and gene model tracks.</p>-->
+<h4>Protein Superfamily Vocabulary Browser</h4>
 
   <p> The release also incorporates UniProt PIRSF protein classifications into a <a href="http://olorin.informatics.jax.org:12310/javawi2/servlet/WIFetch?page=pirsfVocab&subset=A
-">Protein Superfamily Vocabulary Browser</a> for locating links between MGI mouse genes and the protein classes. You can enter, for example, <i>cadherin</i> in the browser search box and click Search. The resulting MGI SuperFamily Protein Detail page lists all mouse superfamily members matching your query as well as any human and rat orthologs derived from MGI-curated mammalian orthology data. If sequences are available, the Detail page provides options for downloading in FASTA format or forwarding to MouseBLAST. 
+">Protein Superfamily Vocabulary Browser</a> for locating links between MGI mouse genes and the protein classes. 
+<ul>
+  <li>You can enter, for example, <i>cadherin</i> in the browser search box and click Search.</li>
+  <li>The resulting MGI SuperFamily Protein Detail page lists all mouse superfamily members matching your query as well as any human and rat orthologs derived from MGI-curated mammalian orthology data. </li>
+  <li>The Detail page also provides options for downloading any available sequences in FASTA format or forwarding them to MouseBLAST. </li>
+ 
+</ul>
 
 <hr>
 
