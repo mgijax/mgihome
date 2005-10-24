@@ -73,6 +73,7 @@ References supporting  all  data  in MGD <BR>
 
 <P>MGD  provides links  to  relevant  information  in   external databases wherever possible.  Through markers, MGD links to EC, DoTS, UniGene, ENSEMBL, TIGR, Entrez, InterPro, and PDB. Through orthologies,  MGD links  to
 Entrez, GDB, PigBase, SheepBase, BovMap and RATMAP. Through molecular probes and clones, MGD links to GenBank, EMBL, and DDBJ. Through references, MGD links to PubMed. Through sequences, MGI links to GenBank, RefSeq, SWISS-PROT, TrEMBL, and the TIGR, DoTS, and NIA mouse gene indices. Through Phenotypes, MGI links to the On-line  Mendelian Inheritance in Man (OMIM), for human disease data.
+Through SNPs, MGI links to dbSNP.
 
 <h4><A NAME="mkr">Genes and Markers</A></h4>
 MGD contains information on mouse genes, DNA segments,
@@ -91,7 +92,7 @@ addition, there is an <A HREF="<!--#include file='include/wi_url.html'-->searche
 <h4><A NAME="pheno"></A>Phenotypic Alleles</h4>
  <P>MGD contains information on mutant alleles, transgenes, QTLs, strain characteristics, phenotype vocuabularies, (human) disease models, and comparative phenotypes. Integrated access to phenotype and disease model data is accessible via <!--semantically consistent search methods,--> three query forms (<A HREF="<!--#include file='include/wi_url.html'-->searches/marker_form.shtml">Genes and Markers</a>, 
 <A HREF="<!--#include file='include/wi_url.html'-->searches/allele_form.shtml">Phenotypes and Alleles</a>,  and 
-<A HREF="<!--#include file='include/wi_url.html'-->searches/sequence_form.shtml">Mouse Sequences</a>). These forms provide genetic, phenotypic, and computational approaches to displaying phenotypic variation sources (single-gene, genetic mutations, QTLs, strains), as well as data on human disease correlation, and mouse models. The  <a href="http://firien.informatics.jax.org:8080/javawi2/servlet/WIFetch?page=omimVocab&subset=A">Human Disease Vocabulary Browser</a> enables you to browse and search diseases, conditions, and syndromes directly. 
+<A HREF="<!--#include file='include/wi_url.html'-->searches/sequence_form.shtml">Mouse Sequences</a>). These forms provide genetic, phenotypic, and computational approaches to displaying phenotypic variation sources (single-gene, genetic mutations, QTLs, strains), as well as data on human disease correlation, and mouse models. The  <a href="http://www.informatics.jax.org/javawi2/servlet/WIFetch?page=omimVocab&subset=A">Human Disease Vocabulary Browser</a> enables you to browse and search diseases, conditions, and syndromes directly. 
 Phenotypic allele <A HREF="<!--#include file='include/wi_url.html'-->userdocs/allele_summary_report.shtml">summary</A> and <A HREF="<!--#include file='include/wi_url.html'-->userdocs/allele_detail_report.shtml">detail</A> reports provide detailed  information about the content of phenotype records including observed phenotypes in mouse and genetic background. The Human Disease and Mouse Model Detail page lists orthologous mouse and human markers where mutations in one or both species have been associated with phenotypes characteristic of this disease as well as any mouse models.
 
 
@@ -103,7 +104,7 @@ vector type, hybridizing loci, RFLPs, and references. (<EM>See</EM> the Probes Q
 
 <P>Information on <A NAME="rflp">genetic polymorphisms</A> is extracted from probe/clone records in MGD. The Polymorphisms Query Form enables you to search directly  for such information and display it. (See
 <A HREF="<!--#include file='include/wi_url.html'-->userdocs/polymorphism_help.shtml#summary">Summary</a> and <A HREF="<!--#include file='include/wi_url.html'-->userdocs/polymorphism_help.shtml#detail">Details</A> for more information.)
-<p>The <a href="http://boromir.informatics.jax.org:8080/javawi2/servlet/WIFetch?page=snpQF">Mouse SNP Query Form</a> lets you search for RefSNPs by strains, strain comparisons, RefSNP attributes, map position, marker range, or associated genes.</p>
+<p>The <a href="http://www.informatics.jax.org/javawi2/servlet/WIFetch?page=snpQF">Mouse SNP Query Form</a> lets you search for RefSNPs by strains, strain comparisons, RefSNP attributes, map position, marker range, or associated genes.</p>
 
 <h4><A NAME="hom">Mammalian Orthology</A></h4>
 MGD contains orthology information for mouse, human and 15 other mammalian organisms. Most of the information for orthologies is
@@ -134,7 +135,8 @@ and the genes the sequence have been associated to. Because of the curated assoc
 (GO annotations and InterPro domains), expression (tissue and developmental
 stage), phenotypes (including human disease) of mutant alleles. Source information about the clones that the sequences are derived from, such as strain, tissue, or library, is carefully translated into controlled vocabularies.  This adds enormous power to sequence queries, since authors often use multiple terms to specify a strain or tissue.  </P>
 
-
+<h4>SNP Data</h4>
+<p>MGI provides comprehensive information about reference SNPs including the reference flanking sequence, assays that comprise the SNP, gene/marker associations with their corresponding function class annotations, and links to popular gene browsers including MGI Mouse GBrowse and its transcript, gene model, and MGI-curated phenotype and allele tracks.</p>
 
 <h4><A NAME="map">Mapping Data</A></h4>
  MGD contains genetic mapping and linkage data, including haplotype data for
@@ -200,10 +202,10 @@ MGD  contains  references  for all data in the  database.  As of June 2004,  the
 <h3><A NAME="vocabularies"></a>Vocabularies</h3>
 <p>MGI Vocabulary browsers provide access to restricted sets of defined terms representing complex information. Some controlled vocabularies (such as the Human Disease Vocabulary Browser), have a flat structure:  terms are organized alphanumerically. Other vocabularies (known as <i>DAGs</i> or <i>directed acyclic graphs</i>), such as the GO Browser, have a tree (or hierarchical) structure: terms are organized primarily by their relationship with other terms. The following MGI browsers let users search or browse for:
   <li><a href="<!--#include file='include/wi_url.html'-->searches/GO_form.shtml">Gene Ontology (GO) Browser</a> (GO term details and relationships; includes links to genes associated with term or any sub terms)</li>
-  <li><a href="http://www.informatics.jax.org/searches/anatdict_form.shtml">Mouse Anatomical Dictionary Browser</a> (anatomical structures; includes links to associated expression results)</li>
-  <li><a href="http://www.informatics.jax.org/javawi2/servlet/WIFetch?page=omimVocab&subset=A">Human Disease Vocabulary Browser</a> (human disease terms; includes links to detail pages with genotypes annotated with each term plus links to Online Mendelian Inheritance in Man (OMIM) web pages)</li>
-  <li><a href="http://www.informatics.jax.org/searches/MP_form.shtml">Mammalian Phenotype Browser</a> (mammalian phenotype terms; view term details and relationships among terms; includes links to genotypes annotated with each term or any sub terms)</li>
-  <li><a href="http://www.informatics.jax.org:12310/javawi2/servlet/WIFetch?page=pirsfVocab&subset=A">Protein Superfamily Browser</a> (PIRSF superfamilues and all mapped genes for mouse, human, and rat).</a></li>
+  <li><a href="<!--#include file='include/wi_url.html'-->searches/anatdict_form.shtml">Mouse Anatomical Dictionary Browser</a> (anatomical structures; includes links to associated expression results)</li>
+  <li><a href="<!--#include file='include/java_url.html'-->WIFetch?page=omimVocab&subset=A">Human Disease Vocabulary Browser</a> (human disease terms; includes links to detail pages with genotypes annotated with each term plus links to Online Mendelian Inheritance in Man (OMIM) web pages)</li>
+  <li><a href="<!--#include file='include/wi_url.html'-->searches/MP_form.shtml">Mammalian Phenotype Browser</a> (mammalian phenotype terms; view term details and relationships among terms; includes links to genotypes annotated with each term or any sub terms)</li>
+  <li><a href="<!--#include file='include/java_url.html'-->WIFetch?page=pirsfVocab&subset=A">Protein Superfamily Browser</a> (PIRSF superfamilies and all mapped genes for mouse, human, and rat).</a></li>
   
 </ul>
 
