@@ -104,7 +104,6 @@ vector type, hybridizing loci, RFLPs, and references. (<EM>See</EM> the Probes Q
 
 <P>Information on <A NAME="rflp">genetic polymorphisms</A> is extracted from probe/clone records in MGD. The Polymorphisms Query Form enables you to search directly  for such information and display it. (See
 <A HREF="<!--#include file='include/wi_url.html'-->userdocs/polymorphism_help.shtml#summary">Summary</a> and <A HREF="<!--#include file='include/wi_url.html'-->userdocs/polymorphism_help.shtml#detail">Details</A> for more information.)
-<p>The <a href="http://www.informatics.jax.org/javawi2/servlet/WIFetch?page=snpQF">Mouse SNP Query Form</a> lets you search for RefSNPs by strains, strain comparisons, RefSNP attributes, map position, marker range, or associated genes.</p>
 
 <h4><A NAME="hom">Mammalian Orthology</A></h4>
 MGD contains orthology information for mouse, human and 15 other mammalian organisms. Most of the information for orthologies is
@@ -114,7 +113,8 @@ extracted from the published scientific literature. In general, these papers exp
 <P>An orthology record shows the symbol, organism, chromosome, cM position, cytogenetic band, and accession ID for each gene in the set of orthologies. In addition, links to
 other mammalian databases are provided where possible. MGD orthology records may link to GDB, BovMap, PiGBASE, RATMAP, RGD, SheepBase, ArkDB.
 
-<P> Every orthology assertion is supported by one or more references.  The display of an orthology reference includes the J number of the reference, a short format citation, gene symbol, and organism. (<EM>See</EM> <A HREF="<!--#include file='include/wi_url.html'-->userdocs/homology_help.shtml#detail">Details</A> on
+<P> Every orthology assertion is supported by one or more references.  The display of an orthology reference includes the J number of the reference, a short format citation, gene symbol, and organism. (<EM>See</EM> 
+<A HREF="<!--#include file='include/wi_url.html'-->userdocs/homology_help.shtml#detail">Details</A> on
 the content of an orthology record as it appears in the query results.)
 
 <P>Orthology information is presented in three other formats: Oxford Grid, comparative map and Orthology Map View. An Oxford Grid display presents an overview of orthology between two organisms. Currently, this kind of comparison is supported for the following organisms:  mouse, human, cat, cattle, rat, pig, sheep, dog.
@@ -130,13 +130,11 @@ from the <a href="<!--#include file='include/wi_url.html'-->menus/homology_menu.
 <P>Vast amounts of sequence data are integrated with the biological information in MGD. Mouse sequences from GenBank, RefSeq, Swiss-Prot, DoTS, and the TIGR and NIA mouse gene indices enable powerful queries from the
 <a href="<!--#include file='include/wi_url.html'-->/searches/sequence_form.shtml">Mouse Sequence Query Form</a>. MGI contains sequence attributes, such as length and provider, data about the clones the sequences were derived from, and the genes the sequences have been associated to. Because of our curated associations between mouse markers and sequences, users can search using information such as nomenclature, map position, function (GO annotation, InterPro domain), expression (tissue and developmental stage), and phenotypes of mutant alleles. Source information about the clones that the sequences are derived from, such as strain, tissue, or library, is carefully translated into controlled vocabularies.  This adds enormous power to sequence queries, since authors often use multiple terms to specify a strain or tissue.  </P>
 
-<P>Vast amounts of sequence data are integrated with the biological information in MGD. All mouse sequences from GenBank, RefSeq, Swiss-Prot, DoTS, and the TIGR and NIA mouse gene indices enable powerful queries from the <a href="<!--#include file='include/wi_url.html'-->searches/sequence_form.shtml">Mouse Sequence Query Form</a>. Users can query by attributes, such as sequence length and provider, and also by information MGI has about the clones the sequences were derived from,
-and the genes the sequence have been associated to. Because of the curated associations between mouse markers and sequences, users can search for sequences by information about these markers including nomenclature, map position, function
-(GO annotations and InterPro domains), expression (tissue and developmental
-stage), phenotypes (including human disease) of mutant alleles. Source information about the clones that the sequences are derived from, such as strain, tissue, or library, is carefully translated into controlled vocabularies.  This adds enormous power to sequence queries, since authors often use multiple terms to specify a strain or tissue.  </P>
-
 <h4>SNP Data</h4>
-<p>MGI provides comprehensive information about reference SNPs including the reference flanking sequence, assays that comprise the SNP, gene/marker associations with their corresponding function class annotations, and links to popular gene browsers including MGI Mouse GBrowse and its transcript, gene model, and MGI-curated phenotype and allele tracks.</p>
+<p>MGI provides comprehensive information about reference SNPs including the reference flanking sequence, assays that comprise the SNP, gene/marker associations with their corresponding function class annotations, and links to popular gene browsers including MGI Mouse GBrowse and its transcript, gene model, and MGI-curated phenotype and allele tracks.  
+<p>The 
+<a href="<!--#include file='include/java_url.html'-->WIFetch?page=snpQF">Mouse SNP Query Form</a> lets you search for RefSNPs by strains, strain comparisons, RefSNP attributes, map position, marker range, or associated genes.</p>
+</p>
 
 <h4><A NAME="map">Mapping Data</A></h4>
  MGD contains genetic mapping and linkage data, including haplotype data for
