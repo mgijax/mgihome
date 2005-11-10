@@ -3,9 +3,8 @@
 <TITLE><!--#include file='include/mgiversion.html'--> MGI Release 3.4 Announcement - November 3, 2005</TITLE>
 <!--#include file="include/stylesheet.html"-->
 
-<META NAME ="keywords" CONTENT="Mouse Genome Informatics, Mouse Genome Database, genetics, MGI, genes, mice, SQL, querying, sequence, sequence searching, sequence queries, database queries, query forms, sequence representation, data translation, controlled vocabulary, sequence attribute, sequence source, complex query, downloaded sequences, FASTA">
-<META NAME="description" CONTENT="This page details the changes in the to MGI 3.2 release at The Jackson Laboratory.">
-<!--Last updated on September 26, 2005-->
+<META NAME="description" CONTENT="This page details the changes in the to MGI 3.4 release at The Jackson Laboratory."> 
+<!--Last updated on 11/3/05-->
 </HEAD>
 <!--#include file="include/bodyStart.html"-->
 <BODY BGCOLOR="#ffffff">
@@ -17,82 +16,104 @@
      <TD WIDTH="20%" VALIGN="center" ALIGN="left">&nbsp;</TD>
      <TD WIDTH="60%" ALIGN="center" VALIGN="center">
       <FONT COLOR="#000000" SIZE=5 FACE="Arial,Helvetica">
-      MGI Release 3.4 Announcement - November 3, 2005
-      </FONT>
-     </TD>
-     <TD WIDTH="20%" VALIGN="center" ALIGN="center">&nbsp;</TD>
-    </TR>
-   </TABLE>
-  </TD>
- </TR>
-</TABLE>
-<h3><a name="34">MGI 3.4 release</a></h3>
-<P>MGI is pleased to announce its 3.4 release consisting of a new Mouse SNP Query Form, a Protein Superfamily Vocabulary Browser, and Fantom GO annotation updates to RIKEN large-insert cDNA clones.
 
-<ul>
+      MGI Release 3.4 Announcement - November 3, 2005
+      </font>
+     </td>
+     <td width="20%" valign="center" align="center">&nbsp;</td>
+    </tr>
+   </tbody></table>
+  </td>
+ </tr>
+</tbody></table>
+<h3><a name="34">MGI 3.4 release</a></h3>
+
+<p>MGI is pleased to announce its 3.4 release consisting of a new Mouse
+SNP Query Form, a Protein Superfamily Vocabulary Browser, and Fantom GO
+annotation updates to RIKEN large-insert cDNA clones.
+</p><ul>
 
 <li><b>Mouse SNP Query Form</b></li>
 <p>This release includes over 500,000 SNPs for 75 mouse strains from dbSNP build 124, mapped to mouse genome sequence Build 33. <br>
  You can:<br>
-<ul>
-  <li>use the new  <a href="<!--#include file='include/java_url.html'-->WIFetch?page=snpQF">Mouse SNP Query Form</a> to search dbSNP for SNPs by strains, strain comparisons, SNP attributes (variation type and functional class), map position, marker range, or by association to MGI genes and genetic markers.</li>
+</p><ul>
+  <li>use the new  <a href="http://www.informatics.jax.org/javawi2/servlet/%0AWIFetch?page=snpQF">Mouse SNP Query Form</a>
+to search dbSNP for SNPs by strains, strain comparisons, SNP attributes
+(variation type and functional class), map position, marker range, or
+by association to MGI genes and genetic markers.</li>
+
   <li>view comprehensive data on MGI SNP summary and detail pages.</li>
   <!--<li>search for SNPs within specified distances from a gene of interest.</li>-->
 </ul>
-<p>Query results include a summary of each returned SNP, including consensus strain allele calls derived from SNP assays. You can: <ul>
+<p>Query results include a summary of each returned SNP, including consensus strain allele calls derived from SNP assays. You can: </p><ul>
  <li>choose an output strain sort order.
-<li>elect to see strain allele calls marked as <i>Same</i> or <i>Different</i> relative to a reference strain. </li>
-  <li>use the spreadsheet-compatible tab-delimited option for displaying SNP query results and visualizing presumptive haplotype blocks. </li>
+</li><li>elect to see strain allele calls marked as <i>Same</i> or <i>Different</i> relative to a reference strain. </li>
+
+  <li>use
+the spreadsheet-compatible tab-delimited option for displaying SNP
+query results and visualizing presumptive haplotype blocks. </li>
 </ul>
 <p>You can perform queries such as:
-<ul>
+</p><ul>
   <li>Show me all SNPs on Chromosome 1 with genome coordinates between 161079124 and 161984763 <!--D1Mit30 and D1Mit37--> that are different between  C57BL/6J and DBA/2 mice. </li>
 
 <li>Return all SNPs, searching A/J, C57BL/6J, DBA/2J, C3H/HeJ, and CZECHII/EiJ, for any marker symbol/name beginning with <i>pax</i>.</li>
 
-<li>Compare A/HeJ, A/J, BALB/cJ, C3H/HeJ, SM/J, 129S1/SvImJ, AKR/J, DBA/2J, LP/J, NZB/BlNJ and NZW/LacJ strains with C57BL/6J on Chromosome 1, and display all variation alleles with nonsynonymous substitutions.</li>
-</li>
+<li>Compare A/HeJ, A/J, BALB/cJ, C3H/HeJ, SM/J, 129S1/SvImJ, AKR/J,
+DBA/2J, LP/J, NZB/BlNJ and NZW/LacJ strains with C57BL/6J on Chromosome
+1, and display all variation alleles with nonsynonymous substitutions.</li>
+
 </ul>
 
 <p>About Genome Coordinate Discrepancy<br>
-This occurs when genome coordinates for mouse SNPs are derived from a different NCBI build of the mouse genome than are the genome coordinates for MGI genes. See <a href="<!--#include file='include/wi_url.html'-->userdocs/snp_discrepancy.shtml">Understanding Mouse SNP Coordinate Discrepancies</a> for complete details.</p>
+This occurs when genome coordinates for mouse SNPs are derived from a
+different NCBI build of the mouse genome than are the genome
+coordinates for MGI genes. See <a href="http://www.informatics.jax.org/%0Auserdocs/snp_discrepancy.shtml">Understanding Mouse SNP Coordinate Discrepancies</a> for complete details.</p>
 
 
 
 <!--<p>The Mouse SNPs Detail page provides comprehensive information about each SNP including the reference flanking sequence, assays that comprise the SNP, gene/marker associations with their corresponding function class annotations, and links to popular gene browsers including MGI Mouse Browse, with MGI-curated phenotype and allele tracks in addition to transcript and gene model tracks.</p>-->
 
 
-
 <li><b>Protein Superfamily Vocabulary Browser</b></li>
 
   <p> This release also incorporates UniProt PIRSF protein classifications into a 
-<a href="<!--#include file='include/java_url.html'-->WIFetch?page=pirsfVocab&subset=A
-">Protein Superfamily Vocabulary Browser</a> for locating links between MGI mouse genes and the protein classes. 
-<ul>
+<a href="http://www.informatics.jax.org/javawi2/servlet/%0AWIFetch?page=pirsfVocab&amp;subset=A">Protein Superfamily Vocabulary Browser</a> for locating links between MGI mouse genes and the protein classes. 
+</p><ul>
   <li>You can enter, for example, <i>cadherin</i> in the browser search box and click Search.</li>
-  <li>The resulting MGI Superfamily Protein Detail page lists all mouse superfamily members matching your query as well as any human and rat orthologs derived from MGI-curated mammalian orthology data. </li>
+
+  <li>The
+resulting MGI Superfamily Protein Detail page lists all mouse
+superfamily members matching your query as well as any human and rat
+orthologs derived from MGI-curated mammalian orthology data. </li>
   <li>The Detail page also provides options for downloading any available sequences in FASTA format or forwarding them to MouseBLAST. </li>
     </ul><br>
 
 <li><a name="fantom_go"></a><b>FANTOM3 GO annotation updates</b></li>
 
-<p>MGI recently (September 30, 2005) updated GO annotations to include all 102,801 large-insert cDNA clones generated by the RIKEN group in Japan and described in the journal, Science:
-
-<blockquote>
+<p>MGI recently (September 30, 2005) updated GO annotations to include
+all 102,801 large-insert cDNA clones generated by the RIKEN group in
+Japan and described in the journal, Science:
+</p><blockquote>
 <b>Carninci et al., <i>The Transcriptional Landscape of the Mammalian Genome.</i> 2005. Science 309:1559-1563.</b>
+
 </blockquote>
-<p>These annotations have an <i>RCA</i> evidence code, indicating a reviewed computational analysis. As part of this process, the newer annotations replaced annotations assigned to genes during earlier phases of the FANTOM project. To reflect the process of annotation more accurately, annotations retained from earlier analyses also received the RCA evidence code.</p>
+<p>These annotations have an <i>RCA</i> evidence code, indicating a
+reviewed computational analysis. As part of this process, the newer
+annotations replaced annotations assigned to genes during earlier
+phases of the FANTOM project. To reflect the process of annotation more
+accurately, annotations retained from earlier analyses also received
+the RCA evidence code.</p>
 </ul>
 <hr>
 <p>MGI is the community model organism database for the laboratory mouse. 
 </p>
 
 
-</blockquote>
+</P>
 
 
-</p>
-
+<hr>
 <!--#include file="include/bodyStop.html"-->
 </body>
 </html>
@@ -115,4 +136,10 @@ Warranty Disclaimer and Copyright Notice
 Copyright © 1996, 1999, 2002 by The Jackson Laboratory
 All Rights Reserved
 -->
+
+
+
+
+
+
 
