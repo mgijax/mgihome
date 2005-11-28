@@ -5,11 +5,8 @@
 <!--#include file="include/stylesheet.html"-->
   
 <style type="text/css">
-<!--
-  ul.lj { padding-left: 12px; }
--->
+ul.lj { padding-left: 12px; }
 </style>
-
 </head>
 <!--#include file="include/bodyStart.html"-->
 <BODY BGCOLOR="#ffffff">
@@ -30,7 +27,7 @@
   </TD>
  </TR>
 </TABLE>
-<P></P>
+<P>
 
 
 <TABLE BORDER="0" CELLSPACING="0" CELLPADDING="0" WIDTH="100%"> 
@@ -38,9 +35,11 @@
 <TABLE ALIGN="CENTER" BORDER="0" CELLSPACING="0" CELLPADDING="6" width="85%">
 <TR BGCOLOR="#DFEFFF"><TD ALIGN="left" VALIGN="top"><CENTER>
 
-<h4>December xx, 2005</h4></CENTER>
+<h4>November 30, 2005</h4></CENTER>
 <ul>
-<LI><a href="#dec_05">MGI 3.41 release: December xx, 2005</a></LI>
+<LI><a href="#nov30_05">MGI Update: November 30, 2005</a></LI>
+
+<!--<LI><a href="#dec_05">MGI 3.41 release: December xx, 2005</a></LI>-->
 
 <LI><a href="#nov1_05">MGI 3.4 release and Fantom3 GO annotation updates: November 3, 2005</a></LI>
 
@@ -77,66 +76,88 @@ HREF="index.shtml">Mouse Genome Monthly Newsletters</a>
 </UL> </TD> </TR> </TABLE>
 
 
-<P><DL>
-<dt><a name="dec_05"><b>December xx, 2005</b></a></dt>
+<P>
+<DL>
+<dt><a name="nov30_05"></a><b>November 30, 2005</b></dt>
+<dd>
 <BLOCKQUOTE>
-<dd>MGI Version <A HREF="3.41announce.shtml">3.41</a> features an electronic version of <I>Origins of Inbred Mice</i> edited by Herbert C. Morse III.</li>
-
-</dd>
+<ul class=lj>
+<a href="http://www.informatics.jax.org/external/ko/">Deltagen and Lexicon Knockout Mice and MGI Phenotypic Data available</a>
+</ul>
 </BLOCKQUOTE>
+</dd>
 
 
-
-
-
-<dt><a name="nov1_05"><b>November 3, 2005</b></a></dt>
+<dt><a name="nov1_05"></a><b>November 3, 2005</b></dt>
+<dd>
 <BLOCKQUOTE>
-<dd><ul class=lj>
+<ul class=lj>
   <li>New features for MGI Version <A HREF="3.4announce.shtml">3.4</a> include a Mouse SNP Query Form and a Protein Superfamily Vocabulary Browser.</li>
   <li>MGI updates <A HREF="3.4announce.shtml#fantom_go">FANTOM3 GO</a> annotations.</li>
 </ul>
-</dd>
 </BLOCKQUOTE>
+</dd>
 
-<dt><a name="sept14_05"><b>September 14, 2005</b></a></dt><BLOCKQUOTE>
-<dd><ul class=lj>
+<dt><a name="sept14_05"></a><b>September 14, 2005</b></dt>
+<dd>
+<BLOCKQUOTE>
+<ul class=lj>
   <li>MGI Version <A HREF="3.3announce.shtml">3.3</a> features the MGI Human Disease Vocabulary Browser, providing access to OMIM human disease terms for which Mendelian inheritance is suspected or known.</li>
   <li><A HREF="3.3announce.shtml#gxd_data">GXD</a> adds data from two large-scale <i>in situ</i> hybridization screens.</li>
   <li>MGI releases <A HREF="3.3announce.shtml#fantom3">FANTOM3 Data</a>.</li>
 </ul>
+</BLOCKQUOTE>
 </dd>
 
+<dt><a name="aug12_05"></a><b>August 12, 2005</b></dt>
+<dd>
+<BLOCKQUOTE>
+The MGI genome coordinates for mouse genes are updated to Build 34. These coordinates come from computational annotations provided by Ensembl and NCBI. MGI's interactive sequence map, 
+Mouse GBrowse, is also updated to Build 34 and now contains tracks indicating mouse genes associated with specific phenotypes. Access to Mouse GBrowse is from the MGI home page (<a href="http://www.informatics.jax.org">www.informatics.jax.org</a>) and from the sequence map section on MGI gene detail pages. 
 </BLOCKQUOTE>
-
-<dt><a name="aug12_05"><b>August 12, 2005</b></a></dt><BLOCKQUOTE>
-<dd>The MGI genome coordinates for mouse genes are updated to Build 34. These coordinates come from computational annotations provided by Ensembl and NCBI. MGI's interactive sequence map, 
-Mouse GBrowse, is also updated to Build 34 and now contains tracks indicating mouse genes associated with specific phenotypes. Access to Mouse GBrowse is from the MGI home page (<a href="http://www.informatics.jax.org">www.informatics.jax.org</a>) and from the sequence map section on MGI gene detail pages. </dd>
-</BLOCKQUOTE>
+</dd>
 
 
 <dt><A NAME="jun30_05"></A><B>June 30, 2005</B></dt>
+<dd>
 <BLOCKQUOTE>
-<dd><p>MGI is pleased to announce its <A HREF="3.22announce.shtml">3.22 release</a>.<!--The release consists of performance enhancements, bug fixes, and additional updates on the 
-<A HREF="../nomen/genefamilies/index.shtml">Gene Family</A> pages.-->
+MGI is pleased to announce its <A HREF="3.22announce.shtml">3.22 release</a>.<!--The release consists of performance enhancements, bug fixes, and additional updates on the <A HREF="../nomen/genefamilies/index.shtml">Gene Family</A> pages.-->
 </BLOCKQUOTE>
+</dd>
 
 <dt><A NAME="jun07_05"></A><B>June 7, 2005</B></dt>
+<dd>
 <BLOCKQUOTE>
-<dd>Look for updates to the <A HREF="../nomen/genefamilies/index.shtml">Gene Family</A> pages and additions to the 
+Look for updates to the <A HREF="../nomen/genefamilies/index.shtml">Gene Family</A> pages and additions to the 
 <A HREF="<!--#include file='include/java_url.html'-->WIFetch?page=glossaryIndex&print=no">MGI Glossary</A>.
 </BLOCKQUOTE>
+</dd>
 
 <DT><A NAME="may26_05"></A><B>May 26, 2005</B></DT>
-<BLOCKQUOTE><DD>For MGI Version <A HREF="3.21announce.shtml">3.21</A>, we've implemented Mouse GBrowse, a version of a generic genome browser, an electronic version of <I>The Anatomy of the Laboratory Mouse</i> by Margaret J. Cook, and a prototype SNP Query Form.</P>
-</BLOCKQUOTE></DD>
+<DD>
+<BLOCKQUOTE>
+For MGI Version <A HREF="3.21announce.shtml">3.21</A>, we've implemented Mouse GBrowse, a version of a generic genome browser, an electronic version of <I>The Anatomy of the Laboratory Mouse</i> by Margaret J. Cook, and a prototype SNP Query Form.</P>
+</BLOCKQUOTE>
+</DD>
 
 <DT><A NAME="may10_05"></A><B>May 10, 2005</B></DT>
-<DD><BLOCKQUOTE>Version <A HREF="3.2announce.shtml">3.2</A> of MGI features a completely redesigned web interface for accessing and interacting with phenotypic information. Mouse phenotypic data are integrated with mouse genes and strains in MGI, allowing exploration of sequence, expression, orthology, and other related data.
-</BLOCKQUOTE></DD>
+<DD>
+<BLOCKQUOTE>
+Version <A HREF="3.2announce.shtml">3.2</A> of MGI features a completely redesigned web interface for accessing and interacting with phenotypic information. Mouse phenotypic data are integrated with mouse genes and strains in MGI, allowing exploration of sequence, expression, orthology, and other related data.
+</BLOCKQUOTE>
+</DD>
 
 </DL>
+
 </P>
 <PRE>
+<!--<dt><a name="dec_05"><b>December xx, 2005</b></a></dt>
+<BLOCKQUOTE>
+<dd>MGI Version <A HREF="3.41announce.shtml">3.41</a> features an electronic version of <I>Origins of Inbred Mice</i> edited by Herbert C. Morse III.</li>
+</dd>
+</BLOCKQUOTE>-->
+
+
 
 
 
