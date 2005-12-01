@@ -51,6 +51,8 @@ def main ():
             '../www/include/wksilvers_url.html')        
     stringToFile (config.lookup ('COOKBOOK_URL'), \
             '../www/include/cookbook_url.html')        
+    stringToFile (config.lookup ('MORSEBOOK_URL'), \
+            '../www/include/morsebook_url.html')        
     stringToFile (webshare_lib.webshareLookup('mgi_logo'), \
         '../www/include/mgi_logo.html')
     stringToFile (webshare_lib.webshareLookup('help'), \
