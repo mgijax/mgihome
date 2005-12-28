@@ -1,4 +1,4 @@
-#!/usr/local/bin/python
+#!./python
 
 # Program: allele_submit.cgi
 # Purpose: to process data submitted on the "New Allele and Mutant Submission

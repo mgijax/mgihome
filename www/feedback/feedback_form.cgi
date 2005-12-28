@@ -1,4 +1,4 @@
-#!/usr/local/bin/python
+#!./python
 
 # Program: feedback_form.cgi
 # Purpose: present a "Your Input" form corresponding to the input parameters
