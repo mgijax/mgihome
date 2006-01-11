@@ -17,8 +17,20 @@
 #	load in the data structure directly without regular expression
 #	parsing.
 
-import os
 import sys
+
+# for now, add the standard MGI library path, so we can find out standard
+# modules.  Later on, we can change this as needed.
+
+if '/usr/local/mgi/live/lib/python/' not in sys.path:
+	sys.path.insert (0, '/usr/local/mgi/live/lib/python/')
+
+# turn off deprecation errors, easing the pain of the migration to Python
+# 2.4.2 -- we'll come back and fix the deprecated stuff later
+
+import ignoreDeprecation
+
+import os
 import regex
 import pickle
 import string
@@ -161,7 +173,7 @@ for var in [ 'SYBASE', 'LD_LIBRARY_PATH' ]:
 #  is prohibited without the prior express written permission of the Jackson 
 #  Laboratory.
 # 
-# Copyright © 1996, 1999, 2002 by The Jackson Laboratory
+# Copyright (c) 1996, 1999, 2002 by The Jackson Laboratory
 # All Rights Reserved
 #
 
