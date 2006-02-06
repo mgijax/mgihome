@@ -33,11 +33,11 @@ scientific community.</font></p><p>
 <ul>
 <font face="Verdana" size="-1"><li><b>Genes for which one or more knockout allele(s) have been reported </b>
     <ul> 
-      <li><a href="<!--#include file='include/ftp_url.html'-->/pub/reports/MGI_Knockout_Full.rpt">full list </a> of genes with knockout alleles.
+      <li><a href="<!--#include file='include/ftp_url.html'-->/pub/reports/MGI_Knockout_Full.html">full list </a> of genes with knockout alleles.
      </li>
-     <li>genes for which mice carrying a knockout <a href="<!--#include file='include/ftp_url.html'-->/pub/reports/MGI_Knockout_Public.rpt">are in a public repository</a>.
+     <li>genes for which mice carrying a knockout <a href="<!--#include file='include/ftp_url.html'-->/pub/reports/MGI_Knockout_Public.html">are in a public repository</a>.
      </li>
-     <li> genes for which mice carrying a knockout <a href="<!--#include file='include/ftp_url.html'-->/pub/reports/MGI_Knockout_NotPublic.rpt">are not in a public repository</a>.
+     <li> genes for which mice carrying a knockout <a href="<!--#include file='include/ftp_url.html'-->/pub/reports/MGI_Knockout_NotPublic.html">are not in a public repository</a>.
      </li>
    </ul>
  </li>
@@ -74,9 +74,9 @@ scientific community.</font></p><p>
 </dt>
 <br>
 <dt> If yes, did you indicate that (check one): <br>
-&nbsp;&nbsp;&nbsp;&nbsp;<input name="toreposit" value="inrepos" type="radio">this knockout already resides in a public repository?<br>
-&nbsp;&nbsp;&nbsp;&nbsp;<input name="toreposit" value="contrrepos" type="radio">you are willing to contribute this knockout to a public repository?<br>
-&nbsp;&nbsp;&nbsp;&nbsp;<input name="toreposit" value="notrepos" type="radio">you are not willing to contribute this knockout to a public repository?<br>
+&nbsp;&nbsp;&nbsp;&nbsp;<input name="toreposit" value="already in public" type="radio">this knockout already resides in a public repository?<br>
+&nbsp;&nbsp;&nbsp;&nbsp;<input name="toreposit" value="contribute to public" type="radio">you are willing to contribute this knockout to a public repository?<br>
+&nbsp;&nbsp;&nbsp;&nbsp;<input name="toreposit" value="do not contribute to public" type="radio">you are not willing to contribute this knockout to a public repository?<br>
 <br><br>
 <hr>
 <br>
@@ -114,7 +114,7 @@ then skip to Section 6. </b>
 <br><br>
 
 <dt><b>Describe the vector structure:</b> (Use the text box or upload an image file, or both)</dt>
-<dd>Text description<br> <textarea NAME="otherKnockoutInfo" ROWS=3 COLS=75></textarea>
+<dd>Text description<br> <textarea NAME="remarks" ROWS=3 COLS=75></textarea>
 </dd>
 <dd>Upload an image file. &nbsp;&nbsp; &nbsp; File path <input type="file" name="fileUpload" size="40">
 
@@ -271,7 +271,7 @@ If the strain is inbred, provide number of inbreeding generations &nbsp;<input n
 </P>
 
 <input TYPE="radio" NAME="getmgiid" VALUE="Send MGI ID">Check here if you wish to receive email with the MGI accession number for this knockout allele.<br>
-<input name="contact" value="contactinvest" type="radio">Check here if you would like MGI to contact you about contributing more extensive phenotyping data.
+<input name="contact" value="Contact about contributing" type="radio">Check here if you would like MGI to contact you about contributing more extensive phenotyping data.
 <br><br>If your knockout is selected for inclusion in a repository
 through this NIH facilitation process, the repository assigned to your
 knockout strain will contact you for additional details. You also can
