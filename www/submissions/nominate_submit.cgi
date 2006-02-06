@@ -256,7 +256,7 @@ def main():
     ip = []
     ip.append('IP addr\n'+os.environ['REMOTE_ADDR'])
     message = message + ip
-    fd2 = open(str(dirName)+"/messageText",'w')
+    fd2 = open(str(dirName)+"/nominMessage",'w')
     messageText = string.join(message,'\n')
     fd2.write(messageText)
     fd2.flush()
