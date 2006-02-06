@@ -1,6 +1,6 @@
 <HTML>
 <HEAD>
-<TITLE><!--#include file='include/mgiversion.html'--> - NIH Mouse Knockout Inventory</TITLE>
+<TITLE><!--#include file='include/mgiversion.html'--> - NIH Knockout Mice for Repatriation</TITLE>
 <!--#include file="include/stylesheet.html"-->
 </HEAD>
 <BODY BGCOLOR="#ffffff">
@@ -9,7 +9,7 @@
     <TABLE WIDTH="100%" BORDER=0 CELLPADDING=0 CELLSPACING=0>
      <TR><TD WIDTH="20%" VALIGN="center" ALIGN="left"><A HREF="<!--#include file='include/wi_url.html'-->" border=0><IMG SRC="../images/mgi_logo_small.jpg" border=0 ALT="MGI"></A></TD>
       <TD WIDTH="60%" ALIGN="center" VALIGN="center" BGCOLOR="#ffffff">
-       <FONT COLOR="#000000" SIZE=5 FACE="verdana">NIH Mouse Knockout Inventory</FONT></Th><TD WIDTH="20%" VALIGN="center" ALIGN="center" BGCOLOR="#ffffff">&nbsp;</TD></TR>
+       <FONT COLOR="#000000" SIZE=5 FACE="verdana">Submit Data on Knockouts for Possible Repatriation</FONT></Th><TD WIDTH="20%" VALIGN="center" ALIGN="center" BGCOLOR="#ffffff">&nbsp;</TD></TR>
 <TR BGCOLOR="blue"><Th align=left COLSPAN=3><FONT face="Arial,Helvetica" color="#ffffff">
     &nbsp;Mouse Genome Informatics</Th></TR>
 <TR><TD BGCOLOR="#ffffff"><FONT SIZE=-1 FACE="Arial,Helvetica"><CENTER><A HREF="<!--#include file='include/wi_url.html'-->">MGI Home</A>&nbsp;&nbsp;&nbsp;
@@ -21,51 +21,85 @@
 
 <p>
 <font face="Verdana" size=-1>
-The purpose of this inventory is to determine how many (and which) genes in the mouse have been knocked out to make null alleles and in what repositories or laboratories the resulting mice or cell lines reside.
-The information you provide will be used in conjunction with data from MGI and mouse repository resources for developing potential  plans to produce a knockout of every gene. 
- <ul>
- <li>Information you provide will be held privately unless you indicate on this form that it can be
- publicly released. 
- <li>If you have many knockout alleles to describe, please e-mail <a HREF="mailto:mgi-help@informatics.jax.org">mgi-help@informatics.jax.org</a> for instructions on bulk data transfer. 
- <li>If you have any questions for NIH staff working on this project, please send e-mail to <a HREF="mailto:komp@mail.nih.gov">komp@mail.nih.gov</a>. 
-  <li>More information is available on the the <a href="nihfaq.shtml">Frequently Asked Questions</a> page. 
+To make existing mouse strains carrying targeted knockouts (nulls and
+conditionals) more accessible to the scientific community, NIH is
+facilitating the placement of these stocks into public repositories.
+The purpose of this form is to gather information from investigators
+who have developed and/or maintain knockout mice that can be
+transferred to public repositories for wider distribution to the
+scientific community.</font></p><p>
+<font face="Verdana" size="-1">Helpful resources for using this form:
+ </font></p> 
+<ul>
+<font face="Verdana" size="-1"><li><b>Genes for which one or more knockout allele(s) have been reported </b>
+    <ul> 
+      <li><a href="<!--#include file='include/ftp_url.html'-->/pub/reports/MGI_Knockout_Full.rpt">full list </a> of genes with knockout alleles.
+     </li>
+     <li>genes for which mice carrying a knockout <a href="<!--#include file='include/ftp_url.html'-->/pub/reports/MGI_Knockout_Public.rpt">are in a public repository</a>.
+     </li>
+     <li> genes for which mice carrying a knockout <a href="<!--#include file='include/ftp_url.html'-->/pub/reports/MGI_Knockout_NotPublic.rpt">are not in a public repository</a>.
+     </li>
+   </ul>
+ </li>
+ <p>
+ <li>Search MGI for <a href="<!--#include file='include/wi_url.html'-->/searches/allele_form.shtml">Phenotypes and Alleles</a>.</li>
+ <li>Read more about the <a href="http://www.genome.gov/17515708">NIH project </a>to make knockout stocks more readily accessible.</li>
+  <li>Get help by sending e-mail to <a href="mailto:mgi-help@informatics.jax.org">mgi-help@informatics.jax.org</a>.</li> 
 
-
- <li>Thank you for helping with this survey!
- </ul>
+ <li>Thank you for helping with this survey!</li>
+ </font>
+</ul>
 <p>
 <hr>
-<form METHOD="GET" ACTION="nihfaq.shtml">
 
-<h3>General information about the gene that has been knocked out: <font face=Verdana size=-1><input type=submit value=FAQs name="nihfaq"> 
-</form>
-</font></h3>
-<form METHOD="POST" ACTION="knockout_submit.cgi" enctype="multipart/form-data">
+<h4><font face="Verdana" size="-1">1. General information:</font></h4>
+
+<form METHOD="POST" ACTION="repat_submit.cgi" enctype="multipart/form-data">
 
 <DL>
-  <DT>Gene or allele symbol/name:&nbsp;
-<input TYPE="text" NAME="allele" SIZE=30>
-&nbsp;&nbsp;(You can check the name and symbol by 
-<A HREF="<!--#include file='include/wi_url.html'-->/searches/marker_form.shtml">searching MGI</a>)</dt><br><br>
+<font face="Verdana" size="-1">   <DT>Gene or allele symbol/name:&nbsp;
+<input TYPE="text" NAME="allele" SIZE=30><br>
+(Check symbol and name by 
+<A HREF="<!--#include file='include/wi_url.html'-->/searches/marker_form.shtml">searching MGI</a>) or get help with nomenclature by email to <a href="mailto:nomen@informatics.jax.org">nomen@informatics.jax.org</a></dt><br><br>
 <dt>Nicknames or lab synonyms for this allele:&nbsp;<input TYPE="text" NAME="synonyms" SIZE=30></dt><br><br>
+
   <DT>MGI id for this knockout allele, if known:&nbsp;<input TYPE="text" NAME="mgiid" SIZE=30></dt><br><br>
 <dt>dbGSS sequence id for this knockout allele, if known:&nbsp; <input TYPE="text" NAME="dbgss" SIZE=30></dt><br><br>
 
-<dt>For help with nomenclature, e-mail <a HREF="mailto:nomen@informatics.jax.org">nomen@informatics.jax.org</a></dt><br>
+<dt>I previously submitted information about this knockout to the NIH Knockout Inventory<br>
+ form (posted at MGI Autumn 2004 - Summer 2005):<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input name="prevsub" value="yes" type="radio">yes&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+		    <input name="prevsub" value="no" type="radio">no&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+		    <input name="prevsub" value="uncertain" type="radio">uncertain<br>
+</dt>
+<br>
+<dt> If yes, did you indicate that (check one): <br>
+&nbsp;&nbsp;&nbsp;&nbsp;<input name="toreposit" value="inrepos" type="radio">this knockout already resides in a public repository?<br>
+&nbsp;&nbsp;&nbsp;&nbsp;<input name="toreposit" value="contrrepos" type="radio">you are willing to contribute this knockout to a public repository?<br>
+&nbsp;&nbsp;&nbsp;&nbsp;<input name="toreposit" value="notrepos" type="radio">you are not willing to contribute this knockout to a public repository?<br>
+<br><br>
+<hr>
+<br>
+<b>Sections 2-5 are questions from the original NIH Knockout Survey.  If this is a new entry, please fill out all questions. 
+If this response concerns a knockout reported on the previous survey, only fill out Sections 2-5 for revised information, 
+then skip to Section 6. </b>
+ <br>
+
+</dt></font> 
 </DL>
 <hr>
 
-<h3>How this mutation was constructed:</h3>
-
+<h4><font face="Verdana" size="-1">2. How this mutation was constructed:</font></h4>
+<font face="Verdana" size="-1"
 <dl>
-<dt><b>ES cell line used:</b>&nbsp;<input TYPE="text" NAME="celline" SIZE=35><br>
+<dt><b>ES cell line used:</b>&nbsp;<input TYPE="text" NAME="celline" SIZE=35><br></dt>
 <br>
-<dt><b>Method of generation:</b>
-<dd><input TYPE="radio" NAME="method" VALUE="targeted">targeted
-<dd><input TYPE="radio" NAME="method" VALUE="gene trapped">gene trapped
-<dd><input TYPE="radio" NAME="method" VALUE="conditional targeted">conditional/targeted
+<dt><b>Method of generation:</b></dt>
+<dd><input TYPE="radio" NAME="method" VALUE="targeted">targeted</dd>
+<dd><input TYPE="radio" NAME="method" VALUE="gene trapped">gene trapped</dd>
+<dd><input TYPE="radio" NAME="method" VALUE="conditional targeted">conditional/targeted</dd>
 <dd><input TYPE="radio" NAME="method" VALUE="other">other&nbsp;&nbsp;&nbsp;&nbsp;If "other," please specify:
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input TYPE="text" NAME="otherGeneration" SIZE=40>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input TYPE="text" NAME="otherGeneration" SIZE=40></dd>
 <br><br>
 
 <dt><b>Does this knockout include </b>(Check all that apply):</dt>
@@ -93,9 +127,10 @@ The information you provide will be used in conjunction with data from MGI and m
 <dd><input TYPE="checkbox" NAME="junction" VALUE="other">other&nbsp;&nbsp;&nbsp;&nbsp;If "other," please specify:
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input TYPE="text" NAME="other frag" SIZE=40></dd>
 </dl>
-
+</font>
 <hr>
-<h3>Evidence for the knockout:</h3>
+<h4><font face="Verdana" size="-1">3. Evidence for the knockout:</font></h4>
+<font face="Verdana" size="-1">
 <dl>
 <dt><b>Mutation is shown to be a true null by</b> (Check all that apply):
 
@@ -111,8 +146,10 @@ The information you provide will be used in conjunction with data from MGI and m
 <dd><input TYPE="checkbox" NAME="evidence" VALUE="other pt">other protein type; please specify&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input TYPE="text" NAME="other prot" SIZE=40></dd>
 <dd><input TYPE="checkbox" NAME="evidence" VALUE="other at">other assay type; please specify&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input TYPE="text" NAME="other assay" SIZE=40></dd>
 </dl><br>
+</font>
 <hr>
-<h3>Publication:</h3>
+<h4><font face="Verdana" size="-1">4. Publication:</font></h4>
+<font face="Verdana" size="-1">
 <dl>
 <dt>Have you published about this knockout? </dt>
 
@@ -132,9 +169,11 @@ Please provide the references, or authors & descriptive title for unpublished da
 <dt>If these data are available from a Web site, please give URL: <br>
 <input TYPE="text" NAME="alleleURL" SIZE=65></dt>
 </dl>
+</font>
 <hr>
 
-<h3>Availability:</h3>
+<h4><font face="Verdana" size="-1">5. Availability:</font></h4>
+<font face="Verdana" size="-1">
 <dl>
 <dt>Is the Mouse Strain or ES cell line carrying this knockout allele in a repository (e.g., MMRRC, The Jackson Laboratory)?</dt>
 
@@ -145,23 +184,36 @@ Please provide the references, or authors & descriptive title for unpublished da
 <dd><input TYPE="radio" NAME="contribute" VALUE="contribute yes">yes </dd>
 <dd><input TYPE="radio" NAME="contribute" VALUE="contribute no">no&nbsp;&nbsp;  If no, please indicate why not &nbsp; <input TYPE="text" NAME="whynot" SIZE=50></dd>
 </dl>
+</font>
 <hr>
 
+<h4><font face="Verdana" size="-1">6. Phenotype</font></h4>
+<font face="Verdana" size="-1">Please describe the phenotype, including
+homozygous and heterozygous viability and fertility, and include
+descriptions of major defects. You can use the
+<a href="<!--#include file='include/wi_url.html'-->/searches/MP_form.shtml">Mammalian Phenotype Ontology</a> for standard phenotype terms
+or enter free text.
+<textarea name="pheno" rows="8" cols="70"></textarea>
+<br>
+Strain or genetic background of origin (where mutation was generated) &nbsp;<input name="origin" size="40" type="text"><br>
+Strain or genetic background on which mice were phenotyped &nbsp;<input name="phenobackgrd" size="50" type="text"><br>
+Is the strain now inbred? &nbsp;<input name="inbred" value="yes" type="radio">yes &nbsp;<input name="inbred" value="no" type="radio">no   <br>
+If the strain is inbred, provide number of inbreeding generations &nbsp;<input name="generations" size="10" type="text">  
+<br>
+</font>
+<hr>
 
-
-<h3>Additional comments:</h3>
+<h4><font face="Verdana" size="-1">7. Additional comments:</h4>
+<font face="Verdana" size="-1">
 <dl>
 <dt>Other information you would like to share about this knockout (gene function/pathway, phenotype, GenBank id, etc.):<br>
 <textarea NAME="otherKnockoutInfo" ROWS=3 COLS=75></textarea>
 </dt>
 <br><br>
-
-<dt>Comments to NIH regarding this survey:<br>
-<textarea NAME="comments" ROWS=3 COLS=75></textarea></dt>
-</dl>
+</font>
 <hr>
-<h3>Contact Details:</h3>
- If your contact details are already in MGI, you only need to enter your name and e-mail address. <br><br>
+<h4><font face="Verdana" size="-1">Contact Details:</font></h4>
+<font face="Verdana" size="-1"> If your contact details are already in MGI, you only need to enter your name and e-mail address. <br><br>
 
 <table  col=3 border=0 cellpadding=0 cellspacing=4>
 <tr>
@@ -217,11 +269,19 @@ Please provide the references, or authors & descriptive title for unpublished da
 <br><br>
 <P>For additional help with this form, or to learn more, send email to <A HREF="mailto:mgi-help@informatics.jax.org">mgi-help@informatics.jax.org</A>.
 </P>
-<h5><input TYPE="radio" NAME="getmgiid" VALUE="Send MGI ID">Check here if you wish to receive email with the MGI accession number for this knockout allele.</h5>
-<h3>Thank you for assisting with this inventory!</h3>
+
+<input TYPE="radio" NAME="getmgiid" VALUE="Send MGI ID">Check here if you wish to receive email with the MGI accession number for this knockout allele.<br>
+<input name="contact" value="contactinvest" type="radio">Check here if you would like MGI to contact you about contributing more extensive phenotyping data.
+<br><br>If your knockout is selected for inclusion in a repository
+through this NIH facilitation process, the repository assigned to your
+knockout strain will contact you for additional details. You also can
+contact repository sites directly to <a href="http://www.fimre.org/depositStrains.html">submit strains</a> through their normal evaluation/acceptance process.
+
+</font>
+<h5><font face="Verdana" size="-1">Thank you for assisting with this effort to increase the knockouts available from public repositories!</font></h5>
 
 <hr>
-<input TYPE=submit VALUE="Submit"> <input TYPE=reset VALUE="Reset Form">
+<font face="Verdana" size="-1"><input TYPE=submit VALUE="Submit"> <input TYPE=reset VALUE="Reset Form"></font>
 
 </form>
  </p>
