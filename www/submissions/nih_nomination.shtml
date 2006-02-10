@@ -47,12 +47,20 @@ repositories.</font></p><p>
 </p><p>
 <font face="Verdana" size="-1">Helpful resources for using this form:
  </font></p><ul>
-<font face="Verdana" size="-1"> <li><b>Genes for which one or more knockout allele(s) have been reported </b> 
- <ul> 
- <li><a href="<!--#include file='include/ftp_url.html'-->pub/reports/MGI_Knockout_Full.html">full list </a> of genes with knockout alleles.
- </li><li>genes for which mice carrying a knockout <a href="<!--#include file='include/ftp_url.html'-->pub/reports/MGI_Knockout_Public.html">are in a public repository</a>.
- </li><li> genes for which mice carrying a knockout <a href="<!--#include file='include/ftp_url.html'-->pub/reports/MGI_Knockout_NotPublic.html">are not in a public repository</a>.
- </li></ul><p>
+<font face="Verdana" size="-1"><li><b>Genes for which one or more knockout allele(s) have been reported </b><br>
+<font face="Verdana" size="-2">(These lists are limited to gene knockouts and conditional knockouts in the public domain.  They do not include genes that have other types of genetically engineered alleles or mutations)</font>
+   <ul> 
+      <li><a href="<!--#include file='include/ftp_url2.html'-->pub/reports/MGI_Knockout_NotPublic.html">candidate genes</a> to nominate for repatriating mice to public repositories.<br>
+          <em>Mice carrying knockouts of these genes have been created, but are <u>not</u> in a public repository.</em>
+     </li>
+     <li><a href="<!--#include file='include/ftp_url2.html'-->pub/reports/MGI_Knockout_Public.html">available knockouts</a>.<br>
+          <em>Mice carrying knockouts of these genes have been created, and are available through public repositories.</em>
+     </li>
+     <li><a href="<!--#include file='include/ftp_url2.html'-->pub/reports/MGI_Knockout_Full.html">full list of knockouts</a>.<br>
+          <em>Combination of the above two lists, showing genes that have been knocked-out or conditionally knocked-out.</em>
+     </li>
+   </ul>
+<p>
  </p></li><li>Search MGI for <a href="<!--#include file='include/wi_url.html'-->/searches/allele_form.shtml">Phenotypes and Alleles</a>.
  </li><li>Read more about the <a href="http://www.genome.gov/17515708">NIH project </a>to make knockout stocks more readily accessible.
  </li><li>Get help by sending e-mail to <a href="mailto:mgi-help@informatics.jax.org">mgi-help@informatics.jax.org</a>.
@@ -79,13 +87,13 @@ repositories.</font></p><p>
     	&nbsp;&nbsp;&nbsp;for this gene/allele<br>
     	<font  face="Verdana" size="-2">(At least one unique identifier must be provided)</font></b></font></td>
      	
-     	<td bgcolor="#d0e0f0"><font  face="Verdana" size="-1"><b>Additional Comment<br><font size="-2">(e.g., if multiple knockouts exist, <br>but one is preferable for your use)</font></b></font></td>
+     	<td bgcolor="#d0e0f0"><font  face="Verdana" size="-1"><b>Additional Comment<br><font size="-2">(e.g., if multiple knockouts exist, but one is preferable for your use; <br>or if you have information on the availability of the knockout)</font></b></font></td>
  
       </tr>
         
 <tr>
-     	<td bgcolor="#f0f0f0">&nbsp;<font  face="Verdana" size="-2"><i>Sample entry</i></font><br><br>&nbsp;<font size="-1">Alox5</font></td>
-      	<td bgcolor="#f0f0f0">&nbsp;<font  face="Verdana" size="-2"><i>Sample entry</i></font><br><br>&nbsp;<font size="-1">5LX</font></td>
+     	<td bgcolor="#f0f0f0">&nbsp;<font  face="Verdana" size="-2"><i>Sample entry</i></font><br><br>&nbsp;<font size="-1">Dll4</font></td>
+      	<td bgcolor="#f0f0f0">&nbsp;<font  face="Verdana" size="-2"><i>Sample entry</i></font><br><br>&nbsp;<font size="-1">Delta4</font></td>
 		
 		<td bgcolor="#f0f0f0"><font  face="Verdana" size="-2"><center><i>Sample entry showing identifiers from 2 sources</i></center><br>
 		
@@ -94,7 +102,7 @@ repositories.</font></p><p>
 		      <tr>
 		      
 		      <td bgcolor="#f0f0f0"><font face="Verdana" size="-2"><a href="http://www.informatics.jax.org/">MGI</a></font></td>
-		      <td bgcolor="#f0f0f0" align="center"><font face="Verdana" size="-2"><input class="inner" TYPE="readonly" NAME="mgiid" VALUE="MGI:87999"SIZE=20></font></td>
+		      <td bgcolor="#f0f0f0" align="center"><font face="Verdana" size="-2"><input class="inner" TYPE="readonly" NAME="mgiid" VALUE="MGI:1859388"SIZE=20></font></td>
 		      </tr><tr>
 		      <td bgcolor="#f0f0f0"><font face="Verdana" size="-2"><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=Nucleotide">GenBank</a></font></td>
 		       <td bgcolor="#f0f0f0" align="center"><font face="Verdana" size="-2"><input class="inner" TYPE="readonly" NAME="genbankid" SIZE=20></font></td>
@@ -106,11 +114,11 @@ repositories.</font></p><p>
 		       <td bgcolor="#f0f0f0" align="center"><font face="Verdana" size="-2"><input class="inner" TYPE="readonly" NAME="ensemblid" SIZE=20></font></td>
 		      </tr><tr>
 		      <td bgcolor="#f0f0f0"><font face="Verdana" size="-2"><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed">PubMed</a></font></td>
-		       <td bgcolor="#f0f0f0" align="center"><font face="Verdana" size="-2"><input class="inner" TYPE="readonly" NAME="pubmedid" VALUE="7809134" SIZE=20></font></td>
+		       <td bgcolor="#f0f0f0" align="center"><font face="Verdana" size="-2"><input class="inner" TYPE="readonly" NAME="pubmedid" VALUE="15466160" SIZE=20></font></td>
 		      </tr><tr>
 		      </tr></table>
-		     	</font></td><td bgcolor="#f0f0f0">&nbsp;<font size="-2"><i>Sample entry</i></font><br><br><font size="-1">There are 2 knockout alleles of Alox5.<br>
-		     	The tm1Bhk allele (MGI:1933120) is not <br>in a repository.</font></td>  
+		     	</font></td><td bgcolor="#f0f0f0">&nbsp;<font size="-2"><i>Sample entry</i></font><br><br><font size="-1">Of the 3 targeted mutations published,<br>
+		     	the tm1Grid (MGI:3056460) gives the most  <br>interesting phenotype for our research purposes.</font></td>  
 
 </tr>
 

@@ -31,13 +31,17 @@ scientific community.</font></p><p>
 <font face="Verdana" size="-1">Helpful resources for using this form:
  </font></p> 
 <ul>
-<font face="Verdana" size="-1"><li><b>Genes for which one or more knockout allele(s) have been reported </b>
-    <ul> 
-      <li><a href="<!--#include file='include/ftp_url.html'-->/pub/reports/MGI_Knockout_Full.html">full list </a> of genes with knockout alleles.
+<font face="Verdana" size="-1"><li><b>Genes for which one or more knockout allele(s) have been reported </b><br>
+<font face="Verdana" size="-2">(These lists are limited to gene knockouts and conditional knockouts in the public domain.  They do not include genes that have other types of genetically engineered alleles or mutations)</font>
+   <ul> 
+      <li><a href="<!--#include file='include/ftp_url2.html'-->pub/reports/MGI_Knockout_NotPublic.html">candidate genes</a> to nominate for repatriating mice to public repositories.<br>
+          <em>Mice carrying knockouts of these genes have been created, but are <u>not</u> in a public repository.</em>
      </li>
-     <li>genes for which mice carrying a knockout <a href="<!--#include file='include/ftp_url.html'-->/pub/reports/MGI_Knockout_Public.html">are in a public repository</a>.
+     <li><a href="<!--#include file='include/ftp_url2.html'-->pub/reports/MGI_Knockout_Public.html">available knockouts</a>.<br>
+          <em>Mice carrying knockouts of these genes have been created, and are available through public repositories.</em>
      </li>
-     <li> genes for which mice carrying a knockout <a href="<!--#include file='include/ftp_url.html'-->/pub/reports/MGI_Knockout_NotPublic.html">are not in a public repository</a>.
+     <li><a href="<!--#include file='include/ftp_url2.html'-->pub/reports/MGI_Knockout_Full.html">full list of knockouts</a>.<br>
+          <em>Combination of the above two lists, showing genes that have been knocked-out or conditionally knocked-out.</em>
      </li>
    </ul>
  </li>
@@ -191,14 +195,13 @@ Please provide the references, or authors & descriptive title for unpublished da
 <font face="Verdana" size="-1">Please describe the phenotype, including
 homozygous and heterozygous viability and fertility, and include
 descriptions of major defects. You can use the
-<a href="<!--#include file='include/wi_url.html'-->/searches/MP_form.shtml">Mammalian Phenotype Ontology</a> for standard phenotype terms
-or enter free text.
+<a href="<!--#include file='include/wi_url.html'-->/searches/MP_form.shtml">Mammalian Phenotype Ontology</a> for standard phenotype terms or enter free text.<BR>
 <textarea name="pheno" rows="8" cols="70"></textarea>
 <br>
 Strain or genetic background of origin (where mutation was generated) &nbsp;<input name="origin" size="40" type="text"><br>
 Strain or genetic background on which mice were phenotyped &nbsp;<input name="phenobackgrd" size="50" type="text"><br>
 Is the strain now inbred? &nbsp;<input name="inbred" value="yes" type="radio">yes &nbsp;<input name="inbred" value="no" type="radio">no   <br>
-If the strain is inbred, provide number of inbreeding generations &nbsp;<input name="generations" size="10" type="text">  
+If the strain is inbred, how many generations has this strain been backcrossed to the current recipient background? &nbsp;<input name="generations" size="10" type="text">  
 <br>
 </font>
 <hr>
@@ -217,54 +220,54 @@ If the strain is inbred, provide number of inbreeding generations &nbsp;<input n
 
 <table  col=3 border=0 cellpadding=0 cellspacing=4>
 <tr>
-<td><font face="Verdana" size=-1>Last name:           			
-<td><font face="Verdana" size=-1><input TYPE="text" NAME="lastname" SIZE=50
-<td><font face="Verdana" size=-1>(required)</tr><p>
+<td><font face="Verdana" size=-1>Last name:    </font></td>       			
+<td><font face="Verdana" size=-1><input TYPE="text" NAME="lastname" SIZE=50></font></td>
+<td><font face="Verdana" size=-1>(required)</font></td></tr><p>
 <tr>
-<td><font face="Verdana" size=-1>First name (& initial):	
-<td><font face="Verdana" size=-1><input TYPE="text" NAME="firstname" SIZE=50
-<td><font face="Verdana" size=-1>(required)</td><p>
+<td><font face="Verdana" size=-1>First name (& initial):	</td>
+<td><font face="Verdana" size=-1><input TYPE="text" NAME="firstname" SIZE=50></td>
+<td><font face="Verdana" size=-1>(required)</font></td></tr><p>
 <tr>
-<td><font face="Verdana" size=-1>E-mail address:            		
-<td><font face="Verdana" size=-1><input TYPE="text" NAME="email" SIZE=50>
-<td><font face="Verdana" size=-1>(required)</td><p>
+<td><font face="Verdana" size=-1>E-mail address:           </td> 		
+<td><font face="Verdana" size=-1><input TYPE="text" NAME="email" SIZE=50></td>
+<td><font face="Verdana" size=-1>(required)</font></td></tr><p>
 
 <tr>
-<td><font face="Verdana" size=-1>Institute/Organization:   		
-<td><font face="Verdana" size=-1><input TYPE="text" NAME="organization" SIZE=50></tr><p>
+<td><font face="Verdana" size=-1>Institute/Organization:   		</font></td>
+<td><font face="Verdana" size=-1><input TYPE="text" NAME="organization" SIZE=50></font></td></tr><p>
 
 <tr>
-<td><font face="Verdana" size=-1>Address line 1: 
-<td><font face="Verdana" size=-1><input TYPE="text" NAME="address1" SIZE=50></tr><p>
+<td><font face="Verdana" size=-1>Address line 1: </font></td>
+<td><font face="Verdana" size=-1><input TYPE="text" NAME="address1" SIZE=50></font></td></tr><p>
 
 <tr>
-<td><font face="Verdana" size=-1>Address line 2: 
-<td><font face="Verdana" size=-1><input TYPE="text" NAME="address2" SIZE=50></tr><p>
+<td><font face="Verdana" size=-1>Address line 2: </font></td>
+<td><font face="Verdana" size=-1><input TYPE="text" NAME="address2" SIZE=50></font></td></tr><p>
 
 <tr>
-<td><font face="Verdana" size=-1>City: 
-<td><font face="Verdana" size=-1><input TYPE="text" NAME="city" SIZE=50></tr>
+<td><font face="Verdana" size=-1>City: </font></td>
+<td><font face="Verdana" size=-1><input TYPE="text" NAME="city" SIZE=50></font></td></tr>
 <p>
 <tr>
-<td><font face="Verdana" size=-1>State/Province: 
-<td><font face="Verdana" size=-1><input TYPE="text" NAME="state" SIZE=50></tr><p>
+<td><font face="Verdana" size=-1>State/Province: </font></td>
+<td><font face="Verdana" size=-1><input TYPE="text" NAME="state" SIZE=50></font></td></tr><p>
 
 <tr>
-<td><font face="Verdana" size=-1>Postal code: 
-<td><font face="Verdana" size=-1><input TYPE="text" NAME="postalcode" SIZE=50></tr><p>
+<td><font face="Verdana" size=-1>Postal code: </font></td>
+<td><font face="Verdana" size=-1><input TYPE="text" NAME="postalcode" SIZE=50></font></td></tr><p>
 
 <tr>
-<td><font face="Verdana" size=-1>Country: 
-<td><font face="Verdana" size=-1><input TYPE="text" NAME="country" SIZE=50></tr><p>
+<td><font face="Verdana" size=-1>Country: </font></td>
+<td><font face="Verdana" size=-1><input TYPE="text" NAME="country" SIZE=50></font></td></tr><p>
 
 
 <tr>
-<td><font face="Verdana" size=-1>Telephone: 
-<td><font face="Verdana" size=-1><input TYPE="text" NAME="telephone" SIZE=50></tr>
+<td><font face="Verdana" size=-1>Telephone: </font></td>
+<td><font face="Verdana" size=-1><input TYPE="text" NAME="telephone" SIZE=50></font></td></tr>
 <p>
 <tr>
-<td><font face="Verdana" size=-1>Fax: 
-<td><font face="Verdana" size=-1><input TYPE="text" NAME="fax" SIZE=50></tr>
+<td><font face="Verdana" size=-1>Fax: </font></td>
+<td><font face="Verdana" size=-1><input TYPE="text" NAME="fax" SIZE=50></font></td></tr>
 </table>
 <br><br>
 <P>For additional help with this form, or to learn more, send email to <A HREF="mailto:mgi-help@informatics.jax.org">mgi-help@informatics.jax.org</A>.

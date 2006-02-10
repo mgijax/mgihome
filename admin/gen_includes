@@ -15,6 +15,23 @@ def listToFile (str_list, filename):
     fp.close()
     return
 
+def stringToFileNoNL (s, filename):
+    #  Ultimately this should replace the stringToFile method
+    #  for the current release being driven by an NIH Survey Janan wants
+    #  out, we are only using this call for the generation of ftp_url2.html.
+    #  This change was authorized by Jill as it would require more testing
+    #  to make sure there was no negative affect on all the other URLs,
+    #  if all calls to stringToFile went through here.  This method
+    #  does not include the NL character that is added in the call stringToFile
+    #  makes to listToFile.  This newline character was causing problems in
+    #  firefox with seeing the url in the page.
+    print "writing %s" % filename
+    fp = open (filename, 'w')
+    fp.write ('%s' % s)
+    fp.close()
+
+    return
+
 def stringToFile (s, filename):
     listToFile ( [s], filename)
     return
@@ -26,6 +43,12 @@ def main ():
     stringToFile ('"%s";' % config.lookup ('WI_URL'), '../www/include/wi_url2.html')
     stringToFile (config.lookup ('GO_URL'), '../www/include/go_url.html')
     stringToFile (config.lookup ('FTP_URL'), '../www/include/ftp_url.html')
+    #  This version of the ftp_url file is being generated to support a problem
+    #  found in the implementation of TR7388.  The newline being written to
+    #  the file after the URL was not being handled well via firefox.
+    #  To minimize testing requirements Jill Lewis jlewis@informatics.jax.org
+    #  authorized the generation of a second ftp_url html file.
+    stringToFileNoNL (config.lookup ('FTP_URL'), '../www/include/ftp_url2.html')
     stringToFile (config.lookup ('MGIHOME_URL'), \
         '../www/include/mgihome_url.html')
     stringToFile (config.lookup ('TUTORIAL_URL'), \
