@@ -27,20 +27,26 @@
 </tbody></table>
 <h3><a name="34">MGI 3.44 release</a></h3>
 
-<p>MGI is pleased to announce its 3.44 release featuring a new <b>SNP Data in MGI</b> page. MGI loads mouse SNP data from dbSNP in conjunction with new dbSNP build releases. MGI loads mouse reference SNPs (rs) and the corresponding submitted SNP assays (ss) where at least one ss assay of a reference SNP has strains defined for the alleles submitted. MGI does not load rs or ss data for Reference SNPs having no submitted assays with defined strain/allele relationships. SNPs that map to multiple locations are loaded only if all locations for the SNP map to the same chromosome.</p>
-
-
-<p>The page contains information about the:
+<p>MGI is pleased to announce its 3.44 release featuring a summary of the SNP Data in MGI.</p> 
+<p>MGI loads mouse SNP data from dbSNP in conjunction with new dbSNP build releases. The data consists of mouse reference SNPs (rs) and the corresponding submitted SNP assays (ss) where at least one ss assay of a reference SNP has strains defined for the alleles submitted. MGI does not load rs or ss data for Reference SNPs having no submitted assays with defined strain/allele relationships. SNPs that map to multiple locations are loaded only if all locations for the SNP map to the same chromosome.</p>
+<p>The summary page contains details about the:
 <ul>
   <li>dbSNP build number</li>
   <li>Number of ss loaded</li>
   <li>Number of rs loaded</li>
   <li>Average number of ss per rs</li>
-  <li>Total number of Strains w/ SNPs</li>
-  <li>Number of rs per Strain</li>
+  <li>Total number of swtrains w/ SNPs</li>
+  <li>Number of rs per strain</li>
   <li>Number of ss per submitter</li>
-</ul>   
-</p>
+</ul>
+<p>In addition there are links to:
+<ul>
+  <li>dbSNP at NCBI</li>
+  <li>dbSNP build statistics</li>
+  <li>each assay submitter's web site</li>
+</ul>
+   
+</p></p>
 <p>The remainder of the 3.44 release consists of performance enhancements, bug fixes, and updates.</p>
 
  
