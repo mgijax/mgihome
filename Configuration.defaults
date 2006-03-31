@@ -17,8 +17,15 @@ SENDMAIL    /usr/lib/sendmail
 # If commented out, hard-coded addresses are used throughout.
 # CGI_MAILTARGET    pm@informatics.jax.org
 
+# optional e-mail address to use for testing gen submit cgi scripts which send e-mail.
+GEN_CGI_MAILTARGET    lnh@informatics.jax.org
+
 # path to the web directory of the GEN (Gene Expression Notebook) product
-GEN_PATH    /usr/local/mgi/live/gen/www/
+# GEN_PATH    /usr/local/mgi/live/gen/www/
+GEN_PATH     /usr/local/mgi/live/mgihome/www/GXD/GEN/
+
+# The path to GXD notebook userdocs
+OVERVIEW_URL ${GEN_PATH}gen.shtml
 
 # full URL to the associated MGI Web Interface installation
 WI_URL      http://www.informatics.jax.org/
