@@ -1,0 +1,92 @@
+<HTML>
+<HEAD>
+<TITLE>GEN-User Registration Form</TITLE>
+</HEAD>
+<BODY BGCOLOR=#FFFFFF>
+<TABLE WIDTH="100%" BORDER=0 CELLPADDING=0 CELLSPACING=0>
+  <TR><TD WIDTH="100%">
+    <TABLE WIDTH="100%" BORDER=0 CELLPADDING=0 CELLSPACING=0>
+     <TR><TD WIDTH="20%" VALIGN="center" ALIGN="left"><A HREF="<!--#include file="include/wi_url.html"-->" border=0><IMG SRC="images/mgi_logo_small.jpg" border=0 ALT="MGI"></A></TD>
+      <TD WIDTH="60%" ALIGN="center" VALIGN="center" BGCOLOR="#ffffff">
+       <FONT COLOR="#000000" SIZE=5 FACE="Arial,Helvetica">
+GEN-User Registration Form
+       </FONT></TD><TD WIDTH="20%" VALIGN="center" ALIGN="center" BGCOLOR="#ffffff">&nbsp;</TD></TR>
+<TR BGCOLOR="blue"><TD COLSPAN=3><FONT face="Arial,Helvetica" color="#ffffff">
+    <B>&nbsp;Mouse Genome Informatics</B></TD></TR>
+<TR><TD BGCOLOR="#ffffff"><FONT SIZE=-1 FACE="Arial,Helvetica"><CENTER><A HREF="<!--#include file="include/wi_url.html"-->">MGI Home</A>&nbsp;&nbsp;&nbsp;
+<a href="<!--#include file="include/mgihome_url.html"-->help/help.shtml">Help
+</A></FONT></CENTER></TD></TR>
+</TABLE></TD></TR>
+</TABLE>
+<HR>
+<!--This is the MGI version of the User Registration form.Revised 1/13/1999.-->
+<!--<BODY BGCOLOR="#ffffff">
+</HEAD> -->
+<P>
+<H1>GEN - User Registration Form</H1>
+In order to download a copy of the GEN, please register. We will not share your information with anyone. Registration allows us to better monitor the systems requirements of our users and allows us to notify you when improvements to the GEN are made available.
+<P>
+<HR>
+<FORM METHOD="POST" ACTION="gen_submit.cgi">
+<DL>
+<pre>
+<DD>First name:      <INPUT TYPE="text" NAME="firstname" SIZE=30> (required)
+<DD>Last name:       <INPUT TYPE="text" NAME="lastname" SIZE=30> (required)
+<DD>Middle initial:  <INPUT TYPE="text" NAME="mi" SIZE=3> 
+<p>
+<DD>E-mail address:  <INPUT TYPE="text" NAME="email" SIZE=30> (required)
+<DD>Institute/Organization:     <INPUT TYPE="text" NAME="organization" SIZE=40>
+<p>
+<DT>Computer Information:
+<DT>Please check the type(s) of computer you currently use.
+<p>
+<SELECT SEVERAL NAME="computer" MULTIPLE SIZE=2>
+<option value="mac"> Macintosh
+<option value="pc">PC
+</SELECT SEVERAL>
+<p> 
+<DT>Operating System:
+<DT>Please select the operating system version(s) you curently use:<P>
+<SELECT multiple NAME="os" MULTIPLE SIZE=3>
+<option value="MacOS X"> MacOS X
+<option value="MacOS 8.0"> MacOS 8.0 or above
+<option value="Windows NT"> Windows NT
+<option value="Windows NT4.#"> Windows NT 4.#
+<option value="Windows 2000"> Windows 2000
+<option value="Windows XP"> Windows XP
+<option value="Windows Me"> Windows Me
+<option value="Windows 98"> Windows 98
+<option value="Windows 95"> Windows 95
+</SELECT multiple>
+<p>
+<p>
+Click on "Submit" to submit your registration and to download a copy<br>of the GEN. Click on "Reset Form" to delete all the values you have
+<br>entered on this form. THANK YOU. 
+</pre>
+<p>
+<HR>
+<INPUT TYPE=submit VALUE="Submit"> <INPUT TYPE=reset VALUE="Reset Form">
+<P>
+</FORM>
+</BODY>
+</HTML>
+
+<!--
+Warranty Disclaimer and Copyright Notice
+
+ THE JACKSON LABORATORY MAKES NO REPRESENTATION ABOUT THE SUITABILITY OR 
+ ACCURACY OF THIS SOFTWARE OR DATA FOR ANY PURPOSE, AND MAKES NO WARRANTIES, 
+ EITHER EXPRESS OR IMPLIED, INCLUDING MERCHANTABILITY AND FITNESS FOR A 
+ PARTICULAR PURPOSE OR THAT THE USE OF THIS SOFTWARE OR DATA WILL NOT 
+ INFRINGE ANY THIRD PARTY PATENTS, COPYRIGHTS, TRADEMARKS, OR OTHER RIGHTS.  
+ THE SOFTWARE AND DATA ARE PROVIDED "AS IS".
+
+ This software and data are provided to enhance knowledge and encourage 
+ progress in the scientific community and are to be used only for research 
+ and educational purposes.  Any reproduction or use for commercial purpose 
+ is prohibited without the prior express written permission of the Jackson 
+ Laboratory.
+
+Copyright © 1996, 1999, 2002 by The Jackson Laboratory
+All Rights Reserved
+-->
