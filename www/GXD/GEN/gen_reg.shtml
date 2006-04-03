@@ -37,7 +37,7 @@ In order to download a copy of the GEN, please register. We will not share your 
 <DD>E-mail address:  <INPUT TYPE="text" NAME="email" SIZE=30> (required)
 <DD>Institute/Organization:     <INPUT TYPE="text" NAME="organization" SIZE=40>
 <p>
-<DT>Computer Information:
+<DT><b>Computer Information:</b>
 <DT>Please check the type(s) of computer you currently use.
 <p>
 <SELECT SEVERAL NAME="computer" MULTIPLE SIZE=2>
@@ -45,19 +45,35 @@ In order to download a copy of the GEN, please register. We will not share your 
 <option value="pc">PC
 </SELECT SEVERAL>
 <p> 
-<DT>Operating System:
+<DT><b>Operating System:</b>
 <DT>Please select the operating system version(s) you curently use:<P>
 <SELECT multiple NAME="os" MULTIPLE SIZE=3>
 <option value="MacOS X"> MacOS X
-<option value="MacOS 8.0"> MacOS 8.0 or above
+<option value="MacOS 9"> MacOS 9 or above
 <option value="Windows NT"> Windows NT
-<option value="Windows NT4.#"> Windows NT 4.#
 <option value="Windows 2000"> Windows 2000
 <option value="Windows XP"> Windows XP
 <option value="Windows Me"> Windows Me
 <option value="Windows 98"> Windows 98
-<option value="Windows 95"> Windows 95
+<option value="none"> None of these
 </SELECT multiple>
+<p>
+<p> 
+<DT><b>Excel version used:</b>
+<DT>Please select the Excel version(s) you curently use:
+<i>(If you are uncertain which version of Excel you have, open your Excel program.
+Under Help, choose About Microsoft Excel; it will list the version.Please note
+that the GEN works more reliably on some versions of Excel than others; please 
+consult GEN instructions for specifics.)</i>
+<P>
+<SELECT NAME="excelVer" SIZE=3>
+<option value="Excel 2004"> Excel 2004
+<option value="Excel 2003">Excel 2003
+<option value="Excel 2000">Excel 2000
+<option value="Excel 97"> Excel 97
+<option value="Excel X"> Excel X
+<option value="none"> None of these
+</SELECT>
 <p>
 <p>
 Click on "Submit" to submit your registration and to download a copy<br>of the GEN. Click on "Reset Form" to delete all the values you have
@@ -87,6 +103,6 @@ Warranty Disclaimer and Copyright Notice
  is prohibited without the prior express written permission of the Jackson 
  Laboratory.
 
-Copyright © 1996, 1999, 2002 by The Jackson Laboratory
+Copyright Â© 1996, 1999, 2002 by The Jackson Laboratory
 All Rights Reserved
 -->

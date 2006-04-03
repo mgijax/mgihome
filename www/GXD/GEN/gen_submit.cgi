@@ -37,6 +37,7 @@ labels = {
 	'organization'	: 'Institute/Organization',
 	'computer'      : 'Computer',
 	'os'		: 'Operating System',
+   'excelVer' : 'Excel Version',
 	 }
 # order in which fields should be included in the e-mail.  This is a list of
 # tuples, where each tuple is: (section name, [ fieldnames in order ])
@@ -45,7 +46,7 @@ field_order = [
 		[ 'lastname', 'firstname', 'email', 'organization'
 		]),
 	('Computer Information',
-		['computer', 'os'
+		['computer', 'os','excelVer'
 		])
 	       ]
 
