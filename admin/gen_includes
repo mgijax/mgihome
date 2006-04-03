@@ -41,7 +41,6 @@ def main ():
     listToFile (homelib.footer(), '../www/include/footer.html')
     stringToFile (config.lookup ('WI_URL'), '../www/include/wi_url.html')
     stringToFile ('"%s";' % config.lookup ('WI_URL'), '../www/include/wi_url2.html')
-    stringToFile (config.lookup ('GO_URL'), '../www/include/go_url.html')
     stringToFile (config.lookup ('FTP_URL'), '../www/include/ftp_url.html')
     #  This version of the ftp_url file is being generated to support a problem
     #  found in the implementation of TR7388.  The newline being written to
@@ -56,10 +55,10 @@ def main ():
     stringToFile (config.lookup ('GB_URL'), '../www/include/gb_url.html')
     stringToFile (config.lookup ('LOCUSLINK_URL'), \
         '../www/include/locuslink_url.html')
-    stringToFile (config.lookup ('RATMAP_URL'), \
-        '../www/include/ratmap_url.html')
     stringToFile (config.lookup ('RGD_URL'), \
         '../www/include/rgd_url.html')
+    stringToFile (config.lookup ('ENTREZ_URL'), \
+        '../www/include/entrez_url.html')
     stringToFile (config.lookup ('GLOSSARY_URL'), \
         '../www/include/glossary_url.html')
     stringToFile (config.lookup ('SCHEMA'),\
