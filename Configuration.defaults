@@ -24,6 +24,9 @@ GEN_CGI_MAILTARGET    lnh@informatics.jax.org
 # GEN_PATH    /usr/local/mgi/live/gen/www/
 GEN_PATH     /usr/local/mgi/live/mgihome/www/GXD/GEN/
 
+# path to the web directory of the Annatomical Dictionary
+ADPATH   /usr/local/mgi/live/wi/www/GXD/GENAD/
+
 # The path to GXD notebook userdocs
 OVERVIEW_URL ${GEN_PATH}gen.shtml
 
