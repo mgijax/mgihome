@@ -18,11 +18,15 @@ SENDMAIL    /usr/lib/sendmail
 # CGI_MAILTARGET    pm@informatics.jax.org
 
 # optional e-mail address to use for testing gen submit cgi scripts which send e-mail.
-GEN_CGI_MAILTARGET    lnh@informatics.jax.org
+GEN_CGI_MAILTARGET    jeffc@informatics.jax.org
 
 # path to the web directory of the GEN (Gene Expression Notebook) product
 # GEN_PATH    /usr/local/mgi/live/gen/www/
 GEN_PATH     /usr/local/mgi/live/mgihome/www/GXD/GEN/
+
+# path to the GEN.xls (Gene Expression Notebook) executable file
+GEN_XLS_PATH     /usr/local/mgi/live/gen/data/
+
 
 # path to the web directory of the Annatomical Dictionary
 ADPATH   /usr/local/mgi/live/wi/www/GXD/GENAD/
