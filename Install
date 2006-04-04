@@ -74,6 +74,8 @@ do
 			GEN_PATH=$value;;
      ADPATH)
         ADPATH=$value;;
+     GEN_XLS_PATH)
+        GEN_XLS_PATH=$value;;
 	  PYTHON)
 			PYTHON=$value;;
      GROUP)
@@ -141,13 +143,26 @@ do
 	fi
 	ln -s $CONFIG_REL config.pyc
    
+   if [ -h GEN.xls ]; then
+		rm  GEN.xls
+	fi
+   # make symbolic link to ../gen/data/GEN.xls
+   ln -s ${GEN_XLS_PATH}GEN.xls GEN.xls
+   
    if [ -h gen_wi_utils.pyc ]; then
 		rm gen_wi_utils.pyc
 	fi
 	ln -s $GENUTILS_REL gen_wi_utils.pyc
 	cd $TOP
 done
-
+# Check if the GEN.xls file is missing from $GEN_XLS_PATH
+cd www/GXD/GEN
+   if test ! -r GEN.xls
+     then
+      echo "Missing GEN.xls executable file.  Please create GEN.xls under $GEN_XLS_PATH."
+   fi
+cd $TOP
+  
 # process the eGUL links.dat file
 
 cd www/egul/
