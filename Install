@@ -9,6 +9,7 @@ TOP=`pwd`
 CONFIGURATION=Configuration
 PYTHON_REL=$TOP/bin/python
 CONFIG_REL=$TOP/lib/python/config.pyc
+GENUTILS_REL=$TOP/lib/python/gen_wi_utils.pyc
 
 # includeLinker function - create a ../include symbolic link in the current
 # directory and in each subdirectory (and now a ../stylesheet symbolic link
@@ -71,9 +72,13 @@ do
 			MGIHOME_URL=$value;;
 		GEN_PATH)
 			GEN_PATH=$value;;
-		PYTHON)
+     ADPATH)
+        ADPATH=$value;;
+     GEN_XLS_PATH)
+        GEN_XLS_PATH=$value;;
+	  PYTHON)
 			PYTHON=$value;;
-		GROUP)
+     GROUP)
 			GROUP=$value;;
 		WI_PATH)
 			WI_PATH=$value;;
@@ -96,6 +101,21 @@ if [ ! -h bin/python ]; then
 	cd $TOP
 fi
 
+# make A symbolic link to the .../wi/www/GXD/GENAD directory
+
+cd www/GXD/GEN
+if [ -h GENAD ]; then
+	   echo "Making 'AD' directory in `pwd`"
+		rm GENAD
+fi
+ln -s $ADPATH GENAD
+if [ -h AD ]; then
+	   echo "Making 'AD' directory in `pwd`"
+		rm AD
+fi
+ln -s $ADPATH AD
+cd $TOP
+
 # compile python libraries and make sure they're readable
 
 cd lib/python
@@ -109,7 +129,7 @@ cd $TOP
 
 # add links to python and the config file from selected directories
 
-for dir in www/nomen www/lists www/support www/submissions admin www/feedback www/submissions/strains www/egul www/other
+for dir in www/nomen www/lists www/support www/submissions admin www/feedback www/submissions/strains www/egul www/other www/GXD/GEN
 do
 	cd $dir
 
@@ -122,10 +142,27 @@ do
 		rm config.pyc
 	fi
 	ln -s $CONFIG_REL config.pyc
-
+   
+   if [ -h GEN.xls ]; then
+		rm  GEN.xls
+	fi
+   # make symbolic link to ../gen/data/GEN.xls
+   ln -s ${GEN_XLS_PATH}GEN.xls GEN.xls
+   
+   if [ -h gen_wi_utils.pyc ]; then
+		rm gen_wi_utils.pyc
+	fi
+	ln -s $GENUTILS_REL gen_wi_utils.pyc
 	cd $TOP
 done
-
+# Check if the GEN.xls file is missing from $GEN_XLS_PATH
+cd www/GXD/GEN
+   if test ! -r GEN.xls
+     then
+      echo "Missing GEN.xls executable file.  Please create GEN.xls under $GEN_XLS_PATH."
+   fi
+cd $TOP
+  
 # process the eGUL links.dat file
 
 cd www/egul/
@@ -142,6 +179,7 @@ fi
 cd $TOP/admin
 gen_rcd
 gen_includes
+#gen_includes.py
 
 cd $TOP/www/include
 if [ -h bodyStart.html ]; then
@@ -183,14 +221,6 @@ cd www
 includeLinker
 cd $TOP
 
-# add link to the GEN product from within the www/GXD directory
-
-cd www/GXD
-if [ -h GEN ]; then
-	rm GEN
-fi
-ln -s $GEN_PATH GEN
-cd $TOP
 #
 # Warranty Disclaimer and Copyright Notice
 # 
@@ -207,7 +237,7 @@ cd $TOP
 #  is prohibited without the prior express written permission of the Jackson 
 #  Laboratory.
 # 
-# Copyright © 1996, 1999, 2002 by The Jackson Laboratory
+# Copyright (c) 1996, 1999, 2002 by The Jackson Laboratory
 # All Rights Reserved
 #
 

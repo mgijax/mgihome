@@ -44,7 +44,6 @@
 </table>
 <P>Links to acyl-CoA synthetase long-chain family data:
 <TABLE bgcolor="white" border=1 cellpadding=6> 
- <TR>
  <TR bgcolor="E0E0E0">
   <TH valign="bottom">Mouse Symbol</th>
   <TH valign="bottom"><nobr>Mouse Seq. ID <sup>1</sup></th>
@@ -61,13 +60,12 @@
 <td valign="top"><a href="<!--#include file='include/java_url.html'-->WIFetch?page=markerDetail&amp;key=18754">Acsl1</a></td> 
 <td valign="top"><a href="<!--#include file='include/java_url.html'-->WIFetch?page=sequenceDetail&amp;id=NM_007981">NM_007981</a></td> 
 <td valign="top">8 (B2)</td> 
-<td valign="top"><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=gene&amp;cmd=Retrieve&amp;dopt=Graphics&amp;list_uids=2180">ASCL1</a></td> 
-<td valign="top"><a href="http://www.ncbi.nlm.nih.gov/entrez/viewer.fcgi?db=Nucleotide&amp;dopt=GenBank&amp;val=40807490">NM_001995</a></td>
-<td valign="top"><a href="http://rgd.mcw.edu/tools/genes/genes_view.cgi?id=2015">Acsl1</a><br> </td> 
-<td valign="top"><a href="http://www.ncbi.nlm.nih.gov/entrez/viewer.fcgi?db=Nucleotide&amp;dopt=GenBank&amp;val=25742738">NM_012820</a></td> 
+<td valign="top"><a href="<!--#include file='include/entrez_url.html'-->2180">ASCL1</a></td> 
+<td valign="top"><a href="<!--#include file='include/gb_url.html'-->NM_001995">NM_001995</a></td>
+<td valign="top"><a href="<!--#include file='include/rgd_url.html'-->2015">Acsl1</a></td>
+<td valign="top"><a href="<!--#include file='include/gb_url.html'-->NM_012820">NM_012820</a></td> 
 <td valign="top">Acas1<br> Acs<br> Facl2<br> FACS</td> 
 </tr> 
-
 <!--Acls3-->  
 <tr> 
 <td valign="top"><a href="<!--#include file='include/java_url.html'-->WIFetch?page=markerDetail&amp;key=58185">Acsl3</a></td> 
@@ -75,9 +73,10 @@
 href="<!--#include file='include/java_url.html'-->WIFetch?page=sequenceDetail&amp;id=NM_028817">NM_028817</a></td> 
 <td valign="top">1 (24.1)</td> 
 <td valign="top"><a
-href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=gene&amp;cmd=Retrieve&amp;dopt=Graphics&amp;list_uids=2181">ACSL3</a></td> 
-<td valign="top"><a href="http://www.ncbi.nlm.nih.gov/entrez/viewer.fcgi?db=Nucleotide&amp;dopt=GenBank&amp;val=42794751">NM_004457</a></td> <td valign="top"><a href="http://rgd.mcw.edu/tools/genes/genes_view.cgi?id=70552">Acsl3</a></td> 
-<td valign="top"><a href="http://www.ncbi.nlm.nih.gov/entrez/viewer.fcgi?db=Nucleotide&amp;dopt=GenBank&amp;val=16923951">NM_057107</a></td> <td valign="top">2610510B12Rik<br>C85929<br>Facl3</td> 
+href="<!--#include file='include/entrez_url.html'-->2181">ACSL3</a></td> 
+<td valign="top"><a href="<!--#include file='include/gb_url.html'-->NM_004457">NM_004457</a></td> 
+<td valign="top"><a href="<!--#include file='include/rgd_url.html'-->70552">Acsl3</a></td> 
+<td valign="top"><a href="<!--#include file='include/gb_url.html'-->NM_057107">NM_057107</a></td> <td valign="top">2610510B12Rik<br>C85929<br>Facl3</td> 
 </tr> 
 
 <!--Acls4--> 
@@ -85,10 +84,11 @@ href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=gene&amp;cmd=Retrieve&amp
 <td
 valign="top"><a href="<!--#include file='include/java_url.html'-->WIFetch?page=markerDetail&amp;key=45980">Acsl4</a></td> 
 <td valign="top"><a href="<!--#include file='include/java_url.html'-->WIFetch?page=sequenceDetail&amp;id=NM_207625">NM_207625</a></td> 
-<td valign="top">X (syntenic)</td><td valign="top"> <a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=gene&amp;cmd=Retrieve&amp;dopt=Graphics&amp;list_uids=2182">ACSL4</a></td> 
-<td valign="top"><a href="http://www.ncbi.nlm.nih.gov/entrez/viewer.fcgi?db=Nucleotide&amp;dopt=GenBank&amp;val=12669908">NM_022977</a></td> <td valign="top"><a href="http://rgd.mcw.edu/tools/genes/genes_view.cgi?id=69401">Acsl4</a></td> 
+<td valign="top">X (syntenic)</td><td valign="top"> <a href="<!--#include file='include/entrez_url.html'-->2182">ACSL4</a></td> 
+<td valign="top"><a href="<!--#include file='include/gb_url.html'-->NM_022977">NM_022977</a></td> 
+<td valign="top"><a href="<!--#include file='include/rgd_url.html'-->69401">Acsl4</a></td> 
 <td valign="top"><a
-href="http://www.ncbi.nlm.nih.gov/entrez/viewer.fcgi?db=Nucleotide&amp;dopt=GenBank&amp;val=16758425">NM_053623</a></td> 
+href="<!--#include file='include/gb_url.html'-->NM_053623">NM_053623</a></td> 
 <td valign="top">9430020A05Rik<br> ACS4<br> Facl4<br> Lacs4</td> 
 </tr> 
 
@@ -99,9 +99,9 @@ href="http://www.ncbi.nlm.nih.gov/entrez/viewer.fcgi?db=Nucleotide&amp;dopt=GenB
 href="<!--#include file='include/java_url.html'-->WIFetch?page=sequenceDetail&amp;id=NM_027976">NM_027976</a></td> 
 <td valign="top">19 (D2)</td> 
 <td valign="top">
-<a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=gene&amp;cmd=Retrieve&amp;dopt=Graphics&amp;list_uids=51703">ACSL5</a></td> 
-<td valign="top"><a href="http://www.ncbi.nlm.nih.gov/entrez/viewer.fcgi?db=Nucleotide&amp;dopt=GenBank&amp;val=42794759">NM_203380</a></td> <td valign="top"><a href="http://rgd.mcw.edu/tools/genes/genes_view.cgi?id=69402">Acsl5</a></td> 
-<td valign="top"><a href="http://www.ncbi.nlm.nih.gov/entrez/viewer.fcgi?db=Nucleotide&amp;dopt=GenBank&amp;val=16758397">NM_053607</a></td> <td valign="top">1700030F05Rik<br>Facl5</td> 
+<a href="<!--#include file='include/entrez_url.html'-->51703">ACSL5</a></td> 
+<td valign="top"><a href="<!--#include file='include/gb_url.html'-->NM_203380">NM_203380</a></td> <td valign="top"><a href="<!--#include file='include/rgd_url.html'-->69402">Acsl5</a></td> 
+<td valign="top"><a href="<!--#include file='include/gb_url.html'-->NM_053607">NM_053607</a></td> <td valign="top">1700030F05Rik<br>Facl5</td> 
 </tr> 
 
 <!--Acls6--> 
@@ -110,9 +110,9 @@ href="<!--#include file='include/java_url.html'-->WIFetch?page=sequenceDetail&am
 <td valign="top"><a href="<!--#include file='include/java_url.html'-->WIFetch?page=sequenceDetail&amp;id=NM_144823">NM_144823</a></td> 
 <td valign="top">11 (29.35 cM)</td> 
 <td valign="top">
-<a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=gene&amp;cmd=Retrieve&amp;dopt=Graphics&amp;list_uids=23305">ACSL6</a></td> 
-<td valign="top"><a href="http://www.ncbi.nlm.nih.gov/entrez/viewer.fcgi?db=Nucleotide&amp;dopt=GenBank&amp;val=57165409">NM_015256</a></td> <td valign="top"><a href="http://rgd.mcw.edu/tools/genes/genes_view.cgi?id=69403">Acsl6</a></td> 
-<td valign="top"><a href="http://www.ncbi.nlm.nih.gov/entrez/viewer.fcgi?db=Nucleotide&amp;dopt=GenBank&amp;val=18543340">NM_130739</a></td> <td valign="top">A330035H04Rik<br> Facl6<br>Lacsl</td> </tr>
+<a href="<!--#include file='include/entrez_url.html'-->23305">ACSL6</a></td> 
+<td valign="top"><a href="<!--#include file='include/gb_url.html'-->NM_015256">NM_015256</a></td> <td valign="top"><a href="<!--#include file='include/rgd_url.html'-->69403">Acsl6</a></td> 
+<td valign="top"><a href="<!--#include file='include/gb_url.html'-->NM_130739">NM_130739</a></td> <td valign="top">A330035H04Rik<br> Facl6<br>Lacsl</td> </tr>
 </table>
 <sup>1</sup>&nbsp;&nbsp;&nbsp;Representative example; in general, this sequence is a long or full-length cDNA sequence.<br>
 <p><b>Family Note:</b>&nbsp;Members of this family convert free long-chain fatty acids into fatty acyl-CoA.</p> 

@@ -17,8 +17,22 @@ SENDMAIL    /usr/lib/sendmail
 # If commented out, hard-coded addresses are used throughout.
 # CGI_MAILTARGET    pm@informatics.jax.org
 
+# optional e-mail address to use for testing gen submit cgi scripts which send e-mail.
+GEN_CGI_MAILTARGET    jeffc@informatics.jax.org
+
 # path to the web directory of the GEN (Gene Expression Notebook) product
-GEN_PATH    /usr/local/mgi/live/gen/www/
+# GEN_PATH    /usr/local/mgi/live/gen/www/
+GEN_PATH     /usr/local/mgi/live/mgihome/www/GXD/GEN/
+
+# path to the GEN.xls (Gene Expression Notebook) executable file
+GEN_XLS_PATH     /usr/local/mgi/live/gen/data/
+
+
+# path to the web directory of the Annatomical Dictionary
+ADPATH   /usr/local/mgi/live/wi/www/GXD/GENAD/
+
+# The path to GXD notebook userdocs
+OVERVIEW_URL ${GEN_PATH}gen.shtml
 
 # full URL to the associated MGI Web Interface installation
 WI_URL      http://www.informatics.jax.org/
@@ -32,9 +46,6 @@ MGIHOME_URL http://www.informatics.jax.org/mgihome/
 # full URL to the associated ftp site
 FTP_URL     ftp://ftp.informatics.jax.org/
 
-# full URL to the GO browser
-GO_URL      http://www.informatics.jax.org/go/
-
 # full URL to the MGI tutorials
 TUTORIAL_URL    http://www.informatics.jax.org/tutorials/
 
@@ -45,16 +56,13 @@ DBUSER      mgd_public
 DBPASSWORD  mgdpub
 
 # URL to NCBI's Entrez for Genbank sequence IDs
-GB_URL      http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?cmd=Search&db=Nucleotide&&doptcmdl=Genbank&term=
+GB_URL      http://www.ncbi.nlm.nih.gov/entrez/viewer.fcgi?val=
 
 # URL to NCBI's LocusLink
 LOCUSLINK_URL   http://www.ncbi.nlm.nih.gov/LocusLink/LocRpt.cgi?l=
 
-# URL to RGD, kept for backwards compaiblity use RGD_URL instead
-RATMAP_URL  http://ratmap.gen.gu.se/ShowSingleLocus.htm?accno=
-
 #URL to RGD
-RGD_URL     http://ratmap.gen.gu.se/ShowSingleLocus.htm?accno=
+RGD_URL     http://rgd.mcw.edu/tools/genes/genes_view.cgi?id=
 
 #URL to Entrez where we find human orthologs
 ENTREZ_URL  http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=gene&cmd=Retrieve&dopt=Graphics&list_uids=
