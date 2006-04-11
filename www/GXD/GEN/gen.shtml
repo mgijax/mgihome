@@ -24,112 +24,60 @@ GEN User Guide </FONT>
 <blockquote>
 <h3><a name="toc"></a>Table of Contents</h3>
 <ul>
- <li><a href="#whatisgen">What is the Gene Expression Notebook (GEN)?</a>
- <li><a href="#sysreq">GEN system requirements</a>
- <li><a href="#use_doc">Using this document</a>
- <li><a href="#terms">GEN terminology</a>
- <li><a href="#install">Downloading and installing GEN</a>
- <li><a href="#opengen">Opening GEN</a>
-  <li><a href="#select_main">Selecting an action from the Main menu</a>
-  <li><a href="#assay_and_worksheets">GEN assay sheets and worksheets</a>
+ <li><a href="#whatisgen">What is the Gene Expression Notebook (GEN)?</a></li>
+ <li><a href="#sysreq">GEN system requirements</a></li>
+ <li><a href="#use_doc">Using this document</a></li>
+ <li><a href="#terms">GEN terminology</a></li>
+ <li><a href="#install">Downloading and installing GEN</a></li>
+ <li><a href="#opengen">Opening GEN</a></li>
+  <li><a href="#select_main">Selecting an action from the Main menu</a></li>
+  <li><a href="#assay_and_worksheets">GEN assay sheets and worksheets</a></li>
     <ul>
-
-       <li><a href="#open_worksheet">Using worksheets</a>
-
-       <li><a href="#enter_worksheet_data">Entering worksheet data</a>
-
-       <li><a href="#save_data">Saving worksheet data</a>
-
-     <li><a href="#define_fields">Defining worksheet fields</a>
-
-        <ul>
-
-        <li><a href="#genes">Genes (Genes)</a>
-
-        <li><a href="#probes">Probes (Probes)</a>
-
-        <li><a href="#probe_prep">Probe Preparation Methods (Probe Prep)</a>
-
-        <li><a href="#specimens">Immunohistochemistry and In Situ Specimens (Specimens)</a>
-
-        <li><a href="#specimen_prep">Immunohistochemistry and In Situ Specimen Prep (Specimen Prep)</a>
-
-        <li><a href="#antibodies">Antibodies (Antibodies)</a>
-
-        <li><a href="#antigens">Antigens (Antigens)</a>
-
-        <li><a href="#primary_detection">Primary Antibody Detection Methods (Primary Detection)</a>
-
-        <li><a href="#primer_pair">Primer Pairs (Primer Pair)</a>
-
-        <li><a href="#cDNA">cDNA Generation Methods (CDNA Generation)</a>
-
-        <li><a href="#pcr_condition">PCR Conditions (PCR Conditions)</a>
-
-        <li><a href="#northern">Northern Samples (Northern Samples)</a>
-
-
-
-
-
-     <li><a href="#western">Western Samples (Western Samples)</a>
-
-        <li><a href="#pcr_samples">PCR Samples (PCR Samples)</a>
-
-        </ul>
-
-     <li><a href="#create_new_ws_field">Creating new worksheet fields</a>
-
-       <li><a href="#use_assay">Using assay sheets</a>
-
-   <li><a href="#create_new_assay">Creating a new assay sheet</a>
-
-    <li><a href="#open_assay">Opening assay sheets</a>
-
-    <li><a href="#experimental">Adding experimental details to assay sheets</a>
-
-     <li><a href="#manage_window">Using a Manage window to enter experimental details</a>
-
-     <li><a href="#add_specimen">Adding specimens/samples</a>
-
-   <li><a href="#store_additional">Storing additional experimental details</a>
-
-   <li><a href="#store_results">Storing results</a>
-
+    <li><a href="#open_worksheet">Using worksheets</a></li>
+       <li><a href="#enter_worksheet_data">Entering worksheet data</a></li>
+       <li><a href="#save_data">Saving worksheet data</a></li>
+     <li><a href="#define_fields">Defining worksheet fields</a></li>
+      <ul>
+       <li><a href="#genes">Genes (Genes)</a></li>
+       <li><a href="#probes">Probes (Probes)</a></li>
+      <li><a href="#probe_prep">Probe Preparation Methods (Probe Prep)</a></li>
+        <li><a href="#specimens">Immunohistochemistry and In Situ Specimens (Specimens)</a></li>
+        <li><a href="#specimen_prep">Immunohistochemistry and In Situ Specimen Prep (Specimen Prep)</a></li>
+        <li><a href="#antibodies">Antibodies (Antibodies)</a></li>
+        <li><a href="#antigens">Antigens (Antigens)</a></li>
+        <li><a href="#primary_detection">Primary Antibody Detection Methods (Primary Detection)</a></li>
+        <li><a href="#primer_pair">Primer Pairs (Primer Pair)</a></li>
+        <li><a href="#cDNA">cDNA Generation Methods (CDNA Generation)</a></li>
+        <li><a href="#pcr_condition">PCR Conditions (PCR Conditions)</a></li>
+        <li><a href="#northern">Northern Samples (Northern Samples)</a></li>
+    <li><a href="#western">Western Samples (Western Samples)</a></li>
+        <li><a href="#pcr_samples">PCR Samples (PCR Samples)</a></li>
+      </ul>
+     <li><a href="#create_new_ws_field">Creating new worksheet fields</a></li>
+       <li><a href="#use_assay">Using assay sheets</a></li>
+   <li><a href="#create_new_assay">Creating a new assay sheet</a></li>
+    <li><a href="#open_assay">Opening assay sheets</a></li>
+    <li><a href="#experimental">Adding experimental details to assay sheets</a></li>
+     <li><a href="#manage_window">Using a Manage window to enter experimental details</a></li>
+     <li><a href="#add_specimen">Adding specimens/samples</a></li>
+   <li><a href="#store_additional">Storing additional experimental details</a></li>
+   <li><a href="#store_results">Storing results</a></li>
      <ul>
-
-     <li><a href="#insitu_immuno">Recording results for in situ and immunohistochemistry assays</a>
-
-     <li><a href="#blot">Recording results for blot assays</a>
-
+     <li><a href="#insitu_immuno">Recording results for in situ and immunohistochemistry assays</a></li>
+     <li><a href="#blot">Recording results for blot assays</a></li>
    </ul>
-
    </ul>
-
-   <li><a href="#copy_new">Copying information into a new workbook</a>
-
- <li><a href="#prepare_for_submission">Determining standard nomenclature for mouse genes and alleles</a>
-
- <li><a href="#validate">Validation in the GEN</a>
-
-  <li><a href="#create_new_sub">Submitting data to GXD</a>
-
-<li><a href="#modify">Customizing GEN to your needs</a>
-
-<li><a href="#trouble">Troubleshooting the GEN</a>
-
-<li><a href="#get_help">Getting help</a>
-
-<li><a href="#tutorial">Getting started using the GEN (tutorial)</a>
-
+   <li><a href="#copy_new">Copying information into a new workbook</a></li>
+ <li><a href="#prepare_for_submission">Determining standard nomenclature for mouse genes and alleles</a></li>
+ <li><a href="#validate">Validation in the GEN</a></li>
+  <li><a href="#create_new_sub">Submitting data to GXD</a></li>
+<li><a href="#modify">Customizing GEN to your needs</a></li>
+<li><a href="#trouble">Troubleshooting the GEN</a></li>
+<li><a href="#get_help">Getting help</a></li>
+<li><a href="#tutorial">Getting started using the GEN (tutorial)</a></li>
 </ul>
-
-
-
 </blockquote>
-
 <hr>
-
 <blockquote>
 
 <h3><a name="whatisgen"></a>What is the Gene Expression Notebook?</h3>
@@ -148,35 +96,26 @@ GEN User Guide </FONT>
 
 <li>submit your mouse data for inclusion in the Gene Expression Database.
 
-</ul></p>
+</ul></p> 
 
 <p>Because GEN is a species-neutral tool, you can use it to manage expression data from any organism. You can also customize it to include fields for details you consider important such as dates, freezer locations of probes or specimens, or any other record details.
 </blockquote>
 <h3><a name="sysreq"></a>GEN system requirements</h3>
 <blockquote>
 <p>GEN runs in Microsoft Excel. The following are the version and memory requirements for optimum performance.</p>
-
-    <table border=1 cellpadding=4 cellspacing=1>
-
-    <TR><TH ALIGN="left" colspan=2 VALIGN="top">Macintosh Requirements</th></tr>
-
-    <TR><td valign="top">Version</td> <td valign="top">Excel X </td></tr>
-
-    <TR><td valign="top">Operating system</td><td valign="top">OS X, OS 9</td></tr>
-
-    <TR><td valign="top">Memory</td><td valign="top">The number of images and amount of experimental data GEN can hold is limited by the amount of memory assigned to GEN. Therefore, for Mac OS 9, set the Excel memory to at least 256 megabytes. Mac OS X will allocate memory automatically.</td></tr>
-
-<tr><td align="center" colspan="2">GEN may crash when used with Excel 2004. Therefore, we do not currently recommend its use.</td></tr>
-
-    <TR><TH ALIGN="left" colspan=2 VALIGN="top">PC Requirements</th></tr>
-
-    <TR><td valign="top">Versions</td><td valign="top">Excel 2003, Excel 2000 </td></tr>
-
-    <TR><td valign="top">Operating system</td><td valign="top">Windows XP, Windows 2000</td></tr>
-
-    <TR><td valign="top">Memory</td><td valign="top">A Windows-based system should adjust the memory automatically.</td></tr>
-
-      <TR><td valign="top">Other Requirements</td><td valign="top"> Reliable operation of GEN on Windows 2000 requires that all the necessary Microsoft Office updates are installed on  the PC. These updates include Service Packs SR1 and SR3. To make sure that your computer has all the necessary updates, go to <a href="http://office.microsoft.com/officeupdate/default.aspx">http://office.microsoft.com/officeupdate/default.aspx</a> and click on "Check for Updates." (Later releases of Windows 2000 included these service packs.)</td></tr>
+<table border=1 cellpadding=4 cellspacing=1>
+<TR><TH ALIGN="left" colspan=2 VALIGN="top">Macintosh Requirements</th></tr>
+<TR><td valign="top">Version</td> <td valign="top">Excel X </td></tr>
+<TR><td valign="top">Operating system</td><td valign="top">OS X, OS 9</td></tr>
+<TR><td valign="top">Memory</td><td valign="top">The number of images and amount of experimental data GEN can hold is limited by the amount of memory assigned to GEN. Therefore, for Mac OS 9, set the Excel memory to at least 256 megabytes. Mac OS X will allocate memory automatically.</td></tr>
+<tr><td colspan="2">GEN may crash when used with Excel 2004. Therefore, we do not currently recommend its use.</td></tr>
+<TR><TH ALIGN="left" colspan=2 VALIGN="top">PC Requirements</th></tr>
+<TR><td valign="top">Versions</td><td valign="top">Excel 2003, Excel 2000</td></tr>
+<TR><td valign="top">Operating system</td><td valign="top">Windows XP, Windows 2000</td></tr>
+<TR><td valign="top">Memory</td><td valign="top">A Windows-based system should adjust the memory automatically.</td></tr>
+<TR><td valign="top">Other Requirements</td><td valign="top"><ul>
+  <li>For GEN to operate properly, the macros must be enabled. On Excel 2003, this requires that the Macro Security be set to Medium (or lower).</li>
+  <li>Reliable operation of GEN on Windows 2000 requires that all the necessary Microsoft Office updates are installed on  the PC. These updates include Service Packs SR1 and SR3. To make sure that your computer has all the necessary updates, go to <a href="http://office.microsoft.com/officeupdate/default.aspx">http://office.microsoft.com/officeupdate/default.aspx</a> and click on "Check for Updates." (Later releases of Windows 2000 included these service packs.)</li></ul></td></tr>
 
     </table>
 <dl>
@@ -362,7 +301,7 @@ you may leave blank.  A collection of fields is called a <i>record</i>.</td></tr
 
 </blockquote>
 
-<p><a href="#toc">Back to Table of Contents</a>
+<p><a href="#toc">Back to Table of Contents</a></p>
 
 <hr>
 
@@ -372,54 +311,36 @@ you may leave blank.  A collection of fields is called a <i>record</i>.</td></tr
 
 <blockquote>
 
-<p>You can access GEN  from the <A HREF="../GEN/">Gene Expression Notebook Resource Page</a>.  You can also access The Mouse Anatomical Dictionary here as well as access this Help document.  When you download GEN, you'll have to provide your name,
+<p>You can download GEN  from the <A HREF="index.shtml">Gene Expression Notebook Resource Page</a>.  You can also access The Mouse Anatomical Dictionary here, as well as access this Help document.  When you download GEN, you'll have to provide your name, e-mail address, and computer system type. We use this information to keep track of users so we can let you know about new releases and features. We do not share  your information with anyone.
 
-e-mail address, and computer system type. We use this information to keep track of users so we can let you know about new releases and features.  <p>To download GEN:
-
+<p>To download GEN:
   <ol>
-
-  <li>Click on the phrase <b>Gene Expression Notebook</b>, in the line reading <b>Registration and Download of the Gene Expression Notebook</b>.
-
-  <li>Fill out the registration form and click <b>Submit</b>.
-
-  <li>Click on <b>Download the GEN</b>
-
-  <li>At the prompt, choose <b>Save to Disk</b> and click <b>OK</b>.
-
-  <li>Type in a name to save the file as and a location to save it to.
-
-   <li>Click <b>Save</b>.
-
-   </ol>
-
-<p>You can now open the notebook.
-
+  <li>Click on the phrase (Download the) <u>Gene Expression Notebook</u>.</li>
+  <li>Fill out the registration form and click <b>Submit</b>.</li>
+  <li>Click on <b>Download the GEN</b>. What happens next varies. In general:
+<ul>
+  <li>With Excel X, GEN will be saved to the hard drive.</li>
+  <li>With Excel 2003, GEN will be saved to the hard drive, and the application will open.</li>
+  <li>With Excel 2000, you will be asked, "What do you want to do with this file?"<br>Choose <b>Save it to disk</b>, and then type in a file name and a location to save it to. </li>
+</ul>
+</li>
+<li>You must <b>Enable Macros</b> to allow the GEN to operate optimally. Since GEN macros are unsigned, with Excel 2003 oyu may need to lower the Macro Security level to Medium (or lower, if desired). To do this, go to the Tools menu and choose <b>Options</b>. Click on the Security tab and open the Macro Security dialog button to set the new security level.</li>
+</ol>
+<p>You can now open the notebook.</p>
 </blockquote>
-
-<p><a href="#toc">Back to Table of Contents</a>
-
+<p><a href="#toc">Back to Table of Contents</a></p>
 <hr>
 
 
 
 <h3><a name="opengen"></a>Opening GEN </h3>
-
 <blockquote>
-
 <p>Once you download GEN, there are two ways to open the application:
-
 <ol>
-
-<li>Double-click the GEN icon on your desktop.
-
-<li>Open Excel and click <b>File&#151;&gt;Open</b> and browse to locate the GEN.xls file.
-
-<li>Click <b>Enable Macros</b> when the prompt asks if you want to disable macros or enable macros.
-
-
-
-<p> The GEN <b>Main</b> menu appears.
-
+<li>Double-click the GEN icon on your desktop.</li>
+<li>Open Excel and click <b>File&#151;&gt;Open</b> and browse to locate the GEN.xls file.</li>
+<li>Click <b>Enable Macros</b> when the prompt asks if you want to disable macros or enable macros.<br>
+The GEN <b>Main</b> menu appears.</li>
 </ol>
 
 </blockquote>
