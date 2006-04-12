@@ -17,7 +17,18 @@
 <a name="top"></a>
 <h3>Table of Contents</h3>
 <table border="0" cellspacing="0" cellpadding="2">
-<ul><a href="#projects">MGI Database Projects</a><br><a href="#about">About MGD</a><br><a href="#data">MGD Data</br><a href="#external">Data Links to External Databases</a><br><a href="#genes">Genes and Markers</a><br><a href="#alleles">Phenotypic Alleles</a><br><a href="#probes">Molecular Probes and Clones</a><br><a href="#orthology">Mammalian Orthology</a><br><a href="#sequence">Sequence Data</a><br><a href="#snp">SNP Data</a><br><a href="#vocabularies">Vocabulary Browsers</a><br><a href="#mapping">Mapping Data</a><br><a href="#references">References</a>
+<ul><a href="#projects">MGI Database Projects</a><br>
+    <a href="#about">About MGD</a><br><a href="#data">MGD Data</br>
+    <a href="#external">Data Links to External Databases</a><br>
+    <a href="#genes">Genes and Markers</a><br>
+    <a href="#alleles">Phenotypic Alleles</a><br>
+    <a href="#probes">Molecular Probes and Clones</a><br>
+    <a href="#orthology">Mammalian Orthology</a><br>
+    <a href="#sequence">Sequence Data</a><br>
+    <a href="#snp">SNP Data</a><br>
+    <a href="#vocabularies">Vocabulary Browsers</a><br>
+    <a href="#mapping">Mapping Data</a><br>
+    <a href="#references">References</a>
 </ul>
 
 
@@ -88,7 +99,7 @@ staff who scan the current scientific  literature,  extract  relevant data, and 
     
 <A HREF="#top">Back to Top</A> 
 
-<h3><A NAME="genes">Genes and Markers</A></h3>
+<h3><A NAME="genes"></A>Genes and Markers</h3>
 MGD contains information on mouse genes, DNA segments,
 cytogenetic markers and QTLs. Each record may include the marker symbol, name,other names or symbols and synonyms, nomenclature history, alleles, STSs,
 chromosomal assignment, centimorgan location,
@@ -118,11 +129,11 @@ Information may include the origin of the probe/clone, sequence,
 vector type, hybridizing loci, RFLPs, and references. (<EM>See</EM> the Probes Query Form
 <A HREF="<!--#include file='include/wi_url.html'-->userdocs/probe_help.shtml#summary">Summary</A> and <A HREF="<!--#include file='include/wi_url.html'-->userdocs/probe_help.shtml#detail">Details</A> for more information about the content of a probe/clone record as it appears in the query results.)
 
-<P>Information on <A NAME="rflp">genetic polymorphisms</A> is extracted from probe/clone records in MGD. The Polymorphisms Query Form enables you to search directly  for such information and display it. (See
+<P>Information on genetic polymorphisms is extracted from probe/clone records in MGD. The Polymorphisms Query Form enables you to search directly  for such information and display it. (See
 <A HREF="<!--#include file='include/wi_url.html'-->userdocs/polymorphism_help.shtml#summary">Summary</a> and <A HREF="<!--#include file='include/wi_url.html'-->userdocs/polymorphism_help.shtml#detail">Details</A> for more information.)</p>
 <A HREF="#top">Back to Top</A> 
 
-<h3><A NAME="orthology">Mammalian Orthology</A></h3>
+<h3><A NAME="orthology"></A>Mammalian Orthology</h3>
 <p>MGD contains orthology information for mouse, human and 15 other mammalian organisms. Most of the information for orthologies is
 extracted from the published scientific literature. In general, these papers explicitly report orthology relationships and MGD reflects that published information. (<em>See</em>
 <a href="<!--#include file='include/wi_url.html'-->userdocs/homology_criteria.shtml">MGD Mammalian Orthology Criteria</a> for the information used to establish orthology.)
@@ -143,7 +154,7 @@ the content of an orthology record as it appears in the query results.)</p>
 from the <a href="<!--#include file='include/wi_url.html'-->menus/homology_menu.shtml">Orthology Menu</A> page.</p>
 <A HREF="#top">Back to Top</A> 
 
-<h3><A NAME="sequence">Sequence Data</h3>
+<h3><A NAME="sequence"></a>Sequence Data</h3>
 
 <P>Vast amounts of sequence data are integrated with the biological information in MGD. Mouse sequences from GenBank, RefSeq, Swiss-Prot, DoTS, and the TIGR and NIA mouse gene indices enable powerful queries from the
 <a href="<!--#include file='include/wi_url.html'-->/searches/sequence_form.shtml">Mouse Sequence Query Form</a>. MGI contains sequence attributes, such as length and provider, data about the clones the sequences were derived from, and the genes the sequences have been associated to. Because of our curated associations between mouse markers and sequences, users can search using information such as nomenclature, map position, function (GO annotation, InterPro domain), expression (tissue and developmental stage), and phenotypes of mutant alleles. Source information about the clones that the sequences are derived from, such as strain, tissue, or library, is carefully translated into controlled vocabularies (see <a href="#vocabularies">Vocabulary Browsers</a>).  This adds enormous power to sequence queries, since authors often use multiple terms to specify a strain or tissue.  </P>
@@ -174,7 +185,7 @@ valign="top">Use this browser to search for ...</th></tr>
 <A HREF="#top">Back to Top</A> 
 
 
-<h4><A NAME="mapping">Mapping Data</A></h4>
+<h4><A NAME="mapping"></A>Mapping Data</h4>
 <p>MGD contains genetic mapping and linkage data, including haplotype data for linkage crosses, recombinant inbred (RI) strain distribution patterns,in-situ hybridization data,
 deletion mapping information, translocation breakpoint mapping, somatic cell hybrids, concordance tables, congenic strains information, and physical mapping information.</p>
 <blockquote>
