@@ -113,7 +113,7 @@ class myCGI (CGI.CGI):
                 print '<ul>'
                 print '<li>When downloading, if asked "What do you want to do with this file?", Choose <br>'
                 print '<b>Save it to disk</b>. (When downloading on other platforms, GEN may be directly<br> saved to disk and may even open immediately.)'
-                print '<li>You must <b>Enable Macros</b> to allow GEN to operate optimally. With some versions<br>versions of Excel this means you will need to reduce the Macro security level to Medium. '
+                print '<li>You must <b>Enable Macros</b> to allow GEN to operate optimally. With some versions<br>of Excel this means you will need to reduce the Macro security level to Medium. '
                 print '<li>To ensure your system is configured properly, review <a href="gen.shtml#sysreq">GEN system requirements</a>.'
 		print '</ul>'
                 print '<p>' 
