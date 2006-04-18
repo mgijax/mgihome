@@ -1,6 +1,6 @@
 <HTML>
 <HEAD>
-<TITLE>GEN-User Guide</TITLE>
+<TITLE>GEN User Guide</TITLE>
 </HEAD>
 <BODY BGCOLOR=#FFFFFF>
 <TABLE WIDTH="100%" BORDER=0 CELLPADDING=0 CELLSPACING=0>
@@ -283,9 +283,7 @@ you may leave blank.  A collection of fields is called a <i>record</i>.</td></tr
 
 
 
-<tr><th align=left valign=top>validation </th><td valign="top">GEN checks to see if an entry contains the field information required for submission to GXD.  You can validate a worksheet, an assay sheet, or the entire notebook. See
-
-<a href="#validate">Validation in the GEN.</a></td></tr>
+<tr><th align=left valign=top>validation </th><td valign="top">GEN checks to see if an entry contains the field information required for submission to GXD.  You can validate a worksheet, an assay sheet, or the entire notebook. See <a href="#validate">Validation in the GEN.</a></td></tr>
 
 
 
@@ -324,7 +322,7 @@ you may leave blank.  A collection of fields is called a <i>record</i>.</td></tr
   <li>With Excel 2000, you will be asked, "What do you want to do with this file?"<br>Choose <b>Save it to disk</b>, and then type in a file name and a location to save it to. </li>
 </ul>
 </li>
-<li>You must <b>Enable Macros</b> to allow the GEN to operate optimally. Since GEN macros are unsigned, with Excel 2003 oyu may need to lower the Macro Security level to Medium (or lower, if desired). To do this, go to the Tools menu and choose <b>Options</b>. Click on the Security tab and open the Macro Security dialog button to set the new security level.</li>
+<li>You must <b>Enable Macros</b> to allow the GEN to operate optimally. Since GEN macros are unsigned, with Excel 2003 you may need to lower the Macro Security level to Medium (or lower, if desired). To do this, go to the Tools menu and choose <b>Options</b>. Click on the Security tab and open the Macro Security dialog button to set the new security level.</li>
 </ol>
 <p>You can now open the notebook.</p>
 </blockquote>
@@ -1620,8 +1618,7 @@ If you cannot find the gene, include in the Gene worksheet Notes field any infor
 <h3><a name="validate"></a>Validation in the GEN</h3>
 
 <blockquote>
-
-<p>To submit data to GXD, you must make entries in certain fields.  To insure that these fields are filled in and to reduce the amount of work required for submitting your data, GEN has a validation feature. Use it when you are ready to send a submission to GXD. It is optional at all other times. You do not have to validate data in order to use GEN.
+<p>The validation feature is designed to help you check data you wish to submit to GXD.  It looks at fields that we think are key to having a complete entry to make sure there is data in them.  For instance, the validation feature looks to ensure that each specimen has either an age or Theiler stage specified.  Anything that we believe is an omission will be listed on the Error Report.  You do not have to validate data in order to use GEN or even to submit data to GXD.</p>
 
 <p> You can validate a worksheet, an assay sheet, or the entire workbook.
 
@@ -1675,10 +1672,10 @@ If you cannot find the gene, include in the Gene worksheet Notes field any infor
 
 
 
-<p><b>Note:</b>&nbsp;  If you perform validations in a notebook with an uncleared Error Report, any new errors appear on the list after the old errors.
+<p><b>Note:</b>&nbsp;  If you perform validations in a notebook with an uncleared Error Report, any new errors appear on the list after the old errors.</p>
 
-
-
+<p>Certain assumptions were made when designing the validation feature that may not be correct in all instances.  For instance, it was assumed that each in situ and immunohistochemistry assay would contain an image.  Therefore, if you enter one of these assays and do not enter an image, you will get an error message telling you that you have failed to enter an image label.  You can safely ignore this, and any other error messages that do not apply to your entry.
+</p>
 </blockquote>
 
 <p><a href="#toc">Back to Table of Contents</a>
@@ -1846,7 +1843,7 @@ Instructions for various modifications appear below. <p><b>Note:</b>&nbsp; If yo
 
 GEN will not open, locks up or shuts down unexpectedly. <td valign=top>The Excel application on your Mac may not have enough memory assigned.<td valign=top>Increase the memory on your Mac as follows:
 
-<ol><li>Close the Excel program. <li>Highlight the Excel file. (Highlight only; do not activate the program.) <LI> From the menu at the top, click <b>File&#151;&gt;Get Info</b>. A dialog box appears. <li>Locate the Memory Requirements section and type the amount of memory desired in the Minimum Size and Preferred Size fields, making sure that Preferred is larger than Minimun. <li> Close the window. </ol> Excel now has the reassigned memory.</tr>
+<ol><li>Close the Excel program. <li>Highlight the Excel file. (Highlight only; do not activate the program.) <LI> From the menu at the top, click <b>File&#151;&gt;Get Info</b>. A dialog box appears. <li>Locate the Memory Requirements section and type the amount of memory desired in the Minimum Size and Preferred Size fields, making sure that Preferred is larger than Minimum. <li> Close the window. </ol> Excel now has the reassigned memory.</tr>
 
 
 
@@ -1866,7 +1863,9 @@ GEN will not open, locks up or shuts down unexpectedly. <td valign=top>The Excel
 
 
 
-<tr><td valign=top>My worksheet entry doesn't appear on the drop-down menu on the assay sheet.<td valign=top>The record is either lacking an ID or you skipped a row on the worksheet.<td valign=top>If a record lacks an ID, it will not appear on the drop-down menu.  Sometimes if the worksheet page does not open all the way to the left, you may forget to enter a name in the first field.  Alternatively, if you leave a blank row between entries on a worksheet, the records below the skipped row will not appear on the drop-down menu.</tr>
+<tr><td valign=top>My worksheet entry doesn't appear on the drop-down menu on the assay sheet.</td>
+<td valign=top>The record is either lacking an ID or you skipped a row on the worksheet.</td>
+<td valign=top>If a record lacks an ID, it will not appear on the drop-down menu.  Sometimes if the worksheet page does not open all the way to the left, you may forget to enter a name in the first field.  Alternatively, if you leave a blank row between entries on a worksheet, the records below the skipped row will not appear on the drop-down menu.  In very rare instances, your entry will fail to appear because the GEN suffered a momentary glitch when generating the drop-down menu.  In those cases, you can type the entry id (as it appears on the worksheet) into the assay field; the other fields will still fill in when you tab out.</td></tr>
 
 
 
@@ -1896,23 +1895,21 @@ GEN will not open, locks up or shuts down unexpectedly. <td valign=top>The Excel
 
 <li>Select cells in the columns to the left and right of the hidden columns.
 
-<li>When the cursor changes to a vertical line with crosshairs (left and right arrows), move it slightly to the left or right until it changes to a double vertical line with crosshairs. <li>Click and hold the mouse button, then drag the cursor to the right. The covered column appears. <li>Repeat for all covered columns. (This becomes easier with practice.)</ul>
+<li>When the cursor changes to a vertical line with cross hairs (left and right arrows), move it slightly to the left or right until it changes to a double vertical line with cross hairs. <li>Click and hold the mouse button, then drag the cursor to the right. The covered column appears. <li>Repeat for all covered columns. (This becomes easier with practice.)</ul>
 
 <p>If the first column (or row) of a worksheet is hidden:
 
-<ul><li>Click <b>Edit&#151;&gt;Go To</b>.
-
-<li>Type <b>A1</b> in the Reference box.
-
-<li>Click <b>OK</b>.
-
-<li>Click  <b>Format&#151;&gt;Column&#151;&gt;Unhide</b> (or <b>Format&#151;&gt;Row&#151;&gt;Unhide</b>).
-
-</ol>
-
-
-
+<ul>
+<li>Click <b>Edit&#151;&gt;Go To</b>.</li>
+<li>Type <b>A1</b> in the Reference box.</li>
+<li>Click <b>OK</b>.</li>
+<li>Click  <b>Format&#151;&gt;Column&#151;&gt;Unhide</b> (or <b>Format&#151;&gt;Row&#151;&gt;Unhide</b>).</li>
+</ul>
 </td></tr>
+
+<tr><td valign="top">When I open the Create New Submission dialog box, not all the assays present in my workbook appear.</td>
+  <td valign="top">The GEN is designed to prevent you from submitting the same assay twice. </td>
+  <td valign="top">Once an assay has been included in a submission, it is no longer included in the list of assays on the submission creation form. If you want it to reappear on the list, go to the assay sheet and delete the word <b>Submitted</b> in the column beside the Validate Submission button.</td></tr>
 
 <tr><td valign=top>How can I suggest improvements for future versions of the GEN?<td valign="top">&nbsp;<td valign="top">You can contact us at <A HREF="mailto:GEN@informatics.jax.org">GEN@informatics.jax.org</a>.  We welcome all comments (positive or negative) from users.</tr>
 
@@ -2050,7 +2047,7 @@ This  documentation is available on the Web at http://www.informatics.jax.org/mg
 
 <li>As you become an experienced GEN user, you'll probably start adding your experimental details directly to the various worksheets (rather than using the Manage window) since entry is usually quicker that way and you can review what you already have easily. The following instructions, therefore, illustrate how to enter data using a worksheet.
 
-   <LI>Click the Specimens tab at the bottom of the assay sheet to go to the Immunohostochemistry and In-Situ Specimens worksheet</b>.
+   <LI>Click the Specimens tab at the bottom of the assay sheet to go to the Immunohistochemistry and In-Situ Specimens worksheet</b>.
 
    <LI>To enter your wild-type specimen, type a name in the first field under <b>Specimen ID</b> similar to what you'd use for your tissue samples, such as <b>6&#047;25&#047;02 E10.5 WT &#035;1</b>.  Each in situ&#047;immunohistochemistry specimen name in the GEN must be unique.
 
