@@ -22,31 +22,43 @@
   </TD>
  </TR>
 </TABLE>
-
+<a name=#top"></a>
 <p>This page provides instructions for creating URL links to MGI. We recommend strongly that you use these URLs for linking to MGI since alternative URLs may not be supported in the future.
+The topics covered are:
+<ul>
+  <li><a href="#url_and_syntax">URL and syntax</a></li>
+  <li><a href="#objects_supported">Objects supported by the URL</a</li>
+  <li><a href="#examples">Examples</a></li>
+<li><a href="#return">What the CGI will return</a></li>
+    <li><a href="#data_dumps">Data dumps for obtaining accession IDs</a></li>
+</ul>
+</p>
 
-<H4>URL and Syntax</H4>
-
-A CGI program links to MGI via accession ID. Use the following syntax to access it:
-
-<UL><CODE>http://www.informatics.jax.org/searches/accession_report.cgi?id=xxxx</CODE></UL> where <CODE>xxxx</CODE> is a comma-separated list of Accession IDs.
-<P>
+<H4><a name="url_and_syntax"></a>URL and Syntax</H4>
+<p>A CGI program links to MGI via accession ID. Use the following syntax to access it:
+<ul><code>http://www.informatics.jax.org/searches/accession_report.cgi?id=xxxx</code></ul> where <code>xxxx</code> is a comma-separated list of Accession IDs.
+<p>
 The result is a display of or more MGI objects associated with the given IDs.
-<P>
-MGI stores objects with accession IDs from many sources.  Some examples of valid Accession IDs are
+<p>
+MGI stores objects with accession IDs from many sources.  Some examples of valid Accession IDs are:
 
-<UL>
-<LI>MGI:12345 (MGI Accession ID)</li>
-<LI>J:12345 (J Number)</li>
-<LI>GDB:12345 (GDB Accession ID)</li>
-<LI>K02800 (GenBank Sequence ID)</li>
+<ul>
+<li>MGI:12345 (MGI Accession ID)</li>
+<li>J:12345 (J Number)</li>
+<li>GDB:12345 (GDB Accession ID)</li>
+<li>K02800 (GenBank Sequence ID)</li>
 <li>GO:0030264 (GO Accession ID)</li>
-<LI>NM_021099, AF193796, AB005457, U20370, M22115 (GenBank accession IDS)</LI>
-<LI>TC1117791 (TIGR Mouse Gene Index accession ID)</LI>
-<LI>B830009P17 (Riken clone ID)</LI>
-</UL>
+<li>NM_021099, AF193796, AB005457, U20370, M22115 (GenBank accession IDS)</li>
+<li>TC1117791 (TIGR Mouse Gene Index accession ID)</li>
+<li>B830009P17 (Riken clone ID)</li>
+</ul>
 
-<P>For sequences, MGI uses the sequence provider's accession ID. (For more details about sequences and MGI accession IDs, see <A HREF="<!--#include file='include/wi_url.html'-->userdocs/accession_help.shtml">Using the Accession IDs Query Form</A>.</P>
+<p>For sequences, MGI uses the sequence provider's accession ID. <br>
+For more details about sequences and MGI accession IDs, see <a href="<!--#include file='include/wi_url.html'-->userdocs/accession_help.shtml">Using the Accession IDs Query Form</a>.
+</p>
+<a href="#top">Back to top</a>
+
+<h4><a name="objects_supported"></a>Objects Supported by the URL</h4>
 <P>There are many types of objects supported by this URL:
 
 <UL>
@@ -63,8 +75,12 @@ MGI stores objects with accession IDs from many sources.  Some examples of valid
 <LI>Antigens
 <li>Gene Ontology (GO) Terms
 </UL>
+</p>
+<a href="#top">Back to top</a>
 
-<STRONG>Examples</STRONG>
+
+
+<h4><a name="examples"></a>Examples</h4>
 <UL>
 <LI>Reference (MGI Accession ID)<BR>
  <A HREF="<!--#include file='include/wi_url.html'-->searches/accession_report.cgi?id=MGI:57297">
@@ -87,51 +103,89 @@ MGI stores objects with accession IDs from many sources.  Some examples of valid
  <CODE>http://www.informatics.jax.org/searches/accession_report.cgi?id=MGI:1860962</CODE>
  </A>
 
+<li>Phenotypic Alleles Summary page (MGI Accession ID)<br>
+<A HREF="<!--#include file='include/wi_url.html'-->searches/allele_report.cgi?markerID=MGI:96677">
+<code>http://www.informatics.jax.org/searches/allele_report.cgi?markerID=696677</code>
+</a></li>
 <LI>Orthology (MGI Accession ID)<BR>
- <A HREF="http://www.informatics.jax.org/searches/homology_report.cgi?id=MGI:108413">
+<A HREF="<!--#include file='include/wi_url.html'-->searches/homology_report.cgi?id=MGI:108413">
  <CODE>http://www.informatics.jax.org/searches/homology_report.cgi?id=MGI:108413</code>
- </A>
+ </A></li>
 <LI>Probe (MGI Accession ID)<BR>
  <A HREF="<!--#include file='include/wi_url.html'-->searches/accession_report.cgi?id=MGI:32903">
  <CODE>http://www.informatics.jax.org/searches/accession_report.cgi?id=MGI:32903</CODE>
- </A>
+ </A></li>
 <LI>Probe (GenBank Accession ID)<BR>
  <A HREF="<!--#include file='include/wi_url.html'-->searches/accession_report.cgi?id=K02800">
  <CODE>http://www.informatics.jax.org/searches/accession_report.cgi?id=K02800</CODE>
- </A>
+ </A></li>
 <LI>Multiple Probes (MGI Accession IDs)<BR>
- <A HREF="<!--#include file='include/wi_url.html'-->searches/accession_report.cgi?id=MGI:36495,MGI:36496,MGI:36501">
- <CODE>http://www.informatics.jax.org/searches/accession_report.cgi?id=MGI:36495,MGI:36496,MGI:36501</CODE>
- </A>
+ <A HREF="<!--#include file='include/wi_url.html'-->searches/accession_report.cgi?id=MGI:36495,MGI:36496,MGI:36501"> <CODE>http://www.informatics.jax.org/searches/accession_report.cgi?id=MGI:36495,MGI:36496,MGI:36501</CODE>
+ </A></li>
 <LI>Expression Assay (MGI Accession ID)<BR>
  <A HREF="<!--#include file='include/wi_url.html'-->searches/accession_report.cgi?id=MGI:1205940">
  <CODE>http://www.informatics.jax.org/searches/accession_report.cgi?id=MGI:1205940</CODE>
- </A>
+ </A></li>
 <LI>Image (MGI Accession ID)<BR>
  <A HREF="<!--#include file='include/wi_url.html'-->searches/accession_report.cgi?id=MGI:1205939">
  <CODE>http://www.informatics.jax.org/searches/accession_report.cgi?id=MGI:1205939</CODE>
- </A>
+ </A></li>
 <LI>GO Term (GO ID)<br>
 <a href="<!--#include file='include/wi_url.html'-->searches/accession_report.cgi?id=GO:0030264">
-<code>http://www.informatics.jax.org/searches/accession_report.cgi?id=GO:0030264</code></a>
+<code>http://www.informatics.jax.org/searches/accession_report.cgi?id=GO:0030264</code></a></li>
 
 </UL>
-Additional linking options are available upon request.
+<p>Additional linking options are available upon request.
+</p>
+<a href="#top">Back to top</a>
 
-<HR>
 
-<H4>What the CGI Will Return</H4>
-If the search expression matches a single reference, segment, marker, sequence, or experiment, a detailed description appears.
+<H4><a name="return"></a>What the CGI Will Return</H4>
+<p>If the search expression matches a single reference, segment, marker, sequence, or experiment, a detailed description appears.
 If the search expression matches a non-mouse marker (such as a human gene), a
 list of homologies appears for that marker.
 If the search expression matches more than one object, a summary report lists the MGI accession ID, external database links, MGI links, record types in MGI associated with the accession ID(s), and a short description.
-<HR>
-<H4>Data Dumps for Obtaining Accession IDs</H4>
+</p>
+<a href="#top">Back to top</a>
+
+<H4><a name="data_dumps"></a>Data Dumps for Obtaining Accession IDs</H4>
 All data dumps are tab-delimited and generated nightly.  In most of the reports, the MGI Accession ID appears in the first column. See
-<A HREF="<!--#include file='include/ftp_url.html'-->pub/reports/index.html">MGI Data and Statistical Reports</a> for an index with links to the report categories.
-<P>
-<HR>
-<!--#include file="include/bodyStop.html"--></BODY>
+<A HREF="<!--#include file='include/ftp_url.html'-->pub/reports/index.html">MGI Data and Statistical Reports</a> for an index with links to the report categories.</p>
+</p>
+<a href="#top">Back to top</a>
+<pre>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</pre>
+
+
+<!--#include file="include/bodyStop.html"-->
+</body>
+
 
 </HTML>
 
