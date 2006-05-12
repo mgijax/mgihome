@@ -1,6 +1,6 @@
 <HTML>
 <HEAD>
-<TITLE><!--#include file='include/mgiversion.html'--> MGI Release 3.5 Announcement - June, 2006</TITLE>
+<TITLE><!--#include file='include/mgiversion.html'--> MGI Release 3.5 Announcement - June 1, 2006</TITLE>
 <!--#include file="include/stylesheet.html"-->
 
 <META NAME="description" CONTENT="This page details the changes in the to MGI 3.5 release at The Jackson Laboratory."> 
@@ -17,7 +17,7 @@
      <TD WIDTH="60%" ALIGN="center" VALIGN="center">
       <FONT COLOR="#000000" SIZE=5 FACE="Arial,Helvetica">
 
-      MGI Release 3.5 Announcement - November 3, 2006
+      MGI Release 3.5 Announcement - June 1, 2006
       </font>
      </td>
      <td width="20%" valign="center" align="center">&nbsp;</td>
@@ -28,19 +28,28 @@
 </tbody></table>
 <h3><a name="35">MGI 3.5 release</a></h3>
 
-<p>MGI is pleased to announce its 3.5 release consisting of .....
-</p><ul>
+<p>MGI is pleased to announce version 3.5. Release highlights are:
+</p>
+<ul>
 
-<li><b>LAF changes</b></li>
-<li><b>Homology QF redo</b></li>
-<li><b>MIT markers</b></li>
-<li><b>GO graphs</b></li>
-<li>etc., etc.</li>
+<li>You may now use MIT markers as query parameters in the <i>Marker range</i> field </i>(e.g., between <i>D6Mit128</i> and <i>D6Mit129</i>) on many MGI query forms (e.g., Mouse SNP, Genes and Markers, Gene Expression Data, Gene Expression Data Expanded, cDNA Clone, Anatomical Dictionary Browser Query Refiner). (MIT markers have been updated to reflect the most current Ensembl build. Chromosome position now accurately reflects genome position and markers that map to multiple locations are noted.)</li> 
+<li>You may now enter genome coordinates on expression query forms (Gene Expression, Gene Expression Expanded) as well as on the the Anatomical Dictionary Refiner, Molecular Probes and Clones, and cDNA Clone query forms. </li>
+<li>We now provide tab-delimited output options from the Genes and Markers Query Form, as well as Excel output to an FTP site from the Mouse SNP Query Form. </li>
+<!--<li>The Mammalian Orthology summary/detal report is redesigned.</li>-->
 
+<li>We redesigned the Mammalian Orthology Query Results report to enhance interaction with and access to our data. This summary report now includes links to any relevant PIRSF superfamilies and MGI gene families, as well as to VISTA and Homologene databases. From the report, you can download representative mouse, human, or rat transcript and protein sequences to FASTA or forward them to MouseBLAST.  </li>
+
+<!--<li>GO annotations now include </li>
+
+6) A Qualifier field has been added to the GO annotations, expanding the functionality beyond just "NOT" annotations.
+
+7) Added a link to GO Annotation Graphs from the GO Annotations by Marker page.  (Note:  These graphs will not be part of the initial Alpha Test, but we plan on including them in a later Test phase).
+
+8) Changed all protein sequence links from Swiss-Prot to Uni-Prot.
+
+9) Cleaned up several superscript display issues in the WI. -->
+-->
 </ul>
-
-<p>Additional notes (i.e., re: MIT markers?)</p>
-
 
 
 
