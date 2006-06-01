@@ -26,7 +26,6 @@
   </td>
  </tr>
 </tbody></table>
-<h3><a name="35">MGI 3.5 release</a></h3>
 
 <p>MGI is pleased to announce the release of version 3.5.
 </p>
@@ -54,7 +53,7 @@
   <li><a href="<!--#include file='include/javawi_url.html'-->servlet/WIFetch?page=cDNAQF">cDNA Clone Query Form</a> (search for information based on tissue or cell-line source)</li>
 <li><a href="<!--#include file='include/javawi_url.html'-->servlet/WIFetch?page=ADRefiner&stage=1&structure=1">Anatomical Dictionary Query Refiner</a> (refine searches on anatomical structures or developmental stages accessed using the 
 <a href="<!--#include file='include/wi_url.html'-->searches/anatdict_form.shtml">Mouse Anatomical Dictionary Browser)</a></li>
-<li><a href="<!--#include file='include/javawi_url.html'-->servlet/WIFetch?page=snpQF">Mouse SNP Query Form</a></li>
+<li><a href="<!--#include file='include/javawi_url.html'-->servlet/WIFetch?page=snpQF">Mouse SNP Query Form</a> (search by strains, strain comparisons, SNP attributes, map position, marker range, or associated genes)</li>
 </ul><br>
 
 
@@ -71,7 +70,7 @@
     <li>The Mouse-Human-Rat Comparative Graph</a> (available from MGI Mammalian Orthology reports)is a visual display of curated GO classifications for mouse, human, and rat orthologs annotated from the biomedical literature. As an example, see <a href="<!--#include file='include/javawi_url.html'-->servlet/WIFetch?page=GOOrthologyGraph&id=MGI:97898">Ren1</a>.</li>
 </ul>
 Terms in the boxes are all linked to additional information at MGI.</p>
-
+<hr>
 <p>MGI is the community model organism database for the laboratory mouse. 
 </p>
 
