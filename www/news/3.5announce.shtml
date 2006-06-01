@@ -1,6 +1,6 @@
 <HTML>
 <HEAD>
-<TITLE><!--#include file='include/mgiversion.html'--> MGI Release 3.5 Announcement - June 1, 2006</TITLE>
+<TITLE><!--#include file='include/mgiversion.html'--> MGI Release 3.5 Announcement - June 14, 2006</TITLE>
 <!--#include file="include/stylesheet.html"-->
 
 <META NAME="description" CONTENT="This page details the changes in the to MGI 3.5 release at The Jackson Laboratory."> 
@@ -17,7 +17,7 @@
      <TD WIDTH="60%" ALIGN="center" VALIGN="center">
       <FONT COLOR="#000000" SIZE=5 FACE="Arial,Helvetica">
 
-      MGI Release 3.5 Announcement - June 1, 2006
+      MGI Release 3.5 Announcement - June 14, 2006
       </font>
      </td>
      <td width="20%" valign="center" align="center">&nbsp;</td>
@@ -32,29 +32,45 @@
 </p>
 <ul>
 
-<li>You may now use MIT markers as query parameters in the <i>Marker range</i> field </i>(e.g., between <i>D6Mit128</i> and <i>D6Mit129</i>) on many MGI query forms (e.g., Mouse SNP, Genes and Markers, Gene Expression Data, Gene Expression Data Expanded, cDNA Clone, Anatomical Dictionary Browser Query Refiner). MIT markers have been updated to reflect the most current Ensembl build. Markers that map to multiple locations are noted.)</li> <br>
-<li>You may now enter genome coordinates on expression query forms (Gene Expression, Gene Expression Expanded) as well as on the Anatomical Dictionary Refiner, Molecular Probes and Clones, and cDNA Clone query forms. </li><br>
-<li>We now provide tab-delimited output options from the Genes and Markers Query Form, as well as Excel output to an FTP site from the Mouse SNP Query Form. </li><br>
+<li>We now store MIT marker coordinates in the MGI database. You can them as query parameters in the new <b>Marker range</b> field </i> (located in the <b>Map Position</b> section) on many of our query forms. You can use <b>any</b> two markers (having  genome coordinates and located on the same chromosome) as start and end parameters. The query is inclusive of the markers you enter and returns any marker with at least one base pair overlapping the range you specify. See 
+<a href="<!--#include file='include/wi_url.html'-->userdocs/map_position_blurb.shtml">Using  Map Position Fields on MGI Query Forms</a> for further details. 
+
+<p>As an example, for the QTL, Alcp1, alcohol preference locus 1, male specific, a region of mouse Chromsome 2, bounded proximally by D2Mit241 and distally by D2Mit125 is associated with alcohol consumption in male mice and given the symbol <i>Alcp1.</i>. Uuse the Genes and Markers query form to find all genes on Chromosome 2 between these markers and sort the results by genome coordinates.
+
+<blockquote>
+<b>Type: </b>Gene<br>
+<b>Marker range:</b> between D2Mit241 and D2Mit125<br>
+<b>Sort by: </b>Genome Coordinates
+</blockquote>
 
 
-<li>We redesigned the Mammalian Orthology Query Results report to enhance interaction with and access to our data. This summary report now includes links to any relevant PIRSF superfamilies and MGI gene families, as well as to VISTA and Homologene databases. From the report, you can download representative mouse, human, or rat transcript and protein sequences to FASTA or forward them to MouseBLAST.  </li>
 
-<!--<li>GO annotations now include </li>
+<p>Try using marker ranges on any of the following MGI query forms</b>:
+</p><ul>
+  <li><a href="<!--#include file='include/javawi_url.html'-->servlet/WIFetch?page=markerQF">Genes and Markers Query Form</a> (search by locus symbol/name, map position, GO classification, protein domain, phenotype/human disease, clone collection) </li>
+  <li><a href="<!--#include file='include/javawi_url.html'-->servlet/WIFetch?page=expressionQF">Gene Expression Data Query Form</a> (search for detailed gene expression assay results using a variety of search parameters)</li>
+  <li><a href="<!--#include file='include/javawi_url.html'-->servlet/WIFetch?page=expressionQFexpanded">Gene Expression Data Expanded Query Form</a> (search for genes expressed in some anatomical structures and/or developmental stages but not in others)</li>
+  <li><a href="<!--#include file='include/javawi_url.html'-->servlet/WIFetch?page=probesQF">Molecular Probes and Clones Query Form</a> (search by probe name, sequence type, vector type, marker symbol, origin, or reference) </li>
+  <li><a href="<!--#include file='include/javawi_url.html'-->servlet/WIFetch?page=cDNAQF">cDNA Clone Query Form</a> (search for information based on tissue or cell-line source)</li>
+<li><a href="<!--#include file='include/javawi_url.html'-->servlet/WIFetch?page=ADRefiner&stage=1&structure=1">Anatomical Dictionary Query Refiner</a> (refine searches on anatomical structures or developmental stages accessed using the 
+<a href="<!--#include file='include/wi_url.html'-->searches/anatdict_form.shtml">Mouse Anatomical Dictionary Browser)</a></li>
+<li><a href="<!--#include file='include/javawi_url.html'-->servlet/WIFetch?page=snpQF">Mouse SNP Query Form</a></li>
+</ul><br>
 
-6) A Qualifier field has been added to the GO annotations, expanding the functionality beyond just "NOT" annotations.
 
-7) Added a link to GO Annotation Graphs from the GO Annotations by Marker page.  (Note:  These graphs will not be part of the initial Alpha Test, but we plan on including them in a later Test phase).
 
-8) Changed all protein sequence links from Swiss-Prot to Uni-Prot.
+<li>You can now search by genome coordinates (see the <b>Map Position</b> section) on the query forms: Gene Expression, Gene Expression Expanded, Anatomical Dictionary Refiner, Molecular Probes and Clones, and cDNA Clone. </li><br>
+<li>There is now a tab-delimited output option on the Genes and Markers Query Form, and an option to send Excel output to an FTP site on the Mouse SNP Query Form. </li><br>
 
-9) Cleaned up several superscript display issues in the WI. -->
+<li>The Mammalian Orthology Query Results report is enhanced to include links to any MGI PIRSF superfamilies and MGI gene families, as well as to VISTA and Homologene databases. From the report, you can download representative mouse, human, or rat transcript and protein sequences to FASTA or forward them to MouseBLAST.</li><br>
 
+<li>New Gene Ontology (GO) annotation graphs are available. 
+  <ul>
+    <li>The Gene Ontology Classifications GO Graph (accessed from the MGI Gene  Detail page) displays a visual relationship between molecular function, cellular component, and biological process annotations for a given gene or marker. As an example, see 
+<a href="<!--#include file='include/javawi_url.html'-->servlet/WIFetch?page=GOMarkerGraph&id=MGI:97898">Ren1</a>.</li>
+    <li>The Mouse-Human-Rat Comparative Graph</a> (available from MGI Mammalian Orthology reports)is a visual display of curated GO classifications for mouse, human, and rat orthologs annotated from the biomedical literature. As an example, see <a href="<!--#include file='include/javawi_url.html'-->servlet/WIFetch?page=GOOrthologyGraph&id=MGI:97898">Ren1</a>.</li>
 </ul>
-
-
-
-
-
+These pages </p>
 
 <p>MGI is the community model organism database for the laboratory mouse. 
 </p>
