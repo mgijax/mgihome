@@ -46,14 +46,14 @@
 
 <p>Try using marker ranges on any of the following MGI query forms</b>:
 </p><ul>
-  <li><a href="<!--#include file='include/javawi_url.html'-->servlet/WIFetch?page=markerQF">Genes and Markers Query Form</a> (search by locus symbol/name, map position, GO classification, protein domain, phenotype/human disease, clone collection) </li>
-  <li><a href="<!--#include file='include/javawi_url.html'-->servlet/WIFetch?page=expressionQF">Gene Expression Data Query Form</a> (search for detailed gene expression assay results using a variety of search parameters)</li>
-  <li><a href="<!--#include file='include/javawi_url.html'-->servlet/WIFetch?page=expressionQFexpanded">Gene Expression Data Expanded Query Form</a> (search for genes expressed in some anatomical structures and/or developmental stages but not in others)</li>
-  <li><a href="<!--#include file='include/javawi_url.html'-->servlet/WIFetch?page=probesQF">Molecular Probes and Clones Query Form</a> (search by probe name, sequence type, vector type, marker symbol, origin, or reference) </li>
-  <li><a href="<!--#include file='include/javawi_url.html'-->servlet/WIFetch?page=cDNAQF">cDNA Clone Query Form</a> (search for information based on tissue or cell-line source)</li>
-<li><a href="<!--#include file='include/javawi_url.html'-->servlet/WIFetch?page=ADRefiner&stage=1&structure=1">Anatomical Dictionary Query Refiner</a> (refine searches on anatomical structures or developmental stages accessed using the 
-<a href="<!--#include file='include/wi_url.html'-->searches/anatdict_form.shtml">Mouse Anatomical Dictionary Browser)</a></li>
-<li><a href="<!--#include file='include/javawi_url.html'-->servlet/WIFetch?page=snpQF">Mouse SNP Query Form</a> (search by strains, strain comparisons, SNP attributes, map position, marker range, or associated genes)</li>
+  <li><a href="<!--#include file='include/java_url.html'-->WIFetch?page=markerQF">Genes and Markers Query Form</a> (search by locus symbol/name, map position, GO classification, protein domain, phenotype/human disease, clone collection) </li>
+  <li><a href="<!--#include file='include/java_url.html'-->WIFetch?page=expressionQF">Gene Expression Data Query Form</a> (search for detailed gene expression assay results using a variety of search parameters)</li>
+  <li><a href="<!--#include file='include/java_url.html'-->WIFetch?page=expressionQFexpanded">Gene Expression Data Expanded Query Form</a> (search for genes expressed in some anatomical structures and/or developmental stages but not in others)</li>
+  <li><a href="<!--#include file='include/java_url.html'-->WIFetch?page=probesQF">Molecular Probes and Clones Query Form</a> (search by probe name, sequence type, vector type, marker symbol, origin, or reference) </li>
+  <li><a href="<!--#include file='include/java_url.html'-->WIFetch?page=cDNAQF">cDNA Clone Query Form</a> (search for information based on tissue or cell-line source)</li>
+<li><a href="<!--#include file='include/java_url.html'-->WIFetch?page=ADRefiner&stage=1&structure=1">Anatomical Dictionary Query Refiner</a> (refine searches on anatomical structures or developmental stages accessed using 
+<a href="<!--#include file='include/wi_url.html'-->searches/anatdict_form.shtml">The Mouse Anatomical Dictionary Browser)</a></li>
+<li><a href="<!--#include file='include/java_url.html'-->WIFetch?page=snpQF">Mouse SNP Query Form</a> (search by strains, strain comparisons, SNP attributes, map position, marker range, or associated genes)</li>
 </ul><br>
 
 
@@ -66,8 +66,8 @@
 <li>New Gene Ontology (GO) annotation graphs are available. 
   <ul>
     <li>The Gene Ontology Classifications GO Graph (accessed from the MGI Gene  Detail page) displays a visual relationship between molecular function, cellular component, and biological process annotations for a given gene or marker. As an example, see 
-<a href="<!--#include file='include/javawi_url.html'-->servlet/WIFetch?page=GOMarkerGraph&id=MGI:97898">Ren1</a>.</li>
-    <li>The Mouse-Human-Rat Comparative Graph</a> (available from MGI Mammalian Orthology reports)is a visual display of curated GO classifications for mouse, human, and rat orthologs annotated from the biomedical literature. As an example, see <a href="<!--#include file='include/javawi_url.html'-->servlet/WIFetch?page=GOOrthologyGraph&id=MGI:97898">Ren1</a>.</li>
+<a href="<!--#include file='include/java_url.html'-->WIFetch?page=GOMarkerGraph&id=MGI:97898">Ren1</a>.</li>
+    <li>The Mouse-Human-Rat Comparative Graph</a> (available from MGI Mammalian Orthology reports)is a visual display of curated GO classifications for mouse, human, and rat orthologs annotated from the biomedical literature. As an example, see <a href="<!--#include file='include/java_url.html'-->WIFetch?page=GOOrthologyGraph&id=MGI:97898">Ren1</a>.</li>
 </ul>
 Terms in the boxes are all linked to additional information at MGI.</p>
 <hr>
