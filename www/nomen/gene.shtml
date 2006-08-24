@@ -217,7 +217,7 @@ href="http://dels.nas.edu/ilar_n/ilarhome/register_lc.shtml">http://dels.nas.edu
 
 <blockquote>
 <B>Examples:</B>
-<table cellpadding=4>
+<table cellpadding=3 cellspacing=1>
 <tr><td>J</td><td valign="top">The Jackson Laboratory</td></tr>
 <tr><td>Mit</td><td valign="top">Massachusetts
 Institute of Technology</td></tr>
@@ -359,7 +359,7 @@ and name. The recessive nature of the allele is still conveyed by an initial low
 <blockquote>
 <B>Examples:</B>
 <table cellpadding=4 cellspacing=4>
-<tr><td><i>Hk1-rs1</i></td><td>hexose kinase-related sequence 1</td></tr>
+<tr><td><i>Hk1-rs1</i></td><td>hexokinase-1 related sequence 1</td></tr>
 <tr><td><i>Hba-ps3</i></td><td>hemoglobin alpha pseudogene 3</td></tr>
 </table>
 </blockquote>
@@ -742,7 +742,7 @@ or <a href="http://rgd.mcw.edu/">RGD</a>/<a href="http://www.ratmap.org/">RatMap
 <blockquote>
 <B>Examples:</B>
 <table cellpadding=4>
-<tr><td>In mouse, recessive spotting, <i>rs</i>;   abnormal feet and tail, <i>Aft</i>;   acondroplasia, <i>cn</i>.</td></tr>
+<tr><td>In mouse, recessive spotting, <i>rs</i>;   abnormal feet and tail, <i>Aft</i>; circling, <i>cir</i>  </td></tr>
 <tr><td>In rat, polydactyly-luxate, <i>lx</i>.</td></tr>
 </table>
 </blockquote>
@@ -935,7 +935,7 @@ a targeted mutation, a serial number from the laboratory of origin and the Labor
 <li>For example, <i>Cftr<sup>tm1Unc</sup></i> is the first targeted mutation of the cystic fibrosis transmembrane regulator (<i>Cftr</i>) gene produced at the University of North Carolina.</li>
 </ul>
 
-<p>So-called &quot;knock in&quot; mutations in which all or part of coding region of one
+<p>So-called &quot;knock in&quot; mutations in which all or part of the coding region of one
 gene is replaced by another should be given a <i>tm</i> symbol and the particular details of the knock-in associated with the name in publications or databases. Where there has been a replacement
 of the <b>complete</b> coding region, the replacing gene symbol can be used parenthetically as part of the allele symbol of the replaced gene along with a Laboratory code and serial number.</p>
 <ul>
@@ -1092,7 +1092,7 @@ where the inserted BAC is from the RP22 BAC library, plate 412, row K, column
    TgTn(transposon_class_abbreviation-vector)#Labcode 
 </blockquote>
 <blockquote>
-<b>Example:</b>  &nbsp;<i>TgTn(sb-T2/GT2/tTA)1Dla</i>
+<b>Example:</b> &nbsp;<i>TgTn(sb-T2/GT2/tTA)1Dla</i>
 <p>The symbol consists of:	
 <ul>
   <li>Tg denoting  transgenic</li>
@@ -1117,7 +1117,7 @@ Tg(promoter-transposase)#Labcode
 <p>The symbol consists of:
 <ul>
  <li><i>Tg</i> denoting transgene</li>
- <li>In parentheses, the official gene symbol for the promoter, using the nomenclature of the species of origin, followed by a hyphen and a lowercase transposase symbol, in this case sb10 for the Sleeping beauty 10 transposase</li>
+ <li>In parentheses, the official gene symbol for the promoter, using the nomenclature of the species of origin, followed by a hyphen and a lowercase transposase symbol, in this case sb10 for the Sleeping Beauty 10 transposase</li>
 <li>The laboratory's line or founder designation or a serial number </li>
 <li>The Laboratory code of the originating lab.</li>
 </ul>
@@ -1130,11 +1130,11 @@ Tg(promoter-transposase)#Labcode
 </blockquote>
 
 <blockquote>
-<b>Example: </b> &nbsp;Gt(ROSA)26Sor<i><sup>tm1(sb11)Njen</sup></i>
+<b>Example: </b> &nbsp;<i>Gt(ROSA)26Sor<sup>tm1(sb11)Njen</sup></i>
 
 <p>The symbol consists of:	
 <ul>
-  <li>The gene into which the transposase was integrated, in this case Gt(ROSA)26Sor</li>
+  <li>The gene into which the transposase was integrated, in this case <i>Gt(ROSA)26Sor</i></li>
   <li>In the superscript:
     <ul>
       <li><i>tm</i> denoting targeted mutation</li>
@@ -1154,7 +1154,7 @@ Sleeping beauty 11 transposase</li>
 </blockquote>
 
 <blockquote>
-<b>Example:</b>&nbsp;Car12<sup><i>Tn(sb-T2/GT2/tTA)1.1Dla</sup></i>
+<b>Example:</b>&nbsp;<i>Car12<sup>Tn(sb-T2/GT2/tTA)1.1Dla</sup></i>
 <p>The symbol consists of:
 <ul>
    <li>The gene into which the transposable element was integrated (transposed)</li>
@@ -1169,7 +1169,7 @@ case sb for Sleeping Beauty), followed by a hyphen and the vector designation </
 </p>
 </blockquote>
 
-<p>If a newly a transposed insertion occurs in an unknown site or intergenic region, the form: 
+<p>If a newly transposed insertion occurs in an unknown site or intergenic region, the form: 
 <blockquote>
   Tn(transposon_class_abbreviation-vector)#Labcode
 </blockquote>
@@ -1277,10 +1277,7 @@ as a surrogate.</p>
 determined by any assay.</p>
 
 <H3><A NAME="trqtl"></A>6.12&nbsp;&nbsp;&nbsp;Quantitative Trait Loci (QTLs)</h3>
-<p>Quantitative Trait Loci (QTL) are polymorphic loci that contain alleles, which differentially
-affect the expression of continuously distributed phenotypic traits. Usually these are markers
-described by statistical association to quantitative variation in the particular phenotypic traits
-that are controlled by the cumulative action of alleles at multiple loci.</p>
+<p>Quantitative Trait Loci (QTL) are polymorphic loci that contain alleles, which differentially affect the expression of continuously distributed phenotypic traits. Usually these are markers described by statistical association to quantitative variation in the particular phenotypic traits that are controlled by the cumulative action of alleles at multiple loci.</p>
 
 <H3><A NAME="trhap"></A>6.13&nbsp;&nbsp;&nbsp;Haplotype</h3>
 <p>A haplotype is the association of genetically linked alleles, as found in a gamete. They may be a combination of any type of markers, and may extend over large, genetically separable
