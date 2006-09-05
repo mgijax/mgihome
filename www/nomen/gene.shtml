@@ -33,7 +33,7 @@ subsequently revised by the International Committee for Standardized Genetic Nom
 explain more clearly the rules. Some existing gene names and symbols may retain names derived from
 earlier conventions that no longer apply. 
 
-<p>Rules for rat genetic nomenclature were first published by the Committee on Rat Nomenclature in 1992 and then by Levan et al. in 1995.
+<p>Rules for rat genetic nomenclature were first published by the Committee on Rat Nomenclature in 1992 and then by Levan <i>et al.</i> in 1995.
 
 
 <p>In 2003, the International Committee on Standardized Genetic Nomenclature for Mice and the
@@ -204,7 +204,7 @@ locus symbol</a> is located at the MGD site.</p>
 the International Rat Genome and Nomenclature Committee (RGNC). A web tool for
 proposing a new locus symbol is located at the RatMap and RGD sites.</p>
 
-<h3><a name="labc"></a>2.1 &nbsp;&nbsp;Laboratory Codes</h3> <p>A key feature of mouse and rat
+<h3><a name="labc"></a>2.1 &nbsp;&nbsp;&nbsp;Laboratory Codes</h3> <p>A key feature of mouse and rat
 nomenclature is the Laboratory Registration Code or Laboratory code, which is a code of usually
 three to four letters (first letter uppercase, followed by all lowercase), that identifies a
 particular institute, laboratory, or investigator that produced, and may hold stocks of, for
@@ -227,7 +227,7 @@ Institute of Technology</td></tr>
 </table>
 </blockquote>
 
-<h3><a name="ing"></a>2.2&nbsp;&nbsp;Identification of New Genes</h3>
+<h3><a name="ing"></a>2.2&nbsp;&nbsp;&nbsp;Identification of New Genes</h3>
 <p>Identification of new genes in general comes in two ways; identification of a novel protein or
 DNA sequence or identification of a novel phenotype or trait. In the case of
 sequences, care should be taken in interpretation of database searches to
@@ -238,7 +238,7 @@ characteristic, but once the gene responsible for the phenotypic variation is
 identified, this gives the primary name of the gene and the mutant name becomes
 the name of the allele (see <a href="#gnas">Section 2.3</a>).
 
-<h3><a name="gnas"></a>2.3&nbsp;&nbsp;Gene Names and Symbols</h3>
+<h3><a name="gnas"></a>2.3&nbsp;&nbsp;&nbsp;Gene Names and Symbols</h3>
 <h4><a name="genename"></a>2.3.1&nbsp;&nbsp; Gene Names</h4>
 <p>Names of genes should be brief, and convey accurate information about the gene. The
 name should not convey detailed information about the gene or assay used; this
@@ -656,7 +656,7 @@ independent, different QTL designations are assigned.</p>
 symbolized in four parts:</p>
 
 <ul>
- <li>Tel (for telomere)</li>
+ <li><i>Tel</i> (for telomere)</li>
  <li>The number of the chromosome</li>
  <li>p or q (for the short or long arm, respectively)</li>
  <li>A serial number, if more than one segment is assigned to the telomere</li>
@@ -708,19 +708,17 @@ it. However, where an anomaly gives two loci on a single chromosome they can be
 distinguished by the letters p and d for proximal and distal.</p>
 
 <ul>
- <li>For example, In(1)1Rk-p, In(1)1Rk-d are the proximal and distal end points of the chromosomal
-     inversion In(1)1Rk in mouse.</li>
+ <li>For example, In(1)1Rk-p, In(1)1Rk-d are the proximal and distal end points of the chromosomal inversion In(1)1Rk in mouse.</li>
 </ul>
 
 <H3><A NAME="grom"></A>2.12 &nbsp;&nbsp;Genes Residing on the Mitochondria</H3>
 <p>The mitochondria carry essential genes, among them many transfer RNA (tRNA) genes. Genes residing on the mitochondria have a prefix mt- (lowercase mt followed by a hyphen). For transfer RNAs, the symbols consist of three parts, mt-, T (for tRNA), and a single lowercase letter for the amino
 acid. The chromosomal designation for mitochondrial genes is Chr MT.</p>
-
 <blockquote>
 <B>Examples:</B>
-<table cellpadding=4>
+<table>
 <tr><TD VALIGN="top"><i>mt-Tc</i></td><td>tRNA, cysteine, mitochondrial<br>(a tRNA gene
-residing on the mitochondria)</p></td></tr>
+residing on the mitochondria)</td></tr>
 <tr><TD VALIGN="top"><i>mt-Atp6</i></td><td>ATP synthase 6, mitochondrial <br>(a non-tRNA gene
 residing on the mitochondria)</td></tr>
 </table>
@@ -935,8 +933,8 @@ a targeted mutation, a serial number from the laboratory of origin and the Labor
 <li>For example, <i>Cftr<sup>tm1Unc</sup></i> is the first targeted mutation of the cystic fibrosis transmembrane regulator (<i>Cftr</i>) gene produced at the University of North Carolina.</li>
 </ul>
 
-<p>So-called &quot;knock in&quot; mutations in which all or part of the coding region of one
-gene is replaced by another should be given a <i>tm</i> symbol and the particular details of the knock-in associated with the name in publications or databases. Where there has been a replacement
+<p>So-called &quot;knock in&quot; mutations,&nbsp; in which all or part of the coding region of one
+gene is replaced by another, &nbsp;should be given a <i>tm</i> symbol and the particular details of the knock-in associated with the name in publications or databases. Where there has been a replacement
 of the <b>complete</b> coding region, the replacing gene symbol can be used parenthetically as part of the allele symbol of the replaced gene along with a Laboratory code and serial number.</p>
 <ul>
 <li>For example, <i>En1<sup>tm1(Otx2)Wrst</sup></i> where the coding region of <i>En1</i> was
@@ -1004,7 +1002,7 @@ Transgenic symbols should be submitted to MGD or
 RGD/RatMap through the usual <A HREF="nomen_submit_form.shtml">nomenclature submission form</A> for new loci. The transgene symbol is made up of four parts:</p>
 
 <ul>
-<li>Tg denoting transgene</li>
+<li><i>Tg</i> denoting transgene</li>
  <li>In parentheses, the official gene symbol of the inserted DNA, using nomenclature conventions
      of the species of origin</li>
  <li>The laboratory's line or founder designation or a serial number (note that numbering is independent for mouse and rat series)</li>
@@ -1087,22 +1085,20 @@ where the inserted BAC is from the RP22 BAC library, plate 412, row K, column
 
 <h3><a name="transposable"></a>5.1  &nbsp;&nbsp;Transgenic Transposable Element (TE) Concatamers</h3>
 <p>The transgenic transposable element concatamers are identified with a standard prefix Tg (for transgenic) and Tn (for transposable element). The class of transposable element may be included in parentheses. The general format of the symbol is:   
-</p>
 <blockquote>
-   TgTn(transposon_class_abbreviation-vector)#Labcode 
+   TgTn(transposon_class_abbreviation-vector)#Labcode
 </blockquote>
+
 <blockquote>
-<b>Example:</b> &nbsp;<i>TgTn(sb-T2/GT2/tTA)1Dla</i>
-<p>The symbol consists of:	
-<ul>
-  <li>Tg denoting  transgenic</li>
-  <li>Tn denoting  transposon</li>
-  <li>In parentheses, a lowercase abbreviation of the transposon class (in this case sb	
+<b>Example:</b> &nbsp;<i>TgTn(sb-T2/GT2/tTA)1Dla</i><br><br>
+
+The symbol consists of:
+ <li><i>Tg</i> denoting  transgenic</li>
+ <li><i>Tn</i> denoting  transposon</li>
+ <li>In parentheses, a lowercase abbreviation of the transposon class (in this case sb	
 for Sleeping Beauty), followed by a hyphen and the vector designation</li>
- <li>The laboratory's line or founder designation or a serial number </li>
- <li>The Laboratory Code of the originating lab.</li>
-</ul>
-</p>
+ <li>The laboratory's line or founder designation or a serial number</li>
+<li>The Laboratory Code of the originating lab</li>
 </blockquote>
 
 <h3><a name="transposase"></a>5.2&nbsp;&nbsp;Transposase Inserts </h3>
@@ -1113,37 +1109,33 @@ for Sleeping Beauty), followed by a hyphen and the vector designation</li>
 Tg(promoter-transposase)#Labcode
 </blockquote>
 <blockquote>
-<b>Example:</b> &nbsp;<i>Tg(ACTB-sb10)545Abc</i>
-<p>The symbol consists of:
-<ul>
+<b>Example:</b> &nbsp;<i>Tg(ACTB-sb10)545Abc</i><br><br>
+The symbol consists of:
  <li><i>Tg</i> denoting transgene</li>
  <li>In parentheses, the official gene symbol for the promoter, using the nomenclature of the species of origin, followed by a hyphen and a lowercase transposase symbol, in this case sb10 for the Sleeping Beauty 10 transposase</li>
 <li>The laboratory's line or founder designation or a serial number </li>
 <li>The Laboratory code of the originating lab.</li>
-</ul>
+
 </p>
 </blockquote>
 
 <p>For a targeted knock-in of the transposase, use the standard format for a targeted mutation,<i> i.e.</i>, the symbol of the targeted gene with a superscripted allele symbol beginning with the prefix <i>tm</i>. The contents of the parentheses will usually be the symbol for the transposase with which it is associated.  The general format of the symbol is:</p>
 <blockquote>
-   Genetm#(transposase)Labcode 
+   Gene<sup>tm#(transposase)Labcode </sup>
 </blockquote>
 
 <blockquote>
-<b>Example: </b> &nbsp;<i>Gt(ROSA)26Sor<sup>tm1(sb11)Njen</sup></i>
-
-<p>The symbol consists of:	
-<ul>
+<b>Example: </b> &nbsp;<i>Gt(ROSA)26Sor<sup>tm1(sb11)Njen</sup></i><br><br>
+The symbol consists of:	
   <li>The gene into which the transposase was integrated, in this case <i>Gt(ROSA)26Sor</i></li>
   <li>In the superscript:
-    <ul>
-      <li><i>tm</i> denoting targeted mutation</li>
-      <li>A serial number of the targeted mutation</li>
-      <li>In parentheses, a lowercase transposase symbol, in this case sb11 for the 
+   <ul>
+     <li><i>tm</i> denoting targeted mutation</li>
+     <li>A serial number of the targeted mutation</li>
+     <li>In parentheses, a lowercase transposase symbol, in this case sb11 for the 
 Sleeping beauty 11 transposase</li>
-      <li>The Laboratory Code of the originating lab</li>
-    </ul>
-  </ul>
+     <li>The Laboratory Code of the originating lab</li>
+</ul> 
 </blockquote>
 
 <h3><A NAME="transposed"></a>5.3 &nbsp;&nbsp;Transposed Insertion Alleles</h3>
@@ -1154,19 +1146,17 @@ Sleeping beauty 11 transposase</li>
 </blockquote>
 
 <blockquote>
-<b>Example:</b>&nbsp;<i>Car12<sup>Tn(sb-T2/GT2/tTA)1.1Dla</sup></i>
-<p>The symbol consists of:
-<ul>
+<b>Example:</b>&nbsp;<i>Car12<sup>Tn(sb-T2/GT2/tTA)1.1Dla</sup></i><br><br>
+The symbol consists of:
    <li>The gene into which the transposable element was integrated (transposed)</li>
    <li>In the superscript:
     <ul>
-     <li>Tn denoting transposon</li>
+     <li><i>Tn </i>denoting transposon</li>
      <li>In parentheses, a lowercase abbreviation of the transposon class (in this	
 case sb for Sleeping Beauty), followed by a hyphen and the vector designation </li>
      <li>A serial number, in which the primary number corresponds to that given to the transposable element concatamer from which it arose, followed by a decimal point and a serial number designating its number within the series of derivative insertion alleles.</li>
      <li>The Laboratory Code of the lab originating the transposable element line.</li>
    </ul>
-</p>
 </blockquote>
 
 <p>If a newly transposed insertion occurs in an unknown site or intergenic region, the form: 
