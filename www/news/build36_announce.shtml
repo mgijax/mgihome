@@ -33,28 +33,27 @@
 
 New features:
 <ul>
-  <li>micro RNAs<br>
-  Example of an MGI microRNA detail page with coordinates<br>
-<a href="http://faramir.informatics.jax.org:4523/javawi2/servlet/WIFetch?page=markerDetail&key=170816"> Mirn106a</a>  </li><br>
-
+  
   <li>VEGA annotation of NCBI Build 36<br>
    Example of MGI gene detail page with link to curated locus report from the VEGA Gene Model<br>
 <a href="http://faramir.informatics.jax.org:4523/javawi2/servlet/WIFetch?page=markerDetail&key=54625">Oip5</a> (Vega accession ID OTTMUSG00000015949) </li><br>
 
+<li>micro RNAs<br>
+  Example of an MGI microRNA detail page with coordinates<br>
+<a href="http://faramir.informatics.jax.org:4523/javawi2/servlet/WIFetch?page=markerDetail&key=170816"> Mirn106a</a>  </li><br>
 
-<li>MGI's interactive sequence map, Mouse GBrowse, is also updated to Build 36 and now contains a microRNA track from mirBASE<!--indicating mouse genes associated with specific phenotypes-->. Access to Mouse GBrowse is from the MGI home page (www.informatics.jax.org) and from the sequence map section on MGI gene detail pages.</li><br>
 
+<li>Mouse GBrowse, MGI's interactive sequence map, is also updated to Build 36 and now contains a microRNA track from mirBASE<!--indicating mouse genes associated with specific phenotypes--> as well as tracks for SNPs, QTLs, Ensembl genes, NCBI genes, VEGA genes, MGI representitive transcripts, STS markers, phenotypes, and alleles. Access to Mouse GBrowse is from the MGI home page (www.informatics.jax.org) and from the sequence map section on MGI gene detail pages.</li><br>
 
 </ul>
 
 
 
 
-<p>Remember that you can query by marker range on many MGI query forms using two markers (having genome coordinates and located on the same chromosome) as start and end parameters. The query is inclusive of the markers you enter and returns any marker with at least one base pair overlapping the range you specify (see
-<a href="<!--#include file='include/wi_url.html'-->userdocs/map_position_blurb.shtml">Using  Map Position Fields on MGI Query Forms</a> for further details).
+<li>You can query by marker range on many MGI query forms using two markers (having genome coordinates and located on the same chromosome) as start and end parameters. The query is inclusive of the markers you enter and returns any marker with at least one base pair overlapping the range you specify (see
+<a href="<!--#include file='include/wi_url.html'-->userdocs/map_position_blurb.shtml">Using  Map Position Fields on MGI Query Forms</a> for further details). Note that you may not enter QTLs in the Marker Range field.
+</ul>
 
-
-</p>
 
 
  
