@@ -27,25 +27,53 @@
  </tr>
 </tbody></table>
 
-<ul>
-<li>MGI genome coordinates for mouse genes are updated to Build 36. These coordinates are from computational annotations provided by Ensembl, <a href="http://www.ncbi.nlm.nih.gov/genome/seq/NCBIContigInfo.html">NCBI</a>, and 
- manual annotation from <a href="http://vega.sanger.ac.uk/Mus_musculus/index.html">Vega Mouse </a> (Vertebrate Genome Annotation mouse gene model) at Sanger Institute </li><br>
 
-New features:
-<ul>
-  
-  <li>VEGA annotation of NCBI Build 36<br>
-   Example of MGI gene detail page with link to curated locus report from the VEGA Gene Model<br>
-<a href="http://faramir.informatics.jax.org:4523/javawi2/servlet/WIFetch?page=markerDetail&key=54625">Oip5</a> (Vega accession ID OTTMUSG00000015949) </li><br>
 
-<li>micro RNAs<br>
-  Example of an MGI microRNA detail page with coordinates<br>
-<a href="http://faramir.informatics.jax.org:4523/javawi2/servlet/WIFetch?page=markerDetail&key=170816"> Mirn106a</a>  </li><br>
+<p>New features and changes/additions to MGI data</p>
+<ul>
+  <li>Multiple gene models are possible for a single MGI gene record.</li>
+  <li>Multiple MGI genes may be associated with a single gene model.</li>
+  <li>Coordinates for QTLs and miRNAs (microRNAs)</li>
+  <li>Links to miRBase and to VEGA.</li>
+</ul>
+
+<ul>
+<li>MGI genome coordinates for mouse genes are updated to Build 36. These coordinates are from manual annotation from <a href="http://vega.sanger.ac.uk/Mus_musculus/index.html">Vega Mouse </a> (Vertebrate Genome Annotation mouse gene model) at Sanger Institute, and computational annotations provided by Ensembl<a href="http://www.ncbi.nlm.nih.gov/genome/seq/NCBIContigInfo.html">NCBI</a>, and 
+  The following is an example of an MGI gene detail page with link to curated locus report from VEGA Gene Model<br>
+<a href="http://www.informatics.jax.org/javawi2/servlet/WIFetch?page=markerDetail&key=54625">
+Oip5</a> (Vega accession ID OTTMUSG00000015949) </li><br>
+
+  <li>Unified Gene Catalog<br>
+MGI is producing a Unified Gene Catalog, integrating the data from VEGA, NCBI, and Ensembl into a single set of distinct genes, pseudogenes, and other genomic features. MGI will synchronize data with that of the three providers from now on.
+
+
+
+
+
+
+
+
+
+
+<li>MGI now contains physical map data for microRNAs from <a href="http://microrna.sanger.ac.uk/">mirBASE</a><br>. Set the <i>Type</i> field on the <a href="http://firien.informatics.jax.org:8080/javawi2/servlet/WIFetch?page=markerQF">Genes and Markers Query Form</a> to <i>microRNA</i> to get a summary of all the data that MGI contains. Click on one of the symbol/names to find the details. The following is an example of a an MGI microRNA detail page with coordinates:<br>
+<a href="http://www.informatics.jax.org/javawi2/servlet/WIFetch?page=markerDetail&key=170816"> Mirn106a</a>   </li><br>
 
 
 <li>Mouse GBrowse, MGI's interactive sequence map, is also updated to Build 36 and now contains a microRNA track from mirBASE<!--indicating mouse genes associated with specific phenotypes--> as well as tracks for SNPs, QTLs, Ensembl genes, NCBI genes, VEGA genes, MGI representitive transcripts, STS markers, phenotypes, and alleles. Access to Mouse GBrowse is from the MGI home page (www.informatics.jax.org) and from the sequence map section on MGI gene detail pages.</li><br>
 
 </ul>
+
+<!--
+<ul>
+  <li>dbSNP Build 126 has SNPs that map to the Y chromosome & therefore mouse genome assembly Build 36 from NCBI has picked these up</li>
+  <li></li>
+  <li></li>
+  <li></li>
+  <li></li>
+  <li></li>
+</ul>-->
+
+
 
 
 
