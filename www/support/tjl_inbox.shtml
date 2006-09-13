@@ -1,10 +1,30 @@
 <HTML>
 <HEAD>
-<TITLE><!--#include file='include/mgiversion.html'--> - HelpDesk Express Mail </TITLE> 
+<TITLE><!--#include file='include/mgiversion.html'--> - HelpDesk Express Mail </TITLE>
 <!--#include file="include/stylesheet.html"-->
 
 </HEAD>
 <BODY BGCOLOR="#ffffff">
+
+<script type="text/javascript" language="JavaScript">
+<!--
+
+function verifyEmail() {
+var email1 = document.submitInfo.emailaddr.value;
+var email2 = document.submitInfo.emailaddr2.value;
+
+  if(email1 == email2) {
+    return true
+  }
+
+alert("The e-mail addresses you entered are not identical. Please check your address and try again.");
+return false;
+}
+
+//-->
+</script>
+
+
 <!--#include file="include/bodyStart.html"-->
 <TABLE WIDTH="100%" BORDER=0 CELLPADDING=2 CELLSPACING=1>
  <TR>
@@ -30,38 +50,57 @@ requested in the fields below so that we can respond promptly.  Be as
 detailed in your message as possible.  Thanks!</P>
 <hr>
 
-<FORM METHOD="POST" ACTION="tjl_submit_inbox.cgi">
+<FORM METHOD="POST" ACTION="tjl_submit_inbox.cgi" name="submitInfo">
 <DL>
 <DT><B>From:</B><P>
+
 <DT>First Name:<BR>
 <DD><INPUT TYPE="text" NAME="firstname" SIZE=30>
+
 <DT>Last Name:<BR>
 <DD><INPUT TYPE="text" NAME="lastname" SIZE=30>
+
 <DT>Institution:<BR>
 <DD><INPUT TYPE="text" NAME="inst" SIZE=30>
+
 <DT>E-mail address:<BR>
 <DD><INPUT TYPE="text" NAME="emailaddr" SIZE=30><br>
+
+<DT>Repeat E-mail address:<BR>
+<DD><INPUT TYPE="text" NAME="emailaddr2" SIZE=30><br>
+
 <DT>Phone Number:<BR>
 <DD><INPUT TYPE="text" NAME="ph" SIZE=30><br>
+
 <DT>FAX Number:<BR>
 <DD><INPUT TYPE="text" NAME="fx" SIZE=30><P>
+
 <DT><B>To:<BR>
 <DD>mgi-help@informatics.jax.org<P></B>
+
 <DT>Subject:<BR>
 <DD><INPUT TYPE="text" NAME="subject" SIZE=55>
+
 <DT>Message:<BR>
 <DD><TEXTAREA WRAP=soft NAME="message" ROWS=10 COLS=55></TEXTAREA><P>
+
 <DT><B>Attn:</B>
 <DD><SELECT NAME="attnto">
 <OPTION> MGI User Support staff
 <OPTION value="dmg"> Susan McClatchy
-<OPTION value="drs"> David Shaw 
+<OPTION value="drs"> David Shaw
 <OPTION value="ps"> Paul Szauter
 </SELECT>
 </DL>
 <input type=hidden name=domain value="MGI">
 <HR>
-<INPUT TYPE=submit VALUE="Submit"> <INPUT TYPE=reset VALUE="Reset Form">
+<INPUT
+   TYPE=submit
+   onclick="return verifyEmail();"
+   VALUE="Submit">
+<INPUT
+   TYPE=reset
+   VALUE="Reset Form">
 </FORM>
 <P>
 <HR>
@@ -72,17 +111,17 @@ detailed in your message as possible.  Thanks!</P>
 <!--
 Warranty Disclaimer and Copyright Notice
 
- THE JACKSON LABORATORY MAKES NO REPRESENTATION ABOUT THE SUITABILITY OR 
- ACCURACY OF THIS SOFTWARE OR DATA FOR ANY PURPOSE, AND MAKES NO WARRANTIES, 
- EITHER EXPRESS OR IMPLIED, INCLUDING MERCHANTABILITY AND FITNESS FOR A 
- PARTICULAR PURPOSE OR THAT THE USE OF THIS SOFTWARE OR DATA WILL NOT 
- INFRINGE ANY THIRD PARTY PATENTS, COPYRIGHTS, TRADEMARKS, OR OTHER RIGHTS.  
+ THE JACKSON LABORATORY MAKES NO REPRESENTATION ABOUT THE SUITABILITY OR
+ ACCURACY OF THIS SOFTWARE OR DATA FOR ANY PURPOSE, AND MAKES NO WARRANTIES,
+ EITHER EXPRESS OR IMPLIED, INCLUDING MERCHANTABILITY AND FITNESS FOR A
+ PARTICULAR PURPOSE OR THAT THE USE OF THIS SOFTWARE OR DATA WILL NOT
+ INFRINGE ANY THIRD PARTY PATENTS, COPYRIGHTS, TRADEMARKS, OR OTHER RIGHTS.
  THE SOFTWARE AND DATA ARE PROVIDED "AS IS".
 
- This software and data are provided to enhance knowledge and encourage 
- progress in the scientific community and are to be used only for research 
- and educational purposes.  Any reproduction or use for commercial purpose 
- is prohibited without the prior express written permission of the Jackson 
+ This software and data are provided to enhance knowledge and encourage
+ progress in the scientific community and are to be used only for research
+ and educational purposes.  Any reproduction or use for commercial purpose
+ is prohibited without the prior express written permission of the Jackson
  Laboratory.
 
 Copyright © 1996, 1999, 2002 by The Jackson Laboratory
