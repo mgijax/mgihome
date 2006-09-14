@@ -41,7 +41,7 @@
 
  
 
- MI0000139
+
 
 
 
@@ -58,29 +58,34 @@ Set the <i>Type</i> field on the <a href="http://firien.informatics.jax.org:8080
 
 
 <ul>
-  <li>dbSNP Build 126 has SNPs that map to the Y chromosome & therefore mouse genome assembly Build 36 from NCBI has picked these up</li>
-<p>New features and changes/additions to MGI data</p>
+  <li>dbSNP serves as a central repository for single nucleotide polymorphisms (SNPs), multiple nucleotide polymorphisms (MNPs) and short insertion/deletion polymorphisms (IN-DELs). dbSNP is the official source of SNP-based mouse genomic variation in MGI. dbSNP Build 126  now contains SNPs that map to the Y chromosome; the mouse genome assembly Build 36 from NCBI contains these now as well, as does MGI.
+</li>
+
+<p>Changes/additions to MGI data</p>
 <ul>
   <li>Multiple gene models are possible for a single MGI gene record.</li>
   <li>Multiple MGI genes may be associated with a single gene model.</li>
   <li>Coordinates for QTLs and miRNAs (microRNAs)</li>
   <li>Links to miRBase and to VEGA.</li>
 </ul>
-ul>
 
 
-, and 
-  The following is an example of an MGI gene detail page with link to curated locus report from VEGA Gene Model<br>
+
+
+<p>The following is an example of an MGI gene detail page with a link to curated locus report from VEGA Gene Model<br>
 <a href="http://www.informatics.jax.org/javawi2/servlet/WIFetch?page=markerDetail&key=54625">
-Oip5</a> (Vega accession ID OTTMUSG00000015949) </li><br>-->
+Oip5</a> (Vega accession ID OTTMUSG00000015949) </li>
+
+<p>The following is an example of an MGI gene detail page with link to curated locus report from VEGA Gene Model<br>
+<a href="http://www.informatics.jax.org/javawi2/servlet/WIFetch?page=markerDetail&key=54625">
+Oip5</a> (Vega accession ID OTTMUSG00000015949) </li>
+
+</p>
 
 
-
-
-
-
+<!--
 <li>You can query by marker range on many MGI query forms using two markers (having genome coordinates and located on the same chromosome) as start and end parameters. The query is inclusive of the markers you enter and returns any marker with at least one base pair overlapping the range you specify (see
-<a href="<!--#include file='include/wi_url.html'-->userdocs/map_position_blurb.shtml">Using  Map Position Fields on MGI Query Forms</a> for further details). Note that you may not enter QTLs in the Marker Range field.
+<a href="<!--#include file='include/wi_url.html'-->userdocs/map_position_blurb.shtml">Using  Map Position Fields on MGI Query Forms</a> for further details). Note that you may not enter QTLs in the Marker Range field.-->
 </ul>
 
 
