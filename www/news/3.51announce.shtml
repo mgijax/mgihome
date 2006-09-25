@@ -42,10 +42,12 @@ Other changes to MGI data are that multiple gene models are now possible for a s
 <li>Mouse GBrowse, MGI's interactive sequence map, is updated to Build 36 and now contains a microRNA track from mirBASE<!--indicating mouse genes associated with specific phenotypes--> as well as tracks for SNPs, QTLs, Ensembl genes, NCBI genes, VEGA genes, MGI representative transcripts, STS markers, phenotypes, and alleles. Access to Mouse GBrowse is from <i>www.informatics.jax.org</i> and from the sequence map section on MGI gene detail pages.</li><br>
 
 
-<li>The following is an example of the MGI gene detail page for <a href="http://firien.informatics.jax.org:8080/javawi2/servlet/WIFetch?page=markerDetail&key=54625">Oip5</a>. In the <i>Sequence Map</i> section, note the link to the VEGA ContigView</a>, and in the  representative <i>Sequences</i> section, note the VEGA Gene Model link which goes to a Vega Mouse GeneView curated locus report.  You can also find these links by entering the Vega accession ID for this gene (OTTMUSG00000015949) or the gene name (<i>Oip5</i> in the Search box on the MGI home page (http://www.informatics.jax.org/)  </li><br>
+<li>The following is an example of the MGI gene detail page for 
+<a href="<!--#include file='include/java_url.html'-->WIFetch?page=markerDetail&key=54625">Oip5</a>. In the <i>Sequence Map</i> section, note the link to the VEGA ContigView</a>, and in the  representative <i>Sequences</i> section, note the VEGA Gene Model link which goes to a Vega Mouse GeneView curated locus report.  You can also find these links by entering the Vega accession ID for this gene (OTTMUSG00000015949) or the gene name (<i>Oip5</i> in the Search box on the MGI home page (http://www.informatics.jax.org/)  </li><br>
 
-<li>To see a summary of all miRNA data in MGI, set the <i>Type</i> field on the <a href="http://firien.informatics.jax.org:8080/javawi2/servlet/WIFetch?page=markerQF">Genes and Markers Query Form</a> to <i>microRNA</i>.  On the microRNA Detail page that appears, click  any of the symbol/names to find details. The following is an example of a an detail page with microRNA coordinates: <br>
-<a href="http://firien.informatics.jax.org:8080/javawi2/servlet/WIFetch?page=markerDetail&key=170816"> Mirn106a</a>   </li>
+<li>To see a summary of all miRNA data in MGI, set the <i>Type</i> field on the 
+<a href="<!--#include file='include/java_url.html'-->WIFetch?page=markerQF">Genes and Markers Query Form</a> to <i>microRNA</i>.  On the microRNA Detail page that appears, click  any of the symbol/names to find details. The following is an example of a an detail page with microRNA coordinates: <br>
+<a href="<!--#include file='include/java_url.html'-->WIFetch?page=markerDetail&key=170816"> Mirn106a</a>   </li>
 </ul>
 
  
