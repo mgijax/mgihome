@@ -9,16 +9,49 @@
 <script type="text/javascript" language="JavaScript">
 <!--
 
-function verifyEmail() {
-var email1 = document.submitInfo.emailaddr.value;
-var email2 = document.submitInfo.emailaddr2.value;
+function verifyFormParameters() {
 
-  if(email1 == email2) {
-    return true
+  var email1 = document.submitInfo.emailaddr.value;
+  var email2 = document.submitInfo.emailaddr2.value;
+
+  var fname = document.submitInfo.firstname.value;
+  var lname = document.submitInfo.lastname.value;
+  var subject = document.submitInfo.subject.value;
+  var msg = document.submitInfo.message.value;
+
+  if(email1 == "") {
+    alert("Email address is a required field.");
+    return false;
   }
 
-alert("The e-mail addresses you entered are not identical. Please check your address and try again.");
-return false;
+  if(fname == "") {
+    alert("First Name is a required field.");
+    return false;
+  }
+
+  if(lname == "") {
+    alert("Last Name is a required field.");
+    return false;
+  }
+
+  if(subject == "") {
+    alert("Subject is a required field.");
+    return false;
+  }
+
+  if(msg == "") {
+    alert("Message is a required field.");
+    return false;
+  }
+
+  if(email1 != email2) {
+    alert("The e-mail addresses you entered are not identical. Please check your address and try again.");
+    return false;
+  }
+
+
+  // all verifications check-out
+  return true
 }
 
 //-->
@@ -96,7 +129,7 @@ detailed in your message as possible.  Thanks!</P>
 <HR>
 <INPUT
    TYPE=submit
-   onclick="return verifyEmail();"
+   onclick="return verifyFormParameters();"
    VALUE="Submit">
 <INPUT
    TYPE=reset
