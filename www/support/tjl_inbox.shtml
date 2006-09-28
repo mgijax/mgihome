@@ -87,19 +87,19 @@ detailed in your message as possible.  Thanks!</P>
 <DL>
 <DT><B>From:</B><P>
 
-<DT>First Name:<BR>
+<DT>First Name (required):<BR>
 <DD><INPUT TYPE="text" NAME="firstname" SIZE=30>
 
-<DT>Last Name:<BR>
+<DT>Last Name (required):<BR>
 <DD><INPUT TYPE="text" NAME="lastname" SIZE=30>
 
 <DT>Institution:<BR>
 <DD><INPUT TYPE="text" NAME="inst" SIZE=30>
 
-<DT>E-mail address:<BR>
+<DT>E-mail address (required):<BR>
 <DD><INPUT TYPE="text" NAME="emailaddr" SIZE=30><br>
 
-<DT>Repeat E-mail address:<BR>
+<DT>Repeat E-mail address (required):<BR>
 <DD><INPUT TYPE="text" NAME="emailaddr2" SIZE=30><br>
 
 <DT>Phone Number:<BR>
@@ -111,10 +111,10 @@ detailed in your message as possible.  Thanks!</P>
 <DT><B>To:<BR>
 <DD>mgi-help@informatics.jax.org<P></B>
 
-<DT>Subject:<BR>
+<DT>Subject (required):<BR>
 <DD><INPUT TYPE="text" NAME="subject" SIZE=55>
 
-<DT>Message:<BR>
+<DT>Message (required):<BR>
 <DD><TEXTAREA WRAP=soft NAME="message" ROWS=10 COLS=55></TEXTAREA><P>
 
 <DT><B>Attn:</B>
