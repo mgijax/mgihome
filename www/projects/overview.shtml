@@ -87,7 +87,7 @@ staff who scan the current scientific  literature,  extract  relevant data, and 
 <tr><td valign="top"><b>Through...</b></td><td valign="top"><b>MGI links to...</b></th></tr>
 <tr><td valign="top">Markers</td><td valign="top">EC, DoTS, UniGene, Ensembl, TIGR, Entrez, InterPro, PDB</td></tr>
 <tr><td valign="top">Phenotypes</td><td valign="top">On-line  Mendelian Inheritance in Man (OMIM), for human disease data.</td></tr>
-<tr><td valign="top">Polymormhic loci</td><td valign="top"></td></tr>
+<tr><td valign="top">Polymorphic loci</td><td valign="top"></td></tr>
 <tr><td valign="top">SNPs and sequence polymorphisms</td><td valign="top">dbSNP</td></tr>
 <tr><td valign="top">Orthologies</td><td valign="top">Entrez, GDB, PigBase, SheepBase, BovMap, RATMAP</td></tr>
 <tr><td valign="top">Sequences</td><td valign="top">GenBank, RefSeq, SWISS-PROT, TrEMBL; TIGR, DoTS, and NIA mouse gene indices</td></tr>
@@ -134,9 +134,8 @@ vector type, hybridizing loci, RFLPs, and references. (<EM>See</EM> the Probes Q
 <A HREF="#top">Back to Top</A> 
 
 <h3><A NAME="orthology"></A>Mammalian Orthology</h3>
-<p>MGD contains orthology information for mouse, human and 15 other mammalian organisms. Most of the information for orthologies is
-extracted from the published scientific literature. In general, these papers explicitly report orthology relationships and MGD reflects that published information. (<em>See</em>
-<a href="<!--#include file='include/wi_url.html'-->userdocs/homology_criteria.shtml">MGD Mammalian Orthology Criteria</a> for the information used to establish orthology.)
+<p>MGD contains orthology information for mouse, human and 15 other mammalian organisms. Most of the information for orthologies extracted from the published scientific literature. In general, these papers explicitly report orthology relationships and MGD reflects that published information. (See the <i>Evidence</i> section under 
+<A HREF="<!--#include file='include/wi_url.html'-->userdocs/homology_summary.shtml#fields">How do I interpret the results of my query?</a> in <i>Interpreting Mammalian Orthology Query Results</i> for the criteria used to establish orthology.)
 </A>
 <P>An orthology record shows the symbol, organism, chromosome, cM position, cytogenetic band, and accession ID for each gene in the set of orthologies. In addition, links to
 other mammalian databases are provided where possible. MGD orthology records may link to GDB, BovMap, PiGBASE, RATMAP, RGD, SheepBase, ArkDB.</p>
@@ -156,7 +155,7 @@ from the <a href="<!--#include file='include/wi_url.html'-->menus/homology_menu.
 
 <h3><A NAME="sequence"></a>Sequence Data</h3>
 
-<P>Vast amounts of sequence data are integrated with the biological information in MGD. Mouse sequences from GenBank, RefSeq, Swiss-Prot, DoTS, and the TIGR and NIA mouse gene indices enable powerful queries from the
+<P>Vast amounts of sequence data are integrated with the biological information in MGD. Mouse sequences from GenBank, RefSeq, <NOBR>Swiss-Prot</NOBR>, DoTS, and the TIGR and NIA mouse gene indices enable powerful queries from the
 <a href="<!--#include file='include/wi_url.html'-->/searches/sequence_form.shtml">Mouse Sequence Query Form</a>. MGI contains sequence attributes, such as length and provider, data about the clones the sequences were derived from, and the genes the sequences have been associated to. Because of our curated associations between mouse markers and sequences, users can search using information such as nomenclature, map position, function (GO annotation, InterPro domain), expression (tissue and developmental stage), and phenotypes of mutant alleles. Source information about the clones that the sequences are derived from, such as strain, tissue, or library, is carefully translated into controlled vocabularies (see <a href="#vocabularies">Vocabulary Browsers</a>).  This adds enormous power to sequence queries, since authors often use multiple terms to specify a strain or tissue.  </P>
 <A HREF="#top">Back to Top</A> 
 
@@ -186,7 +185,7 @@ valign="top">Use this browser to search for ...</th></tr>
 
 
 <h4><A NAME="mapping"></A>Mapping Data</h4>
-<p>MGD contains genetic mapping and linkage data, including haplotype data for linkage crosses, recombinant inbred (RI) strain distribution patterns,in-situ hybridization data,
+<p>MGD contains genetic mapping and linkage data, including haplotype data for linkage crosses, recombinant inbred (RI) strain distribution patterns, <i>in situ</i> hybridization data,
 deletion mapping information, translocation breakpoint mapping, somatic cell hybrids, concordance tables, congenic strains information, and physical mapping information.</p>
 <blockquote>
 <p><A NAME="RIdata"></A><b>Recombinant Inbred Strain Distribution Patterns Composite Data Set</b></p>
@@ -197,8 +196,7 @@ representing a strain  and  each ROW representing the distribution of alleles of
 <p><A NAME="RCdata"></A><b>Recombinant Congenic Strain Distribution Patterns Composite Data Set</b></p> <p>Composite Recombinant Congenic Strain Distribution Patterns data can be retrieved using a new query form accessed in the "Maps and  Mapping Data" section of MGD.
 Information on four recombinant congenic  strain  sets  is currently available. Data include the progenitor strains for each  RCS set  and tables showing the allelic distribution for each genetic marker that has been typed in each of the recombinant  congenic
 strains.  Each  row  represents  the typing for a genetic marker and each column  represents  alleles  carried  by  a specific recombinant congenic strain of the RCS set. Format of the report is very similar to that of the Composite Recombinant Inbred Strains  distribution patterns.</p>
-<p>For more information regarding the use of congenic  strains  to  analyze  traits controlled by multiple genes, see Peter Demant's paper, <BLOCKQUOTE>"Recombinant Congenic Strains - A New Tool for Analyzing Genetic Traits
-Determined  by More Than One Gene, " Immunogenetics 24: 416-422, 1986.</BLOCKQUOTE>
+<p>For more information regarding the use of congenic  strains  to  analyze  traits controlled by multiple genes, see Peter Demant's paper, <BLOCKQUOTE>"Recombinant Congenic Strains - A New Tool for Analyzing Genetic Traits Determined by More Than One Gene," Immunogenetics 24: 416-422, 1986.</BLOCKQUOTE>
 <p><A NAME="DNAdata"> </A><b>DNA Mapping Panel Data Sets</b> </p>
 <p> Data  from the  major DNA mapping panels have been downloaded into MGD and are accessible through the DNA Mapping Panel Data Sets from MGD query form and from the Linkage Maps  form. The data sets include:
 <ul><font size="smaller">
