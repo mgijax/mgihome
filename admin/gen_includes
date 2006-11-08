@@ -50,8 +50,6 @@ def main ():
     stringToFileNoNL (config.lookup ('FTP_URL'), '../www/include/ftp_url2.html')
     stringToFile (config.lookup ('MGIHOME_URL'), \
         '../www/include/mgihome_url.html')
-    stringToFile (config.lookup ('TUTORIAL_URL'), \
-        '../www/include/tutorial_url.html')
     stringToFile (config.lookup ('GB_URL'), '../www/include/gb_url.html')
     stringToFile (config.lookup ('LOCUSLINK_URL'), \
         '../www/include/locuslink_url.html')
@@ -61,6 +59,8 @@ def main ():
         '../www/include/entrez_url.html')
     stringToFile (config.lookup ('GLOSSARY_URL'), \
         '../www/include/glossary_url.html')
+    stringToFile (config.lookup ('USERDOCS_URL'), \
+        '../www/include/userdocs_url.html')
     stringToFile (config.lookup ('SCHEMA'),\
         '../www/include/schema_url.html')
     stringToFile (config.lookup ('MGI_VER'),\
