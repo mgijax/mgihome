@@ -32,7 +32,7 @@
 <ul>
 
 <li>We added the ability to query by <b>Marker range</b> </i> (this field is located in the <b>Map Position</b> section) on many of our query forms. You can use any two markers (having genome coordinates and located on the same chromosome) as start and end parameters. The query is inclusive of the markers you enter and returns any marker with at least one base pair overlapping the range you specify (see 
-<a href="<!--#include file='include/wi_url.html'-->userdocs/map_position_blurb.shtml">Using  Map Position Fields on MGI Query Forms</a> for further details).  As an example, a region of mouse Chromosome 2, bounded proximally by D2Mit241 and distally by D2Mit125, is associated with alcohol consumption in male mice and given the symbol <i>Alcp1</i>. You can use the MGI <a href="<!--#include file='include/java_url.html'-->WIFetch?page=markerQF">Genes and Markers Query Form</a>  to search for candidate genes on Chromosome 2 between these markers and sort the results by genome coordinates.
+<a href="<!--#include file='include/userdocs_url.html'-->map_position_blurb.shtml">Using  Map Position Fields on MGI Query Forms</a> for further details).  As an example, a region of mouse Chromosome 2, bounded proximally by D2Mit241 and distally by D2Mit125, is associated with alcohol consumption in male mice and given the symbol <i>Alcp1</i>. You can use the MGI <a href="<!--#include file='include/java_url.html'-->WIFetch?page=markerQF">Genes and Markers Query Form</a>  to search for candidate genes on Chromosome 2 between these markers and sort the results by genome coordinates.
 
 <p>You can specify a marker range on any of the following MGI query forms:
 <ul>
