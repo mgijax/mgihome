@@ -18,7 +18,7 @@
 <h3>Table of Contents</h3>
 <table border="0" cellspacing="0" cellpadding="2">
 <ul><a href="#projects">MGI Database Projects</a><br>
-    <a href="#about">About MGD</a><br><a href="#data">MGD Data</br>
+    <a href="#aboutMGD">About MGD</a><br><a href="#data">MGD Data</br>
     <a href="#external">Data Links to External Databases</a><br>
     <a href="#genes">Genes and Markers</a><br>
     <a href="#alleles">Phenotypic Alleles</a><br>
@@ -38,16 +38,16 @@
 <li><b>Mouse Genome Database (MGD) Project</b><br>
 MGD includes data on gene characterization, nomenclature, mapping, gene
 homologies among mammals, sequences, phenotypes, allelic variants and
-mutants, and strain data. (See</i> <a href="#aboutMGD">About MGD</a>.)</li>
+mutants, and strain data. (See </i> <a href="#aboutMGD">About MGD</a>.)</li>
 
 <li><b>Gene Expression Database (GXD) Project</b><br>
-GXD integrates different types of gene expression information from the mouse and provides a searchable index of published experiments on endogenous gene expression during development.  (See <a href="../GXD/aboutGXD.shtml">The Gene Expression Database (GXD)</a>.</li>
+GXD integrates different types of gene expression information from the mouse and provides a searchable index of published experiments on endogenous gene expression during development.  (See <a href="../GXD/aboutGXD.shtml">The Gene Expression Database (GXD)</a>.)</li>
 <li><b>Mouse Tumor Biology (MTB) Database</b><br>
 The goal of the <a href="http://tumor.informatics.jax.org/mtbwi/index.do">Mouse Tumor Biology (MTB) Database </a> is to help researchers choose experimental models, review mutation patterns in specific cancers, and identify genes commonly mutated across a spectrum of cancers. The database currently holds over 10,000 tumor records.</li>
 </ul>
 <A HREF="#top">Back to Top</A> 
 
-<h3><a name="about"></a>About MGD</h3>
+<h3><a name="aboutMGD"></a>About MGD</h3>
 
 <p>MGD includes information on mouse genetic markers, molecular clones (probes, primers and
 YACs), phenotypes, sequences, comparative mapping data, graphical displays of linkage,
@@ -84,12 +84,12 @@ staff who scan the current scientific  literature,  extract  relevant data, and 
 
 <table border="0" cellspacing="1" cellpadding="4" width="30%">
 <tr><td valign="top"><b>Through...</b></td><td valign="top"><b>MGI links to...</b></th></tr>
-<tr><td valign="top">Markers</td><td valign="top">EC, DoTS, UniGene, Ensembl, TIGR, Entrez, InterPro, PDB</td></tr>
+<tr><td valign="top">Markers</td><td valign="top">EC, DoTS, UniGene, Ensembl, DFCI, Entrez, InterPro, PDB</td></tr>
 <tr><td valign="top">Phenotypes</td><td valign="top">On-line  Mendelian Inheritance in Man (OMIM), for human disease data.</td></tr>
 <tr><td valign="top">Polymorphic loci</td><td valign="top"></td></tr>
 <tr><td valign="top">SNPs and sequence polymorphisms</td><td valign="top">dbSNP</td></tr>
 <tr><td valign="top">Orthologies</td><td valign="top">Entrez, GDB, PigBase, SheepBase, BovMap, RATMAP</td></tr>
-<tr><td valign="top">Sequences</td><td valign="top">GenBank, RefSeq, SWISS-PROT, TrEMBL; TIGR, DoTS, and NIA mouse gene indices</td></tr>
+<tr><td valign="top">Sequences</td><td valign="top">GenBank, RefSeq, SWISS-PROT, TrEMBL; DFCI, DoTS, and NIA mouse gene indices</td></tr>
 <tr><td valign="top">Molecular probes and clones</td><td valign="top">GenBank, EMBL, and DDBJ</td></tr>
 <tr><td valign="top">References</td><td valign="top">PubMed</td></tr>
 </table>
@@ -100,7 +100,7 @@ staff who scan the current scientific  literature,  extract  relevant data, and 
 
 <h3><A NAME="genes"></A>Genes and Markers</h3>
 MGD contains information on mouse genes, DNA segments,
-cytogenetic markers and QTLs. Each record may include the marker symbol, name,other names or symbols and synonyms, nomenclature history, alleles, STSs,
+cytogenetic markers and QTLs (see <A HREF="<!--#include file='include/wi_url'-->menus/marker_menu.shtml">Genes and Markers</a>). Each record may include the marker symbol, name,other names or symbols and synonyms, nomenclature history, alleles, STSs,
 chromosomal assignment, centimorgan location,
 cytogenetic band, EC number (for enzymes), phenotypic classifications, human disease data, 
 Gene Ontology (GO) terms, MGI  accession IDs and supporting references.
@@ -139,8 +139,7 @@ vector type, hybridizing loci, RFLPs, and references. (<EM>See</EM> the <A HREF=
 other mammalian databases are provided where possible. MGD orthology records may link to GDB, BovMap, PiGBASE, RATMAP, RGD, SheepBase, ArkDB.</p>
 
 <P> Every orthology assertion is supported by one or more references.  The display of an orthology reference includes the J number of the reference, a short format citation, gene symbol, and organism. (<EM>See</EM> 
-<A HREF="<!--#include file='include/userdocs_url.html'-->homology_help.shtml#detail">Details</A> on
-the content of an orthology record as it appears in the query results.)</p>
+<A HREF="<!--#include file='include/userdocs_url.html'-->homology_summary.shtml#contain">What's in a Mammalian Ortholology Query Results report?</A> for more detail.)</p>
 
 <P>Orthology information is presented in three other formats: Oxford Grid, comparative map and Orthology Map View. An Oxford Grid display presents an overview of orthology between two organisms. Currently, this kind of comparison is supported for the following organisms:  mouse, human, cat, cattle, rat, pig, sheep, dog.</p>
 
@@ -148,13 +147,13 @@ the content of an orthology record as it appears in the query results.)</p>
 <A HREF="<!--#include file='include/wi_url.html'-->searches/accession_report.cgi?id=MGI:87895">Chrng</A> showing human orthology.</p>
 
 <P> The Orthology Map View displays the mouse genome as the consensus genetic map, with either human or rat orthologs labeled by chromosome of origin and displayed next to the corresponding  segment of the mouse genome.  The Orthology Map View is accessible
-from the <a href="<!--#include file='include/wi_url.html'-->menus/homology_menu.shtml">Orthology Menu</A> page.</p>
+from the <a href="<!--#include file='include/wi_url.html'-->menus/homology_menu.shtml">Mammalian Orthology and Comparative Maps</A> menu.</p>
 <A HREF="#top">Back to Top</A> 
 
 <h3><A NAME="sequence"></a>Sequence Data</h3>
 
-<P>Vast amounts of sequence data are integrated with the biological information in MGD. Mouse sequences from GenBank, RefSeq, <NOBR>Swiss-Prot</NOBR>, DoTS, and the TIGR and NIA mouse gene indices enable powerful queries from the
-<a href="<!--#include file='include/wi_url.html'-->searches/sequence_form.shtml">Mouse Sequence Query Form</a>. MGI contains sequence attributes, such as length and provider, data about the clones the sequences were derived from, and the genes the sequences have been associated to. Because of our curated associations between mouse markers and sequences, users can search using information such as nomenclature, map position, function (GO annotation, InterPro domain), expression (tissue and developmental stage), and phenotypes of mutant alleles. Source information about the clones that the sequences are derived from, such as strain, tissue, or library, is carefully translated into controlled vocabularies (see <a href="#vocabularies">Vocabulary Browsers</a>).  This adds enormous power to sequence queries, since authors often use multiple terms to specify a strain or tissue.  </P>
+<P>Vast amounts of sequence data are integrated with the biological information in MGD. Mouse sequences from GenBank, RefSeq, <NOBR>Swiss-Prot</NOBR>, DoTS, and the DFCI and NIA mouse gene indices enable powerful queries from the
+<a href="<!--#include file='include/wi_url.html'-->searches/sequence_form.shtml">Mouse Sequence Query Form</a>. MGI contains sequence attributes, such as length and provider; data about the clones the sequences were derived from; and the genes the sequences have been associated to. Because of our curated associations between mouse markers and sequences, users can search using information such as nomenclature, map position, function (GO annotation, InterPro domain), expression (tissue and developmental stage), and phenotypes of mutant alleles. Source information about the clones that the sequences are derived from, such as strain, tissue, or library, is carefully translated into controlled vocabularies (see <a href="#vocabularies">Vocabulary Browsers</a>).  This adds enormous power to sequence queries, since authors often use multiple terms to specify a strain or tissue.  </P>
 <A HREF="#top">Back to Top</A> 
 
 <h3><a name="snp"></a>SNP Data</h3>
@@ -219,7 +218,7 @@ UCLA (BSB): (C57BL/6J x M. spretus)F1 x C57BL/6J
 
 <blockquote>
 <p><b>Mapping Experiment Records</b></p>
-(<em>See</em> <a href="<!--#include file='include/userdocs_url.html'-->mapping_data.shtml">Mapping Experimental Data Records</a> for information about the content of various mapping experiment records.)
+(See <a href="<!--#include file='include/userdocs_url.html'-->mapping_data.shtml">Mapping Experimental Data Records</a> for information about the content of various mapping experiment records.)
 </blockquote>
 <blockquote>
 <p><b>Graphical Map Displays</b>
@@ -236,8 +235,9 @@ UCLA (BSB): (C57BL/6J x M. spretus)F1 x C57BL/6J
 <a href="#top">Back to Top</a>
 
 <h3><A NAME="references"></A>References</h3>
-MGD  contains  references  for all data in the  database.  As of March 2006, there were over 100,000 references. MGD reference format is similar to that used by  PubMed. Data for the full MGD reference are extracted from PubMed when possible. References are first entered into MGD in an abbreviated format; these  records  are  updated when the PubMed records become available. If the journal is not indexed by PubMed, our curators enter the full reference into MGD manually.  (See  the References Query Form
-<a href="<!--#include file='include/userdocs_url.html'-->reference_help.shtml#detail">Detail</A> for more information about the content of reference records.)</p>
+MGD  contains  references  for all data in the  database.  As of March 2006, there were over 100,000 references. MGD reference format is similar to that used by  PubMed. Data for the full MGD reference are extracted from PubMed when possible. References are first entered into MGD in an abbreviated format; these  records  are  updated when the PubMed records become available. If the journal is not indexed by PubMed, our curators enter the full reference into MGD manually.  (See the
+ <a href="<!--#include file='include/wi_url.html'-->searches/reference_form.shtml">References Query Form</a>,  <a href="<!--#include file='include/userdocs_url.html'-->reference_help.shtml">Using the References Query Form</a>, and 
+<a href="<!--#include file='include/userdocs_url.html'-->reference_help.shtml#detail">How do I interpret the detail results?</A> for more information about reference query data).</p>
 <a href="#top">Back to Top</a>
 
 
