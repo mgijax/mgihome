@@ -84,11 +84,11 @@ staff who scan the current scientific  literature,  extract  relevant data, and 
 
 <table border="0" cellspacing="1" cellpadding="4" width="30%">
 <tr><td valign="top"><b>Through...</b></td><td valign="top"><b>MGI links to...</b></th></tr>
-<tr><td valign="top">Markers</td><td valign="top">EC, DoTS, UniGene, Ensembl, DFCI, Entrez, InterPro, PDB</td></tr>
+<tr><td valign="top">Markers</td><td valign="top">DFCI, DoTS, EC,  Ensembl,  Entrez, InterPro, NCBI, PDB, UniGene, VEGA</td></tr>
 <tr><td valign="top">Phenotypes</td><td valign="top">On-line  Mendelian Inheritance in Man (OMIM), for human disease data.</td></tr>
 <tr><td valign="top">Polymorphic loci</td><td valign="top"></td></tr>
 <tr><td valign="top">SNPs and sequence polymorphisms</td><td valign="top">dbSNP</td></tr>
-<tr><td valign="top">Orthologies</td><td valign="top">Entrez, GDB, PigBase, SheepBase, BovMap, RATMAP</td></tr>
+<tr><td valign="top">Orthologies</td><td valign="top">Ark-DB, BovMap, Entrez, HGNC, Homologene, NCBI, PigBase, SheepBase, TreeFam, Uniprot, VEGA, VISTA</td></tr>
 <tr><td valign="top">Sequences</td><td valign="top">GenBank, RefSeq, SWISS-PROT, TrEMBL; DFCI, DoTS, and NIA mouse gene indices</td></tr>
 <tr><td valign="top">Molecular probes and clones</td><td valign="top">GenBank, EMBL, and DDBJ</td></tr>
 <tr><td valign="top">References</td><td valign="top">PubMed</td></tr>
@@ -196,7 +196,7 @@ strains.  Each  row  represents  the typing for a genetic marker and each column
 <p>For more information regarding the use of congenic  strains  to  analyze  traits controlled by multiple genes, see Peter Demant's paper, <BLOCKQUOTE>"Recombinant Congenic Strains - A New Tool for Analyzing Genetic Traits Determined by More Than One Gene," Immunogenetics 24: 416-422, 1986.</BLOCKQUOTE>
 <p><A NAME="DNAdata"> </A><b>DNA Mapping Panel Data Sets</b> </p>
 <p> Data  from the  major DNA mapping panels have been downloaded into MGD and are accessible through the DNA Mapping Panel Data Sets from MGD query form and from the Linkage Maps  form. The data sets include:
-<font size="-2"><ul>
+<font size="-1"><ul>
 Copeland-Jenkins:(C57BL/6J x M. spretus)F1 x C57BL/6J <br>
 EUCIB (BSB):(C57BL/6J x SPR or SEG/Pas)F1 x C57BL/6J<br>
 EUCIB (BSS): (C57BL/6J x  SPR  or SEG/Pas)F1 x SPR or SEG/Pas <br>
@@ -225,11 +225,14 @@ UCLA (BSB): (C57BL/6J x M. spretus)F1 x C57BL/6J
 <blockquote>
 
 <p><b>Linkage  Maps</b></p>
-<p>Marker records in MGD include available information on genetic mapping locations from several sources: MGD, Chromosome Committees (up to the year 2000), and MIT. MGD provides  mapping tools to generate graphic displays of genetic maps.  Using the Linkage Maps  form,  you can generate a graphical map display in Web Map format to display linkage  information  for a chromosome from a particular cross. Centimorgan locations are specific to the cross and may differ from estimates for the same loci found in MGD marker records. You can print the display using the PostScript format option.
+<p>Marker records in MGD include available information on genetic mapping locations from several sources: MGI, Chromosome Committees (up to the year 2000), and MIT. MGI provides  mapping tools to generate graphic displays of genetic maps.  Using the Linkage Maps  form,  you can generate a graphical map display in Web Map format to display linkage  information  for a chromosome from a particular cross. Centimorgan locations are specific to the cross and may differ from estimates for the same loci found in MGD marker records. You can print the display using the PostScript format option.
 <p><b>Cytogenetic Maps</b></p>
-<p>MGD stores  cytogenetic  band  information  for  mouse markers. The  Cytogenetic  Maps  query  form provides  access  to map  images. Relatively few markers have been assigned cytogenetic locations.
+<p>MGI stores  cytogenetic  band  information  for  mouse markers. The  Cytogenetic  Maps  query  form provides  access  to map  images. Relatively few markers have been assigned cytogenetic locations.
 </p>
-<p><b>Physical Maps</b></p> <p>In June 1997, MGD began storing physical mapping data from MIT's mouse physical mapping project in which MIT primers and STSs are mapped against a mouse YAC library to build a contig map of the mouse. MGD provides query access to the MIT primers, STSs, and YACs. In addition, MGD provides integrated genetic/physical displays in Web Map format. These map files are updated when the MIT mapping physical mapping data set is  updated.</p>
+<p><b>Physical Maps</b></p> <p>In June 1997, MGD began storing physical mapping data from MIT's mouse physical mapping project in which MIT primers and STSs are mapped against a mouse YAC library to build a contig map of the mouse. MGI provides query access to the MIT primers, STSs, and YACs. In addition, MGD provides integrated genetic/physical displays in Web Map format. These map files are updated when the MIT mapping physical mapping data set is  updated.</p>
+
+<p><b>Genome Maps</b></p>
+<p>In May 2005, MGI added a customized version of Lincoln Stein's Generic Genome Browser (GBrowse) that supports interactive browsing and display of mouse genome annotations. Access to MGI Mouse GBrowse is from the MGI home page (www.informatics.jax.org) and from the sequence map section on MGI gene detail pages. Tracks for MGI Mouse GBrowse include MGI representative transcripts; Ensembl, NCBI, and VEGA gene models; SNPs; QTLs; alleles (induced, spontaneous, gene-trapped, transgenic, targeted); phenotypes; and STS markers linked to UniSTS at NCBI. Tracks are updated at different times, depending on data availability. See the <a href="http://gbrowse.informatics.jax.org/gbrowse/docs/update_notes_36.html">update notes</a> for details.
 </blockquote>
 </blockquote>
 <a href="#top">Back to Top</a>
