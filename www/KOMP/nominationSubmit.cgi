@@ -121,17 +121,34 @@ def checkRequiredFields(parms):
     # Throws: SystemExit if an error is found and we have sent an error
     #	message to the user.
 
-    missing_fields = []
+    missing_fields = []			# list of fields with no value given
+
     for key in required_fields:
-	if not parms.has_key(key) or \
-		(type(parms[key]) == types.StringType and \
-		parms[key].value == ''):
+        emptyField = False		# assume the field is not empty
+
+	# if the parameter was not submitted at all...
+
+        if not parms.has_key(key):
+            emptyField = True
+        else:
+	    # if the parameter allows a list of values, but none were given...
+
+            if type(parms[key]) == types.ListType:
+                if len(parms[key]) == 0:
+		    emptyField = True
+            else:
+		# the parameter's value is a string; if it is an empty one...
+
+                if len(parms[key].value) == 0:
+                    emptyField = True
+
+        if emptyField:
             missing_fields.append (labels[key])
 
     if missing_fields:
-	err_message = '''The following required fields are missing.
+        err_message = '''The following required fields are missing.
 		Please go back and try again.<P><UL><LI>%s</LI></UL>'''
-	bailout (err_message % '</LI><LI>'.join(missing_fields))
+        bailout (err_message % '</LI><LI>'.join(missing_fields))
     return
 
 ###------------------------------------------------------------------------###
