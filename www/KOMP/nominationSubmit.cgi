@@ -139,7 +139,7 @@ def checkRequiredFields(parms):
             else:
 		# the parameter's value is a string; if it is an empty one...
 
-                if len(parms[key].value) == 0:
+                if len(parms[key].value.strip()) == 0:
                     emptyField = True
 
         if emptyField:
@@ -316,8 +316,8 @@ def compileOutputBottom (parms):
 	    '---------------------------',
 	    'Nominations (tab delimited)',
 	    '---------------------------',
-	    'Approach\tSymbol/Name\tSynonyms\tMGI\tGenBank\t' + \
-		'EntrezGene\tEnsembl'
+#	    'Approach\tSymbol/Name\tSynonyms\tMGI\tGenBank\t' + \
+#		'EntrezGene\tEnsembl'
 	    ] + section
 
     return message 
@@ -394,7 +394,7 @@ def sendUserConfirmation (message):
     print header.bodyStart()
     print header.headerBar('KOMP Gene Nomination Sent!')
     print 'The following information was successfully submitted:'
-    print '<PRE>\n%s\n</PRE>' % messageText
+    print '<PRE>\n%s\n</PRE>' % cgi.escape(messageText)
     print '<HR>'
     print header.bodyStop()
 
