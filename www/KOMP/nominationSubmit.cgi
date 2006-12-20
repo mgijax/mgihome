@@ -192,9 +192,9 @@ def compileOutputTop(parms):
                     section.append (labels[field])
                     if type(parms[field]) == types.ListType:
                         for item in parms[field]:
-                            section.append ('\t%s' % item.value)
+                            section.append ('\t%s' % item.value.strip())
                     else:
-                            section.append ('\t%s' % parms[field].value)
+                            section.append ('\t%s' % parms[field].value.strip())
 
 	# if we added anything to the 'section' other than the header lines,
 	# then add it to the message
@@ -241,8 +241,10 @@ def compileOutputBottom (parms):
 	    # value to 'line'.  Otherwise, append an empty string for its
 	    # corresponding column.
 
-	    if parms.has_key(fieldname) and parms[fieldname].value != '':
-		line.append (parms[fieldname].value)
+	    if parms.has_key(fieldname) and \
+			parms[fieldname].value.strip() != '':
+
+		line.append (parms[fieldname].value.strip())
 
 		# update our caches of data about this nomination
 
@@ -254,11 +256,11 @@ def compileOutputBottom (parms):
 			isEmpty = False
 
 		if fieldname[:6] == 'symbol':
-		    symbol = parms[fieldname].value
+		    symbol = parms[fieldname].value.strip()
 	        elif fieldname[:7] == 'synonym':
-		    synonym = parms[fieldname].value
+		    synonym = parms[fieldname].value.strip()
 		elif fieldname[0] in ('m', 'g', 'e'):
-		    ids.append (parms[fieldname].value)
+		    ids.append (parms[fieldname].value.strip())
 	    else:
 		line.append ('')
 
