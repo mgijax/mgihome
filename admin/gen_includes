@@ -2,10 +2,7 @@
 
 import config
 import homelib
-#import SimpleVocab
 import webshare_lib
-
-#SimpleVocab.set_sqlFunction (homelib.sql)
 
 def listToFile (str_list, filename):
     print "writing %s" % filename
@@ -90,10 +87,21 @@ def main ():
     stringToFile (webshare_lib.webshareLookup('mgicss'), \
         '../www/include/stylesheet.html')
 
-#   vocab = SimpleVocab.PhenoSlimVocab()
-#   listToFile (SimpleVocab.getSelectionList (vocab,
-#       url = config.lookup('WI_URL') + 'userdocs/phenoslim.shtml'),
-#       '../www/include/phenoslim_select.html')
+    # new additions for KOMP
+
+    stringToFile (config.lookup ('GENBANK_HOME'),
+	'../www/include/genbank_home_url.html')
+    stringToFile (config.lookup ('ENSEMBL_HOME'),
+	'../www/include/ensembl_home_url.html')
+    stringToFile (config.lookup ('ENTREZGENE_HOME'),
+	'../www/include/entrezgene_home_url.html')
+    stringToFile (config.lookup ('KOMP_HOME'),
+	'../www/include/komp_home_url.html')
+    stringToFile (config.lookup ('KOMP_NIH'),
+	'../www/include/komp_nih_url.html')
+    stringToFile (config.lookup ('IMSR_HOME'),
+	'../www/include/imsr_home_url.html')
+
     return
 
 if __name__ == '__main__':
