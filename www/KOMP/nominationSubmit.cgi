@@ -153,6 +153,16 @@ def checkRequiredFields(parms):
 
 ###------------------------------------------------------------------------###
 
+def chopFilename(filename):
+	# chop any leading directory path information from the filename and
+	# omit any included spaces (to make more Unix-friendly
+
+	items = filename.split('/')
+	items = items[-1].split('\\')
+	return items[-1].replace(' ', '')
+
+###------------------------------------------------------------------------###
+
 def compileOutputTop(parms):
     # Purpose: compile the top of the output page, based on the user input in
     #	'parms'.  This should include everything except the nominations.
@@ -181,7 +191,7 @@ def compileOutputTop(parms):
         if heading == "File Upload" :
             for field in fieldlist :
                 if parms.has_key(field) and parms[field].value != '':
-                    ulFileName = parms[field].filename
+                    ulFileName = chopFilename(parms[field].filename)
 		    section.append('File Uploaded\n\t%s' % ulFileName)
                     ulFileContents = parms[field].value
         else:
