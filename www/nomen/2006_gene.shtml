@@ -1,7 +1,7 @@
 <HTML>
 <HEAD>
 <TITLE><!--#include file='include/mgiversion.html'--> - Rules for Nomenclature of Genes,
-Genetic Markers, Alleles, and Mutations in Mouse and Rat<br>Revised: January, 2007</TITLE>
+Genetic Markers, Alleles, and Mutations in Mouse and Rat<br>Revised: Jan, 2006</TITLE>
 <!--#include file="include/stylesheet.html"-->
 </HEAD>
 <BODY BGCOLOR="#ffffff">
@@ -10,7 +10,7 @@ Genetic Markers, Alleles, and Mutations in Mouse and Rat<br>Revised: January, 20
   <TABLE WIDTH="100%" BORDER=0 CELLPADDING=0 CELLSPACING=0>
    <TR><TD WIDTH="20%" VALIGN="center" ALIGN="left"><A HREF="<!--#include file='include/wi_url.html'-->" border=0><!--#include file="include/mgi_logo_small.html"--></A></TD>
 <TD WIDTH="60%" ALIGN="center" VALIGN="center" BGCOLOR="#ffffff"><FONT COLOR="#000000" SIZE=5 FACE="Arial,Helvetica">Rules for Nomenclature of Genes,
-Genetic Markers, Alleles, and Mutations in Mouse and Rat<br><font size=-2>Revised: January, 2007</font> </TD>
+Genetic Markers, Alleles, and Mutations in Mouse and Rat<br><font size=-2>Revised: August, 2006</font> </TD>
 <TD WIDTH="20%" VALIGN="center" ALIGN="center" BGCOLOR="#ffffff">&nbsp;</TD></TR>
 <TR BGCOLOR="blue"><TD COLSPAN=3><FONT face="Arial,Helvetica" color="#ffffff"><B>&nbsp;Mouse Genome Informatics</B></TD></TR>
 <TR><TD BGCOLOR="#ffffff"><FONT SIZE=-1 FACE="Arial,Helvetica"><CENTER><A HREF="<!--#include file='include/wi_url.html'-->">MGI Home</A>&nbsp;&nbsp;&nbsp; <a href="../help/help.shtml">Help </A></FONT></CENTER></TD></TR>
@@ -62,8 +62,7 @@ Guidelines</a> (since 2000) are available online. </p>
       </ul>
     <a href="#sg">2.4&nbsp;&nbsp;Structural Genes, Splice Variants, and Promoters</a></br>
        <ul>
-        <a href="#antisense">2.4.1&nbsp;&nbsp;Antisense and Opposite Strand Genes</a></br>
-        <a href="#ghos">2.4.2&nbsp;&nbsp;Genes with Homologs in Other Species</a></br>
+        <a href="#ghos">2.4.1&nbsp;&nbsp;Genes with Homologs in Other Species</a></br>
        </ul>
     <a href="#pns">2.5&nbsp;&nbsp;Phenotype Names and Symbols</a></br>
       <ul>
@@ -146,7 +145,7 @@ Guidelines</a> (since 2000) are available online. </p>
     <a href="#tror">6.15&nbsp;&nbsp;Ortholog</a></br>
     <a href="#trpa">6.16&nbsp;&nbsp;Paralog</a></br>
    </ul>
- <a href="#nomenref">7&nbsp;&nbsp;References</a></br>
+ <a href="#nomenref">6&nbsp;&nbsp;References</a></br>
 
 <p>
 <h2><a name="pon"></a>1&nbsp;&nbsp;Principles of Nomenclature</h2>
@@ -413,29 +412,7 @@ correspond to relative location in the genome and the numbering series are
 independent among species. For these elements, no attempt is made to develop
 cross-species equivalency.</p>
 
-
-<H4><A name="antisense"></A>2.4.1 &nbsp;&nbsp;Antisense and Opposite Strand Genes </h4>
-
-<p>Transcripts from the opposite strand that overlap another gene, or a transcript that is derived principally from the introns of another gene, or one that uses an alternative reading frame to another gene (and does not use the existing frame to a significant extent) should be given a different name.</p>
-<p>A gene of <i>unknown function</i>, encoded at the same genomic locus (with overlapping exons) as another gene should have its own symbol. If the new gene <i>regulates</i> the first gene, it may be assigned the symbol of the first gene with the suffix "as" for antisense. The gene symbol should not be written backwards.</p>
-
-<blockquote>
-<B>Example:</B>
-<table cellpadding=4 cellspacing=4>
-<tr><td><i>Igf2as</i></td><td>insulin-like growth factor 2, antisense </td></tr>
-</table>
-</blockquote>
-
-
-<p>Genes of <i>unknown function</i> on the opposite strand, which have <i>no</i> proven regulatory function, should be assigned the symbol of the known gene with the suffix "os" for opposite strand.</p>
-<blockquote>
-<B>Example:</B>
-<table cellpadding=4 cellspacing=4>
-<tr><td><i>Dnm3os</i></td><td>dynamin3, opposite strand </td></tr>
-</table>
-</blockquote>
-
-<H4><A name="ghos"></A>2.4.2 &nbsp;&nbsp;Genes with Homologs in Other Species</H4>
+<H4><A name="ghos"></A>2.4.1 &nbsp;&nbsp;Genes with Homologs in Other Species</H4>
 <p>To aid interspecific comparison of genetic and other information, a gene that is identifiable as a
 homolog of an already named gene in another species can be named as  &quot;-like&quot; &quot;-
 homolog&quot; or &quot;-related &quot;. (Note: this is not the same as &quot;related sequence&quot;
@@ -930,13 +907,17 @@ alleles of the structural gene.</p>
 <H4><A NAME="mosg"></A>3.4.1  &nbsp;&nbsp;Mutations of Structural Genes</H4>
 
 <p>Variants of structural genes that are clearly mutations, whether or not they confer a
-phenotype, are given the superscript m#Labcode, where # is a serial number and is followed by the Laboratory code where the mutation was found or characterized. Serial numbers are independently assigned in mouse and rat and the same assigned serial number does not imply orthology. If the mutation is known to have occurred on a particular allele, that can be
+phenotype, are given the superscript
+m#Labcode, where # is a serial number and is followed by the Laboratory code where the
+mutation was found or characterized. Serial numbers are independently assigned
+in mouse and rat and the same assigned serial number does not imply orthology.
+If the mutation is known to have occurred on a particular allele, that can be
 specified by preceding the superscript with the allele symbol and a hyphen.</p>
 <ul>
 <li>for example, <i>Mod1<sup>a-m1Lws</sup></i> is a mutation of the mouse <i>Mod1<sup>a</sup></i> allele, the first found in the laboratory of Susan Lewis.</li>
 </ul>
 
-<p>If the mutation is shown to be a deletion of all or part of the structural gene, the superscript <i>del</i> can be used in place of <i>m</i>. Note that this should be used only for deletions that encompass a single gene; larger deletions should use the chromosomal deletion nomenclature.</p>
+<p>If the mutation is shown to be a deletion of all or part of the structural gene, the superscript <i>dl</i> can be used in place of <i>m</i>. Note that this should be used only for deletions that encompass a single gene; larger deletions should use the chromosomal deletion nomenclature.</p>
 
 <H4><A NAME="tim"></A>3.4.2 &nbsp;&nbsp; Transgenic Insertional Mutations</H4>
 <p>Mutations produced by random insertion of a transgene (not by gene targeting) are named as a mutant allele of the gene (which should be given a name and symbol if it is a novel gene), with the superscript the symbol for the transgene (see <A HREF="#gkomp">Section 3.1.1</A> for
@@ -959,16 +940,6 @@ of the <b>complete</b> coding region, the replacing gene symbol can be used pare
 <li>For example, <i>En1<sup>tm1(Otx2)Wrst</sup></i> where the coding region of <i>En1</i> was
      replaced by the <i>Otx2</i> gene, originating from the W. Wurst laboratory.</li>
 </ul>
-
-<p>Knock in alleles expressing a RNAi under the control of the endogenous promoter can be designated using targeted mutation or transgene mutation nomenclature, as appropriate:
-
-<blockquote>
-<B>Example:</B>
-<table cellpadding=4>
-<tr><TD VALIGN="top"><i>Gene<sup>tm#(RNAi:Xyz)Labcode</sup></td></tr>
-</table>
-</blockquote>
-</p>
 
 <p>When a targeting vector is used to generate multiple germline transmissible alleles,
 such as in the Cre-Lox system, the original knock-in of loxP would follow the
@@ -996,23 +967,17 @@ in fact these do not provide unique gene names, as such alterations, which
 could be made in independent labs, while bearing the same changes, may differ
 elsewhere in the gene.</p>
 
-<p><b>Gene trap mutations</b> are symbolized in a similar way. If the trapped gene is known,
+<p>Gene trap mutations are symbolized in a similar way. If the trapped gene is known,
 the symbol will appear identical to a targeted mutation of the same gene
 (which, in fact, is appropriate as they will be indistinguishable at the
 molecular level). If the trapped gene is novel, it should be given a name and a
 symbol, which could include the letters <i>Gt</i> for &quot;gene trap&quot;, the vector in parentheses, a serial number, and Laboratory code.</p>
+
 <ul>
 <li>For example, a gene trap using vector ROSA, the 26th made in P. Soriano's laboratory, is
 <i>Gt(ROSA)26Sor</i>.</li>
 </ul>
-<p>For high throughput systematic gene trap pipelines, the mutant ES cell lines designation can be used in parentheses instead of the vector designation, and the serial number following the parentheses may be omitted. </p>
-<blockquote>
-<b>Examples:</b>
-<table cellpadding=4>
-<tr><TD VALIGN="top"><i>Gt(DTM030)Byg</i></td><td valign="top">for a trapped gene (at an undefined locus) in mutant ES cell line DTM030, made by BayGenomics</td></tr>
-<tr><TD VALIGN="top"><i>Osbpl1a<sup>Gt(OST48536)Lex</sup></i></td><td valign="top">gene trap allele of the oxysterol binding protein-like 1A gene, in mutant ES cell line OST48536, made by Lexicon Genetics, Inc.</td></tr>
-</table>
-</blockquote>
+
 
 <h2><A NAME="transg"></A>4&nbsp;&nbsp;&nbsp;Transgenes</h2>
 
@@ -1113,23 +1078,6 @@ where the inserted BAC is from the RP22 BAC library, plate 412, row K, column
 21. It is the 15th in the mouse made in the laboratory of Stefan Somlo (Som).</td></tr>
 </table>
 </blockquote>
-<p>Transgenes containing RNAi constructs can be designated minimally as:
-<dl>
-  <dt>Tg(RNAi:geneX)#Labcode, where</dt>
-  <dd>geneX is the gene that is knocked down</dd>
-   <dd># is the serial number of the transgene</dd>
-</dl>
-	
-<p>An expanded version of this designation is:</p>
-  <dl>
-  <dt>Tg(Pro-yyRNAi:geneX)#Labcode, where</dt>
-  <dd>Pro- can be used optionally to designate the promoter</dd>
-  <dd>yy can be used optionally for the specific RNAi construct</dd>
-</dl>
-</p>
-
-<p>While there is the option to include significant information on vectors, promoters, etc. within the parentheses of a transgene symbol, this should be minimized for brevity and clarity. The function of a symbol is to provide a unique designation to a gene, locus, or mutation. The fine molecular detail of these loci and mutations should reside in databases such as MGD and RGD.
-</p>
 
 <h2><a name="transposon"></a>5 &nbsp;&nbsp; Transposon-induced Mutations and Inserts</h2>
 <p>Three types of genetic inserts are involved in creating transposon-induced mutations. Two lines, one carrying the transposable-element as a concatamer and the other carrying the transposase are mated. This causes the transposable-element to come in contact with the transposase and to be mobilized from its original site, and, when reintegrated into the genome, can cause a heritable phenotypic mutation. (<i>c.f.</i>, <a href="#ding">Ding, <i>et al</i>.,</a>2005; <a href="#bestor">Bestor,</a> 2005; <a href="#dupuy">Dupuy, <i>et al.</i>,</a>  2005). Accepted nomenclature for the transposable-element inserts, transposase transgenes, and resulting transposed insertion alleles are given below.</p>
@@ -1261,7 +1209,15 @@ if the transgene is present only in one of the two parental chromosome sets. By 
 modified by targeting at the endogenous locus is an allele and should be named as such.</p>
 
 <H3><A NAME="trva"></A>6.6&nbsp;&nbsp;&nbsp;Allelic Variant</H3>
-<p>Allelic variants are differences between alleles, detectable by any assay. For example, differences in anonymous DNA sequences can be detected as simple sequence length polymorphism (SSLP) or single nucleotide polymorphisms (SNPs). Other types of variants include differences in protein molecular weight or charge, differences in enzyme activity, or differences in single-stranded conformation (SSCP). Many allelic variants, in particular DNA variants, do not confer any external phenotype on the animal. These variants are often termed "polymorphisms" although strictly speaking that term applies only to variants with a frequency of more than 1% in the population. </p>
+<p>Allelic variants are differences between alleles, detectable by any assay. Differences in
+anonymous DNA sequences are usually detected as restriction fragment length variants (RFLVs), simple
+sequence length polymorphism (SSLP), or single-stranded conformation polymorphism (SSCP). Other types
+of variants include differences in protein molecular weight or charge, differences in enzyme
+activity, or differences at specific nucleotide positions (SNPs, single nucleotide polymorphisms or
+MNPs, multiple nucleotide polymorphisms). Most allelic variants, in particular DNA variants, do not
+confer any external phenotype on the animal. These variants are often termed
+&quot;polymorphisms&quot; although strictly speaking that term applies only to variants with a
+frequency of more than 1% in the population. </p>
 
 <H3><A NAME="trsvas"></A>6.7&nbsp;&nbsp;&nbsp;Splice Variant or Alternative Splice</H3>
 <p>Alternative splicing of a gene results in different, normally occurring forms of mRNA defined by

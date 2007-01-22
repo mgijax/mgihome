@@ -25,19 +25,27 @@
 </TABLE>
 
 <P><A NAME="Annotating"></A>
-MGI uses database mining and other strategies to automate gene annotation.  The electronic annotations are attributed to MGI references J:56000, J:72245, J:72247,  and J:60000. Revuewed electronic annotation (RCA) is attributed to MGI reference J:80000.  In addition, scientific curators review the published literature and extract information to annotate gene records manually.  The annotated records include the supporting references.</P>
-<p>Automated annotation strategies include:</P>
+MGI assigns GO annotation by either manual curation of published experimental literature or automated electronic-based methods. The annotated records include the supporting references. 
+MGI collaborates with several groups outside of MGI in collecting GO annotation for mouse genes. See <a href="go_curators.shtml">GO Curators</a> for the list of groups that provide  annotations for mouse genes.</p>
+<p>Electronic-based annotation strategies include:</P>
 <UL>
-<LI>mapping the Enzyme Commission (EC) number associated with a gene to the EC number attached to GO terms</LI>
-<LI>translating SWISS-PROT "keywords" associated with a gene to appropriate GO terms</LI>
-<LI>associating GO terms to a gene, based upon proper gene nomenclature; for example, G-protein coupled receptor genes can be annotated as:
+<LI>mapping the Enzyme Commission (EC) numbers associated with a gene to the EC number attached to GO terms (referenced with J:72245)</LI>
+<LI>translating SWISS-PROT "keywords" associated with a gene to appropriate GO terms (referenced with J:60000)</LI>
+<li>mapping InterPro domains associated with a gene to GO terms (referenced with J:72247)</li>
+<LI>associating GO terms to a gene, based upon proper gene nomenclature (referenced with J:56000).
+ <ul>
+   <li>For example, G-protein linked receptor activity genes can be annotated as:
     <UL>
     <LI>Molecular Function: G protein linked receptor</LI>    
-    <LI>Cellular Component: integral plasma membrane protein</LI>    
-    <LI>Biological Process: G protein linked receptor signaling pathway</LI>
-    </UL></li>
-</UL>  
-<p>See <a href="go_curators.shtml">GO Curators</a> for the list of groups providing annotations for mouse genes.</p>  
+    <LI>Cellular Component: integral to plasma membrane</LI>    
+    <LI>Biological Process: G-protein coupled receptor protein signaling pathway</LI>
+    </UL>
+    </li>
+
+</UL> 
+<li>reviewed computational alanysis (RCA) performed by the Riken consortium (attributed to MGI reference J:80000)</li>
+ 
+</UL> 
 
 
 <p>If you have questions, need assistance, or wish to report a problem with specific annotations, please contact MGI at mgi-help@informatics.jax.org.</p>
