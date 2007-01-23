@@ -394,7 +394,7 @@ addition of a comma “variant” and serial number to the name.
 </table>
 </blockquote>
 
-<p>Transcripts from the opposite strand that overlap another gene, or a transcript that is derived principally from the introns of another gene, or one that uses an alternative reading frame to another gene (and does not use the existing frame to a significant extent) should be given a different name.
+<p>Transcripts from the opposite strand that overlap another gene, or a transcript that is derived principally from the introns of another gene, or one that uses an alternative reading frame to another gene (and does not use the existing frame to a significant extent), should be given a different name.
 
 <p>In addition to alternative transcripts based on splice variants, genes may use multiple promoters. The variant promoters can be designated in a similar way to splice variants, adding an underscore pr and a serial number (_pr#) to the symbol and the addition of a comma “promoter” and serial number to the name.
 <blockquote>
@@ -1005,7 +1005,7 @@ symbol, which could include the letters <i>Gt</i> for &quot;gene trap&quot;, the
 <li>For example, a gene trap using vector ROSA, the 26th made in P. Soriano's laboratory, is
 <i>Gt(ROSA)26Sor</i>.</li>
 </ul>
-<p>For high throughput systematic gene trap pipelines, the mutant ES cell lines designation can be used in parentheses instead of the vector designation, and the serial number following the parentheses may be omitted. </p>
+<p>For high throughput systematic gene trap pipelines, the mutant ES cell line's designation can be used in parentheses instead of the vector designation, and the serial number following the parentheses may be omitted. </p>
 <blockquote>
 <b>Examples:</b>
 <table cellpadding=4>
@@ -1106,7 +1106,7 @@ or rat strain, the strain name should precede the transgene designation.</p>
 naming convention as the <A HREF="http://www.ncbi.nlm.nih.gov/genome/clone">Clone Registry at NCBI</A>.</p>
 
 <blockquote>
-<B>Examples:</B>
+<B>Example:</B>
 <table cellpadding=4>
 <tr><TD VALIGN="top"><i><nobr>Tg(RP22-412K21)15Som</nobr></i></td><td>a BAC transgene
 where the inserted BAC is from the RP22 BAC library, plate 412, row K, column
@@ -1128,7 +1128,8 @@ where the inserted BAC is from the RP22 BAC library, plate 412, row K, column
 </dl>
 </p>
 
-<p>While there is the option to include significant information on vectors, promoters, etc. within the parentheses of a transgene symbol, this should be minimized for brevity and clarity. The function of a symbol is to provide a unique designation to a gene, locus, or mutation. The fine molecular detail of these loci and mutations should reside in databases such as MGD and RGD.
+<p>While there is the option to include significant information on vectors, promoters, etc. within the parentheses of a transgene symbol, this should be minimized for brevity and clarity. The function of a symbol is to provide a unique designation to a gene, locus, or mutation. The fine molecular detail of these loci and mutations should reside in databases such as <a href="http://www.informatics.jax.org">MGD</a> 
+ and <a href="http://rgd.mcw.edu/">RGD</a>.
 </p>
 
 <h2><a name="transposon"></a>5 &nbsp;&nbsp; Transposon-induced Mutations and Inserts</h2>
