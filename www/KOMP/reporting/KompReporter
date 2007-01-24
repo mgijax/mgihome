@@ -44,6 +44,7 @@ END_DATE = (2500, 1, 1)			# year, month, day
 
 TARGET_DATASET = None
 MASTER_DATASET = None
+FULL_DATASET = None
 NOTE_COLUMN = ''
 
 def bailout (message, showUsage = True):
@@ -59,6 +60,7 @@ def logError (message):
 def loadKompDatasets():
 	global TARGET_DATASET
 	global MASTER_DATASET
+	global FULL_DATASET
 
 	target_fields = [ 'NCBI ID', 'MGI ID', 'symbol', 'chr', 'CCDS ID',
 		'Ensembl ID', 'Vega ID' ]
@@ -74,6 +76,14 @@ def loadKompDatasets():
 		master_fields, 1)
 	MASTER_DATASET.readRecords()
 	MASTER_DATASET.buildIndexes (['MGI ID'])
+
+	full_fields = master_fields + [ 'EUCOMM', 'Sanger', 'IGTC',
+		'Targeted', 'Other Mutants' ]
+	FULL_DATASET = datasetlib.TextFileDataSet ('full',
+		os.path.join (KOMP_DATA_DIR, 'geneList.txt'),
+		full_fields, 1)
+	FULL_DATASET.readRecords()
+	FULL_DATASET.buildIndexes (['MGI ID'])
 
 	return
 
@@ -183,15 +193,27 @@ def getMgiID (nomination):
 	return ''
 
 def getKompStatus (nomination):
+	# returns KOMP status, why excluded
+
 	mgiID = getMgiID (nomination)
 	if not mgiID:
-		return ''
+		return '', ''
 
 	if TARGET_DATASET.indexLookup ('MGI ID', mgiID):
-		return 'target'
+		return 'target', ''
 	if MASTER_DATASET.indexLookup ('MGI ID', mgiID):
-		return 'master'
-	return ''
+		list = FULL_DATASET.indexLookup ('MGI ID', mgiID)
+		if list:
+			gene = list[0]		# assume we only get 1 back
+			criteria = []
+			for column in [ 'EUCOMM', 'Sanger', 'IGTC', 
+				'Targeted', 'Other Mutants' ]:
+				if gene[column] != None and \
+					gene[column].strip():
+					criteria.append (column)
+			return 'master', ', '.join (criteria)
+		return 'master', ''
+	return '', ''
 
 def generateSummary (subdirs):
 	headings = [
@@ -204,6 +226,7 @@ def generateSummary (subdirs):
 		'Entrez ID',
 		'Ensembl ID',
 		'KOMP List',
+		'Why Excluded',
 		'Notes',
 		'Submitter',
 		'Submitter e-mail',
@@ -242,6 +265,7 @@ def generateSummary (subdirs):
 				os.path.basename(k.nominationFile))
 
 		for nomination in k.nominations:
+			kompStatus, whyExcluded = getKompStatus(nomination)
 			line = [
 				k.date,
 				nomination['approach'],
@@ -251,7 +275,8 @@ def generateSummary (subdirs):
 				nomination['genbank'],
 				nomination['entrez'],
 				nomination['ensembl'],
-				getKompStatus(nomination),
+				kompStatus,
+				whyExcluded,
 				NOTE_COLUMN,
 				name,
 				k.email,
