@@ -70,8 +70,8 @@ SP=Full text
 	id = J:112553
 	type = ${SP}
 	url = http://www.jax.org/mmr/mmrremutationvtg4j.html
-             
-	]
+        ]
+           
 #
 #  mutation symbol:Wtgr; mutation name:wavy tiger;  gene symbol:---
 #
@@ -116,9 +116,9 @@ SP=Full text
 #  mutation symbol:sv-2J; mutation name:Snell's waltzer2 Jackson;  gene symbol:Myo6
 #
 [
-	id = J:xxxxxx
+	id = J:109355
 	type = ${SP}
-	url =
+	url = http://www.jax.org/mmr/mmrmutantsv2j.html
 	]
 #
 #  mutation symbol:Shar; mutation name:shiny and rough;  gene symbol:---
@@ -301,9 +301,9 @@ SP=Full text
 #  mutation symbol:sh2-3J; mutation name:shaker 2 3 Jackson;  gene symbol:Myo15
 #
 [
-	id = J:xxxxxx
+	id = J:96071
 	type = ${SP}
-	url = 
+	url = http://www.jax.org/mmr/mmrremutationsh23J.html
 	]
 
 #
@@ -391,9 +391,9 @@ SP=Full text
 #  mutation symbol:tth; mutation name:tremor with tilted head;  gene symbol:---
 #
 [
-	id = J:xxxxxx
+	id = J:91623
 	type = ${SP}
-	url = 
+	url = http://www.jax.org/mmr/mmrmutanttth.html
 	]
 
 #
@@ -462,9 +462,9 @@ SP=Full text
 #  mutation symbol:dal; mutation name:dark-like  gene symbol:---
 #
 [
-	id = J:xxxxxx
+	id = J:87005
 	type = ${SP}
-	url = 
+	url = http://www.jax.org/mmr/mmr_mutant_dal.html
 	]
 #
 #  mutation symbol:lh-3J; mutation name:lethargic 3 Jackson;  gene symbol:Cacnb4lh
@@ -475,7 +475,7 @@ SP=Full text
 	url = http://www.jax.org/mmr/mmr_remutation_lh_3j.html
 	]
 #
-#  mutation symbol:agil; mutation name:agaitans-like;  gene symbol:----
+#  mutation symbol:agil; mutation name:agitans-like;  gene symbol:----
 #
 [
 	id = J:84746
@@ -486,17 +486,17 @@ SP=Full text
 #  mutation symbol:av-jfb; mutation name:Ames waltzer James F Battery  gene symbol:Pcdh15
 #
 [
-	id = J:xxxxxx
+	id = J:81272
 	type = ${SP}
-	url = 
+	url = http://www.jax.org/mmr/mmr_remutation_av4j.html
 	]
 #
 #  mutation symbol:chtl; mutation name:chocolate-like;  gene symbol:Rab38 (unproven)
 #
 [
-	id = J:xxxxxx
+	id = J:82799
 	type = ${SP}
-	url = 
+	url = http://www.jax.org/mmr/mmr_mutant_chtl.html
 	]
 #
 #  mutation symbol:cn2J; mutation name:achondroplasia 2 Jackson; gene symbol:Npr2
@@ -510,49 +510,175 @@ SP=Full text
 #  mutation symbol:ld-3J; mutation name:limb deformity 3 Jackson  gene symbol:Fmn1
 #
 [
-	id = J:xxxxxx
+	id = J:82800
 	type = ${SP}
-	url = 
+	url = http://www.jax.org/mmr/limbdeformity.html
 	]
+
 #
-#  mutation symbol:; mutation name:  gene symbol:
+#  mutation symbol:gaxp; mutation name:giant axonopathy  gene symbol:Fmn1
+#
+[	
+	id = J:82451
+	type = ${SP}	
+	url = http://www.jax.org/mmr/MMR_Mutant_gaxp.html	
+]
+
+#
+#  mutation symbol:hslt; mutation name:head slant  gene symbol:Noxo1
+#
+[	
+	id = J:86035	
+	type = ${SP}	
+	url = http://www.jax.org/mmr/hslt.html
+]
+#
+#  mutation symbol:Hxl; mutation name: hemimelic extra toes-like gene symbol:
+#
+[	
+	id = J:xxxxxx	
+	type = ${SP}	
+	url = 	
+]
+#
+#  mutation symbol:Hxl2; mutation name:hemimelic extra toes-like 2  gene symbol:
+#
+[	
+	id = J:xxxxxx	
+	type = ${SP}	
+	url = 	
+]
+#
+#  mutation symbol:ingls; mutation name:infantile gliosis; gene symbol:
+#
+[	
+	id = J:81516
+	type = ${SP}	
+	url = http://www.jax.org/mmr/gliosis_paper.html
+]
+#
+#  mutation symbol:jgl; mutation name:jagged tail-like;  gene symbol:
+#
+[	
+	id = J:85852
+	type = ${SP}	
+	url = http://www.jax.org/mmr/MMR_Mutant_jgl.html
+]
+#
+#  mutation symbol:Jackson waltzer; mutation name:  gene symbol:otx1;
+#
+[	
+	id = J:xxxxxx	
+	type = ${SP}	
+	url = 	
+]
+#
+#  mutation symbol:lbab; mutation name:long bone abnormality  gene symbol:
+#
+[	
+	id = J:79175	
+	type = ${SP}	
+	url = http://www.jax.org/mmr/lbab.html	
+]
+#
+#  mutation symbol:lew; mutation name:lethal wasting; gene symbol:
+#
+[	
+	id = J:81354
+	type = ${SP}	
+	url = http://www.jax.org/mmr/wasting.html
+]
+#
+#  mutation symbol:lxl2; mutation name: luxate-like2 gene symbol:
+#
+[	
+	id = J:79041	
+	type = ${SP}	
+	url = http://www.jax.org/mmr/lxl2.html
+]
+#
+#  mutation symbol:mdig; mutation name:malformed digits; gene symbol:
+#
+[	
+	id = J:xxxxxx	
+	type = ${SP}	
+	url = 	
+]
+#
+#  mutation symbol:pcd-5J; mutation name:Purkinje cell degeneration 5 Jackson; gene symbol:Aqtpbp1
+#
+[	
+	id = J:xxxxxx	
+	type = ${SP}	
+	url = 	
+]
+#
+#  mutation symbol:rb; mutation name:rabbit  gene symbol:Epha4
 #[	id = J:xxxxxx	type = ${SP}	url = 	]
 
+
+#
+#  mutation symbol:rb-2J; mutation name:rabbit 2 Jackson;  gene symbol:Epha4
+#
+[	id = J:xxxxxx	
+        type = ${SP}	
+        url = 
+]
+#
+#  mutation symbol:rcw; mutation name:recoil wobbler  gene symbol:
+#
+[	id = J:xxxxxx	
+        type = ${SP}	
+        url = 
+]
+#
+#  mutation symbol:snol; mutation name:snubnose-like  gene symbol:
+#
+[	id = J:78986
+        type = ${SP}	
+        url = http://www.jax.org/mmr/snol.html
+]
+#
+#  mutation symbol:twit; mutation name:twitter  gene symbol:
+#
+[	id = J:xxxxxx	
+        type = ${SP}	
+        url = 
+]
+#
+#  mutation symbol:vtg-2J; mutation name:vertigo 2 Jackson  gene symbol:Kcng1
+#
+[	id = J:87005
+        type = ${SP}	
+        url = http://www.jax.org/mmr/MMR_Remutation_vtg-2J.html
+
+
+]
+#
+#  mutation symbol:wdl; mutation name:waddles; gene symbol:Car8
+#
+[	id = J:81344	
+        type = ${SP}	
+        url = http://www.jax.org/mmr/waddler.html
+]
+]
+#
+#  mutation symbol:Whll; mutation name:wheelslike; symbol:
+#
+[	id = J:83048	
+        type = ${SP}	
+        url = http://www.jax.org/mmr/MMR_Remutation_whll.html
+]
+#
+#  mutation symbol:wly; mutation name:wooly gene symbol:
+#
+[	id = J:85256	
+        type = ${SP}	
+        url = http://www.jax.org/mmr/MMRmutantwooly.html
 
 #
 #  mutation symbol:e-J; mutation name:recessive yellow Jackson  gene symbol:Mc1r<e>
 #[	id =  J:90328 	type = ${SP}	url = 	]
-
-
-#
-#  mutation symbol:; mutation name:  gene symbol:
-#[	id = J:xxxxxx	type = ${SP}	url = 	]
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 #[
@@ -562,16 +688,6 @@ SP=Full text
 # type = ${SP}
 # url = ${SPDIR}/J:5657.pdf
 #]
-
-
-
-
-
-
-
-
-
-http://www.jax.org/mmr/mmrremutationjs-2j.html
 #[
 #
 # This record is FAKE!! For testing only!!!
