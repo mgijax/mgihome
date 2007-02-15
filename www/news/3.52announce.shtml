@@ -28,7 +28,54 @@
 MGI is pleased to announce the release of Version 3.3 of the database. Version 3.3
 
 
-<p>MGI is pleased to announce  the release of Version 3.52 of the database. Version 3.52 consists of performance enhancements, bug fixes, and updates.</p>
+<p>MGI is pleased to announce  the release of Version 3.52 of the database. 
+
+<ul>
+  <li>MGI's 3.41 release features a new Gene Expression Data Images Query by Gene summary page. 
+<!--TR7710-->
+
+<br><br>
+
+<li>The release also features new cross-reference links to <a href="http://www.treefam.org">TreeFam</a>. TreeFam is an ortholog database with curated information about ortholog and paralog assignments and the evolutionary history of various gene families.
+<ul>
+  <li>You can access TreeFam reports using the <a href="http://www.informatics.jax.org/javawi2/servlet/WIFetch?page=markerQF">MGI Marker Query Form<a>.
+<ol>
+  <li>Enter <i>Cdc2a</i> in the gene/marker symbol field.</li>
+  <li>Click <i>Cdc2a</i> on the Genes and Markers Query Results -- Summary report. The Gene Detail report for <i>Cdc2a</i> appears. The TreeFam link is in the Mammalian Homology section.</li></ol>
+  <li>You can also access TreeFam reports using the <a href="http://www.informatics.jax.org/searches/homology_form.shtml">Mammalian Orthology Query Form</a>.
+<ol>
+<li>Under <i>Primary Species</i>, select <i>Mouse</i>.  
+<li>Under <i>Marker Symbol/Name, enter <i>Cdc2a</i>.</li>
+<li>Under <i>Comparison Species</i>, select <i>Human</i> (or leave the default, <i>Any</i>.) The  Mammalian Orthology Query Results report appears. Locate the <i>Links</i> section in the middle of this report. When available, the link to the TreeFam  report for this gene appears here.</li>
+
+
+</ul>
+ 
+
+<!--As an example, see this link to TreeFam <a href="http://www.treefam.org/cgi-bin/TFinfo.pl?extac=cdc2&spec=mouse">via an MGI gene symbol</a>.
+
+
+Examples are provided here and also 
+here.  -->
+
+
+</li><br><br>
+<li></li><br><br>
+ 
+<li>The remainder of the MGI 3.41 release consists of performance enhancements and bug fixes.
+</li>
+
+
+
+</ul>
+
+<p>Please send questions and comments to  <a href="../support/tjl_inbox.shtml">User Support</a>.
+</p> 
+
+
+
+
+Version 3.52 consists of performance enhancements, bug fixes, and updates.</p>
 
 
 <hr>
