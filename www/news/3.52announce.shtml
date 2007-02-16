@@ -25,57 +25,42 @@
   </TD>
  </TR>
 </TABLE>
-MGI is pleased to announce the release of Version 3.3 of the database. Version 3.3
-
-
 <p>MGI is pleased to announce  the release of Version 3.52 of the database. 
 
 <ul>
-  <li>MGI's 3.41 release features a new Gene Expression Data Images Query by Gene summary page. 
+  <li>The 3.52 release features a new Gene Expression Data Images Query by Gene Summary report which displays all the expression images associated with a given gene/marker. 
+<i>Images</i> are individual, related panes collected in <i>figures.</i> You can elect to view 10, 25, 50 or all of the figures on the same page. <br>You can report from the MGI Gene Detail page. For example:
+<ol>
+  <li>Enter <i>Pax6</i> in the Gene/Marker Symbol/Name field of the <a href="http://www.informatics.jax.org/javawi2/servlet/WIFetch?page=markerQF">MGI Marker Query Form<a> and click <i>Search</i>.</li>
+  <li>Click <i>Pax6</i> on the Genes and Markers Query Results -- Summary report. The Gene Detail report for <i>Pax6</i> appears. 
+<li>Click the Images link in the Expression section. The Gene Expression Data Images Query by Gene Summary appears.</li>
+</ol>
 <!--TR7710-->
 
-<br><br>
+<br>
 
-<li>The release also features new cross-reference links to <a href="http://www.treefam.org">TreeFam</a>. TreeFam is an ortholog database with curated information about ortholog and paralog assignments and the evolutionary history of various gene families.
-<ul>
-  <li>You can access TreeFam reports using the <a href="http://www.informatics.jax.org/javawi2/servlet/WIFetch?page=markerQF">MGI Marker Query Form<a>.
+<li>The release also features new cross-references to <a href="http://www.treefam.org">TreeFam</a>. The Tree Families database is an ortholog database with curated information about ortholog and paralog assignments and the evolutionary history of various gene families.<br>
+<br>You can access TreeFam reports using the <a href="http://www.informatics.jax.org/javawi2/servlet/WIFetch?page=markerQF">MGI Marker Query Form<a>. For example:
 <ol>
-  <li>Enter <i>Cdc2a</i> in the gene/marker symbol field.</li>
-  <li>Click <i>Cdc2a</i> on the Genes and Markers Query Results -- Summary report. The Gene Detail report for <i>Cdc2a</i> appears. The TreeFam link is in the Mammalian Homology section.</li></ol>
-  <li>You can also access TreeFam reports using the <a href="http://www.informatics.jax.org/searches/homology_form.shtml">Mammalian Orthology Query Form</a>.
+  <li>Enter <i>Cdc2a</i> in the Gene/Marker Symbol/Name field.</li>
+  <li>Click Cdc2a on the Genes and Markers Query Results -- Summary report. The Gene Detail report for Cdc2a appears. The TreeFam link is in the Mammalian Homology section.</li>
+</ol>
+  <p>You can also access  use the MGI <a href="http://www.informatics.jax.org/searches/homology_form.shtml">Mammalian Orthology Query Form</a> to access TreeFam reports. For example:
 <ol>
-<li>Under <i>Primary Species</i>, select <i>Mouse</i>.  
-<li>Under <i>Marker Symbol/Name, enter <i>Cdc2a</i>.</li>
-<li>Under <i>Comparison Species</i>, select <i>Human</i> (or leave the default, <i>Any</i>.) The  Mammalian Orthology Query Results report appears. Locate the <i>Links</i> section in the middle of this report. When available, the link to the TreeFam  report for this gene appears here.</li>
-
-
-</ul>
- 
-
-<!--As an example, see this link to TreeFam <a href="http://www.treefam.org/cgi-bin/TFinfo.pl?extac=cdc2&spec=mouse">via an MGI gene symbol</a>.
-
-
-Examples are provided here and also 
-here.  -->
-
-
-</li><br><br>
-<li></li><br><br>
- 
-<li>The remainder of the MGI 3.41 release consists of performance enhancements and bug fixes.
+<li>Under Primary Species, select mouse, laboratory (Mus musculus domesticus).  </li>
+<li>Under Marker Symbol/Name, enter <i>Cdc2a</i>.</li>
+<li>Under Comparison Species, select Human (or leave the default, <i>Any</i>.) The Mammalian Orthology Query Results report appears. </li>
+<li>Scroll down to locate the Links section in the middle of this report. When available, the link to the TreeFam report for this gene appears at the top of this database list.</li>
+</ol>
+  
+<li>The remainder of the MGI 3.52 release consists of performance enhancements and bug fixes.
 </li>
-
-
 
 </ul>
 
 <p>Please send questions and comments to  <a href="../support/tjl_inbox.shtml">User Support</a>.
 </p> 
 
-
-
-
-Version 3.52 consists of performance enhancements, bug fixes, and updates.</p>
 
 
 <hr>
