@@ -87,7 +87,7 @@ SP=Full text
 #  5. mutation symbol:sunk; mutation name:sunken;  gene symbol:----
 #
 [
-	id = J:1094438
+	id = J:109438
 	type = ${SP}
 	url = http://www.jax.org/mmr/mmrmutantsunk.html
 	]
@@ -101,12 +101,7 @@ SP=Full text
 	]
 #
 #  7. mutation symbol:shi-J; mutation name:shiverer Jackson;  gene symbol:Mbp
-#
-[
-	id = J:23000
-	type = ${SP}
-	url = http://www.jax.org/mmr/mmrremutationshiJ.html
-	]
+#[	id = J:	type = ${SP}	url = http://www.jax.org/mmr/mmrremutationshiJ.html	]
 #
 #  8.mutation symbol:sv-2J; mutation name:Snell's waltzer2 Jackson;  gene symbol:Myo6
 #
@@ -183,7 +178,7 @@ SP=Full text
 #  17.mutation symbol:pe-15J; mutation name:Pearl 15 Jackson;  gene symbol:Ap3b1
 #
 [
-	id = J: J:105128
+	id = J:105128
 	type = ${SP}
 	url = http://www.jax.org/mmr/mmrmutationpe15j.html
 	]
@@ -241,7 +236,7 @@ SP=Full text
 [
 	id = J:98757
 	type = ${SP}
-	url = http://www.jax.org/mmr/mmrremutationrcw4J.html
+	url = http://www.jax.org/mmr/mmrremutationrcw3j.html
 	]
 #
 #  25.mutation symbol:rl-5J; mutation name:reeler 5 Jackson;  gene symbol:Reln
@@ -479,7 +474,7 @@ SP=Full text
 #  54.mutation symbol:cn2J; mutation name:achondroplasia 2 Jackson; gene symbol:Npr2
 #
 [
-	id = J:72465x
+	id = J:72465
 	type = ${SP}
 	url = http://www.jax.org/mmr/cn2j.html
 	]
@@ -583,24 +578,16 @@ SP=Full text
 #  66.mutation symbol:pcd-5J; mutation name:Purkinje cell degeneration 5 Jackson; gene symbol:Aqtpbp1
 #
 [	
-	id = http://www.jax.org/mmr/pcd5j.html	
+	id = J:83266	
 	type = ${SP}	
 	url = http://www.jax.org/mmr/pcd5j.html
 	]
 #
-#  67a.mutation symbol:rb; mutation name:rabbit  gene symbol:Epha4
+#  67.mutation symbol:rb; mutation name:rabbit  gene symbol:Epha4
 [	
-	id = J: J:87289	
+	id = J:87289	
 	type = ${SP}	
 	url = http://www.jax.org/mmr/MMR_Mutants_rb_and_rb-2J.html
-	]
-#
-#  67b.mutation symbol:rb-2J; mutation name:rabbit 2 Jackson;  gene symbol:Epha4
-#
-[
-	id =  J:87289	
-        type = ${SP}	
-        url = http://www.jax.org/mmr/MMR_Mutants_rb_and_rb-2J.html
 	]
 #
 #  68.mutation symbol:rcw; mutation name:recoil wobbler  gene symbol:
@@ -630,7 +617,7 @@ SP=Full text
 #  71.mutation symbol:vtg-2J; mutation name:vertigo 2 Jackson  gene symbol:Kcng1
 #
 [
-	id = J:87005
+	id = J:79858
         type = ${SP}	
         url = http://www.jax.org/mmr/MMR_Remutation_vtg-2J.html
 	]
