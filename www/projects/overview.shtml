@@ -37,10 +37,10 @@
 <li><b>Mouse Genome Database (MGI) Project</b><br>
 MGI includes data on gene characterization, nomenclature, mapping, gene
 homologies among mammals, sequences, phenotypes, allelic variants and
-mutants, and strain data. (See </i> <a href="#aboutMGI">About MGI</a>.)</li>
+mutants, and strain data. See also </i> <a href="#aboutMGI">About MGI</a>.</li>
 
 <li><b>Gene Expression Database (GXD) Project</b><br>
-GXD integrates different types of gene expression information from the mouse and provides a searchable index of published experiments on endogenous gene expression during development.  (See <a href="../GXD/aboutGXD.shtml">The Gene Expression Database (GXD)</a>.)</li>
+GXD integrates different types of gene expression information from the mouse and provides a searchable index of published experiments on endogenous gene expression during development.  See also <a href="../GXD/aboutGXD.shtml">The Gene Expression Database (GXD)</a>.</li>
 <li><b>Mouse Tumor Biology (MTB) Database</b><br>
 The goal of the <a href="http://tumor.informatics.jax.org/mtbwi/index.do">Mouse Tumor Biology (MTB) Database </a> is to help researchers choose experimental models, review mutation patterns in specific cancers, and identify genes commonly mutated across a spectrum of cancers. The database currently holds over 10,000 tumor records.</li>
 </ul>
@@ -104,12 +104,12 @@ cytogenetic markers and QTLs (see <A HREF="<!--#include file='include/wi_url'-->
 chromosomal assignment, centimorgan location,
 cytogenetic band, EC number (for enzymes), phenotypic classifications, human disease data, 
 Gene Ontology (GO) terms, MGI  accession IDs and supporting references.
-(See
+See
 <A HREF="<!--#include file='include/userdocs_url.html'-->marker_summary.shtml">Using the Marker Summary Report</a> and 
 <A HREF="<!--#include file='include/userdocs_url.html'-->marker_detail.shtml">Using the Marker Detail Report</a> for more information about the content of the display of a marker record as it appears in the query results.
 
 <P>Information on <B>alleles</B>, formerly imbedded in phenotype  descriptions, is stored as a separate data set (see <a href="#alleles">Phenotypic Alleles</a>). Links to alleles are provided in gene detail records. In
-addition, there is an <A HREF="<!--#include file='include/wi_url.html'-->searches/allele_form.shtml">Phenotypes and Alleles Query Form</A> for  direct  queries against the allele data  set. (See <A HREF="<!--#include file='include/userdocs_url.html'-->allele_help.shtml#detail">Details</A> for the content of an allele record as displayed in query results.</p>
+addition, there is an <A HREF="<!--#include file='include/wi_url.html'-->searches/allele_form.shtml">Phenotypes and Alleles Query Form</A> for  direct  queries against the allele data  set. See <A HREF="<!--#include file='include/userdocs_url.html'-->allele_help.shtml#detail">Details</A> for the content of an allele record as displayed in query results.</p>
 <font size="-1"><a href="#top">Back to Top</a>
 </font>
 
@@ -124,22 +124,22 @@ Phenotypic allele <A HREF="<!--#include file='include/userdocs_url.html'-->allel
 <h3><A NAME="probes"></A>Molecular Probes and Clones</h3>
  <P>You can use the <A HREF="<!--#include file='include/java_url.html'-->WIFetch?page=probeQF">Molecular Probes and Clones Query Form</a> to find information on probes, clones, primers, YACs, and STSs.
 Information may include the origin of the probe/clone, sequence,
-vector type, hybridizing loci, RFLPs, and references. (<EM>See</EM> the <A HREF="<!--#include file='include/userdocs_url.html'-->probe_help.shtml">Using the Molecular Probes and Clones Query Form</a> and the 
-<A HREF="<!--#include file='include/userdocs_url.html'-->probe_summary.shtml">Summary</A> and <A HREF="<!--#include file='include/userdocs_url.html'-->probe_detail.shtml">Detail</A> Help documents for more information about probe/clone records appearing in query results.)
+vector type, hybridizing loci, RFLPs, and references. See the <A HREF="<!--#include file='include/userdocs_url.html'-->probe_help.shtml">Using the Molecular Probes and Clones Query Form</a> and the 
+<A HREF="<!--#include file='include/userdocs_url.html'-->probe_summary.shtml">Summary</A> and <A HREF="<!--#include file='include/userdocs_url.html'-->probe_detail.shtml">Detail</A> Help documents for more information about probe/clone records appearing in query results.
 
-<P>Information on genetic polymorphisms is extracted from probe/clone records in MGI. The Polymorphisms Query Form enables you to search directly  for such information and display it. (See
-<A HREF="<!--#include file='include/userdocs_url.html'-->polymorphism_help.shtml#summary">Summary</a> and <A HREF="<!--#include file='include/userdocs_url.html'-->polymorphism_help.shtml#detail">Details</A> for more information.)</p>
+<P>Information on genetic polymorphisms is extracted from probe/clone records in MGI. The Polymorphisms Query Form enables you to search directly  for such information and display it. See
+<A HREF="<!--#include file='include/userdocs_url.html'-->polymorphism_help.shtml#summary">Summary</a> and <A HREF="<!--#include file='include/userdocs_url.html'-->polymorphism_help.shtml#detail">Details</A> for more information.</p>
 <font size="-1"><a href="#top">Back to Top</a>
 </font>
 <h3><A NAME="orthology"></A>Mammalian Orthology</h3>
-<p>MGI contains orthology information for mouse, human and 15 other mammalian organisms. Most of the information for orthologies extracted from the published scientific literature. In general, these papers explicitly report orthology relationships and MGI reflects that published information. (See the <i>Evidence</i> section under 
-<A HREF="<!--#include file='include/userdocs_url.html'-->homology_summary.shtml#fields">How do I interpret the results of my query?</a> in <i>Interpreting Mammalian Orthology Query Results</i> for the criteria used to establish orthology.)
+<p>MGI contains orthology information for mouse, human and 15 other mammalian organisms. Most of the information for orthologies extracted from the published scientific literature. In general, these papers explicitly report orthology relationships and MGI reflects that published information. See the <i>Evidence</i> section under 
+<A HREF="<!--#include file='include/userdocs_url.html'-->homology_summary.shtml#fields">How do I interpret the results of my query?</a> in <i>Interpreting Mammalian Orthology Query Results</i> for the criteria used to establish orthology.
 </A>
 <P>An orthology record shows the symbol, organism, chromosome, cM position, cytogenetic band, and accession ID for each gene in the set of orthologies. In addition, links to
 other mammalian databases are provided where possible. MGI orthology records may link to GDB, BovMap, PiGBASE, RATMAP, RGD, SheepBase, ArkDB.</p>
 
-<P> Every orthology assertion is supported by one or more references.  The display of an orthology reference includes the J number of the reference, a short format citation, gene symbol, and organism. (<EM>See</EM> 
-<A HREF="<!--#include file='include/userdocs_url.html'-->homology_summary.shtml#contain">What's in a Mammalian Ortholology Query Results report?</A> for more detail.)</p>
+<P> Every orthology assertion is supported by one or more references.  The display of an orthology reference includes the J number of the reference, a short format citation, gene symbol, and organism. See 
+<A HREF="<!--#include file='include/userdocs_url.html'-->homology_summary.shtml#contain">What's in a Mammalian Ortholology Query Results report?</A> for more detail.</p>
 
 <P>Orthology information is presented in three other formats: Oxford Grid, comparative map and Orthology Map View. An Oxford Grid display presents an overview of orthology between two organisms. Currently, this kind of comparison is supported for the following organisms:  mouse, human, cat, cattle, rat, pig, sheep, dog.</p>
 
@@ -215,7 +215,7 @@ UCLA (BSB): (C57BL/6J x M. spretus)F1 x C57BL/6J
 <p>DNA Mapping Panel data may appear in tabular format, where each column represents a single offspring of the cross, and each row indicates, for each locus,  which allele is present in each of the offspring. The order of rows is determined by linkage on the chromosome, and the locus nearest the centromere appears at the top of the display. Centimorgan locations for loci in the cross are determined by the provider of the cross. <P>
 
 <h4>Mapping Experiment Records</h4>
-(See <a href="<!--#include file='include/userdocs_url.html'-->mapping_data.shtml">Mapping Experimental Data Records</a> for information about the content of various mapping experiment records.)
+See <a href="<!--#include file='include/userdocs_url.html'-->mapping_data.shtml">Mapping Experimental Data Records</a> for information about the content of various mapping experiment records.
 <h4>Graphical Map Displays</h4>
 
 <h4>Linkage  Maps</h4>
@@ -225,16 +225,16 @@ UCLA (BSB): (C57BL/6J x M. spretus)F1 x C57BL/6J
 </p>
 <h4>Physical Maps</h4>
 <p>In June 1997, MGI began storing physical mapping data from MIT's mouse physical mapping project in which MIT primers and STSs are mapped against a mouse YAC library to build a contig map of the mouse. MGI provides query access to the MIT primers, STSs, and YACs. In addition, MGI provides integrated genetic/physical displays in Web Map format. These map files are updated when the MIT mapping physical mapping data set is  updated.</p>
-<p>In May 2005, MGI added a customized version of Lincoln Stein's Generic Genome Browser (GBrowse) that supports interactive browsing and display of mouse genome annotations. Access to MGI Mouse GBrowse is from the MGI home page (www.informatics.jax.org) and from the sequence map section on MGI gene detail pages. Tracks for MGI Mouse GBrowse include MGI representative transcripts; Ensembl, NCBI, and VEGA gene models; SNPs; QTLs; alleles (induced, spontaneous, gene-trapped, transgenic, targeted); phenotypes; and STS markers linked to UniSTS at NCBI. Tracks are updated at different times, depending on data availability. See the <a href="http://gbrowse.informatics.jax.org/gbrowse/docs/update_notes_36.html">update notes</a> for details.</p>
+<p>In May 2005, MGI added a customized version of Lincoln Stein's Generic Genome Browser (GBrowse) that supports interactive browsing and display of mouse genome annotations. Access to MGI Mouse GBrowse is from the MGI home page (http://www.informatics.jax.org) and from the sequence map section on MGI gene detail pages. Tracks for MGI Mouse GBrowse include MGI representative transcripts; Ensembl, NCBI, and VEGA gene models; SNPs; QTLs; alleles (induced, spontaneous, gene-trapped, transgenic, targeted); phenotypes; and STS markers linked to UniSTS at NCBI. Tracks are updated at different times, depending on data availability. See the <a href="http://gbrowse.informatics.jax.org/gbrowse/docs/update_notes_36.html">update notes</a> for details.</p>
 </ul>
 </p>
 <font size="-1"><a href="#top">Back to Top</a>
 </font>
 
 <h3><A NAME="references"></A>References</h3>
-MGI  contains  references  for all data in the  database.  As of March 2006, there were over 100,000 references. MGI reference format is similar to that used by  PubMed. Data for the full MGI reference are extracted from PubMed when possible. References are first entered into MGI in an abbreviated format; these  records  are  updated when the PubMed records become available. If the journal is not indexed by PubMed, our curators enter the full reference into MGI manually.  (See the
+MGI  contains  references  for all data in the  database.  As of March 2006, there were over 100,000 references. MGI reference format is similar to that used by  PubMed. Data for the full MGI reference are extracted from PubMed when possible. References are first entered into MGI in an abbreviated format; these  records  are  updated when the PubMed records become available. If the journal is not indexed by PubMed, our curators enter the full reference into MGI manually.  See the
  <a href="<!--#include file='include/wi_url.html'-->searches/reference_form.shtml">References Query Form</a>,  <a href="<!--#include file='include/userdocs_url.html'-->reference_help.shtml">Using the References Query Form</a>, and 
-<a href="<!--#include file='include/userdocs_url.html'-->reference_help.shtml#detail">How do I interpret the detail results?</A> for more information about reference query data).</p>
+<a href="<!--#include file='include/userdocs_url.html'-->reference_help.shtml#detail">How do I interpret the detail results?</A> for more information about reference query data.</p>
 <font size="-1"><a href="#top">Back to Top</a>
 </font>
 
