@@ -25,13 +25,14 @@
   </TD>
  </TR>
 </TABLE>
-<p>MGI is pleased to announce  the release of Version 3.52 of the database. 
+<p>MGI is pleased to announce the release of Version 3.52 of the database. 
 
 <ul>
   <li>The 3.52 release features a new Gene Expression Data Images Query by Gene Summary report which displays all the expression images associated with a given gene/marker. 
-<i>Images</i> are individual, related panes collected in <i>figures.</i> You can elect to view 10, 25, 50 or all of the figures on the same page. <br>You can report from the MGI Gene Detail page. For example:
+<i>Images</i> are individual, related panes collected in <i>figures.</i> You can elect to view 10, 25, 50 or all of the figures on the same page. <br>Access to the report is from the MGI Gene Detail report.
 <ol>
-  <li>Enter <i>Pax6</i> in the Gene/Marker Symbol/Name field of the <a href="http://www.informatics.jax.org/javawi2/servlet/WIFetch?page=markerQF">MGI Marker Query Form<a> and click <i>Search</i>.</li>
+  <li>Enter <i>Pax6</i> in the Gene/Marker Symbol/Name field of the 
+<A HREF="<!--#include file='include/java_url.html'-->WIFetch?page=markerQF">MGI Marker Query Form<a> and click <i>Search</i>.</li>
   <li>Click <i>Pax6</i> on the Genes and Markers Query Results -- Summary report. The Gene Detail report for <i>Pax6</i> appears. 
 <li>Click the Images link in the Expression section. The Gene Expression Data Images Query by Gene Summary appears.</li>
 </ol>
@@ -39,20 +40,12 @@
 
 <br>
 
-<li>The release also features new cross-references to <a href="http://www.treefam.org">TreeFam</a>. The Tree Families database is an ortholog database with curated information about ortholog and paralog assignments and the evolutionary history of various gene families.<br>
-<br>You can access TreeFam reports using the <a href="http://www.informatics.jax.org/javawi2/servlet/WIFetch?page=markerQF">MGI Marker Query Form<a>. For example:
-<ol>
-  <li>Enter <i>Cdc2a</i> in the Gene/Marker Symbol/Name field.</li>
-  <li>Click Cdc2a on the Genes and Markers Query Results -- Summary report. The Gene Detail report for Cdc2a appears. The TreeFam link is in the Mammalian Homology section.</li>
-</ol>
-  <p>You can also access  use the MGI <a href="http://www.informatics.jax.org/searches/homology_form.shtml">Mammalian Orthology Query Form</a> to access TreeFam reports. For example:
-<ol>
-<li>Under Primary Species, select mouse, laboratory (Mus musculus domesticus).  </li>
-<li>Under Marker Symbol/Name, enter <i>Cdc2a</i>.</li>
-<li>Under Comparison Species, select Human (or leave the default, <i>Any</i>.) The Mammalian Orthology Query Results report appears. </li>
-<li>Scroll down to locate the Links section in the middle of this report. When available, the link to the TreeFam report for this gene appears at the top of this database list.</li>
-</ol>
-  
+<li>The release also features new cross-references to <a href="http://www.treefam.org">TreeFam</a>, an ortholog database containing curated information about ortholog and paralog assignments and the evolutionary history of various gene families.<ul>
+<li>Access to TreeFam reports is from the <A HREF="<!--#include file='include/java_url.html'-->WIFetch?page=markerQF">Genes and Markers Query Form</a>. The TreeFam link (if available for a given gene) appears in the Mammalian Homology section.</li>
+  <li>You can also access use the 
+<A HREF="<!--#include file='include/wi_url.html'-->searches/homology_form.shtml">Mammalian Orthology Query Form</a> to access TreeFam reports.  The TreeFam link (if available for a given gene) appears under <b>Links</b> in the center of the query results report.</li>
+    </ul>
+    <br>
 <li>The remainder of the MGI 3.52 release consists of performance enhancements and bug fixes.
 </li>
 
