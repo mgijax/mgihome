@@ -6,16 +6,17 @@
 <TABLE WIDTH="100%" BORDER=0 CELLPADDING=0 CELLSPACING=0>
   <TR><TD WIDTH="100%">
     <TABLE WIDTH="100%" BORDER=0 CELLPADDING=0 CELLSPACING=0>
-     <TR><TD WIDTH="20%" VALIGN="center" ALIGN="left"><A HREF="<!--#include file="include/wi_url.html"-->" border=0><IMG SRC="images/mgi_logo_small.jpg" border=0 ALT="MGI"></A></TD>
-      <TD WIDTH="60%" ALIGN="center" VALIGN="center" BGCOLOR="#ffffff">
-       <FONT COLOR="#000000" SIZE=5 FACE="Arial,Helvetica">
-GEN-User Registration Form
-       </FONT></TD><TD WIDTH="20%" VALIGN="center" ALIGN="center" BGCOLOR="#ffffff">&nbsp;</TD></TR>
+<TR>
+<TD WIDTH="20%" VALIGN="center" ALIGN="left">
+<A HREF="<!--#include file='include/wi_url.html'-->"><IMG SRC= "images/mgi_logo_small.jpg" border=0 ALT="MGI"></A></TD>
+<TD WIDTH="60%" ALIGN="center" VALIGN="center" BGCOLOR="#ffffff">
+ <FONT COLOR="#000000" SIZE=5 FACE="Arial,Helvetica">
+GEN-User Registration Form </FONT></TD><TD WIDTH="20%" VALIGN="center" ALIGN="center" BGCOLOR="#ffffff">&nbsp;</TD></TR>
 <TR BGCOLOR="blue"><TD COLSPAN=3><FONT face="Arial,Helvetica" color="#ffffff">
     <B>&nbsp;Mouse Genome Informatics</B></TD></TR>
-<TR><TD BGCOLOR="#ffffff"><FONT SIZE=-1 FACE="Arial,Helvetica"><CENTER><A HREF="<!--#include file="include/wi_url.html"-->">MGI Home</A>&nbsp;&nbsp;&nbsp;
-<a href="<!--#include file="include/mgihome_url.html"-->help/help.shtml">Help
-</A></FONT></CENTER></TD></TR>
+<TR><TD BGCOLOR="#ffffff"><A HREF="<!--#include file="include/mgihome_url.html"-->MGI Home</A>&nbsp;&nbsp;&nbsp;
+<a href="<!--#include file='include/mgihome_url.html'-->help/help.shtml">Help
+</A></TD></TR>
 </TABLE></TD></TR>
 </TABLE>
 <HR>
@@ -29,7 +30,7 @@ In order to download a copy of GEN, please register. Registration allows us to b
 <HR>
 <FORM METHOD="POST" ACTION="gen_submit.cgi">
 <DL>
-<pre>
+
 <DD>First name:      <INPUT TYPE="text" NAME="firstname" SIZE=30> (required)
 <DD>Last name:       <INPUT TYPE="text" NAME="lastname" SIZE=30> (required)
 <p>
@@ -70,14 +71,14 @@ In order to download a copy of GEN, please register. Registration allows us to b
 <option value="none"> None of these
 </SELECT>
 <p>
-<b>Please note that GEN does not work in Excel 2004 (in Windows Vista).</b><br>
+<b>Please note that GEN does not work in Excel 2007 (in Windows Vista).</b><br>
 <i>If you are uncertain which version of Excel you have, do the following: open your Excel program, and then, if using a PC, select the Help menu and choose About Microsoft Excel; if using a Mac,
-select the Excel menu and choose About Excel.</i>
+select the Excel menu and choose About Excel.</i></p>
 <p>
 Click on the "Submit" button to verify your registration and to download a copy of GEN. 
 Click on the "Reset Form" button to delete all the values you have entered on this form.
 THANK YOU. 
-</pre>
+
 <p>
 <HR>
 <INPUT TYPE=submit VALUE="Submit"> <INPUT TYPE=reset VALUE="Reset Form">
