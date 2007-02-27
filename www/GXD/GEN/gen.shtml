@@ -1,6 +1,9 @@
 <HTML>
 <HEAD>
 <TITLE>GEN User Guide</TITLE>
+<STYLE TYPE="text/css">
+    ul.lj { padding-left: 18px; }
+</STYLE>
 </HEAD>
 <BODY BGCOLOR=#FFFFFF>
 <TABLE WIDTH="100%" BORDER=0 CELLPADDING=0 CELLSPACING=0>
@@ -21,7 +24,7 @@ GEN User Guide </FONT>
 </TABLE>
 <HR>
 <BODY BGCOLOR=#FFFFFF>
-<h3><a name="toc"></a>Table of Contents</h3>
+<p><a name="toc"></a><b>Table of Contents</b></p>
 <ul>
  <li><a href="#whatisgen">What is the Gene Expression Notebook (GEN)?</a></li>
  <li><a href="#sysreq">GEN system requirements</a></li>
@@ -79,22 +82,17 @@ GEN User Guide </FONT>
 
 <h3><a name="whatisgen"></a>What is the Gene Expression Notebook?</h3>
     <p>The Gene Expression Notebook (GEN) is a modified Microsoft &#174; Excel &#153; workbook for organizing and storing experimental data. Using GEN, you can:
-
 <ul>
-
 <li>store the details, results, and images of data from experiments</li>
-
 <li>reuse previously entered reagents, specimens, and methods to define new experiments</li>
-
 <li>copy reagents, specimens, and methods into new notebooks so you don't have to reenter them</li>
-
 <li>create a central record-keeping resource for your laboratory reagents</li>
-
 <li>submit your mouse data for inclusion in the Gene Expression Database (GXD).</li>
+</ul>
 
-</ul></p> 
+Because GEN is a species-neutral tool, you can use it to manage expression data from any organism. You can also customize it to include fields for details you consider important such as dates, freezer locations of probes or specimens, or any other record details.
+</p><font size="-1"><a href="#toc">Back to Table of Contents</a></font>
 
-<p>Because GEN is a species-neutral tool, you can use it to manage expression data from any organism. You can also customize it to include fields for details you consider important such as dates, freezer locations of probes or specimens, or any other record details.
 <h3><a name="sysreq"></a>GEN system requirements</h3>
 <p>GEN runs in Microsoft Excel. The following are the version and memory requirements for optimum performance.</p>
 <table border=1 cellpadding=4 cellspacing=1>
@@ -107,171 +105,70 @@ GEN User Guide </FONT>
 <TR><td valign="top">Operating systems</td><td valign="top">Windows XP, Windows 2000</td></tr>
 <TR><td valign="top">Memory</td><td valign="top">A Windows-based system should adjust the memory automatically.</td></tr>
 <TR><TH ALIGN="left" colspan=2 VALIGN="top">Other Requirements</th></tr>
-
-<TR><td valign="top">Macros</td><td valign="top">For GEN to operate properly, the macros must be enabled. This requires that the Macro Security be set to Medium (or lower).</td></tr>
+<TR><td valign="top">Macros</td><td valign="top">For GEN to operate properly, the macros must be enabled. This requires that, if given a choice, the Macro Security be set to Medium (or lower).</td></tr>
 <tr><td valign="top"><nobr>Updates/service packs</td><td valign="top">To ensure reliable operation of GEN, you should install all the latest updates and patches for your version of Excel. To make sure that your computer has all the necessary updates, go to <a href="http://office.microsoft.com/officeupdate/default.aspx">http://office.microsoft.com/officeupdate/default.aspx</a> and click on "Check for Updates." </td></tr>
-<tr><td colspan="2"><b>Note:</b> GEN does not operate in Excel 2007 (on Windows Vista).</td></tr>
+<tr><td valign="top"><b>Notes</b></td><td valign="top"><ul class="lj"><li>GEN does not operate in Excel 2007 (on Windows Vista).</li>
+ <li>Although we no longer test GEN on older versions of Excel, we have no reason to believe it will not work on Excel 97 and Excel 98.</li></ul>
+</td></tr>
  </table>
-<p><!--<ul>
-<li>Although we no longer test GEN on older versions of Excel, we have no reason to believe it will not work on Excel 97 and Excel 98.</li>
-</ul>-->
-
 
 </p><font size="-1"><a href="#toc">Back to Table of Contents</a></font>
 
-<hr>
 <h3><a name="use_doc"></a>Using this document</h3>
 <p>If you:
 <ul>
-<li>are familiar with Microsoft Excel, you'll find the workbook, worksheet, and Manage window concepts easy to understand. See the <a href="#toc">Table of Contents</a> for spreadsheet activities specific to the GEN application.</li><br>
-
-<li>are new to spreadsheets or to the GEN, <a href="#terms">GEN Terminology</a> provides a list of GEN concepts. </li><br>
-
-<li>want to read about GEN from "soup-to-nuts," start with the  <a href="#toc">Table of Contents</a> and pick a topic.<br><br>
-
-
-
-<li>need to install GEN, see <a href="#sysreq">GEN system requirements</a>.<br><br>
-
-<li>have GEN installed and are ready to plunge right in, try <a href="#tutorial">Getting started using the GEN
-
-(tutorial)</a>.<br><br>
-
-<li>want to modify the notebook forms for your own use, you'll find instructions for adding fields, changing tab names, and deleting data at <a href="#modify">Customizing GEN to your needs</a>.
-
+<li>are familiar with Microsoft Excel, you'll find the workbook, worksheet, and Manage window concepts easy to understand. See the <a href="#toc">Table of Contents</a> for spreadsheet activities specific to the GEN application.</li>
+<li>are new to spreadsheets or to the GEN, <a href="#terms">GEN Terminology</a> provides a list of GEN concepts. </li>
+<li>want to read about GEN from "soup-to-nuts," start with the  <a href="#toc">Table of Contents</a> and pick a topic.</li>
+<li>need to install GEN, see <a href="#sysreq">GEN system requirements</a>.</li><br>
+<li>have GEN installed and are ready to plunge right in, try <a href="#tutorial">Getting started using the GEN (tutorial)</a>.</li>
+<li>want to modify the notebook forms for your own use, you'll find instructions for adding fields, changing tab names, and deleting data at <a href="#modify">Customizing GEN to your needs</a>.</li>
 </ul>
 </p><font size="-1"><a href="#toc">Back to Table of Contents</a></font>
-<hr>
+
 <h3><a name="terms"></a>GEN terminology</h3>
-  <table  cellpadding=4 border=1><tr><th align=left valign=top>assay sheet</th><td valign="top">A modified Microsoft Excel spreadsheet that stores experimental results and images.  The parameters of an experiment are defined on the assay sheet using worksheet data.  The GEN has assay sheets for RNA In-Situ, Immunohistochemistry, Northern, Western, and RT-PCR experiments.
-
-</td></tr>
-
-
-
+  <table cellpadding=3 border=1 width="100%">
+<tr><th align=left valign=top>assay sheet</th><td valign="top">A modified Microsoft Excel spreadsheet that stores experimental results and images.  The parameters of an experiment are defined on the assay sheet using worksheet data.  The GEN has assay sheets for RNA In-Situ, Immunohistochemistry, Northern, Western, and RT-PCR experiments.</td></tr>
 <tr><tr><th align=left valign=top>collapse</th><td valign="top">An operation done on assay sheets to hide rows containing experimental details in order to save screen space.</td><tr>
-
-
-
-<tr><th align=left valign=top>column</th><td valign="top">The vertical arrangement of cells on a GEN worksheet or assay sheet. Columns are identified by  alphabetical headings: A, B, C, D, E, and so on. The horizontal arrangement is called a <i>row</i>; rows are identified by numerical headings: 1, 2, 3, 4, 5, and so on.
-
-
-
+<tr><th align=left valign=top>column</th><td valign="top">The vertical arrangement of cells on a GEN worksheet or assay sheet. Columns are identified by  alphabetical headings: A, B, C, D, E, etc. The horizontal arrangement is called a <i>row</i>; rows are identified by numerical headings: 1, 2, 3, 4, 5, etc.</td></tr>
 </td><tr><tr><th align=left valign=top>command button</th><td valign="top">Rectangular button that carries out a command. GEN has four on the <b>Main</b> menu: <b>Create New Assay Sheet, Create New Submission, Validate this Workbook</b>, and <b>Copy info to new Workbook.</b></td><tr>
-
-
-
 <tr><th align=left valign=top>Copy info to new Workbook </th><td valign="top">Main menu command. When you click this button, GEN copies all worksheet data from the current notebook into a new notebook. It does not copy experimental data stored in any assay sheets.</td><tr>
-
-
-
 <tr><th align=left valign=top>Create New Assay Sheet </th><td valign="top">Main menu command. Used in conjunction with the Assay Type drop-down menu to create an assay sheet for storing experimental results.</i></td></tr>
-
-
-
 <tr><th align=left valign=top>Create New Submission </th><td valign="top">Main menu command. When you click this button, GEN allows to select the assay sheets of experiments you want to submit to GXD and prepares a file suitable for submission.</td></tr>
-
-
-
-<tr><th align=left valign=top>default</th><td valign="top">A setting or action assumed by a computer program when none is specified by the user. For example, on GEN's Immunohistochemistry assay sheet, the default view shows the antibody, but not antigen, details.
-
-
-
+<tr><th align=left valign=top>default</th><td valign="top">A setting or action assumed by a computer program when none is specified by the user. For example, on GEN's Immunohistochemistry assay sheet, the default view shows the antibody, but not antigen, details.</td></tr>
  <tr><th valign=top align=left>drop-down list arrow </th><td valign="top">Indicates a drop-down menu.  You can select a desired value by scrolling the menu.</td></tr>
-
-
-
- <tr><th valign=top align=left>drop-down menu </th><td valign="top">A drop-down list arrow to the right of a field indicates a drop-down menu.  You can select a desired value by scrolling the menu. If there is no drop-down menu associated with a field, you must type the desired value into it.</td><tr>
-
-
-
- <tr><th valign=top align=left>Validation Report</th><td valign="top">A worksheet in the GEN used in the Validation process.  The validation function in the GEN checks for omissions in worksheet fields needed for submission of data to GXD.  These omissions are then listed on the Validation Report, along with the worksheet or assay sheet on which they occur.
-
-</td><tr>
-
-
-
+<tr><th valign=top align=left>drop-down menu </th><td valign="top">A drop-down list arrow to the right of a field indicates a drop-down menu.  You can select a desired value by scrolling the menu. If there is no drop-down menu associated with a field, you must type the desired value into it.</td><tr>
+<tr><th valign=top align=left>Validation Report</th><td valign="top">A worksheet in the GEN used in the Validation process.  The validation function in the GEN checks for omissions in worksheet fields needed for submission of data to GXD.  These omissions are then listed on the Validation Report, along with the worksheet or assay sheet on which they occur.</td><tr>
 <tr><th align=left valign=top>expand</th><td valign="top">An operation done on assay sheets to display rows containing experimental details.</td></tr>
-
-
-
-<tr><th align=left valign=top>field</th><td valign="top">An item of information such as a strain name, the Theiler stage, or the notes for an experiment. A required field is one in which you must enter data, while an optional field is one
-
-you may leave blank.  A collection of fields is called a <i>record</i>.</td></tr>
-
-
-
+<tr><th align=left valign=top>field</th><td valign="top">An item of information such as a strain name, the Theiler stage, or the notes for an experiment. A required field is one in which you must enter data, while an optional field is one you may leave blank.  A collection of fields is called a <i>record</i>.</td></tr>
 <tr><th align=left valign=top>GXD</th><td valign="top"><A HREF="../aboutGXD.shtml">Gene Expression Database</a>. A community database that integrates different types of gene expression information from the mouse and provides a searchable index of published experiments on gene expression during embryonic development. GXD is part of the Mouse Genome Informatics (MGI) resources.</td></tr>
-
-
-
 <tr><th align=left valign=top>ID</th><td valign="top">The text in the first column of each worksheet is the identifier for that row. Each data record in the GEN must have an ID that is a unique name or number.</td></tr>
-
-
-
 <tr><th align=left valign=top>Main menu </th><td valign="top">Appears when you open GEN. Contains basic information and four command buttons for performing notebook functions: <b>Create New Assay Sheet, Create New Submission, Validate this Workbook,</b> and <b>Copy info to new Workbook.</b> </td></tr>
-
-
-
 <tr><th align=left valign=top>Manage window </th><td valign="top">A pop-up window that allows you to create or modify worksheet entries from an assay sheet without leaving that sheet. Accessed by clicking on a Manage button.</td></tr>
-
-
-
 <tr><th align=left valign=top>navigation tabs</th><td valign="top">Tabs appear along the bottom of notebook pages. Clicking a tab opens that notebook page.   GEN adds a tab every time you create a new assay sheet.  Not all of the tabs are visible at once. Either click the &#124;&lt;, &lt;, &gt;, &gt;&#124; arrows to scroll through the tabs or right-click (control-click for a single button mouse) on the arrows to open a window listing all the pages.</td></tr>
-
-
-
 <tr><th align=left valign=top>notebook/workbook</th><td valign="top">These terms are used interchangeably to refer to the Gene Expression Notebook.</td></tr>
-
-
-
 <tr><th align=left valign=top>notes</th><td valign="top">There are three types of Notes fields in the GEN.
-
-<ul><li>Notes on worksheets
-
-<li>Assay Notes (on all assay sheets)
-
-<li>Results Notes (on all blot assay sheets). </ul> Use the Notes field to record information that is important to know but that does not fit into any of the other assay or worksheet fields.</td></tr>
-
-
-
-<tr><th valign=top align=left>record</th><td valign="top">A collection of fields; for example, the contents of a GEN worksheet.</b></td></tr>
-
-
-
-<tr><th align=left valign=top>Results menu</th><td valign="top">Used on assay sheets.  Allows you to add fields to the results section to help you organize the recording of your expression results.
-
-</td></tr>
-
-
-
-<tr><th align=left valign=top>row</th><td valign="top">The horizontal arrangement of cells on a GEN worksheet or assay sheet. Rows are identified by numerical headings: 1, 2, 3, 4, 5, and so on. The vertical arrangement is called a <i>column</i>; columns are identified by alphabetical headings: A, B, C, D, E, and so on.
-
-
-
+   <ul>
+    <li>Notes on worksheets</li>
+    <li>Assay Notes (on all assay sheets)</li>
+    <li>Results Notes (on all blot assay sheets).</li>
+  </ul> 
+Use the Notes field to record information that is important to know but that does not fit into any of the other assay or worksheet fields.</td></tr>
+<tr><th valign=top align=left>record</th><td valign="top">A collection of fields; for example, the contents of a GEN worksheet.</td></tr>
+<tr><th align=left valign=top>Results menu</th><td valign="top">Used on assay sheets.  Allows you to add fields to the results section to help you organize the recording of your expression results.</td></tr>
+<tr><th align=left valign=top>row</th><td valign="top">The horizontal arrangement of cells on a GEN worksheet or assay sheet. Rows are identified by numerical headings: 1, 2, 3, 4, 5, etc. The vertical arrangement is called a <i>column</i>; columns are identified by alphabetical headings: A, B, C, D, E, etc.</td></tr>
 <tr><th align=left valign=top>specimens/samples</th><td valign="top">Assay sheet results are directly associated with specific specimens or samples.  RNA in situ and immunohistochemistry assays use specimens. Blot assays use samples. You can include multiple specimens or samples in an assay sheet.</td></tr>
-
-
-
 <tr><th align=left valign=top>submission</th><td valign="top">This function allows you to select the assay sheets you want to submit to GXD. GEN takes this set of assays and makes a notebook containing the designated experimental data and any worksheet parameters used in these assays.  You can then send this file to GXD for inclusion in the database. </td></tr>
-
-
-
 <tr><th align=left valign=top>validation </th><td valign="top">GEN checks to see if an entry contains the field information required for submission to GXD.  You can validate a worksheet, an assay sheet, or the entire notebook. See <a href="#validate">Validation in the GEN.</a></td></tr>
-
-
-
 <tr><th align=left valign=top>Validate this Workbook </th><td valign="top"> <b>Main</b> menu command button. Click to validate the entire workbook. </td></tr>
-
 <tr><th align=left valign=top>view</th><td valign="top">There are several ways sections of an assay sheet can be displayed: expanded, intermediate, and collapsed view.  The expanded view displays all the data from the worksheet used for that section. The collapsed view displays only the ID. You toggle between them by clicking the &gt;&nbsp; button.  The &lt;&nbsp; </b>button is present only for Antibodies. </td></tr>
 
 <tr><th align=left valign=top>worksheet</th><td valign="top">A Microsoft Excel spreadsheet designed to hold specific types of data used to  define an experiment.  The following is a list of the GEN worksheets. The GEN tab name for the worksheet, if different, appears in parentheses.
-
-<ul><li>Genes<li>Probes <li>Probe Preparation Methods (Probe Prep) <li>Immunohistochemistry and In-Situ Specimens (Specimens) <li>Immunohistochemistry and In-Situ Specimen Prep (Specimen Prep) <li>Antibodies <li>Antigens <li>Primary Antibody Detection Methods (Primary Detection) <li>Primer Pairs (Primer Pair) <li>cDNA Generation Methods (CDNA Generation) <li>PCR Conditions <li>Northern Samples <li>Western Samples <li>RT-PCR Samples (PCR Samples)</ul></td></tr>
+<li>Genes<li>Probes <li>Probe Preparation Methods (Probe Prep) <li>Immunohistochemistry and In-Situ Specimens (Specimens) <li>Immunohistochemistry and In-Situ Specimen Prep (Specimen Prep) <li>Antibodies <li>Antigens <li>Primary Antibody Detection Methods (Primary Detection) <li>Primer Pairs (Primer Pair) <li>cDNA Generation Methods (CDNA Generation) <li>PCR Conditions <li>Northern Samples <li>Western Samples <li>RT-PCR Samples (PCR Samples)</td></tr>
 </table>
 
-</p><font size="-1"><a href="#toc">Back to Table of Contents</a></font></p>
-<hr>
+</p><font size="-1"><a href="#toc">Back to Table of Contents</a></font>
+
 
 <h3><a name="install"></a>Downloading and installing GEN</h3>
 
@@ -282,35 +179,32 @@ you may leave blank.  A collection of fields is called a <i>record</i>.</td></tr
   <li>Click on the phrase (Download the) <u>Gene Expression Notebook</u>.</li>
   <li>Fill out the registration form and click <b>Submit</b>.</li>
   <li>Click on <b>Download the GEN</b>. What happens next varies. In general:
-<ul>
-  <li>With Excel X, GEN will be saved to the hard drive.</li>
-  <li>With Excel 2003, GEN will be saved to the hard drive, and the application will open.</li>
-  <li>With Excel 2000, you will be asked, "What do you want to do with this file?"<br>Choose <b>Save it to disk</b>, and then type in a file name and a location to save it to. </li>
-</ul>
+     <ul>
+    <li>With Excel X, GEN will be saved to the hard drive.</li>
+    <li>With Excel 2003, GEN will be saved to the hard drive, and the application will open.</li>
+    <li>With Excel 2000, you will be asked, "What do you want to do with this file?"<br>Choose <b>Save it to disk</b>, and then type in a file name and a location to save it to. </li>
+   </ul>
 </li>
 <li>You must <b>Enable Macros</b> to allow the GEN to operate optimally. Since GEN macros are unsigned, with Excel 2003 you may need to lower the Macro Security level to Medium (or lower, if desired). To do this, go to the Tools menu and choose <b>Options</b>. Click on the Security tab and open the Macro Security dialog button to set the new security level.</li>
 </ol>
-<p>You can now open the notebook.</p>
-<p><font size="-1"><a href="#toc">Back to Table of Contents</a></font></p>
-<hr>
+You can now open the notebook.
+</p><font size="-1"><a href="#toc">Back to Table of Contents</a></font>
+
 
 <h3><a name="opengen"></a>Opening GEN </h3>
 <p>Once you download GEN, there are two ways to open the application:
 <ol>
 <li>Double-click the GEN icon on your desktop.</li>
 <li>Open Excel and click <b>File&#151;&gt;Open</b> and browse to locate the GEN.xls file.</li>
-<li>Click <b>Enable Macros</b> when the prompt asks if you want to disable macros or enable macros.<br>
-The GEN <b>Main</b> menu appears.</li>
+<li>Click <b>Enable Macros</b> when the prompt asks if you want to disable macros or enable macros. The GEN <b>Main</b> menu appears.</li>
 </ol>
 </p><font size="-1"><a href="#toc">Back to Table of Contents</a></font>
 
-<hr>
 
-<br>
 
 <h3><a name="select_main"></a>Selecting an action from the Main menu</h3>
 
-<p><IMG SRC="images/main_menu1.gif" width=717 height=623 align=left ALT="GEN Main menu"><br clear=all><br>
+<p><IMG SRC="images/main_menu1.gif" width=710 height=615 align=left ALT="GEN Main menu"><br clear=all><br>
 
 <p>From the <b>Main</b> menu, you can:
 <ul>
@@ -325,7 +219,7 @@ The GEN <b>Main</b> menu appears.</li>
 </table></li>
 </ul>
 </p><font size="-1"><a href="#toc">Back to Table of Contents</a></font>
-<hr>
+
 <h3><a name="assay_and_worksheets"></a>GEN assay sheets and worksheets</h3>
 
 <p>In the GEN, you store experimental details in worksheets and experimental results in assay sheets.  The following table indicates which worksheets are used by each type of assay sheet.
@@ -369,44 +263,28 @@ The GEN <b>Main</b> menu appears.</li>
    <li>Worksheets contain fields. (You might be more familiar with the Excel term, <i>cell</i>). Fields hold data. The type of data to enter is identified at the top of each column. (The Probes worksheet, for example, contains the following fields: <b>Probe Name, Gene, Sequence Type, Species, Sequence Acc #, Subsequence, Region Covered</b> and <b>Notes</b>).</li>
    <li>Some fields list possible selections on a drop-down menu. To see if a drop-down menu is available on a given field, click in the field. If a drop-down list arrow appears, click it to activate the list. Scroll the list, and click your selection. In most cases, if the value you need is not listed, you can type it directly into the field.</li>
    <li>The first field in a worksheet is always the ID, the unique name or identifier for the reagent or method. A drop-down menu is generated from the first field of each worksheet. Therefore, this field cannot be left blank, and each entry within it must be unique. If you enter a previously used ID, a warning appears when you leave the worksheet.</li>
-  <li>We hope we have designed fields that are of use for you, but use the fields in the notebook as you see fit.  If there are fields you regularly use, feel free to add them as columns to the appropriate worksheets.</li> Although these fields will not be displayed on the assay sheet, they are copied when you create new notebooks. (See <a href="#newfield">Creating new worksheet fields</a>.)
+  <li>We hope we have designed fields that are of use for you, but use the fields in the notebook as you see fit.  If there are fields you regularly use, feel free to add them as columns to the appropriate worksheets.</li> Although these fields will not be displayed on the assay sheet, they are copied when you create new notebooks. (See <a href="#newfield">Creating new worksheet fields</a>.)</li>
 
-  <li>You can edit a worksheet by changing the data in any field and saving the notebook.  Note, however, that changes are propagated to all assays using that record.  A warning appears when you use a Manage window to change data in a worksheet.</li>
+<li>You can edit a worksheet by changing the data in any field and saving the notebook.  Note, however, that changes are propagated to all assays using that record.  A warning appears when you use a Manage window to change data in a worksheet.</li>
 
-  <li>You must make your entries on consecutive rows.  Skipping rows results in an error message when you leave that worksheet.  A worksheet entry separated by blank rows will not appear in any drop-down menus.</li>
+<li>You must make your entries on consecutive rows.  Skipping rows results in an error message when you leave that worksheet.  A worksheet entry separated by blank rows will not appear in any drop-down menus.</li>
 
-  <li>The blue headings of each worksheet link to the Help Sheet.</li>
-
+<li>The blue headings of each worksheet link to the Help Sheet.</li>
 </ul>
-
-
-  <p><font size="-1"><a href="#toc">Back to Table of Contents</a></font>
-
-<hr>
-
-
+</p><font size="-1"><a href="#toc">Back to Table of Contents</a></font>
 
 <h3><a name="enter_worksheet_data">Entering worksheet data</h3>
+<p><ol><li>There are two ways to enter data into a worksheet:
+         <ul>
+          <li>Type text directly into the fields on the worksheet.</li>
+          <li>Use the Manage window on an assay sheet.</li>
+         </ul>
+       <li>Type the identifier for this information in the first field. Remember that you must make this ID unique.</li>
+
+<li>Continue filling out the worksheet by entering the appropriate data in each cell of a row. </li></ol>
+</p><font size="-1"><a href="#toc">Back to Table of Contents</a></font>
 
 
-<ol><li>There are two ways to enter data into a worksheet:
-
-<ul>
-
-<li>Type text directly into the fields on the worksheet.
-
-<li>Use the Manage window on an assay sheet.
-
-</ul>
-
-<li>Type the identifier for this information in the first field. Remember that you must make this ID unique.<br>
-
-<li>Continue filling out the worksheet by entering the appropriate data in each cell of a row. </ol>
-
-
-<p><font size="-1"><a href="#toc">Back to Table of Contents</a></font>
-
-<hr>
 
 
 
@@ -434,7 +312,7 @@ The GEN <b>Main</b> menu appears.</li>
 
 <p><font size="-1"><a href="#toc">Back to Table of Contents</a></font>
 
-<hr>
+
 
 
 
@@ -465,7 +343,7 @@ The GEN <b>Main</b> menu appears.</li>
 </td></tr>
 </table>
 </p><font size="-1"><a href="#toc">Back to Table of Contents</a></font>
-<hr>
+
 
 <h4><a name="probes"></a>Probes (Probes)</h4>
 <table><tr><th align=left valign=top cellpadding=4>Assays used in:</th><td valign="top">RNA In Situ; Northern</td></tr></table>
@@ -487,7 +365,7 @@ The GEN <b>Main</b> menu appears.</li>
 
 <tr><th align=left valign=top>Subsequence</th><td valign="top">If applicable, specify the nucleotide range (with respect to the accession number above) that defines the probe.</td></tr>
 
-<tr><th align=left valign=top>Region Covered</th><td valign="top">Type the region of the gene that the probe covers (e.g., 3' UTR, homeobox domain, and so on).</td></tr>
+<tr><th align=left valign=top>Region Covered</th><td valign="top">Type the region of the gene that the probe covers (e.g., 3' UTR, homeobox domain, etc.).</td></tr>
 
 <tr><th align=left valign=top>Notes</th><td valign="top">Type any additional information you want stored with this record.</td></tr>
 
@@ -500,7 +378,7 @@ The GEN <b>Main</b> menu appears.</li>
 
 <p><font size="-1"><a href="#toc">Back to Table of Contents</a></font>
 
- <hr>
+ 
 
 
 
@@ -519,7 +397,7 @@ The GEN <b>Main</b> menu appears.</li>
 
 <tr><th align=left valign=top>Hybridization</th><td valign="top">Use the drop-down menu to specify if the probe is antisense, double-stranded, or sense.</td></tr>
 
-<tr><th align=left valign=top>Labelled With</th><td valign="top">Use the drop-down menu to specify the label used.</td></tr>
+<tr><th align=left valign=top>labeled With</th><td valign="top">Use the drop-down menu to specify the label used.</td></tr>
 
 <tr><tr><th align=left valign=top>Label Coverage</th><td valign="top">Use the drop-down menu to specify where the label was incorporated into the probe.</td></tr>
 
@@ -528,7 +406,7 @@ The GEN <b>Main</b> menu appears.</li>
 <tr><tr><th align=left valign=top>Notes</th><td valign="top">Type any additional information you want stored with this record.</td></tr>
 </TABLE>
 </p><font size="-1"><a href="#toc">Back to Table of Contents</a></font>
-<hr>
+
 
 <h4><a name="specimens"></a>Immunohistochemistry and In Situ Specimens (Specimens)</h4>
 
@@ -561,7 +439,7 @@ The GEN <b>Main</b> menu appears.</li>
 
 <p><font size="-1"><a href="#toc">Back to Table of Contents</a></font>
 
-<hr>
+
 
 
 
@@ -589,7 +467,7 @@ The GEN <b>Main</b> menu appears.</li>
 
 <p><font size="-1"><a href="#toc">Back to Table of Contents</a></font>
 
-<hr>
+
 
 
 
@@ -621,7 +499,7 @@ The GEN <b>Main</b> menu appears.</li>
 
 <p><font size="-1"><a href="#toc">Back to Table of Contents</a></font>
 
-<hr>
+
 
 
 
@@ -632,7 +510,7 @@ The GEN <b>Main</b> menu appears.</li>
 <table cellpadding=4 border=1><tr><th align=left valign=top>Name</th><td valign="top">Type the name of the antigen.</td></tr>
 <tr><th align=left valign=top>Sequence Acc #</th><td valign="top">If the antigen corresponds to a sequence or fragment from a sequence in GenBank, type the accession number.</td></tr>
 <tr><th align=left valign=top>Subsequence</th><td valign="top">If possible, specify the amino acid range (with respect to the accession number above) that defines the antigen.</td></tr>
-<tr><th align=left valign=top>Region Covered</th><td valign="top">Specify the region of the protein that was used as an antigen (e.g., homeobox domain, entire, and so on). </td></tr>
+<tr><th align=left valign=top>Region Covered</th><td valign="top">Specify the region of the protein that was used as an antigen (e.g., homeobox domain, entire, etc). </td></tr>
 <tr><th align=left valign=top>Species</th><td valign="top">Specify the species the antigen was derived from, if applicable.</td></tr><tr>
 <tr><th align=left valign=top>Strain</th><td valign="top">Type the specimen strain. If the antigen was derived from mouse, see
 <a href="<!--#include file='include/wi_url.html'-->/external/festing/search_form.cgi">Inbred Strains of Mice and Rats</a> for a listing of approved strain names.</td></tr>
@@ -645,7 +523,7 @@ The GEN <b>Main</b> menu appears.</li>
 </tr><tr><th align=left valign=top>Antigen Notes</th><td valign="top">Type any additional information you want stored with this record. </td></tr>
 </table>
 </p><font size="-1"><a href="#toc">Back to Table of Contents</a></font>
-<hr>
+
 
 <h4><a name="primary_detection"></a>Primary Antibody Detection Methods (Primary Detection)</h4>
 <table><tr><th align=left valign=top cellpadding=4>Assays used in:</th><td valign="top">Immunohistochemistry; Western</td></tr></table>
@@ -653,11 +531,11 @@ The GEN <b>Main</b> menu appears.</li>
 <table cellpadding=4 cellspacing=1 border=1>
 <tr><th align=left valign=top>Detection Method</th><td valign="top">Type the name of the primary antibody detection method.</td></tr>
 <tr><th align=left valign=top>Secondary Antibody</th><td valign="top">Type the name of the secondary antibody used. </td></tr>
-<tr><th align=left valign=top>Labelled With</th><td valign="top">Use the drop-down menu to enter the label used on the secondary antibody. </td></tr>
+<tr><th align=left valign=top>labeled With</th><td valign="top">Use the drop-down menu to enter the label used on the secondary antibody. </td></tr>
 <tr><th align=left valign=top>Notes</th><td valign="top">Type any additional information you want stored with this record. </td></tr>
 </table>
 </p><font size="-1"><a href="#toc">Back to Table of Contents</a></font>
-<hr>
+
 
 
 
@@ -676,7 +554,7 @@ The GEN <b>Main</b> menu appears.</li>
 <tr><th align=left valign=top>Notes</th><td valign="top">Type any additional information you want stored with this record. </td></tr>
 </TABLE>
 </p><font size="-1"><a href="#toc">Back to Table of Contents</a></font>
-<hr>
+
 
 <h4><a name="cDNA"></a>cDNA Generation Methods (CDNA Generation)</h4>
 <table><tr><th align=left valign=top cellpadding=4>Assays used in:</th><td valign="top">RT-PCR</td></tr></table>
@@ -694,7 +572,7 @@ The GEN <b>Main</b> menu appears.</li>
 <tr><th align=left valign=top>Notes</th><td valign="top">Type any additional information you want stored with this record.</td></tr>
 </TABLE>
 </p><font size="-1"><a href="#toc">Back to Table of Contents</a></font>
-<hr>
+
 
 <h4><a name="pcr_condition"></A>PCR Conditions (PCR Conditions)</h4>
 <table border="0" cellspacing="1" cellpadding="4">
@@ -714,12 +592,12 @@ The GEN <b>Main</b> menu appears.</li>
 <tr><th align=left valign=top>Cycles</th><td valign="top">Type the number of cycles used in the PCR reaction. </td></tr>
 <tr><th align=left valign=top>MgCl<sub>2</sub></th><td valign="top">Type the concentration of MgCl<sub>2</sub> used in the PCR reaction. </td></tr>
 <tr><th align=left valign=top>dNTP</th><td valign="top">Type the concentration of deoxynucleotide triphosphates used in the PCR reaction.</td></tr>
-<tr><th align=left valign=top>Labelled With</th><td valign="top">Use the drop-down menu to enter the label used for the reaction product, if applicable.</td></tr>
+<tr><th align=left valign=top>labeled With</th><td valign="top">Use the drop-down menu to enter the label used for the reaction product, if applicable.</td></tr>
 <tr><th align=left valign=top>Label Coverage</th><td valign="top">Use the drop-down menu to specify where the label was incorporated into the reaction product.</td></tr>
 <tr><th align=left valign=top>Notes</th><td valign="top">Type any additional information you want stored with this record. </td></tr>
 </table>
 </p><font size="-1"><a href="#toc">Back to Table of Contents</a></font>
-<hr>
+
 
 <h4><a name="northern"></a>Northern Samples (Northern Samples)</h4>
 <table border="0" cellspacing="1" cellpadding="4">
@@ -742,7 +620,7 @@ The GEN <b>Main</b> menu appears.</li>
 </p><p><b>Note:</b>&nbsp; If you are planning on submitting data to GXD, we require that you specify the sample age (using either Theiler stages or age units).
 </p>
 <font size="-1"><a href="#toc">Back to Table of Contents</a></font>
-<hr>
+
 
 <h4><a name="western"></a>Western Samples (Western Samples)</h4>
 <table><tr><th align=left valign=top cellpadding=4>Assays used in:</th><td valign="top">Westerns</td></tr></table>
@@ -759,7 +637,7 @@ The GEN <b>Main</b> menu appears.</li>
 </table>
 <p><b>Note:</b>&nbsp; If you are planning on submitting data to GXD, we require that you specify the sample age (using either Theiler stages or age units).
 </p><font size="-1"><a href="#toc">Back to Table of Contents</a></font>
-<hr>
+
 
 
 <h4><a name="pcr_samples"></a>RT-PCR Samples (PCR Samples)</h4>
@@ -783,7 +661,7 @@ The GEN <b>Main</b> menu appears.</li>
 </table>
 <p><b>Note:</b>&nbsp; If you are planning on submitting data to GXD, we require that you specify the sample age (using either Theiler stages or age units).
 </p><font size="-1"><a href="#toc">Back to Table of Contents</a></font>
-<hr>
+
 
 <h3><a name="newfield"></a>Creating new worksheet fields</h3>
 <p>To create a new field:
@@ -795,7 +673,7 @@ The GEN <b>Main</b> menu appears.</li>
 
 </p><font size="-1"><a href="#toc">Back to Table of Contents</a></font>
 
-<hr>
+
 
 
 
@@ -825,7 +703,7 @@ The GEN <b>Main</b> menu appears.</li>
 
 <p><font size="-1"><a href="#toc">Back to Table of Contents</a></font>
 
-<hr>
+
 
 
 
@@ -861,7 +739,7 @@ The GEN <b>Main</b> menu appears.</li>
 
 <p><font size="-1"><a href="#toc">Back to Table of Contents</a></font>
 
-<hr>
+
 
 
 
@@ -877,7 +755,7 @@ The GEN <b>Main</b> menu appears.</li>
 
 <p><font size="-1"><a href="#toc">Back to Table of Contents</a></font>
 
-<hr>
+
 
 
 
@@ -929,7 +807,7 @@ Any data typed into shaded fields is not recorded in the corresponding worksheet
 
 <p><font size="-1"><a href="#toc">Back to Table of Contents</a></font>
 
-<hr>
+
 
 
 
@@ -986,7 +864,7 @@ There is no difference in data entered using a <b>Manage</b> window and data ent
 </p>
 <font size="-1"><a href="#toc">Back to Table of Contents</a></font>
 
-<hr>
+
 
 
 
@@ -1035,7 +913,7 @@ There is no difference in data entered using a <b>Manage</b> window and data ent
 
 <p><font size="-1"><a href="#toc">Back to Table of Contents</a></font>
 
-<hr>
+
 
 
 
@@ -1053,7 +931,7 @@ There is no difference in data entered using a <b>Manage</b> window and data ent
 
 
 
-<p>The results area is for storing the results of expression experiments&#151;recording the structures stained, expression level, pattern of staining, and so on.  You can also store images of these results, with accompanying legends, in this area.
+<p>The results area is for storing the results of expression experiments&#151;recording the structures stained, expression level, pattern of staining, etc.  You can also store images of these results, with accompanying legends, in this area.
 
 <p>For optimal results, we recommend organizing fields in the results section in the following order:  images, figure labels and legends, and results.  However, not all of these fields are required.  You can record results as free text in figure legends or in more detail in tabular format using the &lt;Insert Headings&gt; and &lt;Insert Rows/Bands&gt; functions from the Hide/Show Results menu.
 
@@ -1099,7 +977,7 @@ There is no difference in data entered using a <b>Manage</b> window and data ent
 
       </ol>
 
-  <p><b>Note:</b> &nbsp; If you are planning on submitting data to GXD, it is helpful for the figure legend to include details necessary for interpreting the image, such as plane of section, area pictured, and so on.</td></tr>
+  <p><b>Note:</b> &nbsp; If you are planning on submitting data to GXD, it is helpful for the figure legend to include details necessary for interpreting the image, such as plane of section, area pictured, etc.</td></tr>
 
 
 
@@ -1141,7 +1019,7 @@ There is no difference in data entered using a <b>Manage</b> window and data ent
 
 <p><font size="-1"><a href="#toc">Back to Table of Contents</a></font>
 
-<hr>
+
 
 
 
@@ -1207,7 +1085,7 @@ There is no difference in data entered using a <b>Manage</b> window and data ent
 
 <p><font size="-1"><a href="#toc">Back to Table of Contents</a></font>
 
-<hr>
+
 
 
 
@@ -1247,7 +1125,7 @@ There is no difference in data entered using a <b>Manage</b> window and data ent
 
 <p><font size="-1"><a href="#toc">Back to Table of Contents</a></font>
 
-<hr>
+
 
 
 
@@ -1259,14 +1137,14 @@ There is no difference in data entered using a <b>Manage</b> window and data ent
 
 <p>A simple method to find the approved gene symbol and name is to use the
 
-<A HREF="<!--#include file='include/wi_url.html'-->">quick gene search</a> at Mouse Genome Informatics. You can also search for a gene symbol with a sequence accession number. If you cannot find the gene, include in the Gene worksheet Notes field any information that will be useful to help us identify the gene and assign a new symbol and name if necessary.  Types of useful information include:  references, gene structure or function, gene family information, homologies to other species, and so on.
+<A HREF="<!--#include file='include/wi_url.html'-->">quick gene search</a> at Mouse Genome Informatics. You can also search for a gene symbol with a sequence accession number. If you cannot find the gene, include in the Gene worksheet Notes field any information that will be useful to help us identify the gene and assign a new symbol and name if necessary.  Types of useful information include:  references, gene structure or function, gene family information, homologies to other species, etc.
 
 
 
 <p>To find the approved allele symbol and name, you can use the 
 <A HREF="<!--#include file='include/wi_url.html'-->searches/allele_form.shtml">Phenotypes and Alleles Query Form</a> at Mouse Genome Informatics. (For a quick guide to the nomenclature, see the
 
-<A HREF="<!--#include file='include/mgihome_url.html'-->nomen/allmut_quickhelp.shtml">Allele and Mutant Quick Nomenclature Guide</a>.  If you cannot find the allele, include in the Specimen or Sample worksheet notes field any information that will be useful to help us identify the allele and assign a new name if necessary.  Types of useful information include:  references, type of mutation, lab generated in, and so on.  <b>Note:</b> At this time GXD does include information from knock-ins and knock-outs but not from other kinds of transgenic animals.
+<A HREF="<!--#include file='include/mgihome_url.html'-->nomen/allmut_quickhelp.shtml">Allele and Mutant Quick Nomenclature Guide</a>.  If you cannot find the allele, include in the Specimen or Sample worksheet notes field any information that will be useful to help us identify the allele and assign a new name if necessary.  Types of useful information include:  references, type of mutation, lab generated in, etc.  <b>Note:</b> At this time GXD does include information from knock-ins and knock-outs but not from other kinds of transgenic animals.
 
 
 
@@ -1275,7 +1153,7 @@ There is no difference in data entered using a <b>Manage</b> window and data ent
 <p>Finally, to submit data to GXD, you must make entries in certain fields.  The validation function insures these fields are filled in.  See <a href="#validate">Validation in the GEN</a> for further details.
 </p><font size="-1"><a href="#toc">Back to Table of Contents</a></font>
 
-<hr>
+
 <h3><a name="validate"></a>Validation in the GEN</h3>
 <p>The validation feature is designed to help you check data you wish to submit to GXD.  It looks at fields that we think are key to having a complete entry to make sure there is data in them.  For instance, the validation feature looks to ensure that each specimen has either an age or Theiler stage specified.  Anything that we believe is an omission will be listed on the Validation Report.  You do not have to validate data in order to use GEN or even to submit data to GXD.</p>
 
@@ -1337,7 +1215,7 @@ There is no difference in data entered using a <b>Manage</b> window and data ent
 
 <p><font size="-1"><a href="#toc">Back to Table of Contents</a></font>
 
-<hr>
+
 
 
 
@@ -1385,7 +1263,7 @@ There is no difference in data entered using a <b>Manage</b> window and data ent
 
 <ul>
 
-<li>There is no <b>Main</b> menu.  You can add additional probes, specimens, results, and so on, to this submission and you can validate individual assay sheets, but you cannot create new assay sheets or perform any other functions of the Main menu.
+<li>There is no <b>Main</b> menu.  You can add additional probes, specimens, results, etc., to this submission and you can validate individual assay sheets, but you cannot create new assay sheets or perform any other functions of the Main menu.
 
 <li>The only data it contains are from assays selected for submission.  This  means, for example, that if a probe is not used in the selected assays, GEN removes it from the Probes worksheet.
 
@@ -1419,7 +1297,7 @@ There is no difference in data entered using a <b>Manage</b> window and data ent
 
 <p><font size="-1"><a href="#toc">Back to Table of Contents</a></font>
 
-<hr>
+
 
 <h3><a name="modify"></a>Customizing GEN to your needs</h3>
 
@@ -1469,7 +1347,7 @@ Instructions for various modifications appear below. <p><b>Note:</b>&nbsp; If yo
 <b>Tip:</b> If you do the worksheets first, the specimen data will automatically fill in when you copy the assay sheets.</td></tr>
 </table>
 </p><font size="-1"><a href="#toc">Back to Table of Contents</a></font>
-<hr>
+
 
 <h3><a name="trouble"></a>Troubleshooting the GEN</h3>
 <table cellpadding=4 border=1>
@@ -1482,7 +1360,7 @@ Instructions for various modifications appear below. <p><b>Note:</b>&nbsp; If yo
 
 <tr>
 <td valign=top>GEN will not open, locks up, shuts down unexpectedly, or gives you a run-time error message.</td>
-<td valign=top>For all users:<br> your Excel application needs an update.<p><p>For OS9 users: the Excel application on your Mac may not have enough memory assigned.<td valign=top>Verify that you have installed the latest updates for your version of Excel. To make sure that your compute has all the necessary updates go to <a href="http://office.microsoft.com/officeupdate/default.aspx">http://office.microsoft.com/officeupdate/default.aspx</a> and click on "Check for Updates.<p>In OS9, increase the memory as follows:
+<td valign=top>For all users:<br> your Excel application needs an update.<p><p>For OS9 users: the Excel application on your Mac may not have enough memory assigned.<td valign=top>Verify that you have installed the latest updates for your version of Excel. To make sure that your computer has all the necessary updates go to <a href="http://office.microsoft.com/officeupdate/default.aspx">http://office.microsoft.com/officeupdate/default.aspx</a> and click on "Check for Updates.<p>In OS9, increase the memory as follows:
 <ol>
 <li>Close the Excel program.</li>
 <li>Highlight the Excel file. (Highlight only; do not activate the program.)</li> <LI>From the menu at the top, click <b>File&#151;&gt;Get Info</b>. A dialog box appears.</li>  
@@ -1502,7 +1380,7 @@ Instructions for various modifications appear below. <p><b>Note:</b>&nbsp; If yo
 <td valign=top>If a record lacks an ID, it will not appear on the drop-down menu.  Sometimes if the worksheet page does not open all the way to the left, you may forget to enter a name in the first field.  Alternatively, if you leave a blank row between entries on a worksheet, the records below the skipped row will not appear on the drop-down menu.  In very rare instances, your entry will fail to appear because the GEN suffered a momentary glitch when generating the drop-down menu.  In those cases, you can type the entry id (as it appears on the worksheet) into the assay field; the other fields will still fill in when you tab out.</td></tr>
 
 <tr><td valign="top">When using the Manage windows on the assay sheets to create an entry, the cursor appears as an hourglass.</td><td valign="top">This happens in some versions of Excel on the Mac and is harmless.</td><td valign="top">The cursor is still active even though it may appear as an hourglass when you are using the assay sheet Manage windows.</td></tr>
-<tr><td valign="top">I'm trying to insert Headings or Legends and Labels into the results section of my assay, but I'm getting a run-time error message.</td><td valign="top">Excel thinks you want to merge incompatible files.</td><td valign="top">If you do not select the cell in the results area where you want the Headings or Legends and Labels to be inserted, Excel may try to insert the heading/ legend in the last cell you last selected. Since these items have different sizes and numbers, trying to insert a Heading into a Legend and label (or <i>vice versa</i>) causes an error. To prevent the problem, select the cell in the results where you want the Headings or Legends and Labels to be inserted.</td></tr>
+<tr><td valign="top">I'm trying to insert Headings or Legends and Labels into the results section of my assay, but I'm getting a run-time error message.</td><td valign="top">Excel thinks you want to merge incompatible files.</td><td valign="top">If you do not select the cell in the results area where you want the Headings or Legends and Labels to be inserted, Excel may try to insert the heading/ legend in the last cell you last selected. Since these items have different sizes and numbers, trying to insert a Heading into a Legend and Label (or <i>vice versa</i>) causes an error. To prevent the problem, select the cell in the results where you want the Headings or Legends and Labels to be inserted.</td></tr>
 
 <tr><td valign=top>I would like a paper copy of an assay record in my GEN.&nbsp;When I ask the assay to print, I get massive numbers of pages with gray boxes on them.<td valign="top">&nbsp;	<td valign=top>To print an assay sheet, you need to set the print area.<ol>
 
@@ -1510,7 +1388,7 @@ Instructions for various modifications appear below. <p><b>Note:</b>&nbsp; If yo
 
 
 
-<tr><td valign=top>I've double-labelled a specimen, but I can't figure out how to get both genes and probes into one assay sheet.<td valign="top">&nbsp;<td valign=top> The GEN is designed so that an assay describes the results obtained using one probe or antibody.  (The exception is the RT-PCR assay, which allows you to enter the results from more than one primer pair.)  To record the results from a double (or triple) labelling experiment, you'll need to fill out a separate assay sheet for each probe or antibody used.</tr>
+<tr><td valign=top>I've double-labeled a specimen, but I can't figure out how to get both genes and probes into one assay sheet.<td valign="top">&nbsp;<td valign=top> The GEN is designed so that an assay describes the results obtained using one probe or antibody.  (The exception is the RT-PCR assay, which allows you to enter the results from more than one primer pair.)  To record the results from a double (or triple) labeling experiment, you'll need to fill out a separate assay sheet for each probe or antibody used.</tr>
 
 
 
@@ -1552,7 +1430,7 @@ Instructions for various modifications appear below. <p><b>Note:</b>&nbsp; If yo
 
 <p><font size="-1"><a href="#toc">Back to Table of Contents</a></font>
 
-<hr>
+
 
 
 
@@ -1566,7 +1444,7 @@ This  documentation is available on the Web at http://www.informatics.jax.org/mg
 
 <p><font size="-1"><a href="#toc">Back to Table of Contents</a></font>
 
-<hr>
+
 
 
 
