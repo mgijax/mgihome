@@ -180,12 +180,12 @@ Use the Notes field to record information that is important to know but that doe
   <li>Fill out the registration form and click <b>Submit</b>.</li>
   <li>Click on <b>Download the GEN</b>. What happens next varies. In general:
      <ul>
-    <li>With Excel X, GEN will be saved to the hard drive.</li>
+    <li>With Excel 2004 and Excel X, GEN will be saved to the hard drive.</li>
     <li>With Excel 2003, GEN will be saved to the hard drive, and the application will open.</li>
     <li>With Excel 2000, you will be asked, "What do you want to do with this file?"<br>Choose <b>Save it to disk</b>, and then type in a file name and a location to save it to. </li>
    </ul>
 </li>
-<li>You must <b>Enable Macros</b> to allow the GEN to operate optimally. Since GEN macros are unsigned, with Excel 2003 you may need to lower the Macro Security level to Medium (or lower, if desired). To do this, go to the Tools menu and choose <b>Options</b>. Click on the Security tab and open the Macro Security dialog button to set the new security level.</li>
+<li>You must <b>Enable Macros</b> to allow the GEN to operate optimally. Since GEN macros are unsigned, with some versions of Excel, you may need to lower the Macro Security level to Medium (or lower, if desired). To do this, go to the Tools menu and choose <b>Options</b>. Click on the Security tab and open the Macro Security dialog button to set the new security level.</li>
 </ol>
 You can now open the notebook.
 </p><font size="-1"><a href="#toc">Back to Table of Contents</a></font>
@@ -1002,8 +1002,7 @@ There is no difference in data entered using a <b>Manage</b> window and data ent
 <p><b>Note:</b>
 
 <ul>
-
-<li>It is important to highlight a cell in the row where you wish to insert the label and legend, headings, or rows/bands.  If you insert a field into another field, the second field will be displaced or divided.
+<li>It is important to highlight a cell in the row where you wish to insert the label and legend, headings, or rows/bands.  If you insert a field into another field, the second field will be displaced or divided and you may cause a <a href="#run-time">run-time error</a>.</li>
 
 <li>If you insert any of the results fields in the wrong space, you can delete them.
 
@@ -1380,7 +1379,8 @@ Instructions for various modifications appear below. <p><b>Note:</b>&nbsp; If yo
 <td valign=top>If a record lacks an ID, it will not appear on the drop-down menu.  Sometimes if the worksheet page does not open all the way to the left, you may forget to enter a name in the first field.  Alternatively, if you leave a blank row between entries on a worksheet, the records below the skipped row will not appear on the drop-down menu.  In very rare instances, your entry will fail to appear because the GEN suffered a momentary glitch when generating the drop-down menu.  In those cases, you can type the entry id (as it appears on the worksheet) into the assay field; the other fields will still fill in when you tab out.</td></tr>
 
 <tr><td valign="top">When using the Manage windows on the assay sheets to create an entry, the cursor appears as an hourglass.</td><td valign="top">This happens in some versions of Excel on the Mac and is harmless.</td><td valign="top">The cursor is still active even though it may appear as an hourglass when you are using the assay sheet Manage windows.</td></tr>
-<tr><td valign="top">I'm trying to insert Headings or Legends and Labels into the results section of my assay, but I'm getting a run-time error message.</td><td valign="top">Excel thinks you want to merge incompatible files.</td><td valign="top">If you do not select the cell in the results area where you want the Headings or Legends and Labels to be inserted, Excel may try to insert the heading/ legend in the last cell you last selected. Since these items have different sizes and numbers, trying to insert a Heading into a Legend and Label (or <i>vice versa</i>) causes an error. To prevent the problem, select the cell in the results where you want the Headings or Legends and Labels to be inserted.</td></tr>
+
+<tr><td valign="top"><a name="run-time"></a>I'm trying to insert Headings or Legends and Labels into the results section of my assay, but I'm getting a run-time error message.</td><td valign="top">Excel thinks you want to merge incompatible files.</td><td valign="top">If you do not select the cell in the results area where you want the Headings or Legends and Labels to be inserted, Excel may try to insert the heading/legend in the cell you last selected. Since these items have different sizes and numbers, trying to insert a Heading into a Legend and Label (or <i>vice versa</i>) causes an error. To prevent the problem, select the cell in the results where you want the Headings or Legends and Labels to be inserted.</td></tr>
 
 <tr><td valign=top>I would like a paper copy of an assay record in my GEN.&nbsp;When I ask the assay to print, I get massive numbers of pages with gray boxes on them.<td valign="top">&nbsp;	<td valign=top>To print an assay sheet, you need to set the print area.<ol>
 
@@ -1459,247 +1459,126 @@ This  documentation is available on the Web at http://www.informatics.jax.org/mg
 <OL>
 
 <b><LI>Create an assay sheet for your experiment.</LI></b>
-
     <UL>
-
     <LI>Go to the Main menu.  If you just opened the GEN, the Main menu appears.  Otherwise, to go to the Main menu, click the Menu tab at the bottom of the page.</LI>
-
     <LI>Click in the white box to the left of the Create New Assay Sheet button. A drop-down list arrow appears next to the white box.</LI>
-
     <LI>Click the drop-down list arrow.  A menu of the assay types available in GEN appears.
-
       <ul>
-
-     <li>For a PC, click <b>RNA In Situ</b>.
-
+    <li>For a PC, click <b>RNA In Situ</b>.</li>
      <li>For a Mac, click the drop-down list arrow, hold down the (left) mouse button, and drag to <b>RNA In Situ</b>.</LI>
-
      </ul>
-
  <LI>Click <b>Create New Assay Sheet</b> to create and open an assay sheet to store your experiment in.  The assay sheet is entitled <b>RNA In Situ</b> (&#035;).  If this is the first in situ assay stored in the GEN, it will be <b>RNA In Situ (2)</b>. </LI>
-
    </UL>
-
 <br>
-
-
-
 <i>Experimental details are used in assays and stored in worksheets. There are two methods for entering worksheet data: using the Manage windows or directly into a worksheet. Steps 2-4 are examples of data entry using Manage windows; steps 5 and 7 demonstrate entering data directly into a worksheet.</i>
-
   <br><br>
-
-
-
 <b><LI>Type the name of the gene whose expression you analyzed in your experiment into the assay sheet.</LI></b>
-
    <UL>
-
    <LI>Often the assay sheets open at the bottom of the page.  If this happens, scroll to the top of the page to start your entry.</LI>
-
   <LI>Click the Manage Genes button in the upper-left corner.  The Editing: Genes dialog box appears.</LI>
-
   <LI>Type <b>Bone morphogenetic protein 4</b> in the box labeled Name.  Type <b>Bmp4</b> in the box labeled Symbol.  If there is any other information you want to add regarding the gene analyzed, put it in the Notes box.</LI>
-
   <LI>Click <B>Save Changes</B> (otherwise the entry will be lost).  The data is entered into the Genes worksheet.  (You can view this directly by clicking on the Genes tab at the bottom of the assay sheet page.)</LI>
-
   <LI>Close the window or click the Cancel button.</LI>
-
   <LI>As you did when creating your assay sheet, click the white box to the right of Gene Name.  A drop-down list arrow appears.</LI>
-
   <LI>Click the drop-down list arrow and select <B>Bone morphogenetic protein 4</B> from the menu of gene names.  Tab out of the box.  The remaining fields in the Gene section fill in automatically.</LI>
-
   </UL>
-
 <br>
-
-
-
 <b><LI>Type the name of the probe you used in your experiment.</LI></b>
-
   <UL>
-
    <LI>Click <B>Manage Probes</B>.  The Editing:  Probes dialog box appears.</LI>
-
    <LI>In the first box, type something similar to what you'd use in referring to your own probes, such as <b>Bmp4 Probe 1</b>.  Since the entries in this box will appear in the drop-down menus, each probe name must be unique for the GEN to function properly. </LI>
-
   <LI>In the Gene box, type <b>Bmp4</b>.  This should be the name of the gene the probe was derived from.</LI>
-
 <LI>Select cDNA from the Sequence Type drop-down menu.  If the option you want is not on the list,  type it into the box.</LI>
-
    <LI>Type <b>Mouse</b> into the Species box.</LI>
-
     <LI>The following boxes further define the probe specificity.  Type <b>D14814</b> into the Sequence Acc &#035; box, <b>NA 5600-5724</b> into Subsequence, and <b>Third Exon</b> into Region Covered.  Put any other information you want to add regarding the probe in Notes; for example, <b>synthesized 3&#047;11&#047;07; not hydrolyzed</b>.</LI>
-
   <LI>Click <b>Save Changes</b>, close the dialog box, and select <b>Bmp4 Probe1</b> from the drop-down menu of probe names on the assay sheet.  Tab out of the box. The remaining fields in the Probe section fill in automatically.</LI>
-
     </ul>
-
 <br>
-
 <b><LI>Next, type the method you used to prepare your probe into the assay sheet.</LI></b>
-
   <UL>
-
-   <LI>Click <b>Manage Probe Preps</b>.  The Editing: Probe Prep dialog box appears.
-
-   <LI>In the first box, type the name of the method you used to make your probe, such as <b>Nonradioactive</b>.  Each probe prep method name in the GEN must be unique.
-
-   <LI>Use the drop-down menus to fill in the other boxes.  For this exercise, for Type, choose <b>RNA</b>; for Hybridization, choose <b>Antisense</b>; for Labeled with, choose <b>Digoxigenin</b>; and for Visualized with, choose <b>Alkaline phosphatase</b>.  For any of these values, if the option you want is not listed, you can type it into the box.
-
-   <LI>As above, click <b>Save Changes</b>, close the dialog box, and select <b>Nonradioactive</b> from the drop-down menu of Probe Prep Methods on the assay sheet.  Tab out of the box for the remaining fields in the Prep Method section to be filled in automatically.
-
+   <LI>Click <b>Manage Probe Preps</b>.  The Editing: Probe Prep dialog box appears.</li>
+   <LI>In the first box, type the name of the method you used to make your probe, such as <b>Nonradioactive</b>.  Each probe prep method name in the GEN must be unique.</li>
+   <LI>Use the drop-down menus to fill in the other boxes.  For this exercise, for Type, choose <b>RNA</b>; for Hybridization, choose <b>Antisense</b>; for Labeled with, choose <b>Digoxigenin</b>; and for Visualized with, choose <b>Alkaline phosphatase</b>.  For any of these values, if the option you want is not listed, you can type it into the box.</li>
+   <LI>As above, click <b>Save Changes</b>, close the dialog box, and select <b>Nonradioactive</b> from the drop-down menu of Probe Prep Methods on the assay sheet.  Tab out of the box for the remaining fields in the Prep Method section to be filled in automatically.</li>
    </ul>
-
 <br>
-
-
-
-<b><li>Add your specimens to the GEN using the Specimens worksheet.</b>
-
+<b><li>Add your specimens to the GEN using the Specimens worksheet.</li>
    <ul>
-
-<li>As you become an experienced GEN user, you'll probably start adding your experimental details directly to the various worksheets (rather than using the Manage window) since entry is usually quicker that way and you can review what you already have easily. The following instructions, therefore, illustrate how to enter data using a worksheet.
-
-   <LI>Click the Specimens tab at the bottom of the assay sheet to go to the Immunohistochemistry and In-Situ Specimens worksheet</b>.
-
-   <LI>To enter your wild-type specimen, type a name in the first field under <b>Specimen ID</b> similar to what you'd use for your tissue samples, such as <b>2&#047;25&#047;07 E10.5 WT &#035;1</b>.  Each in situ&#047;immunohistochemistry specimen name in the GEN must be unique.
-
-   <LI>Type <b>C57BL&#047;6J</b> into the Strain field.
-
-   <LI>Type <b>WT</b> into the Mutations field (or leave it blank).
-
-   <LI>Type <b>17</b> into the Theiler Stage field.  (Alternatively, if you fill in the age unit and value boxes, feel free to leave this blank.)
-
-   <LI>Choose <b>embryonic day</b> from the Age Unit drop-down menu and type <b>10.5</b> into the Age Value field.
-
-   <LI>Choose <b>0.5</b> from the Noon of Plug Day=  drop-down menu.
-
-   <LI>Choose <b>Unknown</b> from the Sex drop-down menu.
-
-   <LI>If there is anything else you want to add regarding the specimen, put it in the Notes box.
-
-   <LI>Click <b>Save Changes</b>.
-
-   <LI>Follow essentially the same procedure to add the mutant specimen in the second row fields. For the Specimen ID, use <b>2&#047;25&#047;07 E10.5 mut &#035;1</b>.   For the Strain, use <b>129S1&#047;Sv</b> and <b>129X1&#047;SvJ</b>.  For Mutations, use <b>Shh<sup>tm1Chg</sup>&#047;Shh<sup>tm1Chg</sup></b>.  In the Notes box, write <b>targeted mutation generated by Chin Chiang</b>.  For all other boxes, use the values for the wild-type specimen.
-
+<li>As you become an experienced GEN user, you'll probably start adding your experimental details directly to the various worksheets (rather than using the Manage window) since entry is usually quicker that way and you can review what you already have easily. The following instructions, therefore, illustrate how to enter data using a worksheet.</li>
+   <LI>Click the Specimens tab at the bottom of the assay sheet to go to the Immunohistochemistry and In-Situ Specimens worksheet</b>.</li>
+   <LI>To enter your wild-type specimen, type a name in the first field under <b>Specimen ID</b> similar to what you'd use for your tissue samples, such as <b>2&#047;25&#047;07 E10.5 WT &#035;1</b>.  Each in situ&#047;immunohistochemistry specimen name in the GEN must be unique.</li>
+   <LI>Type <b>C57BL&#047;6J</b> into the Strain field.</li>
+   <LI>Type <b>WT</b> into the Mutations field (or leave it blank).</li>
+   <LI>Type <b>17</b> into the Theiler Stage field.  (Alternatively, if you fill in the age unit and value boxes, feel free to leave this blank.)</li>
+   <LI>Choose <b>embryonic day</b> from the Age Unit drop-down menu and type <b>10.5</b> into the Age Value field.</li>
+   <LI>Choose <b>0.5</b> from the Noon of Plug Day=  drop-down menu.</li>
+   <LI>Choose <b>Unknown</b> from the Sex drop-down menu.</li>
+   <LI>If there is anything else you want to add regarding the specimen, put it in the Notes field.</li>
+   <LI>Follow essentially the same procedure to add the mutant specimen in the second row fields. For the Specimen ID, use <b>2&#047;25&#047;07 E10.5 mut &#035;1</b>.   For the Strain, use <b>129S1&#047;Sv</b> and <b>129X1&#047;SvJ</b>.  For Mutations, use <b>Shh<sup>tm1Chg</sup>&#047;Shh<sup>tm1Chg</sup></b>.  In the Notes box, write <b>targeted mutation generated by Chin Chiang</b>.  For all other boxes, use the values for the wild-type specimen.</li>
     </ul>
-
 <br>
-
-<b><li>Add the specimens to your experimental record.</b>
-
+<b><li>Add the specimens to your experimental record.</b></li>
    <ul>
-
-  <li>Click the RNA In Situ(2) tab to go to the assay sheet.
-
-   <LI>You need as many white boxes on the Specimen ID line as you have samples in your assay.  For this exercise you need two, so click <b>Add Specimen</b> once.
-
-   <LI>Click in the first box to make the drop-down list arrow to appear next to the box.  Select the WT specimen from the drop-down menu and tab out of the box.  Repeat this in the next box to add the mutant specimen to the assay sheet.
-
+  <li>Click the RNA In Situ(2) tab to go to the assay sheet.</li>
+   <LI>You need as many white boxes on the Specimen ID line as you have samples in your assay.  For this exercise you need two, so click <b>Add Specimen</b> once.</li>
+   <LI>Click in the first box to make the drop-down list arrow to appear next to the box.  Select the WT specimen from the drop-down menu and tab out of the box.  Repeat this in the next box to add the mutant specimen to the assay sheet.</li>
    </ul>
-
 <br>
-
-<b><li>Add the details of how you prepared the specimens to the experimental record, using the worksheet.</b>
-
+<b><li>Add the details of how you prepared the specimens to the experimental record, using the worksheet.</b></li>
    <ul>
-
-  <li>To open the Immunohistochemistry and In-Situ Specimens worksheet, click the Specimen Preps tab.
-
-     <LI>In the first field, type the name of the method you used to prepare your probe,  such as <b>Para fixed WM</b>.  Each specimen prep method name in the GEN must be unique.
-
-   <LI>Use the drop-down menus to fill in the other fields.  For this exercise, for Type, choose <b>Whole mount</b>; for Fixation, choose <b>4&#037; Paraformaldehyde</b>; and for Embedding, choose <b>Not applicable</b>.  In the Notes field, you can type <b>para o&#047;n </b>, then <b>20&#037; sucrose in PBS until sank</b>.  For any of the values with a drop-down menu, if the option you want is not listed, type it into the field.
-
-  <li>Click the RNA In Situ tab. Click in the first box following the Spec Prep Method, choose <b>Para fixed WM</b> from the drop-down menu that appears, and tab out of the box. Repeat for the mutant specimen.
-
+  <li>To open the Immunohistochemistry and In-Situ Specimens worksheet, click the Specimen Preps tab.</li>
+     <LI>In the first field, type the name of the method you used to prepare your probe,  such as <b>Para fixed WM</b>.  Each specimen prep method name in the GEN must be unique.</li>
+   <LI>Use the drop-down menus to fill in the other fields.  For this exercise, for Type, choose <b>Whole mount</b>; for Fixation, choose <b>4&#037; Paraformaldehyde</b>; and for Embedding, choose <b>Not applicable</b>.  In the Notes field, you can type <b>para o&#047;n, then <b>20&#037; sucrose in PBS until sank</b>.  For any of the values with a drop-down menu, if the option you want is not listed, type it into the field.</li>
+  <li>Click the RNA In Situ tab. Click in the first box following the Spec Prep Method, choose <b>Para fixed WM</b> from the drop-down menu that appears, and tab out of the box. Repeat for the mutant specimen.</li>
     </ul>
-
 <br>
-
 <b><li>Add any other details of the experimental procedure that you want recorded in the Assay Notes box.</b></li>
-
 <br><BR>
-
 <b><LI>Add your results to the experimental record.</b></li>
-
    <ul>
-
-   <li>For optimal results, add the results fields in this order:  Image; Figure legend and label; then Results.
-
-   <li>The GEN does not contain an image for this exercise, so if you do not have an image on your computer to use, skip straight to <a href="#add_results">Adding your results</a>.
-
-   <li>In all cases, the first step is to click <b>Hide&#047;Show Results Menu</b>.
-
+   <li>For optimal results, add the results fields in this order:  Image; Figure legend and label; then Results.</li>
+   <li>The GEN does not contain an image for this exercise, so if you do not have an image on your computer to use, skip straight to <a href="#add_results">Adding your results</a>.</li>
+   <li>In all cases, the first step is to click <b>Hide&#047;Show Results Menu</b>.</li>
    </ul>
-
 <br>
-
 <b>Adding an image of your results:</b>
-
    <ul>
-
-   <li>Click in the results field to select the area where you want the upper left corner of the image.
-
-   <li>Choose <b>&lt;Insert Picture&gt;</b> from the RNA In Situ: Results list box.
-
-   <li>Choose the image file from the selection window.  Click <b>Open</b> to select it for insertion.  The image is inserted into the results area.
-
-   <li>You can move this image by (left) clicking on it and dragging to a new position.
-
+   <li>Click in the results field to select the area where you want the upper left corner of the image.</li>
+   <li>Choose <b>&lt;Insert Picture&gt;</b> from the RNA In Situ: Results list box.</li>
+   <li>Choose the image file from the selection window.  Click <b>Open</b> to select it for insertion.  The image is inserted into the results area.</li>
+   <li>You can move this image by (left) clicking on it and dragging to a new position.</li>
    </ul>
-
 <br>
-
 <b>Adding a label and legend to your image:</b>
-
    <ul>
-
-   <li>If you wish to add a legend for your image, click in the desired row in the results field below the image.
-
-   <li>Choose <b>&lt;Insert Legend and Label&gt;</b> from the RNA In Situ: Results list box.
-
-   <li>Add a label to the first line and add the legend in the box below that.
-
+   <li>If you wish to add a legend for your image, click in the desired row in the results field below the image.</li>
+   <li>Choose <b>&lt;Insert Legend and Label&gt;</b> from the RNA In Situ: Results list box.</li>
+   <li>Add a label to the first line and add the legend in the box below that.</li>
    </ul>
-
 <br>
-
 <b><a name="add_results"></a>Adding your results:</b>
-
    <ul>
+   <li>Click in the results section to select the row where you want to add the headings.</li>
+   <li>Choose <b>&lt;Insert Headings&gt;</b> from the RNA In Situ: Results list box.  This adds column headers to help you organize your results.</li>
+   <li>When you add the headings, one blank row is also added for recording results.</li>
+   <li>You can add more rows by choosing <b>&lt;Insert Rows&gt;</b> from the RNA In Situ: Results list box.  Generally, you should add one row for each structure analyzed in each specimen.  For this exercise, you will need four lines.</li>
+   <li>At this point, you should probably close the RNA In Situ: Results list box.  You can reopen it at any time by clicking <b>Hide&#047;Show Results Menu</b>.</li>
+   <li>Use the drop-down menu to choose the first specimen whose staining pattern you want to describe.  For this example, choose <b>2&#047;25&#047;07 E10.5 WT &#035;1</b>.</li>
+   <li>In the structure box, type the name of a structure you analyzed.  For this example, use <b>limb</b>. You can use <a href="../GEN/AD/">The Mouse Anatomical Dictionary</a> as a reference for appropriate structure names. You can cut and paste the complete name and ID for the anatomical structure, e.g., <b>TS17;limb[2095]</b> or  <b>TS17;forelimb bud;ectoderm;apical ectodermal ridge [2098](AER)</b> or <b>TS17;hindlimb bud;ectoderm;apical ectodermal ridge [2102](AER)</b>.</li>
+   <li>To describe the intensity of the staining, use an adjective from the Expression Level drop-down menu.  For this specimen, use <b>Strong</b>.</li>
 
-   <li>Click in the results section to select the row where you want to add the headings.
+   <li>To describe the Pattern of the staining, use a descriptor from the Pattern drop-down menu.  Since in this specimen, only part of the limb was stained, choose <b>Regionally restricted</b>.</li>
 
-   <li>Choose <b>&lt;Insert Headings&gt;</b> from the RNA In Situ: Results list box.  This adds column headers to help you organize your results.
+   <li>If there is an image of this embryo on the assay sheet, type the label of that image in the next box.</li>
 
-   <li>When you add the headings, one blank row is also added for recording results.
+   <li>In the Note box describe how the staining was regionally restricted, such as <b>strong expression in the posterior and anterior margins of the limb, including in both the ectoderm and the underlying mesenchyme.  Also present in the apical ectodermal ridge.</b></li>
 
-   <li>You can add more rows by choosing <b>&lt;Insert Rows&gt;</b> from the RNA In Situ: Results list box.  Generally, you should add one row for each structure analyzed in each specimen.  For this exercise, you will need four lines.
+  <li>On the next line of the results field, describe the staining in the somites.  For specimen, choose <b>2&#047;25/07 E10.5 WT &#035;1</b>.  For structure, type <b>somites</b>.  For Expression Level, choose <b>Strong</b>.  For Pattern, choose <b>Homogeneous</b>.</li>
 
-   <li>At this point, you should probably close the RNA In Situ: Results list box.  You can reopen it at any time by clicking <b>Hide&#047;Show Results Menu</b>.
+   <li>On the next line of the results field, describe the staining pattern in the mutant embryo.  For specimen, choose <b>2&#047;25/07 E10.5 mut &#035;1</b>.  For structure, type <b>limb</b>.  For Expression Level, choose <b>Present</b>.  For Pattern, choose <b>Regionally restricted</b>.  In the Note box, type <b>staining present in the apical ectodermal ridge but absent from the posterior and anterior margins of the limb.</b></li>
 
-   <li>Use the drop-down menu to choose the first specimen whose staining pattern you want to describe.  For this example, choose <b>2&#047;25&#047;07 E10.5 WT &#035;1</b>.
-
-   <li>In the structure box, type the name of a structure you analyzed.  For this example, use <b>limb</b>. You can use
-
-<a href="../GEN/AD/">The Mouse Anatomical Dictionary</a> as a reference for appropriate structure names. You can cut and paste the complete name and ID for the anatomical structure, e.g., <b>TS17;limb[2095]</b> or  <b>TS17;forelimb bud;ectoderm;apical ectodermal ridge [2098](AER)</b> or <b>TS17;hindlimb bud;ectoderm;apical ectodermal ridge [2102](AER)</b>.
-
-   <li>To describe the intensity of the staining, use an adjective from the Expression Level drop-down menu.  For this specimen, use <b>Strong</b>.
-
-   <li>To describe the Pattern of the staining, use a descriptor from the Pattern drop-down menu.  Since in this specimen, only part of the limb was stained, choose <b>Regionally restricted</b>.
-
-   <li>If there is an image of this embryo on the assay sheet, type the label of that image in the next box.
-
-   <li>In the Note box describe how the staining was regionally restricted, such as <b>strong expression in the posterior and anterior margins of the limb, including in both the ectoderm and the underlying mesenchyme.  Also present in the apical ectodermal ridge.</b>
-
-  <li>On the next line of the results field, describe the staining in the somites.  For specimen, choose <b>2&#047;25/07 E10.5 WT &#035;1</b>.  For structure, type <b>somites</b>.  For Expression Level, choose <b>Strong</b>.  For Pattern, choose <b>Homogeneous</b>.
-
-   <li>On the next line of the results field, describe the staining pattern in the mutant embryo.  For specimen, choose <b>2&#047;25/07 E10.5 mut &#035;1</b>.  For structure, type <b>limb</b>.  For Expression Level, choose <b>Present</b>.  For Pattern, choose <b>Regionally restricted</b>.  In the Note box, type <b>staining present in the apical ectodermal ridge but absent from the posterior and anterior margins of the limb.</b>
-
-  <li>On the next line of the results field, describe the staining in the mutant somites.  For specimen, choose <b>2&#047;25/07 E10.5 mut &#035;1</b>.  For structure, type <b>somites</b>.  For Expression Level, choose <b>Absent</b>.  For Pattern, choose <b>Not applicable</b>.</ul>
-
+  <li>On the next line of the results field, describe the staining in the mutant somites.  For specimen, choose <b>2&#047;25/07 E10.5 mut &#035;1</b>.  For structure, type <b>somites</b>.  For Expression Level, choose <b>Absent</b>.  Leave the Pattern field blank.</li></ul>
   </ul>
-
   </OL>
 
 <BR>Congratulations!  You have now successfully entered an experiment into the GEN.
