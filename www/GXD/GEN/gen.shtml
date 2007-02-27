@@ -120,7 +120,7 @@ Because GEN is a species-neutral tool, you can use it to manage expression data 
 <li>are familiar with Microsoft Excel, you'll find the workbook, worksheet, and Manage window concepts easy to understand. See the <a href="#toc">Table of Contents</a> for spreadsheet activities specific to the GEN application.</li>
 <li>are new to spreadsheets or to the GEN, <a href="#terms">GEN Terminology</a> provides a list of GEN concepts. </li>
 <li>want to read about GEN from "soup-to-nuts," start with the  <a href="#toc">Table of Contents</a> and pick a topic.</li>
-<li>need to install GEN, see <a href="#sysreq">GEN system requirements</a>.</li><br>
+<li>need to install GEN, see <a href="#sysreq">GEN system requirements</a>.</li>
 <li>have GEN installed and are ready to plunge right in, try <a href="#tutorial">Getting started using the GEN (tutorial)</a>.</li>
 <li>want to modify the notebook forms for your own use, you'll find instructions for adding fields, changing tab names, and deleting data at <a href="#modify">Customizing GEN to your needs</a>.</li>
 </ul>
@@ -141,7 +141,7 @@ Because GEN is a species-neutral tool, you can use it to manage expression data 
 <tr><th valign=top align=left>Validation Report</th><td valign="top">A worksheet in the GEN used in the Validation process.  The validation function in the GEN checks for omissions in worksheet fields needed for submission of data to GXD.  These omissions are then listed on the Validation Report, along with the worksheet or assay sheet on which they occur.</td><tr>
 <tr><th align=left valign=top>expand</th><td valign="top">An operation done on assay sheets to display rows containing experimental details.</td></tr>
 <tr><th align=left valign=top>field</th><td valign="top">An item of information such as a strain name, the Theiler stage, or the notes for an experiment. A required field is one in which you must enter data, while an optional field is one you may leave blank.  A collection of fields is called a <i>record</i>.</td></tr>
-<tr><th align=left valign=top>GXD</th><td valign="top"><A HREF="../aboutGXD.shtml">Gene Expression Database</a>. A community database that integrates different types of gene expression information from the mouse and provides a searchable index of published experiments on gene expression during embryonic development. GXD is part of the Mouse Genome Informatics (MGI) resources.</td></tr>
+<tr><th align=left valign=top>GXD</th><td valign="top"><A HREF="../aboutGXD.shtml">Gene Expression Database</a>. A community database that integrates different types of gene expression information from the mouse and provides a searchable index of published experiments on gene expression during embryonic development. GXD is part of the Mouse Genome Informatics (MGI) resource.</td></tr>
 <tr><th align=left valign=top>ID</th><td valign="top">The text in the first column of each worksheet is the identifier for that row. Each data record in the GEN must have an ID that is a unique name or number.</td></tr>
 <tr><th align=left valign=top>Main menu </th><td valign="top">Appears when you open GEN. Contains basic information and four command buttons for performing notebook functions: <b>Create New Assay Sheet, Create New Submission, Validate this Workbook,</b> and <b>Copy info to new Workbook.</b> </td></tr>
 <tr><th align=left valign=top>Manage window </th><td valign="top">A pop-up window that allows you to create or modify worksheet entries from an assay sheet without leaving that sheet. Accessed by clicking on a Manage button.</td></tr>
@@ -397,7 +397,7 @@ You can now open the notebook.
 
 <tr><th align=left valign=top>Hybridization</th><td valign="top">Use the drop-down menu to specify if the probe is antisense, double-stranded, or sense.</td></tr>
 
-<tr><th align=left valign=top>labeled With</th><td valign="top">Use the drop-down menu to specify the label used.</td></tr>
+<tr><th align=left valign=top>Labelled With</th><td valign="top">Use the drop-down menu to specify the label used.</td></tr>
 
 <tr><tr><th align=left valign=top>Label Coverage</th><td valign="top">Use the drop-down menu to specify where the label was incorporated into the probe.</td></tr>
 
@@ -531,7 +531,7 @@ You can now open the notebook.
 <table cellpadding=4 cellspacing=1 border=1>
 <tr><th align=left valign=top>Detection Method</th><td valign="top">Type the name of the primary antibody detection method.</td></tr>
 <tr><th align=left valign=top>Secondary Antibody</th><td valign="top">Type the name of the secondary antibody used. </td></tr>
-<tr><th align=left valign=top>labeled With</th><td valign="top">Use the drop-down menu to enter the label used on the secondary antibody. </td></tr>
+<tr><th align=left valign=top>Labelled With</th><td valign="top">Use the drop-down menu to enter the label used on the secondary antibody. </td></tr>
 <tr><th align=left valign=top>Notes</th><td valign="top">Type any additional information you want stored with this record. </td></tr>
 </table>
 </p><font size="-1"><a href="#toc">Back to Table of Contents</a></font>
@@ -592,7 +592,7 @@ You can now open the notebook.
 <tr><th align=left valign=top>Cycles</th><td valign="top">Type the number of cycles used in the PCR reaction. </td></tr>
 <tr><th align=left valign=top>MgCl<sub>2</sub></th><td valign="top">Type the concentration of MgCl<sub>2</sub> used in the PCR reaction. </td></tr>
 <tr><th align=left valign=top>dNTP</th><td valign="top">Type the concentration of deoxynucleotide triphosphates used in the PCR reaction.</td></tr>
-<tr><th align=left valign=top>labeled With</th><td valign="top">Use the drop-down menu to enter the label used for the reaction product, if applicable.</td></tr>
+<tr><th align=left valign=top>Labelled With</th><td valign="top">Use the drop-down menu to enter the label used for the reaction product, if applicable.</td></tr>
 <tr><th align=left valign=top>Label Coverage</th><td valign="top">Use the drop-down menu to specify where the label was incorporated into the reaction product.</td></tr>
 <tr><th align=left valign=top>Notes</th><td valign="top">Type any additional information you want stored with this record. </td></tr>
 </table>
@@ -1388,7 +1388,7 @@ Instructions for various modifications appear below. <p><b>Note:</b>&nbsp; If yo
 
 
 
-<tr><td valign=top>I've double-labeled a specimen, but I can't figure out how to get both genes and probes into one assay sheet.<td valign="top">&nbsp;<td valign=top> The GEN is designed so that an assay describes the results obtained using one probe or antibody.  (The exception is the RT-PCR assay, which allows you to enter the results from more than one primer pair.)  To record the results from a double (or triple) labeling experiment, you'll need to fill out a separate assay sheet for each probe or antibody used.</tr>
+<tr><td valign=top>I've double-labelled a specimen, but I can't figure out how to get both genes and probes into one assay sheet.<td valign="top">&nbsp;<td valign=top> The GEN is designed so that an assay describes the results obtained using one probe or antibody.  (The exception is the RT-PCR assay, which allows you to enter the results from more than one primer pair.)  To record the results from a double (or triple) labeling experiment, you'll need to fill out a separate assay sheet for each probe or antibody used.</tr>
 
 
 
@@ -1476,7 +1476,7 @@ This  documentation is available on the Web at http://www.informatics.jax.org/mg
    <UL>
    <LI>Often the assay sheets open at the bottom of the page.  If this happens, scroll to the top of the page to start your entry.</LI>
   <LI>Click the Manage Genes button in the upper-left corner.  The Editing: Genes dialog box appears.</LI>
-  <LI>Type <b>Bone morphogenetic protein 4</b> in the box labeled Name.  Type <b>Bmp4</b> in the box labeled Symbol.  If there is any other information you want to add regarding the gene analyzed, put it in the Notes box.</LI>
+  <LI>Type <b>Bone morphogenetic protein 4</b> in the box labelled Name.  Type <b>Bmp4</b> in the box labelled Symbol.  If there is any other information you want to add regarding the gene analyzed, put it in the Notes box.</LI>
   <LI>Click <B>Save Changes</B> (otherwise the entry will be lost).  The data is entered into the Genes worksheet.  (You can view this directly by clicking on the Genes tab at the bottom of the assay sheet page.)</LI>
   <LI>Close the window or click the Cancel button.</LI>
   <LI>As you did when creating your assay sheet, click the white box to the right of Gene Name.  A drop-down list arrow appears.</LI>
@@ -1498,7 +1498,7 @@ This  documentation is available on the Web at http://www.informatics.jax.org/mg
   <UL>
    <LI>Click <b>Manage Probe Preps</b>.  The Editing: Probe Prep dialog box appears.</li>
    <LI>In the first box, type the name of the method you used to make your probe, such as <b>Nonradioactive</b>.  Each probe prep method name in the GEN must be unique.</li>
-   <LI>Use the drop-down menus to fill in the other boxes.  For this exercise, for Type, choose <b>RNA</b>; for Hybridization, choose <b>Antisense</b>; for Labeled with, choose <b>Digoxigenin</b>; and for Visualized with, choose <b>Alkaline phosphatase</b>.  For any of these values, if the option you want is not listed, you can type it into the box.</li>
+   <LI>Use the drop-down menus to fill in the other boxes.  For this exercise, for Type, choose <b>RNA</b>; for Hybridization, choose <b>Antisense</b>; for Labelled With, choose <b>Digoxigenin</b>; and for Visualized with, choose <b>Alkaline phosphatase</b>.  For any of these values, if the option you want is not listed, you can type it into the box.</li>
    <LI>As above, click <b>Save Changes</b>, close the dialog box, and select <b>Nonradioactive</b> from the drop-down menu of Probe Prep Methods on the assay sheet.  Tab out of the box for the remaining fields in the Prep Method section to be filled in automatically.</li>
    </ul>
 <br>
