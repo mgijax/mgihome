@@ -135,13 +135,12 @@ vector type, hybridizing loci, RFLPs, and references. See the <A HREF="<!--#incl
 <p>MGI contains orthology information for mouse, human and 15 other mammalian organisms. Most of the information for orthologies extracted from the published scientific literature. In general, these papers explicitly report orthology relationships and MGI reflects that published information. See the <i>Evidence</i> section under 
 <A HREF="<!--#include file='include/userdocs_url.html'-->homology_summary.shtml#fields">How do I interpret the results of my query?</a> in <i>Interpreting Mammalian Orthology Query Results</i> for the criteria used to establish orthology.
 </A>
-<P>An orthology record shows the symbol, organism, chromosome, cM position, cytogenetic band, and accession ID for each gene in the set of orthologies. In addition, links to
-other mammalian databases are provided where possible. MGI orthology records may link to GDB, BovMap, PiGBASE, RATMAP, RGD, SheepBase, ArkDB.</p>
+<P>An orthology record shows the symbol, organism, chromosome, cM position, cytogenetic band, and accession ID for each gene in the set of orthologies. In addition, when there are available links to other mammalian databases, these appear as well (e.g., Ark-DB, BovMap, Entrez, HGNC, Homologene, NCBI, PigBase, SheepBase, TreeFam, Uniprot, VEGA, VISTA).</p>
 
 <P> Every orthology assertion is supported by one or more references.  The display of an orthology reference includes the J number of the reference, a short format citation, gene symbol, and organism. See 
 <A HREF="<!--#include file='include/userdocs_url.html'-->homology_summary.shtml#contain">What's in a Mammalian Ortholology Query Results report?</A> for more detail.</p>
 
-<P>Orthology information is presented in three other formats: Oxford Grid, comparative map and Orthology Map View. An Oxford Grid display presents an overview of orthology between two organisms. Currently, this kind of comparison is supported for the following organisms:  mouse, human, cat, cattle, rat, pig, sheep, dog.</p>
+<P>Orthology information is presented in three other formats: Oxford Grid, comparative map and Orthology Map View. An Oxford Grid display presents an overview of orthology between two organisms. Currently, this kind of comparison is supported for the following organisms:  mouse, human, cat, cattle, rat, pig, sheep, dog, chimp.</p>
 
 <P>The comparative map display relies on the Linkage Map application to build a graphic display of a map of a mouse chromosome (or chromosomal region) which includes orthologies from the comparison organisms. See, for example, the comparative map for a 2 cM region around the mouse gene 
 <A HREF="<!--#include file='include/wi_url.html'-->searches/accession_report.cgi?id=MGI:87895">Chrng</A> showing human orthology.</p>
@@ -188,7 +187,7 @@ deletion mapping information, translocation breakpoint mapping, somatic cell hyb
 <h4><A NAME="RIdata"></A>Recombinant Inbred Strain Distribution Patterns Composite Data Set</h4>
 The RI Data portion of  MGI  mapping data records has been collected and organized into composite reports accessible using the Composite Recombinant Inbred Data Sets from MGI query form. The  information is displayed in tabular format with each column representing a strain and each row representing the distribution of alleles of a locus across these strains.
 
-<h4><A NAME="RCdata">Recombinant Congenic Strain Distribution Patterns Composite Data Set</h4>
+<h4><A NAME="RCdata"></a>Recombinant Congenic Strain Distribution Patterns Composite Data Set</h4>
 <p>Composite Recombinant Congenic Strain Distribution Patterns data can be retrieved using a new query form accessed in the "Maps and  Mapping Data" section of MGI.
 Information on four recombinant congenic  strain  sets  is currently available. Data include the progenitor strains for each  RCS set  and tables showing the allelic distribution for each genetic marker that has been typed in each of the recombinant  congenic
 strains.  Each  row  represents  the typing for a genetic marker and each column  represents  alleles  carried  by  a specific recombinant congenic strain of the RCS set. Format of the report is very similar to that of the Composite Recombinant Inbred Strains  distribution patterns.</p>
