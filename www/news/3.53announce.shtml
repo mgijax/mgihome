@@ -27,29 +27,30 @@
 </TABLE>
 <p>MGI is pleased to announce the release of Version 3.53 of the database.
 
-
-  <p>MGI now associates mutant cell line IDs with MGI markers. Any gene traps found for a given marker appear on the MGI Gene Detail page. For example, to find any gene traps associated with <i>adenosine kinase</i>, follow these steps:
+<ul>
+  <li>MGI's newest feature is the association of mutant cell line IDs with MGI markers.  You can now query to with the question, <i>Are there any gene traps associated with my gene?</i> To find, for example, the gene traps associated with <i>Adk</i>, follow these steps:
 <ol>
-  <li>Enter <i>Adk</i> in the Gene/Marker Symbol/Name field of the
-<A HREF="<!--#include file='include/java_url.html'-->WIFetch?page=markerQF">MGI Marker Query Form</a> and click <i>Search</i>.</li>
-  <li>Click <i>Adk</i> on the Genes and Markers Query Results -- Summary report. The Gene Detail report for <i>Adk</i> appears.
-<li>Scroll down to locate  Other Database Links where a list of mutant cell line identifiers appears. Click to access a given gene trap's report in the dbGSS division of Gen Bank. <br><b>Note:</b> If there are more than five links associated with a marker, five are listed followed by <i>All</i> (with a count in parentheses) which links to the   
+  <li>On the MGI <A HREF="<!--#include file='include/java_url.html'-->WIFetch?page=markerQF">Genes and Markers Query Form</a>, enter <i>Adk</i> in the Gene/Marker Symbol/Name field and click <i>Search</i>. The Genes and Markers Query Results -- Summary report appears.</li>
+  <li>Locate <i>Adk</i> and click it. The Gene Detail report for <i>Adk</i> appears.
+<li>Scroll to  <b>Other Database Links </b> and find the list of mutant cell line identifiers beside <b>Gene Traps</b>. Click to access a given gene trap's report in the dbGSS division of GenBank. <br><b>Note:</b> If there are more than five links associated with a marker, five are listed followed by <i>All</i> (with a count in parentheses),  linked to the   
 Gene Traps report. See 
 <a href="<!--#include file='include/userdocs_url.html'-->gene_traps_lite_help.shtml">
-Interpreting the Gene Traps Report</a> for additional details.
+Interpreting the Gene Traps Report</a> for details.</li>
 </ol>
-<p>You can also use the Search Tool to find these associations. Enter either the mutant cell line identifier (for example, <i> FHCRC-GT-S15-11C1</i>) or the gene symbol/name in the box (on the home page) and click <i>Search</i>.
+  
+<br>You can also use the Search Tool to find these associations. Enter either the mutant cell line identifier (for example, <i> FHCRC-GT-S15-11C1</i>) or the gene symbol/name in the box (on the home page) and click <i>Search</i>.</li><br>
 
-<p>For 3.53, the Gene Expression Database features a new link to the 
-to the <a href="(http://genex.hgu.mrc.ac.uk/Resources/GXDQuery1/SectionBrowser.html">EMAGE Anatomical Section Browser</a> from the <a href="http://www.informatics.jax.org/menus/expression_menu.shtml">GXD Query Form</a>. You can now  search Edinburgh Mouse Atlas sections for named anatomical 
-structures and as well as for EMAGE or GXD entries reporting on gene expression in selected anatomical structures. </p>
+<li>The Gene Expression Database has a new feature for 3.53: a link to the Edinburgh Mouse Atlas and Gene Expression EMAGE database section browser.   The EMAGE browser contains sections of embryos with labelled anatomical structures.  Clicking on a structure of interest in one of these sections highlights that term in the accompanying hierarchical anatomical term list.  Right (or double) clicking on that term lets you query either the Gene Expression Database (GXD) or EMAGE database for studies examining gene expression in that structure. Access to the EMAGE browser is from the  <a href="http://www.informatics.jax.org/menus/expression_menu.shtml">Gene Expression</a> menu page.</li>
+</ul>
+
+
+
+
+
 
 <p>Please send questions and comments to  <a href="../support/tjl_inbox.shtml">User Support</a>.
 </p>
 <pre>
-
-
-
 
 
 </pre>
