@@ -3,7 +3,7 @@
 <TITLE><!--#include file='include/mgiversion.html'--> MGI Release 3.53 Announcement - April 18, 2007</TITLE>
 <!--#include file="include/stylesheet.html"-->
 <META NAME ="keywords" CONTENT="Gene Expression Database, GXD, in situ reporter, knock-in, mutated specimen, Gene Expression Literature Index, genetics, MGI, Mouse Genome Informatics, genes, anatomical structures, Mouse Anatomical Dictionary, Mouse Anatomical Dictionary Browser, mice, SQL, querying,  database queries, query forms">
-<META NAME="description" CONTENT="This page details the changes in the to MGI 2.98 release at The Jackson Laboratory.">
+<META NAME="description" CONTENT="This page details the changes in the to MGI 3.53 release at The Jackson Laboratory.">
 <!--Last updated on 8/19/04-->
 </HEAD>
 <!--#include file="include/bodyStart.html"-->
@@ -28,7 +28,7 @@
 <p>MGI is pleased to announce the release of Version 3.53 of the database.
 
 <ul>
-  <li>MGI's newest feature is the association of mutant cell line IDs with MGI markers.  You can now query to with the question, <i>Are there any gene traps associated with my gene?</i> To find, for example, the gene traps associated with <i>Adk</i>, follow these steps:
+  <li>MGI's newest feature is the association of mutant cell line IDs with MGI markers.  You can now query with the question, <i>Are there any gene traps associated with my gene?</i> To find, for example, the gene traps associated with <i>Adk</i>, follow these steps:
 <ol>
   <li>On the MGI <A HREF="<!--#include file='include/java_url.html'-->WIFetch?page=markerQF">Genes and Markers Query Form</a>, enter <i>Adk</i> in the Gene/Marker Symbol/Name field and click <i>Search</i>. The Genes and Markers Query Results -- Summary report appears.</li>
   <li>Locate <i>Adk</i> and click it. The Gene Detail report for <i>Adk</i> appears.
