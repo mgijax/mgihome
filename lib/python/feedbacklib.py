@@ -23,7 +23,8 @@ MARKER_TYPE = 2			# list all needed MGI Type keys here
 ASSAY_TYPE = 8
 ALLELE_TYPE = 11
 
-RECIPIENT = 'arsystem@jax.org'	# Remedy's e-mail account
+# Email changed (circumventing rememdy) in 3.54 - see TR8365
+RECIPIENT = 'mgi-help@informatics.jax.org' 
 
 MAIL_HEADER = '''From: %s
 To: %s
