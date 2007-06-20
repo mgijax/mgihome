@@ -29,7 +29,7 @@ style21 = feedbacklib.style21		# alias for formatting
 
 ###--- Globals ---###
 
-RECIPIENT = 'arsystem@jax.org'		# recipient of Remedy e-mail message
+RECIPIENT = 'mgi-help@informatics.jax.org'
 REPLY_TO = 'ps@informatics.jax.org'	# who to reply to?  (legacy)
 BLANK = ''				# no default value for field
 

@@ -32,9 +32,9 @@ REQUIRED_FIELDS = [ 'lastname',
         'ph',
         ]
 
-#RECIPIENT = 'mgi-help@informatics.jax.org'
+RECIPIENT = 'mgi-help@informatics.jax.org'
 #RECIPIENT = 'ps@jax.org'
-RECIPIENT = 'arsystem@jax.org'
+#RECIPIENT = 'arsystem@jax.org'
 
 
 # developer override for mailtarget 

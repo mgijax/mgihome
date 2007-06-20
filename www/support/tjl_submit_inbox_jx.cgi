@@ -39,7 +39,7 @@ REQUIRED_FIELDS = [ 'lastname',
 	'emailaddr'
 	]
 
-RECIPIENT = 'arsystem@jax.org'
+RECIPIENT = 'mgi-help@informatics.jax.org'
 
 # developer override for mailtarget 
 dev_email = config.lookup ('CGI_MAILTARGET')
