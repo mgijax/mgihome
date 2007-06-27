@@ -82,6 +82,8 @@ fields = [
 		'ph', '536870924', style20),
 	('Fax #', 'fx', 0, BLANK,
 		'fx', '536870925', style20),
+	('Purchase TJL Mice?', 'mice', 0, "n/a",
+		'comments', '536870938', style20),
 	('Computer', 'damncmptrs', 0, BLANK,
 		'Computers', '536870930', style20),
 	('Other Computer', 'spec', 0, BLANK,		# Web-only
