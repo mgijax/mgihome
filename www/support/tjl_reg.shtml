@@ -384,9 +384,6 @@ automatically receive news and announcments.
 <DD>Fax #:           <INPUT TYPE="text" NAME="fx" SIZE=20>
 <P>
 </pre>
-<DD><strong>Do you purchase mice from The Jackson Laboratory? </strong>
-<INPUT TYPE=radio name=mice value= yes> Yes
-<INPUT TYPE=radio name=mice value= no> No
 <p>
 <DT>Computer Information:
 <DT>Please check the type(s) of computer you currently use.
@@ -394,6 +391,7 @@ automatically receive news and announcments.
 <SELECT SEVERAL NAME="damncmptrs" MULTIPLE SIZE=2>
 <option value="mac"> Macintosh
 <option value="pc">PC
+<option value="unix">Unix
 </SELECT SEVERAL>
 <p> 
 If your computer is not in the above list, please specify: <INPUT TYPE="text" NAME="spec" SIZE=40> 
@@ -401,13 +399,16 @@ If your computer is not in the above list, please specify: <INPUT TYPE="text" NA
 <DT>Operating System:
 <DT>Please select the operating system version(s) you curently use:<P>
 <SELECT multiple NAME="opsys" MULTIPLE SIZE=3>
-<option value="MacOS 8.0"> MacOS 8.0 or above
+<option value="MacOS 8.0"> MacOS 8.0 or below
+<option value="MacOSX"> MacOSX
 <option value="Windows NT"> Windows NT
 <option value="Windows NT4.#"> Windows NT 4.#
 <option value="Windows 2000"> Windows 2000
-<option value="Windows Me"> Windows Me
+<option value="WindowsXP"> Windows XP
+<option value="Windows Vista"> Windows Vista
+<!--<option value="Windows Me"> Windows Me
 <option value="Windows 98"> Windows 98
-<option value="Windows 95"> Windows 95
+<option value="Windows 95"> Windows 95-->
 <option value="Solaris"> Solaris
 <option value="SunOS"> SunOS
 <option value="ounix"> Other UNIX
@@ -425,7 +426,9 @@ World Wide Web Browsers currently used:
 <p>
 <SELECT SEVERAL NAME="browser" MULTIPLE SIZE=4>
          <option value="net"> Netscape  
-         <option value="ie"> Microsoft Internet Explorer 
+         <option value="ie"> Internet Explorer 
+         <option value="saf"> Safari 
+         <option value="fox"> Firefox
          <option value="ope"> Opera
          <option value="icab"> iCab
          <option value="oth"> Other 
