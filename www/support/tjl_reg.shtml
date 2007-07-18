@@ -31,6 +31,7 @@ Revision 1.1 1/13/1999.-->
  </TR>
 </TABLE>
 
+
 Please register.  The information provided helps
 us to better serve our user community and you will
 automatically receive news and announcments.
@@ -41,7 +42,7 @@ automatically receive news and announcments.
 <pre>
 <DD>First name:      <INPUT TYPE="text" NAME="firstname" SIZE=30>
 <DD>Last name:       <INPUT TYPE="text" NAME="lastname" SIZE=30>
-<DD>Middle initial:  <INPUT TYPE="text" NAME="mi" SIZE=3>
+<!--<DD>Middle initial:  <INPUT TYPE="text" NAME="mi" SIZE=3>-->
 <p>
 <DD>E-mail address:  <INPUT TYPE="text" NAME="emailaddr" SIZE=30>
 
@@ -61,14 +62,14 @@ automatically receive news and announcments.
 <DD>                 If other (Please specify): <INPUT TYPE="text" NAME="otherpos" SIZE=30>
 <p>
 <DD>Institution:     <INPUT TYPE="text" NAME="tute" SIZE=40>
-<DD>                  Type: <INPUT TYPE="radio" checked name="intype" value=rsrch> Research/Academic <INPUT TYPE="radio" name="intype" value=govt> Gov't <INPUT TYPE="radio" name="intype" value=mil> Military <INPUT TYPE="radio" name="intype" value=comm> Commercial 
+<!--<DD>                  Type: <INPUT TYPE="radio" checked name="intype" value=rsrch> Research/Academic <INPUT TYPE="radio" name="intype" value=govt> Gov't <INPUT TYPE="radio" name="intype" value=mil> Military <INPUT TYPE="radio" name="intype" value=comm> Commercial -->
 <br>
 <DD>Department:     <INPUT TYPE="text" NAME="Dept" SIZE=40>
 <DD>Street:          <INPUT TYPE="text" NAME="st" SIZE=40>
 <DD>Street2:          <INPUT TYPE="text" NAME="st2" SIZE=40>
 <DD>City:            <INPUT TYPE="text" NAME="cty" SIZE=40>
 <DD>State/Province:   <SELECT name="state">
-<option value="">  (clear)
+<option value=>  
 <option value=AL>  Alabama
 <option value=AB> Alberta
 <option value=AK>  Alaska
@@ -132,12 +133,11 @@ automatically receive news and announcments.
 <option value=WI>  Wisconsin
 <option value=WY>  Wyoming
 <option value=YU> Yukon
-<option value=""> ""
 </SELECT>
 
 <DD>Postal Code:     <INPUT TYPE="text" NAME="zip" SIZE=20>
 <DD>Country:         <SELECT NAME="ctry">
-<option value=US> United States
+<option value=> (clear)
 <option value=AF> Afghanistan
 <option value=AL> Albania
 <option value=DZ> Algeria
@@ -362,6 +362,7 @@ automatically receive news and announcments.
 <option value=UA> Ukraine
 <option value=AE> United Arab Emirates
 <option value=UK> United Kingdom (Great Britain)
+<option value=US> United States
 <option value=UY> Uruguay
 <option value=UM> US Minor Outlying Islands
 <option value=UZ> Uzbekistan
@@ -381,17 +382,17 @@ automatically receive news and announcments.
 </SELECT>
 
 <DD>Phone:           <INPUT TYPE="text" NAME="ph" SIZE=20>
-<DD>Fax #:           <INPUT TYPE="text" NAME="fx" SIZE=20>
+<!--<DD>Fax #:           <INPUT TYPE="text" NAME="fx" SIZE=20>-->
 <P>
 </pre>
-<DD><strong>Do you purchase mice from The Jackson Laboratory? </strong>
+<!--<DD><strong>Do you purchase mice from The Jackson Laboratory? </strong>
 <INPUT TYPE=radio name=mice value= yes> Yes
 <INPUT TYPE=radio name=mice value= no> No
-<p>
+<p>-->
 <DT>Computer Information:
 <DT>Please check the type(s) of computer you currently use.
 <p>
-<SELECT SEVERAL NAME="damncmptrs" MULTIPLE SIZE=2>
+<SELECT SEVERAL NAME="damncmptrs" MULTIPLE SIZE=3>
 <option value="mac"> Macintosh
 <option value="pc">PC
 <option value="unix">Unix
@@ -401,11 +402,11 @@ If your computer is not in the above list, please specify: <INPUT TYPE="text" NA
 <p>
 <DT>Operating System:
 <DT>Please select the operating system version(s) you curently use:<P>
-<SELECT multiple NAME="opsys" MULTIPLE SIZE=3>
-<option value="MacOS 8.0"> MacOS 8.0 or below
+<SELECT multiple NAME="opsys" MULTIPLE SIZE=6>
+<!--<option value="MacOS 8.0"> MacOS 8.0 or below-->
 <option value="MacOSX"> MacOSX
 <option value="Windows NT"> Windows NT
-<option value="Windows NT4.#"> Windows NT 4.#
+<!--<option value="Windows NT4.#"> Windows NT 4.#-->
 <option value="Windows 2000"> Windows 2000
 <option value="WindowsXP"> Windows XP
 <option value="Windows Vista"> Windows Vista
@@ -418,13 +419,13 @@ If your computer is not in the above list, please specify: <INPUT TYPE="text" NA
 <option value="linix"> Linux
 
 </SELECT multiple>
-<p>
+<!--<p>
 Internet Connection:
 <pre>
 <INPUT TYPE="radio" checked NAME="net" VALUE="Direct"> Direct  <INPUT TYPE="radio" NAME="net" VALUE="Modem"> Modem   
 <INPUT TYPE="radio" NAME="net" VALUE="None"> None    <INPUT TYPE="radio" NAME="net" VALUE="Not Sure"> Not Sure
 
-</pre>
+</pre>-->
 World Wide Web Browsers currently used:
 <p>
 <SELECT SEVERAL NAME="browser" MULTIPLE SIZE=4>
