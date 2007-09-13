@@ -9,7 +9,11 @@ import os
 import string
 import cgi
 
-import config			# MGI-written libraries
+# import config			# MGI-written libraries
+
+import Configuration
+config = Configuration.get_Configuration ('Configuration', 1)
+
 import homelib
 import header
 import mgi_utils
@@ -614,16 +618,13 @@ class UserInput:
 
 		# check to see if we have a developer override for email
 
-		if config.lookup ('CGI_MAILTARGET') is None:
-			destination = RECIPIENT
-		else:
-			destination = config.lookup ('CGI_MAILTARGET')
-
+		if config.has_key('CGI_MAILTARGET'):
+                	RECIPIENT = config['CGI_MAILTARGET']
 		# send the mail
 
-		fd = os.popen ('%s -t' % config.lookup ('SENDMAIL'), 'w')
+		fd = os.popen ('%s -t' % config['SENDMAIL'], 'w')
 		fd.write (MAIL_HEADER % (self.email.getValue(),
-					destination,
+					RECIPIENT,
 					self.subject.getValue()))
 		fd.write (REMEDY_MESSAGE % self.getEmailString())
 		fd.close()
@@ -959,7 +960,7 @@ class AssayUserInput (SimpleTextUserInput):
 		    be reviewed and appropriate action taken.  For comments or 
 		    suggestions regarding the content of the Gene Expression 
 		    Database, contact <a href="%ssupport/tjl_inbox.shtml">User Support</a>.<BR>'''\
-			% config.lookup ('MGIHOME_URL')
+			% config['MGIHOME_URL']
 		self.subject = AssaySubjectField ('subject', 'Subject',
 			REQUIRED, width=45)
 		self.subject.setByAcc (parms)
@@ -1004,7 +1005,7 @@ class AlleleUserInput (SimpleTextUserInput):
 			Mutant Submission Form</a>.
 			For all other comments and suggestions, contact 
 			<a href="%ssupport/tjl_inbox.shtml">User
-			Support</a>.<BR>''' % config.lookup ('MGIHOME_URL')
+			Support</a>.<BR>''' % config['MGIHOME_URL']
 		self.subject = AlleleSubjectField ('subject', 'Subject',
 			REQUIRED, width=45)
 		self.subject.setByAcc (parms)
@@ -1048,7 +1049,7 @@ class MarkerUserInput (SimpleTextUserInput):
 			Mutant Submission Form</a>.
 			For all other comments and suggestions, contact 
 			<a href="%ssupport/tjl_inbox.shtml">User
-			Support</a>.<BR>''' % config.lookup ('MGIHOME_URL')
+			Support</a>.<BR>''' % config['MGIHOME_URL']
 		self.subject = MarkerSubjectField ('subject', 'Subject',
 			REQUIRED, width=45)
 		self.subject.setByAcc (parms)
@@ -1099,23 +1100,3 @@ def getInputObj (
 			else:
 				inp = SimpleTextUserInput (parms)
 	return inp
-#
-# Warranty Disclaimer and Copyright Notice
-# 
-#  THE JACKSON LABORATORY MAKES NO REPRESENTATION ABOUT THE SUITABILITY OR 
-#  ACCURACY OF THIS SOFTWARE OR DATA FOR ANY PURPOSE, AND MAKES NO WARRANTIES, 
-#  EITHER EXPRESS OR IMPLIED, INCLUDING MERCHANTABILITY AND FITNESS FOR A 
-#  PARTICULAR PURPOSE OR THAT THE USE OF THIS SOFTWARE OR DATA WILL NOT 
-#  INFRINGE ANY THIRD PARTY PATENTS, COPYRIGHTS, TRADEMARKS, OR OTHER RIGHTS.  
-#  THE SOFTWARE AND DATA ARE PROVIDED "AS IS".
-# 
-#  This software and data are provided to enhance knowledge and encourage 
-#  progress in the scientific community and are to be used only for research 
-#  and educational purposes.  Any reproduction or use for commercial purpose 
-#  is prohibited without the prior express written permission of the Jackson 
-#  Laboratory.
-# 
-# Copyright © 1996, 1999, 2002 by The Jackson Laboratory
-# All Rights Reserved
-#
-

@@ -17,7 +17,10 @@ import types
 import os
 import cgi
 import tempfile
-import config
+
+import Configuration
+config = Configuration.get_Configuration ('Configuration', 1)
+
 import homelib
 import header
 import formMailer
@@ -100,8 +103,9 @@ def setup():
     # Throws: SystemExit if an error is found and we have sent an error
     #	message to the user.
 
-    KOMP_DIR = config.lookup ('KOMP_NOMINATION_DIR')
-    if KOMP_DIR is None:
+    if config.has_key('KOMP_NOMIATION_DIR'):
+    	KOMP_DIR = config['KOMP_NOMINATION_DIR']
+    else:
 	bailout ('Configuration error in mgihome:' + \
 		'KOMP_NOMINATION_DIR is undefined')
 

@@ -14,7 +14,9 @@ import string
 import types
 import os
 
-import config
+import Configuration
+config = Configuration.get_Configuration ('Configuration', 1)
+
 import table		# for unescape() function only
 import homelib
 import header
@@ -28,9 +30,8 @@ SimpleVocab.set_sqlFunction (homelib.sql)
 submit_addr = 'survey@informatics.jax.org'	# Survey E-mail
 
 # developer override for mailtarget
-dev_email = config.lookup ('CGI_MAILTARGET')
-if dev_email is not None:
-	submit_addr = dev_email
+if config.has_key('CGI_MAILTARGET'):
+        submit_addr = config['CGI_MAILTARGET']
 
 # maps from actual fieldname to its label, for error reporting
 required_fields = []
@@ -161,7 +162,7 @@ class myCGI (CGI.CGI):
 		ip = []
 		ip.append('IP addr\n'+os.environ['REMOTE_ADDR'])
 		message = message + ip
-		fd = os.popen('%s -t' % config.lookup('SENDMAIL'), 'w')
+		fd = os.popen('%s -t' % config['SENDMAIL'], 'w')
 		fd.write(mailheader % (submit_addr,
 			'Survey Submission'))
 		fd.write(table.unescape(string.join (message, '\n')))

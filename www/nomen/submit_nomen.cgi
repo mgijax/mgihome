@@ -14,7 +14,9 @@
 import sys
 if '.' not in sys.path:
 	sys.path.insert(0, '.')
-import config
+
+import Configuration
+config = Configuration.get_Configuration ('Configuration', 1)
 import homelib
 
 import sys
@@ -40,9 +42,8 @@ def errorStop (message):
 nomen_addr = 'nomen@informatics.jax.org'  # MGD Nomen Coordinator Email Account
 
 # developer override for mailtarget 
-dev_email = config.lookup ('CGI_MAILTARGET')
-if dev_email is not None:
-	nomen_addr = dev_email
+if config.has_key('CGI_MAILTARGET'):
+	nomen_addr = config['CGI_MAILTARGET']
 
 subject = 'Nomenclature Request'
 
@@ -266,7 +267,7 @@ print "</BODY></HTML>"
 
 mailheader = 'From: ' + submitter_addr + NL + 'To: ' + nomen_addr + NL 
 mailheader = mailheader + 'Subject: ' + subject + NL + NL
-fd = os.popen('%s -t' % config.lookup('SENDMAIL'), 'w')
+fd = os.popen('%s -t' % config['SENDMAIL'], 'w')
 fd.write( mailheader + message )
 fd.close()
 

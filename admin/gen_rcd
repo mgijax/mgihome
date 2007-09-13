@@ -3,10 +3,17 @@
 import sys
 if '.' not in sys.path:
 	sys.path.insert (0, '.')
-import config
+
+MGI_LIBS = '/usr/local/mgi/live/lib/python'
+if MGI_LIBS not in sys.path:
+	sys.path.insert (0, MGI_LIBS)
+
+
+
+#import config
 import webshare_util
 
+import Configuration
+config = Configuration.get_Configuration ('Configuration', 1)
 
-
-
-webshare_util.saveWebshare("../webshare.rcd", config.lookup('WEBSHARE_URL'))
+webshare_util.saveWebshare("../webshare.rcd", config['WEBSHARE_URL'])

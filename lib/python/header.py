@@ -6,8 +6,16 @@
 import sys
 if '.' not in sys.path:
         sys.path.insert(0, '.')
-import config 
+
+MGI_LIBS = '/usr/local/mgi/live/lib/python'
+if MGI_LIBS not in sys.path:
+        sys.path.insert (0, MGI_LIBS)
+
+# import config 
 import os
+
+import Configuration
+config = Configuration.get_Configuration ('Configuration', 1)
 
 import string
 import webshare_lib
@@ -24,7 +32,7 @@ def bodyStart ():
 	# Effects: nothing
 	# Throws: nothing
 
-	fp = open (os.path.join (config.lookup('MGIHOME_PATH'),
+	fp = open (os.path.join (config['MGIHOME_PATH'],
 		'www/include/bodyStart.html'), 'r')
 	lines = fp.readlines()
 	fp.close()
@@ -124,7 +132,7 @@ def headerBar (
 	if do_logo:
 		left_column = ('<A HREF="%s" BORDER=0>' + \
 			webshare_lib.webshareLookup('mgi_logo')+'</A>') % \
-			config.lookup('WI_URL')
+			config['WI_URL']
 	else:
 		left_column = helpSection (helpUrl)
 

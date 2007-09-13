@@ -9,7 +9,9 @@ if '.' not in sys.path:
 
 import string
 
-import config
+import Configuration
+config = Configuration.get_Configuration ('Configuration', 1)
+
 import feedbacklib
 import homelib
 import header

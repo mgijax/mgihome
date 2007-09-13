@@ -1,10 +1,19 @@
-import config
+MGI_LIBS = '/usr/local/mgi/live/lib/python'
+import sys
+if MGI_LIBS not in sys.path:
+        sys.path.insert (0, MGI_LIBS)
+
+#import config
+
+import Configuration
+config = Configuration.get_Configuration ('Configuration', 1)
+
 import webshare
 import os
 
 try:
 	COMPONENTS = webshare.SharedComponents(os.path.join
-(config.lookup('MGIHOME_PATH'),'webshare.rcd'))
+(config['MGIHOME_PATH'],'webshare.rcd'))
 except webshare.error, message:
 	sys.stderr.write ('Error in mgihome/lib/python/webshare_lib.py:%s' % message)
 	COMPONENTS = None

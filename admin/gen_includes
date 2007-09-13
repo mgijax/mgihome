@@ -1,8 +1,20 @@
 #!./python
+import sys
+if '.' not in sys.path:
+	sys.path.insert (0, '.')
 
-import config
+MGI_LIBS = '/usr/local/mgi/live/lib/python'
+if MGI_LIBS not in sys.path:
+	sys.path.insert (0, MGI_LIBS)
+
+#import config
+
+import Configuration
+config = Configuration.get_Configuration ('Configuration', 1)
+
 import homelib
 import webshare_lib
+
 
 def listToFile (str_list, filename):
     print "writing %s" % filename
@@ -36,43 +48,43 @@ def stringToFile (s, filename):
 def main ():
     listToFile (homelib.banner(), '../www/include/banner.html')
     listToFile (homelib.footer(), '../www/include/footer.html')
-    stringToFile (config.lookup ('WI_URL'), '../www/include/wi_url.html')
-    stringToFile ('"%s";' % config.lookup ('WI_URL'), '../www/include/wi_url2.html')
-    stringToFile (config.lookup ('FTP_URL'), '../www/include/ftp_url.html')
+    stringToFile (config['WI_URL'], '../www/include/wi_url.html')
+    stringToFile ('"%s";' % config['WI_URL'], '../www/include/wi_url2.html')
+    stringToFile (config['FTP_URL'], '../www/include/ftp_url.html')
     #  This version of the ftp_url file is being generated to support a problem
     #  found in the implementation of TR7388.  The newline being written to
     #  the file after the URL was not being handled well via firefox.
     #  To minimize testing requirements Jill Lewis jlewis@informatics.jax.org
     #  authorized the generation of a second ftp_url html file.
-    stringToFileNoNL (config.lookup ('FTP_URL'), '../www/include/ftp_url2.html')
-    stringToFile (config.lookup ('MGIHOME_URL'), \
+    stringToFileNoNL (config['FTP_URL'], '../www/include/ftp_url2.html')
+    stringToFile (config['MGIHOME_URL'], \
         '../www/include/mgihome_url.html')
-    stringToFile (config.lookup ('GB_URL'), '../www/include/gb_url.html')
-    stringToFile (config.lookup ('LOCUSLINK_URL'), \
+    stringToFile (config['GB_URL'], '../www/include/gb_url.html')
+    stringToFile (config['LOCUSLINK_URL'], \
         '../www/include/locuslink_url.html')
-    stringToFile (config.lookup ('RGD_URL'), \
+    stringToFile (config['RGD_URL'], \
         '../www/include/rgd_url.html')
-    stringToFile (config.lookup ('ENTREZ_URL'), \
+    stringToFile (config['ENTREZ_URL'], \
         '../www/include/entrez_url.html')
-    stringToFile (config.lookup ('GLOSSARY_URL'), \
+    stringToFile (config['GLOSSARY_URL'], \
         '../www/include/glossary_url.html')
-    stringToFile (config.lookup ('USERDOCS_URL'), \
+    stringToFile (config['USERDOCS_URL'], \
         '../www/include/userdocs_url.html')
-    stringToFile (config.lookup ('SCHEMA'),\
+    stringToFile (config['SCHEMA'],\
         '../www/include/schema_url.html')
-    stringToFile (config.lookup ('MGI_VER'),\
+    stringToFile (config['MGI_VER'],\
         '../www/include/mgiversion.html')
-    stringToFile (config.lookup ('JAVAWI_URL'), \
+    stringToFile (config['JAVAWI_URL'], \
         '../www/include/java_url.html')
-    stringToFile (config.lookup ('MOUSEBLAST_URL'), \
+    stringToFile (config['MOUSEBLAST_URL'], \
         '../www/include/mouseblast_url.html')
-    stringToFile (config.lookup ('WKSILVERS_URL'), \
+    stringToFile (config['WKSILVERS_URL'], \
             '../www/include/wksilvers_url.html')        
-    stringToFile (config.lookup ('COOKBOOK_URL'), \
+    stringToFile (config['COOKBOOK_URL'], \
             '../www/include/cookbook_url.html')        
-    stringToFile (config.lookup ('MORSEBOOK_URL'), \
+    stringToFile (config['MORSEBOOK_URL'], \
             '../www/include/morsebook_url.html')        
-    stringToFile (config.lookup ('SILVER_URL'), \
+    stringToFile (config['SILVER_URL'], \
             '../www/include/silverbook_url.html')        
     stringToFile (webshare_lib.webshareLookup('mgi_logo'), \
         '../www/include/mgi_logo.html')
@@ -89,40 +101,21 @@ def main ():
 
     # new additions for KOMP
 
-    stringToFile (config.lookup ('GENBANK_HOME'),
+    stringToFile (config['GENBANK_HOME'],
 	'../www/include/genbank_home_url.html')
-    stringToFile (config.lookup ('ENSEMBL_HOME'),
+    stringToFile (config['ENSEMBL_HOME'],
 	'../www/include/ensembl_home_url.html')
-    stringToFile (config.lookup ('ENTREZGENE_HOME'),
+    stringToFile (config['ENTREZGENE_HOME'],
 	'../www/include/entrezgene_home_url.html')
-    stringToFile (config.lookup ('KOMP_HOME'),
+    stringToFile (config['KOMP_HOME'],
 	'../www/include/komp_home_url.html')
-    stringToFile (config.lookup ('KOMP_NIH'),
+    stringToFile (config['KOMP_NIH'],
 	'../www/include/komp_nih_url.html')
-    stringToFile (config.lookup ('IMSR_HOME'),
+    stringToFile (config['IMSR_HOME'],
 	'../www/include/imsr_home_url.html')
 
     return
 
 if __name__ == '__main__':
     main()
-#
-# Warranty Disclaimer and Copyright Notice
-# 
-#  THE JACKSON LABORATORY MAKES NO REPRESENTATION ABOUT THE SUITABILITY OR 
-#  ACCURACY OF THIS SOFTWARE OR DATA FOR ANY PURPOSE, AND MAKES NO WARRANTIES, 
-#  EITHER EXPRESS OR IMPLIED, INCLUDING MERCHANTABILITY AND FITNESS FOR A 
-#  PARTICULAR PURPOSE OR THAT THE USE OF THIS SOFTWARE OR DATA WILL NOT 
-#  INFRINGE ANY THIRD PARTY PATENTS, COPYRIGHTS, TRADEMARKS, OR OTHER RIGHTS.  
-#  THE SOFTWARE AND DATA ARE PROVIDED "AS IS".
-# 
-#  This software and data are provided to enhance knowledge and encourage 
-#  progress in the scientific community and are to be used only for research 
-#  and educational purposes.  Any reproduction or use for commercial purpose 
-#  is prohibited without the prior express written permission of the Jackson 
-#  Laboratory.
-# 
-# Copyright (c) 1996, 1999, 2002 by The Jackson Laboratory
-# All Rights Reserved
-#
 

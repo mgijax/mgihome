@@ -18,7 +18,12 @@ import cgi
 import tempfile
 
 
-import config
+# import config
+
+import Configuration
+
+config = Configuration.get_Configuration ('Configuration', 1)
+
 import table		# for unescape() function only
 import homelib
 import header
@@ -26,9 +31,10 @@ import errorlib
 import formMailer
 
 
-SURVEY_ROOT_DIRECTORY = config.lookup ('SURVEY_ROOT_DIRECTORY')
-if SURVEY_ROOT_DIRECTORY is None:
-    SURVEY_ROOT_DIRECTORY = '/home/dow/tmp/survey/'
+SURVEY_ROOT_DIRECTORY = '/home/dow/tmp/survey/'
+
+if config.has_key('SURVEY_ROOT_DIRECTORY'):
+	SURVEY_ROOT_DIRECTORY = config['SURVEY_ROOT_DIRECTORY']
 
 # maps from actual fieldname to its label, for error reporting
 required_fields = ['lastname','firstname','email']

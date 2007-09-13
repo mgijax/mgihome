@@ -11,7 +11,10 @@ import string
 import types
 import os
 import db
-import config
+
+import Configuration
+config = Configuration.get_Configuration ('Configuration', 1)
+
 import table		# for unescape() function only
 import homelib
 import CGI
@@ -21,9 +24,8 @@ import geninclude
 submit_addr = 'gen@informatics.jax.org'	# GEN submissions E-mail
 
 # developer override for mailtarget
-dev_email = config.lookup ('GEN_CGI_MAILTARGET')
-if dev_email is not None:
-	submit_addr = dev_email
+if config.has_key('GEN_CGI_MAILTARGET'):
+	submit_addr = config['GEN_CGI_MAILTARGET']
 
 # maps from actual fieldname to its label, for error reporting
 required_fields = [ 'lastname', 'firstname', 'email' ]
@@ -98,7 +100,7 @@ class myCGI (CGI.CGI):
 			if len(section) > 3:
 				message = message + section
 
-		fd = os.popen('%s -t' % config.lookup('SENDMAIL'), 'w')
+		fd = os.popen('%s -t' % config['SENDMAIL'], 'w')
 		fd.write(mailheader % (parms['email'], submit_addr,
 			'GEN Registration'))
 		fd.write(table.unescape(string.join (message, '\n')))

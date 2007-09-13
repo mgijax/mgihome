@@ -102,6 +102,13 @@ if [ ! -h bin/python ]; then
 fi
 
 # make A symbolic link to the .../wi/www/GXD/GENAD directory
+cd www
+if [ -h Configuration ]; then
+	echo "Making "Configuration" sym link in `pwd`"
+		rm Configuration
+fi
+ln -s ../Configuration Configuration
+cd ..
 
 cd www/GXD/GEN
 if [ -h GENAD ]; then

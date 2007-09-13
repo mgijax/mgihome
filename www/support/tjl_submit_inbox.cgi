@@ -17,8 +17,9 @@ revised 1/14/1999
 import sys
 if '.' not in sys.path:
 	sys.path.insert(0, '.')
-import config
-import homelib
+
+import Configuration
+config = Configuration.get_Configuration ('Configuration', 1)
 
 import cgi
 import os
@@ -40,11 +41,9 @@ REQUIRED_FIELDS = [ 'lastname',
 	]
 
 RECIPIENT = 'mgi-help@informatics.jax.org'
-
 # developer override for mailtarget 
-dev_email = config.lookup ('CGI_MAILTARGET')
-if dev_email is not None:
-	RECIPIENT = dev_email
+if config.has_key('CGI_MAILTARGET'):
+	RECIPIENT = config['CGI_MAILTARGET']
 
 def hd():
 	print """<HTML>
@@ -53,6 +52,7 @@ def hd():
 	<BODY BGCOLOR=#FFFFFF>"""
 
 	print header.bodyStart()
+
 	print header.headerBar ('User Support <I>Express</I> Mail Results')
 	return
 
@@ -155,7 +155,7 @@ Your message has been received and is being forwarded to our
 
 		mail_header = 'Reply-to: ps@informatics.jax.org' + NL \
 			+ 'Subject: Express Mail' + NL
-		fd = os.popen('%s -t %s' % (config.lookup ('SENDMAIL'), \
+		fd = os.popen('%s -t %s' % (config['SENDMAIL'], \
 			RECIPIENT), 'w')
 		fd.write( mail_header + msg + NL + '.' + NL )
 		fd.close()

@@ -11,7 +11,9 @@ if '.' not in sys.path:
 import os
 import string
 
-import config                           # MGI-written Python libraries
+import Configuration
+config = Configuration.get_Configuration ('Configuration', 1)
+
 import homelib
 import header
 import formMailer
@@ -114,9 +116,9 @@ class strainMailer (formMailer.formMailer):
 # in the configuration file for testing.
 curator_addr = 'strains@informatics.jax.org'
 
-dev_email = config.lookup ('CGI_MAILTARGET')
-if dev_email is not None:
-        curator_addr = dev_email
+if config.has_key('CGI_MAILTARGET'):
+        curator_addr = config['CGI_MAILTARGET']
+ 
 
 # construct the strainMailer object, and let it run...
 strainMailerCGI = strainMailer ('Strain',

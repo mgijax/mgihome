@@ -13,7 +13,11 @@ import string
 import types
 import os
 
-import config
+# import config
+import Configuration
+
+config = Configuration.get_Configuration ('Configuration', 1)
+
 import feedbacklib	# used for style20() and style21() functions
 import homelib
 import CGI
@@ -224,15 +228,13 @@ def sendRemedyMail (remedy_dict):
 
 	# check to see if we have a developer override for email
 
-	if config.lookup ('CGI_MAILTARGET') is None:
-		destination = RECIPIENT
-	else:
-		destination = config.lookup ('CGI_MAILTARGET')
+	if config.has_key('CGI_MAILTARGET'):
+       		RECIPIENT = config['CGI_MAILTARGET']
 
 	# send the mail
 
 	fd = os.popen ('%s -t %s' % \
-		(config.lookup ('SENDMAIL'), destination), 'w')
+		(config['SENDMAIL'], RECIPIENT), 'w')
 	fd.write (MAIL_HEADER % REPLY_TO)
 	fd.write (string.join (lines, '\n') + '\n')
 	fd.close()
