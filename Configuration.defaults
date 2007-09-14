@@ -10,10 +10,6 @@
 #MGIHOME_PATH    /home/djd/work/mgihome-trunk/
 MGIHOME_PATH    /usr/local/mgi/live/mgihome/
 
-# Full URL to this MGI Home installation
-#MGIHOME_URL     http://rohan.informatics.jax.org/~djd/mgihome-trunk/
-MGIHOME_URL     http://www.informatics.jax.org/mgihome/
-
 # Version - Normally used at the browser page title
 #MGI_VER        Diana's MGI 3.51
 MGI_VER         MGI 3.51
@@ -27,32 +23,11 @@ MGI_VER         MGI 3.51
 #- URLs & Paths -#
 #----------------#
 
-# full URL to the userdocs
-#USERDOCS_URL      http://rohan.informatics.jax.org/~djd/userdocs-trunk/
-USERDOCS_URL      http://www.informatics.jax.org/userdocs/
-
-# full URL to the associated MGI Web Interface installation
-WI_URL      http://www.informatics.jax.org/
-
 # full path to associated WI installation (to help find toolbar include files)
 WI_PATH         /usr/local/mgi/live/wi/
 
-# full URL to the servlets in the Java side of the MGI WI
-JAVAWI_URL  http://www.informatics.jax.org/javawi2/servlet/
-
-# full URL to the associated MouseBLAST installation
-MOUSEBLAST_URL  http://mouseblast.informatics.jax.org/
-
 # colon-delimited list of directories in which to find Python libraries
 LIBDIRS     /usr/local/mgi/live/lib/python/
-
-#-------------------------#
-#- Database Connectivity -#
-#-------------------------#
-DBSERVER    PUB_MGI
-DATABASE    pub_1
-DBUSER      mgd_public
-DBPASSWORD  mgdpub
 
 #-------------------#
 #- Email Addresses -#
@@ -74,12 +49,6 @@ GEN_CGI_MAILTARGET    gen@informatics.jax.org
 #-----------------#
 #- Install Setup -#
 #-----------------#
-
-# path to the unix permissions group to use for web display
-GROUP       www
-
-# path to the python executable
-PYTHON      /usr/local/bin/python
 
 # path to the sendmail executable
 SENDMAIL    /usr/lib/sendmail
@@ -154,10 +123,6 @@ OVERVIEW_URL ${GEN_PATH}gen.shtml
 #- sybase related -#
 #------------------#
 
-# path to Sybase directory (where we find the interfaces file)
-# /opt/sybase for 11.5
-# /opt/sybase/12.5 for 12.5
-SYBASE      /opt/sybase/12.5
 
 # path to library files for doing crons (commented out for now)
 LD_LIBRARY_PATH    /opt/sybase/12.5/ASE-12_5/lib:/opt/sybase/12.5/OCS-12_5/lib:/usr/local/lib
