@@ -30,7 +30,7 @@ MGI_VER         MGI 3.51
 WI_PATH         /usr/local/mgi/live/wi/
 
 # colon-delimited list of directories in which to find Python libraries
-LIBDIRS     /usr/local/mgi/live/lib/python/
+LIBDIRS     ${MGIHOME_PATH}lib/python/:/usr/local/mgi/live/lib/python/
 
 #-------------------#
 #- Email Addresses -#
