@@ -31,58 +31,109 @@ ul.lj { padding-left: 12px; }
 <TABLE BORDER="0" CELLSPACING="0" CELLPADDING="0" WIDTH="100%">
 <TR ALIGN="left" VALIGN="top"><TD ALIGN="left" VALIGN="top">
 <TABLE ALIGN="CENTER" BORDER="0" CELLSPACING="0" CELLPADDING="6" width="85%">
-<TR BGCOLOR="#DFEFFF"><TD ALIGN="left" VALIGN="top">
-<ul>
-<li><a href="#oct_2007">October 2, 2007: update</a></li>
-<li><a href="#aug_29">August 29, 2007: update</li>
-<li><a href="#aug_2007">August 6, 2007: update</a></li>
-</ul></TD>
-<TD VALIGN="top"><ul>
-<li><a href="#june_07">June 14, 2007: MGI 3.54 release</a></li>
- <li><a href="#april_07">April 18, 2007: MGI 3.53 release</a></li>
-  <li><a href="#march_07">April 4, 2007: MGI 3.52 release</a></li></ul></td>
-<td valign="top"><ul><li><A HREF="news_2006.shtml">Archive of 2006 news</A></td></ul>
-
-
+<TR BGCOLOR="#DFEFFF">
+  <TD ALIGN="left" VALIGN="top">
+    <ul>
+      <li>October 4, 2007: update (bug fixes)</li>
+      <li>August 29, 2007: update (bug fixes)</li>
+      <li><a href="#aug_2007">August 6, 2007: update </a></li>
+      </ul>
+  </TD>
+  <TD VALIGN="top">
+    <ul>
+      <li><a href="#june_07">June 14, 2007: MGI 3.54 release</a></li> 
+      <li><a href="#april_07">April 18, 2007: MGI 3.53 release</a></li>  
+      <li><a href="#march_07">April 4, 2007: MGI 3.52 release</a></li>
+    </ul>
+  </td>
+  <td valign="top"><ul><li><A HREF="news_2006.shtml">Archive: News and Announcements of 2006</A></td></ul>
 <!--&nbsp;&nbsp;&nbsp;&nbsp;<A HREF="news_2005.shtml">2005</A><BR>
 &nbsp;&nbsp;&nbsp;&nbsp;<A HREF="news_2004.shtml">2004</A><BR>
 &nbsp;&nbsp;&nbsp;&nbsp;<A HREF="news_2003.shtml">2003</A><BR>
 &nbsp;&nbsp;&nbsp;&nbsp;<A HREF="news_2002.shtml">2002</A><BR>
-<A HREF="news.shtml">Past Release Announcements</A><BR>-->
-</TD> </TR> </TABLE>
+<A HREF="news.shtml">Past Release Announcements</A><BR>--></TD> 
+  </TR> 
+</TABLE>
 
 <P>
 <DL>
-<dt><a name="oct_2007"></a><b>October 2, 2007</b></dt><br>
-<dd>MGI Home update.</dd>
-<br>
 
-<dt><a name="aug_27"></a><b>August 27, 2007</b></dt><br><dd>MGI Home update.</dd>
 <br>
 <dt><a name="aug_2007"></a><b>August 6, 2007</b></dt><br>
 <dd>
-A revised version of the  <a href="../nomen/strains.shtml">Rules and Guidelines for Nomenclature of Mouse and Rat Strains</a> is now available. Most notably, the International Committee on Standardized Nomenclature for Mice added a section on nomenclature for Outbreds and Closed Colonies. Previous versions of the official mouse nomenclature guidelines are <a href="../nomen/nomenclature_archives.shtml">archived</a> for your reference. 
-</dd>
-<!--<dd>Links to five recently published references --><br>
+A revised version of the  <a href="../nomen/strains.shtml">Rules and Guidelines for Nomenclature of Mouse and Rat Strains</a> is now available. Most notably, the International Committee on Standardized Nomenclature for Mice added a section on nomenclature for Outbreds and Closed Colonies. The previous version of this document is <a href="../nomen/2006_strains.shtml">archived</a> for your reference. 
+</dd><br>
 
-<dt><a name="june_07"></a><b>June 14, 2007</b></dt><br>
-<dd>The MGI <A HREF="3.54announce.shtml">3.54 release</a> features a MGI Batch Query tool to use for downloading bulk data for gene identifiers or symbols.  You can select the type of gene/marker data to return and customize the appearance of any results into web or tab-delimited format.
+<dt><a name="june_07"></a><b>June 14, 2007</b></dt>
+<dd><p>MGI's 3.54 release features a new <A HREF="<!--#include file='include/java_url.html'-->WIFetch?page=batchQF">batch query tool</a> for accessing information about many genes/markers all at once. 
+ <ul>
+    <li>Given a set of gene symbols or input identifiers (IDs) (such as MGI accession, RefSNP, or VEGA IDs) from, for example, a spreadsheet, you can copy and paste (or upload a file containing) a column of data into the query tool. </li>
+  <li>You can specify the output you want in the results (for example, nomenclature; genome location; Ensembl, Entrez, or VEGA gene identifiers; gene ontology or mammalian phenotype data; GenBank/RefSeq, UniProt, RefSNP, or MGI Allele IDs).</li>
+
+<li>You can also use the batch query to find duplications, ambiguities, and variations in data. You could check, for example, that an input list of MGI identifiers returns the same number of Ensembl, Entrez, and VEGA IDs on any given day, and that switching the input and output IDs returns identical data.</li>
+
+<li>You can view results in either web or tab-delimited format.</li>
+</ul>
 </dd><br>
 
 <dt><a name="april_07"></a><b>April 18, 2007</b></dt><br>
-<dd>The MGI <A HREF="3.53announce.shtml">3.53 release</a> associates mutant cell line IDs with a given gene/marker. Any gene traps found for that marker appear in the MGI Gene Detail report.
-</dd><br>
+<dd>The MGI 3.53 release associates gene trap mutant cell line IDs with a given MGI gene/marker. Any gene traps found for that marker appear in the MGI Gene Detail report. The MGI gene trap load incorporates mouse gene trap data from the GSS division of GenBank.
+<ul>
+ <li>To view gene traps for a given marker:</p>
+  <ol>
+    <li>Enter a gene name on the MGI <A HREF="<!--#include file='include/java_url.html'-->WIFetch?page=markerQF">Genes and Markers Query Form</a> (in the Gene/Marker Symbol/Name field)</li>
+    <li>Click the desired gene on the Gene Summary report.</li>
+    <li>Scroll the Gene Detail report to locate <i>Other Database Links.</i> If there are gene traps associated with this gene, the list of  their mutant cell line identifiers appears beside <i>Gene Traps</i>. </li>
+    <li>Click to access a given gene trap's report (in GenBank/dbGSS). <br><b>Note:</b> If there are more than five links associated with a marker, five are listed followed by <i>All</i> (with a count in parentheses),  linked to the Gene Traps report.  See 
+<a href="<!--#include file='include/userdocs_url.html'-->gene_traps_lite_help.shtml">
+Interpreting the Gene Traps Report</a> for details.</li>
+    </ol>
+<br>
+ <li>To query for specific gene traps:</li>
+  <ol>
+    <li>If you know the mutant cell line identifier, use the Search Tool (on the MGI home page). </li>
+    <li>Enter, for example,  <i> FHCRC-GT-S15-11C1</i> in the Search box.</li>
+    <li>Click <i>Accession IDs</i> (instead of Gene symbols/names) and then <i>Search</i>.<br> The Search Results report appears.</li>
+    <li>Under <i>MGI Links</i>, click <i>MGI Marker Detail</i>. The Gene Detail page for <i>Adk</i> appears.
+    <li>Scroll to  <i>Other Database Links </i> and find the list of mutant cell line identifiers beside <b>Gene Traps</b>.</li>
+     </ol><br>
+<li>To access summary reports of gene trap data in MGI, see:</li>
+    <ul>
+    <li><a href="ftp://ftp.informatics.jax.org/pub/reports/MRK_GeneTrap.rpt">gene traps associated with markers</a></li>
+    <li><a href="ftp://ftp.informatics.jax.org/pub/reports/MGI_UnassociatedGeneTraps.rpt">gene traps not associated with MGI markers</a>.</li>
+    </ul>
+</ul>
+<!--Click to access a given gene trap's report in the dbGSS division of GenBank. <br><b>Note:</b> If there are more than five links associated with a marker, five are listed followed by <i>All</i> (with a count in parentheses),  linked to the   
+Gene Traps report.
+-->
+  
+<dd>The Gene Expression Database's newest feature is a link to the Edinburgh Mouse Atlas and Gene Expression EMAGE database section browser.   The EMAGE browser contains sections of embryos with labelled anatomical structures.  Clicking on a structure in one of these sections highlights that term in the accompanying hierarchical anatomical term list.  Right (or double) clicking on that term lets you query either the Gene Expression Database (GXD) or the EMAGE database for studies examining gene expression in that structure. Access to the EMAGE browser is from the  <a href="http://www.informatics.jax.org/menus/expression_menu.shtml">Gene Expression</a> menu page.</dd><br>
 
 <dt><a name="march_07"></a><b>April 4, 2007</b></dt><br>
-<dd>For the MGI <A HREF="3.52announce.shtml">3.52 release</a>:
-<BLOCKQUOTE>
- <li>A <a href="3.52announce.shtml#new_images">new GXD report</a> features expression images associated with a given gene/marker.
-<li>MGI Mammalian Homology and Gene Detail reports now provide links to the <a href="http://www.treefam.org">TreeFam</a> database.
-<li>There is a <a href="2.3.0gxd_news.shtml">new version</a> of the Gene Expression Notebook (GEN).</li>
-</BLOCKQUOTE>
+<dd>The 3.52 release features a new Gene Expression Data Images Query by Gene Summary report which displays all the expression images associated with a given gene/marker. 
+<i>Images</i> are individual, related panes collected in <i>figures.</i> You can elect to view 10, 25, 50 or all of the figures on the same page. <a name="new_images"></a>Access to the report is from the MGI Gene Detail report.
+  <ol>
+  <li>Enter <i>Pax6</i> in the Gene/Marker Symbol/Name field of the 
+<A HREF="<!--#include file='include/java_url.html'-->WIFetch?page=markerQF">MGI Marker Query Form</a> and click <i>Search</i>.</li>
+  <li>Click <i>Pax6</i> on the Genes and Markers Query Results -- Summary report. The Gene Detail report for <i>Pax6</i> appears. 
+  <li>Click <i> Images</i> in the Expression section. The Gene Expression Data Images Query by Gene Summary appears.</li>
+</ol>
+<!--TR7710-->
+<br>
+
+<dd>The release also features new cross-references to <a href="http://www.treefam.org">TreeFam</a>, an ortholog database containing curated information about ortholog and paralog assignments and the evolutionary history of various gene families.
+  <ul>
+  <li>Access to TreeFam reports is from the <A HREF="<!--#include file='include/java_url.html'-->WIFetch?page=markerQF">Genes and Markers Query Form</a>. The TreeFam link (if available for a given gene) appears in the Mammalian Homology section.</li>
+  <li>You can also use the 
+<A HREF="<!--#include file='include/wi_url.html'-->searches/homology_form.shtml">Mammalian Orthology Query Form</a> to access TreeFam reports.  The TreeFam link (if available for a given gene) appears under <b>Links</b> in the center of the query results report.</li>
+    </ul>
+    <br>
+<dd>The Gene Expression Database (GXD) announces a new release of the Gene Expression Database. Version 2.3.0 adds Excel 2004 (running on OS X) as a supported version of Excel. As with the previous release, this application also works with Excel X for Mac and Excel 2003 and 2000 for PCs.<br>
+The Gene Expression Notebook (GEN) is an electronic tool for storing and organizing expression data and images in the laboratory. Imp
+
+
+lemented in Microsoft Excel, the GEN is easy to use and customize for specific laboratory needs. It can store RNA <i>in situ</i>, immunohistochemistry, Northern, Western, and RT-PCR data as well as information on laboratory methods, reagents, and specimens. In addition, you can use it to easily submit mouse data to the Gene Expression Database. You can download the GEN at: <a href="../GXD/GEN/index.shtml">Gene Expression Notebook Resource Page</a>.
 </dd>
-
-
 
 </dl>
 
