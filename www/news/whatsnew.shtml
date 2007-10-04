@@ -34,7 +34,7 @@ ul.lj { padding-left: 12px; }
 <TR BGCOLOR="#DFEFFF">
   <TD ALIGN="left" VALIGN="top">
     <ul>
-      <li>October 4, 2007: update (bug fixes)</li>
+      <li><a href="#oct_07">October 10, 2007: GXD update</a></li>
       <li>August 29, 2007: update (bug fixes)</li>
       <li><a href="#aug_2007">August 6, 2007: update </a></li>
       </ul>
@@ -57,7 +57,30 @@ ul.lj { padding-left: 12px; }
 
 <P>
 <DL>
+<dt><a name="oct_2007"></a><b>October 10, 2007</b></dt><br>
+<dd>The Gene Expression Database (GXD) is pleased to announce the inclusion of <i>in situ </i>hybridization data from Dr. Gregor Eichele of the GenePaint database (www.genepaint.org; 
+ Visel A; Thaller C; Eichele G. GenePaint.org: an atlas of gene expression patterns in the mouse embryo. 2004. Nucleic Acids Research 32(Database issue):D552-6).
 
+You can view the data set at accession number 
+<A HREF="<!--#include file='include/wi_url.html'-->searches/reference.cgi?124081">J:122989</a>. This set includes over 69,000 results for: 
+<ul>
+  <li>745 genes</li>
+  <li>1397 probes</li>
+  <li>748 assays (in situ hybridizations at E14.5)</li>
+  <li>10585 images</li>
+</ul>
+<br>
+
+Some useful links for querying subsets of data in GXD and MGI are: 
+<ul>
+  <li><A HREF="<!--#include file='include/java_url.html'-->WIFetch?page=expressionQF">Gene Expression Data Query Form</a></li>
+  <li><A HREF="<!--#include file='include/java_url.html'-->WIFetch?page=markerQF">Genes and Markers Query Form</a></li>
+  <li><a href="<!--#include file='include/java_url.html'-->WIFetch?page=probeQF">Molecular Probes and Clones Query Form</a></li>
+</ul>
+<br>
+	
+If you are interested in submitting your data to GXD, please see our guidelines for <a href="../GXD/GEN/gxd_submission_guidelines.shtml">submitting expression data to the Gene Expression Database</a> or contact <a href="mailto:GEN@informatics.jax.org">GEN@informatics.jax.org</a> for further information.
+</dd>
 <br>
 <dt><a name="aug_2007"></a><b>August 6, 2007</b></dt><br>
 <dd>
