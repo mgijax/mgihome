@@ -1,23 +1,23 @@
 <HTML>
 <HEAD>
-<TITLE><!--#include file='include/mgiversion.html'--> - Mouse Genome Informatics Database Overview</TITLE>
+<TITLE><!--#include file='include/MGDversion.html'--> - Mouse Genome Database Overview</TITLE>
 <!--#include file="include/stylesheet.html"-->
 </HEAD>
 <BODY BGCOLOR="#ffffff">
 <TABLE WIDTH="100%" BORDER=0 CELLPADDING=0 CELLSPACING=0>
  <TR><TD WIDTH="100%">
   <TABLE WIDTH="100%" BORDER=0 CELLPADDING=0 CELLSPACING=0>
-   <TR><TD WIDTH="20%" VALIGN="center" ALIGN="left"><A HREF="<!--#include file='include/wi_url.html'-->" border=0><!--#include file="include/mgi_logo.html"--></A></TD>
-<TD WIDTH="60%" ALIGN="center" VALIGN="center" BGCOLOR="#ffffff"><FONT COLOR="#000000" SIZE=5 FACE="Arial,Helvetica">Mouse Genome Informatics Database Overview</TD>
+   <TR><TD WIDTH="20%" VALIGN="center" ALIGN="left"><A HREF="<!--#include file='include/wi_url.html'-->" border=0><!--#include file="include/MGD_logo.html"--></A></TD>
+<TD WIDTH="60%" ALIGN="center" VALIGN="center" BGCOLOR="#ffffff"><FONT COLOR="#000000" SIZE=5 FACE="Arial,Helvetica">Mouse Genome Database Overview</TD>
 <TD WIDTH="20%" VALIGN="center" ALIGN="center" BGCOLOR="#ffffff">&nbsp;</TD></TR>
 <TR BGCOLOR="blue"><TD COLSPAN=3><FONT face="Arial,Helvetica" color="#ffffff"><B>&nbsp;Mouse Genome Informatics</B></TD></TR>
-<TR><TD BGCOLOR="#ffffff"><FONT SIZE=-1 FACE="Arial,Helvetica"><CENTER><A HREF="<!--#include file='include/wi_url.html'-->">MGI Home</A>&nbsp;&nbsp;&nbsp; <a href="../help/help.shtml">Help </A></FONT></CENTER></TD></TR>
+<TR><TD BGCOLOR="#ffffff"><FONT SIZE=-1 FACE="Arial,Helvetica"><CENTER><A HREF="<!--#include file='include/wi_url.html'-->">MGD Home</A>&nbsp;&nbsp;&nbsp; <a href="../help/help.shtml">Help </A></FONT></CENTER></TD></TR>
 </TABLE></TD></TR>
 </TABLE>
 <a name="top"></a>
 <h3>Table of Contents</h3>
-<ul><a href="#projects">MGI Database Projects</a><br>
-    <a href="#aboutMGI">About MGI</a><br><a href="#data">MGI Data</br>
+<ul><!--<a href="#projects">MGD Database Projects</a></b>-->
+    <a href="#aboutMGD">About MGD</a><br><a href="#data">MGD Data</br>
     <a href="#external">Data Links to External Databases</a><br>
     <a href="#genes">Genes and Markers</a><br>
     <a href="#alleles">Phenotypic Alleles</a><br>
@@ -31,13 +31,14 @@
 </ul>
 
 
-<h3><a name="projects"></a>MGI Database Projects</h3>
-<p>The <A HREF="<!--#include file='include/wi_url.html'-->">Mouse Genome Informatics (MGI) Database</a> provides integrated access to data on the genetics, genomics and biology of the laboratory mouse. Contributing to this resource are:</P>
+<!--<h3><a name="projects"></a>MGI Projects</h3>
+       
+<p>The Mouse Genome Database</a> (MGD) at Mouse Genome Informatics (MGI) provides integrated access to data on the genetics, genomics and biology of the laboratory mouse. Contributing to this resource are:</P>
 <ul>
-<li><b>Mouse Genome Database (MGI) Project</b><br>
-MGI includes data on gene characterization, nomenclature, mapping, gene
+<li><b>Mouse Genome Database (MGD) Project</b><br>
+MGD includes data on gene characterization, nomenclature, mapping, gene
 homologies among mammals, sequences, phenotypes, allelic variants and
-mutants, and strain data. See also </i> <a href="#aboutMGI">About MGI</a>.</li>
+mutants, and strain data. See also </i> <a href="#aboutMGD">About MGD</a>.</li>
 
 <li><b>Gene Expression Database (GXD) Project</b><br>
 GXD integrates different types of gene expression information from the mouse and provides a searchable index of published experiments on endogenous gene expression during development.  See also <a href="../GXD/aboutGXD.shtml">The Gene Expression Database (GXD)</a>.</li>
@@ -45,23 +46,23 @@ GXD integrates different types of gene expression information from the mouse and
 The goal of the <a href="http://tumor.informatics.jax.org/mtbwi/index.do">Mouse Tumor Biology (MTB) Database </a> is to help researchers choose experimental models, review mutation patterns in specific cancers, and identify genes commonly mutated across a spectrum of cancers. The database currently holds over 10,000 tumor records.</li>
 </ul>
 <font size="-1"><a href="#top">Back to Top</a>
-</font>
-<h3><a name="aboutMGI"></a>About MGI</h3>
+</font>-->
+<h3><a name="aboutMGD"></a>About MGD</h3>
 
-<p>MGI includes information on mouse genetic markers, molecular clones (probes, primers and
+<p>MGD includes information on mouse genetic markers, molecular clones (probes, primers and
 YACs), phenotypes, sequences, comparative mapping data, graphical displays of linkage,
 cytogenetic and physical maps, experimental mapping data, as well as
  strain distribution patterns for recombinant inbred strains (RIs) and cross haplotypes.
-Sources for information in the database include the scientific  literature,  DNA  mapping  panel data produced by various researchers, the MIT Whitehead Institute (MIT genetic  and physical mapping data), WashU, and the  IMAGE  consortium. Since it first became available on the web, MGI has continued to  evolve, expanding its data coverage, improving data handling, and providing new data manipulation and display tools.</p>
+Sources for information in the database include the scientific  literature,  DNA  mapping  panel data produced by various researchers, the MIT Whitehead Institute (MIT genetic  and physical mapping data), WashU, and the  IMAGE  consortium. Since it first became available on the web, MGD has continued to  evolve, expanding its data coverage, improving data handling, and providing new data manipulation and display tools.</p>
 
-<P>MGI is closely linked with the Gene Expression Literature Index. The Gene Expression Literature Index is a collection  of  references  to  the  scientific literature reporting data on endogenous gene expression during mouse embryonic development. MGI provides links to Gene Expression Literature Index records through genetic marker detail records. The Gene Expression Literature Index provides links to MGI references  and  genetic  marker  records.</p>
+<P>MGD is closely linked with the Gene Expression Literature Index. The Gene Expression Literature Index is a collection  of  references  to  the  scientific literature reporting data on endogenous gene expression during mouse embryonic development. MGD provides links to Gene Expression Literature Index records through genetic marker detail records. The Gene Expression Literature Index provides links to MGD references  and  genetic  marker  records.</p>
 <font size="-1"><a href="#top">Back to Top</a>
 </font>
-<H3><a name="data"></a>MGI Data</H3>
-<p>MGI is updated on  a  daily  basis  by  biologists  on  our curatorial
-staff who scan the current scientific  literature,  extract  relevant data, and enter it in MGI. Increasingly, MGI acquires data through large scale electronic transfer. Such data include mouse physical  mapping  data  downloaded from MIT, data generated by the collaborative efforts of WashU,  the  IMAGE consortium, ATCC, and Mouse Genome Informatics. The data interface  is intended to be flexible and comprehensive so that each view of particular records in MGI provides links to any related data throughout MGI and, where possible, to  other databases on the Internet.</p>
+<H3><a name="data"></a>MGD Data</H3>
+<p>MGD is updated on  a  daily  basis  by  biologists  on  our curatorial
+staff who scan the current scientific  literature,  extract  relevant data, and enter it in MGD. Increasingly, MGD acquires data through large scale electronic transfer. Such data include mouse physical  mapping  data  downloaded from MIT, data generated by the collaborative efforts of WashU,  the  IMAGE consortium, ATCC, and Mouse Genome Informatics. The data interface  is intended to be flexible and comprehensive so that each view of particular records in MGD provides links to any related data throughout MGD and, where possible, to  other databases on the Internet.</p>
 
-<P>MGI contains the following kinds  of information:
+<P>MGD contains the following kinds  of information:
 <UL>
 <li>Gene, DNA marker, QTL and Cytogenetic marker descriptions</li>
 <li>Mouse genetic phenotypes, genetic interrelationships, and polymorphic loci</li>
@@ -73,16 +74,16 @@ staff who scan the current scientific  literature,  extract  relevant data, and 
 <li>Genetic and physical mapping data</li>
 <li>Human disease data (OMIM)</li>
 <li>Information on inbred strains (M. Festing's listing)</li>
-<li>References supporting all data in MGI </li>
+<li>References supporting all data in MGD </li>
 </UL></p>
 <font size="-1"><a href="#top">Back to Top</a>
 </font>
 <h3><a name="external"></a>Data Links to External Databases</h3>
-<P>MGI provides links to relevant information in   
+<P>MGD provides links to relevant information in   
 <a href="../other/collab_and_acknow.shtml">external databases</A> wherever possible.
 <p>
 <table align="center" bgcolor="#FFFFFF" border="1" cellspacing="3" cellpadding="3" width="95%">
- <tr><th align="left" valign="top">Through...</th><th align="left" valign="top">MGI links to...</th></tr>
+ <tr><th align="left" valign="top">Through...</th><th align="left" valign="top">MGD links to...</th></tr>
 <tr><td>Markers</td><td valign="top">DFCI, DoTS, EC, Ensembl, Entrez, InterPro, NCBI, PDB, UniGene, VEGA</td></tr>
 
 <tr><td valign="top">Phenotypes</td><td valign="top">On-line  Mendelian Inheritance in Man (OMIM), for human disease data.</td></tr>
@@ -94,27 +95,25 @@ staff who scan the current scientific  literature,  extract  relevant data, and 
 <tr><td valign="top">References</td><td valign="top">PubMed</td></tr>
 </table>
 </p>
-</p>
-    
-<font size="-1"><a href="#top">Back to Top</a>
-</font>
+<font size="-1"><a href="#top">Back to Top</a></font>
+
 <h3><A NAME="genes"></A>Genes and Markers</h3>
-MGI contains information on mouse genes, DNA segments,
-cytogenetic markers and QTLs (see <A HREF="<!--#include file='include/wi_url'-->menus/marker_menu.shtml">Genes and Markers</a>). Each record may include the marker symbol, name,other names or symbols and synonyms, nomenclature history, alleles, STSs,
+<p>MGD contains information on mouse genes, DNA segments,                                
+cytogenetic markers and QTLs (see <a href="<!--#include file='include/wi_url.html'-->menus/marker_menu.shtml">Genes and Markers</a>). Each record may include the marker symbol, name,other names or symbols and synonyms, nomenclature history, alleles, STSs,
 chromosomal assignment, centimorgan location,
 cytogenetic band, EC number (for enzymes), phenotypic classifications, human disease data, 
-Gene Ontology (GO) terms, MGI  accession IDs and supporting references.
+Gene Ontology (GO) terms, MGD  accession IDs and supporting references.
 See
-<A HREF="<!--#include file='include/userdocs_url.html'-->marker_summary.shtml">Using the Marker Summary Report</a> and 
-<A HREF="<!--#include file='include/userdocs_url.html'-->marker_detail.shtml">Using the Marker Detail Report</a> for more information about the content of the display of a marker record as it appears in the query results.
-
+<a href="<!--#include file='include/userdocs_url.html'-->marker_summary.shtml">Using the Marker Summary Report</a> and 
+<a href="<!--#include file='include/userdocs_url.html'-->marker_detail.shtml">Using the Marker Detail Report</a> for more information about the content of the display of a marker record as it appears in the query results.
+</p>
 <P>Information on <B>alleles</B>, formerly imbedded in phenotype  descriptions, is stored as a separate data set (see <a href="#alleles">Phenotypic Alleles</a>). Links to alleles are provided in gene detail records. In
 addition, there is an <A HREF="<!--#include file='include/wi_url.html'-->searches/allele_form.shtml">Phenotypes and Alleles Query Form</A> for  direct  queries against the allele data  set. See <A HREF="<!--#include file='include/userdocs_url.html'-->allele_help.shtml#detail">Details</A> for the content of an allele record as displayed in query results.</p>
 <font size="-1"><a href="#top">Back to Top</a>
 </font>
 
 <h3><A NAME="alleles"></A>Phenotypic Alleles</h3>
- <P>MGI contains information on mutant alleles, transgenes, QTLs, strain characteristics, phenotype vocabularies, (human) disease models, and comparative phenotypes. Integrated access to phenotype and disease model data is accessible via <!--semantically consistent search methods,--> three query forms (<A HREF="<!--#include file='include/java_url.html'-->WIFetch?page=markerQF">Genes and Markers</a>, 
+ <P>MGD contains information on mutant alleles, transgenes, QTLs, strain characteristics, phenotype vocabularies, (human) disease models, and comparative phenotypes. Integrated access to phenotype and disease model data is accessible via <!--semantically consistent search methods,--> three query forms (<A HREF="<!--#include file='include/java_url.html'-->WIFetch?page=markerQF">Genes and Markers</a>, 
 <A HREF="<!--#include file='include/wi_url.html'-->searches/allele_form.shtml">Phenotypes and Alleles</a>,  and 
 <A HREF="<!--#include file='include/wi_url.html'-->searches/sequence_form.shtml">Mouse Sequences</a>). These forms provide genetic, phenotypic, and computational approaches to displaying phenotypic variation sources (single-gene, genetic mutations, QTLs, strains), as well as data on human disease correlation, and mouse models. The <A HREF="<!--#include file='include/java_url.html'-->WIFetch?page=omimVocab&subset=A">Human Disease Vocabulary Browser</a> enables you to browse and search diseases, conditions, and syndromes directly. 
 Phenotypic allele <A HREF="<!--#include file='include/userdocs_url.html'-->allele_summary_report.shtml">summary</A> and <A HREF="<!--#include file='include/userdocs_url.html'-->allele_detail_report.shtml">detail</A> reports provide detailed  information about the content of phenotype records including observed phenotypes in mouse and genetic background. The Human Disease and Mouse Model Detail page lists orthologous mouse and human markers where mutations in one or both species have been associated with phenotypes characteristic of this disease as well as any mouse models.</p>
@@ -127,12 +126,12 @@ Information may include the origin of the probe/clone, sequence,
 vector type, hybridizing loci, RFLPs, and references. See the <A HREF="<!--#include file='include/userdocs_url.html'-->probe_help.shtml">Using the Molecular Probes and Clones Query Form</a> and the 
 <A HREF="<!--#include file='include/userdocs_url.html'-->probe_summary.shtml">Summary</A> and <A HREF="<!--#include file='include/userdocs_url.html'-->probe_detail.shtml">Detail</A> Help documents for more information about probe/clone records appearing in query results.
 
-<P>Information on genetic polymorphisms is extracted from probe/clone records in MGI. The Polymorphisms Query Form enables you to search directly  for such information and display it. See
+<P>Information on genetic polymorphisms is extracted from probe/clone records in MGD. The Polymorphisms Query Form enables you to search directly  for such information and display it. See
 <A HREF="<!--#include file='include/userdocs_url.html'-->polymorphism_help.shtml#summary">Summary</a> and <A HREF="<!--#include file='include/userdocs_url.html'-->polymorphism_help.shtml#detail">Details</A> for more information.</p>
 <font size="-1"><a href="#top">Back to Top</a>
 </font>
 <h3><A NAME="orthology"></A>Mammalian Orthology</h3>
-<p>MGI contains orthology information for mouse, human and 15 other mammalian organisms. Most of the information for orthologies extracted from the published scientific literature. In general, these papers explicitly report orthology relationships and MGI reflects that published information. See the <i>Evidence</i> section under 
+<p>MGD contains orthology information for mouse, human and 15 other mammalian organisms. Most of the information for orthologies extracted from the published scientific literature. In general, these papers explicitly report orthology relationships and MGD reflects that published information. See the <i>Evidence</i> section under 
 <A HREF="<!--#include file='include/userdocs_url.html'-->homology_summary.shtml#fields">How do I interpret the results of my query?</a> in <i>Interpreting Mammalian Orthology Query Results</i> for the criteria used to establish orthology.
 </A>
 <P>An orthology record shows the symbol, organism, chromosome, cM position, cytogenetic band, and accession ID for each gene in the set of orthologies. In addition, when there are available links to other mammalian databases, these appear as well (e.g., Ark-DB, BovMap, Entrez, HGNC, Homologene, NCBI, PigBase, SheepBase, TreeFam, Uniprot, VEGA, VISTA).</p>
@@ -143,7 +142,7 @@ vector type, hybridizing loci, RFLPs, and references. See the <A HREF="<!--#incl
 <P>Orthology information is presented in three other formats: Oxford Grid, comparative map and Orthology Map View. An Oxford Grid display presents an overview of orthology between two organisms. Currently, this kind of comparison is supported for the following organisms:  mouse, human, cat, cattle, rat, pig, sheep, dog, chimp.</p>
 
 <P>The comparative map display relies on the Linkage Map application to build a graphic display of a map of a mouse chromosome (or chromosomal region) which includes orthologies from the comparison organisms. See, for example, the comparative map for a 2 cM region around the mouse gene 
-<A HREF="<!--#include file='include/wi_url.html'-->searches/accession_report.cgi?id=MGI:87895">Chrng</A> showing human orthology.</p>
+<A HREF="<!--#include file='include/wi_url.html'-->searches/accession_report.cgi?id=MGD:87895">Chrng</A> showing human orthology.</p>
 
 <P> The Orthology Map View displays the mouse genome as the consensus genetic map, with either human or rat orthologs labeled by chromosome of origin and displayed next to the corresponding  segment of the mouse genome.  The Orthology Map View is accessible
 from the <a href="<!--#include file='include/wi_url.html'-->menus/homology_menu.shtml">Mammalian Orthology and Comparative Maps</A> menu.</p>
@@ -151,22 +150,22 @@ from the <a href="<!--#include file='include/wi_url.html'-->menus/homology_menu.
 </font>
 <h3><A NAME="sequence"></a>Sequence Data</h3>
 
-<P>Vast amounts of sequence data are integrated with the biological information in MGI. Mouse sequences from GenBank, RefSeq, <NOBR>Swiss-Prot</NOBR>, DoTS, and the DFCI and NIA mouse gene indices enable powerful queries from the
-<a href="<!--#include file='include/wi_url.html'-->searches/sequence_form.shtml">Mouse Sequence Query Form</a>. MGI contains sequence attributes, such as length and provider; data about the clones the sequences were derived from; and the genes the sequences have been associated to. Because of our curated associations between mouse markers and sequences, users can search using information such as nomenclature, map position, function (GO annotation, InterPro domain), expression (tissue and developmental stage), and phenotypes of mutant alleles. Source information about the clones that the sequences are derived from, such as strain, tissue, or library, is carefully translated into controlled vocabularies (see <a href="#vocabularies">Vocabulary Browsers</a>).  This adds enormous power to sequence queries, since authors often use multiple terms to specify a strain or tissue.  </P>
+<P>Vast amounts of sequence data are integrated with the biological information in MGD. Mouse sequences from GenBank, RefSeq, <NOBR>Swiss-Prot</NOBR>, DoTS, and the DFCI and NIA mouse gene indices enable powerful queries from the
+<a href="<!--#include file='include/wi_url.html'-->searches/sequence_form.shtml">Mouse Sequence Query Form</a>. MGD contains sequence attributes, such as length and provider; data about the clones the sequences were derived from; and the genes the sequences have been associated to. Because of our curated associations between mouse markers and sequences, users can search using information such as nomenclature, map position, function (GO annotation, InterPro domain), expression (tissue and developmental stage), and phenotypes of mutant alleles. Source information about the clones that the sequences are derived from, such as strain, tissue, or library, is carefully translated into controlled vocabularies (see <a href="#vocabularies">Vocabulary Browsers</a>).  This adds enormous power to sequence queries, since authors often use multiple terms to specify a strain or tissue.  </P>
 <font size="-1"><a href="#top">Back to Top</a>
 </font>
 <h3><a name="snp"></a>SNP Data</h3>
-<p>MGI provides comprehensive information about reference SNPs including the reference flanking sequence, assays that comprise the SNP, gene/marker associations with their corresponding function class annotations, and links to popular gene browsers including MGI Mouse GBrowse and its transcript, gene model, and MGI-curated phenotype and allele tracks.  
+<p>MGD provides comprehensive information about reference SNPs including the reference flanking sequence, assays that comprise the SNP, gene/marker associations with their corresponding function class annotations, and links to popular gene browsers including MGD Mouse GBrowse and its transcript, gene model, and MGD-curated phenotype and allele tracks.  
 <p>The 
 <a href="<!--#include file='include/java_url.html'-->WIFetch?page=snpQF">Mouse SNP Query Form</a> lets you search for RefSNPs by strains, strain comparisons, RefSNP attributes, map position, marker range, or associated genes.</p>
 </p>
 <font size="-1"><a href="#top">Back to Top</a>
 </font>
 <h3><A NAME="vocabularies"></a>Vocabulary Browsers</h3>
-<ul><li>The MGI Vocabulary Browsers provide access to restricted sets of defined terms representing complex information.</li> <li>Some controlled vocabularies (such as the Human Disease Vocabulary Browser), have a flat structure:  terms are organized alphanumerically. </li><li>Other vocabularies (known as <i>DAGs</i> or <i>directed acyclic graphs</i>), such as the GO Browser, have a tree (or hierarchical) structure: terms are organized primarily by their relationship to other terms.</li></ul>
+<ul><li>The MGD Vocabulary Browsers provide access to restricted sets of defined terms representing complex information.</li> <li>Some controlled vocabularies (such as the Human Disease Vocabulary Browser), have a flat structure:  terms are organized alphanumerically. </li><li>Other vocabularies (known as <i>DAGs</i> or <i>directed acyclic graphs</i>), such as the GO Browser, have a tree (or hierarchical) structure: terms are organized primarily by their relationship to other terms.</li></ul>
 
 <blockquote>
-<p>The MGI Vocabulary Browsers currently available are: 
+<p>The MGD Vocabulary Browsers currently available are: 
 <table border="1" cellspacing="1" cellpadding="4" width="100%">
   <tr><th align="center" valign="top">Browser Name</th><th align="center" 
 valign="top">Use this browser to search for ...</th></tr>
@@ -181,19 +180,19 @@ valign="top">Use this browser to search for ...</th></tr>
 </font>
 
 <h3><A NAME="mapping"></A>Mapping Data</h3>
-<p>MGI contains genetic mapping and linkage data, including haplotype data for linkage crosses, recombinant inbred (RI) strain distribution patterns, <i>in situ</i> hybridization data,
+<p>MGD contains genetic mapping and linkage data, including haplotype data for linkage crosses, recombinant inbred (RI) strain distribution patterns, <i>in situ</i> hybridization data,
 deletion mapping information, translocation breakpoint mapping, somatic cell hybrids, concordance tables, congenic strains information, and physical mapping information.</p>
 
 <h4><A NAME="RIdata"></A>Recombinant Inbred Strain Distribution Patterns Composite Data Set</h4>
-The RI Data portion of  MGI  mapping data records has been collected and organized into composite reports accessible using the Composite Recombinant Inbred Data Sets from MGI query form. The  information is displayed in tabular format with each column representing a strain and each row representing the distribution of alleles of a locus across these strains.
+The RI Data portion of  MGD  mapping data records has been collected and organized into composite reports accessible using the Composite Recombinant Inbred Data Sets from MGD query form. The  information is displayed in tabular format with each column representing a strain and each row representing the distribution of alleles of a locus across these strains.
 
 <h4><A NAME="RCdata"></a>Recombinant Congenic Strain Distribution Patterns Composite Data Set</h4>
-<p>Composite Recombinant Congenic Strain Distribution Patterns data can be retrieved using a new query form accessed in the "Maps and  Mapping Data" section of MGI.
+<p>Composite Recombinant Congenic Strain Distribution Patterns data can be retrieved using a new query form accessed in the "Maps and  Mapping Data" section of MGD.
 Information on four recombinant congenic  strain  sets  is currently available. Data include the progenitor strains for each  RCS set  and tables showing the allelic distribution for each genetic marker that has been typed in each of the recombinant  congenic
 strains.  Each  row  represents  the typing for a genetic marker and each column  represents  alleles  carried  by  a specific recombinant congenic strain of the RCS set. Format of the report is very similar to that of the Composite Recombinant Inbred Strains  distribution patterns.</p>
 <p>For more information regarding the use of congenic  strains  to  analyze  traits controlled by multiple genes, see Peter Demant's paper, <BLOCKQUOTE>"Recombinant Congenic Strains - A New Tool for Analyzing Genetic Traits Determined by More Than One Gene," Immunogenetics 24: 416-422, 1986.</BLOCKQUOTE>
 <h4><A NAME="DNAdata"></A>DNA Mapping Panel Data Sets </h4>
-<p> Data  from the  major DNA mapping panels have been downloaded into MGI and are accessible through the DNA Mapping Panel Data Sets from MGI query form and from the Linkage Maps  form. The data sets include:
+<p> Data  from the  major DNA mapping panels have been downloaded into MGD and are accessible through the DNA Mapping Panel Data Sets from MGD query form and from the Linkage Maps  form. The data sets include:
 <font size="-1"><ul>
 Copeland-Jenkins:(C57BL/6J x M. spretus)F1 x C57BL/6J <br>
 EUCIB (BSB):(C57BL/6J x SPR or SEG/Pas)F1 x C57BL/6J<br>
@@ -218,20 +217,20 @@ See <a href="<!--#include file='include/userdocs_url.html'-->mapping_data.shtml"
 <h4>Graphical Map Displays</h4>
 
 <h4>Linkage  Maps</h4>
-<p>Marker records in MGI include available information on genetic mapping locations from several sources: MGI, Chromosome Committees (up to the year 2000), and MIT. MGI provides  mapping tools to generate graphic displays of genetic maps.  Using the Linkage Maps  form,  you can generate a graphical map display in Web Map format to display linkage  information  for a chromosome from a particular cross. Centimorgan locations are specific to the cross and may differ from estimates for the same loci found in MGI marker records. You can print the display using the PostScript format option.
+<p>Marker records in MGD include available information on genetic mapping locations from several sources: MGD, Chromosome Committees (up to the year 2000), and MIT. MGD provides  mapping tools to generate graphic displays of genetic maps.  Using the Linkage Maps  form,  you can generate a graphical map display in Web Map format to display linkage  information  for a chromosome from a particular cross. Centimorgan locations are specific to the cross and may differ from estimates for the same loci found in MGD marker records. You can print the display using the PostScript format option.
 <h4>Cytogenetic Maps</h4>
-<p>MGI stores  cytogenetic  band  information  for  mouse markers. The  Cytogenetic  Maps  query  form provides  access  to map  images. Relatively few markers have been assigned cytogenetic locations.
+<p>MGD stores  cytogenetic  band  information  for  mouse markers. The  Cytogenetic  Maps  query  form provides  access  to map  images. Relatively few markers have been assigned cytogenetic locations.
 </p>
 <h4>Physical Maps</h4>
-<p>In June 1997, MGI began storing physical mapping data from MIT's mouse physical mapping project in which MIT primers and STSs are mapped against a mouse YAC library to build a contig map of the mouse. MGI provides query access to the MIT primers, STSs, and YACs. In addition, MGI provides integrated genetic/physical displays in Web Map format. These map files are updated when the MIT mapping physical mapping data set is  updated.</p>
-<p>In May 2005, MGI added a customized version of Lincoln Stein's Generic Genome Browser (GBrowse) that supports interactive browsing and display of mouse genome annotations. Access to MGI Mouse GBrowse is from the MGI home page (http://www.informatics.jax.org) and from the sequence map section on MGI gene detail pages. Tracks for MGI Mouse GBrowse include MGI representative transcripts; Ensembl, NCBI, and VEGA gene models; SNPs; QTLs; alleles (induced, spontaneous, gene-trapped, transgenic, targeted); phenotypes; and STS markers linked to UniSTS at NCBI. Tracks are updated at different times, depending on data availability. See the <a href="http://gbrowse.informatics.jax.org/gbrowse/docs/update_notes_36.html">update notes</a> for details.</p>
+<p>In June 1997, MGD began storing physical mapping data from MIT's mouse physical mapping project in which MIT primers and STSs are mapped against a mouse YAC library to build a contig map of the mouse. MGD provides query access to the MIT primers, STSs, and YACs. In addition, MGD provides integrated genetic/physical displays in Web Map format. These map files are updated when the MIT mapping physical mapping data set is  updated.</p>
+<p>In May 2005, MGD added a customized version of Lincoln Stein's Generic Genome Browser (GBrowse) that supports interactive browsing and display of mouse genome annotations. Access to MGD Mouse GBrowse is from the MGD home page (http://www.informatics.jax.org) and from the sequence map section on MGD gene detail pages. Tracks for MGD Mouse GBrowse include MGD representative transcripts; Ensembl, NCBI, and VEGA gene models; SNPs; QTLs; alleles (induced, spontaneous, gene-trapped, transgenic, targeted); phenotypes; and STS markers linked to UniSTS at NCBI. Tracks are updated at different times, depending on data availability. See the <a href="http://gbrowse.informatics.jax.org/gbrowse/docs/update_notes_36.html">update notes</a> for details.</p>
 </ul>
 </p>
 <font size="-1"><a href="#top">Back to Top</a>
 </font>
 
 <h3><A NAME="references"></A>References</h3>
-MGI contains references for all data in the  database.  As of April 2007, there were over 118,000 entries. MGI reference format is similar to PubMed's and data for the full MGI reference are extracted from PubMed when possible. References first appear in an abbreviated format in MGI and are updated when the PubMed records become available. If PubMed does not index the journal, our curators enter the full reference into MGI manually.  See the
+MGD contains references for all data in the  database.  As of April 2007, there were over 118,000 entries. MGD reference format is similar to PubMed's and data for the full MGD reference are extracted from PubMed when possible. References first appear in an abbreviated format in MGD and are updated when the PubMed records become available. If PubMed does not index the journal, our curators enter the full reference into MGD manually.  See the
  <a href="<!--#include file='include/wi_url.html'-->searches/reference_form.shtml">References Query Form</a>,  <a href="<!--#include file='include/userdocs_url.html'-->reference_help.shtml">Using the References Query Form</a> for more information about this data.</p>
 <font size="-1"><a href="#top">Back to Top</a>
 </font>
