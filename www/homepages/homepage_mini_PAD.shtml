@@ -1,0 +1,280 @@
+<!--#include file='include/templateHead.html'-->
+
+  <title>MGI 4.0  Mouse Genome Informatics Phenotypes, Alleles &amp; Disease Models Page</title>
+
+<link rel="stylesheet" type="text/css" href="include/homepage.css"/>
+
+<!------------- AJAX TABS CALLS -------------------------------------------------------->
+
+<link rel="stylesheet" type="text/css" href="ajaxtabs.css" />
+<script type="text/javascript" src="ajaxtabs.js">
+/***********************************************
+* Ajax Tabs Content script- © Dynamic Drive DHTML code library (www.dynamicdrive.com)
+* This notice MUST stay intact for legal use
+* Visit Dynamic Drive at http://www.dynamicdrive.com/ for full source code
+***********************************************/
+  </script>
+
+<!--#include file='include/templateBodyStart.html'-->
+
+<table width="100%" cellpadding="0" style="font-family:Verdana,Arial,Helvetica;font-size:12px">
+
+<tr> <!-- Page Header Title Bar -->
+<td width="850">
+	<table width="100%" border="0" cellpadding="0" cellspacing="0">
+	<tr>
+		  <td align="left" valign="center" width="20%">		  </td>
+		  <td align="center" valign="center" width="60%" nowrap="nowrap">
+
+			<font color="#002255" face="Arial,Helvetica" size="6">
+			  <b>Phenotypes,  Alleles and Disease Models</b></font>
+<!--			<hr noshade="noshade"/ color="#D0E0F0">-->
+		  </td>
+
+		  <td align="right" valign="center" width="20%">&nbsp;	      </td>
+	</tr>
+	</table>
+</td>
+</tr>
+
+<tr> <!-- Tagline specific to the mini-Homepage group -->
+<td bgcolor="#FFFFFF">
+<div ID="Tagline" Name="Tagline" style="color:#003366;font-size:12px;font-style:italic;line-height:1.2; margin-left:15px; margin-right:15px; margin-top:2px;" align="center">
+  The Phenotypes/Alleles project in MGI enables access to spontaneous, induced, and genetically-engineered mutations and their strain-specific phenotypes. </div>
+  </div>
+</td>
+</tr>
+</table>
+<!-------------------------- MenuBar End ------------------------------------>
+<div class="homePageBody">
+<!---------------------strip of images - some mini-homepages won't have any images------------------->
+<div id="images" align="center" style="text-align:center; background-color:#FFFFFF; vertical-align:middle; padding:6px 0px 2px 0px; min-width:825px;" NOWRAP="nowrap">
+
+<table width="!" border="0" align="center" cellpadding="2" cellspacing="0">
+  <tr>
+    <td align="center">&nbsp;</td>
+    <td align="center"><a href="<!--#include file="include/java_url.html"-->WIFetch?page=imageDetail&key=13609"><img src="images/Pax6_Sey-Dey.jpg" alt="-" width="125" height="101" border="1"></a></td>
+    <td align="center">
+      <div id="ImageText1" style="display:inline;"></div><a href="<!--#include file="include/java_url.html"-->WIFetch?page=imageDetail&key=49852" ><img src="images/Slc26a4.jpg" alt="-" height="100" border="1"></a></td>
+    <td align="center"><a href="<!--#include file="include/java_url.html"-->WIFetch?page=imageDetail&key=49460"><img src="images/000562(tub).jpg" alt="-" height="100" border="1"></a></td>
+    <td align="center">
+      <div id="ImageText2" style="display:inline;"></div><a href="<!--#include file="include/java_url.html"-->WIFetch?page=imageDetail&key=49660" ><img src="images/Ctsk1.jpg" alt="-" height="100" border="1"></a></td>
+
+    <td align="center">
+      <div id="ImageText3" style="display:inline;"></div><a href="<!--#include file="include/java_url.html"-->WIFetch?page=imageDetail&key=13569" ><img src="images/Mitf.jpg" alt="-" width="150" height="100" border="1"></a></td>
+    <td width="100" align="center">&nbsp;</td>
+  </tr>
+  <tr>
+    <td align="right" class="smaller" style="height:11px; color:#002255; font-style:italic;">Mouse models for: </td>
+    <td align="center" class="smaller" style="height:11px; color:#002255; font-style:italic;"><a href="<!--#include file="include/java_url.html"-->WIFetch?page=humanDisease&key=847281">Aniridia, Type II</a></td>
+    <td align="center" class="smaller" style="height:11px; color:#002255; font-style:italic;"><a href="<!--#include file="include/java_url.html"-->WIFetch?page=humanDisease&key=850756">Pendred Syndrome</a></td>
+    <td align="center" class="smaller" style="height:11px; color:#002255; font-style:italic;"><a href="<!--#include file="include/java_url.html"-->WIFetch?page=humanDisease&key=849300">Alstrom Syndrome </a></td>
+    <td align="center" class="smaller" style="height:11px; color:#002255; font-style:italic;"><a href="<!--#include file="include/java_url.html"-->WIFetch?page=humanDisease&key=850551">Pycnodysostosis</a></td>
+    <td align="center" class="smaller" style="height:11px; color:#002255; font-style:italic;"><a href="<!--#include file="include/java_url.html"-->WIFetch?page=humanDisease&key=847229">Tietz Syndrome</a></td>
+    <td width="100" align="center" class="smaller" style="height:11px; color:#002255; font-style:italic;">&nbsp;</td>
+  </tr>
+</table>
+</div>
+<!----------------------------- end of image strip ------------------------->
+
+<div id="mainText"><!-- BEGIN PAGE TEXT CONTENT -->
+<table width="100%" border="0" cellpadding="4"> <!--body table-->
+<tr valign="top">
+
+<!-- left column -->
+<td width="50%">
+  <table>
+
+
+  <!-- Disease Model of the week -->
+  <tr>
+  <td>
+  <table cellpadding="0.5" bgcolor="#DFEFFF" width="100%" >
+
+   <tr>
+   <td>
+     <table width="100%" border="0" cellpadding="2" cellspacing="0" class="grayBG">
+     <tr>
+       <td class="boxHead"><strong>What can I do here? </strong></td>
+     </tr>
+     <tr >
+       <td style="font-size:12; color:#002255;">
+
+         <p><a href="<!--#include file="include/wi_url.html"-->searches/allele_form.shtml">Search for mutations</a> or QTL based on phenotype, human disease,  mutation type, gene, or genome location.<br>
+           <br>
+<a href="<!--#include file="include/wi_url.html"-->searches/MP_form.shtml">Search by phenotype term</a> to find relevant mutant genotypes.<br>
+<br>
+<a href="<!--#include file="include/java_url.html"-->WIFetch?page=omimVocab&subset=A">Search by human disease/condition terms</a> to find  mouse models.<br>
+<br>
+
+<a href="<!--#include file="include/java_url.html"-->WIFetch?page=batchQF">Input a list of genes</a> and retrieve associated alleles and  phenotypes<br>
+<br>
+<a href="<!--#include file="include/mgihome_url.html"-->nomen/allmut_form.shtml">Submit a new allele, mutation, or transgene</a> and receive official nomenclature and MGI accession identifier.<br>
+<br>
+View an <a href="<!--#include file="include/mgihome_url.html"-->nomen/allmut_quickhelp.shtml">abbreviated</a> or <a href="<!--#include file="include/mgihome_url.html"-->nomen/gene.shtml">full</a> guide to proper  naming of alleles and mutations. </p>
+
+       </td>
+     </tr>
+     </table>
+   </td>
+   </tr>
+  </table>
+  </td>
+  </tr>
+
+
+  <!-- Expression Image of the week -->
+  </table>
+  </td>
+<!-- end left column -->
+
+
+<!-- right column -->
+<td style="vertical-align:top">
+  <table cellpadding="4">
+
+  <!-- How to -->
+
+  <tr>
+  <td>
+  <table cellpadding="0.5" bgcolor="#DFEFFF" width="100%" >
+   <tr>
+   <td>
+     <table width="100%" border="0" cellpadding="2" cellspacing="0" class="grayBG">
+     <tr>
+       <td colspan="2" class="boxHead"><strong>How do I...</strong></td>
+
+       </tr>
+     <tr >
+       <td width="6" style="font-size:12">&nbsp;</td>
+       <td style="font-size:12">
+	   .. find mutations in a specific gene?&nbsp;<a href="" class="smaller homePageBody">Learn</a></td>
+     </tr>
+     <tr >
+       <td width="6" style="font-size:12">&nbsp;</td>
+
+       <td style="font-size:12">..  find mouse models for a particular disease?&nbsp;<a href="javascript:FAQwindow()" class="smaller homePageBody">Learn</a></td>
+	 </tr>
+     <tr >
+       <td width="6" style="font-size:12">&nbsp;</td>
+       <td style="font-size:12">
+	   .. find candidate genes for a given phenotype and in a specific genome location?&nbsp;<a href="" class="smaller homePageBody">Learn</a></td>
+	 </tr>
+
+     <tr >
+       <td width="6" style="font-size:12">&nbsp;</td>
+       <td style="font-size:12">
+	   .. download all phenotype annotations in MGI?&nbsp;<a href="" class="smaller homePageBody">Learn</a></td>
+	 <tr >
+       <td width="6" style="font-size:12">&nbsp;</td>
+       <td style="font-size:12">
+	   .. find specific types of mouse mutations, e.g., cre transgenes, conditional alleles, or knock out alleles?&nbsp;<a href="" class="smaller homePageBody">Learn</a></td>
+
+ 	  </tr>
+	 <tr >
+	   <td style="font-size:12">&nbsp;</td>
+	   <td style="font-size:12">.. figure out which mouse to order?&nbsp;<a href="" class="smaller homePageBody">Learn</a> </td>
+	   </tr>
+  	  <tr>
+  	    <td width="6">&nbsp;</td>
+
+	   <td>
+              <a href="homepage_mini_FAQ.html">More FAQs </a>
+	   </td>
+ 	 </tr>
+     </table>
+   </td>
+   </tr>
+  </table>
+  </td>
+
+  </tr>
+
+  <tr>
+  <td>
+  <table cellpadding="0.5" bgcolor="#DFEFFF" width="100%" >
+        <tr>
+          <td>
+            <table width="100%" border="0" cellpadding="2" cellspacing="0" class="grayBG">
+
+              <tr>
+                <td class="boxHead"><strong>MGI contains </strong></td>
+              </tr>
+              <tr >
+              <td style="font-size:12">
+              <!--#include file="include/padstats.shtml"-->
+                             </td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+    </table>
+    </table>
+  </td>
+  </tr>
+  </table>
+</td>
+</tr>
+<tr>
+<td colspan="2">
+  <table cellpadding="0.5" bgcolor="#DFEFFF" width="100%" >
+    <tr>
+      <td>
+        <table width="100%" border="0" cellpadding="2" cellspacing="0" class="grayBG">
+
+          <tr>
+            <td class="boxHead"><strong>Phenotype News </strong></td>
+          </tr>
+          <tr >
+            <td style="font-size:12; color:#002255;"> <span class="smaller"><strong>08 August 2007</strong></span>
+                <ul class="line1 smaller">
+                  <li>Gene-trapped alleles are coming</li>
+
+                  <li>We have over 100,000 phenotype annotations </li>
+                </ul>
+              <a href="<!--#include file='include/mgihome_url.html'-->news/whatsnew.shtml" class="smaller">More news </a> </td>
+          </tr>
+        </table>
+      </td>
+    </tr>
+
+  </table>
+</td>
+</tr>
+
+<tr> <!-- Bottom tab: dynamic content -->
+<td colspan="2">
+
+  <table cellpadding="0.5" width="100%" >
+    <tr>
+      <td>
+        <ul id="maintab" class="shadetabs">
+
+<li id="listTab"><a href="tabContents/PAD_About.shtml" rel="ajaxcontentarea">About Phenotypes</a></li>
+<li id="listTab"><a href="tabContents/PAD_Curators.shtml" rel="ajaxcontentarea">Interpreting allele pages</a></li>
+<li id="listTab"><a href="tabContents/PAD_Help.shtml" rel="ajaxcontentarea">Help documents</a></li>
+<li id="listTab"><a href="tabContents/PAD_Collaborators.shtml" rel="ajaxcontentarea">Collaborators</a></li>
+<li class="selected" id="listTab"><a href="tabContents/PAD_Resources.shtml" rel="ajaxcontentarea">Other links </a></li>
+</ul>
+
+<div id="ajaxcontentarea" class="contentstyle" style="font-size:12px;">
+<p>Some default text</p>
+</div>
+
+<script type="text/javascript">
+//Start Ajax tabs script for UL with id="maintab". Separate multiple ids each with a comma.
+startajaxtabs("maintab");
+</script>
+
+      </td>
+    </tr>
+  </table>
+</td>
+</tr>
+
+</table>
+
+<!--body table-->
+</div>
+
+<!--#include file='include/templateBodyStop.html'-->

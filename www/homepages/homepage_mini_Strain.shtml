@@ -1,0 +1,229 @@
+<!--#include file='include/templateHead.html'-->
+
+  <title>MGI 4.0  Mouse Genome Informatics Strain, SNPs, &amp; Polymorphisms Page</title>
+
+<link rel="stylesheet" type="text/css" href="include/homepage.css"/>
+
+<!------------- AJAX TABS CALLS -------------------------------------------------------->
+
+<link rel="stylesheet" type="text/css" href="ajaxtabs.css" />
+<script type="text/javascript" src="ajaxtabs.js">
+/***********************************************
+* Ajax Tabs Content script- © Dynamic Drive DHTML code library (www.dynamicdrive.com)
+* This notice MUST stay intact for legal use
+* Visit Dynamic Drive at http://www.dynamicdrive.com/ for full source code
+***********************************************/
+  </script>
+
+<!--#include file='include/templateBodyStart.html'-->
+
+<table width="100%" cellpadding="0" style="font-family:Verdana,Arial,Helvetica;font-size:12px">
+<tr> <!-- Page Header Title Bar -->
+<td>
+	<table width="100%" style="margin:0px; padding:0px;">
+	<tr>
+		  <td align="left" valign="center" width="5%">
+		  </td>
+		  <td align="center" valign="center">
+
+			<font color="#002255" face="Arial,Helvetica" size="6">
+			  <b>Strains, SNPs, and Polymorphisms</b>
+			</font>
+<!--			<hr noshade="noshade"/ color="#D0E0F0">-->
+		  </td>
+
+		  <td align="right" valign="center" width="5%">&nbsp;
+
+	      </td>
+	</tr>
+	</table>
+
+</td>
+</tr>
+
+<tr> <!-- Tagline specific to the mini-Homepage group -->
+<td bgcolor="#FFFFFF">
+</td>
+</tr>
+</table>
+<!-------------------------- MenuBar End ------------------------------------>
+<div class="homePageBody">
+<!---------------------strip of images - some mini-homepages won't have any images------------------->
+<div id="images" align="left" style="text-align:center; background-color:#FFFFFF; vertical-align:middle; height:106px; padding:6px 0px 2px 0px;" NOWRAP="nowrap">
+<table border="0" cellspacing="0" cellpadding="1" align="center">
+  <tr>
+    <td align="center"><img src="images/000659C3H-HeJ_R.jpg" alt="C3H" height="100" border="1"></td>
+
+    <td align="center"><img src="images/CBA-agouti-100_R.jpg" alt="MPD pic" height="100" border="1"></td>
+    <td width="150" align="center" nowrap="nowrap">Need actual STRAIN<br>
+<span class="smaller">JaxMedia is working on it.</span> </td>
+    <td align="center"><img src="images/001026BALB-cByJ_100.jpg" alt="balb" width="101" height="100" border="1"></td>
+    <td align="center"><img src="images/000664.jpg" alt="MGI pic" width="179" height="100" border="1"></td>
+    <td align="center"><img src="images/000667_C57BRcdJ_100.jpg" alt="Brown" height="100" border="1"></td>
+    <td align="center"><img src="images/DBA-1LacJ-100.jpg" alt="MPD pic" border="1"></td>
+    <td align="center"><img src="images/LT-SvEi_Strain-100.jpg" alt="MPD pic" border="1"></td>
+
+  </tr>
+  <tr>
+    <td align="center" class="smaller" style="height:11px; color:#002255; font-style:italic;">C3H/HeJ</td>
+    <td align="center" class="smaller" style="height:11px; color:#002255; font-style:italic;">CBA/J Agouti</td>
+    <td width="150" align="center" class="smaller" style="height:11px; color:#002255; font-style:italic;">C57L/J Leaden</td>
+    <td align="center" class="smaller" style="height:11px; color:#002255; font-style:italic;"><span class="smaller" style="height:11px; color:#002255; font-style:italic;">BALB/cByJ</span></td>
+    <td align="center" class="smaller" style="height:11px; color:#002255; font-style:italic;">C57BL/6J Black6 (B6)</td>
+
+    <td align="center" class="smaller" style="height:11px; color:#002255; font-style:italic;">C57BR/cdJ C57 Brown (BR) </td>
+    <td align="center" class="smaller" style="height:11px; color:#002255; font-style:italic;">DBA/1LacJ Dilute brown</td>
+    <td align="center" class="smaller" style="height:11px; color:#002255; font-style:italic;">LT/SvEiJ Light</td>
+  </tr>
+</table>
+</div>
+<div id="mainText">
+<table width="100%" border="0" cellpadding="4"> <!--body table-->
+
+<tr valign="top">
+
+<!-- left column -->
+<td width="50%">
+  <table>
+
+
+  <!-- Disease Model of the week -->
+  <tr>
+  <td>
+  <table cellpadding="0.5" bgcolor="#DFEFFF" width="100%" >
+   <tr>
+   <td>
+
+     <table width="100%" border="0" cellpadding="2" cellspacing="0" class="grayBG">
+     <tr>
+       <td class="boxHead"><strong>What can I do here? </strong></td>
+     </tr>
+     <tr >
+       <td style="font-size:12">
+         <p>Search for SNPs by strains, strain comparisons, SNP attributes, map position, marker range, or associated genes. <span class="smaller"><a href="<!--#include file="include/java_url.html"-->WIFetch?page=snpQF" class="smaller homePageBody">Mouse SNP  Query Form</a></span></p>
+
+         <p>Search for RFLP or PCR based polymorphisms by strain, locus symbol, or map position. &nbsp;<span class="smaller"><a href="<!--#include file="include/wi_url.html"-->searches/polymorphism_form.shtml" class="smaller homePageBody">RFLP/PCR Polymorphism Query Form </a></span></p>
+         <p>Search inbred strain characteristics <a href="<!--#include file="include/wi_url.html"-->external/festing/search_form.cgi" class="smaller">Michael FW Festing's Inbred Strains of Mice and Rats </a></p>
+         <p>Read strain nomenclature guidelines <a href="<!--#include file="include/mgihome_url.html"-->nomen/strains.shtml" class="smaller">Rules and Guidelines for Nomenclature of Mouse and Rat Strains</a></p>
+         <p>See how strains are related <a href="<!--#include file="include/mgihome_url.html"-->genealogy/" class="smaller">Genealogy Chart of Inbred Strains</a></p>
+		 <p><a href="<!--#include file="include/imsr_home_url.html"-->">Search repositories</a> participating in IMSR to determine the availability of a mouse strain associated with particular genes, alleles or mutations.</p>
+
+		 <p>To find information about mouse mutants, transgenic mice,  conditional mutants, and QTL please visit the <a href="<!--#include file="include/mgihome_url.html"-->homepages/homepage_mini_PAD.shtml">Phenotypes, Alleles, &amp; Disease Models</a> page.</p>
+         </td>
+     </tr>
+     </table>
+   </td>
+   </tr>
+
+  </table>
+  </td>
+  </tr>
+
+
+
+  <!-- Expression Image of the week -->
+  </table>
+  </td>
+<!-- end left column -->
+
+<!-- right column -->
+<td style="vertical-align:top">
+  <table>
+
+  <!-- How to -->
+  <tr>
+  <td>
+  <table cellpadding="0.5" bgcolor="#DFEFFF" width="100%" >
+   <tr>
+   <td>
+
+     <table width="100%" border="0" cellpadding="2" cellspacing="0" class="grayBG">
+     <tr>
+       <td class="boxHead"><strong>How do I...</strong></td>
+     </tr>
+     <tr >
+       <td style="font-size:12">
+       <dl class="howDoI">
+         <dd class="howDoI">.. find all known coding SNPs in the chromosomal region I'm studying in mouse strains I'm using?&nbsp;<a href="" class="smaller homePageBody">Learn</a></dd>
+
+         <dd class="howDoI">.. find strains with polymorphisms in the gene I'm studying?&nbsp;<a href="" class="smaller homePageBody">Learn</a></dd>
+         <dd class="howDoI">.. find primer sequences for the gene I'm studying?&nbsp;<a href="" class="smaller homePageBody">Learn</a></dd>
+         <dd class="howDoI">.. find genomic sequence data for a mouse strain I'm using?&nbsp;<a href="" class="smaller homePageBody">Learn</a></dd>
+         <!--		 <dt class="howDoI"><a href="">More</a></dt>
+-->       </dl>
+	   <a href="">More FAQs</a>
+     </tr>
+
+     </table>
+   </td>
+   </tr>
+  </table>
+  </td>
+  </tr>
+
+  <!-- What's new? -->
+  <tr>
+
+  <td>
+    <table cellpadding="0.5" bgcolor="#DFEFFF" width="100%" >
+      <tr>
+        <td>
+          <table width="100%" border="0" cellpadding="2" cellspacing="0" class="grayBG">
+            <tr>
+              <td class="boxHead"><strong>How much data is here? </strong></td>
+            </tr>
+
+            <tr >
+              <td style="font-size:12">
+                <!--#include file="include/strain_stats.shtml"-->
+              </td>
+            </tr>
+          </table>
+
+        </td>
+      </tr>
+    </table>
+  </td>
+  </tr>
+
+
+  <!-- Stats -->
+  </table>
+</td>
+
+</tr>
+
+
+<tr> <!-- Bottom tab: dynamic content -->
+<td colspan="2">
+
+  <table cellpadding="0.5" width="100%" >
+    <tr>
+      <td>
+        <ul id="maintab" class="shadetabs">
+<li id="listTab"><a href="tabContents/Strain_About.shtml" rel="ajaxcontentarea">About Strains </a></li>
+<li id="listTab"><a href="tabContents/Strain_Curators.shtml" rel="ajaxcontentarea">How we decide...</a></li>
+<li id="listTab"><a href="tabContents/Strain_Help.shtml" rel="ajaxcontentarea">Help documents</a></li>
+<li id="listTab"><a href="tabContents/Strain_Collaborators.shtml" rel="ajaxcontentarea">Collaborators</a></li>
+<li class="selected" id="listTab"><a href="tabContents/Strain_Resources.shtml" rel="ajaxcontentarea">Other links</a></li>
+</ul>
+
+<div id="ajaxcontentarea" class="contentstyle">
+<p>Some default text</p>
+</div>
+
+<script type="text/javascript">
+//Start Ajax tabs script for UL with id="maintab". Separate multiple ids each with a comma.
+startajaxtabs("maintab");
+</script>
+
+      </td>
+    </tr>
+  </table>
+</td>
+</tr>
+</table>
+<!--body table-->
+</div>
+
+<!--#include file='include/templateBodyStop.html'-->

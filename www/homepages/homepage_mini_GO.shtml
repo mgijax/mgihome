@@ -1,0 +1,251 @@
+<!--#include file='include/templateHead.html'-->
+
+  <title>MGI 4.0  Mouse Genome Informatics Gene Ontology Page</title>
+
+<link rel="stylesheet" type="text/css" href="include/homepage.css"/>
+
+<!------------- AJAX TABS CALLS -------------------------------------------------------->
+
+<link rel="stylesheet" type="text/css" href="ajaxtabs.css" />
+<script type="text/javascript" src="ajaxtabs.js">
+/***********************************************
+* Ajax Tabs Content script- © Dynamic Drive DHTML code library (www.dynamicdrive.com)
+* This notice MUST stay intact for legal use
+* Visit Dynamic Drive at http://www.dynamicdrive.com/ for full source code
+***********************************************/
+  </script>
+
+<!--#include file='include/templateBodyStart.html'-->
+
+<table width="100%" cellpadding="0" style="font-family:Verdana,Arial,Helvetica;font-size:12px">
+<tr bgcolor="#002255">
+<td bgcolor="#002255" width="850" nowrap="nowrap">
+</td>
+</tr>
+
+<tr> <!-- Page Header Title Bar -->
+<td>
+	<table width="100%" border="0" cellpadding="0" cellspacing="0">
+	<tr>
+		  <td align="left" valign="center" width="5%">		  </td>
+		  <td align="center" valign="center">
+
+			<font color="#002255" face="Arial,Helvetica" size="6">
+		    <b>Functional Annotation using
+		    the Gene Ontology (GO)</b>			</font>
+<!--			<hr noshade="noshade"/ color="#D0E0F0">-->
+		  </td>
+
+		  <td align="right" valign="center" width="5%">&nbsp;	      </td>
+	</tr>
+<tr>
+<td bgcolor="#FFFFFF" colspan="3">
+<div ID="Tagline" Name="Tagline" style="color:#003366;font-size:12px;font-style:italic; margin:5px 1px;" align="center">MGI's GO project provides functional annotations for mouse gene products using the Gene Ontology. </div>
+
+</td>
+</tr>
+	</table>
+</td>
+</tr>
+</table>
+<!-------------------------- MenuBar End ------------------------------------>
+<div class="homePageBody">
+<!---------------------strip of images - some mini-homepages won't have any images------------------->
+
+<div id="images" align="center" style="text-align:center; background-color:#FFFFFF; vertical-align:middle; height:122px; padding:1px 0px 1px 0px; min-width:825px;" NOWRAP="nowrap"><a href="<!--#include file="include/java_url.html"-->WIFetch?page=GOMarkerGraph&id=MGI:95484"><img src="images/GOgraphFasMus100.jpg" alt="-" border="1"></a>&nbsp;&nbsp;<a href="http://proto.informatics.jax.org/prototypes/vlad/"><img src="images/GO_VLAD_bio_100.jpg" alt="-" height="100" border="1"></a>&nbsp;<img src="images/GO_VLAD_mol_100.jpg" alt="-" height="100" border="1">&nbsp;&nbsp;<img src="images/GO_VLAD_cell_100.jpg" alt="-" height="100" border="1">&nbsp;&nbsp;<a href="<!--#include file="include/java_url.html"-->WIFetch?page=GOOrthologyGraph&id=MGI:95484"><img src="images/GOgraphFas100.jpg" alt="-" width="101" height="100" border="1"></a>&nbsp;&nbsp;<img src="images/120px-Catalase-1DGF.jpg" height="100" border="1">&nbsp;&nbsp;<img src="images/TreeFam_Cam1_100.jpg" height="100" border="1"><br>
+
+Do these images link? If so, to where? (I have some linking now.) Captions??? </div>
+<div id="mainText">
+<table width="100%" border="0" cellpadding="4"> <!--body table-->
+
+<tr valign="top">
+
+<!-- left column -->
+<td width="50%">
+  <table width="100%">
+
+
+  <!-- Disease Model of the week -->
+  <tr>
+  <td>
+  <table cellpadding="0.5" bgcolor="#DFEFFF" width="100%" >
+   <tr>
+   <td>
+
+     <table width="100%" border="0" cellpadding="2" cellspacing="0" class="grayBG">
+     <tr>
+       <td class="boxHead"><strong>What can I do here? </strong></td>
+     </tr>
+     <tr >
+       <td style="font-size:12px; color:#002255;">
+         <p style="line-height:1.2;">Search for genes by function, by cellular location, or by GO term.
+         <div style="position:absolute; left:100px; background-color:#FFFFFF; border:thin solid #DDDDDD; padding: 0px 1px; clear:both;"><a href="<!--#include file="include/java_url.html"-->WIFetch?page=markerQF" class="smaller">Genes &amp; Markers Query Form </a></div>
+
+         </p>
+             <p style="line-height:1.2;"><br/>
+               Browse the Gene Ontology.
+             <div style="position:absolute; left:100px; background-color:#FFFFFF; border:thin solid #DDDDDD; padding: 0px 1px; clear:both;"><a href="<!--#include file="include/wi_url.html"-->searches/GO_form.shtml" class="smaller">GO Browser </a></div>
+         </p>
+             <p style="line-height:1.2;"><br/>
+               View comparative annotations for mouse, human and rat.
+             <div style="position:absolute; left:100px; background-color:#FFFFFF; border:thin solid #DDDDDD; padding: 0px 1px; clear:both;"><a href="http://proto.informatics.jax.org/prototypes/GOgraphEX/orthology_index_prototype.html" class="smaller">Mouse-Human-Rat Comparative GO Graphs</a></div>
+         </p>
+
+             <p style="line-height:1.2;"><br/>
+               View comparative annotations for 13 organisms by OMIM disease terms.
+             <div style="position:absolute; left:100px; background-color:#FFFFFF; border:thin solid #DDDDDD; padding: 0px 1px; clear:both;"><a href="http://proto.informatics.jax.org/prototypes/GOgraphEX/OrthoDisease_Graphs/OMIM_DisorderGraphs/" class="smaller">Mary's OMIM index page</a></div>
+         </p>
+             <p style="line-height:1.2;"><br/>
+               Batch load gene IDs for GO TermFinder analysis. <em>(What is this? How to use both queries? Correct URLs? If it needs explanation, it's probably better as a &quot;How Do I..?&quot; item.)</em>
+
+             <div style="position:absolute; left:100px; background-color:#FFFFFF; border:thin solid #DDDDDD; padding: 0px 1px; clear:both;" class="smaller"><a href="<!--#include file="include/java_url.html"-->WIFetch?page=batchQF">MGI Batch Query </a>then <a href="http://search.cpan.org/dist/GO-TermFinder/">GO Term Finder</a></div>
+         </p>
+             <br/>
+       </td>
+     </tr>
+     </table>
+   </td>
+
+   </tr>
+  </table>
+  </td>
+  </tr>
+
+
+
+  <!-- Expression Image of the week -->
+  </table>
+  </td>
+
+<!-- end left column -->
+
+
+<!-- right column -->
+<td style="vertical-align:top">
+  <table>
+
+  <!-- How to -->
+  <tr>
+  <td>
+  <table cellpadding="0.5" bgcolor="#DFEFFF" width="100%" >
+   <tr>
+
+   <td>
+     <table width="100%" border="0" cellpadding="2" cellspacing="0" class="grayBG">
+     <tr>
+       <td class="boxHead"><strong>How do I...</strong></td>
+     </tr>
+     <tr >
+       <td style="font-size:12px">
+       <dl class="howDoI">
+
+         <dd class="howDoI">.. download all mouse GO annotations?&nbsp;<a href="" class="smaller homePageBody">Learn</a></dd>
+         <dd class="howDoI">.. obtain FASTA sequence files for genes that share GO annotations?&nbsp;<a href="" class="smaller homePageBody">Learn</a></dd>
+         <dd class="howDoI">..  view annotations for mouse/human/rat ortholog sets?&nbsp;<a href="" class="smaller homePageBody">Learn</a></dd>
+         <dd class="howDoI">..  view annotations for mouse/human/rat/chicken/fly and other homology sets?&nbsp;<a href="" class="smaller homePageBody">Learn</a></dd>
+         <dd class="howDoI">..  find shared function for gene sets?&nbsp;<a href="" class="smaller homePageBody">Learn</a></dd>
+
+         <dd class="howDoI">..  access GO annotation detail page for any gene in MGI?&nbsp;<a href="" class="smaller homePageBody">Learn</a></dd>
+         <!--		 <dt class="howDoI"><a href="">More</a></dt>
+-->       </dl>
+	   <a href="">More FAQs </a>
+     </tr>
+     </table>
+   </td>
+   </tr>
+
+  </table>
+  </td>
+  </tr>
+  <!-- end how to -->
+  <!-- Begin Stats -->
+  <tr>
+  <td>
+    <table cellpadding="0.5" bgcolor="#DFEFFF" width="100%" >
+      <tr>
+
+        <td>
+          <table width="100%" border="0" cellpadding="2" cellspacing="0" class="grayBG">
+            <tr>
+              <td class="boxHead"><strong>Functional Annotations  contains </strong></td>
+            </tr>
+            <tr >
+              <td style="font-size:12; color:#002255;">
+				<!--#include file="include/go_stats.shtml"-->
+              </td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+    </table>
+  </td>
+
+  </tr>
+
+
+  <!-- End Stats -->
+  </table>
+</td>
+</tr>
+<tr> <!-- What's New -->
+<td colspan="2">
+  <table cellpadding="0.5" bgcolor="#DFEFFF" width="100%" >
+    <tr>
+
+      <td>
+        <table width="100%" border="0" cellpadding="2" cellspacing="0" class="grayBG">
+          <tr>
+            <td class="boxHead"><strong>MGI GO news </strong></td>
+          </tr>
+          <tr >
+            <td style="font-size:12; color:#002255;"> <span class="smaller"><strong>08 August 2007</strong></span>
+
+                <ul class="line1 smaller">
+                  <li><a href="http://www.geneontology.org/newsletter/current-newsletter.shtml">Latest</a> GO newsletter </li>
+                  <li><a href="<!--#include file="include/mgihome_url.html"-->homepages/underConstruction.shtml">Mary's  </a>most recent improvements <em>(What goes here?)</em></li>
+                  </ul>
+              <a href="<!--#include file='include/mgihome_url.html'-->news/whatsnew.shtml" class="smaller">More news</a> </td>
+
+          </tr>
+        </table>
+      </td>
+    </tr>
+  </table>
+</td>
+</tr>
+
+<tr> <!-- Bottom tab: dynamic content -->
+<td colspan="2">
+
+  <table cellpadding="0.5" width="100%" >
+    <tr>
+      <td>
+        <ul id="maintab" class="shadetabs">
+<li class="selected"><a href="tabContents/GO_About.shtml" rel="ajaxcontentarea">About GO at MGI</a></li>
+<li><a href="tabContents/GO_Resources.shtml" rel="ajaxcontentarea">GO resources</a></li>
+<li><a href="tabContents/GO_Annot.shtml" rel="ajaxcontentarea">Public GO Annotation Projects</a></li>
+<li><a href="tabContents/GO_Literature.shtml" rel="ajaxcontentarea">Literature using GO</a></li>
+<li><a href="tabContents/GO_Curators.shtml" rel="ajaxcontentarea">Interpreting our annotations</a></li>
+<li><a href="tabContents/GO_Other.shtml" rel="ajaxcontentarea">Submit comments</a></li>
+</ul>
+
+<div id="ajaxcontentarea" class="contentstyle" style="color:#002255;">
+<p>Some default text</p>
+</div>
+
+<script type="text/javascript">
+//Start Ajax tabs script for UL with id="maintab". Separate multiple ids each with a comma.
+startajaxtabs("maintab");
+</script>
+      </td>
+    </tr>
+  </table>
+
+</td>
+</tr>
+</table>
+
+<!--body table-->
+</div>
+
+<!--#include file='include/templateBodyStop.html'-->

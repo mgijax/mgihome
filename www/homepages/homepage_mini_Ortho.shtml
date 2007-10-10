@@ -1,0 +1,239 @@
+<!--#include file='include/templateHead.html'-->
+
+  <title>MGI 4.0  Mouse Genome Informatics Mammalian Orthology Page</title>
+
+<link rel="stylesheet" type="text/css" href="include/homepage.css"/>
+
+<!------------- AJAX TABS CALLS -------------------------------------------------------->
+
+<link rel="stylesheet" type="text/css" href="ajaxtabs.css" />
+<script type="text/javascript" src="ajaxtabs.js">
+/***********************************************
+* Ajax Tabs Content script- © Dynamic Drive DHTML code library (www.dynamicdrive.com)
+* This notice MUST stay intact for legal use
+* Visit Dynamic Drive at http://www.dynamicdrive.com/ for full source code
+***********************************************/
+
+  </script>
+
+<SCRIPT language="JavaScript">
+  <!--
+
+  function roll_over(img_name, img_src)
+     {
+     document[img_name].src = img_src;
+     }
+  //-->
+</SCRIPT>
+
+<!--#include file='include/templateBodyStart.html'-->
+
+<table width="100%" cellpadding="0" style="font-family:Verdana,Arial,Helvetica;font-size:12px">
+<tr> <!-- Page Header Title Bar -->
+<td>
+	<table width="100%">
+	<tr>
+		  <td align="left" valign="center" width="20%">		  </td>
+		  <td align="center" valign="center" width="60%">
+
+			<font color="#002255" face="Arial,Helvetica" size="6">
+			  <b>Mammalian Orthology</b>			</font>
+		  </td>
+
+		  <td align="right" valign="center" width="20%">&nbsp;	      </td>
+	</tr>
+	</table>
+
+</td>
+</tr>
+
+<tr> <!-- Tagline specific to the mini-Homepage group -->
+<td bgcolor="#FFFFFF">
+<div ID="Tagline" Name="Tagline" style="color:#003366;font-size:12px;font-style:italic;line-height:1.2; margin-left:15px; margin-right:15px; margin-top:2px;" align="center">
+  MGI contains orthology information for mouse, human, rat and 14 other mammalian species.</div>
+  </div>
+</td>
+</tr>
+</table>
+<!-------------------------- MenuBar End ------------------------------------>
+<div class="homePageBody">
+
+<!---------------------strip of images - some mini-homepages won't have any images------------------->
+<div id="images" align="center" style="text-align:center; background-color:#FFFFFF; vertical-align:middle; height:106px; padding:6px 0px 2px 0px; min-width:999px;" NOWRAP="nowrap"><div id="ImageText4" style="display:inline;"></div><a onMouseOver="return overlib('Alex the rat', FGCOLOR, '#FEFEFE', BGCOLOR, '#002255', TEXTCOLOR, '#002255', CELLPAD, 3, BORDER, 2, CSSSTYLE, TEXTSTYLE, 'italic', TEXTSIZE, '60%', WRAP, ANCHOR, 'ImageText4', ANCHORALIGN,  'UR', 'UL');"  onMouseOut="nd();"><img src="images/rat-on-sequencer-color-thumb.jpg" alt="-" height="100" border="1"></a>&nbsp;
+  <div id="ImageText3" style="display:inline;"></div><a onMouseOver="return overlib('Tasha the boxer', FGCOLOR, '#FEFEFE', BGCOLOR, '#002255', TEXTCOLOR, '#002255', CELLPAD, 3, BORDER, 2, CSSSTYLE, TEXTSTYLE, 'italic', TEXTSIZE, '60%', WRAP, ANCHOR, 'ImageText3', ANCHORALIGN, 'UR', 'UL');"  onMouseOut="nd();"><img src="images/pic_Canis_familiaris.png" alt="-" height="102px"></a>&nbsp;<div id="ImageText7" style="display:inline;"></div><a onMouseOver="return overlib('Clint the chimp', FGCOLOR, '#FEFEFE', BGCOLOR, '#002255', TEXTCOLOR, '#002255', CELLPAD, 3, BORDER, 2, CSSSTYLE, TEXTSTYLE, 'italic', TEXTSIZE, '60%', WRAP, ANCHOR, 'ImageText7', ANCHORALIGN,  'UR', 'UL');"  onMouseOut="nd();"><img src="images/Pan_troglodytes-WashU.png" alt="-" height="100" border="1"></a>&nbsp;<div id="ImageText1" style="display:inline;"></div><a onMouseOver="return overlib('Black6', FGCOLOR, '#FEFEFE', BGCOLOR, '#002255', TEXTCOLOR, '#002255', CELLPAD, 3, BORDER, 2, CSSSTYLE, TEXTSTYLE, 'italic', TEXTSIZE, '60%', WRAP, ANCHOR, 'ImageText1', ANCHORALIGN, 'UR', 'UL');"  onMouseOut="nd();"><img src="images/C57BL-6J_MPD_100L.jpg" alt="-" width="176" height="100" border="1"></a>&nbsp;<A HREF="" onMouseOver="roll_over('Baby', 'images/Venter_Craig_100.jpg')" onMouseOut="roll_over('Baby', 'images/hhs-20crop.jpg')"><IMG SRC="images/hhs-20crop.jpg" height="100" NAME="Baby" BORDER="1"></A>
+
+&nbsp;<div id="ImageText2" style="display:inline;"></div></a>&nbsp;<a onMouseOver="return overlib('Anonymous Hereford', FGCOLOR, '#FEFEFE', BGCOLOR, '#002255', TEXTCOLOR, '#002255', CELLPAD, 3, BORDER, 2, CSSSTYLE, TEXTSTYLE, 'italic', TEXTSIZE, '60%', WRAP, ANCHOR, 'ImageText5', ANCHORALIGN,  'LR', 'UR');"  onMouseOut="nd();"><img src="images/hereford_Anon.jpg" alt="-" height="100" border="1"><div id="ImageText5" style="display:inline;"></div></a>&nbsp;<a onMouseOver="return overlib('The wallaby is holding a flower!!<br/>That is so precious!', FGCOLOR, '#FEFEFE', BGCOLOR, '#002255', TEXTCOLOR, '#002255', CELLPAD, 3, BORDER, 2, CSSSTYLE, TEXTSTYLE, 'italic', TEXTSIZE, '60%', WRAP, ANCHOR, 'ImageText6', ANCHORALIGN,  'LR', 'UR');"  onMouseOut="nd();"><img src="images/wallaby.jpg" alt="-" height="100" border="1px"><div id="ImageText6" style="display:inline;"></div></a>
+<div id="ImageText8" style="display:inline;"></div></a>
+</div>
+<div id="mainText">
+<table width="100%" border="0" cellpadding="4"> <!--body table-->
+<tr valign="top">
+
+<!-- left column -->
+
+<td width="50%">
+  <table>
+
+
+  <!-- Disease Model of the week -->
+  <tr>
+  <td>
+  <table cellpadding="0.5" bgcolor="#DFEFFF" width="100%" >
+   <tr>
+   <td>
+     <table width="100%" border="0" cellpadding="2" cellspacing="0" class="grayBG">
+     <tr>
+       <td class="boxHead"><strong>What can I do here? </strong></td>
+     </tr>
+     <tr >
+       <td style="font-size:12">
+         <p>Search for  orthologs between two species using marker symbol or  name, accession ID, chromosomal location, author or reference ID <a href="<!--#include file="include/wi_url.html"-->searches/homology_form.shtml" class="smaller">Orthology  Query Form</a></p>
+         <p>Search the Protein Information Resource SuperFamily  classification names <a href="<!--#include file="include/java_url.html"-->WIFetch?page=pirsfVocab&subset=A" class="smaller">Protein SuperFamily (PIRSF) Browser</a></p>
+
+         <p>Retrieve an Oxford Grid <a href="<!--#include file="include/wi_url.html"-->searches/oxfordgrid_form.shtml" class="smaller">Oxford Grid Form</a></p>
+         <p>View orthologies between mouse and human at the whole genome level <a href="<!--#include file="include/wi_url.html"-->reports/homologymap/mouse_human.shtml" class="smaller">Mouse-Human Orthology Map</a></p>
+         <p>View orthologies between mouse and rat at the whole genome level <a href="<!--#include file="include/wi_url.html"-->reports/homologymap/mouse_rat.shtml" class="smaller">Mouse-Rat Orthology Map</a></p>
+		 <p>Build a comparative map using the Linkage Map tool <a href="<!--#include file="include/wi_url.html"-->searches/linkmap_form.shtml" class="smaller">Comparative Maps</a></p>
+       </td>
+
+     </tr>
+     </table>
+   </td>
+   </tr>
+  </table>
+  </td>
+  </tr>
+
+
+
+  <!-- Expression Image of the week -->
+  </table>
+  </td>
+<!-- end left column -->
+
+
+<!-- right column -->
+<td style="vertical-align:top">
+  <table>
+
+  <!-- How to -->
+  <tr>
+
+  <td>
+  <table cellpadding="0.5" bgcolor="#DFEFFF" width="100%" >
+   <tr>
+   <td>
+     <table width="100%" border="0" cellpadding="2" cellspacing="0" class="grayBG">
+     <tr>
+       <td class="boxHead"><strong>How do I...</strong></td>
+     </tr>
+
+     <tr >
+       <td style="font-size:12">
+       <dl class="howDoI">
+         <dd class="howDoI">.. view a comparative map of mouse and human chromosomes?&nbsp;<a href="" class="smaller homePageBody">Learn</a></dd>
+         <dd class="howDoI">.. search or browse PIRSF protein superfamilies mapped to mouse, human, and rat genes?&nbsp;<a href="" class="smaller homePageBody">Learn</a></dd>
+         <!--		 <dt class="howDoI"><a href="">More</a></dt>
+-->       </dl>
+
+	   <a href="">More FAQs </a>
+     </tr>
+     </table>
+   </td>
+   </tr>
+  </table>
+  </td>
+  </tr>
+
+  <!-- What's new? -->
+  <tr>
+  <td>
+    <table cellpadding="0.5" bgcolor="#DFEFFF" width="100%" >
+      <tr>
+        <td>
+          <table width="100%" border="0" cellpadding="2" cellspacing="0" class="grayBG">
+            <tr>
+              <td class="boxHead"><strong>MGI contains </strong></td>
+
+            </tr>
+            <tr >
+              <td style="font-size:12">
+                <!--#include file="include/ortho_stats.shtml"-->
+              </td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+    </table>
+  </td>
+
+  </tr>
+
+
+  <!-- Stats -->
+  </table>
+</td>
+</tr>
+<tr> <!-- What's New -->
+<td colspan="2">
+  <table cellpadding="0.5" bgcolor="#DFEFFF" width="100%" >
+    <tr>
+
+      <td>
+        <table width="100%" border="0" cellpadding="2" cellspacing="0" class="grayBG">
+          <tr>
+            <td class="boxHead"><strong>Orthology news</strong></td>
+          </tr>
+          <tr >
+            <td style="font-size:12; color:#002255;"> <span class="smaller"><strong>08 August 2007</strong></span>
+
+                <ul class="line1 smaller">
+                  <li>Links to TreeFam are available from Orthology pages </li>
+                  </ul>
+              <a href="<!--#include file='include/mgihome_url.html'-->news/whatsnew.shtml" class="smaller">More news </a> </td>
+          </tr>
+        </table>
+      </td>
+
+    </tr>
+  </table>
+</td>
+</tr>
+
+<tr> <!-- Bottom tab: dynamic content -->
+<td colspan="2">
+
+  <table cellpadding="0.5" width="100%" >
+    <tr>
+      <td>
+
+        <ul id="maintab" class="shadetabs">
+<li id="listTab"><a href="tabContents/Ortho_About.shtml" rel="ajaxcontentarea">About Orthology</a></li>
+<li id="listTab"><a href="tabContents/Ortho_Curators.shtml" rel="ajaxcontentarea">How we decide...</a></li>
+<li class="selected" id="listTab"><a href="tabContents/Ortho_Help.shtml" rel="ajaxcontentarea">Help documents</a></li>
+<li id="listTab"><a href="tabContents/Ortho_Collaborators.shtml" rel="ajaxcontentarea">Collaborators</a></li>
+<li id="listTab"><a href="tabContents/Ortho_Resources.shtml" rel="ajaxcontentarea">Other links</a></li>
+</ul>
+
+<div id="ajaxcontentarea" class="contentstyle">
+<p>Some default text</p>
+
+</div>
+
+<script type="text/javascript">
+//Start Ajax tabs script for UL with id="maintab". Separate multiple ids each with a comma.
+startajaxtabs("maintab");
+</script>
+
+      </td>
+    </tr>
+  </table>
+</td>
+</tr>
+
+</table>
+
+<!--body table-->
+</div>
+
+<!--#include file='include/templateBodyStop.html'-->
