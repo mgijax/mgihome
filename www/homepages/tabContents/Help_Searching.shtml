@@ -1,0 +1,54 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<title>Untitled Document</title>
+</head>
+
+<body>
+
+<table width="100%">
+	<tr>
+		<td width="50%">
+			Your search options at MGI:
+			<ul id="Help">
+				<li>Search Tool - quick searching</li>
+				<li>Advanced query forms
+				  <ul>
+				  <li>Genes &amp; Markers</li>
+				  <li>Phenotypes, Alleles, Diseases</li>
+					<ul>
+					<li>Allele QF</li>
+					<li>MP Browser</li>
+					<li>OMIM Browser</li>
+					</ul>
+				  <li>Gene Expression
+					<ul>
+					<li>Expression Data</li>
+					<li>Advanced - one tissue/stage not others</li>
+					<li>Expression literature indexed by gene</li>
+					</ul>
+				  </li>
+				  </ul>
+				</li>
+				<li>Other searching information:
+				  <ul>
+				  <li>Using Booleans (&quot;AND&quot;, &quot;OR&quot;), quotation marks, wildcard characters, word-stemming</li>
+				  </ul>
+				</li>
+			</ul>
+			Search MGI's text pages and Help pages using Google:
+			<form method="get" action="http://www.google.com/search">
+				<input type="text"   name="q" size="25" maxlength="255" value="" />
+				<input type="submit" value="Search MGI with Google" class="buttonLabelKLF"  />
+				<input type="hidden"  name="sitesearch" value="informatics.jax.org" />
+			</form>
+		</td>
+	</tr>
+</table>
+
+</body>
+</html>
