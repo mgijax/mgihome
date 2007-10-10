@@ -1,0 +1,78 @@
+<HTML>
+<HEAD>
+<TITLE><!--#include file='include/mgiversion.html'--> MGI Release 3.54 Announcement - June 14, 2007</TITLE>
+<!--#include file="include/stylesheet.html"-->
+
+<META NAME ="keywords" CONTENT="mice, SQL, querying,  database queries, query forms">
+<META NAME="description" CONTENT="This page details the changes in the to MGI 2.98 release at The Jackson Laboratory."> 
+<!--Last updated on 11/10/05-->
+</HEAD>
+<!--#include file="include/bodyStart.html"-->
+<BODY BGCOLOR="#ffffff">
+<TABLE WIDTH="100%" BORDER=0 CELLPADDING=2 CELLSPACING=1>
+ <TR>
+  <TD WIDTH="100%" BGCOLOR="#D0E0F0">
+   <TABLE WIDTH="100%" BORDER=0 CELLPADDING=0 CELLSPACING=0>
+    <TR>
+     <TD WIDTH="20%" VALIGN="center" ALIGN="left">&nbsp;</TD>
+     <TD WIDTH="60%" ALIGN="center" VALIGN="center">
+      <FONT COLOR="#000000" SIZE=5 FACE="Arial,Helvetica">
+      MGI Release 3.54 Announcement - June 14, 2007
+      </FONT>
+     </TD>
+     <TD WIDTH="20%" VALIGN="center" ALIGN="center">&nbsp;</TD>
+    </TR>
+   </TABLE>
+  </TD>
+ </TR>
+</TABLE>
+
+<p>MGI's 3.54 release features a new <A HREF="<!--#include file='include/java_url.html'-->WIFetch?page=batchQF">batch query tool</a> for accessing information about many genes/markers all at once. 
+ <ul>
+    <li>Given a set of gene symbols or input identifiers (IDs) (such as MGI accession, RefSNP, or VEGA IDs) from, for example, a spreadsheet, you can copy and paste (or upload a file containing) a column of data into the query tool. </li><br>
+  <li>You can specify the output you want in the results (for example, nomenclature; genome location; Ensembl, Entrez, or VEGA gene identifiers; gene ontology or mammalian phenotype data; GenBank/RefSeq, UniProt, RefSNP, or MGI Allele IDs).</li><br>
+
+<li>You can also use the batch query to find duplications, ambiguities, and variations in data. You could check, for example, that an input list of MGI identifiers returns the same number of Ensembl, Entrez, and VEGA IDs on any given day, and that switching the input and output IDs returns identical data.</li><br>
+
+<li>You can view results in either web or tab-delimited format.</li>
+</ul>
+
+
+</P>
+
+
+<hr>
+<!--#include file="include/bodyStop.html"-->
+</body>
+</html>
+<!--
+Warranty Disclaimer and Copyright Notice
+
+ THE JACKSON LABORATORY MAKES NO REPRESENTATION ABOUT THE SUITABILITY OR
+ ACCURACY OF THIS SOFTWARE OR DATA FOR ANY PURPOSE, AND MAKES NO WARRANTIES,
+ EITHER EXPRESS OR IMPLIED, INCLUDING MERCHANTABILITY AND FITNESS FOR A
+ PARTICULAR PURPOSE OR THAT THE USE OF THIS SOFTWARE OR DATA WILL NOT
+ INFRINGE ANY THIRD PARTY PATENTS, COPYRIGHTS, TRADEMARKS, OR OTHER RIGHTS.
+ THE SOFTWARE AND DATA ARE PROVIDED "AS IS".
+
+ This software and data are provided to enhance knowledge and encourage
+ progress in the scientific community and are to be used only for research
+ and educational purposes.  Any reproduction or use for commercial purpose
+ is prohibited without the prior express written permission of the Jackson
+ Laboratory.
+
+Copyright © 1996, 1999, 2002 by The Jackson Laboratory
+All Rights Reserved
+-->
+
+
+
+
+
+
+
+
+
+
+
+

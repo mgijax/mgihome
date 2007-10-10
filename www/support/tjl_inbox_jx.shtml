@@ -1,0 +1,90 @@
+<HTML>
+<!--This form created for the www.jax.org site. This form is used to input
+customer requests into the TJL HelpDesk database. The CGI script resides on the 
+informatics web server. Contact Paul Szauter (x6426)
+Mouse Genome Informatics Support with questions. Version 1.0 11/17/98 -->
+<HEAD>
+<TITLE>TJL Support Express Mail</TITLE>
+<!--#include file="include/stylesheet.html"-->
+
+</HEAD>
+<BODY BGCOLOR=#FFFFFF>
+<Hr>
+<H2>TJL HelpDesk <EM>Express</EM> Mail</H2>
+We want to hear from you.  Use this form to enter your comments, questions,
+suggestions, or report problems.  Please include contact information as
+requested in the fields below so that we can respond promptly.  Be as
+detailed in your message as possible.  Thanks!
+<P>
+<P>
+<HR>
+<FORM METHOD="POST" ACTION="tjl_submit_inbox_jx.cgi">
+<DL>
+<DT><B>From:</B><P>
+<DD><SELECT NAME="title">
+<option> Dr.
+<option> Prof.
+<option> Mr.
+<option> Ms.
+</SELECT>
+<DT>First Name:<BR>
+<DD><INPUT TYPE="text" NAME="firstname" SIZE=30>
+<DT>Last Name:<BR>
+<DD><INPUT TYPE="text" NAME="lastname" SIZE=30>
+<DT>Institution:<BR>
+<DD><INPUT TYPE="text" NAME="inst" SIZE=30>
+<DT>E-mail address:<BR>
+<DD><INPUT TYPE="text" NAME="emailaddr" SIZE=30><br>
+<DT>Position:<BR>
+<DD><SELECT name="positn">
+<option> Researcher
+<option> Student
+<option> Software engr
+<option> Other
+</SELECT>
+<DT>Phone Number:<BR>
+<DD><INPUT TYPE="text" NAME="ph" SIZE=30><br>
+<DT>FAX Number:<BR>
+<DD><INPUT TYPE="text" NAME="fx" SIZE=30><P>
+<DT><B>To:<BR>
+<DD>micetech@jax.org<P></B>
+<DT>Subject:<BR>
+<DD><INPUT TYPE="text" NAME="subject" SIZE=55>
+<DT>Message:<BR>
+<DD><TEXTAREA WRAP=soft NAME="message" ROWS=10 COLS=55></TEXTAREA><P>
+<DT><B>Attn:</B>
+<DD><SELECT NAME="attnto">
+<OPTION> ANY Tech Support staff
+<OPTION value=""> Jeff Lake
+<OPTION value="acv"> Alicia Valenzuela
+</SELECT>
+</DL>
+<input type="hidden" name="domain" value="Tech_SVC"><BR>
+<input type="hidden" name="assign_gp" value="Tech_SVC">
+
+<HR>
+<INPUT TYPE=submit VALUE="Submit"> <INPUT TYPE=reset VALUE="Reset Form">
+<HR>
+</FORM>
+</BODY>
+</HTML>
+
+<!--
+Warranty Disclaimer and Copyright Notice
+
+ THE JACKSON LABORATORY MAKES NO REPRESENTATION ABOUT THE SUITABILITY OR 
+ ACCURACY OF THIS SOFTWARE OR DATA FOR ANY PURPOSE, AND MAKES NO WARRANTIES, 
+ EITHER EXPRESS OR IMPLIED, INCLUDING MERCHANTABILITY AND FITNESS FOR A 
+ PARTICULAR PURPOSE OR THAT THE USE OF THIS SOFTWARE OR DATA WILL NOT 
+ INFRINGE ANY THIRD PARTY PATENTS, COPYRIGHTS, TRADEMARKS, OR OTHER RIGHTS.  
+ THE SOFTWARE AND DATA ARE PROVIDED "AS IS".
+
+ This software and data are provided to enhance knowledge and encourage 
+ progress in the scientific community and are to be used only for research 
+ and educational purposes.  Any reproduction or use for commercial purpose 
+ is prohibited without the prior express written permission of the Jackson 
+ Laboratory.
+
+Copyright © 1996, 1999, 2002 by The Jackson Laboratory
+All Rights Reserved
+-->

@@ -1,0 +1,95 @@
+<HTML>
+<HEAD>
+<TITLE><!--#include file='include/mgiversion.html'--> MGI Release 2.97 Announcement - November 5, 2003</TITLE>
+<!--#include file="include/stylesheet.html"-->
+<META NAME ="keywords" CONTENT="Gene Expression Database, GXD, in situ reporter, knock-in, mutated specimen, Gene Expression Literature Index, genetics, MGI, Mouse Genome Informatics, genes, anatomical structures, Mouse Anatomical Dictionary, Mouse Anatomical Dictionary Browser, mice, SQL, querying,  database queries, query forms">
+<META NAME="description" CONTENT="This page is about the latest enhancements to the Gene Expression Database (GXD) from Mouse Genome Informatics at The Jackson Laboratory.">
+<!--Last updated on October 08, 2003-->
+</HEAD>
+<!--#include file="include/bodyStart.html"-->
+<BODY BGCOLOR="#ffffff">
+<TABLE WIDTH="100%" BORDER=0 CELLPADDING=2 CELLSPACING=1>
+ <TR>
+  <TD WIDTH="100%" BGCOLOR="#D0E0F0">
+   <TABLE WIDTH="100%" BORDER=0 CELLPADDING=0 CELLSPACING=0>
+    <TR>
+     <TD WIDTH="20%" VALIGN="center" ALIGN="left">&nbsp;</TD>
+     <TD WIDTH="60%" ALIGN="center" VALIGN="center">
+      <FONT COLOR="#000000" SIZE=5 FACE="Arial,Helvetica">
+      MGI Release 2.97 Announcement - November 5, 2003
+      </FONT>
+     </TD>
+     <TD WIDTH="20%" VALIGN="center" ALIGN="center">&nbsp;</TD>
+    </TR>
+   </TABLE>
+  </TD>
+ </TR>
+</TABLE>
+
+<p>MGI is pleased to announce its 2.97 release. The primary features of the release are enhancements to our Gene Expression Database (GXD). <br>
+
+  <ul>
+  <LI><A HREF="<!--#include file='include/wi_url.html'-->searches/expression_form_exp.shtml">Gene Expression Data Expanded Query Form</A><br>
+This new form lets you search for genes expressed in some anatomical structures and/or developmental stages but not in others. </li><br>
+
+<LI><B>Anatomical Dictionary Browser Term Detail</B><BR>
+This page now provides a link to the full anatomical hierarchy of the Mouse Anatomical Dictionary. You can scroll the resulting display and see immediately where your search term falls by stage and structure in the Dictionary. Click
+<a href="<!--#include file='include/wi_url.html'-->searches/anatdictTree.cgi?structureKey=297&stage=12#TOP">here</a> for a sample search on the term <i>heart</i>.</li><br>
+
+<li>Anatomical Dictionary Browser Query Refiner<br>
+This new form lets you narrow your searches by entering additional parameters, based upon expression results from the standard <A HREF="<!--#include file='include/wi_url.html'-->searches/anatdict_form.shtml">Mouse Anatomical Dictionary Browser</a> form. Access to the Query Refiner is from an Anatomical Browser Term Detail page.<br><br>
+
+<li><A HREF="<!--#include file='include/wi_url.html'-->searches/gxdindex_form.shtml">Gene Expression Literature Index Query Form</a><br>
+A redesign of the summary for these queries allows you to easily determine which references are of most interest. A table summarizes query matches by age and assay type. A number indicates whether or not the paper exists in the detailed data portion of the database and links to the matching index results in each reference. Type a gene name in the Gene Symbol/Name box on the Query Form and click <i>Search</i> to see the new summary.<br><br>
+
+<li><B><I>in situ</I> reporter (knock in)</B><br>
+We added this assay type to the <A HREF="<!--#include file='include/wi_url.html'-->searches/expression_form.shtml">Gene Expression Data Query Form</a> and the
+<A HREF="<!--#include file='include/wi_url.html'-->searches/gxdindex_form.shtml">Gene Expression Literature Index</a>. </li><br>
+
+<li><b>Mutant specimens</b><br>
+ You can now query for expression data obtained from mutant specimens using the Mutated Gene field on both the Gene Expression Data  and the Gene Expression Data Expanded query forms.</li><br>
+
+
+
+
+<li><B>Query summaries</B><br>
+Most of our query summary reports now feature a new section at the top of the page. A box lists the        query report title, the fields you selected on the form, your sorting and limiting options, and all the values that your search returns. In general, fields are listed in the same order as they appear on the query form.
+<!--although <b>Max number of items returned</b> appears last. (* Marker, Allele, Polymorphisms, Orthology, Mapping Data, Probes and Clones, Expression, and cDNA Clone summaries).-->
+</UL>
+
+
+<br><br>
+<hr>
+<!--#include file="include/bodyStop.html"-->
+</body>
+</html>
+<!--
+Warranty Disclaimer and Copyright Notice
+
+ THE JACKSON LABORATORY MAKES NO REPRESENTATION ABOUT THE SUITABILITY OR
+ ACCURACY OF THIS SOFTWARE OR DATA FOR ANY PURPOSE, AND MAKES NO WARRANTIES,
+ EITHER EXPRESS OR IMPLIED, INCLUDING MERCHANTABILITY AND FITNESS FOR A
+ PARTICULAR PURPOSE OR THAT THE USE OF THIS SOFTWARE OR DATA WILL NOT
+ INFRINGE ANY THIRD PARTY PATENTS, COPYRIGHTS, TRADEMARKS, OR OTHER RIGHTS.
+ THE SOFTWARE AND DATA ARE PROVIDED "AS IS".
+
+ This software and data are provided to enhance knowledge and encourage
+ progress in the scientific community and are to be used only for research
+ and educational purposes.  Any reproduction or use for commercial purpose
+ is prohibited without the prior express written permission of the Jackson
+ Laboratory.
+
+Copyright © 1996, 1999, 2002 by The Jackson Laboratory
+All Rights Reserved
+-->
+
+
+
+
+
+
+
+
+
+
+

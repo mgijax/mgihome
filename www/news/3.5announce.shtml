@@ -1,0 +1,99 @@
+<HTML>
+<HEAD>
+<TITLE><!--#include file='include/mgiversion.html'--> MGI Release 3.5 Announcement - June 14, 2006</TITLE>
+<!--#include file="include/stylesheet.html"-->
+
+<META NAME="description" CONTENT="This page details the changes in the to MGI 3.5 release at The Jackson Laboratory."> 
+<!--Last updated on 11/3/05-->
+</HEAD>
+<!--#include file="include/bodyStart.html"-->
+<BODY BGCOLOR="#ffffff">
+<TABLE WIDTH="100%" BORDER=0 CELLPADDING=2 CELLSPACING=1>
+ <TR>
+  <TD WIDTH="100%" BGCOLOR="#D0E0F0">
+   <TABLE WIDTH="100%" BORDER=0 CELLPADDING=0 CELLSPACING=0>
+    <TR>
+     <TD WIDTH="20%" VALIGN="center" ALIGN="left">&nbsp;</TD>
+     <TD WIDTH="60%" ALIGN="center" VALIGN="center">
+      <FONT COLOR="#000000" SIZE=5 FACE="Arial,Helvetica">
+
+      MGI Release 3.5 Announcement - June 14, 2006
+      </font>
+     </td>
+     <td width="20%" valign="center" align="center">&nbsp;</td>
+    </tr>
+   </tbody></table>
+  </td>
+ </tr>
+</tbody></table>
+
+<p>MGI is pleased to announce the release of version 3.5.
+</p>
+<ul>
+
+<li>We added the ability to query by <b>Marker range</b> </i> (this field is located in the <b>Map Position</b> section) on many of our query forms. You can use any two markers (having genome coordinates and located on the same chromosome) as start and end parameters. The query is inclusive of the markers you enter and returns any marker with at least one base pair overlapping the range you specify (see 
+<a href="<!--#include file='include/userdocs_url.html'-->map_position_blurb.shtml">Using  Map Position Fields on MGI Query Forms</a> for further details).  As an example, a region of mouse Chromosome 2, bounded proximally by D2Mit241 and distally by D2Mit125, is associated with alcohol consumption in male mice and given the symbol <i>Alcp1</i>. You can use the MGI <a href="<!--#include file='include/java_url.html'-->WIFetch?page=markerQF">Genes and Markers Query Form</a>  to search for candidate genes on Chromosome 2 between these markers and sort the results by genome coordinates.
+
+<p>You can specify a marker range on any of the following MGI query forms:
+<ul>
+  <li><a href="<!--#include file='include/java_url.html'-->WIFetch?page=markerQF">Genes and Markers Query Form</a> (search for genes, DNA segments, cytogenetic markers, QTLs, pseudogenes, BAC/YAC ends, other genome features) </li>
+  <li><a href="<!--#include file='include/java_url.html'-->WIFetch?page=expressionQF">Gene Expression Data Query Form</a> (search for detailed gene expression assay results)</li>
+  <li><a href="<!--#include file='include/java_url.html'-->WIFetch?page=expressionQFexpanded">Gene Expression Data Expanded Query Form</a> (search for genes expressed in some anatomical structures and/or developmental stages but not in others)</li>
+  <li><a href="<!--#include file='include/java_url.html'-->WIFetch?page=probeQF">Molecular Probes and Clones Query Form</a> (search by probe name, sequence type, vector type, marker symbol, origin, or reference) </li>
+  <li><a href="<!--#include file='include/java_url.html'-->WIFetch?page=cDNAQF">cDNA Clone Query Form</a> (search for information based on tissue or cell-line source)</li>
+<li><a href="<!--#include file='include/java_url.html'-->WIFetch?page=ADRefiner&stage=1&structure=1">Anatomical Dictionary Query Refiner</a> (refine searches on anatomical structures or developmental stages accessed using 
+<a href="<!--#include file='include/wi_url.html'-->searches/anatdict_form.shtml">The Mouse Anatomical Dictionary Browser)</a></li>
+<li><a href="<!--#include file='include/java_url.html'-->WIFetch?page=snpQF">Mouse SNP Query Form</a> (search by strains, strain comparisons, SNP attributes, map position, marker range, or associated genes)</li>
+</ul><br>
+
+<li>Genome coordinates for all MIT markers are now available.</li><br>
+
+<li>You can use genome coordinates as search parameters on the Gene Expression, Gene Expression Expanded, Anatomical Dictionary Browser Query Refiner, Molecular Probes and Clones, and cDNA Clone query forms. </li><br>
+<li>There is a new tab-delimited output option on the Genes and Markers Query Form and the ability to save your data in an Excel file on the Mouse SNP Query Form. </li><br>
+
+<li>The Mammalian Orthology Query Results report now includes links to any relevant MGI PIRSF superfamilies, MGI gene families, VISTA, and Homologene databases. From the report, you can select representative mouse, human, or rat transcript and protein sequences to download in FASTA format or forward to MouseBLAST.</li><br>
+
+<li>New Gene Ontology (GO) annotation graphs are available. 
+  <ul>
+    <li>The Gene Ontology Classifications GO Graph (accessed from the MGI Gene  Detail page) displays the visual relationship between molecular function, cellular component, and biological process annotations for a given gene or marker. As an example, see 
+<a href="<!--#include file='include/java_url.html'-->WIFetch?page=GOMarkerGraph&id=MGI:97898">Ren1</a>.</li>
+    <li>The Mouse-Human-Rat Comparative Graph</a> (available from MGI Mammalian Orthology reports) is a visual display of curated GO classifications for mouse, human, and rat orthologs annotated from the biomedical literature. As an example, see 
+<a href="<!--#include file='include/java_url.html'-->WIFetch?page=GOOrthologyGraph&id=MGI:97898">Ren1</a>.
+</li>
+
+</ul>
+Terms in the boxes link to additional GO information at MGI.</p>
+</ul>
+<hr>
+<p>MGI is the community model organism database for the laboratory mouse. 
+</p>
+<hr>
+<!--#include file="include/bodyStop.html"-->
+</body>
+</html>
+<!--
+Warranty Disclaimer and Copyright Notice
+
+ THE JACKSON LABORATORY MAKES NO REPRESENTATION ABOUT THE SUITABILITY OR
+ ACCURACY OF THIS SOFTWARE OR DATA FOR ANY PURPOSE, AND MAKES NO WARRANTIES,
+ EITHER EXPRESS OR IMPLIED, INCLUDING MERCHANTABILITY AND FITNESS FOR A
+ PARTICULAR PURPOSE OR THAT THE USE OF THIS SOFTWARE OR DATA WILL NOT
+ INFRINGE ANY THIRD PARTY PATENTS, COPYRIGHTS, TRADEMARKS, OR OTHER RIGHTS.
+ THE SOFTWARE AND DATA ARE PROVIDED "AS IS".
+
+ This software and data are provided to enhance knowledge and encourage
+ progress in the scientific community and are to be used only for research
+ and educational purposes.  Any reproduction or use for commercial purpose
+ is prohibited without the prior express written permission of the Jackson
+ Laboratory.
+
+Copyright © 1996, 1999, 2002, 2005, 2006 by The Jackson Laboratory
+All Rights Reserved
+-->
+
+
+
+
+
+
+

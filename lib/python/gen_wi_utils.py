@@ -44,7 +44,7 @@ def getWideFooter ():
 	# Effects: reads the footer via an http connection
 	# Throws: nothing
 
-	FooterUrl = os.path.join (config['JAVA_WI'], 'WIFetch?page=footer')
+	FooterUrl = os.path.join (config['JAVA_WI'], 'servlet/WIFetch?page=footer')
 	lines, errors = httpReader.getURL (FooterUrl)
 	if errors:
 		return ''
@@ -66,7 +66,7 @@ def getToolbar ():
 	# Effects: reads the toolbar via an http connection
 	# Throws: nothing
 
-	ToolbarUrl = os.path.join (config['JAVA_WI'], 'WIFetch?page=toolbar')
+	ToolbarUrl = os.path.join (config['JAVA_WI'], 'servlet/WIFetch?page=toolbar')
 	lines, errors = httpReader.getURL (ToolbarUrl)
 	if errors:
 		return ''

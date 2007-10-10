@@ -1,0 +1,110 @@
+<HTML>
+<HEAD>
+<TITLE>MGI 2.2 Release Announcement</TITLE>
+<!--#include file="include/stylesheet.html"-->
+</head>
+
+<BODY BGCOLOR="#ffffff">
+<!--#include file="include/bodyStart.html"--><CENTER>
+<TABLE WIDTH="100%" BORDER=0 CELLPADDING=2 CELLSPACING=1>
+ <TR>
+  <TD WIDTH="100%" BGCOLOR="#D0E0F0">
+   <TABLE WIDTH="100%" BORDER=0 CELLPADDING=0 CELLSPACING=0>
+    <TR>
+     <TD WIDTH="20%" VALIGN="center" ALIGN="left">&nbsp;</TD>
+     <TD WIDTH="60%" ALIGN="center" VALIGN="center">
+      <FONT COLOR="#000000" SIZE=5 FACE="Arial,Helvetica">
+       Mouse Genome Informatics (MGI) 2.2 Release Announcement
+      </FONT>
+     </TD>
+     <TD WIDTH="20%" VALIGN="center" ALIGN="center">&nbsp;</TD>
+    </TR>
+   </TABLE>
+  </TD>
+ </TR>
+</TABLE>
+
+<I>April 12, 1999</I></CENTER>
+
+<H3>MGI Web Site Reorganized</H3>
+<B><FONT COLOR="#E71248" SIZE=5>Locations and names of all files in the MGI web site have changed. </B></FONT>
+<P>
+The directory structure and file-naming conventions within the MGI
+web site have changed. An overhaul of our web site organization has long been needed to facilitate MGI mirror-site installation and maintenance.  We are trying to make this transition as easy as possible for our users and for web sites that link to MGI resources. If you have created <B>bookmarks</B> to access MGI web pages, you will still be able to get to the appropriate resource with the old URL but you will see a message with a link to the new URL. Please update your bookmarks to reflect the new locations and file names.<P>
+For web sites using links to <B>CGI scripts</B> to retrieve information from  MGD/GXD, web administrators should refer to the <A HREF="../other/link_instructions.shtml">updated instructions for creating links to MGI</A>. <EM>The old CGI scripts will continue to be supported through mid-summer 1999</EM>. Web sites that provide hyper-links to MGI web pages <EM>other than the MGI Home Page</EM> will need to have these links updated to reflect the new URLs. The URL for the MGI Home Page, http://www.informatics.jax.org/, remains unchanged.
+
+<H3>Enhancements to the Display of Marker Details</H3>
+In response to user requests, the marker detail display now includes <EM>sequence database accession IDs</EM> with hyper-links to DDBJ, EMBL, GSDB and GenBank. Sequence accession IDs are included in the listing, <B>Other Database Links for this Marker</B>, shown below the Additional Information portion of the detail record. <EM>See</EM> the <A HREF="<!--#include file='include/wi_url.html'-->searches/accession_report.cgi?id=MGI:98880">marker detail for <B>Tyr</B></A>, for example.
+<P>
+The list of alleles for a marker is now accessed via the <B>Phenotypic Alleles</B> hyper-link in the <B>Additional Information</B> section of the marker detail record.
+<P>
+<A HREF="<!--#include file='include/wi_url.html'-->index.shtml"><H3>Quick Gene Search</H3></A>
+The Quick Gene Search, located on the MGI Home Page, enables you to search for
+mouse genes using a single gene symbol or name. You can use a partial symbol or name with appropriate wildcards. A search yielding a single result will open a window on the detail record for the gene.
+<H3><A HREF="../other/mouse_facts1.shtml">Mouse Facts</A> Pages</H3>
+The Mouse Facts pages present information from various sources and include the following items:
+<UL><FONT SIZE=2>
+  <LI>Mouse sequencing progress summary
+  <LI>Genome length estimates
+  <LI>MGD chromosomal length and gene distribution
+  <LI>Link to Codon Usage Tabulated from GenBank (CUTG) search form
+  <LI>Links to NIH, molecular resources, and other sites of interest to researchers
+  <LI>Mouse physiology information
+</FONT></UL>
+<H3>Search Forms Menu</H3>
+All MGI pages now include a Search Forms selection list directly under the MGI banner. While the text links in the banner provide access to various menus and other resources, the Search Forms menu provides quick access to the MGI query forms. The Search Forms menu replaces the Query Menu and works with all platforms and browsers.
+<H3>New Data Sets and Reports</H3>
+<H4>Additions to <A HREF="<!--#include file='include/ftp_url.html'-->pub/reports/index.html">MGI Data and Statistical Reports</A></H4>
+<UL>
+<LI>List of Strains with Polymorphism Data
+<LI>Gene Expression: List of Mouse Tissues
+<LI>Alternate Transcripts Report
+</UL></EM><P>
+
+
+<H4><I>See</I> <A HREF="<!--#include file='include/ftp_url.html'-->pub/datasets/index.html">Other Contributed Data Sets</A> for details on the following new additions:</H4>
+<UL>
+<LI>Polymorphisms in microsatellite markers for 129/J vs other inbred strains
+<LI>RI strain distribution patterns for AXB and BXA
+<LI>Inferring EST map positions using SSLP markers
+</UL>
+These data sets are available in text and MS Excel formats.
+<H3>MGI User Survey</H3>
+<EM>Please take a few minutes to complete our user survey</EM>. Your input will help us to make improvements to MGI resources. We will publish a report on the results of the survey in July, 1999.
+<H3><A HREF="../submissions/submissions_menu.shtml">Submitting Data</A></H3>
+
+We encourage contributions of electronic data sets from the scientific community. Any type of data that MGD or GXD maintains can be submitted as an electronic contribution although
+mapping data, polymorphisms, and mammalian homologies are currently the most
+common. Each electronic submission receives a permanent database accession
+ID. For data submission guidelines, see the
+<A HREF="../submissions/submit.shtml"> submissions page</A> or
+send E-mail to <A HREF="mailto:submissions@informatics.jax.org">
+submissions@informatics.jax.org</A>.<P>
+
+To submit a proposed locus or gene symbol, please use the form at
+<A HREF="../nomen/">
+http://www.informatics.jax.org/support/nomen/</A>.
+
+<HR>
+
+<!--
+Warranty Disclaimer and Copyright Notice
+
+ THE JACKSON LABORATORY MAKES NO REPRESENTATION ABOUT THE SUITABILITY OR
+ ACCURACY OF THIS SOFTWARE OR DATA FOR ANY PURPOSE, AND MAKES NO WARRANTIES,
+ EITHER EXPRESS OR IMPLIED, INCLUDING MERCHANTABILITY AND FITNESS FOR A
+ PARTICULAR PURPOSE OR THAT THE USE OF THIS SOFTWARE OR DATA WILL NOT
+ INFRINGE ANY THIRD PARTY PATENTS, COPYRIGHTS, TRADEMARKS, OR OTHER RIGHTS.
+ THE SOFTWARE AND DATA ARE PROVIDED "AS IS".
+
+ This software and data are provided to enhance knowledge and encourage
+ progress in the scientific community and are to be used only for research
+ and educational purposes.  Any reproduction or use for commercial purpose
+ is prohibited without the prior express written permission of the Jackson
+ Laboratory.
+
+Copyright © 1996, 1999, 2002 by The Jackson Laboratory
+All Rights Reserved
+-->
+<!--#include file="include/bodyStop.html"--></BODY>
+</HTML>

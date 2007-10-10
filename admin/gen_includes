@@ -45,23 +45,12 @@ def stringToFile (s, filename):
     listToFile ( [s], filename)
     return
 
-def createIncludeLink (includeName, fileLoc ) :
-# 
-# INPUTS: includeName - name of the soft link to be created
-#         fileLoc - full path to source file
-    filePath = os.path.join(INCLUDEDIR, includeName)
-    if os.path.exists(filePath):
-        os.system("rm " + filePath)
-    os.system("ln -s " + fileLoc + " " + filePath)
-
 def main ():
     listToFile (homelib.banner(), '../www/include/banner.html')
     listToFile (homelib.footer(), '../www/include/footer.html')
     stringToFile (config['WI_URL'], '../www/include/wi_url.html')
     stringToFile ('"%s";' % config['WI_URL'], '../www/include/wi_url2.html')
     stringToFile (config['FTP_URL'], '../www/include/ftp_url.html')
-    stringToFile (config['MTB_URL'], '../www/include/mtb_url.html')
-    stringToFile (config['MPD_URL'], '../www/include/mpd_url.html')
     #  This version of the ftp_url file is being generated to support a problem
     #  found in the implementation of TR7388.  The newline being written to
     #  the file after the URL was not being handled well via firefox.
@@ -124,11 +113,6 @@ def main ():
 	'../www/include/komp_nih_url.html')
     stringToFile (config['IMSR_HOME'],
 	'../www/include/imsr_home_url.html')
-
-    #####----- Template Include Files --------#####
-    createIncludeLink('../www/include/templateHead.html',      config['MGICONFIG_PATH'] + 'web/templateHead.html')
-    createIncludeLink('../www/include/templateBodyStart.html', config['MGICONFIG_PATH'] + 'web/templateBodyStart.html')
-    createIncludeLink('../www/include/templateBodyStop.html',  config['MGICONFIG_PATH'] + 'web/templateBodyStop.html')
 
     return
 

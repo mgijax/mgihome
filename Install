@@ -60,8 +60,7 @@ fi
 # read variables from the config file
 
 exec 4<&0
-/usr/local/mgi/live/lib/python/Configuration.py $CONFIGURATION tab > .Configuration.tab
-exec < .Configuration.tab
+exec < $CONFIGURATION
 while read name value junk
 do
 	case "$name" in

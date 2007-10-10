@@ -1,0 +1,160 @@
+<HTML><HEAD>
+<!--MGI2.0 version 01 4/98-->
+<TITLE>MGI 2.0 Release Notes</TITLE>
+<!--#include file="include/stylesheet.html"-->
+</HEAD>
+<BODY BGCOLOR="#ffffff">
+<!--#include file="include/bodyStart.html"-->
+
+<TABLE WIDTH="100%" BORDER=0 CELLPADDING=2 CELLSPACING=1>
+ <TR>
+  <TD WIDTH="100%" BGCOLOR="#D0E0F0">
+   <TABLE WIDTH="100%" BORDER=0 CELLPADDING=0 CELLSPACING=0>
+    <TR>
+     <TD WIDTH="20%" VALIGN="center" ALIGN="left">&nbsp;</TD>
+     <TD WIDTH="60%" ALIGN="center" VALIGN="center">
+      <FONT COLOR="#000000" SIZE=5 FACE="Arial,Helvetica">
+       Mouse Genome Informatics (MGI) 2.0 Release Notes
+      </FONT>
+     </TD>
+     <TD WIDTH="20%" VALIGN="center" ALIGN="center">&nbsp;</TD>
+    </TR>
+   </TABLE>
+  </TD>
+ </TR>
+</TABLE>
+
+
+<H3><EM>June 8, 1998</H3></EM>
+
+<H3>New Gene Expression Data and Query Form Now Available</H3>
+
+A data set of RT-PCR assays produced by Dr. Tom Freeman's laboratory <!--<A HREF=#include file='include/wi_url.html>/searches/reference.cgi?46734">-->(J:46439) is available from the database. This data set represents the analysis of 517 genes in 46 mouse tissues from animals 6 to 8 weeks old. In addition, the data set includes studies of tissue from 15 day old mouse embryo. Additional data for this release of GXD will soon be made available and will include RNA in situ hybridization and Immunohistochemistry data, Northern  and Western Blot data and RT-PCR data. Thereafter, the database will be updated daily. Future GXD releases
+will accommodate additional types of expression data.
+
+<H3>Gene Expression Data Query Form</H3>
+
+This query form enables you to ask two basic kinds of questions:<P>
+<UL>
+<EM><LI>Where are specified genes expressed and/or at what developmental stages?<P>
+<LI>What genes are expressed in specified anatomical structures and/or during
+specified developmental stages? </EM>
+</UL><BR>
+You can search for expression data related to specified genes, anatomical
+structures, or developmental stages.  Query results can be returned as a
+listing of assays or assay results. See the <A HREF="<!--#include file='include/userdocs_url.html'-->expression_help.shtml">help documentation</A> for details.
+In this first release, you can only search for RT-PCR assays.  In the near future,
+more data will become available.
+<P>http://www.informatics.jax.org/searches/anatdict_form.shtml
+Expression patterns are described using
+ <A HREF="<!--#include file='include/wi_url.html'-->searches/anatdict_form.shtml">The Mouse Anatomical Dictionary Browser</A>
+that has been developed in collaboration with the
+Anatomy Department, University of Edinburgh and the MRC Human
+Genetics Unit  (Edinburgh, UK).
+Using the Gene Expression query form, you can limit your query to one or more specified
+anatomical structures by entering one or more values in the Anatomical Structures field.
+If unsure of nomenclature, you can browse the Anatomical Dictionary on-line.
+
+<H3>Enhanced <A HREF="<!--#include file='include/wi_url.html'-->searches/linkmap_form.shtml">Linkage Maps</A> Form</H3>
+
+This form has been reorganized and simplified.  You can generate a linkage map using
+information retrieved from the database. The view of the chromosome is determined by
+the criteria used to search the database. You can select a chromosome, a region of the
+selected chromosome, include markers from selected phenotypic classes, include DNA
+segments or syntenic markers, or add your own markers. You can also select a mammalian
+species to compare and generate a comparative map. A new option allows you to choose to
+display only mouse markers that have homologies in the selected comparison species.
+
+<H3>AXB/BXA Mapping Data Sets Available Via FTP</H3>
+
+These data sets were produced by Dr. Beverly Paigen's laboratory at The Jackson Laboratory (<A HREF="<!--#include file='include/wi_url.html'-->searches/reference.cgi?46614">J:45463</A>).
+In MGI 2.0, these data files are available in EXCEL format and can be downloaded
+from our <A HREF="<!--#include file='include/ftp_url.html'-->pub/datasets/RI/Paigen">
+ftp server</A>. These data
+present new typings and revised typings in the AXB and BXA RI mapping data sets. This
+information is also being incorporated into the database and will be available in the
+experimental mapping data and the composite RI data sets.<P>
+
+<H3><A HREF="../submissions/submissions_menu.shtml">Revised Data Submission Guidelines</A></H3>
+The guidelines for data submissions have been updated to
+facilitate E-mail submission of MGD data. It is anticipated that electronic data
+submission direct from the research laboratory to MGI databases will become the norm
+in the near future.  In MGI 2.0, steps have been taken to facilitate E-mail submissions
+as an incremental step toward automating the submission process. Contact Jennifer Bobish
+at submissions@informatics.jax.org if
+you have questions or need assistance.
+
+<H3>1998 Chromosome Committee Reports</A> Available On-line</H3>
+The 1998 Chromosome Committee reports are complete and available on-line. <P>
+
+<H3>Enhanced linkage map display from marker detail record</H3>
+
+When you display the detail record for a marker, it may include a "mini-map" image.
+This map shows the selected marker highlighted on the map in relation to a set of other
+"anchor" loci on the chromosome.  Now, you can click on this map image and retrieve a
+<EM>Web Map</EM> display of the chromosomal region <EM>within 1 cM of the selected marker</EM>.
+This display shows ALL the markers in the region including DNA segments.  Each marker symbol
+on the map is linked to the marker detail record. This feature allows you to explore the markers
+immediately surrounding a gene of interest without having to execute a new search.
+<H3>Other Enhancements to MGI Query Forms and the Query Menu</H3>
+Various enhancements to MGI query forms made in release 2.0 are summarized here.
+<P>
+<EM>Search by one or multiple gene symbols (current or withdrawn) </EM><BR>
+This feature replaces the option to search by only a single symbol.  In addition, the Name
+field can be used to search for either a gene name or an unoffical symbol and affects the following
+query forms:
+<UL TYPE=DISC>
+	<LI><A HREF="<!--#include file='include/wi_url.html'-->searches/marker_form.shtml">Genes, Markers and Phenotypes</A>
+	<LI><A HREF="<!--#include file='include/wi_url.html'-->searches/polymorphism_form.shtml">Polymorphisms</A>
+	<LI><A HREF="<!--#include file='include/wi_url.html'-->searches/probe_form.shtml">Molecular Probes and Segments</A>
+	<LI><A HREF="<!--#include file='include/wi_url.html'-->searches/estclone_form.shtml">cDNA Clone and EST Expression</A>
+</UL><P>
+
+In addition, the following <A HREF="<!--#include file='include/wi_url.html'-->menus/noforms_menu.shtml">quick forms</A> have been modified
+in a similar fashion:<P>
+<UL TYPE=DISC>
+	<LI>Genes, Markers and Phenotypes by Symbol
+	<LI>Molecualr Probes and Segments by Symbol
+</UL><P>
+<EM>Modification Date field added to <A HREF="<!--#include file='include/wi_url.html'-->searches/mapdata_form.shtml">Mapping Data</A> query form</EM><BR>
+Now you can filter a search for mapping data records by Modification Date. This
+enables you to, for example, retrieve only records that have been modified in the last
+six months. This field is available on other MGI query forms.
+<P>
+Changes to the Query Menu
+Entries have been added for the Gene Expression Data query form, Quick Forms and Mapping Panels. In addition,
+the Query Menu has been fixed so that whenever you click on the Query Menu link from an MGI page, that
+page becomes the "active" page for the Query Menu.  This feature enables you to always choose the
+browser window in which you want the Query Menu selection to be displayed.<P>
+Please feel free to contact <A HREF="mailto:mgi_help@infomatics.jax.org">
+MGI User Support</A> if you have questions or need assistance.<P>
+<CENTER>MGI User Support<BR>
+mgi-help@informatics.jax.org<BR>
+Voice: 207-288-6445<BR>
+FAX: 207-288-6132</CENTER>
+
+<p><hr>
+<P></P>
+<!--#include file="include/bodyStop.html"--></BODY>
+</HTML>
+
+
+<!--
+Warranty Disclaimer and Copyright Notice
+
+ THE JACKSON LABORATORY MAKES NO REPRESENTATION ABOUT THE SUITABILITY OR
+ ACCURACY OF THIS SOFTWARE OR DATA FOR ANY PURPOSE, AND MAKES NO WARRANTIES,
+ EITHER EXPRESS OR IMPLIED, INCLUDING MERCHANTABILITY AND FITNESS FOR A
+ PARTICULAR PURPOSE OR THAT THE USE OF THIS SOFTWARE OR DATA WILL NOT
+ INFRINGE ANY THIRD PARTY PATENTS, COPYRIGHTS, TRADEMARKS, OR OTHER RIGHTS.
+ THE SOFTWARE AND DATA ARE PROVIDED "AS IS".
+
+ This software and data are provided to enhance knowledge and encourage
+ progress in the scientific community and are to be used only for research
+ and educational purposes.  Any reproduction or use for commercial purpose
+ is prohibited without the prior express written permission of the Jackson
+ Laboratory.
+
+Copyright © 1996, 1999, 2002 by The Jackson Laboratory
+All Rights Reserved
+-->
