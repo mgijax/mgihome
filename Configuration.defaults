@@ -8,7 +8,7 @@
 
 # Path to global configuration file
 MGICONFIG_PATH    /usr/local/mgi/live/mgiconfig/
-GLOBAL_CONFIG     {$MGICONFIG_PATH}web/GlobalConfig
+GLOBAL_CONFIG     ${MGICONFIG_PATH}web/GlobalConfig
 
 # Path to our home installation
 #MGIHOME_PATH    /home/djd/work/mgihome-trunk/
