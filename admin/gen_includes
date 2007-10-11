@@ -15,6 +15,7 @@ config = Configuration.get_Configuration ('Configuration', 1)
 import homelib
 import webshare_lib
 
+import os
 
 def listToFile (str_list, filename):
     print "writing %s" % filename
@@ -41,9 +42,12 @@ def stringToFileNoNL (s, filename):
 
     return
 
+
 def stringToFile (s, filename):
     listToFile ( [s], filename)
     return
+
+INCLUDEDIR = os.path.join(config['MGIHOME_PATH'], 'www/include/')
 
 def createIncludeLink (includeName, fileLoc ) :
 # 
@@ -125,10 +129,15 @@ def main ():
     stringToFile (config['IMSR_HOME'],
 	'../www/include/imsr_home_url.html')
 
+    # new include file for the faq's
+    stringToFile (config['FAQ_URL'],
+        '../www/include/faq_url.html')
+
+
     #####----- Template Include Files --------#####
-    createIncludeLink('../www/include/templateHead.html',      config['MGICONFIG_PATH'] + 'web/templateHead.html')
-    createIncludeLink('../www/include/templateBodyStart.html', config['MGICONFIG_PATH'] + 'web/templateBodyStart.html')
-    createIncludeLink('../www/include/templateBodyStop.html',  config['MGICONFIG_PATH'] + 'web/templateBodyStop.html')
+    createIncludeLink('templateHead.html', config['MGICONFIG_PATH'] + 'web/templateHead.html')
+    createIncludeLink('templateBodyStart.html', config['MGICONFIG_PATH'] + 'web/templateBodyStart.html')
+    createIncludeLink('templateBodyStop.html', config['MGICONFIG_PATH'] + 'web/templateBodyStop.html')
 
     return
 
