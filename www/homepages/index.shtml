@@ -4,7 +4,7 @@
 
 <!-- Home Page Specific Css -->
 
-<link rel="stylesheet" type="text/css" href="include/homepage.css"/>
+<link rel="stylesheet" type="text/css" href="<!--#include file="include/mgihome_url"-->homepages/homepage.css"/>
 
 <!--#include file='include/templateBodyStart.html'-->
 
@@ -43,21 +43,21 @@
             </td>
             </tr>
             <tr>
-            <td align="center" valign="middle" class="grayBG imageHeader"><img src="images/mouseModel150.jpg" alt="-" height="90" border="1" class="thumb">
+            <td align="center" valign="middle" class="grayBG imageHeader"><img src="<!--#include file="include/mgihome_url.html"-->homepages/images/mouseModel150.jpg" alt="-" height="90" border="1" class="thumb">
 
           </td>
 
-            <td align="center" valign="middle" class="grayBG imageHeader">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="images/expression150.jpg" alt="-" class="thumb" border="1" height="90">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <td align="center" valign="middle" class="grayBG imageHeader">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="<!--#include file="include/mgihome_url.html"-->homepages/images/expression150.jpg" alt="-" class="thumb" border="1" height="90">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 
             </td>
-            <td align="center" valign="middle" class="grayBG imageHeader"><img src="images/GBrowseEppk1.jpg" alt="GBrowse" height="90" border="1">
+            <td align="center" valign="middle" class="grayBG imageHeader"><img src="<!--#include file="include/mgihome_url.html"-->homepages/images/GBrowseEppk1.jpg" alt="GBrowse" height="90" border="1">
 
             </td>
-            <td align="center" valign="middle" class="grayBG imageHeader"><img src="images/GOgraphFas100.jpg" alt="-" border="1" height="90">
+            <td align="center" valign="middle" class="grayBG imageHeader"><img src="<!--#include file="include/mgihome_url.html"-->homepages/images/GOgraphFas100.jpg" alt="-" border="1" height="90">
 
             </td>
 
-            <td align="center" valign="middle" class="grayBG imageHeader"><img src="images/SNPsnip.jpg" alt="SNP" height="90" border="1">
+            <td align="center" valign="middle" class="grayBG imageHeader"><img src="<!--#include file="include/mgihome_url.html"-->homepages/images/SNPsnip.jpg" alt="SNP" height="90" border="1">
 
             </td>
             </tr>
@@ -94,27 +94,27 @@
 			<table width="100%" border="0" cellspacing="1" cellpadding="3">
   <tr>
     <td width="9">&nbsp;</td>
-    <td valign="bottom">.. find polymorphic differences  between strains?&nbsp;<a href="" class="smaller homePageBody">Learn</a></td>
+    <td valign="bottom">.. find polymorphic differences  between strains?&nbsp;<a href="<!--#include file="include/mgihome_url.html"-->homepages/underConstruction.shtml" class="smaller homePageBody">Learn</a></td>
     </tr>
   <tr>
     <td width="9">&nbsp;</td>
 
-    <td valign="bottom">.. find genes expressed in a specific tissue during development?&nbsp;<a href="" class="smaller homePageBody">Learn</a></td>
+    <td valign="bottom">.. find genes expressed in a specific tissue during development?&nbsp;<a href="<!--#include file="include/mgihome_url.html"-->homepages/underConstruction.shtml" class="smaller homePageBody">Learn</a></td>
     </tr>
 
   <tr>
     <td width="9">&nbsp;</td>
-    <td valign="bottom">.. find candidate genes for a given phenotype and in a specific genome location?&nbsp;<a href="" class="smaller homePageBody">Learn</a></td>
+    <td valign="bottom">.. find candidate genes for a given phenotype and in a specific genome location?&nbsp;<a href="<!--#include file="include/mgihome_url.html"-->homepages/underConstruction.shtml" class="smaller homePageBody">Learn</a></td>
     </tr>
   <tr>
 
     <td width="9">&nbsp;</td>
     <td valign="bottom">
       <div style="display:inline; float:left;">..  find mouse models for a particular disease?&nbsp;</div>
-      <a href="javascript:FAQwindow()" class="smaller homePageBody">Learn</a></td>
+      <a href="<!--#include file="include/mgihome_url.html"-->homepages/underConstruction.shtml" class="smaller homePageBody">Learn</a></td>
     </tr>
 </table>
-              <a href="" class="homePageBody">More FAQs </a>
+              <a href="<!--#include file="include/faq_url.html"-->FAQ.shtml" class="homePageBody">More FAQs </a>
           </tr>
 
         </table>
@@ -131,7 +131,7 @@
   <table cellpadding="1" bgcolor="#d0e0f0" width="100%" >
     <tr>
       <td>
-		<!--#include file="include/homepage_stats.shtml"-->
+		<!--#include file="stats/mgihome_url.shtml"-->
       </td>
     </tr>
   </table>
@@ -156,7 +156,7 @@
                 <ul class="smaller" style="line-height:1.3;">
                   <li> We've redesigned our <strong>homepage and site-wide navigation</strong>, and created informative &quot;mini-homepages&quot; for each of our biological domain areas. <a href="<!--#include file='include/mgihome_url.html'-->news/whatsnew.shtml" class="homePageBody">See what's new.</a> Love it? Hate it? <a href="<!--#include file="include/mgihome_url.html"-->support/tjl_inbox.shtml" class="homePageBody">Please send us your thoughts!</a>
 
-                  <li>A <a href="<!--#include file='include/mgihome_url.html'-->news/3.52announce.shtml#new_images" class="homePageBody"><strong> new GXD report</strong></a> features expression images associated with  each gene/marker </li>
+                  <li>A <a href="<!--#include file='include/mgihome_url.html'-->news/whatsnew.shtml" class="homePageBody"><strong> new GXD report</strong></a> features expression images associated with  each gene/marker </li>
                   <li>MGI Mammalian Homology and Gene Detail pages now provide <a href="http://www.treefam.org/" class="homePageBody">links to associated records</a> in the <strong>TreeFam database</strong>.</li>
                 </ul>
 
