@@ -235,7 +235,23 @@
 			<li><a href="tabContents/GXD_Resources.shtml" rel="ajaxcontentarea">More links </a></li>
 		</ul>
 <div id="ajaxcontentarea" class="contentstyle" style="color:#002255;">
-<p>Some default text</p>
+<table width="100%">
+	<tr>
+		<td>
+			<ul id="About">
+				<li>GXD is a community resource for gene expression information from the laboratory mouse.</li>
+				<li>GXD currently collects detailed expression data  from the following assay types:&nbsp; RNA in situ
+				hybridization; Immunohistochemistry; in situ reporter (knock in); RT-PCR; Northern and Western blots; and RNase
+				protection and Nuclease S1 protection   assays.</li>
+				<li>GXD also maintains an index of the literature  examining gene expression in the embryonic mouse.&nbsp;
+				It is comprehensive and up-to-date,  containing all pertinent journal articles from 1993 to the present and
+				articles  from major developmental journals from 1990 to the present.</li>
+				<li>GXD is funded by NIH/NICHD grant HD033745</li>
+			</ul>
+			<a href="<!--#include file="include/mgihome_url.html"-->GXD/aboutGXD.shtml">Read more...</a>
+		</td>
+	</tr>
+</table>
 </div>
 <script type="text/javascript">
 //Start Ajax tabs script for UL with id="maintab". Separate multiple ids each with a comma.
