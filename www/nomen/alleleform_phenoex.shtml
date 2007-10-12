@@ -1,29 +1,14 @@
-<HTML>
-<head>
-<TITLE><!--#include file='include/mgiversion.html'--> - Mutation Submission Form: example of a phenotype description</TITLE>
-<!--#include file="include/stylesheet.html"-->
-</head>
-<BODY BGCOLOR="#ffffff">
-<!--#include file="include/bodyStart.html"-->
-<TABLE WIDTH="100%" BORDER=0 CELLPADDING=2 CELLSPACING=1>
- <TR>
-  <TD WIDTH="100%" BGCOLOR="#D0E0F0">
-   <TABLE WIDTH="100%" BORDER=0 CELLPADDING=0 CELLSPACING=0>
-    <TR>
-     <TD WIDTH="20%" VALIGN="center" ALIGN="left">&nbsp;</TD>
-     <TD WIDTH="60%" ALIGN="center" VALIGN="center">
-      <FONT COLOR="#000000" SIZE=5 FACE="Arial,Helvetica">
-       Mutation Submission Form: example of a phenotype description
-      </FONT>
-     </TD>
-     <TD WIDTH="20%" VALIGN="center" ALIGN="center">&nbsp;</TD>
-    </TR>
-   </TABLE>
-  </TD>
- </TR>
-</TABLE>
 
-<HR>
+<!--#include file='include/templateHead.html'--> 
+<title>Mutation Submission Form: example of a phenotype description</title>
+
+<!--#include file='include/templateBodyStart.html'--> 
+
+<h2 id="titleBar">Mutation Submission Form: example of a phenotype description</h2>
+
+
+
+
 <p>The following is an example of a description for the Wnt3a<sup>vt</sup> mutant allele.<BR><BR>
 Homozygotes have very short tails, varying from complete absence to about half normal length. They tend to have fewer presacral vertebrae than normal, and the bodies of lumbar vertebrae often ossify from bilateral twin centers rather than from a single center. At 10 days of gestation when there is a ventral ectodermal ridge at the zone of growth of the tail tip, the ridge is much reduced in homozygous embryos. There is also a reduction in the tail gut. The neural tube in the tail bud is abnormal in the ventral region, tending to split off and round up to form accessory tubes. The primitive streak is abnormally small and fails to fill the space within the ectoderm. Other abnormalities may be consequent on the abnormal primitive streak.
 <BR><BR>
@@ -38,25 +23,4 @@ Vocabulary Terms:
 </UL>
 
 </FORM>
-<!--#include file="include/bodyStop.html"-->
-</BODY>
-</HTML>
-<!--
-Warranty Disclaimer and Copyright Notice
-
- THE JACKSON LABORATORY MAKES NO REPRESENTATION ABOUT THE SUITABILITY OR 
- ACCURACY OF THIS SOFTWARE OR DATA FOR ANY PURPOSE, AND MAKES NO WARRANTIES, 
- EITHER EXPRESS OR IMPLIED, INCLUDING MERCHANTABILITY AND FITNESS FOR A 
- PARTICULAR PURPOSE OR THAT THE USE OF THIS SOFTWARE OR DATA WILL NOT 
- INFRINGE ANY THIRD PARTY PATENTS, COPYRIGHTS, TRADEMARKS, OR OTHER RIGHTS.  
- THE SOFTWARE AND DATA ARE PROVIDED "AS IS".
-
- This software and data are provided to enhance knowledge and encourage 
- progress in the scientific community and are to be used only for research 
- and educational purposes.  Any reproduction or use for commercial purpose 
- is prohibited without the prior express written permission of the Jackson 
- Laboratory.
-
-Copyright © 1996, 1999, 2000 by The Jackson Laboratory
-All Rights Reserved
--->
+<!--#include file='include/templateBodyStop.html'--> 
