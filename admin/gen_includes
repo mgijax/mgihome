@@ -87,7 +87,7 @@ def main ():
         '../www/include/userdocs_url.html')
     stringToFile (config['SCHEMA'],\
         '../www/include/schema_url.html')
-    stringToFile (config['MGI_VER'],\
+    stringToFile (config['NAME'],\
         '../www/include/mgiversion.html')
     stringToFile (config['JAVAWI_URL'], \
         '../www/include/java_url.html')
