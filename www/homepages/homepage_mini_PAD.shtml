@@ -20,18 +20,16 @@
 <table width="100%" cellpadding="0" style="font-family:Verdana,Arial,Helvetica;font-size:12px">
 
 <tr> <!-- Page Header Title Bar -->
-<td width="850">
+<td>
 	<table width="100%" border="0" cellpadding="0" cellspacing="0">
 	<tr>
-		  <td align="left" valign="center" width="20%">		  </td>
-		  <td align="center" valign="center" width="60%" nowrap="nowrap">
+
+		  <td align="center" valign="center" width="100%" nowrap="nowrap">
 
 			<font color="#002255" face="Arial,Helvetica" size="6">
 			  <b>Phenotypes,  Alleles and Disease Models</b></font>
 <!--			<hr noshade="noshade"/ color="#D0E0F0">-->
 		  </td>
-
-		  <td align="right" valign="center" width="20%">&nbsp;	      </td>
 	</tr>
 	</table>
 </td>
@@ -45,12 +43,11 @@
 </td>
 </tr>
 </table>
-<!-------------------------- MenuBar End ------------------------------------>
 <div class="homePageBody">
 <!---------------------strip of images - some mini-homepages won't have any images------------------->
 <div id="images" align="center" style="text-align:center; background-color:#FFFFFF; vertical-align:middle; padding:6px 0px 2px 0px; min-width:825px;" NOWRAP="nowrap">
 
-<table width="!" border="0" align="center" cellpadding="2" cellspacing="0">
+<table width="!" border="0" align="center" cellpadding="4"> <!-- Body Table -->
   <tr>
     <td align="center">&nbsp;</td>
     <td align="center"><a href="<!--#include file="include/java_url.html"-->WIFetch?page=imageDetail&key=13609"><img src="images/Pax6_Sey-Dey.jpg" alt="-" width="125" height="101" border="1"></a></td>
