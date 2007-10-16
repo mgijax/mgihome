@@ -23,16 +23,12 @@
 <td>
 	<table width="100%" border="0" cellpadding="0" cellspacing="0">
 	<tr>
-		  <td align="left" valign="center" width="5%">		  </td>
 		  <td align="center" valign="center">
 
 			<font color="#002255" face="Arial,Helvetica" size="6">
 		    <b>Functional Annotation using
 		    the Gene Ontology (GO)</b>			</font>
-<!--			<hr noshade="noshade"/ color="#D0E0F0">-->
 		  </td>
-
-		  <td align="right" valign="center" width="5%">&nbsp;	      </td>
 	</tr>
 <tr>
 <td bgcolor="#FFFFFF" colspan="3">
@@ -44,7 +40,6 @@
 </td>
 </tr>
 </table>
-<!-------------------------- MenuBar End ------------------------------------>
 <div class="homePageBody">
 <!---------------------strip of images - some mini-homepages won't have any images------------------->
 
@@ -90,7 +85,7 @@
              <div style="position:absolute; left:100px; background-color:#FFFFFF; border:thin solid #DDDDDD; padding: 0px 1px; clear:both;"><a href="http://proto.informatics.jax.org/prototypes/GOgraphEX/OrthoDisease_Graphs/OMIM_DisorderGraphs/" class="smaller">Mary's OMIM index page</a></div>
          </p>
              <p style="line-height:1.2;"><br/>
-               Batch load gene IDs for GO TermFinder analysis. <em>(What is this? How to use both queries? Correct URLs? If it needs explanation, it's probably better as a &quot;How Do I..?&quot; item.)</em>
+               Batch load gene IDs for GO TermFinder analysis.
 
              <div style="position:absolute; left:100px; background-color:#FFFFFF; border:thin solid #DDDDDD; padding: 0px 1px; clear:both;" class="smaller"><a href="<!--#include file="include/java_url.html"-->WIFetch?page=batchQF">MGI Batch Query </a>then <a href="http://search.cpan.org/dist/GO-TermFinder/">GO Term Finder</a></div>
          </p>
@@ -194,7 +189,7 @@
 
                 <ul class="line1 smaller">
                   <li><a href="http://www.geneontology.org/newsletter/current-newsletter.shtml">Latest</a> GO newsletter </li>
-                  <li><a href="<!--#include file="include/mgihome_url.html"-->homepages/underConstruction.shtml">Mary's  </a>most recent improvements <em>(What goes here?)</em></li>
+                  <li><a href="<!--#include file="include/mgihome_url.html"-->homepages/underConstruction.shtml">Mary's  </a>most recent improvements</li>
                   </ul>
               <a href="<!--#include file='include/mgihome_url.html'-->news/whatsnew.shtml" class="smaller">More news</a> </td>
 
