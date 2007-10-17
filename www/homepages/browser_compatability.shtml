@@ -1,70 +1,56 @@
 <!--#include file='include/templateHead.html'--> 
 <title><!--#include file='include/mgiversion.html'--> - Web Browser Compatibility</title>
-
 <!--#include file='include/templateBodyStart.html'--> 
 <h2 id="titleBar">Web Browser Compatibility</h2>
-
 <link rel="stylesheet" type="text/css" href="include/homepageLinks2.css">
 <!--<link rel="stylesheet" type="text/css" href="homepage.css">-->
 
 <div class="homePageBody">
 <table width="100%" border="0" cellpadding="4"> 
 <!--body table-->
-
-<tr valign="top">
-
-<!-- left column -->
-<td>
+<tr valign="top"><!--left column-->
+ <td>
   <table cellpadding="0.5" width="100%" >
-    <tr>
-      <td width="50%" align="center" valign="top">
-        <table>
-          <!-- Disease Model of the week -->
-          <tr>
-            <td width="619">
-
-              <table cellpadding="0.5" bgcolor="#DFEFFF" width="100%" >
-                <tr>
-                  <td>
-                    <table width="100%" border="0" cellpadding="4" cellspacing="0" class="grayBG">
-                      
-                      <tr>
-                        <td colspan="2" class="boxHead" style="font-size:12">System Compatibility</td>
-                      </tr>
-                      <tr>
-
+   <tr><td width="50%" align="center" valign="top">
+    <table><!-- Disease Model of the week -->
+     <tr><td width="619">
+      <table cellpadding="0.5" bgcolor="#DFEFFF" width="100%" >
+       <tr><td>
+         <table width="100%" border="0" cellpadding="4" cellspacing="0" class="grayBG">
+            <tr><td colspan="2" class="boxHead" style="font-size:12">System Compatibility</td></tr>
+            <tr>
                         <td colspan="2" style="font-size:12">We test our website releases for compatibility with the following systems: 
                           <table bgcolor="#D0E0F0" cellpadding="1" align="center">
                             <tr>
                               <td>
-                                <table width="!" border="0" align="center" cellpadding="2" cellspacing="0" class="grayBG">
+                                <table width="!" border="0" align="center" cellpadding="3" cellspacing="0" class="grayBG">
                                   <tr>
-                                    <td class="boxHeadLite" width="!">Operating System </td>
-                                    <td class="boxHeadLite">Web Browser </td>
+                                    <th class="boxHeadLite" width="!">Operating System </font></th>
+                                    <th class="boxHeadLite">Web Browser</th>
 
                                   </tr>
                                   <tr>
-                                    <td width="!">Microsoft Windows&reg; XP:&nbsp;&nbsp;&nbsp; </td>
-                                    <td>Internet Explorer&reg; 7.0 </td>
-                                  </tr>
-
-                                  <tr>
-                                    <td width="!">&nbsp;</td>
-                                    <td>Netscape Navigator&reg; 8.1 </td>
-                                  </tr>
-                                  <tr>
-                                    <td width="!">&nbsp;</td>
-                                    <td>Mozilla Firefox&reg; 2.0 </td>
-
-                                  </tr>
-                                  <tr>
-                                    <td width="!">Mac OS&reg; 10.3:&nbsp; </td>
-                                    <td>Safari&trade; 2.0 </td>
+                                    <td width="!"><font size="-1"><nobr>Microsoft Windows&#174;; XP: </font></td>
+                                    <td><font size="-1">Internet Explorer&#174; 7.0 </td>
                                   </tr>
 
                                   <tr>
                                     <td width="!">&nbsp;</td>
-                                    <td>Mozilla Firefox&reg; 2.0 </td>
+                                    <td><font size="-1">Netscape Navigator&#174; 8.1</td>
+                                  </tr>
+                                  <tr>
+                                    <td width="!">&nbsp;</td>
+                                    <td><font size="-1">Mozilla Firefox&#174; 2.0</font> </td>
+
+                                  </tr>
+                                  <tr>
+                                    <td width="!"><font size="-1">Mac OS&#174; 10.3:&nbsp; </td>
+                                    <td><font size="-1">Safari&#153; 2.0 </td>
+                                  </tr>
+
+                                  <tr>
+                                    <td width="!">&nbsp;</td>
+                                    <td><font size="-1">Mozilla Firefox&#174; 2.0  </font></td>
                                   </tr>
                                 </table>
                               </td>
@@ -92,7 +78,7 @@
                         <td colspan="2" class="boxHead" style="font-size:12">Colors</td>
                       </tr>
                       <tr>
-                        <td colspan="2" style="font-size:12">We make efforts to test our text and background colors with members of our staff who are color blind, and using color-blindness simulators. Most modern web browsers allow users to create and apply a user style sheet with preferred colors, font sizes, etc. You may wish to investigate user style sheets for your web browser. </td>
+                        <td colspan="2" style="font-size:12">We test our text and background colors with members of our staff who are color blind, and we use color-blindness simulators. However, most modern web browsers allow users to create and apply a user style sheet with preferred colors, font sizes, etc., and you may wish to investigate such style sheets for yours. </td>
 
                       </tr>
                       <tr>
@@ -106,7 +92,7 @@
 					<br>
 					<table class="grayBG" width="100%">
 					<tr>
-					<td class="smaller">JavaScript is a registered trademark of Sun Microsystems, Inc.<br/>					Windows and Internet Explorer are registered trademarks of  Microsoft Corporation.<br/>
+<td class="smaller">JavaScript is a registered trademark of Sun Microsystems, Inc.<br/>					Windows and Internet Explorer are registered trademarks of  Microsoft Corporation.<br/>
 			  					Mac is a registered trademark of Apple Corporation; Safari is a trademark of Apple Corporation. <br/>					
 					  					Netscape and Netscape Navigator are registered trademarks of Netscape Communications Corporation.<br/>					Firefox is a registered trademark of the Mozilla Foundation.<br/>					</td>
 
