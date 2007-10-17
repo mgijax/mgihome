@@ -255,35 +255,7 @@ View an <a href="<!--#include file="include/mgihome_url.html"-->nomen/allmut_qui
 </ul>
 
 <div id="ajaxcontentarea" class="contentstyle" style="font-size:12px;">
-<table width="100%">
-	<tr>
-		<td valign="top">
-			<ul id="resources">
-				<li><a href="<!--#include file="include/ftp_url2.html"-->pub/reports/index.html#pheno">Download</a> phenotype data reports</li>
-				<li><a href="<!--#include file="include/mgihome_url.html"-->nomen/index.shtml">Mouse Nomenclature Home Page</a></li>
-				</ul>
-				<span style="font-size:12px;">Knockout Mice</span>
-				<ul id="resources2">
-				<li>NIH Knockout Mouse Project (KOMP) <a href="http://knockoutmouse.org/">Data Coordination Center</a></li>
-				<li>European Conditional Mouse Mutagenesis Program (<a href="http://www.eucomm.org/">EUCOMM</a>)</li>
-				<li>North American Conditional Mouse Mutagenesis project (<a href="http://www.norcomm.org/">NORCOMM</a>)</li>
-				<li><a href="http://www.nih.gov/science/models/mouse/index.html">Trans-NIH Knockout Mouse Initiatives</a></li>
-				<li>List of <a href="<!--#include file="include/wi_url.html"-->external/ko/">Deltagen and Lexicon</a> Knock Out Mouse available through repositories</li>
-				<li>List of  <a href="<!--#include file="include/ftp_url2.html"-->pub/reports/MGI_Knockout_Full.html">knockout alleles in MGI</a></li>
-			</ul>
-		</td>
-		<td valign="top">
-			Other useful links
-			<ul id="resources3">
-				<li>Mouse Phenome Database (<a href="http://phenome.jax.org/pub-cgi/phenome/mpdcgi?rtn=docs/home">MPD</a>) </li>
-				<li>Mouse Tumor Biology (<a href="http://tumor.informatics.jax.org/mtbwi/index.do">MTB</a>)	</li>
-				<li>International Mouse Strain Resource (<a href="<!--#include file="include/imsr_home_url.html"-->">IMSR</a>)	</li>
-				<li><a href="<!--#include file="include/mgihome_url.html"-->other/phenoallele_commun_resource.shtml">Phenotypes and mutants community resources</a></li>
-				<li> Learn about the <a href="http://www.fimre.org">FIMRe</a> (Federation of International Mouse Resources)</li>
-			</ul>
-		</td>
-	</tr>
-</table>
+<!--#include file='tabContents/PAD_Resources.shtml'-->
 </div>
 
 <script type="text/javascript">

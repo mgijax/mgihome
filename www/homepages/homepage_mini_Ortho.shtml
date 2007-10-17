@@ -215,42 +215,7 @@
 </ul>
 
 <div id="ajaxcontentarea" class="contentstyle">
-<table width="100%">
-	<tr><td>
-		<BLOCKQUOTE>
-		<p>MGI contains orthology information for mouse, human and 15 other  mammalian organisms. Most of the
-		information for orthologies extracted  from the published scientific literature. In general, these
-		papers  explicitly report orthology relationships and MGI reflects that  published information. See
-		the <em>Evidence</em> section under
-		<a href="<!--#include file="include/userdocs_url.html"-->homology_summary.shtml#fields">How do I
-		interpret the results of my query?</a> in <em>Interpreting Mammalian Orthology Query Results</em>
-		for the criteria used to establish orthology.</p>
-		<p>An orthology record shows the symbol, organism, chromosome, cM  position, cytogenetic band, and
-		accession ID for each gene in the set  of orthologies. In addition, when there are available links
-		to other  mammalian databases, these appear as well (e.g., Ark-DB, BovMap,  Entrez, HGNC, Homologene,
-		NCBI, PigBase, SheepBase, TreeFam, Uniprot,  VEGA, VISTA).</p>
-		<p>Every orthology assertion is supported by one or more references.  The display of an orthology
-		reference includes the J number of the  reference, a short format citation, gene symbol, and organism.
-		See <a href="<!--#include file="include/userdocs_url.html"-->homology_summary.shtml#contain">What's in
-		a Mammalian Ortholology Query Results report?</a> for more detail.</p>
-		<p>Orthology information is presented in three other formats: Oxford  Grid, comparative map and
-		Orthology Map View. An Oxford Grid display  presents an overview of orthology between two organisms.
-		Currently,  this kind of comparison is supported for the following organisms:  mouse, human, cat, cattle,
-		rat, pig, sheep, dog, chimp.</p>
-		<p>The comparative map display relies on the Linkage Map application to  build a graphic display of a
-		map of a mouse chromosome (or chromosomal  region) which includes orthologies from the comparison organisms.
-		See,  for example, the comparative map for a 2 cM region around the mouse  gene
-		<a href="<!--#include file="include/wi_url.html"-->searches/accession_report.cgi?id=MGI:87895">Chrng</a>
-		showing human orthology.</p>
-		<p> The Orthology Map View displays the mouse genome as the consensus  genetic map, with either human or
-		rat orthologs labeled by chromosome  of origin and displayed next to the corresponding segment of the mouse
-		genome. The Orthology Map View is accessible  from the
-		<a href="<!--#include file="include/wi_url.html"-->menus/homology_menu.shtml">Mammalian Orthology and
-		Comparative Maps</a> menu.</p>
-		</BLOCKQUOTE>
-	</td></tr>
-</table>
-
+<!--#include file='tabContents/Ortho_Help.shtml'-->
 </div>
 
 <script type="text/javascript">
