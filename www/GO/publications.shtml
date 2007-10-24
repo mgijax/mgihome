@@ -1,29 +1,11 @@
-<HTML><HEAD>
-<TITLE><!--#include file='include/mgiversion.html'--> Gene Ontology Information</TITLE>
-<!--#include file="include/stylesheet.html"-->
-</HEAD>
+<!--#include file='include/templateHead.html'--> 
+<title><!--#include file='include/mgiversion.html'--> - Gene Ontology Information</title>
 
-<BODY BGCOLOR="#FFFFFF">
-<!--#include file="include/bodyStart.html"-->
+<!--#include file='include/templateBodyStart.html'--> 
 
-<A NAME="Pubs"></A>
-<TABLE WIDTH="100%" BORDER=0 CELLPADDING=2 CELLSPACING=1>
- <TR>
-  <TD WIDTH="100%" BGCOLOR="#D0E0F0">
-   <TABLE WIDTH="100%" BORDER=0 CELLPADDING=0 CELLSPACING=0>
-    <TR>
-     <TD WIDTH="20%" VALIGN="center" ALIGN="left">&nbsp;</TD>
-     <TD WIDTH="60%" ALIGN="center" VALIGN="center">
-      <FONT COLOR="#000000" SIZE=5 FACE="Arial,Helvetica">
-       Publications about GO
-      </FONT>
-     </TD>
-     <TD WIDTH="20%" VALIGN="center" ALIGN="center">&nbsp;</TD>
-    </TR>
-   </TABLE>
-  </TD>
- </TR>
-</TABLE>
+<h2 id="titleBar">Gene Ontology Information</h2>
+
+
 <p>
 <ul>
 <!--<LI>The Gene Ontology Consortium. 2004. The Gene Ontology (GO) database and informatics resource. Nucleic Acids Res 32: D258-D261.  </LI><br>-->
@@ -35,7 +17,7 @@
 
 <li>Drabkin HJ, Hollenbeck C, Hill, DP, Blake JA.   Ontological visualization of protein interactions. BMC Bioinformatics 2005; 6:29. </li><br>
 
-<li><a href="http://www.geneontology.org/cgi-bin/biblio.cgi">Gene Ontology Bibliography</a> (search tool at the Gene Ontology website)</LI><br>
+<li><a href="http://www.geneontology.org/cgi-bin/biblio.cgi">GO Bibliography</a> (search tool at the Gene Ontology website)</LI><br>
 
 <LI>The Gene Ontology Consortium. 2000. Gene Ontology: tool for the unification of biology. Nat Genet 25: 25-29.</li><br>
 
@@ -43,32 +25,4 @@
 
 <!--<LI>The Gene Ontology Consortium. 2001. Creating the gene ontology resource: design and implementation. Genome Res 11: 1425-1433. </LI><br>
 
-
-</ul>
-<br>
-
-
-<HR>
-<BR>
-
-
-<!--#include file="include/bodyStop.html"--></BODY></HTML>
-<!--
-Warranty Disclaimer and Copyright Notice
-
- THE JACKSON LABORATORY MAKES NO REPRESENTATION ABOUT THE SUITABILITY OR 
- ACCURACY OF THIS SOFTWARE OR DATA FOR ANY PURPOSE, AND MAKES NO WARRANTIES, 
- EITHER EXPRESS OR IMPLIED, INCLUDING MERCHANTABILITY AND FITNESS FOR A 
- PARTICULAR PURPOSE OR THAT THE USE OF THIS SOFTWARE OR DATA WILL NOT 
- INFRINGE ANY THIRD PARTY PATENTS, COPYRIGHTS, TRADEMARKS, OR OTHER RIGHTS.  
- THE SOFTWARE AND DATA ARE PROVIDED "AS IS".
-
- This software and data are provided to enhance knowledge and encourage 
- progress in the scientific community and are to be used only for research 
- and educational purposes.  Any reproduction or use for commercial purpose 
- is prohibited without the prior express written permission of the Jackson 
- Laboratory.
-
-Copyright © 1996, 1999, 2002 by The Jackson Laboratory
-All Rights Reserved
--->
+<!--#include file='include/templateBodyStop.html'--> 

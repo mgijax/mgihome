@@ -1,28 +1,12 @@
-<HTML><HEAD>
-<TITLE><!--#include file='include/mgiversion.html'--> The Gene Ontology (GO) Project</TITLE>
-<!--#include file="include/stylesheet.html"-->
-</HEAD>
+<!--#include file='include/templateHead.html'--> 
+<title><!--#include file='include/mgiversion.html'--> - The Gene Ontology (GO) Project</title>
 
-<BODY BGCOLOR="#FFFFFF">
-<!--#include file="include/bodyStart.html"-->
+<!--#include file='include/templateBodyStart.html'--> 
 
-<TABLE WIDTH="100%" BORDER=0 CELLPADDING=2 CELLSPACING=1>
- <TR>
-  <TD WIDTH="100%" BGCOLOR="#D0E0F0">
-   <TABLE WIDTH="100%" BORDER=0 CELLPADDING=0 CELLSPACING=0>
-    <TR>
-     <TD WIDTH="20%" VALIGN="center" ALIGN="left">&nbsp;</TD>
-     <TD WIDTH="60%" ALIGN="center" VALIGN="center">
-      <FONT COLOR="#000000" SIZE=5 FACE="Arial,Helvetica">
-       The Gene Ontology (GO) Project
-      </FONT>
-     </TD>
-     <TD WIDTH="20%" VALIGN="center" ALIGN="center">&nbsp;</TD>
-    </TR>
-   </TABLE>
-  </TD>
- </TR>
-</TABLE>
+<h2 id="titleBar">The Gene Ontology (GO) Project</h2>
+
+
+
 
 <P>We are part of the <A HREF = "http://genome-www.stanford.edu/GO/" target="_top">Gene Ontology Consortium</A> which seeks to provide controlled vocabularies for the description of the molecular function, biological process, and cellular component of gene products. These terms are to be used as attributes of gene products by collaborating databases, facilitating uniform queries across them.
 </P>
@@ -32,11 +16,11 @@ The GO vocabularies have a hierarchical structure that permits a range of detail
 <p>GO terms are defined, allowing all databases to use the terms consistently and properly.
 </P>
 GO annotations in the databases additionally include the publication reference which allowed the association to be made and an evidence statement citing how the association was determined (see 
-<A HREF="http://www.geneontology.org/doc/GO.evidence.html" target="_top">GO Evidence Codes</A> at the Gene Ontology Consortium site).
+<A HREF="http://www.geneontology.org/doc/GO.evidence.html" target="_top">Guide to GO Evidence Codes</A> at the Gene Ontology Consortium site).
 
 <P>
 For more details, see <A HREF = "http://www.geneontology.org/doc/GO.doc.html" target="_top">
-An Introduction to Gene Ontology</A> at the Gene Ontology Consortium site. <br>
+An Introduction to the Gene Ontology</A> at the Gene Ontology Consortium site. <br>
 To access the GO annotations for many organisms, use the <A HREF=http://www.godatabase.org/cgi-bin/go.cgi target="_top">AmiGO</A> browser.
 </P>
 
@@ -49,27 +33,5 @@ To access the GO annotations for many organisms, use the <A HREF=http://www.goda
 <A HREF ="./go_curators.shtml">GO Curators</A>
 <BR>
 <A HREF ="./publications.shtml">Publications about GO</A>
-<br>
 
-<HR>
-
-<!--#include file="include/bodyStop.html"--></BODY></HTML>
-<!--
-Warranty Disclaimer and Copyright Notice
-
- THE JACKSON LABORATORY MAKES NO REPRESENTATION ABOUT THE SUITABILITY OR 
- ACCURACY OF THIS SOFTWARE OR DATA FOR ANY PURPOSE, AND MAKES NO WARRANTIES, 
- EITHER EXPRESS OR IMPLIED, INCLUDING MERCHANTABILITY AND FITNESS FOR A 
- PARTICULAR PURPOSE OR THAT THE USE OF THIS SOFTWARE OR DATA WILL NOT 
- INFRINGE ANY THIRD PARTY PATENTS, COPYRIGHTS, TRADEMARKS, OR OTHER RIGHTS.  
- THE SOFTWARE AND DATA ARE PROVIDED "AS IS".
-
- This software and data are provided to enhance knowledge and encourage 
- progress in the scientific community and are to be used only for research 
- and educational purposes.  Any reproduction or use for commercial purpose 
- is prohibited without the prior express written permission of the Jackson 
- Laboratory.
-
-Copyright © 1996, 1999, 2002 by The Jackson Laboratory
-All Rights Reserved
--->
+<!--#include file='include/templateBodyStop.html'--> 
