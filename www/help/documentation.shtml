@@ -1,6 +1,18 @@
+<!--#include file='include/templateHead.html'--> 
+<title><!--#include file='include/mgiversion.html'--> - Documentation</title>
+
+<!--#include file='include/templateBodyStart.html'--> 
+
+<h2 id="titleBar">Documentation</h2>
+
+
+
+
+
+
 <HTML>
 <HEAD>
-<TITLE><!--#include file='include/mgiversion.html'--> Documentation</TITLE>
+<TITLE><!--#include file='include/mgiversion.html'--> </TITLE>
 <!--#include file="include/stylesheet.html"-->
 </HEAD>
 <BODY>
@@ -24,109 +36,50 @@ Documentation
  </TR>
 </TABLE>
 
-<p>Mouse Genome Informatics offers on-line help and staffs a help desk to answer your questions and comments.</p>
+<p>Mouse Genome Informatics provides help desk staff to answer your questions and comments. On-line help is available as well.
 
-<h2>Contact User Support Staff</h2>
+<h4>To contact the User Support Staff:</h4>
 <P>
 E-mail: <A HREF="../support/tjl_inbox.shtml">mgi-help@informatics.jax.org</A><br>
 Phone: (207) 288-6445<br>
 </p>
 
 
-<h2>Documentation</h2>
-<p class="linkheader">You can access complete documentation on MGI query forms from this page or by clicking numerous links from the query forms themselves.</p>
-
+<h4>Documentation</h4>
+<p class="linkheader">You can access on-line help for specific MGI query forms from the list below or by clicking the question mark at the top of each form.</p>
 <h4>General topics</h4>
 <DL>
-
 <DD><A HREF="../projects/overview.shtml">Mouse Genome Database Overview</A><Br>
-
 <DD><a href="<!--#include file='include/userdocs_url.html'-->gen_search_tips.shtml">General Guidelines for Searching MGI</A><BR>
-
 <!--<DD>Frequently Asked Questions (FAQs)</A>-->
-
 <DD><a href="<!--#include file='include/userdocs_url.html'-->searchtool_help.shtml">Search box on the Home page</A><BR>
-
 <DD><a href="<!--#include file='include/userdocs_url.html'-->boolean_search_tips.shtml">Full-text Searching Help</A></dd>
 </dl>
-
 <h4>Help using specific query forms</h4>
 <dl>
 <DD><a href="<!--#include file='include/userdocs_url.html'-->accession_help.shtml">Accession IDs</A></dd>
-
 <dd><a href="<!--#include file='include/userdocs_url.html'-->ama_browser_help.shtml">Adult Mouse Anatomical Dictionary Browser</a></dd>
-
-
 <DD><a href="<!--#include file='include/userdocs_url.html'-->estclone_help.shtml">cDNA Clone</A></dd>
-
-
 <DD><a href="<!--#include file='include/userdocs_url.html'-->expression_help.shtml">Gene Expression Data</A></dd>
-
- <dd><A HREF="<!--#include file='include/userdocs_url.html'-->gxd_expanded_help.shtml">Gene Expression Data Expanded</A></dd>
-
+<dd><A HREF="<!--#include file='include/userdocs_url.html'-->gxd_expanded_help.shtml">Gene Expression Data Expanded</A></dd>
 <DD><a href="<!--#include file='include/userdocs_url.html'-->marker_help.shtml">Genes and Markers</A></dd>
-
 <DD><a href="<!--#include file='include/userdocs_url.html'-->gxdindex_help.shtml">Gene Expression Literature Index</A></DD>
-
 <DD><a href="<!--#include file='include/userdocs_url.html'-->go_help.shtml">Gene Ontology (GO) Browser</A></dd>
 <dd><a href="http://www.informatics.jax.org/javawi2/servlet/WIFetch?page=omimVocab&subset=A">Human Disease Vocabulary Browser</a>
-
 <DD><a href="<!--#include file='include/userdocs_url.html'-->homology_help.shtml">Mammalian Orthology Data</A></DD>
-
 <DD><a href="<!--#include file='include/userdocs_url.html'-->mp_browser_help.shtml">Mammalian Phenotype (MP) Browser</A></dd>
-
-
 <DD><a href="<!--#include file='include/userdocs_url.html'-->mapping_help.shtml">Maps and Mapping Data</A></DD>
-
 <DD><a href="<!--#include file='include/userdocs_url.html'-->batch_qf_help.shtml">MGI Batch Query</A></DD>
-
-
 <DD><a href="<!--#include file='include/userdocs_url.html'-->probe_help.shtml">Molecular Probes and Clones</A></dd>
-
 <DD><A HREF="<!--#include file='include/userdocs_url.html'-->mblast_overview.shtml">MouseBLAST</A></DD>
-
 <DD><A HREF="<!--#include file='include/userdocs_url.html'-->anatdict_help.shtml">Mouse Anatomical Dictionary Browser</A></dd>
-
 <dd><a href="<!--#include file='include/userdocs_url.html'-->snp_help.shtml">Mouse SNP Query Form</a></DD>
-
 <dd><a href="<!--#include file='include/userdocs_url.html'-->sequence_help.shtml">Mouse Sequence Query Form</a></DD>
-
 <DD><a href="<!--#include file='include/userdocs_url.html'-->oxfordgrid_help.shtml">Oxford Grid</A></dd>
-
 <DD><a href="<!--#include file='include/userdocs_url.html'-->allele_help.shtml">Phenotypes and Alleles</A><BR>
-
 <dd><a href="<!--#include file='include/userdocs_url.html'-->pirsf_browser_help.shtml">Protein Superfamily Browser</a></dd>
 <DD><a href="<!--#include file='include/userdocs_url.html'-->reference_help.shtml">References</A></DD></dd>
-
 <DD><a href="<!--#include file='include/userdocs_url.html'-->polymorphism_help.shtml">RFLP/PCR Polymorphism</A><BR>
-
-
-
 </DL>
 
-
-
-
-
-<HR>
-<!--#include file="include/bodyStop.html"-->
-</BODY></HTML>
-<!--
-Warranty Disclaimer and Copyright Notice
-
- THE JACKSON LABORATORY MAKES NO REPRESENTATION ABOUT THE SUITABILITY OR
- ACCURACY OF THIS SOFTWARE OR DATA FOR ANY PURPOSE, AND MAKES NO WARRANTIES,
- EITHER EXPRESS OR IMPLIED, INCLUDING MERCHANTABILITY AND FITNESS FOR A
- PARTICULAR PURPOSE OR THAT THE USE OF THIS SOFTWARE OR DATA WILL NOT
- INFRINGE ANY THIRD PARTY PATENTS, COPYRIGHTS, TRADEMARKS, OR OTHER RIGHTS.
- THE SOFTWARE AND DATA ARE PROVIDED "AS IS".
-
- This software and data are provided to enhance knowledge and encourage
- progress in the scientific community and are to be used only for research
- and educational purposes.  Any reproduction or use for commercial purpose
- is prohibited without the prior express written permission of the Jackson
- Laboratory.
-
-Copyright © 1996, 1999, 2002, 2003 by The Jackson Laboratory
-All Rights Reserved
--->
+<!--#include file='include/templateBodyStop.html'--> 
