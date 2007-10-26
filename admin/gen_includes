@@ -139,6 +139,10 @@ def main ():
     createIncludeLink('templateBodyStart.html', config['MGICONFIG_PATH'] + 'web/templateBodyStart.html')
     createIncludeLink('templateBodyStop.html', config['MGICONFIG_PATH'] + 'web/templateBodyStop.html')
 
+    createIncludeLink('templateBlankBodyStart.html', config['MGICONFIG_PATH'] + 'web/templateBlankBodyStart.html')
+    createIncludeLink('templateBlankBodyStop.html', config['MGICONFIG_PATH'] + 'web/templateBlankBodyStop.html')
+
+
     return
 
 if __name__ == '__main__':
