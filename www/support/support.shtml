@@ -1,32 +1,12 @@
-<HTML>
-<HEAD>
-<TITLE><!--#include file='include/mgiversion.html'--> - User Support</TITLE>  
-<!--#include file="include/stylesheet.html"-->
+<!--#include file='include/templateHead.html'-->
+<title><!--#include file='include/mgiversion.html'--> - User Support</title>
 
- </HEAD>
-<BODY BGCOLOR=#FFFFFF>
-<!--#include file="include/bodyStart.html"-->
+<!--#include file='include/templateBodyStart.html'-->
 
-
-<P>
-
-<TABLE WIDTH="100%" BORDER=0 CELLPADDING=2 CELLSPACING=1>
- <TR>
-  <TD WIDTH="100%" BGCOLOR="#D0E0F0">
-   <TABLE WIDTH="100%" BORDER=0 CELLPADDING=0 CELLSPACING=0>
-    <TR>
-     <TD WIDTH="20%" VALIGN="center" ALIGN="left">&nbsp;</TD>
-     <TD WIDTH="60%" ALIGN="center" VALIGN="center">
-      <FONT COLOR="#000000" SIZE=5 FACE="Arial,Helvetica">
-       Mouse Genome Informatics User Support
-      </FONT>
-     </TD>
-     <TD WIDTH="20%" VALIGN="center" ALIGN="center">&nbsp;</TD>
-    </TR>
-   </TABLE>
-  </TD>
- </TR>
-</TABLE>
+<!-- Title Bar -->
+<div id="titleBarWrapper">
+ <span class="titleBarMainTitle">Mouse Genome Informatics User Support</span>
+</div> <!--titleBar-->
 
 <B>E-mail:</B> mgi-help@informatics.jax.org<P>
 <B>Phone:</B> (207) 288-6445<P>
@@ -65,8 +45,8 @@ PHENOME-LIST, created in August 2000, provides a forum for strain characterizati
 <P>
 <HR>
 
-<!--#include file="include/bodyStop.html"--></body>
-</html>
+<!--#include file='include/templateBodyStop.html'-->
+
 <!--
 Warranty Disclaimer and Copyright Notice
 
