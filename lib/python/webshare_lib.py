@@ -3,8 +3,6 @@ import sys
 if MGI_LIBS not in sys.path:
         sys.path.insert (0, MGI_LIBS)
 
-#import config
-
 import Configuration
 config = Configuration.get_Configuration ('Configuration', 1)
 

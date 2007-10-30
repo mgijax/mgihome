@@ -9,14 +9,12 @@ import os
 import string
 import cgi
 
-# import config			# MGI-written libraries
-
 import Configuration
 config = Configuration.get_Configuration ('Configuration', 1)
 
 import homelib
-import header
 import mgi_utils
+import template
 
 ###--- Global Constants ---###
 
@@ -656,13 +654,9 @@ class UserInput:
 		# Effects: builds an HTML page and writes it to stdout
 		# Throws: nothing
 
-		# build the top of the page, above the first data fields
+		# build body of the page
 
-		topOfPage = [
-			'<HTML><HEAD><TITLE>Your Input Welcome</TITLE>',
-			'</HEAD><BODY bgcolor=ffffff>',
-			header.bodyStart(),
-			header.headerBar('Your Input Welcome'),
+		bodyTop = [
 			'''We want to hear from you.  Use this form to submit
 			updates to the information in our
 			database.  Please enter the contact information in the
@@ -671,45 +665,43 @@ class UserInput:
 			references as appropriate.  We appreciate your input
 			and comments, and will review them promptly.''',
 			'<FORM METHOD=post ACTION=feedback.cgi>',
-			]
-
-		# build the top of the form, with the fields which are
-		# standard at the top of each Your Input page
-
-		topOfForm = [ '<TABLE>',
-			'<TR><TD>%s<TD>%s</TABLE>' % (self.subject.getLabel(),
-						self.subject.getHTML()),
-			'<H3>From</H3>',
+			'<TABLE>',
+						'<TR><TD>%s<TD>%s</TABLE>' % (self.subject.getLabel(),
+									self.subject.getHTML()),
+						'<H3>From</H3>',
 			'<TABLE>',
 			]
+		
 		for item in [ self.firstName, self.lastName,
 				self.institution, self.email ]:
-			topOfForm.append ('<TR><TD>%s<TD>%s' % \
+			bodyTop.append ('<TR><TD>%s<TD>%s' % \
 				(item.getLabel(), item.getHTML()))
-		topOfForm.append ('</TABLE>')
+		bodyTop.append ('</TABLE>')
 
 		for item in [ self.accID, self.dataDate, self.referer ]:
 			if item.getValue():
-				topOfForm.append (item.getHTML())
-
-		# build the bottom of the page, including the buttons at the
-		# bottom of the form and any footer info
-
-		bottomOfPage = [ '<HR>',
+				bodyTop.append (item.getHTML())
+		
+		bodyBottom = [ '<HR>',
 			'<INPUT TYPE=submit VALUE=Submit>',
 			'<INPUT TYPE=reset>',
 			'<INPUT TYPE=button VALUE="Cancel" ',
 			'	onClick="window.close()">',
-			'</FORM><HR>',
-			header.bodyStop(),
-			'</BODY></HTML>' ]
+			'</FORM><HR>' ]
 
-		# print the complete page to stdout
-
-		print string.join (topOfPage, '\n')
-		print string.join (topOfForm, '\n')
+		# get template and set title and heading
+		page_template = template.Template(config['TEMPLATE_PATH'])
+		page_template.setContentType('')
+		page_template.setTitle('Your Input Welcome')
+		page_template.setHeaderBarMainText('Your Input Welcome')
+		
+		# print page
+		print page_template.getNavigationAndHeader()
+		print string.join (bodyTop, '\n')
 		self.printFormExtra()
-		print string.join (bottomOfPage, '\n')
+		print string.join (bodyBottom, '\n')
+		print page_template.getTemplateBodyStop()
+		
 		return
 
 	def printConfirmationPage (self):
@@ -719,22 +711,24 @@ class UserInput:
 		# Assumes: nothing
 		# Effects: writes an HTML page to stdout
 		# Throws: nothing
-
+		
 		pageItems = [
-			'<HTML><HEAD><TITLE>Confirmation</TITLE></HEAD>',
-			'<BODY bgcolor=ffffff>',
-			header.bodyStart(),
-			header.headerBar('Confirmation'),
 			'<BR>',
 			'Thank you for contacting the Mouse Genome Database.',
 			'We appreciate your input and comments, and will ',
 			'review them promptly.<P>',
-			'<HR><PRE>',
+			'<BLOCKQUOTE><PRE>',
 			self.getPlainText (),
-			'</PRE><HR>',
-			header.bodyStop(), 
-			'</BODY></HTML>' ]
-		print string.join (pageItems, '\n')
+			'</PRE></BLOCKQUOTE></P>' ]
+		
+		page_template = template.Template(config['MGICONFIG_PATH'] + 'web/')
+		
+		page_template.setTitle('Confirmation')
+		page_template.setHeaderBarMainText('Confirmation')
+		page_template.setBody(string.join (pageItems, '\n'))
+		
+		print page_template.getFullDocument()
+		
 		return
 
 	###--- Private Methods ---###

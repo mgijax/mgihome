@@ -1,31 +1,16 @@
-<HTML>
-<head>
+<!--#include file="include/templateHead.html"-->
 <TITLE>Submitting expression data to the Gene Expression Database (GXD)</TITLE>
-<!--#include file="include/stylesheet.html"-->
-</head>
-<BODY BGCOLOR="#ffffff">
-<!--#include file="include/bodyStart.html"-->
-<TABLE WIDTH="100%" BORDER=0 CELLPADDING=2 CELLSPACING=1>
- <TR>
-  <TD WIDTH="100%" BGCOLOR="#D0E0F0">
-   <TABLE WIDTH="100%" BORDER=0 CELLPADDING=0 CELLSPACING=0>
-    <TR>
-     <TD WIDTH="20%" VALIGN="center" ALIGN="left">&nbsp;</TD>
-     <TD WIDTH="60%" ALIGN="center" VALIGN="center">
-      <FONT COLOR="#000000" SIZE=5 FACE="Arial,Helvetica">
-       Submitting expression data to the Gene Expression Database (GXD)
-      </FONT>
-     </TD>
-     <TD WIDTH="20%" VALIGN="center" ALIGN="center">&nbsp;</TD>
-    </TR>
-   </TABLE>
-  </TD>
- </TR>
-</TABLE>
+<!--#include file="include/templateBodyStart.html"-->
+
+<!-- Title Bar -->
+<div id="titleBarWrapper">
+ <span class="titleBarMainTitle">Submitting expression data to the Gene Expression Database (GXD)</span>
+</div> <!--titleBar-->
+
 <h3>Table of Contents</h3>
    <P><UL>
     <A HREF="#why">Why should I submit data?</A><BR>
- 
+
     <A HREF="#what_type">What types of data can I submit?</A><BR>
     <A HREF="#how_can">How can I submit the data?</A><BR>
      <A HREF="#what_info">What information should a data submission contain?</A><BR>
@@ -36,15 +21,15 @@
           <A HREF="#specimen">Specimen Information</A><BR>
           <A HREF="#experiment">Experimental Results</A><BR>
          </UL>
-    <A HREF="#if_your">If your submission is not accompanied by a publication</A><BR>  
-    <A HREF="#what_happens">What happens upon data submission?</A><BR>  
+    <A HREF="#if_your">If your submission is not accompanied by a publication</A><BR>
+    <A HREF="#what_happens">What happens upon data submission?</A><BR>
      <A HREF="#emage">Our collaboration with EMAGE</A>
 
         </UL>
         </P>
-  
+
 <H3><A NAME="why"></A>Why should I submit data?</H3>
-<P>Electronic submission both increases the exposure of your work and the amount of data available to the scientific community.  Your data will be integrated with many other data and made widely available for basic and complex database searches, adding to its value and increasing its exposure.  Electronic submission also allows you to share with the scientific community unpublished data, such as data that you were unable to include in a journal article due to space limitations.  GXD is designed to be a resource for the scientific community.  Its value is directly proportional to the amount of data it contains.  By increasing the amount of data in GXD, you can help increase its utility for yourself and others. (More information about GXD and its functionality can be found 
+<P>Electronic submission both increases the exposure of your work and the amount of data available to the scientific community.  Your data will be integrated with many other data and made widely available for basic and complex database searches, adding to its value and increasing its exposure.  Electronic submission also allows you to share with the scientific community unpublished data, such as data that you were unable to include in a journal article due to space limitations.  GXD is designed to be a resource for the scientific community.  Its value is directly proportional to the amount of data it contains.  By increasing the amount of data in GXD, you can help increase its utility for yourself and others. (More information about GXD and its functionality can be found
 <a href="<!--#include file='include/mgihome_url.html'-->GXD/aboutGXD.shtml">here</a>).</P>
 
 
@@ -55,9 +40,9 @@
 <P>Data can be electronically submitted to GXD by the following methods:</P>
 <UL>
   <LI>Via the Gene Expression Notebook (GEN).  The GEN is a modified Excel spreadsheet.  You can use it to organize and store expression data in your laboratory as well as to submit data to GXD. The GEN and a detailed user guide are available from the <A HREF="./index.shtml">Gene Expression Notebook Resource Page</A>.</LI><br>
-  <LI>Data can be sent as a regular email attachment to 
+  <LI>Data can be sent as a regular email attachment to
 <A HREF="mailto:GEN@informatics.jax.org">GEN@informatics.jax.org</A>.  We will accept the data in various formats as long as it conforms to the guidelines described below.</LI><br>
-  <LI>Data can also be uploaded by FTP or sent on disk or CD.  If you choose one of these options, please contact 
+  <LI>Data can also be uploaded by FTP or sent on disk or CD.  If you choose one of these options, please contact
 <A HREF="mailto:GEN@informatics.jax.org">GEN@informatics.jax.org</A> to make arrangements.</LI>
 </UL>
 
@@ -109,9 +94,9 @@
 
 <h3><A NAME="specimen"></A>Specimen Information</h3>
 <TABLE BORDER="0" CELLSPACING="4" CELLPADDING="4">
-  
+
 <TR><TH align="left" valign="top">Strain:</TH><TD VALIGN="top">Background strain of the specimens used.  See <A HREF="<!--#include file="include/wi_url.html"-->external/festing/search_form.cgi">Inbred Strains of Mice and Rats</A> for a listing of approved strain names.  If your mice are a mixture, please list the strains that contributed to their makeup.</TD></TR>
-<TR><TH align="left" valign="top">Mutations: </TH><TD VALIGN="top"> If you use mutant mice, please specify the mutant alleles.  For tips on determining the official allele symbol see <A HREF="gen.shtml#prepare_for_submission">Determining standard nomenclature for mouse genes and alleles.</A> Alternatively, you can list the reference that describes the creation of the mutant.</TD></TR> 
+<TR><TH align="left" valign="top">Mutations: </TH><TD VALIGN="top"> If you use mutant mice, please specify the mutant alleles.  For tips on determining the official allele symbol see <A HREF="gen.shtml#prepare_for_submission">Determining standard nomenclature for mouse genes and alleles.</A> Alternatively, you can list the reference that describes the creation of the mutant.</TD></TR>
 
 <TR><TH align="left" valign="top"><nobr>Embryonic age/Theiler stage: </TH><TD VALIGN="top">The embryonic age of the specimen, either in embryonic days or Theiler stage.</TD></TR>
 
@@ -143,45 +128,31 @@
 </P>
 
 <H3><A NAME="what_happens"></A>What happens upon data submission?</H3>
-<P>We will convert your data into standardized formats.  We will contact you if we have questions. We will provide you with an accession number so that you can cite the submission in pertinent publications. You will be able to check and provide comments on the final entries. If the submission is in conjunction with a publication, we keep your data confidential until the paper is published unless you authorize an earlier release. 
+<P>We will convert your data into standardized formats.  We will contact you if we have questions. We will provide you with an accession number so that you can cite the submission in pertinent publications. You will be able to check and provide comments on the final entries. If the submission is in conjunction with a publication, we keep your data confidential until the paper is published unless you authorize an earlier release.
 </P>
 
 <H3><A NAME="emage"></A>Our collaboration with EMAGE</H3>
-<P>GXD makes images from RNA <I>in situ</I> hybridization experiments, together with all pertinent annotations, available to the Edinburgh 3D Mouse Atlas and Gene Expression (EMAGE) Database for spatial mapping.  EMAGE collects data from wild-type embryos at selected developmental stages. The long-term goal of our collaboration is to integrate GXD and EMAGE into the  
+<P>GXD makes images from RNA <I>in situ</I> hybridization experiments, together with all pertinent annotations, available to the Edinburgh 3D Mouse Atlas and Gene Expression (EMAGE) Database for spatial mapping.  EMAGE collects data from wild-type embryos at selected developmental stages. The long-term goal of our collaboration is to integrate GXD and EMAGE into the
 <a href="<!--#include file='include/mgihome_url.html'-->GXD/gxdgen.shtml">Mouse Gene Expression Information Resource</a> to provide the scientific community with a resource that will fully combine relational (standardized text-based) and graphical methods to display and analyze gene expression information.
 
 </P>
-<pre>
 
+<!--#include file="include/templateBodyStop.html"-->
 
-
-
-
-
-
-</pre>
-
-
-<hr>
-<!--#include file="include/bodyStop.html"-->
-
-</BODY>
-
-</HTML>
 <!--
 Warranty Disclaimer and Copyright Notice
 
- THE JACKSON LABORATORY MAKES NO REPRESENTATION ABOUT THE SUITABILITY OR 
- ACCURACY OF THIS SOFTWARE OR DATA FOR ANY PURPOSE, AND MAKES NO WARRANTIES, 
- EITHER EXPRESS OR IMPLIED, INCLUDING MERCHANTABILITY AND FITNESS FOR A 
- PARTICULAR PURPOSE OR THAT THE USE OF THIS SOFTWARE OR DATA WILL NOT 
- INFRINGE ANY THIRD PARTY PATENTS, COPYRIGHTS, TRADEMARKS, OR OTHER RIGHTS.  
+ THE JACKSON LABORATORY MAKES NO REPRESENTATION ABOUT THE SUITABILITY OR
+ ACCURACY OF THIS SOFTWARE OR DATA FOR ANY PURPOSE, AND MAKES NO WARRANTIES,
+ EITHER EXPRESS OR IMPLIED, INCLUDING MERCHANTABILITY AND FITNESS FOR A
+ PARTICULAR PURPOSE OR THAT THE USE OF THIS SOFTWARE OR DATA WILL NOT
+ INFRINGE ANY THIRD PARTY PATENTS, COPYRIGHTS, TRADEMARKS, OR OTHER RIGHTS.
  THE SOFTWARE AND DATA ARE PROVIDED "AS IS".
 
- This software and data are provided to enhance knowledge and encourage 
- progress in the scientific community and are to be used only for research 
- and educational purposes.  Any reproduction or use for commercial purpose 
- is prohibited without the prior express written permission of the Jackson 
+ This software and data are provided to enhance knowledge and encourage
+ progress in the scientific community and are to be used only for research
+ and educational purposes.  Any reproduction or use for commercial purpose
+ is prohibited without the prior express written permission of the Jackson
  Laboratory.
 
 Copyright © 1996, 1999, 2002 by The Jackson Laboratory

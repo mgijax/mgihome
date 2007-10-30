@@ -11,7 +11,6 @@ MGICONFIG_PATH    /usr/local/mgi/live/mgiconfig/
 GLOBAL_CONFIG     ${MGICONFIG_PATH}web/GlobalConfig
 
 # Path to our home installation
-#MGIHOME_PATH    /home/djd/work/mgihome-trunk/
 MGIHOME_PATH    /usr/local/mgi/live/mgihome/
 
 
@@ -65,6 +64,9 @@ FTP_URL     ftp://ftp.informatics.jax.org/
 
 # path to the NIH survey
 SURVEY_ROOT_DIRECTORY	/export/gondor/survey/nih
+
+# Path to the templates
+TEMPLATE_PATH    ${MGICONFIG_PATH}web/
 
 #---------------#
 #- GEN related -#

@@ -15,7 +15,6 @@ import Configuration
 config = Configuration.get_Configuration ('Configuration', 1)
 
 import homelib
-import header
 import formMailer
 
 ###--- Global Variables ---###
@@ -123,8 +122,6 @@ if config.has_key('CGI_MAILTARGET'):
 # construct the strainMailer object, and let it run...
 strainMailerCGI = strainMailer ('Strain',
         curator_addr,
-        header.bodyStart(),
-        header.bodyStop(),
         labels,
         required_fields,
         sections

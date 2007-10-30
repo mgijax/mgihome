@@ -1,10 +1,12 @@
 <!--#include file='include/templateHead.html'--> 
 <title><!--#include file='include/mgiversion.html'--> - Nomenclature Submission Form</title>
 
-<!--#include file='include/templateBodyStart.html'--> 
+<!--#include file='include/templateBodyStart.html'-->
 
-<h2 id="titleBar">Nomenclature Submission Form</h2>
-
+<!-- Title Bar -->
+<div id="titleBarWrapper">
+ <span class="titleBarMainTitle">Nomenclature Submission Form</span>
+</div> <!--titleBar-->
 
 <H3>Submit a Proposed Locus Symbol</H3>
 Please fill in all the appropriate information.  If your contact details are already in MGI, you only need to enter your name and e-mail address.  Press the submit button at the bottom of the form to send the information to the Mouse Genomic Nomenclature Committee (MGNC).
@@ -105,4 +107,4 @@ If a homologous locus is known in a species other than mouse, please fill in thi
 </TABLE>
 <BR>
 <INPUT TYPE=submit VALUE="Submit"> <INPUT TYPE=reset VALUE="Reset Form">
-<!--#include file='include/templateBodyStop.html'--> 
+<!--#include file='include/templateBodyStop.html'-->

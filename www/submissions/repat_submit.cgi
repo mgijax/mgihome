@@ -22,9 +22,8 @@ config = Configuration.get_Configuration ('Configuration', 1)
 
 import table		# for unescape() function only
 import homelib
-import header
-import errorlib
 import formMailer
+import template
 
 
 SURVEY_ROOT_DIRECTORY = '/home/dow/tmp/survey/'
@@ -181,9 +180,7 @@ def main():
         formMailer.handleError (
                     err_message % \
                             string.join (missing_fields, ', '),
-                    'Survey Form',
-                    header.bodyStart(),
-                    header.bodyStop())
+                    'Survey Form')
         sys.exit (0)
     sys.stderr.write("Survey root dir :" + SURVEY_ROOT_DIRECTORY + "\n")
     message = []
@@ -210,16 +207,15 @@ def main():
                             section.append ('\t%s' % parms[field].value)
         if len(section) > 3:
                 message = message + section
-
-    print '<HTML><HEAD><TITLE>Survey Results Sent!</TITLE></HEAD>'
-    print '<BODY bgcolor=ffffff>'
-    print header.bodyStart()
-    print header.headerBar('Survey Results Sent!')
-    print 'The following information was successfully submitted:'
-    print '<PRE>\n%s\n</PRE>' % string.join (message, '\n')
-    print '<HR>'
-    print header.bodyStop()
-
+    
+    reply_message = template.Template(config['TEMPLATE_PATH'])
+    reply_message.setTitle('Survey Results Sent!')
+    reply_message.setHeaderBarMainText('Survey Results Sent!')
+    reply_message.setBody('The following information was successfully submitted:')
+    reply_message.appendBody('<BLOCKQUOTE><PRE>\n%s\n</PRE></BLOCKQUOTE>' % string.join (message, '\n'))
+    
+    print reply_message.getFullDocument()
+    
     tempfile.tempdir = SURVEY_ROOT_DIRECTORY
     dirName = tempfile.mktemp()
     os.mkdir(dirName)
@@ -240,8 +236,7 @@ def main():
 ################
 # MAIN PROGRAM #
 ################
-print "Content-type: text/html"
-print
+
 try:
     main()
 except SystemExit: 

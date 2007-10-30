@@ -26,8 +26,9 @@ import os
 import string
 import mgi_utils
 import errorlib
-import header
-import formMailer
+import template
+
+reply_message = template.Template(config['TEMPLATE_PATH'])
 
 NL = '\n'
 SP = ' '
@@ -46,14 +47,8 @@ if config.has_key('CGI_MAILTARGET'):
 	RECIPIENT = config['CGI_MAILTARGET']
 
 def hd():
-	print """<HTML>
-	<HEAD>
-	<TITLE>User Support Express Mail Results</TITLE></HEAD>
-	<BODY BGCOLOR=#FFFFFF>"""
-
-	print header.bodyStart()
-
-	print header.headerBar ('User Support <I>Express</I> Mail Results')
+	reply_message.setTitle('User Support Express Mail Results')
+	reply_message.setHeaderBarMainText('User Support <I>Express</I> Mail Results')
 	return
 
 def main():
@@ -67,9 +62,13 @@ def main():
 			break
 
 	if not form_ok:
-		print "<H1>Sorry...</H1>"
-		print "Please fill in required fields: First Name, Last Name, \
-		E-mail address, Subject and Message. Then send the message."
+		error_message = """<H1>Sorry...</H1>Please fill in required fields: 
+			First Name, Last Name, E-mail address, Subject and Message. Then 
+			send the message.  Please fill in required fields: First Name, 
+			Last Name, E-mail address, Subject and Message. Then send the 
+			message."""
+		
+		reply_message.appendBody(error_message)
 	else:
 		if form.has_key( 'title' ):
 			title = form['title'].value
@@ -146,12 +145,13 @@ def main():
 			+ NL \
 			+ '#AR-Message-End' + 13*SP \
 				+ 'Do Not Delete This Line' + NL
-
-		print """
-<H1>Thank you.</H1>
-Your message has been received and is being forwarded to our
-<A HREF="support.shtml">User Support Group</A>.
-"""
+		
+		body = """
+			<H1>Thank you.</H1>
+			Your message has been received and is being forwarded to our
+			<A HREF="support.shtml">User Support Group</A>."""
+			
+		reply_message.appendBody(body)
 
 		mail_header = 'Reply-to: ps@informatics.jax.org' + NL \
 			+ 'Subject: Express Mail' + NL
@@ -160,12 +160,10 @@ Your message has been received and is being forwarded to our
 		fd.write( mail_header + msg + NL + '.' + NL )
 		fd.close()
 		
-	print '<HR>'
-	print header.bodyStop()
+		print reply_message.getFullDocument()
+		
 	return
 
-print 'Content-type: text/html'
-print
 try:
 	main()
 except:
@@ -188,5 +186,5 @@ except:
 #    commercial reproduction is prohibited without the prior written 
 #    permission of The Jackson Laboratory. 
 #
-#    Copyright © 1996 The Jackson Laboratory All Rights Reserved 
+#    Copyright (c) 1996 The Jackson Laboratory All Rights Reserved 
 #

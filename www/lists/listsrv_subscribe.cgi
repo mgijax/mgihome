@@ -24,8 +24,9 @@ import cgi
 import os
 import string
 import errorlib
-import header
-import formMailer
+import template
+
+page_template = template.Template(config['TEMPLATE_PATH'])
 
 NL = '\n'
 SP = ' '
@@ -44,14 +45,10 @@ if config.has_key('CGI_MAILTARGET'):
 	RECIPIENT = config['CGI_MAILTARGET']
 
 def hd():
-	print """<HTML>
-	<HEAD>
-	<TITLE>List Subscription</TITLE>
-	</HEAD>
-	<BODY BGCOLOR="#FFFFFF">"""
+	page_template.setTitle('List Subscription')
+	page_template.setHeaderBarMainText('List Subscription Mail Results')
 
-	print header.bodyStart()
-	print header.headerBar ('List Subscription Mail Results')
+	print page_template.getNavigationAndHeader()
 	return
 
 def main():
@@ -99,13 +96,9 @@ def main():
 		fd.write( mail_header + msg + NL + '.' + NL )
 		fd.close()
 		
-	print '<HR>'
-	print header.bodyStop()
-	print '</BODY></HTML>'
+	print page_template.getTemplateBodyStop()
 	return
 
-print 'Content-type: text/html'
-print
 try:
 	main()
 except:

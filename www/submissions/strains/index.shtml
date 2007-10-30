@@ -1,26 +1,13 @@
-<HTML>
-<HEAD>
-<TITLE><!--#include file='include/mgiversion.html'--> - Mouse Strain Registry Form</TITLE>
-<!--#include file="include/stylesheet.html"-->
-</HEAD>
-<BODY BGCOLOR="#ffffff">
-<TABLE WIDTH="100%" BORDER=0 CELLPADDING=0 CELLSPACING=0>
-  <TR><TD WIDTH="100%">
-    <TABLE WIDTH="100%" BORDER=0 CELLPADDING=0 CELLSPACING=0>
-     <TR><TD WIDTH="20%" VALIGN="center" ALIGN="left">
-<A HREF="<!--#include file='include/wi_url.html'-->" border=0>
-<!--#include file="include/mgi_logo_small.html"--></A></TD>
-      <TD WIDTH="60%" ALIGN="center" VALIGN="center" BGCOLOR="#ffffff">
-       <FONT COLOR="#000000" SIZE=5 FACE="Arial,Helvetica">
-Mouse Strain Registry Form
-       </FONT></TD><TD WIDTH="20%" VALIGN="center" ALIGN="center" BGCOLOR="#ffffff">&nbsp;</TD></TR>
-<TR BGCOLOR="blue"><TD COLSPAN=3><FONT face="Arial,Helvetica" color="#ffffff">
-    <B>&nbsp;Mouse Genome Informatics</B></TD></TR>
-<TR><TD BGCOLOR="#ffffff"><FONT SIZE=-1 FACE="Arial,Helvetica"><CENTER><A HREF="<!--#include file='include/wi_url.html'-->">MGI Home</A>&nbsp;&nbsp;&nbsp;
-<a href="../../help/help.shtml">Help
-</A></FONT></CENTER></TD></TR>
-</TABLE></TD></TR>
-</TABLE>
+<!--#include file='include/templateHead.html'-->
+<title><!--#include file='include/mgiversion.html'--> - Mouse Strain Registry Form</title>
+
+<!--#include file='include/templateBodyStart.html'-->
+
+<!-- Title Bar -->
+<div id="titleBarWrapper">
+ <span class="titleBarMainTitle">Mouse Strain Registry Form</span>
+</div> <!--titleBar-->
+
 <HR>
 
 <p>
@@ -181,12 +168,13 @@ Fax Number:			<input TYPE="text" NAME="fax" 	    SIZE=30>
 <hr>
 <input TYPE=submit VALUE="Submit">
 <input TYPE=reset VALUE="Reset Form">
-<hr>
+
 </form>
- <P>
-<!--#include file="include/footer.html"-->
-</P></BODY>
-</html>
+
+
+<!--#include file='include/templateBodyStop.html'-->
+
+
 <!--Warranty Disclaimer and Copyright Notice
 THE JACKSON LABORATORY MAKES NO REPRESENTATION ABOUT THE SUITABILITY OR  ACCURACY OF THIS SOFTWARE OR DATA FOR ANY PURPOSE, AND MAKES NO WARRANTIES,  EITHER  EXPRESS OR IMPLIED, INCLUDING MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE OR  THAT THE USE OF THIS SOFTWARE OR DATA WILL NOT INFRINGE ANY THIRD PARTY  PATENTS, COPYRIGHTS, TRADEMARKS, OR OTHER RIGHTS. THE SOFTWARE AND DATA ARE PROVIDED "AS IS".
 This software and data are provided to enhance knowledge and  encourage  progress in the scientific community and are  to  be  used  only  for  research and educational purposes. Any reproduction or use for commercial purpose is prohibited  without the prior express written permission of the Jackson Laboratory. Copyright © 1996, 1999, 2002 by The Jackson Laboratory All Rights Reserved -->

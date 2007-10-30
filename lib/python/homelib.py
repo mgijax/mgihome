@@ -2,7 +2,6 @@
 # Purpose:	provide general routines for use by MGI Home site scripts
 
 import os
-# import config
 
 import Configuration
 config = Configuration.get_Configuration ('Configuration', 1)

@@ -1,27 +1,13 @@
-<HTML>
-<HEAD>
-   <TITLE><!--#include file='include/mgiversion.html'--> - Submitting Data to the Mouse Genome Database (MGD)</TITLE>
-<!--#include file="include/stylesheet.html"-->
-</HEAD>
-<BODY BGCOLOR="#FFFFFF">
-<!--#include file="include/bodyStart.html"-->
- <TABLE WIDTH="100%" BORDER=0 CELLPADDING=2 CELLSPACING=1>
- <TR>
-  <TD WIDTH="100%" BGCOLOR="#D0E0F0">
-   <TABLE WIDTH="100%" BORDER=0 CELLPADDING=0 CELLSPACING=0>
-    <TR>
-     <TD WIDTH="20%" VALIGN="center" ALIGN="left">&nbsp;</TD>
-     <TD WIDTH="60%" ALIGN="center" VALIGN="center">
-      <FONT COLOR="#000000" SIZE=5 FACE="Arial,Helvetica">
-    Submitting Data to the Mouse Genome Database (MGD)
-      </FONT>
-     </TD>
-     <TD WIDTH="20%" VALIGN="center" ALIGN="center">&nbsp;</TD>
-    </TR>
-   </TABLE>
-  </TD>
- </TR>
-</TABLE>
+<!--#include file='include/templateHead.html'-->
+<title><!--#include file='include/mgiversion.html'--> - Submitting Data to the Mouse Genome Database (MGD)</title>
+
+<!--#include file='include/templateBodyStart.html'-->
+
+<!-- Title Bar -->
+<div id="titleBarWrapper">
+ <span class="titleBarMainTitle">Submitting Data to the Mouse Genome Database (MGD)</span>
+</div> <!--titleBar-->
+
 
 <p>The Mouse Genome Database (MGD) accepts electronic data submissions from the scientific community. Any type of data that MGD maintains can be submitted as an electronic contribution,
 although mapping data, polymorphisms, and mammalian orthologies are currently the most common. Each electronic submission receives a permanent database accession ID.</p>
@@ -81,7 +67,7 @@ name:___________)
 <LI>Abstract&nbsp; (Optional, only for data that are electronic-submission)</LI>
 </UL>
 
-<H4><FONT COLOR="#EF1F1D">Data Section II</font>&nbsp; 
+<H4><FONT COLOR="#EF1F1D">Data Section II</font>&nbsp;
 Genetic Mapping Information&nbsp; <FONT COLOR="#1822CD"><A HREF="submit_sample.shtml#gmi" TARGET="ike">Sample</A></font></H4>
 <p>For mapping data, provide the following on separate lines in the body of an E-mail message:
 <ul>
@@ -233,25 +219,23 @@ on separate lines in the body of an E-mail message:
 </UL>
 &nbsp;
 <BR><B>Thanks!</B>&nbsp;
-<hr>
-<!--#include file="include/bodyStop.html"-->
-</BODY>
-</HTML>
+
+<!--#include file='include/templateBodyStop.html'-->
 
 <!--
 Warranty Disclaimer and Copyright Notice
 
- THE JACKSON LABORATORY MAKES NO REPRESENTATION ABOUT THE SUITABILITY OR 
- ACCURACY OF THIS SOFTWARE OR DATA FOR ANY PURPOSE, AND MAKES NO WARRANTIES, 
- EITHER EXPRESS OR IMPLIED, INCLUDING MERCHANTABILITY AND FITNESS FOR A 
- PARTICULAR PURPOSE OR THAT THE USE OF THIS SOFTWARE OR DATA WILL NOT 
- INFRINGE ANY THIRD PARTY PATENTS, COPYRIGHTS, TRADEMARKS, OR OTHER RIGHTS.  
+ THE JACKSON LABORATORY MAKES NO REPRESENTATION ABOUT THE SUITABILITY OR
+ ACCURACY OF THIS SOFTWARE OR DATA FOR ANY PURPOSE, AND MAKES NO WARRANTIES,
+ EITHER EXPRESS OR IMPLIED, INCLUDING MERCHANTABILITY AND FITNESS FOR A
+ PARTICULAR PURPOSE OR THAT THE USE OF THIS SOFTWARE OR DATA WILL NOT
+ INFRINGE ANY THIRD PARTY PATENTS, COPYRIGHTS, TRADEMARKS, OR OTHER RIGHTS.
  THE SOFTWARE AND DATA ARE PROVIDED "AS IS".
 
- This software and data are provided to enhance knowledge and encourage 
- progress in the scientific community and are to be used only for research 
- and educational purposes.  Any reproduction or use for commercial purpose 
- is prohibited without the prior express written permission of the Jackson 
+ This software and data are provided to enhance knowledge and encourage
+ progress in the scientific community and are to be used only for research
+ and educational purposes.  Any reproduction or use for commercial purpose
+ is prohibited without the prior express written permission of the Jackson
  Laboratory.
 
 Copyright © 1996, 1999, 2002 by The Jackson Laboratory

@@ -18,9 +18,7 @@ import Configuration
 config = Configuration.get_Configuration ('Configuration', 1)
 
 import homelib
-import header
 import CGI
-import errorlib
 import formMailer
 
 ###--- Global Variables ---###
@@ -162,8 +160,6 @@ if config.has_key('CGI_MAILTARGET'):
 # construct the allmutMailer object, and let it run...
 allmutMailerCGI = allmutMailer ('Allele and Mutant',
         curator_addr,
-        header.bodyStart(),
-        header.bodyStop(),
         labels,
         required_fields,
         sections

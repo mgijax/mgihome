@@ -18,8 +18,10 @@ config = Configuration.get_Configuration ('Configuration', 1)
 import table		# for unescape() function only
 import homelib
 import CGI
-import errorlib
-import geninclude
+import template
+
+reply_message = template.Template(config['TEMPLATE_PATH'])
+reply_message.setContentType('')
 
 submit_addr = 'gen@informatics.jax.org'	# GEN submissions E-mail
 
@@ -63,6 +65,12 @@ Subject: %s
 
 '''
 
+gen_footer = ['<SMALL>',
+		'Send questions and comments to <a href="mailto:GEN@informatics.jax.org">GEN@informatics.jax.org</a><BR>',
+		'The Gene Expression Database (GXD) Project is supported by <a href="http://www.nih.gov/">NIH</a> grant <a href="http://crisp.cit.nih.gov/crisp/CRISP_LIB.getdoc?textkey=6363398&p_grant_num=5R01HD033745-05&p_query=&ticket=430962&p_audit_session_id=3171719&p_keywords=">HD33745</a><BR>',
+		'<a href="%sother/copyright.shtml">Warranty Disclaimer &amp; Copyright Notice</a><BR>' % config['MGIHOME_URL'],
+		'</SMALL>']
+
 
 class myCGI (CGI.CGI):
 	def main(self):
@@ -72,12 +80,11 @@ class myCGI (CGI.CGI):
 			if not parms.has_key (key):
 				missing_fields.append (labels[key])
 		if missing_fields:
-			errorlib.show_error (
-				err_message % \
-					string.join (missing_fields, ', '),
-				1, 'GEN registration Form',
-				string.join (geninclude.banner(), '\n '),
-				string.join (geninclude.footer(), '\n '))
+			reply_message.setTitle('GEN registration Form')
+			reply_message.setHeaderBarMainText('GEN-Registration Error')
+			reply_message.setBody(err_message % string.join (missing_fields, ', '))
+			reply_message.appendBody(string.join (gen_footer, '\n '))
+			print reply_message.getFullDocument()
 			sys.exit (0)
 		message = []
 		for (heading, fieldlist) in field_order:
@@ -105,25 +112,31 @@ class myCGI (CGI.CGI):
 			'GEN Registration'))
 		fd.write(table.unescape(string.join (message, '\n')))
 		fd.close()
-
-		print '<HTML><HEAD><TITLE>Request Sent</TITLE></HEAD>'
-		print '<BODY bgcolor=ffffff>'
-		print string.join (geninclude.bannerok(), '\n')
-		print '<H3>Thank you for registering!</H3>'
-                print 'Please note: '
-                print '<p>' 
-                print '<ul>'
-                print '<li>When downloading, if asked "What do you want to do with this file?", Choose <br>'
-                print '<b>Save it to disk</b>. (When downloading on other platforms, GEN may be directly<br> saved to disk and may even open immediately.)'
-                print '<li>You must <b>Enable Macros</b> to allow GEN to operate optimally. With some versions<br>of Excel this means you will need to reduce the Macro security level to Medium. '
-                print '<li>To ensure your system is configured properly, review <a href="gen.shtml#sysreq">GEN system requirements</a>.'
-		print '</ul>'
-                print '<p>' 
-                print '<li><a href="GEN.xls">Download the GEN</a></li>'
-                print '<p>'
-                print '</ul>'
-		print '<PRE>\n%s\n</PRE>' % string.join (message, '\n')
-		print string.join (geninclude.footer(), '\n')
+		
+		reply_message.setTitle('Request Sent')
+		reply_message.setHeaderBarMainText('GEN-Registration Confirmation')
+		
+		body =  ['<H3>Thank you for registering!</H3>',
+                'Please note: ',
+                '<p>', 
+                '<ul>',
+                '<li>When downloading, if asked "What do you want to do with this file?", Choose <br>',
+                '<b>Save it to disk</b>. (When downloading on other platforms, GEN may be directly<br> saved to disk and may even open immediately.)',
+                '<li>You must <b>Enable Macros</b> to allow GEN to operate optimally. With some versions<br>of Excel this means you will need to reduce the Macro security level to Medium. ',
+                '<li>To ensure your system is configured properly, review <a href="gen.shtml#sysreq">GEN system requirements</a>.',
+                '</ul>',
+                '<p>', 
+                '<li><a href="GEN.xls">Download the GEN</a></li>',
+                '<p>',
+                '</ul>',
+                '<BLOCKQUOTE><PRE>\n%s\n</PRE></BLOCKQUOTE>' % string.join (message, '\n')
+        ]
+		
+		reply_message.setBody(string.join (body, '\n'))
+		reply_message.appendBody(string.join (gen_footer, '\n'))
+		
+		print reply_message.getFullDocument()
+		
 		return
 
 myCGI().go()

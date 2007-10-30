@@ -24,9 +24,10 @@ import string
 import os 
 import mgi_utils
 import mgi_html
-import errorlib
-import header
 import formMailer
+import template
+
+reply_message = template.Template(config['TEMPLATE_PATH'])
 
 SP = ' '
 HT = '\t'
@@ -34,9 +35,7 @@ NL = '\n'
 
 def errorStop (message):
 	print 'Content-type: text/html\n'
-	formMailer.handleError (message, 'MGI Nomen Form',
-		header.bodyStart(),
-		header.bodyStop())
+	formMailer.handleError (message, 'MGI Nomen Form')
 	sys.exit(0)
 
 nomen_addr = 'nomen@informatics.jax.org'  # MGD Nomen Coordinator Email Account
@@ -47,19 +46,10 @@ if config.has_key('CGI_MAILTARGET'):
 
 subject = 'Nomenclature Request'
 
-htmlheader = \
-'Content-type: text/html' + NL + NL + \
-'<HTML> \
-<HEAD> \
-<TITLE> \
-MGD: Nomenclature Request\
-</TITLE> \
-</HEAD> \
-<BODY BGCOLOR="#FFFFFF">'
+reply_message.setTitle('MGD: Nomenclature Request')
+reply_message.setHeaderBarMainText('Thank You')
 
-htmlheader = htmlheader + header.bodyStart() + header.headerBar('Thank You')
-
-htmlheader = htmlheader + ' <BR>\
+body = ' <BR>\
 Your Nomenclature request has been sent to the MGD Nomenclature Support Staff.'
 
 field_sort = [ \
@@ -259,11 +249,11 @@ if missing_fields:
 		string.join (missing_fields, ', '))
 
 message = message + homsect
-print htmlheader + '<PRE>' + message + '</PRE><HR>'
+body += '<BLOCKQUOTE><PRE>' + message + '</PRE></BLOCKQUOTE>'
 
-print header.bodyStop()
+reply_message.setBody(body)
 
-print "</BODY></HTML>"
+print reply_message.getFullDocument()
 
 mailheader = 'From: ' + submitter_addr + NL + 'To: ' + nomen_addr + NL 
 mailheader = mailheader + 'Subject: ' + subject + NL + NL

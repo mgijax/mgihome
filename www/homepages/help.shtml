@@ -53,21 +53,7 @@
 				<li><a href="tabContents/Help_Highlevel.shtml" rel="main_area">High Level Stuff</a></li>
 			</ul>
 			<div id="main_area" class="contentstyle">
-				<table>
-					<tr><td>
-					<p>Please feel free to <a href="http://www.informatics.jax.org/mgihome/support/tjl_inbox.shtml" title="Contact user support">contact User Support </a> for any of the following:
-						<ul id="other">
-						<li>You can't find the data you're looking for</li>
-						<li>You've found an error on one of our web pages</li>
-						<li>You have a paper you'd like us to curate</li>
-						<li>You need us to create a special report</li>
-						<li>You have data you'd like to submit </li>
-						<li>You have a complaint about or a suggestion for our website </li>
-						</ul>
-						<p>You can reach us by <a href="mailto:mgi-help@informatics.jax.org">email</a>, by submitting our <a href="http://www.informatics.jax.org/mgihome/support/tjl_inbox.shtml" title="Contact user support">Express Mail form</a>, or at (207) 288-6445.<br>
-						 Join our list of <a href="http://www.informatics.jax.org/mgihome/support/tjl_reg.shtml">registered users</a>.  <em>{Why? I think I need more detail here!}</em></p>
-					</td></tr>
-				</table>
+				<!--#include file='tabContents/Help_UserSupport.shtml'-->
 			</div>
 
 			<h2>MGI RESOURCES DOCUMENTATION</h2>
@@ -83,22 +69,7 @@
 				<li><a href="tabContents/Ortho_Help.shtml" rel="helparea">Orthology</a></li>
 			</ul>
 			<div id="helparea" class="contentstyle">
-				<table width="100%">
-					<tr>
-						<td>
-							<p><a href="<!--#include file='include/mgihome_url.html'-->help/documentation.shtml">Help</a> documentation for Genes &amp; Markers:</p>
-							<ul>
-								<li>Genes &amp; Markers Query Form <a href="<!--#include file='include/userdocs_url.html'-->marker_help.shtml">help</a> </li>
-								<li>Marker Detail Page <a href="<!--#include file='include/userdocs_url.html'-->marker_detail.shtml">help</a> </li>
-								<li>Nomenclature <a href="<!--#include file='include/mgihome_url.html'-->nomen/short_gene.shtml">help</a> (quick guide) </li>
-								<li>MGI Batch Query <a href="<!--#include file='include/userdocs_url.html'-->batch_qf_help.shtml">help</a> </li>
-								<li>Sequence Query Form <a href="<!--#include file='include/userdocs_url.html'-->sequence_help.shtml">help</a> </li>
-								<li>MouseBLAST <a href="<!--#include file='include/userdocs_url.html'-->mblast_overview.shtml">help</a></li>
-								<li>GBrowse <a href="http://gbrowse.informatics.jax.org/cgi-bin/gbrowse/mouse_current/?help=general">help</a></li>
-							</ul>
-						</td>
-					</tr>
-				</table>
+				<!--#include file='tabContents/Gene_Help.shtml'-->
 			</div>
 
 			<h2>EXPLAINING DATA CURATION/POLICIES</h2>
@@ -114,11 +85,7 @@
 				<li><a href="tabContents/Ortho_Curators.shtml" rel="policyarea">Orthology</a></li>
 			</ul>
 			<div id="policyarea" class="contentstyle">
-				<table width="100%">
-					<tr>
-						<td>Explanation of how Genes are determined.</td>
-					</tr>
-				</table>
+				<!--#include file='tabContents/Gene_Curators.shtml'-->
 			</div>
 
 			<script type="text/javascript">
