@@ -205,6 +205,7 @@ def main():
         if not parms.has_key (key) or parms[key].value == '':
             missing_fields.append (labels[key])
     if missing_fields:
+        print 'Content-type: text/html\n\n'
         formMailer.handleError (
                     err_message % \
                             string.join (missing_fields, ', '),
@@ -269,4 +270,4 @@ try:
     main()
 except SystemExit: 
     pass
-print 'All done'
+
