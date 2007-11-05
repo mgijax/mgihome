@@ -3,7 +3,12 @@
 
 <!--#include file='include/templateBodyStart.html'--> 
 
-<h2 id="titleBar">Gene Ontology Information</h2>
+<!-- Title Bar -->
+  <div id="titleBarWrapper">
+  <span class="titleBarMainTitle"> Gene Ontology Information</span>
+  </div> 
+<!--titleBar-->
+
 
 <p><A NAME="Query"></A>Genes in MGI are annotated using GO terms.  Several of the MGI query forms (<i>Genes 
 and Markers Query Form, Linkage Map Query Form, Gene Expression Data Query Form,  cDNA

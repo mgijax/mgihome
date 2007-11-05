@@ -1,9 +1,15 @@
 <!--#include file='include/templateHead.html'--> 
+
 <title><!--#include file='include/mgiversion.html'--> - Annotating to GO at MGI</title>
 
 <!--#include file='include/templateBodyStart.html'--> 
 
-<h2 id="titleBar">Annotating to GO at MGI</h2>
+<!-- Title Bar -->
+  <div id="titleBarWrapper">
+  <span class="titleBarMainTitle"> Annotating to GO at MGI</span>
+  </div> 
+<!--titleBar-->
+
 
 <P><A NAME="Annotating"></A>
 MGI assigns GO annotation by either manual curation of published experimental literature or automated electronic-based methods. The annotated records include the supporting references. 
