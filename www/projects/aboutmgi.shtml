@@ -1,9 +1,14 @@
 <!--#include file='include/templateHead.html'--> 
-<title>About MGI</title>
+<title><!--#include file='include/mgiversion.html'--> - About MGI</title>
 
 <!--#include file='include/templateBodyStart.html'--> 
 
-<h2 id="titleBar">About MGI</h2>
+
+<!-- Title Bar -->
+  <div id="titleBarWrapper">
+  <span class="titleBarMainTitle"> About MGI </span>
+  </div> 
+<!--titleBar-->
 
 
 
@@ -26,7 +31,7 @@ GXD integrates different types of gene expression information from the mouse and
 MTB integrates data on the frequency, incidence, genetics, and pathology
 of neoplastic disorders, emphasizing data on tumors that develop
 characteristically in different genetically defined strains of mice.
- (See <A HREF="http://tumor.informatics.jax.org/mtbwi/userHelp.jsp">About the MTB</A>.)
+ (See <A HREF="http://tumor.informatics.jax.org/mtbwi/userHelp.jsp">Mouse Tumor Biology Database User Help Reference</A>.)
 <p>
 <b>Gene Ontology (GO) Project at MGI</b><br>
 The Mouse Genome Informatics group is a founding member of the Gene Ontology Consortium
