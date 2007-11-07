@@ -1,25 +1,15 @@
-<HTML>
-<HEAD>
-<meta HTTP-EQUIV="REFRESH" content="5; url=<!--#include file='include/glossary_url.html'-->">
-<LINK REL="stylesheet" TYPE="text/css" HREF="../stylesheet/mgihome.css">
+<!--#include file='include/templateHead.html'--> 
+<title><!--#include file='include/mgiversion.html'--> - </title>
 
- </head>
-<body>
-<BODY BGCOLOR="#ffffff">
-<TABLE WIDTH="100%" BORDER=0 CELLPADDING=0 CELLSPACING=0>
-  <TR><TD WIDTH="100%">
-    <TABLE WIDTH="100%" BORDER=0 CELLPADDING=0 CELLSPACING=0>
-     <TR><TD WIDTH="20%" VALIGN="center" ALIGN="left"><A HREF="<!--#include file='include/wi_url.html'-->" border=0><!--#include file='include/mgi_logo.html'--></A></TD>
-      <TD WIDTH="60%" ALIGN="center" VALIGN="center" BGCOLOR="#ffffff">
-       <FONT COLOR="#000000" SIZE=5 FACE="Arial,Helvetica">
-       </FONT></TD><TD WIDTH="20%" VALIGN="center" ALIGN="center" BGCOLOR="#ffffff">&nbsp;</TD></TR>
-<TR BGCOLOR="blue"><TD COLSPAN=3><FONT face="Arial,Helvetica" color="#ffffff">
-    <B>&nbsp;Mouse Genome Informatics</B></TD></TR>
-<TR><TD BGCOLOR="#ffffff"><FONT SIZE=-1 FACE="Arial,Helvetica"><CENTER><A HREF="<!--#include file='include/wi_url.html'-->">MGI Home</A>&nbsp;&nbsp;&nbsp;
-</A></FONT></CENTER></TD></TR>
-</TABLE></TD></TR>
-</TABLE>
-<HR>
+<!--#include file='include/templateBodyStart.html'--> 
+
+
+<!-- Title Bar -->
+  <div id="titleBarWrapper">
+  <span class="titleBarMainTitle">  </span>
+  </div> 
+<!--titleBar-->
+
 
 <p><center>The Mouse Genome Informatics glossary has moved.
 You will be automatically redirected in 5 seconds.<br>
@@ -28,9 +18,8 @@ If you are not redirected automatically, click
 <A HREF="<!--#include file='include/glossary_url.html'-->">here</a>.</center>
 </p>
 
+<!--#include file='include/templateBodyStop.html'--> 
 
- </body>
-</html>
 <!--
 Warranty Disclaimer and Copyright Notice
 
@@ -47,7 +36,7 @@ Warranty Disclaimer and Copyright Notice
  is prohibited without the prior express written permission of the Jackson
  Laboratory.
 
-Copyright ¨ 1996, 1999, 2002 by The Jackson Laboratory
+Copyright ¨ 1996, 1999, 2002, 2005, 2006, 2007 by The Jackson Laboratory
 All Rights Reserved
 -->
 

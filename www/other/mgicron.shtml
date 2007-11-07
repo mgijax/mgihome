@@ -1,35 +1,16 @@
-<HTML>
-<HEAD>
-<TITLE><!--#include file='include/mgiversion.html'--> - Chronology of MGI Database Releases</TITLE>
-<!--#include file="include/stylesheet.html"-->
-
-
-</HEAD>
-<BODY BGCOLOR="#ffffff">
-<!--#include file="include/bodyStart.html"-->
-<TABLE WIDTH="100%" BORDER="0" CELLPADDING="2" CELLSPACING="1">
- <TR>
-  <TD WIDTH="100%" BGCOLOR="#D0E0F0">
-   <TABLE WIDTH="100%" BORDER="0" CELLPADDING="0" CELLSPACING="0">
-    <TR>
-     <TD WIDTH="20%" VALIGN="center" ALIGN="left">&nbsp;</TD>
-     <TD WIDTH="60%" ALIGN="center" VALIGN="center">
-      <FONT COLOR="#000000" SIZE="5" FACE="Arial,Helvetica">
-Chronology of MGI Database Releases
-      </FONT>
-     </TD>
-     <TD WIDTH="20%" VALIGN="center" ALIGN="center">&nbsp;</TD>
-    </TR>
-   </TABLE>
-  </TD>
- </TR>
-</TABLE>
+<!--#include file='include/templateHead.html'--> 
+<title><!--#include file='include/mgiversion.html'--> - Chronology of MGI Database Releases</title>
+<!--#include file='include/templateBodyStart.html'--> 
+<!-- Title Bar -->
+  <div id="titleBarWrapper">
+  <span class="titleBarMainTitle"> Chronology of MGI Database Releases </span>
+  </div> 
+<!--titleBar-->
  
 <UL>
 <P><EM><B>June 11, 2007</B></EM><BR>
 The MGI 3.54 release introduces the MGI Batch Query tool which retrieves bulk data about gene/marker attributes (e.g., nomenclature, genome location, and Ensembl, Entrez, or VEGA IDs) and annotations (e.g., gene ontology or mammalian phenotype terms, and MGI allele, GenBank/RefSeq, RefSNP, or UniProt IDs). 
 </P>
-
 
 <P><EM><B>April 18, 2007</B></EM><BR>
 The MGI 3.53 release associates mutant cell line IDs with a given gene/marker. Any gene traps found for that marker appear in the MGI Gene Detail report.</P>
@@ -197,11 +178,9 @@ Scientists at The Jackson Laboratory produced the first on-line resource for mou
 
 <p>By the late 1980s, a number of databases had been developed to fill specific research needs and were used in-house for data analysis and to produce periodic publications.  These included Mouse Linkage Database and Programs (MLDP), Probes and PCR databases describing molecular reagents and polymorphisms (MusProb and MusPCR), and Homology Database and Programs (HMDP) containing gene homology information between the mouse and other mammalian species.</p>
 
- <HR>
 
+<!--#include file='include/templateBodyStop.html'--> 
 
-<!--#include file="include/bodyStop.html"--></BODY>
-</HTML>
 <!--
 Warranty Disclaimer and Copyright Notice
 
@@ -218,6 +197,6 @@ Warranty Disclaimer and Copyright Notice
  is prohibited without the prior express written permission of the Jackson
  Laboratory.
 
-Copyright © 1996, 1999, 2002, 2005, 2006 by The Jackson Laboratory
+Copyright © 1996, 1999, 2002, 2005, 2006, 2007 by The Jackson Laboratory
 All Rights Reserved
 -->

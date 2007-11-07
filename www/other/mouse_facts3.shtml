@@ -1,3 +1,18 @@
+<!--#include file='include/templateHead.html'--> 
+<title><!--#include file='include/mgiversion.html'--> - Mouse Facts: Physiology</title>
+
+<!--#include file='include/templateBodyStart.html'--> 
+
+
+<!-- Title Bar -->
+  <div id="titleBarWrapper">
+  <span class="titleBarMainTitle"> Mouse Facts: Physiology</span>
+  </div> 
+<!--titleBar-->
+
+
+
+
 <html>
 <head>
    <TITLE><!--#include file='include/mgiversion.html'--> - Mouse Facts: Physiology</TITLE>
@@ -86,8 +101,7 @@ Mouse Phenome Database:  <A HREF="http://phenome.jax.org/pub-cgi/phenome/mpdcgi?
 <br><br>
 <HR>
 
-<!--#include file="include/bodyStop.html"--></body>
-</html>
+<!--#include file='include/templateBodyStop.html'--> 
 
 <!--
 Warranty Disclaimer and Copyright Notice
@@ -105,6 +119,6 @@ Warranty Disclaimer and Copyright Notice
  is prohibited without the prior express written permission of the Jackson 
  Laboratory.
 
-Copyright © 1996, 1999, 2002 by The Jackson Laboratory
+Copyright © 1996, 1999, 2002, 2005, 2006, 2007 by The Jackson Laboratory
 All Rights Reserved
 -->

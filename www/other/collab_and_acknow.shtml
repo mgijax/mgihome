@@ -1,24 +1,14 @@
-<HTML>
-<HEAD>
-<TITLE><!--#include file='include/mgiversion.html'--> - Collaborators and Acknowledgements for Mouse Genome Informatics Projects</TITLE>
-<!--#include file="include/stylesheet.html"-->
-</HEAD>
-<BODY BGCOLOR=#FFFFFF>
-<TABLE WIDTH="100%" BORDER=0 CELLPADDING=0 CELLSPACING=0>
-  <TR><TD WIDTH="100%">
-    <TABLE WIDTH="100%" BORDER=0 CELLPADDING=0 CELLSPACING=0>
-     <TR><TD WIDTH="20%" VALIGN="center" ALIGN="left"><A HREF="<!--#include file='include/wi_url.html'-->"><!--#include file="include/mgi_logo_small.html"--></A></TD>
-      <TD WIDTH="60%" ALIGN="center" VALIGN="center" BGCOLOR="#ffffff">
-       <FONT COLOR="#000000" SIZE=5 FACE="Arial,Helvetica">
-Collaborators and Acknowledgements
-       </FONT></TD><TD WIDTH="20%" VALIGN="center" ALIGN="center" BGCOLOR="#ffffff">&nbsp;</TD></TR>
-<TR BGCOLOR="blue"><TD COLSPAN=3><FONT face="Arial,Helvetica" color="#ffffff">
-    <B>&nbsp;Mouse Genome Informatics</B></TD></TR>
-<TR><TD BGCOLOR="#ffffff"><FONT SIZE=-1 FACE="Arial,Helvetica"><A HREF="<!--#include file='include/wi_url.html'-->">MGI Home</A>&nbsp;&nbsp;&nbsp;
-<a href="../help/help.shtml">Help</A></FONT></TD></TR>
-</TABLE></TD></TR>
-</TABLE>
-<hr>
+<!--#include file='include/templateHead.html'--> 
+<title><!--#include file='include/mgiversion.html'--> - Collaborators and Acknowledgements for Mouse Genome Informatics Projects</title>
+
+<!--#include file='include/templateBodyStart.html'--> 
+
+<!-- Title Bar -->
+<div id="titleBarWrapper" userdoc="userdoc.shtml">
+  <span class="titleBarMainTitle"> Collaborators and Acknowledgements for Mouse Genome Informatics Projects </span>
+</div>
+ <!--titleBar-->
+
 <a name="Top"></a>
 <H3><a name="collab"></a>Collaborators</a></H3>
 <p>
@@ -178,10 +168,7 @@ The Genome Sequencing Center two-year project will produce expressed tag sequenc
 </p>
 <hr>
 
-<!--#include file="include/footer.html"-->
-
-</BODY>
-</HTML>
+<!--#include file='include/templateBodyStop.html'--> 
 
 <!--
 Warranty Disclaimer and Copyright Notice
@@ -199,7 +186,7 @@ Warranty Disclaimer and Copyright Notice
  is prohibited without the prior express written permission of the Jackson
  Laboratory.
 
-Copyright © 1996, 1999, 2002 by The Jackson Laboratory
+Copyright © 1996, 1999, 2002, 2005, 2006, 2007 by The Jackson Laboratory
 All Rights Reserved
 -->
 

@@ -1,37 +1,24 @@
-<html>
-<head>
-   <TITLE><!--#include file='include/mgiversion.html'--> - Mouse Facts</TITLE>
-<!--#include file="include/stylesheet.html"-->
-</head>
-<BODY BGCOLOR="#ffffff">
-<!--#include file="include/bodyStart.html"-->
+<!--#include file='include/templateHead.html'--> 
+<title><!--#include file='include/mgiversion.html'--> - Mouse Facts</title>
 
-<TABLE WIDTH="100%" BORDER=0 CELLPADDING=2 CELLSPACING=1>
- <TR>
-  <TD WIDTH="100%" BGCOLOR="#D0E0F0">
-   <TABLE WIDTH="100%" BORDER=0 CELLPADDING=0 CELLSPACING=0>
-    <TR>
-     <TD WIDTH="20%" VALIGN="center" ALIGN="left">&nbsp;</TD>
-     <TD WIDTH="60%" ALIGN="center" VALIGN="center">
-      <FONT COLOR="#000000" SIZE=5 FACE="Arial,Helvetica">
-       Mouse Facts
-      </FONT>
-     </TD>
-     <TD WIDTH="20%" VALIGN="center" ALIGN="center">&nbsp;</TD>
-    </TR>
-   </TABLE>
-  </TD>
- </TR>
-</TABLE>
+<!--#include file='include/templateBodyStart.html'--> 
+
+<!-- Title Bar -->
+  <div id="titleBarWrapper">
+  <span class="titleBarMainTitle"> Mouse Facts</span>
+  </div> 
+<!--titleBar-->
+
+
 <p>The "laboratory mouse" originated from a mixture of <i>M. m. domesticus</i>
  and <i>M. m. musculus</i> subspecies. An inbred strain of the laboratory
  mouse is defined as a strain that has been brother/sister mated for 20
  or more consecutive generations and can be traced to a single ancestral
  pair. For further information  about inbred strains of mice see the 
 <a href="<!--#include file='include/wi_url.html'-->menus/strain_menu.shtml">Strains
- and Polymorphisms</a> page.
-<p>
-On the Mouse Facts pages, you will find information on these topics:<P>
+ and Polymorphisms</a> page.</p>
+
+<p>On the Mouse Facts pages, you will find information on these topics:
 
 <ul>
 <A HREF="#GenomeLen">Mouse Genome Length Estimates</A><BR>
@@ -42,7 +29,7 @@ On the Mouse Facts pages, you will find information on these topics:<P>
 <A HREF="mouse_facts3.shtml">Mouse Physiology</A><BR>
 <A HREF="mouse_facts4.shtml">Useful Links</A><BR>
  </ul>
-
+</P>
 <hr>
 <h3><A NAME="GenomeLen">Mouse Genome Length Estimates</A></h3>
 <table BORDER " cellpadding=4 cellspacing=1>
@@ -169,11 +156,7 @@ Codon Usage Tabulated from Genbank</a>
 <h3><a NAME="UsefulLinksLink"></a><a href="mouse_facts4.shtml">Useful
 Links</a></h3>
 <BR>
-<HR>
-
-<!--#include file="include/bodyStop.html"--></body>
-</html>
-
+<!--#include file='include/templateBodyStop.html'--> 
 <!--
 Warranty Disclaimer and Copyright Notice
 
@@ -190,6 +173,6 @@ Warranty Disclaimer and Copyright Notice
  is prohibited without the prior express written permission of the Jackson 
  Laboratory.
 
-Copyright © 1996, 1999, 2002 by The Jackson Laboratory
+Copyright © 1996, 1999, 2002, 2005, 2006, 2007 by The Jackson Laboratory
 All Rights Reserved
 -->

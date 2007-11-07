@@ -1,28 +1,14 @@
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
-<HTML>
-<head>
+<!--#include file='include/templateHead.html'--> 
+<title><!--#include file='include/mgiversion.html'--> - Mouse Genome Informatics Team</title>
 
-<!--updated Oct/Nov 2006 w. change of Megan Cassell to Updegraff & removal of John Boddy, Moyha LP-->
-
-<TITLE><!--#include file='include/mgiversion.html'--> - Mouse Genome Informatics Team</TITLE>
-<!--#include file="include/stylesheet.html"-->
-
-</head>
-<BODY BGCOLOR="#ffffff">
-<!--#include file="include/bodyStart.html"-->
-
-<TABLE WIDTH="100%" BORDER=0 cellpadding="2" CELLSPACING=1>
- <TR><TD WIDTH="100%" BGCOLOR="#D0E0F0">
-    <TABLE WIDTH="100%" BORDER=0 CELLPADDING=0 CELLSPACING=0>
-     <TR><TD WIDTH="20%" VALIGN="center" ALIGN="left">&nbsp;</TD>
-         <TD WIDTH="60%" ALIGN="center" VALIGN="center"><FONT COLOR="#000000" SIZE=5 FACE="Arial,Helvetica">Mouse Genome Informatics Team</FONT></TD>
-         <TD WIDTH="20%" VALIGN="center" ALIGN="center">&nbsp;</TD</TR>
-     </TABLE>
-    </TD>
-  </TR>
-</TABLE>
+<!--#include file='include/templateBodyStart.html'--> 
 
 
+<!-- Title Bar -->
+  <div id="titleBarWrapper">
+  <span class="titleBarMainTitle"> Mouse Genome Informatics Team </span>
+  </div> 
+<!--titleBar-->
 
 <blockquote>
 <h3>MGI Programs</h3>
@@ -168,16 +154,7 @@
 
 </blockquote>
 
-
-<!--</blockquote>-->
-			
-<br><br>
-<hr>
-
-<!--#include file="include/bodyStop.html"--></BODY>
-
-</HTML>
-
+<!--#include file='include/templateBodyStop.html'--> 
 
 <!--Warranty Disclaimer & Copyright Notice
 
@@ -194,7 +171,7 @@
  is prohibited without the prior express written permission of the Jackson
  Laboratory.
 
-Copyright © 1996, 1999, 2002, 2005, 2006 by The Jackson Laboratory
+Copyright © 1996, 1999, 2002, 2005, 2006, 2007 by The Jackson Laboratory
 All Rights Reserved
 -->
 
