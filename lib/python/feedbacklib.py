@@ -617,12 +617,14 @@ class UserInput:
 		# check to see if we have a developer override for email
 
 		if config.has_key('CGI_MAILTARGET'):
-                	RECIPIENT = config['CGI_MAILTARGET']
+			destination = config['CGI_MAILTARGET']
+		else:
+			destination = RECIPIENT
 		# send the mail
 
 		fd = os.popen ('%s -t' % config['SENDMAIL'], 'w')
 		fd.write (MAIL_HEADER % (self.email.getValue(),
-					RECIPIENT,
+					destination,
 					self.subject.getValue()))
 		fd.write (REMEDY_MESSAGE % self.getEmailString())
 		fd.close()
