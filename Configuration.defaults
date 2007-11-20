@@ -6,13 +6,18 @@
 ###--- parameters which change for most installations -------------------###
 ###----------------------------------------------------------------------###
 
-# Path to global configuration file
-MGICONFIG_PATH    /usr/local/mgi/live/mgiconfig/
+# Path to this product
+INSTALL_DIR    /usr/local/mgi/live/
+
+# Path to mgiconfig & global configuration file
+MGICONFIG_PATH    ${INSTALL_DIR}mgiconfig/
 GLOBAL_CONFIG     ${MGICONFIG_PATH}web/GlobalConfig
 
-# Path to our home installation
-MGIHOME_PATH    /usr/local/mgi/live/mgihome/
+# Path to the templates
+TEMPLATE_PATH    ${MGICONFIG_PATH}web/
 
+# Path to our home installation
+MGIHOME_PATH    ${INSTALL_DIR}mgihome/
 
 ###----------------------------------------------------------------------###
 ###--- parameters which may change, depending on the install ------------###
@@ -23,10 +28,10 @@ MGIHOME_PATH    /usr/local/mgi/live/mgihome/
 #----------------#
 
 # full path to associated WI installation (to help find toolbar include files)
-WI_PATH         /usr/local/mgi/live/wi/
+WI_PATH         ${INSTALL_DIR}wi/
 
 # colon-delimited list of directories in which to find Python libraries
-LIBDIRS     ${MGIHOME_PATH}lib/python/:/usr/local/mgi/live/lib/python/
+LIBDIRS     ${MGIHOME_PATH}lib/python/:${INSTALL_DIR}lib/python/
 
 #-------------------#
 #- Email Addresses -#
@@ -39,7 +44,6 @@ LIBDIRS     ${MGIHOME_PATH}lib/python/:/usr/local/mgi/live/lib/python/
 # optional e-mail address to use for testing gen submit cgi scripts which send e-mail.
 #GEN_CGI_MAILTARGET    djd@informatics.jax.org
 GEN_CGI_MAILTARGET    gen@informatics.jax.org
-
 
 ###----------------------------------------------------------------------###
 ###--- parameters which will rarely change ------------------------------###
@@ -57,7 +61,7 @@ SENDMAIL    /usr/lib/sendmail
 #----------------------#
 
 # path to the web directory of the Annatomical Dictionary
-ADPATH   /usr/local/mgi/live/wi/www/GXD/GENAD/
+ADPATH   ${WI_PATH}www/GXD/GENAD/
 
 # full URL to the associated ftp site
 FTP_URL     ftp://ftp.informatics.jax.org/
@@ -65,27 +69,22 @@ FTP_URL     ftp://ftp.informatics.jax.org/
 # path to the NIH survey
 SURVEY_ROOT_DIRECTORY	/export/gondor/survey/nih
 
-# Path to the templates
-TEMPLATE_PATH    ${MGICONFIG_PATH}web/
-
 #---------------#
 #- GEN related -#
 #---------------#
 
 # path to the web directory of the GEN (Gene Expression Notebook) product
-GEN_PATH     /usr/local/mgi/live/mgihome/www/GXD/GEN/
+GEN_PATH     ${MGIHOME_PATH}www/GXD/GEN/
 
 # path to the GEN.xls (Gene Expression Notebook) executable file
-GEN_XLS_PATH     /usr/local/mgi/live/gen/data/
+GEN_XLS_PATH     ${INSTALL_DIR}gen/data/
 
 # The path to GXD notebook userdocs
 OVERVIEW_URL ${GEN_PATH}gen.shtml
 
-
 #------------------#
 #- sybase related -#
 #------------------#
-
 
 # path to library files for doing crons (commented out for now)
 LD_LIBRARY_PATH    /opt/sybase/12.5/ASE-12_5/lib:/opt/sybase/12.5/OCS-12_5/lib:/usr/local/lib
@@ -96,4 +95,3 @@ LD_LIBRARY_PATH    /opt/sybase/12.5/ASE-12_5/lib:/opt/sybase/12.5/OCS-12_5/lib:/
 
 # path in which to save submissions of the komp nomination form
 KOMP_NOMINATION_DIR	/export/gondor/survey/komp
-
