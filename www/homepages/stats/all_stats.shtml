@@ -1,0 +1,154 @@
+<!--#include file='include/templateHead.html'-->
+
+  <title><!--#include file="include/mgiversion.html"-->What's in MGI?</title>
+
+  <link rel="stylesheet" type="text/css" href="homepage.css"/>
+
+<!--#include file='include/templateBodyStart.html'-->
+
+<!-- Title Bar -->
+<div id="titleBarWrapper">
+ <span class="titleBarMainTitle">What's in MGI?</span>
+</div> <!--titleBar-->
+
+<style>
+   .toc { margin 0px;
+       background-color:#DFEFFF; }
+   .toc ul { font-size: 12px;
+       margin 0px;
+       text-align: center;
+       line-height: 1.75;
+       list-style-type: none;
+       padding: .75em .75em 0.1em .75em;
+       min-width: 600px;}
+   .toc li { display: inline;
+       white-space: nowrap; }
+   .outline { border: 2px solid #DFEFFF; }
+   dl.linkedList { margin-left: 2em; }
+   .linkedList dt { margin-top: 1em; }
+   .linkedList dd { margin-left: 1em;
+       margin-top: .25em;
+       font-style:italic}
+</style>
+
+<!-- this file is an example template to be used to create a page in the
+"All X" format, similar to the "All Search Tools" page.  To use this template
+simply add anchor links to the sections your page contains in the toc table,
+then create each section to contain the appropriate anchor link and content.
+Note that the links in the toc are a list <ul> where each link is a <li> item.
+Note that the list in each section is a definition list <dl> where the term
+<dt> is the heading, and the definition <dd> is the descriptive text.  -->
+
+<!-- main body table -->
+<table width="75%" cellpadding="2" align="center">
+
+	<tr><td>
+		<!-- TOC table -->
+		<table class="toc" width="100%">
+			<tr>
+				<td>
+					<ul>
+						<li><a href="#allstats_markers">Genes, Genome Features &amp; Maps</a> | </li>
+						<li><a href="#allstats_pheno">Phenotypes, Alleles &amp; Disease Models</a> | </li>
+						<li><a href="#allstats_gxd">Gene Expression</a> | </li>
+						<li><a href="#allstats_go">GO Functional Annotations</a> | </li>
+						<li><a href="#allstats_snp">Strains, SNPs &amp; Polymorphisms</a> | </li>
+						<li><a href="#allstats_ortho">Mammalian Orthology</a> | </li>
+						<li><a href="#allstats_seq">Sequences</a> | </li>
+						<li><a href="#allstats_ref">References</a></li>
+				</td>
+			</tr>
+		</table>
+	</td></tr>
+
+	<tr><td>
+		<!-- section1 table -->
+		<table class="outline" width="100%">
+			<tr>
+			<td>
+			<!--#include file='allstats_markers.shtml'-->
+			</td>
+			</tr>
+		</table>
+	</td></tr>
+
+	<tr><td>
+		<!-- section1 table -->
+		<table class="outline" width="100%">
+			<tr>
+			<td>
+			<!--#include file='allstats_pheno.shtml'-->
+			</td>
+			</tr>
+		</table>
+	</td></tr>
+
+	<tr><td>
+		<!-- section1 table -->
+		<table class="outline" width="100%">
+			<tr>
+			<td>
+			<!--#include file='allstats_gxd.shtml'-->
+			</td>
+			</tr>
+		</table>
+	</td></tr>
+
+	<tr><td>
+		<!-- section1 table -->
+		<table class="outline" width="100%">
+			<tr>
+			<td>
+			<!--#include file='allstats_go.shtml'-->
+			</td>
+			</tr>
+		</table>
+	</td></tr>
+
+	<tr><td>
+		<!-- section1 table -->
+		<table class="outline" width="100%">
+			<tr>
+			<td>
+			<!--#include file='allstats_snp.shtml'-->
+			</td>
+			</tr>
+		</table>
+	</td></tr>
+
+	<tr><td>
+		<!-- section1 table -->
+		<table class="outline" width="100%">
+			<tr>
+			<td>
+			<!--#include file='allstats_ortho.shtml'-->
+			</td>
+			</tr>
+		</table>
+	</td></tr>
+
+	<tr><td>
+		<!-- section1 table -->
+		<table class="outline" width="100%">
+			<tr>
+			<td>
+			<!--#include file='allstats_seq.shtml'-->
+			</td>
+			</tr>
+		</table>
+	</td></tr>
+
+	<tr><td>
+		<!-- section1 table -->
+		<table class="outline" width="100%">
+			<tr>
+			<td>
+			<!--#include file='allstats_ref.shtml'-->
+			</td>
+			</tr>
+		</table>
+	</td></tr>
+
+</table>
+
+<!--#include file='include/templateBodyStop.html'-->
