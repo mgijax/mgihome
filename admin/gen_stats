@@ -1,0 +1,158 @@
+#!./python
+
+##=====
+## gen_stats
+##
+## Author: 	mhall
+## Purpose:	This script calls on the stats module to pull out statistics that have been stored in the database.
+##
+##=====
+
+import sys
+if '.' not in sys.path:
+        sys.path.insert (0, '.')
+import warnings
+warnings.filterwarnings('ignore', '', DeprecationWarning)
+
+import Configuration
+config = Configuration.get_Configuration ('Configuration', 1)	
+
+import db
+
+db.set_sqlLogin (config['DB_USER'], config['DB_PASSWORD'], config['DB_SERVER'], config['DB_DATABASE'])
+db.useOneConnection(1)
+
+import stats
+import time
+
+stats.setSqlFunction (db.sql)
+
+INCLUDEDIR = config['MGIHOME_PATH'] + 'www/homepages/stats/'
+
+## This is all the mini home page group information.  Its formatted like a tuple
+## Where the group name is first, and the name out the file its generating is second
+## and the display name is thrid.
+## The forth item is for the handshake betweem the minihome pages and the all stats page.
+## I'm not 100% happy with the solution I've come up with here, but it works well enough for now.
+
+minihome_groups = [('Home Page', 'homepage_stats.shtml', 'MGI Contains', ''),
+	  ('Marker Mini Home', 'gene_stats.shtml', 'MGI Contains', '#allstats_markers'),
+	  ('Pheno Mini Home', 'pad_stats.shtml', 'MGI Contains', '#allstats_pheno'),
+	  ('GXD Mini Home', 'gxd_stats.shtml', 'GXD Contains', '#allstats_gxd'),
+	  ('GO Mini Home', 'go_stats.shtml', 'MGI Functional Annotations data', '#allstats_go'),
+	  ('SNP Mini Home', 'strain_stats.shtml', 'Strains, SNPs, and Polymorphisms contains', '#allstats_snp'),
+	  ('Orthology Mini Home', 'ortho_stats.shtml', 'Orthology data include', '#allstats_ortho')]
+
+## Group information for the all stats page, formated the same way as the above.
+	  
+allstats_groups = [('Stats Page Markers','allstats_markers.shtml','Genes, Genome Features & Maps'),
+		   ('Stats Page Phenotypes','allstats_pheno.shtml','Phenotypes, Alleles &amp; Disease Models'),
+		   ('Stats Page GXD','allstats_gxd.shtml','Gene Expression'),
+		   ('Stats Page GO','allstats_go.shtml','Gene Functional Annotations'),
+		   ('Stats Page Polymorphisms','allstats_snp.shtml','Strains, SNPs &amp Polymorphisms'),
+		   ('Stats Page Orthology','allstats_ortho.shtml','Mammalian Orthology'),
+		   ('Stats Page Sequences','allstats_seq.shtml','Sequences'),
+		   ('References','allstats_ref.shtml','References')]
+		   
+		   
+
+def number_format(num, places=0):
+   """Format a number with grouped thousands and given decimal places"""
+
+   places = max(0,places)
+   tmp = "%.*f" % (places, num)
+   point = tmp.find(".")
+   integer = (point == -1) and tmp or tmp[:point]
+   decimal = (point != -1) and tmp[point:] or ""
+
+   count =  0
+   formatted = []
+   for i in range(len(integer), 0, -1):
+       count += 1
+       formatted.append(integer[i - 1])
+       if count % 3 == 0 and i - 1:
+           formatted.append(",")
+
+   integer = "".join(formatted[::-1])
+   return integer+decimal
+
+def getStatsForMinihome(group, name, display, link):
+	
+	datetime = time.strftime ('%d-%b-%Y', time.localtime (time.time()))	
+	groupObj = stats.StatisticGroup (group)
+	statistics = groupObj.getStatistics()
+	
+	file = open(INCLUDEDIR +name, "w")
+        
+        file.write('<table class="grayBG" border="0" cellpadding="2" cellspacing="0" width="100%">')
+        file.write('<tr>')
+        file.write('<td class="boxHead" style="align: left"><strong>'+ display +'</strong></td>')
+        file.write('<td class="boxHead" style="align: right">'+datetime+'</td>')
+        file.write('</tr><tr><td>')
+	file.write('<table cellpadding="3">')
+	for stat in statistics:
+		m = stat.getLatestMeasurement()
+		if not m:
+		    mVal = '&nbsp;'
+		elif m.hasIntValue():
+		    mVal = m.getIntValue()
+		else:
+		    mVal = '%1.3f' % m.getFloatValue()
+		file.write('<tr><td class="smaller" align="right">' + str(number_format(mVal)) + '</td><td class="smaller">' + stat.getName() + '</td></tr>\n') 
+	file.write('<tr>')
+	file.write('<td colspan="2" class="smaller"> <a href="<!--#include file="include/mgihome_url.html"-->homepages/stats/all_stats.shtml'+ link +'">More statistics</a></td>')
+        file.write('</tr>')
+	file.write('</table>')
+        file.write('</td>')
+        file.write('</tr>')
+        file.write('</table>')	
+	file.close()
+
+def getStatsForAllStatsPage(group, name, display):
+		
+	groupObj = stats.StatisticGroup (group)
+	statistics = groupObj.getStatistics()
+	temp_anchor = name.split('.')
+	
+	file = open(INCLUDEDIR +name, "w")
+        file.write('<a name="'+ temp_anchor[0]+'">')
+        file.write('<table class="grayBG" border="0" cellpadding="2" cellspacing="0" width="100%">')
+        file.write('<tr>')
+        file.write('<td class="enhance" style="align: left"><strong>'+ display +'</strong></td>')
+        file.write('</tr><tr><td>')
+	file.write('<table cellpadding="3" width="100%">')
+	for stat in statistics:
+		m = stat.getLatestMeasurement()
+		if not m:
+		    mVal = '&nbsp;'
+		elif m.hasIntValue():
+		    mVal = m.getIntValue()
+		else:
+		    mVal = '%1.3f' % m.getFloatValue()
+		file.write('<tr><td class="smaller" align="right" width="10%">' + str(number_format(mVal)) + '</td><td class="smaller" align="left" width="90%">' + stat.getName() + '</td></tr>\n') 
+	file.write('</table>')
+        file.write('</td>')
+        file.write('</tr>')
+        file.write('</table>')	
+	file.close()
+
+
+## Do the mini home pages.
+
+print 'Starting to generate mini home stats files.'
+for (group, filename, display, link) in minihome_groups:
+	getStatsForMinihome(group, filename, display, link)
+print 'Finished generating mini home stats files.'
+
+## Do the AllStats pages.
+
+print 'Starting to generate all stats page files.'
+for (group, filename, display) in allstats_groups:
+	getStatsForAllStatsPage(group, filename, display)
+print 'Finished generating all stats page files.'
+
+
+	    
+
+	
+	
