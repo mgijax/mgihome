@@ -8,7 +8,6 @@ TOP=`pwd`
 
 CONFIGURATION=Configuration
 PYTHON_REL=$TOP/bin/python
-CONFIG_REL=$TOP/lib/python/config.pyc
 GENUTILS_REL=$TOP/lib/python/gen_wi_utils.pyc
 
 # includeLinker function - create a ../include symbolic link in the current
@@ -130,7 +129,6 @@ cd lib/python
 echo "Compiling libraries in `pwd`"
 rm *pyc
 $PYTHON -c 'import compileall; compileall.compile_dir(".")'
-$PYTHON -c 'import config'
 chgrp www *pyc
 chmod 750 *pyc
 cd $TOP
@@ -146,10 +144,6 @@ do
 	fi
 	ln -s $PYTHON_REL python
 
-	if [ -h config.pyc ]; then
-		rm config.pyc
-	fi
-	ln -s $CONFIG_REL config.pyc
    
    if [ -h GEN.xls ]; then
 		rm  GEN.xls
@@ -187,6 +181,7 @@ fi
 cd $TOP/admin
 gen_rcd
 gen_includes
+gen_stats
 #gen_includes.py
 
 cd $TOP/www/include
