@@ -50,12 +50,10 @@ University Press</td>
 <td valign=top>Copeland, NG, et al. 1993. Science 62:57-66. (<A HREF="<!--#include file="include/wi_url.html"-->searches/accession_report.cgi?id=J:14384">J:14384</A>).</td>
 </tr>
 <tr>
-<td valign=top>1668.11 cM <!--1593.6 cM--></td>
-<td valign=top>Mapped length thus far according to MGD (sum of mapped lengths below)</td>
-</tr>
-<tr><td valign=top>3 x 10<sup>9</sup> bp (haploid)</td>
-<TD VALIGN="top"><a href="http://www.cbs.dtu.dk/databases/DOGS/index.html">Database
-of Genome Sizes (DOGS)</a></td>
+<td valign=top><a href="http://www.ensembl.org/Mus_musculus/index.html">2,716,965,481</a> <!--1593.6 cM--></td>
+<td valign=top>Golden Path Length *</td></tr>
+
+
 <tr><td valign=top>2.5 x 10<sup>9</sup></td>
 <td valign=top>Mouse Genome Sequencing Consortium. 2002. Initial sequencing and comparative analysis of the mouse genome. Nature 420: 520-562.</td></tr>
 
@@ -66,41 +64,46 @@ of Genome Sizes (DOGS)</a></td>
  </td>
 </tr>
 </table>
+* Reference assembly length (Golden Path Length) = sum of non-redundant top level seq regions)
 <hr>
 
 <H3><A NAME="MGDStats">Mouse Chromosomal Size</H3>
 
 <TABLE BORDER="0" CELLPADDING="4" CELLSPACING="1">
 <TR><TD ALIGN="left" VALIGN="top">*</TD><td valign=top>Mapped Length represents the (MGI) estimated cM position of the most distally placed locus on that chromosome.</TD></TR>
-<TR><TD ALIGN="left" VALIGN="top">**</TD><td valign=top>Total Estimated Size omits centromeres and telomeres which would add, on average, ~8 Mb per chromosome or ~160 Mb to the genome. It also omits uncaptured gaps between supercontigs.</TD></TR>
+<TR><TD ALIGN="left" VALIGN="top">**</TD><td valign=top>Total Estimated Size omits centromeres and telomeres which would add, on average, ~8 Mb per chromosome or ~160 Mb to the genome. It also omits uncaptured gaps between supercontigs.</TD>
+
+</TR>
 </TABLE>
 <BLOCKQUOTE>
 <TABLE BORDER="1" CELLPADDING="4">
 <TR><TH><FONT SIZE="-1">Chromosome</FONT></TH><TH><FONT SIZE="-1">Mapped <br>Length* (cM)</FONT></TH><TH><FONT SIZE="-1">Total <br>Estimated<br> Size **(Mb)<br>(NCBI build 33)</FONT></TH></TR>
-<TR><td valign=top>1</TD><td valign=top>127.0</TD><td valign=top>195</TD></TR>
-<TR><td valign=top>2</TD><td valign=top>114.0</TD><td valign=top>182</TD></TR>
-<TR><td valign=top>3</TD><td valign=top>119.2</TD><td valign=top>161</TD></TR>
-<TR><td valign=top>4</TD><td valign=top>84.0</TD><td valign=top>154</TD></TR>
-<TR><td valign=top>5</TD><td valign=top>92.0</TD><td valign=top>149</TD></TR>
-<TR><td valign=top>6</TD><td valign=top>75.0</TD><td valign=top>150</TD></TR>
-<TR><td valign=top>7</TD><td valign=top>74.0</TD><td valign=top>133</TD></TR>
-<TR><td valign=top>8</TD><td valign=top>82.0</TD><td valign=top>129</TD></TR>
-<TR><td valign=top>9</TD><td valign=top>79.0</TD><td valign=top>124</TD></TR>
-<TR><td valign=top>10</TD><td valign=top>77.0</TD><td valign=top>131</TD></TR>
-<TR><td valign=top>11</TD><td valign=top>80.0</TD><td valign=top>122</TD></TR>
-<TR><td valign=top>12</TD><td valign=top>66.0</TD><td valign=top>115</TD></TR>
-<TR><td valign=top>13</TD><td valign=top>80.0</TD><td valign=top>116</TD></TR>
-<TR><td valign=top>14</TD><td valign=top>69.0</TD><td valign=top>117</TD></TR>
-<TR><td valign=top>15</TD><td valign=top>81.0</TD><td valign=top>104</TD></TR>
-<TR><td valign=top>16</TD><td valign=top>72.0</TD><td valign=top>99</TD></TR>
-<TR><td valign=top>17</TD><td valign=top>81.6</TD><td valign=top>90</TD></TR>
-<TR><td valign=top>18</TD><td valign=top>60.0</TD><td valign=top>91</TD></TR>
-<TR><td valign=top>19</TD><td valign=top>55.7</TD><td valign=top>61</TD></TR>
-<TR><td valign=top>X</TD><td valign=top>96.5</TD><td valign=top>161</TD></TR>
-<TR><td valign=top>Y</TD><td valign=top>3.11</TD><td valign=top>48</TD></TR>
+<TR><td valign=top>1</TD><td valign=top>127.0</TD><td valign=top><a href="http://www.ensembl.org/Mus_musculus/mapview?chr=1">197</a></TD></TR>
+<TR><td valign=top>2</TD><td valign=top>114.0</TD><td valign=top><a href="http://www.ensembl.org/Mus_musculus/mapview?chr=2">182</a></TD></TR>
+<TR><td valign=top>3</TD><td valign=top>119.2</TD><td valign=top><a href="http://www.ensembl.org/Mus_musculus/mapview?chr=3">161</a></TD></TR>
+<TR><td valign=top>4</TD><td valign=top>84.0</TD><td valign=top><a href="http://www.ensembl.org/Mus_musculus/mapview?chr=4">154</a></TD></TR>
+<TR><td valign=top>5</TD><td valign=top>92.0</TD><td valign=top><a href="http://www.ensembl.org/Mus_musculus/mapview?chr=5">153</a></TD></TR>
+<TR><td valign=top>6</TD><td valign=top>75.0</TD><td valign=top><a href="http://www.ensembl.org/Mus_musculus/mapview?chr=6">150</a></TD></TR>
+<TR><td valign=top>7</TD><td valign=top>74.0</TD><td valign=top><a href="http://www.ensembl.org/Mus_musculus/mapview?chr=7">153</a></TD></TR>
+<TR><td valign=top>8</TD><td valign=top>82.0</TD><td valign=top><a href="http://www.ensembl.org/Mus_musculus/mapview?chr=8">132</a></TD></TR>
+<TR><td valign=top>9</TD><td valign=top>79.0</TD><td valign=top><a href="http://www.ensembl.org/Mus_musculus/mapview?chr=9">124</a></TD></TR>
+<TR><td valign=top>10</TD><td valign=top>77.0</TD><td valign=top><a href="http://www.ensembl.org/Mus_musculus/mapview?chr=10">130</a></TD></TR>
+<TR><td valign=top>11</TD><td valign=top>80.0</TD><td valign=top><a href="http://www.ensembl.org/Mus_musculus/mapview?chr=11">122</a></TD></TR>
+<TR><td valign=top>12</TD><td valign=top>66.0</TD><td valign=top><a href="http://www.ensembl.org/Mus_musculus/mapview?chr=12">121</a></TD></TR>
+<TR><td valign=top>13</TD><td valign=top>80.0</TD><td valign=top><a href="http://www.ensembl.org/Mus_musculus/mapview?chr=13">12</a></TD></TR>
+<TR><td valign=top>14</TD><td valign=top>69.0</TD><td valign=top><a href="http://www.ensembl.org/Mus_musculus/mapview?chr=14">125</a></TD></TR>
+<TR><td valign=top>15</TD><td valign=top>81.0</TD><td valign=top><a href="http://www.ensembl.org/Mus_musculus/mapview?chr=15">103</a></TD></TR>
+<TR><td valign=top>16</TD><td valign=top>72.0</TD><td valign=top><a href="http://www.ensembl.org/Mus_musculus/mapview?chr=16">98</a></TD></TR>
+<TR><td valign=top>17</TD><td valign=top>81.6</TD><td valign=top><a href="http://www.ensembl.org/Mus_musculus/mapview?chr=17">95</a></TD></TR>
+<TR><td valign=top>18</TD><td valign=top>60.0</TD><td valign=top><a href="http://www.ensembl.org/Mus_musculus/mapview?chr=18">91</a></TD></TR>
+<TR><td valign=top>19</TD><td valign=top>55.7</TD><td valign=top><a href="http://www.ensembl.org/Mus_musculus/mapview?chr=19">61</a></TD></TR>
+<TR><td valign=top>X</TD><td valign=top>96.5</TD><td valign=top><a href="http://www.ensembl.org/Mus_musculus/mapview?chr=x">167</a></TD></TR>
+<TR><td valign=top>Y</TD><td valign=top>3.11</TD><td valign=top><a href="http://www.ensembl.org/Mus_musculus/mapview?chr=y">16</a></TD></TR>
+<TR><td valign=top>MT</TD><td valign=top>&nbsp;</TD><td valign=top><a href="http://www.ensembl.org/Mus_musculus/mapview?chr=mt">.016</a></TD></TR>
+
 <TR><TD BGCOLOR="#EEEEEE">Total:</TD>
-<TD BGCOLOR="#EEEEEE">1,668.11</TD>
-<TD BGCOLOR="#EEEEEE">2,632</TD>
+<TD BGCOLOR="#EEEEEE">2716.9</TD>
+<TD BGCOLOR="#EEEEEE">2655</TD>
 </TR>
 </TABLE>
 </BLOCKQUOTE>
