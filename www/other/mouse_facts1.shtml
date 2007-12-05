@@ -25,14 +25,12 @@
 <A HREF="#MGDStats">Mouse Chromosomal Size </A><BR>
 <A HREF="#CodonUsage">Codon Usage</A><BR>
 <A HREF="#MolecRes">Molecular Resources</A><BR>
-<A HREF="#NIHLinks">NIH links</A><BR>
-<A HREF="mouse_facts3.shtml">Mouse Physiology</A><BR>
-<A HREF="mouse_facts4.shtml">Mouse, Mammalian, and Model Organism Resources</A><BR>
+<A HREF="#physiology">Mouse Physiology</A><BR>
  </ul>
 </P>
-<hr>
+
 <h3><A NAME="GenomeLen">Mouse Genome Length Estimates</A></h3>
-<table BORDER " cellpadding=4 cellspacing=1>
+<table BORDER=1 cellpadding=2 cellspacing=0>
 <tr><td valign=top>1360.9 cM</td>
 
 <td valign=top>Dietrich, WF et al. 1996. Nature Mar 14:380(6570)149-52(<A HREF="<!--#include file="include/wi_url.html"-->searches/accession_report.cgi?id=J:34212"> J:34212</A>)</td>
@@ -51,7 +49,7 @@ University Press</td>
 </tr>
 <tr>
 <td valign=top><a href="http://www.ensembl.org/Mus_musculus/index.html">2,716,965,481</a> <!--1593.6 cM--></td>
-<td valign=top>Golden Path Length *</td></tr>
+<td valign=top>Golden Path Length (reference assembly length): the sum of non-redundant top level seq regions</td></tr>
 
 
 <tr><td valign=top>2.5 x 10<sup>9</sup></td>
@@ -64,49 +62,43 @@ University Press</td>
  </td>
 </tr>
 </table>
-* Reference assembly length (Golden Path Length) = sum of non-redundant top level seq regions)
-<hr>
+
 
 <H3><A NAME="MGDStats">Mouse Chromosomal Size</H3>
 
-<TABLE BORDER="0" CELLPADDING="4" CELLSPACING="1">
-<TR><TD ALIGN="left" VALIGN="top">*</TD><td valign=top>Mapped Length represents the (MGI) estimated cM position of the most distally placed locus on that chromosome.</TD></TR>
-<TR><TD ALIGN="left" VALIGN="top">**</TD><td valign=top>Total Estimated Size omits centromeres and telomeres which would add, on average, ~8 Mb per chromosome or ~160 Mb to the genome. It also omits uncaptured gaps between supercontigs.</TD>
+<font size="-1">Mapped Length represents the (MGI) estimated cM position of the most distally placed locus on that chromosome.<br>
+Total Estimated Size omits centromeres and telomeres which would add, on average, ~8 Mb per chromosome or ~160 Mb to the genome. It also omits uncaptured gaps between supercontigs.</font>
 
-</TR>
-</TABLE>
-<BLOCKQUOTE>
-<TABLE BORDER="1" CELLPADDING="4">
-<TR><TH><FONT SIZE="-1">Chromosome</FONT></TH><TH><FONT SIZE="-1">Mapped <br>Length* (cM)</FONT></TH><TH><FONT SIZE="-1">Total <br>Estimated<br> Size **(Mb)<br>(NCBI build 33)</FONT></TH></TR>
-<TR><td valign=top>1</TD><td valign=top>127.0</TD><td valign=top><a href="http://www.ensembl.org/Mus_musculus/mapview?chr=1">197</a></TD></TR>
-<TR><td valign=top>2</TD><td valign=top>114.0</TD><td valign=top><a href="http://www.ensembl.org/Mus_musculus/mapview?chr=2">182</a></TD></TR>
-<TR><td valign=top>3</TD><td valign=top>119.2</TD><td valign=top><a href="http://www.ensembl.org/Mus_musculus/mapview?chr=3">161</a></TD></TR>
-<TR><td valign=top>4</TD><td valign=top>84.0</TD><td valign=top><a href="http://www.ensembl.org/Mus_musculus/mapview?chr=4">154</a></TD></TR>
-<TR><td valign=top>5</TD><td valign=top>92.0</TD><td valign=top><a href="http://www.ensembl.org/Mus_musculus/mapview?chr=5">153</a></TD></TR>
-<TR><td valign=top>6</TD><td valign=top>75.0</TD><td valign=top><a href="http://www.ensembl.org/Mus_musculus/mapview?chr=6">150</a></TD></TR>
-<TR><td valign=top>7</TD><td valign=top>74.0</TD><td valign=top><a href="http://www.ensembl.org/Mus_musculus/mapview?chr=7">153</a></TD></TR>
-<TR><td valign=top>8</TD><td valign=top>82.0</TD><td valign=top><a href="http://www.ensembl.org/Mus_musculus/mapview?chr=8">132</a></TD></TR>
-<TR><td valign=top>9</TD><td valign=top>79.0</TD><td valign=top><a href="http://www.ensembl.org/Mus_musculus/mapview?chr=9">124</a></TD></TR>
-<TR><td valign=top>10</TD><td valign=top>77.0</TD><td valign=top><a href="http://www.ensembl.org/Mus_musculus/mapview?chr=10">130</a></TD></TR>
-<TR><td valign=top>11</TD><td valign=top>80.0</TD><td valign=top><a href="http://www.ensembl.org/Mus_musculus/mapview?chr=11">122</a></TD></TR>
-<TR><td valign=top>12</TD><td valign=top>66.0</TD><td valign=top><a href="http://www.ensembl.org/Mus_musculus/mapview?chr=12">121</a></TD></TR>
-<TR><td valign=top>13</TD><td valign=top>80.0</TD><td valign=top><a href="http://www.ensembl.org/Mus_musculus/mapview?chr=13">12</a></TD></TR>
-<TR><td valign=top>14</TD><td valign=top>69.0</TD><td valign=top><a href="http://www.ensembl.org/Mus_musculus/mapview?chr=14">125</a></TD></TR>
-<TR><td valign=top>15</TD><td valign=top>81.0</TD><td valign=top><a href="http://www.ensembl.org/Mus_musculus/mapview?chr=15">103</a></TD></TR>
-<TR><td valign=top>16</TD><td valign=top>72.0</TD><td valign=top><a href="http://www.ensembl.org/Mus_musculus/mapview?chr=16">98</a></TD></TR>
-<TR><td valign=top>17</TD><td valign=top>81.6</TD><td valign=top><a href="http://www.ensembl.org/Mus_musculus/mapview?chr=17">95</a></TD></TR>
-<TR><td valign=top>18</TD><td valign=top>60.0</TD><td valign=top><a href="http://www.ensembl.org/Mus_musculus/mapview?chr=18">91</a></TD></TR>
-<TR><td valign=top>19</TD><td valign=top>55.7</TD><td valign=top><a href="http://www.ensembl.org/Mus_musculus/mapview?chr=19">61</a></TD></TR>
-<TR><td valign=top>X</TD><td valign=top>96.5</TD><td valign=top><a href="http://www.ensembl.org/Mus_musculus/mapview?chr=x">167</a></TD></TR>
-<TR><td valign=top>Y</TD><td valign=top>3.11</TD><td valign=top><a href="http://www.ensembl.org/Mus_musculus/mapview?chr=y">16</a></TD></TR>
-<TR><td valign=top>MT</TD><td valign=top>&nbsp;</TD><td valign=top><a href="http://www.ensembl.org/Mus_musculus/mapview?chr=mt">.016</a></TD></TR>
+<TABLE BORDER="1" CELLPADDING="2">
 
-<TR><TD BGCOLOR="#EEEEEE">Total:</TD>
-<TD BGCOLOR="#EEEEEE">2716.9</TD>
-<TD BGCOLOR="#EEEEEE">2655</TD>
-</TR>
+<TR><TH><FONT SIZE="-1">Chromosome</FONT></TH><TH><FONT SIZE="-1">Mapped <br>Length (cM)</FONT></TH><TH><FONT SIZE="-1">Total <br>Estimated<br> Size (Mb)<br>(NCBI build 33)</FONT></TH></TR>
+<TR><td valign=top><font size="-1">1</font></TD><td valign=top><font size="-1">127.0</font></TD><td valign=top><a href="http://www.ensembl.org/Mus_musculus/mapview?chr=1"><font size="-1">197</font></a></TD></TR>
+<TR><td valign=top><font size="-1">2</font></TD><td valign=top><font size="-1">114.0</font></TD><td valign=top><a href="http://www.ensembl.org/Mus_musculus/mapview?chr=2"><font size="-1">182</font></a></TD></TR>
+<TR><td valign=top><font size="-1">3</TD><td valign=top><font size="-1">119.2</TD><td valign=top><a href="http://www.ensembl.org/Mus_musculus/mapview?chr=3"><font size="-1">161</a></TD></TR>
+<TR><td valign=top><font size="-1">4</TD><td valign=top><font size="-1">84.0</TD><td valign=top><a href="http://www.ensembl.org/Mus_musculus/mapview?chr=4"><font size="-1">154</a></TD></TR>
+<TR><td valign=top><font size="-1">5</TD><td valign=top><font size="-1">92.0</TD><td valign=top><a href="http://www.ensembl.org/Mus_musculus/mapview?chr=5"><font size="-1">153</a></TD></TR>
+<TR><td valign=top><font size="-1">6</TD><td valign=top><font size="-1">75.0</TD><td valign=top><a href="http://www.ensembl.org/Mus_musculus/mapview?chr=6"><font size="-1">150</a></TD></TR>
+<TR><td valign=top><font size="-1">7</TD><td valign=top><font size="-1">74.0</TD><td valign=top><a href="http://www.ensembl.org/Mus_musculus/mapview?chr=7"><font size="-1">153</a></TD></TR>
+<TR><td valign=top><font size="-1">8</TD><td valign=top><font size="-1">82.0</TD><td valign=top><a href="http://www.ensembl.org/Mus_musculus/mapview?chr=8"><font size="-1">132</a></TD></TR>
+<TR><td valign=top><font size="-1">9</TD><td valign=top><font size="-1">79.0</TD><td valign=top><a href="http://www.ensembl.org/Mus_musculus/mapview?chr=9"><font size="-1">124</a></TD></TR>
+<TR><td valign=top><font size="-1">10</TD><td valign=top><font size="-1">77.0</TD><td valign=top><a href="http://www.ensembl.org/Mus_musculus/mapview?chr=10"><font size="-1">130</a></TD></TR>
+<TR><td valign=top><font size="-1">11</TD><td valign=top><font size="-1">80.0</TD><td valign=top><a href="http://www.ensembl.org/Mus_musculus/mapview?chr=11"><font size="-1">122</a></TD></TR>
+<TR><td valign=top><font size="-1">12</TD><td valign=top><font size="-1">66.0</TD><td valign=top><a href="http://www.ensembl.org/Mus_musculus/mapview?chr=12"><font size="-1">121</a></TD></TR>
+<TR><td valign=top><font size="-1">13</TD><td valign=top><font size="-1">80.0</TD><td valign=top><a href="http://www.ensembl.org/Mus_musculus/mapview?chr=13"><font size="-1">12</a></TD></TR>
+<TR><td valign=top><font size="-1">14</TD><td valign=top><font size="-1">69.0</TD><td valign=top><a href="http://www.ensembl.org/Mus_musculus/mapview?chr=14"><font size="-1">125</a></TD></TR>
+<TR><td valign=top><font size="-1">15</TD><td valign=top<font size="-1">81.0</TD><td valign=top><a href="http://www.ensembl.org/Mus_musculus/mapview?chr=15"><font size="-1">103</a></TD></TR>
+<TR><td valign=top><font size="-1">16</TD><td valign=top><font size="-1">72.0</TD><td valign=top><a href="http://www.ensembl.org/Mus_musculus/mapview?chr=16"><font size="-1">98</a></TD></TR>
+<TR><td valign=top><font size="-1">17</TD><td valign=top><font size="-1">81.6</TD><td valign=top><a href="http://www.ensembl.org/Mus_musculus/mapview?chr=17"><font size="-1">95</a></TD></TR>
+<TR><td valign=top><font size="-1">18</TD><td valign=top><font size="-1">60.0</TD><td valign=top><a href="http://www.ensembl.org/Mus_musculus/mapview?chr=18"><font size="-1">91</a></TD></TR>
+<TR><td valign=top><font size="-1">19</TD><td valign=top><font size="-1">57</TD><td valign=top><a href="http://www.ensembl.org/Mus_musculus/mapview?chr=19"><font size="-1">61</a></TD></TR>
+<TR><td valign=top><font size="-1">X</TD><td valign=top><font size="-1">96.5</TD><td valign=top><a href="http://www.ensembl.org/Mus_musculus/mapview?chr=x"><font size="-1">167</a></TD></TR>
+<TR><td valign=top><font size="-1">Y</TD><td valign=top><font size="-1">3.11</TD><td valign=top><a href="http://www.ensembl.org/Mus_musculus/mapview?chr=y"><font size="-1">16</a></TD></TR>
+<TR><td valign=top><font size="-1">MT</TD><td valign=top>&nbsp;</TD><td valign=top><a href="http://www.ensembl.org/Mus_musculus/mapview?chr=mt"><font size="-1">.016</a></TD></TR>
+<TR><TD BGCOLOR="#EEEEEE"><font size="-1">Total:</TD><TD BGCOLOR="#EEEEEE"><font size="-1">2719</TD>
+<TD BGCOLOR="#EEEEEE"><font size="-1">2655</font></TD></TR>
+</table>
+</td>
 </TABLE>
-</BLOCKQUOTE>
 <p>
 <hr WIDTH="100%">
 <h3><A NAME="CodonUsage">Codon Usage</A></h3>
@@ -115,49 +107,63 @@ University Press</td>
 Codon Usage Tabulated from Genbank</a>
 </ul>
 </p>
-<hr>
-<h3><A NAME="MolecRes"></A>Molecular Resources</h3>
-<h4>BACs</h4>
-<ul>
- <a href="http://bacpac.chori.org/">BACPAC Resources Center (BPRC) at Children's Hospital Oakland Research Institute (CHORI)</a><br>
-<A HREF="http://mp.invitrogen.com/">ResGen products at Invitrogen</A> 
-</ul>
-<h4>IMAGE clones &#150; <a href="http://image.llnl.gov/">The IMAGE (Integrated Molecular Analysis of Genome Expression) Consortium</a></h4>
-<p>Distributors of IMAGE clones in the U.S.:
-<ul>
-<li> <a href="http://www.atcc.org/">American Type Culture Collection</a>, Manassas, VA
 
-</li><li> <a href="http://www.openbiosystems.com/">Open Biosystems</a>, Huntsville, AL
-</li><li> <a href="http://mp.invitrogen.com/">Invitrogen</a>, Carlsbad, CA
-</li></ul>
+<h3><a NAME="physiology"></a>Mouse Physiology</h3>
 
-<p>Distributors of IMAGE clones in Europe:
-<ul>
-<li> <a href="http://www.geneservice.co.uk">Geneservice Ltd</a>, Cambridge, UK
-</li><li> <a href="http://www.rzpd.de/">RZPD German Resource Center for Genome Research</a>, Berlin Germany
+<p>The estimates below are based on information in <a href="<!--#include file='include/green_url.html'-->"><i>Biology
+of the Laboratory Mouse</i></a> (the Staff of The Jackson Laboratory, E. Green, ed. 1966, Dover Publications, New York)  and in the <A HREF="http://phenome.jax.org/pub-cgi/phenome/mpdcgi?rtn=docs/home">Mouse Phenome Database (MPD)</A> at the Jackson Laboratory.<P>
+<STRONG>Note:</STRONG> Strain variation can affect these values significantly.
 
-<h4>Radiation Hybrid Panels</h4>
-<ul>
-<a href="http://mp.invitrogen.com/">Research Genetics (T31 mouse/hamster panel)</a><br>
-<a href="http://www.jax.org/resources/documents/cmdata/rhmap/">The Jackson Laboratory Mouse Radiation Hybrid Database</a><br>
-<a href="http://corba.ebi.ac.uk:80/RHdb/">EBI Radiation Hybrid Database</a>
-</ul>
+<p><b>General</b>
+<BLOCKQUOTE>
+<!--Mouse Phenome Database: <A HREF="http://phenome.jax.org/pub-cgi/phenome/mpdcgi?rtn=docs/home">Measurement categories</A><br><br>-->
+<b>Body weight:</b> average ~20 g; highly variable<br>
+<a href="http://jaxmice.jax.org/library/notes/457a.html">Animal Resources Body Weight Study of 1993</a> (growth charts for selected strains) <br>
+Mouse Phenome Database: <a href="http://phenome.jax.org/pub-cgi/phenome/mpdcgi?rtn=meas/catlister&req=Cbody+weight">body weight</a><br>
+<b>Body Temperature:</b> ~36.9 C (in addition to strain, variables are age, sex, environmental conditions)
+<br><b>Lifespan:</b> 1.3 - 3 years; highly variable
+</BLOCKQUOTE>
 
+<p><b>Reproduction</b>
+<BLOCKQUOTE>
+<b>Sexual maturity: </b>after ~4 weeks of age; highly variable
+<br><b>Estrus cycle frequency:</b> every ~4-5 days
+<br><b>Gestation:</b> Average 19-21 days
+<br><b>Litter size:</b> usually 1-10 pups - highly variable due to genetic
+and environmental factors; tends to increase for the first few litters,
+then decrease with age
+<br><b>Reproductive lifespan of a female:</b> approaches 2 years in some
+strains<br>
+<b>Lactation:</b> duration ~4 weeks<br>
+Mouse Phenome Database: <A HREF="http://phenome.jax.org/pub-cgi/phenome/mpdcgi?rtn=meas/catlister&req=Creproductionqqqperformance">reproductive performance</A>
+</BLOCKQUOTE>
 
+<b>Circulation</b>
+<BLOCKQUOTE>
+<b>Total serum protein:</b> ~4-7 g/100 ml<br>
+<b>Blood volume:</b> ~5.5 ml per 100 g body weight<br>
+<b>Heart rate:</b> Adult: 632 +/- 51.3 beats per minute; Newborn: 286 +/- 56.8 beats per minute<br>
+Mouse Phenome Database: <A HREF="http://phenome.jax.org/pub-cgi/phenome/mpdcgi?rtn=meas/catlister&req=Ccardiovascular">cardiovascular</A><br>
+<b>Systolic pressure:</b> 83-164 mm Hg<br>
+<b>Blood pH:</b> 7.3-7.4<br>
+Mouse Phenome Database: <A HREF="http://phenome.jax.org/pub-cgi/phenome/mpdcgi?rtn=meas/catlister&req=Cblood+chemistryqqqmiscellaneous">pH</a>, <a href="http://phenome.jax.org/pub-cgi/phenome/mpdcgi?rtn=meas/catlister&req=Cblood+chemistry">blood chemistry</a>
+</BLOCKQUOTE>
 
-<p>
-<hr WIDTH="100%">
-<A NAME="NIHLinks"></A>
-<h4>NIH Links</h4>
-<ul>
-<a href="http://www.nih.gov/science/models/mouse/">Trans-NIH Mouse Initiative</a><br>
-<a href="http://www.nhgri.nih.gov/index.cfm">NHGRI: National Human Genome Research Institute</a>
-</ul> 
-</p>
-<hr WIDTH="100%">
-<h3><a NAME="MousePhysiologyLink"></a><b><a href="mouse_facts3.shtml">Mouse Physiology</a></h3>
-<h3><a NAME="UsefulLinksLink"></a><a href="mouse_facts4.shtml"> Mouse, Mammalian, and Model Organism Resources</a></h3>
-<BR>
+<b>Respiration</b>
+<BLOCKQUOTE>
+<b>Respiratory rate:</b> ~163 per minute<br>
+Mouse Phenome Database:  <A HREF="http://phenome.jax.org/pub-cgi/phenome/mpdcgi?rtn=meas/catlister&req=Crespiratory">respiratory function</A><br>
+<b>Tidal volume:</b> ~0.15 ml<BR>
+</BLOCKQUOTE>
+
+<p><b>Urinary Tract</b>
+<BLOCKQUOTE>
+<b>Average urine output:</b> ~1.6 ml per 24 hr<br>
+<b>Average water intake:</b> ~ 5 ml per 24 hr<br>
+</BLOCKQUOTE>
+
+<!--<h3><a NAME="UsefulLinksLink"></a><a href="mouse_facts4.shtml"> Mouse, Mammalian, and Model Organism Resources</a></h3>
+<BR>-->
 <!--#include file='include/templateBodyStop.html'--> 
 <!--
 Warranty Disclaimer and Copyright Notice

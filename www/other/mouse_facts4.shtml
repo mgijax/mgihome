@@ -10,9 +10,12 @@
   <span class="titleBarMainTitle"> Mouse, Mammalian, and Model Organism Resources</span>
 
 </div> <!--titleBar-->
+<table border="0" cellspacing="0" cellpadding="0" width="100%">
+  <tr><td valign="top"><font size="-1"><a href="#general">General</a></font></td><td valign="top"><font size="-1"><a href="#mouse_res">Mouse Resources</a></td><td valign="top"><font size="-1"><a href="#MolecRes">Molecular Resources</a></td><td valign="top"><font size="-1"><a href="#locus_sym">Locus Symbols, Gene Families</a></td><td valign="top"><font size="-1"><a href="#MorphMut">Morphology/Mutations</a></td><td valign="top"><font size="-1"><a href="#OrthHomol">Orthology/Homology</a></td><td><font size="-1"><a href="#Maps">Maps</a></td><td><font size="-1"><a href="#mammal_model">Mammals and Model Organisms</a></font></td></tr>
+</table>
 
 
-<p><b>General</b>
+<p><a name="general"></a><b>General</b>
 <blockquote>
 <a href="http://www.jax.org/">The Jackson Laboratory Homepage</a>: Research, Resources, JAX Mice, Career Opportunities, Programs<br>
  <a href="http://phenome.jax.org/phenome/">Mouse Phenome Database</a>: Baseline phenotypic data on commonly used strains<BR>
@@ -42,7 +45,7 @@ Nomenclature<br>
 <a href="http://www.healthsystem.virginia.edu/internet/transgenic-mouse/ears.cfm">Punch codes</a>: standard pattern for ear punch numbering in mice<br>
 </blockquote>
 
-<p><b>Mouse Resources</b>
+<p><b><a name="mouse_res"></a>Mouse Resources</b>
 <blockquote>
 <a href="http://jaxmice.jax.org/index.html">JAX&reg; Mice (The Jackson Laboratory)</a>: mouse product list, technical support<br>
 <a href="http://www.jax.org/imr/index.html">Induced Mutant Resource (IMR)</a>: mice, The Jackson Laboratory<br>
@@ -58,7 +61,26 @@ Nomenclature<br>
 </p>
 </blockquote>
 
-<p><b>Locus Symbols, Gene Families</b>
+<p><A NAME="MolecRes"></A><b>Molecular Resources</b></p>
+<blockquote>
+<dl><dt>BACs</dt>
+<dd><a href="http://bacpac.chori.org/">BACPAC Resources Center (BPRC) at Children's Hospital Oakland Research Institute (CHORI)</a></dd>
+<dd><a href="http://mp.invitrogen.com/">ResGen products at Invitrogen</a></dd>
+
+<dt>IMAGE clones &#150;</b> <a href="http://image.llnl.gov/">The IMAGE (Integrated Molecular Analysis of Genome Expression) Consortium</a></dt>
+<dt>Distributors of IMAGE clones in the U.S.</dt>
+<dd><a href="http://www.atcc.org/">American Type Culture Collection</a>, Manassas, VA</dd>
+<dd<a href="http://www.openbiosystems.com/">Open Biosystems</a>, Huntsville, AL</dd>
+<dd><a href="http://mp.invitrogen.com/">Invitrogen</a>, Carlsbad, CA</dd>
+
+<dt>Distributors of IMAGE clones in Europe</dt>
+<dd><a href="http://www.geneservice.co.uk/products/image/index.jsp">Geneservice Ltd</a>, Cambridge, UK</dd>
+<!--<dd><a href="http://www.rzpd.de/">RZPD German Resource Center for Genome Research</a>, Berlin Germany</dd>-->
+<dd><a href="http://www.imagenes-bio.de/products/sets_libraries/image/">imaGenes</a>, Berlin Germany 
+</dl>
+</blockquote>
+
+<p><b><a name="locus_sym">Locus Symbols, Gene Families</a></b>
 <blockquote>
 <a href="http://imgt.cines.fr">The International Immunogenetics Database</a><br>
 <a href="../nomen/nomen_submit_form.shtml">Mouse Gene Nomenclature information </a>: locus symbol registration<br>
@@ -67,7 +89,7 @@ Nomenclature<br>
 <a href="http://www.sanger.ac.uk/Software/Pfam/">Pfam - Protein Family Database</a>: a large collection of multiple sequence alignments of many common protein domains
 </blockquote>
 
-<p><b>Morphology/Mutations</b>
+<p><b><a name="MorphMut"></a>Morphology/Mutations</b>
 <blockquote>
 <a href="http://www.acrf.com.au/page/medical_genome_centre_australian_national_university.html">Australian Medical Genome Centre</a></br>
 <a href="http://www.mouse-genome.bcm.tmc.edu/ENU/ENUhome.asp">Baylor Mouse Mutagenesis for Development Defects</a><br>
@@ -83,10 +105,7 @@ Nomenclature<br>
 <a href="http://www.cmhd.ca/">Toronto's Centre for Modeling Human Disease</a><br>
 </blockquote>
 
-
-
-
-<p><b>Orthology/Homology</b>
+<p><b><a name="OrthHomol"></a>Orthology/Homology</b></p>
 <blockquote>
 <a href="<!--#include file='include/wi_url.html'-->menus/homology_menu.shtml">Mouse Genome Database (MGD) Orthology</a><br>
 <a href="http://www.ncbi.nlm.nih.gov/Homology/">NCBI Human/Mouse Homology Relationships</a>
@@ -96,7 +115,7 @@ Human-Mouse Homology Database (DHMHD) Human/Mouse Orthologies</a>
 <!--<br><a href="http://www.latrobe.edu.au/www/genetics/compmap.html">La Trobe University Comparative Genome Mapping</a>-->
 </blockquote>
 
-<p><b>Maps</b>
+<p><b><a name="Maps">Maps</a></b></p>
 <blockquote>
 <a href="<!--#include file='include/wi_url.html'-->menus/allsearch_menu.shtml#maps">Mouse Genome
 Database (MGD) Mapping</a>
@@ -113,10 +132,8 @@ Genome Database Mouse Cytogenetic Map</a>
 <a href="http://www.mgu.har.mrc.ac.uk/servlet/EUCIB.mapViewer">The European Collaborative Interspecific Mouse Backcross (EUCIB)</a><br>-->
 <a href="http://www.pathology.washington.edu/research/cytopages/spreads/mouse_g_B2.gif">University of Washington G-banded Mouse Karyotype Image</a>
 </blockquote>
-<p>
 
-<hr WIDTH="100%">
-<h3>Mammals and Model Organisms</h3>
+<p><b><a name="mammal_model"></a>Mammals and Model Organisms</b></p>
 <blockquote>
 <p>
 <!--
@@ -148,6 +165,5 @@ Mendelian Inheritance in Animals (OMIA)</a>: species and phenotypes-->
 Mendelian Inheritance in Man (OMIM)</a>: catalog of human genes and genetic disorders
 </blockquote>
 <p>
-<HR>
 
 <!--#include file='include/templateBodyStop.html'--> 
