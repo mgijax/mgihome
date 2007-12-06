@@ -2,236 +2,163 @@
 
   <title><!--#include file="include/mgiversion.html"--> - Mouse Genome Informatics Genes &amp; Markers Page</title>
 
-<link rel="stylesheet" type="text/css" href="homepage.css"/>
 
 <!------------- AJAX TABS CALLS -------------------------------------------------------->
 
 <link rel="stylesheet" type="text/css" href="ajaxtabs.css" />
 <script type="text/javascript" src="ajaxtabs.js">
-/***********************************************
-* Ajax Tabs Content script- © Dynamic Drive DHTML code library (www.dynamicdrive.com)
-* This notice MUST stay intact for legal use
-* Visit Dynamic Drive at http://www.dynamicdrive.com/ for full source code
-***********************************************/
-  </script>
+	/***********************************************
+	* Ajax Tabs Content script- © Dynamic Drive DHTML code library (www.dynamicdrive.com)
+	* This notice MUST stay intact for legal use
+	* Visit Dynamic Drive at http://www.dynamicdrive.com/ for full source code
+	***********************************************/
+</script>
+
+<link rel="stylesheet" type="text/css" href="minihome.css" />
 
 <!--#include file='include/templateBodyStart.html'-->
 
-<table width="100%" border="0" cellpadding="0" cellspacing="0" style="font-family:Verdana,Arial,Helvetica;font-size:12px"
-<tr> <!-- Page Header Title Bar -->
-<td>
-	<table width="100%">
-	<tr>
-		  <td align="left" valign="center" width="20%">
-		  </td>
-		  <td align="center" valign="center" width="60%">
+<!-- start body content -->
 
-			<font color="#002255" face="Arial,Helvetica" size="6">
-			  <b>Genes &amp; Markers</b>
-			</font>
-		  </td>
-		  <td align="right" valign="center" width="20%">&nbsp;
-	      </td>
-	</tr>
-
-	</table>
-</td>
-</tr>
-
-<tr> <!-- Tagline specific to the mini-Homepage group -->
-<td bgcolor="#FFFFFF">
-<div ID="Tagline" Name="Tagline" style="color:#003366;font-size:12px;font-style:italic;line-height:1.2; margin-left:15px; margin-right:15px; margin-top:2px; margin-bottom:4px;" align="center">MGI contains information on mouse genes, DNA segments, microRNAs, cytogenetic markers, and QTL. Each Detail Page summarizes all data in MGI associated with that marker. </div>
-  </div>
-</td>
-</tr>
-</table>
-<!-------------------------- MenuBar End ------------------------------------>
-<div class="homePageBody">
-
-<!---------------------strip of images - some mini-homepages won't have any images------------------->
-<div id="images" align="center" style="text-align:center; vertical-align:middle; height:110px; padding:1px 0px 2px 0px; min-width:975px;" NOWRAP="nowrap"><img src="images/Fgfr3_GBrowse100.jpg" alt="-" height="100" border="1" align="middle">&nbsp;
-	<img src="images/Fgfr3_GO100.jpg" alt="-" height="100" border="1" align="middle">&nbsp;
-	<img src="images/Fgfr3_mini.jpg" alt="-" height="100" border="1" align="middle">&nbsp;
-    <img src="images/Fgfr3_SNP100.jpg" alt="-" height="100" border="1" align="middle">&nbsp;
-	<img src="images/Fgfr3_Interpro100.jpg" alt="-" height="75" border="1" align="middle">
-  <em style="line-height:1.8;"><br />Selected types of integrated data for the gene <a href="<!--#include file="include/java_url.html"-->WIFetch?page=markerDetail&key=8795">Fgfr3</a><br />
-  <br />
-</em></div>
-
-<div id="mainText" style="position:relative; top:10px;">
-<table width="100%" border="0" cellpadding="4"> <!--body table-->
-<tr valign="top">
-
-<!-- left column -->
-<td width="50%">
-  <table>
-
-
-  <!-- Disease Model of the week -->
-  <tr>
-  <td>
-  <table cellpadding="0.5" bgcolor="#DFEFFF" width="100%" >
-
-   <tr>
-   <td>
-     <table width="100%" border="0" cellpadding="2" cellspacing="0" class="grayBG">
-     <tr>
-       <td class="boxHead"><strong>What can I do here? </strong></td>
-     </tr>
-     <tr >
-       <td style="font-size:12">
-
-         <p><a href="<!--#include file="include/java_url.html"-->WIFetch?page=markerQF">Search by symbol</a>, location, gene ontology classification or phenotype.</p>
-         <p><a href="<!--#include file="include/wi_url.html"-->searches/GO_form.shtml">Search for genes by molecular function</a>, biological process or cellular component using the Gene Ontology.</p>
-		 <p><a href="<!--#include file="include/wi_url.html"-->searches/allele_form.shtml">Search for candidate genes</a> for a given phenotype and in a specific genome location.</p>
-         <p><a href="<!--#include file="include/java_url.html"-->WIFetch?page=batchQF">Download data for a batch</a> of gene IDs or symbols.</p>
-         <p><a href="<!--#include file="include/ftp_url2.html"-->pub/reports/index.html#marker">Download plain text files</a> of all genes and markers in MGI.</p>
-         <p><a href="<!--#include file="include/mgihome_url.html"-->nomen/gene.shtml">Read the guidelines</a> for mouse gene nomenclature.</p>
-         </td>
-     </tr>
-     </table>
-   </td>
-
-   </tr>
-  </table>
-  </td>
-  </tr>
-
-
-
-  <!-- Expression Image of the week -->
-  </table>
-  </td>
-
-<!-- end left column -->
-
-
-<!-- right column -->
-<td style="vertical-align:top">
-  <table>
-
-  <!-- How to -->
-  <tr>
-  <td>
-  <table cellpadding="0.5" bgcolor="#DFEFFF" width="100%" >
-   <tr>
-
-   <td>
-     <table width="100%" border="0" cellpadding="2" cellspacing="0" class="grayBG">
-     <tr>
-       <td class="boxHead"><strong>How do I...</strong></td>
-     </tr>
-     <tr >
-       <td style="font-size:12">
-       <dl class="howDoI">
-
-         <dd class="howDoI">.. search for genes,  QTL, or other marker types in a specific region of the mouse genome?&nbsp;<a href="<!--#include file="include/mgihome_url.html"-->homepages/underConstruction.shtml" class="smaller">FAQ</a></dd>
-         <dd class="howDoI">.. find a gene using a non-MGI accession ID?&nbsp;<a href="<!--#include file="include/mgihome_url.html"-->homepages/underConstruction.shtml" class="smaller">FAQ</a></dd>
-         <dd class="howDoI">.. find all gene trap cell lines for a particular gene?&nbsp;<a href="<!--#include file="include/mgihome_url.html"-->homepages/underConstruction.shtml" class="smaller">FAQ</a></dd>
-         <dd class="howDoI">.. retrieve Entrez gene, Ensembl, VEGA, or other IDs for a list of genes?&nbsp;<a href="<!--#include file="include/mgihome_url.html"-->homepages/underConstruction.shtml" class="smaller">FAQ</a></dd>
-         <dd class="howDoI">.. get a name for a gene?&nbsp;<a href="<!--#include file="include/mgihome_url.html"-->homepages/underConstruction.shtml" class="smaller">FAQ</a></dd>
-         <dd class="howDoI">.. search for genes sharing a specific protein doman?&nbsp;<a href="<!--#include file="include/mgihome_url.html"-->homepages/underConstruction.shtml" class="smaller">FAQ</a></dd>
-       </dl>
-              <a href="<!--#include file="include/faq_url.html"-->FAQ.shtml">More FAQs </a>
-     </tr>
-     </table>
-   </td>
-   </tr>
-  </table>
-
-  </td>
-  </tr>
-
-  <!-- What's new? -->
-  <tr>
-  <td>
-    <table cellpadding="0.5" bgcolor="#DFEFFF" width="100%" >
-      <tr>
-        <td>
-
-          <table width="100%" border="0" cellpadding="2" cellspacing="0" class="grayBG">
-            <tr>
-              <td class="boxHead">MGI contains </td>
-            </tr>
-            <tr >
-              <td style="font-size:12">
-                <!--#include file="stats/gene_stats.shtml"-->
-              </td>
-
-            </tr>
-          </table>
-        </td>
-      </tr>
-    </table>
-  </td>
-  </tr>
-
-
-  <!-- Stats -->
-
-  </table>
-</td>
-</tr>
-<tr> <!-- What's New -->
-<td colspan="2">
-  <table cellpadding="0.5" bgcolor="#DFEFFF" width="100%" >
-    <tr>
-      <td>
-        <table width="100%" border="0" cellpadding="2" cellspacing="0" class="grayBG">
-          <tr>
-
-            <td class="boxHead"><strong>Genes &amp; Markers news </strong></td>
-          </tr>
-          <tr >
-            <td style="font-size:12; color:#002255;"> <span class="smaller"><strong>08 August 2007</strong></span>
-                <ul class="line1 smaller">
-                  <li>microRNAs </li>
-
-                  <li> gene traps </li>
-                </ul>
-              <a href="<!--#include file='include/mgihome_url.html'-->news/whatsnew.shtml" class="smaller">More news </a> </td>
-          </tr>
-        </table>
-      </td>
-    </tr>
-
-  </table>
-</td>
-</tr>
-
-<tr> <!-- Bottom tab: dynamic content -->
-<td colspan="2">
-
-  <table cellpadding="0.5" width="100%" >
-    <tr>
-      <td>
-        <ul id="maintab" class="shadetabs">
-
-<li id="listTab" class="selected"><a href="tabContents/Gene_About.shtml" rel="ajaxcontentarea">About Genes &amp; Markers</a></li>
-<li id="listTab"><a href="tabContents/Gene_Help.shtml" rel="ajaxcontentarea">Help documents</a></li>
-<li id="listTab"><a href="tabContents/Gene_Collaborators.shtml" rel="ajaxcontentarea">Collaborators</a></li>
-<li id="listTab"><a href="tabContents/Gene_Resources.shtml" rel="ajaxcontentarea">Other links</a></li>
-</ul>
-
-<div id="ajaxcontentarea" class="contentstyle">
-<!--#include file='tabContents/Gene_About.shtml'-->
+<!-- mini homepage header section -->
+<div id="headerWrapper">
+    <div id="imageWrapper">
+        <div class="blueBorder pad5 small">
+			<a href="http://prodwww.informatics.jax.org/usrlocalmgi/live/wi/www/external/festing/search_form.cgi">
+				<img class="outlineImg" src="images/Fgfr3_GBrowse175.png" alt="-" height="150">
+			</a>
+			<br />
+			<em style="line-height:1.8;">Gene models from MGI, NCBI, <br />
+			Ensembl and VEGA, and RefSeqs for the gene Fgfr3</em>
+        </div>
+    </div>
+	<div id="homePageTitleWrapper">
+	    <span class="homePageTitle">
+			Genes, Genome Features & Maps
+	    </span>
+	    <br>
+	    <span class="homePageSubTitle">
+			MGI provides access to integrated data on mouse genes and genome
+			features, from sequences and genomic maps to gene expression and
+			disease models.
+	    </span>
+	</div>
 </div>
 
-<script type="text/javascript">
-//Start Ajax tabs script for UL with id="maintab". Separate multiple ids each with a comma.
-startajaxtabs("maintab");
-</script>
+<!-- 3 box section -->
+<div id="boxWrapper">
+	<div class="boxLeftWrap marginBottom">
+		<!-- Left box: 'What can I do here?' -->
+		<div class="blueBorder">
+			<div class="boxTitle">
+				What can I do here?
+			</div>
+			<!-- 'What can I do here?'content -->
+			<!-- The content is in a definition list <dl> where the descriptive text
+			is in the term <dt>, and the link is in the definition <dd> -->
+			<div class="boxBG pad5">
+				<dl class="boxList">
+					<dt class="whatList"><a class="homeLink" href="http://prodwww.informatics.jax.org:4139/javawi2/servlet/WIFetch?page=markerQF">Search by symbol</a>,
+						location, gene ontology classification or phenotype.</dt>
+					<dt class="whatList"><a class="homeLink" href="a">Search for candidate genes</a> for a given phenotype within a
+						genomic interval.</dt>
+					<dt class="whatList"><a class="homeLink" href="http://prodwww.informatics.jax.org:4139/javawi2/servlet/WIFetch?page=batchQF">Download data for a batch</a>
+						of gene IDs or symbols.</dt>
+					<dt class="whatList"><a class="homeLink" href="http://www.informatics.jax.org/mgihome/nomen/short_gene.shtml">Read the guidelines</a>
+						for mouse gene nomenclature.</dt>
+					<dt class="whatList"><a class="homeLink" href="http://www.informatics.jax.org/searches/sequence_form.shtml">Search for sequences</a>
+						by mouse strain or biological attribute.</dt>
+					<dt class="whatList"><a class="homeLink" href="http://www.informatics.jax.org/searches/riset_form.shtml">Search MGI mapping data</a>
+						for recombinant inbred strain distribution patterns.</dt>
+					<dt class="whatList"><a class="homeLink" href="http://gbrowse.informatics.jax.org/cgi-bin/gbrowse/mouse_current/">Create a graphical display</a>
+						of genome features from regions of the mouse genome.</dt>
+					<dt class="whatList"><a class="homeLink" href="a">Search for sequence similarity</a> for mouse, human, or rat.</dt>
+					<dt class="whatList"><a class="homeLink" href="ftp://ftp.informatics.jax.org/pub/reports/index.html#marker">Download plain text files</a>
+						of all genes and markers in MGI.</dt>
+				</dl>
+			</div>
+		</div>
+    </div>
 
-      </td>
-    </tr>
-  </table>
-</td>
-</tr>
-</table>
+	<div class="boxRightWrap">
+		<!-- Right-top box: FAQs -->
+		<div class="blueBorder marginBottom">
+			<div class="boxTitle">
+				<!-- Box-title goes here -->FAQs
+			</div>
 
-<!--body table-->
+			<!-- FAQs content -->
+			<!-- The content is in a definition list <dl> where the list title is in
+			the term <dt>, and FAQ question is in the definition <dd>. Note the link
+			uses a javascript function to open a separate window;
+			javascript:openFaqWindow("faqPage.shtml")'-->
+			<div class="boxBG pad5">
+				<dl class="boxList">
+					<dt>How do I...</dt>
+					<dd class="faqList">.. search for genes,  QTL, or other features in a specific genomic interval? <a class="small homeLink" href='javascript:openFaqWindow("GM_marker.shtml")'>FAQ</a></dd>
+					<dd class="faqList">.. search for a gene using an Entrez, Ensembl, VEGA, or other accession ID? <a class="small homeLink" href='javascript:openFaqWindow("GM_batch.shtml")'>FAQ</a></dd>
+					<dd class="faqList">.. search for genes sharing a specific protein doman? <a class="small homeLink" href='javascript:openFaqWindow("GM_pirsf.shtml")'>FAQ</a></dd>
+					<dd class="faqList">.. search for all gene trap cell lines associated with a  gene or marker? <a class="small homeLink" href='javascript:openFaqWindow("GM_gtrap.shtml")'>FAQ</a></dd>
+					<dd class="faqList">.. retrieve Entrez gene, Ensembl, VEGA, or other IDs for a list of genes? <a class="small homeLink" href='javascript:openFaqWindow("GM_batch.shtml")'>FAQ</a></dd>
+					<dd class="faqList">.. create a genome map from a genomic interval? <a class="small homeLink" href='javascript:openFaqWindow("GM_genmap.shtml")'>FAQ</a></dd>
+					<dd class="faqList">.. see different gene models along with the MGI-curated representative model? <a class="small homeLink" href='javascript:openFaqWindow("GM_gmodel.shtml")'>FAQ</a></dd>
+				</dl>
+				<!-- link to all FAQs page -->
+				<a class="small homeLink" href="<!--#include file='include/faq_url.html'-->">More FAQs</a>
+			</div>
+		</div>
 
-<!--body table-->
+		<!-- Right-bottom box: Stats -->
+		<!--#include file='stats/gene_stats.shtml'-->
+
+	</div>
+</div>
+
+<!-- News box -->
+<div class="boxWide blueBorder marginBottom">
+	<div class="boxTitle">
+
+		<!-- Box-title goes here -->
+		<div class="left">Genes & Genome Features news </div>
+		<div class="right">12 Nov 2007</div>
+
+	</div>
+	<!-- News content -->
+	<div class="boxBG pad5 small">
+		<ul>
+			<li>microRNAs</li>
+			<li>gene traps</li>
+		</ul>
+		<!-- link to more news page -->
+		<a class="small homeLink" href="#">More news</a>
+
+	</div>
+</div>
+
+<!-- Tabs box -->
+<div class="boxWide marginBottom">
+
+	<!-- This is where the tabbed section is defined. -->
+	<ul id="maintab" class="shadetabs">
+		<li class="selected"><a href="tabContents/Gene_About.shtml" rel="ajaxcontentarea">About Genes &amp; Markers</a></li>
+		<li><a href="tabContents/Gene_Help.shtml" rel="ajaxcontentarea">Help documents</a></li>
+		<li><a href="tabContents/Gene_Collaborators.shtml" rel="ajaxcontentarea">Collaborators</a></li>
+		<li><a href="tabContents/Gene_Resources.shtml" rel="ajaxcontentarea">Other links</a></li>
+	</ul>
+	<!-- this is where the tab text gets inserted by javascript -->
+	<div id="ajaxcontentarea" class="contentstyle" style="color:#002255;">
+
+		<!-- text for default selected tab inserted here as an include -->
+		<!--#include file='tabContents/Gene_About.html'-->
+
+	</div>
+	<script type="text/javascript">
+		//Start Ajax tabs script for UL with id="maintab". Separate multiple ids each with a comma.
+		startajaxtabs("maintab");
+	</script>
 </div>
 
 <!--#include file='include/templateBodyStop.html'-->
+
+</body>
+</html>

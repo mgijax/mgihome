@@ -2,255 +2,133 @@
 
   <title><!--#include file="include/mgiversion.html"--> - Mouse Genome Informatics Gene Expression Data Page</title>
 
-<link rel="stylesheet" type="text/css" href="homepage.css"/>
 
 <!------------- AJAX TABS CALLS -------------------------------------------------------->
 
 <link rel="stylesheet" type="text/css" href="ajaxtabs.css" />
 <script type="text/javascript" src="ajaxtabs.js">
-/***********************************************
-* Ajax Tabs Content script- © Dynamic Drive DHTML code library (www.dynamicdrive.com)
-* This notice MUST stay intact for legal use
-* Visit Dynamic Drive at http://www.dynamicdrive.com/ for full source code
-***********************************************/
-  </script>
+	/***********************************************
+	* Ajax Tabs Content script- © Dynamic Drive DHTML code library (www.dynamicdrive.com)
+	* This notice MUST stay intact for legal use
+	* Visit Dynamic Drive at http://www.dynamicdrive.com/ for full source code
+	***********************************************/
+</script>
+
+<link rel="stylesheet" type="text/css" href="minihome.css" />
 
 <!--#include file='include/templateBodyStart.html'-->
 
-<table width="100%" cellpadding="0" style="font-family:Verdana,Arial,Helvetica;font-size:12px">
-<tr> <!-- Page Header Title Bar -->
-<td>
-	<table width="100%" border="0" cellpadding="0" cellspacing="0">
-	<tr>
-		  <td align="left" valign="center" width="20%">		  </td>
-		  <td align="center" valign="center" width="60%">
+<!-- start body content -->
 
-			<font color="#002255" face="Arial,Helvetica" size="6">
-			  <b>Gene Expression Database (GXD) </b>			</font>
-<!--			<hr noshade="noshade"/ color="#D0E0F0">-->
-		  </td>
+<!-- mini homepage header section -->
 
-		  <td align="right" valign="center" width="20%">&nbsp;	      </td>
-	</tr>
-<tr>
-<td bgcolor="#FFFFFF" colspan="3">
-<div ID="Tagline" Name="Tagline" style="color:#003366;font-size:12px;font-style:italic; margin:5px 1px;" align="center">GXD collects and integrates the  gene expression information in MGI. Its primary emphasis is on endogenous gene expression during  mouse development. </div>
-
-</td>
-</tr>
-	</table>
-</td>
-</tr>
-
-</table>
-<!-------------------------- MenuBar End ------------------------------------>
-<div class="homePageBody">
-<!---------------------strip of images - some mini-homepages won't have any images------------------->
-<div id="images" align="center" style="text-align:center; background-color:#FFFFFF; vertical-align:middle; height:102px; padding:1px 0px 1px 0px; min-width:825px;" NOWRAP="nowrap">
-<a href="<!--#include file="include/wi_url.html"-->searches/image.cgi?11911">
-  <img src="images/5441small.jpg" alt="-" width="90" height="100" border="1" align="absmiddle"></a>&nbsp;&nbsp;
-<a href="<!--#include file="include/wi_url.html"-->searches/image.cgi?1741">
-  <img src="images/881small.jpg" alt="-" height="100px" border="1" align="absmiddle"></a>&nbsp;&nbsp;
-<a href="<!--#include file="include/wi_url.html"-->searches/image.cgi?22186">
-  <img src="images/18167small.jpg" alt="-" height="100px" border="1" align="absmiddle"></a>&nbsp;&nbsp;
-<a href="<!--#include file="include/wi_url.html"-->searches/image.cgi?2594">
-  <img src="images/1396small.jpg" alt="-" border="1" align="absmiddle"></a>&nbsp;&nbsp;
-<a href="<!--#include file="include/wi_url.html"-->searches/image.cgi?6542">
-  <img src="images/3670small.jpg" alt="-" height="100px" border="1" align="absmiddle"></a>&nbsp;&nbsp;
-<a href="<!--#include file="include/wi_url.html"-->searches/image.cgi?2003">
-  <img src="images/9817small.jpg" alt="-" height="100px" border="1" align="absmiddle"></a>&nbsp;&nbsp;
-<a href="<!--#include file="include/wi_url.html"-->searches/image.cgi?26023">
-  <img src="images/22645small.jpg" alt="-" height="100px" border="1" align="absmiddle"></a></div>
-<div id="mainText">
-<table width="100%" border="0" cellpadding="4"> <!--body table-->
-<tr valign="top">
-
-<!-- left column -->
-<td width="50%">
-  <table>
-
-
-  <!-- Disease Model of the week -->
-  <tr>
-  <td>
-  <table cellpadding="0.5" bgcolor="#DFEFFF" width="100%" >
-   <tr>
-   <td>
-
-     <table width="100%" border="0" cellpadding="2" cellspacing="0" class="grayBG">
-     <tr>
-       <td class="boxHead"><strong>What can I do here? </strong></td>
-     </tr>
-     <tr >
-       <td style="font-size:12px; color:#002255;">
-         <p style="line-height:1.2;">Search for references on gene expression during development.
-         <div style="position:absolute; left:100px; background-color:#FFFFFF; border:thin solid #DDDDDD; padding: 0px 1px; clear:both;"><a href="<!--#include file="include/wi_url.html"-->searches/gxdindex_form.shtml" class="smaller">Gene Expression Literature Index Query Form </a></div>
-
-         </p>
-
-         <p style="line-height:1.2;"><br/>Search for detailed gene expression assay results.
-         <div style="position:absolute; left:100px; background-color:#FFFFFF; border:thin solid #DDDDDD; padding: 0px 1px; clear:both;"><a href="<!--#include file="include/java_url.html"-->WIFetch?page=expressionQF" class="smaller">Gene Expression Data Query Form</a></div>
-         </p>
-
-         <p style="line-height:1.2;"><br/>Search for  genes expressed in some anatomical structures and/or developmental stages but not in others.
-         <div style="position:absolute; left:100px; background-color:#FFFFFF; border:thin solid #DDDDDD; padding: 0px 1px; clear:both;"><a href="<!--#include file="include/java_url.html"-->WIFetch?page=expressionQFexpanded" class="smaller">Gene Expression Data Expanded Query Form </a></div>
-         </p>
-
-         <p style="line-height:1.2;"><br/>Search or browse for anatomical structures; includes links to associated expression results.
-         <div style="position:absolute; left:100px; background-color:#FFFFFF; border:thin solid #DDDDDD; padding: 0px 1px; clear:both;"><a href="<!--#include file="include/wi_url.html"-->searches/anatdict_form.shtml" class="smaller">Mouse Anatomical  Dictionary Browser </a></div></p>
-
-
-         <p style="line-height:1.2;"><br/>Search the Edinburgh Mouse Atlas for anatomical terms and query for associated expression data. <div style="position:absolute; left:100px; background-color:#FFFFFF; border:thin solid #DDDDDD; padding: 0px 1px; clear:both;"><a href="http://genex.hgu.mrc.ac.uk/Resources/GXDQuery1/SectionBrowser.html" class="smaller"> EMAGE Anatomical Section Browser</a></div></p>
-
-         <p style="line-height:1.2;"><br/>Search for expression information based on tissue or cell-line origin of cDNAs.
-         <div style="position:absolute; left:100px; background-color:#FFFFFF; border:thin solid #DDDDDD; padding: 0px 1px; clear:both;"><a href="<!--#include file="include/java_url.html"-->WIFetch?page=cDNAQF" class="smaller">cDNA Clone Query Form</a></div></p>
-       </td>
-     </tr>
-     </table>
-   </td>
-
-   </tr>
-  </table>
-  </td>
-  </tr>
-
-
-
-  <!-- Expression Image of the week -->
-  <tr>
-  <td>&nbsp;</td>
-
-  </tr>
-  </table>
-  </td>
-<!-- end left column -->
-
-
-<!-- right column -->
-<td style="vertical-align:top">
-  <table>
-
-  <!-- How to -->
-  <tr>
-
-  <td>
-  <table cellpadding="0.5" bgcolor="#DFEFFF" width="100%" >
-   <tr>
-   <td>
-     <table width="100%" border="0" cellpadding="2" cellspacing="0" class="grayBG">
-     <tr>
-       <td class="boxHead"><strong>How do I...</strong></td>
-     </tr>
-
-     <tr >
-       <td style="font-size:12">
-       <dl class="howDoI">
-	     <dd class="howDoI">..find expression data for a specific gene and tissue?&nbsp;<a href="<!--#include file="include/faq_url.html"-->GXD_GeneTissue.shtml" class="smaller homePageBody">Learn</a></dd>
-         <dd class="howDoI">..find expression data for a tissue during development?&nbsp;<a href="<!--#include file="include/mgihome_url.html"-->homepages/underConstruction.shtml" class="smaller homePagebody">Learn</a></dd>
-		 <dd class="homePageBody">..find genes expressed in one tissue but not another?&nbsp;<a href="<!--#include file="include/mgihome_url.html"-->homepages/underConstruction.shtml" class="smaller homePagebody">Learn</a></dd>
-         <dd class="howDoI">..find references that report expression data for a gene at a specific age?&nbsp;<a href="<!--#include file="include/mgihome_url.html"-->homepages/underConstruction.shtml" class="smaller homePageBody">Learn</a></dd>
-         <dd class="howDoI">..find expression data for a specific gene?&nbsp;<a href="<!--#include file="include/mgihome_url.html"-->homepages/underConstruction.shtml" class="smaller homePageBody">Learn</a></dd>
-         <dd class="howDoI">..find expression data in mouse mutants?&nbsp;<a href="<!--#include file="include/mgihome_url.html"-->homepages/underConstruction.shtml" class="smaller homePageBody">Learn</a></dd>
-
-          </dl>
-              <a href="<!--#include file="include/faq_url.html"-->FAQ.shtml">More FAQs </a>
-     </tr>
-     </table>
-   </td>
-   </tr>
-
-  </table>
-  </td>
-  </tr>
-
-  <!-- Stats -->
-  <tr>
-  <td>
-    <table cellpadding="0.5" bgcolor="#DFEFFF" width="100%" >
-      <tr>
-
-        <td>
-          <table width="100%" border="0" cellpadding="2" cellspacing="0" class="grayBG">
-            <tr>
-              <td class="boxHead">GXD contains </td>
-            </tr>
-            <tr >
-              <td style="font-size:12; color:#002255;">
-
-                <!--#include file="stats/gxd_stats.shtml"-->
-
-              </td>
-            </tr>
-          </table>
-        </td>
-      </tr>
-    </table>
-  </td>
-  </tr>
-
-  <!-- End Stats -->
-  </table>
-</td>
-</tr>
-<tr> <!-- What's New -->
-<td colspan="2">
-  <table cellpadding="0.5" bgcolor="#DFEFFF" width="100%" >
-    <tr>
-      <td>
-        <table width="100%" border="0" cellpadding="2" cellspacing="0" class="grayBG">
-
-          <tr>
-            <td class="boxHead"><strong>Gene Expression news </strong></td>
-          </tr>
-          <tr >
-            <td style="font-size:12; color:#002255;"> <span class="smaller"><strong>08 August 2007</strong></span>
-                <ul class="line1 smaller">
-                  <li>Addition of <a href="http://www.genepaint.org/Frameset.html">GenePaint</a> in situ data records</li>
-
-                  <li><a href="<!--#include file='include/mgihome_url.html'-->news/whatsnew.shtml">10,500 expression images</a> from GenePaint.</li>
-                  </ul>
-              <a href="<!--#include file='include/mgihome_url.html'-->news/whatsnew.shtml" class="smaller">More news</a> </td>
-          </tr>
-        </table>
-      </td>
-
-    </tr>
-  </table>
-</td>
-</tr>
-
-<tr> <!-- Bottom tab: dynamic content -->
-<td colspan="2">
-
-  <table cellpadding="0.5" width="100%" >
-    <tr>
-      <td>
-
-        <ul id="maintab" class="shadetabs">
-			<li class="selected"><a href="tabContents/GXD_About.shtml" rel="ajaxcontentarea">About GXD</a></li>
-			<li><a href="tabContents/GXD_SendData.shtml" rel="ajaxcontentarea">Send us your data</a></li>
-			<li><a href="tabContents/GXD_Curators.shtml" rel="ajaxcontentarea">Our data policies</a></li>
-			<li><a href="tabContents/GXD_Help.shtml" rel="ajaxcontentarea">Help documents</a></li>
-			<li><a href="tabContents/GXD_Collaborators.shtml" rel="ajaxcontentarea">Collaborators</a></li>
-			<li><a href="tabContents/GXD_Resources.shtml" rel="ajaxcontentarea">More links </a></li>
-		</ul>
-<div id="ajaxcontentarea" class="contentstyle" style="color:#002255;">
-<!--#include file='tabContents/GXD_About.shtml'-->
+<div id="headerWrapper">
+    <div id="imageWrapper">
+        <div class="blueBorder pad5">
+            <a href="javascript:FAQwindow()"><img class="outlineImg" src="images/GXDmini_image_150.jpg"></a>
+        </div>
+    </div>
+	<div id="homePageTitleWrapper">
+	    <span class="homePageTitle">
+	        Gene Expression Database (GXD)
+	    </span>
+	    <br>
+	    <span class="homePageSubTitle">
+	       GXD collects and integrates the  gene expression information in MGI. Its primary
+	       emphasis is on endogenous gene expression during  mouse development.
+	    </span>
+	</div>
 </div>
-<script type="text/javascript">
-//Start Ajax tabs script for UL with id="maintab". Separate multiple ids each with a comma.
-startajaxtabs("maintab");
-</script>
 
-      </td>
-    </tr>
-  </table>
+<div id="boxWrapper">
+	<div class="boxLeftWrap marginBottom">
+		<div class="blueBorder">
+			<div class="boxTitle">What can I do here?</div>
+			<div class="boxBG pad5">
+				<dl>
+					<dt>Search for references on gene expression during development.</dt>
+					<dd class="searchList"><a class="small homeLink" href="<!--#include file='include/wi_url.html'-->searches/gxdindex_form.shtml">Gene Expression Literature Query Form</a></dd>
 
-</td>
-</tr>
+					<dt>Search for detailed gene expression assay results.</dt>
+					<dd class="searchList"><a class="small homeLink" href="<!--#include file='include/java_url.html'-->WIFetch?page=expressionQF">Gene Expression Data Query Form</a></dd>
 
-</table>
-<!--body table-->
+					<dt>Search for genes expressed in some anatomical structures and/or
+					developmental stages but not in others.</dt>
+					<dd class="searchList"><a class="small homeLink" href="<!--#include file='include/java_url.html'-->WIFetch?page=expressionQFexpanded">Gene Expression Data Expanded Query Form</a></dd>
+
+					<dt>Search or browse for anatomical structures; includes links to
+					associated expression results.</dt>
+					<dd class="searchList"><a class="small homeLink" href="<!--#include file='include/wi_url.html'-->searches/anatdict_form.shtml">Mouse Anatomical Dictionary Browser</a></dd>
+
+					<dt>Search the Edinburgh Mouse Atlas for anatomical terms and query
+					for associated expression data.</dt>
+					<dd class="searchList"><a class="small homeLink" href="http://genex.hgu.mrc.ac.uk/Resources/GXDQuery1/SectionBrowser.html">EMAGE Anatomical Section Browser</a></dd>
+
+					<dt>Search for expression information based on tissue or cell-line
+					origin of cDNAs.</dt>
+					<dd class="searchList"><a class="small homeLink" href="<!--#include file='include/java_url.html'-->WIFetch?page=cDNAQF">cDNA Clone Query Form</a></dd>
+				</dl>
+			</div>
+		</div>
+    </div>
+
+	<div class="boxRightWrap">
+		<div class="blueBorder marginBottom">
+			<div class="boxTitle">FAQs</div>
+			<div class="boxBG pad5">
+				<dl class="boxList">
+					<dt>How do I...</dt>
+					<dd class="faqList">.. find expression data for a specific gene? <a class="small homeLink" href='javascript:openFaqWindow("GXD_Gene.shtml")'>FAQ</a></dd>
+					<dd class="faqList">.. find expression data for a tissue during development? <a class="small homeLink" href='javascript:openFaqWindow("GXD_tissue_dev.shtml")'>FAQ</a></dd>
+					<dd class="faqList">.. find genes expressed in one tissue but not another? <a class="small homeLink" href='javascript:openFaqWindow("GXD_comp_tissue.shtml")'>FAQ</a></dd>
+					<dd class="faqList">.. find references that report expression data for a gene at a specific age? <a class="small homeLink" href='javascript:openFaqWindow("GXD_ref_age.shtml")'>FAQ</a></dd>
+				</dl>
+				<a class="small homeLink" href="<!--#include file='include/faq_url.html'-->">More FAQs</a>
+			</div>
+		</div>
+		<!--#include file='stats/gxd_stats.shtml'-->
+	</div>
+</div>
+
+<div class="boxWide blueBorder marginBottom">
+	<div class="boxTitle">
+		<span class="left">Gene Expression News</span>
+		<span class="right">19 Nov 2007</span>
+	</div>
+	<div class="boxBG pad5 small">
+		GXD is pleased to announce the inclusion of <em>in situ </em>hybridization
+		data from Dr. Gregor Eichele of the GenePaint database [www.genepaint.org;
+		Visel A; Thaller C; Eichele G. GenePaint.org: an atlas of gene expression
+		patterns in the mouse embryo. 2004. Nucleic Acids Research 32(Database  issue):D552-6].
+		The data set can be  viewed at accession number
+		<a href="<!--#include file='include/wi_url.html'-->searches/reference.cgi?124081">J:122989</a>.
+		This set includes over 69,000 results; 745  genes; 1,397 probes; 748 assays (in situ
+		hybridizations at E14.5); and 10,585  images.
+		<br />
+		<br />
+		<a class="small homeLink" href="#">More news</a>
+	</div>
+</div>
+
+<div class="boxWide marginBottom">
+	<ul id="maintab" class="shadetabs">
+		<li class="selected"><a hidefocus="true" href="tabContents/GXD_About.shtml" rel="ajaxcontentarea">About GXD</a></li>
+		<li><a hidefocus="true" href="tabContents/GXD_SendData.shtml" rel="ajaxcontentarea">Send us your data</a></li>
+		<li><a hidefocus="true" href="tabContents/GXD_Curators.shtml" rel="ajaxcontentarea">Our data policies</a></li>
+		<li><a hidefocus="true" href="tabContents/GXD_Help.shtml" rel="ajaxcontentarea">Help documents</a></li>
+		<li><a hidefocus="true" href="tabContents/GXD_Collaborators.shtml" rel="ajaxcontentarea">Contributors</a></li>
+		<li><a hidefocus="true" href="tabContents/GXD_Resources.shtml" rel="ajaxcontentarea">More links </a></li>
+	</ul>
+	<div id="ajaxcontentarea" class="contentstyle" style="color:#002255;">
+		<!--#include file='tabContents/GXD_About.shtml'-->
+	</div>
+	<script type="text/javascript">
+		//Start Ajax tabs script for UL with id="maintab". Separate multiple ids each with a comma.
+		startajaxtabs("maintab");
+	</script>
 </div>
 
 <!--#include file='include/templateBodyStop.html'-->
+
+</body>
+</html>

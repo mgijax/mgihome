@@ -1,0 +1,150 @@
+<!--#include file='include/templateHead.html'-->
+
+  <title><!--#include file="include/mgiversion.html"--> - Mouse Genome Informatics Biochemical Pathways Page</title>
+
+
+<!------------- AJAX TABS CALLS -------------------------------------------------------->
+
+<link rel="stylesheet" type="text/css" href="ajaxtabs.css" />
+<script type="text/javascript" src="ajaxtabs.js">
+	/***********************************************
+	* Ajax Tabs Content script- © Dynamic Drive DHTML code library (www.dynamicdrive.com)
+	* This notice MUST stay intact for legal use
+	* Visit Dynamic Drive at http://www.dynamicdrive.com/ for full source code
+	***********************************************/
+</script>
+
+<link rel="stylesheet" type="text/css" href="minihome.css" />
+
+<!--#include file='include/templateBodyStart.html'-->
+
+<!-- start body content -->
+
+<!-- mini homepage header section -->
+<div id="headerWrapper">
+    <div id="imageWrapper">
+        <div class="blueBorder pad5 small">
+            <img src="images/Path_YP19146_big.gif" alt="YP19146" />
+            <img src="images/Path_YP20593_big.gif" alt="YP20593" /><br />
+			<em>Pathway glyphs overlayed with experimental data</em>
+        </div>
+    </div>
+	<div id="homePageTitleWrapper">
+	    <span class="homePageTitle">
+			Biochemical Pathways
+	    </span>
+	    <br>
+		<span class="homePageSubTitle">
+			MouseCyc is a database of curated biochemical pathways data for the
+			laboratory mouse that can be integrated with functional and
+			phenotypic data from MGI.
+		</span>
+	</div>
+</div>
+
+<!-- 3 box section -->
+<div id="boxWrapper">
+	<div class="boxLeftWrap marginBottom">
+		<!-- Left box: 'What can I do here?' -->
+		<div class="blueBorder">
+			<div class="boxTitle">
+				What can I do here?
+			</div>
+			<!-- 'What can I do here?'content -->
+			<!-- The content is in a definition list <dl> where the descriptive text
+			is in the term <dt>, and the link is in the definition <dd> -->
+			<div class="boxBG pad5">
+				<dl class="boxList">
+					<dt class="whatList"><a class="homeLink" href="http://ella.jax.org:8000/MOUSE/class-tree?object=Pathways">Browse the pathway ontology</a> in the MouseCyc database</dt>
+					<dt class="whatList"><a class="homeLink" href="http://ella.jax.org:8000/MOUSE/class-instances?object=Pathways">Browse all pathways</a> represented in MouseCyc</dt>
+					<dt class="whatList">Browse a list of <a class="homeLink" href="http://ella.jax.org:8000/MOUSE/class-instances?object=Genes">all genes in MouseCyc</a></dt>
+					<dt class="whatList">Browse a list of <a class="homeLink" href="http://ella.jax.org:8000/MOUSE/class-instances?object=Proteins">all proteins in MouseCyc</a> according to their activity</dt>
+					<dt class="whatList">Browse a list of <a class="homeLink" href="http://ella.jax.org:8000/MOUSE/class-instances?object=Compounds">all compounds represented in MouseCyc</a></dt>
+					<dt class="whatList"><a class="homeLink" href="http://ella.jax.org:8000/expression.html">Overlay experimental data onto the Pathway Tools Omics Viewer</a></dt>
+					<dt class="whatList"><a class="homeLink" href="http://ella.jax.org:8000/MOUSE/NEW-IMAGE?type=OVERVIEW&force=t">Generate a mouse metabolic map</a></dt>
+				</dl>
+			</div>
+		</div>
+    </div>
+
+	<div class="boxRightWrap">
+		<!-- Right-top box: FAQs -->
+		<div class="blueBorder marginBottom">
+			<div class="boxTitle">
+				FAQs
+			</div>
+
+			<!-- FAQs content -->
+			<!-- The content is in a definition list <dl> where the list title is in
+			the term <dt>, and FAQ question is in the definition <dd>. Note the link
+			uses a javascript function to open a separate window;
+			javascript:openFaqWindow("faqPage.shtml")'-->
+			<div class="boxBG pad5">
+				<dl class="boxList">
+					<dt>How do I ...</dt>
+					<dd class="faqList">.. see a list of all pathways in MouseCyc? <a class="small homeLink" href='javascript:openFaqWindow("faqPage.shtml")'>FAQ</a></dd>
+					<dd class="faqList">.. search MouseCyc for a specific compound? <a class="small homeLink" href='javascript:openFaqWindow("faqPage.shtml")'>FAQ</a></dd>
+					<dd class="faqList">.. display my mouse gene expression data in the context of mouse pathways? <a class="small homeLink" href='javascript:openFaqWindow("faqPage.shtml")'>FAQ</a></dd>
+					<dd class="faqList">.. compare mouse pathways to human pathways? <a class="small homeLink" href='javascript:openFaqWindow("faqPage.shtml")'>FAQ</a></dd>
+				</dl>
+
+				<!-- link to all FAQs page -->
+				<a class="small homeLink" href="<!--#include file='include/faq_url.html'-->">More FAQs</a>
+			</div>
+		</div>
+
+		<!-- Right-bottom box: Stats -->
+		<!--#include file='stats/path_stats.shtml'-->
+
+	</div>
+</div>
+
+<!-- News box -->
+<!------------------------------ NO NEWS BOX FOR BIOCHEMICAL PATHWAYS MINI-HOME PAGE --------------------------
+	<div class="boxWide blueBorder marginBottom">
+	<div class="boxTitle">
+
+		<!-- Box-title goes here -->
+<!--		<div class="left">Box title left</div>
+		<div class="right">Box title right (date)</div>
+
+	</div>
+-->	<!-- News content -->
+<!--	<div class="boxBG pad5 small">
+
+		There is some news to insert here.
+-->		<!-- link to more news page -->
+<!--		<a class="small homeLink" href="#">More news</a>
+
+	</div>
+</div>-->
+
+<!-- Tabs box -->
+<div class="boxWide marginBottom">
+
+	<!-- This is where the tabbed section is defined. -->
+	<ul id="maintab" class="shadetabs">
+		<!-- This is where the tabbed section is defined. -->
+		<li class="selected"><a hidefocus="true" href="tabContents/Pathways_About.html" rel="ajaxcontentarea">About MouseCyc</a></li>
+		<li><a hidefocus="true" href="tabContents/Pathways_help.html" rel="ajaxcontentarea">Help documents</a></li>
+		<li><a hidefocus="true" href="tabContents/Pathways_collaborators.html" rel="ajaxcontentarea">Collaborators</a></li>
+		<li><a hidefocus="true" href="tabContents/Pathways_resources.html" rel="ajaxcontentarea">Other links</a></li>
+	</ul>
+
+	<!-- this is where the tab text gets inserted by javascript -->
+	<div id="ajaxcontentarea" class="contentstyle" style="color:#002255;">
+
+		<!-- text for default selected tab inserted here as an include -->
+		<!--#include file='tabContents/Pathways_About.html'-->
+
+	</div>
+	<script type="text/javascript">
+		//Start Ajax tabs script for UL with id="maintab". Separate multiple ids each with a comma.
+		startajaxtabs("maintab");
+	</script>
+</div>
+
+<!--#include file='include/templateBodyStop.html'-->
+
+</body>
+</html>

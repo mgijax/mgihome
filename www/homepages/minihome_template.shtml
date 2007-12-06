@@ -25,7 +25,7 @@
     <div id="imageWrapper">
         <div class="blueBorder pad5">
 			<a HREF="<!--#include file='include/mouseblast_url.html'-->">
-				<img class="outlineImg" src="images/OrtholCartoonSmallerDNA.png" alt="Orthology" name="Orthology" height="80" border="0" style="background-color:#FFFFFF; margin:0px; padding:5px;">
+				<img src="Images/OrtholCartoonSmallerDNA.png" alt="Orthology" name="Orthology" height="80" border="0" style="background-color:#FFFFFF; margin:0px; padding:5px;">
 			</a>
         </div>
     </div>
@@ -54,13 +54,13 @@
 			is in the term <dt>, and the link is in the definition <dd> -->
 			<div class="boxBG pad5">
 				<dl class="boxList">
-					<dt class="whatList"><a href="<!--#include file='include/wi_url.html'-->searches/homology_form.shtml" class="homeLink">Search for  orthologs</a>
+					<dt class="whatList"><a href="<!--#include file='include/wi_url.html'-->searches/homology_form.shtml" class="GO">Search for  orthologs</a>
 						between two species using marker symbol or  name, accession ID, chromosomal location, author or reference ID.</dt>
-					<dt class="whatList"><a href="<!--#include file='include/java_url.html'-->WIFetch?page=pirsfVocab&subset=A" class="homeLink">Search for gene family data</a>
+					<dt class="whatList"><a href="<!--#include file='include/java_url.html'-->WIFetch?page=pirsfVocab&subset=A" class="GO">Search for gene family data</a>
 						by the Protein Information Resource SuperFamily  classification names.</dt>
-					<dt class="whatList"><a href="<!--#include file='include/wi_url.html'-->searches/linkmap_form.shtml" class="homeLink">Build a Mouse Linkage Map with Orthologs</a>.</dt>
-					<dt class="whatList">View the <a href="<!--#include file='include/wi_url.html'-->www/reports/homologymap/mouse_human.shtml" class="homeLink">Mouse-Human</a>
-						or <a href="<!--#include file='include/wi_url.html'-->reports/homologymap/mouse_rat.shtml" class="homeLink">Mouse-Rat</a> comparative genome map.</dt>
+					<dt class="whatList"><a href="<!--#include file='include/wi_url.html'-->searches/linkmap_form.shtml" class="GO">Build a Mouse Linkage Map with Orthologs</a>.</dt>
+					<dt class="whatList">View the <a href="<!--#include file='include/wi_url.html'-->www/reports/homologymap/mouse_human.shtml" class="GO">Mouse-Human</a>
+						or <a href="<!--#include file='include/wi_url.html'-->reports/homologymap/mouse_rat.shtml" class="GO">Mouse-Rat</a> comparative genome map.</dt>
 				</dl>
 			</div>
 		</div>
@@ -81,13 +81,13 @@
 			<div class="boxBG pad5">
 				<dl class="boxList">
 					<dt>How do I...</dt>
-					<dd class="faqList">.. view a comparative map of mouse and human chromosomes? <a class="small homeLink" href='javascript:openFaqWindow("faqPage.shtml")'>FAQ</a></dd>
-					<dd class="faqList">.. search or browse PIRSF protein superfamilies mapped to mouse, human, and rat genes? <a class="small homeLink" href='javascript:openFaqWindow("faqPage.shtml")'>FAQ</a></dd>
-					<dd class="faqList">.. find the mouse ortholog of a human gene? <a class="small homeLink" href='javascript:openFaqWindow("faqPage.shtml")'>FAQ</a></dd>
+					<dd class="faqList">.. view a comparative map of mouse and human chromosomes? <a class="small GO" href='javascript:openFaqWindow("faqPage.shtml")'>FAQ</a></dd>
+					<dd class="faqList">.. search or browse PIRSF protein superfamilies mapped to mouse, human, and rat genes? <a class="small GO" href='javascript:openFaqWindow("faqPage.shtml")'>FAQ</a></dd>
+					<dd class="faqList">.. find the mouse ortholog of a human gene? <a class="small GO" href='javascript:openFaqWindow("faqPage.shtml")'>FAQ</a></dd>
 				</dl>
 
 				<!-- link to all FAQs page -->
-				<a class="small homeLink" href="<!--#include file='include/faq_url.html'-->">More FAQs</a>
+				<a class="small GO" href="<!--#include file='include/faq_url.html'-->">More FAQs</a>
 			</div>
 		</div>
 
@@ -112,7 +112,7 @@
 			<li>Links to TreeFam are now available from Orthology pages</li>
 		</ul>
 		<!-- link to more news page -->
-		<a class="small homeLink" href="#">More news</a>
+		<a class="small GO" href="#">More news</a>
 
 	</div>
 </div>
