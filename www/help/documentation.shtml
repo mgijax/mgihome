@@ -1,40 +1,17 @@
+
+
+
 <!--#include file='include/templateHead.html'--> 
 <title><!--#include file='include/mgiversion.html'--> - Documentation</title>
 
 <!--#include file='include/templateBodyStart.html'--> 
 
-<h2 id="titleBar">Documentation</h2>
 
-
-
-
-
-
-<HTML>
-<HEAD>
-<TITLE><!--#include file='include/mgiversion.html'--> </TITLE>
-<!--#include file="include/stylesheet.html"-->
-</HEAD>
-<BODY>
-<!--#include file="include/bodyStart.html"-->
- <TABLE WIDTH="100%" BORDER=0 CELLPADDING=2 CELLSPACING=1>
- <TR>
-  <TD WIDTH="100%" BGCOLOR="#D0E0F0">
-   <TABLE WIDTH="100%" BORDER=0 CELLPADDING=0 CELLSPACING=0>
-    <TR>
-     <TD WIDTH="20%" VALIGN="center" ALIGN="left">&nbsp;</TD>
-     <TD WIDTH="60%" ALIGN="center" VALIGN="center">
-      <FONT COLOR="black" SIZE=5 FACE="Arial,helvetica">
-Documentation
-      </FONT>
-
-     </TD>
-     <TD WIDTH="20%" VALIGN="center" ALIGN="center">&nbsp;</TD>
-    </TR>
-   </TABLE>
-  </TD>
- </TR>
-</TABLE>
+<!-- Title Bar -->
+  <div id="titleBarWrapper">
+  <span class="titleBarMainTitle"> Documentation </span>
+  </div> 
+<!--titleBar-->
 
 <p>Mouse Genome Informatics provides help desk staff to answer your questions and comments. On-line help is available as well.
 
@@ -60,6 +37,8 @@ Phone: (207) 288-6445<br>
 <DD><a href="<!--#include file='include/userdocs_url.html'-->accession_help.shtml">Accession IDs</A></dd>
 <dd><a href="<!--#include file='include/userdocs_url.html'-->ama_browser_help.shtml">Adult Mouse Anatomical Dictionary Browser</a></dd>
 <DD><a href="<!--#include file='include/userdocs_url.html'-->estclone_help.shtml">cDNA Clone</A></dd>
+<DD><a href="<!--#include file='include/userdocs_url.html'-->batch_qf_help.shtml">Batch Query</A></dd>
+
 <DD><a href="<!--#include file='include/userdocs_url.html'-->expression_help.shtml">Gene Expression Data</A></dd>
 <dd><A HREF="<!--#include file='include/userdocs_url.html'-->gxd_expanded_help.shtml">Gene Expression Data Expanded</A></dd>
 <DD><a href="<!--#include file='include/userdocs_url.html'-->marker_help.shtml">Genes and Markers</A></dd>
@@ -74,12 +53,13 @@ Phone: (207) 288-6445<br>
 <DD><A HREF="<!--#include file='include/userdocs_url.html'-->mblast_overview.shtml">MouseBLAST</A></DD>
 <DD><A HREF="<!--#include file='include/userdocs_url.html'-->anatdict_help.shtml">Mouse Anatomical Dictionary Browser</A></dd>
 <dd><a href="<!--#include file='include/userdocs_url.html'-->snp_help.shtml">Mouse SNP Query Form</a></DD>
-<dd><a href="<!--#include file='include/userdocs_url.html'-->sequence_help.shtml">Mouse Sequence Query Form</a></DD>
 <DD><a href="<!--#include file='include/userdocs_url.html'-->oxfordgrid_help.shtml">Oxford Grid</A></dd>
 <DD><a href="<!--#include file='include/userdocs_url.html'-->allele_help.shtml">Phenotypes and Alleles</A><BR>
 <dd><a href="<!--#include file='include/userdocs_url.html'-->pirsf_browser_help.shtml">Protein Superfamily Browser</a></dd>
 <DD><a href="<!--#include file='include/userdocs_url.html'-->reference_help.shtml">References</A></DD></dd>
 <DD><a href="<!--#include file='include/userdocs_url.html'-->polymorphism_help.shtml">RFLP/PCR Polymorphism</A><BR>
+<dd><a href="<!--#include file='include/userdocs_url.html'-->sequence_help.shtml">Sequence Query Form</a></DD>
+
 </DL>
 
 <!--#include file='include/templateBodyStop.html'--> 
