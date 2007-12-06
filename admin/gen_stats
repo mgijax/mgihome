@@ -84,12 +84,13 @@ def getStatsForMinihome(group, name, display, link):
 	
 	file = open(INCLUDEDIR +name, "w")
         
-        file.write('<table class="grayBG" border="0" cellpadding="2" cellspacing="0" width="100%">')
-        file.write('<tr>')
-        file.write('<td class="boxHead" style="align: left"><strong>'+ display +'</strong></td>')
-        file.write('<td class="boxHead" style="align: right">'+datetime+'</td>')
-        file.write('</tr><tr><td>')
-	file.write('<table cellpadding="3">')
+        file.write('<div class="blueBorder">')
+        file.write('<div class="boxTitle">')
+        file.write('	<div class="left">'+ display +'</div>')
+        file.write('	<div class="right">'+datetime+'</div>')
+        file.write('</div>')
+	file.write('<div class="boxBG pad5 small">')
+	file.write('<dl class="statList">')
 	for stat in statistics:
 		m = stat.getLatestMeasurement()
 		if not m:
@@ -98,14 +99,12 @@ def getStatsForMinihome(group, name, display, link):
 		    mVal = m.getIntValue()
 		else:
 		    mVal = '%1.3f' % m.getFloatValue()
-		file.write('<tr><td class="smaller" align="right">' + str(number_format(mVal)) + '</td><td class="smaller">' + stat.getName() + '</td></tr>\n') 
-	file.write('<tr>')
-	file.write('<td colspan="2" class="smaller"> <a href="<!--#include file="include/mgihome_url.html"-->homepages/stats/all_stats.shtml'+ link +'">More statistics</a></td>')
-        file.write('</tr>')
-	file.write('</table>')
-        file.write('</td>')
-        file.write('</tr>')
-        file.write('</table>')	
+		file.write('<dt>' + str(number_format(mVal)) + '</dt>')
+		file.write('<dd>' + stat.getName() + '</dd>\n') 
+	file.write('</dl>')
+	file.write('<a class="GO" href="<!--#include file="include/mgihome_url.html"-->homepages/stats/all_stats.shtml'+ link +'">More statistics</a>')
+        file.write('</div>')
+	file.write('</div>')
 	file.close()
 
 def getStatsForAllStatsPage(group, name, display):
@@ -115,12 +114,13 @@ def getStatsForAllStatsPage(group, name, display):
 	temp_anchor = name.split('.')
 	
 	file = open(INCLUDEDIR +name, "w")
-        file.write('<a name="'+ temp_anchor[0]+'">')
-        file.write('<table class="grayBG" border="0" cellpadding="2" cellspacing="0" width="100%">')
-        file.write('<tr>')
-        file.write('<td class="enhance" style="align: left"><strong>'+ display +'</strong></td>')
-        file.write('</tr><tr><td>')
-	file.write('<table cellpadding="3" width="100%">')
+        file.write('<a name="'+ temp_anchor[0]+'"></a>\n')
+        file.write('<div class="blueBorder">')
+        file.write('<div class="boxTitle">')
+        file.write('<div class="left">'+ display +'</div>')
+        file.write('</div>')
+	file.write('<div class="boxBG pad5 small">')
+	file.write('<dl class="statList">')
 	for stat in statistics:
 		m = stat.getLatestMeasurement()
 		if not m:
@@ -129,11 +129,10 @@ def getStatsForAllStatsPage(group, name, display):
 		    mVal = m.getIntValue()
 		else:
 		    mVal = '%1.3f' % m.getFloatValue()
-		file.write('<tr><td class="smaller" align="right" width="10%">' + str(number_format(mVal)) + '</td><td class="smaller" align="left" width="90%">' + stat.getName() + '</td></tr>\n') 
-	file.write('</table>')
-        file.write('</td>')
-        file.write('</tr>')
-        file.write('</table>')	
+		file.write('<dt>' + str(number_format(mVal)) + '</dt><dd>' + stat.getName() + '</dd>\n') 
+	file.write('</dl>')
+        file.write('</div>')
+        file.write('</div>')
 	file.close()
 
 
