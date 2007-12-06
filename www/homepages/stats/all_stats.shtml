@@ -3,6 +3,7 @@
   <title><!--#include file="include/mgiversion.html"-->What's in MGI?</title>
 
   <link rel="stylesheet" type="text/css" href="homepage.css"/>
+  <link rel="stylesheet" type="text/css" href="../minihome.css"/>
 
 <!--#include file='include/templateBodyStart.html'-->
 
@@ -52,6 +53,7 @@ Note that the list in each section is a definition list <dl> where the term
 						<li><a href="#allstats_pheno">Phenotypes, Alleles &amp; Disease Models</a> | </li>
 						<li><a href="#allstats_gxd">Gene Expression</a> | </li>
 						<li><a href="#allstats_go">GO Functional Annotations</a> | </li>
+						<li><a href="#allstats_paths">Biochemical Pathways</a> | </li>
 						<li><a href="#allstats_snp">Strains, SNPs &amp; Polymorphisms</a> | </li>
 						<li><a href="#allstats_ortho">Mammalian Orthology</a> | </li>
 						<li><a href="#allstats_seq">Sequences</a> | </li>
@@ -62,91 +64,39 @@ Note that the list in each section is a definition list <dl> where the term
 	</td></tr>
 
 	<tr><td>
-		<!-- section1 table -->
-		<table class="outline" width="100%">
-			<tr>
-			<td>
 			<!--#include file='allstats_markers.shtml'-->
-			</td>
-			</tr>
-		</table>
 	</td></tr>
 
 	<tr><td>
-		<!-- section1 table -->
-		<table class="outline" width="100%">
-			<tr>
-			<td>
 			<!--#include file='allstats_pheno.shtml'-->
-			</td>
-			</tr>
-		</table>
 	</td></tr>
 
 	<tr><td>
-		<!-- section1 table -->
-		<table class="outline" width="100%">
-			<tr>
-			<td>
 			<!--#include file='allstats_gxd.shtml'-->
-			</td>
-			</tr>
-		</table>
 	</td></tr>
 
 	<tr><td>
-		<!-- section1 table -->
-		<table class="outline" width="100%">
-			<tr>
-			<td>
 			<!--#include file='allstats_go.shtml'-->
-			</td>
-			</tr>
-		</table>
 	</td></tr>
 
 	<tr><td>
-		<!-- section1 table -->
-		<table class="outline" width="100%">
-			<tr>
-			<td>
+			<!--#include file='allstats_paths.shtml'-->
+	</td></tr>
+
+	<tr><td>
 			<!--#include file='allstats_snp.shtml'-->
-			</td>
-			</tr>
-		</table>
 	</td></tr>
 
 	<tr><td>
-		<!-- section1 table -->
-		<table class="outline" width="100%">
-			<tr>
-			<td>
 			<!--#include file='allstats_ortho.shtml'-->
-			</td>
-			</tr>
-		</table>
 	</td></tr>
 
 	<tr><td>
-		<!-- section1 table -->
-		<table class="outline" width="100%">
-			<tr>
-			<td>
 			<!--#include file='allstats_seq.shtml'-->
-			</td>
-			</tr>
-		</table>
 	</td></tr>
 
 	<tr><td>
-		<!-- section1 table -->
-		<table class="outline" width="100%">
-			<tr>
-			<td>
 			<!--#include file='allstats_ref.shtml'-->
-			</td>
-			</tr>
-		</table>
 	</td></tr>
 
 </table>
