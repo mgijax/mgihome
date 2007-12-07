@@ -3,193 +3,87 @@
 <title><!--#include file="include/mgiversion.html"--> - Mouse Genome Informatics Homepage</title>
 
 <!-- Home Page Specific Css -->
-
 <link rel="stylesheet" type="text/css" href="<!--#include file="include/mgihome_url"-->homepages/homepage.css"/>
+<link rel="stylesheet" type="text/css" href="minihome.css" />
 
-<!--#include file='include/templateBodyStart.html'-->
+<!--#include file='include/templateHomePageBodyStart.html'-->
+
+<div id="homePageBodyInsert">
+
+  <div style="height:4px;"></div>
 
 
-<body>
-<table width="100%" style="background-color:#FFFFFF">
-<tr> <!-- Page Header Title Bar -->
-<td>
-	<table width="100%">
-	<tr>
-		  <td class="homeTitleBar">
-			  <b>Mouse Genome Informatics</b>
-			</font>
-	      </td>
-	</tr>
-
-	</table>
-</td>
-</tr>
-
-<tr> <!-- Tagline specific to the mini-Homepage group -->
-<td bgcolor="#FFFFFF">
-<div class="homeTagline" >Providing integrated genetic, genomic, and biological data on the laboratory mouse, a key model for the study of human health and disease.</div>
+  <div class="blueBorder mgiDescription">
+    MGI is the international database resource for the laboratory mouse, providing
+    integrated genetic, genomic, and biological data to facilitate the study of
+    human health and disease.
   </div>
-</td>
-</tr>
-</table>
+  <div class="boxTitle">
+    <span class="left">Explore MGI</span>
+    <span class="right">All Search Tools</span>
+  </div>
 
 
-<div style="background-color:#FFFFFF; margin: 0px; position:relative; top:0px;">
-<table width="100%" cellpadding="0" cellspacing="0">
+  <div class="blueBorder ">
+<table border="0" cellpadding="1" cellspacing="0" width="100%">
 <tr>
-  <td align="left" valign="center" colspan="3" style="text-align:center;">
-<div style="position:relative; top:0px;">
-  <table width="!" align="center" bgcolor="#DFDFDF">
-
-    <tr>
-      <td>
-        <table width="!" border="0" cellspacing="1" cellpadding="2">
-          <tr>
-            <td align="center" valign="bottom" class="grayBG imageHeader">
-              <a href="homepage_mini_PAD.shtml" class="homePageBody">&nbsp;Disease Models&nbsp;</a>
-            </td>
-            <td align="center" valign="bottom" class="grayBG imageHeader">
-              <a href="homepage_mini_GXD.shtml" class="homePageBody">&nbsp;&nbsp;&nbsp;&nbsp;Gene Expression&nbsp;&nbsp;&nbsp;&nbsp;</a>
-            </td>
-            <td align="center" valign="bottom" class="grayBG imageHeader">
-              <a href="homepage_mini_Genes.shtml" class="homePageBody">&nbsp;Gene Models&nbsp;</a>
-            </td>
-            <td align="center" valign="bottom" class="grayBG imageHeader">
-              <a href="homepage_mini_GO.shtml" class="homePageBody">&nbsp;Functional&nbsp;Annotations&nbsp;</a>
-
-            </td>
-            <td align="center" valign="bottom" class="grayBG imageHeader">
-              <a href="homepage_mini_Strain.shtml" class="homePageBody"> SNPs &nbsp;</a>
-            </td>
-            </tr>
-            <tr>
-            <td align="center" valign="middle" class="grayBG imageHeader"><img src="<!--#include file="include/mgihome_url.html"-->homepages/images/mouseModel150.jpg" alt="-" height="90" border="1" class="thumb">
-
-          </td>
-
-            <td align="center" valign="middle" class="grayBG imageHeader">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="<!--#include file="include/mgihome_url.html"-->homepages/images/expression150.jpg" alt="-" class="thumb" border="1" height="90">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-
-            </td>
-            <td align="center" valign="middle" class="grayBG imageHeader"><img src="<!--#include file="include/mgihome_url.html"-->homepages/images/GBrowseEppk1.jpg" alt="GBrowse" height="90" border="1">
-
-            </td>
-            <td align="center" valign="middle" class="grayBG imageHeader"><img src="<!--#include file="include/mgihome_url.html"-->homepages/images/GOgraphFas100.jpg" alt="-" border="1" height="90">
-
-            </td>
-
-            <td align="center" valign="middle" class="grayBG imageHeader"><img src="<!--#include file="include/mgihome_url.html"-->homepages/images/SNPsnip.jpg" alt="SNP" height="90" border="1">
-
-            </td>
-            </tr>
-        </table>
-      </td>
-    </tr>
-
-  </table>
-</div>
-</td>
-</tr>
-</table>
-
-<!------------------------------------------------------ images ZONE END --------------------------------------------------->
-
-<div style="position:relative; top:0px;">
-<table width="100%" border="0" cellpadding="2"> <!--body table-->
-<tr valign="top">
-
-<!-- left column -->
-<td width="50%">
-<!--------------------------------------------------------- BEGIN HOW DO I BLOCK ---------------------------------------------------->
-
-  <table cellpadding="1" bgcolor="#d0e0f0" width="100%" >
-    <tr>
-      <td>
-        <table width="100%" border="0" cellpadding="2" cellspacing="0" class="grayBG">
-          <tr>
-            <td class="boxHead"><strong>How do I...</strong></td>
-          </tr>
-          <tr >
-
-            <td style="font-size:12px;">
-			<table width="100%" border="0" cellspacing="1" cellpadding="3">
-  <tr>
-    <td width="9">&nbsp;</td>
-    <td valign="bottom">.. find polymorphic differences  between strains?&nbsp;<a href="<!--#include file="include/mgihome_url.html"-->homepages/underConstruction.shtml" class="smaller homePageBody">Learn</a></td>
-    </tr>
-  <tr>
-    <td width="9">&nbsp;</td>
-
-    <td valign="bottom">.. find genes expressed in a specific tissue during development?&nbsp;<a href="<!--#include file="include/faq_url.html"-->GXD_GeneTissue.shtml" class="smaller homePageBody">Learn</a></td>
-    </tr>
-
-  <tr>
-    <td width="9">&nbsp;</td>
-    <td valign="bottom">.. find candidate genes for a given phenotype and in a specific genome location?&nbsp;<a href="<!--#include file="include/mgihome_url.html"-->homepages/underConstruction.shtml" class="smaller homePageBody">Learn</a></td>
-    </tr>
-  <tr>
-
-    <td width="9">&nbsp;</td>
-    <td valign="bottom">
-      <div style="display:inline; float:left;">..  find mouse models for a particular disease?&nbsp;</div>
-      <a href="<!--#include file="include/faq_url.html"-->PAD_disease.shtml" class="smaller homePageBody">Learn</a></td>
-    </tr>
-</table>
-              <a href="<!--#include file="include/faq_url.html"-->FAQ.shtml" class="homePageBody">More FAQs </a>
-          </tr>
-
-        </table>
-      </td>
-    </tr>
-  </table>
-</td><!-- end left column -->
-
-
-<!-- right column -->
-<!--------------------------------------------------------- BEGIN STATS BLOCK ---------------------------------------------------->
-
-<td style="vertical-align:top">
-  <table cellpadding="1" bgcolor="#d0e0f0" width="100%" >
-    <tr>
-      <td>
-		<!--#include file="stats/homepage_stats.shtml"-->
-      </td>
-    </tr>
-  </table>
-</td>
+  <td class="grayBG homePageImageLabel" width="25%">
+    <a class="GO" href="<!--#include file='include/mgihome_url.html'-->homepages/homepage_mini_Genes.shtml">
+    Genes, Genome<br>Features &amp; Maps</a>
+  </td>
+  <td class="grayBG homePageImageLabel" width="25%">
+    <a class="GO" href="<!--#include file='include/mgihome_url.html'-->homepages/homepage_mini_PAD.shtml">
+    Phenotypes, Alleles<br>&amp; Disease Models</a>
+  </td>
+  <td class="grayBG homePageImageLabel" width="25%">
+    <a class="GO" href="<!--#include file='include/mgihome_url.html'-->homepages/homepage_mini_GXD.shtml">
+    Gene Expression</a>
+  </td>
+  <td class="grayBG homePageImageLabel" width="25%">
+    <a class="GO" href="<!--#include file='include/mgihome_url.html'-->homepages/homepage_mini_GO.shtml">
+    GO Functional Annotations</a>
+  </td>
 </tr>
 <tr>
-
-<td colspan="2">
-
-<!--------------------------------------------------------- BEGIN NEWS BLOCK ---------------------------------------------------->
-
-  <table cellpadding="1" bgcolor="#d0e0f0" width="100%" >
-    <tr>
-      <td>
-        <table width="100%" border="0" cellpadding="2" cellspacing="0" class="grayBG">
-          <tr>
-            <td class="boxHead"><strong>  MGI <strong>News</strong></strong></td>
-
-          </tr>
-          <tr >
-            <td style="font-size:12"> <span class="smaller"><strong>Release 4.0: 14 Nov 2007</strong></span>
-                <ul class="smaller" style="line-height:1.3;">
-                  <li> We've redesigned our <strong>homepage and site-wide navigation</strong>, and created informative &quot;mini-homepages&quot; for each of our biological domain areas. <a href="<!--#include file='include/mgihome_url.html'-->news/whatsnew.shtml" class="homePageBody">See what's new.</a> Love it? Hate it? <a href="<!--#include file="include/mgihome_url.html"-->support/tjl_inbox.shtml" class="homePageBody">Please send us your thoughts!</a>
-
-                  <li>A <a href="<!--#include file='include/mgihome_url.html'-->news/whatsnew.shtml" class="homePageBody"><strong> new GXD report</strong></a> features expression images associated with  each gene/marker </li>
-                  <li>MGI Mammalian Homology and Gene Detail pages now provide <a href="http://www.treefam.org/" class="homePageBody">links to associated records</a> in the <strong>TreeFam database</strong>.</li>
-                </ul>
-
-              <a href="<!--#include file='include/mgihome_url.html'-->news/whatsnew.shtml" class="smaller homePageBody">More news </a> </td>
-          </tr>
-        </table>
-      </td>
-    </tr>
-  </table>
-</td>
+    <td class="homePageImage" align="center" valign="middle" width="25%"><img src="images/homepage_GeneLogo.png" alt="GBrowse" style="border: 1px solid rgb(84, 112, 155);" height="75" width="154"></td>
+    <td class="homePageImage" align="center" valign="middle" width="25%"><img src="images/homepage_PhenoLogo.jpg" alt="Diseases &amp; Phenotypes" style="border: 1px solid rgb(84, 112, 155);" height="75" width="125"></td>
+    <td class="homePageImage" align="center" valign="middle" width="25%"><img src="images/homepage_GXDLogo.jpg" alt="GXD" style="border: 1px solid rgb(84, 112, 155);"></td>
+    <td class="homePageImage" align="center" valign="middle" width="25%"><img src="images/homepage_GOLogo.png" alt="functional annotations" style="border: 1px solid rgb(84, 112, 155);" height="75" width="146"></td>
 </tr>
+  <td class="grayBG homePageImageLabel">
+    <a class="GO" href="<!--#include file='include/mgihome_url.html'-->homepages/minihome_BioPath.shtml">
+    &nbsp;Biochemical Pathways&nbsp;</a>
+  </td>
+  <td class="grayBG homePageImageLabel">
+    <a class="GO" href="<!--#include file='include/mgihome_url.html'-->homepages/homepage_mini_Strain.shtml">
+    Strains, SNPs &amp; Polymorphisms</a>
+  </td>
+  <td class="grayBG homePageImageLabel">
+    <a class="GO" href="<!--#include file='include/mgihome_url.html'-->homepages/homepage_mini_Ortho.shtml">
+    Mammalian Orthology</a>
+  </td>
+  <td class="grayBG homePageImageLabel">
+    <a class="GO" href="<!--#include file='include/mtb_url.html'-->">
+    Mouse Tumor Biology</a>
+  </td>
+</tr>
+<tr>
+  <td class="homePageImage" align="center" valign="middle" width="25%"><img src="images/homepage_BioPathLogo.jpg" alt="-" style="border: 1px solid rgb(84, 112, 155);"></td>
+  <td class="homePageImage" align="center" valign="middle" width="25%"><img src="images/homepage_StrainLogo.png" alt="SNPs" style="border: 1px solid rgb(84, 112, 155);"></td>
+  <td class="homePageImage" align="center" valign="middle" width="25%"><img src="images/homepage_OrthoLogo.png" alt="Orthology" style="border: 1px solid rgb(84, 112, 155);" height="75" width="125"></td>
+  <td class="homePageImage" align="center" valign="middle" width="25%"><img src="images/homepage_MTBLogo.jpg" style="border: 1px solid rgb(84, 112, 155);" name="MTB"></td>
+</tr>
+
 </table>
+  </div>
+
+  <div style="height:4px;"></div>
+
+
+<!--#include file='include/templateHomePageBodyStop.html'-->
 
 </div>
+</body>
+</html>
 
-<!--#include file='include/templateBodyStop.html'-->
+
