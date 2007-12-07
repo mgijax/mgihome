@@ -24,7 +24,7 @@
 <div id="headerWrapper">
     <div id="imageWrapper">
         <div class="blueBorder pad5 small">
-			<a href="http://prodwww.informatics.jax.org/usrlocalmgi/live/wi/www/external/festing/search_form.cgi">
+			<a href="<!--#include file='include/wi_url.html'-->external/festing/search_form.cgi">
 				<img class="outlineImg" src="images/Fgfr3_GBrowse175.png" alt="-" height="150">
 			</a>
 			<br />
@@ -58,23 +58,25 @@
 			is in the term <dt>, and the link is in the definition <dd> -->
 			<div class="boxBG pad5">
 				<dl class="boxList">
-					<dt class="whatList"><a class="homeLink" href="http://prodwww.informatics.jax.org:4139/javawi2/servlet/WIFetch?page=markerQF">Search by symbol</a>,
-						location, gene ontology classification or phenotype.</dt>
-					<dt class="whatList"><a class="homeLink" href="a">Search for candidate genes</a> for a given phenotype within a
+					<dt class="whatList"><a class="homeLink" href="<!--#include file='include/java_url.html'-->WIFetch?page=markerQF">Search for genes and genome features</a>
+						by symbol, name, location, gene ontology classification or phenotype.</dt>
+					<dt class="whatList"><a class="homeLink" href="<!--#include file='include/java_url.html'-->WIFetch?page=markerQF">Search for candidate genes</a> for a given phenotype within a
 						genomic interval.</dt>
-					<dt class="whatList"><a class="homeLink" href="http://prodwww.informatics.jax.org:4139/javawi2/servlet/WIFetch?page=batchQF">Download data for a batch</a>
-						of gene IDs or symbols.</dt>
-					<dt class="whatList"><a class="homeLink" href="http://www.informatics.jax.org/mgihome/nomen/short_gene.shtml">Read the guidelines</a>
-						for mouse gene nomenclature.</dt>
-					<dt class="whatList"><a class="homeLink" href="http://www.informatics.jax.org/searches/sequence_form.shtml">Search for sequences</a>
+					<dt class="whatList"><a class="homeLink" href="<!--#include file='include/wi_url.html'-->searches/sequence_form.shtml">Search for sequences</a>
 						by mouse strain or biological attribute.</dt>
-					<dt class="whatList"><a class="homeLink" href="http://www.informatics.jax.org/searches/riset_form.shtml">Search MGI mapping data</a>
-						for recombinant inbred strain distribution patterns.</dt>
-					<dt class="whatList"><a class="homeLink" href="http://gbrowse.informatics.jax.org/cgi-bin/gbrowse/mouse_current/">Create a graphical display</a>
-						of genome features from regions of the mouse genome.</dt>
-					<dt class="whatList"><a class="homeLink" href="a">Search for sequence similarity</a> for mouse, human, or rat.</dt>
+					<dt class="whatList"><a class="homeLink" href="<!--#include file='include/mouseblast_url.html'-->">Use BLAST</a> to search for mouse genes and genome features using nucleotide or protein sequences.</dt>
+					<dt class="whatList">View <a class="homeLink" href="<!--#include file='include/wi_url.html'-->menus/allsearch_menu.shtml#maps">genetic and physical mapping data</a> including data from classical crosses,
+						RI and RC strain distribution patterns, DNA mapping panels, and radiation hybrid mapping resources.</dt>
+					<dt class="whatList">Create a <a class="homeLink" href="<!--#include file='include/wi_url.html'-->searches/linkmap_form.shtml">genetic map</a> or <a class="homeLink" href="http://gbrowse.informatics.jax.org/cgi-bin/gbrowse/mouse_current/">genomic map</a>
+						display of regions of the mouse genome.</dt>
+					<dt class="whatList"><a class="homeLink" href="<!--#include file='include/java_url.html'-->WIFetch?page=batchQF">Input a list of gene IDs or symbols</a>
+						and retrieve other database IDs and gene attributes (e.g. phenotypes, GO).</dt>
 					<dt class="whatList"><a class="homeLink" href="ftp://ftp.informatics.jax.org/pub/reports/index.html#marker">Download plain text files</a>
 						of all genes and markers in MGI.</dt>
+					<dt class="whatList"><a class="homeLink" href="<!--#include file='include/mgihome_url.html'-->nomen/short_gene.shtml">Read the guidelines</a>
+						for mouse gene nomenclature.</dt>
+					<dt class="whatList"><a class="homeLink" href="<!--#include file='include/wi_url.html'-->menus/allsubmitforms_menu.shtml">Submit a new gene or genome feature</a>
+						and receive official nomenclature and an MGI accession identifier (and bonus T-Shirt).</dt>
 				</dl>
 			</div>
 		</div>
