@@ -25,7 +25,7 @@
 <div id="headerWrapper">
     <div id="imageWrapper">
         <div class="blueBorder pad5">
-            <a href="javascript:FAQwindow()"><img class="outlineImg" src="images/GXDmini_image_150.jpg"></a>
+            <a href='javascript:openFaqWindow("GXD_imgpop.shtml")'><img class="outlineImg" src="images/GXDmini_image_150.jpg"></a>
         </div>
     </div>
 	<div id="homePageTitleWrapper">
@@ -78,7 +78,7 @@
 			<div class="boxBG pad5">
 				<dl class="boxList">
 					<dt>How do I...</dt>
-					<dd class="faqList">.. find expression data for a specific gene? <a class="small homeLink" href='javascript:openFaqWindow("GXD_Gene.shtml")'>FAQ</a></dd>
+					<dd class="faqList">.. find expression data for a specific gene? <a class="small homeLink" href='javascript:openFaqWindow("GXD_GeneTissue.shtml")'>FAQ</a></dd>
 					<dd class="faqList">.. find expression data for a tissue during development? <a class="small homeLink" href='javascript:openFaqWindow("GXD_tissue_dev.shtml")'>FAQ</a></dd>
 					<dd class="faqList">.. find genes expressed in one tissue but not another? <a class="small homeLink" href='javascript:openFaqWindow("GXD_comp_tissue.shtml")'>FAQ</a></dd>
 					<dd class="faqList">.. find references that report expression data for a gene at a specific age? <a class="small homeLink" href='javascript:openFaqWindow("GXD_ref_age.shtml")'>FAQ</a></dd>
