@@ -1,17 +1,38 @@
+.mgiDescription {
+    padding: 4px 10px; 
+    position: relative; 
+    line-height: 1.5;
+    text-align: center;
+    color: #002255;
+    font-size: 12px;
+    font-style: italic;
+}
+.homePageImageLabel {
+    font-size:12px;
+    font-weight:bold;
+    text-align: center;
+    vertical-align:bottom;
+}
+.homePageImage {
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
     #headerWrapper {
-    	clear:both;
-		position:relative;
-		z-index:3;
-		margin:10px 30px 0px 30px;
-		min-width:700px;
+        clear:both;
+        position:relative;
+        z-index:3;
+        margin:10px 30px 0px 30px;
+        min-width:700px;
     }
 
-	#homePageTitleWrapper {
-		position:relative;
-		text-align: center;
-		padding-top:45px;
-		z-index:1;
-	}
+    #homePageTitleWrapper {
+        position:relative;
+        text-align: center;
+        padding-top:45px;
+        z-index:1;
+    }
 
     .homePageTitle {
         font-size:22px;
@@ -26,7 +47,7 @@
     }
 
     #imageWrapper {
-    	position:relative;
+        position:relative;
         float:right;
         text-align:center;
         z-index:2;
@@ -34,17 +55,17 @@
         margin-bottom:15px;
     }
     
-	.imgCenter {
-		float:left;
-		text-align:center;
+    .imgCenter {
+        float:left;
+        text-align:center;
     }
 
     .blueBorder {
         border: 2px solid #DFEFFF;
     }
 
-	.pad5 {
-		padding:.5em;
+    .pad5 {
+        padding:.5em;
     }
 
    .outlineImg {
@@ -52,17 +73,17 @@
     }
 
     #boxWrapper {
-    	clear:both;
+        clear:both;
         position:relative;
         margin:30px;
         min-width:700px;
     }
 
     .boxLeftWrap {
-    	position:relative;
-    	float:left;
-		padding-right:5px;
-		margin-right:50%;
+        position:relative;
+        float:left;
+        padding-right:5px;
+        margin-right:50%;
     }
 
     .boxBG{
@@ -71,40 +92,40 @@
     }
 
     .marginBottom {
-    	margin-bottom:20px;
+        margin-bottom:20px;
     }
 
     .boxRightWrap {
-    	position:absolute;
-    	top:0;
-    	right:0;
-		padding-left:5px;
-	    margin-left:50%;
+        position:absolute;
+        top:0;
+        right:0;
+        padding-left:5px;
+        margin-left:50%;
     }
 
     .boxTitle {
         color: #002255;
-	    font-weight: bold;
-	    height:14px;
-	    background-color:#D0E0F0;
-	    font-size:12px;
-	    padding:3px;
+        font-weight: bold;
+        height:14px;
+        background-color:#D0E0F0;
+        font-size:12px;
+        padding:3px;
     }
 
     .boxWide {
-    	clear:both;
-    	height:auto;
+        clear:both;
+        height:auto;
         position:relative;
         margin:15px 30px 0px 30px;
     }
 
     dl {
-    	margin-top:0px;
-    	margin-bottom:1em;
+        margin-top:0px;
+        margin-bottom:1em;
     }
     
     dt.whatList {
-    	margin-bottom:1em;
+        margin-bottom:1em;
     }
 
     dd.searchList {
@@ -112,31 +133,31 @@
     }
 
     .statList {
-    	margin-top:0px;
-    	margin-bottom:1em;
-    	display: inline;
+        margin-top:0px;
+        margin-bottom:1em;
+        display: inline;
     }
 
     .statList dt {
-    	float:left;
-    	text-align:right;
-    	margin-right:1em;
+        float:left;
+        text-align:right;
+        margin-right:1em;
         width:7em;
     }
 
     .statList dd {
-    	margin-bottom:.5em;
+        margin-bottom:.5em;
         margin-left:7em;
     }
 
     .left {
-    	float:left;
+        float:left;
         text-align:left;
     }
 
-	.right {
-		float:right;
-		text-align:right;
+    .right {
+        float:right;
+        text-align:right;
     }
 
     .searchList a {
@@ -150,65 +171,65 @@
     }
 
     .clear {
-    	clear:both;
+        clear:both;
         position:relative;
     }
     
-	.outerGOWrap {
-		position:relative;
-		height:235px;
-		width:193px;
+    .outerGOWrap {
+        position:relative;
+        height:235px;
+        width:193px;
     }
     
     .smallGOWrap {
-    	position:absolute;
-    	top:0px; 
-    	right:0px;
-		text-align:center; 
-		background-color:#FFFFFF;
+        position:absolute;
+        top:0px; 
+        right:0px;
+        text-align:center; 
+        background-color:#FFFFFF;
     }    
     
-	.bigGOWrap {
-		z-index:100;
-		position:absolute;
-		top:-2px; 
-    	right:-2px;
-		height:425px;
-		width:443px;
-		text-align:center; 
-		background-color:#FFFFFF;
+    .bigGOWrap {
+        z-index:100;
+        position:absolute;
+        top:-2px; 
+        right:-2px;
+        height:425px;
+        width:443px;
+        text-align:center; 
+        background-color:#FFFFFF;
     }
     
     .imgTopBottom {
-    	border-top: 2px solid #DFEFFF;
-    	border-bottom: 2px solid #DFEFFF;
-    	
+        border-top: 2px solid #DFEFFF;
+        border-bottom: 2px solid #DFEFFF;
+        
     }
     
     .imgTopBottom a {
-    	text-decoration:none;
+        text-decoration:none;
     }
      
-	a.homeLink:link {
-		color:#1433C8;
-		text-decoration:none;
-		border-bottom:dotted 1px #888888;
-	}
-	
-	a.homeLink:visited {
-		color:#333333;
-		text-decoration:none;
-		border-bottom:dotted 1px #999999;
-	}
-	
-	a.homeLink:hover {
-		color:#CC0000;
-		text-decoration:none;
-		border-bottom:dashed 1px #CC0000;
-	}
-	
-	a.homeLink:active {
-		color:#1433C8;
-		text-decoration:none;
-		border-bottom:dotted 1px #888888;
-	} 
+    a.homeLink:link {
+        color:#1433C8;
+        text-decoration:none;
+        border-bottom:dotted 1px #888888;
+    }
+    
+    a.homeLink:visited {
+        color:#333333;
+        text-decoration:none;
+        border-bottom:dotted 1px #999999;
+    }
+    
+    a.homeLink:hover {
+        color:#CC0000;
+        text-decoration:none;
+        border-bottom:dashed 1px #CC0000;
+    }
+    
+    a.homeLink:active {
+        color:#1433C8;
+        text-decoration:none;
+        border-bottom:dotted 1px #888888;
+    } 
