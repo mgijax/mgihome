@@ -31,13 +31,13 @@
   <li>You can modify the output format on the query form from <i>Web</i> to <i>Tab-delimited</i>.</li>
   <li>Query Forms with the tab-delimited option available are:</li>
    <ul>
-     <li><a href="http://www.informatics.jax.org/javawi2/servlet/WIFetch?page=batchQF">MGI Batch Query</a><br>
+     <li><a href="<!--#include file='include/java_url.html'-->WIFetch?page=batchQF">MGI Batch Query</a><br>
         <i>Download gene/marker data for a batch of IDs or symbols</i></li>
      <li><a href="<!--#include file='include/java_url.html'-->WIFetch?page=markerQF">Genes and Markers Query Form</a><br>
         <i>Search by symbol, location, gene ontology classification, or phenotype.</i></li>
      <li><a href="<!--#include file='include/java_url.html'-->WIFetch?page=snpQF">Mouse SNP Query Form</a><br>
         <i>Search for SNPS by strain(s), SNP attributes, genomic position, or associated genes</i></li>
-    <li><a href="<!--#include file='include/java_url.html'-->searches/sequence_form.shtml">Mouse Sequence Query Form</a><br>
+    <li><a href="<!--#include file='include/wi_url.html'-->searches/sequence_form.shtml">Mouse Sequence Query Form</a><br>
     <i>Search for mouse sequences by sequence attributes, sources, and/or properties of associated genes and markers in MGI</i>
   </ul>
   </ul>
@@ -55,9 +55,9 @@
       </ul>
    <li>Use these query forms to generate reports with the FASTA format option available: </li>
        <ul>
-       <li><a href="<!--#include file='include/java_url.html'-->searches/sequence_form.shtml">Mouse Sequence Query Form</a></li>
-	<li><a href="http://www.informatics.jax.org/javawi2/servlet/WIFetch?page=pirsfVocab&subset=A">Protein Superfamily Browser</a></li>
-	<li><a href="http://www.informatics.jax.org/searches/homology_form.shtml">Mammalian Orthology Query Form</a></li>
+       <li><a href="<a href="<!--#include file='include/wi_url.html'-->searches/sequence_form.shtml">Mouse Sequence Query Form</a></li>
+	<li><a href="<!--#include file='include/java_url.html'-->WIFetch?page=pirsfVocab&subset=A">Protein Superfamily Browser</a></li>
+	<li><a href=<!--#include file='include/wi_url.html'-->searches/homology_form.shtml">Mammalian Orthology Query Form</a></li>
       </ul>
   </ul>
 
