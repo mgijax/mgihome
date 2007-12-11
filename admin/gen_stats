@@ -27,32 +27,31 @@ import time
 
 stats.setSqlFunction (db.sql)
 
-INCLUDEDIR = config['MGIHOME_PATH'] + 'www/homepages/stats/'
+STATSDIR = config['MGIHOME_PATH'] + 'www/homepages/stats/'
+INCLUDEDIR = config['MGIHOME_PATH'] + 'www/include/' 
 
 ## This is all the mini home page group information.  Its formatted like a tuple
 ## Where the group name is first, and the name out the file its generating is second
-## and the display name is thrid.
-## The forth item is for the handshake betweem the minihome pages and the all stats page.
+## The third item is for the handshake betweem the minihome pages and the all stats page.
 ## I'm not 100% happy with the solution I've come up with here, but it works well enough for now.
 
-minihome_groups = [('Home Page', 'homepage_stats.shtml', 'MGI Contains', ''),
-	  ('Marker Mini Home', 'gene_stats.shtml', 'MGI Contains', '#allstats_markers'),
-	  ('Pheno Mini Home', 'pad_stats.shtml', 'MGI Contains', '#allstats_pheno'),
-	  ('GXD Mini Home', 'gxd_stats.shtml', 'GXD Contains', '#allstats_gxd'),
-	  ('GO Mini Home', 'go_stats.shtml', 'MGI Functional Annotations data', '#allstats_go'),
-	  ('SNP Mini Home', 'strain_stats.shtml', 'Strains, SNPs, and Polymorphisms contains', '#allstats_snp'),
-	  ('Orthology Mini Home', 'ortho_stats.shtml', 'Orthology data include', '#allstats_ortho')]
-
-## Group information for the all stats page, formated the same way as the above.
-	  
-allstats_groups = [('Stats Page Markers','allstats_markers.shtml','Genes, Genome Features & Maps'),
-		   ('Stats Page Phenotypes','allstats_pheno.shtml','Phenotypes, Alleles &amp; Disease Models'),
-		   ('Stats Page GXD','allstats_gxd.shtml','Gene Expression'),
-		   ('Stats Page GO','allstats_go.shtml','Gene Functional Annotations'),
-		   ('Stats Page Polymorphisms','allstats_snp.shtml','Strains, SNPs &amp Polymorphisms'),
-		   ('Stats Page Orthology','allstats_ortho.shtml','Mammalian Orthology'),
-		   ('Stats Page Sequences','allstats_seq.shtml','Sequences'),
-		   ('References','allstats_ref.shtml','References')]
+stats_groups = [('Home Page', 'homepage_stats.shtml'),
+	  ('Marker Mini Home', 'gene_stats.shtml'),
+	  ('Pheno Mini Home', 'pad_stats.shtml'),
+	  ('GXD Mini Home', 'gxd_stats.shtml'),
+	  ('GO Mini Home', 'go_stats.shtml'),
+	  ('SNP Mini Home', 'strain_stats.shtml'),
+	  ('Orthology Mini Home', 'ortho_stats.shtml'),
+	  ('Pathways Mini Home', 'path_stats.shtml'),
+	  ('Stats Page Markers','allstats_markers.shtml'),
+	  ('Stats Page Phenotypes','allstats_pheno.shtml'),
+	  ('Stats Page GXD','allstats_gxd.shtml'),
+	  ('Stats Page GO','allstats_go.shtml'),
+   	  ('Stats Page Polymorphisms','allstats_snp.shtml'),
+	  ('Stats Page Orthology','allstats_ortho.shtml'),
+          ('Stats Page Sequences','allstats_seq.shtml'),
+	  ('References','allstats_ref.shtml'),
+	  ('Pathways Mini Home', 'allstats_paths.shtml')]
 		   
 		   
 
@@ -76,21 +75,18 @@ def number_format(num, places=0):
    integer = "".join(formatted[::-1])
    return integer+decimal
 
-def getStatsForMinihome(group, name, display, link):
+def getStatsForMinihome(group, name):
 	
-	datetime = time.strftime ('%d-%b-%Y', time.localtime (time.time()))	
+	datetime = time.strftime ('%d %b %Y', time.localtime (time.time()))	
 	groupObj = stats.StatisticGroup (group)
 	statistics = groupObj.getStatistics()
 	
-	file = open(INCLUDEDIR +name, "w")
-        
-        file.write('<div class="blueBorder">')
-        file.write('<div class="boxTitle">')
-        file.write('	<div class="left">'+ display +'</div>')
-        file.write('	<div class="right">'+datetime+'</div>')
-        file.write('</div>')
-	file.write('<div class="boxBG pad5 small">')
-	file.write('<dl class="statList">')
+	datefile  = open(INCLUDEDIR + 'stats_date.shtml', "w") 
+	datefile.write(datetime)
+	datefile.close()
+	
+	file = open(STATSDIR +name, "w")
+	file.write('<dl>')
 	for stat in statistics:
 		m = stat.getLatestMeasurement()
 		if not m:
@@ -102,53 +98,17 @@ def getStatsForMinihome(group, name, display, link):
 		file.write('<dt>' + str(number_format(mVal)) + '</dt>')
 		file.write('<dd>' + stat.getName() + '</dd>\n') 
 	file.write('</dl>')
-	file.write('<a class="GO" href="<!--#include file="include/mgihome_url.html"-->homepages/stats/all_stats.shtml'+ link +'">More statistics</a>')
-        file.write('</div>')
-	file.write('</div>')
-	file.close()
-
-def getStatsForAllStatsPage(group, name, display):
-		
-	groupObj = stats.StatisticGroup (group)
-	statistics = groupObj.getStatistics()
-	temp_anchor = name.split('.')
-	
-	file = open(INCLUDEDIR +name, "w")
-        file.write('<a name="'+ temp_anchor[0]+'"></a>\n')
-        file.write('<div class="blueBorder">')
-        file.write('<div class="boxTitle">')
-        file.write('<div class="left">'+ display +'</div>')
-        file.write('</div>')
-	file.write('<div class="boxBG pad5 small">')
-	file.write('<dl class="statList">')
-	for stat in statistics:
-		m = stat.getLatestMeasurement()
-		if not m:
-		    mVal = '&nbsp;'
-		elif m.hasIntValue():
-		    mVal = m.getIntValue()
-		else:
-		    mVal = '%1.3f' % m.getFloatValue()
-		file.write('<dt>' + str(number_format(mVal)) + '</dt><dd>' + stat.getName() + '</dd>\n') 
-	file.write('</dl>')
-        file.write('</div>')
-        file.write('</div>')
 	file.close()
 
 
 ## Do the mini home pages.
 
-print 'Starting to generate mini home stats files.'
-for (group, filename, display, link) in minihome_groups:
-	getStatsForMinihome(group, filename, display, link)
-print 'Finished generating mini home stats files.'
+print 'Starting to generate stats files.'
+for (group, filename) in stats_groups:
+	getStatsForMinihome(group, filename)
+print 'Finished generating stats files.'
 
-## Do the AllStats pages.
 
-print 'Starting to generate all stats page files.'
-for (group, filename, display) in allstats_groups:
-	getStatsForAllStatsPage(group, filename, display)
-print 'Finished generating all stats page files.'
 
 
 	    
