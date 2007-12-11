@@ -21,108 +21,99 @@
 <!-- start body content -->
 
 <!-- mini homepage header section -->
-<div id="headerWrapper">
-    <div id="imageWrapper">
-        <div class="blueBorder pad5 small">
-            <a href="<!--#include file='include/wi_url.html'-->external/festing/search_form.cgi">
-            	<img src="images/pheno_ednrb-s_browner125.jpg" alt="mouse" height="125" border="0">
-            </a>
-            <br />
-            <em>Search for mutant alleles, mouse phenotypes, <br/>and mouse models of human disease.</em>
-        </div>
-    </div>
-	<div id="homePageTitleWrapper">
-	    <span class="homePageTitle">
-	        Phenotypes,  Alleles and Disease Models
-	    </span>
-	    <br>
-	    <span class="homePageSubTitle">
-	       The Phenotypes/Alleles project in MGI enables access to spontaneous,
-	       induced, and genetically-engineered mutations and their
-	       strain-specific phenotypes.
-	    </span>
-	</div>
-</div>
+<table class="sideMargin marginTop" border="0" cellspacing="0" cellpadding="0">
+	<tr>
+		<td align="center" valign="middle">
+			<span class="homePageTitle">
+				Phenotypes,  Alleles and Disease Models
+			</span>
+			<br>
+			<span class="homePageSubTitle">
+			   The Phenotypes/Alleles project in MGI enables access to spontaneous,
+			   induced, and genetically-engineered mutations and their
+			   strain-specific phenotypes.
+			</span>
+		</td>
+		<td>
+			<div class="sideMargin marginBottom blueBorder pad5 small">
+				<center><a href='javascript:openFaqWindow("")'>
+					<img src="images/pheno_ednrb-s_browner125.jpg" alt="mouse" height="125" border="0">
+				</a>
+				<br />
+				<em>Search for mutant alleles, mouse phenotypes, <br/>and mouse models of human disease.</em></center>
+			</div>
+		</td>
+	</tr>
+</table>
+
 
 <!-- 3 box section -->
-<div id="boxWrapper">
-	<div class="boxLeftWrap marginBottom">
-		<!-- Left box: 'What can I do here?' -->
-		<div class="blueBorder">
-			<div class="boxTitle">
-				What can I do here?
+<table class="sideMargin" border="0" cellspacing="0" cellpadding="0">
+	<tr>
+		<td rowspan="2" width="50%" valign="top">
+			<!-- Left box: 'What can I do here?' -->
+			<div class="blueBorder rightCenterMargin">
+				<div class="boxTitle">
+					What can I do here?
+				</div>
+				<!-- 'What can I do here?'content -->
+				<!-- The content is in a definition list <dl> where the descriptive text
+				is in the term <dt>, and the link is in the definition <dd> -->
+				<div class="boxBG pad5">
+					<dl class="boxList">
+						<dt></dt>
+						<dd class="searchList"><a class="homeLink" href="<!--#include file='include/wi_url.html'-->searches/allele_form.shtml">Search for mutations</a>
+							or QTL based on phenotype, human disease,  mutation type, gene, or genome location.</dd>
+						<dd class="searchList"><a class="homeLink" href="<!--#include file='include/wi_url.html'-->searches/MP_form.shtml">Search for a phenotype term</a>
+							to find relevant mutant genotypes.</dd>
+						<dd class="searchList"><a class="homeLink" href="<!--#include file='include/java_url.html'-->WIFetch?page=omimVocab&subset=A">Search for a human disease or condition terms</a>
+							to find  mouse models.</dd>
+						<dd class="searchList"><a class="homeLink" href="<!--#include file='include/java_url.html'-->WIFetch?page=markerQF">Search for candidate genes</a>
+							for a given phenotype within a  genomic interval.</dd>
+						<dd class="searchList"><a class="homeLink" href="<!--#include file='include/java_url.html'-->WIFetch?page=batchQF">Input a list of genes</a>
+							and retrieve associated alleles and  phenotypes.</dd>
+						<dd class="searchList"><a class="homeLink" href="<!--#include file='include/mgihome_url.html'-->nomen/allmut_form.shtml">Submit a new allele, mutation, or transgene</a>
+							and receive official nomenclature and an MGI accession identifier.</dd>
+						<dd class="searchList">View an <a class="homeLink" href="<!--#include file='include/mgihome_url.html'-->nomen/allmut_quickhelp.shtml">abbreviated</a> or <a class="homeLink" href="<!--#include file='include/mgihome_url.html'-->nomen/gene.shtml">full</a>
+							guide to proper naming of alleles and mutations.
+					</dl>
+				</div>
 			</div>
-			<!-- 'What can I do here?'content -->
-			<!-- The content is in a definition list <dl> where the descriptive text
-			is in the term <dt>, and the link is in the definition <dd> -->
-			<div class="boxBG pad5">
-				<dl class="boxList">
-					<dt></dt>
-					<dd class="searchList"><a class="homeLink" href="<!--#include file='include/wi_url.html'-->searches/allele_form.shtml">Search for mutations</a>
-						or QTL based on phenotype, human disease,  mutation type, gene, or genome location.</dd>
-					<dd class="searchList"><a class="homeLink" href="<!--#include file='include/wi_url.html'-->searches/MP_form.shtml">Search for a phenotype term</a>
-						to find relevant mutant genotypes.</dd>
-					<dd class="searchList"><a class="homeLink" href="<!--#include file='include/java_url.html'-->WIFetch?page=omimVocab&subset=A">Search for a human disease or condition terms</a>
-						to find  mouse models.</dd>
-					<dd class="searchList"><a class="homeLink" href="<!--#include file='include/java_url.html'-->WIFetch?page=markerQF">Search for candidate genes</a>
-						for a given phenotype within a  genomic interval.</dd>
-					<dd class="searchList"><a class="homeLink" href="<!--#include file='include/java_url.html'-->WIFetch?page=batchQF">Input a list of genes</a>
-						and retrieve associated alleles and  phenotypes.</dd>
-					<dd class="searchList"><a class="homeLink" href="<!--#include file='include/mgihome_url.html'-->nomen/allmut_form.shtml">Submit a new allele, mutation, or transgene</a>
-						and receive official nomenclature and an MGI accession identifier.</dd>
-					<dd class="searchList">View an <a class="homeLink" href="<!--#include file='include/mgihome_url.html'-->nomen/allmut_quickhelp.shtml">abbreviated</a> or <a class="homeLink" href="<!--#include file='include/mgihome_url.html'-->nomen/gene.shtml">full</a>
-						guide to proper naming of alleles and mutations.
-				</dl>
+		</td>
+		<td width="50%" valign="top">
+			<!-- Right-top box: FAQs -->
+			<div class="blueBorder marginBottom leftCenterMargin">
+				<div class="boxTitle">
+					<!-- Box-title goes here -->FAQs
+				</div>
+				<!-- FAQs content -->
+				<!-- The content is in a definition list <dl> where the list title is in
+				the term <dt>, and FAQ question is in the definition <dd>. Note the link
+				uses a javascript function to open a separate window;
+				javascript:openFaqWindow("faqPage.shtml")'-->
+				<div class="boxBG pad5">
+					<dl class="boxList">
+						<dt>How do I...</dt>
+						<dd class="faqList">.. find mutations in a specific gene? <a class="small homeLink" href='javascript:openFaqWindow("PAD_gene.shtml")'>FAQ</a></dd>
+						<dd class="faqList">.. find mouse models for a human disease or condition? <a class="small homeLink" href='javascript:openFaqWindow("PAD_disease.shtml")'>FAQ</a></dd>
+						<dd class="faqList">.. find mutations that cause a specific combination of phenotypes? <a class="small homeLink" href='javascript:openFaqWindow("PAD_combo.shtml")'>FAQ</a></dd>
+						<dd class="faqList">.. find mutations by categories (cre transgenes, conditional  or knock out alleles, etc.)? <a class="small homeLink" href='javascript:openFaqWindow("PAD_muttype.shtml")'>FAQ</a></dd>
+					</dl>
+					<!-- link to all FAQs page -->
+					<a class="small homeLink" href="<!--#include file='include/faq_url.html'-->FAQ.shtml">More FAQs</a>
+				</div>
 			</div>
-		</div>
-    </div>
+		</td>
+	</tr>
+	<tr>
+		<td width="50%" valign="top">
+			<div class="blueBorder leftCenterMargin">
+				<!--#include file='stats/pad_stats.shtml'-->
+			</div>
+		</td>
+	</tr>
+</table>
 
-	<div class="boxRightWrap">
-		<!-- Right-top box: FAQs -->
-		<div class="blueBorder marginBottom">
-			<div class="boxTitle">
-				<!-- Box-title goes here -->FAQs
-			</div>
-			<!-- FAQs content -->
-			<!-- The content is in a definition list <dl> where the list title is in
-			the term <dt>, and FAQ question is in the definition <dd>. Note the link
-			uses a javascript function to open a separate window;
-			javascript:openFaqWindow("faqPage.shtml")'-->
-			<div class="boxBG pad5">
-				<dl class="boxList">
-					<dt>How do I...</dt>
-					<dd class="faqList">.. find mutations in a specific gene? <a class="small homeLink" href='javascript:openFaqWindow("PAD_gene.shtml")'>FAQ</a></dd>
-					<dd class="faqList">.. find mouse models for a human disease or condition? <a class="small homeLink" href='javascript:openFaqWindow("PAD_disease.shtml")'>FAQ</a></dd>
-					<dd class="faqList">.. find mutations that cause a specific combination of phenotypes? <a class="small homeLink" href='javascript:openFaqWindow("PAD_combo.shtml")'>FAQ</a></dd>
-					<dd class="faqList">.. find mutations by categories (cre transgenes, conditional  or knock out alleles, etc.)? <a class="small homeLink" href='javascript:openFaqWindow("PAD_muttype.shtml")'>FAQ</a></dd>
-				</dl>
-				<!-- link to all FAQs page -->
-				<a class="small homeLink" href="<!--#include file='include/faq_url.html'-->">More FAQs</a>
-			</div>
-		</div>
-		<!-- Right-bottom box: Stats -->
-		<div class="blueBorder">
-			<div class="boxTitle">
-				<!-- Box-title goes here -->
-				<div class="left">MGI Contains</div>
-				<div class="right">29 Nov 2007</div>
-			</div>
-			<!-- Stats content -->
-			<div class="boxBG pad5 small">
-				<dl class="statList">
-					<dt>26,475</dt><dd>Mutant alleles</dd>
-					<dt>1,115</dt><dd>Gene trapped alleles</dd>
-					<dt>7,293</dt><dd>Genes with mutant alleles</dd>
-					<dt>19,164</dt><dd>Alleles with phenotype annotations</dd>
-					<dt>2,173</dt><dd>Mouse genotypes modeling human diseases</dd>
-					<dt>3,685</dt><dd>QTL markers</dd>
-				</dl>
-				<!-- link to all stats page -->
-				<a class="small homeLink" href="stats/all_stats.shtml">More statistics</a>
-			</div>
-		</div>
-	</div>
-</div>
 
 <!-- News box -->
 <div class="boxWide blueBorder marginBottom">
@@ -138,7 +129,7 @@
 			<li>We have over 100,000 phenotype annotations</li>
 		</ul>
 		<!-- link to more news page -->
-		<a class="small homeLink" href="#">More news</a>
+		<a class="small homeLink" href="<!--#include file='include/mgihome_url.html'-->news/whatsnew.shtml">More news</a>
 	</div>
 </div>
 

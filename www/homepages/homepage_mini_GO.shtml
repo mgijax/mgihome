@@ -31,111 +31,117 @@
 <!-- start body content -->
 
 <!-- mini homepage header section -->
-<div id="headerWrapper">
-    <div id="imageWrapper">
-		<div id="TinyImage" class="outerGOWrap">
-			<div class="smallGOWrap blueBorder">
-				<a href='javascript:Toggle_GOimages("BigImage");' class="small homeLink">show larger image [-]</a>
-				<br />
-				<a class="imgTopBottom" href="#">
-					<acronym title="Will link to special FAQ window">
-						<img class="imgTopBottom pad5" src="images/GOgraph_Slc22a6_150h.png" alt="GO Graph" name="GOgraph" border="0">
-					</acronym>
+<table class="sideMargin marginTop" width="100%" border="0" cellspacing="0" cellpadding="0">
+	<tr>
+		<td align="center" valign="middle">
+			<span class="homePageTitle">
+				Functional Annotation using the Gene Ontology (GO)
+			</span>
+			<br>
+			<span class="homePageSubTitle">
+			   MGI's GO project provides functional annotations for mouse gene products using the Gene Ontology.
+			</span>
+		</td>
+		<td>
+			<div id="TinyImage" class="sideMargin marginBottom outerGOWrap">
+				<div class="smallGOWrap blueBorder">
+					<a href='javascript:Toggle_GOimages("BigImage");' class="small homeLink">show larger image [-]</a>
 					<br />
-					<acronym title="Will link to a special FAQ window">
-						<a href="#" class="small homeLink">GO annotation comparison for mouse Slc22a6 and its human and rat orthologs</a>
-					</acronym>
-				</a>
-			</div>
+					<a class="imgTopBottom" href='javascript:openFaqWindow("GQ_list.shtml")'>
+						<acronym title="Will link to special FAQ window">
+							<img class="imgTopBottom pad5" src="images/GOgraph_Slc22a6_150h.png" alt="GO Graph" name="GOgraph" border="0">
+						</acronym>
+						<br />
+						<acronym title="Will link to a special FAQ window">
+							<a href='javascript:openFaqWindow("GQ_list.shtml")' class="small homeLink">GO annotation comparison for mouse Slc22a6 and its human and rat orthologs</a>
+						</acronym>
+					</a>
+				</div>
 
-			<div class="bigGOWrap blueBorder" id="BigImage" style="display:none;">
-				<a href='javascript:Toggle_GOimages("BigImage");' class="small homeLink">show smaller image [-]</a>
-				<br />
-				<a class="imgTopBottom" href="#">
-					<acronym title="Will link to special FAQ window">
-						<img class="imgTopBottom pad5" src="images/GOgraph_Slc22a6.png" alt="GO Graph" name="GOgraph" border="0">
-					</acronym>
+				<div class="bigGOWrap blueBorder" id="BigImage" style="display:none;">
+					<a href='javascript:Toggle_GOimages("BigImage");' class="small homeLink">show smaller image [-]</a>
 					<br />
-					<acronym title="Will link to a special FAQ window">
-						<a href="#" class="small homeLink">GO annotation comparison for mouse Slc22a6 and its human and rat orthologs</a>
-					</acronym>
-				</a>
+					<a class="imgTopBottom" href='javascript:openFaqWindow("GQ_list.shtml")'>
+						<acronym title="Will link to special FAQ window">
+							<img class="imgTopBottom pad5" src="images/GOgraph_Slc22a6.png" alt="GO Graph" name="GOgraph" border="0">
+						</acronym>
+						<br />
+						<acronym title="Will link to a special FAQ window">
+							<a href='javascript:openFaqWindow("GQ_list.shtml")' class="small homeLink">GO annotation comparison for mouse Slc22a6 and its human and rat orthologs</a>
+						</acronym>
+					</a>
+				</div>
 			</div>
-		</div>
-    </div>
-	<div id="homePageTitleWrapper">
-	    <span class="homePageTitle">
-	        Functional Annotation using the Gene Ontology (GO)
-	    </span>
-	    <br>
-	    <span class="homePageSubTitle">
-	       MGI's GO project provides functional annotations for mouse gene products using the Gene Ontology.
-	    </span>
-	</div>
-</div>
+		</td>
+	</tr>
+</table>
+
 
 <!-- 3 box section -->
-<div id="boxWrapper">
-	<div class="boxLeftWrap marginBottom">
-		<!-- Left box: 'What can I do here?' -->
-		<div class="blueBorder">
-			<div class="boxTitle">
-				Access MGI-GO data
+<table class="sideMargin" border="0" cellspacing="0" cellpadding="0">
+	<tr>
+		<td rowspan="2" width="50%" valign="top">
+			<!-- Left box: 'What can I do here?' -->
+			<div class="blueBorder rightCenterMargin">
+				<div class="boxTitle">
+					Access MGI-GO data
+				</div>
+				<!-- 'What can I do here?'content -->
+				<!-- The content is in a definition list <dl> where the descriptive text
+				is in the term <dt>, and the link is in the definition <dd> -->
+				<div class="boxBG pad5">
+					<dl>
+						<dt class="whatList"><a href="<!--#include file='include/wi_url.html'-->searches/GO_form.shtml" class="homeLink">Browse the Gene Ontology</a>
+							and mouse annotations in MGI.</dt>
+						<dt class="whatList"><a href="<!--#include file='include/java_url.html'-->WIFetch?page=markerQF" class="homeLink">Search for genes</a>
+							using GO terms and other gene attributes.</dt>
+						<dt class="whatList"><a href="http://proto.informatics.jax.org/prototypes/GOgraphEX/OrthoDisease_Graphs/OMIM_DisorderGraphs/" class="homeLink">Access GO
+							annotations for genes associated with OMIM</a>.</dt>
+						<dt class="whatList"><a href="<!--#include file='include/java_url.html'-->WIFetch?page=batchQF" class="homeLink">Obtain sets of MGI IDs</a>
+							for use in GO tools.</dt>
+					</dl>
+					Use GO annotations to discover what your gene set may have in common:
+					<ul>
+						<li>Analyze functional annotations using the <a href="http://proto.informatics.jax.org/prototypes/GOTools/web-docs/MGI_Term_Finder.html" class="homeLink">MGI GO Term Finder</a></li>
+						<li>Build GO charts to present GO functional data with the <a href="http://proto.informatics.jax.org/prototypes/GOTools/web-docs/MGI_GO_Slim_Chart.html" class="homeLink">GO Chart Tool</a></li>
+					</ul>
+				</div>
 			</div>
-			<!-- 'What can I do here?'content -->
-			<!-- The content is in a definition list <dl> where the descriptive text
-			is in the term <dt>, and the link is in the definition <dd> -->
-			<div class="boxBG pad5">
-				<dl>
-					<dt class="whatList"><a href="<!--#include file='include/wi_url.html'-->searches/GO_form.shtml" class="homeLink">Browse the Gene Ontology</a>
-						and mouse annotations in MGI.</dt>
-					<dt class="whatList"><a href="<!--#include file='include/java_url.html'-->WIFetch?page=markerQF" class="homeLink">Search for genes</a>
-						using GO terms and other gene attributes.</dt>
-					<dt class="whatList"><a href="http://proto.informatics.jax.org/prototypes/GOgraphEX/OrthoDisease_Graphs/OMIM_DisorderGraphs/" class="homeLink">Access GO
-						annotations for genes associated with OMIM</a>.</dt>
-					<dt class="whatList"><a href="<!--#include file='include/java_url.html'-->WIFetch?page=batchQF" class="homeLink">Obtain sets of MGI IDs</a>
-						for use in GO tools.</dt>
-				</dl>
-				Use GO annotations to discover what your gene set may have in common:
-				<ul>
-					<li>Analyze functional annotations using the <a href="http://proto.informatics.jax.org/prototypes/GOTools/web-docs/MGI_Term_Finder.html" class="homeLink">MGI GO Term Finder</a></li>
-					<li>Build GO charts to present GO functional data with the <a href="http://proto.informatics.jax.org/prototypes/GOTools/web-docs/MGI_GO_Slim_Chart.html" class="homeLink">GO Chart Tool</a></li>
-				</ul>
+		</td>
+		<td width="50%" valign="top">
+			<div class="blueBorder marginBottom leftCenterMargin">
+				<div class="boxTitle">
+					FAQs
+				</div>
+				<!-- FAQs content -->
+				<!-- The content is in a definition list <dl> where the list title is in
+				the term <dt>, and FAQ question is in the definition <dd>. Note the link
+				uses a javascript function to open a separate window;
+				javascript:openFaqWindow("faqPage.shtml")'-->
+				<div class="boxBG pad5">
+					<dl class="boxList">
+						<dt>How do I...</dt>
+						<dd class="faqList">.. download all mouse GO annotations? <a class="small homeLink" href='javascript:openFaqWindow("GO_dload.shtml")'>FAQ</a></dd>
+						<dd class="faqList">.. view annotations for mouse/human/rat ortholog sets? <a class="small homeLink" href='javascript:openFaqWindow("GQ_list.shtml")'>FAQ</a></dd>
+						<dd class="faqList">.. find shared function for gene sets? <a class="small homeLink" href='javascript:openFaqWindow("GQ_list.shtml")'>FAQ</a></dd>
+						<dd class="faqList">.. access GO annotation detail page for any gene in MGI? <a class="small homeLink" href='javascript:openFaqWindow("GQ_list.shtml")'>FAQ</a></dd>
+						<dd class="faqList">.. search for shared GO terms or parents for a list of specific genes? <a class="small homeLink" href='javascript:openFaqWindow("GQ_list.shtml")'>FAQ</a></dd>
+						<dd class="faqList">.. obtain FASTA sequence files for genes with GO annotations in common? <a class="small homeLink" href='javascript:openFaqWindow("GQ_list.shtml")'>FAQ</a></dd>
+					</dl>
+					<!-- link to all FAQs page -->
+					<a class="small homeLink" href="<!--#include file='include/faq_url.html'-->FAQ.shtml">More FAQs</a>
+				</div>
 			</div>
-		</div>
-    </div>
-
-	<div class="boxRightWrap">
-		<!-- Right-top box: FAQs -->
-		<div class="blueBorder marginBottom">
-			<div class="boxTitle">
-				FAQs
+		</td>
+	</tr>
+	<tr>
+		<td width="50%" valign="top">
+			<div class="blueBorder leftCenterMargin">
+				<!--#include file='stats/go_stats.shtml'-->
 			</div>
-			<!-- FAQs content -->
-			<!-- The content is in a definition list <dl> where the list title is in
-			the term <dt>, and FAQ question is in the definition <dd>. Note the link
-			uses a javascript function to open a separate window;
-			javascript:openFaqWindow("faqPage.shtml")'-->
-			<div class="boxBG pad5">
-				<dl class="boxList">
-					<dt>How do I...</dt>
-					<dd class="faqList">.. download all mouse GO annotations? <a class="small homeLink" href='javascript:openFaqWindow("GO_dload.shtml")'>FAQ</a></dd>
-					<dd class="faqList">.. view annotations for mouse/human/rat ortholog sets? <a class="small homeLink" href='javascript:openFaqWindow("DummyPageSimple.html")'>FAQ</a></dd>
-					<dd class="faqList">.. find shared function for gene sets? <a class="small homeLink" href='javascript:openFaqWindow("DummyPageSimple.html")'>FAQ</a></dd>
-					<dd class="faqList">.. access GO annotation detail page for any gene in MGI? <a class="small homeLink" href='javascript:openFaqWindow("DummyPageSimple.html")'>FAQ</a></dd>
-					<dd class="faqList">.. search for shared GO terms or parents for a list of specific genes? <a class="small homeLink" href='javascript:openFaqWindow("DummyPageSimple.html")'>FAQ</a></dd>
-					<dd class="faqList">.. obtain FASTA sequence files for genes with GO annotations in common? <a class="small homeLink" href='javascript:openFaqWindow("DummyPageSimple.html")'>FAQ</a></dd>
-				</dl>
-				<!-- link to all FAQs page -->
-				<a class="small homeLink" href="#">More FAQs</a>
-			</div>
-		</div>
-
-		<!-- Right-bottom box: Stats -->
-		<!--#include file='stats/go_stats.shtml'-->
-
-	</div>
-</div>
+		</td>
+	</tr>
+</table>
 
 <!-- News box -->
 <div class="boxWide blueBorder marginBottom">
@@ -150,7 +156,7 @@
 			<li><a href="http://www.geneontology.org/newsletter/current-newsletter.shtml" class="homeLink">Latest</a> GO newsletter</li>
 		</ul>
 		<!-- link to more news page -->
-		<a class="small homeLink" href="#">More news</a>
+		<a class="small homeLink" href="<!--#include file='include/mgihome_url.html'-->news/whatsnew.shtml">More news</a>
 	</div>
 </div>
 

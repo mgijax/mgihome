@@ -1,4 +1,4 @@
-<!--#include file='include/templateHead.html'--> 
+<!--#include file='include/templateHead.html'-->
 <title><!--#include file='include/mgiversion.html'--> - Mutation Submission Form</title>
 
 <!--#include file='include/templateBodyStart.html'-->
@@ -15,7 +15,7 @@
 <li>Please fill in appropriate information.
 <li>Click <b>Submit</b> at the bottom of the form to send this information to MGI for processing.
 <li>If you wish to search for existing alleles, click here:
-<A HREF="http://www.informatics.jax.org/searches/allele_form.shtml">Phenotypes and Alleles Query Form</a>
+<A HREF="<!--#include file='include/wi_url.html'-->searches/allele_form.shtml">Phenotypes and Alleles Query Form</a>
 <li> Thank you for helping us keep the Mouse Genome Database current.
 </ul>
 </P>
@@ -33,7 +33,7 @@ Is this mutation an allele of a <B>known gene</B>?  <BR>
 <DD>If so, enter the <B>gene symbol</B>:
 <INPUT TYPE="text" NAME="genesymbol" SIZE=15>
 (Check the gene symbol by
-<A HREF="<!--#include file='include/wi_url.html'-->searches/marker_form.shtml">searching MGI</A>.)<BR><BR>
+<A HREF="<!--#include file='include/java_url.html'-->WIFetch?page=markerQF">searching MGI</A>.)<BR><BR>
 Nicknames, synonyms for this mutant allele  <INPUT TYPE="text" NAME="synonyms" SIZE=55>
 <BR><BR>
 <BR>

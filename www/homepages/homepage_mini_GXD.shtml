@@ -21,74 +21,84 @@
 <!-- start body content -->
 
 <!-- mini homepage header section -->
+<table class="sideMargin marginTop" border="0" cellspacing="0" cellpadding="0">
+	<tr>
+		<td align="center" valign="middle">
+			<span class="homePageTitle">
+				Gene Expression Database (GXD)
+			</span>
+			<br>
+			<span class="homePageSubTitle">
+			   GXD collects and integrates the  gene expression information in MGI. Its primary
+			   emphasis is on endogenous gene expression during  mouse development.
+			</span>
+		</td>
+		<td>
+			<div class="sideMargin marginBottom blueBorder pad5">
+				<a href='javascript:openFaqWindow("GXD_imgpop.shtml")'><img class="outlineImg" src="images/GXDmini_image_150.jpg"></a>
+        	</div>
+		</td>
+	</tr>
+</table>
 
-<div id="headerWrapper">
-    <div id="imageWrapper">
-        <div class="blueBorder pad5">
-            <a href='javascript:openFaqWindow("GXD_imgpop.shtml")'><img class="outlineImg" src="images/GXDmini_image_150.jpg"></a>
-        </div>
-    </div>
-	<div id="homePageTitleWrapper">
-	    <span class="homePageTitle">
-	        Gene Expression Database (GXD)
-	    </span>
-	    <br>
-	    <span class="homePageSubTitle">
-	       GXD collects and integrates the  gene expression information in MGI. Its primary
-	       emphasis is on endogenous gene expression during  mouse development.
-	    </span>
-	</div>
-</div>
 
-<div id="boxWrapper">
-	<div class="boxLeftWrap marginBottom">
-		<div class="blueBorder">
-			<div class="boxTitle">What can I do here?</div>
-			<div class="boxBG pad5">
-				<dl>
-					<dt>Search for references on gene expression during development.</dt>
-					<dd class="searchList"><a class="small homeLink" href="<!--#include file='include/wi_url.html'-->searches/gxdindex_form.shtml">Gene Expression Literature Query Form</a></dd>
+<table class="sideMargin" border="0" cellspacing="0" cellpadding="0">
+	<tr>
+		<td rowspan="2" width="50%" valign="top">
+			<div class="blueBorder rightCenterMargin">
+				<div class="boxTitle">What can I do here?</div>
+				<div class="boxBG pad5">
+					<dl>
+						<dt>Search for references on gene expression during development.</dt>
+						<dd class="searchList"><a class="small homeLink" href="<!--#include file='include/wi_url.html'-->searches/gxdindex_form.shtml">Gene Expression Literature Query</a></dd>
 
-					<dt>Search for detailed gene expression assay results.</dt>
-					<dd class="searchList"><a class="small homeLink" href="<!--#include file='include/java_url.html'-->WIFetch?page=expressionQF">Gene Expression Data Query Form</a></dd>
+						<dt>Search for detailed gene expression assay results.</dt>
+						<dd class="searchList"><a class="small homeLink" href="<!--#include file='include/java_url.html'-->WIFetch?page=expressionQF">Gene Expression Data Query</a></dd>
 
-					<dt>Search for genes expressed in some anatomical structures and/or
-					developmental stages but not in others.</dt>
-					<dd class="searchList"><a class="small homeLink" href="<!--#include file='include/java_url.html'-->WIFetch?page=expressionQFexpanded">Gene Expression Data Expanded Query Form</a></dd>
+						<dt>Search for genes expressed in some anatomical structures and/or
+						developmental stages but not in others.</dt>
+						<dd class="searchList"><a class="small homeLink" href="<!--#include file='include/java_url.html'-->WIFetch?page=expressionQFexpanded">Gene Expression Data Expanded Query</a></dd>
 
-					<dt>Search or browse for anatomical structures; includes links to
-					associated expression results.</dt>
-					<dd class="searchList"><a class="small homeLink" href="<!--#include file='include/wi_url.html'-->searches/anatdict_form.shtml">Mouse Anatomical Dictionary Browser</a></dd>
+						<dt>Search or browse for anatomical structures; includes links to
+						associated expression results.</dt>
+						<dd class="searchList"><a class="small homeLink" href="<!--#include file='include/wi_url.html'-->searches/anatdict_form.shtml">Mouse Anatomical Dictionary Browser</a></dd>
 
-					<dt>Search the Edinburgh Mouse Atlas for anatomical terms and query
-					for associated expression data.</dt>
-					<dd class="searchList"><a class="small homeLink" href="http://genex.hgu.mrc.ac.uk/Resources/GXDQuery1/SectionBrowser.html">EMAGE Anatomical Section Browser</a></dd>
+						<dt>Search the Edinburgh Mouse Atlas for anatomical terms and query
+						for associated expression data.</dt>
+						<dd class="searchList"><a class="small homeLink" href="http://genex.hgu.mrc.ac.uk/Resources/GXDQuery1/SectionBrowser.html">EMAGE Anatomical Section Browser</a></dd>
 
-					<dt>Search for expression information based on tissue or cell-line
-					origin of cDNAs.</dt>
-					<dd class="searchList"><a class="small homeLink" href="<!--#include file='include/java_url.html'-->WIFetch?page=cDNAQF">cDNA Clone Query Form</a></dd>
-				</dl>
+						<dt>Search for expression information based on tissue or cell-line
+						origin of cDNAs.</dt>
+						<dd class="searchList"><a class="small homeLink" href="<!--#include file='include/java_url.html'-->WIFetch?page=cDNAQF">cDNA Clone Query</a></dd>
+					</dl>
+				</div>
 			</div>
-		</div>
-    </div>
-
-	<div class="boxRightWrap">
-		<div class="blueBorder marginBottom">
-			<div class="boxTitle">FAQs</div>
-			<div class="boxBG pad5">
-				<dl class="boxList">
-					<dt>How do I...</dt>
-					<dd class="faqList">.. find expression data for a specific gene? <a class="small homeLink" href='javascript:openFaqWindow("GXD_GeneTissue.shtml")'>FAQ</a></dd>
-					<dd class="faqList">.. find expression data for a tissue during development? <a class="small homeLink" href='javascript:openFaqWindow("GXD_tissue_dev.shtml")'>FAQ</a></dd>
-					<dd class="faqList">.. find genes expressed in one tissue but not another? <a class="small homeLink" href='javascript:openFaqWindow("GXD_comp_tissue.shtml")'>FAQ</a></dd>
-					<dd class="faqList">.. find references that report expression data for a gene at a specific age? <a class="small homeLink" href='javascript:openFaqWindow("GXD_ref_age.shtml")'>FAQ</a></dd>
-				</dl>
-				<a class="small homeLink" href="<!--#include file='include/faq_url.html'-->">More FAQs</a>
+		</td>
+		<td width="50%" valign="top">
+			<div class="blueBorder marginBottom leftCenterMargin">
+				<div class="boxTitle">FAQs</div>
+				<div class="boxBG pad5">
+					<dl class="boxList">
+						<dt>How do I...</dt>
+						<dd class="faqList">.. find expression data for a specific gene? <a class="small homeLink" href='javascript:openFaqWindow("GXD_GeneTissue.shtml")'>FAQ</a></dd>
+						<dd class="faqList">.. find expression data for a tissue during development? <a class="small homeLink" href='javascript:openFaqWindow("GXD_tissue_dev.shtml")'>FAQ</a></dd>
+						<dd class="faqList">.. find genes expressed in one tissue but not another? <a class="small homeLink" href='javascript:openFaqWindow("GXD_comp_tissue.shtml")'>FAQ</a></dd>
+						<dd class="faqList">.. find references that report expression data for a gene at a specific age? <a class="small homeLink" href='javascript:openFaqWindow("GXD_ref_age.shtml")'>FAQ</a></dd>
+					</dl>
+					<a class="small homeLink" href="<!--#include file='include/faq_url.html'-->FAQ.shtml">More FAQs</a>
+				</div>
 			</div>
-		</div>
-		<!--#include file='stats/gxd_stats.shtml'-->
-	</div>
-</div>
+		</td>
+	</tr>
+	<tr>
+		<td width="50%" valign="top">
+			<div class="blueBorder leftCenterMargin">
+				<!--#include file='stats/gxd_stats.shtml'-->
+			</div>
+		</td>
+	</tr>
+</table>
+
 
 <div class="boxWide blueBorder marginBottom">
 	<div class="boxTitle">
@@ -106,7 +116,7 @@
 		hybridizations at E14.5); and 10,585  images.
 		<br />
 		<br />
-		<a class="small homeLink" href="#">More news</a>
+		<a class="small homeLink" href="<!--#include file='include/mgihome_url.html'-->news/whatsnew.shtml">More news</a>
 	</div>
 </div>
 

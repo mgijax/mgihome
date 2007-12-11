@@ -21,83 +21,91 @@
 <!-- start body content -->
 
 <!-- mini homepage header section -->
-<div id="headerWrapper">
-    <div id="imageWrapper">
-        <div class="blueBorder pad5 small">
-            <a href='javascript:openFaqWindow("BP_imgpop.shtml")'><img src="images/Path_YP19146_big.gif" alt="YP19146" /></a>
-            <a href='javascript:openFaqWindow("BP_imgpop.shtml")'><img src="images/Path_YP20593_big.gif" alt="YP20593" /></a><br />
-			<em>Pathway glyphs overlayed with experimental data</em>
-        </div>
-    </div>
-	<div id="homePageTitleWrapper">
-	    <span class="homePageTitle">
-			Biochemical Pathways
-	    </span>
-	    <br>
-		<span class="homePageSubTitle">
-			MouseCyc is a database of curated biochemical pathways data for the
-			laboratory mouse that can be integrated with functional and
-			phenotypic data from MGI.
-		</span>
-	</div>
-</div>
+<table class="sideMargin marginTop" border="0" cellspacing="0" cellpadding="0">
+	<tr>
+		<td align="center" valign="middle">
+			<span class="homePageTitle">
+				Biochemical Pathways
+			</span>
+			<br>
+			<span class="homePageSubTitle">
+				MouseCyc is a database of curated biochemical pathways data for the
+				laboratory mouse that can be integrated with functional and
+				phenotypic data from MGI.
+			</span>
+		</td>
+		<td>
+			<div class="sideMargin marginBottom blueBorder pad5 small">
+				<center>
+				<a href='javascript:openFaqWindow("BP_imgpop.shtml")'><img src="images/Path_YP19146_big.gif" alt="YP19146" /></a>
+				<a href='javascript:openFaqWindow("BP_imgpop.shtml")'><img src="images/Path_YP20593_big.gif" alt="YP20593" /></a><br />
+				<em>Pathway glyphs overlayed with experimental data</em></center>
+			</div>
+		</td>
+	</tr>
+</table>
+
 
 <!-- 3 box section -->
-<div id="boxWrapper">
-	<div class="boxLeftWrap marginBottom">
-		<!-- Left box: 'What can I do here?' -->
-		<div class="blueBorder">
-			<div class="boxTitle">
-				What can I do here?
+<table class="sideMargin" border="0" cellspacing="0" cellpadding="0">
+	<tr>
+		<td rowspan="2" width="50%" valign="top">
+			<!-- Left box: 'What can I do here?' -->
+			<div class="blueBorder rightCenterMargin">
+				<div class="boxTitle">
+					What can I do here?
+				</div>
+				<!-- 'What can I do here?'content -->
+				<!-- The content is in a definition list <dl> where the descriptive text
+				is in the term <dt>, and the link is in the definition <dd> -->
+				<div class="boxBG pad5">
+					<dl class="boxList">
+						<dt class="whatList"><a class="homeLink" href="http://ella.jax.org:8000/MOUSE/class-tree?object=Pathways">Browse the pathway ontology</a> in the MouseCyc database</dt>
+						<dt class="whatList"><a class="homeLink" href="http://ella.jax.org:8000/MOUSE/class-instances?object=Pathways">Browse all pathways</a> represented in MouseCyc</dt>
+						<dt class="whatList">Browse a list of <a class="homeLink" href="http://ella.jax.org:8000/MOUSE/class-instances?object=Genes">all genes in MouseCyc</a></dt>
+						<dt class="whatList">Browse a list of <a class="homeLink" href="http://ella.jax.org:8000/MOUSE/class-instances?object=Proteins">all proteins in MouseCyc</a> according to their activity</dt>
+						<dt class="whatList">Browse a list of <a class="homeLink" href="http://ella.jax.org:8000/MOUSE/class-instances?object=Compounds">all compounds represented in MouseCyc</a></dt>
+						<dt class="whatList"><a class="homeLink" href="http://ella.jax.org:8000/expression.html">Overlay experimental data onto the Pathway Tools Omics Viewer</a></dt>
+						<dt class="whatList"><a class="homeLink" href="http://ella.jax.org:8000/MOUSE/NEW-IMAGE?type=OVERVIEW&force=t">Generate a mouse metabolic map</a></dt>
+					</dl>
+				</div>
 			</div>
-			<!-- 'What can I do here?'content -->
-			<!-- The content is in a definition list <dl> where the descriptive text
-			is in the term <dt>, and the link is in the definition <dd> -->
-			<div class="boxBG pad5">
-				<dl class="boxList">
-					<dt class="whatList"><a class="homeLink" href="http://ella.jax.org:8000/MOUSE/class-tree?object=Pathways">Browse the pathway ontology</a> in the MouseCyc database</dt>
-					<dt class="whatList"><a class="homeLink" href="http://ella.jax.org:8000/MOUSE/class-instances?object=Pathways">Browse all pathways</a> represented in MouseCyc</dt>
-					<dt class="whatList">Browse a list of <a class="homeLink" href="http://ella.jax.org:8000/MOUSE/class-instances?object=Genes">all genes in MouseCyc</a></dt>
-					<dt class="whatList">Browse a list of <a class="homeLink" href="http://ella.jax.org:8000/MOUSE/class-instances?object=Proteins">all proteins in MouseCyc</a> according to their activity</dt>
-					<dt class="whatList">Browse a list of <a class="homeLink" href="http://ella.jax.org:8000/MOUSE/class-instances?object=Compounds">all compounds represented in MouseCyc</a></dt>
-					<dt class="whatList"><a class="homeLink" href="http://ella.jax.org:8000/expression.html">Overlay experimental data onto the Pathway Tools Omics Viewer</a></dt>
-					<dt class="whatList"><a class="homeLink" href="http://ella.jax.org:8000/MOUSE/NEW-IMAGE?type=OVERVIEW&force=t">Generate a mouse metabolic map</a></dt>
-				</dl>
+		</td>
+		<td width="50%" valign="top">
+			<!-- Right-top box: FAQs -->
+			<div class="blueBorder marginBottom leftCenterMargin">
+				<div class="boxTitle">
+					FAQs
+				</div>
+
+				<!-- FAQs content -->
+				<!-- The content is in a definition list <dl> where the list title is in
+				the term <dt>, and FAQ question is in the definition <dd>. Note the link
+				uses a javascript function to open a separate window;
+				javascript:openFaqWindow("faqPage.shtml")'-->
+				<div class="boxBG pad5">
+					<dl class="boxList">
+						<dt>How do I ...</dt>
+						<dd class="faqList">.. see a list of all pathways in MouseCyc? <a class="small homeLink" href='javascript:openFaqWindow("GQ_list.shtml")'>FAQ</a></dd>
+						<dd class="faqList">.. search MouseCyc for a specific compound? <a class="small homeLink" href='javascript:openFaqWindow("GQ_list.shtml")'>FAQ</a></dd>
+						<dd class="faqList">.. display my mouse gene expression data in the context of mouse pathways? <a class="small homeLink" href='javascript:openFaqWindow("GQ_list.shtml")'>FAQ</a></dd>
+						<dd class="faqList">.. compare mouse pathways to human pathways? <a class="small homeLink" href='javascript:openFaqWindow("GQ_list.shtml")'>FAQ</a></dd>
+					</dl>
+
+					<!-- link to all FAQs page -->
+					<a class="small homeLink" href="<!--#include file='include/faq_url.html'-->FAQ.shtml">More FAQs</a>
+				</div>
 			</div>
-		</div>
-    </div>
-
-	<div class="boxRightWrap">
-		<!-- Right-top box: FAQs -->
-		<div class="blueBorder marginBottom">
-			<div class="boxTitle">
-				FAQs
+		</td>
+	</tr>
+	<tr>
+		<td width="50%" valign="top">
+			<div class="blueBorder leftCenterMargin">
+				<!--#include file='stats/path_stats.shtml'-->
 			</div>
-
-			<!-- FAQs content -->
-			<!-- The content is in a definition list <dl> where the list title is in
-			the term <dt>, and FAQ question is in the definition <dd>. Note the link
-			uses a javascript function to open a separate window;
-			javascript:openFaqWindow("faqPage.shtml")'-->
-			<div class="boxBG pad5">
-				<dl class="boxList">
-					<dt>How do I ...</dt>
-					<dd class="faqList">.. see a list of all pathways in MouseCyc? <a class="small homeLink" href='javascript:openFaqWindow("faqPage.shtml")'>FAQ</a></dd>
-					<dd class="faqList">.. search MouseCyc for a specific compound? <a class="small homeLink" href='javascript:openFaqWindow("faqPage.shtml")'>FAQ</a></dd>
-					<dd class="faqList">.. display my mouse gene expression data in the context of mouse pathways? <a class="small homeLink" href='javascript:openFaqWindow("faqPage.shtml")'>FAQ</a></dd>
-					<dd class="faqList">.. compare mouse pathways to human pathways? <a class="small homeLink" href='javascript:openFaqWindow("faqPage.shtml")'>FAQ</a></dd>
-				</dl>
-
-				<!-- link to all FAQs page -->
-				<a class="small homeLink" href="<!--#include file='include/faq_url.html'-->">More FAQs</a>
-			</div>
-		</div>
-
-		<!-- Right-bottom box: Stats -->
-		<!--#include file='stats/path_stats.shtml'-->
-
-	</div>
-</div>
+		</td>
+	</tr>
+</table>
 
 <!-- News box -->
 <!------------------------------ NO NEWS BOX FOR BIOCHEMICAL PATHWAYS MINI-HOME PAGE --------------------------
