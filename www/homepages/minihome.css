@@ -1,6 +1,5 @@
 .mgiDescription {
     padding: 4px 10px; 
-    position: relative; 
     line-height: 1.5;
     text-align: center;
     color: #002255;
@@ -17,6 +16,14 @@
     margin-left: auto;
     margin-right: auto;
 
+}
+#mgiNews {
+    font-size:12px;
+    padding:3px;
+}
+#mouseCommunityNews {
+    font-size:12px;
+    padding:8px;
 }
 
     .homePageTitle {
@@ -108,15 +115,27 @@
         margin-top:0px;
         margin-bottom:1em;
     }
-
     .statList dt {
         float:left;
         text-align:right;
         margin-right:1em;
         width:7em;
     }
-
     .statList dd {
+        margin-bottom:.5em;
+        margin-left:7em;
+    }
+    .statListHomePage {
+        margin-top:0px;
+        margin-bottom:1em;
+    }
+    .statListHomePage dt {
+        float:left;
+        text-align:right;
+        margin-right:1em;
+        width:7em;
+    }
+    .statListHomePage dd {
         margin-bottom:.5em;
         margin-left:7em;
     }
@@ -139,6 +158,10 @@
     .faqList {
         margin-top:.5em;
         margin-left:5em;
+    }
+    .faqListHomePage {
+        margin-top:.5em;
+        margin-left:2em;
     }
 
     .clear {
@@ -178,7 +201,7 @@
     }
     
     /*:focus { -moz-outline-style: none; }*/
-	a { outline:expression(hideFocus=‘true’); outline:0; }
+    a { outline:expression(hideFocus=‘true’); outline:0; }
      
     a.homeLink:link {
         color:#1433C8;
