@@ -176,6 +176,9 @@
         border-bottom: 2px solid #DFEFFF;
         
     }
+    
+    /*:focus { -moz-outline-style: none; }*/
+	a { outline:expression(hideFocus=‘true’); outline:0; }
      
     a.homeLink:link {
         color:#1433C8;

@@ -47,7 +47,7 @@
 				<div class="smallGOWrap blueBorder">
 					<a href='javascript:Toggle_GOimages("BigImage");' class="small homeLink">show larger image [-]</a>
 					<br />
-					<a class="imgTopBottom" href='javascript:openFaqWindow("GQ_list.shtml")'>
+					<a class="imgTopBottom" href='javascript:openFaqWindow("GO_ortho.shtml")'>
 						<acronym title="Will link to special FAQ window">
 							<img class="imgTopBottom pad5" src="images/GOgraph_Slc22a6_150h.png" alt="GO Graph" name="GOgraph" border="0">
 						</acronym>
@@ -61,7 +61,7 @@
 				<div class="bigGOWrap blueBorder" id="BigImage" style="display:none;">
 					<a href='javascript:Toggle_GOimages("BigImage");' class="small homeLink">show smaller image [-]</a>
 					<br />
-					<a class="imgTopBottom" href='javascript:openFaqWindow("GQ_list.shtml")'>
+					<a class="imgTopBottom" href='javascript:openFaqWindow("GO_ortho.shtml")'>
 						<acronym title="Will link to special FAQ window">
 							<img class="imgTopBottom pad5" src="images/GOgraph_Slc22a6.png" alt="GO Graph" name="GOgraph" border="0">
 						</acronym>
@@ -122,11 +122,13 @@
 					<dl class="boxList">
 						<dt>How do I...</dt>
 						<dd class="faqList">.. download all mouse GO annotations? <a class="small homeLink" href='javascript:openFaqWindow("GO_dload.shtml")'>FAQ</a></dd>
-						<dd class="faqList">.. view annotations for mouse/human/rat ortholog sets? <a class="small homeLink" href='javascript:openFaqWindow("GQ_list.shtml")'>FAQ</a></dd>
-						<dd class="faqList">.. find shared function for gene sets? <a class="small homeLink" href='javascript:openFaqWindow("GQ_list.shtml")'>FAQ</a></dd>
-						<dd class="faqList">.. access GO annotation detail page for any gene in MGI? <a class="small homeLink" href='javascript:openFaqWindow("GQ_list.shtml")'>FAQ</a></dd>
-						<dd class="faqList">.. search for shared GO terms or parents for a list of specific genes? <a class="small homeLink" href='javascript:openFaqWindow("GQ_list.shtml")'>FAQ</a></dd>
-						<dd class="faqList">.. obtain FASTA sequence files for genes with GO annotations in common? <a class="small homeLink" href='javascript:openFaqWindow("GQ_list.shtml")'>FAQ</a></dd>
+						<dd class="faqList">.. find all GO annotations for a specific gene? <a class="small homeLink" href='javascript:openFaqWindow("GO_gene.shtml")'>FAQ</a></dd>
+						<dd class="faqList">.. find all genes with shared annotation to GO term? <a class="small homeLink" href='javascript:openFaqWindow("GO_term.shtml")'>FAQ</a></dd>
+						<dd class="faqList">.. find shared function for a list of specific genes? <a class="small homeLink" href='javascript:openFaqWindow("GO_finder.shtml")'>FAQ</a></dd>
+						<dd class="faqList">.. view annotations for mouse/human/rat ortholog sets? <a class="small homeLink" href='javascript:openFaqWindow("GO_ortho.shtml")'>FAQ</a></dd>
+						<dd class="faqList">.. obtain FASTA sequence files for genes with GO annotations in common? <a class="small homeLink" href='javascript:openFaqWindow("GO_seq.shtml")'>FAQ</a></dd>
+
+
 					</dl>
 					<!-- link to all FAQs page -->
 					<a class="small homeLink" href="<!--#include file='include/faq_url.html'-->FAQ.shtml">More FAQs</a>
@@ -136,8 +138,15 @@
 	</tr>
 	<tr>
 		<td width="50%" valign="top">
-			<div class="blueBorder leftCenterMargin">
-				<!--#include file='stats/go_stats.shtml'-->
+			<div class="blueBorder leftCenterMargin statList">
+				<div class="boxTitle">
+					<div class="left">MGI Functional Annotations data:</div>
+					<div class="right"><!--#include file='stats/stats_date.shtml'--></div>
+				</div>
+				<div class="boxBG pad5 small">
+					<!--#include file='stats/go_stats.shtml'-->
+					<a class="small homeLink" href="<!--#include file="include/mgihome_url.html"-->homepages/stats/all_stats.shtml#allstats_go">More statistics</a>
+				</div>
 			</div>
 		</td>
 	</tr>

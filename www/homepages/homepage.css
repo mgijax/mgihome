@@ -58,6 +58,9 @@ body {
 
 /*
 
+/*:focus { -moz-outline-style: none; }*/
+a { outline:expression(hideFocus=‘true’); outline:0; }
+
 a.homePageBody:link {		
 color: #1433c8;
 text-decoration: none;

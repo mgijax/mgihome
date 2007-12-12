@@ -107,8 +107,15 @@
 	</tr>
 	<tr>
 		<td width="50%" valign="top">
-			<div class="blueBorder leftCenterMargin">
-				<!--#include file='stats/pad_stats.shtml'-->
+			<div class="blueBorder leftCenterMargin statList">
+				<div class="boxTitle">
+					<div class="left">MGI contains</div>
+					<div class="right"><!--#include file='stats/stats_date.shtml'--></div>
+				</div>
+				<div class="boxBG pad5 small">
+					<!--#include file='stats/pad_stats.shtml'-->
+					<a class="small homeLink" href="<!--#include file="include/mgihome_url.html"-->homepages/stats/all_stats.shtml#allstats_pad">More statistics</a>
+				</div>
 			</div>
 		</td>
 	</tr>

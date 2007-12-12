@@ -724,7 +724,7 @@ class UserInput:
 			'</PRE></BLOCKQUOTE></P>' ]
 		
 		page_template = template.Template(config['MGICONFIG_PATH'] + 'web/')
-		
+		page_template.setContentType('')
 		page_template.setTitle('Confirmation')
 		page_template.setHeaderBarMainText('Confirmation')
 		page_template.setBody(string.join (pageItems, '\n'))
