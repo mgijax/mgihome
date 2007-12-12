@@ -28,7 +28,6 @@ import time
 stats.setSqlFunction (db.sql)
 
 STATSDIR = config['MGIHOME_PATH'] + 'www/homepages/stats/'
-INCLUDEDIR = config['MGIHOME_PATH'] + 'www/include/' 
 
 ## This is all the mini home page group information.  Its formatted like a tuple
 ## Where the group name is first, and the name out the file its generating is second
@@ -81,7 +80,7 @@ def getStatsForMinihome(group, name):
 	groupObj = stats.StatisticGroup (group)
 	statistics = groupObj.getStatistics()
 	
-	datefile  = open(INCLUDEDIR + 'stats_date.shtml', "w") 
+	datefile  = open(STATSDIR + 'stats_date.shtml', "w") 
 	datefile.write(datetime)
 	datefile.close()
 	
