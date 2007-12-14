@@ -61,21 +61,20 @@
 				is in the term <dt>, and the link is in the definition <dd> -->
 				<div class="boxBG pad5">
 					<dl class="boxList">
-						<dt></dt>
-						<dd class="searchList"><a class="homeLink" href="<!--#include file='include/wi_url.html'-->searches/allele_form.shtml">Search for mutations</a>
-							or QTL based on phenotype, human disease,  mutation type, gene, or genome location.</dd>
-						<dd class="searchList"><a class="homeLink" href="<!--#include file='include/wi_url.html'-->searches/MP_form.shtml">Search for a phenotype term</a>
-							to find relevant mutant genotypes.</dd>
-						<dd class="searchList"><a class="homeLink" href="<!--#include file='include/java_url.html'-->WIFetch?page=omimVocab&subset=A">Search for a human disease or condition terms</a>
-							to find  mouse models.</dd>
-						<dd class="searchList"><a class="homeLink" href="<!--#include file='include/java_url.html'-->WIFetch?page=markerQF">Search for candidate genes</a>
-							for a given phenotype within a  genomic interval.</dd>
-						<dd class="searchList"><a class="homeLink" href="<!--#include file='include/java_url.html'-->WIFetch?page=batchQF">Input a list of genes</a>
-							and retrieve associated alleles and  phenotypes.</dd>
-						<dd class="searchList"><a class="homeLink" href="<!--#include file='include/mgihome_url.html'-->nomen/allmut_form.shtml">Submit a new allele, mutation, or transgene</a>
-							and receive official nomenclature and an MGI accession identifier.</dd>
-						<dd class="searchList">View an <a class="homeLink" href="<!--#include file='include/mgihome_url.html'-->nomen/allmut_quickhelp.shtml">abbreviated</a> or <a class="homeLink" href="<!--#include file='include/mgihome_url.html'-->nomen/gene.shtml">full</a>
-							guide to proper naming of alleles and mutations.
+						<dt class="whatList"><a class="homeLink" href="<!--#include file='include/wi_url.html'-->searches/allele_form.shtml">Search for mutations</a>
+							or QTL based on phenotype, human disease,  mutation type, gene, or genome location.</dt>
+						<dt class="whatList"><a class="homeLink" href="<!--#include file='include/wi_url.html'-->searches/MP_form.shtml">Search for a phenotype term</a>
+							to find relevant mutant genotypes.</dt>
+						<dt class="whatList"><a class="homeLink" href="<!--#include file='include/java_url.html'-->WIFetch?page=omimVocab&subset=A">Search for a human disease or condition term</a>
+							to find  mouse models.</dt>
+						<dt class="whatList"><a class="homeLink" href="<!--#include file='include/java_url.html'-->WIFetch?page=markerQF">Search for candidate genes</a>
+							for a given phenotype within a  genomic interval.</dt>
+						<dt class="whatList"><a class="homeLink" href="<!--#include file='include/java_url.html'-->WIFetch?page=batchQF">Input a list of genes</a>
+							and retrieve associated alleles and  phenotypes.</dt>
+						<dt class="whatList"><a class="homeLink" href="<!--#include file='include/mgihome_url.html'-->nomen/allmut_form.shtml">Submit a new allele, mutation, or transgene</a>
+							and receive official nomenclature and an MGI accession identifier.</dt>
+						<dt class="whatList">View an <a class="homeLink" href="<!--#include file='include/mgihome_url.html'-->nomen/allmut_quickhelp.shtml">abbreviated</a> or <a class="homeLink" href="<!--#include file='include/mgihome_url.html'-->nomen/gene.shtml">full</a>
+							guide to proper naming of alleles and mutations.</dt>
 					</dl>
 				</div>
 			</div>
