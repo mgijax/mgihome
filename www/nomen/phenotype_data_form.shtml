@@ -41,11 +41,9 @@ Additional allele information not currently in MGI (ES cell line, strain of orig
 
 <HR>
 <H3> Genetic Background:</H3>
-Strain/Genetic Background on which the mutation arose:<br>
-<INPUT TYPE="text" NAME="strainMutation" SIZE=60>
+Strain/Genetic Background on which the mutation arose:  <INPUT TYPE="text" NAME="strainMutation" SIZE=60>
 <br><br>
-Strain/Genetic Background on which the phenotype was analyzed:<br>
-<INPUT TYPE="text" NAME="strainPhenotype" SIZE=60>
+Strain/Genetic Background on which the phenotype was analyzed:  <INPUT TYPE="text" NAME="strainPhenotype" SIZE=60>
 <br><br>
 Other Strain/Background Information (e.g. specify crosses):
 Click here for an <A HREF="alleleform_strainex.shtml">example.</A><br>
@@ -65,7 +63,8 @@ Phenotypic Description (enter text, describing details of phenotype observed, et
 Click here for an <A HREF="alleleform_phenoex.shtml">example</A>. You may browse the
 <A HREF="<!--#include file='include/wi_url.html'-->searches/MP_form.shtml">Mammalian Phenotype Ontology</A> and use these terms to describe the phenotype.<br><br>
 
-
+<TEXTAREA NAME ="description" ROWS=10 COLS=65></TEXTAREA>
+<br><br>
 Other remarks (gene function/pathway, available clones, GenBank numbers, etc.):<br>
 <textarea name="remarks" rows="3" cols="65"></textarea>
 <br><br>
