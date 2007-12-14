@@ -16,7 +16,7 @@
 <li> Thank you for helping us keep MGI current.
 </ul>
 </P>
-<FORM METHOD="POST" ACTION="allmut_submit.cgi">
+<FORM METHOD="POST" ACTION="pheno_submit.cgi">
 <HR>
 <H3>Mutation Name:</H3>
 
@@ -25,10 +25,14 @@ Official <B>symbol</B> for this mutation:
 <BR><BR>
 <B>MGI accession ID</B> for this mutation:
 <INPUT TYPE="text" NAME="allelename" SIZE=80>  (required)
-<BR>
+<BR><br>
 (Find the MGI accession ID by 
 <a href="<!--#include file='include/java_url.html'-->WIFetch?page=markerQF">searching MGI</A>.)<BR><BR>
 Nicknames, synonyms for this mutant allele  <INPUT TYPE="text" NAME="synonyms" SIZE=55>
+<BR><br>
+Additional allele information not currently in MGI (ES cell line, strain of origin, mutation type):<BR>
+<TEXTAREA NAME="remarks" ROWS=3 COLS=65></TEXTAREA>
+<BR><BR>
 
 <UL>
 <LI>To submit a new allele, mutation, or transgene, please use the <a href="allmut_form.shtml">Mutation Submission Form</A>.
@@ -68,8 +72,9 @@ Other remarks (gene function/pathway, available clones, GenBank numbers, etc.):<
 <!--<br>Upload a data file (image, text description, Excel, or text data)
 <input name="myFile" value="" type="file"> <br><br>
 <br>Upload another data file 
-<input name="myFile" value="" type="file"> <br><br>
-If you need to upload additional data files please contact us at: <ul><font color="#1822cd"><a href="mailto:submissions@informatics.jax.org">submissions@informatics.jax.org</a></font>-->
+<input name="myFile" value="" type="file"> <br><br>-->
+To submit data files (image, text description, excel,  or text data), please contact us at:
+<font color="#1822cd"><a href="mailto:submissions@informatics.jax.org">submissions@informatics.jax.org</a></font>.
 
 <hr>
 
@@ -107,7 +112,7 @@ Telephone Number:               <INPUT TYPE="text" NAME="phone" SIZE=30>
 Fax Number:                     <INPUT TYPE="text" NAME="fax" SIZE=30>
 </PRE>
 <BR>
-<H3>Once you submit this completed form, we will e-mail you the MGI accession number for this mutant allele.  Thank you!</H3>
+<H3>Thank you for your contribution.</H3>
 <HR>
 <INPUT TYPE=submit VALUE="Submit"> <INPUT TYPE=reset VALUE="Reset Form">
 
