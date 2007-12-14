@@ -25,9 +25,9 @@ Official <B>symbol</B> for this mutation:
 <BR><BR>
 <B>MGI accession ID</B> for this mutation:
 <INPUT TYPE="text" NAME="allelename" SIZE=80>  (required)
-<BR><BR>
-(Find the MGI accession ID by
-<A HREF="<!--#include file='include/wi_url.html'-->searches/marker_form.shtml">searching MGI</A>.)<BR><BR>
+<BR>
+(Find the MGI accession ID by 
+<a href="<!--#include file='include/java_url.html'-->WIFetch?page=markerQF">searching MGI</A>.)<BR><BR>
 Nicknames, synonyms for this mutant allele  <INPUT TYPE="text" NAME="synonyms" SIZE=55>
 
 <UL>
@@ -59,27 +59,19 @@ We will contact you about the genetic background information for this mutation.
 <H3>Phenotype:</H3>
 Phenotypic Description (enter text, describing details of phenotype observed, etc.):<BR>
 Click here for an <A HREF="alleleform_phenoex.shtml">example</A>. You may browse the
-<A HREF="<!--#include file='include/wi_url.html'-->searches/MP_form.shtml">Mammalian Phenotype Ontology</A> and use these terms to describe the phenotype.<br>
+<A HREF="<!--#include file='include/wi_url.html'-->searches/MP_form.shtml">Mammalian Phenotype Ontology</A> and use these terms to describe the phenotype.<br><br>
 
-<TEXTAREA NAME ="description" ROWS=10 COLS=65></TEXTAREA>
-<br>
-Upload data file (image, text description, Excel, or text data file): 
-<INPUT TYPE="text" NAME="upload1" SIZE=40> 
-<INPUT TYPE="text" VALUE="Browse..." size=10>
+
+Other remarks (gene function/pathway, available clones, GenBank numbers, etc.):<br>
+<textarea name="remarks" rows="3" cols="65"></textarea>
 <br><br>
+<br>Upload a data file (image, text description, Excel, or text data)
+<input name="myFile" value="" type="file"> <br><br>
+<br>Upload another data file 
+<input name="myFile" value="" type="file"> <br><br>
+If you need to upload additional data files please contact us at: <ul><font color="#1822cd"><a href="mailto:submissions@informatics.jax.org">submissions@informatics.jax.org</a></font></ul> 
 
-Upload another file (images, text descriptions, Excel, or text data file). File path: 
-<INPUT TYPE="text" NAME="upload2" SIZE=40> 
-<INPUT TYPE="text" VALUE="Browse..." size=10>
-<br><br>
-To submit additional files, contact us at <a href="mailto:submissions@informatics.jax.org">submissions@informatics.jax.org</a>
-
-
-
-
-<BR><BR>
-
-<HR>
+<hr>
 
 <H3>Status and References:</H3>
 Is this information published? <BR>
