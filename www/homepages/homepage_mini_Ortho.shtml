@@ -23,7 +23,7 @@
 <!-- mini homepage header section -->
 <table class="sideMargin marginTop" border="0" cellspacing="0" cellpadding="0">
 	<tr>
-		<td align="center" valign="middle">
+		<td width="80%" align="center" valign="middle">
 			<span class="homePageTitle">
 				Mammalian Orthology
 			</span>
@@ -33,11 +33,13 @@
 				 dog and 12 other mammalian species.
 			</span>
 		</td>
-		<td>
-			<div class="sideMargin marginBottom blueBorder pad5">
-				<center><a HREF="<!--#include file='include/mouseblast_url.html'-->">
+		<td align="center">
+			<div class="sideMargin marginBottom blueBorder pad5 small">
+				<a href='javascript:openFaqWindow("")'>
 					<img class="outlineImg" src="images/OrtholCartoonSmallerDNA.png" alt="Orthology" name="Orthology">
-				</a></center>
+				</a>
+				<br />
+				<em>Caption text?</em>
 			</div>
 		</td>
 	</tr>
@@ -64,6 +66,8 @@
 						<dt class="whatList"><a href="<!--#include file='include/wi_url.html'-->searches/linkmap_form.shtml" class="homeLink">Build a Mouse Linkage Map with Orthologs</a>.</dt>
 						<dt class="whatList">View the <a href="<!--#include file='include/wi_url.html'-->reports/homologymap/mouse_human.shtml" class="homeLink">Mouse-Human</a>
 							or <a href="<!--#include file='include/wi_url.html'-->reports/homologymap/mouse_rat.shtml" class="homeLink">Mouse-Rat</a> comparative genome map.</dt>
+						<dt class="whatList"><a href="<!--#include file='include/ftp_url.html'-->pub/reports/index.html#orthology" class="homeLink">Download a complete set</a> of rat, human, dog, or
+							chimpanzee orthologs for mouse genes. Some sets also include associated sequences, phenotype characteristics, or human disease data.</dt>
 					</dl>
 				</div>
 			</div>
@@ -140,7 +144,6 @@
 		<li	><a href="tabContents/Ortho_About.shtml" rel="ajaxcontentarea">About MGI Orthology</a></li>
 		<li	><a href="tabContents/Ortho_Reports.shtml" rel="ajaxcontentarea">Orthology reports</a></li>
 		<li class="selected"><a href="tabContents/Ortho_Help.shtml" rel="ajaxcontentarea">Help documents</a></li>
-		<li	><a href="tabContents/Ortho_Collaborators.shtml" rel="ajaxcontentarea">Collaborators</a></li>
 		<li	><a href="tabContents/Ortho_Resources.shtml" rel="ajaxcontentarea">Additional resources</a></li>
 
 

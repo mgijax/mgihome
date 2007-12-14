@@ -53,7 +53,7 @@
 						</acronym>
 						<br />
 						<acronym title="Will link to a special FAQ window">
-							<a href='javascript:openFaqWindow("GQ_list.shtml")' class="small homeLink">GO annotation comparison for mouse Slc22a6 and its human and rat orthologs</a>
+							<a href='javascript:openFaqWindow("GO_ortho.shtml")' class="small homeLink">GO annotation comparison for mouse Slc22a6 and its human and rat orthologs</a>
 						</acronym>
 					</a>
 				</div>
@@ -67,7 +67,7 @@
 						</acronym>
 						<br />
 						<acronym title="Will link to a special FAQ window">
-							<a href='javascript:openFaqWindow("GQ_list.shtml")' class="small homeLink">GO annotation comparison for mouse Slc22a6 and its human and rat orthologs</a>
+							<a href='javascript:openFaqWindow("GO_ortho.shtml")' class="small homeLink">GO annotation comparison for mouse Slc22a6 and its human and rat orthologs</a>
 						</acronym>
 					</a>
 				</div>
@@ -95,7 +95,7 @@
 							and mouse annotations in MGI.</dt>
 						<dt class="whatList"><a href="<!--#include file='include/java_url.html'-->WIFetch?page=markerQF" class="homeLink">Search for genes</a>
 							using GO terms and other gene attributes.</dt>
-						<dt class="whatList"><a href="http://proto.informatics.jax.org/prototypes/GOgraphEX/OrthoDisease_Graphs/OMIM_DisorderGraphs/" class="homeLink">Access GO
+						<dt class="whatList"><a href="http://firien.informatics.jax.org/GOgraphs/OrthoDisease/DisorderGraphs/index.html" class="homeLink">Access GO
 							annotations for genes associated with OMIM</a>.</dt>
 						<dt class="whatList"><a href="<!--#include file='include/java_url.html'-->WIFetch?page=batchQF" class="homeLink">Obtain sets of MGI IDs</a>
 							for use in GO tools.</dt>
@@ -173,11 +173,11 @@
 <div class="boxWide marginBottom">
 	<ul id="maintab" class="shadetabs">
 		<li class="selected"><a href="tabContents/GO_About.shtml" rel="ajaxcontentarea">About GO at MGI</a></li>
-		<li><a href="tabContents/GO_Resources.shtml" rel="ajaxcontentarea">GO resources</a></li>
-		<li><a href="tabContents/GO_Annot.shtml" rel="ajaxcontentarea">Public GO Annotation Projects</a></li>
-		<li><a href="tabContents/GO_Literature.shtml" rel="ajaxcontentarea">Literature using GO</a></li>
-		<li><a href="tabContents/GO_Curators.shtml" rel="ajaxcontentarea">Interpreting our annotations</a></li>
-		<li><a href="tabContents/GO_Other.shtml" rel="ajaxcontentarea">Submit comments</a></li>
+		<li><a href="tabContents/GO_Resources.shtml" rel="ajaxcontentarea">GO Resources</a></li>
+		<li><a href="tabContents/GO_Annot.shtml" rel="ajaxcontentarea">GO Annotation Projects</a></li>
+		<li><a href="tabContents/GO_Literature.shtml" rel="ajaxcontentarea">GO Literature</a></li>
+		<li><a href="tabContents/GO_Curators.shtml" rel="ajaxcontentarea">Interpreting annotations</a></li>
+		<li><a href="tabContents/GO_Other.shtml" rel="ajaxcontentarea">Contact us</a></li>
 	</ul>
 	<!-- this is where the tab text gets inserted by javascript -->
 	<div id="ajaxcontentarea" class="contentstyle" style="color:#002255;">

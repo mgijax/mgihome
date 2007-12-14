@@ -16,6 +16,7 @@
 
 <link rel="stylesheet" type="text/css" href="minihome.css" />
 
+
 <!--#include file='include/templateBodyStart.html'-->
 
 <!-- start body content -->
@@ -35,26 +36,26 @@
 		</td>
 		<td>
 			<div class="sideMargin marginBottom blueBorder pad5 imgCenter">
-				<div class="clear">
-				<div class="imgCenter">
-					<a href="<!--#include file='include/wi_url.html'-->external/festing/search_form.cgi">
-						<img class="outlineImg" src="images/MouseStrainMulti2.png" alt="Strains" height="105">
-					</a>
-					<br />
-					<em><a class="small homeLink" href="<!--#include file='include/wi_url.html'-->external/festing/search_form.cgi">
-						Inbred Strain Characteristics
-					</a></em>
-				</div>
-				<div class="imgCenter">
-					<a href="<!--#include file='include/java_url.html'-->WIFetch?page=snpQF">
-						<img class="outlineImg" src="images/SNP.png" alt="SNP" width="158" height="105">
-					</a>
-					<br />
-					<em><a class="small homeLink" href="<!--#include file='include/java_url.html'-->WIFetch?page=snpQF">
-						SNP Query Form
-					</a></em>
-				</div>
-				</div>
+					<div class="imgCenter">
+						<table>
+						<tr><td align="center">
+							<a href="<!--#include file='include/wi_url.html'-->external/festing/search_form.cgi">
+								<img class="outlineImg" src="images/MouseStrainMulti2.png" alt="Strains" height="105">
+							</a>
+							<br />
+							<em><a class="small homeLink" href="<!--#include file='include/wi_url.html'-->external/festing/search_form.cgi">
+								Inbred Strain Characteristics
+							</a></em>
+						</td><td align="center">
+							<a href="<!--#include file='include/java_url.html'-->WIFetch?page=snpQF">
+								<img class="outlineImg" src="images/SNP.png" alt="SNP" width="158" height="105">
+							</a>
+							<br />
+							<em><a class="small homeLink" href="<!--#include file='include/java_url.html'-->WIFetch?page=snpQF">
+								SNP Query Form
+							</a></em>
+						</td></tr></table>
+					</div>
 			</div>
 		</td>
 	</tr>
