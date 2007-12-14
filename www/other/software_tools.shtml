@@ -66,7 +66,7 @@
 <ul>
   <li>The MGI Public Ad Hoc SQL Server is available for running custom SQL queries against the MGI database. </li>
   <li>MGI uses Sybase relational databases to store information.</li>
-  <li>You must install Sybase Open Client in order to query the database.  A <a href="http://www.sybase.com/downloads">free download</a> is available from Sybase.</li>
+  <li>You must install client software that can connect to a Sybase data server in order to query the database.  You can use free clients likd JDBC (Java), ODBC (Windows)< or SQuirrelSQL (<a href="http://squirrel-sql.sourceforge.net/">http://squirrel-sql.sourceforge.net/</a>.</li>
 </ul>
 
 
@@ -82,7 +82,7 @@
   <li>Contact <a href="../support/tjl_inbox.shtml">MGI User Support</a> to request an SQL account.  You will receive you a login and password.</li>
   <li>Configure requirements:</li>
    <ol>
-  <li>Sybase Open Client</li>
+  <li>A database connection client such as JDBC, ODBC, SQuirrel-SQL, etc.</li>
   <li>Application to query the database; such as: isql, ODBC client, jdbc client, etc.</li>
   <li>Sybase Interface Entry<br>
       Server Entry	Version 1<br>
