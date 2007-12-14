@@ -1,28 +1,25 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
-	<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
-	<title>Untitled Document</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<title>Untitled Document</title>
 </head>
 
 <body>
-
 <table width="100%">
-	<tr>
-		<td width="50%">
-			<ul id="resources">
-				<li><a href="<!--#include file="include/ftp_url2.html"-->pub/reports/index.html#orthology">Download</a> reports</li>
-				<li> Tree Families Phylogenetic Database (<a href="http://www.treefam.org/">TreeFam</a>) </li>
-			</ul>
-		</td>
-		<td>
-			<ul id="resources2">
-
-				<li> Protein Information Resources Super Families (<a href="http://pir.georgetown.edu/pirwww/dbinfo/pirsf.shtml">PIRSF</a>)</li>
-			</ul>
-		</td>
-	</tr>
+	<tr><td>
+		<strong>Additional MGI orthology resources:</strong>
+		<ul>
+			<li>Retrieve an <a href="<!--#include file='include/wi_url.html'-->searches/oxfordgrid_form.shtml" class="homeLink">Oxford Grid</a></li>
+			<li><a href="<!--#include file='include/wi_url.html'-->reports/homologymap/mouse_human.shtml" class="homeLink">View orthologies between mouse and human</a> at the whole genome level</li>
+			<li><a href="<!--#include file='include/wi_url.html'-->reports/homologymap/mouse_rat.shtml" class="homeLink">View orthologies between mouse and rat</a> at the whole genome level</li>
+		</ul>
+		<strong>Other orthology resources:</strong>
+		<ul>
+			<li>Tree Families Phylogenetic Database (<a href="http://www.treefam.org/" class="homeLink">TreeFam</a>)</li>
+			<li>Protein Information Resources Super Families (<a href="http://pir.georgetown.edu/pirwww/dbinfo/pirsf.shtml" class="homeLink">PIRSF</a>)</li>
+		</ul>
+	</td></tr>
 </table>
-
 </body>
 </html>
