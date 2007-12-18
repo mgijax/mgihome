@@ -14,6 +14,8 @@ import homelib
 import webshare_lib
 
 import os
+import db
+import string
 
 def listToFile (str_list, filename):
     print "writing %s" % filename
@@ -22,6 +24,34 @@ def listToFile (str_list, filename):
         fp.write ('%s\n' % item)
     fp.close()
     return
+
+def getDbDate ():
+    # Purpose: return value of latest db update
+    # Returns: string
+    # Assumes: nothing
+    # Effects: nothing
+    # Throws: db module may throw DB exceptions
+    # pull the MGI:ID and geneSymbol from the database
+
+    db.useOneConnection(1)
+    db.set_sqlUser(config["DB_USER"])
+    db.set_sqlPassword(config["DB_PASSWORD"])
+    db.set_sqlServer(config["DB_SERVER"])
+    db.set_sqlDatabase(config["DB_DATABASE"])
+    cmds = [] # SQL command list
+    cmds.append(string.join([
+        'SELECT CONVERT(varchar, lastdump_date, 106) as dbDate, '
+        'public_version '
+        'FROM MGI_dbInfo '
+    ]))
+
+    #  Excecute queries
+    results = db.sql(cmds, 'auto')
+    db.useOneConnection(0)
+    dbDateInfo = results[0][0]
+
+    return dbDateInfo["dbDate"]
+
 
 def stringToFileNoNL (s, filename):
     #  Ultimately this should replace the stringToFile method
@@ -133,6 +163,7 @@ def main ():
     stringToFile (config['FAQ_URL'],
         '../www/include/faq_url.html')
 
+    stringToFile(getDbDate(), '../www/include/stats_date.shtml')
 
     #####----- Template Include Files --------#####
     createIncludeLink('templateHead.html', config['MGICONFIG_PATH'] + 'web/templateHead.html')
