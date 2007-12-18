@@ -80,9 +80,6 @@ def getStatsForMinihome(group, name):
 	groupObj = stats.StatisticGroup (group)
 	statistics = groupObj.getStatistics()
 	
-	datefile  = open(STATSDIR + 'stats_date.shtml', "w") 
-	datefile.write(datetime)
-	datefile.close()
 	
 	file = open(STATSDIR +name, "w")
 	file.write('<dl>')
