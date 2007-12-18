@@ -76,7 +76,6 @@ def number_format(num, places=0):
 
 def getStatsForMinihome(group, name):
 	
-	datetime = time.strftime ('%d %b %Y', time.localtime (time.time()))	
 	groupObj = stats.StatisticGroup (group)
 	statistics = groupObj.getStatistics()
 	
