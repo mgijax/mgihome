@@ -65,6 +65,10 @@ class formMailer (CGI.CGI):
         #       specify various sections for the e-mail sent
         # DOES: see IS section
 
+        REPLY_FOOTER = '\n\nWe will mail your accession ID as soon '\
+                       'as possible.  If you have questions regarding your '\
+                       'submission, please contact. %s  \n'
+
         def __init__ (self,
                 form_name,              # string; name of the form submitted
                 curator_address,        # string; where to send the e-mail
@@ -147,6 +151,9 @@ class formMailer (CGI.CGI):
                 #       method should be overridden in subclasses as needed.
 
                 return
+        
+        def setFooter(self, value):
+        	self.REPLY_FOOTER = value
 
         def main(self):
                 # Purpose: main processing loop.  check the parameters for
@@ -173,10 +180,6 @@ class formMailer (CGI.CGI):
                         'Below is a summary of what you have submitted.\n'\
                         'We will contact you if any questions arise '\
                         'concerning your submission.\n'
-                
-                REPLY_FOOTER = '\n\nWe will mail your accession ID as soon '\
-                    'as possible.  If you have questions regarding your '\
-                    'submission, please contact. %s  \n'
 
                 # look for any missing fields:  (bail out if any found)
                 missing_fields = []
@@ -264,7 +267,7 @@ class formMailer (CGI.CGI):
                 message = string.join (message, '\n')
                 
                 reply_message = (REPLY_HEADER % (self.form_name) + message +
-                        REPLY_FOOTER % (self.curator_address))
+                        self.REPLY_FOOTER % (self.curator_address))
 
                 # send the message to the curator and submitter
                 curatorSentCode = mgi_utils.send_Mail (
