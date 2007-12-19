@@ -20,6 +20,8 @@ config = Configuration.get_Configuration ('Configuration', 1)
 import homelib
 import CGI
 import formMailer
+import db
+import re
 
 ###--- Global Variables ---###
 
@@ -145,7 +147,49 @@ class allmutMailer (formMailer.formMailer):
                         if atPos == -1:
                                 errors.append ( ('email',
                                         'Invalid e-mail address') )
+                if self.parms.has_key('accid'):
+                	if self.checkMGIAccID(self.parms['accid']) == 0:
+                		errors.append(('accid', 'Invalid MGI Accession ID'))
                 return errors
+
+ 	def checkMGIAccID (self, id):
+	    	# Purpose: return true if we have a valid accession ID.
+	    	# Returns: true or false
+	    	# Assumes: nothing
+	    	# Effects: nothing
+	    	# Throws: db module may throw DB exceptions
+	    	# Check to see whether the given ID string is a valid
+	    	# MGI acc id.
+	
+	    	mgiID = re.compile(r'^MGI')
+	
+	    	if  mgiID.match(id):
+	
+	        	# We have a valid MGI Acc ID string
+	
+	        	db.useOneConnection(1)
+	        	db.set_sqlUser(config["DB_USER"])
+	        	db.set_sqlPassword(config["DB_PASSWORD"])
+	        	db.set_sqlServer(config["DB_SERVER"])
+	        	db.set_sqlDatabase(config["DB_DATABASE"])
+	        	cmds = [] # SQL command list
+	        	cmds.append(string.join([
+	        	'SELECT accID from ACC_Accession where accID = "%s"' % id
+	        	]))
+	
+	        	#  Excecute queries
+	        	results = db.sql(cmds, 'auto')
+	
+	        	db.useOneConnection(0)
+	        	if results != [[]]:
+	        	        return 1
+	        	else:
+	        	        return 0
+	    	else:
+	        	return 0
+	        	# We didn't have a valid MGI Acc ID string
+
+
 
 ###--- Main Program ---###
 
