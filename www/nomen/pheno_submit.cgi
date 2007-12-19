@@ -210,6 +210,10 @@ allmutMailerCGI = allmutMailer ('Phenotype Data',
         sections
         )
 
+allmutMailerCGI.setFooter('\n\nThank you for your contribution. '\
+                          'If you have questions regarding your '\
+                          'submission, please contact: %s  \n')
+
 # the go() method is inherited from the CGI class, in the CGI.py module
 # it simply wraps the formMailer.main() in error handling
 allmutMailerCGI.go()
