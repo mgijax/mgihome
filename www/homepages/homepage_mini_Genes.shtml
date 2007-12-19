@@ -62,13 +62,10 @@
 					<dl class="boxList">
 						<dt class="whatList"><a class="homeLink" href="<!--#include file='include/java_url.html'-->WIFetch?page=markerQF">Search for genes and genome features</a>
 							by symbol, name, location, gene ontology classification or phenotype.</dt>
-						<dt class="whatList"><a class="homeLink" href="<!--#include file='include/java_url.html'-->WIFetch?page=markerQF">Search for candidate genes</a> for a given phenotype within a
-							genomic interval.</dt>
 						<dt class="whatList"><a class="homeLink" href="<!--#include file='include/wi_url.html'-->searches/sequence_form.shtml">Search for sequences</a>
 							by mouse strain or biological attribute.</dt>
 						<dt class="whatList"><a class="homeLink" href="<!--#include file='include/mouseblast_url.html'-->">Use BLAST</a> to search for mouse genes and genome features using nucleotide or protein sequences.</dt>
-						<dt class="whatList">View <a class="homeLink" href="<!--#include file='include/wi_url.html'-->searches/crossdata_form.shtml">genetic and physical mapping data</a> including data from classical crosses,
-							RI and RC strain distribution patterns, DNA mapping panels, and radiation hybrid mapping resources.</dt>
+						<dt class="whatList">View <a class="homeLink" href="<!--#include file='include/wi_url.html'-->searches/crossdata_form.shtml">genetic and physical mapping data</a></dt>
 						<dt class="whatList">Create a <a class="homeLink" href="<!--#include file='include/wi_url.html'-->menus/allsearch_menu.shtml#genes">genetic map</a> or
 							<a class="homeLink" href="<!--#include file='include/gbrowse_url.html'-->">genomic map</a>
 							display of regions of the mouse genome.</dt>
@@ -78,7 +75,7 @@
 						<dt class="whatList"><a class="homeLink" href="<!--#include file='include/mgihome_url.html'-->nomen/short_gene.shtml">Read the guidelines</a>
 							for mouse gene nomenclature.</dt>
 						<dt class="whatList"><a class="homeLink" href="<!--#include file='include/mgihome_url.html'-->nomen/nomen_submit_form.shtml">Submit a new gene or genome feature</a>
-							and receive official nomenclature and an MGI accession identifier (and bonus T-Shirt).</dt>
+							and receive official nomenclature and an MGI accession identifier.</dt>
 					</dl>
 				</div>
 			</div>
@@ -99,7 +96,7 @@
 						<dt>How do I...</dt>
 						<dd class="faqList">.. search for genes,  QTL, or other features in a specific genomic interval? <a class="small homeLink" href='javascript:openFaqWindow("GM_marker.shtml")'>FAQ</a></dd>
 						<dd class="faqList">.. search for a gene using an Entrez, Ensembl, VEGA, or other accession ID? <a class="small homeLink" href='javascript:openFaqWindow("GM_ID.shtml")'>FAQ</a></dd>
-						<dd class="faqList">.. search for genes sharing a specific protein doman? <a class="small homeLink" href='javascript:openFaqWindow("GM_pirsf.shtml")'>FAQ</a></dd>
+						<dd class="faqList">.. search for genes sharing a specific protein domain? <a class="small homeLink" href='javascript:openFaqWindow("GM_pirsf.shtml")'>FAQ</a></dd>
 						<dd class="faqList">.. search for all gene trap cell lines associated with a  gene or marker? <a class="small homeLink" href='javascript:openFaqWindow("GM_gtrap.shtml")'>FAQ</a></dd>
 						<dd class="faqList">.. retrieve Entrez gene, Ensembl, VEGA, or other IDs for a list of genes? <a class="small homeLink" href='javascript:openFaqWindow("GM_batch.shtml")'>FAQ</a></dd>
 						<dd class="faqList">.. create a genome map from a genomic interval? <a class="small homeLink" href='javascript:openFaqWindow("GM_genmap.shtml")'>FAQ</a></dd>
@@ -116,7 +113,7 @@
 			<div class="blueBorder leftCenterMargin statList">
 				<div class="boxTitle">
 					<div class="left">MGI contains</div>
-					<div class="right"><!--#include file='stats/stats_date.shtml'--></div>
+					<div class="right"><!--#include file='include/stats_date.shtml'--></div>
 				</div>
 				<div class="boxBG pad5 small">
 					<!--#include file='stats/gene_stats.shtml'-->
@@ -142,9 +139,6 @@
 			<li>microRNAs</li>
 			<li>gene traps</li>
 		</ul>
-		<!-- link to more news page -->
-		<a class="small homeLink" href="<!--#include file='include/mgihome_url.html'-->news/whatsnew.shtml">More news</a>
-
 	</div>
 </div>
 
@@ -159,15 +153,17 @@
 		<li><a href="tabContents/Gene_Resources.shtml" rel="ajaxcontentarea">Other links</a></li>
 	</ul>
 	<!-- this is where the tab text gets inserted by javascript -->
-	<div id="ajaxcontentarea" class="contentstyle" style="color:#002255;">
+	<div id="ajaxcontentarea" class="contentstyle">
 
 		<!-- text for default selected tab inserted here as an include -->
 		<!--#include file='tabContents/Gene_About.shtml'-->
 
 	</div>
 	<script type="text/javascript">
-		//Start Ajax tabs script for UL with id="maintab". Separate multiple ids each with a comma.
-		startajaxtabs("maintab");
+		var tab_box=new ddajaxtabs("maintab", "ajaxcontentarea")
+		tab_box.setpersist(true)
+		tab_box.setselectedClassTarget("linkparent") //"link" or "linkparent"
+		tab_box.init()
 	</script>
 </div>
 

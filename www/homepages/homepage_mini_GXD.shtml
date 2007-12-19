@@ -80,7 +80,7 @@
 				<div class="boxBG pad5">
 					<dl class="boxList">
 						<dt>How do I...</dt>
-						<dd class="faqList">.. find expression data for a specific gene? <a class="small homeLink" href='javascript:openFaqWindow("GXD_GeneTissue.shtml")'>FAQ</a></dd>
+						<dd class="faqList">.. find expression data for a specific gene and tissue? <a class="small homeLink" href='javascript:openFaqWindow("GXD_GeneTissue")'>FAQ</a></dd>
 						<dd class="faqList">.. find expression data for a tissue during development? <a class="small homeLink" href='javascript:openFaqWindow("GXD_tissue_dev.shtml")'>FAQ</a></dd>
 						<dd class="faqList">.. find genes expressed in one tissue but not another? <a class="small homeLink" href='javascript:openFaqWindow("GXD_comp_tissue.shtml")'>FAQ</a></dd>
 						<dd class="faqList">.. find references that report expression data for a gene at a specific age? <a class="small homeLink" href='javascript:openFaqWindow("GXD_ref_age.shtml")'>FAQ</a></dd>
@@ -95,7 +95,7 @@
 			<div class="blueBorder leftCenterMargin statList">
 				<div class="boxTitle">
 					<div class="left">GXD contains</div>
-					<div class="right"><!--#include file='stats/stats_date.shtml'--></div>
+					<div class="right"><!--#include file='include/stats_date.shtml'--></div>
 				</div>
 				<div class="boxBG pad5 small">
 					<!--#include file='stats/gxd_stats.shtml'-->
@@ -110,7 +110,7 @@
 <div class="boxWide blueBorder marginBottom">
 	<div class="boxTitle">
 		<span class="left">Gene Expression News</span>
-		<span class="right">19 Nov 2007</span>
+		<span class="right">10 Oct 2007</span>
 	</div>
 	<div class="boxBG pad5 small">
 		GXD is pleased to announce the inclusion of <em>in situ </em>hybridization
@@ -121,27 +121,26 @@
 		<a href="<!--#include file='include/wi_url.html'-->searches/reference.cgi?124081">J:122989</a>.
 		This set includes over 69,000 results; 745  genes; 1,397 probes; 748 assays (in situ
 		hybridizations at E14.5); and 10,585  images.
-		<br />
-		<br />
-		<a class="small homeLink" href="<!--#include file='include/mgihome_url.html'-->news/whatsnew.shtml">More news</a>
 	</div>
 </div>
 
 <div class="boxWide marginBottom">
 	<ul id="maintab" class="shadetabs">
-		<li class="selected"><a hidefocus="true" href="tabContents/GXD_About.shtml" rel="ajaxcontentarea">About GXD</a></li>
-		<li><a hidefocus="true" href="tabContents/GXD_SendData.shtml" rel="ajaxcontentarea">Send us your data</a></li>
+		<li><a hidefocus="true" href="tabContents/GXD_About.shtml" rel="ajaxcontentarea">About GXD</a></li>
+		<li class="selected"><a hidefocus="true" href="tabContents/GXD_SendData.shtml" rel="ajaxcontentarea">Send us your data</a></li>
 		<li><a hidefocus="true" href="tabContents/GXD_Curators.shtml" rel="ajaxcontentarea">Our data policies</a></li>
 		<li><a hidefocus="true" href="tabContents/GXD_Help.shtml" rel="ajaxcontentarea">Help documents</a></li>
 		<li><a hidefocus="true" href="tabContents/GXD_Collaborators.shtml" rel="ajaxcontentarea">Contributors</a></li>
 		<li><a hidefocus="true" href="tabContents/GXD_Resources.shtml" rel="ajaxcontentarea">More links </a></li>
 	</ul>
-	<div id="ajaxcontentarea" class="contentstyle" style="color:#002255;">
-		<!--#include file='tabContents/GXD_About.shtml'-->
+	<div id="ajaxcontentarea" class="contentstyle">
+		<!--#include file='tabContents/GXD_SendData.shtml'-->
 	</div>
 	<script type="text/javascript">
-		//Start Ajax tabs script for UL with id="maintab". Separate multiple ids each with a comma.
-		startajaxtabs("maintab");
+		var tab_box=new ddajaxtabs("maintab", "ajaxcontentarea")
+		tab_box.setpersist(true)
+		tab_box.setselectedClassTarget("linkparent") //"link" or "linkparent"
+		tab_box.init()
 	</script>
 </div>
 

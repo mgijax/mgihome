@@ -26,7 +26,7 @@
 	<tr>
 		<td align="center" valign="middle">
 			<span class="homePageTitle">
-				Strains, SNPs, and Polymorphisms
+				Strains, SNPs, &amp; Polymorphisms
 			</span>
 			<br>
 			<span class="homePageSubTitle">
@@ -36,26 +36,32 @@
 		</td>
 		<td>
 			<div class="sideMargin marginBottom blueBorder pad5 imgCenter">
-					<div class="imgCenter">
-						<table>
-						<tr><td align="center">
-							<a href="<!--#include file='include/wi_url.html'-->external/festing/search_form.cgi">
+				<table>
+					<tr valign="top" align="center">
+					<td>
+							<a href=href='javascript:openFaqWindow("STRN_Fest.shtml")'>
 								<img class="outlineImg" src="images/MouseStrainMulti2.png" alt="Strains" height="105">
 							</a>
-							<br />
-							<em><a class="small homeLink" href="<!--#include file='include/wi_url.html'-->external/festing/search_form.cgi">
-								Inbred Strain Characteristics
-							</a></em>
-						</td><td align="center">
-							<a href="<!--#include file='include/java_url.html'-->WIFetch?page=snpQF">
+						</td>
+						<td>
+							<a href=href='javascript:openFaqWindow("STRN_SNP.shtml")'>
 								<img class="outlineImg" src="images/SNP.png" alt="SNP" width="158" height="105">
 							</a>
-							<br />
-							<em><a class="small homeLink" href="<!--#include file='include/java_url.html'-->WIFetch?page=snpQF">
-								SNP Query Form
+						</td>
+					</tr>
+					<tr valign="top" align="center">
+						<td align="center">
+							<em><a class="small homeLink" href=href='javascript:openFaqWindow("STRN_Fest.shtml")'>
+								Inbred strains (a) C57BL/6J;<br>(b) C3H/HeJ; (c) A/J; (d) DBA/2J
 							</a></em>
-						</td></tr></table>
-					</div>
+						</td>
+						<td>
+							<em><a class="small homeLink" href=href='javascript:openFaqWindow("STRN_SNP.shtml")'>
+								SNP Query Result
+							</a></em>
+						</td>
+					</tr>
+				</table>
 			</div>
 		</td>
 	</tr>
@@ -119,7 +125,7 @@
 			<div class="blueBorder leftCenterMargin statList">
 				<div class="boxTitle">
 					<div class="left">Strains, SNPs, and Polymorphisms contains</div>
-					<div class="right"><!--#include file='stats/stats_date.shtml'--></div>
+					<div class="right"><!--#include file='include/stats_date.shtml'--></div>
 				</div>
 				<div class="boxBG pad5 small">
 					<!--#include file='stats/strain_stats.shtml'-->
@@ -137,21 +143,23 @@
 	<!-- This is where the tabbed section is defined. -->
 	<ul id="maintab" class="shadetabs">
 		<!-- This is where the tabbed section is defined. -->
-		<li class="selected" id="listTab"><a href="tabContents/Strain_About.shtml" rel="ajaxcontentarea">About Strains, SNPs, and Polymorphisms </a></li>
-		<li id="listTab"><a href="tabContents/Strain_Help.shtml" rel="ajaxcontentarea">Strains, SNPs, Polymorphisms Help</a></li>
+		<li class="selected" id="listTab"><a href="tabContents/Strain_About.shtml" rel="ajaxcontentarea">About</a></li>
+		<li id="listTab"><a href="tabContents/Strain_Help.shtml" rel="ajaxcontentarea">Help</a></li>
 		<li id="listTab"><a href="tabContents/Strain_Collaborators.shtml" rel="ajaxcontentarea">Collaborators</a></li>
 		<li id="listTab"><a href="tabContents/Strain_Resources.shtml" rel="ajaxcontentarea">Other links</a></li>
 	</ul>
 	<!-- this is where the tab text gets inserted by javascript -->
-	<div id="ajaxcontentarea" class="contentstyle" style="color:#002255;">
+	<div id="ajaxcontentarea" class="contentstyle">
 
 		<!-- text for default selected tab inserted here as an include -->
 		<!--#include file='tabContents/Strain_About.shtml'-->
 
 	</div>
 	<script type="text/javascript">
-		//Start Ajax tabs script for UL with id="maintab". Separate multiple ids each with a comma.
-		startajaxtabs("maintab");
+		var tab_box=new ddajaxtabs("maintab", "ajaxcontentarea")
+		tab_box.setpersist(true)
+		tab_box.setselectedClassTarget("linkparent") //"link" or "linkparent"
+		tab_box.init()
 	</script>
 </div>
 

@@ -43,7 +43,7 @@
 </div> <!--titleBar-->
 
 <!-- main body table -->
-<table width="75%" cellpadding="2" align="center">
+<table width="95%" cellpadding="2" align="center">
 
 	<tr><td>
 		<!-- TOC table -->
@@ -80,6 +80,12 @@
 						<!--#include file='tabContents/Help_UserSupport.shtml'-->
 					</div>
 				</td>
+				<script type="text/javascript">
+					var box1=new ddajaxtabs("maintab5", "main_area")
+					box1.setpersist(true)
+					box1.setselectedClassTarget("linkparent") //"link" or "linkparent"
+					box1.init()
+				</script>
 			</tr>
 		</table>
 	</td></tr>
@@ -98,8 +104,8 @@
 					<!------------- DEFINE SECOND BLOCK OF TABS -------------------->
 					<!------------- CALL SCRIPT TO ACTIVATE ALL BLOCKS AT END OF PAGE -------------------->
 					<ul id="maintab6" class="shadetabs">
-						<li class="selected"><a href="tabContents/Gene_Help.shtml" rel="helparea">Genes, Markers</a></li>
-						<li><a href="tabContents/PAD_Help.shtml" rel="helparea">Phenotypes, Alleles</a></li>
+						<li class="selected"><a href="tabContents/Gene_Help.shtml" rel="helparea">Genes, Maps</a></li>
+						<li><a href="tabContents/PAD_Help.shtml" rel="helparea">Phenotypes</a></li>
 						<li><a href="tabContents/GXD_Help.shtml" rel="helparea">Expression</a></li>
 						<li><a href="tabContents/GO_Help.shtml" rel="helparea">Functional Annotations</a></li>
 						<li><a href="tabContents/Pathways_Help.shtml" rel="helparea">Pathways</a></li>
@@ -110,6 +116,12 @@
 						<!--#include file='tabContents/Gene_Help.shtml'-->
 					</div>
 				</td>
+				<script type="text/javascript">
+					var box2=new ddajaxtabs("maintab6", "helparea")
+					box2.setpersist(true)
+					box2.setselectedClassTarget("linkparent") //"link" or "linkparent"
+					box2.init()
+				</script>
 			</tr>
 		</table>
 	</td></tr>
@@ -128,8 +140,8 @@
 					<!------------- DEFINE THIRD BLOCK OF TABS -------------------->
 					<!------------- CALL SCRIPT TO ACTIVATE ALL BLOCKS AT END OF PAGE -------------------->
 					<ul id="maintab7" class="shadetabs">
-						<li class="selected"><a href="tabContents/Gene_About.shtml" rel="policyarea">Genes, Markers</a></li>
-						<li><a href="tabContents/PAD_Curators.shtml" rel="policyarea">Phenotypes, Alleles</a></li>
+						<li class="selected"><a href="tabContents/Gene_About.shtml" rel="policyarea">Genes, Maps</a></li>
+						<li><a href="tabContents/PAD_Curators.shtml" rel="policyarea">Phenotypes</a></li>
 						<li><a href="tabContents/GXD_Curators.shtml" rel="policyarea">Expression</a></li>
 						<li><a href="tabContents/GO_Curators.shtml" rel="policyarea">Functional Annotations</a></li>
 						<li><a href="tabContents/Pathways_About.shtml" rel="policyarea">Pathways</a></li>
@@ -140,8 +152,10 @@
 						<!--#include file='tabContents/Gene_About.shtml'-->
 					</div>
 					<script type="text/javascript">
-						//Start Ajax tabs script for UL with id="maintab" Separate multiple ids each with a comma.
-						startajaxtabs("maintab5","maintab6","maintab7")
+						var box3=new ddajaxtabs("maintab7", "policyarea")
+						box3.setpersist(true)
+						box3.setselectedClassTarget("linkparent") //"link" or "linkparent"
+						box3.init()
 					</script>
 				</td>
 			</tr>

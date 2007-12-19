@@ -87,6 +87,7 @@
 				<div class="boxBG pad5">
 					<dl class="boxList">
 						<dt>How do I...</dt>
+						<dd class="faqList">.. view the ortholog set for a mouse gene? <a class="small homeLink" href='javascript:openFaqWindow("ORTH_set.shtml")'>FAQ</a></dd>
 						<dd class="faqList">.. view a comparative map of mouse and human chromosomes? <a class="small homeLink" href='javascript:openFaqWindow("ORTH_map.shtml")'>FAQ</a></dd>
 						<dd class="faqList">.. search or browse PIRSF protein superfamilies mapped to mouse, human, and rat genes? <a class="small homeLink" href='javascript:openFaqWindow("ORTH_PIRSF.shtml")'>FAQ</a></dd>
 						<dd class="faqList">.. find the mouse ortholog of a human gene? <a class="small homeLink" href='javascript:openFaqWindow("ORTH_gene.shtml")'>FAQ</a></dd>
@@ -103,7 +104,7 @@
 			<div class="blueBorder leftCenterMargin statList">
 				<div class="boxTitle">
 					<div class="left">Orthology data include</div>
-					<div class="right"><!--#include file='stats/stats_date.shtml'--></div>
+					<div class="right"><!--#include file='include/stats_date.shtml'--></div>
 				</div>
 				<div class="boxBG pad5 small">
 					<!--#include file='stats/ortho_stats.shtml'-->
@@ -129,9 +130,6 @@
 		<ul>
 			<li>Links to TreeFam are now available from Orthology pages</li>
 		</ul>
-		<!-- link to more news page -->
-		<a class="small homeLink" href="<!--#include file='include/mgihome_url.html'-->news/whatsnew.shtml">More news</a>
-
 	</div>
 </div>
 
@@ -149,15 +147,17 @@
 
 	</ul>
 	<!-- this is where the tab text gets inserted by javascript -->
-	<div id="ajaxcontentarea" class="contentstyle" style="color:#002255;">
+	<div id="ajaxcontentarea" class="contentstyle">
 
 		<!-- text for default selected tab inserted here as an include -->
 		<!--#include file='tabContents/Ortho_Help.shtml'-->
 
 	</div>
 	<script type="text/javascript">
-		//Start Ajax tabs script for UL with id="maintab". Separate multiple ids each with a comma.
-		startajaxtabs("maintab");
+		var tab_box=new ddajaxtabs("maintab", "ajaxcontentarea")
+		tab_box.setpersist(true)
+		tab_box.setselectedClassTarget("linkparent") //"link" or "linkparent"
+		tab_box.init()
 	</script>
 </div>
 

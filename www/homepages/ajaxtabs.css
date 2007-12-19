@@ -15,17 +15,14 @@ margin: 0;
 
 .shadetabs li a{
 text-decoration: none;
+position: relative;
+white-space: nowrap;
 padding: 3px 7px;
 margin-right: 3px;
-/*border: 1px solid #778;*/
-/*border-top: 1px solid #D0E0F0;	STILL TOO LIGHT FOR PAD GROUP 9/12/07
-border-right: 1px solid #D0E0F0;
-border-left: 1px solid #D0E0F0;*/
 border-top: 1px solid #759BC1;
 border-right: 1px solid #759BC1;
 border-left: 1px solid #759BC1;
 border-bottom-style:none;
-/*color: #2d2b2b;*/
 background: white url(images/shadeBlueGray.gif) top left repeat-x;
 }
 
@@ -46,7 +43,6 @@ top: 1px;
 .shadetabs li.selected a{ /*selected main tab style */
 background-image: url(images/shadeactiveBlue.gif);
 background-color:#D0E0F0;
-/*border-bottom-color: white;*/
 border-bottom-style:solid;
 border-bottom-color:#F9F9F9;
 }
@@ -56,12 +52,9 @@ text-decoration: none;
 }
 
 .contentstyle{
-/*border: 2px solid #DFEFFF;*/
 border: 1px solid #759BC1; 
-/*width: 450px; */
-margin-bottom: 1em; padding: 10px;
+margin-bottom: 1em; 
+padding: 10px;
 background-color:#F9F9F9;
 color:#002255;
-font-family:Verdana, Arial, Helvetica, sans-serif;
-font-size:10px;
 }

@@ -25,7 +25,7 @@
 	<tr>
 		<td align="center" valign="middle">
 			<span class="homePageTitle">
-				Phenotypes,  Alleles and Disease Models
+				Phenotypes,  Alleles &amp; Disease Models
 			</span>
 			<br>
 			<span class="homePageSubTitle">
@@ -40,7 +40,7 @@
 					<img src="images/pheno_ednrb-s_browner125.jpg" alt="mouse" height="125" border="0">
 				</a>
 				<br />
-				<em>Search for mutant alleles, mouse phenotypes, <br/>and mouse models of human disease.</em></center>
+				<em><a class="small homeLink" href='javascript:openFaqWindow("")'>Homozygote for the Ednrb<sup>s</sup> mutation, originally <br>known as piebald spotting.</a></em></center>
 			</div>
 		</td>
 	</tr>
@@ -96,7 +96,7 @@
 						<dd class="faqList">.. find mutations in a specific gene? <a class="small homeLink" href='javascript:openFaqWindow("PAD_gene.shtml")'>FAQ</a></dd>
 						<dd class="faqList">.. find mouse models for a human disease or condition? <a class="small homeLink" href='javascript:openFaqWindow("PAD_disease.shtml")'>FAQ</a></dd>
 						<dd class="faqList">.. find mutations that cause a specific combination of phenotypes? <a class="small homeLink" href='javascript:openFaqWindow("PAD_combo.shtml")'>FAQ</a></dd>
-						<dd class="faqList">.. find mutations by categories (cre transgenes, conditional  or knock out alleles, etc.)? <a class="small homeLink" href='javascript:openFaqWindow("PAD_muttype.shtml")'>FAQ</a></dd>
+						<dd class="faqList">.. find all of one kind of allele (e.g. cre transgenes, LoxP/Frt-flanked alleles, etc.)? <a class="small homeLink" href='javascript:openFaqWindow("PAD_muttype.shtml")'>FAQ</a></dd>
 					</dl>
 					<!-- link to all FAQs page -->
 					<a class="small homeLink" href="<!--#include file='include/faq_url.html'-->FAQ.shtml">More FAQs</a>
@@ -109,7 +109,7 @@
 			<div class="blueBorder leftCenterMargin statList">
 				<div class="boxTitle">
 					<div class="left">MGI contains</div>
-					<div class="right"><!--#include file='stats/stats_date.shtml'--></div>
+					<div class="right"><!--#include file='include/stats_date.shtml'--></div>
 				</div>
 				<div class="boxBG pad5 small">
 					<!--#include file='stats/pad_stats.shtml'-->
@@ -134,8 +134,6 @@
 			<li>Gene-trapped alleles are coming</li>
 			<li>We have over 100,000 phenotype annotations</li>
 		</ul>
-		<!-- link to more news page -->
-		<a class="small homeLink" href="<!--#include file='include/mgihome_url.html'-->news/whatsnew.shtml">More news</a>
 	</div>
 </div>
 
@@ -148,13 +146,15 @@
 		<li class="selected"><a hidefocus="true" href="tabContents/PAD_Resources.shtml" rel="ajaxcontentarea">Other links</a></li>
 	</ul>
 	<!-- this is where the tab text gets inserted by javascript -->
-	<div id="ajaxcontentarea" class="contentstyle" style="color:#002255;">
+	<div id="ajaxcontentarea" class="contentstyle">
 		<!-- text for default selected tab inserted here as an include -->
 		<!--#include file='tabContents/PAD_Resources.shtml'-->
 	</div>
 	<script type="text/javascript">
-		//Start Ajax tabs script for UL with id="maintab". Separate multiple ids each with a comma.
-		startajaxtabs("maintab");
+		var tab_box=new ddajaxtabs("maintab", "ajaxcontentarea")
+		tab_box.setpersist(true)
+		tab_box.setselectedClassTarget("linkparent") //"link" or "linkparent"
+		tab_box.init()
 	</script>
 </div>
 

@@ -1,174 +1,195 @@
-<!--#include file='include/templateHead.html'--> 
+<!--#include file='include/templateHead.html'-->
+
 <title><!--#include file='include/mgiversion.html'--> - Web Browser Compatibility</title>
-<!--#include file='include/templateBodyStart.html'--> 
+
+<link rel="stylesheet" type="text/css" href="minihome.css"/>
+
+<!--#include file='include/templateBodyStart.html'-->
 <!-- Title Bar -->
   <div id="titleBarWrapper">
   <span class="titleBarMainTitle"> Web Browser Compatibility</span>
-  </div> 
+  </div>
 <!--titleBar-->
 
-<div class="homePageBody">
-<table width="100%" border="0" cellpadding="4"> 
-<!--body table-->
-<tr valign="top"><!--left column-->
- <td>
-  <table cellpadding="0.5" width="100%" >
-   <tr><td width="50%" align="center" valign="top">
-    <table><!-- Disease Model of the week -->
-     <tr><td width="619">
-      <table cellpadding="0.5" bgcolor="#DFEFFF" width="100%">
-       <tr><td>
-         <table width="100%" border="0" cellpadding="4" cellspacing="0" class="grayBG">
-            <tr><td colspan="2" class="boxHead" style="font-size:12">System Compatibility</td></tr>
-            <tr>
-              <td colspan="2" style="font-size:12">We test for compatibility with the following configurations: 
-                 <table bgcolor="#D0E0F0" cellpadding="1" align="center">
-                  <tr><td>
-                    <table width="!" border="0" align="center" cellpadding="3" cellspacing="0" class="grayBG">
-                    <tr>
-                     <th class="boxHeadLite" width="!">Operating System</th>
-                     <th class="boxHeadLite">Web Browser</th>
-                    </tr>
-                    <tr>
-                     <td width="!"><font size="-1"><nobr>Microsoft Windows&#174;; XP: </font></td>
-                     <td><font size="-1">Internet Explorer&#174; 7.x </td>
-                    </tr>
-                    <tr>
-                     <td width="!">&nbsp;</td>
-                     <td><font size="-1">Firefox&#174; 2.x</font> </td>
-                    </tr>
-                     <tr>
-                     <td width="!">&nbsp;</td>
-                     <td><font size="-1">Safari&#153; 3.x </td>
-                    </tr>
-                    <tr>
-                     <td width="!">&nbsp;</td>
-                     <td><font size="-1">Opera&#153; 9.x </td>
-                    </tr>
-                    <tr>
-                     <td width="!">&nbsp;</td>
-                     <td><font size="-1">Netscape &#174; 8.x</td>
-                    </tr>
-                    <tr>
-                     <td width="!"><font size="-1">Mac OS&#174; 10.3:&nbsp;</td>
-                     <td><font size="-1">Firefox&#174; 2.x  </font></td>
-                    </tr>
-                   <tr>
-                     <td width="!">&nbsp;</td>
-                     <td><font size="-1">Safari&#153; 2.x </td>
-                    </tr>
-                    <tr>
-                     <td width="!">&nbsp;</td>
-                     <td><font size="-1">Netscape &#174; 7.x</td>
-                    </tr>
-                    <tr>
-                     <td width="!">&nbsp;</td>
-                     <td><font size="-1">Opera&#153; 9.x </td>
-                    </tr>
-                    </table>
-                   </td>
-                  </tr>
-                 </table>
-                    Any other OS/browser configurations may not display as intended.
-               </td>
-              </tr>
-            <tr>
-               <td colspan="2" style="font-size:12" class="boxHeadLite">JavaScript</td>
-              </tr>
-              <tr>
-               <td colspan="2" style="font-size:12">The MGI website uses JavaScript&reg; and cascading style sheets. For the best experience with our web pages, make sure you have JavaScript enabled and have not disabled linked style sheets.</td>
-              </tr>
-              <tr>
-               <td width="250" style="font-size:12; width:250px;"><u>Note&nbsp;to&nbsp;Internet&nbsp;Explorer&reg;&nbsp;users:</u>  If you are using the highest security setting, JavaScript is disabled automatically. To enable it, click Tools->Internet Options->Security->Custom Level.... Scroll toward the bottom of the list and locate Scripting. Click Enable under Active Scripting.</td>
-               <td style="font-size:12;"><img src="images/IEscriptingUI-ActiveBesideGray-400.jpg" alt="IE javascript interface"><br>
-               </td>
-              </tr>
-              <tr>
-               <td colspan="2" class="boxHead" style="font-size:12">Colors</td>
-              </tr>
-              <tr>
-               <td colspan="2" style="font-size:12">We test background colors and text on color-blind subjects, and we use color-blindness simulators. However, you may have your own preferred colors, font sizes and so on; most modern web browsers allow you to create and apply a custom style sheet for that purpose.</td>
-               </tr>
-               <tr>
-                <td colspan="2" class="boxHead" style="font-size:12">Screen Resolution </td>
-               </tr>
-               <tr>
-                <td colspan="2" style="font-size:12">We design our web pages using a screen resolution of 800 x 600. Lower resolutions (smaller screen area displayed) may display the pages differently than we intended.</td>
-               </tr>
-              </table>
 
-		<br>
-	<table class="grayBG" width="100%">
-	  <tr>
-           <td class="smaller">JavaScript is a registered trademark of Sun Microsystems, Inc.<br>Windows and Internet Explorer are registered trademarks of  Microsoft Corporation.<br>Mac is a registered trademark of Apple Corporation; Safari is a trademark of Apple Corporation. <br>Netscape and Netscape Navigator are registered trademarks of Netscape Communications Corporation.<br>Firefox is a registered trademark of the Mozilla Foundation.<br>
-           </td>
-          </tr>
-        </table>
-      </td>
-     </tr>
-    </table>
-   </td>
-  </tr>
-          <!-- Expression Image of the week -->
- </table>
 
-</td>
-</tr>
+
+<style>
+	.toc { margin 0px;
+		background-color:#DFEFFF; }
+	.toc ul { font-size: 12px;
+		margin 0px;
+		text-align: center;
+		line-height: 1.75;
+		list-style-type: none;
+		padding: .75em .75em 0.1em .75em;
+		min-width: 600px;}
+	.toc li { display: inline;
+		white-space: nowrap; }
+	.outline { border: 2px solid #DFEFFF; }
+	dl.linkedList { margin-left: 2em; }
+	.linkedList dt { margin-top: 1em; }
+	.linkedList dd { margin-left: 1em;
+		margin-top: .25em;
+		font-style:italic}
+</style>
+
+
+<!-- main body table -->
+<table width="75%" cellpadding="2" align="center">
+	<tr><td>
+		<!-- TOC table -->
+		<table class="toc" width="100%">
+			<tr>
+				<td>
+					<ul>
+						<li><a href="#compat">System Compatibility</a> | </li>
+						<li><a href="#java">JavaScript</a> | </li>
+						<li><a href="#color">Colors</a> | </li>
+						<li><a href="#res">Screen Resolution</a></li>
+				</td>
+			</tr>
+		</table>
+	</td></tr>
+	<tr><td>
+		<!-- section1 table -->
+		<a name="compat">
+		<table class="outline" width="100%">
+			<tr>
+				<td class="enhance">
+					System Compatibility
+				</td>
+			</tr>
+			<tr >
+				<td>
+					We test for compatibility with the following configurations:<br><br>
+					<center>
+					<div class="blueBorder statList" style="width:400px;">
+						<div class="boxTitle">
+							<div class="left">Operating System</div>
+							<div class="right">Web Browser</div>
+						</div>
+						<div class="boxBG pad5">
+							<table align="center" cellpadding="3" cellspacing="0">
+							<tr>
+								<td width="!">Microsoft Windows&#174;; XP:</td>
+							 	<td>Internet Explorer&#174; 7.x</td>
+							</tr>
+							<tr>
+								<td width="!">&nbsp;</td>
+								<td>Firefox&#174; 2.x</td>
+							</tr>
+							 <tr>
+								 <td width="!">&nbsp;</td>
+								 <td>Safari&#153; 3.x</td>
+							</tr>
+							<tr>
+								 <td width="!">&nbsp;</td>
+								 <td>Opera&#153; 9.x </td>
+							</tr>
+							<tr>
+								 <td width="!">&nbsp;</td>
+								 <td>Netscape &#174; 8.x</td>
+							</tr>
+							<tr>
+								 <td width="!">Mac OS&#174; 10.3:&nbsp;</td>
+								 <td>Firefox&#174; 2.x</td>
+							</tr>
+							<tr>
+								 <td width="!">&nbsp;</td>
+								 <td>Safari&#153; 2.x </td>
+							</tr>
+							<tr>
+								 <td width="!">&nbsp;</td>
+								 <td>Netscape &#174; 7.x</td>
+							</tr>
+							<tr>
+								 <td width="!">&nbsp;</td>
+								 <td>Opera&#153; 9.x</td>
+							</tr>
+							</table>
+						</div>
+					</div>
+					</center>
+					<br>
+					Any other OS/browser configurations may not display as intended.
+				</td>
+			</tr>
+		</table>
+	</td></tr>
+
+	<tr><td>
+		<!-- section2 table -->
+		<a name="java">
+		<table class="outline" width="100%">
+			<tr>
+				<td class="enhance" colspan="2">
+					JavaScript
+				</td>
+			</tr>
+			<tr>
+				<td colspan="2">
+					The MGI website uses JavaScript&reg; and cascading style sheets. For the best experience with
+					our web pages, make sure you have JavaScript enabled and have not disabled linked style sheets.
+				</td>
+			<tr>
+				<td>
+
+					<u>Note to Internet Explorer&reg; users:</u>
+						If you are using the highest security setting, JavaScript is disabled automatically. To enable
+						it, click Tools->Internet Options->Security->Custom Level.... Scroll toward the bottom of the
+						list and locate Scripting. Click Enable under Active Scripting.
+				</td>
+				<td>
+					<img class="right" src="images/IEscriptingUI-ActiveBesideGray-400.jpg" alt="IE javascript interface">
+				</td>
+			</tr>
+		</table>
+	</td></tr>
+
+	<tr><td>
+		<!-- section2 table -->
+		<a name="color">
+		<table class="outline" width="100%">
+			<tr>
+				<td class="enhance">
+					Colors
+				</td>
+			</tr>
+			<tr >
+				<td>
+					We test background colors and text on color-blind subjects, and we use color-blindness simulators.
+					However, you may have your own preferred colors, font sizes and so on; most modern web browsers
+					allow you to create and apply a custom style sheet for that purpose.
+				</td>
+			</tr>
+		</table>
+	</td></tr>
+
+	<tr><td>
+		<!-- section2 table -->
+		<a name="res">
+		<table class="outline" width="100%">
+			<tr>
+				<td class="enhance">
+					Screen Resolution
+				</td>
+			</tr>
+			<tr >
+				<td>
+					We design our web pages using a screen resolution of 800 x 600. Lower resolutions
+					(smaller screen area displayed) may display the pages differently than we intended.
+
+				</td>
+			</tr>
+		</table>
+	</td></tr>
+
+
 </table>
-</td><!-- end left column -->
-
-
-<!-- right column -->
-<!--</tr>-->
-
-
-<!--footer stuffs
-<tr>
-  <table style="font-size:12" border=0 width="100%">
-
-  <tr>
-  <td colspan="3"><HR noshade="noshade"/ color="#EEEEEE">
-   put contributing projects down here 7/41/07
-  <center style="font-size:9px;">Contributing Projects: Mouse Genome Database&nbsp;(MGD), Gene Expression Database&nbsp;(GXD), Mouse&nbsp;Tumor&nbsp;Biology&nbsp;(MTB), Gene&nbsp;Ontology&nbsp;(GO) &nbsp;&nbsp;<a href="">About MGI</a>
-
-      </center>
-  </td>
-  </tr>
-  <tr>
-    <TD width="33%" style="font-size:9px;">
-      <A HREF="http://www.informatics.jax.org/mgihome/other/citation.shtml">
-        Citing These Resources</A> <BR>
-      <A HREF="http://www.informatics.jax.org/mgihome/other/mgi_funding.shtml">
-
-        Funding Information</A> <BR>
-      <A HREF="http://www.informatics.jax.org/mgihome/other/copyright.shtml">
-        Warranty Disclaimer &amp; Copyright Notice</A> <BR>
-      Send questions and comments to
-      <A HREF="http://www.informatics.jax.org/mgihome/support/tjl_inbox.shtml">
-        User Support</A>.    </TD>
-
-    <TD WIDTH="34%" ALIGN=center style="font-size:9px;">
-      last database update<BR>
-      8/27/2007<BR>
-      MGI 4.0<BR>    
-	<a href="homepage_080607_Compat.html">Web browser compatibility</a>	  
-	  </TD>
-    <TD WIDTH="33%" ALIGN=right style="font-size:9px;">
-      <A HREF="http://www.jax.org/" border=0> <IMG SRC="Images/Logo_black_small3.gif" BORDER=0 ALT="The Jackson Laboratory"></A>    </TD>
-
-	</tr>
-	<tr>
-	<td colspan="3" style="text-align:center;">
-	<a href="">Operating system and web browser compatibility notes</a>
-	</td>
-	</tr>
-  </table>
-  <hr noshade="noshade" color="#EEEEEE">
-</TR>
-</table>-->
 
 <!--body table-->
 </div>
 
-<!--#include file='include/templateBodyStop.html'--> 
+<!--#include file='include/templateBodyStop.html'-->
 

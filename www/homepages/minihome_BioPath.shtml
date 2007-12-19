@@ -86,10 +86,10 @@
 				<div class="boxBG pad5">
 					<dl class="boxList">
 						<dt>How do I ...</dt>
-						<dd class="faqList">.. see a list of all pathways in MouseCyc? <a class="small homeLink" href='javascript:openFaqWindow("")'>FAQ</a></dd>
-						<dd class="faqList">.. search MouseCyc for a specific compound? <a class="small homeLink" href='javascript:openFaqWindow("")'>FAQ</a></dd>
-						<dd class="faqList">.. display my mouse gene expression data in the context of mouse pathways? <a class="small homeLink" href='javascript:openFaqWindow("")'>FAQ</a></dd>
-						<dd class="faqList">.. compare mouse pathways to human pathways? <a class="small homeLink" href='javascript:openFaqWindow("")'>FAQ</a></dd>
+						<dd class="faqList">.. see a list of all pathways in MouseCyc? <a class="small homeLink" href='javascript:openFaqWindow("BP_allpath.shtml")'>FAQ</a></dd>
+						<dd class="faqList">.. search MouseCyc for a specific compound? <a class="small homeLink" href='javascript:openFaqWindow("BP_comp.shtml")'>FAQ</a></dd>
+						<dd class="faqList">.. display my mouse gene expression data in the context of mouse pathways? <a class="small homeLink" href='javascript:openFaqWindow("BP_expr.shtml")'>FAQ</a></dd>
+						<dd class="faqList">.. compare mouse pathways to human pathways? <a class="small homeLink" href='javascript:openFaqWindow("BP_path.shtml")'>FAQ</a></dd>
 					</dl>
 
 					<!-- link to all FAQs page -->
@@ -103,7 +103,7 @@
 			<div class="blueBorder leftCenterMargin statList">
 				<div class="boxTitle">
 					<div class="left">Biochemical Pathways contains</div>
-					<div class="right"><!--#include file='stats/stats_date.shtml'--></div>
+					<div class="right"><!--#include file='include/stats_date.shtml'--></div>
 				</div>
 				<div class="boxBG pad5 small">
 					<!--#include file='stats/path_stats.shtml'-->
@@ -140,23 +140,24 @@
 	<!-- This is where the tabbed section is defined. -->
 	<ul id="maintab" class="shadetabs">
 		<!-- This is where the tabbed section is defined. -->
-		<li class="selected"><a hidefocus="true" href="tabContents/Pathways_About.shtml" rel="ajaxcontentarea">About MouseCyc</a></li>
-		<li><a hidefocus="true" href="tabContents/Pathways_Help.shtml" rel="ajaxcontentarea">Help documents</a></li>
-		<li><a hidefocus="true" href="tabContents/Pathways_Collaborators.shtml" rel="ajaxcontentarea">Collaborators</a></li>
-		<li><a hidefocus="true" href="tabContents/Pathways_Resources.shtml" rel="ajaxcontentarea">Other links</a></li>
+		<li class="selected"><a href="tabContents/Pathways_About.shtml" rel="ajaxcontentarea">About MouseCyc</a></li>
+		<li><a href="tabContents/Pathways_Help.shtml" rel="ajaxcontentarea">Help documents</a></li>
+		<li><a href="tabContents/Pathways_Collaborators.shtml" rel="ajaxcontentarea">Collaborators</a></li>
+		<li><a href="tabContents/Pathways_Resources.shtml" rel="ajaxcontentarea">Other links</a></li>
 	</ul>
 
 	<!-- this is where the tab text gets inserted by javascript -->
-	<div id="ajaxcontentarea" class="contentstyle" style="color:#002255;">
-
+	<div id="ajaxcontentarea" class="contentstyle">
 		<!-- text for default selected tab inserted here as an include -->
 		<!--#include file='tabContents/Pathways_About.shtml'-->
 
-	</div>
 	<script type="text/javascript">
-		//Start Ajax tabs script for UL with id="maintab". Separate multiple ids each with a comma.
-		startajaxtabs("maintab");
+		var tab_box=new ddajaxtabs("maintab", "ajaxcontentarea")
+		tab_box.setpersist(true)
+		tab_box.setselectedClassTarget("linkparent") //"link" or "linkparent"
+		tab_box.init()
 	</script>
+	</div>
 </div>
 
 <!--#include file='include/templateBodyStop.html'-->
