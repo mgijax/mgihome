@@ -21,7 +21,7 @@
 
   <div class="boxTitle">
     <span class="left">Explore MGI</span>
-    <span class="right"><a class="homeLink" href="<!--#include file='include/wi_url.html'-->menus/allsearch_menu.shtml">All Search Tools</a></span>
+    <span class="right"><a class="" href="<!--#include file='include/wi_url.html'-->menus/allsearch_menu.shtml">All Search Tools</a></span>
   </div>
 
   <div class="blueBorder grayBG">
@@ -119,20 +119,20 @@
      <div class="boxBG pad5">
       <dl class="boxList">
       <dt>How do I...</dt>
-      <dd class="faqListHomePage">.. search for genes, QTL, or other marker types in a specific region of the mouse genome?
+      <dd class="faqListHomePage">.. search for genes, QTL, or other features in a specific genome interval?
         <a class="small homeLink" href='javascript:openFaqWindow("GM_marker.shtml")'>FAQ</a>
       </dd>
       <dd class="faqListHomePage">.. use attributes such as genome location, disease association, phenotype, or function to find specific genes?
-        <a class="small homeLink" href='javascript:openFaqWindow("")'>FAQ</a>
+        <a class="small homeLink" href='javascript:openFaqWindow("GM_attr.shtml")'>FAQ</a>
       </dd>
       <dd class="faqListHomePage">.. find mutant alleles associated with specific phenotypes or human diseases?
-        <a class="small homeLink" href='javascript:openFaqWindow("")'>FAQ</a>
+        <a class="small homeLink" href='javascript:openFaqWindow("PAD_allele.shtml")'>FAQ</a>
       </dd>
       <dd class="faqListHomePage">.. find expression data for a tissue during development?
         <a class="small homeLink" href='javascript:openFaqWindow("GXD_tissue_dev")'>FAQ</a>
       </dd>
-      <dd class="faqListHomePage">.. create a graphical display of a genetic or genomic map?
-        <a class="small homeLink" href='javascript:openFaqWindow("")'>FAQ</a>
+      <dd class="faqListHomePage">.. create a genome map from a genomic interval?
+        <a class="small homeLink" href='javascript:openFaqWindow("GM_genmap.shtml")'>FAQ</a>
       </dd>
       </dl>
         <a class="small homeLink" href="<!--#include file='include/faq_url.html'-->FAQ.shtml">More FAQs</a>
