@@ -53,7 +53,7 @@
 		<td rowspan="2" width="50%" valign="top">
 			<div class="blueBorder rightCenterMargin">
 				<div class="boxTitle">
-					What can I do here?
+					Access Genes, Genome Features & Maps data
 				</div>
 				<!-- 'What can I do here?'content -->
 				<!-- The content is in a definition list <dl> where the descriptive text
@@ -112,12 +112,12 @@
 		<td width="50%" valign="top">
 			<div class="blueBorder leftCenterMargin statList">
 				<div class="boxTitle">
-					<div class="left">MGI contains</div>
+					<div class="left">Genes, Genome Features & Maps includes</div>
 					<div class="right"><!--#include file='include/stats_date.shtml'--></div>
 				</div>
 				<div class="boxBG pad5 small">
 					<!--#include file='stats/gene_stats.shtml'-->
-					<a class="small homeLink" href="<!--#include file="include/mgihome_url.html"-->homepages/stats/all_stats.shtml#allstats_markers">More statistics</a>
+					<a class="small homeLink" href="<!--#include file="include/mgihome_url.html"-->homepages/stats/all_stats.shtml#allstats_markers">More...</a>
 				</div>
 			</div>
 		</td>
@@ -147,7 +147,7 @@
 
 	<!-- This is where the tabbed section is defined. -->
 	<ul id="maintab" class="shadetabs">
-		<li class="selected"><a href="tabContents/Gene_About.shtml" rel="ajaxcontentarea">About Genes &amp; Markers</a></li>
+		<li class="selected"><a href="tabContents/Gene_About.shtml" rel="ajaxcontentarea">About Genes, Genome Features & Maps</a></li>
 		<li><a href="tabContents/Gene_Help.shtml" rel="ajaxcontentarea">Help documents</a></li>
 		<li><a href="tabContents/Gene_Collaborators.shtml" rel="ajaxcontentarea">Collaborators</a></li>
 		<li><a href="tabContents/Gene_Resources.shtml" rel="ajaxcontentarea">Other links</a></li>

@@ -46,7 +46,7 @@
 	<tr>
 		<td rowspan="2" width="50%" valign="top">
 			<div class="blueBorder rightCenterMargin">
-				<div class="boxTitle">What can I do here?</div>
+				<div class="boxTitle">Access Gene Expression data</div>
 				<div class="boxBG pad5">
 					<dl>
 						<dt>Search for references on gene expression during development.</dt>
@@ -94,12 +94,12 @@
 		<td width="50%" valign="top">
 			<div class="blueBorder leftCenterMargin statList">
 				<div class="boxTitle">
-					<div class="left">GXD contains</div>
+					<div class="left">GXD includes</div>
 					<div class="right"><!--#include file='include/stats_date.shtml'--></div>
 				</div>
 				<div class="boxBG pad5 small">
 					<!--#include file='stats/gxd_stats.shtml'-->
-					<a class="small homeLink" href="<!--#include file="include/mgihome_url.html"-->homepages/stats/all_stats.shtml#allstats_gxd">More statistics</a>
+					<a class="small homeLink" href="<!--#include file="include/mgihome_url.html"-->homepages/stats/all_stats.shtml#allstats_gxd">More...</a>
 				</div>
 			</div>
 		</td>
@@ -130,8 +130,8 @@
 		<li class="selected"><a hidefocus="true" href="tabContents/GXD_SendData.shtml" rel="ajaxcontentarea">Send us your data</a></li>
 		<li><a hidefocus="true" href="tabContents/GXD_Curators.shtml" rel="ajaxcontentarea">Our data policies</a></li>
 		<li><a hidefocus="true" href="tabContents/GXD_Help.shtml" rel="ajaxcontentarea">Help documents</a></li>
-		<li><a hidefocus="true" href="tabContents/GXD_Collaborators.shtml" rel="ajaxcontentarea">Contributors</a></li>
-		<li><a hidefocus="true" href="tabContents/GXD_Resources.shtml" rel="ajaxcontentarea">More links </a></li>
+		<li><a hidefocus="true" href="tabContents/GXD_Collaborators.shtml" rel="ajaxcontentarea">Collaborators</a></li>
+		<li><a hidefocus="true" href="tabContents/GXD_Resources.shtml" rel="ajaxcontentarea">Other Links</a></li>
 	</ul>
 	<div id="ajaxcontentarea" class="contentstyle">
 		<!--#include file='tabContents/GXD_SendData.shtml'-->

@@ -84,7 +84,7 @@
 			<!-- Left box: 'What can I do here?' -->
 			<div class="blueBorder rightCenterMargin">
 				<div class="boxTitle">
-					Access MGI-GO data
+					Access GO Functional Annotations data
 				</div>
 				<!-- 'What can I do here?'content -->
 				<!-- The content is in a definition list <dl> where the descriptive text
@@ -140,12 +140,12 @@
 		<td width="50%" valign="top">
 			<div class="blueBorder leftCenterMargin statList">
 				<div class="boxTitle">
-					<div class="left">MGI Functional Annotations data:</div>
+					<div class="left">Functional Annotations (GO) data includes</div>
 					<div class="right"><!--#include file='include/stats_date.shtml'--></div>
 				</div>
 				<div class="boxBG pad5 small">
 					<!--#include file='stats/go_stats.shtml'-->
-					<a class="small homeLink" href="<!--#include file="include/mgihome_url.html"-->homepages/stats/all_stats.shtml#allstats_go">More statistics</a>
+					<a class="small homeLink" href="<!--#include file="include/mgihome_url.html"-->homepages/stats/all_stats.shtml#allstats_go">More...</a>
 				</div>
 			</div>
 		</td>

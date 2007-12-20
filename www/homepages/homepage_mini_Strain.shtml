@@ -75,7 +75,7 @@
 			<!-- Left box: 'What can I do here?' -->
 			<div class="blueBorder rightCenterMargin">
 				<div class="boxTitle">
-					What can I do here?
+					Access Strains, SNPs & Polymorphisms data
 				</div>
 				<!-- 'What can I do here?'content -->
 				<!-- The content is in a definition list <dl> where the descriptive text
@@ -124,12 +124,12 @@
 		<td width="50%" valign="top">
 			<div class="blueBorder leftCenterMargin statList">
 				<div class="boxTitle">
-					<div class="left">Strains, SNPs, and Polymorphisms contains</div>
+					<div class="left">Strains, SNPs & Polymorphisms includes</div>
 					<div class="right"><!--#include file='include/stats_date.shtml'--></div>
 				</div>
 				<div class="boxBG pad5 small">
 					<!--#include file='stats/strain_stats.shtml'-->
-					<a class="small homeLink" href="<!--#include file="include/mgihome_url.html"-->homepages/stats/all_stats.shtml#allstats_snp">More statistics</a>
+					<a class="small homeLink" href="<!--#include file="include/mgihome_url.html"-->homepages/stats/all_stats.shtml#allstats_snp">More...</a>
 				</div>
 			</div>
 		</td>
@@ -144,7 +144,7 @@
 	<ul id="maintab" class="shadetabs">
 		<!-- This is where the tabbed section is defined. -->
 		<li class="selected" id="listTab"><a href="tabContents/Strain_About.shtml" rel="ajaxcontentarea">About</a></li>
-		<li id="listTab"><a href="tabContents/Strain_Help.shtml" rel="ajaxcontentarea">Help</a></li>
+		<li id="listTab"><a href="tabContents/Strain_Help.shtml" rel="ajaxcontentarea">Help documents</a></li>
 		<li id="listTab"><a href="tabContents/Strain_Collaborators.shtml" rel="ajaxcontentarea">Collaborators</a></li>
 		<li id="listTab"><a href="tabContents/Strain_Resources.shtml" rel="ajaxcontentarea">Other links</a></li>
 	</ul>
