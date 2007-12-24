@@ -1,27 +1,14 @@
-<HTML>
-<HEAD>
-<TITLE><!--#include file='include/mgiversion.html'--> - Mutation Submission Form</TITLE>
-<!--#include file="include/stylesheet.html"-->
-</HEAD>
-<BODY BGCOLOR="#ffffff">
-<TABLE WIDTH="100%" BORDER=0 CELLPADDING=0 CELLSPACING=0>
-  <TR><TD WIDTH="100%">
-    <TABLE WIDTH="100%" BORDER=0 CELLPADDING=0 CELLSPACING=0>
-     <TR><TD WIDTH="20%" VALIGN="center" ALIGN="left"><A HREF="<!--#include file='include/wi_url.html'-->" border=0><!--#include file="include/mgi_logo_small.html"--></A></TD>
-      <TD WIDTH="60%" ALIGN="center" VALIGN="center" BGCOLOR="#ffffff">
-       <FONT COLOR="#000000" SIZE=5 FACE="Arial,Helvetica">
-Mutation Submission Form
-       </FONT></TD><TD WIDTH="20%" VALIGN="center" ALIGN="center" BGCOLOR="#ffffff">&nbsp;</TD></TR>
-<TR BGCOLOR="blue"><TD COLSPAN=3><FONT face="Arial,Helvetica" color="#ffffff">
-    <B>&nbsp;Mouse Genome Informatics</B></TD></TR>
-<TR><TD BGCOLOR="#ffffff"><FONT SIZE=-1 FACE="Arial,Helvetica"><CENTER><A HREF="<!--#include file='include/wi_url.html'-->">MGI Home</A>&nbsp;&nbsp;&nbsp;
-<a href="../help/help.shtml">Help
-</A></FONT></CENTER></TD></TR>
-</TABLE></TD></TR>
-</TABLE>
-<HR>
+<!--#include file='include/templateHead.html'-->
+<title><!--#include file='include/mgiversion.html'--> - Mutation Submission Form</title>
 
-<P></P>
+<!--#include file='include/templateBodyStart.html'-->
+
+<!-- Title Bar -->
+<div id="titleBarWrapper">
+ <span class="titleBarMainTitle">Mutation Submission Form</span>
+</div> <!--titleBar-->
+
+<P>
 <ul>
 <li>Use this Mutation Submission Form to describe spontaneous, induced, or genetically engineered mutations.
 <li>Submit information only about those mutations shown to be heritable.
@@ -31,7 +18,7 @@ Mutation Submission Form
 <A HREF="<!--#include file='include/wi_url.html'-->searches/allele_form.shtml">Phenotypes and Alleles Query Form</a>
 <li> Thank you for helping us keep the Mouse Genome Database current.
 </ul>
-<P>
+</P>
 <FORM METHOD="POST" ACTION="allmut_submit.cgi">
 <HR>
 <H3>Naming this Mutation:</H3>
@@ -46,18 +33,18 @@ Is this mutation an allele of a <B>known gene</B>?  <BR>
 <DD>If so, enter the <B>gene symbol</B>:
 <INPUT TYPE="text" NAME="genesymbol" SIZE=15>
 (Check the gene symbol by
-<A HREF="http://www.informatics.jax.org/javawi2/servlet/WIFetch?page=markerQF">searching MGI</A>.)<BR><BR>
+<A HREF="<!--#include file='include/java_url.html'-->WIFetch?page=markerQF">searching MGI</A>.)<BR><BR>
 Nicknames, synonyms for this mutant allele  <INPUT TYPE="text" NAME="synonyms" SIZE=55>
 <BR><BR>
-<BR>
-<UL>
-<LI>For hints on mutant allele nomenclature, see <A HREF="allmut_quickhelp.shtml">Quick Guide to Nomenclature for Alleles and Mutations</A>.
-<BR><BR>
 
-<LI><B>If you need assistance with nomenclature:</B><BR>
+<UL>
+<LI>For hints on mutant allele nomenclature, see <A HREF="allmut_quickhelp.shtml">Quick Guide to Nomenclature for Alleles and Mutations</A>.</li>
+<li><A HREF="http://dels.nas.edu/ilar_n/ilarhome/labcode.shtml">Lab codes</A> are 
+available from ILAR (Institute of Laboratory Animal Resources</A>).
+<LI><B>If you need assistance with nomenclature:</B></li>
  <INPUT TYPE="checkbox" NAME="nomenHelp" VALUE="true">&nbsp; Click here and
 continue to the <B>"About this Mutation"</B> section below.<BR>
-We will contact you about nomenclature for this mutation.
+We will contact you about nomenclature for this mutation.</li>
 </UL>
 
 <HR>
@@ -136,6 +123,16 @@ Other remarks (gene function/pathway, available clones, GenBank numbers, etc.):<
 <TEXTAREA NAME="remarks" ROWS=3 COLS=65></TEXTAREA>
 <BR><BR>
 
+
+<!--
+Upload a data file (image, text description, excel or text data)
+<input name="myFile" value="" type="file"> <br><br>
+Upload another data file 
+<input name="myFile" value="" type="file"> <br><br>-->
+
+To submit data files (image, text description, excel,  or text data), please contact us at:
+<font color="#1822cd"><a href="mailto:submissions@informatics.jax.org">submissions@informatics.jax.org</a></font>.
+
 <HR>
 
 <H3>Status and References:</H3>
@@ -183,25 +180,6 @@ Fax Number:                     <INPUT TYPE="text" NAME="fax" SIZE=30>
 <H3>Once you submit this completed form, we will e-mail you the MGI accession number for this mutant allele.  Thank you!</H3>
 <HR>
 <INPUT TYPE=submit VALUE="Submit"> <INPUT TYPE=reset VALUE="Reset Form">
-<HR>
+
 </FORM>
- <P>
-<!--#include file="include/footer.html"-->
-</P></BODY>
-</HTML>
-<!--
-Warranty Disclaimer and Copyright Notice
- THE JACKSON LABORATORY MAKES NO REPRESENTATION ABOUT THE SUITABILITY OR
- ACCURACY OF THIS SOFTWARE OR DATA FOR ANY PURPOSE, AND MAKES NO WARRANTIES,
- EITHER EXPRESS OR IMPLIED, INCLUDING MERCHANTABILITY AND FITNESS FOR A
- PARTICULAR PURPOSE OR THAT THE USE OF THIS SOFTWARE OR DATA WILL NOT
- INFRINGE ANY THIRD PARTY PATENTS, COPYRIGHTS, TRADEMARKS, OR OTHER RIGHTS.
- THE SOFTWARE AND DATA ARE PROVIDED "AS IS".
- This software and data are provided to enhance knowledge and encourage
- progress in the scientific community and are to be used only for research
- and educational purposes.  Any reproduction or use for commercial purpose
- is prohibited without the prior express written permission of the Jackson
- Laboratory.
-Copyright © 1996, 1999, 2002 by The Jackson Laboratory
-All Rights Reserved
--->
+<!--#include file='include/templateBodyStop.html'-->

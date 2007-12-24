@@ -1,28 +1,14 @@
-<HTML>
-<HEAD>
-<TITLE><!--#include file='include/mgiversion.html'--> - Nomenclature Checklist</TITLE>
-<!--#include file="include/stylesheet.html"-->
-</HEAD>
+<!--#include file='include/templateHead.html'--> 
+<title><!--#include file='include/mgiversion.html'--> - Nomenclature Checklist</title>
 
-<BODY BGCOLOR="#ffffff">
-<!--#include file="include/bodyStart.html"-->
-<TABLE WIDTH="100%" BORDER=0 CELLPADDING=2 CELLSPACING=1>
- <TR>
-  <TD WIDTH="100%" BGCOLOR="#D0E0F0">
-   <TABLE WIDTH="100%" BORDER=0 CELLPADDING=0 CELLSPACING=0>
-    <TR>
-     <TD WIDTH="20%" VALIGN="center" ALIGN="left">&nbsp;</TD>
-     <TD WIDTH="60%" ALIGN="center" VALIGN="center">
-      <FONT COLOR="#000000" SIZE=5 FACE="Arial,Helvetica">
-       <a name="check"></a>Checklist for Proposing a Locus Symbol
-      </FONT>
-     </TD>
-     <TD WIDTH="20%" VALIGN="center" ALIGN="center">&nbsp;</TD>
-    </TR>
-   </TABLE>
-  </TD>
- </TR>
-</TABLE>
+<!--#include file='include/templateBodyStart.html'--> 
+<!-- Title Bar -->
+<div id="titleBarWrapper">
+  <span class="titleBarMainTitle">Nomenclature Checklist</span>
+  
+</div> 
+<!--titleBar-->
+
 
 <OL>
 <LI>Determine that the phenotype is genetic:
@@ -31,41 +17,13 @@
 <LI>Cloned locus sequence
 </UL>
 <P>
-<LI>Search MGI, <A HREF="http://rgd.mcw.edu/genes">RGD</A>, and <A HREF="http://www.genenames.org/">HGNC</A> to ensure that the entry does not already exist. (For MGI, use the Gene/Marker Symbol/Name: field on the <a href="http://www.informatics.jax.org/javawi2/servlet/WIFetch?page=markerQF">Genes and Markers Query Form</a>). 
+<LI>Search MGI, <A HREF="http://rgd.mcw.edu/genes">RGD</A>, and <A HREF="http://www.genenames.org/">HGNC</A> to ensure that the entry does not already exist. (For MGI, use the Gene/Marker Symbol/Name: field on the 
+<A HREF="<!--#include file='include/java_url.html'-->WIFetch?page=markerQF">Genes and Markers Query Form</a>). 
 <P>
 <LI>Refer to the <A HREF="gene.shtml">Rules for Nomenclature of Genes, Genetic Markers, Alleles, and Mutations in Mouse and Rat</A> to formulate possible combinations of letters for the symbol.
 <P>
 <LI>Check MGI, <A HREF="http://rgd.mcw.edu/genes">RGD</A>, and <A HREF="http://www.genenames.org/">HGNC</A> to see which symbols are available.
 <P>
 <LI>Check ordered lists of mouse and human symbols to ensure that the proposed new symbol will not overlap with existing sets of locus symbols.
-<!--
-
-
-<P>
-<LI>Check similar entries in MGI, <A HREF="http://rgd.mcw.edu/genes">RGD</A>, and <A HREF="http://www.gene.ucl.ac.uk/cgi-bin/nomenclature/searchgenes.pl">HGNC</A> to ensure that the proposed symbol is constructed in the same manner as related symbols.
-<P>
-<li>To submit a proposal, use the <a href="nomen_submit_form.shtml">Nomenclature Submission Form</a>.</li>
 </OL>
-
-<HR>
-
-<!--#include file="include/bodyStop.html"--></BODY></HTML>
-<!--
-Warranty Disclaimer and Copyright Notice
-
- THE JACKSON LABORATORY MAKES NO REPRESENTATION ABOUT THE SUITABILITY OR 
- ACCURACY OF THIS SOFTWARE OR DATA FOR ANY PURPOSE, AND MAKES NO WARRANTIES, 
- EITHER EXPRESS OR IMPLIED, INCLUDING MERCHANTABILITY AND FITNESS FOR A 
- PARTICULAR PURPOSE OR THAT THE USE OF THIS SOFTWARE OR DATA WILL NOT 
- INFRINGE ANY THIRD PARTY PATENTS, COPYRIGHTS, TRADEMARKS, OR OTHER RIGHTS.  
- THE SOFTWARE AND DATA ARE PROVIDED "AS IS".
-
- This software and data are provided to enhance knowledge and encourage 
- progress in the scientific community and are to be used only for research 
- and educational purposes.  Any reproduction or use for commercial purpose 
- is prohibited without the prior express written permission of the Jackson 
- Laboratory.
-
-Copyright © 1996, 1999, 2002 by The Jackson Laboratory
-All Rights Reserved
--->
+<!--#include file='include/templateBodyStop.html'--> 

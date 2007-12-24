@@ -1,25 +1,18 @@
-<HTML>
-<HEAD>
-<TITLE><!--#include file='include/mgiversion.html'--> - Rules for Nomenclature of Chromosome Aberrations</TITLE>
-<!--#include file="include/stylesheet.html"-->
-</HEAD>
-<BODY BGCOLOR="#ffffff">
-<TABLE WIDTH="100%" BORDER=0 CELLPADDING=0 CELLSPACING=0>
- <TR><TD WIDTH="100%">
-  <TABLE WIDTH="100%" BORDER=0 CELLPADDING=0 CELLSPACING=0>
-   <TR><TD WIDTH="20%" VALIGN="center" ALIGN="left"><A HREF="<!--#include file='include/wi_url.html'-->" border=0><IMG SRC="../images/mgi_logo_small.jpg" border=0 ALT="MGI"></A></TD>
-<TD WIDTH="60%" ALIGN="center" VALIGN="center" BGCOLOR="#ffffff"><FONT COLOR="#000000" SIZE=5 FACE="Arial,Helvetica">Rules for Nomenclature of Chromosome Aberrations</TD>
-<TD WIDTH="20%" VALIGN="center" ALIGN="center" BGCOLOR="#ffffff">&nbsp;</TD></TR>
-<TR BGCOLOR="blue"><TD COLSPAN=3><FONT face="Arial,Helvetica" color="#ffffff"><B>&nbsp;Mouse Genome Informatics</B></TD></TR>
-<TR><TD BGCOLOR="#ffffff"><FONT SIZE=-1 FACE="Arial,Helvetica"><CENTER><A HREF="<!--#include file='include/wi_url.html'-->">MGI Home</A>&nbsp;&nbsp;&nbsp; <a href="../help/help.shtml">Help </A></FONT></CENTER></TD></TR>
-</TABLE></TD></TR>
-</TABLE>
-<HR>
+<!--#include file='include/templateHead.html'--> 
+<title><!--#include file='include/mgiversion.html'--> - Rules for Nomenclature of Chromosome Aberrations</title>
 
-<body>
+<!--#include file='include/templateBodyStart.html'--> 
+<div id="titleBarWrapper">
+
+  <span class="titleBarMainTitle">Rules for Nomenclature of Chromosome Aberrations</span>
+  <br/>
+  <span class="titleBarSubTitle">Revised: December 2003</span>
+
+</div> <!--titleBar-->
+
 <h4 ALIGN="CENTER">International Committee on Standardized Genetic Nomenclature for Mice</h4>
 <h4 align="center"><i>Chairperson</i>: Janan T. Eppig<br>
-(e-mail: jte@informatics.jax.org)<br>revised: Dec 2003</h4>
+(e-mail: jte@informatics.jax.org)</h4>
 
 <p>In 2003 the rules for the nomenclature of chromosome aberrations were updated and rewritten. References to former versions of these rules can be found in Committee for Standardized Genetic Nomenclature in Mice (1981, 1989, 1994, 1996). <!--<a href="nomenclature_archives.shtml">Archived  Guidelines<a> (since 2000) are available.--></p>
 <H3>Table of Contents</H3>
@@ -451,8 +444,4 @@ University Press, Oxford, 1996.</p>
 <p>Nesbitt, M.N., and U. Francke. 1973. A system of nomenclature for band patterns of mouse chromosomes. Chromosoma 41:145-158.</p>
 
 <p>Sawyer, J.R., M.M. Moore, and J.C. Hozier. 1987. High resolution G-banded chromosomes of the mouse. Chromosoma 95:350-358.</p>
-<hr>
-<!--#include file="include/footer.html"-->
-</BODY>
-</HTML>
-<!--Warranty Disclaimer and Copyright Notice THE JACKSON LABORATORY MAKES NO REPRESENTATION ABOUT THE SUITABILITY OR ACCURACY OF THIS SOFTWARE OR DATA FOR ANY PURPOSE, AND MAKES NO WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE OR THAT THE USE OF THIS SOFTWARE OR DATA WILL NOT INFRINGE ANY THIRD PARTY PATENTS, COPYRIGHTS, TRADEMARKS, OR OTHER RIGHTS. THE SOFTWARE AND DATA ARE PROVIDED "AS IS". This software and data are provided to enhance knowledge and encourage progress in the scientific community and are to be used only for research and educational purposes.  Any reproduction or use for commercial purpose is prohibited without the prior express written permission of the Jackson Laboratory. Copyright © 1996, 1999, 2002 by The Jackson Laboratory All Rights Reserved -->
+<!--#include file='include/templateBodyStop.html'--> 

@@ -1,129 +1,84 @@
-<html>
-<head>
-<TITLE><!--#include file='include/mgiversion.html'--> - Mouse Nomenclature Home Page</title>
-<!--#include file="include/stylesheet.html"-->
+<!--#include file='include/templateHead.html'--> 
+<title><!--#include file='include/mgiversion.html'--> - Mouse Nomenclature Home Page</title>
 
-</head>
-<body bgcolor="#ffffff">
-<!--#include file="include/bodyStart.html"-->
-<table width="100%" border="0" cellpadding="2" cellspacing="1">
- <tbody><tr>
-  <td width="100%" bgcolor="#d0e0f0">
-   <table width="100%" border="0" cellpadding="0" cellspacing="0">
-    <tbody><tr>
-     <td width="20%" valign="center" align="left">&nbsp;</td>
-     <td width="60%" align="center" valign="center">
+<!--#include file='include/templateBodyStart.html'--> 
+<!-- Title Bar -->
+<div id="titleBarWrapper">
+  <span class="titleBarMainTitle"> Mouse Nomenclature Home Page</span>
+  
+</div> 
+<!--titleBar-->
 
-      <font color="#000000" size="5" face="Arial,Helvetica">
-       <a name="mginp">Mouse Nomenclature Home Page
-      </a></font>
-<a name="mginp">     </a></td>
-     <td width="20%" valign="center" align="center">&nbsp;</td>
-    </tr>
-   </tbody></table>
-  </td>
- </tr>
 
-</tbody></table>
-     
- <p>The Mouse Genome
-Informatics Database is the authoritative source of official names for
-mouse genes, alleles, and strains. Nomenclature follows the rules and
-guidelines established by the <a href="inc.shtml">International Committee on Standardized Genetic Nomenclature for Mice</a> and is implemented through the <a href="#mgnc">Mouse Genomic Nomenclature Committee (MGNC)</a>.</font></p>
+ <p>The Mouse Genome Informatics Database is the authoritative source of official names for
+mouse genes, alleles, and strains. Nomenclature follows the rules and guidelines established by the <a href="inc.shtml">International Committee on Standardized Genetic Nomenclature for Mice</a>. </p>
 
-<h4>Mouse Gene, Allele, and Mutation Nomenclature</h4>
+<h4>Rules and Guidelines</h4>
+<blockquote>
+<table border="1" cellspacing="2" cellpadding="3">
+ <tr><th align="left" valign="top" rowspan="3"><nobr>Genes, Alleles, and Mutations</nobr></th><th align="right" valign="top"><font size="-1">Full Guide</font></th> <td valign="top"><font size="-1"><a href="gene.shtml">Rules for Nomenclature of Genes, Genetic Markers, Alleles, and Mutations in Mouse and Rat</a></font></td></tr>
+   <tr><th align="right" valign="top"><font size="-1">Quick Guides</font></th><td valign="top"><a name="bnrg"><font size="-1"><a href="short_gene.shtml">Quick Guide to Nomenclature for Genes</a><br>
+  <a href="allmut_quickhelp.shtml">Quick Guide to Nomenclature for Alleles and Mutations</a></font></td></tr>
+  <tr><th align="right" valign="top"><font size="-1">Checklist</font></th><td valign="top"<font size="-1"><a href="checklist.shtml#check"><font size="-1">Nomenclature Checklist</a> (checklist for proposing a locus symbol)</font></td></tr>
+
+<tr><th align="left" valign="top">Strains</th><th align="right" valign="top"><font size="-1">Full Guide</font></th><td valign="top"><font size="-1"><a href="strains.shtml">Rules and Guidelines for Nomenclature of Mouse and Rat Strains</a></font></td></tr>
+
+<tr><th align="left" valign="top">Aberrations</th><th align="right" valign="top"><font size="-1">Full Guide</font></th><td valign="top"><font size="-1"><a href="anomalies.shtml">Rules for Nomenclature of Chromosome Aberrations</a></font></td></tr>
+</table>
+</blockquote>
+<!--<table border="1" cellspacing="1" cellpadding="4">
+  <tr><th valign="top"><font size="-1">Rules (full)</th><th valign="top"><font size="-1">Guides (quick)</th><th valign="top"><font size="-1">Checklists</th></tr>
+<tr><td valign="top"><font size="-1"><a href="gene.shtml">Rules for Nomenclature of Genes, Genetic Markers, Alleles, and Mutations in Mouse and Rat</a></td><td valign="top"><font size="-1"><a name="bnrg"><a href="short_gene.shtml">Quick Guide to Nomenclature for Genes</a><br><a href="allmut_quickhelp.shtml">Quick Guide to Nomenclature for Alleles and Mutations</a></td><td valign="top"><a href="checklist.shtml#check"><font size="-1">Checklist for Proposing a Locus Symbol</a></td></tr>
+<tr><td valign="top"><font size="-1"><a href="strains.shtml">Rules and Guidelines for Nomenclature of Mouse and Rat Strains</a></td><td valign="top">&nbsp;</td><td>&nbsp;</td></tr>
+<tr><td valign="top"><font size="-1"><a href="anomalies.shtml">Rules for Nomenclature of Chromosome Aberrations</a></font></font></td><td valign="top">&nbsp;</td><td valign="top">&nbsp;</td></font></tr>
+</font></table>
+
+</blockquote>-->
+
+<h4>Searches</h4>
 <ul>
-<li><a href="gene.shtml">Rules for Nomenclature of Genes, Genetic Markers, Alleles, and Mutations in Mouse and Rat</a>&nbsp;(full guide)</li>
-
-<li><a name="bnrg"></a><a href="short_gene.shtml">Quick Guide to Nomenclature for Genes</a></li>
-
-<li><a href="allmut_quickhelp.shtml">Quick Guide to Nomenclature for Alleles and Mutations</a></li>
-
 <li>Search for existing mouse genes/markers: <a href="<!--#include file='include/java_url.html'-->WIFetch?page=markerQF">Genes and Markers Query Form </a></li>
-
-<li><a href="checklist.shtml#check">Checklist for Proposing a Locus Symbol</a></li>
-
-<li><a href="nomen_submit_form.shtml">Submit</a> a Proposed Locus
-Symbol</li>
-
-<li><a href="allmut_form.shtml">Submit</a> Mutant Allele Information</li>
-</ul>
-
-<h4>Mouse Strain Nomenclature</h4>
-<ul>
-<!--<li>Search for established <a href="">Strain Names</a><br><br>-->
-<li><a href="strains.shtml">Rules and Guidelines for Nomenclature of Mouse and Rat Strains</a>&nbsp; (full guide)</li>
-
-<li><a href="../submissions/strains/index.shtml">Register</a> a new Mouse Strain Name</li>
-
+<li>Search for existing mouse alleles/mutations <a href="<!--#include file="include/wi_url.html"-->searches/allele_form.shtml">Phenotypes, Alleles, and Disease Models Query Form</a></li>
+<li>Search for existing mouse strains <a href="<!--#include file="include/wi_url.html"-->external/festing/search_form.cgi">Inbred Strains of Mice and Rats</a></li>
 <li><A HREF="http://dels.nas.edu/ilar_n/ilarhome/search_lc.shtml">Search</A> or <a href="http://dels.nas.edu/ilar_n/ilarhome/register_lc.shtml">apply</a> for a Laboratory Registration Code with the <A HREF="http://dels.nas.edu/ilar_n/ilarhome/index.shtml">Institute for Laboratory Animal Research</a> (ILAR).</li>
 
-</ul>
+</font></ul>
 
-<h4>Mouse Chromosome Aberration Nomenclature</h4>
+
+<h4>Submissions/Registrations</h4>
 <ul>
-<li><a href="anomalies.shtml">Rules for Nomenclature of Chromosome Aberrations</a></li>
+ <li><a href="nomen_submit_form.shtml">Submit</a> a Proposed Locus Symbol</li>
+<li><a href="allmut_form.shtml">Submit</a> Mutant Allele Information</li>
+<li><a href="../submissions/strains/index.shtml">Register</a> a new Mouse Strain Name</li>
 </ul>
 
 
-<h4>Additional Nomenclature Resources</h4>
-
+<b>Additional Resources</b>
 <ul>
 <li>
-<A href="ftp://ftp.informatics.jax.org/pub/reports/index.html#nomen">MGI Data and Statistical Reports</a>&nbsp; <br><i>Includes recent and archived mouse gene nomenclature updates</i></li>
+<A href="ftp://ftp.informatics.jax.org/pub/reports/index.html#nomen">MGI Data and Statistical Reports</a>&nbsp; - <i>Includes recent and archived mouse gene nomenclature updates</i></li>
 
-<li>Search the <a href="http://www.genenames.org/"> HUGO Gene Nomenclature (HGNC) database</a></li>
+<li><a href="http://www.genenames.org/">HUGO Gene Nomenclature Committee (HGNC)</a></li>
 
-<li>Search <a href="http://rgd.mcw.edu/">RGD (Rat Genome Database)</a></li>
+<li>Search <a href="http://rgd.mcw.edu/">RGD (Rat Genome Database)</a> - <i>rat gene searches</i></li>
 
-<li><a href="http://jaxmice.jax.org/info/nomenclature.html">JAX® Mice Nomenclature Articles and Announcements</a></li>
+<li><a href="http://jaxmice.jax.org/info/nomenclature.html">JAX® Mice Nomenclature Articles, Announcements and Tutorial</a></li>
 
-<li> <a href="../nomen/strain_129.shtml">Revision to Mouse Strain 129 Substrain Nomenclature</a></li>
-<!--<li><a href="genefamilies/index.shtml">MGI Gene Family Reports</a></li>-->
+<li><a href="../nomen/strain_129.shtml">Mouse Strain 129 Substrain Nomenclature</a> - <i>nomenclature distinguishing different 129 parental lines and related 129 strains</i></li>
+<li><a href="http://www.genenames.org/genefamily.html">HGNC Gene Families/Grouping
+Nomenclature</a></li>
 
-<LI><A HREF="http://www.ebi.ac.uk/imgt/hla/nomenclature.html">WHO HLA Nomenclature</A>  </li>
+<li><a href="journals.shtml">Journals Enforcing Standard Nomenclature</a></li>
 
-<li> See <a href="journals.shtml">Scientific Journals</a> that enforce use of official nomenclature in their publications.</li>
-
-<!--<LI><A HREF="">Table of former mutant symbols and their corresponding cloned gene symbols</A>  </li>-->
 </ul>
 
-<h4> Mouse Nomenclature Contacts</h4>
+<b>Contacts</b>
 
-<p>
-The implementation of the Mouse Nomenclature Guidelines is carried out at the 
-<a href="http://www.informatics.jax.org">Mouse Genome Database</a>  through the
-<b><a name="mgnc"></a>Mouse Genomic Nomenclature Committee (MGNC)</h4></b> whose members are:
+<p>The implementation of the Mouse Nomenclature Guidelines is carried out at the Mouse Genome Database through the
+<a name="mgnc"></a>Mouse Genomic Nomenclature Committee (MGNC) whose members are: Lois J. Maltais, Dr. Janan Eppig, Dr. Judith Blake, and Monica McAndrews-Hill.</p>
 
-<blockquote>
-Lois J. Maltais <br>
-Dr. Janan Eppig<br>
-Dr. Judith Blake<br>
-Monica McAndrews-Hill 
-</blockquote>
 <p><a href="mailto:nomen@informatics.jax.org">E-mail: nomen@informatics.jax.org</a>&nbsp; &nbsp; &nbsp; Voice: &nbsp; 207-288-6429 &nbsp; &nbsp;&nbsp;Fax: 207-288-6132
 </p>
 </ul>
 
-
-<!--#include file="include/bodyStop.html"-->
-</BODY>
-<!--
-Warranty Disclaimer and Copyright Notice
-
- THE JACKSON LABORATORY MAKES NO REPRESENTATION ABOUT THE SUITABILITY OR 
- ACCURACY OF THIS SOFTWARE OR DATA FOR ANY PURPOSE, AND MAKES NO WARRANTIES, 
- EITHER EXPRESS OR IMPLIED, INCLUDING MERCHANTABILITY AND FITNESS FOR A 
- PARTICULAR PURPOSE OR THAT THE USE OF THIS SOFTWARE OR DATA WILL NOT 
- INFRINGE ANY THIRD PARTY PATENTS, COPYRIGHTS, TRADEMARKS, OR OTHER RIGHTS.  
- THE SOFTWARE AND DATA ARE PROVIDED "AS IS".
-
- This software and data are provided to enhance knowledge and encourage 
- progress in the scientific community and are to be used only for research 
- and educational purposes.  Any reproduction or use for commercial purpose 
- is prohibited without the prior express written permission of the Jackson 
- Laboratory.
-
-Copyright © 1996, 1999, 2002 by The Jackson Laboratory
-All Rights Reserved
---></font></body></html>
+<!--#include file='include/templateBodyStop.html'--> 

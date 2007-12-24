@@ -1,24 +1,14 @@
-<TITLE><!--#include file='include/mgiversion.html'--> - Journals Enforcing Standard Nomenclature</title>
-<!--#include file="include/stylesheet.html"-->
-</head>
-<body bgcolor="#ffffff">
-<!--#include file="include/bodyStart.html"-->
-<table width="100%" border="0" cellpadding="2" cellspacing="1">
- <tbody><tr>
-  <td width="100%" bgcolor="#d0e0f0">
-   <table width="100%" border="0" cellpadding="0" cellspacing="0">
-    <tbody><tr>
-     <td width="20%" valign="center" align="left">&nbsp;</td>
-     <td width="60%" align="center" valign="center">
-      <font color="#000000" size="5" face="Arial,Helvetica">
-       <a name="jesn"></a>Journals Enforcing Standard Nomenclature</font>
-</td>
-     <td width="20%" valign="center" align="center">&nbsp;</td>
-    </tr>
-   </tbody></table>
-  </td>
- </tr>
-</tbody></table>
+<!--#include file='include/templateHead.html'--> 
+<title><!--#include file='include/mgiversion.html'--> - Journals Enforcing Standard Nomenclature</title>
+
+<!--#include file='include/templateBodyStart.html'--> 
+
+<!-- Title Bar -->
+<div id="titleBarWrapper">
+  <span class="titleBarMainTitle"> Journals Enforcing Standard Nomenclature</span>
+  
+</div> 
+<!--titleBar-->
      
 <p>International committees for establishing authoritative nomenclature for proteins, genes, alleles, and strains are active for human, mouse, rat, and other species. Adherence to correct nomenclature enhances scientific discourse and ensures that the object being referenced can be uniquely identified. Databases containing official nomenclature also include extensive cross-referencing to synonyms, former names, and sequence accession IDs for nucleotides and proteins to assist 
 with identification.</p>
@@ -67,22 +57,4 @@ Zebrafish:  <a href="http://zfin.org/zf_info/nomen.html">Zebrafish Nomenclature 
 
 <p>
 <a href="mailto:nomen@informatics.jax.org">Contact us</a> about your journal's nomenclature complicance!  
-</BODY>
-</p>
-<PRE>
-
-
-
-
-
-
-
-
-</PRE>
-
-<hr>
-<!--#include file="include/footer.html"-->
-</BODY>
-</HTML>
-<!--Warranty Disclaimer and Copyright Notice THE JACKSON LABORATORY MAKES NO REPRESENTATION ABOUT THE SUITABILITY OR ACCURACY OF THIS SOFTWARE OR DATA FOR ANY PURPOSE, AND MAKES NO WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE OR THAT THE USE OF THIS SOFTWARE OR DATA WILL NOT INFRINGE ANY THIRD PARTY PATENTS, COPYRIGHTS, TRADEMARKS, OR OTHER RIGHTS. THE SOFTWARE AND DATA ARE PROVIDED "AS IS". This software and data are provided to enhance knowledge and encourage progress in the scientific community and are to be used only for research and educational purposes.  Any reproduction or use for commercial purpose is prohibited without the prior express written permission of the Jackson Laboratory. Copyright © 1996, 1999, 2002, 2005, 2006 by The Jackson Laboratory All Rights Reserved -->
-
+<!--#include file='include/templateBodyStop.html'--> 
