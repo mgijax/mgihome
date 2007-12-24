@@ -9,12 +9,12 @@ if '.' not in sys.path:
 
 import string
 
-import config
+import Configuration
+config = Configuration.get_Configuration ('Configuration', 1)
+
 import feedbacklib
 import homelib
-import header
 import CGI
-import errorlib
 import formMailer
 
 class InputProcessingCGI (CGI.CGI):
@@ -45,9 +45,7 @@ class InputProcessingCGI (CGI.CGI):
                         formMailer.handleError (
 				'<UL><LI>%s</UL>' % \
 					string.join (errors, '\n<LI>'),
-                                'MGI Your Input Form',
-				header.bodyStart(),
-				header.bodyStop())
+                                'MGI Your Input Form')
                         sys.exit (0)
 		else:
 			inp.sendMail()

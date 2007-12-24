@@ -1,28 +1,14 @@
-<html>
-<head>
+<!--#include file='include/templateHead.html'--> 
 <title><!--#include file='include/mgiversion.html'--> - Citing MGI Resources</title>
-<!--#include file="include/stylesheet.html"-->
-</HEAD>
 
-<BODY BGCOLOR="#ffffff">
-<!--#include file="include/bodyStart.html"-->
-<TABLE WIDTH="100%" BORDER=0 CELLPADDING=2 CELLSPACING=1>
- <TR>
-  <TD WIDTH="100%" BGCOLOR="#D0E0F0">
-   <TABLE WIDTH="100%" BORDER=0 CELLPADDING=0 CELLSPACING=0>
-    <TR>
-     <TD WIDTH="20%" VALIGN="center" ALIGN="left">&nbsp;</TD>
-     <TD WIDTH="60%" ALIGN="center" VALIGN="center">
-      <FONT COLOR="#000000" SIZE=5 FACE="Arial,Helvetica">
-       Citing These Resources
-      </FONT>
-     </TD>
-     <TD WIDTH="20%" VALIGN="center" ALIGN="center">&nbsp;</TD>
-    </TR>
-   </TABLE>
-  </TD>
- </TR>
-</TABLE>
+<!--#include file='include/templateBodyStart.html'--> 
+
+<!-- Title Bar -->
+<div id="titleBarWrapper">
+  <span class="titleBarMainTitle"> Citing MGI Resources </span>
+</div>
+ <!--titleBar-->
+
 
 <h3>Publications to cite in your manuscripts</h3>
 
@@ -80,11 +66,7 @@ of the annual committee report cited]).</P>-->
 (URL:&nbsp;<A HREF="<!--#include file='include/wi_url.html'-->">http://www.informatics.jax.org</a>). (1999).
 </P></BLOCKQUOTE>
 <BR>
-<HR>
-
-
-<!--#include file="include/bodyStop.html"--></body>
-</html>
+<!--#include file='include/templateBodyStop.html'--> 
 
 <!--
 Warranty Disclaimer and Copyright Notice
@@ -102,6 +84,6 @@ Warranty Disclaimer and Copyright Notice
  is prohibited without the prior express written permission of the Jackson 
  Laboratory.
 
-Copyright © 1996, 1999, 2002 by The Jackson Laboratory
+Copyright © 1996, 1999, 2002, 2005, 2006, 2007 by The Jackson Laboratory
 All Rights Reserved
 -->

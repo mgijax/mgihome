@@ -1,8 +1,21 @@
 #!./python
+import sys
+if '.' not in sys.path:
+	sys.path.insert (0, '.')
 
-import config
+MGI_LIBS = '/usr/local/mgi/live/lib/python'
+if MGI_LIBS not in sys.path:
+	sys.path.insert (0, MGI_LIBS)
+
+import Configuration
+config = Configuration.get_Configuration ('Configuration', 1)
+
 import homelib
 import webshare_lib
+
+import os
+import db
+import string
 
 def listToFile (str_list, filename):
     print "writing %s" % filename
@@ -11,6 +24,34 @@ def listToFile (str_list, filename):
         fp.write ('%s\n' % item)
     fp.close()
     return
+
+def getDbDate ():
+    # Purpose: return value of latest db update
+    # Returns: string
+    # Assumes: nothing
+    # Effects: nothing
+    # Throws: db module may throw DB exceptions
+    # pull the MGI:ID and geneSymbol from the database
+
+    db.useOneConnection(1)
+    db.set_sqlUser(config["DB_USER"])
+    db.set_sqlPassword(config["DB_PASSWORD"])
+    db.set_sqlServer(config["DB_SERVER"])
+    db.set_sqlDatabase(config["DB_DATABASE"])
+    cmds = [] # SQL command list
+    cmds.append(string.join([
+        'SELECT CONVERT(varchar, lastdump_date, 106) as dbDate, '
+        'public_version '
+        'FROM MGI_dbInfo '
+    ]))
+
+    #  Excecute queries
+    results = db.sql(cmds, 'auto')
+    db.useOneConnection(0)
+    dbDateInfo = results[0][0]
+
+    return dbDateInfo["dbDate"]
+
 
 def stringToFileNoNL (s, filename):
     #  Ultimately this should replace the stringToFile method
@@ -29,51 +70,69 @@ def stringToFileNoNL (s, filename):
 
     return
 
+
 def stringToFile (s, filename):
     listToFile ( [s], filename)
     return
 
+INCLUDEDIR = os.path.join(config['MGIHOME_PATH'], 'www/include/')
+
+def createIncludeLink (includeName, fileLoc ) :
+# 
+# INPUTS: includeName - name of the soft link to be created
+#         fileLoc - full path to source file
+    filePath = os.path.join(INCLUDEDIR, includeName)
+    if os.path.exists(filePath):
+        os.system("rm " + filePath)
+    os.system("ln -s " + fileLoc + " " + filePath)
+
 def main ():
     listToFile (homelib.banner(), '../www/include/banner.html')
     listToFile (homelib.footer(), '../www/include/footer.html')
-    stringToFile (config.lookup ('WI_URL'), '../www/include/wi_url.html')
-    stringToFile ('"%s";' % config.lookup ('WI_URL'), '../www/include/wi_url2.html')
-    stringToFile (config.lookup ('FTP_URL'), '../www/include/ftp_url.html')
+    stringToFile (config['WI_URL'], '../www/include/wi_url.html')
+    stringToFile ('"%s";' % config['WI_URL'], '../www/include/wi_url2.html')
+    stringToFile (config['FTP_URL'], '../www/include/ftp_url.html')
+    stringToFile (config['MTB_URL'], '../www/include/mtb_url.html')
+    stringToFile (config['MPD_URL'], '../www/include/mpd_url.html')
     #  This version of the ftp_url file is being generated to support a problem
     #  found in the implementation of TR7388.  The newline being written to
     #  the file after the URL was not being handled well via firefox.
     #  To minimize testing requirements Jill Lewis jlewis@informatics.jax.org
     #  authorized the generation of a second ftp_url html file.
-    stringToFileNoNL (config.lookup ('FTP_URL'), '../www/include/ftp_url2.html')
-    stringToFile (config.lookup ('MGIHOME_URL'), \
+    stringToFileNoNL (config['FTP_URL'], '../www/include/ftp_url2.html')
+    stringToFile (config['MGIHOME_URL'], \
         '../www/include/mgihome_url.html')
-    stringToFile (config.lookup ('GB_URL'), '../www/include/gb_url.html')
-    stringToFile (config.lookup ('LOCUSLINK_URL'), \
+    stringToFile (config['GB_URL'], '../www/include/gb_url.html')
+    stringToFile (config['GBROWSE_URL'], '../www/include/gbrowse_url.html')
+    stringToFile (config['GO_GRAPH_URL'], '../www/include/gograph_url.html')
+    stringToFile (config['LOCUSLINK_URL'], \
         '../www/include/locuslink_url.html')
-    stringToFile (config.lookup ('RGD_URL'), \
+    stringToFile (config['RGD_URL'], \
         '../www/include/rgd_url.html')
-    stringToFile (config.lookup ('ENTREZ_URL'), \
+    stringToFile (config['ENTREZ_URL'], \
         '../www/include/entrez_url.html')
-    stringToFile (config.lookup ('GLOSSARY_URL'), \
+    stringToFile (config['GLOSSARY_URL'], \
         '../www/include/glossary_url.html')
-    stringToFile (config.lookup ('USERDOCS_URL'), \
+    stringToFile (config['USERDOCS_URL'], \
         '../www/include/userdocs_url.html')
-    stringToFile (config.lookup ('SCHEMA'),\
+    stringToFile (config['SCHEMA'],\
         '../www/include/schema_url.html')
-    stringToFile (config.lookup ('MGI_VER'),\
+    stringToFile (config['NAME'],\
         '../www/include/mgiversion.html')
-    stringToFile (config.lookup ('JAVAWI_URL'), \
+    stringToFile (config['JAVAWI_URL'], \
         '../www/include/java_url.html')
-    stringToFile (config.lookup ('MOUSEBLAST_URL'), \
+    stringToFile (config['MOUSEBLAST_URL'], \
         '../www/include/mouseblast_url.html')
-    stringToFile (config.lookup ('WKSILVERS_URL'), \
+    stringToFile (config['WKSILVERS_URL'], \
             '../www/include/wksilvers_url.html')        
-    stringToFile (config.lookup ('COOKBOOK_URL'), \
+    stringToFile (config['COOKBOOK_URL'], \
             '../www/include/cookbook_url.html')        
-    stringToFile (config.lookup ('MORSEBOOK_URL'), \
+    stringToFile (config['MORSEBOOK_URL'], \
             '../www/include/morsebook_url.html')        
-    stringToFile (config.lookup ('SILVER_URL'), \
-            '../www/include/silverbook_url.html')        
+    stringToFile (config['SILVER_URL'], \
+            '../www/include/silverbook_url.html') 
+    stringToFile (config['GREENBOOK_URL'], \
+            '../www/include/greenbook_url.html')            
     stringToFile (webshare_lib.webshareLookup('mgi_logo'), \
         '../www/include/mgi_logo.html')
     stringToFile (webshare_lib.webshareLookup('help'), \
@@ -89,40 +148,39 @@ def main ():
 
     # new additions for KOMP
 
-    stringToFile (config.lookup ('GENBANK_HOME'),
+    stringToFile (config['GENBANK_HOME'],
 	'../www/include/genbank_home_url.html')
-    stringToFile (config.lookup ('ENSEMBL_HOME'),
+    stringToFile (config['ENSEMBL_HOME'],
 	'../www/include/ensembl_home_url.html')
-    stringToFile (config.lookup ('ENTREZGENE_HOME'),
+    stringToFile (config['ENTREZGENE_HOME'],
 	'../www/include/entrezgene_home_url.html')
-    stringToFile (config.lookup ('KOMP_HOME'),
+    stringToFile (config['KOMP_HOME'],
 	'../www/include/komp_home_url.html')
-    stringToFile (config.lookup ('KOMP_NIH'),
+    stringToFile (config['KOMP_NIH'],
 	'../www/include/komp_nih_url.html')
-    stringToFile (config.lookup ('IMSR_HOME'),
+    stringToFile (config['IMSR_HOME'],
 	'../www/include/imsr_home_url.html')
+
+    # new include file for the faq's
+    stringToFile (config['FAQ_URL'],
+        '../www/include/faq_url.html')
+
+    stringToFile(getDbDate(), '../www/include/stats_date.shtml')
+
+    #####----- Template Include Files --------#####
+    createIncludeLink('templateHead.html', config['MGICONFIG_PATH'] + 'web/templateHead.html')
+    createIncludeLink('templateBodyStart.html', config['MGICONFIG_PATH'] + 'web/templateBodyStart.html')
+    createIncludeLink('templateBodyStop.html', config['MGICONFIG_PATH'] + 'web/templateBodyStop.html')
+
+    createIncludeLink('templateBlankBodyStart.html', config['MGICONFIG_PATH'] + 'web/templateBlankBodyStart.html')
+    createIncludeLink('templateBlankBodyStop.html', config['MGICONFIG_PATH'] + 'web/templateBlankBodyStop.html')
+
+    createIncludeLink('templateHomePageBodyStart.html', config['MGICONFIG_PATH'] + 'web/templateHomePageBodyStart.html')
+    createIncludeLink('templateHomePageBodyStop.html', config['MGICONFIG_PATH'] + 'web/templateHomePageBodyStop.html')
+
 
     return
 
 if __name__ == '__main__':
     main()
-#
-# Warranty Disclaimer and Copyright Notice
-# 
-#  THE JACKSON LABORATORY MAKES NO REPRESENTATION ABOUT THE SUITABILITY OR 
-#  ACCURACY OF THIS SOFTWARE OR DATA FOR ANY PURPOSE, AND MAKES NO WARRANTIES, 
-#  EITHER EXPRESS OR IMPLIED, INCLUDING MERCHANTABILITY AND FITNESS FOR A 
-#  PARTICULAR PURPOSE OR THAT THE USE OF THIS SOFTWARE OR DATA WILL NOT 
-#  INFRINGE ANY THIRD PARTY PATENTS, COPYRIGHTS, TRADEMARKS, OR OTHER RIGHTS.  
-#  THE SOFTWARE AND DATA ARE PROVIDED "AS IS".
-# 
-#  This software and data are provided to enhance knowledge and encourage 
-#  progress in the scientific community and are to be used only for research 
-#  and educational purposes.  Any reproduction or use for commercial purpose 
-#  is prohibited without the prior express written permission of the Jackson 
-#  Laboratory.
-# 
-# Copyright (c) 1996, 1999, 2002 by The Jackson Laboratory
-# All Rights Reserved
-#
 

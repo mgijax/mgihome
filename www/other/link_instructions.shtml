@@ -1,29 +1,15 @@
-<HTML>
-<HEAD>
-<TITLE><!--#include file='include/mgiversion.html'--> - How to Create WWW Links to MGD</TITLE>
-<!--#include file="include/stylesheet.html"-->
-</HEAD>
-<BODY BGCOLOR="#ffffff">
-<!--#include file="include/bodyStart.html"-->
-<TABLE WIDTH="100%" BORDER=0 CELLPADDING=2 CELLSPACING=1>
- <TR>
-  <TD WIDTH="100%" BGCOLOR="#D0E0F0">
-   <TABLE WIDTH="100%" BORDER=0 CELLPADDING=0 CELLSPACING=0>
-    <TR>
-     <TD WIDTH="20%" VALIGN="center" ALIGN="left">&nbsp;</TD>
-     <TD WIDTH="60%" ALIGN="center" VALIGN="center">
-      <FONT COLOR="#000000" SIZE=5 FACE="Arial,Helvetica">
-       How to Create WWW Links to MGI
-      </FONT>
-     </TD>
-     <TD WIDTH="20%" VALIGN="center" ALIGN="center">&nbsp;</TD>
-    </TR>
-   </TABLE>
-  </TD>
- </TR>
-</TABLE>
+<!--#include file='include/templateHead.html'--> 
+<title><!--#include file='include/mgiversion.html'--> - Creating Web Links to MGI</title>
+
+<!--#include file='include/templateBodyStart.html'--> 
+<!-- Title Bar -->
+  <div id="titleBarWrapper">
+  <span class="titleBarMainTitle">Creating Web Links to MGI </span>
+  </div> 
+<!--titleBar-->
+
 <a name=#top"></a>
-<p>This page provides instructions for creating URL links to MGI. We recommend strongly that you use these URLs for linking to MGI since alternative URLs may not be supported in the future.
+<p>This page provides instructions for creating URL links to MGI. We strongly recommend  that you use these URLs for linking to MGI since alternative URLs may not be supported in the future.
 The topics covered are:
 <ul>
   <li><a href="#url_and_syntax">URL and syntax</a></li>
@@ -59,9 +45,9 @@ For more details about sequences and MGI accession IDs, see
 <a href="#top">Back to top</a>
 
 <h4><a name="objects_supported"></a>Objects Supported by the URL</h4>
-<P>There are many types of objects supported by this URL:
+<P>There are many types of objects supported by this URL. See <a href="<!--#include file='include/userdocs_url.html'-->accession_help.shtml">Using the Accession IDs Query Form</a> for a complete list.
 
-<UL>
+<!--<UL>
 <LI>References
 <LI>Segments
 <LI>Mouse Markers
@@ -74,7 +60,7 @@ For more details about sequences and MGI accession IDs, see
 <LI>Antibodies
 <LI>Antigens
 <li>Gene Ontology (GO) Terms
-</UL>
+</UL>-->
 </p>
 <a href="#top">Back to top</a>
 
@@ -152,35 +138,7 @@ If the search expression matches more than one object, a summary report lists th
 All data dumps are tab-delimited and generated nightly.  In most of the reports, the MGI Accession ID appears in the first column.  See <a href="ftp://www.informatics.jax.org/pub/reports/index.html">MGI Data and Statistical Reports</a> for an index with links to the report categories.</p>
 
 <a href="#top">Back to top</a>
-<pre>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-</pre>
-
-
-<!--#include file="include/bodyStop.html"-->
-</body>
-
-
-</HTML>
+<!--#include file='include/templateBodyStop.html'--> 
 
 <!--
 Warranty Disclaimer and Copyright Notice
@@ -198,6 +156,6 @@ Warranty Disclaimer and Copyright Notice
  is prohibited without the prior express written permission of the Jackson
  Laboratory.
 
-Copyright © 1996, 1999, 2002 by The Jackson Laboratory
+Copyright © 1996, 1999, 2002, 2005, 2006, 2007 by The Jackson Laboratory
 All Rights Reserved
 -->

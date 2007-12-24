@@ -1,0 +1,151 @@
+<!--#include file='include/templateHead.html'-->
+
+  <title><!--#include file="include/mgiversion.html"--> - Mouse Genome Informatics Gene Expression Data Page</title>
+
+
+<!------------- AJAX TABS CALLS -------------------------------------------------------->
+
+<link rel="stylesheet" type="text/css" href="ajaxtabs.css" />
+<script type="text/javascript" src="ajaxtabs.js">
+	/***********************************************
+	* Ajax Tabs Content script- © Dynamic Drive DHTML code library (www.dynamicdrive.com)
+	* This notice MUST stay intact for legal use
+	* Visit Dynamic Drive at http://www.dynamicdrive.com/ for full source code
+	***********************************************/
+</script>
+
+<link rel="stylesheet" type="text/css" href="minihome.css" />
+
+<!--#include file='include/templateBodyStart.html'-->
+
+<!-- start body content -->
+
+<!-- mini homepage header section -->
+<table class="sideMargin marginTop" border="0" cellspacing="0" cellpadding="0">
+	<tr>
+		<td align="center" valign="middle">
+			<span class="homePageTitle">
+				Gene Expression Database (GXD)
+			</span>
+			<br>
+			<span class="homePageSubTitle">
+			   GXD collects and integrates the  gene expression information in MGI. Its primary
+			   emphasis is on endogenous gene expression during  mouse development.
+			</span>
+		</td>
+		<td>
+			<div class="sideMargin marginBottom blueBorder pad5">
+				<a href='javascript:openFaqWindow("GXD_imgpop.shtml")'>
+				<img class="outlineImg" src="images/GXD.jpg"></a>
+        	</div>
+		</td>
+	</tr>
+</table>
+
+
+<table class="sideMargin" border="0" cellspacing="0" cellpadding="0">
+	<tr>
+		<td rowspan="2" width="50%" valign="top">
+			<div class="blueBorder rightCenterMargin">
+				<div class="boxTitle">Access Gene Expression data</div>
+				<div class="boxBG pad5">
+					<dl>
+						<dt>Search for references on gene expression during development.</dt>
+						<dd class="searchList"><a class="small homeLink" href="<!--#include file='include/wi_url.html'-->searches/gxdindex_form.shtml">Gene Expression Literature Query</a></dd>
+
+						<dt>Search for detailed gene expression assay results.</dt>
+						<dd class="searchList"><a class="small homeLink" href="<!--#include file='include/java_url.html'-->WIFetch?page=expressionQF">Gene Expression Data Query</a></dd>
+
+						<dt>Search for genes expressed in some anatomical structures and/or
+						developmental stages but not in others.</dt>
+						<dd class="searchList"><a class="small homeLink" href="<!--#include file='include/java_url.html'-->WIFetch?page=expressionQFexpanded">Gene Expression Data Expanded Query</a></dd>
+
+						<dt>Search or browse for anatomical structures; includes links to
+						associated expression results.</dt>
+						<dd class="searchList"><a class="small homeLink" href="<!--#include file='include/wi_url.html'-->searches/anatdict_form.shtml">Mouse Anatomical Dictionary Browser</a></dd>
+
+						<dt>Search the Edinburgh Mouse Atlas for anatomical terms and query
+						for associated expression data.</dt>
+						<dd class="searchList"><a class="small homeLink" href="http://genex.hgu.mrc.ac.uk/Resources/GXDQuery1/SectionBrowser.html">EMAGE Anatomical Section Browser</a></dd>
+
+						<dt>Search for expression information based on tissue or cell-line
+						origin of cDNAs.</dt>
+						<dd class="searchList"><a class="small homeLink" href="<!--#include file='include/java_url.html'-->WIFetch?page=cDNAQF">cDNA Clone Query</a></dd>
+					</dl>
+				</div>
+			</div>
+		</td>
+		<td width="50%" valign="top">
+			<div class="blueBorder marginBottom leftCenterMargin">
+				<div class="boxTitle">FAQs</div>
+				<div class="boxBG pad5">
+					<dl class="boxList">
+						<dt>How do I...</dt>
+						<dd class="faqList">.. find expression data for a specific gene and tissue? <a class="small homeLink" href='javascript:openFaqWindow("GXD_GeneTissue")'>FAQ</a></dd>
+						<dd class="faqList">.. find expression data for a tissue during development? <a class="small homeLink" href='javascript:openFaqWindow("GXD_tissue_dev.shtml")'>FAQ</a></dd>
+						<dd class="faqList">.. find genes expressed in one tissue but not another? <a class="small homeLink" href='javascript:openFaqWindow("GXD_comp_tissue.shtml")'>FAQ</a></dd>
+						<dd class="faqList">.. find references that report expression data for a gene at a specific age? <a class="small homeLink" href='javascript:openFaqWindow("GXD_ref_age.shtml")'>FAQ</a></dd>
+					</dl>
+					<a class="small homeLink" href="<!--#include file='include/faq_url.html'-->FAQ.shtml#expression">More FAQs</a>
+				</div>
+			</div>
+		</td>
+	</tr>
+	<tr>
+		<td width="50%" valign="top">
+			<div class="blueBorder leftCenterMargin statList">
+				<div class="boxTitle">
+					<div class="left">GXD includes</div>
+					<div class="right small"><!--#include file='include/stats_date.shtml'--></div>
+				</div>
+				<div class="boxBG pad5 small">
+					<!--#include file='stats/gxd_stats.shtml'-->
+					<a class="small homeLink" href="<!--#include file="include/mgihome_url.html"-->homepages/stats/all_stats.shtml#allstats_gxd">More...</a>
+				</div>
+			</div>
+		</td>
+	</tr>
+</table>
+
+
+<div class="boxWide blueBorder marginBottom">
+	<div class="boxTitle">
+		<span class="left">Gene Expression News</span>
+		<span class="right small">10 Oct 2007</span>
+	</div>
+	<div class="boxBG pad5 small">
+		GXD is pleased to announce the inclusion of <em>in situ </em>hybridization
+		data from Dr. Gregor Eichele of the GenePaint database [www.genepaint.org;
+		Visel A; Thaller C; Eichele G. GenePaint.org: an atlas of gene expression
+		patterns in the mouse embryo. 2004. Nucleic Acids Research 32(Database  issue):D552-6].
+		The data set can be  viewed at accession number
+		<a href="<!--#include file='include/wi_url.html'-->searches/reference.cgi?124081">J:122989</a>.
+		This set includes over 69,000 results; 745  genes; 1,397 probes; 748 assays (in situ
+		hybridizations at E14.5); and 10,585  images.
+	</div>
+</div>
+
+<div class="boxWide marginBottom">
+	<ul id="maintab" class="shadetabs">
+		<li><a hidefocus="true" href="tabContents/GXD_About.shtml" rel="ajaxcontentarea">About GXD</a></li>
+		<li class="selected"><a hidefocus="true" href="tabContents/GXD_SendData.shtml" rel="ajaxcontentarea">Send us your data</a></li>
+		<li><a hidefocus="true" href="tabContents/GXD_Curators.shtml" rel="ajaxcontentarea">Our data policies</a></li>
+		<li><a hidefocus="true" href="tabContents/GXD_Help.shtml" rel="ajaxcontentarea">Help documents</a></li>
+		<li><a hidefocus="true" href="tabContents/GXD_Collaborators.shtml" rel="ajaxcontentarea">Collaborators</a></li>
+		<li><a hidefocus="true" href="tabContents/GXD_Resources.shtml" rel="ajaxcontentarea">Other Links</a></li>
+	</ul>
+	<div id="ajaxcontentarea" class="contentstyle">
+		<!--#include file='tabContents/GXD_SendData.shtml'-->
+	</div>
+	<script type="text/javascript">
+		var tab_box=new ddajaxtabs("maintab", "ajaxcontentarea")
+		tab_box.setpersist(true)
+		tab_box.setselectedClassTarget("linkparent") //"link" or "linkparent"
+		tab_box.init()
+	</script>
+</div>
+
+<!--#include file='include/templateBodyStop.html'-->
+
+</body>
+</html>

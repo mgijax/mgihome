@@ -1,30 +1,14 @@
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
-<HTML>
-<HEAD>
-<TITLE><!--#include file='include/mgiversion.html'--> - Help</TITLE>
-<!--#include file="include/stylesheet.html"-->
-</HEAD>
-<BODY BGCOLOR="#FFFFFF">
-<BODY BGCOLOR="#FFFFFF">
-<!--#include file="include/bodyStart.html"-->
- <TABLE WIDTH="100%" BORDER=0 CELLPADDING=2 CELLSPACING=1>
- <TR>
-  <TD WIDTH="100%" BGCOLOR="#D0E0F0">
-   <TABLE WIDTH="100%" BORDER=0 CELLPADDING=0 CELLSPACING=0>
-    <TR>
-     <TD WIDTH="20%" VALIGN="center" ALIGN="left">&nbsp;</TD>
-     <TD WIDTH="60%" ALIGN="center" VALIGN="center">
-      <FONT COLOR="#000000" SIZE=5 FACE="Arial,Helvetica">
-   Help
-      </FONT>
-     </TD>
-     <TD WIDTH="20%" VALIGN="center" ALIGN="center">&nbsp;</TD>
-    </TR>
-   </TABLE>
-  </TD>
- </TR>
-</TABLE>
-   
+<!--#include file='include/templateHead.html'--> 
+<title><!--#include file='include/mgiversion.html'--> - Help</title>
+
+<!--#include file='include/templateBodyStart.html'--> 
+
+<!-- Title Bar -->
+<div id="titleBarWrapper">
+  <span class="titleBarMainTitle"> Help</span>
+  
+</div> 
+<!--titleBar-->
 
 
 
@@ -70,7 +54,7 @@ Phone: (207) 288-6445<br><br>
 <P><B>Community Resources</b><BR>
 <DL>
 
-<P><DD><B><A HREF="../submissions/submissions_menu.shtml">Contributing Your Data</A></B><BR>
+<P><DD><B><A HREF="<!--#include file='include/wi_url.html'-->menus/allsubmitforms_menu.shtml">Contributing Your Data</A></B><BR>
 <EM>Guidelines for contributing data to MGI</EM>
 
 <P><DD><B><A HREF="../other/mouse_facts1.shtml">Mouse Facts</A></B><BR>
@@ -94,26 +78,4 @@ Phone: (207) 288-6445<br><br>
 </TD>
 </TR>
 </TABLE>
-
-<HR>
-<!--#include file="include/bodyStop.html"-->
-</BODY></HTML>
-<!--
-Warranty Disclaimer and Copyright Notice
-
- THE JACKSON LABORATORY MAKES NO REPRESENTATION ABOUT THE SUITABILITY OR 
- ACCURACY OF THIS SOFTWARE OR DATA FOR ANY PURPOSE, AND MAKES NO WARRANTIES, 
- EITHER EXPRESS OR IMPLIED, INCLUDING MERCHANTABILITY AND FITNESS FOR A 
- PARTICULAR PURPOSE OR THAT THE USE OF THIS SOFTWARE OR DATA WILL NOT 
- INFRINGE ANY THIRD PARTY PATENTS, COPYRIGHTS, TRADEMARKS, OR OTHER RIGHTS.  
- THE SOFTWARE AND DATA ARE PROVIDED "AS IS".
-
- This software and data are provided to enhance knowledge and encourage 
- progress in the scientific community and are to be used only for research 
- and educational purposes.  Any reproduction or use for commercial purpose 
- is prohibited without the prior express written permission of the Jackson 
- Laboratory.
-
-Copyright © 1996, 1999, 2002, 2003, 2004, 2005 by The Jackson Laboratory
-All Rights Reserved
--->
+<!--#include file='include/templateBodyStop.html'--> 

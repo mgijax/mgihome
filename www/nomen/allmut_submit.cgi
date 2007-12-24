@@ -14,11 +14,11 @@ import string
 import types
 import os
 
-import config
+import Configuration
+config = Configuration.get_Configuration ('Configuration', 1)
+
 import homelib
-import header
 import CGI
-import errorlib
 import formMailer
 
 ###--- Global Variables ---###
@@ -153,15 +153,13 @@ class allmutMailer (formMailer.formMailer):
 
 curator_addr = 'mutants@informatics.jax.org'
 
-dev_email = config.lookup ('CGI_MAILTARGET')
-if dev_email is not None:
-        curator_addr = dev_email
+if config.has_key('CGI_MAILTARGET'):
+        curator_addr = config['CGI_MAILTARGET']
+
 
 # construct the allmutMailer object, and let it run...
 allmutMailerCGI = allmutMailer ('Allele and Mutant',
         curator_addr,
-        header.bodyStart(),
-        header.bodyStop(),
         labels,
         required_fields,
         sections

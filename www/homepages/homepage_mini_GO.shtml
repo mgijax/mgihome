@@ -1,0 +1,196 @@
+<!--#include file='include/templateHead.html'-->
+
+  <title><!--#include file="include/mgiversion.html"--> - Mouse Genome Informatics Gene Ontology Page</title>
+
+
+<!------------- AJAX TABS CALLS -------------------------------------------------------->
+
+<link rel="stylesheet" type="text/css" href="ajaxtabs.css" />
+<script type="text/javascript" src="ajaxtabs.js">
+	/***********************************************
+	* Ajax Tabs Content script- © Dynamic Drive DHTML code library (www.dynamicdrive.com)
+	* This notice MUST stay intact for legal use
+	* Visit Dynamic Drive at http://www.dynamicdrive.com/ for full source code
+	***********************************************/
+</script>
+
+<script language="JavaScript">
+	function Toggle_GOimages(id) {
+		var div = document.getElementById(id);
+		if (div==null) {
+			return; }
+		var bExpand = div.style.display == '';
+		div.style.display = (bExpand ? 'none' : '');
+	}
+</script>
+
+<link rel="stylesheet" type="text/css" href="minihome.css" />
+
+<!--#include file='include/templateBodyStart.html'-->
+
+<!-- start body content -->
+
+<!-- mini homepage header section -->
+<table class="sideMargin marginTop" width="100%" border="0" cellspacing="0" cellpadding="0">
+	<tr>
+		<td align="center" valign="middle">
+			<span class="homePageTitle">
+				Functional Annotation using the Gene Ontology (GO)
+			</span>
+			<br>
+			<span class="homePageSubTitle">
+			   MGI's GO project provides functional annotations for mouse gene products using the Gene Ontology.
+			</span>
+		</td>
+		<td>
+			<div id="TinyImage" class="sideMargin marginBottom outerGOWrap">
+				<div class="smallGOWrap blueBorder">
+					<a href='javascript:Toggle_GOimages("BigImage");' class="small homeLink">show larger image [-]</a>
+					<br />
+					<a class="imgTopBottom" href='javascript:openFaqWindow("GO_ortho.shtml")'>
+						<acronym title="Will link to special FAQ window">
+							<img class="imgTopBottom pad5" src="images/GO.gif" alt="GO Graph" name="GOgraph" border="0">
+						</acronym>
+						<br />
+						<acronym title="Will link to a special FAQ window">
+							<a href='javascript:openFaqWindow("GO_ortho.shtml")' class="small homeLink">GO annotation comparison for mouse Slc22a6 and its human and rat orthologs</a>
+						</acronym>
+					</a>
+				</div>
+
+				<div class="bigGOWrap blueBorder" id="BigImage" style="display:none;">
+					<a href='javascript:Toggle_GOimages("BigImage");' class="small homeLink">show smaller image [-]</a>
+					<br />
+					<a class="imgTopBottom" href='javascript:openFaqWindow("GO_ortho.shtml")'>
+						<acronym title="Will link to special FAQ window">
+							<img class="imgTopBottom pad5" src="images/GO_big.gif" alt="GO Graph" name="GOgraph" border="0">
+						</acronym>
+						<br />
+						<acronym title="Will link to a special FAQ window">
+							<a href='javascript:openFaqWindow("GO_ortho.shtml")' class="small homeLink">GO annotation comparison for mouse Slc22a6 and its human and rat orthologs</a>
+						</acronym>
+					</a>
+				</div>
+			</div>
+		</td>
+	</tr>
+</table>
+
+
+<!-- 3 box section -->
+<table class="sideMargin" border="0" cellspacing="0" cellpadding="0">
+	<tr>
+		<td rowspan="2" width="50%" valign="top">
+			<!-- Left box: 'What can I do here?' -->
+			<div class="blueBorder rightCenterMargin">
+				<div class="boxTitle">
+					Access GO Functional Annotations data
+				</div>
+				<!-- 'What can I do here?'content -->
+				<!-- The content is in a definition list <dl> where the descriptive text
+				is in the term <dt>, and the link is in the definition <dd> -->
+				<div class="boxBG pad5">
+					<dl>
+						<dt class="whatList"><a href="<!--#include file='include/wi_url.html'-->searches/GO_form.shtml" class="homeLink">Browse the Gene Ontology</a>
+							and mouse annotations in MGI.</dt>
+						<dt class="whatList"><a href="<!--#include file='include/java_url.html'-->WIFetch?page=markerQF" class="homeLink">Search for genes</a>
+							using GO terms and other gene attributes.</dt>
+						<dt class="whatList"><a href="<!--#include file='include/gograph_url.html'-->OrthoDisease/DisorderGraphs/index.html" class="homeLink">Access GO
+							annotations for genes associated with OMIM</a>.</dt>
+						<dt class="whatList"><a href="<!--#include file='include/java_url.html'-->WIFetch?page=batchQF" class="homeLink">Obtain sets of MGI IDs</a>
+							for use in GO tools.</dt>
+					</dl>
+					Use GO annotations to discover what your gene set may have in common:
+					<ul>
+						<li>Analyze functional annotations using the <a href="http://proto.informatics.jax.org/prototypes/GOTools/web-docs/MGI_Term_Finder.html" class="homeLink">MGI GO Term Finder</a></li>
+						<li>Build GO charts to present GO functional data with the <a href="http://proto.informatics.jax.org/prototypes/GOTools/web-docs/MGI_GO_Slim_Chart.html" class="homeLink">GO Chart Tool</a></li>
+					</ul>
+				</div>
+			</div>
+		</td>
+		<td width="50%" valign="top">
+			<div class="blueBorder marginBottom leftCenterMargin">
+				<div class="boxTitle">
+					FAQs
+				</div>
+				<!-- FAQs content -->
+				<!-- The content is in a definition list <dl> where the list title is in
+				the term <dt>, and FAQ question is in the definition <dd>. Note the link
+				uses a javascript function to open a separate window;
+				javascript:openFaqWindow("faqPage.shtml")'-->
+				<div class="boxBG pad5">
+					<dl class="boxList">
+						<dt>How do I...</dt>
+						<dd class="faqList">.. download all mouse GO annotations? <a class="small homeLink" href='javascript:openFaqWindow("GO_dload.shtml")'>FAQ</a></dd>
+						<dd class="faqList">.. find all GO annotations for a specific gene? <a class="small homeLink" href='javascript:openFaqWindow("GO_gene.shtml")'>FAQ</a></dd>
+						<dd class="faqList">.. find all genes with shared annotation to GO term? <a class="small homeLink" href='javascript:openFaqWindow("GO_term.shtml")'>FAQ</a></dd>
+						<dd class="faqList">.. find shared function for a list of specific genes? <a class="small homeLink" href='javascript:openFaqWindow("GO_finder.shtml")'>FAQ</a></dd>
+						<dd class="faqList">.. view annotations for mouse/human/rat ortholog sets? <a class="small homeLink" href='javascript:openFaqWindow("GO_ortho.shtml")'>FAQ</a></dd>
+						<dd class="faqList">.. obtain FASTA sequence files for genes with GO annotations in common? <a class="small homeLink" href='javascript:openFaqWindow("GO_seq.shtml")'>FAQ</a></dd>
+
+
+					</dl>
+					<!-- link to all FAQs page -->
+					<a class="small homeLink" href="<!--#include file='include/faq_url.html'-->FAQ.shtml#go">More FAQs</a>
+				</div>
+			</div>
+		</td>
+	</tr>
+	<tr>
+		<td width="50%" valign="top">
+			<div class="blueBorder leftCenterMargin statList">
+				<div class="boxTitle">
+					<div class="left">Functional Annotations (GO) data includes</div>
+					<div class="right small"><!--#include file='include/stats_date.shtml'--></div>
+				</div>
+				<div class="boxBG pad5 small">
+					<!--#include file='stats/go_stats.shtml'-->
+					<a class="small homeLink" href="<!--#include file="include/mgihome_url.html"-->homepages/stats/all_stats.shtml#allstats_go">More...</a>
+				</div>
+			</div>
+		</td>
+	</tr>
+</table>
+
+<!-- News box -->
+<div class="boxWide blueBorder marginBottom">
+	<div class="boxTitle">
+		<!-- Box-title goes here -->
+		<div class="left">MGI GO news</div>
+		<div class="right small">21 Nov 2007</div>
+	</div>
+	<!-- News content -->
+	<div class="boxBG pad5 small">
+		<ul class="small">
+			<li><a href="http://www.geneontology.org/newsletter/current-newsletter.shtml" class="homeLink">Latest</a> GO newsletter</li>
+		</ul>
+	</div>
+</div>
+
+<!-- Tabs box -->
+<div class="boxWide marginBottom">
+	<ul id="maintab" class="shadetabs">
+		<li class="selected"><a href="tabContents/GO_About.shtml" rel="ajaxcontentarea">About GO at MGI</a></li>
+		<li><a href="tabContents/GO_Resources.shtml" rel="ajaxcontentarea">GO Resources</a></li>
+		<li><a href="tabContents/GO_Annot.shtml" rel="ajaxcontentarea">GO Annotation Projects</a></li>
+		<li><a href="tabContents/GO_Literature.shtml" rel="ajaxcontentarea">GO Literature</a></li>
+		<li><a href="tabContents/GO_Curators.shtml" rel="ajaxcontentarea">Interpreting annotations</a></li>
+		<li><a href="tabContents/GO_Other.shtml" rel="ajaxcontentarea">Contact us</a></li>
+	</ul>
+	<!-- this is where the tab text gets inserted by javascript -->
+	<div id="ajaxcontentarea" class="contentstyle">
+		<!-- text for default selected tab inserted here as an include -->
+		<!--#include file='tabContents/GO_About.shtml'-->
+	</div>
+	<script type="text/javascript">
+		var tab_box=new ddajaxtabs("maintab", "ajaxcontentarea")
+		tab_box.setpersist(true)
+		tab_box.setselectedClassTarget("linkparent") //"link" or "linkparent"
+		tab_box.init()
+	</script>
+</div>
+
+<!--#include file='include/templateBodyStop.html'-->
+
+</body>
+</html>

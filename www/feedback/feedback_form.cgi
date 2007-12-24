@@ -16,7 +16,9 @@ import sys
 if '.' not in sys.path:
 	sys.path.insert (0, '.')
 
-import config
+import Configuration
+config = Configuration.get_Configuration ('Configuration', 1)
+
 import feedbacklib
 import CGI
 import homelib

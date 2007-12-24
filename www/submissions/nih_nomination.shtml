@@ -1,4 +1,14 @@
-<html><head><title><!--#include file='include/mgiversion.html'-->  - NIH Mouse Knockout Nominating</title>
+<!--#include file='include/templateHead.html'-->
+<title><!--#include file='include/mgiversion.html'--> - NIH Mouse Knockout Nominating</title>
+
+<!--#include file='include/templateBodyStart.html'-->
+
+<!-- Title Bar -->
+<div id="titleBarWrapper">
+ <span class="titleBarMainTitle">Nominate Knockouts for Placement in Public Repositories</span>
+</div> <!--titleBar-->
+
+
 <style>
 <!--
 .input {
@@ -12,28 +22,12 @@ font-family: sans-serif;
 .inner {
 font-family: sans-serif;
 	width:150px;
-	
+
 	border-style:solid thin;
 	border-color:#aaaaaa;
 	}
 	//-->
-</style></head>
-<body bgcolor="#ffffff">
-<table border="0" cellpadding="0" cellspacing="0" width="100%">
-  <tr><td width="100%">
-    <table border="0" cellpadding="0" cellspacing="0" width="100%">
-     <tr><td align="left" valign="center" width="20%"><a href="<!--#include file='include/wi_url.html'-->" border="0"><img src="../images/mgi_logo_small.jpg" alt="MGI" border="0"></a></td>
-      <td align="center" bgcolor="#ffffff" valign="center" width="60%">
-       <font color="#000000" face="verdana" size="5">Nominate Knockouts for Placement in Public Repositories</font></td><td align="center" bgcolor="#ffffff" valign="center" width="20%">&nbsp;</td></tr>
-
-<tr bgcolor="blue"><th colspan="3" align="left"><font color="#ffffff" face="Arial,Helvetica">
-    &nbsp;Mouse Genome Informatics</font></th></tr>
-<tr><td bgcolor="#ffffff"><font face="Arial,Helvetica" size="-1"></font><center><font face="Arial,Helvetica" size="-1"><a href="<!--#include file='include/wi_url.html'-->">MGI Home</a>&nbsp;&nbsp;&nbsp;
-<a href="../help/help.shtml">Help
-</a></font></center></td></tr>
-</table></td></tr>
-</table>
-<hr>
+</style>
 
 <p>
 <font face="Verdana" size="-1">
@@ -49,7 +43,7 @@ repositories.</font></p><p>
  </font></p><ul>
 <font face="Verdana" size="-1"><li><b>Genes for which one or more knockout allele(s) have been reported </b><br>
 <font face="Verdana" size="-2">(These lists are limited to gene knockouts and conditional knockouts in the public domain.  They do not include genes that have other types of genetically engineered alleles or mutations)</font>
-   <ul> 
+   <ul>
       <li><a href="<!--#include file='include/ftp_url2.html'-->pub/reports/MGI_Knockout_NotPublic.html">candidate genes</a> to nominate for repatriating mice to public repositories.<br>
           <em>Mice carrying knockouts of these genes have been created, but are <u>not</u> in a public repository.</em>
      </li>
@@ -66,7 +60,7 @@ repositories.</font></p><p>
  </li><li>Get help by sending e-mail to <a href="mailto:mgi-help@informatics.jax.org">mgi-help@informatics.jax.org</a>.
   </li><li>Thank you for participating!
  </li></font></ul>
-<font face="Verdana" size="-1"> 
+<font face="Verdana" size="-1">
 </font><p>
 </p><hr>
 
@@ -80,27 +74,27 @@ repositories.</font></p><p>
 
 <tr>
   <td bgcolor="#d0e0f0"><font face="Verdana" size="-1"><b>* Gene or allele<br> &nbsp;&nbsp;symbol/name</b></font></td>
-       	
+
         <td bgcolor="#d0e0f0"><font  face="Verdana" size="-1"><b>Nickname/synonyms<br>for this gene/allele</b></font></td>
 
     	<td bgcolor="#d0e0f0"><font  face="Verdana" size="-1"><b>* Unique Identifier and Identifier Source <br>
     	&nbsp;&nbsp;&nbsp;for this gene/allele<br>
     	<font  face="Verdana" size="-2">(At least one unique identifier must be provided)</font></b></font></td>
-     	
+
      	<td bgcolor="#d0e0f0"><font  face="Verdana" size="-1"><b>Additional Comment<br><font size="-2">(e.g., if multiple knockouts exist, but one is preferable for your use; <br>or if you have information on the availability of the knockout)</font></b></font></td>
- 
+
       </tr>
-        
+
 <tr>
      	<td bgcolor="#f0f0f0">&nbsp;<font  face="Verdana" size="-2"><i>Sample entry</i></font><br><br>&nbsp;<font size="-1">Dll4</font></td>
       	<td bgcolor="#f0f0f0">&nbsp;<font  face="Verdana" size="-2"><i>Sample entry</i></font><br><br>&nbsp;<font size="-1">Delta4</font></td>
-		
+
 		<td bgcolor="#f0f0f0"><font  face="Verdana" size="-2"><center><i>Sample entry showing identifiers from 2 sources</i></center><br>
-		
+
 		<table border="0" cellpadding="0" cellspacing="0" width="100%" style="height:130px">
-		      
+
 		      <tr>
-		      
+
 		      <td bgcolor="#f0f0f0"><font face="Verdana" size="-2"><a href="http://www.informatics.jax.org/">MGI</a></font></td>
 		      <td bgcolor="#f0f0f0" align="center"><font face="Verdana" size="-2"><input class="inner" TYPE="readonly" NAME="mgiid" VALUE="MGI:1859388"SIZE=20></font></td>
 		      </tr><tr>
@@ -118,20 +112,20 @@ repositories.</font></p><p>
 		      </tr><tr>
 		      </tr></table>
 		     	</font></td><td bgcolor="#f0f0f0">&nbsp;<font size="-2"><i>Sample entry</i></font><br><br><font size="-1">Of the 3 targeted mutations published,<br>
-		     	the tm1Grid (MGI:3056460) gives the most  <br>interesting phenotype for our research purposes.</font></td>  
+		     	the tm1Grid (MGI:3056460) gives the most  <br>interesting phenotype for our research purposes.</font></td>
 
 </tr>
 
 <tr>
      	<td ALIGN="center"><textarea class="input" NAME="symbol1" row=20 col=50></textarea></td>
       	<td ALIGN="center"><textarea class="input" NAME="nickname1"></textarea></td>
-		
+
 		<td>
-		
+
 		<table border="0" cellpadding="0" cellspacing="0" width="100%" style="height:130px">
-		      
+
 		      <tr>
-		      
+
             <td><font face="Verdana" size="-2"><a href="http://www.informatics.jax.org/">MGI</a></font></td>
 		    <td ALIGN="center"><font face="Verdana" size="-2"><input class="inner" TYPE="text" NAME="mgiid1" SIZE=20></font></td>
 		      </tr><tr>
@@ -149,21 +143,21 @@ repositories.</font></p><p>
 		      </tr><tr>
 		      </tr></table>
 		     	</td>
-        <td ALIGN="center"><textarea class="input" NAME="comments1" ROWS=4 COLS=40></textarea></td>  
-		      
+        <td ALIGN="center"><textarea class="input" NAME="comments1" ROWS=4 COLS=40></textarea></td>
+
 
 </tr>
 
 <tr>
      	<td ALIGN="center"><textarea class="input" NAME="symbol2"></textarea></td>
       	<td ALIGN="center"><textarea class="input" NAME="nickname2"></textarea></td>
-		
+
 		<td>
-		
+
 		<table border="0" cellpadding="0" cellspacing="0" width="100%" style="height:130px">
-		      
+
 		      <tr>
-		      
+
             <td><font face="Verdana" size="-2"><a href="http://www.informatics.jax.org/">MGI</a></font></td>
 		    <td ALIGN="center"><font face="Verdana" size="-2"><input class="inner" TYPE="text" NAME="mgiid2" SIZE=20></font></td>
 		      </tr><tr>
@@ -181,21 +175,21 @@ repositories.</font></p><p>
 		      </tr><tr>
 		      </tr></table>
 		     	</td>
-        <td ALIGN="center"><textarea class="input" NAME="comments2" ROWS=4 COLS=40></textarea></td>  
-  
-		      
+        <td ALIGN="center"><textarea class="input" NAME="comments2" ROWS=4 COLS=40></textarea></td>
+
+
 
 </tr>
 <tr>
      	<td ALIGN="center"><textarea class="input" NAME="symbol3"></textarea></td>
       	<td ALIGN="center"><textarea class="input" NAME="nickname3"></textarea></td>
-		
+
 		<td>
-		
+
 		<table border="0" cellpadding="0" cellspacing="0" width="100%" style="height:130px">
-		      
+
 		      <tr>
-		      
+
             <td><font face="Verdana" size="-2"><a href="http://www.informatics.jax.org/">MGI</a></font></td>
 		    <td ALIGN="center"><font face="Verdana" size="-2"><input class="inner" TYPE="text" NAME="mgiid3" SIZE=20></font></td>
 		      </tr><tr>
@@ -213,21 +207,21 @@ repositories.</font></p><p>
 		      </tr><tr>
 		      </tr></table>
 		     	</td>
-        <td ALIGN="center"><textarea class="input" NAME="comments3" ROWS=4 COLS=40></textarea></td>  
- 
-		      
+        <td ALIGN="center"><textarea class="input" NAME="comments3" ROWS=4 COLS=40></textarea></td>
+
+
 
 </tr>
 <tr>
      	<td ALIGN="center"><textarea class="input" NAME="symbol4"></textarea></td>
       	<td ALIGN="center"><textarea class="input" NAME="nickname4"></textarea></td>
-		
+
 		<td>
-		
+
 		<table border="0" cellpadding="0" cellspacing="0" width="100%" style="height:130px">
-		      
+
 		      <tr>
-		      
+
             <td><font face="Verdana" size="-2"><a href="http://www.informatics.jax.org/">MGI</a></font></td>
 		    <td ALIGN="center"><font face="Verdana" size="-2"><input class="inner" TYPE="text" NAME="mgiid4" SIZE=20></font></td>
 		      </tr><tr>
@@ -245,21 +239,21 @@ repositories.</font></p><p>
 		      </tr><tr>
 		      </tr></table>
 		     	</td>
-        <td ALIGN="center"><textarea class="input" NAME="comments4" ROWS=4 COLS=40></textarea></td>  
- 
-		      
+        <td ALIGN="center"><textarea class="input" NAME="comments4" ROWS=4 COLS=40></textarea></td>
+
+
 
 </tr>
 <tr>
      	<td ALIGN="center"><textarea class="input" NAME="symbol5"></textarea></td>
       	<td ALIGN="center"><textarea class="input" NAME="nickname5"></textarea></td>
-		
+
 		<td>
-		
+
 		<table border="0" cellpadding="0" cellspacing="0" width="100%" style="height:130px">
-		      
+
 		      <tr>
-		      
+
             <td><font face="Verdana" size="-2"><a href="http://www.informatics.jax.org/">MGI</a></font></td>
 		    <td ALIGN="center"><font face="Verdana" size="-2"><input class="inner" TYPE="text" NAME="mgiid5" SIZE=20></font></td>
 		      </tr><tr>
@@ -277,21 +271,21 @@ repositories.</font></p><p>
 		      </tr><tr>
 		      </tr></table>
 		     	</td>
-        <td ALIGN="center"><textarea class="input" NAME="comments5" ROWS=4 COLS=40></textarea></td>  
- 
-		      
+        <td ALIGN="center"><textarea class="input" NAME="comments5" ROWS=4 COLS=40></textarea></td>
+
+
 
 </tr>
 <tr>
      	<td ALIGN="center"><textarea class="input" NAME="symbol6"></textarea></td>
       	<td ALIGN="center"><textarea class="input" NAME="nickname6"></textarea></td>
-		
+
 		<td>
-		
+
 		<table border="0" cellpadding="0" cellspacing="0" width="100%" style="height:130px">
-		      
+
 		      <tr>
-		      
+
             <td><font face="Verdana" size="-2"><a href="http://www.informatics.jax.org/">MGI</a></font></td>
 		    <td ALIGN="center"><font face="Verdana" size="-2"><input class="inner" TYPE="text" NAME="mgiid6" SIZE=20></font></td>
 		      </tr><tr>
@@ -309,9 +303,9 @@ repositories.</font></p><p>
 		      </tr><tr>
 		      </tr></table>
 		     	</td>
-        <td ALIGN="center"><textarea class="input" NAME="comments6" ROWS=4 COLS=40></textarea></td>  
+        <td ALIGN="center"><textarea class="input" NAME="comments6" ROWS=4 COLS=40></textarea></td>
 
-		      
+
 
 </tr>
 </table>
@@ -349,34 +343,34 @@ repositories.</font></p><p>
 </p><p>
 </p><table col="3" border="0" cellpadding="0" cellspacing="4">
 <tr>
-<td><font face="Verdana" size="-1">Last name:           			
+<td><font face="Verdana" size="-1">Last name:
 </font></td><td><font face="Verdana" size="-1"><input name="lastname" size="50" type="text"></font></td><td><font face="Verdana" size="-1">(required)</font></td></tr><tr>
-<td><font face="Verdana" size="-1">First name (&amp; initial):	
+<td><font face="Verdana" size="-1">First name (&amp; initial):
 </font></td><td><font face="Verdana" size="-1"><input name="firstname" size="50" type="text"></font></td><td><font face="Verdana" size="-1">(required)</font></td></tr><tr>
-<td><font face="Verdana" size="-1">E-mail address:            		
+<td><font face="Verdana" size="-1">E-mail address:
 </font></td><td><font face="Verdana" size="-1"><input name="email" size="50" type="text">
 </font></td><td><font face="Verdana" size="-1">(required)</font></td></tr><tr>
 
-<td><font face="Verdana" size="-1">Institute/Organization:   		
+<td><font face="Verdana" size="-1">Institute/Organization:
 </font></td><td><font face="Verdana" size="-1"><input name="organization" size="50" type="text"></font></td></tr><tr>
-<td><font face="Verdana" size="-1">Address line 1: 
+<td><font face="Verdana" size="-1">Address line 1:
 </font></td><td><font face="Verdana" size="-1"><input name="address1" size="50" type="text"></font></td></tr><tr>
-<td><font face="Verdana" size="-1">Address line 2: 
+<td><font face="Verdana" size="-1">Address line 2:
 </font></td><td><font face="Verdana" size="-1"><input name="address2" size="50" type="text"></font></td></tr><tr>
-<td><font face="Verdana" size="-1">City: 
+<td><font face="Verdana" size="-1">City:
 </font></td><td><font face="Verdana" size="-1"><input name="city" size="50" type="text"></font></td></tr>
 <tr>
-<td><font face="Verdana" size="-1">State/Province: 
+<td><font face="Verdana" size="-1">State/Province:
 
 </font></td><td><font face="Verdana" size="-1"><input name="state" size="50" type="text"></font></td></tr><tr>
-<td><font face="Verdana" size="-1">Postal code: 
+<td><font face="Verdana" size="-1">Postal code:
 </font></td><td><font face="Verdana" size="-1"><input name="postalcode" size="50" type="text"></font></td></tr><tr>
-<td><font face="Verdana" size="-1">Country: 
+<td><font face="Verdana" size="-1">Country:
 </font></td><td><font face="Verdana" size="-1"><input name="country" size="50" type="text"></font></td></tr><tr>
-<td><font face="Verdana" size="-1">Telephone: 
+<td><font face="Verdana" size="-1">Telephone:
 </font></td><td><font face="Verdana" size="-1"><input name="telephone" size="50" type="text"></font></td></tr>
 <tr>
-<td><font face="Verdana" size="-1">Fax: 
+<td><font face="Verdana" size="-1">Fax:
 
 </font></td><td><font face="Verdana" size="-1"><input name="fax" size="50" type="text"></font></td></tr>
 </table>
@@ -392,21 +386,4 @@ repositories.</font></p><p>
  </font><p></p>
 </form>
 
-
-
-<!--
-Warranty Disclaimer and Copyright Notice
- THE JACKSON LABORATORY MAKES NO REPRESENTATION ABOUT THE SUITABILITY OR
- ACCURACY OF THIS SOFTWARE OR DATA FOR ANY PURPOSE, AND MAKES NO WARRANTIES,
- EITHER EXPRESS OR IMPLIED, INCLUDING MERCHANTABILITY AND FITNESS FOR A
- PARTICULAR PURPOSE OR THAT THE USE OF THIS SOFTWARE OR DATA WILL NOT
- INFRINGE ANY THIRD PARTY PATENTS, COPYRIGHTS, TRADEMARKS, OR OTHER RIGHTS.
- THE SOFTWARE AND DATA ARE PROVIDED "AS IS".
- This software and data are provided to enhance knowledge and encourage
- progress in the scientific community and are to be used only for research
- and educational purposes.  Any reproduction or use for commercial purpose
- is prohibited without the prior express written permission of the Jackson
- Laboratory.
-Copyright © 1996, 1999, 2002 by The Jackson Laboratory
-All Rights Reserved
---></body></html>
+<!--#include file='include/templateBodyStop.html'-->

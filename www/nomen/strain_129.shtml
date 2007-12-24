@@ -1,28 +1,15 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
-<HTML>
-<HEAD>
-<TITLE><!--#include file='include/mgiversion.html'--> - Mouse Strain 129 Substrain Nomenclature </TITLE>
-<!--#include file="include/stylesheet.html"-->
-</HEAD>
-<BODY BGCOLOR=#FFFFFF>
-<TABLE WIDTH="100%" BORDER=0 CELLPADDING=0 CELLSPACING=0>
-  <TR><TD WIDTH="100%">
-    <TABLE WIDTH="100%" BORDER=0 CELLPADDING=0 CELLSPACING=0>
-     <TR><TD WIDTH="20%" VALIGN="center" ALIGN="left">
-<A HREF="<!--#include file='include/wi_url.html'-->">
-<!--#include file="include/mgi_logo_small.html"--></A></TD>
-      <TD WIDTH="60%" ALIGN="center" VALIGN="center" BGCOLOR="#ffffff">
-       <FONT COLOR="#000000" SIZE=5 FACE="Arial,Helvetica">
-Mouse Strain 129 Substrain Nomenclature 
-       </FONT></TD><TD WIDTH="20%" VALIGN="center" ALIGN="center" BGCOLOR="#ffffff">&nbsp;</TD></TR>
-<TR BGCOLOR="blue"><TD COLSPAN=3><FONT face="Arial,Helvetica" color="#ffffff">
-    <B>&nbsp;Mouse Genome Informatics</B></TD></TR>
-<TR><TD BGCOLOR="#ffffff"><FONT SIZE=-1 FACE="Arial,Helvetica"><CENTER><A HREF="<!--#include file='include/wi_url.html'-->">MGI Home</A>&nbsp;&nbsp;&nbsp;
-<a href="../help/help.shtml">Help
-</A></FONT></CENTER></TD></TR>
-</TABLE></TD></TR>
-</TABLE>
-<hr>
+<!--#include file='include/templateHead.html'--> 
+<title><!--#include file='include/mgiversion.html'--> - Mouse Strain 129 Substrain Nomenclature</title>
+
+<!--#include file='include/templateBodyStart.html'--> 
+
+<!-- Title Bar -->
+<div id="titleBarWrapper">
+  <span class="titleBarMainTitle"> Mouse Strain 129 Substrain Nomenclature</span>
+</div> 
+<!--titleBar-->
+
+
 <P>A large degree of genetic diversity among 129 substrains was identified by scientists at The Jackson Laboratory (Simpson et al., Nat Genetics 16:19-27, 1997), and subsequently by investigators at Case Western Reserve Univeristy (Threadgill <I>et al</I>., <I>Mammalian Genome</I> 8:390-393, 1997). Because of the importance of 129 mice in creating "knockout" and other targeted mutant mice, the International Committee on Standardized Genetic Nomenclature for Mice introduced a nomenclature to distinguish different 129 parental lines and related 129 strains.</P>
 
 <p>The overall result was a change in 129 nomenclature that specifies groups of strains related by their common parental lineage. The major parental lineages include:
@@ -217,27 +204,5 @@ A<sup>w</sup>/A<sup>w</sup> pTyr<sup>c</sup>/pTyr<sup>c</sup></i></font></TD>
 <td valign="top"><font size="-1"><i>A<sup>w</sup>/A<sup>w</sup> Tyr<sup>c-ch</sup>/Tyr<sup>c-ch</i></font></TD>
 <td valign="top"><font size="-1">white-bellied chinchilla</font></TD>
 <TR></TABLE>
-<HR>
 
-<!--#include file="include/footer.html"-->
-</BODY>
-</HTML>
-<!--
-Warranty Disclaimer and Copyright Notice
-
- THE JACKSON LABORATORY MAKES NO REPRESENTATION ABOUT THE SUITABILITY OR
- ACCURACY OF THIS SOFTWARE OR DATA FOR ANY PURPOSE, AND MAKES NO WARRANTIES,
- EITHER EXPRESS OR IMPLIED, INCLUDING MERCHANTABILITY AND FITNESS FOR A
- PARTICULAR PURPOSE OR THAT THE USE OF THIS SOFTWARE OR DATA WILL NOT
- INFRINGE ANY THIRD PARTY PATENTS, COPYRIGHTS, TRADEMARKS, OR OTHER RIGHTS.
- THE SOFTWARE AND DATA ARE PROVIDED "AS IS".
-
- This software and data are provided to enhance knowledge and encourage
- progress in the scientific community and are to be used only for research
- and educational purposes.  Any reproduction or use for commercial purpose
- is prohibited without the prior express written permission of the Jackson
- Laboratory.
-
-Copyright © 1996, 1999, 2002 by The Jackson Laboratory
-All Rights Reserved
--->
+<!--#include file='include/templateBodyStop.html'--> 

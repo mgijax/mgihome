@@ -7,14 +7,17 @@ import types            # standard Python modules
 import string
 
 import CGI              # MGI-written Python modules
+import Configuration
 import mgi_utils
 import mgi_html
-import header
+import template
 
 ###--- Global Variables/Constants ---###
 
 # messages produced when incorrect or insufficient data is submitted and
 # detected:  primarily used with the handleError() function
+
+config = Configuration.Configuration('Configuration', 1)
 
 MISSING_FIELDS = '''These required fields are missing: %s<BR>
         Please go back and try again.<P>'''
@@ -29,9 +32,7 @@ FAILED_CHECKS = '''The following field(s) contained errant values:<BR>
 
 def handleError (
         message,        # string; message describing the error
-        title,          # string; name of the form being submitted
-        banner,         # string; page header
-        footer          # string; page footer
+        title           # string; name of the form being submitted
         ):
         # Purpose: send to the user an HTML page describing an error which
         #       was detected
@@ -39,14 +40,16 @@ def handleError (
         # Assumes: nothing
         # Effects: writes to stdout
         # Throws: nothing
-
-        heading = header.headerBar ('%s Submission Error' % title)
-        print '''<HTML><HEAD><TITLE>%s Submission Error</TITLE></HEAD>
-                <BODY bgcolor="#FFFFFF">%s
-                %s
-                %s<HR>
-                %s
-                </BODY></HTML>''' % (title, banner, heading, message, footer)
+        
+        
+        error_template = template.Template(config['TEMPLATE_PATH'])
+        error_template.setContentType('')
+        error_template.setTitle(title)
+        error_template.setHeaderBarMainText('%s Submission Error' % title)
+        error_template.setBody(message)
+        
+        print error_template.getFullDocument()
+        
         return
 
 ###--- Classes ---###
@@ -62,17 +65,15 @@ class formMailer (CGI.CGI):
         #       specify various sections for the e-mail sent
         # DOES: see IS section
 
+        REPLY_FOOTER = '\n\nWe will mail your accession ID as soon '\
+                       'as possible.  If you have questions regarding your '\
+                       'submission, please contact. %s  \n'
+
         def __init__ (self,
                 form_name,              # string; name of the form submitted
                 curator_address,        # string; where to send the e-mail
 
                 # optional parameters
-                header = [],            # string or list of strings; header
-                                        #       to go at the top of the output
-                                        #       page's BODY section
-                footer = [],            # string or list of strings; footer
-                                        #       to go at the bottom of the
-                                        #       output page's BODY section
                 labels = {},            # dictionary mapping internal field-
                                         #       names to the labels shown to
                                         #       the user
@@ -103,18 +104,6 @@ class formMailer (CGI.CGI):
                 self.labels = labels
                 self.required_fields = required_fields
                 self.sections = sections
-
-                # if the user gave a list of strings for header and/or footer,
-                # join them to form a single string for each
-                if type(header) == types.StringType:
-                        self.header = header
-                else:
-                        self.header = string.join (header, '\n')
-
-                if type(footer) == types.StringType:
-                        self.footer = footer
-                else:
-                        self.footer = string.join (footer, '\n')
 
                 # if the user didn't give us a set of labels, then we use the
                 # fieldnames submitted to compose a set
@@ -162,6 +151,9 @@ class formMailer (CGI.CGI):
                 #       method should be overridden in subclasses as needed.
 
                 return
+        
+        def setFooter(self, value):
+        	self.REPLY_FOOTER = value
 
         def main(self):
                 # Purpose: main processing loop.  check the parameters for
@@ -177,37 +169,17 @@ class formMailer (CGI.CGI):
                 # responses produced by a valid submission, depending on 
                 # whether the e-mail could be sent or not:
                 
-                MESSAGE_SENT = '''<HTML><HEAD><TITLE>Request Sent
-                        </TITLE></HEAD>
-                        <BODY bgcolor=ffffff>
-                        %s
-                        <H3>%s Submission Sent</H3>
-                        The following information was successfully submitted.
-                        <PRE>\n%s\n</PRE>
-                        <HR>
-                        %s
-                        </BODY></HTML>'''
+                MESSAGE_SENT = '''The following information was successfully submitted.
+                        <BLOCKQUOTE><PRE>\n%s\n</PRE></BLOCKQUOTE>'''
 
-                MESSAGE_FAILED = '''<HTML><HEAD><TITLE>Request Not Sent
-                        </TITLE></HEAD>
-                        <BODY bgcolor=ffffff>
-                        %s
-                        <H3>%s Submission Not Sent</H3>
-                        An error occurred.  Your submission could not be sent.
-                        Please try again later.<P>
-                        <HR>
-                        %s
-                        </BODY></HTML>'''
+                MESSAGE_FAILED = '''An error occurred.  Your submission could not be sent.
+                        Please try again later.<P>'''
                 
                 # header and footer of reply email sent to submitter
                 REPLY_HEADER = 'Thank you for your %s submission.\n\n'\
                         'Below is a summary of what you have submitted.\n'\
                         'We will contact you if any questions arise '\
                         'concerning your submission.\n'
-                
-                REPLY_FOOTER = '\n\nWe will mail your accession ID as soon '\
-                    'as possible.  If you have questions regarding your '\
-                    'submission, please contact. %s  \n'
 
                 # look for any missing fields:  (bail out if any found)
                 missing_fields = []
@@ -217,9 +189,7 @@ class formMailer (CGI.CGI):
                 if missing_fields:
                         handleError (MISSING_FIELDS % \
                                 string.join (missing_fields, ', '),
-                                self.form_name,
-                                self.header,
-                                self.footer
+                                self.form_name
                                 )
                         return
 
@@ -234,9 +204,7 @@ class formMailer (CGI.CGI):
                                 list.append ('<DT>%s<DD>%s' % \
                                         (self.labels[field], error))
                         handleError (FAILED_CHECKS % string.join (list, '\n'),
-                                self.form_name,
-                                self.header,
-                                self.footer
+                                self.form_name
                                 )
                         return
 
@@ -299,7 +267,7 @@ class formMailer (CGI.CGI):
                 message = string.join (message, '\n')
                 
                 reply_message = (REPLY_HEADER % (self.form_name) + message +
-                        REPLY_FOOTER % (self.curator_address))
+                        self.REPLY_FOOTER % (self.curator_address))
 
                 # send the message to the curator and submitter
                 curatorSentCode = mgi_utils.send_Mail (
@@ -317,17 +285,19 @@ class formMailer (CGI.CGI):
                         )
 
                 # return appropriate feedback
+                page_template = template.Template(config['MGICONFIG_PATH'] + 'web/')
+                page_template.setContentType('')
                 if (curatorSentCode == 0) and (submitterSentCode == 0):
-                        print MESSAGE_SENT % (
-                                self.header,
-                                self.form_name,
-                                mgi_html.escape(message),
-                                self.footer)
+                    page_template.setTitle('Request Sent')
+                    page_template.setHeaderBarMainText('%s Submission Sent' % self.form_name)
+                    page_template.setBody(MESSAGE_SENT % (
+                            mgi_html.escape(message)))
+                    print page_template.getFullDocument()
                 else:
-                        print MESSAGE_FAILED % (
-                                self.header,
-                                self.form_name,
-                                self.footer)
+                    page_template.setTitle('Request Not Sent')
+                    page_template.setHeaderBarMainText('%s Submission Not Sent' % self.form_name)
+                    page_template.setBody(MESSAGE_FAILED)
+                    print page_template.getFullDocument()
 
                 return
 

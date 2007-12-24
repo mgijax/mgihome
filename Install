@@ -8,7 +8,6 @@ TOP=`pwd`
 
 CONFIGURATION=Configuration
 PYTHON_REL=$TOP/bin/python
-CONFIG_REL=$TOP/lib/python/config.pyc
 GENUTILS_REL=$TOP/lib/python/gen_wi_utils.pyc
 
 # includeLinker function - create a ../include symbolic link in the current
@@ -60,7 +59,8 @@ fi
 # read variables from the config file
 
 exec 4<&0
-exec < $CONFIGURATION
+/usr/local/mgi/live/lib/python/Configuration.py $CONFIGURATION tab > .Configuration.tab
+exec < .Configuration.tab
 while read name value junk
 do
 	case "$name" in
@@ -102,6 +102,13 @@ if [ ! -h bin/python ]; then
 fi
 
 # make A symbolic link to the .../wi/www/GXD/GENAD directory
+cd www
+if [ -h Configuration ]; then
+	echo "Making "Configuration" sym link in `pwd`"
+		rm Configuration
+fi
+ln -s ../Configuration Configuration
+cd ..
 
 cd www/GXD/GEN
 if [ -h GENAD ]; then
@@ -122,7 +129,6 @@ cd lib/python
 echo "Compiling libraries in `pwd`"
 rm *pyc
 $PYTHON -c 'import compileall; compileall.compile_dir(".")'
-$PYTHON -c 'import config'
 chgrp www *pyc
 chmod 750 *pyc
 cd $TOP
@@ -138,10 +144,6 @@ do
 	fi
 	ln -s $PYTHON_REL python
 
-	if [ -h config.pyc ]; then
-		rm config.pyc
-	fi
-	ln -s $CONFIG_REL config.pyc
    
    if [ -h GEN.xls ]; then
 		rm  GEN.xls
@@ -179,6 +181,7 @@ fi
 cd $TOP/admin
 gen_rcd
 gen_includes
+gen_stats
 #gen_includes.py
 
 cd $TOP/www/include

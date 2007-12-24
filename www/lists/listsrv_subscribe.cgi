@@ -13,15 +13,20 @@ import sys
 if '.' not in sys.path:
 	sys.path.insert(0, '.')
 import types
-import config
+
+import Configuration
+
+config = Configuration.get_Configuration ('Configuration', 1)
+
 import homelib
 
 import cgi
 import os
 import string
 import errorlib
-import header
-import formMailer
+import template
+
+page_template = template.Template(config['TEMPLATE_PATH'])
 
 NL = '\n'
 SP = ' '
@@ -36,19 +41,14 @@ REQUIRED_FIELDS = [
 RECIPIENT = 'listmgr@informatics.jax.org'
 
 # developer override for mailtarget 
-dev_email = config.lookup ('CGI_MAILTARGET')
-if dev_email is not None:
-	RECIPIENT = dev_email
+if config.has_key('CGI_MAILTARGET'):
+	RECIPIENT = config['CGI_MAILTARGET']
 
 def hd():
-	print """<HTML>
-	<HEAD>
-	<TITLE>List Subscription</TITLE>
-	</HEAD>
-	<BODY BGCOLOR="#FFFFFF">"""
+	page_template.setTitle('List Subscription')
+	page_template.setHeaderBarMainText('List Subscription Mail Results')
 
-	print header.bodyStart()
-	print header.headerBar ('List Subscription Mail Results')
+	print page_template.getNavigationAndHeader()
 	return
 
 def main():
@@ -91,18 +91,14 @@ def main():
 
 		mail_header = 'From: webmaster' + NL \
 			+ 'Subject: List Subscription' + NL
-		fd = os.popen('%s -t %s' % (config.lookup ('SENDMAIL'), \
+		fd = os.popen('%s -t %s' % (config['SENDMAIL'], \
 			RECIPIENT), 'w')
 		fd.write( mail_header + msg + NL + '.' + NL )
 		fd.close()
 		
-	print '<HR>'
-	print header.bodyStop()
-	print '</BODY></HTML>'
+	print page_template.getTemplateBodyStop()
 	return
 
-print 'Content-type: text/html'
-print
 try:
 	main()
 except:

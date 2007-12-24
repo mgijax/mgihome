@@ -1,0 +1,187 @@
+<!--#include file='include/templateHead.html'-->
+<title><!--#include file='include/mgiversion.html'--> - Software Developer Tools</title>
+
+<!--#include file='include/templateBodyStart.html'-->
+
+<!-- Title Bar -->
+  <div id="titleBarWrapper">
+  <span class="titleBarMainTitle">Software Developer Tools</span>
+  </div>
+<!--titleBar-->
+
+<style>
+	.toc { margin 0px;
+		background-color:#DFEFFF; }
+	.toc ul { font-size: 12px;
+		margin 0px;
+		text-align: center;
+		line-height: 1.75;
+		list-style-type: none;
+		padding: .75em .75em 0.1em .75em;
+		min-width: 600px;}
+	.toc li { display: inline;
+		white-space: nowrap; }
+	.outline { border: 2px solid #DFEFFF; }
+	dl.linkedList { margin-left: 2em; }
+	.linkedList dt { margin-top: 1em; }
+	.linkedList dd { margin-left: 1em;
+		margin-top: .25em;
+		font-style:italic}
+</style>
+
+<!-- this file is an example template to be used to create a page in the
+"All X" format, similar to the "All Search Tools" page.  To use this template
+simply add anchor links to the sections your page contains in the toc table,
+then create each section to contain the appropriate anchor link and content.
+Note that the links in the toc are a list <ul> where each link is a <li> item.
+Note that the list in each section is a definition list <dl> where the term
+<dt> is the heading, and the definition <dd> is the descriptive text.  -->
+
+<!-- main body table -->
+<table width="75%" cellpadding="2" align="center">
+
+	<tr><td>
+		<!-- TOC table -->
+		<table class="toc" width="100%">
+			<tr>
+				<td>
+					<ul>
+						<li><a href="#links">Creating Web Links to MGI</a> | </li>
+						<li><a href="#data">Data Files for Download</a> | </li>
+						<li><a href="#sql">Direct SQL Account</a></li>
+				</td>
+			</tr>
+		</table>
+	</td></tr>
+
+	<tr><td>
+		<!-- section1 table -->
+		<a name="links">
+		<table class="outline" width="100%">
+			<tr>
+				<td class="enhance">
+					Creating Web Links to MGI
+				</td>
+			</tr>
+			<tr >
+				<td>
+					<ul>
+						<li>MGI supports external links to our Web Interface using Accession IDs.</li>
+						<li>See <a href="<!--#include file='include/mgihome_url.html'-->other/link_instructions.shtml">Creating Web Links to MGI</a> for instructions and examples.</li>
+						<li>Public reports generated nightly are available for obtaining Accession IDs.  See <a href="<!--#include file='include/ftp_url2.html'-->pub/reports/index.html">MGI Data and Statistical Reports</a> for an index of the reports available.</li>
+					</ul>
+				</td>
+			</tr>
+		</table>
+	</td></tr>
+
+	<tr><td>
+		<!-- section2 table -->
+		<a name="data">
+		<table class="outline" width="100%">
+			<tr>
+				<td class="enhance">
+					Data Files for Download
+				</td>
+			</tr>
+			<tr >
+				<td>
+					<h4><i>Public Reports via FTP</i></h4>
+					<ul>
+					  <li>Over 75 data files are generated nightly and available for download.</li>
+					  <li>See <a href="<!--#include file='include/ftp_url2.html'-->pub/reports/index.html">MGI Data and Statistical Reports</a> for the list of reports and their field descriptions.</li>
+					</ul>
+
+
+					<h4><i>Tab Delimited Output from our Web Interface</i></h4>
+					<ul>
+					  <li>User-defined results for gene, SNP, and sequence data are available in tab delimited format.</li>
+					  <li>You can modify the output format on the query form from <i>Web</i> to <i>Tab-delimited</i>.</li>
+					  <li>Query Forms with the tab-delimited option available are:</li>
+					   <ul>
+					     <li><a href="<!--#include file='include/java_url.html'-->WIFetch?page=batchQF">MGI Batch Query</a><br>
+					        <i>Download gene/marker data for a batch of IDs or symbols</i></li>
+					     <li><a href="<!--#include file='include/java_url.html'-->WIFetch?page=markerQF">Genes and Markers Query Form</a><br>
+					        <i>Search by symbol, location, gene ontology classification, or phenotype.</i></li>
+					     <li><a href="<!--#include file='include/java_url.html'-->WIFetch?page=snpQF">Mouse SNP Query Form</a><br>
+					        <i>Search for SNPS by strain(s), SNP attributes, genomic position, or associated genes</i></li>
+					    <li><a href="<!--#include file='include/wi_url.html'-->searches/sequence_form.shtml">Mouse Sequence Query Form</a><br>
+					    <i>Search for mouse sequences by sequence attributes, sources, and/or properties of associated genes and markers in MGI</i>
+					  </ul>
+					  </ul>
+
+					<h4><i>FASTA Output from our Web Interface</i></h4>
+					<ul>
+					  <li>The FASTA format is available on reports where sequences are returned for a specific gene or when querying Sequences, Protein Superfamilies, or Orthologies.</li>
+					  <li>Click on the checkboxes next to each sequence to select it for FASTA download and click GO.</li>
+					  <li>From a gene detail page, FASTA is available for:</li>
+					      <ul>
+							  <li>Representative genomic, transcript, and polypeptide sequences</li>
+							  <li>All mouse sequences</li>
+							  <li>Human and rat orthologs</li>
+							  <li>Mouse, human, and rat protein sequences for superfamily members</li>
+					      </ul>
+					   <li>Use these query forms to generate reports with the FASTA format option available: </li>
+					       <ul>
+								<li><a href="<!--#include file='include/wi_url.html'-->searches/sequence_form.shtml">Mouse Sequence Query Form</a></li>
+								<li><a href="<!--#include file='include/java_url.html'-->WIFetch?page=pirsfVocab&subset=A">Protein Superfamily Browser</a></li>
+								<li><a href="<!--#include file='include/wi_url.html'-->searches/homology_form.shtml">Mammalian Orthology Query Form</a></li>
+					      </ul>
+  					</ul>
+				</td>
+			</tr>
+		</table>
+	</td></tr>
+
+	<tr><td>
+		<!-- section2 table -->
+		<a name="sql">
+		<table class="outline" width="100%">
+			<tr>
+				<td class="enhance">
+					Direct SQL Account
+				</td>
+			</tr>
+			<tr >
+				<td>
+					<ul>
+					  <li>The MGI Public Ad Hoc SQL Server is available for running custom SQL queries against the MGI database. </li>
+					  <li>MGI uses Sybase relational databases to store information.</li>
+					  <li>You must install client software that can connect to a Sybase data server in order to query the database.  You can use free clients likd JDBC (Java), ODBC (Windows)< or SQuirrelSQL (<a href="http://squirrel-sql.sourceforge.net/">http://squirrel-sql.sourceforge.net/</a>.</li>
+					</ul>
+
+
+					<blockquote>
+					<h4><i>Schema Browser</i></h4>
+					  <ul>
+						<li>In order to write your own custom SQL query, you must be familiar with SQL and the MGI database schema. </li>
+						<li>For help with the database schema, use the <a href="<!--#include file='include/schema_url.html'-->">Schema Browser</a> available in the Web Interface.</li>
+					  </ul>
+
+					<h4><i>Login & Configuration</i></h4>
+					<ul>
+					  <li>Contact <a href="<!--#include file='include/mgihome_url.html'-->support/tjl_inbox.shtml">MGI User Support</a> to request an SQL account.  You will receive you a login and password.</li>
+					  <li>Configure requirements:</li>
+					   <ol>
+					  <li>A database connection client such as JDBC, ODBC, SQuirrel-SQL, etc.</li>
+					  <li>Application to query the database; such as: isql, ODBC client, jdbc client, etc.</li>
+					  <li>Sybase Interface Entry<br>
+						  Server Entry	Version 1<br>
+					</li>Server Name	ADHOC_MGI<br>
+					Server Service	SQL Server<br>
+					Server Status	4 Unknown<br>
+					Server Address	TCP-gondor.informatics.jax.org.4025</li></ul>
+
+
+					<h4><i>Custom SQL Reports from MGI</i></h4>
+					<ul><li>Contact <a href="<!--#include file='include/mgihome_url.html'-->support/tjl_inbox.shtml">MGI User Support</a> for custom SQL queries if you prefer not to write them yourself.</li></ul>
+
+					</blockquote>
+				</td>
+			</tr>
+		</table>
+	</td></tr>
+
+</table>
+
+<!--#include file='include/templateBodyStop.html'-->

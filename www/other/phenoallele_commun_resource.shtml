@@ -1,29 +1,12 @@
-<HTML>
-<HEAD>
-<TITLE><!--#include file='include/mgiversion.html'--> - Phenotypes and Mutants Community Resources</TITLE>
-<TITLE><!--#include file='include/mgiversion.html'-->  Species List</TITLE>
-<!--#include file="include/stylesheet.html"-->
-</HEAD>
-<BODY BGCOLOR=#FFFFFF>
-<!--#include file="include/bodyStart.html"-->
-<TABLE WIDTH="100%" BORDER=0 CELLPADDING=2 CELLSPACING=1>
- <TR><TD WIDTH="100%" BGCOLOR="#D0E0F0">  <TABLE WIDTH="100%" BORDER=0 CELLPADDING=0 CELLSPACING=0>   <TR>   <TD WIDTH="20%" VALIGN="center" ALIGN="left">&nbsp;</TD>    <TD WIDTH="60%" ALIGN="center" VALIGN="center">   <FONT COLOR="#000000" SIZE=5 FACE="Arial,Helvetica">      Phenotypes and Mutants Community Resources</FONT></TD><TD WIDTH="20%" VALIGN="center" ALIGN="center">&nbsp;</TD></TR></TABLE></TD></TR></TABLE>
-<p>This page is a resource for connecting groups working on mouse mutagenesis, phenotypes, and complex traits.
-<P>
-<H3><A NAME="top"></A>Table of Contents</H3>
-<UL>
-<LI><a href="#pointer1">IMMC: International Mouse Mutagenesis Consortium</a>
-</li>
-<LI><a href="#pointer2">CTC: Complex Traits Consortium</a>
-</li>
-<li><a href="#pointer5">IGTC: International Gene Trap Consortium</a>
-</li>
-<LI><a href="#pointer3">Animal Resources Links</a>
-</li>
-<LI><a href="#pointer4">Data submission forms and nomenclature guides</a>
-</UL>
-<B>Search </B><A HREF="<!--#include file='include/wi_url.html'-->searches/allele_form.shtml">Phenotypes and Alleles</A> information in MGD.
-<HR>
+<!--#include file='include/templateHead.html'--> 
+<title><!--#include file='include/mgiversion.html'--> - Phenotypes and Mutants Community Resources</title>
+<!--#include file='include/templateBodyStart.html'--> 
+<!-- Title Bar -->
+  <div id="titleBarWrapper">
+  <span class="titleBarMainTitle"> Phenotypes and Mutants Community Resources </span>
+  </div> 
+<!--titleBar-->
+
 <A name="pointer1"><H3>International Mouse Mutagenesis Consortium (IMMC)</H3></A>
 The IMMC goals are described in
 <a href="http://www.sciencemag.org/cgi/content/summary/291/5507/1251"> Science 291:1251-1255, 2001</A> as:
@@ -50,7 +33,6 @@ The IMMC goals are described in
 <LI><a href="http://www.tnmouse.org/">Tennessee Mouse Genome Consortium</a></li>
 <LI><a href="http://www.cmhd.ca/">Toronto's Centre for Modeling Human Disease</a></li>
 </ul>
-<A href="#top">Back to top</A>
 <HR>
 <A name="pointer2"><H3>International Complex Traits Consortium (CTC)</H3></A>
 The CTC focuses on exploring the complex interplay between gene variants, disease, and the environment.
@@ -61,7 +43,6 @@ Read the <a href="http://www.nigms.nih.gov/news/reports/genetic_arch.html">repor
 <P><!--removed 1/18/05: bad link: because outdated?
 Abstracts and some presentation materials are available from the <a href="http://www.complextrait.org/ctc2002/start.html">1st Annual Complex Trait Consortium Meeting</A>, May 15-17, 2002.
 <P>-->
-<A href="#top">Back to top</A>
 <HR>
 
 
@@ -80,7 +61,6 @@ Abstracts and some presentation materials are available from the <a href="http:/
   <LI><A HREF="http://www.cmhd.ca/genetrap/index.html">Centre for Modeling Human Disease</A></LI>
 </UL>
 <P>
-<A href="#top">Back to top</A>
 <hr>
 
 
@@ -103,10 +83,8 @@ Abstracts and some presentation materials are available from the <a href="http:/
 <LI><a href="http://www.taconic.com/">Taconic</a>: mice, rats, transgenics</li>
 <LI><a href="http://www.harlan.com/">Harlan Sprague Dawley, Inc.</a>: rats, mice, other mammals, bedding, diets</li>
 </UL>
-
-<A href="#top">Back to top</A>
-
 <HR>
+
 <A name="pointer4"><H3>Data submission forms and nomenclature guides</H3></A>
 <B>Data submission forms</B>
 <UL>
@@ -119,27 +97,8 @@ Abstracts and some presentation materials are available from the <a href="http:/
 <LI><a href="<!--#include file='include/mgihome_url.html'-->nomen/strains.shtml">Rules for Nomenclature of Mouse and Rat Strains</a></li>
 <LI><a href="http://dels.nas.edu/ilar_n/ilarhome/index.shtml">Laboratory Code Registry (ILAR)</a>: for strains, loci, transgenes, mutations</li>
 </UL>
-<A href="#top">Back to top</A>
+<font size="-2"><a href="#top">Back to top</a>
+</font>
 <hr>
 
-<!--#include file="include/bodyStop.html"--></BODY>
-</HTML>
-
-<!-- Warranty Disclaimer and Copyright Notice
-<!--
-<!--  THE JACKSON LABORATORY MAKES NO REPRESENTATION ABOUT THE SUITABILITY OR
-<!--  ACCURACY OF THIS SOFTWARE OR DATA FOR ANY PURPOSE, AND MAKES NO WARRANTIES,
-<!--  EITHER EXPRESS OR IMPLIED, INCLUDING MERCHANTABILITY AND FITNESS FOR A
-<!--  PARTICULAR PURPOSE OR THAT THE USE OF THIS SOFTWARE OR DATA WILL NOT
-<!--  INFRINGE ANY THIRD PARTY PATENTS, COPYRIGHTS, TRADEMARKS, OR OTHER RIGHTS.
-<!--  THE SOFTWARE AND DATA ARE PROVIDED "AS IS".
-<!--
-<!--  This software and data are provided to enhance knowledge and encourage
-<!--  progress in the scientific community and are to be used only for research
-<!--  and educational purposes.  Any reproduction or use for commercial purpose
-<!--  is prohibited without the prior express written permission of the Jackson
-<!--  Laboratory.
-<!--
-<!-- Copyright © 1996, 1999, 2002, 2003, by The Jackson Laboratory
-<!-- All Rights Reserved
--->
+<!--#include file='include/templateBodyStop.html'--> 

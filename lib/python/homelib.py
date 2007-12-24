@@ -2,15 +2,21 @@
 # Purpose:	provide general routines for use by MGI Home site scripts
 
 import os
-import config
+
+import Configuration
+config = Configuration.get_Configuration ('Configuration', 1)
+
 import string
 import db
 import webshare_lib
 
-URL = config.lookup ('MGIHOME_URL')
-WI_URL = config.lookup ('WI_URL')
-db.set_sqlLogin (config.lookup ('DBUSER'), config.lookup ('DBPASSWORD'),
-	config.lookup ('DBSERVER'), config.lookup ('DATABASE'))
+# for key in config.keys():
+	# print key + " "  + config[key]
+
+URL = config['MGIHOME_URL']
+WI_URL = config['WI_URL']
+db.set_sqlLogin (config['DB_USER'], config['DB_PASSWORD'],
+	config['DB_SERVER'], config['DB_DATABASE'])
 
 FOOTER = [
     '<TABLE BORDER=0 BGCOLOR="#FFFFFF" CELLPADDING=0 ',
@@ -138,23 +144,3 @@ def wrapLines (
 				done = (len (line) <= maxlen)
 		line_list.append (line)
 	return string.join (line_list, LF)
-#
-# Warranty Disclaimer and Copyright Notice
-# 
-#  THE JACKSON LABORATORY MAKES NO REPRESENTATION ABOUT THE SUITABILITY OR 
-#  ACCURACY OF THIS SOFTWARE OR DATA FOR ANY PURPOSE, AND MAKES NO WARRANTIES, 
-#  EITHER EXPRESS OR IMPLIED, INCLUDING MERCHANTABILITY AND FITNESS FOR A 
-#  PARTICULAR PURPOSE OR THAT THE USE OF THIS SOFTWARE OR DATA WILL NOT 
-#  INFRINGE ANY THIRD PARTY PATENTS, COPYRIGHTS, TRADEMARKS, OR OTHER RIGHTS.  
-#  THE SOFTWARE AND DATA ARE PROVIDED "AS IS".
-# 
-#  This software and data are provided to enhance knowledge and encourage 
-#  progress in the scientific community and are to be used only for research 
-#  and educational purposes.  Any reproduction or use for commercial purpose 
-#  is prohibited without the prior express written permission of the Jackson 
-#  Laboratory.
-# 
-# Copyright © 1996, 1999, 2002 by The Jackson Laboratory
-# All Rights Reserved
-#
-

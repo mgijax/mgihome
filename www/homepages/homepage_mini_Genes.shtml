@@ -1,0 +1,173 @@
+<!--#include file='include/templateHead.html'-->
+
+  <title><!--#include file="include/mgiversion.html"--> - Mouse Genome Informatics Genes &amp; Markers Page</title>
+
+
+<!------------- AJAX TABS CALLS -------------------------------------------------------->
+
+<link rel="stylesheet" type="text/css" href="ajaxtabs.css" />
+<script type="text/javascript" src="ajaxtabs.js">
+	/***********************************************
+	* Ajax Tabs Content script- © Dynamic Drive DHTML code library (www.dynamicdrive.com)
+	* This notice MUST stay intact for legal use
+	* Visit Dynamic Drive at http://www.dynamicdrive.com/ for full source code
+	***********************************************/
+</script>
+
+<link rel="stylesheet" type="text/css" href="minihome.css" />
+
+<!--#include file='include/templateBodyStart.html'-->
+
+<!-- start body content -->
+
+<!-- mini homepage header section -->
+<table class="sideMargin marginTop" border="0" cellspacing="0" cellpadding="0">
+	<tr>
+		<td align="center" valign="middle">
+				<span class="homePageTitle">
+					Genes, Genome Features & Maps
+				</span>
+				<br>
+				<span class="homePageSubTitle">
+					MGI provides access to integrated data on mouse genes and genome
+					features, from sequences and genomic maps to gene expression and
+					disease models.
+				</span>
+		</td>
+		<td>
+			<div class="sideMargin marginBottom blueBorder pad5 small">
+				<center><a href='javascript:openFaqWindow("")'>
+					<img class="outlineImg" src="images/Gene.gif" height="150">
+				</a>
+				<br />
+				<em>Gene models from MGI, NCBI,
+				Ensembl and VEGA, and RefSeqs for the gene Fgfr3</em></center>
+			</div>
+		</td>
+	</tr>
+</table>
+
+<!-- 3 box section -->
+<table class="sideMargin" border="0" cellspacing="0" cellpadding="0">
+	<tr>
+		<td rowspan="2" width="50%" valign="top">
+			<div class="blueBorder rightCenterMargin">
+				<div class="boxTitle">
+					Access Genes, Genome Features & Maps data
+				</div>
+				<!-- 'What can I do here?'content -->
+				<!-- The content is in a definition list <dl> where the descriptive text
+				is in the term <dt>, and the link is in the definition <dd> -->
+				<div class="boxBG pad5">
+					<dl class="boxList">
+						<dt class="whatList"><a class="homeLink" href="<!--#include file='include/java_url.html'-->WIFetch?page=markerQF">Search for genes and genome features</a>
+							by symbol, name, location, gene ontology classification or phenotype.</dt>
+						<dt class="whatList"><a class="homeLink" href="<!--#include file='include/wi_url.html'-->searches/sequence_form.shtml">Search for sequences</a>
+							by mouse strain or biological attribute.</dt>
+						<dt class="whatList"><a class="homeLink" href="<!--#include file='include/mouseblast_url.html'-->">Use BLAST</a> to search for mouse genes and genome features using nucleotide or protein sequences.</dt>
+						<dt class="whatList">View <a class="homeLink" href="<!--#include file='include/wi_url.html'-->searches/crossdata_form.shtml">genetic and physical mapping data</a></dt>
+						<dt class="whatList">Create a <a class="homeLink" href="<!--#include file='include/wi_url.html'-->menus/allsearch_menu.shtml#genes">genetic map</a> or
+							<a class="homeLink" href="<!--#include file='include/gbrowse_url.html'-->">genomic map</a>
+							display of regions of the mouse genome.</dt>
+						<dt class="whatList"><a class="homeLink" href="<!--#include file='include/java_url.html'-->WIFetch?page=batchQF">Input a list of gene IDs or symbols</a>
+							and retrieve other database IDs and gene attributes (e.g. phenotypes, GO).</dt>
+						<dt class="whatList"><a class="homeLink" href="<!--#include file='include/ftp_url2.html'-->pub/reports/index.html#marker">Download plain text files</a> of all genes and markers in MGI.</dt>
+						<dt class="whatList"><a class="homeLink" href="<!--#include file='include/mgihome_url.html'-->nomen/short_gene.shtml">Read the guidelines</a>
+							for mouse gene nomenclature.</dt>
+						<dt class="whatList"><a class="homeLink" href="<!--#include file='include/mgihome_url.html'-->nomen/nomen_submit_form.shtml">Submit a new gene or genome feature</a>
+							and receive official nomenclature and an MGI accession identifier.</dt>
+					</dl>
+				</div>
+			</div>
+		</td>
+		<td width="50%" valign="top">
+			<div class="blueBorder marginBottom leftCenterMargin">
+				<div class="boxTitle">
+					<!-- Box-title goes here -->FAQs
+				</div>
+
+				<!-- FAQs content -->
+				<!-- The content is in a definition list <dl> where the list title is in
+				the term <dt>, and FAQ question is in the definition <dd>. Note the link
+				uses a javascript function to open a separate window;
+				javascript:openFaqWindow("faqPage.shtml")'-->
+				<div class="boxBG pad5">
+					<dl class="boxList">
+						<dt>How do I...</dt>
+						<dd class="faqList">.. search for genes,  QTL, or other features in a specific genomic interval? <a class="small homeLink" href='javascript:openFaqWindow("GM_marker.shtml")'>FAQ</a></dd>
+						<dd class="faqList">.. search for a gene using an Entrez, Ensembl, VEGA, or other accession ID? <a class="small homeLink" href='javascript:openFaqWindow("GM_ID.shtml")'>FAQ</a></dd>
+						<dd class="faqList">.. search for genes sharing a specific protein domain? <a class="small homeLink" href='javascript:openFaqWindow("GM_pirsf.shtml")'>FAQ</a></dd>
+						<dd class="faqList">.. search for all gene trap cell lines associated with a  gene or marker? <a class="small homeLink" href='javascript:openFaqWindow("GM_gtrap.shtml")'>FAQ</a></dd>
+						<dd class="faqList">.. retrieve Entrez gene, Ensembl, VEGA, or other IDs for a list of genes? <a class="small homeLink" href='javascript:openFaqWindow("GM_batch.shtml")'>FAQ</a></dd>
+						<dd class="faqList">.. create a genome map from a genomic interval? <a class="small homeLink" href='javascript:openFaqWindow("GM_genmap.shtml")'>FAQ</a></dd>
+						<dd class="faqList">.. see different gene models along with the MGI-curated representative model? <a class="small homeLink" href='javascript:openFaqWindow("GM_gmodel.shtml")'>FAQ</a></dd>
+					</dl>
+					<!-- link to all FAQs page -->
+					<a class="small homeLink" href="<!--#include file='include/faq_url.html'-->FAQ.shtml#marker">More FAQs</a>
+				</div>
+			</div>
+		</td>
+	</tr>
+	<tr>
+		<td width="50%" valign="top">
+			<div class="blueBorder leftCenterMargin statList">
+				<div class="boxTitle">
+					<div class="left">Genes, Genome Features & Maps includes</div>
+					<div class="right small"><!--#include file='include/stats_date.shtml'--></div>
+				</div>
+				<div class="boxBG pad5 small">
+					<!--#include file='stats/gene_stats.shtml'-->
+					<a class="small homeLink" href="<!--#include file="include/mgihome_url.html"-->homepages/stats/all_stats.shtml#allstats_markers">More...</a>
+				</div>
+			</div>
+		</td>
+	</tr>
+</table>
+
+<!-- News box -->
+<div class="boxWide blueBorder marginBottom">
+	<div class="boxTitle">
+
+		<!-- Box-title goes here -->
+		<div class="left">Genes & Genome Features news </div>
+		<div class="right small">12 Nov 2007</div>
+
+	</div>
+	<!-- News content -->
+	<div class="boxBG pad5 small">
+		<ul>
+			<li>microRNAs</li>
+			<li>gene traps</li>
+		</ul>
+	</div>
+</div>
+
+<!-- Tabs box -->
+<div class="boxWide marginBottom">
+
+	<!-- This is where the tabbed section is defined. -->
+	<ul id="maintab" class="shadetabs">
+		<li class="selected"><a href="tabContents/Gene_About.shtml" rel="ajaxcontentarea">About Genes, Genome Features & Maps</a></li>
+		<li><a href="tabContents/Gene_Help.shtml" rel="ajaxcontentarea">Help documents</a></li>
+		<li><a href="tabContents/Gene_Collaborators.shtml" rel="ajaxcontentarea">Collaborators</a></li>
+		<li><a href="tabContents/Gene_Resources.shtml" rel="ajaxcontentarea">Other links</a></li>
+	</ul>
+	<!-- this is where the tab text gets inserted by javascript -->
+	<div id="ajaxcontentarea" class="contentstyle">
+
+		<!-- text for default selected tab inserted here as an include -->
+		<!--#include file='tabContents/Gene_About.shtml'-->
+
+	</div>
+	<script type="text/javascript">
+		var tab_box=new ddajaxtabs("maintab", "ajaxcontentarea")
+		tab_box.setpersist(true)
+		tab_box.setselectedClassTarget("linkparent") //"link" or "linkparent"
+		tab_box.init()
+	</script>
+</div>
+
+<!--#include file='include/templateBodyStop.html'-->
+
+</body>
+</html>

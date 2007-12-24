@@ -1,54 +1,20 @@
-<HTML>
-<head>
-<TITLE><!--#include file='include/mgiversion.html'--> Mutation Submission Form: example of additional strain background information</TITLE>
-<!--#include file="include/stylesheet.html"-->
-</head>
-<BODY BGCOLOR="#ffffff">
-<!--#include file="include/bodyStart.html"-->
-<TABLE WIDTH="100%" BORDER=0 CELLPADDING=2 CELLSPACING=1>
- <TR>
-  <TD WIDTH="100%" BGCOLOR="#D0E0F0">
-   <TABLE WIDTH="100%" BORDER=0 CELLPADDING=0 CELLSPACING=0>
-    <TR>
-     <TD WIDTH="20%" VALIGN="center" ALIGN="left">&nbsp;</TD>
-     <TD WIDTH="60%" ALIGN="center" VALIGN="center">
-      <FONT COLOR="#000000" SIZE=5 FACE="Arial,Helvetica">
-       Mutation Submission Form: example of additional strain background information
-      </FONT>
-     </TD>
-     <TD WIDTH="20%" VALIGN="center" ALIGN="center">&nbsp;</TD>
-    </TR>
-   </TABLE>
-  </TD>
- </TR>
-</TABLE><HTML>
 
-<HR>
+<!--#include file='include/templateHead.html'--> 
+<title><!--#include file='include/mgiversion.html'--> - Example of additional strain background information</title>
 
-<p>The following is an example of additional strain background information.
-<p>The original mutation was ENU-induced on a (C3H/HeJ x BALB/c)F1 and backcrossed to C3H/HeJ for linkage testing. The mutation is maintained by continual backcrossing to C3H/HeJ. The phenotypes reported were observed in the N1-N5 generations, with no differences noted among the generations typed.
-<p>
-<!--#include file="include/bodyStop.html"-->
-</BODY>
-</HTML>
+<!--#include file='include/templateBodyStart.html'--> 
+<!-- Title Bar -->
+<div id="titleBarWrapper">
+  <span class="titleBarMainTitle">Example of additional strain background information</span>
+  
+</div> 
+<!--titleBar-->
 
 
-<!--
-Warranty Disclaimer and Copyright Notice
+<p>The following is an example of additional strain background information:</p>
+<blockquote>
+<p><i>The original mutation was ENU-induced on a (C3H/HeJ x BALB/c)F1 and backcrossed to C3H/HeJ for linkage testing. The mutation is maintained by continual backcrossing to C3H/HeJ. The phenotypes reported were observed in the N1-N5 generations, with no differences noted among the generations typed.</i></p>
 
- THE JACKSON LABORATORY MAKES NO REPRESENTATION ABOUT THE SUITABILITY OR 
- ACCURACY OF THIS SOFTWARE OR DATA FOR ANY PURPOSE, AND MAKES NO WARRANTIES, 
- EITHER EXPRESS OR IMPLIED, INCLUDING MERCHANTABILITY AND FITNESS FOR A 
- PARTICULAR PURPOSE OR THAT THE USE OF THIS SOFTWARE OR DATA WILL NOT 
- INFRINGE ANY THIRD PARTY PATENTS, COPYRIGHTS, TRADEMARKS, OR OTHER RIGHTS.  
- THE SOFTWARE AND DATA ARE PROVIDED "AS IS".
+</blockquote>
 
- This software and data are provided to enhance knowledge and encourage 
- progress in the scientific community and are to be used only for research 
- and educational purposes.  Any reproduction or use for commercial purpose 
- is prohibited without the prior express written permission of the Jackson 
- Laboratory.
-
-Copyright © 1996, 1999, 2000, 2002, 2003 by The Jackson Laboratory
-All Rights Reserved
--->
+<!--#include file='include/templateBodyStop.html'--> 

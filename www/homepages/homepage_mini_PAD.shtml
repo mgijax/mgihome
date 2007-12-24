@@ -1,0 +1,164 @@
+<!--#include file='include/templateHead.html'-->
+
+  <title><!--#include file="include/mgiversion.html"--> - Mouse Genome Informatics Phenotypes, Alleles &amp; Disease Models Page</title>
+
+
+<!------------- AJAX TABS CALLS -------------------------------------------------------->
+
+<link rel="stylesheet" type="text/css" href="ajaxtabs.css" />
+<script type="text/javascript" src="ajaxtabs.js">
+	/***********************************************
+	* Ajax Tabs Content script- © Dynamic Drive DHTML code library (www.dynamicdrive.com)
+	* This notice MUST stay intact for legal use
+	* Visit Dynamic Drive at http://www.dynamicdrive.com/ for full source code
+	***********************************************/
+</script>
+
+<link rel="stylesheet" type="text/css" href="minihome.css" />
+
+<!--#include file='include/templateBodyStart.html'-->
+
+<!-- start body content -->
+
+<!-- mini homepage header section -->
+<table class="sideMargin marginTop" border="0" cellspacing="0" cellpadding="0">
+	<tr>
+		<td align="center" valign="middle">
+			<span class="homePageTitle">
+				Phenotypes,  Alleles &amp; Disease Models
+			</span>
+			<br>
+			<span class="homePageSubTitle">
+			   The Phenotypes/Alleles project in MGI enables access to spontaneous,
+			   induced, and genetically-engineered mutations and their
+			   strain-specific phenotypes.
+			</span>
+		</td>
+		<td>
+			<div class="sideMargin marginBottom blueBorder pad5 small">
+				<center><a href='javascript:openFaqWindow("")'>
+					<img src="images/Pheno.jpg" alt="mouse" height="125" border="0">
+				</a>
+				<br />
+				<em><a class="small homeLink" href='javascript:openFaqWindow("")'>Homozygote for the Ednrb<sup>s</sup> mutation, originally <br>known as piebald spotting.</a></em></center>
+			</div>
+		</td>
+	</tr>
+</table>
+
+
+<!-- 3 box section -->
+<table class="sideMargin" border="0" cellspacing="0" cellpadding="0">
+	<tr>
+		<td rowspan="2" width="50%" valign="top">
+			<!-- Left box: 'What can I do here?' -->
+			<div class="blueBorder rightCenterMargin">
+				<div class="boxTitle">
+					Access Phenotypes, Alleles & Disease Models data
+				</div>
+				<!-- 'What can I do here?'content -->
+				<!-- The content is in a definition list <dl> where the descriptive text
+				is in the term <dt>, and the link is in the definition <dd> -->
+				<div class="boxBG pad5">
+					<dl class="boxList">
+						<dt class="whatList"><a class="homeLink" href="<!--#include file='include/wi_url.html'-->searches/allele_form.shtml">Search for mutations</a>
+							or QTL based on phenotype, human disease,  mutation type, gene, or genome location.</dt>
+						<dt class="whatList"><a class="homeLink" href="<!--#include file='include/wi_url.html'-->searches/MP_form.shtml">Search for a phenotype term</a>
+							to find relevant mutant genotypes.</dt>
+						<dt class="whatList"><a class="homeLink" href="<!--#include file='include/java_url.html'-->WIFetch?page=omimVocab&subset=A">Search for a human disease or condition term</a>
+							to find  mouse models.</dt>
+						<dt class="whatList"><a class="homeLink" href="<!--#include file='include/java_url.html'-->WIFetch?page=markerQF">Search for candidate genes</a>
+							for a given phenotype within a  genomic interval.</dt>
+						<dt class="whatList"><a class="homeLink" href="<!--#include file='include/java_url.html'-->WIFetch?page=batchQF">Input a list of genes</a>
+							and retrieve associated alleles and  phenotypes.</dt>
+						<dt class="whatList"><a class="homeLink" href="<!--#include file='include/mgihome_url.html'-->nomen/allmut_form.shtml">Submit a new allele, mutation, or transgene</a>
+							and receive official nomenclature and an MGI accession identifier.</dt>
+						<dt class="whatList">View an <a class="homeLink" href="<!--#include file='include/mgihome_url.html'-->nomen/allmut_quickhelp.shtml">abbreviated</a> or <a class="homeLink" href="<!--#include file='include/mgihome_url.html'-->nomen/gene.shtml">full</a>
+							guide to proper naming of alleles and mutations.</dt>
+					</dl>
+				</div>
+			</div>
+		</td>
+		<td width="50%" valign="top">
+			<!-- Right-top box: FAQs -->
+			<div class="blueBorder marginBottom leftCenterMargin">
+				<div class="boxTitle">
+					<!-- Box-title goes here -->FAQs
+				</div>
+				<!-- FAQs content -->
+				<!-- The content is in a definition list <dl> where the list title is in
+				the term <dt>, and FAQ question is in the definition <dd>. Note the link
+				uses a javascript function to open a separate window;
+				javascript:openFaqWindow("faqPage.shtml")'-->
+				<div class="boxBG pad5">
+					<dl class="boxList">
+						<dt>How do I...</dt>
+						<dd class="faqList">.. find mutations in a specific gene? <a class="small homeLink" href='javascript:openFaqWindow("PAD_gene.shtml")'>FAQ</a></dd>
+						<dd class="faqList">.. find mouse models for a human disease or condition? <a class="small homeLink" href='javascript:openFaqWindow("PAD_disease.shtml")'>FAQ</a></dd>
+						<dd class="faqList">.. find mutations that cause a specific combination of phenotypes? <a class="small homeLink" href='javascript:openFaqWindow("PAD_combo.shtml")'>FAQ</a></dd>
+						<dd class="faqList">.. find all of one kind of allele (e.g. cre transgenes, LoxP/Frt-flanked alleles, etc.)? <a class="small homeLink" href='javascript:openFaqWindow("PAD_muttype.shtml")'>FAQ</a></dd>
+					</dl>
+					<!-- link to all FAQs page -->
+					<a class="small homeLink" href="<!--#include file='include/faq_url.html'-->FAQ.shtml#pheno">More FAQs</a>
+				</div>
+			</div>
+		</td>
+	</tr>
+	<tr>
+		<td width="50%" valign="top">
+			<div class="blueBorder leftCenterMargin statList">
+				<div class="boxTitle">
+					<div class="left">Phenotypes, Alleles & Disease Models includes</div>
+					<div class="right small"><!--#include file='include/stats_date.shtml'--></div>
+				</div>
+				<div class="boxBG pad5 small">
+					<!--#include file='stats/pad_stats.shtml'-->
+					<a class="small homeLink" href="<!--#include file="include/mgihome_url.html"-->homepages/stats/all_stats.shtml#allstats_pad">More...</a>
+				</div>
+			</div>
+		</td>
+	</tr>
+</table>
+
+
+<!-- News box -->
+<div class="boxWide blueBorder marginBottom">
+	<div class="boxTitle">
+		<!-- Box-title goes here -->
+		<div class="left">Phenotype News</div>
+		<div class="right small">22 Nov 2007</div>
+	</div>
+	<!-- News content -->
+	<div class="boxBG pad5 small">
+		<ul class="smaller">
+			<li>Gene-trapped alleles are coming</li>
+			<li>We have over 100,000 phenotype annotations</li>
+		</ul>
+	</div>
+</div>
+
+<!-- Tabs box -->
+<div class="boxWide marginBottom">
+	<ul id="maintab" class="shadetabs">
+		<li><a hidefocus="true" href="tabContents/PAD_About.shtml" rel="ajaxcontentarea">About Phenotypes</a></li>
+		<li><a hidefocus="true" href="tabContents/PAD_Help.shtml" rel="ajaxcontentarea">Help documents</a></li>
+		<li><a hidefocus="true" href="tabContents/PAD_Collaborators.shtml" rel="ajaxcontentarea">Collaborators</a></li>
+		<li class="selected"><a hidefocus="true" href="tabContents/PAD_Resources.shtml" rel="ajaxcontentarea">Other links</a></li>
+	</ul>
+	<!-- this is where the tab text gets inserted by javascript -->
+	<div id="ajaxcontentarea" class="contentstyle">
+		<!-- text for default selected tab inserted here as an include -->
+		<!--#include file='tabContents/PAD_Resources.shtml'-->
+	</div>
+	<script type="text/javascript">
+		var tab_box=new ddajaxtabs("maintab", "ajaxcontentarea")
+		tab_box.setpersist(true)
+		tab_box.setselectedClassTarget("linkparent") //"link" or "linkparent"
+		tab_box.init()
+	</script>
+</div>
+
+<!--#include file='include/templateBodyStop.html'-->
+
+</body>
+</html>

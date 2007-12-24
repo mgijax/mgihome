@@ -1,34 +1,22 @@
-<HTML>
-<HEAD>
-<TITLE><!--#include file='include/mgiversion.html'--> - About MGI</TITLE>
-<!--#include file="include/stylesheet.html"-->
-</HEAD>
-<BODY BGCOLOR="#FFFFFF">
+<!--#include file='include/templateHead.html'--> 
+<title><!--#include file='include/mgiversion.html'--> - About MGI</title>
 
-<!--#include file="include/bodyStart.html"-->
- <TABLE WIDTH="100%" BORDER=0 CELLPADDING=2 CELLSPACING=1>
- <TR>
-  <TD WIDTH="100%" BGCOLOR="#D0E0F0">
-   <TABLE WIDTH="100%" BORDER=0 CELLPADDING=0 CELLSPACING=0>
-    <TR>
-     <TD WIDTH="20%" VALIGN="center" ALIGN="left">&nbsp;</TD>
-     <TD WIDTH="60%" ALIGN="center" VALIGN="center">
-      <FONT COLOR="#000000" SIZE=5 FACE="Arial,Helvetica">
-      About MGI
-      </FONT>
-     </TD>
-     <TD WIDTH="20%" VALIGN="center" ALIGN="center">&nbsp;</TD>
-    </TR>
-   </TABLE>
-  </TD>
- </TR>
-</TABLE>
+<!--#include file='include/templateBodyStart.html'--> 
+
+
+<!-- Title Bar -->
+  <div id="titleBarWrapper">
+  <span class="titleBarMainTitle"> About MGI </span>
+  </div> 
+<!--titleBar-->
+
+
 
 <TABLE border=0 cellpadding=0 cellspacing=7>
 <TR>
 <TD>
 <H3>Project Information</H3>
-The <A href="<!--#include file='include/wi_url.html'-->">Mouse Genome Informatics (MGI) Database</a> provides integrated access to data on the genetics, genomics and biology of the laboratory mouse. The projects contributing to this resource are:<P>
+The <A href="../homepages">Mouse Genome Informatics (MGI) Database</a> provides integrated access to data on the genetics, genomics and biology of the laboratory mouse. The projects contributing to this resource are:<P>
 <BLOCKQUOTE>
 <B>Mouse Genome Database (MGD) Project</B><BR>
 MGD includes data on gene characterization, nomenclature, mapping, gene
@@ -43,12 +31,21 @@ GXD integrates different types of gene expression information from the mouse and
 MTB integrates data on the frequency, incidence, genetics, and pathology
 of neoplastic disorders, emphasizing data on tumors that develop
 characteristically in different genetically defined strains of mice.
- (See <A HREF="http://tumor.informatics.jax.org/mtbwi/userHelp.jsp">About the MTB</A>.)
+ (See <A HREF="http://tumor.informatics.jax.org/mtbwi/userHelp.jsp">Mouse Tumor Biology Database User Help Reference</A>.)
 <p>
 <b>Gene Ontology (GO) Project at MGI</b><br>
 The Mouse Genome Informatics group is a founding member of the Gene Ontology Consortium
 (www.geneontology.org). MGI fully incorporates the GO in the database and provides a
 GO browser. (See <a href="../GO/project.shtml">The Gene Ontology (GO) Project</a>.)
+
+
+<p><b>MouseCyc Project at MGI</b><br>
+The MouseCyc database focuses on mus musculus metabolism and includes cell level processes such as biosynthesis, degradation, energy production, and detoxification. It is part of the BioCyc (http://www.biocyc.org/) collection of pathway databases created at SRI International. Pathway information in MouseCyc is integrated with MGI data. (See <a href="../homepages/minihome_BioPath.shtml">Mouse Cyc - Biochemical Pathways</a>.)
+</p>
+
+
+
+</p>
 </blockquote>
 <P>
 <A HREF="../other/mgicron.shtml">Chronology of MGI Database Releases</A>
@@ -71,25 +68,5 @@ GO browser. (See <a href="../GO/project.shtml">The Gene Ontology (GO) Project</a
 </TD>
 </TR>
 </TABLE>
-<HR>
-<!--#include file="include/bodyStop.html"-->
-</BODY></HTML>
-<!--
-Warranty Disclaimer and Copyright Notice
 
- THE JACKSON LABORATORY MAKES NO REPRESENTATION ABOUT THE SUITABILITY OR
- ACCURACY OF THIS SOFTWARE OR DATA FOR ANY PURPOSE, AND MAKES NO WARRANTIES,
- EITHER EXPRESS OR IMPLIED, INCLUDING MERCHANTABILITY AND FITNESS FOR A
- PARTICULAR PURPOSE OR THAT THE USE OF THIS SOFTWARE OR DATA WILL NOT
- INFRINGE ANY THIRD PARTY PATENTS, COPYRIGHTS, TRADEMARKS, OR OTHER RIGHTS.
- THE SOFTWARE AND DATA ARE PROVIDED "AS IS".
-
- This software and data are provided to enhance knowledge and encourage
- progress in the scientific community and are to be used only for research
- and educational purposes.  Any reproduction or use for commercial purpose
- is prohibited without the prior express written permission of the Jackson
- Laboratory.
-
-Copyright © 1996, 1999, 2002, 2003 by The Jackson Laboratory
-All Rights Reserved
--->
+<!--#include file='include/templateBodyStop.html'--> 

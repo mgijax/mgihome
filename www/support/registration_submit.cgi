@@ -13,14 +13,16 @@ import string
 import types
 import os
 
-import config
+import Configuration
+
+config = Configuration.get_Configuration ('Configuration', 1)
+
 import feedbacklib	# used for style20() and style21() functions
 import homelib
 import CGI
-import errorlib
 import mgi_utils
-import header
 import formMailer
+import template
 
 ###--- Aliases ---###
 
@@ -60,7 +62,7 @@ fields = [
 		None, None, None),
 	('Institution', 'tute', 1, BLANK,
 		'Inst', '536870916', style20),
-	('Institution Type', 'intype', 1, BLANK,
+	('Institution Type', 'intype', 0, BLANK,
 		'inst_type', '536870932', style20),
 	('Department', 'Dept', 0, BLANK,
 		'Dept', '536870917', style20),
@@ -92,7 +94,7 @@ fields = [
 		'opsys', '536870940', style20),
 	('WWW Browser', 'browser', 0, "Netscape",
 		'browsers', '536870931', style20),
-	('Internet Connection', 'net', 1, BLANK,
+	('Internet Connection', 'net', 0, BLANK,
 		'internet_acc', '536870934',
 		style20),
 	(None, None, 0, "webmail",			# Remedy-only
@@ -224,15 +226,13 @@ def sendRemedyMail (remedy_dict):
 
 	# check to see if we have a developer override for email
 
-	if config.lookup ('CGI_MAILTARGET') is None:
-		destination = RECIPIENT
-	else:
-		destination = config.lookup ('CGI_MAILTARGET')
+	if config.has_key('CGI_MAILTARGET'):
+       		RECIPIENT = config['CGI_MAILTARGET']
 
 	# send the mail
 
 	fd = os.popen ('%s -t %s' % \
-		(config.lookup ('SENDMAIL'), destination), 'w')
+		(config['SENDMAIL'], RECIPIENT), 'w')
 	fd.write (MAIL_HEADER % REPLY_TO)
 	fd.write (string.join (lines, '\n') + '\n')
 	fd.close()
@@ -248,20 +248,20 @@ def printConfirmationPage (remedy_dict):
 	# Throws: nothing
 
 	# start with the banner at the page top
-
+	reply_message = template.Template(config['TEMPLATE_PATH'])
+	reply_message.setContentType('')
+	
 	lines = [
-		'<HTML>',
-		'<HEAD><TITLE>TJL HelpDesk User Registration</TITLE></HEAD>',
-		'<BODY bgcolor=ffffff>',
-		header.bodyStart(),
-		header.headerBar('TJL HelpDesk User Registration Report'),
 		'<H1>Thank you.</H1>',
 		'''Your registration has been forwarded to the appropriate TJL
-			support staff.<P><HR>''',
-		header.bodyStop(),
-		'</BODY></HTML>'
+			support staff.<P>'''
 		]
-	print string.join (lines, '\n')
+	reply_message.setTitle('TJL HelpDesk User Registration')
+	reply_message.setHeaderBarMainText('TJL HelpDesk User Registration Report')
+	reply_message.setBody(string.join (lines, '\n'))
+	
+	print reply_message.getFullDocument()
+	
 	return
 
 ###--- Classes ---###
@@ -282,10 +282,7 @@ class RegistrationCGI (CGI.CGI):
 			formMailer.handleError (
 				'<UL><LI>%s</UL>' % \
 					string.join (errors, '\n<LI>'),
-				'MGI User Registration Form',
-				header.bodyStart(),
-				header.bodyStop()
-				)
+				'MGI User Registration Form')
 			sys.exit (0)
 		else:
 			sendRemedyMail (remedy_dict)

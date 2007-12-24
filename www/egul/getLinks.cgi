@@ -19,7 +19,10 @@ if '.' not in sys.path:
 # Imports
 #
 import string
-import config
+
+import Configuration
+config = Configuration.get_Configuration ('Configuration', 1)
+
 import homelib
 import CGI
 import errorlib
@@ -48,7 +51,7 @@ VALIDFORMATS = [TSV,URL,HTML]
 #
 # Paths to things we need.
 #
-MGIHOME_PATH = config.lookup('MGIHOME_PATH')
+MGIHOME_PATH = config['MGIHOME_PATH']
 LINKFILE = MGIHOME_PATH + "/www/egul/.links"
 
 #

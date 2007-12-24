@@ -1,40 +1,25 @@
-<HTML>
-<HEAD>
-<TITLE><!--#include file='include/mgiversion.html'--> Annotating to GO at MGI</TITLE>
-<!--#include file="include/stylesheet.html"-->
-</HEAD>
+<!--#include file='include/templateHead.html'--> 
 
-<BODY BGCOLOR="#FFFFFF">
-<!--#include file="include/bodyStart.html"-->
-<TABLE WIDTH="100%" BORDER=0 CELLPADDING=2 CELLSPACING=1>
- <TR>
-  <TD WIDTH="100%" BGCOLOR="#D0E0F0">
-   <TABLE WIDTH="100%" BORDER=0 CELLPADDING=0 CELLSPACING=0>
-    <TR>
-     <TD WIDTH="20%" VALIGN="center" ALIGN="left">&nbsp;</TD>
-     <TD WIDTH="60%" ALIGN="center" VALIGN="center">
-      <FONT COLOR="#000000" SIZE=5 FACE="Arial,Helvetica">
-       Annotating to GO at MGI
-      </FONT>
-     </TD>
-     <TD WIDTH="20%" VALIGN="center" ALIGN="center">&nbsp;</TD>
-    </TR>
-   </TABLE>
-  </TD>
- </TR>
-</TABLE>
+<title><!--#include file='include/mgiversion.html'--> - Annotating to GO at MGI</title>
+
+<!--#include file='include/templateBodyStart.html'--> 
+
+<!-- Title Bar -->
+  <div id="titleBarWrapper">
+  <span class="titleBarMainTitle"> Annotating to GO at MGI</span>
+  </div> 
+<!--titleBar-->
+
 
 <P><A NAME="Annotating"></A>
 MGI assigns GO annotation by either manual curation of published experimental literature or automated electronic-based methods. The annotated records include the supporting references. 
-MGI collaborates with several groups outside of MGI in collecting GO annotation for mouse genes. See <a href="go_curators.shtml">GO Curators</a> for the list of groups that provide  annotations for mouse genes.</p>
+MGI collaborates with several groups outside of MGI in collecting GO annotation for mouse genes. See <a href="go_curators.shtml">GO Curators for Mouse</a> for the list of groups that provide  annotations for mouse genes.</p>
 <p>Electronic-based annotation strategies include:</P>
 <UL>
 <LI>mapping the Enzyme Commission (EC) numbers associated with a gene to the EC number attached to GO terms (referenced with J:72245)</LI>
 <LI>translating SWISS-PROT "keywords" associated with a gene to appropriate GO terms (referenced with J:60000)</LI>
 <li>mapping InterPro domains associated with a gene to GO terms (referenced with J:72247)</li>
-<LI>associating GO terms to a gene, based upon proper gene nomenclature (referenced with J:56000).
- <ul>
-   <li>For example, G-protein linked receptor activity genes can be annotated as:
+<LI>associating GO terms to a gene, based upon proper gene nomenclature (referenced with J:56000).   For example, G-protein linked receptor activity genes can be annotated as:
     <UL>
     <LI>Molecular Function: G protein linked receptor</LI>    
     <LI>Cellular Component: integral to plasma membrane</LI>    
@@ -42,7 +27,7 @@ MGI collaborates with several groups outside of MGI in collecting GO annotation 
     </UL>
     </li>
 
-</UL> 
+
 <li>reviewed computational alanysis (RCA) performed by the Riken consortium (attributed to MGI reference J:80000)</li>
  
 </UL> 
@@ -50,28 +35,5 @@ MGI collaborates with several groups outside of MGI in collecting GO annotation 
 
 <p>If you have questions, need assistance, or wish to report a problem with specific annotations, please contact MGI at mgi-help@informatics.jax.org.</p>
 
-<BR>
-<BR>
-<HR>
-<!--#include file="include/bodyStop.html"-->
-</BODY>
-</HTML>
-<!--
-Warranty Disclaimer and Copyright Notice
 
- THE JACKSON LABORATORY MAKES NO REPRESENTATION ABOUT THE SUITABILITY OR 
- ACCURACY OF THIS SOFTWARE OR DATA FOR ANY PURPOSE, AND MAKES NO WARRANTIES, 
- EITHER EXPRESS OR IMPLIED, INCLUDING MERCHANTABILITY AND FITNESS FOR A 
- PARTICULAR PURPOSE OR THAT THE USE OF THIS SOFTWARE OR DATA WILL NOT 
- INFRINGE ANY THIRD PARTY PATENTS, COPYRIGHTS, TRADEMARKS, OR OTHER RIGHTS.  
- THE SOFTWARE AND DATA ARE PROVIDED "AS IS".
-
- This software and data are provided to enhance knowledge and encourage 
- progress in the scientific community and are to be used only for research 
- and educational purposes.  Any reproduction or use for commercial purpose 
- is prohibited without the prior express written permission of the Jackson 
- Laboratory.
-
-Copyright © 1996, 1999, 2002 by The Jackson Laboratory
-All Rights Reserved
--->
+<!--#include file='include/templateBodyStop.html'--> 

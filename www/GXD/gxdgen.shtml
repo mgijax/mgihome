@@ -1,26 +1,22 @@
-<HTML>
-<head>
-<TITLE><!--#include file='include/mgiversion.html'--> The Mouse Gene Expression Information Resource Project</TITLE>
-<!--#include file="include/stylesheet.html"-->
-</head>
-<BODY BGCOLOR="#FFFFFF"><CENTER>
-<blockquote>
-<PRE>
-<IMG SRC="jax_edinburgh_banner.gif">
-</PRE>
 
 
-<SMALL> <A HREF="<!--#include file='include/wi_url.html'-->">MGI Home</a>&nbsp; |&nbsp;
-<A HREF="<!--#include file='include/wi_url.html'-->menus/expression_menu.shtml">Search GXD</A> &nbsp;|&nbsp;
-<A HREF="http://genex.hgu.mrc.ac.uk">Mouse Atlas</A>&nbsp;|
-</SMALL>
-</CENTER>
-<P>
-<hr>
 
-<h2>The Mouse Gene Expression Information Resource Project</h2>
+<!--#include file='include/templateHead.html'--> 
+<title><!--#include file='include/mgiversion.html'--> - The Mouse Gene Expression Information Resource Project</title>
 
-<p>The Mouse Gene Expression Information Resource (MGEIR) is being developed collaboratively by the Gene Expression Database (GXD)  project and the Edinburgh Mouse Atlas project.  Ultimately, the MGEIR will provide the scientific community with a unified resource that combines text-based and 3D graphical methods to store, display, and analyze mouse developmental gene expression information.
+<!--#include file='include/templateBodyStart.html'--> 
+
+<!-- Title Bar -->
+  <div id="titleBarWrapper">
+  <span class="titleBarMainTitle">The Mouse Gene Expression Information Resource Project</span>
+  </div> 
+<!--titleBar-->
+
+<img  border="0" alt="">
+<h4><center><img height=100" width="460" src="jax_edinburgh_banner.gif">
+</center></h4>
+
+<p>The Mouse Gene Expression Information Resource (MGEIR) is being developed collaboratively by the Gene Expression Database (GXD)  project and the <a href="http://genex.hgu.mrc.ac.uk/">Edinburgh Mouse Atlas</a> project.  Ultimately, the MGEIR will provide the scientific community with a unified resource that combines text-based and 3D graphical methods to store, display, and analyze mouse developmental gene expression information.
 <p>
 The Mouse Gene Expression Information Resource resource will integrate the following components:
 <blockquote>
@@ -45,7 +41,7 @@ Provides a high-resolution digital representation of mouse anatomy reconstructed
 
 <p>The  3D Atlas / Graphical Gene Expression Database is being developed at the MRC Human Genetics Unit, Edinburgh and at the Department of Biomedical Sciences, University of Edinburgh, Scotland.
 
-<p>The GXD Project is supported by NIH grant HD33745. Work at Edinburgh is supported by the MRC, the BBSRC, and by the European Science Foundation.
+<p>The GXD Project is supported by NIH grant HD033745. Work at Edinburgh is supported by the MRC, the BBSRC, and by the European Science Foundation.
 
 
 
@@ -70,27 +66,9 @@ Smith CM, Finger JH, Hayamizu TF, McCright IJ, Eppig JT, Kadin JA, Richardson
 JE, Ringwald, M. 2007. The mouse Gene Expression Database (GXD): 2007 update.  
 Nucleic Acids Res 35:D618-D623.
 </blockquote>
-<hr>
-<!--#include file="include/footer.html"-->
-</blockquote>
-</BODY>
-</HTML>
-<!--
-Warranty Disclaimer and Copyright Notice
 
- THE JACKSON LABORATORY MAKES NO REPRESENTATION ABOUT THE SUITABILITY OR
- ACCURACY OF THIS SOFTWARE OR DATA FOR ANY PURPOSE, AND MAKES NO WARRANTIES,
- EITHER EXPRESS OR IMPLIED, INCLUDING MERCHANTABILITY AND FITNESS FOR A
- PARTICULAR PURPOSE OR THAT THE USE OF THIS SOFTWARE OR DATA WILL NOT
- INFRINGE ANY THIRD PARTY PATENTS, COPYRIGHTS, TRADEMARKS, OR OTHER RIGHTS.
- THE SOFTWARE AND DATA ARE PROVIDED "AS IS".
 
- This software and data are provided to enhance knowledge and encourage
- progress in the scientific community and are to be used only for research
- and educational purposes.  Any reproduction or use for commercial purpose
- is prohibited without the prior express written permission of the Jackson
- Laboratory.
 
-Copyright © 1996, 1999, 2002 by The Jackson Laboratory
-All Rights Reserved
--->
+
+
+<!--#include file='include/templateBodyStop.html'--> 

@@ -6,18 +6,18 @@
 ###--- parameters which change for most installations -------------------###
 ###----------------------------------------------------------------------###
 
+# Path to this product
+INSTALL_DIR    /usr/local/mgi/live/
+
+# Path to mgiconfig & global configuration file
+MGICONFIG_PATH    ${INSTALL_DIR}mgiconfig/
+GLOBAL_CONFIG     ${MGICONFIG_PATH}web/GlobalConfig
+
+# Path to the templates
+TEMPLATE_PATH    ${MGICONFIG_PATH}web/
+
 # Path to our home installation
-#MGIHOME_PATH    /home/djd/work/mgihome-trunk/
-MGIHOME_PATH    /usr/local/mgi/live/mgihome/
-
-# Full URL to this MGI Home installation
-#MGIHOME_URL     http://rohan.informatics.jax.org/~djd/mgihome-trunk/
-MGIHOME_URL     http://www.informatics.jax.org/mgihome/
-
-# Version - Normally used at the browser page title
-#MGI_VER        Diana's MGI 3.51
-MGI_VER         MGI 3.51
-
+MGIHOME_PATH    ${INSTALL_DIR}mgihome/
 
 ###----------------------------------------------------------------------###
 ###--- parameters which may change, depending on the install ------------###
@@ -27,32 +27,11 @@ MGI_VER         MGI 3.51
 #- URLs & Paths -#
 #----------------#
 
-# full URL to the userdocs
-#USERDOCS_URL      http://rohan.informatics.jax.org/~djd/userdocs-trunk/
-USERDOCS_URL      http://www.informatics.jax.org/userdocs/
-
-# full URL to the associated MGI Web Interface installation
-WI_URL      http://www.informatics.jax.org/
-
 # full path to associated WI installation (to help find toolbar include files)
-WI_PATH         /usr/local/mgi/live/wi/
-
-# full URL to the servlets in the Java side of the MGI WI
-JAVAWI_URL  http://www.informatics.jax.org/javawi2/servlet/
-
-# full URL to the associated MouseBLAST installation
-MOUSEBLAST_URL  http://mouseblast.informatics.jax.org/
+WI_PATH         ${INSTALL_DIR}wi/
 
 # colon-delimited list of directories in which to find Python libraries
-LIBDIRS     /usr/local/mgi/live/lib/python/
-
-#-------------------------#
-#- Database Connectivity -#
-#-------------------------#
-DBSERVER    PUB_MGI
-DATABASE    pub_1
-DBUSER      mgd_public
-DBPASSWORD  mgdpub
+LIBDIRS     ${MGIHOME_PATH}lib/python/:${INSTALL_DIR}lib/python/
 
 #-------------------#
 #- Email Addresses -#
@@ -66,7 +45,6 @@ DBPASSWORD  mgdpub
 #GEN_CGI_MAILTARGET    djd@informatics.jax.org
 GEN_CGI_MAILTARGET    gen@informatics.jax.org
 
-
 ###----------------------------------------------------------------------###
 ###--- parameters which will rarely change ------------------------------###
 ###----------------------------------------------------------------------###
@@ -74,12 +52,6 @@ GEN_CGI_MAILTARGET    gen@informatics.jax.org
 #-----------------#
 #- Install Setup -#
 #-----------------#
-
-# path to the unix permissions group to use for web display
-GROUP       www
-
-# path to the python executable
-PYTHON      /usr/local/bin/python
 
 # path to the sendmail executable
 SENDMAIL    /usr/lib/sendmail
@@ -89,75 +61,30 @@ SENDMAIL    /usr/lib/sendmail
 #----------------------#
 
 # path to the web directory of the Annatomical Dictionary
-ADPATH   /usr/local/mgi/live/wi/www/GXD/GENAD/
-
-# full URL to the Cook book
-COOKBOOK_URL   http://www.informatics.jax.org/cookbook/
+ADPATH   ${WI_PATH}www/GXD/GENAD/
 
 # full URL to the associated ftp site
 FTP_URL     ftp://ftp.informatics.jax.org/
 
-# URL to the MGI Glossary
-GLOSSARY_URL    http://www.informatics.jax.org/javawi2/servlet/WIFetch?page=glossaryIndex&printFormat=footer
-
-# full URL to the Morse book
-MORSEBOOK_URL  http://www.informatics.jax.org/morsebook/
-
-# full URL to the schema browser
-SCHEMA          http://www.informatics.jax.org/schema/
-
-# full URL to the Silver book
-SILVER_URL     http://www.informatics.jax.org/silver/
-
 # path to the NIH survey
 SURVEY_ROOT_DIRECTORY	/export/gondor/survey/nih
-
-# full URL to the webshare product
-WEBSHARE_URL    http://www.informatics.jax.org/webshare/
-
-# full URL to the WK Silvers book
-WKSILVERS_URL  http://www.informatics.jax.org/wksilvers/
-
-
-#-----------------#
-#- External URLs -#
-#-----------------#
-
-#URL to Entrez where we find human orthologs
-ENTREZ_URL  http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=gene&cmd=Retrieve&dopt=Graphics&list_uids=
-
-# URL to NCBI's Entrez for Genbank sequence IDs
-GB_URL      http://www.ncbi.nlm.nih.gov/entrez/viewer.fcgi?val=
-
-# URL to NCBI's LocusLink
-LOCUSLINK_URL   http://www.ncbi.nlm.nih.gov/LocusLink/LocRpt.cgi?l=
-
-#URL to RGD
-RGD_URL     http://rgd.mcw.edu/tools/genes/genes_view.cgi?id=
-
 
 #---------------#
 #- GEN related -#
 #---------------#
 
 # path to the web directory of the GEN (Gene Expression Notebook) product
-GEN_PATH     /usr/local/mgi/live/mgihome/www/GXD/GEN/
+GEN_PATH     ${MGIHOME_PATH}www/GXD/GEN/
 
 # path to the GEN.xls (Gene Expression Notebook) executable file
-GEN_XLS_PATH     /usr/local/mgi/live/gen/data/
+GEN_XLS_PATH     ${INSTALL_DIR}gen/data/
 
 # The path to GXD notebook userdocs
 OVERVIEW_URL ${GEN_PATH}gen.shtml
 
-
 #------------------#
 #- sybase related -#
 #------------------#
-
-# path to Sybase directory (where we find the interfaces file)
-# /opt/sybase for 11.5
-# /opt/sybase/12.5 for 12.5
-SYBASE      /opt/sybase/12.5
 
 # path to library files for doing crons (commented out for now)
 LD_LIBRARY_PATH    /opt/sybase/12.5/ASE-12_5/lib:/opt/sybase/12.5/OCS-12_5/lib:/usr/local/lib
@@ -168,12 +95,3 @@ LD_LIBRARY_PATH    /opt/sybase/12.5/ASE-12_5/lib:/opt/sybase/12.5/OCS-12_5/lib:/
 
 # path in which to save submissions of the komp nomination form
 KOMP_NOMINATION_DIR	/export/gondor/survey/komp
-
-###--- external links for KOMP nomination page ---###
-
-GENBANK_HOME	http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=Nucleotide
-ENSEMBL_HOME	http://www.ensembl.org/Mus_musculus/textview
-ENTREZGENE_HOME	http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=gene
-KOMP_HOME	http://www.knockoutmouse.org/
-KOMP_NIH	http://www.nih.gov/science/models/mouse/knockout/
-IMSR_HOME	http://www.informatics.jax.org/imsr/IMSRSearchForm.jsp

@@ -1,0 +1,165 @@
+<!--#include file='include/templateHead.html'-->
+
+<title>MGI 4.0  Mouse Genome Informatics Help Page</title>
+
+<link rel="stylesheet" type="text/css" href="homepage.css"/>
+
+<style>
+	.toc { margin 0px;
+		background-color:#DFEFFF; }
+	.toc ul { font-size: 12px;
+		margin 0px;
+		text-align: center;
+		line-height: 1.75;
+		list-style-type: none;
+		padding: .75em .75em 0.1em .75em;
+		min-width: 600px;}
+	.toc li { display: inline;
+		white-space: nowrap; }
+	.outline { border: 2px solid #DFEFFF; }
+	dl.linkedList { margin-left: 2em; }
+	.linkedList dt { margin-top: 1em; }
+	.linkedList dd { margin-left: 1em;
+		margin-top: .25em;
+		font-style:italic}
+</style>
+
+
+
+<!------------- AJAX TABS CALLS -------------------------------------------------------->
+<link rel="stylesheet" type="text/css" href="ajaxtabs.css" />
+<script type="text/javascript" src="ajaxtabs.js">
+	/***********************************************
+	* Ajax Tabs Content script- © Dynamic Drive DHTML code library (www.dynamicdrive.com)
+	* This notice MUST stay intact for legal use
+	* Visit Dynamic Drive at http://www.dynamicdrive.com/ for full source code
+	***********************************************/
+</script>
+
+<!--#include file='include/templateBodyStart.html'-->
+
+<div id="titleBarWrapper">
+ <span class="titleBarMainTitle">Help</span>
+</div> <!--titleBar-->
+
+<!-- main body table -->
+<table width="95%" cellpadding="2" align="center">
+
+	<tr><td>
+		<!-- TOC table -->
+		<table class="toc" width="100%">
+			<tr>
+				<td>
+					<ul>
+						<li><a href="#GeneralHelp">General Help</a> | </li>
+						<li><a href="#UserDocs">User Help Documentation</a> | </li>
+						<li><a href="#AddInfo">Additional Information</a> </li>
+				</td>
+			</tr>
+		</table>
+	</td></tr>
+
+	<tr><td>
+		<!-- section1 table -->
+		<a name="GeneralHelp">
+		<table class="outline" width="100%">
+			<tr>
+				<td class="enhance">
+					General Help
+				</td>
+			</tr>
+			<tr >
+				<td>
+					<!------------- DEFINE FIRST BLOCK OF TABS -------------------->
+					<!------------- CALL SCRIPT TO ACTIVATE ALL BLOCKS AT END OF PAGE -------------------->
+					<ul id="maintab5" class="shadetabs">
+						<li class="selected"><a href="tabContents/Help_UserSupport.shtml" rel="main_area">User Support</a></li>
+						<li><a href="tabContents/Help_Documentation.shtml" rel="main_area">Help Documentation</a></li>
+					</ul>
+					<div id="main_area" class="contentstyle">
+						<!--#include file='tabContents/Help_UserSupport.shtml'-->
+					</div>
+				</td>
+				<script type="text/javascript">
+					var box1=new ddajaxtabs("maintab5", "main_area")
+					box1.setpersist(true)
+					box1.setselectedClassTarget("linkparent") //"link" or "linkparent"
+					box1.init()
+				</script>
+			</tr>
+		</table>
+	</td></tr>
+
+	<tr><td>
+		<!-- section2 table -->
+		<a name="UserDocs">
+		<table class="outline" width="100%">
+			<tr>
+				<td class="enhance">
+					User Help Documentation
+				</td>
+			</tr>
+			<tr >
+				<td>
+					<!------------- DEFINE SECOND BLOCK OF TABS -------------------->
+					<!------------- CALL SCRIPT TO ACTIVATE ALL BLOCKS AT END OF PAGE -------------------->
+					<ul id="maintab6" class="shadetabs">
+						<li class="selected"><a href="tabContents/Gene_Help.shtml" rel="helparea">Genes, Maps</a></li>
+						<li><a href="tabContents/PAD_Help.shtml" rel="helparea">Phenotypes</a></li>
+						<li><a href="tabContents/GXD_Help.shtml" rel="helparea">Expression</a></li>
+						<li><a href="tabContents/GO_Help.shtml" rel="helparea">GO Annotations</a></li>
+						<li><a href="tabContents/Pathways_Help.shtml" rel="helparea">Pathways</a></li>
+						<li><a href="tabContents/Strain_Help.shtml" rel="helparea">Strains, SNPs</a></li>
+						<li><a href="tabContents/Ortho_Help.shtml" rel="helparea">Orthology</a></li>
+					</ul>
+					<div id="helparea" class="contentstyle">
+						<!--#include file='tabContents/Gene_Help.shtml'-->
+					</div>
+				</td>
+				<script type="text/javascript">
+					var box2=new ddajaxtabs("maintab6", "helparea")
+					box2.setpersist(true)
+					box2.setselectedClassTarget("linkparent") //"link" or "linkparent"
+					box2.init()
+				</script>
+			</tr>
+		</table>
+	</td></tr>
+
+	<tr><td>
+		<!-- section2 table -->
+		<a name="AddInfo"></a>
+		<table class="outline" width="100%">
+			<tr>
+				<td class="enhance">
+					Interpreting Annotations
+				</td>
+			</tr>
+			<tr >
+				<td>
+					<!------------- DEFINE THIRD BLOCK OF TABS -------------------->
+					<!------------- CALL SCRIPT TO ACTIVATE ALL BLOCKS AT END OF PAGE -------------------->
+					<ul id="maintab7" class="shadetabs">
+						<li class="selected"><a href="tabContents/PAD_Curators.shtml" rel="policyarea">Phenotypes</a></li>
+						<li><a href="tabContents/GXD_Curators.shtml" rel="policyarea">Expression</a></li>
+						<li><a href="tabContents/GO_Curators.shtml" rel="policyarea">GO Annotations</a></li>
+						<li><a href="tabContents/Ortho_Contents.shtml" rel="policyarea">Orthology</a></li>
+					</ul>
+					<div id="policyarea" class="contentstyle">
+						<!--#include file='tabContents/PAD_Curators.shtml'-->
+					</div>
+					<script type="text/javascript">
+						var box3=new ddajaxtabs("maintab7", "policyarea")
+						box3.setpersist(true)
+						box3.setselectedClassTarget("linkparent") //"link" or "linkparent"
+						box3.init()
+					</script>
+				</td>
+			</tr>
+		</table>
+	</td></tr>
+
+</table>
+
+<!-- start stop include -->
+<!--#include file='include/templateBodyStop.html'-->

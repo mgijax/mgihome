@@ -14,13 +14,17 @@ import sys
 if '.' not in sys.path:
 	sys.path.insert (0, '.')
 import types
+import string
 import os
 import cgi
 import tempfile
-import config
+
+import Configuration
+config = Configuration.get_Configuration ('Configuration', 1)
+
 import homelib
-import header
 import formMailer
+import template
 
 ###------------------------###
 ###--- Global Variables ---###
@@ -85,8 +89,7 @@ def bailout (message):
     # Effects: writes to stdout
     # Throws: SystemExit to exit the script after writing the error message
 
-    formMailer.handleError (message, 'KOMP Gene Nomination Form',
-        header.bodyStart(), header.bodyStop())
+    formMailer.handleError (message, 'KOMP Gene Nomination Form')
     sys.exit(0)
 
 ###------------------------------------------------------------------------###
@@ -100,8 +103,9 @@ def setup():
     # Throws: SystemExit if an error is found and we have sent an error
     #	message to the user.
 
-    KOMP_DIR = config.lookup ('KOMP_NOMINATION_DIR')
-    if KOMP_DIR is None:
+    if config.has_key('KOMP_NOMINATION_DIR'):
+    	KOMP_DIR = config['KOMP_NOMINATION_DIR']
+    else:
 	bailout ('Configuration error in mgihome:' + \
 		'KOMP_NOMINATION_DIR is undefined')
 
@@ -396,19 +400,21 @@ def sendUserConfirmation (message):
     # Assumes: nothing
     # Modifies: writes to stdout
     # Throws: nothing
-
+    
+    page_template = template.Template(config['TEMPLATE_PATH'])
+    page_template.setContentType('')
     # build the copy of the message to echo to the user
-
     messageText = '\n'.join(message)
+    body = [
+            'The following information was successfully submitted:',
+            '<BLOCKQUOTE><PRE>\n%s\n</PRE></BLOCKQUOTE>' % cgi.escape(messageText),
+            '<HR>']
+    
+    page_template.setTitle('KOMP Gene Nomination Form')
+    page_template.setHeaderBarMainText('KOMP Gene Nomination Sent!')
+    page_template.setBody(string.join (body, '\n'))
 
-    print '<HTML><HEAD><TITLE>KOMP Gene Nomination Form</TITLE></HEAD>'
-    print '<BODY bgcolor=ffffff>'
-    print header.bodyStart()
-    print header.headerBar('KOMP Gene Nomination Sent!')
-    print 'The following information was successfully submitted:'
-    print '<PRE>\n%s\n</PRE>' % cgi.escape(messageText)
-    print '<HR>'
-    print header.bodyStop()
+    print page_template.getFullDocument()
 
     return
 

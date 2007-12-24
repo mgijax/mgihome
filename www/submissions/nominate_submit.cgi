@@ -17,18 +17,20 @@ import posix
 import cgi
 import tempfile
 
+import Configuration
 
-import config
+config = Configuration.get_Configuration ('Configuration', 1)
+
 import table		# for unescape() function only
 import homelib
-import header
-import errorlib
 import formMailer
+import template
 
 
-SURVEY_ROOT_DIRECTORY = config.lookup ('SURVEY_ROOT_DIRECTORY')
-if SURVEY_ROOT_DIRECTORY is None:
-    SURVEY_ROOT_DIRECTORY = '/home/dow/tmp/survey/'
+SURVEY_ROOT_DIRECTORY = '/home/dow/tmp/survey/'
+
+if config.has_key('SURVEY_ROOT_DIRECTORY'):
+	SURVEY_ROOT_DIRECTORY = config['SURVEY_ROOT_DIRECTORY']
 
 # maps from actual fieldname to its label, for error reporting
 required_fields = ['lastname','firstname','email']
@@ -203,12 +205,11 @@ def main():
         if not parms.has_key (key) or parms[key].value == '':
             missing_fields.append (labels[key])
     if missing_fields:
+        print 'Content-type: text/html\n\n'
         formMailer.handleError (
                     err_message % \
                             string.join (missing_fields, ', '),
-                    'Survey Form',
-                    header.bodyStart(),
-                    header.bodyStop())
+                    'Survey Form')
         sys.exit (0)
     sys.stderr.write("Survey root dir :" + SURVEY_ROOT_DIRECTORY + "\n")
     message = []
@@ -235,16 +236,15 @@ def main():
                             section.append ('\t%s' % parms[field].value)
         if len(section) > 3:
                 message = message + section
-
-    print '<HTML><HEAD><TITLE>Survey Results Sent!</TITLE></HEAD>'
-    print '<BODY bgcolor=ffffff>'
-    print header.bodyStart()
-    print header.headerBar('Survey Results Sent!')
-    print 'The following information was successfully submitted:'
-    print '<PRE>\n%s\n</PRE>' % string.join (message, '\n')
-    print '<HR>'
-    print header.bodyStop()
-
+    
+    reply_message = template.Template(config['TEMPLATE_PATH'])
+    reply_message.setTitle('Survey Results Sent!')
+    reply_message.setHeaderBarMainText('Survey Results Sent!')
+    reply_message.setBody('The following information was successfully submitted:')
+    reply_message.appendBody('<BLOCKQUOTE><PRE>\n%s\n</PRE></BLOCKQUOTE><HR>' % string.join(message, '\n'))
+    
+    print reply_message.getFullDocument()
+    
     tempfile.tempdir = SURVEY_ROOT_DIRECTORY
     dirName = tempfile.mktemp()
     os.mkdir(dirName)
@@ -265,10 +265,9 @@ def main():
 ################
 # MAIN PROGRAM #
 ################
-print "Content-type: text/html"
-print
+
 try:
     main()
 except SystemExit: 
     pass
-print 'All done'
+
