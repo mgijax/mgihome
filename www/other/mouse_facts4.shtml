@@ -1,33 +1,27 @@
-<html>
-<head>
-<TITLE><!--#include file='include/mgiversion.html'--> - Mouse Facts: Useful Links</TITLE>
-<TITLE><!--#include file='include/mgiversion.html'-->  Species List</TITLE>
-<!--#include file="include/stylesheet.html"-->
-<!-- Edited by:  Diane Dahmen (djd@informatics.jax.org) -->
-</head>
-<BODY BGCOLOR="#ffffff">
-<!--#include file="include/bodyStart.html"-->
-<TABLE WIDTH="100%" BORDER=0 CELLPADDING=2 CELLSPACING=1>
- <TR>
-  <TD WIDTH="100%" BGCOLOR="#D0E0F0">
-   <TABLE WIDTH="100%" BORDER=0 CELLPADDING=0 CELLSPACING=0>
-    <TR>
-     <TD WIDTH="20%" VALIGN="center" ALIGN="left">&nbsp;</TD>
-     <TD WIDTH="60%" ALIGN="center" VALIGN="center">
-      <FONT COLOR="#000000" SIZE=5 FACE="Arial,Helvetica">
-       Useful Links
-      </FONT>
-     </TD>
-     <TD WIDTH="20%" VALIGN="center" ALIGN="center">&nbsp;</TD>
-    </TR>
-   </TABLE>
-  </TD>
- </TR>
-</TABLE>
-<p>
-<h3>Mouse-Related</h3>
+<!--#include file='include/templateHead.html'--> 
+<title><!--#include file='include/mgiversion.html'--> - Mouse, Mammalian, and Model Organism Resources</title>
 
-<p><b>General</b>
+<!--#include file='include/templateBodyStart.html'--> 
+
+
+<!-- Title Bar -->
+<div id="titleBarWrapper">
+
+  <span class="titleBarMainTitle"> Mouse, Mammalian, and Model Organism Resources</span>
+
+</div> <!--titleBar-->
+<!-- TOC table -->
+		
+<table width="!" cellpadding="8" align="center">
+  
+  <tr>
+  <td><a href="#general">General</a> | <a href="#MolecRes">Molecular Resources</a> | <a href="#mouse_res">Mouse Resources</a> | <a href="#locus_sym">Locus Symbols, Gene Families</a> | <a href="#MorphMut">Morphology/Mutations</a>
+    <a href="#OrthHomol">Orthology/Homology</a> |  <a href="#Maps">Maps</a> | <a href="#mammal_model">Mammals and Model Organisms</a></td></tr>
+</table>
+
+
+
+<p><a name="general"></a><b>General</b>
 <blockquote>
 <a href="http://www.jax.org/">The Jackson Laboratory Homepage</a>: Research, Resources, JAX Mice, Career Opportunities, Programs<br>
  <a href="http://phenome.jax.org/phenome/">Mouse Phenome Database</a>: Baseline phenotypic data on commonly used strains<BR>
@@ -56,8 +50,26 @@ Nomenclature<br>
 <a href="http://ccm.ucdavis.edu/tgmouse/">Mutant Mouse Pathology Laboratory</a>: histopathology services, transgenic pathology, comparative pathology <br>
 <a href="http://www.healthsystem.virginia.edu/internet/transgenic-mouse/ears.cfm">Punch codes</a>: standard pattern for ear punch numbering in mice<br>
 </blockquote>
+<p><A NAME="MolecRes"></A><b>Molecular Resources</b></p>
+<blockquote>
+<dl><dt>BACs</dt>
+<dd><a href="http://bacpac.chori.org/">BACPAC Resources Center (BPRC) at Children's Hospital Oakland Research Institute (CHORI)</a></dd>
+<dd><a href="http://mp.invitrogen.com/">ResGen products at Invitrogen</a></dd>
 
-<p><b>Mouse Resources</b>
+<dt>IMAGE clones &#150;</b> <a href="http://image.llnl.gov/">The IMAGE (Integrated Molecular Analysis of Genome Expression) Consortium</a></dt>
+<dt>Distributors of IMAGE clones in the U.S.</dt>
+<dd><a href="http://www.atcc.org/">American Type Culture Collection</a>, Manassas, VA</dd>
+<dd<a href="http://www.openbiosystems.com/">Open Biosystems</a>, Huntsville, AL</dd>
+<dd><a href="http://mp.invitrogen.com/">Invitrogen</a>, Carlsbad, CA</dd>
+
+<dt>Distributors of IMAGE clones in Europe</dt>
+<dd><a href="http://www.geneservice.co.uk/products/image/index.jsp">Geneservice Ltd</a>, Cambridge, UK</dd>
+<!--<dd><a href="http://www.rzpd.de/">RZPD German Resource Center for Genome Research</a>, Berlin Germany</dd>-->
+<dd><a href="http://www.imagenes-bio.de/products/sets_libraries/image/">imaGenes</a>, Berlin Germany 
+</dl>
+</blockquote>
+
+<p><b><a name="mouse_res"></a>Mouse Resources</b>
 <blockquote>
 <a href="http://jaxmice.jax.org/index.html">JAX&reg; Mice (The Jackson Laboratory)</a>: mouse product list, technical support<br>
 <a href="http://www.jax.org/imr/index.html">Induced Mutant Resource (IMR)</a>: mice, The Jackson Laboratory<br>
@@ -73,7 +85,8 @@ Nomenclature<br>
 </p>
 </blockquote>
 
-<p><b>Locus Symbols, Gene Families</b>
+
+<p><b><a name="locus_sym">Locus Symbols, Gene Families</a></b>
 <blockquote>
 <a href="http://imgt.cines.fr">The International Immunogenetics Database</a><br>
 <a href="../nomen/nomen_submit_form.shtml">Mouse Gene Nomenclature information </a>: locus symbol registration<br>
@@ -82,7 +95,7 @@ Nomenclature<br>
 <a href="http://www.sanger.ac.uk/Software/Pfam/">Pfam - Protein Family Database</a>: a large collection of multiple sequence alignments of many common protein domains
 </blockquote>
 
-<p><b>Morphology/Mutations</b>
+<p><b><a name="MorphMut"></a>Morphology/Mutations</b>
 <blockquote>
 <a href="http://www.acrf.com.au/page/medical_genome_centre_australian_national_university.html">Australian Medical Genome Centre</a></br>
 <a href="http://www.mouse-genome.bcm.tmc.edu/ENU/ENUhome.asp">Baylor Mouse Mutagenesis for Development Defects</a><br>
@@ -98,10 +111,7 @@ Nomenclature<br>
 <a href="http://www.cmhd.ca/">Toronto's Centre for Modeling Human Disease</a><br>
 </blockquote>
 
-
-
-
-<p><b>Orthology/Homology</b>
+<p><b><a name="OrthHomol"></a>Orthology/Homology</b></p>
 <blockquote>
 <a href="<!--#include file='include/wi_url.html'-->menus/homology_menu.shtml">Mouse Genome Database (MGD) Orthology</a><br>
 <a href="http://www.ncbi.nlm.nih.gov/Homology/">NCBI Human/Mouse Homology Relationships</a>
@@ -111,9 +121,9 @@ Human-Mouse Homology Database (DHMHD) Human/Mouse Orthologies</a>
 <!--<br><a href="http://www.latrobe.edu.au/www/genetics/compmap.html">La Trobe University Comparative Genome Mapping</a>-->
 </blockquote>
 
-<p><b>Maps</b>
+<p><b><a name="Maps">Maps</a></b></p>
 <blockquote>
-<a href="<!--#include file='include/wi_url.html'-->menus/map_menu.shtml">Mouse Genome
+<a href="<!--#include file='include/wi_url.html'-->menus/allsearch_menu.shtml#maps">Mouse Genome
 Database (MGD) Mapping</a>
 <br><a href="http://www.jax.org/resources/documents/cmdata/">The Jackson
 Laboratory Mapping Panels (Backcross and Radiation Hybrid panels)</a>
@@ -128,10 +138,8 @@ Genome Database Mouse Cytogenetic Map</a>
 <a href="http://www.mgu.har.mrc.ac.uk/servlet/EUCIB.mapViewer">The European Collaborative Interspecific Mouse Backcross (EUCIB)</a><br>-->
 <a href="http://www.pathology.washington.edu/research/cytopages/spreads/mouse_g_B2.gif">University of Washington G-banded Mouse Karyotype Image</a>
 </blockquote>
-<p>
 
-<hr WIDTH="100%">
-<h3>Mammals and Model Organisms</h3>
+<p><b><a name="mammal_model"></a>Mammals and Model Organisms</b></p>
 <blockquote>
 <p>
 <!--
@@ -150,7 +158,10 @@ resulting from the Human Genome Initiative
 <br><a href="http://flybase.bio.indiana.edu/">FlyBase:</a> <I>Drosophila</I>
 <br><a href="http://zfish.uoregon.edu/index.html">The Fish Net:</a> Zebrafish Research Database links
 <br><a href="http://fugu.biology.qmul.ac.uk/">The Fugu Informatics Network</a> 
-<br><a href="http://elegans.swmed.edu/genome.shtml">C. elegans Genetics and Genomics</a>: <I>C. elegans</I> Genome Database and links
+<br><i>C. elegans</i>: genetics and genomics<br>
+&nbsp;&nbsp;&nbsp;<a href="http://www.wormbase.org/">WormBase</a><br>
+&nbsp;&nbsp;&nbsp;<a href="http://www.wormatlas.org/">Wormatlas</a>: anatomy<br>
+&nbsp;&nbsp;&nbsp;<a href="http://www.wormbook.org/">WormBook</a>:  on-line textbook</a>
 <br><a href="http://genome-www.stanford.edu/Saccharomyces/">Saccharomyces Genome Database (SGD):</a> Yeast
 <br><a href="http://www.arabidopsis.org/">Arabidopsis thaliana Database:</a> <I>Arabidopsis</I> data and links
 <!--<br><a href="http://www.angis.org.au/Databases/BIRX/omia/omia_form.html">Online
@@ -160,29 +171,21 @@ Mendelian Inheritance in Animals (OMIA)</a>: species and phenotypes-->
 Mendelian Inheritance in Man (OMIM)</a>: catalog of human genes and genetic disorders
 </blockquote>
 <p>
-<HR>
+<pre>
 
 
-<!--#include file="include/bodyStop.html"-->
-</body>
-</html>
 
-<!--
-Warranty Disclaimer and Copyright Notice
 
- THE JACKSON LABORATORY MAKES NO REPRESENTATION ABOUT THE SUITABILITY OR 
- ACCURACY OF THIS SOFTWARE OR DATA FOR ANY PURPOSE, AND MAKES NO WARRANTIES, 
- EITHER EXPRESS OR IMPLIED, INCLUDING MERCHANTABILITY AND FITNESS FOR A 
- PARTICULAR PURPOSE OR THAT THE USE OF THIS SOFTWARE OR DATA WILL NOT 
- INFRINGE ANY THIRD PARTY PATENTS, COPYRIGHTS, TRADEMARKS, OR OTHER RIGHTS.  
- THE SOFTWARE AND DATA ARE PROVIDED "AS IS".
 
- This software and data are provided to enhance knowledge and encourage 
- progress in the scientific community and are to be used only for research 
- and educational purposes.  Any reproduction or use for commercial purpose 
- is prohibited without the prior express written permission of the Jackson 
- Laboratory.
 
-Copyright © 1996, 1999, 2002 by The Jackson Laboratory
-All Rights Reserved
--->
+
+
+
+
+
+
+
+
+</pre>
+
+<!--#include file='include/templateBodyStop.html'--> 

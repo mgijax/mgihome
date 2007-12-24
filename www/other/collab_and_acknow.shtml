@@ -1,24 +1,14 @@
-<HTML>
-<HEAD>
-<TITLE><!--#include file='include/mgiversion.html'--> - Collaborators and Acknowledgements for Mouse Genome Informatics Projects</TITLE>
-<!--#include file="include/stylesheet.html"-->
-</HEAD>
-<BODY BGCOLOR=#FFFFFF>
-<TABLE WIDTH="100%" BORDER=0 CELLPADDING=0 CELLSPACING=0>
-  <TR><TD WIDTH="100%">
-    <TABLE WIDTH="100%" BORDER=0 CELLPADDING=0 CELLSPACING=0>
-     <TR><TD WIDTH="20%" VALIGN="center" ALIGN="left"><A HREF="<!--#include file='include/wi_url.html'-->"><!--#include file="include/mgi_logo_small.html"--></A></TD>
-      <TD WIDTH="60%" ALIGN="center" VALIGN="center" BGCOLOR="#ffffff">
-       <FONT COLOR="#000000" SIZE=5 FACE="Arial,Helvetica">
-Collaborators and Acknowledgements
-       </FONT></TD><TD WIDTH="20%" VALIGN="center" ALIGN="center" BGCOLOR="#ffffff">&nbsp;</TD></TR>
-<TR BGCOLOR="blue"><TD COLSPAN=3><FONT face="Arial,Helvetica" color="#ffffff">
-    <B>&nbsp;Mouse Genome Informatics</B></TD></TR>
-<TR><TD BGCOLOR="#ffffff"><FONT SIZE=-1 FACE="Arial,Helvetica"><A HREF="<!--#include file='include/wi_url.html'-->">MGI Home</A>&nbsp;&nbsp;&nbsp;
-<a href="../help/help.shtml">Help</A></FONT></TD></TR>
-</TABLE></TD></TR>
-</TABLE>
-<hr>
+<!--#include file='include/templateHead.html'--> 
+<title><!--#include file='include/mgiversion.html'--> - Collaborators and Acknowledgements for Mouse Genome Informatics Projects</title>
+
+<!--#include file='include/templateBodyStart.html'--> 
+
+<!-- Title Bar -->
+<div id="titleBarWrapper">
+  <span class="titleBarMainTitle"> Collaborators and Acknowledgements for Mouse Genome Informatics Projects </span>
+</div>
+ <!--titleBar-->
+
 <a name="Top"></a>
 <H3><a name="collab"></a>Collaborators</a></H3>
 <p>
@@ -67,6 +57,10 @@ We also obtain chromosome map locations for MGI genes associated with Ensembl ge
 <P><A HREF="http://genex.hgu.mrc.ac.uk/">Mouse Atlas and 3D Graphical Gene Expression Database</A></B>
 <P>We collaborate with the Edinburgh Mouse Atlas and Gene Expression Database project to develop and extend an anatomical dictionary of mouse development and to build the Mouse Gene Expression Information Resource that will combine the use of controlled vocabularies and image-based methods for the representation and analysis of expression patterns. The standard anatomical terms are, or will be, used throughout our database wherever anatomical data are found (e.g., expression data, clone library information, phenotypic descriptions).</p>
 <HR>
+
+<p><A HREF="../homepages/minihome_BioPath.shtml">MouseCyc</a></p>
+The MouseCyc database is part of the <a href="http://www.biocyc.org">BioCyc</a> collection of biological pathway databases created using the Pathway Tools Software Development kit created by <a href="http://www.ai.sri.com/pkarp/">Dr. Peter Karp</a>  and his research group at SRI, International in Palo Alto, California. </p>
+<hr>
 
 <p><b>Mouse Genome Sequencing Consortium</b></p>
 <p></p>We collaborate with members of the MGSC, a public-private partnership of institutes involved in sequencing and genomics. The MGSC aims to accelerate, facilitate and coordinate global mouse genomic sequencing efforts. Funding for is provided by the National Institutes of Health, the Wellcome Trust, GlaxoSmithKline, the Merck Genome Research Institute and Affymetrix Inc. Sequencing partners are the Sanger Institute, the Whitehead Institute for Biomedical Research and Washington University School of Medicine.</p>
@@ -176,12 +170,8 @@ Genome Projects.</p>
  <p><A HREF="http://genome.wustl.edu/">WashU</a> (Genome Sequencing Center, Washington University School of Medicine St. Louis, MO)</p>
 The Genome Sequencing Center two-year project will produce expressed tag sequences (ESTs) from approximately 400,000 mouse cDNAs.
 </p>
-<hr>
 
-<!--#include file="include/footer.html"-->
-
-</BODY>
-</HTML>
+<!--#include file='include/templateBodyStop.html'--> 
 
 <!--
 Warranty Disclaimer and Copyright Notice
@@ -199,7 +189,7 @@ Warranty Disclaimer and Copyright Notice
  is prohibited without the prior express written permission of the Jackson
  Laboratory.
 
-Copyright © 1996, 1999, 2002 by The Jackson Laboratory
+Copyright © 1996, 1999, 2002, 2005, 2006, 2007 by The Jackson Laboratory
 All Rights Reserved
 -->
 
