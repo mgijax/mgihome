@@ -55,14 +55,14 @@ Sources checked:
 <INPUT TYPE="checkbox" NAME="source2" VALUE="HUGO/Human"> HUGO/Human
 (<A HREF="http://www.genenames.org">UK</A>)
 <INPUT TYPE="checkbox" NAME="source4" VALUE="RGD"> RGD (<A HREF="http://rgd.mcw.edu/">Wisconsin</A>)
-<INPUT TYPE="checkbox" NAME="source3" VALUE="RatMap"> RatMap (<A HREF="http://ratmap.gen.gu.se/">Sweden</A>)
+<!--<INPUT TYPE="checkbox" NAME="source3" VALUE="RatMap"> RatMap (<A HREF="http://ratmap.gen.gu.se/">Sweden</A>)-->
 <P>
 Other names used in the literature (aliases):<BR>
 <TEXTAREA NAME="otherName" ROWS=2 COLS=55></TEXTAREA><BR>
 If this locus is part of a gene family, then please specify the family and any other known members:<BR>
 <TEXTAREA NAME="family" ROWS=2 COLS=55></TEXTAREA><BR>
-Please provide any additional information,  such as probe used, Genbank ID, functional assay
-performed, etc. that may help us with the symbol approval process.<BR>
+Please provide any additional information, such as IDs from Genbank, Ensembl, Vega; functional assay
+performed; etc., that may help us with the symbol approval process.<BR>
 <TEXTAREA NAME="notes" ROWS=2 COLS=55></TEXTAREA><BR>
 <HR>
 <HR>
@@ -84,7 +84,8 @@ performed, etc. that may help us with the symbol approval process.<BR>
 <H2>Locus References:</H2>
 Please report citations that support this locus designation in the following short reference format.  If unpublished, please include title:
 <P>
-<BLOCKQUOTE><EM>Seldin MF, Cytogenet Cell Genet 1987;45(1):52-4</EM></BLOCKQUOTE>
+<BLOCKQUOTE><EM>&nbsp; Takakura N, Cell 2000;102:199-209.<br>
+</EM></BLOCKQUOTE>
 <P>
 Citation: <TEXTAREA NAME="cite1" ROWS=2 COLS=55></TEXTAREA><BR>
 Citation: <TEXTAREA NAME="cite2" ROWS=2 COLS=55></TEXTAREA><BR>
@@ -98,12 +99,18 @@ If a homologous locus is known in a species other than mouse, please fill in thi
 <TR><TD><INPUT TYPE="text" NAME="hom_symbol_1" SIZE=15></TD>
 <TD><INPUT TYPE="text" NAME="hom_species_1" SIZE=20></TD>
 <TD><INPUT TYPE="text" NAME="hom_citation_1" SIZE=50></TD>
+<TD><INPUT TYPE="text" NAME="hom_seq_id_1" SIZE=20></TD>
+
 <TR><TD><INPUT TYPE="text" NAME="hom_symbol_2" SIZE=15></TD>
 <TD><INPUT TYPE="text" NAME="hom_species_2" SIZE=20></TD>
 <TD><INPUT TYPE="text" NAME="hom_citation_2" SIZE=50></TD>
+<TD><INPUT TYPE="text" NAME="hom_seq_id_2" SIZE=20></TD>
+
 <TR><TD><INPUT TYPE="text" NAME="hom_symbol_3" SIZE=15></TD>
 <TD><INPUT TYPE="text" NAME="hom_species_3" SIZE=20></TD>
 <TD><INPUT TYPE="text" NAME="hom_citation_3" SIZE=50></TD>
+<TD><INPUT TYPE="text" NAME="hom_seq_id_3" SIZE=20></TD>
+
 </TABLE>
 <BR>
 <INPUT TYPE=submit VALUE="Submit"> <INPUT TYPE=reset VALUE="Reset Form">
