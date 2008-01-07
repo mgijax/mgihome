@@ -105,6 +105,7 @@ def main ():
     stringToFile (config['GB_URL'], '../www/include/gb_url.html')
     stringToFile (config['GBROWSE_URL'], '../www/include/gbrowse_url.html')
     stringToFile (config['GO_GRAPH_URL'], '../www/include/gograph_url.html')
+    stringToFile (config['GO_TOOLS_URL'], '../www/include/gotools_url.html')
     stringToFile (config['LOCUSLINK_URL'], \
         '../www/include/locuslink_url.html')
     stringToFile (config['RGD_URL'], \
