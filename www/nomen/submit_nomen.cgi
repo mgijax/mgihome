@@ -221,7 +221,9 @@ if fields.has_key('hom_symbol_1'):
 		homsect = homsect + 2*NL + \
 			  'Locus Symbol:' + HT + fields['hom_symbol_1'] + NL + \
 			  'Species:' + HT + fields['hom_species_1'] + NL + \
-			  'Citation' + HT + fields['hom_citation_1']
+			  'Citation:' + HT + fields['hom_citation_1']
+		if fields.has_key('hom_seq_id_1'):
+			homsect = homsect + NL + 'Sequence ID:' + HT + fields['hom_seq_id_1']
 	else:
 		missing_fields.append('Species and Short Citation required for each Locus Symbol.')
 
@@ -230,7 +232,9 @@ if fields.has_key('hom_symbol_2'):
 		homsect = homsect + 2*NL + \
 			  'Locus Symbol:' + HT + fields['hom_symbol_2'] + NL + \
 			  'Species:' + HT + fields['hom_species_2'] + NL + \
-			  'Citation' + HT + fields['hom_citation_2']
+			  'Citation:' + HT + fields['hom_citation_2']
+		if fields.has_key('hom_seq_id_2'):
+			homsect = homsect + NL + 'Sequence ID:' + HT + fields['hom_seq_id_2']					  
 	else:
 		missing_fields.append('Species and Short Citation required for each Locus Symbol.')
 
@@ -239,7 +243,9 @@ if fields.has_key('hom_symbol_3'):
 		homsect = homsect + 2*NL + \
 			  'Locus Symbol:' + HT + fields['hom_symbol_3'] + NL + \
 			  'Species:' + HT + fields['hom_species_3'] + NL + \
-			  'Citation' + HT + fields['hom_citation_3']
+			  'Citation:' + HT + fields['hom_citation_3']
+		if fields.has_key('hom_seq_id_3'):
+			homsect = homsect + NL + 'Sequence ID:' + HT + fields['hom_seq_id_3']			  
 	else:
 		missing_fields.append('Species and Short Citation required for each Locus Symbol.')
 
