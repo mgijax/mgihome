@@ -1,18 +1,107 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
-	<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
-	<title>Untitled Document</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<title>Untitled Document</title>
 </head>
 
 <body>
 <table>
-	<tr><td>
-		<p>The Phenotype/Alleles project in MGI enables comparative phenotype analysis, searches for human disease
-		models, and hypothesis generation by providing access to spontaneous, induced, and genetically engineered
-		mutations and their strain-specific phenotypes.</p>
-		<p>More text to come...</p>
-	</td></tr>
+	<tr>
+		<td>
+		<p>The Phenotypes, Alleles &amp; Disease Models project in MGI
+		enables comparative phenotype analysis, searches for human disease
+		models, and hypothesis generation by providing access to spontaneous,
+		induced, and genetically engineered mutations and their
+		strain-specific phenotypes.</p>
+
+
+		<h3>Alleles</h3>
+
+		<p>A primary objective for MGI is the maintenance of a complete
+		catalog of phenotypic mutations in the laboratory mouse. These include
+		spontaneous, induced, and genetically engineered mutations (targeted
+		knockouts and conditionals, transgenics, Cre-constructs, targeted
+		reporters, gene traps, transposon-induced mutations, etc.).</p>
+
+		<p>MGI serves as the international authoritative source for
+		nomenclature for mouse alleles, and maintains a complete list of
+		allele symbols, names, and synonyms, each with a unique accession ID.
+		Researchers are encouraged to <a href="<!--#include file='include/mgihome_url.html'-->nomen/allmut_form.shtml">submit new alleles</a> to reserve symbols
+		and obtain accession IDs prior to publication.</p>
+
+		<p>Alleles can be searched within MGI by name or symbol, category
+		(e.g. targeted knockout), genome location, associated phenotypes and
+		disease models using the <a href="<!--#include file='include/wi_url.html'-->searches/allele_form.shtml">Phenotypes, Alleles &amp; Disease Models Query
+		Form</a> and a complete listing of alleles can be downloaded from the ftp
+		site (<a href="<!--#include file='include/ftp_url2.html'-->pub/reports/index.html#pheno">ftp://ftp.informatics.jax.org/pub/reports/index.html#pheno</a>).</p>
+
+		<h3>Phenotypes</h3>
+
+		<p>Phenotypes are the manifestation of an individual's genotype in
+		its environment. In the most straightforward case, phenotypic effects
+		of allelic mutations are observed in relation to a control strain
+		background; and the environment within the observing laboratory is
+		considered constant.</p>
+
+		<p>Complications quickly expand when considering complex,
+		multi-genic mutations, conditional and tissue-specific allele
+		ablation, the combination of mutations in multiple genes in a single
+		animal, the use of multiple strain backgrounds on which mutations are
+		created and/or transferred, and the experimental application of
+		additional environmental variables that can heighten or lessen
+		phenotypic outcome. To maximize the usefulness of these complex data,
+		phenotypes in MGI are associated with specific genotypes (combinations
+		of allelic mutations on specific genetic backgrounds).</p>
+
+		<p>Phenotypes are described in MGI using the <a href="<!--#include file='include/wi_url.html'-->searches/MP_form.shtml">Mammalian Phenotype
+		Ontology</a>, a structured vocabulary that allows consistent annotation of
+		mouse genotypes with standard phenotype terminology and associates
+		each piece of phenotypic data with its source (e.g., published
+		literature, large-scale mutagenesis centers, individual research
+		laboratories).</p>
+
+		<p>The <a href="<!--#include file='include/wi_url.html'-->searches/allele_form.shtml">Phenotypes, Alleles &amp; Disease Models Query Form</a> allows
+		users to ask broad or specific questions about phenotypes of specific
+		mutations or search genome-wide for all genotypes what produce one or
+		a combination of phenotypes.</p>
+
+
+		<h3>QTL</h3>
+
+		<p>QTL are quantitative trait loci, defined by the association of
+		phenotypic characteristics with chromosomal regions. Generally many
+		such loci contribute to quantitative characters, such as body metrics
+		(e.g., length, adiposity), substance preference/aversion (e.g., to
+		alcohol, cocaine), autoimmunity and susceptibility to infection, etc.
+		Recently some QTL have been identified with their underlying genes.
+		MGI captures information on strain-specific QTL variants, including
+		genome location, descriptions of mapping analysis and significance
+		scores, and descriptions of phenotypes using Mammalian Phenotype
+		Ontology terms. QTL can be searched in the same way as other
+		phenotypic alleles.</p>
+
+		<h3>Models of Human Disease</h3>
+
+		<p>The primary goal of MGI is to facilitate the use of mouse as a
+		model for human biology and disease. Mouse genotypes that have been
+		used to study specific human diseases are curated in MGI using disease
+		terms found in the Online Mendelian Inheritance in Man (<a href='http://www.ncbi.nlm.nih.gov/sites/entrez?db=omim'>OMIM</a>). Within
+		MGI, users can search for a specific human disease term using the
+		<a href="<!--#include file='include/java_url.html'-->WIFetch?page=omimVocab&subset=A">Human Disease Vocabulary Browser</a> and follow links to either the OMIM
+		human disease record, or to the MGI page providing human disease and
+		mouse model details.</p>
+
+		<p>In addition, one can use the <a href="<!--#include file='include/wi_url.html'-->searches/allele_form.shtml">Phenotypes, Alleles &amp; Disease
+		Models Query Form</a> to search for diseases in combination with specifying
+		one or more mouse phenotype terms and/or limiting one's search to
+		specific categories of mutant alleles and/or specific genome regions.</p>
+
+		<p>All allele, phenotype, and human disease model data are fully
+		integrated with the rich genetic, genomic, and biological data in MGI.</p>
+
+		</td>
+	</tr>
 </table>
 
 </body>

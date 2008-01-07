@@ -35,11 +35,7 @@
 		</td>
 		<td align="center">
 			<div class="sideMargin marginBottom blueBorder pad5 small">
-				<a href='javascript:openFaqWindow("")'>
-					<img class="outlineImg" src="images/OrtholCartoonSmallerDNA.png" alt="Orthology" name="Orthology">
-				</a>
-				<br />
-				<em>Caption text?</em>
+                <img class="outlineImg" src="images/OrtholCartoonSmallerDNA100.gif" alt="Orthology" name="Orthology">
 			</div>
 		</td>
 	</tr>
@@ -121,21 +117,31 @@
 	<div class="boxTitle">
 
 		<!-- Box-title goes here -->
-		<div class="left">Orthology news</div>
-		<div class="right small">09 Aug 2007</div>
+		<div class="left">Mammalian Orthology news</div>
+		<div class="right small">02 Jan 2008</div>
 
 	</div>
 	<!-- News content -->
 	<div class="boxBG pad5 small">
 		<ul>
-			<li>Links to TreeFam are now available from Orthology pages</li>
+			<li>MGI comparative annotation is collaborating with the GO Consortium 
+			to develop a community ortholog set that will be used by the GO 
+			Reference Genome Project to guide community annotation projects for 
+			related genes. Each of 12 model organism informatics groups are 
+			contributed a FASTA file of reference protein sequences for comparative 
+			set analysis and clustering.</li>
 		</ul>
 	</div>
 </div>
 
 <!-- Tabs box -->
+<!-- Note: This section uses a white gif to set the width and avoid
+    the a crash in IE6, and display problems in IE 6 & 7.  I also 
+    needed to put this div in a table to get the fix to work.  The
+    order otf the table and div tags is very specific to avoid some 
+    flickering in IE.                                            -->
+<table width="100%" cellpadding="0" cellspacing="0" border="0"><tr><td>
 <div class="boxWide marginBottom">
-
 	<!-- This is where the tabbed section is defined. -->
 	<ul id="maintab" class="shadetabs">
 		<!-- This is where the tabbed section is defined. -->
@@ -159,7 +165,10 @@
 		tab_box.setselectedClassTarget("linkparent") //"link" or "linkparent"
 		tab_box.init()
 	</script>
-</div>
+<img src="images/white_dot.gif" width="550px" height="1px">
+</td></tr>
+</div>  
+</table>
 
 <!--#include file='include/templateBodyStop.html'-->
 

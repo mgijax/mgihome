@@ -36,11 +36,10 @@
 		</td>
 		<td>
 			<div class="sideMargin marginBottom blueBorder pad5 small">
-				<center><a href='javascript:openFaqWindow("")'>
-					<img src="images/Pheno.jpg" alt="mouse" height="125" border="0">
-				</a>
+				<center><a href='javascript:openFaqWindow("PAD_imgpop.shtml")'>
+					<img src="images/Pheno.jpg" alt="mouse" height="125" border="0"></a>
 				<br />
-				<em><a class="small homeLink" href='javascript:openFaqWindow("")'>Homozygote for the Ednrb<sup>s</sup> mutation, originally <br>known as piebald spotting.</a></em></center>
+				<em><a class="small homeLink" href='javascript:openFaqWindow("PAD_imgpop.shtml")'>Homozygote for the Ednrb<sup>s</sup> mutation, originally <br>known as piebald spotting.</a></em></center>
 			</div>
 		</td>
 	</tr>
@@ -138,6 +137,12 @@
 </div>
 
 <!-- Tabs box -->
+<!-- Note: This section uses a white gif to set the width and avoid
+    the a crash in IE6, and display problems in IE 6 & 7.  I also 
+    needed to put this div in a table to get the fix to work.  The
+    order otf the table and div tags is very specific to avoid some 
+    flickering in IE.                                            -->
+<table width="100%" cellpadding="0" cellspacing="0" border="0"><tr><td>
 <div class="boxWide marginBottom">
 	<ul id="maintab" class="shadetabs">
 		<li><a hidefocus="true" href="tabContents/PAD_About.shtml" rel="ajaxcontentarea">About Phenotypes</a></li>
@@ -156,7 +161,10 @@
 		tab_box.setselectedClassTarget("linkparent") //"link" or "linkparent"
 		tab_box.init()
 	</script>
-</div>
+<img src="images/white_dot.gif" width="500px" height="1px">
+</td></tr>
+</div>  
+</table>
 
 <!--#include file='include/templateBodyStop.html'-->
 

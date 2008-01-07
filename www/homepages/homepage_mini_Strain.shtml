@@ -109,10 +109,10 @@
 				<div class="boxBG pad5">
 					<dl class="boxList">
 						<dt>How do I...</dt>
-						<dd class="faqList">.. find all known coding SNPs in a genomic region for one or more strains? <a class="small homeLink" href='javascript:openFaqWindow("STRN_SNP.shtml")'>FAQ</a></dd>
+						<dd class="faqList">.. find all known coding SNPs in a genomic location for one or more strains? <a class="small homeLink" href='javascript:openFaqWindow("STRN_SNP.shtml")'>FAQ</a></dd>
 						<dd class="faqList">.. find strains with RFLP/PCR polymorphisms in a particular gene? <a class="small homeLink" href='javascript:openFaqWindow("STRN_poly.shtml")'>FAQ</a></dd>
 						<dd class="faqList">.. find characteristics of a specific strain in M. Festing's <em>Inbred Strain Characteristics</em>? <a class="small homeLink" href='javascript:openFaqWindow("STRN_Fest.shtml")'>FAQ</a></dd>
-						<dd class="faqList">.. find a genomic sequence for a specific mouse strain? <a class="small homeLink" href='javascript:openFaqWindow("STRN_genom.shtml")'>FAQ</a></dd>
+						<dd class="faqList">.. find genomic sequence for a specific mouse strain? <a class="small homeLink" href='javascript:openFaqWindow("STRN_genom.shtml")'>FAQ</a></dd>
 					</dl>
 					<!-- link to all FAQs page -->
 					<a class="small homeLink" href="<!--#include file='include/faq_url.html'-->FAQ.shtml#strain">More FAQs</a>
@@ -138,8 +138,13 @@
 
 
 <!-- Tabs box -->
+<!-- Note: This section uses a white gif to set the width and avoid
+    the a crash in IE6, and display problems in IE 6 & 7.  I also 
+    needed to put this div in a table to get the fix to work.  The
+    order otf the table and div tags is very specific to avoid some 
+    flickering in IE.                                            -->
+<table width="100%" cellpadding="0" cellspacing="0" border="0"><tr><td>
 <div class="boxWide marginBottom">
-
 	<!-- This is where the tabbed section is defined. -->
 	<ul id="maintab" class="shadetabs">
 		<!-- This is where the tabbed section is defined. -->
@@ -150,10 +155,8 @@
 	</ul>
 	<!-- this is where the tab text gets inserted by javascript -->
 	<div id="ajaxcontentarea" class="contentstyle">
-
 		<!-- text for default selected tab inserted here as an include -->
 		<!--#include file='tabContents/Strain_About.shtml'-->
-
 	</div>
 	<script type="text/javascript">
 		var tab_box=new ddajaxtabs("maintab", "ajaxcontentarea")
@@ -161,7 +164,10 @@
 		tab_box.setselectedClassTarget("linkparent") //"link" or "linkparent"
 		tab_box.init()
 	</script>
-</div>
+<img src="images/white_dot.gif" width="420px" height="1px">
+</td></tr>
+</div>  
+</table>
 
 <!--#include file='include/templateBodyStop.html'-->
 

@@ -125,6 +125,13 @@
 	</div>
 </div>
 
+<!-- Tabs box -->
+<!-- Note: This section uses a white gif to set the width and avoid
+    the a crash in IE6, and display problems in IE 6 & 7.  I also 
+    needed to put this div in a table to get the fix to work.  The
+    order otf the table and div tags is very specific to avoid some 
+    flickering in IE.                                            -->
+<table width="100%" cellpadding="0" cellspacing="0" border="0"><tr><td>
 <div class="boxWide marginBottom">
 	<ul id="maintab" class="shadetabs">
 		<li><a hidefocus="true" href="tabContents/GXD_About.shtml" rel="ajaxcontentarea">About GXD</a></li>
@@ -143,7 +150,10 @@
 		tab_box.setselectedClassTarget("linkparent") //"link" or "linkparent"
 		tab_box.init()
 	</script>
-</div>
+<img src="images/white_dot.gif" width="720px" height="1px">
+</td></tr>
+</div>  
+</table>
 
 <!--#include file='include/templateBodyStop.html'-->
 

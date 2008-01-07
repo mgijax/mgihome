@@ -36,12 +36,13 @@
 		</td>
 		<td>
 			<div class="sideMargin marginBottom blueBorder pad5 small">
-				<center><a href='javascript:openFaqWindow("")'>
-					<img class="outlineImg" src="images/Gene.gif" height="150">
-				</a>
-				<br />
-				<em>Gene models from MGI, NCBI,
-				Ensembl and VEGA, and RefSeqs for the gene Fgfr3</em></center>
+				<center>
+				    <a href='javascript:openFaqWindow("GM_genmap.shtml")'>
+				        <img class="outlineImg" src="images/Gene.gif" height="150"></a>
+				    <br />
+					<em>Gene models from MGI, NCBI,
+					Ensembl and VEGA, and RefSeqs for the gene Fgfr3</em>
+                </center>
 			</div>
 		</td>
 	</tr>
@@ -65,14 +66,14 @@
 						<dt class="whatList"><a class="homeLink" href="<!--#include file='include/wi_url.html'-->searches/sequence_form.shtml">Search for sequences</a>
 							by mouse strain or biological attribute.</dt>
 						<dt class="whatList"><a class="homeLink" href="<!--#include file='include/mouseblast_url.html'-->">Use BLAST</a> to search for mouse genes and genome features using nucleotide or protein sequences.</dt>
-						<dt class="whatList">View <a class="homeLink" href="<!--#include file='include/wi_url.html'-->searches/crossdata_form.shtml">genetic and physical mapping data</a></dt>
-						<dt class="whatList">Create a <a class="homeLink" href="<!--#include file='include/wi_url.html'-->menus/allsearch_menu.shtml#genes">genetic map</a> or
+						<dt class="whatList">Search <a class="homeLink" href="<!--#include file='include/wi_url.html'-->menus/allsearch_menu.shtml#mapdata">genetic mapping data</a>.</dt>
+						<dt class="whatList">Create a <a class="homeLink" href="<!--#include file='include/wi_url.html'-->menus/allsearch_menu.shtml#maptools">genetic map</a> or
 							<a class="homeLink" href="<!--#include file='include/gbrowse_url.html'-->">genomic map</a>
 							display of regions of the mouse genome.</dt>
 						<dt class="whatList"><a class="homeLink" href="<!--#include file='include/java_url.html'-->WIFetch?page=batchQF">Input a list of gene IDs or symbols</a>
 							and retrieve other database IDs and gene attributes (e.g. phenotypes, GO).</dt>
 						<dt class="whatList"><a class="homeLink" href="<!--#include file='include/ftp_url2.html'-->pub/reports/index.html#marker">Download plain text files</a> of all genes and markers in MGI.</dt>
-						<dt class="whatList"><a class="homeLink" href="<!--#include file='include/mgihome_url.html'-->nomen/short_gene.shtml">Read the guidelines</a>
+						<dt class="whatList"><a class="homeLink" href="<!--#include file='include/mgihome_url.html'-->nomen/gene.shtml">Read the guidelines</a>
 							for mouse gene nomenclature.</dt>
 						<dt class="whatList"><a class="homeLink" href="<!--#include file='include/mgihome_url.html'-->nomen/nomen_submit_form.shtml">Submit a new gene or genome feature</a>
 							and receive official nomenclature and an MGI accession identifier.</dt>
@@ -143,8 +144,13 @@
 </div>
 
 <!-- Tabs box -->
+<!-- Note: This section uses a white gif to set the width and avoid
+    the a crash in IE6, and display problems in IE 6 & 7.  I also 
+    needed to put this div in a table to get the fix to work.  The
+    order otf the table and div tags is very specific to avoid some 
+    flickering in IE.                                            -->
+<table width="100%" cellpadding="0" cellspacing="0" border="0"><tr><td>
 <div class="boxWide marginBottom">
-
 	<!-- This is where the tabbed section is defined. -->
 	<ul id="maintab" class="shadetabs">
 		<li class="selected"><a href="tabContents/Gene_About.shtml" rel="ajaxcontentarea">About Genes, Genome Features & Maps</a></li>
@@ -165,7 +171,11 @@
 		tab_box.setselectedClassTarget("linkparent") //"link" or "linkparent"
 		tab_box.init()
 	</script>
-</div>
+<img src="images/white_dot.gif" width="630px" height="1px">
+</td></tr>
+</div>  
+</table>
+
 
 <!--#include file='include/templateBodyStop.html'-->
 
