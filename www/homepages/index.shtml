@@ -8,6 +8,7 @@
 
 <!--#include file='include/templateHomePageBodyStart.html'-->
 
+<div id="homePageBodyWrapper" style="text-align: center;">
 <div id="homePageBodyInsert">
 
   <!--spacer-->
@@ -171,9 +172,6 @@
   <li style="margin-bottom:6px;">
     <a href="http://ella.jax.org:8000/" class="homeLink">MouseCyc</a>, a new database of curated biochemical pathways for the laboratory mouse, is now available from the MGI website.
   </li>
-  <li style="margin-bottom:6px;">
-    Named <a href="<!--#include file='include/imsr_home_url.html'-->" class="homeLink">mouse strains</a> with their MGI accession IDs and official nomenclature can now be searched and downloaded.
-  </li>
   </ul>
   <a class="small homeLink" href="<!--#include file='include/mgihome_url.html'-->news/whatsnew.shtml">More MGI news</a>
   </div>
@@ -198,7 +196,8 @@
 
 <!--#include file='include/templateHomePageBodyStop.html'-->
 
-</div>
+</div> <!--id="homePageBodyInsert"-->
+</div> <!--id="homePageBodyWrapper"-->
 </body>
 </html>
 
