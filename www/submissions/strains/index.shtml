@@ -22,14 +22,14 @@
 <hr>
 
 <form METHOD="POST" ACTION="strain_submit.cgi">
-<h4>Strain Name</h3>
+<h4>Strain Name</h4>
 <blockquote>
 
 <input  TYPE="radio"  NAME="method"  VALUE="NEW">New<br>
 <input TYPE="radio" NAME="method" VALUE="REVISED">Revised<br>
 </blockquote>
 
-<h4>Strain Accession ID</h3>
+<h4>Strain Accession ID</h4>
 <p>If you are revising information about a registered strain, you must include its MGI_ID or repository_ID. If this is a new strain submission and the strain is from a repository, please enter its repository accession_ID information.
 
 <p>
