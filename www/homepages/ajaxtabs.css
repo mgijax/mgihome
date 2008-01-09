@@ -16,7 +16,6 @@ margin: 0;
 
 .shadetabs li a{
 text-decoration: none;
-position: relative;
 padding: 3px 7px;
 margin-right: 3px;
 border-top: 1px solid #759BC1;
@@ -33,11 +32,6 @@ color: #660099;
 .shadetabs li a:hover{
 text-decoration: none;
 color: #CC0000;
-}
-
-.shadetabs li.selected{
-position: relative;
-top: 1px;
 }
 
 .shadetabs li.selected a{ /*selected main tab style */
