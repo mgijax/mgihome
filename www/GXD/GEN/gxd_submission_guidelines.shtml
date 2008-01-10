@@ -30,7 +30,7 @@
 
 <H3><A NAME="why"></A>Why should I submit data?</H3>
 <P>Electronic submission both increases the exposure of your work and the amount of data available to the scientific community.  Your data will be integrated with many other data and made widely available for basic and complex database searches, adding to its value and increasing its exposure.  Electronic submission also allows you to share with the scientific community unpublished data, such as data that you were unable to include in a journal article due to space limitations.  GXD is designed to be a resource for the scientific community.  Its value is directly proportional to the amount of data it contains.  By increasing the amount of data in GXD, you can help increase its utility for yourself and others. (More information about GXD and its functionality can be found
-<a href="<!--#include file='include/mgihome_url.html'-->GXD/aboutGXD.shtml">here</a>).</P>
+<a href="../aboutGXD.shtml">here</a>).</P>
 
 
 <H3><A NAME="what_type"></A>What types of data can I submit? </H3>
@@ -52,62 +52,61 @@
 
 <P>If you use other methods of electronic submission, you can send the data in a format convenient to you as long as the following basic requirements are met:
 </P><UL>
-  <LI>Submitted data should include enough information about experimental methods to clearly define the experiments performed and adequate detail about the results to allow proper interpretation by database users.</LI><br>
+  <LI>Submitted data should include enough information about experimental methods to clearly define the experiments performed and adequate detail about the results to allow proper interpretation by database users.</LI>
   <LI>There should be a clear correspondence between stated results, probes and specimens used, and images provided.</LI>
 </UL>
 <P>Detailed below is a checklist of information that should be included in a complete data submission.  Additional information can be included at the author's discretion.</p>
 
 
 <H3><A NAME="gene_name"></A>Gene Name/Symbol</h3>
-<P>Name or Symbol of the gene whose expression was analyzed.
-</P>
+<P>Name or Symbol of the gene whose expression was analyzed.</P>
 
 <H3><A NAME="probe"></A>Probe Information</H3>
 
 <H4><I>a.  Nucleotide probes</I></H4>
 <TABLE BORDER="0" CELLSPACING="4" CELLPADDING="4" >
-<TR><th align=left valign=top width="20%">Probe:</Th><TD valign=top>Please provide the sequence of the probe, either directly or indirectly by citing the corresponding GenBank/EMBL/DDBJ accession number and, if applicable, the start and end nucleotide positions of the probe within that sequence.  If the probe sequence is not known, please provide information to characterize the probe, such as gene, species of origin, sequence type (genomic or cDNA) and region covered (e.g. coding region, 3'UTR).</TD></TR>
-<TR><th align=left valign=top>Type of probe:</th><TD valign=top>(e.g. RNA, DNA)</TD></TR>
-<TR><th align=left valign=top>Label:</th><TD valign=top>Material used to label the probe (e.g. digoxigenin, P<sup>32</sup>, etc.).</TD></TR>
-<TR><th align=left valign=top><nobr>Visualization method:</th><TD valign=top>How the results are visualized (e.g. autoradiography, phosphorimaging).</TD> </TR>
+<TR><th align="left" valign="top" width="20%">Probe:</Th><TD valign="top">Please provide the sequence of the probe, either directly or indirectly by citing the corresponding GenBank/EMBL/DDBJ accession number and, if applicable, the start and end nucleotide positions of the probe within that sequence.  If the probe sequence is not known, please provide information to characterize the probe, such as gene, species of origin, sequence type (genomic or cDNA) and region covered (e.g. coding region, 3'UTR).</TD></TR>
+<TR><th align="left" valign="top">Type of probe:</th><TD valign="top">(e.g. RNA, DNA)</TD></TR>
+<TR><th align="left" valign="top">Label:</th><TD valign="top">Material used to label the probe (e.g. digoxigenin, P<sup>32</sup>, etc.).</TD></TR>
+<TR><th align="left" valign="top">Visualization method:</th><TD valign="top">How the results are visualized (e.g. autoradiography, phosphorimaging).</TD> </TR>
 </TABLE>
 
 
 <h4><I>b.  PCR primers</I></h4>
-<TABLE ALIGN="left" BORDER="0" CELLSPACING="4" CELLPADDING="4">
-<TR><TH VALIGN="top" align=left width="20%">Primer pairs:</TH><TD VALIGN="top">Please provide the sequence of 5' and 3' primers, either directly or indirectly by citing the corresponding GenBank/EMBL/DDBJ accession number and the start and end nucleotide positions of the primers within that sequence.</TD></TR>
+<TABLE BORDER="0" CELLSPACING="4" CELLPADDING="4">
+<TR><TH VALIGN="top" align="left" width="20%">Primer pairs:</TH><TD VALIGN="top">Please provide the sequence of 5' and 3' primers, either directly or indirectly by citing the corresponding GenBank/EMBL/DDBJ accession number and the start and end nucleotide positions of the primers within that sequence.</TD></TR>
 </table>
 
 
 <H4><I>c.  Antibody probes</I></H4>
 <TABLE BORDER="0" CELLSPACING="4" CELLPADDING="4">
-<TR><TH ALIGN="Left" VALIGN="Top" width="20%">Antibody type</TH><TD valign=top> (e.g. monoclonal or polyclonal)</TD></TR>
-<TR><th align=left valign=top>Antibody class:</th><TD valign=top> If known (e.g. IgA, IgG<sub>1</sub>).</TD></TR>
-<TR><th align=left valign=top>Antigen:</th> <TD valign=top> Details about the antigen used to generate the antibody, such as sequence and source (e.g. species, cell line), are helpful in determining the specificity of the antibody.</TD></TR>
-<TR><th align=left valign=top>Supplier and catalogue number:</th><td valign="top">If purchased.</Td></TR>
-<TR><TH align=left VALIGN="top">Primary antibody detection method:</TH><TD VALIGN="top">Information on how the primary antibody was detected, such as type of secondary antibody used, staining/labeling of primary or secondary antibody, etc.</TD></TR>
+<TR><TH ALIGN="Left" VALIGN="Top" width="20%">Antibody type</TH><TD valign="top">(e.g. monoclonal or polyclonal)</TD></TR>
+<TR><th align="left" valign="top">Antibody class:</th><TD valign="top"> If known (e.g. IgA, IgG<sub>1</sub>).</TD></TR>
+<TR><th align="left" valign="top">Antigen:</th> <TD valign="top"> Details about the antigen used to generate the antibody, such as sequence and source (e.g. species, cell line), are helpful in determining the specificity of the antibody.</TD></TR>
+<TR><th align="left" valign="top">Supplier and catalogue number:</th><td valign="top">If purchased.</Td></TR>
+<TR><TH align="left" VALIGN="top">Primary antibody detection method:</TH><TD VALIGN="top">Information on how the primary antibody was detected, such as type of secondary antibody used, staining/labeling of primary or secondary antibody, etc.</TD></TR>
 </table>
 
 <h3><A NAME="assay"></A>Assay Conditions</h3>
 <P>Please supply your assay conditions in sufficient detail to allow others to interpret and replicate your experiments. If you do not provide such information in an accompanying publication, please include it here.</P>
 
 
-<h3><A NAME="specimen"></A>Specimen Information</h3>
+<h4><A NAME="specimen"></A>Specimen Information</h4>
 <TABLE BORDER="0" CELLSPACING="4" CELLPADDING="4">
 
-<TR><TH align="left" valign="top">Strain:</TH><TD VALIGN="top">Background strain of the specimens used.  See <A HREF="<!--#include file="include/wi_url.html"-->external/festing/search_form.cgi">Inbred Strains of Mice and Rats</A> for a listing of approved strain names.  If your mice are a mixture, please list the strains that contributed to their makeup.</TD></TR>
+<TR><TH ALIGN="Left" VALIGN="Top" width="20%">Strain:</TH><TD VALIGN="top">Background strain of the specimens used.  See <A HREF="<!--#include file="include/wi_url.html"-->external/festing/search_form.cgi">Inbred Strains of Mice and Rats</A> for a listing of approved strain names.  If your mice are a mixture, please list the strains that contributed to their makeup.</TD></TR>
 <TR><TH align="left" valign="top">Mutations: </TH><TD VALIGN="top"> If you use mutant mice, please specify the mutant alleles.  For tips on determining the official allele symbol see <A HREF="gen.shtml#prepare_for_submission">Determining standard nomenclature for mouse genes and alleles.</A> Alternatively, you can list the reference that describes the creation of the mutant.</TD></TR>
 
-<TR><TH align="left" valign="top"><nobr>Embryonic age/Theiler stage: </TH><TD VALIGN="top">The embryonic age of the specimen, either in embryonic days or Theiler stage.</TD></TR>
+<TR><TH align="left" valign="top">Embryonic age/Theiler stage:</TH><TD VALIGN="top">The embryonic age of the specimen, either in embryonic days or Theiler stage.</TD></TR>
 
-<TR><TH align="left" valign="top"><noBR>Time of copulation plug:</TH><TD VALIGN="top"> If embryonic age is given, specify whether morning of plug detection is defined in your laboratory as embryonic day 0, 0.5, or 1.</TD></TR>
-<TR><TH align=left VALIGN="top">Sex:</th><TD VALIGN="top">If known.</TD></tr>
+<TR><TH align="left" valign="top">Time of copulation plug:</TH><TD VALIGN="top"> If embryonic age is given, specify whether morning of plug detection is defined in your laboratory as embryonic day 0, 0.5, or 1.</TD></TR>
+<TR><TH align="left" VALIGN="top">Sex:</th><TD VALIGN="top">If known.</TD></tr>
 
 <TR><TH align="left" valign="top">Type of sample: </TH><TD VALIGN="top">If the assay is a Northern blot, specify the amount and type of RNA (polyA+, total) used.</TD></TR>
 
 <TR><TH align="left" valign="top">In Situ specimen type: </TH><TD VALIGN="top"> whole-mount or section</TD></TR>
-<TR><TH align="left" valign="top">Fixation method:</TH><TD VALIGN="top"> (e.g. 4% paraformaldehyde) </TD></TR>
-<TR><TH align="left" valign="top">Embedding method:</TH><TD VALIGN="top">  (e.g. cryosection, paraffin)</TD></TR>
+<TR><TH align="left" valign="top">Fixation method:</TH><TD VALIGN="top">(e.g. 4% paraformaldehyde) </TD></TR>
+<TR><TH align="left" valign="top">Embedding method:</TH><TD VALIGN="top">(e.g. cryosection, paraffin)</TD></TR>
 </table>
 
 
@@ -116,11 +115,11 @@
 <h4>Images</h4>
 <P>The preferred format is JPEG. Most other formats, such as TIFF, GIF, and PIC, can be used as well. </P>
 
+<b>Description of Expression Results</b><br>
+<p>When coding your expression data, we will rely on your descriptions of the assay results.  We will not interpret your staining patterns, bands, etc.  Therefore, please describe the expression results obtained in each image. This can be done in the form of a conventional figure legend. Or you can provide the information in tabular form by specifying the anatomical structures examined, the level of expression seen in those structures (e.g. present, absent, weak, strong), and additional descriptions of the staining that you consider to be valuable (for example, staining was seen in the most anterior portion of the structure). If your description refers to several images, you must clearly indicate which expression results are shown in which images.</p>
 
-<H4>Description of Expression Results:</H4>
-<P>When coding your expression data, we will rely on your descriptions of the assay results.  We will not interpret your staining patterns, bands, etc.  Therefore, please describe the expression results obtained in each image. This can be done in the form of a conventional figure legend. Or you can provide the information in tabular form by specifying the anatomical structures examined, the level of expression seen in those structures (e.g. present, absent, weak, strong), and additional descriptions of the staining that you consider to be valuable (for example, staining was seen in the most anterior portion of the structure). If your description refers to several images, you must clearly indicate which expression results are shown in which images.</P>
+<p>Please note that as part of the entry process, we will map your expression results to structures from the Anatomical Dictionary. Of course, you are welcome to use terms from the <a href="<!--#include file="include/wi_url.html"-->searches/anatdict_form.shtml">Anatomical Dictionary</a> for your descriptions.
 
-<P>Please note that as part of the entry process, we will map your expression results to structures from the Anatomical Dictionary. Of course, you are welcome to use terms from the <A HREF="<!--#include file="include/wi_url.html"-->searches/anatdict_form.shtml">Anatomical Dictionary</A> for your descriptions.
 
 </P>
 <H3><A NAME="if_your"></A>If your submission is not accompanied by a publication:</H3>
