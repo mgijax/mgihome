@@ -42,13 +42,13 @@ The goal of the <a href="http://tumor.informatics.jax.org/mtbwi/index.do">Mouse 
 </font>-->
 <h3><a name="aboutMGD"></a>About MGD</h3>
 
-<p>MGD includes information on mouse genetic markers, molecular clones (probes, primers and
-YACs), phenotypes, sequences, comparative mapping data, graphical displays of linkage,
-cytogenetic and physical maps, experimental mapping data, as well as
- strain distribution patterns for recombinant inbred strains (RIs) and cross haplotypes.
-Sources for information in the database include the scientific  literature,  DNA  mapping  panel data produced by various researchers, the MIT Whitehead Institute (MIT genetic  and physical mapping data), WashU, and the  IMAGE  consortium. Since it first became available on the web, MGD has continued to  evolve, expanding its data coverage, improving data handling, and providing new data manipulation and display tools.</p>
-
-<P>MGD is closely linked with GXD's Gene Expression Literature index. It is a searchable index of  references to the  scientific literature reporting data on endogenous gene expression during mouse embryonic development. MGD provides links to Gene Expression Literature content records through genetic marker detail records, and in turn, the content records provide inks to MGD references and genetic marker records.</p>
+<ul>
+  <li>MGD includes information on mouse genetic markers, molecular clones (probes, primers and YACs), phenotypes, sequences, comparative mapping data, graphical displays of linkage, cytogenetic and physical maps, experimental mapping data, as well as
+ strain distribution patterns for recombinant inbred strains (RIs) and cross haplotypes.</li>
+  <li>Sources for information in the database include the scientific  literature,  DNA  mapping  panel data produced by various researchers, the MIT Whitehead Institute (MIT genetic  and physical mapping data), WashU, and the  IMAGE  consortium.</li>
+<li>MGD is closely linked with GXD's Gene Expression Literature index. This is a searchable index of  references to the  scientific literature reporting data on endogenous gene expression during mouse embryonic development. MGD provides links to Gene Expression Literature content records through genetic marker detail records, and in turn, the content records provide inks to MGD references and genetic marker records.</li>
+ <li>Since it first became available on the web, MGD has continued to  evolve, expanding its data coverage, improving data handling, and providing new data manipulation and display tools.</li>
+</ul> 
 
 
 <H3><a name="data"></a>MGD Data</H3>
@@ -119,7 +119,7 @@ vector type, hybridizing loci, RFLPs, and references. See the <A HREF="<!--#incl
 <font size="-2"><a href="#top">Back to Top</a>
 </font>
 <h3><A NAME="orthology"></A>Mammalian Orthology</h3>
-<p>MGD contains orthology information for mouse, human and other mammalian organisms. 
+<p>MGD contains orthology information for mouse, human, and other mammalian organisms. 
 </p>
 <p>Most of the information for orthologies is extracted from the published scientific literature. In general, these papers explicitly report orthology relationships and MGD reflects that published information. See the <i>Evidence</i> section under 
 <A HREF="<!--#include file='include/userdocs_url.html'-->homology_summary.shtml#fields">How do I interpret the results of my query?</a> in <i>Interpreting Mammalian Orthology Query Results</i> for the criteria used to establish orthology.
@@ -141,19 +141,23 @@ from the <a href="<!--#include file='include/wi_url.html'-->menus/homology_menu.
 </font>
 <h3><A NAME="sequence"></a>Sequence Data</h3>
 
-<P>Vast amounts of sequence data are integrated with the biological information in MGD. Mouse sequences from GenBank, RefSeq, <NOBR>Swiss-Prot</NOBR>, DoTS, and the DFCI and NIA mouse gene indices enable powerful queries from the
-<a href="<!--#include file='include/wi_url.html'-->searches/sequence_form.shtml">Mouse Sequence Query Form</a>. MGD contains sequence attributes, such as length and provider; data about the clones the sequences were derived from; and the genes the sequences have been associated to. Because of our curated associations between mouse markers and sequences, users can search using information such as nomenclature, map position, function (GO annotation, InterPro domain), expression (tissue and developmental stage), and phenotypes of mutant alleles. Source information about the clones that the sequences are derived from, such as strain, tissue, or library, is carefully translated into controlled vocabularies (see <a href="#vocabularies">Vocabulary Browsers</a>).  This adds enormous power to sequence queries, since authors often use multiple terms to specify a strain or tissue.  </P>
+<ul><li>Vast amounts of sequence data are integrated with the biological information in MGD. Mouse sequences from GenBank, RefSeq, <NOBR>Swiss-Prot</NOBR>, DoTS, and the DFCI and NIA mouse gene indices enable powerful queries from the
+<a href="<!--#include file='include/wi_url.html'-->searches/sequence_form.shtml">Mouse Sequence Query Form</a>. </p>
+
+<li>MGD contains sequence attributes such as length and provider; data about the clones the sequences were derived from; and the genes the sequences have been associated to. Because of our curated associations between mouse markers and sequences, you can search using  nomenclature, map position, function (GO annotation, InterPro domain), expression (tissue and developmental stage), and phenotypes of mutant alleles.
+</p>
+ <li>Source information about the clones that the sequences are derived from, such as strain, tissue, or library, is carefully translated into controlled vocabularies (see <a href="#vocabularies">Vocabulary Browsers</a>).  This adds enormous power to sequence queries, since authors often use multiple terms to specify a strain or tissue.  </p>
 
 <h3><a name="snp"></a>SNP Data</h3>
-<p>MGD provides comprehensive information about reference SNPs including the reference flanking sequence, assays that comprise the SNP, gene/marker associations with their corresponding function class annotations, and links to popular gene browsers including MGD Mouse GBrowse and its transcript, gene model, and MGD-curated phenotype and allele tracks.  
-<p>The 
+<ul><li>MGD provides comprehensive information about reference SNPs including the reference flanking sequence, assays that comprise the SNP, gene/marker associations with their corresponding function class annotations, and links to popular gene browsers including MGD Mouse GBrowse and its transcript, gene model, and MGD-curated phenotype and allele tracks.  
+<li>The 
 <a href="<!--#include file='include/java_url.html'-->WIFetch?page=snpQF">Mouse SNP Query Form</a> lets you search for RefSNPs by strains, strain comparisons, RefSNP attributes, map position, marker range, or associated genes.</p>
 </p>
 <h3><A NAME="vocabularies"></a>Vocabulary Browsers</h3>
 <ul><li>The MGD Vocabulary Browsers provide access to restricted sets of defined terms representing complex information.</li> <li>Some controlled vocabularies (such as the Human Disease Vocabulary Browser), have a flat structure:  terms are organized alphanumerically. </li><li>Other vocabularies (known as <i>DAGs</i> or <i>directed acyclic graphs</i>), such as the GO Browser, have a tree (or hierarchical) structure: terms are organized primarily by their relationship to other terms.</li></ul>
 
 <blockquote>
-<p>The MGD Vocabulary Browsers currently available are: 
+<li>The MGD Vocabulary Browsers currently available are: 
 <table border="1" cellspacing="1" cellpadding="4" width="100%">
   <tr><th align="center" valign="top">Browser Name</th><th align="center" 
 valign="top">Use this browser to search for ...</th></tr>
