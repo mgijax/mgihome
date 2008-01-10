@@ -2,6 +2,8 @@
 
 <title><!--#include file="include/mgiversion.html"--> - Mouse Genome Informatics Homepage</title>
 
+<meta name="keywords" content="Mouse Genome Database, Gene Expression Database, Mouse Tumor Biology, Gene Ontology, Mouse Genome Sequence Project">
+
 <!-- Home Page Specific Css -->
 <link rel="stylesheet" type="text/css" href="<!--#include file="include/mgihome_url"-->homepages/homepage.css"/>
 <link rel="stylesheet" type="text/css" href="minihome.css" />
@@ -9,7 +11,7 @@
 <!--#include file='include/templateHomePageBodyStart.html'-->
 
 <div id="homePageBodyWrapper" style="text-align: center;">
-<div id="homePageBodyInsert">
+<div id="homePageBodyInsert" style="text-align: left;">
 
   <!--spacer-->
   <div style="height:4px;"></div>
@@ -142,10 +144,11 @@
     </td>
     <td width="1%">&nbsp;</td>
     <td valign="top" width="50%">
+
     <div class="blueBorder leftCenterMargin statListHomePage">
       <div class="boxTitle">
         <div class="left">MGI Includes</div>
-        <div class="right small"><!--#include file='include/stats_date.shtml'--></div>
+        <div class="right small"><!--#include file='include/stats_date.shtml'--> &nbsp;</div>
       </div>
       <div class="boxBG pad5">
         <!--#include file='stats/homepage_stats.shtml'-->
@@ -162,7 +165,7 @@
   <!--MGI News -->
   <div class="boxTitle">
     <span class="left">MGI News</span>
-    <span class="right small">Release 4.0 Jan 2008</span>
+    <span class="right small">Release 4.0 Jan 2008 &nbsp;</span>
   </div>
   <div id="mgiNews" class="blueBorder grayBG">
   <ul style="line-height:1.3;">
