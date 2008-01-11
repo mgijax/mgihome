@@ -18,47 +18,6 @@ WI_URL = config['WI_URL']
 db.set_sqlLogin (config['DB_USER'], config['DB_PASSWORD'],
 	config['DB_SERVER'], config['DB_DATABASE'])
 
-FOOTER = [
-    '<TABLE BORDER=0 BGCOLOR="#FFFFFF" CELLPADDING=0 ',
-    'CELLSPACING=0 WIDTH="100%">',
-      '<TR BGCOLOR="#FFFFFF">',
-        '<TD width="50%" ALIGN=left><FONT SIZE=2>',
-          '<A HREF="%sother/citation.shtml">Citing These Resources</A>' % URL,
-          '<BR>',
-	  '<A HREF="%sother/mgi_funding.shtml">Funding Information</A>' % URL,
-	  '<BR>',
-	  '<A HREF="%sother/copyright.shtml">Warranty Disclaimer ' % URL,
-	  '&amp; Copyright Notice</A>',
-	  '<BR>',
-	  'Send questions and comments to ',
-	  '<A HREF="%ssupport/tjl_inbox.shtml">User Support</A>.' % URL,
-	  '</FONT></TD>',
-        '<TD WIDTH="1%" ALIGN=center><FONT SIZE=2>&nbsp;</FONT></TD>',
-        '<TD WIDTH="49%" ALIGN=right>',
-	'<A HREF="http://www.jax.org/" border=0>%s</A>' % webshare_lib.webshareLookup('jax_logo'),
-	'</TD></TR></TABLE>',
-]
-
-def footer ():
-	# Purpose: provide a standard footer for MGI Home-based web pages
-	# Returns: list of strings
-	# Assumes: nothing
-	# Effects: nothing
-	# Throws: None
-
-	return FOOTER
-
-def banner ():
-	# Purpose: provide a standard banner for MGI Home-based web pages
-	# Returns: list of strings
-	# Assumes: nothing
-	# Effects: nothing
-	# Throws: None
-
-	return [ '<CENTER>',
-		 webshare_lib.webshareLookup('mgi_logo_small'),
-		 '</CENTER>' ]
-
 def sql (queries, parsers = 'auto'):
 	# Purpose: wrapper over the db.sql routine
 	# Returns: list of dictionaries, or list of lists of dictionaries,
