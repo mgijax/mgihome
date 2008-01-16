@@ -157,7 +157,7 @@ def main ():
 	'../www/include/komp_home_url.html')
     stringToFile (config['KOMP_NIH'],
 	'../www/include/komp_nih_url.html')
-    stringToFile (config['IMSR_HOME'],
+    stringToFile (config['IMSRURL'],
 	'../www/include/imsr_home_url.html')
 
     # new include file for the faq's
