@@ -49,7 +49,7 @@ For designating mutants that are alleles of <B>known</B> genes, the basic guidel
 <LI> Allele designations appear as superscripted short alphanumeric strings following the gene symbol of which they are an allele and serve as an acronym for the allele name.
 <EM> Example:</EM>
 <A HREF="<!--#include file='include/wi_url.html'-->searches/allele.cgi?195">Atp7a<SUP>Mo</SUP></a>
- or <A HREF="<!--#include file='include/wi_url.html'-->searches/allele.cgi?544">Egfr<SUP>tm1Cwr</SUP></a>.<BR><BR>
+ or <A HREF="<!--#include file='include/wi_url.html'-->searches/allele.cgi?544">Egfr<SUP>tm1Mag</SUP></a>.<BR><BR>
 <LI>For allele designations for <B>spontaneous</B> and <b>induced</b> alleles of <B>known</B> genes... <BR>
 <UL><BR>
 <LI>Allele designations begin with a lower case letter if the allele is a recessive
@@ -77,9 +77,7 @@ is the allele symbol for the <I>dominant</I> mottled allele of the
 <UL><BR>
 <LI> Tg(YYY)#Zzz for <B>transgenic alleles</B>, where YYY is the inserted gene,
 # is the serial number, and Zzz the lab code for the laboratory.  <EM>Example: </EM>
-<A HREF="<!--#include file='include/wi_url.html'-->searches/allele.cgi?1905">
-Cspg2<SUP>Tg(Hoxa1)1Chm</SUP></a>, the Tg(Hoxa1)1Chm allele of
-<A HREF="<!--#include file='include/java_url.html'-->WIFetch?page=markerDetail&key=22783">Cspg2</a>.
+<A HREF="<!--#include file='include/wi_url.html'-->searches/allele.cgi?1905"> Vcan<sup>Tg(Hoxa1)1Chm</sup></a>, the Tg(Hoxa1)1Chm allele of  <A HREF="<!--#include file='include/java_url.html'-->WIFetch?page=alleleDetail&key=1905">Vcan</a>.
 A construct containing the mouse homeobox a1
 <A HREF="<!--#include file='include/java_url.html'-->WIFetch?page=markerDetail&key=9885">(Hoxa1)</a> was
 inserted by microinjection, the first reported by Corey H. Mjaatvedt (Chm).
@@ -90,10 +88,9 @@ allele of
 <LI> tm#Zzz for <B>targeted alleles</B> by homologous recombination, where tm indicates targeted mutation,
 # is the serial number, and
 Zzz the lab code for the laboratory. <EM> Example:</EM>
-<A HREF="<!--#include file='include/wi_url.html'-->searches/allele.cgi?544">Egfr<SUP>tm1Cwr</SUP></a>
+<A HREF="<!--#include file='include/wi_url.html'-->searches/allele.cgi?544">Egfr<SUP>tm1Mag</SUP></a>
  where this is the 1st targeted mutation of
- <A HREF="<!--#include file='include/java_url.html'-->WIFetch?page=markerDetail&key=8333">Egfr</a> created at
- Case Western Reserve University (Cwr).<BR><BR>
+ <A HREF="<!--#include file='include/java_url.html'-->WIFetch?page=markerDetail&key=8333">Egfr</a> created by Terry Magnuson (Mag).<BR><BR>
 </UL>
 </OL>
 <p>The Mouse Genomic Nomenclature Committee (MGNC) provides assistance in assigning nomenclature. Please contact us at <A HREF="mailto:nomen@informatics.jax.org">nomen@informatics.jax.org</a>.
