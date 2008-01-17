@@ -25,8 +25,8 @@ MARKER_TYPE = 2			# list all needed MGI Type keys here
 ASSAY_TYPE = 8
 ALLELE_TYPE = 11
 
-# Email changed (circumventing rememdy) in 3.54 - see TR8365
-RECIPIENT = 'mgi-help@informatics.jax.org' 
+# Email changed (to new system) in 4.0 - see TR 8682
+RECIPIENT = 'jaxmgi@service-now.com' 
 
 MAIL_HEADER = '''From: %s
 To: %s
