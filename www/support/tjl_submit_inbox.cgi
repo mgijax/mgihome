@@ -116,8 +116,7 @@ def main():
 			
 		reply_message.appendBody(body)
 
-		mail_header = 'Reply-to: ps@informatics.jax.org' + NL \
-			+ 'Subject: Express Mail' + NL
+		mail_header = 'Subject: Express Mail' + NL
 		fd = os.popen('%s -t %s' % (config['SENDMAIL'], \
 			RECIPIENT), 'w')
 		fd.write( mail_header + msg + NL + '.' + NL )
