@@ -41,7 +41,7 @@ REQUIRED_FIELDS = [ 'lastname',
 	'emailaddr'
 	]
 
-RECIPIENT = 'mgi-help@informatics.jax.org'
+RECIPIENT = 'jaxmgi@service-now.com'
 # developer override for mailtarget 
 if config.has_key('CGI_MAILTARGET'):
 	RECIPIENT = config['CGI_MAILTARGET']
@@ -99,52 +99,15 @@ def main():
 		attnto = form['attnto'].value
 		domain = form['domain'].value
 
-		msg = \
-			'#' + NL \
-			+ '#' + 2*SP + mgi_utils.date() + NL \
-			+ '#' + NL \
-			+ '#AR-Message-Begin' + 13*SP \
-				+ 'Do Not Delete This Line' + NL \
-			+ 'Schema: TJL-Inbox' + NL \
-			+ 'Server: arserver.jax.org' + NL \
-			+ 'Login: webmail' + NL \
-			+ 'Password: webuser1' + NL \
-			+ 'Action: Submit' + NL \
-			+ '# Values: Submit, Query' + NL \
-			+ 'Format: Short' + NL \
-			+ '# Values: Short, Full' + NL \
-			+ NL \
-			+ string.rjust( 'title', 20 ) + ' !536870924!:' \
-				+ title + NL \
-			+ string.rjust( 'F_Name', 20 ) + ' !536870913!:' \
-				+ firstname + NL \
-			+ string.rjust( 'L_Name', 20 ) + ' !536870914!:' \
-				+ lastname + NL \
-			+ string.rjust( 'em', 20 ) \
-				+ ' !536870915!:' + emailaddr + NL \
-			+ string.rjust( 'in-ph', 20 ) \
-				+ ' !536870920!:' + ph + NL \
-			+ string.rjust( 'in-fax', 20 ) \
-				+ ' !536870922!:' + fax + NL \
-			+ string.rjust( 'inst', 20 ) \
-				+ ' !536870921!:' + inst + NL \
-			+ string.rjust( 'Position', 20 ) \
-				+ ' !536870925!:' + positn + NL \
-			+ string.rjust( 'Request Summary', 20 ) \
-				+ ' !        8!:' + subject + NL \
-			+ string.rjust( 'Request Details', 20 ) \
-				+ ' !536870916!:' + message + NL \
-			+ string.rjust( 'Submitter', 21 ) \
-				+ '!        2!: webmail' + NL \
-			+ string.rjust( 'Status', 21 ) + \
-				'!        7!: New' + NL \
-			+ string.rjust( 'ATTN', 20 ) \
-				+ ' !536870923!:' + attnto + NL \
-			+ string.rjust( 'jax_domain', 20) \
-				+ ' !536870919!:' + domain + NL \
-			+ NL \
-			+ '#AR-Message-End' + 13*SP \
-				+ 'Do Not Delete This Line' + NL
+		msg = 	mgi_utils.date() + NL + NL \
+			+ 'FirstName: ' + firstname + NL \
+			+ 'LastName: ' + lastname + NL \
+			+ 'From: ' + emailaddr + NL \
+			+ 'ph: ' + ph + NL \
+			+ 'inst: ' + inst + NL + NL \
+			+ 'Request Summary: ' + subject + NL + NL \
+			+ 'Request Details: ' + message + NL + NL \
+			+ 'ATTN' + attnto + NL 
 		
 		body = """
 			<H1>Thank you.</H1>
