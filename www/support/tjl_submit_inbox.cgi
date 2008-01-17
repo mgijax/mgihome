@@ -99,7 +99,7 @@ def main():
 		attnto = form['attnto'].value
 		domain = form['domain'].value
 
-		msg = 	mgi_utils.date() + NL + NL \
+		msg = 	mgi_utils.date() + NL \
 			+ 'FirstName: ' + firstname + NL \
 			+ 'LastName: ' + lastname + NL \
 			+ 'From: ' + emailaddr + NL \
