@@ -173,31 +173,32 @@
     flickering in IE.                                            -->
 <table width="100%" cellpadding="0" cellspacing="0" border="0"><tr><td>
 <div class="boxWide marginBottom">
-	<ul id="maintab" class="shadetabs">
-		<li class="selected"><a href="tabContents/GO_About.shtml" rel="ajaxcontentarea">About GO at MGI</a></li>
-		<li><a href="tabContents/GO_Resources.shtml" rel="ajaxcontentarea">GO Resources</a></li>
+	<ul id="gotab" class="shadetabs">
+		<li><a href="tabContents/GO_About.shtml" rel="ajaxcontentarea">About GO at MGI</a></li>
+		<li class="selected"><a href="tabContents/GO_Resources.shtml" rel="ajaxcontentarea">GO Resources</a></li>
 		<li><a href="tabContents/GO_Annot.shtml" rel="ajaxcontentarea">GO Annotation Projects</a></li>
 		<li><a href="tabContents/GO_Literature.shtml" rel="ajaxcontentarea">GO Literature</a></li>
 		<li><a href="tabContents/GO_Curators.shtml" rel="ajaxcontentarea">Interpreting Annotations</a></li>
 		<li><a href="tabContents/GO_Other.shtml" rel="ajaxcontentarea">Contact Us</a></li>
 	</ul>
 	<!-- this is where the tab text gets inserted by javascript -->
-	<div id="ajaxcontentarea" class="contentstyle">
+	<div id="gocontentarea" class="contentstyle">
 		<!-- text for default selected tab inserted here as an include -->
 		<!--#include file='tabContents/GO_About.shtml'-->
 	</div>
-	<script type="text/javascript">
-		var tab_box=new ddajaxtabs("maintab", "ajaxcontentarea")
-		tab_box.setpersist(true)
-		tab_box.setselectedClassTarget("linkparent") //"link" or "linkparent"
-		tab_box.init()
-	</script>
+
 <img src="images/white_dot.gif" width="890px" height="1px">
 </td></tr>
 </div>
 </table>
 
-
+<script type="text/javascript">
+    var go_box=new ddajaxtabs("gotab", "gocontentarea")
+    go_box.setpersist(true)
+    go_box.setselectedClassTarget("linkparent") //"link" or "linkparent"
+    go_box.init()
+</script>
+    
 <!--#include file='include/templateBodyStop.html'-->
 
 </body>

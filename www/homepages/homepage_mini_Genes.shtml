@@ -138,30 +138,31 @@
 <table width="100%" cellpadding="0" cellspacing="0" border="0"><tr><td>
 <div class="boxWide marginBottom">
 	<!-- This is where the tabbed section is defined. -->
-	<ul id="maintab" class="shadetabs">
+	<ul id="genetab" class="shadetabs">
 		<li class="selected"><a href="tabContents/Gene_About.shtml" rel="ajaxcontentarea">About Genes, Genome Features & Maps</a></li>
 		<li><a href="tabContents/Gene_Help.shtml" rel="ajaxcontentarea">Help Documents</a></li>
 		<li><a href="tabContents/Gene_Collaborators.shtml" rel="ajaxcontentarea">Collaborators</a></li>
 		<li><a href="tabContents/Gene_Resources.shtml" rel="ajaxcontentarea">Other Links</a></li>
 	</ul>
 	<!-- this is where the tab text gets inserted by javascript -->
-	<div id="ajaxcontentarea" class="contentstyle">
+	<div id="genecontentarea" class="contentstyle">
 
 		<!-- text for default selected tab inserted here as an include -->
 		<!--#include file='tabContents/Gene_About.shtml'-->
 
 	</div>
-	<script type="text/javascript">
-		var tab_box=new ddajaxtabs("maintab", "ajaxcontentarea")
-		tab_box.setpersist(true)
-		tab_box.setselectedClassTarget("linkparent") //"link" or "linkparent"
-		tab_box.init()
-	</script>
+
 <img src="images/white_dot.gif" width="630px" height="1px">
 </td></tr>
 </div>  
 </table>
 
+<script type="text/javascript">
+    var gene_box=new ddajaxtabs("genetab", "genecontentarea")
+    gene_box.setpersist(true)
+    gene_box.setselectedClassTarget("linkparent") //"link" or "linkparent"
+    gene_box.init()
+</script>
 
 <!--#include file='include/templateBodyStop.html'-->
 

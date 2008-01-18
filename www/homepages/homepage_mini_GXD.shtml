@@ -133,27 +133,29 @@
     flickering in IE.                                            -->
 <table width="100%" cellpadding="0" cellspacing="0" border="0"><tr><td>
 <div class="boxWide marginBottom">
-	<ul id="maintab" class="shadetabs">
-		<li><a hidefocus="true" href="tabContents/GXD_About.shtml" rel="ajaxcontentarea">About GXD</a></li>
-		<li class="selected"><a hidefocus="true" href="tabContents/GXD_SendData.shtml" rel="ajaxcontentarea">Send Us Your Data</a></li>
-		<li><a hidefocus="true" href="tabContents/GXD_Curators.shtml" rel="ajaxcontentarea">Our Data Policies</a></li>
-		<li><a hidefocus="true" href="tabContents/GXD_Help.shtml" rel="ajaxcontentarea">Help Documents</a></li>
-		<li><a hidefocus="true" href="tabContents/GXD_Collaborators.shtml" rel="ajaxcontentarea">Collaborators</a></li>
-		<li><a hidefocus="true" href="tabContents/GXD_Resources.shtml" rel="ajaxcontentarea">Other Links</a></li>
+	<ul id="gxdtab" class="shadetabs">
+		<li><a href="tabContents/GXD_About.shtml" rel="ajaxcontentarea">About GXD</a></li>
+		<li class="selected"><a href="tabContents/GXD_SendData.shtml" rel="ajaxcontentarea">Send Us Your Data</a></li>
+		<li><a href="tabContents/GXD_Curators.shtml" rel="ajaxcontentarea">Our Data Policies</a></li>
+		<li><a href="tabContents/GXD_Help.shtml" rel="ajaxcontentarea">Help Documents</a></li>
+		<li><a href="tabContents/GXD_Collaborators.shtml" rel="ajaxcontentarea">Collaborators</a></li>
+		<li><a href="tabContents/GXD_Resources.shtml" rel="ajaxcontentarea">Other Links</a></li>
 	</ul>
-	<div id="ajaxcontentarea" class="contentstyle">
+	<div id="gxdcontentarea" class="contentstyle">
 		<!--#include file='tabContents/GXD_SendData.shtml'-->
 	</div>
-	<script type="text/javascript">
-		var tab_box=new ddajaxtabs("maintab", "ajaxcontentarea")
-		tab_box.setpersist(true)
-		tab_box.setselectedClassTarget("linkparent") //"link" or "linkparent"
-		tab_box.init()
-	</script>
+
 <img src="images/white_dot.gif" width="720px" height="1px">
 </td></tr>
 </div>  
 </table>
+
+<script type="text/javascript">
+    var gxd_box=new ddajaxtabs("gxdtab", "gxdcontentarea")
+    gxd_box.setpersist(true)
+    gxd_box.setselectedClassTarget("linkparent") //"link" or "linkparent"
+    gxd_box.init()
+</script>
 
 <!--#include file='include/templateBodyStop.html'-->
 

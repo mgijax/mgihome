@@ -146,7 +146,7 @@
 <table width="100%" cellpadding="0" cellspacing="0" border="0"><tr><td>
 <div class="boxWide marginBottom">
 	<!-- This is where the tabbed section is defined. -->
-	<ul id="maintab" class="shadetabs">
+	<ul id="straintab" class="shadetabs">
 		<!-- This is where the tabbed section is defined. -->
 		<li class="selected" id="listTab"><a href="tabContents/Strain_About.shtml" rel="ajaxcontentarea">About</a></li>
 		<li id="listTab"><a href="tabContents/Strain_Help.shtml" rel="ajaxcontentarea">Help Documents</a></li>
@@ -154,21 +154,23 @@
 		<li id="listTab"><a href="tabContents/Strain_Resources.shtml" rel="ajaxcontentarea">Other Links</a></li>
 	</ul>
 	<!-- this is where the tab text gets inserted by javascript -->
-	<div id="ajaxcontentarea" class="contentstyle">
+	<div id="straincontentarea" class="contentstyle">
 		<!-- text for default selected tab inserted here as an include -->
 		<!--#include file='tabContents/Strain_About.shtml'-->
 	</div>
-	<script type="text/javascript">
-		var tab_box=new ddajaxtabs("maintab", "ajaxcontentarea")
-		tab_box.setpersist(true)
-		tab_box.setselectedClassTarget("linkparent") //"link" or "linkparent"
-		tab_box.init()
-	</script>
+
 <img src="images/white_dot.gif" width="420px" height="1px">
 </td></tr>
 </div>  
 </table>
 
+    <script type="text/javascript">
+        var strain_box=new ddajaxtabs("straintab", "straincontentarea")
+        strain_box.setpersist(true)
+        strain_box.setselectedClassTarget("linkparent") //"link" or "linkparent"
+        strain_box.init()
+    </script>
+    
 <!--#include file='include/templateBodyStop.html'-->
 
 </body>
