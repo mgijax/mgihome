@@ -185,7 +185,7 @@ ddajaxtabs.prototype={
 			}
 		} //END for loop
 		if (persisterror) //if an error has occured while trying to retrieve persisted tab (based on its position within its peers)
-			this.expandtab(this.tabs[this.hottabspositions[0]]) //Just select first tab that contains a "rel" attr
+			//this.expandtab(this.tabs[this.hottabspositions[0]]) //Just select first tab that contains a "rel" attr
 		if (parseInt(this.automodeperiod)>500 && this.hottabspositions.length>1){
 			this.automode_currentTabIndex=this.automode_currentTabIndex || 0
 			this.autoruntimer=setInterval(function(){tabinstance.autorun()}, this.automodeperiod)
