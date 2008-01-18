@@ -1,4 +1,4 @@
-<!--#include file='include/templateHead.html'--> 
+<!--#include file='include/templateHead.html'-->
 <title><!--#include file='include/mgiversion.html'--> - Phenotype Data Submission Form</title>
 
 <!--#include file='include/templateBodyStart.html'-->
@@ -13,6 +13,7 @@
 <li>Use this Phenotype Data Submission Form to describe characteristics of spontaneous, induced, or genetically engineered mutations already entered in MGI.
 <li>Please fill in appropriate information.
 <li>Click <b>Submit</b> at the bottom of the form to send this information to MGI for processing.
+<li>All phenotype data submitted to MGI will be made publicly available after processing.
 <li> Thank you for helping us keep MGI current.
 </ul>
 </P>
@@ -26,8 +27,8 @@ Official <B>symbol</B> for this mutation:
 <B>MGI accession ID</B> for this mutation:
 <INPUT TYPE="text" NAME="accid" SIZE=80>  (required)
 <BR><br>
-(Find the MGI accession ID by 
-<a href="<!--#include file='include/java_url.html'-->WIFetch?page=markerQF">searching MGI</A>.)<BR><BR>
+(Accession ID should be entered as "<b>MGI</b>:#######". Find the MGI accession ID by <a href="<!--#include file='include/java_url.html'-->WIFetch?page=markerQF">searching MGI</A>.)
+<BR><BR>
 Nicknames, synonyms for this mutant allele  <INPUT TYPE="text" NAME="synonyms" SIZE=55>
 <BR><br>
 Additional allele information not currently in MGI (ES cell line, strain of origin, mutation type):<BR>
@@ -70,7 +71,7 @@ Other remarks (gene function/pathway, available clones, GenBank numbers, etc.):<
 <br><br>
 <!--<br>Upload a data file (image, text description, Excel, or text data)
 <input name="myFile" value="" type="file"> <br><br>
-<br>Upload another data file 
+<br>Upload another data file
 <input name="myFile" value="" type="file"> <br><br>-->
 To submit data files (image, text description, excel,  or text data), please contact us at:
 <font color="#1822cd"><a href="mailto:submissions@informatics.jax.org">submissions@informatics.jax.org</a></font>.
@@ -85,7 +86,7 @@ Is this information published? <BR>
 <DD><INPUT TYPE="radio" NAME="published" VALUE="No">no&nbsp;
 </DL>
 <BR>
-Please provide the references, or authors & descriptive title for unpublished data:<BR>
+Please provide the references for published data or authors & descriptive title for unpublished data:<BR>
 <TEXTAREA NAME="citations" ROWS=5 COLS=60></TEXTAREA>
 
 <BR><BR>
