@@ -48,22 +48,30 @@
 			<!-- Left box: 'What can I do here?' -->
 			<div class="blueBorder rightCenterMargin">
 				<div class="boxTitle">
-					Access Mammalian Orthology Data
+					Access Data
 				</div>
 				<!-- 'What can I do here?'content -->
 				<!-- The content is in a definition list <dl> where the descriptive text
 				is in the term <dt>, and the link is in the definition <dd> -->
 				<div class="boxBG pad5">
-					<dl class="boxList">
-						<dt class="whatList"><a href="<!--#include file='include/wi_url.html'-->searches/homology_form.shtml" class="homeLink">Search for  orthologs</a>
-							between two species using marker symbol or  name, accession ID, chromosomal location, author or reference ID.</dt>
-						<dt class="whatList"><a href="<!--#include file='include/java_url.html'-->WIFetch?page=pirsfVocab&subset=A" class="homeLink">Search for gene family data</a>
-							by the Protein Information Resource SuperFamily  classification names.</dt>
-						<dt class="whatList"><a href="<!--#include file='include/wi_url.html'-->searches/linkmap_form.shtml" class="homeLink">Build a Mouse Linkage Map with Orthologs</a>.</dt>
-						<dt class="whatList">View the <a href="<!--#include file='include/wi_url.html'-->reports/homologymap/mouse_human.shtml" class="homeLink">Mouse-Human</a>
-							or <a href="<!--#include file='include/wi_url.html'-->reports/homologymap/mouse_rat.shtml" class="homeLink">Mouse-Rat</a> comparative genome map.</dt>
-						<dt class="whatList"><a href="<!--#include file='include/ftp_url2.html'-->pub/reports/index.html#orthology" class="homeLink">Download a complete set</a> of rat, human, dog, or
-							chimpanzee orthologs for mouse genes. Some sets also include associated sequences, phenotype characteristics, or human disease data.</dt>
+					<dl>
+						<dt>Search for orthologs between two species using marker symbol or  name, accession ID, chromosomal location, 
+						  author or reference ID.</dt>
+						<dd class="searchList"><a href="<!--#include file='include/wi_url.html'-->searches/homology_form.shtml" class="small homeLink">Orthology Query</a></dd>
+						
+						<dt>Search for gene family data by the Protein Information Resource SuperFamily  classification names.</dt>
+						<dd class="searchList"><a href="<!--#include file='include/java_url.html'-->WIFetch?page=pirsfVocab&subset=A" class="small homeLink">Protein Superfamily (PIRSF) Browser</a></dd>
+						
+						<dt>Build a comparative map using the Linkage Map tool.</dt>
+						<dd class="searchList"><a href="<!--#include file='include/wi_url.html'-->searches/linkmap_form.shtml" class="small homeLink">Mouse Linkage Map with Orthologs</a></dd>
+						
+						<dt>View the mouse comparative genome maps.</dt>
+						<dd class="searchList"><a href="<!--#include file='include/wi_url.html'-->reports/homologymap/mouse_human.shtml" class="small homeLink">Mouse-Human Othology Map</a></dd>
+						<dd class="searchList"><a href="<!--#include file='include/wi_url.html'-->reports/homologymap/mouse_rat.shtml" class="small homeLink">Mouse-Rat Orthology Map</a></dd>
+						
+						<dt>Download a complete set of rat, human, dog, or chimpanzee orthologs for mouse genes. Some sets also include associated 
+						  sequences, phenotype characteristics, or human disease data.</dt>
+						<dd class="searchList"><a href="<!--#include file='include/ftp_url2.html'-->pub/reports/index.html#orthology" class="small homeLink">Mammalian Orthology Reports (plain text)</a></dd>
 					</dl>
 				</div>
 			</div>

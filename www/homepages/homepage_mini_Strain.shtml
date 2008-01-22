@@ -75,21 +75,36 @@
 			<!-- Left box: 'What can I do here?' -->
 			<div class="blueBorder rightCenterMargin">
 				<div class="boxTitle">
-					Access Strains, SNPs & Polymorphisms Data
+					Access Data
 				</div>
 				<!-- 'What can I do here?'content -->
 				<!-- The content is in a definition list <dl> where the descriptive text
 				is in the term <dt>, and the link is in the definition <dd> -->
 				<div class="boxBG pad5">
-					<dl class="boxList">
-						<dt class="whatList"><a href="<!--#include file='include/java_url.html'-->WIFetch?page=snpQF" class="homeLink">Search for SNPs</a> by strain(s), SNP attributes, genomic position, or associated genes.</dt>
-						<dt class="whatList"><a href="<!--#include file='include/wi_url.html'-->searches/polymorphism_form.shtml" class="homeLink">Search for RFLP or PCR based polymorphisms</a> by strain, locus symbol, or map position.</dt>
-						<dt class="whatList"><a href="<!--#include file='include/wi_url.html'-->external/festing/search_form.cgi" class="homeLink">Search inbred strain characteristics.</a></dt>
-						<dt class="whatList"><a href="<!--#include file='include/mgihome_url.html'-->genealogy/" class="homeLink">View the genealogy chart</a> of inbred strains.</dt>
-						<dt class="whatList"><a href="<!--#include file='include/mgihome_url.html'-->submissions/strains/index.shtml" class="homeLink">Register a new strain</a> and receive official nomenclature and an MGI accession identifier.</dt>
-						<dt class="whatList"><a href="<!--#include file='include/mgihome_url.html'-->nomen/strains.shtml" class="homeLink">View guidelines</a> to proper naming of mouse strains.</dt>
-						<dt class="whatList"><a href="<!--#include file='include/imsr_home_url.html'-->" class="homeLink">Search for sources of mutant mice</a> and cell lines using the International Mouse Strain Resource (IMSR) database.</dt>
-						<dt class="whatList">Go to the <a href="homepage_mini_PAD.shtml" class="homeLink">Phenotypes, Alleles, & Disease Models page</a> for information on spontaneous, induced, and genetically-engineered mutations and QTL.</dt>
+					<dl>
+						<dt>Search for SNPs by strain(s), SNP attributes, genomic position, or associated genes.</dt>
+						<dd class="searchList"><a href="<!--#include file='include/java_url.html'-->WIFetch?page=snpQF" class="small homeLink">SNP Query</a></dd>
+						
+						<dt>Search for RFLP or PCR based polymorphisms by strain, locus symbol, or map position.</dt>
+						<dd class="searchList"><a href="<!--#include file='include/wi_url.html'-->searches/polymorphism_form.shtml" class="small homeLink">RFLP/PCR Polymorphism Query</a></dd>
+						
+						<dt>Search the listing of Inbred Strains of Mice and Rats by M. Festing.</dt>
+						<dd class="searchList"><a href="<!--#include file='include/wi_url.html'-->external/festing/search_form.cgi" class="small homeLink">Inbred Strain Characteristics</a></dd>
+						
+						<dt>View a chart depicting the origins and relationships of inbred mouse strains.</dt>
+						<dd class="searchList"><a href="<!--#include file='include/mgihome_url.html'-->genealogy/" class="small homeLink">Genealogy Chart of Inbred Strains</a></dd>
+						
+						<dt>Register a new strain and receive official nomenclature and an MGI accession identifier.</dt>
+						<dd class="searchList"><a href="<!--#include file='include/mgihome_url.html'-->submissions/strains/index.shtml" class="small homeLink">Strain Nomenclature Form</a></dd>
+						
+						<dt>View guidelines to proper naming of mouse strains.</dt>
+						<dd class="searchList"><a href="<!--#include file='include/mgihome_url.html'-->nomen/strains.shtml" class="small homeLink">Guide to Strain Nomenclature</a></dd>
+						
+						<dt>Search for sources of mutant mice and cell lines.</dt>
+						<dd class="searchList"><a href="<!--#include file='include/imsr_home_url.html'-->" class="small homeLink">International Mouse Strain Resource (IMSR)</a></dd>						
+						
+						<dt>Find information on spontaneous, induced, and genetically-engineered mutations and QTL.</dt>
+						<dd class="searchList"><a href="homepage_mini_PAD.shtml" class="small homeLink">Phenotypes, Alleles & Disease Models</a></dd>
 					</dl>
 				</div>
 			</div>

@@ -54,29 +54,39 @@
 		<td rowspan="2" width="50%" valign="top">
 			<div class="blueBorder rightCenterMargin">
 				<div class="boxTitle">
-					Access Genes, Genome Features & Maps Data
+					Access Data
 				</div>
 				<!-- 'What can I do here?'content -->
 				<!-- The content is in a definition list <dl> where the descriptive text
 				is in the term <dt>, and the link is in the definition <dd> -->
 				<div class="boxBG pad5">
-					<dl class="boxList">
-						<dt class="whatList"><a class="homeLink" href="<!--#include file='include/java_url.html'-->WIFetch?page=markerQF">Search for genes and genome features</a>
-							by symbol, name, location, gene ontology classification or phenotype.</dt>
-						<dt class="whatList"><a class="homeLink" href="<!--#include file='include/wi_url.html'-->searches/sequence_form.shtml">Search for sequences</a>
-							by mouse strain or biological attribute.</dt>
-						<dt class="whatList"><a class="homeLink" href="<!--#include file='include/mouseblast_url.html'-->">Use BLAST</a> to search for mouse genes and genome features using nucleotide or protein sequences.</dt>
-						<dt class="whatList">Search <a class="homeLink" href="<!--#include file='include/wi_url.html'-->menus/allsearch_menu.shtml#mapdata">genetic mapping data</a>.</dt>
-						<dt class="whatList">Create a <a class="homeLink" href="<!--#include file='include/wi_url.html'-->menus/allsearch_menu.shtml#maptools">genetic map</a> or
-							<a class="homeLink" href="<!--#include file='include/gbrowse_url.html'-->">genomic map</a>
-							display of regions of the mouse genome.</dt>
-						<dt class="whatList"><a class="homeLink" href="<!--#include file='include/java_url.html'-->WIFetch?page=batchQF">Input a list of gene IDs or symbols</a>
-							and retrieve other database IDs and gene attributes (e.g. phenotypes, GO).</dt>
-						<dt class="whatList"><a class="homeLink" href="<!--#include file='include/ftp_url2.html'-->pub/reports/index.html#marker">Download plain text files</a> of all genes and markers in MGI.</dt>
-						<dt class="whatList"><a class="homeLink" href="<!--#include file='include/mgihome_url.html'-->nomen/gene.shtml">Read the guidelines</a>
-							for mouse gene nomenclature.</dt>
-						<dt class="whatList"><a class="homeLink" href="<!--#include file='include/mgihome_url.html'-->nomen/nomen_submit_form.shtml">Submit a new gene or genome feature</a>
-							and receive official nomenclature and an MGI accession identifier.</dt>
+					<dl>
+						<dt>Search for genes and genome features by symbol, name, location, gene ontology classification or phenotype.</dt>
+						<dd class="searchList"><a class="small homeLink" href="<!--#include file='include/java_url.html'-->WIFetch?page=markerQF">Genes & Markers Query</a></dd>
+						
+						<dt>Search for sequences by mouse strain or biological attribute.</dt>
+						<dd class="searchList"><a class="small homeLink" href="<!--#include file='include/wi_url.html'-->searches/sequence_form.shtml">Sequence Query</a></dd>
+						
+						<dt>Use BLAST to search for mouse genes and genome features using nucleotide or protein sequences.</dt>
+						<dd class="searchList"><a class="small homeLink" href="<!--#include file='include/mouseblast_url.html'-->">MouseBLAST</a></dd>
+						
+						<dt>Search genetic mapping data and create genetic maps.</dt>
+						<dd class="searchList"><a class="small homeLink" href="<!--#include file='include/wi_url.html'-->menus/allsearch_menu.shtml#maptools">Map Tools</a></dd>
+						
+						<dt>Create a display of regions of the mouse genome.</dt>
+						<dd class="searchList"><a class="small homeLink" href="<!--#include file='include/gbrowse_url.html'-->">Mouse GBrowse</a></dd>
+						
+						<dt>Input a list of gene IDs or symbols and retrieve other database IDs and gene attributes (e.g. phenotypes, GO).</dt>
+						<dd class="searchList"><a class="small homeLink" href="<!--#include file='include/java_url.html'-->WIFetch?page=batchQF">Batch Query</a></dd>
+						
+						<dt>Download plain text files of all genes and markers in MGI.</dt>
+						<dd class="searchList"><a class="small homeLink" href="<!--#include file='include/ftp_url2.html'-->pub/reports/index.html#marker">Genes & Markers Reports (plain text)</a></dd>
+						
+						<dt>Read the guidelines for mouse gene nomenclature.</dt>
+						<dd class="searchList"><a class="small homeLink" href="<!--#include file='include/mgihome_url.html'-->nomen/gene.shtml">Complete Guide to Nomenclature</a></dd>
+						
+						<dt>Submit a new gene or genome feature and receive official nomenclature and an MGI accession identifier.</dt>
+						<dd class="searchList"><a class="small homeLink" href="<!--#include file='include/mgihome_url.html'-->nomen/nomen_submit_form.shtml">Gene/Genome Feature/Locus Nomenclature Form</a></dd>
 					</dl>
 				</div>
 			</div>
