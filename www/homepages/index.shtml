@@ -122,21 +122,38 @@
      <div class="boxBG pad5">
       <dl class="boxList">
       <dt>How do I...</dt>
+
       <dd class="faqListHomePage">.. search for genes, QTL, or other features in a specific genome interval?
-        <a class="small homeLink" href='javascript:openFaqWindow("GM_marker.shtml")'>FAQ</a>
+        <a class="small homeLink" 
+          onClick='javascript:openFaqWindow("GM_marker.shtml"); return false;' 
+          href="<!--#include file='include/faq_url.html'-->GM_marker.shtml">FAQ
+        </a>
       </dd>
       <dd class="faqListHomePage">.. use attributes such as genome location, disease association, phenotype, or function to find specific genes?
-        <a class="small homeLink" href='javascript:openFaqWindow("GM_attr.shtml")'>FAQ</a>
+        <a class="small homeLink" 
+          onClick='javascript:openFaqWindow("GM_attr.shtml"); return false;' 
+          href="<!--#include file='include/faq_url.html'-->GM_attr.shtml">FAQ
+        </a>
       </dd>
       <dd class="faqListHomePage">.. find mutant alleles associated with specific phenotypes or human diseases?
-        <a class="small homeLink" href='javascript:openFaqWindow("PAD_allele.shtml")'>FAQ</a>
+        <a class="small homeLink" 
+          onClick='javascript:openFaqWindow("PAD_allele.shtml"); return false;' 
+          href="<!--#include file='include/faq_url.html'-->PAD_allele.shtml">FAQ
+        </a>
       </dd>
       <dd class="faqListHomePage">.. find expression data for a specific gene and tissue?
-        <a class="small homeLink" href='javascript:openFaqWindow("GXD_GeneTissue")'>FAQ</a>
+        <a class="small homeLink" 
+          onClick='javascript:openFaqWindow("GXD_GeneTissue"); return false;' 
+          href="<!--#include file='include/faq_url.html'-->GXD_GeneTissue">FAQ
+        </a>
       </dd>
       <dd class="faqListHomePage">.. create a genome map from a genomic interval?
-        <a class="small homeLink" href='javascript:openFaqWindow("GM_genmap.shtml")'>FAQ</a>
+        <a class="small homeLink" 
+          onClick='javascript:openFaqWindow("GM_genmap.shtml"); return false;' 
+          href="<!--#include file='include/faq_url.html'-->GM_genmap.shtml">FAQ
+        </a>
       </dd>
+
       </dl>
         <a class="small homeLink" href="<!--#include file='include/faq_url.html'-->FAQ.shtml">More FAQs</a>
      </div>
