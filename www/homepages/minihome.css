@@ -104,11 +104,11 @@
     }
     
     dt.whatList {
-        margin-bottom:1em;
+        margin-top:1.5em;
     }
 
     dd.searchList {
-        margin:.2em 0em 1.5em 5em;
+        margin:.5em 0em .5em 5em;
     }
 
     .statList {
@@ -152,11 +152,6 @@
         text-align:right;
     }
 
-    .searchList a {
-        background-color:#FFFFFF;
-        border:thin solid #DDDDDD;
-    }
-
     .faqList {
         margin-top:.5em;
         margin-left:5em;
@@ -177,6 +172,12 @@
         width:193px;
     }
     
+    .outerGeneWrap {
+        position:relative;
+        height:270px;
+        width:250px;
+    }
+    
     .smallGOWrap {
         position:absolute;
         top:0px; 
@@ -186,12 +187,21 @@
     }    
     
     .bigGOWrap {
-        z-index:100;
         position:absolute;
         top:-2px; 
         right:-2px;
         height:425px;
         width:443px;
+        text-align:center; 
+        background-color:#FFFFFF;
+    }
+    
+    .bigGeneWrap {
+        position:absolute;
+        top:-2px; 
+        right:-2px;
+        height:510px;
+        width:513px;
         text-align:center; 
         background-color:#FFFFFF;
     }

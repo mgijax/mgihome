@@ -37,7 +37,7 @@
 		<td>
 			<div class="sideMargin marginBottom blueBorder pad5 small">
 				<center><a href='javascript:openFaqWindow("PAD_imgpop.shtml")'>
-					<img src="images/Pheno.jpg" alt="mouse" height="125" border="0"></a>
+					<img src="images/Pheno.jpg" border="0"></a>
 				<br />
 				<em><a class="small homeLink" href='javascript:openFaqWindow("PAD_imgpop.shtml")'>Homozygote for the Ednrb<sup>s</sup> mutation, originally <br>known as piebald spotting.</a></em></center>
 			</div>
@@ -63,22 +63,22 @@
 						<dt>Search for mutations or QTL based on phenotype, human disease,  mutation type, gene, or genome location.</dt>
 						<dd class="searchList"><a class="small homeLink" href="<!--#include file='include/wi_url.html'-->searches/allele_form.shtml">Phenotypes, Alleles & Disease Models Query</a></dd>
 						
-						<dt>Search for a phenotype term to find relevant mutant genotypes.</dt>
+						<dt class="whatList">Search for a phenotype term to find relevant mutant genotypes.</dt>
 						<dd class="searchList"><a class="small homeLink" href="<!--#include file='include/wi_url.html'-->searches/MP_form.shtml">Mammalian Phenotype (MP) Browser</a></dd>
 						
-						<dt>Search for a human disease or condition term to find  mouse models.</dt>
+						<dt class="whatList">Search for a human disease term to find  mouse models.</dt>
 						<dd class="searchList"><a class="small homeLink" href="<!--#include file='include/java_url.html'-->WIFetch?page=omimVocab&subset=A">Human Disease (OMIM) Browser</a></dd>
 						
-						<dt>Search for candidate genes for a given phenotype within a  genomic interval.</dt>
+						<dt class="whatList">Search for candidate genes for a given phenotype within a  genomic interval.</dt>
 						<dd class="searchList"><a class="small homeLink" href="<!--#include file='include/java_url.html'-->WIFetch?page=markerQF">Genes & Markers Query</a></dd>
 						
-						<dt>Input a list of genes and retrieve associated alleles and  phenotypes.</dt>
+						<dt class="whatList">Input a list of genes and retrieve associated alleles and  phenotypes.</dt>
 						<dd class="searchList"><a class="small homeLink" href="<!--#include file='include/java_url.html'-->WIFetch?page=batchQF">Batch Query</a></dd>
 						
-						<dt>Submit a new allele, mutation, or transgene and receive official nomenclature and an MGI accession identifier.</dt>
+						<dt class="whatList">Submit a new allele, mutation, or transgene and receive official nomenclature and an MGI accession identifier.</dt>
 						<dd class="searchList"><a class="small homeLink" href="<!--#include file='include/mgihome_url.html'-->nomen/allmut_form.shtml">Allele Nomenclature Form</a></dd>
 						
-						<dt>View guides to proper naming of alleles and mutations.</dt>
+						<dt class="whatList">View guides to proper naming of alleles and mutations.</dt>
 						<dd class="searchList"><a class="small homeLink" href="<!--#include file='include/mgihome_url.html'-->nomen/allmut_quickhelp.shtml">Quick Guide to Allele Nomenclature</a></dd>
 						<dd class="searchList"><a class="small homeLink" href="<!--#include file='include/mgihome_url.html'-->nomen/gene.shtml">Complete Guide to Nomenclature</a></dd>
 					</dl>
@@ -99,10 +99,18 @@
 				<div class="boxBG pad5">
 					<dl class="boxList">
 						<dt>How do I...</dt>
-						<dd class="faqList">.. find mutations in a specific gene? <a class="small homeLink" href='javascript:openFaqWindow("PAD_gene.shtml")'>FAQ</a></dd>
-						<dd class="faqList">.. find mouse models for a human disease or condition? <a class="small homeLink" href='javascript:openFaqWindow("PAD_disease.shtml")'>FAQ</a></dd>
-						<dd class="faqList">.. find mutations that cause a specific combination of phenotypes? <a class="small homeLink" href='javascript:openFaqWindow("PAD_combo.shtml")'>FAQ</a></dd>
-						<dd class="faqList">.. find all of one kind of allele (e.g. cre transgenes, LoxP/Frt-flanked alleles, etc.)? <a class="small homeLink" href='javascript:openFaqWindow("PAD_muttype.shtml")'>FAQ</a></dd>
+						<dd class="faqList">.. find mutations in a specific gene? 
+						<a class="small homeLink" onClick="javascript:openFaqWindow('PAD_gene.shtml'); return false;" 
+						href="<!--#include file='include/faq_url.html'-->PAD_gene.shtml">FAQ</a></dd>
+						<dd class="faqList">.. find mouse models for a human disease or condition? 
+						<a class="small homeLink" onClick="javascript:openFaqWindow('PAD_disease.shtml'); return false;" 
+						href="<!--#include file='include/faq_url.html'-->PAD_disease.shtml">FAQ</a></dd>
+						<dd class="faqList">.. find mutations that cause a specific combination of phenotypes? 
+						<a class="small homeLink" onClick="javascript:openFaqWindow('PAD_combo.shtml'); return false;" 
+						href="<!--#include file='include/faq_url.html'-->PAD_combo.shtml">FAQ</a></dd>
+						<dd class="faqList">.. find all of one kind of allele (e.g. cre transgenes, LoxP/Frt-flanked alleles, etc.)? 
+						<a class="small homeLink" onClick="javascript:openFaqWindow('PAD_muttype.shtml'); return false;" 
+						href="<!--#include file='include/faq_url.html'-->PAD_muttype.shtml">FAQ</a></dd>
 					</dl>
 					<!-- link to all FAQs page -->
 					<a class="small homeLink" href="<!--#include file='include/faq_url.html'-->FAQ.shtml#pheno">More FAQs</a>

@@ -47,28 +47,28 @@
 	<tr>
 		<td rowspan="2" width="50%" valign="top">
 			<div class="blueBorder rightCenterMargin">
-				<div class="boxTitle">Access Gene Expression Data</div>
+				<div class="boxTitle">Access Data</div>
 				<div class="boxBG pad5">
 					<dl>
 						<dt>Search for references on gene expression during development.</dt>
 						<dd class="searchList"><a class="small homeLink" href="<!--#include file='include/wi_url.html'-->searches/gxdindex_form.shtml">Gene Expression Literature Query</a></dd>
 
-						<dt>Search for detailed gene expression assay results.</dt>
+						<dt class="whatList">Search for detailed gene expression assay results.</dt>
 						<dd class="searchList"><a class="small homeLink" href="<!--#include file='include/java_url.html'-->WIFetch?page=expressionQF">Gene Expression Data Query</a></dd>
 
-						<dt>Search for genes expressed in some anatomical structures and/or
+						<dt class="whatList">Search for genes expressed in some anatomical structures and/or
 						developmental stages but not in others.</dt>
 						<dd class="searchList"><a class="small homeLink" href="<!--#include file='include/java_url.html'-->WIFetch?page=expressionQFexpanded">Gene Expression Data Expanded Query</a></dd>
 
-						<dt>Search or browse for anatomical structures; includes links to
+						<dt class="whatList">Search or browse for anatomical structures; includes links to
 						associated expression results.</dt>
 						<dd class="searchList"><a class="small homeLink" href="<!--#include file='include/wi_url.html'-->searches/anatdict_form.shtml">Mouse Anatomical Dictionary Browser</a></dd>
 
-						<dt>Search the Edinburgh Mouse Atlas for anatomical terms and query
+						<dt class="whatList">Search the Edinburgh Mouse Atlas for anatomical terms and query
 						for associated expression data.</dt>
 						<dd class="searchList"><a class="small homeLink" href="http://genex.hgu.mrc.ac.uk/Resources/GXDQuery1/SectionBrowser.html">EMAGE Anatomical Section Browser</a></dd>
 
-						<dt>Search for expression information based on tissue or cell-line
+						<dt class="whatList">Search for expression information based on tissue or cell-line
 						origin of cDNAs.</dt>
 						<dd class="searchList"><a class="small homeLink" href="<!--#include file='include/java_url.html'-->WIFetch?page=cDNAQF">cDNA Clone Query</a></dd>
 					</dl>
@@ -81,10 +81,18 @@
 				<div class="boxBG pad5">
 					<dl class="boxList">
 						<dt>How do I...</dt>
-						<dd class="faqList">.. find expression data for a specific gene and tissue? <a class="small homeLink" href='javascript:openFaqWindow("GXD_GeneTissue")'>FAQ</a></dd>
-						<dd class="faqList">.. find expression data for a tissue during development? <a class="small homeLink" href='javascript:openFaqWindow("GXD_tissue_dev.shtml")'>FAQ</a></dd>
-						<dd class="faqList">.. find genes expressed in one tissue but not another? <a class="small homeLink" href='javascript:openFaqWindow("GXD_comp_tissue.shtml")'>FAQ</a></dd>
-						<dd class="faqList">.. find references that report expression data for a gene at a specific age? <a class="small homeLink" href='javascript:openFaqWindow("GXD_ref_age.shtml")'>FAQ</a></dd>
+						<dd class="faqList">.. find expression data for a specific gene and tissue? 
+						<a class="small homeLink" onClick="javascript:openFaqWindow('GXD_GeneTissue'); return false;" 
+						href="<!--#include file='include/faq_url.html'-->GXD_GeneTissue">FAQ</a></dd>
+						<dd class="faqList">.. find expression data for a tissue during development? 
+						<a class="small homeLink" onClick="javascript:openFaqWindow('GXD_tissue_dev.shtml'); return false;" 
+						href="<!--#include file='include/faq_url.html'-->GXD_tissue_dev.shtml">FAQ</a></dd>
+						<dd class="faqList">.. find genes expressed in one tissue but not another? 
+						<a class="small homeLink" onClick="javascript:openFaqWindow('GXD_comp_tissue.shtml'); return false;" 
+						href="<!--#include file='include/faq_url.html'-->GXD_comp_tissue.shtml">FAQ</a></dd>
+						<dd class="faqList">.. find references that report expression data for a gene at a specific age? 
+						<a class="small homeLink" onClick="javascript:openFaqWindow('GXD_ref_age.shtml'); return false;" 
+						href="<!--#include file='include/faq_url.html'-->GXD_ref_age.shtml">FAQ</a></dd>
 					</dl>
 					<a class="small homeLink" href="<!--#include file='include/faq_url.html'-->FAQ.shtml#expression">More FAQs</a>
 				</div>

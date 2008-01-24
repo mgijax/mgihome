@@ -37,7 +37,7 @@
 		<td>
 			<div class="sideMargin marginBottom blueBorder pad5 small">
 				<center>
-				<a href='javascript:openFaqWindow("BP_imgpop.shtml")'><img class="outlineImg" src="images/Path.gif" alt="YP19146, YP20593" /></a><br />
+				<a href='javascript:openFaqWindow("BP_imgpop.shtml")'><img class="outlineImg" src="images/Path.gif"/></a><br />
 				<em>Pathway glyphs overlayed with experimental data</em></center>
 			</div>
 		</td>
@@ -52,7 +52,7 @@
 			<!-- Left box: 'What can I do here?' -->
 			<div class="blueBorder rightCenterMargin">
 				<div class="boxTitle">
-					Access Biochemical Pathways Data
+					Access Data
 				</div>
 				<!-- 'What can I do here?'content -->
 				<!-- The content is in a definition list <dl> where the descriptive text
@@ -85,10 +85,18 @@
 				<div class="boxBG pad5">
 					<dl class="boxList">
 						<dt>How do I ...</dt>
-						<dd class="faqList">.. see a list of all pathways in MouseCyc? <a class="small homeLink" href='javascript:openFaqWindow("BP_allpath.shtml")'>FAQ</a></dd>
-						<dd class="faqList">.. search MouseCyc for a specific compound? <a class="small homeLink" href='javascript:openFaqWindow("BP_comp.shtml")'>FAQ</a></dd>
-						<dd class="faqList">.. display my mouse gene expression data in the context of mouse pathways? <a class="small homeLink" href='javascript:openFaqWindow("BP_expr.shtml")'>FAQ</a></dd>
-						<dd class="faqList">.. compare mouse pathways to human pathways? <a class="small homeLink" href='javascript:openFaqWindow("BP_path.shtml")'>FAQ</a></dd>
+						<dd class="faqList">.. see a list of all pathways in MouseCyc? 
+						<a class="small homeLink" onClick="javascript:openFaqWindow('BP_allpath.shtml'); return false;" 
+						href="<!--#include file='include/faq_url.html'-->BP_allpath.shtml">FAQ</a></dd>
+						<dd class="faqList">.. search MouseCyc for a specific compound? 
+						<a class="small homeLink" onClick="javascript:openFaqWindow('BP_comp.shtml'); return false;" 
+						href="<!--#include file='include/faq_url.html'-->BP_comp.shtml">FAQ</a></dd>
+						<dd class="faqList">.. display my mouse gene expression data in the context of mouse pathways? 
+						<a class="small homeLink" onClick="javascript:openFaqWindow('BP_expr.shtml'); return false;" 
+						href="<!--#include file='include/faq_url.html'-->BP_expr.shtml">FAQ</a></dd>
+						<dd class="faqList">.. compare mouse pathways to human pathways? 
+						<a class="small homeLink" onClick="javascript:openFaqWindow('BP_path.shtml'); return false;" 
+						href="<!--#include file='include/faq_url.html'-->BP_path.shtml">FAQ</a></dd>
 					</dl>
 
 					<!-- link to all FAQs page -->

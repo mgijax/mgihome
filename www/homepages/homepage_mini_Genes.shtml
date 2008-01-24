@@ -14,6 +14,16 @@
 	***********************************************/
 </script>
 
+<script language="JavaScript">
+    function Toggle_GOimages(id) {
+        var div = document.getElementById(id);
+        if (div==null) {
+            return; }
+        var bExpand = div.style.display == '';
+        div.style.display = (bExpand ? 'none' : '');
+    }
+</script>
+
 <link rel="stylesheet" type="text/css" href="minihome.css" />
 
 <!--#include file='include/templateBodyStart.html'-->
@@ -34,16 +44,28 @@
 					disease models.
 				</span>
 		</td>
-		<td>
-			<div class="sideMargin marginBottom blueBorder pad5 small">
-				<center>
-				    <a href='javascript:openFaqWindow("GM_genmap.shtml")'>
-				        <img class="outlineImg" src="images/Gene.gif" height="150"></a>
-				    <br />
-					<em>Gene models from MGI, NCBI,
-					Ensembl and VEGA, and RefSeqs for the gene Fgfr3</em>
-                </center>
-			</div>
+		<td>		
+			<div id="TinyImage" class="sideMargin marginBottom outerGeneWrap">
+                <div class="smallGOWrap blueBorder">
+                    <a href='javascript:Toggle_GOimages("BigImage");' class="small homeLink">show larger image [-]</a>
+                    <br />
+                    <a class="imgTopBottom" href='javascript:openFaqWindow("GM_genmap.shtml")'>
+                        <img class="imgTopBottom pad5" src="images/Gene.jpg" border="0">
+                        <br />
+                        <a href='javascript:openFaqWindow("GM_genmap.shtml")' class="small homeLink">Gene models from MGI, NCBI, Ensembl and VEGA, and RefSeqs for the gene Fgfr3</a>
+                    </a>
+                </div>
+
+                <div class="bigGeneWrap blueBorder" id="BigImage" style="display:none;">
+                    <a href='javascript:Toggle_GOimages("BigImage");' class="small homeLink">show smaller image [-]</a>
+                    <br />
+                    <a class="imgTopBottom" href='javascript:openFaqWindow("GM_genmap.shtml")'>
+                        <img class="imgTopBottom pad5" src="images/Gene_big.jpg" border="0">
+                        <br />
+                        <a href='javascript:openFaqWindow("GM_genmap.shtml")' class="small homeLink">Gene models from MGI, NCBI, Ensembl and VEGA, and RefSeqs for the gene Fgfr3</a>
+                    </a>
+                </div>
+            </div>			
 		</td>
 	</tr>
 </table>
@@ -64,28 +86,28 @@
 						<dt>Search for genes and genome features by symbol, name, location, gene ontology classification or phenotype.</dt>
 						<dd class="searchList"><a class="small homeLink" href="<!--#include file='include/java_url.html'-->WIFetch?page=markerQF">Genes & Markers Query</a></dd>
 						
-						<dt>Search for sequences by mouse strain or biological attribute.</dt>
+						<dt class="whatList">Search for sequences by mouse strain or biological attribute.</dt>
 						<dd class="searchList"><a class="small homeLink" href="<!--#include file='include/wi_url.html'-->searches/sequence_form.shtml">Sequence Query</a></dd>
 						
-						<dt>Use BLAST to search for mouse genes and genome features using nucleotide or protein sequences.</dt>
+						<dt class="whatList">Use BLAST to search for mouse genes and genome features using nucleotide or protein sequences.</dt>
 						<dd class="searchList"><a class="small homeLink" href="<!--#include file='include/mouseblast_url.html'-->">MouseBLAST</a></dd>
 						
-						<dt>Search genetic mapping data and create genetic maps.</dt>
-						<dd class="searchList"><a class="small homeLink" href="<!--#include file='include/wi_url.html'-->menus/allsearch_menu.shtml#maptools">Map Tools</a></dd>
+						<dt class="whatList">Search genetic mapping data and create genetic maps.</dt>
+						<dd class="searchList"><a class="small homeLink" href="<!--#include file='include/wi_url.html'-->menus/allsearch_menu.shtml#maptools">Graphical Map Tools</a></dd>
 						
-						<dt>Create a display of regions of the mouse genome.</dt>
+						<dt class="whatList">Create a display of regions of the mouse genome.</dt>
 						<dd class="searchList"><a class="small homeLink" href="<!--#include file='include/gbrowse_url.html'-->">Mouse GBrowse</a></dd>
 						
-						<dt>Input a list of gene IDs or symbols and retrieve other database IDs and gene attributes (e.g. phenotypes, GO).</dt>
+						<dt class="whatList">Input a list of gene IDs or symbols and retrieve other database IDs and gene attributes (e.g. phenotypes, GO).</dt>
 						<dd class="searchList"><a class="small homeLink" href="<!--#include file='include/java_url.html'-->WIFetch?page=batchQF">Batch Query</a></dd>
 						
-						<dt>Download plain text files of all genes and markers in MGI.</dt>
+						<dt class="whatList">Download plain text files of all genes and markers in MGI.</dt>
 						<dd class="searchList"><a class="small homeLink" href="<!--#include file='include/ftp_url2.html'-->pub/reports/index.html#marker">Genes & Markers Reports (plain text)</a></dd>
 						
-						<dt>Read the guidelines for mouse gene nomenclature.</dt>
+						<dt class="whatList">Read the guidelines for mouse gene nomenclature.</dt>
 						<dd class="searchList"><a class="small homeLink" href="<!--#include file='include/mgihome_url.html'-->nomen/gene.shtml">Complete Guide to Nomenclature</a></dd>
 						
-						<dt>Submit a new gene or genome feature and receive official nomenclature and an MGI accession identifier.</dt>
+						<dt class="whatList">Submit a new gene or genome feature and receive official nomenclature and an MGI accession identifier.</dt>
 						<dd class="searchList"><a class="small homeLink" href="<!--#include file='include/mgihome_url.html'-->nomen/nomen_submit_form.shtml">Gene/Genome Feature/Locus Nomenclature Form</a></dd>
 					</dl>
 				</div>
@@ -105,13 +127,27 @@
 				<div class="boxBG pad5">
 					<dl class="boxList">
 						<dt>How do I...</dt>
-						<dd class="faqList">.. search for genes,  QTL, or other features in a specific genomic interval? <a class="small homeLink" href='javascript:openFaqWindow("GM_marker.shtml")'>FAQ</a></dd>
-						<dd class="faqList">.. search for a gene using an Entrez, Ensembl, VEGA, or other accession ID? <a class="small homeLink" href='javascript:openFaqWindow("GM_ID.shtml")'>FAQ</a></dd>
-						<dd class="faqList">.. search for genes sharing a specific protein domain? <a class="small homeLink" href='javascript:openFaqWindow("GM_pirsf.shtml")'>FAQ</a></dd>
-						<dd class="faqList">.. search for all gene trap cell lines associated with a  gene or marker? <a class="small homeLink" href='javascript:openFaqWindow("GM_gtrap.shtml")'>FAQ</a></dd>
-						<dd class="faqList">.. retrieve Entrez gene, Ensembl, VEGA, or other IDs for a list of genes? <a class="small homeLink" href='javascript:openFaqWindow("GM_batch.shtml")'>FAQ</a></dd>
-						<dd class="faqList">.. create a genome map from a genomic interval? <a class="small homeLink" href='javascript:openFaqWindow("GM_genmap.shtml")'>FAQ</a></dd>
-						<dd class="faqList">.. see different gene models along with the MGI-curated representative model? <a class="small homeLink" href='javascript:openFaqWindow("GM_gmodel.shtml")'>FAQ</a></dd>
+						<dd class="faqList">.. search for genes,  QTL, or other features in a specific genomic interval? 
+						<a class="small homeLink" onClick='javascript:openFaqWindow("GM_marker.shtml"); return false;' 
+						href="<!--#include file='include/faq_url.html'-->GM_marker.shtml">FAQ</a></dd>
+						<dd class="faqList">.. search for a gene using an Entrez, Ensembl, VEGA, or other accession ID? 
+						<a class="small homeLink" onClick='javascript:openFaqWindow("GM_ID.shtml"); return false;' 
+						href="<!--#include file='include/faq_url.html'-->GM_ID.shtml">FAQ</a></dd>
+						<dd class="faqList">.. search for genes sharing a specific protein domain? 
+						<a class="small homeLink" onClick='javascript:openFaqWindow("GM_pirsf.shtml"); return false;' 
+						href="<!--#include file='include/faq_url.html'-->GM_pirsf.shtml">FAQ</a></dd>
+						<dd class="faqList">.. search for all gene trap cell lines associated with a  gene or marker? 
+						<a class="small homeLink" onClick='javascript:openFaqWindow("GM_gtrap.shtml"); return false;' 
+						href="<!--#include file='include/faq_url.html'-->GM_gtrap.shtml">FAQ</a></dd>
+						<dd class="faqList">.. retrieve Entrez gene, Ensembl, VEGA, or other IDs for a list of genes? 
+						<a class="small homeLink" onClick='javascript:openFaqWindow("GM_batch.shtml"); return false;' 
+						href="<!--#include file='include/faq_url.html'-->GM_batch.shtml">FAQ</a></dd>
+						<dd class="faqList">.. create a genome map from a genomic interval? 
+						<a class="small homeLink" onClick='javascript:openFaqWindow("GM_genmap.shtml"); return false;' 
+						href="<!--#include file='include/faq_url.html'-->GM_genmap.shtml">FAQ</a></dd>
+						<dd class="faqList">.. see different gene models along with the MGI-curated representative model? 
+						<a class="small homeLink" onClick='javascript:openFaqWindow("GM_gmodel.shtml"); return false;' 
+						href="<!--#include file='include/faq_url.html'-->GM_gmodel.shtml">FAQ</a></dd>
 					</dl>
 					<!-- link to all FAQs page -->
 					<a class="small homeLink" href="<!--#include file='include/faq_url.html'-->FAQ.shtml#marker">More FAQs</a>

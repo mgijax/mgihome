@@ -35,7 +35,7 @@
 		</td>
 		<td align="center">
 			<div class="sideMargin marginBottom blueBorder pad5 small">
-                <img class="outlineImg" src="images/Ortho.gif" alt="Orthology" name="Orthology">
+                <img class="outlineImg" src="images/Ortho.gif">
 			</div>
 		</td>
 	</tr>
@@ -59,17 +59,17 @@
 						  author or reference ID.</dt>
 						<dd class="searchList"><a href="<!--#include file='include/wi_url.html'-->searches/homology_form.shtml" class="small homeLink">Orthology Query</a></dd>
 						
-						<dt>Search for gene family data by the Protein Information Resource SuperFamily  classification names.</dt>
+						<dt class="whatList">Search for gene family data by the Protein Information Resource SuperFamily  classification names.</dt>
 						<dd class="searchList"><a href="<!--#include file='include/java_url.html'-->WIFetch?page=pirsfVocab&subset=A" class="small homeLink">Protein Superfamily (PIRSF) Browser</a></dd>
 						
-						<dt>Build a comparative map using the Linkage Map tool.</dt>
+						<dt class="whatList">Build a comparative map using the Linkage Map tool.</dt>
 						<dd class="searchList"><a href="<!--#include file='include/wi_url.html'-->searches/linkmap_form.shtml" class="small homeLink">Mouse Linkage Map with Orthologs</a></dd>
 						
-						<dt>View the mouse comparative genome maps.</dt>
+						<dt class="whatList">View the mouse comparative genome maps.</dt>
 						<dd class="searchList"><a href="<!--#include file='include/wi_url.html'-->reports/homologymap/mouse_human.shtml" class="small homeLink">Mouse-Human Othology Map</a></dd>
 						<dd class="searchList"><a href="<!--#include file='include/wi_url.html'-->reports/homologymap/mouse_rat.shtml" class="small homeLink">Mouse-Rat Orthology Map</a></dd>
 						
-						<dt>Download a complete set of rat, human, dog, or chimpanzee orthologs for mouse genes. Some sets also include associated 
+						<dt class="whatList">Download a complete set of rat, human, dog, or chimpanzee orthologs for mouse genes. Some sets also include associated 
 						  sequences, phenotype characteristics, or human disease data.</dt>
 						<dd class="searchList"><a href="<!--#include file='include/ftp_url2.html'-->pub/reports/index.html#orthology" class="small homeLink">Mammalian Orthology Reports (plain text)</a></dd>
 					</dl>
@@ -91,10 +91,18 @@
 				<div class="boxBG pad5">
 					<dl class="boxList">
 						<dt>How do I...</dt>
-						<dd class="faqList">.. view the ortholog set for a mouse gene? <a class="small homeLink" href='javascript:openFaqWindow("ORTH_set.shtml")'>FAQ</a></dd>
-						<dd class="faqList">.. view a comparative map of mouse and human chromosomes? <a class="small homeLink" href='javascript:openFaqWindow("ORTH_map.shtml")'>FAQ</a></dd>
-						<dd class="faqList">.. search or browse PIRSF protein superfamilies mapped to mouse, human, and rat genes? <a class="small homeLink" href='javascript:openFaqWindow("ORTH_PIRSF.shtml")'>FAQ</a></dd>
-						<dd class="faqList">.. find the mouse ortholog of a human gene? <a class="small homeLink" href='javascript:openFaqWindow("ORTH_gene.shtml")'>FAQ</a></dd>
+						<dd class="faqList">.. view the ortholog set for a mouse gene? 
+						<a class="small homeLink" onClick="javascript:openFaqWindow('ORTH_set.shtml'); return false;" 
+						href="<!--#include file='include/faq_url.html'-->ORTH_set.shtml">FAQ</a></dd>
+						<dd class="faqList">.. view a comparative map of mouse and human chromosomes? 
+						<a class="small homeLink" onClick="javascript:openFaqWindow('ORTH_map.shtml'); return false;" 
+						href="<!--#include file='include/faq_url.html'-->ORTH_map.shtml">FAQ</a></dd>
+						<dd class="faqList">.. search or browse PIRSF protein superfamilies mapped to mouse, human, and rat genes? 
+						<a class="small homeLink" onClick="javascript:openFaqWindow('ORTH_PIRSF.shtml'); return false;" 
+						href="<!--#include file='include/faq_url.html'-->ORTH_PIRSF.shtml">FAQ</a></dd>
+						<dd class="faqList">.. find the mouse ortholog of a human gene? 
+						<a class="small homeLink" onClick="javascript:openFaqWindow('ORTH_gene.shtml'); return false;" 
+						href="<!--#include file='include/faq_url.html'-->ORTH_gene.shtml">FAQ</a></dd>
 					</dl>
 
 					<!-- link to all FAQs page -->

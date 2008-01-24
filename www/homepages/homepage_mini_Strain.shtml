@@ -40,12 +40,12 @@
 					<tr valign="top" align="center">
 					<td>
 							<a href='javascript:openFaqWindow("STRN_Fest.shtml")'>
-								<img class="outlineImg" src="images/Strain_mice.gif" alt="Strains" height="105">
+								<img class="outlineImg" src="images/Strain_mice.gif" height="105">
 							</a>
 						</td>
 						<td>
 							<a href='javascript:openFaqWindow("STRN_SNP.shtml")'>
-								<img class="outlineImg" src="images/Strain_SNP.gif" alt="SNP" width="158" height="105">
+								<img class="outlineImg" src="images/Strain_SNP.gif" width="158" height="105">
 							</a>
 						</td>
 					</tr>
@@ -85,25 +85,25 @@
 						<dt>Search for SNPs by strain(s), SNP attributes, genomic position, or associated genes.</dt>
 						<dd class="searchList"><a href="<!--#include file='include/java_url.html'-->WIFetch?page=snpQF" class="small homeLink">SNP Query</a></dd>
 						
-						<dt>Search for RFLP or PCR based polymorphisms by strain, locus symbol, or map position.</dt>
+						<dt class="whatList">Search for RFLP or PCR based polymorphisms by strain, locus symbol, or map position.</dt>
 						<dd class="searchList"><a href="<!--#include file='include/wi_url.html'-->searches/polymorphism_form.shtml" class="small homeLink">RFLP/PCR Polymorphism Query</a></dd>
 						
-						<dt>Search the listing of Inbred Strains of Mice and Rats by M. Festing.</dt>
+						<dt class="whatList">Search the listing of Inbred Strains of Mice and Rats by M. Festing.</dt>
 						<dd class="searchList"><a href="<!--#include file='include/wi_url.html'-->external/festing/search_form.cgi" class="small homeLink">Inbred Strain Characteristics</a></dd>
 						
-						<dt>View a chart depicting the origins and relationships of inbred mouse strains.</dt>
+						<dt class="whatList">View a chart depicting the origins and relationships of inbred mouse strains.</dt>
 						<dd class="searchList"><a href="<!--#include file='include/mgihome_url.html'-->genealogy/" class="small homeLink">Genealogy Chart of Inbred Strains</a></dd>
 						
-						<dt>Register a new strain and receive official nomenclature and an MGI accession identifier.</dt>
+						<dt class="whatList">Register a new strain and receive official nomenclature and an MGI accession identifier.</dt>
 						<dd class="searchList"><a href="<!--#include file='include/mgihome_url.html'-->submissions/strains/index.shtml" class="small homeLink">Strain Nomenclature Form</a></dd>
 						
-						<dt>View guidelines to proper naming of mouse strains.</dt>
+						<dt class="whatList">View guidelines for proper naming of mouse strains.</dt>
 						<dd class="searchList"><a href="<!--#include file='include/mgihome_url.html'-->nomen/strains.shtml" class="small homeLink">Guide to Strain Nomenclature</a></dd>
 						
-						<dt>Search for sources of mutant mice and cell lines.</dt>
+						<dt class="whatList">Search for sources of mutant mice and cell lines.</dt>
 						<dd class="searchList"><a href="<!--#include file='include/imsr_home_url.html'-->" class="small homeLink">International Mouse Strain Resource (IMSR)</a></dd>						
 						
-						<dt>Find information on spontaneous, induced, and genetically-engineered mutations and QTL.</dt>
+						<dt class="whatList">Find information on spontaneous, induced, and genetically-engineered mutations and QTL.</dt>
 						<dd class="searchList"><a href="homepage_mini_PAD.shtml" class="small homeLink">Phenotypes, Alleles & Disease Models</a></dd>
 					</dl>
 				</div>
@@ -124,10 +124,18 @@
 				<div class="boxBG pad5">
 					<dl class="boxList">
 						<dt>How do I...</dt>
-						<dd class="faqList">.. find all known coding SNPs in a genomic location for one or more strains? <a class="small homeLink" href='javascript:openFaqWindow("STRN_SNP.shtml")'>FAQ</a></dd>
-						<dd class="faqList">.. find strains with RFLP/PCR polymorphisms in a particular gene? <a class="small homeLink" href='javascript:openFaqWindow("STRN_poly.shtml")'>FAQ</a></dd>
-						<dd class="faqList">.. find characteristics of a specific strain in M. Festing's <em>Inbred Strain Characteristics</em>? <a class="small homeLink" href='javascript:openFaqWindow("STRN_Fest.shtml")'>FAQ</a></dd>
-						<dd class="faqList">.. find genomic sequence for a specific mouse strain? <a class="small homeLink" href='javascript:openFaqWindow("STRN_genom.shtml")'>FAQ</a></dd>
+						<dd class="faqList">.. find all known coding SNPs in a genomic location for one or more strains? 
+						<a class="small homeLink" onClick="javascript:openFaqWindow('STRN_SNP.shtml'); return false;" 
+						href="<!--#include file='include/faq_url.html'-->STRN_SNP.shtml">FAQ</a></dd>
+						<dd class="faqList">.. find strains with RFLP/PCR polymorphisms in a particular gene? 
+						<a class="small homeLink" onClick="javascript:openFaqWindow('STRN_poly.shtml'); return false;" 
+						href="<!--#include file='include/faq_url.html'-->STRN_poly.shtml">FAQ</a></dd>
+						<dd class="faqList">.. find characteristics of a specific strain in M. Festing's <em>Inbred Strain Characteristics</em>? 
+						<a class="small homeLink" onClick="javascript:openFaqWindow('STRN_Fest.shtml'); return false;" 
+						href="<!--#include file='include/faq_url.html'-->STRN_Fest.shtml">FAQ</a></dd>
+						<dd class="faqList">.. find genomic sequence for a specific mouse strain? 
+						<a class="small homeLink" onClick="javascript:openFaqWindow('STRN_genom.shtml'); return false;" 
+						href="<!--#include file='include/faq_url.html'-->STRN_genom.shtml">FAQ</a></dd>
 					</dl>
 					<!-- link to all FAQs page -->
 					<a class="small homeLink" href="<!--#include file='include/faq_url.html'-->FAQ.shtml#strain">More FAQs</a>
