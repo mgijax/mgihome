@@ -88,10 +88,10 @@
 						<dt class="whatList">Search for genes using GO terms and other gene attributes.</dt>
 						<dd class="searchList"><a href="<!--#include file='include/java_url.html'-->WIFetch?page=markerQF" class="small homeLink">Genes & Markers Query</a></dd>
 						<dt class="whatList">Access GO annotations for genes associated with OMIM.</dt>
-						<dd class="searchList"><a href="<!--#include file='include/gograph_url.html'-->OrthoDisease/DisorderGraphs/index.html" class="small homeLink">GO Comparative Graphs: OrthoDisease sets</a></dd>
+						<dd class="searchList"><a href="<!--#include file='include/gograph_url.html'-->OrthoDisease/index.html" class="small homeLink">Comparison Graphs by OMIM gene or disease ID</a></dd>
 						<dt class="whatList">Obtain sets of MGI IDs for use in GO tools.</dt>
 						<dd class="searchList"><a href="<!--#include file='include/java_url.html'-->WIFetch?page=batchQF" class="small homeLink">Batch Query</a></dd>
-					</dl>					
+					</dl>
 					<dl>
 					   <dt class="whatList">Use GO annotations to discover what your gene set may have in common:</dt>
 					   <dd class="searchList small"><a href="<!--#include file='include/gotools_url.html'-->MGI_Term_Finder.html" class="homeLink">MGI GO Term Finder</a> - Analyze functional annotations</dd>
@@ -113,23 +113,23 @@
 				<div class="boxBG pad5">
 					<dl class="boxList">
 						<dt>How do I...</dt>
-                        <dd class="faqList">.. download all mouse GO annotations? 
-                        <a class="small homeLink" onClick="javascript:openFaqWindow('GO_dload.shtml'); return false;" 
-                        href="<!--#include file='include/faq_url.html'-->GO_dload.shtml">FAQ</a></dd>		
-						<dd class="faqList">.. find all GO annotations for a specific gene? 
-						<a class="small homeLink" onClick="javascript:openFaqWindow('GO_gene.shtml'); return false;" 
+                        <dd class="faqList">.. download all mouse GO annotations?
+                        <a class="small homeLink" onClick="javascript:openFaqWindow('GO_dload.shtml'); return false;"
+                        href="<!--#include file='include/faq_url.html'-->GO_dload.shtml">FAQ</a></dd>
+						<dd class="faqList">.. find all GO annotations for a specific gene?
+						<a class="small homeLink" onClick="javascript:openFaqWindow('GO_gene.shtml'); return false;"
 						href="<!--#include file='include/faq_url.html'-->GO_gene.shtml">FAQ</a></dd>
-						<dd class="faqList">.. find all genes with shared annotation to a GO term? 
-						<a class="small homeLink" onClick="javascript:openFaqWindow('GO_term.shtml'); return false;" 
+						<dd class="faqList">.. find all genes with shared annotation to a GO term?
+						<a class="small homeLink" onClick="javascript:openFaqWindow('GO_term.shtml'); return false;"
 						href="<!--#include file='include/faq_url.html'-->GO_term.shtml">FAQ</a></dd>
-						<dd class="faqList">.. find shared function for a list of specific genes? 
-						<a class="small homeLink" onClick="javascript:openFaqWindow('GO_finder.shtml'); return false;" 
+						<dd class="faqList">.. find shared function for a list of specific genes?
+						<a class="small homeLink" onClick="javascript:openFaqWindow('GO_finder.shtml'); return false;"
 						href="<!--#include file='include/faq_url.html'-->GO_finder.shtml">FAQ</a></dd>
-						<dd class="faqList">.. view annotations for mouse/human/rat ortholog sets? 
-						<a class="small homeLink" onClick="javascript:openFaqWindow('GO_ortho.shtml'); return false;" 
+						<dd class="faqList">.. view annotations for mouse/human/rat ortholog sets?
+						<a class="small homeLink" onClick="javascript:openFaqWindow('GO_ortho.shtml'); return false;"
 						href="<!--#include file='include/faq_url.html'-->GO_ortho.shtml">FAQ</a></dd>
-						<dd class="faqList">.. obtain FASTA sequence files for genes with GO annotations in common? 
-						<a class="small homeLink" onClick="javascript:openFaqWindow('GO_seq.shtml'); return false;" 
+						<dd class="faqList">.. obtain FASTA sequence files for genes with GO annotations in common?
+						<a class="small homeLink" onClick="javascript:openFaqWindow('GO_seq.shtml'); return false;"
 						href="<!--#include file='include/faq_url.html'-->GO_seq.shtml">FAQ</a></dd>
 					</dl>
 					<!-- link to all FAQs page -->
@@ -164,9 +164,9 @@
 	<!-- News content -->
 	<div class="boxBG pad5 small">
 		<ul class="small">
-			<li>GO curators at MGI are active participants in ontology development projects including 
-			revisions of the subtrees for 'blood pressure regulation' and 'muscle development'. 
-			If you would like to participate in the community annotation of gene products involved 
+			<li>GO curators at MGI are active participants in ontology development projects including
+			revisions of the subtrees for 'blood pressure regulation' and 'muscle development'.
+			If you would like to participate in the community annotation of gene products involved
 			in these processes, please visit the community annotation wikis.
 			<ul>
 				<li>Cardiovascular physiology: <a href='http://wiki.geneontology.org/index.php/Cardiovascular'>http://wiki.geneontology.org/index.php/Cardiovascular</a></li>
@@ -179,9 +179,9 @@
 
 <!-- Tabs box -->
 <!-- Note: This section uses a white gif to set the width and avoid
-    the a crash in IE6, and display problems in IE 6 & 7.  I also 
+    the a crash in IE6, and display problems in IE 6 & 7.  I also
     needed to put this div in a table to get the fix to work.  The
-    order otf the table and div tags is very specific to avoid some 
+    order otf the table and div tags is very specific to avoid some
     flickering in IE.                                            -->
 <table width="100%" cellpadding="0" cellspacing="0" border="0"><tr><td>
 <div class="boxWide marginBottom">
@@ -210,7 +210,7 @@
     go_box.setselectedClassTarget("linkparent") //"link" or "linkparent"
     go_box.init()
 </script>
-    
+
 <!--#include file='include/templateBodyStop.html'-->
 
 </body>
