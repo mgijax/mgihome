@@ -49,20 +49,22 @@
                 <div class="smallGOWrap blueBorder">
                     <a href='javascript:Toggle_GOimages("BigImage");' class="small homeLink">show larger image [-]</a>
                     <br />
-                    <a class="imgTopBottom" href='javascript:openFaqWindow("GM_genmap.shtml")'>
+                    <a class="imgTopBottom" href="<!--#include file='include/faq_url.html'-->GM_genmap.shtml" onClick='javascript:openFaqWindow("GM_genmap.shtml")'>
                         <img class="imgTopBottom pad5" src="images/Gene.jpg" border="0">
                         <br />
-                        <a href='javascript:openFaqWindow("GM_genmap.shtml")' class="small homeLink">Gene models from MGI, NCBI, Ensembl and VEGA, and RefSeqs for the gene Fgfr3</a>
+                        <a href="<!--#include file='include/faq_url.html'-->GM_genmap.shtml" onClick='javascript:openFaqWindow("GM_genmap.shtml")' class="small homeLink">
+                        Gene models from MGI, NCBI, Ensembl and VEGA, and RefSeqs for the gene Fgfr3</a>
                     </a>
                 </div>
 
                 <div class="bigGeneWrap blueBorder" id="BigImage" style="display:none;">
                     <a href='javascript:Toggle_GOimages("BigImage");' class="small homeLink">show smaller image [-]</a>
                     <br />
-                    <a class="imgTopBottom" href='javascript:openFaqWindow("GM_genmap.shtml")'>
+                    <a class="imgTopBottom" href="<!--#include file='include/faq_url.html'-->GM_genmap.shtml" onClick='javascript:openFaqWindow("GM_genmap.shtml")'>
                         <img class="imgTopBottom pad5" src="images/Gene_big.jpg" border="0">
                         <br />
-                        <a href='javascript:openFaqWindow("GM_genmap.shtml")' class="small homeLink">Gene models from MGI, NCBI, Ensembl and VEGA, and RefSeqs for the gene Fgfr3</a>
+                        <a href="<!--#include file='include/faq_url.html'-->GM_genmap.shtml" onClick='javascript:openFaqWindow("GM_genmap.shtml")' class="small homeLink">
+                        Gene models from MGI, NCBI, Ensembl and VEGA, and RefSeqs for the gene Fgfr3</a>
                     </a>
                 </div>
             </div>			

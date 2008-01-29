@@ -47,20 +47,22 @@
 				<div class="smallGOWrap blueBorder">
 					<a href='javascript:Toggle_GOimages("BigImage");' class="small homeLink">show larger image [-]</a>
 					<br />
-					<a class="imgTopBottom" href='javascript:openFaqWindow("GO_ortho.shtml")'>
+					<a class="imgTopBottom" href="<!--#include file='include/faq_url.html'-->GO_ortho.shtml" onClick='javascript:openFaqWindow("GO_ortho.shtml")'>
 						<img class="imgTopBottom pad5" src="images/GO.gif" border="0">
 						<br />
-						<a href='javascript:openFaqWindow("GO_ortho.shtml")' class="small homeLink">GO annotation comparison for mouse Slc22a6 and its human and rat orthologs</a>
+						<a href="<!--#include file='include/faq_url.html'-->GO_ortho.shtml" onClick='javascript:openFaqWindow("GO_ortho.shtml")' class="small homeLink">
+						GO annotation comparison for mouse Slc22a6 and its human and rat orthologs</a>
 					</a>
 				</div>
 
 				<div class="bigGOWrap blueBorder" id="BigImage" style="display:none;">
 					<a href='javascript:Toggle_GOimages("BigImage");' class="small homeLink">show smaller image [-]</a>
 					<br />
-					<a class="imgTopBottom" href='javascript:openFaqWindow("GO_ortho.shtml")'>
+					<a class="imgTopBottom" href="<!--#include file='include/faq_url.html'-->GO_ortho.shtml" onClick='javascript:openFaqWindow("GO_ortho.shtml")'>
 						<img class="imgTopBottom pad5" src="images/GO_big.gif" border="0">
 						<br />
-						<a href='javascript:openFaqWindow("GO_ortho.shtml")' class="small homeLink">GO annotation comparison for mouse Slc22a6 and its human and rat orthologs</a>
+						<a href="<!--#include file='include/faq_url.html'-->GO_ortho.shtml" onClick='javascript:openFaqWindow("GO_ortho.shtml")' class="small homeLink">
+						GO annotation comparison for mouse Slc22a6 and its human and rat orthologs</a>
 					</a>
 				</div>
 			</div>

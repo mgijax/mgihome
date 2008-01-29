@@ -39,24 +39,24 @@
 				<table>
 					<tr valign="top" align="center">
 					<td>
-							<a href='javascript:openFaqWindow("STRN_Fest.shtml")'>
+							<a href="<!--#include file='include/faq_url.html'-->STRN_Fest.shtml" onClick='javascript:openFaqWindow("STRN_Fest.shtml")'>
 								<img class="outlineImg" src="images/Strain_mice.gif" height="105">
 							</a>
 						</td>
 						<td>
-							<a href='javascript:openFaqWindow("STRN_SNP.shtml")'>
+							<a href="<!--#include file='include/faq_url.html'-->STRN_SNP.shtml" onClick='javascript:openFaqWindow("STRN_SNP.shtml")'>
 								<img class="outlineImg" src="images/Strain_SNP.gif" width="158" height="105">
 							</a>
 						</td>
 					</tr>
 					<tr valign="top" align="center">
 						<td align="center">
-							<em><a class="small homeLink" href='javascript:openFaqWindow("STRN_Fest.shtml")'>
+							<em><a class="small homeLink" href="<!--#include file='include/faq_url.html'-->STRN_Fest.shtml" onClick='javascript:openFaqWindow("STRN_Fest.shtml")'>
 								Inbred strains (a) C57BL/6J;<br>(b) C3H/HeJ; (c) A/J; (d) DBA/2J
 							</a></em>
 						</td>
 						<td>
-							<em><a class="small homeLink" href='javascript:openFaqWindow("STRN_SNP.shtml")'>
+							<em><a class="small homeLink" href="<!--#include file='include/faq_url.html'-->STRN_SNP.shtml" onClick='javascript:openFaqWindow("STRN_SNP.shtml")'>
 								SNP Query Result
 							</a></em>
 						</td>

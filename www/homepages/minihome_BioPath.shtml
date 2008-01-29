@@ -37,7 +37,8 @@
 		<td>
 			<div class="sideMargin marginBottom blueBorder pad5 small">
 				<center>
-				<a href='javascript:openFaqWindow("BP_imgpop.shtml")'><img class="outlineImg" src="images/Path.gif"/></a><br />
+				<a href="<!--#include file='include/faq_url.html'-->BP_imgpop.shtml" onClick='javascript:openFaqWindow("BP_imgpop.shtml")'>
+				<img class="outlineImg" src="images/Path.gif"/></a><br />
 				<em>Pathway glyphs overlayed with experimental data</em></center>
 			</div>
 		</td>

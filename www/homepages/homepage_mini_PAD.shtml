@@ -36,10 +36,10 @@
 		</td>
 		<td>
 			<div class="sideMargin marginBottom blueBorder pad5 small">
-				<center><a href='javascript:openFaqWindow("PAD_imgpop.shtml")'>
+				<center><a href="<!--#include file='include/faq_url.html'-->PAD_imgpop.shtml" onClick='javascript:openFaqWindow("PAD_imgpop.shtml")'>
 					<img src="images/Pheno.jpg" border="0"></a>
 				<br />
-				<em><a class="small homeLink" href='javascript:openFaqWindow("PAD_imgpop.shtml")'>Homozygote for the Ednrb<sup>s</sup> mutation, originally <br>known as piebald spotting.</a></em></center>
+				<em><a class="small homeLink" href="<!--#include file='include/faq_url.html'-->PAD_imgpop.shtml" onClick='javascript:openFaqWindow("PAD_imgpop.shtml")'>Homozygote for the Ednrb<sup>s</sup> mutation, originally <br>known as piebald spotting.</a></em></center>
 			</div>
 		</td>
 	</tr>
