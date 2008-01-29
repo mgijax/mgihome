@@ -164,6 +164,12 @@ def main ():
     stringToFile (config['FAQ_URL'],
         '../www/include/faq_url.html')
 
+    # new include files for apache aliased menu and homepages
+    stringToFile (config['HOMEPAGES_URL'],
+        '../www/include/homepages_url.html')
+    stringToFile (config['MENUS_URL'],
+        '../www/include/menus_url.html')
+
     stringToFile(getDbDate(), '../www/include/stats_date.shtml')
 
     #####----- Template Include Files --------#####
