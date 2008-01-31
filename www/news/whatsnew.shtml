@@ -34,15 +34,22 @@
 <DL>
 <dt><a name="feb_2008"></a><b>February, 2008</b></dt><br>
 <dd><ul>
-    <li>We've redesigned the MGI website! Click the horizontal navigation bar to see drop-down menu options or click  <A HREF="<!--#include file='include/wi_url.html'-->menus/allsearch_menu.shtml">All Search Tools</a> for a complete list of what's available.</li>
-<li>We've replaced our menu pages with new content area pages for each MGI area: <a href="../homepages/homepage_mini_Genes.shtml">Genes, Genome Features & Maps</a>, <a href="../homepages/homepage_mini_PAD.shtml">Phenotypes, Alleles & Disease Models</a>, <a href="../homepages/homepage_mini_GXD.shtml">Gene Expression Database (GXD)</a>, <a href="../homepages/homepage_mini_GO.shtml">Functional Annotation using the Gene Ontology (GO)</a>,
-<a href="../homepages/homepage_mini_Strain.shtml">Strains, SNPs & Polymorphisms</a>, <a href="../homepages/homepage_mini_Ortho.shtml">Mammalian Orthology</a>, and <a href="http://tumor.informatics.jax.org/mtbwi/index.do">Mouse Tumor Biology</a>).<br><br>
-<li>We've added a new area, <a href="../homepages/minihome_BioPath.shtml">Biochemical Pathways</a>, where you can access  the MouseCyc database of curated biochemical pathways.  The initial focus of this database is on metabolism, including biosynthesis, degradation, energy production, and detoxification. You can use this software to find mouse genetic and genomic data in the context of physiological and cellular processes, integrated with the knowledge base of MGI.</li>
+  <li>We've redesigned the MGI website! Click the horizontal navigation bar to see drop-down menu options or click  <A HREF="<!--#include file='include/wi_url.html'-->menus/allsearch.shtml">All Search Tools</a> for a complete list of what's available. There are new content pages for each MGI area: 
+  <ul>
+    <li><a href="<!--#include file='include/homepages_url.html'-->genes.shtml">Genes, Genome Features & Maps</a></li>
+    <li><a href="<!--#include file='include/homepages_url.html'-->phenotypes.shtml">Phenotypes, Alleles & Disease Models</a></li>
+    <li><a href="<!--#include file='include/homepages_url.html'-->expression.shtml">Gene Expression Database (GXD)</a></li>
+    <li><a href="<!--#include file='include/homepages_url.html'-->function.shtml">Functional Annotation using the Gene Ontology (GO)</a></li>
+    <li><a href="<!--#include file='include/homepages_url.html'-->strains_SNPs.shtml">Strains, SNPs & Polymorphisms</a></li>
+    <li><a href="<!--#include file='include/homepages_url.html'-->orthology.shtml">Mammalian Orthology</a></li>
+    <li><a href="http://tumor.informatics.jax.org/mtbwi/index.do">Mouse Tumor Biology</a>).</li>
+  </ul>   <br>
+<li>We've added a <i>new</i> area to MGI, <a href="../homepages/minihome_BioPath.shtml">Biochemical Pathways</a>. Here< you'll find the MouseCyc database of curated biochemical pathways.  Use this database to find mouse genetic and genomic data in the context of physiological and cellular processes (<i>e.g.</i>, biosynthesis, degradation, energy production, and detoxification), integrated with the knowledge base of MGI. <!--The initial focus of this database is on metabolism, including biosynthesis, degradation, energy production, and detoxification. --></li>
 
 
-<li>We've produced a new electronic book, <a href="<!--#include file='include/greenbook_url.html'-->"><i>Biology
+<li>We've posted another electronic book, <a href="<!--#include file='include/greenbook_url.html'-->"><i>Biology
 of the Laboratory Mouse</i></a> (the Staff of The Jackson Laboratory, E. Green, ed. 1966, Dover Publications, New York). <!--This format for works that benefit from search and cross-reference capabilities, such as dictionaries, reference works, and certain kinds of textbooks.--></li>
-<li>We've posted answers to Frequently Asked Questions (see <a href="<!--#include file='include/faq_url.html'-->FAQ.shtml">More FAQs</a>)</li>
+<li>We've posted answers to Frequently Asked Questions (see <a href="<!--#include file='include/faq_url.html'-->FAQ.shtml">More FAQs</a>)</dd>
 
    <li>We've designed a new <a href="../nomen/phenotype_data_form.shtml">Phenotype Data Submission Form</a> for describing (and submitting) characteristics of spontaneous, induced, or genetically engineered mutations already entered in MGI.</li>
      </ul>
