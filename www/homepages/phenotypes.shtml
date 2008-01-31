@@ -1,0 +1,177 @@
+<!--#include file='include/templateHead.html'-->
+
+  <title><!--#include file="include/mgiversion.html"--> - Phenotypes, Alleles &amp; Disease Models</title>
+
+
+<!------------- AJAX TABS CALLS -------------------------------------------------------->
+
+<link rel="stylesheet" type="text/css" href="<!--#include file='include/mgihome_url.html'-->homepages/ajaxtabs.css" />
+<script type="text/javascript" src="<!--#include file='include/mgihome_url.html'-->homepages/ajaxtabs.js">
+	/***********************************************
+	* Ajax Tabs Content script- © Dynamic Drive DHTML code library (www.dynamicdrive.com)
+	* This notice MUST stay intact for legal use
+	* Visit Dynamic Drive at http://www.dynamicdrive.com/ for full source code
+	***********************************************/
+</script>
+
+<link rel="stylesheet" type="text/css" href="<!--#include file='include/mgihome_url.html'-->homepages/minihome.css" />
+
+<!--#include file='include/templateBodyStart.html'-->
+
+<!-- start body content -->
+
+<!-- mini homepage header section -->
+<table class="sideMargin marginTop" border="0" cellspacing="0" cellpadding="0">
+	<tr>
+		<td align="center" valign="middle">
+			<span class="homePageTitle">
+				Phenotypes, Alleles &amp; Disease Models
+			</span>
+			<br>
+			<span class="homePageSubTitle">
+			   The Phenotypes/Alleles project in MGI enables access to spontaneous,
+			   induced, and genetically-engineered mutations and their
+			   strain-specific phenotypes.
+			</span>
+		</td>
+		<td>
+			<div class="sideMargin marginBottom blueBorder pad5 small">
+				<center><a href="<!--#include file='include/faq_url.html'-->PAD_imgpop.shtml" onClick='javascript:openFaqWindow("PAD_imgpop.shtml")'>
+					<img src="<!--#include file='include/mgihome_url.html'-->homepages/images/Pheno.jpg" border="0"></a>
+				<br />
+				<em><a class="small homeLink" href="<!--#include file='include/faq_url.html'-->PAD_imgpop.shtml" onClick='javascript:openFaqWindow("PAD_imgpop.shtml"); return false;'>Homozygote for the Ednrb<sup>s</sup> mutation, originally <br>known as piebald spotting.</a></em></center>
+			</div>
+		</td>
+	</tr>
+</table>
+
+
+<!-- 3 box section -->
+<table class="sideMargin" border="0" cellspacing="0" cellpadding="0">
+	<tr>
+		<td rowspan="2" width="50%" valign="top">
+			<!-- Left box: 'What can I do here?' -->
+			<div class="blueBorder rightCenterMargin">
+				<div class="boxTitle">
+					Access Data
+				</div>
+				<!-- 'What can I do here?'content -->
+				<!-- The content is in a definition list <dl> where the descriptive text
+				is in the term <dt>, and the link is in the definition <dd> -->
+				<div class="boxBG pad5">
+					<dl>
+						<dt>Search for mutations or QTL based on phenotype, human disease,  mutation type, gene, or genome location.</dt>
+						<dd class="searchList"><a class="small homeLink" href="<!--#include file='include/wi_url.html'-->searches/allele_form.shtml">Phenotypes, Alleles & Disease Models Query</a></dd>
+
+						<dt class="whatList">Search for a phenotype term to find relevant mutant genotypes.</dt>
+						<dd class="searchList"><a class="small homeLink" href="<!--#include file='include/wi_url.html'-->searches/MP_form.shtml">Mammalian Phenotype (MP) Browser</a></dd>
+
+						<dt class="whatList">Search for a human disease term to find  mouse models.</dt>
+						<dd class="searchList"><a class="small homeLink" href="<!--#include file='include/java_url.html'-->WIFetch?page=omimVocab&subset=A">Human Disease (OMIM) Browser</a></dd>
+
+						<dt class="whatList">Search for candidate genes for a given phenotype within a  genomic interval.</dt>
+						<dd class="searchList"><a class="small homeLink" href="<!--#include file='include/java_url.html'-->WIFetch?page=markerQF">Genes & Markers Query</a></dd>
+
+						<dt class="whatList">Input a list of genes and retrieve associated alleles and  phenotypes.</dt>
+						<dd class="searchList"><a class="small homeLink" href="<!--#include file='include/java_url.html'-->WIFetch?page=batchQF">Batch Query</a></dd>
+
+						<dt class="whatList">Submit a new allele, mutation, or transgene and receive official nomenclature and an MGI accession identifier.</dt>
+						<dd class="searchList"><a class="small homeLink" href="<!--#include file='include/mgihome_url.html'-->nomen/allmut_form.shtml">Allele Nomenclature Form</a></dd>
+
+						<dt class="whatList">View guides to proper naming of alleles and mutations.</dt>
+						<dd class="searchList"><a class="small homeLink" href="<!--#include file='include/mgihome_url.html'-->nomen/allmut_quickhelp.shtml">Quick Guide to Allele Nomenclature</a></dd>
+						<dd class="searchList"><a class="small homeLink" href="<!--#include file='include/mgihome_url.html'-->nomen/gene.shtml">Complete Guide to Nomenclature</a></dd>
+					</dl>
+				</div>
+			</div>
+		</td>
+		<td width="50%" valign="top">
+			<!-- Right-top box: FAQs -->
+			<div class="blueBorder marginBottom leftCenterMargin">
+				<div class="boxTitle">
+					<!-- Box-title goes here -->FAQs
+				</div>
+				<!-- FAQs content -->
+				<!-- The content is in a definition list <dl> where the list title is in
+				the term <dt>, and FAQ question is in the definition <dd>. Note the link
+				uses a javascript function to open a separate window;
+				javascript:openFaqWindow("faqPage.shtml")'-->
+				<div class="boxBG pad5">
+					<dl class="boxList">
+						<dt>How do I...</dt>
+						<dd class="faqList">.. find mutations in a specific gene?
+						<a class="small homeLink" onClick="javascript:openFaqWindow('PAD_gene.shtml'); return false;"
+						href="<!--#include file='include/faq_url.html'-->PAD_gene.shtml">FAQ</a></dd>
+						<dd class="faqList">.. find mouse models for a human disease or condition?
+						<a class="small homeLink" onClick="javascript:openFaqWindow('PAD_disease.shtml'); return false;"
+						href="<!--#include file='include/faq_url.html'-->PAD_disease.shtml">FAQ</a></dd>
+						<dd class="faqList">.. find mutations that cause a specific combination of phenotypes?
+						<a class="small homeLink" onClick="javascript:openFaqWindow('PAD_combo.shtml'); return false;"
+						href="<!--#include file='include/faq_url.html'-->PAD_combo.shtml">FAQ</a></dd>
+						<dd class="faqList">.. find all of one kind of allele (e.g. cre transgenes, LoxP/Frt-flanked alleles, etc.)?
+						<a class="small homeLink" onClick="javascript:openFaqWindow('PAD_muttype.shtml'); return false;"
+						href="<!--#include file='include/faq_url.html'-->PAD_muttype.shtml">FAQ</a></dd>
+					</dl>
+					<!-- link to all FAQs page -->
+					<a class="small homeLink" href="<!--#include file='include/faq_url.html'-->FAQ.shtml#pheno">More FAQs</a>
+				</div>
+			</div>
+		</td>
+	</tr>
+	<tr>
+		<td width="50%" valign="top">
+			<div class="blueBorder leftCenterMargin statList">
+				<div class="boxTitle">
+					<div class="left">Phenotypes, Alleles & Disease Models Includes</div>
+					<div class="right small"><!--#include file='include/stats_date.shtml'--></div>
+				</div>
+				<div class="boxBG pad5 small">
+					<!--#include file='stats/pad_stats.shtml'-->
+					<a class="small homeLink" href="<!--#include file="include/mgihome_url.html"-->homepages/stats/all_stats.shtml#allstats_pheno">More...</a>
+				</div>
+			</div>
+		</td>
+	</tr>
+</table>
+
+
+<!-- News box -->
+<!-- no news for this build -->
+
+<!-- Tabs box -->
+<!-- Note: This section uses a white gif to set the width and avoid
+    the a crash in IE6, and display problems in IE 6 & 7.  I also
+    needed to put this div in a table to get the fix to work.  The
+    order otf the table and div tags is very specific to avoid some
+    flickering in IE.                                            -->
+<table width="100%" cellpadding="0" cellspacing="0" border="0"><tr><td>
+<div class="boxWide marginBottom">
+	<ul id="padtab" class="shadetabs">
+		<li><a href="<!--#include file='include/mgihome_url.html'-->homepages/tabContents/PAD_About.shtml" rel="padcontentarea">About Phenotypes</a></li>
+		<li><a href="<!--#include file='include/mgihome_url.html'-->homepages/tabContents/PAD_Help.shtml" rel="padcontentarea">Help Documents</a></li>
+		<li><a href="<!--#include file='include/mgihome_url.html'-->homepages/tabContents/PAD_Collaborators.shtml" rel="padcontentarea">Collaborators</a></li>
+		<li class="selected"><a href="<!--#include file='include/mgihome_url.html'-->homepages/tabContents/PAD_Resources" rel="padcontentarea">Other Links</a></li>
+	</ul>
+	<!-- this is where the tab text gets inserted by javascript -->
+	<div id="padcontentarea" class="contentstyle">
+        <!-- text for default selected tab inserted here as an include -->
+        <!--#include file='tabContents/PAD_Resources'-->
+	</div>
+
+
+<img src="<!--#include file='include/mgihome_url.html'-->homepages/images/white_dot.gif" width="500px" height="1px">
+</td></tr>
+</div>
+</table>
+
+<script type="text/javascript">
+	var pad_box=new ddajaxtabs("padtab","padcontentarea")
+	pad_box.setpersist(true)
+	pad_box.setselectedClassTarget("linkparent")
+	pad_box.init()
+</script>
+
+<!--#include file='include/templateBodyStop.html'-->
+
+</body>
+</html>
