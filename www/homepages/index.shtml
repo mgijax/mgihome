@@ -5,8 +5,8 @@
 <meta name="keywords" content="Mouse Genome Database, Gene Expression Database, Mouse Tumor Biology, Gene Ontology, Mouse Genome Sequence Project">
 
 <!-- Home Page Specific Css -->
-<link rel="stylesheet" type="text/css" href="<!--#include file="include/mgihome_url"-->homepages/homepage.css"/>
-<link rel="stylesheet" type="text/css" href="minihome.css" />
+<link rel="stylesheet" type="text/css" href="<!--#include file="include/mgihome_url.html"-->homepages/homepage.css"/>
+<link rel="stylesheet" type="text/css" href="<!--#include file="include/mgihome_url.html"-->homepages/minihome.css" />
 
 <!--#include file='include/templateHomePageBodyStart.html'-->
 
@@ -24,61 +24,61 @@
 
   <div class="boxTitle">
     <span class="left">Explore MGI</span>
-    <span class="right"><a class="" href="<!--#include file='include/wi_url.html'-->menus/allsearch_menu.shtml">All Search Tools</a></span>
+    <span class="right"><a class="" href="<!--#include file='include/menus_url.html'-->allsearch.shtml">All Search Tools</a></span>
   </div>
 
   <div class="blueBorder grayBG">
   <table width="100%">
   <tr>
     <td class="grayBG homePageImageLabel" width="25%">
-      <a class="homeLink" href="<!--#include file='include/mgihome_url.html'-->homepages/homepage_mini_Genes.shtml">
+      <a class="homeLink" href="<!--#include file='include/homepages_url.html'-->genes.shtml">
       Genes, Genome<br>Features &amp; Maps</a>
     </td>
     <td class="grayBG homePageImageLabel" width="25%">
-      <a class="homeLink" href="<!--#include file='include/mgihome_url.html'-->homepages/homepage_mini_PAD.shtml">
+      <a class="homeLink" href="<!--#include file='include/homepages_url.html'-->phenotypes.shtml">
       Phenotypes, Alleles<br>&amp; Disease Models</a>
     </td>
     <td class="grayBG homePageImageLabel" width="25%">
-      <a class="homeLink" href="<!--#include file='include/mgihome_url.html'-->homepages/homepage_mini_GXD.shtml">
+      <a class="homeLink" href="<!--#include file='include/homepages_url.html'-->expression.shtml">
       Gene Expression</a>
     </td>
     <td class="grayBG homePageImageLabel" width="25%">
-      <a class="homeLink" href="<!--#include file='include/mgihome_url.html'-->homepages/homepage_mini_GO.shtml">
+      <a class="homeLink" href="<!--#include file='include/homepages_url.html'-->function.shtml">
       GO Functional Annotations</a>
     </td>
   </tr>
   <tr>
       <td class="homePageImage" align="center" valign="middle" width="25%">
-        <a class="homeLink" href="<!--#include file='include/mgihome_url.html'-->homepages/homepage_mini_Genes.shtml">
-        <img src="images/homepage_GeneLogo.gif" style="border: 1px solid rgb(84, 112, 155);" height="75" width="154">
+        <a class="homeLink" href="<!--#include file='include/homepages_url.html'-->genes.shtml">
+        <img src="<!--#include file='include/mgihome_url.html'-->/homepages/images/homepage_GeneLogo.gif" style="border: 1px solid rgb(84, 112, 155);" height="75" width="154">
         </a>
       </td>
       <td class="homePageImage" align="center" valign="middle" width="25%">
-        <a class="homeLink" href="<!--#include file='include/mgihome_url.html'-->homepages/homepage_mini_PAD.shtml">
-        <img src="images/homepage_PhenoLogo.jpg" style="border: 1px solid rgb(84, 112, 155);" height="75" width="125">
+        <a class="homeLink" href="<!--#include file='include/homepages_url.html'-->phenotypes.shtml">
+        <img src="<!--#include file='include/mgihome_url.html'-->/homepages/images/homepage_PhenoLogo.jpg" style="border: 1px solid rgb(84, 112, 155);" height="75" width="125">
         </a>
       </td>
       <td class="homePageImage" align="center" valign="middle" width="25%">
-        <a class="homeLink" href="<!--#include file='include/mgihome_url.html'-->homepages/homepage_mini_GXD.shtml">
-        <img src="images/homepage_GXDLogo.gif" style="border: 1px solid rgb(84, 112, 155);">
+        <a class="homeLink" href="<!--#include file='include/homepages_url.html'-->expression.shtml">
+        <img src="<!--#include file='include/mgihome_url.html'-->/homepages/images/homepage_GXDLogo.gif" style="border: 1px solid rgb(84, 112, 155);">
         </a>
       </td>
       <td class="homePageImage" align="center" valign="middle" width="25%">
-        <a class="homeLink" href="<!--#include file='include/mgihome_url.html'-->homepages/homepage_mini_GO.shtml">
-        <img src="images/homepage_GOLogo.gif" style="border: 1px solid rgb(84, 112, 155);" height="75" width="146">
+        <a class="homeLink" href="<!--#include file='include/homepages_url.html'-->function.shtml">
+        <img src="<!--#include file='include/mgihome_url.html'-->/homepages/images/homepage_GOLogo.gif" style="border: 1px solid rgb(84, 112, 155);" height="75" width="146">
         </a>
       </td>
   </tr>
     <td class="grayBG homePageImageLabel">
-      <a class="homeLink" href="<!--#include file='include/mgihome_url.html'-->homepages/minihome_BioPath.shtml">
+      <a class="homeLink" href="<!--#include file='include/homepages_url.html'-->pathways.shtml">
       &nbsp;Biochemical Pathways&nbsp;</a>
     </td>
     <td class="grayBG homePageImageLabel">
-      <a class="homeLink" href="<!--#include file='include/mgihome_url.html'-->homepages/homepage_mini_Strain.shtml">
+      <a class="homeLink" href="<!--#include file='include/homepages_url.html'-->strains_SNPs.shtml">
       Strains, SNPs &amp; Polymorphisms</a>
     </td>
     <td class="grayBG homePageImageLabel">
-      <a class="homeLink" href="<!--#include file='include/mgihome_url.html'-->homepages/homepage_mini_Ortho.shtml">
+      <a class="homeLink" href="<!--#include file='include/homepages_url.html'-->orthology.shtml">
       Mammalian Orthology</a>
     </td>
     <td class="grayBG homePageImageLabel">
@@ -88,23 +88,23 @@
   </tr>
   <tr>
     <td class="homePageImage" align="center" valign="middle" width="25%">
-      <a class="homeLink" href="<!--#include file='include/mgihome_url.html'-->homepages/minihome_BioPath.shtml">
-      <img src="images/homepage_BioPathLogo.gif" style="border: 1px solid rgb(84, 112, 155);">
+      <a class="homeLink" href="<!--#include file='include/homepages_url.html'-->pathways.shtml">
+      <img src="<!--#include file='include/mgihome_url.html'-->/homepages/images/homepage_BioPathLogo.gif" style="border: 1px solid rgb(84, 112, 155);">
       </a>
     </td>
     <td class="homePageImage" align="center" valign="middle" width="25%">
-      <a class="homeLink" href="<!--#include file='include/mgihome_url.html'-->homepages/homepage_mini_Strain.shtml">
-      <img src="images/homepage_StrainLogo.jpg" style="border: 1px solid rgb(84, 112, 155);">
+      <a class="homeLink" href="<!--#include file='include/homepages_url.html'-->strains_SNPs.shtml">
+      <img src="<!--#include file='include/mgihome_url.html'-->/homepages/images/homepage_StrainLogo.jpg" style="border: 1px solid rgb(84, 112, 155);">
       </a>
     </td>
     <td class="homePageImage" align="center" valign="middle" width="25%">
-      <a class="homeLink" href="<!--#include file='include/mgihome_url.html'-->homepages/homepage_mini_Ortho.shtml">
-      <img src="images/homepage_OrthoLogo.gif" style="border: 1px solid rgb(84, 112, 155);" height="75" width="125">
+      <a class="homeLink" href="<!--#include file='include/homepages_url.html'-->orthology.shtml">
+      <img src="<!--#include file='include/mgihome_url.html'-->/homepages/images/homepage_OrthoLogo.gif" style="border: 1px solid rgb(84, 112, 155);" height="75" width="125">
       </a>
     </td>
     <td class="homePageImage" align="center" valign="middle" width="25%">
       <a class="homeLink" href="<!--#include file='include/mtb_url.html'-->">
-      <img src="images/homepage_MTBLogo.jpg" style="border: 1px solid rgb(84, 112, 155);" name="MTB">
+      <img src="<!--#include file='include/mgihome_url.html'-->/homepages/images/homepage_MTBLogo.jpg" style="border: 1px solid rgb(84, 112, 155);" name="MTB">
       </a>
     </td>
   </tr>
@@ -124,32 +124,32 @@
       <dt>How do I...</dt>
 
       <dd class="faqListHomePage">.. search for genes, QTL, or other features in a specific genome interval?
-        <a class="small homeLink" 
-          onClick='javascript:openFaqWindow("GM_marker.shtml"); return false;' 
+        <a class="small homeLink"
+          onClick='javascript:openFaqWindow("GM_marker.shtml"); return false;'
           href="<!--#include file='include/faq_url.html'-->GM_marker.shtml">FAQ
         </a>
       </dd>
       <dd class="faqListHomePage">.. use attributes such as genome location, disease association, phenotype, or function to find specific genes?
-        <a class="small homeLink" 
-          onClick='javascript:openFaqWindow("GM_attr.shtml"); return false;' 
+        <a class="small homeLink"
+          onClick='javascript:openFaqWindow("GM_attr.shtml"); return false;'
           href="<!--#include file='include/faq_url.html'-->GM_attr.shtml">FAQ
         </a>
       </dd>
       <dd class="faqListHomePage">.. find mutant alleles associated with specific phenotypes or human diseases?
-        <a class="small homeLink" 
-          onClick='javascript:openFaqWindow("PAD_allele.shtml"); return false;' 
+        <a class="small homeLink"
+          onClick='javascript:openFaqWindow("PAD_allele.shtml"); return false;'
           href="<!--#include file='include/faq_url.html'-->PAD_allele.shtml">FAQ
         </a>
       </dd>
       <dd class="faqListHomePage">.. find expression data for a specific gene and tissue?
-        <a class="small homeLink" 
-          onClick='javascript:openFaqWindow("GXD_GeneTissue"); return false;' 
+        <a class="small homeLink"
+          onClick='javascript:openFaqWindow("GXD_GeneTissue"); return false;'
           href="<!--#include file='include/faq_url.html'-->GXD_GeneTissue">FAQ
         </a>
       </dd>
       <dd class="faqListHomePage">.. create a genome map from a genomic interval?
-        <a class="small homeLink" 
-          onClick='javascript:openFaqWindow("GM_genmap.shtml"); return false;' 
+        <a class="small homeLink"
+          onClick='javascript:openFaqWindow("GM_genmap.shtml"); return false;'
           href="<!--#include file='include/faq_url.html'-->GM_genmap.shtml">FAQ
         </a>
       </dd>
@@ -187,7 +187,7 @@
   <div id="mgiNews" class="blueBorder grayBG">
   <ul style="line-height:1.3;">
   <li style="margin-bottom:6px;">
-    We've redesigned the MGI website and navigation tools. You'll find it's easy to locate whatever you're looking for: just click the drop-down menus to see the options or click <a href="<!--#include file='include/wi_url.html'-->menus/allsearch_menu.shtml">All Search Tools</a> to see a complete list of what's available. <a href="<!--#include file='include/mgihome_url.html'-->support/tjl_inbox.shtml" class="homeLink">Comments and feedback are welcome.</a>
+    We've redesigned the MGI website and navigation tools. You'll find it's easy to locate whatever you're looking for: just click the drop-down menus to see the options or click <a href="<!--#include file='include/menus_url.html'-->allsearch.shtml">All Search Tools</a> to see a complete list of what's available. <a href="<!--#include file='include/mgihome_url.html'-->support/tjl_inbox.shtml" class="homeLink">Comments and feedback are welcome.</a>
   </li>
   <li style="margin-bottom:6px;">
     <a href="http://ella.jax.org:8000/" class="homeLink">MouseCyc</a>, a new database of curated biochemical pathways for the laboratory mouse, is now available from the MGI website.
@@ -211,7 +211,7 @@
     &nbsp;<a href="<!--#include file='include/mgihome_url.html'-->KOMP/nominationForm.shtml" class="homeLink">Nominate genes</a> to be knocked out by the U.S. NIH KOMP project.
   <br/><br/>
   <span class="smaller"><em>Jan 08</em></span>
-    &nbsp;Visit the <a href="http://www.informatics.jax.org/imsr/" class="homeLink">International Mouse Strain Resource (IMSR)</a> to locate mice, cryopreserved embryos and gametes, and ES cell lines that are available through public, academic and commercial repositories.
+    &nbsp;Visit the <a href="<!--#include file='include/imsr_home_url.html'-->" class="homeLink">International Mouse Strain Resource (IMSR)</a> to locate mice, cryopreserved embryos and gametes, and ES cell lines that are available through public, academic and commercial repositories.
   </div>
 
 <!--#include file='include/templateHomePageBodyStop.html'-->
