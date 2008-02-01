@@ -49,7 +49,7 @@
                 <div class="smallGOWrap blueBorder">
                     <a href='javascript:Toggle_GOimages("BigImage");' class="small homeLink">show larger image [-]</a>
                     <br />
-                    <a class="imgTopBottom" href="<!--#include file='include/faq_url.html'-->GM_genmap.shtml" onClick='javascript:openFaqWindow("GM_genmap.shtml")'>
+                    <a class="imgTopBottom" href="<!--#include file='include/faq_url.html'-->GM_genmap.shtml" onClick='javascript:openFaqWindow("GM_genmap.shtml"); return false;'>
                         <img class="imgTopBottom pad5" src="<!--#include file='include/mgihome_url.html'-->homepages/images/Gene.jpg" border="0">
                         <br />
                         <a href="<!--#include file='include/faq_url.html'-->GM_genmap.shtml" onClick='javascript:openFaqWindow("GM_genmap.shtml"); return false;' class="small homeLink">
