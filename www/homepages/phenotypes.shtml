@@ -36,7 +36,7 @@
 		</td>
 		<td>
 			<div class="sideMargin marginBottom blueBorder pad5 small">
-				<center><a href="<!--#include file='include/faq_url.html'-->PAD_imgpop.shtml" onClick='javascript:openFaqWindow("PAD_imgpop.shtml"): retun false;'>
+				<center><a href="<!--#include file='include/faq_url.html'-->PAD_imgpop.shtml" onClick='javascript:openFaqWindow("PAD_imgpop.shtml"); return false;'>
 					<img src="<!--#include file='include/mgihome_url.html'-->homepages/images/Pheno.jpg" border="0"></a>
 				<br />
 				<em><a class="small homeLink" href="<!--#include file='include/faq_url.html'-->PAD_imgpop.shtml" onClick='javascript:openFaqWindow("PAD_imgpop.shtml"); return false;'>Homozygote for the Ednrb<sup>s</sup> mutation, originally <br>known as piebald spotting.</a></em></center>
