@@ -7,10 +7,12 @@
     font-style: italic;
 }
 .homePageImageLabel {
-    font-size:12px;
+    font-size:14px;
     font-weight:bold;
     text-align: center;
-    vertical-align:bottom;
+    vertical-align:middle;
+    padding-bottom:4px;
+    padding-top:10px;
 }
 .homePageImage {
     margin-left: auto;
@@ -70,7 +72,6 @@
 
     .boxBG{
         background-color:#F9F9F9;
-        margin:.2em;
     }
     
     .marginTop {
@@ -103,8 +104,15 @@
         margin-bottom:1em;
     }
     
-    dt.whatList {
-        margin-top:1.5em;
+    .newsList {
+        margin: 0em 0em .5em .5em;
+        padding: 0em;
+    }  
+
+    .newsList li {
+        margin-bottom: .5em;
+        list-style-position: inside;
+        line-height: 1.25em;
     }
 
     dd.searchList {
@@ -151,6 +159,15 @@
         white-space: nowrap;
         text-align:right;
     }
+    
+    .center {
+        text-align:center;
+    }
+    
+    .padBottom {
+        padding-top: 10px;
+        padding-bottom: 1em;
+    }
 
     .faqList {
         margin-top:.5em;
@@ -175,7 +192,7 @@
     .outerGeneWrap {
         position:relative;
         height:270px;
-        width:250px;
+        width:300px;
     }
     
     .smallGOWrap {
@@ -200,8 +217,8 @@
         position:absolute;
         top:-2px; 
         right:-2px;
-        height:510px;
-        width:513px;
+        height:410px;
+        width:410px;
         text-align:center; 
         background-color:#FFFFFF;
     }
