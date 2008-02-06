@@ -35,7 +35,8 @@
 		</td>
 		<td align="center">
 			<div class="sideMargin marginBottom blueBorder pad5 small">
-                <img class="outlineImg" src="<!--#include file='include/mgihome_url.html'-->homepages/images/Ortho.gif">
+			    <a href="<!--#include file='include/faq_url.html'-->ORTH_imgpop.shtml" onClick='javascript:openFaqWindow("ORTH_imgpop.shtml"); return false;'>
+                <img class="outlineImg" src="<!--#include file='include/mgihome_url.html'-->homepages/images/Ortho.gif"></a>
 			</div>
 		</td>
 	</tr>
