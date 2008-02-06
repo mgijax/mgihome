@@ -149,7 +149,7 @@ from the <a href="<!--#include file='include/wi_url.html'-->menus/homology_menu.
  <li>Source information about the clones that the sequences are derived from, such as strain, tissue, or library, is carefully translated into controlled vocabularies (see <a href="#vocabularies">Vocabulary Browsers</a>).  This adds enormous power to sequence queries, since authors often use multiple terms to specify a strain or tissue.  </p>
 
 <h3><a name="snp"></a>SNP Data</h3>
-<ul><li>MGD provides comprehensive information about reference SNPs including the reference flanking sequence, assays that comprise the SNP, gene/marker associations with their corresponding function class annotations, and links to popular gene browsers including MGD Mouse GBrowse and its transcript, gene model, and MGD-curated phenotype and allele tracks.  
+<ul><li>MGD provides comprehensive information about reference SNPs including the reference flanking sequence, assays that comprise the SNP, gene/marker associations with their corresponding function class annotations, and links to popular gene browsers including Mouse Genome Browser and its transcript, gene model, and MGD-curated phenotype and allele tracks.  
 <li>The 
 <a href="<!--#include file='include/java_url.html'-->WIFetch?page=snpQF">Mouse SNP Query Form</a> lets you search for RefSNPs by strains, strain comparisons, RefSNP attributes, map position, marker range, or associated genes.</p>
 </p>
@@ -216,7 +216,7 @@ See <a href="<!--#include file='include/userdocs_url.html'-->mapping_data.shtml"
 </p>
 <h4>Physical Maps</h4>
 <p>In June 1997, MGD began storing physical mapping data from MIT's mouse physical mapping project in which MIT primers and STSs are mapped against a mouse YAC library to build a contig map of the mouse. MGD provides query access to the MIT primers, STSs, and YACs. In addition, MGD provides integrated genetic/physical displays in Web Map format. These map files are updated when the MIT mapping physical mapping data set is  updated.</p>
-<p>In May 2005, MGD added a customized version of Lincoln Stein's Generic Genome Browser (GBrowse) that supports interactive browsing and display of mouse genome annotations. Access to MGD Mouse GBrowse is from the MGD home page (http://www.informatics.jax.org) and from the sequence map section on MGD gene detail pages. Tracks for MGD Mouse GBrowse include MGD representative transcripts; Ensembl, NCBI, and VEGA gene models; SNPs; QTLs; alleles (induced, spontaneous, gene-trapped, transgenic, targeted); phenotypes; and STS markers linked to UniSTS at NCBI. Tracks are updated at different times, depending on data availability. See the <a href="http://gbrowse.informatics.jax.org/gbrowse/docs/update_notes_36.html">update notes</a> for details.</p>
+<p>In May 2005, MGD added a customized version of Lincoln Stein's Generic Genome Browser, the Mouse Genome Browser, which  supports interactive browsing and display of mouse genome annotations. Access to Mouse Genome Browser is from the MGD home page (http://www.informatics.jax.org) and from the sequence map section on MGD gene detail pages. Tracks for Mouse Genome Browser include MGD representative transcripts; Ensembl, NCBI, and VEGA gene models; SNPs; QTLs; alleles (induced, spontaneous, gene-trapped, transgenic, targeted); phenotypes; and STS markers linked to UniSTS at NCBI. Tracks are updated at different times, depending on data availability. See the <a href="http://gbrowse.informatics.jax.org/gbrowse/docs/update_notes_36.html">update notes</a> for details.</p>
 </ul>
 </p>
 
