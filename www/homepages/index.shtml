@@ -131,7 +131,7 @@
       </dd>
       <dd class="faqListHomePage">.. find expression data?
         <a class="small homeLink"
-          onClick='javascript:openFaqWindow("GXD_GeneTissue"); return false;'
+          onClick='javascript:openFaqWindow("GXD_GeneTissue.shtml"); return false;'
           href="<!--#include file='include/faq_url.html'-->GXD_GeneTissue.shtml">FAQ
         </a>
       </dd>
@@ -158,8 +158,8 @@
       <div class="boxBG pad5">
         <ul class="newsList">
             <li>The MGI website and navigation tools have been redesigned. Take a 
-                <a class="homeLink" onClick='javascript:openFaqWindow("GM_genmap.shtml"); return false;'
-                href="<!--#include file='include/faq_url.html'-->GM_genmap.shtml">quick tour</a>.</li>
+                <a class="homeLink" onClick='javascript:openFaqWindow("Tour.shtml"); return false;'
+                href="<!--#include file='include/faq_url.html'-->Tour.shtml">quick tour</a>.</li>
             <li><a class="homeLink" href="http://ella.jax.org:8000/">MouseCyc</a>, a new database of 
                 curated biochemical pathways, is now available at MGI.</li>
         </ul>

@@ -140,11 +140,11 @@
 					<!------------- CALL SCRIPT TO ACTIVATE ALL BLOCKS AT END OF PAGE -------------------->
 					<ul id="maintab7" class="shadetabs">
 						<li class="selected"><a href="tabContents/GXD_Curators.shtml" rel="policyarea">Expression</a></li>
-						<li><a href="tabContents/GXD_Curators.shtml" rel="policyarea">GO Annotations</a></li>
+						<li><a href="tabContents/GO_Curators.shtml" rel="policyarea">GO Annotations</a></li>
 						<li><a href="tabContents/Ortho_Contents.shtml" rel="policyarea">Orthology</a></li>
 					</ul>
 					<div id="policyarea" class="contentstyle">
-						<!--#include file='tabContents/PAD_Curators.shtml'-->
+						<!--#include file='tabContents/GXD_Curators.shtml'-->
 					</div>
 					<script type="text/javascript">
 						var box3=new ddajaxtabs("maintab7", "policyarea")
