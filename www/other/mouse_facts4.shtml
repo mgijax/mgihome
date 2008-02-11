@@ -11,11 +11,29 @@
   </div> 
 <!--titleBar-->
 
-
+<style>
+	.toc { margin 0px;
+		background-color:#DFEFFF; }
+	.toc ul { font-size: 12px;
+		margin 0px;
+		text-align: center;
+		line-height: 1.75;
+		list-style-type: none;
+		padding: .75em .75em 0.1em .75em;
+		min-width: 600px;}
+	.toc li { display: inline;
+		white-space: nowrap; }
+	.outline { border: 2px solid #DFEFFF; }
+	dl.linkedList { margin-left: 2em; }
+	.linkedList dt { margin-top: 1em; }
+	.linkedList dd { margin-left: 1em;
+		margin-top: .25em;
+		font-style:italic}
+</style>
 
 <!-- TOC table -->
 		
-<table width="!" cellpadding="8" align="center">
+<table class="toc" width="!" cellpadding="8" align="center">
   
   <tr>
   <td><a href="#MolecRes">Molecular Resources</a> | <a href="#mouse_res">Mouse Resources</a> | <a href="#Misc">Miscellaneous Useful Tools </a> | <a href="#mammal_model">Mammals and Model Organisms</a></td></tr>
@@ -97,7 +115,7 @@ Nomenclature<br>-->
 
 <!--<A HREF="http://bio.lsd.ornl.gov/mouse/">Oak Ridge National Laboratory (ORNL)</A>: mouse mutant stocks<br>-->
 <!--<a href="http://www.neuromice.org">Neuromice.org</a>:  database and repository of mouse neurological mutants<br>-->
-<dd>Other commercial vendors: <a href="http://www.criver.com/research_models_and_services/">Charles River Laboratories, Inc.</a>,
+<dd>Commercial vendors: <a href="http://www.criver.com/research_models_and_services/">Charles River Laboratories, Inc.</a>,
 <a href="http://www.taconic.com/">Taconic</a>, <a href="http://www.harlan.com/">Harlan Sprague Dawley, Inc.</a></dd>
 
 <br>
