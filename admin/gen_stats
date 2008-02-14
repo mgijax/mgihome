@@ -9,6 +9,8 @@
 ##=====
 
 import sys
+if '/usr/local/mgi/live/lib/python/' not in sys.path:
+        sys.path.insert(0, '/usr/local/mgi/live/lib/python/')
 if '.' not in sys.path:
         sys.path.insert (0, '.')
 import warnings
