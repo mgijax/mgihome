@@ -30,8 +30,8 @@ as a non-member to see if you want to subscribe. You can also search the list ar
 <P>
 <HR>
 <B>How to Subscribe</B><p>
-You can subscribe here.  Enter your name and E-mail address below and check the list(s) you want to subscribe to. Click on the Submit button to send
-your subscription.  You will receive an acknowledgement and instructions via E-mail.<p>
+You can subscribe here.  Enter your name and E-mail address below and click the list. Click on the Submit button to send
+your subscription request.  You will receive an acknowledgement and instructions via E-mail.<p>
 
 <FORM METHOD="POST" ACTION="listsrv_subscribe.cgi">
 <DL>
@@ -39,10 +39,9 @@ your subscription.  You will receive an acknowledgement and instructions via E-m
 <DD><INPUT TYPE="text" NAME="username" SIZE=30>
 <DT><p>Your E-mail address:<br>
 <DD><INPUT TYPE="text" NAME="emailaddr" SIZE=30><P>
-<DT>Check the list(s) you want to subscribe to:<p>
+<DT>Click to put a checkmark next to the list:<p>
 <DD><INPUT TYPE="checkbox" NAME="listname" VALUE="mgi-list"> mgi-list
 <!--<DD><INPUT TYPE="checkbox" NAME="listname" VALUE="rat-list"> rat-list-->
-<DD><INPUT TYPE="checkbox" NAME="listname" VALUE="phenome-list"> phenome-list
 </DL>
 <HR>
 <INPUT TYPE=submit VALUE="Submit"> <INPUT TYPE=reset VALUE="Reset Form">
