@@ -127,7 +127,9 @@ def main ():
     stringToFile (config['COOKBOOK_URL'], \
             '../www/include/cookbook_url.html')        
     stringToFile (config['MORSEBOOK_URL'], \
-            '../www/include/morsebook_url.html')        
+            '../www/include/morsebook_url.html') 
+    stringToFile (config['PATHWAYS_URL'], \
+            '../www/include/pathways_url.html')       
     stringToFile (config['SILVER_URL'], \
             '../www/include/silverbook_url.html') 
     stringToFile (config['GREENBOOK_URL'], \
