@@ -38,7 +38,7 @@ GXD integrates different types of gene expression information from the mouse and
 <li><b>Mouse Tumor Biology (MTB) Database</b><br>
 The goal of the <a href="http://tumor.informatics.jax.org/mtbwi/index.do">Mouse Tumor Biology (MTB) Database </a> is to help researchers choose experimental models, review mutation patterns in specific cancers, and identify genes commonly mutated across a spectrum of cancers. The database currently holds over 10,000 tumor records.</li>
 </ul>
-<font size="-2"><a href="#top">Back to Top</a>
+<font size="-1"><a href="#top">Back to Top</a>
 </font>-->
 <h3><a name="aboutMGD"></a>About MGD</h3>
 
@@ -61,15 +61,15 @@ staff who scan the current scientific  literature,  extract  relevant data, and 
 <li>Mouse genetic phenotypes, genetic interrelationships, and polymorphic loci</li>
 <li>Polymorphic loci  related  to  specified strains</li>
 <li>SNPs and other sequence polymorphisms </li>
-<li>Mammalian orthology data </li>
-<li>Sequence data </li>
+<li>Mammalian orthology data</li>
+<li>Sequence data</li>
 <li>Molecular probes and clones (probes, clones, primers and YACs)</li>
 <li>Genetic and physical mapping data</li>
 <li>Human disease data (OMIM)</li>
 <li>Information on inbred strains (M. Festing's listing)</li>
 <li>References supporting all data in MGD </li>
 </UL></p>
-<font size="-2"><a href="#top">Back to Top</a>
+<font size="-1"><a href="#top">Back to Top</a>
 </font>
 <h3><a name="external"></a>Data Links to External Databases</h3>
 <P>MGD provides links to relevant information in   
@@ -116,7 +116,7 @@ vector type, hybridizing loci, RFLPs, and references. See the <A HREF="<!--#incl
 
 <P>Information on genetic polymorphisms is extracted from probe/clone records in MGD. The Polymorphisms Query Form enables you to search directly  for such information and display it. See
 <A HREF="<!--#include file='include/userdocs_url.html'-->polymorphism_help.shtml#summary">Summary</a> and <A HREF="<!--#include file='include/userdocs_url.html'-->polymorphism_help.shtml#detail">Details</A> for more information.</p>
-<font size="-2"><a href="#top">Back to Top</a>
+<font size="-1"><a href="#top">Back to Top</a>
 </font>
 <h3><A NAME="orthology"></A>Mammalian Orthology</h3>
 <p>MGD contains orthology information for mouse, human, and other mammalian organisms. 
@@ -137,39 +137,38 @@ vector type, hybridizing loci, RFLPs, and references. See the <A HREF="<!--#incl
 
 <P> The Orthology Map View displays the mouse genome as the consensus genetic map, with either human or rat orthologs labeled by chromosome of origin and displayed next to the corresponding  segment of the mouse genome.  The Orthology Map View is accessible
 from the <a href="<!--#include file='include/wi_url.html'-->menus/homology_menu.shtml">Mammalian Orthology and Comparative Maps</A> menu.</p>
-<font size="-2"><a href="#top">Back to Top</a>
+<font size="-1"><a href="#top">Back to Top</a>
 </font>
 <h3><A NAME="sequence"></a>Sequence Data</h3>
 
 <ul><li>Vast amounts of sequence data are integrated with the biological information in MGD. Mouse sequences from GenBank, RefSeq, <NOBR>Swiss-Prot</NOBR>, DoTS, and the DFCI and NIA mouse gene indices enable powerful queries from the
-<a href="<!--#include file='include/wi_url.html'-->searches/sequence_form.shtml">Mouse Sequence Query Form</a>. </p>
+<a href="<!--#include file='include/wi_url.html'-->searches/sequence_form.shtml">Mouse Sequence Query Form</a>. </li>
 
 <li>MGD contains sequence attributes such as length and provider; data about the clones the sequences were derived from; and the genes the sequences have been associated to. Because of our curated associations between mouse markers and sequences, you can search using  nomenclature, map position, function (GO annotation, InterPro domain), expression (tissue and developmental stage), and phenotypes of mutant alleles.
-</p>
- <li>Source information about the clones that the sequences are derived from, such as strain, tissue, or library, is carefully translated into controlled vocabularies (see <a href="#vocabularies">Vocabulary Browsers</a>).  This adds enormous power to sequence queries, since authors often use multiple terms to specify a strain or tissue.  </p>
-
+</li>
+ <li>Source information about the clones that the sequences are derived from, such as strain, tissue, or library, is carefully translated into controlled vocabularies (see <a href="#vocabularies">Vocabulary Browsers</a>).  This adds enormous power to sequence queries, since authors often use multiple terms to specify a strain or tissue.  </li>
+</ul>
 <h3><a name="snp"></a>SNP Data</h3>
-<ul><li>MGD provides comprehensive information about reference SNPs including the reference flanking sequence, assays that comprise the SNP, gene/marker associations with their corresponding function class annotations, and links to popular gene browsers including Mouse Genome Browser and its transcript, gene model, and MGD-curated phenotype and allele tracks.  
+<ul><li>MGD provides comprehensive information about reference SNPs including the reference flanking sequence, assays that comprise the SNP, gene/marker associations with their corresponding function class annotations, and links to popular gene browsers including Mouse Genome Browser and its transcript, gene model, and MGD-curated phenotype and allele tracks.  </li>
 <li>The 
-<a href="<!--#include file='include/java_url.html'-->WIFetch?page=snpQF">Mouse SNP Query Form</a> lets you search for RefSNPs by strains, strain comparisons, RefSNP attributes, map position, marker range, or associated genes.</p>
-</p>
+<a href="<!--#include file='include/java_url.html'-->WIFetch?page=snpQF">Mouse SNP Query Form</a> lets you search for RefSNPs by strains, strain comparisons, RefSNP attributes, map position, marker range, or associated genes.</li>
+</ul>
 <h3><A NAME="vocabularies"></a>Vocabulary Browsers</h3>
-<ul><li>The MGD Vocabulary Browsers provide access to restricted sets of defined terms representing complex information.</li> <li>Some controlled vocabularies (such as the Human Disease Vocabulary Browser), have a flat structure:  terms are organized alphanumerically. </li><li>Other vocabularies (known as <i>DAGs</i> or <i>directed acyclic graphs</i>), such as the GO Browser, have a tree (or hierarchical) structure: terms are organized primarily by their relationship to other terms.</li></ul>
-
-<blockquote>
+<ul><li>The MGD Vocabulary Browsers provide access to restricted sets of defined terms representing complex information.</li> <li>Some controlled vocabularies (such as the Human Disease Vocabulary Browser), have a flat structure:  terms are organized alphanumerically. </li><li>Other vocabularies (known as <i>DAGs</i> or <i>directed acyclic graphs</i>), such as the GO Browser, have a tree (or hierarchical) structure: terms are organized primarily by their relationship to other terms.</li>
 <li>The MGD Vocabulary Browsers currently available are: 
-<table border="1" cellspacing="1" cellpadding="4" width="100%">
-  <tr><th align="center" valign="top">Browser Name</th><th align="center" 
+   <table border="1" cellspacing="1" cellpadding="4" width="100%">
+   <tr><th align="center" valign="top">Browser Name</th><th align="center" 
 valign="top">Use this browser to search for ...</th></tr>
-<tr><td valign="top"><a href="<!--#include file='include/wi_url.html'-->searches/GO_form.shtml">GO (Gene Ontology) Browser</a> </td><td valign="top">GO term details and relationships.<br>Links to genes associated with your term or with any sub terms.</td></tr>
-<tr><td valign="top"><a href="<!--#include file='include/wi_url.html'-->searches/anatdict_form.shtml">The Mouse Anatomical Dictionary Browser</a></td><td valign="top">Anatomical structures.<br>Links to associated expression results.</td></tr>
-<tr><td valign="top"><a href="<!--#include file='include/java_url.html'-->WIFetch?page=omimVocab&subset=A">Human Disease Vocabulary Browser</a></td><td valign="top">Human disease terms.<br>Links to detail pages containing genotypes annotated with these terms.<br>Links to Online Mendelian Inheritance in Man (OMIM) web pages.</td></tr>
-<tr><td valign="top"><a href="<!--#include file='include/wi_url.html'-->searches/MP_form.shtml">Mammalian Phenotype Browser</a> </td><td valign="top">Mammalian phenotype terms.<br>Term details and relationships among terms.<br>Links to genotypes annotated with each term or any sub terms.</td></tr>
-<tr><td valign="top"><a href="<!--#include file='include/java_url.html'-->WIFetch?page=pirsfVocab&subset=A">Protein Superfamily Vocabulary Browser</a></td><td valign="top">PIRSF superfamilies.<br>All mapped genes for mouse, human, and rat.</td></tr>
-</table></p>
-</blockquote>
-<font size="-2"><a href="#top">Back to Top</a>
-</font>
+   <tr><td valign="top"><a href="<!--#include file='include/wi_url.html'-->searches/GO_form.shtml">GO (Gene Ontology) Browser</a> </td><td valign="top">GO term details and relationships.<br>Links to genes associated with your term or with any sub terms.</td></tr>
+   <tr><td valign="top"><a href="<!--#include file='include/wi_url.html'-->searches/anatdict_form.shtml">The Mouse Anatomical Dictionary Browser</a></td><td valign="top">Anatomical structures.<br>Links to associated expression results.</td></tr>
+   <tr><td valign="top"><a href="<!--#include file='include/java_url.html'-->WIFetch?page=omimVocab&subset=A">Human Disease Vocabulary Browser</a></td><td valign="top">Human disease terms.<br>Links to detail pages containing genotypes annotated with these terms.<br>Links to Online Mendelian Inheritance in Man (OMIM) web pages.</td></tr>
+   <tr><td valign="top"><a href="<!--#include file='include/wi_url.html'-->searches/MP_form.shtml">Mammalian Phenotype Browser</a> </td><td valign="top">Mammalian phenotype terms.<br>Term details and relationships among terms.<br>Links to genotypes annotated with each term or any sub terms.</td></tr>
+   <tr><td valign="top"><a href="<!--#include file='include/java_url.html'-->WIFetch?page=pirsfVocab&subset=A">Protein Superfamily Vocabulary Browser</a></td><td valign="top">PIRSF superfamilies.<br>All mapped genes for mouse, human, and rat.</td></tr>
+</table>
+</li>
+</ul>
+
+<font size="-1"><a href="#top">Back to Top</a></font>
 
 <h3><A NAME="map"></A>Mapping Data</h3>
 <p>MGD contains genetic mapping and linkage data, including haplotype data for linkage crosses, recombinant inbred (RI) strain distribution patterns, <i>in situ</i> hybridization data,
@@ -186,19 +185,13 @@ strains.  Each  row  represents  the typing for a genetic marker and each column
 <p>For more information regarding the use of congenic  strains  to  analyze  traits controlled by multiple genes, see Peter Demant's paper, <blockquote>"Recombinant Congenic Strains - A New Tool for Analyzing Genetic Traits Determined by More Than One Gene," Immunogenetics 24: 416-422, 1986.</blockquote>
 <h4><a name="DNAdata"></a>DNA Mapping Panel Data Sets </h4>
 <p> Data  from the  major DNA mapping panels have been downloaded into MGD and are accessible through the DNA Mapping Panel Data Sets from MGD query form and from the Linkage Maps  form. The data sets include:
-<font size="-2"><ul>
+<ul>
 Copeland-Jenkins:(C57BL/6J x M. spretus)F1 x C57BL/6J <br>
-EUCIB (BSB):(C57BL/6J x SPR or SEG/Pas)F1 x C57BL/6J<br>
-EUCIB (BSS): (C57BL/6J x  SPR  or SEG/Pas)F1 x SPR or SEG/Pas <br>
-JAX (BSB):(C57BL/6J x M. spretus)F1 x  C57BL/6J<br>
-JAX (BSS): (C57BL/6JEi  x SPRET/Ei)F1  x  SPRET/Ei<br>
 JAX  Mouse  Mutant Resource BCB: (C57BL/6J x CAST/Ei)F1 x C57BL/6J <br>
 JAX  Mouse  Mutant Resource BSS: (C57BL/6J x SPRET/Ei)F1 x SPRET/Ei <br>
 Kozak FvC58: (NFS/N x M. spretus)F1 x C58/J
 Kozak FvSpr: (NFS/N x M. spretus)F1 x M.  spretus <br>
 Kozak  Skive: (NFS/N or C58/J x M.  m. musculus)F1 x M. m. musculus <br>
-MIT: (C57BL/6J-Lep&lt;ob&gt;/Lep&lt;ob&gt; x CAST)F1 x (C57BL/6J-Lep&lt;ob&gt;/Lep&lt;ob&gt; x CAST)F1<br>
-Reeves  (Chr  16):  Sex-averaged intersubspecific mapping  panel<br>
 Seldin: (C3H/HeJ-Fasl&lt;gld&gt; x M. spretus)F1 x C3H/HeJ-Fasl&lt;gld&gt; <br>
 UCLA (BSB): (C57BL/6J x M. spretus)F1 x C57BL/6J
 </ul>
@@ -225,7 +218,7 @@ See <a href="<!--#include file='include/userdocs_url.html'-->mapping_data.shtml"
 <h3><A NAME="references"></A>References</h3>
 MGD contains references for all data in the  database.  By late 2007, there were over 120,000 entries. MGD reference format is similar to PubMed's and data for the full MGD reference are extracted from PubMed when possible. References first appear in an abbreviated format in MGD and are updated when the PubMed records become available. If PubMed does not index the journal, our curators enter the full reference into MGD manually.  See the
  <a href="<!--#include file='include/wi_url.html'-->searches/reference_form.shtml">References Query Form</a>,  <a href="<!--#include file='include/userdocs_url.html'-->reference_help.shtml">Using the References Query Form</a> for more information about this data.</p>
-<font size="-2"><a href="#top">Back to Top</a>
+<font size="-1"><a href="#top">Back to Top</a>
 </font>
 
 <!--#include file='include/templateBodyStop.html'--> 
