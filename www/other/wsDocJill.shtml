@@ -1,0 +1,1288 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+
+<!-- CSS -->
+<link href="http://rohan.informatics.jax.org/~marka/webshare/css/mgi.css" rel="stylesheet" type="text/css"/>
+<link href="http://rohan.informatics.jax.org/~marka/webshare/css/template.css" rel="stylesheet" type="text/css"/>
+
+<!-- MGI JavaScript -->
+<script type="text/javascript" src="http://rohan.informatics.jax.org/~marka/webshare/js/mgi.js"></script>
+
+<!-- Navigation menu -->
+<script type="text/javascript" src="http://rohan.informatics.jax.org/~marka/webshare/js/fsmenu.js"></script>
+
+<!-- Overlib -->
+<script type="text/javascript" src="http://rohan.informatics.jax.org/~marka/webshare/js/overlibHomepage.js"></script>
+<script type="text/javascript" src="http://rohan.informatics.jax.org/~marka/webshare/js/overlib_cssstyle.js"></script>
+<script type="text/javascript" src="http://rohan.informatics.jax.org/~marka/webshare/js/overlib_anchor.js"></script>
+
+
+<script>
+
+<!-- function kicks off on page load -->
+function loadPage()
+{
+  //prep local values
+  winLoc = new String(window.location);
+  winLocArray = winLoc.split("/");
+
+  // if we have a title bar, add help-linked logo if requested
+  var titleBarWrapper = document.getElementById("titleBarWrapper");
+  if (titleBarWrapper != null) {
+      var currentHTML = titleBarWrapper.innerHTML;
+      var helpIcon = '<img class="titleBarHelpIcon" src="http://rohan.informatics.jax.org/~marka/webshare/images/help_large_transp.gif">';
+      var userdoc = titleBarWrapper.getAttribute("userdoc");
+      if (userdoc != null) {
+
+        var helpLink = '';
+
+        userdocArray = userdoc.split("/");
+        if (userdocArray[0] == 'http:') { //passed a full URL
+          helpLink = "<a href='" + userdoc + "'>" + helpIcon + "</a>";
+        }
+        else {
+          helpLink = "<a href='http://rohan.informatics.jax.org/~marka/userdocs/www/" + userdoc + "'>" + helpIcon + "</a>";
+        }
+
+        titleBarWrapper.innerHTML = helpLink + currentHTML;
+      }
+
+
+  }
+
+  //shade tabs when we're on a mini homepage
+  winLocArrayRev = winLocArray.reverse();
+  switch (winLocArrayRev[0])
+  {
+         case "genes.shtml" :
+            document.getElementById("minitab_Genes").style.backgroundColor="#002255";
+            document.getElementById("minitab_Genes").style.fontWeight="bold";
+            break;
+         case "phenotypes.shtml" :
+            document.getElementById("minitab_PAD").style.backgroundColor="#002255";
+            document.getElementById("minitab_PAD").style.fontWeight="bold";
+            break;
+         case "expression.shtml" :
+            document.getElementById("minitab_GXD").style.backgroundColor="#002255";
+            document.getElementById("minitab_GXD").style.fontWeight="bold";
+            break;
+         case "function.shtml" :
+            document.getElementById("minitab_GO").style.backgroundColor="#002255";
+            document.getElementById("minitab_GO").style.fontWeight="bold";
+            break;
+         case "strains_SNPs.shtml" :
+            document.getElementById("minitab_Strain").style.backgroundColor="#002255";
+            document.getElementById("minitab_Strain").style.fontWeight="bold";
+            break;
+         case "orthology.shtml" :
+            document.getElementById("minitab_Ortho").style.backgroundColor="#002255";
+            document.getElementById("minitab_Ortho").style.fontWeight="bold";
+            break;
+         case "pathways.shtml" :
+            document.getElementById("minitab_BioPath").style.backgroundColor="#002255";
+            document.getElementById("minitab_BioPath").style.fontWeight="bold";
+            break;
+  }
+};
+
+<!-- faq window to assist user; callable from anywhere using the templates -->
+function openFaqWindow(faqFile)
+{
+    faqUrl = "http://rohan.informatics.jax.org/~marka/faq/www/" + faqFile;
+    window.open(faqUrl,'faqWindow','width=1000,height=600,resizable=yes,scrollbars=yes,alwaysRaised=yes');
+};
+
+</script>
+
+<!--===================== End Template Head  ===========================-->
+
+
+
+<title>Jill 4.01
+ - MGI Web Service</title>
+
+<!--===================== Body Start ===========================-->
+</head>
+<body onload="loadPage()" >
+
+<div id="topBannerContainer" style="position:relative;">
+
+  <div id="ddtabs1" class="ddcolortabs">
+
+<!--mini home tabs start-->
+<!--display order reversed due to the list being sequentially floated right-->
+<ul>
+  <li>
+    <a id="minitab_Tumor" href="http://tumor.informatics.jax.org/mtbwi/index.do"
+    onmouseover="return overlib('Mouse Tumor Biology',ANCHOR, 'minitab_Tumor', ANCHORALIGN, 'UR', 'LR', CSSCLASS,  TEXTFONTCLASS, 'tabTipFont', BGCLASS, 'tabTipBoxBG', FGCLASS, 'tabTipBoxFG');" onmouseout="nd();">
+    <span>Tumors</span></a>
+  </li>
+  <li>
+    <a id="minitab_Ortho" href="http://rohan.informatics.jax.org/~marka/mgihome/www//homepages/orthology.shtml"
+    onmouseover="return overlib('Mammalian Orthology',ANCHOR, 'minitab_Ortho', ANCHORALIGN, 'UL', 'LL', CSSCLASS,  TEXTFONTCLASS, 'tabTipFont', BGCLASS, 'tabTipBoxBG', FGCLASS, 'tabTipBoxFG');" onmouseout="nd();">
+    <span>Orthology</span></a>
+  </li>
+  <li>
+    <a id="minitab_Strain" href="http://rohan.informatics.jax.org/~marka/mgihome/www//homepages/strains_SNPs.shtml"
+    onmouseover="return overlib('Strains, SNPs &amp; Polymorphisms',ANCHOR, 'minitab_Strain', ANCHORALIGN, 'UL', 'LL', CSSCLASS,  TEXTFONTCLASS, 'tabTipFont', BGCLASS, 'tabTipBoxBG', FGCLASS, 'tabTipBoxFG');" onmouseout="nd();">
+    <span>Strains&nbsp;/&nbsp;SNPs</span></a>
+  </li>
+  <li>
+    <a id="minitab_BioPath" href="http://rohan.informatics.jax.org/~marka/mgihome/www//homepages/pathways.shtml"
+    onmouseover="return overlib('Biochemical Pathways \(MouseCyc\)',ANCHOR, 'minitab_BioPath', ANCHORALIGN, 'UL', 'LL', CSSCLASS,  TEXTFONTCLASS, 'tabTipFont', BGCLASS, 'tabTipBoxBG', FGCLASS, 'tabTipBoxFG');" onmouseout="nd();">
+    <span>Pathways</span></a>
+  </li>
+  <li>
+    <a id="minitab_GO" href="http://rohan.informatics.jax.org/~marka/mgihome/www//homepages/function.shtml"
+    onmouseover="return overlib('Functional Annotations \(GO\)',ANCHOR, 'minitab_GO', ANCHORALIGN, 'UL', 'LL', CSSCLASS,  TEXTFONTCLASS, 'tabTipFont', BGCLASS, 'tabTipBoxBG', FGCLASS, 'tabTipBoxFG');" onmouseout="nd();">
+    <span>Function</span></a>
+  </li>
+  <li>
+    <a id="minitab_GXD" href="http://rohan.informatics.jax.org/~marka/mgihome/www//homepages/expression.shtml"
+    onmouseover="return overlib('Gene Expression Database \(GXD\)',ANCHOR, 'minitab_GXD', ANCHORALIGN, 'UL', 'LL', CSSCLASS,  TEXTFONTCLASS, 'tabTipFont', BGCLASS, 'tabTipBoxBG', FGCLASS, 'tabTipBoxFG');" onmouseout="nd();">
+    <span>Expression</span></a>
+  </li>
+  <li>
+    <a id="minitab_PAD" href="http://rohan.informatics.jax.org/~marka/mgihome/www//homepages/phenotypes.shtml"
+    onmouseover="return overlib('Phenotypes, Alleles &amp; Disease Models',ANCHOR, 'minitab_PAD', ANCHORALIGN, 'UL', 'LL', CSSCLASS,  TEXTFONTCLASS, 'tabTipFont', BGCLASS, 'tabTipBoxBG', FGCLASS, 'tabTipBoxFG');" onmouseout="nd();">
+    <span>Phenotypes</span></a>
+  </li>
+  <li>
+    <a id="minitab_Genes" href="http://rohan.informatics.jax.org/~marka/mgihome/www//homepages/genes.shtml"
+    onmouseover="return overlib('Genes, Genome Features &amp; Maps',ANCHOR, 'minitab_Genes', ANCHORALIGN, 'UL', 'LL', CSSCLASS,  TEXTFONTCLASS, 'tabTipFont', BGCLASS, 'tabTipBoxBG', FGCLASS, 'tabTipBoxFG');" onmouseout="nd();">
+    <span>Genes</span></a>
+  </li>
+  <li>
+    <a id="minitab_Home" href="http://rohan.informatics.jax.org/~marka/mgihome/www//homepages/"
+    onmouseover="return overlib('MGI Home Page',ANCHOR, 'minitab_Home', ANCHORALIGN, 'UL', 'LL', CSSCLASS,  TEXTFONTCLASS, 'tabTipFont', BGCLASS, 'tabTipBoxBG', FGCLASS, 'tabTipBoxFG');" onmouseout="nd();">
+    <span>Home</span></a>
+  </li>
+</ul>
+
+<!-- mini home tabs end -->
+
+  </div>
+
+  <div id="logoContainer" style="position:absolute; left:0; top:0;">
+    <div>
+
+<a href="http://rohan.informatics.jax.org/~marka/mgihome/www//homepages/">
+ <img src="http://rohan.informatics.jax.org/~marka/webshare/images/mgi_logo.gif" border=0>
+</a>
+
+    </div>
+    <span class="logoFooterContainer">
+
+&nbsp;&nbsp;<a class="logoFooterAnchor" href="http://rohan.informatics.jax.org/~marka/mgihome/www/projects/aboutmgi.shtml">About</a>
+&nbsp;&nbsp;<a class="logoFooterAnchor" href="http://rohan.informatics.jax.org/~marka/mgihome/www/homepages/help.shtml">Help</a>
+&nbsp;&nbsp;<a class="logoFooterAnchor" href="http://rohan.informatics.jax.org/~marka/faq/www/FAQ.shtml">FAQ</a>
+
+    </span>
+  </div>
+
+  <div id="templateSearchTool" style="position:absolute; top:2px; right:25px;">
+    <form action="http://alatar.informatics.jax.org:8080/javawi2/servlet/WIFetch" method="get">
+<table>
+<tr>
+
+ <td>
+    <a onClick='return false;' href="http://rohan.informatics.jax.org/~marka/userdocs/www/searchtool_help.shtml"
+    onMouseOver="return overlib('You may search for genes and markers by name or symbol, or any form of accession ID.<BR/><BR/>Use * for wildcard.
+    Use quotation marks around phrases. Use angle brackets around superscript.<BR/>Examples:<BR/>&nbsp;&nbsp;&nbsp;&nbsp;Pax*&nbsp;&nbsp;&nbsp;&nbsp;
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&quot;paired box&quot;<BR/> &nbsp;&nbsp;&nbsp;&nbsp;
+    OST128284 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;MGI:97485<BR/> &nbsp;&nbsp;&nbsp;&nbsp;Pax6&lt;10Neu&gt; for Pax6<sup>10Neu</sup><BR/><BR/>
+    Advanced searches are listed under the Search menu.<BR/><center><a href=\'http://rohan.informatics.jax.org/~marka/userdocs/www/searchtool_help.shtml\'>More searching help.</a></center><BR/>',
+    STICKY, CAPTION, 'Search Tips', CENTER, BELOW, WIDTH, 265, DELAY, 600);" onMouseOut="nd();">
+    <img src="http://rohan.informatics.jax.org/~marka/webshare/images/help_small_transp.gif" border="0">
+    </a>
+ </td>
+
+ <td>
+    <input name="query" id="searchToolTextArea"
+    value=" ID or symbol or name" onFocus="if(this.defaultValue==this.value) this.value='';" size="30">
+ </td>
+
+ <td>
+    <input name="submit" type="submit" class="searchToolButton" value="Quick Search" onclick="return verifySearchToolParms();">
+    <input name="page" type="hidden" value="searchTool">
+    <input name="selectedQuery" type="hidden" value="Genes and Markers">
+ </td>
+
+</tr>
+</table>
+</form>
+
+  </div>
+
+  <div style="position:absolute; top:4px; left:150px;">
+
+<div class="bl"><div class="br"><div class="tl"><div class="tr">
+  <a href='javascript:openFaqWindow("Tour.shtml")' class="noticeLink">Tour the new  MGI website</a>
+</div></div></div></div>
+
+  </div>
+
+</div>
+
+<div id="navBarContainer">
+
+<!--------------------------- Menu Bar Start -------------------------->
+<table width="%100"><tr><td>
+<ul class="menulist" id="listMenuRoot">
+
+
+<!---------- Searches Start ---------->
+<li> <a href="http://rohan.informatics.jax.org/~marka/wi/www//menus/allsearch.shtml">&nbsp;&nbsp;&nbsp;Search&nbsp;<img src="http://rohan.informatics.jax.org/~marka/webshare/images/arrow_down.gif" alt="expand" width="10" height="10" border="0"> &nbsp;&nbsp;</a>
+  <ul>
+  <li> <a href="http://rohan.informatics.jax.org/~marka/wi/www//menus/allsearch.shtml">
+       All Search Tools</a>
+       <div id="SearchesHelp"></div>
+  </li>
+
+  <!-- Marker Submenu -->
+  <li><a>Genes</a>
+  <ul>
+    <li>
+      <a href="http://alatar.informatics.jax.org:8080/javawi2/servlet/WIFetch?page=markerQF"
+      onMouseOver="return overlib('Search for genes and genome features by symbol, name, location, gene ontology classification or phenotype.',ANCHOR, 'MarkerHelp', ANCHORALIGN, 'UR', 'UL');" onMouseOut="nd();">
+      Genes &amp; Markers Query</a>
+      <!-- anchor div for overlib tooltips-->
+      <div id="MarkerHelp"></div>
+    </li>
+    <li>
+      <a href="http://alatar.informatics.jax.org:8080/javawi2/servlet/WIFetch?page=batchQF"
+      onMouseOver="return overlib('Input a list of gene IDs or symbols  and retrieve other database IDs and gene attributes (e.g. phenotypes, GO).',ANCHOR, 'MarkerHelp', ANCHORALIGN, 'UR', 'UL');"  onMouseOut="nd();">
+      Batch Query</a>
+    </li>
+    <li><a>Maps &amp; Mapping Data</a>
+    <ul>
+      <li>
+        <a href="http://hobbiton.informatics.jax.org:8080/cgi-bin/gbrowse/mouse_current"
+        onMouseOver="return overlib('Create a graphical display of genome features from regions of the mouse genome.',ANCHOR, 'MapsHelp', ANCHORALIGN, 'UR', 'UL');"  onMouseOut="nd();">
+        Mouse Genome Browser</a>
+        <!-- anchor div for overlib tooltips-->
+        <div id="MapsHelp"></div>
+      </li>
+      <li>
+        <a href="http://rohan.informatics.jax.org/~marka/wi/www/searches/linkmap_form.shtml"
+        onMouseOver="return overlib('Build a comparative map using the Linkage Map tool.',ANCHOR, 'MapsHelp', ANCHORALIGN, 'UR', 'UL');"  onMouseOut="nd();">
+        Mouse Linkage Map with Orthologs</a>
+      </li>
+      <li>
+        <a href="http://rohan.informatics.jax.org/~marka/wi/www/searches/cytomap_form.shtml"
+        onMouseOver="return overlib('Build a graphical Cytogenic Map with selected parameters.',ANCHOR, 'MapsHelp', ANCHORALIGN, 'UR', 'UL');"  onMouseOut="nd();">
+        Cytogenetic Maps</a>
+      </li>
+      <li>
+        <a href="http://rohan.informatics.jax.org/~marka/wi/www/reports/mitmap/"
+        onMouseOver="return overlib('Build a graphical Physical Map with selected parameters.',ANCHOR, 'MapsHelp', ANCHORALIGN, 'UR', 'UL');"  onMouseOut="nd();">
+        Physical Maps</a>
+      </li>
+      <li>
+        <a href="http://rohan.informatics.jax.org/~marka/wi/www/searches/mapdata_form.shtml"
+        onMouseOver="return overlib('Search by experiment type, marker symbol, chromosome, or reference.',ANCHOR, 'MapsHelp', ANCHORALIGN, 'UR', 'UL');"  onMouseOut="nd();">
+        Mapping Data Query</a>
+      </li>
+      <li>
+        <a href="http://rohan.informatics.jax.org/~marka/wi/www/searches/riset_form.shtml"
+        onMouseOver="return overlib('Search MGI mapping data for recombinant inbred strain distribution patterns.',ANCHOR, 'MapsHelp', ANCHORALIGN, 'UR', 'UL');"  onMouseOut="nd();">
+        RI Strain Distribution Patterns</a>
+      </li>
+      <li>
+        <a href="http://rohan.informatics.jax.org/~marka/wi/www/searches/rcset_form.shtml"
+        onMouseOver="return overlib('Search MGI mapping data for recombinant congenic strain distribution patterns.',ANCHOR, 'MapsHelp', ANCHORALIGN, 'UR', 'UL');"  onMouseOut="nd();">
+        RC Strain Distribution Patterns </a>
+      </li>
+      <li>
+        <a href="http://rohan.informatics.jax.org/~marka/wi/www/searches/crossdata_form.shtml"
+        onMouseOver="return overlib('Search by Mapping Panel and chromosome.',ANCHOR, 'MapsHelp', ANCHORALIGN, 'UR', 'UL');"  onMouseOut="nd();">
+        DNA Mapping Panel Data Sets </a>
+      </li>
+    </ul>
+    </li>
+    <li>
+      <div align="center" >
+        <a href="http://rohan.informatics.jax.org/~marka/mgihome/www//homepages/genes.shtml">
+        More</a>
+      </div>
+    </li>
+  </ul>
+  </li>
+
+  <!-- Pheno Submenu -->
+  <li><a>Phenotypes</a>
+  <ul>
+    <li>
+      <a href="http://rohan.informatics.jax.org/~marka/wi/www/searches/allele_form.shtml"
+      onMouseOver="return overlib('Search for mutations or QTL based on phenotype, human disease, mutation type, gene, or genome location.',ANCHOR, 'AlleleHelp', ANCHORALIGN, 'UR', 'UL');"  onMouseOut="nd();">
+      Phenotypes, Alleles &amp; Diseases Query</a>
+      <!-- anchor div for overlib tooltips-->
+      <div id="AlleleHelp"></div>
+    </li>
+    <li>
+      <a href="http://rohan.informatics.jax.org/~marka/wi/www/searches/MP_form.shtml"
+      onMouseOver="return overlib('Search for a phenotype term to find relevant mutant genotypes.',ANCHOR, 'AlleleHelp', ANCHORALIGN, 'UR', 'UL');"  onMouseOut="nd();">
+      Mammalian Phenotype (MP) Browser</a>
+    </li>
+    <li>
+      <a href="http://alatar.informatics.jax.org:8080/javawi2/servlet/WIFetch?page=omimVocab&subset=A"
+      onMouseOver="return overlib('Search for a human disease or condition term to find mouse models.',ANCHOR, 'AlleleHelp', ANCHORALIGN, 'UR', 'UL');"  onMouseOut="nd();">
+      Human Disease (OMIM) Browser</a>
+    </li>
+    <li>
+      <div align="center" style="display:list-item;">
+        <a href="http://rohan.informatics.jax.org/~marka/mgihome/www//homepages/phenotypes.shtml">
+        More</a>
+      </div>
+    </li>
+  </ul>
+  </li>
+
+  <!-- Gene Expression Submenu -->
+  <li><a>Expression</a>
+  <ul>
+    <li>
+      <a href="http://rohan.informatics.jax.org/~marka/wi/www/searches/gxdindex_form.shtml"
+      onMouseOver="return overlib('Search for references on gene expression during development.',ANCHOR, 'ExpressionHelp', ANCHORALIGN, 'UR', 'UL');"  onMouseOut="nd();">
+      Gene Expression Literature Query</a>
+      <!-- anchor div for overlib tooltips-->
+      <div id="ExpressionHelp"></div>
+    </li>
+    <li>
+      <a href="http://alatar.informatics.jax.org:8080/javawi2/servlet/WIFetch?page=expressionQF"
+      onMouseOver="return overlib('Search for detailed gene expression assay results.',ANCHOR, 'ExpressionHelp', ANCHORALIGN, 'UR', 'UL');"  onMouseOut="nd();">
+      Gene Expression Data Query</a>
+    </li>
+    <li>
+      <a href="http://alatar.informatics.jax.org:8080/javawi2/servlet/WIFetch?page=expressionQFexpanded"
+      onMouseOver="return overlib('Search for  genes expressed in some anatomical structures and/or developmental stages but not in others.',ANCHOR, 'ExpressionHelp', ANCHORALIGN, 'UR', 'UL');"  onMouseOut="nd();">
+      Gene Expression Data Expanded Query</a>
+    </li>
+    <li>
+      <a href="http://rohan.informatics.jax.org/~marka/wi/www/searches/anatdict_form.shtml"
+      onMouseOver="return overlib('Search or browse for anatomical structures; includes links to associated expression results.',ANCHOR, 'ExpressionHelp', ANCHORALIGN, 'UR', 'UL');"  onMouseOut="nd();">
+      Mouse Anatomical Dictionary Browser</a>
+    </li>
+    <li>
+      <a href="http://genex.hgu.mrc.ac.uk/Resources/GXDQuery1/SectionBrowser.html"
+      onMouseOver="return overlib('Search the Edinburgh Mouse Atlas for anatomical terms and query for associated expression data.',ANCHOR, 'ExpressionHelp', ANCHORALIGN, 'UR', 'UL');"  onMouseOut="nd();">
+      EMAGE Anatomical Section Browser</a>
+    </li>
+    <li>
+      <a href="http://alatar.informatics.jax.org:8080/javawi2/servlet/WIFetch?page=cDNAQF"
+      onMouseOver="return overlib('Search for expression information based on tissue or cell-line origin of cDNAs.',ANCHOR, 'ExpressionHelp', ANCHORALIGN, 'UR', 'UL');"  onMouseOut="nd();">
+      cDNA Clone Query</a>
+    </li>
+    <li>
+      <div align="center" style="display:list-item;">
+        <a href="http://rohan.informatics.jax.org/~marka/mgihome/www//homepages/expression.shtml">
+        More</a>
+      </div>
+    </li>
+  </ul>
+  </li>
+
+  <!-- GO Functional Annotations Submenu -->
+  <li><a>Function</a>
+  <ul>
+    <li>
+      <a href="http://rohan.informatics.jax.org/~marka/wi/www/searches/GO_form.shtml"
+      onMouseOver="return overlib('Browse the Gene Ontology and mouse annotations in MGI.',ANCHOR, 'GOHelp', ANCHORALIGN, 'UR', 'UL');"  onMouseOut="nd();">
+      GO Browser</a>
+      <div id="GOHelp"></div>
+    </li>
+    <li>
+      <a href="http://alatar.informatics.jax.org:8080/javawi2/servlet/WIFetch?page=markerQF"
+      onMouseOver="return overlib('Search for genes and genome features by symbol, name, location, gene ontology classification or phenotype.',ANCHOR, 'GOHelp', ANCHORALIGN, 'UR', 'UL');"  onMouseOut="nd();">
+      Genes &amp; Markers Query</a>
+      <!-- anchor div for overlib tooltips-->
+    </li>
+    <li>
+      <a href="http://alatar.informatics.jax.org:8080/javawi2/servlet/WIFetch?page=batchQF"
+      onMouseOver="return overlib('Obtain sets of MGI IDs for use in GO tools.',ANCHOR, 'GOHelp', ANCHORALIGN, 'UR', 'UL');"  onMouseOut="nd();">
+      Batch Query</a>
+    </li>
+    <li>
+      <div align="center" style="display:list-item;">
+        <a href="http://rohan.informatics.jax.org/~marka/mgihome/www//homepages/function.shtml">
+        More</a>
+      </div>
+    </li>
+  </ul>
+  </li>
+
+  <!-- BioChem Pathways -->
+  <li>
+    <a href="http://mousecyc.jax.org/"
+    onMouseOver="return overlib('View mouse genomic data in the context of metabolic cellular  processes such as biosynthesis, degradation, energy production, and detoxification.',ANCHOR, 'biochemHelp', ANCHORALIGN, 1.0,0.5,0,0.5);"  onMouseOut="nd();">
+    Pathways
+    <div id="biochemHelp"></div></a>
+  </li>
+
+  <!-- Strains Submenu -->
+  <li><a>Strains / SNPs</a>
+  <ul>
+    <li>
+      <a href="http://alatar.informatics.jax.org:8080/javawi2/servlet/WIFetch?page=snpQF"
+      onMouseOver="return overlib('Search for SNPs by strain(s), SNP attributes, genomic position, or associated genes.',ANCHOR, 'StrainHelp', ANCHORALIGN, 'UR', 'UL');"  onMouseOut="nd();">
+      SNP Query</a>
+      <!-- anchor div for overlib tooltips-->
+      <div id="StrainHelp"></div>
+    </li>
+    <li>
+      <a href="http://rohan.informatics.jax.org/~marka/wi/www/searches/polymorphism_form.shtml"
+      onMouseOver="return overlib('Search for RFLP or PCR based polymorphisms by strain, locus symbol, or map position.',ANCHOR, 'StrainHelp', ANCHORALIGN, 'UR', 'UL');"  onMouseOut="nd();">
+      RFLP/PCR Polymorphism Query</a>
+    </li>
+    <li>
+      <a href="http://rohan.informatics.jax.org/~marka/wi/www/reports/snpSummary.shtml"
+      onMouseOver="return overlib('View report of SNP data in MGI organized by chromosome, strain, and submitter.',ANCHOR, 'StrainHelp', ANCHORALIGN, 'UR', 'UL');"  onMouseOut="nd();">
+      Summary of SNP Data in MGI</a>
+    </li>
+    <li>
+      <a href="http://rohan.informatics.jax.org/~marka/wi/www/external/festing/search_form.cgi"
+      onMouseOver="return overlib('Search the Listing of Inbred Strains of Mice and Rats by M. Festing.',ANCHOR, 'StrainHelp', ANCHORALIGN, 'UR', 'UL');"  onMouseOut="nd();">
+      Inbred Strain Characteristics</a>
+    </li>
+    <li>
+      <a href="http://rohan.informatics.jax.org/~marka/mgihome/www/genealogy/"
+      onMouseOver="return overlib('View the genealogy chart of inbred strains.',ANCHOR, 'StrainHelp', ANCHORALIGN, 'UR', 'UL');"  onMouseOut="nd();">
+      Genealogy Chart of Inbred Strains</a>
+    </li>
+    <li>
+      <div align="center" style="display:list-item;">
+        <a href="http://rohan.informatics.jax.org/~marka/mgihome/www//homepages/strains_SNPs.shtml">
+        More</a>
+      </div>
+    </li>
+  </ul>
+  </li>
+
+  <!-- Orthology Submenu -->
+  <li><a>Orthology</a>
+  <ul>
+    <li>
+      <a href="http://rohan.informatics.jax.org/~marka/wi/www/searches/homology_form.shtml"
+      onMouseOver="return overlib('Search for orthologs between two species using marker symbol or name, accession ID, chromosomal location, author, or reference ID.',ANCHOR, 'OrthoHelp', ANCHORALIGN, 'UR', 'UL');"  onMouseOut="nd();">
+      Orthology Query</a>
+      <!-- anchor div for overlib tooltips-->
+      <div id="OrthoHelp"></div>
+    </li>
+    <li>
+      <a href="http://alatar.informatics.jax.org:8080/javawi2/servlet/WIFetch?page=pirsfVocab&subset=A"
+      onMouseOver="return overlib('Search for gene family data by the Protein Information Resource SuperFamily classification names.',ANCHOR, 'OrthoHelp', ANCHORALIGN, 'UR', 'UL');"  onMouseOut="nd();">
+      Protein Superfamily (PIRSF) Browser</a>
+    </li>
+    <li>
+      <a href="http://rohan.informatics.jax.org/~marka/wi/www/searches/linkmap_form.shtml"
+      onMouseOver="return overlib('Build a comparative map using the Linkage Map tool.',ANCHOR, 'OrthoHelp', ANCHORALIGN, 'UR', 'UL');"  onMouseOut="nd();">
+      Mouse Linkage Map with Orthologs</a>
+    </li>
+    <li>
+      <a href="http://rohan.informatics.jax.org/~marka/wi/www/reports/homologymap/mouse_human.shtml"
+      onMouseOver="return overlib('View the Mouse-Human comparative map.',ANCHOR, 'OrthoHelp', ANCHORALIGN, 'UR', 'UL');"  onMouseOut="nd();">
+      Mouse-Human Orthology Map </a>
+    </li>
+    <li>
+      <a href="http://rohan.informatics.jax.org/~marka/wi/www/reports/homologymap/mouse_rat.shtml"
+      onMouseOver="return overlib('View the Mouse-Rat comparative map.',ANCHOR, 'OrthoHelp', ANCHORALIGN, 'UR', 'UL');"  onMouseOut="nd();">
+      Mouse-Rat Orthology Map </a>
+    </li>
+    <li>
+      <div align="center" style="display:list-item;">
+      <a href="http://rohan.informatics.jax.org/~marka/mgihome/www//homepages/orthology.shtml">
+      More</a>
+      </div>
+    </li>
+  </ul>
+  </li>
+
+  <!-- MTB -->
+  <li>
+    <a href="http://tumor.informatics.jax.org/mtbwi/index.do"
+    onMouseOver="return overlib('MTB provides information on the frequency, pathology, and genetics of spontaneous and induced tumors in mice.',ANCHOR, 'MTBHelp', ANCHORALIGN, 1.0,0.5,0,0.5);"  onMouseOut="nd();">
+    Tumors
+    <div id="MTBHelp"></div></a>
+  </li>
+
+  <!-- Sequence Submenu -->
+  <li><a> Sequences</a>
+  <ul>
+    <li>
+      <a href="http://rohan.informatics.jax.org/~marka/wi/www/searches/sequence_form.shtml"
+      onMouseOver="return overlib('Search for mouse sequences by sequence attributes, sources, and/or properties of associated genes and markers in MGI.',ANCHOR, 'SeqHelp', ANCHORALIGN, 'UR', 'UL');"  onMouseOut="nd();">
+      Sequence Query </a>
+      <!-- anchor div for overlib tooltips-->
+      <div id="SeqHelp"></div>
+    </li>
+    <li>
+      <a href="http://rohan.informatics.jax.org/~marka/wi/www/searches/accession_form.shtml"
+      onMouseOver="return overlib('Use sequence IDs to find associated sequences, genes, markers, probes and clones.',ANCHOR, 'SeqHelp', ANCHORALIGN, 'UR', 'UL');"  onMouseOut="nd();">
+      Accession IDs Query</a>
+    </li>
+    <li>
+      <a href="http://rohan.informatics.jax.org/~marka/mblast_wi/www/"
+      onMouseOver="return overlib('Search for sequence similarity for mouse, human, or rat.',ANCHOR, 'SeqHelp', ANCHORALIGN, 'UR', 'UL');"  onMouseOut="nd();">
+      MouseBLAST</a>
+    </li>
+    <li>
+      <a href="http://alatar.informatics.jax.org:8080/javawi2/servlet/WIFetch?page=pirsfVocab&subset=A"
+      onMouseOver="return overlib('Search for gene family data by the Protein Information Resource SuperFamily classification names.',ANCHOR, 'SeqHelp', ANCHORALIGN, 'UR', 'UL');"  onMouseOut="nd();">
+      Protein Superfamily (PIRSF) Browser</a>
+    </li>
+    <li>
+      <a href="http://hobbiton.informatics.jax.org:8080/cgi-bin/gbrowse/mouse_current"
+      onMouseOver="return overlib('Download data for a batch of gene IDs or symbols.',ANCHOR, 'SeqHelp', ANCHORALIGN, 'UR', 'UL');"  onMouseOut="nd();">
+      Mouse Genome Browser</a>
+    </li>
+    <li>
+      <a href="http://alatar.informatics.jax.org:8080/javawi2/servlet/WIFetch?page=batchQF"
+      onMouseOver="return overlib('Input a list of gene IDs or symbols  and retrieve other database IDs and gene attributes (e.g. phenotypes, GO).',ANCHOR, 'SeqHelp', ANCHORALIGN, 1.0,0.5,0,0.5);"  onMouseOut="nd();">
+      Batch Query</a>
+    </li>
+  </ul>
+  </li>
+
+
+  <!-- Probes & Clones -->
+  <li><a>Probes &amp; Clones </a>
+  <ul>
+    <li>
+      <a href="http://alatar.informatics.jax.org:8080/javawi2/servlet/WIFetch?page=probeQF"
+      onMouseOver="return overlib('Search by probe/clone name, sequence type, vector type, marker symbol, origin, or reference.',ANCHOR, 'ProbesHelp', ANCHORALIGN, 'UR', 'UL');"  onMouseOut="nd();">
+      Molecular Probes and Clones Query</a>
+      <!-- anchor div for overlib tooltips-->
+      <div id="ProbesHelp"></div>
+    </li>
+    <li>
+      <a href="http://alatar.informatics.jax.org:8080/javawi2/servlet/WIFetch?page=cDNAQF"
+      onMouseOver="return overlib('Search for expression information based on tissue or cell-line origin of cDNAs.',ANCHOR, 'ProbesHelp', ANCHORALIGN, 'UR', 'UL');"  onMouseOut="nd();">
+      cDNA Clones Query</a>
+    </li>
+  </ul>
+  </li>
+
+
+  <!-- References Submenu -->
+  <li><a> References</a>
+  <ul>
+    <li>
+      <a href="http://rohan.informatics.jax.org/~marka/wi/www/searches/reference_form.shtml"
+      onMouseOver="return overlib('Search for references (with abstracts) by title, author, journal, year, or abstract.',ANCHOR, 'RefHelp', ANCHORALIGN, 'UR', 'UL');"  onMouseOut="nd();">
+      Reference Query</a>
+      <!-- anchor div for overlib tooltips-->
+      <div id="RefHelp"></div>
+    </li>
+    <li>
+      <a href="http://rohan.informatics.jax.org/~marka/wi/www/searches/gxdindex_form.shtml"
+      onMouseOver="return overlib('Search for references on gene expression during development.',ANCHOR, 'RefHelp', ANCHORALIGN, 'UR', 'UL');"  onMouseOut="nd();">
+      Gene Expression Literature Query</a>
+    </li>
+  </ul>
+  </li>
+
+
+  <!--- Vocabularies Submenu --->
+  <li><a> Vocabularies</a>
+  <ul>
+    <li>
+      <a href="http://rohan.informatics.jax.org/~marka/wi/www/searches/GO_form.shtml"
+      onMouseOver="return overlib('Browse the Gene Ontology and mouse annotations in MGI.',ANCHOR, 'VocabHelp', ANCHORALIGN, 'UR', 'UL');"  onMouseOut="nd();">
+      GO Browser</a>
+      <!-- anchor div for overlib tooltips-->
+      <div id="VocabHelp"></div>
+    </li>
+    <li>
+      <a href="http://alatar.informatics.jax.org:8080/javawi2/servlet/WIFetch?page=omimVocab&subset=A"
+      onMouseOver="return overlib('Search for a human disease or condition term to find mouse models.',ANCHOR, 'VocabHelp', ANCHORALIGN, 'UR', 'UL');"  onMouseOut="nd();">
+      Human Disease (OMIM) Browser</a> </li>
+    <li>
+      <a href="http://rohan.informatics.jax.org/~marka/wi/www/searches/MP_form.shtml"
+      onMouseOver="return overlib('Search for a phenotype term to find relevant mutant genotypes.',ANCHOR, 'VocabHelp', ANCHORALIGN, 'UR', 'UL');"  onMouseOut="nd();">
+      Mammalian Phenotype (MP) Browser</a> </li>
+    <li>
+      <a href="http://alatar.informatics.jax.org:8080/javawi2/servlet/WIFetch?page=pirsfVocab&subset=A"
+      onMouseOver="return overlib('Search for gene family data by the Protein Information Resource SuperFamily classification names.',ANCHOR, 'VocabHelp', ANCHORALIGN, 'UR', 'UL');"  onMouseOut="nd();">
+      Protein Superfamily (PIRSF) Browser</a> </li>
+    <li>
+      <a href="http://rohan.informatics.jax.org/~marka/wi/www/searches/anatdict_form.shtml"
+      onMouseOver="return overlib('Search or browse for anatomical structures; includes links to associated expression results.',ANCHOR, 'VocabHelp', ANCHORALIGN, 'UR', 'UL');"  onMouseOut="nd();">
+      Mouse Anatomical Dictionary</a> </li>
+    <li>
+      <a href="http://rohan.informatics.jax.org/~marka/wi/www/searches/AMA_form.shtml"
+      onMouseOver="return overlib('An extensive ontology of anatomical structures for the postnatal mouse.',ANCHOR, 'VocabHelp', ANCHORALIGN, 'UR', 'UL');"  onMouseOut="nd();">
+      Adult Mouse Anatomy Browser</a> </li>
+  </ul>
+  </li>
+
+
+
+  <!-- Non-Drop-Downs -->
+  <li>
+    <a href="http://rohan.informatics.jax.org/~marka/wi/www/searches/accession_form.shtml"
+    onMouseOver="return overlib('Use MGI IDs or external IDs referenced in MGI to find associated data.',ANCHOR, 'AccHelp', ANCHORALIGN, 1.0,0.5,0,0.5);"  onMouseOut="nd();">
+    Accession IDs Query</a>
+    <div id="AccHelp"></div>
+  </li>
+  <li>
+    <a href="http://alatar.informatics.jax.org:8080/javawi2/servlet/WIFetch?page=batchQF"
+    onMouseOver="return overlib('Input a list of gene IDs or symbols  and retrieve other database IDs and gene attributes (e.g. phenotypes, GO).',ANCHOR, 'BatchHelp', ANCHORALIGN, 1.0,0.5,0,0.5);"  onMouseOut="nd();">
+    Batch Query</a>
+    <div id="BatchHelp"></div>
+    </li>
+  <li>
+    <a href="http://rohan.informatics.jax.org/~marka/mblast_wi/www/"
+    onMouseOver="return overlib('Search for sequence similarity for mouse, human, or rat.',ANCHOR, 'BlastHelp', ANCHORALIGN, 1.0,0.5,0,0.5);"  onMouseOut="nd();">
+    MouseBLAST</a>
+    <div id="BlastHelp"></div>
+  </li>
+  <li>
+    <a href="http://hobbiton.informatics.jax.org:8080/cgi-bin/gbrowse/mouse_current"
+    onMouseOver="return overlib('Create a graphical display of genome features from regions of the mouse genome.',ANCHOR, 'GBrowseHelp', ANCHORALIGN, 1.0,0.5,0,0.5);"  onMouseOut="nd();">
+    Mouse Genome Browser</a>
+    <div id="GBrowseHelp"></div>
+  </li>
+
+  </ul>
+</li>
+<!---------- Searches Dropmenu End ---------->
+
+
+<!---------- Download Dropmenu Start ----------->
+<li> <a href="ftp://ftp.informatics.jax.org/pub/reports/index.html">
+    &nbsp;Download&nbsp;<img src="http://rohan.informatics.jax.org/~marka/webshare/images/arrow_down.gif" alt="expand" width="10" height="10" border="0"> &nbsp;&nbsp;</a>
+  <ul>
+    <li> <a href="ftp://ftp.informatics.jax.org/pub/reports/index.html">All MGI Reports</a> </li>
+    <li> <a href="http://alatar.informatics.jax.org:8080/javawi2/servlet/WIFetch?page=batchQF">Batch Query</a> </li>
+    <li> <a href="ftp://ftp.informatics.jax.org/pub/reports/index.html#marker">Genes &amp; Markers</a> </li>
+    <li> <a href="ftp://ftp.informatics.jax.org/pub/reports/index.html#seq">Sequence Data</a> </li>
+    <li> <a href="ftp://ftp.informatics.jax.org/pub/reports/index.html#orthology">Mammalian Orthology</a> </li>
+    <li> <a href="ftp://ftp.informatics.jax.org/pub/reports/index.html#go">Gene Ontology Data</a> </li>
+    <li> <a href="ftp://ftp.informatics.jax.org/pub/reports/index.html#strain">Strains &amp; Polymorphisms</a> </li>
+    <li> <a href="ftp://ftp.informatics.jax.org/pub/reports/index.html#expression">Gene Expression</a> </li>
+    <li> <a href="ftp://ftp.informatics.jax.org/pub/reports/index.html#pheno">Phenotypic Data</a> </li>
+    <li> <a href="ftp://ftp.informatics.jax.org/pub/reports/index.html#nomen">Nomenclature</a> </li>
+    <li> <a href="ftp://ftp.informatics.jax.org/pub/reports/index.html#refs">References</a> </li>
+    <li> <a href="ftp://ftp.informatics.jax.org/pub/reports/index.html#clonecoll">Clone Collections</a> </li>
+  </ul>
+</li>
+<!---------- Download Dropmenu End ----------->
+
+
+<!---------- Resources Dropmenu Start ----------->
+<li>
+  <a href="http://rohan.informatics.jax.org/~marka/wi/www//menus/resources.shtml">
+    &nbsp;More Resources&nbsp;<img src="http://rohan.informatics.jax.org/~marka/webshare/images/arrow_down.gif" alt="expand" width="10" height="10" border="0"> &nbsp;&nbsp;&nbsp;&nbsp;</a>
+  <ul>
+  <li> <a href="http://rohan.informatics.jax.org/~marka/wi/www//menus/resources.shtml">More Resources Index</a> </li>
+  <li> <a href="http://rohan.informatics.jax.org/~marka/mgihome/www/lists/lists.shtml">Research Community E-mail Lists</a> </li>
+  <li> <a>Online Books</a>
+    <ul>
+      <li> <a href="http://rohan.informatics.jax.org/~marka/greenbook/"> Biology of the Laboratory Mouse <span style="font-weight:normal;">edited by Earl L. Green</span></a> </li>
+      <li> <a href="http://rohan.informatics.jax.org/~marka/silverbook/"> Mouse Genetics <span style="font-weight:normal;">by Lee Silver</span></a> </li>
+      <li> <a href="http://rohan.informatics.jax.org/~marka/cookbook/"> The Anatomy of the Laboratory Mouse <span style="font-weight:normal;">by Margaret J. Cook</span></a> </li>
+      <li> <a href="http://rohan.informatics.jax.org/~marka/wksilvers/"> The Coat Colors of Mice <span style="font-weight:normal;">by Willys K. Silvers</span></a> </li>
+      <li> <a href="http://rohan.informatics.jax.org/~marka/morsebook/"> Origins of Inbred Mice <span style="font-weight:normal;">edited by Herbert C. Morse III</span></a> </li>
+    </ul>
+  </li>
+  <li> <a href="http://rohan.informatics.jax.org/~marka/mgihome/www/nomen/index.shtml"> Nomenclature Home Page</a> </li>
+  <li> <a href="http://alatar.informatics.jax.org:8080/javawi2/servlet/WIFetch?page=glossaryIndex&printFormat=footer"> MGI Glossary</a> </li>
+  <li> <a href="http://proto.informatics.jax.org/"> Prototype Tools</a> </li>
+  <li> <a href="http://rohan.informatics.jax.org/~marka/mgihome/www/GXD/GEN/"> Gene Expression Notebook (GEN)</a> </li>
+  <li> <a href="http://phenome.jax.org/pub-cgi/phenome/mpdcgi?rtn=docs/home"> Mouse Phenome Database (MPD)</a> </li>
+  <li> <a href="http://rohan.informatics.jax.org/~marka/wi/www/external/ko/"> Deltagen and Lexicon Knockout Mice</a> </li>
+  <li> <a>International Knockout Mouse Consortium (IKMC)</a>
+    <ul>
+      <li> <a href="http://www.knockoutmouse.org/">Knockout Mouse Project (KOMP, USA)</a> </li>
+      <li> <a href="http://www.eucomm.org/">European Conditional Mouse Mutagenesis (EUCOMM, Europe)</a> </li>
+      <li> <a href="http://www.norcomm.org/">North American Conditional Mouse Mutagenesis (NorCOMM, Canada)</a> </li>
+      <li> <a href="http://www.tigm.org/">Texas Institute for Genomic Medicine (TIGM, USA)</a> </li>
+    </ul>
+  </li>
+  <li> <a href="http://www.nih.gov/science/models/mouse/">Trans-NIH Mouse Initiatives</a> </li>
+  <li> <a href="ftp://ftp.informatics.jax.org/pub/datasets/index.html"> Contributed Data Sets</a> </li>
+  <li> <a>Community Links</a>
+    <ul>
+      <li> <a href="http://rohan.informatics.jax.org/~marka/mgihome/www/other/mouse_facts4.shtml"> Mouse Resources & Model Organism Links</a> </li>
+      <li> <a href="http://rohan.informatics.jax.org/~marka/mgihome/www/other/phenoallele_commun_resource.shtml"> Phenotypes &amp; Mutants Community Resources</a> </li>
+      <li> <a href="http://rohan.informatics.jax.org/~marka/mgihome/www/other/mouse_facts1.shtml">Mouse Facts</a> </li>
+    </ul>
+  </li>
+  <li> <a>Software Developer Tools</a>
+    <ul>
+    <li> <a href="http://rohan.informatics.jax.org/~marka/mgihome/www/other/link_instructions.shtml">Creating Web Links to MGI</a> </li>
+    <li> <a href="http://rohan.informatics.jax.org/~marka/mgihome/www//homepages/software.shtml#sql">Direct SQL Account</a> </li>
+    <li> <a href="http://rohan.informatics.jax.org/~marka/schema/">Database Schema Browser</a> </li>
+    <li> <a href="ftp://ftp.informatics.jax.org/pub/reports/index.html">All MGI Reports</a> </li>
+    <li>
+      <div align="center" >
+        <a href="http://rohan.informatics.jax.org/~marka/mgihome/www//homepages/software.shtml">
+        More</a>
+      </div>
+    </li>
+    </ul>
+  </li>
+  </ul>
+</li>
+<!---------- Resources Dropmenu End ----------->
+
+
+<!------- Direct Links  ------->
+<li>
+  <a href="http://rohan.informatics.jax.org/~marka/wi/www//menus/submit.shtml"
+  title="">
+  Submit Data&nbsp;&nbsp;&nbsp;&nbsp;</a>
+</li>
+
+
+<li>
+  <a href="http://www.informatics.jax.org/imsr/index.jsp"
+  title="International Mouse Strain Resource (IMSR)">
+  Find Mice (IMSR) &nbsp;&nbsp;&nbsp;&nbsp;</a>
+</li>
+<li>
+  <a href="http://rohan.informatics.jax.org/~marka/mgihome/www/support/tjl_inbox.shtml"
+  title="Contact user support">
+  Contact&nbsp;Us</a>
+</li>
+
+</ul>
+</td></tr></table>
+<!--------------------------- Menu Bar End -------------------------->
+
+
+<script type="text/javascript">
+//<![CDATA[
+
+// menu object
+var listMenu = new FSMenu('listMenu', true, 'display', 'block', 'none');
+
+listMenu.showDelay = 100;
+listMenu.switchDelay = 0;
+listMenu.hideDelay = 100;
+listMenu.animInSpeed = 1;
+listMenu.animOutSpeed = 1;
+
+FSMenu.prototype.ieSelBoxFixShow = function(mN) { with (this)
+{
+ var m = menus[mN];
+ if (!isIE || !window.createPopup) return;
+ if (navigator.userAgent.match(/MSIE ([\d\.]+)/) && parseFloat(RegExp.$1) > 6.5)
+  return;
+ // Create a new transparent IFRAME if needed, and insert under the menu.
+ if (!m.ifr)
+ {
+  m.ifr = document.createElement('iframe');
+  m.ifr.src = 'about:blank';
+  with (m.ifr.style)
+  {
+   position = 'absolute';
+   border = 'none';
+   padding = '300px';
+   filter = 'progid:DXImageTransform.Microsoft.Alpha(style=0,opacity=0)';
+  }
+  m.lyr.ref.parentNode.insertBefore(m.ifr, m.lyr.ref);
+ }
+ // Position and show it on each call.
+ with (m.ifr.style)
+ {
+  left = m.lyr.ref.offsetLeft + 'px';
+  top = m.lyr.ref.offsetTop + 'px';
+  width = '200px';
+  height = '400px';
+  visibility = 'visible';
+ }
+}};
+FSMenu.prototype.ieSelBoxFixHide = function(mN) { with (this)
+{
+ if (!isIE || !window.createPopup) return;
+ var m = menus[mN];
+ if (m.ifr) m.ifr.style.visibility = 'hidden';
+}};
+addEvent(listMenu, 'show', function(mN) { this.ieSelBoxFixShow(mN) }, 1);
+addEvent(listMenu, 'hide', function(mN) { this.ieSelBoxFixHide(mN) }, 1);
+
+// I'm applying two at once to listMenu. Delete this to disable!
+listMenu.animations[listMenu.animations.length] = FSMenu.animFade;
+listMenu.animations[listMenu.animations.length] = FSMenu.animSwipeDown;
+//listMenu.animations[listMenu.animations.length] = FSMenu.animClipDown;
+
+var arrow = null;
+if (document.createElement && document.documentElement)
+{
+ arrow = document.createElement('img');
+ arrow.src = 'http://rohan.informatics.jax.org/~marka/webshare/images/arrow_right.gif';
+ arrow.style.borderWidth = '0';
+ arrow.className = 'subind';
+}
+addEvent(window, 'load', new Function('listMenu.activateMenu("listMenuRoot", arrow)'));
+
+
+//]]>
+</script>
+
+</div>
+
+<div id="templateBodyInsert"> <!-- wrapper around inserted page body -->
+
+
+
+
+
+
+<!-- Title Bar -->
+  <div id="titleBarWrapper">
+  <span class="titleBarMainTitle">MGI Web Service</span>
+  </div>
+<!--titleBar-->
+
+
+    <h3>Introduction</h3>
+    The MGI Web Service provides programmatic access to select portions of the database.  The following data are
+    currently available:
+    <p>
+    <ul>
+       <li><b>MGI IDs</b> - You can upload a set of identifiers (e.g. EntrezGene,
+       GenBank, mouse symbol, etc.) and receive a list of the corresponding MGI
+       gene/marker IDs.</li>
+       <li><b>Batch Query for Genes/Markers</b> - You can upload a set of identifiers
+       and specify the associated attributes to return.  See
+       <a href="http://www.informatics.jax.org/javawi2/servlet/WIFetch?page=batchQF"> MGI Batch Query</a>,
+       an interactive tool that mirrors this functionality, for a list of available data
+       attributes.</li>
+    </ul>
+    </p>
+    <p>
+    Please feel free to contact <a href="mailto:mgi-help@informatics.jax.org">
+	User Support</a> with questions, comments, or suggestions for the MGI Web Service.
+	</p>
+    <p>
+	<b>Note:</b> The service is unavailable weeknights between 12:00AM -
+	2:00AM ET for database maintenance.
+	</p>
+    <p>
+
+	<h3>Service Requests</h3>
+	Our	web service accepts SOAP requests via the submitDocument method.  The
+	body of the SOAP request must contain a single &lt;submitDocument&gt;
+	element that contains one of the following request elements:
+    </p>
+	<ul>
+		<li><a href="#mgiIDRequest">&lt;mgiIDRequest&gt;</a></li>
+		<li><a href="#batchMarkerRequest">&lt;batchMarkerRequest&gt;</a></li>
+	</ul>
+
+    <h4>Contact Information</h4>
+	All requests contain a &lt;requestorEmail&gt; element.  The contact
+	information in this element may be used to notify you of invalid requests or requests that
+	place a heavy load on our servers.  If you cannot be contacted to resolve these issues, you may
+	have your IP address blocked.
+    <p>
+
+    <h4>WSDL & Schemas</h4>
+	<ul>
+		<li><a href="http://alatar.informatics.jax.org:18080/axis2/services/MGIServiceImpl?wsdl">WSDL</a> -
+		Web Service Definition Language</li>
+		<li><a href="http://alatar.informatics.jax.org:18080/axis2/services/MGIServiceImpl/mgiwsRequests.xsd">mgiwsRequests.xsd</a> -
+		Schema for the request elements and corresponding request type definitions.</li>
+		<li><a href="http://alatar.informatics.jax.org:18080/axis2/services/MGIServiceImpl/mgiwsBatchTypes.xsd">mgiwsBatchTypes.xsd</a> -
+		Schema for supporting type definitions used to define the &lt;mgiIDRequest&gt; and &lt;batchMarkerRequest&gt; elements.</li>
+	</ul>
+    </p>
+	<h3>Request Details</h3>
+	<a name="mgiIDRequest"></a>
+
+	<h4>&lt;mgiIDRequest&gt;</h4>
+	<blockquote>
+	The &lt;mgiIDRequest&gt; element lets you upload a set of identifiers and
+	receive the corresponding MGI IDs for all genes/markers annotated to the
+	input identifiers. All identifiers in the request set must be of the same supported
+	type.<br><br>
+
+	The &lt;mgiIDRequest&gt; element is composed of:
+	<ol>
+		<li>&lt;requestorEmail&gt; - The email address of the requestor.  This element is defined in the http://ws.mgi.jax.org/xsd/request namespace.<br><br></li>
+		<li>&lt;IDSet&gt; - An IDType attribute and 1 or more &lt;id&gt; sub-elements.  The &lt;IDSet&gt; element is defined
+		in the http://ws.mgi.jax.org/xsd/request namespace.  The IDType attribute must be one of the case sensitive strings
+		defined below and is used to indicate what type of identifiers the set contains.  The &lt;id&gt; sub-elements each contain
+		an individual identifier, and queries for the identifiers are case insensitive.  The &lt;id&gt; element is defined
+		in the http://ws.mgi.jax.org/xsd/request namespace.<br><br>
+
+		Currently supported input identifier types:<br><br>
+
+		<table border="1" cellspacing="0" cellpadding="3">
+			<tr><th valign="top">IDType</th><th valign="top">Examples</th></tr>
+			<tr><td valign="top">symbol</td><td valign="top">Pax6</td></tr>
+			<tr><td valign="top">ensembl</td><td valign="top">ENSMUSG00000029335</td></tr>
+			<tr><td valign="top">entrezGene</td><td valign="top">22173</td></tr>
+			<tr><td valign="top">genbankRefseq</td><td valign="top">NM_146146</td></tr>
+			<tr><td valign="top">go</td><td valign="top">GO:0019221</td></tr>
+			<tr><td valign="top">refsnp</td><td valign="top">rs27429143</td></tr>
+			<tr><td valign="top">unigene</td><td valign="top">181490</td></tr>
+			<tr><td valign="top">uniprot</td><td valign="top">P48356</td></tr>
+			<tr><td valign="top">vega</td><td valign="top">OTTMUSG00000015006</td></tr>
+		</table>
+		</li>
+	</ol>
+	<br><br>
+
+	<b>Example #1 request</b> - An example of an &lt;mgiIDRequest&gt; containing 3 current mouse symbols.  <i>Note:</i> namespace
+	   declarations are required.<br>
+	<pre>
+	&lt;submitDocument xmlns:req="http://ws.mgi.jax.org/xsd/request"
+			xmlns:bt="http://ws.mgi.jax.org/xsd/batchType"&gt;
+		&lt;req:mgiIDRequest&gt;
+			&lt;req:requestorEmail&gt;myid@mydomain.com&lt;/req:requestorEmail&gt;
+			&lt;req:IDSet IDType="symbol"&gt;
+				&lt;bt:id&gt;foo&lt;/bt:id&gt;
+				&lt;bt:id&gt;Trp53&lt;/bt:id&gt;
+				&lt;bt:id&gt;Pax6&lt;/bt:id&gt;
+			&lt;/req:IDSet&gt;
+		&lt;/req:mgiIDRequest&gt;
+	&lt;/submitDocument&gt;
+    </pre>
+
+    <b>Example #1 response</b> - All responses to the &lt;mgiIDRequest&gt; contain the following:
+       <ol>
+       <li>A &lt;summary&gt; element containing data about the web service version, database version, query parameters, and result counts</li>
+       <li>At least one &lt;row&gt; element per input identifier</li>
+       <li>An &lt;Input&gt; element to indicate the uploaded input identifier</li>
+       <li>An &lt;mgiGeneMarkerID&gt; element that contains the matching gene/marker MGI ID corresponding to the input identifier.</li>
+       </ol>
+
+    <pre>
+	&lt;mgi:submitDocumentResponse xmlns:mgi="http://ws.mgi.jax.org/xsd"&gt;
+		&lt;mgi:summary&gt;
+			&lt;mgi:wsVersion&gt;1.0&lt;/mgi:wsVersion&gt;
+			&lt;mgi:genomeBuild&gt;36&lt;/mgi:genomeBuild&gt;
+			&lt;mgi:databaseVersion&gt;MGI 4.01&lt;/mgi:databaseVersion&gt;
+			&lt;mgi:databaseDate&gt;03/20/2008&lt;/mgi:databaseDate&gt;
+			&lt;mgi:inputCount&gt;3&lt;/mgi:inputCount&gt;
+			&lt;mgi:inputType&gt;symbol&lt;/mgi:inputType&gt;
+			&lt;mgi:resultCount&gt;3&lt;/mgi:resultCount&gt;
+			&lt;mgi:returnCount&gt;3&lt;/mgi:returnCount&gt;
+		&lt;/mgi:summary&gt;
+		&lt;mgi:row&gt;
+			&lt;mgi:Input&gt;foo&lt;/mgi:Input&gt;
+			&lt;mgi:mgiGeneMarkerID /&gt;
+		&lt;/mgi:row&gt;
+		&lt;mgi:row&gt;
+			&lt;mgi:Input&gt;Trp53&lt;/mgi:Input&gt;
+			&lt;mgi:mgiGeneMarkerID&gt;MGI:98834&lt;/mgi:mgiGeneMarkerID&gt;
+		&lt;/mgi:row&gt;
+		&lt;mgi:row&gt;
+			&lt;mgi:Input&gt;Pax6&lt;/mgi:Input&gt;
+			&lt;mgi:mgiGeneMarkerID&gt;MGI:97490&lt;/mgi:mgiGeneMarkerID&gt;
+		&lt;/mgi:row&gt;
+	&lt;/mgi:submitDocumentResponse&gt;
+    </pre>
+
+    <b>Results & Limits</b>
+    <ul>
+        <li>Empty elements in the result set indicate that there is no match to a gene/marker.
+        For example, any input identifier that cannot be matched by the designated
+        IDType, or that has no gene/marker association within MGI, is returned
+        with an empty &lt;mgiGeneMarkerID&gt; element.</li>
+        <li>The number of &lt;row&gt; elements returned appears in
+        the &lt;returnCount&gt; element within the &lt;summary&gt; element.  Results
+        are currently limited to 20,000 &lt;row&gt; elements.</li>
+        <li>The total number of results generated by the query appears in the
+        &lt;resultCount&gt; element within the &lt;summary&gt; element.
+        Queries generating more then 20,000 &lt;row&gt; elements have a
+        &lt;resultCount&gt; larger than the &lt;returnCount&gt;.  If this occurs,
+        you may want to reduce the number of identifiers in your request until the
+        &lt;resultCount&gt; is less than 20,000.  This ensures
+        that you are seeing all results included in the response.</li>
+    </ul>
+    </blockquote>
+
+
+<a name="batchMarkerRequest"></a>
+
+	<h4>&lt;batchMarkerRequest&gt;</h4>
+	<blockquote>
+	The &lt;batchMarkerRequest&gt; element is designed to allow programmatic requests that mirror the functionality
+	of the <a href="http://www.informatics.jax.org/javawi2/servlet/WIFetch?page=batchQF">MGI Batch Query</a> tool.
+	This request lets you upload a set of identifiers and select which gene/marker attributes to include
+	in the response.  All identifiers in the set must be of the same supported type.<br><br>
+
+	This &lt;batchMarkerRequest&gt; element is composed of:
+	<ol>
+		<li>&lt;requestorEmail&gt; - The email address of the requestor.  This element is defined in the http://ws.mgi.jax.org/xsd/request namespace.<br><br></li>
+		<li>&lt;IDSet&gt; - An IDType attribute and 1 or more &lt;id&gt; sub-elements.  The &lt;IDSet&gt;
+		element is defined in the http://ws.mgi.jax.org/xsd/request namespace.  The IDType attribute must be one of the
+		case sensitive strings defined below and is used to indicate what type of identifiers the set contains.
+		The &lt;id&gt; sub-elements each contain an individual identifier, and queries for the identifiers are case
+		insensitive.  The &lt;id&gt; element is defined in the http://ws.mgi.jax.org/xsd/batchType namespace.<br><br>
+
+		Currently supported input identifier types:<br><br>
+
+		<table border="1" cellspacing="0" cellpadding="3">
+			<tr><th valign="top">IDType</th><th valign="top">Examples</th></tr>
+			<tr><td valign="top">mgiMarker</td><td valign="top">MGI:98880</td></tr>
+			<tr><td valign="top">symbol</td><td valign="top">Pax6</td></tr>
+			<tr><td valign="top">ensembl</td><td valign="top">ENSMUSG00000029335</td></tr>
+			<tr><td valign="top">entrezGene</td><td valign="top">22173</td></tr>
+			<tr><td valign="top">genbankRefseq</td><td valign="top">NM_146146</td></tr>
+			<tr><td valign="top">go</td><td valign="top">GO:0019221</td></tr>
+			<tr><td valign="top">refsnp</td><td valign="top">rs27429143</td></tr>
+			<tr><td valign="top">unigene</td><td valign="top">181490</td></tr>
+			<tr><td valign="top">uniprot</td><td valign="top">P48356</td></tr>
+			<tr><td valign="top">vega</td><td valign="top">OTTMUSG00000015006</td></tr>
+		</table><br><br>
+		</li>
+		<li>&lt;returnSet&gt; - 1 - 5 &lt;attribute&gt; sub-elements.
+		The &lt;returnSet&gt; element is defined in the
+		http://ws.mgi.jax.org/xsd/request namespace.  Each &lt;attribute&gt;
+		element contains one of the strings defined below and is used to select
+		specific gene attributes to be returned in the results.  The
+		&lt;attribute&gt; element is defined in the
+		http://ws.mgi.jax.org/xsd/batchType namespace and corresponds to the
+		Gene Attributes selections on the
+		<a href="http://www.informatics.jax.org/javawi2/servlet/WIFetch?page=batchQF">
+		MGI Batch Query</a> tool.<br><br>
+
+		Currently supported &lt;attribute&gt; strings:<br><br>
+
+		<table border="1" cellspacing="0" cellpadding="3">
+			<tr><th valign="top">Attribute</th><th valign="top">Elements returned for each gene/marker in the result set</th></tr>
+			<tr><td valign="top">nomenclature</td><td valign="top">
+				&lt;Symbol&gt;<br/>
+				&lt;Name&gt;<br/>
+				&lt;MarkerType&gt; - e.g. Gene, Pseudogene, QTL</td></tr>
+			<tr><td valign="top">location</td><td valign="top">
+				&lt;Chr&gt; - chromosome location<br/>
+				&lt;Start&gt; - start coordinate<br/>
+				&lt;End&gt; - end coordinate<br/>
+				&lt;Strand&gt; - sequence strand orientation (+ or -)</td></tr>
+			<tr><td valign="top">ensembl</td><td valign="top">&lt;ensembl&gt; - Ensembl ID</td></tr>
+			<tr><td valign="top">entrezGene</td><td valign="top">&lt;entrezgene&gt; - EntrezGene ID</td></tr>
+			<tr><td valign="top">vega</td><td valign="top">&lt;vega&gt; - VEGA ID</td></tr>
+		</table><br><br>
+		</li>
+		<li>&lt;returnAdditionalInfo&gt; - One of the strings defined in the table
+		below.  These are used to select an additional information data type to be
+		returned in the results.  You may select only one per request.
+		The &lt;returnAdditionalInfo&gt; element is
+		defined in the http://ws.mgi.jax.org/xsd/request namespace and
+		corresponds to the Additional Information selection found on the
+		<a href="http://www.informatics.jax.org/javawi2/servlet/WIFetch?page=batchQF">
+		MGI Batch Query</a> tool.<br><br>
+
+		Currently supported &lt;returnAdditionalInfo&gt; strings:<br><br>
+
+		<table border="1" cellspacing="0" cellpadding="3">
+			<tr><th valign="top">Additional Information</th><th valign="top">Elements returned for each gene/marker in the result set</th></tr>
+			<tr><td valign="top">go</td><td valign="top">
+				&lt;ID&gt; - ID of the GO (Gene Ontology) term associated to the gene/marker<br/>
+				&lt;Term&gt;<br/>
+				&lt;Code&gt; - evidence code<br><br>
+				(<i>NOT annotations are not returned</i>)</td></tr>
+			<tr><td valign="top">mp</td><td valign="top">
+				&lt;ID&gt; - ID of the MP (Mammalian Phenotype) term associated to the gene/marker<br/>
+				&lt;Term&gt;<br><br>
+				(<i>Normal</i> annotations are not returned)</td></tr>
+			<tr><td valign="top">mgiAllele</td><td valign="top">&lt;mgiallele&gt; - MGI Allele ID</td></tr>
+			<tr><td valign="top">genbankRefseq</td><td valign="top">&lt;genbankrefseq&gt; - contains a GenBank (nucleotide) or RefSeq (nucleotide or protein) sequence ID associated to the gene/marker</td></tr>
+			<tr><td valign="top">refsnp</td><td valign="top">&lt;refsnp&gt; - contains a RefSNP ID associated to the gene/marker<br><br>
+				(<i>Results include only within gene and locus region annotations</i>)</td></tr>
+			<tr><td valign="top">uniprot</td><td valign="top">&lt;uniprot&gt; - contains a UniProt (protein) sequence ID associated to the gene/marker</td></tr>
+		</table><br><br>
+		</li>
+	</ol>
+
+	<b>Example #2 request</b> - An example of a &lt;batchMarkerRequest&gt; that contains 2 GO (Gene Ontology)
+	IDs.  It requests that nomenclature, location, EntrezGene, Ensembl, and VEGA IDs be returned as attributes,
+	and that corresponding MP (Mammalian Phenotype) annotations be returned	as additional information.
+	<i>Note:</i> namespace declarations are required.<br>
+	<pre>
+	&lt;submitDocument xmlns:req="http://ws.mgi.jax.org/xsd/request"
+	            xmlns:bt="http://ws.mgi.jax.org/xsd/batchType"&gt;
+	    &lt;req:batchMarkerRequest&gt;
+	        &lt;req:requestorEmail&gt;myEmail@domain.com&lt;/req:requestorEmail&gt;
+	        &lt;req:IDSet IDType="mgiMarker"&gt;
+	            &lt;bt:id&gt;MGI:103188&lt;/bt:id&gt;
+	            &lt;bt:id&gt;MGI:1342771&lt;/bt:id&gt;
+	        &lt;/req:IDSet&gt;
+	        &lt;req:returnSet&gt;
+	            &lt;bt:attribute&gt;nomenclature&lt;/bt:attribute&gt;
+	            &lt;bt:attribute&gt;location&lt;/bt:attribute&gt;
+	            &lt;bt:attribute&gt;entrezGene&lt;/bt:attribute&gt;
+	            &lt;bt:attribute&gt;ensembl&lt;/bt:attribute&gt;
+	            &lt;bt:attribute&gt;vega&lt;/bt:attribute&gt;
+	        &lt;/req:returnSet&gt;
+	        &lt;req:returnAdditionalInfo&gt;mgiAllele&lt;/req:returnAdditionalInfo&gt;
+	    &lt;/req:batchMarkerRequest&gt;
+	&lt;/submitDocument&gt;
+    </pre>
+
+	<b>Example #2 response</b> - All responses to the &lt;batchMarkerRequest&gt; contain the following:
+	<ol>
+
+	<li>A &lt;summary&gt; element containing data about the web service version, database version, query parameters, and result counts</li>
+	<li>At least one &lt;row&gt; element per input identifier</li>
+	<li>Each &lt;row&gt; element contains an &lt;Input&gt; element to indicate the uploaded input identifier</li>
+	<li>An &lt;mgiGeneMarkerID&gt; element containing the matching gene/marker MGI ID and corresponding to the input identifier</li>
+	<li>Additional elements matching &lt;attribute&gt; or &lt;returnAdditionalInfo&gt; elements included in the request.</li>
+    </ol>
+
+	<pre>
+	&lt;mgi:submitDocumentResponse xmlns:mgi="http://ws.mgi.jax.org/xsd"&gt;
+	   &lt;mgi:summary&gt;
+	      &lt;mgi:wsVersion&gt;1.0&lt;/mgi:wsVersion&gt;
+	      &lt;mgi:genomeBuild&gt;36&lt;/mgi:genomeBuild&gt;
+	      &lt;mgi:databaseVersion&gt;MGI 3.54&lt;/mgi:databaseVersion&gt;
+	      &lt;mgi:databaseDate&gt;04/22/2008&lt;/mgi:databaseDate&gt;
+	      &lt;mgi:inputCount&gt;2&lt;/mgi:inputCount&gt;
+	      &lt;mgi:inputType&gt;mgiMarker&lt;/mgi:inputType&gt;
+	      &lt;mgi:returnData&gt;
+	         &lt;mgi:returnData&gt;entrezGene&lt;/mgi:returnData&gt;
+	         &lt;mgi:returnData&gt;nomenclature&lt;/mgi:returnData&gt;
+	         &lt;mgi:returnData&gt;vega&lt;/mgi:returnData&gt;
+	         &lt;mgi:returnData&gt;ensembl&lt;/mgi:returnData&gt;
+	         &lt;mgi:returnData&gt;location&lt;/mgi:returnData&gt;
+	         &lt;mgi:returnData&gt;mgiAllele&lt;/mgi:returnData&gt;
+	      &lt;/mgi:returnData&gt;
+	      &lt;mgi:resultCount&gt;8&lt;/mgi:resultCount&gt;
+	      &lt;mgi:returnCount&gt;8&lt;/mgi:returnCount&gt;
+	   &lt;/mgi:summary&gt;
+	   &lt;mgi:row&gt;
+	      &lt;mgi:input&gt;MGI:103188&lt;/mgi:input&gt;
+	      &lt;mgi:mgiGeneMarkerID&gt;MGI:103188&lt;/mgi:mgiGeneMarkerID&gt;
+	      &lt;mgi:entrezGeneID&gt;18028&lt;/mgi:entrezGeneID&gt;
+	      &lt;mgi:symbol&gt;Nfib&lt;/mgi:symbol&gt;
+	      &lt;mgi:name&gt;nuclear factor I/B&lt;/mgi:name&gt;
+	      &lt;mgi:markerType&gt;Gene&lt;/mgi:markerType&gt;
+	      &lt;mgi:vegaID&gt;OTTMUSG00000000395&lt;/mgi:vegaID&gt;
+	      &lt;mgi:ensemblID&gt;ENSMUSG00000052757&lt;/mgi:ensemblID&gt;
+	      &lt;mgi:chr&gt;4&lt;/mgi:chr&gt;
+	      &lt;mgi:strand&gt;-&lt;/mgi:strand&gt;
+	      &lt;mgi:start&gt;81761404&lt;/mgi:start&gt;
+	      &lt;mgi:end&gt;82176981&lt;/mgi:end&gt;
+	      &lt;mgi:mgiAlleleID&gt;MGI:2178748&lt;/mgi:mgiAlleleID&gt;
+	   &lt;/mgi:row&gt;
+	   &lt;mgi:row&gt;
+	      &lt;mgi:input&gt;MGI:103188&lt;/mgi:input&gt;
+	      &lt;mgi:mgiGeneMarkerID&gt;MGI:103188&lt;/mgi:mgiGeneMarkerID&gt;
+	      &lt;mgi:entrezGeneID&gt;18028&lt;/mgi:entrezGeneID&gt;
+	      &lt;mgi:symbol&gt;Nfib&lt;/mgi:symbol&gt;
+	      &lt;mgi:name&gt;nuclear factor I/B&lt;/mgi:name&gt;
+	      &lt;mgi:markerType&gt;Gene&lt;/mgi:markerType&gt;
+	      &lt;mgi:vegaID&gt;OTTMUSG00000000395&lt;/mgi:vegaID&gt;
+	      &lt;mgi:ensemblID&gt;ENSMUSG00000008575&lt;/mgi:ensemblID&gt;
+	      &lt;mgi:chr&gt;4&lt;/mgi:chr&gt;
+	      &lt;mgi:strand&gt;-&lt;/mgi:strand&gt;
+	      &lt;mgi:start&gt;81761404&lt;/mgi:start&gt;
+	      &lt;mgi:end&gt;82176981&lt;/mgi:end&gt;
+	      &lt;mgi:mgiAlleleID&gt;MGI:3530139&lt;/mgi:mgiAlleleID&gt;
+	   &lt;/mgi:row&gt;
+	   &lt;mgi:row&gt;
+	      &lt;mgi:input&gt;MGI:1342771&lt;/mgi:input&gt;
+	      &lt;mgi:mgiGeneMarkerID&gt;MGI:1342771&lt;/mgi:mgiGeneMarkerID&gt;
+	      &lt;mgi:entrezGeneID&gt;16596&lt;/mgi:entrezGeneID&gt;
+	      &lt;mgi:symbol&gt;Klf1&lt;/mgi:symbol&gt;
+	      &lt;mgi:name&gt;Kruppel-like factor 1 (erythroid)&lt;/mgi:name&gt;
+	      &lt;mgi:markerType&gt;Gene&lt;/mgi:markerType&gt;
+	      &lt;mgi:vegaID/&gt;
+	      &lt;mgi:ensemblID&gt;ENSMUSG00000054191&lt;/mgi:ensemblID&gt;
+	      &lt;mgi:chr&gt;8&lt;/mgi:chr&gt;
+	      &lt;mgi:strand&gt;+&lt;/mgi:strand&gt;
+	      &lt;mgi:start&gt;87792033&lt;/mgi:start&gt;
+	      &lt;mgi:end&gt;87795396&lt;/mgi:end&gt;
+	      &lt;mgi:mgiAlleleID&gt;MGI:1857557&lt;/mgi:mgiAlleleID&gt;
+	   &lt;/mgi:row&gt;
+
+	   (...)
+
+	&lt;/mgi:submitDocumentResponse&gt;
+	</pre>
+
+    <b>Results & Limits</b>
+    <ul>
+        <li>The relationship between a gene/marker and the
+	    selected &lt;attribute&gt; and/or &lt;returnAdditionalInfo&gt; elements is
+	    frequently not one-to-one. A &lt;row&gt; element is returned for
+	    all unique combinations of these associations.  For example, a gene/marker
+	    associated with 3 Ensembl and 2 VEGA IDs returns 6 &lt;row&gt;
+        elements.</li>
+	    <li>Empty elements in the result set indicate that
+	    there is no data of that type associated to the gene/marker.
+	    For example, any input identifiers that cannot be identified by the designated
+	    IDType, or that have no gene/marker association within MGI, is returned
+	    with an empty &lt;mgiGeneMarkerID&gt; element.  Similiarly, an empty
+	    &lt;vega&gt; element indicates that there is no associated VEGA ID for the
+	    gene/marker returned.</li>
+	    <li>The number of &lt;row&gt; elements returned appears in
+		the &lt;returnCount&gt; element within the &lt;summary&gt; element.  Results
+		are currently limited to 20,000 &lt;row&gt; elements.</li>
+		<li>The total number of results generated by the query appears in the
+		&lt;resultCount&gt; element within the &lt;summary&gt; element.
+		Queries generating more then 20,000 &lt;row&gt; elements have a
+		&lt;resultCount&gt; larger than the &lt;returnCount&gt;.  If this occurs,
+		you may want to reduce the number of identifiers in your request until the
+		&lt;resultCount&gt; is less than 20,000.  This ensures
+        that you are seeing all results included in the response.</li>
+    </ul>
+	</blockquote>
+
+
+<h3>Example Clients</h3>
+
+Example clients are provided to show how to format requests and connect to the MGI Web Service.
+
+	<ul>
+		<li><a href="javaclient.txt">Java Client</a> - Java version 1.3 of the Axis2 libraries.</li>
+		<li><a href="perlclient.txt">Perl Client</a> - Perl version 0.60 of the SOAP::Lite module.</li>
+		<li><a href="pythonclient.txt">Python Client</a> - Python version 0.8.4 of PyXML and version 2.42 of httplib.</li>
+	</ul>
+
+
+
+</div> <!--  class="templateBodyInsert" -->
+<table style="font-size:12" border=0 width="100%">
+
+<tr>
+ <td colspan="3"><HR noshade="noshade"/ color="#d0e0f0" width="100%">
+  <center style="font-size:10px;">
+  <span style="float: left;">Contributing Projects:</span> <br>
+    Mouse Genome Database&nbsp;(MGD), Gene Expression Database&nbsp;(GXD), Mouse&nbsp;Tumor&nbsp;Biology&nbsp;(MTB), Gene&nbsp;Ontology&nbsp;(GO), MouseCyc
+  </center>
+ </td>
+</tr>
+
+<tr>
+ <td width="33%" style="font-size:9px;">
+  <A HREF="http://rohan.informatics.jax.org/~marka/mgihome/www/other/citation.shtml">
+      Citing These Resources</A> <BR>
+  <A HREF="http://rohan.informatics.jax.org/~marka/mgihome/www/other/mgi_funding.shtml">
+      Funding Information</A> <BR>
+  <A HREF="http://rohan.informatics.jax.org/~marka/mgihome/www/other/copyright.shtml">
+      Warranty Disclaimer &amp; Copyright Notice</A> <BR>
+    Send questions and comments to
+  <A HREF="http://rohan.informatics.jax.org/~marka/mgihome/www/support/tjl_inbox.shtml">
+      User Support</A>.
+ </td>
+ <td WIDTH="34%" ALIGN=center style="font-size:9px;">
+    last database update<BR>
+    04/18/2008<BR>
+    MarkDev 4.0a<BR>
+    <a href="http://rohan.informatics.jax.org/~marka/mgihome/www/homepages/browser_compatibility.shtml" class="">Web browser compatibility</a>
+  </td>
+  <td WIDTH="33%" ALIGN=right style="font-size:9px;">
+    <A HREF="http://www.jax.org/" border=0>
+    <IMG SRC="http://rohan.informatics.jax.org/~marka/webshare/images/jax_logo.gif" BORDER=0 ALT="The Jackson Laboratory"></A>
+ </td>
+</tr>
+
+<tr>
+ <td colspan="3">
+  <HR noshade="noshade"/ color="#d0e0f0" width="100%">
+ </td>
+</tr>
+
+</table>
+</body>
+</html>
+
+

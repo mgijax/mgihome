@@ -1,0 +1,384 @@
+package org.jax.mgi.ws.client;
+
+import java.io.BufferedReader;
+import java.io.FileNotFoundException;
+import java.io.FileReader;
+import java.io.IOException;
+import java.util.ArrayList;
+import java.util.HashSet;
+import java.util.Iterator;
+import java.util.Set;
+
+import org.apache.axiom.om.OMAbstractFactory;
+import org.apache.axiom.om.OMElement;
+import org.apache.axiom.om.OMFactory;
+import org.apache.axiom.om.OMNamespace;
+import org.apache.axis2.AxisFault;
+import org.apache.axis2.Constants;
+import org.apache.axis2.addressing.EndpointReference;
+import org.apache.axis2.client.Options;
+import org.apache.axis2.client.ServiceClient;
+import org.apache.commons.cli.BasicParser;
+import org.apache.commons.cli.CommandLine;
+import org.apache.commons.cli.HelpFormatter;
+import org.apache.commons.cli.MissingOptionException;
+import org.apache.commons.cli.OptionBuilder;
+import org.apache.commons.cli.ParseException;
+
+/**
+ * This class is a Web Service Client for the MGI WebService.  It accepts 
+ * command line arguments to set the arguments necessary to call the 
+ * batchRequest operation of the MGI Web Service.  This operation offers
+ * the same functionality of the Batch Query tool as a web service.  Results 
+ * are printed to System.out
+ * 
+ * @author marka
+ * @is  A Web Service Client to perform Batch Query requests from the MGI Web
+ * Service
+ * @has A TimeStamper to profile performance, instance variables containing 
+ * arguments to Batch Query Web Service, and Options to represent and parse
+ * required and optional command line arguments.
+ * @does    Parses the command line options and formats them into a valid
+ * valid request to the batchRequest operation on the MGI Web Service and 
+ * prints the results.
+ */
+public class MGIAXIOMClient {
+	// this is the url of the web service this client will call
+	private static EndpointReference targetEPR = 
+    	new EndpointReference("http://services.informatics.jax.org/mgiws");
+    
+    // variables to hold arguments to BQ service
+    private static String[] ids = {};
+    private static int col = 0;
+    private static String type = "";
+    private static Set returnAttr = new HashSet();
+    private static String addlInfo = "";
+    
+    // holds the set of command line options the client will support
+    private static org.apache.commons.cli.Options opt;
+    
+    /**
+     * The main class that runs instantiates the Options object and loads the 
+     * Option objects that represent the available and required command line 
+     * arguments.  The argument values are parsed and doQuery is called to do
+     * the rest.  
+     * 
+     * @param args  command line arguments
+     */
+    public static void main(String[] args){
+        // Setting the arguments
+        
+        try {
+            // Set the command line argument options
+            opt = new org.apache.commons.cli.Options();
+            opt.addOption(help);
+            opt.addOption(file);
+            opt.addOption(column);
+            opt.addOption(idType);
+            opt.addOption(returnData);
+            opt.addOption(additionalInfo);
+            // create parser for command line args
+            BasicParser parser = new BasicParser();
+            // parse args
+            CommandLine cl = parser.parse(opt, args);
+            // check parsed args
+            if ( cl.hasOption('h') ) {
+                // print help 
+                HelpFormatter f = new HelpFormatter();
+                f.printHelp("OptionsTip", opt);
+            }
+            else {
+                // parse args to variables
+                if (cl.hasOption('c')) {
+                    // get id column
+                    col = Integer.parseInt(cl.getOptionValue("c"));
+                }
+                if (cl.hasOption('f')) {
+                    // get filename, read the file, and parse ids
+                    String fileName = cl.getOptionValue("f");
+                    String s = readFile(fileName);
+                    ids = parseColumn(s, col);
+                }
+                if (cl.hasOption('t')) {
+                    // get id type
+                    type = cl.getOptionValue("t");
+                }
+                if (cl.hasOption('r')) {
+                    // get attributes
+                    String[] values = cl.getOptionValues("r");
+                    for (int i = 0; i < values.length; i++) {
+                        returnAttr.add(values[i]);
+                    } 
+                }
+                if (cl.hasOption('a')) {
+                    // get additional info
+                    addlInfo = cl.getOptionValue("a");
+                }
+                // perform query
+                doQuery();
+            }
+        } catch (MissingOptionException e) {
+            // a required command line arg is missing.  print help.
+            System.out.println("Missing Option: " + e.getMessage());
+            HelpFormatter f = new HelpFormatter();
+            f.printHelp("MGIClient", opt);
+        } catch (ParseException e) {
+            // an unknown error occurred parsing the command line options.
+            System.out.println("options parse problem");
+            e.printStackTrace();
+        }
+    }
+    
+    /**
+     * Builds an Axis ServiceClient, sets the appropriate options for client, 
+     * submits request to web service, and displays the results.
+     */
+    private static void doQuery(){
+        try {
+            // hold the options used by the client
+            Options options = new Options();
+            // set client target url
+            options.setTo(targetEPR);
+            // set transport protocol
+            options.setTransportInProtocol(Constants.TRANSPORT_HTTP);
+            // 10 minute timeout should allow largest possible result sets
+            long soTimeout = 10 * 60 * 1000; 
+            // set timeout
+            options.setTimeOutInMilliSeconds(soTimeout);
+    
+            // create client object
+            ServiceClient sender = new ServiceClient();
+            // set options
+            sender.setOptions(options);
+    
+            // build request and submit to web service target
+            System.out.println("Sending request...");
+            OMElement result = sender.sendReceive(getBatchPayload());
+            
+            // print the results
+            printResults(result);
+        } catch (AxisFault e) {
+            System.out.println(e.toString());
+            e.printStackTrace();
+        }
+    }
+    
+    /**
+     * Reads the contents of file indicated by fileName into a StringBuffer.
+     * Returns the contents of the file as a String.
+     * 
+     * @param fileName  path of file to read
+     * @assumes Nothing 
+     * @effects Nothing
+     * @return Contents of file as String
+     */
+    private static String readFile(String fileName) {
+        try {
+            // create buffered file reader 
+            BufferedReader f = new BufferedReader(new FileReader(fileName));
+            // variable to read file into
+            StringBuffer sb = new StringBuffer();
+            String s;  // hold String contents of current line of file
+            // read each line of file and append to file
+            while ((s = f.readLine()) != null) {
+                sb.append(s);
+                sb.append("\n");
+            }
+            // return contents of file as String
+            return sb.toString();
+        } catch (FileNotFoundException e) {
+            // file not found
+            e.printStackTrace();
+        } catch (IOException e) {
+            // error reading file
+            e.printStackTrace();
+        }
+        return "";
+    }
+    
+    /**
+     * Parses a column of data from the input String.  The input string is 
+     * split into rows by newline.  Each row gets split into columns by tab. 
+     * Data for the requested column is then returned as a String[].
+     * 
+     * @param data  String to parse column from.
+     * @param column    Column to parse data from.  
+     * @assumes data is in tab-delimited format 
+     * @effects Nothing
+     * @return String[] Contents of the column parsed from data.
+     */
+    private static String[] parseColumn(String data, int column) {
+        
+        String delimiter = "\t";
+
+        // hold strings from parsed column
+        ArrayList idArray = new ArrayList();
+
+        // convert mac \c to \n and split lines into rows
+        String[] rows = data.replaceAll("\r", "\n").split("\n");
+        // column cells
+        String[] cols;
+        
+        // If a column is requested, loop through the rows and parse the
+        // contents of the requested column.
+        if (column > 0) {
+            // holds contents of requested column
+            String col;
+            for (int i = 0; i < rows.length; i++) {
+                if (!delimiter.equals("")) {
+                    // split cols by delimiter
+                    cols = rows[i].split(delimiter);
+                } else {
+                    // no delimiter, col is entire row
+                    cols = new String[] { rows[i] };
+                }
+                if (cols.length >= column) {
+                    // trim column cell
+                    col = cols[column - 1].trim();
+                    // ignore blank cell
+                    if (!col.equals("")) {
+                        idArray.add(col);
+                    }
+                }
+            }
+        }
+        // return array of parsed column contents
+        return (String[]) idArray.toArray(new String[0]);
+    }
+
+    /**
+     * Format the command line arguments intended for web service query into 
+     * an xml request.  
+     * 
+     * @assumes command line arguments have been parsed into appropriate
+     * instance variables. 
+     * @effects Nothing
+     * @return xml request element 
+     */
+    private static OMElement getBatchPayload() {
+        // get AXIOM OM factory
+        OMFactory fac = OMAbstractFactory.getOMFactory();
+        // set namespace
+        OMNamespace ns1 = fac.createOMNamespace(
+                "http://ws.mgi.jax.org/xsd/request", "req");
+        OMNamespace ns2 = fac.createOMNamespace(
+                "http://ws.mgi.jax.org/xsd/batchType", "bt");      
+
+        
+        OMElement wrapper = fac.createOMElement("submitDocument", ns1);
+        // inner request element
+        OMElement method = fac.createOMElement("batchMarkerRequest", ns1);
+        
+        // add IDSet element containing ids parsed from input file
+        OMElement inputIDs = fac.createOMElement("IDSet", ns1);
+        // add IDType attribute
+        inputIDs.addAttribute(fac.createOMAttribute("IDType", null, 
+                type.replace('_', ' ')));
+        OMElement id;
+        for (int i = 0; i < ids.length; i++) {
+        	id = fac.createOMElement("id", ns2);
+			id.addChild(fac.createOMText(inputIDs, ids[i]));
+			inputIDs.addChild(id);
+		}
+        method.addChild(inputIDs);
+        
+        // add Attributes selections
+        Object[] r = returnAttr.toArray();
+        if (r.length > 0) {
+            OMElement returnSet = fac.createOMElement("returnSet", ns1);
+            OMElement attr;
+            for (int j = 0; j < r.length; j++) {
+            	attr = fac.createOMElement("attribute", ns2);
+            	attr.addChild(fac.createOMText(returnSet, 
+                        ((String)r[j]).replace('_', ' ')));
+            	returnSet.addChild(attr);
+    		}
+            method.addChild(returnSet);
+        }
+        
+        // add Additional Info selection
+        if (!addlInfo.equals("")) {
+            OMElement returnRad = fac.createOMElement("returnAdditionalInfo", ns1);
+            returnRad.addChild(fac.createOMText(returnRad, 
+                    addlInfo.replace('_', ' ')));
+            method.addChild(returnRad);
+        }
+        wrapper.addChild(method);
+        System.out.println(method.toString());
+
+        // return request
+        return wrapper;
+    }
+    
+    /**
+     * Prints the text of each xml element received as an argument.  If any  
+     * top level element has child elements, the text for these are printed  
+     * on the same line separated by tabs.  Does not attempt to print any  
+     * child elements beyond children of the root elements.
+     * 
+     * @param element   xml element to print.
+     */
+	private static void printResults(OMElement element) {
+        // print reply xml
+        System.out.println("Reply: " + element.toString());
+        
+        // count results
+		int i = 0;
+        // holders for current element in iterators
+        OMElement e, el;
+        
+        // iterate over the child elements of the parent  
+        for (Iterator iter = element.getChildElements(); iter.hasNext();) {
+        	i++; // increment count
+            // get current child element
+        	e = (OMElement) iter.next();
+            // iterate over and children of the current child to parent
+        	for (Iterator it = e.getChildElements(); it.hasNext();) {
+                // get child of the current child to parent
+        		el = (OMElement) it.next();
+                // print childs child text and a tab
+        		System.out.print(el.getText() + "\t");
+			}
+            // print end of line
+        	System.out.println("");
+        }
+        // print count of rows printed
+        System.out.println(i + " record(s) found.");
+	} 
+    
+    // instance variables for supported command line options.
+    
+    // -h used to request help on command line options.
+    private static org.apache.commons.cli.Option help = 
+        OptionBuilder.hasArg()
+        .withDescription("Print help for this application")
+        .create("h");
+    // -f used to indicate input file of ids.  required.
+    private static org.apache.commons.cli.Option file = 
+        OptionBuilder.hasArg()
+        .isRequired()
+        .withDescription("Input File")
+        .create("f");
+    // -c used to indicate the column containing the ids.  required.
+    private static org.apache.commons.cli.Option column = 
+        OptionBuilder.hasArg()
+        .isRequired()
+        .withDescription("Column")
+        .create("c");
+    // -t used to indicate type of input ids.  required.
+    private static org.apache.commons.cli.Option idType = 
+        OptionBuilder.hasArg()
+        .isRequired()
+        .withDescription("ID Type")
+        .create("t");
+    // -r used to indicate an Attribute selection.  allow up to 5 -r args. 
+    private static org.apache.commons.cli.Option returnData = 
+        OptionBuilder.hasArgs(5)
+        .withDescription("Attributes")
+        .create("r");
+    // -a used to indicate Additional Info selection. 
+    private static org.apache.commons.cli.Option additionalInfo = 
+        OptionBuilder.hasArg()
+        .withDescription("Additional Info")
+        .create("a");
+}
