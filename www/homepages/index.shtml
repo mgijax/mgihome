@@ -1,8 +1,15 @@
 <!--#include file='include/templateHead.html'-->
 
-<title><!--#include file="include/mgiversion.html"--> - Mouse Genome Informatics Homepage</title>
+<title><!--#include file="include/mgiversion.html"--> - MGI-Mouse Genome Informatics-The international database resource for the laboratory mouse</title>
+ 
+  <meta name="description" content="MGI: the international database resource for the laboratory mouse, providing integrated genetic, genomic, and biological data for researching human health and disease." />
 
-<meta name="keywords" content="Mouse Genome Database, Gene Expression Database, Mouse Tumor Biology, Gene Ontology, Mouse Genome Sequence Project">
+  <meta name="keywords" content="Mouse Genome Database, Gene Expression Database, Mouse Tumor Biology, Gene Ontology, Mouse Genome Sequence Project, mice, mus musculus, murine, gene products, proteins, biochemical pathways, ontology" />
+
+  <meta name="robots" content="NOODP" />
+  <meta name="robots" content="NOYDIR" />
+  <meta name="robots" content="NOINDEX" />
+  <meta name="robots" content="NOFOLLOW" />
 
 <!-- Home Page Specific Css -->
 <link rel="stylesheet" type="text/css" href="<!--#include file="include/mgihome_url.html"-->homepages/homepage.css"/>
@@ -182,25 +189,29 @@
 	  <div class="boxTitle">
 	    <span class="left">Mouse Community News</span>
 	  </div>
-
 	  <div class="boxBG pad5">
-	  <b>MGI Roadshow:</b><span class="smaller"><em>18-19 Mar 08</em></span>&nbsp; M.D. Anderson Cancer Center;
-<span class="smaller"><em>20 Mar 08</em></span>&nbsp; Texas A&M University;
- <span class="smaller"><em>8 Apr 08</em></span>&nbsp; University of Texas Southwestern Medical Center;
-	  <span class="smaller"><em>9 Apr 08</em></span>&nbsp; The Scripps Research Institute; 
- <span class="smaller"><em>10 Apr 08</em></span>&nbsp; University of California San Diego; 
- <span class="smaller"><em>11 Apr 08</em></span>&nbsp; University of California Los Angeles. &nbsp;
-
-<a href="<!--#include file='include/mgihome_url.html'-->support/tjl_inbox.shtml" class="homeLink">Contact User Support</a> for more information.
+	  <b>MGI Roadshow:</b> If you would like to host a MGI workshop at your institution, contact
+	  <a href="<!--#include file='include/mgihome_url.html'-->support/tjl_inbox.shtml" class="homeLink">User Support</a> 
+	  to discuss the details.
       <br/><br/>
-      <span class="smaller"><em>21 Feb 08</em></span> Read about the International Mouse 
-      Knockout Consortium [KOMP (USA); EUCOMM (Europe); NorCOMM (Canada); TIGM (USA)] in 
-      Cell 2007; 128: 9-13, PMID: 
+      <span class="smaller"></span> Visit MGI posters at these upcoming conferences:
+      	<table cellspacing = 2>
+      	<tr><td></td>
+      	    <td><li><a href="http://meetings.cshl.edu/meetings/genome08.shtml" class="homeLink">The Biology of Genomes</a></li></td>
+        </tr>
+        <tr><td></td>
+      	    <td><li><a href="http://www.ircm.qc.ca/microsites/complextrait/en/index.html" class="homeLink">Complex Trait Consortium</a></li></td>
+        </tr>
+        <tr><td></td>
+            <td><li><a href="http://www.eshg.org/eshg2008/index1.htm" class="homeLink">European Human Genetics Conference</a></li></td>
+        </tr>
+      	</table>
+      <br/><br/>
+      Read about the International Mouse Knockout Consortium [KOMP (USA); EUCOMM (Europe); NorCOMM (Canada); TIGM (USA)] in Cell 2007; 128: 9-13, PMID: 
       <a href="http://www.ncbi.nlm.nih.gov/sites/entrez?cmd=retrieve&db=pubmed&list_uids=17218247&dopt=abs" class="homeLink">17218247</a> and Cell 2007; 129: 235, PMID: 
       <a href="http://www.ncbi.nlm.nih.gov/sites/entrez?cmd=retrieve&db=pubmed&list_uids=17448981&dopt=abs" class="homeLink">17448981</a>. 
       <br><br>
-      <span class="smaller"><em>21 Feb 08</em></span>  See MGI's <a href="<!--#include file='include/mgihome_url.html'-->other/mouse_facts4.shtml" class="homeLink">collection of mouse resources 
-      and model organism links.</a>
+       See MGI's <a href="<!--#include file='include/mgihome_url.html'-->other/mouse_facts4.shtml" class="homeLink">collection of mouse resources and model organism links.</a>
       </div>
 </div>
       
