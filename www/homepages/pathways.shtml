@@ -1,6 +1,12 @@
 <!--#include file='include/templateHead.html'-->
 
-  <title><!--#include file="include/mgiversion.html"--> - Biochemical Pathways</title>
+  <title><!--#include file="include/mgiversion.html"--> - MGI-Mouse Biochemical Pathways</title>
+ <meta name="description" content="MouseCyc is a database of curated biochemical pathways data for the 				laboratory mouse that can be integrated with functional and phenotypic data from MGI." />
+
+ <meta name="keywords" content="mice, mouse, murine, mus musculus, genes, genome, genomic, sequences, proteins" />
+  <meta name="robots" content="NOODP" />
+  <meta name="robots" content="NOYDIR" />
+  <meta name="robots" content="NOINDEX" />
 
 
 <!------------- AJAX TABS CALLS -------------------------------------------------------->
@@ -69,7 +75,8 @@
 <dt class="whatList">Browse a list of <a class="homeLink" href="<!--#include file='include/pathways_url.html'-->MOUSE/class-instances?object=Proteins">all proteins in MouseCyc</a> according to their activity</dt>
 <dt class="whatList">Browse a list of 
 <a class="homeLink" href="<!--#include file='include/pathways_url.html'-->MOUSE/class-instances?object=Compounds">all compounds represented in MouseCyc</a></dt>
-<dt class="whatList"><a class="homeLink" href="<!--#include file='include/pathways_url.html'-->expression.html">Overlay experimental data onto the Pathway Tools Omics Viewer</a></dt>
+<dt class="whatList"><a class="homeLink" href="<!--#include file='include/pathways_url.html'-->expression.html">Overlay experimental data onto the Pathway Tools Omics Viewer</a></dd>
+<dd><a class="homeLink" href="ftp://ftp.informatics.jax.org/pub/curatorwork/MouseCyc/FilesOmics/">Example OmicsViewer files</a>
 <dt class="whatList"><a class="homeLink" href="<!--#include file='include/pathways_url.html'-->MOUSE/NEW-IMAGE?type=OVERVIEW&force=t">Generate a mouse metabolic map</a></dt>
 					</dl>
 				</div>

@@ -1,7 +1,14 @@
 <!--#include file='include/templateHead.html'-->
 
-  <title><!--#include file="include/mgiversion.html"--> - Phenotypes, Alleles &amp; Disease Models</title>
+  <title><!--#include file="include/mgiversion.html"--> - MGI-Mouse Phenotypes, Alleles &amp; Disease Models</title>
 
+ <meta name="description" content="The Phenotypes/Alleles project in MGI enables access to spontaneous, 			   induced, and genetically-engineered mutations and their strain-specific phenotypes." />
+
+ <meta name="keywords" content="mice, mouse, murine, mus musculus, genes, genome, genomic, sequences, proteins" />
+  <meta name="robots" content="NOODP" />
+  <meta name="robots" content="NOYDIR" />
+  <meta name="robots" content="NOINDEX" />
+  <meta name="robots" content="NOFOLLOW" />
 
 <!------------- AJAX TABS CALLS -------------------------------------------------------->
 
@@ -77,6 +84,9 @@
 
 						<dt class="whatList">Submit a new allele, mutation, or transgene and receive official nomenclature and an MGI accession identifier.</dt>
 						<dd class="searchList"><a class="small homeLink" href="<!--#include file='include/mgihome_url.html'-->nomen/allmut_form.shtml">Allele Nomenclature Form</a></dd>
+
+<dt class="whatList">Describe characteristics of spontaneous, induced, or genetically engineered mutations already entered in MGI</dt>
+<dd class="searchList"><a class="small homeLink" href="<!--#include file='include/mgihome_url.html'-->nomen/phenotype_data_form.shtml">Phenotype Data Submission Form</a></dd>
 
 						<dt class="whatList">View guides to proper naming of alleles and mutations.</dt>
 						<dd class="searchList"><a class="small homeLink" href="<!--#include file='include/mgihome_url.html'-->nomen/allmut_quickhelp.shtml">Quick Guide to Allele Nomenclature</a></dd>
