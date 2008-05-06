@@ -27,6 +27,7 @@ Note that the list in each section is a definition list <dl> where the term
 				<td>
 					<ul>
 						<li><a href="#links">Creating Web Links to MGI</a> | </li>
+						<li><a href="#mgiws">MGI Web Service</a> | </li>
 						<li><a href="#data">Data Files for Download</a> | </li>
 						<li><a href="#sql">Direct SQL Account</a></li>
 				</td>
@@ -54,6 +55,26 @@ Note that the list in each section is a definition list <dl> where the term
 			</tr>
 		</table>
 	</td></tr>
+	
+	   <tr><td>
+        <!-- section1 table -->
+        <a name="mgiws">
+        <table class="outline" width="100%">
+            <tr>
+                <td class="enhance">
+                    MGI Web Service
+                </td>
+            </tr>
+            <tr >
+                <td>
+                    <ul>
+                        <li>The MGI Web Service provides programmatic access to select portions of the database by uploading a set of identifiers (e.g. EntrezGene, GenBank, mouse symbol, etc.).</li>
+                        <li>The service accepts SOAP 1.1 and 1.2 requests. See <a href="<!--#include file='include/mgihome_url.html'-->other/web_service.shtml">MGI Web Service</a> for details and examples. </li>
+                    </ul>
+                </td>
+            </tr>
+        </table>
+    </td></tr>
 
 	<tr><td>
 		<!-- section2 table -->
