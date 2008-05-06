@@ -5,7 +5,7 @@
 
 <!-- Title Bar -->
   <div id="titleBarWrapper">
-  <span class="titleBarMainTitle">MGI Web Services</span>
+  <span class="titleBarMainTitle">MGI Web Service</span>
   </div>
 <!--titleBar-->
 
@@ -56,8 +56,7 @@
 						    User Support</a> with questions, comments, or suggestions for the MGI Web Service.
 						    </p>
 						    <p>
-						    <b>Note:</b> The service is unavailable weeknights between 12:00AM -
-						    2:00AM ET for database maintenance.
+						    <b>Note:</b> The service is unavailable Tuesdays between 5:00AM - 9:00AM ET for database maintenance.
 						</p>
                 </td>
             </tr>
@@ -319,7 +318,7 @@
         </li>
     </ol>
 
-    <b>Example #2 request</b> - An example of a &lt;batchMarkerRequest&gt; that contains 2 GO (Gene Ontology)
+    <b>Example #2 request</b> - An example of a &lt;batchMarkerRequest&gt; that contains 2 MGI gene/marker
     IDs.  It requests that nomenclature, location, EntrezGene, Ensembl, and VEGA IDs be returned as attributes,
     and that corresponding MP (Mammalian Phenotype) annotations be returned as additional information.
     <i>Note:</i> namespace declarations are required.<br>
