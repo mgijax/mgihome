@@ -1,5 +1,16 @@
 <!--#include file='include/templateHead.html'-->
-<title><!--#include file='include/mgiversion.html'--> - Software Developer Tools</title>
+<title><!--#include file='include/mgiversion.html'-->MGI-Software Developer Tools for the Mouse Genome Informatics database resource - Software Developer Tools</title>
+
+
+  <meta name="description" content="Instructions for linking to MGI's web pages, description of downloadable files, and instructions for custom queries. " />
+
+  <meta name="keywords" content="MGI, mgi, mice, mouse, murine, mus musculus, genes, genome, genomic, link to MGI, web page links, download files, FTP, batch query, tab-delimited output, tab delimited output, FASTA output, SQL query, database schema, schema browser, custom query, custom report" />
+
+  <meta name="robots" content="NOODP" />
+  <meta name="robots" content="NOYDIR" />
+
+
+
 
 <!--#include file='include/templateBodyStart.html'-->
 
@@ -8,6 +19,26 @@
   <span class="titleBarMainTitle">Software Developer Tools</span>
   </div>
 <!--titleBar-->
+
+<style>
+	.toc { margin 0px;
+		background-color:#DFEFFF; }
+	.toc ul { font-size: 12px;
+		margin 0px;
+		text-align: center;
+		line-height: 1.75;
+		list-style-type: none;
+		padding: .75em .75em 0.1em .75em;
+		min-width: 600px;}
+	.toc li { display: inline;
+		white-space: nowrap; }
+	.outline { border: 2px solid #DFEFFF; }
+	dl.linkedList { margin-left: 2em; }
+	.linkedList dt { margin-top: 1em; }
+	.linkedList dd { margin-left: 1em;
+		margin-top: .25em;
+		font-style:italic}
+</style>
 
 <!-- this file is an example template to be used to create a page in the
 "All X" format, similar to the "All Search Tools" page.  To use this template
