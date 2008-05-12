@@ -1,7 +1,11 @@
 <!--#include file='include/templateHead.html'-->
 
-  <title><!--#include file="include/mgiversion.html"--> - Strains, SNPs &amp; Polymorphisms</title>
-
+  <title><!--#include file="include/mgiversion.html"--> - MGI-Mouse Strains, SNPs &amp; Polymorphisms</title>
+ <meta name="description" content="MGI integrates comparative data on inbred strain characteristics including SNPs, polymorphisms, and quantitative phenotypes." />
+  <meta name="keywords" content="MGI, mgi, mice, mouse, murine, mus musculus, genes, genome, genomic, strains, inbred strains, SNPs, single nucleotide polymorphisms, PCR, polymerase chain reactions, RFLP, restriction fragment length polymorphisms, coding SNPs, RefSNPs" />
+  <meta name="robots" content="NOODP" />
+  <meta name="robots" content="NOYDIR" />
+  
 
 <!------------- AJAX TABS CALLS -------------------------------------------------------->
 
@@ -87,17 +91,20 @@
 
 						<dt class="whatList">Search for RFLP or PCR based polymorphisms by strain, locus symbol, or map position.</dt>
 						<dd class="searchList"><a href="<!--#include file='include/wi_url.html'-->searches/polymorphism_form.shtml" class="small homeLink">RFLP/PCR Polymorphism Query</a></dd>
+                                                <dt class="whatList">Inbred Strains of Mice.</dt>
+                                                <dd class="searchList"><a href="<!--#include file='include/wi_url.html'-->external/festing/search_form.cgi" class="small homeLink">Search characteristics of Inbred Strains</a> of Mice and Rats by M. Festing</dd>
+                                                <dd class="searchList">View lists of 
+<a href="<!--#include file='include/ftp_url.html'-->index.html#strain" class="small homeLink">Official Mouse Strain Names</a></dd>
 
-						<dt class="whatList">Search the listing of Inbred Strains of Mice and Rats by M. Festing.</dt>
-						<dd class="searchList"><a href="<!--#include file='include/wi_url.html'-->external/festing/search_form.cgi" class="small homeLink">Inbred Strain Characteristics</a></dd>
+<dt class="whatList">View a chart depicting the origins and relationships of inbred mouse strains.</dt>
 
-						<dt class="whatList">View a chart depicting the origins and relationships of inbred mouse strains.</dt>
-						<dd class="searchList"><a href="<!--#include file='include/mgihome_url.html'-->genealogy/" class="small homeLink">Genealogy Chart of Inbred Strains</a></dd>
+<dd class="searchList"><a href="<!--#include file='include/mgihome_url.html'-->genealogy/" class="small homeLink">Genealogy Chart of Inbred Strains</a></dd>
 
-						<dt class="whatList">Register a new strain and receive official nomenclature and an MGI accession identifier.</dt>
-						<dd class="searchList"><a href="<!--#include file='include/mgihome_url.html'-->submissions/strains/index.shtml" class="small homeLink">Strain Nomenclature Form</a></dd>
+<dt class="whatList">Register a new strain and receive official nomenclature and an MGI accession identifier.</dt>
 
-						<dt class="whatList">View guidelines for proper naming of mouse strains.</dt>
+<dd class="searchList"><a href="<!--#include file='include/mgihome_url.html'-->submissions/strains/index.shtml" class="small homeLink">Strain Nomenclature Form</a></dd>
+
+<dt class="whatList">View guidelines for proper naming of mouse strains.</dt>
 						<dd class="searchList"><a href="<!--#include file='include/mgihome_url.html'-->nomen/strains.shtml" class="small homeLink">Guide to Strain Nomenclature</a></dd>
 
 						<dt class="whatList">Search for sources of mutant mice and cell lines.</dt>

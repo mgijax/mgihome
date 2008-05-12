@@ -1,7 +1,11 @@
 <!--#include file='include/templateHead.html'-->
 
-  <title><!--#include file="include/mgiversion.html"--> - Gene Expression Database (GXD)</title>
-
+  <title><!--#include file="include/mgiversion.html"--> - MGI-Mouse Gene Expression Database (GXD)</title>
+ <meta name="description" content="GXD collects and integrates the  gene expression information in MGI. Its primary
+emphasis is on endogenous gene expression during  mouse development." />
+ <meta name="keywords" content="MGI, mgi, mice, mouse, murine, mus musculus, genes, genome, genomic, gene expression, mouse anatomy, embryo, embryonic development, expression assay, immunohistochemistry, in situ reporter, blot, RNA in situ, RNase, RT-PCR, Northern blot, Western blot" />
+  <meta name="robots" content="NOODP" />
+  <meta name="robots" content="NOYDIR" />
 
 <!------------- AJAX TABS CALLS -------------------------------------------------------->
 

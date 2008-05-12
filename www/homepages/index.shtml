@@ -1,8 +1,13 @@
 <!--#include file='include/templateHead.html'-->
 
-<title><!--#include file="include/mgiversion.html"--> - Mouse Genome Informatics Homepage</title>
+<title><!--#include file="include/mgiversion.html"-->MGI-Mouse Genome Informatics-The international database resource for the laboratory mouse - - Mouse Genome Informatics Homepage</title>
+ 
+  <meta name="description" content="MGI: the international database resource for the laboratory mouse, providing integrated genetic, genomic, and biological data for researching human health and disease." />
 
-<meta name="keywords" content="Mouse Genome Database, Gene Expression Database, Mouse Tumor Biology, Gene Ontology, Mouse Genome Sequence Project">
+  <meta name="keywords" content="Mouse Genome Database, Gene Expression Database, Mouse Tumor Biology, Gene Ontology, Mouse Genome Sequence Project, MGI, mgi, mice, mus musculus, murine, gene products, proteins, biochemical pathways, ontology" />
+
+  <meta name="robots" content="NOODP" />
+  <meta name="robots" content="NOYDIR" />
 
 <!-- Home Page Specific Css -->
 <link rel="stylesheet" type="text/css" href="<!--#include file="include/mgihome_url.html"-->homepages/homepage.css"/>
