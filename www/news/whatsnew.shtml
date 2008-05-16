@@ -18,7 +18,7 @@
   <TD ALIGN="left" VALIGN="top">
    <TABLE ALIGN="CENTER" BORDER="0" CELLSPACING="0" CELLPADDING="6" width="65%%">
      <TR BGCOLOR="#DFEFFF">
-       <TD ALIGN="left" VALIGN="top">
+       <TD ALIGN="left" VALIGN="top"><a href="#may_2008">May 2008</a>
         <a href="#feb_2008"><nobr>February 21, 2008</a><br>
        <a href="#oct_2007"><nobr>October 10, 2007</a>
         
@@ -34,9 +34,16 @@
 
 <P>
 
-<DL>
-<dt><a name="feb_2008"></a><b>February 21, 2008: Website and Navigation Redesign for MGI 4.0</b></dt><br>
-    <dd>The MGI website has a new design! Take a quick tour of the major changes:<br><br>
+<h4><a name="may_2008">May 2008: MGI 4.02</b></a></h4>
+ <blockquote>
+   <p>A new <a href="../other//web_service.shtml">MGI Web Service</a> provides programmatic access to select portions of the database. You can submit a set of identifiers (for example, mouse symbols) and get back a list of corresponding MGI gene/marker IDs, or you can load a set of identifiers and specify the attributes you want returned.</p>
+  </blockquote>
+  
+
+
+<h4><a name="feb_2008"></a>February 21, 2008: Website and Navigation Redesign for MGI 4.0</b></h4>    
+<blockquote>
+<p>The MGI website has a new design! Take a quick tour of the major changes:</p>
       <ul>
        <li>Click the horizontal navigaton bar to see drop-down menu options.</li><br>
        <li>Click Search--><a href="<!--#include file='include/menus_url.html'-->allsearch.shtml">All Search Tools</a> for a complete list of all available search forms.</li><br>
@@ -69,43 +76,44 @@ See <a href="<!--#include file='include/mgihome_url.html'-->homepages/stats/all_
   The <a href="../nomen/phenotype_data_form.shtml">Phenotype Data Submission Form</a> is for describing (and submitting) new or additional characteristics of spontaneous, induced, or genetically engineered mutations found in MGI.</li>
     </ul>
      </dl>
-<br>
+</blockquote>
 
-<dt><a name="oct_2007"></a><b>October 10, 2007: GXD update</b></dt><br>
-<dd>The Gene Expression Database (GXD) is pleased to announce the inclusion of <i>in situ </i>hybridization data from Dr. Gregor Eichele of the GenePaint database (www.genepaint.org;  Visel A; Thaller C; Eichele G. GenePaint.org: an atlas of gene expression patterns in the mouse embryo. 2004. Nucleic Acids Research 32(Database issue):D552-6).</dd>
+<h4><a name="oct_2007"></a>October 10, 2007: GXD update</h4>
+<blockquote>
+<p>The Gene Expression Database (GXD) is pleased to announce the inclusion of <i>in situ</i>hybridization data from Dr. Gregor Eichele of the GenePaint database (www.genepaint.org;  Visel A; Thaller C; Eichele G. GenePaint.org: an atlas of gene expression patterns in the mouse embryo. 2004. Nucleic Acids Research 32(Database issue):D552-6).</p>
 
-<dd>You can view the data set at accession number 
-<A HREF="<!--#include file='include/wi_url.html'-->searches/reference.cgi?124081">J:122989</a>. This set includes over 69,000 results for: 
+<p>You can view the data set at accession number 
+<a href="<!--#include file='include/wi_url.html'-->searches/reference.cgi?124081">J:122989</a>. This set includes over 69,000 results for: 
 <ul>
   <li>745 genes</li>
   <li>1397 probes</li>
   <li>748 assays (in situ hybridizations at E14.5)</li>
   <li>10585 images</li>
 </ul>
-</dd>
-<br>
+</p>
 
-<dd>Some useful links for querying subsets of data in GXD and MGI are: 
+
+<p>Some useful links for querying subsets of data in GXD and MGI are: 
 <ul>
-  <li><A HREF="<!--#include file='include/java_url.html'-->WIFetch?page=expressionQF">Gene Expression Data Query Form</a></li>
-  <li><A HREF="<!--#include file='include/java_url.html'-->WIFetch?page=markerQF">Genes and Markers Query Form</a></li>
+  <li><a href="<!--#include file='include/java_url.html'-->WIFetch?page=expressionQF">Gene Expression Data Query Form</a></li>
+  <li><a href="<!--#include file='include/java_url.html'-->WIFetch?page=markerQF">Genes and Markers Query Form</a></li>
   <li><a href="<!--#include file='include/java_url.html'-->WIFetch?page=probeQF">Molecular Probes and Clones Query Form</a></li>
 </ul>
-</dd>
-<br>
-	
-<dd>If you are interested in submitting your data to GXD, please see our guidelines for <a href="../GXD/GEN/gxd_submission_guidelines.shtml">submitting expression data to the Gene Expression Database</a> or contact <a href="mailto:GEN@informatics.jax.org">GEN@informatics.jax.org</a> for further information.
-</dd>
-<br><br>
+</p>
 
-<dt><a name="aug_2007"></a><b>August 6, 2007</b></dt>
+	
+<p>If you are interested in submitting your data to GXD, please see our guidelines for <a href="../GXD/GEN/gxd_submission_guidelines.shtml">submitting expression data to the Gene Expression Database</a> or contact <a href="mailto:GEN@informatics.jax.org">GEN@informatics.jax.org</a> for further information.
+</p>
+</blockquote>
+
+<h4><dt><a name="aug_2007"></a><b>August 6, 2007: Update</b></h4>
 <blockquote>
 <p>A revised version of the  <a href="../nomen/strains.shtml">Rules and Guidelines for Nomenclature of Mouse and Rat Strains</a> is now available. Most notably, the International Committee on Standardized Nomenclature for Mice added a section on nomenclature for Outbreds and Closed Colonies. The previous version of this document is <a href="../nomen/2006_strains.shtml">archived</a> for your reference. </p>
-
 </blockquote>
 
 
-</dl>
+
+
 
 
 </P>
