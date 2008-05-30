@@ -35,18 +35,21 @@
 
 <P>
 
-<h4><a name="june_2008">June, 2008: Build 37 Update</b></a></h4>
+<h4><a name="june_2008">June, 2008: Updates to Coordinates</b></a></h4>
  <blockquote>
 
-<ul><li>MGI genome coordinates are now updated to NCBI Mouse Build 37 and dbSNP Build 128. The build 37.1 reference assembly (C57BL/6J) represents over 90% of the mouse genome in finished form.</li><br>
-
-<li>For build statistics, see <a href="http://www.ncbi.nlm.nih.gov/mapview/stats/BuildStats.cgi?taxid=10090&build=37&ver=1">http://www.ncbi.nlm.nih.gov/mapview/stats/BuildStats.cgi?taxid=10090&build=37&ver=1.</a> </li>
-<!--<li>number of new SNPs bringing grand total up to ?
-</li>--></ul>
+<ul>
+<li>MGI mouse genome coordinates are now updated to NCBI Mouse Build 37 and dbSNP Build 128. The Build 37.1 reference assembly (C57BL/6J) represents over 90% of the mouse genome in finished form.</li><br>
+<li>For Build 37 <i>Mus musculus</i> statistics, see <a href="http://www.ncbi.nlm.nih.gov/mapview/stats/BuildStats.cgi?taxid=10090&build=37&ver=1">http://www.ncbi.nlm.nih.gov/mapview/stats/BuildStats.cgi?taxid=10090&build=37&ver=1.</a> </li><br>
+<li>For Build 128, MGI added 3,741,064 additional refSNPs. See 
+<a href="<!--#include file='include/wi_url.html'-->reports/snp_Summary.shtml">SNP Data in MGI</a> for statistics.
+</li>
+<li>For Build 128, MGI added 3,741,064 refSNPs. See 
+<a href="http://www.informatics.jax.org/reports/snpSummary.shtml">SNP Data in MGI</a> for additional statistics.
+</li>
+</ul>
  
-   <!--For data, see <a href="http://www.ncbi.nlm.nih.gov/genome/guide/mouse/">http://www.ncbi.nlm.nih.gov/genome/guide/mouse/</a>.</li>-->
-
-<!--Computational genome annotations from Ensembl and NCBI are included in this release. New for this release is the inclusion of manually curated gene models from the VEGA (Vertebrate Genome Annotation) group from the Sanger Institute.--> 
+ 
   
    
   </blockquote>
@@ -58,7 +61,7 @@
 <h4><a name="may_2008">May 22, 2008: MGI 4.02</b></a></h4>
  <blockquote>
    <ul>
-     <li>A new <a href="../other//web_service.shtml">MGI Web Service</a> provides programmatic access to select portions of the database. You can submit a set of identifiers (for example, mouse symbols) and get back a list of corresponding MGI gene/marker IDs, or you can load a set of identifiers and specify the attributes you want returned.</li><br>
+     <li>A new <a href="../other/web_service.shtml">MGI Web Service</a> provides programmatic access to select portions of the database. You can submit a set of identifiers (for example, mouse symbols) and get back a list of corresponding MGI gene/marker IDs, or you can load a set of identifiers and specify the attributes you want returned.</li><br>
      <li>The layout of the Expression section of gene detail pages has been improved and links to gene pages at the Allan Brain Atlas, a database of gene expression patterns in the adult mouse brain, have been added.</li><br>
      <li>Gene Expression Data summaries have been revised to make accessing the detailed expression data more intuitive.  The links to the detailed data are now in the first column of the page and have been re-labeled data.  Additionally, a camera icon has been added to indicate when images of the primary data are available by following the data link.</li>
 </ul>
