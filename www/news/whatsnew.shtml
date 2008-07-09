@@ -36,15 +36,28 @@
 
 <P>
 
-<h4><a name="july_2008"></a>July 31, 2008: Gene Expression Database (GXD) enhancements (MGI 4.11)</h4>
+<h4><a name="july_2008"></a>July 24, 2008: MGI 4.11 features enhancements to the Gene Expression Database (GXD)</h4>
 <blockquote>
 <ul>
-  
-<li>The Gene Expression Data and Expanded query forms now search detailed expression data and expression literature content records simultaneously whenever query parameters apply to both types of data.
+
+<li>In addition to links to detailed expression data entries, data summaries returned by the Gene Expression Data and Expanded query forms now also include links to expression literature content records matching the query parameters. <a href="http://rohan.informatics.jax.org/~djd/userdocs_dev/gxd_query_results.shtml#gxd_lit_record">Read more...</a></li><br>
+
+<li>Some of the expression images annotated by GXD are 3-D spatially mapped into <a href="http://genex.hgu.mrc.ac.uk/Emage/database/emageIntro.html">EMAGE</a>, the Edinburgh Mouse Atlas and Gene Expression Database. GXD's image detail pages now include links to corresponding entries at EMAGE. This makes it easier to compare GXD's text-based and EMAGE's graphical annotation of the same expression data.</li><br>
+</li>
+<li>Links to gene expression profile pages at <a href="http://www.ncbi.nlm.nih.gov/geo/">GEO</a>, the microarray repository at NCBI, are now available in the External Resources in the Expression section of Gene Detail pages.
 </li><br>
-<li>Image detail pages now link to the 3-D spatial mapping entries at <a href="http://genex.hgu.mrc.ac.uk/Emage/database/emageIntro.html">EMAGE</a>, the Edinburgh Mouse Atlas Gene Expression Database, making it easy to compare textual annotation (GXD) and  graphical annotation (EMAGE) of the same expression data.</li><br>
-<li>The Expression section our gene detail pages now contains links to gene expression profile pages at GEO, the microarray and high-throughput data repository at NCBI.</li>
+<li>Links to <a href="http://www.gensat.org/index.html">GENSAT</a>, the Gene Expression Nervous System Atlas Project, are also available from the Expression section of Gene Detail pages.</li>
 </ul>
+
+
+
+
+
+
+
+
+
+
 
 
 </blockquote>
