@@ -35,16 +35,17 @@
 
 
 <P>
-<h4><a name="sept_2008"></a>September 18, 2008</h4>
+<h4><a name="sept_2008"></a>September 18, 2008: Phenotype pages have been redesigned and new features added in the MGI 4.12 release</h4>
 <blockquote>
-<ul>
-  <li>MGI release 4.12 features a new <b>Phenotype summary</b> resulting from queries on the 
-<a href="<!--#include file='include/wi_url.html'-->searches/allele_form.shtml">Phenotypes, Alleles & Disease Models Query Form</a>. The summary displays all genotypes involving a given allele with annotations in affected anatomical systems.</li><br>
-<li>See
-<a onClick='javascript:openFaqWindow("Allele_tour.shtml"); return false;'
- href="<!--#include file='include/faq_url.html'-->Allele_tour.shtml">Allele Tour</a> for a FAQ on how to use the new table.</li><br>
-<li>See <a href="<!--#include file='include/userdocs_url.html'-->phenoview.shtml">Interpreting the Phenotype Summary on an Allele Detail page</a> for a full description.</li>
-</ul>
+	<ul>
+		
+<li>The Phenotype section of each Allele Detail Page now includes two distinct views of phenotype data.</li><br>
+<li>A new section, <b>Phenotype Summary</b>, presents data in a matrix format that allows easy comparison of phenotypes across genotypes. Users can compare effects of different allelic combinations (homozygotes, heterozygotes, conditionals, complex allelic combinations, etc.), different genetic backgrounds with the same allelic combinations, and quickly view the range of phenotypic effects observed for a given allele. This phenotype matrix view is presented first with an axis of high level terms like "hematopoietic system" and gives the user the option to expand that section into more specific annotated phenotypic terms (anemia, increased mast cell number, etc.).</li><br>
+<li>In addition, the ability to pop up individual windows that contain the phenotype and disease model for a single genotype is available from the <b>Phenotype Summary</b>.  This can facilitate comparisons across mutants for a single gene, as well as among mutants for different genes.</li><br>
+
+<li>The <b>Phenotypic Data by Genotype</b> section presents a table of genotypes that can be expanded to show complete phenotype annotation, preserving the data format previously provided.  For each genotype listed, users can expand the display to show the full phenotype detail for a given genotype (or for all genotypes), as well as the disease model annotations.</li><br>
+<li>To see an example of a the redesigned allele detail page, check this record for one of the targeted mutations of the endoglin gene, <a href="http://www.informatics.jax.org/javawi2/servlet/WIFetch?page=alleleDetail&key=6501">Eng<sup>tm1Mle</sup></a>.  For additional information, see the <a onclick='javascript:openFaqWindow("Allele_tour.shtml"); return false;' href="<!--#include file='include/faq_url.html'-->Allele_tour.shtml">Allele Tour</a> displaying the basics of the new phenotype formats.</li>
+		</ul>
 
 </blockquote>
 
