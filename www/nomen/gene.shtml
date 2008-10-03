@@ -1136,13 +1136,15 @@ where the inserted BAC is from the RP22 BAC library, plate 412, row K, column
 <blockquote>
 <b>Example:</b> &nbsp;<i>TgTn(sb-T2/GT2/tTA)1Dla</i><br><br>
 
-The symbol consists of:
+The symbol consists of:<ul>
  <li><i>Tg</i> denoting  transgenic</li>
  <li><i>Tn</i> denoting  transposon</li>
  <li>In parentheses, a lowercase abbreviation of the transposon class (in this case sb	
 for Sleeping Beauty), followed by a hyphen and the vector designation</li>
  <li>The laboratory's line or founder designation or a serial number</li>
 <li>The Laboratory Code of the originating lab</li>
+</ul>
+
 </blockquote>
 
 <h3><a name="transposase"></a>5.2&nbsp;&nbsp;Transposase Inserts </h3>
@@ -1154,11 +1156,12 @@ Tg(promoter-transposase)#Labcode
 </blockquote>
 <blockquote>
 <b>Example:</b> &nbsp;<i>Tg(ACTB-sb10)545Abc</i><br><br>
-The symbol consists of:
+The symbol consists of:<ul>
  <li><i>Tg</i> denoting transgene</li>
  <li>In parentheses, the official gene symbol for the promoter, using the nomenclature of the species of origin, followed by a hyphen and a lowercase transposase symbol, in this case sb10 for the Sleeping Beauty 10 transposase</li>
 <li>The laboratory's line or founder designation or a serial number </li>
 <li>The Laboratory code of the originating lab.</li>
+ </ul>
 
 </p>
 </blockquote>
@@ -1170,7 +1173,8 @@ The symbol consists of:
 
 <blockquote>
 <b>Example: </b> &nbsp;<i>Gt(ROSA)26Sor<sup>tm1(sb11)Njen</sup></i><br><br>
-The symbol consists of:	
+The symbol consists of:	  <ul>
+
   <li>The gene into which the transposase was integrated, in this case <i>Gt(ROSA)26Sor</i></li>
   <li>In the superscript:
    <ul>
@@ -1180,6 +1184,7 @@ The symbol consists of:
 Sleeping Beauty 11 transposase</li>
      <li>The Laboratory Code of the originating lab</li>
 </ul> 
+</ul>
 </blockquote>
 
 <h3><A NAME="transposed"></a>5.3 &nbsp;&nbsp;Transposed Insertion Alleles</h3>
@@ -1191,7 +1196,7 @@ Sleeping Beauty 11 transposase</li>
 
 <blockquote>
 <b>Example:</b>&nbsp;<i>Car12<sup>Tn(sb-T2/GT2/tTA)1.1Dla</sup></i><br><br>
-The symbol consists of:
+The symbol consists of:</ul> 
    <li>The gene into which the transposable element was integrated (transposed)</li>
    <li>In the superscript:
     <ul>
@@ -1201,6 +1206,8 @@ case sb for Sleeping Beauty), followed by a hyphen and the vector designation </
      <li>A serial number, in which the primary number corresponds to that given to the transposable element concatamer from which it arose, followed by a decimal point and a serial number designating its number within the series of derivative insertion alleles.</li>
      <li>The Laboratory Code of the lab originating the transposable element line.</li>
    </ul>
+</ul>
+
 </blockquote>
 
 <p>If a newly transposed insertion occurs in an unknown site or intergenic region, the form: 
