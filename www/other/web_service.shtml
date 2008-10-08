@@ -127,9 +127,11 @@
     The &lt;mgiIDRequest&gt; element is composed of:
     <ol>
         <li>&lt;requestorEmail&gt; - The email address of the requestor.  This element is defined in the http://ws.mgi.jax.org/xsd/request namespace.<br><br></li>
-        <li>&lt;IDSet&gt; - An IDType attribute and 1 or more &lt;id&gt; sub-elements.  The &lt;IDSet&gt; element is defined
-        in the http://ws.mgi.jax.org/xsd/request namespace.  The IDType attribute must be one of the case sensitive strings
-        defined below and is used to indicate what type of identifiers the set contains.  The &lt;id&gt; sub-elements each contain
+        <li>&lt;IDSet&gt; - An optional IDType attribute and 1 or more &lt;id&gt; sub-elements.  The &lt;IDSet&gt; element is defined
+        in the http://ws.mgi.jax.org/xsd/request namespace.  The optional IDType attribute must be one of the case sensitive strings
+        defined below and is used to indicate what type of identifiers the set contains.  If this attribute is omitted
+        auto is assumed and the batchMarkerRequest will attempt to detect type of the input ids it receives.  Note that this option supports 
+        an IDSet containing ids of mixed type.  The &lt;id&gt; sub-elements each contain
         an individual identifier, and queries for the identifiers are case insensitive.  The &lt;id&gt; element is defined
         in the http://ws.mgi.jax.org/xsd/request namespace.<br><br>
 
@@ -137,15 +139,19 @@
 
         <table border="1" cellspacing="0" cellpadding="3">
             <tr><th valign="top">IDType</th><th valign="top">Examples</th></tr>
+            <tr><td valign="top">auto</td><td valign="top">Pax6, MGI:97490, NM_146146</td></tr>
+            <tr><td valign="top">mgiMarker</td><td valign="top">MGI:97490</td></tr>
             <tr><td valign="top">symbol</td><td valign="top">Pax6</td></tr>
-            <tr><td valign="top">ensembl</td><td valign="top">ENSMUSG00000029335</td></tr>
+            <tr><td valign="top">nomen</td><td valign="top">TP53</td></tr>
             <tr><td valign="top">entrezGene</td><td valign="top">22173</td></tr>
+            <tr><td valign="top">ensembl</td><td valign="top">ENSMUSG00000029335</td></tr>
+            <tr><td valign="top">vega</td><td valign="top">OTTMUSG00000015006</td></tr>
+            <tr><td valign="top">unigene</td><td valign="top">181490</td></tr>
+            <tr><td valign="top">mirbase</td><td valign="top">181490</td></tr>
             <tr><td valign="top">genbankRefseq</td><td valign="top">NM_146146</td></tr>
+            <tr><td valign="top">uniprot</td><td valign="top">P48356</td></tr>
             <tr><td valign="top">go</td><td valign="top">GO:0019221</td></tr>
             <tr><td valign="top">refsnp</td><td valign="top">rs27429143</td></tr>
-            <tr><td valign="top">unigene</td><td valign="top">181490</td></tr>
-            <tr><td valign="top">uniprot</td><td valign="top">P48356</td></tr>
-            <tr><td valign="top">vega</td><td valign="top">OTTMUSG00000015006</td></tr>
         </table>
         </li>
     </ol>
@@ -189,14 +195,17 @@
         &lt;/mgi:summary&gt;
         &lt;mgi:row&gt;
             &lt;mgi:Input&gt;foo&lt;/mgi:Input&gt;
+            &lt;mgi:inputtype&gt;Unknown&lt;/mgi:inputtype&gt;
             &lt;mgi:mgiGeneMarkerID /&gt;
         &lt;/mgi:row&gt;
         &lt;mgi:row&gt;
             &lt;mgi:Input&gt;Trp53&lt;/mgi:Input&gt;
+            &lt;mgi:inputtype&gt;current symbol&lt;/mgi:inputtype&gt;
             &lt;mgi:mgiGeneMarkerID&gt;MGI:98834&lt;/mgi:mgiGeneMarkerID&gt;
         &lt;/mgi:row&gt;
         &lt;mgi:row&gt;
             &lt;mgi:Input&gt;Pax6&lt;/mgi:Input&gt;
+            &lt;mgi:inputtype&gt;current symbol&lt;/mgi:inputtype&gt;
             &lt;mgi:mgiGeneMarkerID&gt;MGI:97490&lt;/mgi:mgiGeneMarkerID&gt;
         &lt;/mgi:row&gt;
     &lt;/mgi:submitDocumentResponse&gt;
@@ -236,9 +245,11 @@
     This &lt;batchMarkerRequest&gt; element is composed of:
     <ol>
         <li>&lt;requestorEmail&gt; - The email address of the requestor.  This element is defined in the http://ws.mgi.jax.org/xsd/request namespace.<br><br></li>
-        <li>&lt;IDSet&gt; - An IDType attribute and 1 or more &lt;id&gt; sub-elements.  The &lt;IDSet&gt;
-        element is defined in the http://ws.mgi.jax.org/xsd/request namespace.  The IDType attribute must be one of the
-        case sensitive strings defined below and is used to indicate what type of identifiers the set contains.
+        <li>&lt;IDSet&gt; - An optional IDType attribute and 1 or more &lt;id&gt; sub-elements.  The &lt;IDSet&gt;
+        element is defined in the http://ws.mgi.jax.org/xsd/request namespace.  The optional IDType attribute must be one of the
+        case sensitive strings defined below and is used to indicate what type of identifiers the set contains.  If this attribute is omitted
+        auto is assumed and the batchMarkerRequest will attempt to detect type of the input ids it receives.  Note that this option supports 
+        an IDSet containing ids of mixed type.  
         The &lt;id&gt; sub-elements each contain an individual identifier, and queries for the identifiers are case
         insensitive.  The &lt;id&gt; element is defined in the http://ws.mgi.jax.org/xsd/batchType namespace.<br><br>
 
@@ -246,17 +257,22 @@
 
         <table border="1" cellspacing="0" cellpadding="3">
             <tr><th valign="top">IDType</th><th valign="top">Examples</th></tr>
-            <tr><td valign="top">mgiMarker</td><td valign="top">MGI:98880</td></tr>
+            <tr><td valign="top">auto</td><td valign="top">Pax6, MGI:97490, NM_146146</td></tr>
+            <tr><td valign="top">mgiMarker</td><td valign="top">MGI:97490</td></tr>
             <tr><td valign="top">symbol</td><td valign="top">Pax6</td></tr>
-            <tr><td valign="top">ensembl</td><td valign="top">ENSMUSG00000029335</td></tr>
+            <tr><td valign="top">nomen</td><td valign="top">TP53</td></tr>
             <tr><td valign="top">entrezGene</td><td valign="top">22173</td></tr>
+            <tr><td valign="top">ensembl</td><td valign="top">ENSMUSG00000029335</td></tr>
+            <tr><td valign="top">vega</td><td valign="top">OTTMUSG00000015006</td></tr>
+            <tr><td valign="top">unigene</td><td valign="top">181490</td></tr>
+            <tr><td valign="top">mirbase</td><td valign="top">181490</td></tr>
             <tr><td valign="top">genbankRefseq</td><td valign="top">NM_146146</td></tr>
+            <tr><td valign="top">uniprot</td><td valign="top">P48356</td></tr>
             <tr><td valign="top">go</td><td valign="top">GO:0019221</td></tr>
             <tr><td valign="top">refsnp</td><td valign="top">rs27429143</td></tr>
-            <tr><td valign="top">unigene</td><td valign="top">181490</td></tr>
-            <tr><td valign="top">uniprot</td><td valign="top">P48356</td></tr>
-            <tr><td valign="top">vega</td><td valign="top">OTTMUSG00000015006</td></tr>
-        </table><br><br>
+        </table>
+        
+        <br><br>
         </li>
         <li>&lt;returnSet&gt; - 1 - 5 &lt;attribute&gt; sub-elements.
         The &lt;returnSet&gt; element is defined in the
@@ -314,6 +330,8 @@
             <tr><td valign="top">refsnp</td><td valign="top">&lt;refsnp&gt; - contains a RefSNP ID associated to the gene/marker<br><br>
                 (<i>Results include only within gene and locus region annotations</i>)</td></tr>
             <tr><td valign="top">uniprot</td><td valign="top">&lt;uniprot&gt; - contains a UniProt (protein) sequence ID associated to the gene/marker</td></tr>
+            <tr><td valign="top">omim</td><td valign="top">&lt;ID&gt; - ID of the OMIM (Human Disease) term associated to the gene/marker<br/>
+                &lt;Term&gt;</td></tr>
         </table><br><br>
         </li>
     </ol>
@@ -375,6 +393,7 @@
        &lt;/mgi:summary&gt;
        &lt;mgi:row&gt;
           &lt;mgi:input&gt;MGI:103188&lt;/mgi:input&gt;
+          &lt;mgi:inputtype&gt;MGI&lt;/mgi:inputtype&gt;
           &lt;mgi:mgiGeneMarkerID&gt;MGI:103188&lt;/mgi:mgiGeneMarkerID&gt;
           &lt;mgi:entrezGeneID&gt;18028&lt;/mgi:entrezGeneID&gt;
           &lt;mgi:symbol&gt;Nfib&lt;/mgi:symbol&gt;
@@ -390,6 +409,7 @@
        &lt;/mgi:row&gt;
        &lt;mgi:row&gt;
           &lt;mgi:input&gt;MGI:103188&lt;/mgi:input&gt;
+          &lt;mgi:inputtype&gt;MGI&lt;/mgi:inputtype&gt;
           &lt;mgi:mgiGeneMarkerID&gt;MGI:103188&lt;/mgi:mgiGeneMarkerID&gt;
           &lt;mgi:entrezGeneID&gt;18028&lt;/mgi:entrezGeneID&gt;
           &lt;mgi:symbol&gt;Nfib&lt;/mgi:symbol&gt;
@@ -405,6 +425,7 @@
        &lt;/mgi:row&gt;
        &lt;mgi:row&gt;
           &lt;mgi:input&gt;MGI:1342771&lt;/mgi:input&gt;
+          &lt;mgi:inputtype&gt;MGI&lt;/mgi:inputtype&gt;
           &lt;mgi:mgiGeneMarkerID&gt;MGI:1342771&lt;/mgi:mgiGeneMarkerID&gt;
           &lt;mgi:entrezGeneID&gt;16596&lt;/mgi:entrezGeneID&gt;
           &lt;mgi:symbol&gt;Klf1&lt;/mgi:symbol&gt;
