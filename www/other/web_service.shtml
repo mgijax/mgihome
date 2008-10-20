@@ -130,7 +130,7 @@
         <li>&lt;IDSet&gt; - An optional IDType attribute and 1 or more &lt;id&gt; sub-elements.  The &lt;IDSet&gt; element is defined
         in the http://ws.mgi.jax.org/xsd/request namespace.  The optional IDType attribute must be one of the case sensitive strings
         defined below and is used to indicate what type of identifiers the set contains.  If this attribute is omitted
-        auto is assumed and the batchMarkerRequest will attempt to detect type of the input ids it receives.  Note that this option supports 
+        <i>auto</i> is assumed and the batchMarkerRequest will attempt to detect type of the input ids it receives.  Note that this option supports 
         an IDSet containing ids of mixed type.  The &lt;id&gt; sub-elements each contain
         an individual identifier, and queries for the identifiers are case insensitive.  The &lt;id&gt; element is defined
         in the http://ws.mgi.jax.org/xsd/request namespace.<br><br>
@@ -147,7 +147,7 @@
             <tr><td valign="top">ensembl</td><td valign="top">ENSMUSG00000029335</td></tr>
             <tr><td valign="top">vega</td><td valign="top">OTTMUSG00000015006</td></tr>
             <tr><td valign="top">unigene</td><td valign="top">181490</td></tr>
-            <tr><td valign="top">mirbase</td><td valign="top">181490</td></tr>
+            <tr><td valign="top">mirbase</td><td valign="top">MI0005552</td></tr>
             <tr><td valign="top">genbankRefseq</td><td valign="top">NM_146146</td></tr>
             <tr><td valign="top">uniprot</td><td valign="top">P48356</td></tr>
             <tr><td valign="top">go</td><td valign="top">GO:0019221</td></tr>
@@ -248,7 +248,7 @@
         <li>&lt;IDSet&gt; - An optional IDType attribute and 1 or more &lt;id&gt; sub-elements.  The &lt;IDSet&gt;
         element is defined in the http://ws.mgi.jax.org/xsd/request namespace.  The optional IDType attribute must be one of the
         case sensitive strings defined below and is used to indicate what type of identifiers the set contains.  If this attribute is omitted
-        auto is assumed and the batchMarkerRequest will attempt to detect type of the input ids it receives.  Note that this option supports 
+        <i>auto</i> is assumed and the batchMarkerRequest will attempt to detect type of the input ids it receives.  Note that this option supports 
         an IDSet containing ids of mixed type.  
         The &lt;id&gt; sub-elements each contain an individual identifier, and queries for the identifiers are case
         insensitive.  The &lt;id&gt; element is defined in the http://ws.mgi.jax.org/xsd/batchType namespace.<br><br>
@@ -257,7 +257,7 @@
 
         <table border="1" cellspacing="0" cellpadding="3">
             <tr><th valign="top">IDType</th><th valign="top">Examples</th></tr>
-            <tr><td valign="top">auto</td><td valign="top">Pax6, MGI:97490, NM_146146</td></tr>
+            <tr><td valign="top">auto</td><td valign="top">Any type of IDs may be used.</td></tr>
             <tr><td valign="top">mgiMarker</td><td valign="top">MGI:97490</td></tr>
             <tr><td valign="top">symbol</td><td valign="top">Pax6</td></tr>
             <tr><td valign="top">nomen</td><td valign="top">TP53</td></tr>
@@ -265,7 +265,7 @@
             <tr><td valign="top">ensembl</td><td valign="top">ENSMUSG00000029335</td></tr>
             <tr><td valign="top">vega</td><td valign="top">OTTMUSG00000015006</td></tr>
             <tr><td valign="top">unigene</td><td valign="top">181490</td></tr>
-            <tr><td valign="top">mirbase</td><td valign="top">181490</td></tr>
+            <tr><td valign="top">mirbase</td><td valign="top">MI0005552</td></tr>
             <tr><td valign="top">genbankRefseq</td><td valign="top">NM_146146</td></tr>
             <tr><td valign="top">uniprot</td><td valign="top">P48356</td></tr>
             <tr><td valign="top">go</td><td valign="top">GO:0019221</td></tr>
@@ -325,7 +325,8 @@
                 &lt;ID&gt; - ID of the MP (Mammalian Phenotype) term associated to the gene/marker<br/>
                 &lt;Term&gt;<br><br>
                 (<i>Normal</i> annotations are not returned)</td></tr>
-            <tr><td valign="top">mgiAllele</td><td valign="top">&lt;mgiallele&gt; - MGI Allele ID</td></tr>
+            <tr><td valign="top">mgiAllele</td><td valign="top">&lt;ID&gt; - MGI Allele ID<br/>
+                &lt;Symbol&gt;</td></tr>
             <tr><td valign="top">genbankRefseq</td><td valign="top">&lt;genbankrefseq&gt; - contains a GenBank (nucleotide) or RefSeq (nucleotide or protein) sequence ID associated to the gene/marker</td></tr>
             <tr><td valign="top">refsnp</td><td valign="top">&lt;refsnp&gt; - contains a RefSNP ID associated to the gene/marker<br><br>
                 (<i>Results include only within gene and locus region annotations</i>)</td></tr>
