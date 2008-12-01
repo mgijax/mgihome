@@ -1071,28 +1071,30 @@ def getInputObj (
 	
 	inp = SimpleTextUserInput (parms)
 	
-	result = homelib.sql ('''select _MGIType_key
-			from ACC_Accession
-			where accID = "%s"''' % parms['accID'],
-			'auto')
+	if parms.has_key('accID'):
+		result = homelib.sql ('''select _MGIType_key
+				from ACC_Accession
+				where accID = "%s"''' % parms['accID'],
+				'auto')
+		
+		for mgiType in result:
+			if mgiType['_MGIType_key'] in ALLOWED_TYPES:
+				# return an object of the appropriate
+				# subclass.  (or fall back on the default if no
+				# special subclass is defined)
+	
+				if mgiType['_MGIType_key'] == MARKER_TYPE:
+					inp = MarkerUserInput (parms)
+	
+				elif mgiType['_MGIType_key'] == ALLELE_TYPE:
+					inp = AlleleUserInput (parms)
+	
+				elif mgiType['_MGIType_key'] == ASSAY_TYPE:
+					inp = AssayUserInput (parms)
+	
+				# add handling here for other MGI Types as needed...
+	
+				else:
+					inp = SimpleTextUserInput (parms)
 
-	for mgiType in result:
-		if mgiType['_MGIType_key'] in ALLOWED_TYPES:
-			# return an object of the appropriate
-			# subclass.  (or fall back on the default if no
-			# special subclass is defined)
-
-			if mgiType['_MGIType_key'] == MARKER_TYPE:
-				inp = MarkerUserInput (parms)
-
-			elif mgiType['_MGIType_key'] == ALLELE_TYPE:
-				inp = AlleleUserInput (parms)
-
-			elif mgiType['_MGIType_key'] == ASSAY_TYPE:
-				inp = AssayUserInput (parms)
-
-			# add handling here for other MGI Types as needed...
-
-			else:
-				inp = SimpleTextUserInput (parms)
 	return inp
