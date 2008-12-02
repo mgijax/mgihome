@@ -20,7 +20,7 @@
 <div id="homePageBodyInsert" style="text-align: left;">
 
 <div id="templateSearchTool" style="position:relative; text-align:center; vertical-align:middle; background-color:#F0F8FF; top:1px; left:50%; width:796px; margin-left:-400px; height:48px;" class="blueBorder">
-    <form action="http://valinor.informatics.jax.org:18080/searchtool_wi/Search.do" method="get" style="position:relative; top:10px;">
+    <form action="<!--#include file="include/quicksearch_url.html"-->Search.do" method="get" style="position:relative; top:10px;">
 	<table align="center">
 		<tbody>
 		  <tr>
