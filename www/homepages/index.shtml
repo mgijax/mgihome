@@ -18,6 +18,31 @@
 
 <div id="homePageBodyWrapper" style="text-align: center;">
 <div id="homePageBodyInsert" style="text-align: left;">
+
+<div id="templateSearchTool" style="position:relative; text-align:center; vertical-align:middle; background-color:#F0F8FF; top:1px; left:50%; width:796px; margin-left:-400px; height:48px;" class="blueBorder">
+    <form action="<!--#include file="include/quicksearch_url.html"-->Search.do" method="get" style="position:relative; top:10px;">
+	<table align="center">
+		<tbody>
+		  <tr>
+		 <td>
+			    <a onClick="return false;" href="<!--#include file="include/userdocs_url.html"-->searchtool_help.shtml" 
+			         onMouseOver="return overlib('You can:<ul class=\'searchToolHelp\'><li>Search for genome features by name, symbol, synonym, ortholog, allele, or accession ID:</li> <ul><li>p53 protein cell cycle DNA damage</li><li>Notch1</li><li>NM_053172</li><li>AT3</li></ul><li>Search for genome features and vocabulary terms by keywords or accession ID. Use several keywords to find the most relevant results:</li><ul><li>GO:0004713</li><li>resistance to fatty liver development</li><li>vitamin D receptor</li><li>lymphocyte function antigen immunodeficiency</li> </ul><li>Use asterisks (*) for wildcards at the end of partial words or genomic symbols:</li><ul><li>Pax*</li><li>embr* development</li><li>hippocamp* pyramid* cell layer</li></ul><li>Use quotation marks (&quot;&nbsp;&quot;) to indicate phrases:</li> <ul><li>&quot;hair follicle&quot; development</li><li>&quot;amyotrophic lateral sclerosis&quot;</li></ul><li>Use angle brackets to indicate superscript:</li><ul><li>Pax6&lt;10Neu&gt; for Pax6<sup>10Neu</sup></li></ul><li>Mix IDs, symbols, and keywords in a list:</li><ul><li>Nmt2, NM_013627, Acbd7, hair follicle development</li></ul></ul>Advanced searches are listed under the Search menu.<BR/>See <a href=\'<!--#include file="include/userdocs_url2.html"-->searchtool_help.shtml\'>Using the Quick Search Tool</a> for more information.', STICKY, CAPTION, 'Quick Search Tips', CENTER, BELOW, WIDTH, 450, DELAY, 600, CLOSECLICK, CLOSETEXT, 'Close X');" 
+			         onMouseOut="nd();">
+			         <!--#include file='include/help_large.html'-->
+			    </a>		
+		 </td>
+		 <td>
+		    <input name="query" id="searchToolTextArea" value=" Keywords, Symbols, or IDs" onFocus="if(this.defaultValue==this.value) this.value='';" size="45" style="font-size:1.25em;">
+		 </td>		
+		 <td>
+		    <input name="submit" class="searchToolButton" value="Quick Search" onClick="return verifySearchToolParms();" type="submit"><br/>
+		  </td>
+		</tr>		
+		</tbody>
+	</table>
+	</form>
+
+</div>
   
   <div class="blueBorder marginTop marginBottom">
 	  <div class="boxTitle">
@@ -121,13 +146,6 @@
       </div>
       <div class="boxBG pad5">
       <dl class="boxList">
-      <dt><!-- <div class="tour">
-      <div class="bl"><div class="br"><div class="tl"><div class="tr">
-
-        <a href='javascript:openFaqWindow("Tour.shtml")'">Tour the MGI website</a>
-      </div></div></div></div>
-    </div><br>-->
-
       <dt>How do I...</dt>
 
       <dd class="faqListHomePage">.. search for genes by genomic interval?
