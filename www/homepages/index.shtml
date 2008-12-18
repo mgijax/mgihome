@@ -16,11 +16,11 @@
 
 <!--#include file='include/templateHomePageBodyStart.html'-->
 
-<div id="homePageBodyWrapper" style="text-align: center;">
+<div style="text-align: center;">
 <div id="homePageBodyInsert" style="text-align: left;">
 
-<div id="templateSearchTool" style="position:relative; text-align:center; vertical-align:middle; background-color:#F0F8FF; top:1px; left:50%; width:796px; margin-left:-400px; height:48px;" class="blueBorder">
-    <form action="<!--#include file="include/quicksearch_url.html"-->Search.do" method="get" style="position:relative; top:10px;">
+<div class="blueBorder marginBottom pad5" style="background-color:#F0F8FF;>
+    <form action="<!--#include file="include/quicksearch_url.html"-->Search.do" method="get">
 	<table align="center">
 		<tbody>
 		  <tr>
@@ -172,9 +172,11 @@
           href="<!--#include file='include/faq_url.html'-->GM_genmap.shtml">FAQ
         </a>
       </dd>
-
+      <!--spacer - adjust as necessary -->
+      <div style="height: 2em;">     
       </dl>
-        <a class="small homeLink" href="<!--#include file='include/faq_url.html'-->FAQ.shtml">More FAQs</a>
+   
+      <a class="small homeLink" href="<!--#include file='include/faq_url.html'-->FAQ.shtml">More FAQs</a>
      </div>
     </div>
     </td>
@@ -197,18 +199,11 @@ href="http://www.surveymonkey.com/s.aspx?sm=Er4G5wADG9gd4SGsEKwuNA_3d_3d">Click
 here to take survey</a>.</li>
 <li>MGI 4.13 release features enhancements to the MGI Batch Query tool. <a class="homeLink" href="<!--#include file="include/mgihome_url.html"-->news/whatsnew.shtml">Read more...</a>
 </li>
-
-<li>MGI release 4.12 features a new <b>Phenotype summary</b> section on allele detail pages, allowing easy comparisons of phenotypes across genotypes.
-<a class="homeLink" href="<!--#include file="include/mgihome_url.html"-->news/whatsnew.shtml">Read more...</a>
-</li>
-
-  <li>The MGI 4.11 release includes enhancements related to gene expression data. 
-<a class="homeLink" href="<!--#include file="include/mgihome_url.html"-->news/whatsnew.shtml">Read more...</a>
-        
+ 
         </ul>
         
-        <!--spacer - adjust this to make this the same height as the access box-->
-        <div style="height: 2em;"></div>
+        <!--spacer - adjust this to make this the same height as the access box
+        <div style="height: 2em;"></div>-->
         
         <div class="padBottom">
 	        <div class="left"><a class="homeLink small" href="<!--#include file='include/mgihome_url.html'-->news/whatsnew.shtml">More MGI news</a></div>
@@ -231,7 +226,7 @@ here to take survey</a>.</li>
 <ul>
 02/18/09&nbsp;&nbsp;<a href="http://www.mskcc.org/mskcc/html/44.cfm">Memorial Sloan-Kettering Cancer Center</a><br>
 
-04/07/09&nbsp;&nbsp;<a href="http://www.vanderbilt.edu/">Vanderbuilt University<br>
+04/07/09&nbsp;&nbsp;<a href="http://www.vanderbilt.edu/">Vanderbuilt University</a><br>
 </ul>
 
 
