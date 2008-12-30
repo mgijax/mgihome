@@ -24,7 +24,7 @@
 
 <p>Rules for mouse genetic nomenclature were first published by Dunn, Gruneberg, and Snell (1940) and
 subsequently revised by the International Committee for Standardized Genetic Nomenclature in Mice
-(1963, 1973, 1981, 1989, 1996). The most recent publication of mouse nomenclature guidelines can be found in Eppig (2006). Users should be advised, however, that this web version represents the current nomenclature policies of the International Committee for Standardized Genetic Nomenclature for MIce and takes precedent over previously published versions.
+(1963, 1973, 1981, 1989, 1996). The most recent publication of mouse nomenclature guidelines can be found in <a href="#eppig">Eppig</a> (2006). Users should be advised, however, that this web version represents the current nomenclature policies of the International Committee for Standardized Genetic Nomenclature for MIce and takes precedent over previously published versions.
 
 <p>Rules for rat genetic nomenclature were first published by the Committee on Rat Nomenclature in 1992 and then by Levan <i>et al.</i> in 1995.
 
@@ -119,8 +119,8 @@ found on the <a href="index.shtml">MGD</a> and <a href="http://rgd.mcw.edu/nomen
        </ul>
   <a href="#tarm">3.5&nbsp;&nbsp;Targeted Mutations</a></br>
         <ul>
-          <a href="#kkcaotm">Knockout, Knockin, Conditional and Other Targeted Mutations</a>
-          <a href="#gtm">Gene Trap Mutations</a>
+          <a href="#kkcaotm">3.5.1&nbsp;&nbsp;Knockout, Knockin, Conditional and Other Targeted Mutations</a><br>
+          <a href="#gtm">3.5.2&nbsp;&nbsp;Gene Trap Mutations</a>
         </ul>
         
   </ul>
@@ -795,10 +795,7 @@ transgene as superscript (see <A HREF="#tim">Section 3.4.2</a> and <A HREF="#tra
 in the mouse, and hence is symbolized <i>rs<sup>grc</sup></i>.</UL>
 
 <H4><A NAME="pdmsg"></A>3.1.2 &nbsp;&nbsp;Phenotypes Due to Mutations in Structural Genes</H4>
-<p>When a spontaneous or induced mutant phenotype is subsequently found to be a mutation in a structural gene, or the gene in which the mutation has occurred is cloned, the mutation
-becomes an allele of that gene and the symbol for the mutant allele is formed
-by adding the original mutant symbol as a superscript to the new gene symbol.
-(The mutant symbol should retain its initial upper or lowercase letter).</p>
+<p>When a spontaneous or induced mutant phenotype is subsequently found to be a mutation in a structural gene, or the gene in which the mutation has occurred is cloned, the mutation becomes an allele of that gene and the symbol for the mutant allele is formed by adding the original mutant symbol as a superscript to the new gene symbol. (The mutant symbol should retain its initial upper or lowercase letter).</p>
 
 <ul>
  <li>The hotfoot (<i>ho</i>) mutation of the mouse glutamate receptor <i>Grid2</i>, <i>Grid2<sup>ho</sup></i>.</li>
@@ -817,7 +814,7 @@ by adding the original mutant symbol as a superscript to the new gene symbol.
 
 <p>The wild type allele of a gene is indicated by + as superscript to the mutant symbol.</p>
 
-<ul> <li>The wild type allele of the achondroplasia mutation, <i>cn<sup>+</sup>.</i></li>
+<ul> <li>The wild type allele of the agitans-like mutation, <i>agil<sup>+</sup>.</i></li>
  <li>The wild type <I>Kit</I> locus (if necessary to distinguish from mutations), <i>Kit<sup>+</sup>.</i></li>
 </ul>
 
@@ -1003,13 +1000,13 @@ conventional tm#Labcode superscript. Details of the targeted locus should be giv
 </p>
 <b>Example:</b>
 <blockquote>
-<table border="1" cellspacing="0" cellpadding="4" width="!">
-<tr><td valign="top"><nobr>Akap12<sup>Gt(ble-lacZ)15Brr</sup></nobr></td><td valign="top">&nbsp;&nbsp;&nbsp;</td><td valign="top">a gene trap allele of the <i>Akap12 </i>gene, where the gene trap vector contains a phleomycin resistance gene (ble) and lacZ, the 15th analyzed in the laboratory of Jacqueline Barra (Brr).</td></tr>     
+<table border="0" cellspacing="0" cellpadding="4" width="!">
+<tr><td valign="top"><nobr><i>Akap12<sup>Gt(ble-lacZ)15Brr</i></sup></nobr></td><td valign="top">&nbsp;&nbsp;&nbsp;</td><td valign="top">a gene trap allele of the <i>Akap12 </i>gene, where the gene trap vector contains a phleomycin resistance gene (ble) and lacZ, the 15th analyzed in the laboratory of Jacqueline Barra (Brr).</td></tr>     
   </table>
 </blockquote>
 <p> If the trapped gene is novel, it should be given a name and a symbol, which includes the letters <i>Gt</i> for "gene trap," the vector in parentheses, a serial number, and Laboratory code.</p>
 <ul>
-<li>For example, a gene trapped locus (where the gene is unknown) using vector ROSA, the 26th made in P. Soriano's laboratory, is i>Gt(ROSA)26Sor</i>.</li>
+<li>For example, a gene trapped locus (where the gene is unknown) using vector ROSA, the 26th made in P. Soriano's laboratory, is <i>Gt(ROSA)26Sor</i>.</li>
 </ul>
 <p>For high throughput systematic gene trap pipelines, the mutant ES cell line's designation can be used in parentheses instead of the vector designation, and the serial number following the parentheses may be omitted. </p>
 <blockquote>
