@@ -1,17 +1,12 @@
 <!--#include file='include/templateHead.html'--> 
-<title>MGI-Guidelines for Nomenclature of Genes, Genetic Markers, Alleles, & Mutations in Mouse & Rat</title>
+<title>MGI-Rules for Nomenclature of Genes, Genetic Markers, Alleles, and Mutations in Mouse and Rat</title>
 <!--#include file='include/templateBodyStart.html'--> 
-<!--titleBar-->
-
 <div id="titleBarWrapper">
-  <span class="titleBarMainTitle">Guidelines for Nomenclature of Genes, Genetic Markers, Alleles, and Mutations in Mouse and Rat</span>
- 
+  <span class="titleBarMainTitle"> Rules for Nomenclature of Genes, Genetic Markers, Alleles, and Mutations in Mouse and Rat</span>
   <br/>
-</div> 
+  <span class="titleBarSubTitle"> Revised: January, 2007</span>
+</div> <!--titleBar-->
 
-<br/>
-<center>  <span class="titleBarSubTitle"> Revised: January, 2009</span>
-</center>
 
 <h3 align=center>International Committee on Standardized Genetic Nomenclature for Mice</h3>
 <p align=center><b><i>Chairperson:</i> Dr. Janan T. Eppig <br>
@@ -24,7 +19,9 @@
 
 <p>Rules for mouse genetic nomenclature were first published by Dunn, Gruneberg, and Snell (1940) and
 subsequently revised by the International Committee for Standardized Genetic Nomenclature in Mice
-(1963, 1973, 1981, 1989, 1996). The most recent publication of mouse nomenclature guidelines can be found in Eppig (2006). Users should be advised, however, that this web version represents the current nomenclature policies of the International Committee for Standardized Genetic Nomenclature for MIce and takes precedent over previously published versions.
+(1963, 1973, 1981, 1989, 1993). In 2000 these Guidelines were completely rewritten in order to
+explain more clearly the rules. Some existing gene names and symbols may retain names derived from
+earlier conventions that no longer apply. 
 
 <p>Rules for rat genetic nomenclature were first published by the Committee on Rat Nomenclature in 1992 and then by Levan <i>et al.</i> in 1995.
 
@@ -32,9 +29,7 @@ subsequently revised by the International Committee for Standardized Genetic Nom
 <p>In 2003, the International Committee on Standardized Genetic Nomenclature for Mice and the
 Rat Genome and Nomenclature Committee agreed to unify the rules and guidelines
 for gene, allele, and mutation nomenclature in mouse and rats. Nomenclature guidelines are now reviewed and updated annually by the two International Committees; current guidelines can be
-found on the <a href="index.shtml">MGD</a> and <a href="http://rgd.mcw.edu/nomen/nomen.shtml">RGD</a> or <a href="http://www.ratmap.org/">RatMap</a> web sites. 
-
-<p>To see the previous version of these guidelines (revised in January 2007), click <a href="2007_gene.shtml">here</a>. </p>
+found on the <a href="index.shtml">MGD</a> and <a href="http://rgd.mcw.edu/">RGD</a> or <a href="http://www.ratmap.org/">RatMap</a> web sites. <p>To see the previous version of these rules (revised in August 2006), click <a href="2006_gene.shtml">here</a>. </p>
 
 
 <h3>Table of Contents</h3>
@@ -44,22 +39,15 @@ found on the <a href="index.shtml">MGD</a> and <a href="http://rgd.mcw.edu/nomen
     <a href="#def">1.2&nbsp;&nbsp;Definitions</a></br>
      <a href="#son">1.3&nbsp;&nbsp;Stability of Nomenclature</a></br>
     <a href="#syn">1.4&nbsp;&nbsp;Synonyms</a></br>
-    <a href="#gene_sym">1.5&nbsp;&nbsp;Gene symbols, proteins, and chromosome designations in publications</a></br>
-       <ul>
-         <a href="#gaas">1.5.1&nbsp;&nbsp;Gene and allele symbols</a><br>
-         <a href="#ps">1.5.2&nbsp;&nbsp;Protein symbols</a><br>
-         <a href="#cd">1.5.3&nbsp;&nbsp;Chromosome designations</a>
-       </ul>
-       
    </ul>
 <a href="#nas">2&nbsp;&nbsp;Names and Symbols of Genes and Loci</a></br>
    <ul>
     <a href="#labc">2.1&nbsp;&nbsp;Laboratory Codes</a></br>
     <a href="#ing">2.2&nbsp;&nbsp;Identification of New Genes</a></br>
-    <a href="#gnas">2.3&nbsp;&nbsp;Gene Symbols and Names</a></br>
+    <a href="#gnas">2.3&nbsp;&nbsp;Gene Names and Symbols</a></br>
       <ul>
-            <a href="#genesym">2.3.1&nbsp;&nbsp;Gene Symbols</a></br>
-            <a href="#genename">2.3.2&nbsp;&nbsp;Gene Names</a></br>
+      <a href="#genename">2.3.1&nbsp;&nbsp;Gene Names</a></br>
+      <a href="#genesym">2.3.2&nbsp;&nbsp;Gene Symbols</a></br>
       </ul>
     <a href="#sg">2.4&nbsp;&nbsp;Structural Genes, Splice Variants, and Promoters</a></br>
        <ul>
@@ -118,11 +106,6 @@ found on the <a href="index.shtml">MGD</a> and <a href="http://rgd.mcw.edu/nomen
         <a href="#tim">3.4.2&nbsp;&nbsp;Transgenic Insertional Mutations</a></br>
        </ul>
   <a href="#tarm">3.5&nbsp;&nbsp;Targeted Mutations</a></br>
-        <ul>
-          <a href="#kkcaotm">Knockout, Knockin, Conditional and Other Targeted Mutations</a>
-          <a href="#gtm">Gene Trap Mutations</a>
-        </ul>
-        
   </ul>
 <a href="#transg">4&nbsp;&nbsp;Transgenes</a></br><br>
 
@@ -199,44 +182,26 @@ symbols that have been applied to the gene at various times. These synonyms may
 be associated with the gene in databases and publications, but the established
 gene name and symbol should always be used as the primary identifier.</p>
 
-
-
-<h3><a name="gene_sym"></a>1.5&nbsp; &nbsp; Gene symbols, proteins, and chromosome designations in publications</h3>
-
-<h4><a name="gaas"></a>1.5.1 &nbsp; &nbsp; Gene and allele symbols</h4>
-<p>Gene symbols are italicized when published, as are allele symbols. <a href="#nas">Section 2</a> below specifies naming rules for establishing correct symbols. Help is available for determining correct gene and allele symbol assignment (<a href="mailto:nomen@informatics.jax.org">nomen@informatics.jax.org</a>) and symbols can be reserved privately pre-publication.</p>
-
-<p>To distinguish between mRNA, genomic DNA, and cDNA forms within a manuscript, write the relevant prefix in parentheses before the gene symbol, for example,  (mRNA) Rbp1.</p>
-
-<h4><a name="ps"></a>1.5.2 &nbsp; &nbsp;Protein symbols</h4>
-<p>Protein designations follow the same rules as gene symbols, with the following two distinctions:
-  <ul>
-  <li>Protein symbols use all uppercase letters.</li>
-  <li>Protein symbols are not italicized.</li>
-  </ul>
-</p>
-
-<h4><a name="cd"></a>1.5.3 &nbsp; &nbsp;Chromosome designations</h4>
-<p>   <ul>
-        <li>Use uppercase "C" when referring to a specific mouse chromosome (e.g., Chromosome 15).</li>
-        <li>When abbreviating the word Chromosome, do not use a period (".") after the abbreviation (e.g., Chromosome 15 should abbreviated as Chr 15 and not Chr.15).</li>
-      </ul</p>
-
-
 <h2><a name="nas"></a>2&nbsp;&nbsp;Names and Symbols of Genes and Loci</h2>
 <p>The prime function of a gene name is to provide a unique identifier. </p>
 
 <p>The Mouse Genome Database (MGD) serves as a central repository of gene names and
 symbols to avoid use of the same name for different genes or use of multiple
-names for the same gene (<a href="http://www.informatics.jax.org">http://www.informatics.jax.org)</a>. The MGD Nomenclature Committee (nomen@informatics.jax.org)provides advice and assistance in assigning new names and symbols. A web tool for <a href="nomen_submit_form.shtml">proposing a new mouse locus symbol</a> is located at the MGD site.</p>
+names for the same gene (<a href="http://www.informatics.jax.org">http://www.informatics.jax.org)</a>. The MGD Nomenclature Committee (nomen@informatics.jax.org)provides advice and assistance in assigning new names and symbols. A web tool for <a href="nomen_submit_form.shtml">proposing a new
+locus symbol</a> is located at the MGD site.</p>
 
 <p>For the rat, these functions are carried out by RatMap (<a href="http://ratmap.gen.gu.se">http://ratmap.gen.gu.se</a>) and RGD (<a href="http://rgd.mcw.edu">http://rgd.mcw.edu</a>) assisted by
-the International Rat Genome and Nomenclature Committee (RGNC). A web tool for  <a href="http://rgd.mcw.edu/tools/genes/geneRegistrationIndex.cgi">proposing a new rat locus symbol</a>  is located at the RGD site.</p>
+the International Rat Genome and Nomenclature Committee (RGNC). A web tool for
+proposing a new locus symbol is located at the RatMap and RGD sites.</p>
 
-<h3><a name="labc"></a>2.1 &nbsp;&nbsp;&nbsp;Laboratory Codes</h3> 
-<p>A key feature of mouse and rat nomenclature is the Laboratory Registration Code or Laboratory code, which is a code of usually three to four letters (first letter uppercase, followed by all lowercase), that identifies a
+<h3><a name="labc"></a>2.1 &nbsp;&nbsp;&nbsp;Laboratory Codes</h3> <p>A key feature of mouse and rat
+nomenclature is the Laboratory Registration Code or Laboratory code, which is a code of usually
+three to four letters (first letter uppercase, followed by all lowercase), that identifies a
 particular institute, laboratory, or investigator that produced, and may hold stocks of, for
-example, a DNA marker, a mouse or rat strain, or were the creator of a new mutation. Laboratory codes are also used in naming chromosomal aberrations, transgenes, and genetically engineered mutations. Because Laboratory codes are key to identifying original sources, they are not assigned to "projects," but rather to the actual producer/creator individual or site. Laboratory codes can be assigned through MGD or directly by the  <A HREF="http://dels.nas.edu/ilar_n/ilarhome/index.shtml">Institute for Laboratory Animal Research (ILAR)</a> at 
+example, a DNA marker, a mouse or rat strain,or a mutation. Laboratory codes are also used in naming
+chromosomal aberrations and transgenes. Laboratory codes can be assigned by MGD or by the 
+ <A HREF="http://dels.nas.edu/ilar_n/ilarhome/index.shtml">Institute
+for Laboratory Animal Research (ILAR)</a> at 
 <a
 href="http://dels.nas.edu/ilar_n/ilarhome/register_lc.shtml">http://dels.nas.edu/ilar_n/ilarhome/register_lc.shtml</a>.
 
@@ -263,9 +228,60 @@ characteristic, but once the gene responsible for the phenotypic variation is
 identified, this gives the primary name of the gene and the mutant name becomes
 the name of the allele (see <a href="#gnas">Section 2.3</a>).
 
-<h3><a name="gnas"></a>2.3&nbsp;&nbsp;&nbsp;Gene Symbols and Names</h3>
+<h3><a name="gnas"></a>2.3&nbsp;&nbsp;&nbsp;Gene Names and Symbols</h3>
+<h4><a name="genename"></a>2.3.1&nbsp;&nbsp; Gene Names</h4>
+<p>Names of genes should be brief, and convey accurate information about the gene. The
+name should not convey detailed information about the gene or assay used; this
+can be associated with the gene in publications or databases. While the gene
+name should ideally be informative as to the function or nature of the gene,
+care should be taken to avoid putting inaccurate information in the name. For
+example, a "liver-specific protein" may be shown by subsequent
+studies to be expressed elsewhere. </p>
 
-<h4><a name="genesym"></a>2.3.1 &nbsp;&nbsp;Gene Symbols</h4>
+<p>A <b>gene name</b> should:</p>
+<ul>
+<li>be specific and brief, conveying the character or function of the gene.</li>
+<li>begin with a lowercase letter, unless it is a person's name or is a typically capitalized word.</li>
+
+<blockquote>
+<B>Examples:</B>
+<table cellpadding=4>
+<tr><td><I>Blr1</I></td><td>Burkitt lymphoma receptor 1</td></tr>
+<tr><td><I>Acly</I></td><td>ATP citrate lyase</td></tr>
+</table>
+</blockquote>
+
+<LI>use American spelling.</LI>
+<LI>not contain punctuation, except where necessary to separate the main
+part of the name from modifiers.</LI>
+
+<blockquote>
+<B>Examples:</B>
+<table cellpadding=4>
+<tr><td><I>Acp1</I></td><td>acid phosphatase 1, soluble</td></tr>
+<tr><td><I>Pigq</I></td><td>phosphatidylinositol glycan, class Q</td></tr>
+</table>
+</blockquote>
+
+<LI>include the name of the species from which the ortholog/homolog name was derived at the end of the name in parentheses <i>only</i> when that name is not in common usage.</LI>
+
+<blockquote>
+<B>Examples:</B>
+<table cellpadding=4>
+<tr><TD VALIGN="top"><I>Shh</I></td><td>sonic hedgehog <br>[commonly used, does not include species
+name]</td></tr>
+<tr><td valign=top><i>Fjx1</i></td><td>four jointed box 1 (Drosophila)<br>[name includes species derivative]</td></tr>
+</table>
+</blockquote>
+
+<LI>not include the word mouse (for a mouse gene name) or the word rat (for a rat gene name).</LI>
+
+<LI>follow the conventions of the established gene family if it is a recognizable member of that family by sequence comparison, structure (motifs/domains), and/or function.</LI>
+
+<LI>not contain potentially misleading information that may be experiment or assay specific, such as "kidney-specific" or "59 kDa."</LI>
+</UL>
+
+<h4><a name="genesym"></a>2.3.2 &nbsp;&nbsp;Gene Symbols</h4>
 <p>Genes are given short symbols as convenient abbreviations for speaking and writing about the genes.</p>
 
 <p>A <b>gene symbol</b> should:</p>
@@ -348,85 +364,48 @@ and name. The recessive nature of the allele is still conveyed by an initial low
 </table>
 </blockquote>
 
-<h4><a name="genename"></a>2.3.2&nbsp;&nbsp; Gene Names</h4>
-<p>Names of genes should be brief, and convey accurate information about the gene. The
-name should not convey detailed information about the gene or assay used; this
-can be associated with the gene in publications or databases. While the gene
-name should ideally be informative as to the function or nature of the gene,
-care should be taken to avoid putting inaccurate information in the name. For
-example, a "liver-specific protein" may be shown by subsequent
-studies to be expressed elsewhere. </p>
-
-<p>A <b>gene name</b> should:</p>
-<ul>
-<li>be specific and brief, conveying the character or function of the gene.</li>
-<li>begin with a lowercase letter, unless it is a person's name or is a typically capitalized word.</li>
-
-<blockquote>
-<B>Examples:</B>
-<table cellpadding=4>
-<tr><td><I>Blr1</I></td><td>Burkitt lymphoma receptor 1</td></tr>
-<tr><td><I>Acly</I></td><td>ATP citrate lyase</td></tr>
-</table>
-</blockquote>
-
-<LI>use American spelling.</LI>
-<LI>not contain punctuation, except where necessary to separate the main
-part of the name from modifiers.</LI>
-
-<blockquote>
-<B>Examples:</B>
-<table cellpadding=4>
-<tr><td><I>Acp1</I></td><td>acid phosphatase 1, soluble</td></tr>
-<tr><td><I>Pigq</I></td><td>phosphatidylinositol glycan, class Q</td></tr>
-</table>
-</blockquote>
-
-<LI>include the name of the species from which the ortholog/homolog name was derived at the end of the name in parentheses <i>only</i> when that name is not in common usage.</LI>
-
-<blockquote>
-<B>Examples:</B>
-<table cellpadding=4>
-<tr><TD VALIGN="top"><I>Shh</I></td><td>sonic hedgehog <br>[commonly used, does not include species
-name]</td></tr>
-<tr><td valign=top><i>Fjx1</i></td><td>four jointed box 1 (Drosophila)<br>[name includes species derivative]</td></tr>
-</table>
-</blockquote>
-
-<LI>not include the word mouse (for a mouse gene name) or the word rat (for a rat gene name).</LI>
-
-<LI>follow the conventions of the established gene family if it is a recognizable member of that family by sequence comparison, structure (motifs/domains), and/or function.</LI>
-
-<LI>not contain potentially misleading information that may be experiment or assay specific, such as "kidney-specific" or "59 kDa."</LI>
-</UL>
-
-
 <h3><a name="sg"></a>2.4&nbsp;&nbsp;Structural Genes, Splice Variants, and Promoters</H3>
 <p>Ultimately, the majority of gene names will be for structural
 genes that encode protein. The gene should as far as possible be given the same name as the protein, whenever the protein is identified. If the gene is recognizable by sequence comparison
 as a member of an established gene family, it should
 be named accordingly (see <A HREF="#gf">Section 2.6</A>).
 
-<p>Alternative transcripts that originate from the same gene are not normally given different gene symbols and names. To refer to specific splice forms of a gene, the following format should be used (gene symbol, followed by underscore, followed by sequence accession ID): <nobr>Genesymbol_accID</nobr>
-
+<p>Alternative transcripts that originate from the same gene are not normally given different gene symbols and names. However, alternative transcripts (splice variants) from a single locus can be differentiated by the addition of an underscore v and a serial number (_v#) to the symbol and the
+addition of a comma "variant" and serial number to the name.
 <blockquote>
 <B>Example:</B>
 <table cellpadding=4>
-<tr><th align=left valign=top>Gene</th><td>&nbsp;&nbsp;&nbsp;</td><td valign=top><i>Mttp</i></td><td valign=top>microsomal triglyceride transfer protein</td></tr>
-<tr><th align=left valign=top><nobr>Splice variant</th><td>&nbsp;&nbsp;&nbsp;</td><td valign=top><i>Mttp_EU553486</i></td><td valign=top>microsomal triglyceride transfer protein splice variant defined by transcript sequence EU553486</td></tr>
+<tr><td rowspan=5 valign=top><b>Gene <br>Splice<br> variants</b></td><td valign=top><i>Slc14a2</i></td><td valign=top>solute carrier family 14, member 2</td></tr>
+<tr><td><i>Slc14a2_v1</i></td><td valign=top>solute carrier family 14, member 2, variant 1</td></tr>
+<tr><td><i>Slc14a2_v2</i></td><td valign=top>solute carrier family 14, member 2, variant 2</td></tr>
+<tr><td><i>Slc14a2_v3</i></td><td valign=top>solute carrier family 14, member 2, variant 3</td></tr>
+<tr><td><i>Slc14a2_v4</i></td><td valign=top>solute carrier family 14, member 2, variant 4</td></tr>
 </table>
 </blockquote>
 
-<p>Using the sequence accession ID provides an unambiguous and precise definition to the splice variant. 
-</p>
+<p>Transcripts from the opposite strand that overlap another gene, or a transcript that is derived principally from the introns of another gene, or one that uses an alternative reading frame to another gene (and does not use the existing frame to a significant extent), should be given a different name.
+
+<p>In addition to alternative transcripts based on splice variants, genes may use multiple promoters. The variant promoters can be designated in a similar way to splice variants, adding an underscore pr and a serial number (_pr#) to the symbol and the addition of a comma "promoter" and serial number to the name.
+<blockquote>
+<B>Example:</B>
+<table cellpadding=4>
+<tr><td rowspan=3 valign=top><b>Gene<br>Promoter <br>variants</b></td><td valign=top><i>Slc14a2</i></td><td>
+solute carrier family 14, member 2</td></tr>
+<tr><td><i>Slc14a2_pr1</i></td><td valign=top>solute carrier family 14, member 2, promoter 1</td></tr>
+<tr><td><i>Slc14a2_pr2</i></td><td valign=top>solute carrier family 14, member 2, promoter 2</td></tr>
+</table>
+</blockquote>
+
+<p>It should be noted that for both splice variants and promoters, that serial numbers
+are assigned as these elements are discovered. The numbering sequence does <u>not</u>
+correspond to relative location in the genome and the numbering series are
+independent among species. For these elements, no attempt is made to develop
+cross-species equivalency.</p>
 
 
-
-
-<H4><A name="antisense"></A>2.4.1&nbsp;&nbsp;&nbsp;Antisense and Opposite Strand Genes</h4>
+<H4><A name="antisense"></A>2.4.1 &nbsp;&nbsp;Antisense and Opposite Strand Genes </h4>
 
 <p>Transcripts from the opposite strand that overlap another gene, or a transcript that is derived principally from the introns of another gene, or one that uses an alternative reading frame to another gene (and does not use the existing frame to a significant extent) should be given a different name.</p>
-
 <p>A gene of <i>unknown function</i>, encoded at the same genomic locus (with overlapping exons) as another gene should have its own symbol. If the new gene <i>regulates</i> the first gene, it may be assigned the symbol of the first gene with the suffix &#147;as&#148; for antisense. The gene symbol should not be written backwards.</p>
 
 <blockquote>
@@ -445,16 +424,17 @@ be named accordingly (see <A HREF="#gf">Section 2.6</A>).
 </table>
 </blockquote>
 
-<H4><A name="ghos"></A>2.4.2&nbsp;&nbsp;&nbsp;Genes with Homologs in Other Species</H4>
+<H4><A name="ghos"></A>2.4.2 &nbsp;&nbsp;Genes with Homologs in Other Species</H4>
 <p>To aid interspecific comparison of genetic and other information, a gene that is identifiable as a
-homolog of an already named gene in another species can be named as "-like" "-homolog" or "-related." (Note: this is not the same as "related sequence" which applies to related sequences within mouse or within rat.) The gene name or symbol should not include the name mouse or the abbreviation "M" for mouse or the name rat or the abbreviation "R" for rat. Where possible, genes that are recognizable orthologs of already-named
+homolog of an already named gene in another species can be named as "-like" "-homolog" or "-related." (Note: this is not the same as "related sequence" which applies to related sequences within mouse or within rat.) The gene name or symbol should not include the name mouse or the abbreviation "M" for mouse or the name rat or the
+abbreviation "R" for rat. Where possible, genes that are recognizable orthologs of already-named
 human genes should be given the same name and symbol as the human gene.</p>
 
-<H3><A name="pns"></A>2.5&nbsp;&nbsp;&nbsp;Phenotype Names and Symbols</H3> 
+<H3><A name="pns"></A>2.5 &nbsp;&nbsp;Phenotype Names and Symbols</H3> 
 <p>Genes named for phenotypes should aim to convey the phenotype briefly and accurately in a few words. It is accepted that the name may not cover all aspects of the phenotype; what is needed is a succinct, memorable and, most importantly, unique, name. Bear in mind that identification of a variant or mutant phenotype is recognition of an allelic form of an as-yet unidentified gene that may already have or will be given a name.</p>
 
 
-<H4><A name="lp"></A>2.5.1&nbsp;&nbsp;&nbsp; Lethal Phenotypes</H4>
+<H4><A name="lp"></A>2.5.1&nbsp;&nbsp; Lethal Phenotypes</H4>
 <p>Genes identified solely by a recessive lethal phenotype with no heterozygous effect
 are named for the chromosomal assignment, a serial number and the name of the
 laboratory of origin (from the Laboratory code).</p>
@@ -469,13 +449,13 @@ laboratory of origin (from the Laboratory code).</p>
 </blockquote>
 
 
-<h3><A NAME="gf"></A>2.6&nbsp;&nbsp;&nbsp;Gene Families</h3>
+<h3><A NAME="gf"></A>2.6&nbsp;&nbsp;Gene Families</h3>
 <p>Genes that appear to be members of a family should be named as family members.
 Evidence of gene families comes in a variety of forms, e.g., from a probe
 detecting multiple bands on a Southern blot, but is principally based on
 sequence comparisons.
 
-<h4><A NAME="fih"></a>2.6.1&nbsp; &nbsp;&nbsp;Families Identified by Hybridization</H4>
+<h4><A NAME="fih"></a>2.6.1 &nbsp;&nbsp;Families Identified by Hybridization</H4>
 <p>Historically, many gene families have been identified as fragments detected by hybridization
 to the same probe but which map to different loci. These family members may be
 functional genes or pseudogenes. The loci can be named "related sequence"
@@ -547,7 +527,7 @@ as DNLabcode#.</p>
 <B>Examples:</B>
 <table cellpadding=4>
 <tr><td><i>D4Mit17</i></td><td> an SSLP within the mouse <i>Orm1</i> gene</td></tr>
-<tr><td><i>D20Wox37</i></td><td>an SSLP within the rat <i>Tnf</i> gene</td></tr>
+<tr><td><i>D20Wox37</i></td><td>an SSLP within the rat <i>Tnf</i>gene</td></tr>
 </table>
 </blockquote>
 
@@ -594,12 +574,13 @@ laboratory of Phillip Soriano (Sor) is symbolized as:</p>
  <li><i>Gt(ROSA)26Sor</i></li>
 </ul>
 
-<p>A gene trap designation becomes an allele of the gene into which it was inserted, once that gene is identified. For example, <i>Gt(ST629)Byg</i> is known to disrupt the netrin 1 (<i>Ntn1</i>)
+<p>A gene trap designation becomes an allele of the gene into which it was inserted, once that gene is identified. For example, <i>Gt(pGT1.8TM)629Ska</i> is now known to disrupt the netrin 1 (Ntn1)
 gene; thus the full allele designation for this gene trap mutation is
-<i>Ntn<sup>Gt(ST629)Byg</sup></i>. See also the examples of gene trap mutations in <a href="#gtm">Section 3.5.2</a>.
-</p>
+<i>Ntn<sup>Gt(pGT1.8TM)629Ska</sup></i> and its abbreviated form is <i>Ntn<sup>Gt629Ska</sup></i>.
+(Note: Abbreviate gene trap alleles by dropping the vector designation in parentheses, if the
+resulting abbreviation is unique).</p>
 
-<H3><a name="qtlrirs"></a>2.10&nbsp;&nbsp;&nbsp; Quantitative Trait Loci, Resistance Genes, and Immune
+<H3><a name="qtlrirs"></a>2.10&nbsp;&nbsp; Quantitative Trait Loci, Resistance Genes, and Immune
 Response Genes</H3>
 <p>Differences between inbred strains and the phenotype of offspring of crosses between strains
 provide evidence for the existence of genes affecting disease resistance, immune response, and many
@@ -608,7 +589,7 @@ through extensive genetic crossing and analysis that may uncover many genetic el
 to a phenotypic trait. Generally, the number and effects of QTL can only be deduced following
 experiments to map them. QTL should not be named until such mapping experiments have been performed.
 
-<H4><a name="nsqtl"></a>2.10.1&nbsp;&nbsp;&nbsp; Names and Symbols of QTL</H4>
+<H4><a name="nsqtl"></a>2.10.1&nbsp;&nbsp; Names and Symbols of QTL</H4>
 
 <p>Names and symbols for QTL should be brief and descriptive and reflect the trait or phenotype measured. Those QTL affecting the same trait should be given the same stem and serially
 numbered. The series is separate for mouse and rat and no homology should be
@@ -634,10 +615,9 @@ letter preceding the serial number in QTL symbols.</p>
 <tr><TD ROWSPAN="3" valign=top>in mouse</td><td><i>Cafq1</i></td><td>caffeine metabolism QTL 1</td></tr>
 <tr><td><I>Cafq2</I></td><td>caffeine metabolism QTL 2</td></tr>
 <tr><td><I>Cafq3</I></td><td>caffeine metabolism QTL 3</td></tr>
-
-<tr><TD ROWSPAN="3" valign=top>in rat</td><td><i>Kidm1</i></td><td>kidney mass QTL 1</td></tr>
-<tr><td><i>Kidm2</i></td><td>kidney mass QTL 2</td></tr>
-<tr><td><i>Kidm3</i></td><td>kidney mass QTL 3</td></tr>
+<tr><TD ROWSPAN="3" valign=top>in rat</td><td><i>Kw1</i></td><td>kidney weight QTL 1</td></tr>
+<tr><td><i>Kw2</i></td><td>kidney weight QTL 2</td></tr>
+<tr><td><i>Kw3</i></td><td>kidney weight QTL 3</td></tr>
 </table>
 </blockquote>
 
@@ -667,8 +647,10 @@ reflect the trait showing the highest LOD score/p-value. Conversely, if there is
 the traits are independent, each trait will constitute a unique QTL.</P>
 <P><B>Examples</b>: In mouse, <I>Nidd1</I> (non-insulin-dependent diabetes mellitus 1) was associated with related measurements of plasma insulin, non-fasted blood glucose, and body
 weight and given a single QTL designation.</p>
-
-<P>In rats, <I>Uae5</I> (urinary albumin excretion QTL 5) and <I>CM16</I> (cardiac mass QTL 16) are QTLs derived from the same experiment that map to overlapping regions of Chromosome 1. Because the measured traits are independent, different QTL designations are assigned.</p>
+<P>In rats, <I>Uae5</I> (urinary albumin excretion QTL 5) and <I>Hw1</I>
+ (heart weight QTL 1) are QTLs derived from the same experiment that
+map to overlapping regions of Chromosome 1. Because the measured traits are
+independent, different QTL designations are assigned.</p>
 </blockquote>
 </LI>
 </UL>
@@ -689,7 +671,7 @@ symbolized in four parts:</p>
  <li>A serial number, if more than one segment is assigned to the telomere</li>
 </ul>
 
-<p>For example, <i>Tel4q1</i></p>
+<p>For example, <i>Tel14q1</i></p>
 
 <H4><A name="centro"></A>2.11.2 &nbsp;&nbsp;Centromeres and Pericentric Heterochromatin</H4>
 
@@ -776,7 +758,7 @@ or <a href="http://rgd.mcw.edu/">RGD</a>/<a href="http://www.ratmap.org/">RatMap
 from the same lab). In the symbol the Laboratory code is added as a superscript.</p>
 
 <ul>
- <li>For example, <i>agil<sup>2J</sup></i>, the second new allele of mouse agitans-like identified at The Jackson Laboratory.</li>
+ <li>For example, <i>cn<sup>2J</sup></i>, the second new allele of mouse achondroplasia identified at The Jackson Laboratory.</li>
 </ul>
 
 <p>If a new allelic mutation of a gene known only by a mutant phenotype is caused by a
@@ -942,18 +924,15 @@ specified by preceding the superscript with the allele symbol and a hyphen.</p>
 
 <p>If the mutation is shown to be a deletion of all or part of the structural gene, the superscript <i>del</i> can be used in place of <i>m</i>. Note that this should be used only for deletions that encompass a single gene; larger deletions should use the chromosomal deletion nomenclature.</p>
 
-
-
 <H4><A NAME="tim"></A>3.4.2 &nbsp;&nbsp; Transgenic Insertional Mutations</H4>
 <p>Mutations produced by random insertion of a transgene (not by gene targeting) are named as a mutant allele of the gene (which should be given a name and symbol if it is a novel gene), with the superscript the symbol for the transgene (see <A HREF="#gkomp">Section 3.1.1</A> for
 examples, and <A HREF="#transg">Section 4</A> for naming transgenes).</p>
 
 <H3><A NAME="tarm"></A>3.5 &nbsp;&nbsp; Targeted Mutations</H3>
-
-<h4><a name="kkcaotm">3.5.1&nbsp;&nbsp;&nbsp;Knockout, Knockin, Conditional and Other Targeted Mutations</a></h4>
 <p>Mutations that are the result of gene targeting by homologous recombination in ES cells
 are given the symbol of the targeted gene, with a superscript consisting of
-three parts: the symbol <i>tm</i> to denote a targeted mutation, a serial number from the laboratory of origin and the Laboratory code where the mutation was produced (see <A HREF="#labc">Section 2.1</A>).</p>
+three parts: the symbol <i>tm</i> to denote
+a targeted mutation, a serial number from the laboratory of origin and the Laboratory code where the mutation was produced (see <A HREF="#labc">Section 2.1</A>).</p>
 
 <ul>
 <li>For example, <i>Cftr<sup>tm1Unc</sup></i> is the first targeted mutation of the cystic fibrosis transmembrane regulator (<i>Cftr</i>) gene produced at the University of North Carolina.</li>
@@ -977,39 +956,40 @@ of the <b>complete</b> coding region, the replacing gene symbol can be used pare
 </blockquote>
 </p>
 
-<p>When a targeting vector is used to generate multiple germline transmissible alleles, such as in the Cre-Lox system, the original knock-in of loxP would follow the regular tm designation rules. If a second <b>heritable</b> allele was then generated after mating with a cre transgenic mouse, it would retain the parental designation followed by a decimal point and serial number.</p>
+<p>When a targeting vector is used to generate multiple germline transmissible alleles,
+such as in the Cre-Lox system, the original knock-in of loxP would follow the
+regular tm designation rules. If a second <b>heritable</b> allele was then generated after mating with a cre transgenic mouse, it would retain the parental designation followed by a decimal point and serial number.</p>
 
 
 <ul> <li><i>Tfam<sup>tm1Lrsn</sup></i> and <i>Tfam<sup>tm1.1Lrsn</sup></i>. In this example,
-<i>Tfam<sup>tm1Lrsn</sup></i> designates a targeted mutation where loxP was inserted into the 
-<i>Tfam</i> gene. <i>Tfam<sup>tm1.1Lrsn</sup></i> designates another <b>germline transmissible</b> allele generated after mating with a cre transgenic mouse. Note: <b>somatic events</b> generated in offspring from a <i>Tfam<sup>tm1Lrsn</sup></i> bearing mouse and a cre transgenic that cause disruption of <i>Tfam</i> in selective tissues would not be assigned nomenclature.</li>
+<i>Tfam<sup>tm1Lrsn</sup></i> designates a targeted mutation where loxP was inserted into the
+<i>Tfam</i> gene. <i>Tfam<sup>tm1.1Lrsn</sup></i> designates another <b>germline
+transmissible</b> allele generated after mating with a cre transgenic mouse. Note: <b>somatic
+events</b> generated in offspring from a <i>Tfam<sup>tm1Lrsn</sup></i> bearing mouse and a cre
+transgenic that cause disruption of <i>Tfam</i> in selective tissues would not be assigned
+nomenclature.</li>
 </ul>
 
-<p>Other more complex forms of gene replacement, such as partial "knock-in", hit-and-run, double replacements, and loxP mediated integrations are not conveniently abbreviated and should be given a
-conventional tm#Labcode superscript. Details of the targeted locus should be given in associated publications and database entries.</p>
+<p>Other more complex forms of gene replacement, such as
+partial "knock-in", hit-and-run, double replacements, and loxP
+mediated integrations are not conveniently abbreviated and should be given a
+conventional tm#Labcode superscript. Details of the targeted locus should be
+given in associated publications and database entries.</p>
 
-<p>Note that although subtle alterations made in a gene appear to lend themselves to a simple naming convention whereby the base or amino acid changes are specified, in fact these do not provide unique gene names, as such alterations, which could be made in independent labs, while bearing the same changes, may differ elsewhere in the gene.</p>
+<p>Note that although subtle alterations made in a gene appear to lend themselves to a
+simple naming convention whereby the base or amino acid changes are specified,
+in fact these do not provide unique gene names, as such alterations, which
+could be made in independent labs, while bearing the same changes, may differ
+elsewhere in the gene.</p>
 
-<p>Large-scale projects that systematically produce a large number of alleles (>1000) may include a project abbreviation in parentheses as part of the allele designation. These should retain the accepted nomenclature features of other alleles of that class. For example, a targeted allele created by Velocigene (Regeneron) in the KOMP knockout project:
-</p>	
-<blockquote>
-<i>Gstm3<sup>tm1(KOMP)Vlcg</sup></i>
-</blockquote>
-
-<p>Once fully designated in a publication, the allele can be abbreviated by removing the portion of the allele designation in parentheses (in this case, Gstm3tm1Vlcg), providing the symbol remains unique.
-</p>
-<h4><a name="gtm"> </a>3.5.2 Gene Trap Mutations</h4>
-<p>Gene trap mutations are symbolized in a similar way to targeted mutations. If the trapped gene is known, the symbol for the trapped allele will be similar to a targeted mutation of the same gene using the format Gt(vector content)#Labcode for the allele designation.
-</p>
-<b>Example:</b>
-<blockquote>
-<table border="1" cellspacing="0" cellpadding="4" width="!">
-<tr><td valign="top"><nobr>Akap12<sup>Gt(ble-lacZ)15Brr</sup></nobr></td><td valign="top">&nbsp;&nbsp;&nbsp;</td><td valign="top">a gene trap allele of the <i>Akap12 </i>gene, where the gene trap vector contains a phleomycin resistance gene (ble) and lacZ, the 15th analyzed in the laboratory of Jacqueline Barra (Brr).</td></tr>     
-  </table>
-</blockquote>
-<p> If the trapped gene is novel, it should be given a name and a symbol, which includes the letters <i>Gt</i> for "gene trap," the vector in parentheses, a serial number, and Laboratory code.</p>
+<p><b>Gene trap mutations</b> are symbolized in a similar way. If the trapped gene is known,
+the symbol will appear identical to a targeted mutation of the same gene
+(which, in fact, is appropriate as they will be indistinguishable at the
+molecular level). If the trapped gene is novel, it should be given a name and a
+symbol, which could include the letters <i>Gt</i> for "gene trap", the vector in parentheses, a serial number, and Laboratory code.</p>
 <ul>
-<li>For example, a gene trapped locus (where the gene is unknown) using vector ROSA, the 26th made in P. Soriano's laboratory, is i>Gt(ROSA)26Sor</i>.</li>
+<li>For example, a gene trap using vector ROSA, the 26th made in P. Soriano's laboratory, is
+<i>Gt(ROSA)26Sor</i>.</li>
 </ul>
 <p>For high throughput systematic gene trap pipelines, the mutant ES cell line's designation can be used in parentheses instead of the vector designation, and the serial number following the parentheses may be omitted. </p>
 <blockquote>
@@ -1381,8 +1361,6 @@ Third Edition, Volume 1, Oxford University Press, Oxford, 1996. <br><br>
 Dunn, L.C., H. Gruneberg, G.D. Snell. 1940. Report of the committee on mouse genetics nomenclature. J. Hered. 31:505-506.<br><br>
 
 <a name="dupuy"></a>Dupuy AJ, Akagi K, Largaespada DA, Copeland NG, Jenkins NA. Mammalian mutagenesis using a highly mobile somatic Sleeping Beauty transposon system. 2005. Nature 436:221-226.<br><br>
-
-<a name="eppig"></a>Eppig, JT. 2006. Mouse Strain and Genetic Nomenclature: an Abbreviated Guide. In: Fox J, Barthold S, Davvison M, Newcomer C, Quimby F, Smith A (eds) <i>The Mouse in Biomedical Research</i>, Volume 1, Second Edition. Academic Press. pp.79-98.<br><br>
 
 International Committee on Standardized Genetic Nomenclature for Mice, Chairperson: Davisson,
 M.T.: Rules and guidelines for genetic nomenclature in mice. Mouse Genome 92
