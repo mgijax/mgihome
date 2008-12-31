@@ -1,12 +1,12 @@
 <!--#include file='include/templateHead.html'--> 
-<title>MGI-Guidelines for Nomenclature of Mouse and Rat Strains</title>
+<title>MGI-Rules and Guidelines for Nomenclature of Mouse and Rat Strains</title>
 <!--#include file='include/templateBodyStart.html'--> 
 <!-- Title Bar -->
 <div id="titleBarWrapper">
 
-  <span class="titleBarMainTitle"> Guidelines for Nomenclature of Mouse and Rat Strains</span>
+  <span class="titleBarMainTitle"> Rules and Guidelines for Nomenclature of Mouse and Rat Strains</span>
   <br/>
-  <span class="titleBarSubTitle"> Revised: January 2009</span>
+  <span class="titleBarSubTitle"> Revised: July 2007</span>
 
 </div> <!--titleBar-->
 
@@ -27,28 +27,27 @@ the international nomenclature committees for mouse and rat.<p>
 
 <p>Reference to former versions of the rules for mouse strain nomenclature can be found in Snell
 (1941), Committee for Standardized Genetic Nomenclature in Mice (1952, 1960, 1976, 1981, 1989,
-1996), Festing (1979, 1993), Staats (1986), Maltais <I>et al.</I> (1997). A recent summary of mouse guidelines was published in 2006 (<a href="#eppig">Eppig 2006</a>). Reference to former rules for rat strain nomenclature can be found in Committee on Rat Nomenclature (1992).</p>
-
-<p>An archived version of the previous online guide (July 2007) is available <a href="2007_strains.shtml">here</a>.</p>
+1996), Festing (1979, 1993), Staats (1986), Maltais <I>et al.</I> (1997). The November 2006 revision is available <a href="2006_strains.shtml">here</a>.  Reference to former rules for rat strain nomenclature can be found in Committee on Rat Nomenclature (1992).<br><br>
 
 <p>Current nomenclature rules for naming genes are available online at:
 <UL>
-For mouse: <A HREF="gene.shtml#genenom">http://www.informatics.jax.org/mgihome/nomen/gene.shtml#genenom</A><br>
+For mouse: <A HREF="http://www.informatics.jax.org/mgihome/nomen/gene.shtml#genenom">
+http://www.informatics.jax.org/mgihome/nomen/gene.shtml#genenom</A><br>
 For rat: <a HREF="http://rgd.mcw.edu/nomen_rules.html">http://rgd.mcw.edu/nomen_rules.html</A>
 </UL>
 
 <h3>Table of Contents</h3>
  <UL>
-  <A HREF="#introduction">1.&nbsp;&nbsp;&nbsp;Introduction</A><br>
+  <A HREF="#introduction">1. Introduction</A><br>
     <ul>
-    <A HREF="#mice">1.1&nbsp;&nbsp;&nbsp;Mice</A><br>
-    <A HREF="#rats">1.2&nbsp;&nbsp;&nbsp;Rats</A><br>
+    <A HREF="#mice">1.1 Mice</A><br>
+    <A HREF="#rats">1.2 Rats</A><br>
      </ul>
-   <A HREF="#labcodes">2.&nbsp;&nbsp;&nbsp;Laboratory codes</A><br>
-   <A HREF="#inbred_strains">3.&nbsp;&nbsp;&nbsp;Inbred Strains and Hybrids</A><br>
+   <A HREF="#labcodes">2. Laboratory codes</A><br>
+   <A HREF="#inbred_strains">3. Inbred Strains and Hybrids</A><br>
      <ul>
-     <A HREF="#definition">3.1&nbsp;&nbsp;&nbsp;Definition</A> <br>
-     <A HREF="#nois">3.2&nbsp;&nbsp;&nbsp;Nomenclature of Inbred Strains</A><br>
+     <A HREF="#definition">3.1 Definition</A> <br>
+     <A HREF="#nois">3.2 Nomenclature of Inbred Strains</A><br>
      <A HREF="#ioi">3.3 Indication of Inbreeding</A> <br>
      <A HREF="#substrains">3.4 Substrains</A><br>
      <A HREF="#hybrids">3.5 Hybrids</A><br>
@@ -64,11 +63,7 @@ For rat: <a HREF="http://rgd.mcw.edu/nomen_rules.html">http://rgd.mcw.edu/nomen_
       <ul>
       <A HREF="#coisogenic">5.1 Coisogenic Strains</A><br>
       <A HREF="#congenic">5.2 Congenic Strains</A><br>
-      <A HREF="#consomic">5.3 Chromosome Substitution or Consomic Strains</A><br>
-        <ul>
-         <a href="#consomic_strains">5.3.1&nbsp;&nbsp;&nbsp;Consomic Strains</a>
-        </ul>
-   
+      <A HREF="#consomic">5.3 Consomic Strains</A><br>
       <A HREF="#sis">5.4 Segregating Inbred Strains</A><br>
       <A HREF="#conplastic">5.5 Conplastic Strains</A><br>
      </ul>
@@ -569,11 +564,9 @@ by 17 generations of brother x sister matings.</p>
 
 <p>When generating speed congenics N will be less than 10 initially, nevertheless the actual number should be given in parentheses following the N, <I>e.g.</I>, N(6), and the details of breeding system and markers used detailed elsewhere in a publication or database.</p>
 
-<h3><a name="consomic"></a>5.3&nbsp;&nbsp;&nbsp;Chromosome Substitution or Consomic Strains</h3>
-<P>Chromosome substitution or consomic strains (<A HREF="#nadeau">Nadeau <I>et al</I>., 2000</a>) are produced by repeated backcrossing of a whole chromosome or its parts onto an inbred strain. The term <i>chromosome substitution strain</i> is a common designation for consomic, subconsomic, and conplastic strains. To create a chromosome substitution strain, transfer of a whole chromosome or a large cohromosomal region is carried out, while in congenic strains, the transferred entity is a gene, marker or genomic segment including a specific marker or interval.</P>
+<h3><a name="consomic"></a>5.3&nbsp;&nbsp;&nbsp;Consomic Strains</h3>
+<P>Consomic strains (also called chromosome substitution strains, <A HREF="#nadeau">Nadeau <I>et al</I>., 2000</a>) are produced by repeated backcrossing of a whole chromosome onto an inbred strain. As with congenic strains, a minimum of 10 backcross generations is required, counting the F1 generation as generation 1. For autosomes it is necessary to genotype progeny to ensure that the selected donor chromosome has not recombined with the corresponding recipient chromosome. The generic designation for consomic strains is <nobr>HOST STRAIN-Chr #<SUP><FONT SIZE="-1">DONOR STRAIN</FONT></SUP>.</nobr></P>
 
-<h4><a name="consomic_strains">5.3.1&nbsp;&nbsp;&nbsp;Consomic Strains</a></h4>
-<p>Consomic strains are produced by repeated backcrossing of a whole chromosome onto an inbred strain. As with congenic strains, a minimum of 10 backcross generations is required, counting the F1 generation as generation 1. For autosomes it is necessary to genotype progeny to ensure that the selected donor chromosome has not recombined with the corresponding recipient chromosome. The generic designation for consomic strains is HOST STRAIN-Chr #<sup>DONOR STRAIN</sup>.</p>
 <p><b>Examples:</b>
 <blockquote>
 <table cellpadding=6>
@@ -690,7 +683,7 @@ fine genetic mapping. Genetics 141: 1199-1207<br><br>
 
 <a name="demant"></a>Demant, P. and Hart, A.A.M. 1986. Recombinant congenic strains- a new tool for analyzing genetic traits determined by more than one gene. Immunogenetics 24:416-422. <br><br>
 
-<a name="eppig"></a>Eppig JT. 2006. Mouse Strain and Genetic Nomenclature: an Abbreviated Guide. In: The Mouse in Biomedical Research, Volume 1, Second Edition. Fox J, Barthold S, Davisson M, Newcomer C, Quimby F, Smith A, eds. Academic Press. pp 79-98. <br><br>
+Eppig JT. 2006. Mouse Strain and Genetic Nomenclature: an Abbreviated Guide. In: The Mouse in Biomedical Research, Volume 1, Second Edition. Fox J, Barthold S, Davisson M, Newcomer C, Quimby F, Smith A, eds. Academic Press. pp 79-98. <br><br>
 
 Festing, M.F.W. 1979. Inbred strains in biomedical research, Macmillan Press, London: Oxford University Press, New York. <br><br>
 
