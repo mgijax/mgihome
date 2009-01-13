@@ -34,65 +34,14 @@ Subject: %s
 
 '''
 
-REMEDY_MESSAGE = '''#
-#  %s
-#
-#AR-Message-Begin             Do Not Delete This Line
-Schema: TJL-Inbox
-Server: arserver.jax.org
-Login: webmail
-Password: webuser1
-Action: Submit
-# Values: Submit, Query
-Format: Short
-# Values: Short, Full
-
+REMEDY_MESSAGE = '''%s
 %s
-
-#AR-Message-End             Do Not Delete This Line
 ''' % (mgi_utils.date(), '%s')
 
 ALLOWED_TYPES = [2,  # markers
 		 8,  # assays
 		 11  # alleles
 		]
-
-###--- Remedy-Template Functions ---###
-
-# These two functions are modeled after the formatting embedded in the
-# www/support/tjl_submit_inbox.cgi script.
-
-def style20 (
-	fieldname,	# string; name of the input field
-	fieldID,	# string; id number corresponding to that field
-	value		# string; value entered for that field (may be '')
-	):
-	# Purpose: format the parameters into a line of e-mail for Remedy,
-	#	formatted with twenty columns for the fieldname
-	# Returns: string
-	# Assumes: nothing
-	# Effects: nothing
-	# Throws: nothing
-
-	template = '%s !%s!:%s'
-	return template % (string.rjust (fieldname, 20),
-			string.rjust (fieldID, 9), value)
-
-def style21 (
-	fieldname,	# string; name of the input field
-	fieldID,	# string; id number corresponding to that field
-	value		# string; value entered for that field (may be '')
-	):
-	# Purpose: format the parameters into a line of e-mail for Remedy,
-	#	formatted with twenty-one columns for the fieldname
-	# Returns: string
-	# Assumes: nothing
-	# Effects: nothing
-	# Throws: nothing
-
-	template = '%s!%s!: %s'
-	return template % (string.rjust (fieldname, 21),
-			string.rjust (fieldID, 9), value)
 
 ###--- Class-Checking Functions ---###
 
@@ -769,28 +718,16 @@ class UserInput:
 		#		function to use to format it)
 
 		fields = [
-			('title', '536870924', '', style20),
-			('F_Name', '536870913', self.firstName.getValue(),
-				style20),
-			('L_Name', '536870914', self.lastName.getValue(),
-				style20),
-			('em', '536870915', self.email.getValue(), style20),
-			('in-ph', '536870920', '', style20),
-			('in-fax', '536870922', '', style20),
-			('inst', '536870921', self.institution.getValue(),
-				style20),
-			('Position', '536870925', '', style20),
-			('Request Summary', '8', self.subject.getValue(),
-				style20),
-			('Request Details', '536870916', self.getDetails(),
-				style20),
-			('Submitter', '2', 'webmail', style21),
-			('Status', '7', 'New', style21),
-			('ATTN', '536870923', '', style20),
-			('jax_domain', '536870919', 'MGI', style20),
+			('FirstName', self.firstName.getValue()),
+			('LastName', self.lastName.getValue()),
+			('From', self.email.getValue()),
+			('inst', self.institution.getValue()),
+			('Request Summary', self.subject.getValue()),
 			]
-		for (remedyName, remedyID, value, style) in fields:
-			lines.append (style (remedyName, remedyID, value))
+		for (remedyName, value) in fields:
+			lines.append (remedyName + ': ' + value)
+
+		lines.append('\n' + self.getDetails())			
 		return string.join (lines, '\n')
 
 	def getDetails (self):
@@ -808,7 +745,7 @@ class UserInput:
 		#	in Remedy's "Request Details" field.
 
 		list = []
-		for field in [ self.accID, self.dataDate, self.referer ]:
+		for field in [ self.accID]:
 			list.append ('%s: %s' % (field.getLabel(),
 				field.getValue()))
 		return string.join (list, '\n')
@@ -903,8 +840,7 @@ class SimpleTextUserInput (UserInput):
 		#	the basic string, and then simply add the "Your
 		#	Comments" field to it.
 
-		list = [ UserInput.getDetails (self),
-			'%s: %s' % (self.comments.getLabel(),
+		list = ['%s: %s' % (self.comments.getLabel(),
 				self.comments.getValue()),
 			]
 		return string.join (list, '\n')
