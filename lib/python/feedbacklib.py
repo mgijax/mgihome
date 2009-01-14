@@ -700,22 +700,18 @@ class UserInput:
 
 	def getEmailString (self):
 		# Purpose: build and return a string which defines the data
-		#	Fields and their values, in a format that Remedy can
-		#	understand
+		#	Fields and their values.
 		# Returns: string
 		# Assumes: nothing
 		# Effects: nothing
 		# Throws: nothing
-		# Notes: This very odd format is patterned after that which
-		#	currently exists in the tjl_submit_inbox.cgi script,
-		#	so we can have this data go into the same Remedy
-		#	schema.
+		# Notes: This was all reformatted for TR 8853, which removes
+		# 	all of the remedy specific parts of the email.
 
 		lines = []		# will add one string per Field
 
 		# each item in 'fields' is a tuple containing:
-		#	(Remedy fieldname, Remedy field ID, field value,
-		#		function to use to format it)
+		#	(field name, field value)
 
 		fields = [
 			('FirstName', self.firstName.getValue()),
@@ -724,8 +720,8 @@ class UserInput:
 			('inst', self.institution.getValue()),
 			('Request Summary', self.subject.getValue()),
 			]
-		for (remedyName, value) in fields:
-			lines.append (remedyName + ': ' + value)
+		for (name, value) in fields:
+			lines.append (name + ': ' + value)
 
 		lines.append('\n' + self.getDetails())			
 		return string.join (lines, '\n')
