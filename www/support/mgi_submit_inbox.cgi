@@ -7,7 +7,7 @@
 This script generates a confirmation (or error) message, processes a form
 and sends mail to User Support via Remedy.
 schema: TJL-Inbox
-forms: tjl_inbox.shtml, tjl_inbox_jx.shtml
+forms: mgi_inbox.shtml
 
 version 1.0 9/98
 revised 1/14/1999
