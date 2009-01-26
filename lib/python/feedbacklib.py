@@ -887,7 +887,7 @@ class AssayUserInput (SimpleTextUserInput):
 		    regarding the annotation of this assay; your comments will
 		    be reviewed and appropriate action taken.  For comments or 
 		    suggestions regarding the content of the Gene Expression 
-		    Database, contact <a href="%ssupport/tjl_inbox.shtml">User Support</a>.<BR>'''\
+		    Database, contact <a href="%ssupport/mgi_inbox.shtml">User Support</a>.<BR>'''\
 			% config['MGIHOME_URL']
 		self.subject = AssaySubjectField ('subject', 'Subject',
 			REQUIRED, width=45)
@@ -932,7 +932,7 @@ class AlleleUserInput (SimpleTextUserInput):
 			<a href="../nomen/allmut_form.shtml">Allele and New
 			Mutant Submission Form</a>.
 			For all other comments and suggestions, contact 
-			<a href="%ssupport/tjl_inbox.shtml">User
+			<a href="%ssupport/mgi_inbox.shtml">User
 			Support</a>.<BR>''' % config['MGIHOME_URL']
 		self.subject = AlleleSubjectField ('subject', 'Subject',
 			REQUIRED, width=45)
@@ -976,7 +976,7 @@ class MarkerUserInput (SimpleTextUserInput):
 			<a href="../nomen/allmut_form.shtml">Allele and New
 			Mutant Submission Form</a>.
 			For all other comments and suggestions, contact 
-			<a href="%ssupport/tjl_inbox.shtml">User
+			<a href="%ssupport/mgi_inbox.shtml">User
 			Support</a>.<BR>''' % config['MGIHOME_URL']
 		self.subject = MarkerSubjectField ('subject', 'Subject',
 			REQUIRED, width=45)
