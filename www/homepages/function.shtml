@@ -88,19 +88,21 @@
 				is in the term <dt>, and the link is in the definition <dd> -->
 				<div class="boxBG pad5">
 					<dl>
-						<dt>Browse the Gene Ontology and mouse annotations in MGI.</dt>
-						<dd class="searchList"><a href="<!--#include file='include/wi_url.html'-->searches/GO_form.shtml" class="small homeLink">GO Browser</a></dd>
-						<dt class="whatList">Search for genes using GO terms and other gene attributes.</dt>
-						<dd class="searchList"><a href="<!--#include file='include/java_url.html'-->WIFetch?page=markerQF" class="small homeLink">Genes & Markers Query</a></dd>
-						<dt class="whatList">Access GO annotations for genes associated with OMIM.</dt>
-						<dd class="searchList"><a href="<!--#include file='include/gograph_url.html'-->OrthoDisease/index.html" class="small homeLink">Comparison Graphs by OMIM gene or disease ID</a></dd>
-						<dt class="whatList">Obtain sets of MGI IDs for use in GO tools.</dt>
-						<dd class="searchList"><a href="<!--#include file='include/java_url.html'-->WIFetch?page=batchQF" class="small homeLink">Batch Query</a></dd>
+					 <dt>Browse the Gene Ontology and mouse annotations in MGI.</dt>
+					 <dd class="searchList"><a href="<!--#include file='include/wi_url.html'-->searches/GO_form.shtml" class="small homeLink">GO Browser</a></dd>
+					 <dt class="whatList">Search for genes using GO terms and other gene attributes.</dt>
+					 <dd class="searchList"><a href="<!--#include file='include/java_url.html'-->WIFetch?page=markerQF" class="small homeLink">Genes & Markers Query</a></dd>
+					 <dt class="whatList">Access GO annotations for genes associated with OMIM.</dt>
+					 <dd class="searchList"><a href="<!--#include file='include/gograph_url.html'-->OrthoDisease/index.html" class="small homeLink">Comparison Graphs by OMIM gene or disease ID</a></dd>
+					 <dt class="whatList">Obtain sets of MGI IDs for use in GO tools.</dt>
+					 <dd class="searchList"><a href="<!--#include file='include/java_url.html'-->WIFetch?page=batchQF" class="small homeLink">Batch Query</a></dd>
 					</dl>
 					<dl>
 					   <dt class="whatList">Use GO annotations to discover what your gene set may have in common:</dt>
 					   <dd class="searchList small"><a href="<!--#include file='include/gotools_url.html'-->MGI_Term_Finder.html" class="homeLink">MGI GO Term Finder</a> - Analyze functional annotations</dd>
 					   <dd class="searchList small"><a href="<!--#include file='include/gotools_url.html'-->MGI_GO_Slim_Chart.html" class="homeLink">GO Chart Tool</a> - Build GO charts to present GO functional data</dd>
+                                           <dt class="whatList">Access GO annotations for genes from the GO Consortium reference genome project.</dt>                                  
+ <dd class="searchList small"><a href="http://www.geneontology.org/images/RefGenomeGraphs/">Reference Genome Graphs</a></dd>
 					</dl>
 				</div>
 			</div>
