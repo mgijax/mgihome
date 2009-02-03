@@ -87,6 +87,7 @@ def createIncludeLink (includeName, fileLoc ) :
     os.system("ln -s " + fileLoc + " " + filePath)
 
 def main ():
+    stringToFile (config['WEBSHARE_URL'], '../www/include/webshare_url.html')
     stringToFile (config['WI_URL'], '../www/include/wi_url.html')
     stringToFile ('"%s";' % config['WI_URL'], '../www/include/wi_url2.html')
     stringToFile (config['FTP_URL'], '../www/include/ftp_url.html')
