@@ -1,33 +1,12 @@
 <!--#include file='include/templateHead.html'-->
   <title>MGI-Mouse Functional Annotation using the Gene Ontology (GO)</title>
- <meta name="description" content="MGI's GO project provides functional annotations for mouse gene products using the Gene Ontology." />
- <meta name="keywords" content="MGI, mgi, mice, mouse, murine, mus musculus, genes, genome, genomic, GO, gene products, gene functions, biological processes, cellular components, molecular functions, ontology, GO Consortium, gene ontology consortium" />
+  <meta name="description" content="MGI's GO project provides functional annotations for mouse gene products using the Gene Ontology." />
+  <meta name="keywords" content="MGI, mgi, mice, mouse, murine, mus musculus, genes, genome, genomic, GO, gene products, gene functions, biological processes, cellular components, molecular functions, ontology, GO Consortium, gene ontology consortium" />
+  
   <meta name="robots" content="NOODP" />
   <meta name="robots" content="NOYDIR" />
 
-
-<!------------- AJAX TABS CALLS -------------------------------------------------------->
-
-<link rel="stylesheet" type="text/css" href="<!--#include file='include/mgihome_url.html'-->homepages/ajaxtabs.css" />
-<script type="text/javascript" src="<!--#include file='include/mgihome_url.html'-->homepages/ajaxtabs.js">
-	/***********************************************
-	* Ajax Tabs Content script- © Dynamic Drive DHTML code library (www.dynamicdrive.com)
-	* This notice MUST stay intact for legal use
-	* Visit Dynamic Drive at http://www.dynamicdrive.com/ for full source code
-	***********************************************/
-</script>
-
-<script language="JavaScript">
-	function Toggle_GOimages(id) {
-		var div = document.getElementById(id);
-		if (div==null) {
-			return; }
-		var bExpand = div.style.display == '';
-		div.style.display = (bExpand ? 'none' : '');
-	}
-</script>
-
-<link rel="stylesheet" type="text/css" href="<!--#include file='include/mgihome_url.html'-->homepages/minihome.css" />
+  <link rel="stylesheet" type="text/css" href="<!--#include file="include/webshare_url.html"-->css/homepages_min.css" />
 
 <!--#include file='include/templateBodyStart.html'-->
 
@@ -221,6 +200,25 @@
 </td></tr>
 </div>
 </table>
+
+<!------------- AJAX TABS CALLS -------------------------------------------------------->
+<script type="text/javascript" src="<!--#include file="include/webshare_url.html"-->js/ajaxtabs.js">
+    /***********************************************
+    * Ajax Tabs Content script- © Dynamic Drive DHTML code library (www.dynamicdrive.com)
+    * This notice MUST stay intact for legal use
+    * Visit Dynamic Drive at http://www.dynamicdrive.com/ for full source code
+    ***********************************************/
+</script>
+
+<script language="JavaScript">
+    function Toggle_GOimages(id) {
+        var div = document.getElementById(id);
+        if (div==null) {
+            return; }
+        var bExpand = div.style.display == '';
+        div.style.display = (bExpand ? 'none' : '');
+    }
+</script>
 
 <script type="text/javascript">
     var go_box=new ddajaxtabs("gotab", "gocontentarea")
