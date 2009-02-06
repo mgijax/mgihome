@@ -1,3 +1,11 @@
+
+<!--http://www.informatics.jax.org/searches/snp_report.cgi?_Marker_key=9214 
+rs3021544
+ss12750703 -->
+
+
+
+
 <!--#include file='include/templateHead.html'--> 
 <title>MGI-Creating Web Links to MGI</title>
 
@@ -36,11 +44,10 @@ MGI stores objects with accession IDs from many sources.  Some examples of valid
 <li>NM_021099, AF193796, AB005457, U20370, M22115 (GenBank accession IDS)</li>
 <li>TC1572427 (DFCI Mouse Gene Index accession ID)</li>
 <li>B830009P17 (Riken clone ID)</li>
-</ul>
+<!--SNP The request is to allow users to use an MGI ID to create a SNP summary report (versus our internal marker key). Jim agreed with Jon that this is an easy addition. The "Creating Web Links to MGI" page in MGI Home would also need to be modified to add this option. Adding to the list of Maintenance TRs. 
+</ul>-->
 
-<p>MGI uses the sequence provider's accession ID for sequences. <br>
-For more details about sequences and MGI accession IDs, see 
-<a href="<!--#include file='include/userdocs_url.html'-->accession_help.shtml">Using the Accession IDs Query Form</a>.
+
 </p>
 <a href="#top">Back to top</a>
 
