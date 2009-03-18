@@ -10,7 +10,7 @@
 </div> 
 
 <br/>
-<center>  <span class="titleBarSubTitle"> Revised: January, 2009</span>
+<center>  <span class="titleBarSubTitle"> Revised: March, 2009</span>
 </center>
 
 <h3 align=center>International Committee on Standardized Genetic Nomenclature for Mice</h3>
@@ -120,7 +120,8 @@ found on the <a href="index.shtml">MGD</a> and <a href="http://rgd.mcw.edu/nomen
   <a href="#tarm">3.5&nbsp;&nbsp;Targeted and Trapped Mutations</a></br>
         <ul>
           <a href="#kkcaotm">3.5.1&nbsp;&nbsp;Knockout, Knockin, Conditional and Other Targeted Mutations</a><br>
-          <a href="#gtm">3.5.2&nbsp;&nbsp;Gene Trap Mutations</a>
+          <a href="#gtm">3.5.2&nbsp;&nbsp;Gene Trap Mutations</a><br>
+          <a href="#enhancer">3.5.3&nbsp;&nbsp;Enhancer Traps</a>
         </ul>
         
   </ul>
@@ -995,7 +996,7 @@ conventional tm#Labcode superscript. Details of the targeted locus should be giv
 
 <p>Once fully designated in a publication, the allele can be abbreviated by removing the portion of the allele designation in parentheses (in this case, <i>Gstm3<sup>tm1Vlcg</sup></i>), providing the symbol remains unique.
 </p>
-<h4><a name="gtm"> </a>3.5.2 Gene Trap Mutations</h4>
+<h4><a name="gtm"></a>3.5.2 &nbsp;&nbsp; Gene Trap Mutations</h4>
 <p>Gene trap mutations are symbolized in a similar way to targeted mutations. If the trapped gene is known, the symbol for the trapped allele will be similar to a targeted mutation of the same gene using the format Gt(vector content)#Labcode for the allele designation.
 </p>
 <b>Example:</b>
@@ -1008,7 +1009,7 @@ conventional tm#Labcode superscript. Details of the targeted locus should be giv
 <ul>
 <li>For example, a gene trapped locus (where the gene is unknown) using vector ROSA, the 26th made in P. Soriano's laboratory, is <i>Gt(ROSA)26Sor</i>.</li>
 </ul>
-<p>For high throughput systematic gene trap pipelines, the mutant ES cell line's designation can be used in parentheses instead of the vector designation, and the serial number following the parentheses may be omitted. </p>
+<p>For high throughput systematic gene trap pipelines, the mutant ES cell line's designation can be used in parentheses instead of the vector designation, and the serial number following the parentheses may be omitted. 
 <blockquote>
 <b>Examples:</b>
 <table cellpadding=4>
@@ -1016,6 +1017,36 @@ conventional tm#Labcode superscript. Details of the targeted locus should be giv
 <tr><TD VALIGN="top"><nobr><i>Osbpl1a<sup>Gt(OST48536)Lex</sup></i></nobr></td><td valign="top">gene trap allele of the oxysterol binding protein-like 1A gene, in mutant ES cell line OST48536, made by Lexicon Genetics, Inc.</td></tr>
 </table>
 </blockquote>
+</p>
+
+<h4><a name="enhancer"></a>3.5.3 &nbsp;&nbsp; Enhancer Traps</h4>
+
+<p>Enhancer traps are specialized transgenes. One utility of these transgenes is in creating cre driver lines. Enhancer traps of this type that are currently being created may include a minimal promoter, introns, a cre recombinase cassette (sometimes fused with another element such as ERT2), and polyA sites from different sources.
+</p>
+<p>Nomenclature for these enhancer traps consists of 4 parts as follows:
+
+<blockquote>
+<table cellpadding=4>
+<tr><td valign="top">Et</td><td valign="top">prefix for enhancer trap</td></tr>
+<tr><td valign="top">cre recombinase cassette</td><td valign="top">portion in parentheses...<br>for example, cre, icre, or cre/ERT2 (if fused with ERT2)</td></tr>
+<tr><td valign="top"><nobr>line number or serial number</nobr></td><td valign="top">to designate lab trap number or serial number</td></tr>
+<tr><td valign="top">Lab code</td><td valign="top">ILAR code identifying the creator of this enhancer trap</td></tr>
+</table>
+</blockquote>
+</p>
+<b>Examples:</b>
+					
+<p>
+<blockquote>
+<table cellpadding=4>
+<tr><td valign="top">Et(icre)1642Rdav</td><td valign="top">Enhancer trap 1642, Ron Davis</td></tr>
+<tr><td valign="top">Et(cre/ERT2)2047Rdav</td><td valign="top">Enhancer trap 2047, Ron Davis</td></tr>
+</table>
+</blockquote>                          
+</p>		
+
+<p>Note that the minimal promoter, poly A source, etc. are not part of the enhancer trap nomenclature. These are molecular details of the specific construct that will be captured in database records and reported with experimental results.
+</p>
 
 <h2><A NAME="transg"></A>4&nbsp;&nbsp;&nbsp;Transgenes</h2>
 

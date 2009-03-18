@@ -1,33 +1,12 @@
 <!--#include file='include/templateHead.html'-->
   <title>MGI-Mouse Functional Annotation using the Gene Ontology (GO)</title>
- <meta name="description" content="MGI's GO project provides functional annotations for mouse gene products using the Gene Ontology." />
- <meta name="keywords" content="MGI, mgi, mice, mouse, murine, mus musculus, genes, genome, genomic, GO, gene products, gene functions, biological processes, cellular components, molecular functions, ontology, GO Consortium, gene ontology consortium" />
+  <meta name="description" content="MGI's GO project provides functional annotations for mouse gene products using the Gene Ontology." />
+  <meta name="keywords" content="MGI, mgi, mice, mouse, murine, mus musculus, genes, genome, genomic, GO, gene products, gene functions, biological processes, cellular components, molecular functions, ontology, GO Consortium, gene ontology consortium" />
+  
   <meta name="robots" content="NOODP" />
   <meta name="robots" content="NOYDIR" />
 
-
-<!------------- AJAX TABS CALLS -------------------------------------------------------->
-
-<link rel="stylesheet" type="text/css" href="<!--#include file='include/mgihome_url.html'-->homepages/ajaxtabs.css" />
-<script type="text/javascript" src="<!--#include file='include/mgihome_url.html'-->homepages/ajaxtabs.js">
-	/***********************************************
-	* Ajax Tabs Content script- © Dynamic Drive DHTML code library (www.dynamicdrive.com)
-	* This notice MUST stay intact for legal use
-	* Visit Dynamic Drive at http://www.dynamicdrive.com/ for full source code
-	***********************************************/
-</script>
-
-<script language="JavaScript">
-	function Toggle_GOimages(id) {
-		var div = document.getElementById(id);
-		if (div==null) {
-			return; }
-		var bExpand = div.style.display == '';
-		div.style.display = (bExpand ? 'none' : '');
-	}
-</script>
-
-<link rel="stylesheet" type="text/css" href="<!--#include file='include/mgihome_url.html'-->homepages/minihome.css" />
+  <link rel="stylesheet" type="text/css" href="<!--#include file="include/stylesheet.html"-->" />
 
 <!--#include file='include/templateBodyStart.html'-->
 
@@ -88,19 +67,21 @@
 				is in the term <dt>, and the link is in the definition <dd> -->
 				<div class="boxBG pad5">
 					<dl>
-						<dt>Browse the Gene Ontology and mouse annotations in MGI.</dt>
-						<dd class="searchList"><a href="<!--#include file='include/wi_url.html'-->searches/GO_form.shtml" class="small homeLink">GO Browser</a></dd>
-						<dt class="whatList">Search for genes using GO terms and other gene attributes.</dt>
-						<dd class="searchList"><a href="<!--#include file='include/java_url.html'-->WIFetch?page=markerQF" class="small homeLink">Genes & Markers Query</a></dd>
-						<dt class="whatList">Access GO annotations for genes associated with OMIM.</dt>
-						<dd class="searchList"><a href="<!--#include file='include/gograph_url.html'-->OrthoDisease/index.html" class="small homeLink">Comparison Graphs by OMIM gene or disease ID</a></dd>
-						<dt class="whatList">Obtain sets of MGI IDs for use in GO tools.</dt>
-						<dd class="searchList"><a href="<!--#include file='include/java_url.html'-->WIFetch?page=batchQF" class="small homeLink">Batch Query</a></dd>
+					 <dt>Browse the Gene Ontology and mouse annotations in MGI.</dt>
+					 <dd class="searchList"><a href="<!--#include file='include/wi_url.html'-->searches/GO_form.shtml" class="small homeLink">GO Browser</a></dd>
+					 <dt class="whatList">Search for genes using GO terms and other gene attributes.</dt>
+					 <dd class="searchList"><a href="<!--#include file='include/java_url.html'-->WIFetch?page=markerQF" class="small homeLink">Genes & Markers Query</a></dd>
+					 <dt class="whatList">Access GO annotations for genes associated with OMIM.</dt>
+					 <dd class="searchList"><a href="<!--#include file='include/gograph_url.html'-->OrthoDisease/index.html" class="small homeLink">Comparison Graphs by OMIM gene or disease ID</a></dd>
+					 <dt class="whatList">Obtain sets of MGI IDs for use in GO tools.</dt>
+					 <dd class="searchList"><a href="<!--#include file='include/java_url.html'-->WIFetch?page=batchQF" class="small homeLink">Batch Query</a></dd>
 					</dl>
 					<dl>
 					   <dt class="whatList">Use GO annotations to discover what your gene set may have in common:</dt>
 					   <dd class="searchList small"><a href="<!--#include file='include/gotools_url.html'-->MGI_Term_Finder.html" class="homeLink">MGI GO Term Finder</a> - Analyze functional annotations</dd>
 					   <dd class="searchList small"><a href="<!--#include file='include/gotools_url.html'-->MGI_GO_Slim_Chart.html" class="homeLink">GO Chart Tool</a> - Build GO charts to present GO functional data</dd>
+                                           <dt class="whatList">Access GO annotations for genes from the GO Consortium reference genome project.</dt>                                  
+ <dd class="searchList small"><a href="http://www.geneontology.org/images/RefGenomeGraphs/">Reference Genome Graphs</a></dd>
 					</dl>
 				</div>
 			</div>
@@ -136,7 +117,12 @@
 						<dd class="faqList">.. obtain FASTA sequence files for mouse genes with GO annotations in common?
 						<a class="small homeLink" onClick="javascript:openFaqWindow('GO_seq.shtml'); return false;"
 						href="<!--#include file='include/faq_url.html'-->GO_seq.shtml">FAQ</a></dd>
-					</dl>
+
+
+	<dd class="faqList">.. find and download the list of all GO Consortium Reference Genome Project mouse genes?
+						<a class="small homeLink" onClick="javascript:openFaqWindow('GO_refgen.shtml'); return false;"
+						href="<!--#include file='include/faq_url.html'-->GO_refgen.shtml">FAQ</a></dd>
+				</dl>
 					<!-- link to all FAQs page -->
 					<a class="small homeLink" href="<!--#include file='include/faq_url.html'-->FAQ.shtml#go">More FAQs</a>
 				</div>
@@ -164,13 +150,13 @@
 	<div class="boxTitle">
 		<!-- Box-title goes here -->
 		<div class="left">Gene Ontology at MGI News</div>
-		<div class="right small">22 May 2008</div>
+		<div class="right small">March 2009</div>
 	</div>
 	<!-- News content -->
 <div class="boxBG pad5 small">
  <ul class="small">
- 
-  <li>On April 1, 2008, GO introduced  <a href="http://www.geneontology.org/GO.evidence.shtml#computational ">three new evidence codes</a>:
+     <li>A new evidence code, <a href="http://www.geneontology.org/GO.evidence.shtml">EXP</a>, is available for groups contributing high-quality manually-curated GO annotations from published experimental results, but who are unable to apply a specific experimental evidence code to each annotation.
+  <li>On April 1, 2008, GO introduced <a href="http://www.geneontology.org/GO.evidence.shtml#computational">three new evidence codes</a>:
     <ul>
       <li>ISO - Inferred from sequence orthology</li>
       <li>ISA - Inferred from sequence alignment</li>
@@ -214,6 +200,25 @@
 </td></tr>
 </div>
 </table>
+
+<!------------- AJAX TABS CALLS -------------------------------------------------------->
+<script type="text/javascript" src="<!--#include file="include/javascript.html"-->">
+    /***********************************************
+    * Ajax Tabs Content script- © Dynamic Drive DHTML code library (www.dynamicdrive.com)
+    * This notice MUST stay intact for legal use
+    * Visit Dynamic Drive at http://www.dynamicdrive.com/ for full source code
+    ***********************************************/
+</script>
+
+<script language="JavaScript">
+    function Toggle_GOimages(id) {
+        var div = document.getElementById(id);
+        if (div==null) {
+            return; }
+        var bExpand = div.style.display == '';
+        div.style.display = (bExpand ? 'none' : '');
+    }
+</script>
 
 <script type="text/javascript">
     var go_box=new ddajaxtabs("gotab", "gocontentarea")

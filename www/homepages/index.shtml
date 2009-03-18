@@ -3,7 +3,6 @@
 <title>MGI-Mouse Genome Informatics-The international database resource for the laboratory mouse</title>
  
   <meta name="description" content="MGI: the international database resource for the laboratory mouse, providing integrated genetic, genomic, and biological data for researching human health and disease." />
-
   <meta name="keywords" content="Mouse Genome Database, Gene Expression Database, Mouse Tumor Biology, Gene Ontology, Mouse Genome Sequence Project, MGI, mgi, mice, mus musculus, murine, gene products, proteins, biochemical pathways, ontology" />
 
   <meta name="robots" content="NOODP" />
@@ -11,8 +10,7 @@
 
 
 <!-- Home Page Specific Css -->
-<link rel="stylesheet" type="text/css" href="<!--#include file="include/mgihome_url.html"-->homepages/homepage.css"/>
-<link rel="stylesheet" type="text/css" href="<!--#include file="include/mgihome_url.html"-->homepages/minihome.css" />
+<link rel="stylesheet" type="text/css" href="<!--#include file="include/stylesheet.html"-->" />
 
 <!--#include file='include/templateHomePageBodyStart.html'-->
 
@@ -175,9 +173,11 @@
       <!--spacer - adjust as necessary -->
       <div style="height: 2em;">     
       </dl>
-   
-      <a class="small homeLink" href="<!--#include file='include/faq_url.html'-->FAQ.shtml">More FAQs</a>
-     </div>
+    <div class="left"><a class="small homeLink" href="<!--#include file='include/faq_url.html'-->FAQ.shtml">More FAQs</a></div>
+        <div class="right"><a class="small homeLink" href="http://www.openhelix.com/mgi">MGI tutorial</a> <font size="-2">(OpenHelix)</font></div>
+      </div>
+     
+     &nbsp;</div>
     </div>
     </td>
 
@@ -186,11 +186,11 @@
     <div class="blueBorder leftCenterMargin">
       <div class="boxTitle">
         <div class="left">News</div>
-        <div class="right small">January 12, 2009 &nbsp;</div>
+        <div class="right small">March, 2009 &nbsp;</div>
       </div>
       <div class="boxBG pad5">
         <ul class="newsList"><br/>
-<li>MGI 4.2 release features enhancements to the MGI Quick Search tool. <a class="homeLink" href="<!--#include file="include/mgihome_url.html"-->news/whatsnew.shtml">Read more...</a>
+<li>MGI 4.21 enhances the Batch Query (expression data), provides links to genes included in the GO Consortium Reference Genome Project and to microarray probes orassays associated with genes or markers. <a class="homeLink" href="<!--#include file="include/mgihome_url.html"-->news/whatsnew.shtml">Read more...</a>
 </li>
             <li>We invite you to <b>take the survey</b> on MGI's Gene Expression
 Database
@@ -224,15 +224,13 @@ here to take survey</a>.</li>
 <b>MGI Roadshow:</b><br>
                                             
 <ul>
-02/18/09&nbsp;&nbsp;<a href="http://www.mskcc.org/mskcc/html/44.cfm">Memorial Sloan-Kettering Cancer Center</a><br>
-02/19/09&nbsp;&nbsp;<a href="http://training.cit.nih.gov">National Institutes of Health</a><br> 
-04/07/09&nbsp;&nbsp;<a href="http://www.vanderbilt.edu/">Vanderbilt University</a>
+04/07/09&nbsp;&nbsp;<a href="http://www.vanderbilt.edu/">Vanderbilt University</a><br>
 </ul>
 
 
 
- If you would like to host a MGI workshop at your institution, contact
-	  <a href="<!--#include file='include/mgihome_url.html'-->support/tjl_inbox.shtml" class="homeLink">User Support</a> 
+ If you would like to host a MGI workshop at your institution, 
+	  <a href="<!--#include file='include/mgihome_url.html'-->support/mgi_inbox.shtml" class="homeLink">Contact User Support</a> 
 	  to discuss the details.
       <br/><br/>
       <!--<span class="smaller"></span> Visit MGI posters at these upcoming conferences:

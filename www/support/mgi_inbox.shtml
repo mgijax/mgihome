@@ -1,11 +1,11 @@
 <!--#include file='include/templateHead.html'-->
-<title>MGI-HelpDesk Express Mail</title>
+<title>MGI-Contact User Support</title>
 
 <!--#include file='include/templateBodyStart.html'-->
 
 <!-- Title Bar -->
 <div id="titleBarWrapper">
- <span class="titleBarMainTitle"><a href="support.shtml">MGI HelpDesk</a> <EM>Express</EM> Mail</span>
+ <span class="titleBarMainTitle">Contact User Support</span>
 </div> <!--titleBar-->
 
 <script type="text/javascript" language="JavaScript">
@@ -66,7 +66,7 @@ requested in the fields below so that we can respond promptly.  Be as
 detailed in your message as possible.  Thanks!</P>
 <hr>
 
-<FORM METHOD="POST" ACTION="tjl_submit_inbox.cgi" name="submitInfo">
+<FORM METHOD="POST" ACTION="mgi_submit_inbox.cgi" name="submitInfo">
 <DL>
 <DT><B>From:</B><P>
 

@@ -151,6 +151,8 @@
             <tr><td valign="top">uniprot</td><td valign="top">P48356</td></tr>
             <tr><td valign="top">go</td><td valign="top">GO:0019221</td></tr>
             <tr><td valign="top">refsnp</td><td valign="top">rs27429143</td></tr>
+            <tr><td valign="top">affy1</td><td valign="top">10344624</td></tr>
+            <tr><td valign="top">affy2</td><td valign="top">1415680_at</td></tr>
         </table>
         </li>
     </ol>
@@ -269,6 +271,8 @@
             <tr><td valign="top">uniprot</td><td valign="top">P48356</td></tr>
             <tr><td valign="top">go</td><td valign="top">GO:0019221</td></tr>
             <tr><td valign="top">refsnp</td><td valign="top">rs27429143</td></tr>
+            <tr><td valign="top">affy1</td><td valign="top">???</td></tr>
+            <tr><td valign="top">affy2</td><td valign="top">???</td></tr>
         </table>
         
         <br><br>
@@ -332,6 +336,9 @@
             <tr><td valign="top">uniprot</td><td valign="top">&lt;uniprot&gt; - contains a UniProt (protein) sequence ID associated to the gene/marker</td></tr>
             <tr><td valign="top">omim</td><td valign="top">&lt;ID&gt; - ID of the OMIM (Human Disease) term associated to the gene/marker<br/>
                 &lt;Term&gt;</td></tr>
+            <tr><td valign="top">exp</td><td valign="top">&lt;anatomicalStructure&gt; - anatomical structure examined when analyzing expression for the gene/marker<br/>
+                &lt;expressed&gt; - number of times expression was detected in the structure<br>
+                &lt;notExpressed&gt; - number of times expression was found to be absent in the structure</td></tr>                
         </table><br><br>
         </li>
     </ol>

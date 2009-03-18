@@ -9,9 +9,6 @@
   <meta name="robots" content="NOODP" />
   <meta name="robots" content="NOYDIR" />
 
-
-
-
 <!--#include file='include/templateBodyStart.html'-->
 
 <!-- Title Bar -->
@@ -19,26 +16,6 @@
   <span class="titleBarMainTitle">Software Developer Tools</span>
   </div>
 <!--titleBar-->
-
-<style>
-	.toc { margin 0px;
-		background-color:#DFEFFF; }
-	.toc ul { font-size: 12px;
-		margin 0px;
-		text-align: center;
-		line-height: 1.75;
-		list-style-type: none;
-		padding: .75em .75em 0.1em .75em;
-		min-width: 600px;}
-	.toc li { display: inline;
-		white-space: nowrap; }
-	.outline { border: 2px solid #DFEFFF; }
-	dl.linkedList { margin-left: 2em; }
-	.linkedList dt { margin-top: 1em; }
-	.linkedList dd { margin-left: 1em;
-		margin-top: .25em;
-		font-style:italic}
-</style>
 
 <!-- this file is an example template to be used to create a page in the
 "All X" format, similar to the "All Search Tools" page.  To use this template
@@ -65,7 +42,15 @@ Note that the list in each section is a definition list <dl> where the term
 			</tr>
 		</table>
 	</td></tr>
-
+   <tr><td>
+   <table class="outline" width="100%">
+     <tr>
+	  <td class="enhance">
+	   Join the <a href="http://lists.informatics.jax.org/lyris-cgi/lyris.pl?enter=mgi-technical-list&amp;text_mode=0">MGI Developer's Forum</a> Mailing List
+	  </td>
+	 <tr>
+	</table>
+	</td></tr>
 	<tr><td>
 		<!-- section1 table -->
 		<a name="links">
@@ -86,7 +71,7 @@ Note that the list in each section is a definition list <dl> where the term
 			</tr>
 		</table>
 	</td></tr>
-	
+
 	   <tr><td>
         <!-- section1 table -->
         <a name="mgiws">
@@ -180,6 +165,7 @@ Note that the list in each section is a definition list <dl> where the term
 					  <li>The MGI Public Ad Hoc SQL Server is available for running custom SQL queries against the MGI database. </li>
 					  <li>MGI uses Sybase relational databases to store information.</li>
 					  <li>You must install client software that can connect to a Sybase data server in order to query the database.  You can use free clients such as JDBC (Java), ODBC (Windows) or SQuirreL SQL (<a href="http://squirrel-sql.sourceforge.net/">http://squirrel-sql.sourceforge.net/</a>).</li>
+					  <li>See our example <a href="<!--#include file='include/mgihome_url.html'-->/other/MGIConnect.txt">JDBC Client</a>. You can also use this to verify that your SQL account is active. </li>
 					</ul>
 
 
@@ -192,7 +178,7 @@ Note that the list in each section is a definition list <dl> where the term
 
 					<b><i>Login & Configuration</i></b>
 					<ul>
-					  <li>Contact <a href="<!--#include file='include/mgihome_url.html'-->support/tjl_inbox.shtml">MGI User Support</a> to request an SQL account.  You will receive you a login and password.</li>
+					  <li><a href="<!--#include file='include/mgihome_url.html'-->support/mgi_inbox.shtml">Contact User Support</a> to request an SQL account.  You will receive you a login and password.</li>
 					  <li>Configure requirements:</li>
 					   <ol>
 					  <li>A database connection client such as JDBC, ODBC, SQuirrel-SQL, etc.</li>
@@ -206,7 +192,7 @@ Note that the list in each section is a definition list <dl> where the term
 
 
 					<b><i>Custom SQL Reports from MGI</i></b>
-					<ul><li>Contact <a href="<!--#include file='include/mgihome_url.html'-->support/tjl_inbox.shtml">MGI User Support</a> for custom SQL queries if you prefer not to write them yourself.</li></ul>
+					<ul><li><a href="<!--#include file='include/mgihome_url.html'-->support/mgi_inbox.shtml">Contact User Support</a> for custom SQL queries if you prefer not to write them yourself.</li></ul>
 
 					</blockquote>
 				</td>

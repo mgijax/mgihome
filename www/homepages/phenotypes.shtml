@@ -1,24 +1,13 @@
 <!--#include file='include/templateHead.html'-->
   <title>MGI-Mouse Phenotypes, Alleles &amp; Disease Models</title>
 
-   <meta name="description" content="The Phenotypes/Alleles project in MGI enables access to spontaneous, induced, and genetically-engineered mutations and their strain-specific phenotypes." /> 
-
+  <meta name="description" content="The Phenotypes/Alleles project in MGI enables access to spontaneous, induced, and genetically-engineered mutations and their strain-specific phenotypes." /> 
   <meta name="keywords" content="MGI, mgi, mice, mouse, murine, mus musculus, genes, genome, genomic, alleles, mutations, phenotypes, disease models, transposon, knock-in, knock in, knock-out, knock out, targeted, targetted, transgene, transgenic, gene trap, induced, conditional targeting" />
+  
   <meta name="robots" content="NOODP" />
   <meta name="robots" content="NOYDIR" />
 
-<!------------- AJAX TABS CALLS -------------------------------------------------------->
-
-<link rel="stylesheet" type="text/css" href="<!--#include file='include/mgihome_url.html'-->homepages/ajaxtabs.css" />
-<script type="text/javascript" src="<!--#include file='include/mgihome_url.html'-->homepages/ajaxtabs.js">
-	/***********************************************
-	* Ajax Tabs Content script- © Dynamic Drive DHTML code library (www.dynamicdrive.com)
-	* This notice MUST stay intact for legal use
-	* Visit Dynamic Drive at http://www.dynamicdrive.com/ for full source code
-	***********************************************/
-</script>
-
-<link rel="stylesheet" type="text/css" href="<!--#include file='include/mgihome_url.html'-->homepages/minihome.css" />
+  <link rel="stylesheet" type="text/css" href="<!--#include file="include/stylesheet.html"-->" />
 
 <!--#include file='include/templateBodyStart.html'-->
 
@@ -191,6 +180,16 @@
 </td></tr>
 </div>
 </table>
+
+<!------------- AJAX TABS CALLS -------------------------------------------------------->
+
+<script type="text/javascript" src="<!--#include file="include/javascript.html"-->">">">
+    /***********************************************
+    * Ajax Tabs Content script- © Dynamic Drive DHTML code library (www.dynamicdrive.com)
+    * This notice MUST stay intact for legal use
+    * Visit Dynamic Drive at http://www.dynamicdrive.com/ for full source code
+    ***********************************************/
+</script>
 
 <script type="text/javascript">
 	var pad_box=new ddajaxtabs("padtab","padcontentarea")

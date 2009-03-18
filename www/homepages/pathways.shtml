@@ -1,26 +1,13 @@
 <!--#include file='include/templateHead.html'-->
 
   <title>MGI-Mouse Biochemical Pathways</title>
- <meta name="description" content="MouseCyc is a database of curated biochemical pathways data for the laboratory mouse that can be integrated with functional and phenotypic data from MGI." />
-
- <meta name="keywords" content="MGI, mgi, mice, mouse, murine, mus musculus, genes, genome, genomic, MouseCyc, biochemical pathways, metabolism, metabolic pathways, proteins, chemical compounds, biological networks, metabolites, enzymatic reactions, polypeptides, transporters, protein complexes" />
+  <meta name="description" content="MouseCyc is a database of curated biochemical pathways data for the laboratory mouse that can be integrated with functional and phenotypic data from MGI." />
+  <meta name="keywords" content="MGI, mgi, mice, mouse, murine, mus musculus, genes, genome, genomic, MouseCyc, biochemical pathways, metabolism, metabolic pathways, proteins, chemical compounds, biological networks, metabolites, enzymatic reactions, polypeptides, transporters, protein complexes" />
+  
   <meta name="robots" content="NOODP" />
   <meta name="robots" content="NOYDIR" />
-
-
-
-<!------------- AJAX TABS CALLS -------------------------------------------------------->
-
-<link rel="stylesheet" type="text/css" href="<!--#include file='include/mgihome_url.html'-->homepages/ajaxtabs.css" />
-<script type="text/javascript" src="<!--#include file='include/mgihome_url.html'-->homepages/ajaxtabs.js">
-	/***********************************************
-	* Ajax Tabs Content script- � Dynamic Drive DHTML code library (www.dynamicdrive.com)
-	* This notice MUST stay intact for legal use
-	* Visit Dynamic Drive at http://www.dynamicdrive.com/ for full source code
-	***********************************************/
-</script>
-
-<link rel="stylesheet" type="text/css" href="<!--#include file='include/mgihome_url.html'-->homepages/minihome.css" />
+  
+  <link rel="stylesheet" type="text/css" href="<!--#include file="include/stylesheet.html"-->" />
 
 <!--#include file='include/templateBodyStart.html'-->
 
@@ -181,6 +168,18 @@
 </td></tr>
 </div>
 </table>
+
+
+<!------------- AJAX TABS CALLS -------------------------------------------------------->
+
+<script type="text/javascript" src="<!--#include file="include/javascript.html"-->">">
+    /***********************************************
+    * Ajax Tabs Content script- � Dynamic Drive DHTML code library (www.dynamicdrive.com)
+    * This notice MUST stay intact for legal use
+    * Visit Dynamic Drive at http://www.dynamicdrive.com/ for full source code
+    ***********************************************/
+</script>
+
 
     <script type="text/javascript">
         var bio_box=new ddajaxtabs("biotab", "biocontentarea")

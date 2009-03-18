@@ -45,6 +45,13 @@ LIBDIRS     ${MGIHOME_PATH}lib/python/:${INSTALL_DIR}lib/python/
 #GEN_CGI_MAILTARGET    djd@informatics.jax.org
 GEN_CGI_MAILTARGET    gen@informatics.jax.org
 
+#----------------#
+#- CSS & JS     -#
+#----------------#
+# enable these if you want to overrids the minified files for a dev install
+#MGIHOME_JS_FILE     ajaxtabs.js
+#MGIHOME_CSS_FILE     homepages.css
+
 ###----------------------------------------------------------------------###
 ###--- parameters which will rarely change ------------------------------###
 ###----------------------------------------------------------------------###

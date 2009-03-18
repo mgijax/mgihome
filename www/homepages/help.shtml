@@ -9,19 +9,7 @@
   <meta name="robots" content="NOYDIR" />
 
 
-<link rel="stylesheet" type="text/css" href="homepage.css"/>
-
-
-
-<!------------- AJAX TABS CALLS -------------------------------------------------------->
-<link rel="stylesheet" type="text/css" href="ajaxtabs.css" />
-<script type="text/javascript" src="ajaxtabs.js">
-	/***********************************************
-	* Ajax Tabs Content script- © Dynamic Drive DHTML code library (www.dynamicdrive.com)
-	* This notice MUST stay intact for legal use
-	* Visit Dynamic Drive at http://www.dynamicdrive.com/ for full source code
-	***********************************************/
-</script>
+  <link rel="stylesheet" type="text/css" href="<!--#include file="include/stylesheet.html"-->"/>
 
 <!--#include file='include/templateBodyStart.html'-->
 
@@ -57,7 +45,7 @@
 			<tr >
 				<td>
 			    <p>Mouse Genome Informatics offers on-line help and staffs a help desk to answer your questions and comments. Please feel free to
-			    <a href="<!--#include file='include/mgihome_url.html'-->support/tjl_inbox.shtml" title="Contact user support">contact User Support</a>
+			    <a href="<!--#include file='include/mgihome_url.html'-->support/mgi_inbox.shtml" title="Contact user support">Contact User Support</a>
 			    for any of the following:
 			    <ul id="other">
 			        <li>You can't find the data you're looking for</li>
@@ -68,8 +56,7 @@
 			        <li>You have a complaint about or a suggestion for our website </li>
 			    </ul>
 		        <p>You can reach us by <a href="mailto:mgi-help@informatics.jax.org">email</a>, by submitting our
-		        <a href="<!--#include file='include/mgihome_url.html'-->support/tjl_inbox.shtml" title="Contact user support">Express Mail form</a>
-		        , or at (207) 288-6445.</p>
+		        <a href="<!--#include file='include/mgihome_url.html'-->support/mgi_inbox.shtml" title="Contact user support">Contact User Support</a> form, or at (207) 288-6445.</p>
 				</td>
 			</tr>
 		</table>
@@ -102,12 +89,7 @@
 						<!--#include file='tabContents/Help_Documentation.shtml'-->
 					</div>
 				</td>
-				<script type="text/javascript">
-					var box2=new ddajaxtabs("maintab6", "helparea")
-					box2.setpersist(true)
-					box2.setselectedClassTarget("linkparent") //"link" or "linkparent"
-					box2.init()
-				</script>
+
 			</tr>
 		</table>
 	</td></tr>
@@ -133,12 +115,7 @@
 					<div id="policyarea" class="contentstyle">
 						<!--#include file='tabContents/GXD_Curators.shtml'-->
 					</div>
-					<script type="text/javascript">
-						var box3=new ddajaxtabs("maintab7", "policyarea")
-						box3.setpersist(true)
-						box3.setselectedClassTarget("linkparent") //"link" or "linkparent"
-						box3.init()
-					</script>
+
 				</td>
 			</tr>
 		</table>
@@ -146,6 +123,29 @@
 	</td></tr>
 
 </table>
+
+<!------------- AJAX TABS CALLS -------------------------------------------------------->
+<script type="text/javascript" src="<!--#include file="include/javascript.html"-->">">
+    /***********************************************
+    * Ajax Tabs Content script- © Dynamic Drive DHTML code library (www.dynamicdrive.com)
+    * This notice MUST stay intact for legal use
+    * Visit Dynamic Drive at http://www.dynamicdrive.com/ for full source code
+    ***********************************************/
+</script>
+
+<script type="text/javascript">
+	var box3=new ddajaxtabs("maintab7", "policyarea")
+	box3.setpersist(true)
+	box3.setselectedClassTarget("linkparent") //"link" or "linkparent"
+	box3.init()
+</script>
+                    
+<script type="text/javascript">
+	var box2=new ddajaxtabs("maintab6", "helparea")
+	box2.setpersist(true)
+	box2.setselectedClassTarget("linkparent") //"link" or "linkparent"
+	box2.init()
+</script>
 
 <!-- start stop include -->
 <!--#include file='include/templateBodyStop.html'-->

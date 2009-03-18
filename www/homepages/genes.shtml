@@ -7,31 +7,8 @@
 
   <meta name="robots" content="NOODP" />
   <meta name="robots" content="NOYDIR" />
-
-
-
-<!------------- AJAX TABS CALLS -------------------------------------------------------->
-
-<link rel="stylesheet" type="text/css" href="<!--#include file='include/mgihome_url.html'-->homepages/ajaxtabs.css" />
-<script type="text/javascript" src="<!--#include file='include/mgihome_url.html'-->homepages/ajaxtabs.js">
-	/***********************************************
-	* Ajax Tabs Content script- © Dynamic Drive DHTML code library (www.dynamicdrive.com)
-	* This notice MUST stay intact for legal use
-	* Visit Dynamic Drive at http://www.dynamicdrive.com/ for full source code
-	***********************************************/
-</script>
-
-<script language="JavaScript">
-    function Toggle_GOimages(id) {
-        var div = document.getElementById(id);
-        if (div==null) {
-            return; }
-        var bExpand = div.style.display == '';
-        div.style.display = (bExpand ? 'none' : '');
-    }
-</script>
-
-<link rel="stylesheet" type="text/css" href="<!--#include file='include/mgihome_url.html'-->homepages/minihome.css" />
+  
+  <link rel="stylesheet" type="text/css" href="<!--#include file="include/stylesheet.html"-->" />
 
 <!--#include file='include/templateBodyStart.html'-->
 
@@ -212,11 +189,31 @@
 </div>
 </table>
 
+<!------------- AJAX TABS CALLS -------------------------------------------------------->
+
+<script type="text/javascript" src="<!--#include file="include/javascript.html"-->">">
+    /***********************************************
+    * Ajax Tabs Content script- © Dynamic Drive DHTML code library (www.dynamicdrive.com)
+    * This notice MUST stay intact for legal use
+    * Visit Dynamic Drive at http://www.dynamicdrive.com/ for full source code
+    ***********************************************/
+</script>
+
 <script type="text/javascript">
     var gene_box=new ddajaxtabs("genetab", "genecontentarea")
     gene_box.setpersist(true)
     gene_box.setselectedClassTarget("linkparent") //"link" or "linkparent"
     gene_box.init()
+</script>
+
+<script language="JavaScript">
+    function Toggle_GOimages(id) {
+        var div = document.getElementById(id);
+        if (div==null) {
+            return; }
+        var bExpand = div.style.display == '';
+        div.style.display = (bExpand ? 'none' : '');
+    }
 </script>
 
 <!--#include file='include/templateBodyStop.html'-->
