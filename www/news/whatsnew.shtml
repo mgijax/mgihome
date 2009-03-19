@@ -43,11 +43,15 @@
 <P>
 <h4><a name="march_2009"></a>March 26, 2009: MGI announces the following enhancements for release 4.21:</h4>
  <blockquote>
-  <ul><li>The <a href="<!--#include file='include/java_url.html'-->WIFetch?page=batchQF">MGI Batch Query</a> now returns assay results from references in the Gene Expression Database. Enter a list of genes and click <b>Gene Expression</b> (under <b>Additional Information</b> to see details (e.g., nomenclature, anatomical structure, Theiler stage, number of assay results, whether expression was detected or not) and links to additional data.</li><br>
+  <ul><li>The <a href="<!--#include file='include/java_url.html'-->WIFetch?page=batchQF">MGI Batch Query</a> now returns expression results from the Gene Expression Database. Enter a list of genes and click <b>Gene Expression</b> (under <b>Additional Information</b>).</li><br>
 
-<li>The <a href="<!--#include file='include/java_url.html'-->WIFetch?page=batchQF">MGI Batch Query</a> also returns microarray probe data. As an example, you could enter a list of  up- or down-regulated probes from a microarray experiment to find the genes associated with those probes. </li><br>
+<li>The <a href="<!--#include file='include/java_url.html'-->WIFetch?page=batchQF">MGI Batch Query</a> now accepts microarray probeset IDs. As an example, you could enter a list of  up- or down-regulated probes from a microarray experiment and get a variety of MGI data for these genes (Gene Ontology, Phenotypes, etc.). </li><br>
 
-<li> The MGI gene detail pages now include links to microarray probes from Affymetrix gene chips identifying a set of MGI genes (for example see the <a href="ftp://devftp.informatics.jax.org/pub/reports/Affy_1.0_ST_mgi.rpt">Affymetrix Mouse Gene 1.0 ST Array</a>)</li><br>
+<li>Each MGI gene detail page now has a link to all probe detail sets for that gene. As an example, see 
+<a href="<!--#include file='include/java_url.html'-->WIFetch?page=AffySummary&key=8781">Fgf4</a>.</li><br>
+
+<li>If you want to download <b>all</b> probeset to gene associations, see 
+<a href="<!--#include file='include/ftp_url2.html'-->pub/reports/index.html#expression">MGI Data and Statistical Reports</a>.</li><br>
 
 <li>There is a new evidence code under <a href="<!--#include file='include/userdocs_url.html'-->go_classifications.shtml">Gene Ontology (GO) Classifications</a>: EXP, Inferred from experiment.</li><br>
 
