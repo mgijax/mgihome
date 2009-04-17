@@ -8,159 +8,250 @@
   <span class="titleBarMainTitle">Mouse Facts</span>
   </div> 
 <!--titleBar-->
+<!-- main body table -->
+<table width="75%" cellpadding="2" align="center">
+ <tr><td>
+ <!-- TOC table -->
+      <table class="toc" width="100%">
+	<tr><td>
+            <ul>
+               <!--<li><a href="#intro">Introduction</a> |</li>-->
+               <li><a href="#genome_length">Mouse Genome Length Estimates</a></li> | 
+               <li><a href="#chromosomal_size">Mouse Chromosomal Size</a></li> | 
+               <li><a href="#codon_usage">Codon Usage</a></li> |
+       	       <li><a href="#physiology">Mouse Physiology</a></li>
+            </td>
+         </tr>
 
+        </table>
+    <!-- end TOC table -->
 
-<p>The "laboratory mouse" originated from a mixture of <i>M. m. domesticus</i>, <i>M. m. musculus</i>, and <i>M. m. molossius</i> subspecies. An inbred strain of the laboratory
+	</td></tr>
+
+	<tr><td>
+
+<!-- section1 table -->
+   <a name="intro"></a>
+<table class="outline" width="100%">
+			<tr>
+				<td class="enhance">
+				
+				</td>
+			</tr>
+			<tr>
+
+				<td>
+					<dl class="linkedList">
+			            	<dt>The "laboratory mouse" originated from a mixture of <i>M. m. domesticus</i>, <i>M. m. musculus</i>, and <i>M. m. molossius</i> subspecies. An inbred strain of the laboratory
  mouse is defined as a strain that has been brother/sister mated for 20
  or more consecutive generations and can be traced to a single ancestral
  pair. For further information  about inbred strains of mice see 
-<a href="<!--#include file='include/homepages_url.html'-->strains_SNPs.shtml">Strains, SNPs and Polymorphisms</a>.</p>
-
-<p>On the Mouse Facts pages, you will find information on these topics:
-
-<ul>
-<A HREF="#GenomeLen">Mouse Genome Length Estimates</A><BR>
-<A HREF="#MGDStats">Mouse Chromosomal Size </A><BR>
-<A HREF="#CodonUsage">Codon Usage</A><BR>
-<A HREF="#physiology">Mouse Physiology</A><BR>
- </ul>
-</P>
-
-<h3><A NAME="GenomeLen">Mouse Genome Length Estimates</A></h3>
-<table BORDER=1 cellpadding=2 cellspacing=0>
-<tr>
-<td valign=top><a href="http://www.ensembl.org/Mus_musculus/index.html">2,716,965,481</a> bp</td>
-<td valign=top>Reference assembly (C57BL/6J, "golden path") length: the sum of non-redundant top level sequence regions <A HREF="<!--#include file="include/wi_url.html"-->searches/reference.cgi?81468">(J:80507).</a></td></tr>
-
-<tr><td valign=top>2.5 x 10<sup>9</sup> bp</td>
-<td valign=top>Mouse Genome Sequencing Consortium. 2002. Initial sequencing and comparative analysis of the mouse genome. Nature 420: 520-562.</td></tr>
-
-
-<tr>
-<td valign=top>1355.5 cM</td>
-<td valign=top>BSS and BSB crosses: Rowe LB; Barter ME; Kelmenson JA; Eppig J. 2003. Genome Res 13(1):122-33
-(<A HREF="<!--#include file="include/wi_url.html"-->searches/reference.cgi?82396">J:81431</a>).
- </td>
-</tr>
-
-<tr>
-<td valign=top>1450 cM</td>
-<td valign=top>Copeland, NG, et al. 1993. Science 62:57-66. (<A HREF="<!--#include file="include/wi_url.html"-->searches/accession_report.cgi?id=J:14384">J:14384</A>).</td>
-</tr>
-
-
-
-<tr><td valign=top>1360.9 cM</td>
-<td valign=top>Dietrich, WF et al. 1996. Nature Mar 14:380(6570)149-52 (<A HREF="<!--#include file="include/wi_url.html"-->searches/accession_report.cgi?id=J:34212"> J:34212</A>).</td>
-</tr>
-
+<a href="<!--#include file='include/homepages_url.html'-->strains_SNPs.shtml">Strains, SNPs and Polymorphisms</a>.
+</dt>
+</dl>
+				</td>
+			</tr>
 </table>
+ <!--end of section1 table -->
 
+	</td></tr>
 
-<H3><A NAME="MGDStats"></a>Mouse Chromosomal Size</H3>
+        <tr><td>
+<!-- section2 table -->
+		<a name="genome_length"></a>
+<table class="outline" width="100%">
 
-<p><font size="-1">Mapped Length represents the (MGI) estimated cM position of the most distally placed locus on that chromosome.<br>
-Total Estimated Size omits centromeres and telomeres which would add, on average, ~8 Mb per chromosome or ~160 Mb to the genome. It also omits uncaptured gaps between supercontigs.</font>
-</p>
-<TABLE BORDER="1" CELLPADDING="2">
+			<tr>
+				<td class="enhance">
+					Mouse Genome Length Estimates
+				</td>
+			</tr>
+			<tr >
+				<td>
+					<dl class="linkedList">
+					<dt></dt>
+			            	<dd><table BORDER=1 cellpadding=2 cellspacing=0>
+                                              <tr>
+                                              <td valign=top><a href="http://www.ensembl.org/Mus_musculus/index.html">2,716,965,481</a> bp</td>
+                                              <td valign=top>Reference assembly (C57BL/6J, "golden path") length: the sum of non-redundant top level sequence regions <A HREF="<!--#include file="include/wi_url.html"-->searches/reference.cgi?81468">(J:80507).</a></td></tr>
+                                              <tr><td valign=top>2.5 x 10<sup>9</sup> bp</td>
+                                              <td valign=top>Mouse Genome Sequencing Consortium. 2002. Initial sequencing and comparative analysis of the mouse genome. Nature 420: 520-562.</td></tr>
+                                              <tr>
+                                              <td valign=top>1355.5 cM</td>
+                                              <td valign=top>BSS and BSB crosses: Rowe LB; Barter ME; Kelmenson JA; Eppig J. 2003. Genome Res 13(1):122-33
+                                              (<A HREF="<!--#include file="include/wi_url.html"-->searches/reference.cgi?82396">J:81431</a>).
+                                               </td>
+                                              </tr>
+                                              <tr>
+                                              <td valign=top>1450 cM</td>
+                                              <td valign=top>Copeland, NG, et al. 1993. Science 62:57-66. (<A HREF="<!--#include file="include/wi_url.html"-->searches/accession_report.cgi?id=J:14384">J:14384</A>).</td>
+                                              </tr>
+                                              <tr><td valign=top>1360.9 cM</td>
+                                              <td valign=top>Dietrich, WF et al. 1996. Nature Mar 14:380(6570)149-52 (<A HREF="<!--#include file="include/wi_url.html"-->searches/accession_report.cgi?id=J:34212"> J:34212</A>).</td>
+                                              </tr>
 
-<TR><TH><FONT SIZE="-1">Chromosome</FONT></TH><TH><FONT SIZE="-1">Mapped <br>Length (cM)</FONT></TH><TH><FONT SIZE="-1">Total  Estimated  Size (M bp)<br>(NCBI build 37)</FONT></TH></TR>
-<TR><td align="center" valign="top"><font size="-1">1</font></TD><td align="center" valign="top"><font size="-1">112.0&nbsp;&nbsp;</font></TD><td align="center" valign="top"><a href="http://www.ncbi.nlm.nih.gov/mapview/maps.cgi?taxid=10090&chr=1"><font size="-1">197</font></a></TD></TR>
-<TR><td align="center" valign="top"><font size="-1">2</font></TD><td align="center" valign="top"><font size="-1">114.0&nbsp;&nbsp;</font></TD><td align="center" valign="top"><a href="http://www.ncbi.nlm.nih.gov/mapview/maps.cgi?taxid=10090&chr=2"><font size="-1">182</font></a></TD></TR>
-<TR><td align="center" valign="top"><font size="-1">3</TD><td align="center" valign="top"><font size="-1">95.0</TD><td align="center" valign="top"><a href="http://www.ncbi.nlm.nih.gov/mapview/maps.cgi?taxid=10090&chr=3"><font size="-1">160</a></TD></TR>
-<TR><td align="center" valign="top"><font size="-1">4</TD><td align="center" valign="top"><font size="-1">84.0</TD><td align="center" valign="top"><a href="http://www.ncbi.nlm.nih.gov/mapview/maps.cgi?taxid=10090&chr=4"><font size="-1">156</a></TD></TR>
-<TR><td align="center" valign="top"><font size="-1">5</TD><td align="center" valign="top"><font size="-1">92.0</TD><td align="center" valign="top"><a href="http://www.ncbi.nlm.nih.gov/mapview/maps.cgi?taxid=10090&chr=5"><font size="-1">153</a></TD></TR>
-<TR><td align="center" valign="top"><font size="-1">6</TD><td align="center" valign="top"><font size="-1">75.0</TD><td align="center" valign="top"><a href="http://www.ncbi.nlm.nih.gov/mapview/maps.cgi?taxid=10090&chr=6"><font size="-1">150</a></TD></TR>
-<TR><td align="center" valign="top"><font size="-1">7</TD><td align="center" valign="top"><font size="-1">74.0</TD><td align="center" valign="top"><a href="http://www.ncbi.nlm.nih.gov/mapview/maps.cgi?taxid=10090&chr=7"><font size="-1">153</a></TD></TR>
-<TR><td align="center" valign="top"><font size="-1">8</TD><td align="center" valign="top"><font size="-1">82.0</TD><td align="center" valign="top"><a href="http://www.ncbi.nlm.nih.gov/mapview/maps.cgi?taxid=10090&chr=8"><font size="-1">132</a></TD></TR>
-<TR><td align="center" valign="top"><font size="-1">9</TD><td align="center" valign="top"><font size="-1">79.0</TD><td align="center" valign="top"><a href="http://www.ncbi.nlm.nih.gov/mapview/maps.cgi?taxid=10090&chr=9"><font size="-1">124</a></TD></TR>
-<TR><td align="center" valign="top"><font size="-1">10</TD><td align="center" valign="top"><font size="-1">82.0</TD><td align="center" valign="top"><a href="http://www.ncbi.nlm.nih.gov/mapview/maps.cgi?taxid=10090&chr=10"><font size="-1">130</a></TD></TR>
-<TR><td align="center" valign="top"><font size="-1">11</TD><td align="center" valign="top"><font size="-1">104.0&nbsp;&nbsp;</TD><td align="center" valign="top"><a href="http://www.ncbi.nlm.nih.gov/mapview/maps.cgi?taxid=10090&chr=11"><font size="-1">122</a></TD></TR>
-<TR><td align="center" valign="top"><font size="-1">12</TD><td align="center" valign="top"><font size="-1">66.0</TD><td align="center" valign="top"><a href="http://www.ncbi.nlm.nih.gov/mapview/maps.cgi?taxid=10090&chr=12"><font size="-1">121</a></TD></TR>
-<TR><td align="center" valign="top"><font size="-1">13</TD><td align="center" valign="top"><font size="-1">80.0</TD><td align="center" valign="top"><a href="http://www.ncbi.nlm.nih.gov/mapview/maps.cgi?taxid=10090&chr=13"><font size="-1">120</a></TD></TR>
-<TR><td align="center" valign="top"><font size="-1">14</TD><td align="center" valign="top"><font size="-1">69.0</TD><td align="center" valign="top"><a href="http://www.ncbi.nlm.nih.gov/mapview/maps.cgi?taxid=10090&chr=14"><font size="-1">125</a></TD></TR>
+					    </table>
+                                          </dd>
 
-<TR><td align="center" valign="top"><font size="-1">15</TD><td align="center" valign="top"><font size="-1">74.6</font></TD>
-<td align="center" valign="top"><a href="http://www.ncbi.nlm.nih.gov/mapview/maps.cgi?taxid=10090&chr=15"><font size="-1">103</a></TD></TR>
-<TR><td align="center" valign="top"><font size="-1">16</TD><td align="center" valign="top"><font size="-1">72.0</TD><td align="center" valign="top">&nbsp;&nbsp;<a href="http://www.ncbi.nlm.nih.gov/mapview/maps.cgi?TAXID=10090&MAPS=assembly,cntg-r,ugMm,genes&CHR=16"><font size="-1">98</a></TD></TR>
-<TR><td align="center" valign="top"><font size="-1">17</TD><td align="center" valign="top"><font size="-1">58.0</TD><td align="center" valign="top">&nbsp;&nbsp;<a href="http://www.ncbi.nlm.nih.gov/mapview/maps.cgi?taxid=10090&chr=17"><font size="-1">95</a></TD></TR>
-<TR><td align="center" valign="top"><font size="-1">18</TD><td align="center" valign="top"><font size="-1">59.0</TD><td align="center" valign="top">&nbsp;&nbsp;<a href="http://www.ncbi.nlm.nih.gov/mapview/maps.cgi?taxid=10090&chr=18"><font size="-1">91</a></TD></TR>
+			</dl>
+				</td>
+			</tr>
+</table>
+ <!--end of section1 table -->
 
+	</td></tr>
 
-<TR><td align="center" valign="top"><font size="-1">19</TD><td align="center" valign="top"><font size="-1">57.0</TD><td align="center" valign="top">&nbsp;&nbsp;<a href="http://www.ncbi.nlm.nih.gov/mapview/maps.cgi?taxid=10090&chr=19"><font size="-1">61</a></TD></TR>
+        <tr><td>
+<!-- section2 table -->
+		<a name="chromosomal_size"></a>
+<table class="outline" width="100%">
+			<tr>
+			<td class="enhance">Mouse Chromosomal Size</td>
+			</tr>
+			<tr>
+			<td>
+			<dl class="linkedList">
+					<dt><font size="-1">Mapped Length represents the (MGI) estimated cM position of the most distally placed locus on that chromosome. Total Estimated Size omits centromeres and telomeres which would add, on average, ~8 Mb per chromosome or ~160 Mb to the genome. It also omits uncaptured gaps between supercontigs.</font>
+					</dt>
+					<dd><blockquote>
+<table border="1" cellpadding="2">
 
-
-<TR><td align="center" valign="top"><font size="-1">X</TD><td align="center" valign="top"><font size="-1">&nbsp;&nbsp;&nbsp;</TD><td align="center" valign="top"><a href="http://www.ncbi.nlm.nih.gov/mapview/maps.cgi?taxid=10090&chr=x"><font size="-1">nda</a> </TD></TR>
-
-<TR><td align="center" valign="top"><font size="-1">Y</TD><td align="center" valign="top"><font size="-1">&nbsp;</TD><td align="center" valign="top"><a href="http://www.ncbi.nlm.nih.gov/mapview/maps.cgi?taxid=10090&chr=y"><font size="-1">nda</a></TD></TR>
-
-<TR><td align="center" valign="top"><font size="-1">MT</TD><td align="center" valign="top"><font size="-1">&nbsp;</TD><td align="center" valign="top"><a href="http://www.ncbi.nlm.nih.gov/mapview/maps.cgi?taxid=10090&chr=mt"><font size="-1">nda</a></TD></TR>
-<TR><TD BGCOLOR="#EEEEEE"><font size="-1">Total:</TD><TD BGCOLOR="#EEEEEE"><font size="-1">&nbsp;&nbsp;&nbsp;&nbsp;1528.6</TD>
-<TD align="center" BGCOLOR="#EEEEEE"><font size="-1">2473</font></TD></TR>
+<tr><th><font size="-1">Chromosome</font></th><th><font size="-1">Mapped <br>Length (cM)</font></th><th><font size="-1">Total  Estimated  Size (M bp)<br>(NCBI build 37)</font></th></tr>
+<tr><td align="center" valign="top"><font size="-1">1</font></td><td align="center" valign="top"><font size="-1">112.0&nbsp;&nbsp;</font></td><td align="center" valign="top"><a href="http://www.ncbi.nlm.nih.gov/mapview/maps.cgi?taxid=10090&chr=1"><font size="-1">197</font></a></td></tr>
+<tr><td align="center" valign="top"><font size="-1">2</font></td><td align="center" valign="top"><font size="-1">114.0&nbsp;&nbsp;</font></td><td align="center" valign="top"><a href="http://www.ncbi.nlm.nih.gov/mapview/maps.cgi?taxid=10090&chr=2"><font size="-1">182</font></a></td></tr>
+<tr><td align="center" valign="top"><font size="-1">3</td><td align="center" valign="top"><font size="-1">95.0</td><td align="center" valign="top"><a href="http://www.ncbi.nlm.nih.gov/mapview/maps.cgi?taxid=10090&chr=3"><font size="-1">160</a></td></tr>
+<tr><td align="center" valign="top"><font size="-1">4</td><td align="center" valign="top"><font size="-1">84.0</td><td align="center" valign="top"><a href="http://www.ncbi.nlm.nih.gov/mapview/maps.cgi?taxid=10090&chr=4"><font size="-1">156</a></td></tr>
+<tr><td align="center" valign="top"><font size="-1">5</td><td align="center" valign="top"><font size="-1">92.0</td><td align="center" valign="top"><a href="http://www.ncbi.nlm.nih.gov/mapview/maps.cgi?taxid=10090&chr=5"><font size="-1">153</a></td></tr>
+<tr><td align="center" valign="top"><font size="-1">6</td><td align="center" valign="top"><font size="-1">75.0</td><td align="center" valign="top"><a href="http://www.ncbi.nlm.nih.gov/mapview/maps.cgi?taxid=10090&chr=6"><font size="-1">150</a></td></tr>
+<tr><td align="center" valign="top"><font size="-1">7</td><td align="center" valign="top"><font size="-1">74.0</td><td align="center" valign="top"><a href="http://www.ncbi.nlm.nih.gov/mapview/maps.cgi?taxid=10090&chr=7"><font size="-1">153</a></td></tr>
+<tr><td align="center" valign="top"><font size="-1">8</td><td align="center" valign="top"><font size="-1">82.0</td><td align="center" valign="top"><a href="http://www.ncbi.nlm.nih.gov/mapview/maps.cgi?taxid=10090&chr=8"><font size="-1">132</a></td></tr>
+<tr><td align="center" valign="top"><font size="-1">9</td><td align="center" valign="top"><font size="-1">79.0</td><td align="center" valign="top"><a href="http://www.ncbi.nlm.nih.gov/mapview/maps.cgi?taxid=10090&chr=9"><font size="-1">124</a></td></tr>
+<tr><td align="center" valign="top"><font size="-1">10</td><td align="center" valign="top"><font size="-1">82.0</td><td align="center" valign="top"><a href="http://www.ncbi.nlm.nih.gov/mapview/maps.cgi?taxid=10090&chr=10"><font size="-1">130</a></td></tr>
+<tr><td align="center" valign="top"><font size="-1">11</td><td align="center" valign="top"><font size="-1">104.0&nbsp;&nbsp;</td><td align="center" valign="top"><a href="http://www.ncbi.nlm.nih.gov/mapview/maps.cgi?taxid=10090&chr=11"><font size="-1">122</a></td></tr>
+<tr><td align="center" valign="top"><font size="-1">12</td><td align="center" valign="top"><font size="-1">66.0</td><td align="center" valign="top"><a href="http://www.ncbi.nlm.nih.gov/mapview/maps.cgi?taxid=10090&chr=12"><font size="-1">121</a></td></tr>
+<tr><td align="center" valign="top"><font size="-1">13</td><td align="center" valign="top"><font size="-1">80.0</td><td align="center" valign="top"><a href="http://www.ncbi.nlm.nih.gov/mapview/maps.cgi?taxid=10090&chr=13"><font size="-1">120</a></td></tr>
+<tr><td align="center" valign="top"><font size="-1">14</td><td align="center" valign="top"><font size="-1">69.0</td><td align="center" valign="top"><a href="http://www.ncbi.nlm.nih.gov/mapview/maps.cgi?taxid=10090&chr=14"><font size="-1">125</a></td></tr>
+<tr><td align="center" valign="top"><font size="-1">15</td><td align="center" valign="top"><font size="-1">74.6</font></td>
+<td align="center" valign="top"><a href="http://www.ncbi.nlm.nih.gov/mapview/maps.cgi?taxid=10090&chr=15"><font size="-1">103</a></td></tr>
+<tr><td align="center" valign="top"><font size="-1">16</td><td align="center" valign="top"><font size="-1">72.0</td><td align="center" valign="top">&nbsp;&nbsp;<a href="http://www.ncbi.nlm.nih.gov/mapview/maps.cgi?TAXID=10090&MAPS=assembly,cntg-r,ugMm,genes&CHR=16"><font size="-1">98</a></td></tr>
+<tr><td align="center" valign="top"><font size="-1">17</td><td align="center" valign="top"><font size="-1">58.0</td><td align="center" valign="top">&nbsp;&nbsp;<a href="http://www.ncbi.nlm.nih.gov/mapview/maps.cgi?taxid=10090&chr=17"><font size="-1">95</a></td></tr>
+<tr><td align="center" valign="top"><font size="-1">18</td><td align="center" valign="top"><font size="-1">59.0</td><td align="center" valign="top">&nbsp;&nbsp;<a href="http://www.ncbi.nlm.nih.gov/mapview/maps.cgi?taxid=10090&chr=18"><font size="-1">91</a></td></tr>
+<tr><td align="center" valign="top"><font size="-1">19</td><td align="center" valign="top"><font size="-1">57.0</td><td align="center" valign="top">&nbsp;&nbsp;<a href="http://www.ncbi.nlm.nih.gov/mapview/maps.cgi?taxid=10090&chr=19"><font size="-1">61</a></td></tr>
+<tr><td align="center" valign="top"><font size="-1">X</td><td align="center" valign="top"><font size="-1">&nbsp;&nbsp;&nbsp;</td><td align="center" valign="top"><a href="http://www.ncbi.nlm.nih.gov/mapview/maps.cgi?taxid=10090&chr=x"><font size="-1">nda</a> </td></tr>
+<tr><td align="center" valign="top"><font size="-1">Y</td><td align="center" valign="top"><font size="-1">&nbsp;</td><td align="center" valign="top"><a href="http://www.ncbi.nlm.nih.gov/mapview/maps.cgi?taxid=10090&chr=y"><font size="-1">nda</a></td></tr>
+<tr><td align="center" valign="top"><font size="-1">MT</td><td align="center" valign="top"><font size="-1">&nbsp;</td><td align="center" valign="top"><a href="http://www.ncbi.nlm.nih.gov/mapview/maps.cgi?taxid=10090&chr=mt"><font size="-1">nda</a></td></tr>
+<tr><td bgcolor="#EEEEEE"><font size="-1">Total:</td><td bgcolor="#EEEEEE"><font size="-1">&nbsp;&nbsp;&nbsp;&nbsp;1528.6</td>
+<td align="center" bgcolor="#EEEEEE"><font size="-1">2473</font></td></tr>
+<tr><td colspan="3" align="right">nda = No data available</td></tr>
 </table>
 </td>
-</TABLE>
-<p>nda = No data available.
-<hr WIDTH="100%">
-<h3><A NAME="CodonUsage">Codon Usage</A></h3>
-<UL>
-<a href="http://www.kazusa.or.jp/codon/current">CUTG:
+</table>
+</BLOCKQUOTE>
+
+
+				</dd>
+				</dl>
+
+				</td>
+
+ <!--end of section2 table -->
+
+	</td></tr>
+
+        <tr><td>
+<!-- section3 table -->
+		<a name="codon_usage"></a>
+<table class="outline" width="100%">
+
+			<tr>
+				<td class="enhance">
+					Codon Usage
+				</td>
+			</tr>
+			<tr >
+				<td>
+					<dl class="linkedList">
+					<dt></dt>
+					<dd><a href="http://www.kazusa.or.jp/codon/current">CUTG:
 Codon Usage Tabulated from Genbank</a>
-</ul>
-</p>
-<hr>
-<h3><a NAME="physiology"></a>Mouse Physiology</h3>
+ 				</dd>
+				</dl>
+			</td>
+		</tr>
+</table>
+ <!--end of section3 table -->
 
-<p>The estimates below are based on information in <a href="<!--#include file='include/greenbook_url.html'-->"><i>Biology
-of the Laboratory Mouse</i></a> (the Staff of The Jackson Laboratory, E. Green, ed. 1966, Dover Publications, New York)  and in the <A HREF="http://phenome.jax.org/pub-cgi/phenome/mpdcgi?rtn=docs/home">Mouse Phenome Database (MPD)</A> at the Jackson Laboratory.<P>
-<STRONG>Note:</STRONG> Strain variation can affect these values significantly.
+	</td></tr>
 
-<p><b>General</b>
-<BLOCKQUOTE>
-<b>Body weight:</b> average ~20 g; highly variable<br>
-<a href="http://jaxmice.jax.org/library/notes/457a.html">Animal Resources Body Weight Study of 1993</a> (growth charts for selected strains) <br>
-Mouse Phenome Database: <a href="http://phenome.jax.org/pub-cgi/phenome/mpdcgi?rtn=meas/catlister&req=Cbody+weight">body weight</a><br>
-<b>Body Temperature:</b> ~36.9 C (in addition to strain, variables are age, sex, environmental conditions)
-<br><b>Lifespan:</b> 1.3 - 3 years; highly variable
-</BLOCKQUOTE>
+        <tr><td>
+<!-- section2 table -->
+		<a name="physiology"></a>
+<table class="outline" width="100%">
 
-<p><b>Reproduction</b>
-<BLOCKQUOTE>
-<b>Sexual maturity: </b>after ~4 weeks of age; highly variable
-<br><b>Estrus cycle frequency:</b> every ~4-5 days
-<br><b>Gestation:</b> Average 19-21 days
-<br><b>Litter size:</b> usually 1-10 pups - highly variable due to genetic
-and environmental factors; tends to increase for the first few litters,
-then decrease with age
-<br><b>Reproductive lifespan of a female:</b> approaches 2 years in some
-strains<br>
-<b>Lactation:</b> duration ~4 weeks<br>
-Mouse Phenome Database: <A HREF="http://phenome.jax.org/pub-cgi/phenome/mpdcgi?rtn=meas/catlister&req=Creproductionqqqperformance">reproductive performance</A>
-</BLOCKQUOTE>
-
-<b>Circulation</b>
-<BLOCKQUOTE>
-<b>Total serum protein:</b> ~4-7 g/100 ml<br>
-<b>Blood volume:</b> ~5.5 ml per 100 g body weight<br>
-<b>Heart rate:</b> Adult: 632 +/- 51.3 beats per minute; Newborn: 286 +/- 56.8 beats per minute<br>
-Mouse Phenome Database: <A HREF="http://phenome.jax.org/pub-cgi/phenome/mpdcgi?rtn=meas/catlister&req=Ccardiovascular">cardiovascular</A><br>
-<b>Systolic pressure:</b> 83-164 mm Hg<br>
-<b>Blood pH:</b> 7.3-7.4<br>
-Mouse Phenome Database: <A HREF="http://phenome.jax.org/pub-cgi/phenome/mpdcgi?rtn=meas/catlister&req=Cblood+chemistryqqqmiscellaneous">pH</a>, <a href="http://phenome.jax.org/pub-cgi/phenome/mpdcgi?rtn=meas/catlister&req=Cblood+chemistry">blood chemistry</a>
-</BLOCKQUOTE>
-
-<b>Respiration</b>
-<BLOCKQUOTE>
-<b>Respiratory rate:</b> ~163 per minute<br>
-Mouse Phenome Database:  <A HREF="http://phenome.jax.org/pub-cgi/phenome/mpdcgi?rtn=meas/catlister&req=Crespiratory">respiratory function</A><br>
-<b>Tidal volume:</b> ~0.15 ml<BR>
-</BLOCKQUOTE>
-
-<p><b>Urinary Tract</b>
-<BLOCKQUOTE>
-<b>Average urine output:</b> ~1.6 ml per 24 hr<br>
-<b>Average water intake:</b> ~ 5 ml per 24 hr<br>
-</BLOCKQUOTE>
+			<tr>
+				<td class="enhance">
+					Mouse Physiology
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<dl class="linkedList">
+					<dt>The estimates below are based on information in <a href="<!--#include file='include/greenbook_url.html'-->"><i>Biology
+of the Laboratory Mouse</i></a> (the Staff of The Jackson Laboratory, E. Green, ed. 1966, Dover Publications, New York)  and in the <A HREF="http://phenome.jax.org/pub-cgi/phenome/mpdcgi?rtn=docs/home">Mouse Phenome Database (MPD)</A> at the Jackson Laboratory.</dt>
+					<dd><STRONG>Note:</STRONG> Strain variation can affect these values significantly.</dd>
+					<dt><b>General</b></dt>
+					<dd><b>Body weight:</b> average ~20 g; highly variable</dd>
+					<dd><a href="http://jaxmice.jax.org/library/notes/457a.html">Animal Resources Body Weight Study of 1993</a> (growth charts for selected strains) </dd>
+					<dd>Mouse Phenome Database: <a href="http://phenome.jax.org/pub-cgi/phenome/mpdcgi?rtn=meas/catlister&req=Cbody+weight">body weight</a></dd>
+					<dd><b>Body Temperature:</b> ~36.9 C (in addition to strain, variables are age, sex, environmental conditions)</dd>
+					<dd><b>Lifespan:</b> 1.3 - 3 years; highly variable</dd>
 
 
+					<dt><b>Reproduction</b></dt>
+					<dd><b>Sexual maturity: </b>after ~4 weeks of age; highly variable</dd>
+					<dd><b>Estrus cycle frequency:</b> every ~4-5 days</dd>
+					<dd><b>Gestation:</b> Average 19-21 days</dd>
+					<dd><b>Litter size:</b> usually 1-10 pups - highly variable due to genetic
+and environmental factors; tends to increase for the first few litters, then decrease with age</dd>
+					<dd><b>Reproductive lifespan of a female:</b> approaches 2 years in some
+strains</dd>
+					<dd><b>Lactation:</b> duration ~4 weeks</dd>
+					<dd>Mouse Phenome Database: <A HREF="http://phenome.jax.org/pub-cgi/phenome/mpdcgi?rtn=meas/catlister&req=Creproductionqqqperformance">reproductive performance</A></dd>
+
+					<dt><b>Circulation</b></dt>
+					<dd><b>Total serum protein:</b> ~4-7 g/100 ml</dd>
+					<dd><b>Blood volume:</b> ~5.5 ml per 100 g body weight</dd>
+					<dd><b>Heart rate:</b> Adult: 632 +/- 51.3 beats per minute; Newborn: 286 +/- 56.8 beats per minute</dd>
+					<dd>Mouse Phenome Database: <A HREF="http://phenome.jax.org/pub-cgi/phenome/mpdcgi?rtn=meas/catlister&req=Ccardiovascular">cardiovascular</A></dd>
+					<dd><b>Systolic pressure:</b> 83-164 mm Hg</dd>
+					<dd><b>Blood pH:</b> 7.3-7.4</dd>
+					<dd>Mouse Phenome Database: <A HREF="http://phenome.jax.org/pub-cgi/phenome/mpdcgi?rtn=meas/catlister&req=Cblood+chemistryqqqmiscellaneous">pH</a>, <a href="http://phenome.jax.org/pub-cgi/phenome/mpdcgi?rtn=meas/catlister&req=Cblood+chemistry">blood chemistry</a></dd>
+
+					<dt><b>Respiration</b></dt>
+					<dd><b>Respiratory rate:</b> ~163 per minute</dd>
+					<dd>Mouse Phenome Database:  <A HREF="http://phenome.jax.org/pub-cgi/phenome/mpdcgi?rtn=meas/catlister&req=Crespiratory">respiratory function</A></dd>
+					<dd><b>Tidal volume:</b> ~0.15 ml</dd>
+
+					<dt><b>Urinary Tract</b></dt>
+					<dd><b>Average urine output:</b> ~1.6 ml per 24 hr</dd>
+					<dd><b>Average water intake:</b> ~ 5 ml per 24 hr</dd>
+
+</div>
+</dl>
+
+		</td>
+			</tr>
+			
+</table>
+	</td></tr>
+
+
+</table>
+
+</div> 
 <!--#include file='include/templateBodyStop.html'--> 
+</body>
+</html>
+
+
+

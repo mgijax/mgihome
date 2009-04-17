@@ -10,111 +10,74 @@
   </div> 
 <!--titleBar-->
 
-<!--<style>
-	.toc { margin 0px;
-		background-color:#DFEFFF; }
-	.toc ul { font-size: 12px;
-		margin 0px;
-		text-align: center;
-		line-height: 1.75;
-		list-style-type: none;
-		padding: .75em .75em 0.1em .75em;
-		min-width: 600px;}
-	.toc li { display: inline;
-		white-space: nowrap; }
-	.outline { border: 2px solid #DFEFFF; }
-	dl.linkedList { margin-left: 2em; }
-	.linkedList dt { margin-top: 1em; }
-	.linkedList dd { margin-left: 1em;
-		margin-top: .25em;
-		font-style:italic}
-</style>-->
+<!-- main body table -->
+<table width="75%" cellpadding="2" align="center">
+ <tr><td>
+ <!-- TOC table -->
+      <table class="toc" width="100%">
+	<tr><td>
+            <ul>
+               <li><a href="#MolecRes">Molecular Resources</a></li> | 
+               <li><a href="#mouse_res">Mouse Resources</a></li> | 
+               <li><a href="#Misc">Miscellaneous Useful Tools</a></li> | 
+               <li><a href="#mammal_model">Mammals and Model Organisms</a></li>
+             </ul>
+            </td>
+         </tr>
 
-<!-- TOC table -->
-		
-<table class="toc" width="!" cellpadding="8" align="center">
-  
-  <tr>
-  <td><a href="#MolecRes">Molecular Resources</a> | <a href="#mouse_res">Mouse Resources</a> | <a href="#Misc">Miscellaneous Useful Tools </a> | <a href="#mammal_model">Mammals and Model Organisms</a></td></tr>
+        </table>
+    <!-- end TOC table -->
 
-</table>
+	</td></tr>
 
+	<tr><td>
 
+<!-- section1 table -->
+   <a name="MolecRes"></a>
+<table class="outline" width="100%">
+			<tr>
+				<td class="enhance">
+					Molecular Resources
+				</td>
+			</tr>
+			<tr>
 
-<!--<p><a name="general"></a><b>General</b>-->
-<!--<blockquote>-->
-<!--<a href="http://www.jax.org/">The Jackson Laboratory Homepage</a>: Research, Resources, JAX Mice, Career Opportunities, Programs<br>-->
- <!--<a href="http://phenome.jax.org/phenome/">Mouse Phenome Database</a>: Baseline phenotypic data on commonly used strains<BR>-->
-<!--<a href="http://www3.niaid.nih.gov/labs/aboutlabs/cmb/InfectiousDiseasePathogenesisSection/mouseNecropsy/">A Guide to the Necropsy of the Mouse</a>: Autopsy techniques, diagnostic information on mouse diseases<br>-->
-
-<!--<a href="http://www.mgu.har.mrc.ac.uk/">MRC Mammalian Genetics Unit (MGU, Harwell)</a>: mouse stock list, embryo bank, ENU mutagenesis program<br>-->
-<!--<a href="http://ws4.nias-k.affrc.go.jp/agp/index.html">Animal Genome Database</a>: Cytogenetic/Linkage Orthology maps, Sequence structure viewer<br>-->
-<!--<a href="http://www.rodentia.com/wmc/">The Whole Mouse Catalog</a>: a variety of useful/interesting links<br>-->
-<!--Neurogenetics at UT Memphis:<br>
-&nbsp;&nbsp;&nbsp; <a href="http://www.nervenet.org/">Neurogenetics Databases</a>: includes Brain Library Collection, databases for colony management, Mapping Data sets<br>
-&nbsp;&nbsp;&nbsp; <a href="http://www.mbl.org/mbl_main/atlas.html">Mouse Brain Atlases</a>: brain section images<br>
-
-&nbsp;&nbsp;&nbsp; <a href="http://mickey.utmem.edu/fmpfiles/fmplist.html">The Portable Dictionary of the Mouse Genome</a>: Chromosome Committee Reports, MIT microsatellite map<br>-->
-<!--<a HREF="http://brainatlas.org/">Mouse Brain Atlas</a>: functional anatomy through gene expression, brain circuits, & cell locations<br>-->
-<!--<a href="http://netvet.wustl.edu/rodents.htm">The Electronic Zoo/NetVet - Rodents</a>: lots of rodent links<br>-->
-
-<!--<a href="http://research.uiowa.edu/animal/?get=mouse">Biomethodology of the Mouse</a>: biology, husbandry<br>-->
-<!--<a href="http://genex.hgu.mrc.ac.uk/">Mouse Atlas and Gene Expression Database Project</a>: The Edinburgh Mouse Atlas, Standard Anatomical
-Nomenclature<br>-->
-<!--<a href="http://www.ncbi.nlm.nih.gov/genome/guide/mouse">NCBI Mouse Genome Resources</a>: data and pointers to sequences, maps, and clones, and sources for inbred strains and mutants<br>
-
-<!--<a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=genomeprj&cmd=Retrieve&dopt=Overview&list_uids=9559">NCBI Mus musculus Genome Project:</a> lineage, sequence, other genome project links<br>
-<!--<a href="http://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?mode=Undef&name=Mus+musculus&lvl=0&srchmode=1">NCBI Mus Taxonomy</a>: lineage, genetic code, sequence links<br>
-<a href="../lists/lists.shtml">Mouse Electronic Bulletin Board</a>: The Jackson Laboratory<br>
-<!--<a href="http://www.shigen.nig.ac.jp/mouse/mmdbj/top.jsp">Mouse Microsatellite Data Base of Japan</a>: SSLP typings for strains, particularly molossinus-derived MSM and JF1<br>-->
-<!--<a href="http://ccm.ucdavis.edu/tvmouse/index.html">The Visible Mouse</a>: anatomy, physiology, histology, and pathology of the laboratory mouse with an emphasis on genetically engineered mice<br>
-<!--<a href="http://ccm.ucdavis.edu/tgmouse/">Mutant Mouse Pathology Laboratory</a>: histopathology services, transgenic pathology, comparative pathology <br>-->
-<!--</blockquote>-->
-<p><A NAME="MolecRes"></A><b>Molecular Resources</b></p>
-<blockquote>
-<dl><dt>BACs</dt>
+				<td>
+					<dl class="linkedList">
+			            	<dt>BACs</dt>
 <dd><a href="http://bacpac.chori.org/">BACPAC Resources Center (BPRC)</a> at Children's Hospital Oakland Research Institute (CHORI)</dd>
 <dd>BAC/PAC products at <a href="http://clones.invitrogen.com/cloneinfo.php?clone=bacpac">Invitrogen</a></dd>
-
 <br>
 <dt>IMAGE clones </dt>
 <dd><a href="http://image.llnl.gov/">Integrated Molecular Analysis of Genome Expression</a> (IMAGE) Consortium</dd>
 <dd><a href="http://image.llnl.gov/image/html/idistributors.shtml">Distributors</a> of IMAGE clones</dd>
-<!--<dt>Distributors of IMAGE clones in the U.S.</dt>-->
-<!--<dd><a href="http://www.atcc.org/">American Type Culture Collection</a>, Manassas, VA</dd>-->
-<!--<dd<a href="http://www.openbiosystems.com/">Open Biosystems</a>, Huntsville, AL</dd>-->
-<!--<dd><a href="http://mp.invitrogen.com/">Invitrogen</a>, Carlsbad, CA</dd>-->
-
-<!--<dt>Distributors of IMAGE clones in Europe</dt>-->
-
-<!--<dd><a href="http://www.geneservice.co.uk/products/image/index.jsp">Geneservice Ltd</a>, Cambridge, UK</dd>-->
-<!--<dd><a href="http://www.rzpd.de/">RZPD German Resource Center for Genome Research</a>, Berlin Germany</dd>-->
-<!--<dd><a href="http://www.imagenes-bio.de/products/sets_libraries/image/">imaGenes</a>, Berlin Germany -->
 <br>
 <dt>MGC clones </dt>
 <dd><a href="http://mgc.nci.nih.gov/">Mammalian Gene Collection</a> (MGC) Project</dd>
 <dd><a href="http://mgc.nci.nih.gov/Info/Buy">Distributors</a> of MGC clones</dd>
-
 </dl>
-<br>
+				</td>
+			</tr>
+</table>
+ <!--end of section1 table -->
 
-</blockquote>
+	</td></tr>
 
-<p><b><a name="mouse_res"></a>Mouse Resources</b>
-<blockquote>
-<!--<a href="http://jaxmice.jax.org/index.html">JAX&reg; Mice (The Jackson Laboratory)</a>: mouse product list, technical support<br>-->
-<!--<a href="http://www.jax.org/imr/index.html">Induced Mutant Resource (IMR)</a>: mice, The Jackson Laboratory<br>-->
-<!--<a href="http://www.mmrrc.org/">Mutant Mouse Regional Resource Centers (MMRRC)</a>: mouse strain information and ordering from regional centers<br>-->
-<dl><dt>Find Mice</dt>
+        <tr><td>
+<!-- section2 table -->
+		<a name="mouse_res"></a>
+<table class="outline" width="100%">
+
+			<tr>
+				<td class="enhance">
+					Mouse Resources
+				</td>
+			</tr>
+			<tr >
+				<td>
+					<dl class="linkedList"><dt>Find Mice</dt>
 <dd><a href="<!--#include file='include/imsr_home_url.html'-->">International Mouse Strain Resources (IMSR)</a>: database of   inbred, mutant, and genetically engineered mice and ES cell lines available globally. See list of 
 <a href="<!--#include file='include/imsr_home_url.html'-->fetch?page=imsrStrainRepositories">worldwide participating repositories</a>. </dd>
-
-
-<!--<a href="http://www.mgu.har.mrc.ac.uk/">Mammalian Genetics Unit (MGU)</a>: mouse stock list, mouse Embryo Bank<br>-->
-<!--<a href="http://www.emma.rm.cnr.it/">European Mouse Mutant Archive (EMMA)</A>: repository for transgenic mouse lines<BR>-->
-
-<!--<A HREF="http://bio.lsd.ornl.gov/mouse/">Oak Ridge National Laboratory (ORNL)</A>: mouse mutant stocks<br>-->
-<!--<a href="http://www.neuromice.org">Neuromice.org</a>:  database and repository of mouse neurological mutants<br>-->
 <dd>Commercial vendors: <a href="http://www.criver.com/research_models_and_services/">Charles River Laboratories, Inc.</a>,
 <a href="http://www.taconic.com/">Taconic</a>, <a href="http://www.harlan.com/">Harlan Sprague Dawley, Inc.</a></dd>
 
@@ -127,40 +90,54 @@ Nomenclature<br>-->
 <dd>Commercial vendors: <a href="http://www.bigbench.com">Big Bench Software</a>, <a href="http://www.locustechnology.com/">Locus Technology, Inc.</a>, 
 <a href="http://www.scionics.de/pyrat">Scionics Computer Innovation GmbH</a>
 </dl>
-</p>
-</blockquote>
+
+				</td>
+			</tr>
+</table>
+<!-- end of section2 table -->
+
+	</td></tr>
+
+<tr><td>
+<!-- section3 table -->
+		<a name="Misc"></a>
+<table class="outline" width="100%">
+
+			<tr>
+				<td class="enhance">
+					Miscellaneous Useful Tools
+				</td>
+			</tr>
+			<tr >
+				<td>
+					<dl class="linkedList"><dt><a href="http://www.healthsystem.virginia.edu/internet/transgenic-mouse/ears.cfm">Ear punch codes</a>: standard pattern for ear punch numbering in mice</dt>
+<dt><a href="http://www.pathology.washington.edu/research/cytopages/spreads/mouse_g_B2.gif">G-banded Mouse Karyotype</a> Image (University of Washington)</dt>
+<dt><a href="http://www.informatics.jax.org/mgihome/lists/lists.shtml">Mouse Electronic Bulletin Board</a> at MGI </dt>
+</dl>
 
 
-<!--<p><b><a name="locus_sym">Locus Symbols, Gene Families</a></b>-->
-<!--<blockquote>-->
+				</td>
+			</tr>
+</table>
+<!-- end of section3 table -->
+		
+ 	</td></tr>
 
-<!--<a href="http://imgt.cines.fr">The International Immunogenetics Database</a><br>-->
-<!--<a href="../nomen/nomen_submit_form.shtml">Mouse Gene Nomenclature information </a>: locus symbol registration<br>-->
-<!--<a href="../nomen/strains.shtml">Mouse Strain Nomenclature information </a><br>-->
-<!--<a href="http://dels.nas.edu/ilar_n/ilarhome/register_lc.shtml">Laboratory Code Registry</a> (ILAR): for strains, loci, transgenes, mutations<br>-->
-<!--<a href="http://www.sanger.ac.uk/Software/Pfam/">Pfam - Protein Family Database</a>: a large collection of multiple sequence alignments of many common protein domains-->
-<!--</blockquote>-->
+<tr><td>
 
 
-<br>
-<p><b><a name="Misc">Miscellaneous Useful Tools</a></b></p>
-<blockquote>
-<a href="http://www.healthsystem.virginia.edu/internet/transgenic-mouse/ears.cfm">Ear punch codes</a>: standard pattern for ear punch numbering in mice<br>
-<a href="http://www.pathology.washington.edu/research/cytopages/spreads/mouse_g_B2.gif">G-banded Mouse Karyotype</a> Image (University of Washington)<br>
+<!-- section4 table -->
+		<a name="mammal_model"></a>
+<table class="outline" width="100%">
 
-<a href="http://www.informatics.jax.org/mgihome/lists/lists.shtml">Mouse Electronic Bulletin Board</a> at MGI <br>
-
-</blockquote>
-<br>
-<p><b><a name="mammal_model"></a>Mammals / Model Organism Sites</b></p>
-<blockquote>
-<p>
-<!--
-<A HREF="http://www.gdb.org/">The Genome Database (GDB)</a>: central repository for genomic mapping data
-resulting from the Human Genome Initiative
-<br><a href="http://www.doegenomes.org">U.S. Department of Energy Office of Science</a> genome programs
-<BR>-->
-<dl><dt>Human: </dt>
+			<tr>
+				<td class="enhance">
+					Mammals / Model Organism Sites
+				</td>
+			</tr>
+			<tr >
+				<td>
+					<dl class="linkedList"><dt>Human:</dt>
 <dd><A HREF="http://www.hgvs.org/">Human Genome Variation Society (HGVS):</A> human variation databases and links</dd>
 
 <dd><a href="http://www.uwcm.ac.uk/uwcm/mg/hgmd0.html">Human Gene Mutation Database (HGMD)</a>: published gene lesions responsible for human inherited disease</dd>
@@ -192,9 +169,22 @@ resulting from the Human Genome Initiative
 <dd><a href="http://omia.angis.org.au/">Online Mendelian Inheritance in Animals (OMIA)</a>: inherited disorders and traits in 135 animals other than human and mouse</dd>
 
 </dl>
-</blockquote>
-<p>
+
+		</td>
+			</tr>
+			
+</table>
+	</td></tr>
+
+
+</table>
 
 </div> 
 <!--#include file='include/templateBodyStop.html'--> 
+</body>
+</html>
 
+
+
+
+ 

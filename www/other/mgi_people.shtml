@@ -1,18 +1,46 @@
 <!--#include file='include/templateHead.html'--> 
 <title>MGI-Mouse Genome Informatics Team</title>
-
 <!--#include file='include/templateBodyStart.html'--> 
-
-
 <!-- Title Bar -->
   <div id="titleBarWrapper">
-  <span class="titleBarMainTitle"> Mouse Genome Informatics Team </span>
+  <span class="titleBarMainTitle">Mouse Genome Informatics Team </span>
   </div> 
 <!--titleBar-->
+<!-- main body table -->
+<table width="75%" cellpadding="2" align="center">
+ <tr><td>
+ <!-- TOC table -->
+      <table class="toc" width="100%">
+	<tr><td>
+            <ul>
+               <!--<li><a href="#intro">Introduction</a> |</li>-->
+               <li><a href="#programs">MGI Programs</a></li> | 
+               <li><a href="#curators">MGI Curatorial Staff</a></li> | 
+               <li><a href="#swad">MGI Software and Administrative Staff</a></li> 
+	    </ul>
+       	    </td>
+         </tr>
+        </table>
+    <!-- end TOC table -->
 
-<blockquote>
-<h3>MGI Programs</h3>
-<table border="1" cellpadding="4">
+	</td></tr>
+
+	<tr><td>
+
+<!-- section1 table -->
+   <a name="programs"></a>
+<table class="outline" width="100%">
+			<tr>
+				<td class="enhance">MGI Programs
+				
+				</td>
+			</tr>
+			<tr>
+
+				<td>
+					<dl class="linkedList">
+			            	<dt>
+					<table width="100%" border="1" cellpadding="2">
 <tr bgcolor="#D0E0F0"><th valign="top"><font size="-1">Funding</font></th><th valign="top" colspan="2"><font size="-1">Program</font></th><th valign="top"><font size="-1">PI</font></th><th valign="top"><font size="-1">Co-PI</font></tr>
 <tr><td valign="top"><font size="-1">NIH HG000330</font></td><td valign="top" colspan="2"><font size="-1">Mouse Genome Database (MGD)<br>
 * P1: Genome Features & Maps; &nbsp;PI: &nbsp;CJ Bult<br>
@@ -43,28 +71,39 @@
 <td colspan="2" valign="top"><font size="-1">Data Coordination Center for the Knockout Mouse Project (KOMP)</font></td>
 <td valign="top"><font size="-1">Martin Ringwald</font></td>
 <td valign="top"><font size="-1">Janan T. Eppig<br>Carol J. Bult<br>James A. Kadin</font></td></tr>
-
+</table>
+<table border="0" cellspacing="1" cellpadding="3" width="100%">
+  
+<tr><td valign="top"><font size="-1">*</td><td valign="top">P=Project C=Core</font></td></tr>
+<tr><td valign="top"><font size="-1">** </td><td valign="top">As co-PIs of the MGI Software Group, Dr. Kadin and Dr. Richardson contribute to all MGI-related database projects.</font></td></tr>
+<tr><td valign="top"><font size="-1">*** </td><td valign="top">The Gene Ontology (GO) consortium funds GO activities at eight institutions, including The Jackson Laboratory. <br>Other Co-PIs/Project Leaders are <nobr>M Ashburner, U. of Cambridge;</nobr> <nobr>R Apweiler, EBI;</nobr> <nobr>JM Cherry, Stanford U;</nobr> <nobr>Rex Chisolm, Northwestern U;</nobr>  <nobr>S Lewis, Lawrence Berkeley National Lab;</nobr> <nobr>S Rhee, Carnegie Institution;</nobr> <nobr>S Twigger, Medical College of Wisconsin.</nobr></font></td></tr>
 </table>
 
-</blockquote>
-<blockquote>
 
-<table width="87%" border="0" cellpadding="4">
-<tr><td valign="top"><font size="-1">* </font></td><td><font size="-1">P=Project C=Core</font></td></tr>
-<tr><td valign="top"><font size="-1">**</font></td><td><font size="-1">As co-PIs of the MGI Software Group, Dr. Kadin and Dr. Richardson contribute to all MGI-related database projects.</font></td></tr>
-<tr><td valign="top"><font size="-1">***</font></td><td><font size="-1">The Gene Ontology (GO) consortium funds GO activities at eight institutions, including The Jackson Laboratory. <br>Other Co-PIs/Project Leaders are <nobr>M Ashburner, U. of Cambridge;</nobr> <nobr>R Apweiler, EBI;</nobr> <nobr>JM Cherry, Stanford U;</nobr> <nobr>Rex Chisolm, Northwestern U;</nobr>  <nobr>S Lewis, Lawrence Berkeley National Lab;</nobr> <nobr>S Rhee, Carnegie Institution;</nobr> <nobr>S Twigger, Medical College of Wisconsin.</nobr></font></td></tr>
-</table>
-
-</blockquote>
-
-<blockquote>
-<h3><a name="staff"></a>MGI Staff</h3>
+</td></tr></table>
 
 
-<table border="0" cellpadding="4">
+
+
+ <!--end of section1 table -->
+
+	</td></tr>
+
+        <tr><td>
+<!-- section2 table -->
+		<a name="curators"></a>
+<table class="outline" width="100%">
+
+			<tr>
+				<td class="enhance">
+					MGI Curatorial Staff
+				</td>
+			</tr>
+			<tr >
+				<td><blockquote><table border="0" cellpadding="4">
    <tr><td width="40%">
        <table border="1" cellpadding="2">
-       <tr bgcolor="#D0E0F0"><th colspan="2"><font size="-1">Curatorial Staff</font></th></tr>
+       <!--<tr bgcolor="#D0E0F0"><th colspan="2"><font size="-1">Curatorial Staff</font></th></tr>-->
      <tr><th rowspan="5" align="left" valign="top"><font size="-1">Genome Features & Maps</font></th><td><font size="-1">Dirck W. Bradt</font></td></tr>
      <tr><td><font size="-1">Kenneth Frazer</font></td></tr>
       <!--<tr><td><font size="-1">T.B.K. Reddy</font></td></tr>-->
@@ -113,52 +152,84 @@
 
  <tr><th align="left" valign="top"><font size="-1">MouseCyc</font></th><td><font size="-1">Alexei Evsikov </font></td></tr>
  <tr><th align="left" valign="top"><font size="-1">KOMP-DCC</font></th><td><font size="-1">Hamsa Tadepally</font></td></tr>
+  </table>
+
+<!--end of section2 table -->
+</td></tr>
+</table>
 
 
+</td></tr></table>
+        <tr><td>
+<!-- section3 table -->
+	
+		<a name="swad"></a>
+<table class="outline" width="100%">
 
-  </table></td><!--end of left-side cell-->
-<!--CENTER CELL-->
-<td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
-<!--cell3-->
-<td valign="top">
-  <table border="1" cellpadding="2">
-   <tr><th bgcolor="#D0E0F0" colspan="2"><font size="-1">Software and Administrative Staff</font></th></tr>
-   <tr><th rowspan="13" align="left" valign="top"><font size="-1">Software Engineering</font></th>
-<td><font size="-1">Mark Airey</font></td></tr>
-       <td><font size="-1">Richard M. Baldarelli</font></td></tr>
-   <tr><td><font size="-1">Jonathan S. Beal</font></td></tr>
-   <tr><td><font size="-1">Lori E. Corbani</font></td></tr>
-   <tr><td><font size="-1">Sharon L. Cousins</font></td></tr>
-   <tr><td><font size="-1">Diane J. Dahmen</font></td></tr>
-   <tr><td><font size="-1">Mary E. Dolan</font></td></tr>
-   <tr><td><font size="-1">Kim L. Forthofer</font></td></tr>
-   <tr><td><font size="-1">Peter Frost</font></td></tr>
-   <tr><td><font size="-1">Matthew M. Hall</font></td></tr>
-   <tr><td><font size="-1">Jeremy Mason</font></td></tr>
-   <tr><td><font size="-1">David B. Miers</font></td></tr>
-   <tr><td><font size="-1">Steven B. Neuhauser</font></td></tr>
+			<tr>
+				<td class="enhance">
+					MGI Software and Administrative Staff
+				</td>
+			</tr>
+		<tr><td></td></tr>
+			<tr>
+				<td><blockquote><table border="1" cellpadding="2">
+      <!--<tr><th bgcolor="#D0E0F0" colspan="2"><font size="-1">Software and Administrative Staff</font></th></tr>-->
+      <tr><th rowspan="13" align="left" valign="top"><font size="-1">Software Engineering</font></th>
+   <td><font size="-1">Mark Airey</font></td></tr>
+          <td><font size="-1">Richard M. Baldarelli</font></td></tr>
+      <tr><td><font size="-1">Jonathan S. Beal</font></td></tr>
+      <tr><td><font size="-1">Lori E. Corbani</font></td></tr>
+      <tr><td><font size="-1">Sharon L. Cousins</font></td></tr>
+      <tr><td><font size="-1">Diane J. Dahmen</font></td></tr>
+      <tr><td><font size="-1">Mary E. Dolan</font></td></tr>
+      <tr><td><font size="-1">Kim L. Forthofer</font></td></tr>
+      <tr><td><font size="-1">Peter Frost</font></td></tr>
+      <tr><td><font size="-1">Matthew M. Hall</font></td></tr>
+      <tr><td><font size="-1">Jeremy Mason</font></td></tr>
+      <tr><td><font size="-1">David B. Miers</font></td></tr>
+      <tr><td><font size="-1">Steven B. Neuhauser</font></td></tr>
+   
+      <!--<TR><TD><FONT SIZE="-1">Matthew J. Vincent</FONT></TD></TR>-->
+      <tr><th rowspan="2" align="left" valign="top"><font size="-1">Software QA</font></th>
+   <td><font size="-1">Jeffrey W. Campbell</font></td></tr>
+   <!--<td><font size="-1">Virginia L. Grice</font></td></tr>-->
+        <tr><td><font size="-1">Jill R. Lewis</font></td></tr>
+      <tr><th rowspan="4" align="left" valign="top"><font size="-1">Systems Administration&nbsp;&nbsp;</font></th>
+          <td><font size="-1">Matthew J. Baya</font></td></tr>
+      <tr><td><font size="-1"><nobr>Michael J. McCrossin</font></td></tr>
+      <tr><td><font size="-1">Leslie A. Miller</font></td></tr>
+      <tr><td><font size="-1">Iry T. Witham</font></td></tr>
+      <tr><th rowspan="2" align="left" valign="top"><font size="-1">Administrative Staff</font></th>
+          <!--<TD><FONT SIZE="-1">William J. Boddy</FONT></TD></TR>-->
+   <td><font size="-1">Deborah E. Geel</font></td></tr>
+   
+      <tr><td><font size="-1">Janice E. Ormsby</font></td></tr>
+      <tr><th rowspan="3" align="left" valign="top"><font size="-1">User Support</font></th> 
+        <td><font size="-1"> Susan McClatchy</font></td></tr>
+       <tr><td><font size="-1">David R. Shaw</font></td></tr>
+      <tr><td><font size="-1">Paul Szauter</font></td></tr>
+      </table>
+   </blockquote>
 
-   <!--<TR><TD><FONT SIZE="-1">Matthew J. Vincent</FONT></TD></TR>-->
-   <tr><th rowspan="2" align="left" valign="top"><font size="-1">Software QA</font></th>
-<td><font size="-1">Jeffrey W. Campbell</font></td></tr>
-<!--<td><font size="-1">Virginia L. Grice</font></td></tr>-->
-     <tr><td><font size="-1">Jill R. Lewis</font></td></tr>
-   <tr><th rowspan="4" align="left" valign="top"><font size="-1">Systems Administration&nbsp;&nbsp;</font></th>
-       <td><font size="-1">Matthew J. Baya</font></td></tr>
-   <tr><td><font size="-1"><nobr>Michael J. McCrossin</font></td></tr>
-   <tr><td><font size="-1">Leslie A. Miller</font></td></tr>
-   <tr><td><font size="-1">Iry T. Witham</font></td></tr>
-   <tr><th rowspan="2" align="left" valign="top"><font size="-1">Administrative Staff</font></th>
-       <!--<TD><FONT SIZE="-1">William J. Boddy</FONT></TD></TR>-->
-<td><font size="-1">Deborah E. Geel</font></td></tr>
+				</td>
+			</tr>
+</table>
+ <!--end of section3 table -->
+</td></tr></table>
 
-   <tr><td><font size="-1">Janice E. Ormsby</font></td></tr>
-   <tr><th rowspan="3" align="left" valign="top"><font size="-1">User Support</font></th> 
-     <td><font size="-1"> Susan McClatchy</font></td></tr>
-    <tr><td><font size="-1">David R. Shaw</font></td></tr>
-   <tr><td><font size="-1">Paul Szauter</font></td></tr>
-   </table>
-<br>
+	
+<!-- section4 table 
+		<a name="additional_staff"></a>
+<table class="outline" width="100%">
+
+			<tr>
+				<td class="enhance">
+					Additional Staff
+				</td>
+			</tr>
+			<tr >
+				<td>
   <!--<TABLE BORDER="1" CELLPADDING="2">
    <TR><TH BGCOLOR="#D0E0F0" COLSPAN="2"><FONT SIZE="-1">Additional Staff</FONT></TH></TR>
    <TR><TH ALIGN="left" VALIGN="top"><FONT SIZE="-1">Postdoctoral Fellow</FONT></TH>
@@ -167,10 +238,20 @@
 </td>
 </tr>
 </table>
-
 </blockquote>
+	</td>
+			</tr>
+			
+</table>
+
 
 <!--#include file='include/templateBodyStop.html'--> 
+</body>
+</html>
+
+
+
+
 
 <!--Warranty Disclaimer & Copyright Notice
 
