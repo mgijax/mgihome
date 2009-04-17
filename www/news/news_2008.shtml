@@ -7,92 +7,191 @@
 
 <!-- Title Bar -->
   <div id="titleBarWrapper">
-  <span class="titleBarMainTitle"> News and Announcements for 2008 </span>
+  <span class="titleBarMainTitle">News and Announcements for 2008 </span>
   </div> 
 <!--titleBar-->
 
 
-<P>
-<h4><a name="oct_2008"></a>October 29, 2008: <b>MGI Batch Query</b> enhanced for release 4.13</h4>
- <blockquote>
-   <ul>
-      <li>For MGI release 4.13, the <a href="<!--#include file='include/java_url.html'-->WIFetch?page=batchQF">MGI Batch Query</a> tool now accepts mixed lists of identifiers as input.</li><br>
-  <li>The tool returns results for combinations of IDs or mouse synonyms/symbols/orthologs with MGI gene associations.</li><br>
-<li>Query results are available in two formats: as a web page or in a tab-delimited text file.</li>
-    </ul>
-  </blockquote>
-  
-  
-
-
-<h4><a name="sept_2008"></a>September 18, 2008: New <b>Phenotype summary</b> on allele detail pages for  MGI release 4.12 </h4>
-<blockquote>
-	<ul>
-		
-<li>The Phenotype section of each Allele Detail Page now includes two distinct views of phenotype data.</li><br>
-<li>A new section, <b>Phenotype Summary</b>, presents data in a matrix format that allows easy comparison of phenotypes across genotypes. Users can compare effects of different allelic combinations (homozygotes, heterozygotes, conditionals, complex allelic combinations, etc.), different genetic backgrounds with the same allelic combinations, and quickly view the range of phenotypic effects observed for a given allele. This phenotype matrix view is presented first with an axis of high level terms like "hematopoietic system" and gives the user the option to expand that section into more specific annotated phenotypic terms (anemia, increased mast cell number, etc.).</li><br>
-<li>In addition, the ability to pop up individual windows that contain the phenotype and disease model for a single genotype is available from the <b>Phenotype Summary</b>.  This can facilitate comparisons across mutants for a single gene, as well as among mutants for different genes.</li><br>
-
-<li>The <b>Phenotypic Data by Genotype</b> section presents a table of genotypes that can be expanded to show complete phenotype annotation, preserving the data format previously provided.  For each genotype listed, users can expand the display to show the full phenotype detail for a given genotype (or for all genotypes), as well as the disease model annotations.</li><br>
-<li>To see an example of a the redesigned allele detail page, check this record for one of the targeted mutations of the endoglin gene, <a href="<!--#include file='include/java_url.html'-->WIFetch?page=alleleDetail&key=6501">Eng<sup>tm1Mle</sup></a>.  
-
-For additional information, see the <a onclick='javascript:openFaqWindow("Allele_tour.shtml"); return false;' href="<!--#include file='include/faq_url.html'-->Allele_tour.shtml">Allele Tour</a> displaying the basics of the new phenotype formats.</li>
+<!-- main body table -->
+<table width="95%" cellpadding="2" align="center">
+ <tr><td>
+ <!-- TOC table -->
+      <table class="toc" width="100%">
+	<tr><td>
+            <ul>
+               <li><a href="#oct_2008">October 29, 2008</a></li> | 
+               <li><a href="#sept_2008">September 18, 2008</a></li> | 
+               <li><a href="#july_2008">July 24, 2008</a></li> |
+ 		<li><a href="#june_2008">June 17, 2008</a></li> |
+		<li><a href="#may_2008">May 22, 2008</a></li> |
+		<li><a href="#march_18_2008">March 18, 2008</a></li> |
+		<li><a href="#feb_2008">February 21, 2008</a></li> |
 		</ul>
+            </td>
+         </tr>
+       </table>
+    <!-- end TOC table -->
 
-</blockquote>
+ </td></tr>
 
+ <tr><td>
+<!-- oct 2008 table -->
+<a name="oct_2008"></a>
+   	<table class="outline" width="100%">
+	   <tr>
+	   <td class="enhance"></td>
+			</tr>
+			<tr>
 
+				<td><dl class="linkedList">
+				  <dt><b>October 29, 2008</b></dt>
+				  <dd>&bull;&nbsp;For MGI release 4.13, the <a href="<!--#include file='include/java_url.html'-->WIFetch?page=batchQF">MGI Batch Query</a> tool now accepts mixed lists of identifiers as input.</dd>
+				 <dd>&bull;&nbsp;Results appear for combinations of IDs or mouse synonyms/symbols/orthologs with MGI gene associations.</dd>
+				<dd>&bull;&nbsp;Query results are available in two formats: web page or tab-delimited text file.</dd>
+				</dl>
+      		</td>
+         	</tr>
+       	</table>
+ </td></tr>
 
-<h4><a name="july_2008"></a>July 24, 2008: Enhancements to the Gene Expression Database (GXD) for MGI 4.11</h4>
+ <tr><td>
+<!-- sept 2008 table -->
+<a name="sept_2008"></a>
+   	<table class="outline" width="100%">
+	   <tr>
+	   <td class="enhance"></td>
+			</tr>
+			<tr>
+			   	<td><dl class="linkedList">
+				  <dt><b>September 18, 2008: New </b>Phenotype summary</b> on allele detail pages for  MGI release 4.12</dt>
+			   	  <dd>&bull;&nbsp;The Phenotype section of each Allele Detail Page now includes two distinct views of phenotype data.</dd>
+			   	  <dd>&bull;&nbsp;A new section, <b>Phenotype Summary</b>, presents data in a matrix format that allows easy comparison of phenotypes across genotypes. Users can compare effects of different allelic combinations (homozygotes, heterozygotes, conditionals, complex allelic combinations, etc.), different genetic backgrounds with the same allelic combinations, and quickly view the range of phenotypic effects observed for a given allele. </dd>
+<dd>&bull;&nbsp;This phenotype matrix view is presented first with an axis of high level terms like "hematopoietic system" and gives the user the option to expand that section into more specific annotated phenotypic terms (anemia, increased mast cell number, etc.).</dd>
+			   	  <dd>&bull;&nbsp;In addition, the ability to pop up individual windows that contain the phenotype and disease model for a single genotype is available from the <b>Phenotype Summary</b>.  This can facilitate comparisons across mutants for a single gene, as well as among mutants for different genes.</dd>
+				<dd>&bull;&nbsp;The <b>Phenotypic Data by Genotype</b> section presents a table of genotypes that can be expanded to show complete phenotype annotation, preserving the data format previously provided.  For each genotype listed, users can expand the display to show the full phenotype detail for a given genotype (or for all genotypes), as well as the disease model annotations.</dd>
+				<dd>&bull;&nbsp;To see an example of a the redesigned allele detail page, check this record for one of the targeted mutations of the endoglin gene, <a href="<!--#include file='include/java_url.html'-->WIFetch?page=alleleDetail&key=6501">Eng<sup>tm1Mle</sup></a>.  <br>
+For additional information, see the <a onclick='javascript:openFaqWindow("Allele_tour.shtml"); return false;' href="<!--#include file='include/faq_url.html'-->Allele_tour.shtml">Allele Tour</a> displaying the basics of the new phenotype formats.</dd>
+    				</dl>
+			   	  
+			   	</td>
+         	</tr>
+       	</table>
+<!--end sept table-->
+  </td>
+ </tr>
+ <tr><td></td></tr>
+ <tr>
+ <td>
+<!--  start july table -->
+<a name="july_2008"></a>
+   	<table class="outline" width="100%">
+	   <tr>
+	   <td class="enhance"></td>
+	   </tr>
+	   <tr>
+	   <td><b>July 24, 2008: Enhancements to the Gene Expression Database (GXD) for MGI 4.11</b></tr>
+	   <tr><td>				
+			<table class="linkedlist" border="0" cellspacing="0" cellpadding="0" width="100%">
+				  <tr><td><ul>
+				    <li>In addition to links to detailed expression data entries, data summaries returned by the Gene Expression Data and Expanded query forms now also include links to expression literature content records matching the query parameters. <a href="<!--#include file='include/userdocs_url.html'-->gxd_query_results.shtml#gxd_lit_record">Read more</a>...</li>
+  				<li>Some of the expression images annotated by GXD are 3-D spatially mapped into <a href="http://genex.hgu.mrc.ac.uk/Emage/database/emageIntro.html">EMAGE</a>, the Edinburgh Mouse Atlas and Gene Expression Database. GXD's image detail pages now include links to corresponding entries at EMAGE. This makes it easier to compare GXD's text-based and EMAGE's graphical annotation of the same expression data.</li>
+				<li>Now available on gene detail pages (under External Resources in the Expression section) are links to gene expression profile pages at <a href="http://www.ncbi.nlm.nih.gov/geo/">GEO</a>, the microarray repository at NCBI; and links to summary pages of images generated by <a href="http://www.gensat.org/index.html">GENSAT</a>, the Gene Expression Nervous System Atlas Project. </li>
+    				</ul>
+				</table>
+		</td>
+		</tr>
+	
 
-<blockquote>
- <ul>
-   <li>In addition to links to detailed expression data entries, data summaries returned by the Gene Expression Data and Expanded query forms now also include links to expression literature content records matching the query parameters. 
-<a href="<!--#include file='include/userdocs_url.html'-->gxd_query_results.shtml#gxd_lit_record">Read more</a>...</li><br />
-  <li>Some of the expression images annotated by GXD are 3-D spatially mapped into 
-<a href="http://genex.hgu.mrc.ac.uk/Emage/database/emageIntro.html">EMAGE</a>, the Edinburgh Mouse Atlas and Gene Expression Database. GXD's image detail pages now include links to corresponding entries at EMAGE. This makes it easier to compare GXD's text-based and EMAGE's graphical annotation of the same expression data.</li><br />
-
- <li>Now available on gene detail pages (under External Resources in the Expression section) are links to gene expression profile pages at <a href="http://www.ncbi.nlm.nih.gov/geo/">GEO</a>, the microarray repository at NCBI; and links to summary pages of images generated by <a href="http://www.gensat.org/index.html">GENSAT</a>, the Gene Expression Nervous System Atlas Project. </li>
-    </ul>
-</ul>
-
-
-</blockquote>
-
-
-
-<h4><a name="june_2008"></a>June 17, 2008: MGI 4.1</b></h4>
-<blockquote>
-<ul>
-<li>MGI mouse genome coordinates are now updated to NCBI Mouse Build 37 and dbSNP Build 128. The Build 37.1 reference assembly (C57BL/6J) represents over 90% of the mouse genome in finished form.</li><br>
-<li>For Build 37 <i>Mus musculus</i> statistics, see <a href="http://www.ncbi.nlm.nih.gov/mapview/stats/BuildStats.cgi?taxid=10090&build=37&ver=1">http://www.ncbi.nlm.nih.gov/mapview/stats/BuildStats.cgi?taxid=10090&build=37&ver=1.</a> </li><br>
+	</td>
+         	</tr>
+       	</table>
+<!--end july table-->
+  </td>
+ </tr>
+ <tr><td></td></tr>
+ <tr>
+ <td>
+<!--  start june table -->
+<a name="june_2008"></a>
+   	<table class="outline" width="100%">
+	   <tr>
+	   <td class="enhance"></td>
+			</tr>
+			<tr>
+			   	<td><dl class="linkedList">
+				  <dt><b>June 17, 2008: MGI 4.1</b></dt>
+				  <dd>&bull;&nbsp;MGI mouse genome coordinates are now updated to NCBI Mouse Build 37 and dbSNP Build 128. The Build 37.1 reference assembly (C57BL/6J) represents over 90% of the mouse genome in finished form.</dd>
+				<dd>&bull;&nbsp;For Build 37 <i>Mus musculus</i> statistics, see <a href="http://www.ncbi.nlm.nih.gov/mapview/stats/BuildStats.cgi?taxid=10090&build=37&ver=1">http://www.ncbi.nlm.nih.gov/mapview/stats/BuildStats.cgi?taxid=10090&build=37&ver=1.</a> </li><br>
 <li>The dbSNP load adds more than 3.7 million refSNPs to MGI. See the summary report of  
 <a href="<!--#include file='include/wi_url.html'-->reports/snpSummary.shtml">SNP Data in MGI</a> for specific  details.
-</li>
-</ul>
-</blockquote>
+</dd>
+				</dl>
 
+	</td>
+         	</tr>
+       	</table>
+<!--end june table-->
+  </td>
+ </tr>
+ <tr><td></td></tr>
+ <tr>
+ <td>
+<!--  start may table -->
+<a name="may_2008"></a>
+   	<table class="outline" width="100%">
+	   <tr>
+	   <td class="enhance"></td>
+			</tr>
+			<tr>
+			   	<td><dl class="linkedList">
+				  <dt><b>May 22, 2008: MGI 4.02</b></dt>
+				  <dd>&bull;&nbsp;A new <a href="../other/web_service.shtml">MGI Web Service</a> provides programmatic access to select portions of the database. You can submit a set of identifiers (for example, mouse symbols) and get back a list of corresponding MGI gene/marker IDs, or you can load a set of identifiers and specify the attributes you want returned.</dd>
+				<dd>&bull;&nbsp;The layout of the Expression section of gene detail pages has been improved and links to gene pages at the Allan Brain Atlas, a database of gene expression patterns in the adult mouse brain, have been added.</dd>
+				<dd>&bull;&nbsp;Gene Expression Data summaries have been revised to make accessing the detailed expression data more intuitive.  The links to the detailed data are now in the first column of the page and have been re-labeled data.  Additionally, a camera icon has been added to indicate when images of the primary data are available by following the data link.</dd>
+				</dl>
 
-
-
-
-<h4><a name="may_2008"></a>May 22, 2008: MGI 4.02</h4>
- <blockquote>
-   <ul>
-     <li>A new <a href="../other/web_service.shtml">MGI Web Service</a> provides programmatic access to select portions of the database. You can submit a set of identifiers (for example, mouse symbols) and get back a list of corresponding MGI gene/marker IDs, or you can load a set of identifiers and specify the attributes you want returned.</li><br />
-     <li>The layout of the Expression section of gene detail pages has been improved and links to gene pages at the Allan Brain Atlas, a database of gene expression patterns in the adult mouse brain, have been added.</li><br />
-     <li>Gene Expression Data summaries have been revised to make accessing the detailed expression data more intuitive.  The links to the detailed data are now in the first column of the page and have been re-labeled data.  Additionally, a camera icon has been added to indicate when images of the primary data are available by following the data link.</li>
-</ul>
-  </blockquote>
-  
-
-
-<h4><a name="feb_2008"></a>February 21, 2008: Website and Navigation Redesign for MGI 4.0</h4>    
-<blockquote>
-<p>The MGI website has a new design! Take a quick tour of the major changes:</p>
+	</td>
+         	</tr>
+       	</table>
+<!--end may table-->
+  </td>
+ </tr>
+ <tr><td></td></tr>
+ <tr>
+ <td>
+<!--  start march table -->
+<a name="march_2008"></a>
+   	<table class="outline" width="100%">
+	   <tr>
+	   <td class="enhance"></td>
+			</tr>
+			<tr>
+			   	<td><dl class="linkedList">
+				  <dt><b>March 18, 2008</b></dt>
+					<dd>&bull;&nbsp;The MGI 4.01 release features news item updates, performance enhancements, and bug fixes.</dd>
+			</dl>
+	</td>
+         	</tr>
+       	</table>
+<!--end march table-->
+  </td>
+ </tr>
+ <tr><td></td></tr>
+ <tr>
+ <td>
+<!--  start feb table -->
+<a name="feb_2008"></a>
+   	<table class="outline" width="100%">
+	   <tr>
+	   <td class="enhance"></td>
+			</tr>
+			<tr>
+			   	<td><dl class="linkedList">
+				  <dt><b>February 21, 2008: Website and Navigation Redesign for MGI 4.0</b></dt>    
+				<dd>&bull;&nbsp;The MGI website has a new design! Take a quick tour of the major changes:
       <ul>
-       <li>Click the horizontal navigation bar to see drop-down menu options.</li><br />
-       <li>Click Search--><a href="<!--#include file='include/menus_url.html'-->allsearch.shtml">All Search Tools</a> for a complete list of all available search forms.</li><br>
+       <li>Click the horizontal navigation bar to see drop-down menu options.</li>
+       <li>Click Search--><a href="<!--#include file='include/menus_url.html'-->allsearch.shtml">All Search Tools</a> for a complete list of all available search forms.</li>
        <li>New MGI content pages replace menu pages. Click: </li>
           <ul>
       <li><a href="<!--#include file='include/homepages_url.html'-->genes.shtml">Genes</a> for Genes, Genome Features & Maps</li>
@@ -102,29 +201,30 @@ For additional information, see the <a onclick='javascript:openFaqWindow("Allele
       <li><a href="<!--#include file='include/homepages_url.html'-->strains_SNPs.shtml">Strains</a> for Strains, SNPs & Polymorphisms</li>
       <li><a href="<!--#include file='include/homepages_url.html'-->orthology.shtml">Orthology</a> for Mammalian Orthology</li>
       <li><a href="http://tumor.informatics.jax.org/mtbwi/index.do">Tumor</a> for Mouse Tumor Biology (MTB).</li>
-          </ul> <br />
+          </ul> 
+		</dd>
 
-  <li>The MGI homepage and all content pages include Frequently Asked Questions. <br />
-See <a href="<!--#include file='include/faq_url.html'-->FAQ.shtml">More FAQs</a> for a complete list.</li><br />
+ 		<dd>&bull;&nbsp;The MGI homepage and all content pages include Frequently Asked Questions. 
+See <a href="<!--#include file='include/faq_url.html'-->FAQ.shtml">More FAQs</a> for a complete list.</dd>
+		<dd>&bull;&nbsp;There is an extensive list of database content statistics. <br />
+See <a href="<!--#include file='include/mgihome_url.html'-->homepages/stats/all_stats.shtml">MGI Includes</a>.</dd>
 
-<li>There is an extensive list of database content statistics. <br />
-See <a href="<!--#include file='include/mgihome_url.html'-->homepages/stats/all_stats.shtml">MGI Includes</a>.</li>
-<br />
-  
-  <li>New on-line book<br>
+  		<dd>&bull;&nbsp;New on-line book<br>
   <a href="<!--#include file='include/greenbook_url.html'-->"><i>Biology
-  of the Laboratory Mouse</i></a> (by the Staff of The Jackson Laboratory, E. Green, ed. 1966, Dover Publications, New York) joins MGI's collection of electronic books.</li><br />
-  
-  <li>MouseCyc - the link to Pathways<br>
-<a href="<!--#include file='include/homepages_url.html'-->pathways.shtml">Biochemical Pathways</a> provides access to the MouseCyc database of curated metabolic biochemical pathways, including biosynthesis, degradation, energy production, and detoxification. Here users can find mouse genetic and genomic data in the context of physiological and cellular processes integrated with the knowledge base of MGI.</li>
-  <br>
-  
-  <li>Phenotype form redesign<br>
-  The <a href="../nomen/phenotype_data_form.shtml">Phenotype Data Submission Form</a> is for describing (and submitting) new or additional characteristics of spontaneous, induced, or genetically engineered mutations found in MGI.</li>
-    </ul>
+  of the Laboratory Mouse</i></a> (by the Staff of The Jackson Laboratory, E. Green, ed. 1966, Dover Publications, New York) joins MGI's collection of electronic books.</dd>
+  			<dd>&bull;&nbsp;MouseCyc - the link to Pathways<br>
+<a href="<!--#include file='include/homepages_url.html'-->pathways.shtml">Biochemical Pathways</a> provides access to the MouseCyc database of curated metabolic biochemical pathways, including biosynthesis, degradation, energy production, and detoxification. Here users can find mouse genetic and genomic data in the context of physiological and cellular processes integrated with the knowledge base of MGI.</dd>
+			<dd>&bull;&nbsp;Phenotype form redesign<br>
+  The <a href="../nomen/phenotype_data_form.shtml">Phenotype Data Submission Form</a> is for describing (and submitting) new or additional characteristics of spontaneous, induced, or genetically engineered mutations found in MGI.</dd>
+    			</dl>
+			 </td>
+		</tr>
+		</table>
+</td>
+</tr>
+</table>
 
-</blockquote>
-</P>
+
 <!--#include file="include/templateBodyStop.html"-->
 
 
