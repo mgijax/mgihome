@@ -3,118 +3,136 @@
 
 <!--#include file='include/templateBodyStart.html'--> 
 
-
 <!-- Title Bar -->
   <div id="titleBarWrapper">
   <span class="titleBarMainTitle">MGI Professional Opportunities </span>
   </div> 
 <!--end of titleBar-->
 
-<!-- main body table -->
-<div align="center">
-<table width="75%" cellpadding="2">
- <tr><td>
- <!-- TOC table -->
-      <table class="toc" align="center" width="100%">
-	<tr><td>
-            <ul>
-               <!--<li><A href="#bioanalyst">Bioinformatics Analyst</a></li>-->
-               <LI><A HREF="#biologists">Scientific Curators</A></li> | 
-               <!--<LI><A HREF="#ste">Software Quality Assurance Engineer</A>-->
-               <!--<li><a href="#sse23">Scientific Software Engineer II/III</a></h3> -->
-               <!--<LI><A HREF="#dbus">Database User Support: Biologist</A></li>-->
-               <li><a href="#sse">Scientific Software Engineers</a></li> |
-               <li><a href="#tjl">The Jackson Laboratory</a></li> |
-               <li><a href="#hr">Human Resources</a></li>
-           </ul>
-	    </td>
-	  </tr>
-	</table>
-    <!-- end TOC table -->
-     </td>
+<!-- main body  -->
+  
+<table width="85%" cellpadding="2" align="center">
+     	<tr><td>
+     <!-- TOC -->
+          	<table class="toc" width="100%">
+    		<tr><td><ul>
+    		  <li><a href="#biologists">Scientific Curators</a> | </li>
+    		  <li><a href="#sse">Scientific Software Engineers</a> | </li>
+    		  <li><a href="#tjl">The Jackson Laboratory</a> | </li>
+    	          <li><a href="#hr">Human Resources</a></li>
+		  </ul>
+                	
+    	    	</td>
+    	  	</tr>
+    		</table>
+  
+   <!--end TOC  -->
+   	</td></tr>
+  	<tr><td>&nbsp;</td></tr>
+  <!--curators -->
+    	<a name="biologists"></a>
+  	
+		<tr><td>		
+  			<table class="outline" width="100%">
+  		
+  		 	<tr>
+  		  	<td class="enhance"><b>Scientific Curators</b></td>
+  			</tr>
+  			<tr>
+  				<td>
+  				<dl class="linkedList">
+  						<dt>Professional positions as Scientific Curators are available in the Mouse Genome Informatics (MGI) program at The Jackson Laboratory. MGI integrates a wide range of mouse genetic, genomic, and biological data, including gene <nobr>characterization/function</nobr>, gene localization and sequences, homologies and comparative mapping among mammals, phenotype characteristics, allelic variants and mutants, and strain data.</dt>
+  				  
+  						<dt>The Scientific Curator (Phenotypes) is responsible for evaluating, annotating, and integrating mouse phenotype and human disease model data. Applicants should have a strong background in mammalian genetics, comparative genomics, or in the use of mouse mutants as models of human disease. <nobr>Experience/knowledge</nobr> of genetic engineering techniques, disease-specific areas, and embryonic development preferred. Proficiency with mouse nomenclature is a plus.</dt>
+  				  
+  				  		<dt>The Scientific Curator (Sequences and Maps) is responsible for acquiring copy number variant data and emerging large-scale genome sequence data for multiple strains of inbred mice, and for integrating these data with the rich biological knowledge about mouse genes represented in MGI. Applicants should have a strong background in genome sequence analysis and demonstrated proficiency with scripting languages such as PERL or Python. Knowledge of community data format and sharing standards such as GFF and DAS is preferred.</dt><br>
+  		  
+  				    		<dt>The Scientific Curator (Cell Ontology) is responsible for maintaining, improving, and expanding the Cell Ontology, working with users to manage requests for <nobr>new/revised</nobr> terms, and curating cell types in major areas of biology. Applicants should have a strong background in cell biology or organismal biology. <nobr>Experience/knowledge</nobr> of structured vocabularies and biological ontologies is preferred.</dt>
+  						<dt>All positions require individuals with excellent <nobr>writing/communication skills</nobr>, the ability to work effectively in a team environment, and the ability to collaborate and interface well with other laboratories and centers. A Ph.D. degree in Life Sciences preferred; exceptional individuals with M.S. degrees and extensive experience will be considered.</dt>
+  					</dl>
+  			</td>
+  			</tr>
+  				    		
+  			</table>
+
+  		
+  
+  
+    
+    <!--end curator-->
+       </td>
+       </tr>
+  
+   
+       <tr>
+       <td>
+    <!--  sse  -->
+       <a name="sse"></a>
+    		<table class="outline" width="100%">
+    	  		<tr>
+    	  		<td class="enhance"><b>Scientific Software Engineers</b></td>
+    			</tr>
+    		
+    			<tr><td><dl class="linkedList">
+    			  <dt>The Mouse Genome Informatics Group (MGI) has an opening for a mid-level Software Engineer. Our group develops biological databases and software tools used worldwide by scientists and medical researchers who use the laboratory mouse to study genetics and human diseases. The successful candidate will work on a web portal for coordinating data among mouse knockout projects.</dt>		
+    	  		<dt>Applicants must have three or more years of software development experience, be energetic, imaginative, and ready to participate in an interdisciplinary environment combining biology and computer science. Required skills include: relational database programming (SQL), web programming (HTML, CSS, Javascript), object-oriented design, and Unix. B.S. in Computer Science or related field and excellent communication skills are required.  Python, Java, PostgreSQL, Sybase, Drupal, TurboGears, BioMart experience helpful. Strong interest in biology preferred.</dt></dl></td></tr>
+    	  	</table>
+		
+  
+    <!--end of sse-->
+  </td>
   </tr>
+  <tr><td>
+    <!-- JAX  -->
+         <a name="tjl"></a>
+    	<table class="outline" width="100%">
+  		  		<tr>
+  		  		<td class="enhance">
+  		 			<b>The Jackson Laboratory</b></td>
+  				</tr>
+  		  
+  					<tr>
+  						<td>
+  							<dl class="linkedList"><dt>The <a href="http://www.jax.org/">Jackson Laboratory</a> is one of the world's foremost centers for mammalian genetics research. Located in Bar Harbor, Maine, the lab is adjacent to Acadia National Park. Mountains, ocean, forests, lakes, and trails are all within walking distance. If you love high-tech challenges but you're looking for a more natural environment, this could be the opportunity you've been searching for.</dt>
+  				
+  		
+  		  	
+  				<dt><b>Join us!</b> Live on the coast of Maine and  <a href="http://www.acadia.net/anp">walk on the wild side.</a></dt></dl></td>
+  		  		</tr>
+  				</table>
 
- <tr><td>
-<!-- curator table -->
-   	<a name="biologists"></a>
-	<table class="outline" width="100%">
-			<tr>
-			<td>
-			<dl>
-			 <dt><b>Scientific Curators</b></dt><br>
-			<dd>Two professional positions, as Scientific Curators, are available in the Mouse Genome Informatics (MGI) program at The Jackson Laboratory. MGI integrates a wide range of mouse genetic, genomic, and biological data, including gene characterization, gene localization and sequences, homologies and comparative mapping among mammals, phenotype characteristics, allelic variants and mutants, and strain data.</dd><br>
-
-<dd>The Scientific Curator (Phenotypes) is responsible for evaluating, annotating, and integrating mouse phenotype and human disease model data. Applicants should have a strong background in mammalian genetics, comparative genomics, or in the use of mouse mutants as models of human disease. Experience / knowledge of genetic engineering techniques, disease-specific areas, and embryonic development preferred. Proficiency with mouse nomenclature is a plus.</dd><br>
+    <!--end of JAX -->
+  </td>
+  </tr>
+  <!-- hr  -->
+  <tr><td>
+       <a name="hr"></a>
+    	<table class="outline" width="100%">
+  		  		<tr>
+  		  		<td class="enhance"><b>Human Resources</b></td>
+  				</tr>
+  				<tr>
+  		  		<td>	<dl class="linkedList"><dt>
+  		  		Interested individuals should apply on-line at 
+  		<a href="http://www.jax.org/careers">www.jax.org/careers</a>. </dt>
+  		  <dt>The Jackson Laboratory is an Equal Opportunity/Affirmative Action Employer.</dt>
+				</dl></td>
+  					</tr>
+  					
+  	</table>
+  	</td></tr>
+  
+  
+  </table>
+ 
   
 
-<dd>The Scientific Curator (Sequences and Maps) is responsible for acquiring copy number variant data and large-scale genome sequence data which are emerging for multiple strains of inbred mice and integrating these data with the rich biological knowledge about mouse genes represented in MGI. Applicants should have a strong background in genome sequence analysis and demonstrated proficiency with such scripting languages as PERL or Python. Knowledge of community data format and sharing standards such as GFF and DAS is preferred.</dd><br>
-<dd>Both positions require individuals with excellent writing/communication skills, the ability to work effectively in a team environment, and the ability to collaborate and interface well with other laboratories and centers. A Ph.D. degree in Life Sciences preferred; exceptional individuals with M.S. degrees and extensive experience will be considered.
-			</dd>
-			</dl>
-			</td>
-			</tr>
-	</table>
-<!--end curator table-->
-     </td>
-     </tr>
-<tr><td>
 
-<!--  sse table -->
-   <a name="sse"></a>
-		<table class="outline" width="100%">
-			<tr>
-			<td>
-			<dl>
-			 <dt><b>Scientific Software Engineers</b></dt><br>
-			<dd>The Mouse Genome Informatics Group (MGI) has an opening for a mid-level Software Engineer. Our group develops biological databases and software tools used worldwide by scientists and medical researchers who use the laboratory mouse to study genetics and human diseases. The successful candidate will work on a web portal for coordinating data among mouse knockout projects.</dd><br>
-			
-			<dd>Applicants must have three or more years of software development experience, be energetic, imaginative, and ready to participate in an interdisciplinary environment combining biology and computer science. Required skills include: relational database programming (SQL), web programming (HTML, CSS, Javascript), object-oriented design, and Unix. B.S. in Computer Science or related field and excellent communication skills are required.  Python, Java, PostgreSQL, Sybase, Drupal, TurboGears, BioMart experience helpful. Strong interest in biology preferred.
-                               </dd>
-			</dl>
-			</td>
-			</tr>
-		</table>
-<!--end of sse table-->
-   </td>
-  </tr>
-  <tr><td>
-<!-- JAX table -->
-     <a name="tjl"></a>
-		<table class="outline" width="100%">
-			<tr>
-			<td><dl>
-			  <dt><b>The Jackson Laboratory</b></dt>
-			<br>			
-			<dd>The <a href="http://www.jax.org/">Jackson Laboratory</a> is one of the world's foremost centers for mammalian genetics research. Located in Bar Harbor, Maine, the lab is adjacent to Acadia National Park. Mountains, ocean, forests, lakes, and trails are all within walking distance. If you love high-tech challenges but you're looking for a more natural environment, this  
-			</dd>
-			<br>
-			<dd><b>Join us!</b> Live on the coast of Maine and  <a href="http://www.acadia.net/anp">walk on the wild side.</a></td>
-			</tr>
-		</table>
-<!--end of JAX table-->
-     </td>
-  </tr>
-  <tr><td>
-<!-- hr table -->
-   <a name="hr"></a>
-		<table class="outline" width="100%">
-			<tr>
-			<td><dl>
-			  <dt><b>Human Resources</b></dt><br>
-			  <dd>Interested individuals should apply on-line at <a href="http://www.jax.org/careers">www.jax.org/careers</a>. </p>
-The Jackson Laboratory is an Equal Opportunity/Affirmative Action Employer.</dd>
-			</td>
-			</tr>
-		</table>
-<!--end hr table-->
-
-	</td></tr>
-</table>
-
-</div>
 <!--#include file='include/templateBodyStop.html'--> 
 </body>
 </html>
+
+
 
 <!--<h3><a name="sse"></a></h3>
 
