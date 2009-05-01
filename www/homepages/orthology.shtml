@@ -149,16 +149,16 @@
     the a crash in IE6, and display problems in IE 6 & 7.  I also
     needed to put this div in a table to get the fix to work.  The
     order otf the table and div tags is very specific to avoid some
-    flickering in IE.                                            -->
+    flickering in IE. -->
 <table width="100%" cellpadding="0" cellspacing="0" border="0"><tr><td>
 <div class="boxWide marginBottom">
 	<!-- This is where the tabbed section is defined. -->
 	<ul id="orthotab" class="shadetabs">
 		<!-- This is where the tabbed section is defined. -->
-		<li	><a href="<!--#include file='include/mgihome_url.html'-->homepages/tabContents/Ortho_About.shtml" rel="ajaxcontentarea">About MGI Orthology</a></li>
-		<li	><a href="<!--#include file='include/mgihome_url.html'-->homepages/tabContents/Ortho_Reports.shtml" rel="ajaxcontentarea">Orthology Reports</a></li>
+		<li><a href="<!--#include file='include/mgihome_url.html'-->homepages/tabContents/Ortho_About.shtml" rel="ajaxcontentarea">About MGI Orthology</a></li>
+		<li><a href="<!--#include file='include/mgihome_url.html'-->homepages/tabContents/Ortho_Reports.shtml" rel="ajaxcontentarea">Orthology Reports</a></li>
 		<li class="selected"><a href="<!--#include file='include/mgihome_url.html'-->homepages/tabContents/Ortho_Help.shtml" rel="ajaxcontentarea">Help Documents</a></li>
-		<li	><a href="<!--#include file='include/mgihome_url.html'-->homepages/tabContents/Ortho_Resources.shtml" rel="ajaxcontentarea">Other Links</a></li>
+		<li><a href="<!--#include file='include/mgihome_url.html'-->homepages/tabContents/Ortho_Resources.shtml" rel="ajaxcontentarea">Other Links</a></li>
 
 
 	</ul>
@@ -175,7 +175,7 @@
 </div>
 </table>
 
-<!------------- AJAX TABS CALLS -------------------------------------------------------->
+<!--AJAX TABS CALLS -->
 
 <script type="text/javascript" src="<!--#include file="include/javascript.html"-->">">
     /***********************************************

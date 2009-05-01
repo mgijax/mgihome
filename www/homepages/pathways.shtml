@@ -122,31 +122,26 @@
 </table>
 
 <!-- News box -->
-<!------------------------------ NO NEWS BOX FOR BIOCHEMICAL PATHWAYS MINI-HOME PAGE --------------------------
+<!-- NO NEWS BOX FOR BIOCHEMICAL PATHWAYS MINI-HOME PAGE -->
 	<div class="boxWide blueBorder marginBottom">
 	<div class="boxTitle">
-
 		<!-- Box-title goes here -->
-<!--		<div class="left">Box title left</div>
-		<div class="right">Box title right (date)</div>
-
+	<!--<div class="left">Box title left</div>
+	<div class="right">Box title right (date)</div>-->	
+		<!-- News content -->
+		<!--<div class="boxBG pad5 small">There is some news to insert here.-->	
+		<!-- link to more news page -->
+		<!--<a class="small homeLink" href="#">More news</a>
+		</div>-->
 	</div>
--->	<!-- News content -->
-<!--	<div class="boxBG pad5 small">
-
-		There is some news to insert here.
--->		<!-- link to more news page -->
-<!--		<a class="small homeLink" href="#">More news</a>
-
 	</div>
-</div>-->
 
 <!-- Tabs box -->
 <!-- Note: This section uses a white gif to set the width and avoid
     the a crash in IE6, and display problems in IE 6 & 7.  I also
     needed to put this div in a table to get the fix to work.  The
     order otf the table and div tags is very specific to avoid some
-    flickering in IE.                                            -->
+    flickering in IE.-->
 <table width="100%" cellpadding="0" cellspacing="0" border="0"><tr><td>
 <div class="boxWide marginBottom">
 	<!-- This is where the tabbed section is defined. -->
@@ -170,7 +165,7 @@
 </table>
 
 
-<!------------- AJAX TABS CALLS -------------------------------------------------------->
+<!--AJAX TABS CALLS-->
 
 <script type="text/javascript" src="<!--#include file="include/javascript.html"-->">">
     /***********************************************

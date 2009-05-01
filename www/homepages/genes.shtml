@@ -166,7 +166,7 @@
     the a crash in IE6, and display problems in IE 6 & 7.  I also
     needed to put this div in a table to get the fix to work.  The
     order otf the table and div tags is very specific to avoid some
-    flickering in IE.                                            -->
+    flickering in IE. -->
 <table width="100%" cellpadding="0" cellspacing="0" border="0"><tr><td>
 <div class="boxWide marginBottom">
 	<!-- This is where the tabbed section is defined. -->
@@ -189,7 +189,7 @@
 </div>
 </table>
 
-<!------------- AJAX TABS CALLS -------------------------------------------------------->
+<!-- AJAX TABS CALLS -->
 
 <script type="text/javascript" src="<!--#include file="include/javascript.html"-->">">
     /***********************************************
