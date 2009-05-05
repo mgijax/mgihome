@@ -142,22 +142,20 @@
       <div class="boxTitle">
           <div class="left">FAQs</div>
       </div>
-      <div class="boxBG pad5">
-      <dl class="boxList">
-      <dt>How do I...</dt>
-
-      <dd class="faqListHomePage">.. search for genes by genomic interval?
-        <a class="small homeLink"
-          onClick='javascript:openFaqWindow("GM_marker.shtml"); return false;'
-          href="<!--#include file='include/faq_url.html'-->GM_marker.shtml">FAQ
-        </a>
-      </dd>
-      <dd class="faqListHomePage">.. find mutations for phenotypes or diseases?
-        <a class="small homeLink"
-          onClick='javascript:openFaqWindow("PAD_allele.shtml"); return false;'
-          href="<!--#include file='include/faq_url.html'-->PAD_allele.shtml">FAQ
-        </a>
-      </dd>
+           <div class="boxBG pad5">
+      		<dl class="boxList">
+     		 <dt>How do I...</dt>
+       		 <dd class="faqListHomePage">.. search for genes by genomic interval?
+		    <a class="small homeLink" 
+                    onClick='javascript:openFaqWindow("GM_marker.shtml"); return false;'
+                    href="<!--#include file='include/faq_url.html'-->GM_marker.shtml">FAQ</a>
+                </dd>
+                <dd class="faqListHomePage">.. find mutations for phenotypes or diseases?
+                <a class="small homeLink"
+                onClick='javascript:openFaqWindow("PAD_allele.shtml"); return false;'
+                href="<!--#include file='include/faq_url.html'-->PAD_allele.shtml">FAQ
+        	</a>
+      		</dd>
       <dd class="faqListHomePage">.. find expression data?
         <a class="small homeLink"
           onClick='javascript:openFaqWindow("GXD_GeneTissue.shtml"); return false;'
@@ -185,13 +183,15 @@
 
     <div class="blueBorder leftCenterMargin">
       <div class="boxTitle">
-        <div class="left">News</div>
-        <div class="right small">March 26, 2009 &nbsp;</div>
+        <div class="left">News
+	</div>
+        <div class="right small">March 26, 2009 &nbsp;
+	</div>
       </div>
-      <div class="boxBG pad5">
+        <div class="boxBG pad5">
         <ul class="newsList"><br/>
 <li>MGI 4.21:  access and analyze gene expression data using the <a href="<!--#include file='include/java_url.html'-->WIFetch?page=batchQF">MGI Batch Query</a> tool. <a class="homeLink" href="<!--#include file="include/mgihome_url.html"-->news/whatsnew.shtml">Read more...</a></li>
-<li>MGI 4.2 release features enhancements to the MGI Quick Search tool. <a class="homeLink" href="<!--#include file="include/mgihome_url.html"-->news/whatsnew.shtml">Read more...</li>
+<li>MGI 4.2 release features enhancements to the MGI Quick Search tool. <a class="homeLink" href="<!--#include file="include/mgihome_url.html"-->news/whatsnew.shtml">Read more...</a></li>
             </ul>
         
         <!--spacer: adjust  to make this the same height as the access box-->
