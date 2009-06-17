@@ -56,12 +56,12 @@ SP=Full text
 	url = ${MGIHOME}/egul/93013/93013.pdf
 	]
 #
-#  1. mutation symbol:js-2J; mutation name:Jackson-shaker 2J; gene symbol:Ush1g
+#  1. mutation symbol:js-2J; mutation name:Jackson-shaker 2J; gene symbol:
 #
 [
 	id = J:112552
 	type = ${SP}
-	url = http://www.jax.org/mmr/mmrremutationjs-2j.html
+	url = http://mousemutant.jax.org/articles/mmrremutationjs-2j.html
 	]
 #
 #  2. mutation symbol:vtg-4J; mutation name:vertigo 4J;  gene symbol:Kcnq1
@@ -69,19 +69,22 @@ SP=Full text
 [
 	id = J:112553
 	type = ${SP}
-	url = http://www.jax.org/mmr/mmrremutationvtg4j.html
+	url = http://mousemutant.jax.org/articles/mmrremutationvtg4j.html
         ]
 #
 #  3. mutation symbol:Wtgr; mutation name:wavy tiger;  gene symbol:---no link
 #
-#[	id = J:	type = ${SP}	url = 	]
+[	id = J:	
+	type = ${SP}	
+	url = http://mousemutant.jax.org/articles/mmrmutantwavytiger.html
+	]
 #
 #  4. mutation symbol:Dfb; mutation name:deaf ballerina;  gene symbol:----
 #
 [
 	id = J:110189
 	type = ${SP}
-	url = http://www.jax.org/mmr/mmrmutationdfb.html
+	url = http://mousemutant.jax.org/articles/mmrmutationdfb.html
 	]
 #
 #  5. mutation symbol:sunk; mutation name:sunken;  gene symbol:----
@@ -89,7 +92,7 @@ SP=Full text
 [
 	id = J:109438
 	type = ${SP}
-	url = http://www.jax.org/mmr/mmrmutantsunk.html
+	url = http://mousemutant.jax.org/articles/mmrmutantsunk.html
 	]
 #
 #  6.mutation symbol:sevr; mutation name:severe runting;  gene symbol:----
@@ -97,18 +100,18 @@ SP=Full text
 [
 	id = J:109437
 	type = ${SP}
-	url = http://www.jax.org/mmr/mmrmutantsevr.html
+	url = http://mousemutant.jax.org/articles/mmrmutantsevr.html
 	]
 #
 #  7. mutation symbol:shi-J; mutation name:shiverer Jackson;  gene symbol:Mbp
-#[	id = J:	type = ${SP}	url = http://www.jax.org/mmr/mmrremutationshiJ.html	]
+#[	id = J:117543 	type = ${SP}	url = http://mousemutant.jax.org/articles/mmrremutationshiJ.html	]
 #
 #  8.mutation symbol:sv-2J; mutation name:Snell's waltzer2 Jackson;  gene symbol:Myo6
 #
 [
 	id = J:109355
 	type = ${SP}
-	url = http://www.jax.org/mmr/mmrmutantsv2j.html
+	url = http://mousemutant.jax.org/articles/mmrmutantsv2j.html
 	]
 #
 #  9.mutation symbol:Shar; mutation name:shiny and rough;  gene symbol:---
@@ -116,7 +119,7 @@ SP=Full text
 [
 	id = J:107050
 	type = ${SP}
-	url = http://www.jax.org/mmr/mmrmutantshar.html
+	url = http://mousemutant.jax.org/articles/mmrmutantshar.html
 	]
 #
 #  10.mutation symbol:sl-21J; mutation name:steel 21 Jackson;  gene symbol:Kitl
@@ -124,7 +127,7 @@ SP=Full text
 [
 	id = J:107116
 	type = ${SP}
-	url = http://www.jax.org/mmr/mmrremutationsteel21jackson.html
+	url = http://mousemutant.jax.org/articles/mmrremutationsteel21jackson.html
 	]
 #
 #  11.mutation symbol:bg-16J; mutation name:beige 16 Jackson;  gene symbol:Lyst
@@ -132,7 +135,7 @@ SP=Full text
 [
 	id = J:107049
 	type = ${SP}
-	url = http://www.jax.org/mmr/mmrremutationbeige16J.html
+	url = http://mousemutant.jax.org/articles/mmrremutationbeige16J.html
 	]
 #
 #  12.mutation symbol:Xsl; mutation name:extra-toes spotting-like;  gene symbol:
@@ -140,7 +143,7 @@ SP=Full text
 [
 	id = J:106090
 	type = ${SP}
-	url = http://www.jax.org/mmr/mmrmutantxsl.html
+	url = http://mousemutant.jax.org/articles/mmrmutantxsl.html
 	]
 #
 #  13.mutation symbol:rslk-2J; mutation name:recessive spotting-like 2 Jackson;  gene symbol:
@@ -148,7 +151,7 @@ SP=Full text
 [
 	id = J:106089
 	type = ${SP}
-	url = http://www.jax.org/mmr/mmrremutationrslk2j.html
+	url = http://mousemutant.jax.org/articles/mmrremutationrslk2j.html
 	]  
 #
 #  14.mutation symbol:rcw-4J; mutation name:recoil wobbler 4 Jackson;  gene symbol:
@@ -156,7 +159,7 @@ SP=Full text
 [
 	id = J:104879
 	type = ${SP}
-	url = http://www.jax.org/mmr/mmrremutationrcw4J.html
+	url = http://mousemutant.jax.org/articles/mmrremutationrcw4J.html
 	]
 #
 #  15.mutation symbol:uwl; mutation name:underwhite-like;  gene symbol:Slc45a2 (unproven)
@@ -164,7 +167,7 @@ SP=Full text
 [
 	id = J:104143
 	type = ${SP}
-	url = http://www.jax.org/mmr/mmrmutantuwl.html
+	url = http://mousemutant.jax.org/articles/mmrmutantuwl.html
 	]
 #
 #  16.mutation symbol:pe-16J; mutation name:Pearl 16 Jackson;  gene symbol:Ap3b1
@@ -172,7 +175,7 @@ SP=Full text
 [
 	id =  J:105129
 	type = ${SP}
-	url = http://www.jax.org/mmr/mmrmutantpe16j.html
+	url = http://mousemutant.jax.org/articles/mmrmutantpe16j.html
 	]
 #
 #  17.mutation symbol:pe-15J; mutation name:Pearl 15 Jackson;  gene symbol:Ap3b1
@@ -180,7 +183,7 @@ SP=Full text
 [
 	id = J:105128
 	type = ${SP}
-	url = http://www.jax.org/mmr/mmrmutationpe15j.html
+	url = http://mousemutant.jax.org/articles/mmrmutationpe15j.html
 	]
 #
 #  18.mutation symbol:trls; mutation name:tremor & reduced lifespan;  gene symbol:
@@ -188,7 +191,7 @@ SP=Full text
 [
 	id = J:103185
 	type = ${SP}
-	url = http://www.jax.org/mmr/MMRMutanttrls.html
+	url = http://mousemutant.jax.org/articles/MMRMutanttrls.html
 	]
 #
 #  19.mutation symbol:stpm; mutation name:short term perm;  gene symbol:
@@ -196,7 +199,7 @@ SP=Full text
 [
 	id = J:100186
 	type = ${SP}
-	url = http://www.jax.org/mmr/MMR_mutant_stpm.html
+	url = http://mousemutant.jax.org/articles/MMR_mutant_stpm.html
 	]
 #
 #  20.mutation symbol:calre; mutation name:caracul-like recessive;  gene symbol:Krt71 (unproven)
@@ -204,7 +207,7 @@ SP=Full text
 [
 	id =  J:100248
 	type = ${SP}
-	url = http://www.jax.org/mmr/MMRremutationcalre.html
+	url = http://mousemutant.jax.org/articles/MMRremutationcalre.html
 	]
 #
 #  21.mutation symbol:rslk; mutation name:recessive spotting-like;  gene symbol:
@@ -212,7 +215,7 @@ SP=Full text
 [
 	id = J:100245  
 	type = ${SP}
-	url = http://www.jax.org/mmr/mmrmutantrslk.html
+	url = http://mousemutant.jax.org/articles/mmrmutantrslk.html
 	]   
 #
 #  22.mutation symbol:chtl-2J; mutation name:chocolate-like 2 Jackson;  gene symbol:Rab38
@@ -220,7 +223,7 @@ SP=Full text
 [
 	id = J:98900
 	type = ${SP}
-	url = http://www.jax.org/mmr/chocolate2j.html 
+	url = http://mousemutant.jax.org/articles/chocolate2j.html 
 	]
 #
 #  23.mutation symbol:v-7J; mutation name:waltzer 7 Jackson;  gene symbol:Cdh23
@@ -228,7 +231,7 @@ SP=Full text
 [
 	id = J:97759
 	type = ${SP}
-	url = http://www.jax.org/mmr/walter7jackson.html
+	url = http://mousemutant.jax.org/articles/walter7jackson.html
 	]
 #
 #  24.mutation symbol:rcw-3j; mutation name:recoil wobbler 3 Jackson;  gene symbol:
@@ -236,7 +239,7 @@ SP=Full text
 [
 	id = J:98757
 	type = ${SP}
-	url = http://www.jax.org/mmr/mmrremutationrcw3j.html
+	url = http://mousemutant.jax.org/articles/mmrremutationrcw3j.html
 	]
 #
 #  25.mutation symbol:rl-5J; mutation name:reeler 5 Jackson;  gene symbol:Reln
@@ -244,7 +247,7 @@ SP=Full text
 [
 	id = J:98756
 	type = ${SP}
-	url = http://www.jax.org/mmr/mmrremutationreeler5j.html
+	url = http://mousemutant.jax.org/articles/mmrremutationreeler5j.html
 	]
 #
 #  26.mutation symbol:shmy-2J; mutation name:shimmy 2 Jackson;  gene symbol:---
@@ -252,7 +255,7 @@ SP=Full text
 [
 	id = J:98755
 	type = ${SP}
-	url = http://www.jax.org/mmr/mmrremutationshimmy2j.html
+	url = http://mousemutant.jax.org/articles/mmrremutationshimmy2j.html
 	]
 #
 #  27.mutation symbol:shmy3J; mutation name:shimmy 3 Jackson;  gene symbol:
@@ -260,7 +263,7 @@ SP=Full text
 [
 	id = J:98864
 	type = ${SP}
-	url = http://www.jax.org/mmr/mmrremutationshmyl.html
+	url = http://mousemutant.jax.org/articles/mmrremutationshmyl.html
 	]
 #
 #  28.mutation symbol:pcd-7J; mutation name:Purkinje cell degeneration 7 Jackson;  gene symbol:Aqtpbp1
@@ -268,7 +271,7 @@ SP=Full text
 [
 	id = J:96855
 	type = ${SP}
-	url = http://www.jax.org/mmr/mmrremutationpcd7j.html
+	url = http://mousemutant.jax.org/articles/mmrremutationpcd7j.html
 	]
 #
 #  29.mutation symbol:pe-14J; mutation name:pearl 14 Jackson;  gene symbol:Ap3b1
@@ -276,7 +279,7 @@ SP=Full text
 [
 	id = J:99882
 	type = ${SP}
-	url = http://www.jax.org/mmr/MMRremutationpe14J.html
+	url = http://mousemutant.jax.org/articles/MMRremutationpe14J.html
 	]
 #
 #  30.mutation symbol:qk-2J; mutation name:Quaking 2 Jackson;  gene symbol:QK
@@ -284,7 +287,7 @@ SP=Full text
 [
 	id =  J:97293
 	type = ${SP}
-	url = http://www.jax.org/mmr/mmrremutationquaking2j.html
+	url = http://mousemutant.jax.org/articles/mmrremutationquaking2j.html
 	]
 #
 #  31.mutation symbol:sh2-3J; mutation name:shaker 2 3 Jackson;  gene symbol:Myo15
@@ -292,7 +295,7 @@ SP=Full text
 [
 	id = J:96071
 	type = ${SP}
-	url = http://www.jax.org/mmr/mmrremutationsh23J.html
+	url = http://mousemutant.jax.org/articles/mmrremutationsh23J.html
 	]
 #
 #  32.mutation symbol:rul; mutation name:ruffled;  gene symbol:-----
@@ -300,7 +303,7 @@ SP=Full text
 [
 	id = J:96444
 	type = ${SP}
-	url = http://www.jax.org/mmr/mmrmutantrul.html
+	url = http://mousemutant.jax.org/articles/mmrmutantrul.html
 	]
 #
 #  33.mutation symbol:Pe-13J; mutation name:pearl 13 Jackson;  gene symbol:Ab3b1
@@ -308,7 +311,7 @@ SP=Full text
 [
 	id =  J:95723
 	type = ${SP}
-	url = http://www.jax.org/mmr/mmrremutation_pe13J.html
+	url = http://mousemutant.jax.org/articles/mmrremutation_pe13J.html
 	]
 #
 #  34.mutation symbol:Cal7; mutation name:caracul-like;  gene symbol:Krt71 (unproven)
@@ -316,7 +319,7 @@ SP=Full text
 [
 	id = J:94882
 	type = ${SP}
-	url = http://www.jax.org/mmr/mmrremutationcal7.html
+	url = http://mousemutant.jax.org/articles/mmrremutationcal7.html
 	]
 #
 #  35.mutation symbol:sfx-2J; mutation name:spontaneous fracture 2 Jackson;  gene symbol:Gulo
@@ -324,7 +327,7 @@ SP=Full text
 [
 	id = J:96441
 	type = ${SP}
-	url = http://www.jax.org/mmr/mmrremutationsfx2j.html
+	url = http://mousemutant.jax.org/articles/mmrremutationsfx2j.html
 	]
 #
 #  36.mutation symbol:ho-15J; mutation name:hotfoot 15 Jackson;  gene symbol:Grid2
@@ -332,7 +335,7 @@ SP=Full text
 [
 	id = J:94301
 	type = ${SP}
-	url = http://www.jax.org/mmr/mmrmutantho15j.html
+	url = http://mousemutant.jax.org/articles/mmrmutantho15j.html
 	]
 #
 #  37.mutation symbol:awaq; mutation name:ages with abnormal gait;  gene symbol:----
@@ -340,7 +343,7 @@ SP=Full text
 [
 	id = J:94744
 	type = ${SP}
-	url = http://www.jax.org/mmr/mmrmutantawag.html
+	url = http://mousemutant.jax.org/articles/mmrmutantawag.html
 	]
 #
 #  38.mutation symbol:rcw-2J; mutation name:recoil wobbler 2 Jackson;  gene symbol:---
@@ -348,7 +351,7 @@ SP=Full text
 [
 	id = J:97119
 	type = ${SP}
-	url = http://www.jax.org/mmr/mmrremutationrcw2J.html
+	url = http://mousemutant.jax.org/articles/mmrremutationrcw2J.html
 	]
 #
 #  39.mutation symbol:Cal6; mutation name:caracul-like 6;  gene symbol:Krt71 (unproven)
@@ -356,7 +359,7 @@ SP=Full text
 [
 	id = J:92930
 	type = ${SP}
-	url = http://www.jax.org/mmr/mmrremutationcal6.html
+	url = http://mousemutant.jax.org/articles/mmrremutationcal6.html
 	]
 #
 #  40.mutation symbol:med-jo-2J; mutation name:jolting 2 Jackson;  gene symbol:Scn8a
@@ -364,7 +367,7 @@ SP=Full text
 [
 	id = J:92160
 	type = ${SP}
-	url = http://www.jax.org/mmr/mmrremutationmedjo_2j.html
+	url = http://mousemutant.jax.org/articles/mmrremutationmedjo_2j.html
 	]
 #
 #  41.mutation symbol:tth; mutation name:tremor with tilted head;  gene symbol:---
@@ -372,7 +375,7 @@ SP=Full text
 [
 	id = J:91623
 	type = ${SP}
-	url = http://www.jax.org/mmr/mmrmutanttth.html
+	url = http://mousemutant.jax.org/articles/mmrmutanttth.html
 	]
 #
 #  42.mutation symbol:Sls; mutation name:Semidominant lethal spotting;  gene symbol:Edn3 (unproven)
@@ -380,7 +383,7 @@ SP=Full text
 [
 	id = J:91387
 	type = ${SP}
-	url = http://www.jax.org/mmr/mmrmutantsls.html
+	url = http://mousemutant.jax.org/articles/mmrmutantsls.html
 	]
 #
 #  43.mutation symbol:pu-J; mutation name:pudgy Jackson;  gene symbol:D113
@@ -388,7 +391,7 @@ SP=Full text
 [
 	id = J:88762
 	type = ${SP}
-	url = http://www.jax.org/mmr/mmr_remutation_puJ.html
+	url = http://mousemutant.jax.org/articles/mmr_remutation_puJ.html
 	]
 #
 #  44.mutation symbol:ctl; mutation name:curly tail-like;  gene symbol:----
@@ -396,7 +399,7 @@ SP=Full text
 [
 	id =  J:91389
 	type = ${SP}
-	url = http://www.jax.org/mmr/mmrmutantctl.html
+	url = http://mousemutant.jax.org/articles/mmrmutantctl.html
 	]
 #
 #  45.mutation symbol:Cal4; mutation name:caracul-like 4;  gene symbol:Krt71 (unproven)
@@ -404,7 +407,7 @@ SP=Full text
 [
 	id = J:90778
 	type = ${SP}
-	url = http://www.jax.org/mmr/mmrmutantcal4.html
+	url = http://mousemutant.jax.org/articles/mmrmutantcal4.html
 	]
 #
 #  46.mutation symbol:Cal5; mutation name:caracul-like 5;  gene symbol:Krt71 (unproven)
@@ -412,7 +415,7 @@ SP=Full text
 [
 	id = J:91654
 	type = ${SP}
-	url = http://www.jax.org/mmr/mmrmutantcal5.html
+	url = http://mousemutant.jax.org/articles/mmrmutantcal5.html
 	]
 #
 #  47.mutation symbol:Mo-pew-3J; mutation name:pewter 3 Jackson;  gene symbol:Atp7a
@@ -420,7 +423,7 @@ SP=Full text
 [
 	id = J:88763
 	type = ${SP}
-	url = http://www.jax.org/mmr/mmrmutantpewter3j.html
+	url = http://mousemutant.jax.org/articles/mmrmutantpewter3j.html
 	]
 #
 #  48.mutation symbol:baw; mutation name:black and white;  gene symbol:---
@@ -428,7 +431,7 @@ SP=Full text
 [
 	id = J:90138
 	type = ${SP}
-	url = http://www.jax.org/mmr/mmrmutantbaw.html 
+	url = http://mousemutant.jax.org/articles/mmrmutantbaw.html 
 	]
 #
 #  49.mutation symbol:dal; mutation name:dark-like  gene symbol:---
@@ -436,7 +439,7 @@ SP=Full text
 [
 	id = J:87005
 	type = ${SP}
-	url = http://www.jax.org/mmr/mmr_mutant_dal.html
+	url = http://mousemutant.jax.org/articles/mmr_mutant_dal.html
 	]
 #
 #  50.mutation symbol:lh-3J; mutation name:lethargic 3 Jackson;  gene symbol:Cacnb4lh
@@ -444,7 +447,7 @@ SP=Full text
 [
 	id = J:88414
 	type = ${SP}
-	url = http://www.jax.org/mmr/mmr_remutation_lh_3j.html
+	url = http://mousemutant.jax.org/articles/mmr_remutation_lh_3j.html
 	]
 #
 #  51.mutation symbol:agil; mutation name:agitans-like;  gene symbol:----
@@ -452,7 +455,7 @@ SP=Full text
 [
 	id = J:84746
 	type = ${SP}
-	url = http://www.jax.org/mmr/mmrmutantagil.html
+	url = http://mousemutant.jax.org/articles/mmrmutantagil.html
 	]
 #
 #  52.mutation symbol:av-jfb; mutation name:Ames waltzer James F Battery  gene symbol:Pcdh15
@@ -460,7 +463,7 @@ SP=Full text
 [
 	id = J:81272
 	type = ${SP}
-	url = http://www.jax.org/mmr/mmr_remutation_av4j.html
+	url = http://mousemutant.jax.org/articles/mmr_remutation_av4j.html
 	]
 #
 #  53.mutation symbol:chtl; mutation name:chocolate-like;  gene symbol:Rab38 (unproven)
@@ -468,7 +471,7 @@ SP=Full text
 [
 	id = J:82799
 	type = ${SP}
-	url = http://www.jax.org/mmr/mmr_mutant_chtl.html
+	url = http://mousemutant.jax.org/articles/mmr_mutant_chtl.html
 	]
 #
 #  54.mutation symbol:cn2J; mutation name:achondroplasia 2 Jackson; gene symbol:Npr2
@@ -476,7 +479,7 @@ SP=Full text
 [
 	id = J:72465
 	type = ${SP}
-	url = http://www.jax.org/mmr/cn2j.html
+	url = http://mousemutant.jax.org/articles/cn2j.html
 	]
 #
 #  55.mutation symbol:ld-3J; mutation name:limb deformity 3 Jackson  gene symbol:Fmn1
@@ -484,7 +487,7 @@ SP=Full text
 [
 	id = J:82800
 	type = ${SP}
-	url = http://www.jax.org/mmr/limbdeformity.html
+	url = http://mousemutant.jax.org/articles/limbdeformity.html
 	]
 #
 #  56.mutation symbol:gaxp; mutation name:giant axonopathy  gene symbol:Fmn1
@@ -492,7 +495,7 @@ SP=Full text
 [	
 	id = J:82451
 	type = ${SP}	
-	url = http://www.jax.org/mmr/MMR_Mutant_gaxp.html	
+	url = http://mousemutant.jax.org/articles/MMR_Mutant_gaxp.html	
 	]
 #
 #  57.mutation symbol:hslt; mutation name:head slant  gene symbol:Noxo1
@@ -500,7 +503,7 @@ SP=Full text
 [	
 	id = J:86035	
 	type = ${SP}	
-	url = http://www.jax.org/mmr/hslt.html
+	url = http://mousemutant.jax.org/articles/hslt.html
 	]
 #
 #  58a.mutation symbol:Hxl; mutation name: hemimelic extra toes-like gene symbol:
@@ -508,7 +511,7 @@ SP=Full text
 [	
 	id = J:82812
 	type = ${SP}	
-	url = http://www.jax.org/mmr/mmr_mutant_hxl_and_hxl2.html
+	url = http://mousemutant.jax.org/articles/mmr_mutant_hxl_and_hxl2.html
 	]
 #
 #  58b.mutation symbol:Hxl2; mutation name:hemimelic extra toes-like 2  gene symbol:
@@ -516,7 +519,7 @@ SP=Full text
 [	
 	id = J:83105
 	type = ${SP}	
-	url = http://www.jax.org/mmr/mmr_mutant_hxl_and_hxl2.html
+	url = http://mousemutant.jax.org/articles/mmr_mutant_hxl_and_hxl2.html
 	]
 #
 #  59.mutation symbol:ingls; mutation name:infantile gliosis; gene symbol:
@@ -524,7 +527,7 @@ SP=Full text
 [	
 	id = J:81516
 	type = ${SP}	
-	url = http://www.jax.org/mmr/gliosis_paper.html
+	url = http://mousemutant.jax.org/articles/gliosis_paper.html
 	]
 #
 #  60.mutation symbol:jgl; mutation name:jagged tail-like;  gene symbol:
@@ -532,7 +535,7 @@ SP=Full text
 [	
 	id = J:85852
 	type = ${SP}	
-	url = http://www.jax.org/mmr/MMR_Mutant_jgl.html
+	url = http://mousemutant.jax.org/articles/MMR_Mutant_jgl.html
 	]
 #
 #  61.mutation symbol:Jackson waltzer; mutation name:  gene symbol:otx1;
@@ -540,7 +543,7 @@ SP=Full text
 [	
 	id = J:86284	
 	type = ${SP}	
-	url = http://www.jax.org/mmr/mmr_mutant_jv.html	
+	url = http://mousemutant.jax.org/articles/mmr_mutant_jv.html	
 	]
 #
 #  62.mutation symbol:lbab; mutation name:long bone abnormality  gene symbol:
@@ -548,7 +551,7 @@ SP=Full text
 [	
 	id = J:79175	
 	type = ${SP}	
-	url = http://www.jax.org/mmr/lbab.html	
+	url = http://mousemutant.jax.org/articles/lbab.html	
 	]
 #
 #  63.mutation symbol:lew; mutation name:lethal wasting; gene symbol:
@@ -556,7 +559,7 @@ SP=Full text
 [	
 	id = J:81354
 	type = ${SP}	
-	url = http://www.jax.org/mmr/wasting.html
+	url = http://mousemutant.jax.org/articles/wasting.html
 	]
 #
 #  64.mutation symbol:lxl2; mutation name: luxate-like2 gene symbol:
@@ -564,7 +567,7 @@ SP=Full text
 [	
 	id = J:79041	
 	type = ${SP}	
-	url = http://www.jax.org/mmr/lxl2.html
+	url = http://mousemutant.jax.org/articles/lxl2.html
 	]
 #
 #  65.mutation symbol:mdig; mutation name:malformed digits; gene symbol:
@@ -572,7 +575,7 @@ SP=Full text
 [	
 	id = J:83757
 	type = ${SP}	
-	url = http://www.jax.org/mmr/mmr_mutant_mdig.html	
+	url = http://mousemutant.jax.org/articles/mmr_mutant_mdig.html	
 	]
 #
 #  66.mutation symbol:pcd-5J; name:Purkinje cell degeneration 5 Jackson; symbol:Aqtpbp1
@@ -580,14 +583,14 @@ SP=Full text
 [	
 	id = J:83266	
 	type = ${SP}	
-	url = http://www.jax.org/mmr/pcd5j.html
+	url = http://mousemutant.jax.org/articles/pcd5j.html
 	]
 #
 #  67.mutation symbol:rb; mutation name:rabbit  gene symbol:Epha4
 [	
 	id = J:87289	
 	type = ${SP}	
-	url = http://www.jax.org/mmr/MMR_Mutants_rb_and_rb-2J.html
+	url = http://mousemutant.jax.org/articles/MMR_Mutants_rb_and_rb-2J.html
 	]
 #
 #  68.mutation symbol:rcw; mutation name:recoil wobbler  gene symbol:
@@ -595,7 +598,7 @@ SP=Full text
 [
 	id = J:83427	
         type = ${SP}	
-        url = http://www.jax.org/mmr/MMR_Mutant_rcw.html
+        url = http://mousemutant.jax.org/articles/MMR_Mutant_rcw.html
 	]
 #
 #  69.mutation symbol:snol; mutation name:snubnose-like  gene symbol:
@@ -603,7 +606,7 @@ SP=Full text
 [
 	id = J:78986
         type = ${SP}	
-        url = http://www.jax.org/mmr/snol.html
+        url = http://mousemutant.jax.org/articles/snol.html
 	]
 #
 #  70.mutation symbol:twit; mutation name:twitter  gene symbol:
@@ -611,7 +614,7 @@ SP=Full text
 [
 	id =  J:85479	
         type = ${SP}	
-        url = http://www.jax.org/mmr/mmrmutanttwit.html
+        url = http://mousemutant.jax.org/articles/mmrmutanttwit.html
 	]
 #
 #  71.mutation symbol:vtg-2J; mutation name:vertigo 2 Jackson  gene symbol:Kcng1
@@ -619,7 +622,7 @@ SP=Full text
 [
 	id = J:79858
         type = ${SP}	
-        url = http://www.jax.org/mmr/MMR_Remutation_vtg-2J.html
+        url = http://mousemutant.jax.org/articles/MMR_Remutation_vtg-2J.html
 	]
 #
 #  72.mutation symbol:wdl; mutation name:waddles; gene symbol:Car8
@@ -627,7 +630,7 @@ SP=Full text
 [
 	id = J:81344	
         type = ${SP}	
-        url = http://www.jax.org/mmr/waddler.html
+        url = http://mousemutant.jax.org/articles/waddler.html
 	]
 #
 #  73.mutation symbol:Whll; mutation name:wheelslike; symbol:
@@ -635,7 +638,7 @@ SP=Full text
 [
 	id = J:83048	
         type = ${SP}	
-        url = http://www.jax.org/mmr/MMR_Remutation_whll.html
+        url = http://mousemutant.jax.org/articles/MMR_Remutation_whll.html
 	]
 #
 #  74.mutation symbol:wly; mutation name:wooly gene symbol:
@@ -643,7 +646,7 @@ SP=Full text
 [
 	id = J:84609	
         type = ${SP}	
-        url = http://www.jax.org/mmr/MMRmutantwooly.html
+        url = http://mousemutant.jax.org/articles/MMRmutantwooly.html
 	]
 #
 #  five new for TR 8247 - May 2007
@@ -653,7 +656,7 @@ SP=Full text
 [
 	id = J:118307	
         type = ${SP}	
-        url = http://www.jax.org/mmr/mmrmutantfrzl.html
+        url = http://mousemutant.jax.org/articles/mmrmutantfrzl.html
         ]
 
 #
@@ -662,7 +665,7 @@ SP=Full text
 [
 	id = J:117733	
         type = ${SP}	
-        url = http://www.jax.org/mmr/mmrremutationsl22j.html
+        url = http://mousemutant.jax.org/articles/mmrremutationsl22j.html
         ]
 #
 #   77. mutation symbol: Vss; mutation name: variable spot & size;  gene symbol:
@@ -670,7 +673,7 @@ SP=Full text
 [
 	id = J:117340	
         type = ${SP}	
-        url = http://www.jax.org/mmr/mmrmutantvss.html
+        url = http://mousemutant.jax.org/articles/mmrmutantvss.html
         ]
 #
 #   78. mutation symbol: coa; mutation name: cocoa 7 Jackson;  gene symbol:
@@ -678,7 +681,7 @@ SP=Full text
 [
 	id = J:118117
         type = ${SP}	
-        url = http://www.jax.org/mmr/mmrremutationcoa-7j.html
+        url = http://mousemutant.jax.org/articles/mmrremutationcoa-7j.html
         ]
       
 #
@@ -687,7 +690,7 @@ SP=Full text
 [
 	id = J:117339
         type = ${SP}	
-        url = http://www.jax.org/mmr/mmrmutantfold.html
+        url = http://mousemutant.jax.org/articles/mmrmutantfold.html
         ]
 #    For TR8607:
 #
@@ -696,7 +699,7 @@ SP=Full text
 [
 	id = J:125130
         type = ${SP}	
-        url = http://www.jax.org/mmr/mmrremutationreeler7j.html
+        url = http://mousemutant.jax.org/articles/mmrremutationreeler7j.html
         ]
 
 #   81. mutation symbol: tnyw; mutation name: tiny wasting;  gene symbol: 
@@ -704,7 +707,7 @@ SP=Full text
 [
 	id = J:125079
         type = ${SP}	
-        url = http://www.jax.org/mmr/mmrmutanttnyw.html
+        url = http://mousemutant.jax.org/articles/mmrmutanttnyw.html
         ]
 
 #   82. mutation symbol: Coa-8J; mutation name: Cocoa 8 Jackson;  gene symbol: 
@@ -712,21 +715,21 @@ SP=Full text
 [
 	id = J:124644
         type = ${SP}	
-        url = http://www.jax.org/mmr/mmrremutationcocoa8jackson.html
+        url = http://mousemutant.jax.org/articles/mmrremutationcocoa8jackson.html
         ]
 #   83. mutation symbol: ru2l; mutation name: ruby-eye 2-like;  gene symbol: 
 #
 [
 	id = J:123265
         type = ${SP}	
-        url = http://www.jax.org/mmr/mmrmutantru2l.html
+        url = http://mousemutant.jax.org/articles/mmrmutantru2l.html
         ]
 #   84. mutation symbol: Dwh; mutation name: dispersed white hair;  gene symbol: 
 #
 [
 	id = J:124363
         type = ${SP}	
-        url = http://www.jax.org/mmr/mmrmutantDwh.html
+        url = http://mousemutant.jax.org/articles/mmrmutantDwh.html
         ]
 
 # 85. mutation symbol: lgj-3; mutation name: longjohn3 Jackson;  gene symbol: Npr3
@@ -1024,7 +1027,7 @@ SP=Full text
 # 111 mutation symbol: ru-8J; mut.name: ruby-eye 8 Jackson, on gene Hps6; 
 #
 [
-	id = J:147268
+	id = J:133644
         type = ${SP}	
         url = http://mousemutant.jax.org/articles/mmrremtationru8j.html
         ]
