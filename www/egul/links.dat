@@ -73,11 +73,7 @@ SP=Full text
         ]
 #
 #  3. mutation symbol:Wtgr; mutation name:wavy tiger;  gene symbol:---no link
-#
-[	id = J:	
-	type = ${SP}	
-	url = http://mousemutant.jax.org/articles/mmrmutantwavytiger.html
-	]
+#[	id = J:	type = ${SP} url = http://mousemutant.jax.org/articles/mmrmutantwavytiger.html	]
 #
 #  4. mutation symbol:Dfb; mutation name:deaf ballerina;  gene symbol:----
 #
@@ -104,9 +100,14 @@ SP=Full text
 	]
 #
 #  7. mutation symbol:shi-J; mutation name:shiverer Jackson;  gene symbol:Mbp
-#[	id = J:117543 	type = ${SP}	url = http://mousemutant.jax.org/articles/mmrremutationshiJ.html]
 #
-#  8.mutation symbol:sv-2J; mutation name:Snell's waltzer2 Jackson;  gene symbol:Myo6
+[	
+	id = J:117543  
+	type = ${SP}
+	url = http://mousemutant.jax.org/articles/mmrremutationshiJ.html
+	]
+#
+#  8. mutation symbol:sv-2J; mutation name:Snell's waltzer2 Jackson;  gene symbol:Myo6
 #
 [
 	id = J:109355
