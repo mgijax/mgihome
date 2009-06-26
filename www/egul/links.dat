@@ -73,11 +73,7 @@ SP=Full text
         ]
 #
 #  3. mutation symbol:Wtgr; mutation name:wavy tiger;  gene symbol:---no link
-#
-[	id = J:	
-	type = ${SP}	
-	url = http://mousemutant.jax.org/articles/mmrmutantwavytiger.html
-	]
+#[	id = J:	type = ${SP}url = http://mousemutant.jax.org/articles/mmrmutantwavytiger.html	]
 #
 #  4. mutation symbol:Dfb; mutation name:deaf ballerina;  gene symbol:----
 #
@@ -104,8 +100,15 @@ SP=Full text
 	]
 #
 #  7. mutation symbol:shi-J; mutation name:shiverer Jackson;  gene symbol:Mbp
-#[	id = J:117543 	type = ${SP}	url = http://mousemutant.jax.org/articles/mmrremutationshiJ.html]
 #
+[	
+	id = J:117543 	
+	type = ${SP}	
+	url = http://mousemutant.jax.org/articles/mmrremutationshiJ.html
+	]
+#
+#
+
 #  8.mutation symbol:sv-2J; mutation name:Snell's waltzer2 Jackson;  gene symbol:Myo6
 #
 [
@@ -736,7 +739,7 @@ SP=Full text
 [
 	id = J:131428
         type = ${SP}	
-        url = http://mousemutant.jax.org/mmrremutationlgj-3j.html
+        url = http://mousemutant.jax.org/articles/mmrremutationlgj-3j.html
         ]
 #
 # 86. mutation symbol: Bhrd; mutation name: bad hair day;  gene symbol: Bhrd
@@ -744,7 +747,7 @@ SP=Full text
 [
 	id = J:127794
         type = ${SP}	
-        url = http://mousemutant.jax.org/mmrmutantbhrd.html
+        url = http://mousemutant.jax.org/articles/mmrmutantbhrd.html
         ]
 #
 # 87. symbol: dr-10J; Dreher 10 Jackson name: circling/hearling loss/head toss;  gene symbol: Lmx1a
@@ -752,7 +755,7 @@ SP=Full text
 [
 	id = J:128476
         type = ${SP}	
-        url = http://mousemutant.jax.org/mmrmutantsdreher10J_and_11J.html
+        url = http://mousemutant.jax.org/articles/mmrmutantsdreher10J_and_11J.html
         ]
 #
 # 88. mutation symbol: dr-11J; mutation name:circling/hearing loss/head toss;  gene symbol: Lmx1a
@@ -760,7 +763,7 @@ SP=Full text
 [
 	id = J:128476
         type = ${SP}	
-        url = http://mousemutant.jax.org/mmrmutantsdreher10J_and_11J.html
+        url = http://mousemutant.jax.org/articles/mmrmutantsdreher10J_and_11J.html
         ]
 #
 # 89. mutation symbol: ssl ; mut. name: small swaying lethal;  gene symbol: 
@@ -768,7 +771,7 @@ SP=Full text
 [
 	id = J:126525
         type = ${SP}	
-        url = http://mousemutant.jax.org/mmrmutantssl.html
+        url = http://mousemutant.jax.org/articles/mmrmutantssl.html
         ]
 # 90. mutation symbol: ru-7J ; mut. name: ruby-eye Jackson, coat color/pigmnt mutation Chr.19;  gene symbol: 
 #
@@ -783,7 +786,7 @@ SP=Full text
 [
 	id = J:133649
         type = ${SP}	
-        url = http://mousemutant.jax.org/mmrremutationreeler4jackson.html
+        url = http://mousemutant.jax.org/articles/mmrremutationreeler4jackson.html
         ]
 #
 # 92. mutation symbol: pcd-8J ; mut. name: Purkinje cell degeneration on Chr.6;  gene symbol: 
@@ -791,7 +794,7 @@ SP=Full text
 [
 	id = J:132487
         type = ${SP}	
-        url = http://mousemutant.jax.org/mmrmutantpcd8J.html
+        url = http://mousemutant.jax.org/articles/mmrmutantpcd8J.html
         ]
 #
 # 93. mutation symbol: wa1l; mut. name: waved 1-like:skin & hair mutation on Chr.6;  gene symbol: 
@@ -799,7 +802,7 @@ SP=Full text
 [
 	id = J:132488
         type = ${SP}	
-        url = http://mousemutant.jax.org/mmrmutantwa1l.html
+        url = http://mousemutant.jax.org/articles/mmrmutantwa1l.html
         ]
 #
 # 94. mutation symbol: Mfs; mut.name: mutant fur is striped; skin & hair mutation on Chr.13;  gene symbol: 
