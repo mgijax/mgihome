@@ -40,14 +40,83 @@
 <table class="outline" width="100%">
 
 	<tr><td class="enhance">
-				July6, 2009: MGI announces the following enhancements for release 4.3
+				August, 2009: MGI announces the following enhancements for release 4.3:
 				</td>
 			</tr><br>
 
 			<tr>    <td>
 				  <dl class="linkedList">
-			          <dt>(see <a href="gene_trap_release_announcement.htm">draft of gene trap less filling release announcement)</a></dt>
+			          <dt>This release incorporates mouse cell line and gene trap sequences for most gene traps in dbGSS including IGTC and Lexicon Genetics gene traps, and TIGM. </dt><br>
+<dd><b>MGI Gene-trapped Allele Detail pages provide:</b><br>
+   <ul>
+   <li>a visual thumbnail of the gene trap insertion in the gene context</li>
+  <li>sequence tag information, including genome coordinates</li>
+    <li>cell line IDs from organizations providing gene trap sequence data to dbGSS </li>
+<li>information about the parent stem cell line and the gene trap vector used to produce each mutant</li>
+<li>identification of any mouse models with phenotypic similarity to human diseases associated with the allele</li>
+<li>links to the International Mouse Strain Resource (IMSR) for access to available mouse strains and cell lines </li>
+ <li>allele nomenclature.<br>
+ As an example, see <a href="<!--#include file='include/java_url.html'-->WIFetch?page=alleleDetail&key=37529">Alms1 Gene trapped Allele Detail</a></li>
+</ul>
+</dd>
+<br>
 
+<dd><b>How MGI associates gene traps to genes</b><br>
+   <ul>
+     <li>The MGI gene trap load associates gene traps to genes using genome-wide sequence alignments (BLAT) with gene trap sequence tags.</li>
+     <li>We compute the single point coordinate best approximating the gene trap vector insertion site for each sequence tag from the resultant sequence tag genome coordinates. 
+</li>
+     <li>We compare the gene trap sequence tag coordinates/strands to MGI gene coordinates/strands to detect trapped genes and to establish allele-to-gene relationships.</li>
+     <!--<li>We resolve the biological source information in the gene trap sequence records to controlled vocabularies and associates gene trap mutant cell lines with the corresponding alleles. The MGI database thus contains a mutant cell line record and an allele record for each unique gene trap cell line.</li>-->
+     
+  <li><b>MGI updates gene trap-to-gene associations weekly.</b></li><br>
+ </ul></dd><br>
+   
+ <dd>
+<dd><b>Associations  MGI does not make</b></dd>
+<dd>MGI does <b>not</b> establish gene trap-to-gene associations: 
+<ul>
+ 
+  <li>where sequence tags for a gene trap allele overlap multiple genes in the trapped gene orientation; where tags overlap one or more genes in reverse orientation; or where they overlap no known genes using current gene model coordinates. </li>
+<li>where gene trap sequence tags for an allele do not align with the reference mouse genome, or align equally well to multiple locations. </li>
+<li>for mixed cell lines, characterized by multiple sequence tags for the same cell line and good alignments to different locations in the genome. </li>
+</ul>
+</dd>
+<br>
+
+<dd><b>Gene Trap Integration and Curation at MGI</b></dd>
+<dd><ul>
+  <li>MGI regularly integrates dbGSS sequence tag data with curated gene trap information. </li>
+  <li>On-going curatorial activity associates published mouse phenotype data derived from gene trap cell lines with allele records generated from the data.</li>
+</ul>
+ </dd>
+</br>
+
+<dd><b>Finding these associations in MGI</b></dd>
+<dd><ul>
+  <li>Enter nomenclature, ID, or lab code in the Quick Search tool at the top of any MGI page. (See <a href="gene_trap_creators_and_ids.shtml">Providers and IDs</a> for examples of IDs and ILAR lab codes you can use).</li>
+
+  <li>Use the <a href="<!--#include file='include/wi_url.html'-->/searches/allele_form.shtml">Phenotypes, Alleles, and Disease Models Query Form</a>. (Enter an allele or a gene/marker (in the <b>Nomenclature & location</b> section) and select <b>gene trapped</b> in the <b>Categories</b> section).</li>
+<li>Click <b>Download-->All MGI Reports--></b> to see all <a href="ftp://ftp.informatics.jax.org/pub/reports/MRK_GeneTrap.rpt">gene traps associated with markers</a>.</li>
+<li>Click <b>Download-->All MGI Reports--></b> to see <a href="ftp://ftp.informatics.jax.org/pub/reports/MGI_UnassociatedGeneTraps.rpt">gene traps not associated with MGI markers</a> (ID, provider, and reason for no association ).</li>
+</ul>
+</dd>
+<br>
+<dd><b>For more information, see:</b></dd>
+<dd>
+<ul>
+  <li><a href="<!--#include file='include/userdocs_url.html'-->genetrap_QA.shtml">Gene Traps Q & A</a></li>
+<li><a href="<!--#include file='include/userdocs_url.html'-->allele_help.shtml">Using the Phenotypes, Alleles & Disease Models Query Form</li>
+
+<li><a href="<!--#include file='include/userdocs_url.html'-->allele_detail_report.shtml">Understanding Phenotypic Allele Detail Reports</a></li>
+
+<li>FAQ(s) about gene traps [link TBD]</li>
+
+    </ul>
+</dd>
+</dl>
+
+			</dl>
 
 
 
