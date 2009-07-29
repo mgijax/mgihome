@@ -46,8 +46,13 @@
 		<li>identification of any mouse models with phenotypic similarity to human diseases associated with the allele.</li>
 		<li>links to the International Mouse Strain Resource (IMSR) for access to available mouse strains and cell lines.</li>
  		<li>allele nomenclature.</li>
-	</ul>
- 		As an example, see <a href="<!--#include file='include/java_url.html'-->WIFetch?page=alleleDetail&key=37529">Alms1 Gene trapped Allele Detail</a>.</li>
+	</ul></dt>
+  <dt>As examples, see:</p>	
+<ul>
+  <li><a href="<!--#include file='include/java_url.html'-->WIFetch?page=alleleDetail&key=37529">Alms1 Gene trapped Allele Detail</a>.</li>
+  <li><a href="http://hobbiton.informatics.jax.org:8080/cgi-bin/gbrowse/mouse_current/#search">MGI Mouse Genome Browser on build 37</a></li>
+</ul>
+
 		
 	</DT>
 <br>
@@ -85,11 +90,13 @@
 	<DT><b>Finding these associations in MGI</b></DT>
 
 
-
 	<DT>
 		<ul>
-  		<li>Enter nomenclature, ID, or lab code in the Quick Search tool at the top of any MGI page. (See <a href="gene_trap_creators_and_ids.shtml">Providers and IDs</a> for examples of IDs and ILAR lab codes you can use).</li>
+  		<li>Enter nomenclature, ID, or lab code in the Quick Search tool at the top of any MGI page. (See <a href="<!--#include file='include/userdocs_url.html'-->genetrap_usecases.shtml#who_are">Who are the cell line creators?</a> for examples of IDs and ILAR lab codes to use).</li>
 		  <li>Use the <a href="<!--#include file='include/wi_url.html'-->/searches/allele_form.shtml">Phenotypes, Alleles, and Disease Models Query Form</a>. (Enter an allele or a gene/marker (in the <b>Nomenclature & location</b> section) and select <b>gene trapped</b> in the <b>Categories</b> section).</li>
+<li> 
+<li>Enter a cell line identifier in the <a href="<!--#include file='include/wi_url.html'-->/searches/accession_form.shtml">Accession IDs Query Form</a> (see <a href="<!--#include file='include/userdocs_url.html'-->genetrap_usecases.shtml#who_are">Who are the cell line creators?</a> for examples of ID types to use).</li>
+
 <li>Click <b>Download-->All MGI Reports--></b> to see all <a href="ftp://ftp.informatics.jax.org/pub/reports/MRK_GeneTrap.rpt">gene traps associated with markers</a>.</li>
 <li>Click <b>Download-->All MGI Reports--></b> to see <a href="ftp://ftp.informatics.jax.org/pub/reports/MGI_UnassociatedGeneTraps.rpt">gene traps not associated with MGI markers</a> (ID, provider, and reason for no association ).</li>
 </ul>
