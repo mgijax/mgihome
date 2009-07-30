@@ -50,19 +50,19 @@
 	</ul></dt>
   <dt>As examples, see:</p>	
 <ul>
-  <li><a href="<!--#include file='include/java_url.html'-->WIFetch?page=alleleDetail&key=37529">Alms1 Gene trapped Allele Detail</a>.</li>
   <li><a href="http://hobbiton.informatics.jax.org:8080/cgi-bin/gbrowse/mouse_current/#search">MGI Mouse Genome Browser on build 37</a></li>
+  <li><a href="<!--#include file='include/java_url.html'-->WIFetch?page=alleleDetail&key=37529">Alms1 Gene trapped Allele Detail</a></li>
 </ul>
-
 		
 	</DT>
 <br>
 
 <DT><b>How MGI associates gene traps to genes</b><br>
    		<ul>
-     		<li>The MGI gene trap load associates gene traps to genes using genome-wide sequence alignments (BLAST) with gene trap sequence tags.</li>
+     		<li>The MGI gene trap load associates gene traps to genes using genome-wide sequence alignments (BLAT) with gene trap sequence tags.</li>
      		<li>We compute the single point coordinate best approximating the gene trap vector insertion site for each sequence tag from the resultant sequence tag genome coordinates. </li>
-     		<li>We compare the gene trap sequence tag coordinates/strands to MGI gene coordinates/strands to detect trapped genes and to establish allele-to-gene relationships. A gene trap allele-to-gene association is made only if the gene trap insertion "traps" the gene.</li>
+     		<li>We compare the gene trap sequence tag coordinates/strands to MGI gene coordinates/strands to detect trapped genes and to establish allele-to-gene relationships.</li>
+<li>A gene trap allele-to-gene association is made only if the gene trap insertion "traps" the gene.</li>
      <!--<li>We resolve the biological source information in the gene trap sequence records to controlled vocabularies and associates gene trap mutant cell lines with the corresponding alleles. The MGI database thus contains a mutant cell line record and an allele record for each unique gene trap cell line.</li>-->
      
   		<li><b>MGI updates gene-trap-to-gene associations weekly.</b></li>
@@ -83,20 +83,26 @@
 	<DT>
 		<ul>
   		<li>MGI regularly integrates dbGSS sequence tag data with curated gene trap information. </li>
-  		<li>On-going curatorial activity associates published mouse phenotype data derived from mice produced from gene trap cell lines with allele records generated from the data.</li>
+  		<li>On-going curatorial activity associates published mouse phenotype data, derived from mice produced from gene trap cell lines, with allele records generated from the data.</li>
 		</ul>
  	</DT>
 <br>
 
 <DT><b>Finding these associations in MGI</b></DT>
     <DT>		<ul>
-  		<li>Enter gene nomenclature or an ID in the Quick Search tool located at the top of any MGI page. (See <a href="<!--#include file='include/userdocs_url.html'-->genetrap_usecases.shtml#who_are">Who are the cell line creators?</a> for examples of IDs you can).</li>
-		  <li>Use the <a href="<!--#include file='include/wi_url.html'-->/searches/allele_form.shtml">Phenotypes, Alleles, and Disease Models Query Form</a>. (Enter an allele or a gene/marker (in the <b>Nomenclature & location</b> section) and select <b>gene trapped</b> in the <b>Categories</b> section). You have the option to exclude alleles present only as cell lines, if desired.</li>
+  		<li>Enter gene nomenclature or ID in the Quick Search tool (located at the top of any MGI page). (See <a href="<!--#include file='include/userdocs_url.html'-->genetrap_usecases.shtml#who_are">Who are the cell line creators?</a> for examples of the IDs you can use).</li>
+		  <li>Use the <a href="<!--#include file='include/wi_url.html'-->/searches/allele_form.shtml">Phenotypes, Alleles, and Disease Models Query Form</a>. 
+   <ul>
+     <li>Enter an allele or a gene/marker (in the <b>Nomenclature & location</b> section).</li>
+     <li>Select <b>gene trapped</b> (in the <b>Categories</b> section). </li>
+     <li>If desired, click <b>Exclude alleles records present only as cell lines</b> (in the <b>Categories</b> section).</li>
+   <li>Click <b>Search</b>.</li>
+    </ul>
 <li> 
-<li>Enter a cell line identifier in the <a href="<!--#include file='include/wi_url.html'-->/searches/accession_form.shtml">Accession IDs Query Form</a> (see <a href="<!--#include file='include/userdocs_url.html'-->genetrap_usecases.shtml#who_are">Who are the cell line creators?</a> for examples of ID types to use).</li>
+<li>Enter a cell line identifier in the <a href="<!--#include file='include/wi_url.html'-->/searches/accession_form.shtml">Accession IDs Query Form</a> (see <a href="<!--#include file='include/userdocs_url.html'-->genetrap_usecases.shtml#who_are">Who are the cell line creators?</a> for examples of IDs to use).</li>
 
 <li>Click <b>Download-->All MGI Reports--></b> to see all <a href="ftp://ftp.informatics.jax.org/pub/reports/MRK_GeneTrap.rpt">gene traps associated with markers</a>.</li>
-<li>Click <b>Download-->All MGI Reports--></b> to see <a href="ftp://ftp.informatics.jax.org/pub/reports/MGI_UnassociatedGeneTraps.rpt">gene traps not associated with MGI markers</a> (ID, provider, and reason for no association ).</li>
+<li>Click <b>Download-->All MGI Reports--></b> to see <a href="ftp://ftp.informatics.jax.org/pub/reports/MGI_UnassociatedGeneTraps.rpt">gene traps not associated with MGI markers</a> (ID, provider, and reason for no association).</li>
 </ul>
 </DT>
 <br>
