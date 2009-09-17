@@ -1,0 +1,252 @@
+<!--#include file='include/templateHead.html'-->
+
+  <title>MGI-Mouse Recombinase (cre)</title>
+  <meta name="description" content="MGI collects and annotates expression and activity data for recombinase-containing transgenes and knock-in alleles recombinase excision." />
+  <meta name="keywords" content="MGI, mgi, mice, mouse, murine, mus musculus, genes, genome, genomic, gene expression, mouse anatomy, embryo, embryonic development, expression assay, immunohistochemistry, in situ reporter, blot, RNA in situ, RNase, RT-PCR, Northern blot, Western blot" />
+  
+  <meta name="robots" content="NOODP" />
+  <meta name="robots" content="NOYDIR" />
+
+  <link rel="stylesheet" type="text/css" href="<!--#include file="include/stylesheet.html"-->" />
+
+<!--#include file='include/templateBodyStart.html'-->
+
+<!-- start body content -->
+
+<!-- mini homepage header section -->
+<table class="sideMargin marginTop" border="0" cellspacing="0" cellpadding="0">
+	<tr>
+		<td align="center" valign="middle">
+			<span class="homePageTitle">
+				Recombinase (cre) Specificity
+			</span>
+			<br>
+			<span class="homePageSubTitle">
+			   MGI collects and annotates expression and activity data for 
+			   recombinase-containing transgenes and knock-in alleles    
+               recombinase excision.
+			</span>
+		</td>
+		<td>
+			<div class="sideMargin marginBottom blueBorder pad5 small">
+			     <center><a href="http://jcs.biologists.org/content/vol114/issue17/cover.shtml">
+		         <img class="outlineImg" src="<!--#include file='include/mgihome_url.html'-->homepages/images/homepage_creLogo.gif"></a>
+		         <br />
+		         Image courtesy of <a href="http://jcs.biologists.org/content/vol114/issue17/cover.shtml" class="homeLink">
+                 Journal of Cell Science,<br />September 1 2001, Volume 114, Issue 17</a></center>
+        	</div>
+		</td>
+	</tr>
+</table>
+
+
+<table class="sideMargin" border="0" cellspacing="0" cellpadding="0">
+
+	<tr>
+		<td rowspan="2" width="50%" valign="top">
+			<div class="blueBorder rightCenterMargin">
+				<div class="boxTitle">Access Data</div>
+				<div class="boxBG pad5">
+				    <p class="" style="margin-bottom: 8px; margin-top: 3px; color: rgb(0, 34, 85); font-variant: small-caps;">Retrieve all alleles </p>
+					<dl>
+						<dt>Retrieve a list of all recombinase-containing transgenes and knock-in alleles.</dt>
+                        <dd class="searchList"><a class="small homeLink" href="<!--#include file='include/ftp_url2.html'-->reports/MGI_Knockout_Full.html">HTML version (like "All MGI Knockouts" report) </a></dd>
+                        <dd class="searchList"><a class="small homeLink" href="<!--#include file='include/ftp_url2.html'-->reports/MGI_Knockout_Full.rpt">Tab-delimited version (also to be on FTP site)</a></dd>
+                    </dl>
+                    
+                    <hr class="hrblue">
+                    
+                    <p class="" style="margin-bottom: -10px; margin-top: 5px; color: rgb(0, 34, 85); font-variant: small-caps;">Find alleles </p>
+                    <dl>    
+						<dt class="whatList">Find recombinase alleles by the gene, gene promoter, or construct 
+						driving recombinase specificity. Select "any driver" to see all alleles with recombinase 
+						specificity data. Select a particular driver to see alleles with and without recombinase 
+						specificity data.</dt>
+						<dd class="searchList">
+							
+						<div class="creSearch" style="width:365px; height:37px;">
+	                    <div class="creInputs">
+	
+	                    <form action="<!--#include file='include/java_url.html'-->WIFetch?" method="get">
+	                        <input type="hidden" name="page" value="creSummary">
+	                            <label onmouseover="return overlib('Allele, gene, fusion product, or genetic construct driving recombinase activity.',ANCHOR, 'GetDriver', ANCHORALIGN, 0, 0.5, 0, 0.5, WIDTH, 250, DELAY, 900, STICKY, CAPTION, 'Driven by', CLOSECLICK, CLOSETEXT, 'Close X');" onmouseout="nd();"><strong style="color:#002255; border-bottom:dotted thin #555555; cursor:help;">Recombinase driven by:</strong>&nbsp;</label>
+	                            <select name="driver">
+	                                <option selected value="" name="default">any driver</option>
+	                                <option value="ACDC">ACDC</option><option value="Acp5">Acp5</option><option value="Acsm4">Acsm4</option><option value="ACTA1">ACTA1</option><option value="ACTA2">ACTA2</option><option value="ACTB">ACTB</option><option value="ACTC1">ACTC1</option><option value="Agrp">Agrp</option><option value="Aicda">Aicda</option><option value="ALB">ALB</option><option value="Alb1">Alb1</option><option value="Alpl">Alpl</option><option value="AMH">AMH</option><option value="Amhr2">Amhr2</option><option value="Amy2">Amy2</option><option value="APOE">APOE</option><option value="AQP2">AQP2</option><option value="Ascl1">Ascl1</option><option value="Atoh1">Atoh1</option><option value="Atoh7">Atoh7</option><option value="Atoh8">Atoh8</option><option value="Atp4b">Atp4b</option><option value="Barhl2">Barhl2</option><option value="BGLAP">BGLAP</option><option value="Bglap2">Bglap2</option><option value="Bhlha15">Bhlha15</option><option value="Bhlhe22">Bhlhe22</option><option value="Bmi1">Bmi1</option><option value="Bmp7">Bmp7</option><option value="CA2">CA2</option><option value="CAG">CAG</option><option value="Camk2a">Camk2a</option><option value="CD19">CD19</option><option value="CD2">CD2</option><option value="CD207">CD207</option><option value="CD4">CD4</option><option value="Cd79a">Cd79a</option><option value="Cd8a">Cd8a</option><option value="Cdh16">Cdh16</option><option value="Cdh5">Cdh5</option><option value="Cdkn2a">Cdkn2a</option><option value="CDX2">CDX2</option><option value="Cga">Cga</option><option value="Chat">Chat</option><option value="Chx10">Chx10</option><option value="Cited1">Cited1</option><option value="Ckmm">Ckmm</option><option value="Cldn6">Cldn6</option><option value="Cma1">Cma1</option><option value="CMV">CMV</option><option value="Cnp">Cnp</option><option value="Col10a1">Col10a1</option><option value="Col1a1">Col1a1</option><option value="Col1a2">Col1a2</option><option value="COL2A1">COL2A1</option><option value="Col6a1">Col6a1</option><option value="Cpa1">Cpa1</option><option value="Cpa3">Cpa3</option><option value="Cr2">Cr2</option><option value="CRP">CRP</option><option value="Crx">Crx</option><option value="Cryaa">Cryaa</option><option value="Cspg4">Cspg4</option><option value="Csrp1">Csrp1</option><option value="Ctsk">Ctsk</option><option value="Cyp11a1">Cyp11a1</option><option value="Cyp17a1">Cyp17a1</option><option value="CYP19A1">CYP19A1</option><option value="Cyp1a1">Cyp1a1</option><option value="Dach1">Dach1</option><option value="DBH">DBH</option><option value="Dbx1">Dbx1</option><option value="Dct">Dct</option><option value="Ddx4">Ddx4</option><option value="Dhh">Dhh</option><option value="Dll1">Dll1</option><option value="dlx6a">dlx6a</option><option value="Dmbx1">Dmbx1</option><option value="Dmp1">Dmp1</option><option value="DMRT1">DMRT1</option><option value="Dmrtc2">Dmrtc2</option><option value="Drd1a">Drd1a</option><option value="Drd2">Drd2</option><option value="Dspp">Dspp</option><option value="Egr2">Egr2</option><option value="Egr3">Egr3</option><option value="EIF1A">EIF1A</option><option value="EIIa">EIIa</option><option value="Ela1">Ela1</option><option value="Elane">Elane</option><option value="Emr1">Emr1</option><option value="Emx1">Emx1</option><option value="Emx2">Emx2</option><option value="En1">En1</option><option value="En2">En2</option><option value="Eno2">Eno2</option><option value="Epor">Epor</option><option value="Fabp1">Fabp1</option><option value="Fabp4">Fabp4</option><option value="Fabp7">Fabp7</option><option value="Fcer2a">Fcer2a</option><option value="Fes">Fes</option><option value="Fev">Fev</option><option value="Fgf16">Fgf16</option><option value="Fgfr3">Fgfr3</option><option value="Fos">Fos</option><option value="Foxa1">Foxa1</option><option value="Foxa2">Foxa2</option><option value="Foxa3">Foxa3</option><option value="Foxg1">Foxg1</option><option value="FOXJ1">FOXJ1</option><option value="Foxl1">Foxl1</option><option value="Foxn1">Foxn1</option><option value="Foxp3">Foxp3</option><option value="Frzb">Frzb</option><option value="Fshr">Fshr</option><option value="Fzd10">Fzd10</option><option value="Gabra6">Gabra6</option><option value="Gata1">Gata1</option><option value="Gata4">Gata4</option><option value="GATA6">GATA6</option><option value="Gbx2">Gbx2</option><option value="Gcg">Gcg</option><option value="Gdf5">Gdf5</option><option value="Gdf7">Gdf7</option><option value="Gdf9">Gdf9</option><option value="GFAP">GFAP</option><option value="Ggt1">Ggt1</option><option value="Gh1">Gh1</option><option value="Ghrhr">Ghrhr</option><option value="Gja1">Gja1</option><option value="Gli1">Gli1</option><option value="Gng7">Gng7</option><option value="Gnrh1">Gnrh1</option><option value="Gnrhr">Gnrhr</option><option value="Grid2">Grid2</option><option value="Grik4">Grik4</option><option value="Grin2c">Grin2c</option><option value="Gsx2">Gsx2</option><option value="Gt(ROSA)26Sor">Gt(ROSA)26Sor</option><option value="GZMB">GZMB</option><option value="Gzmm">Gzmm</option><option value="Hand2">Hand2</option><option value="HBB">HBB</option><option value="hCMV">hCMV</option><option value="Hcn4">Hcn4</option><option value="Hesx1">Hesx1</option><option value="Hhex">Hhex</option><option value="Hnf4a">Hnf4a</option><option value="Hoxa1">Hoxa1</option><option value="Hoxa2">Hoxa2</option><option value="Hoxa3">Hoxa3</option><option value="Hoxb1">Hoxb1</option><option value="Hoxb3">Hoxb3</option><option value="Hoxb4">Hoxb4</option><option value="Hoxb6">Hoxb6</option><option value="Hoxb7">Hoxb7</option><option value="Hprt1">Hprt1</option><option value="HRGP">HRGP</option><option value="Hsd11b2">Hsd11b2</option><option value="Hsp70">Hsp70</option><option value="Htr1a">Htr1a</option><option value="I12b">I12b</option><option value="Icam5">Icam5</option><option value="Igbp1b">Igbp1b</option><option value="Igh">Igh</option><option value="Ighg1">Ighg1</option><option value="Il17f">Il17f</option><option value="Inha">Inha</option><option value="INS">INS</option><option value="Ins2">Ins2</option><option value="Ipf1">Ipf1</option><option value="Isl1">Isl1</option><option value="Itga2b">Itga2b</option><option value="ITGAM">ITGAM</option><option value="Itgax">Itgax</option><option value="Jam2">Jam2</option><option value="Kap">Kap</option><option value="Kcnc2">Kcnc2</option><option value="Kdr">Kdr</option><option value="Kit">Kit</option><option value="KLK3">KLK3</option><option value="KLKB1">KLKB1</option><option value="KRT1">KRT1</option><option value="KRT14">KRT14</option><option value="Krt15">Krt15</option><option value="KRT18">KRT18</option><option value="Krt19">Krt19</option><option value="Krt2">Krt2</option><option value="KRT5">KRT5</option><option value="Lbx1">Lbx1</option><option value="Lck">Lck</option><option value="Leftb">Leftb</option><option value="Lefty2">Lefty2</option><option value="Lepr">Lepr</option><option value="LGB">LGB</option><option value="Lhb">Lhb</option><option value="Lmo2">Lmo2</option><option value="Lyz2">Lyz2</option><option value="Mapt">Mapt</option><option value="Matn1">Matn1</option><option value="Mbp">Mbp</option><option value="Mcm2">Mcm2</option><option value="Mef2c">Mef2c</option><option value="Meox1">Meox1</option><option value="Meox2">Meox2</option><option value="Mesp1">Mesp1</option><option value="Mesp2">Mesp2</option><option value="mI56i">mI56i</option><option value="Mitf">Mitf</option><option value="MMTV">MMTV</option><option value="Mnx1">Mnx1</option><option value="Mog">Mog</option><option value="Mpz">Mpz</option><option value="Msx2">Msx2</option><option value="Mx1">Mx1</option><option value="Myf5">Myf5</option><option value="Myf6">Myf6</option><option value="Myh11">Myh11</option><option value="Myh6">Myh6</option><option value="Myh7">Myh7</option><option value="Myhc">Myhc</option><option value="Myhca">Myhca</option><option value="Myl1">Myl1</option><option value="Myl2">Myl2</option><option value="Myl7">Myl7</option><option value="Mylpf">Mylpf</option><option value="MYOD1">MYOD1</option><option value="Myog">Myog</option><option value="Nanos3">Nanos3</option><option value="Neb">Neb</option><option value="Nefh">Nefh</option><option value="Nefl">Nefl</option><option value="Nes">Nes</option><option value="Neurod6">Neurod6</option><option value="Neurog1">Neurog1</option><option value="Neurog2">Neurog2</option><option value="NEUROG3">NEUROG3</option><option value="Neurogen2">Neurogen2</option><option value="Nkx2">Nkx2</option><option value="Nkx2-5">Nkx2-5</option><option value="Nkx3-1">Nkx3-1</option><option value="Nkx3-2">Nkx3-2</option><option value="Nodal">Nodal</option><option value="Notch1">Notch1</option><option value="Nphs1">Nphs1</option><option value="NPHS2">NPHS2</option><option value="Nppa">Nppa</option><option value="Npy">Npy</option><option value="Nr2e1">Nr2e1</option><option value="Nr5a1">Nr5a1</option><option value="Ntrk3">Ntrk3</option><option value="Ntsr1">Ntsr1</option><option value="Olfr1507">Olfr1507</option><option value="Olfr16">Olfr16</option><option value="Olig2">Olig2</option><option value="Olig3">Olig3</option><option value="Omp">Omp</option><option value="Opn1mw">Opn1mw</option><option value="Opn1sw">Opn1sw</option><option value="Opn4">Opn4</option><option value="Osr1">Osr1</option><option value="Otog">Otog</option><option value="Otx1">Otx1</option><option value="Otx2">Otx2</option><option value="P0">P0</option><option value="Pax2">Pax2</option><option value="Pax3">Pax3</option><option value="Pax4">Pax4</option><option value="Pax6">Pax6</option><option value="Pax7">Pax7</option><option value="Pax8">Pax8</option><option value="Pbsn">Pbsn</option><option value="Pcdh21">Pcdh21</option><option value="Pcp2">Pcp2</option><option value="Pdgfb">Pdgfb</option><option value="Pdgfrb">Pdgfrb</option><option value="Pdgra">Pdgra</option><option value="Pdx1">Pdx1</option><option value="Pdyn">Pdyn</option><option value="Pecam">Pecam</option><option value="Pf4">Pf4</option><option value="Pgk1">Pgk1</option><option value="Pgk2">Pgk2</option><option value="Pgr">Pgr</option><option value="Pitx1">Pitx1</option><option value="Pitx2">Pitx2</option><option value="Pitx3">Pitx3</option><option value="Pkhd1">Pkhd1</option><option value="PLAT">PLAT</option><option value="Plp1">Plp1</option><option value="Pnmt">Pnmt</option><option value="Polr2a">Polr2a</option><option value="Pomc">Pomc</option><option value="Pomc1">Pomc1</option><option value="Postn">Postn</option><option value="Pou1f1">Pou1f1</option><option value="Pou3f4">Pou3f4</option><option value="Pou4f3">Pou4f3</option><option value="Ppy">Ppy</option><option value="Prdm1">Prdm1</option><option value="Pres">Pres</option><option value="Prkcc">Prkcc</option><option value="Prm">Prm</option><option value="Prm1">Prm1</option><option value="Prnp">Prnp</option><option value="Prox1">Prox1</option><option value="Prph1">Prph1</option><option value="Prrx1">Prrx1</option><option value="Ptcra">Ptcra</option><option value="Ptf1a">Ptf1a</option><option value="PTH">PTH</option><option value="Pvalb">Pvalb</option><option value="Pyy">Pyy</option><option value="Rag1">Rag1</option><option value="Rarb">Rarb</option><option value="Rbp3">Rbp3</option><option value="REN">REN</option><option value="Ren1">Ren1</option><option value="Rgs9">Rgs9</option><option value="RHO">RHO</option><option value="Rorc">Rorc</option><option value="rtetR">rtetR</option><option value="Runx1">Runx1</option><option value="rx3">rx3</option><option value="Rxfp2">Rxfp2</option><option value="S100a4">S100a4</option><option value="Satb2">Satb2</option><option value="Scgb1a1">Scgb1a1</option><option value="Scn10a">Scn10a</option><option value="SERPINA1">SERPINA1</option><option value="Sftpa1">Sftpa1</option><option value="Sftpc">Sftpc</option><option value="Shh">Shh</option><option value="Sim1">Sim1</option><option value="Six2">Six2</option><option value="Six3">Six3</option><option value="SLC18A3">SLC18A3</option><option value="Slc1a3">Slc1a3</option><option value="Slc5a2">Slc5a2</option><option value="Slc6a2">Slc6a2</option><option value="Slc6a3">Slc6a3</option><option value="Slc6a4">Slc6a4</option><option value="Slc8a2">Slc8a2</option><option value="Sox1">Sox1</option><option value="Sox10">Sox10</option><option value="Sox2">Sox2</option><option value="Sox9">Sox9</option><option value="Srr">Srr</option><option value="SV40">SV40</option><option value="Sycp1">Sycp1</option><option value="Syn1">Syn1</option><option value="T">T</option><option value="Tagln">Tagln</option><option value="Tal1">Tal1</option><option value="Tal2">Tal2</option><option value="Talgn">Talgn</option><option value="Tbx1">Tbx1</option><option value="Tbx18">Tbx18</option><option value="Tbx3">Tbx3</option><option value="Tcfap2a">Tcfap2a</option><option value="Tek">Tek</option><option value="tetO">tetO</option><option value="TFAP2A">TFAP2A</option><option value="Tg">Tg</option><option value="Tgfb3">Tgfb3</option><option value="Th">Th</option><option value="Thy1">Thy1</option><option value="Tie1">Tie1</option><option value="Tlx2">Tlx2</option><option value="Tlx3">Tlx3</option><option value="Tnfrsf4">Tnfrsf4</option><option value="Tnni3">Tnni3</option><option value="Tnnt2">Tnnt2</option><option value="TPO">TPO</option><option value="Tpsb2">Tpsb2</option><option value="TSPY">TSPY</option><option value="Ttr">Ttr</option><option value="Tuba1">Tuba1</option><option value="Twist2">Twist2</option><option value="Tyr">Tyr</option><option value="Tyrp1">Tyrp1</option><option value="UBC">UBC</option><option value="UBE2I">UBE2I</option><option value="Ucp1">Ucp1</option><option value="Upk1b">Upk1b</option><option value="Ure2">Ure2</option><option value="Vamp2">Vamp2</option><option value="Vav1">Vav1</option><option value="Vil">Vil</option><option value="Wap">Wap</option><option value="Wnt1">Wnt1</option><option value="Wnt3a">Wnt3a</option><option value="Wnt4">Wnt4</option><option value="WT1">WT1</option><option value="Zp3">Zp3</option>
+	
+	                            </select>
+	
+							<input name="submit" class="searchToolButton" type="submit" value="Go">
+							<span id="GetDriver">&nbsp;</span>
+						</form>
+	                    </div>
+	                    </div>
+
+                        </dd>
+
+						<dt class="whatList">Find recombinase alleles expressing activity in a particular 
+						anatomical system. These results include only those alleles for which recombinase 
+						specificity data is available.</dt>
+						<dd class="searchList">
+						
+						<div class="creSearch" style="width:450px; height:37px;">
+						<div class="creInputs">
+							<form action="<!--#include file='include/java_url.html'-->WIFetch?" method="get">
+								<input type="hidden" name="page" value="creSummary">
+								<label onmouseout="nd();" onMouseOver="return overlib('Anatomical system containing the structure or tissue term from the Mouse Anatomical Dictionary in which recombinase activity occurs. See the <a href=\'<!--#include file="include/wi_url2.html"-->searches/anatdict_form.shtml\'>Mouse Anatomical Dictionary</a> to find the terms MGI uses. (NOTE: links from the Mouse Anatomical Dictionary do not lead back to these pages.)', ANCHOR, 'GetSystem', ANCHORALIGN, 0, 0.5, 0, 0.5, WIDTH, 250, DELAY, 900, STICKY, CAPTION, 'Expressing activity in', CLOSECLICK, CLOSETEXT, 'Close X');">
+								    <strong style="color:#002255; border-bottom:dotted thin #555555; cursor:help;">Recombinase specificity in:</strong>&nbsp;</label>
+								<select name="systemKey">
+									<option selected value="" name="default"  onMouseOver="return overlib('Tissues in all anatomical systems of the developing embryo and postnatal adult.', ANCHOR, 'GetSystem', ANCHORALIGN, 0, 0.5, 0, 0.5, WIDTH, 250, DELAY, 900, STICKY, CAPTION, 'Anatomical System', CLOSECLICK, CLOSETEXT, 'Close X');" onmouseout="nd();">(choose one) </option>
+									<option value="4834244"  onMouseOver="return overlib('Adipose system tissues in the developing embryo and postnatal adult from approximately E4.5 to postnatal adult.', ANCHOR, 'GetSystem', ANCHORALIGN, 0, 0.5, 0, 0.5, WIDTH, 250, DELAY, 900, STICKY, CAPTION, 'Anatomical System', CLOSECLICK, CLOSETEXT, 'Close X');" onmouseout="nd();">adipose tissue</option>
+									<option value="4834245" onmouseover="return overlib('Alimentary system tissues in the developing embryo and postnatal adult from approximately E4.5 to postnatal adult.', ANCHOR, 'GetSystem', ANCHORALIGN, 0, 0.5, 0, 0.5, WIDTH, 250, DELAY, 900, STICKY, CAPTION, 'Anatomical System', CLOSECLICK, CLOSETEXT, 'Close X');" onmouseout="nd();">alimentary system</option>
+									<option value="4834246" onmouseover="return overlib('Tissues of the branchial arches in the developing embryo and postnatal adult from approximately E4.5 to postnatal adult.', ANCHOR, 'GetSystem', ANCHORALIGN, 0, 0.5, 0, 0.5, WIDTH, 250, DELAY, 900, STICKY, CAPTION, 'Anatomical System', CLOSECLICK, CLOSETEXT, 'Close X');" onmouseout="nd();">branchial arches</option>
+									<option value="4834247" onmouseover="return overlib('Tissues of the cardiovascular system in the developing embryo and postnatal adult from approximately E4.5 to postnatal adult.', ANCHOR, 'GetSystem', ANCHORALIGN, 0, 0.5, 0, 0.5, WIDTH, 250, DELAY, 900, STICKY, CAPTION, 'Anatomical System', CLOSECLICK, CLOSETEXT, 'Close X');" onmouseout="nd();">cardiovascular system</option>
+									<option value="4834248" onmouseover="return overlib('Tissues of cavities and their linings in the developing embryo and postnatal adult from approximately E4.5 to postnatal adult.', ANCHOR, 'GetSystem', ANCHORALIGN, 0, 0.5, 0, 0.5, WIDTH, 250, DELAY, 900, STICKY, CAPTION, 'Anatomical System', CLOSECLICK, CLOSETEXT, 'Close X');" onmouseout="nd();">cavities &amp; their linings</option>
+									<option value="4834251" onmouseover="return overlib('Endocrine system tissues in the developing embryo and postnatal adult from approximately E4.5 to postnatal adult.', ANCHOR, 'GetSystem', ANCHORALIGN, 0, 0.5, 0, 0.5, WIDTH, 250, DELAY, 900, STICKY, CAPTION, 'Anatomical System', CLOSECLICK, CLOSETEXT, 'Close X');" onmouseout="nd();">endocrine system</option>
+									<option value="4834253" onmouseover="return overlib('Tissues of the head in the developing embryo and postnatal adult from approximately E4.5 to postnatal adult). For eyes, nose or ears, see Sensory Organs.  For brain or other nervous system tissues, see Nervous System.', ANCHOR, 'GetSystem', ANCHORALIGN, 0, 0.5, 0, 0.5, WIDTH, 250, DELAY, 900, STICKY, CAPTION, 'Anatomical System', CLOSECLICK, CLOSETEXT, 'Close X');" onmouseout="nd();">head</option>
+									<option value="4834254" onmouseover="return overlib('Hemolymphoid system tissues in the developing embryo and postnatal adult from approximately E4.5 to postnatal adult.', ANCHOR, 'GetSystem', ANCHORALIGN, 0, 0.5, 0, 0.5, WIDTH, 250, DELAY, 900, STICKY, CAPTION, 'Anatomical System', CLOSECLICK, CLOSETEXT, 'Close X');" onmouseout="nd();">hemolymphoid system</option>
+									<option value="4834255" onmouseover="return overlib('Integumental system tissues in the developing embryo and postnatal adult from approximately E4.5 to postnatal adult.', ANCHOR, 'GetSystem', ANCHORALIGN, 0, 0.5, 0, 0.5, WIDTH, 250, DELAY, 900, STICKY, CAPTION, 'Anatomical System', CLOSECLICK, CLOSETEXT, 'Close X');" onmouseout="nd();">integumental system</option>
+									<option value="4834256" onmouseover="return overlib('Tissues of the limbs in the developing embryo and postnatal adult from approximately E4.5 to postnatal adult.', ANCHOR, 'GetSystem', ANCHORALIGN, 0, 0.5, 0, 0.5, WIDTH, 250, DELAY, 900, STICKY, CAPTION, 'Anatomical System', CLOSECLICK, CLOSETEXT, 'Close X');" onmouseout="nd();">limbs</option>
+									<option value="4834257" onmouseover="return overlib('Liver and biliary system tissues in the developing embryo and postnatal adult from approximately E4.5 to postnatal adult.', ANCHOR, 'GetSystem', ANCHORALIGN, 0, 0.5, 0, 0.5, WIDTH, 250, DELAY, 900, STICKY, CAPTION, 'Anatomical System', CLOSECLICK, CLOSETEXT, 'Close X');" onmouseout="nd();">liver and biliary system</option>
+									<option value="4834258" onmouseover="return overlib('Mesenchyme tissues in the developing embryo and postnatal adult from approximately E4.5 to postnatal adult.', ANCHOR, 'GetSystem', ANCHORALIGN, 0, 0.5, 0, 0.5, WIDTH, 250, DELAY, 900, STICKY, CAPTION, 'Anatomical System', CLOSECLICK, CLOSETEXT, 'Close X');" onmouseout="nd();">mesenchyme</option>
+									<option value="4834259" onmouseover="return overlib('Muscle tissues in the developing embryo and postnatal adult from approximately E4.5 to postnatal adult.', ANCHOR, 'GetSystem', ANCHORALIGN, 0, 0.5, 0, 0.5, WIDTH, 250, DELAY, 900, STICKY, CAPTION, 'Anatomical System', CLOSECLICK, CLOSETEXT, 'Close X');" onmouseout="nd();">muscle</option>
+									<option value="4834260" onmouseover="return overlib('Nervous system tissues in the developing embryo and postnatal adult from approximately E4.5 to postnatal adult. Includes central nervous system, brain, spinal cord and peripheral nervous system tissues and structures.', ANCHOR, 'GetSystem', ANCHORALIGN, 0, 0.5, 0, 0.5, WIDTH, 250, DELAY, 900, STICKY, CAPTION, 'Anatomical System', CLOSECLICK, CLOSETEXT, 'Close X');" onmouseout="nd();">nervous system</option>
+									<option value="4834262" onmouseover="return overlib('Renal and urinary system tissues in the developing embryo and postnatal adult from approximately E4.5 to postnatal adult.', ANCHOR, 'GetSystem', ANCHORALIGN, 0, 0.5, 0, 0.5, WIDTH, 250, DELAY, 900, STICKY, CAPTION, 'Anatomical System', CLOSECLICK, CLOSETEXT, 'Close X');" onmouseout="nd();">renal and urinary system</option>
+									<option value="4834263" onmouseover="return overlib('Reproductive sytem tissues in the developing embryo and postnatal adult from approximately E4.5 to postnatal adult.', ANCHOR, 'GetSystem', ANCHORALIGN, 0, 0.5, 0, 0.5, WIDTH, 250, DELAY, 900, STICKY, CAPTION, 'Anatomical System', CLOSECLICK, CLOSETEXT, 'Close X');" onmouseout="nd();">reproductive system</option>
+									<option value="4834264" onmouseover="return overlib('Respiratory system tissues in the developing embryo and postnatal adult from approximately E4.5 to postnatal adult.', ANCHOR, 'GetSystem', ANCHORALIGN, 0, 0.5, 0, 0.5, WIDTH, 250, DELAY, 900, STICKY, CAPTION, 'Anatomical System', CLOSECLICK, CLOSETEXT, 'Close X');" onmouseout="nd();">respiratory system</option>
+									<option value="4834265" onmouseover="return overlib('Sensory organ tissues (eye, ear, nose) in the developing embryo and postnatal adult from approximately E4.5 to postnatal adult.', ANCHOR, 'GetSystem', ANCHORALIGN, 0, 0.5, 0, 0.5, WIDTH, 250, DELAY, 900, STICKY, CAPTION, 'Anatomical System', CLOSECLICK, CLOSETEXT, 'Close X');" onmouseout="nd();">sensory organs</option>
+									<option value="4834266" onmouseover="return overlib('Skeletal system tissues in the developing embryo and postnatal adult from approximately E4.5 to postnatal adult.', ANCHOR, 'GetSystem', ANCHORALIGN, 0, 0.5, 0, 0.5, WIDTH, 250, DELAY, 900, STICKY, CAPTION, 'Anatomical System', CLOSECLICK, CLOSETEXT, 'Close X');" onmouseout="nd();">skeletal system</option>
+									<option value="4834267" onmouseover="return overlib('Tissues of the tail in the developing embryo and postnatal adult from approximately E4.5 to postnatal adult.', ANCHOR, 'GetSystem', ANCHORALIGN, 0, 0.5, 0, 0.5, WIDTH, 250, DELAY, 900, STICKY, CAPTION, 'Anatomical System', CLOSECLICK, CLOSETEXT, 'Close X');" onmouseout="nd();">tail</option>
+									<option value="4834249"   onMouseOver="return overlib('All anatomical structures in the developing embryo from conception through approximately E4.5.', ANCHOR, 'GetSystem', ANCHORALIGN, 0, 0.5, 0, 0.5, WIDTH, 250, DELAY, 900, STICKY, CAPTION, 'Anatomical System', CLOSECLICK, CLOSETEXT, 'Close X');" onmouseout="nd();">early embryo</option>
+									<option value="4834252" onmouseover="return overlib('Amniotic, placental, or other tissues external to the developing embryo from approximately E4.5 to E18.', ANCHOR, 'GetSystem', ANCHORALIGN, 0, 0.5, 0, 0.5, WIDTH, 250, DELAY, 900, STICKY, CAPTION, 'Anatomical System', CLOSECLICK, CLOSETEXT, 'Close X');" onmouseout="nd();">extraembryonic component</option>
+									<option value="4834250" onmouseover="return overlib('All structures in the developing embryo from approximately E4.5 to E18 not included in other major Anatomical Sytems.', ANCHOR, 'GetSystem', ANCHORALIGN, 0, 0.5, 0, 0.5, WIDTH, 250, DELAY, 900, STICKY, CAPTION, 'Anatomical System', CLOSECLICK, CLOSETEXT, 'Close X');" onmouseout="nd();">embryo-other</option>
+									<option value="4834261" onmouseover="return overlib('All structures in the postnatal adult not included in other major Anatomical Systems.', ANCHOR, 'GetSystem', ANCHORALIGN, 0, 0.5, 0, 0.5, WIDTH, 250, DELAY, 900, STICKY, CAPTION, 'Anatomical System', CLOSECLICK, CLOSETEXT, 'Close X');" onmouseout="nd();">postnatal-other</option>
+								</select>
+								<input name="submit2" class="searchToolButton" type="submit" value="Go">
+								<span id="GetSystem">&nbsp;</span>
+							</form>
+						
+						
+						</div>
+						</div>
+
+
+                        </dd>
+                    </dl>
+                    
+                    <hr class="hrblue">
+                    
+                    <p class="" style="margin-bottom: -10px; margin-top: 5px; color: rgb(0, 34, 85); font-variant: small-caps;">Related searches</p>
+                    <dl>
+						<dt class="whatList">Search for recombinase-containing transgene or knock-in alleles, or 
+						floxed or frt alleles using MGI's Allele Query Form </dt>
+						<dd class="searchList"><a class="small homeLink" href="<!--#include file='include/wi_url.html'-->searches/allele_form.shtml">Phenotypes, Alleles & Disease Models Query</a></dd>
+
+						<dt class="whatList">Search for endogenous gene expression using MGI's Gene Expression Data Query Form</dt>
+						<dd class="searchList"><a class="small homeLink" href="<!--#include file='include/java_url.html'-->WIFetch?page=expressionQF">Gene Expression Data Query</a></dd>
+					</dl>
+				</div>
+			</div>
+		</td>
+		<td width="50%" valign="top">
+			<div class="blueBorder marginBottom leftCenterMargin">
+				<div class="boxTitle">FAQs</div>
+				<div class="boxBG pad5">
+					<dl class="boxList">
+						<dt>How do I...</dt>
+						<dd class="faqList">.. use the "Recombinase driven by" or "Recombinase specificity in" searches to find 
+						a useful recombinase-containing transgene or knock-in allele?
+						<a class="small homeLink" onClick="javascript:openFaqWindow('GXD_GeneTissue.shtml'); return false;"
+						href="<!--#include file='include/faq_url.html'-->GXD_GeneTissue.shtml">FAQ</a></dd>
+						<dd class="faqList">.. get a list of all recombinase alleles in MGI's database with associated tissue 
+						specificity data, if any?
+						<a class="small homeLink" onClick="javascript:openFaqWindow('GXD_tissue_dev.shtml'); return false;"
+						href="<!--#include file='include/faq_url.html'-->GXD_tissue_dev.shtml">FAQ</a></dd>
+						<dd class="faqList">.. determine where I can order mice carrying a particular recombinase allele?
+						<a class="small homeLink" onClick="javascript:openFaqWindow('GXD_comp_tissue.shtml'); return false;"
+						href="<!--#include file='include/faq_url.html'-->GXD_comp_tissue.shtml">FAQ</a></dd>
+						<dd class="faqList">.. search MGI's recombinase specificity data for a particular anatomical structure 
+						using "Search MGI with Google"?
+						<a class="small homeLink" onClick="javascript:openFaqWindow('GXD_ref_age.shtml'); return false;"
+						href="<!--#include file='include/faq_url.html'-->GXD_ref_age.shtml">FAQ</a></dd>
+					</dl>
+					<a class="small homeLink" href="<!--#include file='include/faq_url.html'-->FAQ.shtml#cre">More FAQs</a>
+				</div>
+			</div>
+		</td>
+	</tr>
+	<tr>
+		<td width="50%" valign="top">
+			<div class="blueBorder leftCenterMargin statList">
+				<div class="boxTitle">
+					<div class="left">Recombinase Specificity Data Includes</div>
+					<div class="right small"><!--#include file='include/stats_date.shtml'--></div>
+				</div>
+				<div class="boxBG pad5 small">
+					<!--#include file='stats/cre_stats.shtml'-->
+					<a class="small homeLink" href="<!--#include file="include/mgihome_url.html"-->homepages/stats/all_stats.shtml#allstats_cre">More...</a>
+				</div>
+			</div>
+		</td>
+	</tr>
+</table>
+<div class="boxWide blueBorder marginBottom">
+	<div class="boxTitle">
+		<span class="left">Recombinase Project News</span>
+		<span class="right small"> March 26, 2009</span>
+	</div>
+	<div class="boxBG pad5 small">
+		<ul>
+			<li> The first edition of MGI's Recombinase Allele Project was 
+			released October 26, 2009. Data are  being curated from the 
+			scientific literature and from projects underway at collaborating 
+			organizations.</li>
+			<li>List of available <a href="<!--#include file='include/imsr_home_url.html'-->fetch?page=imsrSummary&amp;query=cre&amp;selectedQuery=Genes">
+			strains expressing cre</a></li>
+		</ul>
+     </div>
+</div>
+
+<!-- Tabs box -->
+<!-- Note: This section uses a white gif to set the width and avoid
+    the a crash in IE6, and display problems in IE 6 & 7.  I also
+    needed to put this div in a table to get the fix to work.  The
+    order otf the table and div tags is very specific to avoid some
+    flickering in IE.-->
+<table width="100%" cellpadding="0" cellspacing="0" border="0"><tr><td>
+<div class="boxWide marginBottom">
+	<ul id="gxdtab" class="shadetabs">
+		<li class="selected"><a href="<!--#include file='include/mgihome_url.html'-->homepages/tabContents/Cre_About.shtml" rel="ajaxcontentarea">About Recombinase Specificity</a></li>
+		<li><a href="<!--#include file='include/mgihome_url.html'-->homepages/tabContents/Cre_Help.shtml" rel="ajaxcontentarea">Help Documents</a></li>
+		<li><a href="<!--#include file='include/mgihome_url.html'-->homepages/tabContents/Cre_Collaborators.shtml" rel="ajaxcontentarea">Collaborators</a></li>
+	</ul>
+	<div id="gxdcontentarea" class="contentstyle">
+		<!--#include file='tabContents/Cre_About.shtml'-->
+	</div>
+
+<img src="<!--#include file='include/mgihome_url.html'-->homepages/images/white_dot.gif" width="720px" height="1px">
+</td></tr>
+</div>
+</table>
+
+<!--AJAX TABS CALLS-->
+
+<script type="text/javascript" src="<!--#include file="include/javascript.html"-->">
+    /***********************************************
+    * Ajax Tabs Content script- © Dynamic Drive DHTML code library (www.dynamicdrive.com)
+    * This notice MUST stay intact for legal use
+    * Visit Dynamic Drive at http://www.dynamicdrive.com/ for full source code
+    ***********************************************/
+</script>
+
+<script type="text/javascript">
+    var gxd_box=new ddajaxtabs("gxdtab", "gxdcontentarea")
+    gxd_box.setpersist(true)
+    gxd_box.setselectedClassTarget("linkparent") //"link" or "linkparent"
+    gxd_box.init()
+</script>
+
+<!--#include file='include/templateBodyStop.html'-->
+
+</body>
+</html>
