@@ -34,30 +34,31 @@
 <tr><td><a name="october_2009"></a>
 <!--section1 table-->
    <table class="outline" width="100%">
- <tr><td class="enhance"><a name="october_2009"></a>October 21, 2009: MGI announces the following enhancements for the 4.31 release:</td></tr><br>
+ <tr><td class="enhance"><a name="october_2009"></a>October 21, 2009: MGI announces the following enhancements for the 4.31 release.</td></tr><br>
    <td>
 	<dl class="linkedList">
-<dt>The new MGI Recombinase (cre) Specificity tool provides several ways to find recombinase-containing transgenes or knock-in alleles.
-</dt>
-<dt><b>Use this tool to:</b>
+<dt>New MGI Recombinase (cre) Specificity functionality lets you find information about recombinase-containing transgenes or knock-in alleles. You can: 
   <ul>
-    <li>Search for recombinase alleles using the gene, gene promoter, or construct that drives specificity.</li>
-  <li>Search for recombinase alleles using the tissue, system, organ, or stage where the actity is expressed.</li>
-<li>Discover where to order mice carrying a particular recombinase allele.</li>
-   <li>View lists of either all recombinase-containing transgene and knock-in alleles in the MGI database or only those with any associated tissue specificity data.</li>
+    <li>search for recombinase alleles by using the gene, gene promoter, or construct that drives specificity.</li>
+  <li>search for recombinase alleles using the Anatomical System containing the tissue, system, organ, or stage where the actity is expressed.</li>
+<li>discover where to order mice carrying a particular recombinase allele.</li>
+   <li>view lists of either all recombinase-containing transgene and knock-in alleles in the MGI database or only those with any associated tissue specificity data.</li>
   </ul>
+</dt>
 
-<dt>There are currently 882 alleles with recmbinase activity involving 803 genes/markers.</p>
+<dt>There are currently 882 alleles with recombinase activity involving 803 genes/markers.</p>
 
 <dt><b>To find recombinase-containing transgenes or knock-in alleles in MGI:</b></dt>
 <ul>
   <li>Select a driver from the list beside <b>Recombinase driven by:</b> on the <a href="../homepages/recombinase.shtml">Recombinase (cre) Specificity</a> page to find alleles both with and without recombinase specificity data. (You may wish to search for <i>every</i> recombinase-containing allele, even ones with no associated tissue specificity data).</li>
-   <li>Select an item from the <b>Recombinase specificity in</b> list to find systems where recombinase activity is expressed.  The results include only alleles with available recombinase specificity data.<br> 
+   <li>Select an item from the <b>Recombinase specificity in:</b> list to find anatomical systems where recombinase activity is expressed.  The results include only alleles with available recombinase specificity data.<br> 
 </ul></dt>
 <dt><b>To find a recombinase-expressing mouse:</b></br>
   <ul>
-    <li>Locate the <b>Find Mice (IMSR) column</b> on the <b>Recombinase Alleles - Tissue Specificity Summary</b>.</li>
-    <li>Scroll the table to see if there is one that expresses cre recombinase in the desired tissue.</li>
+    <li>On the <b>Recombinase Alleles - Tissue Specificity Summary</b> table,  scroll the <b>IMSR</b> column. A numeral in this column indicates how many matching items there are in the International Mouse Strain Resource. Clicking the numeral link brings up an IMSR summary table of strains expressing cre recombinase in the desired tissue.</li>
+
+   <li><b>Recombinase Specificity Detail</b> pages for the allele also display availability of a specific recombinase-containing allele (in the <b>Find Mice (IMSR)</b>  row. </li>
+   
   </ul>
    </dt>
 
@@ -71,12 +72,12 @@
 </ul>
 </dt>
 
-<dt><b>Other ways to find recombinase data</b>
-<dt>Phenotypic, disease, and/or expression data may exist separately from tissue specificity data.
+<dt><b>Other ways to find recombinase data</b><br>
+Phenotypic, disease, and/or expression data may exist separately from tissue specificity data.
   <ul>
     <li>Use the <a href="<!--#include file='include/wi_url.html'-->/searches/allele_form.shtml">Phenotypes, Alleles, & Disease Models Query Form</a> to find recombinase-containing transgene or knock-in alleles or for flox or frt alleles.</li>
-  <li>Use <A HREF="<!--#include file='include/java_url.html'-->WIFetch?page=expressionQF">Gene Expression Data Query Form</a> to find endogenous gene expression.</li>
-<li>Use the <b>Search MGI with Google</b> tool to find Recombinase Specificity Detail pages including an exact tissue, structure or driver (if Google has indexed the page and if your query uses the same MGI nomenclature for structures). <b>Note:</b> This type of query does not return child terms for the searched item, e.g., a search on <i>recombinase Mog Brain</i> does not return results as precise as a search on <i>TS28:cerebral white matter</i>.</li>
+  <li>Use the <A HREF="<!--#include file='include/java_url.html'-->WIFetch?page=expressionQF">Gene Expression Data Query Form</a> to find endogenous gene expression.</li>
+<li>Use the <b>Search MGI with Google</b> tool to find Recombinase Specificity Detail pages including an exact tissue, structure or driver (if Google has indexed the page and if your query uses the same MGI nomenclature for structures). <b>Note:</b> This type of query does not return child terms for the searched item. For example, a search on <i>recombinase Mog Brain</i> does not return results as precise as a search on <i>recombinase Mog TS28:cerebral white matter</i>.</li>
   </ul>
   </dt>
 </DT>
