@@ -101,7 +101,7 @@
 <li>information about whether a mouse has been produced for the gene trap mutant cell line.</li>
  		<li>allele nomenclature.</li>
 	</ul></dt>
-  <dt>As examples, see:</p>	
+  <dt>As examples, see:
 <ul>
   <li><a href="http://hobbiton.informatics.jax.org:8080/cgi-bin/gbrowse/mouse_current/?start=85537525;stop=85652747;ref=6;width=800;version=100;cache=on;drag_and_drop=on;show_tooltips=on;grid=on;label=MGI_Representative_Transcripts-MGI_Representative_Transcripts-NCBI_Transcripts-ENSEMBL_Transcripts-VEGA_Transcripts-GeneTraps_per_gene-MGI_RNA_Gtraps-MGI_DNA_Gtraps;h_feat=%22BayGenomics_XH152%22%40yellow">MGI Mouse Genome Browser on build 37</a></li>
   <li><a href="<!--#include file='include/java_url.html'-->WIFetch?page=alleleDetail&key=37529">Alms1 Gene trapped Allele Detail</a></li>
@@ -129,7 +129,10 @@
  	  <li>where sequence tags for a gene trap allele overlap multiple genes in the trapped gene orientation; where tags overlap one or more genes in reverse orientation; or where they overlap no known genes using current gene model coordinates. </li>
 	  <li>where gene trap sequence tags for an allele do not align with the reference mouse genome, or align equally well to multiple locations. </li>
 	  <li>for mixed cell lines, characterized by multiple sequence tags for the same cell line and good alignments to different locations in the genome. </li>
-	</ul><dt>See <a href="<!--#include file='include/userdocs_url.html'-->genetrap_usecases.shtml#no_association">Why aren't all gene traps associated with a gene?</a> for additional details.
+	</ul>
+	</dt>
+
+	<dt>See <a href="<!--#include file='include/userdocs_url.html'-->genetrap_usecases.shtml#no_association">Why aren't all gene traps associated with a gene?</a> for additional details.
 	</DT>
 <br>
 	<DT><b>Gene Trap Integration and Curation at MGI</b></DT>
