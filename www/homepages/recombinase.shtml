@@ -23,8 +23,7 @@
 			<br>
 			<span class="homePageSubTitle">
 			   MGI collects and annotates expression and activity data for 
-			   recombinase-containing transgenes and knock-in alleles    
-               recombinase excision.
+			   recombinase-containing transgenes and knock-in alleles.
 			</span>
 		</td>
 		<td>
@@ -39,28 +38,18 @@
 	</tr>
 </table>
 
-<table class="sideMargin" border="0" cellspacing="0" cellpadding="0">
 
+
+<table class="sideMargin" border="0" cellspacing="0" cellpadding="0">
 	<tr>
 		<td rowspan="2" width="50%" valign="top">
-			<div class="blueBorder rightCenterMargin">
-				<div class="boxTitle">Access Data</div>
-				<div class="boxBG pad5">
-				    <p class="" style="margin-bottom: 8px; margin-top: 3px; color: rgb(0, 34, 85); font-variant: small-caps;">Retrieve all alleles </p>
-					<dl>
-						<dt>Retrieve a list of all recombinase-containing transgenes and knock-in alleles.</dt>
-                        <dd class="searchList"><a class="small homeLink" href="<!--#include file='include/ftp_url2.html'-->reports/MGI_Knockout_Full.html">HTML version (like "All MGI Knockouts" report) </a></dd>
-                        <dd class="searchList"><a class="small homeLink" href="<!--#include file='include/ftp_url2.html'-->reports/MGI_Knockout_Full.rpt">Tab-delimited version (also to be on FTP site)</a></dd>
-                    </dl>
-                    
-                    <hr class="hrblue">
-                    
-                    <p class="" style="margin-bottom: -10px; margin-top: 5px; color: rgb(0, 34, 85); font-variant: small-caps;">Find alleles </p>
+		<div class="blueBorder rightCenterMargin">
+			<div class="boxTitle">Access Data</div>
+			<div class="boxBG pad5">
+				<p class="" style="margin-bottom: 8px; margin-top: 3px; color: rgb(0, 34, 85); font-variant: small-caps;">Find recombinases-carrying alleles </p>
                     <dl>    
-						<dt class="whatList">Find recombinase alleles by the gene, gene promoter, or construct 
-						driving recombinase specificity. Select "any driver" to see all alleles with recombinase 
-						specificity data. Select a particular driver to see alleles with and without recombinase 
-						specificity data.</dt>
+						<dt>Note that MGI is actively curating these data and incorporating data from collaborators. These searches <u><b>only</b></u> apply to alleles for which recombinase specificity/expression data are currently included in MGI. Available data will continue to increase. To retrieve all recombinase-containing transgene and knock-in alleles, skip to R<small>ETRIEVE</SMALL> A<SMALL>LL</SMALL> A<SMALL>LLELES</SMALL>. </dt><br>
+<dt>Search for alleles by promoter/driver specificity. <!--Find recombinase alleles by the gene, gene promoter, or construct driving recombinase specificity. Select "any driver" to see all alleles with recombinase Specificity data. Select a particular driver to see alleles with and without recombinase specificity data.--></dt>
 						<dd class="searchList">
 							
 						<div class="creSearch" style="width:365px; height:37px;">
@@ -81,9 +70,10 @@
 
                         </dd>
 
-						<dt class="whatList">Find recombinase alleles expressing activity in a particular 
+
+						<dt class="whatList">Search for alleles with specificity/expresson in a particular anatomical system.<!-- Find recombinase alleles expressing activity in a particular 
 						anatomical system. These results include only those alleles for which recombinase 
-						specificity data is available.</dt>
+						specificity data is available.--></dt>
 						<dd class="searchList">
 						
 						<div class="creSearch" style="width:450px; height:37px;">
@@ -140,7 +130,19 @@
 						<dt class="whatList">Search for endogenous gene expression using MGI's Gene Expression Data Query Form</dt>
 						<dd class="searchList"><a class="small homeLink" href="<!--#include file='include/java_url.html'-->WIFetch?page=expressionQF">Gene Expression Data Query</a></dd>
 					</dl>
+ <hr class="hrblue">
+<div class="boxBG pad5"> 
+				    <p class="" style="margin-bottom: 8px; margin-top: 3px; color: rgb(0, 34, 85); font-variant: small-caps;">Retrieve all alleles </p>
+					<dl>
+						<dt>Retrieve a list of all recombinase-containing transgenes and knock-in alleles.</dt>
+                        <dd class="searchList"><a class="small homeLink" href="<!--#include file='include/ftp_url2.html'-->reports/MGI_Knockout_Full.html">HTML version (like "All MGI Knockouts" report) </a></dd>
+                        <dd class="searchList"><a class="small homeLink" href="<!--#include file='include/ftp_url2.html'-->reports/MGI_Knockout_Full.rpt">Tab-delimited version (also to be on FTP site)</a></dd>
+                    </dl>
+                    
+                   
+                    
 				</div>
+
 			</div>
 		</td>
 		<td width="50%" valign="top">
@@ -194,8 +196,9 @@
 		<ul>
 			<li> The first edition of MGI's Recombinase Allele Project was 
 			released October 26, 2009. Data are  being curated from the 
-			scientific literature and from projects underway at collaborating 
-			organizations.</li>
+			scientific literature and integrated from projects underway at <a href="tabContents/Cre_Collaborators.shtml">collaborating 
+			organizations</a>.</li>
+	<li>MGI is part of the CREATE (Coordination of resources for conditional expression of mutated mouse alleles) consortium.</li>
 			<li>List of available <a href="<!--#include file='include/imsr_home_url.html'-->fetch?page=imsrSummary&amp;query=cre&amp;selectedQuery=Genes">
 			strains expressing cre</a></li>
 		</ul>
