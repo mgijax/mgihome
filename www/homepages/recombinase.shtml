@@ -49,26 +49,6 @@
 				<p class="" style="margin-bottom: 8px; margin-top: 3px; color: rgb(0, 34, 85); font-variant: small-caps;">Find recombinases-carrying alleles </p>
                     <dl>    
 						<dt>Note that MGI is actively curating these data and incorporating data from collaborators. These searches <u><b>only</b></u> apply to alleles for which recombinase specificity/expression data are currently included in MGI. Available data will continue to increase. To retrieve all recombinase-containing transgene and knock-in alleles, skip to R<small>ETRIEVE</SMALL> A<SMALL>LL</SMALL> A<SMALL>LLELES</SMALL>. </dt><br>
-<dt>Search for alleles by promoter/driver specificity. <!--Find recombinase alleles by the gene, gene promoter, or construct driving recombinase specificity. Select "any driver" to see all alleles with recombinase Specificity data. Select a particular driver to see alleles with and without recombinase specificity data.--></dt>
-						<dd class="searchList">
-							
-						<div class="creSearch" style="width:365px; height:37px;">
-	                    <div class="creInputs">
-	
-	                    <form action="<!--#include file='include/java_url.html'-->WIFetch?" method="get">
-	                        <input type="hidden" name="page" value="creSummary">
-	                            <label onmouseover="return overlib('Allele, gene, fusion product, or genetic construct driving recombinase activity.',ANCHOR, 'GetDriver', ANCHORALIGN, 0, 0.5, 0, 0.5, WIDTH, 250, DELAY, 900, STICKY, CAPTION, 'Driven by', CLOSECLICK, CLOSETEXT, 'Close X');" onmouseout="nd();"><strong style="color:#002255; border-bottom:dotted thin #555555; cursor:help;">Recombinase driven by:</strong>&nbsp;</label>
-	                            <select name="driver">
-	                                <!--#include file='include/driver_list.html'-->
-	                            </select>
-	
-							<input name="submit" class="searchToolButton" type="submit" value="Go">
-							<span id="GetDriver">&nbsp;</span>
-						</form>
-	                    </div>
-	                    </div>
-
-                        </dd>
 
 
 						<dt class="whatList">Search for alleles with specificity/expresson in a particular anatomical system.<!-- Find recombinase alleles expressing activity in a particular 
@@ -117,6 +97,28 @@
 						</div>
 
                         </dd>
+<br>
+<dt>Search for alleles by promoter/driver specificity. <!--Find recombinase alleles by the gene, gene promoter, or construct driving recombinase specificity. Select "any driver" to see all alleles with recombinase Specificity data. Select a particular driver to see alleles with and without recombinase specificity data.--></dt>
+						<dd class="searchList">
+							
+						<div class="creSearch" style="width:365px; height:37px;">
+	                    <div class="creInputs">
+	
+	                    <form action="<!--#include file='include/java_url.html'-->WIFetch?" method="get">
+	                        <input type="hidden" name="page" value="creSummary">
+	                            <label onmouseover="return overlib('Allele, gene, fusion product, or genetic construct driving recombinase activity.',ANCHOR, 'GetDriver', ANCHORALIGN, 0, 0.5, 0, 0.5, WIDTH, 250, DELAY, 900, STICKY, CAPTION, 'Driven by', CLOSECLICK, CLOSETEXT, 'Close X');" onmouseout="nd();"><strong style="color:#002255; border-bottom:dotted thin #555555; cursor:help;">Recombinase driven by:</strong>&nbsp;</label>
+	                            <select name="driver">
+	                                <!--#include file='include/driver_list.html'-->
+	                            </select>
+	
+							<input name="submit" class="searchToolButton" type="submit" value="Go">
+							<span id="GetDriver">&nbsp;</span>
+						</form>
+	                    </div>
+	                    </div>
+
+                        </dd>
+
                     </dl>
                     
                     <hr class="hrblue">
