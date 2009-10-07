@@ -52,6 +52,26 @@ def getDbDate ():
 
     return dbDateInfo["dbDate"]
 
+def getCreDriver ():
+    # Purpose: return value of latest db update
+    # Returns: string
+    # Assumes: nothing
+    # Effects: nothing
+    # Throws: db module may throw DB exceptions
+    # pull the MGI:ID and geneSymbol from the database
+
+    db.useOneConnection(1)
+    db.set_sqlUser(config["DB_USER"])
+    db.set_sqlPassword(config["DB_PASSWORD"])
+    db.set_sqlServer(config["DB_SERVER"])
+    db.set_sqlDatabase(config["DB_DATABASE"])
+    
+    results = db.sql('select distinct driverNote from ALL_Cre_Cache', 'auto')
+    drivers = ["<option selected value='' name='default'>any driver</option>"] # SQL command list
+    for r in results:
+        drivers.append("<option value='%s'>%s</option>" % (r['driverNote'], r['driverNote']))
+    listToFile(drivers, '../www/include/driver_list.html')
+
 
 def stringToFileNoNL (s, filename):
     #  Ultimately this should replace the stringToFile method
@@ -87,9 +107,10 @@ def createIncludeLink (includeName, fileLoc ) :
     os.system("ln -s " + fileLoc + " " + filePath)
 
 def main ():
+    getCreDriver()
     stringToFile (config['WI_URL'], '../www/include/wi_url.html')
-    stringToFile ('"%s";' % config['WI_URL'], '../www/include/wi_url2.html')
-    stringToFile (config['FTP_URL'], '../www/include/ftp_url.html')
+    stringToFileNoNL (config['WI_URL'], '../www/include/wi_url2.html')
+    stringToFile (config['FTP_BASE_URL'], '../www/include/ftp_url.html')
     stringToFile (config['MTB_URL'], '../www/include/mtb_url.html')
     stringToFile (config['MPD_URL'], '../www/include/mpd_url.html')
     #  This version of the ftp_url file is being generated to support a problem
@@ -97,7 +118,7 @@ def main ():
     #  the file after the URL was not being handled well via firefox.
     #  To minimize testing requirements Jill Lewis jlewis@informatics.jax.org
     #  authorized the generation of a second ftp_url html file.
-    stringToFileNoNL (config['FTP_URL'], '../www/include/ftp_url2.html')
+    stringToFileNoNL (config['FTP_BASE_URL'], '../www/include/ftp_url2.html')
     stringToFile (config['MGIHOME_URL'], \
         '../www/include/mgihome_url.html')
     stringToFile (config['GB_URL'], '../www/include/gb_url.html')

@@ -1,0 +1,256 @@
+<!--#include file='include/templateHead.html'-->
+
+  <title>MGI-Mouse Recombinase (cre)</title>
+  <meta name="description" content="MGI collects and annotates expression and activity data for recombinase-containing transgenes and knock-in alleles recombinase excision." />
+  <meta name="keywords" content="MGI, mgi, mice, mouse, murine, mus musculus, genes, genome, genomic, gene expression, mouse anatomy, embryo, embryonic development, expression assay, immunohistochemistry, in situ reporter, blot, RNA in situ, RNase, RT-PCR, Northern blot, Western blot" />
+  
+  <meta name="robots" content="NOODP" />
+  <meta name="robots" content="NOYDIR" />
+
+  <link rel="stylesheet" type="text/css" href="<!--#include file="include/stylesheet.html"-->" />
+
+<!--#include file='include/templateBodyStart.html'-->
+
+<!-- start body content -->
+
+<!-- mini homepage header section -->
+<table class="sideMargin marginTop" border="0" cellspacing="0" cellpadding="0">
+	<tr>
+		<td align="center" valign="middle">
+			<span class="homePageTitle">
+				Recombinase (cre) Specificity
+			</span>
+			<br>
+			<span class="homePageSubTitle">
+			   MGI collects and annotates expression and activity data for 
+			   recombinase-containing transgenes and knock-in alleles.
+			</span>
+		</td>
+		<td>
+			<div class="sideMargin marginBottom blueBorder pad5 small">
+			     <center><a href="http://jcs.biologists.org/content/vol114/issue17/cover.shtml">
+		         <img class="outlineImg" src="<!--#include file='include/mgihome_url.html'-->homepages/images/homepage_creLogo.gif"></a>
+		         <br />
+		         Image courtesy of <a href="http://jcs.biologists.org/content/vol114/issue17/cover.shtml" class="homeLink">
+                 Journal of Cell Science,<br />September 1 2001, Volume 114, Issue 17</a></center>
+        	</div>
+		</td>
+	</tr>
+</table>
+
+
+
+<table class="sideMargin" border="0" cellspacing="0" cellpadding="0">
+	<tr>
+		<td rowspan="2" width="50%" valign="top">
+		<div class="blueBorder rightCenterMargin">
+			<div class="boxTitle">Access Data</div>
+			<div class="boxBG pad5">
+				<p class="" style="margin-bottom: 8px; margin-top: 3px; color: rgb(0, 34, 85); font-variant: small-caps;">Find recombinases-carrying alleles </p>
+                    <dl>    
+						<dt>These searches apply <u><b>only</b></u> to alleles for which recombinase specificity/expression data are currently included in MGI. MGI is actively curating these data and incorporating data from collaborators. Available data will continue to increase. To retrieve all recombinase-containing transgene and knock-in alleles, skip to R<small>ETRIEVE</SMALL> A<SMALL>LL</SMALL> A<SMALL>LLELES</SMALL>. </dt><br>
+
+
+						<dt class="whatList">Search for alleles with specificity/expresson in a particular anatomical system.<!-- Find recombinase alleles expressing activity in a particular 
+						anatomical system. These results include only those alleles for which recombinase 
+						specificity data is available.--></dt>
+						<dd class="searchList">
+						
+						<div class="creSearch" style="width:450px; height:37px;">
+						<div class="creInputs">
+							<form action="<!--#include file='include/java_url.html'-->WIFetch?" method="get">
+								<input type="hidden" name="page" value="creSummary">
+								<label onmouseout="nd();" onMouseOver="return overlib('Anatomical system containing the structure or tissue term from the Mouse Anatomical Dictionary in which recombinase activity occurs. See the <a href=\'<!--#include file="include/wi_url2.html"-->searches/anatdict_form.shtml\'>Mouse Anatomical Dictionary</a> to find the terms MGI uses. (NOTE: links from the Mouse Anatomical Dictionary do not lead back to these pages.)', ANCHOR, 'GetSystem', ANCHORALIGN, 0, 0.5, 0, 0.5, WIDTH, 250, DELAY, 900, STICKY, CAPTION, 'Expressing activity in', CLOSECLICK, CLOSETEXT, 'Close X');">
+								    <strong style="color:#002255; border-bottom:dotted thin #555555; cursor:help;">Recombinase specificity in:</strong>&nbsp;</label>
+								<select name="systemKey">
+									<option selected value="" name="default"  onMouseOver="return overlib('Tissues in all anatomical systems of the developing embryo and postnatal adult.', ANCHOR, 'GetSystem', ANCHORALIGN, 0, 0.5, 0, 0.5, WIDTH, 250, DELAY, 900, STICKY, CAPTION, 'Anatomical System', CLOSECLICK, CLOSETEXT, 'Close X');" onmouseout="nd();">(choose one) </option>
+									<option value="4856340"  onMouseOver="return overlib('Adipose system tissues in the developing embryo and postnatal adult from approximately E4.5 to postnatal adult.', ANCHOR, 'GetSystem', ANCHORALIGN, 0, 0.5, 0, 0.5, WIDTH, 250, DELAY, 900, STICKY, CAPTION, 'Anatomical System', CLOSECLICK, CLOSETEXT, 'Close X');" onmouseout="nd();">adipose tissue</option>
+									<option value="4856341" onmouseover="return overlib('Alimentary system tissues in the developing embryo and postnatal adult from approximately E4.5 to postnatal adult.', ANCHOR, 'GetSystem', ANCHORALIGN, 0, 0.5, 0, 0.5, WIDTH, 250, DELAY, 900, STICKY, CAPTION, 'Anatomical System', CLOSECLICK, CLOSETEXT, 'Close X');" onmouseout="nd();">alimentary system</option>
+									<option value="4856342" onmouseover="return overlib('Tissues of the branchial arches in the developing embryo and postnatal adult from approximately E4.5 to postnatal adult.', ANCHOR, 'GetSystem', ANCHORALIGN, 0, 0.5, 0, 0.5, WIDTH, 250, DELAY, 900, STICKY, CAPTION, 'Anatomical System', CLOSECLICK, CLOSETEXT, 'Close X');" onmouseout="nd();">branchial arches</option>
+									<option value="4856343" onmouseover="return overlib('Tissues of the cardiovascular system in the developing embryo and postnatal adult from approximately E4.5 to postnatal adult.', ANCHOR, 'GetSystem', ANCHORALIGN, 0, 0.5, 0, 0.5, WIDTH, 250, DELAY, 900, STICKY, CAPTION, 'Anatomical System', CLOSECLICK, CLOSETEXT, 'Close X');" onmouseout="nd();">cardiovascular system</option>
+									<option value="4856344" onmouseover="return overlib('Tissues of cavities and their linings in the developing embryo and postnatal adult from approximately E4.5 to postnatal adult.', ANCHOR, 'GetSystem', ANCHORALIGN, 0, 0.5, 0, 0.5, WIDTH, 250, DELAY, 900, STICKY, CAPTION, 'Anatomical System', CLOSECLICK, CLOSETEXT, 'Close X');" onmouseout="nd();">cavities &amp; their linings</option>
+									<option value="4856347" onmouseover="return overlib('Endocrine system tissues in the developing embryo and postnatal adult from approximately E4.5 to postnatal adult.', ANCHOR, 'GetSystem', ANCHORALIGN, 0, 0.5, 0, 0.5, WIDTH, 250, DELAY, 900, STICKY, CAPTION, 'Anatomical System', CLOSECLICK, CLOSETEXT, 'Close X');" onmouseout="nd();">endocrine system</option>
+									<option value="4856349" onmouseover="return overlib('Tissues of the head in the developing embryo and postnatal adult from approximately E4.5 to postnatal adult). For eyes, nose or ears, see Sensory Organs.  For brain or other nervous system tissues, see Nervous System.', ANCHOR, 'GetSystem', ANCHORALIGN, 0, 0.5, 0, 0.5, WIDTH, 250, DELAY, 900, STICKY, CAPTION, 'Anatomical System', CLOSECLICK, CLOSETEXT, 'Close X');" onmouseout="nd();">head</option>
+									<option value="4856350" onmouseover="return overlib('Hemolymphoid system tissues in the developing embryo and postnatal adult from approximately E4.5 to postnatal adult.', ANCHOR, 'GetSystem', ANCHORALIGN, 0, 0.5, 0, 0.5, WIDTH, 250, DELAY, 900, STICKY, CAPTION, 'Anatomical System', CLOSECLICK, CLOSETEXT, 'Close X');" onmouseout="nd();">hemolymphoid system</option>
+									<option value="4856351" onmouseover="return overlib('Integumental system tissues in the developing embryo and postnatal adult from approximately E4.5 to postnatal adult.', ANCHOR, 'GetSystem', ANCHORALIGN, 0, 0.5, 0, 0.5, WIDTH, 250, DELAY, 900, STICKY, CAPTION, 'Anatomical System', CLOSECLICK, CLOSETEXT, 'Close X');" onmouseout="nd();">integumental system</option>
+									<option value="4856352" onmouseover="return overlib('Tissues of the limbs in the developing embryo and postnatal adult from approximately E4.5 to postnatal adult.', ANCHOR, 'GetSystem', ANCHORALIGN, 0, 0.5, 0, 0.5, WIDTH, 250, DELAY, 900, STICKY, CAPTION, 'Anatomical System', CLOSECLICK, CLOSETEXT, 'Close X');" onmouseout="nd();">limbs</option>
+									<option value="4856353" onmouseover="return overlib('Liver and biliary system tissues in the developing embryo and postnatal adult from approximately E4.5 to postnatal adult.', ANCHOR, 'GetSystem', ANCHORALIGN, 0, 0.5, 0, 0.5, WIDTH, 250, DELAY, 900, STICKY, CAPTION, 'Anatomical System', CLOSECLICK, CLOSETEXT, 'Close X');" onmouseout="nd();">liver and biliary system</option>
+									<option value="4856354" onmouseover="return overlib('Mesenchyme tissues in the developing embryo and postnatal adult from approximately E4.5 to postnatal adult.', ANCHOR, 'GetSystem', ANCHORALIGN, 0, 0.5, 0, 0.5, WIDTH, 250, DELAY, 900, STICKY, CAPTION, 'Anatomical System', CLOSECLICK, CLOSETEXT, 'Close X');" onmouseout="nd();">mesenchyme</option>
+									<option value="4856355" onmouseover="return overlib('Muscle tissues in the developing embryo and postnatal adult from approximately E4.5 to postnatal adult.', ANCHOR, 'GetSystem', ANCHORALIGN, 0, 0.5, 0, 0.5, WIDTH, 250, DELAY, 900, STICKY, CAPTION, 'Anatomical System', CLOSECLICK, CLOSETEXT, 'Close X');" onmouseout="nd();">muscle</option>
+									<option value="4856356" onmouseover="return overlib('Nervous system tissues in the developing embryo and postnatal adult from approximately E4.5 to postnatal adult. Includes central nervous system, brain, spinal cord and peripheral nervous system tissues and structures.', ANCHOR, 'GetSystem', ANCHORALIGN, 0, 0.5, 0, 0.5, WIDTH, 250, DELAY, 900, STICKY, CAPTION, 'Anatomical System', CLOSECLICK, CLOSETEXT, 'Close X');" onmouseout="nd();">nervous system</option>
+									<option value="4856358" onmouseover="return overlib('Renal and urinary system tissues in the developing embryo and postnatal adult from approximately E4.5 to postnatal adult.', ANCHOR, 'GetSystem', ANCHORALIGN, 0, 0.5, 0, 0.5, WIDTH, 250, DELAY, 900, STICKY, CAPTION, 'Anatomical System', CLOSECLICK, CLOSETEXT, 'Close X');" onmouseout="nd();">renal and urinary system</option>
+									<option value="4856359" onmouseover="return overlib('Reproductive sytem tissues in the developing embryo and postnatal adult from approximately E4.5 to postnatal adult.', ANCHOR, 'GetSystem', ANCHORALIGN, 0, 0.5, 0, 0.5, WIDTH, 250, DELAY, 900, STICKY, CAPTION, 'Anatomical System', CLOSECLICK, CLOSETEXT, 'Close X');" onmouseout="nd();">reproductive system</option>
+									<option value="4856360" onmouseover="return overlib('Respiratory system tissues in the developing embryo and postnatal adult from approximately E4.5 to postnatal adult.', ANCHOR, 'GetSystem', ANCHORALIGN, 0, 0.5, 0, 0.5, WIDTH, 250, DELAY, 900, STICKY, CAPTION, 'Anatomical System', CLOSECLICK, CLOSETEXT, 'Close X');" onmouseout="nd();">respiratory system</option>
+									<option value="4856361" onmouseover="return overlib('Sensory organ tissues (eye, ear, nose) in the developing embryo and postnatal adult from approximately E4.5 to postnatal adult.', ANCHOR, 'GetSystem', ANCHORALIGN, 0, 0.5, 0, 0.5, WIDTH, 250, DELAY, 900, STICKY, CAPTION, 'Anatomical System', CLOSECLICK, CLOSETEXT, 'Close X');" onmouseout="nd();">sensory organs</option>
+									<option value="4856362" onmouseover="return overlib('Skeletal system tissues in the developing embryo and postnatal adult from approximately E4.5 to postnatal adult.', ANCHOR, 'GetSystem', ANCHORALIGN, 0, 0.5, 0, 0.5, WIDTH, 250, DELAY, 900, STICKY, CAPTION, 'Anatomical System', CLOSECLICK, CLOSETEXT, 'Close X');" onmouseout="nd();">skeletal system</option>
+									<option value="4856363" onmouseover="return overlib('Tissues of the tail in the developing embryo and postnatal adult from approximately E4.5 to postnatal adult.', ANCHOR, 'GetSystem', ANCHORALIGN, 0, 0.5, 0, 0.5, WIDTH, 250, DELAY, 900, STICKY, CAPTION, 'Anatomical System', CLOSECLICK, CLOSETEXT, 'Close X');" onmouseout="nd();">tail</option>
+									<option value="4856345"   onMouseOver="return overlib('All anatomical structures in the developing embryo from conception through approximately E4.5.', ANCHOR, 'GetSystem', ANCHORALIGN, 0, 0.5, 0, 0.5, WIDTH, 250, DELAY, 900, STICKY, CAPTION, 'Anatomical System', CLOSECLICK, CLOSETEXT, 'Close X');" onmouseout="nd();">early embryo</option>
+									<option value="4856348" onmouseover="return overlib('Amniotic, placental, or other tissues external to the developing embryo from approximately E4.5 to E18.', ANCHOR, 'GetSystem', ANCHORALIGN, 0, 0.5, 0, 0.5, WIDTH, 250, DELAY, 900, STICKY, CAPTION, 'Anatomical System', CLOSECLICK, CLOSETEXT, 'Close X');" onmouseout="nd();">extraembryonic component</option>
+									<option value="4856346" onmouseover="return overlib('All structures in the developing embryo from approximately E4.5 to E18 not included in other major Anatomical Sytems.', ANCHOR, 'GetSystem', ANCHORALIGN, 0, 0.5, 0, 0.5, WIDTH, 250, DELAY, 900, STICKY, CAPTION, 'Anatomical System', CLOSECLICK, CLOSETEXT, 'Close X');" onmouseout="nd();">embryo-other</option>
+									<option value="4856357" onmouseover="return overlib('All structures in the postnatal adult not included in other major Anatomical Systems.', ANCHOR, 'GetSystem', ANCHORALIGN, 0, 0.5, 0, 0.5, WIDTH, 250, DELAY, 900, STICKY, CAPTION, 'Anatomical System', CLOSECLICK, CLOSETEXT, 'Close X');" onmouseout="nd();">postnatal-other</option>
+								</select>
+								<input name="submit2" class="searchToolButton" type="submit" value="Go">
+								<span id="GetSystem">&nbsp;</span>
+							</form>
+						
+						</div>
+						</div>
+
+                        </dd>
+<br>
+<dt>Search for alleles by promoter/driver specificity.</dt>
+						<dd class="searchList">
+							
+						<div class="creSearch" style="width:365px; height:37px;">
+	                    <div class="creInputs">
+	
+	                    <form action="<!--#include file='include/java_url.html'-->WIFetch?" method="get">
+	                        <input type="hidden" name="page" value="creSummary">
+	                            <label onmouseover="return overlib('Allele, gene, fusion product, or genetic construct driving recombinase activity.',ANCHOR, 'GetDriver', ANCHORALIGN, 0, 0.5, 0, 0.5, WIDTH, 250, DELAY, 900, STICKY, CAPTION, 'Driven by', CLOSECLICK, CLOSETEXT, 'Close X');" onmouseout="nd();"><strong style="color:#002255; border-bottom:dotted thin #555555; cursor:help;">Recombinase driven by:</strong>&nbsp;</label>
+	                            <select name="driver">
+	                                <!--#include file='include/driver_list.html'-->
+	                            </select>
+	
+							<input name="submit" class="searchToolButton" type="submit" value="Go">
+							<span id="GetDriver">&nbsp;</span>
+						</form>
+	                    </div>
+	                    </div>
+
+                        </dd>
+
+                    </dl>
+                    
+                    <hr class="hrblue">
+                    
+                    <p class="" style="margin-bottom: -10px; margin-top: 5px; color: rgb(0, 34, 85); font-variant: small-caps;">Related searches</p>
+                    <dl>
+						<dt class="whatList">Search for recombinase-containing transgene or knock-in alleles, or 
+						floxed or frt alleles using MGI's Allele Query Form </dt>
+						<dd class="searchList"><a class="small homeLink" href="<!--#include file='include/wi_url.html'-->searches/allele_form.shtml">Phenotypes, Alleles & Disease Models Query</a></dd>
+
+						<dt class="whatList">Search for endogenous gene expression using MGI's Gene Expression Data Query Form</dt>
+						<dd class="searchList"><a class="small homeLink" href="<!--#include file='include/java_url.html'-->WIFetch?page=expressionQF">Gene Expression Data Query</a></dd>
+					</dl>
+ <hr class="hrblue">
+<div class="boxBG pad5"> 
+				    <p class="" style="margin-bottom: 8px; margin-top: 3px; color: rgb(0, 34, 85); font-variant: small-caps;">Retrieve all alleles </p>
+					<dl>
+						<dt>Retrieve a list of all recombinase-containing transgenes and knock-in alleles.</dt>
+                        <dd class="searchList"><a class="small homeLink" href="<!--#include file='include/ftp_url2.html'-->reports/MGI_Recombinase_Full.html">MGI Recombinase Alleles Report</a></dd>
+                        <dd class="searchList"><a class="small homeLink" href="<!--#include file='include/ftp_url2.html'-->reports/MGI_Recombinase_Full.rpt">Tab-delimited version</a></dd>
+                    </dl>
+                    
+                   
+                    
+				</div>
+
+			</div>
+		</td>
+
+		<td width="50%" valign="top">
+			<div class="blueBorder marginBottom leftCenterMargin">
+				<div class="boxTitle">FAQs</div>
+				<div class="boxBG pad5">
+					<dl class="boxList">
+						<dt>How do I...</dt>
+						<dd class="faqList">.. find existing recombinase-expressing transgenes and knock-ins that have a given promoter (driver)?
+						<a class="small homeLink" onClick="javascript:openFaqWindow('CRE_prom.shtml'); return false;"
+						href="<!--#include file='include/faq_url.html'-->CRE_prom.shtml">FAQ</a></dd>
+						<dd class="faqList">.. find the promoter (driver) that I'm looking for if it is not on the selection list?
+						<a class="small homeLink" onClick="javascript:openFaqWindow('CRE_nolist.shtml'); return false;"
+						href="<!--#include file='include/faq_url.html'-->CRE_nolist.shtml">FAQ</a></dd>
+
+<dd class="faqList">.. find a recombinase-containing transgene or knock-in that is expressed in a specific tissue?
+						<a class="small homeLink" onClick="javascript:openFaqWindow('CRE_tissue.shtml'); return false;"
+						href="<!--#include file='include/faq_url.html'-->CRE_tissue.shtml">FAQ</a></dd>
+
+						<dd class="faqList">.. get a full list of all transgenes and knock-ins that express recombinase?
+						<a class="small homeLink" onClick="javascript:openFaqWindow('CRE_full.shtml'); return false;"
+						href="<!--#include file='include/faq_url.html'-->CRE_full.shtml">FAQ</a></dd>
+
+						<dd class="faqList">.. order mice with  a desired recombinase construct?
+						<a class="small homeLink" onClick="javascript:openFaqWindow('CRE_mice.shtml'); return false;"
+						href="<!--#include file='include/faq_url.html'-->CRE_mice.shtml">FAQ</a></dd>
+					</dl>
+					<a class="small homeLink" href="<!--#include file='include/faq_url.html'-->FAQ.shtml">More FAQs</a>
+				</div>
+			</div>
+		</td>
+	</tr>
+	<tr>
+		<td width="50%" valign="top">
+			<div class="blueBorder leftCenterMargin statList">
+				<div class="boxTitle">
+					<div class="left">Recombinase Allele Data Include</div>
+					<div class="right small"><!--#include file='include/stats_date.shtml'--></div>
+				</div>
+				<div class="boxBG pad5 small">
+					<!--#include file='stats/cre_stats.shtml'-->
+					<a class="small homeLink" href="<!--#include file="include/mgihome_url.html"-->homepages/stats/all_stats.shtml#allstats_cre">More...</a>
+				</div>
+			</div>
+		</td>
+	</tr>
+</table>
+<div class="boxWide blueBorder marginBottom">
+	<div class="boxTitle">
+		<span class="left">Recombinase Project News</span>
+		<span class="right small"> October 26, 2009</span>
+	</div>
+	<div class="boxBG pad5 small">
+		<ul>
+			<li> The first edition of MGI's Recombinase Allele Project was 
+			released October 26, 2009. Data are  being curated from the 
+			scientific literature and integrated from projects underway at collaborating 
+			organizations. (See the <b>Collaborators</b> tab, below).</li>
+	<li>MGI is part of the CREATE (Coordination of resources for conditional expression of mutated mouse alleles) consortium.</li>
+			<li>List of available <a href="<!--#include file='include/imsr_home_url.html'-->fetch?page=imsrSummary&amp;query=cre&amp;selectedQuery=Genes">
+			strains expressing cre</a></li>
+		</ul>
+     </div>
+</div>
+
+<!-- Tabs box -->
+<!-- Note: This section uses a white gif to set the width and avoid
+    the a crash in IE6, and display problems in IE 6 & 7.  I also
+    needed to put this div in a table to get the fix to work.  The
+    order otf the table and div tags is very specific to avoid some
+    flickering in IE.-->
+<table width="100%" cellpadding="0" cellspacing="0" border="0"><tr><td>
+<div class="boxWide marginBottom">
+	<ul id="gxdtab" class="shadetabs">
+		<li class="selected"><a href="<!--#include file='include/mgihome_url.html'-->homepages/tabContents/Cre_About.shtml" rel="ajaxcontentarea">About Recombinase Specificity</a></li>
+		<li><a href="<!--#include file='include/mgihome_url.html'-->homepages/tabContents/Cre_Help.shtml" rel="ajaxcontentarea">Help Documents</a></li>
+		<li><a href="<!--#include file='include/mgihome_url.html'-->homepages/tabContents/Cre_Collaborators.shtml" rel="ajaxcontentarea">Collaborators</a></li>
+	</ul>
+	<div id="gxdcontentarea" class="contentstyle">
+		<!--#include file='tabContents/Cre_About.shtml'-->
+	</div>
+
+<img src="<!--#include file='include/mgihome_url.html'-->homepages/images/white_dot.gif" width="720px" height="1px">
+</td></tr>
+</div>
+</table>
+
+<!--AJAX TABS CALLS-->
+
+<script type="text/javascript" src="<!--#include file="include/javascript.html"-->">
+    /***********************************************
+    * Ajax Tabs Content script- © Dynamic Drive DHTML code library (www.dynamicdrive.com)
+    * This notice MUST stay intact for legal use
+    * Visit Dynamic Drive at http://www.dynamicdrive.com/ for full source code
+    ***********************************************/
+</script>
+
+<script type="text/javascript">
+    var gxd_box=new ddajaxtabs("gxdtab", "gxdcontentarea")
+    gxd_box.setpersist(true)
+    gxd_box.setselectedClassTarget("linkparent") //"link" or "linkparent"
+    gxd_box.init()
+</script>
+
+<!--#include file='include/templateBodyStop.html'-->
+
+</body>
+</html>

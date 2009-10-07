@@ -11,29 +11,82 @@
   </div> 
 <!--end titleBar-->
 
-<!-- main body table -->
+
 <table width="75%" cellpadding="2" align="center">
    <tr><td>
- <!-- TOC table -->
      <table class="toc" width="100%">
-	<tr><td>
+      <tr>
+       <td>
             <ul>
+		<li><a href="#october_2009">October 21, 2009</a></li> |
                <li><a href="#august_2009">August 19, 2009</a></li>  |
                <li><a href="#march_2009">March 26, 2009</a></li> | 
                <li><a href="#jan_2009">January 12, 2009</a></li> | 
                <li><A HREF="news_2008.shtml"><nobr>Archive: News and Announcements for 2008</a></li> 
              </ul>
-            </td>
-        </tr>              
- 	</table>
-<!-- end TOC table -->
-
-	     </td>
-	</tr>
-<tr><td><a name="march_2009"></a>
-<!--section1 table-->
-   <table class="outline" width="100%">
-   <tr><td class="enhance">August 19, 2009: MGI announces the following enhancements for 4.3:</td></tr><br>
+         </td>
+       	</tr>              
+      </table>
+    </td>
+    </tr>
+    <tr><td><a name="october_2009"></a>
+     <table class="outline" width="100%">
+       <tr>
+         <td class="enhance"><a name="october_2009"></a>October 21, 2009: MGI announces the following enhancements for the 4.31 release.</td>
+       </tr><br>
+<tr><td> <dl class="linkedList">
+ <dt> There is a new <a href="<!--#include file='include/mgihome_url.html'-->/submissions/amsp_submission.cgi">form</a> for submitting new allele/mutants, registering a mouse strain name or submitting phenotype data.</dt>
+   pw<dt>New MGI Recombinase (cre) Specificity functionality lets you find information about recombinase-containing transgenes or knock-in alleles. You can: 
+  	  <ul>
+    	   <li>search for recombinase alleles by using the gene, gene promoter, or construct that drives specificity.</li>
+           <li>search for recombinase alleles using the Anatomical System containing the tissue, system, organ, or stage where the actity is expressed.</li>
+           <li>discover where to order mice carrying a particular recombinase allele.</li>
+   	   <li>view lists of either all recombinase-containing transgene and knock-in alleles in the MGI database or only those with any associated tissue specificity data.</li>
+  	  </ul>
+	</dt>
+	<dt>There are currently 882 alleles with recombinase activity involving 803 genes/markers.</dt>
+	<dt><b>To find recombinase-containing transgenes or knock-in alleles in MGI:</b>
+	  <ul>
+  	  <li>Select a driver from the list beside <b>Recombinase driven by:</b> on the <a href="../homepages/recombinase.shtml">Recombinase (cre) Specificity</a> page to find alleles both with and without recombinase specificity data. (You may wish to search for <i>every</i> recombinase-containing allele, even ones with no associated tissue specificity data).</li>
+   	  <li>Select an item from the <b>Recombinase specificity in:</b> list to find anatomical systems where recombinase activity is expressed.  The results include only alleles with available recombinase specificity data.</li> 
+	</ul>
+       </dt>
+	<dt><b>To find a recombinase-expressing mouse:</b></br>
+  	<ul>
+    	<li>On the <b>Recombinase Alleles - Tissue Specificity Summary</b> table,  scroll the <b>IMSR</b> column. A numeral in this column indicates how many matching items there are in the International Mouse Strain Resource. Clicking the numeral link brings up an IMSR summary table of strains expressing cre recombinase in the desired tissue.</li>
+    	<li><b>Recombinase Specificity Detail</b> pages for the allele also display availability of a specific recombinase-containing allele (in the <b>Find Mice (IMSR)</b> row.</li>
+     	</ul>
+   	</dt>
+	<dt><b>Transgenic allele nomenclature</b></br>
+	<ul>
+  	<li>Transgenic allele nomenclature is in the format <i>Tg(<b>driver</b>-cre...)</i> or <i>Tg(<b>driver</b>-flp...)</i>. When looking for a specific driver of recombinase expression,  be sure to check for newer gene or allele names and symbols, because gene and allele nomenclature changes over time. </li>
+	<li>See also <a href="../nomen/gene.shtml">Guidelines for Nomenclature of Genes, Genetic Markers, Alleles, and Mutations in Mouse and Rat</a>.</li>
+  	<li>For a list of all recombinase-containing transgene and knock-in alleles, click 
+<b>Download</b>--><a href="<!--#include file='include/ftp_url2.html'-->reports/index.html">All MGI Reports</a>.</li>
+	</ul>
+	</dt>
+	<dt><b>Other ways to find recombinase data</b></DT>
+	<DT>Phenotypic, disease, and/or expression data may exist separately from tissue specificity data.<BR>
+  	<ul>
+	<li>Use the <a href="<!--#include file='include/wi_url.html'-->searches/allele_form.shtml">Phenotypes, Alleles, & Disease Models Query Form</a> to find recombinase-containing transgene or knock-in alleles or to find flox or frt alleles.</li>
+  	<li>Use the <A HREF="<!--#include file='include/java_url.html'-->WIFetch?page=expressionQF">Gene Expression Data Query Form</a> to find endogenous gene expression.</li>
+	<li>Use the <b>Search MGI with Google</b> tool to find Recombinase Specificity Detail pages including an exact tissue, structure or driver (if Google has indexed the page and if your query uses the same MGI nomenclature for structures). <b>Note:</b> This type of query does not return child terms for the searched item. For example, a search on <i>recombinase Mog Brain</i> does not return results as precise as a search on <i>recombinase Mog TS28:cerebral white matter</i>.</li>
+  	</ul>
+  	</dt>
+  	</dl>
+       </td>
+      </tr>
+     </table>
+</td></tr>
+		
+ <tr><td>
+<!-- section2 table -->
+ <a name="august_2009"></a>
+<table class="outline" width="100%">
+		  
+			<tr>
+				<td class="enhance">
+				August 19, 2009: MGI announces the following enhancements for 4.3:</td></tr><br>
    <tr><td>
 	<dl class="linkedList">
 	<dt>This release adds over 500,000 mouse cell line and gene trap sequences for gene traps in the NCBI Genome Survey Sequences Database (dbGSS), including those from the International Gene Trap Consortium (IGTC), and from Lexicon Genetics. </dt><br>
@@ -48,7 +101,7 @@
 <li>information about whether a mouse has been produced for the gene trap mutant cell line.</li>
  		<li>allele nomenclature.</li>
 	</ul></dt>
-  <dt>As examples, see:</p>	
+  <dt>As examples, see:
 <ul>
   <li><a href="http://hobbiton.informatics.jax.org:8080/cgi-bin/gbrowse/mouse_current/?start=85537525;stop=85652747;ref=6;width=800;version=100;cache=on;drag_and_drop=on;show_tooltips=on;grid=on;label=MGI_Representative_Transcripts-MGI_Representative_Transcripts-NCBI_Transcripts-ENSEMBL_Transcripts-VEGA_Transcripts-GeneTraps_per_gene-MGI_RNA_Gtraps-MGI_DNA_Gtraps;h_feat=%22BayGenomics_XH152%22%40yellow">MGI Mouse Genome Browser on build 37</a></li>
   <li><a href="<!--#include file='include/java_url.html'-->WIFetch?page=alleleDetail&key=37529">Alms1 Gene trapped Allele Detail</a></li>
@@ -76,7 +129,10 @@
  	  <li>where sequence tags for a gene trap allele overlap multiple genes in the trapped gene orientation; where tags overlap one or more genes in reverse orientation; or where they overlap no known genes using current gene model coordinates. </li>
 	  <li>where gene trap sequence tags for an allele do not align with the reference mouse genome, or align equally well to multiple locations. </li>
 	  <li>for mixed cell lines, characterized by multiple sequence tags for the same cell line and good alignments to different locations in the genome. </li>
-	</ul><dt>See <a href="<!--#include file='include/userdocs_url.html'-->genetrap_usecases.shtml#no_association">Why aren't all gene traps associated with a gene?</a> for additional details.
+	</ul>
+	</dt>
+
+	<dt>See <a href="<!--#include file='include/userdocs_url.html'-->genetrap_usecases.shtml#no_association">Why aren't all gene traps associated with a gene?</a> for additional details.
 	</DT>
 <br>
 	<DT><b>Gene Trap Integration and Curation at MGI</b></DT>
@@ -101,7 +157,7 @@
 <li> 
 <li>Enter a cell line identifier in the <a href="<!--#include file='include/wi_url.html'-->/searches/accession_form.shtml">Accession IDs Query Form</a> (see <a href="<!--#include file='include/userdocs_url.html'-->genetrap_usecases.shtml#who_are">Who are the cell line creators?</a> for examples of IDs to use).</li>
 
-<li>Click <b>Download-->All MGI Reports--></b> to see all <a href="ftp://ftp.informatics.jax.org/pub/reports/MRK_GeneTrap.rpt">gene traps associated with markers</a>.</li>
+<li>Click <b>Download-->All MGI Reports--></b> to see all <a href="<!--#include file='include/ftp_url2.html'-->reports/MRK_GeneTrap.rpt">gene traps associated with markers</a>.</li>
 </ul>
 </DT>
 <br>
@@ -149,7 +205,7 @@
 
 
 <dt>If you want to download <b>all</b> microarray probeset to gene associations, see
-<a href="<!--#include file='include/ftp_url2.html'-->pub/reports/index.html#expression">MGI Data and Statistical Reports</a>.</dt>
+<a href="<!--#include file='include/ftp_url2.html'-->reports/index.html#expression">MGI Data and Statistical Reports</a>.</dt>
 
 
 <dt>There is a new evidence code under <a href="<!--#include file='include/userdocs_url.html'-->go_classifications.shtml">Gene Ontology (GO) Classifications</a>: EXP, Inferred from experiment.</dt>
@@ -206,10 +262,7 @@ Status (indicates a gene's status in gene targeting pipelines (under <b>Other da
 			</tr>
 			
 </table>
-	</td></tr>
 
-
-</table>
 
 </div> 
 <!--#include file='include/templateBodyStop.html'--> 

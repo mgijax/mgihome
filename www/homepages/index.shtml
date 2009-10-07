@@ -52,81 +52,100 @@
       <center>
 	  <table width="97%">
 	  <tr>
-	    <td class="homePageImageLabel" width="25%">
+	    <td class="homePageImageLabel" width="33%">
 	      <a class="homeLink" href="<!--#include file='include/homepages_url.html'-->genes.shtml" title="Genes, Genome Features & Maps">
 	      Genes</a>
 	    </td>
-	    <td class="homePageImageLabel" width="25%">
+	    <td class="homePageImageLabel" width="33%">
 	      <a class="homeLink" href="<!--#include file='include/homepages_url.html'-->phenotypes.shtml" title="Phenotypes, Alleles & Disease Models">
 	      Phenotypes</a>
 	    </td>
-	    <td class="homePageImageLabel" width="25%">
+	    <td class="homePageImageLabel" width="33%">
 	      <a class="homeLink" href="<!--#include file='include/homepages_url.html'-->expression.shtml" title="Gene Expression">
 	      Expression</a>
 	    </td>
-	    <td class="homePageImageLabel" width="25%">
-	      <a class="homeLink" href="<!--#include file='include/homepages_url.html'-->function.shtml" title="GO Functional Annotations">
-	      Function</a>
-	    </td>
+
 	  </tr>
 	  <tr>
-	      <td class="homePageImage" align="center" valign="middle" width="25%">
+	      <td class="homePageImage" align="center" valign="middle" width="33%">
 	        <a class="homeLink" href="<!--#include file='include/homepages_url.html'-->genes.shtml">
-	        <img src="<!--#include file='include/mgihome_url.html'-->/homepages/images/homepage_GeneLogo.gif" style="border: 1px solid rgb(84, 112, 155);" height="75" width="154" title="Genes, Genome Features & Maps">
+	        <img src="<!--#include file='include/mgihome_url.html'-->/homepages/images/homepage_GeneLogo.gif" style="border: 1px solid rgb(84, 112, 155);" height="70" width="144" title="Genes, Genome Features & Maps">
 	        </a>
 	      </td>
-	      <td class="homePageImage" align="center" valign="middle" width="25%">
+	      <td class="homePageImage" align="center" valign="middle" width="33%">
 	        <a class="homeLink" href="<!--#include file='include/homepages_url.html'-->phenotypes.shtml">
-	        <img src="<!--#include file='include/mgihome_url.html'-->/homepages/images/homepage_PhenoLogo.jpg" style="border: 1px solid rgb(84, 112, 155);" height="75" width="125" title="Phenotypes, Alleles & Disease Models">
+	        <img src="<!--#include file='include/mgihome_url.html'-->/homepages/images/homepage_PhenoLogo.jpg" style="border: 1px solid rgb(84, 112, 155);" height="70" width="102" title="Phenotypes, Alleles & Disease Models">
 	        </a>
 	      </td>
-	      <td class="homePageImage" align="center" valign="middle" width="25%">
+	      <td class="homePageImage" align="center" valign="middle" width="33%">
 	        <a class="homeLink" href="<!--#include file='include/homepages_url.html'-->expression.shtml">
-	        <img src="<!--#include file='include/mgihome_url.html'-->/homepages/images/homepage_GXDLogo.gif" style="border: 1px solid rgb(84, 112, 155);" title="Gene Expression">
+	        <img src="<!--#include file='include/mgihome_url.html'-->/homepages/images/homepage_GXDLogo.gif" style="border: 1px solid rgb(84, 112, 155);" height="70" width="119" title="Gene Expression">
 	        </a>
 	      </td>
-	      <td class="homePageImage" align="center" valign="middle" width="25%">
-	        <a class="homeLink" href="<!--#include file='include/homepages_url.html'-->function.shtml">
-	        <img src="<!--#include file='include/mgihome_url.html'-->/homepages/images/homepage_GOLogo.gif" style="border: 1px solid rgb(84, 112, 155);" height="75" width="146" title="GO Functional Annotations">
-	        </a>
-	      </td>
+
 	  </tr>
+        <td class="homePageImageLabel">
+          <a class="homeLink" href="<!--#include file='include/homepages_url.html'-->recombinase.shtml" title="Recombinase Tissue Specificity">
+          Recombinases (cre)</a>
+        </td>   	  
+        <td class="homePageImageLabel">
+          <a class="homeLink" href="<!--#include file='include/homepages_url.html'-->function.shtml" title="GO Functional Annotations">
+          Function</a>
+        </td>	  
 	    <td class="homePageImageLabel">
 	      <a class="homeLink" href="<!--#include file='include/homepages_url.html'-->pathways.shtml" title="Biochemical Pathways">
 	      Pathways</a>
 	    </td>
-	    <td class="homePageImageLabel">
-	      <a class="homeLink" href="<!--#include file='include/homepages_url.html'-->strains_SNPs.shtml" title="Strains, SNPs & Polymorphisms">
-	      Strains / SNPs</a>
-	    </td>
-	    <td class="homePageImageLabel">
-	      <a class="homeLink" href="<!--#include file='include/homepages_url.html'-->orthology.shtml" title="Mammalian Orthology" title="Mouse Tumor Biology">
-	      Orthology</a>
-	    </td>
-	    <td class="homePageImageLabel">
-	      <a class="homeLink" href="<!--#include file='include/mtb_url.html'-->" title="Mouse Tumor Biology">
-	      Tumors</a>
-	    </td>
-	  </tr>
+	 </tr>
 	  <tr>
-	    <td class="homePageImage" align="center" valign="middle" width="25%">
+        <td class="homePageImage" align="center" valign="middle" width="33%">
+          <a class="homeLink" href="<!--#include file='include/homepages_url.html'-->recombinase.shtml">
+          <img src="<!--#include file='include/mgihome_url.html'-->/homepages/images/homepage_creLogo.gif" style="border: 1px solid rgb(84, 112, 155);" height="70" width="112" title="Recombinase Tissue Specificity (image courtesy of Journal of Cell Science)">
+          
+          
+          
+          
+          </a>
+        </td>
+        <td class="homePageImage" align="center" valign="middle" width="33%">
+          <a class="homeLink" href="<!--#include file='include/homepages_url.html'-->function.shtml">
+          <img src="<!--#include file='include/mgihome_url.html'-->/homepages/images/homepage_GOLogo.gif" style="border: 1px solid rgb(84, 112, 155);" height="70" width="136" title="GO Functional Annotations">
+          </a>
+        </td>	  
+	    <td class="homePageImage" align="center" valign="middle" width="33%">
 	      <a class="homeLink" href="<!--#include file='include/homepages_url.html'-->pathways.shtml">
-	      <img src="<!--#include file='include/mgihome_url.html'-->/homepages/images/homepage_BioPathLogo.gif" style="border: 1px solid rgb(84, 112, 155);" title="Biochemical Pathways">
+	      <img src="<!--#include file='include/mgihome_url.html'-->/homepages/images/homepage_BioPathLogo.gif" style="border: 1px solid rgb(84, 112, 155);" height="70" width="117" title="Biochemical Pathways">
 	      </a>
 	    </td>
-	    <td class="homePageImage" align="center" valign="middle" width="25%">
+	 </tr>
+	 <tr>
+        <td class="homePageImageLabel">
+          <a class="homeLink" href="<!--#include file='include/homepages_url.html'-->strains_SNPs.shtml" title="Strains, SNPs & Polymorphisms">
+          Strains / SNPs</a>
+        </td>
+        <td class="homePageImageLabel">
+          <a class="homeLink" href="<!--#include file='include/homepages_url.html'-->orthology.shtml" title="Mammalian Orthology" title="Mouse Tumor Biology">
+          Orthology</a>
+        </td>
+        <td class="homePageImageLabel">
+          <a class="homeLink" href="<!--#include file='include/mtb_url.html'-->" title="Mouse Tumor Biology">
+          Tumors</a>
+        </td>
+      </tr>
+	 <tr>
+	    <td class="homePageImage" align="center" valign="middle" width="33%">
 	      <a class="homeLink" href="<!--#include file='include/homepages_url.html'-->strains_SNPs.shtml">
-	      <img src="<!--#include file='include/mgihome_url.html'-->/homepages/images/homepage_StrainLogo.jpg" style="border: 1px solid rgb(84, 112, 155);" title="Strains, SNPs & Polymorphisms">
+	      <img src="<!--#include file='include/mgihome_url.html'-->/homepages/images/homepage_StrainLogo.jpg" style="border: 1px solid rgb(84, 112, 155);" height="70" width="111" title="Strains, SNPs & Polymorphisms">
 	      </a>
 	    </td>
-	    <td class="homePageImage" align="center" valign="middle" width="25%">
+	    <td class="homePageImage" align="center" valign="middle" width="33%">
 	      <a class="homeLink" href="<!--#include file='include/homepages_url.html'-->orthology.shtml">
-	      <img src="<!--#include file='include/mgihome_url.html'-->/homepages/images/homepage_OrthoLogo.gif" style="border: 1px solid rgb(84, 112, 155);" height="75" width="125" title="Mammalian Orthology">
+	      <img src="<!--#include file='include/mgihome_url.html'-->/homepages/images/homepage_OrthoLogo.gif" style="border: 1px solid rgb(84, 112, 155);" height="70" width="117" title="Mammalian Orthology">
 	      </a>
 	    </td>
-	    <td class="homePageImage" align="center" valign="middle" width="25%">
+	    <td class="homePageImage" align="center" valign="middle" width="33%">
 	      <a class="homeLink" href="<!--#include file='include/mtb_url.html'-->">
-	      <img src="<!--#include file='include/mgihome_url.html'-->/homepages/images/homepage_MTBLogo.jpg" style="border: 1px solid rgb(84, 112, 155);"  title="Mouse Tumor Biology">
+	      <img src="<!--#include file='include/mgihome_url.html'-->/homepages/images/homepage_MTBLogo.jpg" style="border: 1px solid rgb(84, 112, 155);"  height="70" width="112" title="Mouse Tumor Biology">
 	      </a>
 	    </td>
 	  </tr>
@@ -185,12 +204,14 @@
       <div class="boxTitle">
         <div class="left">News
 	</div>
-        <div class="right small">August 19, 2009 &nbsp;
+        <div class="right small">October 21, 2009 &nbsp;
         </div>
         
       </div>
         <div class="boxBG pad5">
         <ul class="newsList"><br/>
+<li>MGI 4.31 features recombinase (cre) tissue specificity data. 
+<a class="homeLink" href="<!--#include file="include/mgihome_url.html"-->news/whatsnew.shtml">Read more...</a></li>
 <li>MGI 4.3 adds over 500,000 mouse cell line and gene trap sequences from dbGSS including IGTC and Lexicon Genetics.   <a class="homeLink" href="<!--#include file="include/mgihome_url.html"-->news/whatsnew.shtml">Read more...</a></li>
 
 <li>MGI 4.21:  access and analyze gene expression data using the <a href="<!--#include file='include/java_url.html'-->WIFetch?page=batchQF">MGI Batch Query</a> tool. <a class="homeLink" href="<!--#include file="include/mgihome_url.html"-->news/whatsnew.shtml">Read more...</a></li>
@@ -216,12 +237,13 @@
 	    <span class="left">Mouse Community News</span>
 	  </div>
 	  <div class="boxBG pad5">
-<!--<b>MGI Roadshow:</b><br>
+<b>MGI Roadshow:</b><br>
                                             
 <ul>
-04/07/09&nbsp;&nbsp;<a href="http://www.vanderbilt.edu/">Vanderbilt University</a><br>
+10/13/2009&nbsp;&nbsp;<a href="http://www.tufts.edu/sackler/neuroscience/CNR/index.html">Tufts University School of Medicine</a><br>
+10/14/2009&nbsp;&nbsp;<a href="http://www.mmcri.org/admin">Maine Medical Center Research Institute</a>
 </ul>
--->
+
 
 
 
