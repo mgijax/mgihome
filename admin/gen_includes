@@ -67,7 +67,7 @@ def getCreDriver ():
     db.set_sqlDatabase(config["DB_DATABASE"])
     
     results = db.sql('select distinct driverNote from ALL_Cre_Cache', 'auto')
-    drivers = ["<option selected value='' name='default'>any driver</option>"] # SQL command list
+    drivers = ["<option selected value='' name='default'>(choose one)</option>"] # SQL command list
     for r in results:
         drivers.append("<option value='%s'>%s</option>" % (r['driverNote'], r['driverNote']))
     listToFile(drivers, '../www/include/driver_list.html')
