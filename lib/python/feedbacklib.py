@@ -8,6 +8,7 @@ if '.' not in sys.path:
 import os
 import string
 import cgi
+import types
 
 import Configuration
 config = Configuration.get_Configuration ('Configuration', 1)
@@ -89,6 +90,9 @@ def isInstanceOf (
 #	|	|------	AlleleSubjectField
 #	|	|------	MarkerSubjectField
 #	|------	MultiLineTextField
+#	|------	CheckableField
+#	|	|------	RadioButtonGroup
+#	|	|------	CheckboxGroup
 #
 #	UserInput
 #	|------	SimpleTextUserInput
@@ -124,6 +128,15 @@ class Field:
 		self.errors = []	# list of errors from validation()
 		return
 
+	def getFieldname (self):
+		# Purpose: return this Field's fieldname
+		# Returns: string
+		# Assumes: nothing
+		# Effects: nothing
+		# Throws: nothing
+
+		return self.fieldname
+
 	def getErrors (self):
 		# Purpose: return the list of errors discovered when this
 		#	Field was last validated()
@@ -143,6 +156,17 @@ class Field:
 		# Throws: nothing
 
 		return self.label
+
+	def isEmpty (self):
+		# Purpose: return True if this Field has a value, False if not
+		# Returns: boolean
+		# Assumes: nothing
+		# Effects: nothing
+		# Throws: nothing
+
+		if self.value:
+			return False
+		return True
 
 	def getValue (self):
 		# Purpose: return this Field's value
@@ -346,6 +370,210 @@ class MultiLineTextField (Field):
 			s = '<%s></TEXTAREA>' % s
 		return s
 
+class CheckableField (Field):
+	def __init__ (self,
+		fieldname,		# string; name of the field (internal)
+		label,			# string; name to display to the user
+		required = OPTIONAL,	# is the field OPTIONAL or REQUIRED?
+		value = [],		# string; initial value for the field
+		items = []		# list of lists, one inner list per
+					# ...HTML row; each inner list has
+					# ...(item value, item label).  At
+					# ...most once special 3-item tuple is
+					# ...allowed where 3rd item is length
+					# ...of an attached text box (for
+					# ..."other (specify)" fields)
+		):
+		Field.__init__ (self, fieldname, label, required, value)
+		self.items = items
+		self.otherValue = None	# for an "other (specify)" extra value
+#		if self.label:
+#			self.label = [ self.label ]
+		self.myType = 'checkbox'
+		return
+
+	def getValue (self):
+		# Purpose: return this Field's value, allowing for a comma-
+		#	separated list for multi-valued fields
+		# Returns: string
+		# Assumes: nothing
+		# Effects: nothing
+		# Throws: nothing
+
+		if (self.value == None) or (self.value == []):
+			if self.otherValue:
+				return self.otherValue
+			return ''
+
+		# self.value is a list of values to allow a multi-valued field
+
+		values = []
+		for sublist in self.items:
+		    for item in sublist:
+			itemValue = item[0]
+			itemLabel = item[1]
+
+			if itemValue in self.value:
+				if len(item) == 2:
+					values.append (itemLabel)
+				else:
+					values.append ('%s (%s)' % (itemLabel,
+						self.otherValue) )
+			elif self.otherValue:
+				values.append ('%s (%s)' % (itemLabel,
+					self.otherValue) )
+
+
+		if values:
+			return ', '.join (values)
+
+		if self.otherValue:
+			return self.otherValue
+
+		# should not happen
+		return str(self.value)
+
+	def getHTML (self, asTable = False):
+		# Purpose: return an HTML representation of this Field
+		# Returns: string with HTML markups
+		# Assumes: nothing
+		# Effects: nothing
+		# Throws: nothing
+		# Notes: if asTable is False, we run items together in
+		#	horizontal rows.  If True, then we line up items
+		#	vertically in columns.
+
+		pieces = [ ]
+		if asTable:
+			pieces.append ('<TABLE BORDER="0"><TR>')
+
+		for sublist in self.items:
+		    if asTable:
+			    pieces.append ('<TD VALIGN="top">')
+		    for item in sublist:
+			    itemValue = item[0]
+			    itemLabel = item[1]
+
+			    if ((self.value) and (itemValue in self.value)) \
+				or (len(item) == 3  and self.otherValue):
+				    isChecked = ' CHECKED'
+			    else:
+				    isChecked = ''
+
+			    s = '<INPUT NAME="%s" TYPE="%s" VALUE="%s"%s> %s'\
+				% (self.fieldname, self.myType, itemValue,
+					isChecked, itemLabel)
+			    pieces.append (s)
+
+			    if len(item) == 3:
+				if self.otherValue:
+				    value = self.otherValue
+				else:
+				    value = ''
+
+				t = '<INPUT NAME="%sOther" TYPE="text" SIZE="%s" VALUE="%s">' % \
+					(self.fieldname, item[2], value)
+				pieces.append (t)
+
+			    if asTable:
+				    pieces.append ('<BR>') 
+		    if asTable:
+			    pieces.append ('</TD>')
+		    elif len(self.items) > 1:
+			    pieces.append ('<BR>')
+		if asTable:
+			pieces.append ('</TR></TABLE>')
+		return '\n'.join (pieces)
+
+	def setValue (self,
+		value		# string; new value for this Field
+		):
+		# Purpose: set the value for this Field object to be that
+		#	given in 'value'
+		# Returns: nothing
+		# Assumes: nothing
+		# Effects: updates self.value and runs the validation()
+		#	method to update self.errors
+		# Throws: nothing
+
+		if type(value) == types.ListType:
+			self.value = value
+		elif not self.value:
+			self.value = [ value ]
+		else:
+			self.value.append (value)
+		self.validate()
+		return
+
+	def set (self,
+		parms		# dictionary; parms[fieldname] = fieldvalue
+		):
+		# Purpose: take a set of parameters ('parms') from an HTML
+		#	form, and if this Field's fieldname is one of the
+		#	included fields, get its new value from 'parms'
+		# Returns: nothing
+		# Assumes: nothing
+		# Effects: may update self.value and call the validate()
+		#	function to update self.errors
+		# Throws: nothing
+
+		if parms.has_key (self.fieldname):
+			self.setValue (parms[self.fieldname])
+		if parms.has_key (self.fieldname + 'Other'):
+			self.otherValue = parms[self.fieldname + 'Other']
+		self.validate()
+		return
+
+	def validate (self):
+		# Purpose: ensure that the current value of this field is
+		#	valid, and if not, update the list of errors
+		#	accordingly.
+		# Returns: nothing
+		# Assumes: nothing
+		# Effects: updates self.errors
+		# Throws: nothing
+		# Notes: The only validation rule is that required fields
+		#	must contain a value.
+
+		if self.required and not self.value:
+			self.errors = ['%s is a required field.' % self.label]
+		else:
+			self.errors = []
+
+		er1 = 'You checked "%s" for %s, but did not specify a value.'
+		for item in self.items:
+			if len(self.items) == 3:
+				itemValue = self.items[0]
+				itemLabel = self.items[1]
+
+				if itemValue in self.value:
+					if not self.otherValue:
+						self.errors.append (er1 % (
+						    itemLabel, self.label) )
+				break
+		return
+
+class RadioButtonGroup (CheckableField):
+	def __init__ (self,
+		fieldname,		# string; name of the field (internal)
+		label,			# string; name to display to the user
+		required = OPTIONAL,	# is the field OPTIONAL or REQUIRED?
+		value = None,		# string; initial value for the field
+		items = []		# list of lists, one inner list per
+					# ...HTML row; each inner list has
+					# ...(item value, item label).  At
+					# ...most once special 3-item tuple is
+					# ...allowed where 3rd item is length
+					# ...of an attached text box (for
+					# ..."other (specify)" fields)
+		):
+		CheckableField.__init__ (self, fieldname, label, required,
+			value, items)
+		self.myType = 'radio'
+		return
+
+# class CheckboxGroup (CheckableField):
+CheckboxGroup = CheckableField
 
 class AssaySubjectField (OneLineTextField):
 	# Concept:
