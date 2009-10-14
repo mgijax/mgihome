@@ -16,6 +16,8 @@ import pickle
 import types
 import re
 import string
+import tempfile
+import traceback
 
 import Configuration
 config = Configuration.get_Configuration ('Configuration', 1)
@@ -25,16 +27,45 @@ import runCommand
 import template
 import homelib
 
-###--- basic global variables ---###
+###------------------------###
+###--- global variables ---###
+###------------------------###
 
+# standard exception raised within this script
+error = 'Exception'
+
+# cookie data for preserving user's contact info across multiple submissions
 MY_COOKIE = Cookie.SimpleCookie()
+
+# where do we store the contact info for the ID stored in the cookie?  There
+# are ten files using this as the base, each with a different extension.
 BASE_COOKIE_FILE = '/tmp/submissionCookies.'
+
+# short-hand for flagging which Field objects are required to have a value
 REQUIRED = feedbacklib.REQUIRED
+
+# string; the ID passed to us by the user from a previously-set cookie
 COOKIE_ID = None
+
+# dictionary of fieldnames which had validation errors
 ERRANT_FIELDS = {}
+
+# list of dictionaries, one per file; each entry has keys 'filename'
+# and 'contents'
+UPLOADED_FILES = []
+
+# should we show the allele submission section by default?
+SHOW_ALLELE = False
+
+# should we show the strain submission section by default?
+SHOW_STRAIN = False
+
+# should we show the phenotype submission section by default?
+SHOW_PHENOTYPE = False
 
 ###--- groups of Field objects, one per form section ---###
 
+# fields for the contact information section
 CONTACT_FIELDS = [
 	feedbacklib.OneLineTextField ('lastName', 'Last Name', REQUIRED,
 		width = 40),
@@ -56,6 +87,7 @@ CONTACT_FIELDS = [
 	feedbacklib.OneLineTextField ('fax', 'Fax', width = 40),
 ]
 
+# fields for the reference/citation section
 CITING_FIELDS = [
 	feedbacklib.RadioButtonGroup ('isPublished',
 		'Is your data published?',
@@ -71,6 +103,7 @@ CITING_FIELDS = [
 		width = 50),
 ]
 
+# fields for the allele submission section
 ALLELE_FIELDS = [
 	feedbacklib.OneLineTextField ('alleleSymbol',
 		'Suggested Mutation Symbol/Name', width = 60),
@@ -117,6 +150,7 @@ ALLELE_FIELDS = [
 		items = [ [ ('yes', '') ] ]),
 ]
 
+# fields for the strain submission section
 STRAIN_FIELDS = [
 	feedbacklib.OneLineTextField ('strain', 'Suggested strain name',
 		width = 75),
@@ -156,6 +190,7 @@ STRAIN_FIELDS = [
 		items = [ [ ('yes', '') ] ]),
 ]
 
+# fields for the phenotype submission section
 PHENOTYPE_FIELDS = [
 	feedbacklib.MultiLineTextField ('allelePairs', 'Allele pairs',
 		height = 4, width = 40),
@@ -180,36 +215,68 @@ PHENOTYPE_FIELDS = [
 		height = 3, width = 90),
 ]
 
-FILE_FIELDS = [
-	# TBD
-]
-
+# fields for the comments section
 COMMENTS_FIELDS = [
 	feedbacklib.MultiLineTextField ('finalComments',
 		'Additional Comments or Information about your data',
 		height = 2, width = 80),
 ]
 
-###--- dictionary of all Field objects, for quick access by name ---###
+# note that file upload fields are not represented in feedbacklib, but are
+# instead handled directly in this script
+
+# dictionary of all Field objects, for quick access by name; maps from
+# fieldname to Field object
 ALL_FIELDS = {}
 
-###--- name of all Fields whose values may be cached using a cookie ---###
+# name of all Fields whose values may be cached using a cookie; used to
+# pre-fill the page for future submissions
 CACHE_FIELDS = [ 'lastName', 'firstName', 'email', 'email2', 'labPI',
 	'institute', 'street', 'city', 'state', 'zip', 'country', 'phone',
 	'fax', 'isPublished', 'makePublicNow', 'references', 'url' ]
 
+###-----------------###
 ###--- functions ---###
+###-----------------###
 
-def log(message):
+def log (
+	message		# string; message to be written to Apache's error.log
+	):
+	# Purpose: write a message to the error log, stamped with the filename
+	# Returns: nothing
+	# Modifies: writes to Apache's error.log
+	# Assumes: nothing
+	# Throws: nothing
+
 	sys.stderr.write ('amsp_submission.cgi : %s\n' % message)
 	return
 
-def label(fieldname, labelStr):
+def label (
+	fieldname, 	# string; internal fieldname for a Field object
+	labelStr	# string; displayed label for a Field object
+	):
+	# Purpose: to do highlighting of labels for errant fields
+	# Returns: string; returns 'labelStr' as-is if the field had no
+	#	errors, or highlighted if it had validation errors
+	# Modifies: nothing
+	# Assumes: global ERRANT_FIELDS has been populated by a validation
+	#	process
+	# Throws: nothing
+
 	if not ERRANT_FIELDS.has_key(fieldname):
 		return labelStr
 	return '<SPAN STYLE="background-color: yellow">%s</SPAN>' % labelStr
 
-def randomString (length):
+def randomString (
+	length		# integer; number of characters in our random string
+	):
+	# Purpose: returns a string of a given 'length', filled with random 
+	#	letters and numbers
+	# Returns: string
+	# Modifies: nothing
+	# Assumes: nothing
+	# Throws: nothing
+
 	chars = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ'
 	chars = chars + chars.lower() + '0123456789'
 
@@ -220,6 +287,12 @@ def randomString (length):
 	return s
 
 def getJavascript():
+	# Purpose: return the Javascript section needed for our HTML page
+	# Returns: string; a <SCRIPT> section for our HTML page
+	# Modifies: nothing
+	# Assumes: nothing
+	# Throws: nothing
+
 	items = [
 	    '<SCRIPT LANGUAGE="Javascript">',
 	    'function addFile() {',
@@ -246,15 +319,33 @@ def getJavascript():
 	return '\n'.join(items)
 
 def encodeCacheString():
+	# Purpose: examine the parameters we will cache for a user cookie, and
+	#	bundle them into a string
+	# Returns: string; first character indicates the delimiter used to
+	#	separate between fieldnames and their values
+	# Modifies: nothing
+	# Assumes: nothing
+	# Throws: nothing
+	# Notes: The encoding in this function is paired with the decoding in
+	#	the decodeCacheString() function.
+
+	# uncommon characters that we can use as a delimiter, in order of
+	# preference
 	specialChars = '!@#$%^&*()-_+=[]{}|:;<>/?,.0123456789qwzxQWZX`'
 
-	items = []
+	# build a list of fields and values to cache
+
+	items = []		# list of (fieldname, value) tuples
+
 	for fieldname in CACHE_FIELDS:
 		field = getField (fieldname)
 		if not field.isEmpty():
 			items.append ( (fieldname, field.getValue()) )
 
-	delim = None
+	# find a delimiter which does not appear in any of our fieldnames or
+	# field values
+
+	delim = None			# string; our delimiter character
 	for char in specialChars:
 		found = False
 		for (fieldname, fieldvalue) in items:
@@ -266,23 +357,42 @@ def encodeCacheString():
 			delim = char
 			break
 
+	# if we couldn't find an unused delimiter (which would be odd), then
+	# just don't bother with caching
+
 	if not delim:
 		log ('could not find unused character for delimiter')
 		return None
 	
+	# finally, build our encoded string; delimiter is the first character
+	# and then a series of delimited fieldnames and values
+
 	s = ''
 	for (fieldname, fieldvalue) in items:
 		if fieldname and fieldvalue:
 			s = s + delim + fieldname + delim + fieldvalue
 	return s
 
-def decodeCacheString(s):
-	dict = {}
+def decodeCacheString (
+	s		# string; to be decoded into its fields and values
+	):
+	# Purpose: to decode a string encoded by encodeCacheString() function
+	# Returns: dictionary of fieldname : value pairs
+	# Modifies: nothing
+	# Assumes: nothing
+	# Throws: nothing
+
+	dict = {}			# the dictionary to be populated
 	if not s:
 		return dict
 
+	# first character is the delimiter for 's', which is then used to
+	# separate fieldnames and values
+
 	delim = s[0]
 	items = s[1:].split(delim)
+
+	# populate 'dict' with fieldnames and values found in 'items'
 
 	i = 0
 	while i < len(items):
@@ -293,28 +403,55 @@ def decodeCacheString(s):
 		i = i + 2
 	return dict
 
-def getField (fieldname):
+def getField (
+	fieldname			# string; name of a Field object
+	):
+	# Purpose: to retrieve a Field object with the given 'fieldname'
+	# Returns: a Field object
+	# Modifies: populates global 'ALL_FIELDS'
+	# Assumes: nothing
+	# Throws: nothing
+
 	global ALL_FIELDS
 
-	# if we didn't populate the cache yet, then do it
+	# if we didn't populate the cache yet (mapping fieldname to Field
+	# object), then do it
+
 	if not ALL_FIELDS:
 		for group in [ CONTACT_FIELDS, CITING_FIELDS, ALLELE_FIELDS,
-			STRAIN_FIELDS, PHENOTYPE_FIELDS, FILE_FIELDS,
-			COMMENTS_FIELDS ]:
+			STRAIN_FIELDS, PHENOTYPE_FIELDS, COMMENTS_FIELDS ]:
 			for field in group:
 				if ALL_FIELDS.has_key(field.getFieldname()):
+					# should not happen; this would be a
+					# programming error
 					raise 'ERROR', \
 						'Duplicate fieldname: %s' % \
 						field.getFieldname()
+
 				ALL_FIELDS[field.getFieldname()] = field
+
+	# now, retrieve the cached Field with the requested name
 
 	if ALL_FIELDS.has_key(fieldname):
 		return ALL_FIELDS[fieldname]
 
+	# or, log that we couldn't find it.  This would also be an unexpected
+	# programming error.
+
 	log ('requested unknown fieldname: %s' % fieldname)
 	return None
 
-def sectionTitle (s, hasRequiredFields = True):
+def sectionTitle (
+	s, 				# string; the title of the section
+	hasRequiredFields = True	# boolean; do we need an asterisk?
+	):
+	# Purpose: provide a properly formatted section title for 's'
+	# Returns: string; HTML-encoded title for a section, with an
+	#	asterisk-ed "required field" explanation, if necessary
+	# Modifies: nothing
+	# Assumes: nothing
+	# Throws: nothing
+
 	s = '<H3>%s:' % s
 	if hasRequiredFields:
 		s = s + ' &nbsp;&nbsp;&nbsp;&nbsp;' + \
@@ -324,6 +461,14 @@ def sectionTitle (s, hasRequiredFields = True):
 	return s
 
 def getContactSection():
+	# Purpose: get the HTML necessary for the 'Contact Details' section
+	# Returns: string of HTML
+	# Modifies: nothing
+	# Assumes: nothing
+	# Throws: nothing
+
+	# Fields are arranged in a two-column table
+
 	items = [ sectionTitle('Contact Details'),
 		'<TABLE>',
 		'<TR><TD>%s</TD><TD><FONT COLOR="red">*</FONT>' % \
@@ -392,6 +537,14 @@ def getContactSection():
 	return ''.join(items)
 
 def getCitingSection():
+	# Purpose: get the HTML necessary for the 'Citing your data' section
+	# Returns: string of HTML
+	# Modifies: nothing
+	# Assumes: nothing
+	# Throws: nothing
+
+	# Fields are left-aligned (no table structure)
+
 	items = [ sectionTitle('Citing your data', False),
 		'Is your data published?&nbsp;&nbsp;&nbsp;',
 		getField('isPublished').getHTML(),
@@ -410,13 +563,26 @@ def getCitingSection():
 	return ''.join(items)
 
 def getAlleleSection():
+	# Purpose: get the HTML necessary for the 'Enter Allele Data' section
+	# Returns: string of HTML
+	# Modifies: nothing
+	# Assumes: nothing
+	# Throws: nothing
+	# Notes: only fields which can be validated have their labels run
+	#	through the label() function, as the others would never be
+	#	highlighted for errors
+
+	# Fields are left-aligned (no table structure)
+
 	items = [ sectionTitle('Enter Allele Data'),
-		'Suggest <B>symbol</B> and/or <B>name</B> for this ',
-		'mutation: <FONT COLOR="red">*</FONT>',
+		'Suggest %s for this mutation: ' % label ('alleleSymbol',
+			'<B>symbol</B> and/or <B>name</B>'),
+		'<FONT COLOR="red">*</FONT>',
 		getField('alleleSymbol').getHTML(),
 		'<P>',
 		'If this mutation is an allele of a <B>known gene</B> ',
-		'enter the <B>gene symbol</B> or <B>MGI ID</B>: ',
+		'enter the %s ' % label('gene',
+			'<B>gene symbol</B> or <B>MGI ID</B>:'),
 		getField('gene').getHTML(),
 		' (<I><B>Check by</B></I> <A HREF="%sWIFetch?page=markerQF" '\
 			% config['JAVAWI_URL'],
@@ -424,7 +590,8 @@ def getAlleleSection():
 		'Common nicknames for this mutant allele ',
 		getField('nicknames').getHTML(),
 		'<P>',
-		'Class of Allele (check all that apply): &nbsp;',
+		'%s (check all that apply): &nbsp;' % label ('alleleClass',
+			'Class of Allele'),
 		'<FONT COLOR="red">*</FONT>',
 		'<BLOCKQUOTE>',
 		getField('alleleClass').getHTML(),
@@ -469,8 +636,21 @@ def getAlleleSection():
 	return ''.join(items)
 
 def getStrainSection():
+	# Purpose: get the HTML necessary for the 'Register a New Mouse
+	#	Strain' section
+	# Returns: string of HTML
+	# Modifies: nothing
+	# Assumes: nothing
+	# Throws: nothing
+	# Notes: only fields which can be validated have their labels run
+	#	through the label() function, as the others would never be
+	#	highlighted for errors
+
+	# Fields are left-aligned (no table structure)
+
 	items = [ sectionTitle('Register a New Mouse Strain'),
-		'Enter a suggested <B>strain name</B>.<BR>',
+		'Enter a suggested <B>%s</B>.<BR>' % label (
+			'strain', 'strain name'),
 		'When mutant alleles are part of the strain name, use ',
 		'&lt; &gt; to indicate the superscripted alleles.<BR>',
 		'<I>Example:</I> <B>C57BL/6J-Kit<SUP>W-39J</SUP></B> should ',
@@ -478,7 +658,8 @@ def getStrainSection():
 		'<FONT COLOR="red">*</FONT>',
 		getField('strain').getHTML(),
 		'<P>',
-		'Enter the <B>gene symbols</B> corresponding to alleles ',
+		'Enter the <B>%s</B> corresponding to alleles ' % label (
+			'genes', 'gene symbols'),
 		'carried on this strain.<BR>',
 		'<I>Example:</I> for the strain ',
 		'<B>NOD/LtSz-Prkdc&lt;scid&gt; B2m&lt;tm1Unc&gt;</B>, the ',
@@ -497,7 +678,8 @@ def getStrainSection():
 		'Enter its repository ID or MGI ID for this strain, if known ',
 		getField('repositoryID').getHTML(),
 		'<P>',
-		'<B>Strain categories</B>: Choose one or more. ',
+		'<B>%s</B>: Choose one or more. ' % label ('strainCategory',
+			'Strain categories'),
 		'<FONT COLOR="red">*</FONT><BLOCKQUOTE>',
 		getField('strainCategory').getHTML(True),
 		'</BLOCKQUOTE><P>',
@@ -519,6 +701,18 @@ def getStrainSection():
 	return ''.join(items)
 
 def getPhenotypeSection():
+	# Purpose: get the HTML necessary for the 'Submit Phenotype Data'
+	#	section
+	# Returns: string of HTML
+	# Modifies: nothing
+	# Assumes: nothing
+	# Throws: nothing
+	# Notes: only fields which can be validated have their labels run
+	#	through the label() function, as the others would never be
+	#	highlighted for errors
+
+	# Fields are left-aligned (no table structure)
+
 	items = [
 		sectionTitle('Submit Phenotype Data'),
 		'<B>Mutant allele(s)</B> analyzed.<P>',
@@ -535,7 +729,8 @@ def getPhenotypeSection():
 		'Kit&lt;W-39J&gt;, Kit&lt;+&gt;<br>',
 		'Tec&lt;tm1Welm&gt;, Tec&lt;tm1Welm&gt;',
 		'</TD></TR></TABLE><P>',
-		'Enter allele pairs of your phenotyped animals: ',
+		'Enter %s of your phenotyped animals: ' % label (
+			'allelePairs', 'allele pairs'),
 		'<FONT COLOR="red">*</FONT><BR>',
 		getField('allelePairs').getHTML(),
 		'(Find the correct allele symbol by <A HREF=',
@@ -549,8 +744,9 @@ def getPhenotypeSection():
 		'<P>',
 		'<B>Genetic Background:</B> Genetic background can have a ',
 		'significant effect on phenotype.<P>',
-		'Enter the Strain/Genetic Background on which phenotypes ',
-		'were analyzed: <FONT COLOR="red">*</FONT>',
+		'Enter the %s on which phenotypes were analyzed: ' % label (
+			'geneticBackground', 'Strain/Genetic Background'),
+		'<FONT COLOR="red">*</FONT>',
 		getField('geneticBackground').getHTML(),
 		'<P>',
 		'Other Strain/Background Information (e.g. specify ',
@@ -565,7 +761,8 @@ def getPhenotypeSection():
 		'will contact you about determining the correct genetic ',
 		'background.</UL>',
 		sectionTitle('Phenotype', False),
-		'Phenotypic Description (enter text, describing details of ',
+		'%s (enter text, describing details of ' % \
+			label ('phenoDescription', 'Phenotypic Description'),
 		'phenotypes observed, etc.): <FONT COLOR="red">*</FONT><BR>',
 		'Click here for an <A HREF="foo" TARGET="_new">example</A>.',
 		' You may browse the <A HREF="%ssearches/MP_form.shtml" ' % \
@@ -587,6 +784,18 @@ def getPhenotypeSection():
 	return ''.join(items)
 
 def getFileUploadSection():
+	# Purpose: get the HTML necessary for the 'File submissions' section
+	# Returns: string of HTML
+	# Modifies: nothing
+	# Assumes: nothing
+	# Throws: nothing
+
+	# Fields are left-aligned (no table structure); we initially show
+	# only one file submission field, but can accommodate up to ten.
+
+	# Note that file submission fields are always submitted by some
+	# browsers, whether or not the user actually selected anything.
+
 	items = [
 		sectionTitle('File submissions', False),
 		'You may submit a limited number of files using this form. ',
@@ -597,24 +806,30 @@ def getFileUploadSection():
 		'submissions@informatics.jax.org</a>.<P>',
 		'Upload your data files (images, text descriptions, Excel, ',
 		'or text data):<BR>',
-		'File 1: <INPUT NAME="file1" VALUE="" TYPE="file">',
+		'File 1: <INPUT NAME="file1" TYPE="file">',
 		'<INPUT TYPE="button" onClick="addFile()" NAME="addFileButton" VALUE="Allow more files">',
 		'<P>',
-		'<SPAN ID="f2" STYLE="display: none;">File 2: <INPUT NAME="file2" VALUE="" TYPE="file"><P></SPAN>',
-		'<SPAN ID="f3" STYLE="display: none;">File 3: <INPUT NAME="file3" VALUE="" TYPE="file"><P></SPAN>',
-		'<SPAN ID="f4" STYLE="display: none;">File 4: <INPUT NAME="file4" VALUE="" TYPE="file"><P></SPAN>',
-		'<SPAN ID="f5" STYLE="display: none;">File 5: <INPUT NAME="file5" VALUE="" TYPE="file"><P></SPAN>',
-		'<SPAN ID="f6" STYLE="display: none;">File 6: <INPUT NAME="file6" VALUE="" TYPE="file"><P></SPAN>',
-		'<SPAN ID="f7" STYLE="display: none;">File 7: <INPUT NAME="file7" VALUE="" TYPE="file"><P></SPAN>',
-		'<SPAN ID="f8" STYLE="display: none;">File 8: <INPUT NAME="file8" VALUE="" TYPE="file"><P></SPAN>',
-		'<SPAN ID="f9" STYLE="display: none;">File 9: <INPUT NAME="file9" VALUE="" TYPE="file"><P></SPAN>',
-		'<SPAN ID="f10" STYLE="display: none;">File 10: <INPUT NAME="file10" VALUE="" TYPE="file"> (limit is 10 files)<P></SPAN>',
+		'<SPAN ID="f2" STYLE="display: none;">File 2: <INPUT NAME="file2" TYPE="file"><P></SPAN>',
+		'<SPAN ID="f3" STYLE="display: none;">File 3: <INPUT NAME="file3" TYPE="file"><P></SPAN>',
+		'<SPAN ID="f4" STYLE="display: none;">File 4: <INPUT NAME="file4" TYPE="file"><P></SPAN>',
+		'<SPAN ID="f5" STYLE="display: none;">File 5: <INPUT NAME="file5" TYPE="file"><P></SPAN>',
+		'<SPAN ID="f6" STYLE="display: none;">File 6: <INPUT NAME="file6" TYPE="file"><P></SPAN>',
+		'<SPAN ID="f7" STYLE="display: none;">File 7: <INPUT NAME="file7" TYPE="file"><P></SPAN>',
+		'<SPAN ID="f8" STYLE="display: none;">File 8: <INPUT NAME="file8" TYPE="file"><P></SPAN>',
+		'<SPAN ID="f9" STYLE="display: none;">File 9: <INPUT NAME="file9" TYPE="file"><P></SPAN>',
+		'<SPAN ID="f10" STYLE="display: none;">File 10: <INPUT NAME="file10" TYPE="file"> (limit is 10 files)<P></SPAN>',
 		'See examples and templates for file submissions.',
 		]
-
 	return ''.join(items)
 
 def getCommentsSection():
+	# Purpose: get the HTML necessary for the 'Completing your submission'
+	#	section
+	# Returns: string of HTML
+	# Modifies: nothing
+	# Assumes: nothing
+	# Throws: nothing
+
 	items = [
 		sectionTitle('Completing your submission', False),
 		'Are there any additional commments or information you ',
@@ -623,7 +838,34 @@ def getCommentsSection():
 		]
 	return ''.join(items)
 
+def hiddenStyle (
+	isVisible			# boolean; should item be visible?
+	):
+	# Purpose: get HTML style necessary to make an item visible or not
+	# Returns: string
+	# Modifies: nothing
+	# Assumes: nothing
+	# Throws: nothing
+	# Notes: to make an item visible we need no styling, so an empty
+	#	string is returned in that case
+
+	if isVisible:
+		return ''
+	return ' STYLE="display:none;"'
+
 def getMainForm():
+	# Purpose: get the main part of the submission form (the part with the
+	#	fields, except for file submissions)
+	# Returns: string of HTML, for the contact section through the
+	#	comments section
+	# Modifies: nothing
+	# Assumes: nothing
+	# Throws: nothing
+
+	# The three major sections (allele, strain, phenotype) are hidden by
+	# default, but will be made visible if they contain validation errors.
+	# All other sections are displayed always.
+	
 	items = [
 		getContactSection(),
 		'<HR>',
@@ -640,7 +882,7 @@ def getMainForm():
 		'Allele</A></B>&nbsp;&nbsp;',
 		'Name and describe a new allele, mutation, or transgene',
 		'</TD></TR>',
-		'<TR ID="alleleSection" STYLE="display:none;"><TD>',
+		'<TR ID="alleleSection"%s><TD>' % hiddenStyle(SHOW_ALLELE),
 		getAlleleSection(),
 		'</TD></TR>',
 		'<TR><TD ALIGN="left" BGCOLOR="#d0e2f3">',
@@ -649,7 +891,7 @@ def getMainForm():
 		'Strain</A></B>&nbsp;&nbsp;',
 		'Register a new mouse strain',
 		'</TD></TR>',
-		'<TR ID="strainSection" STYLE="display:none;"><TD>',
+		'<TR ID="strainSection"%s><TD>' % hiddenStyle(SHOW_STRAIN),
 		getStrainSection(),
 		'</TD></TR>',
 		'<TR><TD ALIGN="left" BGCOLOR="#d0e2f3">',
@@ -658,7 +900,8 @@ def getMainForm():
 		'Phenotypes</A></B>&nbsp;&nbsp;',
 		'Submit phenotype data for given genotypes',
 		'</TD></TR>',
-		'<TR ID="phenotypeSection" STYLE="display:none;"><TD>',
+		'<TR ID="phenotypeSection"%s><TD>' % \
+			hiddenStyle(SHOW_PHENOTYPE),
 		getPhenotypeSection(),
 		'</TD></TR>',
 		'<TR ID="commentsSection"><TD>',
@@ -668,7 +911,35 @@ def getMainForm():
 		]
 	return ''.join (items)
 
+def getResetSpan():
+	# Purpose: get an HTML span which provides for a confirmation check
+	#	before resetting the entire form
+	# Returns: string of HTML
+	# Modifies: nothing
+	# Assumes: nothing
+	# Throws: nothing
+
+	# This span is hidden by default, and is made visible when a Reset
+	# button on the page is clicked.  (Javascript on each Reset button
+	# must show it.)
+
+	items = [
+		'<SPAN ID="confirmReset" STYLE="display:none;">',
+		'Are you sure you want to reset all values on the page?',
+		'''<INPUT TYPE="button" VALUE="No, skip it" NAME="resetSkipped" onClick="toggle('confirmReset');">''',
+		'''<INPUT TYPE="reset" VALUE="Yes, reset the page" NAME="resetConfirmed" onClick="toggle('confirmReset');">''',
+		'</SPAN>',
+		]
+	return '\n'.join(items)
+
 def getInitialForm():
+	# Purpose: get the main part of the page for an initial entry to the
+	#	page (the first page the user sees)
+	# Returns: string of HTML
+	# Modifies: nothing
+	# Assumes: nothing
+	# Throws: nothing
+
 	items = [ 
 		'Use this Submission Form to describe spontaneous, induced, ',
 		'or genetically engineered mutations, to register new mouse ',
@@ -679,16 +950,37 @@ def getInitialForm():
 		'<B>Use the buttons below to preview your submission ',
 		'or reset the entire form.<BR>Thank you!</B><P>',
 		'<INPUT VALUE="Verify" TYPE="submit">&nbsp;',
-		'<INPUT VALUE="Reset" TYPE="reset">',
+
+		# the reset button has a confirmation step
+		'''<INPUT VALUE="Reset" TYPE="button" onClick="toggle('confirmReset');">''',
+		getResetSpan(),
 		'<INPUT TYPE="hidden" NAME="cameFrom" VALUE="initial">',
 		'</FORM>',
 		]
 	return '\n'.join (items)
 
-def getVerifyForm():
-	text = buildText()
-	hadErrors = len(ERRANT_FIELDS) > 0
+def getVerifyForm (
+	text = None	# string; textual display of fields and values
+	):
+	# Purpose: get the main part of the verification page (after the user
+	#	clicks the Verify button)
+	# Returns: string of HTML
+	# Modifies: nothing
+	# Assumes: nothing
+	# Throws: nothing
 
+	# if we were not given a textual representation (with validation done)
+	# then build it now
+
+	if not text:
+		text = buildText()
+
+	# We need to change our messages (and format, to an extent) based on
+	# whether there were any validation errors or not
+
+	hadErrors = len(ERRANT_FIELDS) > 0	# True if we discovered errors
+
+	# list of strings; this is where we're building the output
 	items = [
 		'Please review the text of your submission below.',
 		]
@@ -702,7 +994,7 @@ def getVerifyForm():
 			'items and click the Verify button at the bottom of ',
 			'the page.',
 			]
-		preForm = ''
+		preForm = ''		# no wrapper around form
 		postForm = ''
 	else:
 		items = items + [
@@ -712,6 +1004,10 @@ def getVerifyForm():
 			'go to the bottom, select any files to upload with ',
 			'your submission, and click the Submit button.'
 			]
+
+		# we provide a wrapper around the form, so that we can hide it
+		# by default when there are no validation errors
+
 		preForm = '\n'.join ([
 			'<TABLE BORDER="0" CELLPADDING="0" CELLSPACING="0" ',
 			'WIDTH="100%"><TR><TD BGCOLOR="#d0e2f3">',
@@ -725,7 +1021,7 @@ def getVerifyForm():
 
 	items = items + [
 		'<PRE>%s</PRE>' % text,
-		'<FORM ACTION="%ssubmissions/amsp_submission.cgi" METHOD="POST">' % config['MGIHOME_URL'],
+		'<FORM ACTION="%ssubmissions/amsp_submission.cgi" ENCTYPE="multipart/form-data" METHOD="POST">' % config['MGIHOME_URL'],
 		preForm,
 		getMainForm(),
 		postForm,
@@ -733,15 +1029,20 @@ def getVerifyForm():
 		]
 
 	if hadErrors:
+		# with errors, we need to come back to the verification step
+
 		items = items + [
 			'<B>Use the buttons below to preview your submission ',
 			'or reset the entire form.<BR>Thank you!</B><P>',
 			'<INPUT VALUE="Verify" TYPE="submit">&nbsp;',
-			'<INPUT VALUE="Reset" TYPE="reset">',
+			'''<INPUT VALUE="Reset" TYPE="button" onClick="toggle('confirmReset');">''',
+			getResetSpan(),
 			'<INPUT TYPE="hidden" NAME="cameFrom" VALUE="initial">',
 			'</FORM>',
 			]
 	else:
+		# with no errors, we can actually do the submission
+
 		items = items + [
 			'<HR>',
 			getFileUploadSection(),
@@ -755,13 +1056,35 @@ def getVerifyForm():
 
 	return '\n'.join (items)
 
-def getFilename (id):
-	# use 10 different cookie files to try to minimize the chance of
-	# conflicts, while still not polluting /tmp too badly
+def getFilename (
+	id			# string; cookie ID from the user's browser
+	):
+	# Purpose: find the path to the file which contains the contact info
+	#	corresponding to the user's cookie ID
+	# Returns: string; full path to the file
+	# Modifies: nothing
+	# Assumes: nothing
+	# Throws: nothing
+	# Notes: We use ten different cookie files to try to minimize the
+	#	chance of conflicts, while still not polluting /tmp too badly.
 
 	return BASE_COOKIE_FILE + str(hash(id) % 10)
 
-def readFile(id):
+def readFile (
+	id			# string; cookie ID from the user's browser
+	):
+	# Purpose: read the data file which would contain contact info for the
+	#	user's given cookie ID
+	# Returns: dictionary; maps from string IDs to their corresponding
+	#	encoded strings
+	# Modifies: nothing
+	# Assumes: nothing
+	# Throws: nothing
+	# Notes: Upon reading the file, we remove any expired data before
+	#	returning the dictionary.  This is how we keep the files from
+	#	growing continuously; when we save the dictionary to the file,
+	#	the old entries will be gone.
+
 	filename = getFilename(id)
 
 	if os.path.exists(filename):
@@ -775,18 +1098,34 @@ def readFile(id):
 	else:
 		return {}
 
-	dict = {}
 	now = time.time()
 	for (key, (expires, value)) in dict.items():
 		if expires < now:
 			del dict[key]
 	return dict
 
-def writeFile(id):
+def writeFile (
+	id,			# string; cookie ID from the user's browser
+	parms			# string; encoded string of contact info
+	):
+	# Purpose: to write the given 'parms' to the proper file for the given
+	#	'id', so we can remember them and pre-populate the contact
+	#	information sections in the future
+	# Returns: None
+	# Modifies: write a file to the file system
+	# Assumes: nothing
+	# Throws: nothing
+
+	# We re-read the file at this point, to pick up any data that has been
+	# added since we read it initially in the loadCookie() function.
+
 	dict = readFile(id)
 
+	# The cookie expires in an hour on the user's side, but we allow an
+	# extra ten minutes here in case the user's system time is off a bit.
+
 	expires = time.time() + 60 * 70			# one hour, ten min.
-	dict[id] = (expires, encodeCacheString())
+	dict[id] = (expires, parms)
 
 	filename = getFilename(id)
 	try:
@@ -799,44 +1138,78 @@ def writeFile(id):
 	return
 
 def loadCookie():
+	# Purpose: load data from the user's cookie, if there is one, and
+	#	pre-populate the relevant data fields
+	# Returns: nothing
+	# Modifies: alters globals 'MY_COOKIE' and 'COOKIE_IE'; reads a file
+	#	from the file system
+	# Assumes: nothing
+	# Throws: nothing
+
 	global MY_COOKIE, COOKIE_ID
+
+	# if we were given a cookie, then we need to pull the data into our
+	# SimpleCookie object
+
 	if os.environ.has_key('HTTP_COOKIE'):
-		log ('found HTTP_COOKIE %s' % os.environ['HTTP_COOKIE'])
 		MY_COOKIE.load (os.environ['HTTP_COOKIE'])
 
+	# if the cookie is missing the ID field, then just bail out and ignore
+	# the cookie
+
 	if not MY_COOKIE.has_key('id'):
-		log ('received cookie with no id field: %s' % str(MY_COOKIE.keys()))
 		return
 
 	id = MY_COOKIE['id'].value
-	COOKIE_ID = id
 
-	log ('received id: %s' % id)
+	# remember this globally so we can update its data later at the end
+	COOKIE_ID = id	
+
 	dict = readFile(id)
-	log ('read dict with %d IDs' % len(dict))
 
 	if not dict.has_key(id):
 		log ('received unknown/expired value for cookie: %s' % id)
 		return
 
-	fieldValues = decodeCacheString(dict[id])
+	# the 'dict' entry for our 'id' has two fields: the first is an
+	# expiration time, and the second is the encoded data
 
-	# initialize field values from cached values using cookie ID
+	fieldValues = decodeCacheString(dict[id][1])
+
+	# initialize field values from our cached values
+
 	for fieldname in CACHE_FIELDS:
 		getField(fieldname).set(fieldValues)
 	return
 
 def setCookie():
+	# Purpose: set up a cookie to send to the user, and cache its data in
+	#	the relevant data file
+	# Returns: nothing
+	# Modifies: global 'MY_COOKIE'; reads and writes a data file in the
+	#	file system
+	# Assumes: nothing
+	# Throws: nothing
+
 	global MY_COOKIE
+
+	# encode our cache-able parameters as a string; if none, bail out
 
 	parms = encodeCacheString()
 	if not parms:
 		return
 
-	# update existing info, if user already gave us a cookie ID
+	# if the user gave us an ID via a cookie, then we should just update
+	# the data for that one
+
 	if COOKIE_ID:
 		id = COOKIE_ID
 	else:
+		# Otherwise, we need to assign a new ID.  Check its associated
+		# data file to see if we already assigned that ID (which is
+		# unlikely, but we'll check).  Repeat until we pick an unused
+		# one.
+
 		id = randomString(16)
 
 		dict = readFile(id)
@@ -845,20 +1218,42 @@ def setCookie():
 			dict = readFile(id)
 
 	MY_COOKIE['id'] = id
-	MY_COOKIE['id']['expires'] = 60			# one hour
+	MY_COOKIE['id']['max-age'] = 60	* 60		# one hour
 
-	writeFile(id)			# save the values for this cookie ID
+	writeFile(id, parms)		# save the values for this cookie ID
 	return
 
-def sendInitialForm(output):
+def sendInitialForm (
+	output		# Template object; handles our page composition
+	):
+	# Purpose: write out our initial submission form page
+	# Returns: nothing
+	# Modifies: writes to stdout (the user's browser)
+	# Assumes: nothing
+	# Throws: nothing
+
 	output.setBody(getInitialForm())
 	print output.getFullDocument()
 	return
 
-def updateFields(parms):
-	# update our Field objects, based on values from 'parms'
+def updateFields (
+	parms		# cgi.FieldStorage object; user's input parameters
+	):
+	# Purpose: update our Field objects, based on the user's input
+	# Returns: nothing
+	# Modifies: global UPLOADED_FILES, and our Field objects
+	# Assumes: nothing
+	# Throws: nothing
 
+	global UPLOADED_FILES
+
+	# dictionary mapping a field name to its value, where the value will
+	# be either a string or a list of strings, depending on whether the
+	# field is multi-valued
 	dict = {}
+
+	# convert our FieldStorage object to our 'dict'
+
 	for key in parms.keys():
 		if type(parms[key]) == types.ListType:
 			dict[key] = []
@@ -867,21 +1262,51 @@ def updateFields(parms):
 		else:
 			dict[key] = parms[key].value
 
+	# request an initial field, so that global ALL_FIELDS gets populated
 	getField('lastName')
+
+	# pass our dictionary into each Field, so it can look for its value
+
 	for (fieldname, field) in ALL_FIELDS.items():
 		field.set(dict)
+
+	# build a list of dictionaries, one per uploaded data file; each dict
+	# will have two keys:  filename and contents
+
+	for i in range(1,11):
+		key = 'file' + str(i)
+		if parms.has_key(key) and parms[key].value != '':
+			filename = parms[key].filename
+			contents = parms[key].value
+
+			UPLOADED_FILES.append ( {
+				'filename' : filename,
+				'contents' : contents } )
 	return
 
-def checkSection (allFields, requiredFieldnames, sectionName):
+def checkSection (
+	allFields, 		# list of strings; all fieldnames in section
+	requiredFieldnames, 	# list of strings; required fieldnames in sec.
+	sectionName		# string; name of the section, for reporting
+	):
+	# Purpose: if any fields in a section are filled in, then the required
+	#	fields for that section must be filled in.  (If no fields were
+	#	submitted for that section, then the required fields don't
+	#	have to be.)
+	# Returns: list of strings, each of which is an error message
+	# Modifies: alters global ERRANT_FIELDS
+	# Assumes: nothing
+	# Throws: nothing
+
 	global ERRANT_FIELDS
 
-	foundAny = False
+	foundAny = False		# did we find any Fields with values?
 	for field in allFields:
 		if field.getValue():
 			foundAny = True
 			break
 
-	errors = []
+	errors = []			# list of error strings
 
 	if foundAny:
 		for fieldname in requiredFieldnames:
@@ -892,9 +1317,19 @@ def checkSection (allFields, requiredFieldnames, sectionName):
 				ERRANT_FIELDS[fieldname] = True
 	return errors
 	
+# dictionary; maps from gene ID/symbol to boolean (True/False) indicating
+# whether it is a valid gene ID/symbol
 KNOWN_GENES = {}
 
-def isKnownGene (gene):
+def isKnownGene (
+	gene		# string; gene ID or symbol
+	):
+	# Purpose: to determine whether 'gene' identifies a valid gene
+	# Returns: boolean; True if is a valid gene, False if not
+	# Modifies: global 'KNOWN_GENES'
+	# Assumes: we can query the database
+	# Throws: nothing
+
 	global KNOWN_GENES
 
 	if not KNOWN_GENES.has_key(gene):
@@ -913,9 +1348,19 @@ def isKnownGene (gene):
 
 	return KNOWN_GENES[gene]
 
+# dictionary; maps from allele symbol to boolean (True/False) indicating
+# whether it is a valid allele symbol
 KNOWN_ALLELES = {}
 
-def isKnownAllele (allele):
+def isKnownAllele (
+	allele		# string; allele symbol
+	):
+	# Purpose: to determine whether 'allele' identifies a valid allele
+	# Returns: boolean; True if is a valid allele, False if not
+	# Modifies: global 'KNOWN_ALLELES'
+	# Assumes: we can query the database
+	# Throws: nothing
+
 	global KNOWN_ALLELES
 
 	if not KNOWN_ALLELES.has_key(allele):
@@ -927,11 +1372,18 @@ def isKnownAllele (allele):
 	return KNOWN_ALLELES[allele]
 
 def doExtraValidation():
-	global ERRANT_FIELDS
+	# Purpose: do extra validation for fields (more than simply checking
+	#	whether the field is empty or not)
+	# Returns: list of error strings
+	# Modifies: global variables shown in 'global' statement below
+	# Assumes: we can query the database
+	# Throws: nothing
+
+	global ERRANT_FIELDS, SHOW_ALLELE, SHOW_PHENOTYPE, SHOW_STRAIN
 
 	errors = []
 
-	# verify email address format (roughly)
+	# verify email address format (roughly); see regex below
 
 	email1 = getField('email').getValue()
 	email2 = getField('email2').getValue()
@@ -952,24 +1404,33 @@ def doExtraValidation():
 		ERRANT_FIELDS['email2'] = True
 		errors.append ('E-mail address fields do not match')
 
-	# allele symbol/name & class of allele
+	# allele symbol/name & class of allele must be filled in, if any
+	# fields in that section were filled in
 
 	e = checkSection (ALLELE_FIELDS, [ 'alleleSymbol', 'alleleClass' ],
 		'Enter Allele Data')
-	errors = errors + e
+	if e:
+		SHOW_ALLELE = True
+		errors = errors + e
 
-	# strain name & strain category
+	# strain name & strain category must be filled in, if any fields in
+	# that section were filled in
 
 	e = checkSection (STRAIN_FIELDS, [ 'strain', 'strainCategory' ],
 		'Register a New Mouse Strain')
-	errors = errors + e
+	if e:
+		SHOW_STRAIN = True
+		errors = errors + e
 
-	# allele pairs, genetic background, and phenotype description
+	# allele pairs, genetic background, and phenotype description must be
+	# filled in, if any fields in that section were filled in
 
 	e = checkSection (PHENOTYPE_FIELDS, [ 'allelePairs',
 		'geneticBackground', 'phenoDescription' ],
 		'Submit Phenotype Data')
-	errors = errors + e
+	if e:
+		SHOW_PHENOTYPE = True
+		errors = errors + e
 
 	# verify gene symbol/ID for allele
 
@@ -989,6 +1450,7 @@ def doExtraValidation():
 				if gene not in unknowns:
 					unknowns.append(gene)
 		if unknowns:
+			SHOW_ALLELE = True
 			ERRANT_FIELDS['genes'] = True
 			errors.append ('Invalid gene(s) for strain: %s' % \
 				', '.join (unknowns))
@@ -1006,6 +1468,7 @@ def doExtraValidation():
 					if allele not in unknowns:
 						unknowns.append (allele)
 		if unknowns:
+			SHOW_PHENOTYPE = True
 			ERRANT_FIELDS['allelePairs'] = True
 			errors.append ('Invalid alleles in allele pairs: %s' \
 				% ', '.join (unknowns))
@@ -1013,23 +1476,50 @@ def doExtraValidation():
 	return errors
 
 def buildText():
+	# Purpose: build a textual representation of the submitted fields
+	# Returns: string of pre-formatted text
+	# Modifies: alters globals listed in 'global' statement below
+	# Assumes: nothing
+	# Throws: nothing
+
+	global SHOW_ALLELE, SHOW_PHENOTYPE, SHOW_STRAIN, ERRANT_FIELDS
+
+	# list of sections with Field objects
 	sections = [ CONTACT_FIELDS, CITING_FIELDS, ALLELE_FIELDS,
-		STRAIN_FIELDS, PHENOTYPE_FIELDS, FILE_FIELDS,
-		COMMENTS_FIELDS ]
+		STRAIN_FIELDS, PHENOTYPE_FIELDS, COMMENTS_FIELDS ]
+
+	# list of strings, each one line for pre-formatted text output
 	lines = []
 
 	for section in sections:
+		# did we have at least one line of output for this section?
 		hadOne = False
+
 		for field in section:
+			# validate each field in the section
 			field.validate()
 			fieldErrors = field.getErrors()
 
+			# if we have either a value or an error, we'll need to
+			# add to our output 'lines'
+
 			if field.getValue() or fieldErrors:
+				# handle escaping of < and > characters
+
 				prValue = cgi.escape(str(field.getValue()))
+
+				# if we have a multi-line field, then we need
+				# to add an initial line break to keep the
+				# data together
+
 				if '\n' in prValue:
 					prValue = '\n' + prValue
+
 				lines.append ('%s : %s' % (field.getLabel(),
 					prValue))
+
+				# if there were error messages, add them and
+				# flag the field
 
 				if fieldErrors:
 					lines[-1] = lines[-1] + ' *'
@@ -1037,14 +1527,52 @@ def buildText():
 						lines.append ('  * ' + error)
 					ERRANT_FIELDS[field.getFieldname()] =\
 						True
+				
+					# errors in certain sections require
+					# that we automatically show them
+					# rather than having them hidden
+
+					if section == ALLELE_FIELDS:
+						SHOW_ALLELE = True
+					elif section == STRAIN_FIELDS:
+						SHOW_STRAIN = True
+					elif section == PHENOTYPE_FIELDS:
+						SHOW_PHENOTYPE = True
 
 				hadOne = True
+
+		# if we had a line in this section, then we need to add a
+		# divider line
 
 		if hadOne and section != sections[-1]:
 			lines.append ('-' * 50)
 
+	# do any extra, more complex validations
 	moreErrors = doExtraValidation()
 
+	# include data for any uploaded files
+	if UPLOADED_FILES:
+		lines.append ('-' * 50)
+		lines.append ('Uploaded Files')
+
+		# It is possible for a user to select files for upload and to
+		# alter previously valid Fields so that they are then errant.
+		# In that case, we will not save the uploaded files and we
+		# we will send the user back to a new validation page.  This
+		# keeps us from having to match up files with complete 
+		# submission forms that come later.
+
+		if ERRANT_FIELDS:
+			lines.append ('  * Uploaded files were not saved, ' \
+					+ 'due to validation errors')
+		else:
+			for file in UPLOADED_FILES:
+				lines.append ('Uploaded file: %s (%d bytes)' \
+					% (file['filename'],
+						len(file['contents']) ) )
+
+	# If we discovered more validation errors, show them below the
+	# uploaded file section.
 	if moreErrors:
 		lines.append ('More Validation Errors')
 		for error in moreErrors:
@@ -1052,19 +1580,271 @@ def buildText():
 
 	return '\n'.join(lines)
 
-def sendVerifyForm(output):
+def sendVerifyForm (
+	output		# Template object; handles our page composition
+	):
+	# Purpose: write out our verification page for a user's submission
+	# Returns: nothing
+	# Modifies: writes to stdout (the user's browser)
+	# Assumes: nothing
+	# Throws: nothing
+
 	output.setBody(getVerifyForm())
 	print output.getFullDocument()
 	return
 
-def sendConfirmation(output):
+def createDirectory():
+	# Purpose: create a new submission directory
+	# Returns: string, path to new directory
+	# Modifies: creates a directory in the file system
+	# Assumes: nothing
+	# Throws: 'error' if we cannot create the directory
+	# Notes: prefix of directory name is today's date; remainder is
+	#	generated by tempfile to create a unique name
+
+	if not config.has_key('SUBMISSION_DIRECTORY'):
+		raise error, 'No config info for SUBMISSION_DIRECTORY'
+
+	submissionDir = config['SUBMISSION_DIRECTORY']
+
+	if not os.path.exists(submissionDir):
+		raise error, 'Invalid directory for SUBMISSION_DIRECTORY'
+
+	today = time.strftime('%Y-%m-%d-', time.localtime(time.time()))
+
+	try:
+		newDir = tempfile.mkdtemp(prefix = today, dir = submissionDir)
+		runCommand.runCommand ('chmod 770 %s' % os.path.join(newDir))
+	except:
+		raise error, 'Cannot create new directory using mkdtemp'
+
+	return newDir
+
+def saveFile (
+	dir, 		# string; name of the submission directory
+	filename, 	# string; name of the file to save
+	contents	# string; contents of the file to be saved
+	):
+	# Purpose: write the given 'filename' to the given directory 'dir',
+	#	containing the given 'contents'
+	# Returns: nothing
+	# Modifies: writes a file to the file system
+	# Assumes: nothing
+	# Throws: raises 'error' if we cannot write the file
+
+	try:
+		fp = open(os.path.join(dir, filename), 'w')
+		fp.write(contents)
+		fp.flush()
+		fp.close()
+		runCommand.runCommand ('chmod 660 %s' % os.path.join(dir,
+			filename))
+	except:
+		raise error, 'Failed to write file: %s' % os.path.join (
+			dir, filename)
+	return
+
+def saveUploadedFiles (
+	dir		# string; name of the submission directory
+	):
+	# Purpose: write the user's uploaded files to the submission directory
+	# Returns: nothing
+	# Modifies: writes files to the file system
+	# Assumes: nothing
+	# Throws: raises 'error' if we cannot save one or more files
+
+	alreadySaved = {}	# dictionary of filenames already saved
+	failedFiles = []	# list of filenames which failed to save
+
+	for file in UPLOADED_FILES:
+		filename = file['filename']
+		contents = file['contents']
+
+		# trim off any directory separator, to just leave the base
+		# filename
+
+		if filename.find('/'):
+			filename = filename.split('/')[-1]
+		elif filename.find('\\'):
+			filename = filename.split('\\')[-1]
+
+		# if we've already saved a file by this name to the submission
+		# directory, then add numeric suffix that increments until we
+		# generate a new unique name for the file
+
+		if alreadySaved.has_key(filename):
+			i = 1
+			f2 = filename + '.' + str(i)
+			while alreadySaved.has_key(f2):
+				i = i + 1
+				f2 = filename + '.' + str(i)
+			filename = f2
+
+		try:
+			saveFile(dir, filename, contents)
+		except:
+			failedFiles.append (filename)
+
+	if failedFiles:
+		raise error, 'Failed to write %d file(s) [%s] to dir %s' % (
+			len(failedFiles), ', '.join(failedFiles), dir)
+	return
+
+def saveText (
+	dir, 		# string; submission directory
+	text		# string; text of the submission form fields
+	):
+	# Purpose: write the user's form fields to a file in the submission
+	#	directory
+	# Returns: nothing
+	# Modifies: writes a file to the file system
+	# Assumes: nothing
+	# Throws: raises 'error' if we cannot save the file
+
+	saveFile(dir, 'submissionForm.txt', text)
+	return
+
+def sendError (
+	output,		# Template object; handles our page composition
+	message		# string; error message for the user
+	):
+	# Purpose: write an error message to the user's browser, and logs the
+	#	current exception information to Apache's error.log file
+	# Returns: does not return; exits the script
+	# Modifies: writes to stdout (to the user's browser), and appends to
+	#	Apache's error.log
+	# Assumes: nothing
+	# Throws: raises SystemExit to exit the script
+
+	(exc_type, exc_message, exc_traceback) = sys.exc_info()
+	sys.stderr.write ('amsp_submission.cgi : %s : %s\n' % (exc_type,
+		exc_message))
+	traceback.print_exception (exc_type, exc_message, exc_traceback, None,
+		sys.stderr)
+
+
+	output.setBody ('Error: %s' % message)
+	print output.getFullDocument()
+	sys.exit(0)
+
+def sendMail (
+	text		# string; text of the submission form fields
+	):
+	# Purpose: send a confirmation email to the user, containing the
+	#	'text' of his/her submission
+	# Returns: nothing
+	# Modifies: invokes sendmail in a shell; may write an exception to
+	#	Apache's error.log
+	# Assumes: nothing
+	# Throws: 'error' if the email cannot be sent
+
+	# message contents
+	items = [
+		'From: mgi-help@informatics.jax.org',
+		'To: %s' % getField('email').getValue(),
+		'Subject: Confirmation of your form submission',
+		'',
+		text,
+		''
+		]
+
+	if not config.has_key('SENDMAIL'):
+		raise error, 'Missing SENDMAIL config variable'
+
+	try:
+		fd = os.popen('%s -t' % config['SENDMAIL'], 'w')
+		fd.write ('\n'.join(items))
+		fd.close()
+	except:
+		(exc_type, exc_message, exc_traceback) = sys.exc_info()
+		sys.stderr.write ('amsp_submission.cgi : %s : %s\n' % (
+			exc_type, exc_message))
+		traceback.print_exception (exc_type, exc_message, 
+			exc_traceback, None, sys.stderr)
+
+		raise error, 'Cannot send confirmation email'
+	return
+
+def acceptSubmission (
+	output		# Template object; handles our page composition
+	):
+	# Purpose: accept and process a user's submission
+	# Returns: nothing
+	# Modifies: adds a directory and files to the file system, writes to
+	#	stdout (to the user's browser)
+	# Assumes: nothing
+	# Throws: nothing
+
+	# build a text representation of the submission & validate the fields
+
+	text = buildText()
+	hadErrors = len(ERRANT_FIELDS) > 0
+
+	# if there were errors, then do not accept the submission; instead,
+	# give the user a new verification form with errors indicated
+
+	if hadErrors:
+		output.setBody(getVerifyForm(text))
+		print output.getFullDocument()
+		return
+
+	# no errors, so process submission as follows:
+	# 1. create a submission directory
+	# 2. save the submission fields as a text file
+	# 3. save any uploaded files
+	# 4. send a confirmation email to the user
+	# 5. send a confirmation page to the user's browser
+
+	try:
+		myDir = createDirectory()
+	except:
+		sendError(output, 'Could not create a directory for ' + \
+			'submission.  Please try again later.')
+
+	try:
+		saveText(myDir, text)
+	except:
+		sendError(output, 'Could not save your submission.  ' + \
+			'Please try again later.')
+
+	try:
+		saveUploadedFiles(myDir)
+	except:
+		sendError(output, 'Could not save some of your uploaded ' + \
+			'files.  An MGI representative will contact you ' + \
+			'with further details.')
+
+	# at this point, the submission has been successfully saved
+
+	items = [
+		'The following items have been successfully submitted:<P>',
+		'<PRE>%s</PRE>' % text,
+		]
+
+	try:
+		sendMail(text)
+	except:
+		items.append ('However, we were unable to send a ' + \
+			'confirmation email.  Please print this page as ' + \
+			'a record of your submission.')
+
+	output.setBody('\n'.join(items))
+	print output.getFullDocument() 
 	return
 
 def main():
-	# get cached values using cookie, if available
+	# Purpose: main program
+	# Returns: nothing
+	# Modifies: writes to stderr and stdout
+	# Assumes: nothing
+	# Throws: nothing
+
+	# get cached values using cookie from the user, if available, to
+	# pre-populate the contact info fields
 	loadCookie()
 
-	# get input parameters from form submission
+	# get input parameters from form submission, and update our Field
+	# objects
 	parms = cgi.FieldStorage()
 	updateFields(parms)
 
@@ -1075,7 +1855,7 @@ def main():
 	output.setHeaderBarMainText(myTitle)
 	output.setJavaScript(getJavascript())
 
-	# cache the user's address and refs info for near-future submissions
+	# cache the user's contact info for near-future submissions
 	setCookie()
 
 	if MY_COOKIE:
@@ -1094,7 +1874,7 @@ def main():
 	elif parms['cameFrom'].value == 'verify':
 		# came from verify form, need to process it and send
 		# confirmation
-		sendConfirmation(output)
+		acceptSubmission(output)
 
 	return
 
