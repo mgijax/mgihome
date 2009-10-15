@@ -502,6 +502,25 @@ class CheckableField (Field):
 			self.value = [ value ]
 		else:
 			self.value.append (value)
+
+		# convert any labels to their value equivalents
+
+		sys.stderr.write('%s\n' % str(self.value))
+
+		okValues = []
+		for sublist in self.items:
+		    for item in sublist:
+			itemValue = item[0]
+			itemLabel = item[1]
+
+			sys.stderr.write ('%s - %s\n' % (itemValue, itemLabel))
+			if itemValue in self.value:
+				okValues.append (itemValue)
+			elif itemLabel in self.value:
+				okValues.append (itemValue)
+
+		self.value = okValues
+
 		self.validate()
 		return
 
@@ -542,9 +561,9 @@ class CheckableField (Field):
 
 		er1 = 'You checked "%s" for %s, but did not specify a value.'
 		for item in self.items:
-			if len(self.items) == 3:
-				itemValue = self.items[0]
-				itemLabel = self.items[1]
+			if len(item) == 3:
+				itemValue = item[0]
+				itemLabel = item[1]
 
 				if itemValue in self.value:
 					if not self.otherValue:
