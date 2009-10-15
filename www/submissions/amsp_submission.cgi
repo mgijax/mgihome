@@ -599,7 +599,7 @@ def getAlleleSection():
 		'For transgenes, specify transgene promoter: ',
 		getField('promoter').getHTML(),
 		'<BR>',
-		'For targeted mutations of gene traps, specify ES cell line',
+		'For targeted mutations of gene traps, specify ES cell line ',
 		'used: ',
 		getField('esCellLine').getHTML(),
 		' <I>(<B>Example</B>: E14.1, JM8A3)</I><BR>',
@@ -734,7 +734,7 @@ def getPhenotypeSection():
 		'<FONT COLOR="red">*</FONT><BR>',
 		getField('allelePairs').getHTML(),
 		'(Find the correct allele symbol by <A HREF=',
-		'"%ssearches/allele_form.shtml">searching MGI</A>.)' % \
+		'"%ssearches/allele_form.shtml" TARGET="_new">searching MGI</A>.)' % \
 			config['WI_URL'],
 		'<P>',
 		'Additional allele information not currently in MGI (allele ',
@@ -750,7 +750,9 @@ def getPhenotypeSection():
 		getField('geneticBackground').getHTML(),
 		'<P>',
 		'Other Strain/Background Information (e.g. specify ',
-		'crosses): Click here for an <A HREF="foo" TARGET="_new">'
+		'crosses): Click here for an <A ',
+		'HREF="%snomen/alleleform_strainex.shtml" TARGET="_new">' % \
+			config['MGIHOME_URL'],
 		'example</A>.<BR>',
 		getField('crosses').getHTML(),
 		'<P><UL>',
@@ -764,7 +766,10 @@ def getPhenotypeSection():
 		'%s (enter text, describing details of ' % \
 			label ('phenoDescription', 'Phenotypic Description'),
 		'phenotypes observed, etc.): <FONT COLOR="red">*</FONT><BR>',
-		'Click here for an <A HREF="foo" TARGET="_new">example</A>.',
+		'Click here for an <A ',
+		'HREF="%snomen/alleleform_phenoex.shtml" TARGET="_new">' % \
+			config['MGIHOME_URL'],
+		'example</A>.',
 		' You may browse the <A HREF="%ssearches/MP_form.shtml" ' % \
 			config['WI_URL'],
 		'TARGET="_new">Mammalian Phenotype Ontology</A> and use ',
@@ -973,7 +978,7 @@ def getVerifyForm (
 	# then build it now
 
 	if not text:
-		text = buildText()
+		text = buildText(True)
 
 	# We need to change our messages (and format, to an extent) based on
 	# whether there were any validation errors or not
@@ -1437,6 +1442,7 @@ def doExtraValidation():
 	gene = getField('gene').getValue()
 	if gene:
 		if not isKnownGene(gene):
+			gene = cgi.escape(gene)
 			ERRANT_FIELDS['gene'] = True
 			errors.append ('Invalid gene symbol/ID: %s' % gene) 
 
@@ -1447,10 +1453,11 @@ def doExtraValidation():
 		unknowns = []
 		for gene in map(string.strip, genes.split('\n')):
 			if not isKnownGene(gene):
+				gene = cgi.escape(gene)
 				if gene not in unknowns:
 					unknowns.append(gene)
 		if unknowns:
-			SHOW_ALLELE = True
+			SHOW_STRAIN = True
 			ERRANT_FIELDS['genes'] = True
 			errors.append ('Invalid gene(s) for strain: %s' % \
 				', '.join (unknowns))
@@ -1463,8 +1470,8 @@ def doExtraValidation():
 		unknowns = []
 		for pair in pairs:
 			for allele in pair.split(','):
-				allele = allele.strip()
 				if not isKnownAllele(allele):
+					allele = cgi.escape(allele.strip())
 					if allele not in unknowns:
 						unknowns.append (allele)
 		if unknowns:
@@ -1475,7 +1482,7 @@ def doExtraValidation():
 
 	return errors
 
-def buildText():
+def buildText(escapeValues = False):
 	# Purpose: build a textual representation of the submitted fields
 	# Returns: string of pre-formatted text
 	# Modifies: alters globals listed in 'global' statement below
@@ -1506,7 +1513,11 @@ def buildText():
 			if field.getValue() or fieldErrors:
 				# handle escaping of < and > characters
 
-				prValue = cgi.escape(str(field.getValue()))
+				if escapeValues:
+					prValue = cgi.escape(str(
+						field.getValue()))
+				else:
+					prValue = str(field.getValue())
 
 				# if we have a multi-line field, then we need
 				# to add an initial line break to keep the
@@ -1777,7 +1788,7 @@ def acceptSubmission (
 
 	# build a text representation of the submission & validate the fields
 
-	text = buildText()
+	text = buildText(True)
 	hadErrors = len(ERRANT_FIELDS) > 0
 
 	# if there were errors, then do not accept the submission; instead,
@@ -1801,8 +1812,9 @@ def acceptSubmission (
 		sendError(output, 'Could not create a directory for ' + \
 			'submission.  Please try again later.')
 
+	unescapedText = buildText()
 	try:
-		saveText(myDir, text)
+		saveText(myDir, unescapedText)
 	except:
 		sendError(output, 'Could not save your submission.  ' + \
 			'Please try again later.')
@@ -1822,7 +1834,7 @@ def acceptSubmission (
 		]
 
 	try:
-		sendMail(text)
+		sendMail(unescapedText)
 	except:
 		items.append ('However, we were unable to send a ' + \
 			'confirmation email.  Please print this page as ' + \
@@ -1839,13 +1851,16 @@ def main():
 	# Assumes: nothing
 	# Throws: nothing
 
-	# get cached values using cookie from the user, if available, to
-	# pre-populate the contact info fields
-	loadCookie()
-
 	# get input parameters from form submission, and update our Field
 	# objects
 	parms = cgi.FieldStorage()
+
+	# get cached values using cookie from the user, if available, to
+	# pre-populate the contact info fields; however, only do this for an
+	# initial page request
+	if not parms.has_key('cameFrom'):
+		loadCookie()
+
 	updateFields(parms)
 
 	# initial setup of output page
