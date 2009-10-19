@@ -46,24 +46,18 @@ column.</p>
 
 <h4>Example 1:</h4>
 
-<p>Example data file:</p>
-
+Example data file:
 <table border=1 cellspacing=1 cellpadding=3 width="!">
  <tr><th valign="top">Blood Parameters</th><th valign="top">Age (months)</th><th valign="top">Sex</th><th valign="top">Atr1a&lt;+&gt;/ Atr1a&lt;+&gt;</th><th valign="top">Number of mice</th><th valign="top">Atr1a&lt;tm1Ecl&gt;/<br>Atr1a&lt;tm1Ecl&gt</th><th valign="top">Number of mice</th><th valign="top">p-value compared to wild-type</th></tr>
  <tr><td valign="top">Hematocrit (%)</td><td valign="top">6.5-9.0</td><td valign="top">combined</td><td valign="top">36.6 +/- 1.4</td><td valign="top">10</td><td valign="top">41.1 +/- 1/2</td><td align="justify">10</td><td valign="top">&lt;0.05</td></tr>
  <tr><td valign="top">RBC (10*6/<i>&micro;</i>l)</td><td valign="top">6.5-9.0</td><td valign="top">combined</td><td valign="top">7.6 +/- 0.2</td><td valign="top">10</td><td valign="top">8.9 +/- 0.3</td><td align="justify">10</td><td valign="top">&lt;0.01</td></tr>
-
-
-
- <tr><td valign="top"> Hemoglobin (g/dl)</td><td valign="top">6.5-9.0</td><td valign="top">combined</td><td valign="top">12.5 +/- 0.4</td><td valign="top">10</td><td valign="top">41.1 +/- 1/2</td><td align="justify">10</td><td valign="top">&lt;0.05</td></tr>
-
-
- <tr><td valign="top">Plasma proteins (g/l)</td><td valign="top">6.5-9.0</td><td valign="top">combined</td><td valign="top">37.9 +/- 1.7</td><td valign="top">8</td><td valign="top">38.7 +/- 2.4</td><td align="justify">7</td><td valign="top">NS</td></tr>
+ <tr><td valign="top"> Hemoglobin (g/dl)</td><td valign="top">6.5-9.0</td><td valign="top">combined</td><td valign="top">12.5 +/- 0.4</td><td valign="top">10</td><td valign="top">14.1 +/- 0.4</td><td align="justify">10</td><td valign="top">&lt;0.05</td></tr>
+ <tr><td valign="top"><nobr>Plasma proteins (g/l)</nobr></td><td valign="top">6.5-9.0</td><td valign="top">combined</td><td valign="top">37.9 +/- 1.7</td><td valign="top">8</td><td valign="top">38.7 +/- 2.4</td><td align="justify">7</td><td valign="top">NS</td></tr>
 </table>
 
 
-<p><u>Example accompanying description file</u></p>
-<p>Title: Blood parameters for Atr1a wild-type vs. homozygous mutant mice.<br>
+<p><u>Example accompanying description file:</u><br>
+Title: Blood parameters for Atr1a wild-type vs. homozygous mutant mice.<br>
 Publication: PMID: 17607364. Billet S et al., &quot;Gain-of-function mutant of angiotensin
 II receptor, type 1A, causes hypertension and cardiovascular fibrosis in
 mice.&quot; J Clin Invest 2007 Jul;117(7):1914-25.</p>
@@ -79,8 +73,8 @@ Coulter MAXM automatic analyzer. Values are expressed as mean count +/- SEM.</p>
 
 <p>Definitions for table column labels:<br>
 Blood Parameters: name of blood parameter with units of measure in parentheses.<br>
-Age: age given in months.<br>
-Sex: combined; values for males and females were not different, thus results were combined.<br>
+Age: age given in months<br>
+Sex: combined; values for males and females were not different, thus results were combined<br>
 Atr1a&lt;+&gt; / Atr1a&lt;+&gt;: Allele composition for animals that are wild-type for the Atr1a gene.<br>
 Number of mice: given for each assay<br>
 Atr1a&lt;tm1Ecl&gt; / Atr1a&lt;tm1Ecl&gt;: Allele composition for animals that are homozygous for the described knock-in p-value compared to wild-type: Indication of significance of the finding.</p>
@@ -91,8 +85,7 @@ high mean erythrocyte cell number<br>
 increased hemoglobin content</p>
 
 <h3>Example 2: Mutant data relative to control</h3>
-<p>Example data file:
-
+Example data file:
 <table border=1 cellspacing=2 cellpadding=3 width="99%">
  <tr><th valign="top">Genotype</th><th valign="top">Alleles</th><th valign="top">Sex</th><th valign="top">Procedure</th><th valign="top">Parameter</th><th valign="top">Term (MP)</th><th valign="top">Evidence</th></tr>
 
@@ -109,19 +102,20 @@ increased hemoglobin content</p>
 <td valign="top">Fbl3&lt;Gt(CB0226)Wtsi/ <br>Fbl3&lt;Gt(CB0226)Wtsi</td>
 <td valign="top">combined</td>
 <td valign="top">DEXA</td>
-<td valign="top">Touch Escape</td>
+<td valign="top">Bone Mineral Density (excluding skull)</td>
 <td valign="top">Decreased bone density (MP:0000063)</td>
 <td valign="top">inferred</td>
 </tr>
 </table>
-</p>
+
 
 <p><u>Example accompanying description file</u><br>
 
 Title: Mutant phenotypes seen in 129P2/OlaHsd-Fbl3&lt;Gt(CB0226)Wtsi&gt;/H homozygotes
 compared to baseline 129P2/OlaHsd strain.<br>
-Data from Harwell Phenotyping Screen deposited with Euophenome.<br>
-Standard operating procedures (SOPs) adopted by EUMODIC/EUMORPHIA were used. These experiments examined mice homozygous for a gene trap mutant allele in the <i>Fbl3</i> gene (Fbl3&lt;Gt(CB0225)Wtsi&gt;). Phenotypes were compared to littermate controls under conventional mouseroom conditions. Experimental protocols can be found linked from the Europhenome site for this allele, <a
+Publication: Unpublished. Data from Harwell Phenotyping Screen deposited with Euophenome.<br>
+Standard operating procedures (SOPs) adopted by EUMODIC/EUMORPHIA were used. These experiments examined mice homozygous for a gene trap mutant allele in the <i>Fbl3</i> gene (Fbl3&lt;Gt(CB0225)Wtsi&gt;). <br>
+Phenotypes were compared to littermate controls under conventional mouseroom conditions. Experimental protocols can be found linked from the Europhenome site for this allele, <a
 href="http://www.europhenome.org/databrowser/lineSummary.jsp?l=125">http://www.europhenome.org/databrowser/lineSummary.jsp?l=125</a>. MP terms describing this phenotype were <b>automatically</b> generated (Evidence = inferred) and have not been scientifically reviewed. Automatic annotations are made when experimental parameters are significantly
 different by programmatic analysis, but have not yet been reviewed by
 scientific contributors or curation experts.</p>
