@@ -248,7 +248,7 @@ ALL_FIELDS = {}
 # pre-fill the page for future submissions
 CACHE_FIELDS = [ 'lastName', 'firstName', 'email', 'email2', 'labPI',
 	'institute', 'street', 'city', 'state', 'zip', 'country', 'phone',
-	'fax', 'isPublished', 'makePublicNow', 'references', 'url' ]
+	'fax' ]
 
 # list of strings, each of which is an error message found during verification
 ERRORS = []
