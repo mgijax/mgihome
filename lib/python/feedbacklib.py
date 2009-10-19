@@ -282,6 +282,9 @@ class OneLineTextField (Field):
 	#		box for text input
 	#	HAS: see Field
 	#	DOES: see Field
+	#	Notes: We only added a 'tabIndex' for this subclass, because
+	#		that is the immediate need.  In theory, it could be
+	#		useful for any subclass of Field.
 
 	def __init__ (self,
 		fieldname,		# string; name of the field (internal)
@@ -289,7 +292,8 @@ class OneLineTextField (Field):
 		required = OPTIONAL,	# is the field OPTIONAL or REQUIRED?
 		value = None,		# string; initial value for the field
 		width = None,		# integer; width of displayed box
-		maxSize = None		# integer; max number of chars allowed
+		maxSize = None,		# integer; max number of chars allowed
+		tabIndex = None		# integer; for setting tab order
 		):
 		# Purpose: constructor
 		# Returns: nothing
@@ -302,6 +306,7 @@ class OneLineTextField (Field):
 		Field.__init__ (self, fieldname, label, required, value)
 		self.width = width
 		self.maxSize = maxSize
+		self.tabIndex = tabIndex
 		return
 
 	def getHTML (self):
@@ -320,6 +325,9 @@ class OneLineTextField (Field):
 			s = s + ' MAXLENGTH=%s' % self.maxSize
 		if self.value:
 			s = s + ' VALUE="%s"' % self.value
+		if self.tabIndex != None:
+			s = s + ' TABINDEX=%s' % self.tabIndex
+
 		return '<%s>' % s
 
 class MultiLineTextField (Field):
@@ -454,7 +462,8 @@ class CheckableField (Field):
 			    itemValue = item[0]
 			    itemLabel = item[1]
 
-			    if ((self.value) and (itemValue in self.value)) \
+			    if ((self.value != None) and \
+				(itemValue in self.value)) \
 				or (len(item) == 3  and self.otherValue):
 				    isChecked = ' CHECKED'
 			    else:
@@ -505,15 +514,12 @@ class CheckableField (Field):
 
 		# convert any labels to their value equivalents
 
-		sys.stderr.write('%s\n' % str(self.value))
-
 		okValues = []
 		for sublist in self.items:
 		    for item in sublist:
 			itemValue = item[0]
 			itemLabel = item[1]
 
-			sys.stderr.write ('%s - %s\n' % (itemValue, itemLabel))
 			if itemValue in self.value:
 				okValues.append (itemValue)
 			elif itemLabel in self.value:

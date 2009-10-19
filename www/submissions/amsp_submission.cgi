@@ -34,6 +34,11 @@ import homelib
 # standard exception raised within this script
 error = 'Exception'
 
+# email address to receive notice of completed submission
+SUBMISSIONS = 'submissions@informatics.jax.org'
+if config.has_key('CGI_MAILTARGET'):
+	SUBMISSIONS = config['CGI_MAILTARGET']
+
 # cookie data for preserving user's contact info across multiple submissions
 MY_COOKIE = Cookie.SimpleCookie()
 
@@ -68,23 +73,31 @@ SHOW_PHENOTYPE = False
 # fields for the contact information section
 CONTACT_FIELDS = [
 	feedbacklib.OneLineTextField ('lastName', 'Last Name', REQUIRED,
-		width = 40),
+		width = 40, tabIndex = 1),
 	feedbacklib.OneLineTextField ('firstName', 'First Name', REQUIRED,
-		width = 40),
+		width = 40, tabIndex = 2),
 	feedbacklib.OneLineTextField ('email', 'Email Address', REQUIRED,
-		width = 40),
+		width = 40, tabIndex = 3),
 	feedbacklib.OneLineTextField ('email2', 'Email Address (repeat)',
-		REQUIRED, width = 40),
-	feedbacklib.OneLineTextField ('labPI', 'Laboratory PI', width = 40),
+		REQUIRED, width = 40, tabIndex = 4),
+	feedbacklib.OneLineTextField ('labPI', 'Laboratory PI', width = 40,
+		tabIndex = 5),
 	feedbacklib.OneLineTextField ('institute', 'Institute/Organization',
-		width = 40),
-	feedbacklib.OneLineTextField ('street', 'Street Address', width = 40),
-	feedbacklib.OneLineTextField ('city', 'City', width = 40),
-	feedbacklib.OneLineTextField ('state', 'State/Province', width = 40),
-	feedbacklib.OneLineTextField ('zip', 'Postal Code', width = 40),
-	feedbacklib.OneLineTextField ('country', 'Country', width = 40),
-	feedbacklib.OneLineTextField ('phone', 'Telephone', width = 40),
-	feedbacklib.OneLineTextField ('fax', 'Fax', width = 40),
+		width = 40, tabIndex = 6),
+	feedbacklib.OneLineTextField ('street', 'Street Address', width = 40,
+		tabIndex = 7),
+	feedbacklib.OneLineTextField ('city', 'City', width = 40,
+		tabIndex = 8),
+	feedbacklib.OneLineTextField ('state', 'State/Province', width = 40,
+		tabIndex = 9),
+	feedbacklib.OneLineTextField ('zip', 'Postal Code', width = 40,
+		tabIndex = 10),
+	feedbacklib.OneLineTextField ('country', 'Country', width = 40,
+		tabIndex = 11),
+	feedbacklib.OneLineTextField ('phone', 'Telephone', width = 40,
+		tabIndex = 12),
+	feedbacklib.OneLineTextField ('fax', 'Fax', width = 40,
+		tabIndex = 13),
 ]
 
 # fields for the reference/citation section
@@ -134,12 +147,14 @@ ALLELE_FIELDS = [
 	feedbacklib.OneLineTextField ('mutantEsCellLine',
 		'Mutant ES cell line', width = 35),
 	feedbacklib.RadioButtonGroup ('inheritance', 'Inheritance',
+		value = [ '' ],
 		items = [ [ ('dominant', 'dominant'),
 			('codominant', 'codominant'),
 			('semidominant', 'semidominant'),
 			('recessive', 'recessive'),
 			('X-linked', 'X-linked'),
-			('other', 'other (specify)', 30) ] ] ),
+			('other', 'other (specify)', 30),
+			('', 'unknown/not applicable') ] ] ),
 	feedbacklib.OneLineTextField ('strainBackground', 'Strain background',
 		width = 35),
 	feedbacklib.MultiLineTextField ('location',
@@ -234,6 +249,9 @@ ALL_FIELDS = {}
 CACHE_FIELDS = [ 'lastName', 'firstName', 'email', 'email2', 'labPI',
 	'institute', 'street', 'city', 'state', 'zip', 'country', 'phone',
 	'fax', 'isPublished', 'makePublicNow', 'references', 'url' ]
+
+# list of strings, each of which is an error message found during verification
+ERRORS = []
 
 ###-----------------###
 ###--- functions ---###
@@ -599,7 +617,7 @@ def getAlleleSection():
 		'For transgenes, specify transgene promoter: ',
 		getField('promoter').getHTML(),
 		'<BR>',
-		'For targeted mutations of gene traps, specify ES cell line ',
+		'For targeted mutations or gene traps, specify ES cell line ',
 		'used: ',
 		getField('esCellLine').getHTML(),
 		' <I>(<B>Example</B>: E14.1, JM8A3)</I><BR>',
@@ -686,7 +704,7 @@ def getStrainSection():
 		'<UL><LI>For hints on strain nomenclature, see ',
 		'<A HREF="%snomen/strains.shtml" ' % config['MGIHOME_URL'],
 		'TARGET="_new">',
-		'Quick Guide to Nomenclature for Alleles and Mutations</A>.',
+		'Guidelines for Nomenclature of Mouse and Rat Strains</A>.',
 		'</LI><LI><A ',
 		'HREF="http://dels.nas.edu/ilar_n/ilarhome/labcode.shtml" ',
 		'TARGET="_new">',
@@ -812,7 +830,7 @@ def getFileUploadSection():
 		'Upload your data files (images, text descriptions, Excel, ',
 		'or text data):<BR>',
 		'File 1: <INPUT NAME="file1" TYPE="file">',
-		'<INPUT TYPE="button" onClick="addFile()" NAME="addFileButton" VALUE="Allow more files">',
+		'<INPUT TYPE="button" onClick="addFile()" NAME="addFileButton" VALUE="Submit more files">',
 		'<P>',
 		'<SPAN ID="f2" STYLE="display: none;">File 2: <INPUT NAME="file2" TYPE="file"><P></SPAN>',
 		'<SPAN ID="f3" STYLE="display: none;">File 3: <INPUT NAME="file3" TYPE="file"><P></SPAN>',
@@ -823,7 +841,7 @@ def getFileUploadSection():
 		'<SPAN ID="f8" STYLE="display: none;">File 8: <INPUT NAME="file8" TYPE="file"><P></SPAN>',
 		'<SPAN ID="f9" STYLE="display: none;">File 9: <INPUT NAME="file9" TYPE="file"><P></SPAN>',
 		'<SPAN ID="f10" STYLE="display: none;">File 10: <INPUT NAME="file10" TYPE="file"> (limit is 10 files)<P></SPAN>',
-		'See examples and templates for file submissions.',
+		'See <A HREF="%ssubmissions/amsp_submission_examples.shtml" TARGET="_new">examples and templates</A> for file submissions.' % config['MGIHOME_URL'],
 		]
 	return ''.join(items)
 
@@ -932,7 +950,7 @@ def getResetSpan():
 		'<SPAN ID="confirmReset" STYLE="display:none;">',
 		'Are you sure you want to reset all values on the page?',
 		'''<INPUT TYPE="button" VALUE="No, skip it" NAME="resetSkipped" onClick="toggle('confirmReset');">''',
-		'''<INPUT TYPE="reset" VALUE="Yes, reset the page" NAME="resetConfirmed" onClick="toggle('confirmReset');">''',
+		'''<INPUT TYPE="button" VALUE="Yes, reset the page" NAME="resetConfirmed" onClick='window.location.href="%ssubmissions/amsp_submission.cgi?blank=1"'>''' % config['MGIHOME_URL'],
 		'</SPAN>',
 		]
 	return '\n'.join(items)
@@ -952,8 +970,9 @@ def getInitialForm():
 		'<FORM ACTION="%ssubmissions/amsp_submission.cgi" METHOD="POST">' % config['MGIHOME_URL'],
 		getMainForm(),
 		'<P>',
-		'<B>Use the buttons below to preview your submission ',
-		'or reset the entire form.<BR>Thank you!</B><P>',
+		'<B>Use the buttons below to verify your data before ',
+		'submission or to reset the entire form.<BR>Thank ',
+		'you!</B><P>',
 		'<INPUT VALUE="Verify" TYPE="submit">&nbsp;',
 
 		# the reset button has a confirmation step
@@ -974,6 +993,8 @@ def getVerifyForm (
 	# Assumes: nothing
 	# Throws: nothing
 
+	global SHOW_ALLELE, SHOW_PHENOTYPE, SHOW_STRAIN
+
 	# if we were not given a textual representation (with validation done)
 	# then build it now
 
@@ -991,15 +1012,27 @@ def getVerifyForm (
 		]
 		
 	if hadErrors:
+		if len(ERRORS) > 1:
+			s1 = 'There are %d errors which ' % len(ERRORS)
+			s2 = 'need to be fixed; the error messages are '
+			s3 = 'items'
+		else:
+			s1 = 'There is 1 error which needs to be fixed; the '
+			s2 = 'error message is '
+			s3 = 'item'
+
 		items = items + [
-			'Errors have been flagged with an asterisk (*) ',
-			'in the text summary, and their respective fields ',
-			'are highlighted in yellow ',
-			'in the submission form.  Please correct flagged ',
-			'items and click the Verify button at the bottom of ',
+			s1, s2, 
+			'listed below under <B>Verification Errors</B>. ',
+			'Fields with errors are highlighted in yellow ',
+			'in the submission form below.  Please correct the ',
+			'indicated %s ' % s3,
+			'and click the Verify button at the bottom of ',
 			'the page.',
 			]
-		preForm = ''		# no wrapper around form
+		# no wrapper around form, but show errors
+		preForm = '<H3>Verification Errors</H3><UL><LI>%s</LI></UL>' \
+			% '</LI><LI>'.join(ERRORS)
 		postForm = ''
 	else:
 		items = items + [
@@ -1010,6 +1043,17 @@ def getVerifyForm (
 			'your submission, and click the Submit button.'
 			]
 
+		# we want to show any sections filled in by the user, so if
+		# they choose to show their form, they'll see what they filled
+		# in
+
+		if anySubmitted(ALLELE_FIELDS):
+			SHOW_ALLELE = True
+		if anySubmitted(STRAIN_FIELDS):
+			SHOW_STRAIN = True
+		if anySubmitted(PHENOTYPE_FIELDS):
+			SHOW_PHENOTYPE = True
+
 		# we provide a wrapper around the form, so that we can hide it
 		# by default when there are no validation errors
 
@@ -1017,8 +1061,8 @@ def getVerifyForm (
 			'<TABLE BORDER="0" CELLPADDING="0" CELLSPACING="0" ',
 			'WIDTH="100%"><TR><TD BGCOLOR="#d0e2f3">',
 			'''<B><A HREF="" onClick="toggle('mainForm'); return false;">''',
-			'Submission Form</A></B>&nbsp;&nbsp;Open or close ',
-			'your submission form',
+			'Edit Your Submission</A></B>&nbsp;&nbsp;Open or ',
+			'close your submission form',
 			'</TD></TR></TABLE>',
 			'<SPAN ID="mainForm" STYLE="display:none;">',
 			])
@@ -1037,8 +1081,9 @@ def getVerifyForm (
 		# with errors, we need to come back to the verification step
 
 		items = items + [
-			'<B>Use the buttons below to preview your submission ',
-			'or reset the entire form.<BR>Thank you!</B><P>',
+			'<B>Use the buttons below to verify your data before ',
+			'submission or to reset the entire form.<BR>Thank ',
+			'you!</B><P>',
 			'<INPUT VALUE="Verify" TYPE="submit">&nbsp;',
 			'''<INPUT VALUE="Reset" TYPE="button" onClick="toggle('confirmReset');">''',
 			getResetSpan(),
@@ -1289,6 +1334,26 @@ def updateFields (
 				'contents' : contents } )
 	return
 
+def anySubmitted (
+	allFields 		# list of strings; all fieldnames in section
+	):
+	# Purpose: determine if a value was submitted for any of 'allFields'
+	# Returns: boolean; True if any submitted, False if not
+	# Modifies: nothing
+	# Assumes: nothing
+	# Throws: nothing
+
+	# special handling for inheritance field with unknown default
+	inheritance = getField('inheritance')
+
+	for field in allFields:
+		if field.getValue():
+			if field != inheritance:
+				return True
+			if not field.getValue().startswith('unknown'):
+				return True
+	return False
+
 def checkSection (
 	allFields, 		# list of strings; all fieldnames in section
 	requiredFieldnames, 	# list of strings; required fieldnames in sec.
@@ -1313,7 +1378,7 @@ def checkSection (
 
 	errors = []			# list of error strings
 
-	if foundAny:
+	if anySubmitted(allFields):
 		for fieldname in requiredFieldnames:
 			if not getField(fieldname).getValue():
 				errors.append ('If you enter any field in the %s section, you must enter a value for %s' % (
@@ -1385,6 +1450,7 @@ def doExtraValidation():
 	# Throws: nothing
 
 	global ERRANT_FIELDS, SHOW_ALLELE, SHOW_PHENOTYPE, SHOW_STRAIN
+	global KNOWN_ALLELES
 
 	errors = []
 
@@ -1462,16 +1528,29 @@ def doExtraValidation():
 			errors.append ('Invalid gene(s) for strain: %s' % \
 				', '.join (unknowns))
 
-	# verify allele symbols from allele pairs
+	# verify allele symbols from allele pairs, allowing either official
+	# nomenclature (from the database) and/or the user's new suggested
+	# allele symbol
 
-	allelePairs = getField('allelePairs').getValue()
+	# trim the submitted allele down to just its symbol by splitting
+	# repeatedly on spaces and commas
+	submittedAllele = getField('alleleSymbol').getValue()
+	while (' ' in submittedAllele) or (',' in submittedAllele):
+		submittedAllele = submittedAllele.split(' ')[0]
+		submittedAllele = submittedAllele.split(',')[0]
+
+	if submittedAllele:
+		KNOWN_ALLELES[submittedAllele] = True
+
+	allelePairs = getField('allelePairs').getValue().strip()
 	if allelePairs:
 		pairs = allelePairs.split('\n')
 		unknowns = []
 		for pair in pairs:
 			for allele in pair.split(','):
+				allele = allele.strip()
 				if not isKnownAllele(allele):
-					allele = cgi.escape(allele.strip())
+					allele = cgi.escape(allele)
 					if allele not in unknowns:
 						unknowns.append (allele)
 		if unknowns:
@@ -1489,7 +1568,7 @@ def buildText(escapeValues = False):
 	# Assumes: nothing
 	# Throws: nothing
 
-	global SHOW_ALLELE, SHOW_PHENOTYPE, SHOW_STRAIN, ERRANT_FIELDS
+	global SHOW_ALLELE, SHOW_PHENOTYPE, SHOW_STRAIN, ERRANT_FIELDS, ERRORS
 
 	# list of sections with Field objects
 	sections = [ CONTACT_FIELDS, CITING_FIELDS, ALLELE_FIELDS,
@@ -1507,10 +1586,10 @@ def buildText(escapeValues = False):
 			field.validate()
 			fieldErrors = field.getErrors()
 
-			# if we have either a value or an error, we'll need to
+			# if we have a value, we'll need to
 			# add to our output 'lines'
 
-			if field.getValue() or fieldErrors:
+			if field.getValue():
 				# handle escaping of < and > characters
 
 				if escapeValues:
@@ -1529,28 +1608,25 @@ def buildText(escapeValues = False):
 				lines.append ('%s : %s' % (field.getLabel(),
 					prValue))
 
-				# if there were error messages, add them and
-				# flag the field
-
-				if fieldErrors:
-					lines[-1] = lines[-1] + ' *'
-					for error in fieldErrors:
-						lines.append ('  * ' + error)
-					ERRANT_FIELDS[field.getFieldname()] =\
-						True
-				
-					# errors in certain sections require
-					# that we automatically show them
-					# rather than having them hidden
-
-					if section == ALLELE_FIELDS:
-						SHOW_ALLELE = True
-					elif section == STRAIN_FIELDS:
-						SHOW_STRAIN = True
-					elif section == PHENOTYPE_FIELDS:
-						SHOW_PHENOTYPE = True
-
 				hadOne = True
+
+			# if there were error messages, add them and
+			# flag the field
+
+			if fieldErrors:
+				ERRORS = ERRORS + fieldErrors
+				ERRANT_FIELDS[field.getFieldname()] = True
+				
+				# errors in certain sections require
+				# that we automatically show them
+				# rather than having them hidden
+
+				if section == ALLELE_FIELDS:
+					SHOW_ALLELE = True
+				elif section == STRAIN_FIELDS:
+					SHOW_STRAIN = True
+				elif section == PHENOTYPE_FIELDS:
+					SHOW_PHENOTYPE = True
 
 		# if we had a line in this section, then we need to add a
 		# divider line
@@ -1574,8 +1650,8 @@ def buildText(escapeValues = False):
 		# submission forms that come later.
 
 		if ERRANT_FIELDS:
-			lines.append ('  * Uploaded files were not saved, ' \
-					+ 'due to validation errors')
+			ERRORS.append ('Uploaded files were not saved, ' \
+					+ 'due to verification errors')
 		else:
 			for file in UPLOADED_FILES:
 				lines.append ('Uploaded file: %s (%d bytes)' \
@@ -1585,9 +1661,7 @@ def buildText(escapeValues = False):
 	# If we discovered more validation errors, show them below the
 	# uploaded file section.
 	if moreErrors:
-		lines.append ('More Validation Errors')
-		for error in moreErrors:
-			lines.append ('  * ' + error)
+		ERRORS = ERRORS + moreErrors
 
 	return '\n'.join(lines)
 
@@ -1739,7 +1813,10 @@ def sendError (
 	sys.exit(0)
 
 def sendMail (
-	text		# string; text of the submission form fields
+	text,		# string; text of the submission form fields
+	fromAddr,	# string; sending email address
+	toAddr,		# string; destination email address
+	subject		# string; subject of email message
 	):
 	# Purpose: send a confirmation email to the user, containing the
 	#	'text' of his/her submission
@@ -1751,9 +1828,9 @@ def sendMail (
 
 	# message contents
 	items = [
-		'From: mgi-help@informatics.jax.org',
-		'To: %s' % getField('email').getValue(),
-		'Subject: Confirmation of your form submission',
+		'From: %s' % fromAddr,
+		'To: %s' % toAddr,
+		'Subject: %s' % subject,
 		'',
 		text,
 		''
@@ -1834,11 +1911,22 @@ def acceptSubmission (
 		]
 
 	try:
-		sendMail(unescapedText)
+		sendMail(unescapedText, 'submissions@informatics.jax.org',
+			getField('email').getValue(),
+			'Confirmation of your form submission')
 	except:
 		items.append ('However, we were unable to send a ' + \
 			'confirmation email.  Please print this page as ' + \
 			'a record of your submission.')
+
+	try:
+		unescapedText = unescapedText + \
+			'\n\nSubmission Directory: %s' % myDir + '\n'
+		sendMail(unescapedText, getField('email').getValue(),
+			SUBMISSIONS,
+			'Received AMSP form submission')
+	except:
+		log ('Failed to send notification email to %s' % SUBMISSIONS)
 
 	output.setBody('\n'.join(items))
 	print output.getFullDocument() 
@@ -1858,7 +1946,7 @@ def main():
 	# get cached values using cookie from the user, if available, to
 	# pre-populate the contact info fields; however, only do this for an
 	# initial page request
-	if not parms.has_key('cameFrom'):
+	if not parms.has_key('cameFrom') and not parms.has_key('blank'):
 		loadCookie()
 
 	updateFields(parms)
