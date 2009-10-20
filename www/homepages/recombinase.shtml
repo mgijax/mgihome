@@ -61,7 +61,7 @@
 								<input type="hidden" name="page" value="creSummary">
 								<label onmouseout="nd();" onMouseOver="return overlib('Anatomical system containing the structure or tissue term from the Mouse Anatomical Dictionary in which recombinase activity occurs. See the <a href=\'<!--#include file="include/wi_url2.html"-->searches/anatdict_form.shtml\'>Mouse Anatomical Dictionary</a> to find the terms MGI uses. (NOTE: links from the Mouse Anatomical Dictionary do not lead back to these pages.)', ANCHOR, 'GetSystem', ANCHORALIGN, 0, 0.5, 0, 0.5, WIDTH, 250, DELAY, 900, STICKY, CAPTION, 'Expressing activity in', CLOSECLICK, CLOSETEXT, 'Close X');">
 								    <strong style="color:#002255; border-bottom:dotted thin #555555; cursor:help;">Recombinase specificity in:</strong>&nbsp;</label>
-								<select name="systemKey">
+								<select name="systemKey" id="creSystemSelect">
 									<option selected value="" name="default"  onMouseOver="return overlib('Tissues in all anatomical systems of the developing embryo and postnatal adult.', ANCHOR, 'GetSystem', ANCHORALIGN, 0, 0.5, 0, 0.5, WIDTH, 250, DELAY, 900, STICKY, CAPTION, 'Anatomical System', CLOSECLICK, CLOSETEXT, 'Close X');" onmouseout="nd();">(choose one) </option>
 									<option value="4856340"  onMouseOver="return overlib('Adipose system tissues in the developing embryo and postnatal adult from approximately E4.5 to postnatal adult.', ANCHOR, 'GetSystem', ANCHORALIGN, 0, 0.5, 0, 0.5, WIDTH, 250, DELAY, 900, STICKY, CAPTION, 'Anatomical System', CLOSECLICK, CLOSETEXT, 'Close X');" onmouseout="nd();">adipose tissue</option>
 									<option value="4856341" onmouseover="return overlib('Alimentary system tissues in the developing embryo and postnatal adult from approximately E4.5 to postnatal adult.', ANCHOR, 'GetSystem', ANCHORALIGN, 0, 0.5, 0, 0.5, WIDTH, 250, DELAY, 900, STICKY, CAPTION, 'Anatomical System', CLOSECLICK, CLOSETEXT, 'Close X');" onmouseout="nd();">alimentary system</option>
@@ -88,7 +88,7 @@
 									<option value="4856346" onmouseover="return overlib('All structures in the developing embryo from approximately E4.5 to E18 not included in other major Anatomical Sytems.', ANCHOR, 'GetSystem', ANCHORALIGN, 0, 0.5, 0, 0.5, WIDTH, 250, DELAY, 900, STICKY, CAPTION, 'Anatomical System', CLOSECLICK, CLOSETEXT, 'Close X');" onmouseout="nd();">embryo-other</option>
 									<option value="4856357" onmouseover="return overlib('All structures in the postnatal adult not included in other major Anatomical Systems.', ANCHOR, 'GetSystem', ANCHORALIGN, 0, 0.5, 0, 0.5, WIDTH, 250, DELAY, 900, STICKY, CAPTION, 'Anatomical System', CLOSECLICK, CLOSETEXT, 'Close X');" onmouseout="nd();">postnatal-other</option>
 								</select>
-								<input name="submit2" class="searchToolButton" type="submit" value="Go">
+								<input name="submit2" class="searchToolButton" type="submit" value="Go" id="creSystem">
 								<span id="GetSystem">&nbsp;</span>
 							</form>
 						
@@ -106,11 +106,11 @@
 	                    <form action="<!--#include file='include/java_url.html'-->WIFetch?" method="get">
 	                        <input type="hidden" name="page" value="creSummary">
 	                            <label onmouseover="return overlib('Allele, gene, fusion product, or genetic construct driving recombinase activity.',ANCHOR, 'GetDriver', ANCHORALIGN, 0, 0.5, 0, 0.5, WIDTH, 250, DELAY, 900, STICKY, CAPTION, 'Driven by', CLOSECLICK, CLOSETEXT, 'Close X');" onmouseout="nd();"><strong style="color:#002255; border-bottom:dotted thin #555555; cursor:help;">Recombinase driven by:</strong>&nbsp;</label>
-	                            <select name="driver">
+	                            <select name="driver" id="creDriverSelect">
 	                                <!--#include file='include/driver_list.html'-->
 	                            </select>
 	
-							<input name="submit" class="searchToolButton" type="submit" value="Go">
+							<input name="submit" class="searchToolButton" type="submit" value="Go" id="creDriver">
 							<span id="GetDriver">&nbsp;</span>
 						</form>
 	                    </div>
@@ -253,6 +253,28 @@
     gxd_box.setpersist(true)
     gxd_box.setselectedClassTarget("linkparent") //"link" or "linkparent"
     gxd_box.init()
+</script>
+
+<script type="text/javascript">
+	var validateSystem = function (e) {
+        var systemSelect = YAHOO.util.Dom.get("creSystemSelect").value
+        if (systemSelect == ''){
+            YAHOO.util.Event.preventDefault(e);
+            alert('Please choose an Anatomical System before clicking \'Go\'.');
+        }       
+	};
+	
+	var validateDriver = function (e) {
+        var driverSelect = document.getElementById("creDriverSelect").value
+        if (driverSelect == ''){
+            YAHOO.util.Event.preventDefault(e);
+            alert('Please choose a Driver before clicking \'Go\'.');
+        }       
+    };
+
+    YAHOO.util.Event.addListener("creSystem", "click", validateSystem);
+    YAHOO.util.Event.addListener("creDriver", "click", validateDriver);
+    
 </script>
 
 <!--#include file='include/templateBodyStop.html'-->
