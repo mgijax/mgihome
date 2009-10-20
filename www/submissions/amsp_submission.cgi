@@ -55,8 +55,8 @@ COOKIE_ID = None
 # dictionary of fieldnames which had validation errors
 ERRANT_FIELDS = {}
 
-# list of dictionaries, one per file; each entry has keys 'filename'
-# and 'contents'
+# list of dictionaries, one per file; each entry has keys 'filename',
+# 'length', and 'contents'
 UPLOADED_FILES = []
 
 # should we show the allele submission section by default?
@@ -67,6 +67,9 @@ SHOW_STRAIN = False
 
 # should we show the phenotype submission section by default?
 SHOW_PHENOTYPE = False
+
+# should we show the file upload section by default?
+SHOW_FILES = False
 
 ###--- groups of Field objects, one per form section ---###
 
@@ -252,6 +255,9 @@ CACHE_FIELDS = [ 'lastName', 'firstName', 'email', 'email2', 'labPI',
 
 # list of strings, each of which is an error message found during verification
 ERRORS = []
+
+# string; subdirectory name for submission
+SUBMISSION_SUBDIR = None
 
 ###-----------------###
 ###--- functions ---###
@@ -806,12 +812,35 @@ def getPhenotypeSection():
 		]
 	return ''.join(items)
 
+def getFileReportingSection():
+	# Purpose: provide a textual report of files already uploaded
+	# Returns: string of HTML
+	# Modifies: nothing
+	# Assumes: global UPLOADED_FILES is non-empty
+	# Throws: nothing
+
+	items = [ sectionTitle('File submissions', False),
+		'The following files were received and have been saved as ',
+		'part of your submission:',
+		'<UL>',
+		]
+	for dict in UPLOADED_FILES:
+		items.append ('<LI>%s (%d bytes)</LI>' % (dict['filename'],
+			dict['length']))
+	items.append ('</UL>')
+	return '\n'.join(items)
+
 def getFileUploadSection():
 	# Purpose: get the HTML necessary for the 'File submissions' section
 	# Returns: string of HTML
 	# Modifies: nothing
 	# Assumes: nothing
 	# Throws: nothing
+
+	# if we already received files, then we should just report on them
+
+	if UPLOADED_FILES:
+		return getFileReportingSection()
 
 	# Fields are left-aligned (no table structure); we initially show
 	# only one file submission field, but can accommodate up to ten.
@@ -927,6 +956,17 @@ def getMainForm():
 			hiddenStyle(SHOW_PHENOTYPE),
 		getPhenotypeSection(),
 		'</TD></TR>',
+		'<TR><TD ALIGN="left" BGCOLOR="#d0e2f3">',
+		'&nbsp;&nbsp;&nbsp;&nbsp;<B><A HREF="" ',
+		'''onClick="toggle('fileSection'); return false;">''',
+		'File Submissions</A></B>&nbsp;&nbsp;',
+		'Submit data files (e.g. images, text files, Excel, or ',
+		'bulk data)',
+		'</TD></TR>',
+		'<TR ID="fileSection"%s><TD>' % \
+			hiddenStyle(SHOW_FILES),
+		getFileUploadSection(),
+		'</TD></TR>',
 		'<TR ID="commentsSection"><TD>',
 		'<HR>',
 		getCommentsSection(),
@@ -993,7 +1033,7 @@ def getVerifyForm (
 	# Assumes: nothing
 	# Throws: nothing
 
-	global SHOW_ALLELE, SHOW_PHENOTYPE, SHOW_STRAIN
+	global SHOW_ALLELE, SHOW_PHENOTYPE, SHOW_STRAIN, SHOW_FILES
 
 	# if we were not given a textual representation (with validation done)
 	# then build it now
@@ -1039,8 +1079,8 @@ def getVerifyForm (
 			'No errors were detected in your submission.  If ',
 			'you would like to make any changes, you may open ',
 			'the submission form below.  When finished, you may ',
-			'go to the bottom, select any files to upload with ',
-			'your submission, and click the Submit button.'
+			'go to the bottom and click the Submit button to ',
+			'complete your submission.'
 			]
 
 		# we want to show any sections filled in by the user, so if
@@ -1053,6 +1093,8 @@ def getVerifyForm (
 			SHOW_STRAIN = True
 		if anySubmitted(PHENOTYPE_FIELDS):
 			SHOW_PHENOTYPE = True
+		if UPLOADED_FILES:
+			SHOW_FILES = True
 
 		# we provide a wrapper around the form, so that we can hide it
 		# by default when there are no validation errors
@@ -1077,6 +1119,11 @@ def getVerifyForm (
 		'<P>',
 		]
 
+	if SUBMISSION_SUBDIR:
+		items.append (
+			'<INPUT TYPE="hidden" NAME="submission" VALUE="%s">' \
+			% SUBMISSION_SUBDIR)
+
 	if hadErrors:
 		# with errors, we need to come back to the verification step
 
@@ -1095,8 +1142,6 @@ def getVerifyForm (
 
 		items = items + [
 			'<HR>',
-			getFileUploadSection(),
-			'<P>',
 			'<B>Use the button below to send your submission. ',
 			'<BR>Thank you!</B><P>',
 			'<INPUT TYPE="hidden" NAME="cameFrom" VALUE="verify">',
@@ -1321,7 +1366,7 @@ def updateFields (
 		field.set(dict)
 
 	# build a list of dictionaries, one per uploaded data file; each dict
-	# will have two keys:  filename and contents
+	# will have three keys:  filename, length, and contents
 
 	for i in range(1,11):
 		key = 'file' + str(i)
@@ -1331,6 +1376,7 @@ def updateFields (
 
 			UPLOADED_FILES.append ( {
 				'filename' : filename,
+				'length' : len(contents),
 				'contents' : contents } )
 	return
 
@@ -1535,14 +1581,17 @@ def doExtraValidation():
 	# trim the submitted allele down to just its symbol by splitting
 	# repeatedly on spaces and commas
 	submittedAllele = getField('alleleSymbol').getValue()
-	while (' ' in submittedAllele) or (',' in submittedAllele):
-		submittedAllele = submittedAllele.split(' ')[0]
-		submittedAllele = submittedAllele.split(',')[0]
-
 	if submittedAllele:
-		KNOWN_ALLELES[submittedAllele] = True
+		while (' ' in submittedAllele) or (',' in submittedAllele):
+			submittedAllele = submittedAllele.split(' ')[0]
+			submittedAllele = submittedAllele.split(',')[0]
 
-	allelePairs = getField('allelePairs').getValue().strip()
+		if submittedAllele:
+			KNOWN_ALLELES[submittedAllele] = True
+
+	allelePairs = getField('allelePairs').getValue()
+	if allelePairs:
+		allelePairs = allelePairs.strip()
 	if allelePairs:
 		pairs = allelePairs.split('\n')
 		unknowns = []
@@ -1654,9 +1703,9 @@ def buildText(escapeValues = False):
 					+ 'due to verification errors')
 		else:
 			for file in UPLOADED_FILES:
-				lines.append ('Uploaded file: %s (%d bytes)' \
+				lines.append ('Uploaded file: %s (%s bytes)' \
 					% (file['filename'],
-						len(file['contents']) ) )
+						file['length'] ) )
 
 	# If we discovered more validation errors, show them below the
 	# uploaded file section.
@@ -1678,6 +1727,27 @@ def sendVerifyForm (
 	print output.getFullDocument()
 	return
 
+def checkConfig():
+	# Purpose: check that our configuration parameters are okay
+	# Returns: nothing
+	# Modifies: nothing
+	# Assumes: nothing
+	# Throws: 'error' if problems are found in the parameters
+
+	if not config.has_key('SUBMISSION_DIRECTORY'):
+		raise error, 'No config info for SUBMISSION_DIRECTORY'
+
+	if not os.path.exists(config['SUBMISSION_DIRECTORY']):
+		raise error, 'Invalid directory for SUBMISSION_DIRECTORY'
+
+	if not config.has_key('SENDMAIL'):
+		raise error, 'Missing SENDMAIL config variable'
+
+	if not os.path.exists(config['SENDMAIL']):
+		raise error, 'Invalid path for SENDMAIL'
+
+	return
+
 def createDirectory():
 	# Purpose: create a new submission directory
 	# Returns: string, path to new directory
@@ -1687,13 +1757,7 @@ def createDirectory():
 	# Notes: prefix of directory name is today's date; remainder is
 	#	generated by tempfile to create a unique name
 
-	if not config.has_key('SUBMISSION_DIRECTORY'):
-		raise error, 'No config info for SUBMISSION_DIRECTORY'
-
 	submissionDir = config['SUBMISSION_DIRECTORY']
-
-	if not os.path.exists(submissionDir):
-		raise error, 'Invalid directory for SUBMISSION_DIRECTORY'
 
 	today = time.strftime('%Y-%m-%d-', time.localtime(time.time()))
 
@@ -1704,6 +1768,32 @@ def createDirectory():
 		raise error, 'Cannot create new directory using mkdtemp'
 
 	return newDir
+
+def getFileData (
+	dir 		# string; name of the submission directory
+	):
+	# Purpose: get information on the files saved in 'dir'
+	# Returns: list of dictionaries, each with two keys:  filename and
+	#	length
+	# Modifies: reads from the file system
+	# Assumes: nothing
+	# Throws: nothing
+
+	files = []
+
+	if not os.path.isdir(dir):
+		log ('%s is not a directory' % dir)
+		return files
+
+	for file in os.listdir(dir):
+		try:
+			path = os.path.join (dir, file)
+			size = os.stat(path)[6]
+
+			files.append ({ 'filename' : file, 'length' : size })
+		except:
+			pass
+	return files
 
 def saveFile (
 	dir, 		# string; name of the submission directory
@@ -1836,9 +1926,6 @@ def sendMail (
 		''
 		]
 
-	if not config.has_key('SENDMAIL'):
-		raise error, 'Missing SENDMAIL config variable'
-
 	try:
 		fd = os.popen('%s -t' % config['SENDMAIL'], 'w')
 		fd.write ('\n'.join(items))
@@ -1877,17 +1964,21 @@ def acceptSubmission (
 		return
 
 	# no errors, so process submission as follows:
-	# 1. create a submission directory
+	# 1. look up submission directory, or create it if there's not one
 	# 2. save the submission fields as a text file
-	# 3. save any uploaded files
 	# 4. send a confirmation email to the user
 	# 5. send a confirmation page to the user's browser
 
-	try:
-		myDir = createDirectory()
-	except:
-		sendError(output, 'Could not create a directory for ' + \
-			'submission.  Please try again later.')
+	if SUBMISSION_SUBDIR:
+		myDir = os.path.join (config['SUBMISSION_DIRECTORY'],
+			SUBMISSION_SUBDIR)
+	# HERE
+	else:
+		try:
+			myDir = createDirectory()
+		except:
+			sendError(output, 'Could not create a directory for '\
+				+ 'your submission.  Please try again later.')
 
 	unescapedText = buildText()
 	try:
@@ -1895,13 +1986,6 @@ def acceptSubmission (
 	except:
 		sendError(output, 'Could not save your submission.  ' + \
 			'Please try again later.')
-
-	try:
-		saveUploadedFiles(myDir)
-	except:
-		sendError(output, 'Could not save some of your uploaded ' + \
-			'files.  An MGI representative will contact you ' + \
-			'with further details.')
 
 	# at this point, the submission has been successfully saved
 
@@ -1928,6 +2012,7 @@ def acceptSubmission (
 	except:
 		log ('Failed to send notification email to %s' % SUBMISSIONS)
 
+	items.append ('<P>Would you like to <A HREF="%ssubmissions/amsp_submission.cgi">make another submission</A>?' % config['MGIHOME_URL'])
 	output.setBody('\n'.join(items))
 	print output.getFullDocument() 
 	return
@@ -1938,6 +2023,21 @@ def main():
 	# Modifies: writes to stderr and stdout
 	# Assumes: nothing
 	# Throws: nothing
+
+	global UPLOADED_FILES, SUBMISSION_SUBDIR
+
+	# initial setup of output page (assume TEMPLATE_PATH is correct)
+	myTitle = 'Mutant Alleles, Strains, and Phenotypes Submission Form'
+	output = template.Template(config['TEMPLATE_PATH'])
+	output.setTitle(myTitle)
+	output.setHeaderBarMainText(myTitle)
+	output.setJavaScript(getJavascript())
+
+	# check that our config file is set up appropriately; if not, bail out
+	try:
+		checkConfig()
+	except:
+		sendError(output, 'Configuration errors were detected.')
 
 	# get input parameters from form submission, and update our Field
 	# objects
@@ -1951,12 +2051,37 @@ def main():
 
 	updateFields(parms)
 
-	# initial setup of output page
-	myTitle = 'Mutant Alleles, Strains, and Phenotypes Submission Form'
-	output = template.Template(config['TEMPLATE_PATH'])
-	output.setTitle(myTitle)
-	output.setHeaderBarMainText(myTitle)
-	output.setJavaScript(getJavascript())
+	# if we received any uploaded files, we need to create a directory
+	# and save them.  We need to remember the directory as a hidden field
+	# in the next form we write out.
+
+	if UPLOADED_FILES:
+		try:
+			myDir = createDirectory()
+		except:
+			sendError(output, 'Could not create a directory ' + \
+				'for your submission.  Please try again ' + \
+				'later.') 
+
+		try:
+			saveUploadedFiles(myDir)
+		except:
+			sendError(output, 'Could not save some of your ' + \
+				'uploaded files.  Please try again later.')
+
+		SUBMISSION_SUBDIR = os.path.basename(myDir)
+
+	# otherwise, if we received a parameter which specified a submission
+	# directory, then we need to look up info about the files already
+	# submitted.
+
+	elif parms.has_key('submission'):
+		SUBMISSION_SUBDIR = parms['submission'].value
+		UPLOADED_FILES = getFileData (os.path.join (
+			config['SUBMISSION_DIRECTORY'], SUBMISSION_SUBDIR))
+
+	# otherwise, we either had no uploaded files, or this is an initial
+	# form, so we're okay as-is
 
 	# cache the user's contact info for near-future submissions
 	setCookie()
