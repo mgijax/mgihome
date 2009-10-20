@@ -33,42 +33,52 @@
      <table class="outline" width="100%">
        <tr>
          <td class="enhance"><a name="october_2009"></a>October 29, 2009: MGI announces the following enhancements for the 4.31 release.</td>
-       </tr><br>
+       </tr>
+<tr><td>&nbsp;&nbsp;&nbsp;</td></tr>
+<tr><td class="enhance">Cre Recombinase Portal</td></tr>
 <tr><td> <dl class="linkedList">
-   <dt>New MGI <a href="../homepages/recombinase.shtml">Recombinase (cre) Specificity</a> functionality lets you find information about recombinase-containing transgenes or knock-in alleles in the MGI database. 
-	</dt>
-	<dt>Currently, there are over 850 alleles with recombinase activity in the MGI database.</dt>
-	<dt><b>To find recombinase-containing transgenes or knock-in alleles in MGI:</b>
+<dt>MGI has released a Cre Recombinase Data Portal that specifically addresses the need to access cre expression and specificity data <a href="http://www.creportal.org">(www.creportal.org)</a>. Through this portal, users can access information about all existing cre transgenes and knock-ins. Data include molecular description of the cre transgene or knock-in, the driver / promoter used, inducibility information, publications, and availability of cre mice through IMSR.  Detailed data, including annotated images showing cre activity / expression for the tissues analyzed are being added as available. Access to phenotypes displayed by cre-deleted mice is provided via integration with MGI's phenotype data.</dt>
+
+<dt>Currently, there are over 1,040 recombinase-containing transgenes or knock-in alleles in cataloged.</dt>
+
+<dt><b>To search for recombinase-containing transgenes or knock-in alleles:</b>
 	  <ul>
-  	  <li>Select a driver from the list beside <b>Recombinase driven by:</b> on the <a href="../homepages/recombinase.shtml">Recombinase (cre) Specificity</a> page to find alleles both with and without recombinase specificity data. (You may wish to search for <i>every</i> recombinase-containing allele, even ones with no associated tissue specificity data).</li>
-   	  <li>Select an item from the <b>Recombinase specificity in:</b> list to find anatomical systems where recombinase activity is expressed.  The results include only alleles with available recombinase specificity data.</li> 
-	</ul>
+  	  <li>Select an anatomical system from the search for <a href="../homepages/recombinase.shtml">Recombinase specificity in:</a> pick-list: the results will list those transgenes and knock-in alleles where cre specificity/expression is found in the anatomical location selected.</li>
+<li>Select a driver from the <a href="../homepages/recombinase.shtml">Recombinase driven by:</a> pick list: the results will display transgenes and knock-in alleles utilizing the chosen driver. 
+   </ul>
        </dt>
-	<dt><b>To find a recombinase-expressing mouse:</b><br>
-  	<ul>
-    	<li>On the <b>Recombinase Alleles - Tissue Specificity Summary</b> table,  scroll the <b>IMSR</b> column. A numeral in this column indicates how many matching items there are in the International Mouse Strain Resource. Clicking the numeral link brings up an IMSR summary table of strains expressing cre recombinase in the desired tissue.</li>
-    	<li><b>Recombinase Specificity Detail</b> pages for the allele also display availability of a specific recombinase-containing allele (in the <b>Find Mice (IMSR)</b> row).</li>
-     	</ul>
+
+
+	<dt><b>To find a mouse carrying a cre recombinase transgene or knock-in:</b>
+  
+    <ul>
+    	  <li>On the Summary table that is returned from a search (as described above),  scroll right to the <b>IMSR</b> column. A numeral in this column indicates how many matching items there are in the International Mouse Strain Resource. Clicking the numeral link brings up an IMSR summary table of strains expressing cre recombinase. IMSR provides links to Repositories holding these mice and to MGI phenotype data for cre-mated mice.</li>
+    	</ul>
    	</dt>
 
-	<dt><b>Other ways to find recombinase data:</b><br>
+	<dt><b>To retrieve a table of all cre-containing transgenes and knock-in alleles:</b>
+<ul>
+    	  <li>We provide reports of all recombinase-containing transgenes and knock-ins cataloged, regardless of the anatomical system in which they show specificity or are expressed and regardless of the driver used. These may be accessed directly from the creportal page <a href="http://www.creportal.org">(www.creportal.org)</a> in html format or as tab-delimited text.</li>
+    	</ul></dt>
+
+	<dt><b>Related searches:</b><br>
 		<ul>
-	<li>Phenotypic, disease, and/or expression data may exist separately from tissue specificity data.</dt>
-  
-	<li>Use the <a href="<!--#include file='include/wi_url.html'-->searches/allele_form.shtml">Phenotypes, Alleles, & Disease Models Query Form</a> to find recombinase-containing transgene or knock-in alleles or to find flox- or frt-containing alleles.</li>
-  	<li>Use the <A HREF="<!--#include file='include/java_url.html'-->WIFetch?page=expressionQF">Gene Expression Data Query Form</a> to find endogenous gene expression results.</li>
+
+	<li>Use the <a href="<!--#include file='include/wi_url.html'-->searches/allele_form.shtml">Phenotypes, Alleles, & Disease Models Query Form</a> to find recombinase-containing transgene or knock-in alleles or to find flox- or frt-containing alleles. Here you will find allele-specific data snf phenotypes resulting from crosses with cre-containing transgenes and alleles.</li>
+  	<li>Use the <A HREF="<!--#include file='include/java_url.html'-->WIFetch?page=expressionQF">Gene Expression Data Query Form</a> to find endogenous gene expression results for cre-containing knock-ins.</li>
 	  	</ul>
   	</dt>
 	<dt><b>Transgenic allele nomenclature</b></br>
 	<ul>
-  	<li>Transgenic allele nomenclature is in the format <i>Tg(<b>driver</b>-cre...)</i> or <i>Tg(<b>driver</b>-flp...)</i> (<i>Tg</i> denotes <i>transgene</i>). When looking for a specific driver of recombinase expression,  be sure to check for newer gene or allele names and symbols, because gene and allele nomenclature changes over time. </li>
+  	<li>Transgenic allele nomenclature is in the general format <i>Tg(<b>driver</b>-cre...)</i> or <i>Tg(<b>driver</b>-flp...)</i> (<i>Tg</i> denotes <i>transgene</i>). When looking for a specific driver of recombinase expression,  be sure to check for newer gene or allele names and symbols, because gene and allele nomenclature changes over time. </li>
 	<li>See also <a href="../nomen/gene.shtml">Guidelines for Nomenclature of Genes, Genetic Markers, Alleles, and Mutations in Mouse and Rat</a>.</li>
-  	<li>For a list of all recombinase-containing transgene and knock-in alleles, click 
-<b>Download</b>--><a href="<!--#include file='include/ftp_url2.html'-->reports/index.html#cre">All MGI Reports</a>.</li>
+  
 	</ul>
 	</dt>
-
- <dt>MGI 4.31 also features a new <a href="<!--#include file='include/mgihome_url.html'-->/submissions/amsp_submission.cgi">form</a> for submitting new allele/mutants, registering a mouse strain name, or submitting phenotype data.</dt>
+	<dt><b>Submitting Data to MGI</b><br>
+		<ul>
+ <dt>MGI 4.31 also features a new <a href="<!--#include file='include/mgihome_url.html'-->submissions/amsp_submission.cgi">data submission form</a> for submitting new allele/mutants, registering a mouse strain name, or submitting phenotype data. In addition, data file downloads are encouraged.</dt>
+<dt>The new submission form offers more flexible information management and easy access to examples and data checks, as well as ready access to personal help with the process.</dt>
 
   	</dl>
        </td>
