@@ -1007,7 +1007,7 @@ def getInitialForm():
 		'Use this Submission Form to describe spontaneous, induced, ',
 		'or genetically engineered mutations, to register new mouse ',
 		'strains, and to describe phenotypes.<P>',
-		'<FORM ACTION="%ssubmissions/amsp_submission.cgi" METHOD="POST">' % config['MGIHOME_URL'],
+		'<FORM ACTION="%ssubmissions/amsp_submission.cgi" METHOD="POST" ENCTYPE="multipart/form-data">' % config['MGIHOME_URL'],
 		getMainForm(),
 		'<P>',
 		'<B>Use the buttons below to verify your data before ',
