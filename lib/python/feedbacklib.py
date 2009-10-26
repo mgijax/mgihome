@@ -1182,8 +1182,8 @@ class AlleleUserInput (SimpleTextUserInput):
 			this allele (e.g., allele synonyms, allele-specific
 			sequence identifiers, references, phenotypes).  For
 			new allele submissions, please use the
-			<a href="../nomen/allmut_form.shtml">Allele and New
-			Mutant Submission Form</a>.
+			<a href="../submissions/amsp_submission.cgi">Mutant
+			Alleles, Strains, and Phenotypes Submission Form</a>.
 			For all other comments and suggestions, contact 
 			<a href="%ssupport/mgi_inbox.shtml">User
 			Support</a>.<BR>''' % config['MGIHOME_URL']
@@ -1226,8 +1226,8 @@ class MarkerUserInput (SimpleTextUserInput):
 			this marker (e.g., synonyms, sequence identifiers,
 			references, gene ontology terms).  For new allele
 			submissions, please use the
-			<a href="../nomen/allmut_form.shtml">Allele and New
-			Mutant Submission Form</a>.
+			<a href="../submissions/amsp_submission.cgi">Mutant
+			Alleles, Strains, and Phenotypes Submission Form</a>.
 			For all other comments and suggestions, contact 
 			<a href="%ssupport/mgi_inbox.shtml">User
 			Support</a>.<BR>''' % config['MGIHOME_URL']
