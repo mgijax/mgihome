@@ -160,7 +160,13 @@ MGI stores objects with accession IDs from many sources.  Some examples of valid
 <a href="<!--#include file='include/wi_url.html'-->searches/accession_report.cgi?id=GO:0030264">
 <code>http://www.informatics.jax.org/searches/accession_report.cgi?id=GO:0030264</code></a></li>
 <li>SNP Summary (MGI Marker Accession ID)<br>
-<a href="<!--#include file='include/wi_url.html'-->searches/snp_report.cgi?id=MGI:96677">http://www.informatics.jax.org/searches/snp_report.cgi?id=MGI:96677</a></li>
+<a href="<!--#include file='include/wi_url.html'-->searches/snp_report.cgi?id=MGI:96677">
+<code>http://www.informatics.jax.org/searches/snp_report.cgi?id=MGI:96677</code></a></li>
+
+<li>Human Disease and Mouse Model Detail (OMIM) <br>
+<a href="http://www.informatics.jax.org/javawi2/servlet/WIFetch?page=humanDisease&id=604290">
+<code>http://www.informatics.jax.org/javawi2/servlet/WIFetch?page=humanDisease&id=604290"</code>
+</a></li>
 </UL>
 <p>Additional linking options are available upon request.</p>
 		</td>
@@ -205,7 +211,6 @@ list of homologies appears for that marker.</li>
 		</table>
 	<!-- end of section6 table -->
 	</td></tr>
-
 
 </table>
 
