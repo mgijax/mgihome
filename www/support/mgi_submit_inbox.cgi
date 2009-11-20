@@ -53,21 +53,45 @@ def hd():
 
 def main():
 	hd()
-
+	
+	captcha_element = ''
+	if config.has_key('CAPTCHA_ELEMENT'):
+		captcha_element = config['CAPTCHA_ELEMENT']
+		REQUIRED_FIELDS.append(captcha_element)
+	captcha_timeout = ''
+	if config.has_key('CAPTCHA_TIMEOUT'):
+		captcha_timeout = config['CAPTCHA_TIMEOUT']
+	captche_hide = ''
+	if config.has_key('CAPTCHA_HIDE'):
+		captcha_hide = config['CAPTCHA_HIDE']
+		REQUIRED_FIELDS.append(captcha_hide)
+		
 	form = cgi.FieldStorage()
-	form_ok = 1
+	
+	err = 0
+	
 	for field in REQUIRED_FIELDS:
 		if not form.has_key( field ):
-			form_ok = 0
-			break
-
-	if not form_ok:
+			if (field != captcha_hide):
+				err = 1
+				break
+		else:
+			if (field == captcha_element):
+				if int(form[captcha_element].value) < int(captcha_timeout):
+					err = 1
+					break
+			if (field == captcha_hide):
+				if form[captcha_hide].value != '':
+					err = 1
+					break
+	
+	if err != 0 :
 		error_message = """<H1>Sorry...</H1>Please fill in required fields: 
 			First Name, Last Name, E-mail address, Subject and Message. Then 
 			send the message.  Please fill in required fields: First Name, 
 			Last Name, E-mail address, Subject and Message. Then send the 
 			message."""
-		
+		reply_message.setTitle('User Support Express Mail - Error')
 		reply_message.appendBody(error_message)
 	else:
 		if form.has_key( 'title' ):
@@ -122,7 +146,7 @@ def main():
 		fd.write( mail_header + msg + NL + '.' + NL )
 		fd.close()
 		
-		print reply_message.getFullDocument()
+	print reply_message.getFullDocument()
 		
 	return
 

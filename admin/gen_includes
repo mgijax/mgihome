@@ -71,7 +71,21 @@ def getCreDriver ():
     for r in results:
         drivers.append("<option value='%s'>%s</option>" % (r['driverNote'], r['driverNote']))
     listToFile(drivers, '../www/include/driver_list.html')
+  
+def captchaInclude ():
+    form = """<input type="hidden" name="%s" id="%s" value="default">
+        <input type="text" name="%s" id="%s" value="default">""" % \
+        (config['CAPTCHA_ELEMENT'], config['CAPTCHA_ELEMENT'], \
+        config['CAPTCHA_HIDE'], config['CAPTCHA_HIDE'])
+    js = """<script type="text/javascript" language="JavaScript"> 
+            var el = new YAHOO.util.Element("%s"); 
+            el.setStyle("display", "none");
+            el.get("element").value = "";
+        </script>""" % config['CAPTCHA_HIDE']
 
+        
+    stringToFile (form, '../www/include/captchaform.html')
+    stringToFile (js, '../www/include/captchajs.html')
 
 def stringToFileNoNL (s, filename):
     #  Ultimately this should replace the stringToFile method
@@ -108,6 +122,7 @@ def createIncludeLink (includeName, fileLoc ) :
 
 def main ():
     getCreDriver()
+    captchaInclude()
     stringToFile (config['WI_URL'], '../www/include/wi_url.html')
     stringToFileNoNL (config['WI_URL'], '../www/include/wi_url2.html')
     stringToFile (config['FTP_BASE_URL'], '../www/include/ftp_url.html')
