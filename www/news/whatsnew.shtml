@@ -30,26 +30,26 @@
       </table>
     </td>
     </tr>
-    <tr><td><a name="october_2009"></a>
-     <table class="outline" width="100%">
- <tr>
-         <td class="enhance"><a name="december_2009"></a>December, 2009: MGI announces the following enhancements for the 4.32 maintenance release.</td>
-       </tr>
+<tr><td><a name="december"></a>
+<table class="outline" width="100%">
+     <tr><td class="enhance"><a name="december_2009"></a>December, 2009: MGI announces the following enhancements for the 4.32 maintenance release.</td></tr>
+
 <tr><td>&nbsp;&nbsp;&nbsp;</td></tr>
-<tr><td> <dl class="linkedList">
-<dt><a href="http://biomart.informatics.jax.org/biomart/martview">MGI BioMart</a> is a database warehouse that lets query against the MGI marker dataset and save the results. You can then join these results to other Biomarts for comparison and research.
+<tr><td><dl class="linkedList">
+<dt><a href="http://biomart.informatics.jax.org/biomart/martview">MGI BioMart</a> is a database warehouse that lets you query against the MGI marker dataset and save the results. You can then join these results to other Biomarts for comparison and research.
 <dt>The MGI <b>Quick Search</b> tool now displays marker coordinate information in the <b>Genome Features</b> section.
-  </dt></dl>
+  </dt>
+</dl></td></tr>
+ </table>
+</td></tr>
 
-
-
-
-
-
-
-
+<tr><td>
+<!--section 2 table-->
+<a name="october_2009"></a>
+<table "class="outline" width="100%">
+  
        <tr>
-         <td class="enhance"><a name="october_2009"></a>October 29, 2009: MGI announces the following enhancements for the 4.31 release.</td>
+         <td class="enhance">October 29, 2009: MGI announces the following enhancements for the 4.31 release.</td>
        </tr>
 <tr><td>&nbsp;&nbsp;&nbsp;</td></tr>
 <tr><td class="enhance">Cre Recombinase Portal</td></tr>
@@ -90,12 +90,12 @@
 	<ul>
   	<li>Transgenic allele nomenclature is in the general format <i>Tg(<b>driver</b>-cre...)</i> or <i>Tg(<b>driver</b>-flp...)</i> (<i>Tg</i> denotes <i>transgene</i>). When looking for a specific driver of recombinase expression,  be sure to check for newer gene or allele names and symbols, because gene and allele nomenclature changes over time. </li>
 	<li>See also <a href="../nomen/gene.shtml">Guidelines for Nomenclature of Genes, Genetic Markers, Alleles, and Mutations in Mouse and Rat</a>.</li>
-  
-	</ul>
-	</dt></dl>
-       </td>
-      </tr>
-<tr><td>&nbsp;&nbsp;&nbsp;</td></tr>
+  	</ul>
+       </dt>
+      </dl>
+     </td>
+    </tr>
+   <tr><td>&nbsp;&nbsp;&nbsp;</td></tr>
 
 
 <tr><td class="enhance">Submitting Data to MGI</td></tr>
@@ -293,6 +293,8 @@ Status (indicates a gene's status in gene targeting pipelines (under <b>Other da
 			
 </table>
 
+</td></tr>
+</table>
 
 </div> 
 <!--#include file='include/templateBodyStop.html'--> 
