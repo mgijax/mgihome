@@ -1,0 +1,143 @@
+<!--#include file='include/templateHead.html'-->
+
+  <title>MGI-Submitting Data Files</title>
+  <meta name="description" content="Total counts of mouse genes, other genome features, mutant alleles, human diseases with mouse models, gene expression assays, expression images, functional annotations, biochemical pathways, SNPs, mouse strains, genes with orthologs in other species, nucleotide sequences, transcript sequences, references, and more." />
+
+  <meta name="keywords" content="MGI, mgi, mice, mouse, murine, mus musculus, genes, genome, genomic, how many, number of, counts, statistics, totals, MGI includes" />
+
+  <meta name="robots" content="NOODP" />
+  <meta name="robots" content="NOYDIR" />
+  <link rel="stylesheet" type="text/css" href="<!--#include file="include/stylesheet.html"-->" />
+
+<!--#include file='include/templateBodyStart.html'-->
+
+<!-- Title Bar -->
+<div id="titleBarWrapper">
+ <span class="titleBarMainTitle">Submitting Data Files</span>
+</div> <!--titleBar-->
+
+<p><b>Note:</b> For large data files or multiple data
+files, please contact us at <a href="mailto:submissions@informatics.jax.org">submissions@informatics.jax.org</a>
+and we will provide you with a specific ftp address where your data can be
+deposited.</p>
+
+<h3>Images / Figures</h3>
+
+<p>Images and figures can include photographs of mutant mice, images of histopathological
+sections, and micrographs, as well as charts or graphs showing phenotypic characteristics (e.g. growth curves).</p>
+
+<p>Descriptions or legends should accompany the image file. The description file should contain
+sufficient information to interpret the image, including relevant genotype and strain information.</p>
+
+<p>Images should preferably be provided as high-resolution TIFF files. The description
+file should be named in parallel with its associated image. For example, Xyz1image.tiff and Xyz1text.doc.</p>
+
+
+<p>See these image examples in MGI:</p>
+<p><a href="<!--#include file='include/java_url.html'-->WIFetch?page=imageDetail&key=78246">http://www.informatics.jax.org/javawi2/servlet/WIFetch?page=imageDetail&key=78246</a></p>
+
+<p><a href="<!--#include file='include/java_url.html'-->WIFetch?page=imageDetail&key=78678">http://www.informatics.jax.org/javawi2/servlet/WIFetch?page=imageDetail&key=78678</a></p>
+
+<p><a href="<!--#include file='include/java_url.html'-->WIFetch?page=imageDetail&key=49172">http://www.informatics.jax.org/javawi2/servlet/WIFetch?page=imageDetail&key=49172</a></p>
+
+<h3>Experimental Data</h3>
+<p>Data tables can be submitted as tab-delimited text or in Excel format. The first row should include column labels. An accompanying file should describe experimental conditions and the animals used, as well as definitions for each data row and
+column.</p>
+
+<h4>Example 1:</h4>
+
+Example data file:
+<table border=1 cellspacing=1 cellpadding=3 width="!">
+ <tr><th valign="top">Blood Parameters</th><th valign="top">Age (months)</th><th valign="top">Sex</th><th valign="top">Atr1a&lt;+&gt;/ Atr1a&lt;+&gt;</th><th valign="top">Number of mice</th><th valign="top">Atr1a&lt;tm1Ecl&gt;/<br>Atr1a&lt;tm1Ecl&gt</th><th valign="top">Number of mice</th><th valign="top">p-value compared to wild-type</th></tr>
+ <tr><td valign="top">Hematocrit (%)</td><td valign="top">6.5-9.0</td><td valign="top">combined</td><td valign="top">36.6 +/- 1.4</td><td valign="top">10</td><td valign="top">41.1 +/- 1/2</td><td align="justify">10</td><td valign="top">&lt;0.05</td></tr>
+ <tr><td valign="top">RBC (10*6/<i>&micro;</i>l)</td><td valign="top">6.5-9.0</td><td valign="top">combined</td><td valign="top">7.6 +/- 0.2</td><td valign="top">10</td><td valign="top">8.9 +/- 0.3</td><td align="justify">10</td><td valign="top">&lt;0.01</td></tr>
+ <tr><td valign="top"> Hemoglobin (g/dl)</td><td valign="top">6.5-9.0</td><td valign="top">combined</td><td valign="top">12.5 +/- 0.4</td><td valign="top">10</td><td valign="top">14.1 +/- 0.4</td><td align="justify">10</td><td valign="top">&lt;0.05</td></tr>
+ <tr><td valign="top"><nobr>Plasma proteins (g/l)</nobr></td><td valign="top">6.5-9.0</td><td valign="top">combined</td><td valign="top">37.9 +/- 1.7</td><td valign="top">8</td><td valign="top">38.7 +/- 2.4</td><td align="justify">7</td><td valign="top">NS</td></tr>
+</table>
+
+
+<p><u>Example accompanying description file:</u><br>
+Title: Blood parameters for Atr1a wild-type vs. homozygous mutant mice.<br>
+Publication: PMID: 17607364. Billet S et al., &quot;Gain-of-function mutant of angiotensin
+II receptor, type 1A, causes hypertension and cardiovascular fibrosis in
+mice.&quot; J Clin Invest 2007 Jul;117(7):1914-25.</p>
+
+<p>Experimental measurements were done on a mixed genetic background of 129S2 and C57BL/6 using age and
+sex-matched homozygous mutants and homozygous wild-type littermate controls.</p>
+
+
+<p>Plasma protein was measured using an Olympus multiparametric autoanalyzer. Hemoglobin,
+red blood cell concentration, and hematocrit were determined using a Beckman
+Coulter MAXM automatic analyzer. Values are expressed as mean count +/- SEM.</p>
+
+
+<p>Definitions for table column labels:<br>
+Blood Parameters: name of blood parameter with units of measure in parentheses.<br>
+Age: age given in months<br>
+Sex: combined; values for males and females were not different, thus results were combined<br>
+Atr1a&lt;+&gt; / Atr1a&lt;+&gt;: Allele composition for animals that are wild-type for the Atr1a gene.<br>
+Number of mice: given for each assay<br>
+Atr1a&lt;tm1Ecl&gt; / Atr1a&lt;tm1Ecl&gt;: Allele composition for animals that are homozygous for the described knock-in p-value compared to wild-type: Indication of significance of the finding.</p>
+
+<p>MP terms for the homozygous mutant, Atr1a&lt;tm1Ecl&gt; / Atr1a&lt;tm1Ecl&gt;: <br>
+high hematocrit value<br>
+high mean erythrocyte cell number<br>
+increased hemoglobin content</p>
+
+<h3>Example 2: Mutant data relative to control</h3>
+Example data file:
+<table border=1 cellspacing=2 cellpadding=3 width="99%">
+ <tr><th valign="top">Genotype</th><th valign="top">Alleles</th><th valign="top">Sex</th><th valign="top">Procedure</th><th valign="top">Parameter</th><th valign="top">Term (MP)</th><th valign="top">Evidence</th></tr>
+
+<tr><td valign="top"><nobr>129P2/OlaHsd-Fbl3&lt;Gt(CB0226)Wtsi&gt;/H</nobr></td>
+<td valign="top">Fbl3&lt;Gt(CB0226)Wtsi/ <br>Fbl3&lt;Gt(CB0226)Wtsi
+</td><td valign="top">combined</td>
+<td valign="top">Modified SHIRPA</td>
+<td valign="top">Touch Escape</td>
+<td valign="top">Abnormal response to tactile stimulus (MP:0005316)</td>
+<td valign="top">inferred</td>
+</tr>
+
+<tr><td valign="top">129P2/OlaHsd-Fbl3&lt;Gt(CB0226)Wtsi&gt;/H</td>
+<td valign="top">Fbl3&lt;Gt(CB0226)Wtsi/ <br>Fbl3&lt;Gt(CB0226)Wtsi</td>
+<td valign="top">combined</td>
+<td valign="top">DEXA</td>
+<td valign="top">Bone Mineral Density (excluding skull)</td>
+<td valign="top">Decreased bone density (MP:0000063)</td>
+<td valign="top">inferred</td>
+</tr>
+</table>
+
+
+<p><u>Example accompanying description file</u><br>
+
+Title: Mutant phenotypes seen in 129P2/OlaHsd-Fbl3&lt;Gt(CB0226)Wtsi&gt;/H homozygotes
+compared to baseline 129P2/OlaHsd strain.<br>
+Publication: Unpublished. Data from Harwell Phenotyping Screen deposited with Euophenome.<br>
+Standard operating procedures (SOPs) adopted by EUMODIC/EUMORPHIA were used. These experiments examined mice homozygous for a gene trap mutant allele in the <i>Fbl3</i> gene (Fbl3&lt;Gt(CB0225)Wtsi&gt;). <br>
+Phenotypes were compared to littermate controls under conventional mouseroom conditions. Experimental protocols can be found linked from the Europhenome site for this allele, <a
+href="http://www.europhenome.org/databrowser/lineSummary.jsp?l=125">http://www.europhenome.org/databrowser/lineSummary.jsp?l=125</a>. MP terms describing this phenotype were <b>automatically</b> generated (Evidence = inferred) and have not been scientifically reviewed. Automatic annotations are made when experimental parameters are significantly
+different by programmatic analysis, but have not yet been reviewed by
+scientific contributors or curation experts.</p>
+
+<p>Definitions for table column labels:<br>
+Genotype: full animal strain designation<br>
+Alleles: allele composition of mutant animals, in this case homozygous for Fbl3&lt;Gt(CB0226)Wtsi<br>
+Sex: combined; values for males and females were not different, thus results were combined<br>
+Procedure: named procedures from EUMODIC/EUMORPHIA. SOPs available at <a
+href="http://empress.har.mrc.ac.uk/">http://empress.har.mrc.ac.uk/</a></br>
+Parameter: named parameter that is being measured<br>
+Term (MP): phenotype descriptive term from the Mammalian Phentoype Ontology with its ID<br>
+Evidence: inferred evidence indicates that the assignment of the MP term was done
+automatically based on programmatic analysis.</p>
+
+<h3>Text Data</h3>
+<p>Textual data can be included alone or in conjunction with images and data files. If you prefer to submit text, such as an extended abstract or short paper about your phenotype experiments, we will curate data into MGI format. Your submission will be saved as the original reference.</p>
+
+<h3>Other Types of Data</h3>
+<p>Please contact <a href="mailto:submissions@informatics.jax.org">submissions@informatics.jax.org</a>
+to discuss other types of data you may wish to submit.</p>
+
+
+
+<!--#include file='include/templateBodyStop.html'-->
