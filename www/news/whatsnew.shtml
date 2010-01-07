@@ -18,12 +18,12 @@
       <tr>
        <td>
             <ul>
-	       <li><a href="#december_2009">December 17, 2009</a></li>
+		<li><a href="#jan_2010">January 2010</a></li> |
+	       <li><a href="#december_2009">December 17, 2009</a></li> |
 		<li><a href="#october_2009">October 29, 2009</a></li> |
-               <li><a href="#august_2009">August 19, 2009</a></li>  |
-               <li><a href="#march_2009">March 26, 2009</a></li> | 
-               <li><a href="#jan_2009">January 12, 2009</a></li> | 
-               <li><A HREF="news_2008.shtml"><nobr>Archive: News and Announcements for 2008</a></li> 
+             
+             
+               <li><A HREF="news_2009.shtml"><nobr>Archive: News and Announcements for 2009</a></li> 
              </ul>
          </td>
        	</tr>              
@@ -96,8 +96,6 @@
       </dl>
      </td>
     </tr>
-   <tr><td>&nbsp;&nbsp;&nbsp;</td></tr>
-
 
 <tr><td class="enhance">Submitting Data to MGI</td></tr>
 <tr>	<td><dl class="linkedList">
@@ -110,103 +108,6 @@
      </table>
 </td></tr>
 		
- <tr><td>
-<!-- section2 table -->
- <a name="august_2009"></a>
-<table class="outline" width="100%">
-		  
-			<tr>
-				<td class="enhance">
-				August 19, 2009: MGI announces the following enhancements for 4.3:</td></tr><br>
-   <tr><td>
-	<dl class="linkedList">
-	<dt>This release adds over 500,000 mouse cell line and gene trap sequences for gene traps in the NCBI Genome Survey Sequences Database (dbGSS), including those from the International Gene Trap Consortium (IGTC), and from Lexicon Genetics. </dt><br>
-	<DT><b>MGI Gene-trapped Allele Detail pages provide:</b><br>
-   		<ul>
-   		<li>a genome browser view of the gene trap insertion site.</li>
-  		<li>sequence tag information, including genome coordinates.</li>
-    		<li>cell line IDs from organizations supplying gene trap sequence data to dbGSS.</li>
-		<li>information about the parent stem cell line and the gene trap vector used to produce each mutant.</li>
-		<li>identification of any mouse models with phenotypic similarity to human diseases associated with the allele.</li>
-		<li>links to the International Mouse Strain Resource (IMSR) for access to available mouse strains and cell lines.</li>
-<li>information about whether a mouse has been produced for the gene trap mutant cell line.</li>
- 		<li>allele nomenclature.</li>
-	</ul></dt>
-  <dt>As examples, see:
-<ul>
-  <li><a href="http://hobbiton.informatics.jax.org:8080/cgi-bin/gbrowse/mouse_current/?start=85537525;stop=85652747;ref=6;width=800;version=100;cache=on;drag_and_drop=on;show_tooltips=on;grid=on;label=MGI_Representative_Transcripts-MGI_Representative_Transcripts-NCBI_Transcripts-ENSEMBL_Transcripts-VEGA_Transcripts-GeneTraps_per_gene-MGI_RNA_Gtraps-MGI_DNA_Gtraps;h_feat=%22BayGenomics_XH152%22%40yellow">MGI Mouse Genome Browser on build 37</a></li>
-  <li><a href="<!--#include file='include/java_url.html'-->WIFetch?page=alleleDetail&key=37529">Alms1 Gene trapped Allele Detail</a></li>
-</ul>
-		
-	</DT>
-<br>
-
-<DT><b>How MGI associates gene traps to genes</b><br>
-   		<ul>
-     		<li>The MGI gene trap load associates gene traps to genes using genome-wide sequence alignments (BLAT) with gene trap sequence tags.</li>
-     		<li>We compute the single point coordinate best approximating the gene trap vector insertion site for each sequence tag from the resultant sequence tag genome coordinates. </li>
-     		<li>We compare the gene trap sequence tag coordinates/strands to MGI gene coordinates/strands to detect trapped genes and to establish allele-to-gene relationships.</li>
-<li>A gene trap allele-to-gene association is made only if the gene trap insertion "traps" the gene.</li>
-     <!--<li>We resolve the biological source information in the gene trap sequence records to controlled vocabularies and associates gene trap mutant cell lines with the corresponding alleles. The MGI database thus contains a mutant cell line record and an allele record for each unique gene trap cell line.</li>-->
-     
-  		<li><b>MGI updates gene-trap-to-gene associations weekly.</b></li>
- 		</ul>
-	</DT>
-<br>
-   
-	<DT><b>Associations that MGI does not make</b></DT>
-	<DT>MGI does <b>not</b> establish gene-trap-to-gene associations: 
-	<ul>
- 	  <li>where sequence tags for a gene trap allele overlap multiple genes in the trapped gene orientation; where tags overlap one or more genes in reverse orientation; or where they overlap no known genes using current gene model coordinates. </li>
-	  <li>where gene trap sequence tags for an allele do not align with the reference mouse genome, or align equally well to multiple locations. </li>
-	  <li>for mixed cell lines, characterized by multiple sequence tags for the same cell line and good alignments to different locations in the genome. </li>
-	</ul>
-	</dt>
-
-	<dt>See <a href="<!--#include file='include/userdocs_url.html'-->genetrap_usecases.shtml#no_association">Why aren't all gene traps associated with a gene?</a> for additional details.
-	</DT>
-<br>
-	<DT><b>Gene Trap Integration and Curation at MGI</b></DT>
-	<DT>
-		<ul>
-  		<li>MGI regularly integrates dbGSS sequence tag data with curated gene trap information. </li>
-  		<li>On-going curatorial activity associates published mouse phenotype data, derived from mice produced from gene trap cell lines, with allele records generated from the data.</li>
-		</ul>
- 	</DT>
-<br>
-
-<DT><b>Finding these associations in MGI</b></DT>
-    <DT>		<ul>
-  		<li>Enter gene nomenclature or ID in the Quick Search tool (located at the top of any MGI page). (See <a href="<!--#include file='include/userdocs_url.html'-->genetrap_usecases.shtml#who_are">Who are the cell line creators?</a> for examples of the IDs you can use).</li>
-		  <li>Use the <a href="<!--#include file='include/wi_url.html'-->/searches/allele_form.shtml">Phenotypes, Alleles, and Disease Models Query Form</a>. 
-   <ul>
-     <li>Enter an allele or a gene/marker (in the <b>Nomenclature & location</b> section).</li>
-     <li>Select <b>gene trapped</b> (in the <b>Categories</b> section). </li>
-     <li>If desired, click <b>Exclude alleles records present only as cell lines</b> (in the <b>Categories</b> section).</li>
-   <li>Click <b>Search</b>.</li>
-    </ul>
-<li> 
-<li>Enter a cell line identifier in the <a href="<!--#include file='include/wi_url.html'-->/searches/accession_form.shtml">Accession IDs Query Form</a> (see <a href="<!--#include file='include/userdocs_url.html'-->genetrap_usecases.shtml#who_are">Who are the cell line creators?</a> for examples of IDs to use).</li>
-
-<li>Click <b>Download-->All MGI Reports--></b> to see all <a href="<!--#include file='include/ftp_url2.html'-->reports/MRK_GeneTrap.rpt">gene traps associated with markers</a>.</li>
-</ul>
-</DT>
-<br>
-<DT><b>For more information, see:</b></DT>
-<DT>
-<ul>
-  <li><a href="<!--#include file='include/userdocs_url.html'-->genetrap_usecases.shtml">Gene Traps Questions and Answers</a></li>
-<li><a href="<!--#include file='include/userdocs_url.html'-->allele_help.shtml">Using the Phenotypes, Alleles & Disease Models Query Form</li>
-<li><a href="<!--#include file='include/userdocs_url.html'-->allele_summary_report.shtml">Understanding Phenotypic Allele Summary Reports</a></li>
-
-
-<li><a href="<!--#include file='include/userdocs_url.html'-->allele_detail_report.shtml">Understanding Phenotypic Allele Detail Reports</a></li>
-
-<li>FAQ: <a href="<!--#include file='include/faq_url.html'-->GM_gtrap.shtml">How do I search for all gene trap cell lines associated with a gene or marker?</a></li>
-
-    </ul>
-</DT>
-</dl>
 		</td>
 			</tr>
 </table>
@@ -215,83 +116,7 @@
 
 	</td></tr>
 		
- <tr><td>
-<!-- section2 table -->
- <a name="mar_2009"></a>
-<table class="outline" width="100%">
-		  
-			<tr>
-				<td class="enhance">
-				March 26, 2009: MGI announces the following enhancements for release 4.21
-				</td>
-			</tr><br>
-
-			<tr>    <td>
-				  <dl class="linkedList">
-			          <dt>The <a href="<!--#include file='include/java_url.html'-->WIFetch?page=batchQF">MGI Batch Query</a> now provides the option to return expression data from MGI. Enter a list of genes and click <b>Gene Expression</b> (under <b>Additional Information</b>).</dt>
-			
-<dt>The <a href="<!--#include file='include/java_url.html'-->WIFetch?page=batchQF">MGI Batch Query</a> now accepts microarray probeset IDs from two Affymetrix Platforms (Mouse Gene 1.0 ST Array and Mouse Genome 430A 2.0 Array). As an example, you could enter a list of  up- or down-regulated probes from a microarray experiment and get different types of MGI data for these genes (Gene Ontology, Phenotypes, Gene Expression, and so on). </dt>
-
-<dt>Each MGI gene detail page now has a link to all microarray probe sets (from the two Affymetrix platforms) for that gene. As an example, see <a href="<!--#include file='include/java_url.html'-->WIFetch?page=AffySummary&key=8781">Fgf4</a>.</dt>
-
-
-<dt>If you want to download <b>all</b> microarray probeset to gene associations, see
-<a href="<!--#include file='include/ftp_url2.html'-->reports/index.html#expression">MGI Data and Statistical Reports</a>.</dt>
-
-
-<dt>There is a new evidence code under <a href="<!--#include file='include/userdocs_url.html'-->go_classifications.shtml">Gene Ontology (GO) Classifications</a>: EXP, Inferred from experiment.</dt>
-
-<dt>MGI gene detail pages now also link to:</dt><br>
-  <ul>
-      <li>GO Consortium <a href="http://www.geneontology.org/GO.refgenome.shtml">Reference Genome Project </a> (from <b>Gene Ontology (GO) Classifications</b>) for any genes included in this project</li><br>
-
-<li><a href="http://hugheslab.med.utoronto.ca/supplementary-data/mouseFunc_I/">MouseFunc</a>, a functional prediction resource (from <b>Gene Ontology (GO) classifications</b>)</li><br>
-
-<li><a href="http://www.knockoutmouse.org/aboutikmc">International Knockout Mouse Consortium (IKMC)</a>
-Status (indicates a gene's status in gene targeting pipelines (under <b>Other database links</b>).</li><br>
-
-<li>An MGI Tutorial is now available from <a href="http://www.openhelix.com/mgi ">Open Helix</a>.</li><br>
-<li>The remainder of the release comprises performance improvements and upgrades.</li>
-</ul>
-
-</dt>
-</dl>
-				</td>
-			</tr>
-</table>
-
- <!--end of section1 table -->
-
-	</td></tr>
-
-        <tr><td>
-<!-- section2 table -->
- <a name="jan_2009"></a>
-<table class="outline" width="100%">
-			<tr>
-				<td class="enhance">
-				January 12, 2009: MGI <b>Quick Search </b> enhanced for release 4.2
-				</td>
-			</tr><br>
-
-			<tr>    <td>
-				  <dl class="linkedList">
-			          <dt>The Quick Search tool provides a swift and powerful overview of MGI data. You can:<br>
-
-<ul>
-  <li>Query for gene symbols (or names, synonyms, orthologs), strings of text (e.g., key words from MGI vocabularies), or accession IDs,  singly or in combination, in the Quick Search box.</li>
-  <li>View the best matches, separated into Genome Features, Vocabulary Terms, and Other Results by ID  (e.g., references, sequences).</li>
-  <li>Follow links to deeper layers of MGI data such as genes/markers, additional vocabularies, expression results, many IDs.</li>
-  <li>Forward results to the MGI Batch Query tool (and access additional MGI data such as genome location, vocabularies, gene attributes).</li>
-<li>Iterate your query to find ever more relevant results.</li>
-<li>Search MGI using Google.</li>
-</ul></DT>
-</div>
-</dl>
-
-		</td>
-			</tr>
-			
+ 
 </table>
 
 </td></tr>
