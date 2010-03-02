@@ -11,135 +11,50 @@
   </div> 
 <!--end titleBar-->
 
-
+<!-- main body table -->
 <table width="75%" cellpadding="2" align="center">
    <tr><td>
+ <!-- TOC table -->
      <table class="toc" width="100%">
-      <tr>
-       <td>
+	<tr><td>
             <ul>
-	<!--<li><a href="#jan_2010">January 2010</a></li> |-->
-	       <li><a href="#december_2009">December 17, 2009</a></li> |
-		<li><a href="#october_2009">October 29, 2009</a></li> |
-                      
-               <li><A HREF="news_2009.shtml"><nobr>Archive: News and Announcements for 2009</a></li> 
+		<li><a href="#april">April 1, 2010</a> |</li>
+                <li><A HREF="news_2009.shtml"><nobr>Archive: News and Announcements for 2009</a></li> 
              </ul>
-         </td>
-       	</tr>              
+            </td>
+        </tr>              
       </table>
-    </td>
-    </tr>
-<tr><td><a name="january_2010"></a>
-<table class="outline" width="100%">
-     <!--<tr><td class="enhance"><a name="december_2009"></a>January 2010: Updates </td></tr>
+<!-- end TOC table -->
+  </td></tr>
+<tr><td></td></tr>
+  <tr><td><a name="april"></a>
+<!--section1 table-->
+      <table class="outline" width="100%">
+ <tr><td class="enhance">April 1, 2110: MGI announces the following enhancements for 4.33:
+ </td></tr>
+<tr><td>&nbsp;</td></tr>
+<tr>
+<td>
+	<dl class="linkedList">
+ 	 <dt>The <a href="<!--#include file='include/java_url.html'-->WIFetch?page=batchQF">MGI Batch Query</a> can now handle very large files.</dt>
+	<dt>The MGI gene detail pages now include information about any gene vs. pseudogene discrepancy and/or strain specificity for MGI marker associations.</dt>
+	<dt><a href="<!--#include file='include/ftp_url2.html'-->reports/index.html#sequence">MGI Data and Statistical Reports</a> now lists the MGI Marker associations to VEGA, Ensembl or NCBI gene models where a gene vs. pseudogene discrepancy exists.</dt>
+	<dt>Gene detail pages may now include links to protein ontology and gene model evidence for a given marker.</dt>
+	</dl>
 
-<tr><td>&nbsp;&nbsp;&nbsp;</td></tr>
-<tr><td><dl class="linkedList">
-<dt></dt>
-  <dt></dt>
-<dt>The MGI <b>Quick Search</b> tool (located at top right of most MGI pages) now displays </dt>
-
-</dl></td></tr>
- </table>
-</td></tr>-->
-
-
-
-
-
-<tr><td><a name="december"></a>
-<table class="outline" width="100%">
-     <tr><td class="enhance"><a name="december_2009"></a>December 17, 2009: MGI announces the following enhancements for the 4.32 maintenance release:</td></tr>
-
-<tr><td>&nbsp;&nbsp;&nbsp;</td></tr>
-<tr><td><dl class="linkedList">
-<dt>A new database warehouse, <a href="http://biomart.informatics.jax.org/biomart/martview">MGI BioMart</a>, lets you query against the MGI marker dataset and save the results. You can then join these results to other BioMarts for research and comparison.</dt>
-  <dt>Over 29,000 <a href="http://www.eucomm.org/">EUCOMM</a> gene traps were added to MGI's catalog of gene-trapped alleles.</dt>
-<dt>The MGI <b>Quick Search</b> tool (located at top right of most MGI pages) now displays marker coordinate details in  the <b>Genome Features</b> results.</dt>
-
-</dl></td></tr>
- </table>
-</td></tr>
-
-<tr><td>
-<!--section 2 table-->
-<a name="october_2009"></a>
-<table "class="outline" width="100%">
-  
-       <tr>
-         <td class="enhance">October 29, 2009: MGI announces the following enhancements for the 4.31 release:</td>
-       </tr>
-<tr><td>&nbsp;&nbsp;&nbsp;</td></tr>
-<tr><td class="enhance">Cre Recombinase Portal</td></tr>
-<tr><td> <dl class="linkedList">
-<dt>MGI has released a Cre Recombinase Data Portal that specifically addresses the need to access cre expression and specificity data <a href="http://www.creportal.org">(www.creportal.org)</a>. Through this portal, users can access information about all existing cre transgenes and knock-ins. Data include molecular description of the cre transgene or knock-in, the driver / promoter used, inducibility information, publications, and availability of cre mice through the IMSR.  Detailed data, including annotated images showing cre activity / expression for the tissues analyzed are being added as available. Access to phenotypes displayed by cre-deleted mice is provided via integration with MGI's phenotype data.</dt>
-
-<dt>Currently, there are over 1,040 recombinase-containing transgenes or knock-in alleles cataloged.</dt>
-
-<dt><b>To search for recombinase-containing transgenes or knock-in alleles:</b>
-	  <ul>
-  	  <li>Select an anatomical system from the search for <a href="../homepages/recombinase.shtml">Recombinase specificity in:</a> pick-list: the results will list those transgenes and knock-in alleles where cre specificity/expression is found in the anatomical location selected.</li>
-<li>Select a driver from the <a href="../homepages/recombinase.shtml">Recombinase driven by:</a> pick list: the results will display transgenes and knock-in alleles utilizing the chosen driver. 
-   </ul>
-       </dt>
-
-
-	<dt><b>To find a mouse carrying a cre recombinase transgene or knock-in:</b>
-  
-    <ul>
-    	  <li>On the Summary table that is returned from a search (as described above),  scroll right to the <b>IMSR</b> column. A numeral in this column indicates how many matching items there are in the International Mouse Strain Resource. Click the numeral link to bring up an IMSR summary table of strains expressing cre recombinase. The IMSR provides links to Repositories holding these mice and to MGI phenotype data for cre-mated mice.</li>
-    	</ul>
-   	</dt>
-
-	<dt><b>To retrieve a table of all cre-containing transgenes and knock-in alleles:</b>
-<ul>
-    	  <li>We provide 
-<a href="<!--#include file='include/ftp_url2.html'-->reports/index.html#cre">reports</a> of all recombinase-containing transgenes and knock-ins cataloged, regardless of the anatomical system in which they show specificity or are expressed and regardless of the driver used.</li>
-    	</ul></dt>
-
-	<dt><b>Related searches:</b><br>
-		<ul>
-
-	<li>Use the <a href="<!--#include file='include/wi_url.html'-->searches/allele_form.shtml">Phenotypes, Alleles, & Disease Models Query Form</a> to find recombinase-containing transgene or knock-in alleles or to find flox- or frt-containing alleles. Here you will find allele-specific data and phenotypes resulting from crosses with cre-containing transgenes and alleles.</li>
-  	<li>Use the <A HREF="<!--#include file='include/java_url.html'-->WIFetch?page=expressionQF">Gene Expression Data Query Form</a> to find endogenous gene expression results for cre-containing knock-ins.</li>
-	  	</ul>
-  	</dt>
-	<dt><b>Transgenic allele nomenclature:</b></br>
-	<ul>
-  	<li>Transgenic allele nomenclature is in the general format <i>Tg(<b>driver</b>-cre...)</i> or <i>Tg(<b>driver</b>-flp...)</i> (<i>Tg</i> denotes <i>transgene</i>). When looking for a specific driver of recombinase expression,  be sure to check for newer gene or allele names and symbols, because gene and allele nomenclature changes over time. </li>
-	<li>See also <a href="../nomen/gene.shtml">Guidelines for Nomenclature of Genes, Genetic Markers, Alleles, and Mutations in Mouse and Rat</a>.</li>
-  	</ul>
-       </dt>
-      </dl>
-     </td>
-    </tr>
-
-<tr><td class="enhance">Submitting Data to MGI</td></tr>
-<tr>	<td><dl class="linkedList">
-<dt>MGI 4.31 also features a new <a href="<!--#include file='include/mgihome_url.html'-->submissions/amsp_submission.cgi">data submission form</a> for submitting new allele/mutants, registering a mouse strain name, or submitting phenotype data. In addition, data file downloads are encouraged.</dt>
-<dt>The new submission form offers more flexible information management and easy access to examples and data checks, as well as ready access to personal help with the process.</dt>
-  </dl>
-	</td></tr>
-
-  	
-     </table>
-</td></tr>
-		
-		</td>
+	</td>
 			</tr>
 </table>
 
  <!--end of section1 table -->
-
-	</td></tr>
-		
- 
-</table>
-
 </td></tr>
+
+
 </table>
 
 </div> 
+
+
 <!--#include file='include/templateBodyStop.html'--> 
 </body>
 </html>
