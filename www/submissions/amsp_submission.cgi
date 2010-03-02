@@ -1712,7 +1712,7 @@ def buildText(escapeValues = False):
 	if moreErrors:
 		ERRORS = ERRORS + moreErrors
 
-	return '\n'.join(lines)
+	return '\n\n'.join(lines)
 
 def sendVerifyForm (
 	output		# Template object; handles our page composition
