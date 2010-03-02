@@ -13,8 +13,9 @@
       <table class="toc" width="100%">
 	<tr><td>
             <ul>
-               <li><a href="#2009">2009</a></li> | 
-               <li><a href="#2008">2008</a></li> | 
+	    `<li><a href="#2010">2010</a></li> | 
+	     <li><a href="#2009">2009</a></li> | 
+             <li><a href="#2008">2008</a></li> | 
                 <li><a href="#2007">2007</a></li>  |
 		<li><a href="#2006">2006</a></li> |
 		<li><a href="#2005">2005</a></li> | 
@@ -25,7 +26,6 @@
 		<li><a href="#2000">2000</a></li> |
 		<li><a href="#1990s">1990s</a></li> |
 		<li><a href="#1980s">1980s</a></li> |
-
 		</ul>
             </td>
          </tr>
@@ -35,20 +35,43 @@
 </td></tr>
 
 <tr><td>
+<!-- 2010 -->  
+	<table class="outline" width="100%">
+		<a name="2010"></a>
+			<tr>
+			<td class="enhance"><b>2010</b></td>				
+			</tr>
+			<tr>
+			<td>
+				<table class="enhance" width="100%">
+			
+				<dl>
+			<dt><b>April 2010</b></dt><br>
+			<dd>MGI 4.33 features enhancements to the Batch Query (which can now handle very large files) and to the gene detail page (gene vs. pseudogene discrepancy and/or strain specificity notes for MGI marker associations) as well as links to protein ontology and gene model evidence.</dd><br>
+	  			</dl>
+				</td>
+				</tr>
+				</table>
+	    		</td></tr>
+	</TABLE>
+	
+</td></tr>
+
+
+<tr><td>
 
 <!-- 2009 -->
    
 	<table class="outline" width="100%">
 		<a name="2009"></a>
 			<tr>
-				<td class="enhance"><b>2009</b></td>
-								</td>
+			<td class="enhance"><b>2009</b></td>
+				
 			</tr>
 			<tr>
-
-				<td>
-				<table "enhance" width="100%">
-				  <dl><!--<dl class="linkedList">-->
+			<td>
+			<table "enhance" width="100%">
+			<dl><!--<dl class="linkedList">-->
 <dt><b>December 17, 2009</b></dt><br>
 <dd>MGI 4.32 features the addition of MGI BioMart (accessible from the Analysis Tools link on the home page) and additional marker coordinate data in the <b>Genome Features</b> section of Quick Search results.</dd><br>
 
@@ -64,7 +87,7 @@
 				  
 				  <dt><b>January 12, 2009</b></dt><br>
 				  <dd>For MGI release 4.2, the  Quick Search tool is enhanced to return a swift and powerful overview of MGI data with results linked to deeper data layers.</dd><br>
-				  </dl>
+				  </dl><br>
 				 </td>
 			</tr>
 		</table>
@@ -104,7 +127,7 @@
 <dd>The MGI 4.01 release features news item updates, performance enhancements, and bug fixes.</dd><br>
 
 <dt><b>February 21, 2008</b></dt><br>
-<dd>The MGI 4.0 release features a redesigned MGI website and new navigation tools and introduces a new resource: the MouseCyc database of curated biochemical pathways.</dd>
+<dd>The MGI 4.0 release features a redesigned MGI website and new navigation tools and introduces a new resource: the MouseCyc database of curated biochemical pathways.</dd><br>
 			</DL>
 			</TD>
 			</TR>
@@ -529,6 +552,7 @@ incremental) of MGI on local machines and mirror sites.  Source control system w
 	</TD></TR>
 
 </table>
+</div> 
 
 <!--#include file='include/templateBodyStop.html'--> 
 </body>
