@@ -30,19 +30,21 @@
   <tr><td><a name="april"></a>
 <!--section1 table-->
       <table class="outline" width="100%">
- <tr><td class="enhance">April 1, 2110: MGI announces the following enhancements for 4.33:
+ <tr><td class="enhance">April 1, 2110: MGI announces the following enhancements for its 4.33 release:
  </td></tr>
 <tr><td>&nbsp;</td></tr>
 <tr>
 <td>
 	<dl class="linkedList">
  	 <dt>The <a href="<!--#include file='include/java_url.html'-->WIFetch?page=batchQF">MGI Batch Query</a> can now handle very large files.</dt>
-	<dt>The MGI gene detail pages now include information about any gene vs. pseudogene discrepancy and/or strain specificity for MGI marker associations.</dt>
-	<dt><a href="<!--#include file='include/ftp_url2.html'-->reports/index.html#sequence">MGI Data and Statistical Reports</a> now lists the MGI Marker associations to VEGA, Ensembl or NCBI gene models where a gene vs. pseudogene discrepancy exists.</dt>
-	<dt>Gene detail pages may now include links to protein ontology and gene model evidence for a given marker.</dt>
+	<dt>Gene detail pages now include notes for any MGI marker associations to VEGA, Ensembl or NCBI gene models with gene/pseudogene discrepancies.</dt>
+	<dt>Gene detail pages may also include strain specificity information (e.g., when a gene is not present in a given strain), as well as links to protein ontology and gene model evidence for a given marker.
+	<dt>A new <a href="<!--#include file='include/ftp_url2.html'-->reports/MGI_BioTypeConflict.rpt">MGI Data and Statistical Report</a> provides details about the gene vs. pseudogene discrepancies exists.</dt>
+
 	</dl>
 
 	</td>
+
 			</tr>
 </table>
 
