@@ -88,6 +88,24 @@ fields = fields[0]
 message = 'Submission Date:' + HT + mgi_utils.date() + 2*NL
 missing_fields = []
 
+captcha_element = ''
+if config.has_key('CAPTCHA_ELEMENT'):
+	captcha_element = config['CAPTCHA_ELEMENT']
+captcha_timeout = ''
+if config.has_key('CAPTCHA_TIMEOUT'):
+	captcha_timeout = config['CAPTCHA_TIMEOUT']
+captche_hide = ''
+if config.has_key('CAPTCHA_HIDE'):
+	captcha_hide = config['CAPTCHA_HIDE']
+
+if (fields.has_key(captcha_element)):
+	if int(fields[captcha_element]) < int(captcha_timeout):
+		missing_fields.append("Required fields are missing")
+
+if (fields.has_key(captcha_hide)):
+	if fields[captcha_hide] != '':
+		missing_fields.append("Required fields are missing.")
+	
 if (fields.has_key('lastname')):
 	username = fields['lastname']
 else:
@@ -266,23 +284,3 @@ mailheader = mailheader + 'Subject: ' + subject + NL + NL
 fd = os.popen('%s -t' % config['SENDMAIL'], 'w')
 fd.write( mailheader + message )
 fd.close()
-
-#
-# Warranty Disclaimer and Copyright Notice
-# 
-#  THE JACKSON LABORATORY MAKES NO REPRESENTATION ABOUT THE SUITABILITY OR 
-#  ACCURACY OF THIS SOFTWARE OR DATA FOR ANY PURPOSE, AND MAKES NO WARRANTIES, 
-#  EITHER EXPRESS OR IMPLIED, INCLUDING MERCHANTABILITY AND FITNESS FOR A 
-#  PARTICULAR PURPOSE OR THAT THE USE OF THIS SOFTWARE OR DATA WILL NOT 
-#  INFRINGE ANY THIRD PARTY PATENTS, COPYRIGHTS, TRADEMARKS, OR OTHER RIGHTS.  
-#  THE SOFTWARE AND DATA ARE PROVIDED "AS IS".
-# 
-#  This software and data are provided to enhance knowledge and encourage 
-#  progress in the scientific community and are to be used only for research 
-#  and educational purposes.  Any reproduction or use for commercial purpose 
-#  is prohibited without the prior express written permission of the Jackson 
-#  Laboratory.
-# 
-# Copyright © 1996, 1999, 2000 by The Jackson Laboratory
-# All Rights Reserved
-#
