@@ -1,4 +1,4 @@
-<!--#include file='include/templateHead.html'--> 
+<!--#include file='include/templateHead.html'-->
 <title>MGI-Nomenclature Submission Form</title>
 
 <!--#include file='include/templateBodyStart.html'-->
@@ -13,7 +13,7 @@ Please fill in all the appropriate information.  If your contact details are alr
 <p>For assistance with nomenclature, e-mail <A HREF="mailto:nomen@informatics.jax.org">nomen@informatics.jax.org</a>
 <P>
 <FORM METHOD="POST" ACTION="submit_nomen.cgi">
-
+<!--#include file='include/captchaform.html'-->
 <H3>Contact Details:</H3>
 <PRE>
 Last name:                    <INPUT TYPE="text" NAME="lastname" SIZE=30>(required)
@@ -51,7 +51,7 @@ Requesting symbol in: (check all that apply)
 <BLOCKQUOTE><EM>If you wish to request a symbol in Human only, then go to the
 <A HREF="http://www.genenames.org/cgi-bin/hgnc_request.pl">Human Nomenclature Page</A></EM></BLOCKQUOTE>
 Sources checked:
-<INPUT TYPE="checkbox" NAME="source1" VALUE="MGD"> MGI 
+<INPUT TYPE="checkbox" NAME="source1" VALUE="MGD"> MGI
 (<a href="<!--#include file='include/homepages_url.html'-->index.shtml">USA</A>)
 <INPUT TYPE="checkbox" NAME="source2" VALUE="HUGO/Human"> HUGO/Human
 (<A HREF="http://www.genenames.org">UK</A>)
@@ -115,4 +115,5 @@ If a homologous locus is known in a species other than mouse, please fill in thi
 </TABLE>
 <BR>
 <INPUT TYPE=submit VALUE="Submit"> <INPUT TYPE=reset VALUE="Reset Form">
+<!--#include file='include/captchajs.html'-->
 <!--#include file='include/templateBodyStop.html'-->
