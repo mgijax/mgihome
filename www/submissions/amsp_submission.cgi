@@ -87,7 +87,7 @@ CONTACT_FIELDS = [
 		tabIndex = 5),
 	feedbacklib.OneLineTextField ('institute', 'Institute/Organization',
 		width = 40, tabIndex = 6),
-	feedbacklib.OneLineTextField ('street', 'Street Address', width = 40,
+	feedbacklib.OneLineTextField ('streetAdd', 'Street Address', width = 40,
 		tabIndex = 7),
 	feedbacklib.OneLineTextField ('city', 'City', width = 40,
 		tabIndex = 8),
@@ -240,6 +240,9 @@ COMMENTS_FIELDS = [
 		height = 2, width = 80),
 ]
 
+CAPTCHA_FIELDS = [feedbacklib.OneLineTextField ('street', 'street'),
+	feedbacklib.MultiLineTextField ('business', 'business'),]
+
 # note that file upload fields are not represented in feedbacklib, but are
 # instead handled directly in this script
 
@@ -250,7 +253,7 @@ ALL_FIELDS = {}
 # name of all Fields whose values may be cached using a cookie; used to
 # pre-fill the page for future submissions
 CACHE_FIELDS = [ 'lastName', 'firstName', 'email', 'email2', 'labPI',
-	'institute', 'street', 'city', 'state', 'zip', 'country', 'phone',
+	'institute', 'streetAdd', 'city', 'state', 'zip', 'country', 'phone',
 	'fax' ]
 
 # list of strings, each of which is an error message found during verification
@@ -443,7 +446,7 @@ def getField (
 
 	if not ALL_FIELDS:
 		for group in [ CONTACT_FIELDS, CITING_FIELDS, ALLELE_FIELDS,
-			STRAIN_FIELDS, PHENOTYPE_FIELDS, COMMENTS_FIELDS ]:
+			STRAIN_FIELDS, PHENOTYPE_FIELDS, COMMENTS_FIELDS, CAPTCHA_FIELDS ]:
 			for field in group:
 				if ALL_FIELDS.has_key(field.getFieldname()):
 					# should not happen; this would be a
@@ -500,8 +503,8 @@ def getContactSection():
 		getField('lastName').getHTML(),
 		'</TD>',
 		'<TD>&nbsp;&nbsp;&nbsp;</TD>',
-		'<TD>%s</TD><TD>' % label('street', 'Street Address:'),
-		getField('street').getHTML(),
+		'<TD>%s</TD><TD>' % label('streetAdd', 'Street Address:'),
+		getField('streetAdd').getHTML(),
 		'</TD></TR>',
 
 		'<TR><TD>%s</TD><TD>' % label('firstName', 
@@ -918,6 +921,20 @@ def getMainForm():
 	# default, but will be made visible if they contain validation errors.
 	# All other sections are displayed always.
 	
+	captchaJS = ''
+	captchaForm = ''
+	
+	captchaJSfile = open('./include/captchajs.html', 'r')
+	for line in captchaJSfile:
+		captchaJS = captchaJS + line
+		
+	captchaFormFile = open('./include/captchaform.html', 'r')
+	for line in captchaFormFile:
+		captchaForm = captchaForm + line
+
+	captchaJSfile.close()
+	captchaFormFile.close()	
+	
 	items = [
 		getContactSection(),
 		'<HR>',
@@ -971,6 +988,8 @@ def getMainForm():
 		'<HR>',
 		getCommentsSection(),
 		'</TD></TR></TABLE>',
+		captchaForm,
+		captchaJS,
 		]
 	return ''.join (items)
 
@@ -1350,6 +1369,7 @@ def updateFields (
 	# convert our FieldStorage object to our 'dict'
 
 	for key in parms.keys():
+		
 		if type(parms[key]) == types.ListType:
 			dict[key] = []
 			for item in parms[key]:
@@ -1621,24 +1641,46 @@ def buildText(escapeValues = False):
 
 	# list of sections with Field objects
 	sections = [ CONTACT_FIELDS, CITING_FIELDS, ALLELE_FIELDS,
-		STRAIN_FIELDS, PHENOTYPE_FIELDS, COMMENTS_FIELDS ]
+		STRAIN_FIELDS, PHENOTYPE_FIELDS, COMMENTS_FIELDS, CAPTCHA_FIELDS ]
 
 	# list of strings, each one line for pre-formatted text output
 	lines = []
+
+	captcha_element = ''
+	if config.has_key('CAPTCHA_ELEMENT'):
+		captcha_element = config['CAPTCHA_ELEMENT']
+	captcha_timeout = ''
+	if config.has_key('CAPTCHA_TIMEOUT'):
+		captcha_timeout = config['CAPTCHA_TIMEOUT']
+	captche_hide = ''
+	if config.has_key('CAPTCHA_HIDE'):
+		captcha_hide = config['CAPTCHA_HIDE']
+	
 
 	for section in sections:
 		# did we have at least one line of output for this section?
 		hadOne = False
 
 		for field in section:
+
 			# validate each field in the section
 			field.validate()
 			fieldErrors = field.getErrors()
 
+		
+			if field.getFieldname() == captcha_element:
+				if int(field.getValue()) < int(captcha_timeout):
+					ERRORS.append("You must fill out all required fields")
+					ERRANT_FIELDS[field.getFieldname()] = True
+			elif (field.getFieldname() == captcha_hide):
+				if field.getValue() != '':
+					ERRORS.append("You must fill out all required fields.")
+					ERRANT_FIELDS[field.getFieldname()] = True
+		
 			# if we have a value, we'll need to
 			# add to our output 'lines'
 
-			if field.getValue():
+			elif field.getValue():
 				# handle escaping of < and > characters
 
 				if escapeValues:
