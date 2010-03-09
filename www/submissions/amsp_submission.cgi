@@ -106,7 +106,7 @@ CONTACT_FIELDS = [
 # fields for the reference/citation section
 CITING_FIELDS = [
 	feedbacklib.RadioButtonGroup ('isPublished',
-		'Is your data published?',
+		'Are your data published?',
  		items = [ [ ('yes', 'yes'), ('no', 'no') ] ]),
 	feedbacklib.RadioButtonGroup ('makePublicNow',
 		'You would prefer that your data ',
@@ -1568,65 +1568,6 @@ def doExtraValidation():
 	if e:
 		SHOW_PHENOTYPE = True
 		errors = errors + e
-
-	# verify gene symbol/ID for allele
-
-	gene = getField('gene').getValue()
-	if gene:
-		if not isKnownGene(gene):
-			gene = cgi.escape(gene)
-			ERRANT_FIELDS['gene'] = True
-			errors.append ('Invalid gene symbol/ID: %s' % gene) 
-
-	# verify gene symbols for strain
-
-	genes = getField('genes').getValue()
-	if genes:
-		unknowns = []
-		for gene in map(string.strip, genes.split('\n')):
-			if not isKnownGene(gene):
-				gene = cgi.escape(gene)
-				if gene not in unknowns:
-					unknowns.append(gene)
-		if unknowns:
-			SHOW_STRAIN = True
-			ERRANT_FIELDS['genes'] = True
-			errors.append ('Invalid gene(s) for strain: %s' % \
-				', '.join (unknowns))
-
-	# verify allele symbols from allele pairs, allowing either official
-	# nomenclature (from the database) and/or the user's new suggested
-	# allele symbol
-
-	# trim the submitted allele down to just its symbol by splitting
-	# repeatedly on spaces and commas
-	submittedAllele = getField('alleleSymbol').getValue()
-	if submittedAllele:
-		while (' ' in submittedAllele) or (',' in submittedAllele):
-			submittedAllele = submittedAllele.split(' ')[0]
-			submittedAllele = submittedAllele.split(',')[0]
-
-		if submittedAllele:
-			KNOWN_ALLELES[submittedAllele] = True
-
-	allelePairs = getField('allelePairs').getValue()
-	if allelePairs:
-		allelePairs = allelePairs.strip()
-	if allelePairs:
-		pairs = allelePairs.split('\n')
-		unknowns = []
-		for pair in pairs:
-			for allele in pair.split(','):
-				allele = allele.strip()
-				if not isKnownAllele(allele):
-					allele = cgi.escape(allele)
-					if allele not in unknowns:
-						unknowns.append (allele)
-		if unknowns:
-			SHOW_PHENOTYPE = True
-			ERRANT_FIELDS['allelePairs'] = True
-			errors.append ('Invalid alleles in allele pairs: %s' \
-				% ', '.join (unknowns))
 
 	return errors
 
