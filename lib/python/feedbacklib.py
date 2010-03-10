@@ -252,6 +252,25 @@ class Field:
 		# Notes: The only validation rule is that required fields
 		#	must contain a value.
 
+		captcha_element = ''
+		if config.has_key('CAPTCHA_ELEMENT'):
+			captcha_element = config['CAPTCHA_ELEMENT']
+		captcha_timeout = ''
+		if config.has_key('CAPTCHA_TIMEOUT'):
+			captcha_timeout = config['CAPTCHA_TIMEOUT']
+		captche_hide = ''
+		if config.has_key('CAPTCHA_HIDE'):
+			captcha_hide = config['CAPTCHA_HIDE']
+
+		if self.label == captcha_element:
+			if self.value != None and int(self.value) < int(captcha_timeout):
+				self.errors = ['You have not filled out all of the required fields']
+				return 
+				
+		if self.label == captcha_hide and self.value != None and self.value != '':
+			self.errors = ['You have not filled out all of the required fields.']
+			return 
+			
 		if self.required and not self.value:
 			self.errors = ['%s is a required field.' % self.label]
 		else:
@@ -774,6 +793,21 @@ class UserInput:
 			OPTIONAL)
 		self.referer = HiddenField ('referer', 'Referring Page',
 			OPTIONAL)
+			
+		captcha_element = ''
+		if config.has_key('CAPTCHA_ELEMENT'):
+			captcha_element = config['CAPTCHA_ELEMENT']
+		captcha_timeout = ''
+		if config.has_key('CAPTCHA_TIMEOUT'):
+			captcha_timeout = config['CAPTCHA_TIMEOUT']
+		captche_hide = ''
+		if config.has_key('CAPTCHA_HIDE'):
+			captcha_hide = config['CAPTCHA_HIDE']			
+			
+		self.captcha_e = HiddenField (captcha_element, captcha_element,
+			OPTIONAL) 
+		self.captcha_h = HiddenField (captcha_hide, captcha_hide,
+			OPTIONAL)
 
 		# If we received any parameters, use them to set the values
 		# of the instance variables.
@@ -860,6 +894,20 @@ class UserInput:
 
 		# build body of the page
 
+		captchaJS = ''
+		captchaForm = ''
+			
+		captchaJSfile = open('./include/captchajs.html', 'r')
+		for line in captchaJSfile:
+			captchaJS = captchaJS + line
+				
+		captchaFormFile = open('./include/captchaform.html', 'r')
+		for line in captchaFormFile:
+			captchaForm = captchaForm + line
+		
+		captchaJSfile.close()
+		captchaFormFile.close()	
+	
 		bodyTop = [
 			'''We want to hear from you.  Use this form to submit
 			updates to the information in our
@@ -869,6 +917,7 @@ class UserInput:
 			references as appropriate.  We appreciate your input
 			and comments, and will review them promptly.''',
 			'<FORM METHOD=post ACTION=feedback.cgi>',
+			captchaForm,
 			'<TABLE>',
 						'<TR><TD>%s<TD>%s</TABLE>' % (self.subject.getLabel(),
 									self.subject.getHTML()),
@@ -891,7 +940,8 @@ class UserInput:
 			'<INPUT TYPE=reset>',
 			'<INPUT TYPE=button VALUE="Cancel" ',
 			'	onClick="window.close()">',
-			'</FORM><HR>' ]
+			'</FORM><HR>',
+			captchaJS]
 
 		# get template and set title and heading
 		page_template = template.Template(config['TEMPLATE_PATH'])
@@ -1106,7 +1156,7 @@ class SimpleTextUserInput (UserInput):
 
 		return UserInput.getPlainText (self, fields = [ 'subject',
 			'firstName', 'lastName', 'institution', 'email', 
-			'comments' ])
+			'comments'])
 
 class AssayUserInput (SimpleTextUserInput):
 	# Concept:
