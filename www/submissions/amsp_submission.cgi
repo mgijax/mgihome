@@ -242,6 +242,10 @@ COMMENTS_FIELDS = [
 
 CAPTCHA_FIELDS = [feedbacklib.OneLineTextField ('street', 'street'),
 	feedbacklib.MultiLineTextField ('business', 'business'),]
+	
+SUBMISSION_FIELDS = [feedbacklib.RadioButtonGroup ('isCopyrighted',
+		'Are the file(s) that you submitted copyrighted?',
+ 		items = [ [ ('yes', 'yes'), ('no', 'no') ] ]),]
 
 # note that file upload fields are not represented in feedbacklib, but are
 # instead handled directly in this script
@@ -446,7 +450,7 @@ def getField (
 
 	if not ALL_FIELDS:
 		for group in [ CONTACT_FIELDS, CITING_FIELDS, ALLELE_FIELDS,
-			STRAIN_FIELDS, PHENOTYPE_FIELDS, COMMENTS_FIELDS, CAPTCHA_FIELDS ]:
+			STRAIN_FIELDS, PHENOTYPE_FIELDS, COMMENTS_FIELDS, CAPTCHA_FIELDS, SUBMISSION_FIELDS]:
 			for field in group:
 				if ALL_FIELDS.has_key(field.getFieldname()):
 					# should not happen; this would be a
@@ -823,6 +827,9 @@ def getFileReportingSection():
 	# Throws: nothing
 
 	items = [ sectionTitle('File submissions', False),
+		getField('isCopyrighted').getLabel(),
+		getField('isCopyrighted').getHTML() + '<BR>',
+		'If you have entered copyrighted information we will contact you.<br><BR>'
 		'The following files were received and have been saved as ',
 		'part of your submission:',
 		'<UL>',
@@ -859,6 +866,9 @@ def getFileUploadSection():
 		'contact us at: ',
 		'<a href="mailto:submissions@informatics.jax.org">',
 		'submissions@informatics.jax.org</a>.<P>',
+		getField('isCopyrighted').getLabel(),
+		getField('isCopyrighted').getHTML(),
+		'<br>If you have entered copyrighted information we will contact you.<br><BR>'
 		'Upload your data files (images, text descriptions, Excel, ',
 		'or text data):<BR>',
 		'File 1: <INPUT NAME="file1" TYPE="file">',
@@ -1516,9 +1526,18 @@ def doExtraValidation():
 	# Throws: nothing
 
 	global ERRANT_FIELDS, SHOW_ALLELE, SHOW_PHENOTYPE, SHOW_STRAIN
-	global KNOWN_ALLELES
+	global KNOWN_ALLELES, file1
 
 	errors = []
+
+	# verify that the copyright question has been answered in the case of a 
+	# file submission
+	
+	copyright = getField('isCopyrighted')
+		
+	if file1 != '' and file1.value != '' and copyright.getValue() == '':
+		ERRANT_FIELDS['isCopyrighted'] = True
+		errors.append ('You must answer the copyright question when submitting a file.')
 
 	# verify email address format (roughly); see regex below
 
@@ -1607,8 +1626,7 @@ def buildText(escapeValues = False):
 			# validate each field in the section
 			field.validate()
 			fieldErrors = field.getErrors()
-
-		
+			
 			if field.getFieldname() == captcha_element:
 				if int(field.getValue()) < int(captcha_timeout):
 					ERRORS.append("You must fill out all required fields")
@@ -1685,6 +1703,8 @@ def buildText(escapeValues = False):
 			ERRORS.append ('Uploaded files were not saved, ' \
 					+ 'due to verification errors')
 		else:
+			if getField('isCopyrighted') != None:
+				lines.append('Copyrighted: ' + str(getField('isCopyrighted').getValue()))
 			for file in UPLOADED_FILES:
 				lines.append ('Uploaded file: %s (%s bytes)' \
 					% (file['filename'],
@@ -2008,6 +2028,7 @@ def main():
 	# Throws: nothing
 
 	global UPLOADED_FILES, SUBMISSION_SUBDIR
+	global file1
 
 	# initial setup of output page (assume TEMPLATE_PATH is correct)
 	myTitle = 'Mutant Alleles, Strains, and Phenotypes Submission Form'
@@ -2025,6 +2046,12 @@ def main():
 	# get input parameters from form submission, and update our Field
 	# objects
 	parms = cgi.FieldStorage()
+	
+	if parms.has_key('file1'):
+		file1 = parms['file1']
+	else: # The file has already been stripped off and converted.
+		file1 = ''
+		
 
 	# get cached values using cookie from the user, if available, to
 	# pre-populate the contact info fields; however, only do this for an
