@@ -30,16 +30,39 @@
   <tr><td><a name="april"></a>
 <!--section1 table-->
       <table class="outline" width="100%">
- <tr><td class="enhance">April 1, 2010: MGI announces the following enhancements for its 4.33 release:
+ <tr><td class="enhance">April 1, 2010: MGI announces the following additions oand enhancements for the 4.33 release:
  </td></tr>
 <tr><td>&nbsp;</td></tr>
 <tr>
 <td>
 	<dl class="linkedList">
- 	 <dt>The <a href="<!--#include file='include/java_url.html'-->WIFetch?page=batchQF">MGI Batch Query</a> can now handle very large files.</dt>
-	<dt>Gene detail pages now include notes for any MGI marker associations to VEGA, Ensembl or NCBI gene models with gene/pseudogene discrepancies.</dt>
-	<dt>Gene detail pages may also include strain specificity information (e.g., when a gene is not present in a given strain), as well as links to protein ontology and gene model evidence for a given marker.
-	<dt>A new <a href="<!--#include file='include/ftp_url2.html'-->reports/MGI_BioTypeConflict.rpt">MGI Data and Statistical Report</a> provides details about the gene vs. pseudogene discrepancies exists.</dt>
+	<dt>All alleles from KOMP and EUCOMM are now represented in MGI.</dt>
+
+ 	 <dt>Gene detail pages may now include (for a given marker):</dt><br>
+	<ul>
+	  <li>Vega and Ensembl transcript/protein sequences</li><br>
+	  <li>links to gene model evidence</li><br>
+<li>links to protein ontology annotations</li><br>
+	 
+<li>notes for any MGI marker associations to VEGA, Ensembl or NCBI gene models with gene/pseudogene discrepancies. A new <a href="<!--#include file='include/ftp_url2.html'-->reports/MGI_BioTypeConflict.rpt">report</a> provides details.</li><br>
+<li>strain specificity information (e.g., when a gene is not present in a given strain)	</li>
+	</ul></dt>
+ <dt>An option to direct query output to Excel is now available from the following:
+<ul>
+<li><A HREF="<!--#include file='include/java_url.html'-->WIFetch?page=markerQF">Genes and Markers Query Form</a></li>
+<li><a href="<!--#include file='include/java_url.html'-->WIFetch?page=snpQF">Mouse SNP Query Form</a></li>
+<li><a href="<!--#include file='include/wi_url.html'-->searches/sequence_form.shtml>Mouse Sequence Query Form</a></li>
+<li><a href="<!--#include file='include/java_url.html'-->WIFetch?page=batchQF">MGI Batch Query</a> </li>
+</ul>
+</dt>	
+
+<dt>Additionally, the <a href="<!--#include file='include/java_url.html'-->WIFetch?page=batchQF">MGI Batch Query</a> can now handle very large files.</dt>
+
+
+
+ 
+   
+
 
 	</dl>
 
