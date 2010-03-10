@@ -57,6 +57,10 @@ field_order = [
 # error message string for missing required fields
 err_message = '''These required fields are missing: %s<BR>
 	Please go back and try again.<P>'''
+	
+# Purposefully vague captcha error message
+captcha_err_message = '''You did not fill out all of the required fields.<BR>
+	Please go back and try again.<P>'''	
 
 # header for generated e-mail
 mailheader = '''From: %s
@@ -73,11 +77,39 @@ gen_footer = ['<SMALL>',
 
 class myCGI (CGI.CGI):
 	def main(self):
+	
+		captchaFound = False
+		captcha_element = ''
+		if config.has_key('CAPTCHA_ELEMENT'):
+			captcha_element = config['CAPTCHA_ELEMENT']
+		captcha_timeout = ''
+		if config.has_key('CAPTCHA_TIMEOUT'):
+			captcha_timeout = config['CAPTCHA_TIMEOUT']
+		captche_hide = ''
+		if config.has_key('CAPTCHA_HIDE'):
+			captcha_hide = config['CAPTCHA_HIDE']
+	
 		parms = self.get_parms()
 		missing_fields = []
 		for key in required_fields:
 			if not parms.has_key (key):
 				missing_fields.append (labels[key])
+				
+		if parms.has_key(captcha_element):
+			if int(parms[captcha_element]) < int(captcha_timeout):
+				captchaFound = True
+		if parms.has_key(captcha_hide):
+			if parms[captcha_hide] != '':
+				captchaFound = True
+				
+		if captchaFound == True:
+			reply_message.setTitle('GEN registration Form')
+			reply_message.setHeaderBarMainText('GEN-Registration Error')
+			reply_message.setBody(captcha_err_message)
+			reply_message.appendBody(string.join (gen_footer, '\n '))
+			print reply_message.getFullDocument()
+			sys.exit (0)
+				
 		if missing_fields:
 			reply_message.setTitle('GEN registration Form')
 			reply_message.setHeaderBarMainText('GEN-Registration Error')
