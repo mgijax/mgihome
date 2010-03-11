@@ -918,7 +918,7 @@ def hiddenStyle (
 		return ''
 	return ' STYLE="display:none;"'
 
-def getMainForm():
+def getMainForm(fromVerify):
 	# Purpose: get the main part of the submission form (the part with the
 	#	fields, except for file submissions)
 	# Returns: string of HTML, for the contact section through the
@@ -944,6 +944,12 @@ def getMainForm():
 
 	captchaJSfile.close()
 	captchaFormFile.close()	
+	
+	if fromVerify == True:
+		# We are in the second pass, where we don't want to output the captcha stuff
+		# So blank them out.
+		captchaForm = ''
+		captchaJS = ''
 	
 	items = [
 		getContactSection(),
@@ -1037,7 +1043,7 @@ def getInitialForm():
 		'or genetically engineered mutations, to register new mouse ',
 		'strains, and to describe phenotypes.<P>',
 		'<FORM ACTION="%ssubmissions/amsp_submission.cgi" METHOD="POST" ENCTYPE="multipart/form-data">' % config['MGIHOME_URL'],
-		getMainForm(),
+		getMainForm(False),
 		'<P>',
 		'<B>Use the buttons below to verify your data before ',
 		'submission or to reset the entire form.<BR>Thank ',
@@ -1079,7 +1085,7 @@ def getVerifyForm (
 	items = [
 		'Please review the text of your submission below.',
 		]
-		
+	
 	if hadErrors:
 		if len(ERRORS) > 1:
 			s1 = 'There are %d errors which ' % len(ERRORS)
@@ -1137,13 +1143,13 @@ def getVerifyForm (
 			'</TD></TR></TABLE>',
 			'<SPAN ID="mainForm" STYLE="display:none;">',
 			])
-		postForm = '</SPAN>'
+		postForm = '</SPAN>'	
 
 	items = items + [
 		'<PRE>%s</PRE>' % text,
 		'<FORM ACTION="%ssubmissions/amsp_submission.cgi" ENCTYPE="multipart/form-data" METHOD="POST">' % config['MGIHOME_URL'],
 		preForm,
-		getMainForm(),
+		getMainForm(True),
 		postForm,
 		'<P>',
 		]
@@ -1628,11 +1634,11 @@ def buildText(escapeValues = False):
 			fieldErrors = field.getErrors()
 			
 			if field.getFieldname() == captcha_element:
-				if int(field.getValue()) < int(captcha_timeout):
+				if field.getValue() != None and int(field.getValue()) < int(captcha_timeout):
 					ERRORS.append("You must fill out all required fields")
 					ERRANT_FIELDS[field.getFieldname()] = True
 			elif (field.getFieldname() == captcha_hide):
-				if field.getValue() != '':
+				if field.getValue() != '' and field.getValue() != None:
 					ERRORS.append("You must fill out all required fields.")
 					ERRANT_FIELDS[field.getFieldname()] = True
 		
