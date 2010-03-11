@@ -1024,7 +1024,7 @@ class UserInput:
 			('Request Summary', self.subject.getValue()),
 			]
 		for (name, value) in fields:
-			lines.append (name + ': ' + value)
+			lines.append (name + ': ' + str(value))
 
 		lines.append('\n' + self.getDetails())			
 		return string.join (lines, '\n')
