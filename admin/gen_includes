@@ -78,9 +78,8 @@ def captchaInclude ():
         (config['CAPTCHA_ELEMENT'], config['CAPTCHA_ELEMENT'], \
         config['CAPTCHA_HIDE'], config['CAPTCHA_HIDE'])
     js = """<script type="text/javascript" language="JavaScript"> 
-            var el = new YAHOO.util.Element("%s"); 
-            el.setStyle("display", "none");
-            el.get("element").value = "";
+            list_row = document.getElementById("%s");
+	    list_row.parentNode.removeChild(list_row);
         </script>""" % config['CAPTCHA_HIDE']
 
         
