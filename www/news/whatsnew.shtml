@@ -30,22 +30,23 @@
   <tr><td><a name="april"></a>
 <!--section1 table-->
       <table class="outline" width="100%">
- <tr><td class="enhance">April 1, 2010: MGI announces the following enhancements for the 4.33 release:
+ <tr><td class="enhance">April 1, 2010:
  </td></tr>
 <tr><td>&nbsp;</td></tr>
 <tr>
 <td>
-	<dl class="linkedList">
-	<dt>All alleles from KOMP and EUCOMM are now represented in MGI.</dt>
 
- 	 <dt>Gene detail pages may now include (for a given marker):</dt><br>
-	<ul>
-	  <li>Vega and Ensembl transcript/protein sequences;</li><br>
+
+	<dl class="linkedList">
+	<dt>MGI now represents all alleles from KOMP and EUCOMM.</dt>
+
+ 	 <dt>For the 4.33 release, gene detail pages may now include (for a given marker):</dt><br>
+	<ul>	 
+<li>notes identifying any MGI marker associations to VEGA, Ensembl or NCBI gene models with gene/pseudogene discrepancies (a new <a href="<!--#include file='include/ftp_url2.html'-->reports/MGI_BioTypeConflict.rpt">report</a> provides details);</li><br>
+<li>strain specificity information (for example, a notation that a gene is not present in a given strain);</li>
+ <li>Vega and Ensembl transcript and/or protein sequences;</li><br>
 	  <li>links to gene model evidence;</li><br>
-<li>links to protein ontology annotations;</li><br>
-	 
-<li>notes for any MGI marker associations to VEGA, Ensembl or NCBI gene models with gene/pseudogene discrepancies (a new <a href="<!--#include file='include/ftp_url2.html'-->reports/MGI_BioTypeConflict.rpt">report</a> provides details);</li><br>
-<li>strain specificity information (for example, a notation that a gene is not present in a given strain).</li>
+<li>links to protein ontology annotations.</li><br>
 	</ul></dt>
  <dt>An option to direct query output to Excel is now available from the following:
 <ul>
