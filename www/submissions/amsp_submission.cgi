@@ -577,7 +577,7 @@ def getCitingSection():
 	# Fields are left-aligned (no table structure)
 
 	items = [ sectionTitle('Citing your data', False),
-		'Is your data published?&nbsp;&nbsp;&nbsp;',
+		'Are your data published?&nbsp;&nbsp;&nbsp;',
 		getField('isPublished').getHTML(),
 		'<P>',
 		'If no, would you prefer that your data:&nbsp;&nbsp;&nbsp;',
