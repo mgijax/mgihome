@@ -38,24 +38,26 @@
 
 
 	<dl class="linkedList">
-	<dt>MGI now represents all alleles from KOMP and EUCOMM.</dt>
+	<dt>MGI now represents all alleles from KOMP and EUCOMM; for example,  <a href="http://firien.informatics.jax.org/javawi2/servlet/WIFetch?page=alleleDetail&key=572224">Aamp<sup>tm1a(KOMP)Wtsi</sup></a> and <a href="http://firien.informatics.jax.org/javawi2/servlet/WIFetch?page=alleleDetail&key=611427">Zap70<sup>tm2e(EUCOMM)Hmgu</sup></a></dt><br>
 
- 	 <dt>For the 4.33 release, gene detail pages may now include (for a given marker):</dt>
+ 	 <dt>For the 4.33 release, gene detail pages may now include (for a given MGI marker):</dt><br>
 	<ul>	 
-<li>notes identifying any MGI marker associations to VEGA, Ensembl, or NCBI gene models with gene/pseudogene discrepancies (a new <a href="<!--#include file='include/ftp_url2.html'-->reports/MGI_BioTypeConflict.rpt">report</a> provides details);</li>
-<li>strain specificity information (for example, a notation that a gene is not present in a given strain);</li>
- <li>Vega and Ensembl transcript and/or protein sequences;</li>
-	  <li>links to gene model evidence;</li>
-<li>links to protein ontology annotations.</li>
-	</ul></dt>
- <dt>An option to direct query output to Excel is now available from the following:
+<li>A note when there are gene/pseudogene discrepancies between VEGA (e.g. <a href="http://firien.informatics.jax.org/javawi2/servlet/WIFetch?page=markerDetail&key=24701">Amy2b</a>),&nbsp;Ensembl (e.g. <a href="http://firien.informatics.jax.org/javawi2/servlet/WIFetch?page=markerDetail&key=65149">Cecr6</a>, or NCBI (e.g. <a href="http://firien.informatics.jax.org/javawi2/servlet/WIFetch?page=markerDetail&key=46461">Cdc34-ps</a>) marker associations. &nbsp; A new <a href="<!--#include file='include/ftp_url2.html'-->reports/MGI_BioTypeConflict.rpt">report</a> provides details);</li><br>
+
+ <li>Vega and Ensembl transcript and/or protein sequences (see <a href="http://firien.informatics.jax.org/javawi2/servlet/WIFetch?page=markerDetail&key=13534">Sox2</a>, <b>Sequences</b>);</li><br>
+<li>links to gene model evidence (see <a href="http://firien.informatics.jax.org/javawi2/servlet/WIFetch?page=markerDetail&key=13534">Sox2</a>, <b>Other database links</b>)</li><br>
+<li>links to protein ontology annotations (see <a href="http://firien.informatics.jax.org/javawi2/servlet/WIFetch?page=markerDetail&key=13534">Sox2</a>, <b>Protein-related information</b>).</li>
+	</ul></dt><br>
+ <dt>An option to direct the output of your query to Excel is now available from the following:<br><br>
 <ul>
-<li><A HREF="<!--#include file='include/java_url.html'-->WIFetch?page=markerQF">Genes and Markers Query Form</a></li>
-<li><a href="<!--#include file='include/java_url.html'-->WIFetch?page=snpQF">Mouse SNP Query Form</a></li>
-<li><a href="<!--#include file='include/wi_url.html'-->searches/sequence_form.shtml">Mouse Sequence Query Form</a></li>
+<li><A HREF="<!--#include file='include/java_url.html'-->WIFetch?page=markerQF">Genes and Markers Query Form</a></li><br>
+<li><a href="<!--#include file='include/java_url.html'-->WIFetch?page=snpQF">Mouse SNP Query Form</a></li><br>
+
+<li><a href="<!--#include file='include/wi_url.html'-->searches/sequence_form.shtml">Mouse Sequence Query Form</a></li><br>
+
 <li><a href="<!--#include file='include/java_url.html'-->WIFetch?page=batchQF">MGI Batch Query</a> </li>
 </ul>
-</dt>	
+</dt>	<br>
 
 <dt>Additionally, the <a href="<!--#include file='include/java_url.html'-->WIFetch?page=batchQF">MGI Batch Query</a> can now handle very large files.</dt>
 
