@@ -43,7 +43,7 @@ The goal of the <a href="http://tumor.informatics.jax.org/mtbwi/index.do">Mouse 
 <h3><a name="aboutMGD"></a>About MGD</h3>
 
 <ul>
-  <li>MGD includes information on mouse genetic markers, molecular clones (probes, primers and YACs), phenotypes, sequences, comparative mapping data, graphical displays of linkage, cytogenetic and physical maps, experimental mapping data, as well as
+  <li>MGD includes information on mouse genetic markers, molecular clones (probes, primers, and YACs), phenotypes, sequences, comparative mapping data, graphical displays of linkage, cytogenetic and physical maps, experimental mapping data, as well as
  strain distribution patterns for recombinant inbred strains (RIs) and cross haplotypes.</li>
   <li>Sources for information in the database include the scientific  literature,  DNA  mapping  panel data produced by various researchers, the MIT Whitehead Institute (MIT genetic  and physical mapping data), WashU, and the  IMAGE  consortium.</li>
 <li>MGD is closely linked with GXD's Gene Expression Literature index. This is a searchable index of  references to the  scientific literature reporting data on endogenous gene expression during mouse embryonic development. MGD provides links to Gene Expression Literature content records through genetic marker detail records, and in turn, the content records provide inks to MGD references and genetic marker records.</li>
@@ -109,10 +109,8 @@ addition, there is an <A HREF="<!--#include file='include/wi_url.html'-->searche
 Phenotypic allele <A HREF="<!--#include file='include/userdocs_url.html'-->allele_summary_report.shtml">summary</A> and <A HREF="<!--#include file='include/userdocs_url.html'-->allele_detail_report.shtml">detail</A> reports provide detailed  information about the content of phenotype records including observed phenotypes in mouse and genetic background. The Human Disease and Mouse Model Detail page lists orthologous mouse and human markers where mutations in one or both species have been associated with phenotypes characteristic of this disease as well as any mouse models.</p>
 
 <h3><A NAME="probes"></A>Molecular Probes and Clones</h3>
- <P>You can use the <A HREF="<!--#include file='include/java_url.html'-->WIFetch?page=probeQF">Molecular Probes and Clones Query Form</a> to find information on probes, clones, primers, YACs, and STSs.
-Information may include the origin of the probe/clone, sequence,
-vector type, hybridizing loci, RFLPs, and references. See the <A HREF="<!--#include file='include/userdocs_url.html'-->probe_help.shtml">Using the Molecular Probes and Clones Query Form</a> and the 
-<A HREF="<!--#include file='include/userdocs_url.html'-->probe_summary.shtml">Summary</A> and <A HREF="<!--#include file='include/userdocs_url.html'-->probe_detail.shtml">Detail</A> Help documents for more information about probe/clone records appearing in query results.
+
+<p>Probes, clones, primers, antibodies, etc. associated with MGI data for a gene or genome feature are available via a <b>Molecular reagents</b> link on Gene (or genome feature) Detail pages or from a link on  References -- Query Results Detail pages to <b>Molecular Probes and Clones</b>.</p>
 
 <P>Information on genetic polymorphisms is extracted from probe/clone records in MGD. The Polymorphisms Query Form enables you to search directly  for such information and display it. See
 <A HREF="<!--#include file='include/userdocs_url.html'-->polymorphism_help.shtml#summary">Summary</a> and <A HREF="<!--#include file='include/userdocs_url.html'-->polymorphism_help.shtml#detail">Details</A> for more information.</p>
