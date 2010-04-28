@@ -49,14 +49,7 @@
 				is in the term <dt>, and the link is in the definition <dd> -->
 				<div class="boxBG pad5">
 					<dl>
-						<dt>Search for orthologs between two species using marker symbol or  name, accession ID, chromosomal location,
-						  author or reference ID.</dt>
-						<dd class="searchList"><a href="<!--#include file='include/wi_url.html'-->searches/homology_form.shtml" class="small homeLink">Orthology Query</a></dd>
-
-						<dt class="whatList">Search for gene family data by the Protein Information Resource SuperFamily  classification names.</dt>
-						<dd class="searchList"><a href="<!--#include file='include/java_url.html'-->WIFetch?page=pirsfVocab&subset=A" class="small homeLink">Protein Superfamily (PIRSF) Browser</a></dd>
-
-						<dt class="whatList">Build a comparative map using the Linkage Map tool.</dt>
+					<dt class="whatList">Build a comparative map using the Linkage Map tool.</dt>
 						<dd class="searchList"><a href="<!--#include file='include/wi_url.html'-->searches/linkmap_form.shtml" class="small homeLink">Mouse Linkage Map with Orthologs</a></dd>
 
 						<dt class="whatList">View the mouse comparative genome maps.</dt>
@@ -91,9 +84,6 @@
 						<dd class="faqList">.. view a comparative map of mouse and human chromosomes?
 						<a class="small homeLink" onClick="javascript:openFaqWindow('ORTH_map.shtml'); return false;"
 						href="<!--#include file='include/faq_url.html'-->ORTH_map.shtml">FAQ</a></dd>
-						<dd class="faqList">.. search or browse PIRSF protein superfamilies mapped to mouse, human, and rat genes?
-						<a class="small homeLink" onClick="javascript:openFaqWindow('ORTH_pirsf.shtml'); return false;"
-						href="<!--#include file='include/faq_url.html'-->ORTH_pirsf.shtml">FAQ</a></dd>
 						<dd class="faqList">.. find the mouse ortholog of a human gene?
 						<a class="small homeLink" onClick="javascript:openFaqWindow('ORTH_gene.shtml'); return false;"
 						href="<!--#include file='include/faq_url.html'-->ORTH_gene.shtml">FAQ</a></dd>
