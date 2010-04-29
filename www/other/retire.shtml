@@ -73,7 +73,7 @@
 
       <div class="Change_Image"> 
       <em>Retired:</em> <span class="small"></span><br />
-      <a onClick="javascript:openNewWindowNoMenu('<!--#include file='include/mgihome_url2.html'-->images/AccIDQF.jpg')">
+      <a href="javascript:openNewWindowNoMenu('<!--#include file='include/mgihome_url2.html'-->images/AccIDQF.jpg')">
       <img src="<!--#include file='include/mgihome_url2.html'-->images/AccIDQF.jpg" alt="Accession ID Query Form" width="300px" /></a> </div>
       <h4>Accession IDs Query Form</h4> 
       <a href="<!--#include file='include/wi_url.html'-->searches/accession_form.shtml" target="_blank">(see existing page here)</a>
@@ -86,11 +86,8 @@
     <div class="Change_alternative">
       <div class="ChangeAlt_Image"> 
         <em>Use&nbsp;instead:</em><br />
-        <a onClick="javascript:openNewWindowNoMenu('<!--#include file='include/mgihome_url2.html'-->images/HomepageSearch_blur.jpg')">
-        <img src="<!--#include file='include/mgihome_url2.html'-->images/HomepageSearch_blur.jpg" alt="Homepage Search" width="300px" ></a><br />
-
-        <a onClick="javascript:openNewWindowNoMenu('<!--#include file='include/mgihome_url2.html'-->images/SearchBox_blur.jpg')">
-        <img src="<!--#include file='include/mgihome_url2.html'-->images/SearchBox_blur.jpg" alt="Quick Search Box" width="300px" ></a> <br />
+        <a href="javascript:openNewWindowNoMenu('<!--#include file='include/mgihome_url2.html'-->images/SearchBox.jpg')">
+        <img src="<!--#include file='include/mgihome_url2.html'-->images/SearchBox.jpg" alt="Quick Search Box" width="300px" ></a> <br />
         </div>
       <div class="text">Alternative(s):</div>
       <em class="AltText">Page:</em>&nbsp;&nbsp;Any MGI page<br />
@@ -112,7 +109,7 @@
             <div name="Existing" class="Existing">
                         <div class="Change_Image">
       <em>Retired:</em><br />
-                          <a onClick="javascript:openNewWindowNoMenu('<!--#include file='include/mgihome_url2.html'-->images/cDNA_QF.jpg')">
+                          <a href="javascript:openNewWindowNoMenu('<!--#include file='include/mgihome_url2.html'-->images/cDNA_QF.jpg')">
                           <img src="<!--#include file='include/mgihome_url2.html'-->images/cDNA_QF.jpg" alt="cDNA Clones Query Form" width="300px" border="0"  /></a></div>
                     <H4>cDNA Clone Query Form</H4> <a href="<!--#include file='include/javawi_url.html'-->WIFetch?page=cDNAQF" target="_blank">(see existing page here)</a><br />       
                     <em>Description:</em>&nbsp;&nbsp;Searches for expression information based on tissue or cell-line origin of cDNAs.<br />
@@ -123,7 +120,7 @@
                 <div class="Change_alternative">
                     <div class="ChangeAlt_Image">
                     <em>Use&nbsp;instead:</em><br />
-                    <a onClick="javascript:openNewWindowNoMenu('<!--#include file='include/mgihome_url2.html'-->images/cDNA_new.jpg')">
+                    <a href="javascript:openNewWindowNoMenu('<!--#include file='include/mgihome_url2.html'-->images/cDNA_new.jpg')">
                     <img src="<!--#include file='include/mgihome_url2.html'-->images/cDNA_new.jpg" alt="cDNA Clone Link on Marker Detail Page" width="300px" border="0" /></a><br />
 
                     </div>
@@ -148,7 +145,7 @@
             <div name="Existing" class="Existing">
                         <div class="Change_Image">
       <em>Retired:</em><br />
-                          <a onClick="javascript:openNewWindowNoMenu('<!--#include file='include/mgihome_url2.html'-->images/DNAmappingPanel.jpg')">
+                          <a href="javascript:openNewWindowNoMenu('<!--#include file='include/mgihome_url2.html'-->images/DNAmappingPanel.jpg')">
                           <img src="<!--#include file='include/mgihome_url2.html'-->images/DNAmappingPanel.jpg" alt="Mapping Panels Query Form" width="300px" border="0"  /></a></div>
                     <H4>DNA Mapping Panel Data Sets</H4> <a href="<!--#include file='include/wi_url.html'-->searches/crossdata_form.shtml" target="_blank">(see existing page here)</a><br />     
                     <em>Description:</em>&nbsp;&nbsp;Displays a table of the results of a genetic cross in HTML or tab-delimited format for user-selected mapping panel and chromosome.<br />
@@ -159,7 +156,7 @@
                 <div class="Change_alternative">
                     <div class="ChangeAlt_Image">
         <em>Use&nbsp;instead:</em><br />
-                      <a onClick="javascript:openNewWindowNoMenu('<!--#include file='include/mgihome_url2.html'-->images/MappingDataNew.jpg')">
+                      <a href="javascript:openNewWindowNoMenu('<!--#include file='include/mgihome_url2.html'-->images/MappingDataNew.jpg')">
                       <img src="<!--#include file='include/mgihome_url2.html'-->images/MappingDataNew.jpg" alt="Download menu for FTP site" width="300px" border="0" /></a> </div>
 
                 <div class="text">Alternative(s):</div>
@@ -184,7 +181,7 @@
             <div name="Existing" class="Existing">
                         <div class="Change_Image">
                         <em>Retired:</em><br />
-                        <a onClick="javascript:openNewWindowNoMenu('<!--#include file='include/mgihome_url2.html'-->images/ProbesClones_QFtitle.jpg')">
+                        <a href="javascript:openNewWindowNoMenu('<!--#include file='include/mgihome_url2.html'-->images/ProbesClones_QFtitle.jpg')">
                         <img src="<!--#include file='include/mgihome_url2.html'-->images/ProbesClones_QFtitle.jpg" alt="Probes and Clones Query Form" width="300px" border="0"  /></a>    </div>
                     <H4>Probes and Clones Query Form</H4> <a href="<!--#include file='include/javawi_url.html'-->WIFetch?page=probeQF" target="_blank">(see existing page here)</a><br />       
                     <em>Description:</em>&nbsp;&nbsp;Searches for probes, clones, primers, BACs, YACs and STSs in MGI's database.<br />
@@ -195,10 +192,10 @@
                 <div class="Change_alternative">
                     <div class="ChangeAlt_Image">
         <em>Use&nbsp;instead:</em><br />
-                    <a onClick="javascript:openNewWindowNoMenu('<!--#include file='include/mgihome_url2.html'-->images/ProbesClones_new.jpg')">
+                    <a href="javascript:openNewWindowNoMenu('<!--#include file='include/mgihome_url2.html'-->images/ProbesClones_new.jpg')">
                     <img src="<!--#include file='include/mgihome_url2.html'-->images/ProbesClones_new.jpg" alt="Probes and Clones Links from Marker" width="300px" border="0" /></a><br />
 
-                    <a onClick="javascript:openNewWindowNoMenu('<!--#include file='include/mgihome_url2.html'-->images/ProbesClones_RefDetCircled.jpg')">
+                    <a href="javascript:openNewWindowNoMenu('<!--#include file='include/mgihome_url2.html'-->images/ProbesClones_RefDetCircled.jpg')">
                     <img src="<!--#include file='include/mgihome_url2.html'-->images/ProbesClones_RefDetCircled.jpg" alt="Probes and Clones Links from Reference" width="300px" border="0" /></a>   </div>
                 <div class="text">Alternative(s):</div>
               <em>Page:</em>&nbsp;&nbsp;Detail Page for a gene or genome feature, or Detail Page for a reference<br />
@@ -221,7 +218,7 @@
             <div name="Existing" class="Existing">
                         <div class="Change_Image">
                         <em>Retired:</em><br />
-                        <a onClick="javascript:openNewWindowNoMenu('<!--#include file='include/mgihome_url2.html'-->images/OrthQF.jpg')">
+                        <a href="javascript:openNewWindowNoMenu('<!--#include file='include/mgihome_url2.html'-->images/OrthQF.jpg')">
                         <img src="<!--#include file='include/mgihome_url2.html'-->images/OrthQF.jpg" alt="Orthology Query Form" width="300px" border="0" /></a></div>
                     <H4>Orthology Query Form</H4> <a href="<!--#include file='include/wi_url.html'-->searches/homology_form.shtml" target="_blank">(see existing page here)</a><br />        
                     <em>Description:</em>&nbsp;&nbsp;Searches for orthologies between two or more mammalian species.<br />
@@ -232,12 +229,12 @@
                 <div class="Change_alternative">
                   <div class="ChangeAlt_Image">
                     <em>Use&nbsp;instead:</em><br />
-                    <a onClick="javascript:openNewWindowNoMenu('<!--#include file='include/mgihome_url2.html'-->images/Orthology_new.jpg')">
+                    <a href="javascript:openNewWindowNoMenu('<!--#include file='include/mgihome_url2.html'-->images/Orthology_new.jpg')">
                     <img src="<!--#include file='include/mgihome_url2.html'-->images/Orthology_new.jpg" alt="Marker Detail Page link to Orthology Summary" width="300px" border="0" /></a><br />
 
-                    <a onClick="javascript:openNewWindowNoMenu('<!--#include file='include/mgihome_url2.html'-->images/RefDetail_Orth.jpg')">
-                    <img src="<!--#include file='include/mgihome_url2.html'-->images/RefDetail_Orth.jpg" alt="Reference Detail Page link to Orthology Data" width="300px" border="0" /></a><br />
-                    <a onClick="javascript:openNewWindowNoMenu('<!--#include file='include/mgihome_url2.html'-->images/QS_Orth_new.jpg')">
+                    <a href="javascript:openNewWindowNoMenu('<!--#include file='include/mgihome_url2.html'-->images/RefDetail_c.jpg')">
+                    <img src="<!--#include file='include/mgihome_url2.html'-->images/RefDetail_c.jpg" alt="Reference Detail Page link to Orthology Data" width="300px" border="0" /></a><br />
+                    <a href="javascript:openNewWindowNoMenu('<!--#include file='include/mgihome_url2.html'-->images/QS_Orth_new.jpg')">
                     <img src="<!--#include file='include/mgihome_url2.html'-->images/QS_Orth_new.jpg" alt="Quick Search showing Ortholog" width="300px" border="0" /></a> </div>
                 <div class="text">Alternative(s):</div>
               <em>Page:</em>&nbsp;&nbsp;Detail Page for a gene or genome feature, or Detail Page for a reference, or Quick Search results when  using a non-mouse gene's accession ID.<br />
@@ -256,9 +253,9 @@
               <div class="Change_Image">
         <em>Retired:</em><br />
 
-                        <a onClick="javascript:openNewWindowNoMenu('<!--#include file='include/mgihome_url2.html'-->images/OxfordGridQF.jpg')">
+                        <a href="javascript:openNewWindowNoMenu('<!--#include file='include/mgihome_url2.html'-->images/OxfordGridQF.jpg')">
                         <img src="<!--#include file='include/mgihome_url2.html'-->images/OxfordGridQF.jpg" alt="Oxford Grid Query Form" width="300px" border="0"  /></a><br />
-                        <a onClick="javascript:openNewWindowNoMenu('<!--#include file='include/mgihome_url2.html'-->images/OxfordGrid.jpg')">
+                        <a href="javascript:openNewWindowNoMenu('<!--#include file='include/mgihome_url2.html'-->images/OxfordGrid.jpg')">
                         <img src="<!--#include file='include/mgihome_url2.html'-->images/OxfordGrid.jpg" alt="Mouse-Human Oxford Grid" width="300px" border="0"  /></a> </div>
                     <H4>Oxford Grid</H4> <a href="<!--#include file='include/wi_url.html'-->searches/oxfordgrid_form.shtml" target="_blank">(see existing page here)</a></H4><br />       
                     <em>Description:</em>&nbsp;&nbsp;Creates an Oxford Grid for user-selected organisms.<br />
@@ -286,7 +283,7 @@
 
               <div class="Change_Image">
                         <em>Retired:</em><br />
-                        <a onClick="javascript:openNewWindowNoMenu('<!--#include file='include/mgihome_url2.html'-->images/PIRSFbrowser.jpg')">
+                        <a href="javascript:openNewWindowNoMenu('<!--#include file='include/mgihome_url2.html'-->images/PIRSFbrowser.jpg')">
                         <img src="<!--#include file='include/mgihome_url2.html'-->images/PIRSFbrowser.jpg" alt="PIRSF First Page" width="300px" border="0"  /></a></div>
                     <H4>Protein Information Super Family (PIRSF) Browser</H4> <a href="<!--#include file='include/javawi_url.html'-->WIFetch?page=pirsfVocab&subset=A" target="_blank">(see existing page here)</a><br />        
                     <em>Description:</em>&nbsp;&nbsp;Searches for or allows browsing to PIRSF terms and displays links to the Super Family pages listing genes or genome features associated with that family.<br />
@@ -297,9 +294,9 @@
                 <div class="Change_alternative">
                   <div class="ChangeAlt_Image">
                     <em>Use&nbsp;instead:</em><br />
-                    <a onClick="javascript:openNewWindowNoMenu('<!--#include file='include/mgihome_url2.html'-->images/ProteinSupFam_new.jpg')">
+                    <a href="javascript:openNewWindowNoMenu('<!--#include file='include/mgihome_url2.html'-->images/ProteinSupFam_new.jpg')">
                     <img src="<!--#include file='include/mgihome_url2.html'-->images/ProteinSupFam_new.jpg" alt="PIRSF Link on Gene Detail Page" width="300px" border="0" /></a><br />
-                    <a onClick="javascript:openNewWindowNoMenu('<!--#include file='include/mgihome_url2.html'-->images/PIRSF_QS.jpg')">
+                    <a href="javascript:openNewWindowNoMenu('<!--#include file='include/mgihome_url2.html'-->images/PIRSF_QS.jpg')">
                     <img src="<!--#include file='include/mgihome_url2.html'-->images/PIRSF_QS.jpg" alt="PIRSF Quick Search Result" width="300px" border="0" /></a> </div>
                 <div class="text">Alternative(s):</div>
 
@@ -324,7 +321,7 @@
 
               <div class="Change_Image">
       <em>Retired:</em><br />
-                <a onClick="javascript:openNewWindowNoMenu('<!--#include file='include/mgihome_url2.html'-->images/NomenHistory.jpg')">
+                <a href="javascript:openNewWindowNoMenu('<!--#include file='include/mgihome_url2.html'-->images/NomenHistory.jpg')">
                 <img src="<!--#include file='include/mgihome_url2.html'-->images/NomenHistory.jpg" alt="Nomenclature History Page" width="300px" /></a> </div>
                     <H4>Nomenclature History</H4> <a href="<!--#include file='include/javawi_url.html'-->WIFetch?page=markerHistory&key=12184" target="_blank">(see existing page here)</a><br />        
                     <em>Description:</em>&nbsp;&nbsp;Provides a history of nomenclature changes for a gene or genome feature.<br />
