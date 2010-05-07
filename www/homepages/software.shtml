@@ -132,7 +132,7 @@ Note that the list in each section is a definition list <dl> where the term
 
 					<b><i>FASTA Output from our Web Interface</i></b>
 					<ul>
-					  <li>The FASTA format is available on reports where sequences are returned for a specific gene or when querying Sequences, Protein Superfamilies, or Orthologies.</li>
+					  <li>The FASTA format is available on reports where sequences are returned for a specific gene or when querying sequences.</li>
 					  <li>Click on the checkboxes next to each sequence to select it for FASTA download and click GO.</li>
 					  <li>From a gene detail page, FASTA is available for:</li>
 					      <ul>
@@ -141,12 +141,8 @@ Note that the list in each section is a definition list <dl> where the term
 							  <li>Human and rat orthologs</li>
 							  <li>Mouse, human, and rat protein sequences for superfamily members</li>
 					      </ul>
-					   <li>Use these query forms to generate reports with the FASTA format option available: </li>
-					       <ul>
-								<li><a href="<!--#include file='include/wi_url.html'-->searches/sequence_form.shtml">Mouse Sequence Query Form</a></li>
-								<li><a href="<!--#include file='include/java_url.html'-->WIFetch?page=pirsfVocab&subset=A">Protein Superfamily Browser</a></li>
-								<li><a href="<!--#include file='include/wi_url.html'-->searches/homology_form.shtml">Mammalian Orthology Query Form</a></li>
-					      </ul>
+					   <li>The FASTA format option is available for generating reports on the 	       <a href="<!--#include file='include/wi_url.html'-->searches/sequence_form.shtml">Mouse Sequence Query Form</a>.</li>
+							
   					</ul>
 				</td>
 			</tr>
