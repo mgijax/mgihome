@@ -18,6 +18,7 @@
         <table class="toc" width="100%">
 	<tr><td>
             <ul>
+		<li><a href="#september">September, 2010</a></li> |
 		<li><a href="#july">July 28, 2010</a></li> |
 		<li><a href="#june">June 18, 2010</a></li> |
 		<li><a href="#may">May 14, 2010</a> |</li>
@@ -68,7 +69,33 @@
 
   <tr><td><a name="june"></a>
 <!--section table-->
+<tr><td></td></tr>
+  <tr><td><a name="september"></a>
+<!--section1 table-->
       <table class="outline" width="100%">
+ <tr><td class="enhance">September, 2010</td>
+</td></tr>
+<tr><td>&nbsp;</td></tr>
+<tr>
+<td>
+<dl class="linkedList">
+	<dt>For the 4.4 release, you can now restrict a search to just protein-coding genes, to non-coding RNA genes, to heritable phenotypic markers, or to a variety of feature categories. You can query an entire category or limit your search to a single subcategory.
+<dt>Several MGI query forms and tools return these results. You can:
+	<dd><ol>
+	  <li>Select the desired Feature Type on the  <A HREF="<!--#include file='include/java_url.html'-->WIFetch?page=markerQF">Genes and Markers Query Form</a>. In parentheses beside each feature, a number indicates how many in that category the MGI database contains. When there is data available, summary pages return links to all matches; detail pages return the specifics for individual markers.</li>
+	  <li>Enter the type in the Quick Search box (e.g., <i>non-coding RNA gene</i>, <i>miRNA</i>. The result is a list of Genome Features and Vocabulary Terms containing the best matches for your query.</li>
+	  <li>Use MGI BioMart. Pick a type from the MGI Feature Type list. (Attributes-->Genome Features-->MGI Feature Type). Select Feature Type as an Attributes as well. (Attributes-->Features--Feature Type). The result is a list of all MGI entities assigned that feature type.  </li>
+<li>Use the MGI Batch Query Form to and enter/upload a list of symbols or IDs to search on. The result contains a column identifying the feature type for each of list item. </li>
+	</ol></dd>
+	
+
+<dd>For details about the new categories, see <a href="<!--#include file='include/userdocs_url.html'-->marker_feature_types.shtml">Genome Feature Type Definitions</a>.</dd>
+</dt>
+</dl>
+</td>
+</tr>
+
+
  <tr><td class="enhance">June 18, 2010</td>
 </td></tr>
 <tr><td>&nbsp;</td></tr>
