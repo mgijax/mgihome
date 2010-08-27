@@ -26,7 +26,7 @@
             </tr>
         </table>
     </td></tr>
-    
+
     <tr><td>
         <!-- section1 table -->
         <a name="intro"></a>
@@ -62,7 +62,7 @@
             </tr>
         </table>
     </td></tr>
-    
+
     <tr><td>
         <!-- section1 table -->
         <a name="reqs"></a>
@@ -81,13 +81,13 @@
 				        <li><a href="#mgiIDRequest">&lt;mgiIDRequest&gt;</a></li>
 				        <li><a href="#batchMarkerRequest">&lt;batchMarkerRequest&gt;</a></li>
 				    </ul>
-				
+
 				    <h4>Contact Information</h4>
 				    All requests contain a &lt;requestorEmail&gt; element.  The contact
 				    information in this element may be used to notify you of invalid requests or requests that
 				    place a heavy load on our servers.  If you cannot be contacted to resolve these issues, you may
 				    have your IP address blocked.
-				    
+
 				    <h4>WSDL & Schemas</h4>
 				    <ul>
 				        <li><a href="<!--#include file='include/mgiws_url.html'-->/mgiws.wsdl">WSDL</a> -
@@ -102,7 +102,7 @@
         </table>
     </td></tr>
 
-    
+
     <tr><td>
         <!-- section1 table -->
         <a name="details"></a>
@@ -115,10 +115,10 @@
             <tr >
                 <td>
                     <a name="mgiIDRequest"></a>
-                    
+
                     <h4>&lt;mgiIDRequest&gt;</h4>
                     <blockquote>
-                    
+
     The &lt;mgiIDRequest&gt; element lets you upload a set of identifiers and
     receive the corresponding MGI IDs for all genes/markers annotated to the
     input identifiers. All identifiers in the request set must be of the same supported
@@ -130,7 +130,7 @@
         <li>&lt;IDSet&gt; - An optional IDType attribute and 1 or more &lt;id&gt; sub-elements.  The &lt;IDSet&gt; element is defined
         in the http://ws.mgi.jax.org/xsd/request namespace.  The optional IDType attribute must be one of the case sensitive strings
         defined below and is used to indicate what type of identifiers the set contains.  If this attribute is omitted
-        <i>auto</i> is assumed and the batchMarkerRequest will attempt to detect type of the input ids it receives.  Note that this option supports 
+        <i>auto</i> is assumed and the batchMarkerRequest will attempt to detect type of the input ids it receives.  Note that this option supports
         an IDSet containing ids of mixed type.  The &lt;id&gt; sub-elements each contain
         an individual identifier, and queries for the identifiers are case insensitive.  The &lt;id&gt; element is defined
         in the http://ws.mgi.jax.org/xsd/request namespace.<br><br>
@@ -249,8 +249,8 @@
         <li>&lt;IDSet&gt; - An optional IDType attribute and 1 or more &lt;id&gt; sub-elements.  The &lt;IDSet&gt;
         element is defined in the http://ws.mgi.jax.org/xsd/request namespace.  The optional IDType attribute must be one of the
         case sensitive strings defined below and is used to indicate what type of identifiers the set contains.  If this attribute is omitted
-        <i>auto</i> is assumed and the batchMarkerRequest will attempt to detect type of the input ids it receives.  Note that this option supports 
-        an IDSet containing ids of mixed type.  
+        <i>auto</i> is assumed and the batchMarkerRequest will attempt to detect type of the input ids it receives.  Note that this option supports
+        an IDSet containing ids of mixed type.
         The &lt;id&gt; sub-elements each contain an individual identifier, and queries for the identifiers are case
         insensitive.  The &lt;id&gt; element is defined in the http://ws.mgi.jax.org/xsd/batchType namespace.<br><br>
 
@@ -274,7 +274,7 @@
             <tr><td valign="top">affy1</td><td valign="top">10344624</td></tr>
             <tr><td valign="top">affy2</td><td valign="top">1415680_at</td></tr>
         </table>
-        
+
         <br><br>
         </li>
         <li>&lt;returnSet&gt; - 1 - 5 &lt;attribute&gt; sub-elements.
@@ -295,7 +295,7 @@
             <tr><td valign="top">nomenclature</td><td valign="top">
                 &lt;Symbol&gt;<br/>
                 &lt;Name&gt;<br/>
-                &lt;MarkerType&gt; - e.g. Gene, Pseudogene, QTL</td></tr>
+                &lt;FeatureType&gt; - e.g. Gene, Pseudogene, QTL</td></tr>
             <tr><td valign="top">location</td><td valign="top">
                 &lt;Chr&gt; - chromosome location<br/>
                 &lt;Start&gt; - start coordinate<br/>
@@ -338,7 +338,7 @@
                 &lt;Term&gt;</td></tr>
             <tr><td valign="top">exp</td><td valign="top">&lt;anatomicalStructure&gt; - anatomical structure examined when analyzing expression for the gene/marker<br/>
                 &lt;expressed&gt; - number of times expression was detected in the structure<br>
-                &lt;notExpressed&gt; - number of times expression was found to be absent in the structure</td></tr>                
+                &lt;notExpressed&gt; - number of times expression was found to be absent in the structure</td></tr>
         </table><br><br>
         </li>
     </ol>
@@ -405,7 +405,7 @@
           &lt;mgi:entrezGeneID&gt;18028&lt;/mgi:entrezGeneID&gt;
           &lt;mgi:symbol&gt;Nfib&lt;/mgi:symbol&gt;
           &lt;mgi:name&gt;nuclear factor I/B&lt;/mgi:name&gt;
-          &lt;mgi:markerType&gt;Gene&lt;/mgi:markerType&gt;
+          &lt;mgi:featureType&gt;Gene&lt;/mgi:featureType&gt;
           &lt;mgi:vegaID&gt;OTTMUSG00000000395&lt;/mgi:vegaID&gt;
           &lt;mgi:ensemblID&gt;ENSMUSG00000052757&lt;/mgi:ensemblID&gt;
           &lt;mgi:chr&gt;4&lt;/mgi:chr&gt;
@@ -421,7 +421,7 @@
           &lt;mgi:entrezGeneID&gt;18028&lt;/mgi:entrezGeneID&gt;
           &lt;mgi:symbol&gt;Nfib&lt;/mgi:symbol&gt;
           &lt;mgi:name&gt;nuclear factor I/B&lt;/mgi:name&gt;
-          &lt;mgi:markerType&gt;Gene&lt;/mgi:markerType&gt;
+          &lt;mgi:featureType&gt;Gene&lt;/mgi:featureType&gt;
           &lt;mgi:vegaID&gt;OTTMUSG00000000395&lt;/mgi:vegaID&gt;
           &lt;mgi:ensemblID&gt;ENSMUSG00000008575&lt;/mgi:ensemblID&gt;
           &lt;mgi:chr&gt;4&lt;/mgi:chr&gt;
@@ -437,7 +437,7 @@
           &lt;mgi:entrezGeneID&gt;16596&lt;/mgi:entrezGeneID&gt;
           &lt;mgi:symbol&gt;Klf1&lt;/mgi:symbol&gt;
           &lt;mgi:name&gt;Kruppel-like factor 1 (erythroid)&lt;/mgi:name&gt;
-          &lt;mgi:markerType&gt;Gene&lt;/mgi:markerType&gt;
+          &lt;mgi:featureType&gt;Gene&lt;/mgi:featureType&gt;
           &lt;mgi:vegaID/&gt;
           &lt;mgi:ensemblID&gt;ENSMUSG00000054191&lt;/mgi:ensemblID&gt;
           &lt;mgi:chr&gt;8&lt;/mgi:chr&gt;
@@ -478,11 +478,11 @@
         &lt;resultCount&gt; is less than 20,000.  This ensures
         that you are seeing all results included in the response.</li>
     </ul>
-    </blockquote>              
+    </blockquote>
                 </td>
             </tr>
         </table>
-    </td></tr>    
+    </td></tr>
 
     <tr><td>
         <!-- section1 table -->
