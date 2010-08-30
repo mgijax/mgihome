@@ -41,14 +41,22 @@
 <tr>
 <td>
 <dl class="linkedList">
-	<dt>For the 4.4 release, MGI adds more detailed feature type categories for genes, differentiating <i>protein coding genes</i> from <i>non-coding RNA genes</i> from markers based only on <i>heritable phenotype</i> from <i>immunological gene segments</i>, You can query an entire category or limit your search to a single subcategory.</dt>
+	<dt>For the 4.4 release, MGI adds more detailed feature type categories for genes, differentiating <i>protein coding genes</i> from <i>non-coding RNA genes</i> from markers based only on <i>heritable phenotype</i> from <i>immunological gene segments</i>. You can query an entire category or limit your search to a single subcategory.</dt>
 	<dt><ul>
 	  <li>	You can query by desired feature types on the  <A HREF="<!--#include file='include/java_url.html'-->WIFetch?page=markerQF">Genes and Markers Query Form</a>. A count of the number of genes appears for each feature category.</li>
 	  <li>Feature type categories appear in the output of the Genes and Markers query and in the output from any Quick Search.</li>
-	  <li>Using MGI BioMart, you can pick a type from the MGI Feature Type list (Attributes-->Genome Features-->MGI Feature Type). Select Feature Type as an attribute as well (Attributes-->Features--Feature Type). The result is a list of all MGI entities assigned that feature type. </li>
+	  <li>Using MGI BioMart, you can pick a type from the MGI Feature Type list (Attributes-->Genome Features-->MGI Feature Type) and then select Feature Type as an attribute (Attributes-->Features--Feature Type). The result is a list of all MGI entities assigned that feature type. </li>
 <li>You can also use the MGI Batch Query Form to enter or upload a list of symbols or IDs to search on. A column identifying the feature type for each list item appears in the results. </li>
 	</ul></dt>
 	
+
+<dt>Many of the classification terms in MGI come from the Sequence Ontology (SO) project. The SO project develops terms and relationships describing features and attributes of biological sequences. 
+When the MGI classification term definition MGI comes from the SO project, the SO ID for that term appears.</dt>
+<dt><ul>
+  <li>Learn more about the SO project here: <a href="http://www.sequenceontology.org/index.html">http://www.sequenceontology.org/index.html</a>. </li>
+  <li>Search and browse the full SO ontology here: <a href="http://www.sequenceontology.org/cgi-bin/miso.cgi">http://www.sequenceontology.org/cgi-bin/miso.cgi</a>.</li>
+</ul>
+
 <dt>For details about the new categories, see <a href="<!--#include file='include/userdocs_url.html'-->marker_feature_types.shtml">Genome Feature Type Definitions</a>.</dt>
 </dl>
 </td>
