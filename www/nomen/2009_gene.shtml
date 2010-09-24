@@ -10,7 +10,7 @@
 </div> 
 
 <br/>
-<center>  <span class="titleBarSubTitle"> Revised: September, 2010span>
+<center>  <span class="titleBarSubTitle"> Revised: March, 2009</span>
 </center>
 
 <h3 align=center>International Committee on Standardized Genetic Nomenclature for Mice</h3>
@@ -61,10 +61,8 @@ found on the <a href="index.shtml">MGD</a> and <a href="http://rgd.mcw.edu/nomen
       		</ul>
     	<a href="#sg">2.4&nbsp;&nbsp;Structural Genes, Splice Variants, and Promoters</a><br>
         	<ul>
-		<a href="#altran">2.4.1&nbsp;&nbsp;Alternative Transcripts</a><br>
-        	<a href="#readtran">2.4.2&nbsp;&nbsp;Read-through Transcripts</a><br>
-       	        <a href="#antisense">2.4.3&nbsp;&nbsp;Antisense and Opposite Strand Genes</a><br>
-        	<a href="#ghos">2.4.4&nbsp;&nbsp;Genes with Homologs in Other Species</a><br>
+        	<a href="#antisense">2.4.1&nbsp;&nbsp;Antisense and Opposite Strand Genes</a><br>
+        	<a href="#ghos">2.4.2&nbsp;&nbsp;Genes with Homologs in Other Species</a><br>
        		</ul>
     	<a href="#pns">2.5&nbsp;&nbsp;Phenotype Names and Symbols</a><br>
       		<ul>
@@ -96,8 +94,6 @@ found on the <a href="index.shtml">MGD</a> and <a href="http://rgd.mcw.edu/nomen
      		<a href="#chore">2.11.5&nbsp;&nbsp;Chromosomal Rearrangements</a><br>
    		</ul>
      	<a href="#grom">2.12&nbsp;&nbsp;Genes Residing on the Mitochondria</a><br>
-	<a href="#rnanucl">2.13&nbsp;&nbsp;RNA Genes Encoded in the Nucleus</a><br>
-	<a href="#eparr">2.14&nbsp;&nbsp;Enhancers, Promoters, and Regulatory Regions</a><br>
      	</UL>
 <a href="#navsma">3&nbsp;&nbsp;Names and Symbols for Variant and Mutant Alleles</a><br>
      <ul>
@@ -122,9 +118,8 @@ found on the <a href="index.shtml">MGD</a> and <a href="http://rgd.mcw.edu/nomen
      <a href="#tarm">3.5&nbsp;&nbsp;Targeted and Trapped Mutations</a><br>
         	<ul>
           	<a href="#kkcaotm">3.5.1&nbsp;&nbsp;Knockout, Knockin, Conditional and Other Targeted Mutations</a><br>
-		<a href="#endim">3.5.2&nbsp;&nbsp;Endinuclease-induced Mutations</a><br>
-          	<a href="#gtm">3.5.3&nbsp;&nbsp;Gene Trap Mutations</a><br>
-          	<a href="#enhancer">3.5.4&nbsp;&nbsp;Enhancer Traps</a>
+          	<a href="#gtm">3.5.2&nbsp;&nbsp;Gene Trap Mutations</a><br>
+          	<a href="#enhancer">3.5.3&nbsp;&nbsp;Enhancer Traps</a>
         	</ul>      
       </ul>
 <a href="#transg">4&nbsp;&nbsp;Transgenes</a><br>
@@ -421,10 +416,8 @@ name]</td></tr>
 <h3><a name="sg"></a>2.4&nbsp;&nbsp;Structural Genes, Splice Variants, and Promoters</H3>
 <p>Ultimately, the majority of gene names will be for structural
 genes that encode protein. The gene should as far as possible be given the same name as the protein, whenever the protein is identified. If the gene is recognizable by sequence comparison
-as a member of an established gene family, it should be named accordingly (see <A HREF="#gf">Section 2.6</A>).</p>
-
-
-<h4><a name="altran"></a>2.4.1&nbsp;&nbsp;&nbsp;Alternative Transcripts</H4>
+as a member of an established gene family, it should
+be named accordingly (see <A HREF="#gf">Section 2.6</A>).</p>
 
 <p>Alternative transcripts that originate from the same gene are not normally given different gene symbols and names. To refer to specific splice forms of a gene, the following format should be used (gene symbol, followed by underscore, followed by sequence accession ID): <nobr>Genesymbol_accID</nobr>
 
@@ -440,17 +433,7 @@ as a member of an established gene family, it should be named accordingly (see <
 <p>Using the sequence accession ID provides an unambiguous and precise definition to the splice variant. 
 </p>
 
-
-<H4><A name="readtran"></A>2.4.2&nbsp;&nbsp;&nbsp;Read-through Transcripts</h4>
-
-<p>A read-through transcript is a multi-exon transcript that shares one of more exons with non-overlapping shorter transcripts that are considered to represent products of distinct loci. This is usually readily recognized as a distinct pattern, not to be confused with simple alternate splicing for a locus.</p>
-
-<p>Read-through transcript genes should be named with a unique symbol and name. An example is diagrammed below.
-<blockquote>
-<img src="Tmsb15b3.jpg" width="449" height="235" border="0" alt="Tmsb15b3 example">
-</blockquote>
-</p>
-<H4><A name="antisense"></A>2.4.3&nbsp;&nbsp;&nbsp;Antisense and Opposite Strand Genes</h4>
+<H4><A name="antisense"></A>2.4.1&nbsp;&nbsp;&nbsp;Antisense and Opposite Strand Genes</h4>
 
 <p>Transcripts from the opposite strand that overlap another gene, or a transcript that is derived principally from the introns of another gene, or one that uses an alternative reading frame to another gene (and does not use the existing frame to a significant extent) should be given a different name.</p>
 
@@ -473,7 +456,7 @@ as a member of an established gene family, it should be named accordingly (see <
 </blockquote>
 </p>
 
-<H4><A name="ghos"></A>2.4.4&nbsp;&nbsp;&nbsp;Genes with Homologs in Other Species</H4>
+<H4><A name="ghos"></A>2.4.2&nbsp;&nbsp;&nbsp;Genes with Homologs in Other Species</H4>
 <p>To aid interspecific comparison of genetic and other information, a gene that is identifiable as a
 homolog of an already named gene in another species can be named as "-like" "-homolog" or "-related." (Note: this is not the same as "related sequence" which applies to related sequences within mouse or within rat.) The gene name or symbol should not include the name mouse or the abbreviation "M" for mouse or the name rat or the abbreviation "R" for rat. Where possible, genes that are recognizable orthologs of already-named
 human genes should be given the same name and symbol as the human gene.</p>
@@ -790,50 +773,6 @@ residing on the mitochondria)</td></tr>
 </blockquote>
 </p>
 
-<H3><A NAME="rnanucl"></A>2.13 &nbsp;&nbsp;RNA Genes Encoded in the Nucleus</H3>
-<p>There are hundreds of loci encoding transfer RNAs (tRNA) and ribosomal RNAs (rRNA), and many are encoded in the nucleus. The following method symbolizes these nuclear-encoded RNA genes:
-
-<h4>Naming nuclear encoded transfer-RNAs</h4>
-<p>Symbols for nuclear encoded transfer-RNAs consist of four parts:
-
-<blockquote>
-<table border="0" cellspacing="0" cellpadding="3" width="!">
-  <tr><td valign="top">n-</td><td>&nbsp;&nbsp;&nbsp;</td><td valign="top">lowercase n followed by a hyphen to indicate nuclear encoding</td></tr>
-<tr><td valign="top">T</td><td>&nbsp;&nbsp;&nbsp;</td><td valign="top">uppercase T to indicate transfer-RNA</td></tr>
-<tr><td valign="top">aa</td><td>&nbsp;&nbsp;&nbsp;</td><td valign="top">the single letter abbreviation for the amino acid</td></tr>
-<tr><td valign="top">#</td><td>&nbsp;&nbsp;&nbsp;</td><td valign="top">serial number for this transfer-RNA</td></tr>
-
- <tr><th valign="top" align="left" colspan="3">Example:</th></tr>
-<tr><td valign="top"><i>n-Ta12</i></td><td>&nbsp;&nbsp;&nbsp;</td><td>nuclear encoded tRNA alanine 12 (anticodon AGC)</td></tr>
-</table
-</blockquote>
-</p>
-
-<h4>Naming nuclear encoded ribosomal-RNAs</h4>
-<p>Symbols for nuclear encoded ribosomal-RNAs consist of four parts:</p>
-<blockquote>
-<table border="0" cellspacing="0" cellpadding="3" width="!">
-<tr><td valign="top">n-</td><td>&nbsp;&nbsp;&nbsp;</td><td valign="top">lowercase n followed by a hyphen to indicate nuclear encoding</td></tr>
-<tr><td valign="top">R</td><td>&nbsp;&nbsp;&nbsp;</td><td valign="top">uppercase R to indicate ribosomal-RNA</td></tr>
-<tr><td valign="top">subunit</td><td>&nbsp;&nbsp;&nbsp;</td><td valign="top">the subunit designation</td></tr>
-<tr><td valign="top">#</td><td>&nbsp;&nbsp;&nbsp;</td><td valign="top">serial number for this ribosomal-RNA</td></tr>
- <tr><th valign="top" align="left" colspan="3">Example:</th></tr>
-<tr><TD VALIGN="top">n-R5s104</td><td>&nbsp;&nbsp;&nbsp;</td<td valign="top">nuclear encoded rRNA 5S 104</td></tr>	
-</table>
-</blockquote>
-</p>
-
-<H3><A NAME="eparr"></A>2.14 &nbsp;&nbsp;Enhancers, Promoters, and Regulatory Regions</h3>
-
-<p>Enhancers, promoters, and regulatory regions can influence multiple genes. In addition, they can be localized far away from the gene(s) that they affect. Thus, it is misleading to name them based on the gene for which regulation was first recognized.</p>
-<p>Enhancers, promoters, and regulatory regions are to be symbolized as: </p>
-<blockquote>
-<table border="0" cellspacing="0" cellpadding="3" width="!">
-<tr><td valign="top">Rr#</td><td valign="top">regulatory region #</td></tr>	
-<tr><td valign="top" colspan="2">where # indicates the next number in the series.</td></tr>
-</table>
-</blockquote>
-</p>
 
 <h2><A NAME="navsma"></A>3 &nbsp;&nbsp;Names and Symbols for Variant and Mutant Alleles</h2>
 <p>Different alleles of a gene or locus can be distinguished by a number of methods, including DNA fragment length, protein electrophoretic mobility, or variant physiological or morphological phenotype.</p>
@@ -1092,23 +1031,7 @@ conventional tm#Labcode superscript. Details of the targeted locus should be giv
 <p>Once fully designated in a publication, the allele can be abbreviated by removing the portion of the allele designation in parentheses (in this case, <i>Gstm3<sup>tm1Vlcg</sup></i>), providing the symbol remains unique.
 </p>
 
-
-
-<h4><a name="endim"></a>3.5.2&nbsp;&nbsp;  Endonuclease-induced Mutations</h4>
-<p>Endonuclease-induced mutations are targeted mutations generated in pluripotent or totipotent cells by an endonuclease joined to sequence-specific DNA binding domains. The mutation is introduced during homology-directed or non-homologous end-joining repair of the induced DNA break(s). Endonuclease-induced mutations are given the symbol of the mutated gene, with a superscript consisting of three parts: the symbol em to denote an endonuclease-induced mutation, a serial number from the laboratory of origin and the Laboratory code where the mutation was produced.</p>
-
-<p>
-<blockquote>
-<B>Example:</B>
-<table cellpadding="4" width="!">
-<tr><TD VALIGN="top"><i>Fgf1<sup>em1Mcw</sup> I</td><td>&nbsp;&nbsp;&nbsp;</td><td valign="top">the first endonuclease-induced mutation of the fibroblast growth factor 1 (<i>Fgf1</i>) gene produced at the Medical College of Wisconsin.</td></tr>
-</table>
-</blockquote>
-</p>
-
-
-
-<h4><a name="gtm"></a>3.5.3 &nbsp;&nbsp; Gene Trap Mutations</h4>
+<h4><a name="gtm"></a>3.5.2 &nbsp;&nbsp; Gene Trap Mutations</h4>
 
 <p>Gene trap mutations are symbolized in a similar way to targeted mutations. If the trapped gene is known, the symbol for the trapped allele will be similar to a targeted mutation of the same gene using the format Gt(vector content)#Labcode for the allele designation.
 <b>Example:</b>
@@ -1136,7 +1059,7 @@ conventional tm#Labcode superscript. Details of the targeted locus should be giv
 </blockquote>
 </p>
 
-<h4><a name="enhancer"></a>3.5.4 &nbsp;&nbsp; Enhancer Traps</h4>
+<h4><a name="enhancer"></a>3.5.3 &nbsp;&nbsp; Enhancer Traps</h4>
 
 <p>Enhancer traps are specialized transgenes. One utility of these transgenes is in creating cre driver lines. Enhancer traps of this type that are currently being created may include a minimal promoter, introns, a cre recombinase cassette (sometimes fused with another element such as ERT2), and polyA sites from different sources.
 </p>
@@ -1207,10 +1130,12 @@ RGD/RatMap through the usual <A HREF="nomen_submit_form.shtml">nomenclature subm
 </ul>
 <blockquote>
 <b>Examples:</b>
-<table cellpadding="6" width="!">
-<tr><td valign="top">Tg(Zfp38)D1Htz</td><td valign="top">a transgene containing the mouse <i>Zfp38</i> gene, in line D1 reported by Nathaniel Heintz.</td></tr>
-<tr><td valign="top">Tg(CD8)1Jwg</td><td valign="top">a transgene containing the human <i>CD8</i> gene, the first transgenic line using this construct described by the lab of Jon W. Gordon.</td></tr>
-<tr><td valign="top"><nobr>Tg(HLA-B*2705, B2M)33-3Trg</nobr></td><td valign="top">a double transgene in rat containing the human <i>HLA-B*2705</i> and <i>B2M</i> genes, that were co-injected, giving rise to line 33-3 by Joel D. Taurog.</td></tr>
+<table cellpadding="4" width="!">
+<tr><td><i>Tg(Zfp38)D1Htz</i> is a transgene containing the mouse <i>Zfp38</i> gene, in line D1
+reported by Nathaniel Heintz.</td></tr>
+<tr><td><i>Tg(CD8)1Jwg</i> is a transgene containing the human <i>CD8</i> gene, the first
+transgenic line using this construct described by the lab of Jon W. Gordon.</td></tr>
+<tr><td><i>Tg(HLA-B*2705, B2M)33-3Trg</i> is a double transgene in rat containing the human <i>HLA-B*2705</i> and <i>B2M</i> genes, that were co-injected, giving rise to line 33-3 by Joel D. Taurog.</td></tr>
 </table>
 </blockquote>
 </p>
@@ -1221,17 +1146,18 @@ distinguished by the serial number/Laboratory code. Information about the nature
 the transgenic entity should be given in associated publications and database
 entries.</p>
 
-<p>In many cases, a large number of transgenic lines are made from the same gene construct and only differ by tissue specificity of expression. The most common of these are transgenes that use reporter
+<p>In many cases, a large number of transgenic lines are made
+from the same gene construct and only differ by tissue specificity of
+expression. The most common of these are transgenes that use reporter
 constructs or recombinases (<i>e.g</i>., GFP, lacZ, cre), where the promoter should be specified as the first part of
 the gene insertion designation, separated by a hyphen from the reporter or
 recombinase designation. The SV40 large T antigen is another example. The use of promoter designations is helpful in such cases.</p>
 
-<p>
-<blockquote>
+<p><blockquote>
 <b>Examples:</b>
-<table cellpadding="6" width="!">
-<tr><td valign="top">Tg(Wnt1-LacZ)206Amc)</td><td valign="top">the LacZ transgene with a <i>Wnt1</i> promoter, from mouse line 206 in the laboratory of Andrew McMahon.</td></tr>
-<tr><td>Tg(Zp3-cre)3Mrt</td><td valign="top">the cre transgene with a <i>Zp3</i> promoter, the third transgenic mouse line from the laboratory of Gail Martin.
+<table cellpadding="4" width="!">
+<tr><td><i>Tg(</i><i>Wnt1-LacZ)206Amc</i> designates the LacZ transgene with a <i>Wnt1</i> promoter, from mouse line 206 in the laboratory of Andrew McMahon.</td></tr>
+<tr><td><i>Tg(Zp3-cre)3Mrt</i> designates the cre transgene with a <i>Zp3</i> promoter, the third transgenic mouse line from the laboratory of Gail Martin.
 </td></tr>
 </table>
 </blockquote>
@@ -1241,13 +1167,10 @@ construct, a forward slash separates the two genes in parentheses.</p>
 
 <p><blockquote>
 <b>Example:</b>
-<table cellpadding="6" width="!">
-<tr><td valign="top">Tg(TCF3/HLF)1Mlc</td><td valign="top">a transgene in which the human
+<i>Tg(TCF3/HLF)1Mlc</i> is a transgene in which the human
 transcription factor 3 gene and the hepatic leukemia factor gene were inserted
 as a fusion chimeric cDNA, the first transgenic mouse line produced by Michael
-L. Cleary's laboratory (Mlc)</td></tr>
-</table>
-
+L. Cleary's laboratory (Mlc)
 </blockquote>
 </p>
 
@@ -1255,9 +1178,9 @@ L. Cleary's laboratory (Mlc)</td></tr>
 
 <p><blockquote>
 <b>Examples:</b>
-<table cellpadding="6" width="!">
-<tr><td>C57BL/6J-Tg(CD8)1Jwg</td><td valign="top">mouse strain C57BL/6J carrying the Tg(CD8)1Jwg transgene</td></tr>
-<tr><td><nobr>F344/CrlBR-Tg(HLA-B*2705, B2M)33-3Trg</nobr></td><td valign="top">rat strain F344/CrlBR carrying the Tg(HLA-B&#042;2705,B2M)33-3Trg double transgene</td></tr>
+<table cellpadding="4" width="!">
+<tr><td>C57BL/6J-<i>Tg(CD8)1Jwg</i></td><td valign="top">mouse strain C57BL/6J carrying the <i>Tg(CD8)1Jwg</i> transgene</td></tr>
+<tr><td><nobr>F344/CrlBR-<i>Tg(HLA-B*2705, B2M)33-3Trg</i></nobr></td><td valign="top">rat strain F344/CrlBR carrying the <i>Tg(HLA-B&#042;2705,B2M)33-3Trg</i> double transgene</td></tr>
 </table>
 </blockquote>
 </p>
@@ -1267,29 +1190,29 @@ naming convention as the <A HREF="http://www.ncbi.nlm.nih.gov/genome/clone">Clon
 <p><blockquote>
 <b>Example:</b>
 <table cellpadding="4" width="!">
-<tr><td valign="top"><nobr>Tg(RP22-412K21)15Som</nobr></td><td>a BAC transgene
+<tr><td valign="top"><i><nobr>Tg(RP22-412K21)15Som</nobr></i></td><td>a BAC transgene
 where the inserted BAC is from the RP22 BAC library, plate 412, row K, column
 21. It is the 15th in the mouse made in the laboratory of Stefan Somlo (Som).</td></tr>
 </table>
 </blockquote>
 <p>Transgenes containing RNAi constructs can be designated minimally as:
 <blockquote>
-<table cellpadding="6" width="!">
-  <tr><td valign="Top" COLSPAN="2">Tg(RNAi:geneX)#Labcode, where</TD></TR>
-  <tr><td valign="Top">geneX</TD><td valign="Top">is the gene that is knocked down</TD></TR>
-   <tr><td valign="Top">#</td><td valign="Top">is the serial number of the transgene</TD></TR>
-</table>
+<dl>
+  <dt>Tg(RNAi:geneX)#Labcode, where</dt>
+  <dd>geneX is the gene that is knocked down</dd>
+   <dd># is the serial number of the transgene</dd>
+</dl>
 
 </blockquote>
 </p>
 	
 <p>An expanded version of this designation is:</p>
  <blockquote>
-<table cellpadding="6" width="!">
-    <tr><td valign="Top" COLSPAN="2">Tg(Pro-yyRNAi:geneX)#Labcode, where</TD></TR>
-  <tr><td valign="Top">Pro-</TD><td valign="Top"> can be used optionally to designate the promoter</TD></TR>
-  <tr><td valign="Top">yy </TD><td valign="Top">can be used optionally for the specific RNAi construct</TD></TR>
-</table>
+ <dl>
+  <dt>Tg(Pro-yyRNAi:geneX)#Labcode, where</dt>
+  <dd>Pro- can be used optionally to designate the promoter</dd>
+  <dd>yy can be used optionally for the specific RNAi construct</dd>
+</dl>
 </blockquote>
 </p>
 
@@ -1310,8 +1233,8 @@ where the inserted BAC is from the RP22 BAC library, plate 412, row K, column
 
 The symbol consists of:
 <ul>
- <li>Tg denoting  transgenic</li>
- <li>Tn denoting  transposon</li>
+ <li><i>Tg</i> denoting  transgenic</li>
+ <li><i>Tn</i> denoting  transposon</li>
  <li>In parentheses, a lowercase abbreviation of the transposon class (in this case sb	
 for Sleeping Beauty), followed by a hyphen and the vector designation</li>
  <li>The laboratory's line or founder designation or a serial number</li>
@@ -1333,7 +1256,7 @@ Tg(promoter-transposase)#Labcode
 <blockquote>
 <b>Example:</b> &nbsp;<i>Tg(ACTB-sb10)545Abc</i><br><br>
 The symbol consists of:<ul>
- <li>Tg denoting transgene</li>
+ <li><i>Tg</i> denoting transgene</li>
  <li>In parentheses, the official gene symbol for the promoter, using the nomenclature of the species of origin, followed by a hyphen and a lowercase transposase symbol, in this case sb10 for the Sleeping Beauty 10 transposase</li>
 <li>The laboratory's line or founder designation or a serial number </li>
 <li>The Laboratory code of the originating lab.</li>
