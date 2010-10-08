@@ -1,0 +1,306 @@
+<!--#include file='include/templateHead.html'-->
+
+  <title><!--#include file="include/mgiversion.html"-->All Search Tools</title>
+
+  <link rel="stylesheet" type="text/css" href="<!--#include file='include/fewi_url.html'-->menus/homepage.css"/>
+
+<!--#include file='include/templateBodyStart.html'-->
+
+<!-- Title Bar -->
+<div id="titleBarWrapper">
+ <span class="titleBarMainTitle">All Search Tools</span>
+</div> <!--titleBar-->
+
+<table width="75%" cellpadding="2" align="center">
+
+	<tr><td>
+		<!-- TOC table -->
+		<table class="toc" width="100%">
+			<tr>
+				<td>
+					<ul>
+						<li><a href="#genes">Genes, Genome Features &amp; Maps</a> | </li>
+						<li><a href="#pad">Phenotypes, Alleles &amp; Disease Models</a> | </li>
+						<li><a href="#expr">Gene Expression</a> | </li>
+						<li><a href="#other_searches">Recombinase (cre)</a> | </li>
+						<li><a href="#go">GO Functional Annotations</a> | </li>
+						<li><a href="#other_searches">Biochemical Pathways</a> | </li>
+						<li><a href="#strns">Strains, SNPs &amp; Polymorphisms</a> | </li>
+						<li><a href="#other_searches">Mouse Tumor Biology</a> | </li>
+						<li><a href="#seqs">Sequences</a> | </li>
+						<li><a href="#refs">References</a> | </li>
+						<li><a href="#vocabs">Vocabularies</a> | </li>
+						<li><a href="#other_searches">Batch Query</a> | </li>
+						<li><a href="#other_searches">MGI BioMart</a> | </li>
+						<li><a href="#other_searches">MouseBLAST</a> | </li>
+						<li><a href="#other_searches">Mouse Genome Browser</a></li>
+					</ul>
+				</td>
+			</tr>
+		</table>
+	</td></tr>
+
+	<tr><td>
+		<!-- marker table -->
+		<a name="genes"></a>
+		<table class="outline" width="100%">
+			<tr>
+				<td class="enhance">
+					<a href="<!--#include file='include/homepages_url.html'-->genes.shtml">Genes, Genome Features &amp; Maps</a>
+				</td>
+			</tr>
+			<tr >
+				<td>
+					<dl class="linkedList">
+						<dt>&bull; <a href="<!--#include file='include/fewi_url.html'-->marker">Genes &amp; Markers Query</a></dt>
+						<dd>Search for genes and genome features  by symbol, name, location, gene ontology classification or phenotype.</dd>
+
+						<dt>&bull; <a href="<!--#include file='include/fewi_url.html'-->batch">Batch Query</a></dt>
+						<dd>Input a list of gene IDs or symbols  and retrieve other database IDs and gene attributes (e.g. phenotypes, GO).</dd>
+
+						<dt>&bull; <a href="<!--#include file='include/gbrowse_url.html'-->">Mouse Genome Browser</a></dt>
+						<dd>Create a graphical display of genome features from regions of the mouse genome.</dd>
+
+					</dl>
+				</td>
+			</tr>
+		</table>
+	</td></tr>
+
+	<tr><td>
+		<!-- pheno table -->
+		<a name="pad"></a>
+		<table class="outline" width="100%">
+			<tr>
+				<td class="enhance">
+					<a href="<!--#include file='include/homepages_url.html'-->phenotypes.shtml">Phenotypes, Alleles &amp; Disease Models</a>
+				</td>
+			</tr>
+			<tr >
+				<td>
+					<dl class="linkedList">
+						<dt>&bull; <a href="<!--#include file='include/fewi_url.html'-->allele"> Phenotypes, Alleles &amp; Diseases Query</a></dt>
+						<dd>Search for mutations or QTL based on phenotype, human disease, mutation type, gene, or genome location.</dd>
+
+						<dt>&bull; <a href="<!--#include file='include/fewi_url.html'-->mpbrowser"> Mammalian Phenotype (MP) Browser</a></dt>
+						<dd>Search for a phenotype term to find relevant mutant genotypes.</dd>
+
+						<dt>&bull; <a href="<!--#include file='include/fewi_url.html'-->omimbrowser"> Human Disease (OMIM) Browser</a></dt>
+						<dd>Search for a human disease or condition term to find mouse models.</dd>
+					</dl>
+				</td>
+			</tr>
+		</table>
+	</td></tr>
+
+	<tr><td>
+		<!-- expression table -->
+		<a name="expr"></a>
+		<table class="outline" width="100%">
+			<tr>
+				<td class="enhance">
+					<a href="<!--#include file='include/homepages_url.html'-->expression.shtml">Gene Expression</a>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<dl class="linkedList">
+						<dt>&bull; <a href="<!--#include file='include/fewi_url.html'-->gxdlit">Gene Expression Literature Query</a></dt>
+						<dd>Search for references on gene expression during development.</dd>
+
+						<dt>&bull; <a href="<!--#include file='include/fewi_url.html'-->gxd">Gene Expression Data Query</a><br>
+						<dd>Search for detailed gene expression assay results.</dd>
+
+						<dt>&bull; <a href="<!--#include file='include/fewi_url.html'-->gxd/expanded">Gene Expression Data Expanded Query</a></dt>
+						<dd>Search for  genes expressed in some anatomical structures and/or developmental stages but not in others.</dd>
+
+						<dt>&bull; <a href="<!--#include file='include/fewi_url.html'-->adbrowser">Mouse Anatomical Dictionary Browser</a></dt>
+						<dd>An extensive ontology of anatomical structures for the postnatal mouse.</dd>
+
+						<dt>&bull; <a href="http://genex.hgu.mrc.ac.uk/Resources/GXDQuery1/SectionBrowser.html"\>EMAGE Anatomical Section Browser</a></dt>
+						<dd>Search the Edinburgh Mouse Atlas for anatomical terms and query for associated expression data.</dd>
+					</dl>
+				</td>
+			</tr>
+		</table>
+	</td></tr>
+
+	<tr><td>
+		<!-- go table -->
+		<a name="go"></a>
+
+		<table class="outline" width="100%">
+			<tr>
+				<td  class="enhance">
+					<a href="<!--#include file='include/homepages_url.html'-->function.shtml">GO Functional Annotations</a>
+				</td>
+			</tr>
+			<tr >
+				<td>
+					<dl class="linkedList">
+						<dt>&bull; <a href="<!--#include file='include/fewi_url.html'-->gobrowser">GO Browser</a></dt>
+						<dd>Browse the Gene Ontology and mouse annotations in MGI.</dd>
+
+						<dt>&bull; <a href="<!--#include file='include/fewi_url.html'-->marker">Genes &amp; Markers Query</a></dt>
+						<dd>Search for genes using GO terms and other gene attributes.</dd>
+
+						<dt>&bull; <a href="<!--#include file='include/fewi_url.html'-->batch">Batch Query</a></dt>
+						<dd>Obtain sets of MGI IDs for use in GO tools.</dd>
+					</dl>
+				</td>
+			</tr>
+		</table>
+	</td></tr>
+
+	<tr><td>
+		<!-- strains table -->
+		<a name="strns"></a>
+
+		<table class="outline" width="100%">
+			<tr>
+				<td  class="enhance">
+					<a href="<!--#include file='include/homepages_url.html'-->strains_SNPs.shtml">Strains, SNPs &amp; Polymorphisms</a>
+				</td>
+			</tr>
+			<tr >
+				<td>
+					<dl class="linkedList">
+						<dt>&bull; <a href="<!--#include file='include/fewi_url.html'-->snp">SNP Query</a></dt>
+						<dd>Search for SNPs by strain(s), SNP attributes, genomic position, or associated genes.</dd>
+
+						<dt>&bull; <a href="<!--#include file='include/fewi_url.html'-->festing">Inbred Strain Characteristics</a></dt>
+						<dd>Browse the Listing of Inbred Strains of Mice and Rats by M. Festing.</dd>
+
+						<dt>&bull; <a href="<!--#include file='include/mgihome_url.html'-->genealogy/"> Genealogy Chart of Inbred Strains</a></dt>
+						<dd>View the genealogy chart of inbred strains.</dd>
+					</dl>
+				</td>
+			</tr>
+		</table>
+	</td></tr>
+
+	<tr><td>
+		<!-- sequence table -->
+		<a name="seqs"></a>
+		<table class="outline" width="100%">
+			<tr>
+				<td  class="enhance">
+					Sequences
+				</td>
+			</tr>
+			<tr >
+				<td>
+					<dl class="linkedList">
+
+						<dt>&bull; <a href="<!--#include file='include/mouseblast_url.html'-->">MouseBLAST</a></dt>
+						<dd>Search for sequence similarity for mouse, human, or rat.</dd>
+
+						<dt>&bull; <a href="<!--#include file='include/gbrowse_url.html'-->">Mouse Genome Browser</a></dt>
+						<dd>Create a graphical display of genome features from regions of the mouse genome.</dd>
+
+						<dt>&bull; <a href="<!--#include file='include/fewi_url.html'-->batch">Batch Query</a></dt>
+						<dd>Download data for a batch of gene IDs or symbols.</dd>
+					</dl>
+				</td>
+			</tr>
+		</table>
+	</td></tr>
+
+	<tr><td>
+		<!-- references table -->
+		<a name="refs"></a>
+
+		<table class="outline" width="100%">
+			<tr>
+				<td  class="enhance">
+					References
+				</td>
+			</tr>
+			<tr >
+				<td>
+					<dl class="linkedList">
+						<dt>&bull; <a href="<!--#include file='include/fewi_url.html'-->reference">Reference Query</a></dt>
+						<dd>Search for references (with abstracts) by title, author, journal, year, or abstract.</dd>
+
+						<dt>&bull; <a href="<!--#include file='include/fewi_url.html'-->gxdlit">Gene Expression Literature Query</a></dt>
+						<dd>Search for references on gene expression during development.</dd>
+					</dl>
+				</td>
+			</tr>
+		</table>
+	</td></tr>
+
+	<tr><td>
+		<!-- vocabularies table -->
+		<a name="vocabs"></a>
+		<table class="outline" width="100%">
+			<tr>
+				<td  class="enhance">
+					Vocabularies
+				</td>
+			</tr>
+			<tr >
+				<td>
+					<dl class="linkedList">
+						<dt>&bull; <a href="<!--#include file='include/fewi_url.html'-->gobrowser">GO Browser</a></dt>
+						<dd>Browse the Gene Ontology and mouse annotations in MGI.</dd>
+
+						<dt>&bull; <a href="<!--#include file='include/fewi_url.html'-->omimbrowser">Human Disease (OMIM) Browser</a></dt>
+						<dd>Search for a human disease or condition term to find mouse models.</dd>
+
+						<dt>&bull; <a href="<!--#include file='include/fewi_url.html'-->mpbrowser">Mammalian Phenotype (MP) Browser</a></dt>
+						<dd>Search for a phenotype term to find relevant mutant genotypes.</dd>
+
+						<dt>&bull; <a href="<!--#include file='include/fewi_url.html'-->adbrowser">Mouse Anatomical Dictionary</a></dt>
+						<dd>Search or browse for anatomical structures; includes links to associated expression results.</dd>
+
+						<dt>&bull; <a href="<!--#include file='include/fewi_url.html'-->amabrowser">Adult Mouse Anatomy Browser</a></dt>
+						<dd>An extensive Stage 28 dictionary; not yet in use for annotation of expression data.</dd>
+					</dl>
+				</td>
+			</tr>
+		</table>
+	</td></tr>
+
+	<tr><td>
+		<!-- other searches table -->
+		<a name="other_searches"></a>
+		<table class="outline" width="100%">
+			<tr>
+				<td  class="enhance">
+					Other Searches
+				</td>
+			</tr>
+			<tr >
+				<td>
+					<dl class="linkedList">
+
+						<dt>&bull; <a href="<!--#include file='include/homepages_url.html'-->recombinase.shtml">Recombinase (cre)</a></dt>
+						<dd>Get recombinase (cre) specificity data for knock-in and transgene alleles.</dd>
+
+						<dt>&bull; <a href="<!--#include file='include/pathways_url.html'-->">Biochemical Pathways</a></dt>
+						<dd>View mouse genomic data in the context of metabolic cellular  processes such as biosynthesis, degradation, energy production, and detoxification.</dd>
+
+						<dt>&bull; <a href="<!--#include file='include/mtb_url.html'-->">Mouse Tumor Biology</a></dt>
+						<dd>MTB provides information on the frequency, pathology, and genetics of spontaneous and induced tumors in mice.</dd>
+
+						<dt>&bull; <a href="<!--#include file='include/fewi_url.html'-->batch">Batch Query</a></dt>
+						<dd>Download gene/marker data for a batch of IDs or symbols.</dd>
+
+						<dt>&bull; <a href="<!--#include file='include/biomart_url.html'-->">MGI BioMart</a> </dt>
+						<dd>Access MGI's mouse genetic and genomic data using BioMart.</dd>
+
+						<dt>&bull; <a href="<!--#include file='include/mouseblast_url.html'-->">MouseBLAST</a></dt>
+						<dd>Search for sequence similarity for mouse, human, or rat.</dd>
+
+						<dt>&bull; <a href="<!--#include file='include/gbrowse_url.html'-->">Mouse Genome Browser</a></dt>
+						<dd>Create a graphical display of genome features from regions of the mouse genome.</dd>
+					</dl>
+				</td>
+			</tr>
+		</table>
+	</td></tr>
+
+</table>
+
+<!--#include file='include/templateBodyStop.html'-->

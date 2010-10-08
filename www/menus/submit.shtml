@@ -1,0 +1,58 @@
+<!--#include file='include/templateHead.html'-->
+
+  <title><!--#include file="include/mgiversion.html"-->Submit Data</title>
+
+<!--#include file='include/templateBodyStart.html'-->
+
+<!-- Title Bar -->
+<div id="titleBarWrapper">
+ <span class="titleBarMainTitle">Submit Data</span>
+</div> <!--titleBar-->
+
+<!-- this file is an example template to be used to create a page in the
+"All X" format, similar to the "All Search Tools" page.  To use this template
+simply add anchor links to the sections your page contains in the toc table,
+then create each section to contain the appropriate anchor link and content.
+Note that the links in the toc are a list <ul> where each link is a <li> item.
+Note that the list in each section is a definition list <dl> where the term
+<dt> is the heading, and the definition <dd> is the descriptive text.  -->
+
+<!-- main body table -->
+<table width="75%" cellpadding="2" align="center">
+
+	<tr><td>
+
+		<!-- TOC table has been removed from this page because there were too few options.  If this needs to be added back; see the template. -->
+
+	</td></tr>
+
+	<tr><td>
+		<!-- section1 table -->
+		<table class="outline" width="100%">
+			<tr>
+				<td class="enhance">
+					&nbsp;
+				</td>
+			</tr>
+			<tr >
+				<td>
+					<dl class="linkedList">
+						<dt>&bull; <a href="<!--#include file='include/mgihome_url.html'-->nomen/nomen_submit_form.shtml">Gene/Genome Feature/Locus Nomenclature</a></dt>
+						<dd>Propose a locus symbol.</dd>
+
+						<dt>&bull; <a href="<!--#include file='include/mgihome_url.html'-->submissions/amsp_submission.cgi">Allele, Strain & Phenotype Data</a></dt>
+						<dd>Submit a new allele/mutant; register a mouse strain name; or submit phenotype data.</dd>
+
+						<dt>&bull; <a href="<!--#include file='include/mgihome_url.html'-->GXD/GEN/gxd_submission_guidelines.shtml">Expression Data</a></dt>
+						<dd>Guidelines for submitting data to the Gene Expression Database (GXD).</dd>
+
+					</dl>
+				</td>
+			</tr>
+		</table>
+	</td></tr>
+
+
+</table>
+
+<!--#include file='include/templateBodyStop.html'-->
