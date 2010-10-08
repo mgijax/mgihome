@@ -10,7 +10,6 @@ sys.path.insert (0, '/usr/local/mgi/lib/python')
 import string
 import types
 import os
-import db
 
 import Configuration
 config = Configuration.get_Configuration ('Configuration', 1)
