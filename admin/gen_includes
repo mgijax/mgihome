@@ -14,7 +14,7 @@ import homelib
 import webshare_lib
 
 import os
-import db
+#import db
 import string
 
 def listToFile (str_list, filename):
@@ -33,26 +33,26 @@ def getDbDate ():
     # Throws: db module may throw DB exceptions
     # pull the MGI:ID and geneSymbol from the database
 
-    db.useOneConnection(1)
-    db.set_sqlUser(config["DB_USER"])
-    db.set_sqlPassword(config["DB_PASSWORD"])
-    db.set_sqlServer(config["DB_SERVER"])
-    db.set_sqlDatabase(config["DB_DATABASE"])
-    cmds = [] # SQL command list
-    cmds.append(string.join([
-        'SELECT CONVERT(varchar, lastdump_date, 106) as dbDate, '
-        'public_version '
-        'FROM MGI_dbInfo '
-    ]))
+    #db.useOneConnection(1)
+    #db.set_sqlUser(config["DB_USER"])
+    #db.set_sqlPassword(config["DB_PASSWORD"])
+    #db.set_sqlServer(config["DB_SERVER"])
+    #db.set_sqlDatabase(config["DB_DATABASE"])
+    #cmds = [] # SQL command list
+    #cmds.append(string.join([
+    #    'SELECT CONVERT(varchar, lastdump_date, 106) as dbDate, '
+    #    'public_version '
+    #    'FROM MGI_dbInfo '
+    #]))
 
     #  Excecute queries
-    results = db.sql(cmds, 'auto')
-    db.useOneConnection(0)
-    dbDateInfo = results[0][0]
+    #results = db.sql(cmds, 'auto')
+    #db.useOneConnection(0)
+    #dbDateInfo = results[0][0]
 
-    return dbDateInfo["dbDate"]
+    return "Date is not implemented at this time."
 
-def getCreDriver ():
+#def getCreDriver ():
     # Purpose: return value of latest db update
     # Returns: string
     # Assumes: nothing
@@ -60,17 +60,17 @@ def getCreDriver ():
     # Throws: db module may throw DB exceptions
     # pull the MGI:ID and geneSymbol from the database
 
-    db.useOneConnection(1)
-    db.set_sqlUser(config["DB_USER"])
-    db.set_sqlPassword(config["DB_PASSWORD"])
-    db.set_sqlServer(config["DB_SERVER"])
-    db.set_sqlDatabase(config["DB_DATABASE"])
+    #db.useOneConnection(1)
+    #db.set_sqlUser(config["DB_USER"])
+    #db.set_sqlPassword(config["DB_PASSWORD"])
+    #db.set_sqlServer(config["DB_SERVER"])
+    #db.set_sqlDatabase(config["DB_DATABASE"])
     
-    results = db.sql('select distinct driverNote from ALL_Cre_Cache', 'auto')
-    drivers = ["<option selected value='' name='default'>(choose one)</option>"] # SQL command list
-    for r in results:
-        drivers.append("<option value='%s'>%s</option>" % (r['driverNote'], r['driverNote']))
-    listToFile(drivers, '../www/include/driver_list.html')
+    #results = db.sql('select distinct driverNote from ALL_Cre_Cache', 'auto')
+    #drivers = ["<option selected value='' name='default'>(choose one)</option>"] # SQL command list
+    #for r in results:
+    #    drivers.append("<option value='%s'>%s</option>" % (r['driverNote'], r['driverNote']))
+    #listToFile(drivers, '../www/include/driver_list.html')
   
 def captchaInclude ():
     form = """<input type="hidden" name="%s" id="%s" value="default">
@@ -120,7 +120,7 @@ def createIncludeLink (includeName, fileLoc ) :
     os.system("ln -s " + fileLoc + " " + filePath)
 
 def main ():
-    getCreDriver()
+    #getCreDriver()
     captchaInclude()
     stringToFile (config['WI_URL'], '../www/include/wi_url.html')
     stringToFileNoNL (config['WI_URL'], '../www/include/wi_url2.html')
@@ -157,6 +157,8 @@ def main ():
         '../www/include/mgiversion.html')
     stringToFile (config['JAVAWI_URL'], \
         '../www/include/java_url.html')
+    stringToFile (config['FEWI_URL'], \
+        '../www/include/fewi_url.html')
     stringToFile (config['QUICKSEARCH_URL'], \
         '../www/include/quicksearch_url.html')        
     stringToFile (config['MOUSEBLAST_URL'], \
@@ -218,6 +220,9 @@ def main ():
         '../www/include/menus_url.html')
 
     stringToFile(getDbDate(), '../www/include/stats_date.shtml')
+
+    # Temporarily include the link to the cre dropdowns.
+    createIncludeLink('driver_list.html', config['INSTALL_DIR'] + 'mgihome/temp/driver_list.html')
 
     #####----- Template Include Files --------#####
     createIncludeLink('templateHead.html', config['MGICONFIG_PATH'] + 'web/templateHead.html')
