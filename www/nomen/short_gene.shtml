@@ -13,7 +13,7 @@
 names be unique identifiers. The MGD Nomenclature Committee provides advice and assistance in assigning new
 symbols and names. Please contact us at <A HREF="mailto:nomen@informatics.jax.org">nomen@informatics.jax.org</A>.
 <ul><li>To check the nomenclature of known mouse genes, search the Symbol/Name field on the
-<a href="<!--#include file='include/wi_url.html'-->searches/marker_form.shtml"> Genes and Markers Query Form</a>.</li>
+<a href="<!--#include file='include/fewi_url.html'-->marker"> Genes and Markers Query Form</a>.</li>
 <li>For complete details and additional special case rules, see <a href="gene.shtml">Rules for Nomenclature of Genes, Genetic Markers, Alleles, and Mutations in Mouse and Rat</a></li>.</ul>
 
 <p>Below are some basic rules and guidelines to assist in the symbol and naming process. </p>
@@ -25,16 +25,16 @@ symbols and names. Please contact us at <A HREF="mailto:nomen@informatics.jax.or
  <li>Symbols should not include tissue specificity and molecular weight designations.
  <li>Symbols are italicized in published articles.
  <li>Use punctuation only to separate two adjacent numbers (for example, 
-<A HREF="<!--#include file='include/java_url.html'-->WIFetch?page=markerDetail&key=10754"><i>Lamb1-2</i>)</a> or for designating related sequences (for example, <a href="http://www.informatics.jax.org/javawi2/servlet/WIFetch?page=markerDetail&key=40900"><i>Es10-rs1</i></a>) and pseudogenes (for example, <A HREF="<!--#include file='include/java_url.html'-->WIFetch?page=markerDetail&key=27574"><i>Adh5-ps1</i></a>).
+<A HREF="<!--#include file='include/fewi_url.html'-->marker/MGI:96744"><i>Lamb1-2</i>)</a> or for designating related sequences (for example, <a href="http://www.informatics.jax.org/javawi2/servlet/WIFetch?page=markerDetail&key=40900"><i>Es10-rs1</i></a>) and pseudogenes (for example, <A HREF="<!--#include file='include/fewi_url.html'-->marker/MGI:106674"><i>Adh5-ps1</i></a>).
  <li>For orthologous genes in other vertebrate species, use the same symbol as in human, rat, and mouse, whenever possible.
  <li>For homologous genes in invertebrate or prokaryote species:
  <ul>
-  <li>If it is the only mouse homolog, use the approved symbol for that species, but include the word <i>homolog</i> at the end of the name followed by the name of the species in parentheses; for example, symbol: <A HREF="<!--#include file='include/java_url.html'-->WIFetch?page=markerDetail&key=46917"><i>Cdc20</a></i>; name: cell division cycle 20 homolog (S. cerevisiae).
-  <li>If there is more than one mouse homolog for the invertebrate gene, assign the serial number after the word <i>homolog</i> <i>e.g.,</i> symbols: <A HREF="<!--#include file='include/java_url.html'-->WIFetch?page=markerDetail&key=24863"><i>Atoh1</i></a> and <A HREF="<!--#include file='include/java_url.html'-->WIFetch?page=markerDetail&key=27458"><i>Atoh2</i></a>; names: atonal homolog 1 (Drosophila) and atonal homolog 2 (Drosophila) respectively.)
+  <li>If it is the only mouse homolog, use the approved symbol for that species, but include the word <i>homolog</i> at the end of the name followed by the name of the species in parentheses; for example, symbol: <A HREF="<!--#include file='include/fewi_url.html'-->marker/MGI:1859866"><i>Cdc20</a></i>; name: cell division cycle 20 homolog (S. cerevisiae).
+  <li>If there is more than one mouse homolog for the invertebrate gene, assign the serial number after the word <i>homolog</i> <i>e.g.,</i> symbols: <A HREF="<!--#include file='include/fewi_url.html'-->marker/MGI:104654"><i>Atoh1</i></a> and <A HREF="<!--#include file='include/fewi_url.html'-->marker/MGI:106593"><i>Atoh2</i></a>; names: atonal homolog 1 (Drosophila) and atonal homolog 2 (Drosophila) respectively.)
   </ul>
 <li>If the invertebrate/prokaryotic gene is similar to the mouse gene but is not determined to be a homolog, use the
    letter <i>l</i> to denote &quot;-like&quot; designations (<i>e.g.,</i> symbol:
-<A HREF="<!--#include file='include/java_url.html'-->WIFetch?page=markerDetail&key=42226"><i>Ash2l</i></a>; name: ash2 (absent, small, or homeotic)-like (Drosophila).
+<A HREF="<!--#include file='include/fewi_url.html'-->marker/MGI:1344416 "><i>Ash2l</i></a>; name: ash2 (absent, small, or homeotic)-like (Drosophila).
 <li>ESTs and BAC/YAC ends: use the assigned sequence accession identification numbers.
  <li>STSs: use the convention &nbsp; <i>D#Xxx%e</i>,&nbsp; where:
     <blockquote>

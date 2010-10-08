@@ -56,9 +56,8 @@
 						
 						<div class="creSearch" style="width:450px; height:37px;">
 						<div class="creInputs">
-							<form action="<!--#include file='include/java_url.html'-->WIFetch?" method="get">
-								<input type="hidden" name="page" value="creSummary">
-								<label onmouseout="nd();" onMouseOver="return overlib('Anatomical system containing the structure or tissue term from the Mouse Anatomical Dictionary in which recombinase activity occurs. See the <a href=\'<!--#include file="include/wi_url2.html"-->searches/anatdict_form.shtml\'>Mouse Anatomical Dictionary</a> to find the terms MGI uses. (NOTE: links from the Mouse Anatomical Dictionary do not lead back to these pages.)', ANCHOR, 'GetSystem', ANCHORALIGN, 0, 0.5, 0, 0.5, WIDTH, 250, DELAY, 900, STICKY, CAPTION, 'Expressing activity in', CLOSECLICK, CLOSETEXT, 'Close X');">
+							<form action="<!--#include file='include/fewi_url.html'-->recombinase" method="get">
+								<label onmouseout="nd();" onMouseOver="return overlib('Anatomical system containing the structure or tissue term from the Mouse Anatomical Dictionary in which recombinase activity occurs. See the <a href=\'<!--#include file="include/fewi_url.html"-->adbrowser\'>Mouse Anatomical Dictionary</a> to find the terms MGI uses. (NOTE: links from the Mouse Anatomical Dictionary do not lead back to these pages.)', ANCHOR, 'GetSystem', ANCHORALIGN, 0, 0.5, 0, 0.5, WIDTH, 250, DELAY, 900, STICKY, CAPTION, 'Expressing activity in', CLOSECLICK, CLOSETEXT, 'Close X');">
 								    <strong style="color:#002255; border-bottom:dotted thin #555555; cursor:help;">Recombinase specificity in:</strong>&nbsp;</label>
 								<select name="systemKey" id="creSystemSelect">
 									<option selected value="" name="default">(choose one) </option>
@@ -102,8 +101,7 @@
 						<div class="creSearch" style="width:365px; height:37px;">
 	                    <div class="creInputs">
 	
-	                    <form action="<!--#include file='include/java_url.html'-->WIFetch?" method="get">
-	                        <input type="hidden" name="page" value="creSummary">
+	                    <form action="<!--#include file='include/fewi_url.html'-->recombinase" method="get">
 	                            <label onmouseover="return overlib('Allele, gene, fusion product, or genetic construct driving recombinase activity.',ANCHOR, 'GetDriver', ANCHORALIGN, 0, 0.5, 0, 0.5, WIDTH, 250, DELAY, 900, STICKY, CAPTION, 'Driven by', CLOSECLICK, CLOSETEXT, 'Close X');" onmouseout="nd();"><strong style="color:#002255; border-bottom:dotted thin #555555; cursor:help;">Recombinase driven by:</strong>&nbsp;</label>
 	                            <select name="driver" id="creDriverSelect">
 	                                <!--#include file='include/driver_list.html'-->
@@ -140,10 +138,10 @@
                     <dl>
 						<dt class="whatList">Search for recombinase-containing transgene or knock-in alleles, or 
 						floxed or frt alleles using MGI's Allele Query Form </dt>
-						<dd class="searchList"><a class="small homeLink" href="<!--#include file='include/wi_url.html'-->searches/allele_form.shtml">Phenotypes, Alleles & Disease Models Query</a></dd>
+						<dd class="searchList"><a class="small homeLink" href="<!--#include file='include/fewi_url.html'-->allele">Phenotypes, Alleles & Disease Models Query</a></dd>
 
 						<dt class="whatList">Search for endogenous gene expression using MGI's Gene Expression Data Query Form</dt>
-						<dd class="searchList"><a class="small homeLink" href="<!--#include file='include/java_url.html'-->WIFetch?page=expressionQF">Gene Expression Data Query</a></dd>
+						<dd class="searchList"><a class="small homeLink" href="<!--#include file='include/fewi_url.html'-->gxd">Gene Expression Data Query</a></dd>
 					</dl>
                    
                     

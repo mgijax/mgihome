@@ -88,13 +88,13 @@ See
 <a href="<!--#include file='include/userdocs_url.html'-->marker_detail.shtml">Using the Marker Detail Report</a> for more information about the content of the display of a marker record as it appears in the query results.
 </p>
 <P>Information on <B>alleles</B>, formerly imbedded in phenotype  descriptions, is stored as a separate data set (see <a href="#alleles">Phenotypic Alleles</a>). Links to alleles are provided in gene detail records. In
-addition, there is an <A HREF="<!--#include file='include/wi_url.html'-->searches/allele_form.shtml">Phenotypes, Alleles, and Disease Models Query Form</A> for  direct  queries against the allele data  set. See <A HREF="<!--#include file='include/userdocs_url.html'-->allele_help.shtml#detail">Details</A> for the content of an allele record as displayed in query results.</p>
+addition, there is an <A HREF="<!--#include file='include/fewi_url.html'-->allele">Phenotypes, Alleles, and Disease Models Query Form</A> for  direct  queries against the allele data  set. See <A HREF="<!--#include file='include/userdocs_url.html'-->allele_help.shtml#detail">Details</A> for the content of an allele record as displayed in query results.</p>
 </p>
 <font size="-1"><a href="#top">Top</font></a>
 <h3><A NAME="alleles"></A>Phenotypic Alleles</h3>
- <P>MGD contains information on mutant alleles, transgenes, QTLs, strain characteristics, phenotype vocabularies, (human) disease models, and comparative phenotypes. Integrated access to phenotype and disease model data is accessible via <!--semantically consistent search methods,--> three query forms (<A HREF="<!--#include file='include/java_url.html'-->WIFetch?page=markerQF">Genes and Markers</a>, 
-<A HREF="<!--#include file='include/wi_url.html'-->searches/allele_form.shtml">Phenotypes and Alleles</a>,  and 
-<A HREF="<!--#include file='include/wi_url.html'-->searches/sequence_form.shtml">Mouse Sequences</a>). These forms provide genetic, phenotypic, and computational approaches to displaying phenotypic variation sources (single-gene, genetic mutations, QTLs, strains), as well as data on human disease correlation, and mouse models. The <A HREF="<!--#include file='include/java_url.html'-->WIFetch?page=omimVocab&subset=A">Human Disease Vocabulary Browser</a> enables you to browse and search diseases, conditions, and syndromes directly. 
+ <P>MGD contains information on mutant alleles, transgenes, QTLs, strain characteristics, phenotype vocabularies, (human) disease models, and comparative phenotypes. Integrated access to phenotype and disease model data is accessible via <!--semantically consistent search methods,--> three query forms (<A HREF="<!--#include file='include/fewi_url.html'-->marker">Genes and Markers</a>, 
+<A HREF="<!--#include file='include/fewi_url.html'-->allele">Phenotypes and Alleles</a>,  and 
+<A HREF="<!--#include file='include/fewi_url.html'-->sequence">Mouse Sequences</a>). These forms provide genetic, phenotypic, and computational approaches to displaying phenotypic variation sources (single-gene, genetic mutations, QTLs, strains), as well as data on human disease correlation, and mouse models. The <A HREF="<!--#include file='include/fewi_url.html'-->omimbrowser">Human Disease Vocabulary Browser</a> enables you to browse and search diseases, conditions, and syndromes directly. 
 Phenotypic allele <A HREF="<!--#include file='include/userdocs_url.html'-->allele_summary_report.shtml">summary</A> and <A HREF="<!--#include file='include/userdocs_url.html'-->allele_detail_report.shtml">detail</A> reports provide detailed  information about the content of phenotype records including observed phenotypes in mouse and genetic background. The Human Disease and Mouse Model Detail page lists orthologous mouse and human markers where mutations in one or both species have been associated with phenotypes characteristic of this disease as well as any mouse models.</p>
 </p>
 <font size="-1"><a href="#top">Top</font></a>
@@ -118,7 +118,7 @@ Phenotypic allele <A HREF="<!--#include file='include/userdocs_url.html'-->allel
 <h3><A NAME="sequence"></a>Sequence Data</h3>
 
 <ul><li>Vast amounts of sequence data are integrated with the biological information in MGD. Mouse sequences from GenBank, RefSeq, <NOBR>Swiss-Prot</NOBR>, DoTS, and the DFCI and NIA mouse gene indices enable powerful queries from the
-<a href="<!--#include file='include/wi_url.html'-->searches/sequence_form.shtml">Mouse Sequence Query Form</a>. </li>
+<a href="<!--#include file='include/fewi_url.html'-->sequence">Mouse Sequence Query Form</a>. </li>
 
 <li>MGD contains sequence attributes such as length and provider; data about the clones the sequences were derived from; and the genes the sequences have been associated to. Because of our curated associations between mouse markers and sequences, you can search using  nomenclature, map position, function (GO annotation, InterPro domain), expression (tissue and developmental stage), and phenotypes of mutant alleles.
 </li>
@@ -130,7 +130,7 @@ Phenotypic allele <A HREF="<!--#include file='include/userdocs_url.html'-->allel
 <p>
 <ul><li>MGD provides comprehensive information about reference SNPs including the reference flanking sequence, assays that comprise the SNP, gene/marker associations with their corresponding function class annotations, and links to popular gene browsers including Mouse Genome Browser and its transcript, gene model, and MGD-curated phenotype and allele tracks.  </li>
 <li>The 
-<a href="<!--#include file='include/java_url.html'-->WIFetch?page=snpQF">Mouse SNP Query Form</a> lets you search for RefSNPs by strains, strain comparisons, RefSNP attributes, map position, marker range, or associated genes.</li>
+<a href="<!--#include file='include/fewi_url.html'-->snp">Mouse SNP Query Form</a> lets you search for RefSNPs by strains, strain comparisons, RefSNP attributes, map position, marker range, or associated genes.</li>
 </ul>
 </p>
 <font size="-1"><a href="#top">Top</font></a>
@@ -142,10 +142,10 @@ Phenotypic allele <A HREF="<!--#include file='include/userdocs_url.html'-->allel
 <table border="1" cellspacing="1" cellpadding="4" width="100%">
    <tr><th align="center" valign="top">Browser Name</th><th align="center" 
 valign="top">Use this browser to search for ...</th></tr>
-   <tr><td valign="top"><a href="<!--#include file='include/wi_url.html'-->searches/GO_form.shtml">GO (Gene Ontology) Browser</a> </td><td valign="top">GO term details and relationships.<br>Links to genes associated with your term or with any sub terms.</td></tr>
-   <tr><td valign="top"><a href="<!--#include file='include/wi_url.html'-->searches/anatdict_form.shtml">The Mouse Anatomical Dictionary Browser</a></td><td valign="top">Anatomical structures.<br>Links to associated expression results.</td></tr>
-   <tr><td valign="top"><a href="<!--#include file='include/java_url.html'-->WIFetch?page=omimVocab&subset=A">Human Disease Vocabulary Browser</a></td><td valign="top">Human disease terms.<br>Links to detail pages containing genotypes annotated with these terms.<br>Links to Online Mendelian Inheritance in Man (OMIM) web pages.</td></tr>
-   <tr><td valign="top"><a href="<!--#include file='include/wi_url.html'-->searches/MP_form.shtml">Mammalian Phenotype Browser</a> </td><td valign="top">Mammalian phenotype terms.<br>Term details and relationships among terms.<br>Links to genotypes annotated with each term or any sub terms.</td></tr>
+   <tr><td valign="top"><a href="<!--#include file='include/fewi_url.html'-->gobrowser">GO (Gene Ontology) Browser</a> </td><td valign="top">GO term details and relationships.<br>Links to genes associated with your term or with any sub terms.</td></tr>
+   <tr><td valign="top"><a href="<!--#include file='include/fewi_url.html'-->adbrowser">The Mouse Anatomical Dictionary Browser</a></td><td valign="top">Anatomical structures.<br>Links to associated expression results.</td></tr>
+   <tr><td valign="top"><a href="<!--#include file='include/fewi_url.html'-->omimbrowser">Human Disease Vocabulary Browser</a></td><td valign="top">Human disease terms.<br>Links to detail pages containing genotypes annotated with these terms.<br>Links to Online Mendelian Inheritance in Man (OMIM) web pages.</td></tr>
+   <tr><td valign="top"><a href="<!--#include file='include/fewi_url.html'-->mpbrowser">Mammalian Phenotype Browser</a> </td><td valign="top">Mammalian phenotype terms.<br>Term details and relationships among terms.<br>Links to genotypes annotated with each term or any sub terms.</td></tr>
   </table>
 </li>
 </ul>
@@ -204,7 +204,7 @@ See <a href="<!--#include file='include/userdocs_url.html'-->mapping_data.shtml"
 <font size="-1"><a href="#top">Top</font></a>
 <h3><A NAME="references"></A>References</h3>
 MGD contains references for all data in the  database.  By late 2007, there were over 120,000 entries. MGD reference format is similar to PubMed's and data for the full MGD reference are extracted from PubMed when possible. References first appear in an abbreviated format in MGD and are updated when the PubMed records become available. If PubMed does not index the journal, our curators enter the full reference into MGD manually.  See the
- <a href="<!--#include file='include/wi_url.html'-->searches/reference_form.shtml">References Query Form</a>,  <a href="<!--#include file='include/userdocs_url.html'-->reference_help.shtml">Using the References Query Form</a> for more information about this data.</p>
+ <a href="<!--#include file='include/fewi_url.html'-->reference">References Query Form</a>,  <a href="<!--#include file='include/userdocs_url.html'-->reference_help.shtml">Using the References Query Form</a> for more information about this data.</p>
 <font size="-1"><a href="#top">Top</font></a>
 </font>
 

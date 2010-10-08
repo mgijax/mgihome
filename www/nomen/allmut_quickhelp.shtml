@@ -21,7 +21,7 @@ of a previously unknown gene.
 <B> Example:</B> You discover a new spontaneous phenotypic allele that looks "shaker like," but with a somewhat milder phenotype.
 <UL>
 <LI>Case 1, above: Upon testing, it is determined to be an allele of the
-<A HREF="<!--#include file='include/java_url.html'-->WIFetch?page=markerDetail&key=36272">
+<A HREF="<!--#include file='include/fewi_url.html'-->marker/MGI:1261811">
 Myo15</A> gene.
  It is assigned the allele symbol Myo15<SUP>sh2m</SUP>, where the "sh2m" designates
   it as an allele, and the name "shaker 2 mild" becomes its allele name.<P>
@@ -48,28 +48,27 @@ For designating mutants that are alleles of <B>known</B> genes, the basic guidel
 <LI>Allele designations begin with a letter and contain alphanumeric characters. Punctuation marks occur in certain cases  where they convey meaning.<BR><BR>
 <LI> Allele designations appear as superscripted short alphanumeric strings following the gene symbol of which they are an allele and serve as an acronym for the allele name.
 <EM> Example:</EM>
-<A HREF="<!--#include file='include/wi_url.html'-->searches/allele.cgi?195">Atp7a<SUP>Mo</SUP></a>
- or <A HREF="<!--#include file='include/wi_url.html'-->searches/allele.cgi?544">Egfr<SUP>tm1Mag</SUP></a>.<BR><BR>
+<A HREF="<!--#include file='include/fewi_url.html'-->allele/MGI:1856096">Atp7a<SUP>Mo</SUP></a>
+ or <A HREF="<!--#include file='include/fewi_url.html'-->allele/MGI:1856402">Egfr<SUP>tm1Mag</SUP></a>.<BR><BR>
 <LI>For allele designations for <B>spontaneous</B> and <b>induced</b> alleles of <B>known</B> genes... <BR>
 <UL><BR>
 <LI>Allele designations begin with a lower case letter if the allele is a recessive
 and begin with a capital letter otherwise.
 <EM> Example:</EM>
-<A HREF="<!--#include file='include/wi_url.html'-->searches/allele.cgi?1259">Wnt3a<SUP>vt</SUP></a>
+<A HREF="<!--#include file='include/fewi_url.html'-->allele/MGI:1857088">Wnt3a<SUP>vt</SUP></a>
   is the allele symbol for the <I>recessive</I> vestigal tail allele of the
-  <A HREF="<!--#include file='include/java_url.html'-->WIFetch?page=markerDetail&key=14483">Wnt3a</a> gene, while
+  <A HREF="<!--#include file='include/fewi_url.html'-->marker/MGI:98956">Wnt3a</a> gene, while
 
-<A HREF="<!--#include file='include/wi_url.html'-->searches/allele.cgi?195">Atp7a<SUP>Mo</SUP></a>
+<A HREF="<!--#include file='include/fewi_url.html'-->allele/MGI:1856096">Atp7a<SUP>Mo</SUP></a>
 is the allele symbol for the <I>dominant</I> mottled allele of the
-  <A HREF="<!--#include file='include/java_url.html'-->WIFetch?page=markerDetail&key=15197">Atp7a</a> gene. <BR><BR>
+  <A HREF="<!--#include file='include/fewi_url.html'-->marker/MGI:99400">Atp7a</a> gene. <BR><BR>
 <LI>If an allele is part of an allelic series, a serial number and lab code are part of its designation.
  Each laboratory has its own numbering series.
 <EM> Example:</EM>
-<A HREF="<!--#include file='include/wi_url.html'-->searches/allele.cgi?61">Tyr<SUP>c-4J</SUP></a>
+<A HREF="<!--#include file='include/fewi_url.html'-->alleleMGI:1855986">Tyr<SUP>c-4J</SUP></a>
  is the 4th albino allele in the series discovered at The Jackson Laboratory (J) for the
- <A HREF="<!--#include file='include/java_url.html'-->WIFetch?page=markerDetail&key=14347">Tyr</a> gene;
-<A HREF="<!--#include file='include/wi_url.html'-->searches/allele.cgi?2715">T<SUP>39H</SUP></a> is the
- 39th mutation of <A HREF="<!--#include file='include/java_url.html'-->WIFetch?page=markerDetail&key=13727">T</a>
+ <A HREF="<!--#include file='include/fewi_url.html'-->marker/MGI:98880">Tyr</a> gene;
+<A HREF="<!--#include file='include/fewi_url.html'-->allele/MGI:1862032">T<SUP>39H</SUP></a> is the 39th mutation of <A HREF="<!--#include file='include/fewi_url.html'-->marker/MGI:98472">T</a>
  from Harwell (H). This particular T allele was discovered in Harwell's ENU mutagenesis program.
 </UL>
 <P>
@@ -77,20 +76,20 @@ is the allele symbol for the <I>dominant</I> mottled allele of the
 <UL><BR>
 <LI> Tg(YYY)#Zzz for <B>transgenic alleles</B>, where YYY is the inserted gene,
 # is the serial number, and Zzz the lab code for the laboratory.  <EM>Example: </EM>
-<A HREF="<!--#include file='include/wi_url.html'-->searches/allele.cgi?1905"> Vcan<sup>Tg(Hoxa1)1Chm</sup></a>, the Tg(Hoxa1)1Chm allele of  <A HREF="<!--#include file='include/java_url.html'-->WIFetch?page=alleleDetail&key=1905">Vcan</a>.
+<A HREF="<!--#include file='include/fewi_url.html'-->allele/MGI:1857689"> Vcan<sup>Tg(Hoxa1)1Chm</sup></a>, the Tg(Hoxa1)1Chm allele of  <A HREF="<!--#include file='include/fewi_url.html'-->allele/MGI:1857689">Vcan</a>.
 A construct containing the mouse homeobox a1
-<A HREF="<!--#include file='include/java_url.html'-->WIFetch?page=markerDetail&key=9885">(Hoxa1)</a> was
+<A HREF="<!--#include file='include/fewi_url.html'-->marker/MGI:96170">(Hoxa1)</a> was
 inserted by microinjection, the first reported by Corey H. Mjaatvedt (Chm).
 This transgene was found before it was associated with any known gene.  Later, it was identified as an
 allele of
-<A HREF="<!--#include file='include/java_url.html'-->WIFetch?page=markerDetail&key=22783">Versican</a>
+<A HREF="<!--#include file='include/fewi_url.html'-->marker/MGI:102889">Versican</a>
  (chondroitin sulfate proteoglycan).<BR><BR>
 <LI> tm#Zzz for <B>targeted alleles</B> by homologous recombination, where tm indicates targeted mutation,
 # is the serial number, and
 Zzz the lab code for the laboratory. <EM> Example:</EM>
-<A HREF="<!--#include file='include/wi_url.html'-->searches/allele.cgi?544">Egfr<SUP>tm1Mag</SUP></a>
+<A HREF="<!--#include file='include/fewi_url.html'-->allele/MGI:1856402">Egfr<SUP>tm1Mag</SUP></a>
  where this is the 1st targeted mutation of
- <A HREF="<!--#include file='include/java_url.html'-->WIFetch?page=markerDetail&key=8333">Egfr</a> created by Terry Magnuson (Mag).<BR><BR>
+ <A HREF="<!--#include file='include/fewi_url.html'-->marker/MGI:95294">Egfr</a> created by Terry Magnuson (Mag).<BR><BR>
 </UL>
 
 

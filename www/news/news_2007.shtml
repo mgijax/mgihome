@@ -18,7 +18,7 @@
  Visel A; Thaller C; Eichele G. GenePaint.org: an atlas of gene expression patterns in the mouse embryo. 2004. Nucleic Acids Research 32(Database issue):D552-6).
 
 You can view the data set at accession number 
-<A HREF="<!--#include file='include/wi_url.html'-->searches/reference.cgi?124081">J:122989</a>. This set includes over 69,000 results for: 
+<A HREF="<!--#include file='include/fewi_url.html'-->reference/J:122989">J:122989</a>. This set includes over 69,000 results for: 
 <ul>
   <li>745 genes</li>
   <li>1397 probes</li>
@@ -29,9 +29,9 @@ You can view the data set at accession number
 
 Some useful links for querying subsets of data in GXD and MGI are: 
 <ul>
-  <li><A HREF="<!--#include file='include/java_url.html'-->WIFetch?page=expressionQF">Gene Expression Data Query Form</a></li>
-  <li><A HREF="<!--#include file='include/java_url.html'-->WIFetch?page=markerQF">Genes and Markers Query Form</a></li>
-  <li><a href="<!--#include file='include/java_url.html'-->WIFetch?page=probeQF">Molecular Probes and Clones Query Form</a></li>
+  <li><A HREF="<!--#include file='include/fewi_url.html'-->gxd">Gene Expression Data Query Form</a></li>
+  <li><A HREF="<!--#include file='include/fewi_url.html'-->marker">Genes and Markers Query Form</a></li>
+  <li><a href="<!--#include file='include/fewi_url.html'-->probe">Molecular Probes and Clones Query Form</a></li>
 </ul>
 <br>
 	
@@ -44,7 +44,7 @@ A revised version of the  <a href="../nomen/strains.shtml">Rules and Guidelines 
 </dd><br>
 
 <dt><a name="june_07"></a><b>June 14, 2007</b></dt>
-<dd><p>MGI's 3.54 release features a new <A HREF="<!--#include file='include/java_url.html'-->WIFetch?page=batchQF">batch query tool</a> for accessing information about many genes/markers all at once. 
+<dd><p>MGI's 3.54 release features a new <A HREF="<!--#include file='include/fewi_url.html'-->batch">batch query tool</a> for accessing information about many genes/markers all at once. 
  <ul>
     <li>Given a set of gene symbols or input identifiers (IDs) (such as MGI accession, RefSNP, or VEGA IDs) from, for example, a spreadsheet, you can copy and paste (or upload a file containing) a column of data into the query tool. </li>
   <li>You can specify the output you want in the results (for example, nomenclature; genome location; Ensembl, Entrez, or VEGA gene identifiers; gene ontology or mammalian phenotype data; GenBank/RefSeq, UniProt, RefSNP, or MGI Allele IDs).</li>
@@ -60,7 +60,7 @@ A revised version of the  <a href="../nomen/strains.shtml">Rules and Guidelines 
 <ul>
  <li>To view gene traps for a given marker:</p>
   <ol>
-    <li>Enter a gene name on the MGI <A HREF="<!--#include file='include/java_url.html'-->WIFetch?page=markerQF">Genes and Markers Query Form</a> (in the Gene/Marker Symbol/Name field)</li>
+    <li>Enter a gene name on the MGI <A HREF="<!--#include file='include/fewi_url.html'-->marker">Genes and Markers Query Form</a> (in the Gene/Marker Symbol/Name field)</li>
     <li>Click the desired gene on the Gene Summary report.</li>
     <li>Scroll the Gene Detail report to locate <i>Other Database Links.</i> If there are gene traps associated with this gene, the list of  their mutant cell line identifiers appears beside <i>Gene Traps</i>. </li>
     <li>Click to access a given gene trap's report (in GenBank/dbGSS). <br><b>Note:</b> If there are more than five links associated with a marker, five are listed followed by <i>All</i> (with a count in parentheses),  linked to the Gene Traps report.  See 
