@@ -10,7 +10,7 @@ if MGI_LIBS not in sys.path:
 import Configuration
 config = Configuration.get_Configuration ('Configuration', 1)
 
-import homelib
+#import homelib
 import webshare_lib
 
 import os
