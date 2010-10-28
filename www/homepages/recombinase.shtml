@@ -4,7 +4,7 @@
   <meta name="description" content="MGI collects and annotates expression and activity data for recombinase-containing transgenes and knock-in alleles." />
   <meta name="keywords" content="MGI, mgi, mice, mouse, murine, mus musculus, genes, genome, genomic, recombinase specificity, cre, transgene, knock-in, allele, promoter, driver, DNA recombination, loxP, conditional mutagenesis, knock-out, inducible,construct, specificity pattern, tissue, assay, recombinase reporter, reporter gene, result, staining, specimen, age, system, activity" />
 
- 
+
   <meta name="robots" content="NOODP" />
   <meta name="robots" content="NOYDIR" />
 
@@ -23,7 +23,7 @@
 			</span>
 			<br>
 			<span class="homePageSubTitle">
-			   MGI collects and annotates expression and activity data for 
+			   MGI collects and annotates expression and activity data for
 			   recombinase-containing transgenes and knock-in alleles.
 			</span>
 		</td>
@@ -47,49 +47,49 @@
 			<div class="boxTitle">Access Data</div>
 			<div class="boxBG pad5">
 				<p class="" style="margin-bottom: 8px; margin-top: 3px; color: rgb(0, 34, 85); font-variant: small-caps;"><b>Find recombinase-carrying alleles </b></p>
-                    <dl>    
-					
-						<dt class="whatList">Search for alleles assayed for specificity/expression in a particular anatomical system.<!-- Find recombinase alleles expressing activity in a particular 
-						anatomical system. These results include only those alleles for which recombinase 
+                    <dl>
+
+						<dt class="whatList">Search for alleles assayed for specificity/expression in a particular anatomical system.<!-- Find recombinase alleles expressing activity in a particular
+						anatomical system. These results include only those alleles for which recombinase
 						specificity data is available.--></dt>
 						<dd class="searchList">
-						
+
 						<div class="creSearch" style="width:450px; height:37px;">
 						<div class="creInputs">
-							<form action="<!--#include file='include/fewi_url.html'-->recombinase" method="get">
+							<form action="<!--#include file='include/fewi_url.html'-->recombinase/summary" method="get">
 								<label onmouseout="nd();" onMouseOver="return overlib('Anatomical system containing the structure or tissue term from the Mouse Anatomical Dictionary in which recombinase activity occurs. See the <a href=\'<!--#include file="include/fewi_url.html"-->adbrowser\'>Mouse Anatomical Dictionary</a> to find the terms MGI uses. (NOTE: links from the Mouse Anatomical Dictionary do not lead back to these pages.)', ANCHOR, 'GetSystem', ANCHORALIGN, 0, 0.5, 0, 0.5, WIDTH, 250, DELAY, 900, STICKY, CAPTION, 'Expressing activity in', CLOSECLICK, CLOSETEXT, 'Close X');">
 								    <strong style="color:#002255; border-bottom:dotted thin #555555; cursor:help;">Recombinase specificity in:</strong>&nbsp;</label>
 								<select name="systemKey" id="creSystemSelect">
 									<option selected value="" name="default">(choose one) </option>
-									<option value="4856340">adipose tissue</option>
-									<option value="4856341">alimentary system</option>
-									<option value="4856342">branchial arches</option>
-									<option value="4856343">cardiovascular system</option>
-									<option value="4856344">cavities &amp; their linings</option>
-									<option value="4856347">endocrine system</option>
-									<option value="4856349">head</option>
-									<option value="4856350">hemolymphoid system</option>
-									<option value="4856351">integumental system</option>
-									<option value="4856352">limbs</option>
-									<option value="4856353">liver and biliary system</option>
-									<option value="4856354">mesenchyme</option>
-									<option value="4856355">muscle</option>
-									<option value="4856356">nervous system</option>
-									<option value="4856358">renal and urinary system</option>
-									<option value="4856359">reproductive system</option>
-									<option value="4856360">respiratory system</option>
-									<option value="4856361">sensory organs</option>
-									<option value="4856362">skeletal system</option>
-									<option value="4856363">tail</option>
-									<option value="4856345">early embryo</option>
-									<option value="4856348">extraembryonic component</option>
-									<option value="4856346">embryo-other</option>
-									<option value="4856357">postnatal-other</option>
+									<option>adipose tissue</option>
+									<option>alimentary system</option>
+									<option>branchial arches</option>
+									<option>cardiovascular system</option>
+									<option>cavities &amp; their linings</option>
+									<option>endocrine system</option>
+									<option>head</option>
+									<option>hemolymphoid system</option>
+									<option>integumental system</option>
+									<option>limbs</option>
+									<option>liver and biliary system</option>
+									<option>mesenchyme</option>
+									<option>muscle</option>
+									<option>nervous system</option>
+									<option>renal and urinary system</option>
+									<option>reproductive system</option>
+									<option>respiratory system</option>
+									<option>sensory organs</option>
+									<option>skeletal system</option>
+									<option>tail</option>
+									<option>early embryo</option>
+									<option>extraembryonic component</option>
+									<option>embryo-other</option>
+									<option>postnatal-other</option>
 								</select>
 								<input name="submit2" class="searchToolButton" type="submit" value="Go" id="creSystem">
 								<span id="GetSystem">&nbsp;</span>
 							</form>
-						
+
 						</div>
 						</div>
 
@@ -97,16 +97,16 @@
 <br>
 <dt>Search for alleles by promoter/driver specificity.</dt>
 						<dd class="searchList">
-							
+
 						<div class="creSearch" style="width:365px; height:37px;">
 	                    <div class="creInputs">
-	
+
 	                    <form action="<!--#include file='include/fewi_url.html'-->recombinase" method="get">
 	                            <label onmouseover="return overlib('Allele, gene, fusion product, or genetic construct driving recombinase activity.',ANCHOR, 'GetDriver', ANCHORALIGN, 0, 0.5, 0, 0.5, WIDTH, 250, DELAY, 900, STICKY, CAPTION, 'Driven by', CLOSECLICK, CLOSETEXT, 'Close X');" onmouseout="nd();"><strong style="color:#002255; border-bottom:dotted thin #555555; cursor:help;">Recombinase driven by:</strong>&nbsp;</label>
 	                            <select name="driver" id="creDriverSelect">
 	                                <!--#include file='include/driver_list.html'-->
 	                            </select>
-	
+
 							<input name="submit" class="searchToolButton" type="submit" value="Go" id="creDriver">
 							<span id="GetDriver">&nbsp;</span>
 						</form>
@@ -124,27 +124,27 @@
 
 
 
-                   
-<div class="boxBG pad5"> 
+
+<div class="boxBG pad5">
 				    <p class="" style="margin-bottom: 8px; margin-top: 3px; color: rgb(0, 34, 85); font-variant: small-caps;"><b>Retrieve all alleles </b></p>
 					<dl>
 						<dt>Retrieve a list of all recombinase-containing transgenes and knock-in alleles.</dt>
                         <dd class="searchList"><a class="small homeLink" href="<!--#include file='include/ftp_url2.html'-->reports/MGI_Recombinase_Full.html">MGI Recombinase Alleles Report</a></dd>
                         <dd class="searchList"><a class="small homeLink" href="<!--#include file='include/ftp_url2.html'-->reports/MGI_Recombinase_Full.rpt">Tab-delimited version</a></dd>
                     </dl>
-                    
+
   <hr class="hrblue">
                     <p class="" style="margin-bottom: -10px; margin-top: 5px; color: rgb(0, 34, 85); font-variant: small-caps;"><b>Related searches</b></p>
                     <dl>
-						<dt class="whatList">Search for recombinase-containing transgene or knock-in alleles, or 
+						<dt class="whatList">Search for recombinase-containing transgene or knock-in alleles, or
 						floxed or frt alleles using MGI's Allele Query Form </dt>
 						<dd class="searchList"><a class="small homeLink" href="<!--#include file='include/fewi_url.html'-->allele">Phenotypes, Alleles & Disease Models Query</a></dd>
 
 						<dt class="whatList">Search for endogenous gene expression using MGI's Gene Expression Data Query Form</dt>
 						<dd class="searchList"><a class="small homeLink" href="<!--#include file='include/fewi_url.html'-->gxd">Gene Expression Data Query</a></dd>
 					</dl>
-                   
-                    
+
+
 				</div>
 
 			</div>
@@ -202,9 +202,9 @@
 	</div>
 	<div class="boxBG pad5 small">
 		<ul>
-			<li> The first edition of MGI's Recombinase Allele Project was 
-			released October 29, 2009. Data are  being curated from the 
-			scientific literature and integrated from projects underway at collaborating 
+			<li> The first edition of MGI's Recombinase Allele Project was
+			released October 29, 2009. Data are  being curated from the
+			scientific literature and integrated from projects underway at collaborating
 			organizations. (See the <b>Collaborators</b> tab, below).</li>
 	<li>MGI is part of the CREATE (Coordination of resources for conditional expression of mutated mouse alleles) consortium.</li>
 			<li>List of available <a href="<!--#include file='include/imsr_home_url.html'-->fetch?page=imsrSummary&mutationType=recombinase(cre%2Fflp)">
@@ -258,20 +258,20 @@
         if (systemSelect == ''){
             YAHOO.util.Event.preventDefault(e);
             alert('Please choose an Anatomical System before clicking \'Go\'.');
-        }       
+        }
 	};
-	
+
 	var validateDriver = function (e) {
         var driverSelect = document.getElementById("creDriverSelect").value
         if (driverSelect == ''){
             YAHOO.util.Event.preventDefault(e);
             alert('Please choose a Driver before clicking \'Go\'.');
-        }       
+        }
     };
 
     YAHOO.util.Event.addListener("creSystem", "click", validateSystem);
     YAHOO.util.Event.addListener("creDriver", "click", validateDriver);
-    
+
 </script>
 
 <!--#include file='include/templateBodyStop.html'-->
