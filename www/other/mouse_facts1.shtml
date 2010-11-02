@@ -1,12 +1,12 @@
-<!--#include file='include/templateHead.html'--> 
+<!--#include file='include/templateHead.html'-->
 <title>MGI-Mouse Facts</title>
 
-<!--#include file='include/templateBodyStart.html'--> 
+<!--#include file='include/templateBodyStart.html'-->
 
 <!-- Title Bar -->
   <div id="titleBarWrapper">
   <span class="titleBarMainTitle">Mouse Facts</span>
-  </div> 
+  </div>
 <!--titleBar-->
 <!-- main body table -->
 <table width="75%" cellpadding="2" align="center">
@@ -16,8 +16,8 @@
 	<tr><td>
             <ul>
                <!--<li><a href="#intro">Introduction</a> |</li>-->
-               <li><a href="#genome_length">Mouse Genome Length Estimates</a></li> | 
-               <li><a href="#chromosomal_size">Mouse Chromosomal Size</a></li> | 
+               <li><a href="#genome_length">Mouse Genome Length Estimates</a></li> |
+               <li><a href="#chromosomal_size">Mouse Chromosomal Size</a></li> |
                <li><a href="#codon_usage">Codon Usage</a></li> |
        	       <li><a href="#physiology">Mouse Physiology</a></li>
             </td>
@@ -35,7 +35,7 @@
 <table class="outline" width="100%">
 			<tr>
 				<td class="enhance">
-				
+
 				</td>
 			</tr>
 			<tr>
@@ -45,7 +45,7 @@
 			            	<dt>The "laboratory mouse" originated from a mixture of <i>M. m. domesticus</i>, <i>M. m. musculus</i>, and <i>M. m. molossius</i> subspecies. An inbred strain of the laboratory
  mouse is defined as a strain that has been brother/sister mated for 20
  or more consecutive generations and can be traced to a single ancestral
- pair. For further information  about inbred strains of mice see 
+ pair. For further information  about inbred strains of mice see
 <a href="<!--#include file='include/homepages_url.html'-->strains_SNPs.shtml">Strains, SNPs and Polymorphisms</a>.
 </dt>
 </dl>
@@ -70,7 +70,7 @@
 				<td>
 					<dl class="linkedList">
 					<dt></dt>
-			            	<dd><table BORDER=1 cellpadding=2 cellspacing=0>
+			            	<dd><table class="bdouble">
                                               <tr>
                                               <td valign=top><a href="http://www.ensembl.org/Mus_musculus/index.html">2,716,965,481</a> bp</td>
                                               <td valign=top>Reference assembly (C57BL/6J, "golden path") length: the sum of non-redundant top level sequence regions <A HREF="<!--#include file="include/fewi_url.html"-->reference/J:80507">(J:80507).</a></td></tr>
@@ -114,7 +114,7 @@
 					<dt><font size="-1">Mapped Length represents the (MGI) estimated cM position of the most distally placed locus on that chromosome. Total Estimated Size omits centromeres and telomeres which would add, on average, ~8 Mb per chromosome or ~160 Mb to the genome. It also omits uncaptured gaps between supercontigs.</font>
 					</dt>
 					<dd><blockquote>
-<table border="1" cellpadding="2">
+<table class="bdouble">
 
 <tr><th><font size="-1">Chromosome</font></th><th><font size="-1">Mapped <br>Length (cM)</font></th><th><font size="-1">Total  Estimated  Size (M bp)<br>(NCBI build 37)</font></th></tr>
 <tr><td align="center" valign="top"><font size="-1">1</font></td><td align="center" valign="top"><font size="-1">112.0&nbsp;&nbsp;</font></td><td align="center" valign="top"><a href="http://www.ncbi.nlm.nih.gov/mapview/maps.cgi?taxid=10090&chr=1"><font size="-1">197</font></a></td></tr>
@@ -241,15 +241,15 @@ strains</dd>
 
 		</td>
 			</tr>
-			
+
 </table>
 	</td></tr>
 
 
 </table>
 
-</div> 
-<!--#include file='include/templateBodyStop.html'--> 
+</div>
+<!--#include file='include/templateBodyStop.html'-->
 </body>
 </html>
 
