@@ -126,6 +126,7 @@ def main ():
     stringToFileNoNL (config['WI_URL'], '../www/include/wi_url2.html')
     stringToFile (config['FTP_BASE_URL'], '../www/include/ftp_url.html')
     stringToFile (config['MTB_URL'], '../www/include/mtb_url.html')
+    stringToFile (config['MTB_PATHOLOGY_URL'], '../www/include/mtb_pathology_url.html')
     stringToFile (config['MPD_URL'], '../www/include/mpd_url.html')
     #  This version of the ftp_url file is being generated to support a problem
     #  found in the implementation of TR7388.  The newline being written to
