@@ -171,6 +171,8 @@ def main ():
             '../www/include/pathways_url.html')       
     stringToFile (config['SILVER_URL'], \
             '../www/include/silverbook_url.html') 
+    stringToFile (config['FRITHBOOK_URL'], \
+            '../www/include/frithbook_url.html')    
     stringToFile (config['GREENBOOK_URL'], \
             '../www/include/greenbook_url.html')    
     stringToFile (config['MGIWS_URL'], \
