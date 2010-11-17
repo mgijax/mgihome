@@ -175,6 +175,8 @@ def main ():
             '../www/include/frithbook_url.html')    
     stringToFile (config['GREENBOOK_URL'], \
             '../www/include/greenbook_url.html')    
+    stringToFile (config['THEILERBOOK_URL'], \
+            '../www/include/theilerbook_url.html')    
     stringToFile (config['MGIWS_URL'], \
             '../www/include/mgiws_url.html')    
     stringToFile (config['WEBSHARE_URL'], \
