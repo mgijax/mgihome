@@ -210,7 +210,7 @@ def main ():
 	'../www/include/imsr_home_url.html')
 
     # new include file for the faq's
-    stringToFile (config['FAQ_URL'],
+    stringToFileNoNL (config['FAQ_URL'],
         '../www/include/faq_url.html')
 
     # new include files for apache aliased menu and homepages
