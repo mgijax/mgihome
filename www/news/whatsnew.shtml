@@ -16,37 +16,67 @@
    <tr><td>
  <!-- TOC table -->
         <table class="toc" width="100%">
-	<tr><td>
-            <ul>
-		<li><a href="#sept_again">September 15, 2010</a></li> |
-		<li><a href="#september">September 9, 2010</a></li> |
-		<li><A HREF="news_2010.shtml"><nobr>Archive: All News and Announcements for 2010</a></li> 
-             </ul>
-            </td>
-        </tr>              
+		<tr><td>
+            	<ul>
+		<li><a href="#april_2011">April 15, 2011</a> |
+		<!--<li><a href="#sept_again">September 15, 2010</a></li> |-->
+		
+		<li><A HREF="news_2010.shtml"><nobr>Archive: News and Announcements for 2010</a></li> 
+             	</ul>
+            	</td>
+        	</tr>              
       	</table>
-<!-- end TOC table -->
-  </td></tr>
+   </td></tr>
 
-<tr><td></td></tr>
+   <tr><td></td></tr>
 
-  <tr><td><a name="sept_again"></a>
-<!--section1 table-->
+   <tr><td><a name="april_2011"></a>
+
       <table class="outline" width="100%">
- <tr><td class="enhance">September 15, 2010</td>
+
+ 	<tr><td class="enhance">April 15, 2011</td></tr>
+
+	<tr><td>
+		<dl class="linkedList">
+		<dt>The Gene Expression Database (GXD)is pleased to announce that in addition to the recently added Eurexpress data (<a href="http://www.informatics.jax.org/searches/reference.cgi?154591">J:153498</a>), we have now included RNA in situ hybridization data from the Brain Gene Expression Map (<a href="http://www.stjudebgem.org/web/mainPage/mainPage.php">BGEM</a>) database.  You can view the data set at accession number <a href="http://www.informatics.jax.org/searches/reference.cgi?163316">J:162220</a>. This set includes over 53,475 results for:
+			<ul>
+  			4,820 genes<br>
+  			1,471 assays (RNA in situ hybridizations at E11.5, E15.5, P7 and P42)<br>
+  			16,065 images
+			</ul>
+		</dt>
+
+		<dt>Some useful links for querying subsets of data in GXD and MGI are: 
+			<ul>
+  			<li><A HREF="<!--#include file='include/java_url.html'-->WIFetch?page=expressionQF">Gene Expression Data Query Form</a></li>
+  			<li><A HREF="<!--#include file='include/java_url.html'-->WIFetch?page=markerQF">Genes and Markers Query Form</a></li>
+			</ul>
+		</dt>
+	
+		<dt>If you are interested in submitting your data to GXD, please see our guidelines for <a href="../GXD/GEN/gxd_submission_guidelines.shtml">submitting expression data to the Gene Expression Database</a> or contact <a href="mailto:GEN@informatics.jax.org">GEN@informatics.jax.org</a> for further information.
+		</dt>
+		</dl>
+	  </td>
+          </tr>
+	</table>
 </td></tr>
 <tr><td>&nbsp;</td></tr>
-<tr>
-<td>
+
+<!--<tr><td><a name="sept_2010"></a>
+
+      <table class="outline" width="100%">
+<a name="sept_2010"></a>
+ <tr><td class="enhance"">September 15, 2010</td></tr>
+ <tr><td>
 <dl class="linkedList">
 <dt>The Gene Expression Database (GXD) is pleased to announce the inclusion of RNA in situ hybridization data from the <a href="http://www.eurexpress.org/ee/">Eurexpress</a> project. You can view the data set at accession number 
-<a href="<!--#include file='include/wi_url.html'-->searches/reference.cgi?154591" class="GO">J:153498</a>. This set includes ~493,000 results for more than 6,400 genes in nearly 6,800 assays with more than 118,400 images. </dt>
+<a href="<!-#include file='include/wi_url.html'->searches/reference.cgi?154591" class="GO">J:153498</a>. This set includes ~493,000 results for more than 6,400 genes in nearly 6,800 assays with more than 118,400 images. </dt>
       
 
 <dt>Some useful links for querying subsets of data in GXD and MGI are: 
 <ul>
-  <li><A HREF="<!--#include file='include/java_url.html'-->WIFetch?page=expressionQF">Gene Expression Data Query Form</a></li>
-  <li><A HREF="<!--#include file='include/java_url.html'-->WIFetch?page=markerQF">Genes and Markers Query Form</a></li>
+  <li><A HREF="<!-#include file='include/java_url.html'->WIFetch?page=expressionQF">Gene Expression Data Query Form</a></li>
+  <li><A HREF="<!-#include file='include/java_url.html'->WIFetch?page=markerQF">Genes and Markers Query Form</a></li>
 
 </ul></dt>
 	
@@ -56,49 +86,7 @@
 </td>
 </tr>
 </table>
-</td></tr>
-
-
-
-
-
-
-  <tr><td><a name="september"></a>
-<!--section1 table-->
-      <table class="outline" width="100%">
- <tr><td class="enhance">September 9, 2010</td>
-</td></tr>
-<tr><td>&nbsp;</td></tr>
-<tr>
-<td>
-<dl class="linkedList">
-	<dt>For the 4.4 release, MGI adds more detailed feature type categories for genes, differentiating <i>protein coding genes</i> from <i>non-coding RNA genes</i> from markers based only on <i>heritable phenotype</i> from <i>immunological gene segments</i>. You can query an entire category or limit your search to a single subcategory.</dt>
-	<dt><ul>
-	  <li>	You can query by desired feature types on the  <A HREF="<!--#include file='include/java_url.html'-->WIFetch?page=markerQF">Genes and Markers Query Form</a>. A count of the number of genes appears for each feature category.</li>
-	  <li>Feature type categories appear in the output of the Genes and Markers query and in the output from any Quick Search.</li>
-	  <li>Using MGI BioMart, you can pick a type from the MGI Feature Type list (Attributes-->Genome Features-->MGI Feature Type) and then select Feature Type as an attribute (Attributes-->Features--Feature Type). The result is a list of all MGI entities assigned that feature type. </li>
-<li>You can also use the MGI Batch Query Form to enter or upload a list of symbols or IDs to search on. A column identifying the feature type for each list item appears in the results. </li>
-	</ul></dt>
-	
-
-<dt>Many of the classification terms in MGI come from the Sequence Ontology (SO) project. The SO project develops terms and relationships describing features and attributes of biological sequences. 
-When the MGI classification term definition MGI comes from the SO project, the SO ID for that term appears.</dt>
-<dt><ul>
-  <li>Learn more about the SO project here: <a href="http://www.sequenceontology.org/index.html">http://www.sequenceontology.org/index.html</a>. </li>
-  <li>Search and browse the full SO ontology here: <a href="http://www.sequenceontology.org/cgi-bin/miso.cgi">http://www.sequenceontology.org/cgi-bin/miso.cgi</a>.</li>
-</ul>
-
-<dt>For details about the new categories, see <a href="<!--#include file='include/userdocs_url.html'-->marker_feature_types.shtml">Genome Feature Type Definitions</a>.</dt>
-</dl>
-</td>
-</tr>
-</table>
-</td></tr>
-
-  
- <!--end of table -->
-</td></tr>
-
+</td></tr>-->
 
 </table>
 
