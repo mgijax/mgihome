@@ -1,180 +1,81 @@
-<!--#include file='include/templateHead.html'-->
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+        
+	<title>MGI-Mouse Gene Expression Database (GXD): Collaborators - Gene Expression Database (GXD): Collaborators</title>
+</head>
 
-  <title>MGI-Mouse Gene Expression Database (GXD)</title>
-  <meta name="description" content="GXD collects and integrates the  gene expression information in MGI. Its primary emphasis is on endogenous gene expression during  mouse development." />
-  <meta name="keywords" content="MGI, mgi, mice, mouse, murine, mus musculus, genes, genome, genomic, gene expression, mouse anatomy, embryo, embryonic development, expression assay, immunohistochemistry, in situ reporter, blot, RNA in situ, RNase, RT-PCR, Northern blot, Western blot" />
-  
-  <meta name="robots" content="NOODP" />
-  <meta name="robots" content="NOYDIR" />
+<body>
 
-  <link rel="stylesheet" type="text/css" href="<!--#include file="include/stylesheet.html"-->" />
-
-<!--#include file='include/templateBodyStart.html'-->
-
-<!-- start body content -->
-
-<!-- mini homepage header section -->
-<table class="sideMargin marginTop" border="0" cellspacing="0" cellpadding="0">
-	<tr>
-		<td align="center" valign="middle">
-			<span class="homePageTitle">
-				Gene Expression Database (GXD)
-			</span>
-			<br>
-			<span class="homePageSubTitle">
-			   GXD collects and integrates the  gene expression information in MGI. Its primary
-			   emphasis is on endogenous gene expression during  mouse development.
-			</span>
-		</td>
-		<td>
-			<div class="sideMargin marginBottom blueBorder pad5">
-				<a href="<!--#include file='include/faq_url.html'-->GXD_imgpop.shtml" onClick='javascript:openFaqWindow("GXD_imgpop.shtml"); return false;'>
-		<img class="outlineImg" src="<!--#include file='include/mgihome_url.html'-->homepages/images/GXD.jpg"></a>
-        	</div>
-		</td>
-	</tr>
-</table>
-
-
-<table class="sideMargin" border="0" cellspacing="0" cellpadding="0">
-
-	<tr>
-		<td rowspan="2" width="50%" valign="top">
-			<div class="blueBorder rightCenterMargin">
-				<div class="boxTitle">Access Data</div>
-				<div class="boxBG pad5">
-					<dl>
-						<dt>Search for references on gene expression during development.</dt>
-<dd class="searchList"><a class="small homeLink" href="<!--#include file='include/wi_url.html'-->searches/gxdindex_form.shtml">Gene Expression Literature Query</a></dd>
-
-						<dt class="whatList">Search for detailed gene expression assay results.</dt>
-						<dd class="searchList"><a class="small homeLink" href="<!--#include file='include/java_url.html'-->WIFetch?page=expressionQF">Gene Expression Data Query</a></dd>
-
-						<dt class="whatList">Search for genes expressed in some anatomical structures and/or
-						developmental stages but not in others.</dt>
-						<dd class="searchList"><a class="small homeLink" href="<!--#include file='include/java_url.html'-->WIFetch?page=expressionQFexpanded">Gene Expression Data Expanded Query</a></dd>
-
-						<dt class="whatList">Search or browse for anatomical structures; includes links to
-						associated expression results.</dt>
-						<dd class="searchList"><a class="small homeLink" href="<!--#include file='include/wi_url.html'-->searches/anatdict_form.shtml">Mouse Anatomical Dictionary Browser</a></dd>
-
-						<dt class="whatList">Search the Edinburgh Mouse Atlas for anatomical terms and query
-						for associated expression data.</dt>
-						<dd class="searchList"><a class="small homeLink" href="http://genex.hgu.mrc.ac.uk/Resources/GXDQuery1/SectionBrowser.html">EMAGE Anatomical Section Browser</a></dd>					
-					</dl>
-				</div>
-			</div>
-		</td>
-		<td width="50%" valign="top">
-			<div class="blueBorder marginBottom leftCenterMargin">
-				<div class="boxTitle">FAQs</div>
-				<div class="boxBG pad5">
-					<dl class="boxList">
-						<dt>How do I...</dt>
-						<dd class="faqList">.. find expression data for a specific gene and tissue?
-						<a class="small homeLink" onClick="javascript:openFaqWindow('GXD_GeneTissue.shtml'); return false;"
-						href="<!--#include file='include/faq_url.html'-->GXD_GeneTissue.shtml">FAQ</a></dd>
-						<dd class="faqList">.. find expression data for a tissue during development?
-						<a class="small homeLink" onClick="javascript:openFaqWindow('GXD_tissue_dev.shtml'); return false;"
-						href="<!--#include file='include/faq_url.html'-->GXD_tissue_dev.shtml">FAQ</a></dd>
-						<dd class="faqList">.. find genes expressed in one tissue but not another?
-						<a class="small homeLink" onClick="javascript:openFaqWindow('GXD_comp_tissue.shtml'); return false;"
-						href="<!--#include file='include/faq_url.html'-->GXD_comp_tissue.shtml">FAQ</a></dd>
-						<dd class="faqList">.. find references that report expression data for a gene at a specific age?
-						<a class="small homeLink" onClick="javascript:openFaqWindow('GXD_ref_age.shtml'); return false;"
-						href="<!--#include file='include/faq_url.html'-->GXD_ref_age.shtml">FAQ</a></dd>
-					</dl>
-					<a class="small homeLink" href="<!--#include file='include/faq_url.html'-->FAQ.shtml#faq_gxd">More FAQs</a>
-				</div>
-			</div>
-		</td>
-	</tr>
-	<tr>
-		<td width="50%" valign="top">
-			<div class="blueBorder leftCenterMargin statList">
-				<div class="boxTitle">
-					<div class="left">GXD Includes</div>
-					<div class="right small"><!--#include file='include/stats_date.shtml'--></div>
-				</div>
-				<div class="boxBG pad5 small">
-					<!--#include file='stats/gxd_stats.shtml'-->
-					<a class="small homeLink" href="<!--#include file="include/mgihome_url.html"-->homepages/stats/all_stats.shtml#allstats_gxd">More...</a>
-				</div>
-			</div>
-		</td>
-	</tr>
-</table>
-<div class="boxWide blueBorder marginBottom">
-	<div class="boxTitle">
-		<span class="left">Gene Expression News</span>
-		<span class="right small">September 15, 2010</span>
-	</div>
-	<div class="boxBG pad5 small">
-                <ul>
-  
-<li>We are pleased to announce the inclusion of RNA in situ hybridization data from the Brain Gene Expression Map (BGEM) database.  You can view the data set at accession number 
-<a href="<!--#include file='include/wi_url.html'-->searches/reference.cgi?163316" class="GO">J:162220</a>. This set includes over 53,475 results for: 4,820 genes; 1,471 assays (RNA in situ hybridizations at E11.5, E15.5, P7 and P42); and 16,065 images.  RNA in situ hybridization data from the Eurexpress project was also recently added to GXD. You can view the data set at accession number 
-<a href="<!--#include file='include/wi_url.html'-->searches/reference.cgi?154591" class="GO">J:153498</a>. This set includes ~493,000 results for more than 6,400 genes in nearly 6,800 assays with more than 118,400 images.</li><br>
-
-<li>The <a href="<!--#include file='include/java_url.html'-->WIFetch?page=batchQF">MGI Batch Query</a> tool now provides access to gene expression data in MGI. Enter a list of genes and click <b>Gene Expression</b> (under <b>Additional Information</b>).</li><br>
-
-<li>The <a href="<!--#include file='include/java_url.html'-->WIFetch?page=batchQF">MGI Batch Query</a> tool now supports the analysis of microarray expression data. It accepts microarray probeset IDs from two Affymetrix Platforms - Mouse Gene 1.0 ST Array and Mouse Genome 430A 2.0 Array. One can enter a list of up- or down-regulated probes from a microarray experiment and get different types of MGI data for the corresponding genes.</li><br>
-
-<li>Now available on gene detail pages (see <b>External Resources</b>: in the Expression section) are links to microarray gene expression pages at <a href="http://www.ncbi.nlm.nih.gov/geo/">GEO</a> and <a href="http://www.ebi.ac.uk/microarray-as/ae/">ArrayExpress</a>; links to summary pages of images generated by <a href="http://www.gensat.org/index.html">GENSAT</a>, the Gene Expression Nervous System Atlas Project; and links to the <a href="http://www.brain-map.org/welcome.do">Allen Brain Atlas</a>, a database of gene expression patterns in the adult mouse brain.</li><br>
+<table>
+	<tr><td>
+ 		Collaborators  and Large-scale Data Providers:
+		<ul>
+			<li><a href="http://www.emouseatlas.org/" class="GO">EMAP</a> (Edinburgh  Mouse Atlas Project) and <a href="http://www.emouseatlas.org/emage/" class="GO">EMAGE</a> (Edinburgh Mouse Atlas Gene Expression Database)</li>
+		</ul>
+  		<blockquote>
+  		<p>GXD uses the Anatomical Dictionary of Mouse Development
+  		  		developed by EMAP to describe expression patterns in standardized ways.
+  		  		&nbsp; GXD helps to refine the anatomical  dictionary by providing
+  		  		continuous feedback.&nbsp; GXD also provides its RNA in situ and
+  		  		Immunohistochemistry data to EMAGE,  so that the data can be spatially
+  		  		mapped.&nbsp;  The ultimate goal of our collaboration is to provide the
+  		  		scientific  community with integrated access to text-based and graphical
+  		  		expression data via the
+  		  		<a href="<!--#include file='include/mgihome_url.html'-->GXD/gxdgen.shtml" class="GO">Mouse Gene Expression Information Resource.</a>
+  		  		</p>
+  		</blockquote>
+  		
+		<ul>
+		<li><a href="http://www.genepaint.org/Frameset.html" class="GO">GenePaint  Database</a></li>
+		</ul>
+  	<blockquote>
+  			<p>We have incorporated in situ hybridization  data from
+  		  		GenePaint into GXD.&nbsp; This data  set can be viewed at
+  		  		<a href="<!--#include file='include/wi_url.html'-->searches/reference.cgi?124081" class="GO">J:122989</a>.
+  		  		&nbsp; Database entries in GXD link to the  corresponding entries in GenePaint.&nbsp;
+  		  		In  this way, users can take advantage of GXD&rsquo;s data integration and querying
+  		  		capabilities while having easy access to GenePaint&rsquo;s high-resolution images and
+  		  		zoom capabilities.</p>
+  		</blockquote>
+	<ul>
+	 
+  	  <li><a href="http://www.eurexpress.org/ee/" class="GO">Eurexpress</a></li>
 </ul>
+<blockquote>
+	<p>We have incorporated RNA in situ hybridization data from Eurexpress into GXD.  This data set can be viewed at 
+<a href="<!--#include file='include/wi_url.html'-->searches/reference.cgi?154591" class="GO">J:153498</a>.&nbsp;  Database entries in GXD link to the corresponding entries in Eurexpress.  In this way, users can take advantage of GXD's data integration and querying capabilities while having easy access to Eurexpress's high-resolution images and zoom capabilities.</p>	
 
+</blockquote>
 
-           
-            
-                       </div>
-</div>
-
-
-
-
-<!-- Tabs box -->
-<!-- Note: This section uses a white gif to set the width and avoid
-    the a crash in IE6, and display problems in IE 6 & 7.  I also
-    needed to put this div in a table to get the fix to work.  The
-    order otf the table and div tags is very specific to avoid some
-    flickering in IE.-->
-<table width="100%" cellpadding="0" cellspacing="0" border="0"><tr><td>
-<div class="boxWide marginBottom">
-	<ul id="gxdtab" class="shadetabs">
-		<li><a href="<!--#include file='include/mgihome_url.html'-->homepages/tabContents/GXD_About.shtml" rel="ajaxcontentarea">About GXD</a></li>
-		<li class="selected"><a href="<!--#include file='include/mgihome_url.html'-->homepages/tabContents/GXD_SendData.shtml" rel="ajaxcontentarea">Send Us Your Data</a></li>
-		<li><a href="<!--#include file='include/mgihome_url.html'-->homepages/tabContents/GXD_Curators.shtml" rel="ajaxcontentarea">Our Data Policies</a></li>
-		<li><a href="<!--#include file='include/mgihome_url.html'-->homepages/tabContents/GXD_Help.shtml" rel="ajaxcontentarea">Help Documents</a></li>
-		<li><a href="<!--#include file='include/mgihome_url.html'-->homepages/tabContents/GXD_Collaborators.shtml" rel="ajaxcontentarea">Collaborators</a></li>
-		<li><a href="<!--#include file='include/mgihome_url.html'-->homepages/tabContents/GXD_Resources.shtml" rel="ajaxcontentarea">Other Links</a></li>
-	</ul>
-	<div id="gxdcontentarea" class="contentstyle">
-		<!--#include file='tabContents/GXD_SendData.shtml'-->
-	</div>
-
-<img src="<!--#include file='include/mgihome_url.html'-->homepages/images/white_dot.gif" width="720px" height="1px">
-</td></tr>
-</div>
+		<ul>
+		  <li><a href="http://www.stjudebgem.org/web/mainPage/mainPage.php">BGEM</a></li>
+		</ul>
+	<blockquote>
+			<p>We have incorporated RNA in situ hybridization data from the Brain Gene Expression Map (BGEM) database into GXD.  This data set can be viewed at 
+<a href="<!--#include file='include/wi_url.html'-->searches/reference.cgi?163316">J:162220</a>.  Database entries in GXD link to the corresponding entries in BGEM.  In this way, users can take advantage of GXD's data integration and querying capabilities while having easy access to BGEM's high-resolution images.</p>
+		</blockquote>
+		
+		
+  		<p>We have also incorporated data from the following major studies:</p>
+		<ul>
+<li>Shimogori et al. (2010) Nat Neurosci, 13, 767-775.  They used in situ hypbridization to 
+examine the expression of genes in the developing hypothalamus.  This data can 
+be viewed at 
+<a href="<!--#include file='include/wi_url.html'-->searches/reference.cgi?158912">J:157819</a>.</li>
+<li>Guo et al. (2010) Dev Cell 18, 675-685.  They used real time PCR to study transcription factor dynamics in the preimplantation embryo.  This data can be viewed at 
+<a href="<!--#include file='include/wi_url.html'-->searches/reference.cgi?141558" class="GO">J:140465</a>.</li>
+<li>Gray et al. (2004) Science 306, 2255-2257.&nbsp; They used in situ hybridization to examine  the expression of putative transcription factors in the developing mouse  nervous system.&nbsp; This data can be viewed  at 
+<a href="<!--#include file='include/wi_url.html'-->searches/reference.cgi?92242" class="GO">J:91257</a>.</li>
+<li>Blackshaw et al. (2004) PLoS Biol 2, e247.&nbsp; They used in situ hybridization to examine  the expression of genes in the developing mouse retina.&nbsp; This data can be viewed at <a href="<!--#include file='include/wi_url.html'-->searches/reference.cgi?94290" class="GO">J:93300</a>.</li>
+<li>Gitton et al. (2002) Nature 420, 586-590.&nbsp; They used in situ hybridization and RT-PCR to  examine the expression of human chromosome 21 orthologues in the mouse.&nbsp; This data can be viewed at <a href="<!--#include file='include/wi_url.html'-->searches/reference.cgi?81462" class="GO">J:80501</a>.</li>
+			<li>Reymond et al. (2002) Nature 420, 582-586.&nbsp; They used in situ hybridization and RT-  RT-PCR to examine the expression of human chromosome 21 orthologues in the  mouse.&nbsp; This data can be viewed at <a href="<!--#include file='include/wi_url.html'-->searches/reference.cgi?81463" class="GO">J:80502</a>.</li>
+			<li>Freeman et al. (1998) MGI Direct Data  Submission.&nbsp; They used RT-PCR to examine  the expression of genes in the mouse.&nbsp;  This data can be viewed at <a href="<!--#include file='include/wi_url.html'-->searches/reference.cgi?46734" class="GO">J:46439</a>.</li>
+		</ul>
+  </td></tr>
 </table>
 
-<!--AJAX TABS CALLS-->
-
-<script type="text/javascript" src="<!--#include file="include/javascript.html"-->">
-    /***********************************************
-    * Ajax Tabs Content script- © Dynamic Drive DHTML code library (www.dynamicdrive.com)
-    * This notice MUST stay intact for legal use
-    * Visit Dynamic Drive at http://www.dynamicdrive.com/ for full source code
-    ***********************************************/
-</script>
-
-<script type="text/javascript">
-    var gxd_box=new ddajaxtabs("gxdtab", "gxdcontentarea")
-    gxd_box.setpersist(true)
-    gxd_box.setselectedClassTarget("linkparent") //"link" or "linkparent"
-    gxd_box.init()
-</script>
-
-<!--#include file='include/templateBodyStop.html'-->
 
 </body>
 </html>
