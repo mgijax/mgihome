@@ -157,7 +157,7 @@ ALLELE_FIELDS = [
 			('recessive', 'recessive'),
 			('X-linked', 'X-linked'),
 			('other', 'other (specify)', 30),
-			('', 'unknown/not applicable') ] ] ),
+			('unknown', 'unknown/not applicable') ] ] ),
 	feedbacklib.OneLineTextField ('strainBackground', 'Strain background',
 		width = 35),
 	feedbacklib.MultiLineTextField ('location',
