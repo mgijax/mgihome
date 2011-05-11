@@ -72,10 +72,10 @@ SP=Full text
 	url = http://mousemutant.jax.org/articles/mmrremutationvtg4j.html
         ]
 #
-#  3. mutation symbol:Wtgr; mutation name:wavy tiger;  gene symbol:---no link
+#  3. mutation symbol:Wtgr; mutation name:wavy tiger;  gene symbol: no link
 #[	id = J:	type = ${SP}url = http://mousemutant.jax.org/articles/mmrmutantwavytiger.html	]
 #
-#  4. mutation symbol:Dfb; mutation name:deaf ballerina;  gene symbol:----
+#  4. mutation symbol:Dfb; mutation name:deaf ballerina;  gene symbol:
 #
 [
 	id = J:110189
@@ -83,7 +83,7 @@ SP=Full text
 	url = http://mousemutant.jax.org/articles/mmrmutationdfb.html
 	]
 #
-#  5. mutation symbol:sunk; mutation name:sunken;  gene symbol:----
+#  5. mutation symbol:sunk; mutation name:sunken;  gene symbol:
 #
 [
 	id = J:109438
@@ -91,7 +91,7 @@ SP=Full text
 	url = http://mousemutant.jax.org/articles/mmrmutantsunk.html
 	]
 #
-#  6.mutation symbol:sevr; mutation name:severe runting;  gene symbol:----
+#  6.mutation symbol:sevr; mutation name:severe runting;  gene symbol:
 #
 [
 	id = J:109437
@@ -117,7 +117,7 @@ SP=Full text
 	url = http://mousemutant.jax.org/articles/mmrmutantsv2j.html
 	]
 #
-#  9.mutation symbol:Shar; mutation name:shiny and rough;  gene symbol:---
+#  9.mutation symbol:Shar; mutation name:shiny and rough;  gene symbol:
 #
 [
 	id = J:107050
@@ -253,7 +253,7 @@ SP=Full text
 	url = http://mousemutant.jax.org/articles/mmrremutationreeler5j.html
 	]
 #
-#  26.mutation symbol:shmy-2J; mutation name:shimmy 2 Jackson;  gene symbol:---
+#  26.mutation symbol:shmy-2J; mutation name:shimmy 2 Jackson;  gene symbol:
 #
 [
 	id = J:98755
@@ -301,7 +301,7 @@ SP=Full text
 	url = http://mousemutant.jax.org/articles/mmrremutationsh23J.html
 	]
 #
-#  32.mutation symbol:rul; mutation name:ruffled;  gene symbol:-----
+#  32.mutation symbol:rul; mutation name:ruffled;  gene symbol:
 #
 [
 	id = J:96444
@@ -341,7 +341,7 @@ SP=Full text
 	url = http://mousemutant.jax.org/articles/mmrmutantho15j.html
 	]
 #
-#  37.mutation symbol:awaq; mutation name:ages with abnormal gait;  gene symbol:----
+#  37.mutation symbol:awaq; mutation name:ages with abnormal gait;  gene symbol:
 #
 [
 	id = J:94744
@@ -349,7 +349,7 @@ SP=Full text
 	url = http://mousemutant.jax.org/articles/mmrmutantawag.html
 	]
 #
-#  38.mutation symbol:rcw-2J; mutation name:recoil wobbler 2 Jackson;  gene symbol:---
+#  38.mutation symbol:rcw-2J; mutation name:recoil wobbler 2 Jackson;  gene symbol:
 #
 [
 	id = J:97119
@@ -373,7 +373,7 @@ SP=Full text
 	url = http://mousemutant.jax.org/articles/mmrremutationmedjo_2j.html
 	]
 #
-#  41.mutation symbol:tth; mutation name:tremor with tilted head;  gene symbol:---
+#  41.mutation symbol:tth; mutation name:tremor with tilted head;  gene symbol:
 #
 [
 	id = J:91623
@@ -397,7 +397,7 @@ SP=Full text
 	url = http://mousemutant.jax.org/articles/mmr_remutation_puJ.html
 	]
 #
-#  44.mutation symbol:ctl; mutation name:curly tail-like;  gene symbol:----
+#  44.mutation symbol:ctl; mutation name:curly tail-like;  gene symbol:
 #
 [
 	id = J:91389
@@ -429,7 +429,7 @@ SP=Full text
 	url = http://mousemutant.jax.org/articles/mmrmutantpewter3j.html
 	]
 #
-#  48.mutation symbol:baw; mutation name:black and white;  gene symbol:---
+#  48.mutation symbol:baw; mutation name:black and white;  gene symbol:
 #
 [
 	id = J:90138
@@ -437,7 +437,7 @@ SP=Full text
 	url = http://mousemutant.jax.org/articles/mmrmutantbaw.html 
 	]
 #
-#  49.mutation symbol:dal; mutation name:dark-like  gene symbol:---
+#  49.mutation symbol:dal; mutation name:dark-like  gene symbol:
 #
 [
 	id = J:87005
@@ -453,7 +453,7 @@ SP=Full text
 	url = http://mousemutant.jax.org/articles/mmr_remutation_lh_3j.html
 	]
 #
-#  51.mutation symbol:agil; mutation name:agitans-like;  gene symbol:----
+#  51.mutation symbol:agil; mutation name:agitans-like;  gene symbol:
 #
 [
 	id = J:84746
@@ -1207,14 +1207,13 @@ SP=Full text
 #
 #
 #
-# 141 mut. symbol: lh-4J Mut Name: lethargic 4 Jackson Phenotype: neurological Gene:Cacnb4lh Chr: 2
+# 141 mut. symbol: lh-4J Mut Name: lethargic 4 Jackson  Gene:Cacnb4lh Chr: 2
 #
 [
 	id = J:121822
         type = ${SP}	
         url = http://mousemutant.jax.org/articles/mmrmutantlh4j.html
 	]
-#
 #
 #
 # 142 mut sym: Sl-23J Mut Name:Steel 23 Jackson Pheno:coat color& belly spot Gene:Kitl Chr: 10
@@ -1226,13 +1225,176 @@ SP=Full text
 	]
 #
 #
-#
 # 143 mut. symbol: Bolt Mut Name: lightning bolt tail Phenotype: skeletal  Chr:11
 #
 [
 	id = J:122540
         type = ${SP}	
         url = http://mousemutant.jax.org/articles/mmrmutantbolt.html
+	]
+#
+#
+#
+# 144 mut. symbol: hpbk Mut Name: humpback Phenotype: skeleton,limbs,neuromusc  Chr:17
+#
+[
+	id = J:157222
+        type = ${SP}	
+        url = http://mousemutant.jax.org/articles/mmrmutanthpbk.html
+	]
+#
+#
+# 145 mut. symbol: dde  Mut Name: disproportionate dwarf & eye defect: Chr:1
+#
+[
+	id = J:159016
+        type = ${SP}	
+        url = http://mousemutant.jax.org/articles/mmrmutantdde.html
+
+	]
+#
+# 146 mut. symbol: wblo  Mut Name: wobbly locomotion Chr:6
+#
+[
+	id = J:159015
+        type = ${SP}	
+        url = http://mousemutant.jax.org/articles/mmr_mutant_wblo.html
+	]
+#
+#
+# 147 mut. symbol: myd-3J  Mut Name: myodystrophy 3 Jackson Chr:2
+#
+[
+	id = J:160357
+        type = ${SP}	
+        url = http://craniofacial.jax.org/publications/curtainetalnm3944myd3j.html
+	]
+#
+#
+# 148 mut. symbol: tg-7J  Mut Name: tottering 7 Jackson Chr:8
+#
+[
+	id = J:161271
+        type = ${SP}	
+        url = http://mousemutant.jax.org/articles/mmrmutanttg7j.html
+	]
+#
+#
+# 149 mut. symbol: tg-7J  Mut Name: tottering 7 Jackson Chr:8
+#
+[
+	id = J:161271
+        type = ${SP}	
+        url = http://mousemutant.jax.org/articles/mmrmutanttg7j.html
+	]
+#
+#
+# 150 mut. symbol: gad-2J  Mut Name: gracile axonal dystrophy2 Jackson Chr:5
+#
+[
+	id = J:161692
+        type = ${SP}	
+        url = http://mousemutant.jax.org/articles/mmrmutantgad2j.html
+	]
+#
+#
+# 151 mut. symbol: Lootl  Mut Name: loop tail-like skeletal Chr:1
+#
+[
+	id = J:161923
+        type = ${SP}	
+        url = http://mousemutant.jax.org/articles/mmrmutantlootl.html
+	]
+#
+#
+# 152 mut. symbol: Splch2  Mut Name: Splotch-like2 color spotting & tail Chr: 1
+#
+[
+	id = J:162227
+        type = ${SP}	
+        url = http://mousemutant.jax.org/articles/mmrmutantsplchl2.html
+	]
+#
+#
+# 153 mut. symbol: psds1l  Mut Name: psoriasis-like skin disese severity1-like Chr: 4
+#
+[
+	id = J:165395
+        type = ${SP}	
+        url = http://mousemutant.jax.org/articles/mmrmutantpsds1l.html
+	]
+#
+#
+# 154 mut. symbol: vgim  Mut Name: vaginal imperforation -  reproductive Chr:13
+#
+[
+	id = J:167822
+        type = ${SP}	
+        url = http://mousemutant.jax.org/articles/mmrmutantvgim.html
+	]
+#
+#
+# 155 mut. symbol: aphl  Mut Name: atypical hair loss   Chr:6
+#
+[
+	id = J:166286
+        type = ${SP}	
+        url = http://mousemutant.jax.org/articles/mmrmutantaphl.html
+	]
+#
+#
+# 156 mut. symbol: mdig-2J  Mut Name: missing digits 2 Jackson   Chr:2
+#
+[
+	id = J:165544
+        type = ${SP}	
+        url = http://craniofacial.jax.org/publications/curtainetalnm4181.html
+	]
+#
+#
+# 157 mut. symbol: d-l32J  Mut Name: dilute lethal 32 Jackson  Chr:9
+#
+[
+	id = J:169210
+        type = ${SP}	
+        url = http://mousemutant.jax.org/articles/mmrmutantmyo5adl32j.html
+	]
+#
+#
+# 158 mut. symbol: d-l33J  Mut Name: dilute lethal 33 Jackson   Chr:9
+#
+[
+	id = J:169214
+        type = ${SP}	
+        url = http://mousemutant.jax.org/articles/mmrmutantmyo5adl33J.html
+	]
+#
+#
+# 159 mut. symbol: Grhl1<m1J>  Mut Name: mutation 1 Jackson   Chr:12
+#
+[
+	id = J:169827
+        type = ${SP}	
+        url = http://mousemutant.jax.org/articles/mmrmutantgrhl1m1j.html
+	]
+#
+#
+# 160 mut. symbol: Npr2<cn-3J>  Mut Name: achondroplasia 3 Jackson   Chr:4
+#
+[
+	id = J:170669
+        type = ${SP}	
+        url = http://mousemutant.jax.org/articles/mmrmutantnpr2cn3j.html
+	]
+
+#
+#
+# 161 mut. symbol: Dts  Mut Name: dominant tail short 33 Jackson   Chr:1
+#
+[
+	id = J:171039
+        type = ${SP}	
+        url = http://mousemutant.jax.org/articles/mmrmutantdts.html 
 	]
 #
 #[
@@ -1242,6 +1404,11 @@ SP=Full text
 # type = ${SP}
 # url = ${SPDIR}/J:5657.pdf
 #]
+
+
+J:157222
+
+
 #[
 #
 # This record is FAKE!! For testing only!!!
