@@ -150,7 +150,7 @@ ALLELE_FIELDS = [
 	feedbacklib.OneLineTextField ('mutantEsCellLine',
 		'Mutant ES cell line', width = 35),
 	feedbacklib.RadioButtonGroup ('inheritance', 'Inheritance',
-		value = [ '' ],
+#		value = [ '' ],
 		items = [ [ ('dominant', 'dominant'),
 			('codominant', 'codominant'),
 			('semidominant', 'semidominant'),
@@ -1432,8 +1432,15 @@ def anySubmitted (
 		if field.getValue():
 			if field != inheritance:
 				return True
+
+			# special checks for the Inheritance field; to be
+			# considered a submitted choice, it should be:
+			#   1. not the 'unknown/not applicable' choice
+			#   2. not the default '' choice
+
 			if not field.getValue().startswith('unknown'):
-				return True
+				if not field.getValue().strip() == '':
+					return True
 	return False
 
 def checkSection (
@@ -1451,12 +1458,6 @@ def checkSection (
 	# Throws: nothing
 
 	global ERRANT_FIELDS
-
-	foundAny = False		# did we find any Fields with values?
-	for field in allFields:
-		if field.getValue():
-			foundAny = True
-			break
 
 	errors = []			# list of error strings
 
