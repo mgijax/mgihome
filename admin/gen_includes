@@ -14,7 +14,8 @@ import homelib
 import webshare_lib
 
 import os
-import db
+import pg_db
+db = pg_db		# setup alias to minimize code changes
 import string
 
 def listToFile (str_list, filename):
@@ -39,11 +40,9 @@ def getDbDate ():
     db.set_sqlServer(config["DB_SERVER"])
     db.set_sqlDatabase(config["DB_DATABASE"])
     cmds = [] # SQL command list
-    cmds.append(string.join([
-        'SELECT CONVERT(varchar, lastdump_date, 106) as dbDate, '
-        'public_version '
-        'FROM MGI_dbInfo '
-    ]))
+    cmds.append('''SELECT to_char(lastdump_date, 'YYYY-MM-DD') as dbDate, 
+        	public_version 
+        FROM MGI_dbInfo''')
 
     #  Excecute queries
     results = db.sql(cmds, 'auto')
