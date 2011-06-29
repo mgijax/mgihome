@@ -18,8 +18,9 @@
         <table class="toc" width="100%">
 		<tr><td>
             	<ul>
+        <li><a href="#july_2011">July 7, 2011</a> |
+		<li><a href="#june_2011">June 24, 2011</a> |
 		<li><a href="#april_2011">April 13, 2011</a> |
-		<!--<li><a href="#sept_again">September 15, 2010</a></li> |-->
 		
 		<li><A HREF="news_2010.shtml"><nobr>Archive: News and Announcements for 2010</a></li> 
              	</ul>
@@ -29,6 +30,35 @@
    </td></tr>
 
    <tr><td></td></tr>
+   
+    <tr><td><a name="july_2011"></a>
+
+      <table class="outline" width="100%">
+
+ 	<tr><td class="enhance">July 7, 2011</td></tr>
+ 	<tr><td>
+ 		<dl class="linkedList">
+		<dt>The MGI implementation of <a href="http://biomart.informatics.jax.org/">BioMart</a> now includes gene expression data from the Gene Expression Database (GXD). 
+			<ul>
+			<li>BioMart is a query-oriented data management and integration system that performs like a batch query. You can use the MGI BioMart to find expression data for a list of genes or for specific anatomical structures or Theiler Stages. You can manipulate the fields you see in your results and choose to return your results as HTML or comma or tab-separated values. </li>
+			<li>Batch searches for gene expression data are also possible through the <a href="http://www.informatics.jax.org/javawi2/servlet/WIFetch?page=batchQF">MGI Batch Query Form</a>. </li>
+			</ul>
+		</td>
+   
+   <tr><td><a name="june_2011"></a>
+
+      <table class="outline" width="100%">
+
+ 	<tr><td class="enhance">June 24, 2011</td></tr>
+ 	<tr><td>
+ 		<dl class="linkedList">
+		<dt>The MGI database is available in 3 new ways: public access PostgreSQL server as well as database dumps for MySQL and PostgreSQL.
+			<ul>
+			<li>The MGI Public Ad Hoc PostgreSQL Server is available for running custom SQL queries against the MGI database. Account information can be found <a href=" http://www.informatics.jax.org/software.shtml#sql">here</a>. </li>
+			<li>MGI now offers MySQL and PostgreSQL database dumps via FTP. FTP site details and loading instructions are available <a href="http://www.informatics.jax.org/software.shtml#data">here</a>.
+			</li>
+		</ul>
+		</td>
 
    <tr><td><a name="april_2011"></a>
 
@@ -61,21 +91,12 @@
           </tr>
 	</table>
 </td></tr>
-<tr><td>&nbsp;</td></tr>
 
-</table>
-
+  
 </div> 
 
 
 <!--#include file='include/templateBodyStop.html'--> 
 </body>
 </html>
-
-
-
-
-
-
-
 
