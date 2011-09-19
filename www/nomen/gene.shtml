@@ -10,7 +10,7 @@
 </div> 
 
 <br/>
-<center>  <span class="titleBarSubTitle"> Revised: September, 2010<span>
+<center>  <span class="titleBarSubTitle"> Revised: September, 2011<span>
 </center>
 
 <h3 align=center>International Committee on Standardized Genetic Nomenclature for Mice</h3>
@@ -32,7 +32,7 @@ Rat Genome and Nomenclature Committee agreed to unify the rules and guidelines
 for gene, allele, and mutation nomenclature in mouse and rats. Nomenclature guidelines are now reviewed and updated annually by the two International Committees; current guidelines can be
 found on the <a href="index.shtml">MGD</a> and <a href="http://rgd.mcw.edu/nomen/nomen.shtml">RGD</a> web sites. </p>
 
-<p>To see the previous version of these guidelines (revised in January 2007), click <a href="2008_gene.shtml">here</a>. </p>
+<p>To see the previous version of these guidelines (revised in January 2010), click <a href="2010_gene.shtml">here</a>. </p>
 
 
 <h3>Table of Contents</h3>
@@ -97,7 +97,8 @@ found on the <a href="index.shtml">MGD</a> and <a href="http://rgd.mcw.edu/nomen
    		</ul>
      	<a href="#grom">2.12&nbsp;&nbsp;Genes Residing on the Mitochondria</a><br>
 	<a href="#rnanucl">2.13&nbsp;&nbsp;RNA Genes Encoded in the Nucleus</a><br>
-	<a href="#eparr">2.14&nbsp;&nbsp;Enhancers, Promoters, and Regulatory Regions</a><br>
+	<a href="#microrna">2.14&nbsp;&nbsp;microRNAs and microRNA clusters</a><br>
+	<a href="#eparr">2.15&nbsp;&nbsp;Enhancers, Promoters, and Regulatory Regions</a><br>
      	</UL>
 <a href="#navsma">3&nbsp;&nbsp;Names and Symbols for Variant and Mutant Alleles</a><br>
      <ul>
@@ -790,21 +791,21 @@ residing on the mitochondria)</td></tr>
 </p>
 
 <H3><A NAME="rnanucl"></A>2.13 &nbsp;&nbsp;RNA Genes Encoded in the Nucleus</H3>
-<p>There are hundreds of loci encoding transfer RNAs (tRNA) and ribosomal RNAs (rRNA), and many are encoded in the nucleus. The following method symbolizes these nuclear-encoded RNA genes:
+<p>There are hundreds of loci encoding transfer RNAs (tRNA) and ribosomal RNAs (rRNA), and many are encoded in the nucleus. The following method symbolizes these nuclear-encoded RNA genes:</p?
 
 <h4>Naming nuclear encoded transfer-RNAs</h4>
-<p>Symbols for nuclear encoded transfer-RNAs consist of four parts:
+<p>Symbols for nuclear encoded transfer-RNAs consist of four parts:</p>
 
 <blockquote>
 <table border="0" cellspacing="0" cellpadding="3" width="!">
-  <tr><td valign="top">n-</td><td>&nbsp;&nbsp;&nbsp;</td><td valign="top">lowercase n followed by a hyphen to indicate nuclear encoding</td></tr>
+<tr><td valign="top">n-</td><td>&nbsp;&nbsp;&nbsp;</td><td valign="top">lowercase n followed by a hyphen to indicate nuclear encoding</td></tr>
 <tr><td valign="top">T</td><td>&nbsp;&nbsp;&nbsp;</td><td valign="top">uppercase T to indicate transfer-RNA</td></tr>
 <tr><td valign="top">aa</td><td>&nbsp;&nbsp;&nbsp;</td><td valign="top">the single letter abbreviation for the amino acid</td></tr>
 <tr><td valign="top">#</td><td>&nbsp;&nbsp;&nbsp;</td><td valign="top">serial number for this transfer-RNA</td></tr>
 
- <tr><th valign="top" align="left" colspan="3">Example:</th></tr>
+<tr><th valign="top" align="left" colspan="3">Example:</th></tr>
 <tr><td valign="top"><i>n-Ta12</i></td><td>&nbsp;&nbsp;&nbsp;</td><td>nuclear encoded tRNA alanine 12 (anticodon AGC)</td></tr>
-</table
+</table>
 </blockquote>
 </p>
 
@@ -816,13 +817,29 @@ residing on the mitochondria)</td></tr>
 <tr><td valign="top">R</td><td>&nbsp;&nbsp;&nbsp;</td><td valign="top">uppercase R to indicate ribosomal-RNA</td></tr>
 <tr><td valign="top">subunit</td><td>&nbsp;&nbsp;&nbsp;</td><td valign="top">the subunit designation</td></tr>
 <tr><td valign="top">#</td><td>&nbsp;&nbsp;&nbsp;</td><td valign="top">serial number for this ribosomal-RNA</td></tr>
- <tr><th valign="top" align="left" colspan="3">Example:</th></tr>
-<tr><TD VALIGN="top">n-R5s104</td><td>&nbsp;&nbsp;&nbsp;</td<td valign="top">nuclear encoded rRNA 5S 104</td></tr>	
+<tr><th valign="top" align="left" colspan="3">Example:</th></tr>
+<tr><TD VALIGN="top">n-R5s104</td><td>&nbsp;&nbsp;&nbsp;</td><td valign="top">nuclear encoded rRNA 5S 104</td></tr>	
 </table>
 </blockquote>
+
+
+<H3><A NAME="microrna"></A>2.14 &nbsp;&nbsp;microRNAs and microRNA clusters</H3>
+<p><b>MicroRNAs (miRNAs)</b> are abundant, short RNA molecules that are post-transcriptional regulators that bind to complementary sequences on target mRNA transcripts, usually resulting in translational repression or target degradation and gene silencing.
+</p>
+<p>Naming microRNAs
+Symbols for microRNAs consist of the root symbol Mir followed by the numbering scheme tracked in the <a href="http://www.mirbase.org/">miRBase</a> database (www.mirbase.org), a database tracking microRNAs reported for all species.
+</p>
+<p>For example, mouse Mir143 (microRNA 143) is represented as mmu-mir-143 in miRBase, with the mmu signifying mouse.
+</p>
+<p>Naming microRNA clusters
+A microRNA cluster consists of several microRNAs in immediate genome proximity. These may be given symbols and names to refer unambiguously to the entire cluster.
+</p>
+<p>For a microRNA cluster, the name will consist of the root symbol Mirc (for microRNA cluster) followed by a serial number (1, 2, 3…) for the cluster. MGI (for mouse) or RGD (for rat) should be consulted for the next available cluster number when a new cluster is defined. The list of microRNAs included in each cluster will be recorded in relevant database records for the genes, knockouts, and strains.
+</p>
+<p>(Note that this differs from the definition of miRBase, which simply refers to clustered miRNAs as those less than 10kb from the miRNA of interest. Thus, in miRBase clusters defined based on one miRNA may or may not overlap clusters based on another miRNA.
 </p>
 
-<H3><A NAME="eparr"></A>2.14 &nbsp;&nbsp;Enhancers, Promoters, and Regulatory Regions</h3>
+<H3><A NAME="eparr"></A>2.15 &nbsp;&nbsp;Enhancers, Promoters, and Regulatory Regions</h3>
 
 <p>Enhancers, promoters, and regulatory regions can influence multiple genes. In addition, they can be localized far away from the gene(s) that they affect. Thus, it is misleading to name them based on the gene for which regulation was first recognized.</p>
 <p>Enhancers, promoters, and regulatory regions are to be symbolized as: </p>
@@ -1204,6 +1221,7 @@ RGD/RatMap through the usual <A HREF="nomen_submit_form.shtml">nomenclature subm
  <li>The laboratory's line or founder designation or a serial number (note that numbering is independent for mouse and rat series).</li>
  <li>The Laboratory code of the originating lab.</li>
 </ul>
+<p>Note that, in contrast to gene and allele symbols, transgene symbols are not italicized as they are random insertions of foreign DNA material and are not part of the native mouse genome.</p>
 <blockquote>
 <b>Examples:</b>
 <table cellpadding="6" width="!">
@@ -1213,7 +1231,7 @@ RGD/RatMap through the usual <A HREF="nomen_submit_form.shtml">nomenclature subm
 </table>
 </blockquote>
 </p>
-
+<p>The *, as used in the last example above, indicates that the included gene is mutant.</p>
 <p>Different transgenic constructs containing the same gene should not be differentiated in
 the symbol; they will use the same gene symbol in parentheses and will be
 distinguished by the serial number/Laboratory code. Information about the nature of
@@ -1235,16 +1253,12 @@ recombinase designation. The SV40 large T antigen is another example. The use of
 </table>
 </blockquote>
 </p>
-<p>In the case of a fusion gene insert, where roughly equal parts of two genes compose the
-construct, a forward slash separates the two genes in parentheses.</p>
+<p>In the case of a fusion gene insert, where roughly equal parts of two genes compose the construct, a forward slash separates the two genes in parentheses.</p>
 
 <p><blockquote>
 <b>Example:</b>
 <table cellpadding="6" width="!">
-<tr><td valign="top">Tg(TCF3/HLF)1Mlc</td><td valign="top">a transgene in which the human
-transcription factor 3 gene and the hepatic leukemia factor gene were inserted.
-as a fusion chimeric cDNA, the first transgenic mouse line produced by Michael
-L. Cleary's laboratory (Mlc).</td></tr>
+<tr><td valign="top">Tg(TCF3/HLF)1Mlc</td><td valign="top">a transgene in which the human transcription factor 3 gene and the hepatic leukemia factor gene were inserted as a fusion chimeric cDNA, the first transgenic mouse line produced by Michael L. Cleary's laboratory (Mlc).</td></tr>
 </table>
 
 </blockquote>
@@ -1260,8 +1274,7 @@ L. Cleary's laboratory (Mlc).</td></tr>
 </table>
 </blockquote>
 </p>
-<p>For BAC transgenics, the insert designation is the BAC clone and follows the same
-naming convention as the <A HREF="http://www.ncbi.nlm.nih.gov/genome/clone">Clone Registry at NCBI</A>.</p>
+<p>For BAC transgenics, the insert designation is the BAC clone and follows the same naming convention as the <A HREF="http://www.ncbi.nlm.nih.gov/genome/clone">Clone Registry at NCBI</A>.</p>
 
 <p><blockquote>
 <b>Example:</b>
