@@ -446,9 +446,9 @@ class CheckableField (Field):
 				else:
 					values.append ('%s (%s)' % (itemLabel,
 						self.otherValue) )
-			elif self.otherValue:
-				values.append ('%s (%s)' % (itemLabel,
-					self.otherValue) )
+#			elif self.otherValue:
+#				values.append ('%s (%s)' % (itemLabel,
+#					self.otherValue) )
 
 
 		if values:

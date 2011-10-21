@@ -84,7 +84,7 @@ Note that the list in each section is a definition list <dl> where the term
             <tr >
                 <td>
                     <ul>
-                        <li>The MGI Web Service provides programmatic access to select portions of the database by uploading a set of identifiers (e.g. EntrezGene, GenBank, mouse symbol, etc.).</li>
+                        <li>The MGI Web Service provides programmatic access to select portions of the database by uploading a set of identifiers (e.g. EntrezGene, GenBank, mouse gene symbol.).</li>
                         <li>The service accepts SOAP 1.1 and 1.2 requests. See <a href="<!--#include file='include/mgihome_url.html'-->other/web_service.shtml">MGI Web Service</a> for details and examples. </li>
                     </ul>
                 </td>
@@ -109,6 +109,25 @@ Note that the list in each section is a definition list <dl> where the term
 					  <li>See <a href="<!--#include file='include/ftp_url2.html'-->reports/index.html">MGI Data and Statistical Reports</a> for the list of reports and their field descriptions.</li>
 					</ul>
 
+					<b><i>Database Dumps via FTP</i></b>
+					<ul>
+					  <li>Database backups are available from our ftp site at:<a href="ftp://ftp.informatics.jax.org/pub/database_backups/"> ftp://ftp.informatics.jax.org/pub/database_backups/</a></li>
+					   <ul>
+					     <li>Backups are available for MySQL 5.0.67 and PostgreSQL 9.0.2.</li>
+					     <li>These backups assume you have a compatible version of MySQL or PostgreSQL installed, that you have created a database, and that you have adequate user permissions to load that database.</li>
+					     <li>Backups are updated on Fridays between 6:00am and 7:00am EST, so please avoid downloading the files during that time, or your file may not download successfully.</li>
+					     </ul>
+						<li>To load the MySQL backup:</li>
+						<ul>
+							<li>First, uncompress it:  gunzip mgd.mysql.dump.gz</li>
+							<li>Then load it:  mysql -e "mgd.mysql.dump" <i>databaseName</i></li>
+							</ul>
+						<li>To load the PostgreSQL backup:</li>
+						<ul>
+							<li>Load it:  pg_restore -c -d <i>databaseName</i> -j jobCount -O -h host -U user mgd.postgres.dump.Fc</li>
+							<li>jobCount should be an integer, representing the number of subprocesses. If you have a multiprocessor machine, using a jobCount between 2 and 4 will likely speed your restore significantly.</li>
+							</ul>
+							</ul>
 
 					<b><i>Tab Delimited Output from our Web Interface</i></b>
 					<ul>
@@ -125,7 +144,7 @@ Note that the list in each section is a definition list <dl> where the term
 					    <li><a href="<!--#include file='include/fewi_url.html'-->sequence">Mouse Sequence Query Form</a><br>
 					    <i>Search for mouse sequences by sequence attributes, sources, and/or properties of associated genes and markers in MGI</i>
 <li><a href="http://biomart.informatics.jax.org/biomart/martview/e59323fdc7f8264944132dde6d5a3ec1">MGI BioMart</a><br>
-<i>Query MGI's mouse genetic and genomic data; compare and integrate results from other databases
+<i>Query MGI's mouse genetic, genomic and expression data; compare and integrate results from other databases
 </i></li>
 					  </ul>
 					  </ul>
@@ -162,8 +181,8 @@ Note that the list in each section is a definition list <dl> where the term
 				<td>
 					<ul>
 					  <li>The MGI Public Ad Hoc SQL Server is available for running custom SQL queries against the MGI database. </li>
-					  <li>MGI uses Sybase relational databases to store information.</li>
-					  <li>You must install client software that can connect to a Sybase data server in order to query the database.  You can use free clients such as JDBC (Java), ODBC (Windows) or SQuirreL SQL (<a href="http://squirrel-sql.sourceforge.net/">http://squirrel-sql.sourceforge.net/</a>).</li>
+					  <li>MGI uses PostgreSQL relational databases to store information.</li>
+					  <li>You must install client software that can connect to a PostgreSQL server in order to query the database. You can use free clients such as JDBC (Java), ODBC (Windows) or SQuirreL SQL (<a href="http://squirrel-sql.sourceforge.net/">http://squirrel-sql.sourceforge.net/</a>).</li>
 					  <li>See our example <a href="<!--#include file='include/mgihome_url.html'-->/other/MGIConnect.txt">JDBC Client</a>. You can also use this to verify that your SQL account is active. </li>
 					</ul>
 
@@ -177,17 +196,8 @@ Note that the list in each section is a definition list <dl> where the term
 
 					<b><i>Login & Configuration</i></b>
 					<ul>
-					  <li><a href="<!--#include file='include/mgihome_url.html'-->support/mgi_inbox.shtml">Contact User Support</a> to request an SQL account.  You will receive you a login and password.</li>
-					  <li>Configure requirements:</li>
-					   <ol class="softwareOL">
-					  <li>A database connection client such as JDBC, ODBC, SQuirrel-SQL, etc.</li>
-					  <li>Application to query the database; such as: isql, ODBC client, jdbc client, etc.</li>
-					  <li>Sybase Interface Entry<br>
-						  Server Entry	Version 1<br>
-					Server Name	ADHOC_MGI<br>
-					Server Service	SQL Server<br>
-					Server Status	4 Unknown<br>
-					Server Address	TCP-gondor.informatics.jax.org.4025</li></ol></ul>
+					  <li><a href="<!--#include file='include/mgihome_url.html'-->support/mgi_inbox.shtml">Contact User Support</a> to request an SQL account.  You will receive a login, password and connection parameters.</li>
+					  </ul>
 
 
 					<b><i>Custom SQL Reports from MGI</i></b>

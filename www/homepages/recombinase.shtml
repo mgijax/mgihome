@@ -2,7 +2,7 @@
 
   <title>MGI-Mouse Recombinase (cre)</title>
   <meta name="description" content="MGI collects and annotates expression and activity data for recombinase-containing transgenes and knock-in alleles." />
-  <meta name="keywords" content="MGI, mgi, mice, mouse, murine, mus musculus, genes, genome, genomic, recombinase specificity, cre, transgene, knock-in, allele, promoter, driver, DNA recombination, loxP, conditional mutagenesis, knock-out, inducible,construct, specificity pattern, tissue, assay, recombinase reporter, reporter gene, result, staining, specimen, age, system, activity" />
+  <meta name="keywords" content="MGI, mgi, mice, mouse, murine, mus musculus, genes, genome, genomic, recombinase activity, cre, transgene, knock-in, allele, promoter, driver, DNA recombination, loxP, conditional mutagenesis, knock-out, inducible,construct, specificity pattern, tissue, assay, recombinase reporter, reporter gene, result, staining, specimen, age, system, activity" />
 
 
   <meta name="robots" content="NOODP" />
@@ -19,7 +19,7 @@
 	<tr>
 		<td align="center" valign="middle">
 			<span class="homePageTitle">
-				Recombinase (cre) Specificity
+				Recombinase (cre) Activity
 			</span>
 			<br>
 			<span class="homePageSubTitle">
@@ -29,10 +29,10 @@
 		</td>
 		<td>
 			<div class="sideMargin marginBottom blueBorder pad5 small">
-			     <center><a href="http://jcs.biologists.org/content/vol114/issue17/cover.shtml">
+			     <center><a href="http://jcs.biologists.org/content/114/17.cover-expansion">
 		         <img class="outlineImg" src="<!--#include file='include/mgihome_url.html'-->homepages/images/homepage_creLogo.gif"></a>
 		         <br />
-		         Image reproduced with permission of the Journal of Cell Science. <br /><a href="http://jcs.biologists.org/content/vol114/issue17/cover.shtml" class="homeLink">Rijnkels M and Rosen, JM, J Cell Sci 2001, 114(17): 3147-3153.</a></center>
+		         Image reproduced with permission of the Journal of Cell Science. <br /><a href="http://jcs.biologists.org/content/114/17.cover-expansion" class="homeLink">Rijnkels M and Rosen, JM, J Cell Sci 2001, 114(17): 3147-3153.</a></center>
         	</div>
 		</td>
 	</tr>
@@ -57,35 +57,35 @@
 						<div class="creSearch" style="width:450px; height:37px;">
 						<div class="creInputs">
 							<form action="<!--#include file='include/fewi_url.html'-->recombinase/summary" method="get">
-								<label onmouseout="nd();" onMouseOver="return overlib('Anatomical system containing the structure or tissue term from the Mouse Anatomical Dictionary in which recombinase activity occurs. See the <a href=\'<!--#include file="include/fewi_url.html"-->adbrowser\'>Mouse Anatomical Dictionary</a> to find the terms MGI uses. (NOTE: links from the Mouse Anatomical Dictionary do not lead back to these pages.)', ANCHOR, 'GetSystem', ANCHORALIGN, 0, 0.5, 0, 0.5, WIDTH, 250, DELAY, 900, STICKY, CAPTION, 'Expressing activity in', CLOSECLICK, CLOSETEXT, 'Close X');">
-								    <strong style="color:#002255; border-bottom:dotted thin #555555; cursor:help;">Recombinase specificity in:</strong>&nbsp;</label>
-								<select name="system" id="creSystemSelect">
-									<option selected value="" name="default">(choose one) </option>
-									<option>adipose tissue</option>
-									<option>alimentary system</option>
-									<option>branchial arches</option>
-									<option>cardiovascular system</option>
-									<option>cavities &amp; their linings</option>
-									<option>endocrine system</option>
-									<option>head</option>
-									<option>hemolymphoid system</option>
-									<option>integumental system</option>
-									<option>limbs</option>
-									<option>liver and biliary system</option>
-									<option>mesenchyme</option>
-									<option>muscle</option>
-									<option>nervous system</option>
-									<option>renal and urinary system</option>
-									<option>reproductive system</option>
-									<option>respiratory system</option>
-									<option>sensory organs</option>
-									<option>skeletal system</option>
-									<option>tail</option>
-									<option>early embryo</option>
-									<option>extraembryonic component</option>
-									<option>embryo-other</option>
-									<option>postnatal-other</option>
-								</select>
+								<label onmouseout="nd();" onMouseOver="return overlib('Anatomical system containing the structure or tissue term from the Mouse Anatomical Dictionary in which recombinase activity occurs. See the <a href=\'<!--#include file="include/wi_url2.html"-->searches/anatdict_form.shtml\'>Mouse Anatomical Dictionary</a> to find the terms MGI uses. (NOTE: links from the Mouse Anatomical Dictionary do not lead back to these pages.)', ANCHOR, 'GetSystem', ANCHORALIGN, 0, 0.5, 0, 0.5, WIDTH, 250, DELAY, 900, STICKY, CAPTION, 'Expressing activity in', CLOSECLICK, CLOSETEXT, 'Close X');">
+								    <strong style="color:#002255; border-bottom:dotted thin #555555; cursor:help;">Recombinase activity in:</strong>&nbsp;</label>
+                                <select name="system" id="creSystemSelect">
+                                    <option selected value="" name="default">(choose one) </option>
+                                    <option value="adipose tissue">adipose tissue</option>
+                                    <option value="alimentary system">alimentary system</option>
+                                    <option value="branchial arches">branchial arches</option>
+                                    <option value="cardiovascular system">cardiovascular system</option>
+                                    <option value="cavities and their linings">cavities &amp; their linings</option>
+                                    <option value="endocrine system">endocrine system</option>
+                                    <option value="head">head</option>
+                                    <option value="hemolymphoid system">hemolymphoid system</option>
+                                    <option value="integumental system">integumental system</option>
+                                    <option value="limbs">limbs</option>
+                                    <option value="liver and biliary system">liver and biliary system</option>
+                                    <option value="mesenchyme">mesenchyme</option>
+                                    <option value="muscle">muscle</option>
+                                    <option value="nervous system">nervous system</option>
+                                    <option value="renal and urinary system">renal and urinary system</option>
+                                    <option value="reproductive system">reproductive system</option>
+                                    <option value="respiratory system">respiratory system</option>
+                                    <option value="sensory organs">sensory organs</option>
+                                    <option value="skeletal system">skeletal system</option>
+                                    <option value="tail">tail</option>
+                                    <option value="early embryo">early embryo</option>
+                                    <option value="extraembryonic component">extraembryonic component</option>
+                                    <option value="embryo-other">embryo-other</option>
+                                    <option value="postnatal-other">postnatal-other</option>
+                                </select>
 								<input name="submit2" class="searchToolButton" type="submit" value="Go" id="creSystem">
 								<span id="GetSystem">&nbsp;</span>
 							</form>
@@ -95,7 +95,7 @@
 
                         </dd>
 <br>
-<dt>Search for alleles by promoter/driver specificity.</dt>
+<dt>Search for alleles by promoter/driver activity.</dt>
 						<dd class="searchList">
 
 						<div class="creSearch" style="width:365px; height:37px;">
@@ -175,7 +175,8 @@
 						<a class="small homeLink" onClick="javascript:openFaqWindow('CRE_mice.shtml'); return false;"
 						href="<!--#include file='include/faq_url.html'-->CRE_mice.shtml">FAQ</a></dd>
 					</dl>
-					<a class="small homeLink" href="<!--#include file='include/faq_url.html'-->FAQ.shtml#faq_cre">More FAQs</a>
+					<a class="small homeLink" href="<!--#include file='include/faq_url.html'-->FAQ.shtml#faq_cre">More FAQs</a> <br>
+					<a class="small homeLink" href="<!--#include file='include/mgihome_url.html'-->support/CreTutorial_July2011.pdf">Cre Portal Tutorial</a>
 				</div>
 			</div>
 		</td>
@@ -202,11 +203,9 @@
 	</div>
 	<div class="boxBG pad5 small">
 		<ul>
-			<li> The first edition of MGI's Recombinase Allele Project was
-			released October 29, 2009. Data are  being curated from the
-			scientific literature and integrated from projects underway at collaborating
-			organizations. (See the <b>Collaborators</b> tab, below).</li>
-	<li>MGI is part of the CREATE (Coordination of resources for conditional expression of mutated mouse alleles) consortium.</li>
+			<li>Data about cre-containing transgenes and knock-ins and their tissue specific activity are being curated from the 
+			scientific literature and integrated from projects underway at collaborating organizations. (See the <b>Collaborators</b> tab, below).</li>
+	<li>We are part of the CREATE (Coordination of resources for conditional expression of mutated mouse alleles) consortium.</li>
 			<li>List of available <a href="<!--#include file='include/imsr_home_url.html'-->fetch?page=imsrSummary&mutationType=recombinase(cre%2Fflp)">
 			strains expressing cre</a></li>
 		</ul>
@@ -222,7 +221,7 @@
 <table width="100%" cellpadding="0" cellspacing="0" border="0"><tr><td>
 <div class="boxWide marginBottom">
 	<ul id="gxdtab" class="shadetabs">
-		<li class="selected"><a href="<!--#include file='include/mgihome_url.html'-->homepages/tabContents/Cre_About.shtml" rel="ajaxcontentarea">About Recombinase Specificity</a></li>
+		<li class="selected"><a href="<!--#include file='include/mgihome_url.html'-->homepages/tabContents/Cre_About.shtml" rel="ajaxcontentarea">About Recombinase Activity</a></li>
 		<li><a href="<!--#include file='include/mgihome_url.html'-->homepages/tabContents/Cre_Help.shtml" rel="ajaxcontentarea">Help Documents</a></li>
 		<li><a href="<!--#include file='include/mgihome_url.html'-->homepages/tabContents/Cre_Collaborators.shtml" rel="ajaxcontentarea">Collaborators</a></li>
 	</ul>

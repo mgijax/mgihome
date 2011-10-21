@@ -28,7 +28,7 @@
 		</td>
 		<td>
 			<div class="sideMargin marginBottom blueBorder pad5">
-			    <a href="GXD_imgpop.shtml">
+			    <a href="<!--#include file='include/faq_url.html'-->GXD_imgpop.shtml" onClick='javascript:openFaqWindow("GXD_imgpop.shtml"); return false;'>
 
 		<img class="outlineImg" src="<!--#include file='include/mgihome_url.html'-->homepages/images/GXD.jpg"></a>
         	</div>
@@ -61,8 +61,10 @@
 
 						<dt class="whatList">Search the Edinburgh Mouse Atlas for anatomical terms and query
 						for associated expression data.</dt>
-						<dd class="searchList"><a class="small homeLink" href="http://genex.hgu.mrc.ac.uk/Resources/GXDQuery1/SectionBrowser.html">EMAGE Anatomical Section Browser</a></dd>
-					</dl>
+						<dd class="searchList"><a class="small homeLink" href="http://www.emouseatlas.org/emap/ema/section_browser/SectionBrowser.html">EMAGE Anatomical Section Browser</a></dd>		
+
+						<dt class="whatList">Search for gene expression results using BioMart; data returns can be customized and downloaded. </dt>
+						<dd class="searchList"><a class="small homeLink" href="http://biomart.informatics.jax.org/biomart/martview?VIRTUALSCHEMANAME=default&ATTRIBUTES=result.default.naive_attributes.markersymbol|result.default.naive_attributes.assaymgiid|result.default.naive_attributes.assaytype|result.default.naive_attributes.mutantalleles|result.default.naive_attributes.age|result.default.naive_attributes.stagenumber|result.default.naive_attributes.printname|result.default.naive_attributes.strength|result.default.naive_attributes.pattern|result.default.naive_attributes.imagefigure&FILTERS=&VISIBLEPANEL=mainpanel">GXD BioMart</a></dd>					</dl>
 				</div>
 			</div>
 		</td>
@@ -108,19 +110,24 @@
 <div class="boxWide blueBorder marginBottom">
 	<div class="boxTitle">
 		<span class="left">Gene Expression News</span>
-		<span class="right small">September 15, 2010</span>
+		<span class="right small">August 16, 2011</span>
 	</div>
 	<div class="boxBG pad5 small">
                 <ul>
+<li>We are pleased to announce the inclusion of RNA in situ hybridization and immunohistochemistry data from the GenitoUrinary Development Molecular Anatomy Project (GUDMAP) database. You can view the data set at accession number <a href="<!--#include file='include/wi_url.html'-->searches/reference.cgi?172505" class="GO">J:171409</a>. This set includes 92,569 results for: 3,123 genes; 3,561 assays (Immunohistochemistry and RNA in situ hybridizations for E10.5-E17.5 and postnatal specimens); and 8,730 image montages for ~25,000 individual images.</li> 
+<br>
+<li>GXD's gene expression data have been added, as a new dataset, to the MGI 
+implementation of <a href="http://biomart.informatics.jax.org/">BioMart</a>. The <a href="http://biomart.informatics.jax.org/biomart/martview/e716f991369f54567cb7dfbe2d71cfd0">GXD BioMart</a> provides rapid access to gene 
+expression results. Search returns can be customized, and the results easily 
+downloaded for analysis in the lab. In addition, the GXD BioMart can be 
+interconnected with other BioMarts to enable queries across the combined 
+resources. </li>
+<br>
+<li>We are pleased to announce the inclusion of RNA in situ hybridization data from the Brain Gene Expression Map (BGEM) database.  You can view the data set at accession number 
+<a href="<!--#include file='include/wi_url.html'-->searches/reference.cgi?163316" class="GO">J:162220</a>. This set includes 53,496 results for: 1,451 genes; 1,474 assays (RNA in situ hybridizations at E11.5, E15.5, P7 and P42); and 16,112 images.  RNA in situ hybridization data from the Eurexpress project was also recently added to GXD. You can view the data set at accession number 
+<a href="<!--#include file='include/wi_url.html'-->searches/reference.cgi?154591" class="GO">J:153498</a>. This set includes ~497,000 results for 6,594 genes in 7,052 assays with more than 118,400 images.</li>
+<br>
 
-<li>We are pleased to announce the inclusion of RNA in situ hybridization data from the Eurexpress project.  You can view the data set at accession number
-<a href="<!--#include file='include/fewi_url.html'-->reference/J:153498" class="GO">J:153498</a>. This set includes ~493,000 results for more than 6,400 genes in nearly 6,800 assays with more than 118,400 images.</li><br>
-
-<li>The <a href="<!--#include file='include/fewi_url.html'-->batch">MGI Batch Query</a> tool now provides access to gene expression data in MGI. Enter a list of genes and click <b>Gene Expression</b> (under <b>Additional Information</b>).</li><br>
-
-<li>The <a href="<!--#include file='include/fewi_url.html'-->batch">MGI Batch Query</a> tool now supports the analysis of microarray expression data. It accepts microarray probeset IDs from two Affymetrix Platforms - Mouse Gene 1.0 ST Array and Mouse Genome 430A 2.0 Array. One can enter a list of up- or down-regulated probes from a microarray experiment and get different types of MGI data for the corresponding genes.</li><br>
-
-<li>Now available on gene detail pages (see <b>External Resources</b>: in the Expression section) are links to microarray gene expression pages at <a href="http://www.ncbi.nlm.nih.gov/geo/">GEO</a> and <a href="http://www.ebi.ac.uk/microarray-as/ae/">ArrayExpress</a>; links to summary pages of images generated by <a href="http://www.gensat.org/index.html">GENSAT</a>, the Gene Expression Nervous System Atlas Project; and links to the <a href="http://www.brain-map.org/welcome.do">Allen Brain Atlas</a>, a database of gene expression patterns in the adult mouse brain.</li><br>
 </ul>
 
 

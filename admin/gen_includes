@@ -126,6 +126,7 @@ def main ():
     stringToFileNoNL (config['WI_URL'], '../www/include/wi_url2.html')
     stringToFile (config['FTP_BASE_URL'], '../www/include/ftp_url.html')
     stringToFile (config['MTB_URL'], '../www/include/mtb_url.html')
+    stringToFile (config['MTB_PATHOLOGY_URL'], '../www/include/mtb_pathology_url.html')
     stringToFile (config['MPD_URL'], '../www/include/mpd_url.html')
     #  This version of the ftp_url file is being generated to support a problem
     #  found in the implementation of TR7388.  The newline being written to
@@ -173,8 +174,12 @@ def main ():
             '../www/include/pathways_url.html')       
     stringToFile (config['SILVER_URL'], \
             '../www/include/silverbook_url.html') 
+    stringToFile (config['FRITHBOOK_URL'], \
+            '../www/include/frithbook_url.html')    
     stringToFile (config['GREENBOOK_URL'], \
             '../www/include/greenbook_url.html')    
+    stringToFile (config['THEILERBOOK_URL'], \
+            '../www/include/theilerbook_url.html')    
     stringToFile (config['MGIWS_URL'], \
             '../www/include/mgiws_url.html')    
     stringToFile (config['WEBSHARE_URL'], \

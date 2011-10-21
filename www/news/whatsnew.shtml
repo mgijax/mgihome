@@ -16,230 +16,138 @@
    <tr><td>
  <!-- TOC table -->
         <table class="toc" width="100%">
-	<tr><td>
-            <ul>
-		<li><a href="#sept_again">September 15, 2010</a></li> |
-		<li><a href="#september">September 9, 2010</a></li> |
-		<li><a href="#july">July 28, 2010</a></li> |
-		<li><a href="#june">June 18, 2010</a></li> |
-		<li><a href="#may">May 14, 2010</a> |</li>
-		<li><a href="#march">March 31, 2010</a> |</li>
-                <li><A HREF="news_2009.shtml"><nobr>Archive: News and Announcements for 2009</a></li> 
-             </ul>
-            </td>
-        </tr>              
+		<tr><td>
+            	<ul>
+        <li><a href="#october_2011">October 13, 2011</a> |
+        <li><a href="#august_2011">August 16, 2011</a> |
+        <li><a href="#july_2011">July 7, 2011</a> |
+		<li><a href="#june_2011">June 24, 2011</a> |
+		<li><a href="#april_2011">April 13, 2011</a> |
+		
+		<li><A HREF="news_2010.shtml"><nobr>Archive: News and Announcements for 2010</a></li> 
+             	</ul>
+            	</td>
+        	</tr>              
       	</table>
-<!-- end TOC table -->
-  </td></tr>
+   </td></tr>
 
-<tr><td></td></tr>
+   <tr><td></td></tr>
+   
+  <tr><td><a name="october_2011"></a>
 
-  <tr><td><a name="sept_again"></a>
-<!--section1 table-->
       <table class="outline" width="100%">
- <tr><td class="enhance">September 15, 2010</td>
-</td></tr>
-<tr><td>&nbsp;</td></tr>
-<tr>
-<td>
-<dl class="linkedList">
-<dt>The Gene Expression Database (GXD) is pleased to announce the inclusion of RNA in situ hybridization data from the <a href="http://www.eurexpress.org/ee/">Eurexpress</a> project. You can view the data set at accession number 
-<a href="<!--#include file='include/fewi_url.html'-->reference/J:125484" class="GO">J:153498</a>. This set includes ~493,000 results for more than 6,400 genes in nearly 6,800 assays with more than 118,400 images. </dt>
-      
 
-<dt>Some useful links for querying subsets of data in GXD and MGI are: 
-<ul>
-  <li><A HREF="<!--#include file='include/fewi_url.html'-->gxd">Gene Expression Data Query Form</a></li>
-  <li><A HREF="<!--#include file='include/fewi_url.html'-->marker">Genes and Markers Query Form</a></li>
-
-</ul></dt>
+ 	<tr><td class="enhance">October 13, 2011</td></tr>
+ 	<tr><td>
+ 		<dl class="linkedList">
+		<dt>A new "Human ortholog" section is now featured on MGI marker detail pages. When available, this section contains the official human marker name and symbol, synonyms, genome coordinates and a link to information on human diseases associated with the marker in OMIM. For an example, see the <a href="<!--#include file='include/wi_url.html'-->searches/accession_report.cgi?id=MGI:109583" class="GO">Pten Gene Detail</a> page. 
+		</dt>
 	
-<dt>If you are interested in submitting your data to GXD, please see our guidelines for <a href="../GXD/GEN/gxd_submission_guidelines.shtml">submitting expression data to the Gene Expression Database</a> or contact <a href="mailto:GEN@informatics.jax.org">GEN@informatics.jax.org</a> for further information.
-</dt>
-</dl>
-</td>
-</tr>
-</table>
-</td></tr>
+		<dt>The Quick Search field now supports searches with reference DOI IDs. These are stable, unique digital object identifiers with two parts, separated by a slash, such as 10.1016/j.ajpath.2011.03.014. MGI reference detail pages use these IDs to link to the online version of the publication. 
+		</dt>
+		</dl>
+	  </td>
+          </tr>
+	</table>
+  
+  <tr><td><a name="august_2011"></a>
 
-
-
-
-
-
-  <tr><td><a name="september"></a>
-<!--section1 table-->
       <table class="outline" width="100%">
- <tr><td class="enhance">September 9, 2010</td>
-</td></tr>
-<tr><td>&nbsp;</td></tr>
-<tr>
-<td>
-<dl class="linkedList">
-	<dt>For the 4.4 release, MGI adds more detailed feature type categories for genes, differentiating <i>protein coding genes</i> from <i>non-coding RNA genes</i> from markers based only on <i>heritable phenotype</i> from <i>immunological gene segments</i>. You can query an entire category or limit your search to a single subcategory.</dt>
-	<dt><ul>
-	  <li>	You can query by desired feature types on the  <A HREF="<!--#include file='include/fewi_url.html'-->marker">Genes and Markers Query Form</a>. A count of the number of genes appears for each feature category.</li>
-	  <li>Feature type categories appear in the output of the Genes and Markers query and in the output from any Quick Search.</li>
-	  <li>Using MGI BioMart, you can pick a type from the MGI Feature Type list (Attributes-->Genome Features-->MGI Feature Type) and then select Feature Type as an attribute (Attributes-->Features--Feature Type). The result is a list of all MGI entities assigned that feature type. </li>
-<li>You can also use the MGI Batch Query Form to enter or upload a list of symbols or IDs to search on. A column identifying the feature type for each list item appears in the results. </li>
-	</ul></dt>
+
+ 	<tr><td class="enhance">August 16, 2011</td></tr>
+ 	<tr><td>
+ 		<dl class="linkedList">
+		<dt>The Gene Expression Database (GXD) is pleased to announce that we  now include RNA in situ hybridization and immunohistochemistry data from the GenitoUrinary Development Molecular Anatomy Project (<a href="http://www.gudmap.org/index.html">GUDMAP</a>) database.  You can view the data set at accession number <a href="<!--#include file='include/wi_url.html'-->searches/reference.cgi?172505" class="GO">J:171409</a>. This set includes 92,569 results for:  
+			<ul>
+			<li>3,123 genes</li>
+			<li>3,561 assays (Immunohistochemistry and RNA in situ hybridizations for E10.5-E17.5 and postnatal specimens)</li>
+			<li>8,730 image montages for ~25,000 individual images</li>
+			</ul>
+		</dt>
+
+		<dt>Some useful links for querying subsets of data in GXD and MGI are: 
+			<ul>
+  			<li><A HREF="<!--#include file='include/java_url.html'-->WIFetch?page=expressionQF">Gene Expression Data Query Form</a></li>
+  			<li><A HREF="<!--#include file='include/java_url.html'-->WIFetch?page=markerQF">Genes and Markers Query Form</a></li>
+			</ul>
+		</dt>
 	
+		<dt>If you are interested in submitting your data to GXD, please see our guidelines for <a href="../GXD/GEN/gxd_submission_guidelines.shtml">submitting expression data to the Gene Expression Database</a> or contact <a href="mailto:GEN@informatics.jax.org">GEN@informatics.jax.org</a> for further information.
+		</dt>
+		</dl>
+	  </td>
+          </tr>
+	</table>
+   
+    <tr><td><a name="july_2011"></a>
 
-<dt>Many of the classification terms in MGI come from the Sequence Ontology (SO) project. The SO project develops terms and relationships describing features and attributes of biological sequences. 
-When the MGI classification term definition MGI comes from the SO project, the SO ID for that term appears.</dt>
-<dt><ul>
-  <li>Learn more about the SO project here: <a href="http://www.sequenceontology.org/index.html">http://www.sequenceontology.org/index.html</a>. </li>
-  <li>Search and browse the full SO ontology here: <a href="http://www.sequenceontology.org/cgi-bin/miso.cgi">http://www.sequenceontology.org/cgi-bin/miso.cgi</a>.</li>
-</ul>
-
-<dt>For details about the new categories, see <a href="<!--#include file='include/userdocs_url.html'-->marker_feature_types.shtml">Genome Feature Type Definitions</a>.</dt>
-</dl>
-</td>
-</tr>
-</table>
-</td></tr>
-
-     <tr><td></td></tr>
-     <tr><td><a name="july"></a>
-<!--section1 table-->
       <table class="outline" width="100%">
-         <tr><td class="enhance">July 28, 2010</td>
-	 <tr><td>&nbsp;</td></tr>
-	 <tr><td>
-	      <dl class="linkedList">
-		<dt><b>Genetic map position revision in MGI</b></dt>
-		<dt>The genetic map positions for genes and markers in MGI are updated using the data and methods described in Cox et al. (2009). <a href="http://www.ncbi.nlm.nih.gov/pubmed/19535546">PubMed</a> </dt>
-		<dt>The revised standard genetic map described in Cox et al. incorporates over 10,000 single nucleotide polymorphisms (SNPs) using a set of 47 families of a heterogeneous mouse population comprising over 3500 meioses.</dt>
-		<dt>The revised map corrects errors in marker order in earlier consensus genetic maps for the laboratory mouse.</dt> 
-		<dt>The Cox map integrates SSLP markers from other genetic maps and with physical maps of the mouse genome.</dt> 
-		<dt>Linear interpolation was used to translate mouse genome coordinates (NCBI Build 37) for genes and markers in MGI to sex-averaged cM locations.</dt>  
-<dt>Markers in MGI that did not have genome coordinates were not updated to new cM positions; however, the original mapping data for these markers can still be found in the mapping experiment detail pages.</dt>
-		<dd>
-			<blockquote>
-			<table border="0" cellpadding="3" width="!%">
-				<tr><th valign="top" colspan="2">Mapping data update summary</th></tr>
-				<tr><td valign="top">Genes and markers in MGI with interpolated cM locations:
-</td><td valign="top">~72,000 </td></tr>
-				<tr><td valign="top">Genes and markers in MGI that gained a cM position following interpolation:</td><td valign="top">~35,000</td></tr>
-				<tr><td valign="top">Genes and markers in MGI without an interpolated cM position (i.e. genetic map location = syntenic):</td><td>~11,600</td></tr>
-			</table>
-			</blockquote>
-		</dd>
-	      </dl>
-	      </td>
-	</tr>
-      </table>
-    <tr><td></td></tr>
 
-<tr><td><a name="june"></a>
-<!--section1 table-->
-<table class="outline" width="100%">
+ 	<tr><td class="enhance">July 7, 2011</td></tr>
+ 	<tr><td>
+ 		<dl class="linkedList">
+		<dt>The MGI implementation of <a href="http://biomart.informatics.jax.org/">BioMart</a> now includes gene expression data from the Gene Expression Database (GXD). 
+			<ul>
+			<li>BioMart is a query-oriented data management and integration system that performs like a batch query. You can use the MGI BioMart to find expression data for a list of genes or for specific anatomical structures or Theiler Stages. You can manipulate the fields you see in your results and choose to return your results as HTML or comma or tab-separated values. </li>
+			<li>Batch searches for gene expression data are also possible through the <a href="<!--#include file='include/java_url.html'-->WIFetch?page=batchQF">MGI Batch Query Form</a>. </li>
+			</ul>
+		</td>
+		</tr>
+   		</table>
+   		
+   <tr><td><a name="june_2011"></a>
 
-<tr><td class="enhance">June 18, 2010</td>
-
-</td></tr>
-<tr><td>&nbsp;</td></tr>
-
-<td>
-<dl class="linkedList">
-	<dt>For the 4.35 release, the MGI Quick Search returns the alleles most closely associated with your query in the Genome Features list on the results page. 
-As an example, type 
-<a href="<!--#include file='include/quicksearch_url.html'-->Search.do?query=wavy&submit=Quick+Search">wavy</a> in the Quick Search box and note the various types of phenotypic allele that this query returns.</dt>
-
-
-	</dl>
-</td>
-</tr>
-</table>
-
-<tr><td></td></tr>
-  <tr><td><a name="may"></a>
-<!--section2 table-->
       <table class="outline" width="100%">
- <tr><td class="enhance">May 14, 2010:
- </td></tr>
-<tr><td>&nbsp;</td></tr>
-<tr>
-<td>
-<dl class="linkedList">
-	<dt>For the 4.34 release, MGI is retiring several query forms. See <a class="small homeLink"                     onClick='javascript:openFaqWindow("retire.shtml"); return false;'
-                    href="<!--#include file='include/faq_url.html'-->retire.shtml">FAQ</a> for alternative ways to find the same information on the MGI site.</dt>
-                      </dl>
-</td>
 
-</tr>
-</table>
-</td></tr>
+ 	<tr><td class="enhance">June 24, 2011</td></tr>
+ 	<tr><td>
+ 		<dl class="linkedList">
+		<dt>The MGI database is available in 3 new ways: public access PostgreSQL server as well as database dumps for MySQL and PostgreSQL.
+			<ul>
+			<li>The MGI Public Ad Hoc PostgreSQL Server is available for running custom SQL queries against the MGI database. Account information can be found <a href=" http://www.informatics.jax.org/software.shtml#sql">here</a>. </li>
+			<li>MGI now offers MySQL and PostgreSQL database dumps via FTP. FTP site details and loading instructions are available <a href="http://www.informatics.jax.org/software.shtml#data">here</a>.
+			</li>
+		</ul>
+		</td>
+		</tr>
+		</table>
+   <tr><td><a name="april_2011"></a>
 
-
-  <tr><td><a name="march"></a>
-<!--section3 table-->
       <table class="outline" width="100%">
- <tr><td class="enhance">March 31, 2010:
- </td></tr>
-<tr><td>&nbsp;</td></tr>
-<tr>
-<td>
+
+ 	<tr><td class="enhance">April 13, 2011</td></tr>
+
+	<tr><td>
+		<dl class="linkedList">
+		<dt>The Gene Expression Database (GXD) is pleased to announce that in addition to the recently added Eurexpress data (<a href="http://www.informatics.jax.org/searches/reference.cgi?154591">J:153498</a>), we have now included RNA in situ hybridization data from the Brain Gene Expression Map (<a href="http://www.stjudebgem.org/web/mainPage/mainPage.php">BGEM</a>) database.  You can view the data set at accession number <a href="http://www.informatics.jax.org/searches/reference.cgi?163316">J:162220</a>. This set includes 53,496 results for:
+			<ul>
+  			1,451 genes<br>
+  			1,474 assays (RNA in situ hybridizations at E11.5, E15.5, P7 and P42)<br>
+  			16,112 images
+			</ul>
+		</dt>
 
 
-	<dl class="linkedList">
-	<dt>MGI now represents all alleles from KOMP and EUCOMM; for example, see  
-<a href="<!--#include file='include/fewi_url.html'-->allele/MGI:4364285">Aamp<sup>tm1a(KOMP)Wtsi</sup></a> and 
-<a href="<!--#include file='include/fewi_url.html'-->allele/MGI:4436306">Zap70<sup>tm2e(EUCOMM)Hmgu</sup></a></dt><br>
-
- 	 <dt>For the 4.33 release, gene detail pages may now include:</dt><br>
-	<ul>	 
-<li>A note when there are gene/pseudogene discrepancies between VEGA, Ensembl, or NCBI biotypes. Click the <b>Biotype Conflict</b> icon for details. As an example, see <a href="<!--#include file='include/fewi_url.html'-->marker/MGI:2136977">Cecr6</a>. <br>A new 
-<a href="<!--#include file='include/ftp_url2.html'-->reports/MGI_BioTypeConflict.rpt">report</a> lists all genes with these discrepancies.</li><br>
-
- <li>Vega and Ensembl transcript and/or protein sequences:<br> <br> <img src="sequences2.jpg" width="631" height="86" border="0" alt="sequences"></li><br>
-<li>links to gene model evidence: <br> <br><img src="other_database_links2.jpg" width="526" height="48" border="0" alt="gene model evidence"></li><br>
-<li>links to protein ontology annotations: <br> <br> <img src="protein_related_information2.jpg" width="519" height="81" border="0" alt="protein-related information"><br>
-<br>
-The three examples above are from the MGI <a href="<!--#include file='include/fewi_url.html'-->marker/MGI:98364">Sox2</a> marker detail report.
-</li>
-
-</ul>
-
-
-</dt><br>
- <dt>An option to direct the output of your query to Excel is now available from the following:<br><br>
-<ul>
-<li><A HREF="<!--#include file='include/fewi_url.html'-->marker">Genes and Markers Query Form</a></li><br>
-<li><a href="<!--#include file='include/fewi_url.html'-->snp">Mouse SNP Query Form</a></li><br>
-
-<li><a href="<!--#include file='include/fewi_url.html'-->sequence">Mouse Sequence Query Form</a></li><br>
-
-<li><a href="<!--#include file='include/fewi_url.html'-->batch">MGI Batch Query</a> </li>
-</ul>
-</dt>	<br>
-
-<dt>Additionally, the <a href="<!--#include file='include/fewi_url.html'-->batch">MGI Batch Query</a> can now handle very large files.</dt>
-
-	</dl>
-
-	</td>
-
-			</tr>
-</table>
-
- <!--end of table -->
+		<dt>Some useful links for querying subsets of data in GXD and MGI are: 
+			<ul>
+  			<li><A HREF="<!--#include file='include/java_url.html'-->WIFetch?page=expressionQF">Gene Expression Data Query Form</a></li>
+  			<li><A HREF="<!--#include file='include/java_url.html'-->WIFetch?page=markerQF">Genes and Markers Query Form</a></li>
+			</ul>
+		</dt>
+	
+		<dt>If you are interested in submitting your data to GXD, please see our guidelines for <a href="../GXD/GEN/gxd_submission_guidelines.shtml">submitting expression data to the Gene Expression Database</a> or contact <a href="mailto:GEN@informatics.jax.org">GEN@informatics.jax.org</a> for further information.
+		</dt>
+		</dl>
+	  </td>
+          </tr>
+	</table>
 </td></tr>
 
-
-</table>
-
+  
 </div> 
 
 
 <!--#include file='include/templateBodyStop.html'--> 
 </body>
 </html>
-
-
-
-
-
-
-
 

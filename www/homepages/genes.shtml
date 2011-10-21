@@ -172,13 +172,14 @@
 		</ul>
 
 Mapping data update summary
-<table class="b0p0s7">
-<tr><td valign="top"><font size="-2">Number of genes and markers with cM locations</font></td><td valign="top"> <font size="-2">XXXXXXX</font></td></tr>
-<tr><td valign="top"><font size="-2">Number of genes and markers with cM locations</font></td><td valign="top"><font size="-2">XXXXXXX</font></td></tr>
-<tr><td valign="top"><font size="-2">Total news</font></td><td valign="top"><font size="-2">XXXXXXX</font></td></tr>
-<tr><td valign="top"><font size="-2">Total lost</font></td><td valign="top"><font size="-2">XXXXXXX</font></td></tr>
-</table>
-
+			<table border="0" cellpadding="1" width="!">
+			
+				<tr><td valign="top"><font size="-2">Genes and markers in MGI with interpolated cM locations:</font>
+</td><td valign="top"><font size="-2">~72,000</font> </td></tr>
+				<tr><td valign="top"><font size="-2">Genes and markers in MGI that gained a cM position following interpolation:</font></td><td valign="top"><font size="-2">~35,000</font></td></tr>
+				<tr><td valign="top"><font size="-2">Genes and markers in MGI without an interpolated cM position (i.e. genetic map location = syntenic):</font></td><td><font size="-2">~11,600</font></td></tr>
+			</table>
+		
 	     </div>
 </div>
 

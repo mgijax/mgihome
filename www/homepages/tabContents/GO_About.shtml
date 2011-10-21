@@ -37,16 +37,22 @@ the GO in the database and provides a GO browser.</td>
    <ul>
    <li>Manually assigned:
       <ul>
-                <li>EXP - Inferred from experiment</li>
+        <li>EXP - Inferred from experiment</li>
+        <li>IAS - Inferred from ancestral sequence</li>
+        <li>IBA - Inferred from biological aspect of ancestor</li>
+        <li>IBD - Inferred from biological aspect of descendant</li>
+        <li>IC - Inferred by curator</li>
 	  	<li>IDA - Inferred from direct assay</li>
+	  	<li>IGI - Inferred from genetic interaction</li>
+	  	<li>IKR - Inferred from key residues</li>
 		<li>IMP - Inferred from mutant phenotype</li>
+		<li>IMR - Inferred from missing residues</li>
 		<li>IPI - Inferred from physical Interaction</li>
-		<li>IGI - Inferred from genetic interaction</li>
-		<li>ISS - Inferred from sequence and structural similarity</li>
-                <li>ISO - Inferred from sequence orthology</li>
-                <li>ISA - Inferred from sequence alignment</li>
-                <li>ISM - Inferred from sequence model</li>
-                <li>IC - Inferred by curator</li>
+		<li>IRD - Inferred from rapid divergence</li>
+		<li>ISA - Inferred from sequence alignment</li>
+		<li>ISM - Inferred from sequence model</li>
+		<li>ISO - Inferred from sequence orthology</li>
+        <li>ISS - Inferred from sequence and structural similarity</li>
 		<li>ND - Not determined</li>
 	  </ul>
 	</li>
