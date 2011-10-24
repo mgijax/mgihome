@@ -137,11 +137,11 @@ Note that the list in each section is a definition list <dl> where the term
 					   <ul class="softwareUL">
 					     <li><a href="<!--#include file='include/fewi_url.html'-->batch">MGI Batch Query</a><br>
 					        <i>Download gene/marker data for a batch of IDs or symbols</i></li>
-					     <li><a href="<!--#include file='include/fewi_url.html'-->marker">Genes and Markers Query Form</a><br>
+					     <li><a href="<!--#include file='include/java_url.html'-->WIFetch?page=markerQF">Genes and Markers Query Form</a><br>
 					        <i>Search by symbol, location, gene ontology classification, or phenotype.</i></li>
-					     <li><a href="<!--#include file='include/fewi_url.html'-->snp">Mouse SNP Query Form</a><br>
+					     <li><a href="<!--#include file='include/java_url.html'-->WIFetch?page=snpQF">Mouse SNP Query Form</a><br>
 					        <i>Search for SNPS by strain(s), SNP attributes, genomic position, or associated genes</i></li>
-					    <li><a href="<!--#include file='include/fewi_url.html'-->sequence">Mouse Sequence Query Form</a><br>
+					    <li><a href="<!--#include file='include/wi_url.html'-->searches/sequence_form.shtml">Mouse Sequence Query Form</a><br>
 					    <i>Search for mouse sequences by sequence attributes, sources, and/or properties of associated genes and markers in MGI</i>
 <li><a href="http://biomart.informatics.jax.org/biomart/martview/e59323fdc7f8264944132dde6d5a3ec1">MGI BioMart</a><br>
 <i>Query MGI's mouse genetic, genomic and expression data; compare and integrate results from other databases
@@ -160,7 +160,7 @@ Note that the list in each section is a definition list <dl> where the term
 							  <li>Human and rat orthologs</li>
 							  <li>Mouse, human, and rat protein sequences for superfamily members</li>
 					      </ul>
-					   <li>The FASTA format option is available for generating reports on the 	       <a href="<!--#include file='include/fewi_url.html'-->sequence">Mouse Sequence Query Form</a>.</li>
+					   <li>The FASTA format option is available for generating reports on the <a href="<!--#include file='include/wi_url.html'-->searches/sequence_form.shtml">Mouse Sequence Query Form</a>.</li>
 
   					</ul>
 				</td>
