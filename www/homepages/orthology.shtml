@@ -49,12 +49,12 @@
 				is in the term <dt>, and the link is in the definition <dd> -->
 				<div class="boxBG pad5">
 					<dl>
-					<dt class="whatList">Build a comparative map using the Linkage Map tool.</dt>
+					<!--<dt class="whatList">Build a comparative map using the Linkage Map tool.</dt>
 						<dd class="searchList"><a href="<!--#include file='include/fewi_url.html'-->linkmap" class="small homeLink">Mouse Linkage Map with Orthologs</a></dd>
 
 						<dt class="whatList">View the mouse comparative genome maps.</dt>
 						<dd class="searchList"><a href="<!--#include file='include/fewi_url.html'-->homologymap" class="small homeLink">Mouse-Human Orthology Map</a></dd>
-						<dd class="searchList"><a href="<!--#include file='include/fewi_url.html'-->homologymap" class="small homeLink">Mouse-Rat Orthology Map</a></dd>
+						<dd class="searchList"><a href="<!--#include file='include/fewi_url.html'-->homologymap" class="small homeLink">Mouse-Rat Orthology Map</a></dd>-->
 
 						<dt class="whatList">Download a complete set of rat, human, dog, or chimpanzee orthologs for mouse genes. Some sets also include associated
 						  sequences, phenotype characteristics, or human disease data.</dt>
@@ -77,16 +77,17 @@
 				javascript:openFaqWindow("faqPage.shtml")'-->
 				<div class="boxBG pad5">
 					<dl class="boxList">
-						<dt>How do I...</dt>
-						<dd class="faqList">.. view the ortholog set for a mouse gene?
-						<a class="small homeLink" onClick="javascript:openFaqWindow('ORTH_set.shtml'); return false;"
+					<dt>How do I...</dt>
+					<dd class="faqList">.. view the ortholog set for a mouse gene?<a class="small homeLink" onClick="javascript:openFaqWindow('ORTH_set.shtml'); return false;"
 						href="<!--#include file='include/faq_url.html'-->ORTH_set.shtml">FAQ</a></dd>
-						<dd class="faqList">.. view a comparative map of mouse and human chromosomes?
+						<!--<dd class="faqList">.. view a comparative map of mouse and human chromosomes?
 						<a class="small homeLink" onClick="javascript:openFaqWindow('ORTH_map.shtml'); return false;"
-						href="<!--#include file='include/faq_url.html'-->ORTH_map.shtml">FAQ</a></dd>
-						<dd class="faqList">.. find the mouse ortholog of a human gene?
+						href="<!--#include file='include/faq_url.html'-->ORTH_map.shtml">FAQ</a></dd>-->
+					<dd class="faqList">.. find the mouse ortholog of a human gene?
 						<a class="small homeLink" onClick="javascript:openFaqWindow('ORTH_gene.shtml'); return false;"
 						href="<!--#include file='include/faq_url.html'-->ORTH_gene.shtml">FAQ</a></dd>
+					<dd class="faqList">.. download all mouse and human orthologs?<a class="small homeLink" onClick="javascript:openFaqWindow('ORTH_dload.shtml'); return false;"
+						href="<!--#include file='include/faq_url.html'-->ORTH_dload.shtml">FAQ</a></dd>
 					</dl>
 
 					<!-- link to all FAQs page -->
