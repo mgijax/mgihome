@@ -150,6 +150,8 @@ def main ():
         '../www/include/glossary_url.html')
     stringToFile (config['USERDOCS_URL'], \
         '../www/include/userdocs_url.html')
+    stringToFileNoNL (config['USERHELP_URL'], \
+        '../www/include/userhelp_url.html')
     stringToFileNoNL (config['USERDOCS_URL'], 
         '../www/include/userdocs_url2.html')
     stringToFile (config['SCHEMA'],\
