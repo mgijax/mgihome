@@ -22,14 +22,14 @@ config = Configuration.get_Configuration ('Configuration', 1)
 import pg_db
 db = pg_db		# set up alias to minimize code changes
 
-#db.set_sqlLogin (config['DB_USER'], config['DB_PASSWORD'], config['DB_SERVER'], config['DB_DATABASE'])
-#db.useOneConnection(1)
+db.set_sqlLogin (config['DB_USER'], config['DB_PASSWORD'], config['DB_SERVER'], config['DB_DATABASE'])
+db.useOneConnection(1)
 
 import stats_pg
 stats = stats_pg		# alias to minimize code changes
 import time
 
-#stats.setSqlFunction (db.sql)
+stats.setSqlFunction (db.sql)
 
 STATSDIR = config['MGIHOME_PATH'] + 'www/homepages/stats/'
 
@@ -82,23 +82,22 @@ def number_format(num, places=0):
 
 def getStatsForMinihome(group, name):
 	
-	#groupObj = Stats.StatisticGroup (group)
-	#statistics = groupObj.getStatistics()
+	groupObj = stats.StatisticGroup (group)
+	statistics = groupObj.getStatistics()
 	
 	
 	file = open(STATSDIR +name, "w")
 	file.write('<dl>')
-	file.write('Stats have not been implemented at this point.')
-	#for stat in statistics:
-	#	m = stat.getLatestMeasurement()
-	#	if not m:
-	#	    mVal = '&nbsp;'
-	#	elif m.hasIntValue():
-	#	    mVal = m.getIntValue()
-	#	else:
-	#	    mVal = '%1.3f' % m.getFloatValue()
-	#	file.write('<dt>' + str(number_format(mVal)) + '</dt>')
-	#	file.write('<dd>' + stat.getName() + '</dd>\n') 
+	for stat in statistics:
+		m = stat.getLatestMeasurement()
+		if not m:
+		    mVal = '&nbsp;'
+		elif m.hasIntValue():
+		    mVal = m.getIntValue()
+		else:
+		    mVal = '%1.3f' % m.getFloatValue()
+		file.write('<dt>' + str(number_format(mVal)) + '</dt>')
+		file.write('<dd>' + stat.getName() + '</dd>\n') 
 	file.write('</dl>')
 	file.close()
 
@@ -109,11 +108,3 @@ print 'Starting to generate stats files.'
 for (group, filename) in stats_groups:
 	getStatsForMinihome(group, filename)
 print 'Finished generating stats files.'
-
-
-
-
-	    
-
-	
-	
