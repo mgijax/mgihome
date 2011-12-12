@@ -94,7 +94,7 @@ OVERVIEW_URL ${GEN_PATH}gen.shtml
 #------------------#
 
 # path to library files for doing crons (commented out for now)
-LD_LIBRARY_PATH    /opt/sybase/12.5/ASE-12_5/lib:/opt/sybase/12.5/OCS-12_5/lib:/usr/local/lib
+LD_LIBRARY_PATH    /opt/sybase/12.5/ASE-12_5/lib:/opt/sybase/12.5/OCS-12_5/lib:/usr/local/lib:/usr/local/postgres/lib
 
 #----------------#
 #- komp related -#
