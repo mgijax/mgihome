@@ -19,12 +19,14 @@ warnings.filterwarnings('ignore', '', DeprecationWarning)
 import Configuration
 config = Configuration.get_Configuration ('Configuration', 1)	
 
-#import db
+import pg_db
+db = pg_db		# set up alias to minimize code changes
 
 #db.set_sqlLogin (config['DB_USER'], config['DB_PASSWORD'], config['DB_SERVER'], config['DB_DATABASE'])
 #db.useOneConnection(1)
 
-import stats
+import stats_pg
+stats = stats_pg		# alias to minimize code changes
 import time
 
 #stats.setSqlFunction (db.sql)

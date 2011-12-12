@@ -14,7 +14,8 @@ config = Configuration.get_Configuration ('Configuration', 1)
 import webshare_lib
 
 import os
-#import db
+import pg_db
+db = pg_db		# setup alias to minimize code changes
 import string
 
 def listToFile (str_list, filename):
@@ -33,6 +34,7 @@ def getDbDate ():
     # Throws: db module may throw DB exceptions
     # pull the MGI:ID and geneSymbol from the database
 
+<<<<<<< gen_includes
     #db.useOneConnection(1)
     #db.set_sqlUser(config["DB_USER"])
     #db.set_sqlPassword(config["DB_PASSWORD"])
@@ -44,6 +46,17 @@ def getDbDate ():
     #    'public_version '
     #    'FROM MGI_dbInfo '
     #]))
+=======
+    db.useOneConnection(1)
+    db.set_sqlUser(config["DB_USER"])
+    db.set_sqlPassword(config["DB_PASSWORD"])
+    db.set_sqlServer(config["DB_SERVER"])
+    db.set_sqlDatabase(config["DB_DATABASE"])
+    cmds = [] # SQL command list
+    cmds.append('''SELECT to_char(lastdump_date, 'YYYY-MM-DD') as dbDate, 
+        	public_version 
+        FROM MGI_dbInfo''')
+>>>>>>> 1.43.2.3
 
     #  Excecute queries
     #results = db.sql(cmds, 'auto')
@@ -66,11 +79,19 @@ def getDbDate ():
     #db.set_sqlServer(config["DB_SERVER"])
     #db.set_sqlDatabase(config["DB_DATABASE"])
     
+<<<<<<< gen_includes
     #results = db.sql('select distinct driverNote from ALL_Cre_Cache', 'auto')
     #drivers = ["<option selected value='' name='default'>(choose one)</option>"] # SQL command list
     #for r in results:
     #    drivers.append("<option value='%s'>%s</option>" % (r['driverNote'], r['driverNote']))
     #listToFile(drivers, '../www/include/driver_list.html')
+=======
+    results = db.sql('select distinct driverNote from ALL_Cre_Cache order by driverNote', 'auto')
+    drivers = ["<option selected value='' name='default'>(choose one)</option>"] # SQL command list
+    for r in results:
+        drivers.append("<option value='%s'>%s</option>" % (r['driverNote'], r['driverNote']))
+    listToFile(drivers, '../www/include/driver_list.html')
+>>>>>>> 1.43.2.3
   
 def captchaInclude ():
     form = """<input type="hidden" name="%s" id="%s" value="default">
@@ -154,6 +175,8 @@ def main ():
         '../www/include/schema_url.html')
     stringToFile (config['NAME'],\
         '../www/include/mgiversion.html')
+    stringToFile (config['FEWI_URL'], \
+        '../www/include/fewi_url.html')
     stringToFile (config['JAVAWI_URL'], \
         '../www/include/java_url.html')
     stringToFileNoNL (config['FEWI_URL'], \
