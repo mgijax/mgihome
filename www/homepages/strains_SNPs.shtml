@@ -75,13 +75,13 @@
 				<div class="boxBG pad5">
 					<dl>
 						<dt>Search for SNPs by strain(s), SNP attributes, genomic position, or associated genes.</dt>
-						<dd class="searchList"><a href="<!--#include file='include/fewi_url.html'-->snp" class="small homeLink">SNP Query</a></dd>
+						<dd class="searchList"><a href="<!--#include file='include/java_url.html'-->WIFetch?page=snpQF"  class="small homeLink">SNP Query</a></dd>
 
 						<!--<dt class="whatList">Search for RFLP or PCR based polymorphisms by strain, locus symbol, or map position.</dt>
 						<dd class="searchList"><a href="<!--#include file='include/fewi_url.html'-->polymorphism" class="small homeLink">RFLP/PCR Polymorphism Query</a></dd>-->
 						
                      	<dt class="whatList">Inbred Strains of Mice.</dt>
-                        <dd class="searchList"><a href="<!--#include file='include/fewi_url.html'-->festing" class="small homeLink">Characteristics of Inbred Strains</a> of Mice and Rats by M. Festing</dd>
+                        <dd class="searchList"><a href="<!--#include file='include/wi_url.html'-->external/festing/search_form.cgi" class="small homeLink">Characteristics of Inbred Strains</a> of Mice and Rats by M. Festing</dd>
                         <dd class="searchList">View lists of 
 <a href="<!--#include file='include/ftp_url2.html'-->reports/index.html#strain" class="small homeLink">Official Mouse Strain Names</a></dd>
 

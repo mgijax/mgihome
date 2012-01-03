@@ -54,16 +54,16 @@
 				<div class="boxBG pad5">
 					<dl>
 						<dt>Search for mutations or QTL based on phenotype, human disease,  mutation type, gene, or genome location.</dt>
-						<dd class="searchList"><a class="small homeLink" href="<!--#include file='include/fewi_url.html'-->allele">Phenotypes, Alleles & Disease Models Query</a></dd>
+						<dd class="searchList"><a class="small homeLink" href="<!--#include file='include/wi_url.html'-->searches/allele_form.shtml">Phenotypes, Alleles & Disease Models Query</a></dd>
 
 						<dt class="whatList">Search for a phenotype term to find relevant mutant genotypes.</dt>
-						<dd class="searchList"><a class="small homeLink" href="<!--#include file='include/fewi_url.html'-->mpbrowser">Mammalian Phenotype (MP) Browser</a></dd>
+						<dd class="searchList"><a class="small homeLink" href="<!--#include file='include/wi_url.html'-->searches/MP_form.shtml">Mammalian Phenotype (MP) Browser</a></dd>
 
 						<dt class="whatList">Search for a human disease term to find  mouse models.</dt>
-						<dd class="searchList"><a class="small homeLink" href="<!--#include file='include/fewi_url.html'-->omimbrowser">Human Disease (OMIM) Browser</a></dd>
+						<dd class="searchList"><a class="small homeLink" href="<!--#include file='include/java_url.html'-->WIFetch?page=omimVocab&subset=A">Human Disease (OMIM) Browser</a></dd>
 
 						<dt class="whatList">Search for candidate genes for a given phenotype within a  genomic interval.</dt>
-						<dd class="searchList"><a class="small homeLink" href="<!--#include file='include/fewi_url.html'-->marker">Genes & Markers Query</a></dd>
+						<dd class="searchList"><a class="small homeLink" href="<!--#include file='include/java_url.html'-->WIFetch?page=markerQF">Genes & Markers Query</a></dd>
 
 						<dt class="whatList">Input a list of genes and retrieve associated alleles and phenotypes.</dt>
 						<dd class="searchList"><a class="small homeLink" href="<!--#include file='include/fewi_url.html'-->batch">Batch Query</a></dd>
