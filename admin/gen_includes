@@ -40,7 +40,7 @@ def getDbDate ():
     db.set_sqlServer(config["DB_SERVER"])
     db.set_sqlDatabase(config["DB_DATABASE"])
     cmds = [] # SQL command list
-    cmds.append('''SELECT to_char(lastdump_date, 'YYYY-MM-DD') as dbDate, 
+    cmds.append('''SELECT to_char(lastdump_date, 'DD Mon YYYY') as dbDate,
         	public_version 
         FROM MGI_dbInfo''')
 
