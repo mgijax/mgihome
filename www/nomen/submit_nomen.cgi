@@ -3,7 +3,7 @@
 #
 # Processes Nomenclature Submission Form
 #
-# 1.  Sends email message to 'nomen@informatics.jax.org'
+# 1.  Sends email message to 'nomen@jax.org'
 # 2.  Provides user w/ HTML reflection of email message
 #
 
@@ -38,7 +38,7 @@ def errorStop (message):
 	formMailer.handleError (message, 'MGI Nomen Form')
 	sys.exit(0)
 
-nomen_addr = 'nomen@informatics.jax.org'  # MGD Nomen Coordinator Email Account
+nomen_addr = 'nomen@jax.org'  # MGD Nomen Coordinator Email Account
 
 # developer override for mailtarget 
 if config.has_key('CGI_MAILTARGET'):
