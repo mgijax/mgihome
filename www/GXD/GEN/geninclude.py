@@ -44,7 +44,7 @@ def footer ():
 
 	return  [
 		'<SMALL>',
-		'Send questions and comments to <a href="mailto:GEN@informatics.jax.org">GEN@informatics.jax.org</a><BR>',
+		'Send questions and comments to <a href="mailto:gen@jax.org">gen@jax.org</a><BR>',
 		'The Gene Expression Database (GXD) Project is supported by <a href="http://www.nih.gov/">NIH</a> grant <a href="http://projectreporter.nih.gov/project_info_description.cfm?aid=7763602&icde=6960199">HD062499</a><BR>',
 		'<a href="%sother/copyright.shtml">Warranty Disclaimer &amp; Copyright Notice</a><BR>' % config['MGIHOME_URL'],
 		'</SMALL>'

@@ -23,7 +23,7 @@ import template
 reply_message = template.Template(config['TEMPLATE_PATH'])
 reply_message.setContentType('')
 
-submit_addr = 'gen@informatics.jax.org'	# GEN submissions E-mail
+submit_addr = 'gen@jax.org'	# GEN submissions E-mail
 
 # developer override for mailtarget
 if config.has_key('GEN_CGI_MAILTARGET'):
@@ -70,7 +70,7 @@ Subject: %s
 '''
 
 gen_footer = ['<SMALL>',
-		'Send questions and comments to <a href="mailto:GEN@informatics.jax.org">GEN@informatics.jax.org</a><BR>',
+		'Send questions and comments to <a href="mailto:gen@jax.org">gen@jax.org</a><BR>',
 		'The Gene Expression Database (GXD) Project is supported by <a href="http://www.nih.gov/">NIH</a> grant <a href="http://crisp.cit.nih.gov/crisp/CRISP_LIB.getdoc?textkey=6363398&p_grant_num=5R01HD033745-05&p_query=&ticket=430962&p_audit_session_id=3171719&p_keywords=">HD062499</a><BR>',
 		'</SMALL>']
 
