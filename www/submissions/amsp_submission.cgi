@@ -35,7 +35,7 @@ import homelib
 error = 'Exception'
 
 # email address to receive notice of completed submission
-SUBMISSIONS = 'submissions@informatics.jax.org'
+SUBMISSIONS = 'mgi-submissions@jax.org'
 if config.has_key('CGI_MAILTARGET'):
 	SUBMISSIONS = config['CGI_MAILTARGET']
 
@@ -864,8 +864,8 @@ def getFileUploadSection():
 		'Please limit file size to &lt;5 MB.<BR>',
 		'If you have larger files, or many files to submit, please ',
 		'contact us at: ',
-		'<a href="mailto:submissions@informatics.jax.org">',
-		'submissions@informatics.jax.org</a>.<P>',
+		'<a href="mailto:mgi-submissions@jax.org">',
+		'mgi-submissions@jax.org</a>.<P>',
 		getField('isCopyrighted').getLabel(),
 		getField('isCopyrighted').getHTML(),
 		'<br>If you have entered copyrighted information we will contact you.<br><BR>'
@@ -2021,7 +2021,7 @@ def acceptSubmission (
 		]
 
 	try:
-		sendMail(unescapedText, 'submissions@informatics.jax.org',
+		sendMail(unescapedText, 'mgi-submissions@jax.org',
 			getField('email').getValue(),
 			'Confirmation of your form submission')
 	except:
