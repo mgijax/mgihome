@@ -155,7 +155,7 @@ Use the Notes field to record information that is important to know but that doe
 
 <h3><a name="install"></a>Downloading and installing GEN</h3>
 
-<p>You can download GEN  from the <A HREF="index.shtml">Gene Expression Notebook Resource Page</a>.  You can also access The Mouse Anatomical Dictionary here, as well as access this Help document.  When you download GEN, you'll have to provide your name, e-mail address, and computer system type. We use this information to keep track of users so we can let you know about new releases and features. We do not share  your information with anyone.
+<p>You can download GEN  from the <A HREF="index.shtml">Gene Expression Notebook Resource Page</a>.  You can also access The Mouse Anatomical Dictionary <a href="<!--#include file='include/wi_url.html'-->searches/anatdict_form.shtml">here</a>, as well as access this <a href="<!--#include file="include/userhelp_url.html"-->VOCAB_mad_browser_help.shtml">Help</a> document.  When you download GEN, you'll have to provide your name, e-mail address, and computer system type. We use this information to keep track of users so we can let you know about new releases and features. We do not share  your information with anyone.
 
 <p>To download GEN:
   <ol>
@@ -496,7 +496,7 @@ You can now open the notebook.
 <tr><th align=left valign=top>Region Covered</th><td valign="top">Specify the region of the protein that was used as an antigen (e.g., homeobox domain, entire, etc). </td></tr>
 <tr><th align=left valign=top>Species</th><td valign="top">Specify the species the antigen was derived from, if applicable.</td></tr><tr>
 <tr><th align=left valign=top>Strain</th><td valign="top">Type the specimen strain. If the antigen was derived from mouse, see
-<a href="<!--#include file='include/wi_url.html'-->/external/festing/search_form.cgi">Inbred Strains of Mice and Rats</a> for a listing of approved strain names.</td></tr>
+<a href="<!--#include file='include/wi_url.html'-->external/festing/search_form.cgi">Inbred Strains of Mice and Rats</a> for a listing of approved strain names.</td></tr>
 <tr><th align=left valign=top>Tissue</th><td valign="top">Type the tissue the antigen was derived from, if applicable.</td></tr>
 <tr><th align=left valign=top>Theiler Stage</th><td valign="top">If the antigen was derived from mouse, you can use the <a href="http://www.emouseatlas.org/emap/ema/theiler_stages/StageDefinition/stagecriteria.html">staging criteria of Theiler</a> to define its age.</td></tr>
 <tr><th align=left valign=top><a name="age_unit2"></a>Age Unit</th><td valign="top">If applicable, use the drop-down menu to specify the age unit of the antigen source. </td></tr>
@@ -588,13 +588,13 @@ You can now open the notebook.
 <p>
 <table cellpadding=4 border=1>
 <tr><th align=left valign=top>Sample ID</th><td valign="top">Type a unique identifier for the sample.</td></tr>
- <tr><th align=left valign=top>Strain</th><td valign="top">Type the sample strain. If the sample is from mouse, see <a href="<!--#include file='include/wi_url.html'-->/external/festing/search_form.cgi">Inbred Strains of Mice and Rats</a> for a listing of approved strain names.</td></tr>
+ <tr><th align=left valign=top>Strain</th><td valign="top">Type the sample strain. If the sample is from mouse, see <a href="<!--#include file='include/wi_url.html'-->external/festing/search_form.cgi">Inbred Strains of Mice and Rats</a> for a listing of approved strain names.</td></tr>
 <tr><th align=left valign=top>Mutations</th><td valign="top">Type the allele description or symbol for the mutated gene. For tips on determining the official allele symbol in mouse, see <a href="#prepare_for_submission">Determining standard nomenclature for mouse genes and alleles</a>.</td></tr>
 <tr><th align=left valign=top>Sex</th><td valign="top">Use the drop-down menu to specify the gender of the sample, if known, or to indicate pooled samples.</td></tr>
 <tr><th align=left valign=top>Theiler Stage</th><td valign="top">If the sample is from mouse, you can use the <a href="http://www.emouseatlas.org/emap/ema/theiler_stages/StageDefinition/stagecriteria.html">staging criteria of Theiler</a> to define its age.  If you do not know the Theiler stage, fill in the next two boxes. (You can leave them blank if you enter the Theiler stage.)</td></tr>
 <tr><th align=left valign=top><a name="age_unit5"></a>Age Unit</th><td valign="top">Use the drop-down menu to specify the age unit.</td></tr>
 <tr><th align=left valign=top>Age Value</th><td valign="top">Type the number that specifies the age along with the Age Unit.  Leave this field blank if you specify either postnatal or adult as the <a href="#age_unit5">Age Unit</a>.</td></tr>
-<tr><th align=left valign=top>Tissue</th><td valign="top">Type the tissue or structure used for the sample. For mouse, use the <a href="../GEN/AD/">Anatomical Dictionary</a> as a reference for appropriate structure names.</td></tr>
+<tr><th align=left valign=top>Tissue</th><td valign="top">Type the tissue or structure used for the sample. For mouse, use the <a href="<!--#include file='include/wi_url.html'-->searches/anatdict_form.shtml">Anatomical Dictionary</a> as a reference for appropriate structure names.</td></tr>
 <tr><th align=left valign=top>Amount Value</th><td valign="top">Type the number that specifies the amount of the RNA used. </td></tr>
 <tr><th align=left valign=top>Amount Units</th><td valign="top">Use the drop-down menu to specify the unit used to measure the RNA amount. </td></tr>
 <tr><th align=left valign=top>Sample Type</th><td valign="top">Use the drop-down menu to specify the type of RNA used.</td></tr>
@@ -609,13 +609,13 @@ You can now open the notebook.
 <table><tr><th align=left valign=top cellpadding=4>Assays used in:</th><td valign="top">Westerns</td></tr></table>
 <p>
 <table cellpadding=4 border=1><tr><th align=left valign=top>Sample ID</th><td valign="top">Type a unique identifier for the sample.</td></tr>
-<tr><th align=left valign=top>Strain</th><td valign="top">Type the sample strain. If the sample is from mouse, see <a href="<!--#include file='include/wi_url.html'-->/external/festing/search_form.cgi">Inbred Strains of Mice and Rats</a> for a listing of approved strain names.</td></tr>
+<tr><th align=left valign=top>Strain</th><td valign="top">Type the sample strain. If the sample is from mouse, see <a href="<!--#include file='include/wi_url.html'-->external/festing/search_form.cgi">Inbred Strains of Mice and Rats</a> for a listing of approved strain names.</td></tr>
 <tr><th align=left valign=top>Mutations</th><td valign="top">Type the allele description or symbol for the mutated gene. For tips on determining the official allele symbol in mouse, see <a href="#prepare_for_submission">Determining standard nomenclature for mouse genes and alleles</a>.</td></tr>
 <tr><th align=left valign=top>Sex</th><td valign="top">Use the drop-down menu to specify the gender of the sample, if known, or to indicate pooled samples.</td></tr>
 <tr><th align=left valign=top>Theiler Stage</th><td valign="top">If the sample is from mouse, you can use the <a href="http://www.emouseatlas.org/emap/ema/theiler_stages/StageDefinition/stagecriteria.html">staging criteria of Theiler </a> to define its age.  If you do not know the Theiler stage, fill in the next two boxes. (You can leave them blank if you enter the Theiler stage.)</td></tr>
 <tr><th align=left valign=top><a name="age_unit3"></a>Age Unit</th><td valign="top">Use the drop-down menu to specify the age unit.</td></tr>
 <tr><th align=left valign=top>Age Value</th><td valign="top">Type the number that specifies the age along with the Age Unit.  Leave this field blank if you specify either <i>postnatal</i> or <i>adult</i> as the <a href="#age_unit3">Age Unit</a>.</td></tr>
-<tr><th align=left valign=top>Tissue</th><td valign="top">Type the tissue or structure used for the sample. For mouse, use the <a href="../GEN/AD/">Anatomical Dictionary</a> as a reference for appropriate structure names.</td></tr>
+<tr><th align=left valign=top>Tissue</th><td valign="top">Type the tissue or structure used for the sample. For mouse, use the <a href="<!--#include file='include/wi_url.html'-->searches/anatdict_form.shtml">Anatomical Dictionary</a> as a reference for appropriate structure names.</td></tr>
 <tr><th align=left valign=top>Notes</th><td valign="top">Type any additional information you want stored with this record. </td></tr>
 </table>
 <p><b>Note:</b>&nbsp; If you are planning on submitting data to GXD, we require that you specify the sample age (using either Theiler stages or age units).
@@ -629,13 +629,13 @@ You can now open the notebook.
 <table cellpadding=4 border=1>
 <tr><th align=left valign=top>Sample ID</th><td valign="top">Type a unique identifier for the sample.</td></tr>
 <tr><th align=left valign=top>Strain</th><td valign="top">Type the sample strain. If the sample is from mouse, see
-<a href="<!--#include file='include/wi_url.html'-->/external/festing/search_form.cgi">Inbred Strains of Mice and Rats</a> for a listing of approved strain names.</td></tr>
+<a href="<!--#include file='include/fewi_url.html'-->festing">Inbred Strains of Mice and Rats</a> for a listing of approved strain names.</td></tr>
 <tr><th align=left valign=top>Mutations</th><td valign="top">Type the allele description or symbol for the mutated gene. For tips on determining the official allele symbol in mouse, see <a href="#prepare_for_submission">Determining standard nomenclature for mouse genes and alleles</a>.</td></tr>
 <tr><th align=left valign=top>Sex</th><td valign="top">Use the drop-down menu to specify the gender of the sample, if known, or to indicate pooled samples that include both sexes.</td></tr>
 <tr><th align=left valign=top>Theiler Stage</th><td valign="top">If the sample is from mouse, you can use the <a href="http://www.emouseatlas.org/emap/ema/theiler_stages/StageDefinition/stagecriteria.html">staging criteria of Theiler </a> to define its age.  If you do not know the Theiler stage, fill in the next two boxes. (You can leave them blank if you enter the Theiler stage).</td></tr>
 <tr><th align=left valign=top><a name="age_unit4"></a>Age Unit</th><td valign="top">Use the drop-down menu to specify the age unit.</td></tr>
 <tr><th align=left valign=top>Age Value</th><td valign="top">Type the number that specifies the age along with the Age Unit.  Leave this field blank if you specify either <i>postnatal</i> or <i>adult</i> as the <a href="#age_unit4">Age Unit</a>.</td></tr>
-<tr><th align=left valign=top>Tissue</th><td valign="top">Type the tissue or structure used for the sample. For mouse, use the <a href="../GEN/AD/">Anatomical Dictionary</a> as a reference for appropriate structure names.</td></tr>
+<tr><th align=left valign=top>Tissue</th><td valign="top">Type the tissue or structure used for the sample. For mouse, use the <a href="<!--#include file='include/wi_url.html'-->searches/anatdict_form.shtml">Anatomical Dictionary</a> as a reference for appropriate structure names.</td></tr>
 <tr><th align=left valign=top>Gene</th><td valign="top">Use the drop-down menu to specify the name of the gene amplified in the PCR reaction.</td></tr>
 <tr><th align=left valign=top>Primer Pair</th><td valign="top">Use the drop-down menu to specify the primers used in the PCR reaction.</td></tr>
 <tr><th align=left valign=top>cDNA Generation Meth</th><td valign="top">Use the drop-down menu to specify the method used to generate the cDNA used in the PCR reaction.</td></tr>
@@ -1021,7 +1021,7 @@ There is no difference in data entered using a <b>Manage</b> window and data ent
 
 <tr><th align=left valign=top>Structure</th><td valign="top">Type the anatomical structure analyzed.  For mouse, you can use the
 
-<a href="../GEN/AD/">Anatomical Dictionary</a> as a reference for appropriate structure names. It lists the tissues and structures for each developmental stage (Theiler stage) in a hierarchical fashion. You can cut and paste the complete name and the ID for the anatomical structure, e.g., "TS15;1st arch;mandibular component [1011]," into the Structure cell. This enables standardization of structure nomenclature between researchers and facilitates entry of results into GXD. If the dictionary does not fit your needs, you can use your own anatomical terms.</td></tr>
+<a href="<!--#include file='include/wi_url.html'-->searches/anatdict_form.shtml">Anatomical Dictionary</a> as a reference for appropriate structure names. It lists the tissues and structures for each developmental stage (Theiler stage) in a hierarchical fashion. You can cut and paste the complete name and the ID for the anatomical structure, e.g., "TS15;1st arch;mandibular component [1011]," into the Structure cell. This enables standardization of structure nomenclature between researchers and facilitates entry of results into GXD. If the dictionary does not fit your needs, you can use your own anatomical terms.</td></tr>
 
 <tr><th align=left valign=top>Expression Level</th><td valign="top">Select the appropriate adjective from the drop-down menu to describe the level of expression in the structure analyzed.</td></tr>
 
@@ -1117,20 +1117,18 @@ There is no difference in data entered using a <b>Manage</b> window and data ent
 
 <p>We encourage you to use the official gene, allele, and mutation symbols and names as approved by the International Committee on Standardized Genetic Nomenclature for Mice.
 
-<p>A simple method to find the approved gene symbol and name is to use the
-
-<A HREF="<!--#include file='include/wi_url.html'-->">quick gene search</a> at Mouse Genome Informatics. You can also search for a gene symbol with a sequence accession number. If you cannot find the gene, include in the Gene worksheet Notes field any information that will be useful to help us identify the gene and assign a new symbol and name if necessary.  Types of useful information include:  references, gene structure or function, gene family information, homologies to other species, etc.
+<p>A simple method to find the approved gene symbol and name is to use the Quick Search field at the top of most Mouse Genome Informatics web pages, including this page. You can also search for a gene symbol with a sequence accession number. If you cannot find the gene, include in the Gene worksheet Notes field any information that will be useful to help us identify the gene and assign a new symbol and name if necessary.  Types of useful information include:  references, gene structure or function, gene family information, homologies to other species, etc.
 
 
 
 <p>To find the approved allele symbol and name, you can use the
-<A HREF="<!--#include file='include/wi_url.html'-->searches/allele_form.shtml">Phenotypes, Alleles, and Disease Models Query Form</a> at Mouse Genome Informatics. (For a quick guide to the nomenclature, see the
+<a href="<!--#include file='include/wi_url.html'-->searches/allele_form.shtml">Phenotypes, Alleles, and Disease Models Query Form</a> at Mouse Genome Informatics. (For a quick guide to the nomenclature, see the
 
 <A HREF="<!--#include file='include/mgihome_url.html'-->nomen/allmut_quickhelp.shtml">Allele and Mutant Quick Nomenclature Guide</a>.  If you cannot find the allele, include in the Specimen or Sample worksheet notes field any information that will be useful to help us identify the allele and assign a new name if necessary.  Types of useful information include:  references, type of mutation, lab generated in, etc.  <b>Note:</b> At this time GXD does include information from knock-ins and knock-outs but not from other kinds of transgenic animals.
 
 
 
-<p>In GXD we use the <a href="../GEN/AD/">Anatomical Dictionary</a> to describe the structures expression was analyzed in.  We encourage you to do the same.
+<p>In GXD we use the <a href="<!--#include file='include/wi_url.html'-->searches/anatdict_form.shtml">Anatomical Dictionary</a> to describe the structures expression was analyzed in.  We encourage you to do the same.
 
 <p>Finally, to submit data to GXD, you must make entries in certain fields.  The validation function insures these fields are filled in.  See <a href="#validate">Validation in the GEN</a> for further details.
 </p><font size="-1"><a href="#toc">Back to Table of Contents</a></font>
@@ -1261,7 +1259,7 @@ There is no difference in data entered using a <b>Manage</b> window and data ent
 
 <li>Please send your validated submission notebook to
 
-<A HREF="mailto:gen@jax.org">gen@jax.org</A> as an e-mail attachment.
+<A HREF="mailto:GEN@jax.org">GEN@jax.org</A> as an e-mail attachment.
 
 <li>After we receive it, we will confirm receipt of your submission.
 
@@ -1271,7 +1269,7 @@ There is no difference in data entered using a <b>Manage</b> window and data ent
 
 <p>You can also send any questions regarding submissions to the same address:
 
-<A HREF="mailto:gen@jax.org">gen@jax.org</A>.
+<A HREF="mailto:GEN@jax.org">GEN@jax.org</A>.
 
 
 
@@ -1407,7 +1405,7 @@ Instructions for various modifications appear below. <p><b>Note:</b>&nbsp; If yo
   <td valign="top">The GEN is designed to prevent you from submitting the same assay twice. </td>
   <td valign="top">Once an assay has been included in a submission, it is no longer included in the list of assays on the submission creation form. If you want it to reappear on the list, go to the assay sheet and delete the word <b>Submitted</b> in the column beside the Validate Submission button.</td></tr>
 
-<tr><td valign=top>How can I suggest improvements for future versions of the GEN?<td valign="top">&nbsp;<td valign="top">You can contact us at <A HREF="mailto:gen@jax.org">gen@jax.org</a>.  We welcome all comments (positive or negative) from users.</tr>
+<tr><td valign=top>How can I suggest improvements for future versions of the GEN?<td valign="top">&nbsp;<td valign="top">You can contact us at <A HREF="mailto:GEN@jax.org">GEN@jax.org</a>.  We welcome all comments (positive or negative) from users.</tr>
 
 </table>
 
@@ -1421,7 +1419,7 @@ Instructions for various modifications appear below. <p><b>Note:</b>&nbsp; If yo
 
 
 
-This  documentation is available on the Web at http://www.informatics.jax.org/mgihome/GXD/GEN/gen.shtml. You can get additional help by contacting <A HREF="mailto:gen@jax.org">gen@jax.org</A>.
+This  documentation is available on the Web at http://www.informatics.jax.org/mgihome/GXD/GEN/gen.shtml. You can get additional help by contacting <A HREF="mailto:GEN@jax.org">GEN@jax.org</A>.
 
 
 
@@ -1542,7 +1540,7 @@ This  documentation is available on the Web at http://www.informatics.jax.org/mg
    <li>You can add more rows by choosing <b>&lt;Insert Rows&gt;</b> from the RNA In Situ: Results list box.  Generally, you should add one row for each structure analyzed in each specimen.  For this exercise, you will need four lines.</li>
    <li>At this point, you should probably close the RNA In Situ: Results list box.  You can reopen it at any time by clicking <b>Hide&#047;Show Results Menu</b>.</li>
    <li>Use the drop-down menu to choose the first specimen whose staining pattern you want to describe.  For this example, choose <b>2&#047;25&#047;07 E10.5 WT &#035;1</b>.</li>
-   <li>In the structure box, type the name of a structure you analyzed.  For this example, use <b>limb</b>. You can use <a href="../GEN/AD/">The Mouse Anatomical Dictionary</a> as a reference for appropriate structure names. You can cut and paste the complete name and ID for the anatomical structure, e.g., <b>TS17;limb[2095]</b> or  <b>TS17;forelimb bud;ectoderm;apical ectodermal ridge [2098](AER)</b> or <b>TS17;hindlimb bud;ectoderm;apical ectodermal ridge [2102](AER)</b>.</li>
+   <li>In the structure box, type the name of a structure you analyzed.  For this example, use <b>limb</b>. You can use <a href="<!--#include file='include/wi_url.html'-->searches/anatdict_form.shtml">The Mouse Anatomical Dictionary</a> as a reference for appropriate structure names. You can cut and paste the complete name and ID for the anatomical structure, e.g., <b>TS17;limb[2095]</b> or  <b>TS17;forelimb bud;ectoderm;apical ectodermal ridge [2098](AER)</b> or <b>TS17;hindlimb bud;ectoderm;apical ectodermal ridge [2102](AER)</b>.</li>
    <li>To describe the intensity of the staining, use an adjective from the Expression Level drop-down menu.  For this specimen, use <b>Strong</b>.</li>
    <li>To describe the Pattern of the staining, use a descriptor from the Pattern drop-down menu.  Since in this specimen, only part of the limb was stained, choose <b>Regionally restricted</b>.</li>
    <li>If there is an image of this embryo on the assay sheet, type the label of that image in the next box.</li>
@@ -1567,5 +1565,5 @@ THE SOFTWARE AND DATA ARE PROVIDED "AS IS". This software and data are provided
 to enhance knowledge and encourage progress in the scientific community and are
 to be used only for research and educational purposes. Any reproduction or use
 for commercial purpose is prohibited without the prior express written
-permission of the Jackson Laboratory. Copyright © 1996, 1999, 2002, 2005, 2006, 2007 by The
+permission of the Jackson Laboratory. Copyright ï¿½ 1996, 1999, 2002, 2005, 2006, 2007 by The
 Jackson Laboratory All Rights Reserved -->
