@@ -14,7 +14,8 @@ import homelib
 import webshare_lib
 
 import os
-import db
+import pg_db
+db = pg_db		# setup alias to minimize code changes
 import string
 
 def listToFile (str_list, filename):
@@ -39,11 +40,9 @@ def getDbDate ():
     db.set_sqlServer(config["DB_SERVER"])
     db.set_sqlDatabase(config["DB_DATABASE"])
     cmds = [] # SQL command list
-    cmds.append(string.join([
-        'SELECT CONVERT(varchar, lastdump_date, 106) as dbDate, '
-        'public_version '
-        'FROM MGI_dbInfo '
-    ]))
+    cmds.append('''SELECT to_char(lastdump_date, 'DD Mon YYYY') as dbDate,
+        	public_version 
+        FROM MGI_dbInfo''')
 
     #  Excecute queries
     results = db.sql(cmds, 'auto')
@@ -66,11 +65,12 @@ def getCreDriver ():
     db.set_sqlServer(config["DB_SERVER"])
     db.set_sqlDatabase(config["DB_DATABASE"])
     
-    results = db.sql('select distinct driverNote from ALL_Cre_Cache', 'auto')
+    results = db.sql('select distinct driverNote from ALL_Cre_Cache order by driverNote', 'auto')
     drivers = ["<option selected value='' name='default'>(choose one)</option>"] # SQL command list
     for r in results:
         drivers.append("<option value='%s'>%s</option>" % (r['driverNote'], r['driverNote']))
     listToFile(drivers, '../www/include/driver_list.html')
+
   
 def captchaInclude ():
     form = """<input type="hidden" name="%s" id="%s" value="default">
@@ -120,7 +120,7 @@ def createIncludeLink (includeName, fileLoc ) :
     os.system("ln -s " + fileLoc + " " + filePath)
 
 def main ():
-    getCreDriver()
+    #getCreDriver()
     captchaInclude()
     stringToFile (config['WI_URL'], '../www/include/wi_url.html')
     stringToFileNoNL (config['WI_URL'], '../www/include/wi_url2.html')
@@ -148,16 +148,18 @@ def main ():
         '../www/include/entrez_url.html')
     stringToFile (config['GLOSSARY_URL'], \
         '../www/include/glossary_url.html')
-    stringToFile (config['USERDOCS_URL'], \
-        '../www/include/userdocs_url.html')
-    stringToFileNoNL (config['USERDOCS_URL'], 
-        '../www/include/userdocs_url2.html')
+    stringToFileNoNL (config['USERHELP_URL'], \
+        '../www/include/userhelp_url.html')
     stringToFile (config['SCHEMA'],\
         '../www/include/schema_url.html')
     stringToFile (config['NAME'],\
         '../www/include/mgiversion.html')
+    stringToFile (config['FEWI_URL'], \
+        '../www/include/fewi_url.html')
     stringToFile (config['JAVAWI_URL'], \
         '../www/include/java_url.html')
+    stringToFileNoNL (config['FEWI_URL'], \
+        '../www/include/fewi_url.html')
     stringToFile (config['QUICKSEARCH_URL'], \
         '../www/include/quicksearch_url.html')        
     stringToFile (config['MOUSEBLAST_URL'], \
@@ -213,7 +215,7 @@ def main ():
 	'../www/include/imsr_home_url.html')
 
     # new include file for the faq's
-    stringToFile (config['FAQ_URL'],
+    stringToFileNoNL (config['FAQ_URL'],
         '../www/include/faq_url.html')
 
     # new include files for apache aliased menu and homepages
@@ -223,6 +225,9 @@ def main ():
         '../www/include/menus_url.html')
 
     stringToFile(getDbDate(), '../www/include/stats_date.shtml')
+
+    # Temporarily include the link to the cre dropdowns.
+    createIncludeLink('driver_list.html', config['INSTALL_DIR'] + 'mgihome/temp/driver_list.html')
 
     #####----- Template Include Files --------#####
     createIncludeLink('templateHead.html', config['MGICONFIG_PATH'] + 'web/templateHead.html')

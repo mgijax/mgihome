@@ -1,0 +1,89 @@
+<!--#include file='include/templateHead.html'-->
+
+  <title><!--#include file="include/mgiversion.html"-->Analysis Tools</title>
+
+  <link rel="stylesheet" type="text/css" href="homepage.css"/>
+
+<!--#include file='include/templateBodyStart.html'-->
+
+<!-- Title Bar -->
+<div id="titleBarWrapper">
+ <span class="titleBarMainTitle">Genome Analysis Tools</span>
+</div> <!--titleBar-->
+
+<!-- this file is an example template to be used to create a page in the
+"All X" format, similar to the "All Search Tools" page.  To use this template
+simply add anchor links to the sections your page contains in the toc table,
+then create each section to contain the appropriate anchor link and content.
+Note that the links in the toc are a list <ul> where each link is a <li> item.
+Note that the list in each section is a definition list <dl> where the term
+<dt> is the heading, and the definition <dd> is the descriptive text.  -->
+
+<!-- main body table -->
+<table width="75%" cellpadding="2" align="center">
+
+	<tr><td>
+		<!-- TOC table -->
+		<table class="toc" width="100%">
+			<tr>
+				<td>
+					<ul>
+						<li><a href="#sec1">Genome Analysis Tools</a> | </li>
+						<li><a href="#sec2">Prototype Analysis Tools</a></li>
+				</td>
+			</tr>
+		</table>
+	</td></tr>
+
+	<tr><td>
+		<!-- section1 table -->
+		<a name="sec1"></a>
+		<table class="outline" width="100%">
+			<tr>
+				<td class="enhance">
+					Genome Analysis Tools
+				</td>
+			</tr>
+			<tr >
+				<td>
+					<dl class="linkedList">
+						<dt>&bull; <a href="<!--#include file='include/fewi_url.html'-->batch">Batch Query</a></dt>
+						<dd>Input a list of gene IDs or symbols  and retrieve other database IDs and gene attributes (e.g. phenotypes, GO).</dd>
+						<dt>&bull; <a href="<!--#include file='include/biomart_url.html'-->">MGI BioMart</a> </dt>
+						<dd>Access MGI's mouse genetic and genomic data using BioMart.</dd>
+						<dt>&bull; <a href="<!--#include file='include/mouseblast_url.html'-->">MouseBLAST</a></dt>
+						<dd>Search for sequence similarity for mouse, human, or rat.</dd>
+					</dl>
+				</td>
+			</tr>
+		</table>
+	</td></tr>
+
+		<tr><td>
+			<!-- section2 table -->
+			<a name="sec2"></a>
+			<table class="outline" width="100%">
+				<tr>
+					<td class="enhance">
+						Prototype Analysis Tools
+					</td>
+				</tr>
+				<tr >
+					<td>
+						<span class="small" style="padding:2px;">These tools are still in the prototyping and development phase, and may change, break or disappear at any time.  Your feedback can help us improve them. Please feel free to experiment with them and send us your comments.</span>
+						<dl class="linkedList">
+							<dt>&bull; <a href="http://proto.informatics.jax.org/prototypes/vlad-1.0.3">VLAD - Visual Annotation Display</a></dt>
+							<dd>VLAD is a tool for visualizing GO annotations. The annotation data are a subset of those available at the GO web site. You specify an annotation data set and a set of genes, and the tool will produce a graphical summary of the annotations. </dd>
+							<dt>&bull; <a href="<!--#include file='include/gotools_url.html'-->MGI_GO_Slim_Chart.html">GO Slim Chart Tool</a></dt>
+							<dd>This GO_Slim Chart Tool bins the genes in your list according to MGI GO Slim definitions to help you discover what the genes may have in common.</dd>
+							<dt>&bull; <a href="<!--#include file='include/gotools_url.html'-->MGI_Term_Finder.html">GO Term Mapper</a></dt>
+							<dd>This GO Term Finder tool searches for significant shared GO terms used to describe the genes in your list to help you discover what the genes may have in common.</dd>
+						</dl>
+					</td>
+				</tr>
+			</table>
+	</td></tr>
+
+</table>
+
+<!--#include file='include/templateBodyStop.html'-->

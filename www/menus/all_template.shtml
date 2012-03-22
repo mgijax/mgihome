@@ -1,0 +1,86 @@
+<!--#include file='include/templateHead.html'-->
+
+  <title><!--#include file="include/mgiversion.html"-->All Template</title>
+
+  <link rel="stylesheet" type="text/css" href="homepage.css"/>
+
+<!--#include file='include/templateBodyStart.html'-->
+
+<!-- Title Bar -->
+<div id="titleBarWrapper">
+ <span class="titleBarMainTitle">All Template</span>
+</div> <!--titleBar-->
+
+<!-- this file is an example template to be used to create a page in the
+"All X" format, similar to the "All Search Tools" page.  To use this template
+simply add anchor links to the sections your page contains in the toc table,
+then create each section to contain the appropriate anchor link and content.
+Note that the links in the toc are a list <ul> where each link is a <li> item.
+Note that the list in each section is a definition list <dl> where the term
+<dt> is the heading, and the definition <dd> is the descriptive text.  -->
+
+<!-- main body table -->
+<table width="75%" cellpadding="2" align="center">
+
+	<tr><td>
+		<!-- TOC table -->
+		<table class="toc" width="100%">
+			<tr>
+				<td>
+					<ul>
+						<li><a href="#sec1">Section 1</a> | </li>
+						<li><a href="#sec2">Section 2</a> | </li>
+				</td>
+			</tr>
+		</table>
+	</td></tr>
+
+	<tr><td>
+		<!-- section1 table -->
+		<a name="sec1"></a>
+		<table class="outline" width="100%">
+			<tr>
+				<td class="enhance">
+					Section 1
+				</td>
+			</tr>
+			<tr >
+				<td>
+					<dl class="linkedList">
+						<dt>&bull; Item 1</dt>
+						<dd>A description for item 1.</dd>
+
+						<dt>&bull; Item 2</dt>
+						<dd>A description for item 2.</dd>
+					</dl>
+				</td>
+			</tr>
+		</table>
+	</td></tr>
+
+		<tr><td>
+			<!-- section2 table -->
+			<a name="sec2"></a>
+			<table class="outline" width="100%">
+				<tr>
+					<td class="enhance">
+						Section 2
+					</td>
+				</tr>
+				<tr >
+					<td>
+						<dl class="linkedList">
+							<dt>&bull; Item 1</dt>
+							<dd>A description for item 1.</dd>
+
+							<dt>&bull; Item 2</dt>
+							<dd>A description for item 2.</dd>
+						</dl>
+					</td>
+				</tr>
+			</table>
+	</td></tr>
+
+</table>
+
+<!--#include file='include/templateBodyStop.html'-->
