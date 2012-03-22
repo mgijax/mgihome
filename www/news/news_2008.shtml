@@ -46,7 +46,7 @@
 	  <tr><td>			
 			
 				<ul>
-				  <li>For MGI release 4.13, the <a href="<!--#include file='include/java_url.html'-->WIFetch?page=batchQF">MGI Batch Query</a> tool now accepts mixed lists of identifiers as input.</li><br>
+				  <li>For MGI release 4.13, the <a href="<!--#include file='include/fewi_url.html'-->batch">MGI Batch Query</a> tool now accepts mixed lists of identifiers as input.</li><br>
 				 <li>Results appear for combinations of IDs or mouse synonyms/symbols/orthologs with MGI gene associations.</li><br>
 				<li>Query results are available in two formats: web page or tab-delimited text file.</li><br>
 				</ul>
@@ -66,7 +66,7 @@
 <LI>This phenotype matrix view is presented first with an axis of high level terms like "hematopoietic system" and gives the user the option to expand that section into more specific annotated phenotypic terms (anemia, increased mast cell number, etc.).</LI><BR>
 			   	  <LI>In addition, the ability to pop up individual windows that contain the phenotype and disease model for a single genotype is available from the <b>Phenotype Summary</b>.  This can facilitate comparisons across mutants for a single gene, as well as among mutants for different genes.</LI><BR>
 				<LI>The <b>Phenotypic Data by Genotype</b> section presents a table of genotypes that can be expanded to show complete phenotype annotation, preserving the data format previously provided.  For each genotype listed, users can expand the display to show the full phenotype detail for a given genotype (or for all genotypes), as well as the disease model annotations.</LI><BR>
-				<LI>To see an example of a the redesigned allele detail page, check this record for one of the targeted mutations of the endoglin gene, <a href="<!--#include file='include/java_url.html'-->WIFetch?page=alleleDetail&key=6501">Eng<sup>tm1Mle</sup></a>.  <br>
+				<LI>To see an example of a the redesigned allele detail page, check this record for one of the targeted mutations of the endoglin gene, <a href="<!--#include file='include/fewi_url.html'-->allele/MGI:2177824">Eng<sup>tm1Mle</sup></a>.  <br>
 For additional information, see the <a onclick='javascript:openFaqWindow("Allele_tour.shtml"); return false;' href="<!--#include file='include/faq_url.html'-->Allele_tour.shtml">Allele Tour</a> displaying the basics of the new phenotype formats.</LI>
     				</Ul>
 			   	  
@@ -118,7 +118,7 @@ For additional information, see the <a onclick='javascript:openFaqWindow("Allele
 		  <li>MGI mouse genome coordinates are now updated to NCBI Mouse Build 37 and dbSNP Build 128. The Build 37.1 reference assembly (C57BL/6J) represents over 90% of the mouse genome in finished form.</li><br>
 		  <li>For Build 37 <i>Mus musculus</i> statistics, see <a href="http://www.ncbi.nlm.nih.gov/mapview/stats/BuildStats.cgi?taxid=10090&build=37&ver=1">http://www.ncbi.nlm.nih.gov/mapview/stats/BuildStats.cgi?taxid=10090&build=37&ver=1.</a></li><br>
 <li>The dbSNP load adds more than 3.7 million refSNPs to MGI. See the summary report of  
-<a href="<!--#include file='include/wi_url.html'-->reports/snpSummary.shtml">SNP Data in MGI</a> for specific  details.
+<a href="<!--#include file='include/fewi_url.html'-->snp">SNP Data in MGI</a> for specific  details.
 </li>
 	
 		</ul>
