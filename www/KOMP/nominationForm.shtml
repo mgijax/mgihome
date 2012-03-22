@@ -74,7 +74,7 @@ If some or all of the genes you wish to nominate as priority for being knocked o
 <br>
 <li>View the list of genes with any/all types of mutations in MGI in a <a href="<!--#include file='include/ftp_url2.html'-->reports/MGI_Mutations.html"  target="new">web page</a>. or as <a href="<!--#include file='include/ftp_url2.html'-->reports/MGI_Mutations.rpt" target="new">tab-delimited text</a>.
 
-<li>Search MGI for <a href="<!--#include file='include/wi_url.html'-->searches/allele_form.shtml"  target="new">Phenotypes and Alleles</a> or go to <a href="<!--#include file='include/menus_url.html'-->allsearch.shtml">All Search Tools</a> for MGI.
+<li>Search MGI for <a href="<!--#include file='include/fewi_url.html'-->allele"  target="new">Phenotypes and Alleles</a> or go to <a href="<!--#include file='include/menus_url.html'-->allsearch.shtml">All Search Tools</a> for MGI.
  </li>
 
  <li>Search the <a href="<!--#include file='include/imsr_home_url.html'-->IMSRSearchForm.jsp" target="new">International Mouse Strain Resources (IMSR)</a> for mouse resources available through public repositories.</li>
@@ -127,7 +127,7 @@ Each gene must have an appropriate ID; and all IDs must refer to mouse genes.</f
     <td bgcolor="#dddddd"><font  face="Verdana" size="-2"><center><i>Sample entry showing identifiers from 2 sources</i></center>
       <table border="0" cellpadding="0" cellspacing="0" width="100%" style="height:20px">
 	<tr>
-	  <td bgcolor="#dddddd"><font face="Verdana" size="-2">&nbsp;&nbsp;<a href="<!--#include file='include/wi_url.html'-->" target="new">MGI</a></font></td>
+	  <td bgcolor="#dddddd"><font face="Verdana" size="-2">&nbsp;&nbsp;<a href="<!--#include file='include/fewi_url.html'-->" target="new">MGI</a></font></td>
 	  <td bgcolor="#dddddd" align="left"><font face="Verdana" size="-2"><input class="inner" TYPE="text" NAME="sampleMgi" VALUE="MGI:1859388"></font></td>
 	  <td bgcolor="#dddddd"><font face="Verdana" size="-2">&nbsp;&nbsp;<a href="<!--#include file='include/entrezgene_home_url.html'-->" target="new">EntrezGene</a></font></td>
 	  <td bgcolor="#dddddd" align="left"><font face="Verdana" size="-2"><input class="inner" TYPE="text" NAME="sampleEntrez" ></font></td>
@@ -153,7 +153,7 @@ Each gene must have an appropriate ID; and all IDs must refer to mouse genes.</f
     <td>
       <table border="0" cellpadding="0" cellspacing="0" width="100%" column=2 style="height:20px">
         <tr>
-	  <td><font face="Verdana" size="-2">&nbsp;&nbsp;<a href="<!--#include file='include/wi_url.html'-->" target="new">MGI</a></font></td>
+	  <td><font face="Verdana" size="-2">&nbsp;&nbsp;<a href="<!--#include file='include/fewi_url.html'-->" target="new">MGI</a></font></td>
 	  <td align="left"><font face="Verdana" size="-2"><input class="inner" TYPE="text" NAME="mgi1" SIZE=10></font></td>
 	  <td><font face="Verdana" size="-2">&nbsp;&nbsp;<a href="<!--#include file='include/entrezgene_home_url.html'-->" target="new">EntrezGene</a></font></td>
 	  <td align="left"><font face="Verdana" size="-2"><input class="inner" TYPE="text" NAME="entrez1" ></font></td>
@@ -179,7 +179,7 @@ Each gene must have an appropriate ID; and all IDs must refer to mouse genes.</f
     <td>
       <table border="0" cellpadding="0" cellspacing="0" width="100%" column=2 style="height:20px">
         <tr>
-	  <td><font face="Verdana" size="-2">&nbsp;&nbsp;<a href="<!--#include file='include/wi_url.html'-->" target="new">MGI</a></font></td>
+	  <td><font face="Verdana" size="-2">&nbsp;&nbsp;<a href="<!--#include file='include/fewi_url.html'-->" target="new">MGI</a></font></td>
 	  <td align="left"><font face="Verdana" size="-2"><input class="inner" TYPE="text" NAME="mgi2" SIZE=10></font></td>
 	  <td><font face="Verdana" size="-2">&nbsp;&nbsp;<a href="<!--#include file='include/entrezgene_home_url.html'-->" target="new">EntrezGene</a></font></td>
 	  <td align="left"><font face="Verdana" size="-2"><input class="inner" TYPE="text" NAME="entrez2" ></font></td>
@@ -205,7 +205,7 @@ Each gene must have an appropriate ID; and all IDs must refer to mouse genes.</f
     <td>
       <table border="0" cellpadding="0" cellspacing="0" width="100%" column=2 style="height:20px">
         <tr>
-	  <td><font face="Verdana" size="-2">&nbsp;&nbsp;<a href="<!--#include file='include/wi_url.html'-->" target="new">MGI</a></font></td>
+	  <td><font face="Verdana" size="-2">&nbsp;&nbsp;<a href="<!--#include file='include/fewi_url.html'-->" target="new">MGI</a></font></td>
 	  <td align="left"><font face="Verdana" size="-2"><input class="inner" TYPE="text" NAME="mgi3" SIZE=10></font></td>
 	  <td><font face="Verdana" size="-2">&nbsp;&nbsp;<a href="<!--#include file='include/entrezgene_home_url.html'-->" target="new">EntrezGene</a></font></td>
 	  <td align="left"><font face="Verdana" size="-2"><input class="inner" TYPE="text" NAME="entrez3" ></font></td>
@@ -231,7 +231,7 @@ Each gene must have an appropriate ID; and all IDs must refer to mouse genes.</f
     <td>
       <table border="0" cellpadding="0" cellspacing="0" width="100%" column=2 style="height:20px">
         <tr>
-	  <td><font face="Verdana" size="-2">&nbsp;&nbsp;<a href="<!--#include file='include/wi_url.html'-->" target="new">MGI</a></font></td>
+	  <td><font face="Verdana" size="-2">&nbsp;&nbsp;<a href="<!--#include file='include/fewi_url.html'-->" target="new">MGI</a></font></td>
 	  <td align="left"><font face="Verdana" size="-2"><input class="inner" TYPE="text" NAME="mgi4" SIZE=10></font></td>
 	  <td><font face="Verdana" size="-2">&nbsp;&nbsp;<a href="<!--#include file='include/entrezgene_home_url.html'-->" target="new">EntrezGene</a></font></td>
 	  <td align="left"><font face="Verdana" size="-2"><input class="inner" TYPE="text" NAME="entrez4" ></font></td>
@@ -257,7 +257,7 @@ Each gene must have an appropriate ID; and all IDs must refer to mouse genes.</f
     <td>
       <table border="0" cellpadding="0" cellspacing="0" width="100%" column=2 style="height:20px">
         <tr>
-	  <td><font face="Verdana" size="-2">&nbsp;&nbsp;<a href="<!--#include file='include/wi_url.html'-->" target="new">MGI</a></font></td>
+	  <td><font face="Verdana" size="-2">&nbsp;&nbsp;<a href="<!--#include file='include/fewi_url.html'-->" target="new">MGI</a></font></td>
 	  <td align="left"><font face="Verdana" size="-2"><input class="inner" TYPE="text" NAME="mgi5" SIZE=10></font></td>
 	  <td><font face="Verdana" size="-2">&nbsp;&nbsp;<a href="<!--#include file='include/entrezgene_home_url.html'-->" target="new">EntrezGene</a></font></td>
 	  <td align="left"><font face="Verdana" size="-2"><input class="inner" TYPE="text" NAME="entrez5" ></font></td>
@@ -283,7 +283,7 @@ Each gene must have an appropriate ID; and all IDs must refer to mouse genes.</f
     <td>
       <table border="0" cellpadding="0" cellspacing="0" width="100%" column=2 style="height:20px">
         <tr>
-	  <td><font face="Verdana" size="-2">&nbsp;&nbsp;<a href="<!--#include file='include/wi_url.html'-->" target="new">MGI</a></font></td>
+	  <td><font face="Verdana" size="-2">&nbsp;&nbsp;<a href="<!--#include file='include/fewi_url.html'-->" target="new">MGI</a></font></td>
 	  <td align="left"><font face="Verdana" size="-2"><input class="inner" TYPE="text" NAME="mgi6" SIZE=10></font></td>
 	  <td><font face="Verdana" size="-2">&nbsp;&nbsp;<a href="<!--#include file='include/entrezgene_home_url.html'-->" target="new">EntrezGene</a></font></td>
 	  <td align="left"><font face="Verdana" size="-2"><input class="inner" TYPE="text" NAME="entrez6" ></font></td>
@@ -309,7 +309,7 @@ Each gene must have an appropriate ID; and all IDs must refer to mouse genes.</f
     <td>
       <table border="0" cellpadding="0" cellspacing="0" width="100%" column=2 style="height:20px">
         <tr>
-	  <td><font face="Verdana" size="-2">&nbsp;&nbsp;<a href="<!--#include file='include/wi_url.html'-->" target="new">MGI</a></font></td>
+	  <td><font face="Verdana" size="-2">&nbsp;&nbsp;<a href="<!--#include file='include/fewi_url.html'-->" target="new">MGI</a></font></td>
 	  <td align="left"><font face="Verdana" size="-2"><input class="inner" TYPE="text" NAME="mgi7" SIZE=10></font></td>
 	  <td><font face="Verdana" size="-2">&nbsp;&nbsp;<a href="<!--#include file='include/entrezgene_home_url.html'-->" target="new">EntrezGene</a></font></td>
 	  <td align="left"><font face="Verdana" size="-2"><input class="inner" TYPE="text" NAME="entrez7" ></font></td>
@@ -335,7 +335,7 @@ Each gene must have an appropriate ID; and all IDs must refer to mouse genes.</f
     <td>
       <table border="0" cellpadding="0" cellspacing="0" width="100%" column=2 style="height:20px">
         <tr>
-	  <td><font face="Verdana" size="-2">&nbsp;&nbsp;<a href="<!--#include file='include/wi_url.html'-->" target="new">MGI</a></font></td>
+	  <td><font face="Verdana" size="-2">&nbsp;&nbsp;<a href="<!--#include file='include/fewi_url.html'-->" target="new">MGI</a></font></td>
 	  <td align="left"><font face="Verdana" size="-2"><input class="inner" TYPE="text" NAME="mgi8" SIZE=10></font></td>
 	  <td><font face="Verdana" size="-2">&nbsp;&nbsp;<a href="<!--#include file='include/entrezgene_home_url.html'-->" target="new">EntrezGene</a></font></td>
 	  <td align="left"><font face="Verdana" size="-2"><input class="inner" TYPE="text" NAME="entrez8" ></font></td>
@@ -361,7 +361,7 @@ Each gene must have an appropriate ID; and all IDs must refer to mouse genes.</f
     <td>
       <table border="0" cellpadding="0" cellspacing="0" width="100%" column=2 style="height:20px">
         <tr>
-	  <td><font face="Verdana" size="-2">&nbsp;&nbsp;<a href="<!--#include file='include/wi_url.html'-->" target="new">MGI</a></font></td>
+	  <td><font face="Verdana" size="-2">&nbsp;&nbsp;<a href="<!--#include file='include/fewi_url.html'-->" target="new">MGI</a></font></td>
 	  <td align="left"><font face="Verdana" size="-2"><input class="inner" TYPE="text" NAME="mgi9" SIZE=10></font></td>
 	  <td><font face="Verdana" size="-2">&nbsp;&nbsp;<a href="<!--#include file='include/entrezgene_home_url.html'-->" target="new">EntrezGene</a></font></td>
 	  <td align="left"><font face="Verdana" size="-2"><input class="inner" TYPE="text" NAME="entrez9" ></font></td>
@@ -387,7 +387,7 @@ Each gene must have an appropriate ID; and all IDs must refer to mouse genes.</f
     <td>
       <table border="0" cellpadding="0" cellspacing="0" width="100%" column=2 style="height:20px">
         <tr>
-	  <td><font face="Verdana" size="-2">&nbsp;&nbsp;<a href="<!--#include file='include/wi_url.html'-->" target="new">MGI</a></font></td>
+	  <td><font face="Verdana" size="-2">&nbsp;&nbsp;<a href="<!--#include file='include/fewi_url.html'-->" target="new">MGI</a></font></td>
 	  <td align="left"><font face="Verdana" size="-2"><input class="inner" TYPE="text" NAME="mgi10" SIZE=10></font></td>
 	  <td><font face="Verdana" size="-2">&nbsp;&nbsp;<a href="<!--#include file='include/entrezgene_home_url.html'-->" target="new">EntrezGene</a></font></td>
 	  <td align="left"><font face="Verdana" size="-2"><input class="inner" TYPE="text" NAME="entrez10" ></font></td>
