@@ -47,12 +47,12 @@
 				       gene/marker IDs.</li>
 				       <li><b>Batch Query for Genes/Markers</b> - You can upload a set of identifiers
 				       and specify the associated attributes to return.  See
-				       <a href="<!--#include file='include/java_url.html'-->WIFetch?page=batchQF"> MGI Batch Query</a>,
+				       <a href="<!--#include file='include/fewi_url.html'-->batch"> MGI Batch Query</a>,
 				       an interactive tool that mirrors this functionality, for a list of available data
 				       attributes.</li>
 				    </ul>
 				        <p>
-						    Please feel free to contact <a href="mailto:mgi-help@jax.org">
+						    Please feel free to contact <a href="mailto:mgi-help@informatics.jax.org">
 						    User Support</a> with questions, comments, or suggestions for the MGI Web Service.
 						    </p>
 						    <p>
@@ -137,7 +137,7 @@
 
         Currently supported input identifier types:<br><br>
 
-        <table border="1" cellspacing="0" cellpadding="3">
+        <table class="mgitable">
             <tr><th valign="top">IDType</th><th valign="top">Examples</th></tr>
             <tr><td valign="top">auto</td><td valign="top">Any type of IDs may be used.</td></tr>
             <tr><td valign="top">symbol</td><td valign="top">Pax6</td></tr>
@@ -239,7 +239,7 @@
     <h4>&lt;batchMarkerRequest&gt;</h4>
     <blockquote>
     The &lt;batchMarkerRequest&gt; element is designed to allow programmatic requests that mirror the functionality
-    of the <a href="<!--#include file='include/java_url.html'-->WIFetch?page=batchQF">MGI Batch Query</a> tool.
+    of the <a href="<!--#include file='include/fewi_url.html'-->batch">MGI Batch Query</a> tool.
     This request lets you upload a set of identifiers and select which gene/marker attributes to include
     in the response.  All identifiers in the set must be of the same supported type.<br><br>
 
@@ -256,7 +256,7 @@
 
         Currently supported input identifier types:<br><br>
 
-        <table border="1" cellspacing="0" cellpadding="3">
+        <table class="mgitable">
             <tr><th valign="top">IDType</th><th valign="top">Examples</th></tr>
             <tr><td valign="top">auto</td><td valign="top">Any type of IDs may be used.</td></tr>
             <tr><td valign="top">mgiMarker</td><td valign="top">MGI:97490</td></tr>
@@ -285,12 +285,12 @@
         &lt;attribute&gt; element is defined in the
         http://ws.mgi.jax.org/xsd/batchType namespace and corresponds to the
         Gene Attributes selections on the
-        <a href="<!--#include file='include/java_url.html'-->WIFetch?page=batchQF">
+        <a href="<!--#include file='include/fewi_url.html'-->batch">
         MGI Batch Query</a> tool.<br><br>
 
         Currently supported &lt;attribute&gt; strings:<br><br>
 
-        <table border="1" cellspacing="0" cellpadding="3">
+        <table class="mgitable">
             <tr><th valign="top">Attribute</th><th valign="top">Elements returned for each gene/marker in the result set</th></tr>
             <tr><td valign="top">nomenclature</td><td valign="top">
                 &lt;Symbol&gt;<br/>
@@ -312,12 +312,12 @@
         The &lt;returnAdditionalInfo&gt; element is
         defined in the http://ws.mgi.jax.org/xsd/request namespace and
         corresponds to the Additional Information selection found on the
-        <a href="<!--#include file='include/java_url.html'-->WIFetch?page=batchQF">
+        <a href="<!--#include file='include/fewi_url.html'-->batch">
         MGI Batch Query</a> tool.<br><br>
 
         Currently supported &lt;returnAdditionalInfo&gt; strings:<br><br>
 
-        <table border="1" cellspacing="0" cellpadding="3">
+        <table class="mgitable">
             <tr><th valign="top">Additional Information</th><th valign="top">Elements returned for each gene/marker in the result set</th></tr>
             <tr><td valign="top">go</td><td valign="top">
                 &lt;ID&gt; - ID of the GO (Gene Ontology) term associated to the gene/marker<br/>
@@ -506,4 +506,5 @@ Example clients are provided to show how to format requests and connect to the M
             </tr>
         </table>
     </td></tr>
+
 <!--#include file='include/templateBodyStop.html'-->
