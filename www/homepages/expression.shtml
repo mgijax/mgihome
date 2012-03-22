@@ -3,7 +3,7 @@
   <title>MGI-Mouse Gene Expression Database (GXD)</title>
   <meta name="description" content="GXD collects and integrates the  gene expression information in MGI. Its primary emphasis is on endogenous gene expression during  mouse development." />
   <meta name="keywords" content="MGI, mgi, mice, mouse, murine, mus musculus, genes, genome, genomic, gene expression, mouse anatomy, embryo, embryonic development, expression assay, immunohistochemistry, in situ reporter, blot, RNA in situ, RNase, RT-PCR, Northern blot, Western blot" />
-  
+
   <meta name="robots" content="NOODP" />
   <meta name="robots" content="NOYDIR" />
 
@@ -22,12 +22,14 @@
 			</span>
 			<br>
 			<span class="homePageSubTitle">
-			   GXD collects and integrates the  gene expression information in MGI. Its primary emphasis is on endogenous gene expression during  mouse development.
+			   GXD collects and integrates the  gene expression information in MGI. Its primary
+			   emphasis is on endogenous gene expression during  mouse development.
 			</span>
 		</td>
 		<td>
 			<div class="sideMargin marginBottom blueBorder pad5">
-				<a href="<!--#include file='include/faq_url.html'-->GXD_imgpop.shtml" onClick='javascript:openFaqWindow("GXD_imgpop.shtml"); return false;'>
+			    <a href="<!--#include file='include/faq_url.html'-->GXD_imgpop.shtml" onClick='javascript:openFaqWindow("GXD_imgpop.shtml"); return false;'>
+
 		<img class="outlineImg" src="<!--#include file='include/mgihome_url.html'-->homepages/images/GXD.jpg"></a>
         	</div>
 		</td>
@@ -44,7 +46,7 @@
 				<div class="boxBG pad5">
 					<dl>
 						<dt>Search for references on gene expression during development.</dt>
-<dd class="searchList"><a class="small homeLink" href="<!--#include file='include/wi_url.html'-->searches/gxdindex_form.shtml">Gene Expression Literature Query</a></dd>
+<dd class="searchList"><a class="small homeLink" href="<!--#include file='include/fewi_url.html'-->gxdlit">Gene Expression Literature Query</a></dd>
 
 						<dt class="whatList">Search for detailed gene expression assay results.</dt>
 						<dd class="searchList"><a class="small homeLink" href="<!--#include file='include/java_url.html'-->WIFetch?page=expressionQF">Gene Expression Data Query</a></dd>
@@ -62,8 +64,7 @@
 						<dd class="searchList"><a class="small homeLink" href="http://www.emouseatlas.org/emap/ema/section_browser/SectionBrowser.html">EMAGE Anatomical Section Browser</a></dd>		
 
 						<dt class="whatList">Search for gene expression results using BioMart; data returns can be customized and downloaded. </dt>
-						<dd class="searchList"><a class="small homeLink" href="http://biomart.informatics.jax.org/biomart/martview?VIRTUALSCHEMANAME=default&ATTRIBUTES=result.default.naive_attributes.markersymbol|result.default.naive_attributes.assaymgiid|result.default.naive_attributes.assaytype|result.default.naive_attributes.mutantalleles|result.default.naive_attributes.age|result.default.naive_attributes.stagenumber|result.default.naive_attributes.printname|result.default.naive_attributes.strength|result.default.naive_attributes.pattern|result.default.naive_attributes.imagefigure&FILTERS=&VISIBLEPANEL=mainpanel">GXD BioMart</a></dd>
-					</dl>
+						<dd class="searchList"><a class="small homeLink" href="http://biomart.informatics.jax.org/biomart/martview?VIRTUALSCHEMANAME=default&ATTRIBUTES=result.default.naive_attributes.markersymbol|result.default.naive_attributes.assaymgiid|result.default.naive_attributes.assaytype|result.default.naive_attributes.mutantalleles|result.default.naive_attributes.age|result.default.naive_attributes.stagenumber|result.default.naive_attributes.printname|result.default.naive_attributes.strength|result.default.naive_attributes.pattern|result.default.naive_attributes.imagefigure&FILTERS=&VISIBLEPANEL=mainpanel">GXD BioMart</a></dd>					</dl>
 				</div>
 			</div>
 		</td>
@@ -113,25 +114,25 @@
 	</div>
 	<div class="boxBG pad5 small">
                 <ul>
-<li>We are pleased to announce the inclusion of RNA in situ hybridization and immunohistochemistry data from the GenitoUrinary Development Molecular Anatomy Project (GUDMAP) database. You can view the data set at accession number <a href="<!--#include file='include/wi_url.html'-->searches/reference.cgi?172505" class="GO">J:171409</a>. This set includes 92,569 results for: 3,123 genes; 3,561 assays (Immunohistochemistry and RNA in situ hybridizations for E10.5-E17.5 and postnatal specimens); and 8,730 image montages for ~25,000 individual images.</li> 
+<li>We are pleased to announce the inclusion of RNA in situ hybridization and immunohistochemistry data from the GenitoUrinary Development Molecular Anatomy Project (GUDMAP) database. You can view the data set at accession number <a href="<!--#include file='include/fewi_url.html'-->reference/J:171409" class="GO">J:171409</a>. This set includes 92,569 results for: 3,123 genes; 3,561 assays (Immunohistochemistry and RNA in situ hybridizations for E10.5-E17.5 and postnatal specimens); and 8,730 image montages for ~25,000 individual images.</li> 
 <br>
 <li>GXD's gene expression data have been added, as a new dataset, to the MGI 
-implementation of <a href="http://biomart.informatics.jax.org/">BioMart</a>. The <a href="http://biomart.informatics.jax.org/biomart/martview?VIRTUALSCHEMANAME=default&ATTRIBUTES=result.default.naive_attributes.markersymbol|result.default.naive_attributes.assaymgiid|result.default.naive_attributes.assaytype|result.default.naive_attributes.mutantalleles|result.default.naive_attributes.age|result.default.naive_attributes.stagenumber|result.default.naive_attributes.printname|result.default.naive_attributes.strength|result.default.naive_attributes.pattern|result.default.naive_attributes.imagefigure&FILTERS=&VISIBLEPANEL=mainpanel">GXD BioMart</a> provides rapid access to gene 
+implementation of <a href="http://biomart.informatics.jax.org/">BioMart</a>. The <a href="http://biomart.informatics.jax.org/biomart/martview/e716f991369f54567cb7dfbe2d71cfd0">GXD BioMart</a> provides rapid access to gene 
 expression results. Search returns can be customized, and the results easily 
 downloaded for analysis in the lab. In addition, the GXD BioMart can be 
 interconnected with other BioMarts to enable queries across the combined 
 resources. </li>
 <br>
 <li>We are pleased to announce the inclusion of RNA in situ hybridization data from the Brain Gene Expression Map (BGEM) database.  You can view the data set at accession number 
-<a href="<!--#include file='include/wi_url.html'-->searches/reference.cgi?163316" class="GO">J:162220</a>. This set includes 53,496 results for: 1,451 genes; 1,474 assays (RNA in situ hybridizations at E11.5, E15.5, P7 and P42); and 16,112 images.  RNA in situ hybridization data from the Eurexpress project was also recently added to GXD. You can view the data set at accession number 
-<a href="<!--#include file='include/wi_url.html'-->searches/reference.cgi?154591" class="GO">J:153498</a>. This set includes ~497,000 results for 6,594 genes in 7,052 assays with more than 118,400 images.</li>
+<a href="<!--#include file='include/fewi_url.html'-->reference/J:162220" class="GO">J:162220</a>. This set includes 53,496 results for: 1,451 genes; 1,474 assays (RNA in situ hybridizations at E11.5, E15.5, P7 and P42); and 16,112 images.  RNA in situ hybridization data from the Eurexpress project was also recently added to GXD. You can view the data set at accession number 
+<a href="<!--#include file='include/fewi_url.html'-->reference/J:153498" class="GO">J:153498</a>. This set includes ~497,000 results for 6,594 genes in 7,052 assays with more than 118,400 images.</li>
 <br>
 
 </ul>
 
 
-           
-            
+
+
                        </div>
 </div>
 

@@ -134,8 +134,8 @@ Note that the list in each section is a definition list <dl> where the term
 					  <li>User-defined results for gene, SNP, and sequence data are available in tab delimited format.</li>
 					  <li>You can modify the output format on the query form from <i>Web</i> to <i>Tab-delimited</i>.</li>
 					  <li>Query Forms with the tab-delimited option available are:</li>
-					   <ul>
-					     <li><a href="<!--#include file='include/java_url.html'-->WIFetch?page=batchQF">MGI Batch Query</a><br>
+					   <ul class="softwareUL">
+					     <li><a href="<!--#include file='include/fewi_url.html'-->batch">MGI Batch Query</a><br>
 					        <i>Download gene/marker data for a batch of IDs or symbols</i></li>
 					     <li><a href="<!--#include file='include/java_url.html'-->WIFetch?page=markerQF">Genes and Markers Query Form</a><br>
 					        <i>Search by symbol, location, gene ontology classification, or phenotype.</i></li>
@@ -154,14 +154,14 @@ Note that the list in each section is a definition list <dl> where the term
 					  <li>The FASTA format is available on reports where sequences are returned for a specific gene or when querying sequences.</li>
 					  <li>Click on the checkboxes next to each sequence to select it for FASTA download and click GO.</li>
 					  <li>From a gene detail page, FASTA is available for:</li>
-					      <ul>
+					      <ul class="softwareUL">
 							  <li>Representative genomic, transcript, and polypeptide sequences</li>
 							  <li>All mouse sequences</li>
 							  <li>Human and rat orthologs</li>
 							  <li>Mouse, human, and rat protein sequences for superfamily members</li>
 					      </ul>
-					   <li>The FASTA format option is available for generating reports on the 	       <a href="<!--#include file='include/wi_url.html'-->searches/sequence_form.shtml">Mouse Sequence Query Form</a>.</li>
-							
+					   <li>The FASTA format option is available for generating reports on the <a href="<!--#include file='include/wi_url.html'-->searches/sequence_form.shtml">Mouse Sequence Query Form</a>.</li>
+
   					</ul>
 				</td>
 			</tr>

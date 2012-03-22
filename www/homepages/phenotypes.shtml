@@ -1,9 +1,9 @@
 <!--#include file='include/templateHead.html'-->
   <title>MGI-Mouse Phenotypes, Alleles &amp; Disease Models</title>
 
-  <meta name="description" content="The Phenotypes/Alleles project in MGI enables access to spontaneous, induced, and genetically-engineered mutations and their strain-specific phenotypes." /> 
+  <meta name="description" content="The Phenotypes/Alleles project in MGI enables access to spontaneous, induced, and genetically-engineered mutations and their strain-specific phenotypes." />
   <meta name="keywords" content="MGI, mgi, mice, mouse, murine, mus musculus, genes, genome, genomic, alleles, mutations, phenotypes, disease models, transposon, knock-in, knock in, knock-out, knock out, targeted, targeted, transgene, transgenic, gene trap, induced, conditional targeting" />
-  
+
   <meta name="robots" content="NOODP" />
   <meta name="robots" content="NOYDIR" />
 
@@ -66,7 +66,7 @@
 						<dd class="searchList"><a class="small homeLink" href="<!--#include file='include/java_url.html'-->WIFetch?page=markerQF">Genes & Markers Query</a></dd>
 
 						<dt class="whatList">Input a list of genes and retrieve associated alleles and phenotypes.</dt>
-						<dd class="searchList"><a class="small homeLink" href="<!--#include file='include/java_url.html'-->WIFetch?page=batchQF">Batch Query</a></dd>
+						<dd class="searchList"><a class="small homeLink" href="<!--#include file='include/fewi_url.html'-->batch">Batch Query</a></dd>
 
 						<dt class="whatList">Submit data for alleles, mutants, transgenes, strains, or phenotypes.</dt>
 <dd class="searchList"><a class="small homeLink" href="<!--#include file='include/mgihome_url.html'-->submissions/amsp_submission.cgi">Allele, Strain & Phenotype Submission Form</a></dd>

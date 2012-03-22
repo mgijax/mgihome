@@ -3,10 +3,10 @@
   <title>MGI-Mouse Biochemical Pathways</title>
   <meta name="description" content="MouseCyc is a database of curated biochemical pathways data for the laboratory mouse that can be integrated with functional and phenotypic data from MGI." />
   <meta name="keywords" content="MGI, mgi, mice, mouse, murine, mus musculus, genes, genome, genomic, MouseCyc, biochemical pathways, metabolism, metabolic pathways, proteins, chemical compounds, biological networks, metabolites, enzymatic reactions, polypeptides, transporters, protein complexes" />
-  
+
   <meta name="robots" content="NOODP" />
   <meta name="robots" content="NOYDIR" />
-  
+
   <link rel="stylesheet" type="text/css" href="<!--#include file="include/stylesheet.html"-->" />
 
 <!--#include file='include/templateBodyStart.html'-->
@@ -60,10 +60,10 @@
 <dt class="whatList"><a class="homeLink" href="<!--#include file='include/pathways_url.html'-->MOUSE/class-instances?object=Pathways">Browse all pathways</a> represented in MouseCyc</dt>
 <dt class="whatList">Browse a list of <a class="homeLink" href="<!--#include file='include/pathways_url.html'-->MOUSE/class-instances?object=Genes">all genes in MouseCyc</a></dt>
 <dt class="whatList">Browse a list of <a class="homeLink" href="<!--#include file='include/pathways_url.html'-->MOUSE/class-instances?object=Proteins">all proteins in MouseCyc</a> according to their activity</dt>
-<dt class="whatList">Browse a list of 
+<dt class="whatList">Browse a list of
 <a class="homeLink" href="<!--#include file='include/pathways_url.html'-->MOUSE/class-instances?object=Compounds">all compounds represented in MouseCyc</a></dt>
 <dt class="whatList"><a class="homeLink" href="<!--#include file='include/pathways_url.html'-->expression.html">Overlay experimental data onto the Pathway Tools Omics Viewer</a></dd>
-                           
+
 <dd><a class="homeLink" href="ftp://ftp.informatics.jax.org/pub/curatorwork/MouseCyc/FilesOmics/index.html">Example OmicsViewer files</a>
 <dt class="whatList"><a class="homeLink" href="<!--#include file='include/pathways_url.html'-->MOUSE/NEW-IMAGE?type=OVERVIEW&force=t">Generate a mouse metabolic map</a></dt>
 					</dl>
@@ -130,7 +130,7 @@
 	<div class="right">Box title right (date)</div>
 		News content
 		<div class="boxBG pad5 small">There is some news to insert here.
-	link to more news page 
+	link to more news page
 
 
 
@@ -145,9 +145,10 @@
     the a crash in IE6, and display problems in IE 6 & 7.  I also
     needed to put this div in a table to get the fix to work.  The
     order otf the table and div tags is very specific to avoid some
-    flickering in IE.-->
+    flickering in IE. -->
 <table width="100%" cellpadding="0" cellspacing="0" border="0"><tr><td>
 <div class="boxWide marginBottom">
+	<!-- This is where the tabbed section is defined. -->
 	<!-- This is where the tabbed section is defined. -->
 	<ul id="biotab" class="shadetabs">
 		<!-- This is where the tabbed section is defined. -->
@@ -156,29 +157,28 @@
 		<li><a href="<!--#include file='include/mgihome_url.html'-->homepages/tabContents/Pathways_Collaborators.shtml" rel="ajaxcontentarea">Collaborators</a></li>
 		<li><a href="<!--#include file='include/mgihome_url.html'-->homepages/tabContents/Pathways_Resources.shtml" rel="ajaxcontentarea">Other Links</a></li>
 	</ul>
-
 	<!-- this is where the tab text gets inserted by javascript -->
 	<div id="biocontentarea" class="contentstyle">
-		<!-- text for default selected tab inserted here as an include -->
-		<!--#include file='tabContents/Pathways_About.shtml'-->
-    </div>
 
-<img src="<!--#include file='include/mgihome_url.html'-->homepages/images/white_dot.gif" width="475px" height="1px">
+		<!-- text for default selected tab inserted here as an include -->
+		<!--#include file='tabContents/Pathways_Help.shtml'-->
+
+	</div>
+
+<img src="<!--#include file='include/mgihome_url.html'-->homepages/images/white_dot.gif" width="550px" height="1px">
 </td></tr>
 </div>
 </table>
 
-
 <!--AJAX TABS CALLS-->
 
-<script type="text/javascript" src="<!--#include file="include/javascript.html"-->">">
+<script type="text/javascript" src="<!--#include file="include/javascript.html"-->">
     /***********************************************
     * Ajax Tabs Content script- � Dynamic Drive DHTML code library (www.dynamicdrive.com)
     * This notice MUST stay intact for legal use
     * Visit Dynamic Drive at http://www.dynamicdrive.com/ for full source code
     ***********************************************/
 </script>
-
 
     <script type="text/javascript">
         var bio_box=new ddajaxtabs("biotab", "biocontentarea")

@@ -75,13 +75,14 @@
 				<div class="boxBG pad5">
 					<dl>
 						<dt>Search for SNPs by strain(s), SNP attributes, genomic position, or associated genes.</dt>
-						<dd class="searchList"><a href="<!--#include file='include/java_url.html'-->WIFetch?page=snpQF" class="small homeLink">SNP Query</a></dd>
+						<dd class="searchList"><a href="<!--#include file='include/java_url.html'-->WIFetch?page=snpQF"  class="small homeLink">SNP Query</a></dd>
 
-						<dt class="whatList">Search for RFLP or PCR based polymorphisms by strain, locus symbol, or map position.</dt>
-						<dd class="searchList"><a href="<!--#include file='include/wi_url.html'-->searches/polymorphism_form.shtml" class="small homeLink">RFLP/PCR Polymorphism Query</a></dd>
-                                                <dt class="whatList">Inbred Strains of Mice.</dt>
-                                                <dd class="searchList"><a href="<!--#include file='include/wi_url.html'-->external/festing/search_form.cgi" class="small homeLink">Characteristics of Inbred Strains</a> of Mice and Rats by M. Festing</dd>
-                                                <dd class="searchList">View lists of 
+						<!--<dt class="whatList">Search for RFLP or PCR based polymorphisms by strain, locus symbol, or map position.</dt>
+						<dd class="searchList"><a href="<!--#include file='include/fewi_url.html'-->polymorphism" class="small homeLink">RFLP/PCR Polymorphism Query</a></dd>-->
+						
+                     	<dt class="whatList">Inbred Strains of Mice.</dt>
+                        <dd class="searchList"><a href="<!--#include file='include/wi_url.html'-->external/festing/search_form.cgi" class="small homeLink">Characteristics of Inbred Strains</a> of Mice and Rats by M. Festing</dd>
+                        <dd class="searchList">View lists of 
 <a href="<!--#include file='include/ftp_url2.html'-->reports/index.html#strain" class="small homeLink">Official Mouse Strain Names</a></dd>
 
 <dt class="whatList">View a chart depicting the origins and relationships of inbred mouse strains.</dt>
@@ -123,13 +124,13 @@
 						<dd class="faqList">.. find all known coding SNPs in a genomic location for one or more strains?
 						<a class="small homeLink" onClick="javascript:openFaqWindow('STRN_SNP.shtml'); return false;"
 						href="<!--#include file='include/faq_url.html'-->STRN_SNP.shtml">FAQ</a></dd>
-						<dd class="faqList">.. find strains with RFLP/PCR polymorphisms in a particular gene?
+						<!--<dd class="faqList">.. find strains with RFLP/PCR polymorphisms in a particular gene?
 						<a class="small homeLink" onClick="javascript:openFaqWindow('STRN_poly.shtml'); return false;"
 						href="<!--#include file='include/faq_url.html'-->STRN_poly.shtml">FAQ</a></dd>
 						
 						<dd class="faqList">.. find genomic sequence for a specific mouse strain?
 						<a class="small homeLink" onClick="javascript:openFaqWindow('STRN_genom.shtml'); return false;"
-						href="<!--#include file='include/faq_url.html'-->STRN_genom.shtml">FAQ</a></dd>
+						href="<!--#include file='include/faq_url.html'-->STRN_genom.shtml">FAQ</a></dd>-->
 					</dl>
 					<!-- link to all FAQs page -->
 					<a class="small homeLink" href="<!--#include file='include/faq_url.html'-->FAQ.shtml#faq_strain">More FAQs</a>

@@ -1,13 +1,13 @@
 <!--#include file='include/templateHead.html'-->
-  <title>MGI-Mouse Genes, Genome Features & Maps</title> 
+  <title>MGI-Mouse Genes, Genome Features & Maps</title>
 
-  <meta name="description" content="MGI provides access to integrated data on mouse genes and genome features, from sequences and genomic maps to gene expression and disease models." /> 
+  <meta name="description" content="MGI provides access to integrated data on mouse genes and genome features, from sequences and genomic maps to gene expression and disease models." />
 
   <meta name="keywords" content="MGI, mgi, mice, mouse, murine, mus musculus, genes, genome, genomic, sequences, proteins, microRNA, QTL, pseudogene, marker, genome feature, gene sequence, nomenclature, gene function, transgene, FASTA, MouseBLAST, Mouse BLAST" />
 
   <meta name="robots" content="NOODP" />
   <meta name="robots" content="NOYDIR" />
-  
+
   <link rel="stylesheet" type="text/css" href="<!--#include file="include/stylesheet.html"-->" />
 
 <!--#include file='include/templateBodyStart.html'-->
@@ -72,20 +72,20 @@
 						<dt>Search for genes and genome features by symbol, name, location, gene ontology classification or phenotype.</dt>
 						<dd class="searchList"><a class="small homeLink" href="<!--#include file='include/java_url.html'-->WIFetch?page=markerQF">Genes & Markers Query</a></dd>
 
-						<dt class="whatList">Search for sequences by mouse strain or biological attribute.</dt>
-						<dd class="searchList"><a class="small homeLink" href="<!--#include file='include/wi_url.html'-->searches/sequence_form.shtml">Sequence Query</a></dd>
+						<!--<dt class="whatList">Search for sequences by mouse strain or biological attribute.</dt>
+						<dd class="searchList"><a class="small homeLink" href="<!--#include file='include/fewi_url.html'-->sequence">Sequence Query</a></dd>-->
 
 						<dt class="whatList">Use BLAST to search for mouse genes and genome features using nucleotide or protein sequences.</dt>
 						<dd class="searchList"><a class="small homeLink" href="<!--#include file='include/mouseblast_url.html'-->">MouseBLAST</a></dd>
 
-						<dt class="whatList">Search genetic mapping data and create genetic maps.</dt>
-						<dd class="searchList"><a class="small homeLink" href="<!--#include file='include/menus_url.html'-->allsearch.shtml#maptools">Graphical Map Tools</a></dd>
+						<!--<dt class="whatList">Search genetic mapping data and create genetic maps.</dt>
+						<dd class="searchList"><a class="small homeLink" href="<!--#include file='include/menus_url.html'-->allsearch.shtml#maptools">Graphical Map Tools</a></dd>-->
 
 						<dt class="whatList">Create a display of regions of the mouse genome.</dt>
 						<dd class="searchList"><a class="small homeLink" href="<!--#include file='include/gbrowse_url.html'-->">Mouse Genome Browser</a></dd>
 
 						<dt class="whatList">Input a list of gene IDs or symbols and retrieve other database IDs and gene attributes (e.g. phenotypes, GO).</dt>
-						<dd class="searchList"><a class="small homeLink" href="<!--#include file='include/java_url.html'-->WIFetch?page=batchQF">Batch Query</a></dd>
+						<dd class="searchList"><a class="small homeLink" href="<!--#include file='include/fewi_url.html'-->batch">Batch Query</a></dd>
 
 						<dt class="whatList">Download plain text files of all genes and markers in MGI.</dt>
 						<dd class="searchList"><a class="small homeLink" href="<!--#include file='include/ftp_url2.html'-->reports/index.html#marker">Genes & Markers Reports (plain text)</a></dd>
@@ -164,8 +164,12 @@
 
 		<ul>
 			<li>The genetic map positions for genes and markers in MGI have been updated using the data and methods described in Cox et al. (2009) [PubMed: 19535546].</li>
-<li>The revised standard genetic map described in Cox et al. incorporates over 10,000 single nucleotide polymorphisms (SNPs) using a set of 47 families of a heterogeneous mouse population comprising over 3500 meioses. </li><li>The revised map corrects errors in marker order in earlier consensus genetic maps for the laboratory mouse. </li> <li>The Cox map was integrated SSLP markers from other genetic maps and with physical maps of the mouse genome. </li> <li>Linear interpolation was used to translate mouse genome coordinates (NCBI Build 37) for genes and markers in MGI to sex-averaged cM locations.</li>  <li>Markers in MGI that did not have genome coordinates were not updated to new cM positions; however, the original mapping data for these markers can still be found in the mapping experiment detail pages.</li>
-</ul>
+			<li>The revised standard genetic map described in Cox et al. incorporates over 10,000 single nucleotide polymorphisms (SNPs) using a set of 47 families of a heterogeneous mouse population comprising over 3500 meioses. </li>
+			<li>The revised map corrects errors in marker order in earlier consensus genetic maps for the laboratory mouse. </li>
+			<li>The Cox map was integrated SSLP markers from other genetic maps and with physical maps of the mouse genome. </li>
+			<li>Linear interpolation was used to translate mouse genome coordinates (NCBI Build 37) for genes and markers in MGI to sex-averaged cM locations.</li>
+			<li>Markers in MGI that did not have genome coordinates were not updated to new cM positions; however, the original mapping data for these markers can still be found in the mapping experiment detail pages.</li>
+		</ul>
 
 Mapping data update summary
 			<table border="0" cellpadding="1" width="!">

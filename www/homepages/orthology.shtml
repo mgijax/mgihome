@@ -49,16 +49,22 @@
 				is in the term <dt>, and the link is in the definition <dd> -->
 				<div class="boxBG pad5">
 					<dl>
-					<dt class="whatList">Build a comparative map using the Linkage Map tool.</dt>
-						<dd class="searchList"><a href="<!--#include file='include/wi_url.html'-->searches/linkmap_form.shtml" class="small homeLink">Mouse Linkage Map with Orthologs</a></dd>
+					<!--<dt class="whatList">Build a comparative map using the Linkage Map tool.</dt>
+						<dd class="searchList"><a href="<!--#include file='include/fewi_url.html'-->linkmap" class="small homeLink">Mouse Linkage Map with Orthologs</a></dd>
 
 						<dt class="whatList">View the mouse comparative genome maps.</dt>
-						<dd class="searchList"><a href="<!--#include file='include/wi_url.html'-->reports/homologymap/mouse_human.shtml" class="small homeLink">Mouse-Human Orthology Map</a></dd>
-						<dd class="searchList"><a href="<!--#include file='include/wi_url.html'-->reports/homologymap/mouse_rat.shtml" class="small homeLink">Mouse-Rat Orthology Map</a></dd>
+						<dd class="searchList"><a href="<!--#include file='include/fewi_url.html'-->homologymap" class="small homeLink">Mouse-Human Orthology Map</a></dd>
+						<dd class="searchList"><a href="<!--#include file='include/fewi_url.html'-->homologymap" class="small homeLink">Mouse-Rat Orthology Map</a></dd>-->
 
 						<dt class="whatList">Download a complete set of rat, human, dog, or chimpanzee orthologs for mouse genes. Some sets also include associated
 						  sequences, phenotype characteristics, or human disease data.</dt>
-						<dd class="searchList"><a href="<!--#include file='include/ftp_url2.html'-->reports/index.html#orthology" class="small homeLink">Mammalian Orthology Reports (plain text)</a></dd>
+						<dd class="searchList"><a href="<!--#include file='include/ftp_url2.html'-->reports/index.html#orthology" class="small homeLink">Complete List of Mammalian Orthology Reports (plain text)</a></dd>
+						<dt class="whatList">Download a report of Human and Mouse Orthology sorted by mouse chromosome.</dt>
+						<dd class="searchList"><a href="<!--#include file='include/ftp_url2.html'-->reports/HMD_Human2.rpt"  class="small homeLink">Complete List of Human and Mouse Orthologs (plain text)</a></dd>
+						<dt class="whatList">Download a report of Human and Mouse Orthology with nucleotide and protein sequence IDs.</dt>
+						<dd class="searchList"><a href="<!--#include file='include/ftp_url2.html'-->reports/HMD_HumanSequence.rpt"  class="small homeLink">Complete List of Human and Mouse Orthologs with Sequence IDs (plain text)</a></dd>
+						<dt class="whatList">Download a report of Rat and Mouse Orthology sorted by mouse marker symbol.</dt>
+						<dd class="searchList"><a href="<!--#include file='include/ftp_url2.html'-->reports/HMD_Rat4.rpt"  class="small homeLink">Complete List of Mouse and Rat Orthologs (plain text)</a></dd>
 					</dl>
 				</div>
 			</div>
@@ -77,16 +83,17 @@
 				javascript:openFaqWindow("faqPage.shtml")'-->
 				<div class="boxBG pad5">
 					<dl class="boxList">
-						<dt>How do I...</dt>
-						<dd class="faqList">.. view the ortholog set for a mouse gene?
-						<a class="small homeLink" onClick="javascript:openFaqWindow('ORTH_set.shtml'); return false;"
+					<dt>How do I...</dt>
+					<dd class="faqList">.. view the ortholog set for a mouse gene?<a class="small homeLink" onClick="javascript:openFaqWindow('ORTH_set.shtml'); return false;"
 						href="<!--#include file='include/faq_url.html'-->ORTH_set.shtml">FAQ</a></dd>
-						<dd class="faqList">.. view a comparative map of mouse and human chromosomes?
+						<!--<dd class="faqList">.. view a comparative map of mouse and human chromosomes?
 						<a class="small homeLink" onClick="javascript:openFaqWindow('ORTH_map.shtml'); return false;"
-						href="<!--#include file='include/faq_url.html'-->ORTH_map.shtml">FAQ</a></dd>
-						<dd class="faqList">.. find the mouse ortholog of a human gene?
+						href="<!--#include file='include/faq_url.html'-->ORTH_map.shtml">FAQ</a></dd>-->
+					<dd class="faqList">.. find the mouse ortholog of a human gene?
 						<a class="small homeLink" onClick="javascript:openFaqWindow('ORTH_gene.shtml'); return false;"
 						href="<!--#include file='include/faq_url.html'-->ORTH_gene.shtml">FAQ</a></dd>
+					<dd class="faqList">.. download all mouse and human orthologs?<a class="small homeLink" onClick="javascript:openFaqWindow('ORTH_dload.shtml'); return false;"
+						href="<!--#include file='include/faq_url.html'-->ORTH_dload.shtml">FAQ</a></dd>
 					</dl>
 
 					<!-- link to all FAQs page -->
