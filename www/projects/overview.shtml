@@ -64,20 +64,9 @@
 <P>MGD provides links to relevant information in   
 <a href="../other/collab_and_acknow.shtml">external databases</A> wherever possible.</p>
 <p>
-<table>
-<style type="text/css">
-td { border: thin solid; 
-	vertical-align: baseline;
-	}
-tr { border: thin solid;
-	text-align: left; 
-	vertical-align: baseline;
-	}
-th { border: thin solid;
-	text-align: left;
-	}
-</style>
- <tr><th>Through...</th><th>MGD links to...</th></tr>
+<table class="bordered Table"> 
+
+<tr><th>Through...</th><th>MGD links to...</th></tr>
 <tr><td>Markers</td><td>DFCI, DoTS, EC, Ensembl, Entrez, InterPro, NCBI, PDB, UniGene, VEGA</td></tr>
 
 <tr><td>Phenotypes</td><td>On-line  Mendelian Inheritance in Man (OMIM), for human disease data.</td></tr>
@@ -150,19 +139,7 @@ Phenotypic allele <A HREF="<!--#include file='include/userhelp_url.html'-->ALLEL
 <li>The MGD Vocabulary Browsers currently available are: 
 <p>
    <blockquote>
-<table>
-<style type="text/css">
-td { border: thin solid; 
-	vertical-align: baseline;
-	}
-tr { border: thin solid;
-	text-align: left; 
-	vertical-align: baseline;
-	}
-th { border: thin solid;
-	text-align: left;
-	}
-</style>
+<table class="bordered Table"> 
    <tr><th>Browser Name</th><th>Use this browser to search for ...</th></tr>
    <tr><td><a href="<!--#include file='include/wi_url.html'-->searches/GO_form.shtml" target="_blank">GO (Gene Ontology) Browser</a> </td><td>GO term details and relationships.<br>Links to genes associated with your term or with any sub terms.</td></tr>
    <tr><td><a href="<!--#include file='include/wi_url.html'-->searches/anatdict_form.shtml" target="_blank">The Mouse Anatomical Dictionary Browser</a></td><td>Anatomical structures.<br>Links to associated expression results.</td></tr>
@@ -206,7 +183,7 @@ UCLA (BSB): (C57BL/6J x M. spretus)F1 x C57BL/6J
 <p>DNA Mapping Panel data may appear in tabular format, where each column represents a single offspring of the cross, and each row indicates, for each locus,  which allele is present in each of the offspring. The order of rows is determined by linkage on the chromosome, and the locus nearest the centromere appears at the top of the display. Centimorgan locations for loci in the cross are determined by the provider of the cross. -->
 <p>
 
-<h4><b>Graphical Map Displays</b?</h4><br>
+<h4><b>Graphical Map Displays</b></h4><br>
 
 <h4>Genetic Maps</h4>
 <p>Where available, gene/genome feature detail pages provide a link to a Detailed Genetic Map that shows all markers within one cM of the marker. Marker detail pages and Orthology results pages offer comparative maps showing all genes within 2 cM of the gene and the chromosome location for orthologous genes.</p>
@@ -228,6 +205,7 @@ MGD contains references for all data in the  database.  By early 2012, there wer
 <font size="-1"><a href="#top">Top</font></a>
 </font>
 
+</div> 
 <!--#include file='include/templateBodyStop.html'--> 
 </body>
 </html>
