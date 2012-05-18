@@ -64,13 +64,23 @@
 <P>MGD provides links to relevant information in   
 <a href="../other/collab_and_acknow.shtml">external databases</A> wherever possible.</p>
 <p>
-<table class="bordered Table"> 
+<table> 
+<style>
+table
+{
+border-collapse:collapse;
+}
+table,th, td
+{
+border: 1px solid black;
+}
+</style>
 
 <tr><th>Through...</th><th>MGD links to...</th></tr>
 <tr><td>Markers</td><td>DFCI, DoTS, EC, Ensembl, Entrez, InterPro, NCBI, PDB, UniGene, VEGA</td></tr>
 
 <tr><td>Phenotypes</td><td>On-line  Mendelian Inheritance in Man (OMIM), for human disease data.</td></tr>
-<tr><td>SNPs and sequence polymorphisms</td><td>dbSNP</td></tr>
+<tr><td>SNPs and sequence polymorphisms &nbsp;&nbsp;</td><td>dbSNP</td></tr>
 <tr><td>Orthologies</td><td>Ark-DB, BovMap, Entrez, HGNC, Homologene, NCBI, PigBase, SheepBase, Ensembl Gene Tree, Uniprot, VEGA, VISTA</td></tr>
 <tr><td>Sequences</td><td>GenBank, RefSeq, SWISS-PROT, TrEMBL, DFCI, DoTS, and NIA mouse gene indices</td></tr>
 <tr><td>Molecular probes and clones</td><td>GenBank, EMBL, DDBJ, IMAGE and RIKEN</td></tr>
@@ -139,10 +149,20 @@ Phenotypic allele <A HREF="<!--#include file='include/userhelp_url.html'-->ALLEL
 <li>The MGD Vocabulary Browsers currently available are: 
 <p>
    <blockquote>
-<table class="bordered Table"> 
+<table> 
+<style>
+table
+{
+border-collapse:collapse;
+}
+table,th, td
+{
+border: 1px solid black;
+}
+</style>
    <tr><th>Browser Name</th><th>Use this browser to search for ...</th></tr>
    <tr><td><a href="<!--#include file='include/wi_url.html'-->searches/GO_form.shtml" target="_blank">GO (Gene Ontology) Browser</a> </td><td>GO term details and relationships.<br>Links to genes associated with your term or with any sub terms.</td></tr>
-   <tr><td><a href="<!--#include file='include/wi_url.html'-->searches/anatdict_form.shtml" target="_blank">The Mouse Anatomical Dictionary Browser</a></td><td>Anatomical structures.<br>Links to associated expression results.</td></tr>
+   <tr><td><a href="<!--#include file='include/wi_url.html'-->searches/anatdict_form.shtml" target="_blank">The Mouse Anatomical Dictionary Browser &nbsp;</a></td><td>Anatomical structures.<br>Links to associated expression results.</td></tr>
    <tr><td><a href="<!--#include file='include/java_url.html'-->WIFetch?page=omimVocab&subset=A" target="_blank">Human Disease Vocabulary Browser</a></td><td>Human disease terms.<br>Links to detail pages containing genotypes annotated with these terms.<br>Links to Online Mendelian Inheritance in Man (OMIM) web pages.</td></tr>
    <tr><td><a href="<!--#include file='include/wi_url.html'-->searches/MP_form.shtml" target="_blank">Mammalian Phenotype Browser</a> </td><td>Mammalian phenotype terms.<br>Term details and relationships among terms.<br>Links to genotypes annotated with each term or any sub terms.</td></tr>
   </table>
