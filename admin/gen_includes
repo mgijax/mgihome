@@ -120,7 +120,7 @@ def createIncludeLink (includeName, fileLoc ) :
     os.system("ln -s " + fileLoc + " " + filePath)
 
 def main ():
-    #getCreDriver()
+    getCreDriver()
     captchaInclude()
     stringToFile (config['WI_URL'], '../www/include/wi_url.html')
     stringToFileNoNL (config['WI_URL'], '../www/include/wi_url2.html')
@@ -226,8 +226,6 @@ def main ():
 
     stringToFile(getDbDate(), '../www/include/stats_date.shtml')
 
-    # Temporarily include the link to the cre dropdowns.
-    createIncludeLink('driver_list.html', config['INSTALL_DIR'] + 'mgihome/temp/driver_list.html')
 
     #####----- Template Include Files --------#####
     createIncludeLink('templateHead.html', config['MGICONFIG_PATH'] + 'web/templateHead.html')
