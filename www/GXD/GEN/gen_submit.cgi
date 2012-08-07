@@ -70,7 +70,7 @@ Subject: %s
 
 gen_footer = ['<SMALL>',
 		'Send questions and comments to <a href="mailto:gen@jax.org">gen@jax.org</a><BR>',
-		'The Gene Expression Database (GXD) Project is supported by <a href="http://www.nih.gov/">NIH</a> grant <a href="http://crisp.cit.nih.gov/crisp/CRISP_LIB.getdoc?textkey=6363398&p_grant_num=5R01HD033745-05&p_query=&ticket=430962&p_audit_session_id=3171719&p_keywords=">HD062499</a><BR>',
+		'The Gene Expression Database (GXD) Project is supported by <a href="http://www.nih.gov/">NIH</a> grant <a href="http://projectreporter.nih.gov/project_info_description.cfm?aid=7763602&icde=6960199">HD062499</A><BR>',
 		'</SMALL>']
 
 
