@@ -15,51 +15,49 @@
  <li><a href="#terms">GEN terminology</a></li>
  <li><a href="#install">Downloading and installing GEN</a></li>
  <li><a href="#opengen">Opening GEN</a></li>
-  <li><a href="#select_main">Selecting an action from the Main menu</a></li>
-  <li><a href="#assay_and_worksheets">GEN assay sheets and worksheets</a></li>
-    <ul>
-    <li><a href="#open_worksheet">Using worksheets</a></li>
-       <li><a href="#enter_worksheet_data">Entering worksheet data</a></li>
-       <li><a href="#save_data">Saving worksheet data</a></li>
-     <li><a href="#define_fields">Defining worksheet fields</a></li>
-      <ul>
-       <li><a href="#genes">Genes (Genes)</a></li>
-       <li><a href="#probes">Probes (Probes)</a></li>
-      <li><a href="#probe_prep">Probe Preparation Methods (Probe Prep)</a></li>
-        <li><a href="#specimens">Immunohistochemistry and In Situ Specimens (Specimens)</a></li>
-        <li><a href="#specimen_prep">Immunohistochemistry and In Situ Specimen Prep (Specimen Prep)</a></li>
-        <li><a href="#antibodies">Antibodies (Antibodies)</a></li>
-        <li><a href="#antigens">Antigens (Antigens)</a></li>
-        <li><a href="#primary_detection">Primary Antibody Detection Methods (Primary Detection)</a></li>
-        <li><a href="#primer_pair">Primer Pairs (Primer Pair)</a></li>
-        <li><a href="#cDNA">cDNA Generation Methods (CDNA Generation)</a></li>
-        <li><a href="#pcr_condition">PCR Conditions (PCR Conditions)</a></li>
-        <li><a href="#northern">Northern Samples (Northern Samples)</a></li>
-    <li><a href="#western">Western Samples (Western Samples)</a></li>
-        <li><a href="#pcr_samples">RT-PCR Samples (PCR Samples)</a></li>
-      </ul>
-     <li><a href="#newfield">Creating new worksheet fields</a></li>
-       <li><a href="#use_assay">Using assay sheets</a></li>
+ <li><a href="#select_main">Selecting an action from the Main menu</a></li>
+ <li><a href="#assay_and_worksheets">GEN assay sheets and worksheets</a></li>
+  <ul>
+   <li><a href="#open_worksheet">Using worksheets</a></li>
+   <li><a href="#enter_worksheet_data">Entering worksheet data</a></li>
+   <li><a href="#save_data">Saving worksheet data</a></li>
+   <li><a href="#define_fields">Defining worksheet fields</a></li>
+  </ul>
+ <li><a href="#genes">Genes (Genes)</a></li>
+ <li><a href="#probes">Probes (Probes)</a></li>
+ <li><a href="#probe_prep">Probe Preparation Methods (Probe Prep)</a></li>
+ <li><a href="#specimens">Immunohistochemistry and In Situ Specimens (Specimens)</a></li>
+ <li><a href="#specimen_prep">Immunohistochemistry and In Situ Specimen Prep (Specimen Prep)</a></li>
+ <li><a href="#antibodies">Antibodies (Antibodies)</a></li>
+ <li><a href="#antigens">Antigens (Antigens)</a></li>
+ <li><a href="#primary_detection">Primary Antibody Detection Methods (Primary Detection)</a></li>
+ <li><a href="#primer_pair">Primer Pairs (Primer Pair)</a></li>
+ <li><a href="#cDNA">cDNA Generation Methods (CDNA Generation)</a></li>
+ <li><a href="#pcr_condition">PCR Conditions (PCR Conditions)</a></li>
+ <li><a href="#northern">Northern Samples (Northern Samples)</a></li>
+ <li><a href="#western">Western Samples (Western Samples)</a></li>
+ <li><a href="#pcr_samples">RT-PCR Samples (PCR Samples)</a></li>
+ <li><a href="#newfield">Creating new worksheet fields</a></li>
+  <ul>
+   <li><a href="#use_assay">Using assay sheets</a></li>
    <li><a href="#create_new_assay">Creating a new assay sheet</a></li>
-    <li><a href="#open_assay">Opening assay sheets</a></li>
-    <li><a href="#experimental">Adding experimental details to assay sheets</a></li>
-     <li><a href="#manage_window">Using a Manage window to enter experimental details</a></li>
-     <li><a href="#add_specimen">Adding specimens/samples</a></li>
+   <li><a href="#open_assay">Opening assay sheets</a></li>
+   <li><a href="#experimental">Adding experimental details to assay sheets</a></li>
+   <li><a href="#manage_window">Using a Manage window to enter experimental details</a></li>
+   <li><a href="#add_specimen">Adding specimens/samples</a></li>
    <li><a href="#store_additional">Storing additional experimental details</a></li>
    <li><a href="#store_results">Storing results</a></li>
-     <ul>
-     <li><a href="#insitu_immuno">Recording results for in situ and immunohistochemistry assays</a></li>
-     <li><a href="#blot">Recording results for blot assays</a></li>
-   </ul>
-   </ul>
-   <li><a href="#copy_new">Copying information into a new workbook</a></li>
+  </ul>
+ <li><a href="#insitu_immuno">Recording results for in situ and immunohistochemistry assays</a></li>
+ <li><a href="#blot">Recording results for blot assays</a></li>
+ <li><a href="#copy_new">Copying information into a new workbook</a></li>
  <li><a href="#prepare_for_submission">Determining standard nomenclature for mouse genes and alleles</a></li>
  <li><a href="#validate">Validation in the GEN</a></li>
-  <li><a href="#create_new_sub">Submitting data to GXD</a></li>
-<li><a href="#modify">Customizing GEN to your needs</a></li>
-<li><a href="#trouble">Troubleshooting the GEN</a></li>
-<li><a href="#get_help">Getting help</a></li>
-<li><a href="#tutorial">Getting started using the GEN (tutorial)</a></li>
+ <li><a href="#create_new_sub">Submitting data to GXD</a></li>
+ <li><a href="#modify">Customizing GEN to your needs</a></li>
+ <li><a href="#trouble">Troubleshooting the GEN</a></li>
+ <li><a href="#get_help">Getting help</a></li>
+ <li><a href="#tutorial">Getting started using the GEN (tutorial)</a></li>
 </ul>
 <hr>
 
@@ -629,7 +627,7 @@ You can now open the notebook.
 <table cellpadding=4 border=1>
 <tr><th align=left valign=top>Sample ID</th><td valign="top">Type a unique identifier for the sample.</td></tr>
 <tr><th align=left valign=top>Strain</th><td valign="top">Type the sample strain. If the sample is from mouse, see
-<a href="<!--#include file='include/fewi_url.html'-->festing">Inbred Strains of Mice and Rats</a> for a listing of approved strain names.</td></tr>
+<a href="<!--#include file='include/wi_url.html'-->external/festing/search_form.cgi">Inbred Strains of Mice and Rats</a> for a listing of approved strain names.</td></tr>
 <tr><th align=left valign=top>Mutations</th><td valign="top">Type the allele description or symbol for the mutated gene. For tips on determining the official allele symbol in mouse, see <a href="#prepare_for_submission">Determining standard nomenclature for mouse genes and alleles</a>.</td></tr>
 <tr><th align=left valign=top>Sex</th><td valign="top">Use the drop-down menu to specify the gender of the sample, if known, or to indicate pooled samples that include both sexes.</td></tr>
 <tr><th align=left valign=top>Theiler Stage</th><td valign="top">If the sample is from mouse, you can use the <a href="http://www.emouseatlas.org/emap/ema/theiler_stages/StageDefinition/stagedefinition.html">staging criteria of Theiler </a> to define its age.  If you do not know the Theiler stage, fill in the next two boxes. (You can leave them blank if you enter the Theiler stage).</td></tr>
