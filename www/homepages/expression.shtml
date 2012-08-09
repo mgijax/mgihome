@@ -110,21 +110,16 @@
 <div class="boxWide blueBorder marginBottom">
 	<div class="boxTitle">
 		<span class="left">Gene Expression News</span>
-		<span class="right small">August 16, 2011</span>
+		<span class="right small">August 31, 2012</span>
 	</div>
 	<div class="boxBG pad5 small">
     <ul>
 
-<li>We are pleased to announce that additional RNA in situ hybridization data from the GenePaint database are now available at accession number J:122989. The GenePaint data set in MGI now includes over 289,300 RNA in situ hybridization results at E14.5 for 2,958 genes, and 24,984 images.</li>
+<li>The <a href="<!--#include file='include/fewi_url.html'-->gxd">Gene Expression Data Query</a> form has been re-designed to add new search functions and make it easier to use. In addition to gene function (Gene Ontology) terms, you can now use phenotype or disease terms to define gene sets of interest in expression searches.  Auto fill lists for these categories and for anatomical structure searches make it easier to find the appropriate search terms. In addition to Theiler stage, age is now available as a search parameter.</li>
 <br>
-<li>We are pleased to announce the inclusion of RNA in situ hybridization and immunohistochemistry data from the GenitoUrinary Development Molecular Anatomy Project (GUDMAP) database. You can view the data set at accession number <a href="<!--#include file='include/fewi_url.html'-->reference/J:171409" class="GO">J:171409</a>. This set includes 92,569 results for: 3,123 genes; 3,561 assays (Immunohistochemistry and RNA in situ hybridizations for E10.5-E17.5 and postnatal specimens); and 8,730 image montages for ~25,000 individual images.</li> 
+<li>Search mechanisms and returned data summaries have been entirely re-designed.  The most noticeable improvement will be the speed of the return. Each search will now return a page with tabbed summaries for the assay results, assays, and genes matching your parameters. Most columns on these summaries are sortable.  New columns have been added to provide additional context. The figure links on the assay results tab provide direct access to images of data. Export features have been added to the assay results and genes tabs, allowing results to be downloaded in text or spreadsheet format. The genes list can be forwarded to the MGI batch query to allow you to search for additional information, such as the function, phenotype and/or disease terms associated with the genes of interest.</li> 
 <br>
-<li>GXD's gene expression data have been added, as a new dataset, to the MGI 
-implementation of <a href="http://biomart.informatics.jax.org/">BioMart</a>. The <a href="http://biomart.informatics.jax.org/biomart/martview/e716f991369f54567cb7dfbe2d71cfd0">GXD BioMart</a> provides rapid access to gene 
-expression results. Search returns can be customized, and the results easily 
-downloaded for analysis in the lab. In addition, the GXD BioMart can be 
-interconnected with other BioMarts to enable queries across the combined 
-resources. </li>
+<li>We are pleased to announce that additional RNA in situ hybridization data from the GenePaint database are available at accession number <a href="<!--#include file='include/fewi_url.html'-->reference/J:122989" class="GO">J:122989</a>. The GenePaint data set in MGI now includes nearly 290,000 RNA in situ hybridization results examining the expression of over 2,900 genes at E14.5. Nearly 25,000 images accompany these data.</li>
 <!--<br>
 <li>We are pleased to announce the inclusion of RNA in situ hybridization data from the Brain Gene Expression Map (BGEM) database.  You can view the data set at accession number 
 <a href="<!--#include file='include/fewi_url.html'-->reference/J:162220" class="GO">J:162220</a>. This set includes 53,496 results for: 1,451 genes; 1,474 assays (RNA in situ hybridizations at E11.5, E15.5, P7 and P42); and 16,112 images.  RNA in situ hybridization data from the Eurexpress project was also recently added to GXD. You can view the data set at accession number 
@@ -133,10 +128,8 @@ resources. </li>
 
 </ul>
 
-
-                       </div>
+ </div>
 </div>
-
 
 
 
