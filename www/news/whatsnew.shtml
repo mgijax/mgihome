@@ -18,15 +18,11 @@
         <table class="toc" width="100%">
 		<tr><td>
         <ul>
+        <li><a href="#august_2012">August 31, 2012</a> | 
         <li><a href="#june_2012">June 29, 2012</a> |
         <li><a href="#april_2012">April 11, 2012</a> |
-        <li><a href="#october_2011">October 13, 2011</a> |
-        <li><a href="#august_2011">August 16, 2011</a> |
-        <li><a href="#july_2011">July 7, 2011</a> |
-		<li><a href="#june_2011">June 24, 2011</a> |
-		<li><a href="#april_2011">April 13, 2011</a> |
 		
-		<li><A HREF="news_2010.shtml"><nobr>Archive: News and Announcements for 2010</a></li> 
+		<li><A HREF="news_2011.shtml"><nobr>Archive: News and Announcements for 2011</a></li> 
         </ul>
             	</td>
         	</tr>              
@@ -34,6 +30,23 @@
    </td></tr>
 
    <tr><td></td></tr>
+   
+   <tr><td><a name="august_2012"></a>
+
+      <table class="outline" width="100%">
+
+ 	<tr><td class="enhance">August, 31 2012</td></tr>
+ 	<tr><td>
+ 		<dl class="linkedList">
+		<dt>The <a href="<!--#include file='include/fewi_url.html'-->gxd">Gene Expression Data Query</a> form has been re-designed to add new search functions and make it easier to use. In addition to gene function (Gene Ontology) terms, you can now use phenotype or disease terms to define gene sets of interest in expression searches. Auto fill lists for these categories and for anatomical structure searches make it easier to find the appropriate search terms. In addition to Theiler stage, age is now available as a search parameter. 
+		</dt>
+	
+		<dt>Search mechanisms and returned data summaries have been entirely re-designed.  The most noticeable improvement will be the speed of the return. Each search will now return a page with tabbed summaries for the assay results, assays, and genes matching your parameters. Most columns on these summaries are sortable.  New columns have been added to provide additional context. The figure links on the assay results tab provide direct access to images of data. Export features have been added to the assay results and genes tabs, allowing results to be downloaded in text or spreadsheet format. The genes list can be forwarded to the MGI batch query to allow you to search for additional information, such as the function, phenotype and/or disease terms associated with the genes of interest. 
+		</dt>
+		</dl>
+	  </td>
+          </tr>
+	</table>
    
    <tr><td><a name="june_2012"></a>
 
@@ -79,120 +92,10 @@
 	  </td>
           </tr>
 	</table>
-   
-  <tr><td><a name="october_2011"></a>
-
-      <table class="outline" width="100%">
-
- 	<tr><td class="enhance">October 13, 2011</td></tr>
- 	<tr><td>
- 		<dl class="linkedList">
-		<dt>A new "Human ortholog" section is now featured on MGI marker detail pages. When available, this section contains the official human marker name and symbol, synonyms, genome coordinates and a link to information on human diseases associated with the marker in OMIM. For an example, see the <a href="<!--#include file='include/fewi_url.html'-->accession/MGI:109583" class="GO">Pten Gene Detail</a> page. 
-		</dt>
-	
-		<dt>The Quick Search field now supports searches with reference DOI IDs. These are stable, unique digital object identifiers with two parts, separated by a slash, such as 10.1016/j.ajpath.2011.03.014. MGI reference detail pages use these IDs to link to the online version of the publication. 
-		</dt>
-		</dl>
-	  </td>
-          </tr>
-	</table>
-  
-  <tr><td><a name="august_2011"></a>
-
-      <table class="outline" width="100%">
-
- 	<tr><td class="enhance">August 16, 2011</td></tr>
- 	<tr><td>
- 		<dl class="linkedList">
-		<dt>The Gene Expression Database (GXD) is pleased to announce that we  now include RNA in situ hybridization and immunohistochemistry data from the GenitoUrinary Development Molecular Anatomy Project (<a href="http://www.gudmap.org/index.html">GUDMAP</a>) database.  You can view the data set at accession number <a href="<!--#include file='include/fewi_url.html'-->reference/J:171409" class="GO">J:171409</a>. This set includes 92,569 results for:  
-			<ul>
-			<li>3,123 genes</li>
-			<li>3,561 assays (Immunohistochemistry and RNA in situ hybridizations for E10.5-E17.5 and postnatal specimens)</li>
-			<li>8,730 image montages for ~25,000 individual images</li>
-			</ul>
-		</dt>
-
-		<dt>Some useful links for querying subsets of data in GXD and MGI are: 
-			<ul>
-  			<li><A HREF="<!--#include file='include/java_url.html'-->WIFetch?page=expressionQF">Gene Expression Data Query Form</a></li>
-  			<li><A HREF="<!--#include file='include/java_url.html'-->WIFetch?page=markerQF">Genes and Markers Query Form</a></li>
-			</ul>
-		</dt>
-	
-		<dt>If you are interested in submitting your data to GXD, please see our guidelines for <a href="../GXD/GEN/gxd_submission_guidelines.shtml">submitting expression data to the Gene Expression Database</a> or contact <a href="mailto:GEN@jax.org">GEN@jax.org</a> for further information.
-		</dt>
-		</dl>
-	  </td>
-          </tr>
-	</table>
-   
-    <tr><td><a name="july_2011"></a>
-
-      <table class="outline" width="100%">
-
- 	<tr><td class="enhance">July 7, 2011</td></tr>
- 	<tr><td>
- 		<dl class="linkedList">
-		<dt>The MGI implementation of <a href="http://biomart.informatics.jax.org/">BioMart</a> now includes gene expression data from the Gene Expression Database (GXD). 
-			<ul>
-			<li>BioMart is a query-oriented data management and integration system that performs like a batch query. You can use the MGI BioMart to find expression data for a list of genes or for specific anatomical structures or Theiler Stages. You can manipulate the fields you see in your results and choose to return your results as HTML or comma or tab-separated values. </li>
-			<li>Batch searches for gene expression data are also possible through the <a href="<!--#include file='include/fewi_url.html'-->batch">MGI Batch Query Form</a>. </li>
-			</ul>
-		</td>
-		</tr>
-   		</table>
-   		
-   <tr><td><a name="june_2011"></a>
-
-      <table class="outline" width="100%">
-
- 	<tr><td class="enhance">June 24, 2011</td></tr>
- 	<tr><td>
- 		<dl class="linkedList">
-		<dt>The MGI database is available in 3 new ways: public access PostgreSQL server as well as database dumps for MySQL and PostgreSQL.
-			<ul>
-			<li>The MGI Public Ad Hoc PostgreSQL Server is available for running custom SQL queries against the MGI database. Account information can be found <a href="<!--#include file='include/wi_url.html'-->software.shtml#sql">here</a>. </li>
-			<li>MGI now offers MySQL and PostgreSQL database dumps via FTP. FTP site details and loading instructions are available <a href="<!--#include file='include/wi_url.html'-->software.shtml#data">here</a>.
-			</li>
-		</ul>
-		</td>
-		</tr>
-		</table>
-   <tr><td><a name="april_2011"></a>
-
-      <table class="outline" width="100%">
-
- 	<tr><td class="enhance">April 13, 2011</td></tr>
-
-	<tr><td>
-		<dl class="linkedList">
-		<dt>The Gene Expression Database (GXD) is pleased to announce that in addition to the recently added Eurexpress data (<a href="<!--#include file='include/fewi_url.html'-->reference/J:153498">J:153498</a>), we have now included RNA in situ hybridization data from the Brain Gene Expression Map (<a href="http://www.stjudebgem.org/web/mainPage/mainPage.php">BGEM</a>) database.  You can view the data set at accession number <a href="<!--#include file='include/fewi_url.html'-->reference/J:162220">J:162220</a>. This set includes 53,496 results for:
-			<ul>
-  			1,451 genes<br>
-  			1,474 assays (RNA in situ hybridizations at E11.5, E15.5, P7 and P42)<br>
-  			16,112 images
-			</ul>
-		</dt>
-
-
-		<dt>Some useful links for querying subsets of data in GXD and MGI are: 
-			<ul>
-  			<li><A HREF="<!--#include file='include/java_url.html'-->WIFetch?page=expressionQF">Gene Expression Data Query Form</a></li>
-  			<li><A HREF="<!--#include file='include/java_url.html'-->WIFetch?page=markerQF">Genes and Markers Query Form</a></li>
-			</ul>
-		</dt>
-	
-		<dt>If you are interested in submitting your data to GXD, please see our guidelines for <a href="../GXD/GEN/gxd_submission_guidelines.shtml">submitting expression data to the Gene Expression Database</a> or contact <a href="mailto:GEN@jax.org">GEN@jax.org</a> for further information.
-		</dt>
-		</dl>
-	  </td>
-          </tr>
-	</table>
+    
 </td></tr>
-
   
 </div> 
-
 
 <!--#include file='include/templateBodyStop.html'--> 
 </body>
