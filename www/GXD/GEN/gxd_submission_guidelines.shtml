@@ -7,7 +7,14 @@
  <span class="titleBarMainTitle">Submitting expression data to the Gene Expression Database (GXD)</span>
 </div> <!--titleBar-->
 
-<h3>Table of Contents</h3>
+<style type="text/css">
+h3.test1{ font-style: bold 
+	font-size: 1.2em }
+h4.test2{ font-style: bold
+	font-size: 1.1em }
+</style>
+
+<H3 class="test1">Table of Contents</h3>
    <P><UL>
     <A HREF="#why">Why should I submit data?</A><BR>
 
@@ -28,15 +35,15 @@
         </UL>
         </P>
 
-<H3><A NAME="why"></A>Why should I submit data?</H3>
+<H3 class="test1"><A NAME="why"></A>Why should I submit data?</H3>
 <P>Electronic submission both increases the exposure of your work and the amount of data available to the scientific community.  Your data will be integrated with many other data and made widely available for basic and complex database searches, adding to its value and increasing its exposure.  Electronic submission also allows you to share with the scientific community unpublished data, such as data that you were unable to include in a journal article due to space limitations.  GXD is designed to be a resource for the scientific community.  Its value is directly proportional to the amount of data it contains.  By increasing the amount of data in GXD, you can help increase its utility for yourself and others. (More information about GXD and its functionality can be found
 <a href="../aboutGXD.shtml">here</a>).</P>
 
 
-<H3><A NAME="what_type"></A>What types of data can I submit? </H3>
+<H3 class="test1"><A NAME="what_type"></A>What types of data can I submit? </H3>
 <P>GXD currently stores data obtained using RNA in situ hybridization, immunohistochemistry, Northern and Western blots, RT-PCR, RNase protection, and Nuclease S1, as well as cDNA source data. GXD's focus is on endogenous gene expression in mouse strains and mutants, but we also store in situ reporter studies from knock-in experiments.</P>
 
-<H3><A NAME="how_can"></A>How can I submit the data?</H3>
+<H3 class="test1"><A NAME="how_can"></A>How can I submit the data?</H3>
 <P>Data can be electronically submitted to GXD by the following methods:</P>
 <UL>
   <LI>Via the Gene Expression Notebook (GEN).  The GEN is a modified Excel spreadsheet.  You can use it to organize and store expression data in your laboratory as well as to submit data to GXD. The GEN and a detailed user guide are available from the <A HREF="./index.shtml">Gene Expression Notebook Resource Page</A>.</LI><br>
@@ -47,7 +54,7 @@
 </UL>
 
 
-<H3><A NAME="what_info"></A>What information should a data submission contain?</H3>
+<H3 class="test1"><A NAME="what_info"></A>What information should a data submission contain?</H3>
 <P>If you use the Gene Expression Notebook, you will be provided with a template that specifies the required information and facilitates data entry via keyword selection lists and other facilities.</P>
 
 <P>If you use other methods of electronic submission, you can send the data in a format convenient to you as long as the following basic requirements are met:
@@ -58,12 +65,12 @@
 <P>Detailed below is a checklist of information that should be included in a complete data submission.  Additional information can be included at the author's discretion.</p>
 
 
-<H3><A NAME="gene_name"></A>Gene Name/Symbol</h3>
+<H3 class="test1"><A NAME="gene_name"></A>Gene Name/Symbol</h3>
 <P>Name or Symbol of the gene whose expression was analyzed.</P>
 
-<H3><A NAME="probe"></A>Probe Information</H3>
+<H3 class="test1"><A NAME="probe"></A>Probe Information</H3>
 
-<H4><I>a.  Nucleotide probes</I></H4>
+<H4 class="test2"><I>a.  Nucleotide probes</I></H4>
 <table class="outline">
 <style>
 table
@@ -82,7 +89,7 @@ border: 1px solid black;
 </TABLE>
 
 
-<h4><I>b.  PCR primers</I></h4>
+<H4 class="test2"><I>b.  PCR primers</I></h4>
 <table class="outline">
 <style>
 table
@@ -98,7 +105,7 @@ border: 1px solid black;
 </table>
 
 
-<H4><I>c.  Antibody probes</I></H4>
+<H4 class="test2"><I>c.  Antibody probes</I></H4>
 <table class="outline">
 <style>
 table
@@ -117,11 +124,11 @@ border: 1px solid black;
 <TR><TH align="left" VALIGN="top">Primary antibody detection method:</TH><TD VALIGN="top">Information on how the primary antibody was detected, such as type of secondary antibody used, staining/labeling of primary or secondary antibody, etc.</TD></TR>
 </table>
 
-<h3><A NAME="assay"></A>Assay Conditions</h3>
+<H3 class="test1"><A NAME="assay"></A>Assay Conditions</h3>
 <P>Please supply your assay conditions in sufficient detail to allow others to interpret and replicate your experiments. If you do not provide such information in an accompanying publication, please include it here.</P>
 
 
-<h4><A NAME="specimen"></A>Specimen Information</h4>
+<H4 class="test2"><A NAME="specimen"></A>Specimen Information</h4>
 <table class="outline">
 <style>
 table
@@ -149,9 +156,9 @@ border: 1px solid black;
 </table>
 
 
-<h3><A NAME="experiment"></A>Experimental Results</h3>
+<H3 class="test1"><A NAME="experiment"></A>Experimental Results</h3>
 
-<h4>Images</h4>
+<H4 class="test2">Images</h4>
 <P>The preferred format is JPEG, although you can use most other formats (TIFF, GIF, PIC) as well.  Saving images at a resolution of 72 pixels/inch provides satisfactory results;  in addition, for Photoshop images, maximum quality (Image Option setting 10-12) is the best choice. </P>
 <b>Description of Expression Results</b><br>
 <p>When coding your expression data, we will rely on your descriptions of the assay results.  We will not interpret your staining patterns, bands, etc.  Therefore, please describe the expression results obtained in each image. This can be done in the form of a conventional figure legend. Or you can provide the information in tabular form by specifying the anatomical structures examined, the level of expression seen in those structures (e.g. present, absent, weak, strong), and additional descriptions of the staining that you consider to be valuable (for example, staining was seen in the most anterior portion of the structure). If your description refers to several images, you must clearly indicate which expression results are shown in which images.</p>
@@ -160,15 +167,15 @@ border: 1px solid black;
 
 
 </P>
-<H3><A NAME="if_your"></A>If your submission is not accompanied by a publication:</H3>
+<H3 class="test1"><A NAME="if_your"></A>If your submission is not accompanied by a publication:</H3>
 <P>You should provide a listing of authors and their institutions that you want associated with the submission.  It would also be helpful if you provided a short abstract that summarizes the data.  It should include information that is important for the interpretation of your experiment such as information that would be included in a publication's materials and methods section.  An example currently in our database is <A HREF="<!--#include file="include/fewi_url.html"-->reference/J:46439">J:46439</A>.
 </P>
 
-<H3><A NAME="what_happens"></A>What happens upon data submission?</H3>
+<H3 class="test1"><A NAME="what_happens"></A>What happens upon data submission?</H3>
 <P>We will convert your data into standardized formats.  We will contact you if we have questions. We will provide you with an accession number so that you can cite the submission in pertinent publications. You will be able to check and provide comments on the final entries. If the submission is in conjunction with a publication, we keep your data confidential until the paper is published unless you authorize an earlier release.
 </P>
 
-<H3><A NAME="emage"></A>Our collaboration with EMAGE</H3>
+<H3 class="test1"><A NAME="emage"></A>Our collaboration with EMAGE</H3>
 <P>GXD makes images from RNA <I>in situ</I> hybridization experiments, together with all pertinent annotations, available to the Edinburgh 3D Mouse Atlas and Gene Expression (EMAGE) Database for spatial mapping.  EMAGE collects data from wild-type embryos at selected developmental stages. The long-term goal of our collaboration is to integrate GXD and EMAGE into the
 <a href="<!--#include file='include/mgihome_url.html'-->GXD/gxdgen.shtml">Mouse Gene Expression Information Resource</a> to provide the scientific community with a resource that will fully combine relational (standardized text-based) and graphical methods to display and analyze gene expression information.
 
