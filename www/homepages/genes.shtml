@@ -158,29 +158,13 @@
 <div class="boxWide blueBorder marginBottom">
 	<div class="boxTitle">
 		<span class="left">Genes, Genome Features & Maps News</span>
-		<span class="right small"> July 22, 2010</span>
+		<span class="right small"> December 6, 2012</span>
 	</div>
-	<div class="boxBG pad5 small">Genetic map position revision in MGI
-
-		<ul>
-			<li>The genetic map positions for genes and markers in MGI have been updated using the data and methods described in Cox et al. (2009) [PubMed: 19535546].</li>
-			<li>The revised standard genetic map described in Cox et al. incorporates over 10,000 single nucleotide polymorphisms (SNPs) using a set of 47 families of a heterogeneous mouse population comprising over 3500 meioses. </li>
-			<li>The revised map corrects errors in marker order in earlier consensus genetic maps for the laboratory mouse. </li>
-			<li>The Cox map was integrated SSLP markers from other genetic maps and with physical maps of the mouse genome. </li>
-			<li>Linear interpolation was used to translate mouse genome coordinates (NCBI Build 37) for genes and markers in MGI to sex-averaged cM locations.</li>
-			<li>Markers in MGI that did not have genome coordinates were not updated to new cM positions; however, the original mapping data for these markers can still be found in the mapping experiment detail pages.</li>
-		</ul>
-
-Mapping data update summary
-			<table border="0" cellpadding="1" width="!">
-			
-				<tr><td valign="top"><font size="-2">Genes and markers in MGI with interpolated cM locations:</font>
-</td><td valign="top"><font size="-2">~72,000</font> </td></tr>
-				<tr><td valign="top"><font size="-2">Genes and markers in MGI that gained a cM position following interpolation:</font></td><td valign="top"><font size="-2">~35,000</font></td></tr>
-				<tr><td valign="top"><font size="-2">Genes and markers in MGI without an interpolated cM position (i.e. genetic map location = syntenic):</font></td><td><font size="-2">~11,600</font></td></tr>
-			</table>
-		
-	     </div>
+	<div class="boxBG pad5 small"><p>MGI mouse genome coordinates are now updated to NCBI Mouse Build 38 (GRCm38.p1). For <i>Mus musculus</i> Build GRCm38.p1 statistics, see <a href="http://www.ncbi.nlm.nih.gov/projects/genome/assembly/grc/mouse/data/index.shtml">The Genome Reference Consortium</a> web site.
+	</p>
+	<p>Temporarily, there is a discrepancy between genome coordinates for mouse SNPs, which are derived from an earlier NCBI build of the mouse genome, and genes and markers, whose coordinates are derived from the current build. (see <a href="<!--#include file='include/userhelp_url.html'-->SNP_discrepancy_help.shtml">details</a>).
+	</p>
+	</div>
 </div>
 
 
