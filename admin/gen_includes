@@ -72,7 +72,7 @@ def getCreDriver ():
     results = db.sql('''
 	select distinct driverNote, lower(driverNote) as lowNote 
 	from ALL_Cre_Cache 
-	order by driverNote desc
+	order by driverNote
 	''', 'auto')
     for r in results:
 	if not driverDict.has_key(r['lowNote']):
