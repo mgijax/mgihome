@@ -196,7 +196,7 @@ def main ():
             '../www/include/theilerbook_url.html')    
     stringToFile (config['MGIWS_URL'], \
             '../www/include/mgiws_url.html')    
-    stringToFile (config['WEBSHARE_URL'], \
+    stringToFileNoNL (config['WEBSHARE_URL'], \
             '../www/include/webshare_url.html')      
     stringToFile (webshare_lib.webshareLookup('mgi_logo'), \
         '../www/include/mgi_logo.html')
