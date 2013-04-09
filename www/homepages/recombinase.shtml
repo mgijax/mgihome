@@ -31,8 +31,11 @@
   * html .ui-autocomplete {
     height: 300px;
   }
- .ui-menu .ui-menu-item span {
+ .ui-menu .ui-menu-item {
 	padding-left:0.4em;
+ }
+ .ui-menu .ui-menu-item a {
+	padding:0px;
  }
 </style>
 <script>
