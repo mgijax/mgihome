@@ -152,6 +152,16 @@ do
    
 	cd $TOP
 done
+
+# support new-style link to homology.shtml minihome page, by temporarily
+# linking to old orthology.shtml version
+cd www/homepages/
+if [ -h homology.shtml ]; then
+	rm homology.shtml
+fi
+ln -s orthology.shtml homology.shtml
+cd $TOP
+
 # Check if the GEN.xls file is missing from $GEN_XLS_PATH
 cd www/GXD/GEN
    if test ! -r GEN.xls

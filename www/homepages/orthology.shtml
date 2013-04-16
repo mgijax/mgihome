@@ -1,6 +1,6 @@
 <!--#include file='include/templateHead.html'-->
 
-  <title>MGI-Mouse Mammalian Orthology</title>
+<title>MGI-Mouse Vertebrate Homology</title>
   <meta name="description" content="MGI contains orthology information for mouse, human, rat, chimp, dog, and 12 other mammalian species." />
   <meta name="keywords" content="MGI, mgi, mice, mouse, murine, mus musculus, genes, genome, genomic, orthologs, orthologous, orthologies, homology, homologs, homologous, homologies, protein superfamily, protein superfamilies, linkage, comparative map, human orthologs, rat orthologs, chimp orthologs, dog orthologs, reference genome project" />
   
@@ -18,12 +18,12 @@
 	<tr>
 		<td width="80%" align="center" valign="middle">
 			<span class="homePageTitle">
-				Mammalian Orthology
+				Vertebrate Homology
 			</span>
 			<br>
 			<span class="homePageSubTitle">
-				 MGI contains orthology information for mouse, human, rat, chimp,
-				 dog, and 12 other mammalian species.
+				 MGI contains homology information for mouse, human, rat, chimp,
+				 dog and other species.
 			</span>
 		</td>
 		<td align="center">
@@ -56,15 +56,14 @@
 						<dd class="searchList"><a href="<!--#include file='include/fewi_url.html'-->homologymap" class="small homeLink">Mouse-Human Orthology Map</a></dd>
 						<dd class="searchList"><a href="<!--#include file='include/fewi_url.html'-->homologymap" class="small homeLink">Mouse-Rat Orthology Map</a></dd>-->
 
-						<dt class="whatList">Download a complete set of rat, human, dog, or chimpanzee orthologs for mouse genes. Some sets also include associated
-						  sequences, phenotype characteristics, or human disease data.</dt>
-						<dd class="searchList"><a href="<!--#include file='include/ftp_url2.html'-->reports/index.html#orthology" class="small homeLink">Complete List of Mammalian Orthology Reports (plain text)</a></dd>
-						<dt class="whatList">Download a report of Human and Mouse Orthology sorted by mouse chromosome.</dt>
-						<dd class="searchList"><a href="<!--#include file='include/ftp_url2.html'-->reports/HMD_Human2.rpt"  class="small homeLink">Complete List of Human and Mouse Orthologs (plain text)</a></dd>
-						<dt class="whatList">Download a report of Human and Mouse Orthology with nucleotide and protein sequence IDs.</dt>
-						<dd class="searchList"><a href="<!--#include file='include/ftp_url2.html'-->reports/HMD_HumanSequence.rpt"  class="small homeLink">Complete List of Human and Mouse Orthologs with Sequence IDs (plain text)</a></dd>
-						<dt class="whatList">Download a report of Rat and Mouse Orthology sorted by mouse marker symbol.</dt>
-						<dd class="searchList"><a href="<!--#include file='include/ftp_url2.html'-->reports/HMD_Rat4.rpt"  class="small homeLink">Complete List of Mouse and Rat Orthologs (plain text)</a></dd>
+						<dt class="whatList">Download a complete set of human, chimpanzee, rhesus macaque, dog, cattle, rat, chicken and zebrafish Homology Classes for mouse genes. The report includes Chromosome and EntrezGene and OMIM IDs.</dt>
+						<dd class="searchList"><a href="<!--#include file='include/ftp_url2.html'-->reports/HOM_AllOrganism.rpt" class="small homeLink">Complete List of Vertebrate Homology Classes (plain text)</a></dd>
+						<dt class="whatList">Download a report of Human and Mouse Homology Classes sorted by HomoloGene ID. The report includes associated nucleotide and protein sequences, Chromosome and OMIM IDs.</dt>
+						<dd class="searchList"><a href="<!--#include file='include/ftp_url2.html'-->reports/HOM_MouseHumanSequence.rpt"  class="small homeLink">Complete List of Human and Mouse Homologs (plain text)</a></dd>
+						<dt class="whatList">Download a report of Human and Mouse Homology with phenotype annotations.</dt>
+						<dd class="searchList"><a href="<!--#include file='include/ftp_url2.html'-->reports/HMD_HumanPhenotype.rpt"  class="small homeLink">Complete List of Human and Mouse Homologs with phenotype annotations (plain text)</a></dd>
+						<!--<dt class="whatList">Download a report of Rat and Mouse Homology sorted by mouse marker symbol.</dt>
+						<dd class="searchList"><a href="<!--#include file='include/ftp_url2.html'-->reports/HMD_Rat4.rpt"  class="small homeLink">Complete List of Mouse and Rat Homologs (plain text)</a></dd>-->
 					</dl>
 				</div>
 			</div>
@@ -89,10 +88,10 @@
 						<!--<dd class="faqList">.. view a comparative map of mouse and human chromosomes?
 						<a class="small homeLink" onClick="javascript:openFaqWindow('ORTH_map.shtml'); return false;"
 						href="<!--#include file='include/faq_url.html'-->ORTH_map.shtml">FAQ</a></dd>-->
-					<dd class="faqList">.. find the mouse ortholog of a human gene?
+					<dd class="faqList">.. find the mouse homolog of a human gene?
 						<a class="small homeLink" onClick="javascript:openFaqWindow('ORTH_gene.shtml'); return false;"
 						href="<!--#include file='include/faq_url.html'-->ORTH_gene.shtml">FAQ</a></dd>
-					<dd class="faqList">.. download all mouse and human orthologs?<a class="small homeLink" onClick="javascript:openFaqWindow('ORTH_dload.shtml'); return false;"
+					<dd class="faqList">.. download all mouse and human homologs?<a class="small homeLink" onClick="javascript:openFaqWindow('ORTH_dload.shtml'); return false;"
 						href="<!--#include file='include/faq_url.html'-->ORTH_dload.shtml">FAQ</a></dd>
 					</dl>
 
@@ -106,7 +105,7 @@
 		<td width="50%" valign="top">
 			<div class="blueBorder leftCenterMargin statList">
 				<div class="boxTitle">
-					<div class="left">Mammalian Orthology Includes</div>
+					<div class="left">Vertebrate Homology Includes</div>
 					<div class="right small"><!--#include file='include/stats_date.shtml'--></div>
 				</div>
 				<div class="boxBG pad5 small">
@@ -124,19 +123,15 @@
 	<div class="boxTitle">
 
 		<!-- Box-title goes here -->
-		<div class="left">Mammalian Orthology News</div>
-		<div class="right small">21 Feb 2008</div>
+		<div class="left">Vertebrate Homology News</div>
+		<div class="right small">16 May 2013</div>
 
 	</div>
 	<!-- News content -->
 	<div class="boxBG pad5 small">
 		<ul>
-			<li>MGI comparative annotation is collaborating with the GO Consortium
-			to develop a community ortholog set that will be used by the GO
-			Reference Genome Project to guide community annotation projects for
-			related genes. Each of 12 model organism informatics groups have
-			contributed a FASTA file of reference protein sequences for comparative
-			set analysis and clustering.</li>
+			<li>MGI is pleased to announce a new implementation of comparative genome data. Previously we used the classic one-to-one orthology relationship between a mouse gene and that of another mammalian species. MGI now uses homology class data from HomoloGene and can support a "many-to-many" relationship between mouse genes and their vertebrate homologs. Chicken, zebrafish and rhesus macaque homologs are newly included in this release as well as human, chimpanzee, dog, cattle and rat. </li>
+			<li>Vertebrate Homology Class pages include EntrezGene links, Genetic Location and sequence information. See this <a href="<!--#include file='include/fewi_url.html'-->homology/36030">complement component</a> Vertebrate Homology Class page for an example.</li>
 		</ul>
 	</div>
 </div>
@@ -152,8 +147,8 @@
 	<!-- This is where the tabbed section is defined. -->
 	<ul id="orthotab" class="shadetabs">
 		<!-- This is where the tabbed section is defined. -->
-		<li><a href="<!--#include file='include/mgihome_url.html'-->homepages/tabContents/Ortho_About.shtml" rel="ajaxcontentarea">About MGI Orthology</a></li>
-		<li><a href="<!--#include file='include/mgihome_url.html'-->homepages/tabContents/Ortho_Reports.shtml" rel="ajaxcontentarea">Orthology Reports</a></li>
+		<li><a href="<!--#include file='include/mgihome_url.html'-->homepages/tabContents/Ortho_About.shtml" rel="ajaxcontentarea">About MGI Homology</a></li>
+		<li><a href="<!--#include file='include/mgihome_url.html'-->homepages/tabContents/Ortho_Reports.shtml" rel="ajaxcontentarea">Homology Reports</a></li>
 		<li class="selected"><a href="<!--#include file='include/mgihome_url.html'-->homepages/tabContents/Ortho_Help.shtml" rel="ajaxcontentarea">Help Documents</a></li>
 		<li><a href="<!--#include file='include/mgihome_url.html'-->homepages/tabContents/Ortho_Resources.shtml" rel="ajaxcontentarea">Other Links</a></li>
 
@@ -176,7 +171,7 @@
 
 <script type="text/javascript" src="<!--#include file="include/javascript.html"-->">">
     /***********************************************
-    * Ajax Tabs Content script- Â© Dynamic Drive DHTML code library (www.dynamicdrive.com)
+    * Ajax Tabs Content script- © Dynamic Drive DHTML code library (www.dynamicdrive.com)
     * This notice MUST stay intact for legal use
     * Visit Dynamic Drive at http://www.dynamicdrive.com/ for full source code
     ***********************************************/

@@ -24,7 +24,7 @@
     <a href="#gam">Genes and Markers</a><br>
     <a href="#alleles">Phenotypic Alleles</a><br>
     <a href="#mpac">Molecular Probes and Clones</a><br>
-    <a href="#morth">Mammalian Orthology</a><br>
+    <a href="#morth">Vertebrate Homology</a><br>
     <a href="#sequence">Sequence Data</a><br>
     <a href="#snp">SNP Data</a><br>
     <a href="#vobro">Vocabulary Browsers</a><br>
@@ -53,7 +53,7 @@
 <li>Human disease data (OMIM)</li>
 <li>Polymorphic loci  related  to  specified strains</li>
 <li>SNPs and other sequence polymorphisms </li>
-<li>Mammalian orthology data</li>
+<li>Vertebrate homology data</li>
 <li>Sequence data</li>
 <li>Molecular probes and clones (probes, clones, primers and YACs)</li>
 <li>Genetic and physical mapping data</li>
@@ -71,10 +71,9 @@
 
 <tr><th>Through...</th><th>MGD links to...</th></tr>
 <tr><td>Markers</td><td>DFCI, DoTS, EC, Ensembl, Entrez, InterPro, NCBI, PDB, UniGene, VEGA</td></tr>
-
-<tr><td>Phenotypes</td><td>On-line  Mendelian Inheritance in Man (OMIM), for human disease data.</td></tr>
+<tr><td>Phenotypes</td><td>On-line  Mendelian Inheritance in Man (OMIM) for human disease data.</td></tr>
 <tr><td>SNPs and sequence polymorphisms &nbsp;&nbsp;</td><td>dbSNP</td></tr>
-<tr><td>Orthologies</td><td>Ark-DB, BovMap, Entrez, HGNC, Homologene, NCBI, PigBase, SheepBase, Ensembl Gene Tree, Uniprot, VEGA, VISTA</td></tr>
+<tr><td>Homologies</td><td><!--Ark-DB, BovMap,--> Entrez, HGNC, HomoloGene, NCBI, <!--PigBase, SheepBase,--> Ensembl Gene Tree, Uniprot, VEGA, VISTA</td></tr>
 <tr><td>Sequences</td><td>GenBank, RefSeq, SWISS-PROT, TrEMBL, DFCI, DoTS, and NIA mouse gene indices</td></tr>
 <tr><td>Molecular probes and clones</td><td>GenBank, EMBL, DDBJ, IMAGE and RIKEN</td></tr>
 <tr><td>References</td><td>PubMed</td></tr>
@@ -91,7 +90,7 @@ Gene Ontology (GO) terms, MGD  accession IDs and supporting references.
 See <a href="<!--#include file='include/userhelp_url.html'-->GENE_summary_help.shtml" target="_blank">Interpreting a Genes and Markers Summary</a> and
 <a href="<!--#include file='include/userhelp_url.html'-->GENE_detail_help.shtml" target="_blank">Interpreting Gene Details</a> for more information about the content of the display of a marker record as it appears in the query results.
 </p>
-<P>Information on <B>alleles</B>, formerly imbedded in phenotype  descriptions, is stored as a separate data set (see <a href="#alleles">Phenotypic Alleles</a>). Links to alleles are provided in gene detail records. In
+<P>Information on <B>alleles</B>, formerly embedded in phenotype  descriptions, is stored as a separate data set (see <a href="#alleles">Phenotypic Alleles</a>). Links to alleles are provided in gene detail records. In
 addition, there is an <A HREF="<!--#include file='include/wi_url.html'-->searches/allele_form.shtml">Phenotypes, Alleles, and Disease Models Query Form</A> for  direct  queries against the allele data  set. See <A HREF="<!--#include file='include/userhelp_url.html'-->ALLELE_help.shtml#detail" target="_blank">Details</A> for the content of an allele record as displayed in query results.</p>
 </p>
 <font size="-1"><a href="#top">Top</font></a>
@@ -99,7 +98,7 @@ addition, there is an <A HREF="<!--#include file='include/wi_url.html'-->searche
  <P>MGD contains information on mutant alleles, transgenes, QTLs, strain characteristics, phenotype vocabularies, human disease models, and comparative phenotypes. Integrated access to phenotype and disease model data is accessible via <!--semantically consistent search methods,--> four query forms (<A HREF="<!--#include file='include/java_url.html'-->WIFetch?page=markerQF" target="_blank">Genes and Markers</a>,
 <A HREF="<!--#include file='include/wi_url.html'-->searches/allele_form.shtml" target="_blank">Phenotypes and Alleles</a>,
 <A HREF="<!--#include file='include/fewi_url.html'-->batch" target="_blank">Batch Query</a> and <a href="http://biomart.informatics.jax.org/" target="_blank">BioMart</a>). These forms provide genetic, phenotypic, and computational approaches to displaying phenotypic variation sources (single-gene, genetic mutations, QTLs, strains), as well as data on human disease correlation, and mouse models. The <A HREF="<!--#include file='include/java_url.html'-->WIFetch?page=omimVocab&subset=A" target="_blank">Human Disease Vocabulary Browser</a> enables you to browse and search diseases, conditions, and syndromes directly.
-Phenotypic allele <A HREF="<!--#include file='include/userhelp_url.html'-->ALLELE_summary_help.shtml" target="_blank">summary</A> and <A HREF="<!--#include file='include/userhelp_url.html'-->ALLELE_detail_help.shtml" target="_blank">detail</A> reports provide detailed  information about the content of phenotype records including observed phenotypes in mouse and genetic background. The Human Disease and Mouse Model Detail page lists orthologous mouse and human markers where mutations in one or both species have been associated with phenotypes characteristic of this disease as well as any mouse models.</p>
+Phenotypic allele <A HREF="<!--#include file='include/userhelp_url.html'-->ALLELE_summary_help.shtml" target="_blank">summary</A> and <A HREF="<!--#include file='include/userhelp_url.html'-->ALLELE_detail_help.shtml" target="_blank">detail</A> reports provide detailed  information about the content of phenotype records including observed phenotypes in mouse and genetic background. The Human Disease and Mouse Model Detail page lists homologous mouse and human markers where mutations in one or both species have been associated with phenotypes characteristic of this disease as well as any mouse models.</p>
 </p>
 <font size="-1"><a href="#top">Top</font></a>
 <h3><A NAME="mpac"></A>Molecular Probes and Clones</h3>
@@ -108,12 +107,12 @@ Phenotypic allele <A HREF="<!--#include file='include/userhelp_url.html'-->ALLEL
 
 <P>Information on genetic polymorphisms is extracted from probe/clone records in MGD.
 
-<h3><A NAME="morth"></A>Mammalian Orthology</h3>
-<p>MGD contains orthology information for mouse, human, and other mammalian organisms.
+<h3><A NAME="morth"></A>Vertebrate Homology</h3>
+<p>MGD contains homology information for mouse, human, rat, cattle and other vertebrate organisms.
 </p>
-<p>Most of the information for orthologies is now downloaded from <a href="http://www.ncbi.nlm.nih.gov/homologene" target="_blank">HomoloGene</a>. Some of the information for orthologies is extracted from the published scientific literature. In general, these papers explicitly report orthology relationships and MGD reflects that published information.
+<p>MGI provides a curated set of vertebrate homologs for the research community. MGI focuses on integration of homology sets from sequenced vertebrate genomes (e.g., human, rat, dog, chimp).  MGI loads sequence based vertebrate homology assertions from NCBI <a href="http://www.ncbi.nlm.nih.gov/homologene" target="_blank">HomoloGene</a>. HomoloGene programmatically detects homologs among the genome features of several completely sequenced eukaryotic genomes. In addition, we continue to work with  the research community to carefully curate gene family sets, usually at the  instigation of the research community. </p>
 
-<p>Orthologous genes associated with a mouse gene or genome feature are available from via links from the Mammalian Homology section a Detail page for a gene/genome feature. Orthologs identified in MGI's curated references are available via a link from the Detail page for a reference. Performing a Quick Search using a non-mouse gene or sequence accession ID returns a link to the Orthology Summary page.</p>
+<p>Homologous genes associated with a mouse gene or genome feature are available from via links from the Vertebrate Homology section a Detail page for a gene/genome feature. <!--Orthologs identified in MGI's curated references are available via a link from the Detail page for a reference. --> Performing a Quick Search using a non-mouse gene or sequence accession ID returns a link to the Vertebrate Homology Class page.</p>
 
 <font size="-1"><a href="#top">Top</font></a>
 </font>
@@ -189,7 +188,7 @@ UCLA (BSB): (C57BL/6J x M. spretus)F1 x C57BL/6J
 <h4><b>Graphical Map Displays</b></h4><br>
 
 <h4>Genetic Maps</h4>
-<p>Where available, gene/genome feature detail pages provide a link to a Detailed Genetic Map that shows all markers within one cM of the marker. Marker detail pages and Orthology results pages offer comparative maps showing all genes within 2 cM of the gene and the chromosome location for orthologous genes.</p>
+<p>Where available, gene/genome feature detail pages provide a link to a Detailed Genetic Map that shows all markers within one cM of the marker. <!--Marker detail pages and Orthology results pages offer comparative maps showing all genes within 2 cM of the gene and the chromosome location for orthologous genes.  --></p>
 <!--<h4>Cytogenetic Maps</h4>
 <p>MGD stores  cytogenetic  band  information  for  mouse markers. The  Cytogenetic  Maps  query  form provides  access  to map  images. Relatively few markers have been assigned cytogenetic locations.
 </p>-->

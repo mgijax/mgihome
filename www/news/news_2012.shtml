@@ -1,0 +1,118 @@
+<!--#include file='include/templateHead.html'--> 
+<title>MGI-News and Announcements from the Mouse Genome Informatics database resource</title>
+  <meta name="description" content="Archive of MGI news and announcements from 2011." />
+  <meta name="keywords" content="MGI, mgi, mice, mouse, murine, mus musculus, genes, genome, genomic, news, archives, announcements, update, release " />
+  <meta name="robots" content="NOODP" />
+  <meta name="robots" content="NOYDIR" />
+<!--#include file='include/templateBodyStart.html'--> 
+<!-- Title Bar -->
+    <div id="titleBarWrapper">
+  <span class="titleBarMainTitle">News and Announcements for 2012</span>
+  </div> 
+<!--end titleBar-->
+
+<table width="75%" cellpadding="2" align="center">
+   <tr><td>
+     <table class="toc" width="100%">
+      <tr>
+      <td>
+      <ul>
+         <li><a href="#december_2012">December 6, 2012</a> | 
+         <li><a href="#august_2012">August 30, 2012</a> | 
+         <li><a href="#june_2012">June 29, 2012</a> |
+         <li><a href="#april_2012">April 11, 2012</a> |
+		 <li><A HREF="news_2011.shtml"><nobr>Archive: News and Announcements for 2011</a></li> 
+    	</ul>
+        </td>
+        </tr>              
+    </table>
+    <!-- end TOC table -->
+   </td></tr>
+
+<tr><td></td></tr>
+
+ <tr><td><a name="december_2012"></a>
+
+      <table class="outline" width="100%">
+   
+   <tr><td class="enhance">December 6, 2012</td></tr>
+ 	<tr><td>
+ 		<dl class="linkedList">
+		<dt>MGI mouse genome coordinates are now updated to NCBI Mouse Build 38 (GRCm38.p1). For <i>Mus musculus</i> Build GRCm38.p1 statistics, see <a href="http://www.ncbi.nlm.nih.gov/projects/genome/assembly/grc/mouse/data/index.shtml">The Genome Reference Consortium</a> web site.
+		</dt>
+		<dt>Temporarily, there is a discrepancy between genome coordinates for mouse SNPs, which are derived from an earlier NCBI build of the mouse genome, and genes and markers, whose coordinates are derived from the current build. (see <a href="<!--#include file='include/userhelp_url.html'-->SNP_discrepancy_help.shtml">details</a>).
+		</dt>
+		</dl>
+	  </td>
+    </tr>
+	</table>
+   
+   <tr><td><a name="august_2012"></a>
+
+      <table class="outline" width="100%">
+
+ 	<tr><td class="enhance">August, 30 2012</td></tr>
+ 	<tr><td>
+ 		<dl class="linkedList">
+		<dt>The <a href="<!--#include file='include/fewi_url.html'-->gxd">Gene Expression Data Query</a> form has been re-designed to add new search functions and make it easier to use. In addition to gene function (Gene Ontology) terms, you can now use phenotype or disease terms to define gene sets of interest in expression searches. Auto fill lists for these categories and for anatomical structure searches make it easier to find the appropriate search terms. In addition to Theiler stage, age is now available as a search parameter. 
+		</dt>
+	
+		<dt>The mechanisms behind the searches and their returned data summaries have been entirely re-designed. The most noticeable improvement will be the speed of the return. Each search will now return a page with tabbed summaries for the assay results, assays, and genes matching your parameters. Most columns on these summaries are sortable.  New columns have been added to provide additional context. The figure links on the assay results tab provide direct access to images of data. Export features have been added to the assay results and genes tabs, allowing results to be downloaded in text or spreadsheet format. The genes list can be forwarded to the MGI batch query to allow you to search for additional information, such as the function, phenotype and/or disease terms associated with the genes of interest. 
+		</dt>
+		</dl>
+	  </td>
+          </tr>
+	</table>
+   
+   <tr><td><a name="june_2012"></a>
+
+    <table class="outline" width="100%">
+
+ 	<tr><td class="enhance">June 29, 2012</td></tr>
+ 	<tr><td>
+ 		<dl class="linkedList">
+		<dt>The Gene Expression Database (GXD) is pleased to announce that additional RNA in situ hybridization data from the GenePaint database are now available at accession number J:122989. The GenePaint data set in MGI now includes:
+		<ul>
+		<li>over 289,300 RNA in situ hybridization results at E14.5</li>
+		<li>2,958 genes</li>
+		<li>24,984 images</li>
+		</ul>
+		</dt>
+		<dt>Some useful links for querying subsets of data in GXD and MGI are: 
+			<ul>
+  			<li><A HREF="<!--#include file='include/fewi_url.html'-->gxd">Gene Expression Data Query Form</a></li>
+  			<li><A HREF="<!--#include file='include/java_url.html'-->WIFetch?page=markerQF">Genes and Markers Query Form</a></li>
+			</ul>
+		</dt>
+	
+		<dt>If you are interested in submitting your data to GXD, please see our guidelines for <a href="../GXD/GEN/gxd_submission_guidelines.shtml">submitting expression data to the Gene Expression Database</a> or contact <a href="mailto:GEN@jax.org">GEN@jax.org</a> for further information.
+		</dt>
+		</dl>
+	  </td>
+      </tr>
+	</table>
+   
+   <tr><td><a name="april_2012"></a>
+
+      <table class="outline" width="100%">
+
+ 	<tr><td class="enhance">April 11, 2012</td></tr>
+ 	<tr><td>
+ 		<dl class="linkedList">
+		<dt>The <a href="<!--#include file='include/fewi_url.html'-->reference">Reference</a> and <a href="<!--#include file='include/fewi_url.html'-->gxdlit">Gene Expression Literature</a> Search Forms' author and journal fields now contain an autocomplete feature. When you start typing an author name or a journal abbreviation, you are offered a list of appropriate choices. The Reference search results can now be sorted, and filtered by author, journal, year and curated data. Reference search results can now be exported as tab-delimited text files. 
+		</dt>
+	
+		<dt>The International Mouse Strain Resource (<a href="<!--#include file="include/imsr_home_url.html"-->">IMSR</a>) now allows you to filter your search results by Stock State (live mice, embryo, sperm, ES cell) Type (inbred, mutant stock, recombinant inbred) Provider and Mutation (spontaneous, gene trap, targeted). Search results can now be sorted by strain name or provider and can be exported in tab-delimited text or Excel formats. 
+		</dt>
+		</dl>
+	  </td>
+          </tr>
+	</table>
+    
+</td></tr>
+  
+</div> 
+
+<!--#include file='include/templateBodyStop.html'--> 
+</body>
+</html>
