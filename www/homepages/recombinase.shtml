@@ -8,86 +8,11 @@
   <meta name="robots" content="NOODP" />
   <meta name="robots" content="NOYDIR" />
 
-    <script src="<!--#include file='include/webshare_url.html'-->js/jquery-ui-1.10.2.custom.min.js"></script>
-    <link rel="stylesheet" type="text/css" href="<!--#include file='include/webshare_url.html'-->css/jquery-ui-1.10.2.custom.min.css" />
-
   <link rel="stylesheet" type="text/css" href="<!--#include file='include/stylesheet.html'-->" />
 
 <!--#include file='include/templateBodyStart.html'-->
 
 <!-- start body content -->
-
-<style>
-  .ui-autocomplete {
-    max-height: 300px;
-    overflow-y: auto;
-    /* prevent horizontal scrollbar */
-    overflow-x: hidden;
-	font-size:90%;
-  }
-  /* IE 6 doesn't support max-height
-   * we use height instead, but this forces the menu to always be this tall
-   */
-  * html .ui-autocomplete {
-    height: 300px;
-  }
- .ui-menu .ui-menu-item {
-	padding-left:0.4em;
- }
- .ui-menu .ui-menu-item a {
-	padding:0px;
- }
-</style>
-<script>
-	/*
-	 * Anatomical Dictionary Auto Complete Section
-	* Author: kstone
-	 */
-	var fewiurl = "<!--#include file='include/fewi_url.html'-->";
-	var structureUrl = fewiurl+"autocomplete/structure?query=";
-	var disableColor = "#CCC";
-	// I can't figure out CORS behavior in YUI2
-	// resorting to jQuery implementation
-	$.support.cors = true;
-	$(function() {
-	    var creAC = $( "#creStructure" ).autocomplete({
-		source: function( request, response ) {
-			$.ajax({
-				url: structureUrl+request.term,
-				dataType: "json",
-				success: function( data ) {
-					response($.map(data["resultObjects"], function( item ) {
-						return {label: item.synonym, hasCre: item.hasCre, 
-							isStrictSynonym: item.isStrictSynonym,
-							original: item.structure};
-					}));
-				}
-			});
-		},
-		minLength: 2
-	    }).data( "ui-autocomplete" )._renderItem = function( ul, item ) {
-		var value = item.label;
-		if (item.isStrictSynonym)
-		{ 
-			var synonymColor = item.hasCre ? "#222" : disableColor;
-			//value = "<span style=\"color:"+synonymColor+"; font-size:0.8em; font-style:normal;\">[syn]</span> "+value; 
-			value += " <span style=\"color:"+synonymColor+"; font-size:0.9em; font-style:normal;\">[<span style=\"font-size:0.8em;\">syn. of</span> "+item.original+"]</span> "; 
-		}
-		if (item.hasCre)
-		{
-			return $('<li></li>')
-				.data("item.autocomplete",item)
-				.append("<a>" + value + "</a>")
-				.appendTo(ul);
-		}
-		// adding the item this way makes it disabled
-		return $('<li class="ui-menu-item disabled" style="color:#CCC;"></li>')
-			.data("item.autocomplete", item)
-			.append('<span>'+value+'</span>')
-			.appendTo(ul);
-	    };
-	});
-</script>
 
 <!-- mini homepage header section -->
 <table class="sideMargin marginTop" border="0" cellspacing="0" cellpadding="0">
@@ -104,7 +29,7 @@
 		</td>
 		<td>
 			<div class="sideMargin marginBottom blueBorder pad5 small">
-			<center><!--<a href="<!--#include file='include/faq_url.html'-->Cre_imgpop.shtml" onClick='javascript:openFaqWindow("Cre_imgpop.shtml"); return false;'>-->
+			<center><a href="<!--#include file='include/faq_url.html'-->Cre_imgpop.shtml" onClick='javascript:openFaqWindow("Cre_imgpop.shtml"); return false;'>
 			<img class="outlineImg" src="<!--#include file='include/mgihome_url.html'-->homepages/images/Recombinase.png"></a><br /></center>
 			</div>
 		</td>
@@ -122,18 +47,43 @@
 				<p class="" style="margin-bottom: 8px; margin-top: 3px; color: rgb(0, 34, 85); font-variant: small-caps;"><b>Find recombinase-carrying alleles </b></p>
                     <dl>
 
-						<dt class="whatList">Search for alleles assayed for specificity/activity in an anatomical structure.
-						<!-- Find recombinase alleles expressing activity in a particular
+						<dt class="whatList">Search for alleles assayed for specificity/expression in a particular anatomical system.<!-- Find recombinase alleles expressing activity in a particular
 						anatomical system. These results include only those alleles for which recombinase
 						specificity data is available.--></dt>
 						<dd class="searchList">
 
-						<div class="creSearch" style="width:450px; height:47px;">
+						<div class="creSearch" style="width:450px; height:37px;">
 						<div class="creInputs">
 							<form action="<!--#include file='include/fewi_url.html'-->recombinase/summary" method="get">
-								<label onmouseout="nd();" onMouseOver="return overlib('Anatomical structure or tissue term from the <a href=\'<!--#include file="include/wi_url2.html"-->searches/anatdict_form.shtml\'>Mouse Anatomical Dictionary</a> in which recombinase activity occurs. (NOTE: links from the Mouse Anatomical Dictionary do not lead back to recombinase activity search results.)', ANCHOR, 'GetSystem', ANCHORALIGN, 0, 0.5, 0, 0.5, WIDTH, 250, DELAY, 900, STICKY, CAPTION, 'Recombinase activity in', CLOSECLICK, CLOSETEXT, 'Close X');">
+								<label onmouseout="nd();" onMouseOver="return overlib('Anatomical system containing the structure or tissue term from the Mouse Anatomical Dictionary in which recombinase activity occurs. See the <a href=\'<!--#include file="include/wi_url2.html"-->searches/anatdict_form.shtml\'>Mouse Anatomical Dictionary</a> to find the terms MGI uses. (NOTE: links from the Mouse Anatomical Dictionary do not lead back to these pages.)', ANCHOR, 'GetSystem', ANCHORALIGN, 0, 0.5, 0, 0.5, WIDTH, 250, DELAY, 900, STICKY, CAPTION, 'Expressing activity in', CLOSECLICK, CLOSETEXT, 'Close X');">
 								    <strong style="color:#002255; border-bottom:dotted thin #555555; cursor:help;">Recombinase activity in:</strong>&nbsp;</label>
-				<input name="structure" type="text" id="creStructure" size="50">
+                                <select name="system" id="creSystemSelect">
+                                    <option selected value="" name="default">(choose one) </option>
+                                    <option value="adipose tissue">adipose tissue</option>
+                                    <option value="alimentary system">alimentary system</option>
+                                    <option value="branchial arches">branchial arches</option>
+                                    <option value="cardiovascular system">cardiovascular system</option>
+                                    <option value="cavities and their linings">cavities &amp; their linings</option>
+                                    <option value="endocrine system">endocrine system</option>
+                                    <option value="head">head</option>
+                                    <option value="hemolymphoid system">hemolymphoid system</option>
+                                    <option value="integumental system">integumental system</option>
+                                    <option value="limbs">limbs</option>
+                                    <option value="liver and biliary system">liver and biliary system</option>
+                                    <option value="mesenchyme">mesenchyme</option>
+                                    <option value="muscle">muscle</option>
+                                    <option value="nervous system">nervous system</option>
+                                    <option value="renal and urinary system">renal and urinary system</option>
+                                    <option value="reproductive system">reproductive system</option>
+                                    <option value="respiratory system">respiratory system</option>
+                                    <option value="sensory organs">sensory organs</option>
+                                    <option value="skeletal system">skeletal system</option>
+                                    <option value="tail">tail</option>
+                                    <option value="early embryo">early embryo</option>
+                                    <option value="extraembryonic component">extraembryonic component</option>
+                                    <option value="embryo-other">embryo-other</option>
+                                    <option value="postnatal-other">postnatal-other</option>
+                                </select>
 								<input name="submit2" class="searchToolButton" type="submit" value="Go" id="creSystem">
 								<span id="GetSystem">&nbsp;</span>
 							</form>
@@ -150,7 +100,7 @@
 	                    <div class="creInputs">
 
 	                    <form action="<!--#include file='include/fewi_url.html'-->recombinase/summary" method="get">
-	                            <label onmouseover="return overlib('Gene, genetic element, or construct driving recombinase activity.',ANCHOR, 'GetDriver', ANCHORALIGN, 0, 0.5, 0, 0.5, WIDTH, 250, DELAY, 900, STICKY, CAPTION, 'Recombinase driven by', CLOSECLICK, CLOSETEXT, 'Close X');" onmouseout="nd();"><strong style="color:#002255; border-bottom:dotted thin #555555; cursor:help;">Recombinase driven by:</strong>&nbsp;</label>
+	                            <label onmouseover="return overlib('Allele, gene, fusion product, or genetic construct driving recombinase activity.',ANCHOR, 'GetDriver', ANCHORALIGN, 0, 0.5, 0, 0.5, WIDTH, 250, DELAY, 900, STICKY, CAPTION, 'Driven by', CLOSECLICK, CLOSETEXT, 'Close X');" onmouseout="nd();"><strong style="color:#002255; border-bottom:dotted thin #555555; cursor:help;">Recombinase driven by:</strong>&nbsp;</label>
 	                            <select name="driver" id="creDriverSelect">
 	                                <!--#include file='include/driver_list.html'-->
 	                            </select>
