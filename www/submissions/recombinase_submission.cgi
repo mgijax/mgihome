@@ -1,8 +1,8 @@
 #!./python
 
-# Program: amsp_submission.cgi
+# Program: recombinase_submission.cgi
 # Purpose: to handle display and processing of a form for users to submit
-#	mutant allele, phenotype, and strain data to MGI.
+#	recombinase knock-in/transgene alleles, strain and recombinase activity data to MGI.
 
 import sys
 if '.' not in sys.path:
@@ -59,14 +59,14 @@ ERRANT_FIELDS = {}
 # 'length', and 'contents'
 UPLOADED_FILES = []
 
-# should we show the allele submission section by default?
+# should we show the recombinase knock-in/transgene submission section by default?
 SHOW_ALLELE = False
 
 # should we show the strain submission section by default?
 SHOW_STRAIN = False
 
-# should we show the phenotype submission section by default?
-SHOW_PHENOTYPE = False
+# should we show the recombinase activity submission section by default?
+SHOW_RECOMBINASE = False
 
 # should we show the file upload section by default?
 SHOW_FILES = False
@@ -119,49 +119,37 @@ CITING_FIELDS = [
 		width = 50),
 ]
 
-# fields for the allele submission section
+# fields for the recombinase submission section
 ALLELE_FIELDS = [
 	feedbacklib.OneLineTextField ('alleleSymbol',
-		'Suggested Mutation Symbol/Name', width = 60),
+		'Suggested Symbol/Name', width = 60),
 	feedbacklib.OneLineTextField ('gene', 'Gene Symbol/MGI ID',
 		width = 20),
 	feedbacklib.OneLineTextField ('nicknames', 'Nicknames', width = 60),
-	feedbacklib.CheckboxGroup ('alleleClass', 'Class of Allele', items = [
+	feedbacklib.CheckboxGroup ('alleleClass', 'Characteristics of the recombinase', items = [
 		# row 1
-		[ ('spontaneous', 'spontaneous'),
-			('enuInduced', 'ENU induced'),
-			('chemical', 'chemical (non-ENU) induced'),
-			('irradiation', 'irradiation induced'),
-			('transgenic', 'transgenic'),
-			('geneTrapped', 'gene trapped'),
-			('targeted', 'targeted'),
-			],
+		[ ('transgene', 'transgene'),
+		],
 		# row 2
-		[ ('conditional', 'conditional/targeted'),
-			('recombinase',
-				'recombinase (cre or other) containing'),
-			('transposon', 'transposon induced'),
-			('other', 'other (specify)', 20),
-			] ] ),
-	feedbacklib.OneLineTextField ('promoter', 'Transgene Promoter',
+		[
+		  ('knock-in', 'knock-in'),
+		],
+		# row 3
+		[
+		  ('this allele is inducible', 'this allele is inducible'),
+		] ] ),
+	feedbacklib.OneLineTextField ('driver', 'Transgene Driver',
 		width = 35),
 	feedbacklib.OneLineTextField ('esCellLine', 'ES cell line',
 		width = 35),
-	feedbacklib.OneLineTextField ('mutantEsCellLine',
-		'Mutant ES cell line', width = 35),
-	feedbacklib.RadioButtonGroup ('inheritance', 'Inheritance',
-#		value = [ '' ],
-		items = [ [ ('dominant', 'dominant'),
-			('codominant', 'codominant'),
-			('semidominant', 'semidominant'),
-			('recessive', 'recessive'),
-			('X-linked', 'X-linked'),
-			('other', 'other (specify)', 30),
-			('unknown', 'unknown/not applicable') ] ] ),
+	feedbacklib.OneLineTextField ('recombinaseESCellLine',
+		'Recombinase-containing ES cell line', width = 35),
+	feedbacklib.OneLineTextField ('inducingAgent', 'Inducing Agent',
+		width = 35),
 	feedbacklib.OneLineTextField ('strainBackground', 'Strain background',
 		width = 35),
 	feedbacklib.MultiLineTextField ('location',
-		'Genome Location and Molecular Detail',
+		'Molecular Details',
 		height = 3, width = 90),
 	feedbacklib.CheckboxGroup ('nomenHelp',
 		'Request help with allele nomenclature',
@@ -170,67 +158,21 @@ ALLELE_FIELDS = [
 
 # fields for the strain submission section
 STRAIN_FIELDS = [
-	feedbacklib.OneLineTextField ('strain', 'Suggested strain name',
+	feedbacklib.OneLineTextField ('strain', 'Suggested strain background',
 		width = 75),
-	feedbacklib.MultiLineTextField ('genes',
-		'Gene symbols for alleles on this strain',
-		height = 4, width = 20),
 	feedbacklib.OneLineTextField ('repository', 'Repository of strain',
 		width = 50),
 	feedbacklib.OneLineTextField ('repositoryID',
 		'Repository ID or MGI ID of strain', width = 20),
-	feedbacklib.CheckboxGroup ('strainCategory', 'Strain categories',
-		items = [
-		# column 1
-		[ ('inbred', 'inbred strain'),
-			('segregatingInbred', 'segregating inbred'),
-			('mutantStrain', 'mutant strain'),
-			('mutantStock', 'mutant stock'),
-		],
-		# column 2
-		[
-			('wildDerived', 'wild-derived'),
-			('outbred', 'outbred'),
-			('coisogenic', 'coisogenic'),
-			('congenic', 'congenic'),
-			('consomic', 'consomic'),
-		],
-		# column 3
-		[
-			('RI', 'recombinant inbred (RI)'),
-			('RC', 'recombinant congenic (RC)'),
-			('MHC', 'major histocompatibility congenic'),
-			('mHC', 'minor histocompatibility congenic'),
-			('other', 'other, specify', 20),
-		] ] ),
+	feedbacklib.MultiLineTextField ('strainGenotypeAnalysis',
+		'Genotype Analysis',
+		height = 3, width = 90),
+	feedbacklib.MultiLineTextField ('strainBackgroundAnalysis',
+		'Genetic Background Analysis',
+		height = 3, width = 90),
 	feedbacklib.CheckboxGroup ('strainHelp',
 		'Request help with strain nomenclature',
 		items = [ [ ('yes', '') ] ]),
-]
-
-# fields for the phenotype submission section
-PHENOTYPE_FIELDS = [
-	feedbacklib.MultiLineTextField ('allelePairs', 'Allele pairs',
-		height = 4, width = 40),
-	feedbacklib.MultiLineTextField ('additionalInfo',
-		'Additional allele information', height = 3, width = 80),
-	feedbacklib.OneLineTextField ('geneticBackground',
-		'Strain/Genetic Background on which phenotypes were analyzed',
-		width = 60),
-	feedbacklib.MultiLineTextField ('crosses',
-		'Other Strain/Background Information',
-		height = 4, width = 65),
-	feedbacklib.CheckboxGroup ('phenoHelp',
-		'Request help with genetic background',
-		items = [ [ ('yes', '') ] ]),
-	feedbacklib.MultiLineTextField ('phenoDescription',
-		'Phenotype Description',
-		height = 12, width = 90),
-	feedbacklib.MultiLineTextField ('disease', 'Human disease',
-		height = 3, width = 90),
-	feedbacklib.MultiLineTextField ('otherPhenoInfo',
-		'Other known information',
-		height = 3, width = 90),
 ]
 
 # fields for the comments section
@@ -279,7 +221,7 @@ def log (
 	# Assumes: nothing
 	# Throws: nothing
 
-	sys.stderr.write ('amsp_submission.cgi : %s\n' % message)
+	sys.stderr.write ('recombinase_submission.cgi : %s\n' % message)
 	return
 
 def label (
@@ -450,7 +392,7 @@ def getField (
 
 	if not ALL_FIELDS:
 		for group in [ CONTACT_FIELDS, CITING_FIELDS, ALLELE_FIELDS,
-			STRAIN_FIELDS, PHENOTYPE_FIELDS, COMMENTS_FIELDS, CAPTCHA_FIELDS, SUBMISSION_FIELDS]:
+			STRAIN_FIELDS, COMMENTS_FIELDS, CAPTCHA_FIELDS, SUBMISSION_FIELDS]:
 			for field in group:
 				if ALL_FIELDS.has_key(field.getFieldname()):
 					# should not happen; this would be a
@@ -594,7 +536,7 @@ def getCitingSection():
 	return ''.join(items)
 
 def getAlleleSection():
-	# Purpose: get the HTML necessary for the 'Enter Allele Data' section
+	# Purpose: get the HTML necessary for the 'Enter recombinase...' section
 	# Returns: string of HTML
 	# Modifies: nothing
 	# Assumes: nothing
@@ -605,70 +547,66 @@ def getAlleleSection():
 
 	# Fields are left-aligned (no table structure)
 
-	items = [ sectionTitle('Enter Allele Data'),
-		'Suggest %s for this mutation: ' % label ('alleleSymbol',
+	items = [ sectionTitle('Enter recombinase knock-in or transgene data'),
+		'Suggest %s for the recombinase knock-in or transgene allele: ' % label ('alleleSymbol',
 			'<B>symbol</B> and/or <B>name</B>'),
 		'<FONT COLOR="red">*</FONT>',
 		getField('alleleSymbol').getHTML(),
 		'<P>',
-		'If this mutation is an allele of a <B>known gene</B> ',
-		'enter the %s ' % label('gene',
+		'If this is a knock-in allele, what gene is the construct knocked into? ',
+		'Enter the %s ' % label('gene',
 			'<B>gene symbol</B> or <B>MGI ID</B>:'),
 		getField('gene').getHTML(),
 		' (<I><B>Check by</B></I> <A HREF="%sWIFetch?page=markerQF" '\
 			% config['JAVAWI_URL'],
 		'TARGET="_blank">searching MGI</A>.)<P>',
-		'Common nicknames for this mutant allele ',
+		'Common nicknames for this recombinase allele ',
 		getField('nicknames').getHTML(),
 		'<P>',
-		'%s (check all that apply): &nbsp;' % label ('alleleClass',
-			'Class of Allele'),
+		'%s: &nbsp;' % label ('alleleClass',
+			'Characteristics of the recombinase knock-in or transgene (check all that apply):'),
 		'<FONT COLOR="red">*</FONT>',
 		'<BLOCKQUOTE>',
 		getField('alleleClass').getHTML(),
 		'<P>',
-		'For transgenes, specify transgene promoter: ',
-		getField('promoter').getHTML(),
+		'For transgenes, specify transgene driver: ',
+		getField('driver').getHTML(),
 		'<BR>',
-		'For targeted mutations or gene traps, specify ES cell line ',
-		'used: ',
+		'For knock-ins, specify the ES cell line in which construct was inserted:  ',
 		getField('esCellLine').getHTML(),
 		' <I>(<B>Example</B>: E14.1, JM8A3)</I><BR>',
-		'For gene traps, specify the resulting mutant ES cell line: ',
-		getField('mutantEsCellLine').getHTML(),
-		' <I>(<B>Example</B>: AD0888)</I><BR>',
+		'For knock-ins, specify the resulting recombinase-containing ES cell line: ',
+		getField('recombinaseESCellLine').getHTML(),
+		' <I>(<B>Example</B>: HEPD0549_5_A07)</I><BR>',
+		'For an inducible recombinase, identify the inducing agent:  ',
+		getField('inducingAgent').getHTML(),
 		'</BLOCKQUOTE><P>',
-		'Inheritance: ',
-		getField('inheritance').getHTML(),
 		'<P>',
-		'Strain background in which the mutation occurred ',
+		'Strain background in which the recombinase allele/transgene was developed ',
 		getField('strainBackground').getHTML(),
 		'<I>(<B>Examples</B>: C57BL/6J, 129P2/OlaHsd)</I><P>',
-		'Genome Location (Chromosome, genome coordinates, cM) ',
-		'and molecular detail about this allele, such as "exon ',
-		'1 deletion, etc.": ',
+		'Describe molecular details about the construct, including promoter/driver details.',
+		'  Include expected expression details, if known.',
 		getField('location').getHTML(),
-		'<UL><LI>For hints on mutant allele nomenclature, see ',
-		'<A HREF="%snomen/allmut_quickhelp.shtml" ' % \
+		'<UL><LI>For hints on nomenclature, see ',
+		'<A HREF="%snomen" ' % \
 			config['MGIHOME_URL'],
 		'TARGET="_blank">',
-		'Quick Guide to Nomenclature for Alleles and Mutations</A>.',
+		'Mouse Nomenclature Page</A>.',
 		'</LI><LI><A ',
 		'HREF="http://dels.nas.edu/global/ilar/lab-codes" ',
 		'TARGET="_blank">',
 		'Lab codes</A> are available from ILAR (Institute of ',
 		'Laboratory Animal Resources).</LI>',
-		'<LI><B>If you would like assistance with allele ',
-		'nomenclature:</B></LI> ',
+		'<LI><B>If you would like assistance with nomenclature:</B></LI> ',
 		getField('nomenHelp').getHTML(),
 		' Check the box here and continue with your submission. We ',
-		'will contact you about nomenclature for this mutation.</UL>',
+		'will contact you about nomenclature.</UL>',
 		]
 	return ''.join(items)
 
 def getStrainSection():
-	# Purpose: get the HTML necessary for the 'Register a New Mouse
-	#	Strain' section
+	# Purpose: get the HTML necessary for the 'Genetic background...' section
 	# Returns: string of HTML
 	# Modifies: nothing
 	# Assumes: nothing
@@ -679,42 +617,49 @@ def getStrainSection():
 
 	# Fields are left-aligned (no table structure)
 
-	items = [ sectionTitle('Register a New Mouse Strain'),
-		'Enter a suggested <B>%s</B>.<BR>' % label (
-			'strain', 'strain name'),
-		'When mutant alleles are part of the strain name, use ',
-		'&lt; &gt; to indicate the superscripted alleles.<BR>',
-		'<I>Example:</I> <B>C57BL/6J-Kit<SUP>W-39J</SUP></B> should ',
-		'be entered as <B>C57BL/6J-Kit&lt;W-39J&gt;</B><BR>',
+	items = [ sectionTitle('Genetic background on which the knock-in or transgene is maintained'),
+		'%s ' % label ('strain', 'Enter the strain background '),
+		'-OR- ',
+		'if the recombinase is maintained on a defined strain from a repository, ',
+		'please enter its full designation. ',
+		'<P>Use &lt; &gt; to indicate the superscripted portion of alleles ',
+		'(for knock-in recombinases\'s).',
+		'<div align="left">',
+		'Examples:<BR>',
+		'Knock-in allele: <B>C57BL/6-Cldn6<SUP>tm1(cre)Dkwu</SUP>/J</B>',
+		' should be entered as <B>C57BL/6-Cldn6&lt;tm1(cre)Dkwu&gt;/J</B><BR>',
+		'Transgene: <B>B6;129S6-Tg(Camk2a-cre/ERT2)1Aibs/J</B><BR>',
+		'</DIV>',
+		'<BR>',
 		'<FONT COLOR="red">*</FONT>',
 		getField('strain').getHTML(),
 		'<P>',
-		'Enter the <B>%s</B> corresponding to alleles ' % label (
-			'genes', 'gene symbols'),
-		'carried on this strain.<BR>',
-		'<I>Example:</I> for the strain ',
-		'<B>NOD/LtSz-Prkdc&lt;scid&gt; B2m&lt;tm1Unc&gt;</B>, the ',
-		'gene symbols entered into this box would be <B>Prkdc</B> ',
-		'and <B>B2m</B>.<BR>',
-		'(one gene symbol per line)',
-		getField('genes').getHTML(),
-		'<P>',
-		'If this strain is in a repository, please list the ',
-		'repository ',
+		'If this strain is in a repository, please list the repository ',
 		getField('repository').getHTML(),
 		' 	(<B><I>View</I></B>: list of <A HREF="',
 		'%sfetch?page=imsrStrainRepositories" ' % config['IMSRURL'],
-                'TARGET="_blank">',
-                'repositories</A>)'
-		'<BR>',
-		'Enter its repository ID or MGI ID for this strain, if known ',
+		'TARGET="_blank">',
+		'repositories</A>)'
+		'<P>',
+		'Enter the strain repository ID or MGI ID, if known ',
 		getField('repositoryID').getHTML(),
 		'<P>',
-		'<B>%s</B>: Choose one or more. ' % label ('strainCategory',
-			'Strain categories'),
-		'<FONT COLOR="red">*</FONT><BLOCKQUOTE>',
-		getField('strainCategory').getHTML(True),
-		'</BLOCKQUOTE><P>',
+		sectionTitle('Describe the genotype and genetic background on which the activity was characterized'),
+		'For example, if the C57BL/6-Cldn6<SUP>tm1/(cre)Dkwu</SUP>/J strain was mated to ',
+		'129-Gt(ROSA)26Sor<SUP>tm2Nat</SUP> to make mice for cre activity testing<BR>',
+		'then the genotype for the animals would be heterozygous: Cldn6&lt;tm1(cre)Dkwu&gt;/Cldn6+ ',
+		'Gt(ROSA)26Sor&lt;tm2Nat&gt;/Gt(ROSA)26Sor+ <BR>',
+		'And the genetic background would be: C57BL/6 and 129<P>',
+		'%s' % label ('strainGenotypeAnalysis', 'Describe genotype analyzed:'),
+		'<FONT COLOR="red">*</FONT>',
+		'<BR>',
+		getField('strainGenotypeAnalysis').getHTML(),
+		'<P>',
+		'%s' % label ('strainBackgroundAnalysis', 'Describe genetic background analyzed:'),
+		'<FONT COLOR="red">*</FONT>',
+		'<BR>',
+		getField('strainBackgroundAnalysis').getHTML(),
+		'<P>',
 		'<UL><LI>For hints on strain nomenclature, see ',
 		'<A HREF="%snomen/strains.shtml" ' % config['MGIHOME_URL'],
 		'TARGET="_blank">',
@@ -724,17 +669,15 @@ def getStrainSection():
 		'TARGET="_blank">',
 		'Lab codes</A> are available from ILAR (Institute of ',
 		'Laboratory Animal Resources).</LI>',
-		'<LI><B>If you would like assistance with strain ',
-		'nomenclature:</B></LI> ',
+		'<LI><B>If you would like assistance with strain nomenclature:</B></LI> ',
 		getField('strainHelp').getHTML(),
-		' Check the box  and continue with your submission. We ',
+		' Check the box and continue with your submission. We ',
 		'will contact you about nomenclature for this strain.</UL>',
 		]
 	return ''.join(items)
 
-def getPhenotypeSection():
-	# Purpose: get the HTML necessary for the 'Submit Phenotype Data'
-	#	section
+def getRecombinaseSection():
+	# Purpose: get the HTML necessary for the 'Recombination data' section
 	# Returns: string of HTML
 	# Modifies: nothing
 	# Assumes: nothing
@@ -746,77 +689,11 @@ def getPhenotypeSection():
 	# Fields are left-aligned (no table structure)
 
 	items = [
-		sectionTitle('Submit Phenotype Data'),
-		'<B>Mutant allele(s)</B> analyzed.<P>',
-		'List one or more allele pairs analyzed in the animal (one ',
-		'allele pair per line, with the alleles comma separated).<BR>',
-		'When entering mutant alleles, use &lt; &gt; to indicate ',
-		'the superscripted portion of an allele.<P>',
-		'<I><B>Example:</B></I><BR>',
-		'If you phenotyped animals that were heterozygous for ',
-		'<B>Kit<SUP>W-39J</SUP></B> and homozygous for ',
-		'<B>Tec<SUP>tm1Welm</SUP></B>, they should be entered as<BR>',
-		'<TABLE BORDER="1" CELLPADDING="0" CELLSPACING="0" ',
-		'WIDTH="30%"><TR><TD>',
-		'Kit&lt;W-39J&gt;, Kit&lt;+&gt;<br>',
-		'Tec&lt;tm1Welm&gt;, Tec&lt;tm1Welm&gt;',
-		'</TD></TR></TABLE><P>',
-		'Enter %s of your phenotyped animals: ' % label (
-			'allelePairs', 'allele pairs'),
-		'<FONT COLOR="red">*</FONT><BR>',
-		getField('allelePairs').getHTML(),
-		'(Find the correct allele symbol by <A HREF=',
-		'"%ssearches/allele_form.shtml" TARGET="_blank">searching MGI</A>.)' % \
-			config['WI_URL'],
-		'<P>',
-		'Additional allele information not currently in MGI (allele ',
-		'synonyms, ES cell line, strain of origin, mutation type, ',
-		'molecular description, etc.):<BR>',
-		getField('additionalInfo').getHTML(),
-		'<P>',
-		'<B>Genetic Background:</B> Genetic background can have a ',
-		'significant effect on phenotype.<P>',
-		'Enter the %s on which phenotypes were analyzed: ' % label (
-			'geneticBackground', 'Strain/Genetic Background'),
-		'<FONT COLOR="red">*</FONT>',
-		getField('geneticBackground').getHTML(),
-		'<P>',
-		'Other Strain/Background Information (e.g. specify ',
-		'crosses): Click here for an <A ',
-		'HREF="%snomen/alleleform_strainex.shtml" TARGET="_blank">' % \
-			config['MGIHOME_URL'],
-		'example</A>.<BR>',
-		getField('crosses').getHTML(),
-		'<P><UL>',
-		'<LI><B>If you would like assistance with the Genetic ',
-		'Background Section:</B></LI> ',
-		getField('phenoHelp').getHTML(),
-		' Check the box here and continue with your submission. We ',
-		'will contact you about determining the correct genetic ',
-		'background.</UL>',
-		sectionTitle('Phenotype', False),
-		'%s (enter text, describing details of ' % \
-			label ('phenoDescription', 'Phenotypic Description'),
-		'phenotypes observed, etc.): <FONT COLOR="red">*</FONT><BR>',
-		'Click here for an <A ',
-		'HREF="%snomen/alleleform_phenoex.shtml" TARGET="_blank">' % \
-			config['MGIHOME_URL'],
-		'example</A>.',
-		' You may browse the <A HREF="%ssearches/MP_form.shtml" ' % \
-			config['WI_URL'],
-		'TARGET="_blank">Mammalian Phenotype Ontology</A> and use ',
-		'these terms to describe the phenotype.<P>',
-		getField('phenoDescription').getHTML(),
-		'<P>',
-		'If this genotype + genetic background is a model for a ',
-		'human disease based on phenotypic similarity, please name ',
-		'the disease and include any associated information:<BR>',
-		getField('disease').getHTML(),
-		'<P>',
-		'Other known information (gene function/pathway, available ',
-		'clones, GenBank numbers, etc.) that will enhance these ',
-		'data:<BR>',
-		getField('otherPhenoInfo').getHTML(),
+		sectionTitle('Recombinase Activity Data', False),
+		'Please download '
+		'<A HREF="%ssubmissions/recombinase_submission_template.xlsm">' % config['MGIHOME_URL'],
+		'Excel Spreadsheet template</A> to submit recombinase characterization data.<P>'
+		'Then use the File Submissions section to submit the spreadsheet.<P>'
 		]
 	return ''.join(items)
 
@@ -865,8 +742,11 @@ def getFileUploadSection():
 		'Please limit file size to &lt;5 MB.<BR>',
 		'If you have larger files, or many files to submit, please ',
 		'contact us at: ',
-		'<a href="mailto:mgi-submissions@jax.org">',
-		'mgi-submissions@jax.org</a>.<P>',
+		'<a href="mailto:',
+		SUBMISSIONS,
+		'">',
+		SUBMISSIONS,
+		'</a>.<P>',
 		getField('isCopyrighted').getLabel(),
 		getField('isCopyrighted').getHTML(),
 		'<br>If you have entered copyrighted information we will contact you.<br><BR>'
@@ -884,7 +764,6 @@ def getFileUploadSection():
 		'<SPAN ID="f8" STYLE="display: none;">File 8: <INPUT NAME="file8" TYPE="file"><P></SPAN>',
 		'<SPAN ID="f9" STYLE="display: none;">File 9: <INPUT NAME="file9" TYPE="file"><P></SPAN>',
 		'<SPAN ID="f10" STYLE="display: none;">File 10: <INPUT NAME="file10" TYPE="file"> (limit is 10 files)<P></SPAN>',
-		'See <A HREF="%ssubmissions/amsp_submission_examples.shtml" TARGET="_blank">examples and templates</A> for file submissions.' % config['MGIHOME_URL'],
 		]
 	return ''.join(items)
 
@@ -965,8 +844,8 @@ def getMainForm(fromVerify):
 		'<TR><TD ALIGN="left" BGCOLOR="#d0e2f3">',
 		'&nbsp;&nbsp;&nbsp;&nbsp;<B><A HREF="" ',
 		'''onClick="toggle('alleleSection'); return false;">''',
-		'Allele</A></B>&nbsp;&nbsp;',
-		'Name and describe a new allele, mutation, or transgene',
+		'Recombinase knock-in or transgene</A></B>&nbsp;&nbsp;',
+		'Name and describe the new knock-in allele or transgene.',
 		'</TD></TR>',
 		'<TR ID="alleleSection"%s><TD>' % hiddenStyle(SHOW_ALLELE),
 		getAlleleSection(),
@@ -974,21 +853,22 @@ def getMainForm(fromVerify):
 		'<TR><TD ALIGN="left" BGCOLOR="#d0e2f3">',
 		'&nbsp;&nbsp;&nbsp;&nbsp;<B><A HREF="" ',
 		'''onClick="toggle('strainSection'); return false;">''',
-		'Strain</A></B>&nbsp;&nbsp;',
-		'Register a new mouse strain',
+		'Genetic Background</A></B>&nbsp;&nbsp;',
+		'Information on the genetic background carrying the recombinase ',
+		'construct and the cross made to characterize recombinase activity.',
 		'</TD></TR>',
 		'<TR ID="strainSection"%s><TD>' % hiddenStyle(SHOW_STRAIN),
 		getStrainSection(),
 		'</TD></TR>',
 		'<TR><TD ALIGN="left" BGCOLOR="#d0e2f3">',
 		'&nbsp;&nbsp;&nbsp;&nbsp;<B><A HREF="" ',
-		'''onClick="toggle('phenotypeSection'); return false;">''',
-		'Phenotypes</A></B>&nbsp;&nbsp;',
-		'Submit phenotype data for given genotypes',
+		'''onClick="toggle('recombinaseSection'); return false;">''',
+		'Recombinase activity data</A></B>&nbsp;&nbsp;',
+		'Data on recombinase (cre) specificity/activity.',
 		'</TD></TR>',
-		'<TR ID="phenotypeSection"%s><TD>' % \
-			hiddenStyle(SHOW_PHENOTYPE),
-		getPhenotypeSection(),
+		'<TR ID="recombinaseSection"%s><TD>' % \
+			hiddenStyle(SHOW_RECOMBINASE),
+		getRecombinaseSection(),
 		'</TD></TR>',
 		'<TR><TD ALIGN="left" BGCOLOR="#d0e2f3">',
 		'&nbsp;&nbsp;&nbsp;&nbsp;<B><A HREF="" ',
@@ -1026,7 +906,7 @@ def getResetSpan():
 		'<SPAN ID="confirmReset" STYLE="display:none;">',
 		'Are you sure you want to reset all values on the page?',
 		'''<INPUT TYPE="button" VALUE="No, skip it" NAME="resetSkipped" onClick="toggle('confirmReset');">''',
-		'''<INPUT TYPE="button" VALUE="Yes, reset the page" NAME="resetConfirmed" onClick='window.location.href="%ssubmissions/amsp_submission.cgi?blank=1"'>''' % config['MGIHOME_URL'],
+		'''<INPUT TYPE="button" VALUE="Yes, reset the page" NAME="resetConfirmed" onClick='window.location.href="%ssubmissions/recombinase_submission.cgi?blank=1"'>''' % config['MGIHOME_URL'],
 		'</SPAN>',
 		]
 	return '\n'.join(items)
@@ -1040,10 +920,13 @@ def getInitialForm():
 	# Throws: nothing
 
 	items = [ 
-		'Use this Submission Form to describe spontaneous, induced, ',
-		'or genetically engineered mutations, to register new mouse ',
-		'strains, and to describe phenotypes.<P>',
-		'<FORM ACTION="%ssubmissions/amsp_submission.cgi" METHOD="POST" ENCTYPE="multipart/form-data">' % config['MGIHOME_URL'],
+		'<H4>Cre is currently the most commonly used recombinase. ',
+		'The Recombinase (cre) Portal accepts data about cre-bearing transgenes '
+		'and knock-ins as well as non-cre recombinase (Flg, Dre, phiC31, etc.) and '
+		'inducible forms of recombinases.</H4>'
+		'Use this Submission Form to describe recombinase activity/specificity for',
+		' knock-in or transgenic alleles, and new recombinase mouse lines.',
+		'<FORM ACTION="%ssubmissions/recombinase_submission.cgi" METHOD="POST" ENCTYPE="multipart/form-data">' % config['MGIHOME_URL'],
 		getMainForm(False),
 		'<P>',
 		'<B>Use the buttons below to verify your data before ',
@@ -1069,7 +952,7 @@ def getVerifyForm (
 	# Assumes: nothing
 	# Throws: nothing
 
-	global SHOW_ALLELE, SHOW_PHENOTYPE, SHOW_STRAIN, SHOW_FILES
+	global SHOW_ALLELE, SHOW_RECOMBINASE, SHOW_STRAIN, SHOW_FILES
 
 	# if we were not given a textual representation (with validation done)
 	# then build it now
@@ -1123,12 +1006,14 @@ def getVerifyForm (
 		# they choose to show their form, they'll see what they filled
 		# in
 
-		if anySubmitted(ALLELE_FIELDS):
-			SHOW_ALLELE = True
-		if anySubmitted(STRAIN_FIELDS):
-			SHOW_STRAIN = True
-		if anySubmitted(PHENOTYPE_FIELDS):
-			SHOW_PHENOTYPE = True
+		#if anySubmitted(ALLELE_FIELDS):
+		#	SHOW_ALLELE = True
+		#if anySubmitted(STRAIN_FIELDS):
+		#	SHOW_STRAIN = True
+
+		SHOW_ALLELE = True
+		SHOW_STRAIN = True
+
 		if UPLOADED_FILES:
 			SHOW_FILES = True
 
@@ -1148,7 +1033,7 @@ def getVerifyForm (
 
 	items = items + [
 		'<PRE>%s</PRE>' % text,
-		'<FORM ACTION="%ssubmissions/amsp_submission.cgi" ENCTYPE="multipart/form-data" METHOD="POST">' % config['MGIHOME_URL'],
+		'<FORM ACTION="%ssubmissions/recombinase_submission.cgi" ENCTYPE="multipart/form-data" METHOD="POST">' % config['MGIHOME_URL'],
 		preForm,
 		getMainForm(True),
 		postForm,
@@ -1417,32 +1302,24 @@ def updateFields (
 				'contents' : contents } )
 	return
 
-def anySubmitted (
-	allFields 		# list of strings; all fieldnames in section
-	):
-	# Purpose: determine if a value was submitted for any of 'allFields'
-	# Returns: boolean; True if any submitted, False if not
-	# Modifies: nothing
-	# Assumes: nothing
-	# Throws: nothing
-
-	# special handling for inheritance field with unknown default
-	inheritance = getField('inheritance')
-
-	for field in allFields:
-		if field.getValue():
-			if field != inheritance:
-				return True
-
-			# special checks for the Inheritance field; to be
-			# considered a submitted choice, it should be:
-			#   1. not the 'unknown/not applicable' choice
-			#   2. not the default '' choice
-
-			if not field.getValue().startswith('unknown'):
-				if not field.getValue().strip() == '':
-					return True
-	return False
+#def anySubmitted (
+#	allFields 		# list of strings; all fieldnames in section
+#	):
+#	# Purpose: determine if a value was submitted for any of 'allFields'
+#	# Returns: boolean; True if any submitted, False if not
+#	# Modifies: nothing
+#	# Assumes: nothing
+#	# Throws: nothing
+#
+#	# special handling for inheritance field with unknown default
+#	inheritance = getField('inheritance')
+#
+#	for field in allFields:
+#		if field.getValue():
+#			if field != inheritance:
+#				return True
+#
+#	return False
 
 def checkSection (
 	allFields, 		# list of strings; all fieldnames in section
@@ -1462,13 +1339,12 @@ def checkSection (
 
 	errors = []			# list of error strings
 
-	if anySubmitted(allFields):
-		for fieldname in requiredFieldnames:
-			if not getField(fieldname).getValue():
-				errors.append ('If you enter any field in the %s section, you must enter a value for %s' % (
-					sectionName, 
-					getField(fieldname).getLabel() ) )
-				ERRANT_FIELDS[fieldname] = True
+	for fieldname in requiredFieldnames:
+		if not getField(fieldname).getValue():
+			errors.append ('If you enter any field in the %s section, you must enter a value for %s' % (
+				sectionName, 
+				getField(fieldname).getLabel() ) )
+			ERRANT_FIELDS[fieldname] = True
 	return errors
 	
 # dictionary; maps from gene ID/symbol to boolean (True/False) indicating
@@ -1533,7 +1409,7 @@ def doExtraValidation():
 	# Assumes: we can query the database
 	# Throws: nothing
 
-	global ERRANT_FIELDS, SHOW_ALLELE, SHOW_PHENOTYPE, SHOW_STRAIN
+	global ERRANT_FIELDS, SHOW_ALLELE, SHOW_RECOMBINASE, SHOW_STRAIN
 	global KNOWN_ALLELES, file1
 
 	errors = []
@@ -1572,7 +1448,7 @@ def doExtraValidation():
 	# fields in that section were filled in
 
 	e = checkSection (ALLELE_FIELDS, [ 'alleleSymbol', 'alleleClass' ],
-		'Enter Allele Data')
+		'Enter recombinase knock-in or transgene data')
 	if e:
 		SHOW_ALLELE = True
 		errors = errors + e
@@ -1580,20 +1456,10 @@ def doExtraValidation():
 	# strain name & strain category must be filled in, if any fields in
 	# that section were filled in
 
-	e = checkSection (STRAIN_FIELDS, [ 'strain', 'strainCategory' ],
-		'Register a New Mouse Strain')
+	e = checkSection (STRAIN_FIELDS, [ 'strain', 'strainGenotypeAnalysis', 'strainBackgroundAnalysis' ], 
+		'Genetic background on which the knock-in or transgene is maintained')
 	if e:
 		SHOW_STRAIN = True
-		errors = errors + e
-
-	# allele pairs, genetic background, and phenotype description must be
-	# filled in, if any fields in that section were filled in
-
-	e = checkSection (PHENOTYPE_FIELDS, [ 'allelePairs',
-		'geneticBackground', 'phenoDescription' ],
-		'Submit Phenotype Data')
-	if e:
-		SHOW_PHENOTYPE = True
 		errors = errors + e
 
 	return errors
@@ -1605,11 +1471,11 @@ def buildText(escapeValues = False):
 	# Assumes: nothing
 	# Throws: nothing
 
-	global SHOW_ALLELE, SHOW_PHENOTYPE, SHOW_STRAIN, ERRANT_FIELDS, ERRORS
+	global SHOW_ALLELE, SHOW_RECOMBINASE, SHOW_STRAIN, ERRANT_FIELDS, ERRORS
 
 	# list of sections with Field objects
 	sections = [ CONTACT_FIELDS, CITING_FIELDS, ALLELE_FIELDS,
-		STRAIN_FIELDS, PHENOTYPE_FIELDS, COMMENTS_FIELDS, CAPTCHA_FIELDS ]
+		STRAIN_FIELDS, COMMENTS_FIELDS, CAPTCHA_FIELDS ]
 
 	# list of strings, each one line for pre-formatted text output
 	lines = []
@@ -1683,8 +1549,6 @@ def buildText(escapeValues = False):
 					SHOW_ALLELE = True
 				elif section == STRAIN_FIELDS:
 					SHOW_STRAIN = True
-				elif section == PHENOTYPE_FIELDS:
-					SHOW_PHENOTYPE = True
 
 		# if we had a line in this section, then we need to add a
 		# divider line
@@ -1919,7 +1783,7 @@ def sendError (
 	# Throws: raises SystemExit to exit the script
 
 	(exc_type, exc_message, exc_traceback) = sys.exc_info()
-	sys.stderr.write ('amsp_submission.cgi : %s : %s\n' % (exc_type,
+	sys.stderr.write ('recombinase_submission.cgi : %s : %s\n' % (exc_type,
 		exc_message))
 	traceback.print_exception (exc_type, exc_message, exc_traceback, None,
 		sys.stderr)
@@ -1959,7 +1823,7 @@ def sendMail (
 		fd.close()
 	except:
 		(exc_type, exc_message, exc_traceback) = sys.exc_info()
-		sys.stderr.write ('amsp_submission.cgi : %s : %s\n' % (
+		sys.stderr.write ('recombinase_submission.cgi : %s : %s\n' % (
 			exc_type, exc_message))
 		traceback.print_exception (exc_type, exc_message, 
 			exc_traceback, None, sys.stderr)
@@ -2022,7 +1886,7 @@ def acceptSubmission (
 		]
 
 	try:
-		sendMail(unescapedText, 'mgi-submissions@jax.org',
+		sendMail(unescapedText, SUBMISSIONS,
 			getField('email').getValue(),
 			'Confirmation of your form submission')
 	except:
@@ -2035,11 +1899,11 @@ def acceptSubmission (
 			'\n\nSubmission Directory: %s' % myDir + '\n'
 		sendMail(unescapedText, getField('email').getValue(),
 			SUBMISSIONS,
-			'Received AMSP form submission')
+			'Received Recombinase Knock-in or Transgenic form submission')
 	except:
 		log ('Failed to send notification email to %s' % SUBMISSIONS)
 
-	items.append ('<P>Would you like to <A HREF="%ssubmissions/amsp_submission.cgi">make another submission</A>?' % config['MGIHOME_URL'])
+	items.append ('<P>Would you like to <A HREF="%ssubmissions/recombinase_submission.cgi">make another submission</A>?' % config['MGIHOME_URL'])
 	output.setBody('\n'.join(items))
 	print output.getFullDocument() 
 	return
@@ -2055,7 +1919,7 @@ def main():
 	global file1
 
 	# initial setup of output page (assume TEMPLATE_PATH is correct)
-	myTitle = 'Mutant Alleles, Strains, and Phenotypes Submission Form'
+	myTitle = 'Recombinase Knock-in or Transgenic Allele Activity/Specificity Data Submission'
 	output = template.Template(config['TEMPLATE_PATH'])
 	output.setTitle(myTitle)
 	output.setHeaderBarMainText(myTitle)
