@@ -909,13 +909,11 @@ class UserInput:
 		captchaFormFile.close()	
 	
 		bodyTop = [
-			'''We want to hear from you.  Use this form to submit
-			updates to the information in our
-			database.  Please enter the contact information in the
-			fields below so we can respond to you.  Be as detailed
-			in your message as possible, and please include
-			references as appropriate.  We appreciate your input
-			and comments, and will review them promptly.''',
+			'''We want to hear from you. Use this form to submit updates to 
+			information in MGI. Please enter the contact information in the 
+			fields below so we can respond to you. Be as detailed in your 
+			message as possible, and please include references as 
+			appropriate. We appreciate your input. ''',
 			'<FORM METHOD=post ACTION=feedback.cgi>',
 			captchaForm,
 			'<TABLE>',
@@ -1227,16 +1225,15 @@ class AlleleUserInput (SimpleTextUserInput):
 		#	values.
 
 		SimpleTextUserInput.__init__ (self)
-		self.commentInstructions = '''Use this space to suggest
-			modifications and additions to the annotations for
-			this allele (e.g., allele synonyms, allele-specific
-			sequence identifiers, references, phenotypes).  For
-			new allele submissions, please use the
-			<a href="../submissions/amsp_submission.cgi">Mutant
-			Alleles, Strains, and Phenotypes Submission Form</a>.
-			For all other comments and suggestions, contact 
-			<a href="%ssupport/mgi_inbox.shtml">User
-			Support</a>.<BR>''' % config['MGIHOME_URL']
+		self.commentInstructions = '''Use this space to submit additional 
+			information for this allele (synonyms, allele-specific 
+			sequence identifiers, references, phenotypes, experimental 
+			observations using recombinase alleles, etc.). To submit new 
+			alleles or recombinase activity/specificity data, please use 
+			the submission forms found <a href="%ssubmit.shtml">here</a>. For all other 
+			comments and suggestions, contact 
+			<a href="%ssupport/mgi_inbox.shtml">User Support</a>.<BR>
+			''' % (config['WI_URL'],config['MGIHOME_URL'])
 		self.subject = AlleleSubjectField ('subject', 'Subject',
 			REQUIRED, width=45)
 		self.subject.setByAcc (parms)
