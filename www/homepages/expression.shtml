@@ -107,20 +107,19 @@
 <div class="boxWide blueBorder marginBottom">
 	<div class="boxTitle">
 		<span class="left">Gene Expression News</span>
-		<span class="right small">August 30, 2012</span>
+		<span class="right small">June 13, 2013</span>
 	</div>
 	<div class="boxBG pad5 small">
     <ul>
 
-<li>The <a href="<!--#include file='include/fewi_url.html'-->gxd">Gene Expression Data Query</a> form has been re-designed to add new search functions and make it easier to use. In addition to gene function (Gene Ontology) terms, you can now use phenotype or disease terms to define gene sets of interest in expression searches.  Auto fill lists for these categories and for anatomical structure searches make it easier to find the appropriate search terms. In addition to Theiler stage, age is now available as a search parameter.</li>
+<li>GXD has made it easier to view and search for its expression images. These images are now included on the assay detail pages, so they can be viewed together with their annotated results. An images tab has been added to the GXD search return, allowing users to search for expression images by using all the parameters available on the Gene Expression Data Query Form.</li>
+
+<li>The <a href="<!--#include file='include/fewi_url.html'-->gxd">Differential Expression Search</a>, present as a tab on the standard GXD query form, allows biologists to search for genes that are expressed in some anatomical structures but not others and/or in some developmental stages but not others. Formerly named The Gene Expression Data Expanded Query, this tool has been streamlined, it is easier to use and clearly delineates the different search capabilities. As was done when revising the standard Gene Expression Query, the mechanisms behind the differential searches have been re-designed to allow for speedier returns and the search return now provides tabbed data summaries that are sortable and interactive.</li>
+
+<li>The layout of the GXD assay detail page has also been entirely re-designed. As well as displaying images, the page now emphasizes the most biologically important annotations.</li>
+
+<!--<li>The <a href="<!--#include file='include/fewi_url.html'-->gxd">Gene Expression Data Query</a> form has been re-designed to add new search functions and make it easier to use. In addition to gene function (Gene Ontology) terms, you can now use phenotype or disease terms to define gene sets of interest in expression searches.  Auto fill lists for these categories and for anatomical structure searches make it easier to find the appropriate search terms. In addition to Theiler stage, age is now available as a search parameter.</li>-->
 <br>
-<li>The mechanisms behind the searches and their returned data summaries have been entirely re-designed. The most noticeable improvement will be the speed of the return. Each search will now return a page with tabbed summaries for the assay results, assays, and genes matching your parameters. Most columns on these summaries are sortable.  New columns have been added to provide additional context. The figure links on the assay results tab provide direct access to images of data. Export features have been added to the assay results and genes tabs, allowing results to be downloaded in text or spreadsheet format. The genes list can be forwarded to the MGI batch query to allow you to search for additional information, such as the function, phenotype and/or disease terms associated with the genes of interest.</li> 
-<br>
-<li>We are pleased to announce that additional RNA in situ hybridization data from the GenePaint database are available at accession number <a href="<!--#include file='include/fewi_url.html'-->reference/J:122989" class="GO">J:122989</a>. The GenePaint data set in MGI now includes nearly 290,000 RNA in situ hybridization results examining the expression of over 2,900 genes at E14.5. Nearly 25,000 images accompany these data.</li>
-<!--<br>
-<li>We are pleased to announce the inclusion of RNA in situ hybridization data from the Brain Gene Expression Map (BGEM) database.  You can view the data set at accession number 
-<a href="<!--#include file='include/fewi_url.html'-->reference/J:162220" class="GO">J:162220</a>. This set includes 53,496 results for: 1,451 genes; 1,474 assays (RNA in situ hybridizations at E11.5, E15.5, P7 and P42); and 16,112 images.  RNA in situ hybridization data from the Eurexpress project was also recently added to GXD. You can view the data set at accession number 
-<a href="<!--#include file='include/fewi_url.html'-->reference/J:153498" class="GO">J:153498</a>. This set includes ~497,000 results for 6,594 genes in 7,052 assays with more than 118,400 images.</li>-->
 <br>
 
 </ul>
