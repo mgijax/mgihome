@@ -557,8 +557,8 @@ def getAlleleSection():
 		'Enter the %s ' % label('gene',
 			'<B>gene symbol</B> or <B>MGI ID</B>:'),
 		getField('gene').getHTML(),
-		' (<I><B>Check by</B></I> <A HREF="%sWIFetch?page=markerQF" '\
-			% config['JAVAWI_URL'],
+		' (<I><B>Check by</B></I> <A HREF="%smarker/" '\
+			% config['FEWI_URL'],
 		'TARGET="_blank">searching MGI</A>.)<P>',
 		'Common nicknames for this recombinase allele ',
 		getField('nicknames').getHTML(),

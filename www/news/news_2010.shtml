@@ -48,7 +48,7 @@
 <dt>Some useful links for querying subsets of data in GXD and MGI are: 
 <ul>
   <li><A HREF="<!--#include file='include/java_url.html'-->WIFetch?page=expressionQF">Gene Expression Data Query Form</a></li>
-  <li><A HREF="<!--#include file='include/java_url.html'-->WIFetch?page=markerQF">Genes and Markers Query Form</a></li>
+  <li><A HREF="<!--#include file='include/fewi_url.html'-->marker">Genes and Markers Query Form</a></li>
 
 </ul></dt>
 	
@@ -76,7 +76,7 @@
 <dl class="linkedList">
 	<dt>For the 4.4 release, MGI adds more detailed feature type categories for genes, differentiating <i>protein coding genes</i> from <i>non-coding RNA genes</i> from markers based only on <i>heritable phenotype</i> from <i>immunological gene segments</i>. You can query an entire category or limit your search to a single subcategory.</dt>
 	<dt><ul>
-	  <li>	You can query by desired feature types on the  <A HREF="<!--#include file='include/java_url.html'-->WIFetch?page=markerQF">Genes and Markers Query Form</a>. A count of the number of genes appears for each feature category.</li>
+	  <li>	You can query by desired feature types on the  <A HREF="<!--#include file='include/fewi_url.html'-->marker">Genes and Markers Query Form</a>. A count of the number of genes appears for each feature category.</li>
 	  <li>Feature type categories appear in the output of the Genes and Markers query and in the output from any Quick Search.</li>
 	  <li>Using MGI BioMart, you can pick a type from the MGI Feature Type list (Attributes-->Genome Features-->MGI Feature Type) and then select Feature Type as an attribute (Attributes-->Features--Feature Type). The result is a list of all MGI entities assigned that feature type. </li>
 <li>You can also use the MGI Batch Query Form to enter or upload a list of symbols or IDs to search on. A column identifying the feature type for each list item appears in the results. </li>
@@ -203,16 +203,16 @@ The three examples above are from the MGI <a href="<!--#include file='include/fe
 </dt><br>
  <dt>An option to direct the output of your query to Excel is now available from the following:<br><br>
 <ul>
-<li><A HREF="<!--#include file='include/java_url.html'-->WIFetch?page=markerQF">Genes and Markers Query Form</a></li><br>
+<li><A HREF="<!--#include file='include/fewi_url.html'-->marker">Genes and Markers Query Form</a></li><br>
 <li><a href="<!--#include file='include/java_url.html'-->WIFetch?page=snpQF">Mouse SNP Query Form</a></li><br>
 
 <li><a href="<!--#include file='include/wi_url.html'-->searches/sequence_form.shtml">Mouse Sequence Query Form</a></li><br>
 
-<li><a href="<!--#include file='include/java_url.html'-->WIFetch?page=batchQF">MGI Batch Query</a> </li>
+<li><a href="<!--#include file='include/fewi_url.html'-->batch">MGI Batch Query</a> </li>
 </ul>
 </dt>	<br>
 
-<dt>Additionally, the <a href="<!--#include file='include/java_url.html'-->WIFetch?page=batchQF">MGI Batch Query</a> can now handle very large files.</dt>
+<dt>Additionally, the <a href="<!--#include file='include/fewi_url.html'-->batch">MGI Batch Query</a> can now handle very large files.</dt>
 
 	</dl>
 
