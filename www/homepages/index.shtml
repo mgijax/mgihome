@@ -3,7 +3,7 @@
 <title>MGI-Mouse Genome Informatics-The international database resource for the laboratory mouse</title>
 
   <meta name="description" content="MGI: the international database resource for the laboratory mouse, providing integrated genetic, genomic, and biological data for researching human health and disease." />
-  <meta name="keywords" content="Mouse Genome Database, Gene Expression Database, Mouse Tumor Biology, Gene Ontology, Mouse Genome Sequence Project, MGI, mgi, MGD, mgd, mice, mus musculus, murine, gene products, proteins, biochemical pathways, ontology, recombinase, transgene, knock-in, allele, phenotype, nomenclature" />
+  <meta name="keywords" content="Mouse Genome Database, Gene Expression Database, Mouse Tumor Biology, Gene Ontology, Mouse Genome Sequence Project, MGI, mgi, mice, mus musculus, murine, gene products, proteins, biochemical pathways, ontology, recombinase, transgene, knock-in, allele, phenotype, biochemical pathway" />
 
 
   <meta name="robots" content="NOODP" />
@@ -18,282 +18,459 @@
 <div style="text-align: center;">
 <div id="homePageBodyInsert" style="text-align: left;">
 
-<div class="blueBorder marginBottom pad5" style="background-color:#F0F8FF;">
-    <form action="<!--#include file="include/quicksearch_url.html"-->Search.do" method="get">
-	<table align="center">
-		<tbody>
-		  <tr>
-		 <td>
-			    <a onClick="return false;" href="<!--#include file="include/userhelp_url.html"-->QUICK_SEARCH_help.shtml"
-			         onMouseOver="return overlib('You can:<ul class=\'searchToolHelp\'><li>Search for genome features by name, symbol, synonym, homolog, allele, or accession ID:</li> <ul><li>p53 protein cell cycle DNA damage</li><li>Notch1</li><li>NM_053172</li><li>AT3</li></ul><li>Search for genome features and vocabulary terms by keywords or accession ID. Use several keywords to find the most relevant results:</li><ul><li>GO:0004713</li><li>resistance to fatty liver development</li><li>vitamin D receptor</li><li>lymphocyte function antigen immunodeficiency</li> </ul><li>Use asterisks (*) for wildcards at the end of partial words or genomic symbols:</li><ul><li>Pax*</li><li>embr* development</li><li>hippocamp* pyramid* cell layer</li></ul><li>Use quotation marks (&quot;&nbsp;&quot;) to indicate phrases:</li> <ul><li>&quot;hair follicle&quot; development</li><li>&quot;amyotrophic lateral sclerosis&quot;</li></ul><li>Use angle brackets to indicate superscript:</li><ul><li>Pax6&lt;10Neu&gt; for Pax6<sup>10Neu</sup></li></ul><li>Mix IDs, symbols, and keywords in a list:</li><ul><li>Nmt2, NM_013627, Acbd7, hair follicle development</li></ul></ul>Advanced searches are listed under the Search menu.<BR/>See <a href=\'<!--#include file="include/userhelp_url.html"-->QUICK_SEARCH_help.shtml\'>Using the Quick Search Tool</a> for more information.', STICKY, CAPTION, 'Quick Search Tips', CENTER, BELOW, WIDTH, 450, DELAY, 600, CLOSECLICK, CLOSETEXT, 'Close X');"
-			         onMouseOut="nd();">
-			         <!--#include file='include/help_large.html'-->
-			    </a>
-		 </td>
-		 <td>
-		    <input name="query" id="searchToolTextArea" value=" Keywords, Symbols, or IDs" onFocus="if(this.defaultValue==this.value) this.value='';" size="45" style="font-size:1.25em;">
-		 </td>
-		 <td>
-		    <input name="submit" class="searchToolButton" value="Quick Search" onClick="return verifySearchToolParms();" type="submit"><br/>
-		  </td>
-		</tr>
-		</tbody>
-	</table>
-	</form>
+<style type="text/css">
 
-</div>
+  #homePageBodyInsert {
+    width:920px;
+    height:800px;
+    margin: 0 auto;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    font-family: Verdana,Arial,Helvetica;
+    /*border:1px solid;*/
+  }
 
-  <div class="blueBorder marginTop marginBottom">
-	  <div class="boxTitle">
-	    <div class="left">Explore MGI</div>
-	    <div class="right"><a class="" href="<!--#include file='include/menus_url.html'-->allsearch.shtml">All Search Tools</a></div>
-	  </div>
+  #searchAndNavigationWrapper {
+    position: absolute;
+    top: 10px;
+    left: 0px;
+    width: 380px;
+    padding: 0px;
+    background-color: #002255;
+  }
 
-      <div class="boxBG pad5">
-      <center>
-	  <table width="97%">
-	  <tr>
-	    <td class="homePageImageLabel" width="33%">
-	      <a class="homeLink" href="<!--#include file='include/homepages_url.html'-->genes.shtml" title="Genes, Genome Features & Maps">
-	      Genes</a>
-	    </td>
-	    <td class="homePageImageLabel" width="33%">
-	      <a class="homeLink" href="<!--#include file='include/homepages_url.html'-->phenotypes.shtml" title="Phenotypes, Alleles & Disease Models">
-	      Phenotypes & Disease Models</a>
-	    </td>
-	    <td class="homePageImageLabel" width="33%">
-	      <a class="homeLink" href="<!--#include file='include/homepages_url.html'-->expression.shtml" title="Gene Expression">
-	      Expression</a>
-	    </td>
+  #mgiMissionStatement {
+    position: absolute;
+    top: 10px;
+    left: 440px;
+    width: 460px;
+    height: 58px;
+    padding: 3px;
+  }
 
-	  </tr>
-	  <tr>
-	      <td class="homePageImage" align="center" valign="middle" width="33%">
-	        <a class="homeLink" href="<!--#include file='include/homepages_url.html'-->genes.shtml">
-	        <img src="<!--#include file='include/mgihome_url.html'-->/homepages/images/homepage_GeneLogo.gif" style="border: 1px solid rgb(84, 112, 155);" height="70" width="144" title="Genes, Genome Features & Maps">
-	        </a>
-	      </td>
-	      <td class="homePageImage" align="center" valign="middle" width="33%">
-	        <a class="homeLink" href="<!--#include file='include/homepages_url.html'-->phenotypes.shtml">
-	        <img src="<!--#include file='include/mgihome_url.html'-->/homepages/images/homepage_PhenoLogo.jpg" style="border: 1px solid rgb(84, 112, 155);" height="70" width="102" title="Phenotypes, Alleles & Disease Models">
-	        </a>
-	      </td>
-	      <td class="homePageImage" align="center" valign="middle" width="33%">
-	        <a class="homeLink" href="<!--#include file='include/homepages_url.html'-->expression.shtml">
-	        <img src="<!--#include file='include/mgihome_url.html'-->/homepages/images/homepage_GXDLogo.gif" style="border: 1px solid rgb(84, 112, 155);" height="70" width="119" title="Gene Expression">
-	        </a>
-	      </td>
+  #mgiWhatsNew {
+    position: absolute;
+    top: 380px;
+    left: 440px;
+    width: 460px;
+    height: 200px;
+    padding: 3px;
+  }
 
-	  </tr>
-        <td class="homePageImageLabel">
-          <a class="homeLink" href="<!--#include file='include/homepages_url.html'-->recombinase.shtml" title="Recombinase Tissue Specificity">
-          Recombinases (cre)</a>
-        </td>
-        <td class="homePageImageLabel">
-          <a class="homeLink" href="<!--#include file='include/homepages_url.html'-->function.shtml" title="GO Functional Annotations">
-          Function</a>
-        </td>
-	    <td class="homePageImageLabel">
-	      <a class="homeLink" href="<!--#include file='include/homepages_url.html'-->pathways.shtml" title="Biochemical Pathways">
-	      Pathways</a>
-	    </td>
-	 </tr>
-	  <tr>
-        <td class="homePageImage" align="center" valign="middle" width="33%">
-          <a class="homeLink" href="<!--#include file='include/homepages_url.html'-->recombinase.shtml">
-          <img src="<!--#include file='include/mgihome_url.html'-->/homepages/images/homepage_creLogo.gif" style="border: 1px solid rgb(84, 112, 155);" height="70" width="112" title="Recombinase Tissue Specificity (image courtesy of Journal of Cell Science)">
+  .minihomeAnchor {
+    text-decoration: none;
+    color: inherit;
+  }
+  .homepageButton{
+    font-size:1.2em;
+    width: %100;
+    height: 24px;
+    background-color: #DFEFFF;
+    margin:5px 8px;
+    border: 2px outset #ffffff ;
+  }
+  .homepageButtonText{
+    position:relative;
+    bottom:5px;
+  }
+  .homepageButton:hover {
+    background-color:#408c99;
+    color: #fff;
+    border: 2px inset #ffffff ;
+  }
+  .homepageButton img{
+    height: 24px;
+    width: 44px;
+  }
 
+  #communityInterest{
+    position: absolute;
+    top: 605px;
+    left: 0px;
+    width: 900px;
+    height: 175px;
+    padding: 3px;
+  }
 
+  #imageGallaryLayoutDiv {
+    position: absolute;
+    top: 100px;
+    left: 440px;
+    width: 460px;
+    height: 260px;
+    padding: 3px;
+  }
 
+  #imageGallaryWrapper{
+    position: absolute;
+    top: 20px;
+    left: 80px;
+    /*border:4px solid;*/
+  }
+  .hide { display:none; }
+  .relativePos { position:relative; }
 
-          </a>
-        </td>
-        <td class="homePageImage" align="center" valign="middle" width="33%">
-          <a class="homeLink" href="<!--#include file='include/homepages_url.html'-->function.shtml">
-          <img src="<!--#include file='include/mgihome_url.html'-->/homepages/images/homepage_GOLogo.gif" style="border: 1px solid rgb(84, 112, 155);" height="70" width="136" title="GO Functional Annotations">
-          </a>
-        </td>
-	    <td class="homePageImage" align="center" valign="middle" width="33%">
-	      <a class="homeLink" href="<!--#include file='include/homepages_url.html'-->pathways.shtml">
-	      <img src="<!--#include file='include/mgihome_url.html'-->/homepages/images/homepage_BioPathLogo.gif" style="border: 1px solid rgb(84, 112, 155);" height="70" width="117" title="Biochemical Pathways">
-	      </a>
-	    </td>
-	 </tr>
-	 <tr>
-        <td class="homePageImageLabel">
-          <a class="homeLink" href="<!--#include file='include/homepages_url.html'-->strains_SNPs.shtml" title="Strains, SNPs & Polymorphisms">
-          Strains / SNPs</a>
-        </td>
-        <td class="homePageImageLabel">
-          <a class="homeLink" href="<!--#include file='include/homepages_url.html'-->orthology.shtml" title="Vertebrate Homology">
-          Homology</a>
-        </td>
-        <td class="homePageImageLabel">
-          <a class="homeLink" href="<!--#include file='include/mtb_url.html'-->" title="Mouse Tumor Biology">
-          Tumors</a>
-        </td>
-      </tr>
-	 <tr>
-	    <td class="homePageImage" align="center" valign="middle" width="33%">
-	      <a class="homeLink" href="<!--#include file='include/homepages_url.html'-->strains_SNPs.shtml">
-	      <img src="<!--#include file='include/mgihome_url.html'-->/homepages/images/homepage_StrainLogo.jpg" style="border: 1px solid rgb(84, 112, 155);" height="70" width="111" title="Strains, SNPs & Polymorphisms">
-	      </a>
-	    </td>
-	    <td class="homePageImage" align="center" valign="middle" width="33%">
-	      <a class="homeLink" href="<!--#include file='include/homepages_url.html'-->orthology.shtml">
-	      <img src="<!--#include file='include/mgihome_url.html'-->/homepages/images/homepage_OrthoLogo.gif" style="border: 1px solid rgb(84, 112, 155);" height="70" width="117" title="Vertebrate Homology">
-	      </a>
-	    </td>
-	    <td class="homePageImage" align="center" valign="middle" width="33%">
-	      <a class="homeLink" href="<!--#include file='include/mtb_url.html'-->">
-	      <img src="<!--#include file='include/mgihome_url.html'-->/homepages/images/homepage_MTBLogo.jpg" style="border: 1px solid rgb(84, 112, 155);"  height="70" width="112" title="Mouse Tumor Biology">
-	      </a>
-	    </td>
-	  </tr>
-	  </table>
-      </center>
+  .frontpageBulletPoints {
+    padding: 0em;
+  }
+  .frontpageBulletPoints li {
+    margin: .1em 0em .3em .3em;
+    list-style-position: outside;
+    line-height: 1.1em;
+    list-style-type: disc;
+    margin-left: 12px;
+  }
+}
+
+</style>
+
+<div id="homePageBodyInsert">
+
+  <div id="searchAndNavigationWrapper" >
+
+    <!-- searchtool -->
+    <div id="searchToolWrapper" >
+      <form action="<!--#include file="include/quicksearch_url.html"-->Search.do" method="get">
+      <input name="query" id="searchToolTextArea" value=" Keywords, Symbols, or IDs"
+        onFocus="if(this.defaultValue==this.value) this.value='';"
+        style="font-size:1.1em; height: 20px; width:285px;">
+      <input name="submit" class="searchToolButton" value="Search" onClick="return verifySearchToolParms();" type="submit"><br/>
+      </form>
+    </div>
+    <!-- advice text -->
+    <div style='padding-left:4px; padding-top:6px; color: #fff;'>
+      Or use topic specific search and analysis tools:
+    </div>
+    <!-- genes -->
+    <a class='minihomeAnchor' href='<!--#include file='include/homepages_url.html'-->genes.shtml'>
+    <div class="homepageButton">
+      <img src="http://www.informatics.jax.org/webshare/images/mgi_logo.gif"></img>
+      <span class='homepageButtonText'>Genes</span>
+    </div>
+    </a>
+    <!-- pheno -->
+    <a class='minihomeAnchor' href='<!--#include file='include/homepages_url.html'-->phenotypes.shtml'>
+    <div class="homepageButton">
+      <img src="http://www.informatics.jax.org/webshare/images/mgi_logo.gif"></img>
+      <span class='homepageButtonText'>Phenotypes and disease models</span>
+    </div>
+    </a>
+    <!-- gxd -->
+    <a class='minihomeAnchor' href='<!--#include file='include/homepages_url.html'-->expression.shtml'>
+    <div class="homepageButton">
+      <img src="http://www.informatics.jax.org/webshare/images/mgi_logo.gif"></img>
+      <span class='homepageButtonText'>Gene Expression</span>
+    </div>
+    </a>
+    <!-- recombinase -->
+    <a class='minihomeAnchor' href='<!--#include file='include/homepages_url.html'-->recombinase.shtml'>
+    <div class="homepageButton">
+      <img src="http://www.informatics.jax.org/webshare/images/mgi_logo.gif"></img>
+      <span class='homepageButtonText'>Recombinase (cre)</span>
+    </div>
+    </a>
+    <!-- function -->
+    <a class='minihomeAnchor' href='<!--#include file='include/homepages_url.html'-->function.shtml'>
+    <div class="homepageButton">
+      <img src="http://www.informatics.jax.org/webshare/images/mgi_logo.gif"></img>
+      <span class='homepageButtonText'>Function</span>
+    </div>
+    </a>
+    <!-- strains, SNPs & polymorphisms  -->
+    <a class='minihomeAnchor' href='<!--#include file='include/homepages_url.html'-->strains_SNPs.shtml'>
+    <div class="homepageButton">
+      <img src="http://www.informatics.jax.org/webshare/images/mgi_logo.gif"></img>
+      <span class='homepageButtonText'>Strains, SNPs & Polymorphisms </span>
+    </div>
+    </a>
+    <!-- homology -->
+    <a class='minihomeAnchor' href='<!--#include file='include/homepages_url.html'-->homology.shtml'>
+    <div class="homepageButton">
+      <img src="http://www.informatics.jax.org/webshare/images/mgi_logo.gif"></img>
+      <span class='homepageButtonText'>Homology</span>
+    </div>
+    </a>
+    <!-- pathways  -->
+    <a class='minihomeAnchor' href='<!--#include file='include/homepages_url.html'-->pathways.shtml'>
+    <div class="homepageButton">
+      <img src="http://www.informatics.jax.org/webshare/images/mgi_logo.gif"></img>
+      <span class='homepageButtonText'>Pathways</span>
+    </div>
+    </a>
+    <!-- Tumors -->
+    <a class='minihomeAnchor' href="<!--#include file='include/mtb_url.html'-->" >
+    <div class="homepageButton">
+      <img src="http://www.informatics.jax.org/webshare/images/mgi_logo.gif"></img>
+      <span class='homepageButtonText'>Tumors</span>
+    </div>
+    </a>
+    <!-- human disease portal -->
+    <a class='minihomeAnchor' href='<!--#include file='include/homepages_url.html'-->humanDisease.shtml'>
+    <div class="homepageButton">
+      <img src="http://www.informatics.jax.org/webshare/images/mgi_logo.gif"></img>
+      <span class='homepageButtonText'>Human Disease Portal</span>
+    </div>
+    </a>
+    <!-- tools -->
+    <a class='minihomeAnchor' href='<!--#include file='include/homepages_url.html'-->software.shtml'>
+    <div class="homepageButton">
+      <img src="http://www.informatics.jax.org/webshare/images/mgi_logo.gif"></img>
+      <span class='homepageButtonText'>Batch Data</span>
+    </div>
+    </a>
+    <!-- nomenclature -->
+    <a class='minihomeAnchor' href='<!--#include file='include/mgihome_url.html'-->nomen/index.shtml'>
+    <div class="homepageButton">
+      <img src="http://www.informatics.jax.org/webshare/images/mgi_logo.gif"></img>
+      <span class='homepageButtonText'>Nomenclature</span>
+    </div>
+    </a>
+    <!-- spacer-->
+    <div style='height:8px;'></div>
+    <!-- getting started-->
+    <div style="margin:6px;" class="blueBorder boxBG" >
+      <div class="boxTitle" style="margin-bottom:4px;">
+        <div class="left">Getting Started:</div>
       </div>
+      <ul class="frontpageBulletPoints">
+        <li>Introduction to mouse genetics</li>
+        <li>How to use MGI</li>
+        <li>The mouse as a model of human disease</li>
+      </ul>
+    </div>
+
+    </div>
+  </div> <!--id="searchAndNavigationWrapper" -->
+
+  <div id="mgiMissionStatement" class="blueBorder boxBG" >
+    <div style="margin:3px;">
+    MGI is the international database resource for the laboratory mouse,
+    providing integrated genetic, genomic, and biological data to facilitate
+    the study of human health and disease.
+    </div>
   </div>
 
-  <table cellpadding="0" cellspacing="0" width="100%">
-  <tr>
-    <td width="50%" valign="top">
-    <div id="homeFAQs" class="blueBorder rightCenterMargin">
-      <div class="boxTitle">
-          <div class="left">FAQs</div>
-      </div>
-           <div class="boxBG pad5">
-      		<dl class="boxList">
-     		 <dt>How do I...</dt>
-       		 <dd class="faqListHomePage">.. search for genes by genomic interval?
-		    <a class="small homeLink"
-                    onClick='javascript:openFaqWindow("GM_marker.shtml"); return false;'
-                    href="<!--#include file='include/faq_url.html'-->GM_marker.shtml">FAQ</a>
-                </dd>
-                <dd class="faqListHomePage">.. find mutations for phenotypes or diseases?
-                <a class="small homeLink"
-                onClick='javascript:openFaqWindow("PAD_allele.shtml"); return false;'
-                href="<!--#include file='include/faq_url.html'-->PAD_allele.shtml">FAQ
-        	</a>
-      		</dd>
-      <dd class="faqListHomePage">.. find expression data?
-        <a class="small homeLink"
-          onClick='javascript:openFaqWindow("GXD_GeneTissue.shtml"); return false;'
-          href="<!--#include file='include/faq_url.html'-->GXD_GeneTissue.shtml">FAQ
-        </a>
-      </dd>
-      <dd class="faqListHomePage">.. view a structural genomic map?
-        <a class="small homeLink"
-          onClick='javascript:openFaqWindow("GM_genmap.shtml"); return false;'
-          href="<!--#include file='include/faq_url.html'-->GM_genmap.shtml">FAQ
-        </a>
-      </dd>
-      <!--spacer - adjust as necessary -->
+  <div id="imageGallaryLayoutDiv" class="blueBorder boxBG" >
+    <div class='relativePos'>
+      <div id='imageGallaryWrapper'>
 
-      <div style="height: 4.1em;">
-	  </dl>
-    <div class="left"><a class="small homeLink" href="<!--#include file='include/faq_url.html'-->FAQ.shtml">More FAQs</a></div>
-        <div class="right"><a class="small homeLink" href="http://www.openhelix.com/mgi">MGI tutorial</a> <font size="-2">(OpenHelix)</font></div>
-      </div>
+		<div id="rotatingImages">
+		  <div>
+            <a href='http://www.informatics.jax.org/genes.shtml'>
+            <img class='rotatingImage' src="<!--#include file='include/mgihome_url.html'-->/homepages/images/homepage_GeneLogo.gif" ></img>
+            </a>
+          </div>
+		  <div>
+            <a href='http://www.informatics.jax.org/expression.shtml'>
+		    <img class='rotatingImage' src="<!--#include file='include/mgihome_url.html'-->/homepages/images/homepage_GXDLogo.gif"></img>
+            </a>
+          </div>
+		  <div>
+            <a href='http://www.informatics.jax.org/phenotypes.shtml'>
+		    <img class='rotatingImage' src="<!--#include file='include/mgihome_url.html'-->/homepages/images/homepage_PhenoLogo.jpg"></img>
+            </a>
+          </div>
+		  <div>
+            <a href='http://tumor.informatics.jax.org/mtbwi/index.do'>
+		    <img class='rotatingImage' src="<!--#include file='include/mgihome_url.html'-->/homepages/images/homepage_MTBLogo.jpg"></img>
+            </a>
+          </div>
+	    </div>
 
-     &nbsp;</div>
+	    <div id="rotatorControl">
+	      <span id="ri_pause" class="hide">Pause</span>
+	      <span id="ri_play">Play</span>
+	    </div>
 
-    </div>
-
-    </td>
-
-    <td width="50%" valign="top">
-
-    <div class="blueBorder leftCenterMargin">
-      <div class="boxTitle">
-        <div class="left">News
-	</div>
-
-
-        <div class="right small">June 20, 2013&nbsp;
-        </div>
-
-      </div>
-        <div class="boxBG pad5">
-        <ul class="newsList"><br />
-
-<li>Improved access to gene expression images, enhanced expression assay detail pages and a new differential expression search. <a class="homeLink" href="<!--#include file="include/mgihome_url.html"-->news/whatsnew.shtml">Read more...</a></li>
-
-<li>Updated recombinase search, tissue summary and allele detail pages. <a class="homeLink" href="<!--#include file="include/mgihome_url.html"-->news/whatsnew.shtml">Read more...</a></li>
-
-<li>MGI SNP data are updated to NCBI dbSNP Build 137. <a class="homeLink" href="<!--#include file="include/mgihome_url.html"-->news/whatsnew.shtml">Read more...</a></li>
-
-<li>MGI uses homology class data from HomoloGene and now includes chicken, zebrafish and rhesus macaque homologs. <a class="homeLink" href="<!--#include file="include/mgihome_url.html"-->news/whatsnew.shtml">Read more...</a></li>
-
-<!--<li>MouseMine, an instance of the InterMine data warehouse system, offers powerful new ways of accessing MGI data. <a class="homeLink" href="<!--#include file="include/mgihome_url.html"-->news/whatsnew.shtml">Read more...</a></li>-->
-
-        </ul>
-
-        <!--spacer: adjust  to make this the same height as the access box - adjust as necessary-->
-        <div style="height: .4em;"></div>
-
-        <div class="padBottom">
-	        <div class="left"><a class="homeLink small" href="<!--#include file='include/mgihome_url.html'-->news/whatsnew.shtml">More MGI news</a></div>
-	        <div class="right"><a class="homeLink small" href="<!--#include file="include/mgihome_url.html"-->homepages/stats/all_stats.shtml">MGI Statistics</a></div>
-        </div>
       </div>
     </div>
-    </td>
-  </tr>
-  </table>
+  </div>
 
-  <!--Mouse Community News -->
-  <div class="blueBorder marginTop marginBottom">
-	  <div class="boxTitle">
-	    <span class="left">Mouse Community News</span>
-	  </div>
-	  <div class="boxBG pad5">
 
-<b>MGI Roadshows:</b><br><br>
+  <div id="mgiWhatsNew" class="blueBorder boxBG" >
+    <div class="boxTitle">
+      <div class="left">What's new at MGI</div>
+      <div class="right small">October 10, 2013&nbsp;</div>
+    </div>
+    <ul class="frontpageBulletPoints">
+      <li>Improved access to gene expression images, enhanced expression assay detail pages and a new differential expression search. <a class="homeLink" href="<!--#include file="include/mgihome_url.html"-->news/whatsnew.shtml">Read more...</a></li>
+      <li>Updated recombinase search, tissue summary and allele detail pages. <a class="homeLink" href="<!--#include file="include/mgihome_url.html"-->news/whatsnew.shtml">Read more...</a></li>
+      <li>MGI SNP data are updated to NCBI dbSNP Build 137. <a class="homeLink" href="<!--#include file="include/mgihome_url.html"-->news/whatsnew.shtml">Read more...</a></li>
+      <li>MGI uses homology class data from HomoloGene and now includes chicken, zebrafish and rhesus macaque homologs. <a class="homeLink" href="<!--#include file="include/mgihome_url.html"-->news/whatsnew.shtml">Read more...</a></li>
+    </ul>
+    <br/>
+      <div class="right"><a class="homeLink small" href="<!--#include file='include/mgihome_url.html'-->news/whatsnew.shtml">More MGI news</a></div><br/>
+      <div class="right"><a class="homeLink small" href="<!--#include file='include/mgihome_url.html'-->homepages/stats/all_stats.shtml">MGI Statistics</a></div>
+  </div>
 
-<blockquote>
-<table border="0" cellspacing="1" cellpadding="3" width="!">
+  <div id="communityInterest" class="blueBorder boxBG" >
+    <div class="boxTitle">
+      <div class="left">Community Interest</div>
+    </div>
+    <span class='bold' style='margin-top:5px; margin-left:8px;'>Research Highlights</span>
 
-<tr><td align="left" valign="top">November 12, 2013 </td><td>&nbsp;&nbsp;&nbsp;</td><td align="left" valign="top">Vanderbilt University, Nashville, TN</td></tr>
+  </div>
 
-<!--<tr><td align="left" valign="top">October 2, 2013 </td><td>&nbsp;&nbsp;&nbsp;</td><td align="left" valign="top">Texas A&M, Texas Institute of Genomic Medicine, College Station, TX</td></tr>-->
-
-</table>
-</blockquote>
-<br></br>
-
- If you would like to host an MGI workshop at your institution,
-	  <a href="<!--#include file='include/mgihome_url.html'-->support/mgi_inbox.shtml">contact User Support</a> to discuss the <a href="<!--#include file='include/mgihome_url.html'-->support/Roadshow_description.pdf">details</a>.
-      <br><br/>
-
-If you would like to schedule a remote interactive session to learn to use MGI,  <a href="<!--#include file='include/mgihome_url.html'-->support/mgi_inbox.shtml" title="Contact user support">contact User Support</a> to discuss the details.
-
- <br></br>
-
-<b>Of Note:</b><br><br>
-
-      <!--<span class="smaller"></span> Visit MGI posters at these upcoming conferences:
-      	<table cellspacing=2>
-<tr>
-<tr><td></td>
-<td><li><a href="http://meetings.cshl.edu/meetings/mouse08.shtml" class="homeLink">Mouse Genetics & Genomics: Development & Disease</a> </li></td></tr>
-<tr><td></td>
-<td><li><a href="http://www.mammaliangenomeconference.com/" class="homeLink">22nd International Mammalian Genome Conference (IMGC)</a></li></td></tr>
-Prague Nov 2-5, 2008
-
-        	</table>
-     <br/><br/>-->
-	Visit the new central web site of the <a href="http://www.knockoutmouse.org">International Knockout Mouse Consortium</a> [KOMP (USA); EUCOMM (Europe); NorCOMM (Canada); TIGM (USA)]
-
-      <br><br>
-       See MGI's <a href="<!--#include file='include/mgihome_url.html'-->other/mouse_facts4.shtml">collection of mouse resources and model organism links.</a>
-<br>
-<br>
-      </div>
 </div>
+<style>
+
+#rotatingImages
+{
+	width:300px;
+	height:200px;
+	vertical-align: middle;
+	/*border: 1px solid black;*/
+}
+.rotatingImage
+{
+	width:300px;
+	height:200px;
+}
+
+
+#rotatingImages div
+{
+	height: 100%;
+}
+
+#rotatorControl
+{
+	/*border: 1px solid black;*/
+	width: 240px;
+    margin-top: 10px;
+    margin-left: 50px;
+	padding: 4px 0px;
+}
+
+#rotatorControl span
+{
+	background-color: #DFEFFF;
+	border: 1px solid black;
+	cursor: pointer;
+	padding: 4px 8px;
+	margin: 3px;
+    border: 2px outset #ffffff ;
+}
+#rotatorControl span:hover {
+  background-color:#408c99;
+  color: #fff;
+  border: 2px inset #ffffff ;
+}
+
+</style>
+
+<script>
+function ImageRotator()
+{
+	// define the referential closure for this object
+	var _self = this;
+
+	// define any constants
+	_self.INTERVAL_DURATION = 1800; // in milliseconds
+
+	// define any class/ID selectors
+	_self.imageDivsJQ = "#rotatingImages div";
+	_self.rotatorControlJQ = "#rotatorControl";
+	_self.playJQ = "#ri_play";
+	_self.pauseJQ = "#ri_pause";
+
+	// define any state variables
+	_self.rotatorIntervalID;
+	_self.curDivIndex=0;
+	_self.maxDivs=0;
+
+	// simple function for showing a div of certain index
+	_self.showDiv = function(index)
+	{
+		var imgDivs = $(_self.imageDivsJQ);
+		if (index < imgDivs.length)
+		{
+			// hide all, then select the one requested
+			imgDivs.hide();
+			$(imgDivs[index]).show()
+			_self.curDivIndex = index;
+		}
+		// else do nothing (index is out of range)
+	};
+
+	_self.showDivClickEvt = function(e)
+	{
+		_self.pause();
+		var index = parseInt($(this).attr("index"));
+		_self.showDiv(index);
+	};
+
+	_self.rotateImage = function()
+	{
+		_self.curDivIndex += 1;
+		if(_self.curDivIndex > _self.maxDivs) _self.curDivIndex = 0;
+		_self.showDiv(_self.curDivIndex);
+	};
+
+	_self.pause = function()
+	{
+		// toggle the controls
+		$(_self.pauseJQ).hide();
+		$(_self.playJQ).show();
+
+		// clear the interval timeout
+		if(_self.rotatorIntervalID) clearInterval(_self.rotatorIntervalID);
+	};
+
+	_self.play = function()
+	{
+		// toggle the controls
+		$(_self.pauseJQ).show();
+		$(_self.playJQ).hide();
+		_self.rotatorIntervalID = setInterval(_self.rotateImage,_self.INTERVAL_DURATION);
+	};
+	_self.init = function()
+	{
+		// retrieve all divs inside #rotatingImages
+		var imgDivs = $(_self.imageDivsJQ);
+
+		// save the max number of divs for later use
+		_self.maxDivs = imgDivs.length;
+
+		// add controls for each div
+		controlDivs = "";
+		for(var i=0; i<imgDivs.length; i++)
+		{
+			var imgDiv = imgDivs[i];
+			var label = "" + (i+1);
+			// add indices to each control for reference during events
+			controlDivs += "<span class=\"ri_control\" index=\""+i+"\">"+label+"</span>";
+		}
+		$(_self.rotatorControlJQ).prepend(controlDivs);
+		// apply the click event to skip to a specific image
+		$(_self.rotatorControlJQ + " .ri_control").click(_self.showDivClickEvt);
+
+		// apply the play/pause events
+		$(_self.playJQ).click(_self.play);
+		$(_self.pauseJQ).click(_self.pause);
+
+		// hide them all by default
+		imgDivs.hide();
+		// select the first one
+		_self.showDiv(0);
+
+		//start the rotator by default
+		_self.play();
+	};
+	_self.init();
+};
+
+
+var _IR;
+// on pageload
+$(function(){
+	_IR = new ImageRotator();
+});
+</script>
+
 
 <!--#include file='include/templateHomePageBodyStop.html'-->
-
 </div> <!--id="homePageBodyInsert"-->
 </div> <!--id="homePageBodyWrapper"-->
 </body>
