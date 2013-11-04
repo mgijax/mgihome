@@ -34,16 +34,17 @@ Note that the list in each section is a definition list <dl> where the term
 			<tr>
 				<td>
 					<ul>
+						<li><a href="#batch">Batch Queries</a> | </li>
 						<li><a href="#sw_links">Creating Web Links to MGI</a> | </li>
-						<li><a href="#mousemine">MouseMine</a> | </li>
 						<li><a href="#data">Data Files for Download</a> | </li>
 						<li><a href="#mgiws">MGI Web Service</a> | </li>
-						<li><a href="#sql">Direct SQL Account</a></li>
+						<li><a href="#sql">Direct SQL Account</a> | </li>
+						<li><a href="#proto">Prototype Analysis Tools</a></li>
 				</td>
 			</tr>
 		</table>
 	</td></tr>
-   <tr><td>
+
    <table class="outline" width="100%">
      <tr>
 	  <td class="enhance">
@@ -52,7 +53,38 @@ Note that the list in each section is a definition list <dl> where the term
 	 <tr>
 	</table>
 	</td></tr>
-	<tr><td>
+
+	
+	<!-- batch table -->
+		<a name="batch"></a>
+		<table class="outline" width="100%">
+			<tr>
+				<td class="enhance">
+					Batch Queries
+				</td>
+			</tr>
+			<tr >
+				<td>
+					<dl class="linkedList">
+						<dt>&bull; <a href="<!--#include file='include/fewi_url.html'-->batch">Batch Query</a></dt>
+						<dd>Input a list of IDs or gene symbols and retrieve other database IDs and gene attributes (e.g. phenotypes, GO, expression data).</dd>
+						<dt>&bull; <a href="http://www.mousemine.org/">MouseMine</a></dt>
+						<dd>Powered by InterMine, MouseMine offers flexible querying, numerous predefined query templates, iterative refinement of results, and linking to other model organism Mines. MouseMine: </dd>
+	<blockquote>
+	<ul>
+ 		<li> offers many useful "canned" queries, plus point-and-click query editing</li>
+ 		<li> supports uploading and manipulating lists of objects</li>
+ 		<li> allows any query result to be downloaded (text, xml, json) or forwarded to Galaxy</li>
+	</ul>
+	</blockquote>
+						<dt>&bull; <a href="<!--#include file='include/biomart_url.html'-->">MGI BioMart</a> </dt>
+						<dd>Access MGI's mouse genetic, genomic and expression data using BioMart.</dd>
+						
+					</dl>
+				</td>
+			</tr>
+		</table>
+	</td></tr>
 		<!-- section1 table -->
 		<a name="sw_links"></a>
 		<table class="outline" width="100%">
@@ -72,31 +104,7 @@ Note that the list in each section is a definition list <dl> where the term
 			</tr>
 		</table>
 	</td></tr>
-
-	   <tr><td>
-    <!-- section1 table -->
-    <a name="mousemine"></a>
-    <table class="outline" width="100%">
-        <tr>
-            <td class="enhance">
-                    MouseMine
-            </td>
-        </tr>
-        <tr >
-            <td>
-                <ul>
-                	<li><a href="http://www.mousemine.org/">MouseMine</a> currently contains genetic, genomic and annotation data (function, phenotype, disease) from MGI</li>
- 					<li> offers many useful "canned" queries, plus point-and-click query editing</li>
- 					<li> supports links to any object's detail page or to any query results page</li>
- 					<li> allows any query result to be downloaded (text, xml, json) or forwarded to Galaxy</li>
- 					<li> supports uploading and manipulating lists of objects</li>
- 					<li> provides web service access to all of the above functions</li>
-                </ul>
-            </td>
-        </tr>
-    </table>
-    </td></tr>
-
+	
 	<tr><td>
 		<!-- section2 table -->
 		<a name="data"></a>
@@ -234,6 +242,28 @@ Note that the list in each section is a definition list <dl> where the term
 				</td>
 			</tr>
 		</table>
+		<!-- prototype table -->
+			<a name="proto"></a>
+			<table class="outline" width="100%">
+				<tr>
+					<td class="enhance">
+						Prototype Analysis Tools
+					</td>
+				</tr>
+				<tr >
+					<td>
+						<span class="small" style="padding:2px;">These tools are still in the prototyping and development phase, and may change, break or disappear at any time.  Your feedback can help us improve them. Please feel free to experiment with them and send us your comments.</span>
+						<dl class="linkedList">
+							<dt>&bull; <a href="http://proto.informatics.jax.org/prototypes/vlad-1.0.3">VLAD - Visual Annotation Display</a></dt>
+							<dd>VLAD is a tool for visualizing GO annotations. The annotation data are a subset of those available at the GO web site. You specify an annotation data set and a set of genes, and the tool will produce a graphical summary of the annotations. </dd>
+							<dt>&bull; <a href="<!--#include file='include/gotools_url.html'-->MGI_GO_Slim_Chart.html">GO Slim Chart Tool</a></dt>
+							<dd>This GO_Slim Chart Tool bins the genes in your list according to MGI GO Slim definitions to help you discover what the genes may have in common.</dd>
+							<dt>&bull; <a href="<!--#include file='include/gotools_url.html'-->MGI_Term_Finder.html">GO Term Mapper</a></dt>
+							<dd>This GO Term Finder tool searches for significant shared GO terms used to describe the genes in your list to help you discover what the genes may have in common.</dd>
+						</dl>
+					</td>
+				</tr>
+			</table>
 	</td></tr>
 
 </table>
