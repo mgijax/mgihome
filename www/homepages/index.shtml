@@ -109,7 +109,7 @@
     left: 80px;
 	width:300px;
 	height:200px;
-    border:1px solid;
+    /*border:1px solid;*/
   }
   .randomMsgImage
   {
@@ -229,7 +229,7 @@
     <a class='minihomeAnchor' href='<!--#include file='include/homepages_url.html'-->humanDisease.shtml'>
     <div class="homepageButton">
       <img src="<!--#include file='include/mgihome_url.html'-->homepages/images/homepage_Human.jpg"></img>
-      <span class='homepageButtonText'>Human&ndash;Mouse Disease Connection</span>
+      <span class='homepageButtonText'>Human&ndash;Mouse: Disease Connection</span>
     </div>
     </a>
     <!-- tools -->
@@ -358,52 +358,6 @@
   $('.randomMsg').hide().eq(random).show();
 </script>
 
-<style>
-
-#rotatingImages
-{
-	width:300px;
-	height:200px;
-	vertical-align: middle;
-	/*border: 1px solid black;*/
-}
-.rotatingImage
-{
-	width:300px;
-	height:200px;
-}
-
-
-#rotatingImages div
-{
-	height: 100%;
-}
-
-#rotatorControl
-{
-	/*border: 1px solid black;*/
-	width: 240px;
-    margin-top: 10px;
-    margin-left: 50px;
-	padding: 4px 0px;
-}
-
-#rotatorControl span
-{
-	background-color: #DFEFFF;
-	border: 1px solid black;
-	cursor: pointer;
-	padding: 4px 8px;
-	margin: 3px;
-    border: 2px outset #ffffff ;
-}
-#rotatorControl span:hover {
-  background-color:#408c99;
-  color: #fff;
-  border: 2px inset #ffffff ;
-}
-
-</style>
 
 <!--#include file='include/templateHomePageBodyStop.html'-->
 </div> <!--id="homePageBodyInsert"-->
