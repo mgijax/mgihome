@@ -94,7 +94,7 @@
     padding: 6px;
   }
 
-  #imageGallaryLayoutDiv {
+  #randomMsgLayoutDiv {
     position: absolute;
     top: 130px;
     left: 440px;
@@ -103,12 +103,20 @@
     padding: 3px;
   }
 
-  #imageGallaryWrapper{
+  .randomMsg{
     position: absolute;
     top: 20px;
     left: 80px;
-    /*border:4px solid;*/
+	width:300px;
+	height:200px;
+    border:1px solid;
   }
+  .randomMsgImage
+  {
+	width:300px;
+	height:200px;
+  }
+
   .hide { display:none; }
   .relativePos { position:relative; }
 
@@ -127,13 +135,15 @@
 </style>
 
 <div id="fb-root"></div>
-<script>(function(d, s, id) {
+<script>
+(function(d, s, id) {
   var js, fjs = d.getElementsByTagName(s)[0];
   if (d.getElementById(id)) return;
   js = d.createElement(s); js.id = id;
   js.src = "//connect.facebook.net/en_US/all.js#xfbml=1";
   fjs.parentNode.insertBefore(js, fjs);
-}(document, 'script', 'facebook-jssdk'));</script>
+}(document, 'script', 'facebook-jssdk'));
+</script>
 
 <div id="homePageBodyInsert">
 
@@ -155,84 +165,84 @@
     <!-- genes -->
     <a class='minihomeAnchor' href='<!--#include file='include/homepages_url.html'-->genes.shtml'>
     <div class="homepageButton" valign="center">
-      <img src="images/homepage_GeneLogo2.gif" border="5"></img>
+      <img src="<!--#include file='include/mgihome_url.html'-->homepages/images/homepage_GeneLogo2.gif" border="5"></img>
       <span class='homepageButtonText'>Genes</span>
     </div>
     </a>
     <!-- pheno -->
     <a class='minihomeAnchor' href='<!--#include file='include/homepages_url.html'-->phenotypes.shtml'>
     <div class="homepageButton">
-      <img src="images/homepage_PhenoLogo.jpg"></img>
+      <img src="<!--#include file='include/mgihome_url.html'-->homepages/images/homepage_PhenoLogo.jpg"></img>
       <span class='homepageButtonText'>Phenotypes and Alleles</span>
     </div>
     </a>
     <!-- gxd -->
     <a class='minihomeAnchor' href='<!--#include file='include/homepages_url.html'-->expression.shtml'>
     <div class="homepageButton">
-      <img src="images/homepage_GXDLogo.gif"></img>
+      <img src="<!--#include file='include/mgihome_url.html'-->homepages/images/homepage_GXDLogo.gif"></img>
       <span class='homepageButtonText'>Gene Expression Database (GXD)</span>
     </div>
     </a>
     <!-- recombinase -->
     <a class='minihomeAnchor' href='<!--#include file='include/homepages_url.html'-->recombinase.shtml'>
     <div class="homepageButton">
-      <img src="images/homepage_creLogo.gif"></img>
+      <img src="<!--#include file='include/mgihome_url.html'-->homepages/images/homepage_creLogo.gif"></img>
       <span class='homepageButtonText'>Recombinase (cre)</span>
     </div>
     </a>
     <!-- function -->
     <a class='minihomeAnchor' href='<!--#include file='include/homepages_url.html'-->function.shtml'>
     <div class="homepageButton">
-      <img src="images/homepage_GOLogo.gif"></img>
+      <img src="<!--#include file='include/mgihome_url.html'-->homepages/images/homepage_GOLogo.gif"></img>
       <span class='homepageButtonText'>Function</span>
     </div>
     </a>
     <!-- strains, SNPs & polymorphisms  -->
     <a class='minihomeAnchor' href='<!--#include file='include/homepages_url.html'-->strains_SNPs.shtml'>
     <div class="homepageButton">
-      <img src="images/homepage_StrainLogo.jpg"></img>
+      <img src="<!--#include file='include/mgihome_url.html'-->homepages/images/homepage_StrainLogo.jpg"></img>
       <span class='homepageButtonText'>Strains, SNPs & Polymorphisms </span>
     </div>
     </a>
     <!-- homology -->
     <a class='minihomeAnchor' href='<!--#include file='include/homepages_url.html'-->homology.shtml'>
     <div class="homepageButton">
-      <img src="images/homepage_homologyLogo.jpg"></img>
+      <img src="<!--#include file='include/mgihome_url.html'-->homepages/images/homepage_homologyLogo.jpg"></img>
       <span class='homepageButtonText'>Vertebrate Homology</span>
     </div>
     </a>
     <!-- pathways  -->
     <a class='minihomeAnchor' href='<!--#include file='include/homepages_url.html'-->pathways.shtml'>
     <div class="homepageButton">
-      <img src="images/homepage_BioPathLogo.gif"></img>
+      <img src="<!--#include file='include/mgihome_url.html'-->homepages/images/homepage_BioPathLogo.gif"></img>
       <span class='homepageButtonText'>Pathways</span>
     </div>
     </a>
     <!-- Tumors -->
     <a class='minihomeAnchor' href="<!--#include file='include/mtb_url.html'-->" >
     <div class="homepageButton">
-      <img src="images/homepage_MTBLogo.jpg"></img>
+      <img src="<!--#include file='include/mgihome_url.html'-->homepages/images/homepage_MTBLogo.jpg"></img>
       <span class='homepageButtonText'>Tumors</span>
     </div>
     </a>
     <!-- human disease portal -->
     <a class='minihomeAnchor' href='<!--#include file='include/homepages_url.html'-->humanDisease.shtml'>
     <div class="homepageButton">
-      <img src="images/homepage_Human.jpg"></img>
+      <img src="<!--#include file='include/mgihome_url.html'-->homepages/images/homepage_Human.jpg"></img>
       <span class='homepageButtonText'>Human&ndash;Mouse Disease Connection</span>
     </div>
     </a>
     <!-- tools -->
     <a class='minihomeAnchor' href='<!--#include file='include/homepages_url.html'-->software.shtml'>
     <div class="homepageButton">
-      <img src="images/homepage_BatchLogo.jpg"></img>
+      <img src="<!--#include file='include/mgihome_url.html'-->homepages/images/homepage_BatchLogo.jpg"></img>
       <span class='homepageButtonText'>Batch Data and Software Tools</span>
     </div>
     </a>
     <!-- nomenclature -->
     <a class='minihomeAnchor' href='<!--#include file='include/mgihome_url.html'-->nomen/index.shtml'>
     <div class="homepageButton">
-      <img src="images/homepage_NomenLogo.jpg"></img>
+      <img src="<!--#include file='include/mgihome_url.html'-->homepages/images/homepage_NomenLogo.jpg"></img>
       <span class='homepageButtonText'>Nomenclature</span>
     </div>
     </a>
@@ -254,7 +264,7 @@
       		</ul>
       		</td>
       		<td>
-      		<img src="images/FAQ_mouse.jpg" height="65" width="91"></img>
+      		<img src="<!--#include file='include/mgihome_url.html'-->homepages/images/FAQ_mouse.jpg" height="65" width="91"></img>
       		</td>
       	</tr>
       </table>
@@ -274,42 +284,32 @@
     </div>
   </div>
 
-  <div id="imageGallaryLayoutDiv" class="blueBorder boxBG" >
+  <div id="randomMsgLayoutDiv" class="blueBorder boxBG" >
     <div class='relativePos'>
-      <div id='imageGallaryWrapper'>
 
-		<div id="rotatingImages">
-		  <div>
-            <a href='http://www.informatics.jax.org/searches/allele_form.shtml'>
-            <img class='rotatingImage' src="images/Carousel_image1.jpg"></img>
-            </a>
-          </div>
-		  <div>
-            <a href='http://valinor.informatics.jax.org/humanDisease.shtml'>
-		    <img class='rotatingImage' src="images/Carousel_image2.jpg"</img>
-            </a>
-          </div>
-		  <div>
-            <a href='http://www.informatics.jax.org/phenotypes.shtml'>
-		    <img class='rotatingImage' src="images/Carousel_image3.jpg"></img>
-            </a>
-          </div>
-		  <div>
-            <a href='http://tumor.informatics.jax.org/mtbwi/index.do'>
-		    <img class='rotatingImage' src="images/Carousel_image4.jpg"></img>
-            </a>
-          </div>
-	    </div>
-
-	    <div id="rotatorControl">
-	      <span id="ri_pause" class="hide">Pause</span>
-	      <span id="ri_play">Play</span>
-	    </div>
-
+      <div class='randomMsg hide'>
+        <a href='http://www.informatics.jax.org/searches/allele_form.shtml'>
+        <img class='randomMsgImage' src="<!--#include file='include/mgihome_url.html'-->homepages/images/Carousel_image1.jpg"></img>
+        </a>
       </div>
+      <div class='randomMsg hide'>
+        <a href='http://valinor.informatics.jax.org/humanDisease.shtml'>
+        <img class='randomMsgImage' src="<!--#include file='include/mgihome_url.html'-->homepages/images/Carousel_image2.jpg"></img>
+        </a>
+      </div>
+      <div class='randomMsg hide'>
+        <a href='http://www.informatics.jax.org/phenotypes.shtml'>
+        <img class='randomMsgImage' src="<!--#include file='include/mgihome_url.html'-->homepages/images/Carousel_image3.jpg"></img>
+        </a>
+      </div>
+      <div class='randomMsg hide'>
+        <a href='http://tumor.informatics.jax.org/mtbwi/index.do'>
+        <img class='randomMsgImage' src="<!--#include file='include/mgihome_url.html'-->homepages/images/Carousel_image4.jpg"></img>
+        </a>
+      </div>
+
     </div>
   </div>
-
 
   <div id="mgiWhatsNew" class="blueBorder boxBG" >
     <div class="boxTitle">
@@ -323,7 +323,7 @@
       <li>MGI uses homology class data from HomoloGene and now includes chicken, zebrafish and rhesus macaque homologs. <a class="homeLink" href="<!--#include file="include/mgihome_url.html"-->news/whatsnew.shtml">Read more...</a></li>
     </ul>
     <br>
-	<div class="fb-like" data-href="https://www.facebook.com/mgi.informatics" data-width="90" data-height="40" data-colorscheme="light" data-layout="button_count" data-action="like" data-show-faces="true" data-send="false"></div>    
+	<div class="fb-like" data-href="https://www.facebook.com/mgi.informatics" data-width="90" data-height="40" data-colorscheme="light" data-layout="button_count" data-action="like" data-show-faces="true" data-send="false"></div>
     <div class="right"><a class="homeLink small" href="<!--#include file='include/mgihome_url.html'-->news/whatsnew.shtml">More MGI news</a></div><br/>
     <div class="right"><a class="homeLink small" href="<!--#include file='include/mgihome_url.html'-->homepages/stats/all_stats.shtml">MGI Statistics</a></div>
   </div>
@@ -337,21 +337,27 @@
     	<span class="bold">Practical Workshops in MGI</span>
     	<br>November 12, 2013 at <a href="http://www.vanderbilt.edu/">Vanderbilt University</a>, Nashville, TN
     	<br>Contact <a href="http://www.informatics.jax.org/mgihome/support/mgi_inbox.shtml">mgi-help@jax.org</a> to register,
-    	or to enquire about hosting one at your institution. <a href="http://www.informatics.jax.org/mgihome/
-support/Roadshow_description.pdf">Read more</a>. 
+    	or to enquire about hosting one at your institution. <a href="http://www.informatics.jax.org/mgihome/support/Roadshow_description.pdf">Read more</a>.
     	</li>
-    	<li style="margin-bottom: 10px;">  	
+    	<li style="margin-bottom: 10px;">
     	<span class='bold' style='margin-top:8px;'>Research Highlights</span>
-    	<br>Pearson WR. (2014) <a href="http://www.ncbi.nlm.nih.gov/pubmed/24170396">BLAST and FASTA Similarity Searching for Multiple Sequence Alignment.</a> 
+    	<br>Pearson WR. (2014) <a href="http://www.ncbi.nlm.nih.gov/pubmed/24170396">BLAST and FASTA Similarity Searching for Multiple Sequence Alignment.</a>
     	<i>Methods Mol Biol. </i>1079:75-101. doi: 10.1007/978-1-62703-646-7_5.
     	</li>
-    </ul>	
+    </ul>
 	<b>Other Resources</b><br>
     <p>Visit the new central web site of the International Knockout Mouse Consortium [KOMP (USA); EUCOMM (Europe); NorCOMM (Canada); TIGM (USA)]</p>
     <p>See MGI's collection of mouse resources and model organism links.</p>
   </div>
 
 </div>
+
+
+<script type="text/javascript">
+  var random = Math.floor(Math.random() * $('.randomMsg').length);
+  $('.randomMsg').hide().eq(random).show();
+</script>
+
 <style>
 
 #rotatingImages
@@ -398,116 +404,6 @@ support/Roadshow_description.pdf">Read more</a>.
 }
 
 </style>
-
-<script>
-function ImageRotator()
-{
-	// define the referential closure for this object
-	var _self = this;
-
-	// define any constants
-	_self.INTERVAL_DURATION = 10000; // in milliseconds
-
-	// define any class/ID selectors
-	_self.imageDivsJQ = "#rotatingImages div";
-	_self.rotatorControlJQ = "#rotatorControl";
-	_self.playJQ = "#ri_play";
-	_self.pauseJQ = "#ri_pause";
-
-	// define any state variables
-	_self.rotatorIntervalID;
-	_self.curDivIndex=0;
-	_self.maxDivs=0;
-
-	// simple function for showing a div of certain index
-	_self.showDiv = function(index)
-	{
-		var imgDivs = $(_self.imageDivsJQ);
-		if (index < imgDivs.length)
-		{
-			// hide all, then select the one requested
-			imgDivs.hide();
-			$(imgDivs[index]).show()
-			_self.curDivIndex = index;
-		}
-		// else do nothing (index is out of range)
-	};
-
-	_self.showDivClickEvt = function(e)
-	{
-		_self.pause();
-		var index = parseInt($(this).attr("index"));
-		_self.showDiv(index);
-	};
-
-	_self.rotateImage = function()
-	{
-		_self.curDivIndex += 1;
-		if(_self.curDivIndex > _self.maxDivs) _self.curDivIndex = 0;
-		_self.showDiv(_self.curDivIndex);
-	};
-
-	_self.pause = function()
-	{
-		// toggle the controls
-		$(_self.pauseJQ).hide();
-		$(_self.playJQ).show();
-
-		// clear the interval timeout
-		if(_self.rotatorIntervalID) clearInterval(_self.rotatorIntervalID);
-	};
-
-	_self.play = function()
-	{
-		// toggle the controls
-		$(_self.pauseJQ).show();
-		$(_self.playJQ).hide();
-		_self.rotatorIntervalID = setInterval(_self.rotateImage,_self.INTERVAL_DURATION);
-	};
-	_self.init = function()
-	{
-		// retrieve all divs inside #rotatingImages
-		var imgDivs = $(_self.imageDivsJQ);
-
-		// save the max number of divs for later use
-		_self.maxDivs = imgDivs.length;
-
-		// add controls for each div
-		controlDivs = "";
-		for(var i=0; i<imgDivs.length; i++)
-		{
-			var imgDiv = imgDivs[i];
-			var label = "" + (i+1);
-			// add indices to each control for reference during events
-			controlDivs += "<span class=\"ri_control\" index=\""+i+"\">"+label+"</span>";
-		}
-		$(_self.rotatorControlJQ).prepend(controlDivs);
-		// apply the click event to skip to a specific image
-		$(_self.rotatorControlJQ + " .ri_control").click(_self.showDivClickEvt);
-
-		// apply the play/pause events
-		$(_self.playJQ).click(_self.play);
-		$(_self.pauseJQ).click(_self.pause);
-
-		// hide them all by default
-		imgDivs.hide();
-		// select the first one
-		_self.showDiv(0);
-
-		//start the rotator by default
-		_self.play();
-	};
-	_self.init();
-};
-
-
-var _IR;
-// on pageload
-$(function(){
-	_IR = new ImageRotator();
-});
-</script>
-
 
 <!--#include file='include/templateHomePageBodyStop.html'-->
 </div> <!--id="homePageBodyInsert"-->
