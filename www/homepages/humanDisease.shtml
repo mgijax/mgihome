@@ -12,148 +12,176 @@
 
 <!-- start body content -->
 <style type="text/css">
-#hdpPageOuterWrapper {width: 100%;}
-#hdpPageInnerWrapper {
-  width: 1000px;
-  height: 580px;
+#hdpPageWrapper {
+  width: 820px;
+  height: 1000px;
   position: relative;
   margin: 0 auto;
   font-family: Verdana,Arial,Helvetica;
+  /*background-color:#DDDDDD;*/
 }
 #hdpQueryFormWrapper{
-  width: 740px;
-  height: 200px;
+  width: 804px;
+  height: 250px;
   border:2px solid;
-  border-radius:10px;
-  position: absolute;
-  top: 20px;
-  left: 0px;
-  padding: 4px;
+  border-radius:22px;
+  position:absolute;
   background-color:#4DB8FF;
 }
-#hdpTourWrapper{
-  width: 200px;
-  height: 150px;
+#resourceLinksWrapper{
+  top:280px;
+  left:5px;
+  width: 212px;
+  height: 430px;
   border:2px solid;
-  border-radius:10px;
-  position: absolute;
-  top: 20px;
-  left: 780px;
+  border-radius:22px;
+  position:absolute;
   padding: 4px;
-  padding-top: 10px;
+  background-color:#DFEFFF;
+}
+#hdpTourLink{
+  top:10px;
+  left:10px;
+  width: 180px;
+  height: 110px;
+  border:2px solid;
+  position:absolute;
+  padding: 4px;
+  padding-top:10px;
   background-color:#2E8AE6;
   text-align:center;
 }
-
-#hdpIntroWrapper{
-  width: 200px;
-  height: 150px;
+#hdpIntroLink{
+  top:150px;
+  left:10px;
+  width: 180px;
+  height: 110px;
   border:2px solid;
-  border-radius:10px;
-  position: absolute;
-  top: 200px;
-  left: 780px;
+  position:absolute;
   padding: 4px;
-  padding-top: 10px;
+  padding-top:10px;
   background-color:#FFA319;
   text-align:center;
 }
-
-#hdpGlossaryWrapper{
-  width: 200px;
-  height: 150px;
+#hdpGlossaryLink{
+  width: 180px;
+  height: 110px;
   border:2px solid;
-  border-radius:10px;
-  position: absolute;
-  top: 380px;
-  left: 780px;
+  position:absolute;
+  top:290px;
+  left:10px;
   padding: 4px;
-  padding-top: 10px;
+  padding-top:10px;
   background-color:#CCCCB2;
   text-align:center;
 }
-
-#mouseImage{
-  position: absolute;
-  top: 280px;
-  left: 350px;
+#spotlightImage{
+  position:absolute;
+  top:800px;
+  left:500px;
 }
-
-#mouseImageDescription{
-  position: absolute;
-  top: 280px;
-  left: 0px;
+#spotlightText{
+  position:absolute;
+  top:800px;
+  left:500px;
 }
+.relativePos { position:relative; width: 100%; height: 100%; }
+.queryHeaderText { font:18px Verdana,Arial,Helvetica;}
+textarea {resize:none;}
 
 </style>
 
-<!-- Title Bar -->
+<!-- Title Bar
 <div id="titleBarWrapper">
   <span class="titleBarMainTitle">Genomic Medicine (or other title....)</span>
 </div>
+-->
 
-<div id="hdpPageOuterWrapper">
-  <div id="hdpPageInnerWrapper" >
 
-  <div style="position: absolute; top: 2px; left: 0px; font-weight:bold;" >
-    Get started:
-  </div>
+<div style='width: 100%;' >
+  <div id="hdpPageWrapper" >
 
-  <div style="position: absolute; top: 2px; left: 780px; font-weight:bold;" >
-    Learn more:
-  </div>
-
+  <form action="<!--#include file='include/fewi_url.html'-->diseasePortal/summary" method="get">
   <div id="hdpQueryFormWrapper" >
-    <div style="width: 100%; height: 100%; position: relative;" >
+    <div class='relativePos' >
 
-    <div style="position: absolute; top: 2px; left: 0px; width:250px;">
-    Query by gene nomenclature. <br/><i>Can be symbols,names or IDs.</i><br/><br/>
-    <textarea id="genes" name="genes" style="height:80px; width:240px;"></textarea>
-    <br/>
-    <br/>
-    <span id="toggleLink" class="filterButton" style="margin-left:90px;">Search</span>
+    <div style="position:absolute; top:2px; left:2px; width:250px;">
+    <div class='relativePos'>
+      <div style="position:absolute; top:6px; left:15px; ">
+        <span class='queryHeaderText'>Search by genes</span>
+      </div>
+      <div style="position:absolute; top:60px; left:6px; ">
+      <textarea id="genes" name="genes" style="height:80px; width:240px;"></textarea>
+      Query by gene nomenclature. <br/><i>Can be symbols,names or IDs.</i><br/><br/>
+      </div>
+    </div>
     </div>
 
-    <div style="position: absolute; top: 2px; left: 250px; width:250px;">
-    Query by gene region. <br/> <i>(e.g. 13:22210730-22311689)</i><br/><br/>
-    <textarea id="locations" name="locations" style="height:80px; width:240px;"></textarea>
-    <br/>
-    <br/>
-    <span id="toggleLink" class="filterButton" style="margin-left:90px;">Search</span>
+    <div style="position:absolute; top:2px; left:254px; width:300px;">
+    <div class='relativePos'>
+      <div style="position:absolute; top:6px; left:15px; ">
+        <span class='queryHeaderText'>Search by genome locations</span></br>
+        <div style='margin-left:6px; padding-top:5px;'>
+        <input id="organism1" name="organism" class="organism" type="radio" value="mouse" checked="checked"/><span>Mouse</span>
+        <input id="organism2" name="organism" class="organism" type="radio" value="human"/><span>Human</span>
+        </div>
+      </div>
+      <div style="position:absolute; top:60px; left:6px; ">
+      <textarea id="locations" name="locations" style="height:80px; width:280px;"></textarea>
+      Query by gene region. <br/> <i>(e.g. 13:22210730-22311689)</i><br/><br/>
+      </div>
+    </div>
     </div>
 
-    <div style="position: absolute; top: 2px; left: 500px; width:250px;">
-    Query by Phenotypes or Diseases. <br/><i>Can be terms or IDs.</i><br/><br/>
-    <textarea id="phenotypes" name="phenotypes" style="height:80px; width:240px;"></textarea>
-    <br/>
-    <br/>
-    <span id="toggleLink" class="filterButton" style="margin-left:90px;">Search</span>
+    <div style="position:absolute; top:2px; left:546px; width:250px;">
+    <div class='relativePos'>
+      <div style="position:absolute; top:6px; left:15px; ">
+        <span class='queryHeaderText'>Search with disease</br> or phenotype terms</span>
+      </div>
+      <div style="position:absolute; top:60px; left:6px; ">
+      <textarea id="phenotypes" name="phenotypes" style="height:80px; width:240px;"></textarea>
+      Query by Phenotypes or Diseases. <br/><i>Can be terms or IDs.</i><br/><br/>
+      </div>
     </div>
+    </div>
+
+    <input style="position:absolute; top:220px; left:700px;"
+      name="submit" class="searchToolButton" value="Search" type="submit"><br/>
+
+    </div>
+  </div>
+  </form>
+
+
+  <div id="resourceLinksWrapper" >
+    <div class='relativePos'>
+
+      <div id="hdpTourLink" >
+        <a href="http://valinor.informatics.jax.org/mgihome/projects/hdpOverview.shtml">
+        <span style='font-size:90%;'> Take a tour of the </span><br>
+        <span style='font-size:150%;'> Genomic <br/>Medicine <br/>Portal</span>
+        </a>
+      </div>
+      <div id="hdpIntroLink" >
+        <a href="http://valinor.informatics.jax.org/mgihome/other/mouse_genetics_intro.shtml">
+        <span style='font-size:90%;'> Introduction to </span><br>
+        <span style='font-size:150%;'> Mouse <br/>Genetics </span>
+        </a>
+      </div>
+      <div id="hdpGlossaryLink" >
+        <a href="http://valinor.informatics.jax.org/glossary/">
+        <span style='font-size:150%;'> Glossary </span>
+        </a>
+      </div>
 
     </div>
   </div>
 
-  <div id="hdpTourWrapper" >
-    <a href="http://valinor.informatics.jax.org/mgihome/projects/hdpOverview.shtml">
-    <span style='font-size:90%;'> Take a tour of the </span><br>
-    <span style='font-size:150%;'> Genomic <br/>Medicine <br/>Portal</span>
-    </a>
-  </div>
 
-  <div id="hdpIntroWrapper" >
-    <a href="http://valinor.informatics.jax.org/mgihome/other/mouse_genetics_intro.shtml">
-    <span style='font-size:90%;'> Introduction to </span><br>
-    <span style='font-size:150%;'> Mouse <br/>Genetics </span>
-    </a>
-  </div>
 
-  <div id="hdpGlossaryWrapper" >
-    <a href="http://valinor.informatics.jax.org/glossary/">
-    <span style='font-size:150%;'> Glossary </span>
-    </a>
-  </div>
 
-  <div id="mouseImageDescription" >
+
+  <div id="spotlightText" >
   <span style='font-size:150%;'> Spotlight on mouse models <br/>of human disease</span>
   <br/>
   <br/>
@@ -168,7 +196,7 @@
   Future description of specific mouse model  </span>
   </div>
 
-  <div id="mouseImage" >
+  <div id="spotlightImage" >
     <img src="http://upload.wikimedia.org/wikipedia/commons/thumb/f/f2/Lab_mouse_mg_3263.jpg/800px-Lab_mouse_mg_3263.jpg" height="266" width="400">
   </div>
 
