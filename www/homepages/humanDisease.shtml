@@ -121,7 +121,9 @@ textarea {resize:none;}
       </div>
       <div style="position:absolute; top:60px; left:6px; ">
       <textarea id="genes" name="genes" style="height:80px; width:240px;"></textarea>
-      Query by gene nomenclature. <br/><i>Can be symbols,names or IDs.</i><br/><br/>
+      Ex: Bmp4, Pax*, NM_013627<br/>
+      Enter symbols,names or IDs.<br/>
+      Use * for wildcard.
       </div>
     </div>
     </div>
@@ -137,7 +139,9 @@ textarea {resize:none;}
       </div>
       <div style="position:absolute; top:60px; left:6px; ">
       <textarea id="locations" name="locations" style="height:80px; width:280px;"></textarea>
-      Query by gene region. <br/> <i>(e.g. 13:22210730-22311689)</i><br/><br/>
+      Ex. Chr12:3000000-10000000<br/><br/>
+      Need to convert genome build?<br/>
+      Use this converter tool.
       </div>
     </div>
     </div>
@@ -149,7 +153,7 @@ textarea {resize:none;}
       </div>
       <div style="position:absolute; top:60px; left:6px; ">
       <textarea id="phenotypes" name="phenotypes" style="height:80px; width:240px;"></textarea>
-      Query by Phenotypes or Diseases. <br/><i>Can be terms or IDs.</i><br/><br/>
+      Select from autocomplete or continue typing.  Use quotes for exact match.
       </div>
     </div>
     </div>
