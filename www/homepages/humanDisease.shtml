@@ -35,7 +35,7 @@
   border:2px solid;
   border-radius:22px;
   position:absolute;
-  background-color:#6699FF;
+  background-color:#D0E0F0;
 }
 #resourceLinksWrapper{
   top:345px;
@@ -98,14 +98,14 @@
 .queryHeaderText { font:18px Verdana,Arial,Helvetica;}
 textarea {resize:none; background-color:#FFE4B5;}
 .formButtons{
-  font-size:12px;
+  font-size:14px;
   font-family:Verdana, Arial,Helvetica;
   color:#002255;
   font-weight:bolder;
-  background-color:#eeeeee;
   border: 1px #7D95B9 solid;
   padding:2px;
   cursor: pointer;
+  background-color:#FFE4B5;
 }
 
 
@@ -136,8 +136,7 @@ textarea {resize:none; background-color:#FFE4B5;}
       <a href="<!--#include file='include/fewi_url.html'-->diseasePortal/summary?genes=Bmp4">Bmp4</a>,
       <a href="<!--#include file='include/fewi_url.html'-->diseasePortal/summary?genes=Pax*">Pax*</a>,
       <a href="<!--#include file='include/fewi_url.html'-->diseasePortal/summary?genes=NM_013627">NM_013627</a>
-
-      <br/>
+      <br/><br/>
       Enter symbols,names or IDs.<br/>
       Use * for wildcard.
       </div>
@@ -155,7 +154,7 @@ textarea {resize:none; background-color:#FFE4B5;}
       </div>
       <div style="position:absolute; top:60px; left:6px; ">
       <textarea id="locations" name="locations" style="height:80px; width:280px;"></textarea>
-      Ex.
+      Ex:
       <a href="<!--#include file='include/fewi_url.html'-->diseasePortal/summary?locations=Chr12:3000000-10000000">Chr12:3000000-10000000</a>
       <br/><br/>
       Need to convert genome build?<br/>
@@ -171,15 +170,19 @@ textarea {resize:none; background-color:#FFE4B5;}
       </div>
       <div style="position:absolute; top:60px; left:6px; ">
       <textarea id="phenotypes" name="phenotypes" style="height:80px; width:240px;"></textarea>
+      Ex:
+      <a href="<!--#include file='include/fewi_url.html'-->diseasePortal/summary?phenotypes=diabetes">diabetes</a>,
+      <a href="<!--#include file='include/fewi_url.html'-->diseasePortal/summary?phenotypes=104310">104310</a>
+      <br/><br/>
       Select from autocomplete or continue typing.  Use quotes for exact match.
       </div>
     </div>
     </div>
 
-    <input style="position:absolute; top:220px; left:700px;"
-      name="submit" class="formButtons" value="Search" type="submit"><br/>
+    <input style="position:absolute; top:225px; left:700px;"
+      name="submit" class="formButtons" value="GO" type="submit"><br/>
     <input class="formButtons"
-      style="position:absolute; top:250px; left:700px;" type="reset" >
+      style="position:absolute; top:255px; left:700px;" type="reset" >
 
     </form>
 
