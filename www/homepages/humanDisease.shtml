@@ -23,7 +23,7 @@
 <style type="text/css">
 #hdpPageWrapper {
   width: 820px;
-  height: 800px;
+  height: 820px;
   position: relative;
   margin: 0 auto;
   font-family: Verdana,Arial,Helvetica;
@@ -202,6 +202,7 @@ textarea {resize:none; background-color:#FFE4B5;}
     </div>
 
 
+
     </div>
   </div>
 
@@ -230,9 +231,13 @@ textarea {resize:none; background-color:#FFE4B5;}
     </div>
   </div>
 
-
-
-
+  <div style="position:absolute; top:800px; left:560px; ">
+    Powered by <a href='http://www.informatics.jax.org/'>MGI</a>
+  </div>
+  <div style="position:absolute; top:760px; left:680px; ">
+    <img src="http://www.informatics.jax.org/webshare/images/mgi_logo.gif"
+      height="" width="">
+  </div>
 
   <div id="spotlightText" >
   <span style='font-size:150%;'> Spotlight on mouse models <br/>of human disease</span>
