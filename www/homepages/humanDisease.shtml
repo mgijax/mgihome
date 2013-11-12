@@ -98,7 +98,6 @@
 .queryHeaderText { font:18px Verdana,Arial,Helvetica;}
 textarea {resize:none; background-color:#FFE4B5;}
 .formButtons{
-  font-size:14px;
   font-family:Verdana, Arial,Helvetica;
   color:#002255;
   font-weight:bolder;
@@ -172,17 +171,17 @@ textarea {resize:none; background-color:#FFE4B5;}
       <textarea id="phenotypes" name="phenotypes" style="height:80px; width:240px;"></textarea>
       Ex:
       <a href="<!--#include file='include/fewi_url.html'-->diseasePortal/summary?phenotypes=diabetes">diabetes</a>,
-      <a href="<!--#include file='include/fewi_url.html'-->diseasePortal/summary?phenotypes=104310">104310</a>
+      <a href="<!--#include file='include/fewi_url.html'-->diseasePortal/summary?phenotypes=105830">105830</a>
       <br/><br/>
       Select from autocomplete or continue typing.  Use quotes for exact match.
       </div>
     </div>
     </div>
 
-    <input style="position:absolute; top:225px; left:700px;"
+    <input style="position:absolute; top:225px; left:700px; width:60px; font-size:20px;"
       name="submit" class="formButtons" value="GO" type="submit"><br/>
     <input class="formButtons"
-      style="position:absolute; top:255px; left:700px;" type="reset" >
+      style="position:absolute; top:265px; left:700px; width:60px; font-size:14px;" type="reset" >
 
     </form>
 
@@ -235,8 +234,10 @@ textarea {resize:none; background-color:#FFE4B5;}
     Powered by <a href='http://www.informatics.jax.org/'>MGI</a>
   </div>
   <div style="position:absolute; top:760px; left:680px; ">
-    <img src="http://www.informatics.jax.org/webshare/images/mgi_logo.gif"
+    <a href='http://www.informatics.jax.org/'>
+      <img src="http://www.informatics.jax.org/webshare/images/mgi_logo.gif"
       height="" width="">
+    </a>
   </div>
 
   <div id="spotlightText" >
