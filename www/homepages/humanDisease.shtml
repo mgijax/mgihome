@@ -107,7 +107,26 @@ textarea {resize:none; background-color:#FFE4B5;}
   background-color:#FFE4B5;
 }
 
-
+/* styles for autocomplete */
+.ui-autocomplete {
+  max-height: 300px;
+  overflow-y: auto;
+  /* prevent horizontal scrollbar */
+  overflow-x: hidden;
+	font-size:90%;
+}
+/* IE 6 doesn't support max-height
+ * we use height instead, but this forces the menu to always be this tall
+ */
+* html .ui-autocomplete {
+  height: 300px;
+}
+.ui-menu .ui-menu-item {
+	padding-left:0.4em;
+}
+.ui-menu .ui-menu-item a {
+	padding:0px;
+}
 </style>
 
 <!-- Title Bar
