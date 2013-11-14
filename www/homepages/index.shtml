@@ -105,10 +105,10 @@
 
   .randomMsg{
     position: absolute;
-    top: 20px;
-    left: 80px;
-	width:300px;
-	height:200px;
+    top: 10px;
+    left: 40px;
+	width:350px;
+	height:233px;
     /*border:1px solid;*/
   }
   .randomMsgImage
@@ -154,8 +154,8 @@
       <form action="<!--#include file="include/quicksearch_url.html"-->Search.do" method="get">
       <input name="query" id="searchToolTextArea" value=" Enter keywords, symbols, or IDs..."
         onFocus="if(this.defaultValue==this.value) this.value='';"
-        style="font-size:1.1em; height: 28px; width:285px;">
-      <input name="submit" class="searchToolButton" value="Search" onClick="return verifySearchToolParms();" type="submit"><br/>
+        style="font-size:1.1em; height: 40px; width:265px;">
+      <input name="submit" class="searchToolButton" value="Quick Search" onClick="return verifySearchToolParms();" type="submit"><br/>
       </form>
     </div>
     <!-- advice text -->
@@ -180,7 +180,7 @@
     <a class='minihomeAnchor' href='<!--#include file='include/homepages_url.html'-->humanDisease.shtml'>
     <div class="homepageButton">
       <img src="<!--#include file='include/mgihome_url.html'-->homepages/images/homepage_Human.jpg"></img>
-      <span class='homepageButtonText'>Human&ndash;Mouse: Disease Connection</span>
+      <span class='homepageButtonText'>Human&ndash;Mouse: Disease Connection &nbsp</span>
       <img src="<!--#include file='include/mgihome_url.html'-->homepages/images/Beta.png"></img>
     </div>
     </a>
@@ -315,7 +315,7 @@
   <div id="mgiWhatsNew" class="blueBorder boxBG" >
     <div class="boxTitle">
       <div class="left">What's new at MGI</div>
-      <div class="right small">updated October 10, 2013&nbsp;</div>
+      <div class="right small">updated December 12, 2013&nbsp;</div>
     </div>
     <ul class="frontpageBulletPoints">
       <li>Improved access to gene expression images, enhanced expression assay detail pages and a new differential expression search. <a class="homeLink" href="<!--#include file="include/mgihome_url.html"-->news/whatsnew.shtml">Read more...</a></li>
@@ -335,10 +335,22 @@
     </div>
     <ul>
     	<li style="margin-bottom: 10px;">
-    	<span class="bold">Practical Workshops in MGI</span>
-    	<br>November 12, 2013 at <a href="http://www.vanderbilt.edu/">Vanderbilt University</a>, Nashville, TN
-    	<br>Contact <a href="http://www.informatics.jax.org/mgihome/support/mgi_inbox.shtml">mgi-help@jax.org</a> to register,
-    	or to enquire about hosting one at your institution. <a href="http://www.informatics.jax.org/mgihome/support/Roadshow_description.pdf">Read more</a>.
+    	<span class="bold">MGI Workshops</span>
+    	<br>
+    	<!--<br><tr><td align="left" valign="top">November 12, 2013 </td><td>&nbsp;&nbsp;&nbsp;</td><td align="left" valign="top">Vanderbilt University, Nashville, TN</td></tr>
+
+<tr><td align="left" valign="top">October 2, 2013 </td><td>&nbsp;&nbsp;&nbsp;</td><td align="left" valign="top">Texas A&M, Texas Institute of Genomic Medicine, College Station, TX</td></tr>-->
+    	 If you would like to host an MGI workshop at your institution,
+          <a href="<!--#include file='include/mgihome_url.html'-->support/mgi_inbox.shtml">contact User Support</a> to discuss the <a href="<!--#include file='include/mgihome_url.html'-->support/Roadshow_description.pdf">details</a>.
+      <br>
+
+If you would like to schedule a remote interactive session to learn to use MGI,  <a href="<!--#include file='include/mgihome_url.html'-->support/mgi_inbox.shtml" title="Contact user support">contact User Support</a> to discuss the details.
+		<br></br>
+    	</li>
+    	<li style="margin-bottom: 10px;">
+    	<span class='bold' style='margin-top:8px;'>Research Highlights</span>
+    	<br>Pearson WR. (2014) <a href="http://www.ncbi.nlm.nih.gov/pubmed/24170396">BLAST and FASTA Similarity Searching for Multiple Sequence Alignment.</a>
+    	<i>Methods Mol Biol. </i>1079:75-101. doi: 10.1007/978-1-62703-646-7_5.
     	</li>
     	<li style="margin-bottom: 10px;">
     	<span class='bold' style='margin-top:8px;'>Research Highlights</span>
