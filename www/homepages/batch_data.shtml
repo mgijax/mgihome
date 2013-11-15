@@ -1,0 +1,148 @@
+<!--#include file='include/templateHead.html'-->
+<title>MGI-Batch Data and Analysis Tools for the Mouse Genome Informatics database resource</title>
+
+
+  <meta name="description" content="Instructions for linking to MGI's web pages, description of downloadable files, and instructions for custom queries. " />
+
+  <meta name="keywords" content="MGI, mgi, mice, mouse, murine, mus musculus, genes, genome, genomic, MGD, download files, FTP, flat files, batch query, bulk data, tab-delimited output, tab delimited output, FASTA output, custom query" />
+
+  <meta name="robots" content="NOODP" />
+  <meta name="robots" content="NOYDIR" />
+
+<!--#include file='include/templateBodyStart.html'-->
+
+<!-- Title Bar -->
+  <div id="titleBarWrapper">
+  <span class="titleBarMainTitle">Batch Queries and Analysis Tools</span>
+  </div>
+<!--titleBar-->
+
+<!-- main body table -->
+<table width="75%" cellpadding="2" align="center">
+
+	<tr><td>
+		<!-- TOC table -->
+		<table class="toc" width="100%">
+			<tr>
+				<td>
+					<ul>
+						<li><a href="#batch">Batch Queries</a> | </li>
+						<li><a href="#data">Data Files for Download</a> | </li>
+						<li><a href="#proto">Analysis Tools</a></li>
+				</td>
+			</tr>
+		</table>
+	</td></tr>
+	<tr><td>
+	
+<!-- batch table -->
+		<a name="batch"></a>
+		<table class="outline" width="100%">
+			<tr>
+				<td class="enhance">
+					Batch Queries
+				</td>
+			</tr>
+			<tr >
+				<td>
+					<dl class="linkedList">
+						<dt>&bull; <a href="<!--#include file='include/fewi_url.html'-->batch">Batch Query</a></dt>
+						<dd>Input a list of IDs or gene symbols and retrieve other database IDs and gene attributes (e.g. phenotypes, GO, expression data).</dd>
+						<dt>&bull; <a href="http://www.mousemine.org/">MouseMine</a></dt>
+						<dd>Powered by InterMine, MouseMine offers flexible querying, numerous predefined query templates, iterative refinement of results, and linking to other model organism Mines. MouseMine: </dd>
+	<blockquote>
+	<ul>
+ 		<li> offers many useful "canned" queries, plus point-and-click query editing</li>
+ 		<li> supports uploading and manipulating lists of objects</li>
+ 		<li> allows any query result to be downloaded (text, xml, json) or forwarded to Galaxy</li>
+	</ul>
+	</blockquote>
+						<dt>&bull; <a href="http://biomart.informatics.jax.org/biomart/martview/e59323fdc7f8264944132dde6d5a3ec1">MGI BioMart</a> </dt>
+						<dd>Access MGI's mouse genetic, genomic and expression data using BioMart.</dd>	
+					</dl>
+				</td>
+			</tr>
+		</table>
+	</td></tr>
+	<tr><td>
+	
+<!-- section2 table -->
+		<a name="data"></a>
+		<table class="outline" width="100%">
+			<tr>
+				<td class="enhance">
+					Data Files for Download
+				</td>
+			</tr>
+			<tr >
+				<td>
+					<b><i>Public Reports via FTP</i></b>
+					<ul>
+					  <li>Over 75 data files are generated nightly and available for download.</li>
+					  <li>See <a href="<!--#include file='include/ftp_url2.html'-->reports/index.html">MGI Data and Statistical Reports</a> for the list of reports and their field descriptions.</li>
+					</ul>
+					<b><i>Tab Delimited Output from our Web Interface</i></b>
+					<ul>
+					  <li>User-defined results for references, gene and SNP data are available in tab delimited format.</li>
+					  <li>You can modify the output format on the query form from <i>Web</i> to <i>Tab-delimited</i>.</li>
+					  <li>Query Forms with the tab-delimited option available are:</li>
+					   <ul class="softwareUL">
+					     <li><a href="<!--#include file='include/fewi_url.html'-->batch">MGI Batch Query</a><br>
+					        <i>Download gene/marker data for a batch of IDs or symbols</i></li>
+					     <li><a href="<!--#include file='include/fewi_url.html'-->marker">Genes and Markers Query Form</a><br>
+					        <i>Search by symbol, location, gene ontology classification, or phenotype.</i></li>
+					     <li><a href="<!--#include file='include/java_url.html'-->WIFetch?page=snpQF">Mouse SNP Query Form</a><br>
+					        <i>Search for SNPS by strain(s), SNP attributes, genomic position, or associated genes</i></li>
+						<li><a href="http://biomart.informatics.jax.org/biomart/martview/e59323fdc7f8264944132dde6d5a3ec1">MGI BioMart</a><br>
+						<i>Query MGI's mouse genetic, genomic and expression data; compare and integrate results from other databases
+						</i></li>
+						<li><a href="<!--#include file='include/fewi_url.html'-->reference">References</a><br>
+						<i>Search curated references by author, journal or text. The output to this form provides the text export option</i></li>
+					  </ul>
+					  </ul>
+
+					<b><i>FASTA Output from our Web Interface</i></b>
+					<ul>
+					  <li>The FASTA format is available on reports where sequences are returned for a specific gene or when querying sequences.</li>
+					  <li>Click on the checkboxes next to each sequence to select it for FASTA download and click GO.</li>
+					  <li>From a gene detail page, FASTA is available for:</li>
+					      <ul class="softwareUL">
+							  <li>Representative genomic, transcript, and polypeptide sequences</li>
+							  <li>All mouse sequences</li>
+							  <li>Human and rat orthologs</li>
+							  <li>Mouse, human, and rat protein sequences for superfamily members</li>
+					      </ul>
+
+  					</ul>
+				</td>
+			</tr>
+		</table>
+	</td></tr>
+	<tr><td>
+<!-- prototype table -->
+			<a name="proto"></a>
+			<table class="outline" width="100%">
+				<tr>
+					<td class="enhance">
+						Analysis Tools
+					</td>
+				</tr>
+				<tr >
+					<td>
+						<span class="small" style="padding:2px;">These tools are in the development phase and subject to change. Please feel free to use them and send us your comments.</span>
+						<dl class="linkedList">
+							<dt>&bull; <a href="http://proto.informatics.jax.org/prototypes/vlad-1.0.3">VLAD - Visual Annotation Display</a></dt>
+							<dd>VLAD is a tool for visualizing GO annotations. The annotation data are a subset of those available at the GO web site. You specify an annotation data set and a set of genes, and the tool will produce a graphical summary of the annotations. </dd>
+							<dt>&bull; <a href="<!--#include file='include/gotools_url.html'-->MGI_GO_Slim_Chart.html">GO Slim Chart Tool</a></dt>
+							<dd>This GO_Slim Chart Tool bins the genes in your list according to MGI GO Slim definitions to help you discover what the genes may have in common.</dd>
+							<dt>&bull; <a href="<!--#include file='include/gotools_url.html'-->MGI_Term_Finder.html">GO Term Mapper</a></dt>
+							<dd>This GO Term Finder tool searches for significant shared GO terms used to describe the genes in your list to help you discover what the genes may have in common.</dd>
+						</dl>
+					</td>
+				</tr>
+			</table>
+	</td></tr>
+
+</table>
+
+<!--#include file='include/templateBodyStop.html'-->
