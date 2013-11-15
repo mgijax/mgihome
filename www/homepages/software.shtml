@@ -13,7 +13,7 @@
 
 <!-- Title Bar -->
   <div id="titleBarWrapper">
-  <span class="titleBarMainTitle">Batch Queries and Software Developer Tools</span>
+  <span class="titleBarMainTitle">Bulk Data Access, APIs and Linking to MGI</span>
   </div>
 <!--titleBar-->
 
@@ -39,7 +39,7 @@ Note that the list in each section is a definition list <dl> where the term
 						<li><a href="#data">Data Files for Download</a> | </li>
 						<li><a href="#mgiws">MGI Web Service</a> | </li>
 						<li><a href="#sql">Direct SQL Account</a> | </li>
-						<li><a href="#proto">Analysis Tools</a></li>
+						<!--<li><a href="#proto">Analysis Tools</a></li>-->
 				</td>
 			</tr>
 		</table>
@@ -51,7 +51,7 @@ Note that the list in each section is a definition list <dl> where the term
 	   Join the <a href="http://lists.informatics.jax.org/lyris-cgi/lyris.pl?enter=mgi-technical-list&amp;text_mode=0">MGI Developer's Forum</a> Mailing List
 	  </td>
 		</tr>
-		<tr >
+		<tr>
 		<td>
 		<ul>
 	 	<li>Please join to be notified of any changes to the mechanisms listed here.</li>
@@ -127,7 +127,7 @@ Note that the list in each section is a definition list <dl> where the term
 				<td>
 					<b><i>Public Reports via FTP</i></b>
 					<ul>
-					  <li>Over 75 data files are generated nightly and available for download.</li>
+					  <li>Over 75 data files are generated weekly and available for download.</li>
 					  <li>See <a href="<!--#include file='include/ftp_url2.html'-->reports/index.html">MGI Data and Statistical Reports</a> for the list of reports and their field descriptions.</li>
 					</ul>
 
@@ -184,7 +184,6 @@ Note that the list in each section is a definition list <dl> where the term
 							  <li>Human and rat orthologs</li>
 							  <li>Mouse, human, and rat protein sequences for superfamily members</li>
 					      </ul>
-					   <!--<li>The FASTA format option is available for generating reports on the <a href="<!--#include file='include/wi_url.html'-->searches/sequence_form.shtml">Mouse Sequence Query Form</a>.</li>-->
 
   					</ul>
 				</td>
@@ -252,7 +251,7 @@ Note that the list in each section is a definition list <dl> where the term
 			</tr>
 		</table>
 		<!-- prototype table -->
-			<a name="proto"></a>
+			<!--<a name="proto"></a>
 			<table class="outline" width="100%">
 				<tr>
 					<td class="enhance">
@@ -273,7 +272,7 @@ Note that the list in each section is a definition list <dl> where the term
 					</td>
 				</tr>
 			</table>
-	</td></tr>
+	</td></tr>-->
 
 </table>
 
