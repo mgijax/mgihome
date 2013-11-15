@@ -16,6 +16,7 @@
 	window.fewiurl="<!--#include file='include/fewi_url.html'-->";
   </script>
   <script type="text/javascript" src="<!--#include file='include/fewi_url.html'-->assets/js/disease_portal_autocomplete.js"></script>
+  <script type="text/javascript" src="<!--#include file='include/fewi_url.html'-->assets/js/disease_portal_upload.js"></script>
 
 <!--#include file='include/templateHdpBodyStart.html'-->
 
@@ -127,6 +128,18 @@ textarea {resize:none; background-color:#FFE4B5;}
 .ui-menu .ui-menu-item a {
 	padding:0px;
 }
+
+#alertBoxPosition
+{
+	top: 120px;left: 260px;
+}
+#locationsFileDiv
+{
+	font-size:150%; 
+	padding-top:12px; 
+	padding-left:20px;
+}
+.hide { display: none; }
 </style>
 
 <!-- Title Bar
@@ -141,7 +154,7 @@ textarea {resize:none; background-color:#FFE4B5;}
 
   <div id="hdpQueryFormWrapper" >
     <div class='relativePos' >
-    <form action="<!--#include file='include/fewi_url.html'-->diseasePortal/summary" method="post">
+    <form id="diseasePortalQueryForm" action="<!--#include file='include/fewi_url.html'-->diseasePortal/summary" method="post">
 
     <div style="position:absolute; top:2px; left:2px; width:250px;">
     <div class='relativePos'>
@@ -166,8 +179,8 @@ textarea {resize:none; background-color:#FFE4B5;}
       <div style="position:absolute; top:6px; left:15px; ">
         <span class='queryHeaderText'>Search by genome locations</span></br>
         <div style='margin-left:6px; padding-top:5px;'>
-        <input id="organism2" name="organism" class="organism" type="radio" value="human"/><span>Human(GRCh37)</span>
-        <input id="organism1" name="organism" class="organism" type="radio" value="mouse" checked="checked"/><span>Mouse(GRCm38)</span>
+        <label><input id="organismHuman1" name="organism" class="organism" type="radio" value="human"/>Human(GRCh37)</label>
+        <label><input id="organismMouse1" name="organism" class="organism" type="radio" value="mouse" checked="checked"/>Mouse(GRCm38)</label>
         </div>
       </div>
       <div style="position:absolute; top:60px; left:6px; ">
@@ -197,6 +210,7 @@ textarea {resize:none; background-color:#FFE4B5;}
     </div>
     </div>
 
+     <input id="locationsFileName" type="hidden" name="locationsFileName" value="">
     <input style="position:absolute; top:225px; left:700px; width:60px; font-size:20px;"
       name="submit" class="formButtons" value="GO" type="submit"><br/>
     <input class="formButtons"
@@ -208,14 +222,18 @@ textarea {resize:none; background-color:#FFE4B5;}
       <div style='font-size:150%;'>
         ----------OR--------------------------------------------------------------
       </div>
-      <form action="<!--#include file='include/fewi_url.html'-->diseasePortal/summary" method="post">
-      <div style='font-size:150%; margin-top:12px; margin-left:20px;'>
+      <form action="<!--#include file='include/fewi_url.html'-->diseasePortal/uploadFile" method="post" enctype="multipart/form-data"
+		id="hiddenFileForm" name="hiddenFileForm" target="hiddenfileform_if">
+       <div style='font-size:150%; margin-top:12px; margin-left:20px;'>
         Or Upload a VCF File: <input id="locationsFileInput" type="file" name="file">
-      </div>
+      </div> 
       <div style='margin-left:220px; padding-top:5px;'>
-        <input id="organism2" name="organism" class="organism" type="radio" value="human"/><span>Human(GRCh37)</span>
-        <input id="organism1" name="organism" class="organism" type="radio" value="mouse" checked="checked"/><span>Mouse(GRCm38)</span>
+	<!-- These are here to make the user feel better, but should not be submitted as extra organism values -->
+        <label><input id="organismHuman2" name="organismIgnore" class="organism" type="radio" value="human"/>Human(GRCh37)</label>
+        <label><input id="organismMouse2" name="organismIgnore" class="organism" type="radio" value="mouse" checked="checked"/>Mouse(GRCm38)</label>
       </div>
+	    <input type="hidden" name="field" value="locationsFile">
+	    <input type="hidden" name="type" value="vcf">
       </form>
     </div>
 
@@ -283,7 +301,42 @@ textarea {resize:none; background-color:#FFE4B5;}
 
 
 
-<script language="JavaScript">
+<script type="text/javascript">
+	var _idMap = {"organismHuman1":"organismHuman2",
+		"organismHuman2":"organismHuman1",
+		"organismMouse2":"organismMouse1",
+		"organismMouse1":"organismMouse2",
+		};
+	$(function(){
+		// wire up the two radio buttons to mirror each other
+		$("input.organism").change(function(e){
+			var id = $(this).attr("id");
+			var checked = $(this).prop("checked");
+			if(checked && id in _idMap)
+			{
+				mirrorId = _idMap[id];
+				$("#"+mirrorId).prop("checked",true);
+			}
+		});	
+
+		// make sure upload button is reset. Some browsers try to save your form state, but it won't work with our upload
+		if(typeof resetLocationsFileFields == 'function')
+		{
+			resetLocationsFileFields();
+		}
+		else
+		{
+			alert("Some javascript failed to load. This form may not function properly.");
+		}
+
+		// handle the upload reset when user resets the form
+		$("#diseasePortalQueryForm").on("reset",function(e){
+		    if(typeof resetLocationsFileFields == 'function')
+		    {
+                        resetLocationsFileFields();
+		    }
+		});
+	});
 </script>
 
 <!--#include file='include/templateBodyStop.html'-->
