@@ -301,10 +301,12 @@ textarea {resize:none; background-color:#FFE4B5;}
 
 		// handle the upload reset when user resets the form
 		$("#diseasePortalQueryForm").on("reset",function(e){
-		    if(typeof resetLocationsFileFields == 'function')
-		    {
-                        resetLocationsFileFields();
-		    }
+			if(typeof resetLocationsFileFields == 'function')
+			{
+			    resetLocationsFileFields();
+			}
+			// also make sure to reset second organism radio buttons
+			$("#organismMouse2").prop("checked",true);
 		});
 	});
 </script>
