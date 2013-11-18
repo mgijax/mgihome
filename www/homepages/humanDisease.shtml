@@ -28,9 +28,12 @@
   position: relative;
   margin: 0 auto;
   font-family: Verdana,Arial,Helvetica;
+  border-left: 1px solid;
+  border-right: 1px solid;
   /*background-color:#DDDDDD;*/
 }
 #hdpQueryFormWrapper{
+  left:6px;
   width: 804px;
   height: 320px;
   border:2px solid;
@@ -40,7 +43,7 @@
 }
 #resourceLinksWrapper{
   top:345px;
-  left:5px;
+  left:6px;
   width: 250px;
   height: 430px;
   border:2px solid;
