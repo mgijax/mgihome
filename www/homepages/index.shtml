@@ -130,6 +130,17 @@
     list-style-type: disc;
     margin-left: 12px;
   }
+  #searchToolButton {
+    font-size: 14px;
+    font-family: Verdana,Arial,Helvetica;
+    color: #025;
+    font-weight: bolder;
+    background-color: #eee;
+    border: 1px #7D95B9 solid;
+    padding: 3px;
+    -moz-outline-style: none;
+    outline: 0;
+  }
 }
 
 </style>
@@ -150,12 +161,19 @@
   <div id="searchAndNavigationWrapper" >
 
     <!-- searchtool -->
-    <div id="searchToolWrapper" >
+    <div class="relativePos" style="height:60px;">
       <form action="<!--#include file="include/quicksearch_url.html"-->Search.do" method="get">
+      <div style='position: absolute; left:5px; top:5px;' >
       <input name="query" id="searchToolTextArea" value=" Enter keywords, symbols, or IDs..."
         onFocus="if(this.defaultValue==this.value) this.value='';"
-        style="font-size:1.1em; height: 40px; width:265px;">
-      <input name="submit" class="searchToolButton" value="Quick Search" onClick="return verifySearchToolParms();" type="submit"><br/>
+        style="font-size:1.1em; height: 40px; width:275px;">
+      </div>
+      <div style='position: absolute; right:12px; top:10px;' >
+      <input name="submit" id="searchToolButton"
+        value="Quick&#x00A;Search" onClick="return verifySearchToolParms();"
+        type="submit"  >
+      </div>
+      <br/>
       </form>
     </div>
     <!-- advice text -->
