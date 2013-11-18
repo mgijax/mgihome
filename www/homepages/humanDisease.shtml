@@ -41,7 +41,7 @@
 #resourceLinksWrapper{
   top:345px;
   left:5px;
-  width: 212px;
+  width: 250px;
   height: 430px;
   border:2px solid;
   border-radius:22px;
@@ -50,50 +50,29 @@
   background-color:#DFEFFF;
 }
 #hdpTourLink{
+  position:absolute;
   top:10px;
   left:10px;
-  width: 180px;
-  height: 110px;
-  border:2px solid;
-  position:absolute;
-  padding: 4px;
-  padding-top:10px;
-  background-color:#2E8AE6;
-  text-align:center;
 }
 #hdpIntroLink{
+  position:absolute;
   top:150px;
   left:10px;
-  width: 180px;
-  height: 110px;
-  border:2px solid;
-  position:absolute;
-  padding: 4px;
-  padding-top:10px;
-  background-color:#FFA319;
-  text-align:center;
 }
 #hdpGlossaryLink{
-  width: 180px;
-  height: 110px;
-  border:2px solid;
   position:absolute;
   top:290px;
   left:10px;
-  padding: 4px;
-  padding-top:10px;
-  background-color:#CCCCB2;
-  text-align:center;
 }
 #spotlightText{
   position:absolute;
   top:360px;
-  left:260px;
+  left:300px;
 }
 #spotlightImage{
   position:absolute;
   top:500px;
-  left:260px;
+  left:300px;
 }
 .relativePos { position:relative; width: 100%; height: 100%; }
 .queryHeaderText { font:18px Verdana,Arial,Helvetica;}
@@ -135,8 +114,8 @@ textarea {resize:none; background-color:#FFE4B5;}
 }
 #locationsFileDiv
 {
-	font-size:150%; 
-	padding-top:12px; 
+	font-size:150%;
+	padding-top:12px;
 	padding-left:20px;
 }
 .hide { display: none; }
@@ -220,13 +199,13 @@ textarea {resize:none; background-color:#FFE4B5;}
 
     <div style="position:absolute; top:220px; left:20px; ">
       <div style='font-size:150%;'>
-        ----------OR--------------------------------------------------------------
+        ------------------------------------------------------------------------
       </div>
       <form action="<!--#include file='include/fewi_url.html'-->diseasePortal/uploadFile" method="post" enctype="multipart/form-data"
 		id="hiddenFileForm" name="hiddenFileForm" target="hiddenfileform_if">
        <div style='font-size:150%; margin-top:12px; margin-left:20px;'>
-        Or Upload a VCF File: <input id="locationsFileInput" type="file" name="file">
-      </div> 
+        Upload a VCF File: <input id="locationsFileInput" type="file" name="file">
+      </div>
       <div style='margin-left:220px; padding-top:5px;'>
 	<!-- These are here to make the user feel better, but should not be submitted as extra organism values -->
         <label><input id="organismHuman2" name="organismIgnore" class="organism" type="radio" value="human"/>Human(GRCh37)</label>
@@ -247,34 +226,25 @@ textarea {resize:none; background-color:#FFE4B5;}
     <div class='relativePos'>
 
       <div id="hdpTourLink" >
-        <a href="http://valinor.informatics.jax.org/mgihome/projects/hdpOverview.shtml">
-        <span style='font-size:90%;'> Take a tour of the </span><br>
-        <span style='font-size:150%;'> Genomic <br/>Medicine <br/>Portal</span>
+        <a href="<!--#include file='include/mgihome_url.html'-->projects/hdpOverview.shtml">
+        <img src="<!--#include file='include/mgihome_url.html'-->/homepages/images/hmdc_tour_button.png"
+          style="" height="115" width="230">
         </a>
       </div>
       <div id="hdpIntroLink" >
-        <a href="http://valinor.informatics.jax.org/mgihome/other/mouse_genetics_intro.shtml">
-        <span style='font-size:90%;'> Introduction to </span><br>
-        <span style='font-size:150%;'> Mouse <br/>Genetics </span>
+        <a href="<!--#include file='include/mgihome_url.html'-->other/mouse_genetics_intro.shtml">
+        <img src="<!--#include file='include/mgihome_url.html'-->/homepages/images/hmdc_intro_button.png"
+          style="" height="115" width="230">
         </a>
       </div>
       <div id="hdpGlossaryLink" >
-        <a href="http://valinor.informatics.jax.org/glossary/">
-        <span style='font-size:150%;'> Glossary </span>
+        <a href="<!--#include file='include/fewi_url.html'-->glossary">
+        <img src="<!--#include file='include/mgihome_url.html'-->/homepages/images/hmdc_glossary_button.png"
+          style="" height="115" width="230">
         </a>
       </div>
 
     </div>
-  </div>
-
-  <div style="position:absolute; top:800px; left:560px; ">
-    Powered by <a href='http://www.informatics.jax.org/'>MGI</a>
-  </div>
-  <div style="position:absolute; top:760px; left:680px; ">
-    <a href='http://www.informatics.jax.org/'>
-      <img src="http://www.informatics.jax.org/webshare/images/mgi_logo.gif"
-      height="" width="">
-    </a>
   </div>
 
   <div id="spotlightText" >
@@ -317,7 +287,7 @@ textarea {resize:none; background-color:#FFE4B5;}
 				mirrorId = _idMap[id];
 				$("#"+mirrorId).prop("checked",true);
 			}
-		});	
+		});
 
 		// make sure upload button is reset. Some browsers try to save your form state, but it won't work with our upload
 		if(typeof resetLocationsFileFields == 'function')
