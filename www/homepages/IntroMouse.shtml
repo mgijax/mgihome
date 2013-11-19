@@ -1,7 +1,9 @@
 <!--#include file='include/templateHead.html'-->
 
   <meta name="description" content="MGI provides access to integrated data on mouse genes and genome features, from sequences and genomic maps to gene expression and disease models." />
-  <meta name="keywords" content="MGI, mgi, mice, mouse, murine, mus musculus, genes, genome, genomic, sequences, proteins, microRNA, QTL, pseudogene, marker, genome feature, gene sequence, nomenclature, gene function, transgene, FASTA, MouseBLAST, Mouse BLAST" />
+  <meta name="keywords" content="MGI, mgi, mice, mouse, murine, mus musculus, genes, genome, genomic, 
+  sequences, genetics tutorial, proteins, microRNA, QTL, pseudogene, marker, genome feature, gene s
+  equence, nomenclature, gene function, transgene, introduction to genetics, mouse models, mouse genetics, FASTA, MouseBLAST, Mouse BLAST" />
 
   <meta name="robots" content="NOODP" />
   <meta name="robots" content="NOYDIR" />
@@ -43,11 +45,11 @@ data.</p>
 			<li><i>Interactive video:</i> Inbred strain nomenclature</li>
 		</ul>
 	</li>
-	<li><a href="#targeted">Targeted alleles</a>
+	<li><a href="#targeted"><b>Targeted alleles</b></a>
 	</li>
-	<li><a href="#cre">Conditional alleles and the cre-Lox system</a>
+	<li><a href="#cre"><b>Conditional alleles and the cre-Lox system</b></a>
 	</li>
-	<li><a href="#vocab">Structured vocabularies</a>
+	<li><a href="#vocab"><b>Structured vocabularies</b></a>
 	</li>
 </ul>
 </div>
@@ -83,7 +85,7 @@ data.</p>
 			where it is translated into protein.
 		</td>
 		<td valign="top">
-		<img style="padding:10px; solid #000000;"src="Images/Gene-mRNA-protein.png" alt="central dogma" width="360px"
+		<img style="padding:10px; solid #000000;"src="images/Gene-mRNA-protein.png" alt="central dogma" width="360px"
 			height="442px" border="1">
 		</td>
 	</tr>
@@ -96,7 +98,7 @@ data.</p>
 <col width="1000">
 	<tr>
 		<td valign="top">
-			<figure><img style="padding:10px; solid #000000; "src="Images/GenotypeInfographic.jpg" 
+			<figure><img style="padding:10px; solid #000000; "src="images/GenotypeInfographic.jpg" 
 				alt=Genes to phenotypes scheme width="274px" height="525px" align="left" border="1">
 				<div class="figcaption" style="padding:10px">
 					<p><b><br>Figure 1.  </b>Infographic illustration of the relationship 
@@ -289,7 +291,7 @@ across multiple generations or different laboratories.</p>
 	<tr>
 		<td valign="top">
 			<figure>
-				<img src="Images/Figure2.jpg" alt="inbred derivation" 
+				<img src="images/intro_inbredderivation.jpg" alt="inbred derivation" 
 				width=400 height=487 align="left" border="1">
 			</figure>
 		</td>
@@ -309,7 +311,7 @@ across multiple generations or different laboratories.</p>
 				identically in the two animals chosen to generate the following generation. 
 				From <a href="http://www.informatics.jax.org/resources.shtml#res_books">(Silver, 1995).</a>
 			</div>
-			<figure><img style="padding:10px; solid #000000;" src="Images/inbred.jpg" 
+			<figure><img style="padding:10px; solid #000000;" src="images/intro_fixationcurve.jpg" 
 			alt=inbred homozygosity width=350 height=218 align="left" border="1">
 		  	</figure>
 		  </td>
@@ -386,7 +388,7 @@ and develop. The illustration in <i>(C)</i> shows a heterozygous targeted allele
 
 <div id="figure4">
 	<figure>
-		<img style="padding:6px" src="Images/homologous.jpg" alt="homologous recombination" border="1">
+		<img style="padding:6px" src="images/intro_homologous.jpg" alt="homologous recombination" border="1">
 		<figcaption><p><b>Figure 4. Generation of targeted alleles by homologous 
 			recombination.</b> Targeted alleles of all kinds can be generated in 
 			embryonic stem cells by taking advantage of the normal processes of 
@@ -453,7 +455,7 @@ which is known as a transgene.</p>
 	  	transgene, which is when foreign (non-mouse) DNA is introduced into the germ 
 	  	line with the intention or producing a new, functional (non-mouse origin) protein.</p>  
   	</figcaption>
-		<img style="padding:6px" src="Images/targeted.png" width="600" height="611" alt="most common targeted allele types" border="1">
+		<img style="padding:6px" src="images/intro_targetedalleles.png" width="600" height="611" alt="most common targeted allele types" border="1">
 	</figure>
 </div>
 <br>
