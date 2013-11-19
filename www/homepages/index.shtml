@@ -22,7 +22,7 @@
 
   #homePageBodyInsert {
     width:920px;
-    height:920px;
+    height:1000px;
     margin: 0 auto;
     margin-left: auto;
     margin-right: auto;
@@ -49,12 +49,30 @@
     padding: 3px;
   }
 
+  #communityInterest{
+    position: absolute;
+    top: 690px;
+    left: 0px;
+    width: 900px;
+    /*height: 225px;*/
+    padding: 6px;
+  }
+
+  #randomMsgLayoutDiv {
+    position: absolute;
+    top: 130px;
+    left: 440px;
+    width: 460px;
+    height: 260px;
+    padding: 3px;
+  }
+
   #mgiWhatsNew {
     position: absolute;
     top: 415px;
     left: 440px;
     width: 460px;
-    height: 230px;
+    height: 252px;
     padding: 5px;
   }
 
@@ -85,23 +103,6 @@
     padding: 1px
   }
 
-  #communityInterest{
-    position: absolute;
-    top: 670px;
-    left: 0px;
-    width: 900px;
-    height: 225px;
-    padding: 6px;
-  }
-
-  #randomMsgLayoutDiv {
-    position: absolute;
-    top: 130px;
-    left: 440px;
-    width: 460px;
-    height: 260px;
-    padding: 3px;
-  }
 
   .randomMsg{
     position: absolute;
@@ -199,7 +200,7 @@
     <div class="homepageButton">
       <img src="<!--#include file='include/mgihome_url.html'-->homepages/images/homepage_Human.jpg"></img>
       <span class='homepageButtonText'>Human&ndash;Mouse: Disease Connection &nbsp</span>
-      <img src="<!--#include file='include/mgihome_url.html'-->homepages/images/Beta.png"></img>
+      <img style='float:right;' src="<!--#include file='include/mgihome_url.html'-->homepages/images/Beta.png"></img>
     </div>
     </a>
     <!-- gxd -->
@@ -275,16 +276,24 @@
       <div>
       <table>
       	<tr valign="left" padding=10px;>
-      		 <td>
-      		 <ul>
-        		<li>Introduction to mouse genetics</li>
-        		<li>How to use MGI</li>
-        		<li>The mouse as a model of human disease</li>
-      		</ul>
-      		</td>
-      		<td>
-      		<img src="<!--#include file='include/mgihome_url.html'-->homepages/images/FAQ_mouse.jpg" height="65" width="91"></img>
-      		</td>
+        <td>
+          <ul>
+          <li>
+            <a class='' href='<!--#include file='include/homepages_url.html'-->IntroMouse.shtml' >
+              Introduction to mouse genetics
+            </a>
+          </li>
+          <li>How to use MGI</li>
+          <li>
+            <a class='' href='http://research.jax.org/mousegenetics/index.html' >
+              The mouse as a model of human disease
+            </a>
+          </li>
+          </ul>
+      	</td>
+      	<td>
+      	<img src="<!--#include file='include/mgihome_url.html'-->homepages/images/FAQ_mouse.jpg" height="65" width="91"></img>
+      	</td>
       	</tr>
       </table>
     </div>
@@ -319,11 +328,6 @@
       <div class='randomMsg hide'>
         <a href='http://www.informatics.jax.org/phenotypes.shtml'>
         <img class='randomMsgImage' src="<!--#include file='include/mgihome_url.html'-->homepages/images/Carousel_image3.jpg"></img>
-        </a>
-      </div>
-      <div class='randomMsg hide'>
-        <a href='http://tumor.informatics.jax.org/mtbwi/index.do'>
-        <img class='randomMsgImage' src="<!--#include file='include/mgihome_url.html'-->homepages/images/Carousel_image4.jpg"></img>
         </a>
       </div>
 
