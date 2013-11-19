@@ -1,0 +1,506 @@
+<!--#include file='include/templateHead.html'-->
+
+  <meta name="description" content="MGI provides access to integrated data on mouse genes and genome features, from sequences and genomic maps to gene expression and disease models." />
+  <meta name="keywords" content="MGI, mgi, mice, mouse, murine, mus musculus, genes, genome, genomic, 
+  sequences, genetics tutorial, proteins, microRNA, QTL, pseudogene, marker, genome feature, gene s
+  equence, nomenclature, gene function, transgene, introduction to genetics, mouse models, mouse genetics, FASTA, MouseBLAST, Mouse BLAST" />
+
+  <meta name="robots" content="NOODP" />
+  <meta name="robots" content="NOYDIR" />
+
+  <link rel="stylesheet" type="text/css" href="<!--#include file="include/stylesheet.html"-->" />
+
+<!--#include file='include/templateBodyStart.html'-->
+
+<title>Introduction to Mouse Genetics</title>
+
+<font size="3" color="red">FOR ALPHA: This is a placeholder work in progress. Feel free to browse and make suggestions,
+but please consider this a draft. Formatting is yet to come, small tweaks will probably get 
+caught in proofing and sections will be beefed up/improved, especially those towards the 
+end of the document -- Joanne</font>
+<p>
+
+<h1>Introduction to Mouse Genetics</h1>
+<p>
+Mouse genetics has experienced many milestones over the last few decades, from
+the generation of inbred lines which consistently exhibited a coat color trait 
+or susceptibility to tumors in the early 1900s, up to routine gene manipulation, 
+conditional targeting and whole genome sequencing or transcript profiling of 
+individuals.  As an experimental system, the mouse has allowed incredible insight 
+into gene function, dissection of gene-disease relationships and a wealth of other 
+data.</p>
+
+<div class="clear"></div>
+
+<div id="TableOfContents">
+
+<h2>Table of Contents</h2>
+<ul>
+	<li><a href="#GAG"><b>Genes, Alleles and Genotypes</b></a>
+		<ul>
+			<li><i>Figure 1.</i> The central dogma of biology</li>
+			<li><i>Figure 2.</i> Species, genes, alleles and genotypes infographic</li>
+		</ul>
+	</li>
+	<li><a href="#glossary"><b>Quick glossary of terms</b></a>
+	</li>
+	<li><a href="#inbred"><b>Inbred strains</b></a>
+		<ul>
+			<li><i>Figure 3.</i> Derivation of inbred strains</li>
+			<li><i>Figure 4.</i> Consequences of inbreeding up to 20 generations</li>
+			<li><i>Interactive video:</i> Inbred strain nomenclature</li>
+		</ul>
+	</li>
+	<li><a href="#targeted"><b>Targeted alleles</b></a>
+	</li>
+	<li><a href="#cre"><b>Conditional alleles and the cre-Lox system</b></a>
+	</li>
+	<li><a href="#vocab"><b>Structured vocabularies</b></a>
+	</li>
+</ul>
+</div>
+
+<div class="clear"></div>
+
+<div id="GAG"></div>
+<h2>Genes, Alleles and Genotypes</h2>
+
+<table>
+<col width="80%">
+<col width="305px">
+	<tr>
+		<td valign="top"><p>The study of genetics in it&#8217;s most basic form is the study of 
+			genes. What they are, where they are, how they work, how they differ and how 
+			this forms the basis of inherited traits. Inherited traits include metabolic 
+			activity, disease susceptibility, body patterning, hair color, blood type and 
+			more.</p>
+			<p>The code for these traits resides in an organism's DNA. When a gene is 
+			activated, the DNA is transcribed into messenger RNA (mRNA) which is then 
+			translated into protein. The regulation of gene activation is controlled by 
+			transcription factors which can bind to non-coding promoter or enhancer 
+			elements. These recruit RNA polymerases and other factors to the 
+			transcriptional start site, which copy the sequence into a new molecule. The 
+			regions of the gene that will eventually code for protein are called exons 
+			and are spliced together with introns removed as part of mRNA processing. The 
+			canonical splice site consensus sequence in pre-mRNA uses "CAG&#124; G" for 
+			the 3' donor and "MAG &#124; GTRAGT" for the 5' splice site acceptor, where M 
+			is A or C and R is A or G. Additional post-transcriptional regulation may 
+			also occur by non-coding microRNAs (miRNA), small interfering RNAs (siRNA), 
+			small nuclear or nucleolar RNAs (snRNA and snoRNA), or other processes. mRNA 
+			is capped, polyadenylated and exported from the nucleus to the ribosomes, 
+			where it is translated into protein.
+		</td>
+		<td valign="top">
+		<img style="padding:10px; solid #000000;"src="images/Gene-mRNA-protein.png" alt="central dogma" width="360px"
+			height="442px" border="1">
+		</td>
+	</tr>
+</table>
+<div class="clear"></div>
+<br>
+<div id="GAG2">		
+<table>
+<col width="300">
+<col width="1000">
+	<tr>
+		<td valign="top">
+			<figure><img style="padding:10px; solid #000000; "src="images/GenotypeInfographic.jpg" 
+				alt=Genes to phenotypes scheme width="274px" height="525px" align="left" border="1">
+				<div class="figcaption" style="padding:10px">
+					<p><b><br>Figure 1.  </b>Infographic illustration of the relationship 
+					between species level genomes, genes, alleles and genotypes, which 
+					dictate phenotypes. The bottom photo shows an obese C57BL/6J-
+					<a href="http://www.informatics.jax.org/allele/key/568">
+					<i>Lep<sup>ob</sup>/Lep<sup>ob</sup></i> mouse</a> on the right, with a 
+					heterozygous <i>Lep<sup>ob</sup>/Lep<sup>&#43;</sup></i> lean littermate 
+					on the left.</p>
+				</div>
+			</figure>
+		</td>		
+		<td valign="top">
+			<p>Within a species, all members carry the same set of genes, 
+		or functional units. The mouse reference genome contains an estimated 
+		<a href="http://www.informatics.jax.org/mgihome/homepages/stats/all_stats.shtml#allstats_ortho">
+		22,958 protein-coding genes</a> and was fully sequenced in 2002 <a href="http://www.ncbi.nlm.nih.gov/pubmed/12466850">
+		(Mouse Genome Sequencing Consortium <i>et al.</i>, 2002, Nature)</a>. Structurally,
+		these are distributed across 19 pairs of autosomes, plus X and Y sex chromosomes. 
+		For the sake of comparison, humans have 23 pairs of chromosomes (22 autosomes 
+		plus XX or XY) which contain an estimated 20,687 protein-coding genes 
+		<a href="http://www.nature.com/nature/journal/v489/n7414/full/nature11247.html">
+		(The ENCODE Project Consortium, 2012, Nature)</a>. Over 90% of the mouse and 
+		human genomes can be aligned into regions of shared synteny, which is to say, 
+		blocks where homologous genes are conserved in the same relative order, 
+		indicative of shared common ancestry. At the gene level, a mouse homolog has 
+		been identified and classified for <a href="http://www.informatics.jax.org/mgihome/homepages/stats/all_stats.shtml#Vertebrate_Homology">
+		17,096</a> human genes.</p>
+			<p>Variability between individuals within a species is due to variant gene 
+		forms called alleles. Some changes are able to alter the expression or function 
+		of genes resulting in observable phenotypic differences, such as coat color, 
+		disease resistance/susceptibility, or metabolism but many other alleles result in 
+		little to no detectable variation beyond the sequence level. Variant alleles may 
+		include single nucleotide polymorphisms (SNPs), insertions and deletions (indels), 
+		or copy number variation (CNVs). In the case of laboratory model organisms, 
+		targeted alleles also exist where genetic engineering techniques have been used 
+		to specifically alter, delete or introduce DNA sequences. A single gene may have 
+		multiple alleles with different biological consequences, and every allele in MGI 
+		is given a unique identifier, which is appended to the gene symbol as a superscript. 
+		See the section below on Nomenclature for more.</p>
+			<p>Barring the unusual case of chimeras, every nucleated cell in a mouse&#8217;s 
+		body carries the same DNA code. However, different gene expression patterns allow 
+		these cells to develop into a variety of tissues and organs, as well as respond 
+		to stimuli. The <a href="http://www.informatics.jax.org/expression.shtml">Gene
+		Expression Database</a> at MGI allows you to search for genes which are expressed 
+		in different mouse anatomical structures, with a particular emphasis on embryonic 
+		development.</p>
+			<p>The end result, whether a single measurement or the composite of all of
+		an individual's observable or measurable traits is called the phenotype. In MGI, 
+		phenotypes are annotated to the complete genotype, which is comprised of both the 
+		allele(s) of special interest as well as the background. Just as different 
+		specific alleles may be expected to have different characteristics and biological 
+		impacts (consider missense coding variants versus knockout alleles versus 
+		conditional or reporter targeted alleles), other alleles in the strain background, 
+		whether known or unknown, can have modifier effects on a trait, or set of traits. 
+		For example, the <a href="http://www.informatics.jax.org/allele/key/568">
+		<i>Lep<sup>ob</sup></i> allele</a> shows background sensitivity with homozygous 
+		<i>Lep<sup>ob</sup>/Lep<sup>ob</sup></i> <a href="http://jaxmice.jax.org/strain/000632.html">
+		on a C57BL/6J background</a> exhibiting severe obesity with a pre-diabetes-like 
+		syndrome, while <i>Lep<sup>ob</sup>/Lep<sup>ob</sup></i>
+		<a href="http://jaxmice.jax.org/strain/000696.html">on a C57BLKS background</a> become 
+		severely diabetic and infertile in addition to obese, with a significantly shortened
+		life expectancy.
+		</td>
+	</tr>	 
+</table>
+</div>
+
+<div class="clear"></div>
+<div id="glossary"></div>
+
+<h2>Quick Glossary</h2>
+
+<p>For a full glossary, see: <a href="http://www.informatics.jax.org/glossary">MGI Glossary</a>
+</p>
+
+<table border="2" cellpadding="8">
+<col width="150">
+<col width="1000">
+  <tr>
+   	<th>Term</th>
+   	<th>Definition</th>
+  </tr>
+  <tr>
+   	<td><b>Inbred strain</b>
+   	</td>
+   	<td>A strain that is essentially homozygous at all loci. In mice, requires brother-
+   		sister matings for at least 20 sequential generations. Within an inbred strain, 
+   		individuals are genetically identical to one another; though different inbred 
+   		strains each carry a unique set of alleles. <a href="#inbred">See more</a>.
+   	</td>
+  </tr>    
+  <tr>
+   	<td><b>Allele</b></td>
+   	<td>One of the variant forms of a gene, differing from other forms in its nucleotide 
+   		sequence. Diploid organisms carry two alleles at each locus which may be the same 
+   		(homozygous) or different (heterozygous). Hemizygous is used to describe alleles 
+   		where you would <i>not</i> expect two alleles for an organism in the "normal" 
+   		state (i.e. Y-chromosomes, X-linked genes in males, or insertion of foreign DNA). 
+   		Includes natural variation and targeted variants.
+   	</td>
+  </tr>
+  <tr>
+  	<td><b>Phenotypic Allele</b></td>
+   	<td>An allelic variant which produces an observable change. May be spontaneous 
+   		mutations or targeted. 
+   	</td>
+  </tr> 
+  <tr>
+    <td><b>Targeted Allele</b></td>
+    <td>Using laboratory techniques to specifically disrupt, alter or introduce DNA 
+    	sequences such that the “targeted” allele will be heritable in the germ line of 
+    	offspring. Includes knockouts, knock-ins, reporters, conditional, transgenes and
+		more.
+	</td>
+  </tr> 
+  <tr>
+    <td><b>Transgene</b></td>
+    <td>Foreign (non-mouse) origin DNA introduced into a mouse&#8217;s germ line.</td>
+  </tr> 
+  <tr>
+   	<td><b>Genotype</b></td>
+   	<td>
+   		<ol>
+   			<li>The complete set of genetic information carried by an individual. All 
+   			alleles, natural and targeted along with background.</li>
+   			<li>A description of the genetic information carried by an organism. In the 
+   			simplest case, genotype may refer to the information carried at a single 
+   			locus, as in <i>A/A</i>, <i>A/a</i>, or <i>a/a</i>.</li>
+   		</ol>
+   	</td>
+  </tr>
+  <tr>
+     <td><b>Phenotype</b></td>
+     <td><ol>
+    	 	<li>The observable or measurable characteristics of an organism or individual.</li>
+		 	<li>In MGI, also refers to a structured descriptive vocabulary (see 
+		 	<a href="http://www.informatics.jax.org/searches/MP_form.shtml">Mammalian 
+		 	Phenotype Ontology)</a></li> 
+		</ol> 
+	 </td>
+  </tr>
+  <tr>
+	<td><b>Locus/Loci <i>(pl.)</i></b></td>
+    <td>Literally "place". Refers to chromosomal position or coordinates, or a gene&#47;cluster
+    which can be mapped there.</td>
+  </tr>
+  <tr>
+    <td><b>Endogenous</b></td>
+    <td>That which originates from within the organism. <i>ex.</i> Gene sequences which 
+    have not been targeted.</td>
+  </tr>
+  <tr>
+     <td><b>Homolog</b></td>
+     <td>
+     	<ol>
+        	<li>Two or more genes related by descent from a common ancestral DNA sequence. 
+        	May be applied to genes in different species (<i>ortholog</i>), or gene 
+        	duplications within a species (<i>paralog</i>).</li>
+			<li>One of a pair of chromosomes that segregate from one another during the 
+			first meiotic division.</li>
+			<li>A morphological structure in one species related to that in a second 
+			species by descent from a common ancestral structure.</li>
+		</ol>
+     </td>
+  </tr>
+</table>
+</div>
+
+<br>
+
+<div id="inbred">
+<h2>Inbred Strains</h2>
+
+<p>To begin understanding mouse model genetics, it is important to begin at the roots 
+&#45; inbred lines. An inbred strain is one in which mice have been carefully bred 
+either brother&#45;sister or parent&#45;progeny over a minimum of 20 sequential 
+generations to produce a line which is genetically and phenotypically consistent. Most 
+laboratory strains are now several hundreds of generations inbred. Within an inbred 
+mouse strain, all individuals have the same genotype and are homozygous (carry a single 
+allelic variant) at all loci. Members of an inbred strain are essentially genetic 
+clones of one another, which allows good experimental reproducibility for genetically 
+influenced traits, guaranteeing a consistent and uniform animal model for study, even 
+across multiple generations or different laboratories.</p>
+
+<div id="figure2">
+<table>
+<col width="400">
+<col width="500">
+	<tr>
+		<td valign="top">
+			<figure>
+				<img src="images/intro_inbredderivation.jpg" alt="inbred derivation" 
+				width=400 height=487 align="left" border="1">
+			</figure>
+		</td>
+		<td valign="top">
+			<div class="figcaption" style="padding:2px;">
+				<br>
+				<b>Figure 2.</b> Derivation of inbred strains</b>. Unique strains of 
+				laboratory mice are generated by repeated intercrossing (brother&#45;sister) 
+				or backcrossing (parent&#45;offspring) until mice are homozygous at all loci.
+			</div>
+			<div class="figcaption" style="padding:2px">
+				<br>
+				<b>Figure 3.</b> Consequences of inbreeding up to 20 generations.</b> 
+				Points on the solid line indicate the portion of the genome that 
+				will be homozygous in any individual animal at each generation. Points on 
+				the dashed line indicate the portion of the genome that will be fixed 
+				identically in the two animals chosen to generate the following generation. 
+				From <a href="http://www.informatics.jax.org/resources.shtml#res_books">(Silver, 1995).</a>
+			</div>
+			<figure><img style="padding:10px; solid #000000;" src="images/intro_fixationcurve.jpg" 
+			alt=inbred homozygosity width=350 height=218 align="left" border="1">
+		  	</figure>
+		  </td>
+	</tr>
+</table>
+
+<br>
+<div class="clear"></div>
+
+<div id="inbred2"><p class="TextAlignment" width="100%">
+
+<p>While all mice are genetically homogenous within a specific inbred line, different 
+inbred lines will carry a different set of fixed alleles and exhibit different phenotypic 
+characteristics as a result. Choosing the right inbred strain for a particular 
+experiment or control is an important consideration when working with laboratory mice.</p>
+<p>Having a well characterized and consistent background is also a valuable tool
+when it comes to examining the effects of a <a href="#targeted">targeted allele</a> or
+manipulation. By comparing the phenotype of the targeted line to its parental strain, 
+it is possible to determine the which biological systems have been affected and draw 
+inferences about the function of the single, modified gene.</p>
+<p>Inbred strains are given names to identify the specific genetic background. These 
+names are composed of a combination of capital letters and/or numbers and may also have 
+substrain designations (letters or numbers following a forward slash) and&#45;or lab 
+codes to indicate where the strain is being maintained. See the nomenclature tutorial 
+video, or browse the <a href="http://www.informatics.jax.org/mgihome/nomen/index.shtml">Full 
+Guidelines for Nomenclature of Mouse and Rat Strains.</a></p>
+
+<br>
+<font size="5" color="red">FIND A WAY TO EMBED NOMENCLATURE VIDEO</font>
+<br>
+
+<a
+href="http://jaxmice.jax.org/support/nomenclature/tutorial.html">http://jaxmice.
+jax.org/support/nomenclature/tutorial.html</a>
+
+<br>
+<p>The most commonly used inbred strain is C57BL/6J which was also the strain
+sequenced to generate the “reference” mouse genome. For more information on specific 
+inbred strains, see the strain detail pages on the <a href="http://phenome.jax.org/db/q?rtn=strains/home">
+Mouse Phenome Database.</a></p> 
+</div>
+
+<div class="clear"></div>
+
+<div id="alleles">
+
+<h2>Targeted Alleles</h2>
+
+<p>As mentioned above, one of the advantages of inbred strains in genetic research is 
+that they provide a stable framework to study the role a single gene by using mutants
+or knockout alleles. Unlike in population-based studies in humans where many genetic 
+factors are segregating, a new, known mutation on a predictable background allows 
+researchers to attribute new phenotypes to that specific gene and draw inferences about 
+it&#8217;s normal function. Because a stable, predictable  background is required, mutant 
+phenotypes in MGI are attributed to the complete genotype of a mouse (specific allele 
+on a defined inbred background). Many mutant alleles exhibit the same phenotype 
+regardless of background, but others have altered penetrance or display a range of 
+phenotypes in a background-dependent fashion as a result of other pathway modifiers.</p>
+
+<p>One of the most useful aspects of the mouse as an experimental genetic model
+is this ability to easily generate targeted alleles. The canonical targeted allele is a
+gene knockout, where all or part of the coding region of a targeted gene is replaced 
+by a selection cassette, completely eliminating function. This is achieved by introducing
+ a vector engineered to contain homologous sequences on either side of the targeting 
+cassette into embryonic stem (ES) cells. The cellular machinery within a cell pairs the 
+vector&#8217;s homologous arms to the mouse&#8217;s endogenous sequence and if recombination occurs 
+on both sides, the cassette will be introduced into the germ line. These ES cells can 
+be selected and transplanted back into a pseudopregnant female mouse where they will grow 
+and develop. The illustration in <i>(C)</i> shows a heterozygous targeted allele.</p>
+  
+</div>
+
+<div id=homologous>
+
+<div id="figure4">
+	<figure>
+		<img style="padding:6px" src="images/intro_homologous.jpg" alt="homologous recombination" border="1">
+		<figcaption><p><b>Figure 4. Generation of targeted alleles by homologous 
+			recombination.</b> Targeted alleles of all kinds can be generated in 
+			embryonic stem cells by taking advantage of the normal processes of 
+			homologous recombination in the cell. <b><i>(A)</i></b> First, a targeting 
+			vector is constructed which contains the cassette to be introduced 
+			(engineered cassette) flanked both upstream and downstream with DNA sequences 
+			that match perfectly (i.e. are homologous) to the upstream and downstream 
+			regions around the endogenous gene or region an investigator wants to replace. 
+			In the case of a knockout allele, typically the engineered cassette will 
+			replace coding exons with a selectable marker such as a neomycin resistance 
+			gene (NEO cassette) to facilitate selection and enrichment of positive ES 
+			cell clones. Often a negative selection marker will be built into the vector 
+			downstream of the homologous region to allow screening against incomplete 
+			(single arm) or random recombinations. <b><i>(B)</i></b> The targeting vector 
+			is introduced into the nucleus of a pluripotent embryonic stem cell, where 
+			the homologous arms match up with their matching sequences in the endogenous 
+			gene. In a process similar to what occurs during meiosis, the aligned regions 
+			cross over, incorporating the engineered construct into the endogenous locus 
+			and removing the enclosed endogenous sequence. 
+			<b><i>(C)</i></b> The complete, properly targeted cell now has the engineered 
+			construct in it&#8217;s germ line in place of the reference sequence. ES cells can 
+			be screened for proper targeting using the selectable markers, sequencing, 
+			and/or Southern blotting, then positive clones can be grown to blastocysts 
+			and implanted in a pseudopregnant recipient mouse where they will develop as 
+			embryos.</p>
+		</figcaption>
+	</figure>
+</div>
+
+<div class="clear"></div>
+<div id=homologous2>	
+  
+
+<p>This same strategy can also be used to introduce specific new variation into a mouse. 
+This may be a single, specific engineered substitution designed to duplicate a mutation 
+found in human clinical cases (ex. <a href="http://www.informatics.jax.org/allele/key/56294">
+M390R in Bbs1<sup>tm1Vcs</sup></a>), a recombinase recognition sequence to allow <i>in 
+vivo</i> genome manipulation, or the introduction of a complete cDNA from another species, 
+which is known as a transgene.</p>
+  
+</div>
+
+<div id="figure4">
+	<figure valign="center">
+		<figcaption>
+	  	<b><p>Figure 4. Four of the most common targeted allele types:</b> The top 
+	  	row depicts the endogenous (or unaltered) allele where exons are properly spliced 
+	  	(see dashed lines) and a full length, functional protein is produced. Below,
+	  	 a knock-out allele (KO) uses homologous recombination to replace certain 
+	  	functional exons with a targeting cassette containing a selectable marker. This 
+	  	gene is no longer able to produce a functional protein. A <a href="#cre">conditionally 
+	  	targeted allele</a>, also commonly referred to as "floxed" for "flanked by LoxP" 
+	  	introduces recombinase recognizable sequences both upstream and downstream of
+	  	the targeted exons. When no recombinase enzymes are expressed, these genes 
+	  	function as normal; however, if the correct recombinase is expressed within the 
+	  	same cell (illustrated with the scissors), it is able to act on these sites and 
+	  	produce an altered allele, most commonly excising the exon for a truncated, 
+	  	non-functional protein. For a reporter allele, a cassette is introduced which 
+	  	contains a detectable marker, commonly a fluorescent tag or lacZ gene which can 
+	  	be visualized under a microscope. These are often used to detect patterns of gene 
+	  	expression as the marker will indicate when the target promoter has been 
+	  	activated. They often disrupt the normal gene splicing or protein conformation, 
+	  	so may act as nulls or have only partial activity. The bottom row depicts a 
+	  	transgene, which is when foreign (non-mouse) DNA is introduced into the germ 
+	  	line with the intention or producing a new, functional (non-mouse origin) protein.</p>  
+  	</figcaption>
+		<img style="padding:6px" src="images/intro_targetedalleles.png" width="600" height="611" alt="most common targeted allele types" border="1">
+	</figure>
+</div>
+<br>
+<div class="clear"></div>
+<div id="cre">
+<h2>Conditional Alleles and the cre-Lox System</h2>
+
+<p>For many genes, a complete null allele can have very serious consequences for
+embryonic development or viability. As well, investigators may often wish to examine 
+the role of a gene exclusively in the context of a particular organ system or cell 
+type without causing abnormalities elsewhere. Site-specific recombinase technology 
+can be used to efficiently cause deletions, translocations and inversions in genomic 
+DNA with high fidelity when a genome-remodeling recombinase enzyme is co-expressed. 
+By restricting expression of the recombinase to specific tissues or cell lineages &#45; 
+or by placing it under the control of a drug-inducible promoter &#45; the genome 
+remodeling can also be restricted to specific tissues or time points.</p>
+<p>The most commonly used system in laboratory mice is called "cre-lox" which involves 
+the cre recombinase enzyme, originally cloned from the P1 bacteriophage, and recombinase 
+recognition sites referred to as "loxP sites" (locus of X&#45;over P1). LoxP 
+sites are 32 base pair consensus sequences with an 8-base core and two inverted repeats.</p>
+
+<p>
+	<blockquote><FONT FACE="courier">ATAACTTCGTATA<B>GCATACAT</B>TATACGAAGTTAT&#9658;</FONT>
+	</blockquote></p>
+	
+<p>The inverted repeats give the loxP site the capacity for directionality. If the two 
+flanking loxP sites (upstream and downstream of the target) are oriented in the same 
+direction, the floxed segment will be excised along with one of the loxP repeats (as shown 
+in Figure 5), if the loxP sites are opposite orientations (facing each other), the segment 
+will be inverted, and if the loxP sites are located on different chromosomes (a <i>trans</i> 
+arrangement), the recombinase will mediate chromosomal translocations. A single loxP site 
+can not be manipulated by cre recombinase.
+
+</div>    
+<div class="clear"></div>
+<div id=#vocab>
+<h2>Structured vocabularies and ontologies</h2>
+
+
+<!--#include file='include/templateBlankBodyStop.html'-->
+</body>
+</html>
