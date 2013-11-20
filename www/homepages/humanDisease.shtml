@@ -35,14 +35,14 @@
 #hdpQueryFormWrapper{
   left:6px;
   width: 804px;
-  height: 320px;
+  height: 340px;
   border:2px solid;
   border-radius:22px;
   position:absolute;
   background-color:#D0E0F0;
 }
 #resourceLinksWrapper{
-  top:345px;
+  top:360px;
   left:6px;
   width: 250px;
   height: 430px;
@@ -68,7 +68,7 @@
   left:10px;
 }
 #spotlightWrapper{
-  top:345px;
+  top:360px;
   left:300px;
   width: 502px;
   height: 430px;
@@ -197,6 +197,11 @@ textarea {resize:none; background-color:#FFE4B5;}
       name="submit" class="formButtons" value="GO" type="submit"><br/>
     <input class="formButtons"
       style="position:absolute; top:265px; left:700px; width:60px; font-size:14px;" type="reset" >
+    <div style="position:absolute; top:290px; left:715px; ">
+      <img src="<!--#include file='include/mgihome_url.html'-->homepages/images/Beta.png" style="" height="30" width="45">
+    </div>
+
+
 
     </form>
 
@@ -214,8 +219,11 @@ textarea {resize:none; background-color:#FFE4B5;}
         <label><input id="organismHuman2" name="organismIgnore" class="organism" type="radio" value="human"/>Human(GRCh37)</label>
         <label><input id="organismMouse2" name="organismIgnore" class="organism" type="radio" value="mouse" checked="checked"/>Mouse(GRCm38)</label>
       </div>
-	    <input type="hidden" name="field" value="locationsFile">
-	    <input type="hidden" name="type" value="vcf">
+      <div style='margin-left:20px; padding-top:5px;'>
+      We recommend the file be pre-filtered to reduce the number of candidates.
+      </div>
+      <input type="hidden" name="field" value="locationsFile">
+      <input type="hidden" name="type" value="vcf">
       </form>
     </div>
 
@@ -229,13 +237,13 @@ textarea {resize:none; background-color:#FFE4B5;}
     <div class='relativePos'>
 
       <div id="hdpTourLink" >
-        <a href="<!--#include file='include/mgihome_url.html'-->projects/hdpOverview.shtml">
+        <a href="<!--#include file='include/mgihome_url.html'-->other/hmdc_tour.html">
         <img src="<!--#include file='include/mgihome_url.html'-->/homepages/images/hmdc_tour_button.png"
           style="" height="115" width="230">
         </a>
       </div>
       <div id="hdpIntroLink" >
-        <a href="<!--#include file='include/mgihome_url.html'-->other/mouse_genetics_intro.shtml">
+        <a href="<!--#include file='include/mgihome_url.html'-->other/homepage_IntroMouse.shtml">
         <img src="<!--#include file='include/mgihome_url.html'-->/homepages/images/hmdc_intro_button.png"
           style="" height="115" width="230">
         </a>
