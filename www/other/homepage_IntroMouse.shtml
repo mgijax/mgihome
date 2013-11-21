@@ -1,5 +1,3 @@
-<!--#include file='include/templateHead.html'-->
-
   <meta name="description" content="MGI provides access to integrated data on mouse genes and genome features, from sequences and genomic maps to gene expression and disease models." />
   <meta name="keywords" content="MGI, mgi, mice, mouse, murine, mus musculus, genes, genome, genomic, 
   sequences, genetics tutorial, proteins, microRNA, QTL, pseudogene, marker, genome feature, gene s
@@ -10,14 +8,36 @@
 
   <link rel="stylesheet" type="text/css" href="<!--#include file="include/stylesheet.html"-->" />
 
-<!--#include file='include/templateBodyStart.html'-->
+
+<body>
+<!--#include file='include/templateHead.html'-->
+<title>
+  <!--#include file="include/mgiversion.html"-->
+MGI-Using the Human-Mouse: Disease Connection</title>
+<link rel="stylesheet" type="text/css" href="./userhelp.css"  />
+
+<script>
+function openHelpWindow(helpFile){
+  helpUrl = "./" + helpFile;
+  window.open(helpUrl,'helpWindow','width=1000,height=600,resizable=yes,scrollbars=yes,alwaysRaised=yes');
+};
+</script>
+
+<style type="text/css">
+
+</style>
+
+<!--#include file='include/templateBlankBodyStart.html'-->
+
+
+
 
 <title>Introduction to Mouse Genetics</title>
 
 <font size="3" color="red">FOR ALPHA: This is a placeholder work in progress. Feel free to browse and make suggestions,
 but please consider this a draft. Formatting is yet to come, small tweaks will probably get 
 caught in proofing and sections will be beefed up/improved, especially those towards the 
-end of the document -- Joanne</font>
+end of the document --JB</font>
 <p>
 
 <h1>Introduction to Mouse Genetics</h1>
@@ -504,3 +524,4 @@ can not be manipulated by cre recombinase.
 <!--#include file='include/templateBlankBodyStop.html'-->
 </body>
 </html>
+
