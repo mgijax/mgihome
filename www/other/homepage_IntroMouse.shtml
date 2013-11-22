@@ -1,3 +1,8 @@
+<!--#include file='include/templateHead.html'-->
+<title><!--#include file="include/mgiversion.html"-->
+Introduction to Mouse Genetics</title>
+
+
   <meta name="description" content="MGI provides access to integrated data on mouse genes and genome features, from sequences and genomic maps to gene expression and disease models." />
   <meta name="keywords" content="MGI, mgi, mice, mouse, murine, mus musculus, genes, genome, genomic, 
   sequences, genetics tutorial, proteins, microRNA, QTL, pseudogene, marker, genome feature, gene s
@@ -8,11 +13,10 @@
 
 
 <body>
-<!--#include file='include/templateHead.html'-->
-<!--#include file="include/mgiversion.html"-->
 
-<link rel="stylesheet" type="text/css" href="<!--#include file="include/stylesheet.html"-->" />
-<title>Introduction to Mouse Genetics</title>
+<link rel="stylesheet" type="text/css" href="./userhelp.css" />
+
+
 
 <script>
 function openHelpWindow(helpFile){
@@ -25,20 +29,41 @@ function openHelpWindow(helpFile){
 
 </style>
 
+<div id="faqPageHeader">
+<img src="<!--#include file='include/webshare_url.html'-->images/mgi_logo.gif">
+<span class="faqHeaderText">
+Introduction to Mouse Genetics
+</span>
+</div>
+
+<!-- Container Table -->
+<table border=0 cellpadding=0 cellspacing=5 width="100%">
+
+<!-- Title Bar -->
+<tr>
+  <td class="enhance" align=left>
+      <!--#include file='help_toolbar.shtml'-->
+    </tr>
+</table>
+
+
 <!--#include file='include/templateBlankBodyStart.html'-->
 
-
-
+<!-- Body of User Help -->
 
 <title>Introduction to Mouse Genetics</title>
+
 
 <font size="3" color="red">FOR ALPHA: This is a placeholder work in progress. Feel free to browse and make suggestions,
 but please consider this a draft. Formatting is yet to come, small tweaks will probably get 
 caught in proofing and sections will be beefed up/improved, especially those towards the 
-end of the document --Joanne</font>
+end of the document --Joanne125</font>
 <p>
 
 <h1>Introduction to Mouse Genetics</h1>
+
+<div id="templateBodyInsert">
+
 <p>
 Mouse genetics has experienced many milestones over the last few decades, from
 the generation of inbred lines which consistently exhibited a coat color trait 
@@ -109,7 +134,7 @@ data.</p>
 			where it is translated into protein.
 		</td>
 		<td valign="top">
-		<img style="padding:10px; solid #000000;"src="images/Gene-mRNA-protein.png" alt="central dogma" width="360px"
+		<img style="padding:10px; solid #000000;"src="images/intro_dogma.png" alt="central dogma" width="360px"
 			height="442px" border="1">
 		</td>
 	</tr>
@@ -122,7 +147,7 @@ data.</p>
 <col width="1000">
 	<tr>
 		<td valign="top">
-			<figure><img style="padding:10px; solid #000000; "src="images/GenotypeInfographic.jpg" 
+			<figure><img style="padding:10px; solid #000000; "src="images/intro_GenotypeInfographic.jpg" 
 				alt=Genes to phenotypes scheme width="274px" height="525px" align="left" border="1">
 				<div class="figcaption" style="padding:10px">
 					<p><b><br>Figure 1.  </b>Infographic illustration of the relationship 
