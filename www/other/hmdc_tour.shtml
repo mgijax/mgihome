@@ -1,5 +1,5 @@
 <!--#include file='include/templateHeadNoReset.html'-->
-<title><!--#include file="include/mgiversion.html"-->
+<title>
 HMDC tour</title>
 
 
@@ -19,7 +19,7 @@ HMDC tour</title>
 <!--#include file='include/templateHdpBodyStart.html'-->
 
 
-<h1>A brief tour of the Human-Mouse: Disease Connection</h1>
+<h1><font color="f7941e">A brief tour of the Human-Mouse: Disease Connection</font></h1>
 
 <font size="3" color="red">Placeholder document; work in progress -Joanne</font>
 
@@ -28,7 +28,7 @@ see also the <a href="<!--#include file="include/userhelp_url.html"-->disease_co
 Human&#8211;Mouse&#58; Disease Connection user help documentation.</a>
 
 <div id=TOC>
-<h2>Table of contents</h2>
+<h2><font color="f7941e">Table of contents</font></h2>
 
 <ol>
 	<li><a href="#overview">The Human&#8211;Mouse&#58; Disease Connection</a></li>
@@ -40,13 +40,14 @@ Human&#8211;Mouse&#58; Disease Connection user help documentation.</a>
 			<li><a href="#geneTab">Genes tab</a></li>
 			<li><a href="#diseaseTab">Diseases tab</a></li>
 		</ol></li>
+	<li><a href="#vcf">Uploading vcf files</a>
 	<li>Examples</li>		
 </ol>
 </div>
 
 <br>
 <div id=overview>
-<h2>The Human&#8211;Mouse&#58; Disease Connection</h2>
+<h2><font color="f7941e">The Human&#8211;Mouse&#58; Disease Connection</font></h2>
 
 <p>The goal of the Human&#8211;Mouse&#58; Disease Connection (HMDC) is to provide seamless human-to-mouse 
 data traversal, enabling clinical and translational researchers to take advantage of wealth 
@@ -68,7 +69,7 @@ which are unfamiliar to you, we also encourage you to browse the <a href="homepa
 Introduction to Mouse Genetics</a> in order to aid with the interpretation of your results.</p>
 <p>
 <div id="whatcan">
-<h3>What can you do with the HMDC?</h3>
+<h3><font color="f7941e">What can you do with the HMDC?</font></h3>
 <p>
 This tool can be used to:
 <ul>
@@ -85,28 +86,28 @@ This tool can be used to:
 <a href="#TOC">&#91;return to top&#93;</a>
 
 <div id="begin">
-<h3>Beginning your search</h3>
+<h3><font color="f7941e">Beginning your search</font></h3>
 
 <p>Entry into the HMDC is designed to be straightforward. On the homepage, three boxes appear 
 where investigators may choose to enter (1) genes - either individually or multiples, (2) 
 a genome location or set of regions, and/or (3) disease name(s) or mammalian phenotype(s).
 
 <ol>
-	<li><b>Searching genes:</b><br>
+	<li><font color="002255"><b>Searching genes:</b></font><br>
 			Gene based queries will match official symbols, full gene names and synonyms in both human and 
 			mice. An asterisk (&#42;) can be used as a wildcard in the prefix or suffix. 
 			Separate multiple entries using commas, spaces or new lines. </li>
-	<li><b>Searching positions:</b><br>
+	<li><font color="002255"><b>Searching positions:</b></font><br>
 			To search positions, please also ensure that you are using the current genome 
 			assembly (build) and have selecting the appropriate species using the radio 
 			buttons above the search window. If you need to convert your data, a 
 			<a href="http://www.ncbi.nlm.nih.gov/genome/tools/remap#tab=asm">simple online 
-			remapping tool has been provided by NCBI</a>. <font color="#FF8C00"><b>Currently 
+			remapping tool has been provided by NCBI</a>. <font color="#F7941e"><b>Currently 
 			only base pair (bp) positions are supported</font></b>, not megabase (Mb) or 
 			linkage positions (i.e. centimorgans or band position). Separate multiple entries 
 			using spaces, commas or new lines; please do not use commas in your coordinate 
 			position or they will be misinterpreted as independent.</li>
-	<li><b>Searching disease and phenotype terms:</b><br>
+	<li><font color="002255"><b>Searching disease and phenotype terms:</b></font><br>
 			Disease and phenotype terms may be searched using text-matching by simply 
 			typing in the box, or you can take advantage of structured vocabulary by 
 			selecting from the autocomplete list that appears. Multiple entries are 
@@ -134,10 +135,10 @@ a genome location or set of regions, and/or (3) disease name(s) or mammalian phe
 					</li>		
 			</ul>
 			</li>
-		<li><b>Upload a vcf:</b><br>
+		<li><font color="002255"><b>Upload a vcf:</b></font><br>
 			Variant call format (.vcf) file upload is also supported for phenotype and 
-			disease annotation. This tool will not do functional analysis of variants, 
-			so we recommend uploading a trimmed candidate list. 
+			disease annotation. This tool is not equipped to do functional analysis of 
+			variants or filtering, so we recommend uploading a trimmed candidate list. 
 			See <a href="https://www.sanger.ac.uk/resources/databases/exomiser/">
 			Exomiser</a> for a filtering tool. The default is to discard all SNPs with a 
 			known dbSNP identifier (rs&#35;). If you want to keep these genes in your results 
@@ -164,7 +165,7 @@ case sensitive).
 <a href="#TOC">&#91;return to top&#93;</a>
 <br>
 <div id="results">
-<h3>Search Results</h3>
+<h3><font color="f7941e">Search Results</font></h3>
 <p>Along the top, an orange banner remembers your original query and allows you to quickly 
 modify your results by adding, removing or replacing search terms. A second banner below 
 serves as a header for your results, and indicates which type of matching was run. The results 
@@ -175,7 +176,7 @@ themselves are arranged into three tabbed tables for: Gene homology x Phenotypes
 <br>
 <br>
 <div id=HomologyPDtab>
-<b>1. Gene homology x Phenotypes/Diseases tab</b>
+<b><font color="002255">1. Gene homology x Phenotypes/Diseases tab</font></b>
 	<ul>
 		On this tab, a list of gene homologs (<i>column 1:</i> human, <i>column 2:</i> mouse) 
 		and gene-associated phenotype (left side) or disease (right side) terms which matched 
@@ -233,7 +234,7 @@ themselves are arranged into three tabbed tables for: Gene homology x Phenotypes
 			with a human disease as collected by <a href="http://www.ncbi.nlm.nih.gov/omim">OMIM</a>, 
 			<a href="http://www.ncbi.nlm.nih.gov/">NCBI</a> curation, 
 			<a href="http://www.ncbi.nlm.nih.gov/books/NBK1116/">Gene Reviews</a>, 
-			or <a href="http://www.genetests.org/">Gene Tests<a>), or a mutant mouse has 
+			or <a href="http://www.genetests.org/">Gene Tests</a>, or a mutant mouse has 
 			been described as a model of the disease, exhibiting the same characteristic 
 			phenotypes, a fill will appear in the Gene x Disease interaction. 
 				<ul>
@@ -277,25 +278,26 @@ themselves are arranged into three tabbed tables for: Gene homology x Phenotypes
 <br>
 <br>
 <div id=geneTab>
-<b>2. Genes tab</b>
+<b><font color="002255">2. Genes tab</font></b>
 	<ul>
 		On the Genes tab, the complete list of genes will be returned, with human and mouse 
 		homologs listed on separate rows (see <i>column 1:</i> Organism). You may also note 
 		that human gene standard nomenclature is all caps (ex. AMER1) while mouse genes are 
 		written in sentence case (ex. Amer1). Genes with no reported phenotypes or diseases 
-		will also be included, so you may see genes here that do not appear on the grid view.<br>
+		will be included on this tab only, so you may see genes here that do not appear on
+		 the grid view.<br>
 		<img src="images/hmdc_tab_genes.png" width="550" height="278" border="1" style="padding:5px; margin:10px">	
-		<li>To filter this list, apply filters on the "Gene Homology x Phenotypes/Diseases" 
-		tab.</li>
-		<li>This table may be sorted by using the arrows in certain column headers.</li>
+		<li>To filter this list, apply filters on the <a href="#HomologyPDtab">"Gene Homology x Phenotypes/Diseases" 
+		tab.</a></li>
+		<li>This table may be sorted by using the arrows in certain column headers, and 
+		data on this table (filtered or unfiltered) can be downloaded using button indicated.
+		Columns are	tab delimited and multiple "Associated Human Diseases" or "Abnormal 
+		Mouse Phenotypes Reported in these Systems" terms are pipe separated (&#124;).</li>
 		<li>Click on the Gene Symbol in the second column to go to a mouse <i>Gene Detail 
 		Page</i> on MGI in rows where <b>Organism: mouse</b> or 
 		<i>Vertebrate Homology Page</i> in rows where <b>Organism: human</b>. Example: 
 		<a href="http://www.informatics.jax.org/marker/MGI:88039">mouse Apc</a>
 		and <a href="http://www.informatics.jax.org/homology/30950">human APC</a>.</li>
-		<li>Data on this tab can be Downloaded using the button at the top of the table. Columns are 
-		tab delimited and multiple "Associated Human Diseases" or "Abnormal Mouse Phenotypes
-		Reported in these Systems" terms are pipe separated (&#124;).</li>
 		<li>The Associated Human Diseases tab in a row that corresponds to <b>Organism: 
 		mouse</b> will list diseases where mutant mice have been reported to display 
 		phenotypes and symptoms matching the human disease. This also corresponds to a blue 
@@ -306,7 +308,7 @@ themselves are arranged into three tabbed tables for: Gene homology x Phenotypes
 		in the right half of the grid.</li>
 		<li><b>Abnormal Mouse Phenotypes Reported in these Systems</b> only appear in rows where 
 		<b>Organism: mouse</b>. This will retain the complete list of affected systems for 
-		the genes that comprise this table, even if mammalian phenotype filters have been 
+		the genes comprising this table, even if mammalian phenotype filters have been 
 		applied to the grid.</li>
 		<li>The <b>References</b> column provides a list of all MGI-curated references for 
 		a gene, as well as a sub-list of Disease Relevant publications, where a mouse was 
@@ -321,8 +323,8 @@ themselves are arranged into three tabbed tables for: Gene homology x Phenotypes
 		a given gene are available for purchase. This may link to multiple unique alleles 
 		and allele types, so take careful note of which allele is present before placing an 
 		order to ensure that the expected phenotypes will be found. Order forms for each 
-		strain are linked in the <b>Repository</b> column in the IMSR. If the "Find Mice (IMSR)"
-		column on the Genes tab is blank, or the repositories listed with the IMSR do not 
+		strain are linked in the <b>Repository</b> column in the IMSR (see arrow). If the 
+		"Find Mice (IMSR)" column on the Genes tab is blank, or the repositories listed with the IMSR do not 
 		distribute your preferred model, it may still be  may also be possible to obtain 
 		mice by directly contacting the corresponding author of a publication which developed 
 		the line. See the Original Reference at the bottom of MGI's Allele Detail pages.</li>
@@ -331,40 +333,111 @@ themselves are arranged into three tabbed tables for: Gene homology x Phenotypes
 
 <a href="#TOC">&#91;return to top&#93;</a>
 <br>
+<br>
 
 <div id=diseaseTab>
-<b>3. Diseases</b>
+<b><font color="002255">3. Diseases</font></b>
 	<ul>
-		<img src="images/hmdc_tabDiseases.png" width="550" height="248" alt="Diseases tab" border="1">
-		<li>The <b>Diseases</b> tab will present all of the diseases that have been 
-		associated to the list of human or mouse genes matching the original search terms. 
-		This includes both those associated with clinical cases or associations in human 
-		data (see "Associated Human Markers" column to see if a human gene has been annotated) 
-		and mouse models that have been reported as a model of this disease (see "Associated 
-		Mouse Markers" column to see mouse genes and or mouse strain carrying transgenes 
-		which have been annotated). If a phenotype term was used This tab can also be filtered by </li>
-</ul>		
-
+		Similar to the Genes tab, the Diseases tab returns a complete list of gene&#8211;
+		associated human disease terms, compiled from both human data and mouse models. If a 
+		gene or transgene is listed in the <b>Associated Mouse Markers</b> column, this 
+		indicates a mouse disease model has been reported for that Gene x Disease pair. If 
+		a gene is listed in the <b>Associated Human Markers</b> column, a variant of this 
+		gene has been implicated in human association studies or clinical cases. If an OMIM 
+		autocomplete term was used as the starting search term, the list will be restricted 
+		to the disease(s) specified, including if no gene associations have been reported. 
+		If a phenotype term, gene symbol or position was used to run the search, all 
+		diseases associated with the matched genes will be displayed.<br>
+		<img src="images/hmdc_tabDiseases.png" width="550" height="248" alt="Diseases tab" border="1" style="padding:5px; margin:10px">
+		<li>The data displayed on this table can be downloaded using the button indicated.</li>
+		<li>The references column contains a list of publications where authors have 
+		specifically reported that mutant or transgenic mice have been used to model the 
+		characteristic phenotypes of the disease.</li>
+		<li>Click on the hyperlinked disease term to go to a <b>Human Disease and Mouse 
+		Model Detail page</b> where gene links and genotype or allele specific information 
+		can be viewed by clicking in the <b>Mouse Models</b> column.<br>
+		<table>
+			<tr>
+				<td>
+					<ul>
+						<li>The Human Disease and Mouse Model Detail page on MGI displays genes 
+				associated with human data or mouse models as before, this time delineated 
+				into up to three classes for "Associated in both", "Associated in mouse models", 
+				and "Associated in human" indicated by the human and/or mouse graphics.</li>
+						<li>The OMIM entry for this disease can be reached by clicking on the 
+						<b>OMIM ID number</b> just beneath the header.</li>
+					</ul>
+				</td>
+				<td><img src="images/hmdc_humanDiseaseModel.png" width="400" height="163" border="1" style="padding:5px; margin:10px"></td>
+			</tr>
+			<tr>
+				<td>
+					<ul>
+						<li>Clicking on the links in the <b>Mouse Models</b> column will 
+						reveal details of the mouse genotype used as model, at least one 
+						supporting reference and a link to a concatenated view of all phenotypes 
+						that have been observed in mice with this combination of mutant 
+						alleles and transgenes (where applicable).</li>
+					</ul>
+				</td>
+				<td><img src="images/hmdc_modelPopup.png" width="400" height="200" border="1" style="padding:5px; margin:10px">
+			</td>
+			</tr>
+		</table></li>
+	</ul>		
 </div>
+
 
 <a href="#TOC">&#91;return to top&#93;</a>
 <br>
+<br>
+<div id=vcf>
+<h3><font color="f7941e">Uploading a vcf File</font></h3>
 
-<div id=search1>
+<p>A vcf file is a file format used to store gene sequence variations by position. Typically, 
+these are the result of whole genome or exome sequencing. The format must include:
+<ul>
+	<li><i>Column 1:</i> &#35;CHROM - indicating chromosome ID</li>
+	<li><i>Column 2:</i> POS - indicating variant position in basepairs. <font color="f7941e">
+	PLEASE ENSURE THAT THESE POSITIONS ARE BASED ON GRCh37 (HUMAN) OR GRCm38 (MOUSE)</FONT></li> 
+	<li><i>Column 3:</i> ID - if the variant is known, a refSNP or other reference identifier 
+		will appear. If unknown, this column may be blank or contain "." </li>
+	<li><i>Column 4:</i> REF - the reference allele based on alignment to a reference genome.</li>
+	<li><i>Column 5:</i> ALT - the alternative allele that was detected in the sample</li>
+	<li><i>Column 6:</i> QUAL - a quality score for sequence reads and base calling</li>
+	<li><i>Column 7:</i> FILTER - indicates that the call is of sufficient confidence for 
+		the filters and thresholds applied during analysis. "PASS", some other quality score, 
+		blank or may contain "."</li>
+	<li><i>Column 8:</i> INFO - includes descriptors of the variant</li>
+	<li><i>Column 9:</i> FORMAT - includes descriptors of the genotyping depth and quality</li>
+	<li><i>Column 10..."</i> Sample1 - sample data. If more than one individual was sequenced,
+		each sample is arranged in a new column.</li>
+</ul>
+If you edit your file, please clear column data rather than removing columns.
+<p>See a sample file here:</p>
+		
+<p><h3><font color="f7941e">In this beta release...</font></h3>
+The HMDC does not offer filtering or variant specific analyses, 
+but rather applies phenotype and disease terms to the genes and homologs which are represented. 
+Note that this will return phenotypes associated with genes even if the SNP variant is 
+benign. For this reason, we have set the default to filter out all variants that have a 
+known rs:&#35; or other identifier in column 3 (ID), as well as reject all variants that 
+are not tagged as "PASS" in column 7 (FILTER). We also strongly 
+encourage users to pre-filter by presumed function or on the basis of linkage (where possible)
+ using a tool such as <a href="https://www.sanger.ac.uk/resources/databases/exomiser/query/">Exomiser</a>.
+These filters allow a phenotypic annotation to de novo, unreported (rare) or private 
+gene variants. If your experimental design requires that known variants be included, you can 
+bypass the ID filter by clearing column 3 in your uploaded file.</p>
+<p>Maximum upload file size is 20MB. Only the first 200,000 lines will be processed.</p>
+<p>This form has only been tested with VCF v4.0 and higher standard formats.</p>
+<p>Please contact <a href="<!--#include file='include/mgihome_url.html'-->support/mgi_inbox.shtml">MGI
+User Support</a> if there are important features that you would like to see implemented.</p>
 
-<img src="images/hmdc_Home.png">
+<a href="#TOC">&#91;return to top&#93;</a>
+<br>
+<br>
+<h2><font color="f7941e">Examples</font></h2>
 
-The goal is to pull together both human and mouse data into a single flexible tool which 
-can be used to answer a variety of biological and especially disease-related questions 
-<p>
-This tool can be used to:
--	use information about known mouse phenotypes to prioritize candidate genes from a list (whole genome sequencing, exome sequencing)
--	use information about known mouse phenotypes to prioritize candidates within a region (QTLs, GWAS, association or family based studies)
--	identify mouse genes and genetic which have been annotated to a disease
--	identify mouse genes which are known to be involved within a specific biological system
--	find an experimental mouse model to use in the study of a specific human disease
-<p>
-</div>
-
+</p>
 </body>
 </html>
