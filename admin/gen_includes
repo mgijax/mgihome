@@ -243,6 +243,7 @@ def main ():
 
     #####----- Template Include Files --------#####
     createIncludeLink('templateHead.html', config['MGICONFIG_PATH'] + 'web/templateHead.html')
+    createIncludeLink('templateHeadNoReset.html', config['MGICONFIG_PATH'] + 'web/templateHeadNoReset.html')
     createIncludeLink('templateBodyStart.html', config['MGICONFIG_PATH'] + 'web/templateBodyStart.html')
     createIncludeLink('templateHdpBodyStart.html', config['MGICONFIG_PATH'] + 'web/templateHdpBodyStart.html')
     createIncludeLink('templateBodyStop.html', config['MGICONFIG_PATH'] + 'web/templateBodyStop.html')
