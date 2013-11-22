@@ -234,7 +234,7 @@
     <!-- homology -->
     <a class='minihomeAnchor' href='<!--#include file='include/homepages_url.html'-->homology.shtml'>
     <div class="homepageButton">
-      <img src="<!--#include file='include/mgihome_url.html'-->homepages/images/homepage_homologyLogo.jpg"></img>
+      <img src="<!--#include file='include/mgihome_url.html'-->homepages/images/homepage_HomologyLogo2.png"></img>
       <span class='homepageButtonText'>Vertebrate Homology</span>
     </div>
     </a>
@@ -253,7 +253,7 @@
     </div>
     </a>
     <!-- tools -->
-    <a class='minihomeAnchor' href='<!--#include file='include/homepages_url.html'-->tools.shtml'>
+    <a class='minihomeAnchor' href='<!--#include file='include/homepages_url.html'-->batch_data.shtml'>
     <div class="homepageButton">
       <img src="<!--#include file='include/mgihome_url.html'-->homepages/images/homepage_BatchLogo.jpg"></img>
       <span class='homepageButtonText'>Batch Data and Analysis Tools</span>
@@ -283,7 +283,11 @@
               Introduction to mouse genetics
             </a>
           </li>
-          <li>How to use MGI</li>
+          <li>
+          	<a class='' href='<!--#include file='include/mgihome_url.html'-->other/homepage_usingMGI.shtml' >
+          How to use MGI
+          	</a>
+          </li>
           <li>
             <a class='' href='http://research.jax.org/mousegenetics/index.html' >
               The mouse as a model of human disease
@@ -349,7 +353,9 @@
       <li>MGI uses homology class data from HomoloGene and now includes chicken, zebrafish and rhesus macaque homologs. <a class="homeLink" href="<!--#include file="include/mgihome_url.html"-->news/whatsnew.shtml">Read more...</a></li>
     </ul>
     <br>
-	<div class="fb-like" data-href="https://www.facebook.com/mgi.informatics" data-width="90" data-height="40" data-colorscheme="light" data-layout="button_count" data-action="like" data-show-faces="true" data-send="false"></div>
+	<div class="left"><a href="https://www.facebook.com/mgi.informatics" target="_blank">
+<img src="<!--#include file='include/mgihome_url.html'-->homepages/images/transparent-facebook-logo-icon.png"height="28" width="49"></img>
+</a></div>
     <div class="right"><a class="homeLink small" href="<!--#include file='include/mgihome_url.html'-->news/whatsnew.shtml">More MGI news</a></div><br/>
     <div class="right"><a class="homeLink small" href="<!--#include file='include/mgihome_url.html'-->homepages/stats/all_stats.shtml">MGI Statistics</a></div>
   </div>
