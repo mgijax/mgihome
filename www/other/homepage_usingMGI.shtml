@@ -1,17 +1,141 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-	<meta charset="utf-8" />
-	<title>Using MGI</title>
-	<meta name="generator" content="BBEdit 10.5" />
-</head>
-<body>
+<!--#include file='include/templateHeadNoReset.html'-->
+<title><!--#include file="include/mgiversion.html"-->
+How to use MGI</title>
+
+
+  <meta name="description" content="MGI provides access to integrated data on mouse genes and genome features, from sequences and genomic maps to gene expression and disease models." />
+  <meta name="keywords" content="MGI, mgi, mice, mouse, murine, mus musculus, genes, genome, genomic,
+  sequences, genetics tutorial, proteins, microRNA, QTL, pseudogene, marker, genome feature, gene s
+  equence, nomenclature, gene function, transgene, introduction to genetics, mouse models, mouse genetics, FASTA, MouseBLAST, Mouse BLAST" />
+
+  <meta name="robots" content="NOODP" />
+  <meta name="robots" content="NOYDIR" />
+
+<link rel="stylesheet" type="text/css" href="./userhelp.css" />
+
+<style type="text/css"></style>
+
+<!--#include file='include/templateBodyStart.html'-->
+
+
 <h1>How to Use MGI</h1>
 <p>
 <font size="2" color="red">Placeholder document, work in progress</font>
 <p>
-See introduction to mouse genetics if necessary-> link
+This document is intended to help users interpret and navigate many of the functions 
+available in MGI. If you have not worked with model organisms before, you may also find 
+the <a href="<!--#include file='include/mgihome_url.html'-->other/homepage_IntroMouse.shtml">
+Introduction to Mouse Genetics</a> a helpful resource for terminology and the basics of 
+using mice in an experimental genetic context.
+</p>
+<p>MGI is a comprehensive, curated international database resource, designed to provide 
+access to integrated genetic, genomic and biological data gathered from the greater research 
+community.<p>
+<p>There are three primary ways in which users can access data from MGI:
+<ol>
+	<li>By using the Quick Search and following links for individual genes and alleles</li>
+	<li>By using built-in query forms to generate lists</li>
+	<li>Through bulk data access or with batch tools</li>
+</ol>
 <p>
-Here's how to do stuff
+<h2>How to locate gene or allele specific information</h2>
+<p>To access all of the data in MGI about a specific gene, you can simply enter the gene 
+symbol, name, or synonym into the Quick Search window near the top of every MGI page.<p>
+<table>
+	<tr>
+		<td valign="top">Results are ranked by how well they match the search input. In this example 
+			<ol>
+				<li>The gene symbol <i>Tlr1</i> was used as a search term (not case sensitive, 
+				use an asterisk (&#42;) as a wildcard for broader searches</li>
+				<li>The highest scoring match is to the protein-coding gene <i>Tlr1</i></li>
+				<li>Additional possible matches are returned including <i>Tlr6</i>, as the 
+					zebrafish ortholog uses <font style="font-variant:small-caps;">Synonym:
+					</font>Tlr1 as its official gene symbol, several targeted allele 
+					variants of the Tlr1 gene (see <font style="font-variant:small-caps;">
+					Allele Synonym</font> and <font style="font-variant:small-caps;">
+					Allele Symbol</font> under the <b>Best Match</b> column), and an 
+					annotation to <font style="font-variant:small-caps;">Function</font>: 
+					TLR1-TLR2 protein complex.</li>
+			</ol>	
+			Click on the hyperlinked gene symbol for <a href="<!--#include file='include/fewi_url.html'-->marker/MGI:1341295">
+			Tlr1</a> (indicated by the &#35;2) to go to a <i>Gene Detail Page</i>.
+		</td>
+		<td valign="top"><img src="<!--#include file='include/mgihome_url.html'-->/other/images/howto_quickSearch.jpg"
+			width="500px" height="370px" alt="quick search matches for Tlr1" style="padding:10px;"
+			border="1" margins="5px">
+		</td>
+	</tr>
+</table>
+<div id="geneDetail">
+<h2>Gene Detail Pages</h2>
+<table>
+	<tr>
+		<td valign="top">There  is a wealth of information and links to be found on Gene Detail pages.
+			<ol>
+				<li><b>IDs and synonyms:</b> the official gene or marker symbol is presented 
+					at the top of the page with any synonyms below, along with its unique 
+					MGI ID.</li>
+				<li><b>Position:</b> Chromosome, linkage position in cM (where 
+					applicable) as well as physical coordinates in bp (where known).<br>
+					Clicking on the linkage map or the sequence map will bring up a the linkage 
+					context or the interactive <a href="http://gbrowse.informatics.jax.org/cgi-bin/gb2/gbrowse/mousebuild38/">
+					Mouse Genome Browser</a>, respectively.</li>
+				<li><b><a href="#vertebratehomology">Vertebrate Homology:</a></b> identifiers and links to sequences for 
+					homologous genes (i.e. related by descent from a common ancestral 
+					sequence) in other vertebrate species.</li>
+				<li><b><a href="#alleles">Alleles and phenotypes:</a></b> a brief text summary 
+					of the phenotypes observed in mice carrying spontaneous or targeted 
+					mutations at this gene, a list of disease annotations and a linked tally 
+					of all mutant alleles that have been generated and/or described by the 
+					scientific research community</li>
+				<li><b><a href="#function">Gene Ontology (GO) Classifications:</b></a> the set 
+					of structured vocabulary terms describing function, biological process 
+					involvement and cellular component of this gene. </li>
+				<li><b><a href="expression">Expression: </b></a>Gene expression data provided by 
+					the Gene Expression Database. </li>
+				<li><b>Sequences:</b> links to download genomic, transcript or protein 
+					FASTA sequences. Polymorphic variants reported between inbred strains 
+					are linked below.</li>
+				<li><b>Protein links: </b>Protein domain information provided by InterPro</li>
+				<li><b>References:</b> A list of all references curated by MGI for this gene.</li>
+			</ol>
+		
+		</td>
+		<td valign="top"><img src="<!--#include file='include/mgihome_url.html'-->/other/images/howto_geneDetail.png"
+			width="500px" height="396px" alt="gene detail page for Tlr1" style="padding:10px;"
+			border="1" margins="5px">
+		</td>
+	</tr>
+</table>
+</div>
+<div id="vertebratehomology">
+<b>Vertebrate Homology</b>
+<br>
+<p>MGI currently loads homology data for mouse (<i>Mus musculus</i>), rat (<i>Rattus norvegicus</i>),
+ human (<i>Homo sapiens</i>), chimpanzee (<i>Pan troglodytes</i>), Rhesus macaque (<i>Macaca 
+ mulatta</i>), dog (<i>Canis familiaris</i>), cattle (<i>Bos taurus</i>), chicken (<i>Gallus 
+ gallus</i>) and zebrafish (<i>Danio rerio</i>). Our data is loaded from NCBI <a href="http://www.ncbi.nlm.nih.gov/homologene">
+ HomoloGene</a>.</p>
+ <img src="<!--#include file='include/mgihome_url.html'-->/other/images/howto_homology.png"
+			width="651px" height="256px" alt="Vertebrate homology class" style="padding:10px;"
+			border="1" margins="5px">
+ 
+ 
+ 
+</div>
+
+<div id="alleles">
+<b>Alleles and Phenotypes</b>
+</div>
+
+<div id="function">
+<b>Gene Ontology (GO) Classifications</b>
+</div>
+
+<div id="expression">
+<b>Expression</b>
+</div>
+
+<!--#include file='include/templateBlankBodyStop.html'-->
 </body>
 </html>
