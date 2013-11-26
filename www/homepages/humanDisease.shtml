@@ -122,6 +122,17 @@ textarea {resize:none; background-color:#FFE4B5;}
 	padding-left:20px;
 }
 .hide { display: none; }
+#locationsFileHelpImg
+{
+	height: 24px;
+	position: relative;
+	left: 100px;
+	top: 4px;
+}
+/* yui panel styles */
+body.yui-skin-sam .yui-panel .hd,
+body.yui-skin-sam .yui-ac-hd { background:none; background-color:#025; color:#fff; font-weight: bold;}
+body.yui-skin-sam .yui-ac-hd {padding: 5px;}
 </style>
 
 <!-- Title Bar
@@ -200,9 +211,6 @@ textarea {resize:none; background-color:#FFE4B5;}
     <div style="position:absolute; top:290px; left:715px; ">
       <img src="<!--#include file='include/mgihome_url.html'-->homepages/images/Beta.png" style="" height="30" width="45">
     </div>
-
-
-
     </form>
 
     <div style="position:absolute; top:220px; left:20px; ">
@@ -211,8 +219,37 @@ textarea {resize:none; background-color:#FFE4B5;}
       </div>
       <form action="<!--#include file='include/fewi_url.html'-->diseasePortal/uploadFile" method="post" enctype="multipart/form-data"
 		id="hiddenFileForm" name="hiddenFileForm" target="hiddenfileform_if">
-       <div style='font-size:150%; margin-top:12px; margin-left:20px;'>
-        Upload a VCF File: <input id="locationsFileInput" type="file" name="file">
+       <div style='margin-top:6px; margin-left:20px;'>
+        <span style="font-size:150%;">Upload a VCF File: <input id="locationsFileInput" type="file" name="file"></span>
+	<img id="locationsFileHelpImg" src="<!--#include file='include/webshare_url.html'-->images/help_large_transp.gif" />
+	<div id="locationsFileHelp"> 
+		<div class="hd">VCF File Uploading Tips</div> 
+		<div class="bd">
+			<p>The file upload functionality will be expanded in coming releases. For now, the following restrictions are in place:</p>
+			<ul>
+				<li>Files are assumed to be in VCf v.4.0 or later format:
+					<ul>
+						<li>Column 1 = chromosome</li>
+						<li>Column 2 = coordinate</li>
+						<li>Column 3 = SNP ID (if any)</li>
+						<li>Column 7 = Filter value</li>
+					</ul>
+				</li>
+				<li>Files over 25MB cannot be processed</li>
+				<li>Only the first 200,000 lines of a file can be processed</li>
+				<li>Lines containing a SNP ID (RS ID) in column 3 are rejected
+					<br/>(emphasizing only unknown variants)
+				</li>
+				<li>Lines containing values other than "pass", ".", or no value (null) in column 7 are rejected</li>
+			</ul>
+			<p>If your file contains SNP IDs in column 3 and you wish to include those rows in the search, 
+				please edit the file to remove the IDs (leaving column 3 empty).
+				Save as a tab-delimited file in a format other than Unicode.
+			</p>
+			<p>If your file is larger than 25MB or has more than 200,000 lines, please edit the file to break it into smaller files.
+				Save as a tab-delimited file in a format other than Unicode.</p>
+		</div> 
+	</div>
       </div>
       <div style='margin-left:220px; padding-top:5px;'>
 	<!-- These are here to make the user feel better, but should not be submitted as extra organism values -->
@@ -234,7 +271,7 @@ textarea {resize:none; background-color:#FFE4B5;}
     <div class='relativePos'>
 
       <div id="hdpTourLink" >
-        <a href="<!--#include file='include/mgihome_url.html'-->other/hmdc_tour.shtml">
+        <a href="<!--#include file='include/mgihome_url.html'-->other/hmdc_tour.html">
         <img src="<!--#include file='include/mgihome_url.html'-->/homepages/images/hmdc_tour_button.png"
           style="" height="115" width="230">
         </a>
@@ -277,9 +314,8 @@ textarea {resize:none; background-color:#FFE4B5;}
 	'width=900,height=600, resizable=yes,scrollbars=yes'); windowf12.focus()">[Read more...]</a><br>
 	</div>
     <div style="position:absolute; top: 275px; left:10px;">
-    	<a href="javascript:windowf12 = window.open('../other/hmdc_Spotlight.shtml', 'windowf12', 
-	'width=900,height=600, resizable=yes,scrollbars=yes'); windowf12.focus()"><img src="<!--#include file='include/mgihome_url.html'-->/homepages/images/HMDC_nude_mice.png" 
-    	width="380px" height="153px"></a>
+    	<img src="<!--#include file='include/mgihome_url.html'-->/homepages/images/HMDC_nude_mice.png" 
+    	width="380px" height="153px">
     </div>
     </div>
     <br/>
@@ -307,6 +343,12 @@ textarea {resize:none; background-color:#FFE4B5;}
 		"organismMouse1":"organismMouse2",
 		};
 	$(function(){
+		// register any help panels
+		YAHOO.namespace("hdp.container"); 
+		YAHOO.hdp.container.panelVcf = new YAHOO.widget.Panel("locationsFileHelp", { width:"520px", draggable:false, visible:false, constraintoviewport:true } ); 
+		YAHOO.hdp.container.panelVcf.render(); 
+		YAHOO.util.Event.addListener("locationsFileHelpImg", "mouseover", YAHOO.hdp.container.panelVcf.show, YAHOO.hdp.container.panelVcf, true); 
+
 		// wire up the two radio buttons to mirror each other
 		$("input.organism").change(function(e){
 			var id = $(this).attr("id");
