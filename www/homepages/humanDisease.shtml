@@ -219,9 +219,6 @@ textarea {resize:none; background-color:#FFE4B5;}
         <label><input id="organismHuman2" name="organismIgnore" class="organism" type="radio" value="human"/> Human(GRCh37)</label>
         <label><input id="organismMouse2" name="organismIgnore" class="organism" type="radio" value="mouse" checked="checked"/> Mouse(GRCm38)</label>
       </div>
-      <div style='margin-left:20px; padding-top:5px;'>
-      We recommend the file be pre-filtered to reduce the number of candidates.
-      </div>
       <input type="hidden" name="field" value="locationsFile">
       <input type="hidden" name="type" value="vcf">
       </form>
