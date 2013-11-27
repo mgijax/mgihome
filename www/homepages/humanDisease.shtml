@@ -78,7 +78,7 @@
   padding: 4px;
 }
 .relativePos { position:relative; width: 100%; height: 100%; }
-.queryHeaderText { font:16px Verdana,Arial,Helvetica;}
+.queryHeaderText { font:15px Verdana,Arial,Helvetica;}
 textarea {resize:none; background-color:#FFE4B5;}
 .formButtons{
   font-family:Verdana, Arial,Helvetica;
@@ -271,7 +271,7 @@ body.yui-skin-sam .yui-ac-hd {padding: 5px;}
     <div class='relativePos'>
 
       <div id="hdpTourLink" >
-        <a href="<!--#include file='include/mgihome_url.html'-->other/hmdc_tour.html">
+        <a href="<!--#include file='include/mgihome_url.html'-->other/hmdc_tour.shtml">
         <img src="<!--#include file='include/mgihome_url.html'-->/homepages/images/hmdc_tour_button.png"
           style="" height="115" width="230">
         </a>
@@ -300,7 +300,8 @@ body.yui-skin-sam .yui-ac-hd {padding: 5px;}
     <div style='position:absolute; top:90px; left:20px; width:90%'>
     	<b><font size="2px">Human T-Cell Immunodeficiency, Congenital Alopecia, and Nail 
     	Dystrophy (<a href="http://omim.org/entry/601705">OMIM: 601705</a>)</font><br></b>
-    	<p>Humans and mice homozygous for recessive mutations in the FOXN1 (forkhead box N1) gene display common phenotypes:
+    	<p>Humans and mice homozygous for recessive mutations in the FOXN1 (forkhead box N1) 
+    	gene display common phenotypes:
 			<ul>
 				<li>congenital alopecia</li>
 				<li>absent thymus</li>
@@ -309,11 +310,15 @@ body.yui-skin-sam .yui-ac-hd {padding: 5px;}
 				<li>limited lifespan</li>
 			</ul>
     </div>
+    
+    
 	<div style="position:absolute; top:275px; left:350px;">
 	<a href="javascript:windowf12 = window.open('../other/hmdc_Spotlight.shtml', 'windowf12', 
 	'width=900,height=600, resizable=yes,scrollbars=yes'); windowf12.focus()">[Read more...]</a><br>
 	</div>
     <div style="position:absolute; top: 275px; left:10px;">
+    	<a href="javascript:windowf12 = window.open('../other/hmdc_Spotlight.shtml', 'windowf12', 
+                'width=900,height=600, resizable=yes,scrollbars=yes'); windowf12.focus()">
     	<img src="<!--#include file='include/mgihome_url.html'-->/homepages/images/HMDC_nude_mice.png" 
     	width="380px" height="153px">
     </div>
