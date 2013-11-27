@@ -313,14 +313,15 @@ body.yui-skin-sam .yui-ac-hd {padding: 5px;}
     
     
 	<div style="position:absolute; top:275px; left:350px;">
-	<a href="javascript:windowf12 = window.open('../other/hmdc_Spotlight.shtml', 'windowf12', 
-	'width=900,height=600, resizable=yes,scrollbars=yes'); windowf12.focus()">[Read more...]</a><br>
+	<a href="javascript:windowf12 = window.open('<!--#include file='include/mgihome_url.html'-->other/hmdc_Spotlight.shtml', 'windowf12', 
+	'width=900,height=600,resizable=yes,scrollbars=yes'); windowf12.focus()">[Read more...]
+	</a><br>
 	</div>
     <div style="position:absolute; top: 275px; left:10px;">
-    	<a href="javascript:windowf12 = window.open('../other/hmdc_Spotlight.shtml', 'windowf12', 
+    	<a href="javascript:windowf12 = window.open('<!--#include file='include/mgihome_url.html'-->other/hmdc_Spotlight.shtml', 'windowf12', 
                 'width=900,height=600, resizable=yes,scrollbars=yes'); windowf12.focus()">
     	<img src="<!--#include file='include/mgihome_url.html'-->/homepages/images/HMDC_nude_mice.png" 
-    	width="380px" height="153px">
+    	width="380px" height="153px"></a>
     </div>
     </div>
     <br/>
