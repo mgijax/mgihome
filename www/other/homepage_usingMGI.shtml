@@ -31,21 +31,39 @@ using mice in an experimental genetic context.
 <p>MGI is a comprehensive, curated international database resource, designed to provide 
 access to integrated genetic, genomic and biological data gathered from the greater research 
 community.<p>
-<p>There are three primary ways in which users can access data from MGI:
+<p><h3>There are three primary ways in which users can access data from MGI:</h3>
 <ol>
 	<li>By using the Quick Search and following links for individual genes and alleles</li>
 	<li>By using built-in query forms to generate lists</li>
 	<li>Through bulk data access or with batch tools</li>
 </ol>
+
+<div id="TOC">
+<h2>Table of Contents</h2>
+<ol>
+	<li><a href="#genes">How to locate gene or allele specific information</a></li>
+	<li><a href="#geneDetail">Gene Detail pages</a>
+		<ul>
+			<li><a href="#vertebratehomology">Vertebrate Homology</a></li>
+			<li><a href="#alleles">Alleles and phenotypes</a></li>
+			<li><a href="#function">Gene Ontology (GO) classifications</a></li>
+			<li><a href="#expression">Expression</a></li>
+		</ul>
+		</li>
+	<li><a href=#alleleDetail">Allele Detail pages</a></li>
+</ol>
+
+</div>
 <p>
-<h2>How to locate gene or allele specific information</h2>
+<div id="genes">
+<h2>1. How to locate gene or allele specific information</h2>
 <p>To access all of the data in MGI about a specific gene, you can simply enter the gene 
 symbol, name, or synonym into the Quick Search window near the top of every MGI page.<p>
 <table>
 	<tr>
 		<td valign="top">Results are ranked by how well they match the search input. In this example 
 			<ol>
-				<li>The gene symbol <i>Tlr1</i> was used as a search term (not case sensitive, 
+				<li>The gene symbol <i>Tlr1</i> was used as a search term. This search is not case sensitive, 
 				use an asterisk (&#42;) as a wildcard for broader searches</li>
 				<li>The highest scoring match is to the protein-coding gene <i>Tlr1</i></li>
 				<li>Additional possible matches are returned including <i>Tlr6</i>, as the 
@@ -60,7 +78,9 @@ symbol, name, or synonym into the Quick Search window near the top of every MGI 
 			Click on the hyperlinked gene symbol for <a href="<!--#include file='include/fewi_url.html'-->marker/MGI:1341295">
 			Tlr1</a> (indicated by the &#35;2) to go to a <i>Gene Detail Page</i>.
 		</td>
-		<td valign="top"><img src="<!--#include file='include/mgihome_url.html'-->/other/images/howto_quickSearch.jpg"
+		<td valign="top">
+			<a href="images/howto_quickSearch.jpg" target="_blank">
+			<img src="<!--#include file='include/mgihome_url.html'-->/other/images/howto_quickSearch.jpg"
 			width="500px" height="370px" alt="quick search matches for Tlr1" style="padding:10px;"
 			border="1" margins="5px">
 		</td>
@@ -87,11 +107,12 @@ symbol, name, or synonym into the Quick Search window near the top of every MGI 
 					of the phenotypes observed in mice carrying spontaneous or targeted 
 					mutations at this gene, a list of disease annotations and a linked tally 
 					of all mutant alleles that have been generated and/or described by the 
-					scientific research community</li>
+					scientific research community. See also the section on <a href="#alleleDetail">
+					Allele Detail pages.</li>
 				<li><b><a href="#function">Gene Ontology (GO) Classifications:</b></a> the set 
 					of structured vocabulary terms describing function, biological process 
 					involvement and cellular component of this gene. </li>
-				<li><b><a href="expression">Expression: </b></a>Gene expression data provided by 
+				<li><b><a href="#expression">Expression: </b></a>Gene expression data provided by 
 					the Gene Expression Database. </li>
 				<li><b>Sequences:</b> links to download genomic, transcript or protein 
 					FASTA sequences. Polymorphic variants reported between inbred strains 
@@ -101,41 +122,118 @@ symbol, name, or synonym into the Quick Search window near the top of every MGI 
 			</ol>
 		
 		</td>
-		<td valign="top"><img src="<!--#include file='include/mgihome_url.html'-->/other/images/howto_geneDetail.png"
+		<td valign="top">
+			<a href="images/howto_geneDetail.png" target="_blank">
+			<img src="<!--#include file='include/mgihome_url.html'-->/other/images/howto_geneDetail.png"
 			width="500px" height="396px" alt="gene detail page for Tlr1" style="padding:10px;"
-			border="1" margins="5px">
+			border="1" margins="5px"></a>
 		</td>
 	</tr>
 </table>
 </div>
 <div id="vertebratehomology">
-<b>Vertebrate Homology</b>
-<br>
+<h3>Vertebrate Homology</h3>
 <p>MGI currently loads homology data for mouse (<i>Mus musculus</i>), rat (<i>Rattus norvegicus</i>),
  human (<i>Homo sapiens</i>), chimpanzee (<i>Pan troglodytes</i>), Rhesus macaque (<i>Macaca 
  mulatta</i>), dog (<i>Canis familiaris</i>), cattle (<i>Bos taurus</i>), chicken (<i>Gallus 
  gallus</i>) and zebrafish (<i>Danio rerio</i>). Our data is loaded from NCBI <a href="http://www.ncbi.nlm.nih.gov/homologene">
  HomoloGene</a>.</p>
+ <a href="images/howto_homology.png" target="_blank">
  <img src="<!--#include file='include/mgihome_url.html'-->/other/images/howto_homology.png"
-			width="651px" height="256px" alt="Vertebrate homology class" style="padding:10px;"
-			border="1" margins="5px">
- 
- 
- 
+			width="600px" height="236px" alt="Vertebrate homology class" style="padding:10px;"
+			border="1" margins="5px"></a>
+ <br>
+ <p>
+ Here, you can see which other vertebrate species (from MGI's list) carry homologous 
+ genes, whether it is 1:1, 1:many or some other relationship, see associated human diseases 
+ or access protein (NP or UniProt links) and mRNA transcript sequences (NM links). You can also 
+ click the link for HomoloGene's Multiple Sequence Alignment (&#35;3) to see the alignment 
+ of protein sequences across the species represented.</p>
 </div>
-
+ 
 <div id="alleles">
-<b>Alleles and Phenotypes</b>
+ <h3>Alleles and phenotypes</h3>
+ <p>The alleles and phenotypes ribbon on a gene detail page provides an at-a-glance text summary 
+ 	of the major phenotypes associated with mutations (&#35;1, in this case, for the gene
+	<a href="<!--#include file='include/fewi_url.html'-->marker/MGI:88057"><i>Apoe</i></a>), 
+	a list of the different alleles that have been generated or described affecting this 
+	gene (&#35;2) with links to the Phenotypic Allele Summary page (&#35;3), and links 
+	for any associated human diseases or mouse genetic models of human diseases which 
+	have been reported for this gene (&#35;3). On the Phenotypic Allele Summary, you can 
+	see different alleles with unique official symbols (note format includes a superscript: 
+	<i>GeneSymbol<sup>AlleleID</sup></i>), their synonyms, allele type or category 
+	(knock-out, knock-in, floxed, spontaneous, reporter, etc - see <a href="<!--#include file='include/mgihome_url.html'-->/other/homepage_IntroMouse#alleles">
+ 	more about alleles in the Introduction to Mouse Genetics</a>), abnormal physiological 
+ 	systems and specific alleles reported to act as models of human disease (where applicable)
+ 	(&#35;5). Clicking on an Allele Symbol will bring you to an <a href="#alleleDetail">
+ 	Allele detail page</a>.
+ 	</p>
+<a href="images/howto_phenoAllele.png" target="_blank"> 	
+<img src="<!--#include file='include/mgihome_url.html'-->/other/images/howto_phenoAllele.png"
+			width="600px" height="326px" alt="Phenotypes and alleles ribbon, Apoe" style="padding:10px;"
+			border="1" margins="5px"></a><br>
+ <p>
 </div>
 
 <div id="function">
-<b>Gene Ontology (GO) Classifications</b>
-</div>
+<h3>Gene Ontology (GO) Classifications</h3>
+<p>Gene Ontology (GO) uses a set of standardized, controlled structured vocabulary terms to describe 
+the function, biological process involvement and cell component of gene products. GO for 
+mice is developed in collaboration with <a href="http://www.geneontology.org/">the Gene 
+Ontology project</a>. Using a structured vocabulary allows terms to be placed in a 
+hierarchical tree (parent-child), enabling both broad level and very precise searches. The 
+standardization also ensures that despite potentially very different experimental methods 
+and results description, similar findings can be grouped in a comprehensive way.</p>
+<p>To retrieve the list of all vocabulary terms that have been annotated to this gene, 
+click on the hyperlinked number next to "All GO Classifications" (&#35;1). This will link 
+to a summary page where each annotation is listed, along with the evidence used to support 
+it (&#35;2). Instead of a text summary, you can also view these annotations in tabular 
+format, or as a GO graph (&#35;3).</p>
+<p>Clicking on individual terms will bring you to the Gene Ontology Browser (&#35;4) where 
+the term itself is put into context. The GO Browser can also be navigated <a href="<!--#include file='include/mgihome_url.html'-->/searches/GO_form.shtml">here</a>.
+</p>
 
+<a href="images/howto_function.png" target="_blank"> 	
+<img src="<!--#include file='include/mgihome_url.html'-->/other/images/howto_function.png"
+			width="600px" height="459px" alt="GO and function for Pax6" style="padding:10px;"
+			border="1" margins="5px"></a><br>
+			
+</div>
+<br>
 <div id="expression">
-<b>Expression</b>
+<h3>Expression</h3>
+<p>Expression of a gene can vary from ubiquitous to restricted by a particular tissue type 
+and/or developmental stage. On the gene Expression ribbon, you can explore the Gene Expression 
+Database's complete curated data by clicking on "Data Summary: Results" (&#35;1) which links 
+to a new page. Here, the gene symbol appears in the first column, additional specific information 
+including images behind the hyperlinked "data" in the second column, assay type, anatomical 
+system, structure and mouse age at time of sampling. An "E" prefix in the "age" column 
+indicates that the sample is embryonic (E14.5 means embryonic day 14.5). A "P" prefix 
+indicates post-birth which may be indicated as "P adult" for unspecified, "P w 8" for 
+"post-birth, 8 weeks of age", and so on. MGI reports annotations where expression was 
+"detected" or "not detected" (note: yellow box) and provides a reference for each.</p> 
+<p>A tissue summary (&#35;1) is also linked from the Gene Detail, which indicates all tissues 
+and ages where expression of this gene was reported as "detected/expressed" in the (+) column, or 
+"not detected/not expressed" in the (-) column. In this table, the TS prefix refers to 
+Theiler stages of embryonic development - TS1-TS26 are embryonic, TS27 is perinatal and 
+TS28 is adult. This table can be exported and saved.
+</p>
+<a href="images/howto_expression.png" target="_blank"> 	
+<img src="<!--#include file='include/mgihome_url.html'-->/other/images/howto_expression.png"
+			width="600px" height="388px" alt="Expression ribbon for Adipoq" style="padding:10px;"
+			border="1" margins="5px"></a><br>
+
+</div>
+<br>
+
+<div id="alleleDetail">
+<h2>2. Allele Detail pages</h2>
+Variation at a gene is called an allele. MGI currently curates over <a href=""<!--#include file='include/mgihome_url.html'-->/homepages/stats/all_stats.shtml">34,727</a>
+
+
 </div>
 
 <!--#include file='include/templateBlankBodyStop.html'-->
+
 </body>
 </html>
