@@ -13,12 +13,20 @@ How to use MGI</title>
 
 <link rel="stylesheet" type="text/css" href="./userhelp.css" />
 
-<style type="text/css"></style>
+<style type="text/css">
+
+.tab { margin-left: 40px; 
+	}
+
+
+
+</style>
 
 <!--#include file='include/templateBodyStart.html'-->
 
 
-<h1>How to Use MGI</h1>
+
+<h1><font color="#002255">How to Use MGI</font></h1>
 <p>
 <font size="2" color="red">Placeholder document, work in progress</font>
 <p>
@@ -31,7 +39,7 @@ using mice in an experimental genetic context.
 <p>MGI is a comprehensive, curated international database resource, designed to provide 
 access to integrated genetic, genomic and biological data gathered from the greater research 
 community.<p>
-<p><h3>There are three primary ways in which users can access data from MGI:</h3>
+<p><h3><font color="#002255">There are three primary ways in which users can access data from MGI:</font></h3>
 <ol>
 	<li>By using the Quick Search and following links for individual genes and alleles</li>
 	<li>By using built-in query forms to generate lists</li>
@@ -39,7 +47,7 @@ community.<p>
 </ol>
 
 <div id="TOC">
-<h2>Table of Contents</h2>
+<h2><font color="#002255">Table of Contents</font></h2>
 <ol>
 	<li><a href="#genes">How to locate gene or allele specific information</a></li>
 	<li><a href="#geneDetail">Gene Detail pages</a>
@@ -56,7 +64,7 @@ community.<p>
 </div>
 <p>
 <div id="genes">
-<h2>1. How to locate gene or allele specific information</h2>
+<h2><font color="#002255">1. How to locate gene or allele specific information</font></h2>
 <p>To access all of the data in MGI about a specific gene, you can simply enter the gene 
 symbol, name, or synonym into the Quick Search window near the top of every MGI page.<p>
 <table>
@@ -87,7 +95,7 @@ symbol, name, or synonym into the Quick Search window near the top of every MGI 
 	</tr>
 </table>
 <div id="geneDetail">
-<h2>Gene Detail Pages</h2>
+<h2><font color="#002255">2. Gene Detail Pages</font></h2>
 <table>
 	<tr>
 		<td valign="top">There  is a wealth of information and links to be found on Gene Detail pages.
@@ -122,7 +130,7 @@ symbol, name, or synonym into the Quick Search window near the top of every MGI 
 			</ol>
 		
 		</td>
-		<td valign="top">
+		<td valign="top"><br>
 			<a href="images/howto_geneDetail.png" target="_blank">
 			<img src="<!--#include file='include/mgihome_url.html'-->/other/images/howto_geneDetail.png"
 			width="500px" height="396px" alt="gene detail page for Tlr1" style="padding:10px;"
@@ -131,15 +139,18 @@ symbol, name, or synonym into the Quick Search window near the top of every MGI 
 	</tr>
 </table>
 </div>
+
+<div id=inset class="tab">
+
 <div id="vertebratehomology">
-<h3>Vertebrate Homology</h3>
+<h3><font color="#002255"><blockquote>Vertebrate Homology</blockquote></font></h3>
 <p>MGI currently loads homology data for mouse (<i>Mus musculus</i>), rat (<i>Rattus norvegicus</i>),
  human (<i>Homo sapiens</i>), chimpanzee (<i>Pan troglodytes</i>), Rhesus macaque (<i>Macaca 
  mulatta</i>), dog (<i>Canis familiaris</i>), cattle (<i>Bos taurus</i>), chicken (<i>Gallus 
  gallus</i>) and zebrafish (<i>Danio rerio</i>). Our data is loaded from NCBI <a href="http://www.ncbi.nlm.nih.gov/homologene">
  HomoloGene</a>.</p>
  <a href="images/howto_homology.png" target="_blank">
- <img src="<!--#include file='include/mgihome_url.html'-->/other/images/howto_homology.png"
+<img src="<!--#include file='include/mgihome_url.html'-->/other/images/howto_homology.png"
 			width="600px" height="236px" alt="Vertebrate homology class" style="padding:10px;"
 			border="1" margins="5px"></a>
  <br>
@@ -152,7 +163,7 @@ symbol, name, or synonym into the Quick Search window near the top of every MGI 
 </div>
  
 <div id="alleles">
- <h3>Alleles and phenotypes</h3>
+ <h3><font color="#002255"><blockquote>Alleles and phenotypes</blockquote></font></h3>
  <p>The alleles and phenotypes ribbon on a gene detail page provides an at-a-glance text summary 
  	of the major phenotypes associated with mutations (&#35;1, in this case, for the gene
 	<a href="<!--#include file='include/fewi_url.html'-->marker/MGI:88057"><i>Apoe</i></a>), 
@@ -164,7 +175,7 @@ symbol, name, or synonym into the Quick Search window near the top of every MGI 
 	<i>GeneSymbol<sup>AlleleID</sup></i>), their synonyms, allele type or category 
 	(knock-out, knock-in, floxed, spontaneous, reporter, etc - see <a href="<!--#include file='include/mgihome_url.html'-->/other/homepage_IntroMouse#alleles">
  	more about alleles in the Introduction to Mouse Genetics</a>), abnormal physiological 
- 	systems and specific alleles reported to act as models of human disease (where applicable)
+ 	systems and specific alleles reported to act as models of human disease where applicable
  	(&#35;5). Clicking on an Allele Symbol will bring you to an <a href="#alleleDetail">
  	Allele detail page</a>.
  	</p>
@@ -176,7 +187,7 @@ symbol, name, or synonym into the Quick Search window near the top of every MGI 
 </div>
 
 <div id="function">
-<h3>Gene Ontology (GO) Classifications</h3>
+<h3><font color="#002255"><blockquote>Gene Ontology (GO) Classifications</blockquote></font></h3>
 <p>Gene Ontology (GO) uses a set of standardized, controlled structured vocabulary terms to describe 
 the function, biological process involvement and cell component of gene products. GO for 
 mice is developed in collaboration with <a href="http://www.geneontology.org/">the Gene 
@@ -201,7 +212,7 @@ the term itself is put into context. The GO Browser can also be navigated <a hre
 </div>
 <br>
 <div id="expression">
-<h3>Expression</h3>
+<h3><font color="#002255"><blockquote>Expression</font></blockquote></h3>
 <p>Expression of a gene can vary from ubiquitous to restricted by a particular tissue type 
 and/or developmental stage. On the gene Expression ribbon, you can explore the Gene Expression 
 Database's complete curated data by clicking on "Data Summary: Results" (&#35;1) which links 
@@ -212,10 +223,10 @@ indicates that the sample is embryonic (E14.5 means embryonic day 14.5). A "P" p
 indicates post-birth which may be indicated as "P adult" for unspecified, "P w 8" for 
 "post-birth, 8 weeks of age", and so on. MGI reports annotations where expression was 
 "detected" or "not detected" (note: yellow box) and provides a reference for each.</p> 
-<p>A tissue summary (&#35;1) is also linked from the Gene Detail, which indicates all tissues 
+<p>A tissue summary (&#35;2) is also linked from the Gene Detail, which indicates all tissues 
 and ages where expression of this gene was reported as "detected/expressed" in the (+) column, or 
 "not detected/not expressed" in the (-) column. In this table, the TS prefix refers to 
-Theiler stages of embryonic development - TS1-TS26 are embryonic, TS27 is perinatal and 
+Theiler stages of embryonic development: TS1-TS26 are embryonic, TS27 is perinatal and 
 TS28 is adult. This table can be exported and saved.
 </p>
 <a href="images/howto_expression.png" target="_blank"> 	
@@ -224,13 +235,155 @@ TS28 is adult. This table can be exported and saved.
 			border="1" margins="5px"></a><br>
 
 </div>
+</div>
 <br>
 
 <div id="alleleDetail">
-<h2>2. Allele Detail pages</h2>
-Variation at a gene is called an allele. MGI currently curates over <a href=""<!--#include file='include/mgihome_url.html'-->/homepages/stats/all_stats.shtml">34,727</a>
+<h2><font color="#002255">2. Allele Detail pages</font></h2>
+Variation at a gene is called an allele. MGI currently curates over <a href="<!--#include file='include/mgihome_url.html'-->/homepages/stats/all_stats.shtml">
+34,727</a> targeted or phenotypic alleles in mice, including spontaneous or induced mutations, 
+gene targeted alleles (knock-out, knock-in, floxed/FRT conditional), transgenes, recombinases, 
+and more. Each allele has a unique allele symbol which follows the guidelines for 
+<a href="<!--#include file='include/mgihome_url.html'-->nomen/index.shtml">mouse standard 
+nomenclature</a>.<br>
+<p>In brief, allele symbols are typically formed for endogenous genes according to 
+<i>GeneSymbol<sup>AlleleID</sup></i> where the AlleleID is:
+	<ul>
+		<li>a short descriptive acronym for spontaneous or induced alleles (induced alleles 
+			include a lab code). <i>Ex.</i> <a href="<!--#include file='include/fewi_url.html'-->accession/MGI:1856334">
+			<i>Fas<sup>lpr</sup></i></a> for the spontaneous "lymphoproliferation" allele of the 
+			Fas gene, or <a href="<!--#include file='include/fewi_url.html'-->accession/MGI:4835996">
+			<i>Adam17<sup>m1Btlr</sup></i></a> for the chemically induced allele "mutation 1,
+			 laboratory of Bruce Beutler".</li>
+		<li>of the format "tm" (targeted mutation), a serial number and a lab code for 
+			targeted alleles (includes knock in, knock out, floxed/FRT, reporter, etc). 
+			<i>Ex.</i> <a href="<!--#include file='include/fewi_url.html'-->accession/MGI:2675967">
+			<i>Mfge8<sup>tm1Shur</sup></i></a> for "targeted mutation 1, laboratory of 
+			Barry D Shur".</li>			
+		<li>of the format "Gt" (gene trap), serial number referencing the original cell line 
+			and/or targeting event, laboratory code for gene trapped alleles. 
+			<i>Ex.</i> <a href="<!--#include file='include/fewi_url.html'-->accession/MGI:3778822">
+			<i>Vangl1<sup>Gt(XL802)Byg</sup></i></a> for the gene trap generated by random 
+			insertion in cell line XL802 by Bay Genomics.</li>
+	</ul>		
+or for transgenes:
+	<ul>
+		<li>Tg(promoter-gene)SerialNumberLabCode where "Tg" indicates "transgene", the 
+			construct promoter used to drive expression is listed first, followed by the 
+			gene expressed. Syntax for the promoter and gene are reflective of the species of 
+			origin (commonly: sentence case for mouse, all caps for human, all lower case 
+			for bacterial). <i>Ex.</i> <a href="<!--#include file='include/fewi_url.html'-->accession/MGI:2656907">
+			Tg(ACTA1-cre)1Mll</a> for a transgenic allele constructed using the human 
+			ACTA1 promoter to express bacterial cre recombinase, insertion 1, generated 
+			by the laboratory of Ulrich Muller.
+			</li>			
+	</ul>
 
+<p>To follow the example below, open the allele detail page for <a href="<!--#include file='include/fewi_url.html'-->accession/MGI:1857590">
+<i>Trp53<sup>tm1Brd</sup></i></a>.
+<table>
+	<tr>
+		<td valign="top">
+			<ol>
+				<li><b>IDs and gene information:</b> official allele symbol, 
+					synonyms and links to the gene detail page.</li>
+				<li><b>Mutation description:</b> allele type, links to the original 
+					publication reporting generation of the allele (J:&#35;) and 
+					descriptive text. Click the triangle next to <i>Mutation details</i> 
+					to reveal (yellow arrow). </li>
+				<li><b><a href="#genoTable">Genotypes table:</a></b> lists all the genotypes 
+					where a phenotype has been reported. Each row in the genotypes table 
+					has a corresponding column in the phenotypes table.
+					</li>
+				<li><b><a href="#phenoTable">Phenotypes table:</a></b> records all of the phenotypes 
+					that have been reported for a given genotype of this allele according 
+					to structured Mammalian Phenotype vocabulary. Match each column in this 
+					table to a genotype row in the table above. 
+					</li>
+				<li><b>Associated diseases:</b> If any genotype of this specific allele 
+					has been reported to be a model of human disease, this table will appear. 
+					Check marks in columns indicate which genotype was used to report this 
+					finding.</li>
+				<li><b><a href="#findmice">Obtain Mice:</a></b> links will appear here for 
+					commercially available strains or targeted pluripotent ES cell lines. 
+					Information on availability comes from the <a href="http://www.findmice.org">
+					International Mouse Strain Resource (IMSR)</a> which searches all of 
+					the major repositories and provides links to order forms.</li>
+				<li><b>References:</b> A list of all MGI-curated publications 
+					that have reported using mice carrying this allele.</li>
+			</ol>
+		</td>
+		<td valign="top"><br>
+			<a href="images/howto_alleleDetail.png" target="_blank">
+			<img src="<!--#include file='include/mgihome_url.html'-->/other/images/howto_alleleDetail.png"
+			width="500px" height="474px" alt="allele detail page for Trp53tm1Brd" style="padding:10px;"
+			border="1" margins="5px"></a>
+		</td>
+</table>
 
+</div>
+<div class="clear">
+
+<div id=inset class="tab">
+<div id="genoTable">
+<h3><font color="#002255"><blockquote>Genotypes Table</font></blockquote></h3>
+<p>A color coded key representing allele state appears above the genotypes table (&#35;1) 
+which reports allele composition, genetic background and cell line. Genotypes are 
+differentiated by allelic composition (allele symbol, zygosity, additional alleles, 
+recombinases or transgenes if present) and genetic background, typically inbred or a 
+combination of inbred lines. If either the allelic composition or genetic background 
+varies, a new genotype ID (<i>hm1, hm2, ...</i>) and row will appear. For guidelines and 
+interpretation of strain nomenclature, see <a href="<!--#include file='include/mgihome_url.html'-->nomen/index.shtml">here.</a>
+	<ul>
+		<li><b>hm :</b> homozygous : two copies of the same allele (see &#35;1)</li>
+		<li><b>ht :</b> heterozygous : one copy of this allele, one copy of a different allele, 
+			most commonly the endogenous functional or "wild type" allele (represented by "&#43;", see 
+			&#35;2)</li>
+		<li><b>tg :</b> involves transgenes : carries a gene which has been artificially 
+			introduced into the mouse via random integration (not targeted into an endogenous 
+			locus), e.g. expression of a human gene.</li> 
+		<li><b>cn :</b> conditional genotype : a genotype that is dependent (or conditional) on the 
+			presence of some other factor, most commonly cre-mediated excision of floxed 
+			sites. Both the floxed allele and the transgenic allele will appear in the "<b>
+			Allelic Composition</b>" column.</li>
+		<li><b>cx :</b> complex : involves more than one genome feature but does not qualify as 
+			a conditional genotype, e.g. double knockouts.</li>
+		<li><b>ot :</b> other : included some sex-specific alleles (hemizygous), not reported and 
+			genotypes that do not meet the previous categories.</li>
+	</ul>
+</p>
+<p>Each row in the genotypes table corresponds to a column in the Phenotypes table below.</p>
+<a href="images/howto_genoTable.png" target="_blank">
+			<img src="<!--#include file='include/mgihome_url.html'-->/other/images/howto_genoTable.png"
+			width="500px" height="86px" alt="genotypes table for Trp53tm1Brd" style="padding:10px;"
+			border="1" margins="5px"></a>
+
+</div>
+
+<div id="phenoTable">
+<h3><font color="#002255"><blockquote>Phenotypes Table</font></blockquote></h3>
+<p>Each column in the phenotypes table reflect the phenotypes and observations associated 
+with the matching row in the genotypes table (&#35;1). Expand affected physiological 
+system terms by clicking the triangles within the row (&#35;2) to reveal more detailed 
+structured vocabulary terms. If at least one differential phenotype has been reported for males and 
+females, columns will be subdivided with icons just below the genotype header. Clear spaces 
+indicate that no phenotype was reported, and an "N" will appear if the system was specifically 
+examined and reported as "Normal".</p>
+<p>Clicking on check marks or column headers will generate a pop-up window for that 
+genotype (&#35;3) with free text descriptions (&#35;4) and associated references for those 
+annotations (&#35;5). </p>
+
+<a href="images/howto_phenoTable.png" target="_blank">
+			<img src="<!--#include file='include/mgihome_url.html'-->/other/images/howto_phenoTable.png"
+			width="500px" height="373px" alt="phenotypes table and inset for Trp53tm1Brd" style="padding:10px;"
+			border="1" margins="5px"></a>
+
+</div>
+<div id="findmice">
+<h3><font color="#002255"><blockquote>Obtain Mice</font></blockquote></h3>
+Text
+
+</div>
 </div>
 
 <!--#include file='include/templateBlankBodyStop.html'-->
