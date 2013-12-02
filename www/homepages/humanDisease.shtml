@@ -1,5 +1,5 @@
 <!--#include file='include/templateHead.html'-->
-  <title>MGI-Human Disease Portal</title>
+  <title>Human – Mouse Disease Connection</title>
 
   <meta name="description" content="" />
   <meta name="keywords" content="" />
@@ -222,8 +222,8 @@ body.yui-skin-sam .yui-ac-hd {padding: 5px;}
        <div style='margin-top:6px; margin-left:20px;'>
         <span style="font-size:150%;">Upload a VCF File: <input id="locationsFileInput" type="file" name="file"></span>
 	<img id="locationsFileHelpImg" src="<!--#include file='include/webshare_url.html'-->images/help_large_transp.gif" />
-	<div id="locationsFileHelp"> 
-		<div class="hd">VCF File Uploading Tips</div> 
+	<div id="locationsFileHelp">
+		<div class="hd">VCF File Uploading Tips</div>
 		<div class="bd">
 			<p>The file upload functionality will be expanded in coming releases. For now, the following restrictions are in place:</p>
 			<ul>
@@ -242,13 +242,13 @@ body.yui-skin-sam .yui-ac-hd {padding: 5px;}
 				</li>
 				<li>Lines containing values other than "pass", ".", or no value (null) in column 7 are rejected</li>
 			</ul>
-			<p>If your file contains SNP IDs in column 3 and you wish to include those rows in the search, 
+			<p>If your file contains SNP IDs in column 3 and you wish to include those rows in the search,
 				please edit the file to remove the IDs (leaving column 3 empty).
 				Save as a tab-delimited file in a format other than Unicode.
 			</p>
 			<p>If your file is larger than 25MB or has more than 200,000 lines, please edit the file to break it into smaller files.
 				Save as a tab-delimited file in a format other than Unicode.</p>
-		</div> 
+		</div>
 	</div>
       </div>
       <div style='margin-left:220px; padding-top:5px;'>
@@ -298,9 +298,9 @@ body.yui-skin-sam .yui-ac-hd {padding: 5px;}
       Spotlight on mouse models <br/>of human disease
     </div>
     <div style='position:absolute; top:90px; left:20px; width:90%'>
-    	<b><font size="2px">Human T-Cell Immunodeficiency, Congenital Alopecia, and Nail 
+    	<b><font size="2px">Human T-Cell Immunodeficiency, Congenital Alopecia, and Nail
     	Dystrophy (<a href="http://omim.org/entry/601705">OMIM: 601705</a>)</font><br></b>
-    	<p>Humans and mice homozygous for recessive mutations in the FOXN1 (forkhead box N1) 
+    	<p>Humans and mice homozygous for recessive mutations in the FOXN1 (forkhead box N1)
     	gene display common phenotypes:
 			<ul>
 				<li>congenital alopecia</li>
@@ -310,17 +310,17 @@ body.yui-skin-sam .yui-ac-hd {padding: 5px;}
 				<li>limited lifespan</li>
 			</ul>
     </div>
-    
-    
+
+
 	<div style="position:absolute; top:275px; left:350px;">
-	<a href="javascript:windowf12 = window.open('<!--#include file='include/mgihome_url.html'-->other/hmdc_Spotlight.shtml', 'windowf12', 
+	<a href="javascript:windowf12 = window.open('<!--#include file='include/mgihome_url.html'-->other/hmdc_Spotlight.shtml', 'windowf12',
 	'width=900,height=600,resizable=yes,scrollbars=yes'); windowf12.focus()">[Read more...]
 	</a><br>
 	</div>
     <div style="position:absolute; top: 275px; left:10px;">
-    	<a href="javascript:windowf12 = window.open('<!--#include file='include/mgihome_url.html'-->other/hmdc_Spotlight.shtml', 'windowf12', 
+    	<a href="javascript:windowf12 = window.open('<!--#include file='include/mgihome_url.html'-->other/hmdc_Spotlight.shtml', 'windowf12',
                 'width=900,height=600, resizable=yes,scrollbars=yes'); windowf12.focus()">
-    	<img src="<!--#include file='include/mgihome_url.html'-->/homepages/images/HMDC_nude_mice.png" 
+    	<img src="<!--#include file='include/mgihome_url.html'-->/homepages/images/HMDC_nude_mice.png"
     	width="380px" height="153px"></a>
     </div>
     </div>
@@ -350,10 +350,10 @@ body.yui-skin-sam .yui-ac-hd {padding: 5px;}
 		};
 	$(function(){
 		// register any help panels
-		YAHOO.namespace("hdp.container"); 
-		YAHOO.hdp.container.panelVcf = new YAHOO.widget.Panel("locationsFileHelp", { width:"520px", draggable:false, visible:false, constraintoviewport:true } ); 
-		YAHOO.hdp.container.panelVcf.render(); 
-		YAHOO.util.Event.addListener("locationsFileHelpImg", "mouseover", YAHOO.hdp.container.panelVcf.show, YAHOO.hdp.container.panelVcf, true); 
+		YAHOO.namespace("hdp.container");
+		YAHOO.hdp.container.panelVcf = new YAHOO.widget.Panel("locationsFileHelp", { width:"520px", draggable:false, visible:false, constraintoviewport:true } );
+		YAHOO.hdp.container.panelVcf.render();
+		YAHOO.util.Event.addListener("locationsFileHelpImg", "mouseover", YAHOO.hdp.container.panelVcf.show, YAHOO.hdp.container.panelVcf, true);
 
 		// wire up the two radio buttons to mirror each other
 		$("input.organism").change(function(e){
