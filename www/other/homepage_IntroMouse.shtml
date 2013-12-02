@@ -21,24 +21,29 @@ function openHelpWindow(helpFile){
 </script>
 
 <style type="text/css">
-</style>
 
+body {color:#000;
+	}
+h1 {color:#002255;
+ 	text-indent:50px;
+ 	}
+h2 {color:#002255;
+	text-indent:50px;
+	}
+
+
+</style>
 
 <!--#include file='include/templateBodyStart.html'-->
 
-
-<font size="3" color="red">FOR ALPHA: This is a placeholder work in progress. Feel free to browse and make suggestions,
-but please consider this a draft. Formatting is yet to come, small tweaks will probably get
-caught in proofing and sections will be beefed up/improved, especially those towards the
-end of the document --Joanne125</font>
+<title>Introduction to Mouse Genetics</title>
 <p>
 
 <h1>Introduction to Mouse Genetics</h1>
 
-<div id="templateBodyInsert">
+<div id="templateBodyInsert" class="body">
 
-<p>
-Mouse genetics has experienced many milestones over the last few decades, from
+<p>Mouse genetics has experienced many milestones over the last few decades, from
 the generation of inbred lines which consistently exhibited a coat color trait
 or susceptibility to tumors in the early 1900s, up to routine gene manipulation,
 conditional targeting and whole genome sequencing or transcript profiling of
@@ -74,11 +79,12 @@ data.</p>
 	<li><a href="#vocab"><b>Structured vocabularies</b></a>
 	</li>
 </ul>
-</div>
-
+</div><br>
+<hr>
 <div class="clear"></div>
-
 <div id="GAG"></div>
+<br>
+<br>
 <h2>Genes, Alleles and Genotypes</h2>
 
 <table>
@@ -106,9 +112,10 @@ data.</p>
 			is capped, polyadenylated and exported from the nucleus to the ribosomes,
 			where it is translated into protein.
 		</td>
-		<td valign="top">
+		<td valign="top"><br>
+		<a href="images/intro_dogma.png" target="_blank">
 		<img style="padding:10px; solid #000000;"src="images/intro_dogma.png" alt="central dogma" width="360px"
-			height="442px" border="1">
+			height="442px" border="1"></a>
 		</td>
 	</tr>
 </table>
@@ -120,8 +127,10 @@ data.</p>
 <col width="1000">
 	<tr>
 		<td valign="top">
-			<figure><img style="padding:10px; solid #000000; "src="images/intro_GenotypeInfographic.jpg"
-				alt=Genes to phenotypes scheme width="274px" height="525px" align="left" border="1">
+			<figure>
+			<a href="images/intro_GenotypeInfographic.jpg" target="_blank">
+			<img style="padding:10px; solid #000000; "src="images/intro_GenotypeInfographic.jpg"
+				alt=Genes to phenotypes scheme width="274px" height="525px" align="left" border="1"></a>
 				<div class="figcaption" style="padding:10px">
 					<p><b><br>Figure 1.  </b>Infographic illustration of the relationship
 					between species level genomes, genes, alleles and genotypes, which
@@ -313,8 +322,9 @@ across multiple generations or different laboratories.</p>
 	<tr>
 		<td valign="top">
 			<figure>
+				<a href="images/intro_inbredderivation.jpg" target="_blank">			
 				<img src="images/intro_inbredderivation.jpg" alt="inbred derivation"
-				width=400 height=487 align="left" border="1">
+				width=400 height=487 align="left" border="1"></a>
 			</figure>
 		</td>
 		<td valign="top">
@@ -333,8 +343,10 @@ across multiple generations or different laboratories.</p>
 				identically in the two animals chosen to generate the following generation.
 				From <a href="http://www.informatics.jax.org/resources.shtml#res_books">(Silver, 1995).</a>
 			</div>
-			<figure><img style="padding:10px; solid #000000;" src="images/intro_fixationcurve.jpg"
-			alt=inbred homozygosity width=350 height=218 align="left" border="1">
+			<figure>
+			<a href="images/intro_fixationcurve.jpg" target="_blank">
+			<img style="padding:10px; solid #000000;" src="images/intro_fixationcurve.jpg"
+			alt=inbred homozygosity width=350 height=218 align="left" border="1"></a>
 		  	</figure>
 		  </td>
 	</tr>
@@ -358,17 +370,19 @@ inferences about the function of the single, modified gene.</p>
 names are composed of a combination of capital letters and/or numbers and may also have
 substrain designations (letters or numbers following a forward slash) and&#45;or lab
 codes to indicate where the strain is being maintained. See the nomenclature tutorial
-video, or browse the <a href="http://www.informatics.jax.org/mgihome/nomen/index.shtml">Full
-Guidelines for Nomenclature of Mouse and Rat Strains.</a></p>
+video below (requires Flash), or browse the <a href="http://www.informatics.jax.org/mgihome/nomen/index.shtml">Full
+Guidelines for Nomenclature of Mouse and Rat Strains.</a> If the tutorial below is not 
+displayed on this page, you may also be able to view it 
+<a href="http://jaxmice.jax.org/support/nomenclature/tutorial.html">here</a>.</p>
 
 <br>
-<font size="5" color="red">FIND A WAY TO EMBED NOMENCLATURE VIDEO</font>
+<div id=nomenflash align="left" margin-left="30px">
+<object border="1" type="application/x-shockwave-flash" data="images/nomenclature.swf" width="570" height="420">
+<param name="movie" value="images/nomenclature.swf" />
+</object>
+</div>
+
 <br>
-
-<a
-href="http://jaxmice.jax.org/support/nomenclature/tutorial.html">http://jaxmice.
-jax.org/support/nomenclature/tutorial.html</a>
-
 <br>
 <p>The most commonly used inbred strain is C57BL/6J which was also the strain
 sequenced to generate the “reference” mouse genome. For more information on specific
@@ -410,7 +424,8 @@ and develop. The illustration in <i>(C)</i> shows a heterozygous targeted allele
 
 <div id="figure4">
 	<figure>
-		<img style="padding:6px" src="images/intro_homologous.jpg" alt="homologous recombination" border="1">
+		<a href="images/intro_homologous.jpg" target="_blank">
+		<img style="padding:6px" src="images/intro_homologous.jpg" alt="homologous recombination" border="1"></a>
 		<figcaption><p><b>Figure 4. Generation of targeted alleles by homologous
 			recombination.</b> Targeted alleles of all kinds can be generated in
 			embryonic stem cells by taking advantage of the normal processes of
@@ -477,7 +492,9 @@ which is known as a transgene.</p>
 	  	transgene, which is when foreign (non-mouse) DNA is introduced into the germ
 	  	line with the intention or producing a new, functional (non-mouse origin) protein.</p>
   	</figcaption>
-		<img style="padding:6px" src="images/intro_targetedalleles.png" width="600" height="611" alt="most common targeted allele types" border="1">
+  		<a href="images/intro_targetedalleles.png" target="_blank">
+		<img style="padding:6px" src="images/intro_targetedalleles.png" width="600" height="611" 
+		alt="most common targeted allele types" border="1"></a>
 	</figure>
 </div>
 <br>
@@ -508,14 +525,56 @@ flanking loxP sites (upstream and downstream of the target) are oriented in the 
 direction, the floxed segment will be excised along with one of the loxP repeats (as shown
 in Figure 5), if the loxP sites are opposite orientations (facing each other), the segment
 will be inverted, and if the loxP sites are located on different chromosomes (a <i>trans</i>
-arrangement), the recombinase will mediate chromosomal translocations. A single loxP site
-can not be manipulated by cre recombinase.
+arrangement), the recombinase will mediate chromosomal translocations.</p>
+<p>Typically, cre and loxP strains are developed separately and crossed together to produce 
+a cre-lox strain.</p>
+<ol>
+	<li>mouse with a targeted "floxed" allele, carrying two loxP flanking a targeted region</li>
+	<li>transgenic mouse with a cre recombinase enzyme expressed under the control of a 
+		promoter</li>
+</ol>
+<p>The offspring of this cross will carry both the floxed targeted allele for the gene of 
+interest as well as the recombinase. In tissues where the recombinase is expressed, the region 
+flanked by loxP sites will be excised (or otherwise recombined) generating a tissue-restricted 
+knockout. In tissues where the cre promoter is inactive, the recombinase will not be expressed 
+and the floxed gene will remain functionally intact. </p>
+<a href="images/intro_creLox.png" target="_blank">
+		<img style="padding:6px" src="images/intro_creLox.png" width="500" height="457" 
+		alt="tissue specific excision, cre lox" border="1"></a>
 
+<p>Recombinase activity of a given cre transgene allele can be determined by crossing the 
+cre mouse to a reporter strain which carries a loxP-flanked STOP cassette in front of a 
+reporter gene (lacZ or GFP, for example). If cre recombinase is active in a tissue, the 
+STOP will be excised and the reporter expressed.</p>
+<p>To locate a cre recombinase strain that expresses in a particular tissue type, or is 
+under the control of a specific known promoter, use MGI's <a href="<!--#include file='include/mgihome_url.html'-->recombinase.shtml">Recombinase (cre) 
+Portal</a>, or search using the <a href="<!--#include file='include/mgihome_url.html'-->searches/allele_form.shtml">
+Phenotypes, Alleles and Disease Models query form</a>, specifying <i>"transgenic (Cre/Flp)"</i> 
+in the <i>Categories</i> section.</p>
 </div>
 <div class="clear"></div>
 <div id=#vocab>
 <h2>Structured vocabularies and ontologies</h2>
-
+<p>Structured, controlled vocabularies in biology allow data to be organized and accessed using 
+standardized, hierarchical terms. It also allows databases such as MGI to annotate similar 
+findings under similar headings, so that researchers do not need to browse multiple 
+keywords at different levels of precision.</p>
+MGI annotates data using three major vocabularies:
+<ol>
+	<li>the <a href="<!--#include file='include/mgihome_url.html'-->searches/MP_form.shtml">
+		Mammalian Phenotype Ontology</a></li>
+	<li>the <a href="<!--#include file='include/mgihome_url.html'-->searches/GO_form.shtml">
+		Gene Ontology</a> (developed as part of the <a href="http://www.geneontology.org/GO.doc.shtml">
+		Gene Ontology consortium</a>)
+		<ul>
+			<li>Cellular component</li>
+			<li>Biological process</li>
+			<li>Molecular function</li>
+		</ul>
+		</li>
+	<li>the <a href="<!--#include file='include/mgihome_url.html'-->anatdict_form.shtml">
+		Mouse Anatomical Dictionary</a></li>
+</ol>
 
 <!--#include file='include/templateBlankBodyStop.html'-->
 </body>
