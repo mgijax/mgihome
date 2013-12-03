@@ -304,7 +304,7 @@ or for transgenes:
 					has been reported to be a model of human disease, this table will appear. 
 					Check marks in columns indicate which genotype was used to report this 
 					finding.</li>
-				<li><b><a href="#findmice">Obtain Mice:</a></b> links will appear here for 
+				<li><b><a href="#findmice">Order Mice:</a></b> links will appear here for 
 					commercially available strains or targeted pluripotent ES cell lines. 
 					Information on availability comes from the <a href="http://www.findmice.org">
 					International Mouse Strain Resource (IMSR)</a> which searches all of 
@@ -380,11 +380,43 @@ annotations (&#35;5). </p>
 
 </div>
 <div id="findmice">
-<h3><font color="#002255"><blockquote>Obtain Mice</font></blockquote></h3>
-Text
+<h3><font color="#002255"><blockquote>Order Mice</font></blockquote></h3>
+<p>Links appear in the <b>Find Mice (IMSR)</b> row if a mouse strain or pluripotent ES 
+cells carrying the mutation are available for purchase through 
+any of the <a href="http://www.findmice.org/repository">major international repositories</a> 
+indexed by the <a href="http://www.findmice.org/">International Mouse Strain Resource (IMSR)</a>.  
+If links do not appear, this means that the strain has not been deposited for commercial 
+distribution, however it may still be possible to obtain mice by contacting the researcher 
+who developed the line initially. His or her information can be located in the Nomenclature 
+or Mutation Origin section (see J:&#35; next to "Earliest citation of germline transmission") 
+at the top of the allele detail page, or in the reference specified as "Original" at the 
+bottom.</p>
+<p>If a mouse or ES cell line is available carrying the exact allele from this allele detail 
+page, a hyperlinked number will appear next to "Carrying this Mutation:" (&#35;1). If other 
+alleles of the same gene exist and are commercially available, another hyperlinked number will 
+appear below, next to "Carrying any <i>GeneSymbol</i> Mutation:" (&#35;2).</p>
+<p>Available strains will be indicated including the full genotype (see Strain Name for 
+inbred background), state (live/embryo/sperm/ES cell line), repository (provider, &#35;3) and 
+allele details (&#35;4). Confirm in the "Genes" and "Alleles" columns (&#35;4) that the 
+strain carries only (or all of) the mutations that are desired. Note: in the example below, you 
+can see that the first strain carries both <i>Trp53<sup>tm1Brd</sup></i> and a Tg(Wap-HBx)1Gmn 
+transgene.</p>
+<p>Once satisfied, you can find purchasing information (prices, timelines, MTAs) and place 
+an order by clicking on the <b>Order</b> button (&#35;3). For purchasing or strain specific 
+questions, you can also contact the repository directly by using the purple envelope icon.</p>
+<a href="images/howto_buyMice.png" target="_blank">
+			<img src="<!--#include file='include/mgihome_url.html'-->/other/images/howto_buyMice.png"
+			width="500px" height="271px" alt="find mice and IMSR" style="padding:10px;"
+			border="1" margins="5px"></a>
 
 </div>
 </div>
+<div>
+<h2><font color="#002255">4. Query forms</font></h2>
+<p>Query forms allow researchers to set parameters and retrieve gene (or other) lists that 
+match a term or terms of interest. Query forms are organized by topic, and can be accessed 
+either from the <b>Search</b> dropdown menu in the dark blue bar at the top of the page, 
+or by selecting a topic from the list below the Quick Search on MGI's home page.</p>
 
 <!--#include file='include/templateBlankBodyStop.html'-->
 
