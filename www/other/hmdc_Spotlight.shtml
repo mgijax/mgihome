@@ -38,12 +38,13 @@ Spotlight on mouse models of human disease</title>
 <col width="415px">
 <col width="400px">
 	<tr>
-		<td><img src="<!--#include file='include/mgihome_url.html'-->homepages/images/hmdc_nudeHuman.gif" 
-			width="410px" height="323px" style="padding:5px; margin:10px" border="1">
+		<td><a href="<!--#include file='include/mgihome_url.html'-->homepages/images/hmdc_nudeHuman.gif">
+			<img src="<!--#include file='include/mgihome_url.html'-->homepages/images/hmdc_nudeHuman.gif" 
+			width="410px" height="323px" style="padding:5px; margin:10px" border="1"></a>
 		</td>
 		<td valign="top">
 			<br>
-			<b>Figure 1 (left)</b>. Molecular analysis of the human <i>nude</i> 
+			<b>Figure 1</b>. Molecular analysis of the human <i>nude</i> 
 			phenotype. <b>(a)</b> A five-year-old child with congenital alopecia and 
 			T-cell immunodeficiency, corrected by bone marrow transplant. <b>(b)</b> 
 			Sequence analysis of a nonsense mutation in exon 5 of the <i>FOXN1</i> gene. 
@@ -63,17 +64,35 @@ Spotlight on mouse models of human disease</title>
 		</td>
 	</tr>
 	<tr>
-		<td><img src="<!--#include file='include/mgihome_url.html'-->homepages/images/HMDC_nude_mice.png" 
-			width="410px" height="167px" style="padding:5px; margin:10px" border="1"></td>
 		<td valign="top"><br>
-			<b>Figure 2 (left).</b> Normal control mouse with hairless, immunodeficient 
-			&lsquo;nude &rsquo; mouse homozygous for the <a href="#table1">Foxn1<sup>nu</sup> </a>mutation. 
-			This mutation is a single base-pair (G) deletion in exon 3, resulting in a 
-			frameshift mutation and termination at a TGA stop codon in exon 6.<br>
-			<br>
+			<a href="<!--#include file='include/mgihome_url.html'-->other/images/hmdc_spotlightMouseDetail.png">
+			<img src="<!--#include file='include/mgihome_url.html'-->other/images/hmdc_spotlightMouseDetail.png" 
+			width="410px" height="317px" style="padding:5px; margin:10px" border="1"></a></td>
+		<td valign="top"><br>
+			<b>Figure 2.</b> Phenotypic comparison of normal wild type and immunodeficient mutant 
+			<i>Foxn1<sup>nu</sup>/Foxn1<sup>nu</sup></i> mouse strains. The &lsquo;nude&rsquo; 
+			(<i>Foxn1<sup>nu</sup></i>) mutation is a single base-pair (G) deletion in exon 3, 
+			resulting in a frameshift mutation and termination at a TGA stop codon in exon 6.
 			Additional spontaneous and genetically engineered mouse <i>Foxn1</i> mutations 
 			differing in their sequence changes are known. See <a href="#table1">Table 1</a>
-			 below. 
+			 below. <br>
+			 <br>
+			<i>lower panel: </i>FACS profiling of peripheral blood leukocytes shows absence of T-lymphocyte markers 
+			in the mutant mouse when stained for <b>(A)</b> the T-cell receptor (TCR) and 
+			B-lymphoid marker, B220 or <b>(B)</b> T-cell activation co-receptors CD4 and CD8.<br>
+			Nail morphology in wild-type and mutant mice. Shown are <b>(C)</b> hind-paw photos 
+			and <b>(D)</b> scanning EM of nails. Nail plates of normal adults are smooth, 
+			hard, and have sharp tips while mutant nails are broken and have blunt ends.<br>
+			<br>			
+			<i>A & B figures from:</i><br>
+			Cunliffe VT, Furley AJ, Keenan D. 2002. Compete rescue of the nude mutant 
+			phenotype by a wild-type Foxn1 transgene. <i>Mamm Genome</i> <b>13</b>:245-252. PubMed:
+			<a href="http://www.ncbi.nlm.nih.gov/pubmed/?term=12016512">12016512.</a><br>
+			Displayed with permission of Mammalian Genome, Springer.<br>
+			<br><i>C & D figures from:</i><br>
+			Cai J, Ma L. 2011. Msx2 and Foxn1 regulate nail homeostasis. 
+			<i>Genesis</i> <b>49</b>:449-459. PubMed: <a href="http://www.ncbi.nlm.nih.gov/pubmed/?term=21387539">21387539
+			</a>.<br> Displayed with permission of Genesis, Wiley-Liss, Inc.
 		</td>
 	</tr>
 </table>
@@ -121,7 +140,7 @@ Search by genes&rdquo; box on the Human-Mouse: Disease Connection.</p>
 </ul>
 <b>Additional Links:</b>
 <ul>
-	<li><b>OMIM</b> Online Mendelian Inheritance in Man <a href="http://www.omim.org/entry/601705">
+	<li><b>OMIM:</b> Online Mendelian Inheritance in Man <a href="http://www.omim.org/entry/601705">
 	http://www.omim.org/entry/601705 </a></li>
 	<li><b>ORDR:</b> NIH Office of Rare Disease Research <a href="http://rarediseases.info.nih.gov/gard/4358/disease/resources/1">
 	http://rarediseases.info.nih.gov/gard/4358/disease/resources/1</a></li>
@@ -227,7 +246,8 @@ Search by genes&rdquo; box on the Human-Mouse: Disease Connection.</p>
 		<td><a href=http://www.ncbi.nlm.nih.gov/pubmed/?term=22072979>PMID:22072979</a></td>
 	</tr>
 </table>
-</div>		
+</div>
+<br>	
 <div id="footnote">
 &#42; This list does not include Floxed/FRT targeted alleles, which behave as wild-type 
 until mated with cre recombinase bearing mice causing the sequence between the Floxed 
