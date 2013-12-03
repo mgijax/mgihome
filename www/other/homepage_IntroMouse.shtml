@@ -73,8 +73,16 @@ data.</p>
 		</ul>
 	</li>
 	<li><a href="#targeted"><b>Targeted alleles</b></a>
+		<ul>
+			<li><i>Figure 5.</i> Generation of targeted alleles by homologous recombination</li>
+			<li><i>Figure 6.</i> Four of the most common targeted allele types</li>
+		</ul>
 	</li>
 	<li><a href="#cre"><b>Conditional alleles and the cre-Lox system</b></a>
+		<ul>
+			<li><i>Figure 7.</i>Tissue specific excision of a floxed allele by co-expression 
+				with cre-recombinase</li>
+		</ul>
 	</li>
 	<li><a href="#vocab"><b>Structured vocabularies</b></a>
 	</li>
@@ -116,6 +124,10 @@ data.</p>
 		<a href="images/intro_dogma.png" target="_blank">
 		<img style="padding:10px; solid #000000;"src="images/intro_dogma.png" alt="central dogma" width="360px"
 			height="442px" border="1"></a>
+			<div id="fig1" class="figcaption" style="padding:10px">
+				<b>Figure 1. </b>The central dogma of biology: DNA to mRNA to protein.
+			</div>
+		
 		</td>
 	</tr>
 </table>
@@ -126,27 +138,26 @@ data.</p>
 <col width="300">
 <col width="1000">
 	<tr>
-		<td valign="top">
-			<figure>
+		<td valign="top"><br>
 			<a href="images/intro_GenotypeInfographic.jpg" target="_blank">
 			<img style="padding:10px; solid #000000; "src="images/intro_GenotypeInfographic.jpg"
-				alt=Genes to phenotypes scheme width="274px" height="525px" align="left" border="1"></a>
-				<div class="figcaption" style="padding:10px">
-					<p><b><br>Figure 1.  </b>Infographic illustration of the relationship
-					between species level genomes, genes, alleles and genotypes, which
-					dictate phenotypes. The bottom photo shows an obese C57BL/6J-
-					<a href="http://www.informatics.jax.org/allele/key/568">
+				alt=Genes to phenotypes scheme width="274px" height="525px" border="1"></a><br>
+				<div id="fig2" class="figcaption" style="padding:10px">
+					<b>Figure 2. </b>Infographic illustration of the hierarchy
+					between species level genomes, genes (functional units), the sequence variation 
+					which defines alleles, leading to individual genotypes, which, when expressed
+					dictate phenotypes. See right for details. The bottom photo shows an obese C57BL/6J-
+					<a href="<!--#include file='include/fewi_url.html'-->accession/MGI:1856424">
 					<i>Lep<sup>ob</sup>/Lep<sup>ob</sup></i> mouse</a> on the right, with a
 					heterozygous <i>Lep<sup>ob</sup>/Lep<sup>&#43;</sup></i> lean littermate
-					on the left.</p>
+					on the left.
 				</div>
-			</figure>
 		</td>
 		<td valign="top">
 			<p>Within a species, all members carry the same set of genes,
-		or functional units. The mouse reference genome contains an estimated
-		<a href="http://www.informatics.jax.org/mgihome/homepages/stats/all_stats.shtml#allstats_ortho">
-		22,958 protein-coding genes</a> and was fully sequenced in 2002 <a href="http://www.ncbi.nlm.nih.gov/pubmed/12466850">
+		or functional units. The mouse reference genome contains an approximately
+		<a href="<!--#include file='include/mgihome_url.html'-->homepages/stats/all_stats.shtml">
+		24,500 protein-coding genes</a> and was fully sequenced in 2002 <a href="http://www.ncbi.nlm.nih.gov/pubmed/12466850">
 		(Mouse Genome Sequencing Consortium <i>et al.</i>, 2002, Nature)</a>. Structurally,
 		these are distributed across 19 pairs of autosomes, plus X and Y sex chromosomes.
 		For the sake of comparison, humans have 23 pairs of chromosomes (22 autosomes
@@ -156,7 +167,8 @@ data.</p>
 		human genomes can be aligned into regions of shared synteny, which is to say,
 		blocks where homologous genes are conserved in the same relative order,
 		indicative of shared common ancestry. At the gene level, a mouse homolog has
-		been identified and classified for <a href="http://www.informatics.jax.org/mgihome/homepages/stats/all_stats.shtml#Vertebrate_Homology">
+		been identified and classified for 
+		<a href="<!--#include file='include/mgihome_url.html'-->homepages/stats/all_stats.shtml#allstats_ortho">
 		17,096</a> human genes.</p>
 			<p>Variability between individuals within a species is due to variant gene
 		forms called alleles. Some changes are able to alter the expression or function
@@ -173,8 +185,8 @@ data.</p>
 			<p>Barring the unusual case of chimeras, every nucleated cell in a mouse&#8217;s
 		body carries the same DNA code. However, different gene expression patterns allow
 		these cells to develop into a variety of tissues and organs, as well as respond
-		to stimuli. The <a href="http://www.informatics.jax.org/expression.shtml">Gene
-		Expression Database</a> at MGI allows you to search for genes which are expressed
+		to stimuli. The <a href="<!--#include file='include/mgihome_url.html'-->../expression.shtml">
+		Gene Expression Database</a> at MGI allows you to search for genes which are expressed
 		in different mouse anatomical structures, with a particular emphasis on embryonic
 		development.</p>
 			<p>The end result, whether a single measurement or the composite of all of
@@ -185,7 +197,7 @@ data.</p>
 		impacts (consider missense coding variants versus knockout alleles versus
 		conditional or reporter targeted alleles), other alleles in the strain background,
 		whether known or unknown, can have modifier effects on a trait, or set of traits.
-		For example, the <a href="http://www.informatics.jax.org/allele/key/568">
+		For example, the <a href="<!--#include file='include/fewi_url.html'-->accession/MGI:1856424">
 		<i>Lep<sup>ob</sup></i> allele</a> shows background sensitivity with homozygous
 		<i>Lep<sup>ob</sup>/Lep<sup>ob</sup></i> <a href="http://jaxmice.jax.org/strain/000632.html">
 		on a C57BL/6J background</a> exhibiting severe obesity with a pre-diabetes-like
@@ -203,7 +215,8 @@ data.</p>
 
 <h2>Quick Glossary</h2>
 
-<p>For a full glossary, see: <a href="http://www.informatics.jax.org/glossary">MGI Glossary</a>
+<p>For a full glossary, see: 
+<a href="<!--#include file='include/mgihome_url.html'-->glossary.shtml">MGI Glossary</a>
 </p>
 
 <table border="2" cellpadding="8">
@@ -315,10 +328,10 @@ clones of one another, which allows good experimental reproducibility for geneti
 influenced traits, guaranteeing a consistent and uniform animal model for study, even
 across multiple generations or different laboratories.</p>
 
-<div id="figure2">
+<div id="figure3">
 <table>
 <col width="400">
-<col width="500">
+<col width="300">
 	<tr>
 		<td valign="top">
 			<figure>
@@ -328,26 +341,30 @@ across multiple generations or different laboratories.</p>
 			</figure>
 		</td>
 		<td valign="top">
-			<div class="figcaption" style="padding:2px;">
+			<div id=fig3 class="figcaption" style="padding:2px;">
 				<br>
-				<b>Figure 2.</b> Derivation of inbred strains</b>. Unique strains of
+				<b>Figure 3.</b> Derivation of inbred strains</b>. Unique strains of
 				laboratory mice are generated by repeated intercrossing (brother&#45;sister)
-				or backcrossing (parent&#45;offspring) until mice are homozygous at all loci.
-			</div>
-			<div class="figcaption" style="padding:2px">
+				and/or backcrossing (parent&#45;offspring) until mice are homozygous at all loci 
+				and progeny are identical.
 				<br>
-				<b>Figure 3.</b> Consequences of inbreeding up to 20 generations.</b>
-				Points on the solid line indicate the portion of the genome that
-				will be homozygous in any individual animal at each generation. Points on
-				the dashed line indicate the portion of the genome that will be fixed
-				identically in the two animals chosen to generate the following generation.
-				From <a href="http://www.informatics.jax.org/resources.shtml#res_books">(Silver, 1995).</a>
+				<br>
 			</div>
-			<figure>
+			<div id=fig4 class="figcaption" style="padding:2px">
+				<br>
+				<b>Figure 4.</b> Consequences of inbreeding for 20 generations.</b>
+				Points on the solid line indicate the portion of the genome that
+				will be homozygous in any <i>individual</i> animal at each generation. Points on
+				the dashed line indicate the portion of the genome that will be fixed
+				identically in the <i>two animals</i> chosen to generate the following generation.
+				From 
+				<a href="<!--#include file='include/mgihome_url.html'-->../silverbook">
+				(Silver, 1995).</a><br>
+				<br>
+			</div>
 			<a href="images/intro_fixationcurve.jpg" target="_blank">
 			<img style="padding:10px; solid #000000;" src="images/intro_fixationcurve.jpg"
 			alt=inbred homozygosity width=350 height=218 align="left" border="1"></a>
-		  	</figure>
 		  </td>
 	</tr>
 </table>
@@ -357,7 +374,7 @@ across multiple generations or different laboratories.</p>
 
 <div id="inbred2"><p class="TextAlignment" width="100%">
 
-<p>While all mice are genetically homogenous within a specific inbred line, different
+<p>While all mice are genetically homogenous within an inbred line, different
 inbred lines will carry a different set of fixed alleles and exhibit different phenotypic
 characteristics as a result. Choosing the right inbred strain for a particular
 experiment or control is an important consideration when working with laboratory mice.</p>
@@ -370,14 +387,15 @@ inferences about the function of the single, modified gene.</p>
 names are composed of a combination of capital letters and/or numbers and may also have
 substrain designations (letters or numbers following a forward slash) and&#45;or lab
 codes to indicate where the strain is being maintained. See the nomenclature tutorial
-video below (requires Flash), or browse the <a href="http://www.informatics.jax.org/mgihome/nomen/index.shtml">Full
-Guidelines for Nomenclature of Mouse and Rat Strains.</a> If the tutorial below is not 
+video below (requires Flash), or browse the <a href="<!--#include file='include/mgihome_url.html'-->
+/nomen/index.shtml">
+Full Guidelines for Nomenclature of Mouse and Rat Strains.</a> If the tutorial below is not 
 displayed on this page, you may also be able to view it 
 <a href="http://jaxmice.jax.org/support/nomenclature/tutorial.html">here</a>.</p>
 
 <br>
-<div id=nomenflash align="left" margin-left="30px">
-<object border="1" type="application/x-shockwave-flash" data="images/nomenclature.swf" width="570" height="420">
+<div id=nomenflash style="margin-left:30px">
+<object border="1" type="application/x-shockwave-flash" data="images/nomenclature.swf" width="500" height="368">
 <param name="movie" value="images/nomenclature.swf" />
 </object>
 </div>
@@ -423,11 +441,18 @@ and develop. The illustration in <i>(C)</i> shows a heterozygous targeted allele
 <div id=homologous>
 
 <div id="figure4">
-	<figure>
-		<a href="images/intro_homologous.jpg" target="_blank">
-		<img style="padding:6px" src="images/intro_homologous.jpg" alt="homologous recombination" border="1"></a>
-		<figcaption><p><b>Figure 4. Generation of targeted alleles by homologous
-			recombination.</b> Targeted alleles of all kinds can be generated in
+<table>
+<col width="355">
+<col width="600">
+	<tr>
+		<td valign="top"><p>
+			<a href="images/intro_homologous.jpg" target="_blank">
+			<img style="padding:6px" src="images/intro_homologous.jpg" alt="homologous recombination" border="1"
+			height="391px" width="350px"></a></td>
+		<td>
+			<div id="fig5" class="figcaption" style="padding:10px"><b>Figure 5. 
+			Generation of targeted alleles by homologous recombination.</b> 
+			Targeted alleles of all kinds can be generated in
 			embryonic stem cells by taking advantage of the normal processes of
 			homologous recombination in the cell. <b><i>(A)</i></b> First, a targeting
 			vector is constructed which contains the cassette to be introduced
@@ -450,9 +475,10 @@ and develop. The illustration in <i>(C)</i> shows a heterozygous targeted allele
 			be screened for proper targeting using the selectable markers, sequencing,
 			and/or Southern blotting, then positive clones can be grown to blastocysts
 			and implanted in a pseudopregnant recipient mouse where they will develop as
-			embryos.</p>
-		</figcaption>
-	</figure>
+			embryos.</p></div>
+		</td>
+	</tr>
+</table>	
 </div>
 
 <div class="clear"></div>
@@ -461,7 +487,8 @@ and develop. The illustration in <i>(C)</i> shows a heterozygous targeted allele
 
 <p>This same strategy can also be used to introduce specific new variation into a mouse.
 This may be a single, specific engineered substitution designed to duplicate a mutation
-found in human clinical cases (ex. <a href="http://www.informatics.jax.org/allele/key/56294">
+found in human clinical cases (ex. 
+<a href="<!--#include file='include/fewi_url.html'-->accession/MGI:3767672">
 M390R in Bbs1<sup>tm1Vcs</sup></a>), a recombinase recognition sequence to allow <i>in
 vivo</i> genome manipulation, or the introduction of a complete cDNA from another species,
 which is known as a transgene.</p>
@@ -469,33 +496,40 @@ which is known as a transgene.</p>
 </div>
 
 <div id="figure4">
-	<figure valign="center">
-		<figcaption>
-	  	<b><p>Figure 4. Four of the most common targeted allele types:</b> The top
-	  	row depicts the endogenous (or unaltered) allele where exons are properly spliced
-	  	(see dashed lines) and a full length, functional protein is produced. Below,
-	  	 a knock-out allele (KO) uses homologous recombination to replace certain
-	  	functional exons with a targeting cassette containing a selectable marker. This
-	  	gene is no longer able to produce a functional protein. A <a href="#cre">conditionally
-	  	targeted allele</a>, also commonly referred to as "floxed" for "flanked by LoxP"
-	  	introduces recombinase recognizable sequences both upstream and downstream of
-	  	the targeted exons. When no recombinase enzymes are expressed, these genes
-	  	function as normal; however, if the correct recombinase is expressed within the
-	  	same cell (illustrated with the scissors), it is able to act on these sites and
-	  	produce an altered allele, most commonly excising the exon for a truncated,
-	  	non-functional protein. For a reporter allele, a cassette is introduced which
-	  	contains a detectable marker, commonly a fluorescent tag or lacZ gene which can
-	  	be visualized under a microscope. These are often used to detect patterns of gene
-	  	expression as the marker will indicate when the target promoter has been
-	  	activated. They often disrupt the normal gene splicing or protein conformation,
-	  	so may act as nulls or have only partial activity. The bottom row depicts a
-	  	transgene, which is when foreign (non-mouse) DNA is introduced into the germ
-	  	line with the intention or producing a new, functional (non-mouse origin) protein.</p>
-  	</figcaption>
-  		<a href="images/intro_targetedalleles.png" target="_blank">
-		<img style="padding:6px" src="images/intro_targetedalleles.png" width="600" height="611" 
-		alt="most common targeted allele types" border="1"></a>
-	</figure>
+<table>
+<col width=50%>
+<col width="405">
+	<tr>
+		<td>
+			<div id="fig5" class="figcaption" style="padding:10px">
+	  		<b><p>Figure 6. Four of the most common targeted allele types.</b> The top
+	  		row depicts the endogenous (or unaltered) allele where exons are properly spliced
+		  	(see dashed lines) and a full length, functional protein is produced. Below,
+		  	 a knock-out allele (KO) uses homologous recombination to replace certain
+		  	functional exons with a targeting cassette containing a selectable marker. This
+		  	gene is no longer able to produce a functional protein. A <a href="#cre">conditionally
+		  	targeted allele</a>, also commonly referred to as "floxed" for "flanked by LoxP"
+		  	introduces recombinase recognizable sequences both upstream and downstream of
+		  	the targeted exons. When no recombinase enzymes are expressed, these genes
+			function as normal; however, if the correct recombinase is expressed within the
+		  	same cell (illustrated with the scissors), it is able to act on these sites and
+		  	produce an altered allele, most commonly excising the exon for a truncated,
+		  	non-functional protein. For a reporter allele, a cassette is introduced which
+		  	contains a detectable marker, commonly a fluorescent tag or lacZ gene which can
+		  	be visualized under a microscope. These are often used to detect patterns of gene
+		  	expression as the marker will indicate when the target promoter has been
+		  	activated. They often disrupt the normal gene splicing or protein conformation,
+		  	so may act as nulls or have only partial activity. The bottom row depicts a
+		  	transgene, which is when foreign (non-mouse) DNA is introduced into the germ
+		  	line with the intention or producing a new, functional (non-mouse origin) protein.</p></div>
+		</td>
+  		<td>
+  			<a href="images/intro_targetedalleles.png" target="_blank">
+			<img style="padding:6px" src="images/intro_targetedalleles.png" width="400" height="407" 
+			alt="most common targeted allele types" border="1"></a>
+		</td>
+	</tr>
+<table>
 </div>
 <br>
 <div class="clear"></div>
@@ -538,9 +572,17 @@ interest as well as the recombinase. In tissues where the recombinase is express
 flanked by loxP sites will be excised (or otherwise recombined) generating a tissue-restricted 
 knockout. In tissues where the cre promoter is inactive, the recombinase will not be expressed 
 and the floxed gene will remain functionally intact. </p>
-<a href="images/intro_creLox.png" target="_blank">
-		<img style="padding:6px" src="images/intro_creLox.png" width="500" height="457" 
-		alt="tissue specific excision, cre lox" border="1"></a>
+
+<table>
+	<tr>
+	<td><a href="images/intro_creLox.png" target="_blank">
+		<img style="padding:6px" src="images/intro_creLox.png" width="400" height="366" 
+		alt="tissue specific excision, cre lox" border="1"></a></td>
+	<td valign="top"><div id="fig7" class="figcaption" style="padding:10px"><b>Figure 7. </b>
+		Tissue specific excision of a floxed allele by co-expression with cre-recombinase.
+	</td>
+	</tr>
+</table>
 
 <p>Recombinase activity of a given cre transgene allele can be determined by crossing the 
 cre mouse to a reporter strain which carries a loxP-flanked STOP cassette in front of a 
