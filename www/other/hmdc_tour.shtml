@@ -57,7 +57,7 @@ Now, clinical researchers whose primary focus is on human genetic disease, varia
 natural mutations have a highly-accessible way to explore experimentally characterized mouse 
 mutants for a spectrum of associated phenotypes, as well as known disease models developed 
 by the greater research community. Investigators can begin with genes (symbols, names or IDs) 
-or gene lists, genome positions (as coordinates from human or mouse, or as <a href="http://en.wikipedia.org/wiki/Variant_Call_Format">.vcf</a>
+or gene lists, genome positions (as coordinates from human or mouse, or as <a href="http://www.1000genomes.org/node/101">.vcf</a>
  files), <a href="http://www.ncbi.nlm.nih.gov/omim">OMIM diseases</a> 
 or phenotypes, and retrieve a list of genes, annotated mammalian phenotypes, associated human 
 diseases and/or available mouse models for further research, along with comprehensive 
@@ -117,7 +117,7 @@ a genome location or set of genomic regions, and/or (3) disease name(s) or mamma
 					genes where a mouse model has been reported to exhibit this phenotype. 
 					These are hierarchical, so selecting a broad general term will also 
 					bring back genes annotated to more specific child terms. See the 
-					<a href="<!--#include file='include/mgihome_url.html'-->searches/MP_form.shtml">
+					<a href="<!--#include file='include/mgihome_url.html'-->../searches/MP_form.shtml">
 					Mammalian Phenotype (MP) browser</a>.</li>
 				<li><i><font color="grey">OMIM:</i></font> from the <a href="http://www.ncbi.nlm.nih.gov/omim">
 					Online Mendelian Inheritance in Man</a> database. Contains human diseases 
@@ -137,7 +137,7 @@ a genome location or set of genomic regions, and/or (3) disease name(s) or mamma
 			disease annotation. This tool is not equipped to do functional analysis of 
 			variants or filtering, so we recommend uploading a trimmed candidate list. 
 			See <a href="https://www.sanger.ac.uk/resources/databases/exomiser/">
-			Exomiser</a> for a filtering tool. The default is to discard all SNPs with a 
+			Exomiser</a> for a filtering tool designed to process human data. The default is to discard all SNPs with a 
 			known dbSNP identifier (rs&#35;). If you want to keep these genes in your results 
 			clear the contents of the sixth column, but do not delete it, so as to preserve 
 			standard column structure. See <a ref="#vcf">Section on vcf files</a> for more 
@@ -182,7 +182,7 @@ themselves are arranged into three tabbed tables for: Gene homology x Phenotypes
 		your search are returned as an interactive grid. Gene rows are only returned where 
 		at least one phenotype or disease term has been annotated, and columns are only 
 		displayed if at least one gene association has been reported. Matching 
-		<a href="<!--#include file='include/mgihome_url.html'-->glossary/transgene.shtml">
+		<a href="<!--#include file='include/mgihome_url.html'-->../glossary/transgene.shtml">
 		transgenes</a> (denoted by <i>"Tg(promoter-gene)lab_code"</i>), where an artificial 
 		construct has been introduced and expressed in a live mouse will also appear, but only 
 		in the mouse column. This table compresses multiple alleles of a gene (if they exist) 
@@ -229,7 +229,7 @@ themselves are arranged into three tabbed tables for: Gene homology x Phenotypes
 			displayed. Clicking on an allele symbol or row will generate a new window 
 			with the complete list of all phenotype annotations in all systems with 
 			supporting references (J&#58;&#35;s). For help interpreting Allele Detail pages see 
-			<a href="<!--#include file='include/mgihome_url.html'-->userhelp/ALLELE_detail_help.shtml">
+			<a href="<!--#include file='include/mgihome_url.html'-->../userhelp/ALLELE_detail_help.shtml">
 			here</a>.<br>
 			<a href="<!--#include file='include/mgihome_url.html'-->other/images/hmdc_popupDetail.png">
 			<img src="images/hmdc_popupDetail.png" width="300" height="163" border="1" style="padding:5px; margin:10px"></a>
@@ -431,8 +431,8 @@ these are the result of whole genome or exome sequencing. The format must includ
 </ul>
 If you edit your file, please clear column data rather than removing columns.
 <p>See sample files for:
-<a href="http://www.informatics.jax.org/mgihome/other/exampleHumanData.vcf">Human</a> and 
-<a href="http://www.informatics.jax.org/mgihome/other/exampleMouseData.vcf">Mouse</a>.
+<a href="<!--#include file='include/mgihome_url.html'-->other/exampleHumanData.vcf">Human</a> and 
+<a href="<!--#include file='include/mgihome_url.html'-->other/exampleMouseData.vcf">Mouse</a>.
 </p>
 		
 <p><h3><font color="f7941e">In this beta release...</font></h3>
@@ -447,7 +447,7 @@ encourage users to pre-filter by presumed functional impact or on the basis of l
 These filters allow a phenotypic annotation to de novo, unreported (rare) or private 
 gene variants. If your experimental design requires that known variants be included, you can 
 bypass the ID filter by clearing column 3 in your uploaded file.</p>
-<p>Maximum upload file size is 25MB. Only the first 200,000 lines will be processed.</p>
+<p>Maximum upload file size is 25MB. Only the first 100,000 lines will be processed.</p>
 <p>This form has only been tested with VCF v4.0 and higher standard formats.</p>
 <p>Please contact <a href="<!--#include file='include/mgihome_url.html'-->support/mgi_inbox.shtml">MGI
 User Support</a> to suggest important features that you would like to see implemented in 
