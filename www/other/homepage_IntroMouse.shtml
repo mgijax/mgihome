@@ -76,16 +76,18 @@ data.</p>
 		<ul>
 			<li><i>Figure 5.</i> Generation of targeted alleles by homologous recombination</li>
 			<li><i>Figure 6.</i> Four of the most common targeted allele types</li>
+			<li><i>Table 1.</i> Common engineered allele types</li>
 		</ul>
 	</li>
 	<li><a href="#cre"><b>Conditional alleles and the cre-Lox system</b></a>
 		<ul>
-			<li><i>Figure 7.</i>Tissue specific excision of a floxed allele by co-expression 
+			<li><i>Figure 7.</i> Tissue specific excision of a floxed allele by co-expression 
 				with cre-recombinase</li>
 		</ul>
 	</li>
 	<li><a href="#vocab"><b>Structured vocabularies</b></a>
 	</li>
+	<li><a href="#ref1">References</a></li>
 </ul>
 </div><br>
 <hr>
@@ -114,7 +116,7 @@ data.</p>
 			and are spliced together with introns removed as part of mRNA processing. The
 			canonical splice site consensus sequence in pre-mRNA uses "CAG&#124; G" for
 			the 3' donor and "MAG &#124; GTRAGT" for the 5' splice site acceptor, where M
-			is A or C and R is A or G. Additional post-transcriptional regulation may
+			is A or C and R is A or G<sup>[<a href="#ref1">1</a>]</sup>. Additional post-transcriptional regulation may
 			also occur by non-coding microRNAs (miRNA), small interfering RNAs (siRNA),
 			small nuclear or nucleolar RNAs (snRNA and snoRNA), or other processes. mRNA
 			is capped, polyadenylated and exported from the nucleus to the ribosomes,
@@ -157,13 +159,12 @@ data.</p>
 			<p>Within a species, all members carry the same set of genes,
 		or functional units. The mouse reference genome contains an approximately
 		<a href="<!--#include file='include/mgihome_url.html'-->homepages/stats/all_stats.shtml">
-		24,500 protein-coding genes</a> and was fully sequenced in 2002 <a href="http://www.ncbi.nlm.nih.gov/pubmed/12466850">
-		(Mouse Genome Sequencing Consortium <i>et al.</i>, 2002, Nature)</a>. Structurally,
+		24,500 protein-coding genes</a> and was fully sequenced in 2002 
+		<sup>[<a href="#ref2">2</a>]</sup>. Structurally,
 		these are distributed across 19 pairs of autosomes, plus X and Y sex chromosomes.
 		For the sake of comparison, humans have 23 pairs of chromosomes (22 autosomes
-		plus XX or XY) which contain an estimated 20,687 protein-coding genes
-		<a href="http://www.nature.com/nature/journal/v489/n7414/full/nature11247.html">
-		(The ENCODE Project Consortium, 2012, Nature)</a>. Over 90% of the mouse and
+		plus XX or XY) which contain an estimated 20,687 protein-coding genes<sup>
+		[<a href="#ref3">3</a>]</sup>. Over 90% of the mouse and
 		human genomes can be aligned into regions of shared synteny, which is to say,
 		blocks where homologous genes are conserved in the same relative order,
 		indicative of shared common ancestry. At the gene level, a mouse homolog has
@@ -349,6 +350,7 @@ across multiple generations or different laboratories.</p>
 				and progeny are identical.
 				<br>
 				<br>
+				<br>
 			</div>
 			<div id=fig4 class="figcaption" style="padding:2px">
 				<br>
@@ -379,7 +381,7 @@ inbred lines will carry a different set of fixed alleles and exhibit different p
 characteristics as a result. Choosing the right inbred strain for a particular
 experiment or control is an important consideration when working with laboratory mice.</p>
 <p>Having a well characterized and consistent background is also a valuable tool
-when it comes to examining the effects of a <a href="#targeted">targeted allele</a> or
+when it comes to examining the effects of a <a href="#alleles">targeted allele</a> or
 manipulation. By comparing the phenotype of the targeted line to its parental strain,
 it is possible to determine the which biological systems have been affected and draw
 inferences about the function of the single, modified gene.</p>
@@ -397,7 +399,8 @@ displayed on this page, you may also be able to view it
 <div id=nomenflash style="margin-left:30px">
 <object border="1" type="application/x-shockwave-flash" data="images/nomenclature.swf" width="500" height="368">
 <param name="movie" value="images/nomenclature.swf" />
-</object>
+</object><br>
+Used with permission from <a href="http://www.jax.org/">The Jackson Laboratory</a>.
 </div>
 
 <br>
@@ -405,7 +408,7 @@ displayed on this page, you may also be able to view it
 <p>The most commonly used inbred strain is C57BL/6J which was also the strain
 sequenced to generate the “reference” mouse genome. For more information on specific
 inbred strains, see the strain detail pages on the <a href="http://phenome.jax.org/db/q?rtn=strains/home">
-Mouse Phenome Database.</a></p>
+Mouse Phenome Database</a><sup>[<a href="#ref4">4</a>]</sup>.</p>
 </div>
 
 <div class="clear"></div>
@@ -434,7 +437,7 @@ cassette into embryonic stem (ES) cells. The cellular machinery within a cell pa
 vector&#8217;s homologous arms to the mouse&#8217;s endogenous sequence and if recombination occurs
 on both sides, the cassette will be introduced into the germ line. These ES cells can
 be selected and transplanted back into a pseudopregnant female mouse where they will grow
-and develop. The illustration in <i>(C)</i> shows a heterozygous targeted allele.</p>
+and develop. The illustration in <i>Figure 5 (C)</i> shows a heterozygous targeted allele.</p>
 
 </div>
 
@@ -449,7 +452,7 @@ and develop. The illustration in <i>(C)</i> shows a heterozygous targeted allele
 			<a href="images/intro_homologous.jpg" target="_blank">
 			<img style="padding:6px" src="images/intro_homologous.jpg" alt="homologous recombination" border="1"
 			height="391px" width="350px"></a></td>
-		<td>
+		<td valign="top">
 			<div id="fig5" class="figcaption" style="padding:10px"><b>Figure 5. 
 			Generation of targeted alleles by homologous recombination.</b> 
 			Targeted alleles of all kinds can be generated in
@@ -490,19 +493,19 @@ This may be a single, specific engineered substitution designed to duplicate a m
 found in human clinical cases (ex. 
 <a href="<!--#include file='include/fewi_url.html'-->accession/MGI:3767672">
 M390R in Bbs1<sup>tm1Vcs</sup></a>), a recombinase recognition sequence to allow <i>in
-vivo</i> genome manipulation, or the introduction of a complete cDNA from another species,
+vivo</i> genome manipulation (LoxP, FRT), or the introduction of a complete cDNA from another species,
 which is known as a transgene.</p>
 
 </div>
 
-<div id="figure4">
+<div id="fig6">
 <table>
 <col width=50%>
 <col width="405">
 	<tr>
-		<td>
-			<div id="fig5" class="figcaption" style="padding:10px">
-	  		<b><p>Figure 6. Four of the most common targeted allele types.</b> The top
+		<td valign="top">
+			<div id="fig6" class="figcaption" style="padding:10px">
+	  		<b>Figure 6. Schematic for four of the most common targeted allele types in mice.</b> The top
 	  		row depicts the endogenous (or unaltered) allele where exons are properly spliced
 		  	(see dashed lines) and a full length, functional protein is produced. Below,
 		  	 a knock-out allele (KO) uses homologous recombination to replace certain
@@ -523,13 +526,114 @@ which is known as a transgene.</p>
 		  	transgene, which is when foreign (non-mouse) DNA is introduced into the germ
 		  	line with the intention or producing a new, functional (non-mouse origin) protein.</p></div>
 		</td>
-  		<td>
+  		<td valign="top">
   			<a href="images/intro_targetedalleles.png" target="_blank">
 			<img style="padding:6px" src="images/intro_targetedalleles.png" width="400" height="407" 
 			alt="most common targeted allele types" border="1"></a>
 		</td>
 	</tr>
-<table>
+</table>
+<br>
+<b>Table 1. Common engineered allele types.</b> Several of the most common engineered 
+alleles used by the research community and included in MGI. Other allele types exist, as 
+well as combinations and variations on those indicated below<br>
+<br>
+<table border="2" cellpadding="8">
+<col width="110">
+	<th><font color="#002255">Allele type</font></th>
+	<th><font color="#002255">Generation</font></th>
+	<th><font color="#002255">Description</font></th>
+	<th><font color="#002255">Most common uses (others may apply)</font></th>
+	<tr>
+		<td>Knockout</td>
+		<td>Targeted, homologous recombination</td>
+		<td>Replaces the coding region of a known gene (complete gene or specific exons) 
+			with a targeting cassette. Complete loss-of-function.</td>
+		<td>Used to study function of the targeted gene by comparison to non-targeted 
+			controls.</td> 
+	</tr>
+	<tr>
+		<td>Knock-in (nucleotide substitution)</td>
+		<td>Targeted, homologous recombination</td>
+		<td>Replaces the coding region of a known gene with an alternative sequence of 
+			the same gene containing a specific mutation</td>
+		<td>Used to study the phenotypic impact of this variation, often pulled from 
+			human clinical observations. Functional impact is allele specific.</td>
+	</tr>
+	<tr>
+		<td>Knock-in (insertion)</td>
+		<td>Targeted, homologous recombination</td>
+		<td>A targeting construct is used to introduce a new variant into a specific locus. 
+			May be an alternative variant of the targeted gene or a complete new cDNA</td>
+		<td>Used to study the role of the variant and/or express the desired variant or new 
+			gene product, <i>ex.</i> humanized mice or a recombinase under the control of 
+			an endogenous promoter.</td>
+	</tr>
+	<tr>
+		<td>Floxed</td>
+		<td>Targeted, homologous recombination</td>
+		<td>LoxP recombinase recognition sequences are introduced flanking a targeted gene, 
+			exon or portion of a construct</td>
+		<td>Co-expression of cre recombinase in the same cell will remodel the flanked region 
+			according to the directionality of the LoxP sites. In the absence of cre 
+			the gene is typically expected to function as wild type. See section on <a href="#cre">
+			Conditional Alleles and cre-Lox</a>. Permits tissue specific excision or expression of a gene. Allows study of genes 
+			required for developmental viability that would be embryonic lethal in a knock-out.</td>
+	</tr>
+	<tr>
+		<td>FRT</td>
+		<td>Targeted, homologous recombination</td>
+		<td>FRT recombinase recognition sequences are introduced flanking a targeted gene, 
+			exon or portion of a construct</td>
+		<td>Similar to floxed, but sensitive to co-expression with Flp recombinase (flippase).</td>
+	</tr>
+	<tr>
+		<td>Targeted Reporter</td>
+		<td>Targeted, homologous recombination</td>
+		<td>In frame insertion of a reporter (GFP, LacZ, luciferase, etc) gene into a known 
+			locus following some regulatory sequence. May disrupt an endogenous gene though 
+			this is not required.</td>
+		<td>Used to monitor transcriptional activity of an endogenous promoter <i>in vivo</i>. 
+			If used as a tag on a functional protein, may be used to study protein localization or 
+			cell trafficking of the gene product</td>
+	</tr>
+	<tr>
+		<td>Gene trap</td>
+		<td>Random insertion</td>
+		<td>A known cassette with a selectable marker is randomly incorporated into 
+			the germ line. See the <a href="http://www.genetrap.org/tutorials/overview.html">
+			International Gene Trap Consortium</a></td>
+		<td>High throughput gene disruption. Often cassettes have reporter function 
+			allowing researchers to determine transcriptional activation of the 
+			endogenous promoter once the site of insertion has been determined</td>
+	</tr>
+	<tr>
+		<td>Transgenic (cre/Flp)</td>
+		<td>typically random insertion, may be targeted</td>
+		<td>Introduction of cre or Flp recombinase genes under the 
+			control of a promoter</td>
+		<td>Used to specify which tissues will express a site-specific recombinase enzyme, 
+			and therefore when and/or where within an organism a floxed/FRT gene will be 
+			remodeled. See section on <a href="#cre">Conditional Alleles and cre-Lox</a></td>
+	</tr>
+	<tr>
+		<td>Transgenic (expressed)</td>
+		<td>typically random insertion, may be targeted</td>
+		<td>Introduction of a foreign-origin gene for expression in the mouse</td>
+		<td>Expression of a non-mouse protein of interest.</td>
+	</tr>
+	<tr>
+		<td>Transgenic (reporter, cre)</td>
+		<td>typically random insertion, may be targeted</td>
+		<td>Introduction of a reporter gene with a loxP-flanked STOP codon before the 
+			coding sequence</td>
+		<td>Allows researchers to assess the transgene activity of a cre recombinase 
+			transgenic line. Co-expression with cre removes the STOP codon and activates 
+			the reporter, marking tissues where cre activity is present. See <a href="http://cre.jax.org/crereporters.html">
+			more</a>. </td>
+	</tr>
+</table>
+
 </div>
 <br>
 <div class="clear"></div>
@@ -575,7 +679,7 @@ and the floxed gene will remain functionally intact. </p>
 
 <table>
 	<tr>
-	<td><a href="images/intro_creLox.png" target="_blank">
+	<td valign="top"><a href="images/intro_creLox.png" target="_blank">
 		<img style="padding:6px" src="images/intro_creLox.png" width="400" height="366" 
 		alt="tissue specific excision, cre lox" border="1"></a></td>
 	<td valign="top"><div id="fig7" class="figcaption" style="padding:10px"><b>Figure 7. </b>
@@ -589,8 +693,8 @@ cre mouse to a reporter strain which carries a loxP-flanked STOP cassette in fro
 reporter gene (lacZ or GFP, for example). If cre recombinase is active in a tissue, the 
 STOP will be excised and the reporter expressed.</p>
 <p>To locate a cre recombinase strain that expresses in a particular tissue type, or is 
-under the control of a specific known promoter, use MGI's <a href="<!--#include file='include/mgihome_url.html'-->recombinase.shtml">Recombinase (cre) 
-Portal</a>, or search using the <a href="<!--#include file='include/mgihome_url.html'-->searches/allele_form.shtml">
+under the control of a specific known promoter, use MGI's <a href="<!--#include file='include/mgihome_url.html'-->../recombinase.shtml">Recombinase (cre) 
+Portal</a>, or search using the <a href="<!--#include file='include/mgihome_url.html'-->../searches/allele_form.shtml">
 Phenotypes, Alleles and Disease Models query form</a>, specifying <i>"transgenic (Cre/Flp)"</i> 
 in the <i>Categories</i> section.</p>
 </div>
@@ -603,20 +707,96 @@ findings under similar headings, so that researchers do not need to browse multi
 keywords at different levels of precision.</p>
 MGI annotates data using three major vocabularies:
 <ol>
-	<li>the <a href="<!--#include file='include/mgihome_url.html'-->searches/MP_form.shtml">
-		Mammalian Phenotype Ontology</a></li>
-	<li>the <a href="<!--#include file='include/mgihome_url.html'-->searches/GO_form.shtml">
+	<li>The <a href="<!--#include file='include/mgihome_url.html'-->../searches/MP_form.shtml">
+		Mammalian Phenotype (MP) Ontology</a><br>
+		Provides standardized terms for annotating mammalian phenotypic data. It is currently in 
+		use by MGI and the Rat Genome Database (<a href="http://rgd.mcw.edu/">RGD</a>). 
+		The <a href="<!--#include file='include/mgihome_url.html'-->other/homepage_usingMGI.shtml#phenoTable">
+		phenotype tables</a> on allele detail pages and <a href="<!--#include file='include/mgihome_url.html'-->other/hmdc_tour.shtml#HomologyPDtab">
+		the affected physiological systems and phenotypes</a> (left) in the Human-Mouse:Disease 
+		Connection results are populated by MP terms. Highest level terms represent 
+		physiological systems (for example, "cardiovascular system", "growth/size", "renal/urinary",
+		"reproductive", "tumorigenesis", etc), with hierarchically organized child terms 
+		for increasingly specific annotations.<br>
+		<i><b>Citation:</b></i> Smith CL, Goldsmith CA, Eppig JT. The Mammalian Phenotype Ontology 
+		as a tool for annotating, analyzing and comparing phenotypic information. <i>Genome 
+		Biology</i>. 2005;6(1):R7. PMID: <a href="http://www.ncbi.nlm.nih.gov/pubmed/?term=15642099">15642099</a><br>
+		<br>		
+		</li>
+	<li>The <a href="<!--#include file='include/mgihome_url.html'-->../searches/GO_form.shtml">
 		Gene Ontology</a> (developed as part of the <a href="http://www.geneontology.org/GO.doc.shtml">
 		Gene Ontology consortium</a>)
 		<ul>
-			<li>Cellular component</li>
-			<li>Biological process</li>
-			<li>Molecular function</li>
+			<li><b>Cellular component:</b> the parts of a cell or its extracellular environment</li>
+			<li><b>Biological process:</b> operations or sets of molecular events with defined 
+			beginning and end, pertinent to the functioning of integrated living units - 
+			cells, tissues, organs and organisms</li>
+			<li><b>Molecular function:</b> the elemental activities of a gene product at the molecular 
+			level, such as binding or catalysis</li>
 		</ul>
+		Provides standardized terms for a range of gene product properties and describes 
+		normal behavior of these gene products within a cellular context. GO is species 
+		neutral and aimed to be applicable to a wide range from prokaryotes to 
+		complex multicellular organisms. In MGI, GO terms associated with a gene product can be 
+		found in the <a href="<!--#include file='include/mgihome_url.html'-->other/homepage_usingMGI.shtml#function">
+		Gene Ontology (GO) classifications ribbon </a> on gene detail pages.<br>
+		<i><b>Citation:</b></i> Ashburner M, Ball CA, Blake JA, Botstein D, Butler H, et al. 
+		Gene ontology: tool for the unification of biology. The Gene Ontology Consortium. 
+		<i>Nature Genetics</i> 2000 May;25(1):25-9. PMID: <a href="http://www.ncbi.nlm.nih.gov/pubmed/?term=10802651">
+		10802651</a><br>
+		<br>
 		</li>
-	<li>the <a href="<!--#include file='include/mgihome_url.html'-->anatdict_form.shtml">
-		Mouse Anatomical Dictionary</a></li>
+	<li>The <a href="<!--#include file='include/mgihome_url.html'-->../searches/anatdict_form.shtml">
+		Mouse Anatomical Dictionary</a> and <a href="<!--#include file='include/mgihome_url.html'-->../searches/AMA_form.shtml">
+		Adult Mouse Anatomical Dictionary</a>.<br>
+		Provides standardized terms for tissues, organs and anatomical structures found in 
+		the mouse throughout embryonic development and as an adult. The Anatomical Dictionary 
+		is part of the <a href="http://www.emouseatlas.org/emap/home.html">e-Mouse Atlas Project 
+		(EMAP)</a>. Mouse development is divided into Theiler Stages (TS) during which specific 
+		processes are expected to occur. Stages 1-26 are embryonic, stage 27 is perinatal and 
+		stage 28 is postnatal (adult).<br>
+		<i><b>Citations:</i></b> Hayamizu TF, Wicks MN, Davidson DR, Burger A, Ringwald M, Baldock RA. 
+		EMAP/EMAPA ontology of mouse developmental anatomy: 2013 update. <i>Journal of 
+		Biomedical Semantics</i> 2013 Aug 26;4(1):15 PMID: <a href="http://www.ncbi.nlm.nih.gov/pubmed/23972281">
+		23972281</a><br>
+		Hayamizu TF, Mangan M, Corradi JP, Kadin JA, Ringwald M. <i>Genome Biology</i> 
+		2005;6(3):R29 PMID: <a href="http://www.ncbi.nlm.nih.gov/pubmed/15774030">15774030</a> 
+		</li>
 </ol>
+</div>
+<h2>References</h2>
+<div id="ref1">
+1. Baralle D, Baralle M. Splicing in action: assessing disease causing sequence changes.
+<i>J Med Genet.</i> 2005 Oct;42(10):737-48. PMID:<a href="http://www.ncbi.nlm.nih.gov/pubmed/16199547">
+16199547</a>
+<br>
+<br>
+</div>
+<div id="ref2">
+2. Mouse Genome Sequencing Consortium, Waterston RH, Lindblad-Toh K, Birney E, Rogers J, 
+Abril JF, Agarwal P, <i>et al.</i> Initial sequencing and comparative analysis of the 
+mouse genome. <i>Nature.</i> 2002 Dec 5;420(6915):520-62. PMID:<a href="http://www.ncbi.nlm.nih.gov/pubmed/12466850">
+12466850</a>
+<br>
+<br>
+</div>
+<div id="ref3">
+3. ENCODE Project Consortium, Bernstein BE, Birney E, Dunham I, Green ED, Gunter C, Snyder M.. 
+An integrated encyclopedia of DNA elements in the human genome. <i>Nature</i> 2012 Sep 
+6;489(7414):57-74. PMID: <a href="http://www.ncbi.nlm.nih.gov/pubmed/?term=22955616">
+22955616</a>
+<br>
+<br>
+</div>
+<div id="ref4">
+4. Grubb SC, Bult CJ, Bogue MA. Mouse Phenome Database. <i>Nucleic Acids Res.</i> 2013 Nov 15.
+PMID:<a href="http://www.ncbi.nlm.nih.gov/pubmed/?term=24243846">24243846</a>
+</div>
+<br>
+<br>
+</div>
+
+
 
 <!--#include file='include/templateBlankBodyStop.html'-->
 </body>
