@@ -17,10 +17,10 @@
       <table class="toc" width="100%">
 	<tr><td>
             <ul>
-               <li><a href="#MolecRes">Molecular Resources</a></li> | 
                <li><a href="#mouse_res">Mouse Resources</a></li> | 
+               <li><a href="#mammal_model">Model Organism Sites</a></li> | 
                <li><a href="#Misc">Miscellaneous Useful Tools</a></li> | 
-               <li><a href="#mammal_model">Mammals and Model Organisms</a></li>
+               <li><a href="#MolecRes">Molecular Resources</a></li> 
              </ul>
             </td>
          </tr>
@@ -28,54 +28,19 @@
         </table>
     <!-- end TOC table -->
 
-	</td></tr>
-
-	<tr><td>
-
+    <tr><td>
 <!-- section1 table -->
-   <a name="MolecRes"></a>
-<table class="outline" width="100%">
-			<tr>
-				<td class="enhance">
-					Molecular Resources
-				</td>
-			</tr>
-			<tr>
-
-				<td>
-					<dl class="linkedList">
-			            	<dt>BACs</dt>
-<dd><a href="http://bacpac.chori.org/">BACPAC Resources Center (BPRC)</a> at Children's Hospital Oakland Research Institute (CHORI)</dd>
-<dd>BAC/PAC products at <a href="http://clones.invitrogen.com/cloneinfo.php?clone=bacpac">Invitrogen</a></dd>
-<br>
-<dt>IMAGE clones </dt>
-<dd><a href="http://www.imageconsortium.org">Integrated Molecular Analysis of Genome Expression</a> (IMAGE) Consortium</dd>
-<dd><a href="http://www.imageconsortium.org/?i=distributors">Distributors</a> of IMAGE clones</dd>
-<br>
-<dt>MGC clones </dt>
-<dd><a href="http://mgc.nci.nih.gov/">Mammalian Gene Collection</a> (MGC) Project</dd>
-<dd><a href="http://mgc.nci.nih.gov/Info/Buy">Distributors</a> of MGC clones</dd>
-</dl>
-				</td>
-			</tr>
-</table>
- <!--end of section1 table -->
-
-	</td></tr>
-
-        <tr><td>
-<!-- section2 table -->
 		<a name="mouse_res"></a>
 <table class="outline" width="100%">
 
-			<tr>
-				<td class="enhance">
-					Mouse Resources
-				</td>
-			</tr>
-			<tr >
-				<td>
-					<dl class="linkedList"><dt>Find Mice</dt>
+		<tr>
+			<td class="enhance">
+				Mouse Resources
+			</td>
+		</tr>
+		<tr>
+			<td>
+				<dl class="linkedList"><dt>Find Mice</dt>
 <dd><a href="<!--#include file='include/imsr_home_url.html'-->">International Mouse Strain Resources (IMSR)</a>: database of   inbred, mutant, and genetically engineered mice and ES cell lines available globally. See list of 
 <a href="<!--#include file='include/imsr_home_url.html'-->fetch?page=imsrStrainRepositories">worldwide participating repositories</a>. </dd>
 <dd>Commercial vendors: <a href="http://www.criver.com/en-US/TrainEducation/RMS/Species/Pages/home.aspx">Charles River Laboratories, Inc.</a>,
@@ -94,45 +59,18 @@
 				</td>
 			</tr>
 </table>
-<!-- end of section2 table -->
+<!-- end of section1 table -->
 
-	</td></tr>
-
-<tr><td>
-<!-- section3 table -->
-		<a name="Misc"></a>
-<table class="outline" width="100%">
-
-			<tr>
-				<td class="enhance">
-					Miscellaneous Useful Tools
-				</td>
-			</tr>
-			<tr >
-				<td>
-					<dl class="linkedList"><dt><a href="http://www.healthsystem.virginia.edu/internet/transgenic-mouse/ears.cfm">Ear punch codes</a>: standard pattern for ear punch numbering in mice</dt>
-<dt><a href="http://www.pathology.washington.edu/research/cytopages/spreads/mouse_g_B2.gif">G-banded Mouse Karyotype</a> Image (University of Washington)</dt>
-<dt><a href="http://www.informatics.jax.org/mgihome/lists/lists.shtml">Mouse Electronic Bulletin Board</a> at MGI </dt>
-</dl>
-
-
-				</td>
-			</tr>
-</table>
-<!-- end of section3 table -->
-		
- 	</td></tr>
+</td></tr>
 
 <tr><td>
-
-
-<!-- section4 table -->
+<!-- section2 table -->
 		<a name="mammal_model"></a>
 <table class="outline" width="100%">
 
 			<tr>
 				<td class="enhance">
-					Mammals / Model Organism Sites
+					Model Organism and General Web Resources
 				</td>
 			</tr>
 			<tr >
@@ -163,28 +101,76 @@
 <dd><a href="http://zfin.org/">Zebrafish</a> - The Zebrafish Model Organism Database</dd>
 <br>
 <dt>Multi-species Animal Sites: </dt>
-<dd><a href="http://www.thearkdb.org/">Animal Genome Database (ArkDB)</a> (cat, chicken, cow, deer, duck, horse, pig, quail, salmon, sea bass, sheep, turkey)</dd>
+<dd><a href="http://www.thearkdb.org/">Animal Genome Database (ArkDB):</a> (cat, chicken, cow, deer, duck, horse, pig, quail, salmon, sea bass, sheep, turkey)</dd>
 <dd><a href="http://www.genome.iastate.edu/">U.S. Livestock Species Genome Projects:</a> (cattle, chicken, horse, sheep, swine, aquaculture)</dd>
-
 <dd><a href="http://omia.angis.org.au/">Online Mendelian Inheritance in Animals (OMIA)</a>: inherited disorders and traits in 135 animals other than human and mouse</dd>
+<dt>1500 Biological Databases:</dt>
+<dd><a href="http://www.oxfordjournals.org/nar/database/a/">Compilation</a> by the journal of Nucleic Acids Research: (other species, diseases, DNA, RNA, and protein resources)</dd>
 
 </dl>
 
-		</td>
-			</tr>
-			
+	</td>
+	</tr>
 </table>
-	</td></tr>
+<!-- end of section2 table -->
+</td></tr>
 
+<tr><td>
+<!-- section3 table -->
+		<a name="Misc"></a>
+<table class="outline" width="100%">
 
+			<tr>
+				<td class="enhance">
+					Miscellaneous Useful Tools
+				</td>
+			</tr>
+			<tr >
+				<td>
+					<dl class="linkedList"><dt><a href="http://www.healthsystem.virginia.edu/internet/transgenic-mouse/ears.cfm">Ear punch codes</a>: standard pattern for ear punch numbering in mice</dt>
+<dt><a href="http://www.pathology.washington.edu/research/cytopages/spreads/mouse_g_B2.gif">G-banded Mouse Karyotype</a> Image (University of Washington)</dt>
+<dt><a href="http://www.informatics.jax.org/mgihome/lists/lists.shtml">Mouse Electronic Bulletin Board</a> at MGI </dt>
+</dl>
+	</td>
+	</tr>
+</table>
+<!-- end of section3 table -->
+		
+ 	</td></tr>	
+	
+<tr><td>
+<!-- section4 table -->
+   <a name="MolecRes"></a>
+<table class="outline" width="100%">
+			<tr>
+				<td class="enhance">
+					Molecular Resources
+				</td>
+			</tr>
+			<tr>
+
+				<td>
+					<dl class="linkedList">
+			            	<dt>BACs</dt>
+<dd><a href="http://bacpac.chori.org/">BACPAC Resources Center (BPRC)</a> at Children's Hospital Oakland Research Institute (CHORI)</dd>
+<dd>BAC/PAC products at <a href="http://clones.invitrogen.com/cloneinfo.php?clone=bacpac">Invitrogen</a></dd>
+<br>
+<dt>IMAGE clones </dt>
+<dd><a href="http://www.imageconsortium.org">Integrated Molecular Analysis of Genome Expression</a> (IMAGE) Consortium</dd>
+<dd><a href="http://www.imageconsortium.org/?i=distributors">Distributors</a> of IMAGE clones</dd>
+<br>
+<dt>MGC clones </dt>
+<dd><a href="http://mgc.nci.nih.gov/">Mammalian Gene Collection</a> (MGC) Project</dd>
+<dd><a href="http://mgc.nci.nih.gov/Info/Buy">Distributors</a> of MGC clones</dd>
+</dl>
+				</td>
+			</tr>
+</table>
+ <!--end of section4 table -->
+ </td></tr>
 </table>
 
 </div> 
 <!--#include file='include/templateBodyStop.html'--> 
 </body>
 </html>
-
-
-
-
- 
