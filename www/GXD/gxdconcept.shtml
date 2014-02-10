@@ -4,9 +4,15 @@
 <!--#include file='include/templateBodyStart.html'--> 
 
 <!-- Title Bar -->
-  <div id="titleBarWrapper">
-  <span class="titleBarMainTitle">Integration of Expression Data in the Gene Expression Database (GXD)</span>
-  </div> 
+  <div id="titleBarWrapperGxd">	
+	<div id="gxdLogoDiv">
+	<a href="../homepages/expression.shtml">
+	<img class="gxdLogo" src="<!--#include file='include/webshare_url.html'-->images/gxd_logo.png" height="75"></a>
+	</div>
+	<div id="gxdCenteredTitle">
+	  <span class="titleBarMainTitleGxd">Integration of Expression Data in the<br>Gene Expression Database (GXD)</span>
+	</div>
+</div>
 <!--titleBar-->
 
 <p>Different types of expression assays supply different but complementary information about gene products and their patterns of expression. <i>In situ</i> studies at the RNA and protein level provide detailed spatial expression information. Northern and Western blot analysis reveal the number and sizes of transcripts and proteins, respectively. Methods such as RNAse protection and RT-PCR can detect small amounts of and small differences in transcripts. The analysis of cDNA clones gives detailed structural data. Array-based expression methods provide large amounts of quantitative expression information. Only by combining the various types of expression data can we gain comprehensive insights into the expression profiles of transcripts and proteins.

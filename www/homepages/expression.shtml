@@ -14,35 +14,32 @@
 <!-- start body content -->
 
 <!-- mini homepage header section -->
-<table class="sideMargin marginTop" border="0" cellspacing="0" cellpadding="0">
-	<tr>
-		<td align="center" valign="middle">
-			<span class="homePageTitle">
-				Gene Expression Database (GXD)
-			</span>
-			<br>
-			<span class="homePageSubTitle">
-			   GXD collects and integrates the  gene expression information in MGI. Its primary
-			   emphasis is on endogenous gene expression during  mouse development.
-			</span>
-		</td>
-		<td>
-			<div class="sideMargin marginBottom blueBorder pad5">
-			    <a href="<!--#include file='include/faq_url.html'-->GXD_imgpop.shtml" onClick='javascript:openFaqWindow("GXD_imgpop.shtml"); return false;'>
+<br>
+<center><img src="<!--#include file='include/mgihome_url.html'-->homepages/images/gxd_logo.png"></a></center><br>
 
-		<img class="outlineImg" src="<!--#include file='include/mgihome_url.html'-->homepages/images/GXD.jpg"></a>
-        	</div>
-		</td>
-	</tr>
-</table>
+<center><b>GXD collects and integrates the  gene expression information in MGI.<br> Its primary emphasis is on endogenous gene expression during  mouse development.</b></center><br>
+<style type="text/css">
+.goldbar {
+text-align: left;
+font-weight: bold;
+font-size: 12px;
+color: #000;
+white-space: nowrap;
+border: 1px solid #EBCA6D;
+background-color: #EBCA6D;
+}
+.goldBorder {
+border: 1px solid #EBCA6D;
+}
+</style>
 
 
 <table class="sideMargin" border="0" cellspacing="0" cellpadding="0">
 
 	<tr>
 		<td rowspan="2" width="50%" valign="top">
-			<div class="blueBorder rightCenterMargin">
-				<div class="boxTitle">Access Data</div>
+			<div class="goldBorder rightCenterMargin">
+				<div class="goldbar">Access Data</div>
 				<div class="boxBG pad5">
 					<dl>
 						<dt>Search for detailed gene expression assay results.</dt>
@@ -55,7 +52,7 @@
 						<dd class="searchList"><a class="small homeLink" href="<!--#include file='include/java_url.html'-->WIFetch?page=expressionQFexpanded">Gene Expression Data Expanded Query</a></dd> -->
 
 						<dt class="whatList">Search or browse for anatomical structures; includes links to associated expression results.</dt>
-						<dd class="searchList"><a class="small homeLink" href="<!--#include file='include/wi_url.html'-->searches/anatdict_form.shtml">Mouse Anatomical Dictionary Browser</a></dd>
+						<dd class="searchList"><a class="small homeLink" href="<!--#include file='include/fewi_url.html'-->vocab/gxd/anatomy/">Mouse Developmental Anatomy Browser</a></dd>
 
 						<dt class="whatList">Search the Edinburgh Mouse Atlas for anatomical terms and query for associated expression data.</dt>
 						<dd class="searchList"><a class="small homeLink" href="http://www.emouseatlas.org/emap/ema/section_browser/SectionBrowser.html">EMAGE Anatomical Section Browser</a></dd>		
@@ -66,8 +63,8 @@
 			</div>
 		</td>
 		<td width="50%" valign="top">
-			<div class="blueBorder marginBottom leftCenterMargin">
-				<div class="boxTitle">FAQs</div>
+			<div class="goldBorder marginBottom leftCenterMargin">
+				<div class="goldbar">FAQs</div>
 				<div class="boxBG pad5">
 					<dl class="boxList">
 						<dt>How do I...</dt>
@@ -91,8 +88,8 @@
 	</tr>
 	<tr>
 		<td width="50%" valign="top">
-			<div class="blueBorder leftCenterMargin statList">
-				<div class="boxTitle">
+			<div class="goldBorder leftCenterMargin statList">
+				<div class="goldbar" style="height: 15px;">
 					<div class="left">GXD Includes</div>
 					<div class="right small"><!--#include file='include/stats_date.shtml'--></div>
 				</div>
@@ -104,16 +101,16 @@
 		</td>
 	</tr>
 </table>
-<div class="boxWide blueBorder marginBottom">
-	<div class="boxTitle">
+<div class="boxWide goldBorder marginBottom">
+	<div class="goldbar" style="height: 15px;">
 		<span class="left">Gene Expression News</span>
-		<span class="right small">June 20, 2013</span>
+		<span class="right small">March 6, 2014</span>
 	</div>
 	<div class="boxBG pad5 small">
     <ul>
 
+<li>Enhanced <a href="<!--#include file='include/fewi_url.html'-->vocab/gxd/anatomy/">Mouse Developmental Anatomy Browser</a>...</li>
 <li>GXD has made it easier to view and search for its expression images. An images tab has been added to the GXD search return, allowing users to search for expression images by using all the parameters available on the Gene Expression Data Query Form. Further, these images are now included on the assay detail pages, so they can be viewed together with their annotated results. </li>
-
 <li>The <a href="<!--#include file='include/fewi_url.html'-->gxd">Differential Expression Search</a>, present as a tab on the standard GXD query form, allows biologists to search for genes that are expressed in some anatomical structures but not others and/or in some developmental stages but not others. Formerly named The Gene Expression Data Expanded Query, this tool has been streamlined and clearly delineates the different search capabilities. The mechanisms behind the differential searches have been re-designed to allow for speedier returns and the search return now provides tabbed data summaries that are sortable and interactive.</li>
 
 <!--<li>The <a href="<!--#include file='include/fewi_url.html'-->gxd">Gene Expression Data Query</a> form has been re-designed to add new search functions and make it easier to use. In addition to gene function (Gene Ontology) terms, you can now use phenotype or disease terms to define gene sets of interest in expression searches.  Auto fill lists for these categories and for anatomical structure searches make it easier to find the appropriate search terms. In addition to Theiler stage, age is now available as a search parameter.</li>-->
@@ -134,6 +131,25 @@
     order of the table and div tags is very specific to avoid some
     flickering in IE.-->
 <table width="100%" cellpadding="0" cellspacing="0" border="0"><tr><td>
+<style>	
+.gxdcontentstyle {
+border: 1px solid #EBCA6D;
+margin-bottom: 1em;
+padding: 10px;
+background-color: #F9F9F9;
+color: #025;
+}
+.shadetabs li a{
+text-decoration: none;
+padding: 3px 7px;
+margin-right: 3px;
+border-top: 1px solid #EBCA6D;
+border-right: 1px solid # EBCA6D;
+border-left: 1px solid # EBCA6D;
+border-bottom-style:none;
+background: white url(images/shadeGoldGray.gif) top left repeat-x;
+}
+</style>
 <div class="boxWide marginBottom">
 	<ul id="gxdtab" class="shadetabs">
 		<li><a href="<!--#include file='include/mgihome_url.html'-->homepages/tabContents/GXD_About.shtml" rel="ajaxcontentarea">About GXD</a></li>
@@ -143,7 +159,7 @@
 		<li><a href="<!--#include file='include/mgihome_url.html'-->homepages/tabContents/GXD_Collaborators.shtml" rel="ajaxcontentarea">Collaborators</a></li>
 		<li><a href="<!--#include file='include/mgihome_url.html'-->homepages/tabContents/GXD_Resources.shtml" rel="ajaxcontentarea">Other Links</a></li>
 	</ul>
-	<div id="gxdcontentarea" class="contentstyle">
+	<div id="gxdcontentarea" class="gxdcontentstyle">
 		<!--#include file='tabContents/GXD_SendData.shtml'-->
 	</div>
 

@@ -3,9 +3,16 @@
 <!--#include file="include/templateBodyStart.html"-->
 
 <!-- Title Bar -->
-<div id="titleBarWrapper">
- <span class="titleBarMainTitle">Submitting expression data to the Gene Expression Database (GXD)</span>
-</div> <!--titleBar-->
+  <div id="titleBarWrapperGxd">	
+	<div id="gxdLogoDiv">
+	<a href="../../homepages/expression.shtml">
+	<img class="gxdLogo" src="<!--#include file='include/webshare_url.html'-->images/gxd_logo.png" height="75"></a>
+	</div>
+	<div id="gxdCenteredTitle">
+	  <span class="titleBarMainTitleGxd">Submitting expression data to the <br>Gene Expression Database (GXD)</span>
+	</div>
+</div>
+<!--titleBar-->
 
 <style type="text/css">
 h3.test1{ font-style: bold 
@@ -163,7 +170,7 @@ border: 1px solid black;
 <b>Description of Expression Results</b><br>
 <p>When coding your expression data, we will rely on your descriptions of the assay results.  We will not interpret your staining patterns, bands, etc.  Therefore, please describe the expression results obtained in each image. This can be done in the form of a conventional figure legend. Or you can provide the information in tabular form by specifying the anatomical structures examined, the level of expression seen in those structures (e.g. present, absent, weak, strong), and additional descriptions of the staining that you consider to be valuable (for example, staining was seen in the most anterior portion of the structure). If your description refers to several images, you must clearly indicate which expression results are shown in which images.</p>
 
-<p>Please note that as part of the entry process, we will map your expression results to structures from the Anatomical Dictionary. Of course, you are welcome to use terms from the <A HREF="<!--#include file='include/wi_url.html'-->searches/anatdict_form.shtml" target="_blank">Anatomical Dictionary</A> for your descriptions.
+<p>Please note that as part of the entry process, we will map your expression results to structures from the Anatomical Dictionary. Of course, you are welcome to use terms from the <A HREF="<!--#include file='include/fewi_url.html'-->vocab/gxd/anatomy/" target="_blank">Mouse Developmental Anatomy Browser</A> for your descriptions.
 
 
 </P>
