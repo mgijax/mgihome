@@ -3,9 +3,9 @@
 <title>MGI-Web Browser Compatibility for the Mouse Genome Informatics database resource</title>
 
  
-  <meta name="description" content="MGI-verified compatiblilty for operating systems, web browser versions, javascript, colors, and monitor screen resolutions." />
+  <meta name="description" content="MGI-verified compatiblilty for operating systems, web browser versions, javascript." />
 
-  <meta name="keywords" content="MGI, mgi, mice, mouse, murine, mus musculus, gene, genome, genomic, operationg system, javascript, cascading style colors, screen resolution, screen area, internet explorer, firefox, safari, microsoft windows, apple macintosh" />
+  <meta name="keywords" content="MGI, mgi, mice, mouse, murine, mus musculus, gene, genome, genomic, operating system, javascript, internet explorer, firefox, safari, chrome, microsoft windows, mac, apple macintosh" />
 
   <meta name="robots" content="NOODP" />
   <meta name="robots" content="NOYDIR" />
@@ -13,6 +13,7 @@
 <link rel="stylesheet" type="text/css" href="<!--#include file="include/stylesheet.html"-->" />
 
 <!--#include file='include/templateBodyStart.html'-->
+
 <!-- Title Bar -->
   <div id="titleBarWrapper">
   <span class="titleBarMainTitle"> Web Browser Compatibility</span>
@@ -27,9 +28,9 @@
 			<tr>
 				<td>
 					<ul>
-						<li><a href="#compat">System Compatibility</a> | </li>
-						<li><a href="#java">JavaScript</a> | </li>
-						<li><a href="#color">Colors</a> </li>
+						<li><a href="#browsers">Browsers</a> | </li>
+						<li><a href="#contact">Contact</a> | </li>
+						<!--<li><a href="#color">Colors</a> </li>-->
 						
 				</td>
 			</tr>
@@ -37,90 +38,25 @@
 	</td></tr>
 	<tr><td>
 		<!-- section1 table -->
-		<a name="compat"></a>
+		<a name="browsers"></a>
+		<table class="outline" width="100%">
+<tr><td>MGI works well with most browsers. We know of no issues with fairly recent versions of <a href="https://www.google.com/intl/en/chrome/">Chrome</a>, <a href="http://www.mozilla.org/en-US/firefox/new/?from=@">Firefox</a> or <a href="https://www.apple.com/safari/">Safari</a> browsers. Some of the more advanced features of MGI, MouseMine and JBrowse may not work properly with IE 8 or 9. 
+<p>For MGI features to perform as designed, JavaScript needs to be enabled. You can do this in your browser's Preferences (Mac) or Settings/Internet Options (PC). 
+</p></tr></td>
+</table>
+	</td></tr>
+	<tr><td>
+		<!-- section2 table -->
+		<a name="contact"></a>
 		<table class="outline" width="100%">
 			<tr>
-				<td class="enhance">
-					System Compatibility
-				</td>
-			</tr>
-			<tr><td>We test for compatibility with the following configurations at their default settings:
-
-<br><br>
-					<center>
-					<div class="blueBorder statList" style="width:400px;">
-						<div class="boxTitle">
-							<div class="left">Operating System</div>
-							<div class="center">Web Browser</div>
-						</div>
-						<div class="boxBG pad5">
-							<table align="center" cellpadding="3" cellspacing="0">
-							<tr>
-								<td width="!">Microsoft Windows&#174;; XP:</td>
-							 	<td>Internet Explorer&#174; 7.x</td>
-							</tr>
-							<tr>
-								<td width="!">&nbsp;</td>
-								<td>Firefox&#174; 3.x</td>
-							</tr>
-							 <!--<tr>
-								 <td width="!">&nbsp;</td>
-								 <td>Safari&#153; 3.x</td>
-							</tr>-->
-						
-						
-							<tr>
-								 <td width="!">Mac OS&#174; 10.4:&nbsp;</td>
-								 <td>Firefox&#174; 3.x.x</td>
-							</tr>
-							<tr>
-								 <td width="!">&nbsp;</td>
-								 <td>Safari&#153; 3.x.x </td>
-							</tr>
-						
-							</table>
-						</div>
-					</div>
-					</center>
-					<br>
-					Any other OS/browser configuration may not display as intended.
-				</td>
-			</tr>
-		</table>
+<tr><td>If you have an issue with one browser that goes away when you switch to different browser, please report this to our <a href="<!--#include file='include/mgihome_url.html'-->support/mgi_inbox.shtml" title="Contact user support">User Support</a> Group. </tr></td>
+</table>
 	</td></tr>
 
 	<tr><td>
-		<!-- section2 table -->
-		<a name="java"></a>
-		<table class="outline" width="100%">
-			<tr>
-				<td class="enhance" colspan="2">
-					JavaScript
-				</td>
-			</tr>
-			<tr>
-				<td colspan="2">
-					The MGI website uses JavaScript&reg; and cascading style sheets. For the best experience with
-					our web pages, make sure you have JavaScript enabled and have not disabled linked style sheets.
-				</td>
-			<tr>
-				<td>
-
-					<u>Note to Internet Explorer&reg; users:</u>
-						If you are using the highest security setting, JavaScript is disabled automatically. To enable
-						it, click Tools->Internet Options->Security->Custom Level.... Scroll toward the bottom of the
-						list and locate Scripting. Click Enable under Active Scripting.
-				</td>
-				<td>
-					<img class="right" src="images/enableJS.jpg" alt="IE javascript interface">
-				</td>
-			</tr>
-		</table>
-	</td></tr>
-
-	<tr><td>
-		<!-- section2 table -->
-		<a name="color"></a>
+		<!-- section3 table -->
+			<!--<a name="color"></a>
 		<table class="outline" width="100%">
 			<tr>
 				<td class="enhance">
@@ -130,15 +66,12 @@
 			<tr >
 				<td>We test background colors and text on color-blind subjects, and we use color-blindness simulators. However, you may have your own preferred colors, font sizes and so on; most modern web browsers allow you to create and apply a custom style sheet for that purpose.</td>
 			</tr>
-		</table>
+		</table>-->
 	</td></tr>
-
-
 
 </table>
 
 <!--body table-->
 </div>
-
+</table>
 <!--#include file='include/templateBodyStop.html'-->
-
