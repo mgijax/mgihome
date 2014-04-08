@@ -1,0 +1,294 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+	<title>MGI-Diagrams of IKMC primary and derivative alleles</title>
+	<meta name="description" content="MGI: the international database resource for the laboratory mouse, providing integrated genetic, genomic, and biological data for researching human health and disease." />
+  	<meta name="keywords" content="Mouse Genome Informatics, MGI, mgi, mgd, MGD, mice, nomenclature, IKMC nomenclature, mus musculus, murine, mouse, recombinase, transgene, knock-in, allele, phenotype" />
+  	
+  	<meta name="robots" content="NOODP" />
+  	<meta name="robots" content="NOYDIR" />
+  	
+</head>
+<body>
+<style type="text/css">
+
+</style>
+
+<!--#include file='include/templateHead.html'--> 
+<title>Diagrams of general structure of IKMC primary alleles and derivative alleles</title>
+
+<!--#include file='include/templateBodyStart.html'-->
+
+<!-- Title Bar -->
+
+<A NAME="top"></A><br></br>
+
+<div id="titleBarWrapper">
+  <span class="titleBarMainTitle">Diagrams of general structure of IKMC primary alleles and derivative alleles</span>
+  </div> 
+<!--titleBar-->
+
+<p>The IKMC (International Knockout Mouse Consortium) created a large resource of mutant ES cell lines using large-scale production pipelines. Alleles of certain types, made with defined vectors, were generated. These diagrams illustrate the most common of these constructs.
+</p>
+<p>See <a href="IKMCnomen.shtml">Nomenclature for mutant alleles generated in ES cell lines by the IKMC for details on nomenclature</a>.
+</p>
+<p>There were 5 primary classes of mutant alleles produced by the IKMC (all in ES cell lines). In some cases, derivative alleles can be generated from the primary allele. In addition, targeted cre knockin alleles are being made in conjunction with IKMC by the EUCOMMtools project.
+</p>
+<ol>
+	<li><a href="#trapped">Gene Trapped Alleles</a></li>
+	<li><a href="#reporter">Targeted Reporter-tagged Deletion Alleles</a></li>
+	<li><a href="#tm1a">Targeted Knockout First, Reporter-tagged Insertion with Conditional Potential (conditional-ready)</a></li>
+	<li><a href="#tm1e">Targeted Knockout First, Reporter-tagged Insertion NON-conditional</a></li>
+	<li><a href="#intron">Targeted Knockout First Alleles with Artificial Introns</a></li>
+	<li><a href="#cre">Targeted cre Knockin Alleles</a></li>
+</ol>
+
+<img src="images/SymbolKey.png" border="1" width="545" height="78" alt="Symbol Key">
+
+<h4><a name="trapped"></a><b>1. Gene Trapped Alleles.</b></h4>
+<p>
+<table>
+	<tr>
+		<td width=50%><u>1.1 Gene trapped alleles made by Texas A&M Institute for Genomic Medicine</u> for the IKMC program were of two types, differing in whether they carried a beta-geo or neo cassette.</td>
+		<td><img src="images/tigmGt.png" border="0" width="303" height="107" alt="TIGM Gene Traps"></td>
+	</tr>
+</table>
+</p>
+Example allele:<br>
+<table>
+	<tr>
+		<td><a href="<!--#include file='include/fewi_url.html'-->accession/MGI:4072882"><i>Rnd3<sup>Gt(IST12405G10)Tigm</sup></i></a>&nbsp;&nbsp;&nbsp;</td>
+		<td>Rho family GTPase 3; gene trap IST12405G10, Texas A&M Institute for Genomic Medicine</td>
+	</tr>
+</table>
+<p>
+<table>
+	<tr>
+		<td width=50%><u>1.2 Gene trapped alleles made by EUCOMM</u> include multiple 
+FRT and loxP sites, making it possible to generate several derivative alleles.</td>
+		<td><img src="images/eucommGt.png"  border="0" width="320" height="75" alt="EUCOMM Gene Traps"></td>
+	</tr>
+</table>
+</p>
+Example allele:<br>
+<table>
+	<tr>
+		<td><a href="<!--#include file='include/fewi_url.html'-->accession/MGI:4371844"><i>Nmnat2<sup>Gt(EUCE0262a08)Hmgu</sup></i></a>&nbsp;&nbsp;&nbsp;</td>
+		<td>nicotinamide nucleotide adenylyltransferase 2; gene trap EUCE0262a08, Helmholtz Zentrum Muenchen GmbH</td>
+		<td><img src="images/eucommInitial.png" border="0" width="390" height="75" alt="EUCOMM Initial Allele"></td>
+	</tr>
+</table>
+<p><b>Derivative allele</b>s from the EUCOMM gene traps can be made, taking advantage of the FRT and loxP sites. One such derivative, using flp-mediated recombination, inverts the trap cassette allowing for conditional targeting of the endogenous gene using cre.
+</p>
+Example derivative allele:<br>
+<table>
+	<tr>
+		<td><a href="<!--#include file='include/fewi_url.html'-->accession/MGI:5543590"><i>Nmnat2<sup>Gt(EUCE0262a08)1.1Hmgu</sup></i></a>&nbsp;&nbsp;&nbsp;</td>
+		<td>nicotinamide nucleotide adenylyltransferase 2; gene trap EUCE0262a08, 1.1, Helmholtz Zentrum Muenchen GmbH</td>
+		<td><img src="images/eucommDerivative.png" border="0" width="400" height="90" alt="EUCOMM Derivative Allele"></td>
+	</tr>
+</table>
+<p><u>1.3 Gene trapped alleles made by NorCOMM (NCOM)</u> used a variety of vectors, one of which was UPA, shown below.
+</p>
+Example allele:<br>
+<table>
+	<tr>
+		<td><a href="<!--#include file='include/fewi_url.html'-->accession/MGI:3901495"><i>Fgfr2<sup>Gt(PST17605)Mfgc</sup></i></a>&nbsp;&nbsp;&nbsp;</td>
+		<td>fibroblast growth factor receptor 2; gene trap PST17605, Mammalian Functional Genomics Centre</td>
+		<td><img src="images/norcommGt.png" border="0" width="372" height="52" alt="NorCOMM Gene Traps"></td>
+	</tr>
+</table>
+<p>Various derivative alleles can be made, depending on the inclusion of loxP and FRT sites.
+</p>	
+
+<A HREF="#top">Top</A><br></br>
+
+<h4><a name="reporter"></a><b>2. Targeted Reporter-tagged Deletion Alleles.</b></h4>
+
+<p>
+<table>
+	<tr>
+		<td width=60%><u>2.1 Reporter-tagged deletion alleles were developed by Regeneron, Inc.</u> using Velocigene technology. In most cases, these alleles delete the entire coding region of the gene, replacing it with a LacZ, loxP, neo, loxP containing cassette.</td>
+		<td><img src="images/regeneron.png" border="0" width="218" height="60" alt="Regeneron Alleles"></td>
+	</tr>
+</table>
+</p>
+Example allele:<br>
+<table>
+	<tr>
+		<td><a href="<!--#include file='include/fewi_url.html'-->accession/MGI:5051086"><i>Arrb2<sup>tm1(KOMP)Vlcg</sup></i></a>&nbsp;&nbsp;&nbsp;</td>
+		<td>arrestin, beta 2; targeted mutation 1, Velocigene</td>
+	</tr>
+</table>
+<p>A <b>derivative allele</b> can be created from Velocigene alleles by removing the neomycin cassette through cre-excised deletion. The designation for this cre-excised deletion allele changes the tm# portion of the allele symbol to tm#.1
+</p>
+<p>
+Example derivative allele:<br>
+<table>
+	<tr>
+		<td><a href="<!--#include file='include/fewi_url.html'-->accession/MGI:5445919"><i>Arrb2<sup>tm1.1(KOMP)Vlcg</sup></i></a>&nbsp;&nbsp;&nbsp;</td>
+		<td>arrestin, beta 2; targeted mutation 1.1, Velocigene&nbsp;&nbsp;</td>
+		<td><img src="images/velocigene.png" border="0" width="167" height="61" alt="Velocigene Derivative Allele"></td>
+	</tr>
+</table>
+</p>
+<p><u>2.2 Reporter-tagged deletion alleles were developed by the Chori/Sanger/Davis collaboration.</u> These alleles delete a critical exon, replacing it with a FRT, LacZ, loxP, neo, FRT, loxP containing cassette.
+</p>
+<p>Example allele:<br>
+<table>
+	<tr>
+		<td><a href="<!--#include file='include/fewi_url.html'-->accession/MGI:4454006"><i>Mdk<sup>tm1(KOMP)Mbp</sup></i></a>&nbsp;&nbsp;&nbsp;</td>
+		<td>midkine; targeted mutation 1, Mouse Biology Program, UCDavis</td>
+	</tr>
+</table>
+</p>
+<p>[The figure below illustrates the deletion of exon 2 with replacement targeting cassette.]
+</p>
+Example derivative alleles:<br>
+<table>
+	<tr><td>
+		<table>
+		<tr><td><p><font color="green">[A]</font> Excising the tm1 allele <br> with <font color="green">[A] flp</font> creates a tm1.2 allele, <br> where the LacZ and neo are removed.</p></td></tr>
+		<tr><td><font color="red">[B]</font> Excising the tm1 allele <br> with <font color="red">[B] cre</font> creates a tm1.1 allele, <br> where the neo is removed.<br></td></td></tr>
+		</table>
+		<td><td><img src="images/midkine.png" border="0" width="423" height="203" alt="TIGM Gene Traps"></td>
+	</tr>
+</table>
+<p><u>2.3 Reporter-tagged deletion alleles developed by the NorCOMM (NCOM) project</u> from the Centre for Modeling Human Disease and the Mammalian Functional Genomics Centre. Two slightly different targeting cassettes were used, each produced LacZ-tagged, conditional-ready alleles that deleted a critical exon. The critical exon can be reintroduced using the attp docking site.
+</p>
+Example alleles:<br>
+<table>
+	<tr>
+		<td><a href="<!--#include file='include/fewi_url.html'-->accession/MGI:4880235"><i>Itpr3<sup>tm1(NCOM)Mfgc</sup></i></a>&nbsp;&nbsp;&nbsp;</td>
+		<td>inositol 1,4,5-triphosphate receptor 3; targeted mutation 1, Mammalian Functional Genomics Centre</td>
+		<td><img src="images/ncom1.png" border="0" width="371" height="54" alt="NCOM  Allele 1"></td>
+	</tr>
+	<tr>
+		<td><a href="<!--#include file='include/fewi_url.html'-->accession/MGI:4839147"><i>Otud7b<sup>tm1(NCOM)Cmhd</sup></i></a>&nbsp;&nbsp;&nbsp;</td>
+		<td>OTU domain containing 7B; targeted mutation 1, Centre for Modelling Human Disease</td>
+		<td><img src="images/ncom2.png" border="0" width="322" height="51" alt="NCOM  Allele 2"></td>
+	</tr>
+</table>
+
+<A HREF="#top">Top</A><br></br>
+
+<h4><a name="tm1a"></a><b>3. Targeted Knockout First, Reporter-tagged Insertion with Conditional Potential (conditional-ready).</b></h4>
+
+<p>These alleles may contain a promoter or be promoterless. Note: Only the promoter-driven versions are diagrammed here. A critical exon is flanked by loxP sites, with FRT, LacZ, loxP, promoter, neo, and FRT elements upstream of the critical exon. Derivative alleles are generated using cre or flp.
+</p>
+Example allele:<br>
+<table>
+	<tr><td>
+		<table>
+		<tr><td>
+			<table>
+			<td><a href="<!--#include file='include/fewi_url.html'-->accession/MGI:5014684"><i>Lrrc2<sup>tm1a(EUCOMM)Wtsi</sup></i></a>&nbsp;&nbsp;&nbsp;</td>
+			<td>leucine rich repeat containing 2; targeted mutation 1a, <br>Wellcome Trust Sanger Institute</td></tr>
+			</td>
+			</table>
+		<tr><td>Example derivative alleles:<br>
+		<p><font color="green">[A]</font> Excising the <b>tm1a</b> allele with <font color="green">[A] flp</font> creates a <b><u>tm1c</u></b> allele, where the LacZ and neo are removed. The gene is intact, with loxP flanking the critical exon(s), making this an allele suitable for conditional mutagenesis.</p></td></tr>
+		<tr><td><p><font color="red">[B]</font> Excising the <b>tm1a</b> type allele with <font color="red">[B] cre</font> creates a <b><u>tm1b</u></b> allele, where neo and the
+critical exon are removed, leaving a definitive null with a reporter.</p></td></tr>
+		<tr><td><font color="red">[C]</font> Excising the <b>tm1c</b> allele with <font color="red">[C]</font> cre removes the critical exon and creates a <b><u>tm1d</u></b> allele with only one FRT and one loxP site remaining.</td></tr>
+		</table>
+		<td><td><img src="images/abcdAlleles.png"  border="0" width="479" height="369" alt="tm1a, b, c and d Alleles"></td>
+	</tr>
+</table>
+
+<A HREF="#top">Top</A><br></br>
+
+<h4><a name="tm1e"></a><b>4. Targeted Knockout First, Reporter-tagged Insertion NON-conditional.</b></h4>
+
+<p>These alleles are the same as those described above for the tm1a type allele, except that they have lost the loxP site downstream of the critical exon (CE), so they are no longer conditional. Derivative alleles are generated using cre or flp.
+</p>
+Example allele:<br>
+<table>
+	<tr><td>
+		<table>
+		<tr><td>
+			<table>
+			<td><a href="<!--#include file='include/fewi_url.html'-->accession/MGI:4434827"><i>Plvap<sup>tm1e(EUCOMM)Hmgu</sup></i></a>&nbsp;&nbsp;&nbsp;</td>
+			<td>plasmalemma vesicle associated protein; targeted mutation 1e, Helmholtz Zentrum Muenchen GmbH</td></tr>
+			</td>
+			</table>
+		<tr><td>Example derivative alleles:<br>
+		<p><font color="green">[A]</font> Excising the <b>tm1e</b> allele with <font color="green">[A] flp</font> creates a <b><u>tm1e.2</u></b> allele type, where the LacZ and neo are removed.</p></td></tr>
+		<tr><td><font color="red">[B]</font> Excising the <b>tm1e</b> type allele with <font color="red">[B] cre</font> creates a <b><u>tm1e.1</u></b> allele, where neo is removed.
+		</td></tr>
+		</table>
+		<td><td><img src="images/NonConditional.png"  border="0" width="480" height="261" alt="Non-Conditional Allele"></td>
+	</tr>
+</table>
+
+<A HREF="#top">Top</A><br></br>
+
+<h4><a name="intron"></a><b>5. Targeted Knockout First Alleles with Artificial Introns.</b></h4>
+
+<p>As some genes are very small or contain only a single exon, vector designs to make conditional-ready alleles fail (requires a critical exon). Conditional knockout first alleles for such genes can be made by introducing an artificial intron with the targeting cassette imbedded in the intron. The 'second' exon (1b in the diagram) is then used as the critical exon. 
+</p>
+<p>
+Alleles of type knockout first, reporter-tagged insertion NON-conditional will also arise in cases where the loxP site downstream of the critical exon has been lost (tm1e alleles)
+</p>
+Example alleles:<br>
+<table>
+	<tr>
+		<td><a href="<!--#include file='include/fewi_url.html'-->accession/MGI:5532954"><i>Cd68<sup>tm1a(EUCOMM)Hmgu</sup></i></a>&nbsp;&nbsp;&nbsp;</td>
+		<td>CD68 antigen; targeted mutation 1a, Helmholtz Zentrum Muenchen GmbH&nbsp;&nbsp;</td>
+		<td><img src="images/artificial1.png" border="0" width="351" height="51" alt="tm1a  Allele"></td>
+	</tr>
+	<tr>
+		<td><a href="<!--#include file='include/fewi_url.html'-->accession/MGI:5532948"><i>Cd68<sup>tm1e(EUCOMM)Hmgu</sup></i></a>&nbsp;&nbsp;&nbsp;</td>
+		<td>CD68 antigen; targeted mutation 1e, Helmholtz Zentrum Muenchen GmbH</td>
+		<td><img src="images/artificial2.png" border="0" width="332" height="80" alt="tm1e Allele"></td>
+	</tr>
+</table>
+<p>Derivatives of these alleles can be made, with parallel structures as above, see
+</p>
+<ol start="3">
+	<li><a href="#tm1a">Targeted Knockout First, Reporter-tagged Insertion with Conditional Potential (conditional-ready)</a></li>
+	<li><a href="#tm1e">Targeted Knockout First, Reporter-tagged Insertion NON-conditional</a></li>
+</ol>
+	
+<A HREF="#top">Top</A><br></br>
+
+<h4><a name="cre"></a><b>6. Targeted cre Knockin Alleles.</b></h4>
+
+<p>The EUCOMMtools project creates targeted, cre knockin alleles that expand the available worldwide cre resources. The selection cassette is flanked with Rox sites and can be removed using dre recombinase.
+</p>
+<table>
+	<tr>
+		<td>Example allele:&nbsp;&nbsp;</td>
+		<td><img src="images/creErt2.png" border="0" width="364" height="47" alt="cre Knockin Allele"></td>
+	</tr>
+</table>
+<p>
+<table>
+	<tr>
+	<td><nobr><i>Hprt<sup>tm1(Cbx1-cre/ERT2)Hmgu</sup></i></nobr></td>
+			<td>A hypothetical targeted knockin at the <i>Hprt</i> locus. The knocked in
+		portion contains promoter sequences from <i>Cbx1</i> driving cre/ERT2</td>
+		</tr>
+</table>
+</p>
+<b>References:</b>
+<br></br>
+<p>TIGM gene traps: Hansen GM, et al. 2008. Large-scale gene trapping in C57BL/6N mouse embryonic stem cells. Genome Res 18: 1670-1679. <a href="http://www.ncbi.nlm.nih.gov/pubmed/18799693">PubMed ID: 18799693</a>
+</p>
+<p>EUCOMM gene traps: Schnutgen F, et al. 2005. Genomewide production of multipurpose alleles for the functional analysis of the mouse genome.  PNAS 102: 7221-7226.  <a href="http://www.ncbi.nlm.nih.gov/pubmed/15870191">PubMed ID: 15870191</a>
+</p>
+<p>Velocigene Reporter-Tagged Deletion Alleles: Valenzuela DM, et al. 2003. High-throughput engineering of the mouse genome coupled with high-resolution expression analysis. Nat Biotechnol 21: 652-659. <a href="http://www.ncbi.nlm.nih.gov/pubmed/12730667">PubMed ID: 12730667</a>
+</p>
+<p>Knockout first, reporter-tagged insertion with conditional potential (conditional-ready): Skarnes WC, et al 2011. A conditional knockout resource for the genome-wide study of mouse gene function. Nature 474: 337-432. <a href="http://www.ncbi.nlm.nih.gov/pubmed/21677750">PubMed ID: 21677750</a>
+</p>
+<p>Overall Review: Bradley A, et al. 2012. The mammalian gene function resource: the International Knockout Mouse Consortium. Mamm Genome 9-10: 580-586. <a href="http://www.ncbi.nlm.nih.gov/pubmed/22968824">PubMed ID: 22968824</a>
+</p>
+
+<A HREF="#top">Top</A>
+
+<!--#include file='include/templateBodyStop.html'--> 
+
+</body>
+</html>
