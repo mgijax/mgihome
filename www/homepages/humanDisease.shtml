@@ -156,6 +156,7 @@ body.yui-skin-sam .yui-ac-hd {padding: 5px;}
       </div>
       <div style="position:absolute; top:60px; left:6px; ">
       <textarea id="genes" name="genes" style="height:80px; width:240px;"></textarea>
+      <div id="geneFilePlaceholder" style="height:30px; width: 1px;"></div>
       Ex:
       <a href="<!--#include file='include/fewi_url.html'-->diseasePortal/summary?genes=Bmp4">Bmp4</a>,
       <a href="<!--#include file='include/fewi_url.html'-->diseasePortal/summary?genes=Pax*">Pax*</a>,
@@ -203,7 +204,8 @@ body.yui-skin-sam .yui-ac-hd {padding: 5px;}
     </div>
     </div>
 
-     <input id="locationsFileName" type="hidden" name="locationsFileName" value="">
+    <input id="locationsFileName" type="hidden" name="locationsFileName" value="">
+    <input id="geneFileName" type="hidden" name="geneFileName" value="">
     <input style="position:absolute; top:225px; left:700px; width:60px; font-size:20px;"
       name="submit" class="formButtons" value="GO" type="submit"><br/>
     <input class="formButtons"
@@ -214,6 +216,7 @@ body.yui-skin-sam .yui-ac-hd {padding: 5px;}
     </form>
 
     <div style="position:absolute; top:220px; left:20px; ">
+	<br/>
       <div style='font-size:150%;'>
         ------------------------------------------------------------------------
       </div>
@@ -260,8 +263,14 @@ body.yui-skin-sam .yui-ac-hd {padding: 5px;}
       <input type="hidden" name="type" value="vcf">
       </form>
     </div>
-
-
+    <div id="geneFileDiv" style="position:absolute; top:140px;">
+	    <form action="<!--#include file='include/fewi_url.html'-->diseasePortal/uploadFile" method="post" enctype="multipart/form-data"
+		    id="hiddenFileForm2" name="hiddenFileForm" target="hiddenfileform_if">
+		    <span style="">Upload a File: <input id="geneFileInput" type="file" name="file"></span>
+		    <input type="hidden" name="field" value="geneFile">
+		<input type="hidden" name="type" value="singleCol">
+	    </form>
+    </div>
 
     </div>
   </div>
@@ -353,7 +362,14 @@ body.yui-skin-sam .yui-ac-hd {padding: 5px;}
 		YAHOO.namespace("hdp.container");
 		YAHOO.hdp.container.panelVcf = new YAHOO.widget.Panel("locationsFileHelp", { width:"520px", draggable:false, visible:false, constraintoviewport:true } );
 		YAHOO.hdp.container.panelVcf.render();
-		YAHOO.util.Event.addListener("locationsFileHelpImg", "mouseover", YAHOO.hdp.container.panelVcf.show, YAHOO.hdp.container.panelVcf, true);
+		//YAHOO.util.Event.addListener("locationsFileHelpImg", "mouseover", YAHOO.hdp.container.panelVcf.show, YAHOO.hdp.container.panelVcf, true);
+		var _locationsFileHelpTOID;
+		$("#locationsFileHelpImg").on("mouseover",function(e){
+			_locationsFileHelpTOID = setTimeout(function(){YAHOO.hdp.container.panelVcf.show()},500);
+		});
+		$("#locationsFileHelpImg").on("mouseout",function(e){
+			if(_locationsFileHelpTOID) clearTimeout(_locationsFileHelpTOID);
+		});
 
 		// wire up the two radio buttons to mirror each other
 		$("input.organism").change(function(e){
@@ -367,9 +383,10 @@ body.yui-skin-sam .yui-ac-hd {padding: 5px;}
 		});
 
 		// make sure upload button is reset. Some browsers try to save your form state, but it won't work with our upload
-		if(typeof resetLocationsFileFields == 'function')
+		if(typeof resetLocationsFileFields == 'function' && typeof resetGeneFileFields == 'function')
 		{
 			resetLocationsFileFields();
+			resetGeneFileFields();
 		}
 		else
 		{
@@ -378,9 +395,10 @@ body.yui-skin-sam .yui-ac-hd {padding: 5px;}
 
 		// handle the upload reset when user resets the form
 		$("#diseasePortalQueryForm").on("reset",function(e){
-			if(typeof resetLocationsFileFields == 'function')
+			if(typeof resetLocationsFileFields == 'function' && typeof resetGeneFileFields == 'function')
 			{
-			    resetLocationsFileFields();
+				resetLocationsFileFields();
+				resetGeneFileFields();
 			}
 			// also make sure to reset second organism radio buttons
 			$("#organismMouse2").prop("checked",true);
