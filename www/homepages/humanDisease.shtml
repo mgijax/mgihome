@@ -156,7 +156,6 @@ body.yui-skin-sam .yui-ac-hd {padding: 5px;}
       </div>
       <div style="position:absolute; top:60px; left:6px; ">
       <textarea id="genes" name="genes" style="height:80px; width:240px;"></textarea>
-      <div id="geneFilePlaceholder" style="height:30px; width: 1px;"></div>
       Ex:
       <a href="<!--#include file='include/fewi_url.html'-->diseasePortal/summary?genes=Bmp4">Bmp4</a>,
       <a href="<!--#include file='include/fewi_url.html'-->diseasePortal/summary?genes=Pax*">Pax*</a>,
@@ -164,6 +163,7 @@ body.yui-skin-sam .yui-ac-hd {padding: 5px;}
       <br/><br/>
       Enter symbols, names or IDs.<br/>
       Use * for wildcard.
+      <div id="geneFilePlaceholder" style="height:30px; width: 1px;"></div>
       </div>
     </div>
     </div>
@@ -263,7 +263,7 @@ body.yui-skin-sam .yui-ac-hd {padding: 5px;}
       <input type="hidden" name="type" value="vcf">
       </form>
     </div>
-    <div id="geneFileDiv" style="position:absolute; top:140px;">
+    <div id="geneFileDiv" style="position:absolute; top:344px; 243px;">
 	    <form action="<!--#include file='include/fewi_url.html'-->diseasePortal/uploadFile" method="post" enctype="multipart/form-data"
 		    id="hiddenFileForm2" name="hiddenFileForm" target="hiddenfileform_if">
 		    <span style="">Upload a File: <input id="geneFileInput" type="file" name="file"></span>
