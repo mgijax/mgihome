@@ -255,6 +255,8 @@ body.yui-skin-sam .yui-ac-hd {padding: 5px;}
 	</div>
       </div>
       <div style='margin-left:220px; padding-top:5px;'>
+	<label><input id="disableVcfFilter" name="disableVcfFilter" type="checkbox" value="true" class="organism"/>Include all data rows</label>
+      	<br/>
 	<!-- These are here to make the user feel better, but should not be submitted as extra organism values -->
         <label><input id="organismHuman2" name="organismIgnore" class="organism" type="radio" value="human"/> Human(GRCh38)</label>
         <label><input id="organismMouse2" name="organismIgnore" class="organism" type="radio" value="mouse" checked="checked"/> Mouse(GRCm38)</label>
@@ -263,7 +265,7 @@ body.yui-skin-sam .yui-ac-hd {padding: 5px;}
       <input type="hidden" name="type" value="vcf">
       </form>
     </div>
-    <div id="geneFileDiv" style="position:absolute; top:344px; 243px;">
+    <div id="geneFileDiv" style="position:absolute; top:418px; 243px;">
 	    <form action="<!--#include file='include/fewi_url.html'-->diseasePortal/uploadFile" method="post" enctype="multipart/form-data"
 		    id="hiddenFileForm2" name="hiddenFileForm" target="hiddenfileform_if">
 		    <span style="">Upload a File: <input id="geneFileInput" type="file" name="file"></span>
