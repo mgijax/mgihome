@@ -410,6 +410,7 @@ body.yui-skin-sam .yui-ac-hd {padding: 5px;}
 			}
 			// also make sure to reset second organism radio buttons
 			$("#organismMouse2").prop("checked",true);
+			$("#enableVcfFilter").prop("checked",true);
 		});
 	});
 </script>
