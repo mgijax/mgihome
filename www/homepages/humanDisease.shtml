@@ -249,9 +249,8 @@ body.yui-skin-sam .yui-ac-hd {padding: 5px;}
 				</li>
 				<li>Lines containing values other than "pass", ".", or no value (null) in column 7 are rejected</li>
 			</ul>
-			<p>If your file contains SNP IDs in column 3 and you wish to include those rows in the search,
-				please edit the file to remove the IDs (leaving column 3 empty).
-				Save as a tab-delimited file in a format other than Unicode.
+			<p>The defaults filters remove known SNPs and low quality reads (final 2 bullet points above).
+			  If you do not want to use these filters, uncheck the “Apply Filters” box. Your file will then be reprocessed.
 			</p>
 			<p>If your file is larger than 25MB or has more than 100,000 lines, please edit the file to break it into smaller files.
 				Save as a tab-delimited file in a format other than Unicode.</p>
@@ -273,7 +272,7 @@ body.yui-skin-sam .yui-ac-hd {padding: 5px;}
     <div id="geneFileDiv" style="position:absolute; top:418px; 243px;">
 	    <form action="<!--#include file='include/fewi_url.html'-->diseasePortal/uploadFile" method="post" enctype="multipart/form-data"
 		    id="hiddenFileForm2" name="hiddenFileForm" target="hiddenfileform_if">
-		    <span style="">Upload a File: <input id="geneFileInput" type="file" name="file"></span>
+		    <span style="">Upload Genes File (.txt): <input id="geneFileInput" type="file" name="file"></span>
 		    <input type="hidden" name="field" value="geneFile">
 		    <input type="hidden" name="type" value="singleCol">
 		    <input type="hidden" name="associatedFormInput" value="Gene file">
