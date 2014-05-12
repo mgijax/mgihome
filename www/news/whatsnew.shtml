@@ -43,8 +43,14 @@
  	<dl class="linkedList">
  		<dt>The <a href="<!--#include file='include/fewi_url.html'-->allele">Phenotypes, Alleles & Disease Models Query</a> Form and the <a href="<!--#include file='include/fewi_url.html'-->marker">Genes & Markers Query</a> Form have been rewritten and offer superior performance and the ability to sort your results and export them as tab-delimited text.</dt>
  		<dt>The Phenotypes, Alleles & Disease Models Query Form has new allele categories that permit refined searches for specific allele types and the option to limit your search to those from specific high-throughput projects and repositories.</dt>
- 		<dt>Some high-throughput mutagenesis projects, such as those that generate chemically induced mutations, may produce mutations in multiple sites in the genome. In MGI, these incidental mutations are these types of mutations that have been detected via sequencing but have not yet been confirmed or studied. You can now access information on these mutations from MGI the Alleles and phenotypes section of Gene Detail pages.</dt>
- 		<dt>The <a href="<!--#include file='include/homepages_url.html'-->humanDisease.shtml">Human&mdash;Mouse: Disease Connection</a> now allows you to search by uploading a text file of gene symbols or IDs. If you search the Human&mdash;Mouse: Disease Connection with a VCF file, by default, MGI applies filters to the file. You now have the option of performing an unfiltered search. </dt>
+ 		<dt>Some high-throughput mutagenesis projects, such as those that generate chemically induced mutations, may produce mutations in multiple sites in the genome. In MGI, these incidental mutations are these types of mutations that have been detected via sequencing but have not yet been confirmed or studied. You can now access information on these mutations from the Alleles and phenotypes section of Gene Detail pages.</dt>
+ 		<dt>The <a href="<!--#include file='include/homepages_url.html'-->humanDisease.shtml">Human&mdash;Mouse: Disease Connection</a> has new features: 
+		<ul>
+ 		 <li>You can now search by uploading a text file of gene symbols or IDs.</li>
+ 		 <li>If you search the Human&mdash;Mouse: Disease Connection with a VCF file, by default, MGI applies filters to the file. You now have the option of performing an unfiltered search.</li>
+ 		 <li>The form now uses genome coordinates from human build GRCh38, so both human and mouse coordinates are from the latest builds. If your coordinates are from earlier builds, the form links to an NCBI tool that will convert them to the latest build.</li>
+		</ul>
+		</dt>
  	</td>
 	</dl>
 	</tr>
