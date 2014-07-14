@@ -52,7 +52,7 @@ community.<p>
 	<li><a href="#geneDetail">Gene Detail pages</a>
 		<ul>
 			<li><a href="#vertebratehomology">Vertebrate Homology</a></li>
-			<li><a href="#alleles">Alleles and phenotypes</a></li>
+			<li><a href="#alleles">Mutations, alleles and phenotypes</a></li>
 			<li><a href="#function">Gene Ontology (GO) classifications</a></li>
 			<li><a href="#expression">Expression</a></li>
 		</ul>
@@ -109,10 +109,12 @@ symbol, name, or synonym into the Quick Search window near the top of every MGI 
 		<td valign="top"><br>
 			<a href="images/howto_geneDetail.png" target="_blank">
 			<img src="<!--#include file='include/mgihome_url.html'-->/other/images/howto_geneDetail.png"
-			width="500px" height="396px" alt="gene detail page for Tlr1" style="padding:5px;"
+			width="500px" height="605px" alt="gene detail page for Abcg1" style="padding:5px;"
 			border="1" margins="5px"></a>
 		</td>
-		<td valign="top"><p>There is a wealth of information and links to be found on Gene Detail pages.
+		<td valign="top"><p>There is a wealth of information and links to be found on Gene 
+		Detail pages. The gene detail page for <a href="<!--#include file='include/fewi_url.html'-->marker/MGI:107704 ">
+		Abcg1</a> is shown on the left.
 			<ol>
 				<li><b>IDs and synonyms:</b> the official gene or marker symbol is presented 
 					at the top of the page with any synonyms below, along with its unique 
@@ -120,27 +122,34 @@ symbol, name, or synonym into the Quick Search window near the top of every MGI 
 				<li><b>Position:</b> Chromosome, linkage position in cM (where 
 					applicable) as well as physical coordinates in bp (where known).<br>
 					Clicking on the linkage map or the sequence map will bring up a the linkage 
-					context or the interactive <a href="http://gbrowse.informatics.jax.org/cgi-bin/gb2/gbrowse/mousebuild38/">
+					context or the interactive <a href="http://jbrowse.informatics.jax.org/?data=data%2Fmouse&loc=chr5%3A64923214..64934344&tracks=DNA%2CMGI_Genome_Features%2CdbSNP_WellcomeTrust&highlight=">
 					Mouse Genome Browser</a>, respectively.</li>
 				<li><b><a href="#vertebratehomology">Vertebrate Homology:</a></b> identifiers and links to sequences for 
 					homologous genes (i.e. related by descent from a common ancestral 
 					sequence) in other vertebrate species.</li>
-				<li><b><a href="#alleles">Alleles and phenotypes:</a></b> a brief text summary 
-					of the phenotypes observed in mice carrying spontaneous or targeted 
-					mutations at this gene, a list of disease annotations and a linked tally 
-					of all mutant alleles that have been generated and/or described by the 
+				<li><b><a href="#alleles">Mutations, alleles and phenotypes:</a></b> a 
+					brief text summary of the phenotypes observed in mice carrying 
+					spontaneous or targeted mutations at this gene, a list of disease
+					 annotations and a linked tally of all mutant alleles that have been 
+					 generated and/or described by the 
 					scientific research community. See also the section on <a href="#alleleDetail">
 					Allele Detail pages.</li>
+				<li><b><a href=#interaction>Interactions:</a></b> a list of microRNAs that 
+					that have been validated or predicted to interact with this genome feature.
+					On miRNA gene pages, the list of genome features that miRNA interacts 
+					with will be displayed. MGI loads these data from <a href="http://mirtarbase.mbc.nctu.edu.tw/">
+					miRTarBase</a> and <a href="http://diana.imis.athena-innovation.gr/DianaTools/index.php?r=microT_CDS/index">
+					microt-cds</a>. 
 				<li><b><a href="#function">Gene Ontology (GO) Classifications:</b></a> the set 
 					of structured vocabulary terms describing function, biological process 
 					involvement and cellular component of this gene. </li>
-				<li><b><a href="#expression">Expression: </b></a>Gene expression data provided by 
+				<li><b><a href="#expression">Expression: </b></a>gene expression data provided by 
 					the Gene Expression Database. </li>
 				<li><b>Sequences:</b> links to download genomic, transcript or protein 
 					FASTA sequences. Polymorphic variants reported between inbred strains 
 					are linked below.</li>
-				<li><b>Protein links: </b>Protein domain information provided by InterPro</li>
-				<li><b>References:</b> A list of all references curated by MGI for this gene.</li>
+				<li><b>Protein links: </b>protein domain information provided by InterPro</li>
+				<li><b>References:</b> a list of all references curated by MGI for this gene.</li>
 			</ol>
 		</td>
 	</tr>
@@ -171,7 +180,7 @@ symbol, name, or synonym into the Quick Search window near the top of every MGI 
  		<td>
  <a href="images/howto_homology.png" target="_blank">
 <img src="<!--#include file='include/mgihome_url.html'-->/other/images/howto_homology.png"
-			width="600px" height="237px" alt="Vertebrate homology class" style="padding:5px;"
+			width="600px" height="330px" alt="Vertebrate homology class" style="padding:5px;"
 			border="1" margins="5px"></a>
 		</td>
 	</tr>
@@ -181,7 +190,7 @@ symbol, name, or synonym into the Quick Search window near the top of every MGI 
 </div>
  
 <div id="alleles">
- <h3><font color="#002255"><blockquote>Alleles and phenotypes</blockquote></font></h3>
+ <h3><font color="#002255"><blockquote>Mutations, alleles and phenotypes</blockquote></font></h3>
 
 <table cellpadding="6">
 	<tr>
@@ -191,27 +200,29 @@ symbol, name, or synonym into the Quick Search window near the top of every MGI 
 				in this case, for the gene <a href="<!--#include file='include/fewi_url.html'-->marker/MGI:88057">
 				<i>Apoe</i></a>), a list of the different alleles that have been generated 
 				or described affecting this gene (<font color="#54709B">&#35;2</font>) with links to the Phenotypic 
-				Allele Summary page (<font color="#54709B">&#35;3</font>), and links for any associated human diseases 
+				Allele Summary page (<font color="#54709B">&#35;3</font>), and links for 
+				any associated human diseases (<font color="#54709B">&#35;4</font>)
 				or mouse genetic models of human diseases which have been reported for 
-				this gene (<font color="#54709B">&#35;4</font>). On the Phenotypic Allele Summary, you can see 
+				this gene.</p>
+				<p>On the Phenotypic Allele Summary (<font color="#54709B">&#35;3</font>), you can see 
 				different alleles with unique official symbols (note format includes a 
 				superscript: <i>GeneSymbol<sup>AlleleID</sup></i>), their synonyms, 
-				allele type or category (knock-out, knock-in, floxed, spontaneous, 
-				reporter, etc - see <a href="<!--#include file='include/mgihome_url.html'-->/other/homepage_IntroMouse#alleles">
+				allele category (including Generation Method and bracketed allele attributes&#59; 
+				see <a href="http://www.informatics.jax.org/mgihome/other/homepage_IntroMouse.shtml#alleles">
  				more about alleles in the Introduction to Mouse Genetics</a>), abnormal 
  				physiological systems and specific alleles reported to act as models of 
- 				human disease where applicable (<font color="#54709B">&#35;5</font>). Clicking on an Allele Symbol 
- 				will bring you to an <a href="#alleleDetail">Allele detail page</a>.
- 			</p>
+ 				human disease where applicable (<font color="#54709B">&#35;5</font>). 
+ 				Clicking on an Allele Symbol will bring you to an <a href="#alleleDetail">
+ 				Allele detail page</a>.</p>
  			<p>To purchase mice from commercial providers or public repositories, 
- 			 	see the <a href="findmice">Find Mice (IMSR) ribbon</a> on allele 
+ 			 	see the <a href="#findmice">Find Mice (IMSR) ribbon</a> on allele 
  			 	detail pages or navigate the <a href="http://www.findmice.org">International 
  			 	Mouse Strain Resource</a> database directly.</p>
  		</td>
  		<td valign="top"><br>
 			<a href="images/howto_phenoAllele.png" target="_blank"> 	
 			<img src="<!--#include file='include/mgihome_url.html'-->/other/images/howto_phenoAllele.png"
-			width="600px" height="326px" alt="Phenotypes and alleles ribbon, Apoe" style="padding:5px;"
+			width="600px" height="428px" alt="Phenotypes and alleles ribbon, Apoe" style="padding:5px;"
 			border="1" margins="5px"></a>
 		</td>
 	</tr>
@@ -240,7 +251,7 @@ symbol, name, or synonym into the Quick Search window near the top of every MGI 
 			graph (<font color="#54709B">&#35;3</font>).</p>
 		  <p>Clicking on individual terms will bring you to the Gene Ontology Browser 
 		    (<font color="#54709B">&#35;4</font>) where the term itself is put into context. The GO Browser can also 
-		    be navigated <a href="<!--#include file='include/mgihome_url.html'-->/searches/GO_form.shtml">here</a>.</p>
+		    be navigated <a href="http://www.informatics.jax.org/searches/GO_form.shtml">here</a>.</p>
 		</td>
 		<td>
 			<a href="images/howto_function.png" target="_blank"> 	
@@ -298,33 +309,43 @@ gene targeted alleles (knock-out, knock-in, floxed/FRT conditional), transgenes,
 and more. Each allele has a unique allele symbol which follows the guidelines for 
 <a href="<!--#include file='include/mgihome_url.html'-->nomen/index.shtml">mouse standard 
 nomenclature</a>.<br>
-<p>In brief, allele symbols are typically formed for endogenous genes according to 
-<i>GeneSymbol<sup>AlleleID</sup></i> where the AlleleID is:
+<p>In brief, allele symbols are typically formed for endogenous genes (including mutant 
+and targeted alleles) according to <i>GeneSymbol<sup>AlleleID</sup></i> where the AlleleID is:
 	<ul>
-		<li>a short descriptive acronym for spontaneous or induced alleles (induced alleles 
-			include a lab code). <i>Ex.</i> <a href="<!--#include file='include/fewi_url.html'-->accession/MGI:1856334">
+		<li>an abbreviated descriptive word or phrase for <b>spontaneous or induced alleles</b> 
+		    (induced alleles include a lab code).<br>
+		    <i>Ex.</i> <a href="<!--#include file='include/fewi_url.html'-->accession/MGI:1856334">
 			<i>Fas<sup>lpr</sup></i></a> for the spontaneous "lymphoproliferation" allele of the 
 			Fas gene, or <a href="<!--#include file='include/fewi_url.html'-->accession/MGI:4835996">
 			<i>Adam17<sup>m1Btlr</sup></i></a> for the chemically induced allele "mutation 1,
-			 laboratory of Bruce Beutler".</li>
-		<li>of the format "tm" (targeted mutation), a serial number and a lab code for 
-			targeted alleles (includes knock in, knock out, floxed/FRT, reporter, etc). 
+			generated or first described by the laboratory of Bruce Beutler".<br><br></li>
+		<li>of the format "tm" ("targeted mutation"), a serial number and a lab code for 
+			<b>targeted alleles</b> (includes knock in, knock out, floxed/FRT, reporter, etc) generated via 
+			homologous recombination.<br>
 			<i>Ex.</i> <a href="<!--#include file='include/fewi_url.html'-->accession/MGI:2675967">
 			<i>Mfge8<sup>tm1Shur</sup></i></a> for "targeted mutation 1, laboratory of 
-			Barry D Shur".</li>			
-		<li>of the format "Gt" (gene trap), serial number referencing the original cell line 
-			and/or targeting event, laboratory code for gene trapped alleles. 
+			Barry D. Shur".<br><br></li>			
+		<li>of the format "em" ("endonuclease mediated"), a serial number an a lab code for 
+			<b>endonuclease mediated genome edited alleles</b>. Endonuclease strategies may include 
+			zinc finger nucleases, TALENs, or CRISPER/Cas systems. <br>
+			<i>Ex.</i> <a href="<!--#include file='include/fewi_url.html'-->accession/MGI:5292672">
+			<i>Tcf7l2<sup>em1Nobr</sup></i></a> for "endonuclease-mediated mutation 1, generated 
+			by the laboratory of Marcelo A. Nobrega".<br><br></li>
+		<li>of the format "Gt" ("gene trap"), serial number referencing the original cell line 
+			and/or targeting event, laboratory code for <b>gene trapped alleles</b>. <br>
 			<i>Ex.</i> <a href="<!--#include file='include/fewi_url.html'-->accession/MGI:3778822">
-			<i>Vangl1<sup>Gt(XL802)Byg</sup></i></a> for the gene trap generated by random 
-			insertion in cell line XL802 by Bay Genomics.</li>
+			<i>Vangl1<sup>Gt(XL802)Byg</sup></i></a> for the "gene trap generated by random 
+			insertion in cell line XL802 by Bay Genomics".</li>
+
 	</ul>		
-or for transgenes:
+or for transgenes, where a non-mouse sequence is introduced:
 	<ul>
 		<li>Tg(promoter-gene)SerialNumberLabCode where "Tg" indicates "transgene", the 
 			construct promoter used to drive expression is listed first, followed by the 
 			gene expressed. Syntax for the promoter and gene are reflective of the species of 
 			origin (commonly: sentence case for mouse, uppercase for human, all lower case 
-			for bacterial). <i>Ex.</i> <a href="<!--#include file='include/fewi_url.html'-->accession/MGI:2656907">
+			for bacterial).<br>
+			<i>Ex.</i> <a href="<!--#include file='include/fewi_url.html'-->accession/MGI:2656907">
 			Tg(ACTA1-cre)1Mll</a> for a transgenic allele constructed using the human 
 			ACTA1 promoter to express bacteriophage-derived cre recombinase, insertion 1, generated 
 			by the laboratory of Ulrich Muller.
