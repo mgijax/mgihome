@@ -1,0 +1,136 @@
+<!--#include file='include/templateHead.html'--> 
+<title>MGI-News and Announcements from the Mouse Genome Informatics database resource</title>
+  <meta name="description" content="Archive of MGI news and announcements from 2011." />
+  <meta name="keywords" content="MGI, mgi, mice, mouse, murine, mus musculus, genes, genome, genomic, news, archives, announcements, update, release " />
+  <meta name="robots" content="NOODP" />
+  <meta name="robots" content="NOYDIR" />
+<!--#include file='include/templateBodyStart.html'--> 
+<!-- Title Bar -->
+    <div id="titleBarWrapper">
+  <span class="titleBarMainTitle">News and Announcements for 2013</span>
+  </div> 
+<!--end titleBar-->
+
+<table width="75%" cellpadding="2" align="center">
+   <tr><td>
+     <table class="toc" width="100%">
+      <tr>
+      <td>
+      <ul>
+        <li><a href="#december_2013">December 12, 2013</a> |
+        <li><a href="#june_2013">June 20, 2013</a> |
+        <li><a href="#may_2013">May 16, 2013</a> |
+        <li><a href="#march_2013">March 15, 2013</a> |
+        <li><a href="#january_2013">January 31, 2013</a> |
+		<li><a href="news_2012.shtml"><nobr>Archive: News and Announcements for 2012</a></li> 
+    	</ul>
+        </td>
+        </tr>              
+    </table>
+    <!-- end TOC table -->
+   </td></tr>
+
+<tr><td></td></tr>
+
+ <tr><td><a name="december_2013"></a>
+
+	<table class="outline" width="100%">
+   
+   	<tr><td class="enhance">December 12, 2013</td></tr>
+ 	<tr><td>
+ 	<dl class="linkedList">
+		<dt>The new <a href="<!--#include file='include/mgihome_url.html'-->homepages/humanDisease.shtml">Human&mdash;Mouse: Disease Connection</a> site provides a path into mouse genetic and comparative data from the human or mouse perspective. Users can begin to explore data by searching for genes (symbols, names, IDs) or genome locations from human or mouse, or by searching with mouse phenotype or human disease terms. Searching also can be done using VCF file input for human or mouse data.</dt>
+		<dt>Now, clinical researchers, whose primary focus is on human genetic disease, variants, and mutations, have a new highly-accessible way to explore the mouse genome for experimentally determined models of human phenotypes and diseases; as well as to find potential candidate models where well-characterized, genetically defined mice display a spectrum of phenotypes similar to humans. Likewise, mouse geneticists can readily explore relationships between mouse phenotypes and the human diseases that are associated with mouse mutations. </dt>
+		<dt>Any search (by genes, location, phenotype term or disease) returns an initial grid of human/mouse gene homologs x phenotype/disease terms that matches the search parameters specified. Within the grid, colors specify presence of relevant human and mouse data. Each colored cell is an active link leading to more detail. In addition, the grid is only the first of three tabs presented on the result page. Also available are a Genes tab, providing information and links about each human or mouse gene returned by your search, and a Diseases tab, providing information and links about each human disease returned by your search. Data on the Genes and Diseases tabs are downloadable.</dt>
+		<dt>This release of the Human&mdash;Mouse: Disease Connection site is considered "beta". We will expand its capabilities in the future to include the incorporation of human phenotype terminology using the Human Phenotype Ontology, make more visible connections to mouse resource repositories, include graphical synteny maps to enhance comparative location visualization, and provide for multiple file format uploads for searching. We hope you find this initial release useful and encourage your <a href="<!--#include file='include/mgihome_url.html'-->support/mgi_inbox.shtml">feedback</a>.</dt>
+		</td>
+		</dl>
+	</tr>
+	</table>
+   
+   <tr><td><a name="june_2013"></a>
+
+	<table class="outline" width="100%">
+   
+    <tr><td class="enhance">June 20, 2013</td></tr>
+ 	<tr><td>
+ 	<dl class="linkedList">
+		<dt>GXD has made it easier to view and search for its expression images. An images tab has been added to the GXD search return, allowing users to search for expression images by using all the parameters available on the Gene Expression Data Query Form. Further, these images are now included on the assay detail pages, so they can be viewed together with their annotated results.</dt>
+		<dt>The <a href="<!--#include file='include/fewi_url.html'-->gxd">Differential Expression Search</a>, present as a tab on the standard GXD query form, allows biologists to search for genes that are expressed in some anatomical structures but not others and/or in some developmental stages but not others. Formerly named The Gene Expression Data Expanded Query, this tool has been streamlined and clearly delineates the different search capabilities. The mechanisms behind the differential searches have been re-designed to allow for speedier returns and the search return now provides tabbed data summaries that are sortable and interactive.</dt>
+		<dt>The <a href="<!--#include file='include/mgihome_url.html'-->homepages/recombinase.shtml">Cre Portal</a> is updated with the ability to search for recombinase activity in tissues via an autocomplete search field of structures from the Mouse Anatomical Dictionary. In your search results, it is easier to see in which structures activity was detected or not detected and results can be sorted and columns, rearranged.  </dt>
+		<dt>Recombinase allele detail pages have an improved summary of driver tissue activity and show both ages and structures where activity was detected/not detected.  </dt>
+		<dt>On Recombinase allele detail pages a <i>Your Observations Welcome</i> button allows user to submit allele specific recombinase activity data.  </dt>
+		<dt>MGI SNP data are updated to NCBI dbSNP Build 137 and use the GRCm38.p1 build genome coordinates. MGI now includes over 24,000,000 SNP IDs and almost 16,000,000 refSNPs. </dt>
+		</td>
+		</dl>
+	</tr>
+	</table>
+   
+    <tr><td><a name="may_2013"></a>
+
+    <table class="outline" width="100%">
+   
+    <tr><td class="enhance">May 16, 2013</td></tr>
+ 	<tr><td>
+ 	<dl class="linkedList">
+		<dt>MGI is pleased to announce a new implementation of comparative genome data. Previously we used a one-to-one orthology relationship between a mouse gene and that of another mammalian species. MGI now uses homology class data from HomoloGene and supports a "many-to-many" relationship between mouse genes and their vertebrate homologs. Chicken, zebrafish and rhesus macaque homologs are now included in this release as well as human, chimpanzee, dog, cattle and rat. </dt>
+		<dt>Vertebrate Homology Class pages include genetic location and links to EntrezGene, Comparative GO Graphs, sequences and HomoloGene multiple sequence alignments.  For an example, see this <a href="<!--#include file='include/fewi_url.html'-->homology/36030">complement component</a> Vertebrate Homology Class page. </dt>
+		<dt>Redesigned MGI Human Disease and Mouse Model Detail pages support the new homology class data and link to vertebrate homology class pages and mouse model phenotype data. For an example, see this <a href="<!--#include file='include/fewi_url.html'-->disease/152700">Systemic Lupus Erythematosus </a> Human Disease and Mouse Model Detail page.</dt>
+		<dt>With this release, references now link to curated Gene Ontology (GO) functional annotations, in addition to genome features, phenotypic alleles and expression literature curation. For an example, see this <a href="<!--#include file='include/fewi_url.html'-->reference/J:142895"> reference summary page. </dt>
+		</td>
+		</dl>
+	</tr>
+	</table>
+   
+    <tr><td><a name="march_2013"></a>
+
+    <table class="outline" width="100%">
+   
+    <tr><td class="enhance">March 15, 2013</td></tr>
+ 	<tr><td>
+ 		<dl class="linkedList">
+		<dt><a href="http://www.mousemine.org/">MouseMine</a> represents a new generation of access to MGI data. Powered by InterMine, MouseMine offers flexible querying, numerous predefined query templates, a point-and-click interface for building your own queries or modifying a template, iterative refinement of results, built-in enrichment analysis, downloading in multiple formats, forwarding to Galaxy, linking to other model organism Mines, and more.
+		</dt>
+		<dt>MouseMine:
+		<ul>
+ 		<li>currently contains genetic, genomic and annotation data (function,
+phenotype, disease) from MGI </li>
+ 		<li>offers many useful "canned" queries, plus point-and-click query editing</li>
+ 		<li>supports links to any object's detail page or to any query results page</li>
+		<li>allows any query result to be downloaded (text, xml, json) or
+forwarded to Galaxy</li>
+		<li>supports uploading and manipulating lists of objects</li>
+ 		<li>provides web service access to all of the above functions</li>
+ 		</ul>
+		</dt>
+		</dl>
+	  </td>
+    </tr>
+	</table>
+   
+   <tr><td><a name="january_2013"></a>
+
+	<table class="outline" width="100%">
+   
+    <tr><td class="enhance">January 31, 2013</td></tr>
+ 	<tr><td>
+ 		<dl class="linkedList">
+		<dt>MGI now integrates phenotype data from high-throughput phenotyping centers with curated data from scientific publications, providing comprehensive comparative phenotypes for mouse mutants. Current data sets include those from the Wellcome Trust Sanger Institute (WTSI) and the Europhenome (EuPh) data. This integration allows specific comparisons between different Center data interpretations and is a model for future MGI data integration from the International Mouse Phenotyping Consortium (IMPC). All data on the MGI website are refreshed weekly.
+		</dt>
+		<dt>MGI Allele Summary Pages have been streamlined, concatinating biological systems where phenotypes have been detected while removing the details of each genotype examined. In addition, Allele Detail pages have been redesigned for clarity and performance, and to display results from these high-throughput phenotyping centers. Sex-specific phenotype data also are easier to discover. 
+		</dt>
+		<dt>For an example, see this MGI <a href="http://www.informatics.jax.org/accession/MGI:4460276">Allele Detail page</a>.
+		</dt>
+		</dl>
+	  </td>
+    </tr>
+	</table>
+	
+    
+</td></tr>
+  
+</div> 
+
+<!--#include file='include/templateBodyStop.html'--> 
+</body>
+</html>
