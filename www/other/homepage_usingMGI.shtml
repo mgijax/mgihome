@@ -245,7 +245,26 @@ symbol, name, or synonym into the Quick Search window near the top of every MGI 
 			   appear (see right for the protein coding gene 
 			   <a href="<!--#include file='include/fewi_url.html'-->marker/MGI:2441849"><i>Lpp</i></a>),
 			    or, on microRNA gene detail pages (see <a href="<!--#include file='include/fewi_url.html'-->marker/MGI:2676845">Mir181a-2</a> 
-			   for an example), the gene targets will be displayed.
+			   for an example), the gene targets will be displayed. Click the <b>View All</b>
+			   button (<font color="#54709B">&#35;1</font>) to see all interactions in tabular 
+			   and graphic format in the Interaction Explorer.</p> 
+			<p>The table lists the interacting features, the nature of the interaction, data 
+			   source and either a <i>validated status</i> or a <i>prediction score</i>, normalized 
+			   along a 0 to 1 scale. For more about prediction scores, see the <b>About 
+			   MGI Interaction Data</b> at the top right of the page. Columns may be sorted 
+			   using arrows in the header row, or apply filters using the options at the top
+			   of the page (<font color="#54709B">&#35;2</font>).</p>
+			<p>To download the entire dataset, use the <b>Download data</b> link (<font color="#54709B">&#35;3</font>). 
+			   For table data, reflecting any filters that have been applied, use the 
+			   <b>Batch Query</b> button, which further allows you to add Gene Attributes 
+			   and Additional Information if desired, by expanding the <b>Click to modify search</b>
+			   button that appears above the table on the linked page.</p>
+			<p>The hairball graphic (<font color="#54709B">&#35;4</font>)  can be used to 
+			   visualize the data in the adjacent table. Validated interactions are linked 
+			   with blue lines and predicted interactions with red lines. If a feature&ndash;feature 
+			   interaction has been reported from multiple data sources, it will appear in 
+			   the inner ring. Applying filters alters the graphic display as well as the 
+			   table.</p>  
  		</td>
  		<td>
  <a href="images/howto_interaction.png" target="_blank">
@@ -350,12 +369,14 @@ symbol, name, or synonym into the Quick Search window near the top of every MGI 
 
 <div id="alleleDetail">
 <h2><font color="#002255">2. Allele Detail pages</font></h2>
+
 Variation at a gene is called an allele. MGI currently curates over <a href="<!--#include file='include/mgihome_url.html'-->/homepages/stats/all_stats.shtml">
 34,727</a> targeted or phenotypic alleles in mice, including spontaneous or induced mutations, 
 gene targeted alleles (knock-out, knock-in, floxed/FRT conditional), transgenes, recombinases, 
 and more. Each allele has a unique allele symbol which follows the guidelines for 
 <a href="<!--#include file='include/mgihome_url.html'-->nomen/index.shtml">mouse standard 
 nomenclature</a>.<br>
+
 <p>In brief, allele symbols are typically formed for endogenous genes (including mutant 
 and targeted alleles) according to <i>GeneSymbol<sup>AlleleID</sup></i> where the AlleleID is:
 	<ul>
@@ -535,11 +556,12 @@ or for transgenes, where a non-mouse sequence is introduced:
 			  the Nomenclature or Mutation Origin section (see J:&#35; next to "Earliest 
 			  citation of germline transmission") at the top of the allele detail page, 
 			  or in the reference specified as "Original" at the bottom.</p>
-			  
+
 <table cellpadding="6">
 	<tr>
 		<td valign="top">
-			
+		    
+			  
 			<p>If a mouse or ES cell line is available carrying the exact allele from this 
 			  allele detail page, a hyperlinked number will appear next to "Carrying this 
 			  Mutation:" (<font color="#54709B">&#35;1</font>). If other alleles of the 
@@ -574,6 +596,7 @@ or for transgenes, where a non-mouse sequence is introduced:
 </div>
 <div id="query">
 <h2><font color="#002255">4. Query forms</font></h2>
+
 <p>Query forms allow researchers to set parameters and retrieve gene (or other) lists that 
 match a term or terms of interest. Query forms are organized by topic, and can be accessed 
 either from the <b>Search</b> dropdown menu in the dark blue bar at the top of the page, 
@@ -642,7 +665,8 @@ nomenclature for the allele symbol.</p>
 			<a href="images/howto_refResult.png" target="_blank">
 			<img src="<!--#include file='include/mgihome_url.html'-->/other/images/howto_refResult.png"
 			width="600px" height="420px" alt="reference query results" style="padding:5px;"
-			border="1" margins="5px"></a>
+			border="1" margins="5px"></a></td>
+	</tr>
 </table>
 </div>
 </div>
