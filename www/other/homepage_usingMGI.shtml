@@ -51,10 +51,10 @@ community.<p>
 	<li><a href="#genes">How to locate gene or allele specific information</a></li>
 	<li><a href="#geneDetail">Gene Detail pages</a>
 		<ul>
-			<li><a href="#vertebratehomology">Vertebrate Homology</a></li>
-			<li><a href="#interaction">Interactions</a></li>
+			<li><a href="#vertebratehomology">Vertebrate Homology</a></li>			
 			<li><a href="#alleles">Mutations, alleles and phenotypes</a></li>
 			<li><a href="#function">Gene Ontology (GO) classifications</a></li>
+			<li><a href="#interaction">Interactions</a></li>
 			<li><a href="#expression">Expression</a></li>
 		</ul>
 		</li>
@@ -66,7 +66,24 @@ community.<p>
 		</ul>
 		</li>
 	<li><a href="#query">Query Forms</a></li>
-	<li><a href="#reference">Starting from a reference</a></li>
+		<ul>
+			<li><a href="#query">Locate query forms in MGI</a></li>
+			<li><a href="#queryGenes">Example query: how to find a list of genes annotated 
+			    to a particular phenotype or function</a></li>
+			<li><a href="#queryBatchQ">Example query: how to retrieve MGI IDs (or other IDs) 
+			    for a list of genes</a></li>
+			<li><a href="#queryExpression">Example query: how to find gene expression data 
+				in a specific tissue, at given developmental stage</a></li>
+			<li><a href="#reference">Starting from a reference</a></li> 
+		</ul>
+	<li><a href="#batch">Batch Data tools</a></li>
+		<ul>
+			<li><a href="#batchData">Accessing batch data files</a></li>
+			<li><a href="#batchAnalysis">MouseMine computational access</a></li>
+			<li><a href="#batchAccess">Webservice access</a></li>
+		</ul>
+		</li>
+	
 </ol>
 
 </div>
@@ -180,6 +197,8 @@ symbol, name, or synonym into the Quick Search window near the top of every MGI 
  			<p>Click the link for <b>HomoloGene's Multiple Sequence Alignment
  			    (<font color="#54709B">&#35;3</font>)</b> to see the alignment 
 			   of protein sequences across the species represented.</p>
+			<p align="right"><a href="#geneDetail">[Return to Gene Detail]</a><br>
+			   <a href="#TOC">[Return to Table of Contents]</a></p>
  		</td>
  		<td>
  <a href="images/howto_homology.png" target="_blank">
@@ -222,6 +241,8 @@ symbol, name, or synonym into the Quick Search window near the top of every MGI 
  			 	see the <a href="#findmice">Find Mice (IMSR) ribbon</a> on <b>Allele 
  			 	Detail</b> pages or navigate the <a href="http://www.findmice.org">International 
  			 	Mouse Strain Resource</a> database directly.</p>
+ 			 <p align="right"><a href="#geneDetail">[Return to Gene Detail]</a><br>
+			   <a href="#TOC">[Return to Table of Contents]</a></p>
  		</td>
  		<td valign="top"><br>
 			<a href="images/howto_phenoAllele.png" target="_blank"> 	
@@ -265,7 +286,9 @@ symbol, name, or synonym into the Quick Search window near the top of every MGI 
 			   with blue lines and predicted interactions with red lines. If a feature&ndash;feature 
 			   interaction has been reported from multiple data sources, it will appear in 
 			   the inner ring. Applying filters alters the graphic display as well as the 
-			   table.</p>  
+			   table.</p>
+			<p align="right"><a href="#geneDetail">[Return to Gene Detail]</a><br>
+			   <a href="#TOC">[Return to Table of Contents]</a></p>     
  		</td>
  		<td>
  <a href="images/howto_interaction.png" target="_blank">
@@ -305,6 +328,9 @@ symbol, name, or synonym into the Quick Search window near the top of every MGI 
 		  <p>Clicking on individual terms will bring you to the Gene Ontology Browser 
 		    (<font color="#54709B">&#35;4</font>) where the term itself is put into context. The GO Browser can also 
 		    be navigated <a href="http://www.informatics.jax.org/searches/GO_form.shtml">here</a>.</p>
+		  <p align="right"><a href="#geneDetail">[Return to Gene Detail]</a><br>
+			   <a href="#TOC">[Return to Table of Contents]</a></p>  
+		    
 		</td>
 		<td>
 			<a href="images/howto_function.png" target="_blank"> 	
@@ -353,7 +379,9 @@ symbol, name, or synonym into the Quick Search window near the top of every MGI 
 			   can be applied using the options above the table (<font color="#54709B">&#35;3</font>). 
 			   Note that this table reports annotations where expression was reported as both 
 			    "detected" or "not detected" (see boxed column).
-			<p>Each piece of information is accompanied by a reference.</p> 
+			<p>Each piece of information is accompanied by a reference.</p>
+			<p align="right"><a href="#geneDetail">[Return to Gene Detail]</a><br>
+			   <a href="#TOC">[Return to Table of Contents]</a></p> 
 			
 		</td>
 		<td valign="top"><br>
@@ -481,6 +509,7 @@ or for transgenes, where a non-mouse sequence is introduced:
 			background varies, a new genotype ID (<i>hm1, hm2, ...</i>) and row will 
 			appear. For guidelines and interpretation of strain nomenclature, see 
 			<a href="<!--#include file='include/mgihome_url.html'-->nomen/index.shtml">here.</a></p>
+
 		</td>
 		<td valign="top"><br>
 			<a href="images/howto_genoTable.png" target="_blank">
@@ -509,6 +538,8 @@ or for transgenes, where a non-mouse sequence is introduced:
 		reported and genotypes that do not meet the previous categories.</li>
 </ul>
 <br>
+		<p align="right"><a href="#alleleDetail">[Return to Allele Detail]</a><br>
+			   <a href="#TOC">[Return to Table of Contents]</a></p>	
 </div>
 
 <div id="phenoTable">
@@ -528,10 +559,12 @@ or for transgenes, where a non-mouse sequence is introduced:
 				header. Clear spaces indicate that no phenotype was reported, and an 
 				"N" will appear if the system was specifically examined and reported as 
 				"Normal".</p>
-				<p>Clicking on check marks or column headers will generate a pop-up window 
+			<p>Clicking on check marks or column headers will generate a pop-up window 
 				for that genotype (<font color="#54709B">&#35;3</font>) with free text 
 				descriptions (<font color="#54709B">&#35;4</font>) and associated 
 				references for those annotations (<font color="#54709B">&#35;5</font>). </p>
+			<p align="right"><a href="#alleleDetail">[Return to Allele Detail]</a><br>
+			   <a href="#TOC">[Return to Table of Contents]</a></p>	
 		</td>
 		<td valign="top"><br>
 			<a href="images/howto_phenoTable.png" target="_blank">
@@ -583,6 +616,8 @@ or for transgenes, where a non-mouse sequence is introduced:
 			  (<font color="#54709B">&#35;3</font>). For purchasing or strain specific 
 			  questions, you can also contact the repository directly by using the purple 
 			  envelope icon.</p>
+			<p align="right"><a href="#alleleDetail">[Return to Allele Detail]</a><br>
+			   <a href="#TOC">[Return to Table of Contents]</a></p>	
 		</td>
 		<td valign="top"><br>
 			<a href="images/howto_buyMice.png" target="_blank">
@@ -622,20 +657,155 @@ best form to answer your biological question. The FAQ index can also be accessed
 the link beneath the MGI logo in the header of all MGI web pages.</p>
 </p>On each query form, clicking the question mark icon in the top left of the page 
 will generate a pop-up window with form-specific user documentation.</p>
+<br>
+<br>
+<div class="clear">
+<div id="queryGM" class="tab">
+<h3><font color="#002255"><blockquote>Example query: how to find a list of genes annotated 
+to a particular phenotype or function</font></blockquote></h3>
+
+<table cellpadding="6">
+	<tr>
+		<td valign="top">
+			<p>To retrieve a list of genes or markers satisfying your query, use the 
+			   <a href="<!--#include file='include/mgihome_url.html'-->../marker" target="_blank">Genes and Markers query form</a>, 
+			   found on the dropdown menu via <b>Search &gt; Genes &gt; Genes and Markers</b> or 
+			   from the <a href="<!--#include file='include/mgihome_url.html'-->../genes.shtml" target="_blank">Genes
+			   home page</a>.</p>
+			<p>To retrieve a list of alleles satisfying your query, use the <a href="<!--#include file='include/mgihome_url.html'-->../allele" target="_blank">Phenotypes, Alleles & Disease Models Search</a>,
+			   found on the dropdown menu via <b>Search &gt; Phenotypes &gt; Phenotypes, Alleles and Diseases Query</b> or
+			   from the <a href="<!--#include file='include/mgihome_url.html'-->../phenotypes.shtml" target="_blank">Phenotypes &amp; Mutant Alleles
+			   home page</a>.</p>
+			<p>This example will use the Genes and Markers query to search for all 
+			   protein&ndash;coding genes where a mutant allele has been involved in a 
+			   genotype annotated to embryonic lethality.</p>
+			<p>
+				<ol>
+					<li>Open the <a href="<!--#include file='include/mgihome_url.html'-->../marker" target="_blank">Genes and Markers query form</a>.<br><br></li>
+					<li>Select <b>protein coding gene</b> from the <b>Feature Type</b> options (<font color="#54709B">&#35;1</font>).<br><br></li>
+					<li>For optimal specificity, Enter the structured vocabulary term <b>MP:0002080</b> 
+					    (corresponding to "prenatal lethality") into the <b>Phenotype/Disease</b> window
+					    (<font color="#54709B">&#35;2</font>).
+					    <br>
+					    <br>Text&ndash;matching, keyword and Boolean searches will also work, search the 
+					    <a href="<!--#include file='include/mgihome_url.html'-->../searches/MP_form.shtml" target="_blank">Mammalian Phenotype Browser</a>
+					    for structured vocabulary terms.<br>
+						<br></li>
+					<li>Click Search to retrieve a results table. Export, sort and save if desired.</li>
+				</ol></p>
+			<p align="right"><a href="#query">[Return to Query]</a><br>
+			   <a href="#TOC">[Return to Table of Contents]</a></p>		
+		</td>
+		<td valign="top"><br>
+			<a href="images/howto_queryGM.png" target="_blank"> 	
+			<img src="<!--#include file='include/mgihome_url.html'-->/other/images/howto_queryGM.png"
+			width="600px" height="725px" alt="Genes and Markers query form" style="padding:5px;"
+			border="1" margins="5px"></a><br>
+		</td>
+	</tr>
+</table>
 </div>
-<div id="reference">
-<h2><font color="#002255">5. Starting from a Reference</font></h2>
-<p>
-Many users come to MGI looking for more information about a particular mouse allele or 
-strain that they encountered while reading through scientific literature. If multiple 
-alleles of a gene exist, it may not be immediately clear which allele corresponds to the one 
-from that publication, especially if the authors did not use standard allele 
-nomenclature for the allele symbol.</p>
-<div id=inset class="tab">
+<div id="queryBatchQ" class="tab">
+<h3><font color="#002255"><blockquote>Example query: how to retrieve MGI IDs (or other IDs) 
+for a list of genes</font></blockquote></h3>
+
+<table cellpadding="6">
+	<tr>
+		<td valign="top">
+			<p>Use the <a href="<!--#include file='include/mgihome_url.html'-->../batch" target="_blank">Batch Query</a>, 
+			   found on the dropdown menu via <b>Search &gt; Batch Query</b> or 
+			   from the <a href="<!--#include file='include/mgihome_url.html'-->../batch_data.shtml" target="_blank">Batch
+			   Data and Analysis Tools</a> link from the homepage to add IDs, attributes or 
+			   other information to a list of genes or probes.</p>
+			<p>This example will use the Batch Query to add MGI and Ensembl IDs to the 
+			   genes <i>Cacna1a, Ifng, Cxcl9, Pax2</i> and <i>Trp53</i>.</p>
+			<p>
+				<ol>
+					<li>Open the <a href="<!--#include file='include/mgihome_url.html'-->../batch" target="_blank">Batch Query form</a>.<br><br></li>
+					<li>Write or paste <i>Cacna1a, Ifng, Cxcl9, Pax2, Trp53</i> into the <b>
+					    ID/Symbols</b> list in the <b>Input</b> section of the page (<font color="#54709B">&#35;1</font>).
+					    Entries are case independent.<br><br></li>
+					<li>Choose "Current Symbols Only" from the <b>"Type:"</b> drop down 
+						menu above the input window, or leave at the default "Search All Input 
+						Types" (<font color="#54709B">&#35;2</font>).<br><br></li>
+					<li>Select <b>Nomenclature</b> (Gene Name and MGI ID) and <b>Ensembl ID</b>
+						from the <b>Gene Attribute</b> options on the right, along with any 
+						Additional Information (<font color="#54709B">&#35;3</font>).<br></br></li>
+					<li>Click <b>Search</b> to generate a results list.</li>
+				</ol></p>
+			<p align="right"><a href="#query">[Return to Query]</a><br>
+			   <a href="#TOC">[Return to Table of Contents]</a></p>			
+		</td>
+		<td valign="top"><br>
+			<a href="images/howto_queryBatch.png" target="_blank"> 	
+			<img src="<!--#include file='include/mgihome_url.html'-->/other/images/howto_queryBatch.png"
+			width="600px" height="240px" alt="Batch Query search" style="padding:5px;"
+			border="1" margins="5px"></a><br>
+		</td>
+	</tr>
+</table>
+</div>
+
+<div id="queryExpression" class="tab">
+<h3><font color="#002255"><blockquote>Example query: how to find gene expression data in 
+a specific tissue, at given developmental stage</font></blockquote></h3>
+
+<table cellpadding="6">
+	<tr>
+		<td valign="top">
+			<p>Use the <a href="<!--#include file='include/mgihome_url.html'-->../gxd" target="_blank">Gene 
+			   Expression Data Query</a>, found on the on the dropdown menu via <b>Search &gt; 
+			   Expression &gt; Gene Expression Data Query</b> or 
+			   from the <a href="<!--#include file='include/mgihome_url.html'-->../expression.shtml" target="_blank">Gene 
+			   Expression Database (GXD)</a> homepage, to access integrated gene expression 
+			   data and images provided by GXD.</p>
+			<p>This example will use the Expression Data Query to retrieve a list of genes 
+			   assays and images with annotations to the embryonic heart at E15.5.</p>
+			<p>
+				<ol>
+					<li>Open the <a href="<!--#include file='include/mgihome_url.html'-->../gxd" target="_blank">Gene Expression Data Query</a>.<br><br></li>
+					<li>Select whether to return assay results where expression was reported 
+						as <b>detected in</b>, <b>not detected in</b>, or <b>either</b> 
+						(<font color="#54709B">&#35;1</font>). The default is to return "either".<br><br></li>
+					<li>Begin typing the word "heart" into the <b>Anatomical Structures</b>
+						field, and select it from the list of autocomplete options when it 
+						appears (<font color="#54709B">&#35;2</font>).<br><br></li>
+					<li>Change tabs in the <b>Developmental Stages</b> options to <b>Use 
+						Ages (dpc)</b> and choose <b>E15.5</b>(<font color="#54709B">&#35;3</font>).<br><br>
+						Developmental Stage can also be specified using 
+						<a href="http://www.emouseatlas.org/emap/ema/theiler_stages/StageDefinition/stagedefinition.html">Theiler Stages (TS)</a>
+						which are based on expected anatomical feature development and 
+						allow cross&ndash;species comparisons.<br><br></li>
+					<li>Click Search to retrieve data and sort, filter or navigate tabs 
+						in results.</li>
+				</ol>
+			<p>See more about Expression in the Gene Detail:Expression section <a href="#expression">here</a>.
+			
+			<p align="right"><a href="#query">[Return to Query]</a><br>
+			   <a href="#TOC">[Return to Table of Contents]</a></p>			
+		</td>
+		<td valign="top"><br>
+			<a href="images/howto_queryExpress.png" target="_blank"> 	
+			<img src="<!--#include file='include/mgihome_url.html'-->/other/images/howto_queryExpress.png"
+			width="600px" height="387px" alt="Batch Query search" style="padding:5px;"
+			border="1" margins="5px"></a><br>
+		</td>
+	</tr>
+</table>
+</div>
+<div id="reference" class="tab">
+<h3><font color="#002255"><blockquote>Starting from a Reference</blockquote></font></h3>
+
 <div id="refquery">
 <table cellpadding="6">
 	<tr>
-		<td valign="top"><p>You can search MGI by author, citation or publication keywords 
+		<td valign="top">
+		<p>Many users come to MGI looking for more information about a particular mouse 
+		   allele or strain that they encountered while reading through scientific literature. 
+		   If multiple alleles of a gene exist, it may not be immediately clear which 
+		   allele corresponds to the one from that publication, especially if the authors 
+		   did not use standard <a href="#alleleDetail">allele nomenclature</a> for the allele symbol.</p>
+		<p>You can search MGI by author, citation or publication keywords 
 			using the <a href="<!--#include file='include/mgihome_url.html'-->../reference">
 			Reference Query Form</a>. This can be accessed from the Search dropdown menu 
 			under <i>References</i>, see <font color="#54709B">&#35;1</font> in 
@@ -662,6 +832,8 @@ nomenclature for the allele symbol.</p>
 			the data (<font color="#54709B">&#35;4</font>). In the example to the right, 
 			two different alleles of Jak3 were studied. Click on the <i>Allele Symbol</i> to 
 			go to the <i>Allele Detail Page</i>.
+		<p align="right"><a href="#query">[Return to Query]</a><br>
+			   <a href="#TOC">[Return to Table of Contents]</a></p>		
 		<td valign="top"><br>
 			<a href="images/howto_refResult.png" target="_blank">
 			<img src="<!--#include file='include/mgihome_url.html'-->/other/images/howto_refResult.png"
@@ -670,6 +842,100 @@ nomenclature for the allele symbol.</p>
 	</tr>
 </table>
 </div>
+</div>
+
+<div id="batch">
+<h2><font color="#002255">5. Batch Data</font></h2>
+<p>For more customization, or to work with large&ndash;scale data, MGI provides bulk reports
+available for download in tab delimited format, or several computational access options allowing 
+users to generate their own reports and analyses. MGI reports are refreshed weekly and 
+posted to an ftp site, see below.</p>
+
+<div id="batchData" class="tab">
+<h3><font color="#002255"><blockquote>Accessing batch data files</font></blockquote></h3>
+
+<table cellpadding="6">
+	<tr>
+		<td valign="top">
+			<p>Over 75 batch files can located via the <b>Download</b> menu (<font color="#54709B">&#35;1</font>), or from the 
+				<a href="<!--#include file='include/mgihome_url.html'-->../batch_data.shtml" target="_blank">
+				Batch Data and Analysis Tools</a> link on the homepage (<font color="#54709B">&#35;2</font>).</p> 
+			<p>Data are tab delimited (or pipe-delimited where indicated) with header rows.
+				Each field represented in the data is described briefly in the header row 
+				on the index page. An example appears below.</p>
+			<p>Where coordinates are displayed, the genome build will also be indicated on 
+			   the index page. For current coordinates, MGI uses GRCm38 with feature annotation 
+			   from <a href="http://vega.sanger.ac.uk/index.html">VEGA</a>.</p>
+			<p>Files are in .rpt format, which can be opened by Mac or PC as plain text, readable 
+			   by most browsers, text editors, Excel or other applications. If you do have 
+			   difficulty opening these files, please contact User Support.</p><br>
+			<p><b>Example file:</b><br>
+			<a href="images/howto_batchReport.png" target="_blank"> 	
+			<img src="<!--#include file='include/mgihome_url.html'-->/other/images/howto_batchReport.png"
+			width="95%" alt="data file download" style="padding:5px;"
+			border="1" margins="5px"></a><br>
+			
+			<p align="right"><a href="#batch">[Return to Batch Data]</a><br>
+			   <a href="#TOC">[Return to Table of Contents]</a></p>		  				
+		</td>
+		<td valign="top"><br>
+			<a href="images/howto_batchFiles.png" target="_blank"> 	
+			<img src="<!--#include file='include/mgihome_url.html'-->/other/images/howto_batchFiles.png"
+			width="450px" height="406px" alt="data file download" style="padding:5px;"
+			border="1" margins="5px"></a><br>
+		</td>
+	</tr>
+</table>
+</div>
+<div id="batchAnalysis" class="tab">
+<h3><font color="#002255"><blockquote>MouseMine computational access</font></blockquote></h3>
+<table cellpadding="6">
+	<tr>
+		<td valign="top">
+			<p>MouseMine is a new computational access platform for MGI data that offers maximal flexibility, 
+			   with numerous predefined templates, customizable queries, list enrichment tools 
+			   and other list or analysis options. Results from MouseMine can be saved online, 
+			   downloaded or forwarded to Galaxy.</p>
+			<p>MouseMine can be accessed from the Search drop down menu via <b>Search &gt; 
+			   MouseMine</b>, from the <a href="<!--#include file='include/mgihome_url.html'-->../batch_data" target="_blank">Batch
+			   Data and Analysis Tools</a> link on the homepage, or by direct url at 
+			   <a href="http://www.mousemine.org/mousemine/begin.do">http://www.mousemine.org/mousemine/begin.do</a></p>  				
+			<p>MouseMine has it's own documentation, see the <b>Help</b> and <b>FAQ</b> in the 
+				top right of the page (<font color="#54709B">&#35;4</font>), or use the 
+				links in the <b>First time here?</b> box.</p>
+
+			<p><b>Basic Features:</b><br>
+				For common questions, templates have been generated which can be browsed 
+				from the MouseMine home page (<font color="#54709B">&#35;1</font>) or the 
+				<b>Templates</b> tab at the top of the page.</p>
+			<p>To upload a list, view a saved list, perform list enrichment analysis, or 
+				run queries from a list, use the <b>Lists</b> tab (<font color="#54709B">&#35;2</font>).</p>
+			<p>For computationally savvy users, build custom queries through the <b>Query Builder</b>
+				tab (<font color="#54709B">&#35;3</font>). Please use the link to browse the 
+				data model to ensure that your query will search against the expected data
+				structures. Additional documentation can also be found through <a href="http://intermine.github.io/intermine.org/">InterMine</a>.</p>
+			<p> Create an account to save lists and queries (<font color="#54709B">&#35;4</font>), 
+				or contact MouseMine developers with questions.</p>
+			<p><a href="images/howto_mouseMine.png" target="_blank"> 	
+				<img src="<!--#include file='include/mgihome_url.html'-->/other/images/howto_mouseMine.png"
+				width="95%" alt="MouseMine home" style="padding:5px;"
+				border="1" margins="5px"></a></p>
+			<p align="right"><a href="#batch">[Return to Batch Data]</a><br>
+			   <a href="#TOC">[Return to Table of Contents]</a></p>
+		</td>
+	</tr>
+</table>
+</div>
+<div id="batchAccess" class="tab">
+<h3><font color="#002255"><blockquote>Webservice access</font></blockquote></h3>
+<p>MGI permits webservice access to the database by:
+<ol>
+	<li><a href="<!--#include file='include/mgihome_url.html'-->other/web_service.shtml" target="_blank">Web Service</a></li>
+	<li><a href="<!--#include file='include/mgihome_url.html'-->../software.shtml#sql" target="_blank">SQL query</a></li>
+	<li>through<a href="http://www.mousemine.org/mousemine/api.do"> MouseMine's API</a> (supports Perl, Python, Ruby, Java)</li>
+</ol>
+<p align="right"><a href="#batch">[Return to Batch Data]</a><br>
+			   <a href="#TOC">[Return to Table of Contents]</a></p> 
 </div>
 </div>
 <!--#include file='include/templateBlankBodyStop.html'-->
