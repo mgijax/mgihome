@@ -204,8 +204,12 @@ Note that the list in each section is a definition list <dl> where the term
             <tr >
                 <td>
                     <ul>
-                        <li>The MGI Web Service provides programmatic access to select portions of the database by uploading a set of identifiers (e.g. EntrezGene, GenBank, mouse gene symbol.).</li>
-                        <li>The service accepts SOAP 1.1 and 1.2 requests. See <a href="<!--#include file='include/mgihome_url.html'-->other/web_service.shtml">MGI Web Service</a> for details and examples. </li>
+                        <li>The old MGI Web Service interface has been replaced by <a href="http://www.mousemine.org/">MouseMine</a>, which offers much more robust and comprehensive programmatic access to MGI data.</li>
+                        <li>See: 
+<ul>
+<li>InterMine Web Services <a href="http://intermine.readthedocs.org/en/latest/web-services/".Documentation</a></li>
+<li><a href="http://iodocs.labs.intermine.org/mgi/docs#/">MGI API</a> Documentation.</li>
+</ul></li>
                     </ul>
                 </td>
             </tr>
