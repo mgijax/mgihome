@@ -1,0 +1,19 @@
+diff --git a/Install b/Install
+index 24548c2..deb21e2 100755
+--- a/Install
++++ b/Install
+@@ -58,7 +58,13 @@ fi
+ # read variables from the config file
+ 
+ exec 4<&0
+-/usr/local/mgi/live/lib/python/Configuration.py $CONFIGURATION tab > .Configuration.tab
++if [ -z "$LIB_PY_MISC" ]
++then
++   LIB_PY_MISC=/usr/local/mgi/live/lib/python
++   export LIB_PY_MISC
++fi
++
++$LIB_PY_MISC/Configuration.py $CONFIGURATION tab > .Configuration.tab
+ exec < .Configuration.tab
+ while read name value junk
+ do
