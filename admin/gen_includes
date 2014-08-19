@@ -152,6 +152,7 @@ def main ():
     stringToFileNoNL (config['MGIHOME_URL'], '../www/include/mgihome_url2.html')
     stringToFile (config['GB_URL'], '../www/include/gb_url.html')
     stringToFile (config['GBROWSE_URL'], '../www/include/gbrowse_url.html')
+    stringToFile (config['JBROWSE_URL'], '../www/include/jbrowse_url.html')
     stringToFile (config['GO_GRAPH_URL'], '../www/include/gograph_url.html')
     stringToFile (config['GO_TOOLS_URL'], '../www/include/gotools_url.html')
     stringToFile (config['LOCUSLINK_URL'], \
