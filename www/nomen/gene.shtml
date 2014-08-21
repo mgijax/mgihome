@@ -10,7 +10,7 @@
 </div> 
 
 <br/>
-<center>  <span class="titleBarSubTitle"> Revised: November, 2013<span>
+<center>  <span class="titleBarSubTitle"> Revised: August, 2014<span>
 </center>
 
 <style>
@@ -39,7 +39,7 @@ Rat Genome and Nomenclature Committee agreed to unify the rules and guidelines
 for gene, allele, and mutation nomenclature in mouse and rats. Nomenclature guidelines are now reviewed and updated annually by the two International Committees; current guidelines can be
 found on the <a href="index.shtml">MGD</a> and <a href="http://rgd.mcw.edu/nomen/nomen.shtml">RGD</a> web sites. </p>
 
-<p>To see the previous version of these guidelines (revised in September 2011), click <a href="2011_gene.shtml">here</a>. </p>
+<p>To see the previous version of these guidelines (revised in November 2013), click <a href="2013_gene.shtml">here</a>. </p>
 
 
 <h3>Table of Contents</h3>
@@ -128,7 +128,7 @@ found on the <a href="index.shtml">MGD</a> and <a href="http://rgd.mcw.edu/nomen
 &nbsp;&nbsp;<a href="#tarm">3.5&nbsp;&nbsp;Targeted and Trapped Mutations</a><br>
         	
 &nbsp;&nbsp;&nbsp;&nbsp;<a href="#kkcaotm">3.5.1&nbsp;&nbsp;Knockout, Knockin, Conditional and Other Targeted Mutations</a><br>
-&nbsp;&nbsp;&nbsp;&nbsp;<a href="#endim">3.5.2&nbsp;&nbsp;Endonuclease-induced Mutations</a><br>
+&nbsp;&nbsp;&nbsp;&nbsp;<a href="#endim">3.5.2&nbsp;&nbsp;Endonuclease-mediated Mutations</a><br>
 &nbsp;&nbsp;&nbsp;&nbsp;<a href="#gtm">3.5.3&nbsp;&nbsp;Gene Trap Mutations</a><br>
 &nbsp;&nbsp;&nbsp;&nbsp;<a href="#enhancer">3.5.4&nbsp;&nbsp;Enhancer Traps</a><br>
       	 
@@ -526,13 +526,15 @@ should be applied to the family as in <a href="#fisc">Section 2.6.2</A>.</p>
 <p>Sequencing can identify genes that are clearly members of a family (paralogs). Where
 possible, members of the family should be named and symbolized using the same
 stem followed by a serial number. The same family members in different
-mammalian species (orthologs) should, wherever possible, be given the same name and symbol. Pseudogenes should be suffixed by <i>-ps</i> and a serial number if there are multiple pseudogenes. Note that the numbering of pseudogenes among species is independent and no relationship should be implied among mouse, rat, or human pseudogenes based on their serial numbering.</p>
+mammalian species (orthologs) should, wherever possible, be given the same name and symbol. Pseudogenes should be suffixed by <i>-ps</i> and a serial number if there are multiple pseudogenes. It has been shown that functional activity of a designated pseudogene can occur in different strains or tissues. Therefore, pseudogenes are generally assigned the next number of letter in the relevant gene family symbol series, suffixed by a "-ps" for pseudogene and with "pseudogene" included in its name. Note that the numbering of pseudogenes among species is independent and no relationship should be implied among mouse, rat, or human pseudogenes based on their serial numbering.</p>
 
 <p><blockquote>
 <b>Examples:</b>
 <table cellpadding="4" width="!">
-<tr><td>In mouse, phosphoglycerate kinase 1, pseudogenes 1 to 7, <i>Pgk1-ps1</i> to <i>Pgk1-ps7</i></td></tr>
 <tr><td>In rat, calmodulin pseudogene 1, <i>Calm-ps1</i></td></tr>
+<tr><td>In mouse, phosphoglycerate kinase 1, pseudogenes 1 to 7, <i>Pgk1-ps1</i> to <i>Pgk1-ps7</i></td></tr>
+<tr><td>In mouse, <i>Ces2a, Ces2b, Ces2c, Ces2d-ps, Ces2e</i></td></tr>
+<tr><td>&nbsp;&nbsp;&nbsp;&nbsp;Members of the carboxylesterase 2 gene family, where <i>Ces2d-ps</i> appears as a unique entity in the series of named carboxylesterase 2 family members.</td></tr>
 </table>
 </blockquote>
 </p>
@@ -766,7 +768,7 @@ are given serial numbers in order of identification.</p>
 identified cytologically by their Giemsa staining. A DNA segment that maps within an HSR is given a conventional DNA segment symbol, when its locus is on a normal (unamplified) chromosome. When expanded into an HSR its symbol follows the guidelines for insertions, thus becoming, for example, Is(HSR;1)1Lub.</p>
 
 <H4><A NAME="chore"></A>2.11.5 &nbsp;&nbsp;Chromosomal Rearrangements</H4>
-<p>Symbols for chromosomal deletions, inversions, and translocations are given in the chromosomal nomenclature section. The end points of each of these rearrangements, however, define a locus. Where there is only a single locus on a chromosome, the chromosome anomaly symbol serves to define it. However, where an anomaly gives two loci on a single chromosome they can bedistinguished by the letters p and d for proximal and distal.</p>
+<p>Symbols for chromosomal deletions, inversions, and translocations are given in the <a href="anomalies.shtml">Rules for Nomenclature of Chromosome Aberrations</a>. The end points of each of these rearrangements, however, define a locus. Where there is only a single locus on a chromosome, the chromosome anomaly symbol serves to define it. However, where an anomaly gives two loci on a single chromosome they can bedistinguished by the letters p and d for proximal and distal.</p>
 
 <p>
 <ul>
@@ -816,7 +818,7 @@ residing on the mitochondria)</td></tr>
 <tr><td valign="top">subunit</td><td>&nbsp;&nbsp;&nbsp;</td><td valign="top">the subunit designation</td></tr>
 <tr><td valign="top">#</td><td>&nbsp;&nbsp;&nbsp;</td><td valign="top">serial number for this ribosomal-RNA</td></tr>
 <tr><th valign="top" align="left" colspan="3">Example:</th></tr>
-<tr><TD VALIGN="top">n-R5s104</td><td>&nbsp;&nbsp;&nbsp;</td><td valign="top">nuclear encoded rRNA 5S 104</td></tr>	
+<tr><TD VALIGN="top"><i>n-R5s104</i></td><td>&nbsp;&nbsp;&nbsp;</td><td valign="top">nuclear encoded rRNA 5S 104</td></tr>	
 </table>
 </blockquote>
 </p>
@@ -843,7 +845,7 @@ A microRNA cluster consists of several microRNAs in immediate genome proximity. 
 <p>Enhancers, promoters, and regulatory regions are to be symbolized as: </p>
 <blockquote>
 <table border="0" cellspacing="0" cellpadding="3" width="!">
-<tr><td valign="top">Rr#</td><td valign="top">regulatory region #</td></tr>	
+<tr><td valign="top"><i>Rr#</i></td><td valign="top">regulatory region #</td></tr>	
 <tr><td valign="top" colspan="2">where # indicates the next number in the series.</td></tr>
 </table>
 </blockquote>
@@ -869,8 +871,7 @@ or <a href="http://rgd.mcw.edu/">RGD</a> (rat) for an allele or gene accession i
 </table>
 </blockquote>
 </p>
-<p>Further (allelic) mutations at the same locus, if they have the same phenotype, are given the same name with a Laboratory code preceded by a serial number (if more than one additional allele
-from the same lab). In the symbol the Laboratory code is added as a superscript.</p>
+<p>Further (allelic) mutations at the same locus, if they have the same phenotype, are given the same name with a Laboratory code preceded by a serial number (if more than one additional allele from the same lab). In the symbol the Laboratory code is added as a superscript.</p>
 
 <p><blockquote>
 <b>Example:</b> 
@@ -886,7 +887,7 @@ transgene as superscript (see <A HREF="#tim">Section 3.4.2</a> and <A HREF="#tra
 <p><blockquote>
 <b>Example:</b> 
 <table cellpadding="4" width="!">
-<tr><td><i>awg<sup>Tg(GBtslenv)832Pkw</sup></i>&nbsp;&nbsp;  this mutation of abnormal wobbly gait is caused by a transgene in mouse line 832, produced in the laboratory of Paul Wong. (An abbreviated form, <i>awg<sup>Tg832Pkw</sup></i> can be used if the abbreviated designation is unique.)</td></tr>
+<tr><td><i>awg<sup>Tg(GBtslenv)832Pkw</sup></i>&nbsp;&nbsp;</td>  <td>this mutation of abnormal wobbly gait is caused by a transgene in mouse line 832, produced in the laboratory of Paul Wong. (An abbreviated form, <i>awg<sup>Tg832Pkw</sup></i> can be used if the abbreviated designation is unique.)</td></tr>
 </table>
 </blockquote>
 </p>
@@ -1360,7 +1361,7 @@ where the inserted BAC is from the RP22 BAC library, plate 412, row K, column
 </p>
 
 <p><blockquote>
-<b>Example:</b> &nbsp;<i>TgTn(sb-T2/GT2/tTA)1Dla</i><br><br>
+<b>Example:</b> &nbsp;TgTn(sb-T2/GT2/tTA)1Dla<br><br>
 
 The symbol consists of:
 <ul>
@@ -1385,7 +1386,7 @@ Tg(promoter-transposase)#Labcode
 </p>
 <p>
 <blockquote>
-<b>Example:</b> &nbsp;<i>Tg(ACTB-sb10)545Abc</i><br><br>
+<b>Example:</b> &nbsp;Tg(ACTB-sb10)545Abc<br><br>
 The symbol consists of:<ul>
  <li>Tg denoting transgene</li>
  <li>In parentheses, the official gene symbol for the promoter, using the nomenclature of the species of origin, followed by a hyphen and a lowercase transposase symbol, in this case sb10 for the Sleeping Beauty 10 transposase</li>
