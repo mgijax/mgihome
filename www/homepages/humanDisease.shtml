@@ -130,8 +130,8 @@ textarea {resize:none; background-color:#FFE4B5;}
 {
 	height: 24px;
 	position: relative;
-	left: 100px;
-	top: 4px;
+	left: 20px;
+	top: 20px;
 }
 /* yui panel styles */
 body.yui-skin-sam .yui-panel .hd,
@@ -217,15 +217,7 @@ body.yui-skin-sam .yui-ac-hd {padding: 5px;}
       style="position:absolute; top:312px; left:710px; width:60px; font-size:14px;" type="reset" >
     </form>
 
-    <div style="position:absolute; top:230px; left:20px; ">
-	<br/>
-      <div style='font-size:150%;'>
-        ------------------------------------------------------------------------
-      </div>
-      <form action="<!--#include file='include/fewi_url.html'-->diseasePortal/uploadFile" method="post" enctype="multipart/form-data"
-		id="hiddenFileForm" name="hiddenFileForm" target="hiddenfileform_if">
-       <div style='margin-top:6px; margin-left:20px;'>
-        <span style="font-size:150%;">Upload a VCF File: <input id="locationsFileInput" type="file" name="file"></span>
+    <div style="position:absolute; top:212px; left:380px; z-index: 2;">
 	<img id="locationsFileHelpImg" src="<!--#include file='include/webshare_url.html'-->images/help_large_transp.gif" />
 	<div id="locationsFileHelp">
 		<div class="hd">VCF File Uploading Tips</div>
@@ -254,9 +246,16 @@ body.yui-skin-sam .yui-ac-hd {padding: 5px;}
 				Save as a tab-delimited file in a format other than Unicode.</p>
 		</div>
 	</div>
+	</div>
+
+    <div style="position:absolute; top:240px; left:240px; ">
+
+      <form action="<!--#include file='include/fewi_url.html'-->diseasePortal/uploadFile" method="post" enctype="multipart/form-data" id="hiddenFileForm" name="hiddenFileForm" target="hiddenfileform_if">
+       <div style='margin-left:20px;'>
+        Upload a VCF File:<br/><input id="locationsFileInput" type="file" name="file">
       </div>
-      <div style='margin-left:220px; padding-top:5px;'>
-	<label><input id="enableVcfFilter" name="enableVcfFilter" type="checkbox" value="true" class="organism" checked="checked"/>Apply filters</label>
+      <div style='margin-left:20px; padding-top:5px;'>
+			<label><input id="enableVcfFilter" name="enableVcfFilter" type="checkbox" value="true" class="organism" checked="checked"/>Apply filters</label>
       	<br/>
 	<!-- These are here to make the user feel better, but should not be submitted as extra organism values -->
         <label><input id="organismHuman2" name="organismIgnore" class="organism" type="radio" value="human"/> Human(GRCh38)</label>
@@ -266,11 +265,13 @@ body.yui-skin-sam .yui-ac-hd {padding: 5px;}
       <input type="hidden" name="type" value="vcf">
       <input type="hidden" name="associatedFormInput" value="VCF file">
       </form>
+
+
+
     </div>
-    <div id="geneFileDiv" style="position:absolute; top:418px; 243px;">
-	    <form action="<!--#include file='include/fewi_url.html'-->diseasePortal/uploadFile" method="post" enctype="multipart/form-data"
-		    id="hiddenFileForm2" name="hiddenFileForm" target="hiddenfileform_if">
-		    <span style="">Upload Genes File (.txt): <input id="geneFileInput" type="file" name="file"></span>
+    <div id="geneFileDiv" style="position:absolute; top:240px; left:8.5px;">
+	    <form action="<!--#include file='include/fewi_url.html'-->diseasePortal/uploadFile" method="post" enctype="multipart/form-data" id="hiddenFileForm2" name="hiddenFileForm" target="hiddenfileform_if">
+		    Upload Genes File (.txt):<br/><input id="geneFileInput" type="file" name="file">
 		    <input type="hidden" name="field" value="geneFile">
 		    <input type="hidden" name="type" value="singleCol">
 		    <input type="hidden" name="associatedFormInput" value="Gene file">
