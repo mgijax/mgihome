@@ -128,10 +128,10 @@ textarea {resize:none; background-color:#FFE4B5;}
 .hide { display: none; }
 #locationsFileHelpImg
 {
-	height: 24px;
+	height: 20px;
 	position: relative;
-	left: 20px;
-	top: 20px;
+	left: 40px;
+	top: 25px;
 }
 /* yui panel styles */
 body.yui-skin-sam .yui-panel .hd,
@@ -175,8 +175,8 @@ body.yui-skin-sam .yui-ac-hd {padding: 5px;}
     <div style="position:absolute; top:2px; left:254px; width:300px;">
     <div class='relativePos'>
       <div style="position:absolute; top:6px; left:15px; ">
-        <span class='queryHeaderText'>Search by genome locations</span></br>
-        <div style='margin-left:6px; padding-top:42px;'>
+        <span class='queryHeaderText'>Search by genome locations</span>
+        <div style='padding-top:42px;font-size: smaller;'>
         <label><input id="organismHuman1" name="organism" class="organism" type="radio" value="human"/> Human(GRCh38)</label>
         <label><input id="organismMouse1" name="organism" class="organism" type="radio" value="mouse" checked="checked"/> Mouse(GRCm38)</label>
         </div>
@@ -195,8 +195,10 @@ body.yui-skin-sam .yui-ac-hd {padding: 5px;}
     <div style="position:absolute; top:2px; left:546px; width:250px;">
     <div class='relativePos'>
       <div style="position:absolute; top:6px; left:15px; ">
-        <span class='queryHeaderText'>Search by disease</br> or phenotype terms</span><br /><br />
+        <span class='queryHeaderText'>Search by disease</br> or phenotype terms</span>
+        <div style='padding-top: 12px;'>
         <span style="font-style: italic;font-size: 11px;">Click "GO" to search by entered text without selecting a term from the list.</span>
+			</div>
       </div>
       <div style="position:absolute; top:85px; left:6px; ">
       <textarea id="phenotypes" name="phenotypes" style="height:80px; width:240px;"></textarea>
@@ -254,7 +256,7 @@ body.yui-skin-sam .yui-ac-hd {padding: 5px;}
        <div style='margin-left:20px;'>
         Upload a VCF File:<br/><input id="locationsFileInput" type="file" name="file">
       </div>
-      <div style='margin-left:20px; padding-top:5px;'>
+      <div style='margin-left:20px; padding-top:5px;font-size: smaller;'>
 			<label><input id="enableVcfFilter" name="enableVcfFilter" type="checkbox" value="true" class="organism" checked="checked"/>Apply filters</label>
       	<br/>
 	<!-- These are here to make the user feel better, but should not be submitted as extra organism values -->
