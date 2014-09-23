@@ -44,7 +44,7 @@ border: 1px solid #EBCA6D;
 					<dl>
 						<dt>Search for detailed gene expression assay results.</dt>
 						<dd class="searchList"><a class="small homeLink" href="<!--#include file='include/fewi_url.html'-->gxd">Gene Expression Data Query</a></dd>
-						
+
 						<dt class="whatList">Search for references on gene expression during development.</dt>
 						<dd class="searchList"><a class="small homeLink" href="<!--#include file='include/fewi_url.html'-->gxdlit">Gene Expression Literature Query</a></dd>
 						<!--<dt class="whatList">Search for genes expressed in some anatomical structures and/or
@@ -54,8 +54,8 @@ border: 1px solid #EBCA6D;
 						<dt class="whatList">Search or browse for anatomical structures; includes links to associated expression results.</dt>
 						<dd class="searchList"><a class="small homeLink" href="<!--#include file='include/fewi_url.html'-->vocab/gxd/anatomy/">Mouse Developmental Anatomy Browser</a></dd>
 
-						<dt class="whatList">Search the Edinburgh Mouse Atlas for anatomical terms and query for associated expression data.</dt>
-						<dd class="searchList"><a class="small homeLink" href="http://www.emouseatlas.org/emap/ema/section_browser/SectionBrowser.html">EMAGE Anatomical Section Browser</a></dd>		
+						<dt class="whatList">Use the interactive Tissue by Stage Matrix to access detailed gene expression results.</dt>
+						<dd class="searchList"><a class="small homeLink" href="http://cardolan.informatics.jax.org/gxd#gxd=nomenclature%3D%26vocabTerm%3D%26annotationId%3D%26locations%3D%26structure%3D%26structureID%3D%26theilerStage%3D0%26results%3D100%26startIndex%3D0%26sort%3D%26dir%3Dasc%26tab%3Dstagegridtab">Gene Expression Data Matrix</a></dd>
 
 						<dt class="whatList">Search for gene expression results using BioMart; data returns can be customized and downloaded. </dt>
 						<dd class="searchList"><a class="small homeLink" href="http://biomart.informatics.jax.org/biomart/martview?VIRTUALSCHEMANAME=default&ATTRIBUTES=result.default.naive_attributes.markersymbol|result.default.naive_attributes.assaymgiid|result.default.naive_attributes.assaytype|result.default.naive_attributes.mutantalleles|result.default.naive_attributes.age|result.default.naive_attributes.stagenumber|result.default.naive_attributes.printname|result.default.naive_attributes.strength|result.default.naive_attributes.pattern|result.default.naive_attributes.imagefigure&FILTERS=&VISIBLEPANEL=mainpanel">GXD BioMart</a></dd>					</dl>
@@ -110,8 +110,8 @@ border: 1px solid #EBCA6D;
     <ul>
 
 <li>The new, interactive <a href="<!--#include file='include/fewi_url.html'-->vocab/gxd/anatomy/">Mouse Developmental Anatomy Browser</a> allows users navigate through the anatomy ontology to locate specific anatomical structures and to obtain associated expression data. Features include: an autocomplete list to aid searching; a tree view of the ontology in which branches can be expanded and collapsed; and the ability to toggle between stage-specific and stage-independent instances of terms. You can read more about the revisions to the anatomy ontology itself <a href="<!--#include file="include/mgihome_url.html"-->news/whatsnew.shtml#march_2014">here</a>.</li>
-<li>Filters that allow users to further limit expression results have been added to the data summaries that are returned by the GXD queries and accessed by expression result links on detail pages through MGI. Try them <a href="<!--#include file='include/fewi_url.html'-->gxd/structure/EMAPA:16039">here</a>.</li> 
-<li>GXD is also pleased to announce that additional RNA in situ hybridization data from the GenitoUrinary Development Molecular Anatomy Project (GUDMAP) database are now available at <a href="<!--#include file='include/fewi_url.html'-->reference/J:171409">J:171409</a>. This set now includes over 137,000 RNA in situ hybridization results obtained from embryonic and postnatal specimens, analyzing 3,676 genes in 4,499 assays and accompanied by 10,655 image montages for ~ 32,000 individual images.</li> 
+<li>Filters that allow users to further limit expression results have been added to the data summaries that are returned by the GXD queries and accessed by expression result links on detail pages through MGI. Try them <a href="<!--#include file='include/fewi_url.html'-->gxd/structure/EMAPA:16039">here</a>.</li>
+<li>GXD is also pleased to announce that additional RNA in situ hybridization data from the GenitoUrinary Development Molecular Anatomy Project (GUDMAP) database are now available at <a href="<!--#include file='include/fewi_url.html'-->reference/J:171409">J:171409</a>. This set now includes over 137,000 RNA in situ hybridization results obtained from embryonic and postnatal specimens, analyzing 3,676 genes in 4,499 assays and accompanied by 10,655 image montages for ~ 32,000 individual images.</li>
 <!--<li>Finally, GXD pages within MGI are now demarcated by gold sidebars and/or the presence of a GXD logo.</li>-->
 <!--<li>The <a href="<!--#include file='include/fewi_url.html'-->gxd">Differential Expression Search</a>, present as a tab on the standard GXD query form, allows biologists to search for genes that are expressed in some anatomical structures but not others and/or in some developmental stages but not others. Formerly named The Gene Expression Data Expanded Query, this tool has been streamlined and clearly delineates the different search capabilities. The mechanisms behind the differential searches have been re-designed to allow for speedier returns and the search return now provides tabbed data summaries that are sortable and interactive.</li>-->
 
@@ -132,7 +132,7 @@ border: 1px solid #EBCA6D;
     order of the table and div tags is very specific to avoid some
     flickering in IE.-->
 <table width="100%" cellpadding="0" cellspacing="0" border="0"><tr><td>
-<style>	
+<style>
 .gxdcontentstyle {
 border: 1px solid #EBCA6D;
 margin-bottom: 1em;
