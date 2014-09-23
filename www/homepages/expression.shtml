@@ -55,7 +55,7 @@ border: 1px solid #EBCA6D;
 						<dd class="searchList"><a class="small homeLink" href="<!--#include file='include/fewi_url.html'-->vocab/gxd/anatomy/">Mouse Developmental Anatomy Browser</a></dd>
 
 						<dt class="whatList">Use the interactive Tissue by Stage Matrix to access detailed gene expression results.</dt>
-						<dd class="searchList"><a class="small homeLink" href="http://cardolan.informatics.jax.org/gxd#gxd=nomenclature%3D%26vocabTerm%3D%26annotationId%3D%26locations%3D%26structure%3D%26structureID%3D%26theilerStage%3D0%26results%3D100%26startIndex%3D0%26sort%3D%26dir%3Dasc%26tab%3Dstagegridtab">Gene Expression Data Matrix</a></dd>
+						<dd class="searchList"><a class="small homeLink" href="<!--#include file='include/fewi_url.html'-->gxd#gxd=nomenclature%3D%26vocabTerm%3D%26annotationId%3D%26locations%3D%26structure%3D%26structureID%3D%26theilerStage%3D0%26results%3D100%26startIndex%3D0%26sort%3D%26dir%3Dasc%26tab%3Dstagegridtab">Gene Expression Data Matrix</a></dd>
 
 						<dt class="whatList">Search for gene expression results using BioMart; data returns can be customized and downloaded. </dt>
 						<dd class="searchList"><a class="small homeLink" href="http://biomart.informatics.jax.org/biomart/martview?VIRTUALSCHEMANAME=default&ATTRIBUTES=result.default.naive_attributes.markersymbol|result.default.naive_attributes.assaymgiid|result.default.naive_attributes.assaytype|result.default.naive_attributes.mutantalleles|result.default.naive_attributes.age|result.default.naive_attributes.stagenumber|result.default.naive_attributes.printname|result.default.naive_attributes.strength|result.default.naive_attributes.pattern|result.default.naive_attributes.imagefigure&FILTERS=&VISIBLEPANEL=mainpanel">GXD BioMart</a></dd>					</dl>
