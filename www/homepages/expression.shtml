@@ -109,11 +109,9 @@ border: 1px solid #EBCA6D;
 	<div class="boxBG pad5 small">
     <ul>
 
-<li>The new, interactive <a href="<!--#include file='include/fewi_url.html'-->vocab/gxd/anatomy/">Mouse Developmental Anatomy Browser</a> allows users navigate through the anatomy ontology to locate specific anatomical structures and to obtain associated expression data. Features include: an autocomplete list to aid searching; a tree view of the ontology in which branches can be expanded and collapsed; and the ability to toggle between stage-specific and stage-independent instances of terms. You can read more about the revisions to the anatomy ontology itself <a href="<!--#include file="include/mgihome_url.html"-->news/whatsnew.shtml#march_2014">here</a>.</li>
-<li>Filters that allow users to further limit expression results have been added to the data summaries that are returned by the GXD queries and accessed by expression result links on detail pages through MGI. Try them <a href="<!--#include file='include/fewi_url.html'-->gxd/structure/EMAPA:16039">here</a>.</li>
-<li>GXD is also pleased to announce that additional RNA in situ hybridization data from the GenitoUrinary Development Molecular Anatomy Project (GUDMAP) database are now available at <a href="<!--#include file='include/fewi_url.html'-->reference/J:171409">J:171409</a>. This set now includes over 137,000 RNA in situ hybridization results obtained from embryonic and postnatal specimens, analyzing 3,676 genes in 4,499 assays and accompanied by 10,655 image montages for ~ 32,000 individual images.</li>
-<!--<li>Finally, GXD pages within MGI are now demarcated by gold sidebars and/or the presence of a GXD logo.</li>-->
-<!--<li>The <a href="<!--#include file='include/fewi_url.html'-->gxd">Differential Expression Search</a>, present as a tab on the standard GXD query form, allows biologists to search for genes that are expressed in some anatomical structures but not others and/or in some developmental stages but not others. Formerly named The Gene Expression Data Expanded Query, this tool has been streamlined and clearly delineates the different search capabilities. The mechanisms behind the differential searches have been re-designed to allow for speedier returns and the search return now provides tabbed data summaries that are sortable and interactive.</li>-->
+<li>Two interactive matrix views have been developed to provide users with intuitive, high-level summaries of expression data and from where they can easily move to levels of greater detail. The tissue-by-developmental stage matrix provides global overviews of the spatio-temporal expression patterns of genes. The tissue-by-gene matrix enables a comparison of expression patterns between genes. Both types of matrices can be expanded (and collapsed) along the tissue axis, based on the hierarchical organization of the anatomy. Rows and columns in the matrices can be selected to refine the data set. The matrices have been added as new tabs to the gene expression data summaries. These matrices can be accessed by searches using the Gene Expression Data Query Form and via links from the Mouse Developmental Anatomy Browser.</li>
+<li>The Gene Expression Data Matrix is now accessible from the Access Data section of this page. It returns all of GXD's expression data in a tissue-by-developmental stage matrix. When using this matrix, users start with a high-level overview of GXD's data and then can interactively view and select expression data for the specific tissues and / or developmental stages of interest.</li>
+<li>Other new features include: the standard Gene Expression Data Query now lets users define gene sets based on genomic location; and the expression section of the MGI Gene detail pages now provides links to expression data for the orthologous genes in chicken and zebrafish.</li>
 
 <!--<br>
 <br>-->
@@ -122,8 +120,6 @@ border: 1px solid #EBCA6D;
 
  </div>
 </div>
-
-
 
 <!-- Tabs box -->
 <!-- Note: This section uses a white gif to set the width and avoid
