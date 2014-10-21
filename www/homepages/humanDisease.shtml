@@ -35,14 +35,14 @@
 #hdpQueryFormWrapper{
   left:6px;
   width: 804px;
-  height: 340px;
+  height: 370px;
   border:2px solid;
   border-radius:22px;
   position:absolute;
   background-color:#D0E0F0;
 }
 #resourceLinksWrapper{
-  top:360px;
+  top:390px;
   left:6px;
   width: 250px;
   height: 430px;
@@ -68,7 +68,7 @@
   left:10px;
 }
 #spotlightWrapper{
-  top:360px;
+  top:390px;
   left:300px;
   width: 502px;
   height: 430px;
@@ -92,7 +92,7 @@ textarea {resize:none; background-color:#FFE4B5;}
 
 /* styles for autocomplete */
 .ui-autocomplete {
-  max-height: 135px;
+  max-height: 120px;
   overflow-y: auto;
   /* prevent horizontal scrollbar */
   overflow-x: hidden;
@@ -207,17 +207,23 @@ body.yui-skin-sam .yui-ac-hd {padding: 5px;}
       <a href="<!--#include file='include/fewi_url.html'-->diseasePortal/summary?phenotypes=105830">105830</a>
       <br/><br/>
       Use quotes for exact match. <a onclick="javascript:openUserhelpWindow('MISC_boolean_search_help.shtml#boolean_operators'); return false;" href="MISC_boolean_search_help.shtml#boolean_operators">Hints</a> for using AND, OR, NOT, quotes, partial word matching.
+      <br/><br/>
+		<label><input id="showingQuery" checked="checked" type='checkbox' />Show Effective Phenotype Query</label>
       </div>
     </div>
     </div>
 
     <input id="locationsFileName" type="hidden" name="locationsFileName" value="">
     <input id="geneFileName" type="hidden" name="geneFileName" value="">
-    <input style="position:absolute; top:305px; left:640px; width:60px; font-size:20px;"
+    <input style="position:absolute; top:295px; left:640px; width:60px; font-size:20px;"
       name="submit" class="formButtons" value="GO" type="submit"><br/>
     <input class="formButtons"
-      style="position:absolute; top:312px; left:710px; width:60px; font-size:14px;" type="reset" >
+      style="position:absolute; top:302px; left:710px; width:60px; font-size:14px;" type="reset" >
     </form>
+
+	<div style="position:absolute; top:330px; left:15px; overflow-y: scroll; height:36px;">
+		<span id="queryText" style="font-size:x-small"></span>
+	</div>
 
     <div style="position:absolute; top:227px; left:380px; z-index: 1;">
 	<img id="locationsFileHelpImg" src="<!--#include file='include/webshare_url.html'-->images/help_large_transp.gif" />
