@@ -29,8 +29,8 @@ send a message to:
 
 <P>
 <HR>
-<B>How to Subscribe</B><p>
-You can subscribe here.  Enter your name and e-mail address below and select a list. Click on the Submit button to send your subscription request.  You will receive an acknowledgement and instructions via e-mail.<p>
+<B>How to Subscribe</B>
+<p>Enter your name and e-mail address below and select a list. You will receive an acknowledgement and instructions via e-mail.<p>
 
 <FORM METHOD="POST" ACTION="listsrv_subscribe.cgi">
 <DL>
@@ -39,8 +39,8 @@ You can subscribe here.  Enter your name and e-mail address below and select a l
 <DT><p>Your e-mail address:<br>
 <DD><INPUT TYPE="text" NAME="emailaddr" SIZE=30><P>
 <DT>Click to put a checkmark next to the list:<p>
-<DD><INPUT TYPE="checkbox" NAME="listname" VALUE="mgi-list"> mgi-list
-<DD><INPUT TYPE="checkbox" NAME="listname" VALUE="mgi-technical-list"> mgi-technical-list
+<DD><INPUT TYPE="checkbox" NAME="listname" VALUE="mgi-list"> <b>mgi-list</b>   (Forum for mouse genetics and MGI news)
+<DD><INPUT TYPE="checkbox" NAME="listname" VALUE="mgi-technical-list"> <b>mgi-technical-list</b>   (Forum about programmatic access to MGI data)
 </DL>
 <HR>
 <INPUT TYPE=submit VALUE="Submit"> <INPUT TYPE=reset VALUE="Reset Form">
