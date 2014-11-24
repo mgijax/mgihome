@@ -230,11 +230,13 @@ body.yui-skin-sam .yui-ac-hd {padding: 5px;}
 
     <input id="locationsFileName" type="hidden" name="locationsFileName" value="">
     <input id="geneFileName" type="hidden" name="geneFileName" value="">
-    <input style="position:absolute; top:295px; left:640px; width:60px; font-size:20px;" name="submitgo" class="formButtons" value="GO" type="submit"><br/>
-    <input id="resetButton" class="formButtons" style="position:absolute; top:302px; left:710px; width:60px; font-size:14px;" type="reset" >
+    <input style="position:absolute; top:330px; left:40px; width:60px; font-size:20px;" name="submitgo" class="formButtons" value="GO" type="submit"><br/>
+    <input id="resetButton" class="formButtons" style="position:absolute; top:337px; left:110px; width:60px; font-size:14px;" type="reset" >
     </form>
 
-	<div style="position:absolute; top:330px; left:15px; overflow-y: scroll; height:36px; width: 775px;">
+     </form>
+ 
+   <div style="position:absolute; top:277px; left:553px; overflow-y: scroll; height:36px; width: 775px;">
 		<span id="queryText" style="font-size:x-small"><b>Effective Phenotype Query:</b></span>
 	</div>
 
