@@ -35,14 +35,14 @@
 #hdpQueryFormWrapper{
   left:6px;
   width: 804px;
-  height: 340px;
+  height: 370px;
   border:2px solid;
   border-radius:22px;
   position:absolute;
   background-color:#D0E0F0;
 }
 #resourceLinksWrapper{
-  top:360px;
+  top:390px;
   left:6px;
   width: 250px;
   height: 430px;
@@ -68,7 +68,7 @@
   left:10px;
 }
 #spotlightWrapper{
-  top:360px;
+  top:390px;
   left:300px;
   width: 502px;
   height: 430px;
@@ -92,7 +92,7 @@ textarea {resize:none; background-color:#FFE4B5;}
 
 /* styles for autocomplete */
 .ui-autocomplete {
-  max-height: 300px;
+  max-height: 120px;
   overflow-y: auto;
   /* prevent horizontal scrollbar */
   overflow-x: hidden;
@@ -128,11 +128,18 @@ textarea {resize:none; background-color:#FFE4B5;}
 .hide { display: none; }
 #locationsFileHelpImg
 {
-	height: 24px;
+	height: 20px;
 	position: relative;
-	left: 100px;
-	top: 4px;
+	left: 330px;
 }
+
+#queryHelpImg
+{
+	height: 20px;
+	position: relative;
+	left: 500px;
+}
+
 /* yui panel styles */
 body.yui-skin-sam .yui-panel .hd,
 body.yui-skin-sam .yui-ac-hd { background:none; background-color:#025; color:#fff; font-weight: bold;}
@@ -158,12 +165,14 @@ body.yui-skin-sam .yui-ac-hd {padding: 5px;}
       <div style="position:absolute; top:6px; left:15px; ">
         <span class='queryHeaderText'>Search by genes</span>
       </div>
-      <div style="position:absolute; top:60px; left:6px; ">
+      <div style="position:absolute; top:85px; left:6px; ">
       <textarea id="genes" name="genes" style="height:80px; width:240px;"></textarea>
+		<span style="font-size: smaller;">
       Ex:
       <a href="<!--#include file='include/fewi_url.html'-->diseasePortal/summary?genes=Bmp4">Bmp4</a>,
       <a href="<!--#include file='include/fewi_url.html'-->diseasePortal/summary?genes=Pax*">Pax*</a>,
       <a href="<!--#include file='include/fewi_url.html'-->diseasePortal/summary?genes=NM_013627">NM_013627</a>
+		</span>
       <br/><br/>
       Enter symbols, names or IDs.<br/>
       Use * for wildcard.
@@ -174,17 +183,19 @@ body.yui-skin-sam .yui-ac-hd {padding: 5px;}
 
     <div style="position:absolute; top:2px; left:254px; width:300px;">
     <div class='relativePos'>
-      <div style="position:absolute; top:6px; left:15px; ">
-        <span class='queryHeaderText'>Search by genome locations</span></br>
-        <div style='margin-left:6px; padding-top:5px;'>
+      <div style="position:absolute; top:6px; left:10px; ">
+        <span class='queryHeaderText'>Search by genome locations</span>
+        <div style='padding-top:42px;font-size: smaller;'>
         <label><input id="organismHuman1" name="organism" class="organism" type="radio" value="human"/> Human(GRCh38)</label>
         <label><input id="organismMouse1" name="organism" class="organism" type="radio" value="mouse" checked="checked"/> Mouse(GRCm38)</label>
         </div>
       </div>
-      <div style="position:absolute; top:60px; left:6px; ">
-      <textarea id="locations" name="locations" style="height:80px; width:280px;"></textarea>
+      <div style="position:absolute; top:85px; left:6px; ">
+      <textarea id="locations" name="locations" style="height:80px; width:240px;"></textarea><br/>
+		<span style="font-size: smaller;">
       Ex:
       <a href="<!--#include file='include/fewi_url.html'-->diseasePortal/summary?locations=Chr12:3000000-10000000">Chr12:3000000-10000000</a>
+		</span>
       <br/><br/>
       Need to convert genome build?<br/>
       Use this <a href='http://www.ncbi.nlm.nih.gov/genome/tools/remap#tab=asm'>converter tool</a>.
@@ -192,42 +203,64 @@ body.yui-skin-sam .yui-ac-hd {padding: 5px;}
     </div>
     </div>
 
-    <div style="position:absolute; top:2px; left:546px; width:250px;">
+    <div style="position:absolute; top:2px; left:506px; width:290px;">
     <div class='relativePos'>
-      <div style="position:absolute; top:6px; left:15px; ">
+      <div style="position:absolute; top:6px; left:10px; ">
         <span class='queryHeaderText'>Search by disease</br> or phenotype terms</span>
+        <div style='padding-top: 12px;'>
+        <span style="font-style: italic;font-size: 11px;">Click "GO" to search by entered text without selecting a term from the list.</span>
+			</div>
       </div>
-      <div style="position:absolute; top:60px; left:6px; ">
-      <textarea id="phenotypes" name="phenotypes" style="height:80px; width:240px;"></textarea>
+      <div style="position:absolute; top:85px; left:6px; ">
+      <textarea id="phenotypes" name="phenotypes" style="height:80px; width:280px;"></textarea><br/>
+		<span style="font-size: smaller;">
       Ex:
-      <a href="<!--#include file='include/fewi_url.html'-->diseasePortal/summary?phenotypes=diabetes">diabetes</a>,
-      <a href="<!--#include file='include/fewi_url.html'-->diseasePortal/summary?phenotypes=105830">105830</a>
+      <a href="<!--#include file='include/fewi_url.html'-->diseasePortal/summary?phenotypes=105830">105830</a>,
+      <a onclick="document.forms['diseasePortalQueryForm'].phenotypes.value='Autism AND &quot;social behavior&quot;';document.forms['diseasePortalQueryForm'].submit();" href="#">Autism AND "social behavior"</a>
+		</span>
       <br/><br/>
-      Select from autocomplete or continue typing.  Use quotes for exact match.
+      Use quotes for exact match. <a onclick="javascript:openUserhelpWindow('MISC_boolean_search_help.shtml#boolean_operators'); return false;" href="MISC_boolean_search_help.shtml#boolean_operators">Hints</a> for using AND, OR, NOT, quotes, partial word matching.
       </div>
+		<div style="left: 6px; top:253px;position: absolute;">
+		<label><input id="showingQuery" checked="checked" type='checkbox' /> Show Effective Phenotype Query</label>
+		</div>
+
     </div>
     </div>
 
     <input id="locationsFileName" type="hidden" name="locationsFileName" value="">
     <input id="geneFileName" type="hidden" name="geneFileName" value="">
-    <input style="position:absolute; top:225px; left:700px; width:60px; font-size:20px;"
-      name="submit" class="formButtons" value="GO" type="submit"><br/>
-    <input class="formButtons"
-      style="position:absolute; top:265px; left:700px; width:60px; font-size:14px;" type="reset" >
-    <div style="position:absolute; top:290px; left:715px; ">
-      <img src="<!--#include file='include/mgihome_url.html'-->homepages/images/Beta.png" style="" height="30" width="45">
-    </div>
+    <input style="position:absolute; top:330px; left:40px; width:60px; font-size:20px;" name="submitgo" class="formButtons" value="GO" type="submit"><br/>
+    <input id="resetButton" class="formButtons" style="position:absolute; top:337px; left:110px; width:60px; font-size:14px;" type="reset" >
     </form>
 
-    <div style="position:absolute; top:220px; left:20px; ">
-	<br/>
-      <div style='font-size:150%;'>
-        ------------------------------------------------------------------------
-      </div>
-      <form action="<!--#include file='include/fewi_url.html'-->diseasePortal/uploadFile" method="post" enctype="multipart/form-data"
-		id="hiddenFileForm" name="hiddenFileForm" target="hiddenfileform_if">
-       <div style='margin-top:6px; margin-left:20px;'>
-        <span style="font-size:150%;">Upload a VCF File: <input id="locationsFileInput" type="file" name="file"></span>
+     </form>
+	<div id="queryTextDiv" style="position:absolute; top:277px; left:513px; overflow-y: scroll; height:85px; width: 285px; border-style: solid; border-width: 1px; border-radius: 5px;"> 
+		<span id="queryText" style="font-size:x-small"><b>Effective Phenotype Query:</b></span>
+	</div>
+
+
+  <div style="position:absolute; top:252px; left:270px;">
+	<img id="queryHelpImg" src="<!--#include file='include/webshare_url.html'-->images/help_large_transp.gif" />
+	<div id="queryHelp">
+		<div class="hd">Phenotype/Disease Query Help</div>
+		<div class="bd">
+			<p>The <b>Effective Phenotype Query</b> below displays how the text you enter in the <b>Search by disease or phenotype terms</b> box will be interpreted for the search. This display is on by default but may be turned off by removing the check from the box.</p>
+			<p>For example if you want to find Autism models that have abnormalities in social behavior you would have typed:</p>
+			<ul>
+				<li>209850, AND, "social behavior"</li>
+			</ul>
+			<p>The <b>Effective Phenotype Query</b> display for this would be:</p>
+			<ul>
+				<li>(Autism - 209850 AND "social behavior")</li>
+			</ul>
+			<p>Note, the commas that were inserted to facilitate the function of the auto-complete tool are removed prior to running your search.</p>
+			<p>The <b>Effective Phenotype Query</b> shows only what you type in the <b>Search by disease or phenotype terms</b>. Entries in the <b>Search by genes</b> and <b>Search by genome locations</b> boxes are not displayed in this area but will be Boolean ANDed to your criteria entered in the <b>Search by disease or phenotype terms</b> box.</p>
+		</div>
+	</div>
+	</div>
+
+    <div style="position:absolute; top:252px; left:90px; z-index: 1">
 	<img id="locationsFileHelpImg" src="<!--#include file='include/webshare_url.html'-->images/help_large_transp.gif" />
 	<div id="locationsFileHelp">
 		<div class="hd">VCF File Uploading Tips</div>
@@ -256,9 +289,16 @@ body.yui-skin-sam .yui-ac-hd {padding: 5px;}
 				Save as a tab-delimited file in a format other than Unicode.</p>
 		</div>
 	</div>
+	</div>
+
+    <div style="position:absolute; top:255px; left:240px; ">
+
+      <form action="<!--#include file='include/fewi_url.html'-->diseasePortal/uploadFile" method="post" enctype="multipart/form-data" id="hiddenFileForm" name="hiddenFileForm" target="hiddenfileform_if">
+       <div style='margin-left:20px;'>
+        Upload a VCF File:<br/><input id="locationsFileInput" type="file" name="file">
       </div>
-      <div style='margin-left:220px; padding-top:5px;'>
-	<label><input id="enableVcfFilter" name="enableVcfFilter" type="checkbox" value="true" class="organism" checked="checked"/>Apply filters</label>
+      <div style='margin-left:20px; padding-top:5px;font-size: smaller;'>
+			<label><input id="enableVcfFilter" name="enableVcfFilter" type="checkbox" value="true" class="organism" checked="checked"/> Apply filters</label>
       	<br/>
 	<!-- These are here to make the user feel better, but should not be submitted as extra organism values -->
         <label><input id="organismHuman2" name="organismIgnore" class="organism" type="radio" value="human"/> Human(GRCh38)</label>
@@ -268,11 +308,13 @@ body.yui-skin-sam .yui-ac-hd {padding: 5px;}
       <input type="hidden" name="type" value="vcf">
       <input type="hidden" name="associatedFormInput" value="VCF file">
       </form>
+
+
+
     </div>
-    <div id="geneFileDiv" style="position:absolute; top:418px; 243px;">
-	    <form action="<!--#include file='include/fewi_url.html'-->diseasePortal/uploadFile" method="post" enctype="multipart/form-data"
-		    id="hiddenFileForm2" name="hiddenFileForm" target="hiddenfileform_if">
-		    <span style="">Upload Genes File (.txt): <input id="geneFileInput" type="file" name="file"></span>
+    <div id="geneFileDiv" style="position:absolute; top:255px; left:8.5px;">
+	    <form action="<!--#include file='include/fewi_url.html'-->diseasePortal/uploadFile" method="post" enctype="multipart/form-data" id="hiddenFileForm2" name="hiddenFileForm" target="hiddenfileform_if">
+		    Upload Genes File (.txt):<br/><input id="geneFileInput" type="file" name="file">
 		    <input type="hidden" name="field" value="geneFile">
 		    <input type="hidden" name="type" value="singleCol">
 		    <input type="hidden" name="associatedFormInput" value="Gene file">
@@ -369,6 +411,9 @@ body.yui-skin-sam .yui-ac-hd {padding: 5px;}
 		YAHOO.namespace("hdp.container");
 		YAHOO.hdp.container.panelVcf = new YAHOO.widget.Panel("locationsFileHelp", { width:"520px", draggable:false, visible:false, constraintoviewport:true } );
 		YAHOO.hdp.container.panelVcf.render();
+
+		YAHOO.hdp.container.panelQueryHelp = new YAHOO.widget.Panel("queryHelp", { width:"520px", draggable:false, visible:false, constraintoviewport:true } );
+		YAHOO.hdp.container.panelQueryHelp.render();
 		//YAHOO.util.Event.addListener("locationsFileHelpImg", "mouseover", YAHOO.hdp.container.panelVcf.show, YAHOO.hdp.container.panelVcf, true);
 		var _locationsFileHelpTOID;
 		$("#locationsFileHelpImg").on("mouseover",function(e){
@@ -376,6 +421,14 @@ body.yui-skin-sam .yui-ac-hd {padding: 5px;}
 		});
 		$("#locationsFileHelpImg").on("mouseout",function(e){
 			if(_locationsFileHelpTOID) clearTimeout(_locationsFileHelpTOID);
+		});
+
+		var _queryHelpTOID;
+		$("#queryHelpImg").on("mouseover",function(e){
+			_queryHelpTOID = setTimeout(function(){YAHOO.hdp.container.panelQueryHelp.show()},500);
+		});
+		$("#queryHelpImg").on("mouseout",function(e){
+			if(_queryHelpTOID) clearTimeout(_queryHelpTOID);
 		});
 
 		// wire up the two radio buttons to mirror each other
