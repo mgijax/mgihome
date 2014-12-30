@@ -18,7 +18,7 @@
         <table class="toc" width="100%">
 		<tr><td>
         <ul>
-        <li><a href="#dec_2014">December ??, 2014</a> |
+        <li><a href="#jan_2015">January 8, 2015</a> |
         <li><a href="#oct_2014">October 16, 2014</a> |
         <li><a href="#july_2014">July 31, 2014</a> |
         <li><a href="#may_2014">May 22, 2014</a> |
@@ -32,14 +32,29 @@
 
    <tr><td></td></tr>
    
-   <tr><td><a name="dec_2014"></a>
+   <tr><td><a name="jan_2015"></a>
 
       <table class="outline" width="100%">
    
-   <tr><td class="enhance">December ??, 2014</td></tr>
+   <tr><td class="enhance">January 8, 2015</td></tr>
  	<tr><td>
  	<dl class="linkedList">
- 		<dt><a href="http://www.sanger.ac.uk/resources/mouse/genomes/">The Wellcome Trust Sanger Institute</a> has sequenced 28 mouse inbred strains. The Jackson Laboratory now has a <a href="ftp://ftp.jax.org/sanger/">mirror site</a> for their raw sequence data, SNPs, short indels, structural variants and assemblies of each strain.</dt>
+ 		<!--<dt><a href="http://www.sanger.ac.uk/resources/mouse/genomes/">The Wellcome Trust Sanger Institute</a> has sequenced 28 mouse inbred strains. The Jackson Laboratory now has a <a href="ftp://ftp.jax.org/sanger/">mirror site</a> for their raw sequence data, SNPs, short indels, structural variants and assemblies of each strain.</dt>-->
+ 		<dt>MGI now incorporates weekly high-throughput phenotyping data from the International Mouse Phenotype Consortium (IMPC) in addition to data from the Wellcome Trust Sanger Institute (WTSI) and Europhenome (EuPh). These data are integrated with curated data from scientific publications, providing comprehensive comparative phenotypes for mouse mutants.
+		</dt> 
+		<dt>New features of the <a href="<!--#include file='include/homepages_url.html'-->humanDisease.shtml">Human&mdash;Mouse: Disease Connection</a> improve search specificity and assist with interpretation of search results. 
+		<ul>  
+		<li>Searches by disease or phenotype terms now support boolean expressions (ANDs, ORs and AND NOTs).</li>
+		<li>Search results in the Grid View now highlight the columns containing phenotype or disease terms that best match one or more terms in your search parameters. Initial search results also include additional phenotypes and diseases associated with the matched genes.</li> 
+		<li>Search results can be refined by filtering on Genome Feature Types of interest  (Protein coding-genes, QTL, miRNA, etc.).</li>
+		</ul>
+		</dt>
+		<dt>Improved representation of transgene and knock-in alleles.
+		<ul>
+		<li>The Mutations, alleles and phenotypes sections of Gene Detail pages now provide links to additional relevant transgenes, such as transgenes with the gene's inserted expressed human ortholog. For an example, see the <a href="<!--#include file='include/fewi_url.html'-->marker/MGI:88059"><i>App</i> Gene Detail page</a>.</li> 
+		<li>Allele Detail pages for transgenes and knock-in alleles with expressed genes now display the genes with links to more information. For an example, see this MGI <a href="http://www.informatics.jax.org/accession/MGI:2136595">Allele Detail page</a> and click the blue &#9658; next to its symbol in the Mutation description section to see a table with links to gene details.</li>
+		</ul>
+		</dt>
  	</td>
 	</dl>
 	</tr>
@@ -70,7 +85,7 @@
  	<tr><td>
  	<dl class="linkedList">
  		<dt>Improved representation of genes that are organized in clusters in genomic regions. Cluster detail pages link to individual cluster member gene detail pages and offer the ability to forward all cluster member genes to the MGI Batch Query. For an example, see the <a href="<!--#include file='include/fewi_url.html'-->marker/MGI:96169">Hoxa Cluster Detail page</a>.</dt>
- 		<dt>Gene Detail pages feature a new "Interactions" section. The first data set in this section describes predicted and verified gene targets of known mouse microRNAs, as these are genes whose expression is potentially regulated by the microRNAs. The section links to a table of all the interacting features, including the type of interaction and whether it is validated or predicted. For an example, see the <a href="<!--#include file='include/fewi_url.html'-->marker/MGI:96677">Kit Gene Detail page</a>. </dt>
+ 		<dt>Gene Detail pages feature a new "Interactions" section. The first data set in this section describes predicted and verified gene targets of known mouse microRNAs, as these are genes whose expression is potentially regulated by the microRNAs. The section links to a table of all the interacting features, including the type of interaction and whether it is validated or predicted. For an example, see the <a href="<!--#include file='include/fewi_url.html'-->marker/MGI:96677"><i>Kit</i> Gene Detail page</a>. </dt>
  		<dt>Improved representation of alleles that involve multiple genes. These allele detail pages now provide links to all the genes involved in the mutation. For an example, see the Mutation description section of this <a href="<!--#include file='include/fewi_url.html'-->allele/MGI:5317120">deletion Allele Detail page</a>.</dt>
  	</td>
 	</dl>
