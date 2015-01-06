@@ -85,7 +85,13 @@ community.<p>
 		</li>
 	
 </ol>
-
+<h2><font color="#002255">Video Tutorials</font></h2>
+<ol>
+	<li><a href=#intro>Introduction to Mouse Genome Informatics</a></li>
+	<li><a href=#cre>cre-lox and cre recombinases in MGI</a></li>
+	<li><a href=#hmdc>The Human-Mouse: Disease Connection in MGI</a></li>
+	<li><a href=#mousemine>MouseMine computational access to MGI data</a></li>
+</ol>
 </div>
 <p>
 <div id="genes">
@@ -159,7 +165,7 @@ symbol, name, or synonym into the Quick Search window near the top of every MGI 
 				<li><b><a href="#function">Gene Ontology (GO) Classifications:</b></a> the set 
 					of structured vocabulary terms describing function, biological process 
 					involvement and cellular component of this gene. </li>
-				<li><b><a href="#expression">Expression: </b></a>gene expression data provided by 
+				<li><b><a href="#expression">Expression:</b></a> gene expression data provided by 
 					the <a href="http://www.informatics.jax.org/expression.shtml">Gene Expression Database</a>. </li>
 				<li><b>Sequences:</b> links to download genomic, transcript or protein 
 					FASTA sequences. Polymorphic variants reported between inbred strains 
@@ -354,8 +360,10 @@ symbol, name, or synonym into the Quick Search window near the top of every MGI 
 			   you can explore the Gene Expression Database's tissue summary table 
 			   by clicking on the hyperlinked number next to "<b>Data Summary: Tissues</b>" (<font color="#54709B">&#35;1</font>)
 			    or the complete curated dataset by clicking on "<b>Data Summary: Results</b>" 
-			   (<font color="#54709B">&#35;2</font>), both of which link to a new page. 
-			<p>The <b>Tissue Summary</b> (<font color="#54709B">&#35;1</font>) 
+			   (<font color="#54709B">&#35;2</font>), both of which link to a new page. Clicking on the 
+			   <b>Tissue x Stage matrix</b> (<font color="#54709B">&#35;3</font>) provides 
+			   a visual representation of the expression data in GXD.
+			<p>The <b>Tissue Summary</b> (<font color="#54709B">&#35;1</font>, not shown) 
 			   is a compressed table enumerating all tissues and age combinations where 
 			   expression of this gene (here, <a href="<!--#include file='include/fewi_url.html'-->marker/MGI:106675">
 			   <i>Adipoq</i></a>) was examined and reported as "detected/expressed" in 
@@ -368,19 +376,16 @@ symbol, name, or synonym into the Quick Search window near the top of every MGI 
 			   Mouse Developmental Anatomy Browser</a> in MGI or <a href="http://www.emouseatlas.org/emap/ema/theiler_stages/StageDefinition/stagedefinition.html">
 			   Theiler Stage Definitions</a> from the e-Mouse Atlas Project in Edinburgh 
 			   for stage descriptions.</p>
-			<p>The <b>Data Summary: Results</b> (<font color="#54709B">&#35;2</font>) generates a 
-			   table with more in-depth information. The gene symbol appears in the first 
-			   column, additional specific information including images behind the hyperlinked 
-			   "data" in the second column, assay type, anatomical system, structure and mouse age at time of 
-			   sampling. An "E" prefix in the "age" column indicates that the sample is 
-			   embryonic (E14.5 means embryonic day 14.5). A "P" prefix indicates post-birth 
-			   which may be indicated as "P adult" for unspecified, "P w 8" for 
-			   "post-birth, 8 weeks of age", and so on. The table can be sorted according 
-			   to each of these categories using the arrow options in the header, or filters 
-			   can be applied using the options above the table (<font color="#54709B">&#35;3</font>). 
-			   Note that this table reports annotations where expression was reported as both 
-			    "detected" or "not detected" (see boxed column).
-			<p>Each piece of information is accompanied by a reference.</p>
+			<p>The <b>Tissue x Stage matrix</b> (<font color="#54709B">&#35;3</font>) generates 
+			   an interactive visual grid with tissue x stage intersections shaded in blue where data exists 
+			   demonstrating that the gene <i>is</i> expressed and detected. Red shading indicates 
+			   that data exists demonstrating that the gene is not expressed/not detected in this 
+			   tissue at the defined developmental stage. If the intersection appears blank (white) 
+			   there is no data within GXD for the combination. Apply filters to refine your 
+			   results, and click on shaded cells or navigate other tabs to see more specific 
+			   supporting data with references, images, or download data.</p>
+			<p>For more detail on interpreting each tab, see <a href="<!--#include file='include/mgihome_url.html'-->../faq/GXD_matrix.shtml">
+			How do I interpret the results of my expression search?</a></p> 
 			<p align="right"><a href="#geneDetail">[Return to Gene Detail]</a><br>
 			   <a href="#TOC">[Return to Table of Contents]</a></p> 
 			
@@ -939,6 +944,83 @@ posted to an ftp site, see below.</p>
 			   <a href="#TOC">[Return to Table of Contents]</a></p> 
 </div>
 </div>
+<br>
+<div id=intro class="enhance"><h2><b><font color="#002255">
+Video Module 1. An Introduction to Mouse Genome Informatics</font></b></h2></div>
+<div>
+<br>
+Download slides (if desired) by clicking the SlideShare footer from the frame on the right.</p>
+<table cellpadding="5">
+ <tr>
+	<td><iframe width="560" height="315" src="//www.youtube.com/embed/9hFuuSGIeeg?rel=0" frameborder="2" allowfullscreen></iframe></td>
+	<td><iframe src="http://www.slideshare.net/slideshow/embed_code/34867838?rel=0" width="378" height="315" frameborder="0" marginwidth="0" 
+marginheight="0" scrolling="no" style="border:1px solid #CCC; border-width:1px 1px 0; margin-bottom:5px; max-width: 100%;" allowfullscreen></iframe></td>
+</tr>
+</table>
+<p>
+</div>
+<br>
+<br>
+<div id=cre class="enhance"><h2><b><font color="#002255">
+Video Module 2. cre-lox and cre recombinases in MGI</font></b></h2></div>
+<div>
+<br>
+Download slides (if desired) by clicking the SlideShare footer from the frame on the right.</p>
+<table cellpadding="5">
+	<tr>
+		<td><iframe width="560" height="315" src="//www.youtube.com/embed/M-HNHLPpODs?rel=0" 
+		frameborder="1" allowfullscreen></iframe></td>
+		<td><iframe src="http://www.slideshare.net/slideshow/embed_code/34868028?rel=0" width="378" 
+		height="315" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" 
+		style="border:1px solid #CCC; border-width:1px 1px 0; margin-bottom:5px; max-width: 100%;" 
+		allowfullscreen> </iframe> </td>
+	</tr>
+</table>
+<p>For additional background on conditional alleles and the cre-lox system, see <a href="http://www.informatics.jax.org/mgihome/other/homepage_IntroMouse.shtml#cre">here</a>
+or <a href="http://cre.jax.org/introduction.html">here</a>.
+<br>
+<div id=hmdc class="enhance">
+<br>
+<br>
+<h2><b><font color="#002255">Module 3. The Human-Mouse: Disease Connection at MGI</font></b></h2></div>
+<div>
+The Human&ndash;Mouse: Disease Connection (HMDC) is found <a href="<!--#include file='include/fewi_url.html'-->humanDisease.shtml">here.</a><br>
+A written tutorial appears on the HMDC home page under <a href="<!--#include file='include/mgihome_url.html'-->other/hmdc_tour.shtml" target="_blank">
+"Take a tour of the Human&ndash;Mouse: Diseases Connection"</a></p>
+Download slides (if desired) by clicking the SlideShare footer from the frame on the right.</p>
+<table cellpadding="5">
+	<tr>
+		<td><iframe width="420" height="315" src="//www.youtube.com/embed/vOtU51x9sLc?rel=0" 
+		frameborder="0" allowfullscreen></iframe></td>
+		<td><iframe src="http://www.slideshare.net/slideshow/embed_code/34868224?rel=0" 
+		width="378" height="315" frameborder="0" marginwidth="0" marginheight="0"
+		 scrolling="no" style="border:1px solid #CCC; border-width:1px 1px 0; margin-bottom:5px; 
+		 max-width: 100%;" allowfullscreen></iframe></td>
+	</tr>
+</table>
+<div id=mousemine class="enhance">
+<br>
+<br>
+<h2><b><font color="#002255">MouseMine computational access to MGI data</font></b></h2></div>
+<div>
+<p>See <a href=#batchAnalysis>just above</a> on this page to access MouseMine.<br>
+Download slides (if desired) by clicking the SlideShare footer from the frame on the right.</p>
+<table cellpadding="5">
+	<tr>
+		<td><iframe width="560" height="315" 
+		src="//www.youtube.com/embed/FtlsoM8TGGs?rel=0" frameborder="0" allowfullscreen></iframe></td>
+		<td><iframe src="http://www.slideshare.net/slideshow/embed_code/34868470?rel=0" 
+		width="378" height="315" frameborder="0" marginwidth="0" marginheight="0" 
+		scrolling="no" style="border:1px solid #CCC; border-width:1px 1px 0; margin-bottom:5px; 
+		max-width: 100%;" allowfullscreen> </iframe></td>		
+	</tr>
+</table>
+<br>
+<br>
+<br>
+<br>
+
+
 <!--#include file='include/templateBlankBodyStop.html'-->
 
 </body>
