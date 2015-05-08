@@ -41,10 +41,6 @@ LIBDIRS     ${MGIHOME_PATH}lib/python/:${INSTALL_DIR}lib/python/
 # If commented out, hard-coded addresses are used throughout.
 # CGI_MAILTARGET    mgi-qa@jax.org
 
-# optional e-mail address to use for testing gen submit cgi scripts which send e-mail.
-#GEN_CGI_MAILTARGET    mgi-qa@jax.org
-GEN_CGI_MAILTARGET    gen@jax.org
-
 #----------------#
 #- CSS & JS     -#
 #----------------#
@@ -67,27 +63,11 @@ SENDMAIL    /usr/lib/sendmail
 #- MGI paths and URLs -#
 #----------------------#
 
-# path to the web directory of the Annatomical Dictionary
-ADPATH   ${WI_PATH}www/GXD/GENAD/
-
 # path to the NIH survey
 SURVEY_ROOT_DIRECTORY	/export/gondor/survey/nih
 
 # path to allele, strain, phenotype submissions
 SUBMISSION_DIRECTORY	/export/gondor/submissions
-
-#---------------#
-#- GEN related -#
-#---------------#
-
-# path to the web directory of the GEN (Gene Expression Notebook) product
-GEN_PATH     ${MGIHOME_PATH}www/GXD/GEN/
-
-# path to the GEN.xls (Gene Expression Notebook) executable file
-GEN_XLS_PATH     ${INSTALL_DIR}gen/data/
-
-# The path to GXD notebook userdocs
-OVERVIEW_URL ${GEN_PATH}gen.shtml
 
 #------------------#
 #- sybase related -#

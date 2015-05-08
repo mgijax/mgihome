@@ -69,12 +69,6 @@ do
 			MGIHOME_PATH=$value;;
 		MGIHOME_URL)
 			MGIHOME_URL=$value;;
-		GEN_PATH)
-			GEN_PATH=$value;;
-     ADPATH)
-        ADPATH=$value;;
-     GEN_XLS_PATH)
-        GEN_XLS_PATH=$value;;
 	  PYTHON)
 			PYTHON=$value;;
      GROUP)
@@ -100,26 +94,12 @@ if [ ! -h bin/python ]; then
 	cd $TOP
 fi
 
-# make A symbolic link to the .../wi/www/GXD/GENAD directory
 cd www
 if [ -h Configuration ]; then
 	echo "Making "Configuration" sym link in `pwd`"
 		rm Configuration
 fi
 ln -s ../Configuration Configuration
-cd ..
-
-cd www/GXD/GEN
-if [ -h GENAD ]; then
-	   echo "Making 'AD' directory in `pwd`"
-		rm GENAD
-fi
-ln -s $ADPATH GENAD
-if [ -h AD ]; then
-	   echo "Making 'AD' directory in `pwd`"
-		rm AD
-fi
-ln -s $ADPATH AD
 cd $TOP
 
 # compile python libraries and make sure they're readable
@@ -134,7 +114,7 @@ cd $TOP
 
 # add links to python and the config file from selected directories
 
-for dir in www/nomen www/lists www/support www/submissions admin www/feedback www/submissions/strains www/egul www/other www/GXD/GEN www/KOMP
+for dir in www/nomen www/lists www/support www/submissions admin www/feedback www/submissions/strains www/egul www/other www/KOMP
 do
 	cd $dir
 
@@ -142,13 +122,6 @@ do
 		rm python
 	fi
 	ln -s $PYTHON_REL python
-
-   
-   if [ -h GEN.xls ]; then
-		rm  GEN.xls
-	fi
-   # make symbolic link to ../gen/data/GEN.xls
-   ln -s ${GEN_XLS_PATH}GEN.xls GEN.xls
    
 	cd $TOP
 done
@@ -162,14 +135,6 @@ fi
 ln -s orthology.shtml homology.shtml
 cd $TOP
 
-# Check if the GEN.xls file is missing from $GEN_XLS_PATH
-cd www/GXD/GEN
-   if test ! -r GEN.xls
-     then
-      echo "Missing GEN.xls executable file.  Please create GEN.xls under $GEN_XLS_PATH."
-   fi
-cd $TOP
-  
 # process the eGUL links.dat file
 
 cd www/egul/
