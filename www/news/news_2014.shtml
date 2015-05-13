@@ -1,0 +1,113 @@
+<!--#include file='include/templateHead.html'--> 
+<title>MGI-News and Announcements from the Mouse Genome Informatics database resource</title>
+  <meta name="description" content="Archive of MGI news and announcements from 2014." />
+  <meta name="keywords" content="MGI, mgi, mice, mouse, murine, mus musculus, genes, genome, genomic, news, archives, announcements, update, release " />
+  <meta name="robots" content="NOODP" />
+  <meta name="robots" content="NOYDIR" />
+<!--#include file='include/templateBodyStart.html'--> 
+<!-- Title Bar -->
+    <div id="titleBarWrapper">
+  <span class="titleBarMainTitle">News and Announcements for 2014</span>
+  </div> 
+<!--end titleBar-->
+
+<!-- main body table -->
+<table width="75%" cellpadding="2" align="center">
+   <tr><td>
+ <!-- TOC table -->
+        <table class="toc" width="100%">
+		<tr><td>
+        <ul>
+        <li><a href="#oct_2014">October 16, 2014</a> |
+        <li><a href="#july_2014">July 31, 2014</a> |
+        <li><a href="#may_2014">May 22, 2014</a> |
+        <li><a href="#march_2014">March 6, 2014</a> |
+        <li><a href="news_2013.shtml"><nobr>Archive: News and Announcements for 2013</a></li> 
+        </ul>
+            	</td>
+        	</tr>              
+      	</table>
+      	 <!-- end TOC table -->
+   </td></tr>
+
+   <tr><td></td></tr>
+   
+ <tr><td><a name="oct_2014"></a>
+
+      <table class="outline" width="100%">
+   
+   <tr><td class="enhance">October 16, 2014</td></tr>
+ 	<tr><td>
+ 	<dl class="linkedList">
+ 		<dt>GXD has added two interactive matrix views that provide users with intuitive high-level summaries of expression data from where they can easily move to levels of greater detail. These matrices have been added as tabs to the gene expression data summaries, joining the existing tabs for assay results, assays, genes, and images. These summaries can be accessed by searches using the <a href="<!--#include file='include/fewi_url.html'-->gxd">Gene Expression Data Query</a> and via links from the <a href="<!--#include file='include/fewi_url.html'-->vocab/gxd/anatomy/">Mouse Developmental Anatomy Browser</a>.</dt>
+ 		<dt>The tissue-by-developmental stage matrices provide global overviews of the spatio-temporal expression patterns of genes. The tissue-by-gene matrices enable a comparison of expression patterns. Both types of matrices can be expanded (and collapsed) along the tissue axis, based on the hierarchical organization of the anatomy. Specific matrix rows and columns can be selected to refine the data set. Refinements of the dataset via the matrix views are propagated to the other expression data summary tabs.</dt>
+ 		<dt>A <a href="<!--#include file='include/fewi_url.html'-->gxd#gxd=nomenclature%3D%26vocabTerm%3D%26annotationId%3D%26locations%3D%26structure%3D%26structureID%3D%26theilerStage%3D0%26results%3D100%26startIndex%3D0%26sort%3D%26dir%3Dasc%26tab%3Dstagegridtab">Gene Expression Data Matrix</a>, that returns all of GXD's expression data in a tissue-by-developmental stage matrix, is now accessible from the GXD Home Page. Using this matrix, one can start with a high-level overview of all of GXD's data and then interactively view and select expression data for the specific tissues and / or developmental stages.</dt>
+ 		<dt>The Standard <a href="<!--#include file='include/fewi_url.html'-->gxd">Gene Expression Data Query</a> now lets you define gene sets based on genomic location. You can, for example, search for disease candidate genes that have been mapped to a genomic region and are expressed in tissues affected by the disease.</dt>
+ 		<!--<dt>To support the comparative analysis of expression patterns among model organisms for developmental biology, the expression section of the MGI Gene detail pages now provides links to expression data for the orthologous genes in chicken and zebrafish. For an example, see the <a href="<!--#include file='include/fewi_url.html'-->marker/MGI:88177">Bmp2 Gene Detail page</a>. Links to expression data from other vertebrates will be added in the future.</dt>-->
+ 	</td>
+	</dl>
+	</tr>
+	</table>
+   
+   <tr><td><a name="july_2014"></a>
+
+      <table class="outline" width="100%">
+   
+   <tr><td class="enhance">July 31, 2014</td></tr>
+ 	<tr><td>
+ 	<dl class="linkedList">
+ 		<dt>Improved representation of genes that are organized in clusters in genomic regions. Cluster detail pages link to individual cluster member gene detail pages and offer the ability to forward all cluster member genes to the MGI Batch Query. For an example, see the <a href="<!--#include file='include/fewi_url.html'-->marker/MGI:96169">Hoxa Cluster Detail page</a>.</dt>
+ 		<dt>Gene Detail pages feature a new "Interactions" section. The first data set in this section describes predicted and verified gene targets of known mouse microRNAs, as these are genes whose expression is potentially regulated by the microRNAs. The section links to a table of all the interacting features, including the type of interaction and whether it is validated or predicted. For an example, see the <a href="<!--#include file='include/fewi_url.html'-->marker/MGI:96677"><i>Kit</i> Gene Detail page</a>. </dt>
+ 		<dt>Improved representation of alleles that involve multiple genes. These allele detail pages now provide links to all the genes involved in the mutation. For an example, see the Mutation description section of this <a href="<!--#include file='include/fewi_url.html'-->allele/MGI:5317120">deletion Allele Detail page</a>.</dt>
+ 	</td>
+	</dl>
+	</tr>
+	</table>
+   
+   <tr><td><a name="may_2014"></a>
+
+      <table class="outline" width="100%">
+   
+   <tr><td class="enhance">May 22, 2014</td></tr>
+ 	<tr><td>
+ 	<dl class="linkedList">
+ 		<dt>The <a href="<!--#include file='include/fewi_url.html'-->allele">Phenotypes, Alleles & Disease Models Query</a> Form and the <a href="<!--#include file='include/fewi_url.html'-->marker">Genes & Markers Query</a> Form have been rewritten and offer superior performance and the ability to sort your results and export them as tab-delimited text.</dt>
+ 		<dt>The Phenotypes, Alleles & Disease Models Query Form has new allele categories that permit refined searches for specific allele types and the option to limit your search to those from specific high-throughput projects and repositories.</dt>
+ 		<dt>Some high-throughput mutagenesis projects, such as those that generate chemically induced mutations, may produce mutations in multiple sites in the genome. In MGI, these incidental mutations are these types of mutations that have been detected via sequencing but have not yet been confirmed or studied. You can now access information on these mutations from the Alleles and phenotypes section of Gene Detail pages.</dt>
+ 		<dt>The <a href="<!--#include file='include/homepages_url.html'-->humanDisease.shtml">Human&mdash;Mouse: Disease Connection</a> has new features: 
+		<ul>
+ 		 <li>You can now search by uploading a text file of gene symbols or IDs.</li>
+ 		 <li>If you search the Human&mdash;Mouse: Disease Connection with a VCF file, by default, MGI applies filters to the file. You now have the option of performing an unfiltered search.</li>
+ 		 <li>The form now uses genome coordinates from human build GRCh38, so both human and mouse coordinates are from the latest builds. If your coordinates are from earlier builds, the form links to an NCBI tool that will convert them to the latest build.</li>
+		</ul>
+		</dt>
+ 	</td>
+	</dl>
+	</tr>
+	</table>
+   
+   <tr><td><a name="march_2014"></a>
+
+      <table class="outline" width="100%">
+   
+   <tr><td class="enhance">March 6, 2014</td></tr>
+ 	<tr><td>
+ 	<dl class="linkedList">
+		<dt>The Gene Expression Database (GXD) uses the Mouse Developmental Anatomy Ontology to describe expression patterns in a standardized way. This ontology has been significantly improved, and a new anatomy browser has been implemented that is more interactive and provides easier access to anatomy data and associated expression data.</dt>
+		<dt>The new version of the Mouse Developmental Anatomy Ontology, developed in <a href="http://www.obofoundry.org/wiki/index.php/EMAPA:Main_Page">collaboration with EMAP</a>, provides an "abstract representation" of the anatomy that specifies anatomical structures together with their developmental (Theiler) stage ranges. This abstract representation is in addition to the previously available stage-specific representations for all Theiler stages. Further, the ontology’s hierarchical organization now allows anatomical terms to have multiple parents (i.e. is a directed acyclic graph). Thus, the anatomy can be represented and searched from multiple perspectives.</dt>
+		<dt>The newly developed <a href="<!--#include file='include/fewi_url.html'-->vocab/gxd/anatomy/">Mouse Developmental Anatomy Browser</a> allows users navigate through this ontology to locate specific anatomical structures and to obtain associated expression data. This browser contains three interactive sections:  search, term detail, and tree view. Searching is aided by an autocomplete list. The tree view allows for the viewing of terms in context, by providing the ability to expand and collapse branches, as well as providing links to associated expression data. The term detail provides information about each term as well as allowing users to toggle between stage-specific and stage-independent instances of terms.</dt>
+		<dt>Expression data summaries are returned by the GXD queries and accessed by expression result links on detail pages through MGI. These data summaries now have filters to allow users to further limit their results to specific anatomical systems, assay types, Theiler stages, detection of expression (yes or no), and to wild-type or mutant specimens.</dt> 
+		<dt>GXD is also pleased to announce that additional RNA in situ hybridization data from the GenitoUrinary Development Molecular Anatomy Project (GUDMAP) database are now available at <a href="<!--#include file='include/fewi_url.html'-->reference/J:171409">J:171409</a>. This set now includes over 137,000 RNA in situ hybridization results obtained from embryonic and postnatal specimens, analyzing 3,676 genes in 4,499 assays and accompanied by 10,655 image montages for ~ 32,000 individual images. 
+<dt>Finally, GXD pages within MGI are now demarcated by gold sidebars and/or the presence of a GXD logo.</dt>
+		</td>
+		</dl>
+	</tr>
+	</table>
+
+</td></tr>
+  
+</div> 
+
+<!--#include file='include/templateBodyStop.html'--> 
+</body>
+</html>
