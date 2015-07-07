@@ -35,9 +35,9 @@ send a message to:
 <FORM METHOD="POST" ACTION="listsrv_subscribe.cgi">
 <DL>
 <DT>Your name:<br>
-<DD><INPUT TYPE="text" NAME="username" SIZE=30>
+<DD><INPUT TYPE="text" NAME="username" placeholder="First And Last Name" SIZE=40>
 <DT><p>Your e-mail address:<br>
-<DD><INPUT TYPE="text" NAME="emailaddr" SIZE=30><P>
+<DD><INPUT TYPE="email" NAME="emailaddr" SIZE=40><P>
 <DT>Click to put a checkmark next to the list:<p>
 <DD><INPUT TYPE="checkbox" NAME="listname" VALUE="mgi-list"> <b>mgi-list</b>   (Forum for mouse genetics and MGI news)
 <DD><INPUT TYPE="checkbox" NAME="listname" VALUE="mgi-technical-list"> <b>mgi-technical-list</b>   (Forum about programmatic access to MGI data)
