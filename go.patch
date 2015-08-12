@@ -1,5 +1,5 @@
 diff --git a/Install b/Install
-index 24548c2..e73f073 100755
+index 9235766..f370d63 100755
 --- a/Install
 +++ b/Install
 @@ -58,7 +58,13 @@ fi
@@ -9,15 +9,15 @@ index 24548c2..e73f073 100755
 -/usr/local/mgi/live/lib/python/Configuration.py $CONFIGURATION tab > .Configuration.tab
 +if [ -z "$LIB_PY_MISC" ]
 +then
-+   LIB_PY_MISC=/usr/local/mgi/live/lib/python
-+   export LIB_PY_MISC
++	LIB_PY_MISC=/usr/local/mgi/live/lib/python
++	export LIB_PY_MISC
 +fi
 +
 +$LIB_PY_MISC/Configuration.py $CONFIGURATION tab > .Configuration.tab
  exec < .Configuration.tab
  while read name value junk
  do
-@@ -97,7 +103,7 @@ if [ ! -h bin/python ]; then
+@@ -91,7 +97,7 @@ if [ ! -h bin/python ]; then
  	cd bin
  	echo "Linking to python in `pwd`"
  	ln -s $PYTHON python
@@ -25,17 +25,17 @@ index 24548c2..e73f073 100755
 +	cd "$TOP"
  fi
  
- # make A symbolic link to the .../wi/www/GXD/GENAD directory
-@@ -120,7 +126,7 @@ if [ -h AD ]; then
- 		rm AD
+ cd www
+@@ -100,7 +106,7 @@ if [ -h Configuration ]; then
+ 		rm Configuration
  fi
- ln -s $ADPATH AD
+ ln -s ../Configuration Configuration
 -cd $TOP
 +cd "$TOP"
  
  # compile python libraries and make sure they're readable
  
-@@ -130,7 +136,7 @@ rm *pyc
+@@ -110,7 +116,7 @@ rm *pyc
  $PYTHON -c 'import compileall; compileall.compile_dir(".")'
  chgrp www *pyc
  chmod 750 *pyc
@@ -44,42 +44,25 @@ index 24548c2..e73f073 100755
  
  # add links to python and the config file from selected directories
  
-@@ -141,16 +147,16 @@ do
+@@ -121,9 +127,9 @@ do
  	if [ -h python ]; then
  		rm python
  	fi
 -	ln -s $PYTHON_REL python
 +	ln -s "$PYTHON_REL" python
- 
-    
-    if [ -h GEN.xls ]; then
- 		rm  GEN.xls
- 	fi
-    # make symbolic link to ../gen/data/GEN.xls
--   ln -s ${GEN_XLS_PATH}GEN.xls GEN.xls
-+   ln -s "${GEN_XLS_PATH}GEN.xls" GEN.xls
     
 -	cd $TOP
 +	cd "$TOP"
  done
  
  # support new-style link to homology.shtml minihome page, by temporarily
-@@ -160,7 +166,7 @@ if [ -h homology.shtml ]; then
+@@ -133,13 +139,13 @@ if [ -h homology.shtml ]; then
  	rm homology.shtml
  fi
  ln -s orthology.shtml homology.shtml
 -cd $TOP
 +cd "$TOP"
  
- # Check if the GEN.xls file is missing from $GEN_XLS_PATH
- cd www/GXD/GEN
-@@ -168,13 +174,13 @@ cd www/GXD/GEN
-      then
-       echo "Missing GEN.xls executable file.  Please create GEN.xls under $GEN_XLS_PATH."
-    fi
--cd $TOP
-+cd "$TOP"
-   
  # process the eGUL links.dat file
  
  cd www/egul/
@@ -89,7 +72,7 @@ index 24548c2..e73f073 100755
  
  # make the www/include directory and generate any include files
  
-@@ -183,13 +189,14 @@ if [ ! -d include ]; then
+@@ -148,13 +154,13 @@ if [ ! -d include ]; then
  	echo "Making 'include' directory in `pwd`"
  	mkdir include
  fi
@@ -98,7 +81,6 @@ index 24548c2..e73f073 100755
 -gen_includes
 -gen_stats
 +cd "$TOP/admin"
-+pwd
 +./gen_rcd
 +./gen_includes
 +./gen_stats
@@ -109,7 +91,7 @@ index 24548c2..e73f073 100755
  
  # link to the stylesheet downloaded by the WI for its userdocs
  # (temporarily disabled until needed)
-@@ -218,7 +225,7 @@ find www -type d -print | xargs chgrp www
+@@ -183,7 +189,7 @@ find www -type d -print | xargs chgrp www
  
  cd www
  includeLinker
