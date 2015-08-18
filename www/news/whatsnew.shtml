@@ -18,6 +18,7 @@
         <table class="toc" width="100%">
 		<tr><td>
         <ul>
+        <li><a href="#may28_2015">August 24, 2015</a> |
         <li><a href="#may28_2015">May 28, 2015</a> |
         <li><a href="#may12_2015">May 12, 2015</a> |
         <li><a href="#jan_2015">January 8, 2015</a> |
@@ -30,14 +31,28 @@
 
    <tr><td></td></tr>
    
-   <tr><td><a name="may28_2015"></a>
+    <tr><td><a name="august24_2015"></a>
+
+      <table class="outline" width="100%">
+   
+   <tr><td class="enhance">August 24, 2015</td></tr>
+ 	<tr><td>
+ 	<dl class="linkedList">
+ 		<!--<dt><a href="http://www.sanger.ac.uk/resources/mouse/genomes/">The Wellcome Trust Sanger Institute</a> has sequenced 28 mouse inbred strains. The Jackson Laboratory now has a <a href="ftp://ftp.jax.org/sanger/">mirror site</a> for their raw sequence data, SNPs, short indels, structural variants and assemblies of each strain.</dt>-->
+ 		<dt>MGI has completed a significant and much-needed software infrastructure upgrade. Nearly 200 tables in the back-end database schema have been ported from Sybase to Postgres, an open-source database. To support this move, we rewrote dozens of automated data loads, all software supporting manual data curation, and scripts supporting the public web interface and the publication of MGI's data in downloadable reports. Whenever possible, software products were simplified or retired, and dedicated Sun UltraSPARC servers running on Solaris were retired. MGI will continue to leverage The Jackson Laboratory's virtual server cloud running on Linux. These efforts improve the stability and speed of MGI, simplify maintenance and will reduce costs. The upgrades will make it possible for MGI to deliver new features more easily in the future.
+ 		</dt>
+ 		</td>
+	</dl>
+	</tr>
+	</table>
+ 
+ <tr><td><a name="may28_2015"></a>
 
       <table class="outline" width="100%">
    
    <tr><td class="enhance">May 28, 2015</td></tr>
  	<tr><td>
  	<dl class="linkedList">
- 		<!--<dt><a href="http://www.sanger.ac.uk/resources/mouse/genomes/">The Wellcome Trust Sanger Institute</a> has sequenced 28 mouse inbred strains. The Jackson Laboratory now has a <a href="ftp://ftp.jax.org/sanger/">mirror site</a> for their raw sequence data, SNPs, short indels, structural variants and assemblies of each strain.</dt>-->
  		<dt>GXD has added links to expression data from chicken (<a href="http://geisha.arizona.edu/geisha/index.jsp">GEISHA</a>), Xenopus (<a href="http://www.xenbase.org/entry/">Xenbase</a>) and zebrafish (<a href="http://zfin.org">ZFIN</a>), enabling the gene-based comparison of expression information between mouse and these species. The links are displayed in the Expression section of MGI gene detail pages, in Other vertebrates links. For an example see the <a href="<!--#include file='include/fewi_url.html'-->marker/MGI:97490"><i>Pax6</i> Gene Detail page</a>. Gene orthology assertions are as provided by GEISHA, Xenbase, and ZFIN.
 		</dt>
 		<dt>The HGNC Comparison of Orthology Predictions (HCOP) for mouse and human are now integrated into MGI as well as HomoloGene vertebrate homology data. When available, MGI Gene Detail pages provide links to HCOP and HGNC (Hugo Gene Nomenclature Committee) in the Vertebrate Homology and Human Homologs sections, respectively. Nomenclature searches throughout MGI will now also return appropriate HGNC homologs. </dt>
