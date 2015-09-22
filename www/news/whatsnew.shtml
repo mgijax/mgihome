@@ -18,6 +18,7 @@
         <table class="toc" width="100%">
 		<tr><td>
         <ul>
+        <li><a href="#oct22_2015">October 22, 2015</a> |
         <li><a href="#august24_2015">August 24, 2015</a> |
         <li><a href="#may28_2015">May 28, 2015</a> |
         <li><a href="#may12_2015">May 12, 2015</a> |
@@ -31,6 +32,32 @@
 
    <tr><td></td></tr>
    
+   <tr><td><a name="oct22_2015"></a>
+
+      <table class="outline" width="100%">
+   
+   <tr><td class="enhance">October 22, 2015</td></tr>
+ 	<tr><td>
+ 	<dl class="linkedList">
+ 		<!--<dt><a href="http://www.sanger.ac.uk/resources/mouse/genomes/">The Wellcome Trust Sanger Institute</a> has sequenced 28 mouse inbred strains. The Jackson Laboratory now has a <a href="ftp://ftp.jax.org/sanger/">mirror site</a> for their raw sequence data, SNPs, short indels, structural variants and assemblies of each strain.</dt>-->
+ 		<dt>MGI Gene Detail pages have always provided links to all the information we have on the mouse gene. With this release, the Detail pages display more information and provide more ways to view subsets of data and access details. New graphical displays provide a synopsis of a gene’s functions, where it is expressed and the phenotypes of mutant alleles.
+ 		<ul>
+			<li>Some sections of the Detail Page initially display only a summary. Sections can now be opened or hidden.</li>
+			<li>A new section, Human Diseases, provides a table of human diseases the Online Mendelian Inheritance in Man (OMIM) database has associated with the human gene as well human diseases modeled in mice with mutations in the gene.</li>
+			<li>Grids now highlight gene function and phenotype annotations and expression data. 
+				<ul>
+				<li>A <b>Phenotype Overview</b> displays the highest-level terms from the Mammalian Phenotype (MP) Ontology and uses blue cells to mark those with phenotypic annotations to genotypes with alleles of the gene. Click on a blue cell to see the genotypes annotated to the term and the corresponding lower-level terms. You can find even more detail by then clicking on a genotype's blue cell. This will reveal curator notes and the appropriate reference.</li>
+				<li>New graphical representation of <b>Gene Ontology (GO)</b> annotations to select high-level ontology terms. Click on a blue cell to see more specific, lower-level, annotations and supporting references.</li>
+				<li>An <b>Expression Overview</b> is displayed when there is detailed data associated with the gene and the grid header in the database. The grid headers are derived from the EMAPA ontology used for expression annotations. The mouse over for grid cells reports the total number of annotations to that term or its substructures. Click on a grid cell to open a tissue x stage matrix in a new browser window. This matrix will display an overview of all the annotations to that header term and its children.</li>
+				</ul></li>
+			<li>The References section now lets you view just the Disease, Expression, Gene Ontology and Phenotype annotation references, linked to a summary listing of just those references. Reference summaries provide text export and filtering capabilities.</li>
+			</ul>
+ 		</dt>
+ 		</td>
+	</dl>
+	</tr>
+	</table>
+   
     <tr><td><a name="august24_2015"></a>
 
       <table class="outline" width="100%">
@@ -38,7 +65,6 @@
    <tr><td class="enhance">August 24, 2015</td></tr>
  	<tr><td>
  	<dl class="linkedList">
- 		<!--<dt><a href="http://www.sanger.ac.uk/resources/mouse/genomes/">The Wellcome Trust Sanger Institute</a> has sequenced 28 mouse inbred strains. The Jackson Laboratory now has a <a href="ftp://ftp.jax.org/sanger/">mirror site</a> for their raw sequence data, SNPs, short indels, structural variants and assemblies of each strain.</dt>-->
  		<dt>MGI has completed a significant and much-needed software infrastructure upgrade. Nearly 200 tables in the back-end database schema have been ported from Sybase to Postgres, an open-source database. To support this move, we rewrote dozens of automated data loads, all software supporting manual data curation, and scripts supporting the public web interface and the publication of MGI's data in downloadable reports. Whenever possible, software products were simplified or retired, and dedicated Sun UltraSPARC servers running on Solaris were retired. MGI will continue to leverage The Jackson Laboratory's virtual server cloud running on Linux. These efforts improve the stability and speed of MGI, simplify maintenance and will reduce costs. The upgrades will make it possible for MGI to deliver new features more easily in the future.
  		</dt>
  		</td>

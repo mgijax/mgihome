@@ -57,8 +57,9 @@ border: 1px solid #EBCA6D;
 						<dt class="whatList">Use the interactive Tissue by Stage Matrix to access detailed gene expression results.</dt>
 						<dd class="searchList"><a class="small homeLink" href="<!--#include file='include/fewi_url.html'-->gxd#gxd=nomenclature%3D%26vocabTerm%3D%26annotationId%3D%26locations%3D%26structure%3D%26structureID%3D%26theilerStage%3D0%26results%3D100%26startIndex%3D0%26sort%3D%26dir%3Dasc%26tab%3Dstagegridtab">Gene Expression Data Matrix</a></dd>
 
-						<dt class="whatList">Search for gene expression results using BioMart; data returns can be customized and downloaded. </dt>
-						<dd class="searchList"><a class="small homeLink" href="http://biomart.informatics.jax.org/biomart/martview?VIRTUALSCHEMANAME=default&ATTRIBUTES=result.default.naive_attributes.markersymbol|result.default.naive_attributes.assaymgiid|result.default.naive_attributes.assaytype|result.default.naive_attributes.mutantalleles|result.default.naive_attributes.age|result.default.naive_attributes.stagenumber|result.default.naive_attributes.printname|result.default.naive_attributes.strength|result.default.naive_attributes.pattern|result.default.naive_attributes.imagefigure&FILTERS=&VISIBLEPANEL=mainpanel">GXD BioMart</a></dd>					</dl>
+						<dt class="whatList">Search for gene expression results using MouseMine. MouseMine offers "canned" queries, supports batch and iterative querying and programmatic access to GXD data. </dt>
+						<dd class="searchList"><a class="small homeLink" href="http://www.mousemine.org/mousemine/begin.do">MouseMine</a></dd>
+					</dl>
 				</div>
 			</div>
 		</td>
@@ -77,9 +78,9 @@ border: 1px solid #EBCA6D;
 						<dd class="faqList">.. find genes expressed in one tissue but not another?
 						<a class="small homeLink" onClick="javascript:openFaqWindow('GXD_comp_tissue.shtml'); return false;"
 						href="<!--#include file='include/faq_url.html'-->GXD_comp_tissue.shtml">FAQ</a></dd>
-						<dd class="faqList">.. interpret the results of my expression search?
+						<!--<dd class="faqList">.. interpret the results of my expression search?
 						<a class="small homeLink" onClick="javascript:openFaqWindow('GXD_matrix.shtml'); return false;"
-						href="<!--#include file='include/faq_url.html'-->GXD_matrix.shtml">FAQ</a></dd>
+						href="<!--#include file='include/faq_url.html'-->GXD_matrix.shtml">FAQ</a></dd>-->
 						<dd class="faqList">.. find references that report expression data for a gene at a specific age?
 						<a class="small homeLink" onClick="javascript:openFaqWindow('GXD_ref_age.shtml'); return false;"
 						href="<!--#include file='include/faq_url.html'-->GXD_ref_age.shtml">FAQ</a></dd>
