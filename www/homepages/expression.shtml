@@ -57,7 +57,7 @@ border: 1px solid #EBCA6D;
 						<dt class="whatList">Use the interactive Tissue by Stage Matrix to access detailed gene expression results.</dt>
 						<dd class="searchList"><a class="small homeLink" href="<!--#include file='include/fewi_url.html'-->gxd#gxd=nomenclature%3D%26vocabTerm%3D%26annotationId%3D%26locations%3D%26structure%3D%26structureID%3D%26theilerStage%3D0%26results%3D100%26startIndex%3D0%26sort%3D%26dir%3Dasc%26tab%3Dstagegridtab">Gene Expression Data Matrix</a></dd>
 
-						<dt class="whatList">Search for and analyze gene expression results with MouseMine's customized and iterative queries, enrichment analysis and programmatic access.</dt>
+						<dt class="whatList">Search for and analyze gene expression results with MouseMine's customized and iterative queries, enrichment analysis and programmatic access. </dt>
 						<dd class="searchList"><a class="small homeLink" href="http://www.mousemine.org/mousemine/begin.do#Expression">MouseMine</a></dd>
 					</dl>
 				</div>
@@ -118,10 +118,10 @@ font-weight: normal;
 }
 	</style>
 <ul>
+<li>The expression section of the gene detail page has been revised to make it easier to navigate. In addition a grid providing a high-level summary of the expression annotations for the marker has been added. The mouse over for grid cells reports the total number of annotations to that term or its substructures. Clicking on a cell will open (in a new browser window) a tissue x stage matrix displaying an overview of these annotations. From there you can view the details of the annotations, filter for subsets of these data, and/or download assay results or gene lists.</li>
 <li>GXD has added links to expression data from chicken (<a href="http://geisha.arizona.edu/geisha/index.jsp">GEISHA</a>), Xenopus (<a href="http://www.xenbase.org/entry/">Xenbase</a>) and zebrafish (<a href="http://zfin.org">ZFIN</a>), enabling the gene-based comparison of expression information between mouse and these species. The links are displayed in the Expression section of MGI gene detail pages, in Other vertebrates links. For an example see the <a href="<!--#include file='include/fewi_url.html'-->marker/MGI:97490"><i>Pax6</i> Gene Detail page</a>. Gene orthology assertions are as provided by GEISHA, Xenbase, and ZFIN.</li>
 <li>Two interactive matrix views have been developed to provide users with intuitive, high-level summaries of expression data and from where they can easily move to levels of greater detail. The tissue-by-developmental stage matrix provides global overviews of the spatio-temporal expression patterns of genes. The tissue-by-gene matrix enables a comparison of expression patterns between genes. Both types of matrices can be expanded (and collapsed) along the tissue axis, based on the hierarchical organization of the anatomy. Rows and columns in the matrices can be selected to refine the data set. The matrices have been added as new tabs to the gene expression data summaries. These matrices can be accessed by searches using the Gene Expression Data Query and via links from the Mouse Developmental Anatomy Browser.</li>
-<li>The Gene Expression Data Matrix is now accessible from the Access Data section of this page. It returns all of GXD's expression data in a tissue-by-developmental stage matrix. When using this matrix, users start with a high-level overview of GXD's data and then can interactively view and select expression data for the specific tissues and / or developmental stages of interest.</li>
-<!--<li>The standard Gene Expression Data Query now lets users define gene sets based on genomic location. One can, for example, search for disease candidate genes that have been mapped to a genomic region and are expressed in tissues affected by the disease.</li>-->
+<!--<li>The Gene Expression Data Matrix is now accessible from the Access Data section of this page. It returns all of GXD's expression data in a tissue-by-developmental stage matrix. When using this matrix, users start with a high-level overview of GXD's data and then can interactively view and select expression data for the specific tissues and / or developmental stages of interest.</li>-->
 
 <!--<br>
 <br>-->
