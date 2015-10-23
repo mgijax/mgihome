@@ -5,8 +5,10 @@ How to use MGI</title>
 
   <meta name="description" content="MGI provides access to integrated data on mouse genes and genome features, from sequences and genomic maps to gene expression and disease models." />
   <meta name="keywords" content="MGI, mgi, mice, mouse, murine, mus musculus, genes, genome, genomic,
-  sequences, genetics tutorial, proteins, microRNA, QTL, pseudogene, marker, genome feature, gene s
-  equence, nomenclature, gene function, transgene, introduction to genetics, mouse models, mouse genetics, FASTA, MouseBLAST, Mouse BLAST" />
+  sequences, genetics tutorial, proteins, microRNA, QTL, pseudogene, marker, genome feature, genetics, genomics,
+  mutant, allele, knockout, mouse knockout, crispr, cre, cre-lox, recombinase, homologous recombination, genetic engineering,
+  gene sequence, nomenclature, gene function, transgene, introduction to genetics, mouse models, mouse genetics, FASTA, personalized medicine,
+  precision medicine, clinical genetics, gene of unknown significance, jax, JAX, jax mice" />
 
   <meta name="robots" content="NOODP" />
   <meta name="robots" content="NOYDIR" />
@@ -35,9 +37,25 @@ the <a href="<!--#include file='include/mgihome_url.html'-->other/homepage_Intro
 Introduction to Mouse Genetics</a> a helpful resource for terminology and the basics of 
 using mice in an experimental genetic context.
 </p>
-<p>MGI is a comprehensive, curated international database resource, designed to provide 
-access to integrated genetic, genomic and biological data gathered from the greater research 
-community.<p>
+<p>MGI is a comprehensive, authoritative and curated international database resource, designed 
+to provide free access to integrated genetic, genomic and biological data gathered from the 
+greater research community. Data is derived from curation of the primarily literature, direct 
+submission by researchers or research projects, and through data loads from other public 
+resources. Each piece of information in MGI is associated with its source, indicated by a J&#58;&#35;.</p>
+<p>Within MGI, information is not merely presented as described in a publication, but organized, integrated, 
+and translated into metadata using standardized structured vocabularies. These well-defined 
+terms can be used to annotate (or retrieve) information at whatever level of precision has 
+been investigated or is desired, associate similar observations to one another, and provide information on 
+relationships between terms. Importantly, they are also stable, unique and can be parsed by a 
+computer for bioinformatic analyses. Three major structured vocabularies, also known as 
+"ontologies", are developed and used by MGI: the <a href="http://www.informatics.jax.org/searches/MP_form.shtml">Mammalian Phenotype</a> 
+ontology which describes abnormal observations in mutant animals, the <a href="http://www.informatics.jax.org/searches/GO_form.shtml">
+Gene Ontology (GO)</a> which describes the normal behavior of a gene or gene product within 
+it's cellular context, and the <a href="http://www.informatics.jax.org/vocab/gxd/anatomy/EMAPA:16039">
+Mouse Developmental Anatomy</a> ontology which describes mouse anatomical structures throughout 
+development, used for annotation of gene expression and cre recombinase activity results.
+
+<p>
 <p><h3><font color="#002255">There are three primary ways in which users can access data from MGI:</font></h3>
 <ol>
 	<li>By using the Quick Search and following links for individual genes and alleles</li>
@@ -51,7 +69,7 @@ community.<p>
 	<li><a href="#genes">How to locate gene or allele specific information</a></li>
 	<li><a href="#geneDetail">Gene Detail pages</a>
 		<ul>
-			<li><a href="#vertebratehomology">Vertebrate Homology</a></li>			
+			<li><a href="#vertebratehomology">Homology</a></li>			
 			<li><a href="#alleles">Mutations, alleles and phenotypes</a></li>
 			<li><a href="#interactions">Interactions</a></li>
 			<li><a href="#function">Gene Ontology (GO) classifications</a></li>
@@ -108,7 +126,7 @@ symbol, name, or synonym into the Quick Search window near the top of every MGI 
 		</td>
 		<td valign="top">Results are ranked by how well they match the search input. In this example 
 			<ol>
-				<li>The gene symbol <i>Tlr1</i> was used as a search term. This search is not case sensitive, 
+				<li>The gene symbol <i>Tlr1</i> was used as a search term. This search is not case sensitive&#59; 
 				use an asterisk (&#42;) as a wildcard for broader searches</li>
 				<li>The highest scoring match is to the protein-coding gene <i>Tlr1</i></li>
 				<li>Additional possible matches are returned including <i>Tlr6</i>, as the 
@@ -133,43 +151,56 @@ symbol, name, or synonym into the Quick Search window near the top of every MGI 
 		<td valign="top"><br>
 			<a href="images/howto_geneDetail.png" target="_blank">
 			<img src="<!--#include file='include/mgihome_url.html'-->/other/images/howto_geneDetail.png"
-			width="500px" height="605px" alt="gene detail page for Abcg1" style="padding:5px;"
+			width="500px" height="627px" alt="gene detail page for Irf8" style="padding:5px;"
 			border="1" margins="5px"></a>
 		</td>
 		<td valign="top"><p>There is a wealth of information and links to be found on Gene 
-		Detail pages. The gene detail page for <a href="<!--#include file='include/fewi_url.html'-->marker/MGI:107704 ">
-		Abcg1</a> is shown on the left.
+		Detail pages. The gene detail page for <a href="<!--#include file='include/fewi_url.html'-->marker/MGI:96395">
+		Irf8</a> is shown on the left. Each row contains information and links to a particular data 
+		type associated with this gene. Some rows are open by default, while others are closed with additional 
+		information available. Click "more"
+		(<img src="http://scrumbob.informatics.jax.org/webshare/images/downArrow.gif">) 
+		and "less" (<img src="http://scrumbob.informatics.jax.org/webshare/images/rightArrow.gif">) arrows within the row
+		 to change the display.
 			<ol>
 				<li><b>IDs and synonyms:</b> the official gene or marker symbol is presented 
 					at the top of the page with any synonyms below, along with its unique 
 					MGI ID.</li>
-				<li><b>Position:</b> Chromosome, linkage position in cM (where 
-					applicable) as well as physical coordinates in bp (where known).<br>
-					Clicking on the linkage map or the sequence map will bring up a the linkage 
-					context or the interactive <a href="http://jbrowse.informatics.jax.org/?data=data%2Fmouse&loc=chr5%3A64923214..64934344&tracks=DNA%2CMGI_Genome_Features%2CdbSNP_WellcomeTrust&highlight=">
-					Mouse Genome Browser</a>, respectively.</li>
-				<li><b><a href="#vertebratehomology">Vertebrate Homology:</a></b> identifiers and links to sequences for 
-					homologous genes (i.e. related by descent from a common ancestral 
+				<li><b>Position:</b> chromosomal position in both physical 
+					(bp) and linkage (cM) coordinates (where known/applicable).
+					Expanding this section will reveal interactive browser maps including 
+					the <a href="http://jbrowse.informatics.jax.org/?data=data%2Fmouse&loc=chr5%3A64923214..64934344&tracks=DNA%2CMGI_Genome_Features%2CdbSNP_WellcomeTrust&highlight=">
+					Mouse Genome Browser</a> and links to other commonly used tools (Vega, Ensembl,
+					UCSC and NCBI).</li>
+				<li><b><a href="#vertebratehomology">Homology:</a></b> Identifiers 
+					and links to sequences for homologous genes (i.e. related by descent from a common ancestral 
 					sequence) in other vertebrate species.</li>
+				<li><b><a href="#diseases">Diseases:</a></b> <i>Default closed, shown open.</i> Indicates 
+					whether mutations in this gene have been described (by OMIM) as involved in human 
+					clinical disease (human icon) and/or been described as a mouse model 
+					of a human disease (mouse icon).</li>
 				<li><b><a href="#alleles">Mutations, alleles and phenotypes:</a></b> a 
 					brief text summary of the phenotypes observed in mice carrying 
-					spontaneous or targeted mutations at this gene, a list of disease
-					 annotations and a linked tally of all mutant alleles that have been 
-					 generated and/or described by the 
+					spontaneous or targeted mutations at this gene, an interactive slim grid of 
+					27 major physiological systems with blue indicating a phenotypic annotation,
+					  and a summary of all mutant alleles that have been generated and/or described by the 
 					scientific research community. See also the section on <a href="#alleleDetail">
 					Allele Detail pages.</li>
 				<li><b><a href=#interactions>Interactions:</a></b> a list of microRNAs that 
 					that have been validated or predicted to interact with this genome feature.
 					On miRNA gene pages, the list of genome features that miRNA interacts 
 					with will be displayed.  
-				<li><b><a href="#function">Gene Ontology (GO) Classifications:</b></a> the set 
-					of structured vocabulary terms describing function, biological process 
-					involvement and cellular component of this gene. </li>
-				<li><b><a href="#expression">Expression:</b></a> gene expression data provided by 
+				<li><b><a href="#function">Gene Ontology (GO) Classifications:</b></a> a triplet of 
+					interactive slim grids where information about this gene (or gene product)'s molecular function,
+					biological processes and cellular component are featured. Blue indicates that an 
+					annotation within this gene ontology category has been recorded.</li>
+				<li><b><a href="#expression">Expression:</b></a> an interactive slim grid highlighting 
+					anatomical systems where this gene is expressed. These data, including 
+					supporting images where available, are curated by
 					the <a href="http://www.informatics.jax.org/expression.shtml">Gene Expression Database</a>. </li>
 				<li><b>Sequences:</b> links to download genomic, transcript or protein 
 					FASTA sequences. Polymorphic variants reported between inbred strains 
-					are linked below.</li>
+					are linked in the row below.</li>
 				<li><b>Protein links: </b>protein domain information provided by InterPro</li>
 				<li><b>References:</b> a list of all references curated by MGI for this gene.</li>
 			</ol>
@@ -181,36 +212,99 @@ symbol, name, or synonym into the Quick Search window near the top of every MGI 
 <div id=inset class="tab">
 
 <div id="vertebratehomology">
-<h3><font color="#002255"><blockquote>Vertebrate Homology</blockquote></font></h3>
+<h3><font color="#002255"><blockquote>Homology</blockquote></font></h3>
 <table cellpadding="6">
 	<tr>
 		<td valign="top">
-			<p>MGI currently loads homology data for mouse (<i>Mus musculus</i>), rat 
-			   (<i>Rattus norvegicus</i>), human (<i>Homo sapiens</i>), chimpanzee 
+			<p>The Homology ribbon is closed by default. Click the 
+			<font color="#54709B"><b>more/less</b></font> button to expand and see more detail.</p>
+			<p>MGI loads homology assertions from both  NCBI 
+			<a href="http://www.ncbi.nlm.nih.gov/homologene"> HomoloGene</a> and the 
+			<a href="http://www.genenames.org/">HCOP/HUGO Gene Nomenclature Committee</a>. Species 
+			represented include mouse (<i>Mus musculus</i>), human (<i>Homo sapiens</i>), rat 
+			   (<i>Rattus norvegicus</i>), chimpanzee 
 			   (<i>Pan troglodytes</i>), Rhesus macaque (<i>Macaca mulatta</i>), dog 
 			   (<i>Canis familiaris</i>), cattle (<i>Bos taurus</i>), chicken (<i>Gallus 
 			   gallus</i>), zebrafish (<i>Danio rerio</i>) and western clawed frog 
-			   (<i>Xenopus tropicalis</i>)(<font color="#54709B">&#35;1</font>). 
-			   Our data is loaded from 
-			   NCBI <a href="http://www.ncbi.nlm.nih.gov/homologene"> HomoloGene</a>.</p>
- 			<p>To the right, see Vertebrate Homology information for Carnitine 
+			   (<i>Xenopus tropicalis</i>). </p>
+ 			<p>To the right, see homology information for Carnitine 
  			   palmitoyltransferase 1a, liver <a href="<!--#include file='include/fewi_url.html'-->marker/MGI:1098296">
- 			    (<i>Cpn1a</i>)</a>.</p>			
- 			<p>Here, you can see which other vertebrate species (from MGI's list) carry 
- 			   homologous genes, whether it is 1:1, 1:many or some other relationship. In the
- 			   displayed example, the zebrafish has two paralogous genes. Also, 
- 			   see associated human diseases or access protein (NP or UniProt links) 
- 			   and mRNA transcript sequences (NM links) (<font color="#54709B">&#35;2</font>).</p> 
- 			<p>Click the link for <b>HomoloGene's Multiple Sequence Alignment
- 			    (<font color="#54709B">&#35;3</font>)</b> to see the alignment 
-			   of protein sequences across the species represented.</p>
+ 			    (<i>Cpt1a</i>)</a>.</p>			
+ 			<p>The human ortholog, <i>CPT1A</i>, is displayed at the top of this section, together with any human 
+ 				gene synonyms, external IDs and positional information. Homology assertions displayed in MGI
+ 				are always sourced, either to HomoloGene, HGNC or both (as in this case).
+ 				HomoloGene is an automated system for constructing homology classes across 
+ 				complete genomes of many species, while HGNC is focused on human as the primary species 
+ 				of interest and combines several automated pipelines together with curator decisions.
+ 				See their respective pages (linked above) for more information.</p>				
+ 			<p>Below, see vertebrate homologs and retrieve sequences across all represented species by clicking on the 
+ 				hyperlinked homology class ID. Homologs may be &lsquo;1:1&rsquo;, &lsquo;1:many&rsquo; or &lsquo;many:many&rsquo;. In this example, 
+ 				mouse <i>Cpt1a</i> has a 1:1 homology relationship with human <i>CPT1A</i>, but 
+ 				a 1:2 relationship with zebrafish <i>cpt1aa</i> and <i>cpt1ab</i> (paralogous duplication). </p> 				
+ 			<p>The last column on this table allows you to download FASTA sequences for homologous protein (NP or UniProt links) 
+ 			   and mRNA transcript sequences (NM links). To view a Multiple Sequence 
+ 			   Alignment (protein level), click the link indicated above the table which links 
+ 			   out to NCBI tools.</p>
 			<p align="right"><a href="#geneDetail">[Return to Gene Detail]</a><br>
 			   <a href="#TOC">[Return to Table of Contents]</a></p>
  		</td>
  		<td>
  <a href="images/howto_homology.png" target="_blank">
 <img src="<!--#include file='include/mgihome_url.html'-->/other/images/howto_homology.png"
-			width="600px" height="330px" alt="Vertebrate homology class" style="padding:5px;"
+			width="600px" height="520px" alt="Vertebrate homology class" style="padding:5px;"
+			border="1" margins="5px"></a>
+		</td>
+	</tr>
+</table>
+ <br>
+ 
+</div>
+
+<div id="disease">
+<h3><font color="#002255"><blockquote>Disease</blockquote></font></h3>
+<table cellpadding="6">
+	<tr>
+		<td valign="top">
+			<p>The Disease ribbon is closed by default. Click the 
+			<font color="#54709B"><b>more/less</b></font> button to expand and see more detail.</p>
+			<p>MGI provides curated gene-to-disease relationships for both human and mouse in cases 
+			where that relationship is well supported. For human, we load these relationships from 
+		 data curated by <a href="http://www.ncbi.nlm.nih.gov/omim">Online Mendelian Inheritance in Man (OMIM)</a> staff. For mouse, 
+			MGI curators rely on explicit, traceable author statements that a particular mouse mutant 
+			is a model for a given human disease.   			
+ 			<p>To the right, see the disease table for <a href="<!--#include file='include/fewi_url.html'-->marker/MGI:96680">
+ 			    <i>Kras</i></a>.</p>			
+ 			<p>If mutations in a gene have been described as causing disease in humans, a small human 
+ 				icon will appear next to that row (ex. &lsquo;KRAS-lung cancer&rsquo; and &lsquo;KRAS-bladder cancer&rsquo;). 
+ 				If a mouse mutant has been described as a model of a human disease, a mouse 
+ 				icon will appear (ex. &lsquo;Kras-lung cancer&rsquo; and &lsquo;Kras-prostate cancer&rsquo;).
+ 				In many cases these will agree, and both icons appear together. When gene-to-disease 
+ 				relationships appear in one species only, this often simply indicates missing data as a mouse 
+ 				mutant may not been examined and described within this disease context, and/or 
+ 				a human clinical case of the disease with mutations in this gene may not have been found and 
+ 				curated (yet). If a mouse model was specifically examined for a disease and found 
+ 				by researchers to not sufficiently reproduce the necessary equivalent phenotypes, the association will be 
+ 				reported with a &quot;NOT&quot; qualifier (ex. &lsquo;Kras-Leukemia, Acute Myeloid; AML&rsquo; - see 
+ 				option to &quot;view 1 NOT model&quot; for details).</p>
+ 			<p>Click on the hyperlinked disease name (<b>&#35;1</b>; <a href="<!--#include file='include/fewi_url.html'-->disease/key/850434">Pancreatic cancer</a>
+ 			) to go to a Human Disease and Mouse Model 
+ 			Detail page. Tables on these pages include all genes that have been implicated 
+ 			as causing that disease in human cases or mouse models.</p>
+ 			<p>Click on the hyperlinked &lsquo;view &#35; models&rsquo; (<b>&#35;2</b>) to view exactly which mouse genotypes have 
+ 			been described as exhibiting the characteristics of a model for human disease (view 1 
+ 			model for Noonan Syndrome 3). This pop-up will record the specific allele pair (i.e. 
+ 			<a href="<!--#include file='include/fewi_url.html'-->allele/MGI:5649285">
+ 			    <i>Kras<sup>tm4.1Bbd</sup></i></a>; click to view the biological properties 
+ 			associated with this mutation on the allele detail page), the mouse strain background, annotated phenotypes and the reference 
+ 			describing this mouse as modeling the human disease indicated (J:&#35;).</p> 
+ 			<p>
+			<p align="right"><a href="#geneDetail">[Return to Gene Detail]</a><br>
+			   <a href="#TOC">[Return to Table of Contents]</a></p>
+ 		</td>
+ 		<td>
+ <a href="images/howto_disease.png" target="_blank">
+<img src="<!--#include file='include/mgihome_url.html'-->/other/images/howto_disease.png"
+			width="600px" height="779px" alt="disease ribbon Kras" style="padding:5px;"
 			border="1" margins="5px"></a>
 		</td>
 	</tr>
@@ -225,25 +319,42 @@ symbol, name, or synonym into the Quick Search window near the top of every MGI 
 <table cellpadding="6">
 	<tr>
 		<td valign="top">
-			<p>The mutations, alleles and phenotypes ribbon on a gene detail page provides an at-a-glance 
-				text summary of the major phenotypes associated with mutations (<font color="#54709B">&#35;1</font>, 
-				in this case, for the gene <a href="<!--#include file='include/fewi_url.html'-->marker/MGI:88057">
-				<i>Apoe</i></a>), a list of the different alleles that have been generated 
-				or described affecting this gene (<font color="#54709B">&#35;2</font>) with links to the Phenotypic 
-				Allele Summary page (<font color="#54709B">&#35;3</font>), and links for 
-				any associated human diseases (<font color="#54709B">&#35;4</font>)
-				or mouse genetic models of human diseases which have been reported for 
-				this gene.</p>
-				<p>On the Phenotypic Allele Summary (<font color="#54709B">&#35;3</font>), you can see 
-				different alleles with unique official symbols (note format includes a 
-				superscript: <i>GeneSymbol<sup>AlleleID</sup></i>), their synonyms, 
-				allele category (including Generation Method and bracketed allele attributes&#59; 
-				see <a href="http://www.informatics.jax.org/mgihome/other/homepage_IntroMouse.shtml#alleles">
- 				more about alleles in the Introduction to Mouse Genetics</a>), abnormal 
- 				physiological systems and specific alleles reported to act as models of 
- 				human disease where applicable (<font color="#54709B">&#35;5</font>). 
- 				Clicking on an Allele Symbol will bring you to an <a href="#alleleDetail">
- 				Allele detail page</a>.</p>
+			<p>The Mutations, Alleles and Phenotypes ribbon on a gene detail page provides an at-a-glance 
+				text and grid summary of the major phenotypes associated with mutations in this gene, 
+				as well as links to all described alleles.</p>
+			<p>The example on the right shows the Mutations, alleles and phenotypes ribbon 
+				for the <a href="<!--#include file='include/fewi_url.html'-->marker/MGI:99907">
+				<i>Plod1</i></a> gene.</p>
+			<p>Below the grid, a short sentence summary (<font color="#54709B">Phenotype 
+				summary sentence</font>) is written by MGI curators to highlight 
+				some of the more salient phenotypic observations.</p>
+			<p>The grid (<font color="#54709B">Structured MP top-level 
+				slim grid</font>) lists all of major phenotypic systems comprising the
+				<a href="http://www.informatics.jax.org/searches/MP_form.shtml">Mammalian Phenotype (MP) 
+				ontology</a>.  Blue squares indicate that a phenotype within a given system can
+				been directly attributed to mutations/alleles of this gene, white squares 
+				indicate that no annotations within this system have been recorded. Blue 
+				squares are clickable (see arrow) which will generate a pop-up (<b>Mammalian 
+				Phenotype annotations related to [system]</b>) describing which 
+				alleles were used to make the annotation, and the specific phenotype terms that were 
+				curated. These pop-ups are also clickable, and clicking on either allele IDs
+				(format: <i>Genesymbol<sup>UniqueID</sup></i>) or 
+				slim grid sub-terms will generate a genoview page (not shown) that includes curator comments 
+				as well as the structured terms, and provides a reference for each observation. 
+				This page can also be reached using the links in the <b>Phenotype Summary</b> above the 
+				grid.</p>
+			<p>To locate a complete list of alleles that have been reported for this gene, 
+				look to the top right corner of the ribbon where an <b>All Mutations and 
+				Alleles</b> link appears, subdivided below by various relevant allele 
+				generation types. See <a href="http://www.informatics.jax.org/mgihome/other/homepage_IntroMouse.shtml#alleles">
+				Introduction to Mouse Genetics: Alleles</a> for more information on the biology 
+				differentiating these.</p>
+			<p>Clicking on these links (arrow) will open a new page for the
+				<a href="<!--#include file='include/fewi_url.html'-->allele/summary?markerId=MGI:99907">Phenotypic Allele Summary<a>. 
+				This table lists each allele with a unique ID in the first column, synonyms, 
+				affected phenotypic systems for <i>this</i> mutant and the allele generation method 
+				and attributes in the <b>Category</b> column. Clicking on an Allele Symbol
+				 will bring you to an <a href="#alleleDetail">Allele detail page</a>.</p>
  			<p>To purchase mice from commercial providers or public repositories, 
  			 	see the <a href="#findmice">Find Mice (IMSR) ribbon</a> on <b>Allele 
  			 	Detail</b> pages or navigate the <a href="http://www.findmice.org">International 
@@ -254,12 +365,105 @@ symbol, name, or synonym into the Quick Search window near the top of every MGI 
  		<td valign="top"><br>
 			<a href="images/howto_phenoAllele.png" target="_blank"> 	
 			<img src="<!--#include file='include/mgihome_url.html'-->/other/images/howto_phenoAllele.png"
-			width="600px" height="428px" alt="Phenotypes and alleles ribbon, Apoe" style="padding:5px;"
+			width="600px" height="696px" alt="Phenotypes and alleles ribbon, Plod1" style="padding:5px;"
 			border="1" margins="5px"></a>
 		</td>
 	</tr>
 </table>
 </div>
+
+</div>
+<div id="function">
+<h3><font color="#002255"><blockquote>Gene Ontology (GO) Classifications</blockquote></font></h3>
+
+<table cellpadding="6">
+	<tr>
+		<td valign="top"><p>Gene Ontology (GO) uses a set of standardized, controlled 
+			structured vocabulary terms to describe the function, biological process 
+			involvement and cell component of gene products. GO for mice is developed 
+			in collaboration with <a href="http://www.geneontology.org/">the Gene 
+			Ontology project</a> (see also <a href="<!--#include file='include/fewi_url.html'-->function.shtml">
+			GO at MGI</a>). Unlike the <b>Mutations, Alleles and Phenotypes</b> section 
+			just above, GO describes the normal behavior of the gene or gene product within it's cellular 
+			context, not abnormalities observed in mutants.</p>
+		<p>On the right is an example of the <b>Gene Ontology (GO) Classification</b> ribbon in 
+		<a href="<!--#include file='include/fewi_url.html'-->marker/MGI:1277215"><i>Bbs1</i></a>.</p> 
+		<p>This ribbon contains three grids chosen by GO to provide a broad representation of 
+			all underlying data. Left grid is <a href="<!--#include file='include/fewi_url.html'-->searches/GO.cgi?id=GO:0003674">Molecular Functions
+			</a> (elemental activities, such as catalysis or binding), center is 
+			<a href="<!--#include file='include/fewi_url.html'-->searches/GO.cgi?id=GO:0008150">Biological Process</a>
+			 (a collection of molecular events forming a process pertinent to the functioning 
+			 of living things, such as signaling or metabolism), and the right grid for 
+			 <a href="<!--#include file='include/fewi_url.html'-->searches/GO.cgi?id=GO:0005575">
+			 Cellular component</a> (the part of a cell or external environment where the gene product
+			 is located).</p>
+		<p>Blue squares are clickable which will generate a new page with underlying data for 
+		the intersection of gene and GO category, together with evidence and references (see arrow).</p>			
+		  <p>To retrieve the list of all vocabulary terms that have been annotated to this 
+			gene, click on the hyperlinked number next to "All GO Annotations".</p>
+		  <p align="right"><a href="#geneDetail">[Return to Gene Detail]</a><br>
+			   <a href="#TOC">[Return to Table of Contents]</a></p>   
+		</td>
+		<td>
+			<a href="images/howto_function.png" target="_blank"> 	
+			<img src="<!--#include file='include/mgihome_url.html'-->/other/images/howto_function.png"
+			width="600px" height="493px" alt="GO and function for Bbs1" style="padding:5px;"
+			border="1" margins="5px"></a><br>
+		</td>
+	</tr>
+</table>
+</div>
+<div id="expression">
+<h3><font color="#002255"><blockquote>Expression</font></blockquote></h3>
+
+<table cellpadding="6">
+	<tr>
+		<td valign="top">
+			<p>Expression of a gene can vary from ubiquitous to restricted by a particular 
+			   tissue type and/or developmental stage. In the gene Expression ribbon, 
+			   you can explore an overview of gene expression curated by the 
+			   Gene Expression Database, with a focus on endogenous expression during development. 
+			   The slim grid provides an overview of the major tissues and organ systems 
+			   present in a mouse across development based on the <a href="<!--#include file='include/fewi_url.html'-->vocab/gxd/anatomy/EMAPA:16039">
+			   Mouse Developmental Anatomy</a> ontology.</p>
+			<p>To the right is the Expression ribbon for <a href="<!--#include file='include/fewi_url.html'-->marker/MGI:102949"><i>Foxn1</i></a>.</p>
+			<p>Blue squares indicate that the gene is expressed in this system, grey triangles 
+				indicate that all data system is derived from some other type of annotation, including 
+				gene expression examined and absent, or expression data from mutant lines. White 
+				indicates that no expression annotations are present within this system.<p>
+			<p>Filled cells (blue or grey) are clickable to reveal more detailed structures 
+			and annotations (see arrow). On the <b>Gene Expression Data</b> page that appears,
+			a Tissue x Stage matrix appears with expression annotations arranged by tissue 
+			in rows (use triangle toggles to retrieve more specific annotations) and developmental 
+			stages displayed in columns. In this table, the TS prefix refers to Theiler stages 
+			   of embryonic development: TS1-TS26 are embryonic, TS27 is perinatal and 
+			   TS28 is adult. </p>
+			<p>A legend on this page outlines fill color and shading. Briefly, blue is used to 
+			demonstrate that gene expression has been detected at a given tissue and stage, red 
+			demonstrates that gene expression was examined and found to be absent, and gold indicates
+			tissue and stage combinations where the underlying annotations are negative or ambiguous, but 
+			within substructures. Darker shading is used to indicate the presence of more data 
+			but is not necessarily related to higher expression of the gene. If the intersection appears blank (white), there is no 
+			expression data within GXD for that combination.</p>
+			<p>Apply filters to refine your 
+			   results, and click on shaded cells or navigate other tabs to see more specific 
+			   supporting data with references, images, or download data.</p>
+			<p>This page includes additional tabs, for more detail on interpreting each, see <a href="<!--#include file='include/mgihome_url.html'-->../faq/GXD_matrix.shtml">
+			How do I interpret the results of my expression search?</a></p> 
+			<p align="right"><a href="#geneDetail">[Return to Gene Detail]</a><br>
+			   <a href="#TOC">[Return to Table of Contents]</a></p> 
+			
+		</td>
+		<td valign="top"><br>
+			<a href="images/howto_expression.png" target="_blank"> 	
+			<img src="<!--#include file='include/mgihome_url.html'-->/other/images/howto_expression.png"
+			width="600px" height="518px" alt="Expression ribbon for Foxn1" style="padding:5px;"
+			border="1" margins="5px"></a><br>
+		</td>
+	</tr>
+</table>
+</div>
+
 <div id="interactions">
 <h3><font color="#002255"><blockquote>Interactions</blockquote></font></h3>
 <table cellpadding="6">
@@ -307,98 +511,7 @@ symbol, name, or synonym into the Quick Search window near the top of every MGI 
 </table>
  <br>
  
-</div>
-<div id="function">
-<h3><font color="#002255"><blockquote>Gene Ontology (GO) Classifications</blockquote></font></h3>
 
-<table cellpadding="6">
-	<tr>
-		<td valign="top"><p>Gene Ontology (GO) uses a set of standardized, controlled 
-			structured vocabulary terms to describe the function, biological process 
-			involvement and cell component of gene products. GO for mice is developed 
-			in collaboration with <a href="http://www.geneontology.org/">the Gene 
-			Ontology project</a>. Using a structured vocabulary allows terms to be placed 
-			in a hierarchical tree (parent-child), enabling both broad level and very 
-			precise searches. The standardization also ensures that despite potentially 
-			very different experimental methods and results description, similar findings 
-			can be grouped in a logical way.</p>
-		  <p>To retrieve the list of all vocabulary terms that have been annotated to this 
-			gene, click on the hyperlinked number next to "All GO Classifications" 
-			(<font color="#54709B">&#35;1</font>). The example on the right shows 42 GO annotations 
-			for the gene <a href="<!--#include file='include/fewi_url.html'-->marker/MGI:97487">
-			<i>Pax3</i></a>.<p>
-		  <p>Following the hyperlinked number will lead to a summary page where each 
-		    annotation is listed, along with the evidence used to support it 
-		    (<font color="#54709B">&#35;2</font>). Instead of a text summary, you can 
-		    also view these annotations in tabular format, or as a GO graph 
-		    (<font color="#54709B">&#35;3</font>).</p>
-		  <p>Clicking on individual terms will bring you to the Gene Ontology Browser 
-		    (<font color="#54709B">&#35;4</font>) where the term itself is put into context. The GO Browser can also 
-		    be navigated <a href="http://www.informatics.jax.org/searches/GO_form.shtml">here</a>.</p>
-		  <p align="right"><a href="#geneDetail">[Return to Gene Detail]</a><br>
-			   <a href="#TOC">[Return to Table of Contents]</a></p>  
-		    
-		</td>
-		<td>
-			<a href="images/howto_function.png" target="_blank"> 	
-			<img src="<!--#include file='include/mgihome_url.html'-->/other/images/howto_function.png"
-			width="600px" height="459px" alt="GO and function for Pax6" style="padding:5px;"
-			border="1" margins="5px"></a><br>
-		</td>
-	</tr>
-</table>
-</div>
-<br>
-<div id="expression">
-<h3><font color="#002255"><blockquote>Expression</font></blockquote></h3>
-
-<table cellpadding="6">
-	<tr>
-		<td valign="top">
-			<p>Expression of a gene can vary from ubiquitous to restricted by a particular 
-			   tissue type and/or developmental stage. On the gene Expression ribbon, 
-			   you can explore the Gene Expression Database's tissue summary table 
-			   by clicking on the hyperlinked number next to "<b>Data Summary: Tissues</b>" (<font color="#54709B">&#35;1</font>)
-			    or the complete curated dataset by clicking on "<b>Data Summary: Results</b>" 
-			   (<font color="#54709B">&#35;2</font>), both of which link to a new page. Clicking on the 
-			   <b>Tissue x Stage matrix</b> (<font color="#54709B">&#35;3</font>) provides 
-			   a visual representation of the expression data in GXD.
-			<p>The <b>Tissue Summary</b> (<font color="#54709B">&#35;1</font>, not shown) 
-			   is a compressed table enumerating all tissues and age combinations where 
-			   expression of this gene (here, <a href="<!--#include file='include/fewi_url.html'-->marker/MGI:106675">
-			   <i>Adipoq</i></a>) was examined and reported as "detected/expressed" in 
-			   the (+) column, or "not detected/not expressed" 
-			   in the (-) column. In this table, the TS prefix refers to Theiler stages 
-			   of embryonic development: TS1-TS26 are embryonic, TS27 is perinatal and 
-			   TS28 is adult. This table can be exported and saved, or click on the numbers 
-			   in the Results column to see more detail for a given observation.</p>
-			<p>Click on a term name, see the <a href="http://www.informatics.jax.org/vocab/gxd/anatomy/EMAPA:16039">
-			   Mouse Developmental Anatomy Browser</a> in MGI or <a href="http://www.emouseatlas.org/emap/ema/theiler_stages/StageDefinition/stagedefinition.html">
-			   Theiler Stage Definitions</a> from the e-Mouse Atlas Project in Edinburgh 
-			   for stage descriptions.</p>
-			<p>The <b>Tissue x Stage matrix</b> (<font color="#54709B">&#35;3</font>) generates 
-			   an interactive visual grid with tissue x stage intersections shaded in blue where data exists 
-			   demonstrating that the gene <i>is</i> expressed and detected. Red shading indicates 
-			   that data exists demonstrating that the gene is not expressed/not detected in this 
-			   tissue at the defined developmental stage. If the intersection appears blank (white) 
-			   there is no data within GXD for the combination. Apply filters to refine your 
-			   results, and click on shaded cells or navigate other tabs to see more specific 
-			   supporting data with references, images, or download data.</p>
-			<p>For more detail on interpreting each tab, see <a href="<!--#include file='include/mgihome_url.html'-->../faq/GXD_matrix.shtml">
-			How do I interpret the results of my expression search?</a></p> 
-			<p align="right"><a href="#geneDetail">[Return to Gene Detail]</a><br>
-			   <a href="#TOC">[Return to Table of Contents]</a></p> 
-			
-		</td>
-		<td valign="top"><br>
-			<a href="images/howto_expression.png" target="_blank"> 	
-			<img src="<!--#include file='include/mgihome_url.html'-->/other/images/howto_expression.png"
-			width="600px" height="537px" alt="Expression ribbon for Adipoq" style="padding:5px;"
-			border="1" margins="5px"></a><br>
-		</td>
-	</tr>
-</table>
-</div>
 </div>
 <br>
 
