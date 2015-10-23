@@ -177,7 +177,7 @@ symbol, name, or synonym into the Quick Search window near the top of every MGI 
 				<li><b><a href="#vertebratehomology">Homology:</a></b> Identifiers 
 					and links to sequences for homologous genes (i.e. related by descent from a common ancestral 
 					sequence) in other vertebrate species.</li>
-				<li><b><a href="#diseases">Diseases:</a></b> <i>Default closed, shown open.</i> Indicates 
+				<li><b><a href="#disease">Diseases:</a></b> <i>Default closed, shown open.</i> Indicates 
 					whether mutations in this gene have been described (by OMIM) as involved in human 
 					clinical disease (human icon) and/or been described as a mouse model 
 					of a human disease (mouse icon).</li>
@@ -188,10 +188,6 @@ symbol, name, or synonym into the Quick Search window near the top of every MGI 
 					  and a summary of all mutant alleles that have been generated and/or described by the 
 					scientific research community. See also the section on <a href="#alleleDetail">
 					Allele Detail pages.</li>
-				<li><b><a href=#interactions>Interactions:</a></b> a list of microRNAs that 
-					that have been validated or predicted to interact with this genome feature.
-					On miRNA gene pages, the list of genome features that miRNA interacts 
-					with will be displayed.  
 				<li><b><a href="#function">Gene Ontology (GO) Classifications:</b></a> a triplet of 
 					interactive slim grids where information about this gene (or gene product)'s molecular function,
 					biological processes and cellular component are featured. Blue indicates that an 
@@ -199,7 +195,11 @@ symbol, name, or synonym into the Quick Search window near the top of every MGI 
 				<li><b><a href="#expression">Expression:</b></a> an interactive slim grid highlighting 
 					anatomical systems where this gene is expressed. These data, including 
 					supporting images where available, are curated by
-					the <a href="http://www.informatics.jax.org/expression.shtml">Gene Expression Database</a>. </li>
+					the <a href="http://www.informatics.jax.org/expression.shtml">Gene Expression Database</a>. </li>	
+				<li><b><a href=#interactions>Interactions:</a></b> a list of microRNAs that 
+					that have been validated or predicted to interact with this genome feature.
+					On miRNA gene pages, the list of genome features that miRNA interacts 
+					with will be displayed.</li> 		
 				<li><b>Sequences:</b> links to download genomic, transcript or protein 
 					FASTA sequences. Polymorphic variants reported between inbred strains 
 					are linked in the row below.</li>
