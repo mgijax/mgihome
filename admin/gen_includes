@@ -177,8 +177,6 @@ def main ():
         '../www/include/fewi_url.html')
     stringToFile (config['QUICKSEARCH_URL'], \
         '../www/include/quicksearch_url.html')        
-    stringToFile (config['MOUSEBLAST_URL'], \
-        '../www/include/mouseblast_url.html')
     stringToFile (config['WKSILVERS_URL'], \
             '../www/include/wksilvers_url.html')        
     stringToFile (config['COOKBOOK_URL'], \
