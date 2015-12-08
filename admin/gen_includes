@@ -51,41 +51,6 @@ def getDbDate ():
 
     return dbDateInfo["dbDate"]
 
-def getCreDriver ():
-    # Purpose: return value of latest db update
-    # Returns: string
-    # Assumes: nothing
-    # Effects: nothing
-    # Throws: db module may throw DB exceptions
-    # pull the MGI:ID and geneSymbol from the database
-
-    # 03/13/2013	lec (scrum-dog/TR11248)
-    #	TR10216/Cre Driver/handle postgres case-insensitivity issue
-
-    db.useOneConnection(1)
-    db.set_sqlUser(config["DB_USER"])
-    db.set_sqlPassword(config["DB_PASSWORD"])
-    db.set_sqlServer(config["DB_SERVER"])
-    db.set_sqlDatabase(config["DB_DATABASE"])
-    
-    driverDict = {}
-    results = db.sql('''
-	select distinct driverNote, lower(driverNote) as lowNote 
-	from ALL_Cre_Cache 
-	order by driverNote
-	''', 'auto')
-    for r in results:
-	if not driverDict.has_key(r['lowNote']):
-	    driverDict[r['lowNote']] = []
-	    driverDict[r['lowNote']].append(r['driverNote'])
-    driverList = driverDict.keys()
-    driverList.sort()
-    drivers = ["<option selected value='' name='default'>(choose one)</option>"] # SQL command list
-    for r in driverList:
-        drivers.append("<option value='%s'>%s</option>" % (driverDict[r][0], driverDict[r][0]))
-    listToFile(drivers, '../www/include/driver_list.html')
-
-  
 def captchaInclude ():
     form = """<input type="hidden" name="%s" id="%s" value="default">
         <input type="text" name="%s" id="%s" value="default">""" % \
@@ -134,7 +99,6 @@ def createIncludeLink (includeName, fileLoc ) :
     os.system("ln -s " + fileLoc + " " + filePath)
 
 def main ():
-    getCreDriver()
     captchaInclude()
     stringToFile (config['WI_URL'], '../www/include/wi_url.html')
     stringToFileNoNL (config['WI_URL'], '../www/include/wi_url2.html')
