@@ -6,7 +6,7 @@
 
   <span class="titleBarMainTitle">Guidelines for Nomenclature of Mouse and Rat Strains</span>
   <br/>
-  <span class="titleBarSubTitle"> Revised: October 2013</span>
+  <span class="titleBarSubTitle"> Revised: April 2014</span>
 
 </div> <!--titleBar-->
 
@@ -28,7 +28,7 @@
 (1941), Committee for Standardized Genetic Nomenclature in Mice (1952, 1960, 1976, 1981, 1989,
 1996), Festing (1979, 1993), Staats (1986), Maltais <I>et al.</I> (1997). A recent summary of mouse guidelines was published in 2006 (Eppig 2006). Reference to former rules for rat strain nomenclature can be found in Committee on Rat Nomenclature (1992).</p>
 
-<p>An archived version of the previous online guide (October 2011) is available <a href="2011_strains.shtml">here</a>.</p>
+<p>An archived version of the previous online guide (October 2013) is available <a href="2013_strains.shtml">here</a>.</p>
 
 <p>Current nomenclature rules for naming genes in mouse and rat are available online at:
 <UL>
@@ -54,9 +54,10 @@
    <A HREF="#hasmfmis">4.&nbsp;&nbsp;Strains Made from Multiple Inbred Strains</A><br>
      <ul>
       <A HREF="#ris">4.1&nbsp;&nbsp;Recombinant Inbred Strains</A><br>
-      <A HREF="#mis">4.2&nbsp;&nbsp;Mixed Inbred Strains</A><br>
-      <A HREF="#rcs">4.3&nbsp;&nbsp;Recombinant Congenic Strains</A><br>
-      <A HREF="#ail">4.4&nbsp;&nbsp;Advanced Intercross Lines</A><br>
+      <a href="#ccstrains">4.2&nbsp;&nbsp;Collaborative Cross Strains</a><br>
+      <A HREF="#mis">4.3&nbsp;&nbsp;Mixed Inbred Strains</A><br>
+      <A HREF="#rcs">4.4&nbsp;&nbsp;Recombinant Congenic Strains</A><br>
+      <A HREF="#ail">4.5&nbsp;&nbsp;Advanced Intercross Lines</A><br>
      </ul>
    <A HREF="#ccasis">5.&nbsp;&nbsp;Coisogenic, Congenic, and Segregating Inbred Strains</A><br>
       <ul>
@@ -290,22 +291,27 @@ the hybrid symbol; <I>e.g.</I>, BALB/cBy = CBy, C3H/HeSn = C3Sn.</p>
 <blockquote>
 <table width="!%" cellpadding="2">
 <tr><TD ALIGN="width=25%">129</td><td>&nbsp;&nbsp;&nbsp;</td><td>129 strains (may include subtype, <I>e.g.</I>, 129S6 for strain 129S6/SvEvTac)</tr>
-<tr><td>A</td><td>&nbsp;&nbsp;&nbsp;</td> <td>A strains</td></tr>
-<tr><td>AK</td><td>&nbsp;&nbsp;&nbsp;</td>  <td>AKR strains</td> </tr>
-<tr><td>B</td><td>&nbsp;&nbsp;&nbsp;</td>   <td>C57BL</td> </tr>
-<tr><td>B6</td><td>&nbsp;&nbsp;&nbsp;</td> <td>C57BL/6 strains</td>	 </tr>
-<tr><td>B10</td><td>&nbsp;&nbsp;&nbsp;</td> <td>C57BL/10 strains</td> </tr>
-<tr><td>BR </td><td>&nbsp;&nbsp;&nbsp;</td> <td>C57BR/CD</td> </tr>
-<tr><td>C </td><td>&nbsp;&nbsp;&nbsp;</td>  <td>BALB/c strains</td> </tr>
-<tr><td>C3 </td><td>&nbsp;&nbsp;&nbsp;</td> <td>C3H strains</td> </tr>
-<tr><td>CB </td><td>&nbsp;&nbsp;&nbsp;</td> <td>CBA</td> </tr>
-<tr><td>D1 </td><td>&nbsp;&nbsp;&nbsp;</td> <td>DBA/1 strains</td> </tr>
-<tr><td>D2 </td><td>&nbsp;&nbsp;&nbsp;</td> <td>DBA/2 strains</td> </tr>
-<tr><td>HR </td><td>&nbsp;&nbsp;&nbsp;</td> <td>HRS/J</td> </tr>
-<tr><td>L </td><td>&nbsp;&nbsp;&nbsp;</td>  <td>C57L/J</td> </tr>
-<tr><td>R3 </td><td>&nbsp;&nbsp;&nbsp;</td> <td>RIIIS/J</td> </tr>
-<tr><td>J </td><td>&nbsp;&nbsp;&nbsp;</td>  <td>SJL </td>   </tr>
-<tr><td>SW </td><td>&nbsp;&nbsp;&nbsp;</td> <td>SWR</td></tr>
+<tr><td>A</td><td>&nbsp;&nbsp;&nbsp;</td> <td>A strains, except for Heston substrains</td></tr>
+<tr><td>A/He</td><td>&nbsp;&nbsp;&nbsp;</td> <td>A/He (Heston substrains)</td></tr>
+<tr><td>AK</td><td>&nbsp;&nbsp;&nbsp;</td> <td>AKR strains</td></tr>
+<tr><td>B</td><td>&nbsp;&nbsp;&nbsp;</td> <td>C57BL</td></tr>
+<tr><td>B6J</td><td>&nbsp;&nbsp;&nbsp;</td> <td>C57BL/6J substrains</td></tr>
+<tr><td>B6N</td><td>&nbsp;&nbsp;&nbsp;</td> <td>C57BL/6N substrains</td></tr>
+<tr><td>B10</td><td>&nbsp;&nbsp;&nbsp;</td> <td>C57BL/10 strains</td></tr>
+<tr><td>BR</td><td>&nbsp;&nbsp;&nbsp;</td> <td>C57BR/CD</td></tr>
+<tr><td>C</td><td>&nbsp;&nbsp;&nbsp;</td> <td>BALB/c strains</td></tr>
+<tr><td>CBy</td><td>&nbsp;&nbsp;&nbsp;</td> <td>BALB/cBy (Bailey substrains)</td></tr>
+<tr><td>CWt</td><td>&nbsp;&nbsp;&nbsp;</td> <td>BALB/cWt (Whitten substrains)</td></tr>
+<tr><td>C3</td><td>&nbsp;&nbsp;&nbsp;</td> <td>C3H strains</td></tr>
+<tr><td>CBA</td><td>&nbsp;&nbsp;&nbsp;</td> <td>CBA strains, except Carter substrains</td></tr>
+<tr><td>CBA/Ca</td><td>&nbsp;&nbsp;&nbsp;</td> <td>CBA Carter substrains</td></tr>
+<tr><td>D1</td><td>&nbsp;&nbsp;&nbsp;</td> <td>DBA/1 strains</td></tr>
+<tr><td>D2</td><td>&nbsp;&nbsp;&nbsp;</td> <td>DBA/2 strains</td></tr>
+<tr><td>HR</td><td>&nbsp;&nbsp;&nbsp;</td> <td>HRS/J</td></tr>
+<tr><td>L</td><td>&nbsp;&nbsp;&nbsp;</td> <td>C57L/J</td></tr>
+<tr><td>R3</td><td>&nbsp;&nbsp;&nbsp;</td> <td>RIIIS/J</td></tr>
+<tr><td>J</td><td>&nbsp;&nbsp;&nbsp;</td> <td>SJL</td></tr>
+<tr><td>SW</td><td>&nbsp;&nbsp;&nbsp;</td> <td>SWR</td></tr>
 </table>
 </blockquote>
 </p>
@@ -351,7 +357,34 @@ breeding scheme that produced them.</p>
 </blockquote>
 </p>
 
-<h3><a name="mis"></a>4.2&nbsp;&nbsp;&nbsp;Mixed Inbred Strains</h3>
+<h3><a name="mis"></a>4.2&nbsp;&nbsp;&nbsp;4.2	Collaborative Cross Strains</h3>
+
+<p>Collaborative Cross (CC) strains are multiparental recombinant inbred lines each with unique contributions from eight original progenitor strains: A/J, C57BL/6J, 129S1/SvImJ, NOD/ShiLtJ, NZ)/HILtJ, CAST/EiJ, PWK/PhJ, and WSB/EiJ. They were developed using a funnel breeding scheme to include all eight progenitor strains in three outbreeding generations, followed by consecutive generations of brother x sister matings (Threadgill and Churchill 2012, Collaborative Cross Consortium 2012). 
+</p>
+<p>Collaborative Cross strains are designated by CC, followed by a 4-digit number, a forward slash, and the laboratory code for the institution at which they were bred. The three institutions responsible for the initial breeding, with their respective lab codes in parentheses, are: University of North Carolina, USA (Unc), Tel Aviv University, Israel (Tau), and Geniad, Australia (Geni). As with other inbred strains, additional lab codes are appended when substrains are established.
+</p>
+
+<p><b>Example:</b>
+<blockquote>
+<table>
+<tr><td>CC0058/Unc &nbsp;&nbsp;</td><td>Collaborative Cross strain 0058, developed at University of North Carolina</td></tr>
+</table>
+</blockquote>
+</p>
+<p>Collaborative Cross (CC) strains may be intercrossed for mapping complex traits. Such F1s are called recombinant inbred intercrosses (RIX) and are symbolized
+the same as F1s between other inbred strains.
+</p>
+
+<p><b>Example:</b>
+<blockquote>
+<table>
+<tr><td>(CC0012/Unc X CC2134/Geni)F1 &nbsp;&nbsp;</td><td>F1 between a female CC0012/Unc mouse and a male CC2134/Geni mouse.</td></tr>
+</table>
+</blockquote>
+</p>
+<p>Once the full F1 designation is specified in a publication, an abbreviated version can be used. In the above example, the abbreviation would be: &nbsp;&nbsp;&nbsp; RIX:CC(0012 X 2134)
+
+<h3><a name="mis"></a>4.3&nbsp;&nbsp;&nbsp;Mixed Inbred Strains</h3>
 
 <p>Incipient inbred stocks or inbred strains that are derived from up to three parental strains (one of which could be a gene-targeted ES cell line) can be designated using upper case abbreviations for the three strains, separated by semicolons. If the strains involved have a donor/host relationship, the strain designation preceding the first semicolon should be the host and the final strain following the semicolon(s) the donor, specifically for targeted mutations where the donor is the ES cell line. Otherwise, the strain abbreviation order may be by primary contributing strain or alphanumeric order. Laboratory codes and serial numbers should be used to distinguish strains produced in different laboratories, or multiple strains from the same laboratory. Because these designations may be used for a mixed stock before it is fully inbred, these stocks should not be assumed to be inbred unless accompanied by an inbreeding generation number (<I>e.g.</I>, &gt; F20).</p> 
 
@@ -399,7 +432,7 @@ uppercase, provided the symbols are short. Because the change in strain name is 
 </p>
 
 
-<h3><a name="rcs"></a>4.3&nbsp;&nbsp;&nbsp;Recombinant Congenic Strains</h3>
+<h3><a name="rcs"></a>4.4&nbsp;&nbsp;&nbsp;Recombinant Congenic Strains</h3>
 
 <p>Recombinant Congenic (RC) Strains are formed by crossing two inbred strains, followed by a few (usually two) backcrosses of the hybrids to one of the parental strains (the &quot;recipient&quot; strain), with subsequent inbreeding without selection for any specific markers (<a href="#demant">Demant and Hart, 1986</a>). Such inbred strains will consist of the background recipient strain genome interspersed with homozygous segments of the donor (the amount of donor strain genome depending on the number of original backcrosses, 2 backcrosses will give on average 12.5%).</p>
 
@@ -428,7 +461,7 @@ uppercase, provided the symbols are short. Because the change in strain name is 
 
 <P>If the second strain abbreviation ends in a number (<I>e.g.</I>, 129P2), a hyphen should be used to separate it from the serial number.</P>
 
-<h3><a name="ail"></a>4.4&nbsp;&nbsp;&nbsp;Advanced Intercross Lines</h3>
+<h3><a name="ail"></a>4.5&nbsp;&nbsp;&nbsp;Advanced Intercross Lines</h3>
 <p>Advanced intercross lines (AIL) are made by producing an F2 generation between two inbred strains
 and then intercrossing in each subsequent generation, but avoiding sibling matings (<a
 href="#darvasi">Darvasi and Soller, 1995</a>). The purpose is to increase the possibility of tightly linked genes recombining.</p>
@@ -532,7 +565,7 @@ selection for a particular marker from the donor strain (<a href="#snell78">Snel
 
 <p>Congenic strains are designated by a symbol consisting of three parts. The full or abbreviated symbol of the recipient strain is separated by a period from an abbreviated symbol of the donor strain, this being the strain in which the allele or mutation originated, which may or may not be its immediate source in constructing the congenic strain. A hyphen then separates the strain name from the symbol (in italics) of the differential allele(s) introgressed from the donor strain.</p>
 
-<p>In cases where <b>the chromosome on which the mutation arose is unknown,<I> e.g.</I>, the donor is not inbred or is complex or an F1 hybrid</b>, the symbol Cg should be used to denote this complex genetic origin. The use of the donor strain symbol or Cg is essential to distinguish congenic from coisogenic strains. Cg is also used to designate a strain constructed by crossing together two congenic strains that have been backcrossed separately to the same host background, but where their respective donor strains differ.  Cg is also applied where alleles originate from a single donor strain, but the congenic strain also carries other coisogenic alleles. The use of Cg after the period as the donor strain indicates that multiple alleles in the strain name came from more than one source or that the genetic origin of at least one allele in the strain name is uncertain. </p>
+<p>In cases where <b>the chromosome on which the mutation arose is unknown,<I> e.g.</I>, the donor is not inbred or is complex or an F1 hybrid</b>, the symbol Cg should be used to denote this complex genetic origin. The use of the donor strain symbol or Cg is essential to distinguish congenic from coisogenic strains. Cg also is used to designate a strain constructed by crossing together two congenic strains that have been backcrossed separately to the same host background, but where their respective donor strains differ.  Cg also is applied where alleles originate from a single donor strain, but the congenic strain also carries other coisogenic alleles. The use of Cg after the period as the donor strain indicates that multiple alleles in the strain name came from more than one source or that the genetic origin of at least one allele in the strain name is uncertain. </p>
 
 <p><b>Examples:</b>
 <blockquote>
@@ -673,6 +706,7 @@ repeated backcrossing of female offspring to male C57BL/6J. As with congenic str
 <table cellpadding=8>
 <tr><TD VALIGN="top"><nobr>Tac:ICR</nobr></td><td valign="top">The ICR outbred stock maintained by Taconic Farms, Inc.</td></tr>
 <tr><TD VALIGN="top"><nobr>Hsd:NIH Swiss&nbsp;&nbsp;</nobr></td><td valign="top">The NIH Swiss outbred stock maintained by Harlan Sprague Dawley, Inc.</td></tr>
+<tr><TD VALIGN="top"><nobr>Hsd:J:DO &nbsp;&nbsp;</nobr></td><td valign="top">The Diversity Outbred stock maintained by The Jackson Laboratory composed of the same original progenitor strains as the Collaborative Cross. (Churchill et al. 2012; Svenson et al. 2012)</td></tr>
 </table>
 </blockquote>
 </p>
@@ -717,6 +751,10 @@ repeated backcrossing of female offspring to male C57BL/6J. As with congenic str
 <p>&nbsp;</p>
 <ul>
 <a name="bailey"></a>Bailey, D.W. 1971. Recombinant inbred strains, an aid to finding identity, linkage, and function of histocompatibility and other genes. Transplantation 11:325-327.<br><br>
+
+Churchill, G.A., Gatti, D.M., Munger, S.C., Svenson, K.L. 2012. The Diversity Outbred mouse population. Mamm Genome. 23: 713-718 <br><br>
+
+Collaborative Cross Consortium. 2012. The genome architecture of the Collaborative Cross mouse genetic reference population. Genetics 190: 389-401 <br><br>
 
 Committee on Rat Nomenclature. 1992. Definition, nomenclature, and conservation of rat strains. ILAR News 34: S1-S26.<br><br>
 
@@ -763,7 +801,11 @@ Snell GD. 1941. Biology of the Laboratory Mouse, 1st Edition, McGraw-Hill, New Y
 
 Staats J. 1985. Standardized Nomenclature for Inbred Strains of Mice: eighth listing. Cancer Res. 45: 945-977.<br><br>
 
+Svenson, K.L., Gatti, D.M., Valdar, W., Welsh, C.E., Cheng, R., Chesler, E.J., Palmer, A.A., McMillan, L., Churchill, G.A. 2012. High-resolution genetic mapping using the Mouse Diversity outbred population. Genetics 190: 437-447.<br><br>
+
 <A name="taylor"></A>Taylor B.A. 1978. Recombinant inbred strains: use in gene mapping. In  Origins of Inbred Mice, Morse, HC. (eds.), Academic Press, New York, pp. 423-438.<br><br>
+
+Threadgill, D.W., Churchill, G.A. 2012. Ten years of the Collaborative Cross. Genetics. 190: 291-294<br><br>
 
 <a name="wakeland"></a>Wakeland E, Morel L, Achey K, Yui M, Longmate J. 1997. Speed congenics: a classic technique in the fast lane (relatively speaking). Immunol Today 18: 472-477.
 </ul>
