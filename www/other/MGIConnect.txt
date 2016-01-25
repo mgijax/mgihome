@@ -4,14 +4,10 @@ import java.sql.*;
  * This is a simple JDBC client that connects to the MGI ADHOC Database server.
  * You must first edit this file, and update it with your own username/password.
  * After you have done this, compile and run this code.
- * If everything runs correctly, you will get a list of Accession ID's printed
- * out to your screen.
- * If it does not run properly you will get a stack trace detailing what is
- * going wrong.
- * Please note that you must have the JConnect jar in your
- * classpath for this snippet to work.
- * If you do not already have jconnect you can get it from Sybase at:
- * http://www.sybase.com/products/allproductsa-z/softwaredeveloperkit/jconnect
+ * If everything runs correctly, you will get a list of Accession ID's printed out to your screen.
+ * If it does not run properly you will get a stack trace detailing what is going wrong.
+ * Please note that you must have the JConnect jar in your classpath for this snippet to work.
+ * Postgresql JDBC drivers are available from https://jdbc.postgresql.org/download.html
  */
 public class MGIConnect {
 
@@ -25,12 +21,13 @@ public class MGIConnect {
         String password = "password";
 
         try {
-            // Load the JDBC driver: MySQL MM JDBC driver
-            String driverName = "com.sybase.jdbc3.jdbc.SybDriver";
-            Class.forName(driverName);
+            // Load the Postgres JDBC driver
+			String driverName = "org.postgresql.Driver";
+			Class.forName(driverName);
+
 
             // Create a connection to the database
-            String url = "jdbc:sybase:Tds:gondor.informatics.jax.org:4025/mgd";
+            String url = "jdbc:postgresql://mgi-adhoc.jax.org:5432/mgd;
 
             // Create a new connection to MGI
 
