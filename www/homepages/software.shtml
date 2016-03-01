@@ -75,6 +75,8 @@ Note that the list in each section is a definition list <dl> where the term
 					<dl class="linkedList">
 						<dt>&bull; <a href="<!--#include file='include/fewi_url.html'-->batch">Batch Query</a></dt>
 						<dd>Input a list of IDs or gene symbols and retrieve other database IDs and gene attributes (e.g. phenotypes, GO, expression data).</dd>
+						<dt>&bull; <a href="<!--#include file='include/fewi_url.html'-->gxd/batchSearch">Gene Expression Batch Search</a></dt>
+						<dd>Input a list of IDs or gene symbols and retrieve associated gene expression assay data. Search results include a tissue-by-gene matrix view to enable the comparison of expression patterns between genes. &nbsp; &nbsp; <img src="<!--#include file='include/mgihome_url.html'-->/images/new.gif"></a></dd>
 						<dt>&bull; <a href="http://www.mousemine.org/">MouseMine</a></dt>
 						<dd>Powered by InterMine, MouseMine offers flexible querying, numerous predefined query templates, iterative refinement of results, and linking to other model organism Mines. MouseMine: </dd>
 	<blockquote>
@@ -164,7 +166,7 @@ Note that the list in each section is a definition list <dl> where the term
 					    	<i>Search for detailed gene expression assay results.</i></li>
 						<li><a href="<!--#include file='include/fewi_url.html'-->reference">References</a><br>
 							<i>Search curated references by author, journal or text. The output to this form provides the text export option</i></li>
-						<li><a href="<!--#include file='include/java_url.html'-->WIFetch?page=snpQF">Mouse SNP Query Form</a><br>
+						<li><a href="<!--#include file='include/fewi_url.html'-->snp">Mouse SNP Query Form</a><br>
 					        <i>Search for SNPS by strain(s), SNP attributes, genomic position, or associated genes</i></li>
 					  </ul>
 					  </ul>
