@@ -1,0 +1,136 @@
+<!--#include file='include/templateHead.html'-->
+<title>MGI-Mouse Nomenclature Archive Page</title>
+
+<!--#include file='include/templateBodyStart.html'-->
+<!-- Title Bar -->
+<div id="titleBarWrapper">
+  <span class="titleBarMainTitle"> Mouse Nomenclature Archive Page</span>
+
+</div>
+<!--titleBar-->
+
+<!-- main body table -->
+<table width="80%" cellpadding="2" align="center">
+ <tr><td>
+ <!-- begin TOC table -->
+        	<div align="center">
+		<table class="toc" width="100%">
+      		<tr><td>
+      	 		<ul>
+      	               	<li><a href="#gene">Genes, Alleles & Mutations</a></li> |
+      	               	<li><a href="#strains">Strains</a></li> |
+      	               	<li><a href="#aberrations">Chromosome Aberrations</a></li> |
+      	       	       	<li><a href="#contacts">Contacts</a></li>
+      	 	       	</ul>
+      		    </td>
+      	         </tr>
+      	 	</table>
+      		</div>
+ <!-- end TOC table -->
+ </td></tr>
+ <TR><td></td></TR>
+ <tr><td>
+<!-- create table for first paragraph -->
+	    <div align="center">
+	     <table class="outline" width="100%">
+		<tr><td>The Mouse Genome Informatics Database is the authoritative source of official names for mouse genes, alleles, and strains. Nomenclature follows the rules and guidelines established by the <a href="inc.shtml">International Committee on Standardized Genetic Nomenclature for Mice</a>. This page provides archived versions of the previous online guides. 
+		</td>
+	     </tr>
+           </table>
+           </div>
+<!--end of first paragraph's table-->
+  </td>
+  </tr>
+<!--filler for blank space between tables-->
+  <TR><td></td></TR>
+  
+<!-- begin genes table -->
+<a name="gene"></a>
+<table class="outline" width="100%">
+
+	<tr><td class="enhance"><b>Guidelines for Nomenclature of Genes, Genetic Markers, Alleles, and Mutations in Mouse and Rat</b>
+		</td>
+		</tr>
+	<tr><td>
+	<ul>
+	<li>August <a href="2014_gene.shtml">2014</a> Guide</li>
+	<li>November <a href="2013_gene.shtml">2013</a> Guide</li>
+	<li>September <a href="2011_gene.shtml">2011</a> Guide</li>
+	<li>January <a href="2010_gene.shtml">2010</a> Guide</li>
+	<li>January <a href="2009_gene.shtml">2009</a> Guide</li>
+	<li>January <a href="2007_gene.shtml">2007</a> Guide</li>
+	<li>August <a href="2006_gene.shtml">2006</a> Guide</li>
+	</ul>
+	</td></tr>
+</table>
+<!-- end genes table-->	
+
+</td></tr>
+<tr><td></td></tr>
+
+<tr><td>
+
+<!-- begin strains table -->
+
+<a name="strains"></a>
+<table class="outline" width="100%">
+<tr><td class="enhance"><b>Guidelines for Nomenclature of Mouse and Rat Strains</b>
+	</td>
+	</tr>
+	<tr><td>
+	<ul>
+	<li>April <a href="2014_strains.shtml">2014</a> Guide</li>
+	<li>October <a href="2013_strains.shtml">2013</a> Guide</li>
+	<li>October <a href="2011_strains.shtml">2011</a> Guide</li>
+	<li>September <a href="2010_strains.shtml">2010</a> Guide</li>
+	<li>January <a href="2009_strains.shtml">2009</a> Guide</li>
+	<li>July <a href="2007_strains.shtml">2007</a> Guide</li>
+	<li>November <a href="2006_strains.shtml">2006</a> Guide</li>
+	</ul>
+	</td></tr>
+</table>
+<!-- end strains table-->	
+
+</td></tr>
+<tr><td></td></tr>
+
+<tr><td>
+
+<!-- begin aberrations table -->
+
+<a name="aberrations"></a>
+<table class="outline" width="100%">
+<tr><td class="enhance"><b>Rules for Nomenclature of Chromosome Aberrations</b>
+	</td>
+	</tr>
+	<tr><td>
+	<ul>
+	<li>November <a href="2005_anomalies.shtml">2005</a> Guide</li>
+	<li>December <a href="2003_anomalies.shtml">2003</a> Guide</li>
+	</ul>
+</td></tr>
+</table>
+<!-- end aberrations table-->	
+
+</td></tr>
+<tr><td></td></tr>
+
+<tr><td>
+
+<!-- begin CONTACTS table -->
+
+	<a name="contacts"></a>
+		<table class="outline" width="100%">
+
+		<tr><td class="enhance"><b>Contacts</b></td></tr>
+
+		    <tr><td>The implementation of the Mouse Nomenclature Guidelines is carried out at the Mouse Genome Database through the <a name="mgnc"></a>Mouse Genomic Nomenclature Committee (MGNC) whose members are: Dr. Janan Eppig, Dr. Judith Blake, and Monica McAndrews.</td></tr>
+		    <tr><td><a href="mailto:nomen@jax.org">E-mail: nomen@jax.org</a>&nbsp; &nbsp; &nbsp; Voice: &nbsp; 207-288-6765 &nbsp; &nbsp;&nbsp;Fax: 207-288-6132</td></tr>
+		    
+</table>
+</td>
+</tr>
+</table>
+</div>
+
+<!--#include file='include/templateBodyStop.html'-->
