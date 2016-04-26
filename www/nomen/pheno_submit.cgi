@@ -21,6 +21,8 @@ import homelib
 import CGI
 import formMailer
 import db
+db.setAutoTranslate(False)
+db.setAutoTranslateBE(False)
 import re
 
 ###--- Global Variables ---###
@@ -174,7 +176,7 @@ class allmutMailer (formMailer.formMailer):
 	        	db.set_sqlDatabase(config["DB_DATABASE"])
 	        	cmds = [] # SQL command list
 	        	cmds.append(string.join([
-	        	'SELECT accID from ACC_Accession where accID = "%s"' % id
+	        	'SELECT accID from ACC_Accession where lower(accID) = lower(\'%s\')' % id
 	        	]))
 	
 	        	#  Excecute queries
