@@ -32,7 +32,7 @@
  <tr><td>
 <!-- create table for first paragraph -->
 	    <div align="center">
-	     <table class="outline" width="80%">
+	     <table class="outline" width="100%">
 		<tr><td>The Mouse Genome Informatics Database is the authoritative source of official names for mouse genes, alleles, and strains. Nomenclature follows the rules and guidelines established by the <a href="inc.shtml">International Committee on Standardized Genetic Nomenclature for Mice</a>. This page provides archived versions of the previous online guides. 
 		</td>
 	     </tr>
@@ -42,11 +42,12 @@
   </td>
   </tr>
 <!--filler for blank space between tables-->
-  <TR><td></td></TR>
+  <tr><td></td></tr>
   
 <!-- begin genes table -->
+<tr><td>
 <a name="gene"></a>
-<table class="outline" width="80%">
+<table class="outline" width="100%">
 
 	<tr><td class="enhance"><b>Guidelines for Nomenclature of Genes, Genetic Markers, Alleles, and Mutations in Mouse and Rat</b>
 		</td>
@@ -66,6 +67,7 @@
 <!-- end genes table-->	
 
 </td></tr>
+<!--filler for blank space between tables-->
 <tr><td></td></tr>
 
 <tr><td>
@@ -73,7 +75,7 @@
 <!-- begin strains table -->
 
 <a name="strains"></a>
-<table class="outline" width="80%">
+<table class="outline" width="100%">
 <tr><td class="enhance"><b>Guidelines for Nomenclature of Mouse and Rat Strains</b>
 	</td>
 	</tr>
@@ -100,7 +102,7 @@
 <!-- begin aberrations table -->
 
 <a name="aberrations"></a>
-<table class="outline" width="80%">
+<table class="outline" width="100%">
 <tr><td class="enhance"><b>Rules for Nomenclature of Chromosome Aberrations</b>
 	</td>
 	</tr>
@@ -121,14 +123,14 @@
 <!-- begin CONTACTS table -->
 
 	<a name="contacts"></a>
-		<table class="outline" width="80%">
+		<table class="outline" width="100%">
 
 		<tr><td class="enhance"><b>Contacts</b></td></tr>
 
 		    <tr><td>The implementation of the Mouse Nomenclature Guidelines is carried out at the Mouse Genome Database through the <a name="mgnc"></a>Mouse Genomic Nomenclature Committee (MGNC) whose members are: Dr. Janan Eppig, Dr. Judith Blake, and Monica McAndrews.</td></tr>
 		    <tr><td><a href="mailto:nomen@jax.org">E-mail: nomen@jax.org</a>&nbsp; &nbsp; &nbsp; Voice: &nbsp; 207-288-6765 &nbsp; &nbsp;&nbsp;Fax: 207-288-6132</td></tr>
 		    
-</table>
+		</table>
 </td>
 </tr>
 </table>
