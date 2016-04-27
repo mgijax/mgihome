@@ -1491,13 +1491,13 @@ def isKnownGene (
 			FROM MRK_Marker m
 			WHERE m._Organism_key = 1
 				AND m._Marker_Status_key IN (1,3)
-				AND m.symbol = "%s"
+				AND lower(m.symbol) = lower('%s')
 			UNION
 			SELECT a._Object_key
 			FROM ACC_Accession a
 			WHERE a._MGIType_key = 2
 				AND a._LogicalDB_key = 1
-				AND a.accID = "%s"''' % (gene, gene) )
+				AND lower(a.accID) = lower('%s')''' % (gene, gene) )
 		KNOWN_GENES[gene] = len(results) != 0
 
 	return KNOWN_GENES[gene]
@@ -1520,7 +1520,7 @@ def isKnownAllele (
 	if not KNOWN_ALLELES.has_key(allele):
 		results = homelib.sql ('''SELECT _Allele_key
 			FROM ALL_Allele
-			WHERE symbol = "%s"''' % allele.strip())
+			WHERE lower(symbol) = lower('%s')''' % allele.strip())
 		KNOWN_ALLELES[allele] = len(results) != 0
 
 	return KNOWN_ALLELES[allele]

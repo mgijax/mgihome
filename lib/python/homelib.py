@@ -7,8 +7,9 @@ import Configuration
 config = Configuration.get_Configuration ('Configuration', 1)
 
 import string
-import pg_db
-db = pg_db			# setup alias to minimize code changes
+import db
+db.setAutoTranslate(False)
+db.setAutoTranslateBE(False)
 import webshare_lib
 
 # for key in config.keys():

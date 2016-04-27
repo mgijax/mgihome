@@ -684,7 +684,7 @@ class AlleleSubjectField (OneLineTextField):
 				from ALL_Allele a, ACC_Accession acc
 				where acc._MGIType_key = %d
 					and acc._Object_key = a._Allele_key
-					and acc.accID = "%s"
+					and lower(acc.accID) = lower('%s')
 					''' % \
 				(ALLELE_TYPE, parms['accID']), 'auto')
 			if len(result) > 0:
@@ -730,7 +730,7 @@ class MarkerSubjectField (OneLineTextField):
 					MRK_Types t
 				where a._MGIType_key = %d
 					and a._Object_key = m._Marker_key
-					and a.accID = "%s"
+					and lower(a.accID) = lower('%s')
 					and m._Marker_Type_key =
 						t._Marker_Type_key
 				''' % (MARKER_TYPE, parms['accID']), 'auto')
@@ -1306,7 +1306,7 @@ def getInputObj (
 	if parms.has_key('accID'):
 		result = homelib.sql ('''select _MGIType_key
 				from ACC_Accession
-				where accID = "%s"''' % parms['accID'],
+				where lower(accID) = lower('%s')''' % parms['accID'],
 				'auto')
 		
 		for mgiType in result:
