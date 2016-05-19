@@ -18,14 +18,10 @@
         <table class="toc" width="100%">
 		<tr><td>
         <ul>
+        <li><a href="#may30_2016">May 30, 2016</a> |
         <li><a href="#mar21_2016">March 21, 2016</a> |
         <li><a href="#jan14_2016">January 14, 2016</a> |
-        <li><a href="#oct22_2015">October 22, 2015</a> |
-        <li><a href="#august24_2015">August 24, 2015</a> |
-        <li><a href="#may28_2015">May 28, 2015</a> |
-        <li><a href="#may12_2015">May 12, 2015</a> |
-        <li><a href="#jan_2015">January 8, 2015</a> |
-        <li><A HREF="news_2014.shtml"><nobr>Archive: News and Announcements for 2014</a></li> 
+        <li><A HREF="news_2014.shtml"><nobr>Archive: News and Announcements for 2015</a></li> 
         </ul>
             	</td>
         	</tr>              
@@ -33,6 +29,20 @@
    </td></tr>
 
    <tr><td></td></tr>
+   
+    <tr><td><a name="may30_2016"></a>
+
+      <table class="outline" width="100%">
+   
+   <tr><td class="enhance">May 30, 2016</td></tr>
+ 	<tr><td>
+ 	<dl class="linkedList">
+ 	<dt>LacZ knock in reporter data for 644 targeted mutants have been imported into GXD from the International Mouse Phenotyping Consortium (<a href="http://www.mousephenotype.org">IMPC</a>). This set includes 20,139 images and their 21,694 annotated results, obtained from embryonic day 12.5 and postnatal adult specimens. These data are fully integrated into GXD, allowing them to be searched in context of all other gene expression data in GXD. The entire set can be viewed at <a href="<!--#include file='include/fewi_url.html'-->gxd/reference/J:228563">J:228563</a>.
+ 	</dt>
+ 	</td>
+	</dl>
+	</tr>
+	</table>
    
    <tr><td><a name="mar21_2016"></a>
 
@@ -90,113 +100,6 @@
  	<li>A new Context column adds value to the GO classification term by detailing the conditions or refining the tissue used in the experiment.</li>
  	</ul>
  	</dt>
-	</dl>
-	</tr>
-	</table>
-   
-   <tr><td><a name="oct22_2015"></a>
-
-      <table class="outline" width="100%">
-   
-   <tr><td class="enhance">October 22, 2015</td></tr>
- 	<tr><td>
- 	<dl class="linkedList">
- 		<!--<dt><a href="http://www.sanger.ac.uk/resources/mouse/genomes/">The Wellcome Trust Sanger Institute</a> has sequenced 28 mouse inbred strains. The Jackson Laboratory now has a <a href="ftp://ftp.jax.org/sanger/">mirror site</a> for their raw sequence data, SNPs, short indels, structural variants and assemblies of each strain.</dt>-->
- 		<dt>MGI Gene Detail pages have always provided links to all the information we have on the mouse gene. With this release, the Detail pages display more information and provide more ways to view subsets of data and access details. New graphical displays provide a synopsis of a gene's functions, where it is expressed and the phenotypes of mutant alleles.
- 		<ul>
-			<li>Some sections of the Detail Page initially display only a summary. Sections can now be opened or hidden.</li>
-			<li>A new section, Human Diseases, provides a table of human diseases the Online Mendelian Inheritance in Man (OMIM) database has associated with the human gene as well human diseases modeled in mice with mutations in the gene.</li>
-			<li>Grids now highlight gene function and phenotype annotations and expression data. 
-				<ul>
-				<li>A <b>Phenotype Overview</b> displays the highest-level terms from the Mammalian Phenotype (MP) Ontology and uses blue cells to mark those with phenotypic annotations to genotypes with alleles of the gene. Click on a blue cell to see the genotypes annotated to the term and the corresponding lower-level terms. You can find even more detail by then clicking on a genotype's blue cell. This will reveal curator notes and the appropriate reference.</li>
-				<li>New graphical representation of <b>Gene Ontology (GO)</b> annotations to select high-level ontology terms. Click on a blue cell to see more specific, lower-level, annotations and supporting references.</li>
-				<li>The <b>Expression Overview</b> summarizes expression annotations using terms from early development and physiological/organ systems. The mouseover for grid cells reports the total number of annotations to that term or its substructures. Click on a cell to open (in a new browser window) a tissue x stage matrix that displays an overview of these annotations. From there you can view the details of the annotations, filter for subsets of these data, and/or download assay results.</li>
-				</ul></li>
-			<li>The References section now lets you view just the Disease, Expression, Gene Ontology and Phenotype annotation references, linked to a summary listing of just those references. Reference summaries provide text export and filtering capabilities.</li>
-			</ul>
- 		</dt>
- 		</td>
-	</dl>
-	</tr>
-	</table>
-   
-    <tr><td><a name="august24_2015"></a>
-
-      <table class="outline" width="100%">
-   
-   <tr><td class="enhance">August 24, 2015</td></tr>
- 	<tr><td>
- 	<dl class="linkedList">
- 		<dt>MGI has completed a significant and much-needed software infrastructure upgrade. Nearly 200 tables in the back-end database schema have been ported from Sybase to Postgres, an open-source database. To support this move, we rewrote dozens of automated data loads, all software supporting manual data curation, and scripts supporting the public web interface and the publication of MGI's data in downloadable reports. Whenever possible, software products were simplified or retired, and dedicated Sun UltraSPARC servers running on Solaris were retired. MGI will continue to leverage The Jackson Laboratory's virtual server cloud running on Linux. These efforts improve the stability and speed of MGI, simplify maintenance and will reduce costs. The upgrades will make it possible for MGI to deliver new features more easily in the future.
- 		</dt>
- 		</td>
-	</dl>
-	</tr>
-	</table>
- 
- <tr><td><a name="may28_2015"></a>
-
-      <table class="outline" width="100%">
-   
-   <tr><td class="enhance">May 28, 2015</td></tr>
- 	<tr><td>
- 	<dl class="linkedList">
- 		<dt>GXD has added links to expression data from chicken (<a href="http://geisha.arizona.edu/geisha/index.jsp">GEISHA</a>), Xenopus (<a href="http://www.xenbase.org/entry/">Xenbase</a>) and zebrafish (<a href="http://zfin.org">ZFIN</a>), enabling the gene-based comparison of expression information between mouse and these species. The links are displayed in the Expression section of MGI gene detail pages, in Other vertebrates links. For an example see the <a href="<!--#include file='include/fewi_url.html'-->marker/MGI:97490"><i>Pax6</i> Gene Detail page</a>. Gene orthology assertions are as provided by GEISHA, Xenbase, and ZFIN.
-		</dt>
-		<dt>The HGNC Comparison of Orthology Predictions (HCOP) for mouse and human are now integrated into MGI as well as HomoloGene vertebrate homology data. When available, MGI Gene Detail pages provide links to HCOP and HGNC (Hugo Gene Nomenclature Committee) in the Vertebrate Homology and Human Homologs sections, respectively. Nomenclature searches throughout MGI will now also return appropriate HGNC homologs. </dt>
-		<dt>Query results from the Interaction Explorer, Genes and Markers, GXD Data, and Batch Query forms now offer the option to forward your results to MouseMine. </dt>
- 	</td>
-	</dl>
-	</tr>
-	</table>
-   
-   <tr><td><a name="may12_2015"></a>
-
-      <table class="outline" width="100%">
-   
-   <tr><td class="enhance">May 12, 2015</td></tr>
- 	<tr><td>
- 	<dl class="linkedList">
- 		<dt>The first MGI mobile app for iOS, <a href="http://appstore.com/MGIgenomecompass">MGI GenomeCompass</a>, is now available from the Apple Store. Manage and follow your favorite genes, diseases or other phenotypes with MGI GenomeCompass. Whether you are conducting biomedical research or satisfying a curiosity, MGI GenomeCompass makes a compendium of biomedical knowledge available at your fingertips.
-		<ul>  
-		<li>Search MGI for genes, diseases or other phenotypes of interest</li>
-		<li>Add items to your favorites list and stay organized with user-defined notes and labels</li> 
-		<li>Quickly view annotation information for any favorite item</li>
-		<li>Receive updates when new information is annotated to any of your favorites</li>
-		<li>Quickly and easily view new annotation information on the MGI website.</li>
-		</ul>
-		</dt>
-		<dt>This first version requires iOS 8, though support for earlier iOS versions and an Android app are in progress.
-		</dt>
- 	</td>
-	</dl>
-	</tr>
-	</table>
-   
-   <tr><td><a name="jan_2015"></a>
-
-      <table class="outline" width="100%">
-   
-   <tr><td class="enhance">January 8, 2015</td></tr>
- 	<tr><td>
- 	<dl class="linkedList">
- 		<!--<dt><a href="http://www.sanger.ac.uk/resources/mouse/genomes/">The Wellcome Trust Sanger Institute</a> has sequenced 28 mouse inbred strains. The Jackson Laboratory now has a <a href="ftp://ftp.jax.org/sanger/">mirror site</a> for their raw sequence data, SNPs, short indels, structural variants and assemblies of each strain.</dt>-->
- 		<dt>MGI now incorporates weekly high-throughput phenotyping data from the International Mouse Phenotype Consortium (IMPC) in addition to data from the Wellcome Trust Sanger Institute (WTSI) and Europhenome (EuPh). These data are integrated with curated data from scientific publications, providing comprehensive comparative phenotypes for mouse mutants.
-		</dt> 
-		<dt>New features of the <a href="<!--#include file='include/homepages_url.html'-->humanDisease.shtml">Human&mdash;Mouse: Disease Connection</a> improve search specificity and assist with interpretation of search results. 
-		<ul>  
-		<li>Searches by disease or phenotype terms now support boolean expressions (ANDs, ORs and AND NOTs).</li>
-		<li>Search results in the Grid View now highlight the columns containing phenotype or disease terms that best match one or more terms in your search parameters. Initial search results also include additional phenotypes and diseases associated with the matched genes.</li> 
-		<li>Search results can be refined by filtering on Genome Feature Types of interest  (Protein coding-genes, QTL, miRNA, etc.).</li>
-		</ul>
-		</dt>
-		<dt>Improved representation of transgene and knock-in alleles.
-		<ul>
-		<li>The Mutations, alleles and phenotypes sections of Gene Detail pages now provide links to additional relevant transgenes, such as transgenes with the gene's inserted expressed human ortholog. For an example, see the <a href="<!--#include file='include/fewi_url.html'-->marker/MGI:88059"><i>App</i> Gene Detail page</a>.</li> 
-		<li>Allele Detail pages for transgenes and knock-in alleles with expressed genes now display the genes with links to more information. For an example, see this MGI <a href="<!--#include file='include/fewi_url.html'-->allele/MGI:2136595">Allele Detail page</a> and click the blue &#9658; next to its symbol in the Mutation description section to see a table with links to gene details.</li>
-		</ul>
-		</dt>
- 	</td>
 	</dl>
 	</tr>
 	</table>
