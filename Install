@@ -63,15 +63,17 @@ exec < .Configuration.tab
 while read name value junk
 do
 	case "$name" in
+		LD_LIBRARY_PATH)
+			LD_LIBRARY_PATH=$value;;
 		LIBDIRS)
 			LIBDIRS=$value;;
 		MGIHOME_PATH)
 			MGIHOME_PATH=$value;;
 		MGIHOME_URL)
 			MGIHOME_URL=$value;;
-	  PYTHON)
+		PYTHON)
 			PYTHON=$value;;
-     GROUP)
+		GROUP)
 			GROUP=$value;;
 		WI_PATH)
 			WI_PATH=$value;;
