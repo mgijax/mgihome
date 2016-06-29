@@ -145,7 +145,7 @@ Note that the list in each section is a definition list <dl> where the term
 							</ul>
 						<li>To load the PostgreSQL backup:</li>
 						<ul>
-							<li>Load it:  pg_restore -c -d <i>databaseName</i> -j jobCount -O -h host -U user mgd.postgres.dump.Fc</li>
+							<li>Load it:  pg_restore -c -d <i>databaseName</i> -j jobCount -O -h host -U user mgd.postgres.dump-Fc</li>
 							<li>jobCount should be an integer, representing the number of subprocesses. If you have a multiprocessor machine, using a jobCount between 2 and 4 will likely speed your restore significantly.</li>
 							</ul>
 							</ul>
