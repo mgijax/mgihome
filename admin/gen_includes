@@ -135,8 +135,6 @@ def main ():
         '../www/include/mgiversion.html')
     stringToFile (config['FEWI_URL'], \
         '../www/include/fewi_url.html')
-    stringToFile (config['JAVAWI_URL'], \
-        '../www/include/java_url.html')
     stringToFileNoNL (config['FEWI_URL'], \
         '../www/include/fewi_url.html')
     stringToFile (config['QUICKSEARCH_URL'], \
