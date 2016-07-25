@@ -335,10 +335,15 @@
         </a>
       </div>
       <div class='randomMsg hide'>
+        <a href="<!--#include file='include/mgihome_url.html'-->news/whatsnew.shtml">
+        <img class='randomMsgImage' src="<!--#include file='include/mgihome_url.html'-->homepages/images/Carousel_HMDCversion2.png"></img>
+        </a>
+      </div>
+      <!--<div class='randomMsg hide'>
         <a href="<!--#include file='include/fewi_url.html'-->submit.shtml">
         <img class='randomMsgImage' src="<!--#include file='include/mgihome_url.html'-->homepages/images/Carousel_Submit.png"></img>
         </a>
-      </div>
+      </div>-->
       <div class='randomMsg hide'>
          <a href="<!--#include file='include/fewi_url.html'-->allele/MGI:5442804">
         <img class='randomMsgImage' src="<!--#include file='include/mgihome_url.html'-->homepages/images/Carousel_IMPC.png"></img>
@@ -365,14 +370,14 @@
   <div id="mgiWhatsNew" class="blueBorder boxBG" >
     <div class="boxTitle">
       <div class="left">What's new at MGI</div>
-      <div class="right small">updated May 30, 2016&nbsp;</div>
+      <div class="right small">updated August 1, 2016&nbsp;</div>
     </div>
     <ul class="frontpageBulletPoints">
+     <li>The Human - Mouse: Disease Connection now includes human phenotypes from the Human Phenotype Ontology (HPO). <a class="homeLink" href="<!--#include file="include/mgihome_url.html"-->news/whatsnew.shtml">Read more...</a></li>
      <li>Gene expression data from the International Mouse Phenotyping Consortium (IMPC) are now integrated into GXD. <a class="homeLink" href="<!--#include file="include/mgihome_url.html"-->news/whatsnew.shtml">Read more...</a></li>
      <li>New Mouse dbSNP Query offers improved performance and updated data. <a class="homeLink" href="<!--#include file="include/mgihome_url.html"-->news/whatsnew.shtml">Read more...</a></li>
  <li>The Gene Expression Data Query adds a Batch Search utility to facilitate searches for expression data using lists of gene symbols or IDs. <a class="homeLink" href="<!--#include file="include/mgihome_url.html"-->news/whatsnew.shtml">Read more...</a></li>
       <li>Enhancements to Recombinase searching and Gene Ontology data. <a class="homeLink" href="<!--#include file="include/mgihome_url.html"-->news/whatsnew.shtml">Read more...</a></li>
-      <li>Gene Detail pages display more information and provide more ways to view subsets of data and access details. <a class="homeLink" href="<!--#include file="include/mgihome_url.html"-->news/whatsnew.shtml">Read more...</a></li>
     </ul>
     <!--<br>-->
     <div class="left"><a class="homeLink small" href="<!--#include file='include/mgihome_url.html'-->homepages/stats/all_stats.shtml">MGI Statistics</a></div>
