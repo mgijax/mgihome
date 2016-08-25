@@ -105,7 +105,7 @@ Note that the list in each section is a definition list <dl> where the term
 					<ul>
 						<li>MGI supports external links to our Web Interface using Accession IDs.</li>
 						<li>See <a href="<!--#include file='include/mgihome_url.html'-->other/link_instructions.shtml">Creating Web Links to MGI</a> for instructions and examples.</li>
-						<li>Public reports generated nightly are available for obtaining Accession IDs.  See <a href="<!--#include file='include/ftp_url2.html'-->reports/index.html">MGI Data and Statistical Reports</a> for an index of the reports available.</li>
+						<li>Public reports generated nightly are available for obtaining Accession IDs.  See <a href="<!--#include file='include/ftp_url.html'-->reports/index.html">MGI Data and Statistical Reports</a> for an index of the reports available.</li>
 					</ul>
 				</td>
 			</tr>
@@ -127,12 +127,12 @@ Note that the list in each section is a definition list <dl> where the term
 					<b><i>Public Reports via FTP</i></b>
 					<ul>
 					  <li>Over 65 data files are generated weekly and available for download.</li>
-					  <li>See <a href="<!--#include file='include/ftp_url2.html'-->reports/index.html">MGI Data and Statistical Reports</a> for the list of reports and their field descriptions.</li>
+					  <li>See <a href="<!--#include file='include/ftp_url.html'-->reports/index.html">MGI Data and Statistical Reports</a> for the list of reports and their field descriptions.</li>
 					</ul>
 
 					<b><i>Database Dumps via FTP</i></b>
 					<ul>
-					  <li>Database backups are available from our ftp site at:<a href="http://www.informatics.jax.org/downloads/database_backups/"> http://www.informatics.jax.org/downloads/database_backups/</a></li>
+					  <li>Database backups are available from our ftp site at:<a href="<!--#include file="include/ftp_url.html" -->database_backups/"> <!--#include file="include/ftp_url.html" -->database_backups/</a></li>
 					   <ul>
 					     <li>Backups are available for MySQL 5.0.67 and PostgreSQL 9.3.5.</li>
 					     <li>These backups assume you have a compatible version of MySQL or PostgreSQL installed, that you have created a database, and that you have adequate user permissions to load that database.</li>
