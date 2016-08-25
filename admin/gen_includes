@@ -62,30 +62,18 @@ def captchaInclude ():
         </script>""" % config['CAPTCHA_HIDE']
 
         
-    stringToFile (form, '../www/include/captchaform.html')
-    stringToFile (js, '../www/include/captchajs.html')
+    writeStringAsIncludeFile (form, '../www/include/captchaform.html')
+    writeStringAsIncludeFile (js, '../www/include/captchajs.html')
 
-def stringToFileNoNL (s, filename):
-    #  Ultimately this should replace the stringToFile method
-    #  for the current release being driven by an NIH Survey Janan wants
-    #  out, we are only using this call for the generation of ftp_url2.html.
-    #  This change was authorized by Jill as it would require more testing
-    #  to make sure there was no negative affect on all the other URLs,
-    #  if all calls to stringToFile went through here.  This method
-    #  does not include the NL character that is added in the call stringToFile
-    #  makes to listToFile.  This newline character was causing problems in
-    #  firefox with seeing the url in the page.
-    print "writing %s" % filename
+def writeStringAsIncludeFile (s, filename):
+    """
+    Write an include file that can be use to 
+      include the given text "s" into an shtml page
+    """
     fp = open (filename, 'w')
     fp.write ('%s' % s)
     fp.close()
 
-    return
-
-
-def stringToFile (s, filename):
-    listToFile ( [s], filename)
-    return
 
 INCLUDEDIR = os.path.join(config['MGIHOME_PATH'], 'www/include/')
 
@@ -100,106 +88,98 @@ def createIncludeLink (includeName, fileLoc ) :
 
 def main ():
     captchaInclude()
-    stringToFile (config['WI_URL'], '../www/include/wi_url.html')
-    stringToFileNoNL (config['WI_URL'], '../www/include/wi_url2.html')
-    stringToFile (config['FTP_BASE_URL'], '../www/include/ftp_url.html')
-    stringToFile (config['MTB_URL'], '../www/include/mtb_url.html')
-    stringToFile (config['MTB_PATHOLOGY_URL'], '../www/include/mtb_pathology_url.html')
-    stringToFile (config['MPD_URL'], '../www/include/mpd_url.html')
-    #  This version of the ftp_url file is being generated to support a problem
-    #  found in the implementation of TR7388.  The newline being written to
-    #  the file after the URL was not being handled well via firefox.
-    #  To minimize testing requirements Jill Lewis jlewis@informatics.jax.org
-    #  authorized the generation of a second ftp_url html file.
-    stringToFileNoNL (config['FTP_BASE_URL'], '../www/include/ftp_url2.html')
-    stringToFile (config['MGIHOME_URL'], '../www/include/mgihome_url.html')
-    stringToFileNoNL (config['MGIHOME_URL'], '../www/include/mgihome_url2.html')
-    stringToFile (config['GB_URL'], '../www/include/gb_url.html')
-    stringToFile (config['GBROWSE_URL'], '../www/include/gbrowse_url.html')
-    stringToFile (config['JBROWSE_URL'], '../www/include/jbrowse_url.html')
-    stringToFile (config['GO_GRAPH_URL'], '../www/include/gograph_url.html')
-    stringToFile (config['GO_TOOLS_URL'], '../www/include/gotools_url.html')
-    stringToFile (config['LOCUSLINK_URL'], \
+    writeStringAsIncludeFile (config['WI_URL'], '../www/include/wi_url.html')
+    writeStringAsIncludeFile (config['FTP_URL'], '../www/include/ftp_url.html')
+    writeStringAsIncludeFile (config['MTB_URL'], '../www/include/mtb_url.html')
+    writeStringAsIncludeFile (config['MTB_PATHOLOGY_URL'], '../www/include/mtb_pathology_url.html')
+    writeStringAsIncludeFile (config['MPD_URL'], '../www/include/mpd_url.html')
+    writeStringAsIncludeFile (config['MGIHOME_URL'], '../www/include/mgihome_url.html')
+    writeStringAsIncludeFile (config['GB_URL'], '../www/include/gb_url.html')
+    writeStringAsIncludeFile (config['GBROWSE_URL'], '../www/include/gbrowse_url.html')
+    writeStringAsIncludeFile (config['JBROWSE_URL'], '../www/include/jbrowse_url.html')
+    writeStringAsIncludeFile (config['GO_GRAPH_URL'], '../www/include/gograph_url.html')
+    writeStringAsIncludeFile (config['GO_TOOLS_URL'], '../www/include/gotools_url.html')
+    writeStringAsIncludeFile (config['LOCUSLINK_URL'], \
         '../www/include/locuslink_url.html')
-    stringToFile (config['RGD_URL'], \
+    writeStringAsIncludeFile (config['RGD_URL'], \
         '../www/include/rgd_url.html')
-    stringToFile (config['ENTREZ_URL'], \
+    writeStringAsIncludeFile (config['ENTREZ_URL'], \
         '../www/include/entrez_url.html')
-    stringToFile (config['GLOSSARY_URL'], \
+    writeStringAsIncludeFile (config['GLOSSARY_URL'], \
         '../www/include/glossary_url.html')
-    stringToFileNoNL (config['USERHELP_URL'], \
+    writeStringAsIncludeFile (config['USERHELP_URL'], \
         '../www/include/userhelp_url.html')
-    stringToFile (config['SCHEMA'],\
+    writeStringAsIncludeFile (config['SCHEMA'],\
         '../www/include/schema_url.html')
-    stringToFile (config['NAME'],\
+    writeStringAsIncludeFile (config['NAME'],\
         '../www/include/mgiversion.html')
-    stringToFile (config['FEWI_URL'], \
+    writeStringAsIncludeFile (config['FEWI_URL'], \
         '../www/include/fewi_url.html')
-    stringToFileNoNL (config['FEWI_URL'], \
+    writeStringAsIncludeFile (config['FEWI_URL'], \
         '../www/include/fewi_url.html')
-    stringToFile (config['QUICKSEARCH_URL'], \
+    writeStringAsIncludeFile (config['QUICKSEARCH_URL'], \
         '../www/include/quicksearch_url.html')        
-    stringToFile (config['WKSILVERS_URL'], \
+    writeStringAsIncludeFile (config['WKSILVERS_URL'], \
             '../www/include/wksilvers_url.html')        
-    stringToFile (config['COOKBOOK_URL'], \
+    writeStringAsIncludeFile (config['COOKBOOK_URL'], \
             '../www/include/cookbook_url.html')        
-    stringToFile (config['MORSEBOOK_URL'], \
+    writeStringAsIncludeFile (config['MORSEBOOK_URL'], \
             '../www/include/morsebook_url.html') 
-    stringToFile (config['PATHWAYS_URL'], \
+    writeStringAsIncludeFile (config['PATHWAYS_URL'], \
             '../www/include/pathways_url.html')       
-    stringToFile (config['SILVER_URL'], \
+    writeStringAsIncludeFile (config['SILVER_URL'], \
             '../www/include/silverbook_url.html') 
-    stringToFile (config['FRITHBOOK_URL'], \
+    writeStringAsIncludeFile (config['FRITHBOOK_URL'], \
             '../www/include/frithbook_url.html')    
-    stringToFile (config['GREENBOOK_URL'], \
+    writeStringAsIncludeFile (config['GREENBOOK_URL'], \
             '../www/include/greenbook_url.html')    
-    stringToFile (config['THEILERBOOK_URL'], \
+    writeStringAsIncludeFile (config['THEILERBOOK_URL'], \
             '../www/include/theilerbook_url.html')    
-    stringToFile (config['MGIWS_URL'], \
+    writeStringAsIncludeFile (config['MGIWS_URL'], \
             '../www/include/mgiws_url.html')    
-    stringToFileNoNL (config['WEBSHARE_URL'], \
+    writeStringAsIncludeFile (config['WEBSHARE_URL'], \
             '../www/include/webshare_url.html')      
-    stringToFile (webshare_lib.webshareLookup('mgi_logo'), \
+    writeStringAsIncludeFile (webshare_lib.webshareLookup('mgi_logo'), \
         '../www/include/mgi_logo.html')
-    stringToFile (webshare_lib.webshareLookup('help'), \
+    writeStringAsIncludeFile (webshare_lib.webshareLookup('help'), \
         '../www/include/help_large.html')
-    stringToFile (webshare_lib.webshareLookup('jax_logo'), \
+    writeStringAsIncludeFile (webshare_lib.webshareLookup('jax_logo'), \
         '../www/include/jax_logo.html')
-    stringToFile (webshare_lib.webshareLookup('mgi_logo_small'), \
+    writeStringAsIncludeFile (webshare_lib.webshareLookup('mgi_logo_small'), \
         '../www/include/mgi_logo_small.html')
-    stringToFile (webshare_lib.webshareLookup('new'), \
+    writeStringAsIncludeFile (webshare_lib.webshareLookup('new'), \
         '../www/include/new.html')
-    stringToFile (config['WEBSHARE_URL'] + 'css/' + config['MGIHOME_CSS_FILE'], \
+    writeStringAsIncludeFile (config['WEBSHARE_URL'] + 'css/' + config['MGIHOME_CSS_FILE'], \
         '../www/include/stylesheet.html')
-    stringToFile (config['WEBSHARE_URL'] + 'js/' + config['MGIHOME_JS_FILE'], \
+    writeStringAsIncludeFile (config['WEBSHARE_URL'] + 'js/' + config['MGIHOME_JS_FILE'], \
         '../www/include/javascript.html')
 
     # new additions for KOMP
 
-    stringToFile (config['GENBANK_HOME'],
+    writeStringAsIncludeFile (config['GENBANK_HOME'],
 	'../www/include/genbank_home_url.html')
-    stringToFile (config['ENSEMBL_HOME'],
+    writeStringAsIncludeFile (config['ENSEMBL_HOME'],
 	'../www/include/ensembl_home_url.html')
-    stringToFile (config['ENTREZGENE_HOME'],
+    writeStringAsIncludeFile (config['ENTREZGENE_HOME'],
 	'../www/include/entrezgene_home_url.html')
-    stringToFile (config['KOMP_HOME'],
+    writeStringAsIncludeFile (config['KOMP_HOME'],
 	'../www/include/komp_home_url.html')
-    stringToFile (config['KOMP_NIH'],
+    writeStringAsIncludeFile (config['KOMP_NIH'],
 	'../www/include/komp_nih_url.html')
-    stringToFile (config['IMSRURL'],
+    writeStringAsIncludeFile (config['IMSRURL'],
 	'../www/include/imsr_home_url.html')
 
     # new include file for the faq's
-    stringToFileNoNL (config['FAQ_URL'],
+    writeStringAsIncludeFile (config['FAQ_URL'],
         '../www/include/faq_url.html')
 
     # new include files for apache aliased menu and homepages
-    stringToFile (config['HOMEPAGES_URL'],
+    writeStringAsIncludeFile (config['HOMEPAGES_URL'],
         '../www/include/homepages_url.html')
-    stringToFile (config['MENUS_URL'],
+    writeStringAsIncludeFile (config['MENUS_URL'],
         '../www/include/menus_url.html')
 
-    stringToFile(getDbDate(), '../www/include/stats_date.shtml')
+    writeStringAsIncludeFile(getDbDate(), '../www/include/stats_date.shtml')
 
 
     #####----- Template Include Files --------#####
