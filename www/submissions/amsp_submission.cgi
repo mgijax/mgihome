@@ -1490,7 +1490,7 @@ def isKnownGene (
 		results = homelib.sql ('''SELECT m._Marker_key
 			FROM MRK_Marker m
 			WHERE m._Organism_key = 1
-				AND m._Marker_Status_key IN (1,3)
+				AND m._Marker_Status_key = 1
 				AND lower(m.symbol) = lower('%s')
 			UNION
 			SELECT a._Object_key
