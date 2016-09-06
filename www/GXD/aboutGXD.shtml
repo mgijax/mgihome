@@ -16,56 +16,57 @@
 
 <p>The Gene Expression Database (GXD) is a community resource for gene expression information from the laboratory mouse.  GXD stores and integrates different types of expression data and makes these data freely available in formats appropriate for comprehensive analysis. There is particular emphasis on endogenous gene expression during mouse development. The project is funded by
 <a href="http://www.nih.gov/">NIH</a>/<a href="http://www.nichd.nih.gov">NICHD</a> 
-grant HD062499</a>.
+grant HD062499.
 </p>
 <p>This page provides information about:
 <p>
 <UL>
-<LI><a href="#key">Key Concepts of GXD</a><br>
-<LI><A HREF="#acquisition">Data Acquisition</a><br>
-<LI><A HREF="#forms">Gene Expression Query Forms</A><BR>
-<LI><A HREF="#adult_dict">Adult Mouse Anatomy Ontology</A><BR>
-<LI><A HREF="#whoswho">Who's Who</b> in GXD and other MGI projects</A>
-<li><a href="#pubs">Selected Publications</a>
+<LI><a href="#key">Key Concepts of GXD</a></li>
+<LI><A HREF="#acquisition">Data Acquisition</a></li>
+<LI><A HREF="#forms">Gene Expression Query Forms</A></li>
+<LI><A HREF="#adult_dict">Adult Mouse Anatomy Ontology</A></li>
+<LI><A HREF="#whoswho">Who's Who in GXD and other MGI projects</A></li>
+<li><a href="#pubs">Selected Publications</a></li>
 </ul>
 
-<h3><a name="key"></a>Key Concepts of GXD</h3>
+<h3><a id="key"></a>Key Concepts of GXD</h3>
 <ul>
-<li>GXD stores primary data from different types of expression assays. By integrating these data, GXD provides, as data accumulate, increasingly complete information about the expression profiles of transcripts and proteins in different mouse strains and mutants. (<EM>See</EM> <A HREF="gxdconcept.shtml">details</A>.)<p>
+<li>GXD stores primary data from different types of expression assays. By integrating these data, GXD provides, as data accumulate, increasingly complete information about the expression profiles of transcripts and proteins in different mouse strains and mutants. (<EM>See</EM> <A HREF="gxdconcept.shtml">details</A>.)</li>
 
-<li>GXD describes expression patterns using an extensive, hierarchically-structured dictionary of anatomical terms. In this way, expression results from assays with differing spatial resolution are recorded in a standardized and integrated manner and expression patterns can be queried at different levels of detail. The records are complemented with digitized images of the original expression data. The Mouse Developmental Anatomy Ontology has been developed in collaboration with our Edinburgh colleagues</a>, as part of the joint <A HREF="gxdgen.shtml">Mouse Gene Expression Information Resource</a> project. <p>
+<li>GXD describes expression patterns using an extensive, hierarchically-structured dictionary of anatomical terms. In this way, expression results from assays with differing spatial resolution are recorded in a standardized and integrated manner and expression patterns can be queried at different levels of detail. The records are complemented with digitized images of the original expression data. The Mouse Developmental Anatomy Ontology has been developed in collaboration with our Edinburgh colleagues, as part of the joint <A HREF="gxdgen.shtml">Mouse Gene Expression Information Resource</a> project.</li>
 
-<li>GXD places the gene expression data in the larger biological context by establishing and maintaining interconnections with many other resources. Integration with MGD enables a combined analysis of genotype, sequence, expression, and phenotype data. Links to PubMed, Online Mendelian Inheritance in Man (OMIM), sequence databases, and databases from other species further enhance the utility of GXD.
+<li>GXD places the gene expression data in the larger biological context by establishing and maintaining interconnections with many other resources. Integration with MGD enables a combined analysis of genotype, sequence, expression, and phenotype data. Links to PubMed, Online Mendelian Inheritance in Man (OMIM), sequence databases, and databases from other species further enhance the utility of GXD.</li>
 </ul>
 
+<h3><a id="acquisition"></a>Data Acquisition</h3>
 
-<h3><a name="acquisition"></a>Data Acquisition</h3>
-<ul>
 <p>New expression data are made available on a weekly basis. These data are acquired from the literature by our curatorial staff and via electronic submission. GXD encourages researchers to submit their expression data to us.  Data submission both increases the exposure of the work and the amount of data available to the scientific community. Guidelines for submitting data can be found <a href="GEN/gxd_submission_guidelines.shtml">here</a>.
 <br>
 
-</ul>
-
-<h3><a name="forms"></a>Gene Expression Query Forms</h3>
+<h3><a id="forms"></a>Gene Expression Query Forms</h3>
 <UL>
-<LI>The <a href="<!--#include file='include/fewi_url.html'-->gxdlit">Gene Expression Literature Query Form</a> allows you to search for references on endogenous gene expression during development with search parameters such as genes and ages analyzed, and assays used. To the best of our knowledge, you can query all relevant publications from 1993 to the present for all pertinent journals and from 1990 to the present for major developmental journals with this form.</p>
+<LI>The <a href="<!--#include file='include/fewi_url.html'-->gxdlit">Gene Expression Literature Query Form</a> allows you to search for references on endogenous gene expression during development with search parameters such as genes and ages analyzed, and assays used. To the best of our knowledge, you can query all relevant publications from 1993 to the present for all pertinent journals and from 1990 to the present for major developmental journals with this form.</li>
 
-<LI>The <a href="<!--#include file='include/fewi_url.html'-->gxd">Gene Expression Data Query Form</a> allows you to search for detailed expression results from RNA <i>in situ</i>, immunohistochemistry, <i>in situ</i> reporter (knock in), Northern blot, Western blot, RT-PCR and RNAse and Nuclease S1 protection experiments using many query parameters. Experimental results are described together with the probes, specimens, and experimental conditions used and are complemented by digitized images of the original data. Use its Differential Expression Search to query for genes expressed in some anatomical structures or developmental stages but not in others.</p>
+<LI>The <a href="<!--#include file='include/fewi_url.html'-->gxd">Gene Expression Data Query Form</a> allows you to search for detailed expression results from RNA <i>in situ</i>, immunohistochemistry, <i>in situ</i> reporter (knock in), Northern blot, Western blot, RT-PCR and RNAse and Nuclease S1 protection experiments using many query parameters. Experimental results are described together with the probes, specimens, and experimental conditions used and are complemented by digitized images of the original data. Use its Differential Expression Search to query for genes expressed in some anatomical structures or developmental stages but not in others.</li>
 
 <LI>The <a href="<!--#include file='include/fewi_url.html'-->vocab/gxd/anatomy/">Mouse Developmental Anatomy Browser</a> allows you to navigate through the extensive dictionary  to locate specific anatomical structures and to obtain the expression results associated with those structures.</li>
 </ul>
 
-<h3><a name="adult_dict"></a>Adult Mouse Anatomy Ontology</h3>
+<h3><a id="adult_dict"></a>Adult Mouse Anatomy Ontology</h3>
 <blockquote>
 <P>The
 <A HREF="<!--#include file='include/wi_url.html'-->searches/AMA_form.shtml">Adult Mouse Anatomy</a> (MA) ontology has been developed and continues to be refined to provide standardized nomenclature for annotating expression and phenotype  data for the adult mouse. The MA organizes anatomical structures for the postnatal mouse spatially and functionally.  You can use the browser to view anatomical terms and their relationships in a hierarchical display.  We welcome your input. Please <A HREF="mailto:MAontology@jax.org">contact</a> us with suggestions, additions, or questions about the MA.
 </blockquote>
 
-<h3><a name="whoswho"></a>Find out <A HREF="../other/mgi_people.shtml#staff">Who's Who</a> in GXD and other MGI projects </h3>
+<h3><a id="whoswho"></a>Find out <A HREF="../other/mgi_people.shtml#staff">Who's Who</a> in GXD and other MGI projects </h3>
 <br>
-<h3><a name="pubs"></a>Selected Publications</h3>
+
+<h3><a id="pubs"></a>Selected Publications</h3>
 <br>
 <blockquote>
+
+Hayamizu TF, Baldock RA, Ringwald M. 2015. Mouse anatomy ontologies: enhancements and tools for exploring and integrating biomedical data. <a href="http://rd.springer.com/article/10.1007%2Fs00335-015-9584-9">Mamm Genome</a>. 2015 Oct;26(9-10):422-30. <a href="http://www.ncbi.nlm.nih.gov/pubmed/26208972">PubMed</a><br>
+<br>
 
 Finger JH, Smith CM, Hayamizu TF, McCright IJ, Xu J, Eppig JT, Kadin JA, Richardson JE, Ringwald M. 2015. The mouse gene expression database: New features and how to use them effectively. <a href="http://onlinelibrary.wiley.com/doi/10.1002/dvg.22864/abstract">Genesis</a>. doi: 10.1002/dvg.22864. <a href="http://www.ncbi.nlm.nih.gov/pubmed/26045019">PubMed</a><br> <br>
 
