@@ -28,7 +28,7 @@
 	</td></tr>
 	<tr><td>
 <!-- section1 table -->
-   <a name="collab"></a>
+   <a id="collab"></a>
         <div align="center"><table class="outline" width="100%">
                 <tr>
                  <td class="enhance">
@@ -71,7 +71,7 @@
            
                 <br><dt><a href="http://image.hudsonalpha.org/">IMAGE Consortium</a> (Integrated Molecular Analysis of Genomes and their Expression) and
                 <a href="http://genome.wustl.edu/">WashU</a></b> (Washington University)</dt>
-                <dd>We work with the IMAGE consortium to pre-assign MGI accession numbers to IMAGE clones, which are, in turn, sequenced by Washington University.  The IMAGE and MGI accession identifiers travel in pairs and are submitted to <a href="http://www.ncbi.nlm.nih.gov/dbEST/index.html">dbEST</a> (database of Expressed Sequence Tags) directly with the sequencing data.  Thus the connection between an EST, the clone it was derived from, and the MGI accession identifier is generated.</dd>
+                <dd>We work with the IMAGE consortium to pre-assign MGI accession numbers to IMAGE clones, which are, in turn, sequenced by Washington University.  The IMAGE and MGI accession identifiers travel in pairs and are submitted to <a href="https://www.ncbi.nlm.nih.gov/dbEST/index.html">dbEST</a> (database of Expressed Sequence Tags) directly with the sequencing data.  Thus the connection between an EST, the clone it was derived from, and the MGI accession identifier is generated.</dd>
            
                 <br><dt><a href="../nomen/inc.shtml">International Committee on Standardized Genetic Nomenclature for Mice</a>,
                 <a href="http://www.genenames.org/">HUGO Gene Nomenclature Committee</a>, </b>and <a href="http://ratmap.gen.gu.se/RGNC/RGNCmembers.html">Rat Genome and Nomenclature Committee Board</a></b>.</dt>
@@ -94,8 +94,8 @@
                 <dt>Mouse Genome Sequencing Consortium</dt>
                 <dd>We collaborate with members of the MGSC, a public-private partnership of institutes involved in sequencing and genomics. The MGSC aims to accelerate, facilitate and coordinate global mouse genomic sequencing efforts. Funding for is provided by the National Institutes of Health, the Wellcome Trust, GlaxoSmithKline, the Merck Genome Research Institute and Affymetrix Inc. Sequencing partners are the Sanger Institute, the Whitehead Institute for Biomedical Research and Washington University School of Medicine.</dd>
                 <br>
-                <dt><a href="http://www.ncbi.nlm.nih.gov/gquery/gquery.fcgi/">NCBI</a>  (National Center for Biotechnology Information)</dt>
-                <dd>Working with <a href="http://www.ncbi.nlm.nih.gov/gquery/gquery.fcgi">Entrez</a>, we provide official nomenclature for mouse genes, our curated links between genes and sequence identifiers in <a href="http://www.ncbi.nlm.nih.gov/Genbank/GenbankOverview.html">GenBank</a>, chromosomal, cytogenetic and centimorgan map positions, and MGI accession numbers.  Entrez uses these curated data to develop reference sequences for mouse and notifies us of new GenBank mouse sequences submitted. Working with <a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=unigene">UniGene</a>, we provide gene-oriented clusters of transcript sequences.</dd>
+                <dt><a href="https://www.ncbi.nlm.nih.gov/gquery/gquery.fcgi/">NCBI</a>  (National Center for Biotechnology Information)</dt>
+                <dd>Working with <a href="https://www.ncbi.nlm.nih.gov/gquery/gquery.fcgi">Entrez</a>, we provide official nomenclature for mouse genes, our curated links between genes and sequence identifiers in <a href="https://www.ncbi.nlm.nih.gov/Genbank/GenbankOverview.html">GenBank</a>, chromosomal, cytogenetic and centimorgan map positions, and MGI accession numbers.  Entrez uses these curated data to develop reference sequences for mouse and notifies us of new GenBank mouse sequences submitted. Working with <a href="https://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=unigene">UniGene</a>, we provide gene-oriented clusters of transcript sequences.</dd>
                 <br>
                 <dt><a href="http://www.omim.org">OMIM</a> (Online Mendelian Inheritance in Man)</dt>
                 <dd>We collaborate with the editors of the Online Mendelian Inheritance in Man (OMIM) database  at Johns Hopkins). OMIM is a catalog of human genes and genetic disorders, containing textual information, pictures, and reference information as well as links to NCBI's data resources.</dd>
@@ -107,7 +107,7 @@
                 <dd>We collaborate with the <a href="http://www.gsc.riken.go.jp/eng/group/genome/index.html">Genome Exploration Research Group</a> of the RIKEN Institute in Japan to provide public access to RIKEN cDNA clone information through MGI. These clones were isolated and sequenced at the RIKEN Institute as part of a series of public cDNA clone releases that constitute the Mouse Genome Encyclopedia, a genomics project centered on the production of full-length mouse cDNAs. The RIKEN Institute hosted a meeting for first-pass functional annotation of the first set of 21,076 cDNAs (Functional Annotation of Mouse, FANTOM), attended by an international assembly of mammalian biologists and bioinformaticians. Links are provided to DNA Database of Japan (DDBJ) records and to analysis results and summary annotations from the FANTOM meeting for these RIKEN cDNA clones.</dd>
            
                 <!--<br><dt><a href="http://www.expasy.org/sprot/">SWISS-PROT</a></b>  (The SWISS-PROT Protein Sequence Data Bank)</dt>
-                <dd>Our curation staff works closely with SWISS-PROT staff to co-curate links between genes and proteins.  We provide nomenclature data and primary gene-to-<a href="http://www.ncbi.nlm.nih.gov/Genbank/GenbankOverview.html">GenBank</a> accession ID information; we receive gene-to-protein links and expanded gene-to-sequence associations.</dd>
+                <dd>Our curation staff works closely with SWISS-PROT staff to co-curate links between genes and proteins.  We provide nomenclature data and primary gene-to-<a href="https://www.ncbi.nlm.nih.gov/Genbank/GenbankOverview.html">GenBank</a> accession ID information; we receive gene-to-protein links and expanded gene-to-sequence associations.</dd>
            
                 <br><dt><a href="http://www.treefam.org">TreeFam</a></dt>
                 <dd>We collaborate with TreeFam, a database of phylogenetic trees of animal genes, to provide  homology associations.</dd>-->
@@ -135,7 +135,7 @@
     <td>
 
 <!--start of 2nd table-->
-	<a name="acknowledge"></a>
+	<a id="acknowledge"></a>
             <div align="center"> <table class="outline" width="100%">
                 <tr>
                 <td class="enhance"><b>Acknowledgements</b>    
@@ -156,14 +156,14 @@
                 tool to follow the rapid progress of the mapping effort.</dd>
                 <br>
                        
-                <dt><a href="http://www.ncbi.nlm.nih.gov/dbEST/index.html">dbEST</a> (NCBI - Database for Expressed Sequences Tags)</dt>
-                <dd>dbEST is a division of <a href="http://www.ncbi.nlm.nih.gov/Genbank/GenbankOverview.html">GenBank</a> containing sequence data and other information on "single-pass" cDNA sequences, or Expressed Sequence Tags, from a number of organisms.</dd>
+                <dt><a href="https://www.ncbi.nlm.nih.gov/dbEST/index.html">dbEST</a> (NCBI - Database for Expressed Sequences Tags)</dt>
+                <dd>dbEST is a division of <a href="https://www.ncbi.nlm.nih.gov/Genbank/GenbankOverview.html">GenBank</a> containing sequence data and other information on "single-pass" cDNA sequences, or Expressed Sequence Tags, from a number of organisms.</dd>
                 <br>
-                <dt><a href="http://www.ncbi.nlm.nih.gov/SNP/index.html">dbSNP</a></dt>
+                <dt><a href="https://www.ncbi.nlm.nih.gov/SNP/index.html">dbSNP</a></dt>
                 <dd>dbSNP serves as a central repository for single nucleotide polymorphisms (SNPs), multiple nucleotide polymorphisms (MNPs), and short insertion/deletion polymorphisms (IN-DELs). dbSNP is the official source of SNP-based mouse genomic variation in MGI.</dd>
                            
                 <br><dt><a href="http://www.ddbj.nig.ac.jp/">DDBJ</a> (DNA Data Bank of Japan (DDBJ), National Institute of Genetics, Mishima, Japan)</dt>
-                <dd>DDBJ is the only DNA data bank based in Japan.  Sequence information is received from researchers from Japan and from other countries, and from other sequence databases, including EMBL and <a href="http://www.ncbi.nlm.nih.gov/Genbank/GenbankOverview.html">GenBank</a>.</dd>
+                <dd>DDBJ is the only DNA data bank based in Japan.  Sequence information is received from researchers from Japan and from other countries, and from other sequence databases, including EMBL and <a href="https://www.ncbi.nlm.nih.gov/Genbank/GenbankOverview.html">GenBank</a>.</dd>
                     <br>
                     
                 <dt><a href="http://www.ebi.ac.uk/Databases/">EMBL-EBI</a> (Databases at the European Bioinformatics Institute Cambridge, United Kingdom)</dt>
@@ -176,12 +176,12 @@
                 <br><dt><a href="http://flybase.bio.indiana.edu">FlyBase</a> (FlyBase is available on the web from various sites)</dt>
                 <dd>FlyBase is a comprehensive database for information on the genetics and molecular biology of Drosophila. It includes data from the Drosophila Genome Projects and data curated from the literature. FlyBase is a joint project with the Berkeley and European Drosophila Genome Projects.</dd>
                        
-                <br><dt><a href="http://www.ncbi.nlm.nih.gov/Genbank/GenbankOverview.html">GenBank</a> (Produced and maintained by NCBI, NLM, and NIH, Bethesda, Maryland)</dt>
+                <br><dt><a href="https://www.ncbi.nlm.nih.gov/Genbank/GenbankOverview.html">GenBank</a> (Produced and maintained by NCBI, NLM, and NIH, Bethesda, Maryland)</dt>
                 <dd>GenBank is an interface providing access to three databases: a subset of the National Library of Medicine's PubMed database, the NCBI protein database, and the NCBI nucleotide database. GenBank is produced and maintained by the National Center for Biotechnology Information (NCBI). NCBI is responsible for building, maintaining, and distributing GenBank, the NIH genetic sequence database that collects all known DNA sequences from scientists worldwide. The NCBI is a division of the National Library of Medicine (NLM) and is located on the campus of the National Institutes of Health(NIH)in Bethesda, Maryland.</dd>
                        
                                               
-                <br><dt><a href="http://www.ncbi.nlm.nih.gov/">NCBI</a> (National Center for Biotechnology Information)</dt>
-                <dd>NCBI is a division of the National Library of Medicine (NLM) and is located on the campus of the National Institutes of Health (NIH) in Bethesda, Maryland. NCBI is responsible for building, maintaining, and distributing <a href="http://www.ncbi.nlm.nih.gov/Genbank/GenbankOverview.html">GenBank</a>, the NIH genetic sequence database for all known DNA sequences from scientists worldwide; Entrez, a database of information on official nomenclature, aliases, sequence accessions, phenotypes, EC numbers, MIM numbers, Unigene clusters, orthology, and map locations; and PubMed, a bibliographic database.</dd>
+                <br><dt><a href="https://www.ncbi.nlm.nih.gov/">NCBI</a> (National Center for Biotechnology Information)</dt>
+                <dd>NCBI is a division of the National Library of Medicine (NLM) and is located on the campus of the National Institutes of Health (NIH) in Bethesda, Maryland. NCBI is responsible for building, maintaining, and distributing <a href="https://www.ncbi.nlm.nih.gov/Genbank/GenbankOverview.html">GenBank</a>, the NIH genetic sequence database for all known DNA sequences from scientists worldwide; Entrez, a database of information on official nomenclature, aliases, sequence accessions, phenotypes, EC numbers, MIM numbers, Unigene clusters, orthology, and map locations; and PubMed, a bibliographic database.</dd>
                 <br>
                 <dt><a href="http://www.thearkdb.org/arkdb/do/getChromosomeDetails?accession=ARKSPC00000001">PiGBASE</a>&nbsp;(Genome database of the pig maintained at The Roslin Institute, Edinburgh, Scotland)(1995)</dt>
                 <dd>A North American node of PiGBASE is maintained at the Iowa State University.</dd>
