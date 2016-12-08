@@ -31,7 +31,7 @@
 	<tr><td>
 
 <!-- section1 table -->
-   <a name="intro"></a>
+   <a id="intro"></a>
 <table class="outline" width="100%">
 			<tr>
 				<td class="enhance">
@@ -58,7 +58,7 @@
 
         <tr><td>
 <!-- section2 table -->
-		<a name="genome_length"></a>
+		<a id="genome_length"></a>
 <table class="outline" width="100%">
 
 			<tr>
@@ -104,7 +104,7 @@
         <tr><td>
 <!-- section2 table -->
 
-		<a name="chromosomal_size"></a>
+		<a id="chromosomal_size"></a>
 <table class="outline" width="100%">
 			<tr>
 			<td class="enhance">Mouse Chromosomal Size</td>
@@ -118,31 +118,31 @@
 
 <table class="mgitable">
 
-<tr><th>Chromosome</th><th>Mapped <br>Length (cM)</th><th>Total  Estimated  Size (Mbp)<br>(<a href="http://www.ncbi.nlm.nih.gov/genome?term=mus%20musculus">NCBI build GRCm38)</a></th></tr>
-<tr><td align="center">1</td><td align="center">98.5&nbsp;</td><td align="center"><a href="http://www.ncbi.nlm.nih.gov/mapview/maps.cgi?taxid=10090&chr=1">195</a></td></tr>
-<tr><td align="center">2</td><td align="center">103.9&nbsp;&nbsp;</td><td align="center"><a href="http://www.ncbi.nlm.nih.gov/mapview/maps.cgi?taxid=10090&chr=2">182</a></td></tr>
-<tr><td align="center">3</td><td align="center">82.7</td><td align="center"><a href="http://www.ncbi.nlm.nih.gov/mapview/maps.cgi?taxid=10090&chr=3">160</a></td></tr>
-<tr><td align="center">4</td><td align="center">88.6</td><td align="center"><a href="http://www.ncbi.nlm.nih.gov/mapview/maps.cgi?taxid=10090&chr=4">157</a></td></tr>
-<tr><td align="center">5</td><td align="center">90.2</td><td align="center"><a href="http://www.ncbi.nlm.nih.gov/mapview/maps.cgi?taxid=10090&chr=5">152</a></td></tr>
-<tr><td align="center">6</td><td align="center">79.0</td><td align="center"><a href="http://www.ncbi.nlm.nih.gov/mapview/maps.cgi?taxid=10090&chr=6">150</a></td></tr>
-<tr><td align="center">7</td><td align="center">89.1</td><td align="center"><a href="http://www.ncbi.nlm.nih.gov/mapview/maps.cgi?taxid=10090&chr=7">145</a></td></tr>
-<tr><td align="center">8</td><td align="center">76.2</td><td align="center"><a href="http://www.ncbi.nlm.nih.gov/mapview/maps.cgi?taxid=10090&chr=8">129</a></td></tr>
-<tr><td align="center">9</td><td align="center">75.1</td><td align="center"><a href="http://www.ncbi.nlm.nih.gov/mapview/maps.cgi?taxid=10090&chr=9">125</a></td></tr>
-<tr><td align="center">10</td><td align="center">77.9</td><td align="center"><a href="http://www.ncbi.nlm.nih.gov/mapview/maps.cgi?taxid=10090&chr=10">131</a></td></tr>
-<tr><td align="center">11</td><td align="center">88.0</td><td align="center"><a href="http://www.ncbi.nlm.nih.gov/mapview/maps.cgi?taxid=10090&chr=11">122</a></td></tr>
-<tr><td align="center">12</td><td align="center">63.9</td><td align="center"><a href="http://www.ncbi.nlm.nih.gov/mapview/maps.cgi?taxid=10090&chr=12">120</a></td></tr>
-<tr><td align="center">13</td><td align="center">67.3</td><td align="center"><a href="http://www.ncbi.nlm.nih.gov/mapview/maps.cgi?taxid=10090&chr=13">120</a></td></tr>
-<tr><td align="center">14</td><td align="center">66.4</td><td align="center"><a href="http://www.ncbi.nlm.nih.gov/mapview/maps.cgi?taxid=10090&chr=14">125</a></td></tr>
-<tr><td align="center">15</td><td align="center">59.0</td><td align="center"><a href="http://www.ncbi.nlm.nih.gov/mapview/maps.cgi?taxid=10090&chr=15">104</a></td></tr>
-<tr><td align="center">16</td><td align="center">57.8</td><td align="center">&nbsp;&nbsp;<a href="http://www.ncbi.nlm.nih.gov/mapview/maps.cgi?TAXID=10090&MAPS=assembly,cntg-r,ugMm,genes&CHR=16">91</a></td></tr>
-<tr><td align="center">17</td><td align="center">61.3</td><td align="center">&nbsp;&nbsp;<a href="http://www.ncbi.nlm.nih.gov/mapview/maps.cgi?taxid=10090&chr=17">95</a></td></tr>
-<tr><td align="center">18</td><td align="center">59.4</td><td align="center">&nbsp;&nbsp;<a href="http://www.ncbi.nlm.nih.gov/mapview/maps.cgi?taxid=10090&chr=18">91</a></td></tr>
-<tr><td align="center">19</td><td align="center">56.9</td><td align="center">&nbsp;&nbsp;<a href="http://www.ncbi.nlm.nih.gov/mapview/maps.cgi?taxid=10090&chr=19">61</a></td></tr>
-<tr><td align="center">X</td><td align="center">&nbsp;&nbsp;&nbsp;</td><td align="center"><a href="http://www.ncbi.nlm.nih.gov/mapview/maps.cgi?taxid=10090&chr=x">nda</a> </td></tr>
-<tr><td align="center">Y</td><td align="center">&nbsp;</td><td align="center"><a href="http://www.ncbi.nlm.nih.gov/mapview/maps.cgi?taxid=10090&chr=y">nda</a></td></tr>
-<tr><td align="center">MT</td><td align="center">&nbsp;</td><td align="center"><a href="http://www.ncbi.nlm.nih.gov/nuccore/AY172335.1">16299 bp</a></td></tr>
+<tr><th>Chromosome</th><th>Mapped <br>Length (cM)</th><th>Total  Estimated  Size (Mbp)<br>(<a href="https://www.ncbi.nlm.nih.gov/genome?term=mus%20musculus">NCBI build GRCm38)</a></th></tr>
+<tr><td align="center">1</td><td align="center">98.5&nbsp;</td><td align="center"><a href="https://www.ncbi.nlm.nih.gov/mapview/maps.cgi?taxid=10090&chr=1">195</a></td></tr>
+<tr><td align="center">2</td><td align="center">103.9&nbsp;&nbsp;</td><td align="center"><a href="https://www.ncbi.nlm.nih.gov/mapview/maps.cgi?taxid=10090&chr=2">182</a></td></tr>
+<tr><td align="center">3</td><td align="center">82.7</td><td align="center"><a href="https://www.ncbi.nlm.nih.gov/mapview/maps.cgi?taxid=10090&chr=3">160</a></td></tr>
+<tr><td align="center">4</td><td align="center">88.6</td><td align="center"><a href="https://www.ncbi.nlm.nih.gov/mapview/maps.cgi?taxid=10090&chr=4">157</a></td></tr>
+<tr><td align="center">5</td><td align="center">90.2</td><td align="center"><a href="https://www.ncbi.nlm.nih.gov/mapview/maps.cgi?taxid=10090&chr=5">152</a></td></tr>
+<tr><td align="center">6</td><td align="center">79.0</td><td align="center"><a href="https://www.ncbi.nlm.nih.gov/mapview/maps.cgi?taxid=10090&chr=6">150</a></td></tr>
+<tr><td align="center">7</td><td align="center">89.1</td><td align="center"><a href="https://www.ncbi.nlm.nih.gov/mapview/maps.cgi?taxid=10090&chr=7">145</a></td></tr>
+<tr><td align="center">8</td><td align="center">76.2</td><td align="center"><a href="https://www.ncbi.nlm.nih.gov/mapview/maps.cgi?taxid=10090&chr=8">129</a></td></tr>
+<tr><td align="center">9</td><td align="center">75.1</td><td align="center"><a href="https://www.ncbi.nlm.nih.gov/mapview/maps.cgi?taxid=10090&chr=9">125</a></td></tr>
+<tr><td align="center">10</td><td align="center">77.9</td><td align="center"><a href="https://www.ncbi.nlm.nih.gov/mapview/maps.cgi?taxid=10090&chr=10">131</a></td></tr>
+<tr><td align="center">11</td><td align="center">88.0</td><td align="center"><a href="https://www.ncbi.nlm.nih.gov/mapview/maps.cgi?taxid=10090&chr=11">122</a></td></tr>
+<tr><td align="center">12</td><td align="center">63.9</td><td align="center"><a href="https://www.ncbi.nlm.nih.gov/mapview/maps.cgi?taxid=10090&chr=12">120</a></td></tr>
+<tr><td align="center">13</td><td align="center">67.3</td><td align="center"><a href="https://www.ncbi.nlm.nih.gov/mapview/maps.cgi?taxid=10090&chr=13">120</a></td></tr>
+<tr><td align="center">14</td><td align="center">66.4</td><td align="center"><a href="https://www.ncbi.nlm.nih.gov/mapview/maps.cgi?taxid=10090&chr=14">125</a></td></tr>
+<tr><td align="center">15</td><td align="center">59.0</td><td align="center"><a href="https://www.ncbi.nlm.nih.gov/mapview/maps.cgi?taxid=10090&chr=15">104</a></td></tr>
+<tr><td align="center">16</td><td align="center">57.8</td><td align="center">&nbsp;&nbsp;<a href="https://www.ncbi.nlm.nih.gov/mapview/maps.cgi?TAXID=10090&MAPS=assembly,cntg-r,ugMm,genes&CHR=16">91</a></td></tr>
+<tr><td align="center">17</td><td align="center">61.3</td><td align="center">&nbsp;&nbsp;<a href="https://www.ncbi.nlm.nih.gov/mapview/maps.cgi?taxid=10090&chr=17">95</a></td></tr>
+<tr><td align="center">18</td><td align="center">59.4</td><td align="center">&nbsp;&nbsp;<a href="https://www.ncbi.nlm.nih.gov/mapview/maps.cgi?taxid=10090&chr=18">91</a></td></tr>
+<tr><td align="center">19</td><td align="center">56.9</td><td align="center">&nbsp;&nbsp;<a href="https://www.ncbi.nlm.nih.gov/mapview/maps.cgi?taxid=10090&chr=19">61</a></td></tr>
+<tr><td align="center">X</td><td align="center">&nbsp;&nbsp;&nbsp;</td><td align="center"><a href="https://www.ncbi.nlm.nih.gov/mapview/maps.cgi?taxid=10090&chr=x">nda</a> </td></tr>
+<tr><td align="center">Y</td><td align="center">&nbsp;</td><td align="center"><a href="https://www.ncbi.nlm.nih.gov/mapview/maps.cgi?taxid=10090&chr=y">nda</a></td></tr>
+<tr><td align="center">MT</td><td align="center">&nbsp;</td><td align="center"><a href="https://www.ncbi.nlm.nih.gov/nuccore/AY172335.1">16299 bp</a></td></tr>
 <tr><td bgcolor="#EEEEEE">Total:</td><td bgcolor="#EEEEEE">&nbsp;&nbsp;&nbsp;&nbsp;1441.2</td>
-<td align="center" bgcolor="#EEEEEE"><a href="http://www.ncbi.nlm.nih.gov/genome?term=mus%20musculus">2800</a></td></tr>
+<td align="center" bgcolor="#EEEEEE"><a href="https://www.ncbi.nlm.nih.gov/genome?term=mus%20musculus">2800</a></td></tr>
 <tr><td colspan="3" align="right">nda = No data available</td></tr>
 </table>
 </td>
@@ -157,7 +157,7 @@
 
         <tr><td>
 <!-- section3 table -->
-		<a name="codon_usage"></a>
+		<a id="codon_usage"></a>
 <table class="outline" width="100%">
 
 			<tr>
@@ -182,7 +182,7 @@ Codon Usage Tabulated from Genbank</a>
 
         <tr><td>
 <!-- section2 table -->
-		<a name="physiology"></a>
+		<a id="physiology"></a>
 <table class="outline" width="100%">
 
 			<tr>
