@@ -23,7 +23,7 @@
 
 <!-- Title Bar -->
 
-<A NAME="top"></A><br></br>
+<a id="top"></A><br></br>
 
 <div id="titleBarWrapper">
   <span class="titleBarMainTitle">Diagrams of general structure of IKMC primary alleles and derivative alleles</span>
@@ -47,7 +47,7 @@
 
 <img src="images/SymbolKey.png" border="1" width="545" height="78" alt="Symbol Key">
 <br></br>
-<h4><a name="trapped"></a><b>1. Gene Trapped Alleles.</b></h4>
+<h4><a id="trapped"></a><b>1. Gene Trapped Alleles.</b></h4>
 <p>
 <table>
 	<tr>
@@ -105,7 +105,7 @@ Example allele:<br>
 
 <A HREF="#top">Top</A><br></br>
 
-<h4><a name="reporter"></a><b>2. Targeted Reporter-tagged Deletion Alleles.</b></h4>
+<h4><a id="reporter"></a><b>2. Targeted Reporter-tagged Deletion Alleles.</b></h4>
 
 <p>
 <table>
@@ -174,7 +174,7 @@ Example alleles:<br>
 
 <A HREF="#top">Top</A><br></br>
 
-<h4><a name="tm1a"></a><b>3. Targeted Knockout First, Reporter-tagged Insertion with Conditional Potential (conditional-ready).</b></h4>
+<h4><a id="tm1a"></a><b>3. Targeted Knockout First, Reporter-tagged Insertion with Conditional Potential (conditional-ready).</b></h4>
 
 <p>These alleles may contain a promoter or be promoterless. Note: Only the promoter-driven versions are diagrammed here. A critical exon is flanked by loxP sites, with FRT, LacZ, loxP, promoter, neo, and FRT elements upstream of the critical exon. Derivative alleles are generated using cre or flp.
 </p>
@@ -200,7 +200,7 @@ critical exon are removed, leaving a definitive null with a reporter.</p></td></
 
 <A HREF="#top">Top</A><br></br>
 
-<h4><a name="tm1e"></a><b>4. Targeted Knockout First, Reporter-tagged Insertion NON-conditional.</b></h4>
+<h4><a id="tm1e"></a><b>4. Targeted Knockout First, Reporter-tagged Insertion NON-conditional.</b></h4>
 
 <p>These alleles are the same as those described above for the tm1a type allele, except that they have lost the loxP site downstream of the critical exon (CE), so they are no longer conditional. Derivative alleles are generated using cre or flp.
 </p>
@@ -225,7 +225,7 @@ Example allele:<br>
 
 <A HREF="#top">Top</A><br></br>
 
-<h4><a name="intron"></a><b>5. Targeted Knockout First Alleles with Artificial Introns.</b></h4>
+<h4><a id="intron"></a><b>5. Targeted Knockout First Alleles with Artificial Introns.</b></h4>
 
 <p>As some genes are very small or contain only a single exon, vector designs to make conditional-ready alleles fail (requires a critical exon). Conditional knockout first alleles for such genes can be made by introducing an artificial intron with the targeting cassette imbedded in the intron. The 'second' exon (1b in the diagram) is then used as the critical exon. 
 </p>
@@ -254,7 +254,7 @@ Example alleles:<br>
 	
 <A HREF="#top">Top</A><br></br>
 
-<h4><a name="cre"></a><b>6. Targeted cre Knockin Alleles.</b></h4>
+<h4><a id="cre"></a><b>6. Targeted cre Knockin Alleles.</b></h4>
 
 <p>The EUCOMMtools project creates targeted, cre knockin alleles that expand the available worldwide cre resources. The selection cassette is flanked with Rox sites and can be removed using dre recombinase.
 </p>
@@ -275,15 +275,15 @@ Example alleles:<br>
 </p>
 <b>References:</b>
 <br></br>
-<p>TIGM gene traps: Hansen GM, et al. 2008. Large-scale gene trapping in C57BL/6N mouse embryonic stem cells. Genome Res 18: 1670-1679. <a href="http://www.ncbi.nlm.nih.gov/pubmed/18799693">PubMed ID: 18799693</a>
+<p>TIGM gene traps: Hansen GM, et al. 2008. Large-scale gene trapping in C57BL/6N mouse embryonic stem cells. Genome Res 18: 1670-1679. <a href="https://www.ncbi.nlm.nih.gov/pubmed/18799693">PubMed ID: 18799693</a>
 </p>
-<p>EUCOMM gene traps: Schnutgen F, et al. 2005. Genomewide production of multipurpose alleles for the functional analysis of the mouse genome.  PNAS 102: 7221-7226.  <a href="http://www.ncbi.nlm.nih.gov/pubmed/15870191">PubMed ID: 15870191</a>
+<p>EUCOMM gene traps: Schnutgen F, et al. 2005. Genomewide production of multipurpose alleles for the functional analysis of the mouse genome.  PNAS 102: 7221-7226.  <a href="https://www.ncbi.nlm.nih.gov/pubmed/15870191">PubMed ID: 15870191</a>
 </p>
-<p>Velocigene Reporter-Tagged Deletion Alleles: Valenzuela DM, et al. 2003. High-throughput engineering of the mouse genome coupled with high-resolution expression analysis. Nat Biotechnol 21: 652-659. <a href="http://www.ncbi.nlm.nih.gov/pubmed/12730667">PubMed ID: 12730667</a>
+<p>Velocigene Reporter-Tagged Deletion Alleles: Valenzuela DM, et al. 2003. High-throughput engineering of the mouse genome coupled with high-resolution expression analysis. Nat Biotechnol 21: 652-659. <a href="https://www.ncbi.nlm.nih.gov/pubmed/12730667">PubMed ID: 12730667</a>
 </p>
-<p>Knockout first, reporter-tagged insertion with conditional potential (conditional-ready): Skarnes WC, et al 2011. A conditional knockout resource for the genome-wide study of mouse gene function. Nature 474: 337-432. <a href="http://www.ncbi.nlm.nih.gov/pubmed/21677750">PubMed ID: 21677750</a>
+<p>Knockout first, reporter-tagged insertion with conditional potential (conditional-ready): Skarnes WC, et al 2011. A conditional knockout resource for the genome-wide study of mouse gene function. Nature 474: 337-432. <a href="https://www.ncbi.nlm.nih.gov/pubmed/21677750">PubMed ID: 21677750</a>
 </p>
-<p>Overall Review: Bradley A, et al. 2012. The mammalian gene function resource: the International Knockout Mouse Consortium. Mamm Genome 9-10: 580-586. <a href="http://www.ncbi.nlm.nih.gov/pubmed/22968824">PubMed ID: 22968824</a>
+<p>Overall Review: Bradley A, et al. 2012. The mammalian gene function resource: the International Knockout Mouse Consortium. Mamm Genome 9-10: 580-586. <a href="https://www.ncbi.nlm.nih.gov/pubmed/22968824">PubMed ID: 22968824</a>
 </p>
 
 <A HREF="#top">Top</A>
