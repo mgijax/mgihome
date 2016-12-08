@@ -58,7 +58,7 @@ natural mutations have a highly-accessible way to explore experimentally charact
 mutants for a spectrum of associated phenotypes, as well as known disease models developed 
 by the greater research community. Investigators can begin with genes (symbols, names or IDs) 
 or gene lists, genome positions (as coordinates from human or mouse, or as <a href="http://www.1000genomes.org/node/101">.vcf</a>
- files), <a href="http://www.ncbi.nlm.nih.gov/omim">OMIM diseases</a> 
+ files), <a href="https://www.ncbi.nlm.nih.gov/omim">OMIM diseases</a> 
 or phenotypes, and retrieve a list of genes, annotated mammalian phenotypes, associated human 
 diseases and/or available mouse models for further research, along with comprehensive 
 supporting references. If you are new to working with mouse models, or encounter terms 
@@ -97,7 +97,7 @@ a genome location or set of genomic regions, and/or (3) disease name(s) or mamma
 			To search positions, please ensure that you are using the current genome 
 			assembly (build) and have selecting the appropriate species using the radio 
 			buttons above the search window. If you need to convert your data, a 
-			<a href="http://www.ncbi.nlm.nih.gov/genome/tools/remap#tab=asm">simple online 
+			<a href="https://www.ncbi.nlm.nih.gov/genome/tools/remap#tab=asm">simple online 
 			remapping tool has been provided by NCBI</a>. <font color="#F7941e"><b>Currently 
 			only base pair (bp) positions are supported</font></b>, not megabase (Mb) or 
 			linkage positions (i.e. centimorgans or band position). Separate multiple entries 
@@ -119,7 +119,7 @@ a genome location or set of genomic regions, and/or (3) disease name(s) or mamma
 					bring back genes annotated to more specific child terms. See the 
 					<a href="<!--#include file='include/mgihome_url.html'-->../searches/MP_form.shtml">
 					Mammalian Phenotype (MP) browser</a>.</li>
-				<li><i><font color="grey">OMIM:</i></font> from the <a href="http://www.ncbi.nlm.nih.gov/omim">
+				<li><i><font color="grey">OMIM:</i></font> from the <a href="https://www.ncbi.nlm.nih.gov/omim">
 					Online Mendelian Inheritance in Man</a> database. Contains human diseases 
 					with associated human genes and is cross-referenced externally and within 
 					MGI for mouse genetic models of these human diseases. 
@@ -242,9 +242,9 @@ themselves are arranged into three tabbed tables for: Gene homology x Phenotypes
 				<ul>
 					<li>Orange filled cells are used if the Gene x Disease association is 
 					supported by human data. Human data annotations come from 
-					<a href="http://www.ncbi.nlm.nih.gov/omim">OMIM</a>, 
-					<a href="http://www.ncbi.nlm.nih.gov/">NCBI</a> curation, 
-					<a href="http://www.ncbi.nlm.nih.gov/books/NBK1116/">Gene Reviews</a>, 
+					<a href="https://www.ncbi.nlm.nih.gov/omim">OMIM</a>, 
+					<a href="https://www.ncbi.nlm.nih.gov/">NCBI</a> curation, 
+					<a href="https://www.ncbi.nlm.nih.gov/books/NBK1116/">Gene Reviews</a>, 
 					or <a href="http://www.genetests.org/">Gene Tests</a>.</li>
 					<li>If mutant mice have been reported as genetic models for this disease, 
 					a blue fill will be used. MGI curators annotate this data based on author statements 
@@ -415,7 +415,7 @@ these are the result of whole genome or exome sequencing. The format must includ
 	<li><i>Column 1:</i> CHROM - chromosome number</li>
 	<li><i>Column 2:</i> POS - variant position in basepairs. <font color="f7941e">
 	PLEASE ENSURE THAT THESE POSITIONS ARE BASED ON GRCh37 (HUMAN) OR GRCm38 (MOUSE)</FONT>.
-	[<a href="http://www.ncbi.nlm.nih.gov/genome/tools/remap#tab=asm">Convert</a>]</li> 
+	[<a href="https://www.ncbi.nlm.nih.gov/genome/tools/remap#tab=asm">Convert</a>]</li> 
 	<li><i>Column 3:</i> ID - if the variant is known, a refSNP or other reference identifier 
 		will appear. If unknown, this column may be blank or contain "." </li>
 	<li><i>Column 4:</i> REF - the reference allele based on alignment to a reference genome.</li>
