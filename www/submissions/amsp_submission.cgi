@@ -138,6 +138,7 @@ ALLELE_FIELDS = [
 			],
 		# row 2
 		[ ('conditional', 'conditional/targeted'),
+			('endonuclease', 'endonuclease-mediated'),
 			('recombinase',
 				'recombinase (cre or other) containing'),
 			('transposon', 'transposon induced'),
