@@ -8,8 +8,6 @@ config = Configuration.get_Configuration ('Configuration', 1)
 
 import string
 import db
-db.setAutoTranslate(False)
-db.setAutoTranslateBE(False)
 import webshare_lib
 
 # for key in config.keys():
