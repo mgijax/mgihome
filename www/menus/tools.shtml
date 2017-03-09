@@ -49,10 +49,10 @@ Note that the list in each section is a definition list <dl> where the term
 					<dl class="linkedList">
 						<dt>&bull; <a href="<!--#include file='include/fewi_url.html'-->batch">Batch Query</a></dt>
 						<dd>Input a list of gene IDs or symbols  and retrieve other database IDs and gene attributes (e.g. phenotypes, GO).</dd>
-						<dt>&bull; <a href="<!--#include file='include/biomart_url.html'-->">MGI BioMart</a> </dt>
-						<dd>Access MGI's mouse genetic and genomic data using BioMart.</dd>
-						<dt>&bull; <a href="<!--#include file='include/mouseblast_url.html'-->">MouseBLAST</a></dt>
-						<dd>Search for sequence similarity for mouse, human, or rat.</dd>
+						<dt>&bull;  <a href="http://www.mousemine.org">MouseMine</a> </dt>
+						<dd>Access MGI data via InterMine.</dd>
+						<dt>&bull; <a href="<!--#include file='include/ncbi_blast_url.html'-->">NCBI BLAST</a></dt>
+						<dd>Search for sequence similarity using NCBI BLAST.</dd>
 					</dl>
 				</td>
 			</tr>
@@ -72,7 +72,7 @@ Note that the list in each section is a definition list <dl> where the term
 					<td>
 						<span class="small" style="padding:2px;">These tools are still in the prototyping and development phase, and may change, break or disappear at any time.  Your feedback can help us improve them. Please feel free to experiment with them and send us your comments.</span>
 						<dl class="linkedList">
-							<dt>&bull; <a href="http://proto.informatics.jax.org/prototypes/vlad-1.0.3">VLAD - Visual Annotation Display</a></dt>
+							<dt>&bull; <a href="http://proto.informatics.jax.org/prototypes/vlad">VLAD - Visual Annotation Display</a></dt>
 							<dd>VLAD is a tool for visualizing GO annotations. The annotation data are a subset of those available at the GO web site. You specify an annotation data set and a set of genes, and the tool will produce a graphical summary of the annotations. </dd>
 							<dt>&bull; <a href="<!--#include file='include/gotools_url.html'-->MGI_GO_Slim_Chart.html">GO Slim Chart Tool</a></dt>
 							<dd>This GO_Slim Chart Tool bins the genes in your list according to MGI GO Slim definitions to help you discover what the genes may have in common.</dd>
