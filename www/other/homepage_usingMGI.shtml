@@ -63,6 +63,13 @@ development, used for annotation of gene expression and cre recombinase activity
 	<li>Through bulk data access or with batch tools</li>
 </ol>
 
+<h2><font color="#002255">Video Tutorials</font></h2>
+<ol>
+	<li><a href=#intro>Introduction to Mouse Genome Informatics</a></li>
+	<li><a href=#cre>cre-lox and cre recombinases in MGI</a></li>
+	<li><a href=#hmdc>The Human-Mouse: Disease Connection in MGI</a></li>
+	<li><a href=#mousemine>MouseMine computational access to MGI data</a></li>
+</ol>
 <div id="TOC">
 <h2><font color="#002255">Table of Contents</font></h2>
 <ol>
@@ -105,14 +112,82 @@ development, used for annotation of gene expression and cre recombinase activity
 		</li>
 	
 </ol>
-<h2><font color="#002255">Video Tutorials</font></h2>
-<ol>
-	<li><a href=#intro>Introduction to Mouse Genome Informatics</a></li>
-	<li><a href=#cre>cre-lox and cre recombinases in MGI</a></li>
-	<li><a href=#hmdc>The Human-Mouse: Disease Connection in MGI</a></li>
-	<li><a href=#mousemine>MouseMine computational access to MGI data</a></li>
-</ol>
+
 </div>
+
+<br>
+<div id=intro class="enhance"><h2><b><font color="#002255">
+Video Module 1. An Introduction to Mouse Genome Informatics</font></b></h2></div>
+<div>
+<br>
+Download slides (if desired) by clicking the SlideShare footer from the frame on the right.</p>
+<table cellpadding="5">
+ <tr>
+	<td><iframe width="560" height="315" src="//www.youtube.com/embed/9hFuuSGIeeg?rel=0" frameborder="2" allowfullscreen></iframe></td>
+	<td><iframe src="http://www.slideshare.net/slideshow/embed_code/34867838?rel=0" width="378" height="315" frameborder="0" marginwidth="0" 
+marginheight="0" scrolling="no" style="border:1px solid #CCC; border-width:1px 1px 0; margin-bottom:5px; max-width: 100%;" allowfullscreen></iframe></td>
+</tr>
+</table>
+<p>
+</div>
+<br>
+<br>
+<div id=cre class="enhance"><h2><b><font color="#002255">
+Video Module 2. cre-lox and cre recombinases in MGI</font></b></h2></div>
+<div>
+<br>
+Download slides (if desired) by clicking the SlideShare footer from the frame on the right.</p>
+<table cellpadding="5">
+	<tr>
+		<td><iframe width="560" height="315" src="//www.youtube.com/embed/M-HNHLPpODs?rel=0" 
+		frameborder="1" allowfullscreen></iframe></td>
+		<td><iframe src="http://www.slideshare.net/slideshow/embed_code/34868028?rel=0" width="378" 
+		height="315" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" 
+		style="border:1px solid #CCC; border-width:1px 1px 0; margin-bottom:5px; max-width: 100%;" 
+		allowfullscreen> </iframe> </td>
+	</tr>
+</table>
+<p>For additional background on conditional alleles and the cre-lox system, see <a href="http://www.informatics.jax.org/mgihome/other/homepage_IntroMouse.shtml#cre">here</a>
+or <a href="http://cre.jax.org/introduction.html">here</a>.
+<br>
+<div id=hmdc class="enhance">
+<br>
+<br>
+<h2><b><font color="#002255">Module 3. The Human-Mouse: Disease Connection at MGI</font></b></h2></div>
+<div>
+The Human&ndash;Mouse: Disease Connection (HMDC) is found <a href="<!--#include file='include/fewi_url.html'-->humanDisease.shtml">here.</a><br>
+A written tutorial appears on the HMDC home page under <a href="<!--#include file='include/mgihome_url.html'-->other/hmdc_tour.shtml" target="_blank">
+"Take a tour of the Human&ndash;Mouse: Diseases Connection"</a></p>
+Download slides (if desired) by clicking the SlideShare footer from the frame on the right.</p>
+<table cellpadding="5">
+	<tr>
+		<td><iframe width="420" height="315" src="//www.youtube.com/embed/vOtU51x9sLc?rel=0" 
+		frameborder="0" allowfullscreen></iframe></td>
+		<td><iframe src="http://www.slideshare.net/slideshow/embed_code/34868224?rel=0" 
+		width="378" height="315" frameborder="0" marginwidth="0" marginheight="0"
+		 scrolling="no" style="border:1px solid #CCC; border-width:1px 1px 0; margin-bottom:5px; 
+		 max-width: 100%;" allowfullscreen></iframe></td>
+	</tr>
+</table>
+<div id=mousemine class="enhance">
+<br>
+<br>
+<h2><b><font color="#002255">MouseMine computational access to MGI data</font></b></h2></div>
+<div>
+<p>See <a href=#batchAnalysis>just above</a> on this page to access MouseMine.<br>
+Download slides (if desired) by clicking the SlideShare footer from the frame on the right.</p>
+<table cellpadding="5">
+	<tr>
+		<td><iframe width="560" height="315" 
+		src="//www.youtube.com/embed/FtlsoM8TGGs?rel=0" frameborder="0" allowfullscreen></iframe></td>
+		<td><iframe src="http://www.slideshare.net/slideshow/embed_code/34868470?rel=0" 
+		width="378" height="315" frameborder="0" marginwidth="0" marginheight="0" 
+		scrolling="no" style="border:1px solid #CCC; border-width:1px 1px 0; margin-bottom:5px; 
+		max-width: 100%;" allowfullscreen> </iframe></td>		
+	</tr>
+</table>
+<br>
+<br>
 <p>
 <div id="genes">
 <h2><font color="#002255">1. How to locate gene or allele specific information</font></h2>
@@ -288,17 +363,18 @@ symbol, name, or synonym into the Quick Search window near the top of every MGI 
  				by researchers to not sufficiently reproduce the necessary equivalent phenotypes, the association will be 
  				reported with a &quot;NOT&quot; qualifier (ex. &lsquo;Kras-Leukemia, Acute Myeloid; AML&rsquo; - see 
  				option to &quot;view 1 NOT model&quot; for details).</p>
- 			<p>Click on the hyperlinked disease name (<b>&#35;1</b>; <a href="<!--#include file='include/fewi_url.html'-->disease/key/850434">Pancreatic cancer</a>
- 			) to go to a Human Disease and Mouse Model 
- 			Detail page. Tables on these pages include all genes that have been implicated 
- 			as causing that disease in human cases or mouse models.</p>
- 			<p>Click on the hyperlinked &lsquo;view &#35; models&rsquo; (<b>&#35;2</b>) to view exactly which mouse genotypes have 
+ 			<p>Click on the hyperlinked &lsquo;view &#35; models&rsquo; (<b>&#35;1</b>) to view exactly which mouse genotypes have 
  			been described as exhibiting the characteristics of a model for human disease (view 1 
  			model for Noonan Syndrome 3). This pop-up will record the specific allele pair (i.e. 
  			<a href="<!--#include file='include/fewi_url.html'-->allele/MGI:5649285">
  			    <i>Kras<sup>tm4.1Bbd</sup></i></a>; click to view the biological properties 
  			associated with this mutation on the allele detail page), the mouse strain background, annotated phenotypes and the reference 
  			describing this mouse as modeling the human disease indicated (J:&#35;).</p> 
+ 			<p>Click on the hyperlinked disease name (<b>&#35;2</b>; <a href="<!--#include file='include/fewi_url.html'-->disease/DOID:4905">pancreatic carcinoma</a>
+ 			) to go to a Disease Ontology Browser page. The first tab 'Term Details' displays the parent, siblings, and child terms 
+ 			for the searched term. Tables on the second tab 'Genes' include all genes that have been implicated 
+ 			as causing that disease in human cases or mouse models. The third tab 'Models' (<b>&#35;3</b>) shows the mouse strain background, annotated phenotypes and the reference 
+ 			describing this mouse as modeling the human disease indicated.
  			<p>
 			<p align="right"><a href="#geneDetail">[Return to Gene Detail]</a><br>
 			   <a href="#TOC">[Return to Table of Contents]</a></p>
@@ -306,7 +382,7 @@ symbol, name, or synonym into the Quick Search window near the top of every MGI 
  		<td>
  <a href="images/howto_disease.png" target="_blank">
 <img src="<!--#include file='include/mgihome_url.html'-->/other/images/howto_disease.png"
-			width="600px" height="779px" alt="disease ribbon Kras" style="padding:5px;"
+			width="600px" height="1002px" alt="disease ribbon Kras" style="padding:5px;"
 			border="1" margins="5px"></a>
 		</td>
 	</tr>
@@ -1059,78 +1135,7 @@ posted to an ftp site, see below.</p>
 			   <a href="#TOC">[Return to Table of Contents]</a></p> 
 </div>
 </div>
-<br>
-<div id=intro class="enhance"><h2><b><font color="#002255">
-Video Module 1. An Introduction to Mouse Genome Informatics</font></b></h2></div>
-<div>
-<br>
-Download slides (if desired) by clicking the SlideShare footer from the frame on the right.</p>
-<table cellpadding="5">
- <tr>
-	<td><iframe width="560" height="315" src="//www.youtube.com/embed/9hFuuSGIeeg?rel=0" frameborder="2" allowfullscreen></iframe></td>
-	<td><iframe src="http://www.slideshare.net/slideshow/embed_code/34867838?rel=0" width="378" height="315" frameborder="0" marginwidth="0" 
-marginheight="0" scrolling="no" style="border:1px solid #CCC; border-width:1px 1px 0; margin-bottom:5px; max-width: 100%;" allowfullscreen></iframe></td>
-</tr>
-</table>
-<p>
-</div>
-<br>
-<br>
-<div id=cre class="enhance"><h2><b><font color="#002255">
-Video Module 2. cre-lox and cre recombinases in MGI</font></b></h2></div>
-<div>
-<br>
-Download slides (if desired) by clicking the SlideShare footer from the frame on the right.</p>
-<table cellpadding="5">
-	<tr>
-		<td><iframe width="560" height="315" src="//www.youtube.com/embed/M-HNHLPpODs?rel=0" 
-		frameborder="1" allowfullscreen></iframe></td>
-		<td><iframe src="http://www.slideshare.net/slideshow/embed_code/34868028?rel=0" width="378" 
-		height="315" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" 
-		style="border:1px solid #CCC; border-width:1px 1px 0; margin-bottom:5px; max-width: 100%;" 
-		allowfullscreen> </iframe> </td>
-	</tr>
-</table>
-<p>For additional background on conditional alleles and the cre-lox system, see <a href="http://www.informatics.jax.org/mgihome/other/homepage_IntroMouse.shtml#cre">here</a>
-or <a href="http://cre.jax.org/introduction.html">here</a>.
-<br>
-<div id=hmdc class="enhance">
-<br>
-<br>
-<h2><b><font color="#002255">Module 3. The Human-Mouse: Disease Connection at MGI</font></b></h2></div>
-<div>
-The Human&ndash;Mouse: Disease Connection (HMDC) is found <a href="<!--#include file='include/fewi_url.html'-->humanDisease.shtml">here.</a><br>
-A written tutorial appears on the HMDC home page under <a href="<!--#include file='include/mgihome_url.html'-->other/hmdc_tour.shtml" target="_blank">
-"Take a tour of the Human&ndash;Mouse: Diseases Connection"</a></p>
-Download slides (if desired) by clicking the SlideShare footer from the frame on the right.</p>
-<table cellpadding="5">
-	<tr>
-		<td><iframe width="420" height="315" src="//www.youtube.com/embed/vOtU51x9sLc?rel=0" 
-		frameborder="0" allowfullscreen></iframe></td>
-		<td><iframe src="http://www.slideshare.net/slideshow/embed_code/34868224?rel=0" 
-		width="378" height="315" frameborder="0" marginwidth="0" marginheight="0"
-		 scrolling="no" style="border:1px solid #CCC; border-width:1px 1px 0; margin-bottom:5px; 
-		 max-width: 100%;" allowfullscreen></iframe></td>
-	</tr>
-</table>
-<div id=mousemine class="enhance">
-<br>
-<br>
-<h2><b><font color="#002255">MouseMine computational access to MGI data</font></b></h2></div>
-<div>
-<p>See <a href=#batchAnalysis>just above</a> on this page to access MouseMine.<br>
-Download slides (if desired) by clicking the SlideShare footer from the frame on the right.</p>
-<table cellpadding="5">
-	<tr>
-		<td><iframe width="560" height="315" 
-		src="//www.youtube.com/embed/FtlsoM8TGGs?rel=0" frameborder="0" allowfullscreen></iframe></td>
-		<td><iframe src="http://www.slideshare.net/slideshow/embed_code/34868470?rel=0" 
-		width="378" height="315" frameborder="0" marginwidth="0" marginheight="0" 
-		scrolling="no" style="border:1px solid #CCC; border-width:1px 1px 0; margin-bottom:5px; 
-		max-width: 100%;" allowfullscreen> </iframe></td>		
-	</tr>
-</table>
-<br>
+
 <br>
 <br>
 <br>
