@@ -803,8 +803,8 @@ def getPhenotypeSection():
 		'HREF="%snomen/alleleform_phenoex.shtml" TARGET="_blank">' % \
 			config['MGIHOME_URL'],
 		'example</A>.',
-		' You may browse the <A HREF="%ssearches/MP_form.shtml" ' % \
-			config['WI_URL'],
+		' You may browse the <A HREF="%svocab/mp_ontology" ' % \
+			config['FEWI_URL'],
 		'TARGET="_blank">Mammalian Phenotype Ontology</A> and use ',
 		'these terms to describe the phenotype.<P>',
 		getField('phenoDescription').getHTML(),

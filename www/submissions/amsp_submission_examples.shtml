@@ -48,11 +48,11 @@ column.</p>
 
 Example data file:
 <table border=1 cellspacing=1 cellpadding=3 width="!">
- <tr><th valign="top">Blood Parameters</th><th valign="top">Age (months)</th><th valign="top">Sex</th><th valign="top">Atr1a&lt;+&gt;/ Atr1a&lt;+&gt;</th><th valign="top">Number of mice</th><th valign="top">Atr1a&lt;tm1Ecl&gt;/<br>Atr1a&lt;tm1Ecl&gt</th><th valign="top">Number of mice</th><th valign="top">p-value compared to wild-type</th></tr>
- <tr><td valign="top">Hematocrit (%)</td><td valign="top">6.5-9.0</td><td valign="top">combined</td><td valign="top">36.6 +/- 1.4</td><td valign="top">10</td><td valign="top">41.1 +/- 1/2</td><td align="justify">10</td><td valign="top">&lt;0.05</td></tr>
- <tr><td valign="top">RBC (10*6/<i>&micro;</i>l)</td><td valign="top">6.5-9.0</td><td valign="top">combined</td><td valign="top">7.6 +/- 0.2</td><td valign="top">10</td><td valign="top">8.9 +/- 0.3</td><td align="justify">10</td><td valign="top">&lt;0.01</td></tr>
- <tr><td valign="top"> Hemoglobin (g/dl)</td><td valign="top">6.5-9.0</td><td valign="top">combined</td><td valign="top">12.5 +/- 0.4</td><td valign="top">10</td><td valign="top">14.1 +/- 0.4</td><td align="justify">10</td><td valign="top">&lt;0.05</td></tr>
- <tr><td valign="top"><nobr>Plasma proteins (g/l)</nobr></td><td valign="top">6.5-9.0</td><td valign="top">combined</td><td valign="top">37.9 +/- 1.7</td><td valign="top">8</td><td valign="top">38.7 +/- 2.4</td><td align="justify">7</td><td valign="top">NS</td></tr>
+ <tr><th>Blood Parameters</th><th>Age (months)</th><th>Sex</th><th>Atr1a&lt;+&gt;/ Atr1a&lt;+&gt;</th><th>Number of mice</th><th>Atr1a&lt;tm1Ecl&gt;/<br>Atr1a&lt;tm1Ecl&gt</th><th>Number of mice</th><th>p-value compared to wild-type</th></tr>
+ <tr><td>Hematocrit (%)</td><td>6.5-9.0</td><td>combined</td><td>36.6 +/- 1.4</td><td>10</td><td>41.1 +/- 1/2</td><td align="justify">10</td><td>&lt;0.05</td></tr>
+ <tr><td>RBC (10*6/<i>&micro;</i>l)</td><td>6.5-9.0</td><td>combined</td><td>7.6 +/- 0.2</td><td>10</td><td>8.9 +/- 0.3</td><td align="justify">10</td><td>&lt;0.01</td></tr>
+ <tr><td> Hemoglobin (g/dl)</td><td>6.5-9.0</td><td>combined</td><td>12.5 +/- 0.4</td><td>10</td><td>14.1 +/- 0.4</td><td align="justify">10</td><td>&lt;0.05</td></tr>
+ <tr><td><nobr>Plasma proteins (g/l)</nobr></td><td>6.5-9.0</td><td>combined</td><td>37.9 +/- 1.7</td><td>8</td><td>38.7 +/- 2.4</td><td align="justify">7</td><td>NS</td></tr>
 </table>
 
 
@@ -87,24 +87,24 @@ increased hemoglobin content</p>
 <h3>Example 2: Mutant data relative to control</h3>
 Example data file:
 <table border=1 cellspacing=2 cellpadding=3 width="99%">
- <tr><th valign="top">Genotype</th><th valign="top">Alleles</th><th valign="top">Sex</th><th valign="top">Procedure</th><th valign="top">Parameter</th><th valign="top">Term (MP)</th><th valign="top">Evidence</th></tr>
+ <tr><th>Genotype</th><th>Alleles</th><th>Sex</th><th>Procedure</th><th>Parameter</th><th>Term (MP)</th><th>Evidence</th></tr>
 
-<tr><td valign="top"><nobr>129P2/OlaHsd-Fbl3&lt;Gt(CB0226)Wtsi&gt;/H</nobr></td>
-<td valign="top">Fbl3&lt;Gt(CB0226)Wtsi/ <br>Fbl3&lt;Gt(CB0226)Wtsi
-</td><td valign="top">combined</td>
-<td valign="top">Modified SHIRPA</td>
-<td valign="top">Touch Escape</td>
-<td valign="top">Abnormal response to tactile stimulus (MP:0005316)</td>
-<td valign="top">inferred</td>
+<tr><td><nobr>129P2/OlaHsd-Fbl3&lt;Gt(CB0226)Wtsi&gt;/H</nobr></td>
+<td>Fbl3&lt;Gt(CB0226)Wtsi/ <br>Fbl3&lt;Gt(CB0226)Wtsi
+</td><td>combined</td>
+<td>Modified SHIRPA</td>
+<td>Touch Escape</td>
+<td>Abnormal response to tactile stimulus (MP:0005316)</td>
+<td>inferred</td>
 </tr>
 
-<tr><td valign="top">129P2/OlaHsd-Fbl3&lt;Gt(CB0226)Wtsi&gt;/H</td>
-<td valign="top">Fbl3&lt;Gt(CB0226)Wtsi/ <br>Fbl3&lt;Gt(CB0226)Wtsi</td>
-<td valign="top">combined</td>
-<td valign="top">DEXA</td>
-<td valign="top">Bone Mineral Density (excluding skull)</td>
-<td valign="top">Decreased bone density (MP:0000063)</td>
-<td valign="top">inferred</td>
+<tr><td>129P2/OlaHsd-Fbl3&lt;Gt(CB0226)Wtsi&gt;/H</td>
+<td>Fbl3&lt;Gt(CB0226)Wtsi/ <br>Fbl3&lt;Gt(CB0226)Wtsi</td>
+<td>combined</td>
+<td>DEXA</td>
+<td>Bone Mineral Density (excluding skull)</td>
+<td>Decreased bone density (MP:0000063)</td>
+<td>inferred</td>
 </tr>
 </table>
 
@@ -137,7 +137,5 @@ automatically based on programmatic analysis.</p>
 <h3>Other Types of Data</h3>
 <p>Please contact <a href="mailto:mgi-submissions@jax.org">mgi-submissions@jax.org</a>
 to discuss other types of data you may wish to submit.</p>
-
-
 
 <!--#include file='include/templateBodyStop.html'-->
