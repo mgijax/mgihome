@@ -108,7 +108,7 @@ border: 1px solid #EBCA6D;
 <div class="boxWide goldBorder marginBottom">
 	<div class="goldbar" style="height: 15px;">
 		<span class="left">Gene Expression News</span>
-		<span class="right small">March 13, 2017</span>
+		<span class="right small">May 15, 2017</span>
 	</div>
 	<div class="boxBG pad5 small">
 	<style>
@@ -118,9 +118,9 @@ font-weight: normal;
 }
 	</style>
 <ul>
+<li>Additional lacZ knock in reporter data from the International Mouse Phenotyping Consortium (<a href="https://www.mousephenotype.org" target="_blank">IMPC</a>) have been imported into GXD. This set now comprises data for 1,112 targeted mutants, an increase of 468 mutants. It includes 39,788 images and their 44,551 annotated results, obtained from embryonic day 12.5 and postnatal adult specimens. These data are fully integrated into GXD, allowing them to be searched in context of all other gene expression data in GXD. The entire set can be viewed at reference <a href="<!--#include file='include/fewi_url.html'-->accession/J:228563"  target="_blank">J:228563</a>.</li>
 <li>The <a href="<!--#include file='include/fewi_url.html'-->gxd"  target="_blank">Gene Expression Data Query</a> has been updated to allow use of Disease Ontology (<a href="http://disease-ontology.org/" target="_blank">DO</a>) terms to search for expression data for sets of genes associated with disease models. The DO covers a full spectrum of phenotype characteristics and related medical vocabulary disease concepts and includes terms represented in other ontologies, such as <abbr title="Medical Subject Headings">MeSH</abbr>, <abbr title="International Classification of Diseases">ICD</abbr>, NCI's thesaurus, <abbr title="Systematized Nomenclature of Medicine">SNOMED</abbr> and <abbr title="Online Mendelian Inheritance in Man">OMIM</abbr>. You can use the MGI <a href="<!--#include file='include/fewi_url.html'-->disease" target="_blank">Disease Ontology Browser</a> to explore the vocabulary.</li>
 <li>A <a href="<!--#include file='include/fewi_url.html'-->gxd/batchSearch">Batch Search</a> utility has been added, as a third tab, to the Gene Expression Data Query to facilitate searches for expression data using lists of gene symbols or IDs.  You can search by either uploading a list of symbols or IDs from tab-delimited or comma-separated files or by copying and pasting a list into the text search box. In addition, the genes field of the Standard Search now accepts comma-separated lists of gene symbols.  All Gene Expression Data searches return a tissue-by-gene matrix view as part of its multi-tabbed data summary; this view enables a comparison of expression patterns between genes. Data filters found on the summary pages can be used to further refine search results.</li>
-<li>Two interactive matrix views have been developed to provide users with intuitive, high-level summaries of expression data and from where they can easily move to levels of greater detail. The tissue-by-developmental stage matrix provides global overviews of the spatio-temporal expression patterns of genes. The tissue-by-gene matrix enables a comparison of expression patterns between genes. Both types of matrices can be expanded (and collapsed) along the tissue axis, based on the hierarchical organization of the anatomy. Rows and columns in the matrices can be selected to refine the data set. The matrices have been added as new tabs to the gene expression data summaries. These matrices can be accessed by searches using the Gene Expression Data Query and via links from the Mouse Developmental Anatomy Browser.</li>
 
 <!--<br>
 <br>-->
