@@ -498,7 +498,7 @@
     var choice = Math.floor(Math.random() * $('.randomMsgImage').length);
     $(function() {
       $('#slides').slidesjs({
-	start: choice,
+	start: choice + 1,
         width: 362,
         height: 200,
 	navigation: {
