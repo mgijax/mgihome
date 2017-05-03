@@ -48,7 +48,7 @@ table.outline{
 
 	<tr><td>
 		<!-- marker table -->
-		<a name="genes"></a>
+		<a id="genes"></a>
 		<table class="outline" width="100%">
 			<tr>
 				<td class="enhance">
@@ -77,7 +77,7 @@ table.outline{
 
 	<tr><td>
 		<!-- pheno table -->
-		<a name="pad"></a>
+		<a id="pad"></a>
 		<table class="outline" width="100%">
 			<tr>
 				<td class="enhance">
@@ -95,6 +95,10 @@ table.outline{
 
 						<dt>&bull; <a href="<!--#include file='include/fewi_url.html'-->disease"> Human Disease (DO) Browser</a></dt>
 						<dd>Browse for a human disease or condition term to find mouse models. To search use the Quick Search box in the upper right corner of any MGI page.</dd>
+						
+						<dt>&bull; <a href="<!--#include file='include/fewi_url.html'-->vocab/hp_ontology">Human Phenotype (HPO) Browser</a></dt>
+						<dd>Search or browse for a human phenotype term to find relevant human diseases with those phenotypes.</dd>
+
 						<dt>&bull; <a href="<!--#include file='include/fewi_url.html'-->diseasePortal"> Human – Mouse: Disease Connection (HMDC)</a></dt>
 						<dd>A translational tool designed for exploring and comparing human and mouse phenotypes and their associations with known human diseases, and to provide rapid access to mouse model resources and supporting references.</dd>
 					</dl>
@@ -105,7 +109,7 @@ table.outline{
 
 	<tr><td>
 		<!-- expression table -->
-		<a name="expr"></a>
+		<a id="expr"></a>
 		<table class="outline" width="100%">
 			<tr>
 				<td class="enhance">
@@ -134,7 +138,7 @@ table.outline{
 
 	<tr><td>
 		<!-- go table -->
-		<a name="go"></a>
+		<a id="go"></a>
 
 		<table class="outline" width="100%">
 			<tr>
@@ -161,7 +165,7 @@ table.outline{
 
 	<tr><td>
 		<!-- strains table -->
-		<a name="strns"></a>
+		<a id="strns"></a>
 
 		<table class="outline" width="100%">
 			<tr>
@@ -188,7 +192,7 @@ table.outline{
 
 	<tr><td>
 		<!-- sequence table -->
-		<a name="seqs"></a>
+		<a id="seqs"></a>
 		<table class="outline" width="100%">
 			<tr>
 				<td  class="enhance">
@@ -214,7 +218,7 @@ table.outline{
 
 	<tr><td>
 		<!-- references table -->
-		<a name="refs"></a>
+		<a id="refs"></a>
 
 		<table class="outline" width="100%">
 			<tr>
@@ -238,7 +242,7 @@ table.outline{
 
 	<tr><td>
 		<!-- vocabularies table -->
-		<a name="vocabs"></a>
+		<a id="vocabs"></a>
 		<table class="outline" width="100%">
 			<tr>
 				<td  class="enhance">
@@ -256,6 +260,9 @@ table.outline{
 
 						<dt>&bull; <a href="<!--#include file='include/fewi_url.html'-->vocab/mp_ontology">Mammalian Phenotype (MP) Browser</a></dt>
 						<dd>Search or browse for a phenotype term to find relevant mutant genotypes.</dd>
+						
+						<dt>&bull; <a href="<!--#include file='include/fewi_url.html'-->vocab/hp_ontology">Human Phenotype (HPO) Browser</a></dt>
+						<dd>Search or browse for a human phenotype term to find relevant human diseases with those phenotypes.</dd>
 
 						<dt>&bull; <a href="<!--#include file='include/fewi_url.html'-->vocab/gxd/anatomy/EMAPA:16039">Mouse Developmental Anatomy Browser</a></dt>
 						<dd>Search or browse for anatomical structures; includes links to associated expression results.</dd>
@@ -270,7 +277,7 @@ table.outline{
 
 	<tr><td>
 		<!-- other searches table -->
-		<a name="other_searches"></a>
+		<a id="other_searches"></a>
 		<table class="outline" width="100%">
 			<tr>
 				<td  class="enhance">
