@@ -122,9 +122,9 @@ Phenotypic allele <A HREF="<!--#include file='include/userhelp_url.html'-->ALLEL
 
 <h3><A id="vobro"></a>Vocabulary Browsers</h3>
 <p>
-<ul><li>The MGD Vocabulary Browsers provide access to restricted sets of defined terms representing complex information.</li> 
-<li>Some controlled vocabularies (such as the Human Disease Vocabulary Browser), have a flat structure:  terms are organized alphanumerically. </li>
-<li>Other vocabularies (known as <i>DAGs</i> or <i>directed acyclic graphs</i>), such as the GO Browser, have a tree (or hierarchical) structure: terms are organized primarily by their relationship to other terms.</li>
+<ul>
+<li>The MGD Vocabulary Browsers provide access to restricted sets of defined terms representing complex information.</li> 
+<li>These vocabularies (known as <i>DAGs</i> or <i>directed acyclic graphs</i>) have a tree (or hierarchical) structure: terms are organized primarily by their relationship to other terms.</li>
 <li>The MGD Vocabulary Browsers currently available are:
 <p>
    <blockquote>
@@ -134,6 +134,7 @@ Phenotypic allele <A HREF="<!--#include file='include/userhelp_url.html'-->ALLEL
    <tr><td><a href="<!--#include file='include/fewi_url.html'-->vocab/gxd/anatomy/" target="_blank">Mouse Developmental Anatomy Browser &nbsp;</a></td><td>Anatomical structures.<br>Links to associated expression results.</td></tr>
    <tr><td><a href="<!--#include file='include/fewi_url.html'-->disease" target="_blank">Disease Ontology (DO) Browser</a></td><td>Human disease terms.<br>Links to detail pages containing genotypes annotated with these terms.<br>Links to Disease Model web pages.</td></tr>
    <tr><td><a href="<!--#include file='include/fewi_url.html'-->vocab/mp_ontology" target="_blank">Mammalian Phenotype Browser</a> </td><td>Mammalian phenotype terms.<br>Term details and relationships among terms.<br>Links to genotypes annotated with each term or any sub terms.</td></tr>
+   <tr><td><a href="<!--#include file='include/fewi_url.html'-->vocab/hp_ontology" target="_blank">Human Phenotype Browser</a> </td><td>Human phenotype terms.<br>Term details and relationships among terms.<br>Links to human diseases and the high-level human phenotype terms associated with the term.</td></tr>
   </table>
   </blockquote>
 </li>
