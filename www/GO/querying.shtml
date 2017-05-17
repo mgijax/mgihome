@@ -10,14 +10,12 @@
 <!--titleBar-->
 
 
-<p><A NAME="Query"></A>Genes in MGI are annotated using GO terms.  Several of the MGI query forms (<i>Genes 
-and Markers Query Form, Linkage Map Query Form, Gene Expression Data Query Form,  cDNA
-Clone Query Form</i>), provide a <i>Gene Ontology Classifications (GO)</i> search field where you can enter a GO term or phrase for searching.  Once you submit the query, the system checks the ontologies to be examined.  To improve and refine your searches, you should become familiar with the available terms in the ontologies (see the <i>Molecular Function, Cellular Component,</i> and <i>Biological Process</i> links). </p>
+<p><a id="Query"></A>Genes in MGI are annotated using GO terms.  Two MGI query forms, the <a href="<!--#include file='include/fewi_url.html'-->marker" target="_blank">Genes and Markers Query Form</a> and <a href="<!--#include file='include/fewi_url.html'-->gxd" target="_blank">Gene Expression Data Query Form</a>, as well as the <a href="<!--#include file='include/fewi_url.html'-->vocab/gene_ontology" target="_blank">Gene Ontology Browser</a>, provide a search field where you can enter a GO term or phrase for searching.  Once you submit the query, the system checks the ontologies to be examined.  To improve and refine your searches, you should become familiar with the available terms in the ontologies (see the <i>Molecular Function, Cellular Component,</i> and <i>Biological Process</i> links). </p>
 
 <p><ul>
-<li>You can search by entering all or a portion of a single GO vocabulary entry. Often, GO entries are phrases containing several words. The default text operator is CONTAINS. If you enter a few characters of a GO term, the search finds any gene records having gene classifications that include the specified characters (and belong to the checked categories).</li><br>
+<li>You can search by entering all or a portion of a single GO vocabulary entry. Often, GO entries are phrases containing several words. Use the asterisk (*) as a wild-card to broaden your search.</li><br>
 
-<li>You can also use the logical operator AND  between GO terms within the Gene Classifications search field. A search of term1 AND term2 returns the set of markers that are annotated to <b>both</b> term1 and term2. For example, the search string <i>nucleus AND kinase</i> returns all markers whose products are a kinase AND are found in the nucleus.</li><br>
+<li>You can also use the logical operator AND between GO terms within the Gene Classifications search field. A search of term1 AND term2 returns the set of markers that are annotated to <b>both</b> term1 and term2. For example, the search string <i>nucleus AND kinase</i> returns all markers whose products are a kinase AND are found in the nucleus.</li><br>
 
 <li>You can browse the GO classifications, copy an entry, and paste it into the <b>Gene Ontology Classifications (GO)</b> field. </li><br>
     <li>You can restrict your search to markers with attributes in only one or two of the three categories (the same term can occur in two or three GO categories).  </li><br>

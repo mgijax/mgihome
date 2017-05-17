@@ -48,8 +48,8 @@ terms can be used to annotate (or retrieve) information at whatever level of pre
 been investigated or is desired, associate similar observations to one another, and provide information on 
 relationships between terms. Importantly, they are also stable, unique and can be parsed by a 
 computer for bioinformatic analyses. Three major structured vocabularies, also known as 
-"ontologies", are developed and used by MGI: the <a href="http://www.informatics.jax.org/searches/MP_form.shtml">Mammalian Phenotype</a> 
-ontology which describes abnormal observations in mutant animals, the <a href="http://www.informatics.jax.org/searches/GO_form.shtml">
+"ontologies", are developed and used by MGI: the <a href="<!--#include file='include/fewi_url.html'-->vocab/mp_ontology" target="_blank">Mammalian Phenotype</a> 
+ontology which describes abnormal observations in mutant animals, the <a href="<!--#include file='include/fewi_url.html'-->vocab/gene_ontology" target="_blank">
 Gene Ontology (GO)</a> which describes the normal behavior of a gene or gene product within 
 it's cellular context, and the <a href="http://www.informatics.jax.org/vocab/gxd/anatomy/EMAPA:16039">
 Mouse Developmental Anatomy</a> ontology which describes mouse anatomical structures throughout 
@@ -408,7 +408,7 @@ symbol, name, or synonym into the Quick Search window near the top of every MGI 
 				some of the more salient phenotypic observations.</p>
 			<p>The grid (<font color="#54709B">Structured MP top-level 
 				slim grid</font>) lists all of major phenotypic systems comprising the
-				<a href="http://www.informatics.jax.org/searches/MP_form.shtml">Mammalian Phenotype (MP) 
+				<a href="<!--#include file='include/fewi_url.html'-->vocab/mp_ontology" target="_blank">Mammalian Phenotype (MP) 
 				ontology</a>.  Blue squares indicate that a phenotype within a given system can
 				been directly attributed to mutations/alleles of this gene, white squares 
 				indicate that no annotations within this system have been recorded. Blue 
@@ -467,12 +467,12 @@ symbol, name, or synonym into the Quick Search window near the top of every MGI 
 		<p>On the right is an example of the <b>Gene Ontology (GO) Classification</b> ribbon in 
 		<a href="<!--#include file='include/fewi_url.html'-->marker/MGI:1277215"><i>Bbs1</i></a>.</p> 
 		<p>This ribbon contains three grids chosen by GO to provide a broad representation of 
-			all underlying data. Left grid is <a href="<!--#include file='include/fewi_url.html'-->searches/GO.cgi?id=GO:0003674">Molecular Functions
+			all underlying data. Left grid is <a href="<!--#include file='include/fewi_url.html'-->vocab/gene_ontology/GO:0003674">Molecular Functions
 			</a> (elemental activities, such as catalysis or binding), center is 
-			<a href="<!--#include file='include/fewi_url.html'-->searches/GO.cgi?id=GO:0008150">Biological Process</a>
+			<a href="<!--#include file='include/fewi_url.html'-->vocab/gene_ontology/GO:0008150">Biological Process</a>
 			 (a collection of molecular events forming a process pertinent to the functioning 
 			 of living things, such as signaling or metabolism), and the right grid for 
-			 <a href="<!--#include file='include/fewi_url.html'-->searches/GO.cgi?id=GO:0005575">
+			 <a href="<!--#include file='include/fewi_url.html'-->vocab/gene_ontology/GO:0005575">
 			 Cellular component</a> (the part of a cell or external environment where the gene product
 			 is located).</p>
 		<p>Blue squares are clickable which will generate a new page with underlying data for 
@@ -885,7 +885,7 @@ to a particular phenotype or function</font></blockquote></h3>
 					    (<font color="#54709B">&#35;2</font>).
 					    <br>
 					    <br>Text&ndash;matching, keyword and Boolean searches will also work, search the 
-					    <a href="<!--#include file='include/mgihome_url.html'-->../searches/MP_form.shtml" target="_blank">Mammalian Phenotype Browser</a>
+					    <a href="<!--#include file='include/fewi_url.html'-->vocab/mp_ontology" target="_blank">Mammalian Phenotype Browser</a>
 					    for structured vocabulary terms.<br>
 						<br></li>
 					<li>Click Search to retrieve a results table. Export, sort and save if desired.</li>
