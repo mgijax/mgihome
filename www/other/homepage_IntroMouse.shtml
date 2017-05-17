@@ -393,20 +393,19 @@ video below (requires Flash), or browse the <a href="<!--#include file='include/
 /nomen/index.shtml">
 Full Guidelines for Nomenclature of Mouse and Rat Strains.</a> If the tutorial below is not 
 displayed on this page, you may also be able to view it 
-<a href="http://jaxmice.jax.org/support/nomenclature/tutorial.html">here</a>.</p>
+<a href="https://www2.jax.org/nomenclature-tutorial/">here</a>.</p>
 
 <br>
-<div id=nomenflash style="margin-left:30px">
-<object border="1" type="application/x-shockwave-flash" data="images/nomenclature.swf" width="500" height="368">
-<param name="movie" value="images/nomenclature.swf" />
-</object><br>
+<iframe src="https://www2.jax.org/nomenclature-tutorial" style="width: 801px; height: 600px;"></iframe>
+
+<br>
 Used with permission from <a href="http://www.jax.org/">The Jackson Laboratory</a>.
 </div>
 
 <br>
 <br>
 <p>The most commonly used inbred strain is C57BL/6J which was also the strain
-sequenced to generate the “reference” mouse genome. For more information on specific
+sequenced to generate the "reference" mouse genome. For more information on specific
 inbred strains, see the strain detail pages on the <a href="http://phenome.jax.org/db/q?rtn=strains/home">
 Mouse Phenome Database</a><sup>[<a href="#ref4">4</a>]</sup>.</p>
 </div>
@@ -682,7 +681,7 @@ and the floxed gene will remain functionally intact. </p>
 	<td valign="top"><a href="images/intro_creLox.png" target="_blank">
 		<img style="padding:6px" src="images/intro_creLox.png" width="400" height="366" 
 		alt="tissue specific excision, cre lox" border="1"></a></td>
-	<td valign="top"><div id="fig7" class="figcaption" style="padding:10px"><b>Figure 7. </b>
+	<td valign="top"><div id="fig7" class="figcaption" style="padding:10px"></b><b>Figure 7. </b>
 		Tissue specific excision of a floxed allele by co-expression with cre-recombinase.
 	</td>
 	</tr>
@@ -716,7 +715,7 @@ MGI annotates data using three major vocabularies:
 		the affected physiological systems and phenotypes</a> (left) in the Human-Mouse:Disease 
 		Connection results are populated by MP terms. Highest level terms represent 
 		physiological systems (for example, "cardiovascular system", "growth/size", "renal/urinary",
-		"reproductive", "tumorigenesis", etc), with hierarchically organized child terms 
+		"reproductive", "tumorigenesis", etc), with hierarchically organized child terms from MP and HPO (Human Phenotype Ontology) 
 		for increasingly specific annotations.<br>
 		<i><b>Citation:</b></i> Smith CL, Goldsmith CA, Eppig JT. The Mammalian Phenotype Ontology 
 		as a tool for annotating, analyzing and comparing phenotypic information. <i>Genome 
