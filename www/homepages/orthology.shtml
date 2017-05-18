@@ -8,6 +8,7 @@
   <meta name="robots" content="NOYDIR" />
 
   <link rel="stylesheet" type="text/css" href="<!--#include file="include/stylesheet.html"-->" />
+  <link rel="stylesheet" type="text/css" href="<!--#include file='include/fewi_url.html'-->assets/css/home/homepages.css" />
 
 <!--#include file='include/templateBodyStart.html'-->
 
@@ -103,7 +104,7 @@
 					<div class="right small"><!--#include file='include/stats_date.shtml'--></div>
 				</div>
 				<div class="boxBG pad5 small">
-					<!--#include file='stats/ortho_stats.shtml'-->
+					<div id="orthologyStats"></div>
 					<a class="small homeLink" href="<!--#include file="include/mgihome_url.html"-->homepages/stats/all_stats.shtml#allstats_ortho">More...</a>
 				</div>
 			</div>
@@ -178,6 +179,15 @@
         ortho_box.init()
     </script>
 
+<script type="text/javascript">
+var fewiurl = "<!--#include file='include/fewi_url.html'-->";
+$.ajax({
+	url: fewiurl + 'home/statistics/orthology_mini_home',
+	success: function(data) {
+		$('#orthologyStats').html(data);
+	}
+});
+</script>
 <!--#include file='include/templateBodyStop.html'-->
 
 </body>

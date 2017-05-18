@@ -9,6 +9,7 @@
   <meta name="robots" content="NOYDIR" />
 
   <link rel="stylesheet" type="text/css" href="<!--#include file="include/stylesheet.html"-->" />
+  <link rel="stylesheet" type="text/css" href="<!--#include file='include/fewi_url.html'-->assets/css/home/homepages.css" />
 
 <!--#include file='include/templateBodyStart.html'-->
 
@@ -142,7 +143,7 @@
 					<div class="right small"><!--#include file='include/stats_date.shtml'--></div>
 				</div>
 				<div class="boxBG pad5 small">
-					<!--#include file='stats/gene_stats.shtml'-->
+					<div id="markerStats"></div>
 					<a class="small homeLink" href="<!--#include file="include/mgihome_url.html"-->homepages/stats/all_stats.shtml#allstats_markers">More...</a>
 				</div>
 			</div>
@@ -219,6 +220,15 @@
     }
 </script>
 
+<script type="text/javascript">
+var fewiurl = "<!--#include file='include/fewi_url.html'-->";
+$.ajax({
+	url: fewiurl + 'home/statistics/markers_mini_home',
+	success: function(data) {
+		$('#markerStats').html(data);
+	}
+});
+</script>
 <!--#include file='include/templateBodyStop.html'-->
 
 </body>

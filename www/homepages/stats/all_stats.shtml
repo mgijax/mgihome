@@ -7,9 +7,16 @@
 
   <meta name="robots" content="NOODP" />
   <meta name="robots" content="NOYDIR" />
-  <link rel="stylesheet" type="text/css" href="<!--#include file="include/stylesheet.html"-->" />
+  <link rel="stylesheet" type="text/css" href="<!--#include file='include/stylesheet.html'-->" />
+  <link rel="stylesheet" type="text/css" href="<!--#include file='include/fewi_url.html'-->assets/css/home/homepages.css" />
 
 <!--#include file='include/templateBodyStart.html'-->
+
+<style>
+.statsTable td:nth-of-type(1) {
+    width: 7em;
+}
+</style>
 
 <!-- Title Bar -->
 <div id="titleBarWrapper">
@@ -74,8 +81,7 @@ Note that the list in each section is a definition list <dl> where the term
 				<div class="boxTitle">
 					<div class="left">Genes, Genome Features &amp; Maps</div>
 				</div>
-				<div class="boxBG pad5 small">
-					<!--#include file='allstats_markers.shtml'-->
+				<div id="markerStats" class="boxBG pad5 small">
 				</div>
 			</div>
 	</td></tr>
@@ -86,8 +92,7 @@ Note that the list in each section is a definition list <dl> where the term
 				<div class="boxTitle">
 					<div class="left">Phenotypes, Alleles &amp; Disease Models</div>
 				</div>
-				<div class="boxBG pad5 small">
-					<!--#include file='allstats_pheno.shtml'-->
+				<div id="phenoStats" class="boxBG pad5 small">
 				</div>
 			</div>
 	</td></tr>
@@ -98,8 +103,7 @@ Note that the list in each section is a definition list <dl> where the term
 				<div class="boxTitle">
 					<div class="left">Gene Expression</div>
 				</div>
-				<div class="boxBG pad5 small">
-					<!--#include file='allstats_gxd.shtml'-->
+				<div id="gxdStats" class="boxBG pad5 small">
 				</div>
 			</div>
 	</td></tr>
@@ -110,8 +114,7 @@ Note that the list in each section is a definition list <dl> where the term
 				<div class="boxTitle">
 					<div class="left">Recombinase Allele Data</div>
 				</div>
-				<div class="boxBG pad5 small">
-					<!--#include file='allstats_cre.shtml'-->
+				<div id="recombinaseStats" class="boxBG pad5 small">
 				</div>
 			</div>
 	</td></tr>
@@ -122,8 +125,7 @@ Note that the list in each section is a definition list <dl> where the term
 				<div class="boxTitle">
 					<div class="left">GO Functional Annotations</div>
 				</div>
-				<div class="boxBG pad5 small">
-					<!--#include file='allstats_go.shtml'-->
+				<div id="goStats" class="boxBG pad5 small">
 				</div>
 			</div>
 	</td></tr>
@@ -134,8 +136,7 @@ Note that the list in each section is a definition list <dl> where the term
 				<div class="boxTitle">
 					<div class="left">Biochemical Pathways</div>
 				</div>
-				<div class="boxBG pad5 small">
-					<!--#include file='allstats_paths.shtml'-->
+				<div id="pathwayStats" class="boxBG pad5 small">
 				</div>
 			</div>
 	</td></tr>
@@ -147,8 +148,7 @@ Note that the list in each section is a definition list <dl> where the term
 				<div class="boxTitle">
 					<div class="left">Strains, SNPs &amp; Polymorphisms</div>
 				</div>
-				<div class="boxBG pad5 small">
-					<!--#include file='allstats_snp.shtml'-->
+				<div id="snpStats" class="boxBG pad5 small">
 				</div>
 			</div>
 	</td></tr>
@@ -159,8 +159,7 @@ Note that the list in each section is a definition list <dl> where the term
 				<div class="boxTitle">
 					<div class="left">Vertebrate Homology</div>
 				</div>
-				<div class="boxBG pad5 small">
-					<!--#include file='allstats_ortho.shtml'-->
+				<div id="orthologyStats" class="boxBG pad5 small">
 				</div>
 			</div>
 	</td></tr>
@@ -171,8 +170,7 @@ Note that the list in each section is a definition list <dl> where the term
 				<div class="boxTitle">
 					<div class="left">Sequences</div>
 				</div>
-				<div class="boxBG pad5 small">
-					<!--#include file='allstats_seq.shtml'-->
+				<div id="sequenceStats" class="boxBG pad5 small">
 				</div>
 			</div>
 	</td></tr>
@@ -183,12 +181,39 @@ Note that the list in each section is a definition list <dl> where the term
 				<div class="boxTitle">
 					<div class="left">References</div>
 				</div>
-				<div class="boxBG pad5 small">
-					<!--#include file='allstats_ref.shtml'-->
+				<div id="referenceStats" class="boxBG pad5 small">
 				</div>
 			</div>
 	</td></tr>
 
 </table>
 
+<script type="text/javascript">
+var fewiurl = "<!--#include file='include/fewi_url.html'-->";
+var loadStats = function(divName, groupName) {
+	// populate stats div
+	$.ajax({
+		url: fewiurl + 'home/statistics/' + groupName.replace(/ /g, '_'),
+		success: function(data) {
+			$('#' + divName).html(data);
+		}
+	});
+};
+// load the first section, wait a bit, then load the others.  This solves the
+// problem with blank sections on the first page load (as the cache in the
+// fewi doesn't have time to be populated if the second call is in quick
+// succession)
+loadStats("markerStats", "stats page markers");
+setTimeout(function() {
+	loadStats("phenoStats", "stats page phenotypes");
+	loadStats("gxdStats", "stats page gxd");
+	loadStats("recombinaseStats", "stats page recombinase");
+	loadStats("goStats", "stats page go");
+	loadStats("pathwayStats", "stats page pathways");
+	loadStats("snpStats", "stats page polymorphisms");
+	loadStats("orthologyStats", "stats page orthology");
+	loadStats("sequenceStats", "stats page sequences");
+	loadStats("referenceStats", "references");
+	}, 250);
+</script>
 <!--#include file='include/templateBodyStop.html'-->
