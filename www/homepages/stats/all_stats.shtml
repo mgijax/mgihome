@@ -215,5 +215,13 @@ setTimeout(function() {
 	loadStats("sequenceStats", "stats page sequences");
 	loadStats("referenceStats", "references");
 	}, 250);
+setTimeout(function() {
+	var anchor = window.location.hash.replace('#', '');
+	if (anchor != '') {
+		var anchorTag = $("a[name='" + anchor + "']");
+		$('html,body').animate({ scrollTop: anchorTag.offset().top},
+			'slow');
+	}
+	}, 500);
 </script>
 <!--#include file='include/templateBodyStop.html'-->
