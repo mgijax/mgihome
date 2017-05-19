@@ -18,17 +18,11 @@
         <table class="toc" width="100%">
 		<tr><td>
         <ul>
+        <li><a href="#june5_2017">June 5, 2017</a> |
         <li><a href="#may15_2017">May 15, 2017</a> |
         <li><a href="#may1_2017">May 1, 2017</a> |
         <li><a href="#march13_2017">March 13, 2017</a> |
-        <li><a href="#oct10_2016">October 10, 2016</a> |
-        <li><a href="#aug1_2016">August 1, 2016</a> |
-        <li><a href="#july13_2016">July 13, 2016</a> |
-        <li><a href="#june23_2016">June 23, 2016</a> |
-        <li><a href="#may30_2016">May 30, 2016</a> |
-        <li><a href="#mar21_2016">March 21, 2016</a> |
-        <li><a href="#jan14_2016">January 14, 2016</a> |
-        <li><a href="news_2015.shtml"><span style="white-space: nowrap">Archive: News and Announcements for 2015</span></a></li> 
+        <li><a href="news_2016.shtml"><span style="white-space: nowrap">Archive: News and Announcements for 2016</span></a></li> 
         </ul>
             	</td>
         	</tr>              
@@ -36,6 +30,21 @@
    </td></tr>
 
    <tr><td></td></tr>
+   
+    <tr><td><a id="june5_2017"></a>
+
+      <table class="outline" width="100%">
+
+<tr><td class="enhance">June 5, 2017</td></tr>
+ 	<tr><td>
+ 	<dl class="linkedList">
+ 	<dt>This MGI release provides updates to the Disease Ontology (<a href="<!--#include file='include/fewi_url.html'-->disease” target="_blank">DO</a>) Browser. The browser pages now include a graphical view of the DO. This view makes it easy to trace all paths from a term back to the root node of the ontology. Users may navigate up or down the tree by clicking on a term in the graph view. The DO Browser's Genes and Models tabs now include counts of the associated human and mouse genes and all mouse  models for the disease, respectively.</dt>
+	<dt>Last year, human OMIM disease-to-phenotype relationships from the Human Phenotype Ontology (HPO) were integrated into the Human - Mouse: Disease Connection (HMDC). This release debuts the MGI Human Phenotype Ontology (<a href="<!--#include file='include/fewi_url.html'-->vocab/hp_ontology" target="_blank">HPO</a>) Browser. You can either browse or search the HPO Browser to view terms, definitions, and term relationships in a hierarchical display. Selected terms in the HPO Tree View link to a Human - Mouse Disease Connection query for the term and displays the human diseases and the high-level human phenotype terms associated with the term, the human genes associated with those diseases and their mouse orthologs. With this release, the number of human diseases annotated to HPO terms increased due to the addition of Orphanet disease-to-phenotype relationships from the Human Phenotype Ontology (HPO).</dt>
+ 
+	</dl>
+ 	</td>
+	</tr>
+	</table>
    
    <tr><td><a id="may15_2017"></a>
 
@@ -78,138 +87,6 @@
 </dt>
 	</dl>
  	</td>
-	</tr>
-	</table>
-   
-   <tr><td><a id="oct10_2016"></a>
-
-      <table class="outline" width="100%">
-   
-<tr><td class="enhance">October 10, 2016</td></tr>
- 	<tr><td>
- 	<dl class="linkedList">
- 	<dt>The MGI 6.06 release provides a new FTP server and other back end upgrades. The MGI FTP site address has changed from: ftp://ftp.informatics.jax.org/pub/</dt>
- 	<dt>to: http://www.informatics.jax.org/downloads/.</dt>
- 	</dl>
- 	</td>
-	</tr>
-	</table>
-   
-   <tr><td><a id="aug1_2016"></a>
-
-      <table class="outline" width="100%">
-   
-<tr><td class="enhance">August 1, 2016</td></tr>
- 	<tr><td>
- 	<dl class="linkedList">
- 	<dt>The Human - Mouse: Disease Connection (<a href="<!--#include file='include/fewi_url.html'-->diseasePortal">HMDC</a>) is designed to facilitate the identification of published and potential mouse models of human disease, discovery of candidate genes and investigation of phenotypic similarity between mouse models and human patients. The initial release integrated mouse mutation, phenotype and disease model data from MGI with human gene-to-disease relationships from Online Mendelian Inheritance in Man (<a href="http://omim.org">OMIM</a>). New in this release, human disease-to-phenotype relationships from the Human Phenotype Ontology (<a href="http://human-phenotype-ontology.github.io">HPO</a>) are integrated into HMDC.</dt>
- 	<dt>This release also features a redesigned, streamlined, HMDC search form. You can easily search for combinations of human or mouse genome coordinates, multiple phenotype terms, disease terms, gene symbols, and accession identifiers (IDs).</dt>
- 	</dl>
- 	</td>
-	</tr>
-	</table>
-   
-    <tr><td><a id="july13_2016"></a>
-
-      <table class="outline" width="100%">
-   
-<tr><td class="enhance">July 13, 2016</td></tr>
- 	<tr><td>
- 	<dl class="linkedList">
- 	<dt>Thank you for your support!</dt>
- 	<dt>In just 2 weeks, over 10,000 signatures were collected in support of Model Organism Databases (MODs). The letter of support will be presented to NIH Director Francis Collins at The Allied Genetics Conference in Orlando this week. For more information, see the June 23, 2016 news item.</dt>
- 	</dl>
- 	</td>
-	</tr>
-	</table>
-   
-    <tr><td><a id="june23_2016"></a>
-
-      <table class="outline" width="100%">
-   
-<tr><td class="enhance">June 23, 2016</td></tr>
- 	<tr><td>
- 	<dl class="linkedList">
- 	<dt>We wish to call your attention to a critical issue that has arisen for our community and that of other model organisms. The NIH institute, the National Human Genome Research Institute (NHGRI), that supports the Mouse Genome Database (MGD) and several other Model Organism Databases (MODs), and the Gene Ontology Consortium (GOC), is changing their funding approach. These changes are reported this week in <a href="http://go.nature.com/28PRo8z">Nature</a> as well as previously in <a href="http://bit.ly/1Jq1bTj">Science</a>. NIH has put forth a plan where MGD and its equivalents for rat, C. elegans, yeast, zebrafish, and Drosophila would combine into a single 'uberMOD', with an upcoming 30% cut in funding. While integration will increase accessibility of the functional data that each community has collected over decades, the current plan with its reduced funding will have a severe impact on the ability of MGD to maintain mouse-specific datasets that many of us rely on daily.</dt>
- 	<dt>Because of the concern about this plan and its broad impact on many thousands of researchers, leaders of model organism communities have come together to write a letter to NIH leadership that strongly supports the MODs and advocates for maintaining species-specific datasets with requisite funding. A bevy of prominent signatories, including Nobel laureates, heads of scientific societies, and National Academy members have already endorsed this initiative. We hope to gather thousands of additional signatures and present the letter to NIH Director Francis Collins at The Allied Genetics Conference in Orlando next month. The letter can be easily signed on a website, created by our partners at The Genetics Society of America (GSA), with your name and just two simple questions about your location and any NIH funding. These questions simply allow us to collate signatory numbers should NIH request a breakdown along these lines. </dt>
-	<dt>We urge you to add your name to the Statement of Support, as we aim to collect signatures from all MOD users who concur (for the question about NIH support, we can consider those who work in an NIH-funded lab to be NIH-supported). Finally, we encourage you to spread the word through your colleagues and via social media. We have every hope that a strong show of support, via an outpouring of signatures, will help shape the NHGRI plan to preserve the MOD features that are most important to our research enterprise.
- 	</dt>
- 	</dl>
- 	</td>
-	</tr>
-	</table>
-   
-    <tr><td><a id="may30_2016"></a>
-
-      <table class="outline" width="100%">
-   
-   <tr><td class="enhance">May 30, 2016</td></tr>
- 	<tr><td>
- 	<dl class="linkedList">
- 	<dt>LacZ knock in reporter data for 644 targeted mutants have been imported into GXD from the International Mouse Phenotyping Consortium (<a href="http://www.mousephenotype.org">IMPC</a>). This set includes 20,139 images and their 21,694 annotated results, obtained from embryonic day 12.5 and postnatal adult specimens. These data are fully integrated into GXD, allowing them to be searched in context of all other gene expression data in GXD. The entire set can be viewed at <a href="<!--#include file='include/fewi_url.html'-->gxd/reference/J:228563">J:228563</a>.
- 	</dt>
- 	</dl>
- 	</td>
-	</tr>
-	</table>
-   
-   <tr><td><a id="mar21_2016"></a>
-
-      <table class="outline" width="100%">
-   
-   <tr><td class="enhance">March 21, 2016</td></tr>
- 	<tr><td>
- 	<dl class="linkedList">
- 	<dt>The MGI 6.03 release provides improvements to SNPs searches and batch Gene Expression data.
- 	</dt>
- 	<dt>SNP Query enhancements: 
- 	<ul>
- 	<li>The new MGI <a href="<!--#include file='include/fewi_url.html'-->snp"> Mouse dbSNP Query</a> is easier to use, provides vastly improved performance and updated data (dbSNP Build 142).</li>
- 	<li>You can filter your results by dbSNP Function Classes and drag columns to reposition strains of interest.</li>
- 	</ul>
- 	</dt>
- 	<dt>Gene Expression Batch Search:
- 	<ul>
- 	<li>A <a href="<!--#include file='include/fewi_url.html'-->gxd/batchSearch">Batch Search</a> utility has been added, as a third tab, to the Gene Expression Data Query to facilitate searches for expression data using lists of gene symbols or IDs. You can search by either uploading a list of symbols or IDs from tab-delimited or comma-separated files or by copying and pasting a list into the text search box.</li>
- 	<li>In addition, the genes field of the Standard Search now accepts comma-separated lists of gene symbols.</li> 
- 	<li>All Gene Expression Data searches return a tissue-by-gene matrix view as part of its multi-tabbed data summary; this view enables a comparison of expression patterns between genes. Data filters found on the summary pages can be used to further refine search results.</li>
- 	</ul>
- 	</dt>
- 	<dt>Links to Wikipedia human gene pages: 
- 	<ul>
- 	<li>MGI Gene Detail pages now provide links to Wikipedia pages for human gene information. The MyGene.info project organizes these Wikipedia pages and MGI links to these pages only for genes that have a one-to-one mouse/human orthology relationship.</li>
- 	</ul> 
- 	</dt>
-	</dl>
-	</tr>
-	</table>
-   
-   <tr><td><a id="jan14_2016"></a>
-
-      <table class="outline" width="100%">
-   
-   <tr><td class="enhance">January 14, 2016</td></tr>
- 	<tr><td>
- 	<dl class="linkedList">
- 	<dt>The MGI 6.02 release provides improvements to recombinase searches and Gene Ontology (GO) data.
- 	</dt>
- 	<dt>Recombinase enhancements: 
- 	<ul>
- 	<li>The MGI <a href="<!--#include file='include/fewi_url.html'-->home/recombinase">Recombinase</a> search now permits querying for anatomical structures AND a driver.</li>
- 	<li>The Driver field is now an autocomplete field.</li>
- 	<li>Your recombinase search results can now be filtered by Driver, Inducer, Detected and Not Detected (anatomical system) columns.</li>
- 	<li>In your search summary, if an inducer is required to activate recombinase activity, then the inducer is now indicated in the summary.</li>
- 	</ul>
- 	</dt>
- 	<dt>A tutorial for finding recombinase alleles in MGI is available at <a href= "https://www.youtube.com/watch?v=Z3odTm-xACg&feature=em-share_video_user">YouTube</a>.
- 	</dt>
- 	<dt>GO data enhancements:
- 	<ul>
- 	<li>GO tables contain a new Category column. Categories are from a subset of the Gene Ontologies (a "GO slim") and each category provides an overview of a section of the ontology.</li>
- 	<li>A new Context column adds value to the GO classification term by detailing the conditions or refining the tissue used in the experiment.</li>
- 	</ul>
- 	</dt>
-	</dl>
 	</tr>
 	</table>
 
