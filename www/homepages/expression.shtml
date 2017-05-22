@@ -96,7 +96,7 @@ border: 1px solid #EBCA6D;
 			<div class="goldBorder leftCenterMargin statList">
 				<div class="goldbar" style="height: 15px;">
 					<div class="left">GXD Includes</div>
-					<div class="right small"><!--#include file='include/stats_date.shtml'--></div>
+					<div class="right small" id="statsDate"></div>
 				</div>
 				<div class="boxBG pad5 small">
 					<div id="gxdStats"></div>
@@ -198,6 +198,12 @@ $.ajax({
 	url: fewiurl + 'home/statistics/gxd_mini_home',
 	success: function(data) {
 		$('#gxdStats').html(data);
+	}
+});
+$.ajax({
+	url: fewiurl + 'home/database_date',
+	success: function(data) {
+		$('#statsDate').html(data);
 	}
 });
 </script>

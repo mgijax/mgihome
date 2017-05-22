@@ -140,7 +140,7 @@
 			<div class="blueBorder leftCenterMargin statList">
 				<div class="boxTitle">
 					<div class="left">Genes, Genome Features & Maps Includes</div>
-					<div class="right small"><!--#include file='include/stats_date.shtml'--></div>
+					<div class="right small" id="statsDate"></div>
 				</div>
 				<div class="boxBG pad5 small">
 					<div id="markerStats"></div>
@@ -226,6 +226,12 @@ $.ajax({
 	url: fewiurl + 'home/statistics/markers_mini_home',
 	success: function(data) {
 		$('#markerStats').html(data);
+	}
+});
+$.ajax({
+	url: fewiurl + 'home/database_date',
+	success: function(data) {
+		$('#statsDate').html(data);
 	}
 });
 </script>
