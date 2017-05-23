@@ -22,9 +22,9 @@ import template
 OPTIONAL = 0			# values to indicate whether a Field is
 REQUIRED = 1			# required or optional
 
-MARKER_TYPE = 2			# list all needed MGI Type keys here
-ASSAY_TYPE = 8
-ALLELE_TYPE = 11
+MARKER_TYPE = 'Marker'
+ASSAY_TYPE = 'Assay'
+ALLELE_TYPE = 'Allele'
 
 # Email changed (to new system) in 4.0 - see TR 8682
 RECIPIENT = 'jaxmgi@service-now.com' 
@@ -39,10 +39,7 @@ REMEDY_MESSAGE = '''%s
 %s
 ''' % (mgi_utils.date(), '%s')
 
-ALLOWED_TYPES = [2,  # markers
-		 8,  # assays
-		 11  # alleles
-		]
+ALLOWED_TYPES = [ MARKER_TYPE, ALLELE_TYPE, ASSAY_TYPE ]
 
 ###--- Class-Checking Functions ---###
 
@@ -679,17 +676,10 @@ class AlleleSubjectField (OneLineTextField):
 
 		subj = 'RE: Allele'
 		if parms.has_key ('accID'):
-			result = homelib.sql ('''
-				select a.symbol
-				from ALL_Allele a, ACC_Accession acc
-				where acc._MGIType_key = %d
-					and acc._Object_key = a._Allele_key
-					and lower(acc.accID) = lower('%s')
-					''' % \
-				(ALLELE_TYPE, parms['accID']), 'auto')
+			result = homelib.getAlleles(parms['accID'])
 			if len(result) > 0:
 				subj = '%s %s (%s)' % (subj,
-							result[0]['symbol'],
+							result[0],
 							parms['accID'])
 			else:
 				subj = '%s (%s)' % (subj, parms['accID'])
@@ -723,20 +713,10 @@ class MarkerSubjectField (OneLineTextField):
 		#	accession number.
 
 		if parms.has_key ('accID'):
-			result = homelib.sql ('''
-				select m.symbol, t.name
-				from MRK_Marker m,
-					ACC_Accession a,
-					MRK_Types t
-				where a._MGIType_key = %d
-					and a._Object_key = m._Marker_key
-					and lower(a.accID) = lower('%s')
-					and m._Marker_Type_key =
-						t._Marker_Type_key
-				''' % (MARKER_TYPE, parms['accID']), 'auto')
+			result = homelib.getMarkers(parms['accID'])
 			if len(result) > 0:
-				subj = 'RE: %s %s (%s)' % (result[0]['name'],
-							result[0]['symbol'],
+				subj = 'RE: %s %s (%s)' % (result[0][1],
+							result[0][0],
 							parms['accID'])
 			else:
 				subj = 'RE: Marker (%s)' % (parms['accID'])
@@ -1295,7 +1275,6 @@ def getInputObj (
 	# Assumes: nothing
 	# Effects: queries the database to learn the MGI Type corresponding to
 	#	the input 'parms', then builds and returns an object
-	# Throws: propagates any exceptions raised by homelib.sql()
 
 	# if we do not have an accession ID, then just fall back on the
 	# SimpleTextUserInput form, containing the basic fields and a big
@@ -1304,24 +1283,21 @@ def getInputObj (
 	inp = SimpleTextUserInput (parms)
 	
 	if parms.has_key('accID'):
-		result = homelib.sql ('''select _MGIType_key
-				from ACC_Accession
-				where lower(accID) = lower('%s')''' % parms['accID'],
-				'auto')
+		result = homelib.getObjectTypes(parms['accID'])
 		
 		for mgiType in result:
-			if mgiType['_MGIType_key'] in ALLOWED_TYPES:
+			if mgiType in ALLOWED_TYPES:
 				# return an object of the appropriate
 				# subclass.  (or fall back on the default if no
 				# special subclass is defined)
 	
-				if mgiType['_MGIType_key'] == MARKER_TYPE:
+				if mgiType == MARKER_TYPE:
 					inp = MarkerUserInput (parms)
 	
-				elif mgiType['_MGIType_key'] == ALLELE_TYPE:
+				elif mgiType == ALLELE_TYPE:
 					inp = AlleleUserInput (parms)
 	
-				elif mgiType['_MGIType_key'] == ASSAY_TYPE:
+				elif mgiType == ASSAY_TYPE:
 					inp = AssayUserInput (parms)
 	
 				# add handling here for other MGI Types as needed...

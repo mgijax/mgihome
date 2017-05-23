@@ -79,11 +79,9 @@ index 9235766..f370d63 100755
 -cd $TOP/admin
 -gen_rcd
 -gen_includes
--gen_stats
 +cd "$TOP/admin"
 +./gen_rcd
 +./gen_includes
-+./gen_stats
  #gen_includes.py
  
 -cd $TOP
@@ -153,33 +151,3 @@ index f1326cd..6004367 100755
  
  import webshare_util
  
-diff --git a/admin/gen_stats b/admin/gen_stats
-index 5ac1811..9a702a9 100755
---- a/admin/gen_stats
-+++ b/admin/gen_stats
-@@ -9,10 +9,16 @@
- ##=====
- 
- import sys
--if '/usr/local/mgi/live/lib/python/' not in sys.path:
--        sys.path.insert(0, '/usr/local/mgi/live/lib/python/')
-+import os
-+
- if '.' not in sys.path:
-         sys.path.insert (0, '.')
-+
-+if "LIB_PY_MISC" not in os.environ:
-+   sys.path.insert (0, '/usr/local/mgi/live/lib/python/')
-+else:
-+   sys.path.insert (0, os.environ["LIB_PY_MISC"])
-+
- import warnings
- warnings.filterwarnings('ignore', '', DeprecationWarning)
- 
-@@ -107,4 +113,4 @@ def getStatsForMinihome(group, name):
- print 'Starting to generate stats files.'
- for (group, filename) in stats_groups:
- 	getStatsForMinihome(group, filename)
--print 'Finished generating stats files.'
-\ No newline at end of file
-+print 'Finished generating stats files.'
