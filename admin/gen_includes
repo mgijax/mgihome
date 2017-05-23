@@ -26,31 +26,6 @@ def listToFile (str_list, filename):
     fp.close()
     return
 
-def getDbDate ():
-    # Purpose: return value of latest db update
-    # Returns: string
-    # Assumes: nothing
-    # Effects: nothing
-    # Throws: db module may throw DB exceptions
-    # pull the MGI:ID and geneSymbol from the database
-
-    db.useOneConnection(1)
-    db.set_sqlUser(config["DB_USER"])
-    db.set_sqlPassword(config["DB_PASSWORD"])
-    db.set_sqlServer(config["DB_SERVER"])
-    db.set_sqlDatabase(config["DB_DATABASE"])
-    cmds = [] # SQL command list
-    cmds.append('''SELECT to_char(lastdump_date, 'DD Mon YYYY') as dbDate,
-        	public_version 
-        FROM MGI_dbInfo''')
-
-    #  Excecute queries
-    results = db.sql(cmds, 'auto')
-    db.useOneConnection(0)
-    dbDateInfo = results[0][0]
-
-    return dbDateInfo["dbDate"]
-
 def captchaInclude ():
     form = """<input type="hidden" name="%s" id="%s" value="default">
         <input type="text" name="%s" id="%s" value="default">""" % \
@@ -178,9 +153,6 @@ def main ():
         '../www/include/homepages_url.html')
     writeStringAsIncludeFile (config['MENUS_URL'],
         '../www/include/menus_url.html')
-
-    writeStringAsIncludeFile(getDbDate(), '../www/include/stats_date.shtml')
-
 
     #####----- Template Include Files --------#####
     createIncludeLink('templateHead.html', config['MGICONFIG_PATH'] + 'web/templateHead.html')

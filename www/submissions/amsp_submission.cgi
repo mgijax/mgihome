@@ -1487,19 +1487,9 @@ def isKnownGene (
 
 	global KNOWN_GENES
 
+	gene = gene.strip()
 	if not KNOWN_GENES.has_key(gene):
-		results = homelib.sql ('''SELECT m._Marker_key
-			FROM MRK_Marker m
-			WHERE m._Organism_key = 1
-				AND m._Marker_Status_key = 1
-				AND lower(m.symbol) = lower('%s')
-			UNION
-			SELECT a._Object_key
-			FROM ACC_Accession a
-			WHERE a._MGIType_key = 2
-				AND a._LogicalDB_key = 1
-				AND lower(a.accID) = lower('%s')''' % (gene, gene) )
-		KNOWN_GENES[gene] = len(results) != 0
+		KNOWN_GENES[gene] = len(homelib.getMarkers(gene)) != 0
 
 	return KNOWN_GENES[gene]
 
@@ -1518,11 +1508,9 @@ def isKnownAllele (
 
 	global KNOWN_ALLELES
 
+	allele = allele.strip()
 	if not KNOWN_ALLELES.has_key(allele):
-		results = homelib.sql ('''SELECT _Allele_key
-			FROM ALL_Allele
-			WHERE lower(symbol) = lower('%s')''' % allele.strip())
-		KNOWN_ALLELES[allele] = len(results) != 0
+		KNOWN_ALLELES[allele] = len(homelib.getAlleles(allele)) != 0
 
 	return KNOWN_ALLELES[allele]
 
