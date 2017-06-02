@@ -41,12 +41,12 @@
 		phenotypic outcome. To maximize the usefulness of these complex data, phenotypes in MGI are associated with specific genotypes (combinations
 		of allelic mutations on specific genetic backgrounds).</p>
 
-		<p>Phenotypes are described in MGI using the <a href="<!--#include file='include/wi_url.html'-->searches/MP_form.shtml">Mammalian Phenotype
+		<p>Phenotypes are described in MGI using the <a href="<!--#include file='include/fewi_url.html'-->vocab/mp_ontology">Mammalian Phenotype
 		Ontology</a>, a structured vocabulary that allows consistent annotation of mouse genotypes with standard phenotype terminology and associates
 		each piece of phenotypic data with its source (e.g., published literature, large-scale mutagenesis centers, individual research
 		laboratories).</p>
 
-		<p>The <a href="<!--#include file='include/wi_url.html'-->searches/allele_form.shtml">Phenotypes, Alleles &amp; Disease Models Query Form</a> allows
+		<p>The <a href="<!--#include file='include/fewi_url.html'-->allele">Phenotypes, Alleles &amp; Disease Models Query Form</a> allows
 		users to ask broad or specific questions about phenotypes of specific mutations or search genome-wide for all genotypes what produce one or
 		a combination of phenotypes.</p>
 
@@ -62,15 +62,11 @@
 
 		<span class="enhance">Models of Human Disease</span>
 
-		<p>The primary goal of MGI is to facilitate the use of mouse as a model for human biology and disease. Mouse genotypes that have been
-		used to study specific human diseases are curated in MGI using disease terms found in the Online Mendelian Inheritance in Man (<a href="http://www.omim.org/">OMIM</a>). Within
-		MGI, users can browse for a specific human disease term using the
-		<a href="<!--#include file='include/java_url.html'-->WIFetch?page=omimVocab&subset=A">Human Disease Vocabulary Browser</a> and follow links to either the OMIM
-		human disease record, or to the MGI page providing human disease and mouse model details.</p>
+		<p>The primary goal of MGI is to facilitate the use of mouse as a model for human biology and disease. Mouse genotypes that have been used to study specific human diseases are curated in MGI using disease terms found in the Disease Ontology (<!--#include file='include/fewi_url.html'-->disease">DO</a>). Within MGI, users can browse for a specific human disease term using the <a href="<!--#include file='include/fewi_url.html'-->disease">Disease Ontology Browser</a> and follow links to gene and mouse model details.</p>
 		
 		<p>The <a href="<!--#include file='include/mgihome_url.html'-->homepages/humanDisease.shtml">Human&mdash;Mouse: Disease Connection</a> site provides a path into mouse genetic and comparative data from the human or mouse perspective. Users can begin to explore data by searching for genes (symbols, names, IDs) or genome locations from human or mouse, or by searching with mouse phenotype or human disease terms. Searching also can be done using VCF file input for human or mouse data.</p>
 
-		<p>In addition, one can use the <a href="<!--#include file='include/wi_url.html'-->searches/allele_form.shtml">Phenotypes, Alleles &amp; Disease
+		<p>In addition, one can use the <!--#include file='include/fewi_url.html'-->allele">Phenotypes, Alleles &amp; Disease
 		Models Query Form</a> to search for diseases in combination with specifying one or more mouse phenotype terms and/or limiting one's search to
 		specific categories of mutant alleles and/or specific genome regions.</p>
 
