@@ -6,29 +6,16 @@ import os
 import Configuration
 config = Configuration.get_Configuration ('Configuration', 1)
 
+import re
 import string
-import db
 import webshare_lib
+import urllib
 
 # for key in config.keys():
 	# print key + " "  + config[key]
 
 URL = config['MGIHOME_URL']
 WI_URL = config['WI_URL']
-db.set_sqlLogin (config['DB_USER'], config['DB_PASSWORD'],
-	config['DB_SERVER'], config['DB_DATABASE'])
-
-def sql (queries, parsers = 'auto'):
-	# Purpose: wrapper over the db.sql routine
-	# Returns: list of dictionaries, or list of lists of dictionaries,
-	#	depending on whether 'queries' is a string or a list or
-	#	strings.
-	# Assumes: nothing
-	# Effects: runs 'queries' against the database specified in the
-	#	Configuration file
-	# Throws: propagates any exceptions raised by db.sql()
-
-	return db.sql (queries, parsers)
 
 def makepath (
 	*items		# strings
@@ -103,3 +90,74 @@ def wrapLines (
 				done = (len (line) <= maxlen)
 		line_list.append (line)
 	return string.join (line_list, LF)
+
+def getJsonResults(fewiPath, field, value):
+	# Get a string of JSON back from the fewi, searching in 'field' for
+	#	the given 'value'.
+	# params:
+	#	fewiPath is the portion of the URL after the fewi's base URL
+	#	field is the name of the field to search
+	#	value is the value to search for
+
+	url = '%s%s?%s=%s' % (config['FEWI_URL'], fewiPath, field, urllib.quote(value))
+	f = urllib.urlopen(url)
+	s = f.read()
+	f.close()
+
+	try:
+		x = eval(s.replace('null', 'None'))
+	except:
+		return { 'summaryRows' : [] }
+	return x
+
+def _parseMarkerSymbol(symbol):
+	if symbol:
+		# need to pull symbol out of middle of link
+		regex = re.compile(">([^<]+)<")
+		match = regex.search(symbol)
+		if match:
+			return match.group(1)
+	return None
+
+def getMarkers(searchString):
+	# return [ list of matching markers ] for the given 'searchString'.
+	# Each marker is:  (symbol, feature type).
+
+	byID = getJsonResults('marker/json', 'markerID', searchString)
+	bySymbol = getJsonResults('marker/json', 'nomen', searchString)
+	rows = []
+	for marker in byID['summaryRows'] + bySymbol['summaryRows']:
+		rows.append ( (_parseMarkerSymbol(marker['symbol']),
+			marker['featureType']) )
+
+	return rows
+
+def _parseAlleleSymbol(symbol):
+	# need to pull symbol out of middle of link and convert
+	# superscript HTML tags to angle brackets
+	if symbol:
+		t = symbol.replace('<sup>', '###').replace('</sup>', '#-#')
+		regex = re.compile(">([^<]+)<")
+		match = regex.search(t)
+		if match:
+			return match.group(1).replace("#-#", ">").replace("###", "<")
+	return None
+
+def getAlleles(searchString):
+	# return [ list of symbols for matching alleles ] for the given
+	# 'searchString'.
+	byID = getJsonResults('allele/summary/json', 'allIds', searchString)
+	bySymbol = getJsonResults('allele/summary/json', 'nomen', searchString)
+	rows = []
+	for allele in byID['summaryRows'] + bySymbol['summaryRows']:
+		rows.append ( _parseAlleleSymbol(allele['nomen']) )
+
+	return rows
+
+def getObjectTypes(searchString):
+	# return [ list of MGI Types matching the given 'searchString' ]
+	byID = getJsonResults('accession/json', 'id', searchString)
+	rows = []
+	for row in byID['summaryRows']:
+		rows.append(row['objectType'])
+	return rows

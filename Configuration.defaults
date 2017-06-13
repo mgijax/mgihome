@@ -2,12 +2,6 @@
 ### mgihome configuration file                                           ###
 ###----------------------------------------------------------------------###
 
-# added to hit adhoc server instead of mgd-style database on public db server
-# (temporary until we can accomplish TR12561)
-
-DB_SERVER	mgi-adhoc.jax.org
-DB_DATABASE	mgd
-
 ###----------------------------------------------------------------------###
 ###--- parameters which change for most installations -------------------###
 ###----------------------------------------------------------------------###
