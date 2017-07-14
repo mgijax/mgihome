@@ -1,5 +1,5 @@
 <!--#include file="include/templateHead.html"-->
-<TITLE>MGI-Submitting expression data to the Gene Expression Database (GXD)</TITLE>
+<title>MGI-Submitting expression data to the Gene Expression Database (GXD)</title>
 <!--#include file="include/templateBodyStart.html"-->
 
 <!-- Title Bar -->
@@ -14,177 +14,122 @@
 </div>
 <!--titleBar-->
 
-<style type="text/css">
-h3.test1{ font-style: bold 
-	font-size: 1.2em }
-h4.test2{ font-style: bold
-	font-size: 1.1em }
-</style>
+<h3>Table of Contents</h3>
+   <p>
+   <ul>
+    <li><a href="#why">Why should I submit data?</a></li>
+    <li><a href="#what_type">What types of data can I submit?</a></li>
+    <li><a href="#how_can">How can I submit the data?</a></li>
+     <li><a href="#what_info">What information should a data submission contain?</a>
+        <ul>
+        <li><a href="#gene_name">Gene Name/Symbol</a></li>
+        <li><a href="#probe">Probe Information</a></li>
+        <li><a href="#assay">Assay Conditions</a></li>
+        <li><a href="#specimen">Specimen Information</a></li>
+        <li><a href="#experiment">Experimental Results</a></li>
+         </ul></li>
+    <li><a href="#if_your">If your submission is not accompanied by a publication</a></li>
+    <li><a href="#what_happens">What happens upon data submission?</a></li>
+    <li><a href="#emage">Our collaboration with EMAGE</a></li>
+    </ul>
+    </p>
 
-<H3 class="test1">Table of Contents</h3>
-   <P><UL>
-    <A HREF="#why">Why should I submit data?</A><BR>
+<h3><a id="why"></a>Why should I submit data?</h3>
+<p>Electronic submission both increases the exposure of your work and the amount of data available to the scientific community.  Your data will be integrated with many other data and made widely available for basic and complex database searches, adding to its value and increasing its exposure.  Electronic submission also allows you to share with the scientific community unpublished data, such as data that you were unable to include in a journal article due to space limitations.  GXD is designed to be a resource for the scientific community.  Its value is directly proportional to the amount of data it contains.  By increasing the amount of data in GXD, you can help increase its utility for yourself and others. (More information about GXD and its functionality can be found
+<a href="../aboutGXD.shtml">here</a>).</p>
 
-    <A HREF="#what_type">What types of data can I submit?</A><BR>
-    <A HREF="#how_can">How can I submit the data?</A><BR>
-     <A HREF="#what_info">What information should a data submission contain?</A><BR>
-        <UL>
-        <A HREF="#gene_name">Gene Name/Symbol</A><BR>
-        <A HREF="#probe">Probe Information</A><BR>
-        <A HREF="#assay">Assay Conditions</A><BR>
-          <A HREF="#specimen">Specimen Information</A><BR>
-          <A HREF="#experiment">Experimental Results</A><BR>
-         </UL>
-    <A HREF="#if_your">If your submission is not accompanied by a publication</A><BR>
-    <A HREF="#what_happens">What happens upon data submission?</A><BR>
-     <A HREF="#emage">Our collaboration with EMAGE</A>
+<h3><a id="what_type"></a>What types of data can I submit? </h3>
+<p>GXD currently stores data obtained using RNA in situ hybridization, immunohistochemistry, Northern and Western blots, RT-PCR, RNase protection, and Nuclease S1, as well as cDNA source data. GXD's focus is on endogenous gene expression in mouse strains and mutants, but we also store in situ reporter studies from knock-in experiments.</p>
 
-        </UL>
-        </P>
-
-<H3 class="test1"><A NAME="why"></A>Why should I submit data?</H3>
-<P>Electronic submission both increases the exposure of your work and the amount of data available to the scientific community.  Your data will be integrated with many other data and made widely available for basic and complex database searches, adding to its value and increasing its exposure.  Electronic submission also allows you to share with the scientific community unpublished data, such as data that you were unable to include in a journal article due to space limitations.  GXD is designed to be a resource for the scientific community.  Its value is directly proportional to the amount of data it contains.  By increasing the amount of data in GXD, you can help increase its utility for yourself and others. (More information about GXD and its functionality can be found
-<a href="../aboutGXD.shtml">here</a>).</P>
-
-
-<H3 class="test1"><A NAME="what_type"></A>What types of data can I submit? </H3>
-<P>GXD currently stores data obtained using RNA in situ hybridization, immunohistochemistry, Northern and Western blots, RT-PCR, RNase protection, and Nuclease S1, as well as cDNA source data. GXD's focus is on endogenous gene expression in mouse strains and mutants, but we also store in situ reporter studies from knock-in experiments.</P>
-
-<H3 class="test1"><A NAME="how_can"></A>How can I submit the data?</H3>
-<P>Data can be electronically submitted to GXD by the following methods:</P>
-<UL>
-  <LI>Data can be sent as a regular email attachment to
-<A HREF="mailto:GEN@jax.org">GEN@jax.org</A>.  We will accept the data in various formats as long as it conforms to the guidelines described below.</LI><br>
-  <LI>Data can also be uploaded by FTP or sent on disk or CD.  If you choose one of these options, please contact
-<A HREF="mailto:GEN@jax.org">GEN@jax.org</A> to make arrangements.</LI>
-</UL>
+<h3><a id="how_can"></a>How can I submit the data?</h3>
+<p>Data can be electronically submitted to GXD by the following methods:</p>
+<ul style="line-height:1.6;">
+  <li>Data can be sent as a regular email attachment to
+<a href="mailto:GEN@jax.org">GEN@jax.org</a>.  We will accept the data in various formats as long as it conforms to the guidelines described below.</li>
+  <li>Data can also be uploaded by FTP or sent on disk or CD.  If you choose one of these options, please contact
+<a href="mailto:GEN@jax.org">GEN@jax.org</a> to make arrangements.</li>
+</ul>
 
 <br>
-<H3 class="test1"><A NAME="what_info"></A>What information should a data submission contain?</H3>
+<h3><a id="what_info"></a>What information should a data submission contain?</h3>
 
-<P>You can send the data in a format convenient to you as long as the following basic requirements are met:
-</P><UL>
-  <LI>Submitted data should include enough information about experimental methods to clearly define the experiments performed and adequate detail about the results to allow proper interpretation by database users.</LI>
-  <LI>There should be a clear correspondence between stated results, probes and specimens used, and images provided.</LI>
-</UL>
-<P>Detailed below is a checklist of information that should be included in a complete data submission.  Additional information can be included at the author's discretion.</p>
+<p>You can send the data in a format convenient to you as long as the following basic requirements are met:
+</p><ul>
+  <li>Submitted data should include enough information about experimental methods to clearly define the experiments performed and adequate detail about the results to allow proper interpretation by database users.</li>
+  <li>There should be a clear correspondence between stated results, probes and specimens used, and images provided.</li>
+</ul>
+<p>Detailed below is a checklist of information that should be included in a complete data submission.  Additional information can be included at the author's discretion.</p>
 
 
-<H3 class="test1"><A NAME="gene_name"></A>Gene Name/Symbol</h3>
-<P>Name or Symbol of the gene whose expression was analyzed.</P>
+<h3><a id="gene_name"></a>Gene Name/Symbol</h3>
+<p>Name or Symbol of the gene whose expression was analyzed.</p>
 
-<H3 class="test1"><A NAME="probe"></A>Probe Information</H3>
+<h3><a id="probe"></a>Probe Information</h3>
 
-<H4 class="test2"><I>a.  Nucleotide probes</I></H4>
+<h4><i>a.  Nucleotide probes</i></h4>
+
 <table class="outline">
-<style>
-table
-{
-border-collapse:collapse;
-}
-table,th, td
-{
-border: 1px solid black;
-}
-</style>
-<TR><th align="left" valign="top" width="20%">Probe:</Th><TD valign="top">Please provide the sequence of the probe, either directly or indirectly by citing the corresponding GenBank/EMBL/DDBJ accession number and, if applicable, the start and end nucleotide positions of the probe within that sequence.  If the probe sequence is not known, please provide information to characterize the probe, such as gene, species of origin, sequence type (genomic or cDNA) and region covered (e.g. coding region, 3'UTR).</TD></TR>
-<TR><th align="left" valign="top">Type of probe:</th><TD valign="top">(e.g. RNA, DNA)</TD></TR>
-<TR><th align="left" valign="top">Label:</th><TD valign="top">Material used to label the probe (e.g. digoxigenin, P<sup>32</sup>, etc.).</TD></TR>
-<TR><th align="left" valign="top">Visualization method:</th><TD valign="top">How the results are visualized (e.g. autoradiography, phosphorimaging).</TD> </TR>
-</TABLE>
-
-
-<H4 class="test2"><I>b.  PCR primers</I></h4>
-<table class="outline">
-<style>
-table
-{
-border-collapse:collapse;
-}
-table,th, td
-{
-border: 1px solid black;
-}
-</style>
-<TR><TH VALIGN="top" align="left" width="20%">Primer pairs:</TH><TD VALIGN="top">Please provide the sequence of 5' and 3' primers, either directly or indirectly by citing the corresponding GenBank/EMBL/DDBJ accession number and the start and end nucleotide positions of the primers within that sequence.</TD></TR>
+<tr><th class="thleft"> Probe:</th><td>Please provide the sequence of the probe, either directly or indirectly by citing the corresponding GenBank/EMBL/DDBJ accession number and, if applicable, the start and end nucleotide positions of the probe within that sequence.  If the probe sequence is not known, please provide information to characterize the probe, such as gene, species of origin, sequence type (genomic or cDNA) and region covered (e.g. coding region, 3'UTR).</td></tr>
+<tr><th class="thleft"> Type of probe:</th><td>(e.g. RNA, DNA)</td></tr>
+<tr><th class="thleft"> Label:</th><td>Material used to label the probe (e.g. digoxigenin, P<sup>32</sup>, etc.).</td></tr>
+<tr><th class="thleft"> <span style="white-space: nowrap">Visualization method:</span></th><td>How the results are visualized (e.g. autoradiography, phosphorimaging).</td> </tr>
 </table>
 
+<h4><i>b.  PCR primers</i></h4>
 
-<H4 class="test2"><I>c.  Antibody probes</I></H4>
 <table class="outline">
-<style>
-table
-{
-border-collapse:collapse;
-}
-table,th, td
-{
-border: 1px solid black;
-}
-</style>
-<TR><TH ALIGN="Left" VALIGN="Top" width="20%">Antibody type</TH><TD valign="top">(e.g. monoclonal or polyclonal)</TD></TR>
-<TR><th align="left" valign="top">Antibody class:</th><TD valign="top"> If known (e.g. IgA, IgG<sub>1</sub>).</TD></TR>
-<TR><th align="left" valign="top">Antigen:</th> <TD valign="top"> Details about the antigen used to generate the antibody, such as sequence and source (e.g. species, cell line), are helpful in determining the specificity of the antibody.</TD></TR>
-<TR><th align="left" valign="top">Supplier and catalogue number:</th><td valign="top">If purchased.</Td></TR>
-<TR><TH align="left" VALIGN="top">Primary antibody detection method:</TH><TD VALIGN="top">Information on how the primary antibody was detected, such as type of secondary antibody used, staining/labeling of primary or secondary antibody, etc.</TD></TR>
+<tr><th class="thleft"><span style="white-space: nowrap">Primer pairs:</span></th><td>Please provide the sequence of 5' and 3' primers, either directly or indirectly by citing the corresponding GenBank/EMBL/DDBJ accession number and the start and end nucleotide positions of the primers within that sequence.</td></tr>
 </table>
 
-<H3 class="test1"><A NAME="assay"></A>Assay Conditions</h3>
-<P>Please supply your assay conditions in sufficient detail to allow others to interpret and replicate your experiments. If you do not provide such information in an accompanying publication, please include it here.</P>
+<h4><i>c.  Antibody probes</i></H4>
 
-
-<H4 class="test2"><A NAME="specimen"></A>Specimen Information</h4>
 <table class="outline">
-<style>
-table
-{
-border-collapse:collapse;
-}
-table,th, td
-{
-border: 1px solid black;
-}
-</style>
-<TR><TH ALIGN="Left" VALIGN="Top" width="20%">Strain:</TH><TD VALIGN="top">Background strain of the specimens used.  See <A HREF="<!--#include file='include/wi_url.html'-->external/festing/search_form.cgi">Inbred Strains of Mice and Rats</A> for a listing of approved strain names.  If your mice are a mixture, please list the strains that contributed to their makeup.</TD></TR>
-<TR><TH align="left" valign="top">Mutations: </TH><TD VALIGN="top"> If you use mutant mice, please specify the mutant alleles. For tips on determining the official allele symbol, see the <a href="<!--#include file="include/mgihome_url.html"-->nomen/allmut_quickhelp.shtml">Quick Guide to Nomenclature for Alleles and Mutations</a>. Alternatively, you can list the reference that describes the creation of the mutant.</TD></TR>
-
-<TR><TH align="left" valign="top">Embryonic age/Theiler stage:</TH><TD VALIGN="top">The embryonic age of the specimen, either in embryonic days or Theiler stage.</TD></TR>
-
-<TR><TH align="left" valign="top">Time of copulation plug:</TH><TD VALIGN="top"> If embryonic age is given, specify whether morning of plug detection is defined in your laboratory as embryonic day 0, 0.5, or 1.</TD></TR>
-<TR><TH align="left" VALIGN="top">Sex:</th><TD VALIGN="top">If known.</TD></tr>
-
-<TR><TH align="left" valign="top">Type of sample: </TH><TD VALIGN="top">If the assay is a Northern blot, specify the amount and type of RNA (polyA+, total) used.</TD></TR>
-
-<TR><TH align="left" valign="top">In Situ specimen type: </TH><TD VALIGN="top"> whole-mount or section</TD></TR>
-<TR><TH align="left" valign="top">Fixation method:</TH><TD VALIGN="top">(e.g. 4% paraformaldehyde) </TD></TR>
-<TR><TH align="left" valign="top">Embedding method:</TH><TD VALIGN="top">(e.g. cryosection, paraffin)</TD></TR>
+<tr><th class="thleft">Antibody type</th><td>(e.g. monoclonal or polyclonal)</td></tr>
+<tr><th class="thleft">Antibody class:</th><td> If known (e.g. IgA, IgG<sub>1</sub>).</td></tr>
+<tr><th class="thleft">Antigen:</th> <td> Details about the antigen used to generate the antibody, such as sequence and source (e.g. species, cell line), are helpful in determining the specificity of the antibody.</td></tr>
+<tr><th class="thleft">Supplier and catalogue number:</th><td>If purchased.</td></tr>
+<tr><th class="thleft"><span style="white-space: nowrap">Primary antibody detection method:</span></th><td>Information on how the primary antibody was detected, such as type of secondary antibody used, staining/labeling of primary or secondary antibody, etc.</td></tr>
 </table>
 
+<h3><a id="assay"></a>Assay Conditions</h3>
+<p>Please supply your assay conditions in sufficient detail to allow others to interpret and replicate your experiments. If you do not provide such information in an accompanying publication, please include it here.</p>
 
-<H3 class="test1"><A NAME="experiment"></A>Experimental Results</h3>
+<h4><a id="specimen"></a>Specimen Information</h4>
 
-<H4 class="test2">Images</h4>
-<P>The preferred format is JPEG, although you can use most other formats (TIFF, GIF, PIC) as well.  Saving images at a resolution of 72 pixels/inch provides satisfactory results;  in addition, for Photoshop images, maximum quality (Image Option setting 10-12) is the best choice. </P>
+<table class="outline">
+<tr><th class="thleft">Strain:</th><td>Background strain of the specimens used.  See <a href="<!--#include file='include/fewi_url.html'-->inbred_strains" target="_blank">Inbred Strains of Mice and Rats</a> for a listing of approved strain names.  If your mice are a mixture, please list the strains that contributed to their makeup.</td></tr>
+<tr><th class="thleft">Mutations: </th><td> If you use mutant mice, please specify the mutant alleles. For tips on determining the official allele symbol, see the <a href="<!--#include file='include/mgihome_url.html'-->nomen/allmut_quickhelp.shtml" target="_blank">Quick Guide to Nomenclature for Alleles and Mutations</a>. Alternatively, you can list the reference that describes the creation of the mutant.</td></tr>
+<tr><th class="thleft"><span style="white-space: nowrap">Embryonic age/Theiler stage:</span></th><td>The embryonic age of the specimen, either in embryonic days or Theiler stage.</td></tr>
+<tr><th class="thleft">Time of copulation plug:</th><td> If embryonic age is given, specify whether morning of plug detection is defined in your laboratory as embryonic day 0, 0.5, or 1.</td></tr>
+<tr><th class="thleft">Sex:</th><td>If known.</td></tr>
+<tr><th class="thleft">Type of sample: </th><td>If the assay is a Northern blot, specify the amount and type of RNA (polyA+, total) used.</td></tr>
+<tr><th class="thleft">In Situ specimen type: </th><td> whole-mount or section</td></tr>
+<tr><th class="thleft">Fixation method:</th><td>(e.g. 4% paraformaldehyde) </td></tr>
+<tr><th class="thleft">Embedding method:</th><td>(e.g. cryosection, paraffin)</td></tr>
+</table>
+
+<h3><a id="experiment"></a>Experimental Results</h3>
+
+<h4>Images</h4>
+<p>The preferred format is JPEG, although you can use most other formats (TIFF, GIF, PIC) as well.  Saving images at a resolution of 72 pixels/inch provides satisfactory results;  in addition, for Photoshop images, maximum quality (Image Option setting 10-12) is the best choice. </p>
 <b>Description of Expression Results</b><br>
 <p>When coding your expression data, we will rely on your descriptions of the assay results.  We will not interpret your staining patterns, bands, etc.  Therefore, please describe the expression results obtained in each image. This can be done in the form of a conventional figure legend. Or you can provide the information in tabular form by specifying the anatomical structures examined, the level of expression seen in those structures (e.g. present, absent, weak, strong), and additional descriptions of the staining that you consider to be valuable (for example, staining was seen in the most anterior portion of the structure). If your description refers to several images, you must clearly indicate which expression results are shown in which images.</p>
 
-<p>Please note that as part of the entry process, we will map your expression results to structures from the Anatomical Dictionary. Of course, you are welcome to use terms from the <A HREF="<!--#include file='include/fewi_url.html'-->vocab/gxd/anatomy/" target="_blank">Mouse Developmental Anatomy Browser</A> for your descriptions.
+<p>Please note that as part of the entry process, we will map your expression results to structures from the Anatomical Dictionary. Of course, you are welcome to use terms from the <a href="<!--#include file='include/fewi_url.html'-->vocab/gxd/anatomy/" target="_blank">Mouse Developmental Anatomy Browser</a> for your descriptions.
 
+</p>
+<h3><a id="if_your"></a>If your submission is not accompanied by a publication:</h3>
+<p>You should provide a listing of authors and their institutions that you want associated with the submission.  It would also be helpful if you provided a short abstract that summarizes the data.  It should include information that is important for the interpretation of your experiment such as information that would be included in a publication's materials and methods section.  An example currently in our database is <a href="<!--#include file='include/fewi_url.html'-->reference/J:46439">J:46439</a>.
+</p>
 
-</P>
-<H3 class="test1"><A NAME="if_your"></A>If your submission is not accompanied by a publication:</H3>
-<P>You should provide a listing of authors and their institutions that you want associated with the submission.  It would also be helpful if you provided a short abstract that summarizes the data.  It should include information that is important for the interpretation of your experiment such as information that would be included in a publication's materials and methods section.  An example currently in our database is <A HREF="<!--#include file="include/fewi_url.html"-->reference/J:46439">J:46439</A>.
-</P>
+<h3><a id="what_happens"></a>What happens upon data submission?</h3>
+<p>We will convert your data into standardized formats.  We will contact you if we have questions. We will provide you with an accession number so that you can cite the submission in pertinent publications. You will be able to check and provide comments on the final entries. If the submission is in conjunction with a publication, we keep your data confidential until the paper is published unless you authorize an earlier release.
+</p>
 
-<H3 class="test1"><A NAME="what_happens"></A>What happens upon data submission?</H3>
-<P>We will convert your data into standardized formats.  We will contact you if we have questions. We will provide you with an accession number so that you can cite the submission in pertinent publications. You will be able to check and provide comments on the final entries. If the submission is in conjunction with a publication, we keep your data confidential until the paper is published unless you authorize an earlier release.
-</P>
-
-<H3 class="test1"><A NAME="emage"></A>Our collaboration with EMAGE</H3>
-<P>GXD makes images from RNA <I>in situ</I> hybridization experiments, together with all pertinent annotations, available to the Edinburgh 3D Mouse Atlas and Gene Expression (EMAGE) Database for spatial mapping.  EMAGE collects data from wild-type embryos at selected developmental stages. The long-term goal of our collaboration is to integrate GXD and EMAGE into the
+<h3><a id="emage"></a>Our collaboration with EMAGE</h3>
+<p>GXD makes images from RNA in situ hybridization experiments, together with all pertinent annotations, available to the Edinburgh 3D Mouse Atlas and Gene Expression (EMAGE) Database for spatial mapping.  EMAGE collects data from wild-type embryos at selected developmental stages. The long-term goal of our collaboration is to integrate GXD and EMAGE into the
 <a href="<!--#include file='include/mgihome_url.html'-->GXD/gxdgen.shtml">Mouse Gene Expression Information Resource</a> to provide the scientific community with a resource that will fully combine relational (standardized text-based) and graphical methods to display and analyze gene expression information.
-
-</P>
+</p>
 
 <!--#include file="include/templateBodyStop.html"-->
 

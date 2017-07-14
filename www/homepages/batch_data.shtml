@@ -36,7 +36,7 @@
 	<tr><td>
 	
 <!-- batch table -->
-		<a name="batch"></a>
+		<a id="batch"></a>
 		<table class="outline" width="100%">
 			<tr>
 				<td class="enhance">
@@ -67,7 +67,7 @@
 	<tr><td>
 	
 <!-- section2 table -->
-		<a name="data"></a>
+		<a id="data"></a>
 		<table class="outline" width="100%">
 			<tr>
 				<td class="enhance">
@@ -79,19 +79,19 @@
 					<b><i>Public Reports via FTP</i></b>
 					<ul>
 					  <li>Over 75 data files are generated weekly and available for download.</li>
-					  <li>See <a href="<!--#include file='include/ftp_url.html'-->reports/index.html">MGI Data and Statistical Reports</a> for the list of reports and their field descriptions.</li>
+					  <li>See <a href="<!--#include file='include/wi_url.html'-->downloads/reports/index.html">MGI Data and Statistical Reports</a> for the list of reports and their field descriptions.</li>
 					</ul>
 					<b><i>Tab Delimited Output from our Web Interface</i></b>
 					<ul>
 					  <li>User-defined results for references, gene and SNP data are available in tab delimited format.</li>
 					  <li>You can modify the output format on the query form from <i>Web</i> to <i>Tab-delimited</i>.</li>
-					  <li>Query Forms with the tab-delimited option available are:</li>
+					  <li>Query Forms with the tab-delimited option available are:
 					   <ul class="softwareUL">
 					     <li><a href="<!--#include file='include/fewi_url.html'-->batch">MGI Batch Query</a><br>
 					        <i>Download gene/marker data for a batch of IDs or symbols</i></li>
 					     <li><a href="<!--#include file='include/fewi_url.html'-->marker">Genes and Markers Query Form</a><br>
 					        <i>Search by symbol, location, gene ontology classification, or phenotype.</i></li>
-					         <li><a href="<!--#include file='include/fewi_url.html'-->allele">Phenotypes, Alleles & Disease Models Query</a><br>
+					         <li><a href="<!--#include file='include/fewi_url.html'-->allele">Phenotypes, Alleles &amp; Disease Models Query</a><br>
 					    	<i>Search for mutations or QTL based on phenotype, human disease,  mutation type, gene, or genome location.</i></li>
 					     <li><a href="<!--#include file='include/fewi_url.html'-->gxd">Gene Expression Data Query</a><br>
 					    	<i>Search for detailed gene expression assay results.</i></li>
@@ -99,21 +99,21 @@
 					        <i>Search for SNPS by strain(s), SNP attributes, genomic position, or associated genes</i></li>
 						<li><a href="<!--#include file='include/fewi_url.html'-->reference">References</a><br>
 						<i>Search curated references by author, journal or text. The output to this form provides the text export option</i></li>
-					  </ul>
+					  </ul></li>
 					  </ul>
 
 					<b><i>FASTA Output from our Web Interface</i></b>
 					<ul>
 					  <li>The FASTA format is available on reports where sequences are returned for a specific gene or when querying sequences.</li>
 					  <li>Click on the checkboxes next to each sequence to select it for FASTA download and click GO.</li>
-					  <li>From a gene detail page, FASTA is available for:</li>
-					      <ul class="softwareUL">
+					  <li>From a gene detail page, FASTA is available for:
+					       <ul class="softwareUL">
 							  <li>Representative genomic, transcript, and polypeptide sequences</li>
 							  <li>All mouse sequences</li>
-							  <li>Human and rat orthologs</li>
-							  <li>Mouse, human, and rat protein sequences for superfamily members</li>
-					      </ul>
-
+							  <li>RefSeq transcript sequences for their human, rat, chimpanzee, rhesus macaque, dog, cattle, chicken, western clawed frog, and zebrafish homologs</li>
+							  <li>Protein sequences for human, rat, chimpanzee, rhesus macaque, dog, cattle, chicken, western clawed frog, and zebrafish homologs</li>
+							  <li>Mouse, human, and rat protein sequences for superfamily members.</li>
+					      </ul></li>
   					</ul>
 				</td>
 			</tr>
@@ -121,7 +121,7 @@
 	</td></tr>
 	<tr><td>
 <!-- prototype table -->
-			<a name="proto"></a>
+			<a id="proto"></a>
 			<table class="outline" width="100%">
 				<tr>
 					<td class="enhance">

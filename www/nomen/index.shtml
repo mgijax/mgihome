@@ -29,7 +29,7 @@
       		</div>
  <!-- end sub 1TOC table -->
  </td></tr>
- <TR><td></td></TR>
+ <tr><td></td></tr>
  <tr><td>
 <!-- create table for first paragraph -->
 	    <div align="center">
@@ -48,8 +48,8 @@ mouse genes, alleles, and strains. Nomenclature follows the rules and guidelines
 <!-- begin rules table -->
 <tr><td>
 
-<a name="rag"></a>
-	    	<table class="outline" width="100%">
+<a id="rag"></a>
+<table class="outline" width="100%">
 
 	<tr><td class="enhance"><b>Rules and Guidelines</b>
 		</td>
@@ -61,7 +61,7 @@ mouse genes, alleles, and strains. Nomenclature follows the rules and guidelines
 			<tr><td valign="top" rowspan="4"><nobr>Genes, Alleles, and Mutations</nobr></td>
 			    <td valign="top">Full Guide</td> <td valign="top"><a href="gene.shtml">Guidelines for Nomenclature of Genes, Genetic Markers, Alleles, and Mutations in Mouse and Rat</a><br>
 			</tr>
-			 <tr><td valign="top"><nobr>Quick Guides</nobr></td><td valign="top"><a name="bnrg"><a href="short_gene.shtml">Quick Guide to Nomenclature for Genes</a><br>
+			 <tr><td valign="top"><nobr>Quick Guides</nobr></td><td valign="top"><a id="bnrg"><a href="short_gene.shtml">Quick Guide to Nomenclature for Genes</a><br>
 			 <a href="allmut_quickhelp.shtml">Quick Guide to Nomenclature for Alleles and Mutations</a></td></tr>
 			 <tr><td valign="top"><nobr>IKMC Guides</nobr></td>
 			 <td><a href="IKMCnomen.shtml">Nomenclature for mutant alleles generated in ES cell lines by the International Knockout Mouse Consortium (IKMC)</a> <!--<img src="<!--#include file='include/mgihome_url.html'-->images/new.gif" " alt="New">--><br>
@@ -75,32 +75,31 @@ mouse genes, alleles, and strains. Nomenclature follows the rules and guidelines
  	   	</td>
 	 	</tr>
 <!-- end rules table-->
-	    	</TABLE>
+	    	</table>
 
-  </TD>
- </TR>
+  </td>
+ </tr>
 <!--filler for blank space between tables-->
- <TR><td></td></TR>
+ <tr><td></td></tr>
 
 <!--begin searches table-->
 <tr><td>
 
-<a name="searches"></a>
-		<table class="outline" width="100%">
+<a id="searches"></a>
+<table class="outline" width="100%">
 
-		<tr><td class="enhance"><b>Searches</b><td></tr>
-		<tr><td>
-
-			<ul>
+	<tr><td class="enhance"><b>Searches</b><td></tr>
+	<tr><td>
+		<ul>
 			<li>Search for existing mouse genes/markers: <a href="<!--#include file='include/fewi_url.html'-->marker">Genes and Markers Query Form </a></li>
-			<li>Search for existing mouse alleles/mutations <a href="<!--#include file='include/fewi_url.html'-->allele">Phenotypes, Alleles & Disease Models Query Form</a></li>
-			<lI>Search for existing mouse strains <a href="<!--#include file='include/wi_url.html'-->external/festing/search_form.cgi">Inbred Strains of Mice and Rats</a></li>
-<li><A HREF="http://ilarlabcode.nas.edu/search_lc_nodep.php">Search</A> or <a href="
+			<li>Search for existing mouse alleles/mutations <a href="<!--#include file='include/fewi_url.html'-->allele">Phenotypes, Alleles &amp; Disease Models Query Form</a></li>
+			<li>Search for existing mouse strains <a href="<!--#include file='include/fewi_url.html'-->inbred_strains" target="_blank">Inbred Strains of Mice and Rats</a></li>
+			<li><a href="http://ilarlabcode.nas.edu/search_lc_nodep.php">Search</a> or <a href="
 http://ilarlabcode.nas.edu/register_code_nodep.php">apply</a> for a Laboratory Registration Code with the <A HREF="http://dels.nas.edu/global/ilar/lab-codes">Institute for Laboratory Animal Research</a> (ILAR).</li>
-		</Ul>
-		</td>
-		</tr>
-		</table>
+		</ul>
+	</td>
+	</tr>
+	</table>
 
 <!--end searches table-->
 </td></tr>
@@ -108,19 +107,19 @@ http://ilarlabcode.nas.edu/register_code_nodep.php">apply</a> for a Laboratory R
 
 <tr><td>
 <!-- begin submissions table -->
-	 <a name="subreg"></a>
+	 <a id="subreg"></a>
 
-	<table class="outline" width="100%">
-
-		<tr><td class="enhance"><b>Submissions/Registrations</b></td></tr>
-		<tr><td><ul>
- 		<li><a href="nomen_submit_form.shtml">Submit</a> a proposed locus symbol</li>
-		<li><a href="<!--#include file='include/mgihome_url.html'-->submissions/amsp_submission.cgi">Submit</a> a new allele/mutant, register a mouse strain name, or submit phenotype data</li>
-		<li><a href="../submissions/amsp_submission_examples.shtml">Submitting Data Files</a> - Instructions and examples</li>
-		</ul>
-		</td>
-		</tr>
-	</TABLE>
+<table class="outline" width="100%">
+	<tr><td class="enhance"><b>Submissions/Registrations</b></td></tr>
+	<tr><td>
+	<ul>
+ 	<li><a href="nomen_submit_form.shtml">Submit</a> a proposed locus symbol</li>
+	<li><a href="<!--#include file='include/mgihome_url.html'-->submissions/amsp_submission.cgi">Submit</a> a new allele/mutant, register a mouse strain name, or submit phenotype data</li>
+	<li><a href="../submissions/amsp_submission_examples.shtml">Submitting Data Files</a> - Instructions and examples</li>
+	</ul>
+	</td>
+	</tr>
+</table>
 
 <!--END SUBMISSIONS TABLE-->
  </td>
@@ -129,25 +128,24 @@ http://ilarlabcode.nas.edu/register_code_nodep.php">apply</a> for a Laboratory R
 <tr><td>
 <!-- begin RESOURCES table -->
 
-	<a name="addl"></a>
-	<table class="outline" width="100%">
+<a id="addl"></a>
+<table class="outline" width="100%">
 	<tr><td class="enhance"><b>Additional Resources</b></td></tr>
-	 <tr><td><ul>
-		<li>
-<A href="<!--#include file="include/ftp_url.html" -->reports/index.html#nomen">MGI Data and Statistical Reports</a>&nbsp; - <i>Includes recent and archived mouse gene nomenclature updates</i></li>
+	 <tr><td>
+	 <ul>
+		<li><a href="<!--#include file='include/wi_url.html'-->downloads/reports/index.html">MGI Data and Statistical Reports</a>&nbsp; - <i>Weekly reports of MGI data </i></li>
 		<li><a href="http://www.genenames.org/">HUGO Gene Nomenclature Committee (HGNC)</a></li>
-		<li><a href="http://www.genenames.org/cgi-bin/genefamilies/">HGNC Gene Families/Grouping
-Nomenclature</a></li>
+		<li><a href="http://www.genenames.org/cgi-bin/genefamilies/">HGNC Gene Families/Grouping Nomenclature</a></li>
 		<li>Search <a href="http://rgd.mcw.edu/">RGD (Rat Genome Database)</a> - <i>rat gene searches</i></li>
 		<li><a href="https://www.jax.org/jax-mice-and-services/customer-support/technical-support/genetics-and-nomenclature">JAX&#174; Mice Nomenclature Tutorial</a></li>
 		<li><a href="../nomen/strain_129.shtml">Mouse Strain 129 Substrain Nomenclature</a> - <i>nomenclature distinguishing different 129 parental lines and related 129 strains</i></li>
 		<li><a href="http://www.imgt.org/">International Immunogenetics Database</a></li>
 		<li><a href="journals.shtml">Journals Enforcing Standard Nomenclature</a></li>
 		<li><a href="hmg_family.shtml">High Mobility Group (HMG) Chromosomal Proteins</a></li>
-		</ul>
-	    </td>
-           </tr>
-	</TABLE>
+	</ul>
+	</td>
+    </tr>
+</table>
 
 <!--END RESOURCES TABLE-->
  </td>
@@ -156,7 +154,7 @@ Nomenclature</a></li>
 <tr><td>
 <!-- begin CONTACTS table -->
 
-	<a name="contacts"></a>
+	<a id="contacts"></a>
 		<table class="outline" width="100%">
 
 		<tr><td class="enhance"><b>Contacts</b></td></tr>
@@ -169,8 +167,5 @@ Nomenclature</a></li>
 </tr>
 </table>
 </div>
-
-
-
 
 <!--#include file='include/templateBodyStop.html'-->
