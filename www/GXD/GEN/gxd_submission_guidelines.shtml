@@ -14,6 +14,25 @@
 </div>
 <!--titleBar-->
 
+<style type="text/css">
+table.table1 {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+table.table1, th, td {
+    border: 1px solid black;
+    
+table.table1 th, td {
+    padding: 8px;
+}
+h3 {
+    
+    font-size: 1.1em;
+    font-weight: bold;
+}
+</style>
+
 <h3>Table of Contents</h3>
    <p>
    <ul>
@@ -68,7 +87,7 @@
 
 <h4><i>a.  Nucleotide probes</i></h4>
 
-<table>
+<table class="table1">
 <tr><th class="thleft"> Probe:</th><td>Please provide the sequence of the probe, either directly or indirectly by citing the corresponding GenBank/EMBL/DDBJ accession number and, if applicable, the start and end nucleotide positions of the probe within that sequence.  If the probe sequence is not known, please provide information to characterize the probe, such as gene, species of origin, sequence type (genomic or cDNA) and region covered (e.g. coding region, 3'UTR).</td></tr>
 <tr><th class="thleft"> Type of probe:</th><td>(e.g. RNA, DNA)</td></tr>
 <tr><th class="thleft"> Label:</th><td>Material used to label the probe (e.g. digoxigenin, P<sup>32</sup>, etc.).</td></tr>
@@ -77,13 +96,13 @@
 
 <h4><i>b.  PCR primers</i></h4>
 
-<table class="outline">
+<table class="table1">
 <tr><th class="thleft"><span style="white-space: nowrap">Primer pairs:</span></th><td>Please provide the sequence of 5' and 3' primers, either directly or indirectly by citing the corresponding GenBank/EMBL/DDBJ accession number and the start and end nucleotide positions of the primers within that sequence.</td></tr>
 </table>
 
 <h4><i>c.  Antibody probes</i></H4>
 
-<table class="outline">
+<table class="table1">
 <tr><th class="thleft">Antibody type</th><td>(e.g. monoclonal or polyclonal)</td></tr>
 <tr><th class="thleft">Antibody class:</th><td> If known (e.g. IgA, IgG<sub>1</sub>).</td></tr>
 <tr><th class="thleft">Antigen:</th> <td> Details about the antigen used to generate the antibody, such as sequence and source (e.g. species, cell line), are helpful in determining the specificity of the antibody.</td></tr>
@@ -96,7 +115,7 @@
 
 <h4><a id="specimen"></a>Specimen Information</h4>
 
-<table>
+<table class="table1">
 <tr><th class="thleft">Strain:</th><td>Background strain of the specimens used.  See <a href="<!--#include file='include/fewi_url.html'-->inbred_strains" target="_blank">Inbred Strains of Mice and Rats</a> for a listing of approved strain names.  If your mice are a mixture, please list the strains that contributed to their makeup.</td></tr>
 <tr><th class="thleft">Mutations: </th><td> If you use mutant mice, please specify the mutant alleles. For tips on determining the official allele symbol, see the <a href="<!--#include file='include/mgihome_url.html'-->nomen/allmut_quickhelp.shtml" target="_blank">Quick Guide to Nomenclature for Alleles and Mutations</a>. Alternatively, you can list the reference that describes the creation of the mutant.</td></tr>
 <tr><th class="thleft"><span style="white-space: nowrap">Embryonic age/Theiler stage:</span></th><td>The embryonic age of the specimen, either in embryonic days or Theiler stage.</td></tr>

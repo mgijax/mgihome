@@ -9,6 +9,20 @@
 </div> 
 <!--titleBar-->
 
+<style type="text/css">
+table.table1 {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+table.table1, th, td {
+    border: 1px solid black;
+    
+table.table1 th, td {
+    padding: 8px;
+}
+</style>
+
 <p>A large degree of genetic diversity among 129 substrains was identified by scientists at The Jackson Laboratory (<a href="https://www.ncbi.nlm.nih.gov/pubmed/9140391">Simpson <i>et al.</i></a>, <i>Nature Genetics</i> 16:19-27, 1997), and subsequently by investigators at Case Western Reserve University (<a href="https://www.ncbi.nlm.nih.gov/pubmed/9166580">Threadgill <i>et al</i>.</a>, <i>Mammalian Genome</i> 8:390-393, 1997). Because of the importance of 129 mice in creating &quot;knockout&quot; and other targeted mutant mice, the <i>International Committee on Standardized Genetic Nomenclature for Mice</i> introduced a nomenclature to distinguish different 129 parental lines and related 129 strains.</p>
 
 <p>The overall result was a change in 129 nomenclature that specifies groups of strains related by their common parental lineage. The major parental lineages include:
@@ -28,27 +42,27 @@ names and such strains are designated simply 129 or B6;129. Information below, t
 Festing, <i>et al</i>., (<i>Mammalian Genome</i>, 10:836, 1999), further describes the
 rationale behind the nomenclature changes. Mouse Genome Informatics updates the nomenclature table; the most recent revision occurred in March, 2009.</p>
 <hr>
-<H3 ALIGN="CENTER">Revised nomenclature for strain 129 mice</h3>
-<P ALIGN="CENTER">Michael FW Festing (1), Elizabeth M Simpson (2), Muriel T Davisson (2), Larry E Mobraaten(2).</p>
-<P ALIGN="CENTER">(1) MRC Toxicology Unit, University of Leicester, PO Box 138, Leicester LE1 9HN, UK. (2) The Jackson Laboratory, Bar Harbor, Maine, USA.</p>
-<h4>Need for revised nomenclature</h4>
+<h3 style="font-size: 1.2em;"><b>Revised nomenclature for strain 129 mice</b></h3>
+<p>Michael FW Festing (1), Elizabeth M Simpson (2), Muriel T Davisson (2), Larry E Mobraaten(2).</p>
+<p>(1) MRC Toxicology Unit, University of Leicester, PO Box 138, Leicester LE1 9HN, UK. (2) The Jackson Laboratory, Bar Harbor, Maine, USA.</p>
+<h4><b>Need for revised nomenclature</b></h4>
 <p>Two papers (<a href="https://www.ncbi.nlm.nih.gov/pubmed/9140391">Simpson <i>et al.</i></a>, 1997; <a href="https://www.ncbi.nlm.nih.gov/pubmed/9166580">Threadgill <i>et al</i>.</a>, 1997) have shown that there is substantial genetic variation among substrains of this important inbred strain. Some of this has apparently arisen as a result of genetic contamination, and the rest appears to be due to residual heterozygosity and/or "contaminant" alleles introduced during various backcrossing programs such as in the production of congenic strains carrying Steel and susceptibility to teratomas.</p>
 <p>Correct identification and designation of substrains is essential if the genotype of the
  mouse strain is to be matched accurately with an appropriate embryonic stem cell line in the development of "knockout" strains. Substrains 129/SvJ and 129/SvJae are very different, but this is not immediately obvious even to someone with a good understanding of nomenclature rules. Moreover, some substrains can only be accurately identified using nomenclature involving quite complex gene symbols. Thus, in view of the widespread use of these strains by people with little understanding of genetic nomenclature, it seemed sensible to introduce new, simpler nomenclature which minimizes future misunderstandings, particularly as investigators have sometimes referred to different substrains as simply "129," adding further confusion.</p>
 
-<h3>The nomenclature</h3>
+<h3><b>The nomenclature</b></h3>
 <p>The following nomenclature is approved by the <I>International Committee on Standardized Genetic Nomenclature for Mice</I>. The aim is to provide short symbols that distinguish different substrains when they are abbreviated from the frequently long and complicated substrain symbols, either in common usage or in manuscripts. The nomenclature is based on the substrains identified and defined in terms of microsatellite markers by Simpson <i>et al</i>., (1997). A letter and a number <I>in front of the slash</I> now identify each of the substrains. The letter is either P, S, T or X indicating whether it is a "Parental," "Steel," "Ter" (i.e., susceptible to teratomas), or a genetically-contaminated "X" substrain, respectively. A number is used to differentiate between substrains within each grouping, working from left to right in Fig. 2 of Simpson <i>et al</i>., (1997). All existing substrain symbols and gene symbols are retained. The only change is the introduction of a letter and a number in front of the slash. <!--A genuine congenic strain such as 129/Re-<I>Lama2<SUP>dy</I></SUP> will take the strain designation of its partner, i.e. it will be designated 129P1/Re-<I>Lama2<SUP>dy</I></SUP>. This nomenclature change is equivalent to that used to distinguish between RIII and RIIIS, where the latter differs substantially from the former.--></p>
 <p>Table 1 shows the nomenclature for each substrain. Note that 129/Sv (JR000094), which exists as frozen embryos and was discovered to be heterozygous at many loci, is not included on this list as it is clearly not an inbred strain. 129/SvEms-<i>Ter<sup>+</sup></i>/J (JR002065) and 129/SvEms-<i>Ter<sup>+</sup></i> (JR002064) are presumed to be genetically identical.</p>
 
-<h4>References</h4>
+<h4><b>References</b></h4>
 <p>Simpson E. M., Linder C. C., Sargent E. E., Davisson M. T., Mobraaten L. E., and Sharp J. J. (1997) Genetic variation among 129 substrains and its importance for targeted mutagenesis in mice. <I>Nat Genet</I> <B>16</B>, 19-27.</p>
 
 <p>Threadgill D. W., Yee D., Matin A., Nadeau J. H., and Magnuson T. (1997) Genealogy of the 129 inbred strains: 129/SvJ is a contaminated inbred strain. <I>Mamm Genome</I> <b>8</b>: 390-393.</p>
 
-<h4>Table 1. &nbsp;Nomenclature for the 129 inbred mouse strains</h4>
+<h3 style="font-size: 1.2em;"><b>Table 1. &nbsp;Nomenclature for the 129 inbred mouse strains</b></h3>
 
 <blockquote>
-<table>
+<table class="table1">
 <tr>
 <th>Strain Designation<br>(Former Designation)</th>
 <th>Abbreviated Designation</th>
