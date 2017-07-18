@@ -22,12 +22,11 @@ table.table1 {
 
 table.table1, th, td {
     border: 1px solid black;
-    
-table.table1 th, td {
-    padding: 8px;
+    padding: 6px;  
 }
-h3 {
-    
+tr:nth-child(even){background-color: #f2f2f2}
+
+h3 {   
     font-size: 1.1em;
     font-weight: bold;
 }
@@ -130,7 +129,7 @@ h3 {
 <h3><a id="experiment"></a>Experimental Results</h3>
 
 <h4>Images</h4>
-<p>The preferred format is JPEG, although you can use most other formats (TIFF, GIF, PIC) as well.  Saving images at a resolution of 72 pixels/inch provides satisfactory results;  in addition, for Photoshop images, maximum quality (Image Option setting 10-12) is the best choice. </p>
+<p>The preferred format is JPEG, although you can use most other formats (TIFF, PNG, GIF, PIC) as well.  Saving images at a resolution of 72 pixels/inch provides satisfactory results;  in addition, for Photoshop images, maximum quality (Image Option setting 10-12) is the best choice. </p>
 <b>Description of Expression Results</b><br>
 <p>When coding your expression data, we will rely on your descriptions of the assay results.  We will not interpret your staining patterns, bands, etc.  Therefore, please describe the expression results obtained in each image. This can be done in the form of a conventional figure legend. Or you can provide the information in tabular form by specifying the anatomical structures examined, the level of expression seen in those structures (e.g. present, absent, weak, strong), and additional descriptions of the staining that you consider to be valuable (for example, staining was seen in the most anterior portion of the structure). If your description refers to several images, you must clearly indicate which expression results are shown in which images.</p>
 
