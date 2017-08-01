@@ -10,8 +10,6 @@
   	<meta name="robots" content="NOODP" />
   	<meta name="robots" content="NOYDIR" />
   	
-</head>
-<body>
 
 <style type="text/css">
 
@@ -50,10 +48,14 @@ td.right {
   text-align: right;
  }
  tr.stripe {
-  background: #d3d3d3;
+  background: #f2f2f2;
 }
 
 </style>
+
+</head>
+
+<body>
 
 <!--#include file='include/templateHead.html'-->  
 <title>MGI-Nomenclature for mutant alleles generated in ES cell lines by the International Knockout Mouse Consortium (IKMC)</title>
@@ -65,7 +67,7 @@ td.right {
   </div> 
 <!--titleBar-->
 
-<A NAME="top"></A><br></br>
+<a id="top"></a><br>
 
 <p>The goal of the IKMC is to mutate all protein-coding genes in the mouse using gene trapping and gene targeting in C57BL/6N-derived ES cells. This document specifies the allele nomenclature for this subset of mouse gene mutations. For the complete guidelines for naming genes, alleles, and mutations, visit the <a href="gene.shtml">Guidelines for Nomenclature of Genes, Genetic Markers, Alleles, and Mutations in Mouse and Rat</a>.
 </p>
@@ -82,11 +84,11 @@ td.right {
 <p>In some cases, derivative alleles can be generated from the primary mutant allele. Nomenclature for derivative forms is also described below. Schematics of the molecular structure of IKMC alleles are shown on this <a href="IKMC_schematics.shtml">page</a>.
 </p>
 
-<h2><font size="+1"><b>Symbols and Names for IKMC alleles</b></font></h2>
-<br></br>
+<h2 style="font-size: 1.2em;"><b>Symbols and Names for IKMC alleles</b></h2>
+<br>
 <!--start IKMC abbreviations table-->
 <table>
-	<tr><th class="center" colspan="3"><p><font size="+1"><u>IKMC Abbreviations</u></font></p></th></tr>
+	<tr><th class="center" colspan="3"> <span style="text-decoration: underline;">IKMC Abbreviations</span></th></tr>
 	<tr>
 		<th style align="left" >Nomenclature Abbreviations&nbsp;&nbsp;</th>
 		<th class="center">IKMC Project</th>
@@ -99,7 +101,7 @@ td.right {
 	</tr>
 	<tr>
 		<td>EUCOMM</td>
-		<td>European Conditional Mouse Mutagenesis (EUCOMM) & EUCOMMMtools (Europe)&nbsp;&nbsp;</td>
+		<td>European Conditional Mouse Mutagenesis (EUCOMM) &amp; EUCOMMMtools (Europe)&nbsp;&nbsp;</td>
 		 <td class="right">Hmgu, Wtsi</td>
 	<tr class="stripe">
 		<td>NCOM</td> 
@@ -108,14 +110,14 @@ td.right {
 	</tr>
 	<tr>
 		<td>TIGM</td>
-		<td>Texas A & M Institute for Genomic Medicine (TIGM)</td>
+		<td>Texas A &amp; M Institute for Genomic Medicine (TIGM)</td>
 		 <td class="right">Tigm</td>
 	</tr>
 </tr>
 </table>
 <!--end IKMC abbreviations table-->
-<br></br>
-<h4><a name="trapped"></a><b>1. Gene Trapped Alleles.</b></h4>
+<br>
+<h4><a id="trapped"></a><b>1. Gene Trapped Alleles.</b></h4>
 
 <p>Symbols for gene trapped alleles follow the format:  Gene-symbol<sup>Gt(mutant cell line ID)Labcode</sup>
 </p>
@@ -141,7 +143,7 @@ td.right {
 		<tr>
 			<td>Examples:&nbsp;&nbsp;</td>
 			<td><a href="<!--#include file='include/fewi_url.html'-->accession/MGI:4072882"><i>Rnd3<sup>Gt(IST12405G10)Tigm</sup></i></a>&nbsp;&nbsp;&nbsp;</td>
-			<td>Rho family GTPase 3; gene trap IST12405G10, Texas A&M Institute for Genomic Medicine</td>
+			<td>Rho family GTPase 3; gene trap IST12405G10, Texas A&amp;M Institute for Genomic Medicine</td>
 		</tr>
 		<tr>
 			<td></td>
@@ -162,7 +164,7 @@ td.right {
 			<td>gene trap</td>
 		</tr>
 		<tr>
-			<td><nobr>(cell line ID)&nbsp;&nbsp;&nbsp;</nobr></td>
+			<td><span style="white-space: nowrap">(cell line ID)&nbsp;&nbsp;&nbsp;</span></td>
 			<td>enclosed in parentheses, the mutant ES cell line ID</td>
 		</tr>
 		<tr>
@@ -181,13 +183,12 @@ td.right {
 			</td>
 		</tr>
 	</table>
-	</p>
-</p>
 </blockquote>
+</p>
 
-<A HREF="#top">Top</A><br></br>
+<p style="font-size: 0.9em;"><a href="#top">Top</a></p>
 
-<h4><a name="reporter"></a><b>2. Targeted Reporter-tagged Deletion Alleles.</b></h4>
+<h4><a id="reporter"></a><b>2. Targeted Reporter-tagged Deletion Alleles.</b></h4>
 
 <p>These alleles follow the same nomenclature as all targeted alleles, with the exception that, because these alleles were generated in a large mutagenesis program, a project designation is given in parentheses. The format for these deletion alleles is:
 </p>
@@ -228,7 +229,7 @@ Gene-symbol<sup>tm#(project abbreviation)Labcode</sup>
 		(A)   One included a LacZ reporter and a loxP-flanked neomycin cassette (Vlcg lab code).<br>
 		(B)   The other also included two FRT sites in the arrangement: FRT - LacZ – loxP – neo – FRT - loxP (Mbp and Wtsi lab codes).<br>
 	 	Both types of tm1 alleles can generate a tm1.1 derivative allele through cre excision, which will remove the neo cassette from the locus. The designation for the cre-excised deletion allele changes the tm# portion of the allele symbol to tm#.1<br>
-	 	</blockquote><br></br>
+	 	</blockquote><br>
 	 <table class="noBorderTable">
 		<tr>
 			<td>Examples:&nbsp;&nbsp;</td>
@@ -243,6 +244,7 @@ Gene-symbol<sup>tm#(project abbreviation)Labcode</sup>
 	</table>
 	<p>The second variation (Mbp and Wtsi lab codes) allows another derivative allele to be created using, instead, flp-mediated excision. This excision removes both LacZ and neo from the locus. This derivative allele changes the tm# portion of the allele symbol to tm#.2
 	</p>
+	<blockquote>
 	<table class="noBorderTable">
 		<tr>
 			<td>Example:&nbsp;&nbsp;</td>
@@ -253,9 +255,9 @@ Gene-symbol<sup>tm#(project abbreviation)Labcode</sup>
 </blockquote>
 
 <br>
-<A HREF="#top">Top</A><br></br>
+<p style="font-size: 0.9em;"><a href="#top">Top</a></p>
 
-<h4><a name="tm1a"></a><b>3. Targeted Knockout First, Reporter-tagged Insertion with Conditional Potential (conditional-ready).</b></h4>
+<h4><a id="tm1a"></a><b>3. Targeted Knockout First, Reporter-tagged Insertion with Conditional Potential (conditional-ready).</b></h4>
 
 <p>These alleles may contain a promoter or be promoterless. In the promoter-driven version, a critical exon is flanked by loxP sites, with upstream elements including FRT – LacZ – loxP – neo – FRT.  Further allele modification is possible with cre- or flp-mediated recombination (see derivative alleles below). The format for these conditional-ready alleles is:
 </p>
@@ -284,7 +286,6 @@ Gene-symbol<sup>tm#a(project abbreviation)Labcode</sup>
 			<td><a href="<!--#include file='include/fewi_url.html'-->accession/MGI:4840725"><i>Cc2d1a<sup>tm1a(KOMP)Mbp</sup></i></a>&nbsp;&nbsp;&nbsp;</td>
 			<td>coiled-coil and C2 domain containing 1A; targeted mutation 1a, Mouse Biology Program, UCDavis</td>
 		</tr>
-	</table>
 	</table>
 </blockquote>
 
@@ -346,7 +347,7 @@ Gene-symbol<sup>tm#a(project abbreviation)Labcode</sup>
 			<td><a href="<!--#include file='include/fewi_url.html'-->accession/MGI:5513840"><i>Zfp260<sup>tm1c(NCOM)Mfgc</sup></i></a>&nbsp;&nbsp;&nbsp;</td>
 			<td>zinc finger protein 260; targeted mutation 1c, Mammalian Functional Genomics Centre</td>
 		</tr>
-	</table><br></br>
+	</table><br>
 	</li>
 	<li>Gene-symbol<sup>tm#d(project abbreviation)Labcode</sup> is created when the tm1c allele undergoes cre-mediated recombination, which removes the critical exon(s), leaving behind a single FRT and a single loxP site.
 	<blockquote>
@@ -378,11 +379,9 @@ Gene-symbol<sup>tm#a(project abbreviation)Labcode</sup>
 	</li>
 </ol>
 
+<p style="font-size: 0.9em;"><a href="#top">Top</a></p>
 
-
-<A HREF="#top">Top</A><br></br>
-
-<h4><a name="tm1e"></a><b>4. Targeted Knockout First, Reporter-tagged Insertion NON-conditional.</b></h4>
+<h4><a id="tm1e"></a><b>4. Targeted Knockout First, Reporter-tagged Insertion NON-conditional.</b></h4>
 
 <p>These alleles are the same as those described above for the <b>tm1a</b> type allele, except that they have lost the loxP site downstream of the critical exon, so they are no longer conditional. The format for these NON-conditional alleles is: 
 </p>
@@ -475,9 +474,9 @@ Gene-symbol<sup>tm#e(project abbreviation)Labcode</sup>
 	</li>
 </ol>
 
-<A HREF="#top">Top</A><br></br>
+<p style="font-size: 0.9em;"><a href="#top">Top</a></p>
 
-<h4><a name="intron"></a><b>5. Targeted Knockout First Alleles with Artificial Introns.</b></h4>
+<h4><a id="intron"></a><b>5. Targeted Knockout First Alleles with Artificial Introns.</b></h4>
 
 <p>For genes that are very small or contain only a single exon, vector designs to make conditional-ready alleles fail (requires a critical exon). Conditional knockout first alleles for such genes can be made by introducing an artificial intron into which the targeting cassette is imbedded. The ‘second’ exon (1b) is then used as the critical exon.
 </p>
@@ -486,7 +485,7 @@ Gene-symbol<sup>tm#e(project abbreviation)Labcode</sup>
 	</p>
 	<table class="noBorderTable">
 		<tr>
-			<td><nobr>tm#a or tm#e&nbsp;&nbsp;</nobr></td>
+			<td><span style="white-space: nowrap">tm#a or tm#e&nbsp;&nbsp;</span></td>
 			<td>tm for targeted mutation, followed by a serial number and an ‘a’ indicating an allele of the ‘knockout first, conditional-ready’ type or ‘e’ indicating a non-conditional knockout allele (same as in <a href="#tm1a">section 3</a> and <a href="#tm1e">4</a> above)</td>
 		</tr>
 		<tr>
@@ -506,9 +505,9 @@ Gene-symbol<sup>tm#e(project abbreviation)Labcode</sup>
 	</ol>
 </blockquote>
 
-<A HREF="#top">Top</A><br></br>
+<p style="font-size: 0.9em;"><a href="#top">Top</a></p>
 
-<h4><a name="cre"></a><b>6. Targeted cre Knockin Alleles.</b></h4>
+<h4><a id="cre"></a><b>6. Targeted cre Knockin Alleles.</b></h4>
 
 <p>The EUCOMMtools project creates targeted, cre knockin alleles that expand the available worldwide cre resources. These alleles follow the same nomenclature as other knockin alleles.
 </p>
@@ -533,14 +532,14 @@ Gene-symbol<sup>tm#e(project abbreviation)Labcode</sup>
 	<table class="noBorderTable">
 		<tr>
 			<td>Example:&nbsp;&nbsp;</td>
-			<td><nobr><i>Hprt<sup>tm1(Cbx1-cre/ERT2)Hmgu</sup></i></nobr>&nbsp;&nbsp;&nbsp;</td>
+			<td><span style="white-space: nowrap"><i>Hprt<sup>tm1(Cbx1-cre/ERT2)Hmgu</sup></i></span>&nbsp;&nbsp;&nbsp;</td>
 			<td>A hypothetical targeted knockin at the <i>Hprt</i> locus. The knocked in
 		portion contains promoter sequences from <i>Cbx1</i> driving cre/ERT2</td>
 		</tr>
 	</table>
 </blockquote>
 
-<A HREF="#top">Top</A>
+<p style="font-size: 0.9em;"><a href="#top">Top</a></p>
 
 <!--#include file='include/templateBodyStop.html'--> 
 </body>

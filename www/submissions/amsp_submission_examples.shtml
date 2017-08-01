@@ -41,22 +41,20 @@ file should be named in parallel with its associated image. For example, Xyz1ima
 <p><a href="<!--#include file='include/fewi_url.html'-->image/MGI:3712121"><!--#include file='include/fewi_url.html'-->image/MGI:3712121</a></p>
 
 <h3>Experimental Data</h3>
-<p>Data tables can be submitted as tab-delimited text or in Excel format. The first row should include column labels. An accompanying file should describe experimental conditions and the animals used, as well as definitions for each data row and
-column.</p>
+<p>Data tables can be submitted as tab-delimited text or in Excel format. The first row should include column labels. An accompanying file should describe experimental conditions and the animals used, as well as definitions for each data row and column.</p>
 
 <h4>Example 1:</h4>
 
 Example data file:
 <table border=1 cellspacing=1 cellpadding=3 width="!">
- <tr><th>Blood Parameters</th><th>Age (months)</th><th>Sex</th><th>Atr1a&lt;+&gt;/ Atr1a&lt;+&gt;</th><th>Number of mice</th><th>Atr1a&lt;tm1Ecl&gt;/<br>Atr1a&lt;tm1Ecl&gt</th><th>Number of mice</th><th>p-value compared to wild-type</th></tr>
- <tr><td>Hematocrit (%)</td><td>6.5-9.0</td><td>combined</td><td>36.6 +/- 1.4</td><td>10</td><td>41.1 +/- 1/2</td><td align="justify">10</td><td>&lt;0.05</td></tr>
- <tr><td>RBC (10*6/<i>&micro;</i>l)</td><td>6.5-9.0</td><td>combined</td><td>7.6 +/- 0.2</td><td>10</td><td>8.9 +/- 0.3</td><td align="justify">10</td><td>&lt;0.01</td></tr>
- <tr><td> Hemoglobin (g/dl)</td><td>6.5-9.0</td><td>combined</td><td>12.5 +/- 0.4</td><td>10</td><td>14.1 +/- 0.4</td><td align="justify">10</td><td>&lt;0.05</td></tr>
- <tr><td><nobr>Plasma proteins (g/l)</nobr></td><td>6.5-9.0</td><td>combined</td><td>37.9 +/- 1.7</td><td>8</td><td>38.7 +/- 2.4</td><td align="justify">7</td><td>NS</td></tr>
+ <tr><th>Blood Parameters</th><th>Age (months)</th><th>Sex</th><th>Atr1a&lt;+&gt;/ Atr1a&lt;+&gt;&nbsp;&nbsp;</th><th>Number of mice&nbsp;&nbsp;</th><th>Atr1a&lt;tm1Ecl&gt;/<br>Atr1a&lt;tm1Ecl&gt;&nbsp;&nbsp;</th><th>Number of mice&nbsp;&nbsp;</th><th>p-value compared to wild-type</th></tr>
+ <tr><td>Hematocrit (%)</td><td>6.5-9.0</td><td>combined</td><td>36.6 +/- 1.4</td><td>10</td><td>41.1 +/- 1/2</td><td>10</td><td>&lt;0.05</td></tr>
+ <tr><td>RBC (10*6/<i>&micro;</i>l)</td><td>6.5-9.0</td><td>combined</td><td>7.6 +/- 0.2</td><td>10</td><td>8.9 +/- 0.3</td><td>10</td><td>&lt;0.01</td></tr>
+ <tr><td> Hemoglobin (g/dl)</td><td>6.5-9.0</td><td>combined</td><td>12.5 +/- 0.4</td><td>10</td><td>14.1 +/- 0.4</td><td>10</td><td>&lt;0.05</td></tr>
+ <tr><td><span style="white-space: nowrap">Plasma proteins (g/l)</span></td><td>6.5-9.0</td><td>combined</td><td>37.9 +/- 1.7</td><td>8</td><td>38.7 +/- 2.4</td><td>7</td><td>NS</td></tr>
 </table>
 
-
-<p><u>Example accompanying description file:</u><br>
+<p><span style="text-decoration: underline;">Example accompanying description file:</span><br>
 Title: Blood parameters for Atr1a wild-type vs. homozygous mutant mice.<br>
 Publication: PMID: 17607364. Billet S et al., &quot;Gain-of-function mutant of angiotensin
 II receptor, type 1A, causes hypertension and cardiovascular fibrosis in
@@ -65,11 +63,9 @@ mice.&quot; J Clin Invest 2007 Jul;117(7):1914-25.</p>
 <p>Experimental measurements were done on a mixed genetic background of 129S2 and C57BL/6 using age and
 sex-matched homozygous mutants and homozygous wild-type littermate controls.</p>
 
-
 <p>Plasma protein was measured using an Olympus multiparametric autoanalyzer. Hemoglobin,
 red blood cell concentration, and hematocrit were determined using a Beckman
 Coulter MAXM automatic analyzer. Values are expressed as mean count +/- SEM.</p>
-
 
 <p>Definitions for table column labels:<br>
 Blood Parameters: name of blood parameter with units of measure in parentheses.<br>
@@ -89,7 +85,7 @@ Example data file:
 <table border=1 cellspacing=2 cellpadding=3 width="99%">
  <tr><th>Genotype</th><th>Alleles</th><th>Sex</th><th>Procedure</th><th>Parameter</th><th>Term (MP)</th><th>Evidence</th></tr>
 
-<tr><td><nobr>129P2/OlaHsd-Fbl3&lt;Gt(CB0226)Wtsi&gt;/H</nobr></td>
+<tr><td><span style="white-space: nowrap">129P2/OlaHsd-Fbl3&lt;Gt(CB0226)Wtsi&gt;/H</span></td>
 <td>Fbl3&lt;Gt(CB0226)Wtsi/ <br>Fbl3&lt;Gt(CB0226)Wtsi
 </td><td>combined</td>
 <td>Modified SHIRPA</td>
@@ -108,8 +104,7 @@ Example data file:
 </tr>
 </table>
 
-
-<p><u>Example accompanying description file</u><br>
+<p><span style="text-decoration: underline;">Example accompanying description file</span><br>
 
 Title: Mutant phenotypes seen in 129P2/OlaHsd-Fbl3&lt;Gt(CB0226)Wtsi&gt;/H homozygotes
 compared to baseline 129P2/OlaHsd strain.<br>
@@ -124,8 +119,8 @@ scientific contributors or curation experts.</p>
 Genotype: full animal strain designation<br>
 Alleles: allele composition of mutant animals, in this case homozygous for Fbl3&lt;Gt(CB0226)Wtsi<br>
 Sex: combined; values for males and females were not different, thus results were combined<br>
-Procedure: named procedures from EUMODIC/EUMORPHIA. SOPs available at <a
-href="http://empress.har.mrc.ac.uk/">http://empress.har.mrc.ac.uk/</a></br>
+Procedure: named procedures from EUMODIC/EUMORPHIA. SOPs available at 
+<a href="http://empress.har.mrc.ac.uk/">http://empress.har.mrc.ac.uk/</a><br>
 Parameter: named parameter that is being measured<br>
 Term (MP): phenotype descriptive term from the Mammalian Phentoype Ontology with its ID<br>
 Evidence: inferred evidence indicates that the assignment of the MP term was done
