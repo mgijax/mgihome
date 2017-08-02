@@ -2,6 +2,16 @@
 <title>MGI-Quick Guide to Nomenclature for Alleles and Mutations</title>
 
 <!--#include file='include/templateBodyStart.html'--> 
+
+<style type="text/css">
+
+h3 {   
+    font-size: 1.1em;
+    font-weight: bold;
+}
+
+</style>
+
 <!-- Title Bar -->
 <div id="titleBarWrapper">
   <span class="titleBarMainTitle">Quick Guide to Nomenclature for Alleles and Mutations</span>
@@ -9,91 +19,78 @@
 </div> 
 <!--titleBar-->
 
-
-<H3>A note on gene and allele assignments:</H3>
-<P>
-A new heritable phenotypic allele may be an allele of a known gene or an allele
-of a previously unknown gene.
-<UL>
-<LI> if an allele of a known gene, an allele symbol and allele name will be assigned.
-<LI> if an allele of an unknown gene, a gene symbol and gene name will be assigned.
-</UL>
-<B> Example:</B> You discover a new spontaneous phenotypic allele that looks "shaker like," but with a somewhat milder phenotype.
-<UL>
-<LI>Case 1, above: Upon testing, it is determined to be an allele of the
-<A HREF="<!--#include file='include/fewi_url.html'-->marker/MGI:1261811">
-Myo15</A> gene.
- It is assigned the allele symbol Myo15<SUP>sh2m</SUP>, where the "sh2m" designates it as an allele, and the name "shaker 2 mild" becomes its allele name.<P>
-<LI> Case 2, above: Upon testing, it is determined to be an allele of a new gene;
-it is not allelic to other mutant alleles with similar phenotype. It is assigned a new gene symbol "shl" and named "shaker like." Once this gene is cloned or functionally identified, the shl designation will become an allele designation.
-For instance, if the gene is determined to be Xyz, then this allele becomes Xyz<SUP>shl</SUP>.
-</UL>
-<BR>
+<h3>A note on gene and allele assignments:</h3>
+<p>
+A new heritable phenotypic allele may be an allele of a known gene or an allele of a previously unknown gene.</p>
+<ul>
+ <li> if an allele of a known gene, an allele symbol and allele name will be assigned.</li>
+ <li> if an allele of an unknown gene, a gene symbol and gene name will be assigned.</li>
+</ul>
+<p><b>Example:</b> You discover a new spontaneous phenotypic allele that looks "shaker like," but with a somewhat milder phenotype.</p>
+<ul style="line-height:1.5;">
+  <li>Case 1, above: Upon testing, it is determined to be an allele of the
+<a href="<!--#include file='include/fewi_url.html'-->marker/MGI:1261811">
+Myo15</a> gene. It is assigned the allele symbol Myo15<sup>sh2m</sup>, where the "sh2m" designates it as an allele, and the name "shaker 2 mild" becomes its allele name.</li>
+  <li>Case 2, above: Upon testing, it is determined to be an allele of a new gene;
+it is not allelic to other mutant alleles with similar phenotype. It is assigned a new gene symbol "shl" and named "shaker like." Once this gene is cloned or functionally identified, the shl designation will become an allele designation. For instance, if the gene is determined to be Xyz, then this allele becomes Xyz<sup>shl</sup>.</li>
+</ul>
+<br>
 <HR>
-<H3>Basic rules for naming alleles </H3>
-<UL>
-<LI>Gene and allele designations are italicized in published articles.<BR><BR>
-<LI>The current list of approved <A HREF="http://ilarlabcode.nas.edu/search_lc_nodep.php">lab codes</A> is
-available from <A HREF="http://dels.nas.edu/global/ilar/lab-codes">ILAR</A> (Institute of Laboratory Animal Resources).<BR><BR>
-<LI>For more detail and additional special case rules, see <A HREF="gene.shtml#navsma">Names and Symbols for Variant and Mutant Alleles</A><!--in <a href="gene.shtml">Rules for Nomenclature of Genes, Genetic Markers, Alleles, and Mutations in Mouse and Rat</a>-->.
-</UL>
-<BR>
-For designating mutants that are alleles of <B>new</B> genes (Case 2 above),
-see <A HREF="short_gene.shtml">Quick Guide to Nomenclature for Genes</A>.
-<P>
-For designating mutants that are alleles of <B>known</B> genes, the basic guidelines are:
-<P>
-<OL>
-<LI>Allele designations begin with a letter and contain alphanumeric characters. Punctuation marks occur in certain cases  where they convey meaning.<BR><BR>
-<LI> Allele designations appear as superscripted short alphanumeric strings following the gene symbol of which they are an allele and serve as an acronym for the allele name.
+<h3>Basic rules for naming alleles </h3>
+<ul style="line-height:1.5;">
+  <li>Gene and allele designations are italicized in published articles.</li>
+  <li>The current list of approved <a href="http://ilarlabcode.nas.edu/search_lc_nodep.php">lab codes</a> is
+available from <a href="http://dels.nas.edu/global/ilar/lab-codes">ILAR</a> (Institute of Laboratory Animal Resources).</li>
+  <li>For more detail and additional special case rules, see <a href="gene.shtml#navsma">Names and Symbols for Variant and Mutant Alleles</a><!--in <a href="gene.shtml">Rules for Nomenclature of Genes, Genetic Markers, Alleles, and Mutations in Mouse and Rat</a>-->.</li>
+</ul>
+
+<p>For designating mutants that are alleles of <b>new</b> genes (Case 2 above), see <a href="short_gene.shtml">Quick Guide to Nomenclature for Genes</a>.</p>
+<p>For designating mutants that are alleles of <b>known</b> genes, the basic guidelines are:
+</p>
+<ol style="line-height:1.5;">
+  <li>Allele designations begin with a letter and contain alphanumeric characters. Punctuation marks occur in certain cases  where they convey meaning.</li>
+  <li> Allele designations appear as superscripted short alphanumeric strings following the gene symbol of which they are an allele and serve as an acronym for the allele name.
 <EM> Example:</EM>
-<A HREF="<!--#include file='include/java_url.html'-->WIFetch?page=alleleDetail&key=195">Atp7a<SUP>Mo</SUP></a>
- or <A HREF="<!--#include file='include/java_url.html'-->WIFetch?page=alleleDetail&key=544">Egfr<SUP>tm1Mag</SUP></a>.<BR><BR>
-<LI>For allele designations for <B>spontaneous</B> and <b>induced</b> alleles of <B>known</B> genes... <BR>
-<UL><BR>
-<LI>Allele designations begin with a lower case letter if the allele is a recessive
+<a href="<!--#include file='include/fewi_url.html'-->accession/MGI:1856096">Atp7a<sup>Mo</sup></a>
+ or <a href="<!--#include file='include/fewi_url.html'-->accession/MGI:1856402">Egfr<sup>tm1Mag</sup></a>.</li>
+  <li>For allele designations for <b>spontaneous</b> and <b>induced</b> alleles of <b>known</b> genes... 
+  <ul>
+    <li>Allele designations begin with a lower case letter if the allele is a recessive
 and begin with a capital letter otherwise.
 <EM> Example:</EM>
-<A HREF="<!--#include file='include/java_url.html'-->WIFetch?page=alleleDetail&key=1259">Wnt3a<SUP>vt</SUP></a>
-  is the allele symbol for the <I>recessive</I> vestigal tail allele of the
-  <A HREF="<!--#include file='include/fewi_url.html'-->marker/MGI:98956">Wnt3a</a> gene, while
-
-<A HREF="<!--#include file='include/java_url.html'-->WIFetch?page=alleleDetail&key=195">Atp7a<SUP>Mo</SUP></a>
+<a href="<!--#include file='include/fewi_url.html'-->accession/MGI:1857088">Wnt3a<sup>vt</sup></a>
+  is the allele symbol for the <I>recessive</I> vestigial tail allele of the
+  <a href="<!--#include file='include/fewi_url.html'-->marker/MGI:98956">Wnt3a</a> gene, while
+<a href="<!--#include file='include/fewi_url.html'-->accession/MGI:1856096">Atp7a<sup>Mo</sup></a>
 is the allele symbol for the <I>dominant</I> mottled allele of the
-  <A HREF="<!--#include file='include/fewi_url.html'-->marker/MGI:99400">Atp7a</a> gene. <BR><BR>
-<LI>If an allele is part of an allelic series, a serial number and lab code are part of its designation.
- Each laboratory has its own numbering series.
+  <a href="<!--#include file='include/fewi_url.html'-->marker/MGI:99400">Atp7a</a> gene. </li>
+   <li>If an allele is part of an allelic series, a serial number and lab code are part of its designation. Each laboratory has its own numbering series.
 <EM> Example:</EM>
-<A HREF="<!--#include file='include/java_url.html'-->WIFetch?page=alleleDetail&key=61">Tyr<SUP>c-4J</SUP></a>
+<a href="<!--#include file='include/fewi_url.html'-->accession/MGI:1855986">Tyr<sup>c-4J</sup></a>
  is the 4th albino allele in the series discovered at The Jackson Laboratory (J) for the
- <A HREF="<!--#include file='include/fewi_url.html'-->marker/MGI:98880">Tyr</a> gene;
-<A HREF="<!--#include file='include/java_url.html'-->WIFetch?page=alleleDetail&key=2715">T<SUP>39H</SUP></a> is the 39th mutation of <A HREF="<!--#include file='include/fewi_url.html'-->marker/MGI:98472">T</a>
- from Harwell (H). This particular T allele was discovered in Harwell's ENU mutagenesis program.
-</UL>
-<P>
-<LI>Allele designations for <B>transgenic</B> and <B>targeted</B> alleles of <B>known</B> genes... <BR>
-<UL><BR>
-<LI> Tg(YYY)#Zzz for <B>transgenic alleles</B>, where YYY is the inserted gene,
+ <a href="<!--#include file='include/fewi_url.html'-->marker/MGI:98880">Tyr</a> gene;
+<a href="<!--#include file='include/fewi_url.html'-->accession/MGI:1862032">T<sup>39H</sup></a> is the 39th mutation of <a href="<!--#include file='include/fewi_url.html'-->marker/MGI:98472">T</a>
+ from Harwell (H). This particular T allele was discovered in Harwell's ENU mutagenesis program.</li>
+  </ul></li>
+  <li>Allele designations for <b>transgenic</b> and <b>targeted</b> alleles of <b>known</b> genes... 
+   <ul>
+     <li>Tg(YYY)#Zzz for <b>transgenic alleles</b>, where YYY is the inserted gene,
 # is the serial number, and Zzz the lab code for the laboratory.  <EM>Example: </EM>
-<A HREF="<!--#include file='include/java_url.html'-->WIFetch?page=alleleDetail&key=1905"> Vcan<sup>Tg(Hoxa1)1Chm</sup></a>, the Tg(Hoxa1)1Chm allele of  <A HREF="<!--#include file='include/fewi_url.html'-->marker/MGI:102889">Vcan</a>.
+<a href="<!--#include file='include/fewi_url.html'-->accession/MGI:1857689"> Vcan<sup>Tg(Hoxa1)1Chm</sup></a>, the Tg(Hoxa1)1Chm allele of  <a href="<!--#include file='include/fewi_url.html'-->marker/MGI:102889">Vcan</a>.
 A construct containing the mouse homeobox a1
-<A HREF="<!--#include file='include/fewi_url.html'-->marker/MGI:96170">(Hoxa1)</a> was
+<a href="<!--#include file='include/fewi_url.html'-->marker/MGI:96170">(Hoxa1)</a> was
 inserted by microinjection, the first reported by Corey H. Mjaatvedt (Chm).
 This transgene was found before it was associated with any known gene.  Later, it was identified as an
 allele of
-<A HREF="<!--#include file='include/fewi_url.html'-->marker/MGI:102889">Versican</a>
- (chondroitin sulfate proteoglycan).<BR><BR>
-<LI> tm#Zzz for <B>targeted alleles</B> by homologous recombination, where tm indicates targeted mutation,
-# is the serial number, and
-Zzz the lab code for the laboratory. <EM> Example:</EM>
-<A HREF="<!--#include file='include/java_url.html'-->WIFetch?page=alleleDetail&key=544">Egfr<SUP>tm1Mag</SUP></a>
- where this is the 1st targeted mutation of
- <A HREF="<!--#include file='include/fewi_url.html'-->marker/MGI:95294">Egfr</a> created by Terry Magnuson (Mag).<BR><BR>
-</UL>
+<a href="<!--#include file='include/fewi_url.html'-->marker/MGI:102889">Versican</a>
+ (chondroitin sulfate proteoglycan).</li>
+    <li>tm#Zzz for <b>targeted alleles</b> by homologous recombination, where tm indicates targeted mutation,
+# is the serial number, and Zzz the lab code for the laboratory. <EM> Example:</EM>
+<a href="<!--#include file='include/fewi_url.html'-->accession/MGI:1856402">Egfr<sup>tm1Mag</sup></a> where this is the 1st targeted mutation of
+ <a href="<!--#include file='include/fewi_url.html'-->marker/MGI:95294">Egfr</a> created by Terry Magnuson (Mag).</li>
+   </ul></li>
+</ol>
 
-
-
-</OL>
-<p>The Mouse Genomic Nomenclature Committee (MGNC) provides assistance in assigning nomenclature. Please contact us at <A HREF="mailto:nomen@jax.org">nomen@jax.org</a>.
+<p>The Mouse Genomic Nomenclature Committee (MGNC) provides assistance in assigning nomenclature. Please contact us at <a href="mailto:nomen@jax.org">nomen@jax.org</a>.</p>
 
 <!--#include file='include/templateBodyStop.html'--> 
