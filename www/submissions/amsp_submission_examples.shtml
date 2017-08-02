@@ -8,6 +8,19 @@
   <meta name="robots" content="NOODP" />
   <meta name="robots" content="NOYDIR" />
   <link rel="stylesheet" type="text/css" href="<!--#include file="include/stylesheet.html"-->" />
+  
+  <style type="text/css">
+
+h3 {   
+    font-size: 1.1em;
+    font-weight: bold;
+}
+
+h4 {   
+    font-weight: bold;
+}
+
+</style>
 
 <!--#include file='include/templateBodyStart.html'-->
 
@@ -47,11 +60,11 @@ file should be named in parallel with its associated image. For example, Xyz1ima
 
 Example data file:
 <table border=1 cellspacing=1 cellpadding=3 width="!">
- <tr><th>Blood Parameters</th><th>Age (months)</th><th>Sex</th><th>Atr1a&lt;+&gt;/ Atr1a&lt;+&gt;&nbsp;&nbsp;</th><th>Number of mice&nbsp;&nbsp;</th><th>Atr1a&lt;tm1Ecl&gt;/<br>Atr1a&lt;tm1Ecl&gt;&nbsp;&nbsp;</th><th>Number of mice&nbsp;&nbsp;</th><th>p-value compared to wild-type</th></tr>
- <tr><td>Hematocrit (%)</td><td>6.5-9.0</td><td>combined</td><td>36.6 +/- 1.4</td><td>10</td><td>41.1 +/- 1/2</td><td>10</td><td>&lt;0.05</td></tr>
- <tr><td>RBC (10*6/<i>&micro;</i>l)</td><td>6.5-9.0</td><td>combined</td><td>7.6 +/- 0.2</td><td>10</td><td>8.9 +/- 0.3</td><td>10</td><td>&lt;0.01</td></tr>
- <tr><td> Hemoglobin (g/dl)</td><td>6.5-9.0</td><td>combined</td><td>12.5 +/- 0.4</td><td>10</td><td>14.1 +/- 0.4</td><td>10</td><td>&lt;0.05</td></tr>
- <tr><td><span style="white-space: nowrap">Plasma proteins (g/l)</span></td><td>6.5-9.0</td><td>combined</td><td>37.9 +/- 1.7</td><td>8</td><td>38.7 +/- 2.4</td><td>7</td><td>NS</td></tr>
+ <tr><th>Blood Parameters</th><th>Age (months) &nbsp;&nbsp;</th><th>Sex</th><th>Atr1a&lt;+&gt;/ Atr1a&lt;+&gt;&nbsp;&nbsp;</th><th>Number of mice&nbsp;&nbsp;</th><th>Atr1a&lt;tm1Ecl&gt;/<br>Atr1a&lt;tm1Ecl&gt;&nbsp;&nbsp;</th><th>Number of mice&nbsp;&nbsp;</th><th>p-value compared to wild-type</th></tr>
+ <tr><td>Hematocrit (%)</td><td>6.5-9.0</td><td>combined &nbsp;&nbsp;</td><td>36.6 +/- 1.4</td><td>10</td><td>41.1 +/- 1/2</td><td>10</td><td>&lt;0.05</td></tr>
+ <tr><td>RBC (10*6/<i>&micro;</i>l)</td><td>6.5-9.0</td><td>combined &nbsp;&nbsp;</td><td>7.6 +/- 0.2</td><td>10</td><td>8.9 +/- 0.3</td><td>10</td><td>&lt;0.01</td></tr>
+ <tr><td> Hemoglobin (g/dl)</td><td>6.5-9.0</td><td>combined &nbsp;&nbsp;</td><td>12.5 +/- 0.4</td><td>10</td><td>14.1 +/- 0.4</td><td>10</td><td>&lt;0.05</td></tr>
+ <tr><td><span style="white-space: nowrap">Plasma proteins (g/l)</span></td><td>6.5-9.0</td><td>combined &nbsp;&nbsp;</td><td>37.9 +/- 1.7</td><td>8</td><td>38.7 +/- 2.4</td><td>7</td><td>NS</td></tr>
 </table>
 
 <p><span style="text-decoration: underline;">Example accompanying description file:</span><br>
