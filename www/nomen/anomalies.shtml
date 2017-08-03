@@ -8,51 +8,62 @@
   <span class="titleBarSubTitle">Revised: June 2016</span>
 </div> <!--titleBar-->
 
+<style type="text/css">
 
+h3 {   
+    font-size: 1.1em;
+    font-weight: bold;
+}
 
-<h3 align=center>International Committee on Standardized Genetic Nomenclature for Mice</h3>
-<h3 align="center"><font size="-1"><i>Chairperson</i>: Janan T. Eppig<br>
-(e-mail: janan.eppig@jax.org)</font></h3>
+h4 {
+     font-weight: bold;
+}
+
+</style>
+
+<h3 style="text-align: center">International Committee on Standardized Genetic Nomenclature for Mice</h3>
+<h4 style="text-align: center"><i>Chairperson</i>: Janan T. Eppig<br>
+(e-mail: janan.eppig@jax.org)</h4>
 <p>To see previous versions of these guidlelines (last revised in November 2013), click <a href="nomen_archive.shtml#aberrations">here</a>.</p>
 
 <H3>Table of Contents</H3>
 <p>
-<A HREF="#general">1 &nbsp;General Guidelines for Designating Chromosomes</a><br>
+<a href="#general">1 &nbsp;General Guidelines for Designating Chromosomes</a><br>
 <br>
-<A HREF="#symchro">2 &nbsp;Symbols for Chromosome Anomalies</a><br>
+<a href="#symchro">2 &nbsp;Symbols for Chromosome Anomalies</a><br>
 
-&nbsp;&nbsp;<A HREF="#prefix">2.1 &nbsp;Prefix</a><br>
-&nbsp;&nbsp;<A HREF="#desigchro">2.2 &nbsp;Designating the chromosomes involved in an anomaly</a><br>
-&nbsp;&nbsp;<A HREF="#uniqueid">2.3 &nbsp;A series number and Laboratory code designation that uniquely identifies the anomaly</a><br>
-&nbsp;&nbsp;<A HREF="#abbrevchrom">2.4 &nbsp;Abbreviating chromosome anomalies</a><br>
-&nbsp;&nbsp;<A HREF="#symultiple">2.5 &nbsp;Symbols for multiple chromosome anomalies</a><br>
-&nbsp;&nbsp;<A HREF="#symcomplex">2.6 &nbsp;Symbols for complex chromosome anomalies</a><br>
-&nbsp;&nbsp;<A HREF="#designatebreak">2.7 &nbsp;Designating chromosomal breakpoints</a><br>
+&nbsp;&nbsp;<a href="#prefix">2.1 &nbsp;Prefix</a><br>
+&nbsp;&nbsp;<a href="#desigchro">2.2 &nbsp;Designating the chromosomes involved in an anomaly</a><br>
+&nbsp;&nbsp;<a href="#uniqueid">2.3 &nbsp;A series number and Laboratory code designation that uniquely identifies the anomaly</a><br>
+&nbsp;&nbsp;<a href="#abbrevchrom">2.4 &nbsp;Abbreviating chromosome anomalies</a><br>
+&nbsp;&nbsp;<a href="#symultiple">2.5 &nbsp;Symbols for multiple chromosome anomalies</a><br>
+&nbsp;&nbsp;<a href="#symcomplex">2.6 &nbsp;Symbols for complex chromosome anomalies</a><br>
+&nbsp;&nbsp;<a href="#designatebreak">2.7 &nbsp;Designating chromosomal breakpoints</a><br>
      		
-&nbsp;&nbsp;&nbsp;&nbsp;<A HREF="#defineband">2.7.1 &nbsp;Defining the chromosomal band</a><br>
+&nbsp;&nbsp;&nbsp;&nbsp;<a href="#defineband">2.7.1 &nbsp;Defining the chromosomal band</a><br>
 
-&nbsp;&nbsp;<A HREF="#ddchrom">2.8 &nbsp;Deficiencies and deletions as chromosomal anomalies</a><br>
-&nbsp;&nbsp;<A HREF="#imprintchrom">2.9 &nbsp;Imprinting and chromosomal anomalies</a><br>
-&nbsp;&nbsp;<A HREF="#deletionid">2.10 &nbsp;Deletions identified through phenotypic change</a><br>
-&nbsp;&nbsp;<A HREF="#chromoaneup">2.11 &nbsp;Chromosomal aneuploidy</a><br>
-&nbsp;&nbsp;<A HREF="#transchrom">2.12 &nbsp;Transchromosomal anomalies</a><br><br/>
+&nbsp;&nbsp;<a href="#ddchrom">2.8 &nbsp;Deficiencies and deletions as chromosomal anomalies</a><br>
+&nbsp;&nbsp;<a href="#imprintchrom">2.9 &nbsp;Imprinting and chromosomal anomalies</a><br>
+&nbsp;&nbsp;<a href="#deletionid">2.10 &nbsp;Deletions identified through phenotypic change</a><br>
+&nbsp;&nbsp;<a href="#chromoaneup">2.11 &nbsp;Chromosomal aneuploidy</a><br>
+&nbsp;&nbsp;<a href="#transchrom">2.12 &nbsp;Transchromosomal anomalies</a><br>
 <br>   	
-<A HREF="#variations">3 &nbsp;Variations in Heterochromatin and Chromosome Banding</a><br>
+<a href="#variations">3 &nbsp;Variations in Heterochromatin and Chromosome Banding</a><br>
    
-&nbsp;&nbsp;<A HREF="#nucleorg">3.1 &nbsp;Nucleolus organizers</a><br>
-&nbsp;&nbsp;<A HREF="#pericentric">3.2 &nbsp;Pericentric heterochromatin</a><br>
-&nbsp;&nbsp;<A HREF="#loci">3.3 &nbsp;Loci within heterochromatin</a><br>
-&nbsp;&nbsp;<A HREF="#centromere">3.4 &nbsp;Centromeres</a><br>
-&nbsp;&nbsp;<A HREF="#telomere">3.5 &nbsp;Telomeres</a><br>
-&nbsp;&nbsp;<A HREF="#gband">3.6 &nbsp;G-band polymorphisms</a><br>
+&nbsp;&nbsp;<a href="#nucleorg">3.1 &nbsp;Nucleolus organizers</a><br>
+&nbsp;&nbsp;<a href="#pericentric">3.2 &nbsp;Pericentric heterochromatin</a><br>
+&nbsp;&nbsp;<a href="#loci">3.3 &nbsp;Loci within heterochromatin</a><br>
+&nbsp;&nbsp;<a href="#centromere">3.4 &nbsp;Centromeres</a><br>
+&nbsp;&nbsp;<a href="#telomere">3.5 &nbsp;Telomeres</a><br>
+&nbsp;&nbsp;<a href="#gband">3.6 &nbsp;G-band polymorphisms</a><br>
 <br>   	
-<A HREF="#nomenuse">4 &nbsp;Use of Human Chromosome Nomenclature</a><br>
+<a href="#nomenuse">4 &nbsp;Use of Human Chromosome Nomenclature</a><br>
 <br>
-<A HREF="#references">5 &nbsp;References</a>
+<a href="#references">5 &nbsp;References</a>
 </p>
 <hr>
 
-<h2><a name="general"></a>1.&nbsp;&nbsp;&nbsp;General Guidelines for Designating Chromosomes</h2>
+<h3><a id="general"></a>1.&nbsp;&nbsp;&nbsp;General Guidelines for Designating Chromosomes</h3>
 <p>Mouse chromosomes are numbered and identified according to the system given by Nesbitt and Francke (1973), Sawyer <i>et al.</i> (1987), Beechey and Evans (1996), and Evans (1996). The word Chromosome should start with a capital letter when referring to a specific chromosome and may be abbreviated to Chr
 after the first use, <i>e.g.,</i> Chromosome (Chr) 1 and Chr 1. The X and Y chromosomes are indicated by capital letters rather than numbers. </p>
 
@@ -60,60 +71,60 @@ after the first use, <i>e.g.,</i> Chromosome (Chr) 1 and Chr 1. The X and Y chro
 
 <p><blockquote>
 <b>Examples:</b>
-<table cellspacing="8"><tr><td width="70%">Major G-band designation:</td><td valign="top">Chr 17B </td></tr>
-<tr><td valign="top">Major subdivisions within the Chr 17B band:</td><td valign="top">17B1, 17B2</td></tr>
-<tr><td valign="top">Additional subdivision of band 17B1:</td><td valign="top"><nobr>17B1.1, 17B1.2, 17B1.3, etc.</nobr></td></tr>
+<table cellspacing="8"><tr><td width="70%">Major G-band designation:</td><td>Chr 17B </td></tr>
+<tr><td>Major subdivisions within the Chr 17B band:</td><td>17B1, 17B2</td></tr>
+<tr><td>Additional subdivision of band 17B1:</td><td><span style="white-space: nowrap">17B1.1, 17B1.2, 17B1.3, etc.</span></td></tr>
 </table>
 </blockquote>
 </p>
 
-<H2><a name="symchro"></a>2.&nbsp;&nbsp;&nbsp;Symbols for Chromosome Anomalies</H2>
+<h3><a id="symchro"></a>2.&nbsp;&nbsp;&nbsp;Symbols for Chromosome Anomalies</h3>
 <p>Chromosome anomaly symbols are not italicized (unlike gene symbols).</p>
 <p>Symbols for chromosome anomalies consist of three parts:
 <ul>
-<LI>A prefix defining the type of anomaly</LI>
-<LI>Specifically formatted information indicating the chromosomes involved</LI>
-<LI>A series number and Laboratory code designation that uniquely identifies the anomaly</LI>
+ <li>A prefix defining the type of anomaly</li>
+ <li>Specifically formatted information indicating the chromosomes involved</li>
+ <li>A series number and Laboratory code designation that uniquely identifies the anomaly</li>
 </ul>
 </p>
 
-<H3><a name="prefix"></a>2.1 &nbsp;&nbsp;&nbsp;Prefix</h3>
+<h4><a id="prefix"></a>2.1 &nbsp;&nbsp;&nbsp;Prefix</h4>
 <p>A chromosome anomaly designation begins with a prefix that denotes the type of anomaly. Each prefix begins with a capital letter, with any subsequent letters being lowercase. The accepted prefixes are:
 <blockquote>
 <table cellpadding=1>
-<tr><td width="10%" valign="top">Cen</td><td valign="top">Centromere</td></tr>
-<tr><td valign="top">Del</TD><td valign="top">Deletion</TD>
-<TR><td valign="top">Df</TD><td valign="top">Deficiency</TD></TR>
-<TR><td valign="top">Dp</TD><td valign="top">Duplication</TD></TR>
-<TR><td valign="top">Hc</TD><td valign="top">Pericentric heterochromatin</TD></TR>
-<TR><td valign="top">Hsr</TD><td valign="top">Homogeneous staining region</TD></TR>
-<TR><td valign="top">In</TD><td valign="top">Inversion</TD></TR>
-<TR><td valign="top">Is</TD><td valign="top">Insertion</TD></TR>
-<tr><td valign="top">Iso</td><td valign="top">Isochromosome</td></tr>
-<TR><td valign="top">MatDf</TD><td valign="top">Maternal deficiency</TD></TR>
-<TR><td valign="top">MatDi</TD><td valign="top">Maternal disomy</TD></TR>
-<TR><td valign="top">MatDp</TD><td valign="top">Maternal duplication</TD></TR>
-<TR><td valign="top">Ms</TD><td valign="top">Monosomy</TD></TR>
-<TR><td valign="top">Ns</TD><td valign="top">Nullisomy</TD></TR>
-<TR><td valign="top">PatDf</TD><td valign="top">Paternal deficiency</TD></TR>
-<TR><td valign="top">PatDi</TD><td valign="top">Paternal disomy</TD></TR>
-<TR><td valign="top">PatDp</TD><td valign="top">Paternal duplication</TD></TR>
-<TR><td valign="top">Rb</TD><td valign="top">Robertsonian translocation</TD></TR>
-<TR><td valign="top">T</TD><td valign="top">Translocation</TD></TR>
-<TR><td valign="top">Tc</TD><td valign="top"> Transchromosomal</TD></TR>
-<TR><td valign="top">Tel</TD><td valign="top">Telomere</TD></TR>
-<TR><td valign="top">Tet</TD><td valign="top">Tetrasomy</TD></TR>
-<TR><td valign="top">Tg</TD><td valign="top">Transgenic insertion (see <a href="gene.shtml">Rules for Nomenclature of Genes, Genetic Markers, Alleles, and Mutations in Mouse and Rat</a>)</TD></TR>
-<TR><td valign="top">Tp</TD><td valign="top">Transposition</TD></TR>
-<TR><td valign="top">Ts</TD><td valign="top">Trisomy</TD></TR>
-<TR><td valign="top">UpDf</TD><td valign="top">Uniparental deficiency</TD></TR>
-<TR><td valign="top">UpDi</TD><td valign="top">Uniparental disomy</TD></TR>
-<TR><td valign="top">UpDp</TD><td valign="top">Uniparental duplication</TD></TR>
+<tr><td>Cen</td><td>Centromere</td></tr>
+<tr><td>Del</td><td>Deletion</td>
+<tr><td>Df</td><td>Deficiency</td></tr>
+<tr><td>Dp</td><td>Duplication</td></tr>
+<tr><td>Hc</td><td>Pericentric heterochromatin</td></tr>
+<tr><td>Hsr</td><td>Homogeneous staining region</td></tr>
+<tr><td>In</td><td>Inversion</td></tr>
+<tr><td>Is</td><td>Insertion</td></tr>
+<tr><td>Iso</td><td>Isochromosome</td></tr>
+<tr><td>MatDf</td><td>Maternal deficiency</td></tr>
+<tr><td>MatDi</td><td>Maternal disomy</td></tr>
+<tr><td>MatDp</td><td>Maternal duplication</td></tr>
+<tr><td>Ms</td><td>Monosomy</td></tr>
+<tr><td>Ns</td><td>Nullisomy</td></tr>
+<tr><td>PatDf</td><td>Paternal deficiency</td></tr>
+<tr><td>PatDi</td><td>Paternal disomy</td></tr>
+<tr><td>PatDp</td><td>Paternal duplication</td></tr>
+<tr><td>Rb</td><td>Robertsonian translocation</td></tr>
+<tr><td>T</td><td>Translocation</td></tr>
+<tr><td>Tc</td><td>Transchromosomal</td></tr>
+<tr><td>Tel</td><td>Telomere</td></tr>
+<tr><td>Tet</td><td>Tetrasomy</td></tr>
+<tr><td>Tg</td><td>Transgenic insertion (see <a href="gene.shtml">Rules for Nomenclature of Genes, Genetic Markers, Alleles, and Mutations in Mouse and Rat</a>)</td></tr>
+<tr><td>Tp</td><td>Transposition</td></tr>
+<tr><td>Ts</td><td>Trisomy</td></tr>
+<tr><td>UpDf</td><td>Uniparental deficiency</td></tr>
+<tr><td>UpDi</td><td>Uniparental disomy</td></tr>
+<tr><td>UpDp</td><td>Uniparental duplication</td></tr>
 </table>
 </blockquote>
 </p>
 
-<h3><a name="desigchro"></a>2.2&nbsp;&nbsp;&nbsp; Designating the chromosomes involved in an anomaly</h3>
+<h4><a id="desigchro"></a>2.2&nbsp;&nbsp;&nbsp; Designating the chromosomes involved in an anomaly</h4>
 
 <p>The chromosome(s) involved in the anomaly should be indicated by adding the appropriate Arabic numerals or letters in parentheses, between the anomaly prefix and the series symbol.</p>
 
@@ -123,10 +134,10 @@ after the first use, <i>e.g.,</i> Chromosome (Chr) 1 and Chr 1. The X and Y chro
 the chromosome donating the inserted portion should be given first, followed by
 the recipient chromosome.</p>
 
-<h3><a name="uniqueid"></a>2.3&nbsp;&nbsp;&nbsp;A series number and Laboratory code designation that uniquely identifies the anomaly</h3>
+<h4><a id="uniqueid"></a>2.3&nbsp;&nbsp;&nbsp;A series number and Laboratory code designation that uniquely identifies the anomaly</h4>
 <p>The first and each successive anomaly from a particular laboratory or institution is distinguished by a series symbol, consisting of a serial number followed by the Laboratory Registration Code or Laboratory code of the person or laboratory who discovered the anomaly. Each type of chromosomal anomaly from a given laboratory will have its own series of serial numbers (see examples). The Laboratory code should be the code already assigned for the particular institute, laboratory, or investigator for use with strains that they hold. If there is no preassigned code, one should be obtained from the Institute of Laboratory Animal Research (ILAR) (<a href="http://dels.nas.edu/global/ilar/lab-codes">
 http://dels.nas.edu/global/ilar/lab-codes</a>).
-Laboratory codes are uniquely assigned to institutes or investigators and are usually three to four letters (first letter uppercase, followed by all lowercase).
+Laboratory codes are uniquely assigned to institutes or investigators and are usually three to four letters (first letter uppercase, followed by all lowercase).</p>
 <blockquote>
 <B>Examples:</B>
 <table cellpadding=8>
@@ -140,14 +151,12 @@ Laboratory codes are uniquely assigned to institutes or investigators and are us
 </blockquote>
 <p>Note: As mouse chromosomes are all acrocentric, with the exception of Chr Y, the p and q arm designations standard for human chromosomes are not used. For mouse Chr Y, p and q are appended as required. Example: Iso(Yq).</p>
 
-</p>
-
-<h3><a name="abbrevchrom"></a>2.4 &nbsp;&nbsp;&nbsp;Abbreviating chromosome anomalies</h3>
+<h4><a id="abbrevchrom"></a>2.4 &nbsp;&nbsp;&nbsp;Abbreviating chromosome anomalies</h4>
 <p>Once the full designation for a chromosome anomaly is written in a document, an abbreviation can be used thereafter. The abbreviation consists of the anomaly prefix plus the serial number designation and Laboratory code. The chromosomal content in parentheses is omitted.</p>
 <p><b>Using the examples from section 2.3:</b>
 <blockquote>
 <table cellpadding=8>
-<tr><td><b>Full designation</b>&nbsp;&nbsp;&nbsp;</td><td><b>Abbreviation</td></b></tr>
+<tr><td><b>Full designation</b>&nbsp;&nbsp;&nbsp;</td><td><b>Abbreviation</b></td></tr>
 <tr><td>Del(9)4H</td><td>Del4H</td></tr>
 <tr><td>In(5)2Rk</td><td>In2Rk</td></tr>
 <tr><td>Is(13;1)4H</td><td>Is4H</td></tr>
@@ -156,36 +165,36 @@ Laboratory codes are uniquely assigned to institutes or investigators and are us
 </blockquote>
 </p>
 
-<H3><a name="symultiple"></a>2.5&nbsp;&nbsp;&nbsp; Symbols for multiple chromosome anomalies</H3>
+<h4><a id="symultiple"></a>2.5&nbsp;&nbsp;&nbsp; Symbols for multiple chromosome anomalies</h4>
 
 <p>When an animal carries two or more anomalies that are potentially separable by recombination, the symbols for both (or all) anomalies should be given.</p>
 
 <p><blockquote>
 <b>Examples:</b>
-<table width="100%" cellpadding="8">
-<tr><td valign="top"><nobr>Rb(16.17)7Bnr T(1;17)190Ca/+ +&nbsp;&nbsp;</nobr></td><td valign="top">an animal heterozygous for a Robertsonian and a reciprocal translocation, each involving Chr 17. The anomalies are organizationally in &quot;coupling&quot; <i>i.e.,</i> the same Chr 17 is involved in both.</p></td></tr>
+<table cellpadding="8">
+<tr><td valign="top"><span style="white-space: nowrap">Rb(16.17)7Bnr T(1;17)190Ca/+ +&nbsp;&nbsp;</span></td><td valign="top">an animal heterozygous for a Robertsonian and a reciprocal translocation, each involving Chr 17. The anomalies are organizationally in &quot;coupling&quot; <i>i.e.,</i> the same Chr 17 is involved in both.</td></tr>
 
-<tr><td valign="top"><nobr>Rb(5.15)3Bnr +/+ In(5)9Rk</nobr></td><td valign="top">an animal heterozygous for a Robertsonian and heterozygous for an inversion. Because they share a common chromosome, Chr 5, the organization of the anomalies is specified as in &quot;repulsion.&quot;
+<tr><td valign="top"><span style="white-space: nowrap">Rb(5.15)3Bnr +/+ In(5)9Rk</span></td><td valign="top">an animal heterozygous for a Robertsonian and heterozygous for an inversion. Because they share a common chromosome, Chr 5, the organization of the anomalies is specified as in &quot;repulsion.&quot;
 </td></tr>
 
-<tr><td valign="top"><nobr>Rb(10.11)5Rma/+ T(3;4)5Rk</nobr></td><td valign="top">an animal that is heterozygous for a Robertsonian translocation and homozygous for an unrelated reciprocal translocation.</td></tr>
+<tr><td valign="top"><span style="white-space: nowrap">Rb(10.11)5Rma/+ T(3;4)5Rk</span></td><td valign="top">an animal that is heterozygous for a Robertsonian translocation and homozygous for an unrelated reciprocal translocation.</td></tr>
 </table>
 </blockquote>
 </p>
 
-<h3><a name="symcomplex"></a>2.6&nbsp;&nbsp;&nbsp; Symbols for complex chromosome anomalies</h3>
+<h4><a id="symcomplex"></a>2.6&nbsp;&nbsp;&nbsp; Symbols for complex chromosome anomalies</h4>
 <p>When one chromosome anomaly is contained within another or is inseparable from it, the symbols should be combined.</p>
 
 <p><blockquote>
 <b>Example:</b>
 <table cellpadding="8">
-<tr><td valign="top">T(In1;5)44H&nbsp;&nbsp;</td><td valign="top">an animal carrying a translocation
+<tr><td>T(In1;5)44H&nbsp;&nbsp;</td><td>an animal carrying a translocation
 between Chrs 1 and 5 in which the Chr 1 segment is inverted. </td>
 </table>
 </blockquote>
 </p>
 
-<h3><a name="designatebreak"></a>2.7 &nbsp;&nbsp;&nbsp;Designating chromosomal breakpoints</h3>
+<h4><a id="designatebreak"></a>2.7 &nbsp;&nbsp;&nbsp;Designating chromosomal breakpoints</h4>
 
 <p>The symbols p and q are used to denote the short and long arms, respectively, of mouse chromosomes. In translocations, breaks in the short arm should be designated with a p, but the q for long arm may be omitted if the meaning is clear. Because mouse autosomes and the X Chromosome are
 acrocentric, they do not have a short arm other than a telomere proximal to the centromere. Therefore, most rearrangements in mouse chromosomes involve breaks in the long arm (q arm). In mouse, Chr Y has both a p and q arm.</p>
@@ -193,27 +202,27 @@ acrocentric, they do not have a short arm other than a telomere proximal to the 
 <p><blockquote>
 <b>Example:</b>
 <table cellpadding="8">
-<tr><td valign="top">T(Yp;5)21Lub&nbsp;&nbsp;</td><td valign="top">translocation involving
-a break in the short arm of the Y Chromosome and the long arm of Chr 5; the 21<font size="-1"><sup>st</sup></font> from Lubeck. </td></tr>
+<tr><td>T(Yp;5)21Lub&nbsp;&nbsp;</td><td>translocation involving
+a break in the short arm of the Y Chromosome and the long arm of Chr 5; the 21<sup>st</sup> from Lubeck. </td></tr>
 </table>
 </blockquote>
 </p>
-<h4><a name="defineband"></a>2.7.1 &nbsp;&nbsp;&nbsp; Defining the chromosomal band</h4>
+<h4><a id="defineband"></a>2.7.1 &nbsp;&nbsp;&nbsp; Defining the chromosomal band</h4>
 
 <p>When the positions of the chromosomal breakpoints relative to the G-banded karyotype are known,  these are indicated by adding the band numbers, as given in the standard karyotype of the mouse (Evans 1996), after the appropriate chromosome numbers. </p>
 
 <p><blockquote>
 <b>Examples:</b>
 <table cellpadding="8">
-<tr><td valign="top">T(2H1;8A4)26H</td><td valign="top">reciprocal translocation having breakpoints in band H1 of Chr 2 and band A4 of Chr 8; the 26<font size="-1"><sup>th</sup></font> from Harwell</td></tr>
+<tr><td>T(2H1;8A4)26H</td><td>reciprocal translocation having breakpoints in band H1 of Chr 2 and band A4 of Chr 8; the 26<sup>th</sup> from Harwell</td></tr>
 
-<tr><td valign="top">In(XA1;XE)1H</td><td valign="top">inversion of the region between the
-breakpoints in bands A1 and E of the X Chromosome; the 1<font size="-1"><sup>st</sup></font> from Harwell</td></tr>
+<tr><td>In(XA1;XE)1H</td><td>inversion of the region between the
+breakpoints in bands A1 and E of the X Chromosome; the 1<sup>st</sup> from Harwell</td></tr>
 
-<tr><td valign="top">Del(7E1)Tyr8Rl</td><td valign="top">deletion of band 7E1 manifesting as a
-mutation to albino, Tyr<font size="-1"><sup>c</sup></font>;the 8<font size="-1"><sup>th</sup></font> from Russell</td></tr>
+<tr><td>Del(7E1)Tyr8Rl</td><td>deletion of band 7E1 manifesting as a
+mutation to albino, Tyr<sup>c</sup>;the 8<sup>th</sup> from Russell</td></tr>
 
-<tr><td valign="top">Is(In7F1-7C;XF1)1Ct&nbsp;&nbsp;</td><td valign="top">inverted insertion of a segment of Chr 7 band F1-C into the X Chromosome at band F1; the 1<font size="-1"><sup>st</sup></font> from Cattanach</td></tr>
+<tr><td>Is(In7F1-7C;XF1)1Ct&nbsp;&nbsp;</td><td>inverted insertion of a segment of Chr 7 band F1-C into the X Chromosome at band F1; the 1<sup>st</sup> from Cattanach</td></tr>
 </table>
 </blockquote>
 </p>
@@ -221,28 +230,27 @@ mutation to albino, Tyr<font size="-1"><sup>c</sup></font>;the 8<font size="-1">
 <blockquote>
 <B>Examples:</B>
 <table cellpadding=8>
-<TR><td valign="top">In(8pq)1Rl</TD><td valign="top">pericentric inversion involving Chr 8; the 1<font size=-1><sup>st</sup></FONT> from Russell</TD></tr>
+<tr><td>In(8pq)1Rl</td><td>pericentric inversion involving Chr 8; the 1<sup>st</sup> from Russell</td></tr>
 
-<TR><td valign="top">In(8pqA2)</TD><td valign="top">pericentric inversion of the region
-between the short arm and band A2 of the long arm of Chr 8</TD></tr>
+<tr><td>In(8pqA2)</td><td>pericentric inversion of the region
+between the short arm and band A2 of the long arm of Chr 8</td></tr>
 
-<TR><td valign="top"><nobr>In(5C2;15E1)Rb3Bnr 1Ct&nbsp;&nbsp;</nobr></TD><td valign="top">the first inversion found by Cattanach in Rb3Bnr of the region between bands 5C2 and 15E1</TD></tr>
+<tr><td><span style="white-space: nowrap">In(5C2;15E1)Rb3Bnr 1Ct&nbsp;&nbsp;</span></td><td>the first inversion found by Cattanach in Rb3Bnr of the region between bands 5C2 and 15E1</td></tr>
 </table>
 </blockquote>
-</p>
 
-<h3><a name="ddchrom"></a>2.8 &nbsp;&nbsp;&nbsp;Deficiencies and deletions as chromosomal anomalies</h3>
+<h4><a id="ddchrom"></a>2.8 &nbsp;&nbsp;&nbsp;Deficiencies and deletions as chromosomal anomalies</h4>
 <p>The deficiency (Df) and duplication (Dp) nomenclature should be restricted in its use to defining the unbalanced products of chromosome aberrations, <i>i.e</i>., deficient/duplicated chromosomes resulting from malsegregation of reciprocal translocations. Deletions are interstitial losses often, although not always, cytologically visible. Neither of these terms should be applied to small
 intragenic deletions. The latter give rise to allelic variation in a single locus and are given allele symbols.</p>
 
-<h3><a name="imprintchrom"></a>2.9 &nbsp;&nbsp;&nbsp;Imprinting and chromosomal anomalies</h3>
+<h4><a id="imprintchrom"></a>2.9 &nbsp;&nbsp;&nbsp;Imprinting and chromosomal anomalies</h4>
 <p>Since the 1980s, mouse translocations have been extensively used in imprinting studies to generate uniparental disomies and uniparental duplications (partial disomies) and deficiencies of whole or selected chromosome regions, respectively (reviewed by Cattanach and Beechey 1997 and Beechey 1999). The resulting chromosomal change may be of maternal, paternal, or uniparental (referring to one or the other parent without specification of maternal vs. paternal) origin.</p>
 
 <p>These chromosome anomalies are of three types:
 <ul>
-Disomy - two copies of a chromosome derived from one parent<br>
-Duplications - two copies of a chromosome region derived from one parent<br>
-Deficiencies - missing segments of a particular chromosome region originating from one parent
+  <li>Disomy - two copies of a chromosome derived from one parent</li>
+  <li>Duplications - two copies of a chromosome region derived from one parent</li>
+  <li>Deficiencies - missing segments of a particular chromosome region originating from one parent</li>
 </ul>
 </p>
 
@@ -254,21 +262,22 @@ duplication, this can be indicated in the symbol.</p>
 <p><blockquote>
 <b>Examples:</b>
 <table cellpadding="8">
-<tr><td valign="top">MatDi(12)</td><td valign="top">maternal disomy for Chr 12</td></tr>
-<tr><td valign="top">PatDp(10)</td><td valign="top">paternal duplication for a region of Chr 10</td></tr>
-<tr><td valign="top">MatDp(dist2)</td><td valign="top">maternal duplication for distal Chr 2</td></tr>
-<tr><td valign="top">MatDf(7)</td><td valign="top">maternal deficiency for Chr 7</td></tr>
-<tr><td valign="top">PatDi(11)Rb4Bnr</td><td valign="top">paternal disomy for Chr 11 produced
+<tr><td>MatDi(12)</td><td>maternal disomy for Chr 12</td></tr>
+<tr><td>PatDp(10)</td><td>paternal duplication for a region of Chr 10</td></tr>
+<tr><td>MatDp(dist2)</td><td>maternal duplication for distal Chr 2</td></tr>
+<tr><td>MatDf(7)</td><td>maternal deficiency for Chr 7</td></tr>
+<tr><td>PatDi(11)Rb4Bnr</td><td>paternal disomy for Chr 11 produced
 using Robertsonian translocation Rb(11.13)4Bnr</td></tr>
-<tr><td valign="top"><nobr>MatDp(dist2)T26H&nbsp;&nbsp;</nobr></td><td valign="top">maternal duplication for the region of Chr 2 distal to the breakpoint of the reciprocal translocation T(2;8)26H</td></tr>
+<tr><td><span style="white-space: nowrap">MatDp(dist2)T26H&nbsp;&nbsp;</span></td><td>maternal duplication for the region of Chr 2 distal to the breakpoint of the reciprocal translocation T(2;8)26H</td></tr>
 </table>
 </blockquote>
 </p>
-<h3><a name="deletionid"></a>2.10 &nbsp;&nbsp;&nbsp;Deletions identified through phenotypic change</h3>
 
-<p>If cytologically visible deletions are first detected by change in the phenotype produced by a gene (<i>e.g</i>., <i>Mgf<font size=-1><sup>Sl-12H</sup></FONT></i>), the gene and allele symbol designation should be included in the chromosome anomaly symbol, <i>e.g</i>,. Del(10)<i>Mgf<font size=-1><sup>Sl-12H</sup></FONT></i>1H was originally identified as <i>Sl<font size=-1><sup>12H</sup></FONT></i> (see <a href="gene.shtml">Rules for Nomenclature of Genes, Genetic Markers, Alleles, and Mutations in Mouse and Rat</a>).</p>
+<h4><a id="deletionid"></a>2.10 &nbsp;&nbsp;&nbsp;Deletions identified through phenotypic change</h4>
 
-<h3><a name="chromoaneup"></a>2.11 &nbsp;&nbsp;&nbsp;Chromosomal aneuploidy</h3>
+<p>If cytologically visible deletions are first detected by change in the phenotype produced by a gene (<i>e.g</i>., <i>Mgf<sup>Sl-12H</sup></i>), the gene and allele symbol designation should be included in the chromosome anomaly symbol, <i>e.g</i>,. Del(10)<i>Mgf<sup>Sl-12H</sup></i>1H was originally identified as <i>Sl<sup>12H</sup></i> (see <a href="gene.shtml">Rules for Nomenclature of Genes, Genetic Markers, Alleles, and Mutations in Mouse and Rat</a>).</p>
+
+<h4><a id="chromoaneup"></a>2.11 &nbsp;&nbsp;&nbsp;Chromosomal aneuploidy</h4>
 
 <p>Trisomies and monosomies should be denoted by the appropriate prefix symbol, followed by the chromosome(s) concerned. If a tertiary aneuploid or partial aneuploid is derived from a translocation, then the chromosome composition (proximal chromosome end; superscripted distal
 chromosome end) is denoted in parentheses, followed by the serial number and Laboratory code.</p>
@@ -276,20 +285,19 @@ chromosome end) is denoted in parentheses, followed by the serial number and Lab
 <p><blockquote>
 <b>Example:</b>
 <table cellpadding="8">
-<tr><td valign="top">Ts16</td><td valign="top">trisomy for Chr 16</td></tr>
-<tr><td valign="top">Ts(1<font size="-1"><sup>13</sup></font>)70H&nbsp;&nbsp;</td><td valign="top">trisomy for the proximal end of Chr 1 and the distal end of Chr 13, derived from the translocation T(1;13)70H (also
+<tr><td>Ts16</td><td>trisomy for Chr 16</td></tr>
+<tr><td>Ts(1<sup>13</sup>)70H&nbsp;&nbsp;</td><td>trisomy for the proximal end of Chr 1 and the distal end of Chr 13, derived from the translocation T(1;13)70H (also
 referred to as tertiary trisomy or partial trisomy).</td></tr>
 </table>
 </blockquote>
 </p>
 <p>Nullisomy, monosomy, and tetrasomy are denoted similarly.</p>
 
-<h3><a name="transchrom"></a>2.12 &nbsp;&nbsp;&nbsp;Transchromosomal anomalies</h3>
+<h4><a id="transchrom"></a>2.12 &nbsp;&nbsp;&nbsp;Transchromosomal anomalies</h4>
 
 <p>Transchromosomal is the term used to reference the case where a chromosome, chromosomal fragment,
 or engineered chromosome from another <b>species</b> exists as a separate, heritable, freely segregating entity or is centromerically fused to an endogenous chromosome. The designation of the
 additional chromosome is represented parenthetically including the species abbreviation and chromosome from that species, followed by an established line number and an ILAR Laboratory code.</p>
-
 
 <p>The format for a transchromosomal is:&nbsp;&nbsp; Tc(AAAbb)CCXxx<br>
 <p>Where
@@ -307,31 +315,30 @@ additional chromosome is represented parenthetically including the species abbre
 <p><blockquote>
 <b>Example:</b>
 <table cellpadding="8">
-<tr><td valign="top"><nobr>Tc(HSA21)91-1Emcf&nbsp;&nbsp;</nobr></td><td valign="top" align="left">transchromosomal, human 21, line 91-1 Elizabeth M. C. Fisher<br>This is an engineered mouse line containing a fragment of human chromosome 21 as a freely segregating heritable fragment.</td></tr>
+<tr><td valign="top"><span style="white-space: nowrap">Tc(HSA21)91-1Emcf&nbsp;&nbsp;</span></td><td valign="top" align="left">transchromosomal, human 21, line 91-1 Elizabeth M. C. Fisher<br>This is an engineered mouse line containing a fragment of human chromosome 21 as a freely segregating heritable fragment.</td></tr>
 </table>
 </blockquote>
 </p>
-<h2><a name="variations"></a>3. &nbsp;&nbsp;&nbsp;Variations in Heterochromatin and Chromosome Banding</h2>
+<h3><a id="variations"></a>3. &nbsp;&nbsp;&nbsp;Variations in Heterochromatin and Chromosome Banding</h3>
 
-
-<h3><a name="nucleorg"></a>3.1 &nbsp;&nbsp;&nbsp;Nucleolus organizers</h3>
+<h4><a id="nucleorg"></a>3.1 &nbsp;&nbsp;&nbsp;Nucleolus organizers</h4>
 
 <p>The symbol NOR should be reserved for nucleolus organizers. Different organizers should be distinguished by chromosome numbers. Polymorphic loci within the ribosomal DNA region are designated with the root gene symbol, Rnr and the chromosome number (see <a href="gene.shtml">Rules
 and Nomenclature of Genes, Genetic Markers, Alleles, and Mutations in Mouse and Rat</a>).</p>
 <p><blockquote>
 <b>Example:</b>
 <table cellpadding="8">
-<tr><td valign="top"><i>Rnr12</i>&nbsp;&nbsp;</td><td valign="top">a polymorphic DNA segment that identifies the ribosomal DNA region on Chr 12</td></tr>
+<tr><td><i>Rnr12</i>&nbsp;&nbsp;</td><td>a polymorphic DNA segment that identifies the ribosomal DNA region on Chr 12</td></tr>
 </table>
 </blockquote>
 </p>
 
-<h3><a name="pericentric"></a>3.2 &nbsp;&nbsp;&nbsp;Pericentric heterochromatin</h3>
+<h4><a id="pericentric"></a>3.2 &nbsp;&nbsp;&nbsp;Pericentric heterochromatin</h4>
 <p>The symbol H should be used for heterochromatin visualized cytologically, followed by a symbol indicating the chromosome region involved, in this case c for centromeric, and a number indicating the chromosome on which it lies. </p>
 <p><blockquote>
 <b>Example:</b>
 <table cellpadding="8">
-<tr><td width="20%" valign="top">Hc14</td><td valign="top">pericentric
+<tr><td width="20%">Hc14</td><td>pericentric
 heterochromatin on Chr 14</td></tr>
 </table>
 </blockquote>
@@ -341,30 +348,30 @@ heterochromatin on Chr 14</td></tr>
 <p><blockquote>
 <b>Example:</b>
 <table cellpadding="8">
-<tr><td width="20%" valign="top">Hc14<font size="-1"><sup>n</sup></font></td><td valign="top">normal or standard pericentric heterochromatin on Chr 14.</td></tr>
+<tr><td width="20%">Hc14<sup>n</sup></td><td>normal or standard pericentric heterochromatin on Chr 14.</td></tr>
 </table>
 </blockquote>
 </p>
 
 <p>In describing a new variant, a single inbred strain should be named as the prototype or standard strain. </p>
 
-<h3><a name="loci"></a>3.3 &nbsp;&nbsp;&nbsp;Loci within heterochromatin</h3>
+<h4><a id="loci"></a>3.3 &nbsp;&nbsp;&nbsp;Loci within heterochromatin</h4>
 <p>Individual loci or DNA segments mapped within heterochromatin should be symbolized with D- symbols (for details of naming DNA segments, see <a href="gene.shtml">Rules for Nomenclature of Genes, Genetic Markers, Alleles, and Mutations in Mouse and Rat</a>). A lowercase h follows the D to indicate the DNA locus is a genetic marker for the heterochromatin region. </p>
 
 <p><blockquote>
 <b>Example:</b>
 <table cellpadding="8">
-<tr><td width="10%" valign="top">Dh1H</td><td valign="top">the first DNA segment within the pericentromeric heterochromatin region of Chr 1 discovered at Harwell.</td></tr>
+<tr><td width="10%">Dh1H</td><td>the first DNA segment within the pericentromeric heterochromatin region of Chr 1 discovered at Harwell.</td></tr>
 </table>
 </blockquote>
 </p>
 
-<h3><a name="centromere"></a>3.4 &nbsp;&nbsp;&nbsp;Centromeres</h3>
+<h4><a id="centromere"></a>3.4 &nbsp;&nbsp;&nbsp;Centromeres</h4>
 
 <p>The centromere itself (as opposed to pericentric heterochromatin) should be denoted by the symbol Cen. Individual loci or DNA segments mapped within the centromere region should be symbolized with D-
 symbols. It should be noted that at present there is no sequence definition for the centromere; Cen refers to the functional unit of the centromere.</p>
 
-<h3><a name="telomere"></a>3.5 &nbsp;&nbsp;&nbsp;Telomeres</h3>
+<h4><a id="telomere"></a>3.5 &nbsp;&nbsp;&nbsp;Telomeres</h4>
 <p>The telomere should be denoted by the symbol Tel. The symbol Tel may be substituted for D in a locus symbol that refers to a locus recognized by a telomere consensus sequence probe. Symbols for such loci (mapping to the telomere region) are italicized and consist of three parts:</p>
 
 <p><ul>
@@ -372,12 +379,12 @@ symbols. It should be noted that at present there is no sequence definition for 
   <li>A number denoting the chromosome</li>
   <li>A letter denoting the centromeric or distal end of the chromosome, namely p for centromeric and q for distal (derived from p and q for short and long arms, respectively).</li>
 </ul>
-
 </p>
+
 <p><blockquote>
 <b>Example:</b>
 <table cellpadding="8">
-<tr><td width="20%" valign="top">Tel14q</td><td valign="top">a telomere sequence on Chromosome 14 at the distal chromosome end</td></tr>
+<tr><td width="20%">Tel14q</td><td>a telomere sequence on Chromosome 14 at the distal chromosome end</td></tr>
 </table>
 </blockquote>
 </p>
@@ -385,29 +392,28 @@ symbols. It should be noted that at present there is no sequence definition for 
 <p><blockquote>
 <b>Examples:</b>
 <table cellpadding="8">
-<tr><td width="20%" valign="top">Tel14p1</td><td valign="top">the first telomere sequence mapped at the centromeric end of Chr 14</td></tr>
-<tr><td valign="top">Tel19q2</td><td valign="top">the second telomere sequence mapped at the distal end of Chr 19</td></tr>
+<tr><td width="20%">Tel14p1</td><td>the first telomere sequence mapped at the centromeric end of Chr 14</td></tr>
+<tr><td>Tel19q2</td><td>the second telomere sequence mapped at the distal end of Chr 19</td></tr>
 </table>
 </blockquote></p>
-
 
 <p>Telomeric sequences mapped to other chromosome regions should be designated as -rs loci and are sequentially numbered (see <a href="gene.shtml">Rules for Nomenclature of Genes, Genetic Markers, Alleles, and Mutations in Mouse and Rat</a> and Sawyer <i>et al.</i>, 1987).</p>
 
 <p><blockquote>
 <b>Example:</b>
 <table cellpadding="8">
-<tr><td width="15%" valign="top">Tel-rs2</td><td valign="top">telomere, related sequence 2. This sequence maps at approximately 33cM on Chr 8.</td></tr>
+<tr><td width="15%">Tel-rs2</td><td>telomere, related sequence 2. This sequence maps at approximately 33cM on Chr 8.</td></tr>
 </table>
 </blockquote>
 </p>
 
-<h3><a name="gband"></a>3.6 &nbsp;&nbsp;&nbsp;G-band polymorphisms</h3>
+<h4><a id="gband"></a>3.6 &nbsp;&nbsp;&nbsp;G-band polymorphisms</h4>
 <p>When a recognizable and heritable variant in size, staining density, etc. of a particular chromosomal G-band is discovered, this should be indicated by giving the designation of the band affected, in accordance with the standard karyotype of the mouse (Evans 1996), with a superscript to
 indicate the variant concerned.</p>
 <p><blockquote>
 <b>Example:</b>
 <table cellpadding="8">
-<tr><td width="50%">Chr 17A2<sup><font size-1>s</font></sup></td>
+<tr><td width="50%">Chr 17A2<sup>s</sup></td>
 <td>small A2 band in Chr 17</td></tr>
 </table>
 </blockquote>
@@ -416,18 +422,16 @@ indicate the variant concerned.</p>
 <p>When a supernumerary band becomes visible, this may be due to a small duplication, and if so should be designated as such. If the supernumerary band is due not to a duplication but to a further resolution within a band, then a new band should be designated as a subdivision of the
 appropriate known band (see <a href="#general">Section 1</a> above).</p>
 
-<h2><a name="nomenuse"></a>4.&nbsp;&nbsp;&nbsp;Use of Human Chromosome Nomenclature</h2>
+<h3><a id="nomenuse"></a>4.&nbsp;&nbsp;&nbsp;Use of Human Chromosome Nomenclature</h3>
 
 <p>Chromosomal complements may be described using the type of nomenclature used for human chromosomes when dealing with whole arm changes. In this case the number of chromosomes is specified, followed by a comma and a specification of the whole arm chromosome change. Symbols used to designate
 these whole arm chromosome changes are:</p>
 
 <p><ul>
-  <li>"+" to indicate the presence of a specific additional
-autosome</li>
+  <li>"+" to indicate the presence of a specific additional autosome</li>
   <li>"&#150;" to indicate the absence of a specific autosome</li>
   <li>"O" to indicate a missing sex chromosome</li>
-  <li>Additional Xs or Ys to indicate supernumerary sex
-chromosomes</li>
+  <li>Additional Xs or Ys to indicate supernumerary sex chromosomes</li>
 </ul>
 </p>
 <p>For mosaics a double slash is used to separate the components of the chromosomal mosaic.</p>
@@ -435,15 +439,15 @@ chromosomes</li>
 <p><blockquote>
 <b>Examples:</b>
 <table cellpadding="8">
-<tr><td width="20%" valign="top">41,XY+13</td><td valign="top">the normal mouse male complement with an additional copy of Chr 13</td></tr>
-<tr><td valign="top">39,XO</td><td valign="top">a female mouse complement missing a Chr X</td></tr>
-<tr><td valign="top">39,XO//41,XYY</td><td valign="top">a mosaic where one component is a
+<tr><td width="20%">41,XY+13</td><td>the normal mouse male complement with an additional copy of Chr 13</td></tr>
+<tr><td>39,XO</td><td>a female mouse complement missing a Chr X</td></tr>
+<tr><td>39,XO//41,XYY</td><td>a mosaic where one component is a
 female XO and the other a male component carrying an extra Chr Y.</td></tr>
 </table>
 </blockquote>
 </p>
 
-<h2><a name="references"></a>5.&nbsp;&nbsp;&nbsp; References</h2>
+<h3><a id="references"></a>5.&nbsp;&nbsp;&nbsp; References</h3>
 
 <p>Beechey, C.V., Evans, E.P. 1996. Numerical variants and structural rearrangements. In: Genetic Variants and Strains of the Laboratory Mouse, Lyon, M.F., Rastan, S., and Brown, S.D.M. (eds.), Third Edition, Volume 2, Oxford University Press, Oxford.</p>
 
