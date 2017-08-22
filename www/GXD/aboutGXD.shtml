@@ -2,6 +2,15 @@
 <title>MGI-About the Gene Expression Database (GXD)</title>
 <!--#include file='include/templateBodyStart.html'--> 
 
+<style type="text/css">
+
+h3 {   
+    font-size: 1.1em;
+    font-weight: bold;
+}
+
+</style>
+
 <!-- Title Bar -->
   <div id="titleBarWrapperGxd">	
 	<div id="gxdLogoDiv">
@@ -19,14 +28,14 @@
 grant HD062499.
 </p>
 <p>This page provides information about:
-<p>
-<UL>
-<LI><a href="#key">Key Concepts of GXD</a></li>
-<LI><A HREF="#acquisition">Data Acquisition</a></li>
-<LI><A HREF="#forms">Gene Expression Query Forms</A></li>
-<LI><A HREF="#adult_dict">Adult Mouse Anatomy Ontology</A></li>
-<LI><A HREF="#whoswho">Who's Who in GXD and other MGI projects</A></li>
-<li><a href="#pubs">Selected Publications</a></li>
+
+<ul>
+ <li><a href="#key">Key Concepts of GXD</a></li>
+ <li><a href="#acquisition">Data Acquisition</a></li>
+ <li><a href="#forms">Gene Expression Query Forms</a></li>
+ <li><a href="#adult_dict">Adult Mouse Anatomy Ontology</a></li>
+ <li><a href="#whoswho">Who's Who in GXD and other MGI projects</a></li>
+ <li><a href="#pubs">Selected Publications</a></li>
 </ul>
 
 <h3><a id="key"></a>Key Concepts of GXD</h3>

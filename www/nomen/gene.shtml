@@ -1,6 +1,25 @@
 <!--#include file='include/templateHead.html'--> 
 <title>MGI-Guidelines for Nomenclature of Genes, Genetic Markers, Alleles, & Mutations in Mouse & Rat</title>
 <!--#include file='include/templateBodyStart.html'--> 
+
+<style type="text/css">
+
+h2 {   
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+h3 {   
+    font-size: 1.1em;
+    font-weight: bold;
+}
+
+h4 {
+     font-weight: bold;
+}
+
+</style>
+
 <!--titleBar-->
 
 <div id="titleBarWrapper">
@@ -13,20 +32,14 @@
 <center>  <span class="titleBarSubTitle"> Revised: December, 2015<span>
 </center>
 
-<style>
-	H2 { font-size: 1.3em 
-	}
-	H3 { font-size: 1.1em 
-}
-</style>
 
-<h3 align=center>International Committee on Standardized Genetic Nomenclature for Mice</h3>
-<h3 align=center><font size="-1"><i>Chairperson:</i> Dr. Janan T. Eppig <br>
-(e-mail:<a href="mailto:janan.eppig@jax.org">janan.eppig@jax.org</a>)</font></h3>
+<h3 style="text-align: center">International Committee on Standardized Genetic Nomenclature for Mice</h3>
+<p style="text-align: center"><i>Chairperson:</i> Dr. Janan T. Eppig <br>
+(e-mail:<a href="mailto:janan.eppig@jax.org">janan.eppig@jax.org</a>)</p>
 
-<h3 align=center>Rat Genome and Nomenclature Committee</h3>
-<h3 align=center><font size="-1"><I>Chairperson:</i> Dr. Mary Shimoyama<br>
-(e-mail: <A HREF="mailto:shimoyama@mcw.edu">shimoyama@mcw.edu</A>)</font></h3>
+<h3 style="text-align: center">Rat Genome and Nomenclature Committee</h3>
+<p style="text-align: center"><I>Chairperson:</i> Dr. Mary Shimoyama<br>
+(e-mail: <a href="mailto:shimoyama@mcw.edu">shimoyama@mcw.edu</a>)</p>
 <br>
 
 <p>Rules for mouse genetic nomenclature were first published by Dunn, Gruneberg, and Snell (1940) and subsequent revisions published by the International Committee for Standardized Genetic Nomenclature in Mice (1963, 1973, 1981, 1989, 1996). The most recent publication of mouse nomenclature guidelines can be found in Eppig (2006). Users should be advised, however, that this web version represents the current nomenclature policies of the International Committee for Standardized Genetic Nomenclature for Mice and takes precedent over previously published versions.</p>
@@ -652,7 +665,7 @@ letter preceding the serial number in QTL symbols.</p>
 <p><blockquote>
 <b>Examples:</b>
 <table cellpadding="4" width="!">
-<tr><td rowspan="3" valign="top">in mouse</td><td><i>Cafq1</i></td><td>caffeine metabolism QTL 1</td></tr>
+<tr><td rowspan="3" valign="top">in mouse&nbsp;&nbsp;</td><td><i>Cafq1</i></td><td>caffeine metabolism QTL 1</td></tr>
 <tr><td><i>Cafq2</i></td><td>caffeine metabolism QTL 2</td></tr>
 <tr><td><i>Cafq3</i>&nbsp;&nbsp;</td><td>caffeine metabolism QTL 3</td></tr>
 
