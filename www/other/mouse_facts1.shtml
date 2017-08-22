@@ -11,90 +11,70 @@
 <!-- main body table -->
 <table width="75%" cellpadding="2" align="center">
  <tr><td>
- <!-- TOC table -->
-      <table class="toc" width="100%">
-	<tr><td>
-            <ul>
-               <!--<li><a href="#intro">Introduction</a> |</li>-->
-               <li><a href="#genome_length">Mouse Genome Length Estimates</a></li> |
-               <li><a href="#chromosomal_size">Mouse Chromosomal Size</a></li> |
-               <li><a href="#codon_usage">Codon Usage</a></li> |
-       	       <li><a href="#physiology">Mouse Physiology</a></li>
-            </td>
-         </tr>
+<!-- TOC table -->
+<table class="toc" width="100%">
+ <tr><td>
+      <a href="#genome_length">Mouse Genome Length Estimates</a> |
+      <a href="#chromosomal_size">Mouse Chromosomal Size</a> |
+      <a href="#codon_usage">Codon Usage</a> |
+      <a href="#physiology">Mouse Physiology</a>
+     </td>
+ </tr> 
+</table>
+<!-- end TOC table -->
 
-        </table>
-    <!-- end TOC table -->
+</td></tr>
 
-	</td></tr>
-
-	<tr><td>
+<tr><td>
 
 <!-- section1 table -->
    <a id="intro"></a>
 <table class="outline" width="100%">
-			<tr>
-				<td class="enhance">
-
-				</td>
-			</tr>
-			<tr>
-
-				<td>
-					<dl class="linkedList">
-			            	<dt>The "laboratory mouse" originated from a mixture of <i>M. m. domesticus</i>, <i>M. m. musculus</i>, and <i>M. m. molossius</i> subspecies. An inbred strain of the laboratory
+  <tr><td class="enhance"></td>
+  </tr>
+  <tr><td>
+      <dl class="linkedList">
+      <dt>The "laboratory mouse" originated from a mixture of <i>M. m. domesticus</i>, <i>M. m. musculus</i>, and <i>M. m. molossius</i> subspecies. An inbred strain of the laboratory
  mouse is defined as a strain that has been brother/sister mated for 20
  or more consecutive generations and can be traced to a single ancestral
  pair. For further information  about inbred strains of mice see
 <a href="<!--#include file='include/homepages_url.html'-->strains_SNPs.shtml">Strains, SNPs and Polymorphisms</a>.
-</dt>
-</dl>
-				</td>
-			</tr>
+      </dt>
+      </dl> 
+    </td>
+  </tr>
 </table>
- <!--end of section1 table -->
-
-	</td></tr>
-
-        <tr><td>
+<!--end of section1 table -->
+  
+  </td></tr>
+  
+  <tr><td>
 <!-- section2 table -->
-		<a id="genome_length"></a>
+<a id="genome_length"></a>
 <table class="outline" width="100%">
-
-			<tr>
-				<td class="enhance">
-					Mouse Genome Length Estimates
-				</td>
-			</tr>
-			<tr >
-				<td>
-					<dl class="linkedList">
-					<dt></dt>
-			            <dd><table class="mgitable">
-                            <tr>
-                            <td valign=top><a href="http://www.ensembl.org/Mus_musculus/index.html">2,716,965,481</a> bp</td>
-                            <td valign=top>Reference assembly (C57BL/6J, "golden path") length: the sum of non-redundant top level sequence regions <A HREF="<!--#include file="include/fewi_url.html"-->reference/J:80507">(J:80507).</a></td></tr>
-                            <tr><td valign=top>2.5 x 10<sup>9</sup> bp</td>
-                            <td valign=top>Mouse Genome Sequencing Consortium. 2002. Initial sequencing and comparative analysis of the mouse genome. Nature 420: 520-562.</td></tr>
-                            <tr>
-                            <td valign=top>1355.5 cM</td>
-                            <td valign=top>BSS and BSB crosses: Rowe LB; Barter ME; Kelmenson JA; Eppig J. 2003. Genome Res 13(1):122-33
-                            (<A HREF="<!--#include file="include/fewi_url.html"-->reference/J:81431">J:81431</a>).
-                             </td>
-                            </tr>
-                            <tr>
-                            <td valign=top>1450 cM</td>
-                            <td valign=top>Copeland, NG, et al. 1993. Science 62:57-66. (<A HREF="<!--#include file="include/fewi_url.html"-->reference/J:14384">J:14384</A>).</td>
-                            </tr>
-                            <tr><td valign=top>1360.9 cM</td>
-                            <td valign=top>Dietrich, WF et al. 1996. Nature Mar 14:380(6570)149-52 (<A HREF="<!--#include file="include/fewi_url.html"-->reference/J:34212"> J:34212</A>).</td>
-                            </tr>
-
-					    </table>
-                            </dd>
-
-			</dl>
-				</td>
+  <tr><td class="enhance">Mouse Genome Length Estimates</td>
+  </tr>
+  <tr><td>
+	  <dl class="linkedList">
+	  <dt></dt>
+		<dd><table class="mgitable">
+             <tr><td><a href="http://www.ensembl.org/Mus_musculus/index.html">2,716,965,481</a> bp</td>
+                 <td>Reference assembly (C57BL/6J, "golden path") length: the sum of non-redundant top level sequence regions <a href="<!--#include file="include/fewi_url.html"-->reference/J:80507">(J:80507).</a></td></tr>
+              <tr><td>2.5 x 10<sup>9</sup> bp</td>
+                  <td>Mouse Genome Sequencing Consortium. 2002. Initial sequencing and comparative analysis of the mouse genome. Nature 420: 520-562.</td></tr>
+             <tr><td>1355.5 cM</td>
+                 <td>BSS and BSB crosses: Rowe LB; Barter ME; Kelmenson JA; Eppig J. 2003. Genome Res 13(1):122-33 (a href="<!--#include file="include/fewi_url.html"-->reference/J:81431">J:81431</a>).</td>
+              </tr>
+              <tr><td>1450 cM</td>
+                  <td>Copeland, NG, et al. 1993. Science 62:57-66. (<a href="<!--#include file="include/fewi_url.html"-->reference/J:14384">J:14384</a>).</td>
+              </tr>
+              <tr><td>1360.9 cM</td>
+                  <td>Dietrich, WF et al. 1996. Nature Mar 14:380(6570)149-52 (<a href="<!--#include file="include/fewi_url.html"-->reference/J:34212"> J:34212</a>).</td>
+              </tr>
+             </table>
+            </dd>
+            </dl>
+			</td>
 			</tr>
 </table>
  <!--end of section1 table -->
@@ -106,15 +86,13 @@
 
 		<a id="chromosomal_size"></a>
 <table class="outline" width="100%">
-			<tr>
-			<td class="enhance">Mouse Chromosomal Size</td>
-			</tr>
-			<tr>
-			<td>
-			<dl class="linkedList">
-					<dt><font size="-1">Mapped Length represents the (MGI) estimated cM position of the most distally placed locus on that chromosome. Total Estimated Size omits centromeres and telomeres which would add, on average, ~8 Mb per chromosome or ~160 Mb to the genome. It also omits uncaptured gaps between supercontigs.</font>
-					</dt>
-					<dd><blockquote>
+  <tr><td class="enhance">Mouse Chromosomal Size</td>
+  </tr>
+  <tr><td>
+	  <dl class="linkedList">
+	  <dt><font size="-1">Mapped Length represents the (MGI) estimated cM position of the most distally placed locus on that chromosome. Total Estimated Size omits centromeres and telomeres which would add, on average, ~8 Mb per chromosome or ~160 Mb to the genome. It also omits uncaptured gaps between supercontigs.</font>
+	   </dt>
+	  <dd><blockquote>
 
 <table class="mgitable">
 
@@ -144,104 +122,92 @@
 <tr><td bgcolor="#EEEEEE">Total:</td><td bgcolor="#EEEEEE">&nbsp;&nbsp;&nbsp;&nbsp;1441.2</td>
 <td align="center" bgcolor="#EEEEEE"><a href="https://www.ncbi.nlm.nih.gov/genome?term=mus%20musculus">2800</a></td></tr>
 <tr><td colspan="3" align="right">nda = No data available</td></tr>
+  </table>
+  </blockquote>
+  </dl></td>
 </table>
-</td>
-</table>
-</BLOCKQUOTE>
 
-				</td>
+	</td>
 
- <!--end of section2 table -->
+<!--end of section2 table -->
 
-	</td></tr>
+  </td></tr>
 
-        <tr><td>
+  <tr><td>
+    
 <!-- section3 table -->
 		<a id="codon_usage"></a>
 <table class="outline" width="100%">
-
-			<tr>
-				<td class="enhance">
-					Codon Usage
-				</td>
-			</tr>
-			<tr >
-				<td>
-					<dl class="linkedList">
-					<dt></dt>
-					<dd><a href="http://www.kazusa.or.jp/codon/cgi-bin/showcodon.cgi?species=10092">CUTG:
+  <tr><td class="enhance">Codon Usage</td>
+  </tr>
+  <tr><td>
+	  <dl class="linkedList">
+		<dt></dt>
+		<dd><a href="http://www.kazusa.or.jp/codon/cgi-bin/showcodon.cgi?species=10092">CUTG:
 Codon Usage Tabulated from Genbank</a>
- 				</dd>
-				</dl>
-			</td>
-		</tr>
+ 		 </dd>
+		</dl>
+		</td>
+	</tr>
 </table>
  <!--end of section3 table -->
 
-	</td></tr>
+  </td></tr>
 
-        <tr><td>
+  <tr><td>
 <!-- section2 table -->
 		<a id="physiology"></a>
 <table class="outline" width="100%">
-
-			<tr>
-				<td class="enhance">
-					Mouse Physiology
-				</td>
-			</tr>
-			<tr>
-				<td>
-					<dl class="linkedList">
-					<dt>The estimates below are based on information in <a href="<!--#include file='include/greenbook_url.html'-->"><i>Biology
-of the Laboratory Mouse</i></a> (the Staff of The Jackson Laboratory, E. Green, ed. 1966, Dover Publications, New York)  and in the <A HREF="http://phenome.jax.org/db/q?rtn=docs/home">Mouse Phenome Database (MPD)</A> at the Jackson Laboratory.</dt>
-					<dd><STRONG>Note:</STRONG> Strain variation can affect these values significantly.</dd>
-					<dt><b>General</b></dt>
-					<dd><b>Body weight:</b> average ~20 g; highly variable</dd>
+  <tr><td class="enhance">Mouse Physiology</td>
+  </tr>
+  <tr><td>
+		<dl class="linkedList">
+		<dt>The estimates below are based on information in <a href="<!--#include file='include/greenbook_url.html'-->"><i>Biology
+of the Laboratory Mouse</i></a> (the Staff of The Jackson Laboratory, E. Green, ed. 1966, Dover Publications, New York)  and in the <a href="https://phenome.jax.org">Mouse Phenome Database (MPD)</a> at The Jackson Laboratory.</dt>
+		<dd><STRONG>Note:</STRONG> Strain variation can affect these values significantly.</dd>
+		<dt><b>General</b></dt>
+		<dd><b>Body weight:</b> average ~20 g; highly variable</dd>
 					<!--<dd><a href="http://jaxmice.jax.org/support/weight/index.html">Weight charts</a> for select JAX&reg; Mice strains </dd>-->
-					<dd>Mouse Phenome Database: <a href="http://phenome.jax.org/db/q?rtn=meas/catlister&req=Cbody+weight+size+and+growth">body weight</a></dd>
-					<dd><b>Body Temperature:</b> ~36.9 C (in addition to strain, variables are age, sex, environmental conditions)</dd>
-					<dd><b>Lifespan:</b> 1.3 - 3 years; highly variable</dd>
+		<dd>Mouse Phenome Database: <a href="https://phenome.jax.org/ontologies/VT:0001259">body weight</a></dd>
+		<dd><b>Body Temperature:</b> ~36.9 C (in addition to strain, variables are age, sex, environmental conditions)</dd>
+		<dd><b>Lifespan:</b> 1.3 - 3 years; highly variable</dd>
 
 
-					<dt><b>Reproduction</b></dt>
-					<dd><b>Sexual maturity: </b>after ~4 weeks of age; highly variable</dd>
-					<dd><b>Estrus cycle frequency:</b> every ~4-5 days</dd>
-					<dd><b>Gestation:</b> Average 19-21 days</dd>
-					<dd><b>Litter size:</b> usually 1-10 pups - highly variable due to genetic
+	     <dt><b>Reproduction</b></dt>
+		  <dd><b>Sexual maturity: </b>after ~4 weeks of age; highly variable</dd>
+		  <dd><b>Estrus cycle frequency:</b> every ~4-5 days</dd>
+		  <dd><b>Gestation:</b> Average 19-21 days</dd>
+		  <dd><b>Litter size:</b> usually 1-10 pups - highly variable due to genetic
 and environmental factors; tends to increase for the first few litters, then decrease with age</dd>
-					<dd><b>Reproductive lifespan of a female:</b> approaches 2 years in some
+		  <dd><b>Reproductive lifespan of a female:</b> approaches 2 years in some
 strains</dd>
-					<dd><b>Lactation:</b> duration ~4 weeks</dd>
-					<dd>Mouse Phenome Database: <A HREF="http://phenome.jax.org/db/q?rtn=meas/catlister&req=Creproduction">reproduction data</A></dd>
+		  <dd><b>Lactation:</b> duration ~4 weeks</dd>
+		  <dd>Mouse Phenome Database: <a href="https://phenome.jax.org/ontologies/VT:0005389">reproduction data</a></dd>
 
-					<dt><b>Circulation</b></dt>
-					<dd><b>Total serum protein:</b> ~4-7 g/100 ml</dd>
-					<dd><b>Blood volume:</b> ~5.5 ml per 100 g body weight</dd>
-					<dd><b>Heart rate:</b> Adult: 632 +/- 51.3 beats per minute; Newborn: 286 +/- 56.8 beats per minute</dd>
-					<dd>Mouse Phenome Database: <A HREF="http://phenome.jax.org/db/q?rtn=meas/catlister&req=Ccardiovascular">cardiovascular</A></dd>
-					<dd><b>Systolic pressure:</b> 83-164 mm Hg</dd>
-					<dd><b>Blood pH:</b> 7.3-7.4</dd>
-					<dd>Mouse Phenome Database: <A HREF="http://phenome.jax.org/db/q?rtn=meas/catlister&req=Dblood--clinical%20chemistryqqq43">pH</a>, <a href="http://phenome.jax.org/db/q?rtn=meas/catlister&req=Cblood--clinical%20chemistry">blood chemistry</a></dd>
+		 <dt><b>Circulation</b></dt>
+		  <dd><b>Total serum protein:</b> ~4-7 g/100 ml</dd>
+		  <dd><b>Blood volume:</b> ~5.5 ml per 100 g body weight</dd>
+		  <dd><b>Heart rate:</b> Adult: 632 +/- 51.3 beats per minute; Newborn: 286 +/- 56.8 beats per minute</dd>
+		  <dd>Mouse Phenome Database: <a href="https://phenome.jax.org/ontologies/VT:1000784">cardiovascular</a></dd>
+		  <dd><b>Systolic pressure:</b> 83-164 mm Hg</dd>
+		  <dd><b>Blood pH:</b> 7.3-7.4</dd>
+		  <dd>Mouse Phenome Database: <a href="https://phenome.jax.org/ontologies/VT:0003027">pH</a>, <a href="https://phenome.jax.org/ontologies/VT:0015078">blood chemistry</a></dd>
 
-					<dt><b>Respiration</b></dt>
-					<dd><b>Respiratory rate:</b> ~163 per minute</dd>
-					<dd>Mouse Phenome Database:  <A HREF="http://phenome.jax.org/db/q?rtn=meas/catlister&req=Crespiratory">respiratory function</A></dd>
-					<dd><b>Tidal volume:</b> ~0.15 ml</dd>
+		  <dt><b>Respiration</b></dt>
+		   <dd><b>Respiratory rate:</b> ~163 per minute</dd>
+		   <dd>Mouse Phenome Database:  <a href="https://phenome.jax.org/ontologies/VT:0005388">respiratory function</a></dd>
+		    <dd><b>Tidal volume:</b> ~0.15 ml</dd>
 
-					<dt><b>Urinary Tract</b></dt>
-					<dd><b>Average urine output:</b> ~1.6 ml per 24 hr</dd>
-					<dd><b>Average water intake:</b> ~ 5 ml per 24 hr</dd>
+			<dt><b>Urinary Tract</b></dt>
+			 <dd><b>Average urine output:</b> ~1.6 ml per 24 hr</dd>
+			 <dd><b>Average water intake:</b> ~ 5 ml per 24 hr</dd>
 
-</div>
 </dl>
-
 		</td>
-			</tr>
+		</tr>
 
 </table>
 	</td></tr>
-
 
 </table>
 
@@ -249,6 +215,3 @@ strains</dd>
 <!--#include file='include/templateBodyStop.html'-->
 </body>
 </html>
-
-
-
