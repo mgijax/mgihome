@@ -10,21 +10,19 @@
 <!--titleBar-->
 
 
-<p><a id="Query"></A>Genes in MGI are annotated using GO terms.  Two MGI query forms, the <a href="<!--#include file='include/fewi_url.html'-->marker" target="_blank">Genes and Markers Query Form</a> and <a href="<!--#include file='include/fewi_url.html'-->gxd" target="_blank">Gene Expression Data Query Form</a>, as well as the <a href="<!--#include file='include/fewi_url.html'-->vocab/gene_ontology" target="_blank">Gene Ontology Browser</a>, provide a search field where you can enter a GO term or phrase for searching.  Once you submit the query, the system checks the ontologies to be examined.  To improve and refine your searches, you should become familiar with the available terms in the ontologies (see the <i>Molecular Function, Cellular Component,</i> and <i>Biological Process</i> links). </p>
-
-<p><ul>
-<li>You can search by entering all or a portion of a single GO vocabulary entry. Often, GO entries are phrases containing several words. Use the asterisk (*) as a wild-card to broaden your search.</li><br>
-
-<li>You can also use the logical operator AND between GO terms within the Gene Classifications search field. A search of term1 AND term2 returns the set of markers that are annotated to <b>both</b> term1 and term2. For example, the search string <i>nucleus AND kinase</i> returns all markers whose products are a kinase AND are found in the nucleus.</li><br>
-
-<li>You can browse the GO classifications, copy an entry, and paste it into the <b>Gene Ontology Classifications (GO)</b> field. </li><br>
-    <li>You can restrict your search to markers with attributes in only one or two of the three categories (the same term can occur in two or three GO categories).  </li><br>
-
-<li>Please note that the GO vocabularies are hierarchical. Consequently, a search returns gene records annotated to terms that match your query <i>and</i> to records annotated to more detailed terms related to your query (but not necessarily containing the text you entered). For example, if you search the GO Browser and for either <i>trypsin activity</i> or this term's GO ID (<i>GO:0004295</i>), the result is approximately 44 genes and 44 annotations.  However, if you enter <i>serine-type endopeptidase</i> (or GO:0004252), the result is much larger (approximately 191 genes and 330 annotations) because the subterm <b>trypsin</b> is included in the results. 
-</li>
-</ul>
-
+<p><a id="Query"></A>Genes in MGI are annotated using GO terms.  Two MGI query forms, the <a href="<!--#include file='include/fewi_url.html'-->marker" target="_blank">Genes and Markers Query Form</a> and <a href="<!--#include file='include/fewi_url.html'-->gxd" target="_blank">Gene Expression Data Query Form</a>, as well as the <a href="<!--#include file='include/fewi_url.html'-->vocab/gene_ontology" target="_blank">Gene Ontology Browser</a>, provide a search field where you can enter a GO term or phrase for searching.  Once you submit the query, the system checks the ontologies to be examined.  To improve and refine your searches, you should become familiar with the available terms in the ontologies (see the <i>Molecular Function, Cellular Component,</i> and <i>Biological Process</i> links). 
 </p>
+
+<p>
+<ul style="line-height:1.6;"> 
+ <li>You can search by entering all or a portion of a single GO vocabulary entry. Often, GO entries are phrases containing several words. Use the asterisk (*) as a wild-card to broaden your search.</li>
+ <li>You can also use the logical operator AND between GO terms within the Gene Classifications search field. A search of term1 AND term2 returns the set of markers that are annotated to <b>both</b> term1 and term2. For example, the search string <i>nucleus AND kinase</i> returns all markers whose products are a kinase AND are found in the nucleus.</li>
+ <li>You can browse the GO classifications, copy an entry, and paste it into the <b>Gene Ontology Classifications (GO)</b> field. </li>
+ <li>You can restrict your search to markers with attributes in only one or two of the three categories (the same term can occur in two or three GO categories).</li>
+ <li>Please note that the GO vocabularies are hierarchical. Consequently, a search returns gene records annotated to terms that match your query <i>and</i> to records annotated to more detailed terms related to your query (but not necessarily containing the text you entered). For example, if you search the GO Browser and for either <i>trypsin activity</i> or this term's GO ID (<i>GO:0004295</i>), the result is approximately 44 genes and 44 annotations.  However, if you enter <i>serine-type endopeptidase</i> (or GO:0004252), the result is much larger (approximately 191 genes and 330 annotations) because the subterm <b>trypsin</b> is included in the results. </li>
+</ul>
+</p>
+
 <!--Please note that the current implementation is a
 text search only, and does not identify genes at lower levels of the
 hierarchical vocabulary if the lower level terms do not contain the text you
@@ -34,7 +32,7 @@ not identify genes that had the annotation <B>fructose catabolism</B>.-->
 associated ontology, GO term, evidence statement, and publication from which
 the annotation was discerned.</p>
 <P>
-MGI queries return information about mouse genes.  To access the GO annotations for many organisms, use the <A HREF=http://www.godatabase.org/cgi-bin/go.cgi target="_top">AmiGO</A> browser.
+MGI queries return information about mouse genes.  To access the GO annotations for many organisms, use the <a href=http://amigo.geneontology.org/amigo target="_top">AmiGO</a> browser.
 </P>
 <!--To query the GO
 simultaneously across multiple species, a prototype query interface is
