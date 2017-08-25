@@ -10,30 +10,22 @@
   </div> 
 <!--titleBar-->
 
-
-<P><A NAME="Annotating"></A>
-MGI assigns GO annotation by either manual curation of published experimental literature or automated electronic-based methods. The annotated records include the supporting references. 
-MGI collaborates with several groups outside of MGI in collecting GO annotation for mouse genes. See <a href="go_curators.shtml">GO Curators for Mouse</a> for the list of groups that provide  annotations for mouse genes.</p>
-<p>Electronic-based annotation strategies include:</P>
-<UL>
-<LI>mapping the Enzyme Commission (EC) numbers associated with a gene to the EC number attached to GO terms (referenced with J:72245)</LI>
-<LI>translating SWISS-PROT "keywords" associated with a gene to appropriate GO terms (referenced with J:60000)</LI>
-<li>mapping InterPro domains associated with a gene to GO terms (referenced with J:72247)</li>
-<LI>associating GO terms to a gene, based upon proper gene nomenclature (referenced with J:56000).   For example, G-protein linked receptor activity genes can be annotated as:
-    <UL>
-    <LI>Molecular Function: G protein linked receptor</LI>    
-    <LI>Cellular Component: integral to plasma membrane</LI>    
-    <LI>Biological Process: G-protein coupled receptor protein signaling pathway</LI>
-    </UL>
-    </li>
-
-
-<li>reviewed computational alanysis (RCA) performed by the Riken consortium (attributed to MGI reference J:80000)</li>
- 
-</UL> 
-
+<p><a id="Annotating"></a>
+MGI assigns GO annotation by either manual curation of published experimental literature or automated electronic-based methods. The annotated records include the supporting references. MGI collaborates with several groups outside of MGI in collecting GO annotation for mouse genes. See <a href="go_curators.shtml">GO Curators for Mouse</a> for the list of groups that provide  annotations for mouse genes.</p>
+<p>Electronic-based annotation strategies include:</p>
+<ul>
+ <li>mapping the Enzyme Commission (EC) numbers associated with a gene to the EC number attached to GO terms (referenced with J:72245)</li>
+ <li>translating SWISS-PROT "keywords" associated with a gene to appropriate GO terms (referenced with J:60000)</li>
+ <li>mapping InterPro domains associated with a gene to GO terms (referenced with J:72247)</li>
+ <li>associating GO terms to a gene, based upon proper gene nomenclature (referenced with J:56000).   For example, G-protein linked receptor activity genes can be annotated as:
+ <ul>
+    <li>Molecular Function: G protein linked receptor</li>    
+    <li>Cellular Component: integral to plasma membrane</li>    
+    <li>Biological Process: G-protein coupled receptor protein signaling pathway</li>
+  </ul></li>
+ <li>reviewed computational alanysis (RCA) performed by the Riken consortium (attributed to MGI reference J:80000)</li>
+</ul> 
 
 <p>If you have questions, need assistance, or wish to report a problem with specific annotations, please contact MGI at mgi-help@jax.org.</p>
-
 
 <!--#include file='include/templateBodyStop.html'--> 
