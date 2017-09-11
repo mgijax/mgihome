@@ -6,7 +6,7 @@
 
 <!-- Title Bar -->
   <div id="titleBarWrapper">
-  <span class="titleBarMainTitle">Mouse Resources & Model Organism Links</span>
+  <span class="titleBarMainTitle">Mouse Resources &amp; Model Organism Links</span>
   </div> 
 <!--end of titleBar-->
 
@@ -14,159 +14,137 @@
 <table width="75%" cellpadding="2" align="center">
  <tr><td>
  <!-- TOC table -->
-      <table class="toc" width="100%">
-	<tr><td>
-            <ul>
-               <li><a href="#mouse_res">Mouse Resources</a></li> | 
-               <li><a href="#mammal_model">Model Organism Sites</a></li> | 
-               <li><a href="#Misc">Miscellaneous Useful Tools</a></li> | 
-               <li><a href="#MolecRes">Molecular Resources</a></li> 
-             </ul>
-            </td>
-         </tr>
+<table class="toc" width="100%">
+  <tr><td>
+       <ul>
+        <li><a href="#mouse_res">Mouse Resources</a></li> | 
+        <li><a href="#mammal_model">Model Organism Sites</a></li> | 
+        <li><a href="#Misc">Miscellaneous Useful Tools</a></li> | 
+        <li><a href="#MolecRes">Molecular Resources</a></li> 
+       </ul>
+      </td>
+  </tr>
+</table>
+ <!-- end TOC table -->
 
-        </table>
-    <!-- end TOC table -->
+<tr><td>
 
-    <tr><td>
 <!-- section1 table -->
-		<a id="mouse_res"></a>
+ <a id="mouse_res"></a>
 <table class="outline" width="100%">
-
-		<tr>
-			<td class="enhance">
-				Mouse Resources
-			</td>
-		</tr>
-		<tr>
-			<td>
-				<dl class="linkedList"><dt>Find Mice</dt>
-<dd><a href="<!--#include file='include/imsr_home_url.html'-->">International Mouse Strain Resources (IMSR)</a>: database of   inbred, mutant, and genetically engineered mice and ES cell lines available globally. See list of 
+  <tr>
+	<td class="enhance">Mouse Resources</td>
+  </tr>
+  <tr>
+    <td>
+    <dl class="linkedList"><dt>Find Mice</dt>
+    <dd><a href="<!--#include file='include/imsr_home_url.html'-->">International Mouse Strain Resources (IMSR)</a>: database of   inbred, mutant, and genetically engineered mice and ES cell lines available globally. See list of 
 <a href="<!--#include file='include/imsr_home_url.html'-->repository">worldwide participating repositories</a>. </dd>
-<dd>Commercial vendors: <a href="http://www.criver.com/en-US/TrainEducation/RMS/Species/Pages/home.aspx">Charles River Laboratories, Inc.</a>,
+     <dd>Commercial vendors: <a href="http://www.criver.com/en-US/TrainEducation/RMS/Species/Pages/home.aspx">Charles River Laboratories, Inc.</a>,
 <a href="http://www.taconic.com/">Taconic</a>, <a href="http://www.envigo.com/">Envigo (formerly Harlan Sprague Dawley).</a></dd>
-
 <br>
-<dt>Colony Management</dt>
-<dd><a href="http://colonymanagement.jax.org/">JAX Colony Management System (JAX-CMS)</a>: a multi-user relational database management system for managing animal colonies in a research environment (USA)</dd>
-<dd><a href="https://www.helmholtz-muenchen.de/ieg/services/software-downloadsresources/mausdb/about-mausdb/index.html">MausDB</a>: an Open-Source mouse house and phenotyping result management system (Germany)</dd>
-<dd><a href="http://ja.brc.riken.jp/lab/gsc/mouse/AboutUs/DbAbailability.htm">MUSDB</a>: Mutagenesis Universal Support DataBase (Japan)</dd>
-<dd>Commercial vendors: <a href="http://www.bigbench.com">Big Bench Software</a>, <a href="http://www.locustechnology.com/">Locus Technology, Inc.</a>, 
+    <dt>Colony Management</dt>
+    <dd><a href="http://colonymanagement.jax.org/">JAX Colony Management System (JAX-CMS)</a>: a multi-user relational database management system for managing animal colonies in a research environment (USA)</dd>
+    <dd><a href="https://www.helmholtz-muenchen.de/ieg/services/software-downloadsresources/mausdb/about-mausdb/index.html">MausDB</a>: an Open-Source mouse house and phenotyping result management system (Germany)</dd>
+    <dd><a href="http://ja.brc.riken.jp/lab/gsc/mouse/AboutUs/DbAbailability.htm">MUSDB</a>: Mutagenesis Universal Support DataBase (Japan)</dd>
+    <dd>Commercial vendors: <a href="https://www.rockstepsolutions.com">RockStep Solutions</a>, <a href="http://www.locustechnology.com/">Locus Technology, Inc.</a>, 
 <a href="http://www.scionics.de/pyrat">Scionics Computer Innovation GmbH</a>
 </dl>
-
-				</td>
-			</tr>
+    </td>
+  </tr>
 </table>
 <!-- end of section1 table -->
 
 </td></tr>
+<tr><td> 
 
-<tr><td>
 <!-- section2 table -->
-		<a id="mammal_model"></a>
+  <a id="mammal_model"></a>
 <table class="outline" width="100%">
-
-			<tr>
-				<td class="enhance">
-					Model Organism and General Web Resources
-				</td>
-			</tr>
-			<tr >
-				<td>
-					<dl class="linkedList"><dt>Human:</dt>
-<dd><a href="http://www.hgvs.org/">Human Genome Variation Society (HGVS):</a> human variation databases and links</dd>
-
-<dd><a href="http://www.hgmd.org/">Human Gene Mutation Database (HGMD)</a>: published gene lesions responsible for human inherited disease</dd>
-             
-<dd><a href="https://www.omim.org/">Online Mendelian Inheritance in Man (OMIM)</a> - catalog of human genes and genetic disorders</dd>
+  <tr>
+   <td class="enhance">Model Organism and General Web Resources</td>
+  </tr>
+  <tr>
+   <td>
+   <dl class="linkedList"><dt>Human:</dt>
+    <dd><a href="http://www.hgvs.org/">Human Genome Variation Society (HGVS):</a> human variation databases and links</dd>
+    <dd><a href="http://www.hgmd.org/">Human Gene Mutation Database (HGMD)</a>: published gene lesions responsible for human inherited disease</dd>
+    <dd><a href="https://www.omim.org/">Online Mendelian Inheritance in Man (OMIM)</a> - catalog of human genes and genetic disorders</dd>
 <br>
-
-<dt>Model Organisms: </dt>
-<dd><a href="http://www.arabidopsis.org/"><i>Arabidopsis</i></a> - TAIR: The Arabidopsis Information Resource </dd>
-<dd><i>C. elegans</i>: genetics and genomics<br>
-&nbsp;&nbsp;&nbsp;<a href="http://www.wormbase.org/">WormBase</a><br>
-&nbsp;&nbsp;&nbsp;<a href="http://www.wormatlas.org/">Wormatlas</a>: anatomy<br>
-&nbsp;&nbsp;&nbsp;<a href="http://www.wormbook.org/">WormBook</a>:  on-line textbook</a>
-
-
-<dd><a href="http://bovinegenome.org">Cattle</a> - The Bovine Genome Database</dd>
-<dd><a href="http://geisha.arizona.edu/geisha/">Chicken</a> - Geisha: Gallus Expression in-situ Hybridization Analysis</dd>
-<dd><a href="https://research.nhgri.nih.gov/dog_genome/">Dog</a> - NHGRI Dog Genome Project</dd>
-<dd><a href="http://flybase.org"><i>Drosophila</i></a> - FlyBase</dd>
-<dd><a href="http://rgd.mcw.edu/">Rat</a> - RGD: Rat Genome Database</dd>
-<dd><a href="http://www.rhesusbase.org/">Rhesus Monkey</a> - RhesusBase</dd>
-<dd><a href="http://www.yeastgenome.org"><i>Saccharomyces</i></a> - SGD: Saccharomyces Genome Database </dd>
-<dd><a href="http://www.xenbase.org/entry/">Xenopus</a> - XenBase: Xenopus Database</dd>
-<dd><a href="http://zfin.org/">Zebrafish</a> - The Zebrafish Model Organism Database</dd>
+   <dt>Model Organisms: </dt>
+    <dd><a href="http://www.arabidopsis.org/"><i>Arabidopsis</i></a> - TAIR: The Arabidopsis Information Resource </dd>
+    <dd><i>C. elegans</i>: genetics and genomics<br>
+     &nbsp;&nbsp;&nbsp;<a href="http://www.wormbase.org/">WormBase</a><br>
+     &nbsp;&nbsp;&nbsp;<a href="http://www.wormatlas.org/">Wormatlas</a>: anatomy<br>
+     &nbsp;&nbsp;&nbsp;<a href="http://www.wormbook.org/">WormBook</a>:  on-line textbook
+    <dd><a href="http://bovinegenome.org">Cattle</a> - The Bovine Genome Database</dd>
+    <dd><a href="http://geisha.arizona.edu/geisha/">Chicken</a> - Geisha: Gallus Expression in-situ Hybridization Analysis</dd>
+    <dd><a href="https://research.nhgri.nih.gov/dog_genome/">Dog</a> - NHGRI Dog Genome Project</dd>
+    <dd><a href="http://flybase.org"><i>Drosophila</i></a> - FlyBase</dd>
+    <dd><a href="http://rgd.mcw.edu/">Rat</a> - RGD: Rat Genome Database</dd>
+    <dd><a href="http://www.rhesusbase.org/">Rhesus Monkey</a> - RhesusBase</dd>
+    <dd><a href="http://www.yeastgenome.org"><i>Saccharomyces</i></a> - SGD: Saccharomyces Genome Database </dd>
+    <dd><a href="http://www.xenbase.org/entry/">Xenopus</a> - XenBase: Xenopus Database</dd>
+    <dd><a href="http://zfin.org/">Zebrafish</a> - The Zebrafish Model Organism Database</dd>
 <br>
-<dt>Multi-species Animal Sites: </dt>
-<dd><a href="http://www.thearkdb.org/">Animal Genome Database (ArkDB):</a> (cat, chicken, cow, deer, duck, horse, pig, quail, salmon, sea bass, sheep, turkey)</dd>
-<dd><a href="http://www.genome.iastate.edu/">U.S. Livestock Species Genome Projects:</a> (cattle, chicken, horse, sheep, swine, aquaculture)</dd>
-<dd><a href="http://omia.angis.org.au/">Online Mendelian Inheritance in Animals (OMIA)</a>: inherited disorders and traits in 135 animals other than human and mouse</dd>
-<dt>1500 Biological Databases:</dt>
-<dd><a href="http://www.oxfordjournals.org/nar/database/a/">Compilation</a> by the journal of Nucleic Acids Research: (other species, diseases, DNA, RNA, and protein resources)</dd>
-
-</dl>
-
-	</td>
-	</tr>
+   <dt>Multi-species Animal Sites: </dt>
+    <dd><a href="http://www.thearkdb.org/">Animal Genome Database (ArkDB):</a> (cat, chicken, cow, deer, duck, horse, pig, quail, salmon, sea bass, sheep, turkey)</dd>
+    <dd><a href="http://www.genome.iastate.edu/">U.S. Livestock Species Genome Projects:</a> (cattle, chicken, horse, sheep, swine, aquaculture)</dd>
+    <dd><a href="http://omia.angis.org.au/">Online Mendelian Inheritance in Animals (OMIA)</a>: inherited disorders and traits in 135 animals other than human and mouse</dd>
+   <dt>1500 Biological Databases:</dt>
+    <dd><a href="http://www.oxfordjournals.org/nar/database/a/">Compilation</a> by the journal of Nucleic Acids Research: (other species, diseases, DNA, RNA, and protein resources)</dd>
+   </dl>
+   </td>
+  </tr>
 </table>
 <!-- end of section2 table -->
 </td></tr>
 
 <tr><td>
 <!-- section3 table -->
-		<a id="Misc"></a>
+	<a id="Misc"></a>
 <table class="outline" width="100%">
-
-			<tr>
-				<td class="enhance">
-					Miscellaneous Useful Tools
-				</td>
-			</tr>
-			<tr >
-				<td>
-					<dl class="linkedList"><dt><a href="http://jaxmice.jax.org/support/husbandry/identification.html">Mouse identification methods</a>: ear punch codes, tags, tattoos and microchips</dt>
-<dt><a href="http://www.pathology.washington.edu/research/cytopages/spreads/mouse_g_B2.gif">G-banded Mouse Karyotype</a> Image (University of Washington)</dt>
-<dt><a href="http://www.informatics.jax.org/mgihome/lists/lists.shtml">Mouse Electronic Bulletin Board</a> at MGI </dt>
-<dt><a href="http://crispor.tefor.net">CRISPOR</a> software tool for designing target sites for CRISPR</dt>
-<dt><a href="http://www.e-crisp.org/">E-CRISP</a> software tool for designing target sites for CRISPR</dt>
-</dl>
-	</td>
-	</tr>
+  <tr>
+   <td class="enhance">Miscellaneous Useful Tools</td>
+  </tr>
+  <tr>
+   <td><dl class="linkedList"><dt><a href="http://jaxmice.jax.org/support/husbandry/identification.html">Mouse identification methods</a>: ear punch codes, tags, tattoos and microchips</dt>
+   <dt><a href="http://www.pathology.washington.edu/research/cytopages/spreads/mouse_g_B2.gif">G-banded Mouse Karyotype</a> Image (University of Washington)</dt>
+   <dt><a href="http://www.informatics.jax.org/mgihome/lists/lists.shtml">Mouse Electronic Bulletin Board</a> at MGI </dt>
+   <dt><a href="http://crispor.tefor.net">CRISPOR</a> software tool for designing target sites for CRISPR</dt>
+   <dt><a href="http://www.e-crisp.org/">E-CRISP</a> software tool for designing target sites for CRISPR</dt>
+   </dl>
+   </td>
+  </tr>
 </table>
 <!-- end of section3 table -->
 		
- 	</td></tr>	
+</td></tr>	
 	
 <tr><td>
 <!-- section4 table -->
    <a id="MolecRes"></a>
 <table class="outline" width="100%">
-			<tr>
-				<td class="enhance">
-					Molecular Resources
-				</td>
-			</tr>
-			<tr>
-
-				<td>
-					<dl class="linkedList">
-			            	<dt>BACs</dt>
-<dd><a href="http://bacpac.chori.org/">BACPAC Resources Center (BPRC)</a> at Children's Hospital Oakland Research Institute (CHORI)</dd>
-<dd>BAC/PAC products at <a href="http://clones.lifetechnologies.com/cloneinfo.php?clone=bacpac">Life Technologies</a></dd>
+  <tr>
+   <td class="enhance">Molecular Resources</td>
+  </tr>
+  <tr>
+   <td>
+   <dl class="linkedList">
+   <dt>BACs</dt>
+    <dd><a href="http://bacpac.chori.org/">BACPAC Resources Center (BPRC)</a> at Children's Hospital Oakland Research Institute (CHORI)</dd>
+    <dd>BAC/PAC products at <a href="http://clones.lifetechnologies.com/cloneinfo.php?clone=bacpac">Life Technologies</a></dd>
 <br>
-<dt>IMAGE clones </dt>
-<dd><a href="http://www.imageconsortium.org">Integrated Molecular Analysis of Genome Expression</a> (IMAGE) Consortium</dd>
-<dd><a href="http://www.imageconsortium.org/?i=distributors">Distributors</a> of IMAGE clones</dd>
+   <dt>IMAGE clones </dt>
+    <dd><a href="http://www.imageconsortium.org">Integrated Molecular Analysis of Genome Expression</a> (IMAGE) Consortium</dd>
+    <dd><a href="http://www.imageconsortium.org/?i=distributors">Distributors</a> of IMAGE clones</dd>
 <br>
-<dt>MGC clones </dt>
-<dd><a href="https://genecollections.nci.nih.gov/MGC/">Mammalian Gene Collection</a> (MGC) Project</dd>
-<dd><a href="https://genecollections.nci.nih.gov/MGC/Info/Buy">Distributors</a> of MGC clones</dd>
-</dl>
-				</td>
-			</tr>
+   <dt>MGC clones </dt>
+    <dd><a href="https://genecollections.nci.nih.gov/MGC/">Mammalian Gene Collection</a> (MGC) Project</dd>
+    <dd><a href="https://genecollections.nci.nih.gov/MGC/Info/Buy">Distributors</a> of MGC clones</dd>
+   </dl>
+   </td>
+  </tr>
 </table>
  <!--end of section4 table -->
  </td></tr>
