@@ -12,7 +12,11 @@
 	H3 { font-size: 1.3em }
 
   table.bordered {border-collapse:collapse;}
-  table.bordered td { border: 1px solid black;}
+  table.bordered td { border: 1px solid black;
+  	padding: 2px;
+  }
+  tr:nth-child(even){background-color: #f2f2f2}
+  
 </style>
 
 <a id="top"></a>
@@ -71,11 +75,11 @@
 <table class="bordered">
 
 <tr><th>Through...</th><th>MGD links to...</th></tr>
-<tr><td>Markers</td><td>DFCI, DoTS, EC, Ensembl, Entrez, InterPro, NCBI, PDB, UniGene, VEGA</td></tr>
+<tr><td>Markers</td><td>EC, Ensembl, Entrez, InterPro, NCBI, PDB, UniGene, VEGA</td></tr>
 <tr><td>Phenotypes</td><td>On-line  Mendelian Inheritance in Man (OMIM) for human disease data</td></tr>
 <tr><td>SNPs and sequence polymorphisms &nbsp;&nbsp;</td><td>dbSNP</td></tr>
 <tr><td>Homologies</td><td><!--Ark-DB, BovMap,--> Entrez, HGNC, HomoloGene, NCBI, <!--PigBase, SheepBase,--> Ensembl Gene Tree, Uniprot, VEGA, VISTA</td></tr>
-<tr><td>Sequences</td><td>GenBank, RefSeq, SWISS-PROT, TrEMBL, DFCI, DoTS, and NIA mouse gene indices</td></tr>
+<tr><td>Sequences</td><td>GenBank, RefSeq, Uni-PROT, and TrEMBL mouse gene indices</td></tr>
 <tr><td>Molecular probes and clones</td><td>GenBank, EMBL, DDBJ, IMAGE and RIKEN</td></tr>
 <tr><td>References</td><td>PubMed</td></tr>
 </table>
@@ -111,7 +115,7 @@ Phenotypic allele <A HREF="<!--#include file='include/userhelp_url.html'-->ALLEL
 
 <h3><a id="sequence"></a>Sequence Data</h3>
 
-<ul><li>Vast amounts of sequence data are integrated with the biological information in MGD. These include mouse sequences from GenBank, RefSeq, <NOBR>Swiss-Prot</NOBR>, DoTS, and the DFCI and NIA mouse gene indices. </li>
+<ul><li>Vast amounts of sequence data are integrated with the biological information in MGD. These include mouse sequences from GenBank, RefSeq, and <NOBR>Uni-Prot</NOBR>. </li>
 
 <li>MGD contains sequence attributes such as length and provider; data about the clones the sequences were derived from; and the genes the sequences have been associated to. Because of our curated associations between mouse markers and sequences, you can search using  nomenclature, map position, function (GO annotation, InterPro domain), expression (tissue and developmental stage), and phenotypes of mutant alleles.
 </li>
