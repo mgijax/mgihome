@@ -92,7 +92,7 @@ after the first use, <i>e.g.,</i> Chromosome (Chr) 1 and Chr 1. The X and Y chro
 <h4><a id="prefix"></a>2.1 &nbsp;&nbsp;&nbsp;Prefix</h4>
 <p>A chromosome anomaly designation begins with a prefix that denotes the type of anomaly. Each prefix begins with a capital letter, with any subsequent letters being lowercase. The accepted prefixes are:
 <blockquote>
-<table cellpadding=1>
+<table>
 <tr><td>Cen</td><td>Centromere</td></tr>
 <tr><td>Del</td><td>Deletion</td>
 <tr><td>Df</td><td>Deficiency</td></tr>
@@ -104,7 +104,7 @@ after the first use, <i>e.g.,</i> Chromosome (Chr) 1 and Chr 1. The X and Y chro
 <tr><td>Iso</td><td>Isochromosome</td></tr>
 <tr><td>MatDf</td><td>Maternal deficiency</td></tr>
 <tr><td>MatDi</td><td>Maternal disomy</td></tr>
-<tr><td>MatDp</td><td>Maternal duplication</td></tr>
+<tr><td>MatDp&nbsp;&nbsp;</td><td>Maternal duplication</td></tr>
 <tr><td>Ms</td><td>Monosomy</td></tr>
 <tr><td>Ns</td><td>Nullisomy</td></tr>
 <tr><td>PatDf</td><td>Paternal deficiency</td></tr>
@@ -141,7 +141,7 @@ http://dels.nas.edu/global/ilar/lab-codes</a>).
 Laboratory codes are uniquely assigned to institutes or investigators and are usually three to four letters (first letter uppercase, followed by all lowercase).</p>
 <blockquote>
 <B>Examples:</B>
-<table cellpadding=8>
+<table>
 <tr><td>Del(9)4H</td><td>deletion involving Chr 9, the 4<sup>th</sup> deletion from Harwell</td></tr>
 <tr><td>In(15)4H</td><td>inversion involving Chr 15, the 4<sup>th</sup> inversion from Harwell</td></tr>
 <tr><td>Is(13;1)4H</td><td>insertion of part of Chr 13 into Chr 1; the 4<sup>th</sup> insertion from Harwell</td></tr>
@@ -156,7 +156,7 @@ Laboratory codes are uniquely assigned to institutes or investigators and are us
 <p>Once the full designation for a chromosome anomaly is written in a document, an abbreviation can be used thereafter. The abbreviation consists of the anomaly prefix plus the serial number designation and Laboratory code. The chromosomal content in parentheses is omitted.</p>
 <p><b>Using the examples from section 2.3:</b>
 <blockquote>
-<table cellpadding=8>
+<table>
 <tr><td><b>Full designation</b>&nbsp;&nbsp;&nbsp;</td><td><b>Abbreviation</b></td></tr>
 <tr><td>Del(9)4H</td><td>Del4H</td></tr>
 <tr><td>In(5)2Rk</td><td>In2Rk</td></tr>
@@ -172,8 +172,8 @@ Laboratory codes are uniquely assigned to institutes or investigators and are us
 
 <p><blockquote>
 <b>Examples:</b>
-<table cellpadding="8">
-<tr><td valign="top"><span style="white-space: nowrap">Rb(16.17)7Bnr T(1;17)190Ca/+ +&nbsp;&nbsp;</span></td><td valign="top">an animal heterozygous for a Robertsonian and a reciprocal translocation, each involving Chr 17. The anomalies are organizationally in &quot;coupling&quot; <i>i.e.,</i> the same Chr 17 is involved in both.</td></tr>
+<table>
+<tr><td valign="top"><span style="white-space: nowrap">Rb(16.17)7Bnr T(1;17)190Ca/+ +&nbsp;&nbsp;&nbsp;</span></td><td valign="top">an animal heterozygous for a Robertsonian and a reciprocal translocation, each involving Chr 17. The anomalies are organizationally in &quot;coupling&quot; <i>i.e.,</i> the same Chr 17 is involved in both.</td></tr>
 
 <tr><td valign="top"><span style="white-space: nowrap">Rb(5.15)3Bnr +/+ In(5)9Rk</span></td><td valign="top">an animal heterozygous for a Robertsonian and heterozygous for an inversion. Because they share a common chromosome, Chr 5, the organization of the anomalies is specified as in &quot;repulsion.&quot;
 </td></tr>
@@ -188,7 +188,7 @@ Laboratory codes are uniquely assigned to institutes or investigators and are us
 
 <p><blockquote>
 <b>Example:</b>
-<table cellpadding="8">
+<table>
 <tr><td>T(In1;5)44H&nbsp;&nbsp;</td><td>an animal carrying a translocation
 between Chrs 1 and 5 in which the Chr 1 segment is inverted. </td>
 </table>
@@ -202,7 +202,7 @@ acrocentric, they do not have a short arm other than a telomere proximal to the 
 
 <p><blockquote>
 <b>Example:</b>
-<table cellpadding="8">
+<table>
 <tr><td>T(Yp;5)21Lub&nbsp;&nbsp;</td><td>translocation involving
 a break in the short arm of the Y Chromosome and the long arm of Chr 5; the 21<sup>st</sup> from Lubeck. </td></tr>
 </table>
@@ -214,7 +214,7 @@ a break in the short arm of the Y Chromosome and the long arm of Chr 5; the 21<s
 
 <p><blockquote>
 <b>Examples:</b>
-<table cellpadding="8">
+<table>
 <tr><td>T(2H1;8A4)26H</td><td>reciprocal translocation having breakpoints in band H1 of Chr 2 and band A4 of Chr 8; the 26<sup>th</sup> from Harwell</td></tr>
 
 <tr><td>In(XA1;XE)1H</td><td>inversion of the region between the
@@ -230,7 +230,7 @@ mutation to albino, Tyr<sup>c</sup>;the 8<sup>th</sup> from Russell</td></tr>
 <p>For pericentric inversions the symbols pq and/or appropriate band numbers should be used.</p>
 <blockquote>
 <B>Examples:</B>
-<table cellpadding=8>
+<table>
 <tr><td>In(8pq)1Rl</td><td>pericentric inversion involving Chr 8; the 1<sup>st</sup> from Russell</td></tr>
 
 <tr><td>In(8pqA2)</td><td>pericentric inversion of the region
@@ -262,7 +262,7 @@ duplication, this can be indicated in the symbol.</p>
 
 <p><blockquote>
 <b>Examples:</b>
-<table cellpadding="8">
+<table>
 <tr><td>MatDi(12)</td><td>maternal disomy for Chr 12</td></tr>
 <tr><td>PatDp(10)</td><td>paternal duplication for a region of Chr 10</td></tr>
 <tr><td>MatDp(dist2)</td><td>maternal duplication for distal Chr 2</td></tr>
@@ -285,7 +285,7 @@ chromosome end) is denoted in parentheses, followed by the serial number and Lab
 
 <p><blockquote>
 <b>Example:</b>
-<table cellpadding="8">
+<table>
 <tr><td>Ts16</td><td>trisomy for Chr 16</td></tr>
 <tr><td>Ts(1<sup>13</sup>)70H&nbsp;&nbsp;</td><td>trisomy for the proximal end of Chr 1 and the distal end of Chr 13, derived from the translocation T(1;13)70H (also
 referred to as tertiary trisomy or partial trisomy).</td></tr>
@@ -303,7 +303,7 @@ additional chromosome is represented parenthetically including the species abbre
 <p>The format for a transchromosomal is:&nbsp;&nbsp; Tc(AAAbb)CCXxx<br>
 <p>Where
 <blockquote>
-<table cellpadding=4>
+<table>
 <tr><td>Tc</td><td>=&nbsp;&nbsp;transchromosomal</td></tr>
 <tr><td>AAA</td><td>=&nbsp;&nbsp;species abbreviation (<i>e.g</i>., HSA=human; MUS=mouse; BOV=bovine)</td></tr>
 <tr><td>bb</td><td>=&nbsp;&nbsp;chromosome number of the inserted fragment from the other species<td></tr>
@@ -315,7 +315,7 @@ additional chromosome is represented parenthetically including the species abbre
 
 <p><blockquote>
 <b>Example:</b>
-<table cellpadding="8">
+<table>
 <tr><td valign="top"><span style="white-space: nowrap">Tc(HSA21)91-1Emcf&nbsp;&nbsp;</span></td><td valign="top" align="left">transchromosomal, human 21, line 91-1 Elizabeth M. C. Fisher<br>This is an engineered mouse line containing a fragment of human chromosome 21 as a freely segregating heritable fragment.</td></tr>
 </table>
 </blockquote>
@@ -328,7 +328,7 @@ additional chromosome is represented parenthetically including the species abbre
 and Nomenclature of Genes, Genetic Markers, Alleles, and Mutations in Mouse and Rat</a>).</p>
 <p><blockquote>
 <b>Example:</b>
-<table cellpadding="8">
+<table>
 <tr><td><i>Rnr12</i>&nbsp;&nbsp;</td><td>a polymorphic DNA segment that identifies the ribosomal DNA region on Chr 12</td></tr>
 </table>
 </blockquote>
@@ -338,7 +338,7 @@ and Nomenclature of Genes, Genetic Markers, Alleles, and Mutations in Mouse and 
 <p>The symbol H should be used for heterochromatin visualized cytologically, followed by a symbol indicating the chromosome region involved, in this case c for centromeric, and a number indicating the chromosome on which it lies. </p>
 <p><blockquote>
 <b>Example:</b>
-<table cellpadding="8">
+<table>
 <tr><td width="20%">Hc14</td><td>pericentric
 heterochromatin on Chr 14</td></tr>
 </table>
@@ -348,7 +348,7 @@ heterochromatin on Chr 14</td></tr>
 
 <p><blockquote>
 <b>Example:</b>
-<table cellpadding="8">
+<table>
 <tr><td width="20%">Hc14<sup>n</sup></td><td>normal or standard pericentric heterochromatin on Chr 14.</td></tr>
 </table>
 </blockquote>
@@ -361,7 +361,7 @@ heterochromatin on Chr 14</td></tr>
 
 <p><blockquote>
 <b>Example:</b>
-<table cellpadding="8">
+<table>
 <tr><td width="10%">Dh1H</td><td>the first DNA segment within the pericentromeric heterochromatin region of Chr 1 discovered at Harwell.</td></tr>
 </table>
 </blockquote>
@@ -384,7 +384,7 @@ symbols. It should be noted that at present there is no sequence definition for 
 
 <p><blockquote>
 <b>Example:</b>
-<table cellpadding="8">
+<table>
 <tr><td width="20%">Tel14q</td><td>a telomere sequence on Chromosome 14 at the distal chromosome end</td></tr>
 </table>
 </blockquote>
@@ -392,7 +392,7 @@ symbols. It should be noted that at present there is no sequence definition for 
 <p>Multiple loci assigned to telomeres of individual chromosomes are numbered serially.</p>
 <p><blockquote>
 <b>Examples:</b>
-<table cellpadding="8">
+<table>
 <tr><td width="20%">Tel14p1</td><td>the first telomere sequence mapped at the centromeric end of Chr 14</td></tr>
 <tr><td>Tel19q2</td><td>the second telomere sequence mapped at the distal end of Chr 19</td></tr>
 </table>
@@ -402,7 +402,7 @@ symbols. It should be noted that at present there is no sequence definition for 
 
 <p><blockquote>
 <b>Example:</b>
-<table cellpadding="8">
+<table>
 <tr><td width="15%">Tel-rs2</td><td>telomere, related sequence 2. This sequence maps at approximately 33cM on Chr 8.</td></tr>
 </table>
 </blockquote>
@@ -413,8 +413,8 @@ symbols. It should be noted that at present there is no sequence definition for 
 indicate the variant concerned.</p>
 <p><blockquote>
 <b>Example:</b>
-<table cellpadding="8">
-<tr><td width="50%">Chr 17A2<sup>s</sup></td>
+<table>
+<tr><td width="40%">Chr 17A2<sup>s</sup></td>
 <td>small A2 band in Chr 17</td></tr>
 </table>
 </blockquote>
@@ -439,7 +439,7 @@ these whole arm chromosome changes are:</p>
 
 <p><blockquote>
 <b>Examples:</b>
-<table cellpadding="8">
+<table>
 <tr><td width="20%">41,XY+13</td><td>the normal mouse male complement with an additional copy of Chr 13</td></tr>
 <tr><td>39,XO</td><td>a female mouse complement missing a Chr X</td></tr>
 <tr><td>39,XO//41,XYY</td><td>a mosaic where one component is a

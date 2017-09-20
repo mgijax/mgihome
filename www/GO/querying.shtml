@@ -14,7 +14,7 @@
 </p>
 
 <p>
-<ul style="line-height:1.8;"> 
+<ul style="line-height:1.9;"> 
  <li>You can search by entering all or a portion of a single GO vocabulary entry. Often, GO entries are phrases containing several words. Use the asterisk (*) as a wild-card to broaden your search.</li>
  <li>You can also use the logical operator AND between GO terms within the Gene Classifications search field. A search of term1 AND term2 returns the set of markers that are annotated to <b>both</b> term1 and term2. For example, the search string <i>nucleus AND kinase</i> returns all markers whose products are a kinase AND are found in the nucleus.</li>
  <li>You can browse the GO classifications, copy an entry, and paste it into the <b>Gene Ontology Classifications (GO)</b> field. </li>
@@ -31,13 +31,12 @@ not identify genes that had the annotation <B>fructose catabolism</B>.-->
 <P>Each gene returned by the query is linked to a marker detail page with the
 associated ontology, GO term, evidence statement, and publication from which
 the annotation was discerned.</p>
-<P>
+<p>
 MGI queries return information about mouse genes.  To access the GO annotations for many organisms, use the <a href=http://amigo.geneontology.org/amigo target="_top">AmiGO</a> browser.
-</P>
+</p>
 <!--To query the GO
 simultaneously across multiple species, a prototype query interface is
 available (see
 <A HREF = "http://www.fruitfly.org/annot/go" target="_top">Gene Ontology Applet</A>).-->
-<P>
 
 <!--#include file='include/templateBodyStop.html'--> 
