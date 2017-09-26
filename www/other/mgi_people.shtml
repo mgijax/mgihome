@@ -12,216 +12,198 @@
  
 <!-- TOC table -->
  
-      <table class="toc" width="100%">
-	<tr><td>
-          <ul>
-            <li><a href="#programs">MGI Programs</a></li> | 
-            <li><a href="#curators">MGI Curatorial Staff</a></li> | 
-            <li><a href="#swad">MGI Software and Administrative Staff</a></li> 
-	    </ul>
-       	    </td>
-         </tr>
-        </table>
+<table class="toc" width="100%">
+  <tr><td>
+        <ul>
+          <li><a href="#programs">MGI Programs</a></li> | 
+          <li><a href="#curators">MGI Curatorial Staff</a></li> | 
+          <li><a href="#swad">MGI Software and Administrative Staff</a></li> 
+	     </ul>
+       	</td>
+  </tr>
+</table>
         
 <!-- end TOC table -->
 
-	</td></tr>
-
-	<tr><td>
+  </td></tr>
+  <tr><td>
 
 <!-- section1 table -->
 
    <a id="programs"></a>
 <table class="pad5 borderedTable" width="100%">
-			<tr>
-				<td class="enhance">MGI Programs
-				
-				</td>
-			</tr>
-			<tr>
+	<tr>
+	 <td class="enhance">MGI Programs</td>
+	</tr>
+	<tr>
+      <td>
+			
+<table width="100%" border="1">
+ <tr bgcolor="#D0E0F0"><th>Funding</th><th colspan="2">Program</th><th>PI</th><th>Co-PI</tr>
 
-				<td>
-					<dl class="linkedList">
-			            	<dt>
-					<table width="100%" border="1">
-<tr bgcolor="#D0E0F0"><th><font size="-1">Funding</font></th><th colspan="2"><font size="-1">Program</font></th><th><font size="-1">PI</font></th><th><font size="-1">Co-PI</font></tr>
-
-<tr><td valign="top"><font size="-1">NIH HG000330</font></td><td valign="top" colspan="2"><font size="-1">Mouse Genome Database (MGD)<br>
+ <tr><td valign="top">NIH HG000330</td><td colspan="2">Mouse Genome Database (MGD)<br>
 * P1: Genome Features &amp; Maps; &nbsp;PI: &nbsp;CJ Bult<br>
 * P2: Functional &amp; Comparative Annotations;&nbsp;&nbsp; PI:&nbsp; JA Blake<br>
 * P3: Phenotypes &amp; Mouse Models of Disease; &nbsp;&nbsp;PI: &nbsp;CL Smith<br>
 * C1: Database &amp; Software Development:&nbsp;&nbsp;PIs: &nbsp;JA Kadin, JE Richardson</td> 
-<td valign="top"><font size="-1">Judith A. Blake, <br>Carol J. Bult</td> 
-<td valign="top"><font size="-1">James A. Kadin,**<br> Joel E. Richardson **<br>Cynthia L. Smith</font></td></tr>
+  <td valign="top">Judith A. Blake, <br>Carol J. Bult</td> 
+  <td valign="top">James A. Kadin,**<br> Joel E. Richardson **<br>Cynthia L. Smith</td></tr>
 
-<tr><td valign="top"><font size="-1">NIH HD062499</font></td>
-<td colspan="2" valign="top"><font size="-1">Gene Expression Database (GXD)</font></td>
-<td valign="top"><font size="-1">Martin Ringwald</font></td>
-<td valign="top"><font size="-1">James A. Kadin<br>Joel E. Richardson</font></td></tr>
+ <tr><td valign="top">NIH HD062499</td>
+  <td colspan="2" valign="top">Gene Expression Database (GXD)</td>
+  <td valign="top">Martin Ringwald</td>
+  <td>James A. Kadin<br>Joel E. Richardson</td></tr>
 
-<tr><td><font size="-1">NIH HG002273</font></td>
-<td colspan="2"><font size="-1">MGI_GO Project</font></td>
-<td><font size="-1">Judith A. Blake</font></td>
-<td><font size="-1">***</font></td></tr>
+ <tr><td>NIH HG002273</td>
+  <td colspan="2">MGI_GO Project</td>
+  <td>Judith A. Blake</td>
+  <td>***</td></tr>
 
-<tr><td><font size="-1">NCI CA089713</font></td>
-<td colspan="2"><font size="-1">Mouse Tumor Biology Database (MTB)</font></td>
-<td><font size="-1">Carol J. Bult</font></td>
-<td><font size="-1">John P. Sundberg</font></td></tr>
+ <tr><td>NCI CA089713</td>
+  <td colspan="2">Mouse Tumor Biology Database (MTB)</td>
+  <td>Carol J. Bult</td>
+  <td>John P. Sundberg</td></tr>
 
-<!--<tr><td><font size="-1">NCI CA155825</font></td>
-<td colspan="2"><font size="-1">OncoCL: A Cancer Cell Ontology</font></td>
-<td><font size="-1">Mary E. Dolan</font></td>
-<td><font size="-1">&nbsp;</font></td></tr>
+<!--<tr><td>NCI CA155825</td>
+<td colspan="2">OncoCL: A Cancer Cell Ontology</td>
+<td>Mary E. Dolan</td>
+<td>&nbsp;</td></tr>
 
-<tr><td><font size="-1">NIH HG004834</font></td>
-<td colspan="2"><font size="-1">MouseMine</font></td>
-<td><font size="-1">Joel E. Richardson</font></td>
-<td><font size="-1">****</font></td></tr>-->
+<tr><td>NIH HG004834</td>
+<td colspan="2">MouseMine</td>
+<td>Joel E. Richardson</td>
+<td>****</td></tr>-->
 
 </table>
 <table border="0" cellspacing="1" cellpadding="3" width="100%">
   
-<tr><td><font size="-1">*</td><td>P=Project C=Core</font></td></tr>
-<tr><td><font size="-1">** </td><td>As co-PIs of the MGI Software Group, Dr. Kadin and Dr. Richardson contribute to all MGI-related database projects.</font></td></tr>
-<tr><td><font size="-1">*** </td><td>The Gene Ontology (GO) consortium funds GO activities at eight institutions, including The Jackson Laboratory. <br>There is a multi-PI team that consists of JA Blake, The Jackson Laboratory; <span style="white-space: nowrap">S Lewis, Lawrence Berkeley National Lab;</span> <span style="white-space: nowrap">JM Cherry, Stanford U;</span> <span style="white-space: nowrap">P Thomas, U. Southern California;</span> and <span style="white-space: nowrap">P Sternberg, CalTech.</span> Other GO Project Leaders include <span style="white-space: nowrap">E Huala, Carnegie Institution;</span> <span style="white-space: nowrap">A Bateman, EBI;</span> and <span style="white-space: nowrap">R Chisolm, Northwestern U.</span></font></td></tr>
-<!--<tr><td><font size="-1">**** </td><td>PI, Gos Micklem, U. of Cambridge</font></td></tr>-->
+ <tr><td>*</td><td>P=Project C=Core</td></tr> 
+ <tr><td>** </td><td>As co-PIs of the MGI Software Group, Dr. Kadin and Dr. Richardson contribute to all MGI-related database projects.</td></tr>
+ <tr><td>*** </td><td>The Gene Ontology (GO) consortium funds GO activities at eight institutions, including The Jackson Laboratory. <br>There is a multi-PI team that consists of JA Blake, The Jackson Laboratory; <span style="white-space: nowrap">S Lewis, Lawrence Berkeley National Lab;</span> <span style="white-space: nowrap">JM Cherry, Stanford U;</span> <span style="white-space: nowrap">P Thomas, U. Southern California;</span> and <span style="white-space: nowrap">P Sternberg, CalTech.</span> Other GO Project Leaders include <span style="white-space: nowrap">E Huala, Carnegie Institution;</span> <span style="white-space: nowrap">A Bateman, EBI;</span> and <span style="white-space: nowrap">R Chisolm, Northwestern U.</span></td></tr>
+<!--<tr><td>**** </td><td>PI, Gos Micklem, U. of Cambridge</td></tr>-->
 </table>
 
-</td></tr></table>
+</td></tr>
+</table>
 
 <!--end of section1 table -->
 
-	</td></tr>
-
-        <tr><td>
+  </td></tr>
+  <tr><td>
+  
 <!-- section2 table -->
 
-		<a id="curators"></a>
+<a id="curators"></a>
 <table class="pad5 borderedTable" width="100%">
+ <tr>
+  <td class="enhance">MGI Curatorial Staff</td>
+ </tr>
+ <tr><td><blockquote>
+     <table border="0" cellpadding="4">
+<tr><th rowspan="4" align="left" valign="top">Genome Features &amp; Maps</th>
+    <td>Paul Hale</td></tr>
+ 	<tr><td>Jill M. Recla</td></tr>
+    <tr><td>Deborah J. Reed</td></tr>
+    <tr><td>Yunxia (Sophia) Zhu</td></tr>
 
-			<tr>
-				<td class="enhance">
-					MGI Curatorial Staff
-				</td>
-			</tr>
-			<tr >
-				<td><blockquote><table border="0" cellpadding="4">
-   <tr><td width="40%">
-       <table border="1">
-      <!--<tr bgcolor="#D0E0F0"><th colspan="2"><font size="-1">Curatorial Staff</font></th></tr>-->
-<tr><th rowspan="4" align="left" valign="top"><font size="-1">Genome Features &amp; Maps</font></th>
-    <td><font size="-1">Paul Hale</font></td></tr>
- 	<tr><td><font size="-1">Jill M. Recla</font></td></tr>
-    <!-- <tr><td><font size="-1">Dirck W. Bradt</font></td></tr>-->
-    <tr><td><font size="-1">Deborah J. Reed</font></td></tr>
-    <tr><td><font size="-1">Yunxia (Sophia) Zhu</font></td></tr>
+<tr><th rowspan="4" align="left" valign="top">Functional &amp; Comparative Annotations</th>
+    <td>Nancy E. Butler</td></tr> 
+    <!--<tr><td>Lois J. Maltais</td></tr>-->
+    <tr><td>Monica McAndrews</td></tr>
+	<tr><td>Dmitry Sitnikov</td></tr>
+    <tr><td>Li Ni</td></tr>
 
-<tr><th rowspan="4" align="left" valign="top"><font size="-1">Functional &amp; Comparative Annotations</font></th>
-    <td><font size="-1">Nancy E. Butler</font></td></tr> 
-    <!--<tr><td><font size="-1">Lois J. Maltais</font></td></tr>-->
-    <tr><td><font size="-1"><nobr>Monica McAndrews</font></td></tr>
-	<tr><td><font size="-1">Dmitry Sitnikov</font></td></tr>
-    <tr><td><font size="-1">Li Ni</font></td></tr>
-
-<tr><th rowspan="7" align="left" valign="top"><font size="-1">Phenotypes &amp; Mouse Models of Disease</font></th>
-	<td><font size="-1">Anna Anagnostopoulos</font></td></tr>
-	<tr><td><font size="-1">Susan M. Bello</font></td></tr>
-	<!--<tr><td><font size="-1">Howard Dene</font></td></tr>-->
-	<tr><td><font size="-1">Michelle Perry</font></td></tr>
-  	<tr><td><font size="-1">Hiroaki Onda</font></td></tr>
-	<tr><td><font size="-1"><nobr>Beverly Richards-Smith</nobr></font></td></tr>
-    <!--<tr><td><font size="-1">Cynthia L. Smith</font></td></tr>-->
-	<TR><TD><FONT SIZE="-1">Monika Tomczuk</FONT></TD></TR>
-    <tr><td><font size="-1">Laurens Wilming</font></td></tr>
+<tr><th rowspan="7" align="left" valign="top">Phenotypes &amp; Mouse Models of Disease</th>
+	<td><span style="white-space: nowrap">Anna Anagnostopoulos</span></td></tr>
+	<tr><td>Susan M. Bello</td></tr>
+  	<tr><td>Hiroaki Onda</td></tr>
+  	<tr><td>Michelle Perry</td></tr>
+	<tr><td><span style="white-space: nowrap">Beverly Richards-Smith</span></td></tr>
+    <!--<tr><td>Cynthia L. Smith</td></tr>-->
+	<tr><td>Monika Tomczuk</td></tr>
+    <tr><td>Laurens Wilming</td></tr>
   
+<tr><th rowspan="5" align="left" valign="top">Gene Expression</th>
+     <td>Jacqueline H. Finger</td></tr>
+     <tr><td>Terry F. Hayamizu </td></tr>
+     <tr><td><span style="white-space: nowrap">Ingeborg J. McCright</span></td></tr>
+     <tr><td>Constance M. Smith</td></tr>
+     <tr><td>Jingxia Xu</td></tr>
 
-<tr><th rowspan="5" align="left" valign="top"><font size="-1">Gene Expression</font></th>
-     <td><font size="-1">Jacqueline H. Finger</font></td></tr>
-     <tr><td><font size="-1">Terry F. Hayamizu </font></td></tr>
-     <tr><td><font size="-1"><nobr>Ingeborg J. McCright</font></td></tr>
-     <tr><td><font size="-1">Constance M. Smith</font></td></tr>
-     <tr><td><font size="-1">Jingxia Xu</font></td></tr>
-
-<tr><th rowspan="3" align="left" valign="top"><font size="-1">Gene Ontology</font></th>
-     <td><font size="-1">Karen Christie</font></td></tr>
-     <tr><td><font size="-1">Harold J. Drabkin</font></td></tr>
-	 <tr><td><font size="-1">David P. Hill</font></td></tr>
-	
+<tr><th rowspan="3" align="left" valign="top">Gene Ontology</th>
+     <td>Karen Christie</td></tr>
+     <tr><td>Harold J. Drabkin</td></tr>
+	 <tr><td>David P. Hill</td></tr>
          
-<tr><th rowspan="2" align="left" valign="top"><font size="-1">Tumor Biology</font></th><td><font size="-1">Dale A. Begley</font></td></tr>
-    	<tr><td><font size="-1">Debra M. Krupke</font></td></tr>
+<tr><th rowspan="2" align="left" valign="top">Tumor Biology</th>
+      <td>Dale A. Begley</td></tr>
+      <tr><td>Debra M. Krupke</td></tr>
 
-
- <!--<tr><th align="left" valign="top"><font size="-1">MouseCyc</font></th><td><font size="-1">Alexei Evsikov </font></td></tr>-->
+ <!--<tr><th align="left" valign="top">MouseCyc</th><td>Alexei Evsikov </td></tr>-->
  
-<!-- <tr><th align="left" valign="top"><font size="-1">OncoCL</font></th>
-	<td><font size="-1">Mary E. Dolan</font></td></tr>-->
+<!-- <tr><th align="left" valign="top">OncoCL</th>
+	<td>Mary E. Dolan</td></tr>-->
 	
- <!--<tr><th align="left" valign="top"><font size="-1">Knockout Mouse Project</font></th>
-	<td><font size="-1">Hamsa Tadepally</font></td></tr>-->
+ <!--<tr><th align="left" valign="top">Knockout Mouse Project</th>
+	<td>Hamsa Tadepally</td></tr>-->
   </table>
+  </blockquote>
 
 <!--end of section2 table -->
 
 </td></tr>
 </table>
 
-</td></tr></table>
-        <tr><td>
+</td></tr>
+<tr><td>
         
 <!-- section3 table -->
 	
-		<a id="swad"></a>
+<a id="swad"></a>
 <table class="pad5 borderedTable" width="100%">
+  <tr>
+   <td class="enhance">MGI Software and Administrative Staff</td>
+  </tr>
+  <tr><td><blockquote>
+    <table border="0" cellpadding="4">
+      <tr><th rowspan="11" align="left" valign="top">Software Engineering</th>
+      <td>Richard M. Baldarelli</td></tr>
+      <tr><td>Jonathan S. Beal</td></tr>
+      <tr><td>Olin Blodgett</td></tr>
+      <tr><td>Lori E. Corbani</td></tr>
+      <tr><td>Sharon C. Giannatto</td></tr>
+      <!--<tr><td>Diane J. Dahmen</td></tr>-->
+      <tr><td>Mary E. Dolan</td></tr>
+      <!--<tr><td>Kim L. Forthofer</td></tr>-->
+      <tr><td>Peter Frost</td></tr>
+      <tr><td>Lucie Hutchins</td></tr>
+      <tr><td>Howie Motenko</td></tr>
+      <tr><td>David B. Miers</td></tr>
+      <tr><td>Steven B. Neuhauser</td></tr>
 
-			<tr>
-				<td class="enhance">
-					MGI Software and Administrative Staff
-				</td>
-			</tr>
-		<tr><td></td></tr>
-			<tr>
-				<td><blockquote><table border="0">
-      <!--<tr><th bgcolor="#D0E0F0" colspan="2"><font size="-1">Software and Administrative Staff</font></th></tr>-->
-      <tr><th rowspan="11" align="left" valign="top"><font size="-1">Software Engineering</font></th>
-      <td><font size="-1">Richard M. Baldarelli</font></td></tr>
-      <tr><td><font size="-1">Jonathan S. Beal</font></td></tr>
-      <tr><td><font size="-1">Olin Blodgett</font></td></tr>
-      <tr><td><font size="-1">Lori E. Corbani</font></td></tr>
-      <tr><td><font size="-1">Sharon C. Giannatto</font></td></tr>
-      <!--<tr><td><font size="-1">Diane J. Dahmen</font></td></tr>-->
-      <tr><td><font size="-1">Mary E. Dolan</font></td></tr>
-      <!--<tr><td><font size="-1">Kim L. Forthofer</font></td></tr>-->
-      <tr><td><font size="-1">Peter Frost</font></td></tr>
-      <tr><td><font size="-1">Lucie Hutchins</font></td></tr>
-      <tr><td><font size="-1">Howie Motenko</font></td></tr>
-      <tr><td><font size="-1">David B. Miers</font></td></tr>
-      <tr><td><font size="-1">Steven B. Neuhauser</font></td></tr>
-
-      <tr><th rowspan="2" align="left" valign="top"><font size="-1">Software QA</font></th>
-   <td><font size="-1">Jeffrey W. Campbell</font></td></tr>
-   <!--<td><font size="-1">Virginia L. Grice</font></td></tr>-->
-        <tr><td><font size="-1">Jill R. Lewis</font></td></tr>
+      <tr><th rowspan="2" align="left" valign="top">Software QA</th>
+      <td>Jeffrey W. Campbell</td></tr>
+   <!--<td>Virginia L. Grice</td></tr>-->
+      <tr><td>Jill R. Lewis</td></tr>
       
-      <!--<tr><th rowspan="4" align="left" valign="top"><font size="-1">Systems Administration&nbsp;&nbsp;</font></th>
-          <td><font size="-1">Matthew J. Baya</font></td></tr>
-      <tr><td><font size="-1"><nobr>Michael J. McCrossin</font></td></tr>
-      <tr><td><font size="-1">Leslie A. Miller</font></td></tr>
-      <tr><td><font size="-1">Iry T. Witham</font></td></tr>-->
+      <!--<tr><th rowspan="4" align="left" valign="top">Systems Administration&nbsp;&nbsp;</th>
+          <td>Matthew J. Baya</td></tr>
+      <tr><td><nobr>Michael J. McCrossin</td></tr>
+      <tr><td>Leslie A. Miller</td></tr>
+      <tr><td>Iry T. Witham</td></tr>-->
       
-      <tr><th rowspan="1" align="left"><font size="-1">Administrative Staff</font></th>
-          <!--<TD><FONT SIZE="-1">William J. Boddy</FONT></TD></TR>-->
-     <td><font size="-1">Janice E. Ormsby</font></td></tr>
+      <tr><th rowspan="1" align="left">Administrative Staff</th>
+          <!--<TD>William J. Boddy</TD></TR>-->
+      <td>Janice E. Ormsby</td></tr>
       
-      <tr><th rowspan="2" align="left" valign="top"><font size="-1">User Support</font></th> 
-    	<td><font size="-1">MeiYee Law</font></td></tr>
-        <tr><td><font size="-1">David R. Shaw</font></td></tr>
+      <tr><th rowspan="2" align="left" valign="top">User Support</th> 
+    	<td>MeiYee Law</td></tr>
+        <tr><td>David R. Shaw</td></tr>
       </table>
    </blockquote>
 
-				</td>
-			</tr>
+	</td>
+	</tr>
 </table>
 
  <!--end of section3 table -->
@@ -231,18 +213,15 @@
 <!-- section4 table
 		<a name="additional_staff"></a>
 <table class="outline" width="100%">
-
-			<tr>
-				<td class="enhance">
-					Additional Staff
-				</td>
-			</tr>
-			<tr >
-				<td>
+  <tr>
+	<td class="enhance">Additional Staff</td>
+  </tr>
+  <tr>
+   <td>
 <TABLE BORDER="1" CELLPADDING="2">
-   <TR><TH BGCOLOR="#D0E0F0" COLSPAN="2"><FONT SIZE="-1">Additional Staff</FONT></TH></TR>
-   <TR><TH ALIGN="left" VALIGN="top"><FONT SIZE="-1">Postdoctoral Fellow</FONT></TH>
-       <TD><FONT SIZE="-1">Masaaki Furuno</FONT></TD></TR>
+   <TR><TH BGCOLOR="#D0E0F0" COLSPAN="2">Additional Staff</TH></TR>
+   <TR><TH ALIGN="left" VALIGN="top">Postdoctoral Fellow</TH>
+       <TD>Masaaki Furuno</TD></TR>
    </TABLE>
 </td>
 </tr>
@@ -250,8 +229,7 @@
 </blockquote>
 	</td>
 			</tr>-->
-			
-</table>
+
 
 <!--#include file='include/templateBodyStop.html'--> 
 </body>
