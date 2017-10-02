@@ -14,160 +14,128 @@
 <!-- main body table -->
 <table width="75%" cellpadding="2" align="center">
 
-	<tr><td>
-		<!-- TOC table -->
-		<table class="toc" width="100%">
-			<tr>
-				<td>
-					<ul>
-			<li><a href="#list">Research Community E-mail Lists</a> | </li>
-			<li><a href="#res_books">Online Books</a> | </li>
-                        <li><a href="#nomen">Nomenclature Home Page</a> | </li>
-			<li><a href="#gloss">MGI Glossary</a> | </li>
-                        <li><a href="#proto">Prototype Tools</a> | </li>
-                        <li><a href="#mpd">Mouse Phenome Database (MPD)</a> | </li>
-			<li><a href="#dlko">Deltagen and Lexicon Knockout Mice</a> | </li>
-			<li><a href="#impc">International Mouse Phenotyping Consortium (IMPC)</a> | </li>
-			<li><a href="#dmdd">Deciphering the Mechanisms of Developmental Disorders (DMDD)</a> | </li>
-			<li><a href="#contrib">Contributed Data Sets</a> | </li>
-                        <li><a href="#res_links">Community Links</a> | </li>
-			<li><a href="#sw">Software Developer Tools</a> | </li>
-				</td>
-			</tr>
-		</table>
-	</td></tr>
+<tr><td>
+<!-- TOC table -->
+<table class="toc" width="100%">
+ <tr><td>
+     <ul>
+		<li><a href="#list">Research Community E-mail Lists</a> | </li>
+		<li><a href="#res_books">Online Books</a> | </li>
+        <li><a href="#nomen">Nomenclature Home Page</a> | </li>
+		<li><a href="#gloss">MGI Glossary</a> | </li>
+        <li><a href="#proto">Prototype Tools</a> | </li>
+        <li><a href="#mpd">Mouse Phenome Database (MPD)</a> | </li>
+		<li><a href="#dlko">Deltagen and Lexicon Knockout Mice</a> | </li>
+		<li><a href="#impc">International Mouse Phenotyping Consortium (IMPC)</a> | </li>
+		<li><a href="#dmdd">Deciphering the Mechanisms of Developmental Disorders (DMDD)</a> | </li>
+		<li><a href="#contrib">Contributed Data Sets</a> | </li>
+        <li><a href="#res_links">Community Links</a> | </li>
+		<li><a href="#sw">Software Developer Tools</a> | </li>
+	  </td>
+	</tr>
+</table>
+</td></tr>
 
-	<tr><td>
-		<!-- section1 table -->
-		<table class="outline" width="100%">
-			<tr>
-				<td class="enhance">
-					General Resources
-				</td>
-			</tr>
-			<tr >
-				<td>
-					<dl class="linkedList">
-			            	<dt>&bull; <a id="list"></a> <a href="<!--#include file='include/mgihome_url.html'-->lists/lists.shtml">Research Community E-mail Lists</a></dt>
-						<dd>Moderated E-mail lists with archives, including mgi-list.</dd>
+<tr><td>
+<!-- section1 table -->
+<table class="outline" width="100%">
+  <tr><td class="enhance">General Resources
+	  </td>
+  </tr>
+  <tr><td><dl class="linkedList">
+			<dt>&bull; <a id="list"></a> <a href="<!--#include file='include/mgihome_url.html'-->lists/lists.shtml">Research Community E-mail Lists</a></dt>
+			<dd>Moderated E-mail lists with archives, including mgi-list.</dd>
+			<dt>&bull; <a id="nomen"></a> <a href="<!--#include file='include/mgihome_url.html'-->nomen/index.shtml">Nomenclature Home Page</a></dt>
+			<dd>MGI is the official site for mouse nomenclature &amp; maintains official symbol &amp; name designations for genes, alleles, strains.</dd>
+			<dt>&bull; <a id="gloss"></a> <a href="<!--#include file='include/fewi_url.html'-->glossary">MGI Glossary</a></dt>
+			<dd>Commonly used terms in mouse genetics.</dd>
+			<dt>&bull; <a id="proto"></a> <a href="http://proto.informatics.jax.org/">Prototype Tools</a></dt>
+			<dd>Try new tools, check upcoming releases, send feedback.</dd>
+			<dt>&bull; <a id="mpd"></a> <a href="<!--#include file='include/mpd_url.html'-->">Mouse Phenome Database (MPD)</a></dt>
+			<dd>Baseline measurements on inbred strain characteristics.</dd>
+			<dt>&bull; <a id="dlko"></a> <a href="<!--#include file='include/fewi_url.html'-->knockout_mice/">Deltagen and Lexicon Knockout Mice</a></dt>
+			<dd>Available knockouts and phenotypic data.</dd>
+			<dt>&bull; <a id="impc"></a> <a href="https://www.mousephenotype.org/">International Mouse Phenotyping Consortium (IMPC)</a></dt>
+			<dd>Producing and phenotyping knockout mice from the IKMC mutant ES cell line resource.</dd>
+			<dt>&bull; <a id="dmdd"></a> <a href="https://dmdd.org.uk/">Deciphering the Mechanisms of Developmental Disorders (DMDD)</a></dt>
+			<dd>High-resolution images and detailed data about morphological abnormalities in embryos resulting from gene knockouts.</dd>
+			<dt>&bull; <a id="contrib"></a> <a href="<!--#include file='include/ftp_url.html'-->/datasets/index.html">Contributed Data Sets</a></dt>
+			<dd>Data not directly integrated into the MGI database and contributed tools for manipulating data.</dd>
+			</dl>
+		</td>
+	</tr>
+</table>
+</td></tr>
 
-				            <dt>&bull; <a id="nomen"></a> <a href="<!--#include file='include/mgihome_url.html'-->nomen/index.shtml">Nomenclature Home Page</a></dt>
-						<dd>MGI is the official site for mouse nomenclature &amp; maintains official symbol &amp; name designations for genes, alleles, strains.</dd>
+<tr><td>
+<!-- section2 table -->
+<a id="res_books"></a>
+<table class="outline" width="100%">
+  <tr><td class="enhance">Online Books</td>
+  </tr>
+  <tr><td>
+		<dl class="linkedList">
+        <dt>&bull; <a href="<!--#include file='include/greenbook_url.html'-->">Biology of the Laboratory Mouse</a> edited by Earl L. Green</dt>
+		<dt>&bull; <a href="<!--#include file='include/silverbook_url.html'-->">Mouse Genetics</a> by Lee Silver</dt>
+		<dt>&bull; <a href="<!--#include file='include/cookbook_url.html'-->">The Anatomy of the Laboratory Mouse</a> by Margaret J. Cook</dt>
+		<dt>&bull; <a href="<!--#include file='include/frithbook_url.html'-->">Color Atlas of Neoplastic and Non-neoplastic Lesions in Aging Mice</a> by C. H. Frith and J. M. Ward</dt>
+		<dt>&bull; <a href="<!--#include file='include/wksilvers_url.html'-->">The Coat Colors of Mice</a> by Willys K. Silvers</dt>
+		<dt>&bull; <a href="<!--#include file='include/morsebook_url.html'-->">Origins of Inbred Mice</a> edited by Herbert C. Morse III</dt>
+		<dt>&bull; <a href="https://www.emouseatlas.org/emap/ema/theiler_stages/house_mouse/book.html" target="_new">The House Mouse, Atlas of Embryonic Development</a> by Karl Theiler</dt>
+ 		</dl>
+	</td>
+  </tr>
+</table>
+</td></tr>
 
-				            <dt>&bull; <a id="gloss"></a> <a href="<!--#include file='include/fewi_url.html'-->glossary">MGI Glossary</a></dt>
-						<dd>Commonly used terms in mouse genetics.</dd>
+<tr><td>
+<!-- section2 table -->
+<a id="res_links"></a>
+<table class="outline" width="100%">
+  <tr><td class="enhance">Community Links
+	  </td>
+  </tr>
+  <tr>
+   <td>
+    <dl class="linkedList">
+	<dt>&bull; <a href="<!--#include file='include/mgihome_url.html'-->other/mouse_facts4.shtml">Mouse Resources &amp; Model Organism Links</a></dt>
+	<dd>Links to sites providing mouse clones, mice and ES cell lines, colony management software, and to databases of other mammals and model organisms.</dd>
+	<dt>&bull; <a href="<!--#include file='include/mgihome_url.html'-->other/phenoallele_commun_resource.shtml">Phenotypes &amp; Mutants Community Resources</a></dt>
+	<dd>Links to mutagenesis centers, CTC, IGTC, animal resources, data submission forms, &amp; nomenclature guidelines.</dd>
+	<dt>&bull; <a href="http://www.oxfordjournals.org/nar/database/a/">Nucleic Acids Research (Journal) Database Summary</a></dt>
+	<dd>An index of over 1500 biological databases compiled by the journal of Nucleic Acids Research. Includes links for other model organisms and species, diseases, DNA, RNA, and protein resources.</dd>
+	<dt>&bull; <a href="<!--#include file='include/mgihome_url.html'-->other/mouse_facts1.shtml">Mouse Facts</a></dt>
+	<dd>Mouse genome length, chromosomal size, codon usage, &amp; physiology data.</dd>
+	</dl>
+	</td>
+  </tr>
+</table>
+</td></tr>
 
-						<dt>&bull; <a id="proto"></a> <a href="http://proto.informatics.jax.org/">Prototype Tools</a></dt>
-						<dd>Try new tools, check upcoming releases, send feedback.</dd>
-
-						<dt>&bull; <a id="mpd"></a> <a href="<!--#include file='include/mpd_url.html'-->">Mouse Phenome Database (MPD)</a></dt>
-						<dd>Baseline measurements on inbred strain characteristics.</dd>
-
-						<dt>&bull; <a id="dlko"></a> <a href="<!--#include file='include/fewi_url.html'-->knockout_mice/">Deltagen and Lexicon Knockout Mice</a></dt>
-						<dd>Available knockouts and phenotypic data.</dd>
-
-						<dt>&bull; <a id="impc"></a> <a href="https://www.mousephenotype.org/">International Mouse Phenotyping Consortium (IMPC)</a></dt>
-						<dd>Producing and phenotyping knockout mice from the IKMC mutant ES cell line resource.</dd>
-
-						<dt>&bull; <a id="dmdd"></a> <a href="https://dmdd.org.uk/">Deciphering the Mechanisms of Developmental Disorders (DMDD)</a></dt>
-						<dd>High-resolution images and detailed data about morphological abnormalities in embryos resulting from gene knockouts.</dd>
-
-						<dt>&bull; <a id="contrib"></a> <a href="<!--#include file='include/ftp_url.html'-->/datasets/index.html">Contributed Data Sets</a></dt>
-						<dd>Data not directly integrated into the MGI database and contributed tools for manipulating data.</dd>
-					</dl>
-				</td>
-			</tr>
-		</table>
-	</td></tr>
-
-        <tr><td>
-		<!-- section2 table -->
-		<a id="res_books"></a>
-		<table class="outline" width="100%">
-			<tr>
-				<td class="enhance">
-					Online Books
-				</td>
-			</tr>
-			<tr >
-				<td>
-					<dl class="linkedList">
-                        <dt>&bull; <a href="<!--#include file='include/greenbook_url.html'-->">Biology of the Laboratory Mouse</a> edited by Earl L. Green</dt>
-
-						<dt>&bull; <a href="<!--#include file='include/silverbook_url.html'-->">Mouse Genetics</a> by Lee Silver</dt>
-
-						<dt>&bull; <a href="<!--#include file='include/cookbook_url.html'-->">The Anatomy of the Laboratory Mouse</a> by Margaret J. Cook</dt>
-
-<dt>&bull; <a href="<!--#include file='include/frithbook_url.html'-->">Color Atlas of Neoplastic and Non-neoplastic Lesions in Aging Mice</a> by C. H. Frith and J. M. Ward</dt>
-
-						<dt>&bull; <a href="<!--#include file='include/wksilvers_url.html'-->">The Coat Colors of Mice</a> by Willys K. Silvers</dt>
-
-						<dt>&bull; <a href="<!--#include file='include/morsebook_url.html'-->">Origins of Inbred Mice</a> edited by Herbert C. Morse III</dt>
-						<dt>&bull; <a href="<!--#include file='include/theilerbook_url.html'-->" target="_new">The House Mouse, Atlas of Embryonic Development</a> by Karl Theiler</dt>
- 					</dl>
-				</td>
-			</tr>
-		</table>
-	</td></tr>
-
-    <tr><td>
-		<!-- section2 table -->
-		<a id="res_links"></a>
-		<table class="outline" width="100%">
-			<tr>
-				<td class="enhance">
-					Community Links
-				</td>
-			</tr>
-			<tr >
-				<td>
-					<dl class="linkedList">
-						<dt>&bull; <a href="<!--#include file='include/mgihome_url.html'-->other/mouse_facts4.shtml">Mouse Resources &amp; Model Organism Links</a></dt>
-						<dd>Links to sites providing mouse clones, mice and ES cell lines, colony management software, and to databases of other mammals and model organisms.</dd>
-
-						<dt>&bull; <a href="<!--#include file='include/mgihome_url.html'-->other/phenoallele_commun_resource.shtml">Phenotypes &amp; Mutants Community Resources</a></dt>
-						<dd>Links to mutagenesis centers, CTC, IGTC, animal resources, data submission forms, &amp; nomenclature guidelines.</dd>
-
-						<dt>&bull; <a href="http://www.oxfordjournals.org/nar/database/a/">Nucleic Acids Research (Journal) Database Summary</a></dt>
-						<dd>An index of over 1500 biological databases compiled by the journal of Nucleic Acids Research. Includes links for other model organisms and species, diseases, DNA, RNA, and protein resources.</dd>
-
-						<dt>&bull; <a href="<!--#include file='include/mgihome_url.html'-->other/mouse_facts1.shtml">Mouse Facts</a></dt>
-						<dd>Mouse genome length, chromosomal size, codon usage, &amp; physiology data.</dd>
-					</dl>
-				</td>
-			</tr>
-		</table>
-	</td></tr>
-
-	<tr><td>
-		<!-- section1 table -->
-		<a id="sw"></a>
-		<table class="outline" width="100%">
-			<tr>
-				<td class="enhance">
-					<a href="<!--#include file='include/homepages_url.html'-->software.shtml">Software Developer Tools</a>
-				</td>
-			</tr>
-			<tr >
-				<td>
-					<dl class="linkedList">
-                        <dt>&bull; <a href="<!--#include file='include/mgihome_url.html'-->other/link_instructions.shtml">Creating Web Links to MGI</a></dt>
-						<dd>Learn how to construct a URL using Accession IDs.</dd>
-
-						<dt>&bull; <a href="<!--#include file='include/homepages_url.html'-->software.shtml#sql">Direct SQL Account</a></dt>
-						<dd>Instructions for users who wish to run SQL queries against the MGI Database.</dd>
-
-						<dt>&bull; <a href="<!--#include file='include/schema_url.html'-->">Database Schema Browser</a></dt>
-						<dd>Search MGI's schema to formulate custom SQL queries.</dd>
-
-						<dt>&bull; <a href="<!--#include file='include/ftp_url.html'-->/reports/index.html">All MGI Reports</a></dt>
-						<dd>Access to MGI public reports.</dd>
-					</dl>
-				</td>
-			</tr>
-		</table>
-	</td></tr>
-
+<tr><td>
+<!-- section1 table -->
+<a id="sw"></a>
+<table class="outline" width="100%">
+  <tr>
+   <td class="enhance">
+	<a href="<!--#include file='include/homepages_url.html'-->software.shtml">Software Developer Tools</a>
+	</td>
+  </tr>
+  <tr>
+   <td><dl class="linkedList">
+        <dt>&bull; <a href="<!--#include file='include/mgihome_url.html'-->other/link_instructions.shtml">Creating Web Links to MGI</a></dt>
+		<dd>Learn how to construct a URL using Accession IDs.</dd>
+		<dt>&bull; <a href="<!--#include file='include/homepages_url.html'-->software.shtml#sql">Direct SQL Account</a></dt>
+		<dd>Instructions for users who wish to run SQL queries against the MGI Database.</dd>
+		<dt>&bull; <a href="<!--#include file='include/schema_url.html'-->">Database Schema Browser</a></dt>
+		<dd>Search MGI's schema to formulate custom SQL queries.</dd>
+		<dt>&bull; <a href="<!--#include file='include/ftp_url.html'-->/reports/index.html">All MGI Reports</a></dt>
+		<dd>Access to MGI public reports.</dd>
+		</dl>
+	</td>
+  </tr>
+</table>
+</td></tr>
 
 </table>
 
