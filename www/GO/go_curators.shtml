@@ -13,37 +13,139 @@
 <p>The following groups provide GO annotations for mouse genes and gene products:</p>
 <ul>
 <li><a href="http://www.informatics.jax.org/">MGI</a>
-  <ul>
-    <li>MGI supplies experimental literature-based annotation to mouse gene products, as well as electronic-based annotation applied by translation of UniProt keywords, InterPro domains, and EC numbers.</li>
+ <ul>
+  <li>MGI supplies experimental literature-based annotation to mouse gene products, as well as electronic-based annotation applied by translation of UniProt keywords, InterPro domains, and EC numbers.</li>
+  </ul>
+  <br>
+
+<li><a href="http://www.ebi.ac.uk/uniprot/">UniProt</a> (Universal Protein Resource)
+ <ul>
+  <li>The UniProtKB/Swiss-Prot Protein Knowledgebase is a protein sequence database providing annotation to proteins from many organisms. In addition to GO annotation, MGI displays UniProt protein sequences, InterPro domains, and Enzyme Commission information for mouse proteins obtained from UniProt.</li>
  </ul>
-  <br>
+ <br>
+ 
+ <li><a href="http://rgd.mcw.edu">RGD</a> (Rat Genome Database)
+ <ul>
+  <li>RGD supplies experimental literature-based annotation to rat gene products.</li>
+ </ul>
+ <br>
+  
+<li><a href="http://wiki.geneontology.org/index.php/BHF-UCL">BHF-UCL</a> (British Heart Foundation – University College London)
+ <ul>
+  <li>The Cardiovascular GO Annotation Initiative provides GO annotation to human cardiovascular-associated genes.</li>
+ </ul>
+ <br>
 
-<li><a href="http://www.ebi.ac.uk/uniprot/">UniProt (Universal Protein Resource)</a>
+ <li><a href="http://www.ebi.ac.uk/intact/site/">IntAct</a> (Protein Interaction Group at EBI)
+ <ul>
+  <li>IntAct provides literature-curated protein interaction data.</li>
+ </ul>
+ <br>
+
+ <li><a href="http://www.geneontology.org/external-project/parkinson's-uk-gene-ontology-project">Parkinson’s UK</a> (Parkinson's UK annotation initiative - University College London)
   <ul>
-    <li>The UniProtKB/Swiss-Prot Protein Knowledgebase is a protein sequence database providing annotation to proteins from many organisms. In addition to GO annotation, MGI displays UniProt protein sequences, InterPro domains, and Enzyme Commission information for mouse proteins obtained from UniProt.</li>
+   <li>Provides functional annotation for genes implicated in Parkinson's disease.</li>
+  </ul>
+  <br>
+ <li><a href="http://www.geneontology.org">GOC</a> (Gene Ontology Consortium) 
+  <ul>
+   <li>The Gene Ontology Consortium (GOC) integrates resources from a variety of research groups, from model organisms to protein databases.</li>
   </ul>
   <br>
 
-<li><a href="http://www.genenames.org">HGNC (HUGO Gene Nomenclature Committee)</a> 
+ <li><a href="https://www.ntnu.edu/nv/research/systemsbiology">NTNU_SB</a> (Norwegian University of Science and Technology, Systems Biology)
   <ul>
-    <li>HGNC provides approved nomenclature for human genes and collaborates closesly with MGI in establishing nomenclature for mouse genes.  Through HUGOA (Human Gene Ontology Annotation),  this knowledge base, used to assign nomenclature, is applied to GO annotaton.</li>
-  </ul><br>
-
-<li><a href="http://www.ebi.ac.uk/intact/site/">IntAct (Protein Interaction Group at EBI)</a>
-  <ul>
-    <li>IntAct provides literature-curated protein interaction data.</li>
+   <li>Annotated genes involved in transcription.</li>
   </ul>
-<br>
-
+  <br>
+  
+ <li><a href="http://gowiki.tamu.edu/wiki/index.php/Category:CACAO">CACAO</a> (Community Assessment of Community Annotation with Ontologies)
+  <ul>
+   <li>CACAO is a competition for teams of undergrads around the world that improves the functional annotation of genes.</li>
+   </ul>
+   <br>
+ 
+ <li><a href="http://www.genenames.org">HGNC</a> (HUGO Gene Nomenclature Committee)
+ <ul>
+  <li>HGNC provides approved nomenclature for human genes and collaborates closesly with MGI in establishing nomenclature for mouse genes. Through HUGOA (Human Gene Ontology Annotation),  this knowledge base, used to assign nomenclature, is applied to GO annotaton.</li>
+ </ul>
+ <br>
+ 
+ <li><a href="https://en.wikipedia.org/wiki/Critical_Assessment_of_Function_Annotation">CAFA</a> (Critical Assessment of Function Annotation)
+   <ul>
+    <li> CAFA is conducted by the Automated Function Prediction Special Interest Group (AFP/SIG) and uses algorithms to predict Gene Ontology terms for proteins. </li>
+   </ul>
+   <br>
+   
+ <li><a href="https://ucl-ddi.alzheimersresearchuk.org">ARUK-UCL</a> (Alzheimer’s Research UK - University College London)
+  <ul>
+   <li>Provides functional annotation for genes implicated in Alzheimer's disease.</li>
+  </ul>
+  <br>
+  
+ <li><a href="http://dflat.cs.tufts.edu">DFLAT</a> (Developmental FunctionaL Annotation at Tufts) 
+  <ul>
+   <li>Curates human fetal gene functional annotations.</li>
+  </ul>
+  <br>
+  
+ <li><a href="http://www.geneontology.org/page/syngo-synapse-biology">SynGO</a> (Synapse Gene Ontology and Annotation Initiative) 
+  <ul>
+   <li>Provides curated annotations of pre- and postsynaptic genes.</li>
+  </ul>
+  <br>
+  
+ <li><a href="http://www.agbase.msstate.edu/cgi-bin/gobrowser.cgi">AgBase</a> (AgBase at Mississippi State University)
+  <ul>
+   <li>Provides functional annotations for agricultural plant and animal gene products.</li>
+  </ul>
+  <br>
+  
+<li><a href="http://wiki.geneontology.org/index.php/Alzheimer%27s_Disease_Annotation_Project">Alzheimer's Disease Annotation Project</a> (At the University of Toronto)
+  <ul>
+   <li>Provides curation of genes associated with Alzheimer’s disease that have been significant in previous genome wide association studies.</li>
+   </ul>
+   <br>
+   
+<li><a href="https://reactome.org">Reactome</a> (Reactome Pathway Database)
+  <ul>
+   <li>Database of signaling and metabolic molecules organized into biological pathways and processes.</li>
+  </ul>
+  <br>
+  
+<li><a href="http://www.ucl.ac.uk/functional-gene-annotation/neurological/projects/syngo">SynGO-UCL</a> (SynGO Annotation Initiative - University College London)
+  <ul>
+   <li>Annotates proteins thought or known to play a role in the synapse.</li>
+  </ul>
+  <br>
+  
+ <li><a href="http://www.wormbase.org/">WormBase</a> (Nematode Information Resource)
+  <ul>
+   <li>Provides curation for <i>Caenorhabditis elegans</i> genes and those of related nematodes.</li>
+   </ul>
+   <br>
+ 
 <li>PINC (Proteome Incorporated)
-  <ul>
-    <li>PINC provided annotations created in 2001 for NCBI and extracted from EntrezGene.</li> 
-  </ul>
-<br>
+ <ul>
+  <li>PINC provided annotations created in 2001 for NCBI and extracted from EntrezGene.</li> 
+ </ul>
+ <br>
 
-<li><a href="http://www.roslin.ac.uk/">RI (Roslin Institute)</a>
-<ul>
+<li><a href="http://www.roslin.ac.uk/">RI</a> (Roslin Institute)
+ <ul>
   <li>The Roslin Institute provides annotation through several database systems maintained at their site, including ArkDB. </li> 
+ </ul>
+ <br>
+ 
+<li><a href="http://flybase.org">FlyBase</a> (Database of Drosophila Genes and Genomes)
+  <ul>
+   <li>Functional annotation of Drosophila gene products.</li>
+  </ul>
+  <br>
+<li><a href="http://dictybase.org">dictyBase</a> (Central Resource for Dictyostelid genomics)
+ <ul>
+  <li>Informatics resource for the social amoeba <i>Dictyostelium discoideum</i> and related species.</li>
+ </ul>
 </ul>
 </p>
 
