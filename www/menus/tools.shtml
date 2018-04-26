@@ -70,8 +70,10 @@ Note that the list in each section is a definition list <dl> where the term
 				</tr>
 				<tr >
 					<td>
-						<span class="small" style="padding:2px;">These tools are still in the prototyping and development phase, and may change, break or disappear at any time.  Your feedback can help us improve them. Please feel free to experiment with them and send us your comments.</span>
+						<span class="small" style="padding:2px;">These tools are still in the prototyping and development phase, and may change, break or disappear at any time. Your feedback can help us improve them. Please feel free to experiment with them and send us your comments.</span>
 						<dl class="linkedList">
+						    <dt>&bull; <a href="http://proto.informatics.jax.org/prototypes/mgv/#ref=C57BL/6J&genomes=C57BL/6J+A/J+AKR/J+BALB/cJ+C3H/HeJ+C57BL/6NJ+CAROLI/EIJ&chr=4&start=37427566.61470588&end=46427572.61470588&highlight=MGI:1921414+MGI:1919151">MGV - Multi Genome Viewer</a></dt>
+							<dd>View common genes, features and their genome coordinates for the C57BL/6J reference genome and the Sanger annotations for 18 other inbred strains.</dd>
 							<dt>&bull; <a href="http://proto.informatics.jax.org/prototypes/vlad">VLAD - Visual Annotation Display</a></dt>
 							<dd>VLAD is a tool for visualizing GO annotations. The annotation data are a subset of those available at the GO web site. You specify an annotation data set and a set of genes, and the tool will produce a graphical summary of the annotations. </dd>
 							<dt>&bull; <a href="<!--#include file='include/gotools_url.html'-->MGI_GO_Slim_Chart.html">GO Slim Chart Tool</a></dt>
