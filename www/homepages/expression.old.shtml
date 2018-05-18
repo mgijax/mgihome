@@ -1,0 +1,213 @@
+<!--#include file='include/templateHead.html'-->
+
+  <title>MGI-Mouse Gene Expression Database (GXD)</title>
+  <meta name="description" content="GXD collects and integrates the  gene expression information in MGI. Its primary emphasis is on endogenous gene expression during  mouse development." />
+  <meta name="keywords" content="MGI, mgi, mice, mouse, murine, mus musculus, genes, genome, genomic, gene expression, mouse anatomy, embryo, embryonic development, expression assay, immunohistochemistry, in situ reporter, blot, RNA in situ, RNase, RT-PCR, Northern blot, Western blot" />
+
+  <meta name="robots" content="NOODP" />
+  <meta name="robots" content="NOYDIR" />
+
+  <link rel="stylesheet" type="text/css" href="<!--#include file="include/stylesheet.html"-->" />
+  <link rel="stylesheet" type="text/css" href="<!--#include file='include/fewi_url.html'-->assets/css/home/homepages.css" />
+
+<!--#include file='include/templateBodyStart.html'-->
+
+<!-- start body content -->
+
+<!-- mini homepage header section -->
+<br>
+<center><img src="<!--#include file='include/mgihome_url.html'-->homepages/images/gxd_logo.png"></a></center><br>
+
+<center><b>GXD collects and integrates the  gene expression information in MGI.<br> Its primary emphasis is on endogenous gene expression during  mouse development.</b></center><br>
+<style type="text/css">
+.goldbar {
+text-align: left;
+font-weight: bold;
+font-size: 12px;
+color: #000;
+white-space: nowrap;
+border: 1px solid #EBCA6D;
+background-color: #EBCA6D;
+}
+.goldBorder {
+border: 1px solid #EBCA6D;
+}
+</style>
+
+
+<table class="sideMargin" border="0" cellspacing="0" cellpadding="0">
+
+	<tr>
+		<td rowspan="2" width="50%" valign="top">
+			<div class="goldBorder rightCenterMargin">
+				<div class="goldbar">Access Data</div>
+				<div class="boxBG pad5">
+					<dl>
+						<dt>Search for detailed gene expression assay results.</dt>
+						<dd class="searchList"><a class="small homeLink" href="<!--#include file='include/fewi_url.html'-->gxd">Gene Expression Data Query</a></dd>
+
+						<dt class="whatList">Search for references on gene expression during development.</dt>
+						<dd class="searchList"><a class="small homeLink" href="<!--#include file='include/fewi_url.html'-->gxdlit">Gene Expression Literature Query</a></dd>
+						<!--<dt class="whatList">Search for genes expressed in some anatomical structures and/or
+						developmental stages but not in others.</dt>
+						<dd class="searchList"><a class="small homeLink" href="<!--#include file='include/java_url.html'-->WIFetch?page=expressionQFexpanded">Gene Expression Data Expanded Query</a></dd> -->
+
+						<dt class="whatList">Search or browse for anatomical structures; includes links to associated expression results.</dt>
+						<dd class="searchList"><a class="small homeLink" href="<!--#include file='include/fewi_url.html'-->vocab/gxd/anatomy/">Mouse Developmental Anatomy Browser</a></dd>
+
+						<dt class="whatList">Use the interactive Tissue by Stage Matrix to access detailed gene expression results.</dt>
+						<dd class="searchList"><a class="small homeLink" href="<!--#include file='include/fewi_url.html'-->gxd/tissue_matrix">Gene Expression Data Matrix</a></dd>
+
+						<dt class="whatList">Search for and analyze gene expression results with MouseMine's customized and iterative queries, enrichment analysis and programmatic access. </dt>
+						<dd class="searchList"><a class="small homeLink" href="http://www.mousemine.org/mousemine/begin.do#Expression">MouseMine</a></dd>
+					</dl>
+				</div>
+			</div>
+		</td>
+		<td width="50%" valign="top">
+			<div class="goldBorder marginBottom leftCenterMargin">
+				<div class="goldbar">FAQs</div>
+				<div class="boxBG pad5">
+					<dl class="boxList">
+						<dt>How do I...</dt>
+						<dd class="faqList">.. find expression data for a specific gene and tissue?
+						<a class="small homeLink" onClick="javascript:openFaqWindow('GXD_GeneTissue.shtml'); return false;"
+						href="<!--#include file='include/faq_url.html'-->GXD_GeneTissue.shtml">FAQ</a></dd>
+						<dd class="faqList">.. find expression data for a tissue during development?
+						<a class="small homeLink" onClick="javascript:openFaqWindow('GXD_tissue_dev.shtml'); return false;"
+						href="<!--#include file='include/faq_url.html'-->GXD_tissue_dev.shtml">FAQ</a></dd>
+						<dd class="faqList">.. find genes expressed in one tissue but not another?
+						<a class="small homeLink" onClick="javascript:openFaqWindow('GXD_comp_tissue.shtml'); return false;"
+						href="<!--#include file='include/faq_url.html'-->GXD_comp_tissue.shtml">FAQ</a></dd>
+						<!--<dd class="faqList">.. interpret the results of my expression search?
+						<a class="small homeLink" onClick="javascript:openFaqWindow('GXD_matrix.shtml'); return false;"
+						href="<!--#include file='include/faq_url.html'-->GXD_matrix.shtml">FAQ</a></dd>-->
+						<dd class="faqList">.. find references that report expression data for a gene at a specific age?
+						<a class="small homeLink" onClick="javascript:openFaqWindow('GXD_ref_age.shtml'); return false;"
+						href="<!--#include file='include/faq_url.html'-->GXD_ref_age.shtml">FAQ</a></dd>
+					</dl>
+					<a class="small homeLink" href="<!--#include file='include/faq_url.html'-->FAQ.shtml#faq_gxd">More FAQs</a>
+				</div>
+			</div>
+		</td>
+	</tr>
+	<tr>
+		<td width="50%" valign="top">
+			<div class="goldBorder leftCenterMargin statList">
+				<div class="goldbar" style="height: 15px;">
+					<div class="left">GXD Includes</div>
+					<div class="right small" id="statsDate"></div>
+				</div>
+				<div class="boxBG pad5 small">
+					<div id="gxdStats"></div>
+					<a class="small homeLink" href="<!--#include file="include/mgihome_url.html"-->homepages/stats/all_stats.shtml#allstats_gxd">More...</a>
+				</div>
+			</div>
+		</td>
+	</tr>
+</table>
+<div class="boxWide goldBorder marginBottom">
+	<div class="goldbar" style="height: 15px;">
+		<span class="left">Gene Expression News</span>
+		<span class="right small">May 7, 2018</span>
+	</div>
+	<div class="boxBG pad5 small">
+	<style>
+	.small {
+font-size: 11px;
+font-weight: normal;
+}
+	</style>
+<ul>
+<li>The capabilities of the <a href="<!--#include file='include/fewi_url.html'-->gxd" target="_blank">Differential Expression Search</a> have been expanded. This search allows users to query for genes expressed in some anatomical structures and/or developmental stages but not in others. The new feature allows users to search for genes that have been shown to be expressed in a specified structure (or its substructures) and/or developmental stage(s) but nowhere else.</li>
+<li>We have developed interface utilities that allow users to compare gene expression and phenotype data for a given gene. The new <a href="<!--#include file='include/fewi_url.html'-->gxd/phenogrid/MGI:97487" target="_blank"> Gene Expression + Phenotype Comparison Matrix</a>, accessible from gene detail pages, visually juxtaposes tissues where a gene is normally expressed against tissues where mutations in that gene cause abnormalities. The anatomy axis of the view can be expanded and collapsed, allowing users to interactively explore correlations between gene expression and phenotype at different levels of detail. The <a href="<!--#include file='include/fewi_url.html'-->vocab/gxd/anatomy/EMAPA:17331" target="_blank">Mouse Developmental Anatomy Browser</a> has been enhanced; in addition to providing access to expression data for a given anatomical structure, it now provides access to corresponding phenotype data. On <a href="<!--#include file='include/fewi_url.html'-->accession/MGI:3618596"  target="_blank">Allele Detail</a> pages we have added links to anatomical structures affected by the mutations and links to wild-type expression data for these structures. As well, links have been added to the term detail section of the <a href="<!--#include file='include/fewi_url.html'-->vocab/mp_ontology/MP:0005452" target="_blank">Mammalian Phenotype Browser</a>, allowing users to access wild-type expression data in tissues associated with the phenotype.</li>
+<li>New interface utilities have been developed to help users find recombinase (cre) reporters with activity in specific tissues. The <a href="<!--#include file='include/fewi_url.html'-->home/recombinase" target="_blank">Recombinase (cre) Activity Search</a> now allows users to narrow their query to reporters whose activity has been detected in the specified structure (or its substructures) but nowhere else. Further, a <a href="<!--#include file='include/fewi_url.html'-->gxd/recombinasegrid/MGI:96677"  target="_blank">Matrix View</a> that juxtaposes the endogenous expression pattern of a gene against activity patterns for recombinases driven by the mouse gene promoter is now available. The matrix view is accessible from relevant gene and allele detail pages, as well as from the recombinase allele search summary.</li>
+
+<!--<br>
+<br>-->
+
+</ul>
+
+ </div>
+</div>
+
+<!-- Tabs box -->
+<!-- Note: This section uses a white gif to set the width and avoid
+    the a crash in IE6, and display problems in IE 6 & 7.  I also
+    needed to put this div in a table to get the fix to work.  The
+    order of the table and div tags is very specific to avoid some
+    flickering in IE.-->
+<table width="100%" cellpadding="0" cellspacing="0" border="0"><tr><td>
+<style>
+.gxdcontentstyle {
+border: 1px solid #EBCA6D;
+margin-bottom: 1em;
+padding: 10px;
+background-color: #F9F9F9;
+color: #025;
+}
+.shadetabs li a{
+text-decoration: none;
+padding: 3px 7px;
+margin-right: 3px;
+border-top: 1px solid #EBCA6D;
+border-right: 1px solid # EBCA6D;
+border-left: 1px solid # EBCA6D;
+border-bottom-style:none;
+background: white url(images/shadeGoldGray.gif) top left repeat-x;
+}
+</style>
+<div class="boxWide marginBottom">
+	<ul id="gxdtab" class="shadetabs">
+		<li><a href="<!--#include file='include/mgihome_url.html'-->homepages/tabContents/GXD_About.shtml" rel="ajaxcontentarea">About GXD</a></li>
+		<li class="selected"><a href="<!--#include file='include/mgihome_url.html'-->homepages/tabContents/GXD_SendData.shtml" rel="ajaxcontentarea">Send Us Your Data</a></li>
+		<li><a href="<!--#include file='include/mgihome_url.html'-->homepages/tabContents/GXD_Curators.shtml" rel="ajaxcontentarea">Our Data Policies</a></li>
+		<li><a href="<!--#include file='include/mgihome_url.html'-->homepages/tabContents/GXD_Help.shtml" rel="ajaxcontentarea">Help Documents</a></li>
+		<li><a href="<!--#include file='include/mgihome_url.html'-->homepages/tabContents/GXD_Collaborators.shtml" rel="ajaxcontentarea">Collaborators</a></li>
+		<li><a href="<!--#include file='include/mgihome_url.html'-->homepages/tabContents/GXD_Resources.shtml" rel="ajaxcontentarea">Other Links</a></li>
+	</ul>
+	<div id="gxdcontentarea" class="gxdcontentstyle">
+		<!--#include file='tabContents/GXD_SendData.shtml'-->
+	</div>
+
+<img src="<!--#include file='include/mgihome_url.html'-->homepages/images/white_dot.gif" width="720px" height="1px">
+</td></tr>
+</div>
+</table>
+
+<!--AJAX TABS CALLS-->
+
+<script type="text/javascript" src="<!--#include file="include/javascript.html"-->">
+    /***********************************************
+    * Ajax Tabs Content script- © Dynamic Drive DHTML code library (www.dynamicdrive.com)
+    * This notice MUST stay intact for legal use
+    * Visit Dynamic Drive at http://www.dynamicdrive.com/ for full source code
+    ***********************************************/
+</script>
+
+<script type="text/javascript">
+    var gxd_box=new ddajaxtabs("gxdtab", "gxdcontentarea")
+    gxd_box.setpersist(true)
+    gxd_box.setselectedClassTarget("linkparent") //"link" or "linkparent"
+    gxd_box.init()
+</script>
+
+<script type="text/javascript">
+var fewiurl = "<!--#include file='include/fewi_url.html'-->";
+$.ajax({
+	url: fewiurl + 'home/statistics/gxd_mini_home',
+	success: function(data) {
+		$('#gxdStats').html(data);
+	}
+});
+$.ajax({
+	url: fewiurl + 'home/database_date',
+	success: function(data) {
+		$('#statsDate').html(data);
+	}
+});
+</script>
+<!--#include file='include/templateBodyStop.html'-->
+
+</body>
+</html>
