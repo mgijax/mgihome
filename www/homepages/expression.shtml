@@ -115,7 +115,25 @@
 	<div id="" class="gxdSectionSpacer"></div>
 
 	<div id="highlightsSection">
-       <h4 class="text-center">Highlights</h4>
+      <h5 class="text-center">Highlights</h5>
+     <div class="container">
+     <div class="row">
+      <div class="col-sm-2" style="">
+           <img class="img-responsive" src="<!--#include file='include/mgihome_url.html'-->GXD/PhenoMatrix.png" alt="New Gene Expression + Phenotype Comparison Matrix" width="190" height="199.5">
+      </div>
+      <div class="col-sm-2" style="">
+           <img class="img-responsive" src="<!--#include file='include/mgihome_url.html'-->GXD/ArxImage.png" alt="Arx Expression Images" width="190" height="199.5">
+      </div>
+      <div class="col-sm-2" style="">
+           <img class="img-responsive" src="<!--#include file='include/mgihome_url.html'-->GXD/Glover.png" alt="Recently added: Glover JD et al." width="190" height="199.5">
+      </div>
+      <div class="col-sm-2" style="">
+           <img class="img-responsive" src="<!--#include file='include/mgihome_url.html'-->GXD/DifferentialUpdate.png" alt="Updated Differential Expression Search" width="190" height="199.5">
+      </div>
+      <div class="col-sm-2" style="">
+           <img class="img-responsive" src="<!--#include file='include/mgihome_url.html'-->GXD/CreMatrix.png" alt="Expression + Recombinase Comparison Matrix" width="190" height="199.5">
+      </div>
+    </div>
 	</div>
 
 	<div id="" class="gxdSectionSpacer"></div>
@@ -155,7 +173,6 @@ background: white url(images/shadeGoldGray.gif) top left repeat-x;
 </style>
 <div class="boxWide marginBottom">
 	<ul id="gxdtab" class="shadetabs">
-		<li><a href="<!--#include file='include/mgihome_url.html'-->homepages/tabContents/GXD_About.shtml" rel="ajaxcontentarea">About GXD</a></li>
 		<li class="selected"><a href="<!--#include file='include/mgihome_url.html'-->homepages/tabContents/GXD_SendData.shtml" rel="ajaxcontentarea">Send Us Your Data</a></li>
 		<li><a href="<!--#include file='include/mgihome_url.html'-->homepages/tabContents/GXD_Curators.shtml" rel="ajaxcontentarea">Data & Images Policies</a></li>
 		<li><a href="<!--#include file='include/mgihome_url.html'-->homepages/tabContents/GXD_Help.shtml" rel="ajaxcontentarea">Help</a></li>
