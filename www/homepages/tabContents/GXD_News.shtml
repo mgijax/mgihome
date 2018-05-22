@@ -1,0 +1,25 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+
+<title>MGI-Mouse Gene Expression Database (GXD): What's New - Gene Expression Database News</title>
+</head>
+<body>
+
+<table>
+	<tr><td>
+		<ul>
+<li>The capabilities of the <a href="<!--#include file='include/fewi_url.html'-->gxd/differential" target="_blank">Differential Expression Search</a> have been expanded. This search allows users to query for genes expressed in some anatomical structures and/or developmental stages but not in others. The new feature allows users to search for genes that have been shown to be expressed in a specified structure (or its substructures) and/or developmental stage(s) but nowhere else.</li>
+<img src="<!--#include file='include/mgihome_url.html'-->GXD/DifferentialSearchForm.png" width="451" height="270" alt="Differential Search Form">
+<li>We have developed interface utilities that allow users to compare gene expression and phenotype data for a given gene. The new <a href="<!--#include file='include/fewi_url.html'-->gxd/phenogrid/MGI:97487" target="_blank"> Gene Expression + Phenotype Comparison Matrix</a>, accessible from gene detail pages, visually juxtaposes tissues where a gene is normally expressed against tissues where mutations in that gene cause abnormalities. The anatomy axis of the view can be expanded and collapsed, allowing users to interactively explore correlations between gene expression and phenotype at different levels of detail. The <a href="<!--#include file='include/fewi_url.html'-->vocab/gxd/anatomy/EMAPA:17331" target="_blank">Mouse Developmental Anatomy Browser</a> has been enhanced; in addition to providing access to expression data for a given anatomical structure, it now provides access to corresponding phenotype data. On <a href="<!--#include file='include/fewi_url.html'-->accession/MGI:3618596"  target="_blank">Allele Detail</a> pages we have added links to anatomical structures affected by the mutations and links to wild-type expression data for these structures. As well, links have been added to the term detail section of the <a href="<!--#include file='include/fewi_url.html'-->vocab/mp_ontology/MP:0005452" target="_blank">Mammalian Phenotype Browser</a>, allowing users to access wild-type expression data in tissues associated with the phenotype.</li>
+<img src="<!--#include file='include/mgihome_url.html'-->GXD/MouseDevelopmentalAnatomyBrowser.png" width="350" height="270" alt="Mouse Developmental Anatomy Browser">
+<img src="<!--#include file='include/mgihome_url.html'-->GXD/MammalianPhenotypeBrowser.png" width="460" height="270" alt="Mammalian Phenotype Browser">
+<li>New interface utilities have been developed to help users find recombinase (cre) reporters with activity in specific tissues. The <a href="<!--#include file='include/fewi_url.html'-->home/recombinase" target="_blank">Recombinase (cre) Activity Search</a> now allows users to narrow their query to reporters whose activity has been detected in the specified structure (or its substructures) but nowhere else. Further, a <a href="<!--#include file='include/fewi_url.html'-->gxd/recombinasegrid/MGI:96677"  target="_blank">Matrix View</a> that juxtaposes the endogenous expression pattern of a gene against activity patterns for recombinases driven by the mouse gene promoter is now available. The matrix view is accessible from relevant gene and allele detail pages, as well as from the recombinase allele search summary.</li>
+<img src="<!--#include file='include/mgihome_url.html'-->GXD/GXDcreMatrix.png" width="307" height="300" alt="Gene Expression + Recombinase Activity Comparison Matrix">
+</ul>
+	</td></tr>
+</table>
+
+</body>
+</html>
