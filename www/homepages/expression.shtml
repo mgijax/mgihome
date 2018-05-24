@@ -20,7 +20,7 @@
   <script>
   function openFastTrackWindow()
 {
-   url = "${MGIHOME_URL}" + "GXD/FastTrack.html";
+   url = "${MGIHOME_URL}" + "GXD/FastTrack.shtml";
    window.open(url,'fastTrackWindow','width=1000,height=600,resizable=yes,scrollbars=yes,alwaysRaised=yes');
 }
 </script>
