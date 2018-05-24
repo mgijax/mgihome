@@ -20,7 +20,7 @@
   
   function openFastTrackWindow()
 {
-   url = "${MGIHOME_URL}" + "dir/file.html";
+   url = "${MGIHOME_URL}" + "GXD/FastTrack.html";
    window.open(url,'fastTrackWindow','width=1000,height=600,resizable=yes,scrollbars=yes,alwaysRaised=yes');
 };
 
