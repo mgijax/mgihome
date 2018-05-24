@@ -20,7 +20,7 @@
   <script>
   function openFastTrackWindow()
 {
-	  url = "<!--#include file='include/mgihome_url.html'-->" + "GXD/FastTrack.html";
+	  url = "<!--#include file='include/mgihome_url.html'-->" + "GXD/FastTrack.shtml";
    window.open(url,'fastTrackWindow','width=1000,height=600,resizable=yes,scrollbars=yes,alwaysRaised=yes');
 }
 </script>
