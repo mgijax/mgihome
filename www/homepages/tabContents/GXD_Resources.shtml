@@ -48,11 +48,16 @@
     border: 2px;
     border-radius: 5px;   
 }
-  
+ 
+ .linksTable {
+   max-width: 720px;
+
+}
+
 </style>
 
 <body>
-<table>
+<table class="linksTable">
 <tr><td>
 <div class="container">
 <div class="row">
@@ -118,6 +123,7 @@
     
     <div class="col-md-1" style="background-color:white;"></div>
   </div>
+</div>
 </div>
 </td></tr>
 </table>
