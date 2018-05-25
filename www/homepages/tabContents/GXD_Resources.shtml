@@ -49,16 +49,21 @@
     border-radius: 5px;   
 }
  
- .linksTable {
-   max-width: 720px;
-
-}
+#listsTab {
+    width:720px;
+    margin: 0 auto;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    font-family: Verdana,Arial,Helvetica;
+  }
 
 </style>
 
 <body>
-<table class="linksTable">
+<table>
 <tr><td>
+<div id="listsTab">
 <div class="container">
 <div class="row">
     <div class="col-md-5" style="background-color:#FFEFC1;"><b><i>in situ</i> Projects</b>
@@ -123,6 +128,7 @@
     
     <div class="col-md-1" style="background-color:white;"></div>
   </div>
+</div>
 </div>
 </div>
 </td></tr>
