@@ -44,10 +44,18 @@ border: 1px solid #EBCA6D;
     white-space: nowrap;
     text-align: right;
 }
+.small {
+    font-size: 11px;
+    font-weight: normal;
+}
+.boxBG {
+    background-color: #F9F9F9;
+}
 </style>
 </head>
 
 <body>
+<img src="<!--#include file='include/mgihome_url.html'-->homepages/images/gxd_logo_small.png">
 <table>
 	<div class="goldBorder leftCenterMargin statList">
 				<div class="goldbar" style="height: 15px;">
