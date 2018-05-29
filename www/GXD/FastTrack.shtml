@@ -21,7 +21,11 @@
     background-color: #EBCA6D;
     height: 10px;
   }
-  
+
+#titleSection {
+    width:100%;
+  }
+    
 </style>
 </head>
 <body>
@@ -32,11 +36,12 @@
 
 
 <div id="" class="gxdSectionSpacer"></div>
-<img src="<!--#include file='include/mgihome_url.html'-->homepages/images/gxd_logo_small.png">
 <br>
- 
- <h5 class="text-center"><span style="font-weight: bold;">Fast Track Your Data</span></h5>
+<img src="<!--#include file='include/mgihome_url.html'-->homepages/images/gxd_logo_small.png">
 
+<div id="titleSection">
+<h4 class="text-center"><span style="font-weight: bold;">Fast Track Your Data</span></h4>
+</div>
 <!--<p><img style="width:200px;" src="<!--#include file='include/mgihome_url.html'-->GXD/FastTrack.png"></p>-->
 <p>Electronic submission speeds up the integration of your data into GXD, making it more quickly available and increasing its exposure. It also allows you to include more of your data. GXD accepts both published and unpublished data.</p> 
 
