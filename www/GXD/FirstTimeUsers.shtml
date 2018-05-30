@@ -22,9 +22,9 @@
     background-color: #EBCA6D;
     height: 10px;
   }
- 
- p.a {
-    font-family: font-family: Verdana,Arial,Helvetica;
+  
+ body {
+   font-family: font-family: Verdana,Arial,Helvetica, sans-serif;
 }
 
 </style>
@@ -39,7 +39,7 @@
 <br>
 <img src="<!--#include file='include/mgihome_url.html'-->homepages/images/gxd_logo_small.png">
  
- <p class="a"><span style="font-weight: bold;">First Time Users</span></p>
+ <p class="text-center"><span style="font-weight: bold;">First Time Users</span></p>
 
 <table>
 	<!--<tr><td><img src="<!--#include file='include/mgihome_url.html'-->GXD/FirstTime.png" width="200" height="108" alt="First Time Users Icon"></td></tr>-->
