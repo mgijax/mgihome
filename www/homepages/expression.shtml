@@ -78,7 +78,8 @@
     background-color: #EBCA6D;
     height: 10px;
   }
- .col-sm-2 {
+  
+  .col-sm-2 {
     padding-left: 3px;
     padding-right: 3px;
   }
@@ -87,6 +88,26 @@
   padding-left: 3px;
   padding-right: 3px;
 }
+
+ .grid {
+ 
+  width:101%;
+  border: 1px solid #EBCA6D;
+  padding: 1px;
+  background-color: #EBCA6D;
+}
+
+.gridRow {
+ display: -webkit-flex;
+    -webkit-justify-content: space-evenly; 
+    display: flex;
+    justify-content: space-evenly;
+}
+
+ .col-sm-4 {
+    padding-left: 6px;
+    padding-right: 0px;
+  }
 
 </style>
  
