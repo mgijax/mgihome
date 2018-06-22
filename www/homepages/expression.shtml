@@ -117,46 +117,46 @@
 
 	<div class="row">
 		   <div class="col-sm-3" style="">
-		    <img style="width:210px;" src="<!--#include file='include/mgihome_url.html'-->homepages/images/gxd_logo.png">
+		    <img style="width:210px;" src="<!--#include file='include/mgihome_url.html'-->homepages/images/gxd_logo.png" alt="GXD logo">
 		    <br><br>
 			<p class="text-center"><small>GXD collects and integrates the gene expression information in MGI. Its primary emphasis is on endogenous gene expression during mouse development.</small></p>
       <br>
-      <img style="width:210px;" src="<!--#include file='include/mgihome_url.html'-->GXD/Funding.png"> <br>
+      <img style="width:210px;" src="<!--#include file='include/mgihome_url.html'-->GXD/Funding.png" alt="GXD Grant"> <br>
 				
 		    </div>
 		    <div class="col-sm-9" style="">
 		    	<div class="grid" style="">
 		    	 <div class="gridRow">
 				    <div class="col-sm-4" style="">
-				      <a href="<!--#include file='include/fewi_url.html'-->gxd"><img style="width:210px;" src="<!--#include file='include/mgihome_url.html'-->GXD/DataSearch.png"></a>
+				      <a href="<!--#include file='include/fewi_url.html'-->gxd"><img style="width:210px;" src="<!--#include file='include/mgihome_url.html'-->GXD/DataSearch.png" alt="GXD Data Search Link"></a>
 				    </div>
 		    		<div class="col-sm-4" style="">
-		    		  <a href="http://www.informatics.jax.org/gxd/differential"><img style="width:210px;" src="<!--#include file='include/mgihome_url.html'-->GXD/DifferentialSearch.png"></a>
+		    		  <a href="http://www.informatics.jax.org/gxd/differential"><img style="width:210px;" src="<!--#include file='include/mgihome_url.html'-->GXD/DifferentialSearch.png" alt="GXD Differential Search Link"></a>
 		    		</div>
 		   			<div class="col-sm-4" style="">
-		   			  <a href="<!--#include file='include/fewi_url.html'-->gxd/batchSearch"><img style="width:210px;" src="<!--#include file='include/mgihome_url.html'-->GXD/Batch.png"></a>
+		   			  <a href="<!--#include file='include/fewi_url.html'-->gxd/batchSearch"><img style="width:210px;" src="<!--#include file='include/mgihome_url.html'-->GXD/Batch.png" alt="GXD Batch Search Link"></a>
 		   			</div>
 		  		</div>
 		    	<div class="gridRow">
 				    <div class="col-sm-4" style="">
-		   			  <a href="http://www.informatics.jax.org/vocab/gxd/anatomy/EMAPA:16039"><img style="width:210px;" src="<!--#include file='include/mgihome_url.html'-->GXD/Anatomy.png"></a>
+		   			  <a href="http://www.informatics.jax.org/vocab/gxd/anatomy/EMAPA:16039"><img style="width:210px;" src="<!--#include file='include/mgihome_url.html'-->GXD/Anatomy.png" alt="GXD Anatomy Browser Link"></a>
 				  	</div>
 		    		<div class="col-sm-4" style="">
-		   			  <a href="http://www.informatics.jax.org/gxd/tissue_matrix"><img style="width:210px;" src="<!--#include file='include/mgihome_url.html'-->GXD/GXDMatrix.png"></a>
+		   			  <a href="http://www.informatics.jax.org/gxd/tissue_matrix"><img style="width:210px;" src="<!--#include file='include/mgihome_url.html'-->GXD/GXDMatrix.png" alt="GXD Tissue Matrix"></a>
 		    		</div>
 		   			<div class="col-sm-4" style="">
-		   			  <a href="<!--#include file='include/fewi_url.html'-->gxdlit"><img style="width:210px;" src="<!--#include file='include/mgihome_url.html'-->GXD/LitSearch.png"></a>
+		   			  <a href="<!--#include file='include/fewi_url.html'-->gxdlit"><img style="width:210px;" src="<!--#include file='include/mgihome_url.html'-->GXD/LitSearch.png" alt="GXD Literature Search Link"></a>
 		   			</div>
 		  		</div>
 		    	<div class="gridRow">
 				    <div class="col-sm-4" style="">
-		   			  <a href="http://www.informatics.jax.org/mgihome/homepages/stats/all_stats.shtml#allstats_gxd"> <img style="width:210px;" src="<!--#include file='include/mgihome_url.html'-->GXD/DataContent.png"></a>
+		   			  <a href="http://www.informatics.jax.org/mgihome/homepages/stats/all_stats.shtml#allstats_gxd"> <img style="width:210px;" src="<!--#include file='include/mgihome_url.html'-->GXD/DataContent.png" alt="GXD Statistics"></a>
 				  	</div>
 		    		<div class="col-sm-4" style="">
-		   			  <a href="http://www.mousemine.org/mousemine/begin.do#Expression"><img style="width:210px;" src="<!--#include file='include/mgihome_url.html'-->GXD/MouseMineLink.png"></a>
+		   			  <a href="http://www.mousemine.org/mousemine/begin.do#Expression"><img style="width:210px;" src="<!--#include file='include/mgihome_url.html'-->GXD/MouseMineLink.png" alt="Link to Expression Searches in MouseMine"></a>
 		    		</div>
 		   			<div class="col-sm-4" style="">
-		   			  <a onclick="javascript:openFirstTimeWindow(); return false;" ><img style="width:210px;" src="<!--#include file='include/mgihome_url.html'-->GXD/FirstTime.png"></a>
+		   			  <a onclick="javascript:openFirstTimeWindow(); return false;" ><img style="width:210px;" src="<!--#include file='include/mgihome_url.html'-->GXD/FirstTime.png" alt="GXD Data Chart"></a>
 		   			</div>
 	  			</div>
 	  		</div>
@@ -228,7 +228,7 @@ background: white url(images/shadeGoldGray.gif) top left repeat-x;
 <div class="boxWide marginBottom">
 	<ul id="gxdtab" class="shadetabs">
 		<li class="selected"><a href="<!--#include file='include/mgihome_url.html'-->homepages/tabContents/GXD_News.shtml" rel="ajaxcontentarea">What's New</a></li>
-        <li><a href="<!--#include file='include/mgihome_url.html'-->homepages/tabContents/GXD_Curators.shtml" rel="ajaxcontentarea">Data & Images Policies</a></li>
+        <li><a href="<!--#include file='include/mgihome_url.html'-->homepages/tabContents/GXD_Curators.shtml" rel="ajaxcontentarea">Data &amp; Images Policies</a></li>
 		<li><a href="<!--#include file='include/mgihome_url.html'-->homepages/tabContents/GXD_Help.shtml" rel="ajaxcontentarea">Help</a></li>
 		<li><a href="<!--#include file='include/mgihome_url.html'-->homepages/tabContents/GXD_Resources.shtml" rel="ajaxcontentarea">Links</a></li>
 	</ul>
@@ -263,9 +263,9 @@ background: white url(images/shadeGoldGray.gif) top left repeat-x;
 	</div>
 	 <div class="col-sm-3" style="">
 	  <img style="width:200px;" src="<!--#include file='include/mgihome_url.html'-->GXD/blank.png"><br>
-	  <a href="<!--#include file='include/mgihome_url.html'-->GXD/aboutGXD.shtml" rel="ajaxcontentarea"><img style="width:200px;" src="<!--#include file='include/mgihome_url.html'-->GXD/AboutGXD.png"></a><br>
-	  <a onclick="javascript:openFastTrackWindow(); return false;" ><img style="width:200px;" src="<!--#include file='include/mgihome_url.html'-->GXD/FastTrack.png"></a><br>
-	  <a href="<!--#include file='include/mgihome_url.html'-->support/mgi_inbox.shtml" rel="ajaxcontentarea"><img style="width:200px;" src="<!--#include file='include/mgihome_url.html'-->GXD/Contact.png"></a>
+	  <a href="<!--#include file='include/mgihome_url.html'-->GXD/aboutGXD.shtml" rel="ajaxcontentarea"><img style="width:200px;" src="<!--#include file='include/mgihome_url.html'-->GXD/AboutGXD.png" alt="About GXD Link"></a><br>
+	  <a onclick="javascript:openFastTrackWindow(); return false;" ><img style="width:200px;" src="<!--#include file='include/mgihome_url.html'-->GXD/FastTrack.png" alt="Get your data into GXD quickly"></a><br>
+	  <a href="<!--#include file='include/mgihome_url.html'-->support/mgi_inbox.shtml" rel="ajaxcontentarea"><img style="width:200px;" src="<!--#include file='include/mgihome_url.html'-->GXD/Contact.png" alt="Contact Us"></a>
 	  </div>
 	 </div>
 	</div>
