@@ -161,3 +161,8 @@ def getObjectTypes(searchString):
 	for row in byID['summaryRows']:
 		rows.append(row['objectType'])
 	return rows
+
+def getObjects(searchString):
+	# return [ list of objects matching the given 'searchString' ]
+	byID = getJsonResults('accession/json', 'id', searchString)
+	return byID['summaryRows']
