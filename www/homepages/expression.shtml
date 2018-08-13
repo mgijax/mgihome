@@ -64,9 +64,10 @@
     height: 340px;
   }
 
-  #highlightsSection {
+   #highlightsSection {
     width:100%;
     height: 200px;
+    background-color: #D0E0F0;
   }
 
   #bottomSection {
@@ -79,22 +80,41 @@
     height: 10px;
   }
   
+   .gxdGraySectionSpacer {
+    border: 1px solid #d6d6d6;
+    background-color: #d6d6d6;
+    height: 2px;
+  }
+  
+  .whiteSectionSpacer {
+    border: 1px solid #FFFFFF;
+    background-color: #FFFFFF;
+    height: 20px;
+  }
+  
   .col-sm-2 {
     padding-left: 3px;
     padding-right: 3px;
   }
     
-  img {
+  .col-sm-1 {
+    padding-top: 22px;
+  }
+  
+img {
+  padding-left: 3px;
+  padding-right: 3px;
+}
+
+#imageBorder {
+  padding-top: 15px;
   padding-left: 3px;
   padding-right: 3px;
 }
 
  .grid {
- 
   width:101%;
-  border: 1px solid #EBCA6D;
   padding: 1px;
-  background-color: #EBCA6D;
 }
 
 .gridRow {
@@ -105,8 +125,8 @@
 }
 
  .col-sm-4 {
-    padding-left: 6px;
-    padding-right: 0px;
+    padding-left: 3px;
+    padding-right: 3px;
   }
 
 </style>
@@ -164,32 +184,33 @@
 	</div>
 	</div>
 
-	<div id="" class="gxdSectionSpacer"></div>
+	<div id="" class="whiteSectionSpacer"></div>
 
 	<div id="highlightsSection">
-      <h5 class="text-center"><span style="font-weight: bold; color: #31517C;">Highlights</span></h5>
-     <div class="row">
-      <div class="col-md-1">&nbsp;</div>
+      
+  <div class="row">
+     <div class="col-sm-1" style="">
+     <img src="Highlights.png" alt="HIGHLIGHTS" width="79">
+     </div>
       <div class="col-sm-2" style="">
-           <a href="http://www.informatics.jax.org/gxd/phenogrid/MGI:97487"><img src="<!--#include file='include/mgihome_url.html'-->GXD/PhenoMatrix.png" alt="New Gene Expression + Phenotype Comparison Matrix" width="158"></a>
+           <img src="Highlight1.png" alt="New Gene Expression + Phenotype Comparison Matrix" width="130" id="imageBorder">
       </div>
       <div class="col-sm-2" style="">
-           <a href="http://www.informatics.jax.org/gxd/marker/MGI:1097716?tab=imagestab#gxd=markerMgiId%3DMGI%3A1097716%26theilerStage%3D%26assayType%3D%26results%3D25%26startIndex%3D0%26sort%3D%26dir%3Dasc%26tab%3Dimagestab"><img src="<!--#include file='include/mgihome_url.html'-->GXD/ArxImage.png" alt="Arx Expression Images" width="158"></a>
+           <a href="http://www.informatics.jax.org/gxd/marker/MGI:1097716?tab=imagestab#gxd=markerMgiId%3DMGI%3A1097716%26theilerStage%3D%26assayType%3D%26results%3D25%26startIndex%3D0%26sort%3D%26dir%3Dasc%26tab%3Dimagestab"><img src="Highlight2.png" alt="Arx Expression Images" width="130" id="imageBorder"></a>
       </div>
       <div class="col-sm-2" style="">
-           <a href="http://www.informatics.jax.org/gxd/reference/J:244781"><img src="<!--#include file='include/mgihome_url.html'-->GXD/Glover.png" alt="Recently added: Glover JD et al." width="158"></a>
+           <img src="Highlight3.png" alt="Recently added: Glover JD et al."width="130" id="imageBorder">
       </div>
       <div class="col-sm-2" style="">
-           <a href="http://www.informatics.jax.org/gxd/differential"><img src="<!--#include file='include/mgihome_url.html'-->GXD/DifferentialUpdate.png" alt="Updated Differential Expression Search" width="158"></a>
+           <img src="Highlight4.png" alt="Updated Differential Expression Search" width="130" id="imageBorder">
       </div>
       <div class="col-sm-2" style="">
-           <a href="http://www.informatics.jax.org/gxd/recombinasegrid/MGI:96677"><img src="<!--#include file='include/mgihome_url.html'-->GXD/CreMatrix.png" alt="Expression + Recombinase Comparison Matrix" width="158"></a>
+           <img src="Highlight5.png" alt="Expression + Recombinase Comparison Matrix" width="130" id="imageBorder">
       </div>
-      <div class="col-md-1">&nbsp;</div>
     </div>
 	</div>
 
-	<div id="" class="gxdSectionSpacer"></div>
+	<div id="" class="whiteSectionSpacer"></div>
 
 	<div id="bottomSection">
 		<div class="row">
