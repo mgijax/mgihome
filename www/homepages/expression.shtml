@@ -193,7 +193,7 @@ img {
      <img src="<!--#include file='include/mgihome_url.html'-->GXD/Highlights.png" alt="HIGHLIGHTS" width="79">
      </div>
       <div class="col-sm-2" style="">
-           <a onclick="javascript:openHighlight1Window(); return false;" ><img src="<!--#include file='include/mgihome_url.html'-->GXD/Highlight1.png" alt="New Gene Expression + Phenotype Comparison Matrix" width="130" id="imageBorder"></a>
+          <a href="<!--#include file='include/mgihome_url.html'-->GXD/Highlight1.shtml" onClick="window.open('GXD/Highlight1.shtml','Highlight 1','resizable,height=900,width=700'); return false;"><img src="<!--#include file='include/mgihome_url.html'-->GXD/Highlight1.png" alt="New Gene Expression + Phenotype Comparison Matrix" width="130" id="imageBorder"></a>
       </div>
       <div class="col-sm-2" style="">
            <a href="http://www.informatics.jax.org/gxd/marker/MGI:1097716?tab=imagestab#gxd=markerMgiId%3DMGI%3A1097716%26theilerStage%3D%26assayType%3D%26results%3D25%26startIndex%3D0%26sort%3D%26dir%3Dasc%26tab%3Dimagestab"><img src="<!--#include file='include/mgihome_url.html'-->GXD/Highlight2.png" alt="Arx Expression Images" width="130" id="imageBorder"></a>
@@ -214,16 +214,13 @@ img {
 	<div id="" class="whiteSectionSpacer"></div>
 	
 	 <div class="row">
- <div class="col-sm-1" style=""></div>
- <div class="col-sm-3" style="">
-	  <a href="<!--#include file='include/mgihome_url.html'-->GXD/aboutGXD.shtml " rel="ajaxcontentarea"><img style="width:200px;" src="AboutGXD.png" alt="About GXD Link"></a></div>
-	  <div class="col-sm-3" style="">
-	  <a href="<!--#include file='include/mgihome_url.html'-->GXD/FastTrack.shtml" rel="ajaxcontentarea" onClick="window.open('GXD/FastTrack.shtml','Fast Track Your Data','resizable,height=900,width=700'); return false;"><img style="width:200px;" src="FastTrack.png" alt="Get your data into GXD quickly"></a></div>
-	  <div class="col-sm-3" style="">
-	  <a href="<!--#include file='include/mgihome_url.html'-->support/mgi_inbox.shtml" rel="ajaxcontentarea"><img style="width:200px;" src="Contact.png" alt="Contact Us"></a>
+ <div class="col-sm-4" style="">
+	  <a href="<!--#include file='include/mgihome_url.html'-->GXD/aboutGXD.shtml " rel="ajaxcontentarea"><img style="width:200px;" src="<!--#include file='include/mgihome_url.html'-->GXD/AboutGXD.png" alt="About GXD Link"></a></div>
+	  <div class="col-sm-4" style="">
+	  <a href="<!--#include file='include/mgihome_url.html'-->GXD/FastTrack.shtml" rel="ajaxcontentarea" onClick="window.open('GXD/FastTrack.shtml','Fast Track Your Data','resizable,height=900,width=700'); return false;"><img style="width:200px;" src="<!--#include file='include/mgihome_url.html'-->GXD/FastTrack.png" alt="Get your data into GXD quickly"></a></div>
+	  <div class="col-sm-4" style="">
+	  <a href="<!--#include file='include/mgihome_url.html'-->support/mgi_inbox.shtml" rel="ajaxcontentarea"><img style="width:200px;" src="<!--#include file='include/mgihome_url.html'-->GXD/Contact.png" alt="Contact Us"></a>
 	  </div>	
-	  <div class="col-sm-1" style=""></div>
-	  <div class="col-sm-1" style=""></div>
 	  </div>
 	  
 	<div id="" class="whiteSectionSpacer"></div>
