@@ -212,12 +212,26 @@ img {
 	</div>
 
 	<div id="" class="whiteSectionSpacer"></div>
+	
+	 <div class="row">
+ <div class="col-sm-1" style=""></div>
+ <div class="col-sm-3" style="">
+	  <a href="<!--#include file='include/mgihome_url.html'-->GXD/aboutGXD.shtml " rel="ajaxcontentarea"><img style="width:200px;" src="AboutGXD.png" alt="About GXD Link"></a></div>
+	  <div class="col-sm-3" style="">
+	  <a href="<!--#include file='include/mgihome_url.html'-->GXD/FastTrack.shtml" rel="ajaxcontentarea" onClick="window.open('GXD/FastTrack.shtml','Fast Track Your Data','resizable,height=900,width=700'); return false;"><img style="width:200px;" src="FastTrack.png" alt="Get your data into GXD quickly"></a></div>
+	  <div class="col-sm-3" style="">
+	  <a href="<!--#include file='include/mgihome_url.html'-->support/mgi_inbox.shtml" rel="ajaxcontentarea"><img style="width:200px;" src="Contact.png" alt="Contact Us"></a>
+	  </div>	
+	  <div class="col-sm-1" style=""></div>
+	  <div class="col-sm-1" style=""></div>
+	  </div>
+	  
+	<div id="" class="whiteSectionSpacer"></div>
 
 	<div id="bottomSection">
 		<div class="row">
 		    <div class="col-sm-9" style="">
 		    	
-
 
 
 <!-- Tabs box -->
@@ -279,17 +293,6 @@ background: white url(images/shadeGoldGray.gif) top left repeat-x;
     gxd_box.init()
 </script>
 
-
-
-
-	</div>
-	 <div class="col-sm-3" style="">
-	  <img style="width:200px;" src="<!--#include file='include/mgihome_url.html'-->GXD/blank.png"><br>
-	  <a href="<!--#include file='include/mgihome_url.html'-->GXD/aboutGXD.shtml" rel="ajaxcontentarea"><img style="width:200px;" src="<!--#include file='include/mgihome_url.html'-->GXD/AboutGXD.png" alt="About GXD Link"></a><br>
-	  <a onclick="javascript:openFastTrackWindow(); return false;" ><img style="width:200px;" src="<!--#include file='include/mgihome_url.html'-->GXD/FastTrack.png" alt="Get your data into GXD quickly"></a><br>
-	  <a href="<!--#include file='include/mgihome_url.html'-->support/mgi_inbox.shtml" rel="ajaxcontentarea"><img style="width:200px;" src="<!--#include file='include/mgihome_url.html'-->GXD/Contact.png" alt="Contact Us"></a>
-	  </div>
-	 </div>
 	</div>
 
 	<div id="" class="gxdSectionSpacer"></div>
