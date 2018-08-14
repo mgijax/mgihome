@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8" />
+	<title></title>
+	<meta name="generator" content="BBEdit 12.1" />
+
+<style>
+
+  <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <!-- jQuery library -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <!-- Latest compiled JavaScript -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script> 
+
+	.outline { border: 2px solid #EBCA6D; }
+	
+.gxdSectionSpacer {
+    border: 1px solid #EBCA6D;
+    background-color: #EBCA6D;
+    height: 10px;
+  }
+
+#titleSection {
+    width:100%;
+  }
+
+ body {
+   font-family: Verdana,Arial,Helvetica, sans-serif;
+}
+    
+</style>
+</head>
+<body>
+<title><!--#include file="include/mgiversion.html"--> Highlight 5</title>
+
+
+<link rel="stylesheet" type="text/css"/>
+
+<div id="" class="gxdSectionSpacer"></div>
+<br>
+<img src="<!--#include file='include/mgihome_url.html'-->homepages/images/gxd_logo_small.png">
+
+<p>New interface utilities have been developed to help users find recombinase (cre) reporters with activity in specific tissues. The <a href="<!--#include file='include/fewi_url.html'-->home/recombinase" target="_blank">Recombinase (cre) Activity Search</a> now allows users to narrow their query to reporters whose activity has been detected in the specified structure (or its substructures) but nowhere else. Further, a  <a href="<!--#include file='include/fewi_url.html'-->gxd/recombinasegrid/MGI:96677" target="_blank">Matrix View</a> that juxtaposes the endogenous expression pattern of a gene against activity patterns for recombinases driven by the mouse gene promoter is now available. The matrix view is accessible from relevant gene and allele detail pages, as well as from the recombinase allele search summary.</p> 
+<img src="<!--#include file='include/mgihome_url.html'-->GXD/RecombinaseMatrix.png" width="600" height="327" alt=Recombiniase Matrix">
+<br>
+<img src="<!--#include file='include/mgihome_url.html'-->GXD/RecombinaseMatrix2.png" width="600" height="270" alt=Recombiniase Matrix 2">
+
+<div id="" class="gxdSectionSpacer"></div>
+
+</body>
+</html>
