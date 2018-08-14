@@ -21,7 +21,7 @@
   function openFastTrackWindow()
 {
 	  url = "<!--#include file='include/mgihome_url.html'-->" + "GXD/FastTrack.shtml";
-   window.open(url,'fastTrackWindow','width=1000,height=500,resizable=yes,scrollbars=yes,alwaysRaised=yes');
+   window.open(url,'fastTrackWindow','width=900,height=500,resizable=yes,scrollbars=yes,alwaysRaised=yes');
 }
 </script>
  <script>
@@ -38,7 +38,27 @@
    window.open(url,'firstTimeWindow','width=800,height=600,resizable=yes,scrollbars=yes,alwaysRaised=yes');
 }
 </script>
-
+<script>
+  function openHighlight1Window()
+{
+	  url = "<!--#include file='include/mgihome_url.html'-->" + "GXD/Highlight1.shtml";
+   window.open(url,'highlight1Window','width=900,height=700,resizable=yes,scrollbars=yes,alwaysRaised=yes');
+}
+</script>
+<script>
+  function openHighlight4Window()
+{
+	  url = "<!--#include file='include/mgihome_url.html'-->" + "GXD/Highlight4.shtml";
+   window.open(url,'highlight4Window','width=900,height=700,resizable=yes,scrollbars=yes,alwaysRaised=yes');
+}
+</script>
+<script>
+  function openHighlight5Window()
+{
+	  url = "<!--#include file='include/mgihome_url.html'-->" + "GXD/Highlight5.shtml";
+   window.open(url,'highlight5Window','width=900,height=700,resizable=yes,scrollbars=yes,alwaysRaised=yes');
+}
+</script>
 
 <!--#include file='include/templateBodyStart.html'-->
 
@@ -193,7 +213,7 @@ img {
      <img src="<!--#include file='include/mgihome_url.html'-->GXD/Highlights.png" alt="HIGHLIGHTS" width="79">
      </div>
       <div class="col-sm-2" style="">
-          <a href="<!--#include file='include/mgihome_url.html'-->GXD/Highlight1.shtml" onClick="window.open('Highlight1.shtml','Highlight 1','resizable,height=900,width=700'); return false;"><img src="<!--#include file='include/mgihome_url.html'-->GXD/Highlight1.png" alt="New Gene Expression + Phenotype Comparison Matrix" width="130" id="imageBorder"></a>
+          <a onclick="javascript:openHighlight1Window(); return false;"><img src="<!--#include file='include/mgihome_url.html'-->GXD/Highlight1.png" alt="New Gene Expression + Phenotype Comparison Matrix" width="130" id="imageBorder"></a>
       </div>
       <div class="col-sm-2" style="">
            <a href="http://www.informatics.jax.org/gxd/marker/MGI:1097716?tab=imagestab#gxd=markerMgiId%3DMGI%3A1097716%26theilerStage%3D%26assayType%3D%26results%3D25%26startIndex%3D0%26sort%3D%26dir%3Dasc%26tab%3Dimagestab"><img src="<!--#include file='include/mgihome_url.html'-->GXD/Highlight2.png" alt="Arx Expression Images" width="130" id="imageBorder"></a>
@@ -202,10 +222,10 @@ img {
            <a href="<!--#include file='include/fewi_url.html'-->gxd/reference/J:244781#gxd=jnum%3DJ%3A244781%26results%3D25%26startIndex%3D0%26sort%3D%26dir%3Dasc%26tab%3Dimagestab" target="_blank"><img src="<!--#include file='include/mgihome_url.html'-->GXD/Highlight3.png" alt="Recently added: Glover JD et al."width="130" id="imageBorder"></a>
       </div>
       <div class="col-sm-2" style="">
-           <a href="<!--#include file='include/mgihome_url.html'-->GXD/Highlight4.shtml" onClick="window.open('GXD/Highlight4.shtml','Highlight 4','resizable,height=900,width=700'); return false;"><img src="<!--#include file='include/mgihome_url.html'-->GXD/Highlight4.png" alt="Updated Differential Expression Search" width="130" id="imageBorder"></a>
+           <a onclick="javascript:openHighlight4Window(); return false;"><img src="<!--#include file='include/mgihome_url.html'-->GXD/Highlight4.png" alt="Updated Differential Expression Search" width="130" id="imageBorder"></a>
       </div>
       <div class="col-sm-2" style="">
-           <a href="<!--#include file='include/mgihome_url.html'-->GXD/Highlight5.shtml" onClick="window.open('GXD/Highlight5.shtml','Highlight 5','resizable,height=900,width=700'); return false;"><img src="<!--#include file='include/mgihome_url.html'-->GXD/Highlight5.png" alt="Expression + Recombinase Comparison Matrix" width="130" id="imageBorder"></a>
+           <a onclick="javascript:openHighlight5Window(); return false;"><img src="<!--#include file='include/mgihome_url.html'-->GXD/Highlight5.png" alt="Expression + Recombinase Comparison Matrix" width="130" id="imageBorder"></a>
       </div>
        <div class="col-sm-1">&nbsp;</div>
     </div>
@@ -217,7 +237,7 @@ img {
  <div class="col-sm-4" style="">
 	  <a href="<!--#include file='include/mgihome_url.html'-->GXD/aboutGXD.shtml " rel="ajaxcontentarea"><img style="width:200px;" src="<!--#include file='include/mgihome_url.html'-->GXD/AboutGXD.png" alt="About GXD Link"></a></div>
 	  <div class="col-sm-4" style="">
-	  <a href="<!--#include file='include/mgihome_url.html'-->GXD/FastTrack.shtml" rel="ajaxcontentarea" onClick="window.open('GXD/FastTrack.shtml','Fast Track Your Data','resizable,height=900,width=700'); return false;"><img style="width:200px;" src="<!--#include file='include/mgihome_url.html'-->GXD/FastTrack.png" alt="Get your data into GXD quickly"></a></div>
+	  <a onClick="window.open('GXD/FastTrack.shtml','Fast Track Your Data','resizable,height=900,width=700'); return false;"><img style="width:200px;" src="<!--#include file='include/mgihome_url.html'-->GXD/FastTrack.png" alt="Get your data into GXD quickly"></a></div>
 	  <div class="col-sm-4" style="">
 	  <a href="<!--#include file='include/mgihome_url.html'-->support/mgi_inbox.shtml" rel="ajaxcontentarea"><img style="width:200px;" src="<!--#include file='include/mgihome_url.html'-->GXD/Contact.png" alt="Contact Us"></a>
 	  </div>	
@@ -229,7 +249,6 @@ img {
 		<div class="row">
 		    <div class="col-sm-12" style="">
 		    	
-
 
 <!-- Tabs box -->
 <!-- Note: This section uses a white gif to set the width and avoid
