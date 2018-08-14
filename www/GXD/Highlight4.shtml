@@ -33,7 +33,7 @@
 </style>
 </head>
 <body>
-<title><!--#include file="include/mgiversion.html"--> Highlight 1</title>
+<title><!--#include file="include/mgiversion.html"--> Highlight 4</title>
 
 
 <link rel="stylesheet" type="text/css"/>
@@ -42,8 +42,10 @@
 <br>
 <img src="<!--#include file='include/mgihome_url.html'-->homepages/images/gxd_logo_small.png">
 
-<p>The  Gene Expression + Phenotype Comparison Matrix, accessible from gene detail pages, allows users to compare gene expression and phenotype data for a given gene.  It visually juxtaposes tissues where a gene is normally expressed against tissues where mutations in that gene cause abnormalities. The anatomy axis of the view can be expanded and collapsed, allowing interactive exploration of the correlations between gene expression and phenotype at different levels of detail.</p> 
-<img src="<!--#include file='include/mgihome_url.html'-->GXD/PhenoMatrixPopup" width="806" height="484" alt="Expression + Phenotype Matrix">
+<p>The capabilities of the Differential Expression Search have been expanded. This search allows users to query for genes expressed in some anatomical structures and/or developmental stages but not in others. The new feature allows users to search for genes that have been shown to be expressed in a specified structure (or its substructures) and/or developmental stage(s) but nowhere else.</p> 
+<img src="<!--#include file='include/mgihome_url.html'-->GXD/DifferentialSearchForm.png" width="600" height="369" alt="Differential Search Form">
+<br>
+<img src="<!--#include file='include/mgihome_url.html'-->GXD/DifferentialResults.png" width="600" height="174" alt="Differential Search Results">
 
 <div id="" class="gxdSectionSpacer"></div>
 
