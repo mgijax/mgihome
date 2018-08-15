@@ -237,7 +237,7 @@ img {
  <div class="col-sm-4" style="">
 	  <a href="<!--#include file='include/mgihome_url.html'-->GXD/aboutGXD.shtml " rel="ajaxcontentarea"><img style="width:200px;" src="<!--#include file='include/mgihome_url.html'-->GXD/AboutGXD.png" alt="About GXD Link"></a></div>
 	  <div class="col-sm-4" style="">
-	  <a onClick="window.open('GXD/FastTrack.shtml','Fast Track Your Data','resizable,height=900,width=700'); return false;"><img style="width:200px;" src="<!--#include file='include/mgihome_url.html'-->GXD/FastTrack.png" alt="Get your data into GXD quickly"></a></div>
+	  <a onclick="javascript:FastTrackWindow(); return false;"><img style="width:200px;" src="<!--#include file='include/mgihome_url.html'-->GXD/FastTrack.png" alt="Get your data into GXD quickly"></a></div>
 	  <div class="col-sm-4" style="">
 	  <a href="<!--#include file='include/mgihome_url.html'-->support/mgi_inbox.shtml" rel="ajaxcontentarea"><img style="width:200px;" src="<!--#include file='include/mgihome_url.html'-->GXD/Contact.png" alt="Contact Us"></a>
 	  </div>	
