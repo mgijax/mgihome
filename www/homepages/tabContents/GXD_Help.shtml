@@ -9,8 +9,50 @@
 <body>
 
 <table>
+
+	<tr><th><img src="<!--#include file='include/mgihome_url.html'-->GXD/TutorialHelpTab.png" width="83" height="80" alt="Help Tab Image">&nbsp;&nbsp;Quick Tutorials</th></tr>
 	<tr><td>
-		<p>Detailed explanations for using gene expression query forms and tools:</p>
+	<dl class="boxList">
+						<dt>How do I...</dt>
+	      <dd class="faqList">.. find expression data for a specific gene and tissue?
+						<a class="small homeLink" onClick="javascript:openFaqWindow('GXD_GeneTissue.shtml'); return false;"
+						href="<!--#include file='include/faq_url.html'-->GXD_GeneTissue.shtml">FAQ</a></dd>
+		  <dd class="faqList">.. find expression data for a tissue during development?
+						<a class="small homeLink" onClick="javascript:openFaqWindow('GXD_tissue_dev.shtml'); return false;"
+						href="<!--#include file='include/faq_url.html'-->GXD_tissue_dev.shtml">FAQ</a></dd>
+		  <dd class="faqList">.. find genes expressed in one tissue but not another?
+						<a class="small homeLink" onClick="javascript:openFaqWindow('GXD_comp_tissue.shtml'); return false;"
+						href="<!--#include file='include/faq_url.html'-->GXD_comp_tissue.shtml">FAQ</a></dd>
+						<dd class="faqList">.. find expression data in mouse mutants?
+						<a class="small homeLink" onClick="javascript:openFaqWindow('GXD_mutant.shtml'); return false;"
+						href="<!--#include file='include/faq_url.html'-->GXD_mutant.shtml">FAQ</a></dd>
+						<dd class="faqList">.. find expression data for a list of genes?
+						<a class="small homeLink" onClick="javascript:openFaqWindow('GXD_gene_list.shtml'); return false;"
+						href="<!--#include file='include/faq_url.html'-->GXD_gene_list.shtml">FAQ</a></dd>
+		  <dd class="faqList">.. find references that report expression data for a gene at a specific age?
+						<a class="small homeLink" onClick="javascript:openFaqWindow('GXD_ref_age.shtml'); return false;"
+						href="<!--#include file='include/faq_url.html'-->GXD_ref_age.shtml">FAQ</a></dd>
+		  <dd class="faqList">.. interpret the results of my query?
+						<a class="small homeLink" onClick="javascript:openFaqWindow('GXD_matrix.shtml'); return false;"
+						href="<!--#include file='include/faq_url.html'-->GXD_matrix.shtml">FAQ</a></dd>
+		</tr>
+		<tr><th><img src="<!--#include file='include/mgihome_url.html'-->GXD/BrochureImage.jpg" width="43" height="100" alt="Brochure Image">&nbsp;&nbsp; <a href="<!--#include file='include/mgihome_url.html'-->GXD/GXDtrifold6.pdf">Printable Brochure</a></th>
+		</tr>
+		<tr><td>
+		<br></br>
+		<p><b>Recent publications describing how to use GXD</b></p>
+
+<ul>
+<li>The mouse Gene Expression Database (GXD): 2017 update. <a href="http://nar.oxfordjournals.org/content/45/D1/D730.full">Nucleic Acids Res.</a>  45:D730-D736 (2017).</li>
+<li>Mouse anatomy ontologies: enhancements and tools for exploring and integrating biomedical data. <a href="http://rd.springer.com/article/10.1007%2Fs00335-015-9584-9">Mamm Genome</a> 26:422-430 (2015).</li> 
+<li>GXD: a community resource of mouse Gene Expression Data. <a href="http://rd.springer.com/article/10.1007/s00335-015-9563-1">Mamm Genome</a> 26:314-324 (2015).</li>
+<li>The mouse gene expression database: New features and how to use them effectively. <a href="http://onlinelibrary.wiley.com/doi/10.1002/dvg.22864/abstract">Genesis</a> 53:510-522 (2015).</li>
+<li>The gene expression database for mouse development (GXD): Putting developmental expression information at your fingertips. <a href="http://onlinelibrary.wiley.com/doi/10.1002/dvdy.24155/abstract">Dev&nbsp;Dyn</a>  243:1176-1186 (2014).</li>
+</ul>
+</td>
+</tr>
+	<tr><td>	
+		<p><b>Detailed explanations for using gene expression query forms and tools:</b></p>
 		<ul  id="help">
 		  <li>Gene Expression Literature Query Form <a href="<!--#include file="include/userhelp_url.html"-->EXPRESSION_literature_help.shtml">help</a></li>
 		  <li>Gene Expression Data Query Form <a href="<!--#include file="include/userhelp_url.html"-->EXPRESSION_help.shtml">help</a></li>

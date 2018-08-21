@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8" />
+	<title></title>
+	<meta name="generator" content="BBEdit 12.1" />
+
+<style>
+
+  <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <!-- jQuery library -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <!-- Latest compiled JavaScript -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script> 
+
+	.outline { border: 2px solid #EBCA6D; }
+	
+.gxdSectionSpacer {
+    border: 1px solid #EBCA6D;
+    background-color: #EBCA6D;
+    height: 10px;
+  }
+
+#titleSection {
+    width:100%;
+  }
+
+ body {
+   font-family: Verdana,Arial,Helvetica, sans-serif;
+}
+    
+</style>
+</head>
+<body>
+<title><!--#include file="include/mgiversion.html"--> Highlight 4</title>
+
+
+<link rel="stylesheet" type="text/css"/>
+
+<div id="" class="gxdSectionSpacer"></div>
+<br>
+<img src="<!--#include file='include/mgihome_url.html'-->homepages/images/gxd_logo_small.png">
+
+<p>The capabilities of the <a href="http://www.informatics.jax.org/gxd/differential" target="_blank">Differential Expression Search</a> have been expanded. This search allows users to query for genes expressed in some anatomical structures and/or developmental stages but not in others. The new feature allows users to search for genes that have been shown to be expressed in a specified structure (or its substructures) and/or developmental stage(s) but nowhere else.</p> 
+<img src="<!--#include file='include/mgihome_url.html'-->GXD/DifferentialSearchForm.png" width="600" height="369" alt="Differential Search Form">
+<br><br>
+<img src="<!--#include file='include/mgihome_url.html'-->GXD/DifferentialResults.png" width="600" height="174" alt="Differential Search Results">
+
+<div id="" class="gxdSectionSpacer"></div>
+
+</body>
+</html>
