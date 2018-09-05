@@ -18,14 +18,10 @@
   <table class="toc" width="100%">
 	<tr><td>
       <ul>
+        <li><a href="#sept7_2018">September 7, 2018</a> |
         <li><a href="#aug21_2018">August 21, 2018</a> |
         <li><a href="#may7_2018">May 7, 2018</a> |
-        <li><a href="#oct20_2017">October 20, 2017</a> |
-        <li><a href="#june5_2017">June 5, 2017</a> |
-        <li><a href="#may15_2017">May 15, 2017</a> |
-        <li><a href="#may1_2017">May 1, 2017</a> |
-        <li><a href="#march13_2017">March 13, 2017</a> |
-        <li><a href="news_2016.shtml"><span style="white-space: nowrap">Archive: News and Announcements for 2016</span></a></li> 
+        <li><a href="news_2017.shtml"><span style="white-space: nowrap">Archive: News and Announcements for 2017</span></a></li> 
        </ul>
        </td>
      </tr>              
@@ -33,6 +29,40 @@
    </td></tr>
 
    <tr><td></td></tr>
+   
+  <tr><td><a id="sept7_2018"></a>
+
+<table class="outline" width="100%">
+   
+   <tr><td class="enhance">September 7, 2018</td></tr>
+   <tr><td>
+ 	<dl class="linkedList">
+ 	<dt><a href="http://www.mousemine.org/mousemine/begin.do" target="_blank">MouseMine</a> now includes genomic data for 18 more mouse inbred strains: 16 sequenced and annotated by the Wellcome Institute Sanger <a href="https://www.sanger.ac.uk/science/data/mouse-genomes-project" target="_blank">Mouse Genomes Project</a> and two wild-derived strains (CAROLI/EiJ and PAHARI/EiJ) <a href="https://genome.cshlp.org/content/early/2018/03/21/gr.234096.117" target="_blank">published</a> by Paul Flicek and Duncan Odom and others, as well as the C57BL/6J reference genome. Currently only the C57BL/6J annotation is “reference quality.”</dt>
+<dt>In your MouseMine search results for a gene or list of genes, several query templates are automatically run. Four in the Genome section of your results include the new data (<a href="http://test.mousemine.org/mousemine/report.do?id=22531929&trail=%7c22531929">Example </a>):
+ <ol>
+  <li>Canonical gene --> CDSs in specific strains
+    <ul>
+     <li>A report of the coding sequences for each strain for the genes in your list</li>
+    </ul></li>
+   <li>Canonical gene --> Exons in specific strains
+      <ul>
+     <li>A report of the exons for each transcript for each strain for the genes in your list</li>
+    </ul></li>
+   <li>Canonical gene --> Strain-specific IDs, biotypes, and locations
+    <ul>
+     <li>A report of the genomic sequences for each strain for the genes in your list</li>
+    </ul></li>
+   <li>Canonical gene --> Transcripts in specific strains
+    <ul>
+     <li>A report of each of the transcripts for each strain for the genes in your list</li>
+    </ul></li>
+ </ol>
+</dt>
+<dt>Use the Export button above a report to get your results as a tab or comma-separated file, or as FASTA or GFF3 features. Or click on an identifier to get an individual sequence.</dt>
+</dl>
+   </td>
+  </tr>
+</table>
    
     <tr><td><a id="aug21_2018"></a>
 
@@ -61,79 +91,6 @@
    </td>
   </tr>
 </table>
-   
-   <tr><td><a id="oct20_2017"></a>
-
-<table class="outline" width="100%">
-
-<tr><td class="enhance">October 20, 2017</td></tr>
-   <tr><td>
- 	<dl class="linkedList">
- 	<dt>The Alliance of Genome Resources' (<a href="http://www.alliancegenome.org" target="_blank">AGR</a>) goal is to provide a consistent user interface with an integrated view of data from 6 Model Organism Databases and the Gene Ontology (GO) Consortium. The founding database members of the Alliance are Flybase, Mouse Genome Database, Rat Genome Database, Saccharomyces Genome Database, Wormbase, and the Zebrafish Information Network. This initial public release (AGR 1.0) allows users to search for, and view, gene, functional (GO) data, and disease associations from the above seven sources. The release includes orthology data for human and Alliance organisms, built on the DRSC Integrative Ortholog Prediction Tool (<a href="http://www.flyrnai.org/diopt" target="_blank">DIOPT</a>), which integrates several prediction approaches.</dt>
-	<dt>The summary section of MGI Gene Detail pages now offers links to AGR (Alliance) mouse gene pages and MGI Disease Ontology Browser pages link to Alliance disease pages.</dt>
-   </dl>
-   </td>
-  </tr>
-</table>
-   
-   <tr><td><a id="june5_2017"></a>
-
-      <table class="outline" width="100%">
-
-<tr><td class="enhance">June 5, 2017</td></tr>
- 	<tr><td>
- 	<dl class="linkedList">
- 	<dt>This MGI release provides updates to the Disease Ontology (<a href="<!--#include file='include/fewi_url.html'-->disease" target="_blank">DO</a>) Browser. The browser pages now include a graphical view of the DO. This view makes it easy to trace all paths from a term back to the root node of the ontology. Users may navigate up or down the tree by clicking on a term in the graph view. The DO Browser's Genes and Models tabs now include counts of the associated human and mouse genes and all mouse  models for the disease, respectively.</dt>
-	<dt>Last year, human OMIM disease-to-phenotype relationships from the Human Phenotype Ontology (HPO) were integrated into the Human - Mouse: Disease Connection (HMDC). This release debuts the MGI Human Phenotype Ontology (<a href="<!--#include file='include/fewi_url.html'-->vocab/hp_ontology" target="_blank">HPO</a>) Browser. You can either browse or search the HPO Browser to view terms, definitions, and term relationships in a hierarchical display. Selected terms in the HPO Tree View link to a Human - Mouse Disease Connection query for the term and displays the human diseases and the high-level human phenotype terms associated with the term, the human genes associated with those diseases and their mouse orthologs. With this release, the number of human diseases annotated to HPO terms increased due to the addition of Orphanet disease-to-phenotype relationships from the Human Phenotype Ontology (HPO).</dt>
- 
-	</dl>
- 	</td>
-	</tr>
-	</table>
-   
-   <tr><td><a id="may15_2017"></a>
-
-      <table class="outline" width="100%">
-
-<tr><td class="enhance">May 15, 2017</td></tr>
- 	<tr><td>
- 	<dl class="linkedList">
- 	<dt>Additional lacZ knock in reporter data from the International Mouse Phenotyping Consortium (<a href="https://www.mousephenotype.org" target="_blank">IMPC</a>) have been imported into GXD. This set now comprises data for 1,112 targeted mutants, an increase of 468 mutants. It includes 39,510 images and their 44,551 annotated results, obtained from embryonic day 12.5 and postnatal adult specimens. These data are fully integrated into GXD, allowing them to be searched in context of all other gene expression data in GXD. The entire set can be viewed at reference <a href="<!--#include file='include/fewi_url.html'-->accession/J:228563"  target="_blank">J:228563</a>.</dt>  
-	</dl>
- 	</td>
-	</tr>
-	</table>
-   
-    <tr><td><a id="may1_2017"></a>
-
-      <table class="outline" width="100%">
-
-<tr><td class="enhance">May 1, 2017</td></tr>
- 	<tr><td>
- 	<dl class="linkedList">
- 	<dt>This release includes embryonic phenotype data from the Deciphering the Mechanisms of Developmental Disorders (DMDD) consortium. All of the DMDD mouse lines are derived from IMPC EC cells or CRIPSR lines. For an example, see this <a href="<!--#include file='include/fewi_url.html'-->accession/MGI:4432510" target="_blank">Allele Detail</a> page.</dt>
-	<dt>Included in this release are redesigns to the Mammalian Phenotype (<a href="<!--#include file='include/fewi_url.html'-->vocab/mp_ontology" target="_blank">MP</a>), Gene Ontology (<a href="<!--#include file='include/fewi_url.html'-->vocab/gene_ontology" target="_blank">GO</a>), and the <a href="<!--#include file='include/fewi_url.html'-->vocab/gxd/ma_ontology" target="_blank">Adult Mouse Anatomy</a> Browsers.</dt>
-	<dt>MGI now includes C57BL/6J contig sequences for MGI markers that are located on contigs that are unlocalized and unplaced on the genome assembly. You can query by these contig sequences and return all associated markers. Details of a marker's location within a contig are provided in notes on Gene Detail pages in the Location & Maps section. As an example, see the <a href="<!--#include file='include/fewi_url.html'-->accession/MGI:1345188" target="_blank">Spry3</a> Gene Detail page.</dt>  
-	</dl>
- 	</td>
-	</tr>
-	</table>
-    
-    <tr><td><a id="march13_2017"></a>
-
-      <table class="outline" width="100%">
-
-<tr><td class="enhance">March 13, 2017</td></tr>
- 	<tr><td>
- 	<dl class="linkedList">
- 	<dt>Disease Ontology (DO) is incorporated into MGI.</dt>
- 	<dt>The Disease Ontology (<a href="http://disease-ontology.org/" target="_blank">DO</a>) is a community effort to provide standard terms for annotating phenotypic data. It is a hierarchical ontology, built on a Directed Acyclic Graph (DAG) structure, that integrates vocabularies from <abbr title="Medical Subject Headings">MeSH</abbr>, <abbr title="International Classification of Diseases">ICD</abbr>, NCI's thesaurus, <abbr title="Systematized Nomenclature of Medicine">SNOMED</abbr>, <abbr title="Unified Medical Language System">UMLS</abbr>, Orphanet, <abbr title="Experimental Factor Ontology">EFO</abbr> and <abbr title="Online Mendelian Inheritance in Man">OMIM</abbr>. Its hierarchical structure permits a range of detail from high-level, broadly descriptive terms to low-level, very specific terms. This range is useful for annotating mouse model data to the level of detail known and for searching for this information using either broad or specific terms as search criteria.</dt>
- 	<dt>Existing MGI mouse human disease model annotations are now being translated to DO terms. You can use the MGI <a href="<!--#include file='include/fewi_url.html'-->disease" target="_blank">Disease Ontology Browser</a> to navigate the ontology and see associated genes and mouse models. The genes and models tabs for higher level terms show all data for all of the more specific child terms. The MGI Quick Search field, Human - Mouse: Disease Connection, and other Query Forms' Phenotype / Disease field, support searches of the DO. 
-</dt>
-	</dl>
- 	</td>
-	</tr>
-	</table>
 
 </td></tr>
 </table>
