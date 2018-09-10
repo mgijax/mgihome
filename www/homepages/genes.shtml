@@ -72,11 +72,11 @@
 						<dt>Search for genes and genome features by symbol, name, location, gene ontology classification or phenotype.</dt>
 						<dd class="searchList"><a class="small homeLink" href="<!--#include file='include/fewi_url.html'-->marker">Genes and Markers Query</a></dd>
 
-						<!--<dt class="whatList">Search for sequences by mouse strain or biological attribute.</dt>
-						<dd class="searchList"><a class="small homeLink" href="<!--#include file='include/fewi_url.html'-->sequence">Sequence Query</a></dd>-->
-
 						<dt class="whatList">Create a display of regions of the mouse genome.</dt>
-						<dd class="searchList"><a class="small homeLink" href="<!--#include file='include/jbrowse_url.html'-->">Mouse Genome Browser</a></dd>
+						<dd class="searchList"><a class="small homeLink" href="<!--#include file='include/jbrowse_url.html'-->">JBrowse Genome Browser</a></dd>
+						
+						<dt class="whatList">Compare genome features of de novo sequenced mouse strains.</dt>
+						<dd class="searchList"><a class="small homeLink" href="http://www.informatics.jax.org/mgv/#chr=4&start=37427566&end=46427572&dmode=comparison&ref=C57BL/6J&genomes=C57BL/6J+A/J+AKR/J+BALB/cJ+C3H/HeJ+C57BL/6NJ&highlight=MGI:1919151+MGI:1921414">Multiple Genome Viewer (MGV)</a></dd>
 
 						<dt class="whatList">Input a list of gene IDs or symbols and retrieve other database IDs and gene attributes (e.g. phenotypes, GO).</dt>
 						<dd class="searchList"><a class="small homeLink" href="<!--#include file='include/fewi_url.html'-->batch">Batch Query</a></dd>
@@ -155,9 +155,11 @@
 <div class="boxWide blueBorder marginBottom">
 	<div class="boxTitle">
 		<span class="left">Genes, Genome Features &amp; Maps News</span>
-		<span class="right small"> December 6, 2012</span>
+		<span class="right small"> October 16, 2018</span>
 	</div>
-	<div class="boxBG pad5 small"><p>MGI mouse genome coordinates are now updated to NCBI Mouse Build 38 (GRCm38.p1). For <i>Mus musculus</i> Build GRCm38.p1 statistics, see <a href="https://www.ncbi.nlm.nih.gov/projects/genome/assembly/grc/mouse/data/index.shtml">The Genome Reference Consortium</a> web site.
+	<div class="boxBG pad5 small"><p>For <i>Mus musculus</i> Build GRCm38 patch information and statistics, see <a href="https://www.ncbi.nlm.nih.gov/projects/genome/assembly/grc/mouse/data/index.shtml">The Genome Reference Consortium</a> web site.
+	MGI now incorporates strain genome data of de novo sequenced mouse strains from the Wellcome Sanger Institute's Mouse Genomes Project (MGP) and the European Bioinformatics Institute (EBI).  Genome feature annotations are provided by the GENCODE consortium, the University of California Santa Cruz (UCSC) Genome Browser Group and the Mouse Genomes Project.  
+	Browse strain genome features using the Multiple Genome Viewer (<a href="http://www.informatics.jax.org/mgv/#chr=4&start=37427566&end=46427572&dmode=comparison&ref=C57BL/6J&genomes=C57BL/6J+A/J+AKR/J+BALB/cJ+C3H/HeJ+C57BL/6NJ&highlight=MGI:1919151+MGI:192141">MGV</a>).
 	</p>
 	<!--<p>Temporarily, there is a discrepancy between genome coordinates for mouse SNPs, which are derived from an earlier NCBI build of the mouse genome, and genes and markers, whose coordinates are derived from the current build. (see <a href="<!--#include file='include/userhelp_url.html'-->SNP_discrepancy_help.shtml">details</a>).
 	</p>-->

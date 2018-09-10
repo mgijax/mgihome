@@ -25,6 +25,7 @@ REQUIRED = 1			# required or optional
 MARKER_TYPE = 'Marker'
 ASSAY_TYPE = 'Assay'
 ALLELE_TYPE = 'Allele'
+STRAIN_TYPE = 'Strain'
 
 # Email changed (to new system) in 4.0 - see TR 8682
 RECIPIENT = 'jaxmgi@service-now.com' 
@@ -39,7 +40,7 @@ REMEDY_MESSAGE = '''%s
 %s
 ''' % (mgi_utils.date(), '%s')
 
-ALLOWED_TYPES = [ MARKER_TYPE, ALLELE_TYPE, ASSAY_TYPE ]
+ALLOWED_TYPES = [ MARKER_TYPE, ALLELE_TYPE, ASSAY_TYPE, STRAIN_TYPE ]
 
 ###--- Class-Checking Functions ---###
 
@@ -687,6 +688,29 @@ class AlleleSubjectField (OneLineTextField):
 		self.validate()
 		return
 
+class StrainSubjectField (OneLineTextField):
+	# Concept:
+	#	IS: a OneLineTextField which represents the subject for
+	#		a Strain page
+	#	HAS: see Field
+	#	DOES: see Field; also provides a new method whereby we can
+	#		set the field's value given a strain's accession ID
+
+	def setByAcc (self,
+		parms		# dictionary; parms[fieldname] = fieldvalue
+		):
+
+		subj = 'RE: Strain'
+		if parms.has_key ('accID'):
+			result = homelib.getObjects(parms['accID'])
+			if len(result) > 0:
+				subj = '%s %s (%s)' % (subj, result[0]['description'], parms['accID'])
+			else:
+				subj = '%s (%s)' % (subj, parms['accID'])
+		self.value = subj
+		self.validate()
+		return
+
 class MarkerSubjectField (OneLineTextField):
 	# Concept:
 	#	IS: a OneLineTextField which represents the subject for
@@ -1220,6 +1244,44 @@ class AlleleUserInput (SimpleTextUserInput):
 		self.setFields (parms)
 		return
 
+class StrainUserInput (SimpleTextUserInput):
+	# Concept:
+	#	IS: a SimpleTextUserInput object which has a set of "Your
+	#		Comment" instructions particular to strains, and
+	#		a subject field which is strain-specific
+	#	HAS: see SimpleTextUserInput (and IS)
+	#	DOES: see SimpleTextUserInput
+
+	def __init__ (self,
+		parms = {}	# dictionary; parms[fieldname] = fieldvalue
+		):
+		# Purpose: constructor
+		# Returns: nothing
+		# Assumes: nothing
+		# Effects: initializes instance variables
+		# Throws: nothing
+		# Notes: Take note of the order in which we do things here.
+		#	We first call the superclass constructor to set up
+		#	the standard instance variables.  We then set a new
+		#	value for the commentInstructions, and change the
+		#	subject attribute to be a StrainSubjectField.  We
+		#	set its value according to any accID which was passed
+		#	in.  Finally, we use the parameters to set the new
+		#	values for all instance variables.  This ensures that
+		#	any values submitted by the user override the default
+		#	values.
+
+		SimpleTextUserInput.__init__ (self)
+		self.commentInstructions = '''Use this space to submit additional information for this
+			mouse strain (synonyms, strain-specific identifiers, references, phenotypes, diseases,
+			etc.).  For new strain submissions, please use the <a href="../submissions/amsp_submission.cgi">Mutant
+			Alleles, Strains, and Phenotypes Submission Form</a>. For all other comments and suggestions, contact 
+			<a href="%ssupport/mgi_inbox.shtml">User Support</a>.<BR>''' % config['MGIHOME_URL']
+		self.subject = StrainSubjectField ('subject', 'Subject', REQUIRED, width=45)
+		self.subject.setByAcc (parms)
+		self.setFields (parms)
+		return
+
 class MarkerUserInput (SimpleTextUserInput):
 	# Concept:
 	#	IS: a SimpleTextUserInput object which has a set of "Your
@@ -1299,6 +1361,9 @@ def getInputObj (
 	
 				elif mgiType == ASSAY_TYPE:
 					inp = AssayUserInput (parms)
+	
+				elif mgiType == STRAIN_TYPE:
+					inp = StrainUserInput (parms)
 	
 				# add handling here for other MGI Types as needed...
 	
