@@ -76,7 +76,7 @@
 						<dd class="searchList"><a class="small homeLink" href="<!--#include file='include/jbrowse_url.html'-->">JBrowse Genome Browser</a></dd>
 						
 						<dt class="whatList">Compare genome features of de novo sequenced mouse strains.</dt>
-						<dd class="searchList"><a class="small homeLink" href="http://proto.informatics.jax.org/prototypes/mgv/#ref=C57BL/6J&genomes=C57BL/6J+A/J+BALB/cJ+C3H/HeJ+CAST/EiJ&landmark=Dnaja1&chr=4&start=37427566.61470588&end=46427572.61470588&highlight=MGI:1921414+MGI:1270129">Multiple Genome Viewer (MGV)</a></dd>
+						<dd class="searchList"><a class="small homeLink" href="<!--#include file='include/wi_url.html'-->mgv">Multiple Genome Viewer (MGV)</a></dd>
 
 						<dt class="whatList">Input a list of gene IDs or symbols and retrieve other database IDs and gene attributes (e.g. phenotypes, GO).</dt>
 						<dd class="searchList"><a class="small homeLink" href="<!--#include file='include/fewi_url.html'-->batch">Batch Query</a></dd>
@@ -159,7 +159,7 @@
 	</div>
 	<div class="boxBG pad5 small"><p>For <i>Mus musculus</i> Build GRCm38 patch information and statistics, see <a href="https://www.ncbi.nlm.nih.gov/projects/genome/assembly/grc/mouse/data/index.shtml">The Genome Reference Consortium</a> web site.
 	MGI now incorporates strain genome data of de novo sequenced mouse strains from the Wellcome Sanger Institute's Mouse Genomes Project (MGP) and the European Bioinformatics Institute (EBI).  Genome feature annotations are provided by the GENCODE consortium, the University of California Santa Cruz (UCSC) Genome Browser Group and the Mouse Genomes Project.  
-	Browse strain genome features using the Multiple Genome Viewer (<a href="http://proto.informatics.jax.org/prototypes/mgv/#ref=C57BL/6J&genomes=C57BL/6J+A/J+BALB/cJ+C3H/HeJ+CAST/EiJ&landmark=Dnaja1&chr=4&start=37427566.61470588&end=46427572.61470588&highlight=MGI:1921414+MGI:1270129">MGV</a>).
+	Browse strain genome features using the Multiple Genome Viewer (<a href="<!--#include file='include/wi_url.html'-->mgv">MGV</a>).
 	</p>
 	<!--<p>Temporarily, there is a discrepancy between genome coordinates for mouse SNPs, which are derived from an earlier NCBI build of the mouse genome, and genes and markers, whose coordinates are derived from the current build. (see <a href="<!--#include file='include/userhelp_url.html'-->SNP_discrepancy_help.shtml">details</a>).
 	</p>-->
