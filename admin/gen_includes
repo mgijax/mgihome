@@ -74,6 +74,7 @@ def main ():
     writeStringAsIncludeFile (config['JBROWSE_URL'], '../www/include/jbrowse_url.html')
     writeStringAsIncludeFile (config['GO_GRAPH_URL'], '../www/include/gograph_url.html')
     writeStringAsIncludeFile (config['GO_TOOLS_URL'], '../www/include/gotools_url.html')
+    writeStringAsIncludeFile (config['NCBI_BLAST_URL'], '../www/include/ncbi_blast_url.html')
     writeStringAsIncludeFile (config['LOCUSLINK_URL'], \
         '../www/include/locuslink_url.html')
     writeStringAsIncludeFile (config['RGD_URL'], \
