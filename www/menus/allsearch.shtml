@@ -122,14 +122,23 @@ table.outline{
 			<tr>
 				<td>
 					<dl class="linkedList">
-						<dt>&bull; <a href="<!--#include file='include/fewi_url.html'-->gxd">Gene Expression Data Query</a><br>
-						<dd>Search for detailed gene expression assay results.</dd>
+						<dt>&bull; <a href="<!--#include file='include/fewi_url.html'-->gxd">Gene Expression Data Standard Search</a><br>
+                        <dd>Search for gene expression results using a variety of search parameters.</dd>
 
-						<dt>&bull; <a href="<!--#include file='include/fewi_url.html'-->gxdlit">Gene Expression Literature Query</a></dt>
-						<dd>Search for references on gene expression during development.</dd>
+                        <dt>&bull; <a href="<!--#include file='include/fewi_url.html'-->gxd/differential">Gene Expression Data Differential Expression Search</a><br>
+                        <dd>Search for genes expressed in an anatomical structure and/or developmental stage(s) but not in others.</dd>
 
-						<dt>&bull; <a href="<!--#include file='include/fewi_url.html'-->vocab/gxd/anatomy/EMAPA:16039">Mouse Developmental Anatomy Browser</a></dt>
-						<dd>Search or browse for anatomical structures; includes links to associated expression results.</dd>
+                        <dt>&bull; <a href="<!--#include file='include/fewi_url.html'-->gxd/batchSearch">Gene Expression Data Batch Search</a><br>
+                        <dd>Search for gene expression results using lists of genes.</dd>
+
+                        <dt>&bull; <a href="<!--#include file='include/fewi_url.html'-->vocab/gxd/anatomy/">Mouse Developmental Anatomy Browser</a></dt>
+                        <dd>Search or browse for anatomical structures; includes links to associated expression results.</dd>
+
+                        <dt>&bull; <a href="<!--#include file='include/fewi_url.html'-->gxd/tissue_matrix">Gene Expression Data Matrix</a></dt>
+                        <dd>Use the interactive Tissue by Stage Matrix to access detailed gene expression results.</dd>
+
+                        <dt>&bull; <a href="<!--#include file='include/fewi_url.html'-->gxdlit">Gene Expression Literature Query</a></dt>
+                        <dd>Search for references on gene expression during development.</dd>
 					</dl>
 				</td>
 			</tr>
@@ -151,8 +160,8 @@ table.outline{
 					<dl class="linkedList">
 						<dt>&bull; <a href="<!--#include file='include/fewi_url.html'-->vocab/gene_ontology">GO Browser</a></dt>
 						<dd>Browse the Gene Ontology and mouse annotations in MGI.</dd>
-						<dt>&bull; <a href="<!--#include
- file='include/fewi_url.html'-->marker/">Genes &amp; Markers Query</a></dt>
+						
+						<dt>&bull; <a href="<!--#include file='include/fewi_url.html'-->marker/">Genes &amp; Markers Query</a></dt>
 						<dd>Search for genes using GO terms and other gene attributes.</dd>
 
 						<dt>&bull; <a href="<!--#include file='include/fewi_url.html'-->batch">Batch Query</a></dt>
