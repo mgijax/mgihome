@@ -101,8 +101,6 @@ def main ():
             '../www/include/cookbook_url.html')        
     writeStringAsIncludeFile (config['MORSEBOOK_URL'], \
             '../www/include/morsebook_url.html') 
-    writeStringAsIncludeFile (config['PATHWAYS_URL'], \
-            '../www/include/pathways_url.html')       
     writeStringAsIncludeFile (config['SILVER_URL'], \
             '../www/include/silverbook_url.html') 
     writeStringAsIncludeFile (config['FRITHBOOK_URL'], \
