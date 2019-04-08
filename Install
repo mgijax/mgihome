@@ -116,7 +116,7 @@ cd $TOP
 
 # add links to python and the config file from selected directories
 
-for dir in www/nomen www/lists www/support www/submissions admin www/feedback www/egul www/other
+for dir in www/nomen www/lists www/support www/submissions admin www/feedback www/other
 do
 	cd $dir
 
@@ -135,12 +135,6 @@ if [ -h homology.shtml ]; then
 	rm homology.shtml
 fi
 ln -s orthology.shtml homology.shtml
-cd $TOP
-
-# process the eGUL links.dat file
-
-cd www/egul/
-./install $MGIHOME_URL
 cd $TOP
 
 # make the www/include directory and generate any include files

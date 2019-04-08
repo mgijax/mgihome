@@ -56,20 +56,12 @@ index 9235766..f370d63 100755
  done
  
  # support new-style link to homology.shtml minihome page, by temporarily
-@@ -133,13 +139,13 @@ if [ -h homology.shtml ]; then
+@@ -133,5 +139,5 @@ if [ -h homology.shtml ]; then
  	rm homology.shtml
  fi
  ln -s orthology.shtml homology.shtml
 -cd $TOP
 +cd "$TOP"
- 
- # process the eGUL links.dat file
- 
- cd www/egul/
- ./install $MGIHOME_URL
--cd $TOP
-+cd "$TOP"
- 
  # make the www/include directory and generate any include files
  
 @@ -148,13 +154,13 @@ if [ ! -d include ]; then
