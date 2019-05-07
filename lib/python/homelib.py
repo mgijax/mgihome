@@ -184,6 +184,7 @@ def sanitizeDate(mmddyyyy):
 	# is any issue identifying the date, return today's date instead.
 	
 	dateRE = re.compile('([0-9]{2}/[0-9]{2}/[0-9]{4})')
-	if dateRE.match(mmddyyyy):
-		return mmddyyyy.group(1)
+	match = dateRE.match(mmddyyyy)
+	if match:
+		return match.group(1)
 	return time.strftime('%m/%d/%Y', time.localtime())
