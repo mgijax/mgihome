@@ -6,6 +6,7 @@ import os
 import Configuration
 config = Configuration.get_Configuration ('Configuration', 1)
 
+import time
 import re
 import string
 import webshare_lib
@@ -166,3 +167,23 @@ def getObjects(searchString):
 	# return [ list of objects matching the given 'searchString' ]
 	byID = getJsonResults('accession/json', 'id', searchString)
 	return byID['summaryRows']
+
+def sanitizeID(accID):
+	# return a sanitized version of 'accID' that only contains certain
+	# allowed characters (letters, numbers, colons, underscores, hyphens,
+	# and periods).  Helps prevent reflected cross-site scripting attacks.
+	
+	if not accID:
+		return accID
+	
+	return re.sub('[^A-Za-z0-9_:\\.\\-]', '', accID)
+
+def sanitizeDate(mmddyyyy):
+	# return a sanitized version of the date in 'mmddyyyy' that only contains
+	# allowed characters (numbers plus two slashes, as mm/dd/yyyy).  If there
+	# is any issue identifying the date, return today's date instead.
+	
+	dateRE = re.compile('([0-9]{2}/[0-9]{2}/[0-9]{4})')
+	if dateRE.match(mmddyyyy):
+		return mmddyyyy.group(1)
+	return time.strftime('%m/%d/%Y', time.localtime())
