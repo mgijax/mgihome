@@ -1074,7 +1074,7 @@ class UserInput:
 			item = self.__dict__[fieldname]
 			if item.getValue():
 				value = cgi.escape (homelib.wrapLines (
-					item.getValue(),  60))
+					item.getValue(),  60), True)
 				if len(value) > 60:
 					value = '\n' + value
 				lines.append ('%s: %s' % (item.getLabel(),

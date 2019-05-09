@@ -41,6 +41,13 @@ class InputFormCGI (CGI.CGI):
 		#	method to provide exception handling and logging.
 
 		parms = self.get_parms()
+
+		if parms.has_key('accID'):
+			parms['accID'] = homelib.sanitizeID(parms['accID'])
+
+		if parms.has_key('dataDate'):
+			parms['dataDate'] = homelib.sanitizeDate(parms['dataDate'])
+
 		inp = feedbacklib.getInputObj (parms)
 		inp.printInputPage ()
 		return
