@@ -180,7 +180,7 @@ img {
 		  		</div>
 		    	<div class="gridRow">
 				    <div class="col-sm-4" style="">
-		   			  <a href="http://www.informatics.jax.org/mgihome/homepages/stats/all_stats.shtml#allstats_gxd"> <img style="width:219px;" src="<!--#include file='include/mgihome_url.html'-->GXD/DataContent.png" alt="GXD Statistics"></a>
+		   			  <a href="<!--#include file='include/fewi_url.html'-->gxd/htexp_index"> <img style="width:219px;" src="<!--#include file='include/mgihome_url.html'-->GXD/RNA_Seq_Microarry_Search_icon.jpg" alt="RNA-Seq and Microarray Experiment Search"></a>
 				  	</div>
 		    		<div class="col-sm-4" style="">
 		   			  <a href="http://www.mousemine.org/mousemine/begin.do#Expression"><img style="width:219px;" src="<!--#include file='include/mgihome_url.html'-->GXD/MouseMineLink.png" alt="Link to Expression Searches in MouseMine"></a>
@@ -224,11 +224,13 @@ img {
 	<div id="" class="whiteSectionSpacer"></div>
 	
 	 <div class="gridRow">
- <div class="col-sm-4" style="">
+ <div class="col-sm-3" style="">
 	  <a href="<!--#include file='include/mgihome_url.html'-->GXD/aboutGXD.shtml " rel="ajaxcontentarea"><img style="width:200px;" src="<!--#include file='include/mgihome_url.html'-->GXD/AboutGXD.png" alt="About GXD Link"></a></div>
-	  <div class="col-sm-4" style="">
+	  <div class="col-sm-3" style="">
 	  <a onclick="javascript:openFastTrackWindow(); return false;" href="<!--#include file='include/mgihome_url.html'-->GXD/FastTracks.shtml"><img style="width:200px;" src="<!--#include file='include/mgihome_url.html'-->GXD/FastTrack.png" alt="Get your data into GXD quickly"></a></div>
-	  <div class="col-sm-4" style="">
+	  <div class="col-sm-3" style="">
+	  <a href="http://www.informatics.jax.org/mgihome/homepages/stats/all_stats.shtml#allstats_gxd" rel="ajaxcontentarea"><img style="width:200px;" src="<!--#include file='include/mgihome_url.html'-->GXD/GXDStatistics.png" alt="GXD Statistics"></a></div>
+	  <div class="col-sm-3" style="">
 	  <a href="<!--#include file='include/mgihome_url.html'-->support/mgi_inbox.shtml" rel="ajaxcontentarea"><img style="width:200px;" src="<!--#include file='include/mgihome_url.html'-->GXD/Contact.png" alt="Contact Us"></a>
 	  </div>	
 	  </div>
