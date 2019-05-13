@@ -303,4 +303,7 @@ background: white url(<!--#include file='include/mgihome_url.html'-->homepages/i
 
 </div> <!-- id="homePageBodyInsert" -->
 
+<style><!-- extra styling for overlib tooltips -->
+#overDiv table tr td table tr td { background-color: #EFEFEF; }
+</style>
 <!--#include file='include/templateBodyStop.html'-->
