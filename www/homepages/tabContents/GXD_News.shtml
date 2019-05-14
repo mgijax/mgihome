@@ -22,15 +22,17 @@
 <table>
 	<tr><td>
 		<ul>
-<li><p>GXD has developed an <a href="<!--#include file='include/fewi_url.html'-->gxd/htexp_index">RNA-Seq and Microarray Experiment Search</a> to quickly and reliably find specific mouse expression studies in <a href="http://www.ebi.ac.uk/microarray-as/aer/?#ae-main%5B0%5D">ArrayExpress</a> and <a href="https://www.ncbi.nlm.nih.gov/geo/">GEO</a>. Based on GXD's standardized metadata annotations, users can specify the age, anatomical structure, mutant alleles, strain and sex of samples of interest as well as experiment study type and key parameters. These searches, powered by controlled vocabularies and ontologies, can be combined with free text searching of experiment titles and descriptions. Search result summaries include linkouts to ArrayExpress and GEO, providing easy access to the expression data itself. Links to the PubMed entries for corresponding publications are also included.</p>
+<li>
+<p>GXD has developed an <a href="<!--#include file='include/fewi_url.html'-->gxd/htexp_index">RNA-Seq and Microarray Experiment Search</a> to quickly and reliably find specific mouse expression studies in <a href="http://www.ebi.ac.uk/microarray-as/aer/?#ae-main%5B0%5D">ArrayExpress</a> and <a href="https://www.ncbi.nlm.nih.gov/geo/">GEO</a>. Based on GXD's standardized metadata annotations, users can specify the age, anatomical structure, mutant alleles, strain and sex of samples of interest as well as experiment study type and key parameters. These searches, powered by controlled vocabularies and ontologies, can be combined with free text searching of experiment titles and descriptions. Search result summaries include linkouts to ArrayExpress and GEO, providing easy access to the expression data itself. Links to the PubMed entries for corresponding publications are also included.</p>
+<p>Search for specific RNA-Seq and microarray experiments, such as those that use dystrophin (Dmd) mutant samples</p>
+<img src="<!--#include file='include/mgihome_url.html'-->GXD/DmdInForm.png" class="zoom" width="350" height="235" alt="RNA-Seq and Microarray Experiment Search" />
+<p>Summary return displays experiment metadata; one experiment with 3 samples that matched the search criteria shown:</p>
+<img src="<!--#include file='include/mgihome_url.html'-->GXD/Form_SearchReturn.png" class="zoom" width="350" height="43" alt="RNA-Seq and Microarray Experiment Search results" />
+<p>Sample metadata displayed in table accessed via View button in the search summary:</p>
+<img src="<!--#include file='include/mgihome_url.html'-->GXD/DMD_Samples.png" class="zoom" width="350" height="98" alt="DMD Samples"></img>
 <p>GXD's annotation efforts focus on experiments that examine endogenous gene expression in wild-type and mutant mice. Studies from all developmental stages, including adult, are included. In addition, studies examining expression differences within and between species is available (although the metadata for the non-mouse samples is not). As is consistent with GXD's scope, studies using transgenic mice (i.e., animals containing randomly inserted transgenes); animals that have been manipulated, either by substances, surgical procedures, or diet regimens; cultured tissues; or cell lines are not included.</p>
 <p>The RNA-Seq and microarray metadata index developed by GXD is comprised of all experiments currently available in ArrayExpress that fit the criteria described above. This includes thousands of experiments that were originally submitted to GEO. Prior to August 2016 ArrayExpress imported all experiments stored at GEO. Future work will incorporate the more recently submitted GEO experiments into the GXD RNA-Seq and Microarray Experiment index.</p>
-<br></br>
-<img src="<!--#include file='include/mgihome_url.html'-->GXD/DmdInForm.png" class="zoom" width="350" height="235" alt="RNA-Seq and Microarray Experiment Search" />
-<br></br>
-<img src="<!--#include file='include/mgihome_url.html'-->GXD/Form_SearchReturn.png" class="zoom" width="350" height="43" alt="RNA-Seq and Microarray Experiment Search results" />
-<br></br>
-<img src="<!--#include file='include/mgihome_url.html'-->GXD/DMD_Samples.png" class="zoom" width="350" height="98" alt="DMD Samples"></img></li>
+</li>
 </ul>
 	</td></tr>
 </table>
