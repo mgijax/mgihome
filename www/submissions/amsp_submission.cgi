@@ -704,7 +704,7 @@ def getStrainSection():
 		'repository ',
 		getField('repository').getHTML(),
 		' 	(<B><I>View</I></B>: list of <A HREF="',
-		'%sfetch?page=repository" ' % config['IMSRURL'],
+		'repository" ' % config['IMSRURL'],
                 'TARGET="_blank">',
                 'repositories</A>)'
 		'<BR>',
