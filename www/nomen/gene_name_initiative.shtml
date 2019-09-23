@@ -1,14 +1,106 @@
 <!--#include file='include/templateHead.html'--> 
+<style>
+tr:hover { background: lightyellow; }
+</style>
 <title>MGI-Informative Gene Names Initiative</title>
 
 <!--#include file='include/templateBodyStart.html'--> 
 <!-- Title Bar -->
 <div id="titleBarWrapper">
-  <span class="titleBarMainTitle">Informative Gene Names Initiative</span>
-  
+  <span class="titleBarMainTitle">Informative Gene Names Initiative</span>  
 </div> 
 <!--titleBar-->
-
-
+<p>The Mouse Genome Nomenclature group is evaluating gene names and symbols for mouse protein coding genes with gene model nomenclature to make them more informative. 
+New names and symbols are based on annotations of protein domains from InterPro. 
+Name changes are coordinated with the Human Gene Nomenclature Committee, Rat Genome Database and with the GenCode mouse genome annotation team. 
+Contact <a href="mailto:nomen@jax.org"> nomen@jax.org</a> with suggestions or comments regarding the new names.</p>
+<table>
+<tr><th>Completed Genes</th></tr>
+<tr><th>MGI ID</th><th>Old Symbol</th><th>New Symbol</th><th>New Name</th><th>Date Updated</th></tr>
+<tr><td><a href="<!--#include file='include/fewi_url.html'-->accession/MGI:1914825" target="_blank">MGI:1914825</a></td><td>4930430A15Rik</td><td>A26c3</td><td>ANKRD26-like family C, member 3</td><td>19 September, 2019</td></tr>
+<tr><td><a href="<!--#include file='include/fewi_url.html'-->accession/MGI:3028051" target="_blank">MGI:3028051</a></td><td>C130079G13Rik &nbsp;</td><td>Aadacl2fm1 &nbsp;</td><td>AADACL2 family member 1</td><td>19 September, 2019</td></tr>
+<tr><td><a href="<!--#include file='include/fewi_url.html'-->accession/MGI:3779495" target="_blank">MGI:3779495</a></td><td>Gm5538</td><td>Aadacl2fm2</td><td>AADACL2 family member 2</td><td>19 September, 2019</td></tr>
+<tr><td><a href="<!--#include file='include/fewi_url.html'-->accession/MGI:3643798" target="_blank">MGI:3643798</a></td><td>Gm8298</td><td>Aadacl2fm3</td><td>AADACL2 family member 3</td><td>19 September, 2019</td></tr>
+<tr><td><a href="<!--#include file='include/fewi_url.html'-->accession/MGI:2685880" target="_blank">MGI:2685880</a></td><td>9430007A20Rik</td><td>Aadacl4fm1</td><td>AADACL4 family member 1</td><td>19 September, 2019</td></tr>
+<tr><td><a href="<!--#include file='include/fewi_url.html'-->accession/MGI:3652194" target="_blank">MGI:3652194</a></td><td>Gm13124</td><td>Aadacl4fm2</td><td>AADACL4 family member 2</td><td>19 September, 2019</td></tr>
+<tr><td><a href="<!--#include file='include/fewi_url.html'-->accession/MGI:3650721" target="_blank">MGI:3650721</a></td><td>Gm13178</td><td>Aadacl4fm3</td><td>AADACL4 family member 3</td><td>19 September, 2019</td></tr>
+<tr><td><a href="<!--#include file='include/fewi_url.html'-->accession/MGI:2685282" target="_blank">MGI:2685282</a></td><td>Gm436</td><td>Aadacl4fm4</td><td>AADACL4 family member 4</td><td>19 September, 2019</td></tr>
+<tr><td><a href="<!--#include file='include/fewi_url.html'-->accession/MGI:2685284" target="_blank">MGI:2685284</a></td><td>Gm438</td><td>Aadacl4fm5</td><td>AADACL4 family member 5</td><td>19 September, 2019</td></tr>
+<tr><td><a href="<!--#include file='include/fewi_url.html'-->accession/MGI:1925875" target="_blank">MGI:1925875</a></td><td>1700061G19Rik</td><td>Acsbg3</td><td>acyl-CoA synthetase bubblegum family member 3</td><td>19 September, 2019</td></tr>
+<tr><td><a href="<!--#include file='include/fewi_url.html'-->accession/MGI:1923342" target="_blank">MGI:1923342</a></td><td>5830473C10Rik</td><td>Albfm1</td><td>albumin superfamily member 1</td><td>19 September, 2019</td></tr>
+<tr><td><a href="<!--#include file='include/fewi_url.html'-->accession/MGI:3045347" target="_blank">MGI:3045347</a></td><td>4933408B17Rik</td><td>Brd8dc</td><td>BRD8 domain containing</td><td>19 September, 2019</td></tr>
+<tr><td><a href="<!--#include file='include/fewi_url.html'-->accession/MGI:1918645" target="_blank">MGI:1918645</a></td><td>5430419D17Rik</td><td>Cdcp3</td><td>CUB domain containing protein 3</td><td>19 September, 2019</td></tr>
+<tr><td><a href="<!--#include file='include/fewi_url.html'-->accession/MGI:2685920" target="_blank">MGI:2685920</a></td><td>4922502D21Rik</td><td>Clec2m</td><td>C-type lectin domain family 2, member m</td><td>19 September, 2019</td></tr>
+<tr><td><a href="<!--#include file='include/fewi_url.html'-->accession/MGI:3644285" target="_blank">MGI:3644285</a></td><td>Gm6880</td><td>Ctag2l1</td><td>CTAG2 like 1</td><td>19 September, 2019</td></tr>
+<tr><td><a href="<!--#include file='include/fewi_url.html'-->accession/MGI:3645826" target="_blank">MGI:3645826</a></td><td>Gm6890</td><td>Ctag2l2</td><td>CTAG2 like 2</td><td>19 September, 2019</td></tr>
+<tr><td><a href="<!--#include file='include/fewi_url.html'-->accession/MGI:3709605" target="_blank">MGI:3709605</a></td><td>Gm14851</td><td>Defa38</td><td>defensin, alpha, 38</td><td>19 September, 2019</td></tr>
+<tr><td><a href="<!--#include file='include/fewi_url.html'-->accession/MGI:3708769" target="_blank">MGI:3708769</a></td><td>Gm15292</td><td>Defa40</td><td>defensin, alpha, 40</td><td>19 September, 2019</td></tr>
+<tr><td><a href="<!--#include file='include/fewi_url.html'-->accession/MGI:3705230" target="_blank">MGI:3705230</a></td><td>Gm15293</td><td>Defa41</td><td>defensin, alpha, 41</td><td>19 September, 2019</td></tr>
+<tr><td><a href="<!--#include file='include/fewi_url.html'-->accession/MGI:3645033" target="_blank">MGI:3645033</a></td><td>Gm7849</td><td>Defa42</td><td>defensin, alpha, 42</td><td>19 September, 2019</td></tr>
+<tr><td><a href="<!--#include file='include/fewi_url.html'-->accession/MGI:3648003" target="_blank">MGI:3648003</a></td><td>Gm7861</td><td>Defa43</td><td>defensin, alpha, 43</td><td>19 September, 2019</td></tr>
+<tr><td><a href="<!--#include file='include/fewi_url.html'-->accession/MGI:1917011" target="_blank">MGI:1917011</a></td><td>1600015I10Rik</td><td>Doxl1</td><td>diamine oxidase-like protein 1</td><td>19 September, 2019</td></tr>
+<tr><td><a href="<!--#include file='include/fewi_url.html'-->accession/MGI:1926146" target="_blank">MGI:1926146</a></td><td>1500015O10Rik</td><td>Ecrg4</td><td>ECRG4 augurin precursor</td><td>19 September, 2019</td></tr>
+<tr><td><a href="<!--#include file='include/fewi_url.html'-->accession/MGI:1916691" target="_blank">MGI:1916691</a></td><td>1700023F06Rik</td><td>Efcab15</td><td>EF-hand calcium binding domain 15</td><td>19 September, 2019</td></tr>
+<tr><td><a href="<!--#include file='include/fewi_url.html'-->accession/MGI:3644226" target="_blank">MGI:3644226</a></td><td>Gm8994</td><td>Eif4a3l1</td><td>eukaryotic translation initiation factor 4A3 like 1</td><td>19 September, 2019</td></tr>
+<tr><td><a href="<!--#include file='include/fewi_url.html'-->accession/MGI:2687041" target="_blank">MGI:2687041</a></td><td>4833423E24Rik</td><td>Fads2b</td><td>fatty acid desaturase 2B</td><td>19 September, 2019</td></tr>
+<tr><td><a href="<!--#include file='include/fewi_url.html'-->accession/MGI:3714351" target="_blank">MGI:3714351</a></td><td>1700047I17Rik2</td><td>Fam177a2</td><td>family with sequence similarity 177 member A2</td><td>19 September, 2019</td></tr>
+<tr><td><a href="<!--#include file='include/fewi_url.html'-->accession/MGI:2441689" target="_blank">MGI:2441689</a></td><td>4931440F15Rik</td><td>Fem1al</td><td>fem-1 homolog A like</td><td>19 September, 2019</td></tr>
+<tr><td><a href="<!--#include file='include/fewi_url.html'-->accession/MGI:2685441" target="_blank">MGI:2685441</a></td><td>Gm595</td><td>Fsip2l</td><td>predicted gene 595fibrous sheath-interacting protein 2-like</td><td>19 September, 2019</td></tr>
+<tr><td><a href="<!--#include file='include/fewi_url.html'-->accession/MGI:3045360" target="_blank">MGI:3045360</a></td><td>MGI:3045360</td><td>Ftdc</td><td>ferritin domain containing</td><td>19 September, 2019</td></tr>
+<tr><td><a href="<!--#include file='include/fewi_url.html'-->accession/MGI:2685002" target="_blank">MGI:2685002</a></td><td>Gm156</td><td>Klrh1</td><td>killer cell lectin-like receptor subfamily H, member 1</td><td>19 September, 2019</td></tr>
+<tr><td><a href="<!--#include file='include/fewi_url.html'-->accession/MGI:1917384" target="_blank">MGI:1917384</a></td><td>2210011C24Rik</td><td>Misp3</td><td>MISP family member 3</td><td>19 September, 2019</td></tr>
+<tr><td><a href="<!--#include file='include/fewi_url.html'-->accession/MGI:1914013" target="_blank">MGI:1914013</a></td><td>4933425L06Rik</td><td>Nt5el</td><td>5' nucleotidase, ecto-like</td><td>19 September, 2019</td></tr>
+<tr><td><a href="<!--#include file='include/fewi_url.html'-->accession/MGI:3710598" target="_blank">MGI:3710598</a></td><td>Gm13769</td><td>Olfr1565</td><td>olfactory receptor 1565</td><td>19 September, 2019</td></tr>
+<tr><td><a href="<!--#include file='include/fewi_url.html'-->accession/MGI:1914005" target="_blank">MGI:1914005</a></td><td>4933415F23Rik</td><td>Ppp1r14bl</td><td>protein phosphatase 1, regulatory inhibitor subunit 14B like</td><td>19 September, 2019</td></tr>
+<tr><td><a href="<!--#include file='include/fewi_url.html'-->accession/MGI:2441881" target="_blank">MGI:2441881</a></td><td>C130060K24Rik</td><td>Qrfprl</td><td>pyroglutamylated RFamide peptide receptor like</td><td>19 September, 2019</td></tr>
+<tr><td><a href="<!--#include file='include/fewi_url.html'-->accession/MGI:2684973" target="_blank">MGI:2684973</a></td><td>9130204L05Rik</td><td>S100a7l2</td><td>S100 calcium binding protein A7 like 2</td><td>19 September, 2019</td></tr>
+<tr><td><a href="<!--#include file='include/fewi_url.html'-->accession/MGI:1925342" target="_blank">MGI:1925342</a></td><td>4921511M17Rik</td><td>Samt1b</td><td>spermatogenesis associated multipass transmembrane protein 1b</td><td>19 September, 2019</td></tr>
+<tr><td><a href="<!--#include file='include/fewi_url.html'-->accession/MGI:3710528" target="_blank">MGI:3710528</a></td><td>Gm10057</td><td>Samt1c</td><td>spermatogenesis associated multipass transmembrane protein 1c</td><td>19 September, 2019</td></tr>
+<tr><td><a href="<!--#include file='include/fewi_url.html'-->accession/MGI:3709336" target="_blank">MGI:3709336</a></td><td>Gm15140</td><td>Samt1d</td><td>spermatogenesis associated multipass transmembrane protein 1d</td><td>19 September, 2019</td></tr>
+<tr><td><a href="<!--#include file='include/fewi_url.html'-->accession/MGI:1922321" target="_blank">MGI:1922321</a></td><td>4930524N10Rik</td><td>Samt2b</td><td>spermatogenesis associated multipass transmembrane protein 2b</td><td>19 September, 2019</td></tr>
+<tr><td><a href="<!--#include file='include/fewi_url.html'-->accession/MGI:2441788" target="_blank">MGI:2441788</a></td><td>A230050P20Rik</td><td>Shfl</td><td>shiftless antiviral inhibitor of ribosomal frameshifting</td><td>19 September, 2019</td></tr>
+<tr><td><a href="<!--#include file='include/fewi_url.html'-->accession/MGI:3645333" target="_blank">MGI:3645333</a></td><td>Gm5868</td><td>Slc10a4l</td><td> <span style="white-space: nowrap">solute carrier family 10 (sodium/bile acid cotransporter family), member 4 like</span> &nbsp;</td><td>19 September, 2019</td></tr>
+<tr><td><a href="<!--#include file='include/fewi_url.html'-->accession/MGI:3702173" target="_blank">MGI:3702173</a></td><td>Gm14085</td><td>Slc28a2b</td><td>solute carrier family 28 member 2b</td><td>19 September, 2019</td></tr>
+<tr><td><a href="<!--#include file='include/fewi_url.html'-->accession/MGI:2685939" target="_blank">MGI:2685939</a></td><td>6430531B16Rik</td><td>Spef1l</td><td>sperm flagellar 1 like</td><td>19 September, 2019</td></tr>
+<tr><td><a href="<!--#include file='include/fewi_url.html'-->accession/MGI:1913982" target="_blank">MGI:1913982</a></td><td>4921530L21Rik</td><td>Spertl</td><td>spermatid associated like</td><td>19 September, 2019</td></tr>
+<tr><td><a href="<!--#include file='include/fewi_url.html'-->accession/MGI:3702972" target="_blank">MGI:3702972</a></td><td>Gm10696</td><td>Spopfm2</td><td>speckle-type BTB/POZ protein family member 2</td><td>19 September, 2019</td></tr>
+<tr><td><a href="<!--#include file='include/fewi_url.html'-->accession/MGI:3645677" target="_blank">MGI:3645677</a></td><td>Gm4858</td><td>Tdpoz8</td><td>TD and POZ domain containing 8</td><td>19 September, 2019</td></tr>
+<tr><td><a href="<!--#include file='include/fewi_url.html'-->accession/MGI:3702970" target="_blank">MGI:3702970</a></td><td>Gm9125</td><td>Tdpoz9</td><td>TD and POZ domain containing 9</td><td>19 September, 2019</td></tr>
+<tr><td><a href="<!--#include file='include/fewi_url.html'-->accession/MGI:3702974" target="_blank">MGI:3702974</a></td><td>Gm7534</td><td>Zpld2</td><td>zona pellucida like domain containing 2</td><td>19 September, 2019</td></tr>
+</table>
+<p>The table below lists a subset of the genes we are currently working on. This subset lists unnamed members of the PRAME gene family.</p>
+<table>
+<tr><th>Current Symbol</th><th>Current Name</th><th>UniProt ID &nbsp;</th><th>UniProt Name</th></tr>
+<tr><td>A430089I19Rik &nbsp;</td><td><span style="white-space: nowrap">RIKEN cDNA A430089I19 gene &nbsp;</span></td><td>IPR026271</td><td>PRAME family</td></tr>
+<tr><td>B020004J07Rik</td><td>RIKEN cDNA B020004J07 gene</td><td>IPR026271</td><td>PRAME family</td></tr>
+<tr><td>Gm10424</td><td>predicted gene 10424</td><td>IPR026271</td><td>PRAME family</td></tr>
+<tr><td>Gm10436</td><td>predicted gene 10436</td><td>IPR026271</td><td>PRAME family</td></tr>
+<tr><td>Gm12794</td><td>predicted gene 12794</td><td>IPR026271</td><td>PRAME family</td></tr>
+<tr><td>Gm12800</td><td>predicted gene 12800</td><td>IPR026271</td><td>PRAME family</td></tr>
+<tr><td>Gm13023</td><td>predicted gene 13023</td><td>IPR026271</td><td>PRAME family</td></tr>
+<tr><td>Gm13078</td><td>predicted gene 13078</td><td>IPR026271</td><td>PRAME family</td></tr>
+<tr><td>Gm13083</td><td>predicted gene 13083</td><td>IPR026271</td><td>PRAME family</td></tr>
+<tr><td>Gm13084</td><td>predicted gene 13084</td><td>IPR026271</td><td>PRAME family</td></tr>
+<tr><td>Gm13088</td><td>predicted gene 13088</td><td>IPR026271</td><td>PRAME family</td></tr>
+<tr><td>Gm13089</td><td>predicted gene 13089</td><td>IPR026271</td><td>PRAME family</td></tr>
+<tr><td>Gm13101</td><td>predicted gene 13101</td><td>IPR026271</td><td>PRAME family</td></tr>
+<tr><td>Gm13103</td><td>predicted gene 13103</td><td>IPR026271</td><td>PRAME family</td></tr>
+<tr><td>Gm13119</td><td>predicted gene 13119</td><td>IPR026271</td><td>PRAME family</td></tr>
+<tr><td>Gm13128</td><td>predicted gene 13128</td><td>IPR026271</td><td>PRAME family</td></tr>
+<tr><td>Gm16367</td><td>predicted gene 16367</td><td>IPR026271</td><td>PRAME family</td></tr>
+<tr><td>Gm16427</td><td>predicted gene 16427</td><td>IPR026271</td><td>PRAME family</td></tr>
+<tr><td>Gm16429</td><td>predicted gene 16429</td><td>IPR026271</td><td>PRAME family</td></tr>
+<tr><td>Gm3106</td><td>predicted gene 3106</td><td>IPR026271</td><td>PRAME family</td></tr>
+<tr><td>Gm3139</td><td>predicted gene 3139</td><td>IPR026271</td><td>PRAME family</td></tr>
+<tr><td>Gm3147</td><td>predicted gene 3147</td><td>IPR026271</td><td>PRAME family</td></tr>
+<tr><td>Gm3259</td><td>predicted gene 3259</td><td>IPR026271</td><td>PRAME family</td></tr>
+<tr><td>Gm6502</td><td>predicted gene 6502</td><td>IPR026271</td><td>PRAME family</td></tr>
+<tr><td>Gm6509</td><td>predicted gene 6509</td><td>IPR026271</td><td>PRAME family</td></tr>
+<tr><td>Gm7682</td><td>predicted gene 7682</td><td>IPR026271</td><td>PRAME family</td></tr>
+<tr><td>Gm7792</td><td>predicted gene 7792</td><td>IPR026271</td><td>PRAME family</td></tr>
+<tr><td>Gm7942</td><td>predicted gene 7942</td><td>IPR026271</td><td>PRAME family</td></tr>
+<tr><td>Gm7971</td><td>predicted gene 7971</td><td>IPR026271</td><td>PRAME family</td></tr>
+<tr><td>Gm7978</td><td>predicted gene 7978</td><td>IPR026271</td><td>PRAME family</td></tr>
+</table>
 
 <!--#include file='include/templateBodyStop.html'--> 
