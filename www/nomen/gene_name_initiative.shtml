@@ -14,11 +14,15 @@ tr:hover { background: lightyellow; }
 New names and symbols are based on annotations of protein domains from InterPro. 
 Name changes are coordinated with the Human Gene Nomenclature Committee, Rat Genome Database and with the GenCode mouse genome annotation team. 
 Contact <a href="mailto:nomen@jax.org"> nomen@jax.org</a> with suggestions or comments regarding the new names.</p>
+<table class="nb">
+ <tr><td><a href="#completed">Completed Genes</a> | <a href="#inprogress">In Progress</a> </td>
+ </tr>
+</table>
 <table>
-<tr><th>Completed Genes</th></tr>
-<tr><th>MGI ID</th><th>Old Symbol</th><th>New Symbol</th><th>New Name</th><th>Date Updated</th></tr>
+<tr><td class="enhance"><a id="completed"></a><b>Completed Genes</b></td></tr>
+<tr><th>MGI ID</th><th>Old Symbol</th><th>New Symbol &nbsp;</th><th>New Name</th><th>Date Updated</th></tr>
 <tr><td><a href="<!--#include file='include/fewi_url.html'-->accession/MGI:1914825" target="_blank">MGI:1914825</a></td><td>4930430A15Rik</td><td>A26c3</td><td>ANKRD26-like family C, member 3</td><td>19 September, 2019</td></tr>
-<tr><td><a href="<!--#include file='include/fewi_url.html'-->accession/MGI:3028051" target="_blank">MGI:3028051</a></td><td>C130079G13Rik &nbsp;</td><td>Aadacl2fm1 &nbsp;</td><td>AADACL2 family member 1</td><td>19 September, 2019</td></tr>
+<tr><td><a href="<!--#include file='include/fewi_url.html'-->accession/MGI:3028051" target="_blank">MGI:3028051</a></td><td>C130079G13Rik &nbsp; &nbsp;</td><td>Aadacl2fm1 &nbsp; &nbsp;</td><td>AADACL2 family member 1</td><td>19 September, 2019</td></tr>
 <tr><td><a href="<!--#include file='include/fewi_url.html'-->accession/MGI:3779495" target="_blank">MGI:3779495</a></td><td>Gm5538</td><td>Aadacl2fm2</td><td>AADACL2 family member 2</td><td>19 September, 2019</td></tr>
 <tr><td><a href="<!--#include file='include/fewi_url.html'-->accession/MGI:3643798" target="_blank">MGI:3643798</a></td><td>Gm8298</td><td>Aadacl2fm3</td><td>AADACL2 family member 3</td><td>19 September, 2019</td></tr>
 <tr><td><a href="<!--#include file='include/fewi_url.html'-->accession/MGI:2685880" target="_blank">MGI:2685880</a></td><td>9430007A20Rik</td><td>Aadacl4fm1</td><td>AADACL4 family member 1</td><td>19 September, 2019</td></tr>
@@ -70,10 +74,11 @@ Contact <a href="mailto:nomen@jax.org"> nomen@jax.org</a> with suggestions or co
 </table>
 <p>The table below lists a subset of the genes we are currently working on. This subset lists unnamed members of the PRAME gene family.</p>
 <table>
+<tr><td class="enhance"><a id="inprogress"></a><b>In Progress</b></td></tr>
 <tr><th>Current Symbol</th><th>Current Name</th><th>UniProt ID &nbsp;</th><th>UniProt Name</th></tr>
 <tr><td>A430089I19Rik &nbsp;</td><td><span style="white-space: nowrap">RIKEN cDNA A430089I19 gene &nbsp;</span></td><td>IPR026271</td><td>PRAME family</td></tr>
 <tr><td>B020004J07Rik</td><td>RIKEN cDNA B020004J07 gene</td><td>IPR026271</td><td>PRAME family</td></tr>
-<tr><td>Gm10424</td><td>predicted gene 10424</td><td>IPR026271</td><td>PRAME family</td></tr>
+<tr><td>Gm10424</td><td>predicted gene 10424</td><td>IPR026271 &nbsp; &nbsp;</td><td>PRAME family</td></tr>
 <tr><td>Gm10436</td><td>predicted gene 10436</td><td>IPR026271</td><td>PRAME family</td></tr>
 <tr><td>Gm12794</td><td>predicted gene 12794</td><td>IPR026271</td><td>PRAME family</td></tr>
 <tr><td>Gm12800</td><td>predicted gene 12800</td><td>IPR026271</td><td>PRAME family</td></tr>
