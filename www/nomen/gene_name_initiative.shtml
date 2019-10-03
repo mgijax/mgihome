@@ -10,18 +10,42 @@ tr:hover { background: lightyellow; }
   <span class="titleBarMainTitle">Informative Gene Names Initiative</span>  
 </div> 
 <!--titleBar-->
-<p>The Mouse Genome Nomenclature group is evaluating gene names and symbols for mouse protein coding genes with gene model nomenclature to make them more informative. 
-New names and symbols are based on annotations of protein domains from InterPro. 
-Name changes are coordinated with the Human Gene Nomenclature Committee, Rat Genome Database and with the GenCode mouse genome annotation team. 
-Contact <a href="mailto:nomen@jax.org"> nomen@jax.org</a> with suggestions or comments regarding the new names.</p>
-<table class="nb">
- <tr><td><a href="#completed">Completed Genes</a> | <a href="#inprogress">In Progress</a> </td>
- </tr>
-</table>
-<h3><a id="completed"></a>Completed Genes</h3>
-<table>
-<tr><th>MGI ID</th><th>Old Symbol</th><th>New Symbol &nbsp;</th><th>New Name</th><th>Date Updated</th></tr>
-<tr><td><a href="<!--#include file='include/fewi_url.html'-->accession/MGI:1914825" target="_blank">MGI:1914825</a></td><td>4930430A15Rik</td><td>A26c3</td><td>ANKRD26-like family C, member 3</td><td>19 September, 2019</td></tr>
+<!-- main body table -->
+<table width="80%" cellpadding="2" align="center">
+ <tr><td>
+ <!--sub 1 TOC table -->
+        	<div align="center">
+		<table class="toc" width="100%">
+      		<tr><td>
+      	 		<ul>
+      	               	<li><a href="#completed">Completed Genes</a></li> |
+      	       	       	<li><a href="#inprogress">In Progress</a></li>
+      	 	       	</ul>
+      		    </td>
+      	         </tr>
+      	 	</table>
+      		</div>
+ <!-- end sub 1TOC table -->
+ </td></tr>
+ <tr><td></td></tr>
+ <tr><td>
+<!-- create table for first paragraph -->
+	    <div align="center">
+	     <table class="outline" width="100%">
+		<tr><td>The Mouse Genome Nomenclature group is evaluating gene names and symbols for mouse protein coding genes with gene model nomenclature to make them more informative. 
+New names and symbols are based on annotations of protein domains from InterPro. Name changes are coordinated with the Human Gene Nomenclature Committee, Rat Genome Database and with the GenCode mouse genome annotation team. 
+Contact <a href="mailto:nomen@jax.org"> nomen@jax.org</a> with suggestions or comments regarding the new names.</td>
+	     </tr>
+        </table>
+        </div>
+<!--end of first paragraph's table-->
+  </td>
+  </tr>
+<!--filler for blank space between tables-->
+  <tr><td></td></tr>
+<tr><td class="enhance"><a id="completed"></a><b>Completed Genes</b></td></tr>
+<tr bgcolor="#D0E0F0"><th>MGI ID</th><th>Old Symbol</th><th><span style="white-space: nowrap">New Symbol</span></th><th>New Name</th><th>Date Updated</th></tr>
+<tr><td><a href="<!--#include file='include/fewi_url.html'-->accession/MGI:1914825" target="_blank">MGI:1914825&nbsp; &nbsp;</a></td><td>4930430A15Rik</td><td>A26c3</td><td>ANKRD26-like family C, member 3</td><td><span style="white-space: nowrap">19 September, 2019</span></td></tr>
 <tr><td><a href="<!--#include file='include/fewi_url.html'-->accession/MGI:3028051" target="_blank">MGI:3028051</a></td><td>C130079G13Rik &nbsp; &nbsp;</td><td>Aadacl2fm1 &nbsp; &nbsp;</td><td>AADACL2 family member 1</td><td>19 September, 2019</td></tr>
 <tr><td><a href="<!--#include file='include/fewi_url.html'-->accession/MGI:3779495" target="_blank">MGI:3779495</a></td><td>Gm5538</td><td>Aadacl2fm2</td><td>AADACL2 family member 2</td><td>19 September, 2019</td></tr>
 <tr><td><a href="<!--#include file='include/fewi_url.html'-->accession/MGI:3643798" target="_blank">MGI:3643798</a></td><td>Gm8298</td><td>Aadacl2fm3</td><td>AADACL2 family member 3</td><td>19 September, 2019</td></tr>
@@ -50,7 +74,7 @@ Contact <a href="mailto:nomen@jax.org"> nomen@jax.org</a> with suggestions or co
 <tr><td><a href="<!--#include file='include/fewi_url.html'-->accession/MGI:3714351" target="_blank">MGI:3714351</a></td><td>1700047I17Rik2</td><td>Fam177a2</td><td>family with sequence similarity 177 member A2</td><td>19 September, 2019</td></tr>
 <tr><td><a href="<!--#include file='include/fewi_url.html'-->accession/MGI:2441689" target="_blank">MGI:2441689</a></td><td>4931440F15Rik</td><td>Fem1al</td><td>fem-1 homolog A like</td><td>19 September, 2019</td></tr>
 <tr><td><a href="<!--#include file='include/fewi_url.html'-->accession/MGI:2685441" target="_blank">MGI:2685441</a></td><td>Gm595</td><td>Fsip2l</td><td>predicted gene 595fibrous sheath-interacting protein 2-like</td><td>19 September, 2019</td></tr>
-<tr><td><a href="<!--#include file='include/fewi_url.html'-->accession/MGI:3045360" target="_blank">MGI:3045360</a></td><td>E330017A01Rik</td><td>Ftdc</td><td>ferritin domain containing</td><td>19 September, 2019</td></tr>
+<tr><td><a href="<!--#include file='include/fewi_url.html'-->accession/MGI:3045360" target="_blank">MGI:3045360</a></td><td>E330017A01Rik</td><td>Ftdc2</td><td>ferritin domain containing 2</td><td>19 September, 2019</td></tr>
 <tr><td><a href="<!--#include file='include/fewi_url.html'-->accession/MGI:2685002" target="_blank">MGI:2685002</a></td><td>Gm156</td><td>Klrh1</td><td>killer cell lectin-like receptor subfamily H, member 1</td><td>19 September, 2019</td></tr>
 <tr><td><a href="<!--#include file='include/fewi_url.html'-->accession/MGI:1917384" target="_blank">MGI:1917384</a></td><td>2210011C24Rik</td><td>Misp3</td><td>MISP family member 3</td><td>19 September, 2019</td></tr>
 <tr><td><a href="<!--#include file='include/fewi_url.html'-->accession/MGI:1914013" target="_blank">MGI:1914013</a></td><td>4933425L06Rik</td><td>Nt5el</td><td>5' nucleotidase, ecto-like</td><td>19 September, 2019</td></tr>
@@ -63,7 +87,7 @@ Contact <a href="mailto:nomen@jax.org"> nomen@jax.org</a> with suggestions or co
 <tr><td><a href="<!--#include file='include/fewi_url.html'-->accession/MGI:3709336" target="_blank">MGI:3709336</a></td><td>Gm15140</td><td>Samt1d</td><td>spermatogenesis associated multipass transmembrane protein 1d</td><td>19 September, 2019</td></tr>
 <tr><td><a href="<!--#include file='include/fewi_url.html'-->accession/MGI:1922321" target="_blank">MGI:1922321</a></td><td>4930524N10Rik</td><td>Samt2b</td><td>spermatogenesis associated multipass transmembrane protein 2b</td><td>19 September, 2019</td></tr>
 <tr><td><a href="<!--#include file='include/fewi_url.html'-->accession/MGI:2441788" target="_blank">MGI:2441788</a></td><td>A230050P20Rik</td><td>Shfl</td><td>shiftless antiviral inhibitor of ribosomal frameshifting</td><td>19 September, 2019</td></tr>
-<tr><td><a href="<!--#include file='include/fewi_url.html'-->accession/MGI:3645333" target="_blank">MGI:3645333</a></td><td>Gm5868</td><td>Slc10a4l</td><td> <span style="white-space: nowrap">solute carrier family 10 (sodium/bile acid cotransporter family), member 4 like</span> &nbsp;</td><td>19 September, 2019</td></tr>
+<tr><td><a href="<!--#include file='include/fewi_url.html'-->accession/MGI:3645333" target="_blank">MGI:3645333</a></td><td>Gm5868</td><td>Slc10a4l</td><td> <span style="white-space: nowrap">solute carrier family 10 (sodium/bile acid cotransporter family), member 4 like</span> &nbsp; &nbsp;</td><td>19 September, 2019</td></tr>
 <tr><td><a href="<!--#include file='include/fewi_url.html'-->accession/MGI:3702173" target="_blank">MGI:3702173</a></td><td>Gm14085</td><td>Slc28a2b</td><td>solute carrier family 28 member 2b</td><td>19 September, 2019</td></tr>
 <tr><td><a href="<!--#include file='include/fewi_url.html'-->accession/MGI:2685939" target="_blank">MGI:2685939</a></td><td>6430531B16Rik</td><td>Spef1l</td><td>sperm flagellar 1 like</td><td>19 September, 2019</td></tr>
 <tr><td><a href="<!--#include file='include/fewi_url.html'-->accession/MGI:1913982" target="_blank">MGI:1913982</a></td><td>4921530L21Rik</td><td>Spertl</td><td>spermatid associated like</td><td>19 September, 2019</td></tr>
@@ -72,10 +96,12 @@ Contact <a href="mailto:nomen@jax.org"> nomen@jax.org</a> with suggestions or co
 <tr><td><a href="<!--#include file='include/fewi_url.html'-->accession/MGI:3702970" target="_blank">MGI:3702970</a></td><td>Gm9125</td><td>Tdpoz9</td><td>TD and POZ domain containing 9</td><td>19 September, 2019</td></tr>
 <tr><td><a href="<!--#include file='include/fewi_url.html'-->accession/MGI:3702974" target="_blank">MGI:3702974</a></td><td>Gm7534</td><td>Zpld2</td><td>zona pellucida like domain containing 2</td><td>19 September, 2019</td></tr>
 </table>
-<h3><a id="inprogress"></a>In Progress</h3>
-<p>The table below lists a subset of the genes we are currently working on. This subset lists unnamed members of the PRAME gene family.</p>
-<table>
-<tr><th>Current Symbol</th><th>Current Name</th><th>UniProt ID &nbsp;</th><th>UniProt Name</th></tr>
+<!--filler for blank space between tables-->
+  <tr><td></td></tr>
+  <table>
+<tr><td class="enhance"><a id="inprogress"></a><b>In Progress</b></td></tr>
+<tr><td>The table below lists a subset of the genes we are currently working on. This subset lists unnamed members of the PRAME gene family.</td></tr>
+<tr bgcolor="#D0E0F0"><th>Current Symbol</th><th>Current Name</th><th>UniProt ID &nbsp;</th><th><span style="white-space: nowrap">UniProt Name</span></th></tr>
 <tr><td>A430089I19Rik &nbsp;</td><td><span style="white-space: nowrap">RIKEN cDNA A430089I19 gene &nbsp;</span></td><td>IPR026271</td><td>PRAME family</td></tr>
 <tr><td>B020004J07Rik</td><td>RIKEN cDNA B020004J07 gene</td><td>IPR026271</td><td>PRAME family</td></tr>
 <tr><td>Gm10424</td><td>predicted gene 10424</td><td>IPR026271 &nbsp; &nbsp;</td><td>PRAME family</td></tr>
