@@ -40,12 +40,21 @@
 
 <div id="" class="gxdSectionSpacer"></div>
 <br>
-<img src="<!--#include file='include/mgihome_url.html'-->homepages/images/gxd_logo_small.png">
+<p><a href="https://www.janelia.org/janelia-mouse-atlas" target="_blank">Janelia Mouse Atlas</a></p>
 
-<p>New interface utilities have been developed to help users find recombinase (cre) reporters with activity in specific tissues. The new <b>Gene Expression and Recombinase Activity Comparison Matrix</b> (upper) juxtaposes the activity patterns for recombinases driven by the mouse gene promoter against the endogenous expression pattern of the gene. The matrix view is accessible from relevant gene and allele detail pages, as well as from the recombinase allele search summary. In addition, the  <a href="<!--#include file='include/fewi_url.html'-->home/recombinase" target="_blank">Recombinase (cre) Activity Search</a> (lower) now allows users to narrow their query to reporters whose activity has been detected in the specified structure (or its substructures) but nowhere else.</p> 
-<img src="<!--#include file='include/mgihome_url.html'-->GXD/RecombinaseMatrix.png" width="549" height="380" alt=Recombiniase Matrix"></img>
-<br><br>
-<img src="<!--#include file='include/mgihome_url.html'-->GXD/RecombinaseMatrix2.png" width="423" height="158" alt=Recombiniase Matrix 2"></img>
+<p>In toto imaging and reconstruction of post-implantation mouse development at the single-cell level. <a href="https://www.sciencedirect.com/science/article/pii/S0092867418312431?via%3Dihub" target="_blank">McDole et al.</a> 2018 Cell 175(3):859-876.</p>
+
+<!-- 16:9 aspect ratio --> 
+<div class="embed-responsive embed-responsive-16by9"> 
+        <source src="<!--#include file='include/mgihome_url.html'-->GXD/Movie_S27.mp4" type="video/mp4">
+</div> 
+
+<p><b>Movie S27</b> | Joint visualization of dynamic cell fate reconstruction and cell divisions across a developing embryo. <br> 
+Combination of the data on cell divisions identified by the CNN-based detector with SVF-enhanced cell tracking and manually annotated tissue labels. Jointly visualizing these databases reveals cell fate information (color), cell movements (spheres) and cell divisions in each tissue (change in size of spheres, maximum size identifies time point of division), as a function of time. Time is represented in the format hh:mm:ss.</p>
+
+<p>Additional movies are available at the <a href="https://www.janelia.org/janelia-mouse-atlas" target="_blank">Janelia</a> website.</p>
+
+<p>Copyright: This movie and figure legend have been downloaded from the Janelia website and are covered by a Creative Commons License (<a href="https://creativecommons.org/licenses/by/4.0/" target="_blank">Attribution 4.0 International</a> (CC BY 4.0)).</p>
 
 <div id="" class="gxdSectionSpacer"></div>
 
