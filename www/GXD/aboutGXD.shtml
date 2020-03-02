@@ -66,7 +66,7 @@ grant HD062499.
 <h3><a id="acquisition"></a>Data Acquisition&mdash;in situs and blots</h3>
 
 <p>New expression data are made available on a weekly basis. These data are acquired from the literature by our curatorial staff and via electronic submission. GXD encourages researchers to submit their expression data to us.  Data submission both increases the exposure of the work and the amount of data available to the scientific community. Guidelines for submitting data can be found <a href="GEN/gxd_submission_guidelines.shtml">here</a>.
-<p>We have incorporated data from several large scale expression databases into GXD.  Database entries in GXD may link to the corresponding entries at the providers' websites.  In this way, users can take advantage of GXD's data integration and querying capabilities while having easy access to additional resources at the providers' sites. </p>
+<p>We have incorporated data from several large scale expression databases into GXD.  Database entries in GXD may link to the corresponding entries at the providers' websites. In this way, users can take advantage of GXD's data integration and querying capabilities while having easy access to additional resources at the providers' sites. </p>
  <ul>
 	<li><a href="https://gp3.mpg.de" class="GO">GenePaint Database</a> <br>This data set can be viewed at <a href="<!--#include file='include/fewi_url.html'-->reference/J:122989" class="GO">J:122989</a>.</li>
 	<li><a href="http://www.eurexpress.org/ee/" class="GO">Eurexpress</a> <br>
@@ -95,14 +95,14 @@ be viewed at <a href="<!--#include file='include/fewi_url.html'-->reference/J:15
 
 <h3>Data Acquisition&mdash;RNA-Seq</h3>
 
-<p>Selected sets of RNA-seq data are imported from the EMBL-EBI’s <a href="https://www.ebi.ac.uk/gxa/home">Expression Atlas</a>. These data are from experiments that examine endogenous gene expression in wild-type and mutant mice during the embryonic stages and/or postnatal life. In keeping with GXD’s scope, we do not select data derived from transgenic mice (i.e., animals containing randomly inserted transgenes); animals that have been manipulated, either by substances, surgical procedures, or diet regimens; cultured tissues; cell types; or cell lines.</p>
-<p>We chose the Expression Atlas as our data source because their team selects high quality data sets from the public repositories (ArrayExpress and NCBI’s GEO) and then uses a standardized pipeline to re-analyze the data, generating consistently processed TPM values. To effectively integrate these data into GXD, we process and annotate these files further:</p>
+<p>Selected sets of RNA-seq data are imported from the EMBL-EBI's <a href="https://www.ebi.ac.uk/gxa/home">Expression Atlas</a>. These data are from experiments that examine endogenous gene expression in wild-type and mutant mice during the embryonic stages and/or postnatal life. In keeping with GXD's scope, we do not select data derived from transgenic mice (i.e., animals containing randomly inserted transgenes); animals that have been manipulated, either by substances, surgical procedures, or diet regimens; cultured tissues; cell types; or cell lines.</p>
+<p>We chose the Expression Atlas as our data source because their team selects high quality data sets from the public repositories (ArrayExpress and NCBI's GEO) and then uses a standardized pipeline to re-analyze the data, generating consistently processed TPM values. To effectively integrate these data into GXD, we process and annotate these files further:</p>
 <ul>
  <li>We annotate the metadata for the RNA-seq samples (anatomical structure, developmental stage, mutated gene, strain and sex) using the same controlled vocabularies and ontologies we use for all other expression data in GXD, thus ensuring semantic data integration.</li>
  <li>Using the TPM values in the files imported from the Expression Atlas, we compute the average TPM value per gene per sample for the technical replicates.</li>
  <li>Using our curated sample metadata annotations, we group samples that have the same source information into biological replicate sets.</li>
  <li>We quantile normalize (QN) the TPM value per gene across the samples in each biological replicate set and then average these QN TPM values.</li>
- <li>Using the Expression Atlas thresholds as our guide, the averaged QN values are assigned to expression bins of high, medium, low and below cutoff.  Averaged QN values of &gt;0.5 TPM are deemed to be below cutoff and, therefore, considered absent in GXD. Values of &ge; 0.5 TPM are deemed to be present in GXD; 0.5-10 TPM is considered low expression; 11-1,000 TPM medium expression; and &gt;1,000 TPM high expression.</li>
+ <li>Using the Expression Atlas thresholds as our guide, the averaged QN values are assigned to expression bins of high, medium, low and below cutoff. Averaged QN values of &gt;0.5 TPM are deemed to be below cutoff and, therefore, considered absent in GXD. Values of &ge; 0.5 TPM are deemed to be present in GXD; 0.5-10 TPM is considered low expression; 11-1,000 TPM medium expression; and &gt;1,000 TPM high expression.</li>
 </ul>
 <br>
 <h3><a id="adult_dict"></a>Adult Mouse Anatomy Ontology</h3>

@@ -20,12 +20,7 @@
       <ul>
         <li><a href="#june10_2019">June 10, 2019</a> |
         <li><a href="#may6_2019">May 6, 2019</a> |
-        <li><a href="#oct29_2018">October 29, 2018</a> |
-        <li><a href="#sept24_2018">September 24, 2018</a> |
-        <li><a href="#sept7_2018">September 7, 2018</a> |
-        <li><a href="#aug21_2018">August 21, 2018</a> |
-        <li><a href="#may7_2018">May 7, 2018</a> |
-        <li><a href="news_2017.shtml"><span style="white-space: nowrap">Archive: News and Announcements for 2017</span></a></li> 
+        <li><a href="news_2018.shtml"><span style="white-space: nowrap">Archive: News and Announcements for 2018</span></a></li> 
        </ul>
        </td>
      </tr>              
@@ -61,118 +56,12 @@
    <tr><td class="enhance">May 6, 2019</td></tr>
    <tr><td>
  	<dl class="linkedList">
- 	<dt>For the MGI 6.14 release: 
+ 	<dt>For this release: 
 <ul>
  <li>We retired the MouseCyc Pathways resource. We recommend the <a href="https://biocyc.org/organism-summary?object=MOUSE">BioCyc</a> resource for mouse pathway data.</li> 
  <li>We improved the way variants are represented in our non-public-facing database. This is our first step in several planned enhancements related to variants in MGI and The Alliance of Genome Resources.</li>
 </ul>
 </dt>
-   </dl>
-   </td>
-  </tr>
-</table>
-   
-   <tr><td><a id="oct29_2018"></a>
-
-<table class="outline" width="100%">
-   
-   <tr><td class="enhance">October 29, 2018</td></tr>
-   <tr><td>
- 	<dl class="linkedList">
- 	<dt>This release offers several new features and updates related to strains. New Strain Detail pages provide basic strain information as well as associated mutations, markers, QTL, phenotypes and diseases. 
- 	For strains with SNP data, Strain Detail pages offer a new MGI feature, a SNP Profile Heat Map which displays SNP densities and allows you to launch a SNP query from the strain page. For an example, see the <a href="<!--#include file='include/fewi_url.html'-->strain/MGI:2159747" target="_blank">A/J</a> Strain Detail page.</dt>
-    <dt>The MGI Quick Search field supports strain searches and a new <a href="<!--#include file='include/fewi_url.html'-->home/strain" target="_blank">Strain Query</a>, permits limiting your search to strain attributes, such as inbred, congenic, Robertsonian, and wild-derived. </dt>
-     <dt>Gene Detail pages now have a new section, Strain Comparison, which allows you to download genomic sequences for 19 mouse strains or forward selected strains to the Multiple Genome Viewer (MGV) to compare chromosomal regions and synteny blocks for the region around the gene. <br>
-    <blockquote>
-    MGV shows corresponding regions of the selected genomes as horizontal stripes and the equivalent features in each genome via vertical connectors. The navigation of the genomes is synchronized as you scroll in 5' or 3' directions. 
-    The Viewer permits searches by genes and other genome features, genome coordinates, and function, phenotype, disease, and pathway terms. You also have the option of sending selected strains to the Sanger SNP Query. The C57BL/6J annotations are from MGI curation and the other 18 strain annotations are from the Sanger Mouse Genomes Project.
-    </blockquote> 
-    </dt>
-    <dt>Also new to Gene Detail pages, Transcription Start Sites from the Fantom 5 project are now associated with genes and the coordinates to the TSS regions are available from the page. You can also view these features in JBrowse. As an example, see the <a href="<!--#include file='include/fewi_url.html'-->accession/MGI:95664" target="_blank">Gata4</a> Gene Detail page.</dt>
-    <dt>We updated the Mouse <a href="<!--#include file='include/fewi_url.html'-->snp" target="_blank">SNP Query</a> to allow you to select more than one reference strain, so you can now compare sets of strains. 
-    When your search designates a reference strain, new filter options allow you to filter by allele agreement. We also make it easy to select the DO/CC Founders or the Sanger <abbr title="Mouse Genomes Project">MGP</abbr> strains.</dt>
-    <dt>We added a new section to the <a href="<!--#include file='include/fewi_url.html'-->allele" target="_blank">Phenotypes, Alleles & Disease Models Search</a> form. You now have the ability to limit your search to the Molecular Mutation type, such as Duplication, Nucleotide repeat expansion, Single point mutation, and translocation.</dt>
-   </dl>
-   </td>
-  </tr>
-</table>
-   
-   <tr><td><a id="sept24_2018"></a>
-
-<table class="outline" width="100%">
-   
-   <tr><td class="enhance">September 24, 2018</td></tr>
-   <tr><td>
- 	<dl class="linkedList">
- 	<dt>The Multiple Genome Viewer (<a href="<!--#include file='include/wi_url.html'-->mgv">MGV</a>) allows you to explore and compare chromosomal regions and synteny blocks between the C57BL/6J reference genome and 18 other mouse inbred strains: 16 sequenced and annotated by the Wellcome Institute Sanger <a href="https://www.sanger.ac.uk/science/data/mouse-genomes-project" target="_blank">Mouse Genomes Project</a> and two (CAROLI/EiJ and PAHARI/EiJ) <a href="https://genome.cshlp.org/content/early/2018/03/21/gr.234096.117" target="_blank">published</a> by Paul Flicek and Duncan Odom and others, as well as the C57BL/6J reference genome. 
- 	Currently only the C57BL/6J annotation is “reference quality.” The C57BL/6J annotations are from MGI curation (<a href="https://rd.springer.com/article/10.1007/s00335-015-9571-1">Y. Zhu et al.</a> ). 
- 	For GFF downloads, see our weekly <a href="http://www.informatics.jax.org/downloads/reports/index.html#seq">reports</a>.</dt>
-    <dt>The Viewer shows corresponding regions of the selected genomes as horizontal stripes and the equivalent features in each genome via vertical connectors. The navigation of the genomes is synchronized as you scroll in 5' or 3' directions. 
-    The Viewer permits searches by genes and other genome features, genome coordinates, and function, phenotype, disease, and pathway terms. All searches query for canonical genes in MGI's <a href="http://www.mousemine.org/mousemine/begin.do">MouseMine</a>. 
-    You can forward lists of features to MouseMine and download genomic, coding and exon sequences for a selected feature for designated strains. You can also run an MGI SNP query for strains and a region of interest, and find QTLs that overlap a defined region.</dt>
-    <dt>You can access the viewer from the Analysis Tools menu in the dark blue banner at the top of MGI web pages. It will be further integrated into MGI in the next database release. </dt>
-</dl>
-   </td>
-  </tr>
-</table>
-   
-  <tr><td><a id="sept7_2018"></a>
-
-<table class="outline" width="100%">
-   
-   <tr><td class="enhance">September 7, 2018</td></tr>
-   <tr><td>
- 	<dl class="linkedList">
- 	<dt><a href="http://www.mousemine.org/mousemine/begin.do" target="_blank">MouseMine</a> now includes genomic data for 18 more mouse inbred strains: 16 sequenced and annotated by the Wellcome Institute Sanger <a href="https://www.sanger.ac.uk/science/data/mouse-genomes-project" target="_blank">Mouse Genomes Project</a> and two wild-derived strains (CAROLI/EiJ and PAHARI/EiJ) <a href="https://genome.cshlp.org/content/early/2018/03/21/gr.234096.117" target="_blank">published</a> by Paul Flicek and Duncan Odom and others, as well as the C57BL/6J reference genome. Currently only the C57BL/6J annotation is “reference quality.”</dt>
-<dt>In your MouseMine search results for a gene or list of genes, several query templates are automatically run. Four in the Genome section of your results include the new data (<a href="http://www.mousemine.org/mousemine/report.do?id=22531929&trail=%7c22531929">Example </a>):
- <ul>
-  <li>Canonical gene --> CDSs in specific strains
-    <ul>
-     <li>A report of the coding sequences for each strain for the genes in your list</li>
-    </ul></li>
-   <li>Canonical gene --> Exons in specific strains
-      <ul>
-     <li>A report of the exons for each transcript for each strain for the genes in your list</li>
-    </ul></li>
-   <li>Canonical gene --> Strain-specific IDs, biotypes, and locations
-    <ul>
-     <li>A report of the genomic sequences for each strain for the genes in your list</li>
-    </ul></li>
-   <li>Canonical gene --> Transcripts in specific strains
-    <ul>
-     <li>A report of each of the transcripts for each strain for the genes in your list</li>
-    </ul></li>
- </ul>
-</dt>
-<dt>Use the Export button above a report to get your results as a tab or comma-separated file, or as FASTA or GFF3 features. Or click on an identifier to get an individual sequence.</dt>
-</dl>
-   </td>
-  </tr>
-</table>
-   
-    <tr><td><a id="aug21_2018"></a>
-
-<table class="outline" width="100%">
-   
-   <tr><td class="enhance">August 21, 2018</td></tr>
-   <tr><td>
- 	<dl class="linkedList">
- 	<dt>The <a href="<!--#include file='include/mgihome_url.html'-->homepages/expression.shtml" target="_blank">GXD Home Page</a> has been redesigned to make it more intuitive and effective. Graphical tiles provide a quick overview of and access to GXD's search functions, including direct access to each of the three (tabbed) search modes of the Gene Expression Data Query Form. A Highlights section alerts users of newly added features and data.</dt>
-   </dl>
-   </td>
-  </tr>
-</table>
-   
-   <tr><td><a id="may7_2018"></a>
-
-<table class="outline" width="100%">
-
-<tr><td class="enhance">May 7, 2018</td></tr>
-   <tr><td>
- 	<dl class="linkedList">
- 	<dt>The capabilities of the <a href="<!--#include file='include/fewi_url.html'-->gxd/differential" target="_blank">Differential Expression Search</a> have been expanded. This search allows users to query for genes expressed in some anatomical structures and/or developmental stages but not in others. The new feature allows users to search for genes that have been shown to be expressed in a specified structure (or its substructures) and/or developmental stage(s) but nowhere else.</dt>
-    <dt>We have developed interface utilities that allow users to compare gene expression and phenotype data for a given gene. The new <a href="<!--#include file='include/fewi_url.html'-->gxd/phenogrid/MGI:97487" target="_blank"> Gene Expression + Phenotype Comparison Matrix</a>, accessible from gene detail pages, visually juxtaposes tissues where a gene is normally expressed against tissues where mutations in that gene cause abnormalities. The anatomy axis of the view can be expanded and collapsed, allowing users to interactively explore correlations between gene expression and phenotype at different levels of detail. The <a href="<!--#include file='include/fewi_url.html'-->vocab/gxd/anatomy/EMAPA:17331" target="_blank">Mouse Developmental Anatomy Browser</a> has been enhanced; in addition to providing access to expression data for a given anatomical structure, it now provides access to corresponding phenotype data. On <a href="<!--#include file='include/fewi_url.html'-->accession/MGI:3618596"  target="_blank">Allele Detail</a> pages we have added links to anatomical structures affected by the mutations and links to wild-type expression data for these structures. As well, links have been added to the term detail section of the <a href="<!--#include file='include/fewi_url.html'-->vocab/mp_ontology/MP:0005452" target="_blank">Mammalian Phenotype Browser</a>, allowing users to access wild-type expression data in tissues associated with the phenotype.</dt>
-    <dt>New interface utilities have been developed to help users find recombinase (cre) reporters with activity in specific tissues. The <a href="<!--#include file='include/fewi_url.html'-->home/recombinase" target="_blank">Recombinase (cre) Activity Search</a> now allows users to narrow their query to reporters whose activity has been detected in the specified structure (or its substructures) but nowhere else. Further, a <a href="<!--#include file='include/fewi_url.html'-->gxd/recombinasegrid/MGI:96677"  target="_blank">Matrix View</a> that juxtaposes the endogenous expression pattern of a gene against activity patterns for recombinases driven by the mouse gene promoter is now available. The matrix view is accessible from relevant gene and allele detail pages, as well as from the recombinase allele search summary.</dt>
    </dl>
    </td>
   </tr>
