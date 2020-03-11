@@ -21,15 +21,24 @@
 
 <table>
 	<tr><td>
-		<ul>
-<li>
-<p>GXD has developed an <a href="<!--#include file='include/fewi_url.html'-->gxd/htexp_index">RNA-Seq and Microarray Experiment Search</a> to quickly and reliably find specific mouse expression studies in <a href="http://www.ebi.ac.uk/microarray-as/aer/?#ae-main%5B0%5D" target="_blank">ArrayExpress</a> and <a href="https://www.ncbi.nlm.nih.gov/geo/" target="_blank">GEO</a>. Based on GXD's standardized metadata annotations, users can specify the age, anatomical structure, mutant alleles, strain and sex of samples of interest as well as experiment study type and key parameters. These searches, powered by controlled vocabularies and ontologies, can be combined with free text searching of experiment titles and descriptions. Search result summaries include linkouts to ArrayExpress and GEO, providing easy access to the expression data itself. Links to the PubMed entries for corresponding publications are also included.</p>
-<p>GXD's annotation efforts focus on experiments that examine endogenous gene expression in wild-type and mutant mice. Studies from all developmental stages, including adult, are included. In addition, studies examining expression differences within and between species is available (although the metadata for the non-mouse samples is not). As is consistent with GXD's scope, studies using transgenic mice (i.e., animals containing randomly inserted transgenes); animals that have been manipulated, either by substances, surgical procedures, or diet regimens; cultured tissues; or cell lines are not included.</p>
-<p>The RNA-Seq and microarray metadata index developed by GXD is comprised of all experiments currently available in ArrayExpress that fit the criteria described above. This includes thousands of experiments that were originally submitted to GEO. Prior to August 2016 ArrayExpress imported all experiments stored at GEO. Future work will incorporate the more recently submitted GEO experiments into the GXD RNA-Seq and Microarray Experiment index.</p>
-<!--<br></br>
-<img src="<!--#include file='include/mgihome_url.html'-->GXD/DmdInForm.png" class="zoom" width="350" height="252" alt="RNA-Seq and Microarray Experiment Search" /> -->
-</li>
-</ul>
+		<p><b>GXD now includes RNA-seq data</b></p>
+
+<p>GXD has been expanded to include RNA-Seq data. In keeping with GXD's scope, these data are from experiments that examine endogenous gene expression in wild-type and mutant mice during the embryonic stages and/or postnatal life. The data sets have been imported from the EMBL-EBI's <a href="https://www.ebi.ac.uk/gxa/home target="_blank"">Expression Atlas</a>. 
+We have integrated these data with the other types of expression data in GXD and with the genetic, functional, phenotypic and disease-related information in MGI and thus made them accessible to many new search capabilities.</p>
+<p>We chose the Expression Atlas as our data source because their team selects high quality data sets from the public repositories (ArrayExpress and NCBI's GEO) and then uses a standardized pipeline to re-analyze the data, generating consistently processed TPM values. 
+To effectively integrate these data into GXD, we processed these files further to compute averaged quantile normalized TPM values per gene per biological replicate set. Using the Expression Atlas thresholds as a guide, the TPM values are assigned to expression bins of high, medium, low, and below cutoff.</p>
+<p>This binning of TPM values allowed us to assign a detected/not detected value to these data, as is done for all the other expression data in GXD. We also annotated metadata for the RNA-seq samples using the same controlled vocabularies and ontologies we use for all other expression data in GXD. 
+These two steps enable the full integration of these data into GXD/MGI and makes them accessible via existing search tools.</p>
+
+<p><b>New data filters on GXD's search summaries</b></p>
+
+<p>GXD has developed new filters that take advantage of the genetic, functional, phenotypic and disease-related information in MGI. These filters have been added to the gene expression data search summaries. They enable users to use gene function, phenotype and disease ontology annotations, as well as marker type, to filter expression assay results. Filters for individual RNA-seq data sets and TPM expression bins have also been developed. 
+When combined with the pre-existing filters for anatomical system, developmental stage, assay type, detected/not detected and wild-type and mutant specimens, users have powerful tools to quickly and efficiently extract the expression data of interest to them.</p>
+
+<p><b>Direct access to Morpheus heat map visualization and analysis tools</b></p>
+
+<p>GXD users can use our search tools and filters to create RNA-seq data sets containing the expression data of interest to them. Then, by merely clicking a button on the gene expression data search summary, these data, including the curated sample metadata, will be rendered into an expression heat map via <a href="https://software.broadinstitute.org/morpheus" target="_blank">Morpheus</a>, a heat map visualization and analysis tool created at the Broad Institute. 
+Morpheus offers a myriad of tools for further display and analysis, including sorting, filtering, hierarchical clustering, nearest neighbors analysis, and visual enrichment.</p>
 	</td></tr>
 </table>
 

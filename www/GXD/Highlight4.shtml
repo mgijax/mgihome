@@ -36,14 +36,22 @@
 <title><!--#include file="include/mgiversion.html"--> Highlight 4</title>
 
 
+
 <link rel="stylesheet" type="text/css"/>
 
 <div id="" class="gxdSectionSpacer"></div>
 <br>
 <img src="<!--#include file='include/mgihome_url.html'-->homepages/images/gxd_logo_small.png">
 
-<p>The <b>Gene Expression + Phenotype Comparison Matrix</b>, accessible from gene detail pages, allows users to compare gene expression and phenotype data for a given gene.  It visually juxtaposes tissues where a gene is normally expressed against tissues where mutations in that gene cause abnormalities. The anatomy axis of the view can be expanded and collapsed, allowing interactive exploration of the correlations between gene expression and phenotype at different levels of detail.</p> 
-<img src="<!--#include file='include/mgihome_url.html'-->GXD/PhenoMatrixPopup.png" width="806" height="484" alt="Expression + Phenotype Matrix"></img>
+<p>The new GXD <a href="<!--#include file='include/fewi_url.html'-->gxd/htexp_index">RNA-Seq and Microarray Experiment Search</a> allows users to quickly and reliably find expression studies of interest in ArrayExpress and GEO. The search is powered by GXD's curated annotations, using controlled vocabularies and ontologies, for samples and experiments.</p>
+<p>The <b>Search</b> makes it possible to query by the standardized sample fields: age, anatomical structure, mutant alleles, strain and sex. In addition a free text search of experiment title and description is provided. Pictured is a search for experiments that analyze "skeletal muscle" in "dystrophin (<i>Dmd</i>) mutant" samples.</p>
+<img src="<!--#include file='include/mgihome_url.html'-->GXD/DmdInForm.png" width="720" height="539" alt="RNA-Seq and Microarray Experiment Search" />
+<p>The <b>Summary</b> displays the experiments that match the search criteria, together with their standardized metadata and linkouts to ArrayExpress, GEO and PubMed. The curated experiment fields (study type and experimental variables) can be used as filter values (circled) to further specify the returned experiments.</p>
+<img src="<!--#include file='include/mgihome_url.html'-->GXD/DmdResults.png" width="720" height="393" alt="RNA-Seq and Microarray Experiment Search results" />
+<p>The <b>Sample</b> information is displayed in a pop-up table (below) that can accessed by using the View buttons (arrow above).</p>
+<img src="<!--#include file='include/mgihome_url.html'-->GXD/DmdSample.png" width="720" height="242" alt="DMD Samples"></img>
+<p>GXD's annotation efforts focus on experiments that examine endogenous gene expression in wild-type and mutant mice. Studies from all developmental stages, including adult, are included. In addition, studies examining expression differences within and between species is available (although the metadata for the non-mouse samples is not). As is consistent with GXD's scope, studies using transgenic mice (i.e., animals containing randomly inserted transgenes); animals that have been manipulated, either by substances, surgical procedures, or diet regimens; cultured tissues; or cell lines are not included.</p>
+<p>The RNA-Seq and microarray metadata index developed by GXD is comprised of all experiments currently available in ArrayExpress that fit the criteria described above. This includes thousands of experiments that were originally submitted to GEO. Prior to August 2016 ArrayExpress imported all experiments stored at GEO. Future work will incorporate the more recently submitted GEO experiments into the GXD RNA-Seq and Microarray Experiment index.</p>
 
 <div id="" class="gxdSectionSpacer"></div>
 

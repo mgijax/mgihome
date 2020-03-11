@@ -35,24 +35,27 @@
 <body>
 <title><!--#include file="include/mgiversion.html"--> Highlight 1</title>
 
-
-<link rel="stylesheet" type="text/css"/>
-
-<div id="" class="gxdSectionSpacer"></div>
-<br>
-<img src="<!--#include file='include/mgihome_url.html'-->homepages/images/gxd_logo_small.png">
-
-<p>The new GXD <a href="<!--#include file='include/fewi_url.html'-->gxd/htexp_index">RNA-Seq and Microarray Experiment Search</a> allows users to quickly and reliably find expression studies of interest in ArrayExpress and GEO. The search is powered by GXD's curated annotations, using controlled vocabularies and ontologies, for samples and experiments.</p>
-<p>The <b>Search</b> makes it possible to query by the standardized sample fields: age, anatomical structure, mutant alleles, strain and sex. In addition a free text search of experiment title and description is provided. Pictured is a search for experiments that analyze "skeletal muscle" in "dystrophin (<i>Dmd</i>) mutant" samples.</p>
-<img src="<!--#include file='include/mgihome_url.html'-->GXD/DmdInForm.png" width="720" height="539" alt="RNA-Seq and Microarray Experiment Search" />
-<p>The <b>Summary</b> displays the experiments that match the search criteria, together with their standardized metadata and linkouts to ArrayExpress, GEO and PubMed. The curated experiment fields (study type and experimental variables) can be used as filter values (circled) to further specify the returned experiments.</p>
-<img src="<!--#include file='include/mgihome_url.html'-->GXD/DmdResults.png" width="720" height="393" alt="RNA-Seq and Microarray Experiment Search results" />
-<p>The <b>Sample</b> information is displayed in a pop-up table (below) that can accessed by using the View buttons (arrow above).</p>
-<img src="<!--#include file='include/mgihome_url.html'-->GXD/DmdSample.png" width="720" height="242" alt="DMD Samples"></img>
-<p>GXD's annotation efforts focus on experiments that examine endogenous gene expression in wild-type and mutant mice. Studies from all developmental stages, including adult, are included. In addition, studies examining expression differences within and between species is available (although the metadata for the non-mouse samples is not). As is consistent with GXD's scope, studies using transgenic mice (i.e., animals containing randomly inserted transgenes); animals that have been manipulated, either by substances, surgical procedures, or diet regimens; cultured tissues; or cell lines are not included.</p>
-<p>The RNA-Seq and microarray metadata index developed by GXD is comprised of all experiments currently available in ArrayExpress that fit the criteria described above. This includes thousands of experiments that were originally submitted to GEO. Prior to August 2016 ArrayExpress imported all experiments stored at GEO. Future work will incorporate the more recently submitted GEO experiments into the GXD RNA-Seq and Microarray Experiment index.</p>
-
-<div id="" class="gxdSectionSpacer"></div>
+<p><b>RNA-Seq data added to GXD</b></p>
+<p>GXD now includes RNA-Seq data. In keeping with GXD’s scope, these data are from experiments that examine endogenous gene expression in wild-type and mutant mice during the embryonic stages and/or postnatal life. The data sets have been imported from the EMBL-EBI's  <a href="https://www.ebi.ac.uk/gxa/home">Expression Atlas</a>. To effectively integrate these data into GXD, we process these files further and annotate the sample metadata. <a href="http://www.informatics.jax.org/mgihome/GXD/aboutGXD.shtml#acquisition" target="_blank">Details&hellip;</a></p>
+<p><b>New filters added to search summaries</b></p>
+<p>GXD has added new filters to the gene expression data search summaries. This enables users to quickly and efficiently extract the expression data of interest to them.</p>
+<img src="<!--#include file='include/mgihome_url.html'-->GXD/FiltersPopupV2.png" width="760" height="238" alt="New Results Filters" />
+<p><b>Visualization and analysis of RNA-Seq data in Morpheus</b></p>
+<p>By merely clicking a button on the gene expression data search summary, the RNA-Seq data from a GXD search, including the standardized sample metadata annotated by GXD, will be rendered into an expression heat map via <a href="https://software.broadinstitute.org/morpheus" target="_blank">Morpheus</a>, a heat map visualization and analysis tool created at the Broad Institute.</p>
+<img src="<!--#include file='include/mgihome_url.html'-->GXD/ResultsPopupV2.png" width="760" height="439" alt="Results Summary" />
+<img src="<!--#include file='include/mgihome_url.html'-->GXD/HeatmapPopupV2.png" width="760" height="577" alt="Heatmap" />
+<p>Morpheus features include:</p>
+<ul>
+ <li>Hovering over any cell will display its value</li>
+ <li>Sorting and filtering options allow you to customize the heat map</li>
+ <li>Filters allow you to remove samples (columns) and/or genes (rows)</li>
+ <li>Clicking beside a metadata label will use the values in that field to group the samples</li>
+ <li>Clicking a column (or row) will sort the heat map by TPM values in that column (or row), from high to low; a second click will reverse the order</li>
+ <li>Triple clicking a column (or row) will sort the TPM in alternating groups of 10 of the most similar and dissimilar items, allowing for simultaneous viewing of both ends of the sort</li>
+</ul>
+<p>Create Calculated Annotations can be used to do statistical calculations, such as deriving the mean absolute deviation (MAD) or variance across the TPM values per gene</p>
+<p>Hierarchical Clustering can be used to group samples by similarity</p>
+<p>Nearest Neighbors can be used to find genes/samples that are similar to the genes/samples of interest.</p>
 
 </body>
 </html>
