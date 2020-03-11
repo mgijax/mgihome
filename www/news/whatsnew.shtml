@@ -18,6 +18,7 @@
   <table class="toc" width="100%">
 	<tr><td>
       <ul>
+        <li><a href="#mar9_2020">March 9, 2020</a> |
         <li><a href="#june10_2019">June 10, 2019</a> |
         <li><a href="#may6_2019">May 6, 2019</a> |
         <li><a href="news_2018.shtml"><span style="white-space: nowrap">Archive: News and Announcements for 2018</span></a></li> 
@@ -29,6 +30,35 @@
 
    <tr><td></td></tr>
 
+ <tr><td><a id="mar9_2020"></a>
+
+<table class="outline" width="100%">
+   
+   <tr><td class="enhance">March 9, 2020</td></tr>
+   <tr><td>
+ 	<dl class="linkedList">
+ 	 <dt><b>GXD now includes RNA-Seq data</b></dt>
+
+<dt>GXD has been expanded to include RNA-Seq data. In keeping with GXD's scope, these data are from experiments that examine endogenous gene expression in wild-type and mutant mice during the embryonic stages and/or postnatal life. 
+The data sets have been imported from the EMBL-EBI's <a href="https://www.ebi.ac.uk/gxa/home" target="_blank">Expression Atlas</a>. We have integrated these data with the other types of expression data in GXD and with the genetic, functional, phenotypic and disease-related information in MGI and thus made them accessible to many new search capabilities.</dt>
+<dt>We chose the Expression Atlas as our data source because their team selects high quality data sets from the public repositories (ArrayExpress and NCBI's GEO) and then uses a standardized pipeline to re-analyze the data, generating consistently processed TPM values. 
+To effectively integrate these data into GXD, we processed these files further to compute averaged quantile normalized TPM values per gene per biological replicate set. Using the Expression Atlas thresholds as a guide, the TPM values are assigned to expression bins of high, medium, low, and below cutoff.</dt>
+<dt>This binning of TPM values allowed us to assign a detected/not detected value to these data, as is done for all the other expression data in GXD. We also annotated metadata for the RNA-Seq samples using the same controlled vocabularies and ontologies we use for all other expression data in GXD. 
+These two steps enable the full integration of these data into GXD/MGI and makes them accessible via existing search tools.</dt>
+
+<dt><b>New data filters on GXD's search summaries</b></dt>
+
+<dt>GXD has developed new filters that take advantage of the genetic, functional, phenotypic and disease-related information in MGI. These filters have been added to the gene expression data search summaries. 
+They enable users to use gene function, phenotype and disease ontology annotations, as well as marker type, to filter expression assay results. Filters for individual RNA-Seq data sets and TPM expression bins have also been developed. When combined with the pre-existing filters for anatomical system, developmental stage, assay type, detected/not detected and wild-type and mutant specimens, users have powerful tools to quickly and efficiently extract the expression data of interest to them.</dt>
+
+<dt><b>Direct access to Morpheus heat map visualization and analysis tools</b></dt>
+
+<dt>GXD users can use our search tools and filters to create RNA-Seq data sets containing the expression data of interest to them. Then, by merely clicking a button on the gene expression data search summary, these data, including the curated sample metadata, will be rendered into an expression heat map via <a href="https://software.broadinstitute.org/morpheus" target="_blank">Morpheus</a>, a heat map visualization and analysis tool created at the Broad Institute. 
+Morpheus offers a myriad of tools for further display and analysis, including sorting, filtering, hierarchical clustering, nearest neighbors analysis, and visual enrichment.</dt>
+ 	 </dl>
+   </td>
+  </tr>
+</table>
 
    <tr><td><a id="june10_2019"></a>
 
