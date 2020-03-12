@@ -23,7 +23,7 @@
 	<tr><td>
 		<p><b>GXD now includes RNA-seq data</b></p>
 
-<p>GXD has been expanded to include RNA-Seq data. In keeping with GXD's scope, these data are from experiments that examine endogenous gene expression in wild-type and mutant mice during the embryonic stages and/or postnatal life. The data sets have been imported from the EMBL-EBI's <a href="https://www.ebi.ac.uk/gxa/home target="_blank"">Expression Atlas</a>. 
+<p>GXD has been expanded to include RNA-Seq data. In keeping with GXD's scope, these data are from experiments that examine endogenous gene expression in wild-type and mutant mice during the embryonic stages and/or postnatal life. The data sets have been imported from the EMBL-EBI's <a href="https://www.ebi.ac.uk/gxa/home" target="_blank">Expression Atlas</a>. 
 We have integrated these data with the other types of expression data in GXD and with the genetic, functional, phenotypic and disease-related information in MGI and thus made them accessible to many new search capabilities.</p>
 <p>We chose the Expression Atlas as our data source because their team selects high quality data sets from the public repositories (ArrayExpress and NCBI's GEO) and then uses a standardized pipeline to re-analyze the data, generating consistently processed TPM values. 
 To effectively integrate these data into GXD, we processed these files further to compute averaged quantile normalized TPM values per gene per biological replicate set. Using the Expression Atlas thresholds as a guide, the TPM values are assigned to expression bins of high, medium, low, and below cutoff.</p>

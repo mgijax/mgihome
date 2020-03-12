@@ -102,7 +102,7 @@ be viewed at <a href="<!--#include file='include/fewi_url.html'-->reference/J:15
  <li>Using the TPM values in the files imported from the Expression Atlas, we compute the average TPM value per gene per sample for the technical replicates.</li>
  <li>Using our curated sample metadata annotations, we group samples that have the same source information into biological replicate sets.</li>
  <li>We quantile normalize (QN) the TPM value per gene across the samples in each biological replicate set and then average these QN TPM values.</li>
- <li>Using the Expression Atlas thresholds as our guide, the averaged QN values are assigned to expression bins of high, medium, low and below cutoff. Averaged QN values of &gt;0.5 TPM are deemed to be below cutoff and, therefore, considered absent in GXD. Values of &ge; 0.5 TPM are deemed to be present in GXD; 0.5-10 TPM is considered low expression; 11-1,000 TPM medium expression; and &gt;1,000 TPM high expression.</li>
+ <li>Using the Expression Atlas thresholds as our guide, the averaged QN values are assigned to expression bins of high, medium, low and below cutoff. Averaged QN values of &lt;0.5 TPM are deemed to be below cutoff and, therefore, considered absent in GXD. Values of &ge; 0.5 TPM are deemed to be present in GXD; 0.5-10 TPM is considered low expression; 11-1,000 TPM medium expression; and &gt;1,000 TPM high expression.</li>
 </ul>
 <br>
 <h3><a id="adult_dict"></a>Adult Mouse Anatomy Ontology</h3>
