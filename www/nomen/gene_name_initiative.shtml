@@ -35,7 +35,8 @@ tr.no-hover:hover {
 <!-- create table for first paragraph -->
 	    <div align="center">
 	     <table class="outline" width="100%">
-		<tr class="no-hover"><td>The Mouse Genome Nomenclature group is evaluating gene names and symbols for mouse protein coding genes with gene model nomenclature to make them more informative. New names and symbols are based on annotations of protein domains from InterPro. Name changes are coordinated with the Human Gene Nomenclature Committee, Rat Genome Database and with the GenCode mouse genome annotation team. Contact <a href="mailto:nomen@jax.org"> nomen@jax.org</a> with suggestions or comments regarding the new names.</td>
+		<tr class="no-hover"><td>The Mouse Genome Nomenclature group is evaluating gene names and symbols for mouse protein coding genes with gene model nomenclature to make them more informative. New names and symbols are based on annotations of protein domains from InterPro. 
+		Name changes are coordinated with the Human Gene Nomenclature Committee, Rat Genome Database and with the GenCode mouse genome annotation team. Contact <a href="mailto:nomen@jax.org"> nomen@jax.org</a> with suggestions or comments regarding the new names.</td>
 	     </tr>
        </table>
 <!--end of first paragraph's table-->
@@ -44,15 +45,16 @@ tr.no-hover:hover {
 <!--filler for blank space between tables-->
   <tr><td></td></tr>
   <table>
-<tr class="no-hover"><td class="enhance"><a id="completed"></a><h2>Completed Genes</h2></td></tr>
+<tr class="no-hover"><td class="enhance"><a id="completed"></a><h2><p>Completed Genes</p></h2></td></tr>
 <tr><td></td></tr>
 
 <tr class="no-hover"><td><b>What's new in mouse gene nomenclature?</b> <br>
-Histone genes have been renamed at the request of histone researchers. We renamed the genes where the histone experts agree that mouse and human genes are orthologous (experts such as Paul Talbert and David Landsman; a paper will be published in the near future). This resulted in the streamlining of histone nomenclature. For example, <i>Hist1h2aa</i> has become <i>H2ac1</i> in parallel to its human ortholog <i>H2AC1</i>; <i>H2afy</i> is now <i>Macroh2a1</i>, human is <i>MACROH2A1</i>, in keeping with the wishes of histone researchers.</td></tr>
+<p>Histone genes have been renamed at the request of histone researchers. We renamed the genes where the histone experts agree that mouse and human genes are orthologous (experts such as Paul Talbert and David Landsman; a paper will be published in the near future). 
+This resulted in the streamlining of histone nomenclature. For example, <i>Hist1h2aa</i> has become <i>H2ac1</i> in parallel to its human ortholog <i>H2AC1</i>; <i>H2afy</i> is now <i>Macroh2a1</i>, human is <i>MACROH2A1</i>, in keeping with the wishes of histone researchers.</p></td></tr>
 </table>
-<tr><td><p>&nbsp;</p></td></tr>
+
 <tr><td></td></tr>
-<<table class="outline">
+<table class="outline">
 <tr bgcolor="#D0E0F0"><th>MGI ID</th><th>Old Symbol</th><th><span style="white-space: nowrap">New Symbol &nbsp;</span></th><th>New Name</th><th>Date Updated</th></tr>
 <tr><td><a href="<!--#include file='include/fewi_url.html'-->accession/MGI:1931523" target="_blank">MGI:1931523&nbsp;&nbsp;</a></td><td>Hist1h1a</td><td>H1f1</td><td><span style="white-space: nowrap">H1.1 linker histone, cluster member&nbsp;</span></td><td><span style="white-space: nowrap">March 17, 2020</span></td></tr>
 <tr><td><a href="<!--#include file='include/fewi_url.html'-->accession/MGI:1931526" target="_blank">MGI:1931526</a></td><td>Hist1h1c</td><td>H1f2</td><td>H1.2 linker histone, cluster member</td><td>March 17, 2020</td></tr>
@@ -181,10 +183,13 @@ Histone genes have been renamed at the request of histone researchers. We rename
 </table>
 <!--filler for blank space between tables-->
   <tr><td></td></tr>
-<table class="outline">
-<tr class="no-hover"><td class="enhance"><a id="inprogress"></a><b>In Progress</b></td></tr>
+<table>
+<tr class="no-hover"><td class="enhance"><a id="inprogress"><h2><p>In Progress/p></h2></td></tr>
 <tr><td></td></tr>
 <tr class="no-hover"><td>The table below lists a subset of the genes we are currently working on. This subset lists unnamed members of the PRAME gene family.</td></tr>
+</table>
+<tr><td></td></tr>
+<table class="outline">
 <tr bgcolor="#D0E0F0"><th><span style="white-space: nowrap">Current Symbol</span></th><th>Current Name</th><th>UniProt ID &nbsp;</th><th>UniProt Name</th></tr>
 <tr><td>A430089I19Rik &nbsp;</td><td><span style="white-space: nowrap">RIKEN cDNA A430089I19 gene &nbsp;</span></td><td>IPR026271</td><td>PRAME family</td></tr>
 <tr><td>B020004J07Rik</td><td>RIKEN cDNA B020004J07 gene</td><td>IPR026271</td><td>PRAME family</td></tr>
