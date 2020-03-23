@@ -38,7 +38,7 @@ REQUIRED_FIELDS = [
 	'listname'
 	]
 
-RECIPIENT = 'listmgr@informatics.jax.org'
+RECIPIENT = 'mgi-help@jax.org'
 
 # developer override for mailtarget 
 if config.has_key('CGI_MAILTARGET'):
@@ -120,5 +120,5 @@ except:
 #    commercial reproduction is prohibited without the prior written 
 #    permission of The Jackson Laboratory. 
 #
-#    Copyright © 1996 The Jackson Laboratory All Rights Reserved 
+#    Copyright ï¿½ 1996 The Jackson Laboratory All Rights Reserved 
 #
