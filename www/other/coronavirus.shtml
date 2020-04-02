@@ -5,10 +5,6 @@
 
 <style type="text/css">
 
-}
-td img {
-    vertical-align: top;
-}
 </style>
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
@@ -32,10 +28,12 @@ td img {
 <table width="75%" cellpadding="2" align="center">
    <tr><td>
    <table class="outline" width="100%">
-   <tr><td .img> 
+   <tr><td> 
 <div class="media">
   <div media-middle">
-   <img src="<!--#include file='include/mgihome_url.html'-->other/images/covidRtSm.png" alt="COVID-19" width="275"><img src="<!--#include file='include/mgihome_url.html'-->other/images/alertSm.png" width="275"><i>About this resource:</i> MGI is a knowledgebase of mouse models of human disease. To aid the research community in addressing the COVID-19 pandemic, we have have collected expertly curated information on mouse models and publications related to coronavirus research. This special collection will be updated weekly.</p> 
+   <img src="<!--#include file='include/mgihome_url.html'-->other/images/covidRtSm.png" alt="COVID-19" width="275"><img src="<!--#include file='include/mgihome_url.html'-->other/images/alertSm.png" width="275"><i>
+   </td></tr>
+   <tr><td>About this resource:</i> MGI is a knowledgebase of mouse models of human disease. To aid the research community in addressing the COVID-19 pandemic, we have have collected expertly curated information on mouse models and publications related to coronavirus research. This special collection will be updated weekly.</td></tr>
    </div>
    </div>
    </td>
