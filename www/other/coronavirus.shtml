@@ -28,18 +28,26 @@
 <!--end titleBar-->
 
 <!-- main body table -->
+<table width="80%" cellpadding="2" align="center">
+ <tr><td>
+ <!--sub 1 TOC table -->
+        	<div align="center">
  <table class="toc" width="100%">
 	<tr><td><h2>Mouse Models for Coronavirus Research</h2>
 	</td></tr>
  </table>
-
+ </div>
+<!-- end sub 1TOC table -->
+ </td></tr>
 <table width="75%" cellpadding="2" align="center">
    <tr><td>
    <table class="outline" width="100%">
    <tr><td> 
-<div class="center">
-   <img src="<!--#include file='include/mgihome_url.html'-->CovidRtSm.png" alt="COVID-19" width="275"><img src="<!--#include file='include/mgihome_url.html'-->alertSm.png" alt="alert mouse" width="275"><i>About this resource:</i> MGI is a knowledgebase of mouse models of human disease. To aid the research community in addressing the COVID-19 pandemic, we have have collected expertly curated information on mouse models and publications related to coronavirus research. This special collection will be updated weekly. 
+<div align="center">
+   <img src="<!--#include file='include/mgihome_url.html'-->CovidRtSm.png" alt="COVID-19" width="275"><img src="<!--#include file='include/mgihome_url.html'-->alertSm.png" alt="alert mouse" width="275">
    </div>
+   </td></tr>
+   <tr><td><i>About this resource:</i> MGI is a knowledgebase of mouse models of human disease. To aid the research community in addressing the COVID-19 pandemic, we have have collected expertly curated information on mouse models and publications related to coronavirus research. This special collection will be updated weekly. 
    </td>
    </tr>
    <tr><td><h3>The COVID-19 Pandemic of 2020</h3>
@@ -52,7 +60,7 @@
    </table>
     <table class="outline" width="100%">
    <tr style= "background-color: #DFEFFF;"><th>Coronavirus&nbsp;</th><th><span style="white-space: nowrap">Mouse Strain Name&nbsp;</span></th><th><span style="white-space: nowrap">Mouse Strain Availability&nbsp;</span></th><th><span style="white-space: nowrap">Study Type&nbsp;</span></th><th>Reference(s)&nbsp;</th><th>Summary</th></tr>
-   <tr><td>SARS-CoV-2</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>Research to develop and use mouse models in the study of SARS-CoV-2 are ramping up. Many research reports are appearing in scientific preprint archives such as <a href="https://connect.biorxiv.org/relate/content/181" target="_blank">bioRxiv</a>. <i>As preprints are not peer-reviewed and represent initial, unvalidated findings, we are not including information from preprints in the MGI database.</i></td>
+   <tr><td><span style="white-space: nowrap">SARS-CoV-2</span></td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>Research to develop and use mouse models in the study of SARS-CoV-2 are ramping up. Many research reports are appearing in scientific preprint archives such as <a href="https://connect.biorxiv.org/relate/content/181" target="_blank">bioRxiv</a>. <i>As preprints are not peer-reviewed and represent initial, unvalidated findings, we are not including information from preprints in the MGI database.</i></td>
    </tr>
     <tr><td>SARS-CoV</td><td><a href="<!--#include file='include/fewi_url.html'-->strain/MGI:6389236" target="_blank">B6.Cg-Tg(K18-ACE2)2Prlmn/J</a></td><td><a href="http://www.findmice.org/summary?strainid=JAX:034860" target="_blank">JAX:034860</a></td><td><a href="${configBean.FEWI_URL}disease/DOID:0080599" target="_blank">Coronavirus infection</a> </td><td><a href="http://www.informatics.jax.org/reference/J:283648 target="_blank">McCray et al. 2007</a></td><td>A transgenic mouse strain that expresses the human version of the SARS-CoV receptor (ACE2; angiotensin-converting enzyme 2)  developed to study the pathobiology of SARS-CoV and to aid in development of antiviral therapeutics. These mice develop <a href="http://www.informatics.jax.org/disease/DOID:2945"  target="_blank">severe acute respiratory syndrome</a> (SARS).</td>
    </tr>
