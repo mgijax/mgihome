@@ -62,7 +62,7 @@ h2 {
    </table>
     <table class="outline" width="100%">
    <tr style= "background-color: #DFEFFF; font-size: 1.1em;"><th>Coronavirus&nbsp;&nbsp;</th><th><span style="white-space: nowrap">Mouse Strain Name&nbsp;&nbsp;</span></th><th><span style="white-space: nowrap">Mouse Strain Availability&nbsp;&nbsp;</span></th><th><span style="white-space: nowrap">Study Type&nbsp;&nbsp;</span></th><th>Reference(s)&nbsp;&nbsp;</th><th>Summary</th></tr>
-   <tr><td>SARS-CoV-2</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>Research to develop and use mouse models in the study of SARS-CoV-2 are ramping up. Many research reports are appearing in scientific preprint archives such as <a href="https://connect.biorxiv.org/relate/content/181" target="_blank">bioRxiv</a>. <i>As preprints are not peer-reviewed and represent initial, unvalidated findings, we are not including information from preprints in the MGI database.</i></td>
+   <tr><td><span style="white-space: nowrap">SARS-CoV-2/</span></td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>Research to develop and use mouse models in the study of SARS-CoV-2 are ramping up. Many research reports are appearing in scientific preprint archives such as <a href="https://connect.biorxiv.org/relate/content/181" target="_blank">bioRxiv</a>. <i>As preprints are not peer-reviewed and represent initial, unvalidated findings, we are not including information from preprints in the MGI database.</i></td>
    </tr>
     <tr><td>SARS-CoV</td><td><a href="<!--#include file='include/fewi_url.html'-->strain/MGI:6389236" target="_blank">B6.Cg-Tg(K18-ACE2)2Prlmn/J</a></td><td><a href="http://www.findmice.org/summary?strainid=JAX:034860" target="_blank">JAX:034860</a></td><td><a href="<!--#include file='include/fewi_url.html'-->disease/DOID:0080599" target="_blank">Coronavirus infection</a> </td><td><a href="<!--#include file='include/fewi_url.html'-->reference/J:283648" target="_blank">McCray et al. 2007</a></td><td>A transgenic mouse strain that expresses the human version of the SARS-CoV receptor (ACE2; angiotensin-converting enzyme 2)  developed to study the pathobiology of SARS-CoV and to aid in development of antiviral therapeutics. These mice develop <a href="<!--#include file='include/fewi_url.html'-->disease/DOID:2945" target="_blank">severe acute respiratory syndrome</a> (SARS).</td>
    </tr>
@@ -80,6 +80,17 @@ h2 {
    </tr>
     <tr><td>MERS-CoV</td><td><a href="<!--#include file='include/fewi_url.html'-->/strain/MGI:5657230" target="_blank">(129S6/SvEvTac x C57BL/6NTac)F1</a>
 </td><td>&nbsp;</td><td><a href="<!--#include file='include/fewi_url.html'-->disease/DOID:0080599" target="_blank">Coronavirus infection</a> </td><td><a href="<!--#include file='include/fewi_url.html'-->reference/J:223728" target="_blank">Pascal et al. 2015</a></td><td>This mouse model was developed using VelocImmune and VelociGene technologies to express components of the human immune system (antibody-variable heavy chains and kappa light chains) and is capable of developing human antibodies against MERS-CoV.</td>
+   </tr>
+   <tr><td><p>&nbsp;</p></td></tr>
+   <table class="outline" width="100%">
+   <tr style= "background-color: #DFEFFF; font-size: 1.1em;"><th><span style="white-space: nowrap">Human Gene</span></th><th><span style="white-space: nowrap">Mouse Homolog&nbsp;&nbsp;</span></th><th>Comments</th><th>References</th></tr>
+   <tr><td>ACE2 <br>angiotensin I converting enzyme (peptidyl-dipeptidase A) 2</td><td><a href="<!--#include file='include/fewi_url.html'-->marker/MGI:1917258" target="_blank">Ace2</a></td><td>ACE2 encodes the receptor that SARS viruses use to infect a cell.</td><td>&nbsp;</td>
+   </tr>
+   <tr><td>DPP4 <br>dipeptidylpeptidase 4</td><td><a href="<!--#include file='include/fewi_url.html'-->marker/MGI:94919" target="_blank">Ddd4</a></td><td>DPP4 encodes the receptor that MERS-CoV viruses use to infect a cell.</td><td>&nbsp;</td>
+   </tr>
+   <tr><td>STAT1 <br>signal transducer and activator of transcription 1</td><td><a href="<!--#include file='include/fewi_url.html'-->marker/MGI:103063" target="_blank">Stat1</a></td><td>STAT1 plays a key role in development of acute lung injury associated with SARS pathology.</td><td><a href="https://journals.plos.org/plospathogens/article?id=10.1371/journal.ppat.1000849" target="_blank">Frieman et al. 2010</a></td>
+   </tr>
+   <tr><td>TMPRSS2 <br>transmembrane protease, serine 2</td><td><a href="<!--#include file='include/fewi_url.html'-->marker/MGI:1354381" target="_blank">Tmprss2</a></td><td>TMPRSS2 encodes the protease that "primes" the S-protein, necessary for SARS-CoV to bind to the ACE2.</td><td>&nbsp;</td>
    </tr>
    </table>
    <tr><td><p>MGI’s biocuration scientists are monitoring the peer-reviewed scientific literature for new reports and will update the MGI database weekly. You can help this effort by notifying MGI’s <a href="mailto:mgi-help@jax.org">Help Desk</a> about references in the peer-reviewed literature about the use of the mouse in coronavirus research that are missing from our database.</p></td>
