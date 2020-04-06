@@ -5,6 +5,12 @@
 
 <style type="text/css">
 
+.center {
+  margin: auto;
+  width: 100%;
+  padding: 5px;
+}
+
 </style>
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
@@ -24,20 +30,49 @@
 <!-- main body table -->
  <table class="toc" width="100%">
 	<tr><td><h2>Mouse Models for Coronavirus Research</h2>
+	</td></tr>
+ </table>
 
 <table width="75%" cellpadding="2" align="center">
    <tr><td>
    <table class="outline" width="100%">
    <tr><td> 
-<div class="media">
-  <div media-middle">
-   <img src="<!--#include file='include/mgihome_url.html'-->other/images/covidRtSm.png" alt="COVID-19" width="275"><img src="<!--#include file='include/mgihome_url.html'-->other/images/alertSm.png" width="275"><i>
-   </td></tr>
-   <tr><td>About this resource:</i> MGI is a knowledgebase of mouse models of human disease. To aid the research community in addressing the COVID-19 pandemic, we have have collected expertly curated information on mouse models and publications related to coronavirus research. This special collection will be updated weekly.</td></tr>
-   </div>
+<div class="center">
+   <img src="CovidRtSm.png" alt="COVID-19" width="275"><img src="alertSm.png" alt="alert mouse" width="275"><i>About this resource:</i> MGI is a knowledgebase of mouse models of human disease. To aid the research community in addressing the COVID-19 pandemic, we have have collected expertly curated information on mouse models and publications related to coronavirus research. This special collection will be updated weekly. 
    </div>
    </td>
    </tr>
+   <tr><td><h3>The COVID-19 Pandemic of 2020</h3>
+   <p>Coronavirus disease (COVID-19) is an infectious disease caused by a novel member of the coronavirus family of viruses. As of early April 2020, more than 1.2 million cases of COVID-19 have been documented in over 180 countries/regions worldwide<sup>1</sup>.</p>
+   <p>The virus that causes COVID-19, severe acute respiratory syndrome coronavirus 2 (SARS-CoV-2), was likely transmitted to humans from an animal reservoir. The exact nature of this transmission is still under investigation<sup>2</sup>.</p>
+   <p>There is no vaccine or proven treatment for COVID-19 although there are many efforts underway<sup>3</sup>.</p>
+   <h3>Coronavirus Research in the Laboratory Mouse</h3>
+   <p>The laboratory mouse is an important preclinical model for studying coronavirus biology and treatment approaches. The tables below summarize information about strains and genes relevant to the study of coronavirus in mouse. This information was obtained from the Mouse Genome Informatics (<a href="http://www.informatics.jax.org" target="_blank">MGI</a>) knowledgebase hosted at The Jackson Laboratory and from the International Mouse Strain Resource (<a href="http://www.findmice.org/index.jsp" target="_blank">IMSR</a>).</td>
+   </tr> 
+   </table>
+    <table class="outline" width="100%">
+   <tr style= "background-color: #DFEFFF;"><th>Coronavirus</th><th><span style="white-space: nowrap">Mouse Strain Name</span></th><th><span style="white-space: nowrap">Mouse Strain Availability</span></th><th><span style="white-space: nowrap">Study Type</span></th><th>Reference(s)</th><th>Summary</th></tr>
+   <tr><td>SARS-CoV-2</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>Research to develop and use mouse models in the study of SARS-CoV-2 are ramping up. Many research reports are appearing in scientific preprint archives such as <a href="https://connect.biorxiv.org/relate/content/181" target="_blank">bioRxiv</a>. <i>As preprints are not peer-reviewed and represent initial, unvalidated findings, we are not including information from preprints in the MGI database.</i></td>
+   </tr>
+    <tr><td>SARS-CoV</td><td><a href="<!--#include file='include/fewi_url.html'-->strain/MGI:6389236" target="_blank">B6.Cg-Tg(K18-ACE2)2Prlmn/J</a></td><td><a href="http://www.findmice.org/summary?strainid=JAX:034860" target="_blank">JAX:034860</a></td><td><a href="${configBean.FEWI_URL}disease/DOID:0080599" target="_blank">Coronavirus infection</a> </td><td><a href="http://www.informatics.jax.org/reference/J:283648 target="_blank">McCray et al. 2007</a></td><td>A transgenic mouse strain that expresses the human version of the SARS-CoV receptor (ACE2; angiotensin-converting enzyme 2)  developed to study the pathobiology of SARS-CoV and to aid in development of antiviral therapeutics. These mice develop <a href="http://www.informatics.jax.org/disease/DOID:2945"  target="_blank">severe acute respiratory syndrome</a> (SARS).</td>
+   </tr>
+    <tr><td>SARS-CoV</td><td><a href="http://www.informatics.jax.org/strain/MGI:2161072" target="_blank">BALB/c</a></td><td>*</td><td><a href="http://www.informatics.jax.org/disease/DOID:0080599" target="_blank">Coronavirus infection</a> </td><td>*</td><td>Replication of SARS-CoV was observed in lung and intestinal tissue in 4 week old BALB/c mice inoculated intranasally and orally. Infected mice did not display clinical signs of illness.</td>
+   </tr>
+    <tr><td>SARS-CoV</td><td><a href="http://www.informatics.jax.org/strain/MGI:2161072" target="_blank">BALB/c</a></td><td>*</td><td><a href="http://www.informatics.jax.org/disease/DOID:0080599" target="_blank">Coronavirus infection</a> </td><td>*</td><td>Replication of SARS-CoV was observed in lung and intestinal tissue in 12- 14 month old BALB/c mice inoculated intranasally. These animals displayed clinical signs of illness and pneumonia similar to humans. </td>
+   </tr>
+    <tr><td>SARS-CoV</td><td>*</td><td>*</td><td><a href="http://www.informatics.jax.org/disease/DOID:0080599" target="_blank">Coronavirus infection</a> </td><td>*</td><td>&nbsp;</td>
+   </tr>
+    <tr><td>SARS-CoV</td><td>*</td><td>*</td><td><a href="http://www.informatics.jax.org/disease/DOID:0080599" target="_blank">Coronavirus infection</a> </td><td>*</td><td>&nbsp;</td>
+   </tr>
+    <tr><td>MERS-CoV</td><td>*</td><td>*</td><td><a href="http://www.informatics.jax.org/disease/DOID:0080599" target="_blank">Coronavirus infection</a> </td><td>*</td><td>Mice with a humanized Dpp4 gene were inoculated with MERS-CoV. After 30 passages a mouse adapted virus (MERSMA) emerged.</td>
+   </tr>
+    <tr><td>MERS-CoV <br>MERS-15</td><td>*</td><td>*</td><td><a href="http://www.informatics.jax.org/disease/DOID:0080599" target="_blank">Coronavirus infection</a> </td><td>*</td><td>Genome editing was used to humanize the mouse Dpp4 (dipeptidyl peptidase 4 receptor) gene so match the human gene and make mice susceptible to MERS-CoV infection and replication. A mouse adapted MERS-CoV strain (MERS-15) induced severe acute respiratory like disease in infected animals.</td>
+   </tr>
+    <tr><td>MERS-CoV</td><td>*</td><td>*</td><td><a href="http://www.informatics.jax.org/disease/DOID:0080599" target="_blank">Coronavirus infection</a> </td><td>*</td><td>This mouse model was developed using VelocImmune and VelociGene technologies to express components of the human immune system (antibody-variable heavy chains and kappa light chains) and is capable of developing human antibodies against MERS-CoV.</td>
+   </tr>
+   </table>
+   <tr><td>MGI’s biocuration scientists are monitoring the peer-reviewed scientific literature for new reports and will update the MGI database weekly. You can help this effort by notifying MGI’s <a href="mailto:mgi-help@jax.org">Help Desk</a> about references in the peer-reviewed literature about the use of the mouse in coronavirus research that are missing from our database.</td>
+   </tr> 
    <tr><td><a href="http://www.informatics.jax.org/disease/DOID:0080599"><b>Mouse Models for Coronavirus Research</b></a>
    <td></tr>
    <tr><td><a href="http://www.informatics.jax.org/reference/summary?author=&authorScope=any&journal=&year=&text=coronavirus&inTitle=true&_inTitle=on&inAbstract=true&_inAbstract=on&id=#myDataTable=results%3D25%26startIndex%3D0%26sort%3Dyear%26dir%3Ddesc"><b>Scientific Publications using Mouse Models in Coronavirus Research</b></a></td>
