@@ -49,13 +49,14 @@ h2 {
    <img src="<!--#include file='include/mgihome_url.html'-->other/images/covidRtSm.png" alt="COVID-19" width="275"><img src="<!--#include file='include/mgihome_url.html'-->other/images/alertSm.png" alt="alert mouse" width="275">
    </div>
    </td></tr>
-   <tr><td><i>About this resource:</i> MGI is a knowledgebase of mouse models of human disease. To aid the research community in addressing the COVID-19 pandemic, we have have collected expertly curated information on mouse models and publications related to coronavirus research. This special collection will be updated weekly. 
+   <tr><td><i>About this resource:</i> MGI is a knowledgebase of mouse models of human disease. To aid the research community in addressing the COVID-19 pandemic, we have have collected expertly curated information on mouse models and publications related to coronavirus research. 
+   This special collection will be updated weekly.   <i>&ndash; Updated 4/6/2020</i>
    </td>
    </tr>
    <tr><td><h4>The COVID-19 Pandemic of 2020</h4>
-   <p>Coronavirus disease (COVID-19) is an infectious disease caused by a novel member of the coronavirus family of viruses. As of early April 2020, more than 1.2 million cases of COVID-19 have been documented in over 180 countries/regions worldwide<sup><a href="#ref1">1</a></sup>.</p>
+   <p>Coronavirus disease (COVID-19) is an infectious disease caused by a novel member of the coronavirus family of viruses. As of early April 2020, more than 1.3 million cases of COVID-19 have been documented in over 180 countries/regions worldwide<sup><a href="#ref1">1</a></sup>.</p>
    <p>The virus that causes COVID-19, severe acute respiratory syndrome coronavirus 2 (SARS-CoV-2), was likely transmitted to humans from an animal reservoir. The exact nature of this transmission is still under investigation<sup><a href="#ref2">2</a></sup>.</p>
-   <p>There is no vaccine or proven treatment for COVID-19 although there are many efforts underway<sup><a href="#ref3">3</a></sup>.</p>
+   <p>There is no vaccine or proven treatment for COVID-19 although there are many efforts underway to develop them<sup><a href="#ref3">3</a></sup>.</p>
    <h4>Coronavirus Research in the Laboratory Mouse</h4>
    <p>The laboratory mouse is an important preclinical model for studying coronavirus biology and treatment approaches. The tables below summarize information about strains and genes relevant to the study of coronavirus in mouse. This information was obtained from the Mouse Genome Informatics (<a href="http://www.informatics.jax.org" target="_blank">MGI</a>) knowledgebase hosted at The Jackson Laboratory and from the International Mouse Strain Resource (<a href="http://www.findmice.org/index.jsp" target="_blank">IMSR</a>).</td>
    </tr> 
@@ -70,16 +71,17 @@ h2 {
    </tr>
     <tr><td>SARS-CoV</td><td><a href="<!--#include file='include/fewi_url.html'-->/strain/MGI:2161072" target="_blank">BALB/c</a></td><td><a href="http://www.findmice.org/summary?query=%22BALB%22&states=Any&_states=1&types=inbred+strain&_types=1&repositories=Any&_repositories=1&_mutations=on" target="_blank">BALB/c family mice</a></td><td><a href="<!--#include file='include/fewi_url.html'-->disease/DOID:0080599" target="_blank">Coronavirus infection</a> </td><td><a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC1082763/" target="_blank">Roberts et al. 2005</a></td><td>Replication of SARS-CoV was observed in lung and intestinal tissue in 12- 14 month old BALB/c mice inoculated intranasally. These animals displayed clinical signs of illness and pneumonia similar to humans. </td>
    </tr>
-    <tr><td>SARS-CoV</td><td><a href="<!--#include file='include/fewi_url.html'-->/strain/MGI:3028467" target="_blank">C57BL/6J</a></td><td><a href="http://www.findmice.org/summary?strainid=JAX:000664" target="_blank">JAX:000664</a></td><td><a href="<!--#include file='include/fewi_url.html'-->disease/DOID:0080599" target="_blank">Coronavirus infection</a> </td><td>&nbsp;</td><td>&nbsp;</td>
+    <tr><td>SARS-CoV</td><td><a href="<!--#include file='include/fewi_url.html'-->/strain/MGI:3028467" target="_blank">C57BL/6J</a></td><td><a href="http://www.findmice.org/summary?strainid=JAX:000664" target="_blank">JAX:000664</a></td><td><a href="<!--#include file='include/fewi_url.html'-->disease/DOID:0080599" target="_blank">Coronavirus infection</a> </td><td><a href="<!--#include file='include/fewi_url.html'-->reference/J:92752" target="_blank">Glass et al. 2004</a></td><td>Infected mice had a relative failure to thrive, gaining weight significantly more slowly than uninfected mice, but recover. C57BL/6J mice support transient nonfatal systemic infection with SARS-CoV in the lung and brain.</td>
    </tr>
     <tr><td>SARS-CoV</td><td>129</td><td>&nbsp;</td><td><a href="<!--#include file='include/fewi_url.html'-->disease/DOID:0080599" target="_blank">Coronavirus infection</a> </td><td>&nbsp;</td><td>&nbsp;</td>
    </tr>
-    <tr><td>MERS-CoV</td><td>C57BL/6 * C57BL/6NTac</td><td>&nbsp;</td><td><a href="<!--#include file='include/fewi_url.html'-->disease/DOID:0080599" target="_blank">Coronavirus infection</a> </td><td><a href="<!--#include file='include/fewi_url.html'-->reference/J:242025" target="_blank">Li et al. 2017</a></td><td>Mice with a humanized Dpp4 gene were inoculated with MERS-CoV. After 30 passages a mouse adapted virus (MERSMA) emerged.</td>
+     <tr><td>MERS-CoV</td><td><a href="<!--#include file='include/fewi_url.html'-->accession/MGI:6400999" target="_blank">Dpp4<sup>tm1.1(DPP4)Pbmj</sup></a><br>on a mixed inbred strain background including C57BL/6 and C57BL/6NTac</td><td>&nbsp;</td><td><a href="<!--#include file='include/fewi_url.html'-->disease/DOID:0080599" target="_blank">Coronavirus infection</a> </td><td><a href="<!--#include file='include/fewi_url.html'-->reference/J:242025" target="_blank">Li et al. 2017</a></td><td>Mice with a humanized Dpp4 gene were inoculated with MERS-CoV. Exons 10-12 (from codon I264 in exon 10 to codon V340 in exon 12) of the mouse were replaced with the corresponding human exons of 10-12 which comprise the critical Middle East respiratory syndrome coronavirus (MERS-CoV) receptor.After 30 passages, a mouse adapted virus (MERSMA) emerged. </td>
    </tr>
     <tr><td>MERS-CoV <br>MERS-15</td><td><a href="<!--#include file='include/fewi_url.html'-->/strain/MGI:6400424" target="_blank">C57BL/6J-Dpp4<sup>em1Rba</sup></a></td><td>&nbsp;</td><td><a href="<!--#include file='include/fewi_url.html'-->disease/DOID:0080599" target="_blank">Coronavirus infection</a> </td><td><a href="<!--#include file='include/fewi_url.html'-->reference/J:279834" target="_blank">Cockrell et al. 2016</a></td><td>Genome editing was used to humanize the mouse Dpp4 (dipeptidyl peptidase 4 receptor) gene so match the human gene and make mice susceptible to MERS-CoV infection and replication. A mouse adapted MERS-CoV strain (MERS-15) induced severe acute respiratory like disease in infected animals.</td>
    </tr>
-    <tr><td>MERS-CoV</td><td><a href="<!--#include file='include/fewi_url.html'-->/strain/MGI:5657230" target="_blank">(129S6/SvEvTac x C57BL/6NTac)F1</a>
-</td><td>&nbsp;</td><td><a href="<!--#include file='include/fewi_url.html'-->disease/DOID:0080599" target="_blank">Coronavirus infection</a> </td><td><a href="<!--#include file='include/fewi_url.html'-->reference/J:223728" target="_blank">Pascal et al. 2015</a></td><td>This mouse model was developed using VelocImmune and VelociGene technologies to express components of the human immune system (antibody-variable heavy chains and kappa light chains) and is capable of developing human antibodies against MERS-CoV.</td>
+    <tr><td>MERS-CoV</td><td><a href="<!--#include file='include/fewi_url.html'-->accession/MGI:5788094" target="_blank">Dpp4<sup>tm1(DPP4)Vlcg</sup></a><br>on a mixed inbred strain background including 129S6/SvEvTac and C57BL/6NTac</a>
+</td><td><a href="https://www.taconic.com/mouse-model/129s6" target="_blank">129S6/SvEvTac</a><br>
+<a href="https://www.taconic.com/mouse-model/black-6-b6ntac" target="_blank">C57BL/6NTac</a></td><td><a href="<!--#include file='include/fewi_url.html'-->disease/DOID:0080599" target="_blank">Coronavirus infection</a> </td><td><a href="<!--#include file='include/fewi_url.html'-->reference/J:223728" target="_blank">Pascal et al. 2015</a></td><td>This mouse model is comprised of an 82 kb human DPP4 genomic DNA from exons 2–26, including 3′UTR which replaced the 79-kb mouse Dpp4 counterpart sequence.</td>
    </tr>
    <tr><td><p>&nbsp;</p></td></tr>
    <table class="outline" width="100%">
@@ -99,9 +101,10 @@ h2 {
    <td></tr>
   <tr><td><a href="<!--#include file='include/fewi_url.html'-->reference/summary?author=&authorScope=any&journal=&year=&text=coronavirus&inTitle=true&_inTitle=on&inAbstract=true&_inAbstract=on&id=#myDataTable=results%3D25%26startIndex%3D0%26sort%3Dyear%26dir%3Ddesc"><b>Scientific Publications using Mouse Models in Coronavirus Research</b></a><br></td>
    </tr>
+    <tr><td><p>&nbsp;</p></td></tr>
    <tr><td><h4>Late Breaking Peer-Reviewed Research using Mice (not yet in MGI)</h4>
    <ul>
-   <li>An orally bioavailable broad-spectrum antiviral inhibits SARS-CoV-2 in human airway epithelial cell cultures and multiple coronaviruses in mice. <a href="https://stm.sciencemag.org/content/early/2020/04/03/scitranslmed.abb5883" target="_blank">Science Translational Medicine. Apr 6, 2020</a>.</li>
+   <li>"An orally bioavailable broad-spectrum antiviral inhibits SARS-CoV-2 in human airway epithelial cell cultures and multiple coronaviruses in mice" <a href="https://stm.sciencemag.org/content/early/2020/04/03/scitranslmed.abb5883" target="_blank">Science Translational Medicine. Apr 6, 2020</a>.</li>
    </ul>
    </td></tr>
    <tr><td><h4>About SARS-CoV-2</h4>
