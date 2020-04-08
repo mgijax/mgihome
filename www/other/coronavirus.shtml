@@ -82,7 +82,10 @@ h2 {
    <br><br>All <a href="<!--#include file='include/fewi_url.html'-->reference/summary?author=&authorScope=any&journal=&year=&text=coronavirus%0D%0A&inTitle=true&_inTitle=on&inAbstract=true&_inAbstract=on&id=" target="_blank"><i>Curated scientific publications using models and coronavirus in MGI</i></a></td></tr></p></td>
    </tr>
    </table>
+   
+<!--begin mouse table-->
    <table class="table table-bordered" width="100%">
+   <tr><b>Table 1: Mouse Strains Used To Study Sars And Mers Coronaviruses</b></tr>
    <tr style= "background-color: #DFEFFF; font-size: 1.1em;"><th>Coronavirus&nbsp;&nbsp;</th><th><span style="white-space: nowrap">Mouse Strain Name&nbsp;&nbsp;</span></th><th><span style="white-space: nowrap">Mouse Strain Availability<span></th><th><span style="white-space: nowrap">Study Type&nbsp;&nbsp;</span></th><th>Reference(s)&nbsp;&nbsp;</th><th>Summary</th></tr>
    <tr><td><span style="white-space: nowrap">SARS-CoV-2</span></td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>Research to develop and use mouse models in the study of SARS-CoV-2 are ramping up. Many research reports are appearing in scientific preprint archives such as <a href="https://connect.biorxiv.org/relate/content/181" target="_blank">bioRxiv</a>. <i>As preprints are not peer-reviewed and represent initial, unvalidated findings, we are not including information from preprints in the MGI database.</i></td>
    </tr>
@@ -108,7 +111,11 @@ h2 {
     <table width="100%">
    <tr><td><sup>*</sup>This model is being expanded as a possible model for the study of SARS-CoV-2</td></tr>
    </table>
-   <table class="table table-bordered" width="100%">
+<!--end mouse table-->
+   
+<!--begin human table-->
+  <table class="table table-bordered" width="100%">
+   <tr><b>Table 2: Genes Associated With Coronavirus Infection And Pathology</b></tr>
    <tr style= "background-color: #DFEFFF; font-size: 1.1em;"><th><span style="white-space: nowrap">Human Gene</span></th><th><span style="white-space: nowrap">Mouse Ortholog&nbsp;&nbsp;</span></th><th>Comments</th><th>References</th></tr>
    <tr><td>ACE2 <br>angiotensin I converting enzyme (peptidyl-dipeptidase A) 2</td><td><a href="<!--#include file='include/fewi_url.html'-->marker/MGI:1917258" target="_blank">Ace2</a></td><td>ACE2 encodes the receptor that SARS viruses use to infect a cell (Li et al., 2003, Hoffmann et al., 2020). The mouse version of the ACE2 receptor doesn’t bind SARS-CoV as efficiently as the human form. To make the mouse more useful as a model for productive SARS coronavirus infection, several groups have generated transgenic animals that express the human ACE2 gene. 
    These transgenic mice are good models for SARS-CoV infection (the virus responsible for the 2002-2003 SARS pandemic), and may also prove effective as models for COVID-19 disease, due to the genetic similarity between SARS-CoV and SARS-CoV-2 (the virus responsible for the COVID-19 pandemic).</td><td><a href="https://www.nature.com/articles/nature02145" target="_blank">Li et al. 2003</a><br>
@@ -125,6 +132,7 @@ h2 {
    <tr><td>&nbsp;</td><td><a href="<!--#include file='include/fewi_url.html'-->marker/MGI:3036269" target="_blank">Trim55</a><br><br>tripartite motif-containing 55</td><td>Genetic mapping using Collaborative Cross mice revealed <i>Trim55</i> as a gene contributing to lung pathology (inflammation and vascular cuffing) in SARS-CoV infected mice. It is not known if human TRIM55 also contributes to these pulmonary phenotypes following infection with SARS-CoV.</td><td><a href="<!--#include file='include/fewi_url.html'-->reference/J:268979" target="_blank">Gralinsky et al. 2015</a></td>
 <tr><td>&nbsp;</td><td><a href="<!--#include file='include/fewi_url.html'-->marker/MGI:3036269" target="_blank">Ticam2</a><br><br>toll-like receptor <span style="white-space: nowrap">adaptor molecule 2</span></td><td><i>Ticam2</i> is an innate immune system modulatory gene. Using two strains of Collaborative Cross mice Gralinsky et al. demonstrated that mice with a loss of <i>Ticam2</i> were highly susceptible to SARS-CoV infection and demonstrated increased weight loss and pulmonary hemorrhage compared to control mice. It is not known if variation in human TICAM2 contributes to susceptibility to SARS-CoV disease response. </td><td><a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5473747/" target="_blank">Gralinsky et al. 2017</a></td>
    </table>
+<!--end human table-->
    <table class="outline" width="100%">
    <!--<tr><td><a href="<!--#include file='include/fewi_url.html'-->disease/DOID:0080599"  target="_blank"><b>Mouse Models for Coronavirus Research</b></a>
    <td></tr>-->
