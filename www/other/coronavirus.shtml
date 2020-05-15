@@ -13,6 +13,9 @@
 h2 {
   text-align: center;
 }
+div.a {
+  text-indent: 40px;
+}
 </style>
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
@@ -49,7 +52,7 @@ h2 {
    <img src="<!--#include file='include/mgihome_url.html'-->other/images/covidRtSm.png" alt="COVID-19" width="275"><img src="<!--#include file='include/mgihome_url.html'-->other/images/alertSm.png" alt="alert mouse" width="275">
    </div>
    </td></tr>
-   <tr><td><i>About this resource:</i> MGI is a knowledgebase of mouse models of human disease. To aid the research community in addressing the COVID-19 pandemic, we have have collected expertly curated information on mouse models and publications related to coronavirus research. 
+   <tr><td><i>About this resource:</i> MGI is a knowledgebase of mouse models of human disease. To aid the research community in addressing the COVID-19 pandemic, we have collected expertly curated information on <b>publications</b>, <b>mouse models</b> and both <b>human and mouse genes</b> relevant to coronavirus research. 
    This special collection will be updated regularly.   <i>&ndash; Updated 5/12/2020</i>
    </td>
    </tr>
@@ -60,9 +63,9 @@ h2 {
    <div class="row">
   <div class="col-md-3">
   <div class="text-center">
-        <a href="<!--#include file='include/fewi_url.html'-->reference/summary?author=&authorScope=any&journal=&year=&text=coronavirus%0D%0A&inTitle=true&_inTitle=on&inAbstract=true&_inAbstract=on&id=#myDataTable=results%3D25%26startIndex%3D0%26sort%3Dyear%26dir%3Ddesc" target="_blank"><img src="/mgihome/other/images/PublicationsSm.png" alt="icon by Freepik" width="130px"></a>
+        <a href="<!--#include file='include/fewi_url.html'-->reference/summary?author=&authorScope=any&journal=&year=&text=coronavirus+OR+SARS&inTitle=true&_inTitle=on&inAbstract=true&_inAbstract=on&id=#myDataTable=results%3D25%26startIndex%3D0%26sort%3Dyear%26dir%3Ddesc" target="_blank"><img src="/mgihome/other/images/PublicationsSm.png" alt="icon by Freepik" width="130px"></a>
         <div class="caption center-block">
-         <a href="<!--#include file='include/fewi_url.html'-->reference/summary?author=&authorScope=any&journal=&year=&text=coronavirus%0D%0A&inTitle=true&_inTitle=on&inAbstract=true&_inAbstract=on&id=#myDataTable=results%3D25%26startIndex%3D0%26sort%3Dyear%26dir%3Ddesc" target="_blank">149</a>
+         <a href="<!--#include file='include/fewi_url.html'-->reference/summary?author=&authorScope=any&journal=&year=&text=coronavirus+OR+SARS&inTitle=true&_inTitle=on&inAbstract=true&_inAbstract=on&id=#myDataTable=results%3D25%26startIndex%3D0%26sort%3Dyear%26dir%3Ddesc" target="_blank">207</a>
         </div>
         </div>
     </div>
@@ -96,9 +99,17 @@ h2 {
 </table>
 <table class="outline" width="100%">
    <tr><td>
+   <div class="a">
+   <p><b>Table of Contents</b></p>
+   </div>
    <ul style="list-style-type:none;">
  <li><a href="#covid">The COVID-19 Pandemic of 2020</a></li>
- <li><a href="#research">Coronavirus Research in the Laboratory Mouse</a></li>
+ <li><a href="#research">Coronavirus Research in the Laboratory Mouse</a>
+   <ul>
+    <li><a href="#research">Table 1: Mouse Strains Used To Study Sars And Mers Coronaviruses</a></li>
+    <li><a href="#genes">Table 2: Table 2: Genes Associated With Coronavirus Infection And Pathology</a></li>
+    <li><a href="#preprints">Table 3: Mice In Coronavirus Research From Preprints</a></li>
+   </ul></li>
  <li><a href="#late">Late Breaking Peer-Reviewed Research Using Mice</a></li>
  <li><a href="#about">About SARS-CoV-2</a></li>
  <li><a href="#refs">References</a></li>
@@ -123,13 +134,13 @@ h2 {
    <h4><a id="research"></a>Coronavirus Research in the Laboratory Mouse</h4>
    <p>The laboratory mouse is an important preclinical model for studying coronavirus biology and treatment approaches. The tables below summarize information about strains and genes relevant to the study of coronavirus in mouse. This information was obtained from the Mouse Genome Informatics (<a href="http://www.informatics.jax.org" target="_blank">MGI</a>) knowledgebase hosted at The Jackson Laboratory and from the International Mouse Strain Resource (<a href="http://www.findmice.org/index.jsp" target="_blank">IMSR</a>). 
    <br><br>MGI’s biocuration scientists are monitoring the peer-reviewed scientific literature for new reports and will update the MGI database weekly. <b>You can help this effort by notifying MGI’s  <a href="<!--#include file='include/mgihome_url.html'-->support/mgi_inbox.shtml" title="Contact user support">Help Desk</a> about references in the peer-reviewed literature about the use of the mouse in coronavirus research that are missing from our database.</b>
-   <br><br><span style="font-size: 1.2em;">See all <a href="<!--#include file='include/fewi_url.html'-->reference/summary?author=&authorScope=any&journal=&year=&text=coronavirus%0D%0A&inTitle=true&_inTitle=on&inAbstract=true&_inAbstract=on&id=#myDataTable=results%3D25%26startIndex%3D0%26sort%3Dyear%26dir%3Ddesc" target="_blank"><i>curated scientific publications that report on mouse models for coronavirus research in MGI</i></a></span></td></tr></p></td>
+   <br><br><span style="font-size: 1.2em;">See all <a href="<!--#include file='include/fewi_url.html'-->reference/summary?author=&authorScope=any&journal=&year=&text=coronavirus+OR+SARS&inTitle=true&_inTitle=on&inAbstract=true&_inAbstract=on&id=#myDataTable=results%3D25%26startIndex%3D0%26sort%3Dyear%26dir%3Ddesc" target="_blank"><i>curated scientific publications that report on mouse models for coronavirus research in MGI</i></a></span></td></tr></p></td>
    </tr>
    </table>
    
 <!--begin mouse table-->
    <table class="table table-bordered" width="100%">
-   <tr><br><h5>TABLE 1: MOUSE STRAINS USED TO STUDY SARS AND MERS CORONAVIRUSES</h5></tr>
+   <tr><td colspan="6"><h5>TABLE 1: MOUSE STRAINS USED TO STUDY SARS AND MERS CORONAVIRUSES</h5></td></tr>
    <tr style= "background-color: #DFEFFF; font-size: 1.1em;"><th>Coronavirus Investigated</th><th><span style="white-space: nowrap">Mouse Strain Name&nbsp;&nbsp;</span></th><th><span style="white-space: nowrap">Mouse Strain Availability<span></th><th><span style="white-space: nowrap">Study Type&nbsp;&nbsp;</span></th><th>Reference(s)&nbsp;&nbsp;</th><th>Summary</th></tr>
    <tr><td><span style="white-space: nowrap">SARS-CoV-2</span><td><a href="<!--#include file='include/fewi_url.html'-->strain/MGI:6401293" target="_blank">ICR-Tg(Ace2-ACE2)1Cqin/J</a> on an ICR background</td><td>No repository listing</td><td> <a href="<!--#include file='include/fewi_url.html'-->disease/DOID:0080600" target="_blank">COVID-19</a><br><br><a href="<!--#include file='include/fewi_url.html'-->disease/DOID:0080599" target="_blank">Coronavirus infection</a></td><td><a href="https://doi.org/10.1038/s41586-020-2312-y" target="_blank">Bao et al. 2020</a></td><td>A transgenic mouse strain that expresses the human gene for angiotensin-converting enzyme 2 (hACE2) (the cellular receptor of SARS-CoV and SARS-CoV-2), driven by the mouse <a href="<!--#include file='include/fewi_url.html'-->marker/MGI:1917258" target="_blank"><i>Ace2</i></a> promoter. Transgenic mice infected with SARS-CoV-2 exhibit weight loss and virus replication in lung; these mice develop interstitial pneumonia similar to human COVID-19 patients.</td>
    </tr>
@@ -174,7 +185,7 @@ on a mixed inbred strain background including 129S6/SvEvTac and C57BL/6NTac
    
 <!--begin human table-->
   <table class="table table-bordered" width="100%">
-   <tr><a id="genes"></a><br><h5><a id="human"></a>TABLE 2: GENES ASSOCIATED WITH CORONAVIRUS INFECTION AND PATHOLOGY</h5></tr>
+   <tr><td colspan="4"><a id="genes"></a><h5><a id="human"></a>TABLE 2: GENES ASSOCIATED WITH CORONAVIRUS INFECTION AND PATHOLOGY</h5></td></tr>
    <tr style= "background-color: #DFEFFF; font-size: 1.1em;"><th><span style="white-space: nowrap">Human Gene</span></th><th><span style="white-space: nowrap">Mouse Gene&nbsp;&nbsp;</span></th><th>Comments</th><th>References</th></tr>
    <tr><td><i>ACE2</i> <br>angiotensin I converting enzyme (peptidyl-dipeptidase A) 2</td><td><a href="<!--#include file='include/fewi_url.html'-->marker/MGI:1917258" target="_blank"><i>Ace2</i></a></td><td><i>ACE2</i> encodes the receptor that SARS viruses use to infect a cell (Li et al., 2003, Hoffmann et al., 2020). The mouse version of the <i>ACE2</i> receptor doesn’t bind SARS-CoV as efficiently as the human form. To make the mouse more useful as a model for productive SARS coronavirus infection, several groups have generated transgenic animals that express the human <i>ACE2</i> gene. 
    These transgenic mice are good models for SARS-CoV infection (the virus responsible for the 2002-2003 SARS pandemic), and may also prove effective as models for COVID-19 disease, due to the genetic similarity between SARS-CoV and SARS-CoV-2 (the virus responsible for the COVID-19 pandemic).</td><td><a href="https://www.nature.com/articles/nature02145" target="_blank">Li et al. 2003</a><br>
@@ -197,27 +208,28 @@ on a mixed inbred strain background including 129S6/SvEvTac and C57BL/6NTac
 
 <!--begin BioRxiv table-->
    <table class="table table-bordered" width="100%">
-   <tr><a id="preprints"></a><br><h5>TABLE 3: MICE IN CORONAVIRUS RESEARCH FROM BIORXIV PREPRINTS</h5></tr>
-   <tr style= "background-color: #DFEFFF; font-size: 1.1em;"><th>Coronavirus&nbsp;&nbsp;</th><th><span style="white-space: nowrap">Mouse Strain Name&nbsp;&nbsp;</span></th><th><span style="white-space: nowrap">Mouse Strain Availability</span></th><th><span style="white-space: nowrap">Study Type&nbsp;&nbsp;</span></th><th>Reference&nbsp;&nbsp;</th><th>Summary</th></tr>
-    <tr><td>SARS-CoV</td><td>Muc4<sup>tm1Unc</sup> on a C57BL/6NTac genetic background</td><td>Scott Randell of the University of North Carolina at Chapel Hill<br> <a href="<!--#include file='include/fewi_url.html'-->reference/J:254258" target="_blank">Rowson-Hode et al. 2018</a></td><td><a href="<!--#include file='include/fewi_url.html'-->disease/DOID:0080599" target="_blank">Coronavirus infection</a> <br><br><a href="<!--#include file='include/fewi_url.html'-->disease/DOID:2945" target="_blank">Severe acute respiratory syndrome</a></td><td><a href="https://doi.org/10.1101/2020.02.19.957118" target="_blank">Plante et al.</a></td><td>In this study investigators followed up on a previously mapped QTL in Collaborative Cross mice to identify genes associated with low SARS-CoV viral titer.<br><br>
+   <tr><td colspan="6"><a id="preprints"></a><h5>TABLE 3: MICE IN CORONAVIRUS RESEARCH FROM PREPRINTS</h5></td></tr>
+  <tr><td colspan="6">Research from preprints are not peer reviewed. The reported findings have not been validated.</td></tr>
+   <tr style= "background-color: #DFEFFF; font-size: 1.1em;"><th>Coronavirus&nbsp;&nbsp;</th><th><span style="white-space: nowrap">Mouse Strain Name&nbsp;&nbsp;</span></th><th><span style="white-space: nowrap">Reported Mouse Strain Source</span></th><th><span style="white-space: nowrap">Study Type&nbsp;&nbsp;</span></th><th>Reference&nbsp;&nbsp;</th><th>Summary</th></tr>
+    <tr><td>SARS-CoV</td><td>Muc4<sup>tm1Unc</sup> on a C57BL/6NTac genetic background</td><td>Scott Randell of the University of North Carolina at Chapel Hill<br> <a href="<!--#include file='include/fewi_url.html'-->reference/J:254258" target="_blank">Rowson-Hode et al. 2018</a></td><td>Coronavirus infection <br><br>Severe acute respiratory syndrome</td><td><a href="https://doi.org/10.1101/2020.02.19.957118" target="_blank">Plante et al.</a></td><td>In this study investigators followed up on a previously mapped QTL in Collaborative Cross mice to identify genes associated with low SARS-CoV viral titer.<br><br>
 By evaluating gene expression of genes in the previously identified QTL region in founder strains of  CC mice, mucin 4 (<a href="<!--#include file='include/fewi_url.html'-->marker/MGI:2153525" target="_blank"><i>Muc4</i></a>) emerged as a candidate gene to explain differences in viral titer.
 <br><br>The  loss of <i>Muc4</i> gene function did not result in significant differences in viral load or distribution in male and female Muc4-/- mice. Female Muc4-/- mice did, however, show significant weight loss compared to mutant male mice. The investigators conclude that <i>Muc4</i> does not play a role in the replication of SARS-CoV virus but does play some role in attenuating the pathology associated with viral infection in mice.</td>
    </tr>
    <tr><td>SARS-CoV</td><td>NSG mice; male and female > 6 weeks old</td><td>
-Cleveland Clinic Biological Resources Unit</td><td><a href="<!--#include file='include/fewi_url.html'-->disease/DOID:0080599" target="_blank">Coronavirus infection</a> <br><br><a href="<!--#include file='include/fewi_url.html'-->disease/DOID:2945" target="_blank">Severe acute respiratory syndrome</a></td><td><a href="https://doi.org/10.1101/2020.04.21.051201" target="_blank">Baratchian et al.</a></td><td>Male NSG mice, treated with the androgen receptor antagonist enzalutamide did not decrease pulmonary TMPRSS2 expression.<br><br>The study finds no evidence for androgen regulation of TMPRSS2 in the male lung and concludes that TMPRSS2 regulation does not account for sex differences in clinical outomes of COVID-19 patients. Therefore, TMPRSS2 regulation in the lung appears to fundamentally differ from a clear androgen-dependent effect in prostatic tissues. Pulmonary TMPRSS2 regulation does not appear to account for the sex bias in COVID-19 clinical outcomes.</td>
+Cleveland Clinic Biological Resources Unit</td><td>Coronavirus infection <br><br>Severe acute respiratory syndrome</td><td><a href="https://doi.org/10.1101/2020.04.21.051201" target="_blank">Baratchian et al.</a></td><td>Male NSG mice, treated with the androgen receptor antagonist enzalutamide did not decrease pulmonary TMPRSS2 expression.<br><br>The study finds no evidence for androgen regulation of TMPRSS2 in the male lung and concludes that TMPRSS2 regulation does not account for sex differences in clinical outomes of COVID-19 patients. Therefore, TMPRSS2 regulation in the lung appears to fundamentally differ from a clear androgen-dependent effect in prostatic tissues. Pulmonary TMPRSS2 regulation does not appear to account for the sex bias in COVID-19 clinical outcomes.</td>
    </tr>
    <tr><td>SARS-CoV-2</td><td><a href="<!--#include file='include/fewi_url.html'-->strain/MGI:2161072" target="_blank">BALB/c</a></td><td>
-Source not identified</td><td><a href="<!--#include file='include/fewi_url.html'-->disease/DOID:0080599" target="_blank">Coronavirus infection</a> <br><br><a href="<!--#include file='include/fewi_url.html'-->disease/DOID:2945" target="_blank">Severe acute respiratory syndrome</a></td><td><a href="https://doi.org/10.1101/2020.04.17.046375" target="_blank">Gao et al.</a></td><td>An inactivated virus vaccine (PiCoVacc) generated neutralizing antibodies in BALB/c mice, Wistar rats, and macaques that were specific to SARS-CoV-2. The neutralizing antibodies worked against 10 SARS-CoV-2 strains. Antibody-dependent enhancement (ADE) of infection was not observed but cannot be ruled out.
+Source not identified</td><td>Coronavirus infection <br><br>Severe acute respiratory syndrome</td><td><a href="https://doi.org/10.1101/2020.04.17.046375" target="_blank">Gao et al.</a></td><td>An inactivated virus vaccine (PiCoVacc) generated neutralizing antibodies in BALB/c mice, Wistar rats, and macaques that were specific to SARS-CoV-2. The neutralizing antibodies worked against 10 SARS-CoV-2 strains. Antibody-dependent enhancement (ADE) of infection was not observed but cannot be ruled out.
 </td>
    </tr>
    <tr><td>SARS-CoV-2</td><td>Mouse strain not specified</td><td>
-Source not identified</td><td><a href="<!--#include file='include/fewi_url.html'-->disease/DOID:0080599" target="_blank">Coronavirus infection</a> <br><br><a href="<!--#include file='include/fewi_url.html'-->disease/DOID:2945" target="_blank">Severe acute respiratory syndrome</a></td><td><a href="https://doi.org/10.1101/2020.04.01.019877" target="_blank">Zeng et al.</a></td><td>De novo designed untranslated regions (UTRs) of mRNAs (NASAR mRNAs) delivered via lipid-derived nanoparticles were shown to significantly increase expression of potential SARS-CoV-2 antigens both in vitro and in vivo. NASAR mRNAs show promise for further evaluation as vaccines against SARS-CoV-2.</td>
+Source not identified</td><td>Coronavirus infection <br><br>Severe acute respiratory syndrome</td><td><a href="https://doi.org/10.1101/2020.04.01.019877" target="_blank">Zeng et al.</a></td><td>De novo designed untranslated regions (UTRs) of mRNAs (NASAR mRNAs) delivered via lipid-derived nanoparticles were shown to significantly increase expression of potential SARS-CoV-2 antigens both in vitro and in vivo. NASAR mRNAs show promise for further evaluation as vaccines against SARS-CoV-2.</td>
    </tr>
-   <tr><td>SARS-CoV-2</td><td><a href="<!--#include file='include/fewi_url.html'-->strain/MGI:2161082" target="_blank">BALB/cAnNHsd</a></td><td><a href="https://www.envigo.com/p/research-models/search/" target="_blank">Envigo</a></td><td><a href="<!--#include file='include/fewi_url.html'-->disease/DOID:0080599" target="_blank">Coronavirus infection</a> <br><br><a href="<!--#include file='include/fewi_url.html'-->disease/DOID:2945" target="_blank">Severe acute respiratory syndrome</a></td><td><a href="https://doi.org/10.1101/2020.05.06.081497" target="_blank">Dinnon III et al.</a></td><td>The SARS-CoV-2 receptor binding domain of SARS-CoV-2 was altered to create a recombinant virus (SARS-CoV-2 MA) that is capable of using the mouse Ace2 receptor for infection. The mouse adapted virus replicated in 10 week and 1 year old BALB/c mice.<br><br>
+   <tr><td>SARS-CoV-2</td><td><a href="<!--#include file='include/fewi_url.html'-->strain/MGI:2161082" target="_blank">BALB/cAnNHsd</a></td><td><a href="https://www.envigo.com/p/research-models/search/" target="_blank">Envigo</a></td><td>Coronavirus infection <br><br>Severe acute respiratory syndrome</td><td><a href="https://doi.org/10.1101/2020.05.06.081497" target="_blank">Dinnon III et al.</a></td><td>The SARS-CoV-2 receptor binding domain of SARS-CoV-2 was altered to create a recombinant virus (SARS-CoV-2 MA) that is capable of using the mouse Ace2 receptor for infection. The mouse adapted virus replicated in 10 week and 1 year old BALB/c mice.<br><br>
 Similar to observations in humans, pulmonary disease was more severe in older mice compared to young mice.<br><br>
 10 week old BALB/c mice vaccinated with an Venezuelan equine encephalitis virus replicon particle (VRP) system against the SARS-CoV-2 spike protein effectively neutralized the virus.<br><br>
 Treatment of SARS-CoV-2 MA infected mice with pegylated interferon (IFN)lambda 1a diminished the replication of the virus in mice.</td>
-   </tr>   
+   </tr> 
 </table>
     <table width="100%">
    <tr><td>Research published in BioRxiv is not peer reviewed. The reported findings have not been validated.<br></td></tr>
@@ -231,7 +243,6 @@ Treatment of SARS-CoV-2 MA infected mice with pegylated interferon (IFN)lambda 1
    <tr><td>
    <table class="table table-bordered" width="100%">
    <tr style= "background-color: #DFEFFF; font-size: 1.1em;"><th>Article</th><th>Summary</th><th><span style="white-space: nowrap">Mice Used</span></th></tr>
-   <tr><td>"An orally bioavailable broad-spectrum antiviral inhibits SARS-CoV-2 in human airway epithelial cell cultures and multiple coronaviruses in mice." <br><br><a href="https://stm.sciencemag.org/content/early/2020/04/03/scitranslmed.abb5883" target="_blank">Science Translational Medicine. April 6, 2020</a></td><td>In mice infected with SARS-CoV or MERS-CoV, both prophylactic and therapeutic administration of EIDD-2801, an orally bioavailable NHC-prodrug (&Beta;-D-N<sup>4</sup>-hydroxycytidine-5'-isopropyl ester), improved pulmonary function, and reduced virus titer and body weight loss.</td><td> <a href="<!--#include file='include/fewi_url.html'-->strain/MGI:6400424" target="_blank">C57BL/6J-Dpp4<sup>em1Rba</sup></a> and 25-29 week old male and female C57BL/6J</td></tr>
    <tr><td>"Single-dose intranasal immunization with recombinant parainfluenza virus 5 expressing Middle East Respiratory Syndrome Coronavirus (MERS-CoV) spike protein protects mice from fatal MERS-CoV infection" <br><br><a href="https://mbio.asm.org/content/11/2/e00554-20" target="_blank">mBio. April 7, 2020</a></td><td>In this study we evaluated a parainfluenza virus 5 (PIV5)-based vaccine expressing the MERS-CoV envelope spike protein (PIV5/MERS-S) in a human DPP4 knockin C57BL/6 congenic mouse model (hDPP4KI). Following a single-dose intranasal immunization, PIV5-MERS-S induced neutralizing antibody and robust T cell responses in hDPP4KI mice.</td><td>DPP4 knockin mice (<a href="<!--#include file='include/fewi_url.html'-->accession/MGI:6400999" target="_blank">Dpp4<sup>tm1.1(DPP4)Pbmj</sup></a>) on a C57BL/6J background</td></tr>
 </table></td>
 </tr>
