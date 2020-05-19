@@ -98,7 +98,7 @@ def getJsonResults(fewiPath, field, value):
 
         url = '%s%s?%s=%s' % (config['FEWI_URL'], fewiPath, field, urllib.parse.quote(value))
         f = urllib.request.urlopen(url)
-        s = f.read()
+        s = f.read().decode()
         f.close()
 
         try:

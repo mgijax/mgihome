@@ -1307,7 +1307,9 @@ def getInputObj (
         inp = SimpleTextUserInput (parms)
         
         if 'accID' in parms:
+                sys.stderr.write('looking for object with ID %s\n' % parms['accID'])
                 result = homelib.getObjectTypes(parms['accID'])
+                sys.stderr.write('found %d matching objects' % len(result))
                 
                 for mgiType in result:
                         if mgiType in ALLOWED_TYPES:
@@ -1316,20 +1318,25 @@ def getInputObj (
                                 # special subclass is defined)
         
                                 if mgiType == MARKER_TYPE:
+                                        sys.stderr.write('found a marker')
                                         inp = MarkerUserInput (parms)
         
                                 elif mgiType == ALLELE_TYPE:
+                                        sys.stderr.write('found an allele')
                                         inp = AlleleUserInput (parms)
         
                                 elif mgiType == ASSAY_TYPE:
+                                        sys.stderr.write('found an assay')
                                         inp = AssayUserInput (parms)
         
                                 elif mgiType == STRAIN_TYPE:
+                                        sys.stderr.write('found a strain')
                                         inp = StrainUserInput (parms)
         
                                 # add handling here for other MGI Types as needed...
         
                                 else:
+                                        sys.stderr.write('found type %d' % mgiType)
                                         inp = SimpleTextUserInput (parms)
 
         return inp
