@@ -4,7 +4,6 @@
 #       and mailing the submission contents to a specified e-mail address.
 
 import types            # standard Python modules
-import string
 
 import CGI              # MGI-written Python modules
 import Configuration
@@ -48,7 +47,7 @@ def handleError (
         error_template.setHeaderBarMainText('%s Submission Error' % title)
         error_template.setBody(message)
         
-        print error_template.getFullDocument()
+        print(error_template.getFullDocument())
         
         return
 
@@ -108,7 +107,7 @@ class formMailer (CGI.CGI):
                 # if the user didn't give us a set of labels, then we use the
                 # fieldnames submitted to compose a set
                 if not self.labels:
-                        fields = self.parms.keys()
+                        fields = list(self.parms.keys())
                         for field in fields:
                                 self.labels[field] = field
                 return
@@ -153,7 +152,7 @@ class formMailer (CGI.CGI):
                 return
         
         def setFooter(self, value):
-        	self.REPLY_FOOTER = value
+                self.REPLY_FOOTER = value
 
         def main(self):
                 # Purpose: main processing loop.  check the parameters for
@@ -184,11 +183,11 @@ class formMailer (CGI.CGI):
                 # look for any missing fields:  (bail out if any found)
                 missing_fields = []
                 for field in self.required_fields:
-                        if not self.parms.has_key (field):
+                        if field not in self.parms:
                                 missing_fields.append (self.labels[field])
                 if missing_fields:
                         handleError (MISSING_FIELDS % \
-                                string.join (missing_fields, ', '),
+                                '\n '.join (missing_fields),
                                 self.form_name
                                 )
                         return
@@ -203,7 +202,7 @@ class formMailer (CGI.CGI):
                         for (field, error) in failed_checks:
                                 list.append ('<DT>%s<DD>%s' % \
                                         (self.labels[field], error))
-                        handleError (FAILED_CHECKS % string.join (list, '\n'),
+                        handleError (FAILED_CHECKS % '\n'.join (list),
                                 self.form_name
                                 )
                         return
@@ -234,9 +233,9 @@ class formMailer (CGI.CGI):
                             '-' * len(heading),
                             ]
                         for field in fieldlist:
-                            if self.parms.has_key(field):
+                            if field in self.parms:
                                 section.append(self.labels[field])
-                                if type(self.parms[field]) == types.ListType:
+                                if type(self.parms[field]) == list:
                                     for item in self.parms[field]:
                                         section.append('\t%s' % item)
                                 else:
@@ -249,7 +248,7 @@ class formMailer (CGI.CGI):
                 else:
                 
                     # no sections - just alphabetize the fields by label
-                    fields = self.parms.keys()
+                    fields = list(self.parms.keys())
                     list = []
                     for field in fields:
                         list.append ((self.labels[field], field))
@@ -257,14 +256,14 @@ class formMailer (CGI.CGI):
 
                     for (label, field) in list:
                         message.append (self.labels[field])
-                        if type(self.parms[field]) == types.ListType:
+                        if type(self.parms[field]) == list:
                             for item in self.parms[field]:
                                 message.append('\t%s' % item)
                         else:
                             message.append ('\t%s' % self.parms[field])
 
                 # compile the list of strings into a single string to e-mail
-                message = string.join (message, '\n')
+                message = '\n'.join (message)
                 
                 reply_message = (REPLY_HEADER % (self.form_name) + message +
                         self.REPLY_FOOTER % (self.curator_address))
@@ -292,12 +291,12 @@ class formMailer (CGI.CGI):
                     page_template.setHeaderBarMainText('%s Submission Sent' % self.form_name)
                     page_template.setBody(MESSAGE_SENT % (
                             mgi_html.escape(message)))
-                    print page_template.getFullDocument()
+                    print(page_template.getFullDocument())
                 else:
                     page_template.setTitle('Request Not Sent')
                     page_template.setHeaderBarMainText('%s Submission Not Sent' % self.form_name)
                     page_template.setBody(MESSAGE_FAILED)
-                    print page_template.getFullDocument()
+                    print(page_template.getFullDocument())
 
                 return
 
