@@ -23,7 +23,7 @@ import Configuration
 config = Configuration.get_Configuration ('Configuration', 1)
 
 import feedbacklib
-import runCommand
+import subprocess
 import template
 import homelib
 
@@ -32,7 +32,7 @@ import homelib
 ###------------------------###
 
 # standard exception raised within this script
-error = 'Exception'
+error = Exception
 
 # email address to receive notice of completed submission
 SUBMISSIONS = 'mgi-submissions@jax.org'
@@ -223,6 +223,12 @@ def log (
 
         sys.stderr.write ('recombinase_submission.cgi : %s\n' % message)
         return
+
+def runCommand(cmd):
+        # replacement for runCommand.runCommand, as the library has been removed
+
+        (exitCode, output) = subprocess.getstatusoutput(cmd)
+        return (exitCode, output)
 
 def label (
         fieldname,      # string; internal fieldname for a Field object
@@ -1149,7 +1155,7 @@ def writeFile (
                 fp = open (filename, 'w')
                 pickle.dump (dict, fp, 0)
                 fp.close()
-                runCommand.runCommand ('chmod 664 %s' % filename)
+                runCommand ('chmod 664 %s' % filename)
         except:
                 log ('failed to write cache file %s' % filename)
         return
@@ -1293,9 +1299,9 @@ def updateFields (
 
         for i in range(1,11):
                 key = 'file' + str(i)
-                if key in parms and parms[key].value != '':
+                if key in parms and parms[key].value.decode().strip() != '':
                         filename = parms[key].filename
-                        contents = parms[key].value
+                        contents = parms[key].value.decode()
 
                         UPLOADED_FILES.append ( {
                                 'filename' : filename,
@@ -1408,7 +1414,7 @@ def doExtraValidation():
         
         copyright = getField('isCopyrighted')
                 
-        if file1 != '' and file1.value != '' and copyright.getValue() == '':
+        if file1 != '' and file1.value.decode() != '' and copyright.getValue() == '':
                 ERRANT_FIELDS['isCopyrighted'] = True
                 errors.append ('You must answer the copyright question when submitting a file.')
 
@@ -1632,21 +1638,20 @@ def createDirectory():
 
         # Create the year sub-directory if it doesn't exist.
         if not os.path.exists(subDirYear):
-                runCommand.runCommand ('mkdir -p %s' % subDirYear)
-                runCommand.runCommand ('chmod 770 %s' % subDirYear)
+                runCommand ('mkdir -p %s' % subDirYear)
+                runCommand ('chmod 770 %s' % subDirYear)
 
         # Create the month sub-directory if it doesn't exist.
         if not os.path.exists(subDirYearMonth):
-                runCommand.runCommand ('mkdir -p %s' % subDirYearMonth)
-                runCommand.runCommand ('chmod 770 %s' % subDirYearMonth)
+                runCommand ('mkdir -p %s' % subDirYearMonth)
+                runCommand ('chmod 770 %s' % subDirYearMonth)
 
         # Create the submission directory.
         try:
                 newDir = tempfile.mkdtemp(prefix = day + '_', dir = subDirYearMonth)
-                runCommand.runCommand ('chmod 770 %s' % os.path.join(newDir))
+                runCommand ('chmod 770 %s' % os.path.join(newDir))
         except:
                 raise error('Cannot create new directory using mkdtemp')
-
         return newDir
 
 def getFileData (
@@ -1692,7 +1697,7 @@ def saveFile (
                 fp.write(contents)
                 fp.flush()
                 fp.close()
-                runCommand.runCommand ('chmod 660 %s' % os.path.join(dir,
+                runCommand ('chmod 660 %s' % os.path.join(dir,
                         filename))
         except:
                 raise error('Failed to write file: %s' % os.path.join (
