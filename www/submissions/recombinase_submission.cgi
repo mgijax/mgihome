@@ -1639,17 +1639,17 @@ def createDirectory():
         # Create the year sub-directory if it doesn't exist.
         if not os.path.exists(subDirYear):
                 runCommand ('mkdir -p %s' % subDirYear)
-                runCommand ('chmod 770 %s' % subDirYear)
+                runCommand ('chmod 775 %s' % subDirYear)
 
         # Create the month sub-directory if it doesn't exist.
         if not os.path.exists(subDirYearMonth):
                 runCommand ('mkdir -p %s' % subDirYearMonth)
-                runCommand ('chmod 770 %s' % subDirYearMonth)
+                runCommand ('chmod 775 %s' % subDirYearMonth)
 
         # Create the submission directory.
         try:
                 newDir = tempfile.mkdtemp(prefix = day + '_', dir = subDirYearMonth)
-                runCommand ('chmod 770 %s' % os.path.join(newDir))
+                runCommand ('chmod 775 %s' % os.path.join(newDir))
         except:
                 raise error('Cannot create new directory using mkdtemp')
         return newDir
@@ -1697,7 +1697,7 @@ def saveFile (
                 fp.write(contents)
                 fp.flush()
                 fp.close()
-                runCommand ('chmod 660 %s' % os.path.join(dir,
+                runCommand ('chmod 664 %s' % os.path.join(dir,
                         filename))
         except:
                 raise error('Failed to write file: %s' % os.path.join (
