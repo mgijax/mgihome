@@ -53,7 +53,7 @@ div.a {
    </div>
    </td></tr>
    <tr><td><i>About this resource:</i> MGI is a knowledgebase of mouse models of human disease. To aid the research community in addressing the COVID-19 pandemic, we have collected expertly curated information on <b>publications</b>, <b>mouse models</b> and both <b>human and mouse genes</b> relevant to coronavirus research. 
-   This special collection will be updated regularly.   <i>&ndash; Updated 5/19/2020</i>
+   This special collection will be updated regularly.   <i>&ndash; Updated 5/27/2020</i>
    </td>
    </tr>
     </table>
@@ -65,7 +65,7 @@ div.a {
   <div class="text-center">
         <a href="<!--#include file='include/fewi_url.html'-->reference/summary?author=&authorScope=any&journal=&year=&text=coronavirus+OR+SARS&inTitle=true&_inTitle=on&inAbstract=true&_inAbstract=on&id=#myDataTable=results%3D25%26startIndex%3D0%26sort%3Dyear%26dir%3Ddesc" target="_blank"><img src="/mgihome/other/images/PublicationsSm.png" alt="icon by Freepik" width="130px"></a>
         <div class="caption center-block">
-         <a href="<!--#include file='include/fewi_url.html'-->reference/summary?author=&authorScope=any&journal=&year=&text=coronavirus+OR+SARS&inTitle=true&_inTitle=on&inAbstract=true&_inAbstract=on&id=#myDataTable=results%3D25%26startIndex%3D0%26sort%3Dyear%26dir%3Ddesc" target="_blank">210</a>
+         <a href="<!--#include file='include/fewi_url.html'-->reference/summary?author=&authorScope=any&journal=&year=&text=coronavirus+OR+SARS&inTitle=true&_inTitle=on&inAbstract=true&_inAbstract=on&id=#myDataTable=results%3D25%26startIndex%3D0%26sort%3Dyear%26dir%3Ddesc" target="_blank">212</a>
         </div>
         </div>
     </div>
@@ -119,9 +119,9 @@ div.a {
 </td>
 </tr>
    <tr><td><h4><a id="covid"></a>The COVID-19 Pandemic of 2020</h4>
-   <p>Coronavirus disease (COVID-19) is an infectious disease caused by a novel member of the coronavirus family of viruses. As of mid May 2020, more than 4.8 million cases of COVID-19 have been documented in over 180 countries/regions worldwide<sup><a href="#ref1">1</a></sup>.
-   <br><br>The virus that causes COVID-19, severe acute respiratory syndrome coronavirus 2 (SARS-CoV-2), was likely transmitted to humans from an animal reservoir. The exact nature of this transmission is still under investigation<sup><a href="#ref2">2</a></sup>.
-   <br><br>There is no vaccine or proven treatment for COVID-19 although there are many efforts underway to develop them<sup><a href="#ref3">3</a></sup>.</p>
+   <p>Coronavirus disease (COVID-19) is an infectious disease caused by a novel member of the coronavirus family of viruses. As of late May 2020, more than 5.6 million cases of COVID-19 have been documented in over 180 countries/regions worldwide<sup><a href="#ref1">1</a>,<a href="#ref2">2</a></sup>.
+   <br><br>The virus that causes COVID-19, severe acute respiratory syndrome coronavirus 2 (SARS-CoV-2), was likely transmitted to humans from an animal reservoir. The exact nature of this transmission is still under investigation<sup><a href="#ref3">3</a></sup>.
+   <br><br>There is no vaccine or proven treatment for COVID-19 although there are many efforts underway to develop them<sup><a href="#ref4">4</a></sup>.</p>
  <div class="row">
      <div class="col-sm-2" style="">&nbsp;</div>
      <div class="col-sm-4" style=""> <img src="<!--#include file='include/mgihome_url.html'-->other/images/SARS-CoV-2Sm.png" alt="SARS-CoV-2" width="315"></div>
@@ -212,7 +212,7 @@ on a mixed inbred strain background including 129S6/SvEvTac and C57BL/6NTac
    <tr><td colspan="6"><a id="preprints"></a><h5>TABLE 3: MICE IN CORONAVIRUS RESEARCH FROM PREPRINTS</h5></td></tr>
   <tr><td colspan="6">Research described in preprints is not peer reviewed. The reported findings have not been validated.</td></tr>
    <tr style= "background-color: #DFEFFF; font-size: 1.1em;"><th>Coronavirus&nbsp;&nbsp;</th><th><span style="white-space: nowrap">Mouse Strain Name&nbsp;&nbsp;</span></th><th><span style="white-space: nowrap">Reported Mouse Strain Source</span></th><th><span style="white-space: nowrap">Study Type&nbsp;&nbsp;</span></th><th>Reference&nbsp;&nbsp;</th><th>Summary</th></tr>
-    <tr><td>SARS-CoV</td><td>Muc4<sup>tm1Unc</sup> on a C57BL/6NTac genetic background</td><td>Scott Randell of the University of North Carolina at Chapel Hill<br> <a href="<!--#include file='include/fewi_url.html'-->reference/J:254258" target="_blank">Rowson-Hode et al. 2018</a></td><td>Coronavirus infection <br><br>Severe acute respiratory syndrome</td><td><a href="https://doi.org/10.1101/2020.02.19.957118" target="_blank">Plante et al., 2020. bioRxiv.</a></td><td>In this study investigators followed up on a previously mapped QTL in Collaborative Cross mice to identify genes associated with low SARS-CoV viral titer.<br><br>
+    <tr><td>SARS-CoV</td><td><a href="<!--#include file='include/fewi_url.html'-->accession/MGI:6416171" target="_blank">Muc4<sup>tm1Unc</sup></a> on a C57BL/6NTac genetic background</td><td>Scott Randell of the University of North Carolina at Chapel Hill<br> <a href="<!--#include file='include/fewi_url.html'-->reference/J:254258" target="_blank">Rowson-Hode et al. 2018</a></td><td>Coronavirus infection <br><br>Severe acute respiratory syndrome</td><td><a href="https://doi.org/10.1101/2020.02.19.957118" target="_blank">Plante et al., 2020. bioRxiv.</a></td><td>In this study investigators followed up on a previously mapped QTL in Collaborative Cross mice to identify genes associated with low SARS-CoV viral titer.<br><br>
 By evaluating gene expression of genes in the previously identified QTL region in founder strains of  CC mice, mucin 4 (<a href="<!--#include file='include/fewi_url.html'-->marker/MGI:2153525" target="_blank"><i>Muc4</i></a>) emerged as a candidate gene to explain differences in viral titer.
 <br><br>The  loss of <i>Muc4</i> gene function did not result in significant differences in viral load or distribution in male and female Muc4-/- mice. Female Muc4-/- mice did, however, show significant weight loss compared to mutant male mice. The investigators conclude that <i>Muc4</i> does not play a role in the replication of SARS-CoV virus but does play some role in attenuating the pathology associated with viral infection in mice.</td>
    </tr>
@@ -249,8 +249,8 @@ Treatment of SARS-CoV-2 MA infected mice with pegylated interferon (IFN)lambda 1
 </table>
 <table class="outline" width="100%">
    <tr><td><h4><a id="about"></a>About SARS-CoV-2</h4>
-   <p>SARS-CoV-2 is positive single strand RNA<sup><a href="#ref4">4</a></sup> virus and is a member of the Coronaviridae family of viruses which are known to target the respiratory systems of mammals. There are four genera within Coronaviridae: alpha, beta, delta, and gamma. Only alpha and beta genera are transmissible to humans. 
-  <br><br>Although the genome of SARS-CoV-2 is similar to the zoonotic coronaviruses SARs-CoV and MERS-CoV that caused the SARs outbreak of 2003 and the MERS outbreak of 2012, the emerging evidence suggests that SARS-CoV-2 did not descend from SARS-CoV. SARS-CoV-2 causes a different range of diseases in humans and has a different transmission efficiency<sup><a href="#ref5">5</a></sup>.</p>  
+   <p>SARS-CoV-2 is positive single strand RNA<sup><a href="#ref5">5</a></sup> virus and is a member of the Coronaviridae family of viruses which are known to target the respiratory systems of mammals. There are four genera within Coronaviridae: alpha, beta, delta, and gamma. Only alpha and beta genera are transmissible to humans. 
+  <br><br>Although the genome of SARS-CoV-2 is similar to the zoonotic coronaviruses SARs-CoV and MERS-CoV that caused the SARs outbreak of 2003 and the MERS outbreak of 2012, the emerging evidence suggests that SARS-CoV-2 did not descend from SARS-CoV. SARS-CoV-2 causes a different range of diseases in humans and has a different transmission efficiency<sup><a href="#ref6">6</a></sup>.</p>  
    </td></tr>
    <tr><td>
 <div align="center">
@@ -261,10 +261,11 @@ Treatment of SARS-CoV-2 MA infected mice with pegylated interferon (IFN)lambda 1
    <tr><td><h4><a id="refs"></a>References</h4>
    <ol>
    <li><a id="ref1"></a><a href="https://www.arcgis.com/apps/opsdashboard/index.html#/bda7594740fd40299423467b48e9ecf6" target="_blank">Global cases of COVID-19</a> from The Johns Hopkins University</li>
-   <li><a id="ref2"></a>The proximal origin of SARS-CoV-2 <a href="https://www.nature.com/articles/s41591-020-0820-9" target="_blank">Nature Medicine</a> 17 March 2020.</li>
-   <li><a id="ref3"></a><a href="https://milkeninstitute.org/covid-19-tracker" target="_blank">COVID-19 Vaccine and Treatment Tracker</a> from the Milken Institute</li>
-   <li><a id="ref4"></a>Coronavirus Genome is Bad News Wrapped in a Protein (<a href="https://www.nytimes.com/interactive/2020/04/03/science/coronavirus-genome-bad-news-wrapped-in-protein.html" target="_blank">The New York Times</a>)</li>
-   <li><a id="ref5"></a>Taxonomy of SARS-CoV-2 <a href="https://www.nature.com/articles/s41564-020-0695-z" target="_blank">Nature Microbiology</a> 2 March 2020.</li>
+   <li><a id="ref2"></a><a href="https://covid19.who.int" target="_blank">WHO Coronavirus Disease (COVID-19) Dashboard</a></li>
+   <li><a id="ref3"></a>The proximal origin of SARS-CoV-2 <a href="https://www.nature.com/articles/s41591-020-0820-9" target="_blank">Nature Medicine</a> 17 March 2020.</li>
+   <li><a id="ref4"></a><a href="https://milkeninstitute.org/covid-19-tracker" target="_blank">COVID-19 Vaccine and Treatment Tracker</a> from the Milken Institute</li>
+   <li><a id="ref5"></a>Coronavirus Genome is Bad News Wrapped in a Protein (<a href="https://www.nytimes.com/interactive/2020/04/03/science/coronavirus-genome-bad-news-wrapped-in-protein.html" target="_blank">The New York Times</a>)</li>
+   <li><a id="ref6"></a>Taxonomy of SARS-CoV-2 <a href="https://www.nature.com/articles/s41564-020-0695-z" target="_blank">Nature Microbiology</a> 2 March 2020.</li>
    <li>A SARS-CoV-2 protein interaction map reveals targets for drug repurposing <a href="https://www.nature.com/articles/s41586-020-2286-9" target="_blank">Nature</a> 30 April 2020.</li>
    </ol>
     </td></tr>
@@ -283,6 +284,7 @@ Treatment of SARS-CoV-2 MA infected mice with pegylated interferon (IFN)lambda 1
      <li><a href="https://www.statnews.com/2020/03/05/coronavirus-labs-scramble-to-find-right-animals-for-covid-19-studies/" target="_blank">STAT News</a>, "From ferrets to mice and marmosets, labs scramble to find right animals for coronavirus studies" (March 5, 2020)</li>
      <li><a href="https://www.nature.com/articles/d41586-020-00698-x" target="_blank">Nature</a>, "Labs rush to study coronavirus in transgenic animals – some are in short supply" (March 9, 2020)</li>
      <li><a href="https://www.bloomberg.com/news/articles/2020-03-11/a-coronavirus-cure-depends-on-rare-mice-but-there-aren-t-enough" target="_blank">Bloomberg</a>, "A Virus Cure Depends on Rare Lab Mice, But There Aren’t Enough" (March 11, 2020)
+     <li><a href="https://www.statnews.com/2020/03/11/researchers-rush-to-start-moderna-coronavirus-vaccine-trial-without-usual-animal-testing/" target="_blank">STAT News</a>, "Researchers rush to test coronavirus vaccine in people without knowing how well it works in animals" (March 11, 2020)</li>
      <li><a href="https://www.nytimes.com/2020/03/14/science/animals-coronavirus-vaccine.html" target="_blank">The New York Times</a>, "These Lab Animals Will Help Fight Coronavirus" (March 14, 2020)</li>
      <li>National Public Radio (<a href="https://www.npr.org/2020/03/14/815624878/mouse-hunt-lab-races-to-grow-mice-for-covid-19-research" target="_blank">NPR</a>) "Mouse Hunt: Lab Races to Grow Mice for COVID-19 Research." (March 14, 2020)</li>
      <li><a href="https://bangordailynews.com/2020/03/18/news/hancock/maine-lab-starts-breeding-mice-for-coronavirus-vaccine/" target="_blank">Bangor Daily News</a>, "Maine lab starts breeding mice for coronavirus vaccine" (March 18, 2020)</li>
@@ -292,6 +294,11 @@ Treatment of SARS-CoV-2 MA infected mice with pegylated interferon (IFN)lambda 1
      <li><a href="https://www.advancedsciencenews.com/mouse-study-shows-engineered-virus-might-be-able-to-block-coronavirus-infections/" target="_blank">Advanced Science News</a>, "Mouse study shows engineered virus could block coronavirus infections" (April 8, 2020)</li>
      <li><a href="https://www.sciencemag.org/news/2020/04/mice-hamsters-ferrets-monkeys-which-lab-animals-can-help-defeat-new-coronavirus" target="_blank">Science</a>, "Mice, hamsters, ferrets, monkeys. Which lab animals can help defeat the new coronavirus?" (April 13, 2020)</li>
      <li><a href="https://www.knowablemagazine.org/article/health-disease/2020/building-mouse-squad-against-covid-19?fbclid=IwAR1ZLYGkpe774kXcLq0rJETVNZhMo2IJL6V6XyHwQZTexRhjPJV_XJGFSIg" target="_blank">Knowable Magazine</a>, "Building a mouse squad against Covid-19" (May 14, 2020)</li>
+     <li><a href="https://www.nih.gov/news-events/nih-research-matters/microneedle-coronavirus-vaccine-triggers-immune-response-mice" target="_blank">NIH News</a> "Microneedle coronavirus vaccine triggers immune response in mice." (April 14, 2020)</li>
+     <li><a href="https://www.eurekalert.org/pub_releases/2020-05/pp-rci050420.php" target="_blank">EurekAlert</a> "Russia creates its own humanized mice to test COVID-19 vaccines and drugs." (May 4, 2020)</li>
+     <li><a href="https://www.technologynetworks.com/tn/news/mouse-study-explores-why-covid-19-patients-can-lose-their-sense-of-smell-334729" target="_blank">Technology Networks</a> "Mouse Study Explores Why COVID-19 Patients Can Lose Their Sense of Smell." (May 13, 2020)</li>
+     <li><a href="https://www.scientificamerican.com/article/from-hamsters-to-baboons-the-animals-helping-scientists-understand-the-coronavirus/" target="_blank">Scientific American</a> "From Hamsters to Baboons: The Animals Helping Scientists Understand the Coronavirus." (May 14, 2020)</li>
+     <li><a href="https://whyy.org/segments/the-great-research-mouse-rescue-amid-the-pandemic/" target="_blank">WHYY PBS</a> "The great research mouse rescue amid the pandemic." (May 15, 2020)</li>
     </ul>
     </td></tr>
    </table>
