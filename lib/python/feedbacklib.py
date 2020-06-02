@@ -82,6 +82,8 @@ def isInstanceOf (
 def cleaner(s):
     # run 's' through a cleanup process to remove unexpected HTML tags
     # to prevent reflected XSS attacks
+    if s == None:
+        return s
     return s.replace('<', '(').replace('>', ')')
     
 ###--- Classes ---###
