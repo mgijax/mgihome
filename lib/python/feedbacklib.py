@@ -79,6 +79,11 @@ def isInstanceOf (
 		return 0
 	return isSubclassOf (inst.__class__, clas)
 
+def cleaner(s):
+    # run 's' through a cleanup process to remove unexpected HTML tags
+    # to prevent reflected XSS attacks
+    return s.replace('<', '(').replace('>', ')')
+    
 ###--- Classes ---###
 
 # Our class hierarchy is:
@@ -120,9 +125,9 @@ class Field:
 		# Throws: nothing
 
 		self.fieldname = fieldname
-		self.label = label
+		self.label = cleaner(label)
 		self.required = required
-		self.value = value
+		self.value = cleaner(value)
 		self.errors = []	# list of errors from validation()
 		return
 
@@ -206,7 +211,7 @@ class Field:
 		#	method to update self.errors
 		# Throws: nothing
 
-		self.value = value
+		self.value = cleaner(value)
 		self.validate()
 		return
 
@@ -219,7 +224,7 @@ class Field:
 		# Effects: updates self.label
 		# Throws: nothing
 
-		self.label = label
+		self.label = cleaner(label)
 		return
 
 	def set (self,
@@ -235,7 +240,7 @@ class Field:
 		# Throws: nothing
 
 		if parms.has_key (self.fieldname):
-			self.value = parms[self.fieldname]
+			self.value = cleaner(parms[self.fieldname])
 		self.validate()
 		return
 
@@ -645,7 +650,7 @@ class AssaySubjectField (OneLineTextField):
 		subj = 'RE: Assay'
 		if parms.has_key ('accID'):
 			subj = '%s (%s)' % (subj, parms['accID'])
-		self.value = subj
+		self.value = cleaner(subj)
 		self.validate()
 		return
 
@@ -684,7 +689,7 @@ class AlleleSubjectField (OneLineTextField):
 							parms['accID'])
 			else:
 				subj = '%s (%s)' % (subj, parms['accID'])
-		self.value = subj
+		self.value = cleaner(subj)
 		self.validate()
 		return
 
@@ -707,7 +712,7 @@ class StrainSubjectField (OneLineTextField):
 				subj = '%s %s (%s)' % (subj, result[0]['description'], parms['accID'])
 			else:
 				subj = '%s (%s)' % (subj, parms['accID'])
-		self.value = subj
+		self.value = cleaner(subj)
 		self.validate()
 		return
 
@@ -746,7 +751,7 @@ class MarkerSubjectField (OneLineTextField):
 				subj = 'RE: Marker (%s)' % (parms['accID'])
 		else:
 			subj = 'RE: Marker'
-		self.value = subj
+		self.value = cleaner(subj)
 		self.validate()
 		return
 
