@@ -23,16 +23,6 @@ div.a {
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
 	
-<script>
-$(document).ready(function(){
-  $("#myInput").on("keyup", function() {
-    var value = $(this).val().toLowerCase();
-    $("#searchsection tr").filter(function() {
-      $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
-    });
-  });
-});
-</script>
 </head>
 
 <body>
@@ -152,9 +142,7 @@ $(document).ready(function(){
 <!--begin mouse table-->
    <table class="table table-bordered" width="100%">
    <tr><td colspan="6"><h5><a id="mouse"></a>TABLE 1: MOUSE STRAINS USED TO STUDY SARS AND MERS CORONAVIRUSES</h5>
-   <input class="form-control" id="myInput" type="text" placeholder="Search.."></td></tr>
    <tr style= "background-color: #DFEFFF; font-size: 1.1em;"><th>Coronavirus Investigated</th><th><span style="white-space: nowrap">Mouse Strain Name&nbsp;&nbsp;</span></th><th><span style="white-space: nowrap">Mouse Strain Availability</span></th><th><span style="white-space: nowrap">Study Type&nbsp;&nbsp;</span></th><th>Reference(s)&nbsp;&nbsp;</th><th>Summary</th></tr>
-   <tbody id="searchsection">
    <tr><td><span style="white-space: nowrap">SARS-CoV-2</span><td><a href="<!--#include file='include/fewi_url.html'-->strain/MGI:6401293" target="_blank">ICR-Tg(Ace2-ACE2)1Cqin/J</a> on an ICR background</td><td>No repository listing</td><td> <a href="<!--#include file='include/fewi_url.html'-->disease/DOID:0080600" target="_blank">COVID-19</a><br><br><a href="<!--#include file='include/fewi_url.html'-->disease/DOID:0080599" target="_blank">Coronavirus infection</a></td><td><a href="<!--#include file='include/fewi_url.html'-->reference/J:287631" target="_blank">Bao et al. 2020</a></td><td>A transgenic mouse strain that expresses the human gene for angiotensin-converting enzyme 2 (hACE2) (the cellular receptor of SARS-CoV and SARS-CoV-2), driven by the mouse <a href="<!--#include file='include/fewi_url.html'-->marker/MGI:1917258" target="_blank"><i>Ace2</i></a> promoter. Transgenic mice infected with SARS-CoV-2 exhibit weight loss and virus replication in lung; these mice develop interstitial pneumonia similar to human COVID-19 patients.</td>
    </tr>
    <tr><td>SARS-CoV</td><td><a href="<!--#include file='include/fewi_url.html'-->strain/MGI:6389236" target="_blank">B6.Cg-Tg(K18-ACE2)2Prlmn/J</a></td><td><a href="http://www.findmice.org/summary?strainid=JAX:034860" target="_blank">JAX:034860<sup>*</sup></a><br><br><p><a href="https://www.jax.org/news-and-insights/2020/march/expediting-covid-19-research" target="_blank"><sup>*</sup>This model is being expanded as a possible model for the study of SARS-CoV-2</a></p></td><td><a href="<!--#include file='include/fewi_url.html'-->disease/DOID:0080599" target="_blank">Coronavirus infection</a> <br><br><a href="<!--#include file='include/fewi_url.html'-->disease/DOID:2945" target="_blank">Severe acute respiratory syndrome</a></td><td><a href="<!--#include file='include/fewi_url.html'-->reference/J:283648" target="_blank">McCray et al. 2007</a></td><td>A transgenic mouse strain that expresses the human version of the SARS-CoV receptor (ACE2; angiotensin-converting enzyme 2)  developed to study the pathobiology of SARS-CoV and to aid in development of antiviral therapeutics. These mice develop <a href="<!--#include file='include/fewi_url.html'-->disease/DOID:2945" target="_blank">severe acute respiratory syndrome</a> (SARS).</td>
@@ -196,7 +184,6 @@ on a mixed inbred strain background including 129S6/SvEvTac and C57BL/6NTac
    </tr>
    <tr><td>MERS-CoV</td><td><a href="<!--#include file='include/fewi_url.html'-->strain/MGI:6402444" target="_blank">C57BL/6-Tg(CAG-DPP4)4Yuzh</a></td><td>No repository listing</td><td><a href="<!--#include file='include/fewi_url.html'-->disease/DOID:0080599" target="_blank">Coronavirus infection</a> <br><br> <a href="<!--#include file='include/fewi_url.html'-->disease/DOID:0080642" target="_blank">Middle East respiratory syndrome</a> </td><td><a href="<!--#include file='include/fewi_url.html'-->reference/J:286175" target="_blank">Zhao et al. 2015</a></td><td>A transgenic mouse model globally expressing codon-optimized human dipeptidyl peptidase 4 (hDPP4), the receptor for MERS-CoV.</td>
    </tr>
-   </tbody>
     </table>
     
 <!--end mouse table-->
@@ -288,9 +275,11 @@ In this study, investigators present data showing that 17 out of 20 FDA approved
     </td></tr>
     <tr><td><h4><a id="other"></a>Other Research Resources with Special Coronavirus Information</h4>
     <ul>
+    <li><a href="https://www.elsevier.com/novel-coronavirus-covid-19" target="_blank">Elsevier</a> Novel Coronavirus Resource Directory</li>
     <li>Gene Ontology (<a href="http://www.geneontology.xyz/covid-19.html"  target="_blank">GO</a>)</li>
     <li><a href="https://www.infrafrontier.eu/knowledgebase/therapeutic-area/covid-19-resources-and-measures" target="_blank">Infrafrontier</a></li>
     <li>International Mouse Phenotyping Consortium (<a href="https://www.mousephenotype.org/news/impc-covid-19-update/" target="_blank">IMPC</a>)</li>
+    <li><a href="https://www.mmrrc.org/catalog/covid_models.php" target="_blank">MMRRC</a> Mouse Models for COVID-19 Research</li>
     <li><a href="https://nextstrain.org/ncov/global?animate=2019-12-08,2020-04-05,0,0,30000" target="_blank">NextStrain</a> visualization of the genomic epidemiology of novel coronavirus</li>
     <li><a href="http://pdb101.rcsb.org/sci-art/goodsell-gallery/coronavirus-life-cycle" target="_blank">PDB-101</a> Molecular Landscapes by David S. Goodsell</li>
     <li><a href="https://covid-19.uniprot.org/uniprotkb?query=*" target="_blank">UniProt</a></li>
@@ -300,22 +289,29 @@ In this study, investigators present data showing that 17 out of 20 FDA approved
     <ul>
      <li><a href="https://www.statnews.com/2020/03/05/coronavirus-labs-scramble-to-find-right-animals-for-covid-19-studies/" target="_blank">STAT News</a>, "From ferrets to mice and marmosets, labs scramble to find right animals for coronavirus studies" (March 5, 2020)</li>
      <li><a href="https://www.nature.com/articles/d41586-020-00698-x" target="_blank">Nature</a>, "Labs rush to study coronavirus in transgenic animals – some are in short supply" (March 9, 2020)</li>
-     <li><a href="https://www.bloomberg.com/news/articles/2020-03-11/a-coronavirus-cure-depends-on-rare-mice-but-there-aren-t-enough" target="_blank">Bloomberg</a>, "A Virus Cure Depends on Rare Lab Mice, But There Aren’t Enough" (March 11, 2020)
+     <li><a href="https://www.bloomberg.com/news/articles/2020-03-11/a-coronavirus-cure-depends-on-rare-mice-but-there-aren-t-enough" target="_blank">Bloomberg</a>, "A virus cure depends on rare lab mice, but there aren’t enough" (March 11, 2020)
      <li><a href="https://www.statnews.com/2020/03/11/researchers-rush-to-start-moderna-coronavirus-vaccine-trial-without-usual-animal-testing/" target="_blank">STAT News</a>, "Researchers rush to test coronavirus vaccine in people without knowing how well it works in animals" (March 11, 2020)</li>
      <li><a href="https://www.nytimes.com/2020/03/14/science/animals-coronavirus-vaccine.html" target="_blank">The New York Times</a>, "These Lab Animals Will Help Fight Coronavirus" (March 14, 2020)</li>
-     <li>National Public Radio (<a href="https://www.npr.org/2020/03/14/815624878/mouse-hunt-lab-races-to-grow-mice-for-covid-19-research" target="_blank">NPR</a>) "Mouse Hunt: Lab Races to Grow Mice for COVID-19 Research." (March 14, 2020)</li>
+     <li>National Public Radio (<a href="https://www.npr.org/2020/03/14/815624878/mouse-hunt-lab-races-to-grow-mice-for-covid-19-research" target="_blank">NPR</a>) "Mouse hunt: lab races to grow mice for COVID-19 research." (March 14, 2020)</li>
      <li><a href="https://bangordailynews.com/2020/03/18/news/hancock/maine-lab-starts-breeding-mice-for-coronavirus-vaccine/" target="_blank">Bangor Daily News</a>, "Maine lab starts breeding mice for coronavirus vaccine" (March 18, 2020)</li>
      <li><a href="https://www.sciencemag.org/news/2020/03/it-s-heartbreaking-labs-are-euthanizing-thousands-mice-response-coronavirus-pandemic" target="_blank">Science</a>, "'It’s heartbreaking.' Labs are euthanizing thousands of mice in response to coronavirus pandemic" (Mar. 23, 2020)</li>
      <li><a href="https://thehill.com/homenews/administration/490866-first-peer-reviewed-coronavirus-vaccine-shows-promise-in-mice" target="_blank">The Hill</a>, "First peer-reviewed coronavirus vaccine shows promise in mice" (April 2, 2020) </li>
-     <li><a href="https://www.scientificamerican.com/article/new-coronavirus-drug-shows-promise-in-animal-tests1/" target="_blank">Scientific American</a>, "New Coronavirus Drug Shows Promise in Animal Tests" (April 7, 2020)</li>
+     <li><a href="https://www.scientificamerican.com/article/new-coronavirus-drug-shows-promise-in-animal-tests1/" target="_blank">Scientific American</a>, "New coronavirus drug shows promise in animal tests" (April 7, 2020)</li>
      <li><a href="https://www.advancedsciencenews.com/mouse-study-shows-engineered-virus-might-be-able-to-block-coronavirus-infections/" target="_blank">Advanced Science News</a>, "Mouse study shows engineered virus could block coronavirus infections" (April 8, 2020)</li>
      <li><a href="https://www.sciencemag.org/news/2020/04/mice-hamsters-ferrets-monkeys-which-lab-animals-can-help-defeat-new-coronavirus" target="_blank">Science</a>, "Mice, hamsters, ferrets, monkeys. Which lab animals can help defeat the new coronavirus?" (April 13, 2020)</li>
+     <li><a href="https://www.nature.com/articles/s41684-020-0558-5" target="_blank">LabAnimal</a> "Mobilizing animal models against a pandemic" (May 12, 2020)</li>
      <li><a href="https://www.knowablemagazine.org/article/health-disease/2020/building-mouse-squad-against-covid-19?fbclid=IwAR1ZLYGkpe774kXcLq0rJETVNZhMo2IJL6V6XyHwQZTexRhjPJV_XJGFSIg" target="_blank">Knowable Magazine</a>, "Building a mouse squad against Covid-19" (May 14, 2020)</li>
-     <li><a href="https://www.nih.gov/news-events/nih-research-matters/microneedle-coronavirus-vaccine-triggers-immune-response-mice" target="_blank">NIH News</a> "Microneedle coronavirus vaccine triggers immune response in mice." (April 14, 2020)</li>
-     <li><a href="https://www.eurekalert.org/pub_releases/2020-05/pp-rci050420.php" target="_blank">EurekAlert</a> "Russia creates its own humanized mice to test COVID-19 vaccines and drugs." (May 4, 2020)</li>
-     <li><a href="https://www.technologynetworks.com/tn/news/mouse-study-explores-why-covid-19-patients-can-lose-their-sense-of-smell-334729" target="_blank">Technology Networks</a> "Mouse Study Explores Why COVID-19 Patients Can Lose Their Sense of Smell." (May 13, 2020)</li>
-     <li><a href="https://www.scientificamerican.com/article/from-hamsters-to-baboons-the-animals-helping-scientists-understand-the-coronavirus/" target="_blank">Scientific American</a> "From Hamsters to Baboons: The Animals Helping Scientists Understand the Coronavirus." (May 14, 2020)</li>
-     <li><a href="https://whyy.org/segments/the-great-research-mouse-rescue-amid-the-pandemic/" target="_blank">WHYY PBS</a> "The great research mouse rescue amid the pandemic." (May 15, 2020)</li>
+     <li><a href="https://www.nih.gov/news-events/nih-research-matters/microneedle-coronavirus-vaccine-triggers-immune-response-mice" target="_blank">NIH News</a> "Microneedle coronavirus vaccine triggers immune response in mice" (April 14, 2020)</li>
+     <li><a href="https://www.eurekalert.org/pub_releases/2020-05/pp-rci050420.php" target="_blank">EurekAlert</a> "Russia creates its own humanized mice to test COVID-19 vaccines and drugs" (May 4, 2020)</li>
+     <li><a href="https://www.technologynetworks.com/tn/news/mouse-study-explores-why-covid-19-patients-can-lose-their-sense-of-smell-334729" target="_blank">Technology Networks</a> "Mouse study explores why COVID-19 patients can lose their sense of smell" (May 13, 2020)</li>
+     <li><a href="https://www.tandfonline.com/doi/full/10.1080/22221751.2020.1764871" target="_blank">Emerging Microbes &amp; Infections </a> "Animal models for emerging coronavirus: progress and new insights" (May 13, 2020)</li>
+     <li><a href="https://www.scientificamerican.com/article/from-hamsters-to-baboons-the-animals-helping-scientists-understand-the-coronavirus/" target="_blank">Scientific American</a> "From hamsters to baboons: The animals helping scientists understand the coronavirus" (May 14, 2020)</li>
+     <li><a href="https://whyy.org/segments/the-great-research-mouse-rescue-amid-the-pandemic/" target="_blank">WHYY PBS</a> "The great research mouse rescue amid the pandemic" (May 15, 2020)</li>
+     <li><a href="https://www.genengnews.com/news/covid-19-mouse-crispr-engineered-to-recapitulate-human-covid-19/" target="_blank">Genetic Engineering &amp; Biotechnology News </a> "COVID-19 mouse CRISPR engineered to recapitulate human COVID-19" (May 27, 2020)</li>
+     <li><a href="https://www.sciencedaily.com/releases/2020/05/200528092132.htm" target="_blank">ScienceDaily</a> "HLH research points to treatment for COVID-19 cytokine storms" (May 28, 2020)</li>
+     <li><a href="https://www.news-medical.net/news/20200528/Transgenic-mouse-model-of-HLH-may-play-key-role-in-saving-lives-during-COVID-19.aspx" target="_blank">News-Medical.Net</a> "Transgenic mouse model of HLH may play key role in saving lives during COVID-19" (May 28, 2020)</li>
+     <li><a href="https://www.timesnownews.com/health/article/coronavirus-mouse-model-mimics-covid-19-infection-in-humans-may-help-test-drugs-study/598316" target="_blank">Times Now</a> "Coronavirus: Mouse model mimics COVID-19 infection in humans, may help test drugs" (May 28, 2020)</li>
+     <li><a href="https://www.taconic.com/taconic-insights/infectious-disease/covid-19-mouse-model-guide.html" target="_blank">Taconic</a> "An overview of mouse models for COVID-19" (May 30, 2020)</li>
     </ul>
     </td></tr>
    </table>
