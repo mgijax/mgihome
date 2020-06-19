@@ -84,7 +84,14 @@ def cleaner(s):
     # to prevent reflected XSS attacks
     if s == None:
         return s
-    return s.replace('<', '(').replace('>', ')')
+    if type(s) == type(''):
+        return s.replace('<', '(').replace('>', ')')
+    if type(s) == type([]):
+        out = []
+        for item in s:
+            out.append(cleaner(item))
+        return out
+    return s
     
 ###--- Classes ---###
 
