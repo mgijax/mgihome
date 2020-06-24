@@ -22,7 +22,18 @@ div.a {
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
-	
+
+<script>
+$(document).ready(function(){
+  $("#myInput").on("keyup", function() {
+    var value = $(this).val().toLowerCase();
+    $("#searchsection tr").filter(function() {
+      $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
+    });
+  });
+});
+</script>	
+
 </head>
 
 <body>
@@ -64,9 +75,9 @@ div.a {
    <div class="row">
   <div class="col-md-3">
   <div class="text-center">
-        <a href="<!--#include file='include/fewi_url.html'-->reference/summary?author=&authorScope=any&journal=&year=&text=coronavirus+OR+SARS&inTitle=true&_inTitle=on&inAbstract=true&_inAbstract=on&id=#myDataTable=results%3D25%26startIndex%3D0%26sort%3Dyear%26dir%3Ddesc" target="_blank"><img src="/mgihome/other/images/PublicationsSm.png" alt="icon by Freepik" width="130px"></a>
+        <a href="<!--#include file='include/fewi_url.html'-->reference/summary?author=&authorScope=any&journal=&year=&text=%22coronavirus%22+OR+%22SARS%22+NOT+%22SAR%22&inTitle=true&_inTitle=on&inAbstract=true&_inAbstract=on&id=#myDataTable=results%3D25%26startIndex%3D0%26sort%3Dyear%26dir%3Ddesc" target="_blank"><img src="/mgihome/other/images/PublicationsSm.png" alt="icon by Freepik" width="130px"></a>
         <div class="caption center-block">
-         <a href="<!--#include file='include/fewi_url.html'-->reference/summary?author=&authorScope=any&journal=&year=&text=coronavirus+OR+SARS&inTitle=true&_inTitle=on&inAbstract=true&_inAbstract=on&id=#myDataTable=results%3D25%26startIndex%3D0%26sort%3Dyear%26dir%3Ddesc" target="_blank">232</a>
+         <a href="<!--#include file='include/fewi_url.html'-->reference/summary?author=&authorScope=any&journal=&year=&text=%22coronavirus%22+OR+%22SARS%22+NOT+%22SAR%22&inTitle=true&_inTitle=on&inAbstract=true&_inAbstract=on&id=#myDataTable=results%3D25%26startIndex%3D0%26sort%3Dyear%26dir%3Ddesc" target="_blank">186</a>
         </div>
         </div>
     </div>
@@ -134,7 +145,7 @@ div.a {
    <h4><a id="research"></a>Coronavirus Research in the Laboratory Mouse</h4>
    <p>The laboratory mouse is an important preclinical model for studying coronavirus biology and treatment approaches. The tables below summarize information about strains and genes relevant to the study of coronavirus in mouse. This information was obtained from the Mouse Genome Informatics (<a href="http://www.informatics.jax.org" target="_blank">MGI</a>) knowledgebase hosted at The Jackson Laboratory and from the International Mouse Strain Resource (<a href="http://www.findmice.org/index.jsp" target="_blank">IMSR</a>). 
    <br><br>MGI’s biocuration scientists are monitoring the peer-reviewed scientific literature for new reports and will update the MGI database weekly. <b>You can help this effort by notifying MGI’s  <a href="<!--#include file='include/mgihome_url.html'-->support/mgi_inbox.shtml" title="Contact user support">Help Desk</a> about references in the peer-reviewed literature about the use of the mouse in coronavirus research that are missing from our database.</b>
-   <br><br><span style="font-size: 1.2em;">See all <a href="<!--#include file='include/fewi_url.html'-->reference/summary?author=&authorScope=any&journal=&year=&text=coronavirus+OR+SARS&inTitle=true&_inTitle=on&inAbstract=true&_inAbstract=on&id=#myDataTable=results%3D25%26startIndex%3D0%26sort%3Dyear%26dir%3Ddesc" target="_blank"><i>curated scientific publications that report on mouse models for coronavirus research in MGI</i></a></span></p>
+   <br><br><span style="font-size: 1.2em;">See all <a href="<!--#include file='include/fewi_url.html'-->reference/summary?author=&authorScope=any&journal=&year=&text=%22coronavirus%22+OR+%22SARS%22+NOT+%22SAR%22&inTitle=true&_inTitle=on&inAbstract=true&_inAbstract=on&id=#myDataTable=results%3D25%26startIndex%3D0%26sort%3Dyear%26dir%3Ddesc" target="_blank"><i>curated scientific publications that report on mouse models for coronavirus research in MGI</i></a></span></p>
   </td>
    </tr>
    </table>
@@ -142,7 +153,9 @@ div.a {
 <!--begin mouse table-->
    <table class="table table-bordered" width="100%">
    <tr><td colspan="6"><h5><a id="mouse"></a>TABLE 1: MOUSE STRAINS USED TO STUDY SARS AND MERS CORONAVIRUSES</h5>
+   <input class="form-control" id="myInput" type="text" placeholder="Search.."></td></tr>
    <tr style= "background-color: #DFEFFF; font-size: 1.1em;"><th>Coronavirus Investigated</th><th><span style="white-space: nowrap">Mouse Strain Name&nbsp;&nbsp;</span></th><th><span style="white-space: nowrap">Mouse Strain Availability</span></th><th><span style="white-space: nowrap">Study Type&nbsp;&nbsp;</span></th><th>Reference(s)&nbsp;&nbsp;</th><th>Summary</th></tr>
+   <tbody id="searchsection">
    <tr><td><span style="white-space: nowrap">SARS-CoV-2</span><td><a href="<!--#include file='include/fewi_url.html'-->strain/MGI:6401293" target="_blank">ICR-Tg(Ace2-ACE2)1Cqin/J</a> on an ICR background</td><td>No repository listing</td><td> <a href="<!--#include file='include/fewi_url.html'-->disease/DOID:0080600" target="_blank">COVID-19</a><br><br><a href="<!--#include file='include/fewi_url.html'-->disease/DOID:0080599" target="_blank">Coronavirus infection</a></td><td><a href="<!--#include file='include/fewi_url.html'-->reference/J:287631" target="_blank">Bao et al. 2020</a></td><td>A transgenic mouse strain that expresses the human gene for angiotensin-converting enzyme 2 (hACE2) (the cellular receptor of SARS-CoV and SARS-CoV-2), driven by the mouse <a href="<!--#include file='include/fewi_url.html'-->marker/MGI:1917258" target="_blank"><i>Ace2</i></a> promoter. Transgenic mice infected with SARS-CoV-2 exhibit weight loss and virus replication in lung; these mice develop interstitial pneumonia similar to human COVID-19 patients.</td>
    </tr>
    <tr><td><span style="white-space: nowrap">SARS-CoV-2</span><td><a href="<!--#include file='include/fewi_url.html'-->strain/MGI:2161072" target="_blank">BALB/c</a></td><td>No repository listing</td><td> <a href="<!--#include file='include/fewi_url.html'-->disease/DOID:0080600" target="_blank">COVID-19</a><br><br><a href="<!--#include file='include/fewi_url.html'-->disease/DOID:0080599" target="_blank">Coronavirus infection</a></td><td><a href="https://www.cell.com/cell/pdf/S0092-8674(20)30742-X.pdf" target="_blank">Hassan et al. 2020</a></td><td>BALB/c mice intranasally inoculated with a replication-defective adenovirus encoding the hACE2 receptor are productively infected with SARS-CoV-2, exhibiting high viral titers in the lung, lung pathology, and weight loss. Passive transfer of a neutralizing monoclonal antibody reduces viral burden in the lung and mitigates inflammation and weight loss.</td>
@@ -190,6 +203,7 @@ on a mixed inbred strain background including 129S6/SvEvTac and C57BL/6NTac
    </tr>
    <tr><td>MERS-CoV</td><td><a href="<!--#include file='include/fewi_url.html'-->strain/MGI:6402444" target="_blank">C57BL/6-Tg(CAG-DPP4)4Yuzh</a></td><td>No repository listing</td><td><a href="<!--#include file='include/fewi_url.html'-->disease/DOID:0080599" target="_blank">Coronavirus infection</a> <br><br> <a href="<!--#include file='include/fewi_url.html'-->disease/DOID:0080642" target="_blank">Middle East respiratory syndrome</a> </td><td><a href="<!--#include file='include/fewi_url.html'-->reference/J:286175" target="_blank">Zhao et al. 2015</a></td><td>A transgenic mouse model globally expressing codon-optimized human dipeptidyl peptidase 4 (hDPP4), the receptor for MERS-CoV.</td>
    </tr>
+    <tbody id="searchsection">
     </table>
     
 <!--end mouse table-->
