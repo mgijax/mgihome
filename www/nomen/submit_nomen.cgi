@@ -13,14 +13,13 @@
 
 import sys
 if '.' not in sys.path:
-	sys.path.insert(0, '.')
+        sys.path.insert(0, '.')
 
 import Configuration
 config = Configuration.get_Configuration ('Configuration', 1)
 import homelib
 
 import sys
-import string
 import os 
 import mgi_utils
 import mgi_html
@@ -34,15 +33,15 @@ HT = '\t'
 NL = '\n'
 
 def errorStop (message):
-	print 'Content-type: text/html\n'
-	formMailer.handleError (message, 'MGI Nomen Form')
-	sys.exit(0)
+        print('Content-type: text/html\n')
+        formMailer.handleError (message, 'MGI Nomen Form')
+        sys.exit(0)
 
 nomen_addr = 'nomen@jax.org'  # MGD Nomen Coordinator Email Account
 
 # developer override for mailtarget 
 if config.has_key('CGI_MAILTARGET'):
-	nomen_addr = config['CGI_MAILTARGET']
+        nomen_addr = config['CGI_MAILTARGET']
 
 subject = 'Nomenclature Request'
 
@@ -65,16 +64,16 @@ field_sort = [ \
 'fx']
 
 field_trans = { \
-	'emailaddr' : 'Email address:\t\t', \
-	'tute' : 'Institution:\t\t', \
-	'add1' : 'Address:\t\t', \
-	'add2' : 'Address:\t\t', \
-	'cty' : 'City:\t\t\t', \
-	'sta' : 'State/Province:\t\t', \
-	'po' : 'Postal Code:\t\t', \
-	'cn' : 'Country:\t\t', \
-	'ph' : 'Phone:\t\t\t', \
-	'fx' : 'FAX:\t\t\t'}
+        'emailaddr' : 'Email address:\t\t', \
+        'tute' : 'Institution:\t\t', \
+        'add1' : 'Address:\t\t', \
+        'add2' : 'Address:\t\t', \
+        'cty' : 'City:\t\t\t', \
+        'sta' : 'State/Province:\t\t', \
+        'po' : 'Postal Code:\t\t', \
+        'cn' : 'Country:\t\t', \
+        'ph' : 'Phone:\t\t\t', \
+        'fx' : 'FAX:\t\t\t'}
 
 fields = mgi_html.get_fields()
 types = fields[2]
@@ -90,45 +89,45 @@ missing_fields = []
 
 captcha_element = ''
 if config.has_key('CAPTCHA_ELEMENT'):
-	captcha_element = config['CAPTCHA_ELEMENT']
+        captcha_element = config['CAPTCHA_ELEMENT']
 captcha_timeout = ''
 if config.has_key('CAPTCHA_TIMEOUT'):
-	captcha_timeout = config['CAPTCHA_TIMEOUT']
+        captcha_timeout = config['CAPTCHA_TIMEOUT']
 captche_hide = ''
 if config.has_key('CAPTCHA_HIDE'):
-	captcha_hide = config['CAPTCHA_HIDE']
+        captcha_hide = config['CAPTCHA_HIDE']
 
-if (fields.has_key(captcha_element)):
-	if int(fields[captcha_element]) < int(captcha_timeout):
-		missing_fields.append("Required fields are missing")
+if (captcha_element in fields):
+        if int(fields[captcha_element]) < int(captcha_timeout):
+                missing_fields.append("Required fields are missing")
 
-if (fields.has_key(captcha_hide)):
-	if fields[captcha_hide] != '':
-		missing_fields.append("Required fields are missing.")
-	
-if (fields.has_key('lastname')):
-	username = fields['lastname']
+if (captcha_hide in fields):
+        if fields[captcha_hide] != '':
+                missing_fields.append("Required fields are missing.")
+        
+if ('lastname' in fields):
+        username = fields['lastname']
 else:
-	username = ''
-	missing_fields.append('Last Name')
+        username = ''
+        missing_fields.append('Last Name')
  
-if (fields.has_key('firstname')):
-	username = username + ',' + SP + fields['firstname']
-	message = message + 'Submitter Name:\t\t' + username + NL
+if ('firstname' in fields):
+        username = username + ',' + SP + fields['firstname']
+        message = message + 'Submitter Name:\t\t' + username + NL
 else:
-	missing_fields.append('First Name & Middle Name(s)')
+        missing_fields.append('First Name & Middle Name(s)')
 
-if (fields.has_key('emailaddr')):
-	submitter_addr = fields['emailaddr']
+if ('emailaddr' in fields):
+        submitter_addr = fields['emailaddr']
 else:
-	missing_fields.append('E-mail address')
+        missing_fields.append('E-mail address')
 
 for key in field_sort:
-	if (fields.has_key(key)):
-		if (field_trans.has_key(key)):
-			message = message + field_trans[key] + fields[key] + NL
-		else:
-			message = message + key + ' = ' + fields[key] + NL
+        if (key in fields):
+                if (key in field_trans):
+                        message = message + field_trans[key] + fields[key] + NL
+                else:
+                        message = message + key + ' = ' + fields[key] + NL
 
 #
 # Format Symbol Information
@@ -136,62 +135,62 @@ for key in field_sort:
 
 locussect = NL
 
-if fields.has_key('symbol'):
-	locussect = locussect + 'Requested Symbol:' + HT + fields['symbol'] + NL
-	subject = fields['symbol']
+if 'symbol' in fields:
+        locussect = locussect + 'Requested Symbol:' + HT + fields['symbol'] + NL
+        subject = fields['symbol']
 
-if fields.has_key('name'):
-	locussect = locussect + 'Requested Name:' + 2*HT + fields['name'] + NL
+if 'name' in fields:
+        locussect = locussect + 'Requested Name:' + 2*HT + fields['name'] + NL
 
-if fields.has_key('chromosome'):
-	locussect = locussect + 'Chromosome:' + 2*HT + fields['chromosome'] + NL
+if 'chromosome' in fields:
+        locussect = locussect + 'Chromosome:' + 2*HT + fields['chromosome'] + NL
 
-if fields.has_key('pub_status'):
-	locussect = locussect + 'Publication Status:' + HT + fields['pub_status'] + NL
+if 'pub_status' in fields:
+        locussect = locussect + 'Publication Status:' + HT + fields['pub_status'] + NL
 
-if fields.has_key('symbol_status'):
-	locussect = locussect + 'Symbol Status:' + 2*HT + fields['symbol_status'] + NL
+if 'symbol_status' in fields:
+        locussect = locussect + 'Symbol Status:' + 2*HT + fields['symbol_status'] + NL
 
 # We now handle symbols requested in up to three species.  (TR 1175)
 
 species = []
 for fieldname in [ 'requestMouse', 'requestHuman', 'requestRat' ]:
-	if fields.has_key (fieldname):
-		species.append (fields[fieldname])
+        if fieldname in fields:
+                species.append (fields[fieldname])
 if species:
-	if (len (species) == 1) and (species[0] == 'human'):
-		errorStop ('''You requested a symbol only
-			in Human.  We do not process Human-only symbols.  If
-			you wish to request a Human-only symbol, please go to
-			the <A
-			HREF="http://www.gene.ucl.ac.uk/nomenclature/">Human
-			Nomenclature Page</A>.  If you intended to specify
-			other species, you may go back to the previous page
-			and make corrections.''')
-	locussect = locussect + "Symbol Requested in:%s%s%s" % \
-					(HT, string.join (species, ', '), NL)
+        if (len (species) == 1) and (species[0] == 'human'):
+                errorStop ('''You requested a symbol only
+                        in Human.  We do not process Human-only symbols.  If
+                        you wish to request a Human-only symbol, please go to
+                        the <A
+                        HREF="http://www.gene.ucl.ac.uk/nomenclature/">Human
+                        Nomenclature Page</A>.  If you intended to specify
+                        other species, you may go back to the previous page
+                        and make corrections.''')
+        locussect = locussect + "Symbol Requested in:%s%s%s" % \
+                                        (HT, ', '.join (species), NL)
 
 # We also now handle up to three sources.  (TR 1175)
 
 sources = []
 for fieldname in [ 'source1', 'source2', 'source3', 'source4' ]:
-	if fields.has_key (fieldname):
-		sources.append (fields[fieldname])
+        if fieldname in fields:
+                sources.append (fields[fieldname])
 if sources:
-	locussect = locussect + "Sources Checked:%s%s%s" % \
-					(HT, string.join (sources, ', '), NL)
+        locussect = locussect + "Sources Checked:%s%s%s" % \
+                                        (HT, ', '.join (sources), NL)
 
-if fields.has_key('locusName'):
-	locussect = locussect + '\nName/Phenotypic effect:' + NL + fields['locusName'] + NL
+if 'locusName' in fields:
+        locussect = locussect + '\nName/Phenotypic effect:' + NL + fields['locusName'] + NL
 
-if fields.has_key('otherName'):
-	locussect = locussect + '\nOther Name(s):' + NL + fields['otherName'] + NL
+if 'otherName' in fields:
+        locussect = locussect + '\nOther Name(s):' + NL + fields['otherName'] + NL
 
-if fields.has_key('family'):
-	locussect = locussect + '\nLocus Family:' + NL + fields['family'] + NL
+if 'family' in fields:
+        locussect = locussect + '\nLocus Family:' + NL + fields['family'] + NL
 
-if fields.has_key('notes'):
-	locussect = locussect + '\nNotes:' + NL + fields['notes'] + NL
+if 'notes' in fields:
+        locussect = locussect + '\nNotes:' + NL + fields['notes'] + NL
 
 message = message + locussect + NL
 
@@ -199,19 +198,19 @@ message = message + locussect + NL
 
 seqsect = ''
 
-if fields.has_key ('genbankID'):
-	seqsect = seqsect + 'GenBank ID:' + 2*HT + fields['genbankID'] + NL
+if 'genbankID' in fields:
+        seqsect = seqsect + 'GenBank ID:' + 2*HT + fields['genbankID'] + NL
 
-if fields.has_key ('sequence'):
-	seqsect = seqsect + NL + 'Sequence:' + NL + fields['sequence'] + NL
+if 'sequence' in fields:
+        seqsect = seqsect + NL + 'Sequence:' + NL + fields['sequence'] + NL
 
 ### As of TR 2754, we now do not require sequence information...
 #if seqsect == '':
-#	errorStop ('''You must include either a GenBank ID or Sequence Data.
-#		Please go back and try again.''')
+#       errorStop ('''You must include either a GenBank ID or Sequence Data.
+#               Please go back and try again.''')
 
 if seqsect:
-	message = message + seqsect + NL
+        message = message + seqsect + NL
 
 #
 # Format Reference Information
@@ -219,12 +218,12 @@ if seqsect:
 
 refsect = 'Locus References:' + NL
 
-if fields.has_key('cite1'):
-	refsect = refsect + fields['cite1'] + NL
-if fields.has_key('cite2'):
-	refsect = refsect + fields['cite2'] + NL
-if fields.has_key('cite3'):
-	refsect = refsect + fields['cite3'] + NL
+if 'cite1' in fields:
+        refsect = refsect + fields['cite1'] + NL
+if 'cite2' in fields:
+        refsect = refsect + fields['cite2'] + NL
+if 'cite3' in fields:
+        refsect = refsect + fields['cite3'] + NL
 
 message = message + refsect + NL
 
@@ -234,50 +233,50 @@ message = message + refsect + NL
 
 homsect = 'Homology Information:'
 
-if fields.has_key('hom_symbol_1'):
-	if fields.has_key('hom_species_1') and fields.has_key('hom_citation_1'):
-		homsect = homsect + 2*NL + \
-			  'Locus Symbol:' + HT + fields['hom_symbol_1'] + NL + \
-			  'Species:' + HT + fields['hom_species_1'] + NL + \
-			  'Citation:' + HT + fields['hom_citation_1']
-		if fields.has_key('hom_seq_id_1'):
-			homsect = homsect + NL + 'Sequence ID:' + HT + fields['hom_seq_id_1']
-	else:
-		missing_fields.append('Species and Short Citation required for each Locus Symbol.')
+if 'hom_symbol_1' in fields:
+        if 'hom_species_1' in fields and 'hom_citation_1' in fields:
+                homsect = homsect + 2*NL + \
+                          'Locus Symbol:' + HT + fields['hom_symbol_1'] + NL + \
+                          'Species:' + HT + fields['hom_species_1'] + NL + \
+                          'Citation:' + HT + fields['hom_citation_1']
+                if 'hom_seq_id_1' in fields:
+                        homsect = homsect + NL + 'Sequence ID:' + HT + fields['hom_seq_id_1']
+        else:
+                missing_fields.append('Species and Short Citation required for each Locus Symbol.')
 
-if fields.has_key('hom_symbol_2'):
-	if fields.has_key('hom_species_2') and fields.has_key('hom_citation_2'):
-		homsect = homsect + 2*NL + \
-			  'Locus Symbol:' + HT + fields['hom_symbol_2'] + NL + \
-			  'Species:' + HT + fields['hom_species_2'] + NL + \
-			  'Citation:' + HT + fields['hom_citation_2']
-		if fields.has_key('hom_seq_id_2'):
-			homsect = homsect + NL + 'Sequence ID:' + HT + fields['hom_seq_id_2']					  
-	else:
-		missing_fields.append('Species and Short Citation required for each Locus Symbol.')
+if 'hom_symbol_2' in fields:
+        if 'hom_species_2' in fields and 'hom_citation_2' in fields:
+                homsect = homsect + 2*NL + \
+                          'Locus Symbol:' + HT + fields['hom_symbol_2'] + NL + \
+                          'Species:' + HT + fields['hom_species_2'] + NL + \
+                          'Citation:' + HT + fields['hom_citation_2']
+                if 'hom_seq_id_2' in fields:
+                        homsect = homsect + NL + 'Sequence ID:' + HT + fields['hom_seq_id_2']                                     
+        else:
+                missing_fields.append('Species and Short Citation required for each Locus Symbol.')
 
-if fields.has_key('hom_symbol_3'):
-	if fields.has_key('hom_species_3') and fields.has_key('hom_citation_3'):
-		homsect = homsect + 2*NL + \
-			  'Locus Symbol:' + HT + fields['hom_symbol_3'] + NL + \
-			  'Species:' + HT + fields['hom_species_3'] + NL + \
-			  'Citation:' + HT + fields['hom_citation_3']
-		if fields.has_key('hom_seq_id_3'):
-			homsect = homsect + NL + 'Sequence ID:' + HT + fields['hom_seq_id_3']			  
-	else:
-		missing_fields.append('Species and Short Citation required for each Locus Symbol.')
+if 'hom_symbol_3' in fields:
+        if 'hom_species_3' in fields and 'hom_citation_3' in fields:
+                homsect = homsect + 2*NL + \
+                          'Locus Symbol:' + HT + fields['hom_symbol_3'] + NL + \
+                          'Species:' + HT + fields['hom_species_3'] + NL + \
+                          'Citation:' + HT + fields['hom_citation_3']
+                if 'hom_seq_id_3' in fields:
+                        homsect = homsect + NL + 'Sequence ID:' + HT + fields['hom_seq_id_3']                     
+        else:
+                missing_fields.append('Species and Short Citation required for each Locus Symbol.')
 
 if missing_fields:
-	errorStop ('''Mandatory field(s) missing...  Please enter
-		field(s) and try again.<BR>Field(s): %s''' % \
-		string.join (missing_fields, ', '))
+        errorStop ('''Mandatory field(s) missing...  Please enter
+                field(s) and try again.<BR>Field(s): %s''' % \
+                ', '.join (missing_fields))
 
 message = message + homsect
 body += '<BLOCKQUOTE><PRE>' + message + '</PRE></BLOCKQUOTE>'
 
 reply_message.setBody(body)
 
-print reply_message.getFullDocument()
+print(reply_message.getFullDocument())
 
 mailheader = 'From: ' + submitter_addr + NL + 'To: ' + nomen_addr + NL 
 mailheader = mailheader + 'Subject: ' + subject + NL + NL

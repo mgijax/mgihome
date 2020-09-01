@@ -77,24 +77,27 @@ do
 			GROUP=$value;;
 		WI_PATH)
 			WI_PATH=$value;;
+                WEBSHARE_URL)
+                        WEBSHARE_URL=$value;;
 		[A-z]*)
 			;;	# other parms are not needed by Install
 	esac
 done
 exec 0<&4
 
-# make bin directory and add the Python link
+# make bin directory and refresh the Python link
 
 if [ ! -d bin ]; then
 	echo "Making 'bin' directory in `pwd`"
 	mkdir bin
 fi
-if [ ! -h bin/python ]; then
-	cd bin
-	echo "Linking to python in `pwd`"
-	ln -s $PYTHON python
-	cd $TOP
+if [ -h bin/python ]; then
+        rm bin/python
 fi
+cd bin
+echo "Linking from `pwd` to $PYTHON"
+ln -s $PYTHON python
+cd $TOP
 
 cd www
 if [ -h Configuration ]; then
@@ -107,11 +110,16 @@ cd $TOP
 # compile python libraries and make sure they're readable
 
 cd lib/python
-echo "Compiling libraries in `pwd`"
-rm *pyc
-$PYTHON -c 'import compileall; compileall.compile_dir(".")'
-chgrp www *pyc
-chmod 750 *pyc
+echo "Checking that python libraries in `pwd` compile"
+for pyc in `ls *py`
+do
+        if [ -h ${pyc}c ]; then
+                rm ${pyc}c
+        fi
+done
+$PYTHON -m compileall -l -f .
+chgrp www *py
+chmod 755 *py
 cd $TOP
 
 # add links to python and the config file from selected directories
@@ -145,7 +153,7 @@ if [ ! -d include ]; then
 	mkdir include
 fi
 cd $TOP/admin
-gen_rcd
+curl "${WEBSHARE_URL}components.cgi?format=rcd" > ${TOP}/webshare.rcd
 gen_includes
 
 cd $TOP
@@ -167,9 +175,9 @@ cd $TOP
 # also follow the symbolic links to the python interpreter...
 
 echo "setting permissions in www/ directory..."
-find www -type f -print | xargs chmod 750
+find www -type f -print | xargs chmod 755
 find www -type f -print | xargs chgrp www
-find www -type d -print | xargs chmod 750
+find www -type d -print | xargs chmod 755
 find www -type d -print | xargs chgrp www
 
 # add links to the include file directory and the stylesheet directory

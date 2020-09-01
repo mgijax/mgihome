@@ -6,9 +6,7 @@ import sys                      # standard Python libraries
 if '.' not in sys.path:
         sys.path.insert (0, '.')
 import os
-import string
 import cgi
-import types
 
 import Configuration
 config = Configuration.get_Configuration ('Configuration', 1)
@@ -41,43 +39,6 @@ REMEDY_MESSAGE = '''%s
 ''' % (mgi_utils.date(), '%s')
 
 ALLOWED_TYPES = [ MARKER_TYPE, ALLELE_TYPE, ASSAY_TYPE, STRAIN_TYPE ]
-
-###--- Class-Checking Functions ---###
-
-def isSubclassOf (
-        a,              # class; prospective child class
-        b               # class; prospective parent class
-        ):
-        # Purpose: determine if 'a' is a subclass of 'b'
-        # Returns: boolean (0/1)
-        # Assumes: nothing
-        # Effects: nothing
-        # Throws: nothing
-        # Notes: A class 'x' is defined to be a subclass of itself.  (That
-        #       is, 'a' is a subclass of 'b' even if 'a' and 'b' are the same
-        #       class.)
-
-        if a == b:
-                return 1
-        for parent_a in a.__bases__:            # go through multiple parents
-                if isSubclassOf (parent_a, b):
-                        return 1
-        return 0
-
-def isInstanceOf (
-        inst,           # instance; an instance of some class
-        clas            # class; prospective parent class
-        ):
-        # Purpose: determine if 'inst' is an instance of 'clas' (or a subclass
-        #       of 'clas')
-        # Returns: boolean (0/1)
-        # Assumes: nothing
-        # Effects: nothing
-        # Throws: nothing
-
-        if str(type(inst)) != "<type 'instance'>":
-                return 0
-        return isSubclassOf (inst.__class__, clas)
 
 def cleaner(s):
     # run 's' through a cleanup process to remove unexpected HTML tags
@@ -234,6 +195,7 @@ class Field:
                 # Throws: nothing
 
                 self.label = cleaner(label)
+                self.label = label
                 return
 
         def set (self,
@@ -248,7 +210,7 @@ class Field:
                 #       function to update self.errors
                 # Throws: nothing
 
-                if parms.has_key (self.fieldname):
+                if self.fieldname in parms:
                         self.value = cleaner(parms[self.fieldname])
                 self.validate()
                 return
@@ -536,7 +498,7 @@ class CheckableField (Field):
                 #       method to update self.errors
                 # Throws: nothing
 
-                if type(value) == types.ListType:
+                if type(value) == list:
                         self.value = value
                 elif not self.value:
                         self.value = [ value ]
@@ -573,9 +535,9 @@ class CheckableField (Field):
                 #       function to update self.errors
                 # Throws: nothing
 
-                if parms.has_key (self.fieldname):
+                if self.fieldname in parms:
                         self.setValue (parms[self.fieldname])
-                if parms.has_key (self.fieldname + 'Other'):
+                if self.fieldname + 'Other' in parms:
                         self.otherValue = parms[self.fieldname + 'Other']
                 self.validate()
                 return
@@ -657,7 +619,7 @@ class AssaySubjectField (OneLineTextField):
                 #       accession number.
 
                 subj = 'RE: Assay'
-                if parms.has_key ('accID'):
+                if 'accID' in parms:
                         subj = '%s (%s)' % (subj, parms['accID'])
                 self.value = cleaner(subj)
                 self.validate()
@@ -690,7 +652,7 @@ class AlleleSubjectField (OneLineTextField):
                 #       accession number.
 
                 subj = 'RE: Allele'
-                if parms.has_key ('accID'):
+                if 'accID' in parms:
                         result = homelib.getAlleles(parms['accID'])
                         if len(result) > 0:
                                 subj = '%s %s (%s)' % (subj,
@@ -715,7 +677,7 @@ class StrainSubjectField (OneLineTextField):
                 ):
 
                 subj = 'RE: Strain'
-                if parms.has_key ('accID'):
+                if 'accID' in parms:
                         result = homelib.getObjects(parms['accID'])
                         if len(result) > 0:
                                 subj = '%s %s (%s)' % (subj, result[0]['description'], parms['accID'])
@@ -750,7 +712,7 @@ class MarkerSubjectField (OneLineTextField):
                 #       subject and type corresponding to a specified
                 #       accession number.
 
-                if parms.has_key ('accID'):
+                if 'accID' in parms:
                         result = homelib.getMarkers(parms['accID'])
                         if len(result) > 0:
                                 subj = 'RE: %s %s (%s)' % (result[0][1],
@@ -837,7 +799,7 @@ class UserInput:
                 # if we have information about it, then set it.
 
                 if not self.referer.getValue() and \
-                                os.environ.has_key ('HTTP_REFERER'):
+                                'HTTP_REFERER' in os.environ:
                         self.referer.setValue (os.environ['HTTP_REFERER'])
                 return
 
@@ -855,8 +817,8 @@ class UserInput:
                 #       any instance variable that is an object.  Each object
                 #       knows how to updates its value based on 'parms'.
 
-                for key in self.__dict__.keys():
-                        if isInstanceOf (self.__dict__[key], Field):
+                for key in list(self.__dict__.keys()):
+                        if isinstance (self.__dict__[key], Field):
                                 self.__dict__[key].set (parms)
                 return
 
@@ -895,8 +857,8 @@ class UserInput:
                 #       set.  We just collect the error messages here.
 
                 errorList = []
-                for key in self.__dict__.keys():
-                        if isInstanceOf (self.__dict__[key], Field):
+                for key in list(self.__dict__.keys()):
+                        if isinstance (self.__dict__[key], Field):
                                 errorList = errorList + \
                                         self.__dict__[key].getErrors()
                 return errorList
@@ -966,11 +928,11 @@ class UserInput:
                 page_template.setHeaderBarMainText('Your Input Welcome')
                 
                 # print page
-                print page_template.getNavigationAndHeader()
-                print string.join (bodyTop, '\n')
+                print(page_template.getNavigationAndHeader())
+                print('\n'.join (bodyTop))
                 self.printFormExtra()
-                print string.join (bodyBottom, '\n')
-                print page_template.getTemplateBodyStop()
+                print('\n'.join (bodyBottom))
+                print(page_template.getTemplateBodyStop())
                 
                 return
 
@@ -995,9 +957,9 @@ class UserInput:
                 page_template.setContentType('')
                 page_template.setTitle('Confirmation')
                 page_template.setHeaderBarMainText('Confirmation')
-                page_template.setBody(string.join (pageItems, '\n'))
+                page_template.setBody('\n'.join (pageItems))
                 
-                print page_template.getFullDocument()
+                print(page_template.getFullDocument())
                 
                 return
 
@@ -1043,7 +1005,7 @@ class UserInput:
                         lines.append (name + ': ' + str(value))
 
                 lines.append('\n' + self.getDetails())                  
-                return string.join (lines, '\n')
+                return '\n'.join (lines)
 
         def getDetails (self):
                 # Purpose: build and return a string which includes a string
@@ -1063,7 +1025,7 @@ class UserInput:
                 for field in [ self.accID]:
                         list.append ('%s: %s' % (field.getLabel(),
                                 field.getValue()))
-                return string.join (list, '\n')
+                return '\n'.join (list)
 
         def getPlainText (self,
                 fields = ['subject',    # fieldnames to include in the text
@@ -1093,7 +1055,8 @@ class UserInput:
                                         value = '\n' + value
                                 lines.append ('%s: %s' % (item.getLabel(),
                                         value))
-                return string.join (lines, '\n')
+
+                return '\n'.join (lines)
 
 class SimpleTextUserInput (UserInput):
         # Concept:
@@ -1139,7 +1102,7 @@ class SimpleTextUserInput (UserInput):
                         self.commentInstructions,
                         self.comments.getHTML(),
                         ]
-                print string.join (extras, '\n')
+                print('\n'.join (extras))
                 return
 
         def getDetails (self):
@@ -1158,7 +1121,7 @@ class SimpleTextUserInput (UserInput):
                 list = ['%s: %s' % (self.comments.getLabel(),
                                 self.comments.getValue()),
                         ]
-                return string.join (list, '\n')
+                return '\n'.join (list)
 
         def getPlainText (self):
                 # Purpose: build and return a string containing the field
@@ -1358,7 +1321,7 @@ def getInputObj (
         
         inp = SimpleTextUserInput (parms)
         
-        if parms.has_key('accID'):
+        if 'accID' in parms:
                 result = homelib.getObjectTypes(parms['accID'])
                 
                 for mgiType in result:

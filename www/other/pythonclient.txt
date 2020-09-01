@@ -1,11 +1,11 @@
-#!/usr/local/bin/python
+#!./python
 
 
-import sys, httplib
+import sys, http.client
 from xml.dom import implementation
 from xml.dom.ext import PrettyPrint
 from xml.dom.minidom import parse
-import StringIO
+import io
 
 # define namespaces used
 ec = "http://schemas.xmlsoap.org/soap/encoding/"
@@ -94,14 +94,14 @@ body.appendChild(submitDoc)
 seObj.appendChild(body)
 
 # format SOAP request for display
-soapStrOut = StringIO.StringIO()
+soapStrOut = io.StringIO()
 PrettyPrint(domdoc, soapStrOut)
 
 # view the soap request
-print soapStrOut.getvalue()
+print(soapStrOut.getvalue())
 
 # construct the header and send the request
-webservice = httplib.HTTP("services.informatics.jax.org")
+webservice = http.client.HTTP("services.informatics.jax.org")
 webservice.putrequest("POST", "http://services.informatics.jax.org/mgiws")
 webservice.putheader("Host", "services.informatics.jax.org")
 webservice.putheader("Content-type", "text/xml; charset=\"UTF-8\"")
@@ -112,15 +112,15 @@ webservice.send(soapStrOut.getvalue())
 
 # get the response and display it
 statuscode, statusmessage, header = webservice.getreply()
-print "Response: ", statuscode, statusmessage
-print "headers: ", header
+print("Response: ", statuscode, statusmessage)
+print("headers: ", header)
 
 # view the soap response()
 f = webservice.getfile()
 data = f.read() # Get the raw HTML
 f.close()
 
-print "Response: ", statuscode, statusmessage
-print "headers: ", header
+print("Response: ", statuscode, statusmessage)
+print("headers: ", header)
 
-print data
+print(data)

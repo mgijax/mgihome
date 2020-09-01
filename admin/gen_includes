@@ -1,11 +1,11 @@
 #!./python
 import sys
 if '.' not in sys.path:
-	sys.path.insert (0, '.')
+        sys.path.insert (0, '.')
 
 MGI_LIBS = '/usr/local/mgi/live/lib/python'
 if MGI_LIBS not in sys.path:
-	sys.path.insert (0, MGI_LIBS)
+        sys.path.insert (0, MGI_LIBS)
 
 import Configuration
 config = Configuration.get_Configuration ('Configuration', 1)
@@ -15,11 +15,10 @@ import webshare_lib
 
 import os
 import pg_db
-db = pg_db		# setup alias to minimize code changes
-import string
+db = pg_db              # setup alias to minimize code changes
 
 def listToFile (str_list, filename):
-    print "writing %s" % filename
+    print("writing %s" % filename)
     fp = open (filename, 'w')
     for item in str_list:
         fp.write ('%s\n' % item)
@@ -33,7 +32,7 @@ def captchaInclude ():
         config['CAPTCHA_HIDE'], config['CAPTCHA_HIDE'])
     js = """<script type="text/javascript" language="JavaScript"> 
             list_row = document.getElementById("%s");
-	    list_row.parentNode.removeChild(list_row);
+            list_row.parentNode.removeChild(list_row);
         </script>""" % config['CAPTCHA_HIDE']
 
         
@@ -131,17 +130,17 @@ def main ():
     # new additions for KOMP
 
     writeStringAsIncludeFile (config['GENBANK_HOME'],
-	'../www/include/genbank_home_url.html')
+        '../www/include/genbank_home_url.html')
     writeStringAsIncludeFile (config['ENSEMBL_HOME'],
-	'../www/include/ensembl_home_url.html')
+        '../www/include/ensembl_home_url.html')
     writeStringAsIncludeFile (config['ENTREZGENE_HOME'],
-	'../www/include/entrezgene_home_url.html')
+        '../www/include/entrezgene_home_url.html')
     writeStringAsIncludeFile (config['KOMP_HOME'],
-	'../www/include/komp_home_url.html')
+        '../www/include/komp_home_url.html')
     writeStringAsIncludeFile (config['KOMP_NIH'],
-	'../www/include/komp_nih_url.html')
+        '../www/include/komp_nih_url.html')
     writeStringAsIncludeFile (config['IMSRURL'],
-	'../www/include/imsr_home_url.html')
+        '../www/include/imsr_home_url.html')
 
     # new include file for the faq's
     writeStringAsIncludeFile (config['FAQ_URL'],
