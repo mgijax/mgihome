@@ -287,7 +287,7 @@ hr.dashed {
 
     <!-- searchtool -->
     <div class="relativePos" style="height:60px;">
-      <form action="<!--#include file="include/quicksearch_url.html"-->Search.do" method="get">
+      <form action="<!--#include file="include/fewi_url.html"-->quicksearch/summary" method="get">
       <div style='position: absolute; left:5px; top:5px;' >
       <input name="query" id="searchToolTextArea" value=" Keywords, Symbols, or IDs"
         onFocus="if(this.defaultValue==this.value) this.value='';"
