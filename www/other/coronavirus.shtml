@@ -322,7 +322,7 @@ In this study, investigators present data showing that 17 out of 20 FDA approved
   <h4><a id="other"></a>Other Research Resources with Special Coronavirus Resources</h4>
   <br>
   <!-- Nav tabs -->
-  <ul class="nav nav-tabs" role="tablist">
+   <ul class="nav nav-tabs" role="tablist" style="list-style-type:none">
     <li class="nav-item">
       <a class="nav-link active" data-toggle="tab" href="#modelstab">Model Organisms</a>
     </li>
@@ -330,13 +330,13 @@ In this study, investigators present data showing that 17 out of 20 FDA approved
       <a class="nav-link" data-toggle="tab" href="#ontologies">Ontologies</a>
     </li>
     <li class="nav-item">
-      <a class="nav-link" data-toggle="tab" href="#clinical">Clinical</a>
+      <a class="nav-link" data-toggle="tab" href="#clinical">Clinical Data</a>
     </li>
     <li class="nav-item">
       <a class="nav-link" data-toggle="tab" href="#epidemiology">Epidemiology</a>
     </li>
     <li class="nav-item">
-      <a class="nav-link" data-toggle="tab" href="#genestab">Genes &amp; Networks</a>
+      <a class="nav-link" data-toggle="tab" href="#genestab">Molecular Data</a>
     </li>
     <li class="nav-item">
       <a class="nav-link" data-toggle="tab" href="#vax">Treatments &amp; Vaccines</a>
@@ -357,7 +357,7 @@ In this study, investigators present data showing that 17 out of 20 FDA approved
       <li><a href="https://www.envigo.com/covid-19-research-tools?hsCtaTracking=40be5173-e6ff-4f13-9e75-8a70dc3b7d00%7C068dd8ac-57ce-4353-86c4-ce1dd4b26a55" target="_blank">Envigo</a> Research Tools to Combat COVID-19</li>
       <li><a href="https://mousecovid.org" target="_blank">GMMCC</a> Global Mouse Models For COVID-19 Consortium</li>
       <li><a href="https://www.infrafrontier.eu/knowledgebase/therapeutic-area/covid-19-resources-and-measures" target="_blank">Infrafrontier</a>: COVID-19 Resources and Measures</li>
-      <li>International Mouse Phenotyping Consortium (<a href="https://www.mousephenotype.org/news/impc-covid-19-update/" target="_blank">IMPC</a>)</li>
+      <li>International Mouse Phenotyping Consortium (<a href="https://www.mousephenotype.org/understand/covid-19/" target="_blank">IMPC</a>)</li>
       <li><a href="https://www.mmrrc.org/catalog/covid_models.php" target="_blank">MMRRC</a> Mouse Models for COVID-19 Research</li>
       <li>National Center for Advancing Translational Sciences (<a href="https://opendata.ncats.nih.gov/covid19/animal" target="_blank">NCATS</a>) Animal Model Summary Overview, OpenData COVID-19 Portal</li>
       <li>Rat Genome Database (<a href="https://rgd.mcw.edu/wg/portals/covid-19-disease-portal-related-links/" target="_blank">RGD</a>) COVID-19 Resources</li>
@@ -383,7 +383,7 @@ In this study, investigators present data showing that 17 out of 20 FDA approved
       </ul>
     </div>
     <div id="clinical" class="container tab-pane fade"><br>
-      <p>Clinical Presentation & Course</p>
+      <p>Clinical Presentation &amp; Course</p>
       <ul>
       <li>US Centers for Disease Control and Prevention (<a href="https://www.cdc.gov/coronavirus/2019-ncov/symptoms-testing/symptoms.html" target="_blank">CDC</a>) Symptoms of Coronavirus</li>
       <li>Clinical Data Related to COVID-19 Symptoms and Patient Outcomes from the National COVID Cohort Collaborative (<a href="https://ncats.nih.gov/n3c" target="_blank">N3C</a>)</li>
@@ -393,11 +393,12 @@ In this study, investigators present data showing that 17 out of 20 FDA approved
       <p>Epidemiology &amp; COVID-19 Situation Reports</p>
       <ul>
       <li>Chinese Center for Disease Control and Prevention (<a href="http://weekly.chinacdc.cn/news/TrackingtheEpidemic.htm" target="_blank">CCDC</a>): Tracking the Epidemic (2021)</li>
+      <li>European Centre for Disease Prevention and Control (<a href="https://qap.ecdc.europa.eu/public/extensions/COVID-19/COVID-19.html#global-overview-tab" target="_blank">ECDC</a>) COVID-19 Situation Dashboard: Cases in Europe and Worldwide</li>
       <li>Global cases of COVID-19 from The <a href="https://www.arcgis.com/apps/opsdashboard/index.html#/bda7594740fd40299423467b48e9ecf6" target="_blank">Johns Hopkins University</a></li>
       <li><a href="https://nextstrain.org/ncov/global?animate=2019-12-08,2020-04-05,0,0,30000" target="_blank">NextStrain</a> visualization of the genomic epidemiology of novel coronavirus</li>
       <li>Pan American Health Organization (<a href="https://www.paho.org/en/covid-19-situation-reports" target="_blank">PAHO</a>) COVID-19 Situation Reports</li>
 <li>US Centers for Disease Control and Prevention (<a href="https://covid.cdc.gov/covid-data-tracker/?CDC_AA_refVal=https%3A%2F%2Fwww.cdc.gov%2Fcoronavirus%2F2019-ncov%2Fcases-updates%2Fcases-in-us.html#cases_casesper100klast7days" target="_blank">CDC COVID-19 Data Tracker</a>) COVID Maps, Charts, and Data</li>
-      <li>(<a><a href="https://covid19.who.int" target="_blank">WHO</a>) Coronavirus Disease (COVID-19) Dashboard</li>
+      <li>World Health Organization (<a href="https://covid19.who.int" target="_blank">WHO</a>) Coronavirus Disease (COVID-19) Dashboard</li>
       </ul>
     </div>
     <div id="genestab" class="container tab-pane fade"><br>
@@ -439,6 +440,7 @@ In this study, investigators present data showing that 17 out of 20 FDA approved
       <li><a href="https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?mode=Tree&id=11118&lvl=3&lin=f&keep=1&srchmode=1&unlock" target="_blank">NCBI Taxonomy Browser</a></li>
       <li><a href="https://nextstrain.org/groups/blab/sars-like-cov" target="_blank">NextStrain</a> Phylogeny of SARS-like betacoronaviruses</li>
       <li><a href="http://pdb101.rcsb.org/sci-art/goodsell-gallery/coronavirus-life-cycle" target="_blank">PDB-101</a> Molecular Landscapes by David S. Goodsell</li>
+      <li>US <a href="https://www.cdc.gov/coronavirus/2019-ncov/cases-updates/variant-surveillance.html" target="_blank">CDC Genomic Surveillance</a> for SARS-CoV-2 Variants</li> 
       </ul>
     </div>
   </div>
@@ -474,7 +476,13 @@ In this study, investigators present data showing that 17 out of 20 FDA approved
      </ul>
   </div>
 </div>
-<ul>
+<br>
+<div class="container">  
+  <button type="button" class="btn btn-primary btn-sm" data-toggle="collapse" data-target="#may">Show/Hide May 2020 News &nbsp; &nbsp;</button>
+  <div id="may" class="collapse">
+    <ul>
+     <li><a href="https://www.knowablemagazine.org/article/health-disease/2020/building-mouse-squad-against-covid-19?fbclid=IwAR1ZLYGkpe774kXcLq0rJETVNZhMo2IJL6V6XyHwQZTexRhjPJV_XJGFSIg" target="_blank">Knowable Magazine</a>, "Building a mouse squad against Covid-19" (May 14, 2020)</li>
+     <li><a href="https://www.nih.gov/news-events/nih-research-matters/microneedle-coronavirus-vaccine-triggers-immune-response-mice" target="_blank">NIH News</a> "Microneedle coronavirus vaccine triggers immune response in mice." (April 14, 2020)</li>
      <li><a href="https://www.eurekalert.org/pub_releases/2020-05/pp-rci050420.php" target="_blank">EurekAlert</a> "Russia creates its own humanized mice to test COVID-19 vaccines and drugs" (May 4, 2020)</li>
      <li><a href="https://www.nature.com/articles/s41684-020-0558-5" target="_blank">LabAnimal</a> "Mobilizing animal models against a pandemic" (May 12, 2020)</li>
      <li><a href="https://www.technologynetworks.com/tn/news/mouse-study-explores-why-covid-19-patients-can-lose-their-sense-of-smell-334729" target="_blank">Technology Networks</a> "Mouse Study Explores Why COVID-19 Patients Can Lose Their Sense of Smell" (May 13, 2020)</li>
@@ -485,9 +493,12 @@ In this study, investigators present data showing that 17 out of 20 FDA approved
      <li><a href="https://www.sciencedaily.com/releases/2020/05/200528092132.htm" target="_blank">ScienceDaily</a> "HLH research points to treatment for COVID-19 cytokine storms" (May 28, 2020)</li>
      <li><a href="https://www.news-medical.net/news/20200528/Transgenic-mouse-model-of-HLH-may-play-key-role-in-saving-lives-during-COVID-19.aspx" target="_blank">News-Medical.Net</a> "Transgenic mouse model of HLH may play key role in saving lives during COVID-19" (May 28, 2020)</li>
      <li><a href="https://www.timesnownews.com/health/article/coronavirus-mouse-model-mimics-covid-19-infection-in-humans-may-help-test-drugs-study/598316" target="_blank">Times Now</a> "Coronavirus: Mouse model mimics COVID-19 infection in humans, may help test drugs" (May 28, 2020)</li>
-     <li><a href="https://science.sciencemag.org/content/368/6494/942" target="_blank">Science</a> "The search for a COVID-19 animal model" (May 29, 2020)</li>
      <li><a href="https://www.taconic.com/taconic-insights/infectious-disease/covid-19-mouse-model-guide.html" target="_blank">Taconic</a> "An overview of mouse models for COVID-19" (May 30, 2020)</li>
      <li><a href="https://scitechdaily.com/new-research-points-to-treatment-for-covid-19-cytokine-storms-solution-to-global-pandemic/" target="_blank">SciTechDaily</a> "New research points to treatment for COVID-19 cytokine storms, solution to global pandemic" (May 31, 2020)</li>
+      </ul>
+  </div>
+</div>
+  <ul>
      <li><a href="https://www.regmednet.com/covid-19-fibroblasts-mice/" target="_blank">RegMedNet</a> "COVID-19 treatment breakthrough using fibroblast cell therapy in mice" (June 1, 2020)</li>
      <li><a href="https://www.hospimedica.com/covid-19/articles/294782795/transgenic-mouse-that-models-immune-diseases-cytokine-storms-could-point-to-treatment-solution-for-covid-19.html" target="_blank">HospiMedica</a> "Transgenic mouse that models immune disease's cytokine storms could point to treatment solution for COVID-19" (June 5, 2020)</li>
      <li><a href="https://nordiclifescience.org/danish-coronavirus-vaccine-passes-test-in-mice/" target="_blank">Nordic Life Science News</a> "A vaccine against COVID-19, developed by researchers from the Univ. of Copenhagen, has been tested in mice and shows promising results" (June 10, 2020)</li>
