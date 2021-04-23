@@ -1,7 +1,7 @@
 <!--#include file='include/templateHead.html'-->
 
 <title>MGI-Mouse Vertebrate Homology</title>
-  <meta name="description" content="MGI contains orthology information for mouse, human, rat, chimp, dog, and 12 other mammalian species." />
+  <meta name="description" content="MGI contains orthology information for mouse, human, rat, and zebrafish." />
   <meta name="keywords" content="MGI, mgi, mice, mouse, murine, mus musculus, genes, genome, genomic, orthologs, orthologous, orthologies, homology, homologs, homologous, homologies, protein superfamily, protein superfamilies, linkage, comparative map, human orthologs, rat orthologs, chimp orthologs, dog orthologs, reference genome project" />
   
   <meta name="robots" content="NOODP" />
@@ -23,8 +23,7 @@
 			</span>
 			<br>
 			<span class="homePageSubTitle">
-				 MGI contains homology information for mouse, human, rat, chimp,
-				 dog and other species.
+				 MGI contains homology information for mouse, human, rat,and zebrafish.
 			</span>
 		</td>
 		<td align="center">
@@ -50,9 +49,9 @@
 				is in the term <dt>, and the link is in the definition <dd> -->
 				<div class="boxBG pad5">
 					<dl>
-						<dt class="whatList">Download a complete set of human, chimpanzee, rhesus macaque, dog, cattle, rat, chicken, western clawed frog and zebrafish Homology Classes for mouse genes. The report includes Chromosome and EntrezGene and <abbr title="Online Mendelian Inheritance in Man">OMIM</abbr> IDs.</dt>
+						<dt class="whatList">Download a complete set of human, rat, and zebrafish Homology Classes for mouse genes. The report includes Chromosome and EntrezGene and <abbr title="Online Mendelian Inheritance in Man">OMIM</abbr> IDs.</dt>
 						<dd class="searchList"><a href="<!--#include file='include/wi_url.html'-->downloads/reports/HOM_AllOrganism.rpt" class="small homeLink">Complete List of Vertebrate Homology Classes (plain text)</a></dd>
-						<dt class="whatList">Download a report of Human and Mouse Homology Classes sorted by HomoloGene ID. The report includes associated nucleotide and protein sequences, Chromosome and <abbr title="Online Mendelian Inheritance in Man">OMIM</abbr> IDs.</dt>
+						<dt class="whatList">Download a report of Human and Mouse Homology Classes. The report includes associated nucleotide and protein sequences, Chromosome and <abbr title="Online Mendelian Inheritance in Man">OMIM</abbr> IDs.</dt>
 						<dd class="searchList"><a href="<!--#include file='include/wi_url.html'-->downloads/reports/HOM_MouseHumanSequence.rpt"  class="small homeLink">Complete List of Human and Mouse Homologs (plain text)</a></dd>
 						<dt class="whatList">Download a report of Human and Mouse Homology with phenotype annotations.</dt>
 						<dd class="searchList"><a href="<!--#include file='include/wi_url.html'-->downloads/reports/HMD_HumanPhenotype.rpt"  class="small homeLink">Complete List of Human and Mouse Homologs with phenotype annotations (plain text)</a></dd>
