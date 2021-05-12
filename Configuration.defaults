@@ -74,7 +74,7 @@ SUBMISSION_DIRECTORY	/export/gondor/submissions
 #------------------#
 
 # path to library files for doing crons (commented out for now)
-LD_LIBRARY_PATH    /usr/local/lib:/usr/local/postgres/lib:/usr/local/pgsql/lib
+LD_LIBRARY_PATH    /usr/pgsql-12/lib:/usr/local/lib
 
 #----------------#
 #- komp related -#

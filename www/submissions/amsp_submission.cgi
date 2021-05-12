@@ -661,7 +661,7 @@ def getAlleleSection():
                 'TARGET="_blank">',
                 'Quick Guide to Nomenclature for Alleles and Mutations</A>.',
                 '</LI><LI><A ',
-                'HREF="http://dels.nas.edu/global/ilar/lab-codes" ',
+                'HREF="https://www.nationalacademies.org/ilar/lab-code-database" ',
                 'TARGET="_blank">',
                 'Lab codes</A> are available from ILAR (Institute of ',
                 'Laboratory Animal Resources).</LI>',

@@ -54,7 +54,7 @@ div.a {
    </div>
    </td></tr>
    <tr><td><i>About this resource:</i> MGI is a knowledgebase of mouse models of human disease. To aid the research community in addressing the COVID-19 pandemic, we have collected expertly curated information on <b>publications</b>, <b>mouse models</b> and both <b>human and mouse genes</b> relevant to coronavirus research. 
-   This special collection will be updated regularly.   <i>&ndash; Updated 10/13/2020</i>
+   This special collection will be updated regularly.   <i>&ndash; Updated 5/4/2021</i>
    </td>
    </tr>
     </table>
@@ -66,7 +66,7 @@ div.a {
   <div class="text-center">
         <a href="<!--#include file='include/fewi_url.html'-->reference/summary?author=&authorScope=any&journal=&year=&text=%22coronavirus%22+OR+%22SARS%22+NOT+%22SAR%22&inTitle=true&_inTitle=on&inAbstract=true&_inAbstract=on&id=#myDataTable=results%3D25%26startIndex%3D0%26sort%3Dyear%26dir%3Ddesc" target="_blank"><img src="/mgihome/other/images/PublicationsSm.png" alt="icon by Freepik" width="130px"></a>
         <div class="caption center-block">
-         <a href="<!--#include file='include/fewi_url.html'-->reference/summary?author=&authorScope=any&journal=&year=&text=%22coronavirus%22+OR+%22SARS%22+NOT+%22SAR%22&inTitle=true&_inTitle=on&inAbstract=true&_inAbstract=on&id=#myDataTable=results%3D25%26startIndex%3D0%26sort%3Dyear%26dir%3Ddesc" target="_blank">309</a>
+         <a href="<!--#include file='include/fewi_url.html'-->reference/summary?author=&authorScope=any&journal=&year=&text=%22coronavirus%22+OR+%22SARS%22+NOT+%22SAR%22&inTitle=true&_inTitle=on&inAbstract=true&_inAbstract=on&id=#myDataTable=results%3D25%26startIndex%3D0%26sort%3Dyear%26dir%3Ddesc" target="_blank">522</a>
         </div>
         </div>
     </div>
@@ -74,7 +74,7 @@ div.a {
   <div class="text-center">
         <a href="#research"><img src="/mgihome/other/images/MouseModelsSm.png" alt="icon by Freepik" width="130px"></a>
         <div class="caption center-block">
-          <a href="#research">21</a>
+          <a href="#research">23</a>
         </div>
         </div>
     </div>
@@ -82,7 +82,7 @@ div.a {
     <div class="text-center">
         <a href="#preprints"><img src="/mgihome/other/images/greymouseSm.png" alt="icon by Freepik" width="130px"></a>
         <div class="caption">
-         <a href="#preprints">6</a>
+         <a href="#preprints">4</a>
         </div>
         </div>
     </div>
@@ -119,9 +119,9 @@ div.a {
 </td>
 </tr>
    <tr><td><h4><a id="covid"></a>The COVID-19 Pandemic of 2020</h4>
-   <p>Coronavirus disease (COVID-19) is an infectious disease caused by a novel member of the coronavirus family of viruses. As of mid October 2020, more than 37.8 million cases of COVID-19 have been documented in 188 countries/regions worldwide<sup><a href="#ref1">1</a>,<a href="#ref2">2</a></sup>.
+   <p>Coronavirus disease (COVID-19) is an infectious disease caused by a novel member of the coronavirus family of viruses. As of early May 2021, more than 153.7 million cases of COVID-19 have been documented in 192 countries/regions worldwide<sup><a href="#ref1">1</a>,<a href="#ref2">2</a></sup>.
    <br><br>The virus that causes COVID-19, severe acute respiratory syndrome coronavirus 2 (SARS-CoV-2), was likely transmitted to humans from an animal reservoir. The exact nature of this transmission is still under investigation<sup><a href="#ref3">3</a></sup>.
-   <br><br>There is no vaccine or proven treatment for COVID-19 although there are many efforts underway to develop them<sup><a href="#ref4">4</a></sup>.</p>
+   <br><br>There are many efforts underway to develop treatments and vaccines for COVID-19<sup><a href="#ref4">4</a></sup>.</p>
  <div class="row">
      <div class="col-sm-2" style="">&nbsp;</div>
      <div class="col-sm-4" style=""> <img src="<!--#include file='include/mgihome_url.html'-->other/images/SARS-CoV-2Sm.png" alt="SARS-CoV-2" width="315"></div>
@@ -150,6 +150,9 @@ div.a {
 Similar to observations in humans, pulmonary disease was more severe in older mice compared to young mice.<br><br>
 10 week old BALB/c mice vaccinated with an Venezuelan equine encephalitis virus replicon particle (VRP) system against the SARS-CoV-2 spike protein effectively neutralized the virus.<br><br>
 Treatment of SARS-CoV-2 MA infected mice with pegylated interferon (IFN)lambda 1a diminished the replication of the virus in mice.</td>
+   </tr>
+   <tr><td>SARS-CoV-2</td><td><a href="<!--#include file='include/fewi_url.html'-->strain/MGI:2161072" target="_blank">BALB/c</a></td><td>
+Source not identified</td><td><a href="<!--#include file='include/fewi_url.html'-->disease/DOID:0080599" target="_blank">Coronavirus infection</a><br><br><a href="<!--#include file='include/fewi_url.html'-->disease/DOID:2945" target="_blank">Severe acute respiratory syndrome</a></td><td><a href="http://www.informatics.jax.org/accession/J:291884" target="_blank">Gao et al. 2020.</a></td><td>An inactivated virus vaccine (PiCoVacc) generated neutralizing antibodies in BALB/c mice, Wistar rats, and macaques that were specific to SARS-CoV-2. The neutralizing antibodies worked against 10 SARS-CoV-2 strains. Antibody-dependent enhancement (ADE) of infection was not observed but cannot be ruled out.</td>
    </tr>
    <tr><td><span style="white-space: nowrap">SARS-CoV-2</span><td><a href="<!--#include file='include/fewi_url.html'-->strain/MGI:2161072" target="_blank">BALB/c</a></td><td>No repository listing</td><td> <a href="<!--#include file='include/fewi_url.html'-->disease/DOID:0080600" target="_blank">COVID-19</a><br><br><a href="<!--#include file='include/fewi_url.html'-->disease/DOID:0080599" target="_blank">Coronavirus infection</a></td><td><a href="https://www.cell.com/cell/pdf/S0092-8674(20)30742-X.pdf" target="_blank">Hassan et al. 2020</a></td><td>BALB/c mice intranasally inoculated with a replication-defective adenovirus encoding the hACE2 receptor are productively infected with SARS-CoV-2, exhibiting high viral titers in the lung, lung pathology, and weight loss. Passive transfer of a neutralizing monoclonal antibody reduces viral burden in the lung and mitigates inflammation and weight loss.</td>
    </tr>
@@ -242,7 +245,7 @@ Work by Plante et al. in incipient Collaborative Cross mouse lines suggests that
    Sheahan et al. 2015</a></td>
    </tr>
     <tr><td><i>NRP1</i> <br>neuropilin 1</td><td><a href="<!--#include file='include/fewi_url.html'-->marker/MGI:106206" target="_blank"><i>Nrp1</i></a></td><td>
-SARS-CoV2 binds NRP1 in human cell culture enhancing viral infection. Potential role in neurological targets based on transport studies of viral sized particles in mice (in Cantuti-Castelvetri paper).</td><td><a href="https://www.biorxiv.org/content/10.1101/2020.06.07.137802v2" target="_blank">Cantuti-Castelvetri et al. 2020. bioRxiv.</a><br><a href="https://www.biorxiv.org/content/10.1101/2020.06.05.134114v1" target="_blank">Daly et al. 2020. bioRxiv.</a></td>
+SARS-CoV2 binds NRP1 in human cell culture enhancing viral infection. Potential role in neurological targets based on transport studies of viral sized particles in mice (in Cantuti-Castelvetri paper).</td><td><a href="https://science.sciencemag.org/content/early/2020/10/19/science.abd2985" target="_blank">Cantuti-Castelvetri et al. 2020. </a><br><a href="https://www.biorxiv.org/content/10.1101/2020.06.05.134114v1" target="_blank">Daly et al. 2020. bioRxiv.</a></td>
    </tr> 
    <tr><td><i>STAT1</i> <br>signal transducer and activator of transcription 1</td><td><a href="<!--#include file='include/fewi_url.html'-->marker/MGI:103063" target="_blank"><i>Stat1</i></a></td><td><i>STAT1</i> plays a key role in development of acute lung injury associated with SARS pathology (Frieman et al., 2010). <i>Stat1</i> knockout mice infected with SARS-CoV developed interstitial pneumonia but did not develop diffuse alveolar damage (Hogan et al. 2004).</td><td><a href="<!--#include file='include/fewi_url.html'-->reference/J:286237" target="_blank">Frieman et al. 2010</a><br><a href="<!--#include file='include/fewi_url.html'-->reference/J:286302" target="_blank">Hogan et al. 2004</a></td>
    </tr>
@@ -278,10 +281,6 @@ By evaluating gene expression of genes in the previously identified QTL region i
    <tr><td>SARS-CoV</td><td>NSG mice; male and female > 6 weeks old</td><td>
 Cleveland Clinic Biological Resources Unit</td><td>Coronavirus infection <br><br>Severe acute respiratory syndrome</td><td><a href="https://doi.org/10.1101/2020.04.21.051201" target="_blank">Baratchian et al., 2020. bioRxiv.</a></td><td>Male NSG mice, treated with the androgen receptor antagonist enzalutamide did not decrease pulmonary TMPRSS2 expression.<br><br>The study finds no evidence for androgen regulation of TMPRSS2 in the male lung and concludes that TMPRSS2 regulation does not account for sex differences in clinical outomes of COVID-19 patients. Therefore, TMPRSS2 regulation in the lung appears to fundamentally differ from a clear androgen-dependent effect in prostatic tissues. Pulmonary TMPRSS2 regulation does not appear to account for the sex bias in COVID-19 clinical outcomes.</td>
    </tr>
-   <tr><td>SARS-CoV-2</td><td><a href="<!--#include file='include/fewi_url.html'-->strain/MGI:2161072" target="_blank">BALB/c</a></td><td>
-Source not identified</td><td>Coronavirus infection <br><br>Severe acute respiratory syndrome</td><td><a href="https://doi.org/10.1101/2020.04.17.046375" target="_blank">Gao et al., 2020. bioRxiv.</a></td><td>An inactivated virus vaccine (PiCoVacc) generated neutralizing antibodies in BALB/c mice, Wistar rats, and macaques that were specific to SARS-CoV-2. The neutralizing antibodies worked against 10 SARS-CoV-2 strains. Antibody-dependent enhancement (ADE) of infection was not observed but cannot be ruled out.
-</td>
-   </tr>
    <tr><td>SARS-CoV-2</td><td>Mouse strain not specified</td><td>
 Source not identified</td><td>Coronavirus infection <br><br>Severe acute respiratory syndrome</td><td><a href="https://doi.org/10.1101/2020.04.01.019877" target="_blank">Zeng et al., 2020. bioRxiv.</a></td><td>De novo designed untranslated regions (UTRs) of mRNAs (NASAR mRNAs) delivered via lipid-derived nanoparticles were shown to significantly increase expression of potential SARS-CoV-2 antigens both in vitro and in vivo. NASAR mRNAs show promise for further evaluation as vaccines against SARS-CoV-2.</td>
    </tr>
@@ -310,32 +309,153 @@ In this study, investigators present data showing that 17 out of 20 FDA approved
    <ol>
    <li><a id="ref1"></a><a href="https://www.arcgis.com/apps/opsdashboard/index.html#/bda7594740fd40299423467b48e9ecf6" target="_blank">Global cases of COVID-19</a> from The Johns Hopkins University</li>
    <li><a id="ref2"></a><a href="https://covid19.who.int" target="_blank">WHO Coronavirus Disease (COVID-19) Dashboard</a></li>
-   <li><a id="ref3"></a>The proximal origin of SARS-CoV-2 <a href="https://www.nature.com/articles/s41591-020-0820-9" target="_blank">Nature Medicine</a> 17 March 2020.</li>
+   <li><a id="ref3"></a>The proximal origin of SARS-CoV-2. <a href="https://www.nature.com/articles/s41591-020-0820-9" target="_blank">Nature Medicine</a>, March 17, 2020.</li>
    <li><a id="ref4"></a><a href="https://milkeninstitute.org/covid-19-tracker" target="_blank">COVID-19 Vaccine and Treatment Tracker</a> from the Milken Institute</li>
-   <li><a id="ref5"></a>Coronavirus Genome is Bad News Wrapped in a Protein (<a href="https://www.nytimes.com/interactive/2020/04/03/science/coronavirus-genome-bad-news-wrapped-in-protein.html" target="_blank">The New York Times</a>)</li>
-   <li><a id="ref6"></a>Taxonomy of SARS-CoV-2 <a href="https://www.nature.com/articles/s41564-020-0695-z" target="_blank">Nature Microbiology</a> 2 March 2020.</li>
-   <li>A SARS-CoV-2 protein interaction map reveals targets for drug repurposing <a href="https://www.nature.com/articles/s41586-020-2286-9" target="_blank">Nature</a> 30 April 2020.</li>
+   <li><a id="ref5"></a>Coronavirus Genome is Bad News Wrapped in a Protein. <a href="https://www.nytimes.com/interactive/2020/04/03/science/coronavirus-genome-bad-news-wrapped-in-protein.html" target="_blank">The New York Times</a>, April 3, 2020.</li>
+   <li><a id="ref6"></a>Taxonomy of SARS-CoV-2. <a href="https://www.nature.com/articles/s41564-020-0695-z" target="_blank">Nature Microbiology</a>, March 2, 2020.</li>
+   <li>A SARS-CoV-2 protein interaction map reveals targets for drug repurposing. <a href="https://www.nature.com/articles/s41586-020-2286-9" target="_blank">Nature</a>, April 30, 2020.</li>
+   <li>Characteristics of SARS-CoV-2 and COVID-19. <a href="https://www.nature.com/articles/s41579-020-00459-7 " target="_blank">Nat Rev Microbiol.</a> October 6, 2020.</li>
    </ol>
     </td></tr>
-    <tr><td><h4><a id="other"></a>Other Research Resources with Special Coronavirus Information</h4>
-    <ul>
-    <li><a href="https://www.ebi.ac.uk/ols/ontologies/cido" target="_blank">CIDO</a>: Ontology of Coronavirus Infectious Disease</li>
-    <li><a href="https://www.elsevier.com/novel-coronavirus-covid-19" target="_blank">Elsevier</a> Novel Coronavirus Resource Directory</li>
-    <li><a href="https://www.gencodegenes.org/human/covid19_genes.html"  target="_blank">GENCODE</a></li>
-    <li>Gene Ontology (<a href="http://www.geneontology.xyz/covid-19.html"  target="_blank">GO</a>)</li>
-    <li><a href="https://mousecovid.org" target="_blank">GMMCC</a> Global Mouse Models For COVID-19 Consortium</li>
-    <li><a href="https://www.infrafrontier.eu/knowledgebase/therapeutic-area/covid-19-resources-and-measures" target="_blank">Infrafrontier</a></li>
-    <li>International Mouse Phenotyping Consortium (<a href="https://www.mousephenotype.org/news/impc-covid-19-update/" target="_blank">IMPC</a>)</li>
-    <li><a href="https://www.mmrrc.org/catalog/covid_models.php" target="_blank">MMRRC</a> Mouse Models for COVID-19 Research</li>
-    <li><a href="https://nextstrain.org/ncov/global?animate=2019-12-08,2020-04-05,0,0,30000" target="_blank">NextStrain</a> visualization of the genomic epidemiology of novel coronavirus</li>
-    <li><a href="http://pdb101.rcsb.org/sci-art/goodsell-gallery/coronavirus-life-cycle" target="_blank">PDB-101</a> Molecular Landscapes by David S. Goodsell</li>
-    <li><a href="https://proconsortium.org/cgi-bin/textsearch_pro?search=search&field0=ALLFLDS&query0=ncbitaxon%3A2697049" target="_blank">Protein Ontology</a> terms for SARS-CoV-2 proteins</li>
-    <li><a href="https://reactome.org/PathwayBrowser/#/R-HSA-9679506" target="_blank">Reactome</a> SARS-CoV Infections</li>
-    <li><a href="https://rgd.mcw.edu/wg/portals/covid-19-disease-portal-related-links/" target="_blank">RGD</a> COVID-19 Resources</li>
-    <li><a href="https://covid-19.uniprot.org/uniprotkb?query=*" target="_blank">UniProt</a></li>
-    </ul>
+     <!--Begin resources section-->
+   <tr><td>
+    <div>
+  <h4><a id="other"></a>Other Research Resources with Special Coronavirus Resources</h4>
+  <br>
+  <!-- Nav tabs -->
+   <ul class="nav nav-tabs" role="tablist" style="list-style-type:none">
+    <li class="nav-item" style="list-style-type:none">
+      <a class="nav-link active" data-toggle="tab" href="#modelstab">Model Organisms</a>
+    </li>
+    <li class="nav-item" style="list-style-type:none">
+      <a class="nav-link" data-toggle="tab" href="#ontologies">Ontologies</a>
+    </li>
+    <li class="nav-item" style="list-style-type:none">
+      <a class="nav-link" data-toggle="tab" href="#clinical">Clinical Data</a>
+    </li>
+    <li class="nav-item" style="list-style-type:none">
+      <a class="nav-link" data-toggle="tab" href="#epidemiology">Epidemiology</a>
+    </li>
+    <li class="nav-item" style="list-style-type:none">
+      <a class="nav-link" data-toggle="tab" href="#genestab">Molecular Data</a>
+    </li>
+    <li class="nav-item" style="list-style-type:none">
+      <a class="nav-link" data-toggle="tab" href="#vax">Treatments &amp; Vaccines</a>
+    </li>
+    <li class="nav-item" style="list-style-type:none">
+      <a class="nav-link" data-toggle="tab" href="#taxonomy">Coronavirus Biology</a>
+    </li>
+  </ul>
+
+  <!-- Tab panes -->
+  <div class="tab-content">
+    <div id="modelstab" class="container tab-pane active"><br>
+      <p>Additional Mouse &amp; Other Model Organism Resources</p>
+      <ul>
+      <li><a href="https://www.alliancegenome.org/coronavirus-resources" target="_blank">Alliance of Genome Resources</a> Model Organism Databases Relevant to COVID-19 Research</li>
+      <li><a href="https://www.criver.com/products-services/support-your-covid-19-research?region=3696" target="_blank">Charles River Laboratories</a> Support for Your COVID-19 Research</li>
+      <li><a href="https://www.cam-su.org/cms/312566" target="_blank">Cam-Su Genomic Resource Center</a> COVID-19 Services</li>
+      <li><a href="https://www.envigo.com/covid-19-research-tools?hsCtaTracking=40be5173-e6ff-4f13-9e75-8a70dc3b7d00%7C068dd8ac-57ce-4353-86c4-ce1dd4b26a55" target="_blank">Envigo</a> Research Tools to Combat COVID-19</li>
+      <li><a href="https://mousecovid.org" target="_blank">GMMCC</a> Global Mouse Models For COVID-19 Consortium</li>
+      <li><a href="https://www.infrafrontier.eu/knowledgebase/therapeutic-area/covid-19-resources-and-measures" target="_blank">Infrafrontier</a>: COVID-19 Resources and Measures</li>
+      <li>International Mouse Phenotyping Consortium (<a href="https://www.mousephenotype.org/understand/covid-19/" target="_blank">IMPC</a>)</li>
+      <li><a href="https://www.mmrrc.org/catalog/covid_models.php" target="_blank">MMRRC</a> Mouse Models for COVID-19 Research</li>
+      <li>National Center for Advancing Translational Sciences (<a href="https://opendata.ncats.nih.gov/covid19/animal" target="_blank">NCATS</a>) Animal Model Summary Overview, OpenData COVID-19 Portal</li>
+      <li>Rat Genome Database (<a href="https://rgd.mcw.edu/wg/portals/covid-19-disease-portal-related-links/" target="_blank">RGD</a>) COVID-19 Resources</li>
+      <li>RIKEN BioResource Research Center (<a href="https://mus.brc.riken.jp/en/covid19" target="_blank">RIKEN BRC</a>) COVID-19 Related Mouse Resources</li>
+      <li><a href="https://www.taconic.com/taconic-biosciences-coronavirus-covid-19-toolkit.html" target="_blank">Taconic Biosciences</a> Coronavirus (COVID-19) Toolkit</li>
+      <li><a href="https://www.jax.org/coronavirus-information#" target="_blank">The Jackson Laboratory</a>: Coronavirus Information</li>
+      </ul>
+    </div>
+    <div id="ontologies" class="container tab-pane fade"><br>
+      <p>Biomedical Ontologies &amp; Vocabularies</p>
+      <ul>
+      <li><a href="https://www.ebi.ac.uk/ols/ontologies/cido" target="_blank">CIDO</a>: Ontology of Coronavirus Infectious Disease</li>
+      <li><a href="https://github.com/biswanathdutta/CODO" target="_blank">CODO</a> COVID-19 Ontology for Cases and Patient information</li>
+      <li>COVID-19 Surveillance Ontology <a href="https://bioportal.bioontology.org/ontologies/COVID19/?p=summary" target="_blank">  COVID19</a></li>
+      <li>Human Disease Ontology (<a href="https://disease-ontology.org/?id=DOID:0080599" target="_blank">DO</a>) terms for Coronavirus infectious disease</li>
+      <li>Gene Ontology (<a href="http://www.geneontology.xyz/covid-19.html"  target="_blank">GO</a>) terms for SARS-CoV-2/COVID-19</li>
+      <li>Homeostasis Imbalance Process Ontology (<a href="https://bioportal.bioontology.org/ontologies/HOIP" target="_blank">HOIP</a>) </li>
+      <li>COVID-19 Infectious Disease Ontology (<a href="https://bioportal.bioontology.org/ontologies/IDO-COVID-19" target="_blank">IDO-COVID- 19</a>) </li>
+      <li>Logical Observation Identifiers Names and Codes for SARS-CoV-2/COVID-19 (<a href="https://loinc.org/sars-cov-2-and-covid-19/" target="_blank">LOINC</a>) </li>
+      <li>COVID-19 and SARS-CoV-2 <a href="https://www.nlm.nih.gov/pubs/techbull/nd20/nd20_mesh_covid_terms.html" target="_blank">MeSH Terms</a></li>
+      <li>Protein Ontology (<a href="https://proconsortium.org/cgi-bin/textsearch_pro?search=search&field0=ALLFLDS&query0=ncbitaxon%3A2697049" target="_blank">PRO</a>) terms for SARS-CoV-2 proteins</li>
+      <li><a href="https://confluence.ihtsdotools.org/display/snomed/SNOMED+CT+COVID-19+Related+Content" target="_blank">SNOMED CT</a> COVID-19 Related Content</li>
+      </ul>
+    </div>
+    <div id="clinical" class="container tab-pane fade"><br>
+      <p>Clinical Presentation, Course &amp; Outcome</p>
+      <ul>
+      <li>US Centers for Disease Control and Prevention (<a href="https://www.cdc.gov/coronavirus/2019-ncov/symptoms-testing/symptoms.html" target="_blank">CDC</a>) Symptoms of Coronavirus</li>
+      <li>Clinical Data Related to COVID-19 Symptoms and Patient Outcomes from the National COVID Cohort Collaborative (<a href="https://ncats.nih.gov/n3c" target="_blank">N3C</a>)</li>
+      </ul>
+    </div>
+    <div id="epidemiology" class="container tab-pane fade"><br>
+      <p>Epidemiology &amp; COVID-19 Situation Reports</p>
+      <ul>
+      <li>Chinese Center for Disease Control and Prevention (<a href="http://weekly.chinacdc.cn/news/TrackingtheEpidemic.htm" target="_blank">CCDC</a>): Tracking the Epidemic (2021)</li>
+      <li>European Centre for Disease Prevention and Control (<a href="https://qap.ecdc.europa.eu/public/extensions/COVID-19/COVID-19.html#global-overview-tab" target="_blank">ECDC</a>) COVID-19 Situation Dashboard: Cases in Europe and Worldwide</li>
+      <li>Global cases of COVID-19 from The <a href="https://www.arcgis.com/apps/opsdashboard/index.html#/bda7594740fd40299423467b48e9ecf6" target="_blank">Johns Hopkins University</a></li>
+      <li><a href="https://nextstrain.org/ncov/global?animate=2019-12-08,2020-04-05,0,0,30000" target="_blank">NextStrain</a> visualization of the genomic epidemiology of novel coronavirus</li>
+      <li>Pan American Health Organization (<a href="https://www.paho.org/en/covid-19-situation-reports" target="_blank">PAHO</a>) COVID-19 Situation Reports</li>
+      <li>US <a href="https://www.cdc.gov/coronavirus/2019-ncov/cases-updates/variant-surveillance.html" target="_blank">CDC Genomic Surveillance</a> for SARS-CoV-2 Variants</li> 
+      <li>US Centers for Disease Control and Prevention (<a href="https://covid.cdc.gov/covid-data-tracker/?CDC_AA_refVal=https%3A%2F%2Fwww.cdc.gov%2Fcoronavirus%2F2019-ncov%2Fcases-updates%2Fcases-in-us.html#cases_casesper100klast7days" target="_blank">CDC COVID-19 Data Tracker</a>) COVID Maps, Charts, and Data</li>
+      <li><a href="https://viralzone.expasy.org/9556" target="_blank">Viralzone </a> SARS-CoV-2 Circulating Variants</li> 
+      <li>World Health Organization (<a href="https://covid19.who.int" target="_blank">WHO</a>) Coronavirus Disease (COVID-19) Dashboard</li>
+      </ul>
+    </div>
+    <div id="genestab" class="container tab-pane fade"><br>
+      <p>Genes, Molecular Interactions, Pathways &amp; Networks</p>
+      <ul>
+      <li>COVID-19 Data Portal from <a href="https://www.covid19dataportal.org" target="_blank">Europe</a> </li>
+      <li>COVID-19 Data Portal from <a href="https://covid19dataportal.jp/en/" target="_blank">Japan</a> </li>
+      <li><a href="https://covid.pages.uni.lu" target="_blank">COVID-19 Disease Map</a>: SARS-CoV-2 Virus-Host Interactions</li>
+      <li>The COVID-19 Host Genetics Initiative (<a href="https://www.covid19hg.org" target="_blank">COVID-19 hg</a>) </li>
+      <li><a href="https://www.gencodegenes.org/human/covid19_genes.html"  target="_blank">GENCODE</a>: Human Protein-coding Genes Linked to SARS-CoV-2/COVID-19</li>
+      <li><a href="https://data.oncomx.org/covid19" target="_blank">OncoMX</a>: COVID-19 Biomarkers Database</li> 
+      <li><a href="http://discovery.informatics.uab.edu/PAGER-COV/" target="_blank">PAGER-CoV</a>: Pathways, Annotated Gene-Lists, and Gene Signatures Related to Coronavirus Diseases</li>
+      <li>Protein Data Bank in Europe Knowledge Base (<a href="https://www.ebi.ac.uk/pdbe/covid-19" target="_blank">PDBe-KB</a>): COVID-19 Data Portal</li>
+      <li><a href="https://reactome.org/PathwayBrowser/#/R-HSA-9679506" target="_blank">Reactome</a> SARS-CoV Infection Pathways</li>
+      <li><a href="https://covid-19.uniprot.org/uniprotkb?query=*" target="_blank">UniProt</a> Portal for SARS-CoV-2 Proteins &amp; Receptors</li>
+      <li><a href="https://www.wikipathways.org/index.php/Portal:COVID-19" target="_blank">WikiPathways</a>: COVID-19 Pathways Portal</li>
+      </ul>
+    </div>
+    <div id="vax" class="container tab-pane fade"><br>
+      <p>Treatments, Therapeutic Interventions &amp; Vaccines</p>
+      <ul>
+      <li><a href="http://www.violinet.org/cov19vaxkb/" target="_blank">Cov19VaxKB</a>: COVID-19 Vaccine Knowledge Base</li>
+      <li><a href="https://drugs4covid.oeg.fi.upm.es" target="_blank">DRUGS4COVID</a> </li>
+      <li>Global Health Drug Discovery Institute (<a href="https://ghddi-ailab.github.io/Targeting2019-nCoV/" target="_blank">GHDDI</a>): Targeting COVID-19 Portal</li>
+      <li>National Institutes of Health (<a href="https://covid19.nih.gov/treatments-and-vaccines" target="_blank">NIH</a>) Treatments &amp; Vaccines for COVID-19</li>
+      <li>Regulatory Affairs Professionals Society (<a href="https://www.raps.org/news-and-articles/news-articles/2020/3/covid-19-vaccine-tracker" target="_blank">RAPS</a>): COVID-19 Vaccine Tracker</li>
+      <li><a href="https://www.nytimes.com/interactive/2020/science/coronavirus-vaccine-tracker.html" target="_blank">The New York Times</a> Coronavirus Vaccine Tracker</li>
+      <li>US (<a href="https://covid.cdc.gov/covid-data-tracker/?fbclid=IwAR3j7reLqs47Aj1IwxLEM3esOynBCpe1g8gxnSuFb0eGDUUr0RLb4fT43XA#vaccinations" target="_blank">CDC COVID Data Tracker</a>) Vaccination Data</li>
+      <li><a href="https://www.who.int/publications/m/item/draft-landscape-of-covid-19-candidate-vaccines" target="_blank">WHO</a> Draft Landscape of COVID-19 Candidate Vaccines</li>
+      </ul>
+    </div>
+    <div id="taxonomy" class="container tab-pane fade"><br>
+      <p>Genome Organization, Sequence Resources, Phylogeny &amp; Taxonomy</p>
+      <ul>
+      <li>EBI's NCBI Organismal Classification (NCBITaxon) for Coronaviridae from Ontology Lookup Service (<a href="https://www.ebi.ac.uk/ols/ontologies/ncbitaxon/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FNCBITaxon_11118" target="_blank">OLS</a>)</li>
+      <li><a href="https://www.elsevier.com/novel-coronavirus-covid-19" target="_blank">Elsevier</a> Novel Coronavirus Resource Directory</li>
+      <li><a href="https://talk.ictvonline.org/taxonomy/" target="_blank">ICTV</a>: International Committee on Taxonomy of Viruses</li>
+      <li>National Center for Biotechnology Information (<a href="https://www.ncbi.nlm.nih.gov/sars-cov-2/" target="_blank">NCBI</a>) SARS-CoV-2 Resources</li>
+      <li><a href="https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?mode=Tree&id=11118&lvl=3&lin=f&keep=1&srchmode=1&unlock" target="_blank">NCBI Taxonomy Browser</a></li>
+      <li><a href="https://nextstrain.org/groups/blab/sars-like-cov" target="_blank">NextStrain</a> Phylogeny of SARS-like betacoronaviruses</li>
+      <li><a href="https://nextstrain.org/ncov/global?animate=2019-12-08,2020-04-05,0,0,30000" target="_blank">NextStrain</a> visualization of the genomic epidemiology of novel coronavirus</li>
+      <li><a href="http://pdb101.rcsb.org/sci-art/goodsell-gallery/coronavirus-life-cycle" target="_blank">PDB-101</a> Molecular Landscapes by David S. Goodsell</li>
+      <li>US <a href="https://www.cdc.gov/coronavirus/2019-ncov/cases-updates/variant-surveillance.html" target="_blank">CDC Genomic Surveillance</a> for SARS-CoV-2 Variants</li> 
+      <li><a href="https://viralzone.expasy.org/9556" target="_blank">Viralzone </a> SARS-CoV-2 Circulating Variants</li> 
+      </ul>
+    </div>
+  </div>
+</div>
     </td></tr>
-     <tr><td><h4><a id="news"></a>Mice in the News</h4>
+    <!--End resources section-->
+      <tr><td><h4><a id="news"></a>Mice In the News</h4>
+  <div class="container">  
+  <button type="button" class="btn btn-primary btn-sm" data-toggle="collapse" data-target="#march">Show/Hide March 2020 News</button>
+  <div id="march" class="collapse">
     <ul>
      <li><a href="https://www.statnews.com/2020/03/05/coronavirus-labs-scramble-to-find-right-animals-for-covid-19-studies/" target="_blank">STAT News</a>, "From ferrets to mice and marmosets, labs scramble to find right animals for coronavirus studies" (March 5, 2020)</li>
      <li><a href="https://www.nature.com/articles/d41586-020-00698-x" target="_blank">Nature</a>, "Labs rush to study coronavirus in transgenic animals – some are in short supply" (March 9, 2020)</li>
@@ -345,11 +465,27 @@ In this study, investigators present data showing that 17 out of 20 FDA approved
      <li>National Public Radio (<a href="https://www.npr.org/2020/03/14/815624878/mouse-hunt-lab-races-to-grow-mice-for-covid-19-research" target="_blank">NPR</a>) "Mouse Hunt: Lab Races to Grow Mice for COVID-19 Research." (March 14, 2020)</li>
      <li><a href="https://bangordailynews.com/2020/03/18/news/hancock/maine-lab-starts-breeding-mice-for-coronavirus-vaccine/" target="_blank">Bangor Daily News</a>, "Maine lab starts breeding mice for coronavirus vaccine" (March 18, 2020)</li>
      <li><a href="https://www.sciencemag.org/news/2020/03/it-s-heartbreaking-labs-are-euthanizing-thousands-mice-response-coronavirus-pandemic" target="_blank">Science</a>, "'It’s heartbreaking.' Labs are euthanizing thousands of mice in response to coronavirus pandemic" (Mar. 23, 2020)</li>
+     </ul>
+  </div>
+</div>
+<br>
+<div class="container">  
+  <button type="button" class="btn btn-primary btn-sm" data-toggle="collapse" data-target="#april">Show/Hide April 2020 News &nbsp; </button>
+  <div id="april" class="collapse">
+    <ul>
      <li><a href="https://thehill.com/homenews/administration/490866-first-peer-reviewed-coronavirus-vaccine-shows-promise-in-mice" target="_blank">The Hill</a>, "First peer-reviewed coronavirus vaccine shows promise in mice" (April 2, 2020) </li>
      <li><a href="https://www.scientificamerican.com/article/new-coronavirus-drug-shows-promise-in-animal-tests1/" target="_blank">Scientific American</a>, "New coronavirus drug shows promise in animal tests" (April 7, 2020)</li>
      <li><a href="https://www.technologynetworks.com/tn/news/antiviral-against-covid-19-reduces-damage-in-mouse-lungs-333142" target="_blank">Technology Networks</a> "Antiviral against COVID-19 reduces damage in mouse lungs" (April 7, 2020)</li>
      <li><a href="https://www.advancedsciencenews.com/mouse-study-shows-engineered-virus-might-be-able-to-block-coronavirus-infections/" target="_blank">Advanced Science News</a>, "Mouse study shows engineered virus could block coronavirus infections" (April 8, 2020)</li>
      <li><a href="https://www.sciencemag.org/news/2020/04/mice-hamsters-ferrets-monkeys-which-lab-animals-can-help-defeat-new-coronavirus" target="_blank">Science</a>, "Mice, hamsters, ferrets, monkeys. Which lab animals can help defeat the new coronavirus?" (April 13, 2020)</li>
+     </ul>
+  </div>
+</div>
+<br>
+<div class="container">  
+  <button type="button" class="btn btn-primary btn-sm" data-toggle="collapse" data-target="#may">Show/Hide May 2020 News &nbsp; &nbsp;</button>
+  <div id="may" class="collapse">
+    <ul>
      <li><a href="https://www.knowablemagazine.org/article/health-disease/2020/building-mouse-squad-against-covid-19?fbclid=IwAR1ZLYGkpe774kXcLq0rJETVNZhMo2IJL6V6XyHwQZTexRhjPJV_XJGFSIg" target="_blank">Knowable Magazine</a>, "Building a mouse squad against Covid-19" (May 14, 2020)</li>
      <li><a href="https://www.nih.gov/news-events/nih-research-matters/microneedle-coronavirus-vaccine-triggers-immune-response-mice" target="_blank">NIH News</a> "Microneedle coronavirus vaccine triggers immune response in mice." (April 14, 2020)</li>
      <li><a href="https://www.eurekalert.org/pub_releases/2020-05/pp-rci050420.php" target="_blank">EurekAlert</a> "Russia creates its own humanized mice to test COVID-19 vaccines and drugs" (May 4, 2020)</li>
@@ -362,9 +498,12 @@ In this study, investigators present data showing that 17 out of 20 FDA approved
      <li><a href="https://www.sciencedaily.com/releases/2020/05/200528092132.htm" target="_blank">ScienceDaily</a> "HLH research points to treatment for COVID-19 cytokine storms" (May 28, 2020)</li>
      <li><a href="https://www.news-medical.net/news/20200528/Transgenic-mouse-model-of-HLH-may-play-key-role-in-saving-lives-during-COVID-19.aspx" target="_blank">News-Medical.Net</a> "Transgenic mouse model of HLH may play key role in saving lives during COVID-19" (May 28, 2020)</li>
      <li><a href="https://www.timesnownews.com/health/article/coronavirus-mouse-model-mimics-covid-19-infection-in-humans-may-help-test-drugs-study/598316" target="_blank">Times Now</a> "Coronavirus: Mouse model mimics COVID-19 infection in humans, may help test drugs" (May 28, 2020)</li>
-     <li><a href="https://science.sciencemag.org/content/368/6494/942" target="_blank">Science</a> "The search for a COVID-19 animal model" (May 29, 2020)</li>
      <li><a href="https://www.taconic.com/taconic-insights/infectious-disease/covid-19-mouse-model-guide.html" target="_blank">Taconic</a> "An overview of mouse models for COVID-19" (May 30, 2020)</li>
      <li><a href="https://scitechdaily.com/new-research-points-to-treatment-for-covid-19-cytokine-storms-solution-to-global-pandemic/" target="_blank">SciTechDaily</a> "New research points to treatment for COVID-19 cytokine storms, solution to global pandemic" (May 31, 2020)</li>
+      </ul>
+  </div>
+</div>
+  <ul>
      <li><a href="https://www.regmednet.com/covid-19-fibroblasts-mice/" target="_blank">RegMedNet</a> "COVID-19 treatment breakthrough using fibroblast cell therapy in mice" (June 1, 2020)</li>
      <li><a href="https://www.hospimedica.com/covid-19/articles/294782795/transgenic-mouse-that-models-immune-diseases-cytokine-storms-could-point-to-treatment-solution-for-covid-19.html" target="_blank">HospiMedica</a> "Transgenic mouse that models immune disease's cytokine storms could point to treatment solution for COVID-19" (June 5, 2020)</li>
      <li><a href="https://nordiclifescience.org/danish-coronavirus-vaccine-passes-test-in-mice/" target="_blank">Nordic Life Science News</a> "A vaccine against COVID-19, developed by researchers from the Univ. of Copenhagen, has been tested in mice and shows promising results" (June 10, 2020)</li>
@@ -386,6 +525,44 @@ In this study, investigators present data showing that 17 out of 20 FDA approved
      <li><a href="https://www.theweek.in/news/india/2020/09/12/niis-potential-covid-19-vaccine-shows-encouraging-results-in-study-on-mice.html" target="_blank">TheWeek News India</a> "NII's potential COVID-19 vaccine shows encouraging results in study on mice" (September 12, 2020)</li>
      <li><a href="https://www.livescience.com/brain-invasion-coronavirus.html" target="_blank">LIVE SCIENCE</a> "The new coronavirus can infect brain cells, study finds" (September 13, 2020)</li>
      <li><a href="https://www.news-medical.net/news/20200914/Keto-diet-could-be-beneficial-for-elderly-COVID-19-patients.aspx" target="_blank">News-Medical.Net</a> "Keto diet could be beneficial for elderly COVID-19 patients" (September 14, 2020)</li>
+     <li><a href="https://www.news-medical.net/news/20201012/Nasal-spray-COVID-19-vaccine-shows-promising-results-in-mice.aspx" target="_blank">News-Medical.Net</a> "Nasal spray COVID-19 vaccine shows promising results in mice" (October 12, 2020)</li>
+     <li><a href="https://www.news-medical.net/news/20201018/Obesity-changes-ACE2-and-TMPRSS2-expression-in-mice-Implications-for-COVID-19.aspx" target="_blank">News-Medical.Net</a> "Obesity changes ACE2 and TMPRSS2 expression in mice: Implications for COVID-19" (October 18, 2020)</li>
+     <li><a href="https://www.globenewswire.com/news-release/2020/10/19/2110138/0/en/Global-Mice-Model-Market-Report-2020-2025-Impact-of-COVID-19-Increasing-Demand-for-Humanized-Mice-Models.html" target="_blank">GlobeNewsWire</a> "Global mice model market report 2020-2025: impact of COVID-19 - increasing demand for humanized mice models" (October 19, 2020)</li>
+     <li><a href="https://www.sciencenews.org/article/covid-19-coronavirus-immune-system-chemicals-deadly-cytokine-storm" target="_blank">ScienceNews</a> "How two immune system chemicals may trigger COVID-19’s deadly cytokine storms" (October 30, 2020)</li>
+     <li><a href="https://www.genengnews.com/news/covid-19-nanoparticle-vaccine-elicits-high-levels-of-protective-antibodies-in-mice/" target="_blank">Genetic Engineering &amp; Biotechnology News</a> "COVID-19 nanoparticle vaccine elicits high levels of protective antibodies in mice" (November 3, 2020)</li>
+     <li><a href="https://www.the-scientist.com/news-opinion/the-many-model-systems-of-covid-19-68125" target="_blank">The Scientist</a> "The many model systems of COVID-19" (November 4, 2020)</li>
+     <li><a href="https://www.news-medical.net/news/20201109/Promising-yeast-expressed-SARS-CoV-2-vaccine-candidate-effective-in-mice.aspx" target="_blank">News-Medical.Net</a> "Promising yeast-expressed SARS-CoV-2 vaccine candidate effective in mice" (November 9, 2020)</li>
+     <li><a href="https://www.fiercebiotech.com/research/adagio-s-covid-antibody-protects-mice-and-zaps-related-viruses-lab-tests" target="_blank">FIERCE Biotech</a> "Adagio's COVID-19 antibody protects mice and zaps related viruses in lab tests" (November 20, 2020)</li>
+     <li><a href="https://www.news-medical.net/news/20201126/Transgenic-mouse-model-could-recapitulate-severe-COVID-19-in-humans.aspx" target="_blank">News-Medical.Net</a> "Transgenic mouse model could recapitulate severe COVID-19 in humans" (November 26, 2020)</li>
+     <li><a href="https://www.drugtargetreview.com/news/77590/covid-19-vaccine-candidate-is-96-4-percent-effective-in-mice-study-shows/" target="_blank">Drug Target Review</a> "COVID-19 vaccine candidate is 96.4 percent effective in mice, study shows" (December 1, 2020)</li>
+     <li><a href="https://www.laboratoryequipment.com/570768-Repurposed-Mouse-Model-Sheds-Light-on-Loss-of-Smell-in-COVID-19/" target="_blank">LaboratoryEquipment.com</a> "Repurposed mouse model sheds light on loss of smell in COVID-19 patients" (December 2, 2020)</li>
+     <li><a href="https://www.fiercebiotech.com/research/covid-19-vaccines-based-novel-platforms-show-early-promise-mice" target="_blank">FIERCE Biotech</a> "COVID-19 vaccines based on novel platforms show early promise in mice" (December 3, 2020)</li>
+     <li><a href="https://medicineatmichigan.org/news-research/2020/fall/making-new-mouse-could-transform-covid-19-research" target="_blank">Medicine at Michigan</a> "Making a new mouse could transform COVID-19 research" (Autumn 2020)</li>
+     <li><a href="https://www.texasstandard.org/stories/meet-the-lab-mice-helping-scientists-find-a-covid-19-vaccine/" target="_blank">TexasStandard</a> "Meet the lab mice helping scientists find a COVID-19 vaccine" (December 7, 2020)</li>
+     <li><a href="https://medicalxpress.com/news/2020-12-scientists-covid-virus-multiple-failure.html" target="_blank">MedicalXpress</a> "Scientists discover how COVID-19 virus causes multiple organ failure in mice" (December 8, 2020)</li>
+     <li><a href="https://www.sciencetimes.com/articles/28616/20201211/inhaled-vaccines-show-effectiveness-strengthening-immune-response-mice-primates.htm" target="_blank">The Science Times</a> "Inhaled vaccines show effectiveness in strengthening immune response in mice, primates" (December 11, 2020)</li>
+     <li><a href="https://www.news-medical.net/news/20210106/Modified-Vaccinia-Ankara-model-vaccine-prevents-COVID-19-in-transgenic-mice-study.aspx" target="_blank">News-Medical.Net</a> "Modified Vaccinia Ankara model vaccine prevents COVID-19 in transgenic mice study" (January 6, 2021)</li>
+     <li><a href="https://www.sciencedaily.com/releases/2021/01/210108120102.htm" target="_blank">Science Daily</a> "Single-dose COVID-19 vaccine triggers antibody response in mice" (January 8, 2021)</li>
+     <li><a href="https://www.sciencedaily.com/releases/2021/01/210119114456.htm" target="_blank">Science Daily</a> "Study finds COVID-19 attack on brain, not lungs, triggers severe disease in mice" (January 19, 2021)</li>
+     <li><a href="https://www.eurekalert.org/pub_releases/2021-01/asfm-nme012221.php" target="_blank">EurekAlert</a> "NSAIDs might exacerbate or suppress COVID-19 depending on timing, mouse study suggests" (January 22, 2021)</li>
+     <li><a href="https://news.yahoo.com/researchers-found-far-higher-levels-125800625.html" target="_blank">Yahoo News</a> "Researchers found far higher levels of coronavirus in the brains of mice than the lungs - a possible explanation for neurological symptoms" (January 28, 2021)</li>
+     <li><a href="https://www.mdislander.com/maine-news/mouse-research-aids-covid-19-response" target="_blank">Mount Desert Islander</a> "Mouse research aids COVID-19 response" (January 29, 2021)</li>
+     <li><a href="https://news.ki.se/covid-19-vaccine-from-new-vaccine-platform-effective-in-mice" target="_blank">Karolinska Institutet News</a> "COVID-19 vaccine from new vaccine platform effective in mice" (February 4, 2021)</li>
+     <li><a href="https://www.news-medical.net/news/20210204/Emory-MVA-COVID-19-vaccine-proven-safe-and-effective-in-mice-and-monkeys.aspx" target="_blank">News-Medical.Net</a> "Emory MVA COVID-19 vaccine proven safe and effective in mice and monkeys" (February 4, 2021)</li>
+     <li><a href="https://www.nytimes.com/2021/02/09/health/universal-coronavirus-vaccine.html" target="_blank">The New York Times</a> "Could a single vaccine work against all coronaviruses?" (February 9, 2021)</li>
+     <li><a href="https://www.umaryland.edu/news/archived-news/february-2021/umb-study-novavax-vaccine-demonstrates-strong-immune-response.php" target="_blank">University of Maryland Baltimore News</a> "Novavax Vaccine Demonstrates Strong Immune Response" (February 9, 2021)</li>
+     <li><a href="https://www.medicalnewstoday.com/articles/covid-19-antiviral-prevents-and-treats-infection-in-lab-tests" target="_blank">MedicalNewsToday</a> "COVID-19: Antiviral prevents and treats infection in lab tests" (February 12, 2021)</li>
+     <li><a href="https://www.news-medical.net/news/20210214/New-mouse-model-of-SARS-CoV-2-infection-reflects-features-of-human-infection.aspx" target="_blank">News-Medical.Net</a> "New mouse model of SARS-CoV-2 infection reflects features of human infection" (February 14, 2021)</li>
+     <li><a href="https://www.news-medical.net/news/20210221/SARS-CoV-2-DNA-vaccine-tested-in-animal-model.aspx" target="_blank">News-Medical.Net</a> "SARS-CoV-2 DNA vaccine tested in animal model" (February 21, 2021)</li>
+     <li><a href="https://news.cgtn.com/news/2021-02-21/Influenza-virus-can-promote-COVID-19-infection-in-cells-mice-study-Y49Oj9ZUR2/index.html" target="_blank">CGTN Science News</a> "Influenza virus can promote COVID-19 infection in cells, mice" (February 21, 2021)</li>
+     <li><a href="https://www.news-medical.net/news/20210316/Novel-protein-construct-prevents-lethal-COVID-19-in-mice.aspx" target="_blank">News-Medical.Net</a> "Novel protein construct prevents lethal COVID-19 in mice" (March 16, 2021)</li>
+     <li><a href="https://globalnews.ca/news/7707904/covid-variants-human-antibodies-mice/" target="_blank">Global News</a> "COVID-19: No variants can escape human antibodies yet, though some can infect mice" (March 19, 2021)</li>
+     <li><a href="https://www.news-medical.net/news/20210323/A-new-COVID-19-candidate-vaccine-induces-robust-humoral-and-cellular-immune-responses-in-mice.aspx" target="_blank">News-Medical.Net</a> "A new COVID-19 candidate vaccine induces robust humoral and cellular immune responses in mice" (March 23, 2021)</li>
+     <li><a href="https://www.fiercebiotech.com/research/curevac-s-mrna-covid-19-vaccine-protects-mice-against-aggressive-coronavirus-variant" target="_blank">Fierce Biotech</a> "CureVac's COVID-19 mRNA vaccine protects mice against aggressive coronavirus variant" (March 24, 2021)</li>
+     <li><a href="https://www.news-medical.net/news/20210324/Neutralizing-antibodies-to-SARS-CoV-2-in-mice-depend-on-Fc-effector-function.aspx" target="_blank">News-Medical.Net</a> "Neutralizing antibodies to SARS-CoV-2 in mice depend on Fc effector function" (March 24, 2021)</li>
+     <li><a href="https://www.webmd.com/lung/news/20210325/covid-variants-detected-in-animals-may-find-host-in-mice" target="_blank">WebMD</a> "COVID variants detected in animals, may find hosts in mice" (March 25, 2021)</li>
+     <li><a href="https://www.forbes.com/sites/williamhaseltine/2021/03/26/from-cats-and-dogs-to-minks-and-mice-covid-19-variants-are-infecting-the-ecosystem/?sh=6cb574ee3c3f" target="_blank">Forbes</a> "From cats and dogs to minks and mice, COVID-19 variants are infecting the ecosystem" (March 26, 2021)</li>
+     <li><a href="https://www.nytimes.com/2021/03/31/health/coronavirus-mice-animals.html" target="_blank">The New York Times</a> "Virus variants can infect mice, scientists report" (March 31, 2021)</li>
     </ul>
     </td></tr>
    </table>
