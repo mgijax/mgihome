@@ -92,8 +92,6 @@ def main ():
         '../www/include/fewi_url.html')
     writeStringAsIncludeFile (config['FEWI_URL'], \
         '../www/include/fewi_url.html')
-    writeStringAsIncludeFile (config['QUICKSEARCH_URL'], \
-        '../www/include/quicksearch_url.html')        
     writeStringAsIncludeFile (config['WKSILVERS_URL'], \
             '../www/include/wksilvers_url.html')        
     writeStringAsIncludeFile (config['COOKBOOK_URL'], \
