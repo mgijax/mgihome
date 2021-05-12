@@ -357,7 +357,7 @@ hr.dashed {
     <!-- homology -->
     <a class='minihomeAnchor' href='<!--#include file='include/homepages_url.html'-->homology.shtml'>
     <div class="homepageButton">
-      <img src="<!--#include file='include/mgihome_url.html'-->homepages/images/homepage_HomologyLogo2.png"></img>
+      <img src="<!--#include file='include/mgihome_url.html'-->homepages/images/Ortho.png"></img>
       <span class='homepageButtonText'>Vertebrate Homology</span>
     </div>
     </a>
@@ -446,7 +446,7 @@ hr.dashed {
   <div id="randomMsgLayoutDiv" class="blueBorder boxBG">
     <div id="slides" class="relativePos">
 
-    <a href="https://vimeo.com/249851398/b8cf651b62"><img class="randomMsgImage" src="<!--#include file='include/mgihome_url.html'-->homepages/images/Carousel_videoslide1.png"></img></a>
+    <a href="<!--#include file='include/mgihome_url.html'-->news/whatsnew.shtml#june7_2021"><img class='randomMsgImage' src="<!--#include file='include/mgihome_url.html'-->homepages/images/Carousel_B39.png"></img></a>
     <a href="https://www.jax.org/mgi-coronavirus-info"><img class='randomMsgImage' src="<!--#include file='include/mgihome_url.html'-->homepages/images/Carousel_Covid2.png"></img></a>
     <a href="<!--#include file='include/mgihome_url.html'-->news/whatsnew.shtml#mar9_2020"><img class='randomMsgImage' src="<!--#include file='include/mgihome_url.html'-->homepages/images/Carousel_Morpheus.png"></img></a>
     <a href="<!--#include file='include/mgihome_url.html'-->news/news_2018.shtml#sept24_2018"><img class='randomMsgImage' src="<!--#include file='include/mgihome_url.html'-->homepages/images/Carousel_MGV.png"></img></a>
@@ -459,11 +459,12 @@ hr.dashed {
   <div id="mgiWhatsNew" class="blueBorder boxBG" >
     <div class="boxTitle">
       <div class="left">What's new at MGI</div>
-      <div class="right small">updated April 26, 2021 &nbsp;</div>
+      <div class="right small">updated June 7, 2021 &nbsp;</div>
     </div>
     <ul class="frontpageBulletPoints">
+     <li>MGI is updated to the reference genome Build 39. <a class="homeLink" href="<!--#include file="include/mgihome_url.html"-->news/whatsnew.shtml#june7_2021">Read more&hellip;</a></li>
      <li>Selected sets of RNA-Seq data have been added to GXD. <a class="homeLink" href="<!--#include file="include/mgihome_url.html"-->news/whatsnew.shtml#mar9_2020">Read more&hellip;</a></li>
-     <li>Filters to select genes using gene function, phenotype and disease ontology annotations have been added to gene expression data summaries <a class="homeLink" href="<!--#include file="include/mgihome_url.html"-->news/whatsnew.shtml#mar9_2020">Read more&hellip;</a></li>
+     <li>Filters to select genes using gene function, phenotype and disease ontology annotations have been added to gene expression data summaries. <a class="homeLink" href="<!--#include file="include/mgihome_url.html"-->news/whatsnew.shtml#mar9_2020">Read more&hellip;</a></li>
      <li>Heat map visualization and analysis tools for RNA-seq data now available at GXD. <a class="homeLink" href="<!--#include file="include/mgihome_url.html"-->news/whatsnew.shtml#mar9_2020">Read more&hellip;</a></li>
      <li>Additional lacZ knock in reporter data from the IMPC. <a class="homeLink" href="<!--#include file="include/mgihome_url.html"-->news/whatsnew.shtml#apr26_2021">Read more&hellip;</a></li>
      <li>MouseMine now includes sequence data for 19 mouse inbred strains. <a class="homeLink" href="<!--#include file="include/mgihome_url.html"-->news/news_2018.shtml#sept7_2018">Read more&hellip;</a></li>
