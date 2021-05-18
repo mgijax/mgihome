@@ -42,7 +42,8 @@
  	 <dt><b>MGI is updated to the reference genome Build 39</b></dt>
 
 <dt>MGI has integrated the latest C57BL/6J assembly, GRCm39. This includes annotations from NCBI and Ensembl, and updated coordinates for genome features, transcription start sites, and gene traps. SNP coordinates in MGI were not updated to GRCm39 for this release, but will be in a future release.</dt>
-<dt>MGI now loads vertebrate orthology data based on the "stringent" set of homology class data from the Alliance of Genome Resources. These data include human, rat, and zebrafish homologs.</dt>
+<dt>MGI now loads vertebrate orthology data based on the "stringent" set of homology class data from the Alliance of Genome Resources. The orthology inferences from different methods have been integrated using the DRSC Integrative Ortholog Prediction Tool (<a href="http://www.flyrnai.org/diopt" target="_blank">DIOPT</a>). 
+DIOPT integrates a number of existing methods including those used by the Alliance: Ensembl Compara, HGNC, Hieranoid, InParanoid, OMA, OrthoFinder, OrthoInspector, PANTHER, PhylomeDB, Roundup, TreeFam, and ZFIN. These data include human, rat, and zebrafish homologs.</dt>
  	 </dl>
    </td>
   </tr>
