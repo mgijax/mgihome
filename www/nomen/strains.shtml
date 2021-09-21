@@ -25,7 +25,7 @@ h4 {
 
 <center>  <span class="titleBarMainTitle">Guidelines for Nomenclature of Mouse and Rat Strains</span>
   <br/>
- <span class="titleBarSubTitle"> Revised: January 2016</span></center> 
+ <span class="titleBarSubTitle"> Revised: September 2021</span></center> 
 
 </div> <!--titleBar-->
 
@@ -69,7 +69,10 @@ h4 {
      <ul style="list-style-type:none;">
       <li><a href="#ris">4.1&nbsp;&nbsp;Recombinant Inbred Strains</a></li>
       <li><a href="#ccstrains">4.2&nbsp;&nbsp;Collaborative Cross Strains</a></li>
-      <li><a href="#mis">4.3&nbsp;&nbsp;Mixed Inbred Strains</a></li>
+      <li><a href="#mis">4.3&nbsp;&nbsp;Defined genetic lines, background strains or stocks</a>
+        <ul>
+         <li><a href="#obsolete">4.3.1 &nbsp;&nbsp;Obsolete nomenclature with three inbred sublines</a></li>
+        </ul></li>
       <li><a href="#rcs">4.4&nbsp;&nbsp;Recombinant Congenic Strains</a></li>
       <li><a href="#ail">4.5&nbsp;&nbsp;Advanced Intercross Lines</a></li>
      </ul></li>
@@ -396,26 +399,29 @@ the same as F1s between other inbred strains.
 </p>
 <p>Once the full F1 designation is specified in a publication, an abbreviated version can be used. In the above example, the abbreviation would be: &nbsp;&nbsp;&nbsp; RIX:CC(0012 X 2134)
 
-<h3><a id="mis"></a>4.3&nbsp;&nbsp;&nbsp;Mixed Inbred Strains</h3>
+<h3><a id="mis"></a>4.3&nbsp;&nbsp;&nbsp;Defined genetic lines, background strains or stocks</h3>
 
-<p>Incipient inbred stocks or inbred strains that are derived from up to three parental strains (one of which could be a gene-targeted ES cell line) can be designated using upper case abbreviations for the three strains, separated by semicolons. If the strains involved have a donor/host relationship, the strain designation preceding the first semicolon should be the host and the final strain following the semicolon(s) the donor, specifically for targeted mutations where the donor is the ES cell line. Otherwise, the strain abbreviation order may be by primary contributing strain or alphanumeric order. Laboratory codes and serial numbers should be used to distinguish strains produced in different laboratories, or multiple strains from the same laboratory. Because these designations may be used for a mixed stock before it is fully inbred, these stocks should not be assumed to be inbred unless accompanied by an inbreeding generation number (<i>e.g.</i>, &gt; F20).</p> 
+<p>Mouse or rat lines derived from two standard inbred strains (one of which may be the strain of origin of the allele) at any inbreeding generation or at a backcross generation < N5 may be designated using approved abbreviations of the strains symbols separated by a semicolon.</p>
+<p>If the strains involved have a donor/host relationship, the strain abbreviation preceding the semicolon represents the host strain and the abbreviation following the semicolon the donor strain. For a strain bearing a targeted mutation, the strain of the ES cell line is the donor strain. 
+If no clear host/donor relationship is known, the strain abbreviations may be ordered based on the relative contributions, with primary contributing strain first, or alphanumerically.</p>
+<p>Laboratory codes and serial numbers should be used to distinguish strains produced in different laboratories or multiple strains from the same laboratory, respectively. 
+Because these designations may be used for a derivative line before it is fully inbred, these stocks should not be assumed to be inbred unless known to have been maintained by sister x brother (sxb) crosses for at least 19 generations following the initial inter-strain cross(es) (> F20) or the equivalent.</p></p> 
 
-<p><b>Example:</b>
+<p><b>Examples:</b>
 <blockquote>
 <table>
-<tr><td>B6;129-<i>Acvr2<sup>tm1Zuk</sup></i></td><td>A mixed strain derived from C57BL/6J and a 129 ES cell line carrying a targeted knockout of the <i>Acvr2</i> gene.</td></tr>
-<tr><td><span style="white-space: nowrap">B6Brd;B6Dnk;B6N-<i>Tyr<sup>c-Brd</sup>Jph3<sup>tm1a(KOMP)Wtsi/</sup></i>Mbp&nbsp;&nbsp;</span></td><td>A mixed strain carrying a targeted mutation of the <i>Jph3</i> gene. The mixed strain was derived from: C57BL/6Brd-<i>Tyr<sup>c-Brd</sup></i>, C57BL/6Dnk, and C57BL/6N and is maintained by the Mouse Biology Program UCD (Mbp).</td></tr>
+<tr><td><span style="white-space: nowrap">B6;129P2-<i>Ackr4<sup>tm1Dgen</sup></i>/Mmnc&nbsp;&nbsp;</span></td><td>A derivative strain/stock derived from C57BL/6J and a 129P2/OlaHsd-derived ES cell line carrying a targeted knockout of the <i>Ackr4</i> gene bred by the UNC node of MMRRC (lab code Mmnc).</td></tr>
+<tr><td>B6;D2-<i>Kitl<sup>Sl-d</sup></i>/H</td><td>A derivative strain/stock derived from C57BL/6J and DBA/2J, in which the <i>Kitl<sup>Sl-d</sup></i> allele arose, and bred at MRC Harwell (lab code H).</td></tr>
 </table>
 </blockquote>
 </p>
 
-<p>A mutant strain, incipient or inbred, derived from more than three progenitor strains or having genetic contribution from an unknown source is considered a "mixed" inbred and may be designated as STOCK followed by a space (<I>i.e.,</I> no hyphen) and the mutation(s) or chromosome anomaly it carries.</p>
+<p>When more than two progenitor strains contribute to the genetic background or there is a genetic contribution from an unknown or non-inbred source, the line may be designated “STOCK” in all capital letters followed by a space (not a hyphen) and symbol(s) for any mutations, transgenes, or chromosomal anomalies it carries.</p>
 
 <p><b>Example:</b>
 <blockquote>
 <table>
-<tr><td><span style="white-space: nowrap">STOCK Rb(16.17)5Bnr&nbsp;&nbsp;</span></td><td>An inbred strain of unknown or complex
-background carrying the Robertsonian translocation Rb(16.17)5Bnr.</td></tr>
+<tr><td><span style="white-space: nowrap">STOCK ey4/BOC&nbsp;&nbsp;</span></td><td>The eyeless 4 mutation was identified in the C3Bir.129P2(B6)-<i>Il10<sup>tm1Cgn</sup></i>/Lt strain by the laboratory of Dr. Bo Chang. The targeted mutation was removed from this line through backcrossing once or twice to C57BL/6J, but not backcrossed to the point of congenicity, and the line was then bred to homozygosity for eyeless 4 and maintained by sibling intercrossing for many years.</td></tr>
 </table>
 </blockquote>
 </p>
@@ -431,12 +437,27 @@ uppercase, provided the symbols are short. Because the change in strain name is 
 </blockquote>
 </p>
 
-<P>When a mutant allele or chromosomal aberration is maintained by crossing animals bearing the mutation to an F1 hybrid at every generation or at alternate generation(s), the stock is designated by the symbol that would be used for that F1, but without the &quot;F1&quot; suffix, and followed by the appropriate allele or chromosome anomaly symbol.</p>
+<P>When a genetic alteration is maintained by crossing animals bearing it to an F1 hybrid at every generation or at alternate generations, the stock is designated by the abbreviated name of that F1, but without the &quot;F1&quot; suffix.</p>
 
 <p><b>Examples:</b>
 <blockquote>
 <table>
 <tr><td><span style="white-space: nowrap">B6C3Fe <i>a/a</i>-<i>Dh</i>&nbsp;&nbsp;</span></td><td>The <i>Dh</i> (dominant hemimelia) mutation is maintained by crossing to a (B6C3Fe <i>a/a</i>)F1 at each generation, but the stock itself is not an F1.</td></tr>
+</table>
+</blockquote>
+</p>
+
+<h4><a id="obsolete">4.3.1&nbsp;&nbsp;&nbsp;Obsolete nomenclature with three inbred sublines</a></h4>
+
+<p>A one-time, deviation from the rule above was made for certain KOMP/EUCOMM allele-bearing strains that were derived from three inbred sublines to note the contribution from uncommon C57BL/6 sublines. This currently is <i>not approved nomenclature. 
+What follows is for use only in interpreting, and not in assigning, strain names</i>.</p>
+<p>The order of the strain abbreviations in these strains’s names is: 1) Sanger Colony Background Strain; 2) Test Cross Strain; 3) ES Cell Strain (donor). If the background and test cross strains are the same, the strain name includes only two abbreviations, ordered as described in the previous paragraph. 
+The identities of the Background and Test Cross strains for KOMP/EUCOMM alleles of specific gene(s) can be accessed from <a href="https://www.mousephenotype.org/imits/open/mi_attempts?utf8=%E2%9C%93&q%5Bterms%5D=Mysm1%0D%0A&q%5Bproduction_centre_name%5D=&q%5Bstatus_name%5D" target="_blank">here</a>.</p>
+
+<p><b>Example:</b>
+<blockquote>
+<table>
+<tr><td><span style="white-space: nowrap">B6Brd;B6Dnk;B6N-<i>Tyr<sup>c-Brd</sup> Jph3<sup>tm1a(KOMP)Wtsi</sup></i>/Mbp&nbsp;&nbsp;</span></td><td>A mixed strain carrying a targeted mutation of the <i>Jph3</i> gene generated in a C57BL/6N-derived ES cell line and maintained in a background that includes C57BL/6Brd-<i>Tyr<sup>c-Brd</sup></i> and C57BL/6Dnk at the UCD Mouse Biology Program (Mbp).</td></tr>
 </table>
 </blockquote>
 </p>
@@ -552,30 +573,58 @@ mutation at F110 in an inbred strain.</td></tr>
 <h3><a id="congenic"></a>5.2&nbsp;&nbsp;&nbsp;Congenic Strains</h3>
 
 <p>Congenic strains are produced by repeated backcrosses to an inbred (background) strain, with
-selection for a particular marker from the donor strain (<a href="#snell78">Snell 1978</a>, <a href="#flaherty">Flaherty 1981</a>). Congenic lines that differ at a histocompatibility locus and therefore resist each other's grafts are called congenic resistant (CR) lines.</p>
+selection for a particular marker from the donor strain (<a href="#snell78">Snell 1978</a>, <a href="#flaherty">Flaherty 1981</a>). Congenic lines that differ at a histocompatibility locus, and therefore resist each other's grafts, are called congenic resistant (CR) lines.</p>
 
-<p>A strain developed by this method is regarded as congenic when a minimum of 10 backcross generations to the background strain have been made, counting the first hybrid or F1 generation as generation 1. At this point the residual amount of unlinked donor genome in the strain is likely to be less than 0.01. (Note that the amount of donor genome linked to the selected gene or marker is reduced at a much slower rate, approximately equivalent to 200/N, where N is the number of backcross generations for N&gt;5 (<a href="#flaherty">Flaherty 1981</a>; <a href="#silver">Silver 1995</a>).</p>
+<p>A strain developed by this method is regarded as a full congenic when a minimum of 10 backcross generations to the host background strain have been made, counting the first hybrid or F1 generation as generation 1.
+ At this point the residual amount of unlinked donor genome in the strain is mathematically predicted to be less than 0.01. (Note that the amount of donor genome linked to the selected gene or marker is reduced at a much slower rate, approximately equivalent to 200/N, where N is the number of backcross generations for N&gt;5 (<a href="#flaherty">Flaherty 1981</a>; <a href="#silver">Silver 1995</a>).</p>
 
-<p>Marker assisted breeding or marker assisted selection breeding, also known as &quot;speed congenics&quot; permits the production of congenic strains equivalent to 10 backcross generations in as few as 5 generations. (<a href="#markel">Markel <I>et al.</I>, 1997</a>; <a href="#wakeland">Wakeland <I>et al</I>., 1997</a>). Provided that the appropriate marker selection has been used, these are termed congenic strains if the donor strain contribution unlinked to the selected locus or chromosomal region is less than 0.01. Ideally, descriptions of speed congenic strains in first publications thereof should include the number and genomic spacing of markers used to define the congenicity of the strain. Because speed congenics depend upon thorough marker analysis and can vary by particular experimental protocol, the inbred status of speed congenics should be regarded with caution.</p>
+<p>When a strain reaches backcross generation N5, it is considered an incipient congenic, with the donor genome contributing mathematically less than 3.2%. At this point, congenic nomenclature can be used. This modification was accepted in the late 1990's.</p>
 
-<p>Congenic strains are designated by a symbol consisting of three parts. The full or abbreviated symbol of the recipient strain is separated by a period from an abbreviated symbol of the donor strain, this being the strain in which the allele or mutation originated, which may or may not be its immediate source in constructing the congenic strain. A hyphen then separates the strain name from the symbol (in italics) of the differential allele(s) introgressed from the donor strain.</p>
+<p>Marker assisted breeding or marker assisted selection breeding, also known as &quot;speed congenics,&quot; permits the production of congenic strains equivalent to 10 backcross generations in as few as 5 generations. (<a href="#markel">Markel <I>et al.</I>, 1997</a>; <a href="#wakeland">Wakeland <I>et al</I>., 1997</a>). 
+Provided that the appropriate marker selection has been used, these are termed congenic strains if the donor strain contribution unlinked to the selected locus or chromosomal region is less than 0.01%. Ideally, descriptions of speed congenic strains in first publications thereof should include the number and genomic spacing of markers used to define the congenicity of the strain. Because speed congenics depend upon thorough marker analysis and can vary by particular experimental protocol, the inbred status of speed congenics should be regarded with caution.</p>
 
-<p>In cases where <b>the chromosome on which the mutation arose is unknown,<I> e.g.</I>, the donor is not inbred or is complex or an F1 hybrid</b>, the symbol Cg should be used to denote this complex genetic origin. The use of the donor strain symbol or Cg is essential to distinguish congenic from coisogenic strains. Cg also is used to designate a strain constructed by crossing together two congenic strains that have been backcrossed separately to the same host background, but where their respective donor strains differ.  Cg also is applied where alleles originate from a single donor strain, but the congenic strain also carries other coisogenic alleles. The use of Cg after the period as the donor strain indicates that multiple alleles in the strain name came from more than one source or that the genetic origin of at least one allele in the strain name is uncertain. </p>
+<p>Congenic strain symbols (from left to right) contain: the official abbreviation for the host strain followed by a period (.); the abbreviation for the donor strain; a hyphen; the introgressed allele(s) or congenic interval of interest; a forward slash; and the ILAR-registered laboratory code of the laboratory in which the congenic strain was made.</p>
 
 <p><b>Examples:</b>
 <blockquote>
 <table>
-<tr><td>B6.AKR-<i>H2<sup>k</sup></i></td><td>A mouse strain with the genetic background of C57BL/6 but which differs from that strain by the introduction of a differential allele (<i>H2<sup>k</sup></i>) derived from strain AKR/J.</td></tr>
+<tr><td>B6.129P2-<i>B2m<sup>tm1Unc</sup></i>/Dcr</td><td>A mouse strain with the C57BL/6J host background differing from C57BL/6J by the introduction of a differential allele (<i>B2m<sup>tm1Unc</sup></i>) generated on a 129P2/OlaHsd interval of origin through backcrossing in the laboratory of Derry Roopenian.</td></tr>
 <tr><td>SHR.BN-<i>RT1<sup>n</sup></i></td><td>A rat strain with the genetic background of SHR but which differs from that strain by the introduction of a differential segment (<i>RT1<sup>n</sup></i>) derived from strain BN.</td></tr>
 <tr><td>ACI.BUF-<i>Pur1</i>/Mna</td><td>A rat strain with the genetic background of ACI onto which a segment from the BUF strain containing the <i>Pur1</i> QTL has been transferred.</td></tr>
-<tr><td><span style="white-space: nowrap">B6.Cg- <i>Kit<sup>W-44J</sup> Gpi1<sup>a</sup></i>&nbsp;&nbsp;</span></td><td>A mouse strain with the genetic background of C57BL/6, but where the donor strain is mixed, the <i>Kit</i> allele originating from C3H/HeJ and the <i>Gpi1</i> allele originating from CAST/Ei.
-</td></tr>
 <tr><td></td><td></td></tr>
 </table>
 </blockquote>
 </p>
 
-<p>If several lines derived from the same host background and donor strains and carrying the same differential allele(s) are available, the individual lines should be distinguished by adding a forward slash followed by serial numbers and Laboratory codes.</p>
+<p>In cases where the genetic background of the chromosomal segment in which the mutation arose is unknown (e.g. the donor is not inbred) or complex or an F1 hybrid and it is not known which parental segment the mutation arose in, the symbol Cg should be used to denote this complex genetic origin. 
+The use of the donor strain symbol or Cg is essential to distinguish congenic from coisogenic strains. </p>
+
+<p><b>Examples:</b>
+<blockquote>
+<table>
+<tr><td>WB.Cg-<i>Spta1B2m<sup>sph-2Bc</sup></i>/Brk</td><td>The differential allele (<i>Spta1B2m<sup>sph-2Bc</sup></i>) arose in a mixed stock background and was backcrossed onto WB/Re in the laboratory of Jane Barker.</td></tr>
+<tr><td>B6.Cg-<i>Spta1<sup>ihj</sup></i>/Llp</td><td>The differential allele (<i>Spta1<sup>ihj</sup></i>) arose in the F2 progeny of HRS/J and LAH/Pas and the origin of the specific chromosomal interval it arose in (HRS/J or LAH/Pas) is not known. This allele was backcrossed onto C57BL/6J in the laboratory of Luanne Peters.</td></tr>
+<tr><td>B6.Cg-<i>Ank1<sup>nb</sup></i>/Brk</td><td>The nb mutation arose in a non-inbred stock and was backcrossed onto C57BL/6J in the laboratory of Jane Barker.</td></tr>
+<tr><td></td><td></td></tr>
+</table>
+</blockquote>
+</p>
+
+<p>Cg also is used to designate a strain with multiple alleles that came from different donor origins. When multiple alleles/intervals/other markers are present they are listed in chromosomal order with unmapped elements listed at the end of the string.</p>
+
+<p><b>Examples:</b>
+<blockquote>
+<table>
+<tr><td>B6.Cg-<i>Kit<sup>W-44J</sup> Gpi1<sup>a</sup></i>/J</td><td>A mouse strain with the host background of C57BL/6, but where the donor strain is mixed, the Kit allele originating from C3H/HeJ and the Gpi1 allele originating from CAST/Ei.</td></tr>
+<tr><td>NOD.Cg-<i>Rag1<sup>tm1Mom</sup> Prl1<sup>tm1Sdz</sup></i>/Sz</td><td>The <i>Rag1</i> targeted mutation was generated in 129S7/EvBrd-derived ES Cells while the <i>Prl1</i> targeted mutation was generated in C57BL/6J and NOD is the host background for this double congenic bred in the laboratory of Leonard Shultz.</td></tr>
+<tr><td>B6.Cg-<i>A<sup>y</sup> Slc7a11<sup>sut</sup></i>/Lm</td><td>The yellow (<i>A<sup>y</sup></i>) mutation on Chromosome 2, which is an old mutation of the mouse fancy, and the subtle gray (<i>Slc7a11<sup>sut</sup></i>) mutation on Chromosome 3, which arose in C3H/HeSnJ, were backcrossed onto the C57BL/6J background in the laboratory of Lynn Lamoreux.</td></tr>
+<tr><td>NOD.Cg-<i>Prkdc<sup>scid</sup> H2-K1<sup>tm1Bpe</sup> H2-Ab1<sup>em1Mvw</sup> H2-D1<sup>tm1Bpe</sup> Il2rg<sup>tm1Wjl</sup></i>/Sz </td><td>This congenic strain has alleles from disparate genetic origins listed in chromosomal order, with the 3 alleles on Chromosome 17 listed from proximal to distal. The sex chromosomes are at the end of chromosomal order so the <i>Il2rg</i> allele listed last.</td></tr>
+<tr><td></td><td></td></tr>
+</table>
+</blockquote>
+</p>
+
+<p>If several lines are derived in the same laboratory from the same host background and donor strains and carry the same differential allele(s), the individual lines should be distinguished by adding a line number between the forward slash and the strain lab code.</p>
 
 <p><b>Examples:</b>
 <blockquote>
@@ -586,24 +635,35 @@ selection for a particular marker from the donor strain (<a href="#snell78">Snel
 </blockquote>
 </p>
 
-<p>Parentheses may be used to show that an inbred, incipient congenic or congenic inbred strain may have a minor contribution from other than the defined host background and donor strain. A single additional strain contribution is indicated by the strain abbreviation in parentheses following the inbred or congenic designation. Multiple, mixed or unknown additional contributions are indicated by the symbol Cg in parentheses. If the donor is designated by Cg, parenthetical information may not be included.</p>
+<p>Parentheses should be used to show that an inbred, incipient congenic, or congenic inbred strain may have a minor contribution from other than the defined host background and donor strain. A single additional strain contribution is indicated by the strain abbreviation in parentheses following the donor strain symbol.</p>
 
 <p><b>Examples:</b>
 <blockquote>
 <table>
-<tr><td>B6(C)-<i>mut</i></td><td>A mutation originates on an inbred (<I>e.g.</I>, C57BL/6J), is crossed out to or onto another background (<i>e.g.</i>, BALB/c) and then is crossed back onto the original background.</td></tr>
-<tr><td>B6(Cg)-<i>mut</i></td><td>A mutation arose in C57BL/6, was crossed onto a mixed or undefined background, and then was backcrossed back onto the original C57BL/6 background.</td></tr>
-<tr><td><span style="white-space: nowrap">C.129P(B6)-<i>Il2<sup>tm1Hor</sup></i>&nbsp;&nbsp;</span></td><td>A targeted mutation created in a 129 ES cell line and transferred from a B6;129P mixed background to BALB/c.
-</td></tr>
-<tr><td>B6(C)-<i>mut</i></td><td>A mutation arises on a congenic strain carrying another mutation (<i>e.g.</i>, B6.C-m) and the original mutation is bred out of the new strain. The new mutation is known to have occurred in a host strain-derived segment of the genome.</td></tr>
-<tr><td>B6(C)-<i>mut</i></td><td>A mutation arises on a hybrid or mixed background stock (<i>e.g.</i>, B6CF1) and is backcrossed onto one of the original inbred strains (<i>e.g.</i>, C57BL/6J). The new mutation is known to have occurred in a host strain-derived segment of the genome.</td></tr>
-<tr><td>B6.C(Cg)-<i>mut</i></td><td>A mutation arose on an inbred strain (<i>e.g.</i>, BALB/c) and was maintained on a mixed or undefined background (<i>e.g.</i>, a linkage-testing stock) before being backcrossed onto a second inbred strain (<i>e.g.</i>, C57BL/6).
-</td></tr>
+<tr><td>C3.129P2(B6)-<i>B2m<sup>tm1Unc</sup></i>/Dcr/<td><td>The differential allele (<i>B2m<sup>tm1Unc</sup></i>), generated in a 129P2/OlaHsd interval of origin, was backcrossed from B6;129P2-<i>B2m<sup>tm1Unc</sup></i>/Unc onto the host background C3H/HeJ. Therefore, it is possible there may be trace genetic contributions from C57BL/6J in the genome.</td></tr>
+<tr><td><span style="white-space: nowrap">C.129P(B6)-<i>Il2<sup>tm1Hor</sup></i>/J&nbsp;&nbsp;</span></td><td>A targeted mutation on a 129 interval of origin and transferred from a B6;129P mixed background to BALB/c.</td></tr>
 </table>
 </blockquote>
 </p>
 
-<p>If the chromosomal segment that has been transferred is defined by several genes or multiple DNA loci, the segment can be defined in the symbol by listing the most proximal and the most distal markers demonstrated to be in the segment in parentheses, separated by a hyphen.<p>
+<p>Multiple, mixed, or unknown additional contributions are indicated by the symbol Cg in parentheses. If the donor is designated by Cg, parenthetical information may not be included.</p>
+
+<p>Additionally, if an allele is bred from its strain of origin onto another background then backcrossed back onto the original background to at least N5 then the genetic background it passed through should be reflected in parenthesis, but no period(.) is warranted in the strain nomenclature.</p>
+
+<p><b>Examples:</b>
+<blockquote>
+<table>
+<tr><td><span style="white-space: nowrap">B6.C(Cg)-<i>mut</i>/Lab&nbsp;&nbsp;</span></td><td>The mutation arose in BALB/c and was bred to undefined background (e.g., a linkage-testing stock) before being backcrossed onto a second inbred strain (e.g., C57BL/6).</td></tr>
+<tr><td>B6(D2)-<i>mut</i>/Lab</td><td>A mutation originated on an inbred (e.g., C57BL/6J), was crossed out to or onto another background (e.g., DBA/2J) and then was crossed back onto the original background.</td></tr>
+<tr><td>B6(Cg)-<i>mut</i>/Lab</td><td>A mutation arose in C57BL/6, was crossed onto a mixed or undefined background, and then was backcrossed back onto the original C57BL/6 background.</td></tr>
+<tr><td>B6(D2)-<i>mut</i>/Lab</td><td>A mutation arises on a congenic strain carrying another mutation (e.g., B6.D2-<i>mutb</i>/Lab) and the original mutation is bred out of the new strain. The new mutation is known to have occurred in a host strain-derived segment of the genome.</td></tr>
+<tr><td>B6(D2)-<i>mut</i>/Lab</td><td>A mutation arises on a hybrid or mixed background stock (e.g., B6D2F1) and is backcrossed onto one of the original inbred strains (e.g., C57BL/6J). The new mutation is known to have occurred in a host strain-derived segment of the genome.</td></tr>
+<tr><td>B6.C(Cg)-<i>mut</i>/Lab</td><td>A mutation arose on an inbred strain (e.g., BALB/c) and was maintained on a mixed or undefined background (e.g., a linkage-testing stock) before being backcrossed onto a second inbred strain (e.g., C57BL/6).</td></tr>
+</table>
+</blockquote>
+</p>
+
+<p>If the chromosomal segment that has been transferred is defined by several genes or multiple DNA loci, the segment can be defined in the strain name by listing the most proximal and the most distal markers demonstrated to be in the donor-derived segment in parentheses, separated by a hyphen.</p>
 
 <p><b>Examples:</b>
 <blockquote>
@@ -614,11 +674,14 @@ selection for a particular marker from the donor strain (<a href="#snell78">Snel
 </blockquote>
 </p>
 
-<p>Note that the markers defining the segment only describe the most proximal and distal markers tested, and this does not imply that there are not other untested markers further proximal or distal. If several lines are made, in the same or different labs that contain the same segment and would be otherwise indistinguishable, then a forward slash, serial number and Laboratory code should be appended.</p>
+<p>Note that the markers defining the segment only describe the most proximal and distal markers tested, and this does not imply that there are no other untested markers further proximal or distal. 
+<p>If necessary, the number of backcross generations should be indicated by N and the number in parentheses following the strain name. Generation numbers should not be incorporated into the strain name.</p>
+<p>Incipient congenics may be given congenic nomenclature at N5, as long as the number of generations of backcrossing is clearly documented in information accompanying the strain.</p>
+<p>In cases where it is necessary to use more complex mating systems, the generations should be expressed as N equivalents (NE) and the strain regarded as congenic at a minimum of NE10. 
+For example, when backcrossing a recessive gene onto an inbred background, after 10 rounds of backcrossing and intercrossing to recover a homozygote for the next backcross (20 generations), the strain would be at NE10.</p>
+<p>When a congenic strain is maintained by brother x sister matings after backcrossing, the number of brother x sister generations follows the number of backcross generations, e.g., (N10F6), 10 generations of backcrossing followed by 6 generations of brother x sister inbreeding; (NE12F17), a complex system of backcrosses and intercrosses genetically equivalent to 12 backcrosses, followed by 17 generations of brother x sister matings.</p>
+<p>When generating speed congenics N will be less than 10 initially, nevertheless, the actual number should be given in parentheses following the N (e.g. N(6)) and the details of breeding system and markers used detailed elsewhere in a publication or database.</p>
 
-<p>If necessary, the number of backcross generations should be indicated by N and the number in parentheses following the strain name; generations should not be incorporated into the strain name. Incipient congenics may be given congenic nomenclature at N5, as long as the number of generations of backcrossing is clearly documented in information accompanying the strain. In cases where it is necessary to use more complex mating systems, the generations should be expressed as N equivalents (NE) and the strain regarded as congenic at a minimum of NE10. For example, when backcrossing a recessive gene onto an inbred background, after 10 rounds of backcrossing and intercrossing to recover a homozygote for the next backcross (20 generations), the strain would be at NE10. When a congenic strain is maintained by brother x sister matings after backcrossing, the number of brother x sister generations follows the number of backcross generations, <I>e.g.</I>, (N10F6), 10 generations of backcrossing followed by 6 generations of brother x sister inbreeding; (NE12F17), a complex system of backcrosses and intercrosses genetically equivalent to 12 backcrosses, followed by 17 generations of brother x sister matings.</p>
-
-<p>When generating speed congenics N will be less than 10 initially, nevertheless the actual number should be given in parentheses following the N, <I>e.g.</I>, N(6), and the details of breeding system and markers used detailed elsewhere in a publication or database.</p>
 
 <h3><a id="consomic"></a>5.3&nbsp;&nbsp;&nbsp;Chromosome Substitution or Consomic Strains</h3>
 
@@ -706,16 +769,16 @@ repeated backcrossing of female offspring to male C57BL/6J. As with congenic str
 
 <h3><a id="closed_colonies"></a>6.2 Closed Colonies</h3>
 
-<p>A closed colony contains limited genetic diversity, and is maintained neither by sib-mating (inbred), nor by selective mating to maximize heterozygosity (outbred). All matings occur within the colony members, but breeders need not be selected from specific parentage. No animals are introduced into the colony from outside the stock from generation to generation.</p>
+<p>A closed colony contains limited genetic diversity, and is maintained neither by sib-mating (inbred), nor by selective mating to maximize heterozygosity (outbred). All matings occur within the colony members, but breeders need not be selected from specific parentage. 
+No animals are introduced into the colony from outside the stock from generation to generation.</p>
 
-<p>Closed colonies may be established as a way to more readily maintain a difficult mutation, where the desire is to maintain a reasonably uniform background, but poor mating performance prohibits use of sib-mating schemes. Note that closed colonies describe a permanent mating system and this does not apply, for example, if an inbred strain is out-crossed to a near relative in a single generation because of a temporary breeding crisis.</p>
-
-<p>Closed colony designations consist of the strain of origin and appropriately designated mutations (if applicable), followed by [cc] to indicate closed colony.</p>
+<p>Closed colony designations consist of the strain of origin and appropriately designated mutations (if applicable), followed by [cc] to indicate closed colony. The use of [cc] is restricted to lines in which maximizing allele heterozygosity is the purpose. </p>
 
 <p><b>Example:</b>
 <blockquote>
 <table>
-<tr><td><span style="white-space: nowrap">C57BL/6Tac-<i>Bmp4<sup>tm1Blh</sup></i>[cc]&nbsp;&nbsp;</span></td><td>A closed colony of mice originating from the C57BL/6Tac inbred strain and carrying the <i>Bmp4<sup>tm1Blh</sup></i> targeted mutation.</td></tr>
+<tr><td><span style="white-space: nowrap">BS/ChapOrl[cc]&nbsp;&nbsp;</span></td><td>A closed colony of mice originating from the BS/ChapOrl inbred strain.</td></tr>
+
 </table>
 </blockquote>
 </p>
@@ -730,9 +793,8 @@ repeated backcrossing of female offspring to male C57BL/6J. As with congenic str
 <blockquote>
 <table>
 <tr><td><span style="white-space: nowrap">SC-Tg(EGFP)/Rrrc-ES1234/Kyo</span></td>
-<td>&nbsp;&nbsp;&nbsp;Where strain of the derived ES cell line is SC-Tg(EGFP)/Rrrc <br>
-&nbsp;&nbsp;&nbsp;The numbered ES cell line from the creator is ES1234 <br>
-&nbsp;&nbsp;&nbsp;The LabCode of the ES cell line creator is Kyo </td></tr>
+<td>Where strain of the derived ES cell line is SC-Tg(EGFP)/Rrrc, the numbered ES cell line from the creator is ES1234 and the LabCode of the ES cell line creator is Kyo.
+</td></tr>
 </table>
 </blockquote>
 </p>
