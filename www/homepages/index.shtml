@@ -289,11 +289,17 @@ hr.dashed {
     <div class="relativePos" style="height:60px;">
       <form action="<!--#include file="include/fewi_url.html"-->quicksearch/summary" method="get">
       <div style='position: absolute; left:5px; top:5px;' >
+      <select id="queryType" name="queryType" style="background-color: #FFD; margin-left: 4px;">
+		<option value="exactPhrase" selected="">keywords, symbols, or IDs (exact phrase)</option>
+		<option value="keywords">keywords, symbols, or IDs</option>
+		<option value="mouseLocation">mouse location</option>
+		<option value="humanLocation">human location</option>
+      </select><br/>
       <input name="query" id="searchToolTextArea" value=" Keywords, Symbols, IDs, or Location"
         onFocus="if(this.defaultValue==this.value) this.value='';"
         style="font-size:1.1em; height: 40px; width:275px;">
       </div>
-      <div style='position: absolute; right:12px; top:10px;' >
+      <div style='position: absolute; right:9px; top:10px;' >
       <input name="submit" id="searchToolButton"
         value="Quick&#x00A;Search" onClick="return verifySearchToolParms();"
         type="submit"  >
@@ -302,7 +308,7 @@ hr.dashed {
       </form>
     </div>
     <!-- advice text -->
-    <div style='padding-left:6px; padding-top:8px; color: #fff;'>
+    <div style='padding-left:6px; padding-top:18px; color: #fff;'>
       Or use topic specific search and analysis tools:
     </div>
     <!-- genes -->
