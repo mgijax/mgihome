@@ -290,12 +290,12 @@ hr.dashed {
       <form action="<!--#include file="include/fewi_url.html"-->quicksearch/summary" method="get">
       <div style='position: absolute; left:5px; top:5px;' >
       <select id="queryType" name="queryType" style="background-color: #FFD; margin-left: 4px;">
-		<option value="exactPhrase" selected="">keywords, symbols, or IDs (exact phrase)</option>
-		<option value="keywords">keywords, symbols, or IDs</option>
-		<option value="mouseLocation">mouse location</option>
-		<option value="humanLocation">human location</option>
+		<option value="exactPhrase" selected="">Keywords, Symbols, or IDs (exact phrase)</option>
+		<option value="keywords">Keywords, Symbols, or IDs</option>
+		<option value="mouseLocation">Mouse Location</option>
+		<option value="humanLocation">Human Location</option>
       </select><br/>
-      <input name="query" id="searchToolTextArea" value=" Keywords, Symbols, IDs, or Location"
+      <input name="query" id="searchToolTextArea" value=" Type your search here"
         onFocus="if(this.defaultValue==this.value) this.value='';"
         style="font-size:1.1em; height: 40px; width:275px;">
       </div>
