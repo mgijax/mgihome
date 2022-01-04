@@ -65,7 +65,6 @@ Note that the list in each section is a definition list <dl> where the term
 						<li><a href="#allstats_gxd">Gene Expression</a> | </li>
 						<li><a href="#allstats_cre">Recombinase Allele Data</a> | </li>
 						<li><a href="#allstats_go">GO Functional Annotations</a> | </li>
-						<li><a href="#allstats_paths">Biochemical Pathways</a> | </li>
 						<li><a href="#allstats_snp">Strains, SNPs &amp; Polymorphisms</a> | </li>
 						<li><a href="#allstats_ortho">Vertebrate Homology</a> | </li>
 						<li><a href="#allstats_seq">Sequences</a> | </li>
@@ -130,18 +129,6 @@ Note that the list in each section is a definition list <dl> where the term
 			</div>
 	</td></tr>
 
-	<tr><td>
-			<a name="allstats_paths"></a>
-			<div class="blueBorder statList">
-				<div class="boxTitle">
-					<div class="left">Biochemical Pathways</div>
-				</div>
-				<div id="pathwayStats" class="boxBG pad5 small">
-				</div>
-			</div>
-	</td></tr>
-
-	<tr><td>
 	<tr><td>
 			<a name="allstats_snp"></a>
 			<div class="blueBorder statList">
@@ -209,7 +196,6 @@ setTimeout(function() {
 	loadStats("gxdStats", "stats page gxd");
 	loadStats("recombinaseStats", "stats page recombinase");
 	loadStats("goStats", "stats page go");
-	loadStats("pathwayStats", "stats page pathways");
 	loadStats("snpStats", "stats page polymorphisms");
 	loadStats("orthologyStats", "stats page orthology");
 	loadStats("sequenceStats", "stats page sequences");
