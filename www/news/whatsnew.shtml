@@ -18,13 +18,12 @@
   <table class="toc" width="100%">
 	<tr><td>
       <ul>
-         <li><a href="#sept20_2021">September 20, 2021</a> |
+        <li><a href="#feb14_2022">February 14, 2022</a> |
+        <li><a href="#sept20_2021">September 20, 2021</a> |
         <li><a href="#june7_2021">June 7, 2021</a> |
         <li><a href="#apr26_2021">April 26, 2021</a> |
         <li><a href="#mar9_2020">March 9, 2020</a> |
-        <li><a href="#june10_2019">June 10, 2019</a> |
-        <li><a href="#may6_2019">May 6, 2019</a> |
-        <li><a href="news_2018.shtml"><span style="white-space: nowrap">Archive: News and Announcements for 2018</span></a></li> 
+        <li><a href="news_2019.shtml"><span style="white-space: nowrap">Archive: News and Announcements for 2019</span></a></li> 
        </ul>
        </td>
      </tr>              
@@ -32,6 +31,35 @@
    </td></tr>
 
    <tr><td></td></tr>
+   
+   <tr><td><a id="feb14_2022"></a>
+
+<table class="outline" width="100%">
+   
+   <tr><td class="enhance">February 14, 2022/td></tr>
+   <tr><td>
+ 	<dl class="linkedList">
+ 	
+<dt><b>The highlight of this release is an all new Quick Search tool featuring:</b></dt>  
+<dt>
+<ul>
+ <li>Tabbed results for Genome Features, Alleles, Vocabulary Terms, Strains and Stocks, and IDs.</li> 
+ <li>Depending on the tab, results can be filtered by feature type, GO terms, expression, and phenotype and disease annotations.</li>
+ <li>Strains and Stock results include links to the International Mouse Strain Resource (IMSR) and associated references.</li>
+ <li>You can search with genome coordinates for mouse or human (human coordinates return the mouse homologs of the human genes within the designated human coordinates).</li>
+ <li>Genome Feature and Alleles tabbed results can be forwarded to the MGI Batch Query or MouseMine. Genome Feature results can also be forwarded to the GXD Batch Query.</li> 
+ <li>An "exact phrase" text search option is provided that returns only results with an exact match to the query string.</li>
+ <li>All results can be downloaded as text and spreadsheet files.</li>
+</ul>
+</dt>
+
+<dt><b>We fixed a bug in the <a href="http://www.informatics.jax.org/diseasePortal" target="_blank">Human - Mouse: Disease Connection</a></b></dt>
+<dt>You can once again search with mouse or human genome coordinates. </dt>
+
+ </dl>
+   </td>
+  </tr>
+</table>
    
    <tr><td><a id="sept20_2021"></a>
 
@@ -118,46 +146,6 @@ Morpheus offers a myriad of tools for further display and analysis, including so
  	 </dl>
    </td>
   </tr>
-</table>
-
-   <tr><td><a id="june10_2019"></a>
-
-<table class="outline" width="100%">
-   
-   <tr><td class="enhance">June 10, 2019</td></tr>
-   <tr><td>
- 	<dl class="linkedList">
- 	<dt>GXD has developed an <a href="<!--#include file='include/fewi_url.html'-->gxd/htexp_index">RNA-Seq and Microarray Experiment Search</a> to quickly and reliably find specific mouse expression studies in <a href="http://www.ebi.ac.uk/microarray-as/aer/?#ae-main%5B0%5D" target="_blank">ArrayExpress</a> and <a href="https://www.ncbi.nlm.nih.gov/geo/" target="_blank">GEO</a>. 
- 	Based on GXD's standardized metadata annotations, users can specify the age, anatomical structure, mutant alleles, strain and sex of samples of interest as well as experiment study type and key parameters. These searches, powered by controlled vocabularies and ontologies, can be combined with free text searching of experiment titles and descriptions. 
- 	Search result summaries include linkouts to ArrayExpress and GEO, providing easy access to the expression data itself. Links to the PubMed entries for corresponding publications are also included.</dt>
-    <dt>GXD's annotation efforts focus on experiments that examine endogenous gene expression in wild-type and mutant mice. Studies from all developmental stages, including adult, are included. In addition, studies examining expression differences within and between species is available (although the metadata for the non-mouse samples is not). 
-    As is consistent with GXD's scope, studies using transgenic mice (i.e., animals containing randomly inserted transgenes); animals that have been manipulated, either by substances, surgical procedures, or diet regimens; cultured tissues; or cell lines are not included.</dt>
-    <dt>The RNA-Seq and microarray metadata index developed by GXD is comprised of all experiments currently available in ArrayExpress that fit the criteria described above. This includes thousands of experiments that were originally submitted to GEO. Prior to August 2016 ArrayExpress imported all experiments stored at GEO. 
-    Future work will incorporate the more recently submitted GEO experiments into the GXD RNA-Seq and Microarray Experiment index.</dt>
-   </dl>
-   </td>
-  </tr>
-</table>
-   
-   <tr><td><a id="may6_2019"></a>
-
-<table class="outline" width="100%">
-   
-   <tr><td class="enhance">May 6, 2019</td></tr>
-   <tr><td>
- 	<dl class="linkedList">
- 	<dt>For this release: 
-<ul>
- <li>We retired the MouseCyc Pathways resource. We recommend the <a href="https://biocyc.org/organism-summary?object=MOUSE">BioCyc</a> resource for mouse pathway data.</li> 
- <li>We improved the way variants are represented in our non-public-facing database. This is our first step in several planned enhancements related to variants in MGI and The Alliance of Genome Resources.</li>
-</ul>
-</dt>
-   </dl>
-   </td>
-  </tr>
-</table>
-
-</td></tr>
 </table>
 
 <!--#include file='include/templateBodyStop.html'--> 
