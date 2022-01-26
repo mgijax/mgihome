@@ -42,13 +42,13 @@
 <ul>
 	<li>MGD serves as a primary resource for a spectrum of genetic, genomic and biological data supporting the use of the mouse as a model for understanding human biology and disease.</li>
 	<li>These data include the canonical mouse gene catalog, nucleotide and protein sequence associations, gene-to-function assignments based on the Gene Ontology (<a href="<!--#include file='include/homepages_url.html'-->function.shtml" target="_blank">GO</a>), a comprehensive catalog of mutant alleles, associations of mutant genotypes to their phenotype through the Mammalian Phenotype (MP) Ontology and to the human diseases for which they are a model through curated associations to the human Disease Ontology (DO).</li>
-	<li>MGD provides a comprehensive genetic map, a genome browser (Mouse JBrowse) for genome viewing, Single Nucleotide Polymorphisms (SNPs) and other polymorphisms and mammalian orthology data.</li>
+	<li>MGD provides a comprehensive genetic map, a genome browser (Mouse JBrowse) for genome viewing, a Multiple Genome Viewer (MGV) for comparing genome regions between strains and species, Single Nucleotide Polymorphisms (SNPs) and other polymorphisms and mammalian orthology data.</li>
 	<li>Integrated with MGD are other components of the Mouse Genome Informatics (MGI) database resource. These include the Gene Expression Database (<a href="<!--#include file='include/homepages_url.html'-->expression.shtml" target="_blank">GXD</a>), the Mouse Tumor Biology Database (<a href="http://tumor.informatics.jax.org/mtbwi/userHelp.jsp" target="_blank">MTB</a>), the International Mouse Strain Resource (<a href="<!--#include file='include/imsr_home_url.html'-->">IMSR</a>), and the <a href="<!--#include file='include/fewi_url.html'-->home/recombinase" target="_blank">Recombinase (cre) Portal</a>.</li>
 	<li>Since it first became available on the web, MGD has continued to evolve, expanding its data coverage, improving data handling, and providing new data manipulation and display tools.</li>
 </ul>
 
 <H3><a id="data"></a>MGD Data</H3>
-<p>MGD is updated on a weekly  basis by biologists on our curatorial staff who scan the current scientific  literature, extract relevant data, and enter it in MGD. Increasingly, MGD acquires data through large scale electronic transfer. Such data include sequence data from GenBank, gene models from NCBI, Ensembl, VEGA, mutant alleles from ENU-mutagenesis groups and the International Knockout Mouse Consortium (IKMC). The data interface is intended to be flexible and comprehensive so that each view of particular records in MGD provides links to any related data throughout MGD and, where possible, to other databases on the Internet.</p>
+<p>MGD is updated on a weekly  basis by biologists on our curatorial staff who scan the current scientific  literature, extract relevant data, and enter it in MGD. Increasingly, MGD acquires data through large scale electronic transfer. Such data include sequence data from GenBank, gene models from NCBI, Ensembl, mutant alleles from ENU-mutagenesis groups and the International Knockout Mouse Consortium (IKMC). The data interface is intended to be flexible and comprehensive so that each view of particular records in MGD provides links to any related data throughout MGD and, where possible, to other databases on the Internet.</p>
 
 <P>MGD contains the following kinds  of information:
 <UL>
@@ -61,7 +61,7 @@
 <li>Sequence data</li>
 <li>Molecular probes and clones (probes, clones, primers and YACs)</li>
 <li>Genetic and physical mapping data</li>
-<li>Information on inbred strains (M. Festing's listing)</li>
+<li>Information on inbred strains (including M. Festing's listing)</li>
 <li>References supporting all data in MGD </li>
 </UL>
 </p>
@@ -75,10 +75,10 @@
 <table class="bordered">
 
 <tr><th>Through...</th><th>MGD links to...</th></tr>
-<tr><td>Markers</td><td>EC, Ensembl, Entrez, InterPro, NCBI, PDB, UniGene, VEGA</td></tr>
-<tr><td>Phenotypes</td><td>On-line  Mendelian Inheritance in Man (OMIM) for human disease data</td></tr>
+<tr><td>Markers</td><td>EC, Ensembl, Entrez, InterPro, NCBI, PDB, UniGene, Alliance of Genome Resources</td></tr>
+<tr><td>Phenotypes</td><td>On-line  Mendelian Inheritance in Man (OMIM) and the Alliance of Genome Resources for human disease data</td></tr>
 <tr><td>SNPs and sequence polymorphisms &nbsp;&nbsp;</td><td>dbSNP</td></tr>
-<tr><td>Homologies</td><td><!--Ark-DB, BovMap,--> Entrez, HGNC, HomoloGene, NCBI, <!--PigBase, SheepBase,--> Ensembl Gene Tree, Uniprot, VEGA, VISTA</td></tr>
+<tr><td>Homologies</td><td><!--Ark-DB, BovMap,--> Entrez, HGNC, Alliance of Genome Resources, NCBI, Ensembl Gene Tree, Uniprot</td></tr>
 <tr><td>Sequences</td><td>GenBank, RefSeq, Uni-PROT, and TrEMBL mouse gene indices</td></tr>
 <tr><td>Molecular probes and clones</td><td>GenBank, EMBL, DDBJ, IMAGE and RIKEN</td></tr>
 <tr><td>References</td><td>PubMed</td></tr>
@@ -96,7 +96,7 @@ Gene Ontology (GO) terms, MGD  accession IDs and supporting references.
 See <a href="<!--#include file='include/userhelp_url.html'-->GENE_summary_help.shtml" target="_blank">Interpreting a Genes and Markers Summary</a> and
 <a href="<!--#include file='include/userhelp_url.html'-->GENE_detail_help.shtml" target="_blank">Interpreting Gene Details</a> for more information about the content of the display of a marker record as it appears in the query results.
 </p>
-<P>Information on <B>alleles</B>, formerly embedded in phenotype  descriptions, is stored as a separate data set (see <a href="#alleles">Phenotypic Alleles</a>). Links to alleles are provided in gene detail records. In
+<P>Information on <B>alleles</B> is stored as a separate data set (see <a href="#alleles">Phenotypic Alleles</a>). Links to alleles are provided in gene detail records. In
 addition, there is an <A HREF="<!--#include file='include/fewi_url.html'-->allele" target="_blank">Phenotypes, Alleles, and Disease Models Query Form</A> for  direct  queries against the allele data  set. See <A HREF="<!--#include file='include/userhelp_url.html'-->ALLELE_help.shtml#detail" target="_blank">Details</A> for the content of an allele record as displayed in query results.</p>
 </p>
 
@@ -115,7 +115,7 @@ Phenotypic allele <A HREF="<!--#include file='include/userhelp_url.html'-->ALLEL
 
 <h3><a id="sequence"></a>Sequence Data</h3>
 
-<ul><li>Vast amounts of sequence data are integrated with the biological information in MGD. These include mouse sequences from GenBank, RefSeq, and <NOBR>Uni-Prot</NOBR>. </li>
+<ul><li>Vast amounts of sequence data are integrated with the biological information in MGD. These include mouse sequences from GenBank, RefSeq, and <NOBR>Uni-Prot</NOBR>, and the Sanger Mouse Genomes Project. </li>
 
 <li>MGD contains sequence attributes such as length and provider; data about the clones the sequences were derived from; and the genes the sequences have been associated to. Because of our curated associations between mouse markers and sequences, you can search using  nomenclature, map position, function (GO annotation, InterPro domain), expression (tissue and developmental stage), and phenotypes of mutant alleles.
 </li>
@@ -164,9 +164,9 @@ Phenotypic allele <A HREF="<!--#include file='include/userhelp_url.html'-->ALLEL
 <P>Information on genetic polymorphisms is extracted from probe/clone records in MGD.
 
 <h3><A id="morth"></A>Vertebrate Homology</h3>
-<p>MGD contains homology information for mouse, human, rat, cattle and other vertebrate organisms.
+<p>MGD contains homology information for mouse, human, rat, and zebrafish.
 </p>
-<p>MGI provides a curated set of vertebrate homologs for the research community. MGI focuses on integration of homology sets from sequenced vertebrate genomes (e.g., human, rat, dog, chimp).  MGI loads sequence based vertebrate homology assertions from NCBI <a href="https://www.ncbi.nlm.nih.gov/homologene" target="_blank">HomoloGene</a>. HomoloGene programmatically detects homologs among the genome features of several completely sequenced eukaryotic genomes. In addition, we continue to work with  the research community to carefully curate gene family sets, usually at the  instigation of the research community. </p>
+<p>MGI provides a curated set of vertebrate homologs for the research community. MGI focuses on integration of homology sets from sequenced vertebrate genomes (e.g., human, rat, zebrafish).  MGI loads vertebrate orthology data based on the "stringent" set of homology class data from the <a href="https://www.alliancegenome.org" target="_blank">Alliance of Genome Resources</a>. The orthology inferences from different methods have been integrated using the DRSC Integrative Ortholog Prediction Tool (DIOPT). DIOPT integrates a number of existing methods including those used by the Alliance: Ensembl Compara, HGNC, Hieranoid, InParanoid, OMA, OrthoFinder, OrthoInspector, PANTHER, PhylomeDB, Roundup, TreeFam, and ZFIN. These data include human, rat, and zebrafish homologs. In addition, we continue to work with  the research community to carefully curate gene family sets, usually at the  instigation of the research community. </p>
 
 <p>Homologous genes associated with a mouse gene or genome feature are available from via links from the Vertebrate Homology section a Detail page for a gene/genome feature. <!--Orthologs identified in MGI's curated references are available via a link from the Detail page for a reference. --> Performing a Quick Search using a non-mouse gene or sequence accession ID returns a link to the Vertebrate Homology Class page.</p>
 
@@ -211,7 +211,7 @@ UCLA (BSB): (C57BL/6J x M. spretus)F1 x C57BL/6J
 </p>-->
 <h4>Physical Maps</h4>
 <!--<p>In June 1997, MGD began storing physical mapping data from MIT's mouse physical mapping project in which MIT primers and STSs are mapped against a mouse YAC library to build a contig map of the mouse. MGD provides query access to the MIT primers, STSs, and YACs. In addition, MGD provides integrated genetic/physical displays in Web Map format. These map files are updated when the MIT mapping physical mapping data set is  updated.</p>-->
-<p>In May 2005, MGD added a customized version of Lincoln Stein's Generic Genome Browser, the Mouse Genome Browser, which supports interactive browsing and display of mouse genome annotations. Access to Mouse Genome Browser is from the MGD home page (http://www.informatics.jax.org) and from the sequence map section on MGD gene detail pages. Tracks for Mouse Genome Browser include MGD representative transcripts; Ensembl, NCBI, and VEGA gene models; SNPs; QTLs; alleles (induced, spontaneous, gene-trapped, transgenic, targeted); phenotypes; and STS markers linked to UniSTS at NCBI. Tracks are updated at different times, depending on data availability.</p>
+<p>In May 2005, MGD added a customized version of Lincoln Stein's Generic Genome Browser, the Mouse Genome Browser, which supports interactive browsing and display of mouse genome annotations. Access to Mouse Genome Browser is from the MGD home page (http://www.informatics.jax.org) and from the sequence map section on MGD gene detail pages. Tracks for Mouse Genome Browser include MGD representative transcripts; Ensembl and NCBI gene models; SNPs; QTLs; alleles (induced, spontaneous, gene-trapped, transgenic, targeted); phenotypes; and STS markers linked to UniSTS at NCBI. Tracks are updated at different times, depending on data availability.</p>
 </ul>
 
 </blockquote>
@@ -220,7 +220,7 @@ UCLA (BSB): (C57BL/6J x M. spretus)F1 x C57BL/6J
 <p style="font-size: 0.9em;"><a href="#top">Top</a></p>
 
 <h3><a id="references"></A>References</h3>
-MGD contains references for all data in the  database.  By early 2017, there were over 230,000 entries. MGD reference format is similar to PubMed's and data for the full MGD reference are extracted from PubMed when possible. References first appear in an abbreviated format in MGD and are updated when the PubMed records become available. If PubMed does not index the journal, our curators enter the full reference into MGD manually.  See the
+MGD contains references for all data in the  database. By mid 2021, there were over 300,000 entries. MGD reference format is similar to PubMed's and data for the full MGD reference are extracted from PubMed when possible. References first appear in an abbreviated format in MGD and are updated when the PubMed records become available. If PubMed does not index the journal, our curators enter the full reference into MGD manually.  See the
  <a href="<!--#include file='include/fewi_url.html'-->reference" target="_blank">References Query Form</a>,  <a href="<!--#include file='include/userhelp_url.html'-->reference_help.shtml" target="_blank">Using the References Query Form</a> for more information about this data.</p>
 
 <p style="font-size: 0.9em;"><a href="#top">Top</a></p>

@@ -18,8 +18,6 @@ h4 {
      font-weight: bold;
 }
 
-tr:hover { background: lightyellow; }
-
 </style>
 
 <!--titleBar-->
@@ -31,7 +29,7 @@ tr:hover { background: lightyellow; }
 </div> 
 
 <br/>
-<center>  <span class="titleBarSubTitle"> Revised: September, 2021<span>
+<center>  <span class="titleBarSubTitle"> Revised: August, 2018<span>
 </center>
 
 
@@ -133,7 +131,6 @@ found on the <a href="index.shtml">MGD</a> and <a href="http://rgd.mcw.edu/nomen
 &nbsp;&nbsp;&nbsp;&nbsp;<a href="#biov">3.2.1&nbsp;&nbsp;Biochemical Variants</a><br>
 &nbsp;&nbsp;&nbsp;&nbsp;<a href="#dnasv">3.2.2&nbsp;&nbsp;DNA Segment Variants</a><br>
 &nbsp;&nbsp;&nbsp;&nbsp;<a href="#snps">3.2.3&nbsp;&nbsp;Single Nucleotide Polymorphisms (SNPs)</a><br>
-&nbsp;&nbsp;&nbsp;&nbsp;<a href="#variant">3.2.4&nbsp;&nbsp;Genomic Variant</a><br>
        		
 &nbsp;&nbsp;<a href="#vqtlrrg">3.3&nbsp;&nbsp;Variation in Quantitative Trait Loci and in Response and Resistance Genes</a><br>
 &nbsp;&nbsp;<a href="#iim">3.4&nbsp;&nbsp;Insertional and Induced Mutations</a><br>
@@ -177,7 +174,6 @@ found on the <a href="index.shtml">MGD</a> and <a href="http://rgd.mcw.edu/nomen
 &nbsp;&nbsp;<a href="#trho">6.14&nbsp;&nbsp;Homolog</a><br>
 &nbsp;&nbsp;<a href="#tror">6.15&nbsp;&nbsp;Ortholog</a><br>
 &nbsp;&nbsp;<a href="#trpa">6.16&nbsp;&nbsp;Paralog</a><br>
-&nbsp;&nbsp;<a href="#trpclstr">6.17&nbsp;&nbsp;Cluster</a><br>
 
 <br><a href="#nomenref">7&nbsp;&nbsp;References</a><br>
 </p> 
@@ -642,9 +638,7 @@ related, the QTL name should be broad enough to represent all the measured trait
 
 <H3><a id="creg"></A>2.11 &nbsp;&nbsp;Chromosomal Regions</H3>
 
-<p>Separate documents detail guidelines for nomenclature of chromosomes (for mouse, <A HREF="anomalies.shtml">Rules for Nomenclature of Chromosome Aberrations</A> are online; for rat, see <A HREF="#levan">Levan, <I>et al.</I>, 1995</A>). 
-However, certain cytological features of normal chromosomes (such as telomeres, centromeres, and nucleolar organizers) and abnormal chromosomes (such as homogeneously-staining regions and end-points of deletions, inversions, and translocations) are genetic loci that are given names and symbols.
-"Cluster/region" is a marker type which encompasses clusters and regions such as histone, homeobox, olfactory receptor and other clusters; and cytochrome P450, histocompatibility 2, tumor suppressor and other regions. </p>
+<p>Separate documents detail guidelines for nomenclature of chromosomes (for mouse, <A HREF="anomalies.shtml">Rules for Nomenclature of Chromosome Aberrations</A> are online; for rat, see <A HREF="#levan">Levan, <I>et al.</I>, 1995</A>). However, certain cytological features of normal chromosomes (such as telomeres, centromeres, and nucleolar organizers) and abnormal chromosomes (such as homogeneously-staining regions and end-points of deletions, inversions, and translocations) are genetic loci that are given names and symbols.</p>
 
 <H4><a id="telo"></A>2.11.1 &nbsp;&nbsp;Telomeres</H4>
 
@@ -932,12 +926,6 @@ then the alleles listed above become Xyz<i><sup>rs620061-T</sup></i>
 and Xyz<i><sup>rs620061-C</sup></i>.
 </blockquote>
 <br>
-
-<H4><a id="variant"></A>3.2.4&nbsp;&nbsp; Genomic Variant</H4>
-<p>Definition (from Alliance of Genome Resources): A DNA sequence that differs relative to a designated reference sequence. The sequence difference occurs at a single position or in contiguous nucleotides.</p>
-<p><b>Notes</b>: This term currently includes the following variant types: substitution, point mutation, insertion, deletion, insertion and deletion. Genomic Variants could refer to nuclear or organellar genomes. The designated reference sequence is that of C57Bl/6J strain.</p>
-<p>HGVS style nomenclature may be used to describe the variant itself but not the allele: https://varnomen.hgvs.org/ </p>
-
 <H3><a id="vqtlrrg"></a>3.3&nbsp;&nbsp;Variation in Quantitative Trait Loci and in Response and Resistance Genes</H3>
 
 <p>Variation in genes that do not give rise to a visible phenotype may be detected by assaying physiological or pathological parameters. 
@@ -1037,7 +1025,7 @@ conventional tm#Labcode superscript. Details of the targeted locus should be giv
 <table>
 <tr><td><i>H2-K<sup>b-tm1Bpe</sup></i></td><td>&nbsp;&nbsp;&nbsp;</td><td>targeted mutation allele on 129P2/OlaHsd b haplotype</td></tr>
 <tr><td><i>H2-D<sup>b-tm1Bpe</sup></i></td><td>&nbsp;&nbsp;&nbsp;</td><td>targeted mutation allele on 129P2/OlaHsd b haplotype</td></tr>
-<tr><td><i>H2-Ab1<sup>g7-em1Ygch</sup></i></td><td>&nbsp;&nbsp;&nbsp;</td><td>CRISPR generated allele on NOD g7 haplotype</td></tr>
+<tr><td><i>H2-Ab1<sup>g7-em1Ygch</sup></i></td><td>&nbsp;&nbsp;&nbsp;</td><td>CRISPR generated alllele on NOD g7 haplotype</td></tr>
 </table>
 </blockquote>
 
@@ -1052,8 +1040,7 @@ conventional tm#Labcode superscript. Details of the targeted locus should be giv
 </p>
 
 <h4><a id="endim"></a>3.5.2&nbsp;&nbsp;  Endonuclease-mediated Mutations</h4>
-<p>Endonuclease-mediated mutations are targeted mutations generated in pluripotent or totipotent cells by an endonuclease joined to sequence-specific DNA binding domains. The mutation is introduced during homology-directed or non-homologous end-joining repair of the induced DNA break(s). 
-Technologies generating these types of mutations include TALENs, CRISPR, Cas9, etc. (<i>c.f.</i> <a href="#gaj">Gaj, et al., 2013</a>; <a href="#wijshake">Wijshake, et al., 2014</a>)</p>
+<p>Endonuclease-mediated mutations are targeted mutations generated in pluripotent or totipotent cells by an endonuclease joined to sequence-specific DNA binding domains. The mutation is introduced during homology-directed or non-homologous end-joining repair of the induced DNA break(s). Technologies generating these types of mutations include TALENs, CRISPR, Cas9, etc. (<i>c.f.</i> <a href="#gaj">Gaj, et al., 2013</a>; <a href="#wijshake">Wijshake, et al., 2014</a>)</p>
 <p>Endonuclease-mediated mutations are given the symbol of the mutated gene, with a superscript consisting of three parts: the symbol "em" to denote an endonuclease-mediated mutation, a serial number from the laboratory of origin and the ILAR registered laboratory code of the laboratory where the mutation was produced.</p>
 
 <blockquote>
@@ -1063,7 +1050,7 @@ Technologies generating these types of mutations include TALENs, CRISPR, Cas9, e
 </table>
 </blockquote>
 
-<p>When an endonuclease genome editing technology is used to generate multiple germline transmissible alleles, such as in the Cre-Lox system, the original knock-in of loxP would follow the regular em# designation guidelines. If a second <b>heritable</b> allele was then generated after mating with a cre transgenic mouse, it would retain the parental em# designation followed by a decimal point and serial number.</p>
+<p>Knock-ins, conditional and derivative alleles may be named similarly to targeted mutations above.</p>
 
 <blockquote>
 <b>Examples:</b>
@@ -1072,9 +1059,7 @@ Technologies generating these types of mutations include TALENs, CRISPR, Cas9, e
 <tr><td><span style="white-space: nowrap"><i>Gt(ROSA)26Sor<sup>em1.1(CAG-cas9*,-EGFP)Rsky</sup></i></span> </td><td>&nbsp;&nbsp;&nbsp;</td><td>the first derivative of the first endonuclease-induced mutation of the gene trap ROSA 26 gene produced by Klaus Rajewsky</td></tr>
 </table>
 </blockquote>
-
-<p>Any CRISPR-generated allele is always an em.</p>
-
+<br>
 <h4><a id="gtm"></a>3.5.3 &nbsp;&nbsp; Gene Trap Mutations</h4>
 
 <p>Gene trap mutations are symbolized in a similar way to targeted mutations. If the trapped gene is known, the symbol for the trapped allele will be similar to a targeted mutation of the same gene using the format Gt(vector content)#Labcode for the allele designation.</p>
@@ -1425,9 +1410,6 @@ Note that several genes in the mouse or rat may have a single ortholog in anothe
 <H3><a id="trpa"></A>6.16&nbsp;&nbsp;&nbsp;Paralog</h3>
 <p>Paralogous genes are genes within the same species that have arisen from a common ancestor by duplication and subsequent divergence. For example, the mouse alpha globin and beta globin genes are paralogs.</p>
 
-<H3><a id="trpclstr"></A>6.17&nbsp;&nbsp;&nbsp;Cluster</h3>
-<p>A cluster is a group of genomic entities located in close proximity to each other on a chromosome.</p>
-
 <h2><a id="nomenref"></a>7&nbsp;&nbsp;&nbsp;References</h2>
 <p>
 
@@ -1451,11 +1433,9 @@ and guidelines for gene nomenclature. In: Genetic Variants and
 Strains of the Laboratory Mouse, Lyon, M.F., Rastan, S., Brown, S.D.M. (eds.),
 Third Edition, Volume 1, Oxford University Press, Oxford,  pp. 1-16.<br><br>
 
-den Dunnen JT, Dalgleish R, Maglott DR, Hart RK, Greenblatt MS, McGowan-Jordan J, Roux AF, Smith T, Antonarakis SE, Taschner PE (2016). HGVS Recommendations for the Description of Sequence Variants: 2016 Update. Hum Mutat 37(6):564-569.<br><br>
+<a id="ding"></a>Ding S, Wu X, Li G, Han M, Zhuang Y, Xu. T.  2005. Efficient transposition of the piggyBac (PB) transposon in mammalian cells and mice. Cell 122:473-483.<br><br>
 
 <a id="Desvignes"></a>Desvignes T, Batzel P, Berezikov E, Eilbeck K, Eppig JT, McAndrews MS, Singer A, Postlethwait JH. 2015. miRNA Nomenclature: A View Incorporating Genetic Origins, Biosynthetic Pathways, and Sequence Variants. Trends Genet 31: 613-626.<br><br>
-
-<a id="ding"></a>Ding S, Wu X, Li G, Han M, Zhuang Y, Xu. T.  2005. Efficient transposition of the piggyBac (PB) transposon in mammalian cells and mice. Cell 122:473-483.<br><br>
 
 Dunn, L.C., H. Gruneberg, G.D. Snell. 1940. Report of the committee on mouse genetics nomenclature. J. Hered. 31:505-506.<br><br>
 
