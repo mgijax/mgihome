@@ -162,6 +162,9 @@ hr.dashed {
   }
 }
 
+.lightYellow { background-color: #ffd; }
+.lightGray { background-color: #dadada; }
+.italic { font-style: italic; }
 </style>
 
 <style>
@@ -289,14 +292,14 @@ hr.dashed {
     <div class="relativePos" style="height:60px;">
       <form action="<!--#include file="include/fewi_url.html"-->quicksearch/summary" method="get">
       <div style='position: absolute; left:5px; top:5px;' >
-      <select id="queryType" name="queryType" style="background-color: #FFD; margin-left: 4px;">
+      <select id="queryType" name="queryType" style="margin-left: 4px;" class="lightGray">
 		<option value="exactPhrase" selected="">Keywords, Symbols, or IDs (exact phrase)</option>
 		<option value="keywords">Keywords, Symbols, or IDs</option>
 		<option value="mouseLocation">Mouse Location</option>
 		<option value="humanLocation">Human Location</option>
       </select><br/>
-      <input name="query" id="searchToolTextArea" value=" Type your search here"
-        onFocus="if(this.defaultValue==this.value) this.value='';"
+      <input name="query" id="searchToolTextArea" value=" Type your search here" class="italic lightYellow"
+        onFocus="if(this.defaultValue==this.value) this.value=''; $('#searchToolTextArea').removeClass('italic');"
         style="font-size:1.1em; height: 40px; width:275px;">
       </div>
       <div style='position: absolute; right:9px; top:10px;' >
