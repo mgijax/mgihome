@@ -101,6 +101,12 @@
     height: 20px;
   }
   
+   .SmWhiteSectionSpacer {
+    border: 1px solid #FFFFFF;
+    background-color: #FFFFFF;
+    height: 15px;
+  }
+  
   .col-sm-2 {
     padding-left: 3px;
     padding-right: 3px;
@@ -150,7 +156,7 @@ img {
 		    <br>
 			<p class="text-center"><small>GXD collects and integrates the gene expression information in MGI. Its primary emphasis is on endogenous gene expression during mouse development.</small></p>
       <a onclick="javascript:openFirstTimeWindow(); return false;" href="<!--#include file='include/mgihome_url.html'-->GXD/FirstTimeUsers.shtml"><img style="width:210px;" src="<!--#include file='include/mgihome_url.html'-->GXD/FirstTimers.png" alt="GXD Data Chart"></a>
-      <div id="" class="whiteSectionSpacer"></div>
+      <div id="" class="SmWhiteSectionSpacer"></div>
       <img style="width:210px;" src="<!--#include file='include/mgihome_url.html'-->GXD/Funding.png" alt="GXD Grant"> 
 			
 		    </div>
