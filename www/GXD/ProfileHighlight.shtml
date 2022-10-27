@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>GXD Profile Highlight</title>
+	<meta name="generator" content="BBEdit 14.6" />
+</head>
+<style>
+
+  <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <!-- jQuery library -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <!-- Latest compiled JavaScript -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script> 
+
+	.outline { border: 2px solid #EBCA6D; }
+	
+.gxdSectionSpacer {
+    border: 1px solid #EBCA6D;
+    background-color: #EBCA6D;
+    height: 10px;
+  }
+  
+ body {
+   font-family: Verdana,Arial,Helvetica, sans-serif;
+}
+
+</style>
+<body>
+<title><!--#include file="include/mgiversion.html"--> GXD introduces an Expression Profile Search</title>
+
+<!--#include file='include/templateBlankBodyStart.html'-->
+<link rel="stylesheet" type="text/css"/>
+
+
+<div id="" class="gxdSectionSpacer"></div>
+<br>
+<img src="<!--#include file='include/mgihome_url.html'-->homepages/images/gxd_logo_small.png"> 
+ 
+ <p class="text-center"><span style="font-weight: bold;">GXD introduces an Expression Profile Search.</span></p>
+<img src="<!--#include file='include/mgihome_url.html'-->GXD/GXDProfile.png" width="818" height="276" alt="GXD Profile">
+<p>This allows you to search for genes by their expression profile.  You can define the expression profile of interest by specifying up to 10 anatomical structures and whether expression is present or absent in these structures. It can be found as a tab on the <a href="<!--#include file='include/fewi_url.html'-->gxd/profile">Gene Expression Data Query</a>.</p>
+<div id="" class="gxdSectionSpacer"></div>
+</body>
+</html>
