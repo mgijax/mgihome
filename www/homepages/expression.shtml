@@ -209,7 +209,7 @@ img {
      <img src="<!--#include file='include/mgihome_url.html'-->GXD/Highlights.png" alt="HIGHLIGHTS" width="79">
      </div>
       <div class="col-sm-2" style="">
-          <a onclick="javascript:openHighlight1Window(); return false;" href="<!--#include file='include/mgihome_url.html'-->GXD/ProfileHighlight.shtml"><img src="<!--#include file='include/mgihome_url.html'-->GXD/Highlight1.png" alt="GXD profile" width="130" id="imageBorder"></a>
+          <a onclick="javascript:openProfileHighlight(); return false;" href="<!--#include file='include/mgihome_url.html'-->GXD/ProfileHighlight.shtml"><img src="<!--#include file='include/mgihome_url.html'-->GXD/Highlight1.png" alt="GXD profile" width="130" id="imageBorder"></a>
       </div>
        <div class="col-sm-2" style="">
           <a onclick="javascript:openHighlight1Window(); return false;" href="<!--#include file='include/mgihome_url.html'-->GXD/Highlight1.shtml"><img src="<!--#include file='include/mgihome_url.html'-->GXD/Highlight2.png" alt="RNA-Seq Data" width="130" id="imageBorder"></a>
