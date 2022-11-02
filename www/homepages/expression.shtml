@@ -41,6 +41,12 @@
 	  url = "<!--#include file='include/mgihome_url.html'-->" + "GXD/Highlight1.shtml";
    window.open(url,'highlight1Window','width=900,height=700,resizable=yes,scrollbars=yes,alwaysRaised=yes');
 }
+  
+  function openProfileHighlightWindow()
+  {
+  	  url = "<!--#include file='include/mgihome_url.html'-->" + "GXD/ProfileHighlight.shtml";
+     window.open(url,'ProfileHighlightWindow','width=900,height=700,resizable=yes,scrollbars=yes,alwaysRaised=yes');
+  }
 
   function openHighlight4Window()
 {
