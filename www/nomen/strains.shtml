@@ -27,7 +27,7 @@ tr:hover { background: lightyellow; }
 
 <center>  <span class="titleBarMainTitle">Guidelines for Nomenclature of Mouse and Rat Strains</span>
   <br/>
- <span class="titleBarSubTitle"> &nbsp;&nbsp;&nbsp;Revised: September 2021</span></center> 
+ <span class="titleBarSubTitle"> &nbsp;&nbsp;&nbsp;Revised: July 2022</span></center> 
 
 </div> <!--titleBar-->
 
@@ -575,7 +575,8 @@ mutation at F110 in an inbred strain.</td></tr>
 <h3><a id="congenic"></a>5.2&nbsp;&nbsp;&nbsp;Congenic Strains</h3>
 
 <p>Congenic strains are produced by repeated backcrosses to an inbred (background) strain, with
-selection for a particular marker from the donor strain (<a href="#snell78">Snell 1978</a>, <a href="#flaherty">Flaherty 1981</a>). Congenic lines that differ at a histocompatibility locus, and therefore resist each other's grafts, are called congenic resistant (CR) lines.</p>
+selection for a particular marker from the donor strain (<a href="#snell78">Snell 1978</a>, <a href="#flaherty">Flaherty 1981</a>). <a href="/CongenicExamples">Here</a> is a table with the standard mouse strain abbreviations for use in congenic nomenclature and some notes for specific situations.  
+Congenic lines that differ at a histocompatibility locus, and therefore resist each other's grafts, are called congenic resistant (CR) lines.</p>
 
 <p>A strain developed by this method is regarded as a full congenic when a minimum of 10 backcross generations to the host background strain have been made, counting the first hybrid or F1 generation as generation 1.
  At this point the residual amount of unlinked donor genome in the strain is mathematically predicted to be less than 0.01. (Note that the amount of donor genome linked to the selected gene or marker is reduced at a much slower rate, approximately equivalent to 200/N, where N is the number of backcross generations for N&gt;5 (<a href="#flaherty">Flaherty 1981</a>; <a href="#silver">Silver 1995</a>).</p>
@@ -690,7 +691,9 @@ For example, when backcrossing a recessive gene onto an inbred background, after
 <p>Chromosome substitution or consomic strains (<a href="#nadeau">Nadeau <I>et al</I>., 2000</a>) are produced by repeated backcrossing of a whole chromosome or its parts onto an inbred strain. The term <i>chromosome substitution strain</i> is a common designation for consomic, subconsomic, and conplastic strains. To create a chromosome substitution strain, transfer of a whole chromosome or a large chromosomal region is carried out, while in congenic strains, the transferred entity is a gene, marker or genomic segment including a specific marker or interval.</p>
 
 <h4><a id="consomic_strains">5.3.1&nbsp;&nbsp;&nbsp;Consomic Strains</a></h4>
-<p>Consomic strains are produced by repeated backcrossing of a whole chromosome onto an inbred strain. As with congenic strains, a minimum of 10 backcross generations is required, counting the F1 generation as generation 1. For autosomes it is necessary to genotype progeny to ensure that the selected donor chromosome has not recombined with the corresponding recipient chromosome. The generic designation for consomic strains is HOST STRAIN-Chr #<sup>DONOR STRAIN</sup>.</p>
+<p>Consomic strains are produced by repeated backcrossing of a whole chromosome onto an inbred strain. As with congenic strains, a minimum of 10 backcross generations is required, counting the F1 generation as generation 1. For autosomes it is necessary to genotype progeny to ensure that the selected donor chromosome has not recombined with the corresponding recipient chromosome. 
+Note that Y-consomic strains (e.g., C57BL/6J-Chr Y<sup>129P2/OLAHSD</sup>) are implicitly conplastic (e.g., mt<sup>C57BL/6J</sup>), since their development used controlled female breeding from one strain, thus limiting mitochondrial DNA to the same background. However, the conplasticity is not mentioned separately in the strain name. The generic designation for consomic strains is HOST STRAIN-Chr #<sup>DONOR STRAIN</sup>. 
+When ILAR Laboratory Codes are appended to strain names, the "all caps" rule is suspended to be consistent with Laboratory Code Usage. </p>
 
 <p><b>Examples:</b>
 <blockquote>
@@ -710,7 +713,8 @@ strain have been backcrossed onto C57BL/6J.</td></tr>
 
 <p>Although consomic strains are similar in concept and development to congenic strains, in
 consomic nomenclature the name of the host strain is not abbreviated, and no period followed by the
-donor strain is required because the strain of origin is shown in the superscript. Capitalization of all letters in the superscript and non-italicization of the chromosome letter/number and of the superscript distinguish a chromosome identifier from an allele symbol.</p>
+donor strain is required because the strain of origin is shown in the superscript. Capitalization of all letters in the superscript and non-italicization of the chromosome letter/number and of the superscript distinguish a chromosome identifier from an allele symbol (except in the case of the ILAR codes where the all caps rule is suspended).
+ All elements are listed in chromosomal order, then proximal to distal order for the same chromosome; unknown elements are placed next, then place consomic chromosome in chromosome order at the end.</p>
 
 <h3><a id="sis"></a>5.4&nbsp;&nbsp;&nbsp;Segregating Inbred Strains</h3>
 
