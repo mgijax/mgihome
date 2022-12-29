@@ -1,0 +1,121 @@
+<!--#include file='include/templateHead.html'--> 
+<title>MGI-News and Announcements from the Mouse Genome Informatics database resource</title>
+  <meta name="description" content="Archive of MGI news and announcements from 2021/2020." />
+  <meta name="keywords" content="MGI, mgi, mice, mouse, murine, mus musculus, genes, genome, genomic, news, archives, announcements, update, release " />
+  <meta name="robots" content="NOODP" />
+  <meta name="robots" content="NOYDIR" />
+<!--#include file='include/templateBodyStart.html'--> 
+<!-- Title Bar -->
+    <div id="titleBarWrapper">
+  <span class="titleBarMainTitle">News and Announcements for 2021/2020</span>
+  </div> 
+<!--end titleBar-->
+
+<!-- main body table -->
+<table width="75%" cellpadding="2" align="center">
+   <tr><td>
+   <!-- TOC table -->
+        <table class="toc" width="100%">
+		<tr><td>
+        <ul>
+        <li><a href="#sept20_2021">September 20, 2021</a> |
+        <li><a href="#june7_2021">June 7, 2021</a> |
+        <li><a href="#apr26_2021">April 26, 2021</a> |
+        <li><a href="#mar9_2020">March 9, 2020</a> |
+        <li><a href="news_2018.shtml"><span style="white-space: nowrap">Archive: News and Announcements for 2019</span></a></li> 
+       </ul>
+      </td>
+     </tr>              
+    </table>
+   </td></tr>
+
+   <tr><td></td></tr>
+   
+   <tr><td><a id="sept20_2021"></a>
+
+<table class="outline" width="100%">
+   
+   <tr><td class="enhance">September 20, 2021</td></tr>
+   <tr><td>
+ 	<dl class="linkedList">
+ 	 <dt><b>Community Action Alert for Model Organism Databases</b></dt>
+
+<dt>Please respond to NIH request for information (<a href="https://grants.nih.gov/grants/guide/notice-files/NOT-OD-21-182.html" target="_blank">RFI</a>)  </dt>
+<dt>NIH has issued this request for information (RFI) on the use of data resources. <b>The deadline to respond to this RFI is October 15, 2021</b>. The RFI is very broad and mentions Model Organism Databases only in passing (only FlyBase is mentioned by name in the RFI). Continued adequate funding for community centric model organism data resources like MGI is in danger. It is, therefore, very important that NIH receives a robust response from the biomedical community on how Model Organism data resources are used and their value to biomedical research.</dt> 
+<dt>Thank you for your support!</dt></dt>
+
+ 	 </dl>
+   </td>
+  </tr>
+</table>
+   
+  <tr><td><a id="june7_2021"></a>
+
+<table class="outline" width="100%">
+   
+   <tr><td class="enhance">June 7, 2021</td></tr>
+   <tr><td>
+ 	<dl class="linkedList">
+ 	 <dt><b>MGI is updated to the reference genome Build 39</b></dt>
+
+<dt>MGI has integrated the latest C57BL/6J assembly, GRCm39. This includes annotations from NCBI and Ensembl, and updated coordinates for genome features, transcription start sites, and gene traps. SNP coordinates in MGI were not updated to GRCm39 for this release, but will be in a future release.</dt>
+<dt><b>An updated Multiple Genome Viewer now includes human and rat genomes and transcripts</b>.</dt>
+<dt>The Multiple Genome Viewer (<a href="http://www.informatics.jax.org/mgv" target="_blank">MGV</a>) has been rewritten to be species agnostic and now includes human, rat and 4 other model organism reference genomes, as well as the C57BL/6J reference genome (both Build 38 and 39) and 18 other mouse inbred strains. 
+The MGV allows you to explore and compare chromosomal regions between multiple selected species and mouse strains, and to view orthology and inferred paralogy relationships across genomes. This update also includes transcripts and CDSs, the ability to zoom down to the DNA basepair level, and easily download FASTA files of selected sequences and regions. The Viewer permits searches by genes and other genome features, genome coordinates, expression location, and function, phenotype, and disease terms. All searches access mouse gene annotations from MGI via API calls to MouseMine.</dt> 
+<dt>For a selected gene, you can download genomic DNA, composite transcripts, all transcripts, and CDS sequences for your selected homologs.</dt>  
+<dt>You can access the viewer from the Analysis Tools menu in the dark blue banner at the top of MGI web pages and from the Strain Comparison section on MGI Gene Detail pages.</dt>
+<dt>The MGV software is freely available in <a href="https://github.com/mgijax/mgv" target="_blank">GitHub</a></dt>
+<dt><b>MGI now loads vertebrate homology data from the Alliance of Genome Resources</b></dt>
+<dt>MGI now loads vertebrate orthology data based on the "stringent" set of homology class data from the Alliance of Genome Resources. The orthology inferences from different methods have been integrated using the DRSC Integrative Ortholog Prediction Tool (<a href="http://www.flyrnai.org/diopt" target="_blank">DIOPT</a>). 
+DIOPT integrates a number of existing methods including those used by the Alliance: Ensembl Compara, HGNC, Hieranoid, InParanoid, OMA, OrthoFinder, OrthoInspector, PANTHER, PhylomeDB, Roundup, TreeFam, and ZFIN. These data include human, rat, and zebrafish homologs.</dt>
+ 	 </dl>
+   </td>
+  </tr>
+</table>
+   
+ <tr><td><a id="apr26_2021"></a>
+
+<table class="outline" width="100%">
+   
+   <tr><td class="enhance">April 26, 2021</td></tr>
+   <tr><td>
+ 	<dl class="linkedList">
+ 	 <dt><b>Additional lacZ knock in reporter data from the IMPC</b></dt>
+
+<dt>Additional lacZ knock in reporter data from the International Mouse Phenotyping Consortium (<a href="https://www.mousephenotype.org" target="_blank">IMPC</a>) have been imported into GXD. This set now comprises data for 2,373 targeted mutants, an increase of 1,261 mutants. It includes 81,268 images and their 92,198 annotated results, obtained from embryonic day 12.5 and postnatal adult specimens. These data are fully integrated into GXD, allowing them to be searched in context of all other gene expression data in GXD. The entire set can be viewed at <a href="<!--#include file='include/fewi_url.html'-->accession/J:228563" target="_blank">J:228563</a>.</dt>
+ 	 </dl>
+   </td>
+  </tr>
+</table>
+
+ <tr><td><a id="mar9_2020"></a>
+
+<table class="outline" width="100%">
+   
+   <tr><td class="enhance">March 9, 2020</td></tr>
+   <tr><td>
+ 	<dl class="linkedList">
+ 	 <dt><b>GXD now includes RNA-Seq data</b></dt>
+
+<dt>GXD has been expanded to include RNA-Seq data. In keeping with GXD's scope, these data are from experiments that examine endogenous gene expression in wild-type and mutant mice during the embryonic stages and/or postnatal life. 
+The data sets have been imported from the EMBL-EBI's <a href="https://www.ebi.ac.uk/gxa/home" target="_blank">Expression Atlas</a>. We have integrated these data with the other types of expression data in GXD and with the genetic, functional, phenotypic and disease-related information in MGI and thus made them accessible to many new search capabilities.</dt>
+<dt>We chose the Expression Atlas as our data source because their team selects high quality data sets from the public repositories (ArrayExpress and NCBI's GEO) and then uses a standardized pipeline to re-analyze the data, generating consistently processed TPM values. 
+To effectively integrate these data into GXD, we processed these files further to compute averaged quantile normalized TPM values per gene per biological replicate set. Using the Expression Atlas thresholds as a guide, the TPM values are assigned to expression bins of high, medium, low, and below cutoff.</dt>
+<dt>This binning of TPM values allowed us to assign a detected/not detected value to these data, as is done for all the other expression data in GXD. We also annotated metadata for the RNA-Seq samples using the same controlled vocabularies and ontologies we use for all other expression data in GXD. 
+These two steps enable the full integration of these data into GXD/MGI and makes them accessible via existing search tools.</dt>
+
+<dt><b>New data filters on GXD's search summaries</b></dt>
+
+<dt>GXD has developed new filters that take advantage of the genetic, functional, phenotypic and disease-related information in MGI. These filters have been added to the gene expression data search summaries. 
+They enable users to use gene function, phenotype and disease ontology annotations, as well as marker type, to filter expression assay results. Filters for individual RNA-Seq data sets and TPM expression bins have also been developed. When combined with the pre-existing filters for anatomical system, developmental stage, assay type, detected/not detected and wild-type and mutant specimens, users have powerful tools to quickly and efficiently extract the expression data of interest to them.</dt>
+
+<dt><b>Direct access to Morpheus heat map visualization and analysis tools</b></dt>
+
+<dt>GXD users can use our search tools and filters to create RNA-Seq data sets containing the expression data of interest to them. Then, by merely clicking a button on the gene expression data search summary, these data, including the curated sample metadata, will be rendered into an expression heat map via <a href="https://software.broadinstitute.org/morpheus" target="_blank">Morpheus</a>, a heat map visualization and analysis tool created at the Broad Institute. 
+Morpheus offers a myriad of tools for further display and analysis, including sorting, filtering, hierarchical clustering, nearest neighbors analysis, and visual enrichment.</dt>
+ 	 </dl>
+</td></tr>
+</table>
+<!--#include file='include/templateBodyStop.html'--> 
+</body>
+</html>
