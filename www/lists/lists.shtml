@@ -8,9 +8,14 @@
  <span class="titleBarMainTitle">MGI E-mail List Service</span>
 </div> <!--titleBar-->
 
-<p>MGI maintains e-mail lists for the genetics research community. MGI uses Mail-List.com which is hosted at The Jackson Laboratory. MGI manages and moderates the lists.</p> 
-
-<p>Click the links below to the list archives. You can visit these lists as a non-member to see if you want to subscribe. You can also search the list archives for discussions that may have been covered in the past. (Note: We switched to Mail-List.com in February 2020, and the archives now begin as of then.) Once you subscribe, you can manage your subscription via a link in email footers.</p>
+<p>MGI uses the <a href="https://community.alliancegenome.org/" target="_blank">Alliance Community Forum</a> for mouse genetic research community discussions and to announce updates to MGI. 
+Released in August 2021, the Alliance Community Forum, is a discussion forum for researchers interested in being informed about Alliance news and updates. 
+The Alliance Community Forum also represents the first place for discussions across the Alliance and seven model organism communities. Members can also post job openings, ask questions, and participate in discussions on genomic resources and tools. 
+The Alliance Community Forum replaces mgi-list, used for several decades for discussion and announcements.
+</p> 
+<p>MGI maintains a separate e-mail forum for technical information about accessing MGI data, using APIs, and making links to MGI, the mgi-technical-list. For this, MGI uses Mail-List.com which is hosted at The Jackson Laboratory.
+ MGI manages and moderates the technical list. </p> 
+<p>Click the links below to view the technical-list archives, as well as the former mgi-list archives.</p> 
 <UL>
 <LI><STRONG><A HREF="http://archive.mail-list.com/mgi-list">View MGI-LIST</A></STRONG> - Forum for topics in mouse genetics and MGI news.</LI>
 <LI><STRONG><A HREF="http://archive.mail-list.com/mgi-technical-list">View MGI-TECHNICAL-LIST</A></STRONG> - Forum for technical information about accessing MGI data, using APIs, and making links to MGI.</LI>
@@ -19,8 +24,8 @@
 
 <P>
 <HR>
-<B>How to Subscribe</B>
-<p>Enter your name and e-mail address below and select a list. You will receive an acknowledgement and instructions via e-mail.<p>
+<B>How to Subscribe to the mgi-technical-list</B>
+<p>Enter your name and e-mail address below and select a list. You will receive an acknowledgement and instructions via e-mail. Once you subscribe, you can manage your subscription via a link in email footers.<p>
 
 <FORM METHOD="POST" ACTION="listsrv_subscribe.cgi">
 <DL>
@@ -29,7 +34,6 @@
 <DT><p>Your e-mail address:<br>
 <DD><INPUT TYPE="email" NAME="emailaddr" SIZE=40><P>
 <DT>Click to put a checkmark next to the list:<p>
-<DD><INPUT TYPE="checkbox" NAME="listname" VALUE="mgi-list"> <b>mgi-list</b>   (Forum for mouse genetics and MGI news)
 <DD><INPUT TYPE="checkbox" NAME="listname" VALUE="mgi-technical-list"> <b>mgi-technical-list</b>   (Forum about programmatic access to MGI data)
 </DL>
 <HR>
@@ -38,28 +42,8 @@
 <HR>
 
 </FORM>
-<p>Released in August 2021, the <a href="https://community.alliancegenome.org/" target="_blank">Alliance Community Forum</a>, is a moderated discussion forum for researchers interested in being informed about Alliance news and updates. 
-The Alliance Community Forum also represents the first place for discussions across the Alliance and the seven model organism communities. Members can also post job openings, ask questions, and participate in discussions on genomic resources and tools.
-</p> 
-<hr>
+ 
 
 <!--#include file='include/templateBodyStop.html'-->
-<!--
-Warranty Disclaimer and Copyright Notice
 
- THE JACKSON LABORATORY MAKES NO REPRESENTATION ABOUT THE SUITABILITY OR 
- ACCURACY OF THIS SOFTWARE OR DATA FOR ANY PURPOSE, AND MAKES NO WARRANTIES, 
- EITHER EXPRESS OR IMPLIED, INCLUDING MERCHANTABILITY AND FITNESS FOR A 
- PARTICULAR PURPOSE OR THAT THE USE OF THIS SOFTWARE OR DATA WILL NOT 
- INFRINGE ANY THIRD PARTY PATENTS, COPYRIGHTS, TRADEMARKS, OR OTHER RIGHTS.  
- THE SOFTWARE AND DATA ARE PROVIDED "AS IS".
 
- This software and data are provided to enhance knowledge and encourage 
- progress in the scientific community and are to be used only for research 
- and educational purposes.  Any reproduction or use for commercial purpose 
- is prohibited without the prior express written permission of the Jackson 
- Laboratory.
-
-Copyright � 1996, 1999, 2002 by The Jackson Laboratory
-All Rights Reserved
--->
