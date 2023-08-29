@@ -488,7 +488,7 @@ def getContactSection():
                 getField('zip').getHTML(),
                 '</TD></TR>',
 
-                '<TR><TD>%s</TD>' % label('labPI', 'Laboratory PI:'),
+                '<TR><TD>%s</TD>' % label('labPI', 'Principal Investigator:'),
                 '<TD>&nbsp;&nbsp;',
                 getField('labPI').getHTML(),
                 '</TD>',
