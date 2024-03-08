@@ -50,6 +50,18 @@ def hd():
         reply_message.setHeaderBarMainText('User Support <I>Express</I> Mail Results')
         return
 
+############################################################################
+# At David's request, I am hacking in this filter to week out the 1000s of emails that
+# flood user support every time IT does a web application scan. The values checked for
+# are specific, hard coded, and subject to change.
+#
+def isWebScannerRequest (firstname, lastname, emailaddr):
+    return \
+        firstname.startswith("nessus_was") or \
+        lastname.startswith("nessus_was") or \
+        (emailaddr.startswith("wasscan") and emailaddr.endswith("@tenable.com"))
+############################################################################
+
 def main():
         hd()
         
@@ -139,11 +151,12 @@ def main():
                         
                 reply_message.appendBody(body)
 
-                mail_header = 'Subject: Express Mail' + NL
-                fd = os.popen('%s -t %s' % (config['SENDMAIL'], \
+                if not isWebScannerRequest(firstname, lastname, emailaddr):
+                    mail_header = 'Subject: Express Mail' + NL
+                    fd = os.popen('%s -t %s' % (config['SENDMAIL'], \
                         RECIPIENT), 'w')
-                fd.write( mail_header + msg + NL + '.' + NL )
-                fd.close()
+                    fd.write( mail_header + msg + NL + '.' + NL )
+                    fd.close()
                 
         print(reply_message.getFullDocument())
                 
