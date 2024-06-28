@@ -7,6 +7,7 @@ if '.' not in sys.path:
         sys.path.insert (0, '.')
 import os
 import cgi
+import html
 
 import Configuration
 config = Configuration.get_Configuration ('Configuration', 1)
@@ -1049,7 +1050,7 @@ class UserInput:
                 for fieldname in fields:
                         item = self.__dict__[fieldname]
                         if item.getValue():
-                                value = cgi.escape (homelib.wrapLines (
+                                value = html.escape (homelib.wrapLines (
                                         item.getValue(),  60), True)
                                 if len(value) > 60:
                                         value = '\n' + value
