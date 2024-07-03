@@ -45,9 +45,13 @@
  	<dl class="linkedList">
  	
 <dt><b>SNP data increased 4-fold.</b></dt>
-<dt>With this release we increased our SNP records 4-fold to over 66 million. These data include the Sanger MGP (v5) SNP set. Use our preeminent <a href="<!--#include file='include/fewi_url.html'-->snp" target="_blank">SNP Query<a/> to search for SNPs by gene symbols or chromosomal regions across 101 mouse strains. Search results are limited to 100,000 SNPs (displayed or downloaded), and filters are available to refine search results that exceed the return limit.</dt>
+<dt>With this release we increased our SNP records 4-fold to over 66 million. These data include the Sanger MGP (v5) SNP set. Use our preeminent <a href="<!--#include file='include/fewi_url.html'-->snp" target="_blank">SNP Query<a/> to search for SNPs by gene symbols or chromosomal regions across 101 mouse strains. 
+Search results are limited to 100,000 SNPs (displayed or downloaded), and filters are available to refine search results that exceed the return limit.</dt>
 <dt>To query this large data set efficiently, we implemented the search with Elasticsearch, which allows large data sets to be queried in parallel and improves search speeds. We plan on using this search for other large data sets in MGI/GXD.</dt>
-<dt>In order to update the SNP coordinates to GRCm39 we temporarily lost the dbSNP function classes, such as whether the SNP is in an intron or coding region, and therefore, the Function Class filter in a SNP summary report is limited to "within coordinates of." A future release will provide more function classes. The function classes for individual SNPs can be found by searching <a href=https://www.alliancegenome.org target="_blank">The Alliance of Genome Resource</a> with the RefSNP ID, one ID at a time. For queries that specify one or more Reference strains, MGI's Allele Agreement filters restrict results to SNPs with strain allele calls that agree or differ from reference strain alleles.</dt>
+<dt>In order to update the SNP coordinates to GRCm39 we temporarily lost the dbSNP function classes, such as whether the SNP is in an intron or coding region, and therefore, the Function Class filter in a SNP summary report is limited to "within coordinates of." A future release will provide more function classes. 
+The function classes for individual SNPs can be found by searching <a href=https://www.alliancegenome.org target="_blank">The Alliance of Genome Resource</a> with the RefSNP ID, one ID at a time. For queries that specify one or more Reference strains, MGI's Allele Agreement filters restrict results to SNPs with strain allele calls that agree or differ from reference strain alleles.</dt>
+<dt><b>New links to GlyGen</b>.</dt>
+<dt>New to the Protein Information section of Gene Detail pages are links to GlyGen for carbohydrate and glycoconjugate data. For an example, see the <a href="<!--#include file='include/fewi_url.html'-->marker/MGI:97838" target="_blank">Eprs1</a> Gene Detail page.</dt>
 
 </dl>
    </td>
