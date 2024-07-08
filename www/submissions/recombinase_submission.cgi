@@ -9,6 +9,7 @@ if '.' not in sys.path:
         sys.path.insert (0, '.')
 import os
 import cgi
+import html
 import http.cookies
 import time
 import random
@@ -1512,7 +1513,7 @@ def buildText(escapeValues = False):
                                 # handle escaping of < and > characters
 
                                 if escapeValues:
-                                        prValue = cgi.escape(str(
+                                        prValue = html.escape(str(
                                                 field.getValue()))
                                 else:
                                         prValue = str(field.getValue())
