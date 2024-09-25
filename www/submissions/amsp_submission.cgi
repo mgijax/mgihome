@@ -1415,9 +1415,11 @@ def updateFields (
 
         for i in range(1,11):
                 key = 'file' + str(i)
-                if key in parms and parms[key].value.decode().strip() != '':
+                if key in parms and parms[key].filename.strip() != '':
                         filename = parms[key].filename
-                        contents = parms[key].value.decode()
+                        contents = parms[key].value
+                        if filename[-3:] == 'txt':
+                                contents = parms[key].value.decode()
 
                         UPLOADED_FILES.append ( {
                                 'filename' : filename,
@@ -1539,7 +1541,7 @@ def doExtraValidation():
         
         copyright = getField('isCopyrighted')
                 
-        if file1 != '' and file1.value.decode() != '' and copyright.getValue() == '':
+        if file1 != '' and file1.filename != '' and copyright.getValue() == '':
                 ERRANT_FIELDS['isCopyrighted'] = True
                 errors.append ('You must answer the copyright question when submitting a file.')
 
@@ -1830,7 +1832,10 @@ def saveFile (
         # Throws: raises 'error' if we cannot write the file
 
         try:
-                fp = open(os.path.join(dir, filename), 'w')
+                if filename[-3:] == 'txt':
+                   fp = open(os.path.join(dir, filename), 'w')
+                else:
+                   fp = open(os.path.join(dir, filename), 'wb')
                 fp.write(contents)
                 fp.flush()
                 fp.close()
