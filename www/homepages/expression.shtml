@@ -172,12 +172,12 @@ img {
 				    <div class="col-sm-4" style="">
 				      <a href="<!--#include file='include/fewi_url.html'-->gxd"><img style="width:219px;" src="<!--#include file='include/mgihome_url.html'-->GXD/DataSearch.png" alt="GXD Data Search Link"></a>
 				      </div>
-		    		<div class="col-sm-4" style="">
-		    		  <a href="<!--#include file='include/fewi_url.html'-->gxd/differential"><img style="width:219px;" src="<!--#include file='include/mgihome_url.html'-->GXD/DifferentialSearch.png" alt="GXD Differential Search Link"></a>
-		    		</div>
+				    <div class="col-sm-4" style="">
+                                      <a href="<!--#include file='include/fewi_url.html'-->gxd/profile"><img style="width:219px;" src="<!--#include file='include/mgihome_url.html'-->GXD/ProfileSearch.png" alt="GXD Profile Search Link"></a>
+				    </div>
 		   			<div class="col-sm-4" style="">
-		   			  <a href="<!--#include file='include/fewi_url.html'-->gxd/profile"><img style="width:219px;" src="<!--#include file='include/mgihome_url.html'-->GXD/ProfileSearch.png" alt="GXD Profile Search Link"></a>
-		  		</div>
+		   			  <a href="<!--#include file='include/fewi_url.html'-->gxd/batchSearch"><img style="width:219px;" src="<!--#include file='include/mgihome_url.html'-->GXD/Batch.png" alt="GXD Batch Search Link"></a>
+		   			</div>
 		  		</div>
 		    	<div class="gridRow">
 				    <div class="col-sm-4" style="">
@@ -186,10 +186,18 @@ img {
 		    		<div class="col-sm-4" style="">
 		   			  <a href="<!--#include file='include/fewi_url.html'-->gxd/tissue_matrix"><img style="width:219px;" src="<!--#include file='include/mgihome_url.html'-->GXD/GXDMatrix.png" alt="GXD Tissue Matrix"></a>
 		    		</div>
-		   			<div class="col-sm-4" style="">
-		   			  <a href="<!--#include file='include/fewi_url.html'-->gxd/batchSearch"><img style="width:219px;" src="<!--#include file='include/mgihome_url.html'-->GXD/Batch.png" alt="GXD Batch Search Link"></a>
-		   			</div>
-		  		</div>
+		   			<div class="col-sm-4" style="position:relative;">
+		   			  <a href=""><img style="width:219px;" src="<!--#include file='include/mgihome_url.html'-->GXD/CellType.png" alt="Cell Type Browser Link"></a>
+					    <div style="
+					    position: absolute;
+					    bottom: 2px;
+					    left: 40px;
+					    background-color: white;
+					    ">Under construction</div>
+					    </div>
+					</div>
+			</div>	
+
 		    	<div class="gridRow">
 				    <div class="col-sm-4" style="">
 		   			  <a href="<!--#include file='include/fewi_url.html'-->gxd/htexp_index"> <img style="width:219px;" src="<!--#include file='include/mgihome_url.html'-->GXD/RNA_Seq_Microarry_Search_icon.jpg" alt="RNA-Seq and Microarray Experiment Search"></a>
