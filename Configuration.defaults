@@ -63,22 +63,20 @@ SENDMAIL    /usr/lib/sendmail
 #- MGI paths and URLs -#
 #----------------------#
 
-# path to the NIH survey
-SURVEY_ROOT_DIRECTORY	/export/gondor/survey/nih
+# path to the NIH survey/disabled on purpose
+#SURVEY_ROOT_DIRECTORY	/export/gondor/survey/nih
 
-# path to allele, strain, phenotype submissions
-SUBMISSION_DIRECTORY	/export/gondor/submissions
+# path to allele, strain, phenotype submissions/moved to mgiconfig/bhmgipub01lt/lp configuration
+#SUBMISSION_DIRECTORY	/export/gondor/submissions
 
+# path in which to save submissions of the komp nomination form/disabled on purpose
+#KOMP_NOMINATION_DIR	/export/gondor/survey/komp
+
+#
 #------------------#
-#- sybase related -#
+#- postgres related -#
 #------------------#
 
 # path to library files for doing crons (commented out for now)
 LD_LIBRARY_PATH    /usr/pgsql-12/lib:/usr/local/lib
 
-#----------------#
-#- komp related -#
-#----------------#
-
-# path in which to save submissions of the komp nomination form
-KOMP_NOMINATION_DIR	/export/gondor/survey/komp
