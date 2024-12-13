@@ -23,12 +23,7 @@
         <li><a href="#jun1_2024">June 1, 2024</a> |
         <li><a href="#feb13_2024">February 13, 2024</a> |
         <li><a href="#jan22_2024">January 22, 2024</a> |
-        <li><a href="#dec11_2023">December 11, 2023</a> |
-        <li><a href="#sept11_2023">September 11, 2023</a> |
-        <li><a href="#may30_2023">May 30, 2023</a> |
-        <li><a href="#feb13_2023">February 13, 2023</a> |
-        <li><a href="#jan5_2023">January 5, 2023</a> |
-        <li><a href="news_2022.shtml"><span style="white-space: nowrap">Archive: News and Announcements for 2022</span></a></li> 
+        <li><a href="news_2023.shtml"><span style="white-space: nowrap">Archive: News and Announcements for 2023</span></a></li> 
        </ul>
        </td>
      </tr>              
@@ -138,123 +133,6 @@ You may choose to opt out of the Analytics cookies. An opt out selection is reta
   </tr>
 </table>
    
-   <tr><td><a id="dec11_2023"></a>
-
-<table class="outline" width="100%">
-   
-   <tr><td class="enhance">December 11, 2023</td></tr>
-   <tr><td>
- 	<dl class="linkedList">
- 	
-<dt><b>The Global Biodata Coalition (GBC) designated GXD a Global Core Biodata Resource.</b></dt>
-<dt><a href="https://globalbiodata.org/what-we-do/global-core-biodata-resources/" target="_blank"><img src="<!--#include file='include/mgihome_url.html'-->homepages/images/GCBR-LogoSm-RGB.png" alt="GCBR_Logo" width="201" height="85"></img></a></dt>
-<dt>Global Core Biodata Resources are biodata resources that are of fundamental importance to the wider biological and life sciences community and the long term preservation of biological data. They:
-<ul>
-<li>provide free and open access to their data,</li>
-<li>are used extensively both in terms of the number and distribution of their users,</li>
-<li>are mature and comprehensive,</li>
-<li>are considered authoritative in their field,</li>
-<li>are of high scientific quality, and</li>
-<li>provide a professional standard of service delivery.</li>
-</ul>
-Their operation is based on well-established life-cycle management processes and well-understood dependencies with related data resources. GCBRs have either terms of use or specific licenses that conform to the Open Definition, to enable the reuse of data.
-</dt>
-<dt>GXD and MGD, the two main components of MGI, are now both designated as GCBRs. <a href="<!--#include file="include/mgihome_url.html"-->news/news_2022.shtml#dec15_2022" target="_blank">MGD was already named a GCBR in 2022</a>.</dt>
-</dl>
-   </td>
-  </tr>
-</table>
-   
-    <tr><td><a id="sept11_2023"></a>
-
-<table class="outline" width="100%">
-   
-   <tr><td class="enhance">September 11, 2023</td></tr>
-   <tr><td>
- 	<dl class="linkedList">
- 	
-<dt><b>Human - Mouse: Disease Connection search refinements.</b></dt>
-<dt>The Human Phenotype Ontology (HPO) and Mammalian Phenotype (MP) Ontology are distinct vocabularies that cover similar concepts. With this release, we added a tool to find related terms in the two ontologies, and add these to a Human - Mouse: Disease Connection (<a href="<!--#include file='include/fewi_url.html'-->diseasePortal" target="_blank">HMDC</a>) phenotype ID search. 
-This permits you to find both human and mouse phenotypic results when searching by ID.</dt>
-  <dt>Previously, when you used the Human Phenotype Ontology (<a href="<!--#include file='include/fewi_url.html'-->vocab/hp_ontology" target="_blank">HPO</a>) Browser, and you clicked on the number of annotations, the search forwarded to the HMDC and the search was limited to just human phenotype annotations.
-   With this release, however, use the "Click to modify search" button and you will have the option of finding and adding related mammalian phenotype terms to the HMDC search results. </dt>
-</dl>
-   </td>
-  </tr>
-</table>
-   
-      <tr><td><a id="may30_2023"></a>
-
-<table class="outline" width="100%">
-   
-   <tr><td class="enhance">May 30, 2023</td></tr>
-   <tr><td>
- 	<dl class="linkedList">
- 	
-<dt><b>MGI has improved its representation of the pseudoautosomal region (PAR).</b></dt>
-<dt>
- <ul>
-  <li>A search for Chr XY with the Genes & Markers Query now returns all PAR markers, placed in the PAR by genome coordinates or by genetic mapping. PAR markers with genome coordinates can still be returned by coordinate searches of the corresponding chromosome (X or Y).</li>
-  <li>MGI now represents sequence-verified PARX / PARY homologous loci as distinct markers, with Chr X / Chr Y genome coordinates, respectively, and gene detail pages provide links to the Homologous PAR Feature. As an example, see the <a href="<!--#include file='include/fewi_url.html'-->marker/MGI:2384747" target="_blank">Erdr1x</a> Gene Detail Page.</li>
- </ul>
-</dt>
-<dt>The Multiple Genome Viewer (MGV) now includes 2 <i>Xenopus</i> genomes: the African clawed frog, <i>X. laevis</i>, and the the Western clawed frog, <i>X. tropicalis</i>.
- <i>X. laevis</i> is an allotetraploid (2n = 36) of hybrid origin.  The resulting <i>X. laevis</i> genome has a set of ancestral 'long' (L) and 'short' (S) chromosomes, with extensive L/S homoeology for genes that have been retained on the S subgenome. 
- The <i>X. laevis.L</i> and <i>X. laevis.S</i> subgenomes are represented as separate genomes in the MGV.
- </td>
-</dl>
-   </td>
-  </tr>
-</table>
-   
-   <tr><td><a id="feb13_2023"></a>
-
-<table class="outline" width="100%">
-   
-   <tr><td class="enhance">February 13, 2023</td></tr>
-   <tr><td>
- 	<dl class="linkedList">
- 	
-<dt><b>QTL Detail Pages now include candidate genes and QTL interactions.</b></dt>
-<dt>QTL Detail Pages summary section now includes pop-ups for:
- <ul>
- <li>Candidate Genes
-  <ul>
-  <li>Potential candidate genes for the featured QTL are shown with their genome locations, details describing their candidacy, supporting references, and links to the candidate genes' detail pages. Reciprocally, pages for QTL candidate genes show details and links to detail pages for QTL the genes are potential candidates for. 
-   As an example, see the top, Summary section, of the <a href="<!--#include file='include/fewi_url.html'-->marker/MGI:104787" target="_blank">Skts2 QTL Detail page</a>.</li>
-</li>
-   </ul></li>
- <li>QTL Interactions
-  <ul>
-   <li>For interacting QTL, QTL detail pages show interacting QTL, their genetic and genome locations, interaction type (enhancement or suppression), and supporting references. As an example, see the top, Summary section, of the <a href="<!--#include file='include/fewi_url.html'-->marker/MGI:2656547" target="_blank">Lmr14 QTL Detail page</a>.</li>
-    </ul></li>
-</ul>
-</dt>
-<dt>GXD’s <a href="<!--#include file='include/fewi_url.html'-->gxd/profile">Expression Profile Search</a> now includes the ability to search for genes detected in selected tissues "And Nowhere Else."</dt>
-</dl>
-   </td>
-  </tr>
-</table>
-   
-   <tr><td><a id="jan5_2023"></a>
-
-<table class="outline" width="100%">
-   
-   <tr><td class="enhance">January 5, 2023</td></tr>
-   <tr><td>
- 	<dl class="linkedList">
- 	
-<dt><b>MGI is now supporting the more secure HTTPS protocol.</b></dt>
-<dt>Hypertext Transfer Protocol Secure (HTTPS) adds a Secure Sockets Layer (SSL) to HTTP. This encrypts exchanges between your browser and the MGI web server and reduces the risk of a malicious entity intercepting your web interactions. </dt>
-<dt>Some web browsers by default are set to only use HTTPS and in order to access MGI, you had to turn off that preference. With this update, you have one less reason to turn that off. </dt>
-<dt>MouseMine has already been using HTTPS for about a year. The International Mouse Strain Resource (IMSR) and the Mouse Models of Human Cancer Database (MMHCdb) will be using HTTPS in future releases.
-</dt>
-</dl>
-   </td>
-  </tr>
-</table>
-
-  
    </td>
   </tr>
 </table>
