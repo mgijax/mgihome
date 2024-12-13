@@ -68,6 +68,10 @@ SENDMAIL    /usr/lib/sendmail
 # path in which to save submissions of the komp nomination form/disabled on purpose
 #KOMP_NOMINATION_DIR	/export/gondor/survey/komp
 
+# path to allele, strain, phenotype submissions
+SUBMISSION_DIRECTORY  /export/gondor/submissions
+#SUBMISSION_DIRECTORY  /export/rohan/submissions
+
 #
 #------------------#
 #- postgres related -#
