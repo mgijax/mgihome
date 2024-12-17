@@ -40,8 +40,21 @@
    <tr><td>
  	<dl class="linkedList">
  	
-<dt><b>Enhanced Gene Expression Profile Search.</b></dt>
-<dt></dt>
+<dt><b>Expression Profile Search redesigned and enhanced.</b></dt>
+<dt>The GXD Expression Profile Search is a tool to search for genes by their expression profile. We have redesigned and enhanced this utility to make it more versatile, improve its search speed, and include access to RNA-seq data.</dt>
+<dt><b>More versatile searches:</b> Users have always been able to define the expression profile of interest by specifying up to 10 anatomical structures and whether expression is present or absent in these structures. 
+Now users can also specify the developmental (Theiler) stage(s) of interest. They can define search profiles based on developmental stages alone or they can use combinations of anatomical structures and developmental stages. 
+The addition of this functionality to the profile search allowed us to retire the Differential Expression search as all its utilities (and more) are now available in the redesigned Expression Profile search.</dt>
+<dt><b>Inclusion of RNA-seq data:</b> Previously the Expression Profile (and Differential Expression) Search were limited to classical expression data. The indices and code powering profile searches has been redesigned, resulting in significantly improved search speeds. 
+This allowed us to expand the profile search to interrogate RNA-seq data.</dt>
+<dt><b>Two different search modes:</b> Due to the different nature of the data, the profile search has a Classical Expression Assays mode and an RNA-Seq mode. For instance, due to the need to undertake serial sectioning of the anatomical structure to confirm the absence of expression in it, when describing the results from in situ experiments, authors tend to underreport the absence of gene expression. 
+Thus, in Classical Expression Assays mode the "not detected" search returns genes recorded as not detected, as well as genes for which expression in the specified anatomical structures and / or developmental stages is not recorded in the database (not analyzed). 
+In contrast, absence of expression information is complete for the anatomical structures studied using RNA-seq. Accordingly, the "not detected" search in RNA-Seq mode only returns genes for which gene expression was reported to be absent (below cutoff).</dt>
+<dt<b>>New autocomplete functionality:</b> The anatomical structure field has always been supported by an autocomplete function to help users find terms included in our anatomy ontology. Now, as a further aid, the autocomplete is limited to anatomical structures and stages for which GXD has expression data, ensuring users will choose terms that will result in fruitful searches.</dt>
+<dt><b>Improved Matrix Displays:</b> The Matrix displays in the search summary (Tissue x Gene for classical data searches, Tissue x Stage for both search modes) now display each profile structure on its own row, making it easier to interpret returned results.</dt>
+<dt><b>More visible access to Morpheus heat map visualization and analysis tools:</b> Expression results obtained from RNA-seq searches can be forwarded Morpheus, a tool created at the Broad Institute, for display and analysis, including sorting, filtering, hierarchical clustering, nearest neighbor analysis, and visual enrichment. 
+Although we have long supported exports to Morpheus, this functionality has been made more prominent by adding a tab, entitled "Heat Map," to search summaries.</dt>
+
 
 </dl>
    </td>
