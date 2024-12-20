@@ -36,6 +36,12 @@
    window.open(url,'firstTimeWindow','width=800,height=600,resizable=yes,scrollbars=yes,alwaysRaised=yes');
 }
 
+  function openHighlightExpProfPopupWindow()
+{
+	  url = "<!--#include file='include/mgihome_url.html'-->" + "GXD/HighlightExpProfPopup.shtml";
+   window.open(url,'highlightHighlightExpProfPopupWindow','width=900,height=700,resizable=yes,scrollbars=yes,alwaysRaised=yes');
+}
+
   function openHighlight1Window()
 {
 	  url = "<!--#include file='include/mgihome_url.html'-->" + "GXD/Highlight1.shtml";
