@@ -226,29 +226,35 @@ Note that the list in each section is a definition list <dl> where the term
 			</tr>
 			<tr >
 				<td>
-					<ul>
+
+					<div style="color:red;">
+					<div style="font-weight:bold;">NOTICE</div>
+					<div>Due to funding cutbacks for model organism databases that affect MGI, our public database server (mgi-adhoc.jax.org), which hosts a small number of SQL accounts, will be retired as of June 1st, 2025.  The last update of mgi-adhoc data was 12/24/24.  No further updates will be made on mgi-adhoc before the termination date.  We apologize for any inconvenience this action may cause.  Current versions of the mgd database dump file will continue to be accessible at (https://www.informatics.jax.org/downloads/database_backups/mgd.postgres.dump). To use this dump file, your system will need to have Postgres 17 installed.  MGI data are also accessible from public reports, which can be found on the MGI Data and Statistical Reports page (https://www.informatics.jax.org/downloads/reports/index.html), organized by data type. Increasingly, MGI data are also available through the Alliance of Genome Resources (https://www.alliancegenome.org/), which ultimately will be one of the primary sources of function, phenotype, and disease model data for the mouse.  If you experience difficultly obtaining the data you need from these other resources, please contact mgi-help@jax.org or help@alliancegenome.org for assistance.
+					</div>
+					</div>
+					<ul style="text-decoration:line-through;">
 					  <li>The MGI Public Ad Hoc SQL Server is available for running custom SQL queries against the MGI database. </li>
 					  <li>MGI uses PostgreSQL relational databases to store information.</li>
-					  <li>You must install client software that can connect to a PostgreSQL server in order to query the database. You can use free clients such as JDBC (Java), ODBC (Windows) or SQuirreL SQL (<a href="https://squirrel-sql.sourceforge.io">https://squirrel-sql.sourceforge.io</a>).</li>
-					  <li>See our example <a href="<!--#include file='include/mgihome_url.html'-->/other/MGIConnect.txt">JDBC Client</a>. You can also use this to verify that your SQL account is active. </li>
+					  <li>You must install client software that can connect to a PostgreSQL server in order to query the database. You can use free clients such as JDBC (Java), ODBC (Windows) or SQuirreL SQL (<a>https://squirrel-sql.sourceforge.io</a>).</li>
+					  <li>See our example <a>JDBC Client</a>. You can also use this to verify that your SQL account is active. </li>
 					</ul>
 
 
-					<blockquote>
+					<blockquote style="text-decoration:line-through;">
 					<b><i>Schema Browser</i></b>
 					  <ul>
 						<li>In order to write your own custom SQL query, you must be familiar with SQL and the MGI database schema. </li>
-						<li>For help with the database schema, use the <a href="<!--#include file='include/schema_url.html'-->">Schema Browser</a> available in the Web Interface.</li>
+						<li>For help with the database schema, use the <a>Schema Browser</a> available in the Web Interface.</li>
 					  </ul>
 
 					<b><i>Login & Configuration</i></b>
 					<ul>
-					  <li><a href="<!--#include file='include/mgihome_url.html'-->support/mgi_inbox.shtml">Contact User Support</a> to request an SQL account.  You will receive a login, password and connection parameters.</li>
+					  <li><a>Contact User Support</a> to request an SQL account.  You will receive a login, password and connection parameters.</li>
 					  </ul>
 
 
 					<b><i>Custom SQL Reports from MGI</i></b>
-					<ul><li><a href="<!--#include file='include/mgihome_url.html'-->support/mgi_inbox.shtml">Contact User Support</a> for custom SQL queries if you prefer not to write them yourself.</li></ul>
+					<ul><li><a>Contact User Support</a> for custom SQL queries if you prefer not to write them yourself.</li></ul>
 
 					</blockquote>
 				</td>
