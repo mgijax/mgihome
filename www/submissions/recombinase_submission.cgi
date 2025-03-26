@@ -28,6 +28,9 @@ import subprocess
 import template
 import homelib
 
+#import cgitb
+#cgitb.enable()
+
 ###------------------------###
 ###--- global variables ---###
 ###------------------------###
@@ -1300,9 +1303,9 @@ def updateFields (
 
         for i in range(1,11):
                 key = 'file' + str(i)
-                if key in parms and parms[key].value.decode().strip() != '':
+                if key in parms and len(parms[key].value) > 0:
                         filename = parms[key].filename
-                        contents = parms[key].value.decode()
+                        contents = parms[key].value
 
                         UPLOADED_FILES.append ( {
                                 'filename' : filename,
@@ -1415,7 +1418,7 @@ def doExtraValidation():
         
         copyright = getField('isCopyrighted')
                 
-        if file1 != '' and file1.value.decode() != '' and copyright.getValue() == '':
+        if file1 != '' and len(file1.value) > 0 and copyright.getValue() == '':
                 ERRANT_FIELDS['isCopyrighted'] = True
                 errors.append ('You must answer the copyright question when submitting a file.')
 
@@ -1694,7 +1697,7 @@ def saveFile (
         # Throws: raises 'error' if we cannot write the file
 
         try:
-                fp = open(os.path.join(dir, filename), 'w')
+                fp = open(os.path.join(dir, filename), 'wb')
                 fp.write(contents)
                 fp.flush()
                 fp.close()
@@ -1762,7 +1765,7 @@ def saveText (
         # Assumes: nothing
         # Throws: raises 'error' if we cannot save the file
 
-        saveFile(dir, 'submissionForm.txt', text)
+        saveFile(dir, 'submissionForm.txt', text.encode())
         return
 
 def sendError (
@@ -1947,7 +1950,7 @@ def main():
         # if we received any uploaded files, we need to create a directory
         # and save them.  We need to remember the directory as a hidden field
         # in the next form we write out.
-
+        
         if UPLOADED_FILES:
                 try:
                         myDir = createDirectory()
@@ -2005,4 +2008,5 @@ def main():
 ###--- main program ---###
 
 if __name__ == '__main__':
+        #print("Content-type: text/html\n\n.")
         main()
