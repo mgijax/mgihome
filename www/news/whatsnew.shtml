@@ -18,6 +18,7 @@
   <table class="toc" width="100%">
 	<tr><td>
       <ul>
+        <li><a href="#march_2025">March 24, 2025</a> |
         <li><a href="#dec30_2024">December 30, 2024</a> |
         <li><a href="#july15_2024">July 15, 2024</a> |
         <li><a href="#jun1_2024">June 1, 2024</a> |
@@ -32,6 +33,26 @@
 
    <tr><td></td></tr>
    
+   <tr><td><a id="march_2025"></a>
+
+<table class="outline" width="100%">
+   
+   <tr><td class="enhance">March 24, 2025</td></tr>
+   <tr><td>
+   <dl class="linkedList">
+   
+<dt><b>Ensembl release 113 regulatory annotation has been incorporated into MGI.</b></dt>
+<dt>Ensembl Regulatory annotation for Mouse has undergone a major update. The format of ENSR IDs has been updated for chromosome-level assemblies, and no relationship between the old IDs is tracked. As a result, we decided to do a delete and reload of all regulatory features from Ensembl for release 113. Only regulatory region markers with manually curated data (such as alleles and relationships) from previous releases are kept, while those without curated data are deleted from the MGI database.</dt>
+<dt>The 288,161 newly created regulatory regions markers (Rr407359--Rr695519) are associated with reference <a href="<!--#include file='include/fewi_url.html'-->reference/J:36200" target="_blank">J:36200</a>. </dt>
+<dt>There are 113 regulatory regions kept from previous Ensembl regulatory releases. These markers are associated with reference <a href="<!--#include file='include/fewi_url.html'-->reference/J:321631" target="_blank">J:321631</a>. </dt>
+<dt>The 364,225 deleted regulatory regions (Rr2283--Rr366617) are archived internally at MGI and available for users upon request.  </dt>
+
+
+</dl>
+   </td>
+  </tr>
+</table>
+
    <tr><td><a id="dec30_2024"></a>
 
 <table class="outline" width="100%">
