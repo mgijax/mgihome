@@ -18,7 +18,7 @@
   <table class="toc" width="100%">
 	<tr><td>
       <ul>
-        <li><a href="#april7">April 7, 2025</a> |
+        <li><a href="#april7_2025">April 7, 2025</a> |
         <li><a href="#dec30_2024">December 30, 2024</a> |
         <li><a href="#july15_2024">July 15, 2024</a> |
         <li><a href="#jun1_2024">June 1, 2024</a> |
@@ -33,7 +33,7 @@
 
    <tr><td></td></tr>
    
-   <tr><td><a id="april7"></a>
+   <tr><td><a id="april7_2025"></a>
 
 <table class="outline" width="100%">
    
@@ -41,6 +41,9 @@
    <tr><td>
    <dl class="linkedList">
    
+<dt><b>MGI SNP Function Classes are back and new Regulates Expression Relationships are now displayed on Gene pages.</b></dt>
+<dt><b>SNP Function Classes from the Alliance:</b> MGI SNP Function Classes (Molecular Consequences) have been incorporated from the Alliance of Genome Resources.  You can now filter SNP results by molecular consequences using the Function Class filter.  All MGI SNPs with Alliance-provided function class data now link to Alliance Variant pages for corresponding SNPs.</dt>
+<dt><b>New Regulates Expression Relationships:</b> Regulates Expression Relationships between MGI genes and regulatory features are now displayed, reciprocally, on Gene Detail pages.  For genes with MGI-curated regulatory features, gene pages have a <b>Regulated by</b> popup summary of regulatory features demonstrated to affect normal expression of the gene.  Similarly, <b>Regulates expression of</b> popup summary displays can be found on the MGI detail pages of corresponding regulatory features.</dt> 
 <dt><b>Ensembl release 113 regulatory annotation has been incorporated into MGI.</b></dt>
 <dt>Ensembl Regulatory annotation for Mouse has undergone a major update. The format of ENSR IDs has been updated for chromosome-level assemblies, and no relationship between the old IDs is tracked. As a result, we decided to do a delete and reload of all regulatory features from Ensembl for release 113. Only regulatory region markers with manually curated data (such as alleles and relationships) from previous releases are kept, while those without curated data are deleted from the MGI database.</dt>
 <dt>The 288,161 newly created regulatory regions markers (Rr407359--Rr695519) are associated with reference <a href="<!--#include file='include/fewi_url.html'-->reference/J:362000" target="_blank">J:362000</a>. </dt>
