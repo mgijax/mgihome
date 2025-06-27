@@ -124,9 +124,6 @@ table.outline{
 						<dt>&bull; <a href="<!--#include file='include/fewi_url.html'-->gxd">Gene Expression Data Standard Search</a><br>
                         <dd>Search for gene expression results using a variety of search parameters.</dd>
 
-                        <dt>&bull; <a href="<!--#include file='include/fewi_url.html'-->gxd/differential">Gene Expression Data Differential Expression Search</a><br>
-                        <dd>Search for genes expressed in an anatomical structure and/or developmental stage(s) but not in others.</dd>
-                        
                         <dt>&bull; <a href="<!--#include file='include/fewi_url.html'-->gxd/profile">Gene Expression Data Profile Search</a><br>
                         <dd>Search for genes by expression profile.</dd>
 
@@ -135,6 +132,9 @@ table.outline{
 
                         <dt>&bull; <a href="<!--#include file='include/fewi_url.html'-->vocab/gxd/anatomy/">Mouse Developmental Anatomy Browser</a></dt>
                         <dd>Search or browse for anatomical structures; includes links to associated expression results.</dd>
+
+                        <dt>&bull; <a href="<!--#include file='include/fewi_url.html'-->vocab/cell_ontology/">Cell Ontology Browser</a></dt>
+                        <dd>Search or browse for cell types; includes links to associated expression results.</dd>
 
                         <dt>&bull; <a href="<!--#include file='include/fewi_url.html'-->gxd/tissue_matrix">Gene Expression Data Matrix</a></dt>
                         <dd>Use the interactive Tissue by Stage Matrix to access detailed gene expression results.</dd>
@@ -282,6 +282,9 @@ table.outline{
 
 						<dt>&bull; <a href="<!--#include file='include/fewi_url.html'-->vocab/gxd/anatomy/EMAPA:16039">Mouse Developmental Anatomy Browser</a></dt>
 						<dd>Search or browse for anatomical structures; includes links to associated expression results.</dd>
+
+						<dt>&bull; <a href="<!--#include file='include/fewi_url.html'-->vocab/cell_ontology/CL:0000000">Cell Ontology (CL) Browser</a></dt>
+						<dd>Search or browse for cell types; includes links to associated expression results, HT Experiments and Recombinase Alleles</dd>
 
 						<dt>&bull; <a href="<!--#include file='include/fewi_url.html'-->vocab/gxd/ma_ontology">Adult Mouse Anatomy Browser</a></dt>
 						<dd>An extensive Stage 28 dictionary; not yet in use for annotation of expression data.</dd>
