@@ -38,21 +38,21 @@
 <h3>Cell Ontology Browser and Filtering by Cell Types</h3>
 <p>The Cell Ontology (CL) is a hierarchically-structured controlled vocabulary that describes a broad range of canonical biological cell types. The CL is not organism-specific, covering cell types from prokaryotes to mammals, but excludes plant cell types. The CL is an OBO Foundry ontology and is available at: <a href="https://obofoundry.org/ontology/cl.html" target="_blank">https://obofoundry.org/ontology/cl.html</a>.</p>
 <p>GXD uses terms from the Cell Ontology to annotate mouse expression Assay results to specific cell types.</p>
- <img src="<!--#include file='include/mgihome_url.html'-->GXD/CLpopupAssayResults1.png" width="800" height="auto" alt="AssayResults1" />
+ <img src="<!--#include file='include/mgihome_url.html'-->GXD/CLpopupAssayResults1.png" width="825" height="auto" alt="AssayResults1" />
 <h4>New Cell Ontology Browser</h4>
 <p>The <a href="<!--#include file='include/fewi_url.html'-->vocab/cell_ontology/CL:0000000">Cell Ontology Browser</a> can be used to find and view descriptions of cell types, and to find and retrieve mouse gene expression data associated with those cell types. From the Cell Ontology Browser entry page, you can:</p>
 <p><b>Search for cell types</b></p>
 <p>You can use the Search field by entering a text string or a CL numerical identifier. An autocomplete list is activated which shows cell type terms and synonyms matching the entered characters.</p>
-<img src="<!--#include file='include/mgihome_url.html'-->GXD/CLpopupCellTypeSearch1.png" width="484" height="521" alt="CellTypeSearch1" />
+<img src="<!--#include file='include/mgihome_url.html'-->GXD/CLpopupCellTypeSearch1.png" width="340" height="auto" alt="CellTypeSearch1" />
 <p>Select a term from the autocomplete list or continue entering text, then click to activate a search. The search finds all cell type terms that contain any of your search terms and displays a list of those terms.</p>
-<img src="<!--#include file='include/mgihome_url.html'-->GXD/CLpopupCellTypeSearch2.png" width="486" height="541" alt="CellTypeSearch2" />
+<img src="<!--#include file='include/mgihome_url.html'-->GXD/CLpopupCellTypeSearch2.png" width="340" height="auto" alt="CellTypeSearch2" />
 <p>Click on a term in the results to update the Term Detail and Tree View sections.</p>
 <p><b>View details of a selected cell type</b></p>
 <p>The <b>Term Detail</b> section displays information specific for that term, including synonyms, definition, links to direct parent terms and its unique numerical identifier.</p>
-<img src="<!--#include file='include/mgihome_url.html'-->GXD/CLpopupCellTypeDetail.png" width="725" height="247" alt="CellTypeDetail" />
+<img src="<!--#include file='include/mgihome_url.html'-->GXD/CLpopupCellTypeDetail.png" width="510" height="auto" alt="CellTypeDetail" />
 <p><b>Browse the Cell Ontology Tree View</b></p>
 <p>You can also browse the Cell Ontology in the <b>Tree View</b>, in which the highlighted term is presented in the context of a classification hierarchy.</p>
-<img src="<!--#include file='include/mgihome_url.html'-->GXD/CLpopupCellTypeTree.png" width="540" height="385" alt="CellTypeTree" />
+<img src="<!--#include file='include/mgihome_url.html'-->GXD/CLpopupCellTypeTree.png" width="380" height="auto" alt="CellTypeTree" />
 <ul>
     <li>Clicking on an arrowhead further expands the hierarchy.</li>
     <li>Clicking on another term updates to a page for the newly selected term.</li>
@@ -60,15 +60,15 @@
 </ul>
 <p><b>Link to GXD expression data</b></p>
 <p>The <b>Tree View</b> also displays the number of expression results annotated to the highlighted term.</p>
-<img src="<!--#include file='include/mgihome_url.html'-->GXD/CLpopupCellExpressionResultsLink.png" width="416" height="73" alt="CellExpressionResultsLink" />
+<img src="<!--#include file='include/mgihome_url.html'-->GXD/CLpopupCellExpressionResultsLink.png" width="300" height="auto" alt="CellExpressionResultsLink" />
 <p>Clicking on this link returns all gene expression results associated with the selected cell type, with links to images and expression assay details.</p>
-<img src="<!--#include file='include/mgihome_url.html'-->GXD/CLpopupAssayResults2.png" width="1046" height="398" alt="AssayResults2" />
+<img src="<!--#include file='include/mgihome_url.html'-->GXD/CLpopupAssayResults2.png" width="740" height="auto" alt="AssayResults2" />
 <p>See <a href="<!--#include file='include/fewi_url.html'-->userhelp/VOCAB_cl_browser_help.shtml">Using the Cell Ontology Browser</a> for more information.</p>
 <p><b>Filtering by high-level Cell Type terms</b></p>
 <p>High-level cell type terms can now be used to filter results from GXD expression data queries and Quick Search results.</p>
 <p>The new Expression (Cell Type) filter restricts GXD Assay results to expression data annotations to cell type terms (and subterms) matching the high-level filtering terms.</p>
 <p>This feature is also available for the Genome Features and Vocabulary Terms tabs for Quick Search results.</p>
-<img src="<!--#include file='include/mgihome_url.html'-->GXD/CLpopupCellTypeFilters.png" width="1185" height="436" alt="CellTypeFilters" />
+<img src="<!--#include file='include/mgihome_url.html'-->GXD/CLpopupCellTypeFilters.png" width="830" height="auto" alt="CellTypeFilters" />
 
 </body>
 </html>
