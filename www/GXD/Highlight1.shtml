@@ -35,32 +35,41 @@
 <body>
 <title><!--#include file="include/mgiversion.html"--> Highlight 1</title>
 
-<p><b>RNA-Seq data added to GXD</b></p>
-<p>GXD now includes RNA-Seq data. In keeping with GXD’s scope, these data are from experiments that examine endogenous gene expression in wild-type and mutant mice during the embryonic stages and/or postnatal life. The data sets have been imported from the EMBL-EBI's  <a href="https://www.ebi.ac.uk/gxa/home">Expression Atlas</a>. To effectively integrate these data into GXD, we process these files further and annotate the sample metadata. <a href="<!--#include file='include/mgihome_url.html'-->GXD/aboutGXD.shtml#acquisition" target="_blank">Details&hellip;</a></p>
-<p><b>Add RNA-Seq data to the Standard Search</b></p>
-<p>The <a href="<!--#include file='include/fewi_url.html'-->gxd">GXD Expression Data and Image Search - Standard Search Form</a> has a section for Assay type selection. Click RNA-Seq to include that data in the Summary.</p> 
-<img src="<!--#include file='include/mgihome_url.html'-->GXD/RNASeqChecked.jpeg" width="756" height="172" alt="RNA-Seq Checked" />
-<p><b>New filters added to search summaries</b></p>
-<p>GXD has added new filters to the gene expression data search summaries. This enables users to quickly and efficiently extract the expression data of interest to them.</p>
-<img src="<!--#include file='include/mgihome_url.html'-->GXD/FiltersPopupV2.png" width="760" height="238" alt="New Results Filters" />
-<p><b>Visualization and analysis of RNA-Seq data in Morpheus</b></p>
-<p>By merely clicking a button on the gene expression data search summary, the RNA-Seq data from a GXD search, including the standardized sample metadata annotated by GXD, will be rendered into an expression heat map via <a href="https://software.broadinstitute.org/morpheus" target="_blank">Morpheus</a>, a heat map visualization and analysis tool created at the Broad Institute.</p>
-<img src="<!--#include file='include/mgihome_url.html'-->GXD/ResultsPopupV2.png" width="760" height="439" alt="Results Summary" />
-<img src="<!--#include file='include/mgihome_url.html'-->GXD/HeatmapPopupV2.png" width="760" height="659" alt="Heatmap" />
-<p>Morpheus features include:</p>
+<h3>Cell Ontology Browser and Filtering by Cell Types</h3>
+<p>The Cell Ontology (CL) is a hierarchically-structured controlled vocabulary that describes a broad range of canonical biological cell types. The CL is not organism-specific, covering cell types from prokaryotes to mammals, but excludes plant cell types. The CL is an OBO Foundry ontology and is available at: <a href="https://obofoundry.org/ontology/cl.html" target="_blank">https://obofoundry.org/ontology/cl.html</a>.</p>
+<p>GXD uses terms from the Cell Ontology to annotate mouse expression Assay results to specific cell types.</p>
+ <img src="<!--#include file='include/mgihome_url.html'-->GXD/CLpopupAssayResults1.png" width="618" height="106" alt="AssayResults1" />
+<h4>New Cell Ontology Browser</h4>
+<p>The <a href="<!--#include file='include/fewi_url.html'-->vocab/cell_ontology/CL:0000000">Cell Ontology Browser</a> can be used to find and view descriptions of cell types, and to find and retrieve mouse gene expression data associated with those cell types. From the Cell Ontology Browser entry page, you can:</p>
+<p><b>Search for cell types</b></p>
+<p>You can use the Search field by entering a text string or a CL numerical identifier. An autocomplete list is activated which shows cell type terms and synonyms matching the entered characters.</p>
+<img src="<!--#include file='include/mgihome_url.html'-->GXD/CLpopupCellTypeSearch1.png" width="184" height="202" alt="CellTypeSearch1" />
+<p>Select a term from the autocomplete list or continue entering text, then click to activate a search. The search finds all cell type terms that contain any of your search terms and displays a list of those terms.</p>
+<img src="<!--#include file='include/mgihome_url.html'-->GXD/CLpopupCellTypeSearch2.png" width="190" height="202" alt="CellTypeSearch2" />
+<p>Click on a term in the results to update the Term Detail and Tree View sections.</p>
+<p><b>View details of a selected cell type</b></p>
+<p>The <b>Term Detail</b> section displays information specific for that term, including synonyms, definition, links to direct parent terms and its unique numerical identifier.</p>
+<img src="<!--#include file='include/mgihome_url.html'-->GXD/CLpopupCellTypeDetail.png" width="331" height="154" alt="CellTypeDetail" />
+<p><b>Browse the Cell Ontology Tree View</b></p>
+<p>You can also browse the Cell Ontology in the <b>Tree View</b>, in which the highlighted term is presented in the context of a classification hierarchy.</p>
+<img src="<!--#include file='include/mgihome_url.html'-->GXD/CLpopupCellTypeTree.png" width="261" height="202" alt="CellTypeTree" />
 <ul>
- <li>Hovering over any cell will display its value</li>
- <li>Sorting and filtering options allow you to customize the heat map
- <ul>
-  <li>Filters allow you to remove samples (columns) and/or genes (rows)</li>
-  <li>Clicking beside a metadata label will use the values in that field to group the samples</li>
-  <li>Clicking a column (or row) will sort the heat map by TPM values in that column (or row), from high to low; a second click will reverse the order</li>
-  <li>Triple clicking a column (or row) will sort the TPM in alternating groups of 10 of the most similar and dissimilar items, allowing for simultaneous viewing of both ends of the sort</li>
- </ul></li>
-<li>Create Calculated Annotations can be used to do statistical calculations, such as deriving the mean absolute deviation (MAD) or variance across the TPM values per gene</li>
-<li>Hierarchical Clustering can be used to group samples by similarity</li>
-<li>Nearest Neighbors can be used to find genes/samples that are similar to the genes/samples of interest.</li>
+    <li>Clicking on an arrowhead further expands the hierarchy.</li>
+    <li>Clicking on another term updates to a page for the newly selected term.</li>
+    <li>Clicking beside a metadata label will use the values in that field to group the samples.</li>
+    <li>For terms indicated by gray text, the cell type either does not exist in mouse, or there are no expression data annotated to that term or to any subterm.</li>
 </ul>
+<p><b>Link to GXD expression data</b></p>
+<p>The <b>Tree View</b> also displays the number of expression results annotated to the highlighted term.</p>
+<img src="<!--#include file='include/mgihome_url.html'-->GXD/CLpopupCellExpressionResultsLink.png" width="267" height="48" alt="CellExpressionResultsLink" />
+<p>Clicking on this link returns all gene expression result associated with the selected cell type, with links to images and expression assay details.</p>
+<img src="<!--#include file='include/mgihome_url.html'-->GXD/CLpopupAssayResults2.png" width="618" height="221" alt="AssayResults2" />
+<p>See <a href="<!--#include file='include/fewi_url.html'-->userhelp/VOCAB_cl_browser_help.shtml">Using the Cell Ontology Browser</a> for more information.</p>
+<p><b>Filtering by high-level Cell Type terms</b></p>
+<p>High-level cell type terms can now be used to filter results from GXD expression data queries and Quick Search results.</p>
+<p>The new Expression (Cell Type) filter restricts GXD Assay results to expression data annotations to cell type terms (and subterms) matching the high-level filtering terms.</p>
+<p>This feature is also available for the Genome Features and Vocabulary Terms tabs for Quick Search results.</p>
+<img src="<!--#include file='include/mgihome_url.html'-->GXD/CLpopupCellTypeFilters.png" width="467" height="183" alt="CellTypeFilters" />
 
 </body>
 </html>
