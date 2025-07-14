@@ -1,0 +1,152 @@
+<!--#include file='include/templateHead.html'-->
+<title>MGI-News and Announcements from the Mouse Genome Informatics database resource</title>
+  <meta name="description" content="Archive of MGI news and announcements from 2023." />
+  <meta name="keywords" content="MGI, mgi, mice, mouse, murine, mus musculus, genes, genome, genomic, news, archives, announcements, update, release " />
+  <meta name="robots" content="NOODP" />
+  <meta name="robots" content="NOYDIR" />
+<!--#include file='include/templateBodyStart.html'-->
+<!-- Title Bar -->
+    <div id="titleBarWrapper">
+  <span class="titleBarMainTitle">News and Announcements for 2024</span>
+  </div>
+<!--end titleBar-->
+
+<!-- main body table -->
+<table width="75%" cellpadding="2" align="center">
+   <tr><td>
+   <!-- TOC table -->
+        <table class="toc" width="100%">
+		<tr><td>
+          <ul>
+        <li><a href="#dec30_2024">December 30, 2024</a> |
+        <li><a href="#july15_2024">July 15, 2024</a> |
+        <li><a href="#jun1_2024">June 1, 2024</a> |
+        <li><a href="#feb13_2024">February 13, 2024</a> |
+        <li><a href="#jan22_2024">January 22, 2024</a> |
+        <li><a href="news_2023.shtml"><span style="white-space: nowrap">Archive: News and Announcements for 2023</span></a></li>
+       </ul>
+       </td>
+     </tr>
+  </table>
+   </td></tr>
+
+   <tr><td></td></tr>
+       <tr><td><a id="dec30_2024"></a>
+
+<table class="outline" width="100%">
+
+   <tr><td class="enhance">December 30, 2024</td></tr>
+   <tr><td>
+ 	<dl class="linkedList">
+
+<dt><b>Expression Profile Search redesigned and enhanced.</b></dt>
+<dt>The GXD <a href="<!--#include file='include/fewi_url.html'-->gxd/profile" target="_blank">Expression Profile Search</a> is a tool to search for genes by their expression profile. We have redesigned and enhanced this utility to make it more versatile, improve its search speed, and include access to RNA-seq data.</dt>
+<dt><b>More versatile searches:</b> Users have always been able to define the expression profile of interest by specifying up to 10 anatomical structures and whether expression is present or absent in these structures.
+Now users can also specify the developmental (Theiler) stage(s) of interest. They can define search profiles based on developmental stages alone or they can use combinations of anatomical structures and developmental stages.
+The addition of this functionality to the profile search allowed us to retire the Differential Expression search as all its utilities (and more) are now available in the redesigned Expression Profile search.</dt>
+<dt><b>Inclusion of RNA-seq data:</b> Previously the Expression Profile Search was limited to classical expression data. The indices and code powering profile searches have been redesigned, resulting in significantly improved search speeds.
+This allowed us to expand the profile search to interrogate RNA-seq data.</dt>
+<dt><b>Two different search modes:</b> Due to the different nature of the data, the profile search has a Classical Expression Assays mode and an RNA-Seq mode. For instance, due to the need to undertake serial sectioning of the anatomical structure to confirm the absence of expression in it, when describing the results from in situ experiments, authors tend to underreport the absence of gene expression.
+Thus, in Classical Expression Assays mode the "not detected" search returns genes recorded as not detected, as well as genes for which expression in the specified anatomical structures and / or developmental stages is not recorded in the database (not analyzed).
+In contrast, absence of expression information is complete for the anatomical structures studied using RNA-seq. Accordingly, the "not detected" search in RNA-Seq mode only returns genes for which gene expression was reported to be absent (below cutoff).</dt>
+<dt><b>New autocomplete functionality:</b> The anatomical structure field has always been supported by an autocomplete function to help users find terms included in our anatomy ontology. Now, as a further aid, the autocomplete is limited to anatomical structures and stages for which GXD has expression data, ensuring users will choose terms that will result in fruitful searches.</dt>
+<dt><b>Improved Matrix Displays:</b> The Matrix displays in the search summary (Tissue x Gene for classical data searches, Tissue x Stage for both search modes) now display each profile structure on its own row, making it easier to interpret returned results.</dt>
+<dt><b>More visible access to Morpheus heat map visualization and analysis tools:</b> Expression results obtained from RNA-seq searches can be forwarded Morpheus, a tool created at the Broad Institute, for display and analysis, including sorting, filtering, hierarchical clustering, nearest neighbor analysis, and visual enrichment.
+Although we have long supported exports to Morpheus, this functionality has been made more prominent by adding a tab, entitled "Heat Map," to search summaries.</dt>
+
+
+</dl>
+   </td>
+  </tr>
+</table>
+
+    <tr><td><a id="july15_2024"></a>
+
+<table class="outline" width="100%">
+
+   <tr><td class="enhance">July 15, 2024</td></tr>
+   <tr><td>
+ 	<dl class="linkedList">
+
+<dt><b>SNP data increased 4-fold.</b></dt>
+<dt>With this release we increased our SNP records 4-fold to over 66 million. These data include the Sanger MGP (v5) SNP set. Use our preeminent <a href="<!--#include file='include/fewi_url.html'-->snp" target="_blank">SNP Query</a> to search for SNPs by gene symbols or chromosomal regions across 101 mouse strains.
+Search results are limited to 100,000 SNPs (displayed or downloaded), and filters are available to refine search results that exceed the return limit.</dt>
+<dt>To query this large data set efficiently, we implemented the search with Elasticsearch, which allows large data sets to be queried in parallel and improves search speeds. We plan on using this search for other large data sets in MGI/GXD.</dt>
+<dt>In order to update the SNP coordinates to GRCm39 we temporarily lost the dbSNP function classes, such as whether the SNP is in an intron or coding region, and therefore, the Function Class filter in a SNP summary report is limited to "within coordinates of." A future release will provide more function classes.
+The function classes for individual SNPs can be found by searching <a href="https://www.alliancegenome.org" target="_blank">The Alliance of Genome Resources</a> with the RefSNP ID, one ID at a time. For queries that specify one or more Reference strains, MGI's Allele Agreement filters restrict results to SNPs with strain allele calls that agree or differ from reference strain alleles.</dt>
+<dt><b>New links to GlyGen</b>.</dt>
+<dt>New to the Protein Information section of Gene Detail pages are links to GlyGen for carbohydrate and glycoconjugate data. For an example, see the <a href="<!--#include file='include/fewi_url.html'-->marker/MGI:97838" target="_blank">Eprs1</a> Gene Detail page.</dt>
+
+</dl>
+   </td>
+  </tr>
+</table>
+
+   <tr><td><a id="jun1_2024"></a>
+
+<table class="outline" width="100%">
+
+   <tr><td class="enhance">June 1, 2024</td></tr>
+   <tr><td>
+ 	<dl class="linkedList">
+
+<dt><b>MGD 1.0 was released on the World Wide Web 30 years ago.</b></dt>
+<dt>The first release of the Mouse Genome Database was launched on the World Wide Web in June of 1994. This release encompassed several projects initiated at The Jackson Laboratory, including GBASE, the Mouse Locus Catalog (MLC), the Mouse Linkage Database and Programs (MLDP), the Homology Database and Programs (HMDP), and probes and PCR databases describing molecular reagents and polymorphisms (MusProb and MusPCR).
+ MGD 1.0 combined all of these earlier disparate databases into one coherent system, eliminating redundancy and making possible new data integration and analysis. Also included was the Encyclopedia of the Mouse Genome, a suite of software tools for browsing mouse genetic data and displaying genetic and cytogenetic maps. This application was a finalist for a Computerworld Smithsonian Award for Innovation in Information Technology.</dt>
+<dt>This web page sumarizes each <a href="https://www.informatics.jax.org/mgihome/other/mgicron.shtml" target="_blank">
+MGI database release</a>.</dt>
+<dt><b>A new cookie banner appears at the bottom of MGI web pages.</b></dt>
+<dt>In order to be compliant with the European Union's new data privacy and security law, the General Data Protection Regulation (GDPR), we offer a cookie banner at the bottom of MGI web pages to manage your cookie preferences.</dt>
+<dt>MGI uses HTTP cookies, some of which are Essential for basic web operation. You cannot opt out of these cookies.</dt>
+<dt>Other cookies are used for Analytics, in which the IP address of your browser and each query against the MGI website is logged. This Information is used to generate usage summary statistics for the site and for reporting to funding agencies. The Information is not used to identify individuals or organizations and is not shared with third parties.
+You may choose to opt out of the Analytics cookies. An opt out selection is retained for 6 months. The default for Analytics cookies is opt in.</dt>
+</dt>
+
+</dl>
+   </td>
+  </tr>
+</table>
+
+   <tr><td><a id="feb13_2024"></a>
+
+<table class="outline" width="100%">
+
+   <tr><td class="enhance">February 13, 2024</td></tr>
+   <tr><td>
+ 	<dl class="linkedList">
+
+<dt><b>We removed two features from Marker Detail pages:</b></dt>
+<dt>We deleted the Interactions section with interacting microRNAs and its linked Interaction Explorer. Instead, for a marker's molecular and genetic interactions, follow the Alliance gene page link in the top, Summary section, of Marker Detail pages.</dt>
+<dt>Also no longer present on Marker Detail pages are the GBrowse thumbnails of the marker region. These were found in the Location & Maps section and linked to JBrowse. The text link ("View this region in JBrowse") remains.
+</dt>
+</dt>
+
+</dl>
+   </td>
+  </tr>
+</table>
+
+    <tr><td><a id="jan22_2024"></a>
+
+<table class="outline" width="100%">
+
+   <tr><td class="enhance">January 22, 2024</td></tr>
+   <tr><td>
+ 	<dl class="linkedList">
+
+<dt>A new feature in the MGI SNP query allows you to mouseover a strain to see the number of its SNPs included in MGI.</dt>
+<dt>The MGI Prototypes are being decommissioned with the exception of VLAD, a tool for visualizing GO annotation enrichment. An upgraded VLAD can be found among the <a href="<!--#include file='include/mgihome_url.html'-->menus/tools.shtml">Analysis Tools</a>.</dt>
+<dt>The Human - Mouse Disease Connection (HMDC) phenotype ID search tool allows you to add matching MP and HPO terms to your HMDC searches. This tool has been updated to include more robust lexical matching between the MP and HPO vocabularies. See also the previous update from <a href="<!--#include file="include/mgihome_url.html"-->news/whatsnew.shtml#sept11_2023">September 11, 2023</a>.</dt>
+
+</dl>
+   </td>
+  </tr>
+</table>
+
+   </td>
+  </tr>
+</table>
+
+<!--#include file='include/templateBodyStop.html'-->
+</body>
+</html>
