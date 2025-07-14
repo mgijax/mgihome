@@ -18,8 +18,9 @@
   <table class="toc" width="100%">
 	<tr><td>
       <ul>
-        <li><a href="#april7_2025">April 7, 2025</a> |
-        <li><a href="news_2024.shtml"><span style="white-space: nowrap">Archive: News and Announcements for 2024</span></a></li>
+          <li><a href="#july28_2025">July 28, 2025</a> |
+          <li><a href="#april7_2025">April 7, 2025</a> |
+          <li><a href="news_2024.shtml"><span style="white-space: nowrap">Archive: News and Announcements for 2024</span></a></li>
        </ul>
        </td>
      </tr>              
@@ -27,6 +28,30 @@
    </td></tr>
 
    <tr><td></td></tr>
+
+    <tr><td><a id="#july28_2025"></a>
+
+<table class="outline" width="100%">
+
+   <tr><td class="enhance">July 28, 2025</td></tr>
+   <tr><td>
+   <dl class="linkedList">
+
+<dt><b>New Cell Ontology Browser and Filtering by Cell Type</b></dt>
+<dt>The <a href="<!--#include file='include/fewi_url.html'-->vocab/cell_ontology/CL:0000000">Cell Ontology Browser</a> can be used to find and view descriptions of cell types from the Cell Ontology (CL), and to retrieve GXD expression data associated with specific cell types. Additionally, we have developed a set of high-level cell type terms that can be used to filter search results from GXD expression queries and Quick Search results.
+<ul>
+	<li><b>Ontology for Cell Types.</b> The Cell Ontology (CL) is a hierarchically-structured controlled vocabulary that describes a broad range of canonical biological cell types. The CL is not organism-specific, covering cell types from prokaryotes to mammals, but excludes plant cell types. The CL is an OBO Foundry ontology and is available at: <a href="https://obofoundry.org/ontology/cl.html" target="_blank">https://obofoundry.org/ontology/cl.html</a>.</li>
+	<li><b>GXD expression data annotated to cell types.</b> GXD uses terms from the Cell Ontology to annotate mouse expression data to specific cell types. This has enabled GXD to refine the representation of gene expression patterns, and will allow for the integration of single-cell transcriptomics data.</li>
+	<li><b>Using the Cell Ontology Browser.</b> You can either search or browse for cell type terms from the Cell Ontology Browser entry page. The page for a selected cell type term displays details for that term, including its unique accession ID, definition and parent terms, as well a Tree View in which the highlighted term is presented in the context of a classification hierarchy. The Tree View also displays the number of expression results for a cell type, a link which retrieves all GXD results annotated to that cell type, and provides access to expression images and assay details.</li>
+	<li><b>Filtering by Cell Type.</b> High-level cell type terms from the Cell Ontology can now be used to filter GXD expression data queries. This feature is also available for the Genome Features and Vocabulary Terms tabs of the Quick Search. In each case, the Cell Type filter limits results to those with GXD expression data annotated to cell type terms (and subterms) matching the high-level filtering term.</li>
+</ul></dt>
+<dt><b>RNA-seq experiment type querying now available in the RNA-Seq and Microarray Experiment Search</b></dt>
+<dt>The <a href="<!--#include file='include/fewi_url.html'-->gxd/htexp_index">RNA-Seq and Microarray Experiment Search</a> uses GXD's standardized metadata annotations to allow users to quickly and reliably find studies of interest that examine expression in adult and embryonic mice. Bulk, single-cell, and spatial RNA-Seq data provide different types of expression information.  Although these differences are of interest to users, they cannot be searched at GEO, the major public functional genomics data repository, and data sets in GEO can include a mix of these methods.  Therefore, GXD curators have annotated all RNA-seq samples in its RNA-Seq and Microarray Experiment index to one of these three methods (bulk, single-cell, and spatial).  This allows users to specify the method of interest in the initial search or, alternatively, use the Method filter found on the search summary to refine the return.  Currently there are ~7,000 RNA-seq experiments, 160,000 RNA-Seq samples, and 5,300 mutant alleles included in the search index.</dt>
+
+</dl>
+   </td>
+  </tr>
+</table>
    
    <tr><td><a id="april7_2025"></a>
 
