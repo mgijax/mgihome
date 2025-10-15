@@ -68,18 +68,11 @@ def main ():
     writeStringAsIncludeFile (config['MTB_PATHOLOGY_URL'], '../www/include/mtb_pathology_url.html')
     writeStringAsIncludeFile (config['MPD_URL'], '../www/include/mpd_url.html')
     writeStringAsIncludeFile (config['MGIHOME_URL'], '../www/include/mgihome_url.html')
-    writeStringAsIncludeFile (config['GB_URL'], '../www/include/gb_url.html')
     writeStringAsIncludeFile (config['GBROWSE_URL'], '../www/include/gbrowse_url.html')
     writeStringAsIncludeFile (config['JBROWSE_URL'], '../www/include/jbrowse_url.html')
     writeStringAsIncludeFile (config['GO_GRAPH_URL'], '../www/include/gograph_url.html')
     writeStringAsIncludeFile (config['GO_TOOLS_URL'], '../www/include/gotools_url.html')
     writeStringAsIncludeFile (config['NCBI_BLAST_URL'], '../www/include/ncbi_blast_url.html')
-    writeStringAsIncludeFile (config['LOCUSLINK_URL'], \
-        '../www/include/locuslink_url.html')
-    writeStringAsIncludeFile (config['RGD_URL'], \
-        '../www/include/rgd_url.html')
-    writeStringAsIncludeFile (config['ENTREZ_URL'], \
-        '../www/include/entrez_url.html')
     writeStringAsIncludeFile (config['GLOSSARY_URL'], \
         '../www/include/glossary_url.html')
     writeStringAsIncludeFile (config['USERHELP_URL'], \
@@ -104,8 +97,6 @@ def main ():
             '../www/include/frithbook_url.html')    
     writeStringAsIncludeFile (config['GREENBOOK_URL'], \
             '../www/include/greenbook_url.html')    
-    writeStringAsIncludeFile (config['THEILERBOOK_URL'], \
-            '../www/include/theilerbook_url.html')    
     writeStringAsIncludeFile (config['MGIWS_URL'], \
             '../www/include/mgiws_url.html')    
     writeStringAsIncludeFile (config['WEBSHARE_URL'], \
@@ -127,16 +118,6 @@ def main ():
 
     # new additions for KOMP
 
-    writeStringAsIncludeFile (config['GENBANK_HOME'],
-        '../www/include/genbank_home_url.html')
-    writeStringAsIncludeFile (config['ENSEMBL_HOME'],
-        '../www/include/ensembl_home_url.html')
-    writeStringAsIncludeFile (config['ENTREZGENE_HOME'],
-        '../www/include/entrezgene_home_url.html')
-    writeStringAsIncludeFile (config['KOMP_HOME'],
-        '../www/include/komp_home_url.html')
-    writeStringAsIncludeFile (config['KOMP_NIH'],
-        '../www/include/komp_nih_url.html')
     writeStringAsIncludeFile (config['IMSRURL'],
         '../www/include/imsr_home_url.html')
 
