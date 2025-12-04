@@ -18,6 +18,7 @@
   <table class="toc" width="100%">
 	<tr><td>
       <ul>
+          <li><a href="#january01_2026">January 01, 2026</a> |
           <li><a href="#july28_2025">July 28, 2025</a> |
           <li><a href="#april7_2025">April 7, 2025</a> |
           <li><a href="news_2024.shtml"><span style="white-space: nowrap">Archive: News and Announcements for 2024</span></a></li>
@@ -28,6 +29,24 @@
    </td></tr>
 
    <tr><td></td></tr>
+
+    <tr><td><a id="#january01_2026"></a>
+
+<table class="outline" width="100%">
+
+   <tr><td class="enhance">January 01, 2026</td></tr>
+   <tr><td>
+   <dl class="linkedList">
+
+<dt><b>Enhanced ability to search for RNA-Seq and microarray experiments by postnatal age</b></dt>
+<dt>The GXD RNA-Seq and Microarray Experiment index allows users to find experiments of interest based on GXD's standardized metadata annotations. GXD curators annotate sample details, including age, which can be queried using the <a href="<!--#include file='include/fewi_url.html'-->gxd/htexp_index">RNA-Seq and Microarray Experiment Search</a>. We have expanded the age search functionality for all samples, but it is especially useful for postnatal searches. Previously users were limited to three search options: embryonic (all ages), postnatal (all ages), or selecting specific embryonic ages from a picklist. Now users can enter the ages of interest for both embryonic and postnatal samples. They can enter a single age, a range of ages (using a hyphen), or a list of ages (using commas) to find the experiments of interest.</dt>
+<dt><b>New ways to access RNA-Seq and microarray experiment index entries</b></dt>
+<dt>Previously, entries in the GXD RNA-Seq and Microarray Experiment index were only accessible via the <a href="<!--#include file='include/fewi_url.html'-->gxd/htexp_index">RNA-Seq and Microarray Experiment Search</a>. We have introduced additional access points to make it easier to find experiments of interest. Links in the <a href="<!--#include file='include/fewi_url.html'-->vocab/gxd/anatomy/EMAPA:16039">Developmental Anatomy</a> and <a href="<!--#include file='include/fewi_url.html'-->vocab/cell_ontology/CL:0000000">Cell Ontology</a> browsers return summaries of all experiments with samples annotated to the selected anatomical structure or cell type (or any of its subterms). Index entries are now included as a curated data class associated with a reference. This allows us to provide links on the reference detail pages that summarize the RNA-Seq or microarray assays reported in that publication. Additionally, users can now search for papers using the <a href="<!--#include file='include/fewi_url.html'-->reference/">Reference Search</a> and apply the curated data class filter to limit the return to publications that use RNA-Seq or microarray assays.</dt>
+
+</dl>
+   </td>
+  </tr>
+</table>
 
     <tr><td><a id="#july28_2025"></a>
 
