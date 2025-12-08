@@ -30,7 +30,7 @@
 
    <tr><td></td></tr>
 
-    <tr><td><a id="#january01_2026"></a>
+    <tr><td><a id="#December22_2025"></a>
 
 <table class="outline" width="100%">
 
@@ -42,7 +42,7 @@
 <dt>The GXD RNA-Seq and Microarray Experiment index allows users to find experiments of interest based on GXD's standardized metadata annotations. GXD curators annotate sample details, including age, which can be queried using the <a href="<!--#include file='include/fewi_url.html'-->gxd/htexp_index">RNA-Seq and Microarray Experiment Search</a>. We have expanded the age search functionality for all samples, but it is especially useful for postnatal searches. Previously users were limited to three search options: embryonic (all ages), postnatal (all ages), or selecting specific embryonic ages from a picklist. Now users can enter the ages of interest for both embryonic and postnatal samples. They can enter a single age, a range of ages (using a hyphen), or a list of ages (using commas) to find the experiments of interest.</dt>
 <dt><b>New ways to access RNA-Seq and microarray experiment index entries</b></dt>
 <dt>Previously, entries in the GXD RNA-Seq and Microarray Experiment index were only accessible via the <a href="<!--#include file='include/fewi_url.html'-->gxd/htexp_index">RNA-Seq and Microarray Experiment Search</a>. We have introduced additional access points to make it easier to find experiments of interest. Links in the <a href="<!--#include file='include/fewi_url.html'-->vocab/gxd/anatomy/EMAPA:16039">Developmental Anatomy</a> and <a href="<!--#include file='include/fewi_url.html'-->vocab/cell_ontology/CL:0000000">Cell Ontology</a> browsers return summaries of all experiments with samples annotated to the selected anatomical structure or cell type (or any of its subterms). Index entries are now included as a curated data class associated with a reference. This allows us to provide links on the reference detail pages that summarize the RNA-Seq or microarray assays reported in that publication. Additionally, users can now search for papers using the <a href="<!--#include file='include/fewi_url.html'-->reference/">Reference Search</a> and apply the curated data class filter to limit the return to publications that use RNA-Seq or microarray assays.</dt>
-
+<dt><b>Even more recombinase activity: cell types and anatomical structures.</b></dt><dt>With the addition of <a href="<!--#include file='include/fewi_url.html'-->vocab/cell_ontology/">Cell Type Ontology</a> annotations, users can refine recombinase activity searches to specific cell types in addition to anatomical structures. This improvement further expands the knowledge base of recombinase drivers with cell type-specific activity data.</dt>
 </dl>
    </td>
   </tr>
@@ -83,9 +83,9 @@
 <dt><b>MGI SNP Function Classes are back and new Regulates Expression Relationships are now displayed on Gene pages.</b></dt>
 <dt><b>SNP Function Classes from the Alliance:</b> The full set of MGI SNP Function Classes have been restored by incorporating SNP Molecular Consequences data from the Alliance of Genome Resources. You can now filter SNP results by molecular consequences using the Function Class filter. All MGI SNPs with Alliance-provided function class data now link to Alliance Variant pages for corresponding SNPs.</dt>
 <dt><b>New Regulates Expression Relationships:</b> Regulates Expression Relationships between MGI genes and regulatory features are now displayed, reciprocally, on Gene Detail pages.  For genes with MGI-curated regulatory features, gene pages have a <b>Regulated by</b> popup summary of regulatory features demonstrated to affect normal expression of the gene.  Similarly, <b>Regulates expression of</b> popup summary displays can be found on the MGI detail pages of corresponding regulatory features.</dt> 
-<dt><b>Ensembl release 113 regulatory annotation has been incorporated into MGI.</b></dt>
+</dt><dt><b>Ensembl release 113 regulatory annotation has been incorporated into MGI.</b></dt>
 <dt>Ensembl Regulatory annotation for Mouse has undergone a major update. The format of ENSR IDs has been updated for chromosome-level assemblies, and no relationship between the old IDs is tracked. As a result, we decided to do a delete and reload of all regulatory features from Ensembl for release 113. Only regulatory region markers with manually curated data (such as alleles and relationships) from previous releases are kept, while those without curated data are deleted from the MGI database.</dt>
-<dt>The 288,161 newly created regulatory regions markers (Rr407359--Rr695519) are associated with reference <a href="<!--#include file='include/fewi_url.html'-->reference/J:362000" target="_blank">J:362000</a>. </dt>
+<dt>The 288,161 newly created regulatory regions markers (Rr407359--Rr695519) are associated with reference <a href="<!--#include file='include/fewi_url.html'-->reference/J:362000" target="_blank">J:362000</a>.
 <dt>There are 113 regulatory regions kept from previous Ensembl regulatory releases. These markers are associated with reference <a href="<!--#include file='include/fewi_url.html'-->reference/J:321631" target="_blank">J:321631</a>. </dt>
 <dt>The 364,225 deleted regulatory regions (Rr2283--Rr366617) are archived internally at MGI and available for users upon request.  </dt>
 
