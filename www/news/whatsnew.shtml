@@ -40,10 +40,11 @@
    <dl class="linkedList">
 
 <dt><b>New features for GXD</b>
-<li><b>Antibody summaries</b> are now available in the Molecular Reagents section of gene detail pages and in the Curated Data section of reference detail pages. These summaries include the number of publications that have used each antibody, making it easier to identify commonly used ones.</li>
+<ul>
+    <li><b>Antibody summaries</b> are now available in the Molecular Reagents section of gene detail pages and in the Curated Data section of reference detail pages. These summaries include the number of publications that have used each antibody, making it easier to identify commonly used ones.</li>
 <li><b>Additional colors</b> have been added to the Tissue x Stage and Tissue x Gene matrices in the GXD query results summary, making it easier for users to distinguish the number of annotations represented in each cell.</li>
 <li><b>Enhanced interactivity between GXD and Morpheus.</b> Results from GXD RNA-seq data searches can be forwarded to Morpheus, the Broad Institute's heat map visualization and analysis tool. Now, after performing analyses in Morpheus, users can select genes of interest and retrieve GXD's multi-tabbed expression summaries for these genes, which include both classical and RNA-seq results. Additional types of information for these genes can be accessed by using buttons on the Genes tab to forward the gene list to either the MGI Batch Query or MouseMine. MouseMine also offers tools for enrichment analysis.</li>
-</dt>
+</ul></dt>
    </dl>
    </td>
   </tr>
