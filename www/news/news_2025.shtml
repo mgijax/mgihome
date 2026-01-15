@@ -1,0 +1,104 @@
+<!--#include file='include/templateHead.html'-->
+<title>MGI-News and Announcements from the Mouse Genome Informatics database resource</title>
+  <meta name="description" content="Archive of MGI news and announcements from 2025." />
+  <meta name="keywords" content="MGI, mgi, mice, mouse, murine, mus musculus, genes, genome, genomic, news, archives, announcements, update, release " />
+  <meta name="robots" content="NOODP" />
+  <meta name="robots" content="NOYDIR" />
+<!--#include file='include/templateBodyStart.html'-->
+<!-- Title Bar -->
+    <div id="titleBarWrapper">
+  <span class="titleBarMainTitle">News and Announcements for 2025</span>
+  </div>
+<!--end titleBar-->
+
+<!-- main body table -->
+<table width="75%" cellpadding="2" align="center">
+   <tr><td>
+   <!-- TOC table -->
+        <table class="toc" width="100%">
+		<tr><td>
+          <ul>
+        <li><a href="#December22_2025">December 22, 2025</a> |
+          <li><a href="#july28_2025">July 28, 2025</a> |
+          <li><a href="#april7_2025">April 7, 2025</a> |
+          <li><a href="news_2024.shtml"><span style="white-space: nowrap">Archive: News and Announcements for 2024</span></a></li>
+       </ul>
+       </td>
+     </tr>
+  </table>
+   </td></tr>
+
+
+    <tr><td><a id="#December22_2025"></a>
+
+<table class="outline" width="100%">
+
+   <tr><td class="enhance">December 22, 2025</td></tr>
+   <tr><td>
+   <dl class="linkedList">
+
+<dt><b>Enhanced ability to search for RNA-Seq and microarray experiments by postnatal age</b></dt>
+<dt>The GXD RNA-Seq and Microarray Experiment index allows users to find experiments of interest based on GXD's standardized metadata annotations. GXD curators annotate sample details, including age, which can be queried using the <a href="<!--#include file='include/fewi_url.html'-->gxd/htexp_index">RNA-Seq and Microarray Experiment Search</a>. We have expanded the age search functionality for all samples, but it is especially useful for postnatal searches. Previously users were limited to three search options: embryonic (all ages), postnatal (all ages), or selecting specific embryonic ages from a picklist. Now users can enter the ages of interest for both embryonic and postnatal samples. They can enter a single age, a range of ages (using a hyphen), or a list of ages (using commas) to find the experiments of interest.</dt>
+<dt><b>New ways to access RNA-Seq and microarray experiment index entries</b></dt>
+<dt>Previously, entries in the GXD RNA-Seq and Microarray Experiment index were only accessible via the <a href="<!--#include file='include/fewi_url.html'-->gxd/htexp_index">RNA-Seq and Microarray Experiment Search</a>. We have introduced additional access points to make it easier to find experiments of interest. Links in the <a href="<!--#include file='include/fewi_url.html'-->vocab/gxd/anatomy/EMAPA:16039">Developmental Anatomy</a> and <a href="<!--#include file='include/fewi_url.html'-->vocab/cell_ontology/CL:0000000">Cell Ontology</a> browsers return summaries of all experiments with samples annotated to the selected anatomical structure or cell type (or any of its subterms). Index entries are now included as a curated data class associated with a reference. This allows us to provide links on the reference detail pages that summarize the RNA-Seq or microarray assays reported in that publication. Additionally, users can now search for papers using the <a href="<!--#include file='include/fewi_url.html'-->reference/">Reference Search</a> and apply the curated data class filter to limit the return to publications that use RNA-Seq or microarray assays.</dt>
+<dt><b>Even more recombinase activity: cell types and anatomical structures.</b></dt><dt>With the addition of <a href="<!--#include file='include/fewi_url.html'-->vocab/cell_ontology/">Cell Type Ontology</a> annotations, users can refine recombinase activity searches to specific cell types in addition to anatomical structures. This improvement further expands the knowledge base of recombinase drivers with cell type-specific activity data.</dt>
+</dl>
+   </td>
+  </tr>
+</table>
+
+    <tr><td><a id="#july28_2025"></a>
+
+<table class="outline" width="100%">
+
+   <tr><td class="enhance">July 28, 2025</td></tr>
+   <tr><td>
+   <dl class="linkedList">
+
+<dt><b>New Cell Ontology Browser and Filtering by Cell Type</b></dt>
+<dt>The <a href="<!--#include file='include/fewi_url.html'-->vocab/cell_ontology/CL:0000000">Cell Ontology Browser</a> can be used to find and view descriptions of cell types from the Cell Ontology (CL), and to retrieve GXD expression data associated with specific cell types. Additionally, we have developed a set of high-level cell type terms that can be used to filter search results from GXD expression queries and Quick Search results.
+<ul>
+	<li><b>Ontology for Cell Types.</b> The Cell Ontology (CL) is a hierarchically-structured controlled vocabulary that describes a broad range of canonical biological cell types. The CL is not organism-specific, covering cell types from prokaryotes to mammals, but excludes plant cell types. The CL is an OBO Foundry ontology and is available at: <a href="https://obofoundry.org/ontology/cl.html" target="_blank">https://obofoundry.org/ontology/cl.html</a>.</li>
+	<li><b>GXD expression data annotated to cell types.</b> GXD uses terms from the Cell Ontology to annotate mouse expression data to specific cell types. This has enabled GXD to refine the representation of gene expression patterns, and will allow for the integration of single-cell transcriptomics data.</li>
+	<li><b>Using the Cell Ontology Browser.</b> You can either search or browse for cell type terms from the Cell Ontology Browser entry page. The page for a selected cell type term displays details for that term, including its unique accession ID, definition and parent terms, as well a Tree View in which the highlighted term is presented in the context of a classification hierarchy. The Tree View also displays the number of expression results for a cell type, a link which retrieves all GXD results annotated to that cell type, and provides access to expression images and assay details.</li>
+	<li><b>Filtering by Cell Type.</b> High-level cell type terms from the Cell Ontology can now be used to filter GXD expression data queries. This feature is also available for the Genome Features and Vocabulary Terms tabs of the Quick Search. In each case, the Cell Type filter limits results to those with GXD expression data annotated to cell type terms (and subterms) matching the high-level filtering term.</li>
+</ul></dt>
+<dt><b>RNA-seq experiment type querying now available in the RNA-Seq and Microarray Experiment Search</b></dt>
+<dt>The <a href="<!--#include file='include/fewi_url.html'-->gxd/htexp_index">RNA-Seq and Microarray Experiment Search</a> uses GXD's standardized metadata annotations to allow users to quickly and reliably find studies of interest that examine expression in adult and embryonic mice. Bulk, single-cell, and spatial RNA-Seq data provide different types of expression information.  Although these differences are of interest to users, they cannot be searched at GEO, the major public functional genomics data repository, and data sets in GEO can include a mix of these methods.  Therefore, GXD curators have annotated all RNA-seq samples in its RNA-Seq and Microarray Experiment index to one of these three methods (bulk, single-cell, and spatial).  This allows users to specify the method of interest in the initial search or, alternatively, use the Method filter found on the search summary to refine the return.  Currently there are ~7,000 RNA-seq experiments, 160,000 RNA-Seq samples, and 5,300 mutant alleles included in the search index.</dt>
+
+</dl>
+   </td>
+  </tr>
+</table>
+
+   <tr><td><a id="april7_2025"></a>
+
+<table class="outline" width="100%">
+
+   <tr><td class="enhance">April 7, 2025</td></tr>
+   <tr><td>
+   <dl class="linkedList">
+
+<dt><b>MGI SNP Function Classes are back and new Regulates Expression Relationships are now displayed on Gene pages.</b></dt>
+<dt><b>SNP Function Classes from the Alliance:</b> The full set of MGI SNP Function Classes have been restored by incorporating SNP Molecular Consequences data from the Alliance of Genome Resources. You can now filter SNP results by molecular consequences using the Function Class filter. All MGI SNPs with Alliance-provided function class data now link to Alliance Variant pages for corresponding SNPs.</dt>
+<dt><b>New Regulates Expression Relationships:</b> Regulates Expression Relationships between MGI genes and regulatory features are now displayed, reciprocally, on Gene Detail pages.  For genes with MGI-curated regulatory features, gene pages have a <b>Regulated by</b> popup summary of regulatory features demonstrated to affect normal expression of the gene.  Similarly, <b>Regulates expression of</b> popup summary displays can be found on the MGI detail pages of corresponding regulatory features.</dt>
+</dt><dt><b>Ensembl release 113 regulatory annotation has been incorporated into MGI.</b></dt>
+<dt>Ensembl Regulatory annotation for Mouse has undergone a major update. The format of ENSR IDs has been updated for chromosome-level assemblies, and no relationship between the old IDs is tracked. As a result, we decided to do a delete and reload of all regulatory features from Ensembl for release 113. Only regulatory region markers with manually curated data (such as alleles and relationships) from previous releases are kept, while those without curated data are deleted from the MGI database.</dt>
+<dt>The 288,161 newly created regulatory regions markers (Rr407359--Rr695519) are associated with reference <a href="<!--#include file='include/fewi_url.html'-->reference/J:362000" target="_blank">J:362000</a>.
+<dt>There are 113 regulatory regions kept from previous Ensembl regulatory releases. These markers are associated with reference <a href="<!--#include file='include/fewi_url.html'-->reference/J:321631" target="_blank">J:321631</a>. </dt>
+<dt>The 364,225 deleted regulatory regions (Rr2283--Rr366617) are archived internally at MGI and available for users upon request.  </dt>
+
+
+</dl>
+   </td>
+  </tr>
+</table>
+
+
+   </td>
+  </tr>
+</table>
+
+<!--#include file='include/templateBodyStop.html'-->
+</body>
+</html>
