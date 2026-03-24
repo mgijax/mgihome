@@ -41,6 +41,9 @@ LIBDIRS     ${MGIHOME_PATH}lib/python/:${INSTALL_DIR}lib/python/
 # If commented out, hard-coded addresses are used throughout.
 # CGI_MAILTARGET    mgi-qa@jax.org
 
+# blacklist of emails; submissions from these emails will be ignored
+EMAIL_BLACKLIST    peter.frost@jax.org, foo.bar@jax.org
+
 #----------------#
 #- CSS & JS     -#
 #----------------#
