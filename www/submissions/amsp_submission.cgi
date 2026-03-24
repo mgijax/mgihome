@@ -2009,11 +2009,10 @@ def acceptSubmission (
 
         # check submitter against black-list of emails
         onBlackList = False
-        log ('----- %s' % EMAIL_BLACKLIST)
         if (getField('email').getValue() in EMAIL_BLACKLIST):
                 onBlackList = True
 
-        if (!onBlackList):
+        if not onBlackList:
 
                 # directory handling
                 if SUBMISSION_SUBDIR:
