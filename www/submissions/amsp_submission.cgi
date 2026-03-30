@@ -2034,9 +2034,9 @@ def acceptSubmission (
 
                 # email MGI 
                 try:
-                        unescapedText = unescapedText + \
+                        mgiEmailText = unescapedText + \
                                 '\n\nSubmission Directory: %s' % myDir + '\n'
-                        sendMail(unescapedText, getField('email').getValue(),
+                        sendMail(mgiEmailText, getField('email').getValue(),
                                 SUBMISSIONS,
                                 'Received AMSP form submission')
                 except:
