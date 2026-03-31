@@ -43,6 +43,10 @@ SUBMISSIONS = 'mgi-submissions@jax.org'
 if config.has_key('CGI_MAILTARGET'):
         SUBMISSIONS = config['CGI_MAILTARGET']
 
+EMAIL_BLACKLIST = ['']
+if config.has_key('EMAIL_BLACKLIST'):
+        EMAIL_BLACKLIST = [item.strip() for item in config['EMAIL_BLACKLIST'].split(',')]
+
 # cookie data for preserving user's contact info across multiple submissions
 MY_COOKIE = http.cookies.SimpleCookie()
 
@@ -1852,39 +1856,58 @@ def acceptSubmission (
                 print(output.getFullDocument())
                 return
 
-        # no errors, so process submission as follows:
-        # 1. look up submission directory, or create it if there's not one
-        # 2. save the submission fields as a text file
-        # 4. send a confirmation email to the user
-        # 5. send a confirmation page to the user's browser
-
-        if SUBMISSION_SUBDIR:
-                myDir = os.path.join (config['SUBMISSION_DIRECTORY'],
-                        SUBMISSION_SUBDIR)
-        # HERE
-        else:
-                try:
-                        myDir = createDirectory()
-                except:
-                        sendError(output, 'Could not create a directory for '\
-                                + 'your submission.  Please try again later.')
-
+        # no errors; save the text
         unescapedText = buildText()
-        try:
-                saveText(myDir, unescapedText)
-        except:
-                sendError(output, 'Could not save your submission.  ' + \
-                        'Please try again later.')
-
-        # at this point, the submission has been successfully saved
-
         items = [
                 'The following items have been successfully submitted:<P>',
                 '<PRE>%s</PRE>' % text,
                 ]
 
+        # process submission as follows:
+        # 1. look up submission directory, or create it if there's not one
+        # 2. save the submission fields as a text file
+        # 3. send submission to MGI
+        # 4. send a confirmation email to the user
+        # 5. send a confirmation page to the user's browser
+
+        # check submitter against black-list of emails
+        onBlackList = False
+        if (getField('email').getValue() in EMAIL_BLACKLIST):
+                onBlackList = True
+
+        if not onBlackList:
+
+                # directory handling
+                if SUBMISSION_SUBDIR:
+                        myDir = os.path.join (config['SUBMISSION_DIRECTORY'],
+                                SUBMISSION_SUBDIR)
+                else:
+                        try:
+                                myDir = createDirectory()
+                        except:
+                                sendError(output, 'Could not create a directory for '\
+                                        + 'your submission.  Please try again later.')
+
+                # save submission
+                try:
+                        saveText(myDir, unescapedText)
+                except:
+                        sendError(output, 'Could not save your submission.  ' + \
+                                'Please try again later.')
+
+                # email MGI
+                try:
+                        mgiEmailText = unescapedText + \
+                                '\n\nSubmission Directory: %s' % myDir + '\n'
+                        sendMail(mgiEmailText, getField('email').getValue(),
+                                SUBMISSIONS,
+                                'Received Recombinase Knock-in or Transgenic form submission')
+                except:
+                        log ('Failed to send notification email to %s' % SUBMISSIONS)
+
+        # email submitter (even if they're on black-list)
         try:
-                sendMail(unescapedText, SUBMISSIONS,
+                sendMail(unescapedText, 'mgi-submissions@jax.org',
                         getField('email').getValue(),
                         'Confirmation of your form submission')
         except:
@@ -1892,14 +1915,8 @@ def acceptSubmission (
                         'confirmation email.  Please print this page as ' + \
                         'a record of your submission.')
 
-        try:
-                unescapedText = unescapedText + \
-                        '\n\nSubmission Directory: %s' % myDir + '\n'
-                sendMail(unescapedText, getField('email').getValue(),
-                        SUBMISSIONS,
-                        'Received Recombinase Knock-in or Transgenic form submission')
-        except:
-                log ('Failed to send notification email to %s' % SUBMISSIONS)
+
+
 
         items.append ('<P>Would you like to <A HREF="%ssubmissions/recombinase_submission.cgi">make another submission</A>?' % config['MGIHOME_URL'])
         output.setBody('\n'.join(items))
