@@ -118,8 +118,8 @@ do
         fi
 done
 $PYTHON -m compileall -l -f .
-chgrp www *py
-chmod 755 *py
+#chgrp www *py
+#chmod 755 *py
 cd $TOP
 
 # add links to python and the config file from selected directories
@@ -174,11 +174,11 @@ cd $TOP
 # use 'find' to avoid doing a recursive chmod and chgrp, which
 # also follow the symbolic links to the python interpreter...
 
-echo "setting permissions in www/ directory..."
-find www -type f -print | xargs chmod 755
-find www -type f -print | xargs chgrp www
-find www -type d -print | xargs chmod 755
-find www -type d -print | xargs chgrp www
+#echo "setting permissions in www/ directory..."
+#find www -type f -print | xargs chmod 755
+#find www -type f -print | xargs chgrp www
+#find www -type d -print | xargs chmod 755
+#find www -type d -print | xargs chgrp www
 
 # add links to the include file directory and the stylesheet directory
 # for each directory under www
