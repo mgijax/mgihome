@@ -43,6 +43,10 @@ nomen_addr = 'nomen@jax.org'  # MGD Nomen Coordinator Email Account
 if config.has_key('CGI_MAILTARGET'):
         nomen_addr = config['CGI_MAILTARGET']
 
+EMAIL_BLACKLIST = ['']
+if config.has_key('EMAIL_BLACKLIST'):
+        EMAIL_BLACKLIST = [item.strip() for item in config['EMAIL_BLACKLIST'].split(',')]
+
 subject = 'Nomenclature Request'
 
 reply_message.setTitle('MGD: Nomenclature Request')
@@ -280,6 +284,7 @@ print(reply_message.getFullDocument())
 
 mailheader = 'From: ' + submitter_addr + NL + 'To: ' + nomen_addr + NL 
 mailheader = mailheader + 'Subject: ' + subject + NL + NL
-fd = os.popen('%s -t' % config['SENDMAIL'], 'w')
-fd.write( mailheader + message )
-fd.close()
+if (submitter_addr not in EMAIL_BLACKLIST):
+    fd = os.popen('%s -t' % config['SENDMAIL'], 'w')
+    fd.write( mailheader + message )
+    fd.close()

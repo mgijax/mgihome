@@ -45,6 +45,10 @@ RECIPIENT = 'jaxmgi@service-now.com'
 if config.has_key('CGI_MAILTARGET'):
         RECIPIENT = config['CGI_MAILTARGET']
 
+EMAIL_BLACKLIST = ['']
+if config.has_key('EMAIL_BLACKLIST'):
+        EMAIL_BLACKLIST = [item.strip() for item in config['EMAIL_BLACKLIST'].split(',')]
+
 def hd():
         reply_message.setTitle('User Support Express Mail Results')
         reply_message.setHeaderBarMainText('User Support <I>Express</I> Mail Results')
@@ -152,11 +156,12 @@ def main():
                 reply_message.appendBody(body)
 
                 if not isWebScannerRequest(firstname, lastname, emailaddr):
-                    mail_header = 'Subject: Express Mail' + NL
-                    fd = os.popen('%s -t %s' % (config['SENDMAIL'], \
-                        RECIPIENT), 'w')
-                    fd.write( mail_header + msg + NL + '.' + NL )
-                    fd.close()
+                    if (emailaddr not in EMAIL_BLACKLIST):
+                        mail_header = 'Subject: Express Mail' + NL
+                        fd = os.popen('%s -t %s' % (config['SENDMAIL'], \
+                            RECIPIENT), 'w')
+                        fd.write( mail_header + msg + NL + '.' + NL )
+                        fd.close()
                 
         print(reply_message.getFullDocument())
                 
