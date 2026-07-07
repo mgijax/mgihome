@@ -1,31 +1,30 @@
-<!--#include file='include/templateHead.html'--> 
+<!--#include file='include/templateHead.html'-->
 <title>MGI-News and Announcements from the Mouse Genome Informatics database resource</title>
-  <meta name="description" content="MGI news and announcements." />
+  <meta name="description" content="Archive of MGI news and announcements from 2026." />
   <meta name="keywords" content="MGI, mgi, mice, mouse, murine, mus musculus, genes, genome, genomic, news, archives, announcements, update, release " />
   <meta name="robots" content="NOODP" />
   <meta name="robots" content="NOYDIR" />
-<!--#include file='include/templateBodyStart.html'--> 
+<!--#include file='include/templateBodyStart.html'-->
 <!-- Title Bar -->
     <div id="titleBarWrapper">
-  <span class="titleBarMainTitle">MGI News</span>
-  </div> 
+  <span class="titleBarMainTitle">News and Announcements for 2026</span>
+  </div>
 <!--end titleBar-->
 
 <!-- main body table -->
 <table width="75%" cellpadding="2" align="center">
    <tr><td>
- <!-- TOC table -->
+   <!-- TOC table -->
   <table class="toc" width="100%">
 	<tr><td>
       <ul>
-          <li><a href="#July27_2026">July 27, 2026</a> |
           <li><a href="#April27_2026">April 27, 2026</a> |
           <li><a href="#February2_2026">February 02, 2026</a> |
           <li><a href="#January1_2026">January 01, 2026</a> |
           <li><a href="news_2025.shtml"><span style="white-space: nowrap">Archive: News and Announcements for 2025</span></a></li>
        </ul>
        </td>
-     </tr>              
+     </tr>
   </table>
    </td></tr>
 
@@ -49,6 +48,8 @@
   </tr>
 </table>
 
+   <tr><td></td></tr>
+
          <tr><td><a id="#April27_2026"></a>
 
 <table class="outline" width="100%">
@@ -61,7 +62,7 @@
 <ul>
     <li><b>Gene cart added to the Tissue x Gene Matrix.</b> A gene cart has been added to the Tissue x Gene Matrix tab of the expression search results. Previously, users could only filter by genes shown on the matrix page they were viewing. Now, with the new gene cart, they can page through the results, selecting genes for filtering from multiple pages.</li>
 <li><b>Filter expression results by sex.</b> Users can now filter expression search results to include only data derived from specimens for which the authors specified the sex. In addition, a column displaying the sex of the specimen has been added to the Assay Results tab of the expression search results.</li>
-<li><b>Expanded batch search options.</b> Gene list searches performed using <a href="<!--#include file='include/fewi_url.html'-->gxd/batchSearch">GXD Batch Search</a> can now be limited to current mouse symbols and synonyms. Previously, symbol and synonym searches included those of homologs as well. This new input option has also been added to the <a href="<!--#include file='include/fewi_url.html'-->batch">MGI Batch Query.</a></li>
+<li><b>Expanded batch search options.</b> Gene list searches performed using <a href="https://www.informatics.jax.org/gxd/batchSearch">GXD Batch Search</a> can now be limited to current mouse symbols and synonyms. Previously, symbol and synonym searches included those of homologs as well. This new input option has also been added to the <a href="https://www.informatics.jax.org/batch">MGI Batch Query.</a></li>
 </ul></dt>
    </dl>
    </td>
@@ -105,12 +106,13 @@
    </td>
   </tr>
 </table>
-        
+
 
    </td>
   </tr>
 </table>
 
-<!--#include file='include/templateBodyStop.html'--> 
+
+<!--#include file='include/templateBodyStop.html'-->
 </body>
 </html>
