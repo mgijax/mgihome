@@ -18,6 +18,7 @@
   <table class="toc" width="100%">
 	<tr><td>
       <ul>
+          <li><a href="#september21_2026">September 21, 2026</a> |
           <li><a href="#july27_2026">July 27, 2026</a> |
           <li><a href="#april27_2026">April 27, 2026</a> |
           <li><a href="#february2_2026">February 02, 2026</a> |
@@ -29,6 +30,20 @@
   </table>
    </td></tr>
 
+            <tr><td><a id="september21_2026"></a>
+
+<table class="outline" width="100%">
+
+   <tr><td class="enhance">September 21, 2026</td></tr>
+   <tr><td>
+   <dl class="linkedList">
+
+<dt><b>Mouse strain genes have been updated from Ensembl release 116</b></dt>
+<dt>Mouse strain genome sequence data and annotations from for assembled strain genomes other than the reference strain (C57BL/6J) mouse strain have been updated from Ensembl release 116. Where possible, strain genes are associated with MGI's canonical mouse genes using cross-references found in the strain gff3 files.  These cross-references include C57BL/6J Ensembl or NCBI gene IDs, MGI gene IDs, or in some cases mouse gene nomenclature.  The set of strain genes associated an MGI gene can be found in the Strain Comparison section on Gene Detail pages.  The Ensembl 116 strain gene gff3 files do not cross-reference preexisting strain genes established by the Wellcome Trust Sanger Institute's Mouse Genomes Project (MGP).  Therefore, our strain gene load maintains legacy MGP ID-to-MGI associations for MGI genes that have associated strain genes from Ensembl 116.  Users can search MGI by legacy MGP IDs to find the associated MGI genes from the previous Mouse Genome Project strain gene load.  For more information on the new strain gene load from Ensembl 116, see:  <a href="<!--#include file='include/fewi_url.html'-->downloads/ensembl_patched/README.txt">README.txt</a>.</dt>
+</dl>
+   </td>
+  </tr>
+</table>
 
             <tr><td><a id="july27_2026"></a>
 
@@ -83,25 +98,6 @@
 <li><b>Enhanced interactivity between GXD and Morpheus.</b> Results from GXD RNA-seq data searches can be forwarded to Morpheus, the Broad Institute's heat map visualization and analysis tool. Now, after performing analyses in Morpheus, users can select genes of interest and retrieve GXD's multi-tabbed expression summaries for these genes, which include both classical and RNA-seq results. Additional types of information for these genes can be accessed by using buttons on the Genes tab to forward the gene list to either the MGI Batch Query or MouseMine. MouseMine also offers tools for enrichment analysis.</li>
 </ul></dt>
    </dl>
-   </td>
-  </tr>
-</table>
-
-
-    <tr><td><a id="december22_2025"></a>
-
-<table class="outline" width="100%">
-
-   <tr><td class="enhance">December 22, 2025</td></tr>
-   <tr><td>
-   <dl class="linkedList">
-
-<dt><b>Enhanced ability to search for RNA-Seq and microarray experiments by postnatal age</b></dt>
-<dt>The GXD RNA-Seq and Microarray Experiment index allows users to find experiments of interest based on GXD's standardized metadata annotations. GXD curators annotate sample details, including age, which can be queried using the <a href="<!--#include file='include/fewi_url.html'-->gxd/htexp_index">RNA-Seq and Microarray Experiment Search</a>. We have expanded the age search functionality for all samples, but it is especially useful for postnatal searches. Previously users were limited to three search options: embryonic (all ages), postnatal (all ages), or selecting specific embryonic ages from a picklist. Now users can enter the ages of interest for both embryonic and postnatal samples. They can enter a single age, a range of ages (using a hyphen), or a list of ages (using commas) to find the experiments of interest.</dt>
-<dt><b>New ways to access RNA-Seq and microarray experiment index entries</b></dt>
-<dt>Previously, entries in the GXD RNA-Seq and Microarray Experiment index were only accessible via the <a href="<!--#include file='include/fewi_url.html'-->gxd/htexp_index">RNA-Seq and Microarray Experiment Search</a>. We have introduced additional access points to make it easier to find experiments of interest. Links in the <a href="<!--#include file='include/fewi_url.html'-->vocab/gxd/anatomy/EMAPA:16039">Developmental Anatomy</a> and <a href="<!--#include file='include/fewi_url.html'-->vocab/cell_ontology/CL:0000000">Cell Ontology</a> browsers return summaries of all experiments with samples annotated to the selected anatomical structure or cell type (or any of its subterms). Index entries are now included as a curated data class associated with a reference. This allows us to provide links on the reference detail pages that summarize the RNA-Seq or microarray assays reported in that publication. Additionally, users can now search for papers using the <a href="<!--#include file='include/fewi_url.html'-->reference/">Reference Search</a> and apply the curated data class filter to limit the return to publications that use RNA-Seq or microarray assays.</dt>
-<dt><b>Even more recombinase activity: cell types and anatomical structures.</b></dt><dt>With the addition of <a href="<!--#include file='include/fewi_url.html'-->vocab/cell_ontology/">Cell Type Ontology</a> annotations, users can refine recombinase activity searches to specific cell types in addition to anatomical structures. This improvement further expands the knowledge base of recombinase drivers with cell type-specific activity data.</dt>
-</dl>
    </td>
   </tr>
 </table>
